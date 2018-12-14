@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Kettős pénznem
+
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations 8.1 verziójában (2018. október) megjelent funkció lehetővé teszi, hogy a jelentési pénznem célja módosítható legyen, és második könyvelési pénznemként legyen használva. Ezt a funkciót *kettős pénznemnek* nevezik. A kettős pénznem módosításai konfigurációs kulccsal vagy paraméterrel nem kapcsolhatók ki. Mivel a jelentési pénznem szolgál második könyvelési pénznemként, a jelentési pénznemben kiszámítási módja a feladási logikában megváltozott.
 
@@ -67,8 +69,8 @@ A következő moduloknak használják a jelentési pénznemet második könyvel�
 
 - [Főkönyv](#general-ledger)
 - [Pénzügyi jelentéskészítés](#financial-reporting)
-- [Kötelezettségek](#accounts-payable/accounts-receivable)
-- [Kinnlevőségek](#accounts-payable/accounts-receivable)
+- [Kötelezettségek](#accounts-payable-and-accounts-receivable)
+- [Kinnlevőségek](#accounts-payable-and-accounts-receivable)
 - [Készpénz- és bankkezelés](#cash-and-bank-management)
 - [Tárgyi eszközök](#fixed-assets)
 
@@ -90,7 +92,7 @@ A **Pénzügyi beszámolók** modul továbbfejlesztése lehetővé teszik jelent
 
 Ez a módosítás a **Pénznem megjelenítése** beállításon keresztül érhető el a oszlopdefiníciónál. Ha bejelöli a **Jelentési pénznem a főkönyvből**, az oszlopban szereplő összegek nem lesznek lefordítva. Ehelyett közvetlenül a főkönyvből lesznek jelentve. Ha azt szeretné, hogy az oszlop mutassa a lefordított összegeket, jelölje be az **XXXX fordítás** lehetőséget, ahol az *XXXX* jelentési pénznem, amelyet az oszlopnak meg kell jelennie. Ebben az esetben a könyvelési pénznem összegét a rendszer lefordítja a kiválasztott pénznemre a meglévő fordítás funkció segítségével.
 
-### <a name="accounts-payableaccounts-receivable"></a>Kötelezettségek/kinnlevőségek
+### <a name="accounts-payable-and-accounts-receivable"></a>Kötelezettségek és kinnlevőségek
 
 A **Kötelezettségek** és **Kinnlevőségek** modulok már nyomon követték a jelentési pénznem összegeket. Azonban az összegek nem jelentek meg, vagy nem voltak használva különböző folyamatokhoz. Az alábbi módosítások történtek:
 

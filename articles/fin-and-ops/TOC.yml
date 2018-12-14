@@ -48,6 +48,10 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: A helyszíni telepítéseknél nem alkalmazott funkciók
               href: get-started/features-not-implemented-on-prem.md
+            - name: 'Finance and Operations, 8.1.3 verzió (2018. december)'
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (2018. december)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (2018. november)
               href: get-started/whats-new-platform-update-22.md
             - name: 'Finance and Operations, 8.1.2 verzió (2018. november)'
@@ -152,6 +156,8 @@
               href: get-started/help-overview.md
             - name: A Súgórendszer csatlakoztatása
               href: get-started/help-connect.md
+            - name: Egyéni súgóoldal csatlakoztatása
+              href: get-started/help-custom.md
             - name: Mezőleírások megtekintése és exportálása
               href: get-started/view-export-field-descriptions.md
             - name: Feladat-útmutatók és feladatrögzítő
@@ -580,7 +586,7 @@
               href: ../financials/accounts-receivable/sepa-direct-debit-overview.md
             - name: Felhatalmazás SEPA közvetlen beszedési megbízásra
               href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
-            - name: 'Hitelkártya-beállítás, engedélyezés és rögzítés'
+            - name: 'Hitelkártya beállítása, engedélyezése és rögzítése'
               href: ../financials/accounts-receivable/credit-card-authorizations.md
             - name: Szabadszöveges számla létrehozása
               href: ../financials/accounts-receivable/create-free-text-invoice-new.md
@@ -1241,15 +1247,17 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Sordefiniáló cellák módosítása
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: A pénzügyi jelentéskészítési adatközpont alaphelyzetbe állítása
+            - name: A pénzügyi jelentéskészítési data mart alaphelyzetbe állítása
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
-    - name: Honosítási és szabályozási funkciók​
+        - name: Elektronikus üzenetküldés
+          href: ../financials/general-ledger/electronic-messaging.md
+    - name: Honosítási és szabályozási funkciók
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
         - name: Ausztrália
           href: ../financials/localizations/australia.md
           items:
-            - name: Üzletitevékenység-kimutatás (BAS)
+            - name: BAS-jelentés
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Jelentési mezők hozzáadása és a BAS elkészítése
               href: ../financials/localizations/tasks/add-bas-report-boxes.md
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Kifizetendő számlák
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Pénzügyi jelentéskészítés
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Kiadási számlakönyv létrehozása
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Szaúd-Arábia
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Elektronikus jelentéskészítési (ER) konfigurációk importálása a jogszabályban előírt konfigurációs szolgáltatásból (RCS)
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurációk importálása
@@ -4149,6 +4163,8 @@
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Legrégebbi köteg kitárolása mobileszközön
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: Folyamatútmutató-keretrendszer
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: Frissítés és áttelepítés
           items:
             - name: Raktárkezelési folyamatok frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra

@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 70a7a1f7d7a8221a72addfbee1d21f813df4eb46
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>A kötelezettségkezelési rendszerben levő számlák és kulcsfontosságú adatok vizsgálata
@@ -35,34 +35,31 @@ Ez az eljárás az USMF bemutatócéget használja. A kötelezettségeket kezel�
 
 
 ## <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
-1. Ugrás az összes beszerzési rendelésre.
-2. Kattintson az Új lehetőségre.
-3. A Szállítói számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Írjon be egy értéket a Szállítói számla mezőbe.
-5. Kattintson az OK gombra.
-6. Kattintson az Új sor hozzáadása lehetőségre.
-7. A cikkmezőbe írjon egy értéket.
-8. A Művelet panelen kattintson a Beszerzés elemre.
-9. Kattintson a Megerősítés gombra.
+1. Lépjen az **Összes beszerzési rendelés** lehetőségre.
+2. Kattintson az **Új** elemre.
+3. A **Szállítói számla** mezőben adjon meg egy értéket.
+4. Kattintson az **OK** gombra.
+5. Kattintson az **Új sor hozzáadása** elemre.
+6. A **Cikkszám** mezőbe írjon egy értéket.
+7. A Művelet panelen kattintson a **Beszerzés** elemre.
+8. Kattintson a **Megerősítés** gombra.
 
 ## <a name="post-a-product-receipt"></a>Egy Termékbevételezés feladása
-1. A Művelet panelen kattintson a Bevételezés elemre.
-2. Kattintson a Termékbevételezés elemre.
-3. A listában jelölje meg a kiválasztott sort.
-4. Írjon be egy értéket a Termékbevételezés mezőbe.
-5. Kattintson az OK gombra.
+1. A Művelet panelen kattintson a **Fogadás** elemre.
+2. Kattintson a **Termékbevételezés** lehetőségre.
+3. Írjon be egy értéket a **Termékbevételezés** mezőbe.
+4. Kattintson az **OK** gombra.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Szállítói számla rögzítése és egyeztetése a termékbevételezésekkel
-1. A Művelet panelen kattintson a Számla lehetőségre.
-2. Kattintson a Számla lehetőségre.
-3. Érték beírása a Szám mezőbe.
-4. Kattintson az Alapértelmezett forrás: Rendelt mennyiségre a legördülő párbeszédablak megnyitásához.
-5. Egy lehetőség kiválasztása a Sorok alapértelmezett mennyisége mezőben.
-6. Kattintson az OK gombra.
-7. Kattintson az Igen gombra.
-8. Kattintson a Termékbevételezések egyeztetése lehetőségre.
-9. Kattintson az OK gombra.
-10. A Művelet panelen kattintson az Áttekintés lehetőségre.
-11. Kattintson a Részletek egyeztetése elemre.
+1. A Művelet panelen kattintson a **Számla > Számla** lehetőségre.
+2. Adjon meg egy értéket a **Szám** mezőben.
+3. Kattintson az **Alapértelmezett forrás: Rendelt mennyiség** elemre a legördülő párbeszédablak megnyitásához.
+4. Válasszon egy lehetőséget a **Sorokhoz tartozó alapértelmezett mennyiség** mezőben.
+5. Kattintson az **OK** gombra.
+6. Kattintson az **Igen** gombra.
+7. Kattintson a **Termékbevételezések egyeztetése** lehetőségre.
+8. Kattintson az **OK** gombra.
+9. A Művelet panelen kattintson az **Áttekintés** lehetőségre.
+10. Kattintson a **Részletek egyeztetése** elemre.
 
 

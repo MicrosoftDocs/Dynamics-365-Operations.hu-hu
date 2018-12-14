@@ -3,7 +3,7 @@ title: "Eltávolított vagy elavult funkciók"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ A deklaráció elektronikus fájljait exportáló funkció, amely az exportálá
 | **Érintett területek**         | Főkönyv, Adó |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+
+
+### <a name="profit-tax-register-wizard"></a>Nyereségadó-jegyzék varázsló
+Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozásához használatos. A funkció X++ objektumokat hoz létre az új jegyzékekhez, amelyeket utána sablonként létre lehez hozni, ha a megfelelő kalkulációs logikát hozzáadják.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A funkció nem kompatibilis a Dynamics 365 for Finance and Operations bővíthetőségi modelljével. |
+| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Érintett területek**         | Adó |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 15-ös platformfrissítéssel
 Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban. A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.
@@ -993,6 +1006,17 @@ A Termékszerkesztő használatával korábban értékesítési rendelésekből,
 | **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Érintett területek**         | Termékinformációk kezelése, Értékesítés és marketing  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.      |
+
+### <a name="production-floor-app"></a>Termelési üzem alkalmazás
+Ez az alkalmazás a Windows 8.1 RT és Windows 8.1 Pro rendszereket futtató táblagépekhez való.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A webalapú kliensre való váltásnak köszönhetően a natív Dynamics AX 7.0 kliensen keresztül is végrehajtható hasonló funkció. A Feladatkártya eszköze olyan termelési üzem felhasználói felületet biztosít, amely érintőképernyők és táblagép formátumú tényezőkre is optimalizálva van. |
+| **Felváltotta másik szolgáltatás?**   | Igen. A Feladatkártya eszköze a Dynamics AX 7.0 natív része.                                                                           |
+| **Érintett területek**         | Gyártásvezérlés                                                |
+| **Állapot**                         | Elavult: A Microsoft Store-ból való eltávolítás dátuma még nem került meghatározásra ehhez a funkcióhoz.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Termékdimenzió átnevezése
 

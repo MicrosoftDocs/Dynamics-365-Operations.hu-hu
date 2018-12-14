@@ -47,14 +47,18 @@
       href: dev-itpro/updating-environments.md
     - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Elosztott rendeléskezelés (DOM)
+  href: dom.md
 - name: Kifizetések
   items:
-    - name: Kifizetési módok
+    - name: Fizetési módok
       href: payment-methods.md
-    - name: 'Hitelkártya-beállítás, engedélyezés és rögzítés'
+    - name: 'Hitelkártya beállítása, engedélyezése és rögzítése'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Készpénzcímletek konfigurálása a POS-hoz
+    - name: Készpénzcímletek konfigurálása a pénztárhoz
       href: cash-denominations.md
+    - name: Számlafizetési forgatókönyvek beállítása
+      href: payinvoice.md
     - name: Kifizetések GYIK
       href: dev-itpro/payments-retail.md
 - name: Beszerzési rendelések
@@ -113,7 +117,7 @@
       href: set-up-continuity-program.md
     - name: Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
       href: work-with-order-holds.md
-    - name: Kifizetési módok
+    - name: Fizetési módok
       href: work-with-payments.md
 - name: Csatorna beállítása és kezelése
   items:
@@ -213,9 +217,11 @@
       href: Order-fulfillment-POS-setup.md
     - name: Rendelési értesítések megjelenítése a pénztárban
       href: Notifications-POS.md
+- name: Csere konfigurálása és feldolgozása visszárurendelésen
+  href: orderexchanges.md
 - name: Megfigyelés és elemzés
   items:
-    - name: Értékesítési és teljesítménykülönbözet megfigyelése
+    - name: Értékesítés és teljesítménykülönbözet megfigyelése
       href: monitor-sales-margin-performance.md
     - name: Értékesítési trendek és mintázatok elemzése
       href: analyze-sales-trends-patterns.md
@@ -231,10 +237,12 @@
   items:
     - name: Kiskereskedelmi engedmények
       href: retail-discounts-overview.md
-    - name: Kiskereskedelmi eladási ár kezelése
+    - name: Kiskereskedelmi értékesítési ár kezelése
       href: price-management.md
     - name: Ármódosítások és engedmények
       href: price-adjustments-discounts.md
+    - name: Többszörös kiskereskedelmi engedmény alkalmazása egy termékre
+      href: Apply-multiple-retail-discounts.md
     - name: Átfedő engedmények optimális kombinációjának meghatározása
       href: optimal-combination-overlapping-discounts.md
     - name: Csatornaspecifikus engedmények definiálása
@@ -486,9 +494,11 @@
       href: dev-itpro/extension-resource-localization.md
     - name: Pénztár bővíthetősége
       items:
-        - name: Retail POS képernyő-elrendezései
+        - name: Retail POS-képernyő elrendezései
           href: pos-screen-layouts.md
-        - name: A POS képernyőelrendezés-tervező telepítése
+        - name: URL megnyitása a pénztárban
+          href: Open-URL-in-POS.md
+        - name: A pénztárelrendezés-tervező telepítése
           href: install-pos-layout-designer.md
         - name: Retail Modern POS offline módban
           href: dev-itpro/retail-modern-pos-offline.md
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
           href: dev-itpro/create-retail-experience-app.md
+        - name: POS Hybrid alkalmazás telepítése Android és iOS rendszerre
+          href: dev-itpro/hybridApp.md
+        - name: A pénztár kérelemkezelőjének felülírása
+          href: dev-itpro/pos-handler.md
     - name: Hardverállomás és bővíthetősége
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Server bővíthetősége
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Windows-telepítők létrehozása fizetési csatlakozókhoz
           href: dev-itpro/create-windows-installer-payment-connector.md
-    - name: Retail SDK
+        - name: Fizetési adatok használata
+          href: payment-connector-data-fields.md
+    - name: Retail szoftverfejlesztői készlet (SDK)
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: A Retail és Finance and Operations buildrendszereinek egyesítése
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: A Retail SDK bővíthetőségi mintái

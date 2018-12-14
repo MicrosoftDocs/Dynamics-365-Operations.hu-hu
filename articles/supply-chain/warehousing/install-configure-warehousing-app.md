@@ -3,7 +3,7 @@ title: "A Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing 
 description: "Ez a témakör ismerteti, hogyan telepítse és konfigurálja a Microsoft Dynamics 365 for Finance and Operations - Warehousing alkalmazást."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
-ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
+ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
+ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -74,13 +74,12 @@ Ahhoz, hogy az alkalmazás együttműködhessen a kívánt Finance and Operation
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Felhasználói fiók létrehozása és konfigurálása a Finance and Operationsben
 Annak érdekében, hogy a Finance and Operations képes legyen az Azure AD alkalmazás használatára, kövesse az alábbi konfigurációs lépéseket:
 
-1.  Hozzon létre új felhasználói fiókot a Finance and Operations bérlője számára az Azure Active Directoryban. E felhasználói fiók célja a raktáralkalmazás konkrét egyéni szolgáltatásának elérése, amit a Finance and Operations-kiszolgáló tesz lehetővé. Ezen lépés befejeztével rendelkezni fog a WMDP felhasználóhitelesítő adataival, amelyek WMDP e-mail-címből és WMDP-jelszóból állnak. Felhasználók az Azure AD-hez és a Finance and Operationshöz történő hozzáadásának alaplépéseiről a következő oktatóanyagból tájékozódhat: [Finance and for Operations-előfizetés regisztrálása](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
-2.  Hozzon létre egy olyan Finance and Operations-felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak.
+1.  Hozzon létre egy olyan Finance and Operations-felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak.
     1.  A Finance and Operationsben lépjen a **Rendszerfelügyelet** &gt; **Közös** &gt; **Felhasználók** elemre.
     2.  Hozzon létre egy új felhasználót.
     3.  Rendelje hozzá a Warehouse-mobileszköz felhasználóját, amint azt a következő képernyőképen látható. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  Társítsa az Azure Active Directory alkalmazást a raktározási alkalmazás felhasználójával.
+2.  Társítsa az Azure Active Directory alkalmazást a raktározási alkalmazás felhasználójával.
     1.  A Finance and Operationsben lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Azure Active Directory alkalmazások** elemre.
     2.  Hozzon létre egy új sort.
     3.  Adja meg az (az utolsó szakaszban kapott) **Ügyfél-azonosítót**, adjon neki nevet, és válassza ki a korábban létrehozott felhasználót. Azt javasoljuk, hogy az összes eszközt lássa el címkével, hogy egyszerűen eltávolíthassa hozzáférésüket a Finance and Operationshöz erről az oldalról abban az esetben, ha az eszközök elvesznek. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)

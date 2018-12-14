@@ -1,9 +1,9 @@
 ---
-title: "Termékbevételezés beszerzési rendelések ellenében"
-description: "A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat."
+title: "Termékbevételezés összevetése a beszerzési rendelésekkel"
+description: "Ez a témakör bemutatja a termékek átvettként történő regisztrálására vonatkozó különböző opciókat."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
-# <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés beszerzési rendelések ellenében
+# <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés összevetése a beszerzési rendelésekkel
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
+Ez a témakör bemutatja a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
 
 A termékbevételezés azon megrendelt termékek dokumentálása, melyek leszállításra kerültek, ezáltal a beszerzésirendelés-sorok készen állnak a kiszámlázásra történő feldolgozásra. Bizonyos esetekben a termékek előregisztráción esnek át, ahol a szállítótól a termékek átadása előtt további információk kerülnek dokumentálásra. Amikor a termékek megérkeznek, először **Regisztrált** megjelölést kapnak. A termékek ezután további folyamatokon eshetnek át, mint pl. a minőségellenőrzés, mielőtt véglegesen **Átvett** megjelölést kapnak.
 
@@ -46,8 +46,6 @@ A raktárban átvett termékek minőségellenőrzésen is áteshetnek, mielőtt 
 
 ## <a name="product-receipt"></a>Termékbevételezés
 A termékek beszerzési rendelésen történő **Átvett** státuszúként történő megjelölése leggyakrabban a **Beszerzési rendelések** oldalon található **Termékbevételezés** művelettel történik. A **Termékbevételezés** feladása oldalon számos beállítás található az átvettként könyvelt mennyiségre vonatkozóan. A **Mennyiség** mezőt beállíthatja például a következőkre: **Megrendelt mennyiség**, **Átveendő mennyiség**. Másik megoldásként, raktári érkeztetési folyamat során ez a mező gyakran kaphatja a **Regisztrált mennyiség** beállítást. Minden egyes **Átvett** megjelöléssel ellátott rendeléssor mennyiségeit módosíthatja a diszkrepanciáknak, mint pl. az alul- vagy túlszállításnak megfelelően. A termékbevételezés során meg kell adnia a termékbevételezési azonosítót, ami általában a megegyezik a szállító által biztosított szállítószámmal. Ez az azonosító szükséges a könyveléshez, mert így auditok vagy ellenőrzések során a szállítólevelek összeegyeztethetők a ténylegesen átvett mennyiségekkel, a számba vett készlettel vagy kiadással.  
-
-Ha egy alkalmazott beszerzési igényléssel rendelt termékeket, az alkalmazottat felkérhetik, hogy a termék átvételét személyesen megerősítse. Ezt a viselkedést munkafolyamat használatával konfigurálhatja. A munkafolyamat feltételeit konfigurálhatja úgy, hogy illeszkedjenek az Ön üzleti folyamataihoz.  
 
 A beszerzési megrendeléseket olyan termékekre is ki lehet állítani, amelyeket nem szándékoznak készletbe venni, viszont ugyanúgy költségnek számítanak. Ebbe a kategóriába tartoznak azok a rendelési sorok, ahol a termékeket **Nem raktározott** jelöléssel látják el a készletmodell-csoportjukban, valamint azok a sorok, amelyek beszerzési kategóriákat használnak. Ebben az esetben a cikkek lehet, hogy nem mennek keresztül a raktárban az érkezési regisztráción és a termékbevételezésen. Ehelyett a **Termékbevételezés** művelettel a bevételezést közvetlenül a beszerzési rendelésen rögzítik, és a bevételezés nem a regisztrált, hanem a megrendelt mennyiség alapján történik.  
 

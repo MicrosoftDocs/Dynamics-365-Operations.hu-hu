@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -152,6 +152,7 @@ Megjegyzés: Az alább felsorolt műveletek a legújabb Dynamics 365 for Retail 
 | 644 | Utalványkód eltávolítása | Arra kéri a felhasználót, hogy távolítsa el a kuponokat úgy, hogy kiválasztja őket egy, a tranzakcióval jelenleg társított kuponlistából. | Igen | Igen | Nincs | Igen | Nincs |
 | 1057 | Z újranyomtatás | Az előző műszak vagy a kijelölt műszak Z-jelentésének kinyomtatása. | Igen | Igen | Igen | Nincs | Nincs |
 | 1216 | Adja meg az új jelszót. | Ez a művelet lehetővé teszi, hogy a jelszó-visszaállítási engedéllyel rendelkező felhasználó visszaállíthatja egy alkalmazott jelszavát egy ideiglenes jelszó használatával. | Igen | Igen | Igen | Nincs | Nincs |
+| 1219 | URl megnyitása a pénztárban | Ez a művelet lehetővé teszi, hogy a felhasználó megnyisson egy rendszergazda által konfigurált URL-t a pénztárban. | Igen | Igen | Igen | Igen | Nincs | 
 | 109 | Visszaküldött termék | Egyedi termékek visszavételének végrehajtása. A következő leolvasott termék visszaküldött termékként jelenik meg, negatív mennyiséggel és árral. | Igen | Igen | Nincs | Igen | Nincs |
 | 114 | Visszáru-tranzakció | Korábbi tranzakció visszahívása bizonylatszám alapján egy vagy több termék visszaküldéséhez. | Igen | Igen | Igen | Igen§ | Nincs |
 | 1211 | Széfes befizetés | Széfes befizetés, mellyel a pénz áthelyezhető a pénztárból a széfbe. | Igen | Igen | Igen | Igen | Nincs |

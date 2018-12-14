@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
+ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
+ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -90,7 +90,7 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | Szolgáltatáskezelés| | Igen | Igen |
 | Ellátásilánc-kezelés| | Igen | Igen |
 | Szállításkezelés| | Igen | Igen |
-| Szállítói együttműködés| | Igen | Igen|
+| Szállítói együttműködés| | Igen | Nincs |
 | Raktárkezelés| | Igen | Igen |
 | | Raktári mobilalkalmazás| Igen | Igen |
 | | Raktári Power BI-jelentések| Igen | Nincs |

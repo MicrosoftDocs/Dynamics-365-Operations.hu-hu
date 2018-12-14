@@ -1,9 +1,9 @@
 ---
 title: "Finance and Operations súgórendszer"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára."
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. 
 
 > [!NOTE] 
 > A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
@@ -48,8 +48,6 @@ A Finance and Operations teljesen új Súgórendszerrel rendelkezik, amely két 
 A Súgó ablak használható bármelyik termékben a súgó eléréséhez. A következő képernyőképen a Finance and Operations látható.
 
 ![Súgó ablak](./media/help-pane-ops-task-guides.png)
-
-Ez a témakör ismerteti a Súgó rendszert, és leírja, hogyan hozhat létre testreszabott dokumentációt és továbbképzési forrásokat szervezetének.
 
 > [!IMPORTANT]
 > **Feladat-útmutatók** jelenleg nem találhatók a Retail számára, vagy Talent Súgó ablakában (néhány feladat-útmutató elérhetők el Talent a bevezetés ablaktábláján). Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
@@ -83,7 +81,7 @@ A Unified Operations összes frissítését bemutató RSS-hírcsatornára való 
 ### <a name="give-feedback"></a>Visszajelzés adása 
 Szívesen vesszük az ügyfelek visszajelzéseit. Megjegyzést írhat vagy a tartalom módosításait javasolhatja a GitHub használatával. A visszajelzési rendszer kapcsolatos további tudnivalókat lásd ebben a [blogbejegyzésben](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs)
 
-##### <a name="leave-us-feedback"></a>Visszajelzés küldése 
+#### <a name="leave-us-feedback"></a>Visszajelzés küldése 
 Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megjegyzést az oldal alján.  
 
 1. Kattintson a **Visszajelzés** lehetőségre, hogy a lap alján található megjegyzésekhez jusson, majd kattintson a **Termékvisszajelzés** vagy **Bejelentkezés dokumentációval kapcsolatos visszajelzéshez**.
@@ -93,8 +91,6 @@ Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megj
 2. Írja be megjegyzését, majd kattintson a **Visszajelzés beküldése** gombra.
 
 ![Megjegyzés elküldése](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Javasoljon módosítást vagy járuljon hozzá a tartalomhoz a GitHub használatával
 Módosítás javasolásához GitHub-fiókra van szükség, és alá kell írni a közreműködői licencszerződést.  Egy lekéréses kérelem benyújtása után át fogjuk tekinteni a javasolt módosításokat. Szükség esetén belső körben megvitatjuk őket, és felvesszük a kapcsolatot önnel.  
@@ -122,22 +118,7 @@ Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat út
 > [!IMPORTANT] 
 > A feladat-útmutató lejátszásakor megadott adatok valósak. Ha gyártási területen van, az adatok a használt vállalathoz kerülnek bejegyzésre.
 
-### <a name="it-all-begins-with-task-recorder"></a>A Feladatrögzítővel kezdődik
-
-Feladat útmutatókat a Feladatrögzítővel lehet létrehozni. A Feladatrögzítő használatakor minden, Finance and Operations rendszer felhasználói felületén végrehajtott művelet (pl. menük kiválasztása, beállítások változtatása és adatok megadása) rögzítésre kerül. A rögzített lépések összességét feladatrögzítésnekhívják. Amint az előző szakaszban leírtuk, a feladatrögzítések a Súgo ablakban játszhatók le feladat útmutatókként. Ugyanakkor vannak más lehetőségek a feladatrögzítések használatához:
-
--   **Feladatrögzítések BPM-re** – Egy feladatrögzítést elmenthet egy hierarchiasorhoz a BPM könyvtárban LCS formátumban. Amikor a feladatrögzítést menti a BPM-be, egy folyamatábra-diagramm jön létre és jelenik meg, a rögzítés lépéseivel egyet. 
-
-    > [!Note]
-    > Feladatrögzítés megjelenítéséhez és lejátszásához feladat-útmutatóként a Finance and Operations rendszer Súgó lehetőségében a rögzítést a BPM könyvtárba kell menteni.
-    
--   **Feladatrögzítések mentése Word dokumentumokként** – Ha a feladatrögzítést Microsoft Word dokumentumként menti, akkor könnyedén létrehozhat nyomtatható továbbképzési útmutatókat a vállalata számára.
-
-A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő a Finance and Operations rendszerben](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Testreszabott feladatrögzítések létrehozása
-
-Létrehozhatja a saját feladatrögzítéseit vagy letölthet és testreszabhatja a Microsoft rögzítéseit. Emiatt egyéni Súgót hozhat létre szervezetének, amely tükrözi a Finance and Operations rendszer egyéni implementációját. Feladatrögzítés megjelenítéséhez és lejátszásához feladat-útmutatóként a Finance and Operations rendszer Súgó lehetőségében a rögzítést a BPM könyvtárba kell menteni az LCS-ben. Ha partnerként hozzájárul egy könyvtárral egy vállalati tár kialakításához, valamint beilleszti azt egy megoldásba, akkor az a vevői számára elérhetővé válik. Teljes körű utasítások: [Feladatrögzítések használata dokumentációhoz vagy továbbképzéshez](../../dev-itpro/user-interface/task-recorder.md).
+A Feladatrögzítő segítségével létrehozhatja saját egyéni feladat-útmutatóit. További tudnivalókért lásd: [Dokumentáció vagy képzés létrehozása a feladatrögzítések segítségével](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Termékbe épített Súgó
 Ha szeretné megtekinteni a Súgó tartalmát a Finance and Operation rendszerben, akkor kattintson a **Súgó** (**?**) ikonra, és válassza a Súgó lehetőséget, vagy nyomja meg a Ctrl+Shift+? billentyűkombinációt. Mindkét esetben a Súgó ablak nyílik meg. A Súgó ablakból elérhet cikkeket és feladat-útmutatókat. 
@@ -184,6 +165,11 @@ Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a Súg
 A Feladat-útmutatók a címükben az „Minden nyelv” fordulatot viselő könyvtárakban érhetők el. Ha szeretné a honosított Feladat-útmutató súgót látni a Finance and Operationsben, győződjön meg arról, hogy csatlakozva van a megfelelő könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a Feladat-útmutató nyelvét. 
 -   Ha egy Feladat-útmutató le van fordítva, akkor a megnyitásakor kiválasztott nyelven fog megjelenni a Feladat-útmutató teljes szövege.
 -   Ha egy Feladat-útmutató még nincs lefordítva, akkor a megnyitásakor a kiválasztott nyelven csak néhány szöveg (a vezérlők szövegei) fog megjelenni.
+
+## <a name="creating-custom-help"></a>Egyéni súgó létrehozása
+Egyéni feladat-útmutatók létrehozásával létrehozhat egy súgót a felhasználóinak, vagy csatlakoztathatja saját webhelyét a Súgópanelhez. Részletekért lásd: 
+- [Feladatrögzítés létrehozása dokumentációként vagy képzésként való felhasználás céljából](../../dev-itpro/user-interface/task-recorder.md).
+- [Egyéni súgó létrehozása a Finance and Operations szolgáltatáshoz (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>További erőforrások
 

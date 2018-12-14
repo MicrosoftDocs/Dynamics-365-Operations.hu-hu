@@ -3,7 +3,7 @@ title: "Alaptervezés kezdőlap"
 description: "Az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 
 ## <a name="quick-links"></a>Gyorshivatkozások
 
-|      |   |
-|------|---|
-|        [Alaptervek](master-plans.md)       |     [Korlátozott terv létrehozása](./tasks/constrained-plan.md)  |
-| [Társtermékek anyagfelhasználási tervének létrehozása](./tasks/create-material-plan-co-products.md)   |  [Az alaptervezés és a többhelyes funkció](master-plan-multisite-functionality.md)  |
-| [Vállalatközi terv létrehozása](./tasks/create-intercompany-plan.md) | [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)  | 
-|[Csökkentési kulcsok](reduction-keys.md)| [Az Alaptervezés alapjai](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (tanulás) (CustomerSource-fiókot igényel)     |
-|  [Alaptervezés a folyamatgyártáshoz](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (tanulás) (CustomerSource-fiókot igényel) | [Vállalatközi alaptervezés](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (tanulás) (CustomerSource-fiókot igényel)|
+- [Alaptervek](master-plans.md)  
+- [Korlátozott terv létrehozása](./tasks/constrained-plan.md)
+- [Társtermékek anyagfelhasználási tervének létrehozása](./tasks/create-material-plan-co-products.md)
+- [Az alaptervezés és a többhelyes funkció](master-plan-multisite-functionality.md)
+- [Vállalatközi terv létrehozása](./tasks/create-intercompany-plan.md)
+- [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
+- [Csökkentési kulcsok](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>További erőforrások
 

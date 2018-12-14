@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szer
 
 #### <a name="repository"></a>Tárház
 
-Egy ER tárház ER konfigurációkat tárol. Két típusú ER-tárház támogatott jelenleg: **Operations-erőforrások** és **LCS-projekt**.
+Egy ER tárház ER konfigurációkat tárol. Négyféle ER-adattár támogatott jelenleg: **Üzemi erőforrások**, **LCS-projekt (LCS)**, **Fájlrendszer**, **Jogszabályban előírt konfigurációs szolgáltatás (RCS)**.
 
 Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket a Finance and Operations megoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató,. Ezek a konfigurációk importálhatóak a jelenlegi Finance and Operations munkamenetbe és felhasználhatóak elektronikus jelentés céljából. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz.
 
 Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi Finance and Operations példányból egy adott **LCS-projekt** tárházba. Importálhat továbbá konfigurációkat egy **LCS-projekt** tárházából a Finance and Operations jelenlegi példányába.
 
-A szükséges **LCS-projekt** tárházak egyesével regisztrálhatók a jelenlegi Finance and Operations példány különböző konfigurációs szolgáltatóihoz. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
+A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a Finance and Operations jelenlegi példányába. Vegye figyelembe, hogy ez az adattípus az alábbi Dynamics 365 for Finance and Operations környezetekben érhető el:
+- fejlesztés céljából telepített felhőbeli környezetek (amelyek a csatolt csomagok tesztmodelljeit tartalmazzák)
+- helyileg telepített környezetek (helyszíni vagy helyi üzleti adatok telepítése (LBD))
+
+Keresse fel a [Elektronikus jelentéskészítési (ER) konfigurációk importálása](/electronic-reporting-import-ger-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+
+Az **RCS példány** adattár hozzáférést biztosít a meghatározott RCS-példány konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi Finance and Operations példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak.
+
+Keresse fel az [Elektronikus jelentéskészítési (ER) konfigurációk importálása Jogszabályban előírt konfigurációs szolgáltatásból (RCS)](/rcs-download-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+
+A szükséges **LCS-projekt**, **Fájlrendszer**, és **Jogszabályban előírt konfigurációs szolgáltatás** adattárakat külön-külön is lehet regisztrálni az aktuális Finance and Operations példány minden egyes konfigurációs szolgáltatójára. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 ### <a name="building-a-data-model"></a>Adatmodell létrehozása
