@@ -51,7 +51,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Projekt felvétele</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Előkészítés az éles indításra</a></p>
-  
+
 <h3><a href="../financials/index.md">Pénzgazdálkodás</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kötelezettségek</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Kinnlevőségek</a></p>
@@ -65,7 +65,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 <p><a href="../financials/public-sector/public-sector-functionality.md">Állami szektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionális jogszabálykövetési funkciók</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Emberi erőforrások</a></h3>
+<h3><a href="hr/hr-landing-page.md">Emberi erőforrások</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Juttatások</a></p>
 <p><a href="../talent/performance-management-overview.md">Alkalmazotti kompetenciák és képzések</a></p>
 <p><a href="../talent/questionnaires.md">Kérdőív</a></p>
