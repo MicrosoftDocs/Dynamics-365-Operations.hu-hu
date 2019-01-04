@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 13e99ba3a706d49affa4fd8d0f63b7c2f51b24bc
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -35,21 +35,19 @@ ms.lasthandoff: 05/08/2018
 
 <span data-ttu-id="9f87e-105">A Dynamics 365 for Retail részeként a felhasználók a szervezeti hierarchia különböző szintjein, valós időben figyelhetik az értékesítést és a teljesítménykülönbözetet az alábbi dimenzióknál:</span><span class="sxs-lookup"><span data-stu-id="9f87e-105">As part of Dynamics 365 for Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
--   <span data-ttu-id="9f87e-106">Termékek</span><span class="sxs-lookup"><span data-stu-id="9f87e-106">Products</span></span>
--   <span data-ttu-id="9f87e-107">Kategóriák</span><span class="sxs-lookup"><span data-stu-id="9f87e-107">Categories</span></span>
--   <span data-ttu-id="9f87e-108">Kedvezmények</span><span class="sxs-lookup"><span data-stu-id="9f87e-108">Discounts</span></span>
--   <span data-ttu-id="9f87e-109">Évek időszaka</span><span class="sxs-lookup"><span data-stu-id="9f87e-109">Years as time period</span></span>
--   <span data-ttu-id="9f87e-110">Jegyzékek/terminálok</span><span class="sxs-lookup"><span data-stu-id="9f87e-110">Registers/terminals</span></span>
--   <span data-ttu-id="9f87e-111">Személyzet/alkalmazottak</span><span class="sxs-lookup"><span data-stu-id="9f87e-111">Staff/employees</span></span>
--   <span data-ttu-id="9f87e-112">Vevők</span><span class="sxs-lookup"><span data-stu-id="9f87e-112">Customers</span></span>
--   <span data-ttu-id="9f87e-113">Üzemi egységek</span><span class="sxs-lookup"><span data-stu-id="9f87e-113">Operating units</span></span>
+- <span data-ttu-id="9f87e-106">Termékek</span><span class="sxs-lookup"><span data-stu-id="9f87e-106">Products</span></span>
+- <span data-ttu-id="9f87e-107">Kategóriák</span><span class="sxs-lookup"><span data-stu-id="9f87e-107">Categories</span></span>
+- <span data-ttu-id="9f87e-108">Kedvezmények</span><span class="sxs-lookup"><span data-stu-id="9f87e-108">Discounts</span></span>
+- <span data-ttu-id="9f87e-109">Évek időszaka</span><span class="sxs-lookup"><span data-stu-id="9f87e-109">Years as time period</span></span>
+- <span data-ttu-id="9f87e-110">Jegyzékek/terminálok</span><span class="sxs-lookup"><span data-stu-id="9f87e-110">Registers/terminals</span></span>
+- <span data-ttu-id="9f87e-111">Személyzet/alkalmazottak</span><span class="sxs-lookup"><span data-stu-id="9f87e-111">Staff/employees</span></span>
+- <span data-ttu-id="9f87e-112">Vevők</span><span class="sxs-lookup"><span data-stu-id="9f87e-112">Customers</span></span>
+- <span data-ttu-id="9f87e-113">Üzemi egységek</span><span class="sxs-lookup"><span data-stu-id="9f87e-113">Operating units</span></span>
 
 <span data-ttu-id="9f87e-114">A legfelső kategória csomópontból induló, egészen az alapértelmezett kiskereskedelmi termékkategória hierarchiájában lévő egyéni levélcsomópontokig tartó leásás, valamint két olyan egyedi jelentés segítségével, amely kihasználja a hierarchiai rács struktúrát, a felhasználók figyelhetik az értékesítést és a teljesítménykülönbözetet.</span><span class="sxs-lookup"><span data-stu-id="9f87e-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default retail product category hierarchy.</span></span> <span data-ttu-id="9f87e-115">A felhasználók kiskereskedelmi jelentés-hierarchiai célzattal leáshatnak a legfelső üzemi egységtől, az alapértelmezett szervezeti hierarchiaként meghatározott szervezeti hierarchia egyéni csatornájáig.</span><span class="sxs-lookup"><span data-stu-id="9f87e-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for retail reporting hierarchy purposes.</span></span> <span data-ttu-id="9f87e-116">A jelentéseket az alábbi helyek bármelyikéről megnyithatja:</span><span class="sxs-lookup"><span data-stu-id="9f87e-116">You can open the reports from any of the following locations:</span></span>
 
--   <span data-ttu-id="9f87e-117">**Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="9f87e-118">**Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Termék és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="9f87e-119">**Árképzés és engedmények kezelése** munkaterület &gt; **Kiskereskedelem** &gt; **Árképzés és engedmények** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="9f87e-120">**Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
-
-
+- <span data-ttu-id="9f87e-117">**Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="9f87e-118">**Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Termék és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="9f87e-119">**Árképzés és engedmények kezelése** munkaterület &gt; **Kiskereskedelem** &gt; **Árképzés és engedmények** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="9f87e-120">**Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések**</span><span class="sxs-lookup"><span data-stu-id="9f87e-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
 
