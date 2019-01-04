@@ -35,21 +35,19 @@ A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja
 
 A Dynamics 365 for Retail részeként a felhasználók a szervezeti hierarchia különböző szintjein, valós időben figyelhetik az értékesítést és a teljesítménykülönbözetet az alábbi dimenzióknál:
 
--   Termékek
--   Kategóriák
--   Kedvezmények
--   Évek időszaka
--   Jegyzékek/terminálok
--   Személyzet/alkalmazottak
--   Vevők
--   Üzemi egységek
+- Termékek
+- Kategóriák
+- Kedvezmények
+- Évek időszaka
+- Jegyzékek/terminálok
+- Személyzet/alkalmazottak
+- Vevők
+- Üzemi egységek
 
 A legfelső kategória csomópontból induló, egészen az alapértelmezett kiskereskedelmi termékkategória hierarchiájában lévő egyéni levélcsomópontokig tartó leásás, valamint két olyan egyedi jelentés segítségével, amely kihasználja a hierarchiai rács struktúrát, a felhasználók figyelhetik az értékesítést és a teljesítménykülönbözetet. A felhasználók kiskereskedelmi jelentés-hierarchiai célzattal leáshatnak a legfelső üzemi egységtől, az alapértelmezett szervezeti hierarchiaként meghatározott szervezeti hierarchia egyéni csatornájáig. A jelentéseket az alábbi helyek bármelyikéről megnyithatja:
 
--   **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**
--   **Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Termék és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**
--   **Árképzés és engedmények kezelése** munkaterület &gt; **Kiskereskedelem** &gt; **Árképzés és engedmények** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések**
--   **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések**
-
-
+- **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**
+- **Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Termék és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések**
+- **Árképzés és engedmények kezelése** munkaterület &gt; **Kiskereskedelem** &gt; **Árképzés és engedmények** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések**
+- **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések**
 

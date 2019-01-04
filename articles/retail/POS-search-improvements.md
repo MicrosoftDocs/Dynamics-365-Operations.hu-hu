@@ -66,7 +66,7 @@ A helyi termékkeresés használata felhasználóbarátabbá vált. A következ�
 - A kiskereskedők a termékkeresést úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
 - A termékkeresési algoritmus mostantól a **Keresési név** terméktulajdonságban is keresi a keresési kifejezéseket.
 
-![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
+    ![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
 
 ## <a name="customer-search"></a>Vevőkeresés
 

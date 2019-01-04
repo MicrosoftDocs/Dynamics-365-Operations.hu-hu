@@ -40,6 +40,7 @@ A következő ábra a POS felhasználói felület konfigurálható részeit lek�
 ![POS képernyő-elrendezés entitások](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Vizuális profil
+
 A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás-specifikus és a felhasználók számára közös vizuális elemek megadására szolgálnak. Bármelyik felhasználónak, aki bejelentkezik a nyilvántartásba, azonos lesz a téma, a színek és a képek.
 
 ![Világos téma a POS üdvözlő képernyőn](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 - **Alkalmazásháttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. Bejelentkezési hátterek esetén a fájlméretet a lehető legkisebbnek kell tartani.
 
 ## <a name="screen-layouts"></a>Képernyő-elrendezések
+
 A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalom és a felhasználóifelület-vezérlők elhelyezését a pénztár üdvözlőképernyőjén és **Tranzakciók** képernyőjén.
 
 ![Pénztár képernyő-elrendezés megtekintése](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ A pénztáralkalmazás az indítása alkalmával automatikusan kiválasztja a le
 ![Pénztár elrendezési méretek](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Gombrácsok
+
 Az egyes elrendezésméretekhez a képernyő-elrendezésen gombrácsokat lehet konfigurálni és hozzárendelni az a POS üdvözlő képernyőhöz és a **Tranzakció** képernyőhöz. Az üdvözlő képernyő gombrácsainak automatikus elrendezése balról jobbra, a legkisebb számtól (1. üdvözlő képernyő) a legnagyobb számig.
 
 A teljes pénztár képernyő-elrendezésekben a gombrácsok elhelyezése a képernyő-elrendezés tervezőjében van megadva.
@@ -104,6 +107,7 @@ A kompakt pénztár képernyő-elrendezésekben a gombrácsok automatikus elrend
 ![Gombrácsok kompakt elrendezésnél](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Képek
+
 Minden egyes elrendezésmérethez a képernyő-elrendezésen, be lehet állítani a pénztár kezelőfelületen megjelenítendő képeket. A teljes pénztár képernyő-elrendezésekben egyetlen kép is megadható az üdvözlő képernyőhöz. A kép a bal oldali első kezelőfelületi elemként jelenik meg. A **Tranzakció** képernyőn a képek lap képként vagy emblémaként használhatók. A kompakt pénztár képernyő-elrendezések nem használják ezeket a képeket.
 
 ### <a name="screen-layout-designer"></a>Képernyő-elrendezés tervezője
@@ -141,11 +145,13 @@ A teljes képernyőelrendezés-tervező segítségével a felhasználók felhasz
     - **Egyéni vezérlő** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
 
 ### <a name="compact-layout-designer"></a>Kompakt elrendezés tervezője
+
 A teljes képernyőelrendezés-tervezőhöz hasonlóan a kompakt képernyőelrendezés-tervező teszi lehetővé a pénztár képernyő-elrendezés konfigurálását telefonokhoz és kis táblagépekhez. Azonban ebben az esetben az elrendezés rögzítve van. Kattintson a jobb gombbal, és a helyi menü segítségével beállíthatja az elrendezésben a vezérlőket. Azonban a további tartalmakhoz fogd és vidd műveleteket nem használhat.
 
 ![Kompakt elrendezés tervezője](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Gombrács tervezője
+
 A gombrácstervező használható a pénztár gombrácsok konfigurálásához a pénztár üdvözlő képernyőjén és a **Tranzakció** képernyőn a teljes és a kompakt elrendezésekhez. Ugyanaz a gombrács használható minden elrendezéshez és elrendezéstípushoz. Ahogy a képernyő-elrendezés tervezője, a gombrácstervező is a ClickOnce telepítési technológiát használja az alkalmazás legújabb verziójának letöltésére, telepítésére és elindítására minden alkalommal, amikor a felhasználó megnyitja. Ügyeljen arra, hogy ellenőrizze a ClickOnce böngészővel szemben támasztott követelményeit. Néhány böngésző esetében, például a Google Chrome, bővítmények szükségesek.
 
 ![Gombrács tervezője](../retail/media/Button-Grid-Designer.png)
