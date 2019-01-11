@@ -8,7 +8,7 @@
       href: get-started/before-you-buy.md
     - name: Regisztrálás az előfizetés előnézetére
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Demókörnyezet telepítése
+    - name: Bemutatókörnyezet telepítése
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Telepítési beállítások
       href: dev-itpro/choose-deployment.md
@@ -147,11 +147,13 @@
       href: POS-search-improvements.md
     - name: Készletkeresés a pénztárban
       href: product-variants-POS.md
+    - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
+      href: pos-suspend-recall-transactions.md
     - name: Hardverperifériák
       items:
-        - name: Kiskereskedelmi perifériák
+        - name: Retail-perifériák
           href: retail-peripherals-overview.md
-        - name: Kiskereskedelmiperiféria-szimulátor
+        - name: Retail perifériaszimulátor
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Perifériák csatlakoztatása a pénztárhoz
           href: define-maintain-channel-clients-registers-hw-stations.md
@@ -480,9 +482,11 @@
           href: dev-itpro/overview-upgrade-n-minus1.md
         - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
           href: dev-itpro/n-1-installation-configuration.md
-    - name: Implementációs segítség
+        - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
+          href: dev-itpro/retailSDK-update.md
+    - name: Megvalósítási útmutatás
       items:
-        - name: Eszközkezelés implementációs útmutatója
+        - name: Eszközkezelés megvalósítási útmutatása
           href: implementation-considerations-devices.md
     - name: A környezet konfigurációja
       items:

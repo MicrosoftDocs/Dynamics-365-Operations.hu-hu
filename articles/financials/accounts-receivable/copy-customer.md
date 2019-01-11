@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 08e939f87bc4a1769533b205bc5706648e1d1dce
+ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -62,7 +62,7 @@ A vevő másolásakor a rendszer megpróbálja menteni az új vevő adatait. A m
 
 ## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Vevő másolása az adómentességi szám keresés funkció használatával
 
-Szállítókat is másolhat az Adómentességi szám keresés funkció használatával, amely a **Regisztráció** csoportban található a **Minden vevő** oldal Művelet panelének **Vevő** oldalán. A megjelenő **Adómentességi szám keresés** párbeszédpanel megjeleníti az adómentességi számot, a vevőazonosítót, a vevő nevét, valamint a jogi személyt, ahol az adómentességi azonosító használatban van. Csak akkor másolhatja a vevőt, ha az olyan jogi személyben van, ami nem az aktuális jogi személy. Miután kiválasztott egy, a követelménynek megfelelő vevőt, kövesse az alábbi lépéseket.
+Vevőket is másolhat az Adómentességi szám keresés funkció használatával, amely a **Regisztráció** csoportban található a **Minden vevő** oldal Művelet panelének **Vevő** oldalán. A megjelenő **Adómentességi szám keresés** párbeszédpanel megjeleníti az adómentességi számot, a vevőazonosítót, a vevő nevét, valamint a jogi személyt, ahol az adómentességi azonosító használatban van. Csak akkor másolhatja a vevőt, ha az olyan jogi személyben van, ami nem az aktuális jogi személy. Miután kiválasztott egy, a követelménynek megfelelő vevőt, kövesse az alábbi lépéseket.
 
 1. Megjelenik a **Vevő másolása** lehetőség. Alapértelmezés szerint ez a beállítás **Nem** értékre van beállítva. A vevő másolásához az aktuális jogi személybe, adja meg a beállítás esetében az **Igen** értéket. 
 2. Válassza ki a **Kiválasztás** lehetőséget. Létrejön az új vevő.
