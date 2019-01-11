@@ -7,6 +7,10 @@
         - name: Új vagy módosult elemek
           href: whats-new.md
           items:
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 14.)
+              href: whats-new-talent-december-14.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
+              href: whats-new-talent-december-6.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 27.)
               href: whats-new-talent-november-27.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 15.)
@@ -71,6 +75,8 @@
     - name: Szabadság és távollét kezelése
       href: leave-absence-overview.md
       items:
+        - name: Szabadság- és távollétkoncepciók
+          href: leave-absence-concepts.md
         - name: Elhatárolt szabadság a ledolgozott órák alapján
           href: leave-accrue-hours-worked.md
         - name: Munkaidőnaptárak
@@ -128,10 +134,13 @@
         - name: Tanfolyamok beállítása
           href: courses.md
     - name: Juttatási program meghatározása és kezelése
-      href: manage-benefit-program.md
-    - name: Juttatásra vonatkozó jogosultsági irányelvek
-      href: benefit-eligibility-policies.md
       items:
+        - name: Juttatási program kezelése
+          href: manage-benefit-program.md
+        - name: Juttatásra vonatkozó jogosultsági irányelvek
+          href: benefit-eligibility-policies.md
+        - name: Affordable Care Act (ACA) jelentések létrehozása
+          href: generate-aca-reports.md
         - name: A dolgozóknak kölcsönzött cikkek kezelése
           href: loan-items.md
     - name: Információgyűjtés kérdőívekkel
@@ -266,7 +275,7 @@
           href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Cél létrehozása
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Teljesítmény-áttekintés létrehozása
+        - name: Teljesítményáttekintés létrehozása
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Talent – hibaelhárítás
       items:
@@ -276,8 +285,6 @@
           href: create-envi-powerapps-admin-ctr.md
         - name: Talent kliens kapcsolata megszakad
           href: client-disconnects.md
-        - name: Az adatbázis biztonsági mentéseinek kezelése
-          href: database-backups.md
         - name: 'Szövegcsonkolás elkerülése a pozícióhierarchián, és exportálás Visio szolgáltatásba'
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Kompenzációs folyamat futtatása
