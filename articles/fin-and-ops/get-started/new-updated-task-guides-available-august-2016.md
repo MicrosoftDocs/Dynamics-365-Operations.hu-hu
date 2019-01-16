@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/09/2018
 
 A témakör felsorolja a Microsoft Dynamics AX (2016. augusztus – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
----------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 
 A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához, a Microsoft Dynamics AX Platform 2. frissítéséhez (2016. augusztus), valamint a Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
 
@@ -95,17 +94,11 @@ A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a M
 |-----------------------------------------------------------------------------|----------------|
 | Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez | Globális         |
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
-
-
-
 

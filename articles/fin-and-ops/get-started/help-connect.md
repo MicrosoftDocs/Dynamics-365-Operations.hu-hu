@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
-ms.openlocfilehash: a2ca5f5302751ad2c4ddc3c6921a8a9b6c2d57df
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -30,68 +30,76 @@ ms.lasthandoff: 12/04/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations súgórendszerének összetevőit írja le. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit. 
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations súgórendszerének összetevőit írja le. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
-A következő ábra a Finance and Operations rendszer súgórendszerének részeit jeleníti meg. A termék súgója a Finance and Operations webhelyéről (https://docs.microsoft.com) tölt le cikkeket, valamint az itt tárolt feladat-útmutatókat használja: Business Process Modeler in Lifecycle Services (LCS). 
-> [!NOTE]
-> A diagramban csillaggal (\*) szereplő funkciók tervbe vannak véve, de még nem érhetők el. [![Súgó-architektúra](./media/help-architecture.png)](./media/help-architecture.png)
 
+A következő ábra a Finance and Operations rendszer súgórendszerének részeit jeleníti meg. A termék súgója a Finance and Operations webhelyéről (https://docs.microsoft.com) tölt le cikkeket, valamint az itt tárolt feladat-útmutatókat használja: Business Process Modeler in Lifecycle Services (LCS).
+
+> [!NOTE]
+> A diagramban csillaggal (\*) szereplő funkciók tervbe vannak véve, de még nem érhetők el.
+
+[![Súgó-architektúra](./media/help-architecture.png)](./media/help-architecture.png)
 
 ## <a name="connecting-the-help-system"></a>Csatlakozás a Súgó rendszerhez
+
 > [!NOTE]
 > A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
 
+A **Rendszerparaméterek** oldalon a rendszergazdák csatlakoztathatják a Súgó rendszer különböző darabjait az adott megvalósításhoz.
 
-A **Rendszerparaméterek** oldalon a rendszergazdák csatlakoztathatják a Súgó rendszer különböző darabjait az adott megvalósításhoz. [![Rendszerparaméterek – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) A **Rendszerparaméterek** lapon végezze el az alábbi lépéseket:
+[![Rendszerparaméterek űrlap – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+
+A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
 
 > [!IMPORTANT]
-> Amikor első alkalommal nyitja meg a **Súgó** lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a **Rendszerparaméterek** oldal eléréséhez.[![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás az LCS szolgáltatáshoz")](./media/connect-to-lcs-crop.png)
+> Amikor első alkalommal nyitja meg a **Súgó** lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a **Rendszerparaméterek** oldal eléréséhez.
+>
+> [![Kapcsolódás LCS-hez](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás LCS-hez")](./media/connect-to-lcs-crop.png)
 
-1.  A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
-2.  Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
-    - A Finance and Operations Microsoft-tartalom esetében válassza ki a legújabb Microsoft Dynamics 365 Finance and Operations APQC Egyesített könyvtárat. 
-    - A Retail esetében a könyvtárat a közeljövőben adjuk ki. 
-    - A Talent esetében nem kell könyvtárat választani – a kapcsolatot a megfelelő könyvtárhoz létrehozzuk Önnek. 
+1. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
+2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 
-3.  Adja meg a BPM könyvtárak megjelenítési sorrendjét. Ez meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
+    - A Finance and Operations Microsoft-tartalom esetében válassza ki a legújabb Microsoft Dynamics 365 Finance and Operations APQC Egyesített könyvtárat.
+    - A Retail esetében a könyvtárat a közeljövőben adjuk ki.
+    - A Talent esetében nem kell könyvtárat választani – a kapcsolatot a megfelelő könyvtárhoz létrehozzuk Önnek.
+
+3. Adja meg a BPM könyvtárak megjelenítési sorrendjét. Ez meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
 
 Miután végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations aktuális oldalához kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
 
 ### <a name="showing-translated-task-guides"></a>Lefordított feladat-útmutatók megjelenítése
 
-A honosított feladat-útmutatók először a 2016. májusi APQC Egyesített könyvtárban, valamint az Első lépések könyvtárban lettek szállítva. Ha szeretné a honosított feladat-útmutató súgót látni a Finance and Operationsben, győződjön meg arról, hogy csatlakozva van a májusi könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a feladat-útmutató nyelvét. 
+A honosított feladat-útmutatók először a 2016. májusi APQC Egyesített könyvtárban, valamint az Első lépések könyvtárban lettek szállítva. Ha szeretné a honosított feladat-útmutató súgót látni a Finance and Operationsben, győződjön meg arról, hogy csatlakozva van a májusi könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a feladat-útmutató nyelvét.
 
 > [!NOTE]
 > Annak ellenére, hogy sok feladat-útmutató le van már fordítva, a Finance and Operations rendszer jelenleg nem jelzi a lefordított feladat-útmutatók neveit. Valamint csak a 2016. februárban megjelent feladat-útmutatók fordításai elérhetőek a májusi könyvtárban jelenleg. További fordításokat tartalmazó frissített könyvtárat fogunk megjelentetni hamarosan.
-> -   Ha egy feladat-útmutató le van fordítva, akkor a kiválasztott nyelven fog megjelenni a feladat-útmutató teljes szövege.
-> -   Ha egy feladat-útmutató még nincs lefordítva, akkor a kiválasztott nyelven csak néhány szöveg (a vezérlők szövegei) fog megjelenni.
+>
+> - Ha egy feladat-útmutató le van fordítva, akkor a kiválasztott nyelven fog megjelenni a feladat-útmutató teljes szövege.
+> - Ha egy feladat-útmutató még nincs lefordítva, akkor a kiválasztott nyelven csak néhány szöveg (a vezérlők szövegei) fog megjelenni.
 
 ## <a name="creating-custom-help"></a>Egyéni súgó létrehozása
-Használhatja a feladat-útmutatókat az egyéni súgó létrehozásáhot, vagy hozzákapcsolhat egy webhelyet a Súgópanelhez. 
+
+Használhatja a feladat-útmutatókat az egyéni súgó létrehozásáhot, vagy hozzákapcsolhat egy webhelyet a Súgópanelhez.
 
 ### <a name="create-custom-help-with-task-guides"></a>Egyéni súgó létrehozása feladat-útmutatókkal
-Lehetősége van egyéni súgót létrehozni saját Finance and Operations és Retail példányához; ehhez létre kell hoznia az egyedi megoldásokat magukban foglaló feladatrögzítéseket, majd azokat egy LCS Üzletifolyamat-tárba kell mentenie. A Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat. 
+
+Lehetősége van egyéni súgót létrehozni saját Finance and Operations és Retail példányához; ehhez létre kell hoznia az egyedi megoldásokat magukban foglaló feladatrögzítéseket, majd azokat egy LCS Üzletifolyamat-tárba kell mentenie. A Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
 Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el a megoldás lesz a felhasználók számára érhető el. Ezenkívül az APQC Egyesített globális tárról is készíthet másolatot; megnyithatja a saját másolatot és az abban található feladatrögzítéseket, majd a módosítást követően elmentheti a rögzítéseket a változtatásokkal együtt. További tudnivalókért lásd: [Dokumentációként használandó feladatrögzítés vagy oktatás létrehozása](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Egyéni webhely csatlakoztatása
-A Microsoft rendelkezésre bocsátott egy ismertetőt és mintakódot, amely leírja, hogy hogyan lehet egy egyéni súgówebhelyet létrehozni, és a Súgópanelhez csatlakoztatni. További tájékoztatás: 
+
+A Microsoft rendelkezésre bocsátott egy ismertetőt és mintakódot, amely leírja, hogy hogyan lehet egy egyéni súgówebhelyet létrehozni, és a Súgópanelhez csatlakoztatni. További tájékoztatás:
+
 - [Egyéni súgó létrehozása a Finance and Operations szolgáltatáshoz (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Egyéni súgó GitHub-tárház](https://github.com/microsoft/dynamics356f-o-custom-help)
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Súgó áttekintése](help-overview.md)
 
 [Feladatrögzítő áttekintése](../../dev-itpro/user-interface/task-recorder.md)
 
 [Feladatrögzítés létrehozása dokumentációként vagy képzésként való felhasználás céljából](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-
-
-
-
 

@@ -3,7 +3,7 @@ title: "Forráskeresés LinkedIn Recruiter segítségével"
 description: "Ez a témakör a gépi tanulásnak az állás- és állásjelölti javaslatok beszerzésére való használatával kapcsolatban tartalmaz tájékoztatást."
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ Miután LinkedIn Recruiter lehetőségeket az Attract rendszergazda engedélyezt
 
 A jelölt LinkedIn profilját megtekintheti az Attract rendszerében. A LinkedIn widget megjeleníti a pályázó profilját, amikor az ATS adatok megfelelnek a felhasználók LinkedIn adatainak.
 
-Profil megtekintéséhez menjen a jelentkező profiljához az állásból vagy a szaktudáskészletből elindulva. A pályázói profilnál válassz a **LinkedIn** lapot, és betöltődik a profilwidget. A profilwidget használatával jelzze, ha ez a megfelelő egyezés-e. Ha nem, keresse meg a megfelelő személyt. A pályázót mentheti is erről a lapról LinkedIn Recruiter projektjeibe.
+Profil megtekintéséhez menjen a jelentkező profiljához az állásból vagy a szaktudáskészletből elindulva. A pályázói profilnál válassz a **LinkedIn** lapot, és betöltődik a profilwidget. A pályázót mentheti is erről a lapról LinkedIn Recruiter projektjeibe.
+1. Ha aLinkedIn talált egyezést az e-mail cím és LinkedIn tagazonosító alapján (pontos egyezés) a pályázó profilja megjelenik. A felhasználónak továbbra is lehetősége van a profil kapcsolására/leválasztására.
+
+2. Ha a LinkedIn nem találja a jelentkezőt az e-mail-cím vagy tagazonosító alapján, megjeleníti a lehetségesen egyező jelölteket a jelölt neve alapján, és a felhasználó, kiválaszthatja egyiküket, és hozzákapcsolhatja a profilhoz.  
+
+3. Ha LinkedIn egyetlen jelöltet sem talál a név alapján, azt küldi vissza, hogy nem található egyezés.
 
 ### <a name="1-click-export"></a>1 kattintásos exportálás 
 
@@ -117,11 +122,14 @@ LinkedIn Recruiter használatával nyomon követheti, hogy pályázó jelentkeze
 
 6.  Válassza ki a **Megjegyzések** lapot a pályázóhoz az Attractban rögzített megjegyzések megtekintéséhez.
 
+> [!NOTE]
+> A pályázó- és pályázati adatok nem lesznek szinkronizálva a LinkedIn Recruiter-rel, ha a jelentkező nem lépett túl a potenciális szakaszon.
+
 ### <a name="inmail-history"></a>InMail előzmények
 
 Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail előzményei a LinkedIn Recruiterben. Ha engedélyezve van, a pályázó teljes InMail előzményei megjeleníthetők. Megtekintheti, hogy a szervezetből ki váltott InMail üzeneteket a pályázóval, az üzeneteket azonban nem lehet megtekinteni.
 
-Az InMail-előzmények megtekintéséhez ugorjon a jelentkező profiljára, menjen a **LinkedIn** lapra, és görgessen az előzmények megtekintéséhez a lap aljára. Csak akkor tekintheti meg az InMail előzményeket, ha a pályázó válaszolt a kérésére, és a LinkedIn rendszerében megosztotta Önnel a profilját. Az InMail üzenetei az Attract rendszerével néhány óránként szinkronizálódnak.
+Az InMail-előzmények megtekintéséhez ugorjon a jelentkező profiljára, menjen a **LinkedIn** lapra, és görgessen az előzmények megtekintéséhez a lap aljára. Ha a pályázóval beszélgetett, megtekintheti az InMail-előzményeket. Az InMail üzenetei az Attract rendszerével néhány óránként szinkronizálódnak.
 
 ### <a name="notes-history"></a>Megjegyzések előzményei 
 
@@ -131,7 +139,7 @@ A megjegyzéselőzmények megtekintéséhez ugorjon a jelentkező profiljára, m
 
 ### <a name="inmail-stub-profile"></a>InMail csonka profil
 
-Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail csonka profilok a LinkedIn Recruiterben. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord.
+Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail csonka profilok a LinkedIn Recruiterben. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord. Ha a pályázó már létezik a rendszerben egy e-mail címmel, vagy úgy döntött, hogy megosztja e-mail-címét a toborzóval, megtekintheti a jelölt e-mail-címét.
 
 A pályázók listájának megtekintéséhez menjen a **Szaktudásgyűjtők** elemhez a rendszer által létrehozott LinkedIn szaktudásgyűjtők ellenőrzéséhez. A szaktudásgyűjtő a LinkedIntől kapott jelöltlistákat és a jelöltek csonka profiljait tartalmazza, a jelölt keresztnevét és vezetéknevét mutatva. A pályázó e-mail-azonosítója fog megjelenni, ha a pályázó az e-mail-címe megosztását választotta.
 

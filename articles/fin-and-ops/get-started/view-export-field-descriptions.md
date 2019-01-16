@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -32,29 +32,36 @@ ms.lasthandoff: 08/09/2018
 
 Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 
-A Microsoft Dynamics 365 for Finance and Operations rendszer tartalmazza néhány bonyolultabb mező leírását. Ezek a leírások akkor jelennek meg, ha az adott mező fölé húzza az egérmutatót. Ezenkívül a **Mezőleírások** oldalon megtekintheti és exportálhatja a leírásokat. 
+A Microsoft Dynamics 365 for Finance and Operations rendszer tartalmazza néhány bonyolultabb mező leírását. Ezek a leírások akkor jelennek meg, ha az adott mező fölé húzza az egérmutatót. Ezenkívül a **Mezőleírások** oldalon megtekintheti és exportálhatja a leírásokat.
 
-Nem minden lap rendelkezik mezőleírásokkal. Csak az összetettebb mezőkhöz kívánunk leírásokat nyújtani, azokhoz nem, amelyek használata nyilvánvaló. Ezért néhány oldalon egyáltalán nem található mezőleírás, egyes oldalakon csak néhány leírás jelenik meg, néhány összetettebb oldalon (ilyen például a legtöbb paraméteroldal) pedig sok leírás érhető el. 
+Nem minden lap rendelkezik mezőleírásokkal. Csak az összetettebb mezőkhöz kívánunk leírásokat nyújtani, azokhoz nem, amelyek használata nyilvánvaló. Ezért néhány oldalon egyáltalán nem található mezőleírás, egyes oldalakon csak néhány leírás jelenik meg, néhány összetettebb oldalon (ilyen például a legtöbb paraméteroldal) pedig sok leírás érhető el.
 
 Amennyiben ön hozzáfér a Finance and Operations rendszer fejlesztői környezetéhez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mező testreszabása – súgó](../../dev-itpro/user-interface/customize-field-help.md) pontnál talál.
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Mezőleírások megtekintése a felhasználói felületen
-A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg. (Megjegyzés: a Dynamics AX 7.0 (2016. február) verzióban a mezők leírásai csak a **Mezőleírások** page.) Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg. 
+
+A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg.
+
+> [!NOTE]
+> A Microsoft Dynamics AX 7.0.0 verzióban (2016. február) a mezők leírásai csak a **Mezőleírások** oldalon érhetőek el.
+
+Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg.
 
 [![Példa egy mezőleírásra](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>A Mezőleírások oldal segítségével megtekintheti és exportálhatja a mezőkhöz tartozó súgót
+
 A **Mezőleírások** oldal segítségével megtekintheti és exportálhatja a mezőleírásokat. Egyszerre csak egy lap leírásai tekinthetők meg.
 
 ### <a name="view-the-descriptions-for-a-page"></a>Egy lap leírásainak megtekintése:
 
 Egy lap leírásainak megtekintéséhez kövesse az alábbi lépéseket.
 
--   A **Lap kijelölése** mezőbe írja be a lap nevét. Másik lehetőségként a nyílra kattintva nyissa meg az összes lapot tartalmazó listát; keresse ki a kívánt lapot, vagy szűrje a listát.
+- A **Lap kijelölése** mezőbe írja be a lap nevét. Másik lehetőségként a nyílra kattintva nyissa meg az összes lapot tartalmazó listát; keresse ki a kívánt lapot, vagy szűrje a listát.
 
-Használhatja a felhasználói felületen megjelenő lapnevet (például: **Vevők**) vagy a lap kódnevét (AOT nevét), amely úgy érhető el, hogy jobb gombbal a lapra kattint (például: **CustTable**). 
+Használhatja a felhasználói felületen megjelenő lapnevet (például: **Vevők**) vagy a lap kódnevét (AOT nevét), amely úgy érhető el, hogy jobb gombbal a lapra kattint (például: **CustTable**).
 
-A lapok listájának különféle módon megvalósítható szűréséről bővebben a cikk „Lap keresése” szakaszában olvashat. 
+A lapok listájának különféle módon megvalósítható szűréséről bővebben a cikk „Lap keresése” szakaszában olvashat.
 
 Ha a **Leírás nélküli mezőkkel együtt** beállításnál az **Igen** lehetőséget választja, az oldalon minden mező megjelenik, függetlenül attól, hogy rendelkezik-e mezőleírással.
 
@@ -62,23 +69,25 @@ Ha a **Leírás nélküli mezőkkel együtt** beállításnál az **Igen** lehet
 
 Egy lap leírásainak exportálásához kövesse az alábbi lépéseket.
 
-1.  Válasszon egy lapot a **Lap kijelölése** mezőben.
-2.  Kattintson a jobb felső sarokban lévő **Megnyitás Microsoft Office programban** gombra, majd válassza a **FieldDescriptionTmp** lehetőséget.
+1. Válasszon egy lapot a **Lap kijelölése** mezőben.
+2. Kattintson a jobb felső sarokban lévő **Megnyitás Microsoft Office programban** gombra, majd válassza a **FieldDescriptionTmp** lehetőséget.
 
 ### <a name="searching-for-a-page"></a>Egy lap keresése
 
 Egy adott lap több módon is megkereshető a **Lap kijelölése** mezőben. Sok esetben a **Lap kijelölése** mezőben található nyílra kell kattintania a legördülő menü kinyitásához; ekkor egy szűrt laplistáról választhat.
 
--   Írja be a név egy részét, majd a nyissa meg a legördülő listát, és válasszon a szűrt lapok listájából.
--   Nyissa meg a legördülő listát, majd kattintson a lista tetején lévő **Lapnév** fejlécre vagy a **Lap AOT-neve** fejlécre. Ekkor megjelenik egy párbeszédpanel, ahol speciális szűrési lehetőségeket használhat, például **A lapnév kezdete**.
--   Írja be a lap teljes nevét. Ha ezt a beállítást használja, célszerű megnyitni a legördülő listát, és megnézni, hogy mi szerepel még a listán, még akkor is, ha a mezőleírások megjelennek.
-    -   Ha egyetlen pontos egyezés található a névhez, akkor annak megfelelő lap mezőleírásai fognak megjelenni.
-    -   Ha egynél több pontos egyezés található, nem jelennek meg leírások. Ez esetben nyissa meg a legördülő listát és jelölje ki a kívánt lapot.
-    -   A beírt névnek megfelelő lap leírásai jelennek meg akkor is, ha a beírt név egy másik lap nevének részét képezi. Azonban ha megnyitja a legördülő listát, abban láthatóak lesznek az adott nevet tartalmazó lapok.
+- Írja be a név egy részét, majd a nyissa meg a legördülő listát, és válasszon a szűrt lapok listájából.
+- Nyissa meg a legördülő listát, majd kattintson a lista tetején lévő **Lapnév** fejlécre vagy a **Lap AOT-neve** fejlécre. Ekkor megjelenik egy párbeszédpanel, ahol speciális szűrési lehetőségeket használhat, például **A lapnév kezdete**.
+- Írja be a lap teljes nevét. Ha ezt a beállítást használja, célszerű megnyitni a legördülő listát, és megnézni, hogy mi szerepel még a listán, még akkor is, ha a mezőleírások megjelennek.
 
-Például ha a <strong>Leltár</strong> kifejezést írja be a *<strong><em>Lap kijelölése</em></strong>* mezőbe, nem jelenik meg leírás. Ha rákattint a legördülő listára, két <strong>Leltár</strong> nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az <strong>InventJournalCount</strong> AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
+    - Ha egyetlen pontos egyezés található a névhez, akkor annak megfelelő lap mezőleírásai fognak megjelenni.
+    - Ha egynél több pontos egyezés található, nem jelennek meg leírások. Ez esetben nyissa meg a legördülő listát és jelölje ki a kívánt lapot.
+    - A beírt névnek megfelelő lap leírásai jelennek meg akkor is, ha a beírt név egy másik lap nevének részét képezi. Azonban ha megnyitja a legördülő listát, abban láthatóak lesznek az adott nevet tartalmazó lapok.
+
+Például ha a **Leltár** kifejezést írja be a **Lap kijelölése** mezőbe, nem jelenik meg leírás. Ha rákattint a legördülő listára, két **Leltár** nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az **InventJournalCount** AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
+
 Ez a szakasz a mezőleírások használata során felmerülő lehetséges problémák elhárításához nyújt segítséget.
 
 ### <a name="i-cant-find-a-field-description"></a>Nem található mezőleírás
@@ -97,12 +106,7 @@ Az egy lapon lévő összes mező megjelenítéséhez, állítsa a **Tartalmazza
 
 A lapok különféle módon megvalósítható megkereséséről bővebben feljebb, a cikk „Lapok keresése” szakaszában olvashat. Ha a lap pontos nevét írta be, a mezőleírások lehet, hogy azért nem jelennek meg, mert egynél több azonos nevű lap létezik. Kattintson a nyílra a **Lap kijelölése** mezőben az elérhető lapok szűrt listájának megnyitásához.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Mező testreszabása – súgó](../../dev-itpro/user-interface/customize-field-help.md)
-
-
-
-
 

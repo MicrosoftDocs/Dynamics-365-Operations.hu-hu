@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,104 +29,87 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
+Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza. A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat útmutatók (2016 Február) a Microsoft Dynamics AX APQC egyesített könyvtárában
----------------------------------------------------------------------------------
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat útmutatók (2016 Február) a Microsoft Dynamics AX APQC egyesített könyvtárában
 
 Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics AX 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics AX APQC Egyesített könyvtárában (2016 Május) elérheti azokat. A súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM Sor**                                              | **Ország/Terület** |
-| Fő számlaadatok a Kintlevőségek rendszerben, szállítói számla használatával        | Globális             |
-| Fő számlaadatok a Kintlevőségek rendszerbe, számlanapló használatával     | Globális             |
-| Fő számlaadatok a Kintlevőségek rendszerbe, számlagyűjtő használatával        | Globális             |
-| Fő számlaadatok a Kintlevőségek rendszerbe, számlajegyzék használatával    | Globális             |
-| A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel | Globális             |
-| A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása       | Globális             |
-| Szállítói számla irányelveinek beállítása                            | Globális             |
+| BPM-sor                                                  | Ország/régió |
+|-----------------------------------------------------------|----------------|
+| Fő számlaadatok a Kintlevőségek rendszerben, szállítói számla használatával        | Globális         |
+| Fő számlaadatok a Kintlevőségek rendszerbe, számlanapló használatával     | Globális         |
+| Fő számlaadatok a Kintlevőségek rendszerbe, számlagyűjtő használatával        | Globális         |
+| Fő számlaadatok a Kintlevőségek rendszerbe, számlajegyzék használatával    | Globális         |
+| A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel | Globális         |
+| A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása       | Globális         |
+| Szállítói számla irányelveinek beállítása                            | Globális         |
 
-
- 
 ### <a name="accounts-receivable"></a>Kinnlevőségek
 
-|                                                             |                    |
-|-------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                | **Ország/Terület** |
-| Ismétlődő szabadszöveges számlasablon hozzárendelése vevőhöz | Globális             |
-| Fizetésifelszólítás-sorozat létrehozása                         | Globális             |
-| Beszedési megbízási felhatalmazás létrehozása vevő részére                | Globális             |
-| Szabadszöveges számlasablon létrehozása                         | Globális             |
-| Leírási napló létrehozása vevőhöz                   | Globális             |
-| Kamatkód létrehozása tartománnyal                        | Globális             |
-| Szabadszöveges számlák létrehozása és feldolgozása                       | Globális             |
-| Értékesítési rendelési számlák létrehozása                                 | Globális             |
-| Ismétlődő szabadszöveges számlák generálása és feladása              | Globális             |
-| Fizetési felszólítások feldolgozása                                  | Globális             |
-| Kamatfeldolgozás                                            | Globális             |
-| A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata                              | Globális             |
-| Kinnlevőségek korosítási adatainak beállítás és létrehozása   | Globális             |
+| BPM-sor                                                    | Ország/régió |
+|-------------------------------------------------------------|----------------|
+| Ismétlődő szabadszöveges számlasablon hozzárendelése vevőhöz | Globális         |
+| Fizetésifelszólítás-sorozat létrehozása                         | Globális         |
+| Beszedési megbízási felhatalmazás létrehozása vevő részére                | Globális         |
+| Szabadszöveges számlasablon létrehozása                         | Globális         |
+| Leírási napló létrehozása vevőhöz                   | Globális         |
+| Kamatkód létrehozása tartománnyal                        | Globális         |
+| Szabadszöveges számlák létrehozása és feldolgozása                       | Globális         |
+| Értékesítési rendelési számlák létrehozása                                 | Globális         |
+| Ismétlődő szabadszöveges számlák generálása és feladása              | Globális         |
+| Fizetési felszólítások feldolgozása                                  | Globális         |
+| Kamatfeldolgozás                                            | Globális         |
+| A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata                              | Globális         |
+| Kinnlevőségek korosítási adatainak beállítása és létrehozása   | Globális         |
 
-
- 
 ### <a name="cash-and-bank-management"></a>Készpénz- és bankkezelés
 
-|                                                                      |                    |
-|----------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                         | **Ország/Terület** |
-| Banki hitelmegállapodás létrehozása akkreditívhez                | Globális             |
-| Banki hitelmegállapodás létrehozása garancialevélhez             | Globális             |
-| Vevői kifizetések áttekintése                                           | Globális             |
-| Szállítói kifizetési díjak meghatározása                                           | Globális             |
-| Szállító fizetési feltételek meghatározása                                          | Globális             |
-| Vevői kifizetések letétele                                            | Globális             |
-| A vevő fizetési módjának kialakítása.                                 | Globális             |
-| Vevői kifizetési díjak kialakítása                                      | Globális             |
-| Vevői fizetési feltételek kialakítása                                     | Globális             |
-| Akkreditív exportálása                                              | Globális             |
-| Akkreditív importálása                                              | Globális             |
-| Garancialevél-tranzakció                                      | Globális             |
-| Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása                   | Globális             |
-| Szállítónak kiállított, jövőben esedékes csekk regisztrálása és feladása                     | Globális             |
-| Bank hitelek beállítása és az akkreditívhez tartozó profilok feladása     | Globális             |
-| Bank hitelek beállítása és a garancialevélhez tartozó profilok feladása | Globális             |
-| Jövőben esedékes csekkek beállítása                                              | Globális             |
-| Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése                                | Globális             |
-| Vevő által kiállított, jövőben esedékes csekk kiegyenlítése                             | Globális             |
-| Szállítói fizetési áttekintés                                              | Globális             |
+| BPM-sor                                                             | Ország/régió |
+|----------------------------------------------------------------------|----------------|
+| Banki hitelmegállapodás létrehozása akkreditívhez                | Globális         |
+| Banki hitelmegállapodás létrehozása garancialevélhez             | Globális         |
+| Vevői kifizetések áttekintése                                           | Globális         |
+| Szállítói kifizetési díjak meghatározása                                           | Globális         |
+| Szállító fizetési feltételek meghatározása                                          | Globális         |
+| Vevői kifizetések letétele                                            | Globális         |
+| A vevő fizetési módjának kialakítása.                                 | Globális         |
+| Vevői kifizetési díjak kialakítása                                      | Globális         |
+| Vevői fizetési feltételek kialakítása                                     | Globális         |
+| Akkreditív exportálása                                              | Globális         |
+| Akkreditív importálása                                              | Globális         |
+| Garancialevél-tranzakció                                      | Globális         |
+| Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása                   | Globális         |
+| Szállítónak kiállított, jövőben esedékes csekk regisztrálása és feladása                     | Globális         |
+| Bank hitelek beállítása és az akkreditívhez tartozó profilok feladása     | Globális         |
+| Bank hitelek beállítása és a garancialevélhez tartozó profilok feladása | Globális         |
+| Jövőben esedékes csekkek beállítása                                              | Globális         |
+| Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése                                | Globális         |
+| Vevő által kiállított, jövőben esedékes csekk kiegyenlítése                             | Globális         |
+| Szállítói fizetési áttekintés                                              | Globális         |
 
-
- 
 ### <a name="compliance"></a>Megfelelés
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM Sor**                               | **Ország/Terület** |
-| Naplózási házirendek meghatározása a forrásbizonylatok számára | Globális             |
+| BPM-sor                                   | Ország/régió |
+|--------------------------------------------|----------------|
+| Naplózási házirendek meghatározása a forrásbizonylatok számára | Globális         |
 
-
- 
 ### <a name="cost-management"></a>Költségkezelés
 
-|                                                                     |                    |
-|---------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                        | **Ország/Terület** |
-| Az aktív, becsült és realizált költségek összevetése egy termelési rendelésen | Globális             |
-| Költségobjektumhoz tartozó költségbejegyzések megtekintése                                 | Globális             |
-| Költségobjektum egyenlegének megtekintése                                            | Globális             |
-| Jelenlegi WIP állapot megtekintése egy termelési rendelésen                       | Globális             |
-| Készletkimutatás és költségobjektumonkénti KPI megtekintése                     | Globális             |
+| BPM-sor                                                            | Ország/régió |
+|---------------------------------------------------------------------|----------------|
+| Az aktív, becsült és realizált költségek összevetése egy termelési rendelésen | Globális         |
+| Költségobjektumhoz tartozó költségbejegyzések megtekintése                                 | Globális         |
+| Költségobjektum egyenlegének megtekintése                                            | Globális         |
+| Jelenlegi WIP állapot megtekintése egy termelési rendelésen                       | Globális         |
+| Készletkimutatás és költségobjektumonkénti KPI megtekintése                     | Globális         |
 
+### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
 
- 
-### <a name="countryregion-functionality"></a>Ország/Terület szolgáltatás
-
-|                                                                                                        |                                 |
+| BPM-sor                                                                                               | Ország/régió                  |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
-| **BPM Sor**                                                                                           | **Ország/Terület**              |
 | BAS jelentésmezők hozzáadása és a BAS - Ausztrál Üzleti Tevékenységi Nyilatkozatot generálása                        | Ausztrália és Új-Zéland       |
 | BAS Ausztrália okkódok beállítása                                                                  | Ausztrália és Új-Zéland       |
 | Fizetésiutalvány-formátum hozzárendelése vevői számlához                                                     | Dánia                         |
@@ -262,472 +245,406 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | GB-00009 Jóváírás létrehozása a kiegyenlítési engedményre                                               | Egyesült Királyság                  |
 | GB-00009Jóváírási paraméterek beállítása azonnali fizetési engedményhez                                   | Egyesült Királyság                  |
 
-
- 
 ### <a name="develop-vision-and-strategy"></a>Jövőkép és stratégia kialakítása
 
-|                                                                                          |                    |
-|------------------------------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                                             | **Ország/Terület** |
-| Kérdőív eredményeinek elemzése                                                            | Globális             |
-| Eldöntendő kérdés létrehozása                                                           | Globális             |
-| Nyitott kérdés létrehozása                                                            | Globális             |
-| A kérdés függővé tétele az előző kérdésre adott választól (Feltételes kérdések) | Globális             |
-| Százalékszámon alapuló kérdőív értékelése                                                   | Globális             |
+| BPM-sor                                                                                 | Ország/régió |
+|------------------------------------------------------------------------------------------|----------------|
+| Kérdőív eredményeinek elemzése                                                            | Globális         |
+| Eldöntendő kérdés létrehozása                                                           | Globális         |
+| Nyitott kérdés létrehozása                                                            | Globális         |
+| A kérdés függővé tétele az előző kérdésre adott választól (Feltételes kérdések) | Globális         |
+| Százalékszámon alapuló kérdőív értékelése                                                   | Globális         |
 
-
- 
 ### <a name="electronic-reporting"></a>Elektronikus jelentés
 
-|                                                 |                    |
-|-------------------------------------------------|--------------------|
-| **BPM Sor**                                    | **Ország/Terület** |
-| ER - Modelleképezés meghatározása és adatforrások kiválasztása | Globális             |
-| ER - tartományspecifikus adatmodell kialakítása            | Globális             |
-| ER - tartományspecifikus formátum kialakítása                | Globális             |
-| ER - adatmodell leképezése a kiválasztott adatforrásokra      | Globális             |
-| ER - szolgáltató kiválasztása                      | Globális             |
+| BPM-sor                                        | Ország/régió |
+|-------------------------------------------------|----------------|
+| ER - Modelleképezés meghatározása és adatforrások kiválasztása | Globális         |
+| ER - tartományspecifikus adatmodell kialakítása            | Globális         |
+| ER - tartományspecifikus formátum kialakítása                | Globális         |
+| ER - adatmodell leképezése a kiválasztott adatforrásokra      | Globális         |
+| ER - szolgáltató kiválasztása                      | Globális         |
 
-
- 
 ### <a name="expense-management"></a>Költséggazdálkodás
 
-|                              |                    |
-|------------------------------|--------------------|
-| **BPM Sor**                 | **Ország/Terület** |
-| Költségkezelés konfigurálása | Globális             |
+| BPM-sor                     | Ország/régió |
+|------------------------------|----------------|
+| Költségkezelés konfigurálása | Globális         |
 
-
- 
 ### <a name="fixed-assets"></a>Tárgyi eszközök
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM Sor**                                              | **Ország/Terület** |
-| Értékcsökkenési szabály módosítása több tárgyi eszközre | Globális             |
-| Tárgyi eszköz létrehozása                                      | Globális             |
-| Eszközök létrehozása és beszerzése a Követelések modulból           | Globális             |
-| Értékcsökkenési javaslat létrehozása                              | Globális             |
-| Tárgyi eszköz kivezetése szabadszöveges számlával        | Globális             |
-| Tárgyi eszköz kiegészítésének bevitele                        | Globális             |
-| Tárgyieszköz-beszerzési javasat                          | Globális             |
-| Értékcsökkenési profilok beállítása és létrehozása                   | Globális             |
-| Rendkívüli értékcsökkenés beállítása                                 | Globális             |
-| Értékcsökkenés könyvek beállítása                                 | Globális             |
-| Tárgyieszköz-csoportok beállítása                                 | Globális             |
-| Tárgyieszköz-feladási profilok beállítása                       | Globális             |
-| Értékmodellek beállítása                                       | Globális             |
-| Tárgyi eszköz felosztása                                       | Globális             |
-| Tárgyi eszköz áthelyezése                                    | Globális             |
+| BPM-sor                                                  | Ország/régió |
+|-----------------------------------------------------------|----------------|
+| Értékcsökkenési konvenció módosítása több tárgyi eszközre vonatkozóan | Globális         |
+| Tárgyi eszköz létrehozása                                      | Globális         |
+| Eszközök létrehozása és beszerzése a Követelések modulból           | Globális         |
+| Értékcsökkenési javaslat létrehozása                              | Globális         |
+| Tárgyi eszköz kivezetése szabadszöveges számlával        | Globális         |
+| Tárgyi eszköz kiegészítésének bevitele                        | Globális         |
+| Tárgyieszköz-beszerzési javasat                          | Globális         |
+| Értékcsökkenési profilok beállítása és létrehozása                   | Globális         |
+| Rendkívüli értékcsökkenés beállítása                                 | Globális         |
+| Értékcsökkenés könyvek beállítása                                 | Globális         |
+| Tárgyieszköz-csoportok beállítása                                 | Globális         |
+| Tárgyieszköz-feladási profilok beállítása                       | Globális         |
+| Értékmodellek beállítása                                       | Globális         |
+| Tárgyi eszköz felosztása                                       | Globális         |
+| Tárgyi eszköz áthelyezése                                    | Globális         |
 
-
- 
 ### <a name="general-ledger"></a>Főkönyv
 
-|                                                                   |                    |
-|-------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                      | **Ország/Terület** |
-| Pénzügyi év lezárása                                             | Globális             |
-| Naplóbejegyzés létrehozása   sablon alapján                           | Globális             |
-| Fő számla létrehozása                                             | Globális             |
-| Számlastruktúrák létrehozása                                         | Globális             |
-| Könyvelési sémák létrehozása                                            | Globális             |
-| Speciális szabályok létrehozása naplók részére                                | Globális             |
-| Speciális szabálystruktúrák létrehozása és hozzárendelése                        | Globális             |
-| Naplók létrehozása és érvényesítése                                      | Globális             |
-| Konszolidációs csoportok és további konszolidációs számlák létrehozása | Globális             |
-| Főkönyvi könyvelés tranzakcióinak létrehozása                                | Globális             |
-| Pénzügyi dimenziók meghatározása                                       | Globális             |
-| Feladott naplóbejegyzések naplózása                                 | Globális             |
-| Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása                    | Globális             |
-| Tömeges pénzügyi időszak zárás                                       | Globális             |
-| Online konszolidáció végrehajtása                                   | Globális             |
-| Időszaki naplók feladása                                            | Globális             |
-| Jogi személy előkészítése a konszolidációs folyamathoz       | Globális             |
-| Eltávolítási tranzakciók feldolgozása                                  | Globális             |
-| Főkönyvi felosztási napló feldolgozása                                 | Globális             |
-| Főkönyvi számlaalias beállítása                                     | Globális             |
-| Eltávolítási szabályok beállítása                                          | Globális             |
-| Fő számla kategóriáinak beállítása                                    | Globális             |
-| Kiegyenlítési tranzakciók a főkönyvi számlák között                       | Globális             |
-| Naplóbejegyzések vagy tranzakciók megtekintése                              | Globális             |
-| Naplóból kapcsolódó vállalatközi bizonylat megtekintése                    | Globális             |
+| BPM-sor                                                          | Ország/régió |
+|-------------------------------------------------------------------|----------------|
+| A pénzügyi év lezárása                                             | Globális         |
+| Naplóbejegyzés létrehozása   sablon alapján                           | Globális         |
+| Fő számla létrehozása                                             | Globális         |
+| Számlastruktúrák létrehozása                                         | Globális         |
+| Könyvelési sémák létrehozása                                            | Globális         |
+| Speciális szabályok létrehozása naplók részére                                | Globális         |
+| Speciális szabálystruktúrák létrehozása és hozzárendelése                        | Globális         |
+| Naplók létrehozása és érvényesítése                                      | Globális         |
+| Konszolidációs csoportok és további konszolidációs számlák létrehozása | Globális         |
+| Főkönyvi könyvelés tranzakcióinak létrehozása                                | Globális         |
+| Pénzügyi dimenziók meghatározása                                       | Globális         |
+| Feladott naplóbejegyzések naplózása                                 | Globális         |
+| Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása                    | Globális         |
+| Tömeges pénzügyi időszak zárás                                       | Globális         |
+| Online konszolidáció végrehajtása                                   | Globális         |
+| Időszaki naplók feladása                                            | Globális         |
+| Jogi személy előkészítése a konszolidációs folyamathoz       | Globális         |
+| Eltávolítási tranzakciók feldolgozása                                  | Globális         |
+| Főkönyvi felosztási napló feldolgozása                                 | Globális         |
+| Főkönyvi számlaalias beállítása                                     | Globális         |
+| Eltávolítási szabályok beállítása                                          | Globális         |
+| Fő számla kategóriáinak beállítása                                    | Globális         |
+| Kiegyenlítési tranzakciók a főkönyvi számlák között                       | Globális         |
+| Naplóbejegyzések vagy tranzakciók megtekintése                              | Globális         |
+| Naplóból kapcsolódó vállalatközi bizonylat megtekintése                    | Globális         |
 
+### <a name="human-capital-management"></a>Emberierőforrás-menedzselés
 
- 
-### <a name="human-capital-management"></a>Emberierőforrás-menedzsment
+| BPM-sor                                                         | Ország/régió |
+|------------------------------------------------------------------|----------------|
+| Kérdőív eredményeinek elemzése                                    | Globális         |
+| Pályázati postafiókrekordok jóváhagyása                                | Globális         |
+| Juttatás való jogosultsági folyamat                                      | Globális         |
+| Tömeges felvételi projekt létrehozása                                       | Globális         |
+| Kölcsöncikkek létrehozása                                                | Globális         |
+| Juttatásra való jogosultsági szabályok és irányelvek meghatározása                    | Globális         |
+| Kompenzációs folyamat meghatározása és az eredmények kiszámítása                | Globális         |
+| Új részlegek meghatározása                                           | Globális         |
+| Új feladatok meghatározása                                                  | Globális         |
+| Alkalmazotti juttatási program megvalósítása                                | Globális         |
+| Beosztásigénylés kialakítása és megnyitása                                 | Globális         |
+| Utódlási terv kialakítása                                          | Globális         |
+| Alkalmazotti ellenőrzés - i9 ellenőrzése                          | Globális         |
+| Dolgozó juttatásainak felvétele és eltávolítása                          | Globális         |
+| Alkalmazottak felvétele fix kompenzációs konstrukcióba                    | Globális         |
+| Alkalmazottak felvétele változó kompenzációs konstrukcióba                 | Globális         |
+| Pályázók és a pályázatok adatainak manuális megadása                    | Globális         |
+| Dolgozó adatainak megadása                                         | Globális         |
+| Meglevő jelölt felvétele toborzás útján                    | Globális         |
+| Jelölt felvétele toborzás útján                                | Globális         |
+| Több alkalmazott felvétele                                          | Globális         |
+| Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása                    | Globális         |
+| Dolgozónak kölcsönzött cikk                                            | Globális         |
+| Dolgozói sérülések és megbetegedések adatainak karbantartása                 | Globális         |
+| A kérdés függővé tétele az előző kérdésre adott választól | Globális         |
+| Juttatások lejárati dátumainak kezelése                                  | Globális         |
+| E-mail sablonok kezelése                                           | Globális         |
+| Alkalmazotti átalakítások és áthelyezések kezelése                        | Globális         |
+| Szabadság kezelése                                          | Globális         |
+| Dolgozói szállások kezelése                                     | Globális         |
+| Beosztás jelentési kapcsolatainak módosítása                    | Globális         |
+| Kompenzációs rácsok beállítása                                        | Globális         |
+| Sérülések és megbetegedések adatainak beállítása                            | Globális         |
+| Sérülések és megbetegedések adatainak beállítása                            | Globális         |
+| Juttatásra való jogosultsági irányelvek beállítása                             | Globális         |
+| I9 dokumentumtípusok beállítása                                     | Globális         |
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                     | **Ország/Terület** |
-| Kérdőív eredményeinek elemzése                                    | Globális             |
-| Pályázati postafiók rekordjainak jóváhagyása                                | Globális             |
-| Juttatás való jogosultsági folyamat                                      | Globális             |
-| Tömeges felvételi projekt létrehozása                                       | Globális             |
-| Kölcsöncikkek létrehozása                                                | Globális             |
-| Juttatásra való jogosultsági szabályok és irányelvek meghatározása                    | Globális             |
-| Kompenzációs folyamat meghatározása és az eredmények kiszámítása                | Globális             |
-| Új részlegek meghatározása                                           | Globális             |
-| Új feladatok meghatározása                                                  | Globális             |
-| Alkalmazotti juttatási program megvalósítása                                | Globális             |
-| Beosztásigénylés kialakítása és megnyitása                                 | Globális             |
-| Utódlási terv kialakítása                                          | Globális             |
-| Alkalmazotti ellenőrzés - i9 ellenőrzése                          | Globális             |
-| Dolgozó juttatásainak felvétele és eltávolítása                          | Globális             |
-| Alkalmazottak felvétele fix kompenzációs konstrukcióba                    | Globális             |
-| Alkalmazottak felvétele változó kompenzációs konstrukcióba                 | Globális             |
-| Pályázók és a pályázatok adatainak manuális megadása                    | Globális             |
-| Dolgozó adatainak megadása                                         | Globális             |
-| Meglevő jelölt felvétele toborzás útján                    | Globális             |
-| Jelölt felvétele toborzás útján                                | Globális             |
-| Több alkalmazott felvétele                                          | Globális             |
-| Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása                    | Globális             |
-| Dolgozónak kölcsönzött cikk                                            | Globális             |
-| Dolgozói sérülések és megbetegedések adatainak karbantartása                 | Globális             |
-| A kérdés függővé tétele az előző kérdésre adott választól | Globális             |
-| Juttatások lejárati dátumainak kezelése                                  | Globális             |
-| E-mail sablonok kezelése                                           | Globális             |
-| Alkalmazotti átalakítások és áthelyezések kezelése                        | Globális             |
-| Szabadság kezelése                                          | Globális             |
-| Dolgozói szállások kezelése                                     | Globális             |
-| Beosztás jelentési kapcsolatainak módosítása                    | Globális             |
-| Kompenzációs rácsok beállítása                                        | Globális             |
-| Sérülések és megbetegedések adatainak beállítása                            | Globális             |
-| Sérülések és megbetegedések adatainak beállítása                            | Globális             |
-| Juttatásra való jogosultsági irányelvek beállítása                             | Globális             |
-| I9 dokumentumtípusok beállítása                                     | Globális             |
-
-
- 
 ### <a name="inventory-management"></a>Készletgazdálkodás
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                                      | **Ország/Terület** |
-| Készletszintek kiigazítása a raktárban                                              | Globális             |
-| Készlet rendelkezésre állásának ellenőrzése                                                   | Globális             |
-| Helyes készletkövetési információk                                            | Globális             |
-| Készlet számlálása egy raktárban                                                    | Globális             |
-| Új raktárelrendezés létrehozása                                                     | Globális             |
-| Készletzárolás létrehozása és karbantartása                                         | Globális             |
-| Szabálytalanság létrehozása és feldolgozása                                              | Globális             |
-| Készletleltár-folyamatok meghatározása                                               | Globális             |
-| Készletszintek kezdeményezése a raktárban                                          | Globális             |
-| Áru minőségének vizsgálata                                                      | Globális             |
-| Vonalkódtípusok karbantartása                                                            | Globális             |
-| Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával | Globális             |
-| Érkezésáttekintési profilok beállítása                                                  | Globális             |
-| Minőségi rendelések beállítása                                                             | Globális             |
-| Egy cikk vagy egy alapanyag nyomon követése                                                     | Globális             |
-| Tényleges készlet áthelyezése raktáron belül                                  | Globális             |
+| BPM-sor                                                                          | Ország/régió |
+|-----------------------------------------------------------------------------------|----------------|
+| Készletszintek kiigazítása a raktárban                                              | Globális         |
+| A készlet elérhetőségének ellenőrzése                                                   | Globális         |
+| Helyes készletkövetési információk                                            | Globális         |
+| Készlet számlálása egy raktárban                                                    | Globális         |
+| Új raktárelrendezés létrehozása                                                     | Globális         |
+| Készletzárolás létrehozása és karbantartása                                         | Globális         |
+| Szabálytalanság létrehozása és feldolgozása                                              | Globális         |
+| Készletleltár-folyamatok meghatározása                                               | Globális         |
+| Készletszintek kezdeményezése a raktárban                                          | Globális         |
+| Áru minőségének vizsgálata                                                      | Globális         |
+| Vonalkódtípusok karbantartása                                                            | Globális         |
+| Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával | Globális         |
+| Érkezésáttekintési profilok beállítása                                                  | Globális         |
+| Minőségi rendelések beállítása                                                             | Globális         |
+| Egy cikk vagy egy alapanyag nyomon követése                                                     | Globális         |
+| Tényleges készlet áthelyezése a raktáron belül                                  | Globális         |
 
-
- 
 ### <a name="manufacturing"></a>Gyártás
 
-|                                                               |                    |
-|---------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                  | **Ország/Terület** |
-| Kanban mennyiségszámítási irányelv hozzáadása a kanbanszabályhoz     | Globális             |
-| Kötegelt rendelések életciklusa a létrehozástól az indításig                    | Globális             |
-| Kanbanmennyiség-javaslatok kiszámítása                         | Globális             |
-| Kanbanszabályok módosítása egy feldolgozási feladat számára                         | Globális             |
-| Dolgozó konfigurálása mobil feladatvégző eszközzel                | Globális             |
-| Receptúra másolása                                                | Globális             |
-| Receptúra létrehozása meglévő receptúra másolásával          | Globális             |
-| Termelésifolyamat-verzió létrehozása                              | Globális             |
-| Termelési rendelés létrehozása                                     | Globális             |
-| Értékesítési esemény Kanbanszabályának létrehozása                              | Globális             |
-| Érték-előállítási folyamat létrehozása                                         | Globális             |
-| A tevékenységkapcsolat létrehozása: Követő                           | Globális             |
-| Üzemi erőforrás létrehozása                                 | Globális             |
-| Rögzített mennyiségű kanbanszabályok létrehozása                            | Globális             |
-| Új Kanbanszabályok létrehozása meglévő Kanbanszabályok másolásával  | Globális             |
-| Lean manufacturing gyártási folyamattevékenységek létrehozása              | Globális             |
-| Erőforrás-képesség létrehozása                                  | Globális             |
-| Lean manufacturing áthelyezési tevékenységeinek létrehozása             | Globális             |
-| Munkaidő-ütemezési tulajdonságok létrehozása                     | Globális             |
-| Munkaidősablonok készítése                                 | Globális             |
-| Naptárak és munkaelemek meghatározása                            | Globális             |
-| Elkülönített gyártási erőforráscsoport meghatározása                  | Globális             |
-| Lean manufacturing gyártásban dolgozó munkacellák meghatározása                          | Globális             |
-| Lean ütemezési csoportok meghatározása                                   | Globális             |
-| Termelési folyamatmodellek meghatározása                                 | Globális             |
-| Erőforrás-kapacitások meghatározása                                  | Globális             |
-| Munkaidő és jelenlét bérlistafolyamatának engedélyezése                | Globális             |
-| Termelési rendelés befejezése                                        | Globális             |
-| Termelési rendelés becslése                                   | Globális             |
-| Lean rögzítés értékesítési rendelésekből                                | Globális             |
-| Mértékegység kezelése                                        | Globális             |
-| Beütemezett Kanbanfeladatok mozgatása                                    | Globális             |
-| A feldolgozási Kanbanfeladat előkészítése, amikor az anyagok elérhetők     | Globális             |
-| A feldolgozási kanbanfeladat előkészítése, amikor az anyagok nem elérhetők | Globális             |
-| Termelési rendelés kiadása                                    | Globális             |
-| A Kanbanfeladat eltávolítása az ütemezésből                         | Globális             |
-| Termelési jelentés készként jelenítése.                         | Globális             |
-| Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról                        | Globális             |
-| Kanbanfeladat állapotának visszaállítása                                      | Globális             |
-| Termelési rendelés ütemezése                                   | Globális             |
-| Kanbanfeladatok ütemezése                                          | Globális             |
-| Termelési rendelés indítása                                      | Globális             |
-| Anyagok átvitele Kanban-feladatokkal                            | Globális             |
-| Termelési folyamat és verzió érvényesítése                          | Globális             |
+| BPM-sor                                                      | Ország/régió |
+|---------------------------------------------------------------|----------------|
+| Kanbanmennyiségi irányelv hozzáadása egy kanbanszabályhoz     | Globális         |
+| Kötegelt rendelések életciklusa a létrehozástól az indításig                    | Globális         |
+| Kanbanmennyiség-javaslatok kiszámítása                         | Globális         |
+| Kanbanszabályok módosítása egy feldolgozási feladat számára                         | Globális         |
+| Dolgozó konfigurálása mobil feladatvégző eszközzel                | Globális         |
+| Receptúra másolása                                                | Globális         |
+| Receptúra létrehozása meglévő receptúra másolásával          | Globális         |
+| Termelésifolyamat-verzió létrehozása                              | Globális         |
+| Termelési rendelés létrehozása                                     | Globális         |
+| Értékesítési esemény Kanbanszabályának létrehozása                              | Globális         |
+| Érték-előállítási folyamat létrehozása                                         | Globális         |
+| A tevékenységkapcsolat létrehozása: Követő                           | Globális         |
+| Üzemi erőforrás létrehozása                                 | Globális         |
+| Rögzített mennyiségű kanbanszabályok létrehozása                            | Globális         |
+| Új Kanbanszabályok létrehozása meglévő Kanbanszabályok másolásával  | Globális         |
+| Lean manufacturing gyártási folyamattevékenységek létrehozása              | Globális         |
+| Erőforrás-képesség létrehozása                                  | Globális         |
+| Lean manufacturing áthelyezési tevékenységeinek létrehozása             | Globális         |
+| Munkaidő-ütemezési tulajdonságok létrehozása                     | Globális         |
+| Munkaidősablonok készítése                                 | Globális         |
+| Naptárak és munkaelemek meghatározása                            | Globális         |
+| Elkülönített gyártási erőforráscsoport meghatározása                  | Globális         |
+| Lean manufacturing gyártásban dolgozó munkacellák meghatározása                          | Globális         |
+| Lean ütemezési csoportok meghatározása                                   | Globális         |
+| Termelési folyamatmodellek meghatározása                                 | Globális         |
+| Erőforrás-kapacitások meghatározása                                  | Globális         |
+| Munkaidő és jelenlét bérlistafolyamatának engedélyezése                | Globális         |
+| Termelési rendelés befejezése                                        | Globális         |
+| Termelési rendelés becslése                                   | Globális         |
+| Lean rögzítés értékesítési rendelésekből                                | Globális         |
+| Mértékegység kezelése                                        | Globális         |
+| Beütemezett Kanbanfeladatok mozgatása                                    | Globális         |
+| A feldolgozási Kanbanfeladat előkészítése, amikor az anyagok elérhetők     | Globális         |
+| A feldolgozási kanbanfeladat előkészítése, amikor az anyagok nem elérhetők | Globális         |
+| Termelési rendelés kiadása                                    | Globális         |
+| A Kanbanfeladat eltávolítása az ütemezésből                         | Globális         |
+| Termelési jelentés készként jelenítése.                         | Globális         |
+| Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról                        | Globális         |
+| Kanbanfeladat állapotának visszaállítása                                      | Globális         |
+| Termelési rendelés ütemezése                                   | Globális         |
+| Kanbanfeladatok ütemezése                                          | Globális         |
+| Termelési rendelés indítása                                      | Globális         |
+| Anyagok átvitele Kanban-feladatokkal                            | Globális         |
+| Termelési folyamat és verzió érvényesítése                          | Globális         |
 
-
- 
 ### <a name="master-planning"></a>Alaptervezés
 
-|                                                   |                    |
-|---------------------------------------------------|--------------------|
-| **BPM Sor**                                      | **Ország/Terület** |
-| Cikkek fedezeti szabályainak meghatározása                   | Globális             |
-| Kiinduló előrejelzés kialakítása                         | Globális             |
-| Korlátozott terv létrehozása                       | Globális             |
-| Kritikus fontosságú anyagok és a szállítói kapacitás meghatározása | Globális             |
-| Igény-előrejelzés manuális módosítása                 | Globális             |
+| BPM-sor                                          | Ország/régió |
+|---------------------------------------------------|----------------|
+| Cikkek fedezeti szabályainak meghatározása                   | Globális         |
+| Kiinduló előrejelzés kialakítása                         | Globális         |
+| Korlátozott terv létrehozása                       | Globális         |
+| Kritikus fontosságú anyagok és a szállítói kapacitás meghatározása | Globális         |
+| Igény-előrejelzés manuális módosítása                 | Globális         |
 
-
- 
 ### <a name="organization-administration"></a>Szervezeti adminisztráció
 
-|                                           |                    |
-|-------------------------------------------|--------------------|
-| **BPM Sor**                              | **Ország/Terület** |
-| A fejléc vagy embléma módosítása                 | Globális             |
-| Címjegyzékek konfigurálása                   | Globális             |
-| A globális címjegyzék konfigurálása         | Globális             |
-| Üzemi egység létrehozása                  | Globális             |
-| Az elektronikus aláírások beállítása              | Globális             |
-| Állítson be minden szükséges számsorozatot a varázsló segítségével | Globális             |
+| BPM-sor                                  | Ország/régió |
+|-------------------------------------------|----------------|
+| A fejléc vagy embléma módosítása                 | Globális         |
+| Címjegyzékek konfigurálása                   | Globális         |
+| A globális címjegyzék konfigurálása         | Globális         |
+| Üzemi egység létrehozása                  | Globális         |
+| Az elektronikus aláírások beállítása              | Globális         |
+| Számsorozatok beállítása a varázsló segítségével | Globális         |
 
-
- 
 ### <a name="planning"></a>Tervezés
 
-|                        |                    |
-|------------------------|--------------------|
-| **BPM Sor**           | **Ország/Terület** |
-| Elérhetőség megállapítása | Globális             |
+| BPM-sor               | Ország/régió |
+|------------------------|----------------|
+| Elérhetőség megállapítása | Globális         |
 
-
- 
 ### <a name="procurement-and-sourcing"></a>Beszerzés és forrás
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                     | **Ország/Terület** |
-| Beszerzési szerződés létrehozása                                      | Globális             |
-| Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből        | Globális             |
-| Beszerzésirendelés-kiadás létrehozása új beszerzési rendelés létrehozásakor | Globális             |
-| Felhasználási igénylés létrehozása                             | Globális             |
-| Szállítói számla létrehozása                                          | Globális             |
-| Szállítók keresése                                               | Globális             |
-| Beszerzési kategóriahierarchia beállítása                          | Globális             |
+| BPM-sor                                                         | Ország/régió |
+|------------------------------------------------------------------|----------------|
+| Beszerzési szerződés létrehozása                                      | Globális         |
+| Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből        | Globális         |
+| Beszerzésirendelés-kiadás létrehozása új beszerzési rendelés létrehozásakor | Globális         |
+| Felhasználási igénylés létrehozása                             | Globális         |
+| Szállítói számla létrehozása                                          | Globális         |
+| Szállítók keresése                                               | Globális         |
+| Beszerzési kategóriák hierarchiájának beállítása                          | Globális         |
 
-
- 
 ### <a name="product-information-and-configuration"></a>Termékinformáció és konfiguráció.
 
-|                                                       |                    |
-|-------------------------------------------------------|--------------------|
-| **BPM Sor**                                          | **Ország/Terület** |
-| Kalkuláció hozzáadása termékkonfigurációs modellhez    | Globális             |
-| Termékkonfigurációs modell jóváhagyása                 | Globális             |
-| A kiadott alaptermékek alapbeállításának befejezése | Globális             |
-| ..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék létrehozása               | Globális             |
-| A termékosztályozási hierarchia létrehozása          | Globális             |
-| Termékkonfigurációs modell létrehozása                  | Globális             |
-| Alaptermék létrehozása                               | Globális             |
-| Kifejezésmegszorítás szerkesztője                       | Globális             |
-| Termék kötegattribútumainak létrehozása                 | Globális             |
-| Konfigurációs szabályok létrehozása                            | Globális             |
-| Termékmodell-összetevők létrehozása                       | Globális             |
-| Konfigurációs csoportok meghatározása                           | Globális             |
-| Konfigurációs útvonal meghatározása                            | Globális             |
-| Termékkonfigurációs modell anyagjegyzékének karbantartása        | Globális             |
-| Termékmodell útvonalának karbantartása                    | Globális             |
-| Kiadott termékek kezelése                              | Globális             |
-| ..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék közzététele              | Globális             |
-| Termékmodellekhez szükséges adatok továbbítása                      | Globális             |
+| BPM-sor                                                           | Ország/régió |
+|--------------------------------------------------------------------|----------------|
+| Kalkuláció hozzáadása termékkonfigurációs modellhez                 | Globális         |
+| Termékkonfigurációs modell jóváhagyása                              | Globális         |
+| A kiadott alaptermékek alapbeállításának befejezése              | Globális         |
+| ..\\pénzügyi dimenziók\\-dimenziókon alapuló alaptermék létrehozása  | Globális         |
+| A termékosztályozási hierarchia létrehozása                       | Globális         |
+| Termékkonfigurációs modell létrehozása                               | Globális         |
+| Alaptermék létrehozása                                            | Globális         |
+| Kifejezésmegszorítás szerkesztője                                    | Globális         |
+| Termék kötegattribútumainak létrehozása                              | Globális         |
+| Konfigurációs szabályok létrehozása                                         | Globális         |
+| Termékmodell-összetevők létrehozása                                    | Globális         |
+| Konfigurációs csoportok meghatározása                                        | Globális         |
+| Konfigurációs útvonal meghatározása                                         | Globális         |
+| Termékkonfigurációs modell anyagjegyzékének karbantartása                     | Globális         |
+| Termékmodell útvonalának karbantartása                                 | Globális         |
+| Kiadott termékek kezelése                                           | Globális         |
+| ..\\\ pénzügyi dimenziók\\-dimenziókon alapuló alaptermék közzététele | Globális         |
+| Termékmodellekhez szükséges adatok továbbítása                                   | Globális         |
 
-
- 
 ### <a name="public-sector"></a>Állami szektor
 
-|                                                                                         |                    |
-|-----------------------------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                                            | **Ország/Terület** |
-| Szállítói hitelesítési típus hozzáadása egy állami szektorbeli szállítóhoz                                  | Globális             |
-| Beszerzési szerződésekhez való hozzáférés vezérlése állami szektornál                                 | Globális             |
-| Számlázási osztály létrehozása az állami szektor részére                                       | Globális             |
-| Számlázási kód létrehozása az állami szektor részére                                                 | Globális             |
-| Kötelezettségvállalás létrehozása költségvetési alapok lefoglalásához az állami szektor részére                           | Globális             |
-| Egyéni mező létrehozása számlázási kódhoz az állami szektor részére                              | Globális             |
-| Alaptípus létrehozása az állami szektor részére                                                    | Globális             |
-| Egyszeri szállító és számla létrehozása az állami szektor részére                                  | Globális             |
-| Előzetes költségvetés létrehozása az állami szektor részére                                           | Globális             |
-| Szállítói hitelesítési típus létrehozása állami szektor számára                                    | Globális             |
-| Speciális főkönyvi bejegyzés létrehozása állami szektor részére                                       | Globális             |
-| Eredeti költségvetés létrehozása, majd az előzetes költségvetési bejegyzések sztornírozása az állami szektorban | Globális             |
-| Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban                              | Globális             |
-| Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseihez                 | Globális             |
-| Több egyszeri szállító és számla importálása és létrehozása az állami szektorra              | Globális             |
-| Származtatott pénzügyi hierarchia beállítása az Állami szektorhoz                                  | Globális             |
-| Alaptípus beállítása az állami szektor részére                                                         | Globális             |
-| Beszerzési szerződés osztályozásainak beállítása az állami szektor számára                             | Globális             |
+| BPM-sor                                                                                | Ország/régió |
+|-----------------------------------------------------------------------------------------|----------------|
+| Szállítói hitelesítési típus hozzáadása egy állami szektorbeli szállítóhoz                                  | Globális         |
+| Beszerzési szerződésekhez való hozzáférés vezérlése állami szektornál                                 | Globális         |
+| Számlázási osztály létrehozása az állami szektor részére                                       | Globális         |
+| Számlázási kód létrehozása az állami szektor részére                                                 | Globális         |
+| Kötelezettségvállalás létrehozása költségvetési alapok lefoglalásához az állami szektor részére                           | Globális         |
+| Egyéni mező létrehozása számlázási kódhoz az állami szektor részére                              | Globális         |
+| Alaptípus létrehozása az állami szektor részére                                                    | Globális         |
+| Egyszeri szállító és számla létrehozása az állami szektor részére                                  | Globális         |
+| Előzetes költségvetés létrehozása az állami szektor részére                                           | Globális         |
+| Szállítói hitelesítési típus létrehozása állami szektor számára                                    | Globális         |
+| Speciális főkönyvi bejegyzés létrehozása állami szektor részére                                       | Globális         |
+| Eredeti költségvetés létrehozása, majd az előzetes költségvetési bejegyzések sztornírozása az állami szektorban | Globális         |
+| Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban                              | Globális         |
+| Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseihez                 | Globális         |
+| Több egyszeri szállító és számla importálása és létrehozása az állami szektorra              | Globális         |
+| Származtatott pénzügyi hierarchia beállítása az Állami szektorhoz                                  | Globális         |
+| Alaptípus beállítása az állami szektor részére                                                         | Globális         |
+| Beszerzési szerződés osztályozásainak beállítása az állami szektor számára                             | Globális         |
 
-
- 
 ### <a name="retail-and-commerce"></a>Kiskereskedelem és kereskedelem
 
-|                                                                                           |                    |
-|-------------------------------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                                              | **Ország/Terület** |
-| Változattermék hozzáadása beszerzési rendeléshez változatsúlyokkal                              | Globális             |
-| Alapár- és kereskedelmi megállapodások                                                           | Globális             |
-| Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához                                         | Globális             |
-| Kimutatások számításához használt feladat konfigurálása és futtatása                                             | Globális             |
-| Kimutatások feladásához használt feladat konfigurálása és futtatása                                                  | Globális             |
-| Hitelkártya-feldolgozás konfigurálása                                                          | Globális             |
-| Csatolt termékek konfigurálása                                                                 | Globális             |
-| Pénztár vizuális profiljának létrehozása                                                               | Globális             |
-| Termék létrehozása                                                                          | Globális             |
-| Alaptermék létrehozása                                                                   | Globális             |
-| Eszköz létrehozása és hozzárendelése                                                             | Globális             |
-| Hardverállomás létrehozása és hozzárendelése                                                   | Globális             |
-| Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken | Globális             |
-| Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben  | Globális             |
-| Online csatorna létrehozása és a csatorna attribútumainak meghatározása                                       | Globális             |
-| POS-engedélycsoportok létrehozása                                                              | Globális             |
-| Termékcsomagok létrehozása és beszerzési rendelésben való használata                                         | Globális             |
-| Hívásközponti csatorna és a csatorna attribútumainak meghatározása                                         | Globális             |
-| Csatornaattribútumok meghatározása                                                                 | Globális             |
-| Hűségprogramok meghatározása                                                                   | Globális             |
-| Hűségpontok meghatározása                                                              | Globális             |
-| Hűségprogramok meghatározása                                                                    | Globális             |
-| A szervezeti egységek közötti kapcsolatok megtervezése                                     | Globális             |
-| Kulcsrakész jelentések generálása és futtatása                                                       | Globális             |
-| Vevőknek szóló fizetési engedmények kezelése                                                      | Globális             |
-| Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz                                            | Globális             |
-| Kifizetés-konfiguráció kiskereskedelmi kimutatásokhoz                                              | Globális             |
-| Önkiszolgálás hardverállomás letöltéséhez                                         | Globális             |
-| Online értékesítések és kifizetések feladása                                                      | Globális             |
-| Hűségpont-helyesbítések feldolgozása                                                  | Globális             |
-| Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával                        | Globális             |
-| Termék/alaptermék kiadása más jogi személyeknek                                        | Globális             |
-| Kiskereskedelmi ármódosítások                                                                  | Globális             |
-| Konfiguráció tárolása kiskereskedelmi kimutatásokhoz                                                | Globális             |
+| BPM-sor                                                                                  | Ország/régió |
+|-------------------------------------------------------------------------------------------|----------------|
+| Változattermék hozzáadása beszerzési rendeléshez változatsúlyokkal                              | Globális         |
+| Alapár- és kereskedelmi megállapodások                                                           | Globális         |
+| Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához                                         | Globális         |
+| Kimutatások számításához használt feladat konfigurálása és futtatása                                             | Globális         |
+| Kimutatások feladásához használt feladat konfigurálása és futtatása                                                  | Globális         |
+| Hitelkártya-feldolgozás konfigurálása                                                          | Globális         |
+| Csatolt termékek konfigurálása                                                                 | Globális         |
+| Pénztár vizuális profiljának létrehozása                                                               | Globális         |
+| Termék létrehozása                                                                          | Globális         |
+| Alaptermék létrehozása                                                                   | Globális         |
+| Eszköz létrehozása és hozzárendelése                                                             | Globális         |
+| Hardverállomás létrehozása és hozzárendelése                                                   | Globális         |
+| Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken | Globális         |
+| Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben  | Globális         |
+| Online csatorna létrehozása és a csatorna attribútumainak meghatározása                                       | Globális         |
+| POS-engedélycsoportok létrehozása                                                              | Globális         |
+| Termékcsomagok létrehozása és beszerzési rendelésben való használata                                         | Globális         |
+| Hívásközponti csatorna és a csatorna attribútumainak meghatározása                                         | Globális         |
+| Csatornaattribútumok meghatározása                                                                 | Globális         |
+| Hűségprogramok meghatározása                                                                   | Globális         |
+| Hűségpontok meghatározása                                                              | Globális         |
+| Hűségprogramok meghatározása                                                                    | Globális         |
+| A szervezeti egységek közötti kapcsolatok megtervezése                                     | Globális         |
+| Kulcsrakész jelentések generálása és futtatása                                                       | Globális         |
+| Vevőknek szóló fizetési engedmények kezelése                                                      | Globális         |
+| Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz                                            | Globális         |
+| Kifizetés-konfiguráció kiskereskedelmi kimutatásokhoz                                              | Globális         |
+| Önkiszolgálás hardverállomás letöltéséhez                                         | Globális         |
+| Online értékesítések és kifizetések feladása                                                      | Globális         |
+| Hűségpont-helyesbítések feldolgozása                                                  | Globális         |
+| Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával                        | Globális         |
+| Termék/alaptermék kiadása más jogi személyeknek                                        | Globális         |
+| Kiskereskedelmi ármódosítások                                                                  | Globális         |
+| Konfigurációk tárolása kiskereskedelmi kimutatásokhoz                                                | Globális         |
 
-
- 
 ### <a name="sales"></a>Értékesítés
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM Sor**                               | **Ország/Terület** |
-| Értékesítési rendelések megerősítése                       | Globális             |
-| Új kereskedelmi megállapodás létrehozása               | Globális             |
-| Beszerzési rendelés létrehozása értékesítési rendelésből | Globális             |
-| Értékesítési ajánlatok létrehozása és szerkesztése           | Globális             |
-| Szállítási ütemezés létrehozása                   | Globális             |
-| Értékesítési szerződések megadása                     | Globális             |
-| Értékesítési szerződések teljesítése                   | Globális             |
-| Vevő visszatérítések létrehozása és feldolgozása      | Globális             |
-| Alkalmazandó árak és engedmények keresése    | Globális             |
-| Értékesítési ajánlatok tömeges létrehozása               | Globális             |
-| Kifizetés-visszatérítések feldolgozása                | Globális             |
-| Értékesítési jutalékok regisztrálása                 | Globális             |
-| Értékesítési jutalékok szabályainak beállítása              | Globális             |
-| Szállítási rendelés közvetlen kiszállításként           | Globális             |
-| Értékesítési rendelések szállítása raktározás nélkül      | Globális             |
+| BPM-sor                                   | Ország/régió |
+|--------------------------------------------|----------------|
+| Értékesítési rendelések megerősítése                       | Globális         |
+| Új kereskedelmi megállapodás létrehozása               | Globális         |
+| Beszerzési rendelés létrehozása értékesítési rendelésből | Globális         |
+| Értékesítési ajánlatok létrehozása és szerkesztése           | Globális         |
+| Szállítási ütemezés létrehozása                   | Globális         |
+| Értékesítési szerződések megadása                     | Globális         |
+| Értékesítési szerződések teljesítése                   | Globális         |
+| Vevő visszatérítések létrehozása és feldolgozása      | Globális         |
+| Alkalmazandó árak és engedmények keresése    | Globális         |
+| Értékesítési ajánlatok tömeges létrehozása               | Globális         |
+| Kifizetés-visszatérítések feldolgozása                | Globális         |
+| Értékesítési jutalékok regisztrálása                 | Globális         |
+| Értékesítési jutalékok szabályainak beállítása              | Globális         |
+| Szállítási rendelés közvetlen kiszállításként           | Globális         |
+| Értékesítési rendelések szállítása raktározás nélkül      | Globális         |
 
-
- 
 ### <a name="sales-tax"></a>Forgalmi adó
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM Sor**                                       | **Ország/Terület** |
-| Szállítói számla forgalmi adójának kiszámítása és kiigazítása | Globális             |
-| Áfafizetés létrehozása                         | Globális             |
-| Áfatranzakciók létrehozása dokumentumokra         | Globális             |
-| Főkönyvi feladási csoportok beállítása az áfához         | Globális             |
-| Adóhatóságok beállítása                       | Globális             |
-| Áfakódok beállítása                             | Globális             |
-| Áfacsoportok és cikkáfacsoportok beállítása  | Globális             |
-| Áfabevallás kódjainak beállítása                   | Globális             |
-| Áfafizetési időszakok beállítása                | Globális             |
-| Adóelőleg beállítása                             | Globális             |
-| Feladott áfatranzakciók megtekintése                 | Globális             |
+| BPM-sor                                           | Ország/régió |
+|----------------------------------------------------|----------------|
+| Szállítói számla forgalmi adójának kiszámítása és kiigazítása | Globális         |
+| Áfafizetés létrehozása                         | Globális         |
+| Áfatranzakciók létrehozása dokumentumokra         | Globális         |
+| Főkönyvi feladási csoportok beállítása az áfához         | Globális         |
+| Adóhatóságok beállítása                       | Globális         |
+| Áfakódok beállítása                             | Globális         |
+| Áfacsoportok és cikkáfacsoportok beállítása  | Globális         |
+| Áfabevallás kódjainak beállítása                   | Globális         |
+| Áfafizetési időszakok beállítása                | Globális         |
+| Adóelőleg beállítása                             | Globális         |
+| Feladott áfatranzakciók megtekintése                 | Globális         |
 
-
- 
 ### <a name="security"></a>Biztonság
 
-|                                                         |                    |
-|---------------------------------------------------------|--------------------|
-| **BPM Sor**                                            | **Ország/Terület** |
-| Új felhasználók létrehozása                                        | Globális             |
-| Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása | Globális             |
-| Feladatkörök szétválasztásának beállítása                            | Globális             |
+| BPM-sor                                                | Ország/régió |
+|---------------------------------------------------------|----------------|
+| Új felhasználók létrehozása                                        | Globális         |
+| Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása | Globális         |
+| Feladatkörök szétválasztásának beállítása                            | Globális         |
 
-
- 
 ### <a name="warehouse-and-transportation"></a>Raktározás és szállítás
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM Sor**                                                                      | **Ország/Terület** |
-| Üzemanyag-mutató társítása egy szállítóhoz kiegészítő díjként                    | Globális             |
-| Helyek konfigurálása WMS-aktivált raktárban                                    | Globális             |
-| Munkaosztály létrehozása                                                               | Globális             |
-| Ciklikus leltározás meghatározása                                                             | Globális             |
-| Azonosítótábla-címke nyomtatásának engedélyezése                                               | Globális             |
-| Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával | Globális             |
-| Szállítmányozói üzemanyag-mutató beállítása                                                       | Globális             |
-| Helyutasítás beállítása beszerzési rendelés eltárolásához                           | Globális             |
-| Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez       | Globális             |
-| Mobileszköz-menüelem beállítása a bevételezett elem regisztrálásához                       | Globális             |
-| A beszerzési rendelések munkasablonjának beállítása                                        | Globális             |
-| Kiegészítő szolgáltatási megbízások beállítása                                                    | Globális             |
-| Intézkedési kódok beállítása                                                         | Globális             |
-| Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása                            | Globális             |
-| Díjtörzsek beállítása                                                               | Globális             |
-| A szállítmányozók beállítása                                                          | Globális             |
-| Rakománytervezési munkaterület használata a rakományok és szállítmányok tervezésére                       | Globális             |
+| BPM-sor                                                                          | Ország/régió |
+|-----------------------------------------------------------------------------------|----------------|
+| Üzemanyag-mutató társítása egy szállítóhoz kiegészítő díjként                    | Globális         |
+| Helyek konfigurálása WMS-aktivált raktárban                                    | Globális         |
+| Munkaosztály létrehozása                                                               | Globális         |
+| Ciklikus leltározás meghatározása                                                             | Globális         |
+| Azonosítótábla-címke nyomtatásának engedélyezése                                               | Globális         |
+| Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával | Globális         |
+| Szállítmányozói üzemanyag-mutató beállítása                                                       | Globális         |
+| Helyutasítás beállítása beszerzési rendelés eltárolásához                           | Globális         |
+| Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez       | Globális         |
+| Mobileszköz-menüelem beállítása a bevételezett elem regisztrálásához                       | Globális         |
+| A beszerzési rendelések munkasablonjának beállítása                                        | Globális         |
+| Kiegészítő szolgáltatási megbízások beállítása                                                    | Globális         |
+| Intézkedési kódok beállítása                                                         | Globális         |
+| Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása                            | Globális         |
+| Díjtörzsek beállítása                                                               | Globális         |
+| A szállítmányozók beállítása                                                          | Globális         |
+| Rakománytervezési munkaterület használata a rakományok és szállítmányok tervezésére                       | Globális         |
 
-
- 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Feladat-útmutatók (február 2016) az Első lépések könyvtár
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM Sor**                                       | **Ország/Terület** |
-| Főkönyvi egyenlegek elemzése                            | Globális             |
-| Kiadott termék létrehozása egyetlen vállalat részére.     | Globális             |
-| Termelési rendelés létrehozása és ütemezése             | Globális             |
-| Hatékony árusítás                            | Globális             |
-| Elektronikus jelentés                               | Globális             |
-| Alkalmazotti önkiszolgáló rendszer                              | Globális             |
-| A késedelmi napok számának csökkentési módja          | Globális             |
-| Bevezetés az AX honosítási funkciójába      | Globális             |
-| Bevezetés az országspecifikus funkciókba Japán esetében | Japán              |
-| Árképzés és promóciók kezelése                      | Globális             |
-| Vezetői önkiszolgáló-rendszer                               | Globális             |
-| Projektek áttekintése                                  | Globális             |
-| Csatornák beállítása és konfigurálása                      | Globális             |
+| BPM-sor                                           | Ország/régió |
+|----------------------------------------------------|----------------|
+| Főkönyvi egyenlegek elemzése                            | Globális         |
+| Kiadott termék létrehozása egyetlen vállalat részére     | Globális         |
+| Termelési rendelés létrehozása és ütemezése             | Globális         |
+| Hatékony árusítás                            | Globális         |
+| Elektronikus jelentés                               | Globális         |
+| Alkalmazotti önkiszolgáló rendszer                              | Globális         |
+| A késedelmi napok számának csökkentési módja          | Globális         |
+| Bevezetés az AX honosítási funkciójába      | Globális         |
+| Bevezetés az országspecifikus funkciókba Japán esetében | Japán          |
+| Árképzés és promóciók kezelése                      | Globális         |
+| Vezetői önkiszolgáló-rendszer                               | Globális         |
+| Projektek áttekintése                                  | Globális         |
+| Csatornák beállítása és konfigurálása                      | Globális         |
 
- 
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
-
-
-
 

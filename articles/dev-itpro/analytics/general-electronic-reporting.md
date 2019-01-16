@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk lis
 - fejlesztés céljából telepített felhőbeli környezetek (amelyek a csatolt csomagok tesztmodelljeit tartalmazzák)
 - helyileg telepített környezetek (helyszíni vagy helyi üzleti adatok telepítése (LBD))
 
-Keresse fel a [Elektronikus jelentéskészítési (ER) konfigurációk importálása](/electronic-reporting-import-ger-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+Keresse fel a [Elektronikus jelentéskészítési (ER) konfigurációk importálása](./electronic-reporting-import-ger-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
 
 Az **RCS példány** adattár hozzáférést biztosít a meghatározott RCS-példány konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi Finance and Operations példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak.
 
-Keresse fel az [Elektronikus jelentéskészítési (ER) konfigurációk importálása Jogszabályban előírt konfigurációs szolgáltatásból (RCS)](/rcs-download-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+Keresse fel az [Elektronikus jelentéskészítési (ER) konfigurációk importálása Jogszabályban előírt konfigurációs szolgáltatásból (RCS)](./rcs-download-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
 
 A szükséges **LCS-projekt**, **Fájlrendszer**, és **Jogszabályban előírt konfigurációs szolgáltatás** adattárakat külön-külön is lehet regisztrálni az aktuális Finance and Operations példány minden egyes konfigurációs szolgáltatójára. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 

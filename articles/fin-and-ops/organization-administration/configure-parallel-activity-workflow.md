@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ A párhuzamos tevékenység beállításához végezze el a következő eljárá
 A párhuzamos tevékenység egy időben futó munkafolyamatágakból áll.
 
 ## <a name="name-a-parallel-activity"></a>Párhuzamos tevékenység elnevezése
+
 A következő lépések segítségével elnevezheti a párhuzamos tevékenységet.
-1.  Kattintson a jobb gombbal a párhuzamos tevékenységre, majd kattintson a **Tulajdonságok** lehetőségre a **Tulajdonságok** űrlap megnyitásához.
-2.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
-3.  Adja meg a párhuzamos tevékenység egyedi nevét a **Név** mezőben.
-4.  Kattintson a **Bezárás** gombra.
+
+1. Kattintson a jobb gombbal a párhuzamos tevékenységre, majd kattintson a **Tulajdonságok** lehetőségre a **Tulajdonságok** űrlap megnyitásához.
+2. A bal oldali panelen kattintson az **Alapbeállítások** gombra.
+3. Adja meg a párhuzamos tevékenység egyedi nevét a **Név** mezőben.
+4. Kattintson a **Bezárás** gombra.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>A párhuzamos tevékenység ágainak konfigurálása
+
 Végezze el a következő lépéseket a párhuzamos tevékenység ágainak hozzáadása és konfigurálása érdekében.
+
 1. Kattintson duplán a párhuzamos tevékenységre a párhuzamos tevékenység ágainak megjelenítése érdekében.
-2. Ág hozzáadásához húzza az **Ág** elemet a **Munkafolyamat-elemek** területről a vászon egyik beillesztési pontjára. Az alábbi ábrán egy beillesztési pont látható.![Beillesztési pont](./media/workflow_insertionpoint.gif)
+2. Ág hozzáadásához húzza az **Ág** elemet a **Munkafolyamat-elemek** területről a vászon egyik beillesztési pontjára. Az alábbi ábrán egy beillesztési pont látható.
 
-   |                                              <strong>Megjegyzés</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Az ágának sorrendje nem számít, mivel a párhuzamos tevékenység ágai egyszerre futnak. |
+    ![Beillesztési pont](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Az ágának sorrendje nem számít, mivel a párhuzamos tevékenység ágai egyszerre futnak.
 
 3. Az egyes ágak konfigurálásához lásd: [Párhuzamos ág beállítása](configure-parallel-branch-workflow.md).
-
-
-
-
-
 

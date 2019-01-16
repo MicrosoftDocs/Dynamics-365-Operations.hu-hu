@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8dcba52526dd9dad1bd8b9753224f6386923f5a1
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -57,7 +57,7 @@ Miután a várakoztatási adatokat bevitték és mentették, a felhasználó bez
 
 Ha a **Rendeléskiegészítés engedélyezése** megjelölés be van kapcsolva a hívásközponti csatornában, nem kell kifizetést alkalmazni egy rendeléshez, amely várakoztatott állapotban van. Ezzel szemben a nem várakoztatott értékesítési rendelések esetében a felhasználók nem hagyhatják az értékesítési rendelés beviteli lapját üresen mindaddig, amíg nem kerül sor fizetés alkalmazására. Természetesen a fizetés el kell végezni, mielőtt a rendelés várakoztatása fel lesz oldva.
 
-A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Várakoztatott rendelések megtekintése és kezelése
 

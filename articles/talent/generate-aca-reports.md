@@ -3,7 +3,7 @@ title: "Affordable Care Act (ACA) jelentések létrehozása"
 description: "Olyan funkció érhető el, amely azokat a munkáltatókat segítik, amelyeknek az 1095-B és 1095-C űrlapokon jelentett adatokat kell támogatniuk az Affordable Care Act munkáltatói felhatalmazásra vonatkozó részének támogatása érdekében. Megjegyzés: Ez a funkció csak az Egyesült Államokbeli jogi személyek számára aktív."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) jelentések létrehozása
@@ -54,7 +54,7 @@ A **Függő fél jogosultsági dátumának kezelése** lapon adhatja meg a dátu
 ## <a name="generate-1095b-and-1095c-forms"></a>1095B és 1095C űrlap létrehozása
 Lehetőség van a 109-B és 1095-C űrlapok létrehozására a terméken belül, és a továbbításukra az összes alkalmazottnak. Az adóhatósághoz elküldhető, 1095-C és a megfelelő benyújtandó 1094-C fájlok elektronikus úton történő generálása szintén megoldható a rendszerből.  
 
-Az 1095-C űrlap létrehozásakor a megfelelő naptárba vagy adózási évbe jegyezze be azt is, hogy kétoldalas vagy háromoldalas űrlapot szeretne-e nyomtatni. A háromoldalas űrlap csak akkor szükséges, ha a munkáltató önálló biztosítási fedezetet nyújtott, és az alkalmazott több mint hat eltartottal rendelkezik, önmagát is beleértve. Kétoldalas űrlap létrehozásakor a rendszer automatikusan észleli, ha az alkalmazottnak több mint hat eltartottja van, és nem fogja felvenni az alkalmazottat az űrlap létrehozásakor. Ezenkívül a háromoldalas űrlap létrehozásakor a rendszer csak azokat az alkalmazottakat fogja felvenni, akik több mint hat biztosított eltartottal rendelkeznek.
+A 1095-C űrlap létrehozásakor adja meg a megfelelő adóévet, és jelölje, hogy szükséges-e társadalombiztosítási számok maszkolása. Ha több mint 500 alkalmazottnak nyomtat 1095-C űrlapot, egynél több PDF-fájl fog kapni. Azt ajánljuk, hogy növelje meg a **Maximális fájlméret** értékét a **Dokumentumkezelés paraméterei** ablakban 150 MB-ra.
 
 ## <a name="viewing-information"></a>Információk megtekintése
 A **Dolgozói Affordable Care jogosultság** oldalon tekintheti meg, hogy mely alkalmazottak vannak hozzárendelve az egyes fedezeti csoportokhoz, mely alkalmazottakat nem kell feltüntetni a jelentésekben, és mely alkalmazottak nincsenek hozzárendelve.

@@ -3,7 +3,7 @@ title: "Ajánlatkezelés beállítása"
 description: "Ez a témakör az ajánlatok beállítását írja le a Talent alkalmazásban."
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Ajánlatkezelés beállítása 
@@ -105,7 +105,7 @@ Az ajánlati adatokra vonatkozó szabályfájl feltöltéséhez tegye a követke
 
 1.  Egy meglévő szabálykészlet feltöltését törölheti, ha egy másik dokumentumsablonban nincs használatban az éppen definiált helyőrző.
 
->[!MEGJEGYZÉSEK]
+>[!NOTE]
 > - Minden helyőrző csak egy egyedi oszlopkészlettel rendelkezhet, amelytől függő. Például ha az **Éves fizetés** függ a **Munkavégzési hely** és **Szint** oszlopoktól, nem tölthető fel egy másik szabálykészlet, ahol az **Éves fizetés** egy másik oszlopkészlettől függ.
 
 > - Letölthet ajánlati adatokra vonatkozó szabálykészlet-mintákat a **Minták** lapon az **Ajánlatiadat-szabályok** oldalon.
@@ -136,7 +136,7 @@ Az ajánlatdokumentum-sablon létrehozásához tegye a következőket.
 
     - A hashtag segítségével helyezze a megfelelő helyre az ajánlatiadat-helyőrzőt. Gépelje be, hogy **\#**, majd kezdje el beírni az ajánlatiadat-helyőrző nevét. Lehetőségek jelennek meg a legördülő listából. Nyomja le vagy kattintson az **Enter** gombra az ajánlatiadat-helyőrző beszúrásához.
 
-    >[!MEGJEGYZÉSEK]
+    >[!NOTE]
     > - Ahhoz, hogy egy helyőrzőt az ajánlatidokumentum-sablonhoz társítsa anélkül, hogy értékét felfedje a jelölt előtt, vigye a kurzort az ajánlatiadat-helyőrző fölé, majd kattintson a **Rögzítés** ikonra. Ez a helyőrzőt elküldi a **Rögzített ajánlati adatok** szakaszba az ajánlatdokumentum-sablonban. A rögzítés feloldásához kövesse ugyanazokat a lépéseket, de az ajánlatiadat-helyőrzők listájában kattintson a **Rögzítés feloldása** elemre.
 
     > - Az aktív ajánlati adatok helyőrzői listájának megtekintéséhez váltson át az **Aktív** lapon a jobb oldali panelen.
@@ -175,7 +175,7 @@ Az ajánlatcsomagok olyan ajánlati műtermékek, amelyek a jelölttel meg vanna
 
 1.  Kattintson a **Sablon hozzáadása** lehetőségre.
 
-    >[!MEGJEGYZÉSEK]
+    >[!NOTE]
     > - Választhat, hogy létrehoz egy új sablont, vagy választ egy már meglévőt.
 
     > - Ha a meglévő sablon hozzáadását választja, akkor győződjön meg arról, hogy az ajánlati dokumentumsablont mentették, véglegesítették és aktívként megjelölték.
@@ -198,8 +198,10 @@ Az ajánlatkészítési folyamatnak számos olyan része van, amelyet egy Attrac
 
 - **Jelölt ajánlati élménye** - rendszergazdaként, lehetősége van azt beállítani, hogy minden ajánlathoz tartozik-e lejárati dátum, és ha igen, mi legyen az alapértelmezett eltolás a lejárati dátum esetén. Az is konfigurálható, hogy a pályázók elutasíthatja-e az ajánlatot.
 
-- **Elektronikus aláírások** - Jelenleg az egyetlen rendelkezésre álló elektronikus aláírási lehetőség a jelöltek számára nevük begépelése az ajánlati csomagba az ajánlat elfogadása során. A jövőben további elektronikus aláírási szolgáltatókkal való partnerséget vezetünk be.
+- **e-aláírások** – Rendszergazdaként,kiválaszthatja, hogy a pályázók milyen módot használhatnak az aláírásokhoz.
+    - Adobe Sign – Az összes ajánlati csomag küldése és aláírása az Adobe Sign használatával történik. Minden egyes ajánlatot létrehozó esetében kapcsolni kell Adobe Sign licencét az Attract alkalmazáshoz. 
 
+    - ESign – Ez az alapértelmezett beállítás, amelyet az alkalmazás tartalmaz, a felhasználó neve és monogramja beírásával írhatja alá az ajánlatot.
 
 Az ajánlat-létrehozási folyamat kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.
 

@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ A kimutatásfeladási funkció javításának részeként három új paramétert
 
 Ezenkívül a **Párhuzamos kivonatfeladás maximális száma** mező megjelent a **Kötegelt feldolgozás** gyorslapon. Ez a mező meghatározza, hogy hány kötegelt feladatot lehet egy időben futtatni. Jelenleg manuálisan meg kell adni a mező értékét.
 
-Az új feladási folyamat során emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kiskereskedelmi paraméterek** lapon. Ez igaz akkor is, ha a szervezet által használva nincsenek ajándékutalványok. 
+Az új feladási folyamat során emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kiskereskedelmi paraméterek** lapon. Ez igaz akkor is, ha a szervezet által használva nincsenek ajándékutalványok.
 
 Megjegyzendő, hogy minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kiskereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
 
 ## <a name="processing"></a>Feldolgozás
+
 A kimutatások kiszámíthatók és feladhatók kötegelve a **Kimutatások kötegelt kiszámítása** és a **Kimutatások feladása kötegben** menüpontban. Másik lehetőségként a kimutatások manuálisan kiszámíthatók és feladhatók a **Kiskereskedelmi kimutatások** menüelemmel, amelyet a továbbfejlesztett kimutatásfeladási funkció lehetővé tesz.
 
 A kimutatások kötegelt számítása és feladása folyamat lépései ugyanazok, mint az örökölt kimutatásfeladási funkciónál használtak. Azonban jelentős javítások történtek a kimutatások alapvető háttér-feldolgozása során. Ezek a fejlesztések rugalmasabbá tették a folyamatot, és az állapot- és hibainformációk jobb láthatósággal rendelkeznek. Ezért a felhasználók megoldhatják a hibák kiváltó okát, és folytathatják a feladási folyamatot anélkül, hogy ez adatsérüléshez vezethetne, és anélkül, hogy az adatokat javítani kellene.
@@ -71,6 +72,7 @@ A kimutatások kötegelt számítása és feladása folyamat lépései ugyanazok
 Az alábbi szakaszok leírják a kimutatásfeladási funkció fő javításait, amelyek a feladott kimutatások és a kiskereskedelmi kimutatások felhasználói felületén jelennek meg.
 
 ### <a name="status-details"></a>Állapotadatok
+
 Új állapotmodellt vezettek be a kimutatásfeladási funkciónál, a számítási és könyvelési folyamatokban.
 
 A következő táblázat leírja a különféle állapotait és azt, hogy milyen sorrendben vannak a számítási folyamat során.
@@ -109,9 +111,11 @@ Az előző táblákban minden állapot független természetű, és az állapoto
 A második és harmadik szakaszok fejléce emellett a megfelelő folyamat általános állapotát mutatja.
 
 ### <a name="event-logs"></a>Eseménynaplók
+
 A kimutatás különféle műveleteken megy át (például, létrehozás, számítás, törlés és feladás), és a kimutatás életciklusa során azonos művelet több példánya is meg lehet hívva. Például egy kimutatást a létrehozása és számítása után a felhasználó törölheti és újra kiszámíthatja. Az **Eseménynaplók** gomb a **Végrehajtás részletei** kimutatáscsoportban tartalmaz egy teljes auditnaplót a kimutatáson meghívott különböző műveletekkel kapcsolatban, információkkal együtt a műveletek meghívásának idejéről.
 
 ### <a name="aggregated-transactions"></a>Összesített tranzakciók
+
 A feladási folyamat során az értékesítési tranzakciók a konfiguráció alapján vannak összesítve. Az összesített tranzakciókat a rendszer tárolja, és értékesítési rendelések létrehozásához használja. Minden összesített tranzakció egy megfelelő értékesítési rendelést hoz létre a rendszerben. Megtekintheti az összesített tranzakciókat a következő segítségével: **Összesített tranzakciók** gomb a **Végrehajtás részletei** csoportjában a kimutatásnak.
 
 Az **Értékesítési rendelés részletei** összesített tranzakció lap a következő információkat jeleníti meg:
@@ -136,11 +140,13 @@ Az összesített tranzakció nézet a következő előnyökkel jár:
 - Az összesített XML-fájl megkönnyíti az értékesítési rendelés létrehozása és számlázása során felmerült problémák azonosítását.
 
 ### <a name="journal-vouchers"></a>Naplóbizonylatok
+
 A **Naplóbizonylatok** gomb a **Végrehajtás részletei** csoportjában a kimutatásnak a kimutatáshoz létrehozott összes különböző bizonylatot jeleníti meg, amelyek kapcsolatosak az engedményekkel, a bevétel/kiadás számlákkal, az ajándékutalvány kártyákkal és így tovább.
 
 Jelenleg a program csak a feladott kimutatásokra jeleníti meg ezeket az adatokat.
 
 ### <a name="payment-journals"></a>Kifizetési naplók
+
 A **Fizetési naplók** gomb a **Végrehajtás részletei** csoportjában a kimutatás csoportnak a kimutatáshoz létrehozott minden különböző kifizetési napló látható.
 
 Jelenleg a program csak a feladott kimutatásokra jeleníti meg ezeket az adatokat.

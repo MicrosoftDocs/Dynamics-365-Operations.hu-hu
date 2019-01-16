@@ -3,7 +3,7 @@ title: "Állás létrehozása, jóváhagyása és közzététele az Attract alka
 description: "Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további 
 
 ## <a name="postings"></a>Feladások
 
-Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Microsoft Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedInen lehet feladni. Az Attract csoport folyamatosan dolgozik azon, hogy partnerségi megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővülni fog.
+Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Microsoft Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedInen lehet feladni. 
+
+> [!NOTE]
+> Három fontos dolgot kell megjegyezni a LinkedIn-re történő munkaküldési folyamattal kapcsolatosan.
+> 1. A LinkedIn-re küldött munkák „Korlátozott hirdetésként” lesznek feladva A LinkedIn webhelyen nem hirdethetőek a korlátozott hirdetésű munkák. Ha szeretné hirdetni a LinkedIn-re küldött korlátozott hirdetési munkákat az Attractból együtt kell működnie a LinkedIn-nel a „Job Wrapping” funkció engedélyezéséhez. Használja az alábbi hivatkozásokat, és további részletekért forduljon a LinkedIn támogatásához.
+>
+>    [Limited Listings és Premium Job Slotok összehasonlítása Job Wrapping esetén](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Job Wrapping gyakori kérdések](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Amikor munkákat tesz közzé a LinkedIn-en, az Attract átküldi a Microsoft 365 szervezet nevét is munkához. A LinkedIn a munkákat az átadott szervezetnév alapján kapcsolja a LinkedIn oldalán található vállalthoz. Ha a munka rossz vállalathoz kerül a LinkedIn-en, ellenőrizze hogy a Microsoft 365 szervezet neve megegyezik-e a vállalatnévvel a LinkedIn-en.  
+>
+>    [Címzett, kapcsolattartó stb. módosítása](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Ha ezen lépés után problémák merülnek fel, forduljon a LinkedIn támogatásához. 
+> 
+> 1. A munka LinkedIn-re történő feladásától számítva akár 24 óráig is eltarthat, amíg a LinkedIn-en található jelöltek számára az látható lesz, ennek az oka a LinkedIn kötegelt munkaközzétételi folyamata.
+
+Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd.
 
 Álláshirdetések kapcsolatos további tudnivalókat lásd: [Attract karrierwebhely funkciói](./career-site.md).
 

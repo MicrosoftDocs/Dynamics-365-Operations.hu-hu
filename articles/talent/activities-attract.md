@@ -3,7 +3,7 @@ title: "Tevékenységek a folyamatban"
 description: "Ez a témakör a felvételi folyamatban használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Az Interjú tevékenység nem kötelező. A tevékenység három összetevőből
 - E-mail küldéséhez a pályázók az elérhetősége lekéréséhez, állítsa a **Pályázó elérhetőségének kérése** lehetőséget **Be** beállításra. Ha a beállítás **Ki**, ez a lépés nem jelenik meg az állás felvételi folyamatában.
 - Skype for Business élő adatfolyam vagy konferenciahívás használatához állítsa az **Online értekezlet** mezőt **Skype for Business** beállításra. A megfelelő **Csatlakozás Skype értekezlethez** hivatkozás ekkor bekerül az interjúértekezlet-kérelembe.
 - E-mail küldéséhez a pályázók az ütemezés véglegesítéséhez, állítsa az **E-mail küldése a jelöltnek** lehetőséget **Be** beállításra. Ha a beállítást **Ki** lehetőségre állította, a jelentkező csak akkor fogja megkapni az interjúütemezést, amikor bejelentkezik a pályázó portálon.
+
+>[!NOTE]
+> - Minden 1:1 interjú esetében 24 óránként emlékeztetőt kapnak az interjúztatók, ha az interjúztató nem reagált (fogadta el vagy utasította el) az interjúkérelmet.
+> - Bizottsági interjúk esetében nincsenek automatikus emlékeztetők az interjúkérelemre vonatkozó válasszal kapcsolatosan. Az emlékeztető manuális indításához, szerkessze az interjút, és használja a **Módosítás és küldés** lehetőséget a kérés visszaküldéséhez az interjúztatóknak.
 
 A visszajelzés összetevő lehetővé teszi ajánlások beírását egy pályázó számára. Visszajelzés megjegyzéseket is megadhatnak. A **Visszajelzési résztvevők átvétele a toborzócsapattól** beállítás bekapcsolásakor a toborzót, a felvételi vezetőt és az interjúbonyolítókat program automatikusan beírja a visszajelzés összetevőhöz. A szervezetek engedélyezhetik az interjúbonyolítók számára mások visszajelzésének megtekintését a sajátjuk beküldés előtt. A szervezetek az interjúbonyolítók számára engedélyezhetik a visszajelzést szerkesztését az elküldés után is.
 

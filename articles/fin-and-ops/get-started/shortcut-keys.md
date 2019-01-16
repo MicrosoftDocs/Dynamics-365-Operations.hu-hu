@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban. 
+A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban.
 
-**Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
+> [!NOTE]
+> Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
 
 ## <a name="finding-a-shortcut"></a>Billentyűparancs megkeresése
-A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billentyűparancsokat közvetlenül a felhasználói felületről fedezhetik fel. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok. 
 
+A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billentyűparancsokat közvetlenül a felhasználói felületről fedezhetik fel. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok.
 
 ## <a name="action-shortcuts"></a>Műveleti billentyűparancsok
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Művelet**                                    | **Billentyű vagy billentyűkombináció**                        |
-| Műveletkeresés megnyitása                                | Ctrl+’ vagy Alt+Q                  |
-| Ugrás a szokásos műveleti ablakba                  | Alt+M,A vagy Ctrl+F6               |
-| Lap megnyitása a műveleti ablakban vagy egy menüben           | Enter vagy Szóköz vagy Alt+Lefelé nyíl |
-| Ugrás a következő/előző opcióra egy menüben            | Lefelé nyíl/Felfelé nyíl            |
-| Lap bezárása a műveleti ablakban vagy egy menüben          | Esc                              |
-| Jobb-kattintás szimulálása                            | Shift+F10                        |
-| Nyissa meg a Finance and Operations helyimenüt      | Ctrl+F10                         |
-| Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban   | Alt+Enter                        |
-| Kattintás egy gombra vagy csempére                            | Enter vagy Szóköz                   |
-| Számláló csempe frissítési információinak megtekintése         | Alt+Felfelé nyíl                     |
-| Aktuálisan rendelkezésre álló billentyűparancsok megtekintése                | Alt+Shift+K                      |                              
+| Művelet                                      | Billentyű vagy billentyűkombináció                            |
+|-------------------------------------------------|----------------------------------|
+| Műveletkeresés megnyitása                              | Ctrl+' vagy Alt+Q                  |
+| Ugrás a szokásos műveleti ablakba                | Alt+M,A vagy Ctrl+F6               |
+| Lap megnyitása a műveleti ablakban vagy egy menüben         | Enter vagy Szóköz vagy Alt+Lefelé nyíl |
+| Ugrás a következő/előző opcióra egy menüben          | Lefelé nyíl/Felfelé nyíl            |
+| Lap bezárása a műveleti ablakban vagy egy menüben        | Esc                              |
+| Jobb-kattintás szimulálása                          | Shift+F10                        |
+| Nyissa meg a Finance and Operations helyimenüt    | Ctrl+F10                         |
+| Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban | Alt+Enter                        |
+| Kattintás egy gombra vagy csempére                          | Enter vagy Szóköz                   |
+| Számláló csempe frissítési információinak megtekintése       | Alt+Felfelé nyíl                     |
+| Aktuálisan rendelkezésre álló billentyűparancsok megtekintése              | Alt+Shift+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Dátum kiválasztási billentyűparancsok
 
-|                                       |                                           |
+| Művelet                            | Billentyű vagy billentyűkombináció                                     |
 |---------------------------------------|-------------------------------------------|
-| **Művelet**                        | **Billentyű vagy billentyűkombináció**                                 |
 | A dátumválasztó megnyitása                  | Alt+Lefelé nyíl                            |
 | Ugrás a dátumok között a dátumválasztóban | CTRL + nyílbillentyűk                           |
 | Ugrás az következő/előző hónapra       | Page down / Page up                       |
@@ -70,9 +69,8 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="factbox-shortcuts"></a>Adatterület billentyűparancsok
 
-|                                                                                 |                                           |
+| Művelet                                                                      | Billentyű vagy billentyűkombináció                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Művelet**                                                                  | **Billentyű vagy billentyűkombináció**                                 |
 | Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva) | Alt+M,B vagy Ctrl+F2                        |
 | Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)                         | Esc                                       |
 | Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)              | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl |
@@ -82,42 +80,39 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="filtering-shortcuts"></a>Szűrő billentyűparancsok
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Teendő:**                     | **Billentyű vagy billentyűkombináció**                |
-| Rácsszűrés megnyitása az aktuális oszlopra                        | Ctrl+G                   |
-| Rácsszűrés bezárása az aktuális oszlopra                       | Esc                      |
+| Teendő:                                                                                                          | Billentyű vagy billentyűkombináció                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Rácsszűrés megnyitása az aktuális oszlopra                                                                          | Ctrl+G                   |
+| Rácsszűrés bezárása az aktuális oszlopra                                                                         | Esc                      |
 | Szűrő ablak megnyitása (vagy váltson fókuszt a szűrő ablak és a fő űrlap között, ha a szűrő ablak már nyitva van) | Alt+M,F vagy Ctrl+F3       |
-| Szűrő ablak bezárása (a fókusszal a szűrő ablakban)             | Esc                      |
-| Speciális szűrés/rendezés megnyitása                                      | Ctrl+Shift+F3            | 
+| Szűrő ablak bezárása (a fókusszal a szűrő ablakban)                                                               | Esc                      |
+| Speciális szűrés/rendezés megnyitása                                                                                        | Ctrl+Shift+F3            |
 
 ## <a name="form-shortcuts"></a>Űrlap billentyűparancsok
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Teendő:**                                      | **Billentyű vagy billentyűkombináció**         |
-| Új rekord létrehozása                                 | Alt+N             |
-| Rekord törlése                                     | Alt+Del vagy Alt+F9 |
-| Rekord mentése                                         | Alt+S vagy Ctrl+S   |
-| Visszaállítás (helyreállítás)                                    | Ctrl+Shift+F5     |
-| Adatfrissítés                                        | Shift+F5          |
-| Ugrás az első látható mezőbe az űrlapon         | Alt+Shift+F       |
-| Szerkesztési mód váltása                                    | F2                |
-| Dokumentum csatolása                                   | Ctrl+Shift+A      |
-| Exportálás Excelbe                                     | Ctrl+Shift+E      |
-| Ugrás az előző rekordra (egy rácson kívülre)        | Ctrl+Felfelé nyíl     |
-| Ugrás a következő rekordra (egy rácson kívülre)            | Ctrl+Lefelé nyíl   |
-| Ugrás az első rekordra (egy rácson kívülre)           | Ctrl+Home         |
-| Ugrás az utolsó rekordra (egy rácson kívülre)            | Ctrl+End          |
-| Az űrlap bezárása (kattintson a vissza gombra)                         | Esc               |
-| Képernyő bezárása explicit mentéssel                   | Shift+Esc         |
-| Képernyő bezárása az el nem mentett módosítások mentése nélkül       | Alt+Shift+Q       |
+| Teendő:                                    | Billentyű vagy billentyűkombináció             |
+|-----------------------------------------------|-------------------|
+| Új rekord létrehozása                           | Alt+N             |
+| Rekord törlése                               | Alt+Del vagy Alt+F9 |
+| Rekord mentése                                   | Alt+S vagy Ctrl+S   |
+| Visszaállítás (helyreállítás)                              | Ctrl+Shift+F5     |
+| Adatfrissítés                                  | Shift+F5          |
+| Ugrás az első látható mezőbe az űrlapon   | Alt+Shift+F       |
+| Szerkesztési mód váltása                              | F2                |
+| Dokumentum csatolása                             | Ctrl+Shift+A      |
+| Exportálás Excelbe                               | Ctrl+Shift+E      |
+| Ugrás az előző rekordra (egy rácson kívülre)  | Ctrl+Felfelé nyíl     |
+| Ugrás a következő rekordra (egy rácson kívülre)      | Ctrl+Lefelé nyíl   |
+| Ugrás az első rekordra (egy rácson kívülre)     | Ctrl+Home         |
+| Ugrás az utolsó rekordra (egy rácson kívülre)      | Ctrl+End          |
+| Az űrlap bezárása (kattintson a vissza gombra)                   | Esc               |
+| Képernyő bezárása explicit mentéssel             | Shift+Esc         |
+| Képernyő bezárása az el nem mentett módosítások mentése nélkül | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Navigációs űrlap billentyűparancsok
 
-|                                                     |                                              |
+| Művelet                                          | Billentyű vagy billentyűkombináció                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Művelet**                                      | **Billentyű vagy billentyűkombináció**                                    |
 | Ugrás a következő/előző mezőre                     | Tab/Shift+Tab                              |
 | Ugrás az következő/előző lapra                       | Alt+Shift+Jobbra nyíl / Alt+Shift+Balra nyíl |
 | Ugrás az &lt;n&gt;-edik lapra                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="grid-shortcuts"></a>Rács billentyűparancsok
 
-|                                                                                                                        |                                 |
+| Művelet                                                                                                             | Billentyű vagy billentyűkombináció                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Művelet**                                                                                                         | **Billentyű vagy billentyűkombináció**                       |
 | Ugrás a következő/előző oszlopra                                                                                       | Tab/Shift+Tab                 |
 | Ugrás a következő/előző sorra                                                                                          | Lefelé nyíl/Felfelé nyíl           |
-| Lépés a következő/előző sorra kijelölés nélkül<br><br>**Megjegyzés:** ez a billentyűparancs csak többszörös kijelölésekre vonatkozik. | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
-| Az aktuális sor kijelölése / kijelölés törlése<br><br>**Megjegyzés:** ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.                    | Ctrl+Szóköz/Ctrl+Kattintás         |
-| A következő/előző sor hozzáadása a kijelölt készlethez<br><br>**Megjegyzés:** ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.   | Shift+Szóköz                     |
-| Egy sortartomány hozzáadása a kijelölt készlethez<br><br>**Megjegyzés:** ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.         | Shift+Kattintás                     |
+| Lépés a következő/előző sorra kijelölés nélkül<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote> | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
+| Az aktuális sor kijelölése / kijelölés törlése<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>                    | Ctrl+Szóköz/Ctrl+Kattintás         |
+| A következő/előző sor hozzáadása a kijelölt készlethez<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>   | Shift+Szóköz                     |
+| Egy sortartomány hozzáadása a kijelölt készlethez<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>         | Shift+Kattintás                     |
 | Ugrás az adatok következő/előző oldalára                                                                                   | Page up / Page down             |
 | Új sor létrehozása a rács alján                                                                             | Lefelé nyíl (az utolsó sorból)  |
 | Az összes sor kijelölése vagy törlése                                                                                               | Ctrl+Shift+M                    |
 | Ugrás az első rekordra                                                                                               | Ctrl+Home                       |
 | Ugrás az utolsó rekordra                                                                                                | Ctrl+End                        |
-| Az alapértelmezett művelet végrehajtása rácsban<br><br>**Megjegyzés:** ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.                 | Bevitel                           |
+| Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
 | Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Bevitel                           |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
 
-|                                                                              |                               |
+| Művelet                                                                   | Billentyű vagy billentyűkombináció                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Művelet**                                                               | **Billentyű vagy billentyűkombináció**                     |
 | Hivatkozás megnyitása                                                           | Ctrl+Enter                    |
 | A munkamenet dátumának bevitele egy dátummezőbe.                                       | D+Tab                         |
 | A mai dátum bevitele egy dátummezőbe.                                       | T+Tab                         |
@@ -171,17 +164,15 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="messaging-shortcuts"></a>Üzenetkezelő gyorsbillentyűk
 
-|                          |               |
+| Művelet               | Billentyű vagy billentyűkombináció         |
 |--------------------------|---------------|
-| **Művelet**           | **Billentyű vagy billentyűkombináció**     |
 | Ugrás az üzenetközpontba | Ctrl+Shift+F7 |
 | Ugrás az üzenetsávba    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigációs billentyűparancsok
 
-|                                                                               |                            |
+| Művelet                                                                    | Billentyű vagy billentyűkombináció                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Művelet**                                                                | **Billentyű vagy billentyűkombináció**                  |
 | Ugrás az irányítópultra                                                           | Alt+Shift+Home             |
 | Ugrás a navigációs sávra                                                    | Alt+M,N vagy Alt+Shift+F1    |
 | Ugrás a vállalatválasztóba                                                    | Ctrl+Shift+O               |
@@ -201,9 +192,8 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="personalization-shortcuts"></a>Személyre szabási gyorsbillentyűk
 
-|                                                                                                                        |                                     |
+| Művelet                                                                                                             | Billentyű vagy billentyűkombináció                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Művelet**                                                                                                         | **Billentyű vagy billentyűkombináció**                           |
 | Lap áttérése személyre szabási módba                                                                          | Ctrl+Shift+P                        |
 | A Kijelölés eszköz használata (személyre szabási módban)                                                                     | z                                   |
 | A kijelölt vezérlőelem gyors személyre szabási párbeszédpanelének megnyitása (a kijelölés eszköz használata esetén)                              | Szóköz vagy Enter                      |
@@ -230,19 +220,17 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="segmented-entry-shortcuts"></a>Szegmentált beviteli billentyűparancsok
 
-|                                                                                                                         |                                  |
+| Művelet                                                                                                              | Billentyű vagy billentyűkombináció                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Művelet**                                                                                                          | **Billentyű vagy billentyűkombináció**                        |
 | Legördülő lista megnyitása (amikor a legördülő lista zárva van)                                                             | Alt+Lefelé nyíl                   |
 | Fókusz áthelyezése az aktuális szegmens beviteli mezőjébe, a legördülő listában (amikor a legördülő lista már meg nyitva) | Alt+Lefelé nyíl                   |
 | Legördülő lista bezárása                                                                                                | Alt+Felfelé nyíl                     |
 | A legördülő lista jobb részének bezárása/megnyitása                                                                      | Alt+Balra nyíl / Alt+Jobbra nyíl |
-| Váltás „érvényesek megjelenítése” és „minden megjelenítése” módok között                                                                        | Alt+W                            |
+| Váltás „Érvényesek megjelenítése” és „Minden megjelenítése” módok között                                                                        | Alt+W                            |
 | Az érték kiválasztása a legördülő listából, majd áthelyezés a követező szegmensbe                                                       | Bevitel                            |
 | Ugrás a következő/előző vezérlőre az oldalon (amikor fókusz a beviteli vezérlőn van)                                          | Tab/Shift+Tab                  |
 | Ugrás a következő/előző beviteli mezőre a helyi menüben, (amikor a fókusz a legördülő listában van)                               | Tab/Shift+Tab                  |
 | Ugrás egy sorral feljebb/lentebb a keresőben                                                                                        | Lefelé nyíl / Felfelé nyíl            |
 | Ugrás egy oldallal feljebb/lentebb a keresőben                                                                                       | Page up / Page down              |
 | Ugrás a keresés tetejére/aljára                                                                                    | Home/End                       |
-
 
