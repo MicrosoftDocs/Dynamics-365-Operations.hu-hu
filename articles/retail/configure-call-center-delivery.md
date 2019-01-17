@@ -36,6 +36,7 @@ Amikor leadnak egy értékesítési rendelést a Microsoft Dynamics 365 for Reta
 A Retail funkciói lehetővé teszik a felhasználók számára, hogy korlátozzák a csatorna által használható szállítási módokat, a termékhez használt a szállítási módokat, és a meghatározott szállítási célokhoz érvényes szállítási módokat. A költségeket úgy is meg lehet határozni, hogy a kiegészítő költségek hozzáadódnak a vevő rendeléséhez, az értékesítési rendeléshez kijelölt szállítási módok és a rendelés teljes értéke alapján.
 
 ## <a name="define-delivery-modes"></a>Szállítási módok meghatározása
+
 Mielőtt megadná, hogy mely szállítási módok használhatók a hívásközponti rendelésekhez, illetve meghatározná a kapcsolódó szabályokat és költségeket, meg kell adnia a szállítási módot. Lépjen az **Értékesítés és marketing \> Beállítás \> Elosztás \> Szállítási módok** pontra. Kattintson az **Új** lehetőségre új szállítási mód létrehozásához. Másik megoldásként válasszon a listából egy meglévő szállítási módot, majd válassza a **Szerkesztés** lehetőséges a szállítási mód módosításához.
 
 A **Szállítási mód** mezőben alfanumerikus karakterek bármilyen kombinációját megadhatja az üzleti követelményei alapján. Ezután a **Leírás** mezőben további kontextust adhat meg. A **Költségcsoport** és **Sürgős** mezők kitöltése nem kötelező, és később részletesebben tárgyaljuk őket ebben a témakörben.
@@ -47,11 +48,13 @@ A **Termékek** FastTabon adhatja meg, mely termékekhez és/vagy termékkategó
 A **Címek** FastTabon adhatja meg, mely országokhoz/régiókhoz/államokhoz használható/nem használható a szállítási mód. Például a Hawaiira vagy Alaszkába szállított rendeléseknél nem engedélyezett a szárazföldi szállítás. Ezért ezeket az államokat ki kell zárni a szárazföldi szállítási szolgáltatásokhoz kapcsolódó szállítási módokból, de minden olyan szállítási módnak tartalmaznia kell őket, amely légi szállítási szolgáltatáshoz kapcsolódik.
 
 ## <a name="validate-delivery-modes-for-a-call-center-order"></a>Szállítási módok ellenőrzése hívásközponti rendelések esetén
+
 Miután megadta a szállítási módokat, futtatnia kell a **Szállítási módok feldolgozása** kötegelt feladatot. Ez a feladat elérhetővé teszi a szállítási módokat, hogy használhatók legyenek az értékesítési rendelési folyamatoknál a kiskereskedelmi csatornák esetén. A **Szállítási módok feldolgozása** feladat futtatásához lépjen a **Kiskereskedelem \> Kiskereskedelmi IT \> Szállítási módok feldolgozása** pontra. Ezt a feladatot futtatni kell mindig, ha új szállítási módot ad hozzá egy kiskereskedelmi csatornához vagy ha egy meglévő szállítási mód/csatorna kapcsolaton módosítást hajt végre.
 
 Miután futtatta a **Szállítási módok feldolgozása** kötegelt feladatot, lépjen a **Kiskereskedelem \> Csatornák \> Hívásközpontok \> Összes hívásközpont** ponthoz. Az **Összes hívásközpont** oldal műveleti paneljén, a **Beállítás** lapon válassza a **Szállítási módok** lehetőséget. A **Szállítási módok** lap felsorolja a kiválasztott hívásközponti csatornához tartozó összes érvényes szállítási módot. Új szállítási módok hozzáadásához vagy meglévő szállítási módok módosításához válassza a **Szállítási módok kezelése** lehetőséget. Vegye figyelembe, hogy a **Szállítási módok feldolgozása** feladatot minden módosításkor futtatnia kell.
 
 ## <a name="define-charges-for-delivery-services"></a>Szállítási szolgáltatásokhoz tartozó költségek megadása
+
 A vevőkhöz tartozó értékesítési rendelések létrehozásakor előfordulhat, hogy a vállalat szeretne hozzáadni a rendeléshez kiválasztott szállítási módok alapján automatikusan kiszámított költségeket. Ezeket a költségeket be lehet úgy állítani, hogy az összes vevő és szállítási mód esetén azonosan legyenek. Másik lehetőségként a költségek változhatnak az értékesítési rendeléshez megadott vevőtől és/vagy szállítási módoktól függően.
 
 A költségek meghatározásához lépjen a **Kiskereskedelem \> Csatorna beállítása \> Költségek \> Automatikus költségek** ponthoz. Kattintson az **Új** lehetőségre új költségek hozzáadásához. Másik megoldásként válasszon ki egy meglévő bejegyzést, és válassza a **Szerkesztés** lehetőséget.
@@ -73,6 +76,7 @@ Az üzleti szükségletektől függően a költségkategóriákat vegyesen is ha
 ![Példa vegyes többszintű költségekre](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Szállítási módok alkalmazása a rendelésbevitel során egy hívásközpontban
+
 Új értékesítési rendelés létrehozásakor meg kell adnia egy értéket a **Szállítási mód** mezőben a **Szállítás** FastTabon az értékesítési rendelés fejlécében. Lehet, hogy ez a mező automatikusan ki van töltve a vevőrekord alapértelmezett értékei alapján.
 
 A rendelés fejlécében megadott szállítási mód a rendszer automatikusan átmásolja az értékesítésirendelés-sorokba azok létrehozásakor. Azonban módosíthatja a szállítási mód beállítását egy adott sortételre vonatkozóan a **Szállítás** lapon a **Sor adatai** résznél az értékesítésirendelés-bevitel oldalon.
@@ -80,11 +84,13 @@ A rendelés fejlécében megadott szállítási mód a rendszer automatikusan á
 Ha a kijelölt szállítási mód nem érvényes a rendeléshez vagy rendelési sorban megadott termékre vagy a szállítási címre, akkor megjelenik egy hibaüzenet. Ezután ki kell választania egy olyan szállítási módot, amelyet megadtak az adott termékhez vagy címkonfigurációhoz.
 
 ## <a name="calculation-of-delivery-charges-during-entry-of-order"></a>Szállítási költségek számítása rendelés bevitelekor
+
 Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatorna esetében, az értékesítési rendelésekre vonatkozó szállítási költségeket a rendszer automatikusan kiszámítja, amikor a felhasználó kiválasztja a **Befejezés** lehetőséget. A következő üzenet jelenik meg az **Értékesítési rendelés összesítése** oldal a felső részén: "Többszintű költségek kiszámítva." A kiszámított költségek hozzáadódnak az **Értékesítés összesen** mező értékéhez. Az **Összeg** FastTabon, a **Költségek** mezőben látható a rendeléshez és a sorokhoz kiszámított költségek teljes összege. A költségek részletes lebontásának megtekintéséhez válassza a **Rendelés** lehetőséget az **Értékesítési rendelés összesítése** oldalon, majd válassza a **Költségek** lehetőséget a költségek megtekintéséhez, hozzáadásához és szerkesztéséhez. Vegye figyelembe, hogy a rendelési fejlécben szereplő szállítási költségek kiszámítása a fejléchez kapcsolt szállítási mód alapján történik. A sorszintű szállítási költségek számítása az értékesítési sorban beállított szállítási mód alapján történik. Ha több szállítási módot használ különböző sorokban, előfordulhat, hogy a rendszer több költséget vesz figyelembe és a költségek összeadódnak. Ezután megjelenik a teljes összeg a **Költségek** mezőben az **Értékesítési rendelés összesítése** oldalon.
 
 Ha a **Rendeléskiegészítés engedélyezése** beállítás ki van kapcsolva, a felhasználóknak manuálisan kell elindítaniuk a költségek kiszámítását. Az **Értékesítési rendelés** oldal műveleti ablaktábláján, az **Eladás** lapon, a **Számítás** csoportban válassza ki a **Többszintű költségek** lehetőséget. Megjelenik a "Többszintű költségek kiszámítva" üzenet. Ezután kiválaszthatja a **Költségek** lehetőséget az **Eladás** lapon a kiszámított költségek megtekintéséhez, szerkesztéséhez vagy törléséhez.
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Sürgős szállítási módok alkalmazása hívásközponti rendeléseknél
+
 Minden konfigurált szállítási módhoz opcionálisan hozzákapcsolhat egy sürgősségi kódot. Ez a kód prioritási sorrend szerinti rendezéshez és jelentéskészítő eszközként használható. Jelenleg nem ad hozzá kiegészítő díjakat a rendeléshez. Sürgősségi kódok beállításához lépjen az **Értékesítés és marketing \> Beállítás \> Elosztás \> Sürgősségi kódok** ponthoz.
 
 Például azokat a rendeléseket, amelyek következő napon kerülnek kiszállításra légi úton, fel kell venni a raktárból minden nap 13:00 óráig. Ebben az esetben létre lehet hozni egy sürgősségi kódot, és ezt a kódot hozzá lehet kapcsolni a rendszerben beállított minden egyes következő napi szállítási módhoz. Amikor a raktár létrehozza a kitárolási hullámot, a **Sürgős** mezőben szereplő megfelelő sürgősségi kód szűrőként használható, így csak azoknak a rendeléseknek a kitárolása történik meg, amelyeknek a szállítási módja hozzá van kapcsolva az adott kódhoz.

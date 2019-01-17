@@ -69,6 +69,3 @@ A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető 
 
 Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve. Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..
 
-
-
-

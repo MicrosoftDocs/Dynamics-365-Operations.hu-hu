@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Bemutató adatokhoz mellékelt Retail minta képernyő-elrendezések különböz
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Képernyő-elrendezés azonosítójának szerkezete
 
-A Retail képernyő-elrendezések megkereséséhez kattintson a **Retail** > **Csatorna beállításai** > **POS-beállítás** > **POS** > **Képernyő-elrendezések** lehetőségre.
+A Retail képernyő-elrendezések megkereséséhez kattintson a **Retail** \> **Csatorna beállításai** \> **POS-beállítás** \> **POS** \> **Képernyő-elrendezések** lehetőségre.
 
 ![Retail képernyő-elrendezések lap](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Az alábbi táblázat bemutatja a jellemző képernyőfelbontásokhoz rendelkez�
 
 \*Ezek a további elrendezési méretek csak a Kalandorbolt és a Gyár elrendezésekben érhetők el.
 
-
->[!TIP]
-> A pénztár automatikusan kiválasztja az elrendezésméreteket, az aktuális alkalmazásablak képernyőfelbontásához elérhető legközelebbi méret alapján. A jelenleg használt képernyőelrendezés-azonosító és elrendezésfelbontás megkereséséhez a Retail Modern POS (MPOS) vagy Retail Cloud POS (CPOS) esetében nyissa meg a **Beállítások** oldalt, majd tekintse meg a **Munkamenet adatai** szakaszt. A jelenlegi alkalmazás vagy böngészőkeret tényleges ablakfelbontása is megtekinthető. Ezeket az adatokat begyűjtve az elrendezéstartalom forrásának megkereséséhez a Retail esetében menjen a **Csatorna beállítása** > **POS beállítása** > **POS** > **Képernyő-elrendezések**.
-
+> [!TIP]
+> A pénztár automatikusan kiválasztja az elrendezésméreteket, az aktuális alkalmazásablak képernyőfelbontásához elérhető legközelebbi méret alapján. A jelenleg használt képernyőelrendezés-azonosító és elrendezésfelbontás megkereséséhez a Retail Modern POS (MPOS) vagy Retail Cloud POS (CPOS) esetében nyissa meg a **Beállítások** oldalt, majd tekintse meg a **Munkamenet adatai** szakaszt. A jelenlegi alkalmazás vagy böngészőkeret tényleges ablakfelbontása is megtekinthető. Ezeket az adatokat begyűjtve az elrendezéstartalom forrásának megkereséséhez a Retail esetében menjen a **Csatorna beállítása** \> **POS beállítása** \> **POS** \> **Képernyő-elrendezések** menübe.
 
 ![Képernyő-elrendezések és elrendezésfelbontások/méretek a Retail és a POS esetében](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Minden fiktív vállalat eltérő kiskereskedelmi szegmenst céloz, és termékk
 | Gyár        | Houston  | Divatáru        | Zöld  | Világos |
 | Contoso         | Boston   | Elektronika    | Piros    | Sötét  |
 
-
->[!NOTE]
+> [!NOTE]
 > A két főmárka a Kalandorbolt és a Gyár. A Contoso elérhető, de nem minden elrendezés áll rendelkezésre.
-
 
 Az alábbi ábrákon a három fiktív vállalat üdvözlőoldalára és tranzakciós lapjára láthatók példák.
 
@@ -153,28 +149,26 @@ Az alábbi ábrákon a három fiktív vállalat üdvözlőoldalára és tranzakc
 
 A különböző képernyő-elrendezésekhez felhasználókat is rendelkezésre bocsájtunk. Az alábbi táblázat használatával hozzáférhet a képernyők bármelyikéhez. Csak jelentkezzen be egy megfelelő operátorazonosítóval.
 
-| Cég         | Képernyő-elrendezés azonosítója | Személyiség          | Operátorazonosító           |
-|-----------------|------------------|---------------   |------------------------|
-| Kalandorbolt | A3MGR            | Üzletvezető    | 000154, 000137, 000073 |
-| Kalandorbolt | A3CSH            | Pénztáros          | 000150, 000175, 000165 |
-| Kalandorbolt | A3STK            | Készletadminisztrátor      | 000155, 000181, 000152 |
-| Gyár        | F3MGR            | Üzletvezető    | 000160, 000168, 000163 |
-| Gyár        | F3CSH            | Pénztáros          | 000161, 000113, 000114 |
-| Gyár        | F3STK            | Készletadminisztrátor      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Üzletvezető    | 000100, 000111         |
-| Contoso         | C3CSH            | Pénztáros          | 000110, 000120         |
-| Contoso         | Nem alkalmazható   | Készletadminisztrátor      | Nem alkalmazható         |
+| Cég         | Képernyő-elrendezés azonosítója | Személyiség       | Operátorazonosító           |
+|-----------------|------------------|---------------|------------------------|
+| Kalandorbolt | A3MGR            | Üzletvezető | 000154, 000137, 000073 |
+| Kalandorbolt | A3CSH            | Pénztáros       | 000150, 000175, 000165 |
+| Kalandorbolt | A3STK            | Készletadminisztrátor   | 000155, 000181, 000152 |
+| Gyár        | F3MGR            | Üzletvezető | 000160, 000168, 000163 |
+| Gyár        | F3CSH            | Pénztáros       | 000161, 000113, 000114 |
+| Gyár        | F3STK            | Készletadminisztrátor   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Üzletvezető | 000100, 000111         |
+| Contoso         | C3CSH            | Pénztáros       | 000110, 000120         |
+| Contoso         | Nem alkalmazható   | Készletadminisztrátor   | Nem alkalmazható         |
 
-
->[!TIP]
+> [!TIP]
 > A legjobb eredmények érdekében aktiváljon a megfelelő üzletben egy pénztárgépet, és a vállalatot annak a személyiségnek a vállalatára állítsa, amellyel be kíván jelentkezni. Ezzel a módszerrel segíthet garantálni, hogy vizuális profil és a márkázás egységes legyen a tapasztalat egészében. Például ha a pénztárosi elrendezést szeretné kipróbálni a Gyár esetében, aktiválnia kell egy pénztárgépet a houstoni üzletben.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

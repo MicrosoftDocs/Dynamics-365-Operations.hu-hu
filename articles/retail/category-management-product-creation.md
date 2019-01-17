@@ -59,4 +59,3 @@ A terméktulajdonságok új, továbbfejlesztett struktúrája segítségével ki
 
 ![Termékek frissítése párbeszédpanel](media/NewUpdateProductsEnhancedView.PNG)
 
-

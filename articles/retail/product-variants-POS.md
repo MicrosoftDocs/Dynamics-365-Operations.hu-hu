@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ A **Keresés a készletben** lapon a numerikus billentyűzet használatával adh
 
 A helyek listája kétfajta entitást tartalmaz:
 
-- **Kiskereskedelmi áruházak** – A lista azokat az üzleteket tartalmazza, amelyeket az üzletcsoport lokátorcsoport használatával konfiguráltak az aktuális üzletre a Kiskereskedelmi központban. 
-- **Elosztóközpontok** – Különféle elosztóközpontokat (például raktár) lehet a Microsoft Dynamics 365 for Retail alkalmazásban beállítani. A készlet-elérhetőségi adatokat azonban a lista csak a **Szabványos**, alapértelmezett típusú elosztóközpontokra mutatja. 
+- **Kiskereskedelmi áruházak** – A lista azokat az üzleteket tartalmazza, amelyeket az üzletcsoport lokátorcsoport használatával konfiguráltak az aktuális üzletre a Kiskereskedelmi központban.
+- **Elosztóközpontok** – Különféle elosztóközpontokat (például raktár) lehet a Microsoft Dynamics 365 for Retail alkalmazásban beállítani. A készlet-elérhetőségi adatokat azonban a lista csak a **Szabványos**, alapértelmezett típusú elosztóközpontokra mutatja.
 
     > [!NOTE]
     > A készlet-elérhetőségi adatok nem jelennek meg a pénztárban a **Tranzit**, **Karantén** és **Úton lévő áruk** típusú raktárak esetében.
@@ -86,7 +86,7 @@ A **Dimenzióalapú mátrix** nézetben a termékváltozatok cellái tartalmazna
 | **0** (nulla)                             | Egy változat már ki van adva a megadott helyre, de a cikk nem érhető el a kiválasztott helyen. Azonban a cellában további műveletek hajthatók végre. (A műveletekről részletesen a jelen témakör későbbi szakaszaiban olvashat.) |
 | **n/a** vagy inaktív cella              | A kiválasztott helyre még nem lett feladva egy változat, és további műveletek nem végezhetők el a cellában. |
 
-A kimutatás dimenziók szempontjából is módosítható úgy, hogy kiválasztja a használandó új dimenziót. 
+A kimutatás dimenziók szempontjából is módosítható úgy, hogy kiválasztja a használandó új dimenziót.
 
 ![A kimutatás módosítása](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Ezenkívül, a **Dimenzióalapú mátrix** nézetben, további műveleteket lehe
 
 A következő táblázatban tájékozódhat a rendelkezésre álló további műveletekről.
 
-
-|        Művelet        |                                                                                                                    Leírás                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Eladás most       |                               Adja a kijelölt cikkváltozatot a tranzakcióhoz, és irányítsa át a felhasználót a tranzakció képernyőre. (Ez a művelet nem érhető el, a kiválasztott hely elosztási központ.)                               |
-|   Felvétel az üzletben   |      Hozzon létre vevői rendelést a termékváltozatra, amely a kijelölt helyen lesz felvéve, és irányítsa át a felhasználót a tranzakció képernyőre. (Ez a művelet nem érhető el, a kiválasztott hely elosztási központ.)       |
-|     Termék szállítása     |                                                 Hozzon létre vevői rendelést a termékváltozatra, amely a kijelölt helyre lesz kiszállítva, és irányítsa át a felhasználót a tranzakció képernyőre.                                                 |
-|     Elérhetőség     |                                                                             Jelenítse meg az ígérethez rendelkezésre álló információkat a kiválasztott változatkombinációra a kiválasztott helyre.                                                                              |
-|  Minden hely megjelenítése  | Váltson át a szokásos készletkeresési nézetre, és jelölje ki a készletelérhetőségi információkat a cikkváltozatra az összes üzletben az üzlet-lokátorcsoportban, valamint a <strong>Szabványos/Alapértelmezett</strong> típusú elosztóközpontokban. |
-| Termék részleteinek megtekintése |                                                                         Irányítsa át a felhasználót a társított alaptermék <strong>Termék részletei</strong> oldalára.                                                                          |
-
+| Művelet               | Leírás |
+|----------------------|-------------|
+| Eladás most             | Adja a kijelölt cikkváltozatot a tranzakcióhoz, és irányítsa át a felhasználót a tranzakció képernyőre. (Ez a művelet nem érhető el, a kiválasztott hely elosztási központ.) |
+| Felvétel az üzletben     | Hozzon létre vevői rendelést a termékváltozatra, amely a kijelölt helyen lesz felvéve, és irányítsa át a felhasználót a tranzakció képernyőre. (Ez a művelet nem érhető el, a kiválasztott hely elosztási központ.) |
+| Termék szállítása         | Hozzon létre vevői rendelést a termékváltozatra, amely a kijelölt helyre lesz kiszállítva, és irányítsa át a felhasználót a tranzakció képernyőre. |
+| Elérhetőség         | Jelenítse meg az ígérethez rendelkezésre álló információkat a kiválasztott változatkombinációra a kiválasztott helyre. |
+| Minden hely megjelenítése   | Váltson át a szokásos készletkeresési nézetre, és jelölje ki a készletelérhetőségi információkat a cikkváltozatra az összes üzletben az üzlet-lokátorcsoportban, valamint a **Szabványos/Alapértelmezett** típusú elosztóközpontokban. |
+| Termék részleteinek megtekintése | Irányítsa át a felhasználót a társított alaptermék **Termék részletei** oldalára. |
 

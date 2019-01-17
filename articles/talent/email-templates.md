@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 for Talent: Attract használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Az Attract egyes e-mailjei automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
+
+> [!NOTE]
+> E-mail sablonok használatához a szervezetének rendelkeznie kell az Átfogó felvételi bővítménnyel.
 
 ## <a name="global-template-configurations"></a>Globális sablonkonfigurációk
 

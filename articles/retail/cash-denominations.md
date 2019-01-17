@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: afc53754c3ff5b1afed2380369cf8280cfffc5e4
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -34,11 +34,13 @@ ms.lasthandoff: 08/09/2018
 A háttérirodában meghatározható a pénztárosok, értékesítési munkatársak és a vezetők által az üzletben levő POS modulban használandó bankjegyek és érmék készpénzcímlete. Az ilyen címletek felhasználhatók a napvégi készpénzszámlálási fizetőeszköz-elszámolások vagy egy gyors értékesítés fizetése során.
 
 ## <a name="define-denominations"></a>Címletek meghatározása
-A címletek üzletenként állíthatók be a **Beállítás** > **Készpénzelszámolási lehetőség az üzlet tulajdonából** lapon. 
+
+A címletek üzletenként állíthatók be a **Beállítás** \> **Készpénzelszámolási lehetőség az üzlet tulajdonából** lapon.
 
 ![készpénzcímletek](./media/image1-denomination.png)
 
 Címlet meghatározása:
+
 1. Kattintson az **Új** elemre.
 1. Adja meg a típust (érme vagy bankjegy).
 1. Adja meg az összeget (érték).
@@ -46,9 +48,9 @@ Címlet meghatározása:
 ![készpénzcímletek](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>A funkcióprofil konfigurálása
+
 A POS-ben készpénzzel történő fizetés esetén a felhasználó a bankjegycímletek segítségével gyorsan beírhatja a vevő által fizetett összeget. A funkcióprofilban beállíthatja a címlet kétféle megjelenítését a POS rendszerben.
 
-**Nagyobb vagy egyenlő az esedékes összeggel**: alapértelmezés szerint a POS csak azokat az esedékes összegnél nagyobb címleteket jeleníti meg, amelyek lehetővé teszik az egyetlen mozdulattal elvégezhető fizetést. Például, ha az esedékes összeg 7,50 dollár, a POS a következő címleteket jelenítené meg: $10, $20, $50 és $100. A fenti összegek bármelyikének megérintése automatikusan kifizeti az értékesítést ehhez az összeghez. A $1 és $5 címletek nem jelennek meg, mivel ezek az összegek kisebbek az esedékes összegnél.
-
-**Minden címlet**: Jelölje be ezt a lehetőséget, hogy minden címletet megjelenítsen a POS rendszerben, függetlenül az esedékes összeg mértékétől. Ez azt jelenti, hogy a felhasználó az esedékes összeget eléréséhez címletkombinációkat használhat. Például ha az esedékes összeg 25,00 dollár, a felhasználó választhatja a $20 és $5 címletet az értékesítés befejezéséhez.
+- **Nagyobb vagy egyenlő az esedékes összeggel** – alapértelmezés szerint a POS csak azokat az esedékes összegnél nagyobb címleteket jeleníti meg, amelyek lehetővé teszik az egyetlen mozdulattal elvégezhető fizetést. Például, ha az esedékes összeg 7,50 dollár, a POS a következő címleteket jelenítené meg: $10, $20, $50 és $100. A fenti összegek bármelyikének megérintése automatikusan kifizeti az értékesítést ehhez az összeghez. A $1 és $5 címletek nem jelennek meg, mivel ezek az összegek kisebbek az esedékes összegnél.
+- **Minden címlet** – Jelölje be ezt a lehetőséget, hogy minden címletet megjelenítsen a POS rendszerben, függetlenül az esedékes összeg mértékétől. Ez azt jelenti, hogy a felhasználó az esedékes összeget eléréséhez címletkombinációkat használhat. Például ha az esedékes összeg 25,00 dollár, a felhasználó választhatja a $20 és $5 címletet az értékesítés befejezéséhez.
 

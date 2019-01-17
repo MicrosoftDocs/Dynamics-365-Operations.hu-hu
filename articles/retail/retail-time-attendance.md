@@ -20,10 +20,10 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,112 +31,113 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot. 
+Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot.
 
-<a name="manage-worker-setup-and-scheduling"></a>Dolgozók elhelyezésének és ütemezésének kezelése
-----------------------------------
+## <a name="manage-worker-setup-and-scheduling"></a>Dolgozók elhelyezésének és ütemezésének kezelése
 
 ### <a name="initial-configuration"></a>Induló konfiguráció
 
--   Futtassa a konfigurációs varázslót.
--   Regisztrálja a dolgozókat időregisztrációs dolgozókként.
+- Futtassa a konfigurációs varázslót.
+- Regisztrálja a dolgozókat időregisztrációs dolgozókként.
 
 ### <a name="plan-worker-schedules"></a>Tervezze meg a dolgozói beosztásokat
 
--   Alkalmazzon profilokat a munkatervező segítségével. További tájékoztatást a következő témakörben talál: <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
+- Alkalmazzon profilokat a munkatervező segítségével. További információ: [Profil alkalmazása a munkatervezővel](https://technet.microsoft.com/library/aa551234.aspx).
 
-A konfigurálás lépéseivel kapcsolatos további tudnivalókat lásd: <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Munkaidő és jelenlét beállítása](https://technet.microsoft.com/library/aa496971.aspx).
 
 ### <a name="retail-specific-configuration"></a>Kiskereskedelem-specifikus konfiguráció
 
--   Engedélyezzen egy funkcionális profilt a Blokkolóórához azon dolgozók számára, akiknek lehetővé kívánja tenni az időregisztrációt. Kattintson a **Pénztár-funkcióprofilok** &gt; **Funkciók** &gt; **Pénztár idő regisztrációk** &gt; **Időregisztrációk engedélyezése** lehetőségre.
--   Állítsa át a Pénztár (POS) engedélycsoportokat, hogy elérhetővé tegye a blokkolóóra bejegyzések megtekintése engedélyt. Ez az engedély lehetővé teszi, hogy a felhasználó megtekintse a bolt (Illetve más, a címjegyzék alapján a felhasználóhoz társítható boltok) dolgozóinak blokkolóóra regisztrációit. Ezt az engedélyt a vezető szerepkörű dolgozók számára ajánlott engedélyezni. Kattintson a **Pénztár-engedélycsoportok** &gt; **Blokkolóóra bejegyzéseinek megtekintése** gombra.
+- Engedélyezzen egy funkcionális profilt a Blokkolóórához azon dolgozók számára, akiknek lehetővé kívánja tenni az időregisztrációt. Kattintson a **Pénztár-funkcióprofilok** &gt; **Funkciók** &gt; **Pénztár idő regisztrációk** &gt; **Időregisztrációk engedélyezése** lehetőségre.
+- Állítsa át a Pénztár (POS) engedélycsoportokat, hogy elérhetővé tegye a blokkolóóra bejegyzések megtekintése engedélyt. Ez az engedély lehetővé teszi, hogy a felhasználó megtekintse a bolt (Illetve más, a címjegyzék alapján a felhasználóhoz társítható boltok) dolgozóinak blokkolóóra regisztrációit. Ezt az engedélyt a vezető szerepkörű dolgozók számára ajánlott engedélyezni. Kattintson a **Pénztár-engedélycsoportok** &gt; **Blokkolóóra bejegyzéseinek megtekintése** gombra.
 
 ## <a name="register-time"></a>Idő regisztrálása
+
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Pénztáros és nem a pénztáros időregisztrációk
 
--   A Pénztáron:
-    -   Belépési műveletek:
-        -   Lépjen be egy nem pénztárgép-fiókkal kapcsolatos művelettel vagy új műszakkal.
-        -   Válassza ki a Blokkolóóra műveletet.
-        -   Válassza ki a kívánt műveletet:
-            -   Érkezéskori blokkolás
-            -   Pihenő
-            -   Ebédszünet
-            -   Távozáskori blokkolás
+- A Pénztáron:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Jelenlegi állapot:</th>
-    <th>Elérhető műveletek</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Érkezéskori blokkolás</td>
-    <td><ul>
-    <li>Pihenő</li>
-    <li>Ebédszünet</li>
-    <li>Távozáskori blokkolás</li>
-    </ul></td>
-    </tr>
-    <tr class="even">
-    <td>Pihenő</td>
-    <td>Érkezéskori blokkolás</td>
-    </tr>
-    <tr class="odd">
-    <td>Ebédszünet</td>
-    <td>Érkezéskori blokkolás</td>
-    </tr>
-    <tr class="even">
-    <td>Távozáskori blokkolás</td>
-    <td>Érkezéskori blokkolás</td>
-    </tr>
-    </tbody>
-    </table>
+    - Belépési műveletek:
 
-    [![BlokkolóóraÁllások](./media/timeclockstates.png)](./media/timeclockstates.png)
--   Tekintse meg a konfigurációs üzenetet és igazolja, hogy a pillanatnyi tevékenység idő korrekt.
--   Napló:
-    -   Kattintson a **Napló** gombra a blokkolóóra tevékenység megtekintéséhez.
-    -   Alkalmazzon időszűrőket a különböző időablakok kiválasztásához.
-    -   Ha több tárolási helyen dolgozik, az összes helyszínen rögzített időregisztrációját megtekintheti. Az üzletszűrő segítségével kiválaszthatja melyik üzlet időregisztrációit kívánja megtekinteni.
+        - Lépjen be egy nem pénztárgép-fiókkal kapcsolatos művelettel vagy új műszakkal.
+        - Válassza ki a Blokkolóóra műveletet.
+        - Válassza ki a kívánt műveletet:
 
-<!-- -->
+            - Érkezéskori blokkolás
+            - Pihenő
+            - Ebédszünet
+            - Távozáskori blokkolás
 
--   Eltérő időzónák:
-    -   Ha az időt egy másik helyről nézi meg (a pénztáros naplóhoz vagy vezetői pozíció esetén a **Blokkolóóra bejegyzések megtekintése** opciót használva) és az adott hely másik időzónába esik, a megjelenített időpontok automatikusan az ön időzónájához igazodnak. Például, ön két üzlet vezetője. Az egyik Arizónában, a másik Nevadában található. Az arizonai üzlet pénztárosa beregisztrál a blokkolóórán reggel 9 órakor. Az adott időpontban Nevadában, reggel 8 óra van. Tehát, ha ön a nevadai üzletben tartózkodik és megnézi az időregisztrációkat, a regisztrált idő reggel 8 óraként lesz mutatva.
+        <table>
+        <thead>
+        <tr>
+        <th>Jelenlegi állapot:</th>
+        <th>Elérhető műveletek</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Érkezéskori blokkolás</td>
+        <td>
+        <ul>
+        <li>Pihenő</li>
+        <li>Ebédszünet</li>
+        <li>Távozáskori blokkolás</li>
+        </ul>
+        </td>
+        </tr>
+        <tr>
+        <td>Pihenő</td>
+        <td>Érkezéskori blokkolás</td>
+        </tr>
+        <tr>
+        <td>Ebédszünet</td>
+        <td>Érkezéskori blokkolás</td>
+        </tr>
+        <tr>
+        <td>Távozáskori blokkolás</td>
+        <td>Érkezéskori blokkolás</td>
+        </tr>
+        </tbody>
+        </table>
+
+        [![BlokkolóóraÁllások](./media/timeclockstates.png)](./media/timeclockstates.png)
+
+- Tekintse meg a konfigurációs üzenetet és igazolja, hogy a pillanatnyi tevékenység idő korrekt.
+- Napló:
+
+    - Kattintson a **Napló** gombra a blokkolóóra tevékenység megtekintéséhez.
+    - Alkalmazzon időszűrőket a különböző időablakok kiválasztásához.
+    - Ha több tárolási helyen dolgozik, az összes helyszínen rögzített időregisztrációját megtekintheti. Az üzletszűrő segítségével kiválaszthatja melyik üzlet időregisztrációit kívánja megtekinteni.
+
+- Eltérő időzónák:
+
+    - Ha az időt egy másik helyről nézi meg (a pénztáros naplóhoz vagy vezetői pozíció esetén a **Blokkolóóra bejegyzések megtekintése** opciót használva) és az adott hely másik időzónába esik, a megjelenített időpontok automatikusan az ön időzónájához igazodnak. Például, ön két üzlet vezetője. Az egyik Arizónában, a másik Nevadában található. Az arizonai üzlet pénztárosa beregisztrál a blokkolóórán reggel 9 órakor. Az adott időpontban Nevadában, reggel 8 óra van. Tehát, ha ön a nevadai üzletben tartózkodik és megnézi az időregisztrációkat, a regisztrált idő reggel 8 óraként lesz mutatva.
 
 ## <a name="view-worker-time-registrations"></a>Dolgozói munkaidő-nyilvántartás megtekintése
+
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Dolgozói időregisztrációk megtekintése és szűrés üzlet vagy tevékenységtípus alapján
 
 A Pénztáron:
 
--   Válassza ki a **Blokkolóóra bejegyzéseinek megtekintése** opciót.
--   Az összes olyan dolgozó időregisztrációját láthatja akik önnel azonos üzlethez vannak hozzárendelve.
--   Az időregisztrációk szűréséhez használhatja a tevékenységtípus szerinti és az üzlet szerinti szűrőket.
+- Válassza ki a **Blokkolóóra bejegyzéseinek megtekintése** opciót.
+- Az összes olyan dolgozó időregisztrációját láthatja akik önnel azonos üzlethez vannak hozzárendelve.
+- Az időregisztrációk szűréséhez használhatja a tevékenységtípus szerinti és az üzlet szerinti szűrőket.
 
 ## <a name="process-and-manage-time-registrations"></a>Időregisztrációk feldolgozása és kezelése
+
 A Dynamics 365 for Retail-felhasználó követi a munkafolyamatot, hogy kiszámolja, jóváhagyja, valamint áthelyezze az időregisztrációkat a bérlistára.
 
 ### <a name="primary-operations"></a>Elsődleges műveletek
 
--   Számítás
--   Jóváhagy
--   Benyújtás a bérlistára
+- Számítás
+- Jóváhagy
+- Benyújtás a bérlistára
 
 ### <a name="other-common-operations"></a>Egyéb általános műveletek
 
--   Szállítmány kicsekkolás
--   Távollét regisztrálása
+- Szállítmány kicsekkolás
+- Távollét regisztrálása
 
-Az idő és jelenlét feldolgozásával kapcsolatban az alábbi témakör tartalmaz további tájékoztatást: <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
-
-
-
+Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](https://technet.microsoft.com/library/aa573180.aspx).
 

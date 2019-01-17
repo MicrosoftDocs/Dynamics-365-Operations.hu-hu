@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább). A Microsoft Dynamics 365 for Finance and Operations esetében az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek. A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához. Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.
- 
+
 Például egy tipikus televízió terméknek a következő attribútumai lehetnek.
 
 | Kategória   | Attribútum                | Megengedett értékek          | Alapértelmezett érték |
@@ -50,7 +50,7 @@ Például egy tipikus televízió terméknek a következő attribútumai lehetne
 | Plazma     | Min. üzemhőmérséklet      | 32–110 fok              | 32            |
 |            | Max. üzemhőmérséklet        | 32–110 fok              | 100           |
 | Projektoros | Képcsőgarancia | 6, 12 vagy 18 hónap         | 12            |
-|            | Képcsövek száma    | 1–5                         | 3             |
+|            | Képcsövek száma (\# képcső)   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Attribútumok és attribútumtípusok
 
@@ -90,7 +90,7 @@ Az *Attribútum-metaadatok* beállítások megadását teszi lehetővé annak a 
 
 Kiskereskedelmi termékek esetén az attribútummetaadat-beállítások a csatorna szintjén felülbírálhatók. Ezt a lehetőséget a témakör későbbi tárgyalja.
 
-Megfigyelheti, hogy az **Attribútumok** lap tartalmazza a beállításokat, amelyek kapcsolódnak az attribútum-metaadatokhoz. Az **attribútum-metaadatok a POS számára** alatt egy **Szűkíthető** nevű lehetőség befolyásolja az attribútumértékek viselkedését a kiskereskedelmi pénztárban, vagy azt, hogy a rendszer hogyan kezeli ezeket az attribútumértékeket. Csak azok az attribútumok, amelyekre beállíthatja a **Szűkíthető** lehetőség **Igen** beállítását, jelennek meg a kiskereskedelmi pénztárban a termékek finomítására vagy szűrésére.
+Megfigyelheti, hogy az **Attribútumok** lap tartalmazza a beállításokat, amelyek kapcsolódnak az attribútum-metaadatokhoz. Az **attribútum-metaadatok a POS számára** alatt egy **Szűkíthető** nevű lehetőség befolyásolja az attribútumértékek viselkedését a kiskereskedelmi pénztárban, vagy azt, hogy a rendszer hogyan kezeli ezeket az attribútumértékeket. Csak azok az attribútumok, amelyekre beállíthatja a **Szűkíthető** lehetőség **Igen** beállítását, jelennek meg a retail POS alkalmazásban termékek finomítására vagy szűrésére.
 
 Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** lapon:
 
@@ -104,7 +104,7 @@ Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** 
 
 Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak. Bár a Finance and Operations nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK). Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben. Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább. Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.
 
-A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Attribútumok szűrési beállításai
 
@@ -121,7 +121,7 @@ A **Szűrőmegjelenítési beállítások** lap tartalmazza a következő mezők
 - **Megjelenítés szabályozása** – A következő beállítások közül választhat:
 
     - **Lista** – Ez a beállítás minden attribútumtípushoz elérhető.
-    - **Tartomány** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**. 
+    - **Tartomány** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.
     - **Csúszka** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.
     - **Csúszka sávokkal** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.
 
@@ -228,13 +228,13 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 5. A **Termékek** gyorslapon jelölje be a szükséges terméket, és válassza ki az **Attribútumok** elemet a termékrács felett.
 6. A következő gyorslapon frissítése a szükséges attribútumok értékeit:
 
-   - Megosztott termékhez tartozó média
-   - Megosztott termékattribútumok
-   - Csatornamédia
-   - Csatornatermék-attribútumok
+    - Megosztott termékhez tartozó média
+    - Megosztott termékattribútumok
+    - Csatornamédia
+    - Csatornatermék-attribútumok
 
-     > [!NOTE]
-     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+    > [!NOTE]
+    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
 
 ![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 
 5. A következő gyorslapon frissítése a szükséges attribútumok értékeit:
 
-   - Megosztott termékhez tartozó média
-   - Megosztott termékattribútumok
-   - Csatornamédia
-   - Csatornatermék-attribútumok
+    - Megosztott termékhez tartozó média
+    - Megosztott termékattribútumok
+    - Csatornamédia
+    - Csatornatermék-attribútumok
 
-     > [!NOTE]
-     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+    > [!NOTE]
+    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
 

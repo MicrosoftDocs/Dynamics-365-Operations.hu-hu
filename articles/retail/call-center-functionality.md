@@ -42,25 +42,30 @@ A rendelések létrehozásának támogatásán felül a hívásközpont-modul fe
 Ez a lap a következőkhöz kapcsolódó dokumentációkhoz biztosít hivatkozásokat: beállítás, konfiguráció és a Dynamics 365 for Retail hívásközpont funkcióinak használata.
 
 ## <a name="configure-the-call-center"></a>Hívásközpont konfigurálása
+
 [Rendelésfeldolgozási beállítások meghatározása](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>A megrendelés feldolgozásának konfigurálása
+
 [Csalással kapcsolatos figyelmeztetések beállítása](set-up-fraud-alerts.md)
 
 [Megrendelés manuális várakoztatása](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Fizetés feldolgozásának konfigurálása
+
 [Fizetési módszerek hívásközpontnál](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Szállítási módok beállítása
+
 [Szállítási módok és díjak beállítása a hívásközponthoz](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Közvetlen marketing konfigurálása
+
 [Hívásközpont-katalógusok](call-center-catalogs.md)
 
 [RFM-profilelemzés beállítása](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Folytonossági programok konfigurálása
-[Folytonossági program beállítása egy hívásközpont számára](set-up-continuity-program.md)
 
+[Folytonossági program beállítása egy hívásközpont számára](set-up-continuity-program.md)
 

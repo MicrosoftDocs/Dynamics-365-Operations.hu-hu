@@ -35,15 +35,13 @@ A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja
 
 A Microsoft Dynamics 365 for Retail részeként a felhasználók valós időben tanulmányozhatják az értékesítési trendeket és mintázatokat szervezeti hierarchia különböző szintjein éveken keresztül a kulcsrakész **Csatorna értékesítése év szerint** jelentés segítségével. Ezt a jelentést az alábbi helyek bármelyikéről megnyithatja:
 
--   **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
--   **Kiskereskedelmi üzlet pénzügyei** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
--   **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
+- **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
+- **Kiskereskedelmi üzlet pénzügyei** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
+- **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
 
 A felhasználók órákra bontva tanulmányozhatják az értékesítési trendeket és mintázatokat szervezeti hierarchia különböző szintjein a kijelölt időszakban a kulcsrakész **Csatorna értékesítése óra szerint** jelentés segítségével. Ezt a jelentést az alábbi helyek bármelyikéről megnyithatja:
 
--   **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
--   **Kiskereskedelmi üzlet pénzügyei** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
--   **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
-
-
+- **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
+- **Kiskereskedelmi üzlet pénzügyei** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
+- **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
 

@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: 'Bővítési módosítások, 8.1.2-es verzió'
               href: extensibility/extensibility-changes-812.md
+            - name: 'Bővítési módosítások, 8.1.3-as verzió'
+              href: extensibility/extensibility-changes-813.md
         - name: Alapelvek
           items:
             - name: Tolakodó testreszabások
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Felhőbeli telepítés
       items:
-        - name: Azure Resource Manager bevezetése
+        - name: Önkiszolgáló központi telepítés
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Új bemutatókörnyezet telepítése
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Telepítés GYIK
+              href: deployment/deploymentFAQ.md
+            - name: Az önkiszolgáló központi telepítéssel kapcsolatos ismert problémák
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Karbantartási műveletek a telepítéshez
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Környezet frissítése
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: Önkiszolgáló központi telepítéssel üzembe helyezett környezetekkel kapcsolatos hibaelhárítás
+              href: deployment/troubleshoot-newinfrastructure.md
+        - name: Teljes Azure Resource Manager bevezetése
           href: deployment/arm-onboarding.md
         - name: Az Azure ExpressRoute és a Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations-architektúra
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Frissítések alkalmazása felhőalapú környezetekre
+          href: deployment/apply-deployable-package-system.md
+        - name: Frissítések és bővítmények alkalmazása a felhőben tárolt Retail-csatorna összetevőire
+          href: deployment/Update-retail-channel.md
+        - name: Felhőben tárolt Retail-csatorna összetevőinek inicializálása
+          href: deployment/Initialize-Retail-Channels.md
     - name: Helyszíni telepítés
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Telepíthető csomagok létrehozása a modellekhez
           href: deployment/create-apply-deployable-package.md
-        - name: Frissítések alkalmazása felhőalapú környezetekre
-          href: deployment/apply-deployable-package-system.md
         - name: Telepíthető csomagok telepítése a parancssorból
           href: deployment/install-deployable-package.md
         - name: Csomag eltávolítása
@@ -1021,8 +1042,6 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: A Dynamics AX-platform frissítése a 2016. augusztusi kiadásra
           href: migration-upgrade/update-platform-each-release.md
-        - name: Védőfalkörnyezetek frissítése
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 'Adatok frissítése a fejlesztői, demó- és tesztkörnyezetekben'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Fejlesztői eszközök frissítése

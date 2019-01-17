@@ -32,14 +32,16 @@ ms.lasthandoff: 09/28/2018
 
 A témakör azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 Finance and Operations rendszert.
 
-A Finance and Operations testreszabására három alapvető lehetőség van. 
+A Finance and Operations testreszabására három alapvető lehetőség van.
+
 - Személyes beállítások egy beállítási lapon. Példák: a stílus és az időzóna.
-- Személyes beállítások a lap használatához kapcsolódva, ezek az *implicit* személyes beállítások. Például a Finance and Operations nyomon követi a rácsoszlopok szélességét, ha ezt beállítja, vagy a gyorslapok összecsukott/kibontott állapotát. 
+- Személyes beállítások a lap használatához kapcsolódva, ezek az *implicit* személyes beállítások. Például a Finance and Operations nyomon követi a rácsoszlopok szélességét, ha ezt beállítja, vagy a gyorslapok összecsukott/kibontott állapotát.
 - Személyes beállítások, amelyeket a felhasználó azért teszi, hogy módosítsa az oldal megjelenését azzal, hogy megváltoztatja az oldal elemeinek kinézetét, sokszor valamilyen interaktív személyre szabási móddal. Ezek a testreszabások az *explicit* testreszabások. Például a felhasználó hozzáadhat, elrejthet vagy átrendezhet lapelemeket.
 
 A Finance and Operations szoftverben megadott bármilyen testreszabás csak arra a felhasználóra érvényes, aki megadta őket, és függetlenek a személyre szabás típusától vagy attól, hogy a felhasználó milyen vállalattal kommunikál. Ha egy felhasználó az oldalon módosításokat hajt végre, az nem módosítja a rendszerben más felhasználók kezelési felületét.
 
 ## <a name="system-wide-options-for-the-current-user"></a>Az egész rendszerre érvényes beállítások az aktuális felhasználó számára
+
 A **Felhasználói beállítások** lap tartalmaz több rendszerszintű beállítást az aktuális felhasználóra. A **Felhasználói beállítások** oldal megnyitásához válassza a **Beállítások** menüt (fogaskerék szimbólum) a navigációs sávon, és jelölje be a **Felhasználói beállításokat**. A **Felhasználói beállítások** oldalhoz négy lap tartozik különböző felhasználói beállításokkal:
 
 - **Vizuális** – A színtéma kiválasztása és az oldalelemek alapértelmezett méretének beállítása.
@@ -48,6 +50,7 @@ A **Felhasználói beállítások** lap tartalmaz több rendszerszintű beállí
 - **Munkafolyamat** – Válassza ki a munkafolyamattal kapcsolatos beállításokat.
 
 ## <a name="implicit-personalizations"></a>Implicit testreszabás
+
 Az implicit személyes beállítások olyan személyes beállítások, amelyeket olyan vezérlőkkel hajt végre, amelyek megjegyzik az elemek aktuális láthatósági állapotát.
 
 - **Rácsoszlopok:** – Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt oszlopszélességig. A Finance and Operations tárolja az oszlop beállított szélességét. Átméretezi az oszlop szélességét minden alkalommal, amikor megnyitja a rácsot tartalmazó lapot.
@@ -59,9 +62,11 @@ Az implicit személyes beállítások olyan személyes beállítások, amelyeket
 - **Navigációs ablak** – A *navigációs ablak* megnyitásához válassza ki a **Menü** gombot bármely lap bal oldali ablakában. (A **Menü** gomb másik neve *Hamburg*, *Hamburg menü*, vagy *Hamburg gomb*.) Rögzítheti a navigációs ablak megnyitásához, vagy alapértelmezés szerint összecsukva tárolhatja. Után rögzítettet a navigációs ablakot nyitva, a Finance and Operations nyitva tartja mindaddig, amíg összecsukja.
 
 ## <a name="explicit-personalizations"></a>Explicit testreszabás
+
 A személyek és vállalatok számára eltérőek a legfontosabb adatok, vagy amelyeket nem igényelnek az üzleti tevékenységhez. A Finance and Operations személyre szabhatóvá teszi adatainak megrendelését és kezelését. Megadhatja azt is, hogy bizonyos adatokat el kell rejteni. Ezek a funkciók kulcsfontosságúak a személyes és produktív használati élményre, és példák az explicit személyes beállításokra. Az explicit személyre szabások olyan személyre szabások, amelyeket kifejezetten azzal a szándékkal hajtunk végre, hogy megváltoztassuk egy elem vagy lap megjelenését vagy működését.
 
 ### <a name="shortcut-menu-options"></a>Gyorsbillentyű menüpontok
+
 Helyi menü segítségével néhány kifejezetten átállítása lap jobb per igényeinek, vagy a vállalat követelményeinek. (Más néven a helyi menü van egy *helyi menü* vagy *helyi menüje*.)
 
 Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők el közvetlenül, a helyi menü Beállítások pontjára. Ha például a 17. platformfrissítéstől kezdődően szeretne felvenni vagy elrejteni oszlopokat egy rácsban, kattintson a jobb gombbal a rács oszlopfejlécére, és adja meg az **Oszlop hozzáadása** vagy **Oszlop elrejtése** lehetőséget.
@@ -81,38 +86,39 @@ A tulajdonságablak segítségével egy elem testreszabása a következőképpen
 A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az elemtől függően. Például egy csempe a tulajdonságablak előfordulhat, hogy lehetővé teszik a támogatják ezt a csempét az irányítópultra, és a tulajdonságablak egy irányítópult előfordulhat, hogy lehetővé teszik, hogy irányítópult az új munkaterület létrehozása.
 
 ### <a name="the-personalization-toolbar"></a>Személyre szabási eszköztár
+
 Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módosításokat szeretne végrehajtani, amelyek nem érhetők el más mechanizmusokon keresztül (például az elemek újrarendezése), használhatja a **Személyre szabás** eszköztárat. Megnyitásához a **Személyre szabása** eszköztárnak válassza **Testreszabása ezen a képernyőn** a tulajdonságablak egy elemet. Is kiválaszthat **testreszabása ezen a képernyőn** a a **személyre szabása** csoportosításhoz a **lehetőségek** minden egyes oldal műveletpanel lapján.
 
 [![Személyre szabási eszköztár](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-#### <a name="navigating-the-page"></a>Navigálás a lapon 
-Az oldalon való navigálás lehetősége a **Személyre szabási eszköztár** megnyitása közben a futó platformtól függ. 
+#### <a name="navigating-the-page"></a>Navigálás a lapon
 
-- A 19. platformfrissítés előtt amikor a **Személyre szabás** eszköztár nyitva van, a lap írásvédett (nem lehet beírni semmit), és nem interaktív (csak a lap látható elemein végezhet módosításokat). Ha egy összecsukott panel vagy egy másik lap elemei között szeretne változtatni, be kell csuknia a **Személyre szabás** eszköztárát, ki kell bontania egy panelt, vagy át kell váltania a kívánt lapra, majd ismét meg kell nyitnia a **Személyre szabás** eszköztárát.  
+Az oldalon való navigálás lehetősége a **Személyre szabási eszköztár** megnyitása közben a futó platformtól függ.
 
-- A 19. platformfrissítést követően ha a **Személyre szabás** eszköztár nyitva van, akkor a lap továbbra is írásvédett, de sokkal interaktívabb. Kibővítheti vagy összecsukhatja az adatterületet, válthat a lapok között, továbbá kibonthatja vagy összecsukhatja a paneleket, miközben a **Személyre szabás** eszköztár nyitva van – mindezt ugyanúgy végezheti, mintha a lapon tenné. Ha személyre szabott módosítást szeretne alkalmazni egy összecsukható panelre vagy lapra (például egy gyorslap elrejtése), akkor megjelenik az összecsukható panel vagy lap mellett a gomb a billentyűzet kiemelésével, illetve amikor fölé húzza az egérmutatót.  
+- A 19. platformfrissítés előtt amikor a **Személyre szabás** eszköztár nyitva van, a lap írásvédett (nem lehet beírni semmit), és nem interaktív (csak a lap látható elemein végezhet módosításokat). Ha egy összecsukott panel vagy egy másik lap elemei között szeretne változtatni, be kell csuknia a **Személyre szabás** eszköztárát, ki kell bontania egy panelt, vagy át kell váltania a kívánt lapra, majd ismét meg kell nyitnia a **Személyre szabás** eszköztárát.
+
+- A 19. platformfrissítést követően ha a **Személyre szabás** eszköztár nyitva van, akkor a lap továbbra is írásvédett, de sokkal interaktívabb. Kibővítheti vagy összecsukhatja az adatterületet, válthat a lapok között, továbbá kibonthatja vagy összecsukhatja a paneleket, miközben a **Személyre szabás** eszköztár nyitva van – mindezt ugyanúgy végezheti, mintha a lapon tenné. Ha személyre szabott módosítást szeretne alkalmazni egy összecsukható panelre vagy lapra (például egy gyorslap elrejtése), akkor megjelenik az összecsukható panel vagy lap mellett a gomb a billentyűzet kiemelésével, illetve amikor fölé húzza az egérmutatót.
 
 #### <a name="personalization-tools"></a>Személyre szabási eszközök
+
 A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 
 - A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és módosíthatja az elem tulajdonságait. A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és azon módosíthatja az elem tulajdonságait, amelyet ki kell jelölni. Amikor kiválaszt egy elemet, az elem tulajdonságok ablaka jelenik meg, és ezen az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a lapon testre szabhatók. Azonban az egyes elemek használata miatt a Finance and Operations nem enged módosítani bizonyos tulajdonságaikat. Ezért amikor kiválaszt egy elemet, jelenhet meg, hogy néhány tulajdonsága nem módosítható. Kötelező mezőt például nem tud elrejteni.
-
 - Használja az **Áthelyezés** eszközt, ha egy elemet ki akar jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. (A szülőcsoporton kívülre nem helyezhető át egy elem). Válassza ki az **Áthelyezése** eszközt, és válassza ki az elem áthelyezése. Amikor kiválaszt egy elemet, a Finance and Operations a lap ellenőrzésével meghatározza, ha az elemet át lehet helyezni. Ezután létrehozza a „lerakási zónákat”. Az aktuális csoportban az elem húzásakor minden „lerakási zónák” mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
-
 - Válassza ki az **Elrejtés** eszközt egy elem és elrejtéséhez a lapon. Válassza ki az **Elrejtés** eszközt, és válassza ki az elrejtendő elemet. Ha bejelöli az **Elrejtése** eszközt, minden éppen rejtett elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután megszüntetheti az elrejtésüket. Válassza ki a **Kijelölés** eszközt, hogy lássa, hogy fog kinézni az oldal a kiválasztott elemek elrejtésével.
-    - A 18. platformfrissítéstől kezdődően elrejtheti a kötelező mezőket és a kötelező mezőket tartalmazó paneleket. Lehetővé teszi, hogy egyszerűsített élményt hozzon létre, ahol az üzleti logika által alapértelmezett kötelező mezők nem jelennek meg. Az elrejtett kötelező mezők ideiglenesen szintén láthatók, amennyiben üresek egy mentés megkísérlése során. 
+
+    - A 18. platformfrissítéstől kezdődően elrejtheti a kötelező mezőket és a kötelező mezőket tartalmazó paneleket. Lehetővé teszi, hogy egyszerűsített élményt hozzon létre, ahol az üzleti logika által alapértelmezett kötelező mezők nem jelennek meg. Az elrejtett kötelező mezők ideiglenesen szintén láthatók, amennyiben üresek egy mentés megkísérlése során.
 
 - Használja az **Összegzés** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján található legyen. Az Összegzés eszköz csak olyan mezőkre érvényes, amelyek a gyorslap szakaszon vannak. Ha bejelöli a **Összegzés** eszközt, összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan mezők felvétele az összesítő gyorslapre, és a mezők eltávolítása a gyorslap összegző mezőinek a kiválasztásával.
-
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** eszközt, minden éppen kihagyott elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezt követően újra a lapsorozat részévé tehetők.
-
 - Válassza ki a **Szerkesztés** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha bejelöli a **Szerkesztés** eszközt, minden éppen nem szerkeszthető elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
-
 - Használja a **Beszúrás** gombot a beszúrható elemek listájának megtekintéséhez egy oldalon.
+
     - Válassza ki a **Mező** eszközt a **Beszúrás** alatt mező felvételéhez a lapra. Használata esetén a **Mező** eszköz, csak azokat a mezőket, amelyek részei a oldaldefiníciót, de jelenleg a lapon nem látható, amelyet hozzáadhat. Új mezők, amelyek nem részei az aktuális oldaldefiníciónak, létrehozásával kapcsolatos további tudnivalókat lásd: [egyéni mezők](user-defined-fields.md). Miután kiválasztotta a **Mező** eszközt, először válasszon adott csoportot vagy terület, ahová mező hozzáadását szeretné. A kijelölt csoporttal vagy területtel kapcsolatos mezők listája egy párbeszédpanelen jelenik meg. A párbeszédpanelen válasszon hozzáadandó mezőket, majd a **Beszúrás** lehetőséget. Korábban hozzáadott mező eltávolításához meg kell ismételni a folyamatot, de a mező a párbeszédpanelen ne legyen kijelölve.
     - Válassza ki a **PowerApp** eszközt a **Beszúrás** alatt a lapba a Microsoft PowerApps használatával létrehozott alkalmazást beágyazni. A PowerApps alkalmazás beágyazásával a lapba kapcsolatos részletes tudnivalókat lásd: [beágyazása PowerApps](embed-power-apps.md).
 
 - Válassza ki a **Kezelés** gombot az aktuális oldal testreszabásához kapcsolódó beállítások listájának megjelenítéséhez.
+
     - Válassza az **Alapértelmezett** gombot az alapértelmezett, telepítési beállítások visszaállításához. Az aktuális oldal testreszabott beállításai törlődnek. Nincs visszavonás művelet. Ezért használja ezt a lehetőséget, ha biztos benne, hogy kívánja az oldal alaphelyzetbe állítását.
     - Válassza az **Importálás** lehetőséget, hogy egy korábban ön vagy más által létrehozott testreszabási fájlból töltsön be testreszabási beállításokat ehhez az oldalhoz. A jelenlegi személyes beállítások helyére kerülnek az oldal személyre szabások a kijelölt fájlból.
     - Válasszon **Exportálás** a személyes lap beállítások mentéséhez egy fájlba. A személyes beállítások megoszthatja más felhasználókkal. Ezeknek a felhasználóknak csak a lap személyes beállításokat tartalmazó fájlt kell importálni.
@@ -122,6 +128,7 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 Ha a **Személyre szabás** eszköztár használt, a mentési műveletek implicitek. A személyes beállítások azonnal érvénybe létnek, és nem kell választani a **Mentés** gombot. Bizonyos esetekben látható egy lakat ikon az elem mellett, amikor kiválaszt egy eszközt. Ez a szimbólum azt jelzi, hogy nem módosíthatók a kijelölt eszközzel kapcsolatos az elem tulajdonságait, mert tulajdonságokhoz módosításai megakadályozza, hogy a lap megfelelően működik-e.
 
 ### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Csempe vagy lista vagy hivatkozás hozzáadása a munkaterülethez
+
 Egyes listákat tartalmazó oldalaknál egy további személyre szabás szolgáltatás érhető el. A **Hozzáadása munkaterülethez** gomb a **Személyre szabás** csoportban a **Beállítások** lapján a műveleti ablaknak lehetővé teszi az aktuális lista adatait egy adott munkaterületen megjelenítését. Szűrten és rendezetten jelenítheti meg az adatokat a munkaterületen, vagy az alapértelmezett nézetet is megjelenítheti. Megadhatja azt is, hogy az információ megjelenjen-e a munkaterületen listaként, összegző csempeként megjelenítve az elemek számát a listában, vagy hivatkozásként.
 
 [![Hozzáadás munkaterületenként](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
@@ -133,9 +140,11 @@ Egyes listákat tartalmazó oldalaknál egy további személyre szabás szolgál
 Miután a lista, a csempe vagy a hivatkozás egy munkaterülethez hozzá lett adva, a munkaterület megnyitása, és az elemeinek átrendezése, ahogyan szeretné.
 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Összegzés hozzáadása a munkaterületről az irányítópultba
+
 Néhány munkaterület tartalmaz számlálási csempét (vagyis számot tartalmazó csempét), és lehetséges, hogy ezeket is meg szeretné jeleníteni az irányítópulton. A munkaterületen kattintson jobb gombbal egy számozott csempére, majd kattintson a **Személyes beállítások** menüpontra. Ezután válassza a csempe tulajdonságai ablakban: **Kitűzés az irányítópultra**. Ha a következő alkalommal megnyitja a kiválasztott irányítópultot (vagy frissíti az oldalt), láthatja a számot a munkaterület navigációs csempéje alatt az irányítópulton. Kiválaszthatja, hogy a számláló közvetlenül az adatokhoz menjen, amelyeket bemutat.
 
 ### <a name="personalizing-your-dashboard"></a>Az irányítópult személyre szabása
+
 Az irányítópult legtöbbször az első oldal, amelyet a Finance and Operations megnyitásakor lát. Testre szabhatja az irányítópultot, hogy csak a megtekinteni kívánt munkaterület lapokat mutassa. A paneleket átrendezheti is, hogy a megadott sorrendben szeretné láthatják őket, a munkaterület navigációs lapok átnevezése és hozzáadása egy teljesen új munkaterület nevet.
 
 Az irányítópult testreszabásához kattintson a jobb gombbal bármelyik csempe, és adja meg **Személyre szabás** elemet a csempe tulajdonság ablak megnyitásához.
@@ -145,6 +154,7 @@ Az irányítópult testreszabásához kattintson a jobb gombbal bármelyik csemp
 - Egy új munkaterület csempe létrehozásához, a Tulajdonságok ablakban, jelölje be a **Hozzáadása a munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. Hozzáadhat listákat, csempéket és hivatkozásokat a munkaterülethez a témakörben itt leírtak szerint: [Listák, csempék és hivatkozások hozzáadása munkaterületekhez](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace).
 
 ## <a name="administration-of-personalization"></a>Személyes beállítások adminisztrálása
+
 Az oldal személyre szabása után más felhasználókkal is megoszthatja a személyes beállításait a személyre szabott oldal exportálásával. Ezután megkérheti a többi felhasználót, hogy nyissák meg a személyre szabott lapot, és importálják az ön által létrehozott személyre szabási fájlt. Másik lehetőségként a személyre szabást adhat a rendszergazdai jogokkal rendelkező felhasználónak. A felhasználó alkalmazhatja a személyre szabási fájlt sok felhasználóra egyszerre.
 
 Rendszergazdai jogokkal rendelkező felhasználók más felhasználók személyes beállításait is kezelhetik a **Személyes beállítások** lapon. Ezen a lapon négy fül van:

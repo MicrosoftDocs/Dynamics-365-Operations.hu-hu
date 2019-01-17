@@ -3,7 +3,7 @@ title: "Pénzügyi dimenziók"
 description: "Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Az új dimenziók alapértelmezett értékeiként használhatja a törzsrekordok
 Ezt a funkciót a dimenzió egyik beállítása szabályozza. A beállítás neve **Értékek másolása ehhez a dimenzióhoz minden egy létrehozott új DimensionName esetén**, ahol **DimensionName** a dimenzió neve. Alapértelmezés szerint a funkció ki van kapcsolva. Azonban bármikor bekapcsolható.
 
 Ha már léteznek rekordok a dimenziónál, a törszrekordok a funkció bekapcsolásakor frissülnek. A meglévő bizonylatok és tranzakciók azonban nem frissülnek.
+
+Ha sablont használ a fő rekord létrehozásához, ellenőrizze, hogy a sablon értéke a fő dimenzióhoz üres legyen. Például ha sablon alapján hoz létre vevőket, győződjön meg arról, hogy a vevő dimenziója a sablonban üres. Az új vevő létrehozásakor a vevői dimenzió értéke alapértelmezetten az új ügyfélszámból jön létre.  
 
 ## <a name="derived-dimensions"></a>Származtatott dimenziók
 

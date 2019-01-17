@@ -3,7 +3,7 @@ title: "Mi az, ami új vagy módosított"
 description: "Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait."
 author: josaw1
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: e82fffa6a67808de66d5f17d2228549c1b09b75d
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7d2a334792655a762c136a367c43ad56393001f5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -42,15 +42,8 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú frissítésekkel kapcsolatban lásd: [A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Kiadás</th>
 <th>Verzió</th>
 <th>Szám felépítése</th>
@@ -59,73 +52,75 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 </tr>
 </thead>
 <tbody>
-<tr class="even">
-</tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8,1,3</td>
-<td>8,1,227  </td>
-<td>december 2018.</td>
-  <td><a href="whats-new-changed-8-1-3.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.3 verziójában (2018. december)</a></td>
-<tr class="even">
+<td>8,1,227</td>
+<td>Január 2019.</td>
+<td><a href="whats-new-changed-8-1-3.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.3 verziójában (2019. január)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8,1,2</td>
-<td>8,1,195  </td>
-<td>2018. november</td>
-  <td><a href="whats-new-changed-8-1-2.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.2 verziójában (2018. november)</a></td>
-<tr class="even">
+<td>8,1,195</td>
+<td>december 2018.</td>
+<td><a href="whats-new-changed-8-1-2.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.2 verziójában (2018. december)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8,1,1</td>
-<td>8,1,170  </td>
+<td>8,1,170</td>
 <td>október 2018.</td>
-  <td><a href="whats-new-changed-8-1-1.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.1 verziójában (2018. október)</a></td>
-<tr class="even">
+<td><a href="whats-new-changed-8-1-1.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1.1 verziójában (2018. október)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8,1</td>
-<td>8,1,136  </td>
+<td>8,1,136</td>
 <td>október 2018.</td>
-  <td><a href="whats-new-changed-8-1-October-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1 verziójában (2018. október)</a></td>
+<td><a href="whats-new-changed-8-1-October-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1 verziójában (2018. október)</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
 <td>8.0.30, 8.0.35</td>
 <td>április 2018.</td>
-  <td><a href="whats-new-changed-8-0-April-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.0 verziójában (2018. április)</a></td>
+<td><a href="whats-new-changed-8-0-April-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.0 verziójában (2018. április)</a></td>
 </tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
 <td>december 2017.</td>
 <td><a href="whats-new-application-7.3-update.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 7.3 rendszerben</a></td>
-</tr></tr>
-<tr class="even">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>július 2017.</td>
 <td>7.2.11792.56024</td>
 <td>június 2017.</td>
 <td><a href="whats-new-application-July-2017-update.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszerben</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics 365 for Operations</td>
 <td>1611</td>
 <td>7.1.1541.3036</td>
 <td>2016. november</td>
 <td><a href="whats-new-dynamics-365-operations-1611.md">Mi új vagy mi változott a Dynamics 365 for Operations 1611. verziójában (2016. november)</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics AX</td>
 <td>7.0.1</td>
 <td>7.0.1265.23014</td>
 <td>május 2016.</td>
-<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Mi az új vagy mi változott a 7.0.1-es verziószámú Dynamics AX alkalmazásban (2016. május)</a></td>
+<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics AX</td>
 <td>7.0</td>
 <td>7.0.1265.3015</td>
 <td>február 2016.</td>
-<td><a href="whats-new-changed-7-0-february-2016.md">Újdonságok és változások a Dynamics AX 7.0 (2016 Február) architektúrájában</a></td>
+<td><a href="whats-new-changed-7-0-february-2016.md">Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában</a></td>
 </tr>
 </tbody>
 </table>
@@ -133,15 +128,8 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 ## <a name="platform-releases"></a>Platformkiadások
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Kiadás</th>
 <th>Verzió</th>
 <th>Szám felépítése</th>
@@ -150,122 +138,131 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 </tr>
 </thead>
 <tbody>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>23-es platformfrissítés</td>
-<td>7,0,5126 </td>
-<td>december 2018.</td>
-<td><a href="whats-new-platform-update-23.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 23. platformfrissítésében (2018. december)</a></td><tbody>
-<tr class="odd">
+<td>7,0,5126</td>
+<td>Január 2019.</td>
+<td><a href="whats-new-platform-update-23.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 23. platformfrissítésében (2019. január)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>22-es platformfrissítés</td>
 <td>7,0,5095</td>
-<td>2018. november</td>
-<td><a href="whats-new-platform-update-22.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 22. platformfrissítésében (2018. november)</a></td><tbody><tr class="odd">
+<td>december 2018.</td>
+<td><a href="whats-new-platform-update-22.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 22. platformfrissítésében (2018. december)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>21-es platformfrissítés</td>
 <td>7,0,5073</td>
 <td>október 2018.</td>
-<td><a href="whats-new-platform-update-21.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 21. platformfrissítésében (2018. október)</a></td><tbody>
-<tr class="odd">
+<td><a href="whats-new-platform-update-21.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 21. platformfrissítésében (2018. október)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>20-es platformfrissítés</td>
 <td>7,0,5030</td>
 <td>Szeptember 2018.</td>
 <td><a href="whats-new-platform-update-20.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 20. platformfrissítésében (2018 szeptembere)</a></td>
-<tbody>
-<tr class="odd">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>15-es platformfrissítés</td>
 <td>7.0.4841</td>
 <td>március 2018.</td>
-<td><a href="whats-new-platform-update-15.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 15. platformfrissítésében (2018 márciusa)</a></td><tbody>
-<tr class="odd">
+<td><a href="whats-new-platform-update-15.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 15. platformfrissítésében (2018 márciusa)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>12-es platformfrissítés</td>
 <td>7.0.4709</td>
 <td>2017. november</td>
 <td><a href="whats-new-platform-update-12.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise Edition 12. platformfrissítésében (2017. november)</a></td>
-<tbody><tr class="odd">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>11-es platformfrissítés</td>
 <td>7.0.4679.35176</td>
 <td>október 2017.</td>
 <td><a href="whats-new-platform-update-11.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 11. platformfrissítésében (2017. október)</a></td>
-<tbody>
-<tr class="odd">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>10-es platformfrissítés</td>
 <td>7.0.4641.16233</td>
 <td>Augusztus 2017.</td>
 <td><a href="whats-new-platform-update-10.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 10. platformfrissítésében (2017. augusztus)</a></td>
-<tr class="odd">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>9-as platformfrissítés</td>
 <td>7.0.4612.35162</td>
 <td>július 2017.</td>
 <td><a href="whats-new-platform-update-9.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 9. platformfrissítésében (2017 júliusa)</a></td>
-</tr><tr class="odd">
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>8-as platformfrissítés</td>
 <td>7.0.4565.16212</td>
 <td>június 2017.</td>
 <td><a href="whats-new-platform-update-8.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 8. platformfrissítésében (2017 júniusa)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Microsoft Dynamics 365 for Operations</td>
 <td>7-as platformfrissítés</td>
 <td>7.0.4542.16189</td>
 <td>május 2017.</td>
 <td><a href="whats-new-platform-update-7.md">Mi új vagy mi változott a Dynamics 365 for Operations 7. platformfrissítésében (2017. május)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Dynamics 365 for Operations</td>
 <td>6-as platformfrissítés</td>
 <td>7.0.4509.16180</td>
 <td>április 2017.</td>
 <td><a href="whats-new-platform-update-6.md">Mi új vagy mi változott a Dynamics 365 for Operations 6. platformfrissítésében (2017. április)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Dynamics 365 for Operations</td>
 <td>5-as platformfrissítés</td>
 <td>7.0.4475.16165</td>
 <td>március 2017.</td>
 <td><a href="whats-new-platform-update-5.md">Mi új vagy mi változott a Dynamics 365 for Operations 5. platformfrissítésében (2017. március)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Dynamics 365 for Operations</td>
 <td>4-as platformfrissítés</td>
 <td>7.0.4425.16161</td>
 <td>február 2017.</td>
 <td><a href="whats-new-platform-update-4.md">Mi új vagy mi változott a Dynamics 365 for Operations 4. platformfrissítésében (2017. február)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Dynamics 365 for Operations</td>
 <td>3-as platformfrissítés</td>
 <td>7.0.4307.16141</td>
 <td>2016. november</td>
 <td><a href="whats-new-platform-update-3.md">Mi új vagy mi változott a Dynamics 365 for Operations 3. platformfrissítésében (2016. november)</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft Dynamics AX</td>
 <td>2-es platformfrissítés</td>
 <td>7.0.4230.16130</td>
 <td>Augusztus 2016.</td>
 <td><a href="whats-new-platform-update-2.md">Mi új vagy mi változott a Dynamics AX 2. platformfrissítésében (2016. augusztus)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Microsoft Dynamics AX</td>
 <td>1-es platformfrissítés</td>
 <td>7.0.4127.16103</td>
 <td>május 2016.</td>
 <td><a href="whats-new-changed-platform-version-7-1-may-2016.md">Mi új vagy mi változott a Dynamics AX 1. platformfrissítésében (2016. május)</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Microsoft Dynamics AX</td>
 <td>7.0</td>
 <td>7.0.4030.16079</td>
 <td>február 2016.</td>
-<td><a href="whats-new-changed-7-0-february-2016.md">Újdonságok és változások a Dynamics AX 7.0 (2016 Február) architektúrájában</a></td>
+<td><a href="whats-new-changed-7-0-february-2016.md">Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában</a></td>
 </tr>
 </tbody>
 </table>

@@ -34,11 +34,13 @@ A figyelmeztetések a Microsoft Dynamics 365 for Finance and Operations kritikus
 A vállalatirányításban (ERP) számos tipikus forgatókönyv létezik, ahol a Finance and Operations riasztási funkciója használható. Íme néhány példa.
 
 ### <a name="scenario-1-create-an-alert-rule-for-new-sales-orders"></a>2.eset: Figyelmezetési szabály létrehozása az új értékesítési rendelésekhez
+
 1. Megjelenik a **Minden értékesítési rendelés** lap.
 2. A műveleti ablakban a **Beállítások** lapon a **Megosztás** csoportban válassza az **Egyéni figyelmeztetés létrehozása** lehetőséget.
 3. A **Figyelmeztetési szabály létrehozása** párbeszédpanelen, a **Figyelmeztetés feltétele** gyorslapon az **Esemény** mezőben válassza **A rekord létrehozva** lehetőséget.
 
 ### <a name="scenario-2-create-an-alert-rule-for-postponement-of-a-delivery-date"></a>2. eset: Figyelmeztetési szabály létrehozása a szállítási dátumok halasztásához
+
 1. Megjelenik a **Minden beszerzési rendelés** lap.
 2. Válassza ki egy beszerzési rendelés azonosítóját a beszerzési rendelés részleteinek eléréséhez.
 3. Bontsa ki a **Beszerzési rendelés fejléce** gyorslapot.
@@ -49,6 +51,7 @@ A vállalatirányításban (ERP) számos tipikus forgatókönyv létezik, ahol a
 A **figyelmeztetési szabály létrehozása** párbeszédpanel bezárását követően a szabály megjelenik a **Figyelmeztetési szabályok kezelése** oldalon. Használja a **Figyelmeztetési szabályok kezelése** lapot a meglévő figyelmeztetési szabályok frissítésére. Például módosíthat eseményindítókat, eseményfrissítési értesítéseket és frissítheti a lejárati dátumokat. A **Figyelmeztetési szabályok kezelése** oldal megnyitásához nyomja meg a **Figyelmeztetést kérek** gombot a műveleti ablak **Beállítások** lapján.
 
 ## <a name="what-occurs-when-an-alert-rule-is-created"></a>Mi történik figyelmeztetési szabály létrehozása esetén?
+
 Figyelmeztetési szabályok létrehozása esetén egy előre megadott esemény társítható egy konkrét mezőhöz. Például a mezőben megadott dátum megérkezik, vagy a mező tartama módosul. Alternatívaként egy eseményt társíthat egy adott oldal feljegyzéseihez. Például új rekord jön létre, vagy egy rekord törlődik.
 
 Amikor a kiválasztott esemény bekövetkezik a mezőnél vagy az oldal egyik rekordjánál, a rendszer figyelmeztetést küld Önnek. Például létrehozhat egy olyan szabályt, amellyel társíthatja egy adott beszerzési rendeléssor **Szállítási dátum** mezőjét **határidő ennyi ideje lejárt** eseménnyel. Öt napos időkeretet állít be. Ebben az esetben a figyelmeztetés elküldésére öt nappal a beszerzési rendelés határideje után kerül sor.
@@ -56,9 +59,11 @@ Amikor a kiválasztott esemény bekövetkezik a mezőnél vagy az oldal egyik re
 Ezenkívül feltételek beállításával finomíthatja a figyelmeztetési szabályokat. Például figyelmeztetést kaphat az adott szállítói számlák számára létrehozott új beszerzési rendelésekről.
 
 ## <a name="preparing-for-an-alert"></a>Előkészületek figyelmeztetésre
+
 Mielőtt figyelmeztetési szabályokat állítana be, döntse el, mikor vagy milyen helyzetben szeretne figyelmeztetést kapni. Ha tudja, mely eseményről szeretne értesítést kapni, keresse meg azt az oldalt a Finance and Operations alkalmazásban, amelyen az eseményt előidéző adat megtalálható. Az esemény lehet egy elérkező dátum vagy egy bizonyos módosítás. Ezért meg kell találni a lapot, ahol a dátum meg van adva, vagy ahol megjelenik a módosuló mező vagy a létrehozott új rekord. Amint birtokában van ennek az adatnak, létrehozhatja az értesítési szabályt.
 
 ## <a name="components-of-an-alert-rule"></a>A figyelmeztetési szabályok összetevői
+
 A figyelmeztetési szabályok öt összetevőből állnak:
 
 - **Esemény** – A figyelmeztetési szabályt kiváltó esemény lehet egy beérkező dátum vagy egy bizonyos módosítás. Események adhat meg a **Figyelmeztető e-mailek küldése a feladatállapot módosulásakor** gyorslapján a **Figyelmeztetési szabály létrehozása** párbeszédpanelnek.
@@ -71,5 +76,6 @@ A figyelmeztetési szabályok öt összetevőből állnak:
     > Ez a beállítás a szervezeti rendszergazdákra korlátozódik.
 
 ## <a name="email-notifications-from-alerts"></a>E-mail értesítések figyelmeztetésekből
+
 Az e-mail értesítések figyelmeztetésekből még nincsenek engedélyezve. Ezt egy jövőbeli frissítésben lesz engedélyezve.
 
