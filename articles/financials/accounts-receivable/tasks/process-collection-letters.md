@@ -26,7 +26,6 @@ ms.lasthandoff: 12/06/2018
 # <a name="process-collection-letters"></a>Fizetési felszólítások feldolgozása
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 Ez az eljárás a fizetési felszólítások létrehozását, nyomtatását és feladását mutatja be. Ez a feladat az USMF bemutatócéget használja.
 
