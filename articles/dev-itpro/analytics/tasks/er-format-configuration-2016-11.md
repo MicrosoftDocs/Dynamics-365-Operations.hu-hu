@@ -35,8 +35,10 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 2. Kattintson a **Jelentéskészítés konfigurációi** lehetőségre.
 3. A fán válassza ki a következőt: **Payments (simplified model)**.
 4. A **Konfiguráció létrehozása** gombra kattintva megnyithatja a legördülő párbeszédablakot.
+
  > [!NOTE]
  > Ha nem látja a **Konfiguráció létrehozása** lehetőséget, a tervező módot engedélyeznie kell a **elektronikus bevallási paraméterek** lapon. 
+ 
 5. Az **Új** mezőbe írja be a **PaymentModel modellen alapuló formátum** kifejezést.
 6. A **Név** mezőbe írja be a **BACS (UK fictitious)** szöveget.
 7. A **Leírás** mezőbe írja be a **BACS vendor payment format (UK fictitious)** szöveget.
@@ -44,6 +46,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
     * Elektronikusdokumentum-formátum definiálható. Ezt a mezőt hagyja üresen, ha azt szeretné, hogy futásidőben választhassa ki a formátumot.  
 8. Az **Adatmodell mezőben** adjon meg vagy válasszon ki egy értéket.
 9. Kattintson a **Konfiguráció létrehozása** lehetőségre. Új konfiguráció létrehozása megtörtént. Egy vázlat verzió használható a tervezési formátum tárolására az elektronikus dokumentumok kezeléséhez.  
+
  > [!NOTE]
  > Ha nem látja a **Konfiguráció létrehozása** lehetőséget, a tervező módot engedélyeznie kell a **elektronikus bevallási paraméterek** lapon.
 
