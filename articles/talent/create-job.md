@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
 
