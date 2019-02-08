@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="df7f3-104">Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.</span><span class="sxs-lookup"><span data-stu-id="df7f3-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="job-titles"></a><span data-ttu-id="df7f3-115">Beosztások</span><span class="sxs-lookup"><span data-stu-id="df7f3-115">Job titles</span></span>
 <span data-ttu-id="df7f3-116">A létrehozni kívánt beosztásokhoz titulusokat is be kell állítania.</span><span class="sxs-lookup"><span data-stu-id="df7f3-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="df7f3-117">A pozíciók azon beosztások titulusait öröklik, amelyekhez hozzárendelték őket.</span><span class="sxs-lookup"><span data-stu-id="df7f3-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="df7f3-118">Beosztások karbantartásához használja a **Beosztások** oldalt, amely a keresés funkció segítségével nyitható meg.</span><span class="sxs-lookup"><span data-stu-id="df7f3-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="df7f3-119">A **Beosztások** oldalon írja be a beosztásokat, amelyeket használni tervez a feladatokhoz.</span><span class="sxs-lookup"><span data-stu-id="df7f3-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="df7f3-118">Beosztások karbantartásához használja a **Beosztások** oldalt, amely a keresés funkció segítségével nyitható meg.</span><span class="sxs-lookup"><span data-stu-id="df7f3-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="df7f3-119">A **Beosztások** oldalon írja be a beosztásokat, amelyeket használni tervez a feladatokhoz.</span><span class="sxs-lookup"><span data-stu-id="df7f3-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="df7f3-120">Beosztástípusok</span><span class="sxs-lookup"><span data-stu-id="df7f3-120">Job types</span></span>
 <span data-ttu-id="df7f3-121">Beosztástípusok segítségével a hasonló feladatok kategóriákba sorolhatók.</span><span class="sxs-lookup"><span data-stu-id="df7f3-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="df7f3-122">A beosztástípusok használata nem kötelező,</span><span class="sxs-lookup"><span data-stu-id="df7f3-122">Job types aren't required.</span></span> <span data-ttu-id="df7f3-123">azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztástípusokat használni, ezeket még a beosztások előtt kell beállítania.</span><span class="sxs-lookup"><span data-stu-id="df7f3-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="df7f3-124">Beosztástípusok például teljes és részmunkaidős, illetve a munkabéres és az órabéres.</span><span class="sxs-lookup"><span data-stu-id="df7f3-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="df7f3-125">A beosztástípusok karbantartásához használja a **Beosztástípusok** oldalt.</span><span class="sxs-lookup"><span data-stu-id="df7f3-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="df7f3-126">A **Beosztástípusok** oldalon adja meg a beosztástípus nevét és rövid leírását.</span><span class="sxs-lookup"><span data-stu-id="df7f3-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="df7f3-127">A **Mentességi állapot** mezőben a következő lehetőségek közül választhat annak jelzésére az ilyen beosztástípusú feladatoknál, hogy az Egyesült Államok munkajogi törvénye (FLSA, Fair Labor Standards Act) ezekre a feladatokra nem vonatkozik:</span><span class="sxs-lookup"><span data-stu-id="df7f3-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
