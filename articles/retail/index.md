@@ -1,39 +1,38 @@
 ---
-title: "Üdvözöljük a Dynamics 365 for Retail rendszerben!"
-description: "A Dynamics 365 for Retail kezdőlapja"
+title: Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
+description: A Dynamics 365 for Retail kezdőoldala
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302383"
 ---
-
-# <a name="welcome-to-dynamics-365-for-retail"></a>Üdvözöljük a Dynamics 365 for Retail rendszerben!
+# <a name="welcome-to-dynamics-365-for-retail"></a>Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán egyesített kereskedelmet biztosít. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és az alkalmazottak jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett magával ragadó ügyfélélményt biztosít minden érintő ponton.
+A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán keresztül egyesített kereskedelem létrehozását teszi lehetővé. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és az alkalmazottak jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett magával ragadó ügyfélélményt biztosít minden érintkezési ponton.
 
 > [!NOTE]
-> A Dynamics 365 for Retail szorosan kapcsolódik a Dynamics 365 for Finance and Operations és a Dynamics 365 for Talent termékekhez. Mindhárom termék azonos funkciókkal bírhat. Ezért azon témákban, amelyek elsősorban a Retail rendszerhez kapcsolódnak, a terméknév Microsoft Dynamics 365 for Retail lesz, azon témák esetén, amelyek elsősorban az alaptermékre (Finance and Operations) kapcsolódnak, a terméknév Microsoft Dynamics 365 for Finance and Operations lesz, az emberi erőforrásokra vonatkozó témakörökben pedig a terméknév Dynamics 365 for Talent lesz.
+> A Dynamics 365 for Retail szolgáltatás szorosan kapcsolódik a Dynamics 365 for Finance and Operations és a Dynamics 365 for Talent szolgáltatásokhoz. Ugyanaz a funkció mindhárom termékben megjelenhet. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Microsoft Dynamics 365 for Retail; az elsődlegesen a központi termékhez (Finance and Operations) kapcsolódó témakörökben a terméknév Microsoft Dynamics 365 for Finance and Operations; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 for Talent lesz.
 
 A bal ablaktáblában válasszon ki egy szolgáltatásterületet, amelyről többet szeretne megtudni.
 
@@ -79,14 +78,14 @@ Több összetevőt kell beállítania az üzlet, az üzleten belüli POS-pénzt�
 
 Ha szükség van a környezet testreszabására vagy a rendszer telepítésére és fenntartására, mindenképpen tekintse meg a Retail rendszer fejlesztői és rendszergazda-specifikus tartalmait, és az általánosabb tartalmakat.
 
-- [Dynamics 365 for Retail – Informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
-- [Dynamics 365 for Finance and Operations fejlesztése és adminisztrációja](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 for Retail informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
+- [Fejlesztés és felügyelet a Dynamics 365 for Finance and Operations szolgáltatás esetén](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
 
@@ -95,4 +94,3 @@ A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsb
 A [Microsoft Dynamics AX termékcsapat blogjában](https://blogs.msdn.microsoft.com/dax/) több bejegyzés is szól a Retail rendszer által nyújtott lehetőségekről. Habár a bejegyezések egy része a Retail rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is. és az eljárások hasonlóak is az aktuális verzióban.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
-

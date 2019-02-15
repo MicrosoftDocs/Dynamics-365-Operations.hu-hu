@@ -1,13 +1,13 @@
 ---
-title: "Készpénz- és bankkezelési kezdőlap"
-description: "A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök."
+title: Készpénz- és bankkezelési kezdőlap
+description: A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 46eeb9cb19eed71256d38db78738c09761060c66
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302397"
 ---
-
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelési kezdőlap
 
 [!include [banner](../includes/banner.md)]
@@ -87,11 +86,11 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
+Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
 #### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogjában] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) véleményeket, híreket és egyéb információkat találhat a Készpénz- és bankkezelés modullal, illetve más megoldásokkal kapcsolatban.
+A [Microsoft Dynamics 365 blogon] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) véleményeket, híreket és egyéb információkat talál a Készpénz- és bankkezeléssel és egyéb megoldásokkal kapcsolatban.
 
 A [Microsoft Dynamics AX termékcsapat blogjában](https://blogs.msdn.microsoft.com/dax/) több bejegyzés is szól a Készpénz- és bankkezelés modul által nyújtott lehetőségekről. A bejegyezések egy része ugyan a Készpénz- és bankkezelés előző verziójához íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
@@ -103,4 +102,3 @@ Feladat-útmutatók formájában további segítség áll rendelkezésre a Finan
 #### <a name="videos"></a>Videók
 
 Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
-

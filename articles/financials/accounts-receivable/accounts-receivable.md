@@ -1,13 +1,13 @@
 ---
-title: "Kinnlevőségek kezdőlap"
-description: "A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál."
+title: Kinnlevőségek kezdőlap
+description: A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302393"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Kinnlevőségek kezdőlap
 
 [!include [banner](../includes/banner.md)]
@@ -97,13 +96,13 @@ Fogadjon különböző módokon vevői kifizetéseket, például váltó, készp
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
+Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
 #### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) véleményeket, híreket és egyéb információkat talál a Kinnlevőségek modullal és egyéb megoldásokkal kapcsolatban.
+A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) véleményeket, híreket és egyéb információkat talál a Kinnlevőségekkel és egyéb megoldásokkal kapcsolatban.
 
-A [Microsoft Dynamics AX termékcsapat blogjában](https://blogs.msdn.microsoft.com/dax/) több bejegyzés is szól a Kinnlevőségek modul által nyújtott lehetőségekről. Habár a bejegyezések egy része a Kinnlevőségek modul előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is. és az eljárások hasonlóak is az aktuális verzióban.
+A [Microsoft Dynamics AX termékcsapat blogjában](https://blogs.msdn.microsoft.com/dax/) több bejegyzés is szól a kinnlevőségekről. Habár a bejegyezések egy része a Kinnlevőségek modul előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is. és az eljárások hasonlóak is az aktuális verzióban.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
 
@@ -112,8 +111,7 @@ Feladat-útmutatók formájában további segítség áll rendelkezésre a Finan
 
 #### <a name="videos"></a>Videók
 
-Tekintse meg az útmutató-videókat, amelyek [a Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
-
+Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
 
 
 

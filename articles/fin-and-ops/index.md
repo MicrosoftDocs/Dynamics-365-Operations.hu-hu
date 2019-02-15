@@ -1,13 +1,13 @@
 ---
-title: "A Microsoft Dynamics 365 for Finance and Operations dokumentációja"
-description: "Dokumentáció a Microsoft Dynamics 365 for Finance and Operations szolgáltatáshoz."
+title: Microsoft Dynamics 365 for Finance and Operations dokumentáció
+description: A Microsoft Dynamics 365 for Finance and Operations szolgáltatásra vonatkozó dokumentáció.
 author: margoc
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302365"
 ---
-
-# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>A Microsoft Dynamics 365 for Finance and Operations dokumentációja
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations dokumentáció
 
 [!include [banner](includes/banner.md)]
 
-Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations szolgáltatást, az alábbi erőforrások nagyszerű tartalmakat kínálnak végfelhasználók, fejlesztők és informatikai szakemberek számára. 
+Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations szolgáltatást, az alábbi erőforrások segítségével végfelhasználók, fejlesztők és informatikai szakemberek is számukra hasznos tartalmakat találhatnak. 
 
-Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft Dynamics 365 for Retail és Microsoft Dynamics 365 for Talent. 
+Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 365 for Retail és Microsoft Dynamics 365 for Talent) is érvényes. 
 
 <table>
 <colgroup>
@@ -43,7 +42,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Vásárlás előtti teendők</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Regisztrálás az előfizetés előnézetére</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Regisztrálás az előzetes verziót tartalmazó előfizetésre</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Telepítési beállítás kiválasztása</a></p>
  <p><a href="get-started/purchase-on-premises.md">A Finance and Operations megvásárlása (helyszíni)</a></p>
 
@@ -67,7 +66,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 
 <h3><a href="hr/hr-landing-page.md">Emberi erőforrások</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Juttatások</a></p>
-<p><a href="../talent/performance-management-overview.md">Alkalmazotti kompetenciák és képzések</a></p>
+<p><a href="../talent/performance-management-overview.md">Alkalmazottak fejlesztése és képzések</a></p>
 <p><a href="../talent/questionnaires.md">Kérdőív</a></p>
 <p><a href="hr/manage-recruiting-process.md">Felvétel</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Egyesült Államok bérlista</a></p>
@@ -123,7 +122,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 
 <h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
 <p><a href="../talent/manage-benefit-program.md">Juttatások</a></p>
-<p><a href="../talent/performance-management-overview.md">Alkalmazotti kompetenciák és képzések</a></p>
+<p><a href="../talent/performance-management-overview.md">Alkalmazottak fejlesztése és képzések</a></p>
 <p><a href="../talent/questionnaires.md">Kérdőív</a></p>
 
 </td>
@@ -131,4 +130,3 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 
 </tbody>
 </table>
-

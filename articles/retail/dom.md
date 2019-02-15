@@ -1,29 +1,29 @@
 ---
-title: "Elosztott rendeléskezelés (DOM)"
-description: "Ez a témakör a Microsoft Dynamics 365 for Retail elosztott rendeléskezelés (DOM) funkcióját részletezi."
+title: Elosztott rendeléskezelés (DOM)
+description: Ez a témakör a Microsoft Dynamics 365 for Retail elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302385"
 ---
 # <a name="distributed-order-management-dom"></a>Elosztott rendeléskezelés (DOM)
 
@@ -61,10 +61,10 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     - **Helyi üzlet régiójának hatósugara** – Adjon meg egy értéket. A mező segítségével megállapíthatja, hogy a helyeket a rendszerek hogyan csoportosítja és értelmezi egyenlőként a távolság tekintetében. Például ha a bevitt érték **100**, akkor a rendszer minden üzletet vagy elosztási központot, amely a teljesítési cím 100 mérföldes körzetében található, egyenlőként fog kezelni a távolság tekintetében.
     - **Feloldás típusa** – Válasszon ki egy értéket. A Retail szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás**. Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
 
-        1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszköz könyvtárat, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
+        1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszközök tárát, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
         2. Indítsa el a Microsoft IIS-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS szolgáltatásgyökér\>\\webes gyökérről** megnyílik egy új Windows Explorer-ablak. Jegyezze fel az \<AOS szolgáltatásgyökér\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
         3. Másolja a konfigurációs fájlt az **\<AOS Services gyökér\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
-        4. Lépjen a Kiskereskedelmi központ kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
+        4. Lépjen a Retail Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
 
         > [!NOTE]
         > Az Egyszerűsített feloldás azért áll rendelkezésre, hogy a kiskereskedőknek lehetőségük legyen a DOM funkció kipróbálására anélkül, hogy a speciális licencet telepíteniük kellene. A szervezeteknek nem javasolt az Egyszerűsített feloldás használata termelési környezetekben.
@@ -229,4 +229,3 @@ Alább olyan dolgokat gyűjtöttünk össze, amelyet érdemes a DOM funkció has
 - Jelenleg a DOM csak olyan rendeléseket tekint át, amelyeket kiskereskedelmi csatornákból hoztak létre. Az értékesítési rendeléseket a rendszer akkor azonosítja kiskereskedelmi értékesítési rendelésként, ha a **Kiskereskedelmi értékesítés** beállítás **Igen** értékre van állítva.
 - A Microsoft még nem tesztelte a DOM-ot speciális raktárkezelési funkciókkal. A vevőknek és partnereknek óvatosnak kell lenniük, amikor annak megállapítására törekszenek, hogy a DOM kompatibilis-e a számukra releváns speciális raktárkezelési lehetőségekkel és folyamatokkal.
 - A DOM csak a Retail felhőalapú verziójában elérhető. A helyszíni telepítésű verziókban nem támogatott.
-

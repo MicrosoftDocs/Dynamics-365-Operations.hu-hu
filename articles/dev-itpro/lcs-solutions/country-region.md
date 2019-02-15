@@ -1,13 +1,13 @@
 ---
-title: "Honosítási és szabályozó funkciók"
-description: "Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról."
+title: Honosítási és szabályozási funkciók
+description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302395"
 ---
-
-# <a name="localization-and-regulatory-features"></a>Honosítási és szabályozó funkciók
+# <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations tartalmaz egyes ország-/ területspecifikus előírásokkal és folyamatokkal kapcsolatos funkciókat, melyek leírása megtalálható a [Termékhonosítási és fordításelérhetőségi útmutatóban](https://aka.ms/ax-availabilityguide). Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
+A Microsoft Dynamics 365 for Finance and Operations a [Termékhonosítási és -fordítási rendelkezésre állási útmutatóban](https://aka.ms/dynamics_365_international_availability_deck) rögzített országokra/régiókra vonatkozóan tartalmaz funkciókat. Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
 
 Ez a témakör olyan erőforrások listáját tartalmazza, amelyek segítségével a következőket teheti: 
 - további információkat szerezhet ország- vagy régióspecifikus megoldások kialakításáról
@@ -45,10 +44,11 @@ A következő erőforrások az ország- és régióspecifikus testreszabásokat 
 -   [Honosítási funkciók osztályozása](classify-localization-features.md)
 -   [Országkódok – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Honosítási frissítések és közlemények
+## <a name="regulatory-updates-and-communication"></a>Jogszabályban előírt frissítések és közlemények
 A következő erőforrások a tervezett és új honosítási funkciókat ismertetik. 
 
-### <a name="localization-updates"></a>Honosítási frissítések
+### <a name="regulatory-updates"></a>Jogszabály-követési frissítések
+-   [Jogszabály-követési frissítések](../../financials/localizations/regulatory-updates.md)
 -   [Honosítási portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (hetente frissítve)
 -   [LCS megoldáskereső](../lifecycle-services/issue-search-lcs.md) (naponta frissítve)
 
@@ -68,7 +68,7 @@ Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi 
 -   [Elektronikus jelentéskészítés céljai](../analytics/electronic-reporting-destinations.md)
 -   [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Elektronikus jelentéskészítési konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Elektronikus jelentéskészítés konfigurálása adatok Power BI-be történő lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Feladat-útmutatók
@@ -118,7 +118,6 @@ További információ: [Feladat-útmutatók](../../fin-and-ops/get-started/help-
         - [Amerikai Egyesült Államok](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

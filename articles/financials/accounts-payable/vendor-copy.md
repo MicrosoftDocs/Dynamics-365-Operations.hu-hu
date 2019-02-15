@@ -1,13 +1,13 @@
 ---
-title: "Szállítók másolása megosztott számsorozatok használatával"
-description: "Ez a témakör ismerteti, hogyan használhatók a megosztott számsorozatok a szállítók másik jogi személyhez való átmásolásához úgy, hogy a szállítók megőrzik ugyanazt a szállítóazonosítót."
+title: Szállítók másolása megosztott számsorozatok használatával
+description: Ez a témakör ismerteti, hogyan használhatók a megosztott számsorozatok a szállítók másik jogi személyhez való átmásolásához úgy, hogy a szállítók megőrzik ugyanazt a szállítóazonosítót.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302399"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Szállítók másolása megosztott számsorozatok használatával
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ A manuális szállítóazonosító használatakor átmásolhatja továbbá a sz�
 
 ## <a name="copy-a-vendor"></a>Szállító másolása
 
-Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Figyelje meg, hogy az új szállítóazonosító nincs azonnal hozzárendelve. Ez a viselkedés eltér a Microsoft Dynamics 365 for Finance and Operations korábbi verzióiban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a felhasználni kívánt megfelelő számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
+Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Figyelje meg, hogy az új szállítóazonosító nincs azonnal hozzárendelve. Ez a viselkedés eltér a Microsoft Dynamics 365 for Finance and Operations korábbi verzióiban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a megfelelő, felhasználni kívánt számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
 
 Ha új szállítót hoz létre, folytathatja a szokásos módon a mezők értékeinek megadásával. Amikor végzett, és kiválasztja a **Mentés** lehetőséget, láthatja, hogy a rendszer automatikusan hozzárendelte a szállítóazonosítót. A másik esetben, a manuális számsorozatok esetén láthatja, hogy a manuális szállítóazonosítót használja a rendszer.
 
@@ -66,4 +65,3 @@ Szállítókat is másolhat az Adómentességi szám keresés funkció használa
 
 1. Megjelenik a **Szállító másolása** lehetőség. Alapértelmezés szerint ez a beállítás **Nem** értékre van beállítva. A szállító másolásához az aktuális jogi személybe, adja meg a beállítás esetében az **Igen** értéket.
 2. Válassza ki a **Kiválasztás** lehetőséget. Létrejön az új szállító.
-

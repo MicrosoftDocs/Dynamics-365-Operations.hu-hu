@@ -1,13 +1,13 @@
 ---
-title: "Üdvözöljük a Dynamics 365 for Talent rendszerben!"
-description: "A Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezen folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
+title: Üdvözöljük a Dynamics 365 for Talent szolgáltatásban!
+description: A Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302361"
 ---
-
-# <a name="welcome-to-dynamics-365-for-talent"></a>Üdvözöljük a Dynamics 365 for Talent rendszerben!
+# <a name="welcome-to-dynamics-365-for-talent"></a>Üdvözöljük a Dynamics 365 for Talent szolgáltatásban!
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezen folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
+A Microsoft Dynamics 365 for Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
 
 A Talent rendszerrel a következő feladatok végezhetők el:
 
@@ -42,26 +41,26 @@ A Talent rendszerrel a következő feladatok végezhetők el:
 + Teljesítmények értékelése és a dolgozói célok megvalósítása.
 + Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
 
-A Dynamics 365 for Talent felfedezése a [Kezdeti lépések a Dynamics 365 for Talent rendszerben](https://www.youtube.com/watch?v=6rg2ByadbN0) című videó megtekintésével.
+Fedezze fel a Dynamics 365 for Talent szolgáltatás lehetőségeit a [Kezdeti lépések a Dynamics 365 for Talent rendszerben](https://www.youtube.com/watch?v=6rg2ByadbN0) című videó megtekintésével.
 
 
 > [!NOTE] 
-> A Dynamics 365 for Talent szorosan kapcsolódik a Dynamics 365 for Finance and Operations rendszer Emberi erőforrások menüjéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> Dynamics 365 for Talent alkalmazás szorosan kapcsolódik a Dynamics 365 for Finance and Operations szolgáltatás Emberi erőforrással kapcsolatos területeihez. Ugyanaz a funkció mindkét termékben előfordulhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrások kezelési stratégiájának kialakítása
 ---------------------------------------------------------
 
 A Talent rendszerben dolgozva különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek azon alapvető elemek közé tartoznak, amelyeket konfigurálni szükséges. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek feladatokhoz vannak társítva.
 
--   [Munkaerő szervezése részlegek, munkák és beosztások szerint](departments-jobs-positions.md)
+-   [Munkaerő szervezése részlegek, feladatok és beosztások szerint](departments-jobs-positions.md)
 -   [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
 -   [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
--   [Személyzeti műveletek GYIK](personnel-actions-faq.md)
+-   [Személyzeti műveletekkel kapcsolatos GYIK](personnel-actions-faq.md)
 -   [Szabadság és távollét áttekintése](leave-absence-overview.md)
--   [A Dynamics 365 for Talent használata: szabadság és távollét (videó)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [A Dynamics 365 for Talent használata: Szabadság és távollét (videó)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [A személyzet kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
-## <a name="staffing-your-organization"></a>A szervezeti személyzet kiépítése
+## <a name="staffing-your-organization"></a>A szervezet személyzetének biztosítása
 
 A Dynamics 365 for Talent tartalmazza az Attract alkalmazást, amely segítségével azonosíthatja a szervezet számára szükséges készségekkel rendelkező jelölteket, interjút készíthet velük, és felveheti őket. Amikor áttér a toborzásról a felvételre az Onboard alkalmazás segíti az új alkalmazottat, hogy gyorsan beilleszkedhessen a szervezetbe; pontos elvárásokat tűz ki, biztosítja a kezdéshez szükséges információkat, kapcsolatot biztosít a munkatársakhoz, és ellátja az új alkalmazottat mindennel, amire szüksége lehet a szerepkör sikeres betöltéséhez.  
 
@@ -80,11 +79,11 @@ Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, i
 
 ## <a name="develop-and-train-employees"></a>Alkalmazottak fejlesztése és képzése
 
-Támogassa alkalmazottait célkitűzéseik elérésében, miközben kiemelkedő üzleti igényeket elégít ki: állítson be célokat, hozzon létre teljesítmény-ellenőrzéseket, és kövesse nyomon a visszajelzéseket. Az alkalmazottak munkavégzéshez szükséges szakértelme fejlesztése érdekében állítson be oktatókat, tanfolyamtípusokat, tanfolyamokat, tanfolyamleírásokat, napirendeket, szekciókat és munkameneteket egy oktató tanfolyamhoz történő hozzárendelése vagy egy alkalmazott tanfolyamra történő regisztrálása előtt. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
+Támogassa alkalmazottait célkitűzéseik elérésében, miközben kiemelkedő üzleti igényeket elégít ki: állítson be célokat, hozzon létre teljesítmény-ellenőrzéseket, és kövesse nyomon a visszajelzéseket. Az alkalmazottak munkavégzéshez szükséges szakértelem fejlesztése érdekében állítson be oktatókat, tanfolyamtípusokat, tanfolyamokat, tanfolyamleírásokat, napirendeket, szekciókat és munkameneteket egy oktató tanfolyamhoz történő hozzárendelése vagy egy alkalmazott tanfolyamra történő regisztrálása előtt. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
 
 -   [Teljesítménykezelés](performance-management-overview.md)
 -   [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](skills.md)
--   [Képzés tanfolyamok révén](courses.md)
+-   [Képzés tanfolyamok segítségével](courses.md)
 -   [Az alkalmazottak fejlesztésének kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Juttatások létrehozása és karbantartása
@@ -111,4 +110,3 @@ Lehetősége van kérdőívek tervezésére és kezelésére a különböző cé
 -   [Kérdőív tervezése](design-questionnaires.md)
 -   [Kérdőív terjesztése és kitöltése](distribute-questionnaires.md)
 -   [A kérdőív megtekintése és az eredmények kiértékelése](evaluate-questionnaire-results.md)
-
