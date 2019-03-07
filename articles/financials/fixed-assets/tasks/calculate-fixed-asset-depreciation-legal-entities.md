@@ -1,13 +1,13 @@
---- 
-title: "Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között"
-description: "Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személyek között."
+---
+title: Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között
+description: Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személyek között.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,39 +16,38 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b2575354af322827972ffa650e9c732170c5a6eb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316993"
 ---
-# <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="765a3-103">Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között</span><span class="sxs-lookup"><span data-stu-id="765a3-103">Calculate fixed asset depreciation across legal entities</span></span>
+# <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="981e0-103">Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között</span><span class="sxs-lookup"><span data-stu-id="981e0-103">Calculate fixed asset depreciation across legal entities</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="765a3-104">Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személyek között.</span><span class="sxs-lookup"><span data-stu-id="765a3-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="765a3-105">Ez a témakör bemutatja, hogy hogyan állíthatja be és futtathatja több jogi személynél a folyamatot.</span><span class="sxs-lookup"><span data-stu-id="765a3-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="765a3-106">Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="765a3-106">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="981e0-104">Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személyek között.</span><span class="sxs-lookup"><span data-stu-id="981e0-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="981e0-105">Ez a témakör bemutatja, hogy hogyan állíthatja be és futtathatja több jogi személynél a folyamatot.</span><span class="sxs-lookup"><span data-stu-id="981e0-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="981e0-106">Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="981e0-106">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="set-up-cross-company-depreciation-run-journals"></a><span data-ttu-id="765a3-107">Vállalatközi vállalati értékcsökkenés-futtatási naplók beállítása</span><span class="sxs-lookup"><span data-stu-id="765a3-107">Set up cross company depreciation run journals</span></span>
-1. <span data-ttu-id="765a3-108">Ugorjon a Tárgyi eszközök > Beállítás > Tárgyi eszköz paraméterek pontra.</span><span class="sxs-lookup"><span data-stu-id="765a3-108">Go to Fixed assets > Setup > Fixed assets parameters.</span></span>
-2. <span data-ttu-id="765a3-109">Bontsa ki a tárgyieszköz-javaslatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="765a3-109">Expand the Fixed asset proposals section.</span></span>
-3. <span data-ttu-id="765a3-110">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="765a3-110">Click Add.</span></span>
-4. <span data-ttu-id="765a3-111">A Feladási réget mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="765a3-111">In the Posting layer field, enter or select a value.</span></span>
-5. <span data-ttu-id="765a3-112">A Napló neve mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="765a3-112">In the Journal name field, enter or select a value.</span></span>
-    * <span data-ttu-id="765a3-113">Ismételje meg a napló beállítását a tárgyi eszköz paraméterei lapon az egyes jogi személyekhez.</span><span class="sxs-lookup"><span data-stu-id="765a3-113">Repeat the journal setup on the Fixed asset parameters page in each legal entity.</span></span>  
+## <a name="set-up-cross-company-depreciation-run-journals"></a><span data-ttu-id="981e0-107">Vállalatközi vállalati értékcsökkenés-futtatási naplók beállítása</span><span class="sxs-lookup"><span data-stu-id="981e0-107">Set up cross company depreciation run journals</span></span>
+1. <span data-ttu-id="981e0-108">Ugorjon a Tárgyi eszközök > Beállítás > Tárgyi eszköz paraméterek pontra.</span><span class="sxs-lookup"><span data-stu-id="981e0-108">Go to Fixed assets > Setup > Fixed assets parameters.</span></span>
+2. <span data-ttu-id="981e0-109">Bontsa ki a tárgyieszköz-javaslatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="981e0-109">Expand the Fixed asset proposals section.</span></span>
+3. <span data-ttu-id="981e0-110">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="981e0-110">Click Add.</span></span>
+4. <span data-ttu-id="981e0-111">A Feladási réget mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e0-111">In the Posting layer field, enter or select a value.</span></span>
+5. <span data-ttu-id="981e0-112">A Napló neve mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e0-112">In the Journal name field, enter or select a value.</span></span>
+    * <span data-ttu-id="981e0-113">Ismételje meg a napló beállítását a tárgyi eszköz paraméterei lapon az egyes jogi személyekhez.</span><span class="sxs-lookup"><span data-stu-id="981e0-113">Repeat the journal setup on the Fixed asset parameters page in each legal entity.</span></span>  
 
-## <a name="depreciation-run"></a><span data-ttu-id="765a3-114">Értékcsökkenés futtatása</span><span class="sxs-lookup"><span data-stu-id="765a3-114">Depreciation run</span></span>
-1. <span data-ttu-id="765a3-115">Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Értékcsökkenési javaslat létrehozása pontra.</span><span class="sxs-lookup"><span data-stu-id="765a3-115">Go to Fixed assets > Journal entries > Create depreciation proposal.</span></span>
-2. <span data-ttu-id="765a3-116">A Feladási réget mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="765a3-116">In the Posting layer field, enter or select a value.</span></span>
-    * <span data-ttu-id="765a3-117">A napló neve alapértelmezésben a tárgyi eszköz paramétereiből jön.</span><span class="sxs-lookup"><span data-stu-id="765a3-117">The journal name will default from the Fixed asset parameters.</span></span> <span data-ttu-id="765a3-118">Itt módosítható az aktuális jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="765a3-118">It can be changed here for the current legal entity.</span></span>  
-3. <span data-ttu-id="765a3-119">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="765a3-119">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="765a3-120">Válassza ki az értékcsökkenés futtatásába felvenni kívánt jogi személyeket.</span><span class="sxs-lookup"><span data-stu-id="765a3-120">Select the legal entities to be included in the depreciation run.</span></span>  
-    * <span data-ttu-id="765a3-121">A listában csak a tárgyieszköz-javaslatokhoz a tárgyi eszköz paraméterei lapon beállított naplókkal rendelkező jogi személyek fognak megjelenni.</span><span class="sxs-lookup"><span data-stu-id="765a3-121">Only legal entities with journals set up for Fixed asset proposals on the Fixed asset parameters page will be shown in the list.</span></span>  
-4. <span data-ttu-id="765a3-122">Válassza ki az Igen lehetőséget a Naplók feladása mezőben.</span><span class="sxs-lookup"><span data-stu-id="765a3-122">Select Yes in the Post journals field.</span></span>
-    * <span data-ttu-id="765a3-123">A szűrőmezőkbe beletartozik az összes tárgyi eszköz, a csoportok és a könyvek az értékcsökkenési futtatáshoz kiválasztott a jogi személyekhez.</span><span class="sxs-lookup"><span data-stu-id="765a3-123">Filtering fields include all fixed assets, groups, and books for the legal entities selected for this depreciation run.</span></span>  
-    * <span data-ttu-id="765a3-124">A kötegelt feldolgozási beállítás alapértelmezés szerint engedélyezve van.</span><span class="sxs-lookup"><span data-stu-id="765a3-124">The Batch processing option is enabled by default.</span></span> <span data-ttu-id="765a3-125">Ha ez a beállítás engedélyezve van, az értékcsökkenési napló létrehozása és feladása a háttérben fog futni.</span><span class="sxs-lookup"><span data-stu-id="765a3-125">When this option is enabled, the depreciation journal creation and posting will run in the background.</span></span>  
-5. <span data-ttu-id="765a3-126">Kattintson a Napló létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="765a3-126">Click Create journal.</span></span>
-6. <span data-ttu-id="765a3-127">Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.</span><span class="sxs-lookup"><span data-stu-id="765a3-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-
+## <a name="depreciation-run"></a><span data-ttu-id="981e0-114">Értékcsökkenés futtatása</span><span class="sxs-lookup"><span data-stu-id="981e0-114">Depreciation run</span></span>
+1. <span data-ttu-id="981e0-115">Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Értékcsökkenési javaslat létrehozása pontra.</span><span class="sxs-lookup"><span data-stu-id="981e0-115">Go to Fixed assets > Journal entries > Create depreciation proposal.</span></span>
+2. <span data-ttu-id="981e0-116">A Feladási réget mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e0-116">In the Posting layer field, enter or select a value.</span></span>
+    * <span data-ttu-id="981e0-117">A napló neve alapértelmezésben a tárgyi eszköz paramétereiből jön.</span><span class="sxs-lookup"><span data-stu-id="981e0-117">The journal name will default from the Fixed asset parameters.</span></span> <span data-ttu-id="981e0-118">Itt módosítható az aktuális jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="981e0-118">It can be changed here for the current legal entity.</span></span>  
+3. <span data-ttu-id="981e0-119">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e0-119">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="981e0-120">Válassza ki az értékcsökkenés futtatásába felvenni kívánt jogi személyeket.</span><span class="sxs-lookup"><span data-stu-id="981e0-120">Select the legal entities to be included in the depreciation run.</span></span>  
+    * <span data-ttu-id="981e0-121">A listában csak a tárgyieszköz-javaslatokhoz a tárgyi eszköz paraméterei lapon beállított naplókkal rendelkező jogi személyek fognak megjelenni.</span><span class="sxs-lookup"><span data-stu-id="981e0-121">Only legal entities with journals set up for Fixed asset proposals on the Fixed asset parameters page will be shown in the list.</span></span>  
+4. <span data-ttu-id="981e0-122">Válassza ki az Igen lehetőséget a Naplók feladása mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e0-122">Select Yes in the Post journals field.</span></span>
+    * <span data-ttu-id="981e0-123">A szűrőmezőkbe beletartozik az összes tárgyi eszköz, a csoportok és a könyvek az értékcsökkenési futtatáshoz kiválasztott a jogi személyekhez.</span><span class="sxs-lookup"><span data-stu-id="981e0-123">Filtering fields include all fixed assets, groups, and books for the legal entities selected for this depreciation run.</span></span>  
+    * <span data-ttu-id="981e0-124">A kötegelt feldolgozási beállítás alapértelmezés szerint engedélyezve van.</span><span class="sxs-lookup"><span data-stu-id="981e0-124">The Batch processing option is enabled by default.</span></span> <span data-ttu-id="981e0-125">Ha ez a beállítás engedélyezve van, az értékcsökkenési napló létrehozása és feladása a háttérben fog futni.</span><span class="sxs-lookup"><span data-stu-id="981e0-125">When this option is enabled, the depreciation journal creation and posting will run in the background.</span></span>  
+5. <span data-ttu-id="981e0-126">Kattintson a Napló létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="981e0-126">Click Create journal.</span></span>
+6. <span data-ttu-id="981e0-127">Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.</span><span class="sxs-lookup"><span data-stu-id="981e0-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
 

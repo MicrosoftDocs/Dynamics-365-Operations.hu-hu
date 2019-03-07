@@ -1,13 +1,13 @@
---- 
-title: "Kiegyenlítési tranzakciók a főkönyvi számlák között"
-description: "Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlák között, illetve a főkönyvi kiegyenlítés érvénytelenítését."
+---
+title: Kiegyenlítési tranzakciók a főkönyvi számlák között
+description: Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlák között, illetve a főkönyvi kiegyenlítés érvénytelenítését.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,37 +16,36 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: 4aff64fa1c017f295752e913de7fb320f0662ef8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325825"
 ---
-# <a name="settle-transactions-between-ledger-accounts"></a><span data-ttu-id="a9b87-103">Kiegyenlítési tranzakciók a főkönyvi számlák között</span><span class="sxs-lookup"><span data-stu-id="a9b87-103">Settle transactions between ledger accounts</span></span>
+# <a name="settle-transactions-between-ledger-accounts"></a><span data-ttu-id="48c1a-103">Kiegyenlítési tranzakciók a főkönyvi számlák között</span><span class="sxs-lookup"><span data-stu-id="48c1a-103">Settle transactions between ledger accounts</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a9b87-104">Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlák között, illetve a főkönyvi kiegyenlítés érvénytelenítését.</span><span class="sxs-lookup"><span data-stu-id="a9b87-104">This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement.</span></span> <span data-ttu-id="a9b87-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="a9b87-105">This procedure uses the USMF demo data company.</span></span>
+<span data-ttu-id="48c1a-104">Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlák között, illetve a főkönyvi kiegyenlítés érvénytelenítését.</span><span class="sxs-lookup"><span data-stu-id="48c1a-104">This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement.</span></span> <span data-ttu-id="48c1a-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="48c1a-105">This procedure uses the USMF demo data company.</span></span>
 
 
-## <a name="settle-transaction-between-ledger-accounts"></a><span data-ttu-id="a9b87-106">Kiegyenlítési tranzakció a főkönyvi számlák között</span><span class="sxs-lookup"><span data-stu-id="a9b87-106">Settle transaction between ledger accounts</span></span>
-1. <span data-ttu-id="a9b87-107">Ugorjon a Főkönyv > Időszaki feladatok > Főkönyvi kiegyenlítések pontra.</span><span class="sxs-lookup"><span data-stu-id="a9b87-107">Go to General ledger > Periodic tasks > Ledger settlements.</span></span>
-2. <span data-ttu-id="a9b87-108">A listán keresse meg a kiegyenlítendő tranzakciót.</span><span class="sxs-lookup"><span data-stu-id="a9b87-108">In the list, find the transaction that you want to settle.</span></span>
+## <a name="settle-transaction-between-ledger-accounts"></a><span data-ttu-id="48c1a-106">Kiegyenlítési tranzakció a főkönyvi számlák között</span><span class="sxs-lookup"><span data-stu-id="48c1a-106">Settle transaction between ledger accounts</span></span>
+1. <span data-ttu-id="48c1a-107">Ugorjon a Főkönyv > Időszaki feladatok > Főkönyvi kiegyenlítések pontra.</span><span class="sxs-lookup"><span data-stu-id="48c1a-107">Go to General ledger > Periodic tasks > Ledger settlements.</span></span>
+2. <span data-ttu-id="48c1a-108">A listán keresse meg a kiegyenlítendő tranzakciót.</span><span class="sxs-lookup"><span data-stu-id="48c1a-108">In the list, find the transaction that you want to settle.</span></span>
    > [!NOTE]
-   > <span data-ttu-id="a9b87-109">Az összeg egyenlegnek nullának kell lennie.</span><span class="sxs-lookup"><span data-stu-id="a9b87-109">The amount balance must be zero.</span></span>  
-3. <span data-ttu-id="a9b87-110">Kattintson a Befoglalás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a9b87-110">Click Include.</span></span>
-4. <span data-ttu-id="a9b87-111">Kattintson az Elfogadás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a9b87-111">Click Accept.</span></span>
+   > <span data-ttu-id="48c1a-109">Az összeg egyenlegnek nullának kell lennie.</span><span class="sxs-lookup"><span data-stu-id="48c1a-109">The amount balance must be zero.</span></span>  
+3. <span data-ttu-id="48c1a-110">Kattintson a Befoglalás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48c1a-110">Click Include.</span></span>
+4. <span data-ttu-id="48c1a-111">Kattintson az Elfogadás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48c1a-111">Click Accept.</span></span>
 
-## <a name="cancel-a-ledger-settlement"></a><span data-ttu-id="a9b87-112">Főkönyvi kiegyenlítés érvénytelenítése</span><span class="sxs-lookup"><span data-stu-id="a9b87-112">Cancel a ledger settlement</span></span>
+## <a name="cancel-a-ledger-settlement"></a><span data-ttu-id="48c1a-112">Főkönyvi kiegyenlítés érvénytelenítése</span><span class="sxs-lookup"><span data-stu-id="48c1a-112">Cancel a ledger settlement</span></span>
 
-1. <span data-ttu-id="a9b87-113">Ugorjon a Főkönyv > Lekérdezések és jelentések y Főkönyvi kivonat pontra.</span><span class="sxs-lookup"><span data-stu-id="a9b87-113">Go to General ledger > Inquiries and reports > Trial balance.</span></span>
-2. <span data-ttu-id="a9b87-114">A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="a9b87-114">Click Parameters to open the drop dialog.</span></span>
-3. <span data-ttu-id="a9b87-115">Kattintson a Módosítás gombra.</span><span class="sxs-lookup"><span data-stu-id="a9b87-115">Click Update.</span></span>
-4. <span data-ttu-id="a9b87-116">A listán keresse meg a számlát, amelyen kiegyenlített tranzakció szerepel.</span><span class="sxs-lookup"><span data-stu-id="a9b87-116">In the list, find the account that has the settled transaction.</span></span>
-5. <span data-ttu-id="a9b87-117">Kattintson az Összes tranzakció lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a9b87-117">Click All transactions.</span></span>
-6. <span data-ttu-id="a9b87-118">Használjon szűrőt a tranzakció könnyebb megtalálása érdekében.</span><span class="sxs-lookup"><span data-stu-id="a9b87-118">Use a filter to easily find the transaction in the list.</span></span>
-7. <span data-ttu-id="a9b87-119">Kattintson a Főkönyvi kiegyenlítések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a9b87-119">Click Ledger settlements.</span></span>
-8. <span data-ttu-id="a9b87-120">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="a9b87-120">In the list, mark the selected row.</span></span>
-
+1. <span data-ttu-id="48c1a-113">Ugorjon a Főkönyv > Lekérdezések és jelentések y Főkönyvi kivonat pontra.</span><span class="sxs-lookup"><span data-stu-id="48c1a-113">Go to General ledger > Inquiries and reports > Trial balance.</span></span>
+2. <span data-ttu-id="48c1a-114">A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="48c1a-114">Click Parameters to open the drop dialog.</span></span>
+3. <span data-ttu-id="48c1a-115">Kattintson a Módosítás gombra.</span><span class="sxs-lookup"><span data-stu-id="48c1a-115">Click Update.</span></span>
+4. <span data-ttu-id="48c1a-116">A listán keresse meg a számlát, amelyen kiegyenlített tranzakció szerepel.</span><span class="sxs-lookup"><span data-stu-id="48c1a-116">In the list, find the account that has the settled transaction.</span></span>
+5. <span data-ttu-id="48c1a-117">Kattintson az Összes tranzakció lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48c1a-117">Click All transactions.</span></span>
+6. <span data-ttu-id="48c1a-118">Használjon szűrőt a tranzakció könnyebb megtalálása érdekében.</span><span class="sxs-lookup"><span data-stu-id="48c1a-118">Use a filter to easily find the transaction in the list.</span></span>
+7. <span data-ttu-id="48c1a-119">Kattintson a Főkönyvi kiegyenlítések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48c1a-119">Click Ledger settlements.</span></span>
+8. <span data-ttu-id="48c1a-120">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="48c1a-120">In the list, mark the selected row.</span></span>
 

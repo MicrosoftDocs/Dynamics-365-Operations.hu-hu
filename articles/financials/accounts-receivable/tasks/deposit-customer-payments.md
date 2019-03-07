@@ -1,13 +1,13 @@
---- 
-title: "Vevői kifizetések letétbe helyezése"
-description: "Vevői kifizetések letétele."
+---
+title: Vevői kifizetések letétbe helyezése
+description: Vevői kifizetések letétele.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,43 +16,42 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f58cebce20e8516dc918e0bad1e020ffd7f791ee
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313382"
 ---
-# <a name="deposit-customer-payments"></a><span data-ttu-id="f93b4-103">Vevői kifizetések letétbe helyezése</span><span class="sxs-lookup"><span data-stu-id="f93b4-103">Deposit customer payments</span></span>
+# <a name="deposit-customer-payments"></a><span data-ttu-id="f0b1f-103">Vevői kifizetések letétbe helyezése</span><span class="sxs-lookup"><span data-stu-id="f0b1f-103">Deposit customer payments</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f93b4-104">Vevői kifizetések letétele.</span><span class="sxs-lookup"><span data-stu-id="f93b4-104">Deposit customer payments.</span></span> <span data-ttu-id="f93b4-105">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="f93b4-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="f0b1f-104">Vevői kifizetések letétele.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-104">Deposit customer payments.</span></span> <span data-ttu-id="f0b1f-105">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-105">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="f93b4-106">Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.</span><span class="sxs-lookup"><span data-stu-id="f93b4-106">Go to Accounts receivable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="f93b4-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-107">Click New.</span></span>
-3. <span data-ttu-id="f93b4-108">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="f93b4-108">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="f93b4-109">A fizetési napló kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="f93b4-109">Select the payment journal.</span></span> 
-5. <span data-ttu-id="f93b4-110">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="f93b4-110">Click Lines.</span></span>
-6. <span data-ttu-id="f93b4-111">A Számla mezőben válassza ki azt a vevőt, akihez rögzíti a fizetést.</span><span class="sxs-lookup"><span data-stu-id="f93b4-111">In the Account field, select the Customer for whom you are recording the payment.</span></span>
-7. <span data-ttu-id="f93b4-112">A Követel mezőbe írja be a fizetés összegét.</span><span class="sxs-lookup"><span data-stu-id="f93b4-112">In the Credit field, enter the amount of the payment.</span></span>
-    * <span data-ttu-id="f93b4-113">Az összeget üresen is hagyhatja, ilyenkor a rendszer kiszámítja, ha kiválasztja a kifizetett számlákat.</span><span class="sxs-lookup"><span data-stu-id="f93b4-113">You can choose to leave the amount blank, and have the system calculate it by selecting the invoices which were paid.</span></span>  
-8. <span data-ttu-id="f93b4-114">Írjon be egy értéket a Fizetési hivatkozás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f93b4-114">In the Payment reference field, type a value.</span></span>
-    * <span data-ttu-id="f93b4-115">A kifizetési hivatkozás lehet a bevitt kifizetés csekkszáma.</span><span class="sxs-lookup"><span data-stu-id="f93b4-115">The payment reference could be the check number for the payment you are entering.</span></span> <span data-ttu-id="f93b4-116">A kifizetési hivatkozás azért szükséges, hogy a kifizetés letéti jegyen is szerepeljen.</span><span class="sxs-lookup"><span data-stu-id="f93b4-116">The payment reference is required in order to include the payment on a deposit slip.</span></span>  
-9. <span data-ttu-id="f93b4-117">Jelölje be a négyzetet a letéti jegy használatához.</span><span class="sxs-lookup"><span data-stu-id="f93b4-117">Mark the box Use a deposit slip.</span></span>
-    * <span data-ttu-id="f93b4-118">Ha a kifizetésnek szerepelnie kell a letéten, ezt a beállítást állítsa az Igen lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-118">If the payment should be included in the deposit, change this setting to Yes.</span></span>  
-10. <span data-ttu-id="f93b4-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-119">Click New.</span></span>
-11. <span data-ttu-id="f93b4-120">A Számla mezőben válassza ki a vevőt a következő fizetéshez.</span><span class="sxs-lookup"><span data-stu-id="f93b4-120">In the Account field, select the Customer for the next payment.</span></span>
-12. <span data-ttu-id="f93b4-121">Adja meg a fizetés összegét a Követel mezőben.</span><span class="sxs-lookup"><span data-stu-id="f93b4-121">In the Credit field, enter the payment amount.</span></span>
-13. <span data-ttu-id="f93b4-122">Írjon be egy értéket a Fizetési hivatkozás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f93b4-122">In the Payment reference field, type a value.</span></span>
-14. <span data-ttu-id="f93b4-123">Jelölje be a négyzetet a letéti jegy használatához.</span><span class="sxs-lookup"><span data-stu-id="f93b4-123">Mark the box Use a deposit slip.</span></span>
-15. <span data-ttu-id="f93b4-124">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-124">Click Post.</span></span>
-    * <span data-ttu-id="f93b4-125">Letéti jegyet csak akkor hozhat létre, ha feladta a kifizetéseket.</span><span class="sxs-lookup"><span data-stu-id="f93b4-125">Payments must be posted before the deposit slip can be generated.</span></span> <span data-ttu-id="f93b4-126">Ez azért van így, hogy a kifizetés ne változhasson a letéti jegy létrehozása után.</span><span class="sxs-lookup"><span data-stu-id="f93b4-126">This is to ensure that the payments don't change after the deposit slip is generated.</span></span>  
-16. <span data-ttu-id="f93b4-127">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-127">Click Functions.</span></span>
-17. <span data-ttu-id="f93b4-128">Kattintson a Letéti jegyre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-128">Click Deposit slip.</span></span>
-18. <span data-ttu-id="f93b4-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f93b4-129">Click OK.</span></span>
-    * <span data-ttu-id="f93b4-130">Az első oldalon a letéti jegyet hozhatja létre.</span><span class="sxs-lookup"><span data-stu-id="f93b4-130">The first page is used to create the deposit slip.</span></span>  
-19. <span data-ttu-id="f93b4-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f93b4-131">Click OK.</span></span>
-    * <span data-ttu-id="f93b4-132">A második lépésben kinyomtatja a letéti jegyet, de ez a lépés ne kötelező.</span><span class="sxs-lookup"><span data-stu-id="f93b4-132">The second step is to print the deposit slip, but this step is not required.</span></span>  
-
+1. <span data-ttu-id="f0b1f-106">Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-106">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="f0b1f-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-107">Click New.</span></span>
+3. <span data-ttu-id="f0b1f-108">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-108">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="f0b1f-109">A fizetési napló kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-109">Select the payment journal.</span></span> 
+5. <span data-ttu-id="f0b1f-110">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-110">Click Lines.</span></span>
+6. <span data-ttu-id="f0b1f-111">A Számla mezőben válassza ki azt a vevőt, akihez rögzíti a fizetést.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-111">In the Account field, select the Customer for whom you are recording the payment.</span></span>
+7. <span data-ttu-id="f0b1f-112">A Követel mezőbe írja be a fizetés összegét.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-112">In the Credit field, enter the amount of the payment.</span></span>
+    * <span data-ttu-id="f0b1f-113">Az összeget üresen is hagyhatja, ilyenkor a rendszer kiszámítja, ha kiválasztja a kifizetett számlákat.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-113">You can choose to leave the amount blank, and have the system calculate it by selecting the invoices which were paid.</span></span>  
+8. <span data-ttu-id="f0b1f-114">Írjon be egy értéket a Fizetési hivatkozás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-114">In the Payment reference field, type a value.</span></span>
+    * <span data-ttu-id="f0b1f-115">A kifizetési hivatkozás lehet a bevitt kifizetés csekkszáma.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-115">The payment reference could be the check number for the payment you are entering.</span></span> <span data-ttu-id="f0b1f-116">A kifizetési hivatkozás azért szükséges, hogy a kifizetés letéti jegyen is szerepeljen.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-116">The payment reference is required in order to include the payment on a deposit slip.</span></span>  
+9. <span data-ttu-id="f0b1f-117">Jelölje be a négyzetet a letéti jegy használatához.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-117">Mark the box Use a deposit slip.</span></span>
+    * <span data-ttu-id="f0b1f-118">Ha a kifizetésnek szerepelnie kell a letéten, ezt a beállítást állítsa az Igen lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-118">If the payment should be included in the deposit, change this setting to Yes.</span></span>  
+10. <span data-ttu-id="f0b1f-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-119">Click New.</span></span>
+11. <span data-ttu-id="f0b1f-120">A Számla mezőben válassza ki a vevőt a következő fizetéshez.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-120">In the Account field, select the Customer for the next payment.</span></span>
+12. <span data-ttu-id="f0b1f-121">Adja meg a fizetés összegét a Követel mezőben.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-121">In the Credit field, enter the payment amount.</span></span>
+13. <span data-ttu-id="f0b1f-122">Írjon be egy értéket a Fizetési hivatkozás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-122">In the Payment reference field, type a value.</span></span>
+14. <span data-ttu-id="f0b1f-123">Jelölje be a négyzetet a letéti jegy használatához.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-123">Mark the box Use a deposit slip.</span></span>
+15. <span data-ttu-id="f0b1f-124">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-124">Click Post.</span></span>
+    * <span data-ttu-id="f0b1f-125">Letéti jegyet csak akkor hozhat létre, ha feladta a kifizetéseket.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-125">Payments must be posted before the deposit slip can be generated.</span></span> <span data-ttu-id="f0b1f-126">Ez azért van így, hogy a kifizetés ne változhasson a letéti jegy létrehozása után.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-126">This is to ensure that the payments don't change after the deposit slip is generated.</span></span>  
+16. <span data-ttu-id="f0b1f-127">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-127">Click Functions.</span></span>
+17. <span data-ttu-id="f0b1f-128">Kattintson a Letéti jegyre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-128">Click Deposit slip.</span></span>
+18. <span data-ttu-id="f0b1f-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-129">Click OK.</span></span>
+    * <span data-ttu-id="f0b1f-130">Az első oldalon a letéti jegyet hozhatja létre.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-130">The first page is used to create the deposit slip.</span></span>  
+19. <span data-ttu-id="f0b1f-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-131">Click OK.</span></span>
+    * <span data-ttu-id="f0b1f-132">A második lépésben kinyomtatja a letéti jegyet, de ez a lépés ne kötelező.</span><span class="sxs-lookup"><span data-stu-id="f0b1f-132">The second step is to print the deposit slip, but this step is not required.</span></span>  
 

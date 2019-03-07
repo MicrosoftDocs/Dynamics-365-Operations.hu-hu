@@ -1,13 +1,13 @@
---- 
-title: "Felhasználó preferált időzónájának beállítása"
-description: "A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára."
+---
+title: Felhasználó preferált időzónájának beállítása
+description: A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára.
 author: pvillads
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserManagement, SysUserSetup
 audience: Application User
 ms.reviewer: sericks
@@ -16,25 +16,24 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5eac00d5054296921c3f22004f8c8e710727afc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309725"
 ---
-# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="93b3b-103">Felhasználó preferált időzónájának beállítása</span><span class="sxs-lookup"><span data-stu-id="93b3b-103">Set a user's preferred time zone</span></span>
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="d6009-103">Felhasználó preferált időzónájának beállítása</span><span class="sxs-lookup"><span data-stu-id="d6009-103">Set a user's preferred time zone</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="93b3b-104">A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára.</span><span class="sxs-lookup"><span data-stu-id="93b3b-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
+<span data-ttu-id="d6009-104">A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára.</span><span class="sxs-lookup"><span data-stu-id="d6009-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. <span data-ttu-id="93b3b-105">Ugrás a Rendszerfelügyelet > Felhasználók > Felhasználók elemre.</span><span class="sxs-lookup"><span data-stu-id="93b3b-105">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="93b3b-106">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="93b3b-106">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="93b3b-107">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="93b3b-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="93b3b-108">Kattintson a Felhasználói beállítások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="93b3b-108">Click User options.</span></span>
-5. <span data-ttu-id="93b3b-109">Kattintson a Beállítások fülre.</span><span class="sxs-lookup"><span data-stu-id="93b3b-109">Click the Preferences tab.</span></span>
-6. <span data-ttu-id="93b3b-110">Válasszon ki egy lehetőséget az Időzóna mezőben.</span><span class="sxs-lookup"><span data-stu-id="93b3b-110">In the Time zone field, select an option.</span></span>
-7. <span data-ttu-id="93b3b-111">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="93b3b-111">Click Save.</span></span>
-
+1. <span data-ttu-id="d6009-105">Ugrás a Rendszerfelügyelet > Felhasználók > Felhasználók elemre.</span><span class="sxs-lookup"><span data-stu-id="d6009-105">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="d6009-106">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="d6009-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="d6009-107">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="d6009-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="d6009-108">Kattintson a Felhasználói beállítások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d6009-108">Click User options.</span></span>
+5. <span data-ttu-id="d6009-109">Kattintson a Beállítások fülre.</span><span class="sxs-lookup"><span data-stu-id="d6009-109">Click the Preferences tab.</span></span>
+6. <span data-ttu-id="d6009-110">Válasszon ki egy lehetőséget az Időzóna mezőben.</span><span class="sxs-lookup"><span data-stu-id="d6009-110">In the Time zone field, select an option.</span></span>
+7. <span data-ttu-id="d6009-111">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d6009-111">Click Save.</span></span>
 

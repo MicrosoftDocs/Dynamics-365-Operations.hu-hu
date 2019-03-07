@@ -1,13 +1,13 @@
 ---
 title: Alaptervek
-description: "A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket."
+description: A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqParameters, ReqPlanSched
 audience: Application User
 ms.reviewer: josaw
@@ -19,43 +19,41 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: df9585cfe2bc7ccc60dc69741994785869ba71b1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325043"
 ---
-
-# <a name="master-plans"></a><span data-ttu-id="7ba91-103">Alaptervek</span><span class="sxs-lookup"><span data-stu-id="7ba91-103">Master plans</span></span>
+# <a name="master-plans"></a><span data-ttu-id="63f28-103">Alaptervek</span><span class="sxs-lookup"><span data-stu-id="63f28-103">Master plans</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7ba91-104">A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.</span><span class="sxs-lookup"><span data-stu-id="7ba91-104">Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction.</span></span> 
+<span data-ttu-id="63f28-104">A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.</span><span class="sxs-lookup"><span data-stu-id="63f28-104">Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction.</span></span> 
 
-<span data-ttu-id="7ba91-105">Az alapterveket az **Alaptervek** oldalon lehet konfigurálni.</span><span class="sxs-lookup"><span data-stu-id="7ba91-105">You can configure master plans on the **Master plans** page.</span></span>
+<span data-ttu-id="63f28-105">Az alapterveket az **Alaptervek** oldalon lehet konfigurálni.</span><span class="sxs-lookup"><span data-stu-id="63f28-105">You can configure master plans on the **Master plans** page.</span></span>
 
-<span data-ttu-id="7ba91-106">A terveknek két típusa létezik:</span><span class="sxs-lookup"><span data-stu-id="7ba91-106">There are two types of plans:</span></span>
--   <span data-ttu-id="7ba91-107">**Statikus terv** – Az alaptervezés számításai az aktuális adatokat használják az új nettó szükségletek létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="7ba91-107">**Static plan** – The master planning calculation uses the current data to generate a net requirements plan.</span></span> <span data-ttu-id="7ba91-108">Ez a terv a következő alaptervfuttatásig változatlan marad.</span><span class="sxs-lookup"><span data-stu-id="7ba91-108">This plan remains unchanged until the next time that you run master planning.</span></span> <span data-ttu-id="7ba91-109">Ez egy olyan működési terv, amelyet a vállalati személyzet különböző tagjai, például a beszerzők vagy a termeléstervezők használhatnak a döntéseik alapjául, és amely alapján végrehajthatják a napi feladataikat és tevékenységeiket.</span><span class="sxs-lookup"><span data-stu-id="7ba91-109">It is an operating plan that various company personnel, such as a purchaser or production planner, can use to base their decisions on and perform their daily tasks and activities.</span></span>
--   <span data-ttu-id="7ba91-110">**Dinamikus terv** – Ez a terv ugyanabból a nettó szükségleti tervből indul ki, amelyet az alaptervezés hozott létre.</span><span class="sxs-lookup"><span data-stu-id="7ba91-110">**Dynamic plan** – This plan starts with the same net requirements plan that was generated by master planning.</span></span> <span data-ttu-id="7ba91-111">A dinamikus tervet azonban az alapütemezés minden változása esetén frissíteni lehet.</span><span class="sxs-lookup"><span data-stu-id="7ba91-111">However, you can update the dynamic plan every time that the master data changes.</span></span> <span data-ttu-id="7ba91-112">Ez akkor fordulhat elő, amikor például új értékesítési rendelést hoz létre.</span><span class="sxs-lookup"><span data-stu-id="7ba91-112">This could be when you create a new sales order, for example.</span></span> <span data-ttu-id="7ba91-113">Ez lehetővé teszi a változó rendeléshálózat és a cikkek rendelkezésre állásának a figyelését, anélkül, hogy zavarná a mások munkafolyamataihoz használt statikus tervet.</span><span class="sxs-lookup"><span data-stu-id="7ba91-113">This enables you to monitor the changing order network and item availability without disturbing the static plan that others are using for their work processes.</span></span>
+<span data-ttu-id="63f28-106">A terveknek két típusa létezik:</span><span class="sxs-lookup"><span data-stu-id="63f28-106">There are two types of plans:</span></span>
+-   <span data-ttu-id="63f28-107">**Statikus terv** – Az alaptervezés számításai az aktuális adatokat használják az új nettó szükségletek létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="63f28-107">**Static plan** – The master planning calculation uses the current data to generate a net requirements plan.</span></span> <span data-ttu-id="63f28-108">Ez a terv a következő alaptervfuttatásig változatlan marad.</span><span class="sxs-lookup"><span data-stu-id="63f28-108">This plan remains unchanged until the next time that you run master planning.</span></span> <span data-ttu-id="63f28-109">Ez egy olyan működési terv, amelyet a vállalati személyzet különböző tagjai, például a beszerzők vagy a termeléstervezők használhatnak a döntéseik alapjául, és amely alapján végrehajthatják a napi feladataikat és tevékenységeiket.</span><span class="sxs-lookup"><span data-stu-id="63f28-109">It is an operating plan that various company personnel, such as a purchaser or production planner, can use to base their decisions on and perform their daily tasks and activities.</span></span>
+-   <span data-ttu-id="63f28-110">**Dinamikus terv** – Ez a terv ugyanabból a nettó szükségleti tervből indul ki, amelyet az alaptervezés hozott létre.</span><span class="sxs-lookup"><span data-stu-id="63f28-110">**Dynamic plan** – This plan starts with the same net requirements plan that was generated by master planning.</span></span> <span data-ttu-id="63f28-111">A dinamikus tervet azonban az alapütemezés minden változása esetén frissíteni lehet.</span><span class="sxs-lookup"><span data-stu-id="63f28-111">However, you can update the dynamic plan every time that the master data changes.</span></span> <span data-ttu-id="63f28-112">Ez akkor fordulhat elő, amikor például új értékesítési rendelést hoz létre.</span><span class="sxs-lookup"><span data-stu-id="63f28-112">This could be when you create a new sales order, for example.</span></span> <span data-ttu-id="63f28-113">Ez lehetővé teszi a változó rendeléshálózat és a cikkek rendelkezésre állásának a figyelését, anélkül, hogy zavarná a mások munkafolyamataihoz használt statikus tervet.</span><span class="sxs-lookup"><span data-stu-id="63f28-113">This enables you to monitor the changing order network and item availability without disturbing the static plan that others are using for their work processes.</span></span>
 
-<span data-ttu-id="7ba91-114">A vállalat dönthet úgy, hogy csak egy dinamikus tervet használ, vagy hogy mind statikus, mind dinamikus terveket alkalmaz.</span><span class="sxs-lookup"><span data-stu-id="7ba91-114">A company may choose to work with just a dynamic plan or it may use both static and dynamic plans.</span></span> <span data-ttu-id="7ba91-115">Ezenkívül be lehet állítani, hogy egy adott alapterv egy bizonyos stratégiát tükrözzön, vagy egy bizonyos probléma megoldására szolgáljon.</span><span class="sxs-lookup"><span data-stu-id="7ba91-115">In addition, you can configure any master plan to reflect a particular strategy or address an issue.</span></span> <span data-ttu-id="7ba91-116">Példák a következők:</span><span class="sxs-lookup"><span data-stu-id="7ba91-116">Examples are as follows:</span></span>
--   <span data-ttu-id="7ba91-117">Magasabb készletszintek beállítása a készlethiány elkerülése érdekében.</span><span class="sxs-lookup"><span data-stu-id="7ba91-117">Set higher inventory levels to guarantee against stockouts.</span></span>
--   <span data-ttu-id="7ba91-118">Hosszabb biztonsági időtartalék beállítása a megbízhatatlan szállítók elleni védekezés érdekében.</span><span class="sxs-lookup"><span data-stu-id="7ba91-118">Set longer safety margins to protect against unreliable vendors.</span></span>
+<span data-ttu-id="63f28-114">A vállalat dönthet úgy, hogy csak egy dinamikus tervet használ, vagy hogy mind statikus, mind dinamikus terveket alkalmaz.</span><span class="sxs-lookup"><span data-stu-id="63f28-114">A company may choose to work with just a dynamic plan or it may use both static and dynamic plans.</span></span> <span data-ttu-id="63f28-115">Ezenkívül be lehet állítani, hogy egy adott alapterv egy bizonyos stratégiát tükrözzön, vagy egy bizonyos probléma megoldására szolgáljon.</span><span class="sxs-lookup"><span data-stu-id="63f28-115">In addition, you can configure any master plan to reflect a particular strategy or address an issue.</span></span> <span data-ttu-id="63f28-116">Példák a következők:</span><span class="sxs-lookup"><span data-stu-id="63f28-116">Examples are as follows:</span></span>
+-   <span data-ttu-id="63f28-117">Magasabb készletszintek beállítása a készlethiány elkerülése érdekében.</span><span class="sxs-lookup"><span data-stu-id="63f28-117">Set higher inventory levels to guarantee against stockouts.</span></span>
+-   <span data-ttu-id="63f28-118">Hosszabb biztonsági időtartalék beállítása a megbízhatatlan szállítók elleni védekezés érdekében.</span><span class="sxs-lookup"><span data-stu-id="63f28-118">Set longer safety margins to protect against unreliable vendors.</span></span>
 
-<span data-ttu-id="7ba91-119">Beállíthatja, hogy a kezdő dinamikus terv az alaptervezés minden futtatása alkalmával az új szükségleti tervnek megfelelően frissüljön.</span><span class="sxs-lookup"><span data-stu-id="7ba91-119">You can also set up the starting dynamic plan so that it is updated with the new requirements plan every time that you run master planning.</span></span> <span data-ttu-id="7ba91-120">Ezeket a beállításokat az **Alaptervezés paraméterei** oldalon adhatja meg.</span><span class="sxs-lookup"><span data-stu-id="7ba91-120">You can specify these settings on the **Master planning parameters** page.</span></span>
+<span data-ttu-id="63f28-119">Beállíthatja, hogy a kezdő dinamikus terv az alaptervezés minden futtatása alkalmával az új szükségleti tervnek megfelelően frissüljön.</span><span class="sxs-lookup"><span data-stu-id="63f28-119">You can also set up the starting dynamic plan so that it is updated with the new requirements plan every time that you run master planning.</span></span> <span data-ttu-id="63f28-120">Ezeket a beállításokat az **Alaptervezés paraméterei** oldalon adhatja meg.</span><span class="sxs-lookup"><span data-stu-id="63f28-120">You can specify these settings on the **Master planning parameters** page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="7ba91-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="7ba91-121">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="63f28-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="63f28-121">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="7ba91-122">Fedezeti beállítások</span><span class="sxs-lookup"><span data-stu-id="7ba91-122">Coverage settings</span></span>](coverage-settings.md)
+[<span data-ttu-id="63f28-122">Fedezeti beállítások</span><span class="sxs-lookup"><span data-stu-id="63f28-122">Coverage settings</span></span>](coverage-settings.md)
 
-[<span data-ttu-id="7ba91-123">Alaptervezés taktikai és operatív tervezésének elválasztása</span><span class="sxs-lookup"><span data-stu-id="7ba91-123">Separating tactical and operative planning for master scheduling</span></span>](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[<span data-ttu-id="63f28-123">Alaptervezés taktikai és operatív tervezésének elválasztása</span><span class="sxs-lookup"><span data-stu-id="63f28-123">Separating tactical and operative planning for master scheduling</span></span>](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[<span data-ttu-id="7ba91-124">Alaptervezés: Statikus és dinamikus alaptervet vagy csak egy tervet használjon?</span><span class="sxs-lookup"><span data-stu-id="7ba91-124">Master Planning: Use a static and dynamic Master Plan or use one plan?</span></span>](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
-
+[<span data-ttu-id="63f28-124">Alaptervezés: Statikus és dinamikus alaptervet vagy csak egy tervet használjon?</span><span class="sxs-lookup"><span data-stu-id="63f28-124">Master Planning: Use a static and dynamic Master Plan or use one plan?</span></span>](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 
 
 
