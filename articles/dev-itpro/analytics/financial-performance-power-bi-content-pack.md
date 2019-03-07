@@ -1,13 +1,13 @@
 ---
-title: "Pénzügyi teljesítmény PowerBI.com megoldás"
-description: "Ez a témakör ismerteti a pénzügyi teljesítmény PowerBI.com megoldást."
+title: Pénzügyi teljesítmény PowerBI.com megoldás
+description: Ez a témakör ismerteti a pénzügyi teljesítmény PowerBI.com megoldást.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,25 +17,24 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315107"
 ---
-
 # <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a PowerBI.com megoldás elavult a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Ez a PowerBI.com megoldás elavult a következő dokumentációban ismertetettek szerint: [Rendelkezésre álló Power BI tartalomcsomagok az AppSource felületén](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a témakör ismerteti a **Pénzügyi teljesítmény** PowerBI.com megoldást. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
-Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
+Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>A PowerBI.com megoldás által tartalmazott irányítópult és a jelentések
 Az irányítópult az alacsonyabb szintű jelentéseken alapuló adatok összesített lapjait tartalmazza. Minden egyes lap tartalmazza a folyó év összesített információit a szervezeten belüli összes vállalatnál. Az alábbiakban látható néhány ilyen lap:
@@ -71,7 +70,7 @@ Minden egyes lapot jelentés támaszt alá. Ezek a jelentések diagramokot és t
 | Költségelemzés            | Az összes költség, a költségvetés összköltsége a jogi személy szerint, a tényleges és a költségvetési összes kiadás negyedénként, az összes kiadás a számlakategória szerint, és a működési költségek aránya |
 | Számlázott bevételelemzés     | Kinnlevőségek összesen, az összes kinnlevőség jogi személy szerint, az összes kinnlevőség negyedévenként és a kinnlevőségek számlák egyenlege<blockquote>[!NOTE] Az adatok nem tartalmaznak nyitó egyenlegeket a kinnlevőségek főkönyvi számlákhoz. A kinnlevőségek közé feladott új tranzakciók összegét mutatja.</blockquote> |
 
-Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálására](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A következő entitásokat használták **Pénzügyi teljesítmény** PowerBI.com megoldás alapjaként:
@@ -89,5 +88,4 @@ A következő entitásokat használták **Pénzügyi teljesítmény** PowerBI.co
 - Főkönyvek
 - ChartofAccounts
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak.
-
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez, módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak.

@@ -1,13 +1,13 @@
 ---
-title: "Párhuzamos tevékenységek beállítása munkafolyamatban"
-description: "A párhuzamos tevékenység beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben."
+title: Párhuzamos tevékenységek beállítása munkafolyamatban
+description: A párhuzamos tevékenység beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308437"
 ---
-
 # <a name="configure-parallel-activities-in-a-workflow"></a>Párhuzamos tevékenységek beállítása munkafolyamatban
 
 [!include [banner](../includes/banner.md)]
@@ -55,4 +54,3 @@ Végezze el a következő lépéseket a párhuzamos tevékenység ágainak hozz�
     > Az ágának sorrendje nem számít, mivel a párhuzamos tevékenység ágai egyszerre futnak.
 
 3. Az egyes ágak konfigurálásához lásd: [Párhuzamos ág beállítása](configure-parallel-branch-workflow.md).
-

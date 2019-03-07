@@ -1,13 +1,13 @@
 ---
-title: "Elektronikus jelentéskészítés (ER) konfigurálása adatok Power BI-be történő lehívásához"
-description: "Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Finance and Operations alkalmazásból a Power BI szolgáltatásokba."
+title: Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
+description: Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Finance and Operations alkalmazásból a Power BI szolgáltatásokba.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335784"
 ---
-
-# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés (ER) konfigurálása adatok Power BI-be történő lehívásához
+# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,11 +32,11 @@ Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) k
 
 ## <a name="overview"></a>Áttekintés
 
-A Microsoft Power BI olyan szoftverek, szolgáltatások, alkalmazások és összekötők gyűjteménye, amelyek együtt dolgoznak azért, hogy a külső forrásokból származó adatokat koherens, vizuálisan élményt nyújtó és interaktív betekintéssé alakítsák. Az elektronikus jelentések (ER) segítségével a Microsoft Dynamics 365 Finance and Operations felhasználói könnyen konfigurálhatnak adatforrásokat és vihetnek át adatok a Finance and Operations alkalmazásból a Power BI alkalmazásnak. Az adatok átvitele fájlokban történik, OpenXML munkalap (Microsoft Excel-munkafüzet) formátumban. Az átvitt fájlok tárolása a Microsoft SharePoint Serveren történik, amely ennek a célnak megfelelően lett konfigurálva. A tárolt fájlokat a Power BI olyan jelentések elkészítésére használja, amelyek tartalmaznak megjelenítőeszközöket (táblázatok, diagramok, térképek stb.). A Power BI jelentések megosztásra kerülnek a Power BI felhasználókkal, hozzáférésük a Power BI irányítópulton és a Finance and Operations oldalakon történik. Ez a témakör az alábbi feladatokat magyarázza el:
+A Microsoft Power BI olyan szoftverek, szolgáltatások, alkalmazások és összekötők gyűjteménye, amelyek együtt dolgoznak azért, hogy a külső forrásokból származó adatokat koherens, vizuálisan élményt nyújtó és interaktív betekintéssé alakítsák. Elektronikus jelentés (ER) lehetővé teszi, hogy a Microsoft Dynamics 365 for Finance and Operations-felhasználók könnyen beállíthatják az adatforrásokat és megszervezhetik az adatok átvitelét a Finance and Operations szolgáltatásból a Power BI szolgáltatásba. Az adatok átvitele fájlokban történik, OpenXML munkalap (Microsoft Excel-munkafüzet) formátumban. Az átvitt fájlok tárolása a Microsoft SharePoint Server felületén történik, amely ennek a célnak megfelelően lett konfigurálva. A tárolt fájlokat a Power BI olyan jelentések elkészítésére használja, amelyek tartalmaznak megjelenítőeszközöket (táblázatok, diagramok, térképek stb.). A Power BI-jelentések megosztásra kerülnek a Power BI-felhasználókkal, hozzáférésük a Power BI-irányítópulton és a Finance and Operations oldalakon történik. Ez a témakör az alábbi feladatokat magyarázza el:
 
 - A Finance and Operations konfigurálása.
 - Az ER-formátum konfigurációjának előkészítése a Finance and Operations adatainak beolvasásához.
-- Az ER-környezet konfigurálása a Power BI-ba történő adatátvitelhez.
+- Az ER-környezet konfigurálása a Power BI szolgáltatásba történő adatátvitelhez.
 - Az átvitt adatok felhasználása Power BI-jelentés létrehozására.
 - A Power BI-jelentés elérhetővé tétele a Finance and Operations alkalmazásban.
 
@@ -51,7 +50,7 @@ A jelen témakörben szereplő példa elvégzéséhez a következő hozzáféré
     - Rendszergazda
 
 - Hozzáférés a SharePoint-kiszolgálóhoz, amelyet a Finance and Operations alkalmazással való használatra konfiguráltak
-- Hozzáférés a Power BI keretrendszerhez
+- Hozzáférés a Power BI-keretrendszerhez
 
 ## <a name="configure-document-management-parameters"></a>Dokumentumkezelés paraméterek konfigurálása
 1. A **Dokumentumkezelés paraméterei** lapon állítsa be a hozzáférést ahhoz a SharePoint-kiszolgálóhoz, amelyet az a vállalat fog használni, amelybe Ön bejelentkezett (ebben a példában a DEMF vállalat).
@@ -60,7 +59,7 @@ A jelen témakörben szereplő példa elvégzéséhez a következő hozzáféré
     [![Dokumentumkezelés paramétereinek lapja](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. Nyissa meg a konfigurált SharePoint-webhelyet. Hozzon létre egy új mappát, ahol az ER azokat az Excel-fájlokat fogja tárolni, amelynek üzleti adataira a Power BI-jelentéseknek szükségük van a Power BI-adatkészletek forrásaként.
-4. A Finance and Operations alkalmazásban, a **Dokumentumtípusok** lapon hozzon létre egy új dokumentumtípust, amely az imént létrehozott SharePoint-mappa elérésére szolgál. Adja meg a **Fájlt** a **Csoport** mezőben és a **SharePointot** a **Hely** mezőben, majd adja meg a SharePoint-mappa címét.
+4. A Finance and Operations alkalmazásban, a **Dokumentumtípusok** lapon hozzon létre egy új dokumentumtípust, amely az imént létrehozott SharePoint-mappa elérésére szolgál. Adja meg a **Fájlt** a **Csoport** mezőben és a **SharePoint** értékét a **Hely** mezőben, majd adja meg a SharePoint-mappa címét.
 
     [![Dokumentumtípusok lapja](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
@@ -123,7 +122,7 @@ Az **Elektronikus jelentések** lapon (**Szervezet felügyelete** &gt; **Elektro
 
 Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a **Célhely beállításai** párbeszédpanelben végezze el az alábbi lépéseket.
 
-1. A **Power BI** lapon az **Engedélyezett** lehetőséget állítsa **Igenre**.
+1. A **Power BI** lapon az **Engedélyezett** lehetőséget állítsa **Igen** értékre.
 2. A **SharePoint** mezőben válassza ki azt a **Megosztott** dokumentumtípust, amelyet korábban létrehozott.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>A beállított ER-formátum végrehajtási ütemezése
@@ -134,7 +133,7 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 
 3. Válassza ki az **importálási / exportálási tevékenységekre** vonatkozó konfiguráció kész verzióját, majd kattintson a **Futtatásra**. Vegye figyelembe, hogy a konfigurált célhely az Excel formátumban létrehozott kimeneti eredményhez van hozzárendelve.
 4. Állítsa a **Kötegelt feldolgozás** lehetőséget **Igenre** ahhoz, hogy ezt a jelentést felügyelet nélküli üzemmódban futtassa.
-5. Kattintson az **Ismétlődésre** ahhoz, hogy beütemezze a kötegelt végrehajtás szükséges ismétlődését. Az ismétlődés határozza meg, hogy a frissített adatok milyen gyakran kerülnek a Finance and Operations alkalmazásból a Power BI-ba.
+5. Kattintson az **Ismétlődésre** ahhoz, hogy beütemezze a kötegelt végrehajtás szükséges ismétlődését. Az ismétlődés határozza meg, hogy a frissített adatok milyen gyakran kerülnek a Finance and Operations alkalmazásból a Power BI szolgáltatásba.
 
     [![Elektronikus jelentések paramétereinek párbeszédablaka](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
 
@@ -147,11 +146,11 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
     [![Az Excel-fájl új verziója](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Power BI-adatkészlet létrehozása az ER-formátum kimeneti eredményeinek felhasználásával
-1. Jelentkezzen be a Power BI-ba, és nyisson meg egy meglévő Power BI-csoportot (munkaterület), vagy hozzon létre egy új csoportot. Kattintson a **Hozzáadás** elemre a **Fájlok** alatt, az **Adatok importálása vagy csatlakozás adatokhoz** szakaszban, vagy kattintson a pluszjelre (**+**) az **Adatkészletek** mellett a bal oldali ablakban.
+1. Jelentkezzen be a Power BI szolgáltatásba, és nyisson meg egy meglévő Power BI-csoportot (munkaterület), vagy hozzon létre egy új csoportot. Kattintson a **Hozzáadás** elemre a **Fájlok** alatt, az **Adatok importálása vagy csatlakozás adatokhoz** szakaszban, vagy kattintson a pluszjelre (**+**) az **Adatkészletek** mellett a bal oldali ablakban.
 
     [![Adatkészlet létrehozása](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
-2. Válassza ki a **SharePoint - Csoportwebhelyek** lehetőséget, majd adja meg az Ön által használt a SharePoint-kiszolgáló elérési útját (`https://ax7partner.litware.com` ebben a példában).
+2. Válassza ki a **SharePoint – Csoportwebhelyek** lehetőséget, majd adja meg az Ön által használt a SharePoint-kiszolgáló elérési útját (`https://ax7partner.litware.com` ebben a példában).
 3. Menjen a **/Megosztott dokumentumok/GER-adatok/PowerBI** mappára, és válassza ki azt az Excel-fájlt, amelyet az új Power BI-adatkészlet adatforrásaként létrehozott.
 
     [![Az Excel-fájl kiválasztása](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
@@ -163,14 +162,14 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 5. Állítsa be úgy a frissítési ütemezést, hogy ez az adatkészlet időszakos frissítést kényszerítsen ki. Az időszakos frissítések lehetővé teszik a Finance and Operations alkalmazásból érkező, új üzleti adatok felhasználását az ER-jelentés időszakos végrehajtása révén, az Excel-fájlnak a SharePoint-kiszolgálón létrehozott új változatai segítségével.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Power BI-jelentés létrehozása az új adatkészlet segítségével
-1. Kattintson az **importálás és exportálás részleteit** tartalmazó Power BI-adatkészletre, amelyet létrehozott.
+1. Kattintson az **Importálás és exportálás részletei** Power BI-adatkészletre, amelyet létrehozott.
 2. Állítsa be a megjelenítést. Például válassza ki a **Kitöltött térkép** megjelenítést, és állítsa be a következőképpen:
 
     - Rendelje hozzá a **OrszágEredet** adatkészlet-mezőt a térképes megjelenítés **Hely** mezőjéhez.
     - Rendelje hozzá a **Mennyiség** adatkészlet-mezőt a térképes megjelenítés **Színtelítettség** mezőjéhez.
     - Adja hozzá a **Tevékenység** és az **Év** adatkészlet-mezőt a térképes megjelenítés **Szűrők** mezőgyűjteményéhez.
 
-3. Mentse el a Power BI-jelentést **importálás és exportálás részletezését tartalmazó jelentésként**.
+3. Mentse el a Power BI-jelentést **Importálás és exportálás részletezését tartalmazó jelentés** formájában.
 
     [![Importálás és exportálás részletezését tartalmazó jelentés](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
@@ -187,9 +186,9 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>A Power BI-jelentés elérhetővé tétele a Finance and Operations alkalmazásban.
 Állítsa be az integrálást a Finance and Operations és a Power BI között. További tudnivalókért lásd: [A Power BI konfigurálása a munkaterületekhez való integráláshoz](configure-power-bi-integration.md).
 
-1. Az **Elektronikus jelentések** azon a munkaterületlapján, amely támogatja a Power BI integrációt (**Szervezet felügyelete** &gt; **Munkaterületek** &gt; **Elektronikus jelentési munkaterület**), kattintson a **Lehetőségek** &gt; **Jelentések katalógusának megnyitása** lehetőségre.
-2. Válassza ki az Ön által létrehozott, az **Importálás és exportálás részleteire** vonatkozó Power BI-jelentést ahhoz, hogy a jelentést a kijelölt lapon teendőként jelenítse meg.
-3. Kattintson a teendőre a Finance and Operations azon lapjának megnyitásához, amely megjeleníti az Ön által a Power BI-ban megtervezett jelentést.
+1. Az **Elektronikus jelentések** munkaterületlapon, amely támogatja a Power BI-integrációt (**Szervezet felügyelete** &gt; **Munkaterületek** &gt; **Elektronikus jelentési munkaterület**), kattintson a **Lehetőségek** &gt; **Jelentések katalógusának megnyitása** lehetőségre.
+2. Válassza ki az Ön által létrehozott, az **Importálás és exportálás részletei** Power BI-jelentést ahhoz, hogy a jelentést a kijelölt lapon teendőként jelenítse meg.
+3. Kattintson a teendőre a Finance and Operations azon lapjának megnyitásához, amely megjeleníti az Ön által a Power BI szolgáltatásban megtervezett jelentést.
 
     [![Importálás és exportálás részletezését tartalmazó jelentés](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
@@ -198,4 +197,3 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 
 [Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
-

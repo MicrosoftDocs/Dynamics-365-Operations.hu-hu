@@ -1,13 +1,13 @@
 ---
-title: "Gyártásvégrehajtás regisztrációja"
-description: "Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek."
+title: Gyártásvégrehajtás regisztrációja
+description: Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318166"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Gyártásvégrehajtás regisztrációja
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ A dolgozók számára a regisztrációk számos különféle típusa áll rendel
 -   **Szünetek regisztrálására** (munkaidő-nyilvántartással érhető el) – A munkanap során a dolgozók regisztrálhatják, hogy elhagyják a munkaállomásukat és szünetet tartanak. Több töréspont beállítható. Amikor a dolgozó visszatér és újra bejelentkezik, a rendszer regisztrálja, hogy a dolgozó ismét jelen van, és a szünet regisztrációja leáll.
 -   **Közvetett tevékenységek regisztrálása** (munkaidő-nyilvántartással érhető el) – A közvetett tevékenységek a dolgozók által egy munkanap során végezhető nem termelékeny tevékenységek (például osztályértekezlet, csapatértekezlet vagy karbantartási feladat az üzemben). Adja meg a dolgozók közvetett tevékenységekhez való regisztrációjával kapcsolatos adatokat.
 -   **Túlóra regisztrálása** (munkaidő-nyilvántartással érhető el) – A hosszabb munkanapot elvégző dolgozók választhatnak, hogy a szokásos munkaidőn túli órák rugalmas munkaidőként legyenek-e regisztrálva, vagy túlóraként.
-
 
 
 

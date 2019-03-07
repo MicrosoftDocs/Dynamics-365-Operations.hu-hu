@@ -1,14 +1,14 @@
 ---
-title: "Talent – előnézeti funkciók elérése"
-description: "Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előnézeti funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg engedélyezettek."
+title: Talent – előnézeti funkciók elérése
+description: Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előnézeti funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg engedélyezettek.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304667"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Talent – előnézeti funkciók elérése
 
 [!include[banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előnéze
 
 ## <a name="enable-or-disable-preview-features"></a>Előnézeti szolgáltatások engedélyezése vagy letiltása
 
-Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjában az **Előnézeti funkcióit** beállítását az előnézeti funkciók engedélyezéséhez vagy letiltásához. Alapértelmezés szerint a beállítás be van kapcsolva. A előnézeti szolgáltatások engedélyezésének és letiltásának művelete környezetfüggő.
+Használhatja a Microsoft Dynamics 365 for Talent felügyeleti központjában az **Előzetes funkciók** beállítását az előnézeti funkciók engedélyezéséhez vagy letiltásához. Alapértelmezés szerint a beállítás be van kapcsolva. A előnézeti szolgáltatások engedélyezésének és letiltásának művelete környezetfüggő.
 
 > [!IMPORTANT]
 > Az **Előnézeti funkciók** beállításának bekapcsolásával a szervezet összes olyan felhasználója számára engedélyezi az előnézeti funkciókat, akik az adott környezetben vannak. A beállítás kikapcsolásával letiltja le az előnézeti funkciókat, és azok a felhasználók számára nem érhetők el. Az előnézeti funkciók támogatása korlátozott a Talentben. Előfordulhat, hogy ezek kevesebb adatvédelmi és biztonsági intézkedést használnak, és azok nem szerepelnek a Talent szolgáltatásiszint-szerződésében. Ne használja az előnézeti funkciókat személyes adatok (azaz az Önt bármilyen módon azonosítani képes adatok) feldolgozására, illetve más jogi vagy szabályozási, megfelelési követelmények hatálya alá tartozó adatok feldolgozására.
@@ -45,7 +44,7 @@ Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjáb
 
 #### <a name="attract"></a>Attract
 
-1. Jelentkezzen be ide: Microsoft Dynamics 365 for Talent: Attract
+1. Jelentkezzen be a Microsoft Dynamics 365 for Talent: Attract szolgáltatásba.
 2. A **Beállítás** menü (fogaskerék szimbólum) a jobb felső sarkában válassza ki az **Adminisztratív beállítások** lehetőséget.
 3. A **Funkciók kezelése** lapon válassza ki az **Előnézeti funkciók** beállítás melletti lehetőséget úgy, hogy az kékre változzon.
 4. Opcionálisan az egyes funkciókat az egyes szolgáltatások engedélyezésével vagy letiltásával lehet meghatározni az oldalon.
@@ -92,4 +91,3 @@ Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani k�
 
 > [!TIP]
 > Tegyen Könyvjelzőt ehhez a témakörhöz, és a jöjjön vissza gyakran, hogy naprakész legyen az előnézeti funkciókkal kapcsolatban, ahogy azok megjelennek.
-

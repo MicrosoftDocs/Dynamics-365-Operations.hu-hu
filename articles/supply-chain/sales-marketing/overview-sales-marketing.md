@@ -1,13 +1,13 @@
 ---
-title: "Értékesítés és marketing"
-description: "Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési."
+title: Értékesítés és marketing
+description: Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 4de2ac36ec13f95c7603d097a0800b317014bbd0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321064"
 ---
-
 # <a name="sales-and-marketing"></a>Értékesítés és marketing
 
 [!include [banner](../includes/banner.md)]
@@ -125,5 +124,4 @@ A pro forma számla olyan számla, amely a tényleges számla mennyiségének be
 
 #### <a name="blogs"></a>Blogok
 
-Az értékesítési folyamat áttekintése megtalálható ebben a posztban: [Az értékesítés működése a Dynamics 365 for Finance and Operations rendszerben](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-
+Az értékesítési folyamat áttekintése megtalálható ebben a posztban: [Az értékesítés működése a Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations) rendszerben.

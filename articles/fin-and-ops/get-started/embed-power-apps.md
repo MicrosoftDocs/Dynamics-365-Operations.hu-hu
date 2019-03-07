@@ -1,13 +1,13 @@
 ---
-title: "PowerApps alkalmazások beágyazása"
-description: "Ez a témakör leírja, hogyan végezhető el a PowerApps beágyazása a Finance and Operations ügyfélbe a termék funkcionalitásának kibővítése érdekében."
+title: PowerApps alkalmazások beágyazása
+description: Ez a témakör leírja, hogyan végezhető el a PowerApps beágyazása a Finance and Operations ügyfélbe a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
 manager: AnnBe
 ms.date: 09/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.search.scope: Operations, Core
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 262d34cbc50251595d22c27387fbd3f1045d1fbb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334151"
 ---
-
 # <a name="embed-powerapps-apps"></a>PowerApps alkalmazások beágyazása
 
 [!include [banner](../includes/banner.md)]
@@ -132,4 +131,3 @@ public final class ClassTest_Extension
     }
 }
 ```
-

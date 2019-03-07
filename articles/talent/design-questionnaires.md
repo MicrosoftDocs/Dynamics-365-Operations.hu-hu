@@ -1,13 +1,13 @@
 ---
-title: "Kérdőívek tervezése"
-description: "Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek."
+title: Kérdőívek tervezése
+description: Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304692"
 ---
-
 # <a name="design-questionnaires"></a>Kérdőívek tervezése
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ A számsorozat-kódok a kérdések és a válaszok rendszerezésére szolgálnak
 Az adatok elkészítése előtt ajánlott minden paramétert meghatározni. A kérdőív beállítások később bármikor módosíthatóak.
 
 ## <a name="questionnaire-components"></a>A kérdőív részei
-A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
+A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -238,5 +237,4 @@ Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a vá
 [Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
 
 [Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
-
 

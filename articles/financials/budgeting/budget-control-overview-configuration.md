@@ -1,13 +1,13 @@
 ---
-title: "A költségvetés-ellenőrzés áttekintése"
-description: "Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat."
+title: A költségvetés-ellenőrzés áttekintése
+description: Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, úgy hogy kezelni tudja a pénzügyi erőforrásokat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308529"
 ---
-
-# <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése 
+# <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat.
+Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, úgy hogy kezelni tudja a pénzügyi erőforrásokat.
 
 <a name="overview"></a>Áttekintés
 --------
@@ -53,7 +52,7 @@ A költségvetés-ellenőrzést különböző szempontok szerint lehet beállít
 -   **Rendelkezésre álló források számítása** - Szükséges a dokumentumokat beszerzési rendelésként (előzetes kötelezettségvállalások) és beszerzési rendelésként (kötelezettségvállalások) használni a rendelkezésre álló pénzalapok számításakor? Figyelembe kell venni a vázlat állapotú dokumentumokat a számítás során?
 -   **Felülbírálási engedély** - Kinek van jogosultsága a rendelkezésre álló költségvetés átlépéséhez?
 
-A költségvetés-ellenőrzés teljes mértékben integrált a Finance and Operations rendszerrel. Emiatt a rendelkezésre álló költségvetést kiértékelheti a tervezett beszerzésekre és a tényleges beszerzésre vonatkozóan egyaránt. Elérhetők a költségvetés lekérdezések és jelentések. Ezért a felhasználók kiértékelhetik a költségvetést a költségvetési cikluson keresztül, és bármennyi szükséges kiigazítást végezhet a költségvetés-verzió vagy átutalások formájában. A költségvetés-kezelő exportálhatja a költségvetést és tényleges kiadásokat a Microsoft Excelbe, hogy szükség szerint jobban tudja elemezni és előre jelezni a folyamatokat.
+A költségvetés-ellenőrzés teljes mértékben integrált a Finance and Operations rendszerrel. Emiatt a rendelkezésre álló költségvetést kiértékelheti a tervezett beszerzésekre és a tényleges beszerzésre vonatkozóan egyaránt. Elérhetők a költségvetés lekérdezések és jelentések. Ezért a felhasználók kiértékelhetik a költségvetést a költségvetési cikluson keresztül, és bármennyi szükséges kiigazítást végezhet a költségvetés-verzió vagy átutalások formájában. A költségvetés-kezelő exportálhatja a költségvetést és tényleges kiadásokat a Microsoft Excel hogy szükség szerint jobban tudja elemezni és előre jelezni a folyamatokat.
 
 ## <a name="configuring-budget-control"></a>Költségvetés-ellenőrzés konfigurálása
 ### <a name="budget-cycle-time-span"></a>Költségvetési ciklus időtartama
@@ -128,4 +127,3 @@ A költségvetés-ellenőrzés aktiválását követően, a felhasználók költ
 Erről a lapról a felhasználók a **Költségvetés-ellenőrzési statisztika időszak szerint** lapra léphetnek a költségvetés elérhetőségének részleteinek és a kiválasztott költségvetés-ellenőrzési dimenzióra vonatkozó foglalások megtekintéséhez. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika** lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
 
 Ha a költségvetési-ellenőrzés aktív a beszerzési rendelésekre vonatkozóan a költségvetéskezelő használhatja a **Főkönyvi költségvetések és előrejelzések** munkaterületet az összes figyelmeztetéssel és hibával rendelkező jóváhagyásra váró beszerzési rendelés várakozási sorának áttekintéséhez. Ha a költségvetés-kezelő rendelkezik költségvetés átlépési engedéllyel, akkor jóváhagyhat beszerzési rendelést közvetlenül a munkahelyen.    
-

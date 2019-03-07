@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja"
-description: "Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában."
+title: Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja
+description: Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321386"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
+Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
 
 > [!NOTE]
-> A mobilalkalmazás neve korábban *Microsoft Dynamics 365 for Finance and Operations* volt.
+> A mobil alkalmazás neve korábban *Microsoft Dynamics 365 for Finance and Operations* volt.
 
 <a name="overview"></a>Áttekintés
 --------
@@ -90,7 +89,7 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 <tr class="even">
 <td>2</td>
 <td>Rendszergazda</td>
-<td><strong>A Microsoft Dynamics 365 for Operations 1611-es verziójának használatakor:</strong> Töltse le és telepítse azokat a tudásbáziscikkeket, amelyek lehetővé teszik a Microsoft által biztosított mobil munkaterületek használatát.</td>
+<td><strong>Ha Microsoft Dynamics 365 for Operations 1611-es verziót használ:</strong> Töltse le és telepítse azokat a tudásbáziscikkeket, amelyek lehetővé teszik a Microsoft által biztosított mobil munkaterületeket.</td>
 <td>További információ a következő témakörökben olvasható:
 <ul>
 
@@ -139,7 +138,7 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 <td>Felhasználó</td>
 <td>Töltse le és telepítse a mobilalkalmazást.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations androidos alkalmazás</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations Android-alkalmazás</a><BR/>
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations iOS-alkalmazás</a><BR/>
 (A Windows Phone nem támogatott)
 </td>
@@ -153,4 +152,3 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 </tr>
 </tbody>
 </table>
-

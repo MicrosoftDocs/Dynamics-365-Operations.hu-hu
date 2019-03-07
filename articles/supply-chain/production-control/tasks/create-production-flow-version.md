@@ -1,13 +1,13 @@
---- 
-title: "Termelési folyamat verziójának létrehozása"
-description: "Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja össze."
+---
+title: Termelési folyamat verziójának létrehozása
+description: Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja össze.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320673"
 ---
 # <a name="create-a-production-flow-version"></a>Termelési folyamat verziójának létrehozása
 
@@ -63,5 +63,4 @@ Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja
 12. Adja meg az Időszak a tényleges ciklusidőhöz (napok) mezőben adjon meg egy számot.
     * Adja meg az Időszak a tényleges ciklusidőhöz napjainak a számát. A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához. Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.  
 13. Kattintson a Mentés gombra.
-
 

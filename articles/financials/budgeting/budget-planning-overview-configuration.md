@@ -1,13 +1,13 @@
 ---
-title: "A költségvetés-tervezés áttekintése"
-description: "Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről."
+title: A költségvetés-tervezés áttekintése
+description: Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329919"
 ---
-
 # <a name="budget-planning-overview"></a>A költségvetés-tervezés áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Az Emberi erőforrások modullal a következők végezhetők el:
 -   Automatikusan elküldheti ellenőrzésre és jóváhagyásra a költségvetési terveket a munkalapokkal, az indoklásokkal és a mellékletekkel együtt.
 -   Egyesíthet több költségvetési tervet a szervezet alacsonyabb szintjéről egy magasabb szintű költségvetési tervbe. A szervezet egy magasabb szintű egy költségvetési terv kialakítása, továbbá az alacsonyabb szintű a szervezet a költségvetési felosztáshoz.
 
-A költségvetés-tervezés integrálva van más Microsoft Dynamics 365 for Finance and Operations modulokba is. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integrálva van a Microsoft Excel és a Microsoft Word programokban is, így ezen eszközök segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
+A Költségvetés-tervezés integrálva van a Microsoft Dynamics 365 for Finance and Operations más moduljaival. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integráltan jelen van a Microsoft Excel és a Microsoft Word programokban is, így ezen programok segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
 
 ## <a name="configuring-budget-planning"></a>A költségvetés-tervezés konfigurálása.
 A **Költségvetés-tervezési konfiguráció** lap tartalmazza a legtöbb beállítást a költségvetés-tervezés beállításához. Az alábbiakban olvasható néhány kulcsfontosságú tényezőt ajánlott figyelembe venni a költségvetés-tervezés konfigurálásakor. A konfiguráció befejezése után a költségvetés-tervezési folyamat beállítása következik.
@@ -188,7 +187,6 @@ A **Műveletek** menüben egy létező folyamat másolásával is létrehozhat �
 Egy másik hasznos parancs a **Műveletek** menüben a **Költségvetési folyamat állapotának megtekintése** link. Ez a parancs grafikus formában jeleníti meg a költségvetési terveket egy folyamat során a megfelelő adatokkal együtt, mint például a tervek munkafolyamat-állapota, összeg és egység szerinti összesítések, és egy kattintással elérhető navigáció a költségvetési tervekhez.
 
 [![Költségvetés-tervezési folyamat állapota](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

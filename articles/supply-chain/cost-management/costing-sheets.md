@@ -1,13 +1,13 @@
 ---
-title: "Költségszámítási táblázatok"
-description: "A költségszámítási táblázat beállításakor két célt kell szem előtt tartani. Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. A formázott megjelenítés neve költségszámítási táblázat. A második cél a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. Ebben a cikkben a költségszámítási táblázat beállításának két célkitűzése van leírva."
+title: Költségszámítási táblázatok
+description: A költségszámítási táblázat beállításakor két célt kell szem előtt tartani. Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. A formázott megjelenítés neve költségszámítási táblázat. A második cél a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. Ebben a cikkben a költségszámítási táblázat beállításának két célkitűzése van leírva.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312761"
 ---
-
 # <a name="costing-sheets"></a>Költségszámítási táblázatok
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ A költségszámítási verziók két blokkolási szabálya határozza meg, hogy
 A költségszámítási táblázat formátumának és a közvetett költségek számításának meghatározása után egy külön lépésben kell kezdeményeznie az adatok érvényesítését és mentését. A költségszámítási táblázat olyan formátumot határoz meg, amely vállalatszerte egységesen jeleníti meg a bekerülési költségeket. 
 
 A költségszámítási táblázat részeként jelenik meg a **Tételköltség kiszámítása** oldalon. A gyártott cikkek számított költségrekordjának költségszámítási táblázata az **Cikkár** képernyőn jeleníthető meg, a rendelés-specifikus számítási rekordé pedig az **Anyagjegyzék-számítás eredményei** képernyőn. A **Árszámítás** táblázat látható a termelési rendelés árszámítási lekérdező képernyőjén is.
-
 
 
 

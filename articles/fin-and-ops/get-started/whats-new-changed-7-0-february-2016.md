@@ -1,13 +1,13 @@
 ---
-title: "Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában"
-description: "Ez a leírás ismerteti az új vagy módosított a 7.0 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait."
+title: Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
+description: Ez a cikk a Microsoft Dynamics AX 7.0 aktuális verziójában található új vagy módosított szolgáltatásokat írja le. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334887"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
 [!include [banner](../includes/banner.md)]
 
-Ez a leírás ismerteti az új vagy módosított a 7.0 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait.
+Ez a cikk a Microsoft Dynamics AX 7.0 aktuális verziójában található új vagy módosított szolgáltatásokat írja le. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait.
 
 ## <a name="cost-management"></a>Költségkezelés
 
@@ -62,7 +61,7 @@ Ez a leírás ismerteti az új vagy módosított a 7.0 alkalmazásverziójú Mic
 <td>Célszerűbb a rendszer komfigurálása, mert az új címkék azokhoz a működési eseményekhez kapcsolódnak, amelyek ezt a feladástípust használják.</td>
 </tr>
 <tr>
-<td>A beszerzési ár, a költség és az eladási ár importálása/exportálása Microsoft Excel-ből vagy egy költségszámítási verzióból.</td>
+<td>A beszerzési ár, a költség és az eladási ár importálása/exportálása a Microsoft Excel programból vagy egy költségszámítási verzióból.</td>
 <td>Nem lehet megfelelően importálni árakat vagy a költségeket a költségszámítási verzióba, mivel az adatmodell egy InventDim azonosítót kér.</td>
 <td>Az adatentitások bevezetése lehetővé teszi egy importálási/exportálási funkció végrehajtását. Ez a funkció lehetővé teszi, hogy a felhasználók árakat vagy költségeket importáljanak/exportáljanak a költségszámítási verzióba.
 <ul>
@@ -119,7 +118,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 | A Microsoft Visual Studio használatával fejlesztheti a megoldásokat. | A Microsoft MorphX a fő fejlesztői környezet, de néhány változás a Visual Studio alkalmazásban következik be. | A Visual Studio az egyetlen fejlesztői környezet. | Megmaradtak az ismerős AX 2012 fogalmak, és azok problémamentesen igazodnak a Visual Studio keretéhez és paradigmáihoz. Lehetővé teszi a szokásos együttmáködést az egyéb .NET nyelvekkel és projektekkel. |
 | Állítsa össze az egységes köztes nyelvet (Common Intermediate language, CIL) az összes funkcióhoz. | Az X ++ fordítása: p-kód. | A vadonatúj X ++ fordító minden funkcióhoz generál CIL-t. A CIL ugyanaz a közvetítő nyelv, amelyet más .NET-alapú nyelvek használnak. | A CIL gyorsabb, hatékonyan tud a felügyelt dinamikus csatolású könyvtárakban (DLL) lévő osztályokra hivatkozni, és .NET segédprogramok nagyszámú eszközalapján futtatható. |
 | Üzletiintelligencia-jelentések és vizualizációk beágyazása a Microsoft Dynamics AX ügyfélbe. | Nem érhető el. | Könnyen elsajátítható és folyékony képi megjelenítés létrehozása. | Az Üzleti intelligencián alapuló döntéshozatali információkkal szolgál. |
-| Integráció a Microsoft Office Outlook programmal | Nem érhető el. | Az új lehetőségek közé tartozik az Excel Data Connector alkalmazás, a **Munkafüzettervező** lap, az API exportálása és a Dokumentumkezelés. | Termelékenységmegoldásokat hozhat létre a végfelhasználói számára. |
+| Integráció a Microsoft Office rendszerrel. | Nem érhető el. | Az új lehetőségek közé tartozik az Excel Data Connector alkalmazás, a **Munkafüzettervező** lap, az API exportálása és a Dokumentumkezelés. | Termelékenységmegoldásokat hozhat létre a végfelhasználói számára. |
 | Az építés, a tesztelés és a telepítés automatizálása. | Részben elérhető | Telepítse a fejlesztői topológiát a Fejlesztő és az Építő virtuális gép használatával. Virtuális gép Építás automatikus beállítása a Visual Studio Online-ból (VSO) származó modulok felfedezésére, építésére és tesztek futtatására. A C\# és az X ++ modul fordítása és hivatkozások támogatottak. | A tesztelés és ellenőrzések költségének és munkájának csökkentésével növeli a fejlesztői termelékenységet. |
 | A felülrétegzés és a kiterjesztés testreszabása. | Kiterjesztések nem érhetők el. | A Dynamics AX jelenlegi verziója rendelkezik egy új testreszabási modell-lel. | Testre szabhatja azoknak a modellelemeknek a forráskódját és metaadatait, melyeket a Microsoft vagy harmadik fél Microsoft-partnerek szállítanak le. |
 | Új vezérlőelemek és felhasználói felület elemek építése az X++ és modern webes keretrendszer használatával. | Az egyéni vezérlők olyan külső keretrendszerekre támaszkodnak, mint például a Microsoft ActiveX és a Windows megjelenítési alaprendszer (WPF). | Célszerűbb vezérlőelemeket építeni az aktuális verzióba. Az X ++ keretrendszer alkalmazás működésére és az üzleti logikára használható, és a HTML/JavaScript-alapú ügyfél lehetővé teszi a modern képi megjelenítést. | A vezérlőket ki lehet úgy alakítani, hogy úgy nézzenek ki és viselkedjenek úgy, mint a Dynamics AX kulcsrakész (OOB) vezérlők. |
@@ -141,7 +140,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 </thead>
 <tbody>
 <tr>
-<td>Számlastruktúrák exportálás a Microsoft Excel programba.</td>
+<td>Számlastruktúrák exportálása Microsoft Excel alkalmazásba.</td>
 <td>Nem érhető el.</td>
 <td>Most már kijelölhet egy számlastruktúrát és exportálhatja az Excel programba.</td>
 <td>Számos vevő kérte számlastruktúrák exportálásának lehetőségét az Excel programba a könnyebb szűrés miatt.</td>
@@ -213,15 +212,15 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <td>Ekkor megtekintheti a pénzügyi jelentéseket anélkül, hogy másik ügyfélhez/alkalmazáshoz kellene hozzáférnie.</td>
 </tr>
 <tr>
-<td>A pénzügyi jelentések (Management reporter) A Microsoft Dynamics AX kliensben ki is nyomtathatók.</td>
+<td>A pénzügyi jelentések (Management reporter) kinyomtathatók a Microsoft Dynamics AX kliensből.</td>
 <td>Jelentés nyomtatásakor a böngésző nyomtatási beállításai kerülnek felhasználásra, és csak az kerül kinyomtatásra, amit a felhasználó a képernyőn lát.</td>
 <td>A felhasználó kiválaszthatja a jelentés részletességi szintjét és oldalbeállításait a Dynamics AX kliens pénzügyi jelentés Nyomtatás opciójának használatával.</td>
 <td>A jelentések kinyomtatásakor nem weblap kerül kinyomtatásra, hanem a nyomtatás aszerint történik, amit a felhasználó elvár.</td>
 </tr><tr>
-<td>Pénzügyi adatok elemzése a „Pénzügyi teljesítmény felügyelete” csomag használatával a PowerBI tartalomhoz.</td>
+<td>Pénzügyi adatok elemzése a „Pénzügyi teljesítmény felügyelete” csomag használatával a Power BI tartalomhoz.</td>
 <td>Nem érhető el.</td>
 <td>A PowerBI.com oldalon válassza az <strong>Adatok átvétele</strong> lehetőséget, majd válassza ki a <strong>Dynamics AX – Pénzügyi teljesítmény</strong> tartalomcsomagot. Adja meg a Dynamics AX végpont URL-címét, hogy megtekinthesse az adatainak az irányítópulton való megjelenését.</td>
-<td>A vállalatok három-négy kattintással fontos pénzügyi adatokat tartalmazó PowerBI irányítópultot telepíthetnek. A szervezet személyre szabhatja a tartalmat.</td>
+<td>A vállalatok három-négy kattintással fontos pénzügyi adatokat tartalmazó Power BI irányítópultot telepíthetnek. A szervezet személyre szabhatja a tartalmat.</td>
 </tr>
 <tr>
 <td>Pénzügyi időszak lezárási folyamatainak nyomon követése.</td>
@@ -289,13 +288,13 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <tr>
 <td>Segíti a felhasználókat a rájuk váró, munkaterületekkel való munka jobb megértésében.</td>
 <td>A szerepkörfőoldal áttekintést ad a felhasználó munkakörére vonatkozó információkról a vállalatnál vagy a szervezetben.</td>
-<td>A munkaterületek egy új koncepció a Dynamics AX-ben, aminek célja a szerepkörfőoldalak lecserélése, mint a feladatok és specifikus oldalakra történő navigáció elsődleges módja. Egy egyoldalas áttekintést nyújtanak az üzleti tevékenységről, és áttekinthetőbbé teszik az aktuális állapotot, a következő feladatokat, és a folyamat vagy felhasználó teljesítményét. A munkaterületek részletesebbek, mint az AX 2012 szerepkörfőoldalak, és a felhasználók hozzáférhetnek több munkaterülethez is hozzáférhetnek.</td>
+<td>A munkaterületek egy új koncepció a Dynamics AX rendszerben, aminek célja a szerepkörfőoldalak lecserélése, mint a feladatok és specifikus oldalakra történő navigáció elsődleges módja. Egy egyoldalas áttekintést nyújtanak az üzleti tevékenységről, és áttekinthetőbbé teszik az aktuális állapotot, a következő feladatokat, és a folyamat vagy felhasználó teljesítményét. A munkaterületek részletesebbek, mint az AX 2012 szerepkörfőoldalak, és a felhasználók hozzáférhetnek több munkaterülethez is hozzáférhetnek.</td>
 <td>A munkaterületek célja, hogy növeljék a felhasználói hatékonyságot. A fejlesztőknek a termék által támogatott minden fontosabb „aktivitás” számára külön munkaterületet kell létrehozniuk. Az AX 2012-től örökölt szerepkörfőoldal a Dynamics AX mostani verziójában általában több munkaterülettel lesz helyettesítve.</td>
 </tr>
 <tr>
 <td>Űrlapok válaszképessé tétele a megjelenítési terület vagy készülékméret függvényében.</td>
 <td>Az AX 2012-ben az űrlapok tartalma mereven oszlopokban jelent meg, és az űrlap teljes magassága/szélessége nagyrészt az űrlapon található vezérlők függvényében került meghatározásra.</td>
-<td>A legújabb Dynamics AX-ben tapasztalható web-re történő váltással az űrlapok méretei már a böngésző megjelenítési területe vagy a készülék mérete alapján kerülnek meghatározásra. A vezérlők és elrendezési paraméterek megváltoztatásra vagy hozzáadásra kerültek a megjelenítési terület méretére való jobb válaszképesség elérése érdekében.</td>
+<td>A legújabb Dynamics AX rendszerben tapasztalható web-re történő váltással az űrlapok méretei már a böngésző megjelenítési területe vagy a készülék mérete alapján kerülnek meghatározásra. A vezérlők és elrendezési paraméterek megváltoztatásra vagy hozzáadásra kerültek a megjelenítési terület méretére való jobb válaszképesség elérése érdekében.</td>
 <td>Az űrlap tartalmának hatékonyabban kell tudnia válaszolni, a böngészőn vagy eszközön elérhető megjelenítési terület minél hatékonyabb kihasználása érdekében. A válaszképesség elérése változtatásokat követelhet meg az űrlapok modellezését illetően.</td>
 </tr>
 <tr>
@@ -328,7 +327,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 </tbody>
 </table>
 
-## <a name="human-capital-management"></a>Emberierőforrás-menedzsment
+## <a name="human-capital-management"></a>Emberierőforrás-menedzselés
 
 <table>
 <thead>
@@ -500,7 +499,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <tr>
 <td>(EZ) Fizetési tanács, Részvételi bizonylat és Kezelési jelentés a fizetésekhez.</td>
 <td>Ezek a jelentések mind végrehajtottak és SSRS jelentések.</td>
-<td>Ezeket a jelentéseket a Microsoft Excelben használt nyílt XML-sablonként hajtották végre.</td>
+<td>Ezeket a jelentéseket a Microsoft Excel alkalmazásban használt nyílt XML-sablonként hajtották végre.</td>
 <td>Az elektronikus fizetési konfigurációk tartalmazzák a fizetési fájlformátum beállításokat és a sablonokat. Ez lehetővé teszi a felhasználók számára az összes előny elérését és a jelentések teljes körű testreszabását az Elektronikus jelentések használatakor.</td>
 </tr>
 <tr>
@@ -550,7 +549,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 | Figyelmeztesse a felhasználót, ha egy értékesítési rendelés vagy termelési rendelés nem áll készen szállításra az ütemezett dátumkor. | Az Alaptervezés által létrehozott figyelmeztetések neve: *határidő-üzenetek*. A *Határidő* a két fél között létrejött szerződés egy eszköznek a mai napon megállapodott áráról (a *határidő ár*), annak ellenére, hogy a szállítás és fizetés egy jövőbeli időpontban (a *szállítási dátum*) történhet. | A *Határidős üzenetek* és a *határidős dátumok* át lettek nevezve, új nevük: *kiszámított késések* és *halasztott dátumok*. | Az AX 2012 rendszerben használt terminológia a nem volt pontos és a hibás fordításokhoz vezetett. |
 | Nyerjen gyors betekintést az alaptervezés futtatásának állapotába, a sürgős tervezett rendelésekbe és a tervezett rendelésekbe, amelyek késedelmet okoznak. | Az információ rendelkezésre áll, de több képernyőn található. | Az **Alaptervezés** munkaterület egy pillantással áttekinthető adatokat kínál arról, hogy mikor fejeződött be a legutóbbi alaptervezés futtatása, fellépett-e hiba, mik a sürgős tervezett rendelések, és mely tervezett rendelések okoznak késést. | Nagy előnye száramzik a munkaterület nyújtotta áttekintésből. Az Alaptervezés útmutatásához és a termelés növeléséhez releváns adatokat gyűjtött a rendszer egybe. |
 | Az igény-előrejelzések frissítésére használjon Excel formátumot. | Nem érhető el. | Kihasználhatja az Excellel való zökkenőmentes integráció előnyeit, amikor beírja az igény-előrejelzéseket, frissítéseket végez, vagy törli az igény-előrejelzéseket. | Segít növelni a hatékonyságot és termelékenységet. |
-| Becsülje meg a jövőbeli keresletet és hozzon létre keresleti előrejelzéseket a múltbéli tranzakcióadatok alapján. | A Microsoft Dynamics AX 2012 R3-ban az előrejelzési modellt a Microsoft SQL Server elemzési szolgáltatást igény-előrejelzés létrehozásához használják. | Becsülje meg a jövőbeli keresletet a Microsoft Azure gép tanulás felhőszolgáltatás erejével és kiterjeszthetőségével. Használata könnyű, és kiterjeszti az előrejelzési modelleket a gépi tanulásban, hogy megfeleljen a vevői követelményeknek. A szolgáltatás kiválasztja a legjobban összeillő modelleket, és fő teljesítménymutatókat (KPI) kínál fel, amelyeket az előrejelzés pontosságának kiszámításához lehet felhasználni. | Hozzon létre pontosabb előrejelzéseket a gépi tanulási módszerek használatával. |
+| Becsülje meg a jövőbeli keresletet és hozzon létre keresleti előrejelzéseket a múltbéli tranzakcióadatok alapján. | A Microsoft Dynamics AX 2012 R3-ban az előrejelzési modellek a Microsoft SQL Server Analysis Services szolgáltatásba igény-előrejelzések készítéséhez használatosak. | Becsülje meg a jövőbeli keresletet a Microsoft Azure gépi tanulás felhőszolgáltatás erejével és kiterjeszthetőségével. Használata könnyű, és kiterjeszti az előrejelzési modelleket a gépi tanulásban, hogy megfeleljen a vevői követelményeknek. A szolgáltatás kiválasztja a legjobban összeillő modelleket, és fő teljesítménymutatókat (KPI) kínál fel, amelyeket az előrejelzés pontosságának kiszámításához lehet felhasználni. | Hozzon létre pontosabb előrejelzéseket a gépi tanulási módszerek használatával. |
 | Optimalizálja a rendelési dátumot és mennyiséget a kapcsolódó műveletek áttekintésére alapozva, az alaptervezés futtatásából. | Műveletek diagram áttekintése elérhető, de megjeleníti az összes kapcsolódó műveletet. Műveletek alkalmazásakor azok azonnal eltűnnek a nézetből. | A műveletek diagram jobb áttekintést nyújt. Ez magában foglalja azokat a beállításokat, amelyek csak az alkalmazott műveleteket és a kapcsolódó műveleteket hagyják megjeleníteni. Műveletek alkalmazásakor halványítva jelennek meg, de továbbra is láthatók. Emiatt az áttekintés megmarad. A műveletek diagramhoz további információk adódnak hozzá, hogy az adatok egy oldalon jelenjenek meg. | Kihasználhatja a termelés fokozódásának előnyeit, hiszen csak az aktuális műveletekre összpontosít. |
 
 ## <a name="procurement-and-sourcing"></a>Beszerzés és forrás
@@ -559,7 +558,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 |------------------|------------------|-----------------|------------------------|
 | Használja a **Beszerzési rendelés előkészítése** munkaterületet, hogy gyors betekintést nyerjen az előkészítés alatt álló beszerzési rendelések állapotába. | Nem támogatott | A **Beszerzési rendelés előkészítése** munkaterület áttekintést nyújt a rendelésekről kezdve onnan, hogy vázlatként létrehozzák őket és nyomon követi azokat a munkafolyamat-jóváhagyási állapoton keresztül egészen a visszaigazolásig. | A beszerzési részlegnek nem kell már több oldal adatait átböngészni, hanem az áttekintésből tájékozódhat, amelyet a munkaterületen biztosít. |
 | Használja a **Beszerzési rendelés bevételezése és követése** munkaterületet, hogy gyors betekintést nyerjen a bevételezésre váró beszerzési rendelésekbe, így segítve azok lekövetését. | Nem támogatott | A **Beszerzési rendelés bevételezése és követése** munkaterület azokról a visszaigazolt beszerzési megrendelésekről nyújt áttekintést, amelyek bevételezésre vagy szállításra várnak. A munkaterület a lejárt bevételezésű vagy bevételezésre várók listáját tartalmazza, hogy segítsen a proaktív proaktív ellenőrzéssel és a szállító általi követéssel. A munkaterület továbbá olyan beszerzési megrendeléseket is listáz, amelyeknek a beérkezési regisztrációja megtörtént a a raktárban, így segít biztosítani, hogy a bevételezést feladták. Azok a Beszerzésirendelés-visszaküldések is elérhetők az ellenőrzés számára, amelyek még nem kerültek kiszállításra. | A beszerzési részlege hasznosíthatja a munkaterület nyújtotta áttekintést. A követés útmutatásához és a termelés növeléséhez releváns adatokat gyűjtött a rendszer egybe. |
-| Küldjön beszerzési rendeléseket visszaigazolásra a szállítói portálra , melyet a Dynamics AX kliens működtet. Hagyja, hoyg a szállító jóváhagyja vagy elutasítsa. | Nem támogatott | A szállítói portál felület lehetővé teszi, hogy a szállítók megkapják a beszerzési rendeléseket jóváhagyásra vagy elutasításra. Lehetővé teszi továbbá a szállító számára, hogy áttekintést nyerjen egy számlára érkezett összes jóváhagyott beszerzési rendelésről. A beszerző küldhet olyan beszerzési rendelést, melyben visszaigazolást kér a szállítótól. A szállítónak regisztrált AAD (Microsoft Azure Active Directory – Azure AD) felhasználónak kell lennie a Dynamics AX rendszerben, rendelkeznie kell kapcsolattartóval, és kell hogy legyen kijelölt biztonsági szerepköre. | A beszerzési részleg előnyére szolgál, hogy csökken a papírmunka és a beszerzési rendelésekre érkező válaszok manuális nyomon követése, mivel mindez közvetlenül a rendszerben történik. Ha egy valós tartalommal bíró forrás van, kevesebb a félreértés a vevő és a szállító között. |
+| Küldjön beszerzési rendeléseket visszaigazolásra a szállítói portálra , melyet a Dynamics AX kliens működtet. Hagyja, hoyg a szállító jóváhagyja vagy elutasítsa. | Nem támogatott | A szállítói portál felület lehetővé teszi, hogy a szállítók megkapják a beszerzési rendeléseket jóváhagyásra vagy elutasításra. Lehetővé teszi továbbá a szállító számára, hogy áttekintést nyerjen egy számlára érkezett összes jóváhagyott beszerzési rendelésről. A beszerző küldhet olyan beszerzési rendelést, melyben visszaigazolást kér a szállítótól. A szállítónak regisztrált Microsoft Azure Active Directory (Azure AD) felhasználónak kell lennie a Dynamics AX rendszerben, rendelkeznie kell kapcsolattartóval, és kell hogy legyen kijelölt biztonsági szerepköre. | A beszerzési részleg előnyére szolgál, hogy csökken a papírmunka és a beszerzési rendelésekre érkező válaszok manuális nyomon követése, mivel mindez közvetlenül a rendszerben történik. Ha egy valós tartalommal bíró forrás van, kevesebb a félreértés a vevő és a szállító között. |
 
 ## <a name="projects"></a>Projektek
 
@@ -571,7 +570,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 
 ### <a name="retail-hq"></a>Kiskereskedelmi munkaállomás
 
-A Microsoft Azure rendszer kiskereskedelmi munkaállomása a webes kliensen keresztül a kereskedelmi műveletek minden részébe teljes betekintést és központosított kezelést nyújt.
+Microsoft Azure rendszerbeli kiskereskedelmi munkaállomás a webes ügyfélen keresztüli kereskedelmi műveletek minden tekintetében közponotsított irányítást és teljes átláthatóságot kínál.
 
 <table>
 <thead>
@@ -624,7 +623,7 @@ A <strong>Katalóguskezelés</strong> munkaterület a következő funkciókat te
 <ul>
 <li>Új csatornák és kapcsolódó entitások létrehozása és konfigurálása.</li>
 <li>Napi üzlet tevékenységek kezelése.</li>
-<li>Kiskereskedelmi tranzakciók feldolgozása a Microsoft Dynamics AX-ben, és a kiskereskedelmi kimutatások készítése, és a Microsoft Dynamics AX-készlet és a pénzügyi adatok frissítése.</li>
+<li>Kiskereskedelmi tranzakciók feldolgozása Microsoft Dynamics AX rendszerben , kiskereskedelmi kimutatások létrehozása, és Microsoft Dynamics AX készletek és a pénzügyi adatok frissítése.</li>
 </ul>
 </td>
 <td>A <strong>Csatornatelepítés</strong> munkaterület a következő feladatok elvégzését teszi lehetővé:
@@ -655,7 +654,7 @@ A <strong>Katalóguskezelés</strong> munkaterület a következő funkciókat te
 <tr>
 <td>Kiskereskedelmi IT műveletek kezelése.</td>
 <td>A felhasználónak több képernyőt kell elérnie.</td>
-<td>A <strong>Kiskereskedelmi informatikai</strong> munkaterület lehetővé teszi, hogy az adott csatornánhoz tartozó Commerce Data Exchange-lekérdezések egyetlen helyen történjenek, így a következő feladatokat végezheti:
+<td>A <strong>Kiskereskedelmi informatikai</strong> munkaterület lehetővé teszi, hogy az adott csatornához tartozó Commerce Data Exchange (Kereskedelmi Adatcsere)–lekérdezések egyetlen helyen történjenek, így a következő feladatokat végezheti el:
 <ul>
 <li>Munkamenetek letöltése.</li>
 <li>Munkamenetek feltöltése.</li>
@@ -668,10 +667,10 @@ A <strong>Katalóguskezelés</strong> munkaterület a következő funkciókat te
 <td>Adatok importálása/exportálása adatentitások használatával.</td>
 <td>Az AX 2012 támogatja a kész Microsoft Dynamics Retail Management System (RMS) áttelepítését az Adatimportálási és -exportálási keretrendszeren keresztül.</td>
 <td>A kiskereskedelmi adatentitások ki lettek bontva, hogy minden a kiskereskedelemhez kapcsolódó fő- és hivatkozási adatot támogassanak. Továbbá a Dynamics AX megoldás egészére kiterjed az adatentitások támogatása.</td>
-<td>Az adatentitások lehetővé teszik a vevők számára a metaadat-központú adatimportálást és adatexportálást. Továbbá az adatentitások segítségével a vevők integrálhatják a Dynamics AX-t külső programok segítségével is.</td>
+<td>Az adatentitások lehetővé teszik a vevők számára a metaadat-központú adatimportálást és adatexportálást. Továbbá az adatentitások segítségével a vevők integrálhatják a Dynamics AX rendszert külső programok segítségével is.</td>
 </tr>
 <tr>
-<td>Hajtson végre intelligens elemzést a BI jelentések segítségével a Dynamics Microsoft AX-ből és a POS-ügyfélből.</td>
+<td>Hajtson végre intelligens elemzést a BI jelentések segítségével a Dynamics Microsoft AX rendszerből és a POS-ügyfélből.</td>
 <td>Több mint 25 háttérirodai és öt csatornaoldal-jelentés elérhető.</td>
 <td>Több mint 30 háttérirodai és 10 csatornaoldal-jelentés elérhető.</td>
 <td>Ezek a jelentések több BI-t tesznek lehetővé a vevők számára a trendek előrejelzésére, elképzelések felfedésére és a folyamatos csúcsteljesítményen való működésre.</td>
@@ -679,8 +678,8 @@ A <strong>Katalóguskezelés</strong> munkaterület a következő funkciókat te
 <tr>
 <td>Elemezze a kiskereskedelmi csatorna értékesítési adatait a „Kiskereskedelmi csatorna teljesítményének felügyelete” Power BI tartalom segítségével.</td>
 <td>Nem érhető el.</td>
-<td>A PowerBI.com oldalon jelölje be az <strong>Adatok átvétele</strong> lehetőséget, majd válassza ki a <strong>Dynamics AX – Kiskereskedelmi csatorna teljesítménye</strong> tartalomcsomagot. Adja meg a Dynamics AX végpont URL-címét, hogy megtekinthesse az adatainak az irányítópulton való megjelenését.</td>
-<td>A vállalatok három-négy kattintással fontos pénzügyi adatokat tartalmazó PowerBI irányítópultot telepíthetnek. A szervezet személyre szabhatja a tartalmat. Ezenkívül a felhasználók belehelyezhetik Power BI irányítópult-lapokat személyre szabott munkaterületükbe a Dynamics AX rendszerben, hogy segítségükkel egyetlen pillantással áttekinthessék az elemzési adatokat.</td>
+<td>A PowerBI.com oldalon jelölje be az <strong>Adatok átvétele</strong> lehetőséget, majd válassza ki a <strong>Dynamics AX – Kiskereskedelmi csatorna</strong> teljesítménye tartalomcsomagot. Adja meg a Dynamics AX végpont URL-címét, hogy megtekinthesse az adatainak az irányítópulton való megjelenését.</td>
+<td>A vállalatok három-négy kattintással fontos pénzügyi adatokat tartalmazó Power BI irányítópultot telepíthetnek. A szervezet személyre szabhatja a tartalmat. Ezenkívül a felhasználók belehelyezhetik Power BI irányítópult-lapokat személyre szabott munkaterületükbe a Dynamics AX rendszerben, hogy segítségükkel egyetlen pillantással áttekinthessék az elemzési adatokat.</td>
 </tr>
 <tr>
 <td>Vevői engedélyek konfigurálása.</td>
@@ -734,16 +733,16 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 <td>Tárolt és skálázható elektronikus kereskedelmi szolgáltatásokat nyújt, amelyek harmadik fél online áruházak esetében használhatók.</td>
 </tr>
 <tr>
-<td>A Microsoft Dynamics AX háttériroda és a csatornák közötti adatáthelyezés a Commerce Data Exchange használatával.</td>
-<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tudnivalókért lásd: <a href="https://technet.microsoft.com/library/dn741440.aspx">Kereskedelmi Adatcsere [AX 2012]</a>.</td>
-<td>Funkcionális paritás van a Microsoft Dynamics AX 2012 CU8-cal. Azonban vegye figyelembe a következőket:
+<td>Adatok áthelyezése Microsoft Dynamics AX back-office és a csatornák között a Commerce Data Exchange használatával.</td>
+<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tájékoztatást a következő témakörben talál: <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>A Microsoft Dynamics AX 2012 CU8-cal funkcionális paritás áll rendelkezésre. Azonban vegye figyelembe a következőket:
 <ul>
-<li>A Commerce Data Exchange-t újra kialakították a felhő számára.</li>
+<li>Commerce Data Exchange funkciót újra kialakították a felhő számára.</li>
 <li>Az Async szolgáltatás közvetlen adatbázis-elérést használ a csatorna-adatbázishoz.</li>
-<li>A Commerce Data Exchange: a valós idejű szolgáltatás a Microsoft Dynamics AX egyéni szolgáltatásként üzemel.</li>
+<li>Commerce Data Exchange: Valós idejű szolgáltatás, amely Microsoft Dynamics AX egyéni szolgáltatáskén van tárolva.</li>
 <li>Az MPOS az offline adatbázisok és a Kiskereskedelmi kiszolgáló közötti szinkronizálást kezeli.</li>
 </ul></td>
-<td>A Commerce Data Exchange-t újra kialakították a felhőplatform számára. Továbbra is az adatátvitelt kezeli a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között.</td>
+<td>Commerce Data Exchange funkciót újra kialakították a felhőplatform számára. Továbbra is az adatátvitelt kezeli a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között.</td>
 </tr>
 <tr>
 <td>Támogatja az automatikus felismerést és konfigurálást, a félig integrált csatornák közötti fizetések feldolgozásátaz SDK kifizetés segítségével.</td>
@@ -754,15 +753,15 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 <li>Oldal a kifizetés elfogadására.</li>
 <li>Az LS5300 és az MX925, mint Kiskereskedelmi SDK-ban lévő mintakódok perifériás támogatása.</li>
 </ul></td>
-<td>A Dynamics AX jelenlegi verziója támogatja az összes meglévő Microsoft Dynamics AX-et a Kiskereskedelmi 2012 hitel-/betéti kártya funkciókhoz és négy új fejlesztéséhez.</td>
+<td>A Dynamics AX jelenlegi verziója támogatja az összes meglévő Microsoft Dynamics AX rendszert a Kiskereskedelmi 2012 hitel-/betéti kártya funkciókhoz és négy új fejlesztéséhez.</td>
 <td>Lehetővé teszi a vevő számára hitel-/betéti kártya tranzakciók lefolytatását a kifizetésekhez.</td>
 </tr>
 <tr>
-<td>Eszközök aktiválása egy Microsoft-fiók (Microsoft Azure Active Directory (ADD)) segítségével.</td>
+<td>Eszközök aktiválása a Microsoft-fiók segítségével (Microsoft Azure Active Directory (Azure AD)).</td>
 <td>Nem érhető el.</td>
 <td>A következő funkciók érhetők el:
 <ul>
-<li>Fokozott biztonság az Azure AD-alapú aktiválás segítségével a felhőhöz.</li>
+<li>Fokozott biztonság az Azure AD alapú aktiválás segítségével a felhőhöz.</li>
 <li>Fokozott biztonság a tokenkezelésben.</li>
 <li>Fokozott megbízhatóság, hibaelhárítás és hibaüzenetküldés az aktiválás során</li>
 <li>Egyszerűsített, az aktiváláshoz tartozó informatikai felügyeleti feladatok.</li>
@@ -770,7 +769,7 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 </ul></td>
 <td>Ez a következő előnyökkel jár:
 <ul>
-<li>A biztonsági rendszer az Azure AD-n és az eszköztokenen/-azonosítón (RS hívások, amelyek tokent használnak, felhasználó-specifikus alkalmazástárolás) keresztül ki van terjesztve.</li>
+<li>A biztonsági rendszer az Azure AD rendszeren és az eszköztokenen/-azonosítón keresztül ki van terjesztve (RS hívások, amelyek tokent használnak, felhasználó-specifikus alkalmazástárolás).</li>
 <li>Leállítja az MPOS (fizikai eszköz) nem negedélyezett távoli használatát.</li>
 <li>Nyomon követi az MPOS eszközöket PCI megfelelés céljából.</li>
 <li>Leképezi az üzleti entitással (nyilvántartás) a fizikai eszközöket az eszköz token használatával.</li>
@@ -786,7 +785,7 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 <li>Támogatja a képfeltöltést és megtekintést az entitások lapjairól (<strong>Termékek</strong>, <strong>Katalógusok</strong> stb.) a Médiatárból történő képhivatkozással vagy az asztalon lévő kép feltöltésével.</li>
 <li>Képek optimalizálása gyorsnézeti képhez, egyéni mérethez és eredeti mérethez.</li>
 <li>Entitások tömeges hivatkozása sablon és háttérfeladatok alapján tömeges társításhoz.</li>
-<li>A Microsoft Excel-integráció felülírja az elnevezési konvenciók és előre meghatározott elérési utak attribútumcsoport-korlátozását.</li>
+<li>A Microsoft Excel integráció felülírja az elnevezési konvenciók és előre meghatározott elérési uatak attribútumcsoport-korlátozását.</li>
 <li>Támogatja az offline képeket és a biztonságos képeket a személyes azonosításra alkalmas adatok tartalma esetében, mint például a kiskereskedelem által szolgáltatott alkalmazotti és vevői képek.</li>
 </ul></td>
 <td><ul>
@@ -928,7 +927,7 @@ A kiskereskedelemre és keresekedelemre fókuszált konfigurációs beállítás
 <li>Eseményindító előttiek és utániak, amelyekkel könnyen meghosszabbítható egy munkafolyamat.</li>
 <li>Művelet- és alkalmazás-eseményindítók.</li>
 </ul>
-Ezenkívül rendelkezésre áll egy olyan keretrendszer, amely lehetővé teszi, hogy ezeket az összetevőket létrehozza és csomagolja az MSBuild használatával, majd problémamentesen telepítse a testreszabást az LCS-en (Microsoft Dynamics Lifecycle Services) keresztül.</td>
+Ezenkívül rendelkezésre áll egy olyan keretrendszer, amely lehetővé teszi, hogy ezeket az összetevőket létrehozza és csomagolja az MSBuild használatával, majd problémamentesen telepítse a testreszabást a Microsoft Dynamics Lifecycle Servicesen (LCS) keresztül.</td>
 <td>A kiskereskedőknek nagyon speciális követelményeik vannak, műveleti szektoroktól és földrajzi régióktól függően. Egy könnyen bővíthető platform biztosítása által lehetővé tesszük a szektorokban és piacokon történő használatot. Mivel a Kiskereskedelem nagyon elosztott architektúrával is rendelkezik, a problémamentes telepítés nagyban javítja a termelékenységet.</td>
 </tr>
 </tbody>
@@ -959,14 +958,14 @@ Az LCS (Életciklus Szolgáltatások–Lifecycle Services) olyan szolgáltatásc
 </ul>
 Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetevő-telepítés az önkiszolgáló rendszer telepítésén keresztül:
 <ul>
-<li>Kiskereskedelmi Modern Pénztár.</li>
+<li>Retail Modern POS.</li>
 <li>Kiskereskedelmi Hardver Állomás.</li>
 <li>A testreszabott csomagok feltöltésének és terjesztésének támogatása az önkiszolgáló-telepítésen keresztül.</li>
 </ul></td>
 <td>A felhőtelepítési szolgáltatások a következő előnyökkel járnak:
 <ul>
 <li>Jelentősen csökkentett telepítési munka és Kiskereskedelmi központ összetettsége.</li>
-<li>Anyanyelvi telepítés a Microsoft Azure nyilvános felhőhöz.</li>
+<li>Anyanyelvi telepítés az Microsoft Azure nyilvános fehőhöz</li>
 <li>Az üzleten belüli összetevők fejlesztett önkiszolgáló-telepítése a konfiguráció egyszerűbbé tétele érdekében</li>
 </ul></td>
 </tr>
@@ -1027,11 +1026,10 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 
 | Mit lehet tenni? | Dynamics AX 2012 | Dynamics AX 7.0 | Miért fontos ez? |
 |------------------|------------------|-----------------|------------------------|
-| Raktári mobileszköz-portál letöltése, telepítése és konfigurálása. | A őportált letöltheti, telepítheti és konfigurálhatja a Microsoft Dynamics AX telepítési folyamata során normál beállításokon keresztül. Önálló, helyszíni telepítésre és konfigurációra tervezték. | A különálló telepítőt a menüelemen keresztül, a Raktári kezelésben töltheti le. Önálló, helyszíni telepítésre és konfigurációra tervezték. | Amikor a mobileszköz-funkciót beállítja, telepítenie és konfigurálnia kell a Raktári Mobileszköz-portált helyileg, és csatlakoznia kell a Dynamics AX programhoz a felhőben. |
+| Raktári mobileszköz-portál letöltése, telepítése és konfigurálása. | A portált letöltheti, telepítheti és konfigurálhatja a Microsoft Dynamics AX telepítési folyamata során normál beállításokon keresztül. Önálló, helyszíni telepítésre és konfigurációra tervezték. | A különálló telepítőt a menüelemen keresztül, a Raktári kezelésben töltheti le. Önálló, helyszíni telepítésre és konfigurációra tervezték. | Amikor a mobileszköz-funkciót beállítja, telepítenie és konfigurálnia kell a Raktári Mobileszköz-portált helyileg, és csatlakoznia kell a Dynamics AX programhoz a felhőben. |
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy módosult elemek](whats-new-changed.md)
 
 [Új feladat-útmutatók érhetők el (2016. február)](new-task-guides-available-february-2016.md)
-

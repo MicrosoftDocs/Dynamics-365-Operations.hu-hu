@@ -1,13 +1,13 @@
---- 
-title: "Vevői kifizetések feltételeinek kialakítása"
-description: "Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be."
+---
+title: Vevői kifizetések feltételeinek kialakítása
+description: Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 49f4047ab4bff6bdfbe8326a6680f9d8f9762c95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e0e43962bea3ff1c3adafa73da4ce3862963a51
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312485"
 ---
 # <a name="establish-customer-payment-terms"></a>Vevői kifizetések feltételeinek kialakítása
 
@@ -66,5 +66,4 @@ Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot
     * Ha a „Számlák a számlasorokban” beállítást választja, úgy a készpénzfizetési engedmény a szállítói számlasorok ugyanazon eszköz/költség főszámlájára kerül feladásra. A „Fő számla használata szállítói számlákhoz” lehetőség használata esetén a készpénzfizetési engedmény feladása a „Fő számla szállítói számlákhoz” elemnél megjelölt fő számlára történik. Ehhez a példához válassza a „Fő számla használata szállítói számlákhoz” lehetőséget.  
 26. Adja meg a fő számlát, amelyhez a szállítói számlákon feladásra kerül a készpénzfizetési engedmény.
 27. Kattintson a Mentés gombra.
-
 

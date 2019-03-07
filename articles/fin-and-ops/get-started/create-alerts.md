@@ -1,13 +1,13 @@
 ---
-title: "Figyelmeztetési szabályok létrehozása"
-description: "Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások."
+title: Figyelmeztetési szabályok létrehozása
+description: Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329413"
 ---
-
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály** létre
 7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz.
 8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. Ez az az üzenet, amely megjelenik egy figyelmeztetés kezdeményezése esetén.
 9. Kattintson az **OK** gombra a beállítások mentéséhez és a figyelmeztetési szabály létrehozásához.
-

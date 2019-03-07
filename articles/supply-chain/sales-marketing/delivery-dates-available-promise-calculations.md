@@ -1,13 +1,13 @@
 ---
-title: "Rendelési ígéretek"
-description: "A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek."
+title: Rendelési ígéretek
+description: A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312347"
 ---
-
 # <a name="order-promising"></a>Rendelési ígéretek
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Létrehozhat egy értékesítési rendeléssort a termékhez és megadhat **150*
 Mivel a szállítási dátum ellenőrzésének módja az ígérethez rendelkezésre áll, az ígérethez rendelkezésre áll adatokat ki kell számítani a legkorábbi szállítási dátumhoz. A beállítások alapján a késleltetett beszerzési rendelés és értékesítési rendelés feldolgozásra kerül és kapott ígérethez rendelkezésre állási mennyiség a jelenlegi dátumhoz 0. Holnap, amikor a késleltetett beszerzési rendelés beérkezése várható, az ígérethez rendelkezésre állási mennyiségre kapott érték nagyobb, mint 0 (ebben az esetben 125 az értéke). Ugyanakkor mostantól 10 nap múlva, amikor a 100 darabra szóló kiegészítő beszerzési rendelés érkezése várható, az ígérethez rendelkezésre állási mennyiség több, mint 150.  
 
 Ezért a szállítási dátum az ígérethez rendelkezésre állás számításának alapján a mai naptól számított 10 nap. Ennek megfelelően tájékoztassa az ügyfelet, hogy az igényelt mennyiség 10 nap múlva szállítható.
-
 
 
 

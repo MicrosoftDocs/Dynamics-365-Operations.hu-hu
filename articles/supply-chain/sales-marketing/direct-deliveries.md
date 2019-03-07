@@ -1,13 +1,13 @@
 ---
-title: "Közvetlen kiszállítások"
-description: "A cikk tájékoztatást nyújt a közvetlen kiszállításokkal kapcsolatban. A közvetlen kiszállítások olyan szállítások, amelyeket a rendszer közvetlenül a szállítótól küld a vevőhöz."
+title: Közvetlen kiszállítások
+description: A cikk tájékoztatást nyújt a közvetlen kiszállításokkal kapcsolatban. A közvetlen kiszállítások olyan szállítások, amelyeket a rendszer közvetlenül a szállítótól küld a vevőhöz.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d9c4a695c591865c52ad5ee6d37a515139f58bf8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1f2cdae674dc88a4d533258e24b1ecf7ec4cf55b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312278"
 ---
-
 # <a name="direct-deliveries"></a>Közvetlen kiszállítások
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Ha **Közvetlen kiszállítás** típusú értékesítésirendelés-sort szeretn
 
 ## <a name="warehouse"></a>Raktár
 Közvetlen szállítás létrehozásakor az értékesített cikk soha nem jelenik meg fizikailag a raktárban. Ennek ellenére is meg kell adnia egy raktárat az értékesítési rendelés sorában. Ehhez hasonlóan kitárolási követelményeket is meg lehet határozni a tétel cikkmodellcsoportjában. Ugyanakkor, mivel a cikk fizikailag soha nem lesz jelen a raktárban, a rendszer közvetlen szállítás típusú értékesítési rendeléseknél ezeket a követelményeket figyelmen kívül hagyja.
-
 
 
 

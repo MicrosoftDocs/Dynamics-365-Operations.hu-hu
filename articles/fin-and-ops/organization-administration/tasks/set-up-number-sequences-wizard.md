@@ -1,13 +1,13 @@
---- 
-title: "Állítson be minden szükséges számsorozatot a varázsló segítségével"
-description: "A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer."
+---
+title: Állítson be minden szükséges számsorozatot a varázsló segítségével
+description: A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1808ab9240ab291f9d203893a634bd390f16e2e7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96c1bc711350b447611977c3f2070fbc08fbae0f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328240"
 ---
 # <a name="set-up-number-sequences-by-using-a-wizard"></a>Állítson be minden szükséges számsorozatot a varázsló segítségével
 
@@ -36,5 +36,4 @@ A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzés
     * Ne jelölje be a Folyamatos lehetőséget, ha előzetesen le kell foglalnia számokat a számsorozathoz.     Egy számsorozat formátumához úgy adhat hozzá egy hatókörszegmenst, hogy a listában kiválasztja a formátumot, majd rákattint a Hatókör belefoglalása a formátumba gombra.     Egy számsorozat formátumából úgy vehet el egy hatókörszegmenst, hogy a listában kiválasztja a formátumot, majd rákattint a Hatókör eltávolítása a formátumból gombra.     Egy számsorozatnak az automatikus létrehozásból való kizárásához válassza ki a számsorozatot a listában, és kattintson a Törlés gombra.  
 4. Kattintson a Tovább gombra.
 5. Kattintson a Finish gombra.
-
 

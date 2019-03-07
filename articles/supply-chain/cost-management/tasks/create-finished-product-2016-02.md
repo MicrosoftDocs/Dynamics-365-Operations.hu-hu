@@ -1,13 +1,13 @@
---- 
-title: "Késztermék létrehozása (csak 2016. február)"
-description: "Ez a feladat egy késztermék létrehozására szolgál."
+---
+title: Késztermék létrehozása (csak 2016. február)
+description: Ez a feladat egy késztermék létrehozására szolgál.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 44f9693e04160ffe9307de5e454d8269ca883679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 19cba700a2c96a09e0444c17323b8b2d4bf43f7d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339027"
 ---
 # <a name="create-a-finished-product-february-2016-only"></a>Késztermék létrehozása (csak 2016. február)
 
@@ -52,5 +52,4 @@ Ez a feladat egy késztermék létrehozására szolgál. Ez az anyagjegyzék-sz�
 14. Az Értékesítési hely mezőben adjon meg vagy válasszon ki egy értéket.
     * Ehhez a példához válassza ki a következőt: 1. hely.  
 15. Zárja be a lapot.
-
 

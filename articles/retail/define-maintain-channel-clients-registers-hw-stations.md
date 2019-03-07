@@ -1,13 +1,13 @@
 ---
-title: "Perifériák csatlakozás a pénztárhoz (POS)"
-description: "Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához."
+title: Perifériák csatlakozás a pénztárhoz (POS)
+description: Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308782"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Perifériák csatlakozás a pénztárhoz (POS)
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
 
 > [!NOTE]
-> Adott telepítési útmutatásért lásd: [Kiskereskedelmi hardverállomás konfigurációja és telepítése](retail-hardware-station-configuration-installation.md) és [Retail Modern POS önkiszolgáló letöltés/telepítés, és Modern POS és felhő POS eszköz aktiválása](retail-modern-pos-device-activation.md).
+> Adott telepítési útmutatásért lásd: [Kiskereskedelmi hardverállomás konfigurációja és telepítése](retail-hardware-station-configuration-installation.md) és [Retail Modern POS önkiszolgáló letöltés/telepítés, és Modern POS és Cloud POS eszköz aktiválása](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Kulcsösszetevők
 
@@ -188,4 +187,3 @@ Az aktiválással kapcsolatos további információk tartalmazzák a dolgozót, 
 ### <a name="client-data-synchronization"></a>Kliensadatok szinkronizálása
 
 A pénztárkliensben az aktivációs állapotban bekövetkezett változásokon kívül minden változást szinkronizálni kell a csatorna adatbázisában, hogy érvénybe lépjenek. A módosítások a csatorna adatbázisában történő szinkronizálásához navigáljon a **Kiskereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés**, menüpontra és futtassa a szükséges elosztási ütemezést. A kliensváltoztatásokhoz futtassa a „Pénztárak” és „Csatornakonfiguráció” elosztási ütemezéseket.
-

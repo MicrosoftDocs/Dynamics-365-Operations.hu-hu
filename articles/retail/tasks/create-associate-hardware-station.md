@@ -1,13 +1,13 @@
---- 
-title: "Hardverállomás létrehozása és hozzárendelése"
-description: "Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást."
+---
+title: Hardverállomás létrehozása és hozzárendelése
+description: Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareStation, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 80df4fa663d208e28f5c9b031b6610d29286171c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a43edf71a1a77ea0d6014266bdd95d563a08cc4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330563"
 ---
 # <a name="create-and-associate-a-hardware-station"></a>Hardverállomás létrehozása és hozzárendelése
 
@@ -57,5 +57,4 @@ Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást. Egy
 22. Írjon be egy értéket az Állomás neve mezőbe.
 23. Írjon be egy értéket az Elektronikus átutalási terminál azonosítója mezőbe.
 24. Kattintson a Mentés gombra.
-
 

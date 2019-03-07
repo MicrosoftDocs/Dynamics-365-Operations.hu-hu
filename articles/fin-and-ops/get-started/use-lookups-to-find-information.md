@@ -1,13 +1,13 @@
 ---
-title: "Információk megtalálása keresések használatával"
-description: "A Microsoft Dynamics 365 for Finance and Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit."
+title: Információk megtalálása keresésekkel
+description: A Microsoft Dynamics 365 for Finance and Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a0722f057c1613fdc03281ca68a90608a701aef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328355"
 ---
-
-# <a name="find-information-by-using-lookups"></a>Információk megtalálása keresések használatával
+# <a name="find-information-by-using-lookups"></a>Információk megtalálása keresésekkel
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,4 +84,3 @@ Ehelyett a felhasználónak törölnie kell a keresési vezérlő értékét, ny
 A szűrő alkalmazása után (lásd az alábbi képet) a felhasználó a szokásos módon találhatja meg és választhatja ki a sort.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
-

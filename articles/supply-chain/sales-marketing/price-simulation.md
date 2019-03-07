@@ -1,13 +1,13 @@
 ---
-title: "Árszimuláció"
-description: "Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat."
+title: Árszimuláció
+description: Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316533"
 ---
-
 # <a name="price-simulation"></a>Árszimuláció
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Hogy az engedmények és árak kiszámítása mindig pontosan menjen végbe, az 
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kedvezmények típusai a kereskedelmi megállapodásokban
 
-A kereskedelmi megállapodásoknak a Microsoft Dynamics 365 for Finance and Operations rendszerben négy típusú árengedménye lehet. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
+Kereskedelmi megállapodások a Microsoft Dynamics 365 for Finance and Operations rendszerben négy árengedménytípust kínálnak. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
 
 -   **Értékesítési ár** – Cikkenkénti eladási árakat lehet meghatározni. Ajánlatkérési sorok létrehozásakor a program megkeresi a megfelelő eladási árat a cikkhez és továbbítja azt az árajánlat sorokhoz. Ebből következően egy ilyen típusú kereskedelmi megállapodás nincs hatással az árszimulációra. Az ajánlati sorban létrejövő ár a kereskedelmi megállapodáson alapul.
 -   **Sorengedmény** – A cikkhez különleges engedmények adhatók meg, a rendelt mennyiségtől függően. A sorösszegek általában a sorkedvezményekkel csökkennek az árszimuláció futtatása előtt. Ebből következően egy ilyen típusú kereskedelmi megállapodás hatással van az árszimulációra.
@@ -143,7 +142,6 @@ Futtat egy árszimulációt, és 10 százalékos teljes engedményt ad a BR-12 c
 | Új teljes árrésarány                      | \[(302,88-184,96) ÷ 302,88\] × 100    | 38.93%   |
 
 Az árszimuláció csak azt a sort érinti, amelyre alkalmazták, csökkentve a sor összegét.
-
 
 
 

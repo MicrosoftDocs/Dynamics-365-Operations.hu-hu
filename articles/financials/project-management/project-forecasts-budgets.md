@@ -1,13 +1,13 @@
 ---
-title: "Projekt-előrejelzések és -költségvetések"
-description: "A Microsoft Dynamics 365 for Finance and Operations a projektek előrejelzéseit és a projektek költségevetéseit biztosítja a projektek intézéséhez és irányításához."
+title: Projekt-előrejelzések és -költségvetések
+description: Microsoft Dynamics 365 for Finance and Operations rendszerben lehetőség van a projektek intézésére és irányítására a projekt-előrejelzések és a projektköltségvetések funkciókkal.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310392"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Projekt-előrejelzések és -költségvetések
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations két módot biztosít a projektek intézéséhez és irányításához: a projektek előrejelzéseit és a projektek költségevetéseit. 
+Microsoft Dynamics 365 for Finance and Operations rendszerben két lehetőség van a projektek intézésére és irányítására: a projekt-előrejelzések és a projektköltségvetések. 
 
 Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési terve, és ha az a meghatározott tranzakciókból származtatott bevételekre és költségekre fókuszál. Használja a projekt költségvetés-tervezéshez, ha a szervezet inkább a pénzügyi összegekre összpontosít. 
 
@@ -80,7 +79,6 @@ A projektköltségvetéseket automatikusan két előrejelzési modellel társít
 Az előrejelzési modellek egyrétegű hierarchiával rendelkeznek. Ez azt jelenti, hogy egy projekt előrejelzést egy előrejelzési modellel kell társítani.
 
 A projekt-előrejelzések használatakor a modellek mint részmodellek azonosíthatók. Régió, időszak vagy osztály alapján készíthet előrejelzést. Például, létrehozhat előrejelzési modellt egy évre vonatkozóan, és ezután részmodelleket készíthet az északkeleti, délkeleti, északnyugati és délnyugati régiók előrejelzéseiről, amelyet az adott területi vezető nyújt be. A rendelkezésre álló jelentésekben található különböző beállítások segítségével megtekintheti az összesített előrejelzés vagy a részmodell szerinti információkat.
-
 
 
 

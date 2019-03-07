@@ -1,13 +1,13 @@
 ---
-title: "Eltávolított vagy elavult funkciók"
-description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
+title: Eltávolított vagy elavult funkciók
+description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329252"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Finance and Operations alkalmazásból eltávolított szolgáltatásokat írja le, illetve azokat, amelyek elavultak.
+Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva vagy elavultak a Dynamics 365 for Finance and Operations szolgáltatásban.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
@@ -42,7 +41,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!Note]
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
 
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 és 20-as platformfrissítés
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Kötegelt átviteli szabályok analitikus naplószámla bejegyzéseihez
 A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.  A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség. 
@@ -64,7 +63,7 @@ Funkció a bevallások .txt és .xml fájlformátumainak konfigurálásához.
 | **Felváltotta másik szolgáltatás?**   | Igen. |
 | **Érintett területek**         | Főkönyv |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Pénzügyi jelentéskészítő Oroszország számára
 Eszköz az adatgyűjtemény elszámolás és adókimutatások céljából való beállításához, valamint annak érdekében, hogy XLS és DOC kimutatássablonokba exportálhassa az adatokat. Funkcionális részek: Adatok exportálása XLS és DOC jelentéssablonokba, lekérdezések, a rögzített kellékek eltávolításra kerülnek. 
@@ -75,7 +74,7 @@ Eszköz az adatgyűjtemény elszámolás és adókimutatások céljából való 
 | **Felváltotta másik szolgáltatás?**   | Igen. A pénzügyi kimutatások beállításának kezelőfelülete használandó az adatgyűjtemény-szabályok főkönyvi számlál és adónyilvántartások általi beállítására. Adatok exportálása különböző fájltípusokba; a rögzített elemek és a lekérdezésszerű adatgyűjtési szabályok konfigurálása az elektronikus jelentésekben történik. |
 | **Érintett területek**         | Főkönyv. |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Külső szolgáltatók integrálása elektronikus jelentések kommunikációs csatornákon keresztül való küldéséhez Oroszország esetében
 A deklaráció elektronikus fájljait exportáló funkció, amely az exportálást egy mappába végzi, hogy továbbküldhesse az adatokat az elektronikus jelentések hivatalos szolgáltatóinak, akik visszaadják az állapotot.
@@ -86,7 +85,7 @@ A deklaráció elektronikus fájljait exportáló funkció, amely az exportálá
 | **Felváltotta másik szolgáltatás?**   | Igen.  |
 | **Érintett területek**         | Főkönyv, Adó |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Nyereségadó-jegyzék varázsló
@@ -94,19 +93,19 @@ Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozás�
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A funkció nem kompatibilis a Dynamics 365 for Finance and Operations bővíthetőségi modelljével. |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Elavulás/eltávolítás oka** | A funkció nem kompatibilis a Dynamics 365 for Finance and Operations bővíthetőségi modellel. |
+| **Felváltotta másik szolgáltatás?**   | Szám |
 | **Érintett területek**         | Adó |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 15-ös platformfrissítéssel
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 és platform update 15
 Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban. A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 12-es platformfrissítéssel
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 és platform update 12
 
-### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások 
+### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
 2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -115,7 +114,7 @@ Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásb
 | **Felváltotta másik szolgáltatás?**   | Szám 2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.   |
 | **Érintett területek**         | Személyre szabott termékajánlások a POS felületén.                                                    |
 | **Telepítési beállítás**              | Mind                                                                                      |
-| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez hatással van a Dynamics 365 for Operations 1611 és újabb verzióit használó ügyfelekre is.  |
+| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez befolyásolja a Dynamics 365 for Operations 1611-es és újabb verzióit futtató ügyfeleket.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése
 A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: [Elektronikus jelentéskészítési funkciók listájának kibővítése](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) már nem támogatott. Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.
@@ -125,8 +124,8 @@ A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bev
 | **Elavulás/eltávolítás oka** | Kódzárolási kezdeményezés  |
 | **Felváltotta másik szolgáltatás?**   | Egyik sem. Amikor csak új beépített függvényre van szükség, új bővítési kérelmet kell benyújtani az ER-keretrendszer csapatnak.<br><br>Ideiglenes megoldásként, amíg az ER-csapat fejleszti a kért függvényt, a szükséges logika egy egyéni alkalmazásosztály metódusaként is programozható. Ez a metódus egy ER kifejezésben érhető el a hozzáadott ER adatforrás tulajdonságaként az **Application\Class** típusnak, amely az egyéni alkalmazásosztályra hivatkozik.  |
 | **Érintett területek**         | Elektronikus jelentéskészítési keretrendszer                                                      |
-| **Telepítési beállítás**              | Mind                                                                                      |
-| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations, Enterprise edition 7.3 verzióban.    |
+| **Telepítési beállítás**              | Összes                                                                                      |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations, Enterprise edition 7.3 után.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Készlet a cikkcsoport és készlet a készletdimenzió korosítási jelentései szerint
 
@@ -140,13 +139,13 @@ Ezt a két jelentést már nem támogatja a Finance and Operations. Ehelyett a *
 | **Telepítési beállítás**        | Mind|
 | **Állapot**                       | Elavult: A két jelentés menüpontjai el lettek távolítva a 7.3 verzióban. A jelentések kódja azonban a termékben marad. A terv szerint valamelyik jövőbeli programverzióban eltávolítjuk a kódot. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on
-A **Költségkezelés**, **Pénzügyi teljesítmény** és **Kiskereskedelmi csatorna teljesítménye** tartalomcsomagok - amelyek a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen állnak rendelkezésre - a Microsoft Power BI-ben elvégzett termékfrissítések miatt elavulttá válnak. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI tartalom csomagok elérhetők az AppSource felületén
+A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen, a Microsoft Power BI termékfrissítései miatt elavulttá válnak. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Microsoft Power BI termékfrissítések. |
-| **Felváltotta másik szolgáltatás?**   | A **Költségkezelés**, **Pénzügyi teljesítmény** és **Kiskereskedelmi csatorna teljesítménye** tartalomcsomagok - amelyek a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen állnak rendelkezésre - olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Elavulás/eltávolítás oka** | A Microsoft Power BI termékfrissítései. |
+| **Felváltotta másik szolgáltatás?**   | A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [AppSource](https://appsource.microsoft.com) webhelyen, olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI-munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Érintett területek**         | Költségkezelés, pénzügy és kiskereskedelem                                                                                               |
 | **Telepítési beállítás**              | Csak felhő (A PowerBI.com webhellyel való integráció nem támogatott a helyszíni telepítések esetében.)                                                                                                            |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.    |
@@ -211,7 +210,7 @@ A felhasználók a kormányzati portálról tölthetik le.
 
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
-### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások 
+### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
 2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -220,10 +219,10 @@ A felhasználók a kormányzati portálról tölthetik le.
 | **Felváltotta másik szolgáltatás?**   | Szám 2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.   |
 | **Érintett területek**         | Személyre szabott termékajánlások a POS felületén.                                                    |
 | **Telepítési beállítás**              | Mind                                                                                      |
-| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez hatással van a Dynamics 365 for Retail 7.2 és újabb verzióit használó ügyfelekre is. |
+| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez befolyásolja a Dynamics 365 for Retail 7.2-es és újabb verzióit futtató ügyfeleket. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 2017 júliusi kiadás 8-es platformfrissítéssel
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition 2017 júliusi verzió és platform update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Pénznemátváltás könyvelési és jelentési pénznemek esetén
 
@@ -244,7 +243,7 @@ A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy k�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció.       |
-| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. Ha további információt szeretne a beállításról és az előfeltételekről, lásd a következőt: [A Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app) című részben talál. |
 | **Érintett területek**         | Raktárkezelés, szállításkezelés     |
 | **Telepítési beállítás**              | A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.               |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.   |
@@ -258,10 +257,10 @@ Az egyeztetési munkalapon a dokumentumok kézi egyeztetéséhez egy egyeztetés
 | **Elavulás/eltávolítás oka** | Korlátozott felhasználás.                                                                         |
 | **Felváltotta másik szolgáltatás?**   | Szám Az oszlopszűrési lehetőségeket kell használni az egyeztetendő dokumentumok keresésére. |
 | **Érintett területek**         | Készpénz- és bankkezelés                                                               |
-| **Telepítési beállítás**              | Mind                                                                                    |
+| **Telepítési beállítás**              | Összes                                                                                    |
 | **Állapot**                         | Eltávolítva 2017 júliusában.                                                               |
 
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 3-as platformfrissítéssel
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 és platform update 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>Spanyol AEB fizetési formátumok
 
@@ -298,7 +297,7 @@ A BBS Direkte Remittering fizetési formátumok a következőket tartalmazzák: 
 
 ### <a name="chart-of-accounts-tool-for-spain"></a>Számlatükör eszköz Spanyolország esetében
 
-Ez az eszköz akkor használatos, ha a számlatükör esetében jelentős változtatásokra van szükség Spanyolországban. A felhasználók importálhatják az új számlatükröt Microsoft Excel vagy a szöveges formátumban, valamint importálhatják a pénzügyi kimutatásokat is.
+Ez az eszköz akkor használatos, ha a számlatükör esetében jelentős változtatásokra van szükség Spanyolországban. A felhasználók importálhatják az új számlatükröt Microsoft Excel- vagy szöveges formátumban, valamint importálhatják a pénzügyi kimutatásokat is.
 
 |   |  |
 |------------|--------------------|
@@ -342,7 +341,7 @@ EDIFACT-DIRDEB fizetési formátum fizetés beszedéséhez (beszedési megbízá
 
 ### <a name="edivat-for-belgium"></a>EDIVAT Belgium esetében
 
-EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult belga szabványa. A Microsoft Dynamics AX 2012 megtartja a "csak olvasásra" megoldást annak érdekében, hogy a régebbi adatokhoz hozzá lehessen férni.
+EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult belga szabványa. A Microsoft Dynamics AX 2012 megtartja a csak olvasható megoldást annak érdekében, hogy a régebbi adatokhoz hozzá lehessen férni.
 
 |   |  |
 |------------|--------------------|
@@ -353,7 +352,7 @@ EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult 
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL fizetési importformátum Norvégia esetében
 
-Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi szabványon alapszik, amely a vevői kifizetések automatikus feladásához használatos. A Microsoft Dynamics AX rendszerben az eGiro egy vevői kifizetés importformátumaként van megvalósítva.
+Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi szabványon alapszik, amely a vevői kifizetések automatikus feladásához használatos. A Microsoft Dynamics AX alkalmazásban az eGiro vevői fizetési importformátumként van megvalósítva.
 
 |   |  |
 |------------|--------------------|
@@ -481,7 +480,7 @@ Emberi Erőforrások Bérlistaadatai
 | **Elavulás/eltávolítás oka** | Ezt a funkciót az alapvető Bérlista és az Emberi Erőforrások lapokok váltotta fel.  |
 | **Felváltotta másik szolgáltatás?**   | A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik. Ez a funkció a **Humán Erőforrások 1** \> **Bérlista**-konfigurációs kulcs használatával érhető el. |
 | **Érintett területek**         | Emberi Erőforrások, Bérlista   |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva.    |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.    |
 
 ### <a name="performance-management-goal-workflow"></a>Teljesítménymenedzsment, célok munkafolyamata
 
@@ -492,7 +491,7 @@ A teljesítménymenedzsment a célok kezelését tartalmazza, és integrálja a 
 | **Elavulás/eltávolítás oka** | A teljesítménymenedzsment át lett tervezve, és a célok oldalainak száma csökkent a folyamat egyszerűsítése érdekében.                 |
 | **Felváltotta másik szolgáltatás?**   | Szám A célok láthatók a vezetők számára az Vezetők önkiszolgáló portálján; ezeket a vezető módosíthatja és megtekintheti. |
 | **Érintett területek**         | Emberierőforrás-menedzselés       |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva.    |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.    |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében
 
@@ -514,7 +513,7 @@ A rádiófrekvenciás azonosítás (Radio Frequency Identification – RFID) egy
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet.   |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                              |
 | **Érintett területek**         | Készletgazdálkodás                            |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva. |
+| **Állapot**                         | Eltávolítva az Dynamics 365 for Operations 1611-es verziójától kezdve. |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Állami számlák számozására vonatkozó jelentés Lettország esetében
 
@@ -545,7 +544,7 @@ A vállalat vezetőjének és főkönyvelőjének nevét a vállalati adatok kö
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció   |
 | **Felváltotta másik szolgáltatás?**   | A szállításkezelés részlegesen lecserélte |
 | **Érintett területek**         | Értékesítés és marketing, Készletkezelés  |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva.  |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.  |
 
 ### <a name="telepay-payment-formats-for-norway"></a>TelePay fizetési formátumok Norvégia esetében
 
@@ -574,9 +573,9 @@ Finnországban két formátum érhető el fizetések exportálásához. LM02 (FI
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A korábban a **Készletkezelés** modulban elérhető Raktárkezelés II megoldás (WMS II) ugyanazokkal a funkciókkal rendelkezik, mint a Microsoft Dynamics AX 2012 R3 verzióban kiadott **Raktárkezelés** modul.                                                                         |
-| **Felváltotta másik szolgáltatás?**   | A Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 és Microsoft Dynamics AX 2012 R3 CU9 verziókban kiadott **Raktárkezelés** modul váltja fel a Raktárkezelés II szolgáltatást. Az új modul több speciális funkcióval és rugalmasabb raktárkezelési folyamatokkal rendelkezik, mint a Raktárkezelés II funkció. |
+| **Felváltotta másik szolgáltatás?**   | Az AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 és Dynamics AX 2012 R3 CU9 verziókban kiadott **Raktárkezelés** modul váltja fel a Raktárkezelés II szolgáltatást. Az új modul több speciális funkcióval és rugalmasabb raktárkezelési folyamatokkal rendelkezik, mint a Raktárkezelés II funkció. |
 | **Érintett területek**         | Készletkezelés, értékesítés és marketing, beszerzés és forrás   |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva.    |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.    |
 
 ### <a name="worker-reminders-in-human-resources"></a>Dolgozói emlékeztetők az Emberi Erőforrásokban
 
@@ -587,7 +586,7 @@ Emberi Erőforrások Bérlistaadatai
 | **Elavulás/eltávolítás oka** | Alacsony használat                                                           |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                                                  |
 | **Érintett területek**         | Emberi erőforrások                                                     |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve |
 
 ### <a name="workflow-for-creating-goals"></a>Célok létrehozásának munkafolyamata
 
@@ -595,10 +594,10 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A teljesítménymenedzsment teljesen átalakult a Microsoft Dynamics 365 for Finance and Operations alatt.     |
+| **Elavulás/eltávolítás oka** | A teljesítménykezelést teljesen újraterveztük a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.     |
 | **Felváltotta másik szolgáltatás?**   | Az átalakított teljesítménymendzsment funkciója segítségével jobban lehet felügyelni a célok tartalmát, az előrehaladás nyomon követéséhez használt méréseket és a kiegészítő dokumentumok csatolását. A célok sablonként tárolhatók, és ezután újra felhasználhatók. Ezen funkció segítségével gyorsabban beállíthatók további célok az alkalmazottak számára. |
 | **Érintett területek**         | Emberierőforrás-menedzselés                 |
-| **Állapot**                         | A Dynamics 365 for Operations 1611-es verziójában el lett távolítva. |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve. |
 
 ## <a name="dynamics-ax-70"></a>Dynamics AX 7.0 
 
@@ -610,7 +609,7 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 | **Elavulás/eltávolítás oka** | Teljesítménynövekedés.        |
 | **Felváltotta másik szolgáltatás?**   | Nincs                             |
 | **Érintett területek**         | Kötelezettségek               |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában. |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD és AxBC integrációja
 
@@ -621,7 +620,7 @@ Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki 
 | **Elavulás/eltávolítás oka** | Az AIF és az AxD-k architektúráját nem sikerült felhőszolgáltatáshoz méretezni. A tömeges importálás során teljesítményproblémák léptek fel.                                        |
 | **Felváltotta másik szolgáltatás?**   | Ezt a szolgáltatást felváltotta az Adatimportálási és -exportálási keretrendszer, amely támogatja az ismétlődő tömeges importálást/exportálást. AxBC esetén a tényleges táblák használatát javasoljuk. |
 | **Érintett területek**         | AxD-k, AxBC-k és AIF   |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
 
 ### <a name="boms-without-bom-versions"></a>Anyagjegyzékek Anyagjegyzék-verziók nélkül
 
@@ -632,7 +631,7 @@ Korábban az **Anyagjegyzék-verziók** konfigurációs kulcs letiltásakor, az 
 | **Elavulás/eltávolítás oka** | Anyagjegyzék-verziók konfigurációs kulcsokkal való vezérlése nem méretezhető felhő környezetre. |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                                                                      |
 | **Érintett területek**         | Termékinformációk kezelése, Készletkezelés                                    |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                                          |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                          |
 
 ### <a name="brazilian-bordero"></a>Brazil borderó
 
@@ -685,9 +684,9 @@ Ez a mobilalkalmazás lehetővé teszi a felhasználók számára a kulcsfontoss
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Üzleti intelligencia (BI) elavult megközelítése, alacsony vevői használat és a korlátozott szolgáltatási kör. |
-| **Felváltotta másik szolgáltatás?**   | Új Üzleti Intelligencia megoldások a Dynamics AX jelenlegi verziójában.                                      |
+| **Felváltotta másik szolgáltatás?**   | Új Üzleti Intelligencia megoldások a Dynamics AX jelenlegi verziójában                                      |
 | **Érintett területek**         | Beszerzés és forrás, Kötelezettségek, Értékesítés és marketing, Kinnlevőségek         |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                                               |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                               |
 
 ### <a name="change-document-date-function-in-invoice-approval-journal"></a>A Számla-jóváhagyási naplóban található Dokumentum dátumának módosítása funkció
 
@@ -696,7 +695,7 @@ Ez a mobilalkalmazás lehetővé teszi a felhasználók számára a kulcsfontoss
 | **Elavulás/eltávolítás oka** | Alacsony használat                                                               |
 | **Felváltotta másik szolgáltatás?**   | Igen. A feladott szállítói tranzakció dokumentumdátuma módosítható. |
 | **Érintett területek**         | Kötelezettségek                                                        |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                          |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                          |
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>A holland ClieOp03 fizetési formátum
 
@@ -716,9 +715,9 @@ A Megfelelési Központ egy Enterprise Portal webhely volt, amely a Sarbanes-Oxl
 | **Elavulás/eltávolítás oka** | Vevői használat hiánya. A Microsoft SharePoint magában foglalja ugyanazt a képességet, ami korábban a Megfelelési Központban volt elérhető. |
 | **Felváltotta másik szolgáltatás?**   | Nincs   |
 | **Érintett területek**         | Megfelelés és belső ellenőrzés  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.    |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 
-### <a name="connector-for-microsoft-dynamics"></a>Connector for Microsoft Dynamics
+### <a name="connector-for-microsoft-dynamics"></a>Csatlakozó a Microsoft Dynamics szolgáltatáshoz
 
 Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származó kulcsadatokat a Microsoft Dynamics ERP alkalmazásokba.
 
@@ -726,8 +725,8 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel. |
 | **Felváltotta másik szolgáltatás?**   | Common Data Service                                      |
-| **Érintett területek**         | Connector for Microsoft Dynamics                         |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                           |
+| **Érintett területek**         | Csatlakozó a Microsoft Dynamics szolgáltatáshoz                         |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                           |
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>Tárolóegység és a készleten lévő több dimenzió
 
@@ -736,7 +735,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció |
 | **Felváltotta másik szolgáltatás?**   | Igen. Az AX 2012 óta, ezt a funkciót az összesített kötegrendelések szolgáltatáskészlet váltotta fel. Ez a szolgáltatáskészlet tartalmazza az egyesített készletnézetet. |
 | **Érintett területek**         | Termékinformációk kezelése, Gyártásvezérlés, Készletkezelés, Értékesítés és marketing  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában. |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
 ### <a name="cue-group-metadata"></a>Kötegcsoport-metaadatok
 
@@ -745,7 +744,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 | **Elavulás/eltávolítás oka** | Kötegcsoportok használatával korábban egy vagy több Köteget lehetett megjeleníteni az Adatterületen. A feltöltés korlátozottsága mellett teljesítményproblémák is felléptek, mivel egy szülőűrlapon történő rekordváltoztatás a Kötegcsoport minden egyes Kötegéhez létrehozott egy lekérdezést. |
 | **Felváltotta másik szolgáltatás?**   | Nincs      |
 | **Érintett területek**         | Minden modul    |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.  |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.  |
 
 ### <a name="cue-metadata"></a>Köteg-metaadatok
 
@@ -754,7 +753,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 | **Elavulás/eltávolítás oka** | A köteg-metaadatok információk számlálására vagy összesítésére korlátozódtak.    |
 | **Felváltotta másik szolgáltatás?**   | Annak érdekében, hogy a modellezéshez nagyobb rugalmasságot biztosítsunk, bevezettük a csempe-metaadatokat. Modellezhet például aktuális számlálókat, navigációt, valamint fő teljesítménymutatókat (KPI-ket). A Köteg-metaadatokat közvetlenül helyettesítik a Csempeszámláló metaadatai. |
 | **Érintett területek**         | Minden modul           |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában      |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve      |
 
 ### <a name="danish-check-format"></a>Dán csekkformátum
 
@@ -771,10 +770,10 @@ Az adatpartíciók az adatok logikus elkülönítését biztosítják a Microsof
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az adatpartíciókat a Microsoft Dynamics AX 2012 R2 változatában vezették be adatok elkülönítéséhez. Általános esetben a vállalat leányvállalatokkal rendelkezik, és egy leányvállalat adatait nem láthatja egy másik leányvállalat, annak ellenére, hogy mindkét leányvállalatot azonos informatikai részleg kezeli. Azonban további parancsfájlok és kezelési többletköltség voltak szükségesek új partíciók létrehozására és azok adatokkal való feltöltésére, és a partíció adatainak biztonsági mentésére. A felhőben, ahol hozzáférésünk van platformhoz mint szolgáltatáshoz (PaaS), adatbázis-szolgáltatáshoz (Windows Azure a Microsoft SQL adatbázis), sokkal hatékonyabb az adatbázist elkülönítési tárolóként használni, mint a elkülönítést végezni a programon belül. Függetlenül attól, hogy adatpartíció szükségesek leányvállalatoknak, több bérlőnek vagy csak mérlegelésre, úgy véljük, hogy az esetek jobban kezelhetők több Finance and Operations példánnyal. |
+| **Elavulás/eltávolítás oka** | Az adatpartíciókat a Microsoft Dynamics AX 2012 R2 változatában vezették be adatok elkülönítéséhez. Általános esetben a vállalat leányvállalatokkal rendelkezik, és egy leányvállalat adatait nem láthatja egy másik leányvállalat, annak ellenére, hogy mindkét leányvállalatot azonos informatikai részleg kezeli. Azonban további parancsfájlok és kezelési többletköltség voltak szükségesek új partíciók létrehozására és azok adatokkal való feltöltésére, és a partíció adatainak biztonsági mentésére. A felhőben, ahol hozzáférésünk van platformhoz mint szolgáltatáshoz (PaaS), adatbázis-szolgáltatáshoz (Microsoft Azure SQL Database), sokkal hatékonyabb az adatbázist elkülönítési tárolóként használni, mint a elkülönítést végezni a programon belül. Függetlenül attól, hogy adatpartíció szükségesek leányvállalatoknak, több bérlőnek vagy csak mérlegelésre, úgy véljük, hogy az esetek jobban kezelhetők több Finance and Operations példánnyal. |
 | **Felváltotta másik szolgáltatás?**   | Az adatpartíciókat használó vevőknek a Finance and Operations több példányát kell használniuk, ha az adatbázis szintű elkülönítése kritikus fontosságú.    |
 | **Érintett területek**         | Minden modul  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.  |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.  |
 
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Adatbázis és fájlmegosztás tárolása a mellékletek számára
@@ -786,7 +785,7 @@ A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az ada
 | **Elavulás/eltávolítás oka** | A fájlmegosztással történő tárolás a továbbiakban már nem támogatott, mert a felhőalapú tárolási környezet nem tud kommunikálni a helyi fájlmegosztásokkal. Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett. Az Azure Blob-tárolás megegyezik az adatbázisban való tárolással, mivel a dokumentumok elérése csak a Dynamics 365 for Finance and Operations ügyfélképernyőkön keresztül történhet. Ez a megoldás azzal a plusz előnnyel jár, hogy olyan tárhelyet kínál, amely nem befolyásolja negatívan az adatbázis teljesítményét. A Blob-tárolás a dokumentumkezelés alapértelmezett tárolási mechanizmusa, és azonnal működik. |
 | **Felváltotta másik szolgáltatás?**   | Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.   |
 | **Érintett területek**         | Minden modul  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
 
 ### <a name="delimitation"></a>Elválasztás
 
@@ -795,7 +794,7 @@ A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az ada
 | **Elavulás/eltávolítás oka** | A funkció hasznossága nem mutatható ki. |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                     |
 | **Érintett területek**         | Munkaidő és jelenlét                    |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.         |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.         |
 
 ### <a name="desktop-client"></a>Asztali ügyfél
 
@@ -804,18 +803,18 @@ A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az ada
 | **Elavulás/eltávolítás oka** | A Dynamics AX ügyfél felhasználói felületét a több platformon és eszközön való jobb felhasználhatóság érdekében újraterveztük.                      |
 | **Felváltotta másik szolgáltatás?**   | Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk. |
 | **Érintett területek**         | Minden modul  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
 
 ### <a name="direct-database-connection"></a>Közvetlen adatbázis-kapcsolat
 
-A Dynamics AX 2012 R3 rendszerben a Retail Modern pénztár az Enterprise POS rendszerhez hasonló módon, közvetlenül tudott kapcsolódni a csatorna-adatbázishoz. Ez ráadás volt a Retail Modern pénztár Retail Server kiszolgálón keresztül kommunikáló szokásos kommunikációs módja mellett.
+A Dynamics AX 2012 R3 rendszerben a Retail Modern POS az Enterprise POS rendszerhez hasonló módon, közvetlenül tudott kapcsolódni a csatorna-adatbázishoz. Ez ráadás volt a Retail Modern POS Retail Server kiszolgálón keresztüli kommunikációjához használt szokásos kommunikációs módja mellett.
 
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt. A Finance and Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold. |
 | **Felváltotta másik szolgáltatás?**   | Szám Jelenleg csak a szabványos Retail Server által biztosított kommunikáció támogatott.  |
-| **Érintett területek**         | Csatorna-adatbázis/Retail Modern pénztár   |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.  |
+| **Érintett területek**         | Csatorna-adatbázis/Retail Modern POS   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.  |
 
 ### <a name="dutch-swift-mt940"></a>Holland SWIFT MT940
 
@@ -844,7 +843,7 @@ Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztos�
 | **Elavulás/eltávolítás oka** | Egy együgyfeles platform biztosított.  |
 | **Felváltotta másik szolgáltatás?**   | Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk. |
 | **Érintett területek**         | Minden modul  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
 
 ### <a name="environmental-sustainability"></a>Környezeti fenntarthatóság
 
@@ -853,7 +852,7 @@ Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztos�
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet.  |
 | **Felváltotta másik szolgáltatás?**   | Nincs              |
 | **Érintett területek**         | Megfelelés és belső ellenőrzés, Kötelezettségek  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában. |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
 ### <a name="form-activex-and-managed-host-controls"></a>ActiveX és Felügyelt Állomás vezérlők
 
@@ -862,7 +861,7 @@ Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztos�
 | **Elavulás/eltávolítás oka** | Az ActiveX és Felügyelt Állomás vezérlők a már megszűnt asztali ügyfélen alapulnak. |
 | **Felváltotta másik szolgáltatás?**   | A bővíthető vezérlési keretrendszer támogatja új, HTML-, CSS- és JavaScript-alapú vezérlések kiépítését, továbbá Microsoft Visual Studio Tooling környezetben elsőrangú vezérlő. |
 | **Érintett területek**         | Minden modul     |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.       |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.       |
 
 ### <a name="generate-prenotes-by-using-a-batch"></a>Ellenőrző tranzakciók létrehozása a köteg használatával
 
@@ -873,7 +872,7 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 | **Elavulás/eltávolítás oka** | Nem létezik olyan képernyő, amely a köteg használatával létrehozott előjegyzési fájl tárolására és megjelenítésére alkalmas lenne. |
 | **Felváltotta másik szolgáltatás?**   | Előjegyzések továbbra is létrehozhatók, ekkor a fájl mentésének helyét a felhasználó állíthatja be.   |
 | **Érintett területek**         | Kötelezettségek, Kinnlevőségek, Készpénz- és bankkezelés  |
-| **Állapot**                         | Eltávolítva az AX 7.0-s verziójában.    |
+| **Állapot**                         | Eltávolítva az AX 7.0-es verziójától kezdve.    |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Német DTAUS kifizetési export és számlakivonat-import (összegek és tranzakciók)
 
@@ -917,10 +916,10 @@ A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: 
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Microsoft SQL Server Reporting Services (SSRS) pénzügyi jelentéseket felváltották a Felügyeleti jelentéskészítő funkciói és az alapértelmezett jelentések. |
-| **Felváltotta másik szolgáltatás?**   | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel)    |
+| **Elavulás/eltávolítás oka** | A Microsoft SQL Server Reporting Services (SSRS) pénzügyi jelentéseket felváltották a Management Reporter funkciói és az alapértelmezett jelentések. |
+| **Felváltotta másik szolgáltatás?**   | Management Reporter (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel)    |
 | **Érintett területek**         | Főkönyv   |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
 
 ### <a name="infopart-and-formpart-metadata"></a>InfoPart és FormPart metaadatai
 
@@ -929,7 +928,7 @@ A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: 
 | **Elavulás/eltávolítás oka** | Az InfoPart és FormPart metaadatok két különböző ügyfél számára engedélyezték Adatterületek létrehozását. |
 | **Felváltotta másik szolgáltatás?**   | Fejlesztés után az InfoPart metaadatokat, amelyek egy egyszerűsített képernyődefiníciót adtak meg, Képernyővé alakítottuk. Fejlesztés után a FormPart metaadatokat, amelyek egy Képernyőre hivatkoztak, közvetlenebb hivatkozással váltottuk fel. |
 | **Érintett területek**         | Minden modul    |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.        |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.        |
 
 ### <a name="main-account-list-page"></a>Fő számla listaoldal
 
@@ -940,7 +939,7 @@ A jogi személy számláinak listája és kapcsolódó egyenleginformációk
 | **Elavulás/eltávolítás oka** | Az egyenleginformációk elérhetőek a **Főkönyvi kivonat** listaoldalon, számla és dimenzió szerint.  |
 | **Felváltotta másik szolgáltatás?**   | A **Fő számlák** ugyanazt a számlalistát tartalmazza, amit korábban a **Fő számla** listaoldal. A **Fő számlák** rácsnézetével egy még kisebb, rácsszerű megjelenítés is elérhető. |
 | **Érintett területek**         | Főkönyv      |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.    |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 
 ### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Malajziai és szingapúri banki pénzforgalmi jelentés
 
@@ -980,10 +979,10 @@ A Microsoft Dynamics AX 2012 a nem realizált áfát a Mexikó-specifikus nem re
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Ezt a funkciót a Microsoft Exchange Server integrációja váltotta fel. |
+| **Elavulás/eltávolítás oka** | Ezt a szolgáltatást a Microsoft Exchange Server integrációja váltotta fel. |
 | **Felváltotta másik szolgáltatás?**   | Igen                                                                            |
 | **Érintett területek**         | Értékesítés és marketing                                                            |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                                 |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                 |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Készlet- és raktárkezelési naplók személyes zárolása
 
@@ -994,7 +993,7 @@ A készlet- és raktárnaplók már nem támogatják naplók megjelölését egy
 | **Elavulás/eltávolítás oka** | A funkció hasznossága nem mutatható ki. |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                     |
 | **Érintett területek**         | Készletgazdálkodás                   |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.         |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.         |
 
 ### <a name="product-builder"></a>Termékszerkesztő
 
@@ -1005,7 +1004,7 @@ A Termékszerkesztő használatával korábban értékesítési rendelésekből,
 | **Elavulás/eltávolítás oka** | A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott. Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.  |
 | **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Érintett területek**         | Termékinformációk kezelése, Értékesítés és marketing  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.      |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.      |
 
 ### <a name="production-floor-app"></a>Termelési üzem alkalmazás
 Ez az alkalmazás a Windows 8.1 RT és Windows 8.1 Pro rendszereket futtató táblagépekhez való.
@@ -1027,7 +1026,7 @@ Ez a szolgáltatás lehetővé tette a három alap termékdimenzió egyikének (
 | **Elavulás/eltávolítás oka** | A Dynamics AX jelenlegi verziója nem támogatja címkék módosítását futtatás alatt. |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                                                            |
 | **Érintett területek**         | Termékinformációk kezelése                                                |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                                |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                |
 
 ### <a name="retail-server-connectivity-using-http"></a>Retail Server kapcsolat ellenőrzése HTTP segítségével
 
@@ -1037,8 +1036,8 @@ A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem vé
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Új biztonsági óvintézkedések következményeképpen kizárólag a TLS 1.2 (vagy az újabb, ha rendelkezésre áll) protokollt használó biztonságos kommunikáció támogatott. Az önkiszolgáló telepítő automatikusan konfigurálja a számítógépet ehhez a kommunikációs módhoz. |
 | **Felváltotta másik szolgáltatás?**   | Szám Jelenleg csak a szabványos HTTPS által biztosított kommunikáció támogatott. |
-| **Érintett területek**         | Retail Server  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában. |
+| **Érintett területek**         | Kiskereskedelmi kiszolgáló  |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
 ### <a name="role-center-pages"></a>Szerepkör főoldalak lapjai
 
@@ -1047,7 +1046,7 @@ A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem vé
 | **Elavulás/eltávolítás oka** | A Szerepkör főoldalak lapjai a már megszűnt Enterprise Portal platformra épültek, amelynek helyét a Dynamics AX jelenlegi verziójában az új webes ügyfélplatform vette át. |
 | **Felváltotta másik szolgáltatás?**   | Az új Munkaterület képernyőminta folyamatközpontú tervezése egyszerű hozzáférést biztosít az adott folyamaton belül gyakran használt feladatokhoz.                       |
 | **Érintett területek**         | Minden modul    |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában   |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve   |
 
 ### <a name="sales-tax-jurisdictions"></a>Áfailletékességek
 
@@ -1056,7 +1055,7 @@ A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem vé
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet. |
 | **Felváltotta másik szolgáltatás?**   | Nincs                                           |
 | **Érintett területek**         | Amerikai áfa                                 |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.               |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.               |
 
 ### <a name="sites-services"></a>Sites Services
 
@@ -1067,7 +1066,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 | **Elavulás/eltávolítás oka** | A Dynamics AX által használt Microsoft Azure infrastruktúra új helyettesítő lehetőségekkel rendelkezik (például Azure oldalakkal). |
 | **Felváltotta másik szolgáltatás?**   | Nincs   |
 | **Érintett területek**         | HR-toborzás, esetkezelés, ajánlatkérés, szállítóregisztrálás, lehetőségekhez és kampányokhoz tartozó együttműködési munkaterületek  |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.    |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 
 ### <a name="ssas-demand-forecasting-strategy"></a>SSAS igény-előrejelzési szolgáltatások
 
@@ -1076,7 +1075,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 | **Elavulás/eltávolítás oka** | A funkció kialakítása az új felhő architektúrában nem támogatható. |
 | **Felváltotta másik szolgáltatás?**   | Azure gépi tanulási kereslet-előrejelzési stratégia                           |
 | **Érintett területek**         | Alaptervezés                                                              |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.                                               |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                               |
 
 ### <a name="vendor-invoice-pool-excluding-posting-details"></a>Szállítói számlagyűjtő a feladási részletek nélkül
 
@@ -1085,7 +1084,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 | **Elavulás/eltávolítás oka** | Alacsony használat. Ezt a funkciót felváltotta a munkafolyamat funkcióval rendelkező Számlanapló. |
 | **Felváltotta másik szolgáltatás?**   | A Számlanapló munkafolyamat funkciói.     |
 | **Érintett területek**         | Kötelezettségek |
-| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójában.    |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 
 
 ### <a name="virtual-company-accounts"></a>Virtuális vállalati számlák
@@ -1097,7 +1096,7 @@ A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben
 | **Elavulás/eltávolítás oka** | - A virtuális vállalatokat még az adatok táblákban való tárolása előtt be kell állítani. A virtuális vállalatok, már meglevő implementációra történő modernizálása nagyon nehézkes.<br><br>- Mivel a Microsoft Dynamics AX jelenlegi verziójában rengeteg adatnormalizáció történt, igen nehézkessé vált átlátni azt, hogy a táblagyűjteményekhez mit szükséges hozzáadni. Például nehéz megállapítani, mely táblák kerüljenek megosztásra. A virtuális vállalatokban lévő táblákból hivatkozott összes egyéb táblát is hozzá kell adni. A táblanormalizáció miatt, még egy több táblában szétszóródó egyszerű alapadatot is a virtuális vállalat részévé kell tenni. Bármilyen itt történő hiba működési diszfunkciókat okozhat.<br><br>- Egy virtuális vállalat részét képező táblában elvesznek az adatok eredetére vonatkozó információk, és csak a virtuális vállalat kerül rögzítésre.   |
 | **Felváltotta másik szolgáltatás?** | Globális táblák használatával a táblákat elérhetővé teheti az összes vállalatból. Jelenleg nincs helyettesítés. |   
 | **Érintett területek**       | Minden modul |   
-| **Állapot**                       | Eltávolítva a Dynamics AX 7.0-s verziójában.   |   
+| **Állapot**                       | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |   
 
 ### <a name="windows-8-tablet-app"></a>Windows 8 táblagépes alkalmazás
 
@@ -1124,8 +1123,7 @@ A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbe
 |                                                 |                                                                                                          |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <strong>Elavulás/eltávolítás oka</strong> |                         Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.                         |
-|  <strong>Felváltotta másik szolgáltatás?</strong>  | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában <strong>Pénzügyi jelentéskészítés</strong> megjelöléssel) |
+|  <strong>Felváltotta másik szolgáltatás?</strong>  | Management Reporter (a Dynamics AX jelenlegi verziójában <strong>Pénzügyi jelentéskészítés</strong> megjelöléssel) |
 |     <strong>Érintett területek</strong>     |                                              Főkönyv                                              |
-|             <strong>Állapot</strong>             |                                      Eltávolítva a Dynamics AX 2012-s verziójában                                      |
-
+|             <strong>Állapot</strong>             |                                      Eltávolítva a Dynamics AX 2012-s verziójától kezdve                                      |
 

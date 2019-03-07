@@ -1,13 +1,13 @@
 ---
-title: "Szállítókódok beállítása"
-description: "Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia."
+title: Szállítókódok beállítása
+description: Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a20fca7420e7bd546e29278b40046d69a81aac6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329137"
 ---
-
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,7 @@ Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetős
 
 Kapcsolattartás rögzítése nem törölhető, ha egy dokumentumra hivatkozik a kapcsolattartási adat. Ehelyett inaktiválhatja a kapcsolattartót.  
 
-A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Dynamics 365 for Finance and Operations közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
+A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Finance and Operations és Office 365 közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
 
 ## <a name="vendors-in-different-legal-entities"></a>Szállítók különböző jogi személyekként
 Ha a szállító csak egy jogi személyként van regisztrálva szervezetében, és más jogi személyeket kell regisztrálni ugyanahhoz a szállítóhoz, használhatja a **Szállító hozzáadása egy másik jogi személyhez** lapot, hogy konfigurálja a szállítót, hogy áll egy másik jogi személlyel üzletelhessen. Válasszon egy szállítói csoportot, egy pénznemet, és a szállító várakoztatási állapotát a kijelölt jogi személyhez.  
@@ -116,7 +115,6 @@ Ha kifizetést kell végrehajtania a szállítói bankszámlára, akkor szállí
 Megadhatja a szállítói számlanaplón automatikusan megjelenő alapértelmezett számlákat a megadott szállítóhoz. Ez a lehetőséget akkor lehet hasznos, ha általában azonos típusú elemeket, vagy szolgáltatásokat szokott fizetni, ugyanazoktól a szállítóktól. Ha megad egy alapértelmezett számlát, gyorsan és hatékonyan írhat be naplóbejegyzéseket a számlanaplóba. A megadott alapértelmezett számlák nincsenek használatban a beszerzési rendelésekhez, vagy azokhoz a szállítói számlákhoz, amelyek a **Szállítói számla** oldalon vannak rögzítve.  
 
 Alapértelmezett számlákat választhat az **Alapértelmezett számla beállítása** lapon, amely megnyitható a **Számla** lapon szállítórekordon. Naplóbejegyzések amiket itt kiválaszt megjelennek a szállítói számlák szűrt listáján, amikor beír egy naplóbejegyzést. A számlák közül megadhat egy alapértelmezett számlát.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Szervezetek és szervezeti hierarchiák"
-description: "Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik."
+title: Szervezetek és szervezeti hierarchiák
+description: Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322237"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Szervezetek és szervezeti hierarchiák
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajt
 
 ## <a name="organizations"></a>Szervezetek
 
-A Microsoft Dynamics 365 for Finance and Operations programban a következő típusú belső szervezeteket adhatja meg: jogi személyek, operatív egységek és csoportok.
+A Microsoft Dynamics 365 for Finance and Operations alatt a következő típusú belső szervezeteket adhatja meg: jogi személyek operatív egységek és csoportok.
 
 Az összes belső szervezet a **Fél** entitás egy formája. Ezért ezek a szervezetek a címjegyzéket használják címek és kapcsolattartási adatok tárolására. Egy félhez, amely lehet személy vagy szervezet, egy vagy több címjegyzékek is tartozhat.
 
@@ -42,13 +41,13 @@ Az összes belső szervezet a **Fél** entitás egy formája. Ezért ezek a szer
 
 A jogi személy olyan szervezet, amely bejegyzett vagy törvényben szabályozott jogi struktúrával rendelkezik. A jogi személyek törvényes szerződéseket köthetnek, teljesítményükről pedig tájékoztató beszámolókat kell készíteniük.
 
-A vállalat is jogi személy. A Microsoft Dynamics 365 for Finance and Operations e kiadásában a vállalatok az egyetlen típusú jogi személy, amelyet létrehozhat, és minden jogi személyhez tartozik egy vállalati azonosító. Erre a társításra azért van szükség, mert a program egyes funkcionális területeinek modelljei vállalat azonosítót vagy DataAreaIdot használnak. Ezeken a funkcionális területeken a vállalatokat határként használják az adatbiztonsághoz. A felhasználók csak azoknak a vállalatoknak az adatait érhetik el, amelyekhez éppen be vannak jelentkezve.
+A vállalat is jogi személy. Ebben a kiadásban, Microsoft Dynamics 365 for Finance and Operations a vállalatok az egyetlen típusú jogi személy, amelyet létrehozhat, és minden jogi személyhez tartozik egy vállalati azonosító. Erre a társításra azért van szükség, mert a program egyes funkcionális területeinek modelljei vállalat azonosítót vagy DataAreaIdot használnak. Ezeken a funkcionális területeken a vállalatokat határként használják az adatbiztonsághoz. A felhasználók csak azoknak a vállalatoknak az adatait érhetik el, amelyekhez éppen be vannak jelentkezve.
 
 ### <a name="operating-units"></a>Üzemi egységek
 
 Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a gazdasági források és működési folyamatok ellenőrzését egy üzletben. Egy üzemi egységben a személyek feladata a szűkös erőforrások maximális kihasználása, a folyamatok javítása és a teljesítményük alapján történő elszámoltatás.
 
-A Microsoft Dynamics 365 for Finance and Operations rendszerben a működési egységek típusai közé a költséghelyek, az üzleti egységek, érték-előállítási folyamatok, részlegek és kiskereskedelmi csatornák tartoznak. A következő táblázat további információval szolgál az egyes üzemi egységek típusairól.
+A Microsoft Dynamics 365 for Finance and Operations rendszerben, a működési egységek típusába a költséghelyek, az üzleti egységek, az érték-előállítási folyamatok osztályai és a kereskedelmi csatornák tartoznak. A következő táblázat további információval szolgál az egyes üzemi egységek típusairól.
 
 | Üzemi egység típusa | Leírás | Cél |
 |---------------------|-------------|---------|
@@ -66,7 +65,6 @@ A csapat olyan szervezet, amely tagjainak közös a felelőssége, érdeklődés
 
 Hozzon létre szervezeti hierarchiát, hogy segítségével több nézőpontból vizsgálhassa válalatát és készíthessen jelentést róla. Például beállíthat egy hierarchiát a jogi személyek adózási, jogi, illetve kötelezően előírt jelentéseihez. Utána beállíthat egy másik hierarchiát olyan pénzügyi információkat tartalmazó jelentéshez, mely jogilag nem kötelező, de a belső jelentésekhez használható. Például létrehozhat egy beszerzési hierarchiát a beszerzési irányelvek, szabályok és üzleti folyamatok ellenőrzésére.
 
-Minden hierarchiához hozzá van rendelve egy cél a Microsoft Dynamics 365 for Finance and Operations rendszerben. A hierarchia célja meghatározza a hierarchiában szerepeltethető szervezetek típusait. A cél azt is meghatározza, mely alkalmazás környezetben használható egy hierarchia.
+Minden hierachiához hozzá van rendelve egy cél a Microsoft Dynamics 365 for Finance and Operations modulban. A hierarchia célja meghatározza a hierarchiában szerepeltethető szervezetek típusait. A cél azt is meghatározza, mely alkalmazás környezetben használható egy hierarchia.
 
 Egy hierarchiába tartozó szervezetek megoszthatják egymással a paramétereket, az irányelveket és a tranzakciókat. Egy szervezet örökölheti, de felül is írhatja a szülő szervezete paramétereit. Azonban megosztott mesteradatok, például a termékek és a címjegyzékek, a teljes szervezetre vonatkoznak, és nem írhatók felül az egyes szervezetek esetében. Szervezetek és hierarchiák létrehozása alapos tervezést igényel. További információért lásd: [Szervezeti hierarchia tervezése](plan-organizational-hierarchy.md).
-

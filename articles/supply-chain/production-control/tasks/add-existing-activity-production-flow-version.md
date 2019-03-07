@@ -1,13 +1,13 @@
---- 
-title: "Meglévő tevékenység hozzáadása termelési folyamat verziójához"
-description: "A termelési folyamatok új verzióinak létrehozásakor lehetőség van a régebbi verziókhoz létrehozott tevékenységek hozzáadására az új verzióhoz."
+---
+title: Meglévő tevékenység hozzáadása termelési folyamat verziójához
+description: A termelési folyamatok új verzióinak létrehozásakor lehetőség van a régebbi verziókhoz létrehozott tevékenységek hozzáadására az új verzióhoz.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 032855125ccd14fbdc1e1bdb735c92ce70853fb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a74fb34db71ba4b539c1b6ede361329aaeb94920
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313612"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Meglévő tevékenység hozzáadása termelési folyamat verziójához
 
@@ -55,5 +55,4 @@ A feladathoz már létrehozott verzióval és tevékenységekkel rendelkező ter
     * Keressen meg és jelöljön ki egy meglévő tevékenységet az új termelésifolyamat-verzióhoz való hozzáadáshoz.  Ne feledje, hogy a lista minden olyan tevékenységet megjelenít, amelyet a termelési folyamathoz hoztak létre, a folyamat összes korábbi verziójában.  
 3. A Tevékenység mezőben adjon meg vagy válasszon ki egy értéket.
 4. Kattintson az OK gombra.
-
 

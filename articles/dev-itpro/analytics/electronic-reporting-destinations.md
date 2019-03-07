@@ -1,13 +1,13 @@
 ---
-title: "Elektronikus jelentéskészítés (ER) céljai"
-description: "Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációjához tartozó célt és annak kimeneti összetevőit (egy mappa vagy egy fájl). Megfelelő hozzáférési jogokkal rendelkező felhasználók módosíthatják a célbeállításokat futásidőben is. Ez a cikk ismerteti az ER célkezelés, a támogatott célok típusait és a biztonsági megfontolásokat."
+title: Elektronikus jelentéskészítés (ER) céljai
+description: Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációjához tartozó célt és annak kimeneti összetevőit (egy mappa vagy egy fájl). Megfelelő hozzáférési jogokkal rendelkező felhasználók módosíthatják a célbeállításokat futásidőben is. Ez a cikk ismerteti az ER célkezelés, a támogatott célok típusait és a biztonsági megfontolásokat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314923"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációj�
 Az elektronikus jelentési (ER) formátum konfigurációk általában tartalmaznak legalább egy kimeneti összetevőt: egy fájlt. A konfigurációk általában több, különböző típusú eredménykomponensből állnak (pl. XML, TXT, vagy XLSX), amik egy, vagy több mappában kerülnek csoportosításra. Az ER célkezeléssel előre konfigurálható, hogy mi történjen, mikor a komponenseket futtatja. Alapértelmezés szerint a konfiguráció futtatásakor megjelenik egy párbeszédpanel, aminek segítségével a felhasználó mentheti vagy megnyithatja a fájlt. Ugyanez a viselkedésforma használatos, amikor egy ER konfigurációt importál, de nem konfigurál hozzá meghatározott célt. Miután létrehozta a célt a fő kimeneti komponens részére, a létrehozott cél felülírja az alapértelmezett viselkedést, és a mappa vagy fájl a cél beállításainak megfelelően kerül kiküldésre.
 
 ## <a name="availability-and-general-prerequisites"></a>Elérhetőség és általános előfeltételek
-Az ER célok funkció a Microsoft Dynamics AX 7.0-ban (2016. február) nem elérhető. Ezért telepítenie kell a Microsoft Dynamics 365 for Operations 1611-es verzióját (2016. novemberi kiadás) az ebben a témakörben leírt függvények használatához. Másik lehetőségként telepíthet egyet a következő előfeltételek közül: Azonban ne feledje, hogy ezek az alternatívák az Elektronikus jelentéstétel célok korlátozottabb használatát teszik lehetővé.
+Az ER célok funkció a Microsoft Dynamics AX 7.0-ban (2016. február) nem elérhető. Ezért telepítenie kell a Microsoft Dynamics 365 for Operations 1611-os verzióját (2016. novemberi kiadás) az ebben a témakörben leírt függvények használatához. Másik lehetőségként telepíthet egyet a következő előfeltételek közül: Azonban ne feledje, hogy ezek az alternatívák az Elektronikus jelentéstétel célok korlátozottabb használatát teszik lehetővé.
 
-- Microsoft Dynamics AX 7.0.1 alkalmazásverzió (2016 Május)
+- Microsoft Dynamics AX alkalmazás 7.0.1 verzió (2016. május)
 - ER célkezelési [alkalmazás gyorsjavítás](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 A célokat csak importált ER konfigurációkhoz, és csak az **Elektronikus jelentéskonfigurációk** oldalon elérhető formátumokban állíthatja be.
@@ -119,9 +118,9 @@ A konfiguráció lefutása után a megnyitás/mentés párbeszédpanel megjelen�
 
 ### <a name="screen-destination"></a>Célképernyő
 
-Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kimenet előnézete. Bizonyos fájltípusok, például XML, TXT vagy PDF, közvetlenül a böngésző ablakában tekinthető meg. Más fájltípusoknál, például Microsoft Excelnél vagy Wordnél, a Microsoft Office Online szolgáltatás használatos.
+Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kimenet előnézete. Bizonyos fájltípusok, például XML, TXT vagy PDF, közvetlenül a böngésző ablakában tekinthető meg. Más fájltípusoknál, például Microsoft Excel vagy Word esetén, a Microsoft Office Online szolgáltatás használatos.
 
-### <a name="power-bi-destination"></a>Power BI-célhely
+### <a name="power-bi-destination"></a>Power BI célja
 
 Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a Finance and Operations alkalmazásból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Finance and Operations adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
@@ -158,11 +157,10 @@ A **Fájl** cél a párbeszédpanel irányítására szolgál. Ha bekapcsolja ez
 
 A formula ER-konfigurációspecifikus. Például, ha az ISO 20022 Jóváírás Átutalása konfigurációt használja, használhatja az **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID** vagy **model.Payments.Creditor.Identification.SourceID** karakterláncokat egy társított szállítói fiók eléréséhez.
 
-### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>Valamelyik formátumkonfigurációmban több fájl is van, melyek egy mappába lettek csoportosítva (Például Mappa1 tartalma Fájl1, Fájl2, és Fájl3). Hogyan állíthatom be úgy a célokat, hogy a Mappa1.zip ne legyen létrehozva, Fájl1 legyen emailben elküldve, Fájl2 legyen a SharePoint-ra küldve, és Fájl3-mat egyből a konfiguráció lefutása után megnyithassam?
+### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>Valamelyik formátumkonfigurációmban több fájl is van, melyek egy mappába lettek csoportosítva (Például Mappa1 tartalma Fájl1, Fájl2, és Fájl3). Hogyan állíthatom be úgy a célokat, hogy a Mappa1.zip ne legyen létrehozva, Fájl1 legyen emailben elküldve, Fájl2 legyen a SharePoint-ra küldve, és Fájl3-at egyből a konfiguráció lefutása után megnyithassam?
 
 Előfeltétel, hogy az Ön formátuma elérhető legyen az ER-konfigurációknál. Ha megvan a formátum, nyissa meg az **Elektronikus jelentés célja** oldalt, majd hozzon létre új hivatkozást erre a konfigurációra. Ekkor négy fájlcélra lesz szüksége, egyre mindegyik eredménykomponenshez. Hozza létre az első fájlcélt, nevezze el pl. úgy, hogy **Mappa**, majd válassza ki a fájlnevet, ami a konfigurációban a mappát reprezentálja. Kattintson a **Beállítások** gombra, és győződjön meg róla, hogy minden cél ki van kapcsolva. Ehhez a fájlcélhoz nem lesz mappa létrehozva. A fájlok és szülőmappák közötti hierarchikus viszonyok miatt alapértelmezés szerint a fájlok ugyanúgy fognak viselkedni. Más szóval nem lesznek sehová elküldve. Ezen alapértelmezett viselkedés felülbírálásához három másik fájlcélt kell létrehoznia, egyet mindegyik fájlhoz. Az egyes célbeállításoknál be kell kapcsolnia azt a célt, ahová a fájlt küldeni kívánja.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
-

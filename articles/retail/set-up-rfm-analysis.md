@@ -1,13 +1,13 @@
 ---
-title: "Recency/gyakorisági/monetáris (RFM) elemzés beállítása"
-description: "Ez a témakör bemutatja, hogy miként állíthatók be a vevő Recency, gyakorisági és pénzügyi (RFM) elemzésének."
+title: Recency/gyakorisági/monetáris (RFM) elemzés beállítása
+description: Ez a témakör bemutatja, hogy miként állíthatók be a vevő Recency, gyakorisági és pénzügyi (RFM) elemzésének.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336635"
 ---
-
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency/gyakorisági/monetáris (RFM) elemzés beállítása
 
 [!include [banner](includes/banner.md)]
@@ -98,4 +97,3 @@ Az alábbi eljárással tudja megtekinteni vagy törölni egy RFM-elemzés rekor
 2. Az **RFM-analízis** lapon válassza ki a megtekinteni kívánt rekordot.
 3. A rekordok előzményeinek megtekintéséhez válassza ki az **Előzmények** gyorslapot.
 4. A rekord előzményeinek törléséhez válassza ki az **Előzmények törlése** lehetőséget.
-

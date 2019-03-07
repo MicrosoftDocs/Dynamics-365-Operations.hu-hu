@@ -1,13 +1,13 @@
---- 
-title: "A hullámfeldolgozás konfigurálása"
-description: "Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, amelyek meghatározzák, hogy milyen munkát hozzon létre a rendszer a raktárra vonatkozóan, a hullám feldolgozásakor, és hogy a hullámokat manuálisan vagy automatikusan dolgozzák-e fel."
+---
+title: A hullámfeldolgozás konfigurálása
+description: Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, amelyek meghatározzák, hogy milyen munkát hozzon létre a rendszer a raktárra vonatkozóan, a hullám feldolgozásakor, és hogy a hullámokat manuálisan vagy automatikusan dolgozzák-e fel.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337509"
 ---
 # <a name="configure-wave-processing"></a>A hullámfeldolgozás konfigurálása
 
@@ -68,5 +68,4 @@ Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, am
 24. A Kiadás raktárba mezőben válasszon ki egy lehetőséget.
     * Az értékesítési és a kanban rendelésekhez, a készletet a rendelés raktárból történő kiadása előtt le kell foglalni. Ellenkező esetben a cikkek vagy a felosztási sorok nem dolgozhatók fel a hullámban. A termelési rendelésekre vonatkozóan kiválaszthatja a Részleges foglalás engedélyezése lehetőséget. Ez például hasznos, ha a termelés megkezdéséhez szükséges anyagok rendelkezésére állnak, és addig pedig várni tud, amíg a további anyagok beérkeznek az eljárás végrehajtáshoz. Ha ezt a lehetőséget választja, akkor manuálisan meg kell ismételnie a raktárba kiadás folyamatát, amikor további anyagok rendelkezésre állnak.  
 25. Zárja be a lapot.
-
 

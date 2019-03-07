@@ -1,35 +1,34 @@
 ---
-title: "Szövegcsonkolás elkerülése a pozícióhierarchiában és exportálás a Visio szolgáltatásba"
-description: "Ez a témakör ismerteti azoknak a problémáknak a megoldását, ahol a magánszemélyek nevei és a beosztások csonkolva jelennek meg, amikor a vevő megtekinti a beosztáshierarchiát a Microsoft Dynamics 365 for Talent szolgáltatásban. A szöveg csonkolt megjelenítése megnehezítheti a képernyőkép készítését vagy a hierarchia nyomtatását."
+title: Szövegcsonkolás elkerülése a pozícióhierarchiában és exportálás a Visio szolgáltatásba
+description: Ez a témakör ismerteti azoknak a problémáknak a megoldását, ahol a magánszemélyek nevei és a beosztások csonkolva jelennek meg, amikor a vevő megtekinti a beosztáshierarchiát a Dynamics 365 for Talent szolgáltatásban. A szöveg csonkolt megjelenítése megnehezítheti a képernyőkép készítését vagy a hierarchia nyomtatását.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: b688a396e3b384aedb06c470b1634150ae7aa038
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304652"
 ---
-
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Szövegcsonkolás elkerülése a pozícióhierarchiában és exportálás a Visio szolgáltatásba
 
 [!include [banner](includes/banner.md)]
 
-**Probléma**
+**Kibocsátás**
 
 Amikor a vevő megtekinti a beosztáshierarchiát a Microsoft Dynamics 365 for Talent szolgáltatásban, a magánszemélyek nevei és a beosztások csonkolva jelennek meg. Ez megnehezítheti a képernyőkép készítését, vagy a hierarchia nyomtatását és terjesztését.
 
@@ -107,4 +106,3 @@ A diagramban való megjelenítésre kiválasztott mezők alapján az egyes csom�
 **További lehetőség**
 
 A Talentben lehet, hogy a **Személyek** munkaterületen is meg tudja jeleníteni a hierarchiához kapcsolódó információk egy részét.
-

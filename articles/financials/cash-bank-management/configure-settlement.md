@@ -1,13 +1,13 @@
 ---
-title: "Kiegyenlítés konfigurálása"
-description: "A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a témakör a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be."
+title: Kiegyenlítés konfigurálása
+description: A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a témakör a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319270"
 ---
-
 # <a name="configure-settlement"></a>Kiegyenlítés konfigurálása
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ A további könyvelési bejegyzések (tartozik és követel tételek ugyanahhoz 
 
 -   A szervezetek gyakran használnak rögzített dimenziókat az olyan pénzügyi dimenziók kitöltésére, melyekre nincs szükség. Ez a helyzet általában a mérlegszámlák, például a kinnlevőségekből/kötelezettségek esetén. A számlastruktúrákat lehet úgy használni, hogy ne kövessék azokat a pénzügyi dimenziókat, amelyek általában kitöltésre kerülnek.  Eltávolíthatja a mérlegszámlák esetében a pénzügyi dimenziókat, feleslegessé téve a rögzített dimenziókat használatát.
 -   Ha a szervezet előírja a rögzített dimenziók használatát a kinnlevőségek/kötelezettségek fő számla esetén, állítsa be alapértelmezettként a rögzített dimenziót a fizetéshez, így a rögzített dimenzió értékét tárolja a fizetéshez tartozó szállítói tranzakció. Ez lehetővé teszi a rendszer számára, hogy helyreállítása a kinnlevőségek/kötelezettségek fő számlát, a rögzített dimenziók értékeit is tartalmazva. A rögzített dimenzió értékét meg lehet adni alapértelmezettként a szállítókra vagy a napló nevére vonatkozóan a fizetési naplónál.
-

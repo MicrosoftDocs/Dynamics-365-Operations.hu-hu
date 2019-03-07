@@ -1,32 +1,30 @@
 ---
-title: "Előfizetési munkafolyamat áttekintése"
-description: "Ez a témakör az előfizetési munkafolyamatról nyújt áttekintést."
+title: Előfizetési munkafolyamat áttekintése
+description: Ez a témakör az előfizetési munkafolyamatról nyújt áttekintést.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5cff6910dcb273fc081443546676426387f6625
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b4872c0753b54bdddf2c7778a13819726eea4a90
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321639"
 ---
-
-
 # <a name="subscription-workflow-overview"></a>Előfizetési munkafolyamat áttekintése 
 
 [!include [banner](../includes/banner.md)]
@@ -57,6 +55,5 @@ Két nappal később a vevő telefonál, hogy az előfizetés számlázandó USA
 A vevő előfizetéseiből minden hónap végén egy havi bevétel lekönyvelhető az eredményszámlára és a folyamatban lévő munka számlájára. Az előfizetési bevételek könyvelésével kapcsolatos további tudnivalók: [Előfizetési bevétel könyvelése](accrue-subscription-revenue.md).
 
   
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Mobil számlajóváhagyások"
-description: "Ez a témakör gyakorlati megközelítést biztosít Dynamics 365 for Finance and Operations mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével."
+title: Mobil számlajóváhagyások
+description: Ez a témakör gyakorlati megközelítést biztosít a Dynamics 365 for Finance and Operations mobilforgatókönyveinek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314394"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
+Mobil lehetőségek a Microsoft Dynamics 365 for Finance and Operations alkalmazásban lehetővé teszi az üzleti felhasználónak a mobilélmények tervezését. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
 
 <a name="prerequisites"></a>Előfeltételek
 -------------
@@ -37,7 +36,7 @@ A Microsoft Dynamics 365 for Finance and Operations mobilszolgáltatásai segít
 | Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).                   |
+| Dynamics 365 for Finance and Operations                                                                             | Egy környezet, amely Microsoft Dynamics 365 for Operations 1611-os verzióval és Microsoft Dynamics for Operations platform update 3 (2016. november) rendelkezik                   |
 | Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés) |
 | Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés).           |
 | Telepítse a 3208224 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Alkalmazáskód a szállítói számla jóváhagyására szolgáló mobilalkalmazáshoz - ez a Microsoft Dynamics AX alkalmazás 7.0.1 (2016. május) verziójában szerepel.                          |
@@ -139,7 +138,7 @@ A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott vál
 
 Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája. A mobillap megtervezéséhez használja a Finance and Operations **VendMobileInvoiceAssignedToMeListPage** lapját. Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz. Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.
 
-1.  A Finance and Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  A Finance and Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi **=VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
 3.  Válassza ki a munkaterületet, és kattintson a **Szerkesztés** elemre
 4.  Kattintson az **Oldal hozzáadása** elemre az első mobiloldal létrehozásához.
@@ -222,7 +221,7 @@ Munkafolyamat-műveletek hozzáadásához használja a Finance and Operations **
 12. Ismételje meg az előző lépéseket az összes szükséges munkafolyamat-művelet rögzítéséhez. 
 
 #### <a name="create-a-js-file"></a>.js fájl létrehozása
-1. Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studiót, és illessze be a következő kódot. Mentse a fájlt .js fájlként. Ez a kód a következőket hajtja végre:
+1. Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studio programot, és illessze be a következő kódot. Mentse a fájlt .js fájlként. Ez a kód a következőket hajtja végre:
     - Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat. Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.
     - Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.
 
@@ -488,7 +487,6 @@ A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatók
     3.  Ideális esetben ennél a forgatókönyvnél a felosztások egy számlasor kontextusában jelennek meg. Ezért győződjön meg arról, hogy a felhasználó eljuthat a kívánt sorig a felosztások oldal megtekintéséhez. Hivatkozzon az oldalra az útvonal létrehozásához, mint ahogyan a fejlécnél és a részletező oldalnál tette az 1. forgatókönyvben.
 
 2.  Mivel a 2. forgatókönyvben egynél több összegtípus várható a felosztások között (áfa stb.), hasznos lesz megjeleníteni az összeg leírását. (Ezt az információt az 1. esetben kihagytuk.)
-
 
 
 

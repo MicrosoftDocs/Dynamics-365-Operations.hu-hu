@@ -1,13 +1,13 @@
 ---
-title: "Talent-környezetek eltávolítása"
-description: "Ez a témakör végigvezeti Önt a tesztelési termelési környezet eltávolításának folyamatán a Microsoft Dynamics 365 for Talent számára."
+title: Talent-környezetek eltávolítása
+description: Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 for Talent számára.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304765"
 ---
 # <a name="remove-talent-environments"></a>Talent-környezetek eltávolítása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör végigvezeti Önt a tesztelési termelési környezet eltávolításának folyamatán a Microsoft Dynamics 365 for Talent számára.
+Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 for Talent számára.
 
 ## <a name="removing-a-test-drive-environment"></a>Tesztkörnyezet eltávolítása
 
@@ -73,5 +73,4 @@ A Talent környezet eltávolításához a meglévő PowerApps környezetből, ha
 6. Az LCS-projektben válassza a **Talent alkalmazás kezelése** csempét. 
 7. Válassza ki a példányt, amelyet el szeretné távolítani, amelynél fel kell tüntetni a telepítés állapotát **Nem sikerült** állapottal.
 8. Válassz a **Példány eltávolítása** lehetőséget, és hagyja jóvá a döntést. 
-
 

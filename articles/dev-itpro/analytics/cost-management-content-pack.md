@@ -1,13 +1,13 @@
 ---
-title: "Költségkezelési Power BI-tartalom"
-description: "Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul."
+title: Költségkezelés Power BI tartalom
+description: Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelés Power BI-tartalom modul.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,26 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327803"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Költségkezelési Power BI-tartalom
+# <a name="cost-management-power-bi-content"></a>Költségkezelés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Áttekintés
 
-A **Kezelési költség** Microsoft Power BI-tartalom készletkönyvelők, valamint a szervezeten belül a készletekért és a folyamatban lévő munkákért felelős vagy ez iránt érdeklődő, valamint elszámolóár-különbözetek elemzésével foglalkozó szakemberek számára készült.
+A **Költségkezelés** Microsoft Power BI-tartalom készletkönyvelők, valamint a szervezeten belül a készletekért és a folyamatban lévő munkákért felelős vagy ez iránt érdeklődő, valamint elszámolóár-különbözetek elemzésével foglalkozó szakemberek számára készült.
 
 > [!NOTE]
-> A jelen témakörben bemutatott **Kezelési költség** Power BI tartalom a Dynamics 365 for Finance and Operations 8.0 verziójára vonatkozik.
+> A témakörben leírt **Költségkezelés** Power BI-tartalom a Dynamics 365 for Finance and Operations 8.0-s verzióra vonatkozik.
 > 
-> A Power BI **költségkezelési** tartalmi csomag már elavult - az AppSource oldalon érhető el. Az értékcsökkenéssel kapcsolatos további tudnivalókat lásd: [Power BI tartalmi csomagok elérhetők az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. Az értékcsökkenéssel kapcsolatos további tudnivalókat lásd: [Elérhető Power BI tartalomcsomagok az AppSource felületén](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 
@@ -46,14 +45,14 @@ A Power BI-tartalom a **CostObjectStatementCacheMonthly** összesített mérésr
 
 A **CostObjectStatementCache** tábla minden frissítése után a **CostObjectStatementCacheMonthly** összesített mérést frissíteni kell, mielőtt a Power BI megjelenítések adatai frissülnek.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 
-A **Kezelési költség** Power BI-tartalom szerepel a **Költségadminisztráció** és a **Költségelemzés** munkaterületeken.
+A **Költségkezelés** Power BI-tartalom szerepel a **Költségadminisztráció** és a **Költségelemzés** munkaterületeken.
 
 A **Költségadminisztráció** munkaterület a következő lapokat tartalmazza:
 
 - **Áttekintés** – Ez a lap megjeleníti az alkalmazásadatokat.
-- **Könyvelési készletállapot** – Ez a lap Power BI-tartalmat jelenít meg.
+- **Készletkönyvelés állapota** – Ez a lap Power BI-tartalmat jelenít meg.
 - **Gyártási könyvelés állapota** – Ez a lap Power BI-tartalmat jelenít meg.
 
 A **Költségelemzés** munkaterület a következő lapokat tartalmazza:
@@ -63,7 +62,7 @@ A **Költségelemzés** munkaterület a következő lapokat tartalmazza:
 - **Gyártási könyvelés elemzése** – Ez a lap Power BI-tartalmat jelenít meg.
 - **Elszámolóár-különbözet elemzése** – Ez a lap Power BI-tartalmat jelenít meg.
 
-## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentési oldalak
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Jelentési oldalak, amelyek a Power BI-tartalomban szerepelnek
 
 A **Költségkezelés** Power BI-tartalom jelentési oldalakat is tartalmaz, amelyben mutatók sora található meg. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. 
 
@@ -173,9 +172,9 @@ Az alábbi táblázatokban megtalálható a **Költségkezelés** Power BI-tarta
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
-A **Kezelési költség** Power BI-tartalom jelentési oldalainak adatai a Microsoft Dynamics 365 for Finance and Operations rendszerből származnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL Server-adatbázis. További tudnivalókért lásd: [A Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
+A Microsoft Dynamics 365 for Finance and Operations adatai segítségével kitölthetők a jelentési oldalak a **Költségkezelés** Power BI-tartalomban. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL Server-adatbázis. További tudnivalókért lásd: [Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
 
-A következő objektumok a kulcsfontosságú összesítő mértékei a Power BI-tartalom alapjául szolgálnak.
+A következő objektumok kulcsfontosságú összesítő mértékei a Power BI-tartalom alapjául szolgálnak.
 
 | Objektum                          | Kulcs összesítő mértékek | Adatforrás a Finance and Operationsnél | Mező               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
@@ -209,4 +208,3 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Jogi személyek                                          | Jogi személyek nevei                              |
 | Pénzügyi naptárak                                        | Pénzügyi naptár, év, negyedév, időszak, hónap   |
 | Telephely                                                    | Azonosító, név, cím, állam, ország               |
-

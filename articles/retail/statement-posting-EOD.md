@@ -1,13 +1,13 @@
 ---
-title: "Kimutatásfeladás funkcionalitás továbbfejlesztései"
-description: "Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat."
+title: Kimutatásfeladás funkcionalitás továbbfejlesztései
+description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,19 +16,18 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321432"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
 [!include[banner](includes/banner.md)]
 
-Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javítások első készletét. Ezek a fejlesztések ebben a verzióban érhetők el: Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javítások első készletét. Ezek a fejlesztések érhetők el a Microsoft Dynamics 365 for Finance and Operations 7.3.2 verziójában.
 
 ## <a name="activation"></a>Aktiválás
 
@@ -171,4 +170,3 @@ A kimutatásfeladási funkción egyéb, a felasználó által látható, hátté
 
     - Menjen ide: **Kiskereskedelem** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek**. Ezután a **Feladás** lapon, a **Készletmódosítás** gyorslapon, a **Részletességi szint** mezőben válassza ki az **Összegzés** lehetőséget.
     - Menjen ide: **Kiskereskedelem** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek**. Ezután a **Feladási** lapon, az **Összesítés** gyorslapon állítsa a **Bizonylattranzakciók** lehetőséget **Igen** beállításra.
-

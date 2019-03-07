@@ -1,13 +1,13 @@
 ---
-title: "Nyomtatható FTI-űrlapok generálása"
-description: "Ez a témakör bemutatja a Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrlapok generálását az Elektronikus jelentéskészítés (ER) keretrendszer segítségével."
+title: Nyomtatható FTI-űrlapok generálása
+description: Ez a témakör bemutatja a Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrlapok generálását az Elektronikus jelentéskészítés (ER) keretrendszer segítségével.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d27a11a0d925b0f1164578f9c04e6abd4736b2b2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325526"
 ---
-
 # <a name="generate-printable-fti-forms"></a>Nyomtatható FTI-űrlapok generálása
 
 [!include[banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrl
 
 ## <a name="overview"></a>Áttekintés
 
-A nyomtatható FTI űrlapok generálása a Microsoft SQL Server Reporting Services (SSRS) segítségével képességen túl immár használhatja az ER-keretrendszert is A nyomtatható FTI-űrlapokat Microsoft Office Excelben és Wordben is kezelheti. Módosíthatja az elrendezést, az adatáramlást és a formázást, hogy megfeleljenek az igényekhez, a kód módosítása nélkül.
+A nyomtatható FTI űrlapok generálása a Microsoft SQL Server Reporting Services (SSRS) segítségével képességen túl immár használhatja az ER-keretrendszert is A nyomtatható FTI-űrlapokat Microsoft Office Excel és Word programban is kezelheti. Módosíthatja az elrendezést, az adatáramlást és a formázást, hogy megfeleljenek az igényekhez, a kód módosítása nélkül.
 
 > [!NOTE]
 > Ha egy meglévő ER konfiguráció áttekintésével szeretné megkezdeni, a nyomtatható FTI-űrlapok megoldást nyissa meg közvetlenül az **ER konfigurációk letöltése nyomtatható FTI űrlapok generálásához** szakaszt a témakör későbbi részében.
@@ -114,7 +113,7 @@ Az ER keretrendszer jelenleg támogatja a következő helyeket a létrehozott do
 - **Letöltött fájl** – A generált űrlapok letöltésekként vannak felajánlva, hogy a böngésző segítségével menthesse azokat.
 - **Képernyő** – A Microsoft Office 365 Excel szolgál a létrehozott FTI-űrlapok megtekintésére Excel formátumban.
 - **SharePoint-mappa** – A generált űrlapokat a Dokumentumkezelő keretrendszer beállításai alapján tárolja .
-- **Alkalmazásarchívum** –A generált űrlapokvégrehajtási naplóbejegyzések mellékleteként vannak tárolva a Microsoft Azure tárhelyen.
+- **Alkalmazásarchívum** –A generált űrlapokvégrehajtási naplóbejegyzések mellékleteként vannak tárolva a Microsoft Azure Storage szolgáltatásban.
 - **E-mail**– A generált űrlapok e-mail-mellékleteként lesznek küldve.
 
 > [!NOTE]
@@ -211,7 +210,7 @@ Ha a szervezet e-mail-sablont, amelynek az előre definiált **ERFTITMP** azonos
 
 ![E-mail sablon feltöltése](media/FTIbyGER-EmailTemplateBody.png)
 
-Az **Emailing.TxtToUse.Subject** ER kifejezés a minta ER formátumban úgy van beállítva a helyőrző %1 minden előfordulását lecseréli a feldolgozási számla azonosítójára.
+Az **Emailing.TxtToUse.Subject** ER kifejezés a minta ER formátumban úgy van beállítva, hogy a(z) %1 helyőrző minden előfordulását lecseréli a feldolgozási számla azonosítójára.
 
 Az **Emailing.TxtToUse.Body** kifejezés a minta formátumban a helyőrzők alábbiak szerinti cserélésére van beállítva:
 
@@ -226,4 +225,3 @@ Az **Emailing.TxtToUse.Body** kifejezés a minta formátumban a helyőrzők alá
 
 ## <a name="additional-resources"></a>További erőforrások
 [Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Anyagjegyzék-számítás elvégzése több szintű struktúra használatával (2016. február)"
-description: "Ez az eljárás bemutatja, hogyan lehet kiszámítani egy késztermék költségét többszintű alábontással, amelynek az alapja a költségszámítási táblázat."
+---
+title: Anyagjegyzék-számítás elvégzése több szintű struktúra használatával (2016. február)
+description: Ez az eljárás bemutatja, hogyan lehet kiszámítani egy késztermék költségét többszintű alábontással, amelynek az alapja a költségszámítási táblázat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog, BOMCalcTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: fcc1248d64145c10f1c67bfac49c053e99dc1598
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323364"
 ---
 # <a name="calculate-a-bom-by-using-a-multilevel-structure-february-2016"></a>Anyagjegyzék-számítás elvégzése több szintű struktúra használatával (2016. február)
 
@@ -48,5 +48,4 @@ Ez az eljárás bemutatja, hogyan lehet kiszámítani egy késztermék költség
     * Többszörös kiválasztáskor a költségek besorolásának alapja a BOM_2, ahol a 10 forrása az M1 költségcsoport (ITEM_C), a 15,60 pedig a gyártásából származik, ahol a költségcsoport az L2. A közvetett költségek is eltérőek lehetnek.  
 11. Zárja be a lapot.
 12. Zárja be a lapot.
-
 

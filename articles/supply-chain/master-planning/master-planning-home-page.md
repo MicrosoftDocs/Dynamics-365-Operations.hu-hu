@@ -1,32 +1,31 @@
 ---
-title: "Alaptervezés kezdőlap"
-description: "Az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez."
+title: Alaptervezés kezdőlap
+description: Az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
 ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314785"
 ---
-
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ A három fő tervezési folyamat a következő:
 
 -  **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. További információkért lásd: [Előrejelzési tervezés](introduction-demand-forecasting.md). 
 
--  **Vállalatközi alaptervezés** – a vállalatközi alapterv kiszámítja a nettó követelményeket a jogi személyeket lefedve. Az igényeket és az ellátást köti össze a vállalatok között, és nem csak a rövid távú, megerősített igényt és ellátást, hanem a hosszú távú, tervezett (még meg nem erősítése) igényt és ellátást is. További tudnivalókért lásd: [Vállalatközi alaptervezés](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (tanulás) (CustomerSource-fiókot igényel). 
+-  **Vállalatközi alaptervezés** – a vállalatközi alapterv kiszámítja a nettó követelményeket a jogi személyeket lefedve. Az igényeket és az ellátást köti össze a vállalatok között, és nem csak a rövid távú, megerősített igényt és ellátást, hanem a hosszú távú, tervezett (még meg nem erősítése) igényt és ellátást is. További tudnivalókért lásd: [Vállalatközi alaptervezés](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource-fiókot igényel). 
 
 A vállalatok módosíthatják a terv eredményét. Futtathatják az újragenerálást, a nettó változtatást vagy mindkettőt. Az újragenerálási tervek valamennyi követelményt frissítik, miközben a nettó változási tervek csak az olyan új követelményekkel rendelkező cikkek tervét frissítik, amelyek az utolsó ütemezés futtatása óta érkeztek.
 
@@ -69,10 +68,10 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="roadmaps"></a>Ütemtervek
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában ](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.
 
 ### <a name="task-guides"></a>Feladat-útmutatók
 Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra.
@@ -84,7 +83,6 @@ Feladat-útmutatók formájában további segítség áll rendelkezésre a Finan
 -  [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
 -  [Segítség! Lassú az MPR!](https://youtu.be/RLXybx20B5o)
-
 
 
 

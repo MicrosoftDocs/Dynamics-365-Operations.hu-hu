@@ -1,39 +1,38 @@
 ---
-title: "Feladat-útmutatók mentése az LCS szolgáltatásba, és ismételt lejátszásuk"
-description: "Ez a témakör bemutatja, hogyan lehet menteni feladat-útmutatót a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba, majd ezután újra lejátszani őket."
+title: Feladat-útmutatók mentése LCS-re, és újbóli lejátszásuk
+description: Ez a témakör bemutatja, hogyan lehet menteni feladat-útmutatót a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba, majd ezután újra lejátszani őket.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 40b4c3154a04a557b8a670e1f1ae3722c71122fe
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304702"
 ---
-
-# <a name="save-task-guides-to-lcs-and-replay-them"></a>Feladat-útmutatók mentése az LCS szolgáltatásba, és ismételt lejátszásuk
+# <a name="save-task-guides-to-lcs-and-replay-them"></a>Feladat-útmutatók mentése LCS-re, és újbóli lejátszásuk
 
 [!include [banner](includes/banner.md)]
 
 **Környezet részletes adatai** 
 
-Microsoft Dynamics 365 for Talent, amelyet a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáson keresztül telepítettek
+A Microsoft Dynamics 365 for Talent, amelyet a Microsoft Dynamics Lifecycle Services (LCS) rendszeren keresztül telepítettek
 
-**Probléma**
+**Kibocsátás**
 
 A vevő új feladatrögzítéseket szeretne elmenteni az LCS-projektjéhez, majd újra lejátszani az elmentett feladat-útmutatókat.
 
@@ -66,4 +65,3 @@ Kövesse az alábbi lépéseket a feladat-útmutató LCS-ből való visszajátsz
 2. Válassza a **Megnyitás LCS-ből** lehetőséget.
 3. Válassza ki a könyvtárat és a BPM-csomópontot, amelyek a mentett feladat-útmutatót tartalmazzák.
 4. Nyissa meg a feladat-útmutatót.
-

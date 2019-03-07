@@ -1,13 +1,13 @@
 ---
-title: "Raktári munka ellenőrzése munkasablonok és helyutasítások használatával"
-description: "A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban."
+title: Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
+description: A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325411"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
 
 [!include [banner](../includes/banner.md)]
@@ -163,4 +162,3 @@ Jelölje be ezt a jelölőnégyzetet kötegstratégiák használatához az olyan
 Ehhez a példához egy olyan beszerzési rendelési folyamatot veszünk alapul, ahol a helyutasításnak szabad területet kell találnia egy raktáron belül, azoknak a készletcikkeknek, amiket most regisztráltak a bevételezési területen. Először szabad kapacitást kell találnia a raktár területén, az aktuális készlet konszolidálásával. Ha a konszolidáció nem lehetséges, üres helyet kell találnia. 
 
 Ebben az esetben két helyutasítási műveletet kell megadni. A sorozat első művelete a **Konszolidálás** stratégiája, a másodiknak az **Üres hely bejövő munka nélkül** stratégiáját használjuk. Hacsak nem ad meg műveletet a túlcsordulás kezelésére, két végkifejlet lehetséges akkor, ha nincs több kapacitása a raktárnak: a munka létrehozható, habár nem lesz hely meghatározva, vagy a munka-létrehozási folyamat sikertelenül zárul. Az eredményt a **Helyutasítási hibák** lap beállításai határozzák meg, ahol eldöntheti, hogy beállítja-e a **Munka leállítása, ha a helyutasítások sikertelenek** lehetőséget minden Munkarendelés-típushoz.
-

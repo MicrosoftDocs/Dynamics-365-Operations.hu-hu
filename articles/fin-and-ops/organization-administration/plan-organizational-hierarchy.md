@@ -1,13 +1,13 @@
 ---
-title: "Szervezeti hierarchia megtervezése"
-description: "Szervezetek és szervezeti hierarchiák beállítása előtt, győződjön meg arról, hogy tisztában van vele, mi a vállalata modellezésének legjobb módja."
+title: Szervezeti hierarchia megtervezése
+description: Szervezetek és szervezeti hierarchiák beállítása előtt, győződjön meg arról, hogy tisztában van vele, mi a vállalata modellezésének legjobb módja.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331989"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Szervezetek és szervezeti hierarchiák beállítása előtt a Microsoft Dynamic
 
 Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatot jelölik. Ezért a legfontosabb szempont a szervezetek modellezésénél az üzlet szerkezete. Azt ajánljuk, hogy a funkcionális területek, mint például pénzügy és könyvelés, emberi erőforrások, tevékenységek, beszerzés, értékesítés és marketing funkcionális területek vezetőinek és felsővezetőinek visszajelzései alapján határozza meg a szervezeti szerkezeteket.
 
-Hierarchiák tervezése esetén fontos figyelembe venni a szervezeti hierarchia és a pénzügyi dimenziók közötti kapcsolatot. Több szervezeti hierarchiát is beállíthat a különböző üzleti nézetek ábrázolásához. Pénzügyi dimenziók segítségével, ezen nézetek alapján jelentések készíthetők. Dolgozzon a Microsoft Dynamics 365 for Finance and Operations partnerrel hierarchiák létrehozásához, amelyek a szervezeti és a kötelező jelentési szükségleteket is kezelik.
+Hierarchiák tervezése esetén fontos figyelembe venni a szervezeti hierarchia és a pénzügyi dimenziók közötti kapcsolatot. Több szervezeti hierarchiát is beállíthat a különböző üzleti nézetek ábrázolásához. Pénzügyi dimenziók segítségével, ezen nézetek alapján jelentések készíthetők. Dolgozzon a Microsoft Dynamics 365 for Finance and Operations Partnerrel hierarchiák létrehozásához, amelyek a szervezeti és a kötelező jelentési szükségleteket is kezelik.
 
 > [!NOTE]
 > Annak ellenére, hogy a pénzügyi dimenziók felhasználhatók jogi személyek képviseletére jogi személyek létrehozása nélkül a Finance and Operations alkalmazásban, a pénzügyi dimenziókat nem jogi személyek működési vagy üzleti igényeinek kielégítésére tervezték. A Microsoft Dynamics 365 for Finance and Operations rendszerben a Egységközi könyvelés funkció csak az egyes tranzakciók által létrehozott könyvelési tételek kezelését szolgálja.
@@ -168,7 +167,7 @@ Az üzemi egységek a fölérendelt jogi személy ország kontextusát használj
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Az olyan országok és régiók, amelyeket a Dynamics 365 for Finance and Operations program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd, [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) a Dynamics 365 for Finance and Operations rendszerhez. (Kötelező megadni a vevői forrás bejelentkezést.)
+Az olyan országok és régiók, amelyeket a Dynamics 365 for Finance and Operations program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd, [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) a Finance and Operations rendszerhez. (Egy CustomerSource bejelentkezés szükséges.)
 
 > [!NOTE]
 > A Finance and Operationsben a főkönyvi feladási réteg segítségével a korrekciós bejegyzések elvégezhetők olyan fölérendelt vállalatba, amely egy másik könyvelési standardot használ mint az alárendelt vállalat. Ha például egy vállalatra vonatkozóan, amely az Egyesült Királyságban (Egyesült Királyság GAAP) általánosan elfogadott könyvelési gyakorlatokat használ helyesbítő tételeket végezhet a feladási rétegben. Ezek a bejegyzések konszolidálhatók a fölérendelt vállalatba, amely az Egyesült Államokban általánosan elfogadott könyvelési elveket (GAAP) használja. A korrekciós bejegyzések nem befolyásolják a UK GAAP jelentést.
@@ -243,4 +242,3 @@ Vegye figyelembe a következő legjobb gyakorlati tanácsokat a szervezeti hiera
 - A fő átstruktúrálási tervek modellezése előtt használja a hierarchia érvényességi dátumát a hatáselemzés és az érvényességi teszt végrehajtásához.
 - A vázlat mód segítségével módosíthatja a hierarchiát az új verzió közzététele előtt termékkörnyezetben.
 - Korlátozhatja az emberek számát, akiknek engedélye van szervezetek hozzáadásához vagy eltávolításához a hierarchiából a termékkörnyezetben. A kevesebb csökkenti annak lehetőségét, hogy költséges hibák fordulnak elő és helyesbítéseket kell elvégezni.
-

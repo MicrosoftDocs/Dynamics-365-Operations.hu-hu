@@ -1,31 +1,30 @@
 ---
-title: "Visszáru önköltségi ára és visszáru adagazonosítója"
-description: "Hasznos, ha a visszáruk költsége megegyezik a termékeknek az akkori költségével, amikor a termékeket az ügyfélnek eladta. Ehhez használhatja a **Visszáru adagazonosítóját**."
+title: Visszáru önköltségi ára és visszáru adagazonosítója
+description: Hasznos, ha a visszáruk költsége megegyezik a termékeknek az akkori költségével, amikor a termékeket az ügyfélnek eladta. Ehhez használhatja a **Visszáru adagazonosítóját**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335140"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Visszáru önköltségi ára és visszáru adagazonosítója        
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Alapértelmezés szerint, amikor cikkeket ad hozzá egy visszárurendeléshez, a
 
 3.  A **Visszárurendelés létrehozása** képernyőn válasszon ki egy vevőkódot, majd kattintson az **OK** gombra.
 
-4.  A **Visszárurendelések - RMA szám: %1, %2** képernyőn válasszon ki egy cikket, majd adja meg a negatív mennyiséget a **Mennyiség** mező ben.
+4.  A **Visszárurendelések - RMA szám: %1, %2** képernyőn válasszon ki egy cikket, majd adja meg a negatív mennyiséget a **Mennyiség** mezőben.
 
 5.  Kattintson a **Soradatok** gyorslapra.
 
@@ -109,7 +108,6 @@ Amikor egy visszárurendelési sor **Visszáruadag-azonosító** mezőjét haszn
 10. A készlet- és raktárkezelő modulban használja a **Zárás és módosítás** képernyőt a **3. Bezárás** eljárás lefuttatásához.
     
     Ez a művelet módosítja a költséget az eredeti értékesítési sorban, amelynek -35.00 volt a költségszámítása (5 darab \*7,00) és-30.00 (5 darab \*6,00). Ennek oka az, hogy a készletmodell-csoport az Elsőként be, elsőként ki (FIFO) módszert használja, és darabonként 6,00 a FIFO-költség az első beszerzési rendelésből. Ezenkívül a művelet módosítja a költséget a visszárusoron úgy, hogy az megfeleljen az eredeti értékesítési soron lévő darabonként költségnek. Emiatt a visszárusor költsége 35,00-ről 30,00-ra módosul.
-
 
 
 

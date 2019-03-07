@@ -1,33 +1,32 @@
 ---
-title: "Bérlista-integráció konfigurálása a Talnet és a Dayforce közötti"
-description: "Ez a témakör bemutatja, hogyan kell konfigurálni az integrációt a Microsoft Dynamics 365 for Talent és a Ceridian Dayforce között úgy, hogy fel lehessen dolgozni fizetési időszakot.."
+title: Bérlista-integráció konfigurálása a Talnet és a Dayforce közötti
+description: Ez a témakör bemutatja, hogyan kell konfigurálni az integrációt a Microsoft Dynamics 365 for Talent és a Ceridian Dayforce között úgy, hogy fel lehessen dolgozni fizetési időszakot.
 author: jcart1106
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304657"
 ---
-
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talnet és a Dayforce közötti
+# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talent és a Dayforce között
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 Talent és Ceridian Dayforce integrálásához több konfigurációs lépést szükséges elvégezni, melyek ebben a témakörben vannak ismertetve. Be kell állítania az integrációt a Talent a Dayforce alkalmazásokban is a fizetési időszak feldolgozása előtt.
+A Microsoft Dynamics 365 for Talent és Ceridian Dayforce integrálásához több konfigurációs lépést szükséges elvégezni, melyek ebben a témakörben vannak ismertetve. Be kell állítania az integrációt a Talent a Dayforce alkalmazásokban is a fizetési időszak feldolgozása előtt.
 
 Ha olyan szolgáltatást használ a fizetési időszakokhoz, mint a Dayforce, engedélyeznie kell az integrációt a Talentben. Az integrációhoz meghatározott adatok szükségesek a Talentből. Ezért ellenőriznie kell, hogy a Dayforce-ban hozzárendelt adatok olyan módon vannak konfigurálva a Talentben, hogy az támogassa az integrációt. Az integráció a következő szélesebb adatkategóriákat használja:
 
@@ -662,4 +661,3 @@ Az alkalmazottak útlevél adatokat is nyilatkozhatnak. Az információ a **Útl
 - Lejárat dátuma
 
 Az alkalmazottak több azonosítószámot is megadhatnak az **Útlevél** azonosítótípushoz. Azonban csak az aktuális aktív útlevélbejegyzés van integrálva a Dayforce-ba. Ha az összes útlevélbejegyzés lejárt, a legutóbb kiállított lesz integrálva a Dayforce-ba.
-

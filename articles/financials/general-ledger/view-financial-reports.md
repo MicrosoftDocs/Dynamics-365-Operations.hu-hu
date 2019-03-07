@@ -1,13 +1,13 @@
 ---
-title: "Pénzügyi jelentések megtekintése"
-description: "Ez a cikk bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics 365 for Finance and Operations rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat."
+title: Pénzügyi jelentések megtekintése
+description: Ez a cikk bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics 365 for Finance and Operations rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312945"
 ---
-
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
 [!include [banner](../includes/banner.md)]
@@ -82,13 +81,12 @@ A pénzügyi jelentés nyomtatásához kattintson a műveleti ablakon a **Nyomta
 Miután befejezte a nyomtatási beállítások megadását, kattintson a **Nyomtatás** gombra a jelentés nyomtatásához. Ha úgy dönt, hogy nem szeretné kinyomtatni a jelentést, kattintson a **Mégse** gombra. Megjelenik a jelentés nyomtatási képe. Kiválaszthatja, hogy melyik nyomtatóval nyomtatja ki a jelentést, és módosíthatja a nyomtatási beállításokat.
 
 ## <a name="export-a-financial-report"></a>Pénzügyi jelentés exportálása
-Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** gombra. A jelentés Microsoft Excelbe lesz exportálva, majd a böngésző megkérdezi, hogy megnyitni vagy menteni akarja-e az exportált fájlt. Az exportálási beállítások, amik a jelentésre vonatkoznak, alkalmazva lesznek az exportált jelentésre.    
+Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** gombra. A jelentés Microsoft Excel fájlba lesz exportálva, majd a böngésző megkérdezi, hogy megnyitni vagy menteni akarja-e az exportált fájlt. Az exportálási beállítások, amik a jelentésre vonatkoznak, alkalmazva lesznek az exportált jelentésre.    
 
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Pénzügyi jelentéskészítés a Microsoft Dynamics AX rendszerben](../../dev-itpro/analytics/financial-reporting-intro.md)
-
+[Pénzügyi jelentéskészítés: Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik"
-description: "Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén."
+title: Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
+description: Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60c8b9b3a5aebed7e1a999335aab0baf83ea952a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ac64ece82abe75f3cba437b1ec1af499fbbce8e4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337900"
 ---
-
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ A számla egyenlege ekkor 0,00. Arnie megtekintheti ezt az információt a **Vev
 | DISC-10030 |  Készpénzfizetési engedmény   | 2015/6/28 |         |                                      | 6,00                                  | 0,00    | dollár      |
 | ARP-10031  |  Kifizetés         | 2015/8/7  |         |                                      | 693,00                                | 0,00    | dollár      |
 | DISC-1031  |  Készpénzfizetési engedmény   | 2015/8/7  |         |                                      | 7:00                                  | 0,00    | dollár      |
-
 
 
 

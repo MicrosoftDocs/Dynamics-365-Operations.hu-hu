@@ -1,13 +1,13 @@
 ---
-title: "Borderó kifizetés sztornózása"
-description: "Ez a cikk egy kifizetés sztornírozását, törlését, érvénytelenítését és visszautasítását mutatja be. Elmagyarázza továbbá szállítói számlák sztornírozásának két módját."
+title: Borderó kifizetés sztornózása
+description: Ez a cikk egy kifizetés sztornírozását, törlését, érvénytelenítését és visszautasítását mutatja be. Elmagyarázza továbbá szállítói számlák sztornírozásának két módját.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankChequeTable, LedgerJournalTransBankChequeReversal, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 019b765cd1e9fa00078018354f0d0792b97faba6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329620"
 ---
-
 # <a name="reverse-a-vendor-payment"></a>Borderó kifizetés sztornózása
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Ha a sztornírozott csekk vevői kifizetésre volt kiadva, a következő folyama
 
 -   Tranzakciót ad fel a rendszer a kifizetéssztornírozás vevői rekordjával szemben, sztornírozza az eredeti kifizetés és a kifizetés eredeti kiegyenlítéséhez használt dokumentum közötti kiegyenlítést (negatív kifizetés jön létre).
 -   Az eredeti kifizetésre kifizetéssztornírozást alkalmaz a rendszer. A **Szállítói tranzakciók** oldal **Utolsó kiegyenlítés bizonylata** mezőjében az eredeti szállítói kifizetés frissítése a sztornírozott tranzakció bizonylatszámának felel meg.
-
 
 
 

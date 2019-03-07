@@ -1,13 +1,13 @@
---- 
-title: "Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása"
-description: "Ez az eljárás bemutatja, hogyan lehet kiegészítő szolgáltatások alapadatokat létrehozni egy központ számára, és az alapadatok segítségével egy központi kiegészítő díjat létrehozni."
+---
+title: Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása
+description: Ez az eljárás bemutatja, hogyan lehet kiegészítő szolgáltatások alapadatokat létrehozni egy központ számára, és az alapadatok segítségével egy központi kiegészítő díjat létrehozni.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9959c20f9a8fd07cbf0cfd76f7760b44d7b5cae1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6381416640ffacf0a9d96d7da96bc33612ca7137
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331897"
 ---
 # <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a>Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása
 
@@ -52,5 +52,4 @@ Ez az eljárás bemutatja, hogyan lehet kiegészítő szolgáltatások alapadato
     * Jelölje ki az előbb létrehozott alapadatot.  
 9. Kattintson a Mentés gombra.
 10. Zárja be a lapot.
-
 

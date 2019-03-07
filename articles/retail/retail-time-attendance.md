@@ -1,13 +1,13 @@
 ---
-title: "A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban"
-description: "Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot."
+title: A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
+description: Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a kiskereskedelmi munkaidő- és jelenlét-nyilvántartás kezelését a Microsoft Dynamics 365 for Retail rendszerben.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321271"
 ---
-
 # <a name="time-and-attendance-management-in-retail"></a>A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot.
+Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a kiskereskedelmi munkaidő- és jelenlét-nyilvántartás kezelését a Microsoft Dynamics 365 for Retail rendszerben.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Dolgozók elhelyezésének és ütemezésének kezelése
 
-### <a name="initial-configuration"></a>Induló konfiguráció
+### <a name="initial-configuration"></a> Induló konfiguráció
 
 - Futtassa a konfigurációs varázslót.
 - Regisztrálja a dolgozókat időregisztrációs dolgozókként.
@@ -126,7 +125,7 @@ A Pénztáron:
 
 ## <a name="process-and-manage-time-registrations"></a>Időregisztrációk feldolgozása és kezelése
 
-A Dynamics 365 for Retail-felhasználó követi a munkafolyamatot, hogy kiszámolja, jóváhagyja, valamint áthelyezze az időregisztrációkat a bérlistára.
+A Dynamics 365 for Retail felhasználója követi a munkafolyamatot, hogy kiszámolja, jóváhagyja, valamint áthelyezze az időregisztrációkat a bérlistára.
 
 ### <a name="primary-operations"></a>Elsődleges műveletek
 
@@ -140,4 +139,3 @@ A Dynamics 365 for Retail-felhasználó követi a munkafolyamatot, hogy kiszámo
 - Távollét regisztrálása
 
 Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](https://technet.microsoft.com/library/aa573180.aspx).
-

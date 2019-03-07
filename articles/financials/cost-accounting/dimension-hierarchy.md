@@ -1,32 +1,31 @@
 ---
-title: "Dimenzióhierarchia"
-description: "Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban. Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben."
+title: Dimenzióhierarchia
+description: Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban. Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320213"
 ---
-
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
 [!include [banner](../includes/banner.md)]
@@ -329,9 +328,8 @@ A Hozzáférési lista hierarchiájának beállításait használja a rendszer a
 - Power BI:
 
     - Adatok, amelyek megjelennek a Power BI ábrázolásaiban
-    - Az adatok azon Power BI megjelenítései, amelyek be vannak építve a Microsoft Dynamics 365 for Finance and Operations kliensébe.
+    - Az adatok Power BI-megjelenítései, amelyek a Microsoft Dynamics 365 for Finance and Operations kliensbe vannak ágyazva
 
 > [!NOTE] 
-> - Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+> - Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a hozzáférési lista hierarchiáját és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 > - A hozzáférési lista hierarchiája nem segít az adatok biztonságos Excel-exportjában. Ezért a jelentési eszközt csak olyan költségkönyvelők és vezetők használhatják, akiknek teljes hozzáférésük van az adatok megtekintéséhez.
-

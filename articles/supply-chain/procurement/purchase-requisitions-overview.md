@@ -1,13 +1,13 @@
 ---
-title: "Beszerzési igénylések áttekintése"
-description: "Ez a témakör a beszerzési igénylési munkafolyamatot, valamint a beszerzési igénylés különböző állapotait írja le."
+title: Beszerzési igénylések áttekintése
+description: Ez a témakör a beszerzési igénylési munkafolyamatot, valamint a beszerzési igénylés különböző állapotait írja le.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309840"
 ---
-
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ A jóváhagyott beszerzési igénylés felhasználható a beszerzési rendelés 
 ## <a name="creating-purchase-requisitions"></a>Beszerzési igénylés létrehozása
 Létrehozhat egy beszerzési igénylést a **Beszerzési rendeléseim** oldalon, és kiválaszthatja a szükséges cikkeket és szolgáltatásokat. A termékeket kiválaszthatja a szervezete által létrehozott beszerzési katalógusból, vagy kiválaszthatja a beszerzési kategóriát és megadhatja a termék részleteit, ha a katalógusban nem szereplő termékeket igényelne.  
 
-Beszerzési igénylés csak a munkafolyamatok Microsoft Dynamics 365 for Finance and Operations kliensben való konfigurálása után nyújtható be ellenőrzésre. A munkafolyamatot a beszerzési igénylés ellenőrzési folyamaton való mozgatásához használja a kiinduló **Piszkozat** állapottól a végső **Jóváhagyott** állapotig.
+Beszerzési igénylés csak a munkafolyamat konfigurálása után nyújtható be ellenőrzésre a Microsoft Dynamics 365 for Finance and Operations rendszerben. A munkafolyamatot a beszerzési igénylés ellenőrzési folyamaton való mozgatásához használja a kiinduló **Piszkozat** állapottól a végső **Jóváhagyott** állapotig.
 
 ### <a name="purchase-requisition-statuses"></a>A beszerzési igénylések állapotai
 
@@ -142,7 +141,7 @@ A beszerzési irányelveknél ellenőrizheti az elérhető beszerzési célt a s
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Fogyasztási célú igénylések
 
-A fogyasztási célú igénylés olyan termék vagy szolgáltatás iránti keresletet jelent, amelyet a szervezete belső folyamataiban fog felhasználni. Az ilyen típusú igénylés által létrehozott kereslet mindig teljesül egy beszerzési rendeléssel. Ha a Microsoft Dynamics 365 for Finance and Operations beállítása automatikusan hoz létre beszerzési igénylést, azok csak a beszerzési igénylés jóváhagyása után valósulnak meg.
+A fogyasztási célú igénylés olyan termék vagy szolgáltatás iránti keresletet jelent, amelyet a szervezete belső folyamataiban fog felhasználni. Az ilyen típusú igénylés által létrehozott kereslet mindig teljesül egy beszerzési rendeléssel. Ha a Microsoft Dynamics 365 for Finance and Operations beállítása automatikan hoz létre beszerzési igénylést, azok csak a beszerzési igénylés jóváhagyása után valósulnak meg.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Feltöltési célú igénylések
 
@@ -198,7 +197,6 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 [Felhasználási igénylés létrehozása (Feladat-útmutató)](tasks/create-requisition-consumption.md)
 
 [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Projektszerződések és projektek közvetlen szinkronizálása a Project Service Automation alkalmazásból a Finance and Operations alkalmazásba"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a projektszerződések és projektek a Microsoft Dynamics 365 for Project Service Automation és a Microsoft Dynamics 365 for Finance and Operations közötti szinkronizálásra használhatók."
+title: Projektszerződések és projektek közvetlen szinkronizálása a Project Service Automation alkalmazásból a Finance and Operations alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Project Service Automation projektszerződéseinek és projektjeinek közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312117"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Projektszerződések és projektek közvetlen szinkronizálása a Project Service Automation alkalmazásból a Finance and Operations alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a projektszerződések és projektek a Microsoft Dynamics 365 for Project Service Automation és a Microsoft Dynamics 365 for Finance and Operations közötti szinkronizálásra használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Project Service Automation projektszerződéseinek és projektjeinek közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
 
 > [!NOTE] 
-> Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3.0-ás verzióját használja,, telepítenie kell a KB 4074835 frissítést
+> A Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3.0 használata esetén, telepítenie kell a KB 4074835 csomagot.
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Adatáramlás a Project Service Automation és a Finance and Operations között
 
@@ -47,7 +46,7 @@ A következő ábra bemutatja a Project Service Automation és a Finance and Ope
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
-A rendelkezésre álló sablonok eléréséhez a Microsoft PowerApps admin centerben válassza a **Projektek** lehetőséget, majd ezután kattintson a jobb felső sarkában **Új projekt** lehetőségre a nyilvános sablonok kiválasztásához.
+A rendelkezésre álló sablonok eléréséhez a Microsoft PowerApps adminisztrációs központban válassza a **Projektek** lehetőséget, majd kattintson a jobb felső sarkában **Új projekt** lehetőségre a nyilvános sablonok kiválasztásához.
 
 A következő sablon és alapul szolgáló feladatok használhatók a projektszerződések és projektek szinkronizálásához a Project Service Automation és Finance and Operations között:
 
@@ -95,8 +94,8 @@ Project Service Automation és Finance and Operations közötti integrációs me
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
 - Projektek és projektszerződések szinkronizálása előtt szinkronizálnia kell a fiókokat.
-- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_organizationalunits**, **msdyn\_name \[Name\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
-- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_projects**, **msdynce\_projectnumber \[Project Number\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_organizationalunits**, **msdyn\_name \[Name\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) részt.
+- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_projects**, **msdynce\_projectnumber \[Project Number\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) részt.
 - **SourceDataID** projekt szerződések és projektek frissíthetők egy másik értékre, vagy eltávolíthatók a hozzárendelésből. Az alapértelmezett sablonérték **Project Service Automation**.
 - A **PaymentTerms** hozzárendelést frissíteni kell, hogy az megfeleljenek Finance and Operations alkalmazásban érvényes fizetési feltételeknek. A hozzárendelést el is távolíthatja a projektfeladatból. Az alapértelmezett értékhozzárendelés alapértelmezett értékeket tartalmaz a bemutató adatokból. Az alábbi táblázat bemutatja a Project Service Automation értékeit.
 
@@ -111,7 +110,7 @@ Project Service Automation és Finance and Operations közötti integrációs me
 
 Microsoft Power Query for Excelt kell használnia az adatok szűréséhez, ha teljesülnek a következő feltételek:
 
-- A Microsoft Dynamics 365 for Sales is tartalmaz értékesítési rendeléseket.
+- Értékesítési rendelései vannak a Microsoft Dynamics 365 for Sales rendszerben.
 - Több szervezeti egységre van a Project Service Automation alkalmazásban, és ezen szervezeti egységeket több jogi személyhez lesznek rendelve a Finance and Operations alkalmazásban.
 
 Ha a Power Query-t kell használnia, kövesse az alábbiakat:
@@ -135,4 +134,3 @@ Az alábbi ábrán példákat láthat sablonfeladatok hozzárendelésére az Ada
 [![Sablon-hozzárendelés](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Sablon-hozzárendelés](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

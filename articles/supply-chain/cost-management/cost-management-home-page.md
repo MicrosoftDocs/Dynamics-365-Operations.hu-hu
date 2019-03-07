@@ -1,32 +1,31 @@
 ---
-title: "Költségkezelés kezdőlap"
-description: "A költségkezeléssel kezelheti a nyersanyagok, a félkésztermékek, késztermékek és a folyamatban lévő eszközök értékelését és könyvelését."
+title: Költségkezelés kezdőlap
+description: A költségkezeléssel kezelheti a nyersanyagok, a félkésztermékek, késztermékek és a folyamatban lévő eszközök értékelését és könyvelését.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333944"
 ---
-
 # <a name="cost-management-home-page"></a>Költségkezelés kezdőlap
 
 [!include [banner](../includes/banner.md)]
@@ -46,13 +45,13 @@ A Készletkönyvelés és Gyártási könyvelés elemeket a **Költségadminiszt
 
 A Gyártási könyvelés segítségével kezelheti a [Feladatrendeléses költségelszámolást](production-order-cost-analysis.md) a gyártási rendeléseknél és a kötegelt rendeléseknél, továbbá a [Visszavezetéses költségelszámolást](backflush-costing.md) a lean gyártásnál.
 
-A [Költségkezelés](../../dev-itpro/analytics/cost-management-content-pack.md) Power BI-tartalom betekintést biztosít a vezetők számára a készletbe és a befejezetlen termelés készletébe, illetve az ezeken belüli, kategóriánkénti költségáramlásba időalapú lebontásban. Az információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
+A [Költségkezelés Power BI-tartalom](../../dev-itpro/analytics/cost-management-content-pack.md) betekintést biztosít a vezetők számára a készletbe és a befejezetlen termelés készletébe, illetve az ezeken belüli, kategóriánkénti költségáramlásba időalapú lebontásban. Az információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 
 ### <a name="additional-resources"></a>További erőforrások
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
+Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
 #### <a name="white-paper"></a>Útmutató
 A [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) című rész ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A témakör jobb magyarázata érdekében konkrét forgatókönyveket és adatokat biztosít, melyek bemutatják a különböző beállítások és konfigurációk hatását. Nem várjuk el, hogy kövesse ezeket a forgatókönyveket, mert ez a dokumentum nem nyújt elegendő részletet a konfigurálásukról. Ha azonban megvan az alaptudása, megpróbálhatja lejátszani az alább felsorolt feladatútmutatókat a megjelenésük sorrendjében. A jelen dokumentum elolvasásából szerzett tudása segítségével elkészítheti az anyagjegyzék-számítás elemzését. 
@@ -67,9 +66,8 @@ A [Darabjegyzék-számítás költségszámítási táblázat segítségével](h
 
 
 #### <a name="blogs"></a>Blogok
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában ](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a költségkezelésről. A bejegyezések egy része ugyan a Költségkezelés előző verziójához íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a költségkezelésről. A bejegyezések egy része ugyan a Költségkezelés előző verziójához íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
 #### <a name="task-guides"></a>Feladat-útmutatók
 Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.
-
 

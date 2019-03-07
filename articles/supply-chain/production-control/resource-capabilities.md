@@ -1,13 +1,13 @@
 ---
-title: "Erőforrás-képességek"
-description: "Ez a cikk az erőforrás képességeivel kapcsolatos információkról nyújt tájékoztatást. A képesség egy üzemi erőforrás képességét jelenti egy adott tevékenység végrehajtására. A cikk bemutatja, hogy hogyan használják a képességeket és a kapcsolódó fogalmakat (például a szakértelemszint és a prioritás) a megfelelő erőforrások kiválasztására egy tevékenységre vonatkozóan."
+title: Erőforrás-képességek
+description: Ez a cikk az erőforrás képességeivel kapcsolatos információkról nyújt tájékoztatást. A képesség egy üzemi erőforrás képességét jelenti egy adott tevékenység végrehajtására. A cikk bemutatja, hogy hogyan használják a képességeket és a kapcsolódó fogalmakat (például a szakértelemszint és a prioritás) a megfelelő erőforrások kiválasztására egy tevékenységre vonatkozóan.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319293"
 ---
-
 # <a name="resource-capabilities"></a>Erőforrás-képességek
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Ebben a példában mindkét gépet ki lehet választani az ütemezési motorral,
 
 ## <a name="competencies-for-human-resources"></a>Emberi erőforrások kompetenciái
 Ha **Emberi erőforrások** típusú üzemi erőforrással rendelkezik, amelyik az Emberi erőforrásoknál dolgozókhoz van rendelve, akkor kihasználhatja a dolgozók kompetenciáit amikor megadja az útvonal forrás szükségleteit. Más szóval is megadhat követelményeket bizonyos képességekhez, tanfolyamokhoz, tanúsítványokhoz vagy beosztásokhoz. Az ütemezési motor kiválaszthat forrásokat, amelyek dolgozókhoz vannak rendelve, a kiválasztás a dolgozók kompetenciái alapján történik. A kompetenciák az Emberi erőforrásoknál, nem pedig az **Erőforrások képességei** oldalon találhatók. Amikor képességeket, tanfolyamokat, képesítéseket vagy beosztásokat ad meg forrás szükségletekként, akkor a Humán erőforrások funkciót kell használni a rendszerben, és minden egyes erőforrást hozzá kell rendelnie a **Humán erőforrások** típusához a megfelelő dolgozónak. Ha a rendszerben az Emberi erőforrások funkciót használja, akkor megadhat képességeket az **Erőforrás-képességek** oldalon ami megjeleníti vagy duplikálja a Humán erőforrások kompetenciáit. Ugyanakkor az **Erőforrás-képességek** oldal nem tartalmaz funkciót amelyik szükséges a képességek, tanfolyamok, bizonyítványok vagy beosztások karbantartásához.
-
 
 
 

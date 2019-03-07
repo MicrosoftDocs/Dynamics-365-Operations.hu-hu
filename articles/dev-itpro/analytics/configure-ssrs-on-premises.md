@@ -1,34 +1,34 @@
 ---
-title: "Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez"
-description: "Ez a témakör információkat nyújt az SQL Server Reporting Services (SSRS) szolgáltatásról on-premises telepítés esetén."
+title: Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez
+description: Ez a témakör információkat nyújt az SQL Server Reporting Services (SSRS) szolgáltatásról on-premises telepítés esetén.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315130"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez
 
 [!include [banner](../includes/banner.md)]
 
-Az ebben a témakörben található lépésekkel konfigurálhatja az SQL Server Reporting Services (SSRS) szolgáltatást az Ön Microsoft Dynamics 365 for Finance and Operations (on-premises) telepítésének megfelelően.
+Kövesse a témakörben található a lépéseket az SQL Server Reporting Services (SRRS) konfigurálásához a Microsoft Dynamics 365 for Finance and Operations (on premises) telepítéséhez.
 
 1. Nyissa meg a Reporting Services konfigurációkezelő alkalmazást.
 2. Hagyja meg az alapértelmezett **Kiszolgálónév** értéket, amelynek a jelenlegi gép nevének kell lennie, valamint a **Jelentéskészítő kiszolgáló példánya** is legyen az alapértelmezett **MSSQLSERVER**.
@@ -94,4 +94,3 @@ Az ebben a témakörben található lépésekkel konfigurálhatja az SQL Server 
 13. Kattintson a **Kilépés** ikonra a **Reporting Services konfigurációkezelő** bezárásához.
 
     [![a reporting services konfigurációkezelőjének bezárása](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-

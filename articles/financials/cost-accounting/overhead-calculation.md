@@ -1,13 +1,13 @@
 ---
-title: "Járulékos költség számítása"
-description: "Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le."
+title: Járulékos költség számítása
+description: Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
 ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335117"
 ---
-
 # <a name="overhead-calculation"></a>Járulékos költség számítása
 
 [!include [banner](../includes/banner.md)]
@@ -1413,7 +1412,6 @@ A pénzügyi könyvelésnél egy 10 000,00 értékű költséget adnak fel az el
 
 > [!NOTE]
 > Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. Részletesebb tájékoztatás: [Költségösszesítési irányelv](cost-rollup.md).
-
 
 
 

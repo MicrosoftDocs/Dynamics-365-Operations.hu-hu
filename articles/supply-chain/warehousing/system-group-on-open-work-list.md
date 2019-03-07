@@ -1,13 +1,13 @@
 ---
-title: "Nyitott munkalista rendszercsoportosítása"
-description: "Ez a témakör leírja, hogyan történik a nyitott munkalista szűrése egy mobileszközön."
+title: Nyitott munkalista rendszercsoportosítása
+description: Ez a témakör leírja, hogyan történik a nyitott munkalista szűrése egy mobileszközön.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 73e1da37c354eecf1ef5d44e68d814664fe2be99
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331966"
 ---
-
 # <a name="system-grouping-on-an-open-work-list"></a>Nyitott munkalista rendszercsoportosítása
 
 [!include [banner](../includes/banner.md)]
@@ -42,5 +41,4 @@ A következő lépésekkel beállíthatja a rendszercsoportosítást egy nyitott
 | Rendszercsoportosítás engedélyezése |                                                                                                                                                                                                                                                 Lehetővé teszi a rendszercsoportosítást a kijelölt munkalista menüelemére vonatkozóan.                                                                                                                                                                                                                                                  |
 | Csoportosító rendszermező | Csak akkor érhető el, ha a <strong>Rendszer működésének ellenőrzése</strong> értéke <strong>Igen</strong>. Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a rendszer kitárolási munkát csoportosítani a dolgozók számára. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. Használja a <strong>Rendszercsoportosítási címke</strong> mezőt, amely jelzi a dolgozónak, hogy mit olvasson be. |
 | Csoportosító rendszercímke |                       Csak akkor érhető el, ha a <strong>Rendszer működésének ellenőrzése</strong> értéke <strong>Igen</strong>. Írja be a szöveget, amely a dolgozót tájékoztatja arról, mit olvasson be, ha a kitárolási munka csoportosítva van a rendszerben. Például ha a <strong>Szállítmányazonosító</strong> mezőt használja egy szállítmány kitárolási munkájának csoportosítására, megadhatja a Szállítási azonosító értékét a mezőben. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Rendszercsoportosítás</strong> mezőben ki kell választania a mezőt is, amely szerint a csoportosítás történik.                       |
-
 

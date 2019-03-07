@@ -1,13 +1,13 @@
 ---
-title: "Dimenzión alapuló termékkonfiguráció"
-description: "A dimenzión alapuló termékkonfiguráció egy egyszerű megoldás több termékváltozat létrehozására egy alaptermékből és annak anyagjegyzékéből."
+title: Dimenzión alapuló termékkonfiguráció
+description: A dimenzión alapuló termékkonfiguráció egy egyszerű megoldás több termékváltozat létrehozására egy alaptermékből és annak anyagjegyzékéből.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: eb2690ec5296f65430268a211108551348a4a060
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 297e60e63b88b610d0886ad16667c4f99cc74ccb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317016"
 ---
-
 # <a name="dimension-based-product-configuration"></a>Dimenzión alapuló termékkonfiguráció
 
 [!include [banner](../includes/banner.md)]
@@ -88,5 +87,4 @@ A következő nyolc feladatútmutató abban a sorrendben van felsorolva, amelybe
 6.  [Konfigurációs utak definiálása (feladat-útmutató)](tasks/define-configuration-route.md)
 7.  [Konfigurációs szabályok létrehozása (feladat-útmutató)](tasks/create-configuration-rules.md)
 8.  [Dimenzión alapuló konfigurációk létrehozása (feladat-útmutató)](tasks/create-dimension-based-configurations.md)
-
 

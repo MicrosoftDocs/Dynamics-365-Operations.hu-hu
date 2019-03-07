@@ -1,13 +1,13 @@
 ---
-title: "Projekt szolgáltatásautomatizálása"
-description: "Ez a témakör a Project Service Automation és Finance and Operations közötti integrálási megoldásról szolgál információkkal Ez az integráció az Adatintegráció funkció segítségével szinkronizálja az adatokat a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition és a Microsoft Dynamics 365 for Project Service Automation példányai között Common Data Service környezetben."
+title: Projekt szolgáltatásautomatizálása
+description: Ez a témakör a Project Service Automation és Finance and Operations közötti integrálási megoldásról szolgál információkkal Ez az integráció az adatintegráció funkciót használja az adatok szinkronizálásához a Microsoft Dynamics 365 for Finance and Operations és Microsoft Dynamics 365 for Project Service Automation példányok között a Common Data Service szolgáltatáson keresztül.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,26 +17,25 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 4b1d2ae69899a2937d47f6547ee4ba72b2d1ece4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335692"
 ---
-
 # <a name="project-service-automation"></a>Projekt szolgáltatásautomatizálása
 
 [!include[banner](../includes/banner.md)]
 
-The Project Service Automation to Finance és Operations integrációs funkció Adatintegráció funkció segítségével szinkronizálja az adatokat a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition és a Microsoft Dynamics 365 for Project Service Automation példányai között a Common Data Service környezetben. Az integrációs sablonok, mely az adatintegráció funkcióban érhetők el lehetővé teszik, a projektek, projektszerződések, a projektszerződéssorok és projektszerződéssor mérföldkövek, kiadástranzakció-kategóriák, becsült órák és becsült költségek áramoltatását a Project Service Automation és a Finance and Operations között.
+A Project Service Automation és Finance and Operations közötti integrációs megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Project Service Automation példányai között a Common Data Service szolgáltatással. Az integrációs sablonok, mely az adatintegráció funkcióban érhetők el lehetővé teszik, a projektek, projektszerződések, a projektszerződéssorok és projektszerződéssor mérföldkövek, kiadástranzakció-kategóriák, becsült órák és becsült költségek áramoltatását a Project Service Automation és a Finance and Operations között.
 
 > [!NOTE]
 > - Amennyiben a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0-ás verziót használja, a KB 4132657 és KB 4132660 telepítését követően, használhat sablonokat projektfeladatok, kiadási tranzakciókategóriák, becsült órák, becsült kiadások és a tényleges értékek integrálásához, és a funkciók zárolásának beállításához. Ha a könyvelési felosztásokat kell visszaállítania, ajánlott a KB 4131710 telepítése is.
 > - A Finance and Operations 7.3.0 használata esetén, telepítenie kell a KB 4074835. Ezt követően lehetséges a rögzített árú projektek integrálása.
 > - Ha a Finance and Operations 7.3.0 verzióját használja, tranzakciókat hív be a Project Service Automation alkalmazásból, telepítenie kell KB 4345320 frissítést annak érdekében, hogy a díjakat megjelenítse a projektszámlán.
 > - Amennyiben a Microsoft Dynamics 365 for Finance and Operations 8.0-ás verzióját használja a projektfeladat integrációja, költségtranzakció-kategóriák, munkaóra-becslés, költségbecslések és a funkciók zárolása funkciókat használhatja.
-> - Amennyiben a Microsoft Dynamics 365 for Finance and Operations 8.0.1-es vagy újabb verzióját használja, lépes lesz szinkronizálni a tényleges értékeket.
+> - Amennyiben a Microsoft Dynamics 365 for Finance and Operations 8.0.1 vagy újabb verzióját használja, szinkronizálhatja azt aktuális adatokat.
 
 Mielőtt integrálhatná a Project Service Automation és Finance and Operations alkalmazásokat, konfigurálnia kell a Project Service Automation integráció paramétereit. További tudnivalókért lásd [Project Service Automation integrálási paraméterek](PSA-parameters.md).
 
@@ -69,11 +68,10 @@ A Project Service Automation és Finance and Operations megoldás használatáho
 
 A Project Service Automation és Finance and Operations integráció használatához telepítenie kell a következő összetevőket:
 
-- Microsoft Dynamics 365 for Project Service Automation 9.0.0.0 vagy újabb verzió
-- A potenciális vevők készpénzre váltása megoldás Microsoft Dynamics 365 for Sales szolgáltatáshoz, 1.14.0.0 (v14) vagy későbbi verzió
-- Project Service Automation to Finance and Operations solution for Microsoft Dynamics 365 for Project Service Automation 1.0.0.0 vagy újabb verzió
+- Microsoft Dynamics 365 for Project Service Automation 9.0.0.0 vagy újabb verziója
+- A potenciális ügyfelek készpénzre váltása megoldás a Microsoft Dynamics 365 for Sales 1.14.0.0 (v14) vagy későbbi verziójához.
+- Project Service Automation és a Finance and Operations integrációs megoldás a Microsoft Dynamics 365 for Project Service Automation 1.0.0.0 vagy újabb verziójához
 
 ## <a name="install-the-project-service-automation-to-finance-and-operations-integration-solution-in-your-project-service-automation-instance"></a>A Project Service Automation to Finance and Operations integrációs megoldást Project Service Automation példányába telepítse
 
 Töltse le a Project Service Automation to Finance and Operations integrációs megoldást a [Microsoft letöltőközpontból](https://www.microsoft.com/en-us/download/details.aspx?id=57016), és kövesse a megoldáshoz tartozó utasításokat.
-

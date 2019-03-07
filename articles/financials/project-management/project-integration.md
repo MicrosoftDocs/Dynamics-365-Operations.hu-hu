@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Project-ügyfélintegráció"
-description: "A projektek ütemtervének megtervezése és karbantartása összetett lehet, ezért a projektmenedzsereknek olyan eszközöket kell használniuk, amelyek segítenek nekik elvégezni ezt a feladatot. A Microsoft Project ügyféllel való integráció támogatást nyújt a projekt munkalebontási struktúrájának megnyitásához és kezeléséhez."
+title: Microsoft Project-ügyfélintegráció
+description: A projektek ütemtervének megtervezése és karbantartása összetett lehet, ezért a projektmenedzsereknek olyan eszközöket kell használniuk, amelyek segítenek nekik elvégezni ezt a feladatot. A Microsoft Project ügyféllel való integráció támogatást nyújt a projekt munkalebontási struktúrájának megnyitásához és kezeléséhez.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317476"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Microsoft Project-ügyfélintegráció
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 A projektek ütemtervének megtervezése és karbantartása összetett lehet, ezért a projektmenedzsereknek olyan eszközöket kell használniuk, amelyek segítenek nekik elvégezni ezt a feladatot. A Microsoft Project ügyféllel való integráció támogatást nyújt a projekt munkalebontási struktúrájának megnyitásához és kezeléséhez. A projektmenedzser bármikor közzéteheti a változtatásokat a Finance and Operations projekt munkalebontási struktúrájába.
 
 > [!NOTE]
-> Amennyiben a Microsoft Dynamics 365 for Finance and Operations 2017. júliusi frissítését használja, telepítenie kell a KB 4054797-et és 4055884-et.
+> A Microsoft Dynamics 365 for Finance and Operations júliusi frissítésének használata esetén, telepítenie kell a KB 4054797 és 4055884 csomagokat.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>A Microsoft Project ügyfél bővítmény konfigurálása
 A Microsoft Project ügyféllel való integráció engedélyezéséhez a Microsoft Dynamics 365 ügyfelet telepíteni kell a felhasználó ügyfél Microsoft Project alkalmazásában. Ehhez meg kel nyitni a **Projektvezetési munkaterületet**.
@@ -83,13 +82,13 @@ A következő adatokat a rendszer visszafelé szinkronizálja a Finance and Oper
 
 1.  Nyissa meg a Microsoft Project ügyfelet.
 
-2.  A **Microsoft Dynamics 365** lapon kattintson a **megnyitás** elemre.
+2.  A **Microsoft Dynamics 365** lapon kattintson a **Megnyitás** gombra.
 
 3.  Válassza **Jogi személyt** a projekthez.
 
 4.  Válassza ki a kívánt **Projektet**.
 
-5.  A **Microsoft Dynamics 365** lapon kattintson a **Kivétel** elemre.
+5.  Kattintson a **Kivétel** lehetőségre a **Microsoft Dynamics 365** lapon.
 
 6.  Ha készen áll a Finance and Operations programba történő közzétételre, kattintson a **Beadás** elemre a **Microsoft Dynamics 365** lapon.
 
@@ -128,4 +127,3 @@ A Microsoft Project ügyfél segítségével új munkalebontási struktúra lét
 8.  Válassza ki az erőforrásként használni kívánt **Naptárat**.
 
 11. Kattintson az **OK** gombra.
-

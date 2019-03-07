@@ -1,13 +1,13 @@
 ---
-title: "Főkönyvi devizaátértékelés"
-description: "Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása."
+title: Főkönyvi devizaátértékelés
+description: 'Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315544"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ A következő könyvelési bejegyzés jön létre.
 Ha az átértékelési tranzakciót sztorníroznia kell, válassza ki a **Sztornírozási tranzakció** gombot a **Devizaátértékelés** lapon. Új devizaátértékelési előzményrekord jön létre az átértékelés megtörténte vagy sztornírozási időpontja könyvvizsgálati ellenőrzési előzményeinek megőrzése érdekében. 
 
 Sztornózhatja az elavult rendelés átértékelési eredményeit, de szükség lehet egy frissebb átértékelés sztornírozására is az egyes átértékelt fő számlák helyes egyenlegeinek biztosításához. Az elavult rendelés sztornírozása azért fordulhat elő, mert nem lehet meghatározni, hogy mely fő számlákat és milyen gyakorisággal értékeljen át a rendszer. Egy szervezet például kiválaszthatja a fő készpénzszámlák negyedéves átértékelését, de a többi fő számla átértékelése havonta történik.
-
 
 
 

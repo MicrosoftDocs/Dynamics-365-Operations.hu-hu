@@ -1,13 +1,13 @@
 ---
-title: "Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben"
-description: "Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok."
+title: Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
+description: Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310070"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Ha használni szeretné az **Új vissza** vagy az **Új előre** lehetőséget, 
 Elmentheti az adatokat a <strong>Részletek</strong> lapon XML fájlként, a *<strong><em>Nyomon követés</em></strong>* művelet alatti <strong>Exportálás</strong> elemre kattintva a Műveleti ablakban. A nyomon követési adatok mellett az XML fájl tartalmazza a követési feltételeket, a fő csomópontot és a készleten levő mennyiséget is. A nyomon követés részleteinek mentése azért hasznos, mert így például csatolhatja az információkat egy minőségi rendeléshez vagy egyéb megfelelési dokumentumhoz. Megadhatja azt is, hogy hova legyen mentve a fájl. Hogy rögtön megtekintse a fájlt jelölje ki a <strong>Dokumentum megjelenítése</strong> jelölőnégyzetet. <strong>Megjegyzés:</strong> A fájl mentése abban az esetben is megtörténik, ha ön megakarja tekinteni azt. Alapértelmezés szerint az XML-fájl egy böngészőablak megnyitása Rákattinthat azonban a fájlra, kiválaszthatja a <strong>Társítás</strong> funkciót, majd kiválaszthatja a programot amelyben megszeretné jeleníteni a tartalmat.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Lehet egy adott elemhez vagy összetevő egyenleg kiszámítása?
-Exportálhatja az adatokat az összesítő lapokból a Microsoft Excelbe. Nyissa meg a kívánt lapot, kattintson a **Megnyitás Microsoft Office-ban** ikonra, majd válassza ki az **Exportálása Microsoft Excelbe** opciót. Ez különösen akkor hasznos, amikor ki akarja számolni egy cikk vagy összetevő tömeges egyenlegét a **Tranzakciók összesítése** lapról. A **Tranzakciók összesítése** lapon tetszés szerint szűrhet cikket, alapanyagot és lehetőség szerint köteget, majd exportálhatja az információt Excelbe. Az Excelben képes például elválasztani a készleten lévő mennyiséget, az értékesített mennyiséget és az összeget, amely a termelés során lett felhasználva.
+Az adatokat exportálhatja az összesítő oldalakról Microsoft Excel formátumba. Nyissa meg a kívánt lapot, kattintson a **Megnyitás Microsoft Office**-ban ikonra, majd válassza ki az **Exportálás Microsoft Excel** formátumba opciót. Ez különösen akkor hasznos, amikor ki akarja számolni egy cikk vagy összetevő tömeges egyenlegét a **Tranzakciók összesítése** lapról. A **Tranzakciók összesítése** lapon tetszés szerint szűrhet cikket, alapanyagot és lehetőség szerint köteget, majd exportálhatja az információt Excelbe. Az Excelben képes például elválasztani a készleten lévő mennyiséget, az értékesített mennyiséget és az összeget, amely a termelés során lett felhasználva.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Kinyomozhatom, hogy voltak-e a múltban problémák a cikkekkel vagy a nyersanyagokkal?
 A nyomon követési részletek a cikkeket vagy a nyersanyagokat érintő minőségi rendelésekről és szabálytalanságokról tartalmaznak információkat. Megtekintheti a minőségi rendelések és a szabálytalanságok összesítését a **Minőségi rendelések** vagy a **Szabálytalanságok** elemre kattintva a Műveleti ablak ablakban. **Megjegyzés:** Romboló minőségi rendelések egynél többször szerepelhetnek a nyomon követési részletekben. Mikor romboló minőségi rendelést hoz létre egy dokumentumhoz (például egy beszerzési rendeléshez), akkor az a tranzakció minden dokumentumánál feltűnik.
@@ -141,4 +140,3 @@ Létrehozhatja a **Vevőknek szállítva** jelentést, hogy azonosítsa a kiszá
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>A társtermékeket és melléktermékeket is nyomon követhetem?
 Nyomon követhet társtermékeket, de nem követheti le a melléktermékeket, mivel a nyomon követési dimenziók javarészt, nem a melléktermékekhez vannak hozzárendelve. Egy cikk nyomon követésekor, a nyomon követési részletek minden kapcsolódó társterméket tartalmaznak. Olyan Társtermék tartalmazó csomópont "Társtermék" szó részletes adatait tartalmazza. Megtekintheti továbbá egy társtermék részleteit a csomópont kijelölésével a nyomon-követési részletekben, majd a **Termelés** gyorslap alábontásával.
-

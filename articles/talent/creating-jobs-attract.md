@@ -1,37 +1,36 @@
 ---
-title: "Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban"
-description: "Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást."
+title: Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban
+description: Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304707"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja a Microsoft Dynamics 365 for Talent: Attract alkalmazás állásra vonatkozó elemeit. Azt is bemutatja, hogyan lehet létrehozni egy állást.
+Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Microsoft Dynamics 365 for Talent: Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 
 ## <a name="job-creation"></a>Állás létrehozása
 
@@ -45,7 +44,7 @@ Az **Állás részletei** lap tartalmazza az állás felelősségeit és attrib�
 
 Alapértelmezés szerint a **Pályázható álláshelyek száma** mező értéke **1**. Ez az érték azonban módosítható. Ha az ajánlat elő van készítve az álláshoz, a **Rendelkezésre álló pályázható álláshelyek száma** mező értéke csökken.
 
-Ha a beosztáskezelés be van kapcsolva az Adminisztrációs központban, a **Beosztások frissítése** keresés elérhető. A keresési beolvassa JobPosition entitást a Common Data Service for Appsból, és megjeleníti azokat az pozíciókat, amelyek kiválaszthatók az álláshoz. Ha a kijelölt beosztások száma meghaladja a nyitott beosztások számát, figyelmeztetést kap. Akkor is figyelmeztetést kap, ha a beosztás több álláshoz van használva.
+Ha a beosztáskezelés be van kapcsolva az Adminisztrációs központban, a **Beosztások frissítése** keresés elérhető. A keresési beolvassa JobPosition entitást a Common Data Service for Apps szolgáltatásból, és megjeleníti azokat az pozíciókat, amelyek kiválaszthatók az álláshoz. Ha a kijelölt beosztások száma meghaladja a nyitott beosztások számát, figyelmeztetést kap. Akkor is figyelmeztetést kap, ha a beosztás több álláshoz van használva.
 
 > [!NOTE]
 > A beosztáskezelési az Átfogó felvételi bővítmény részeként érhető el.
@@ -75,7 +74,7 @@ A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további 
 
 ## <a name="postings"></a>Feladások
 
-Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Microsoft Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedInen lehet feladni. 
+Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedIn oldalán lehet feladni. 
 
 > [!NOTE]
 > Három fontos dolgot kell megjegyezni a LinkedIn-re történő munkaküldési folyamattal kapcsolatosan.
@@ -127,7 +126,7 @@ Az állás a mentése után elküldhető jóváhagyásra. A következő tábláz
 
 Az álláslistában szűrheti az állás állapotára.
 
-A jóváhagyásokat bármelyik Microsoft Azure Active Directory (Azure AD) felhasználónak el lehet küldeni a vállalatnál. A jóváhagyásokat párhuzamosan mindegyik jóváhagyóként felsorolt személy megkapja. Az állás a jóváhagyása után aktiválható.
+Jóváhagyásokat el lehet küldeni bármely Microsoft Azure Active Directory (Azure AD) felhasználónak a vállalatnál. A jóváhagyásokat párhuzamosan mindegyik jóváhagyóként felsorolt személy megkapja. Az állás a jóváhagyása után aktiválható.
 
 A jóváhagyóként felsorolt személyek jóváhagyási értesítést kapnak az Attract rendszerében, amely tájékoztatja őket arról, hogy egy elem a jóváhagyásukra vár. Egy jóváhagyási elem is megjelenik az **Önhöz rendelve** irányítópult-szakaszban. Miután valaki elfogad vagy jóváhagy egy állást, a felvételi csapat értesítést kap. Végül a felvételi csapat értesítést kap az állás jóváhagyásakor.
 
@@ -162,11 +161,10 @@ Kövesse az alábbi lépéseket egy állás létrehozásához.
 11. Válassza a **Mentés** lehetőséget.
 12. Ha bejelölte a jóváhagyási folyamat alkalmazását, tegye a következőket:
 
-    1. Válassz a **+ jóváhagyó hozzáadása** lehetőséget, majd adjon meg a felhasználót, aki Azure Active Directory-fiókkal rendelkezik. Több jóváhagyót is hozzáadhat.
+    1. Válassz a **+Jóváhagyó hozzáadása** lehetőséget, majd adjon meg a felhasználót, aki Azure AD-fiókkal rendelkezik. Több jóváhagyót is hozzáadhat.
     2. Válassza a **Küldés jóváhagyóknak** lehetőséget.
 
     Az **Állás állapota** mező értéke az állás esetében **Függő**. Miután az **Állás állapota** mező értéke **Jóváhagyva** lesz, az állás aktiválható.
 
 13. Ha aktiválni szeretné az állást, kattintson az **Aktiválás** parancsra.
 14. Az állás feladásához menjen a **Feladások** lehetőséghez, majd válassza ki a **Feladás most** lehetőséget a Talent Careers vagy a LinkedIn alatt.
-

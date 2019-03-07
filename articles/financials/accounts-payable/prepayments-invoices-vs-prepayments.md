@@ -1,13 +1,13 @@
 ---
-title: "Előlegszámlák és előlegek"
-description: "Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszerben Ön létrehoz egy előlegszámlát, amely társítva van a beszerzési rendeléssel. A másik módszerben Ön előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével."
+title: Előlegszámlák és előlegek
+description: Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszerben Ön létrehoz egy előlegszámlát, amely társítva van a beszerzési rendeléssel. A másik módszerben Ön előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310139"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
 [!include [banner](../includes/banner.md)]
@@ -50,9 +49,9 @@ Számos ország/terület könyvelési gyakorlata megköveteli, hogy a vevőktől
 1.  Állítsa be az előlegek feladási profiljait.
 2.  A Kinnlevőségek paraméterei és Kötelezettségek paraméterei képernyőkön, a **Főkönyv és áfa** lehetőségen belül, válassza ki az új feladási profilt a **Feladási profil előleget tartalmazó fizetési naplóhoz** paraméter használatával.
 3.  Hozzon létre egy kifizetési naplót, majd hozza létre az új kifizetést.
-4.  A kifizetést megjelölheti előlegként. Ha a kifizetés előlegként van megjelölve, az az 1. és 2. lépésben beállított feladási profilban definiált főkönyvi számlákba kerül feladásra. Továbbá ha a kifizetés előlegként van megjelölve, a program kiszámítja az adókötelezettségeket. Egyes kormányzatok megkövetelik az adók kifizetését előleg rögzítésekor, még akkor is, ha nincs számla.
+4.  A kifizetést megjelölheti előlegként. Ha a kifizetés előlegként van megjelölve, az az 1. és 2. lépésben beállított feladási profilban definiált főkönyvi számlákba kerül feladásra. Továbbá ha a kifizetés előlegként van megjelölve, a program kiszámítja az adókötelezettségeket. Egyes kormányzatok megkövetelik az adók kifizetését előleg rögzítésekor, még akkor is, ha nincs számla.
 5.  Adja fel az előleget.
-6.  Választható lehetőség: Kiegyenlítheti az előleget a számla létrehozása előtti a beszerzési vagy értékesítési rendelés ellenében. Az értékesítési rendelés vagy beszerzési rendelés lapon, a Művelet panelen, használja a **Tranzakciók kiegyenlítése** lehetőséget.
+6.  Választható lehetőség: Kiegyenlítheti az előleget a számla létrehozása előtti a beszerzési vagy értékesítési rendelés ellenében. Az értékesítési rendelés vagy beszerzési rendelés lapon, a Művelet panelen, használja a **Tranzakciók kiegyenlítése** lehetőséget.
 7.  Miután a szállító kézbesítette a terméket vagy szolgáltatást, rögzítse a számlát. Ha a 6. lépésben kiegyenlítette a beszerzési vagy értékesítési rendeléshez tartozó előleget, az a létrehozott számla alapján automatikusan kiegyenlítődik. Ha a nem egyenlítette ki az előleget a beszerzési rendelés vagy értékesítési rendelés alapján, manuálisan kiegyenlítheti azt a számla alapján a vevő vagy szállító oldalán, a **Tranzakciók kiegyenlítése** lehetőséggel. Az előleg összege ezután törlődik a kötelezettségek/kinnlevőségek ideiglenes főkönyvi számlájáról. Ezenkívül az esetlegesen kiszámított adók is törlődnek, mivel a tényleges adók megtalálhatók a számlán.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Az előlegszámlázási folyamat áttekintése
@@ -63,7 +62,6 @@ Az előlegszámlák gyakoriak az üzleti gyakorlatban. A szállítók azért ál
 3.  A szállítókoordinátorhoz rögzíti az előlegszámlát a beszerzési rendelés alapján, majd az előlegszámla kifizetésre kerül.
 4.  Miután a szállító kézbesítette az árut vagy szolgáltatást és megtörtént a kapcsolódó szállítói számlák átvétele, a szállítókoordinátor alkalmazza a számla alapján már kifizetett előlegösszeget.
 5.  A szállítókoordinátor kifizeti és kiegyenlíti a számla fennmaradó összegét.
-
 
 
 

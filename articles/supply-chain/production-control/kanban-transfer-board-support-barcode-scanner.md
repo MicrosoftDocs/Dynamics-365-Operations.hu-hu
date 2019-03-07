@@ -1,13 +1,13 @@
 ---
-title: "Kanban átviteli tábla támogatás vonalkódolvasókhoz"
-description: "A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot."
+title: Kanban átviteli tábla támogatás vonalkódolvasókhoz
+description: A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319454"
 ---
-
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatás vonalkódolvasókhoz
 
 [!include [banner](../includes/banner.md)]
@@ -45,11 +44,11 @@ A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs mó
 | Üres                 | A kanbankártya által üresként hivatkozott anyagkezelési egység regisztrálása.              |
 | Kijelölés                | Kanbankártya számának regisztrálása és a hivatkozott feladat automatikus kiválasztása a kanbanfeladatok listájában. |
 
- 
-<a name="registration-mode-select"></a>Regisztrációs mód kiválasztása
+ 
+Regisztrációs mód kiválasztása
 ------------------------
 
-Amikor vonalkódolvasó segítségével választ ki egy feladatot, a kanban tábla megjelenítési módja megváltozik. Ebben a módban a következő feltételek érvényesek:
+Amikor vonalkódolvasó segítségével választ ki egy feladatot, a kanban tábla megjelenítési módja megváltozik. Ebben a módban a következő feltételek érvényesek:
 
 -   Csak a beolvasott kanbanfeladat jelenik meg.
 -   A kiválasztott feladat részletei megjelennek a **Részletek** gyorslapon.
@@ -188,7 +187,6 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 </tr>
 </tbody>
 </table>
-
 
 
 

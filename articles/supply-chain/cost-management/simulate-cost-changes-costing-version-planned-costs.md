@@ -1,13 +1,13 @@
 ---
-title: "Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával"
-description: "Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan."
+title: Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
+description: Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318879"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ A következő esetek azt mutatják be, hogy hogyan alkalmazzák a szimulációs 
 -   Szimulálja a költségváltozását egy közvetett költségszámítási képletben. Például a költségváltozás növekedést vagy csökkenést tükrözhet a gyártási többletköltségben. Használja a **Költségszámítási táblázat beállítása** képernyőt egy függő költségrekord megadására a szimulációs költségszámítási verzióban, és a változás ellenőrzésére és mentésére egy közvetett költségszámítási képletben szereplő eltérés meghatározásához.
 
 A szimulált költségváltozások megadása után számítsa ki a költségváltozások által érintett termékek költségeit. Használja az **Számítás** képernyőt a szimulációs költségszámítási verzióhoz, és azonosítsa be a termékek azon csoportját, amelyekre kihatással lesznek a költségváltozások. Az anyagjegyzék-számítások csak akkor vonatkoznak minden termékre, ha kiválasztja a konkrét cikkeket. Másik megoldásként alkalmazhatja az anyagjegyzék-számítás lehetőséget azokra a frissítésekre, ahol azok használtban vannak. Tekintse meg a cikk költségrekordjait a szimulációs költségszámítási verzióban, hogy megvizsgálja hogyan hatottak a megadott termékek költségeire a szimulált költségváltozások. Használja a **Cikkár** lapot és a **Cikk-költség kiszámítása** lapot a költségek megtekintéséhez és elemzéséhez.
-
 
 
 

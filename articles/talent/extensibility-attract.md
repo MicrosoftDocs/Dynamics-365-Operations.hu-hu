@@ -1,14 +1,14 @@
 ---
-title: "Az Attact bővíthetősége"
-description: "Ez a témakör leírja, hogyan bővítheti a Microsoft Dynamics 365 for Talent – Attract alkalmazást a Microsoft Power platform segítségével."
+title: Az Attact bővíthetősége
+description: Ez a témakör leírja, hogyan bővítheti a Dynamics 365 for Talent - Attract alkalmazást a Microsoft Power platform segítségével.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 0af60a0aea0f7a5de793631445aaebb37dbb0d74
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304661"
 ---
-
 # <a name="extensibility-in-attract"></a>Az Attact bővíthetősége
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent a Common Data Service (CDS) for Apps platform épül, és a Microsoft Power Platform, valamint a Common Data Service for Apps lehetőségeivel többféleképpen lehet kiterjeszteni. Ennek megfelelően a rendszer konfigurálható és testreszabható a Microsoft PowerApps és a Microsoft Flow segítségével. A Microsoft Power BI használatával kiegészítő analitikát kaphat az emberekről. Ezenkívül új egyéni tevékenységek, például a PowerApps és a webes tartalom (iframe) tevékenységek, minden eddiginél alkalmazkodóbbá teszik a felvételi folyamatot. Ezen tevékenységek segítségével az üzleti igényekhez és folyamatokhoz szabhatja a felvételi folyamatot, és szavatolhatja, hogy a felvételi csoport és a pályázók számára egyaránt zökkenőmentes és személyre szabott legyen a használati élmény.
+A Microsoft Dynamics 365 for Talent a Common Data Service (CDS) for Apps platformra épül, és a Microsoft Power Platform, valamint a Common Data Service for Apps lehetőségeivel többféleképpen lehet kiterjeszteni. Ennek megfelelően a rendszer konfigurálható és testreszabható a Microsoft PowerApps és a Microsoft Flow segítségével. A Microsoft Power BI használatával kiegészítő analitikát kaphat az emberekről. Ezenkívül új egyéni tevékenységek, például a PowerApps és a webes tartalom (iframe) tevékenységek, minden eddiginél alkalmazkodóbbá teszik a felvételi folyamatot. Ezen tevékenységek segítségével az üzleti igényekhez és folyamatokhoz szabhatja a felvételi folyamatot, és szavatolhatja, hogy a felvételi csoport és a pályázók számára egyaránt zökkenőmentes és személyre szabott legyen a használati élmény.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Használja ki a Microsoft Power platform előnyeit 
 
-Mivel az Attract összes adata Common Data Service for Apps megoldásban található, a Microsoft Power Platform eszközeivel integrálhatja egyedi üzleti igényeinek az Attract rendszerébe.
+Mivel az Attract összes adata Common Data Service for Apps megoldásban található, a Microsoft Power platform eszközeivel integrálhatja egyedi üzleti igényeinek az Attract rendszerébe.
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -44,11 +43,11 @@ Megkönnyítheti például a toborzók számára a munkát az egyetemi állásb�
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-A Microsoft Flow segítségével az Attract adatokon futó automatizált munkafolyamatok hozhatók létre. Egyszerűen csatlakozhat több száz népszerű alkalmazáshoz és szolgáltatáshoz kód írása nélkül. Az Attract Munkakör, Pályázó és Jelentkezés entitásaival a Common Data Service for Apps megoldásban együttműködő folyamatok felépítésével automatizálni lehet különböző műveleteket. Például amikor egy jelölt elfogad egy ajánlatot, értesítést lehet küldeni egy bevezetési csoportnak, vagy a híreket be lehet jelenteni a Twitteren. A folyamatok kapcsolatos további tudnivalókat lásd: [Microsoft Flow dokumentáció](https://docs.microsoft.com/en-us/flow/).
+A Microsoft Flow segítségével az Attract adatokon futó automatizált munkafolyamatok hozhatók létre. Egyszerűen csatlakozhat több száz népszerű alkalmazáshoz és szolgáltatáshoz kód írása nélkül. Az Attract Munkakör, Pályázó és Jelentkezés entitásaival a Common Data Service for Apps megoldásban együttműködő folyamatok felépítésével automatizálni lehet különböző műveleteket. Például amikor egy jelölt elfogad egy ajánlatot, értesítést lehet küldeni egy bevezetési csoportnak, vagy a híreket be lehet jelenteni a Twitteren. A folyamatokkal kapcsolatos további tudnivalók a [Microsoft Flow rendszer fejlesztői dokumentációjában](https://docs.microsoft.com/en-us/flow/) olvashatók.
 
 ### <a name="power-bi"></a>Power BI
 
-A Power BI segítségével létrehozhatók és megtekinthetők egyéni jelentések és irányítópultok, amelyekkel mélyebb betekintést nyerhet Attract adataiba. További információért a Power BI témájáról és az interaktív jelentések és irányítópultok létrehozásának módját kapcsolatban lásd: [Power BI dokumentáció](https://docs.microsoft.com/en-us/power-bi/).
+Power BI segítségével létrehozhatók és megtekinthetők egyéni jelentések és irányítópultok, amelyekkel mélyebb betekintést nyerhet Attract adataiba. További információért a Power BI témájáról és az interaktív jelentések és irányítópultok létrehozásának módját kapcsolatban lásd: [Power BI dokumentáció](https://docs.microsoft.com/en-us/power-bi/).
 
 ### <a name="custom-activities"></a>Egyéni tevékenységek 
 
@@ -67,4 +66,3 @@ A webes tartalom (iframe) tevékenység lehetővé teszi egy egyéni webes megol
 
 > [!NOTE]
 > A webes tartalom tevékenység csak az átfogó felvételi bővítménnyel érhető el.
-

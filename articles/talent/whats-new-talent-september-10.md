@@ -1,38 +1,37 @@
 ---
-title: "Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 10.)"
-description: "Ez a témakör a Microsoft Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le."
+title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 10.)
+description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
 ms.openlocfilehash: b41ce93c8ae93054d2b0d71340b99e0910d4510f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304736"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-10-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 10.)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.138.0**
 
-Ez a témakör a Microsoft Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le.
+Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
 
 ## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a>Pontos idő megadása a szabadságkérelmekben (fél nap)
 
@@ -101,4 +100,3 @@ Ebben a verzióban számos további hibajavítás is található:
 - Alvállalkozó megbízásakor a **Kompenzálás** lapnak nem szabad elérhetőnek lennie a kérelem/művelet lapján.
 - A kérelem megszüntetési folyamata alatt nem folytathatja a műveletet addig, amíg az összes kötelező mező adatot tartalmaz.
 - Kijavítottuk a rendelés- és dátummegjelenítési problémákat a Személyzetkezelés analitikájában.
-

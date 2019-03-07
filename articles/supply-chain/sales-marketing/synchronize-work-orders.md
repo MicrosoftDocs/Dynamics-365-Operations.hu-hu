@@ -1,37 +1,36 @@
 ---
-title: "Munkarendelések szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a projektszámmal rendelkező munkarendelések Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti szinkronizálására használhatók."
+title: Projektszámmal rendelkező munkarendelések szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található projektszámaival történő szinkronizálására használatos.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 12/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: f5bd6b8c554688d0d1b2bfd93a34a60a95412bf3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329850"
 ---
-
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Projektszámmal rendelkező munkarendelések szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a projektszámmal rendelkező munkarendelések Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti szinkronizálására használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található projektszámaival történő szinkronizálására használatos.
 
 [![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
@@ -76,4 +75,3 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba): WorkOrderService
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP4.png)](./media/FSWOP4.png)
-

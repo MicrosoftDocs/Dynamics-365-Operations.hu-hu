@@ -1,31 +1,30 @@
 ---
-title: "Termék- és vevőkeresés a pénztárban (POS)"
-description: "Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről."
+title: Termék- és vevőkeresés a pénztárban (POS)
+description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
+ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313589"
 ---
-
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
 [!include [banner](includes/banner.md)]
@@ -102,4 +101,3 @@ A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések j
 
 > [!NOTE]
 > Az egyéni tulajdonság, amelyet hozzáadnak a felsoroláshoz, nem befolyásolja a normál vevői keresési algoritmust. Más szóval a vevőkereső algoritmus nem keres az egyéni tulajdonságban. A felhasználók csak akkor használhatják az egyéni tulajdonságokat keresésre, ha az adott tulajdonság hozzá van adva rövidítésként, vagy ha az alapértelmezett keresési algoritmust felülbírálják.
-

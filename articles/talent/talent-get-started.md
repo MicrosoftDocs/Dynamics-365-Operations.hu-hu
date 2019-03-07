@@ -1,13 +1,13 @@
 ---
-title: "Első lépések a Talent alkalmazásban"
-description: "Ez a témakör nyújt tájékoztatást igényeinek megfelelően módosíthatja a felhasználói felületen igényeinek, valamint a Súgó erőforrásokhoz, amelyek a termék belül, és a docs.microsoft.com webhelyen érhetők el."
+title: Első lépések a Talent alkalmazásban
+description: Ez a témakör nyújt tájékoztatást igényeinek megfelelően módosíthatja a felhasználói felületen igényeinek, valamint a Súgó erőforrásokhoz, amelyek a termék belül, és a docs.microsoft.com webhelyen érhetők el.
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304753"
 ---
 # <a name="get-started-with-talent"></a>Első lépések a Talent alkalmazásban
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 A Microsoft Dynamics 365 for Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 
 > [!NOTE] 
-> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 for Retail; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 for Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 ## <a name="personalizing-talent"></a>A Talent személyre szabása 
 Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 
@@ -61,9 +61,8 @@ A következő témakörök leírják a lekérdezések használatát, valamint a 
 Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
-A [Dynamics 365 for Talent oldalon](https://community.dynamics.com/enterprise/b/dynamics365fortalent) véleményeket, híreket és egyéb információkat talál a Kötelezettségek modullal és egyéb megoldásokkal kapcsolatban. 
+A [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent) blogon véleményeket, híreket és egyéb információkat talál a Kötelezettségekkel és egyéb megoldásokkal kapcsolatban. 
 
 ### <a name="videos"></a>Videók
-Tekintse meg az útmutató-videókat, amelyek [a Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
-
+Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
 

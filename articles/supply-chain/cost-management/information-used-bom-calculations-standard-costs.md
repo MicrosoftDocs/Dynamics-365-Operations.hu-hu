@@ -1,13 +1,13 @@
 ---
-title: "Elszámoló árakkal BOM számításokban használt adatok"
-description: "Az anyagjegyzék-számítások (BOM) többféle forrásból származó adatok felhasználásával számítják ki a legyártott cikk szokásos költségeit. Az adatforrások közé tartoznak a cikkekkel, az útvonalakkal kapcsolatos információk, a közvetettköltség-számítási képletek és a költségszámítási verzió."
+title: Elszámoló árakkal BOM számításokban használt adatok
+description: Az anyagjegyzék-számítások (BOM) többféle forrásból származó adatok felhasználásával számítják ki a legyártott cikk szokásos költségeit. Az adatforrások közé tartoznak a cikkekkel, az útvonalakkal kapcsolatos információk, a közvetettköltség-számítási képletek és a költségszámítási verzió.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4ec6ffe41d6dae10693b1a1ebd6e5012c32bc2e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 187482f29e6982220b844777ef31997f0d5ef0d3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333760"
 ---
-
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Elszámoló árakkal BOM számításokban használt adatok
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Az elszámolóár anyagjegyzék-számításánál a költségszámítási verzi�
 -   A költségszámítási verziónak költségeket kell tartalmaznia – a tartalomban mindenképpen szerepelnie kell a költségeknek. Választható módon szerepelhetnek az értékesítési árak is, hogy a legyártott cikkekhez számíthatóak legyenek a javasolt értékesítési árak.
 
 Anyagjegyzék-számítás indításakor többféle információforrást lehet megadni. Ilyen a hely, a számítási dátum és a költségszámítási verzió is.
-
 
 
 

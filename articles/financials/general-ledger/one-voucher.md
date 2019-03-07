@@ -1,14 +1,14 @@
 ---
 title: Egy bizonylat
-description: "A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül."
+description: A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül.
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
+ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
-ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308552"
 ---
-
 # <a name="one-voucher"></a>Egy bizonylat
 
 [!include [banner](../includes/banner.md)]

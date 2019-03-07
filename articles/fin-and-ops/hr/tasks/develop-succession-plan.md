@@ -1,13 +1,13 @@
---- 
-title: "Utódlási terv kialakítása"
-description: "Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy."
+---
+title: Utódlási terv kialakítása
+description: Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339188"
 ---
 # <a name="develop-succession-plan"></a>Utódlási terv kialakítása
 
@@ -59,5 +59,4 @@ Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előf
 27. Kattintson az Eredményre.
 28. Kattintson a Jelentésre.
     * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
-
 

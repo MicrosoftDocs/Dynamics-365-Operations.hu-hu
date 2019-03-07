@@ -1,29 +1,29 @@
 ---
-title: "Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)"
-description: "Ez a témakör a Microsoft Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le."
+title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
+description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 09936c7161a7e303a0ada2f48ef3281b81a67295
 ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304754"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
 
@@ -142,5 +142,4 @@ A frissített leképezéseknek az alábbiak szerint kell kinézniük.
 ![Dolgozók a munkához feladat](./media/WorkerMapping.png)
 
 ![Nem mezőtranszformáció](./media/WorkerTransform.png)
-
 

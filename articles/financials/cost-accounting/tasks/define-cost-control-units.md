@@ -1,13 +1,13 @@
---- 
-title: "Költség-ellenőrzőegységek meghatározása"
-description: "Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a költségkönyvelési főkönyvben."
+---
+title: Költség-ellenőrzőegységek meghatározása
+description: Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a költségkönyvelési főkönyvben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 296d74a9ca68758d43be1c46acdba7d13d99e9d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 05b7acaa903c7223111db2e879cff2147df34628
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315084"
 ---
 # <a name="define-cost-control-units"></a>Költség-ellenőrzőegységek meghatározása
 
@@ -39,5 +39,4 @@ Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a k
 9. Írjon be egy értéket a Név mezőbe.
 10. A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
 11. Kattintson a Mentés gombra.
-
 

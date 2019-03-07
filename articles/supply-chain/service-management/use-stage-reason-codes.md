@@ -1,32 +1,30 @@
 ---
-title: "Szakasz okkódjainak használata"
-description: "Okkód használatával jelezheti, hogy miért történt egy szolgáltatásiszint-szerződés visszavonása, vagy egy szervizrendelés miért lépte túl a szolgáltatásiszint-szerződésben megadott időkorlátot."
+title: Szakasz okkódjainak használata
+description: Okkód használatával jelezheti, hogy miért történt egy szolgáltatásiszint-szerződés visszavonása, vagy egy szervizrendelés miért lépte túl a szolgáltatásiszint-szerződésben megadott időkorlátot.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33fa7e5f08f09fe109d0507d686315d01e043928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e42172fe1b484b91e9a3e3d05d438e7e9b0b0eb4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323916"
 ---
-
-
 # <a name="use-stage-reason-codes"></a>Szakasz okkódjainak használata 
 
 [!include [banner](../includes/banner.md)]
@@ -73,6 +71,5 @@ Ha előírta az okkód használatát, akkor a következő esetekben kötelező a
 [Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása](start-and-stop-time-recording-on-a-service-order.md)
 
   
-
 
 

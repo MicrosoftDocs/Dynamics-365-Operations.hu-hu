@@ -1,13 +1,13 @@
 ---
-title: "Kiegyensúlyozott naplók egységközi számlázáshoz"
-description: "Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor."
+title: Kiegyensúlyozott naplók egységközi számlázáshoz
+description: Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b596a2332a9ada01df7b4e718a79eb624ee52fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5b1d788ebd5617a1d3f1c8ca36f5ae3c29b534c5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326768"
 ---
-
 # <a name="balanced-journals-for-interunit-accounting"></a>Kiegyensúlyozott naplók egységközi számlázáshoz
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Ezért a következő könyvelési bejegyzések automatikusan létrejönnek a nap
 |-----------------------------------|-----------|
 | (Egységközi - terhelés) – MSP – OU\_256 | 100,00 TARTOZÁS |
 | (Egységközi - jóváírás) – NY – OU\_249 | 100.00 CR |
-
 
 
 

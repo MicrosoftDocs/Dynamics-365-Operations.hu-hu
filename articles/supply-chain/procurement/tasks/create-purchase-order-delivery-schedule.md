@@ -1,13 +1,13 @@
---- 
-title: "Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása"
-description: "Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez."
+---
+title: Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
+description: Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0a9b7b233339d41605e1b115bd14a18b706ef226
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333829"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
 
@@ -75,5 +75,4 @@ Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütem
     * Ne feledje, hogy a rendszer a termékbevételezést a két szállítási sorhoz hozta létre, és nem az eredeti rendelési sorhoz. Ha a Bevételezés rögzítve van a raktárban, akkor a szállítási ütemezési sorokban is rögzítve van.  
 7. Csukja össze Sorok szakaszt.
 8. Kattintson az OK gombra a bevételezés feladásához.
-
 

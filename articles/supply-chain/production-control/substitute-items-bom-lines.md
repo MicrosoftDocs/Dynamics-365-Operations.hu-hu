@@ -1,13 +1,13 @@
 ---
-title: "Anyaghelyettesítés a gyártásban"
-description: "Ez a témakör leírja, hogyan helyettesítsen anyagokat a termelési folyamat során."
+title: Anyaghelyettesítés a gyártásban
+description: Ez a témakör leírja, hogyan helyettesítsen anyagokat a termelési folyamat során.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327619"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Anyaghelyettesítés a gyártásban
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Tervezés során csak akkor helyettesíthet anyagokat, amikor receptúrákat has
 
 ## <a name="substituting-material-during-production"></a>Anyag helyettesítése a termelés során
 Fontolja meg a következő példát: Egy fémlemez-darabra van szükség egy hegesztési művelethez. A művelet során egy raktári dolgozó tájékoztatja a gépkezelőt, hogy a lemez nincs készleten. Azonban döntés született róla, hogy a lemez helyettesíthető egy lemezzel, ami kissé vastagabb. Ilyen módon a művelet lezárható. Anyag hozzáadható egy anyagjegyzékhez egy nyílt termelési rendelés esetén. Ha a termelési rendelés állapota **Elindítva**, akkor a felhasználók felszólítást kapnak, hogy becsüljék újra a rendelést, amikor hozzáadnak egy új cikket a termelési anyagjegyzékhez. Miután az anyagot hozzáadták létrehozható egy új kitárolási lista az új cikkhez. Nem kell hozzáadni az új anyagot a termelési anyagjegyzékhez. Ehelyett hozzáadhatja közvetlenül a termelés kitárolási listájához. Majd amikor a kitárolási listát feladják a rendszer hozzáadja az anyagot a termelési anyagjegyzékhez.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Devizaárfolyamok importálása"
-description: "Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe. Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra. Ez a témakör áttekintést ad a devizaárfolyam-szolgáltatók, mint az Európai Központi Bank és az Orosz Központi Bank által az interneten közzétett referencia-devizaárfolyamok feldolgozásához és importálásához szükséges beállításokról."
+title: Devizaárfolyamok importálása
+description: Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe. Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra. Ez a témakör áttekintést ad a devizaárfolyam-szolgáltatók, mint az Európai Központi Bank és az Orosz Központi Bank által az interneten közzétett referencia-devizaárfolyamok feldolgozásához és importálásához szükséges beállításokról.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333392"
 ---
-
 # <a name="import-currency-exchange-rates"></a>Devizaárfolyamok importálása
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani
 Az alábbi szakaszok a devizaárfolyamok importálásának beállításához és feldolgozásához használt teljes információáramlást leírják.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Árfolyam-szolgáltató konfigurálása
-Árfolyamok importálása előtt be kell állítani az árfolyamokat biztosító szolgáltatók által igényelt információkat. Használja az **Árfolyam-szolgáltatók konfigurálása** oldalt az árfolyam-szolgáltatók kiválasztásához. Egyes árfolyam-szolgáltatók a Microsoft Dynamics 365 for Finance and Operationsben található bemutató adatokban is megtalálhatók. A következő táblázatban megtalálható az oldal vezérlőelemeinek leírása.
+Árfolyamok importálása előtt be kell állítani az árfolyamokat biztosító szolgáltatók által igényelt információkat. Használja az **Árfolyam-szolgáltatók konfigurálása** oldalt az árfolyam-szolgáltatók kiválasztásához. Egyes árfolyam-szolgáltatók a Microsoft Dynamics 365 for Finance and Operations-ben található bemutató adatokban is megtalálhatók. A következő táblázatban megtalálható az oldal vezérlőelemeinek leírása.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,7 +55,6 @@ Az árfolyamokat az árfolyam-szolgáltatók forrásból lehet importálni, majd
 | **A szükséges pénznempárok létrehozása**    | Ez a jelölőnégyzet vezérli a devizapárok automatikus létrehozását, ha az importált devizapárok nem léteznek. Egyes szolgáltatóknál lehet, hogy ez a beállítás nem érhető el.                                                                                                                                                                                               |
 | **Meglévő árfolyamok felülbírálása**   | Ez a jelölőnégyzet vezérli a devizapár meglévő átváltási árfolyamának frissítését akkor, ha egy bizonyos dátumra vonatkozóan már létezik átváltási árfolyam. Ha nem jelöli be ezt a jelölőnégyzetet, a program nem importálja a megadott dátumokra vonatkozóan az átváltási árfolyamot, ha már létezik egy másik árfolyam.                                                                                       |
 | **Importálás tiltása ünnepnapokon** | Ez a jelölőnégyzet vezérli az átváltási árfolyam importálását munkaszüneti napnak számító dátumokon. Például ha bejelöli a jelölőnégyzetet, és az Európai Központi Bankot használja árfolyam-szolgáltatóként, a rendszer nem frissíti az árfolyamot az olyan munkaszüneti napokon, amelyek érvényesek az aktuális jogi személyre. Egyes szolgáltatóknál lehet, hogy ez a beállítás nem érhető el. |
-
 
 
 

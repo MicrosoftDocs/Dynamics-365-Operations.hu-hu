@@ -1,67 +1,65 @@
 ---
-title: "Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti projektszinkronizálásra használhatók."
+title: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations projektjeinek a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/14/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: adcb1c1b241ce2b073cd26cf2a8a8d64931c8b0f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312508"
 ---
-
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti projektszinkronizálásra használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations projektjeinek a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 
 [![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
-A következő sablon és a kapcsolódó feladatok a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti projektszinkronizálás futtatására használhatók.
+A következő sablonok és a mögöttes tevékenységek használatosak a projektek szinkronizálásához a Microsoft Dynamics 365 for Finance and Operations alkalmazásból a Microsoft Dynamics 365 for Field Service alkalmazásba.
 
-**A sablon neve az adatintegrációban:**
+**Sablon az adatintegrációban**
 - Projektek (a Finance and Operations megoldásból a Field Service megoldásba)
 
-**A feladatok nevei az adatintegrációs projektben:**
+**Feladat az adatintegrációs projektben**
 - Projektek
 
 A következő szinkronizálási feladatok kötelezők, mielőtt a projektlisták szinkronizálása megtörténhetne:
 - Fiókok (a Sales megoldásból a Finance and Operations megoldásba) 
 
 ## <a name="entity-set"></a>Entitás beállítása
-Field Service   Finance and Operations
-
 | Field Service           | Finance and Operations  |
 |-------------------------|-------------------------|
 |msdynce_externalprojects | Projektek                |
 
 ## <a name="entity-flow"></a>Entitás folyamata
-A projektek létrehozása a Finance and Operations alkalmazásban történik. A projektek, amelyek esetében a **Projekttípus** Idő és anyag, a **Projektfokozat** pedig Folyamatban, a Field Service **Külső projekt** entitásába szinkronizálódnak, a következő információkat beleértve: projekt száma, projektnév, projektfokozat és vevői számla adatai. A **Külső projekt** listát a rendszer a Field Service munkarendelések és a Finance and Operations projektek párosítására használja.
-A Külső projekt Field Service CRM megoldás új entitás, amely minden projekt lekérés az Operations megoldásból.
-A Külső projekt mezőt hozzáadtuk a munkarendelés entitáshoz. Ez a mező egy keresés és vásárlás, felcímkézi a Munkarendelést egy projekttel, majd az értékesítési rendelés kapcsolódik egy projekthez az Operations megoldáson belül. Miután a rendszer állapota Nyitott – folyamatban (690,970,000) magasabb állapba kerül, a külső projekt mezőt a rendszer zárolja, és nem lehet felvenni, törölni vagy módosítani az értéket.
+A projektek létrehozása a Finance and Operations alkalmazásban történik. A projektek, amelyek esetében a **Projekttípus** **Idő és anyag**, a **Projektfokozat** pedig **Folyamatban**, a Field Service **Külső projekt** entitásába szinkronizálódnak, a következő információkat beleértve: projekt száma, projektnév, projektfokozat és vevői számla adatai. A **Külső projekt** listát a rendszer a Field Service munkarendelések és a Finance and Operations projektek párosítására használja.
+
+## <a name="field-service-crm-solution"></a>Field Service CRM megoldás
+A **Külső projekt** entitás lekér minden projektet a Finance and Operations rendszerből. A **Külső projekt** mezőt hozzáadtuk a **Munkarendelés** entitáshoz. Ez a mező egy keresőmező felcímkézi a munkarendelést egy projekttel, majd az értékesítési rendelés kapcsolódik egy projekthez a Finance and Operations megoldáson belül. Miután a **Rendszer állapota** **Nyitott – folyamatban (690,970,000)** állapotból magasabb állapba kerül, a **Külső projekt** mezőt a rendszer zárolja, és a továbbiakban nem lehet felvenni, törölni vagy módosítani az értéket.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
-### <a name="in-finance-and-operations"></a>A Finance and Operations alkalmazásban
-A változáskövetés engedélyezése az adatentitás projektekhez
+### <a name="finance-and-operations"></a>Finance and Operations
+A változáskövetés engedélyezése az Adatentitás projektekhez.
 
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
@@ -69,4 +67,3 @@ A változáskövetés engedélyezése az adatentitás projektekhez
 ### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projektek (a Finance and Operations megoldásból a Field Service megoldásba): Projektek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProject1.png)](./media/FSProject1.png)
-

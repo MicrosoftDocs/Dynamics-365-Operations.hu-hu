@@ -1,13 +1,13 @@
 ---
-title: "Raktári dolgozók kezelése"
-description: "Ez a cikk leírja, hogyan használható a Dynamics 365 for Finance and Operations az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására."
+title: Raktári dolgozók kezelése
+description: Ez a cikk leírja, hogyan használható a Dynamics 365 for Finance and Operations az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310990"
 ---
-
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók kezelése
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ A munkatételek feldolgozásához felhasznált idő elemzése segíthet javítan
 
 -   **Felhasználói munkavégzési** – Ez a jelentés mutatja a dolgozói termelékenységet, a tényleges és az elvárt idők összehasonlítása alapján.
 -   **Munka a munkatranzakció típusa szerint** – Ezen jelentés segítségével kivizsgálhatja a hatékonysággal kapcsolatos hiányokat adott raktári folyamatok esetében. Például észreveszi, hogy az átmozgatási rendelésekhez tartozó kitárolások tovább tartanak ezen a héten, mint az előző hetek folyamán. Ez az információ hasznos lehet e további vizsgálat során.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról"
-description: "Ez az eljárással megmutatja, hogyan indíthat termelési feladatot és jelentheti az előrehaladását a feladateszköz-regisztrációs űrlapon."
+---
+title: Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról
+description: Ez az eljárással megmutatja, hogyan indíthat termelési feladatot és jelentheti az előrehaladását a feladateszköz-regisztrációs űrlapon.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, JmgRegistrationTouchStart, JmgRegistrationTouchReportFeedback, JmgRegistrationTouchAssignedJobs, JmgRegistrationTouchBreak, JmgRegistrationTouchLeave, JmgRegistrationTouchIndirectActivity, JmgDialogForm
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1f5d06b0165a7a3cf7ed9dab46d0bca4d37fdc12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acbedc6d27624d9a8d1e6fb9bb0d9abed1b4377f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330402"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról
 
@@ -64,5 +64,4 @@ Ezen eljárás futtatásához rendszergazdai vagy gépkezelői szerepkört kell 
 28. Válassza a Kijelentkezés lehetőséget.
 29. Kattintson az OK gombra.
 30. Válasszon egy okot, hogy miért jelentkezik ki korán.
-
 

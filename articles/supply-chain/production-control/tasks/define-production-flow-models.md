@@ -1,13 +1,13 @@
---- 
-title: "Termelési folyamatmodellek meghatározása"
-description: "A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban tartani a lean manufacturing munkacelláinak kapacitását."
+---
+title: Termelési folyamatmodellek meghatározása
+description: A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban tartani a lean manufacturing munkacelláinak kapacitását.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336727"
 ---
 # <a name="define-production-flow-models"></a>Termelési folyamatmodellek meghatározása
 
@@ -45,5 +45,4 @@ A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban t
     * A tervezési időkorlát napokban írja le, hogy mikor lehet kapacitásfoglalást tenni a kapcsolódó munkacellákhoz. A tervezési időkorlát megadása napokban.   Az ezen időkorláton kívülre eső kanbanfeldolgozási feladatok esetében nincs automatikus tervezés. Tervezési időkorláton általában kétszerese az átlagos készletátfutási időnek termelési folyamatban vagy munkacellában előállított termékek esetén. Az EPE-ciklus nem lehet nagyobb, mint a tervezési időkorlát fele.     
 8. Egy lehetőség kiválasztása a Kapacitáshiányra való reagálás mezőben.
     * A lehetőségek a következők: Elhalasztás – Az ütemezési esemény teljes igényének elhalasztása a következő elérhető termelési napon, rendelkezésre álló kapacitással. Érvénytelenítés – Az ütemezési esemény automatikus tervezésének befejezése és a kapcsolódó feladatok nem tervezettként hagyása.   Hozzáadás a kért naphoz – A kért feladatok megtervezése a kért időszakban. Ez a cella túlterhelése az adott napra, és megkövetel egy tervező által végzett vizsgálatot és kézi beavatkozást.   Rendelkezésre álló időszakokra elosztás – Elosztja az ütemezési esemény különböző feladatait az összes rendelkezésre álló termelési napra, az első elérhető naptól kezdődően. A minimális elosztási mennyiség a kanbanfeladat-mennyiség. A felosztás hozzárendeli a minimális tervezési mennyiséget (kanbanmennyiség) minden naphoz, amely elegendő elérhető teljesítménnyel rendelkezik.  
-
 

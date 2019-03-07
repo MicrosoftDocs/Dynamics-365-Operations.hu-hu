@@ -1,13 +1,13 @@
 ---
-title: "Szabadság és távollét kezelése"
-description: "Ez a témakör a Szabadság- és távollét kezelési modulról ad áttekintést."
+title: Szabadság és távollét kezelése
+description: Ez a témakör a Szabadság- és távollét kezelési modulról ad áttekintést.
 author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 72bfbb878fa076e204e00c3ccaceb4ba04c00ea9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304685"
 ---
 # <a name="leave-and-absence-management"></a>Szabadság és távollét kezelése
 
@@ -68,4 +68,3 @@ A Szabadság és távollét kezelése a következő funkciókkal rendelkezik:
 - **Távolléti kérelmek beadása.**
 
     Az alkalmazottak távolléti kérelmeket nyújthatnak be a rendelkezésre álló órák számához képest. A kérelmek egyszerű egynapos kérelmek vagy több napos kérelmek lehetnek, amelyek többféle szabadság- és távolléti típust tartalmaznak. Ha a munkafolyamat nincs engedélyezve, a rendszer automatikusan jóváhagyja a kéréseket. Ha munkafolyamat engedélyezve van, a jóváhagyás lehet automatikus vagy be lehet állítani egy láttamozást a munkafolyamat-konfigurációjától függően.
-

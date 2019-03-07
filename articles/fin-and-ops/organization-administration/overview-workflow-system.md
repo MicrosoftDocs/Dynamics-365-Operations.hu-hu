@@ -1,13 +1,13 @@
 ---
-title: Munkafolyamat rendszer
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operationsben használható munkafolyamat-rendszert írja le."
+title: Munkafolyamat-rendszer
+description: Ez a témakör bemutatja a munkafolyamat rendszert a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: sericks007
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 770796b42e79ad616b469e1dbf5149789bff0788
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308644"
 ---
-
-# <a name="workflow-system"></a>Munkafolyamat rendszer
+# <a name="workflow-system"></a>Munkafolyamat-rendszer
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operationsben használható munkafolyamat-rendszert írja le.
+Ez a témakör bemutatja a munkafolyamat rendszert a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 ## <a name="what-is-workflow"></a>Mi az a munkafolyamat?
 
@@ -72,4 +71,3 @@ A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 + [Párhuzamos tevékenység beállítása munkafolyamatban](configure-parallel-activity-workflow.md)
 + [Párhuzamos ágának konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md)
 + [Sortétel munkafolyamatának konfigurálása](configure-line-item-workflow.md)
-

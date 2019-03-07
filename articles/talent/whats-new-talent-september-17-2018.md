@@ -1,31 +1,30 @@
 ---
-title: "Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)"
-description: "Ez a témakör a Microsoft Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le."
+title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
+description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 6586761fc62c13c701e8a8f61e15eedc66e2f751
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304701"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
 
 [!include [banner](includes/banner.md)]
@@ -57,4 +56,3 @@ A 18-as platformfrissítés a Talent kiadásának részévé vált.
 ## <a name="bug-fixes"></a>Hibajavítások
 
 Ez a kiadás számos további hibajavítást tartalmaz, beleértve azt, hogy az ACA, ADA és I9 hivatkozásai mostantól csak az USA-beli vállalatok számára engedélyezettek.
-

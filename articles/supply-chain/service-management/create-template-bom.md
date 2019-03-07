@@ -1,31 +1,30 @@
 ---
-title: "Sablonanyagjegyzék létrehozása"
-description: "Különböző módszerek segítségével hozhat létre sablonanyagjegyzéket."
+title: Sablonanyagjegyzék létrehozása
+description: Különböző módszerek segítségével hozhat létre sablonanyagjegyzéket.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 89c5d45ac27a8678c51fb63c0326c2802a094596
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a80cf596a3e7c7f08d493a0fb7350fad62d38c3e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320995"
 ---
-
 # <a name="create-a-template-bom"></a>Sablonanyagjegyzék létrehozása   
 
 [!include [banner](../includes/banner.md)]
@@ -110,6 +109,5 @@ Létrejön egy új sablonanyagjegyzék azoknak a soroknak a felhasználásával,
 [Sablonanyagjegyzékek](template-boms.md)
 
   
-
 
 

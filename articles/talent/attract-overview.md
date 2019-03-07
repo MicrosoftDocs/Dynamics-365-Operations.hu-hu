@@ -1,13 +1,13 @@
 ---
-title: "Az Attract funkciói és képességei"
-description: "Ez a témakör leírja az Attract funkcióját az új szaktudás felvételi folyamatához."
+title: Az Attract funkciói és képességei
+description: Ez a témakör leírja az Attract funkcióját az új szaktudás felvételi folyamatához.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304686"
 ---
 # <a name="attract-features-and-capabilities"></a>Az Attract funkciói és képességei
 
@@ -46,4 +46,3 @@ Az Attract tartalmaz egy előre definiált felvételi folyamatot, amely négy al
 
 ## <a name="candidate-app"></a>Jelölti alkalmazás
 A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben kapnak egy hivatkozást a webes alkalmazás letöltéséhez. Az alkalmazás információkat ad a munkakör részleteivel kapcsolatban, és ez az eszköz szolgál a felvételi csapattal való kommunikációra. A pályázók az interjúkra vonatkozó elérhetőségüket is elküldhetik vele.
-

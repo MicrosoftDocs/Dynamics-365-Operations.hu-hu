@@ -1,13 +1,13 @@
 ---
-title: "Költségvetés-tervezés"
-description: "Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával."
+title: Költségvetés-tervezés
+description: Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311634"
 ---
-
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
 [!include [banner](../includes/banner.md)]
 
-Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Ez a labor az alábbi üzleti folyamatokra és feladatokra fókuszál:
+Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Ez a labor az alábbi üzleti folyamatokra és feladatokra fókuszál:
 - Költségvetés-tervezési és felhasználóbiztonsági konfigurálási célra szervezeti hierarchia létrehozása
 - Költségvetési terv esetek, költségvetési terv oszlopok, elrendezések és Excel sablonok meghatározása
 - Költségvetés-tervezési folyamat létrehozása és aktiválása
@@ -260,7 +259,6 @@ B. Lépjen a következőhöz: Költségvetés-készítés &gt; Beállítás &gt;
 C. Lépjen a következőhöz: Költségvetés-készítés &gt; Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. A Munkafolyamat szakasz lapon társítsa az A. lépésben létrehozott Automatikus – jóváhagyást a Kezdeti és Elküldve szakaszokkal 
 
 [![Költségvetés és költségvetés-tervezés](./media/screenshot42.png)](./media/screenshot42.png)  
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Ütemezés terhelési kapacitása"
-description: "Ez a témakör bemutatja, hogyan lehet beállítani és ütemezni a raktárban dolgozók vagy egy teljes raktár terhelési kapacitását."
+title: Ütemezés terhelési kapacitása
+description: Ez a témakör bemutatja, hogyan lehet beállítani és ütemezni a raktárban dolgozók vagy egy teljes raktár terhelési kapacitását.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317292"
 ---
-
 # <a name="schedule-workload-capacity"></a>Ütemezés terhelési kapacitása
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Ha ez az információ nincs megfelelően megadva, a rendszer üzenetet küld a *
 3. A **Rendelés típusa** mezőben válassza ki a **Tervezett és visszaigazolt**, **Tervezett** vagy **Visszaigazolt** annak a meghatározásához, hogy milyen típusú rendelések legyenek feltüntetve a jelentésben.
 4. Válassza ki a **Terhelés típusa** mezőben a terhelés típusát annak meghatározása érdekében, hogy a terhelési kapacitást mennyiség vagy súly esetében kell-e előre jelezni.
 5. Válassza ki a **Terhelési kapacitás** mezőben a terhelésikapacitás-beállítást.
-

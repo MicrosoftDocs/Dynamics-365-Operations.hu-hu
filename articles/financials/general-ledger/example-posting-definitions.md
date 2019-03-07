@@ -1,13 +1,13 @@
 ---
-title: "Feladásdefiníciók"
-description: "Ez a cikk arra tartalmaz példákat, hogyan használatosak feladásdefiníciók beszerzési rendelések terheléséhez és költségvetési előirányzatokhoz."
+title: Feladásdefiníciók
+description: Ez a cikk arra tartalmaz példákat, hogyan használatosak feladásdefiníciók beszerzési rendelések terheléséhez és költségvetési előirányzatokhoz.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f5fb08a86639e9a9a79dca5fc1200e73e5870432
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310254"
 ---
-
 # <a name="posting-definition-examples"></a>Példák feladásdefiníciókra
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ A generált főkönyvi bejegyzések az eredeti költségvetés rögzítésére j
 | 300146-OU\_1-OU\_3566-Oktatás | 250.00 |        |         |
 
 Az alábbi példában minden számla esetében, amely része a Számlastruktúrának - a P&L (eredmény) megfelel a feladási definíció kritériumainak. Ezért amikor a 606400-OU\_1-OU\_3566-Oktatást vizsgálja meg a program, létrejönnek a generált főkönyvi bejegyzések.
-
 
 
 

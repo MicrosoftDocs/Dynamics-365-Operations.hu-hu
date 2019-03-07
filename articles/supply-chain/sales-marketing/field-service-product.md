@@ -1,37 +1,36 @@
 ---
-title: "A Finance and Operations-termékek szinkronizálása a Field Service-termékekre"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti termékszinkronizálásra használhatók."
+title: A Finance and Operations-termékek szinkronizálása a Field Service-termékekre
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 3f26240ec289f5ddcc2682e598bbf93f516b99af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316326"
 ---
-
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>A Finance and Operations-termékek szinkronizálása a Field Service-termékekre
+# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti termékszinkronizálásra használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 
 A használt **Field Service termékek (Fin and Ops – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Fin and Ops – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Fin and Ops – Sales) – Közvetlen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
@@ -74,4 +73,3 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>A Field Service szolgáltatásokban lévő termékek (Finance and Operations-- Field Service): Termékek - Termékek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProduct.png)](./media/FSProduct.png)
-

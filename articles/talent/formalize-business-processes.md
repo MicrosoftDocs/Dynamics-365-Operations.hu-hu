@@ -1,13 +1,13 @@
 ---
-title: "Üzleti folyamatok formalizálása"
-description: "Ez a témakör ismerteti, hogy az üzleti folyamat funkcióval üzletifolyamat-sablont hogyan lehet létrehozni a szervezeten belül végrehajtandó üzleti folyamatokhoz."
+title: Üzleti folyamatok formalizálása
+description: Ez a témakör ismerteti, hogy az üzleti folyamat funkcióval üzletifolyamat-sablont hogyan lehet létrehozni a szervezeten belül végrehajtandó üzleti folyamatokhoz.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304743"
 ---
 # <a name="formalize-business-processes"></a>Üzleti folyamatok formalizálása
 
@@ -43,7 +43,7 @@ Minden üzleti folyamathoz meghatározható egy folyamattulajdonos. A folyamat t
 A folyamat tulajdonosa nem hozhat létre új üzleti folyamatokat, illetve az üzleti folyamat sablonokat, és nem törölhet aktív üzleti folyamatokat, illetve üzleti folyamat sablonokat.
 
 ## <a name="tasks"></a>Feladatok
-Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Microsoft Dynamics 365 for Talent[?] megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben az esetben egy beállítás van megadva a **Tevékenységkapcsolat** mezőben. Egyéb feladatok weboldalon lévő oldalak áttekintését vagy kitöltését foglalhatják magukban. Ebben az esetben az **URL-cím** van kiválasztva a **Tevékenységkapcsolat** mezőben, és ezután megadható az URL-cím. A belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
+Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Dynamics 365 for Talent[?] megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben az esetben egy beállítás van megadva a **Tevékenységkapcsolat** mezőben. Egyéb feladatok weboldalon lévő oldalak áttekintését vagy kitöltését foglalhatják magukban. Ebben az esetben az **URL-cím** van kiválasztva a **Tevékenységkapcsolat** mezőben, és ezután megadható az URL-cím. A belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
 
 Feladatok is hozzárendelhetők egy adott dolgozóhoz vagy pozícióhoz. Például a kompenzációkért és juttatásokért felelős vezető minden esetben a személy, aki a biztosítási díjak felülvizsgálatát végrehajtja. Ezért a feladat létrehozásakor válassza ki a **pozíciót** a **hozzárendelés-típus** mezőben, majd válassza a **Kompenzációkért és juttatásokért felelős vezetőt** a **Pozíciók** listáról. Az üzleti folyamat megkezdésekor a **Kompenzációkért és juttatásokért felelős vezető** pozícióban levő dolgozó kapja a feladat. Egy adott dolgozóhoz hozzárendelhető egy feladat, ehhez válassza ki a **dolgozót** a **hozzárendelés-típus** mezőben, majd válassza ki a megfelelő személyt.
 
@@ -74,5 +74,4 @@ A folyamattulajdonosok a hozzájuk rendelt aktív üzleti folyamatokat rendeli a
 - A **Folyamat indítása** elindítja a kiválasztott üzleti folyamatot, kiosztja a feladatokat, és kiszámítja a határidőket.
 
 Az aktív folyamatok és a hozzájuk kapcsolódó feladatok megtekintéséhez nyissa meg az **Üzleti folyamatok** munkaterületet.
-
 

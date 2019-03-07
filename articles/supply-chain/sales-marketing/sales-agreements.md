@@ -1,13 +1,13 @@
 ---
-title: "Értékesítési szerződések"
-description: "A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében."
+title: Értékesítési szerződések
+description: A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309518"
 ---
-
 # <a name="sales-agreements"></a>Értékesítési szerződések
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Ha létrehozott (kiadott) egy értékesítési rendelést egy értékesítési s
 | Mennyiség                                                          | Ha megad egy mennyiséget amely meghaladja az értékesítési szerződés sorában meghatározott mennyiséget, ahol a **Maximum betartatása** jelölőnégyzet be van jelölve, akkor egy üzenetpanelen kéri a módosított mennyiség mentését. Kattintson az **Igen** gombra, hogy eltávolítsa a az értékesítési szerződéssel való kapcsolatot és újraszámítsa az árat. Kattintson a **Nem** gombra, hogy eltávolítsa a az értékesítési szerződéssel való kapcsolatot az ár újraszámítása nélkül.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Értékesítési szerződéssel rendelt cikk visszaküldése
-Amikor egy vevő visszaküld egy értékesítési szerződéssel megrendelt terméket, a Microsoft Dynamics 365 for Finance and Operations megtalálja és automatikusan frissíti a vonatkozó értékesítési szerződés kötelezettségvállalását, hogy tükrözze a változást a mennyiségben vagy összegben. Olyan visszáru rendelés létrehozásával, amely egy értékesítési szerződéshez kötött értékesítési rendelésen alapul Ön kialakít egy kapcsolatot az értékesítési szerződés kötelezettségvállalása az értékesítésirendelés-sor és a visszárurendelés-számla között.  
+Amikor egy vevő visszaad egy értékesítési szerződéssel megrendelt terméket, a Microsoft Dynamics 365 for Finance and Operations megtalálja és automatikusan frissíti a kapcsolódó értékesítési szerződésben a mennyiségre vagy az összegre vonatkozó változásokat a kötelezettségvállalásban. Olyan visszáru rendelés létrehozásával, amely egy értékesítési szerződéshez kötött értékesítési rendelésen alapul Ön kialakít egy kapcsolatot az értékesítési szerződés kötelezettségvállalása az értékesítésirendelés-sor és a visszárurendelés-számla között.  
 
 Ha nem szeretné az értékesítési szerződés kötelezettségvállalásából levonni a visszaküldött cikkek mennyiségét, használhatja a **Kapcsolat eltávolítása** vezérlőt a **Visszáru rendelés** oldalon, hogy eltávolítsa a visszáru rendelés és az értékesítési szerződés kötelezettségvállalása közötti kapcsolatot. Ha később újra ki kell alakítania a kapcsolatot kattintson a **Kapcsolat létrehozása** gombra.  
 
@@ -111,7 +110,6 @@ Bizonyos esetekben, ha értékesítési rendelések közvetetten jönnek létre,
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Értékesítési szerződések pénzügyi dimenziói
 Pénzügyi dimenziókat másolhat a dokumentum fejlécébe vagy az értékesítési szerződés egyedi soraiba. Bármikor módosíthatja egy szerződés fejlécének vagy sorainak dimenzióit. Ebben az esetben a dimenziók automatikusan átmásolódnak a kiadási rendelések kiadás fejlécébe vagy kiadás sorába.
-
 
 
 

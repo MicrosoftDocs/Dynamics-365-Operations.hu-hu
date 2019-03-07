@@ -1,13 +1,13 @@
 ---
-title: "A Súgó rendszer csatlakoztatása"
-description: "Ez a témakör bemutatja a Microsoft Dynamics 365 for Finance and Operations súgórendszer komponenseit, áttekinti azok kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit."
+title: A Súgórendszer csatlakoztatása
+description: Ez a témakör bemutatja a Súgó rendszer komponenseit a Microsoft Dynamics 365 for Finance and Operations alkalmazásban, áttekinti azok kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
 author: margoc
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317729"
 ---
-
-# <a name="connect-the-help-system"></a>A Súgó rendszer csatlakoztatása
+# <a name="connect-the-help-system"></a>A Súgórendszer csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations súgórendszerének összetevőit írja le. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
+Ez a témakör bemutatja a Súgó rendszer komponenseit a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
 
@@ -44,7 +43,7 @@ A következő ábra a Finance and Operations rendszer súgórendszerének része
 ## <a name="connecting-the-help-system"></a>Csatlakozás a Súgó rendszerhez
 
 > [!NOTE]
-> A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
+> A **Feladat-útmutatók** lap jelenleg nem érhető el a Microsoft Dynamics 365 for Talent és Microsoft Dynamics 365 for Retail alkalmazásban. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
 
 A **Rendszerparaméterek** oldalon a rendszergazdák csatlakoztathatják a Súgó rendszer különböző darabjait az adott megvalósításhoz.
 
@@ -102,4 +101,3 @@ A Microsoft rendelkezésre bocsátott egy ismertetőt és mintakódot, amely le�
 [Feladatrögzítő áttekintése](../../dev-itpro/user-interface/task-recorder.md)
 
 [Feladatrögzítés létrehozása dokumentációként vagy képzésként való felhasználás céljából](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-

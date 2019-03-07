@@ -1,13 +1,13 @@
 ---
-title: "Hívásközpont-csatornák beállítása"
-description: "Ez a témakör a következővel kapcsolatban kínál információkat: hívásközpontoknak szóló rendelések feldolgozása a Microsoft Dynamics 365 for Retail használatával."
+title: Hívásközpont-csatornák beállítása
+description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Microsoft Dynamics 365 for Retail használatával.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334841"
 ---
-
-# <a name="set-up-call-center-channels"></a>Hívásközpont-csatornák beállítása
+# <a name="set-up-call-center-channels"></a>Hívásközponti csatornák beállítása
 
 [!include [banner](includes/banner.md)]
 
-A vállalat több hívásközponti csatornát határozhat meg a Microsoft Dynamics 365 for Retail alkalmazásban. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
+A vállalat több hívásközponti csatornát is meghatározhat a Microsoft Dynamics 365 for Retail rendszerben. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
 
 Új hívásközponti csatorna létrehozásakor rendszerszerűen hozzárendelnek egy üzemiegység-számot. Mivel a hívásközpontok üzemi egységekként jönnek létre, a felhasználók a hívásközponti csatornákat különböző Retail funkciókhoz rendelhetik hozzá, ilyenek például a szortimentek, a katalógusok és az adott szállítási módok.
 
@@ -77,7 +76,6 @@ A hívásközponti csatornák definiálásakor a csatornafelhasználókat hozzá
 
 Alapértelmezés szerint a **Kiskereskedelem értékesítés** jelző az értékesítési rendelés fejlécében be van kapcsolva a hívásközpont felhasználói által létrehozott minden megrendelésre. A rendelések ezután élvezhetik a rendszer kiskereskedelem-specifikus ár- és promóció funkcióinak előnyeit.
 
-A hívásközponti csatornához nem kapcsolódó felhasználók a Microsoft Dynamics 365 Finance and Operations szokásos rendelésbeviteli jellemzőit használhatják. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Retail megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, a kiskereskedelmi árképzés logika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
+Hívásközponti csatornához nem kapcsolt felhasználók szokásos rendelésibeviteli funkciókat használhatják a Microsoft Dynamics 365 for Finance and Operations rendszerben. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Retail megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, a kiskereskedelmi árképzés logika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
 
 A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak megadása után, a kívánt rendszerviselkedés garantálásának elősegítésére, ellenőrizze, hogy az összes szükséges hívásközponti paraméterek meg van határozva itt: **Kiskereskedelem** \> **Csatorna beállítása** \> **Hívásközpont beállítása** \> **Hívásközponti paraméterek**. Győződjön meg arról, hogy kapcsolódó számsorozatok is meg vannak határozva.
-

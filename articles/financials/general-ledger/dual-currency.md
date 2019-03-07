@@ -1,29 +1,28 @@
 ---
-title: "Kettős pénznem"
-description: "Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 for Finance and Operations esetében."
+title: Kettős pénznem
+description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 for Finance and Operations esetében.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330310"
 ---
-
 # <a name="dual-currency"></a>Kettős pénznem
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Ezenkívül jelentős módosítást végeztünk az értékcsökkenés folyamaton
     - Ha egy értékcsökkenési tranzakciótípus szerepel a tárgyieszköz-naplóban, az új oszlopokban a jelentési pénznem összege jelenik meg. Ezeket az összegeket módosíthatja.
     - Ha a főkönyvben a könyvelési pénznem és a jelentési pénznem megegyezik, az összegek folyamatosan szinkronban lesznek. Ha módosítja a **Követel** összeget, a **Jóváírás jelentési pénznemben** összege automatikusan módosul, úgy, hogy megfeleljen neki.
     - Ha bármilyen más tranzakciótípus szerepel a tárgyieszköz-naplóban, ha a **Tartozás jelentési pénznemben** és a **Követelés jelentési pénznemben** összegek soha nem jelennek meg, feladás előtt és után sem. A könyvelési pénznem és a jelentési pénznem összegei továbbra is elérhetők a bizonylaton, amely a főkönyvbe végzi a feladást.
-

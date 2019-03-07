@@ -1,13 +1,13 @@
---- 
-title: "Költségösszetevő-dimenzió feltérképezése"
-description: "A költségellenőr ezzel az eljárással hozzárendelhet egy költségösszetevő-dimenziót egy költségösszetevő-dimenzióhoz az MXMF jogi személyen belül."
+---
+title: Költségösszetevő-dimenzió feltérképezése
+description: A költségellenőr ezzel az eljárással hozzárendelhet egy költségösszetevő-dimenziót egy költségösszetevő-dimenzióhoz az MXMF jogi személyen belül.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 52b9f6a5b71349d404fe9621b58f58aab843a71f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3ff31db3dbb6da9570bb85bbcaa3b444852d91d7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308506"
 ---
 # <a name="map-a-cost-element-dimension"></a>Költségösszetevő-dimenzió feltérképezése
 
@@ -43,5 +43,4 @@ A költségellenőr ezzel az eljárással hozzárendelhet egy költségösszetev
 10. A Céldimenziótag mezőben adjon meg, vagy válasszon ki egy értéket.
     * Ebben a példában válassza ki a 6001004 Telefono dimenziótagot.  
 11. Kattintson a Mentés gombra.
-
 

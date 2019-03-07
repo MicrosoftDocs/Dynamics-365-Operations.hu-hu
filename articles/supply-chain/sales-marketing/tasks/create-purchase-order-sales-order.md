@@ -1,13 +1,13 @@
---- 
-title: "Beszerzési rendelés létrehozása értékesítési rendelésből"
-description: "Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy értékesítési rendelés alapján."
+---
+title: Beszerzési rendelés létrehozása értékesítési rendelésből
+description: Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy értékesítési rendelés alapján.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7991476b86ace92cda513ae8906c62ba7fbbe915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 412a8c7acca06fc1be073019f91144e2a3f1c94b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325756"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Beszerzési rendelés létrehozása értékesítési rendelésből
 
@@ -74,5 +74,4 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy �
 5. Kattintson a Termék fülre.
     * A referenciatétel biztosítja, hogy az aktuális beszerzés költségei terhelésként jelennek meg a csatolt értékesítési rendelésen.  
     * A Hivatkozási szám mezőben található hivatkozást megnyitva navigálhat az eredeti értékesítési rendeléshez.  
-
 
