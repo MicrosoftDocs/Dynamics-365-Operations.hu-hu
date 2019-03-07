@@ -1,13 +1,13 @@
 ---
-title: "Navigációs keresés"
-description: "A témakör ismerteti, hogy hogyan navigálhat a Microsoft Dynamics 365 for Finance and Operations lapjaihoz a kereső funkció használatával."
+title: Navigációs keresés
+description: Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353011"
 ---
-
 # <a name="navigation-search"></a>Navigációs keresés
 
 [!include [banner](../includes/banner.md)]
 
-A témakör ismerteti, hogy hogyan navigálhat a Microsoft Dynamics 365 for Finance and Operations lapjaihoz a kereső funkció használatával.
+Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 A Finance and Operations programban számos különböző ágazathoz és szektorhoz tartozó funkció érhető el. Az alkalmazás számos területe és lapja segít a különböző feladatok elvégzésében. A feladatokhoz szükséges lapok gyors megtalálásához használja a navigációs keresés funkciót.
 
@@ -64,4 +63,3 @@ A keresési eredmények lista 10 cikkre van korlátozva. Ha az eredmények köz�
 ## <a name="development"></a>Fejlesztés
 
 Fejlesztői szempontból a navigációs keresés funkcionalitását egyszerű javítani, mivel virtuálisan nincs késleltetés a menüelemek telepítése és a keresési eredményekben való megjelenítése között. Mindaddig, amíg a menüelemek a navigációs ablakhoz vagy az irányítópulthoz vannak kapcsolva, automatikusan kereshetőek lesznek.
-

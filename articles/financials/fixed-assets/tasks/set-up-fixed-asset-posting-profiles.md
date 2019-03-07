@@ -1,13 +1,13 @@
---- 
-title: "Tárgyieszköz-feladási profilok beállítása"
-description: "Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat."
+---
+title: Tárgyieszköz-feladási profilok beállítása
+description: Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 286c8732c1f2c92d0f16582b0b9de41990280e5a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9766d96d16429d0ce0864695a3157f54cad4054
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351102"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok beállítása
 
@@ -132,5 +132,4 @@ Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.  Ez a
 87. A Feladási érték mezőben válassza a „Nettó könyv szerinti érték" lehetőséget.
 88. A Fő számla mezőben adja meg a kívánt értékeket.
 89. Az Ellenszámla mezőben adja meg a kívánt értékeket.
-
 

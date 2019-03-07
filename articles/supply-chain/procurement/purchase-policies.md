@@ -1,13 +1,13 @@
 ---
-title: "Beszerzési irányelvek"
-description: "Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával."
+title: Beszerzési irányelvek
+description: Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358761"
 ---
-
 # <a name="purchasing-policies"></a>Beszerzési irányelvek
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ A beszerzési rendelés létrehozására és igényösszesítésre vonatkozó sz
     -   **Igényösszevonás tiltása** – Igényösszevonáskor nem vehetőek figyelembe a jóváhagyott beszerzési igénylési sorok. Ez az alapértelmezett beállítás, és csak azokra a beszerzési igénylési sorokra vonatkozik, amelyek kézi feldolgozást igényelnek a beszerzési rendelések létrehozásához.
     -   **Igényösszevonás mindenkori engedélyezése** – Igényösszevonáskor minden jóváhagyott beszerzési igénylési sor figyelembe vehető. **Megjegyzés:** Ha az **Igényösszevonás mindenkori engedélyezése** beállítást választja az **Igényösszevonás** lapon, azonban a **Beszerzési rendelések automatikus létrehozása** beállítást a **Beszerzési rendelés manuális létrehozása** lapon, az összes beszerzési igénylést manuálisan kell feldolgozni.
     -   **Igényösszevonás engedélyezése a megadott feltételek teljesülése esetén** – Definiálhatja azokat a feltételeket, amelyek meghatározzák, hogy a jóváhagyott beszerzési igénylési sorok figyelembe vehetőek-e igényösszevonáskor. A beszerzési igénylési sorok mindegyik típusához beállíthatja a feltételeket a beszerzési kategória és a szállító szerint. Ha az **Igényösszevonás engedélyezése a megadott feltételek teljesülése esetén** lehetőséget választja, a beszerzési igénylési sorok mindegyik típusához beállíthatja a feltételeket a beszerzési kategória és a szállító szerint. Amikor beszerzési kategóriát választ, a beszerzési kategóriához tartozó összes alkategóriát is kiválasztja. Ha az **Összes** lehetőséget választja egy meghatározott sortípusnál, az adott sortípussal rendelkező összes beszerzési igénylési sor használható lesz az igényösszevonáshoz.
-
 
 
 

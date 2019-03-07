@@ -1,13 +1,13 @@
 ---
-title: "Emberi erőforrások"
-description: "Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
+title: Emberi erőforrások
+description: Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341764"
 ---
-
 # <a name="human-resources"></a>Emberi erőforrások
 
 [!include [banner](../includes/banner.md)]
@@ -95,4 +94,3 @@ Lehetősége van kérdőívek tervezésére és kezelésére a különböző cé
 - [Kérdőív tervezése](../../talent/design-questionnaires.md)
 - [Kérdőív terjesztése és kitöltése](../../talent/distribute-questionnaires.md)
 - [A kérdőív megtekintése és az eredmények kiértékelése](../../talent/evaluate-questionnaire-results.md)
-

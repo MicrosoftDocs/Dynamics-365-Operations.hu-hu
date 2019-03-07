@@ -1,13 +1,13 @@
 ---
-title: "Munkaerő-mutatók Power BI-tartalom"
-description: "Ez a témakör a Munkaerő-mutatók Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Munkaerő-mutatók Power BI tartalom
+description: Ez a témakör a Munkaerő-mutatók Power BI tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,27 +18,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345789"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI-tartalom
+# <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Munkaerő-mutatók** Power BI-tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
+A **Munkaerő-mutatók** Power BI tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
 Az alábbi táblázat felsorolja az egyes jelentésekben megjelenő mutatókat.
 
 | Jelentés                                           | Mutatók |
@@ -57,9 +56,9 @@ Az alábbi táblázat felsorolja az egyes jelentésekben megjelenő mutatókat.
 | Alkalmazottak születésnapjai                               | Születésnapok ebben a hónapban, születésnapok a következő hónapban, alkalmazotti születésnapok, valamint születésnapok hónap és részleg szerint |
 | Tömeges felvételi projektek                               | Tömeges felvételi projektek összesen, tömeges felvételi projektek állapot szerint, tömeges felvételi projektek részleg és tulajdonos szerint, tömeges felvételi projektek munkakörönként, valamint tömeges felvételi projektek |
 
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI-tartalmat töltse le, amely a Microsoft Dynamics 365 rendszer ön által használt verziójára vonatkozik.
+Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI tartalmat töltse le, amely a Microsoft Dynamics 365 ön által használt verziójára vonatkozik.
 
 > [!NOTE]
 > A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations szolgáltatásra érvényesek.
@@ -88,4 +87,3 @@ A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                 | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Naptáreltolás, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Feladat |
 | Tömeges felvételi projekt        | Tömeges felvételi projektek, projekt tulajdonosa, valamint projekt állapota                     | Vállalat, tömeges felvétel sora |
 | Tömeges felvétel sora           | Részleg, foglalkoztatási típus és beosztás                                           | Dátum, munkakör, tömeges felvételi projekt |
-

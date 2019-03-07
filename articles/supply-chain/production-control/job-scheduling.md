@@ -1,13 +1,13 @@
 ---
-title: "Feladat ütemezése"
-description: "Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására."
+title: Feladat ütemezése
+description: Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d506a6fbeb7e88dc6b1709203bc0822b1f4dc0f8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339533"
 ---
-
 # <a name="job-scheduling"></a>Feladat ütemezése
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ Az erőforrások a feladatütemezésen keresztül vannak feladatokhoz rendelve. 
 
 ## <a name="resource-efficiency"></a>Erőforrás-hatékonyság
 A feladatütemezés figyelembe veszi az erőforrásokra vonatkozóan megadott hatékonysági százalékokat is. A hatékonysági százalékok csökkentik vagy növelik az erőforrásra lefoglalt időt. Ezért az átfutási idő szintén növekszik vagy csökken. A számítás a következő képlet segítségével történik: ütemezési idő = idő × 100 ÷ hatékonysági százalék. Ebben a képletben az *Idő* egyaránt tartalmazza a lefutási és a beállítási időt.
-
 
 
 

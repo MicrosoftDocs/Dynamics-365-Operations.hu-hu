@@ -1,13 +1,13 @@
 ---
-title: "Súlyozott átlag tényleges értékkel és jelöléssel"
-description: "A súlyozott átlag olyan készletmodell, amely a súlyozott átlag elven alapul, ahol a készletből történő kiadások értékét a készletzárási időszakban a készletbe bevételezett cikkek átlagos értéke, valamint az előző időszakban meglévő tényleges készlet határozza meg."
+title: Súlyozott átlag tényleges értékkel és jelöléssel
+description: A súlyozott átlag olyan készletmodell, amely a súlyozott átlag elven alapul, ahol a készletből történő kiadások értékét a készletzárási időszakban a készletbe bevételezett cikkek átlagos értéke, valamint az előző időszakban meglévő tényleges készlet határozza meg.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355679"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -111,7 +110,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -140,7 +139,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -173,7 +172,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -221,14 +220,13 @@ A következő diagram a tranzakciók sorozatát, és a súlyozott átlagon alapu
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a mennyiség@"Unitprice" formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@"Unitprice" formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
-
 
 
 

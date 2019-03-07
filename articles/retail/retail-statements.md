@@ -1,13 +1,13 @@
 ---
 title: Kiskereskedelmi nyilatkozatok
-description: "Ez a témakör a kimutatások létrehozását és feladását mutatja be."
+description: Ez a témakör a kimutatások létrehozását és feladását mutatja be.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347698"
 ---
-
-# <a name="retail-statements"></a>Kiskereskedelmi nyilatkozatok
+# <a name="retail-statements"></a>Kiskereskedelmi kimutatások
 
 [!include [banner](includes/banner.md)]
 
@@ -89,4 +88,3 @@ A kimutatás feladásakor értékesítési rendelések és számlák jönnek lé
 - Kiskereskedelmi értékesítés, amelyhez a tranzakcióba egy vevő felvettek a Microsoft Dynamics 365 for Retail POS külön értékesítési rendeléseket és számlákat hoz létre az egyes vevőkhöz.
 
 Kifizetési naplók automatikusan létrejönnek a fizetési kimutatásban, és a készlet úgy frissül, ahogy a POS üzlet.
-

@@ -1,13 +1,13 @@
---- 
-title: "Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet"
-description: "Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal."
+---
+title: Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
+description: Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7a6e217d476cedc0318c382e12b7dc2036e557c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d278b20724006ec3b3aa557738e8b130ca2bba15
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341097"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 
@@ -44,8 +44,7 @@ Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat
 3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a létrehozott biztonsági napló nevet, például Anyag.  
 4. Kattintson a Sorok létrehozása lehetőségre.
-5. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+5. Adjon meg egy dátumot a Kezdő dátum mezőben.
     * Állítsa a dátumot erre: „2015-01-02”.  
 6. Adja meg a dátumot a „Záró dátum” mezőben.
     * Állítsa a dátumot erre: „2015-12-30”.  
@@ -76,5 +75,4 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 5. A Művelet panelen kattintson a Terv elemre.
 6. Kattintson a cikkfedezet elemre.
     * Fontos megjegyezni, hogy a minimum mennyiséget frissítettük, így most már a biztonsági készlet naplójában szereplő minimum mennyiséget tükrözi.  
-
 

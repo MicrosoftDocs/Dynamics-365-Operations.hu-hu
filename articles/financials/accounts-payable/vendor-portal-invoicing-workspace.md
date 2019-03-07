@@ -1,13 +1,13 @@
 ---
-title: "Szállítói együttműködési számlázás munkaterület"
-description: "Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen."
+title: Szállítói együttműködési számlázás munkaterület
+description: Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2368fae3913f67d9d2ce0bbe6b2e0bee7968bb15
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340522"
 ---
-
 # <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködési számlázás munkaterület
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 
-A **Szállítói együttműködési számlázás** munkaterület a szállítói számla adatainak megtekintésére, és a számlák küldésére használható a Microsoft Dynamics 365 Finance and Operations megoldásban a munkafolyamat-lehetőségeinek használatával.
+A **Szállítói együttműködési számlázás** munkaterület a szállítói számla adatainak megtekintésére, és a számlák küldésére használható a Microsoft Dynamics 365 for Finance and Operations megoldásba a munkafolyamat-lehetőségeinek használatával.
 
 
 <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködés számlázási munkaterülete
@@ -60,7 +59,6 @@ Minden feladott és feladatlan szállítói számla megtekinthető a **Szállít
 Létrehozhat egy új szállítói számlát a következő kiválasztásával: **Új** a **Szállítói együttműködési számlázás** munkaterületen. A beszerzési rendelés számát és számlaszámát a szállítónak kell megadnia. Alapértelmezés szerint a szállító beszerzési rendelésének összes sora meg fog jelenni az új számlán. A mennyiség- és költségadatokat a szállítói számla munkafolyamatba küldése előtt lehet szerkeszteni. A számlához a beküldése előtt fájlokat, megjegyzéseket, képeket és URL-címeket csatolhat.
 
 További tájékoztatás: [A külső szállítókkal történő szállítói együttműködés](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
-
 
 
 

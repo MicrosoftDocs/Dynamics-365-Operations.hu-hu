@@ -1,13 +1,13 @@
 ---
-title: "A Feladatrögzítő és súgó a Retail Modern POS (MPOS) és a Cloud POS alkalmazásokhoz"
-description: "Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail Modern POS és a felhőalapú POS környezetekben."
+title: Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
+description: Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail Modern POS és a felhőalapú POS környezetekben.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345996"
 ---
-
-# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>A Feladatrögzítő és súgó a Retail Modern POS (MPOS) és a Cloud POS alkalmazásokhoz
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 
 [!include [banner](includes/banner.md)]
 
@@ -80,7 +79,7 @@ A rögzítési munkamenet befejezésekor több lehetőség is megjelenik a felv�
 
 ### <a name="save-to-this-pc"></a>Mentés erre a PC-re
 
-A felvételi csomag használatával lehetősége nyílik a Feladat-útmutató lejátszására, a felvétel karbantartására, illetve a felvétel megjegyzéseinek szerkesztésére. (Ez a funkció még nincs megvalósítva a Retail modern POS és a felhőalapú POS rendszerén.)
+A felvételi csomag használatával lehetősége nyílik a Feladat-útmutató lejátszására, a felvétel karbantartására, illetve a felvétel megjegyzéseinek szerkesztésére. (Ez a funkció még nincs megvalósítva a Retail Modern POS és a felhőalapú POS rendszerén.)
 
 ### <a name="export-as-word-document"></a>Exportálás Word-dokumentumként
 
@@ -139,7 +138,7 @@ A **Megjegyzések** mezőben beírt szöveg a lépés szövege *alatt* jelenik m
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a Cloud POS súgója
 
-A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-and-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM-könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics 365 for Retail Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
+A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-and-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics 365 for Retail Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
 
 [![Súgó gomb](./media/help.jpg)](./media/help.jpg)
 
@@ -147,4 +146,3 @@ Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy
 
 > [!NOTE]
 > A Retail Modern POS és a Cloud POS Súgója nem hozza fel a feladat-útmutatókat a képernyő vagy a végzett művelet alapján. A keresőmezőbe be kell írnia a folyamat nevét, majd kattintson a **Keresés** lehetőségre.
-

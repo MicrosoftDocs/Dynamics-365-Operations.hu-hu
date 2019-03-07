@@ -1,13 +1,13 @@
 ---
-title: "Pénztár (POS) javítások szerializált termékekhez"
-description: "Ez a témakör a szerializált termékeken végzett fejlesztéseket sorolja fel, amelyek segítségével időt takaríthat meg, és hatékonyabban végezheti munkáját."
+title: Pénztár (POS) javítások szerializált termékekhez
+description: Ez a témakör a szerializált termékeken végzett fejlesztéseket sorolja fel, amelyek segítségével időt takaríthat meg, és hatékonyabban végezheti munkáját.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346203"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Pénztár (POS) javítások szerializált termékekhez
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ A Kiskereskedelmi központban megadott beállítások alapján a termékek lehet
 - **Sorozatszámok nem szükségesek vevői rendelések feladásához** – a vevői rendelések feladhatók egy üzletben, és teljesíthetők egy másikból. A vevői rendelést felvevő pénztárosnak nem kell megadnia a sorozatszámot. A sorozatszám megadására a kitárolási vagy felvételi lépés során kerül sor. Azonban a sorozatszámot meg kell adni az összes olyan sortételnél, amelynél a **Végrehajtás** szállítási típus van kiválasztva. Ellenkező esetben a tranzakció nem hajtható végre.
 - **A szerializált termékeket a rendszer nem összesíti a tranzakció képernyőn** – a **Termékek összesítése** beállítás a **Terminál** mezőcsoportban a **Funkcióprofil** oldalon ugyanazon nem szerializált termékek összesítését teszi lehetővé a tranzakció képernyőn. Ha az ugyanazon termékek vannak összesítve, azok könnyebben láthatók a tranzakciós rácsban. Azonban mivel a sorozatszámok általában egyediek, és az értékesítési munkatársaknak nem kell sorozatszámokat megadniuk a fizetésig, a **Termékek összesítése** beállítás nem vonatkozik a szerializált termékekre. Ezért a szerializált termékek összesítése nem történik meg a tranzakció képernyőn, ha a **Termékek összesítése** beállítás ki van választva.
 - **A naplók sorozatszám szerinti keresésének képessége** – A naplókat mostantól sorozatszám szerint is lehet keresni. Ehhez nyissa meg a „Naplók” műveletet, és nyomja meg a „Speciális keresés” gombot az alkalmazássávon. A „Szűrő hozzáadása” gomb segítségével szűrő alkalmazható annak érdekében, hogy a sorozatszámokra is kereshessen.
-

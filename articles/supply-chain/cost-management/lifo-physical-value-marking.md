@@ -1,13 +1,13 @@
 ---
-title: "LIFO tényleges értékkel és jelöléssel"
-description: "A LIFO (Last in, first out) egy olyan készletmodell, amelynél a legutóbb bevételezett (legújabb) cikkeket adják ki elsőként. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat."
+title: LIFO tényleges értékkel és jelöléssel
+description: A LIFO (Last in, first out) egy olyan készletmodell, amelynél a legutóbb bevételezett (legújabb) cikkeket adják ki elsőként. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344202"
 ---
-
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO tényleges értékkel és jelöléssel
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Az új, mozgóátlagon alapuló önköltségi ár, a pénzügyileg frissített t
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a mennyiség x egységár formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -98,7 +97,7 @@ A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a mennyiség x egységár formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
@@ -140,14 +139,13 @@ A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tr
 - A készlettranzakciókat függőleges nyilak jelölik.
 - A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 - A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a mennyiség x egységár formátumban.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
-
 
 
 

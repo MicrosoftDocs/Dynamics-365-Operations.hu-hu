@@ -1,13 +1,13 @@
---- 
-title: "Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása"
-description: "Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit."
+---
+title: Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása
+description: Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354391"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics AX programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat. Ez az eljárás a Microsoft Dynamics AX rendszerre vonatkozhat. Ne feledje, hogy a Dynamics AX új neve Microsoft Dynamics 365 for Operations.
+Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics AX programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat. Az eljárás a Microsoft Dynamics AX szolgáltatásra vonatkozhat. Ne feledje, hogy a Dynamics AX új neve Microsoft Dynamics 365 for Operations.
 
 1. Lépjen Az összes munkaterület > .. > Kiskereskedelmi üzlet pénzügyei lehetőségre.
 2. Kattintson az Új kimutatás lehetőségre.
@@ -47,5 +47,4 @@ Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámít
 10. Kattintson a Bezárás gombra.
 11. Ugorjon a következő oldalra: Kiskereskedelem és kereskedelem > Csatornák > Kiskereskedelmi üzlet pénzügyei.
 12. Kattintson a Feladott kimutatások fülre.
-
 

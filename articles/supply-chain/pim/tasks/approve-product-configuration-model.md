@@ -1,13 +1,13 @@
---- 
-title: "Termékkonfigurációs modell jóváhagyása"
-description: "Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre."
+---
+title: Termékkonfigurációs modell jóváhagyása
+description: Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductModelVersion, PCApproveProductModelVersion, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c196731046fa01059d61f2df08f47639ba839642
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fa4548d3017246cbe49e2613f8990df6ea1c368b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360509"
 ---
 # <a name="approve-a-product-configuration-model"></a>Termékkonfigurációs modell jóváhagyása
 
@@ -37,8 +37,7 @@ Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonf
 5. Kattintson az Új lehetőségre.
 6. A Termékszám mezőben adjon meg, vagy válasszon ki egy értéket.
     * A termékre mutató hivatkozás a termékkonfigurációs modell egy verziójának felel meg. Ez a lista csak olyan alaptermékeket jelenít meg, amelyek a megszorításon alapuló konfigurációs technológiát alkalmazzák.  
-7. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+7. Adjon meg egy dátumot a Kezdő dátum mezőben.
     * Válassza ki, hogy mikor lesz elérhető a termékmodell-verzió.  
 8. Adja meg a dátumot a „Záró dátum” mezőben.
     * Válassza ki a záró dátumot, amikor a termékmodell-verzió lejár, vagy válassza a Soha lehetőséget.  
@@ -49,5 +48,4 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 12. Válassza ki valamelyik lehetőséget az Árazási mód mezőben.
     * Aktiválja a termékmodell-verziót. Egyszerre csak egy termék lehet aktív egy termékmodell esetében.  
 13. Zárja be a lapot.
-
 

@@ -1,13 +1,13 @@
---- 
+---
 title: " Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához"
-description: "Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó kereskedelmi megállapodásokat egy kategória-árazási szabály használatával."
+description: Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó kereskedelmi megállapodásokat egy kategória-árazási szabály használatával.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8d252982cf1e4fa2f06646d0909e6f82d16f4cfc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355518"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
 
@@ -42,8 +42,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó keresk
 9. A Kerekítési verzió mezőben adjon meg vagy válasszon ki egy értéket.
 10. Kattintson a Kereskedelmi megállapodások előállítása gombra.
 11. Kattintson a Tovább gombra.
-12. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+12. Adjon meg egy dátumot a Kezdő dátum mezőben.
 13. Adja meg a dátumot a „Záró dátum” mezőben.
 14. Válassza ki az Igen lehetőséget a Következő keresése mezőben.
 15. Kattintson a Tovább gombra.
@@ -59,5 +58,4 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 23. Zárja be a lapot.
 24. Kattintson a Kategória árszabályai fülre.
     * Ebben a listában megjelennek a csatornaspecifikus Kategória-árazási szabályok.  
-
 

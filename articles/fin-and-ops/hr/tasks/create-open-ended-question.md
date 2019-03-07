@@ -1,13 +1,13 @@
---- 
-title: "Nyitott kérdés létrehozása"
-description: "A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat."
+---
+title: Nyitott kérdés létrehozása
+description: A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMQuestion
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 51d238e41e1c89211d158bd4aee958a85bec772d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347905"
 ---
 # <a name="create-an-open-ended-question"></a>Nyitott kérdés létrehozása
 
@@ -37,5 +37,4 @@ A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat.
 5. Válasszon ki egy lehetőséget a Beviteli típus mezőben.
     * A kifejtős kérdések esetében Szöveg vagy Jegyzet beviteli típust használ a rendszer.  
 6. A Szöveg mezőbe írja be a kérdését.
-
 

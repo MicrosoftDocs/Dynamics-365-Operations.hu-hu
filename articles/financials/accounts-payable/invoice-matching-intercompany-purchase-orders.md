@@ -1,13 +1,13 @@
 ---
-title: "Számlaegyeztetés és vállalatközi beszerzési rendelések"
-description: "A vállalatközi kereskedelmi tranzakcióban érintett vásárló jogi személyt be kell állítani a kötelezettségek számlaegyeztetésének használatához. Ilyenkor a feladási követelményeknek a vállalatközi kereskedelemre és a kötelezettségek számlaegyeztetésre egyaránt teljesülnie kell a vállalatközi szállítói számlák feladása előtt."
+title: Számlaegyeztetés és vállalatközi beszerzési rendelések
+description: A vállalatközi kereskedelmi tranzakcióban érintett vásárló jogi személyt be kell állítani a kötelezettségek számlaegyeztetésének használatához. Ilyenkor a feladási követelményeknek a vállalatközi kereskedelemre és a kötelezettségek számlaegyeztetésre egyaránt teljesülnie kell a vállalatközi szállítói számlák feladása előtt.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357565"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Számlaegyeztetés és vállalatközi beszerzési rendelések
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Ha például ezeket a lépéseket követi.
 2.  Az értékesítő gyárban hajtson végre egy számlafrissítést az ICSO999 megrendeléshez. A feladás sikertelen, mert a cikk nincs készleten és még nem érkezett meg. Emiatt a pénzügyi adatokat nem lehet frissíteni.
 3.  Az értékesítő gyárban jegyezze be, hogy a cikkek megérkeztek és adjon fel egy szállítólevelet az ICSO999 megrendeléshez. Az ICPO333 megrendeléshez tartozó termékbevételezés automatikusan feladásra kerül a vásárló gyárban. A vásárló gyárban az átvett mennyiség a B-R14-e cikkhez 100-ra vált.
 4.  Az értékesítő gyárban hajtson végre egy számlafrissítést az ICSO999 megrendeléshez. A feladás mindkét jogi személynél sikeres. A vásárló gyárban a vásárolt termékmennyiség a B-R14-es cikkhez 100-ra vált. 
-
 
 
 

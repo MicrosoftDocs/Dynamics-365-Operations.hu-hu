@@ -1,13 +1,13 @@
 ---
-title: "Projektköltségek könyvelése beszerzési elismervényekkel"
-description: "Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomon a Microsoft Dynamics 365 for Finance and Operations programban."
+title: Projektköltségek könyvelése beszerzési elismervényekkel
+description: Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Finance and Operations programban.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostControlCommittedCost
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc822652abbba68f094fe5b8a65f796165a92c4c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9a74b684e955376b9c3036954f4a6e6628c468f0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340430"
 ---
-
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektköltségek könyvelése beszerzési elismervényekkel
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomon a Microsoft Dynamics 365 for Finance and Operations programban. 
+Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Finance and Operations programban. 
 
 A projekt számlái gyakran érkeznek később az árukhoz és a szolgáltatásokhoz képest, amely jelentős hatással lehet a projekt fő teljesítménymutatóira (KPI). Fontos, hogy ezeket a tranzakciókat nyomon követhessük a pénzügyi és a projektjelentésekben.
 
@@ -82,7 +81,6 @@ A **Vállalt költség** lapon, az 1. lépésben létrehozott bejegyzéseket a r
 [![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 A szállítói számla függő állapotban marad, amíg a tényleges szállítói számla megérkezik.
-
 
 
 

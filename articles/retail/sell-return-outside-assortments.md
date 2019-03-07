@@ -1,31 +1,30 @@
 ---
-title: "Értékesített és a visszaküldött termékek, amelyek nem részei egy üzlet szortimentjének"
-description: "A Dynamics 365 for Retail segítségével szortimenteken kívüli termékeket értékesíthet és küldhet vissza."
+title: Értékesített és a visszaküldött termékek, amelyek nem részei egy üzlet szortimentjének
+description: Szortimenten kívüli termékek eladása és visszavétele a Dynamics 365 for Retail rendszerben.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352298"
 ---
-
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Értékesített és a visszaküldött termékek, amelyek nem részei egy üzlet szortimentjének
 
 [!include [banner](includes/banner.md)]
@@ -47,4 +46,3 @@ A Dynamics 365 for Retail használatával ezek az általános forgatókönyvek e
 + Termékek átvétele az aktuális üzletben vagy egy másik üzletben.
 + Rendelés érvénytelenítése az aktuális üzletben vagy egy másik üzletben.
 + Visszárurendelés nyugtával vagy anélkül a jelenlegi vagy egy másik üzletben.
-

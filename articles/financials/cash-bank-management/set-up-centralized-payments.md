@@ -1,13 +1,13 @@
 ---
-title: "Központosított kifizetések beállítása"
-description: "A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben."
+title: Központosított kifizetések beállítása
+description: A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb0769d605b831da09046a1e7bf0c2a704dba398
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2e309655bbc1d0fe7a088062b90fab34c642ab29
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361912"
 ---
-
 # <a name="set-up-centralized-payments"></a>Központosított kifizetések beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Amikor olyan kifizetést hoz létre egy jogi személyben, amely más jogi szemé
 
 ## <a name="set-up-default-descriptions"></a>Alapértelmezett leírások beállítása
 A vállalatközi kiegyenlítési bizonylatokhoz alapértelmezett leírásokat határozhat meg. Az alapértelmezett leírás a vállalattól és a vállalat részére esedékes tranzakcióknál jelenik meg a vállalatközi kiegyenlítési folyamat során. Az **Alapértelmezett leírások** lapon létrehozhat új leírásokat a **Vállalatközi vevői kiegyenlítés** és a **Vállalatközi szállítói kiegyenlítés** számára, a nyelv kiválasztásával, majd szöveg megadásával.
-
 
 
 

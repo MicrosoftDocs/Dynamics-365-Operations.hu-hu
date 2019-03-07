@@ -1,13 +1,13 @@
 ---
-title: "Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése"
-description: "Ez a témakör bemutatja a Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelését"
+title: Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
+description: Ez a témakör bemutatja a Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelését
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
 ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360003"
 ---
-
 # <a name="manage-international-bank-account-number-iban-validation"></a>Nemzetközi bankszámlaszám (IBAN) ellenőrzésének kezelése
 
 [!include [banner](../includes/banner.md)]
 
 A Nemzetközi bankszámlaszám (IBAN) ellenőrzése növeli az ellenőrzések mennyiségét, amikor IBAN-t ad hozzá egy bankszámlához.
 
-Az IBAN-szám szerkezetével kapcsolatos információkat a Microsoft Dynamics 365 for Finance and Operations tárolja. Az IBAN szám első használatakor bankszámlákkal az adatokat automatikusan betöltődnek. Az IBAN-szám hosszát, a bankszámlaszám és a bank regisztrációs azonosítójának kezdő pozícióit, és a bankszámlaszám és a bank regisztrációs azonosítójának hosszát tartalmazza.
+Az IBAN szám felépítéséről szóló adatok a Microsoft Dynamics 365 for Finance and Operations programban kerülnek tárolásra. Az IBAN szám első használatakor bankszámlákkal az adatokat automatikusan betöltődnek. Az IBAN-szám hosszát, a bankszámlaszám és a bank regisztrációs azonosítójának kezdő pozícióit, és a bankszámlaszám és a bank regisztrációs azonosítójának hosszát tartalmazza.
 
 ## <a name="set-up-iban-structures"></a>IBAN-szerkezetek beállítása
 
@@ -49,4 +48,3 @@ Az IBAN-szám szerkezetével kapcsolatos információkat a Microsoft Dynamics 36
     Az ellenőrzés azt is ellenőrzi, hogy a bankszámla száma megegyezik-e az IBAN szám a bankszámlaszámot jelölő részével. Ha a bankszámlaszám nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bankszámlaszám nem egyezik meg.
 
     Az ellenőrzés azt is ellenőrzi, hogy a bank regisztrációs azonosítója megegyezik-e az IBAN-szám a bank regisztrációs azonosítóját jelölő részével. A bank regisztrációs azonosítója tartalmazza a banki számot, és gyakran egy további bankfiókot is. Ha a bank regisztrációs azonosítója nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bank regisztrációs azonosítója nem egyezik meg.
-

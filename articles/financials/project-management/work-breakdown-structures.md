@@ -1,13 +1,13 @@
 ---
-title: "Munkalebontási struktúrák"
-description: "A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát."
+title: Munkalebontási struktúrák
+description: A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358899"
 ---
-
 # <a name="work-breakdown-structures"></a>Munkalebontási struktúrák
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ A WBS részletességének mértéke attól függ, hogy milyen mértékű pontoss
 
 Ezzel szemben a média- és reklámiparban, illetve a szoftverekkel és informatikai infrastruktúrával foglalkozó ágazatokban futó projektek mindig egyediek, ezért a termelékenység relatív a feladatot elvégző személy tapasztalatához és kompetenciájához képest. Ezért ezek az ágazatok egy munkalebontási struktúrát (WBS) használnak ahhoz, hogy megközelítőleg megkapják a projekt értékét, és ezt nem a projekt előrehaladásának részletes nyomon követéséhez használják. 
 
-A munkalebontási struktúra (WBS) létrehozása időigényes folyamat, amely általában hosszabb időt vesz igénybe, és amelyhez sok személy együttműködése és a tőlük érkező információk szükségesek. Ez a témakör leírja, hogyan használhatja WBS-bővítményeket a Microsoft Dynamics 365 for Finance and Operations programban becslési és nyomon követési igényeinek megfelelően.
+A munkalebontási struktúra (WBS) létrehozása időigényes folyamat, amely általában hosszabb időt vesz igénybe, és amelyhez sok személy együttműködése és a tőlük érkező információk szükségesek. Ez a témakör leírja, hogyan használhatja WBS-bővítményeket a Microsoft Dynamics 365 for Finance and Operations programban becslési és nyomon követési igényeinek megfelelően.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>A WBS létrehozásának előfeltételei
 A WBS létrehozásához létre kell hoznia egy munkaütemezést és meg kell becsülnie a munka költségeit.
@@ -103,10 +102,10 @@ Jelenleg nem szabható testre a WBS-számozás.
 
 ### <a name="schedule-estimation"></a>Ütemezés becslése
 
-Az ütemezés becslése általában a WBS létrehozásának második lépése. Legjobb gyakorlatként érdemes a feladatok létrehozása után végrehajtani az ütemezés becslését. A **Munkalebontási struktúra** oldal a Finance and Operations programban két szakaszból áll. A felső ablak az ütemezés becsléséhez készült, az alsó ablak pedig tartalmaz egy **Becsült költségek és bevételek** lapot, amely költségbecslésre használható. 
+Az ütemezés becslése általában a WBS létrehozásának második lépése. Legjobb gyakorlatként érdemes a feladatok létrehozása után végrehajtani az ütemezés becslését. A **Munkalebontási struktúra** oldal a Finance and Operations programban két szakaszból áll. A felső ablak az ütemezés becsléséhez készült, az alsó ablak pedig tartalmaz egy **Becsült költségek és bevételek** lapot, amely költségbecslésre használható. 
 **Feladatfüggőségek** A WBS-ben létrehozhat előzménykapcsolatot a feladatok között. Ha előzményfeladatokat rendel hozzá egy feladathoz, akkor ez a feladat csak akkor kezdődhet meg, amikor minden előzményfeladatát befejezték. A feladat tervezett kezdési dátuma automatikusan az előzmények legkésőbbi dátuma lesz. 
 
-**Feladat ütemezése a Microsoft Dynamics 365 for Finance and Operations programban** A következő tényezők határozzák meg a levélcsomópont feladatainak ütemezését:
+**Feladat ütemezése a Microsoft Dynamics 365 for Finance and Operations** programban A következő tényezők határozzák meg a levélcsomópont feladatainak ütemezését:
 
 -   Megelőző tevékenységek
 -   Munka
@@ -167,7 +166,7 @@ A költség és eladási ár minden munka vagy a kiadásbecslési sor esetében 
 ## <a name="tracking-progress-on-the-wbs"></a>Nyomonkövetési folyamat a WBS-en
 Egyes ágazatokban nagyon részletesen nyomon követik a projekt előrehaladását a WBS alapján, míg mások a WBS magasabb szintjén követik nyomon az előrehaladást. Ez a szakasz leírja, hogyan használható a WBS-nyomonkövetés a projektkövetelmények teljesítéséhez. 
 
-A Finance and Operations három nézettel rendelkezik a projekt WBS-éhez, ezek a következők: a Tervezés nézet, a Munkakövetési nézet és a Költségkövetési nézet.
+A Finance and Operations három nézettel rendelkezik a projekt WBS-éhez, ezek a következők: a Tervezés nézet, a Munkakövetési nézet és a Költségkövetési nézet.
 
 ### <a name="planning-view"></a>Tervezési nézet
 
@@ -243,18 +242,18 @@ A jelenérték-diagramon az időfázis hetek vagy hónapok szerint jelenik meg. 
 
 **Tervezett érték** Az EVM-elmélet kimondja, hogy az tervezett értéktáblázat jelzi, hogy a projektcsapat milyen tempóban tervezte az értéklétrehozást a projekten belül. 
 
-A Finance and Operations 0:100 kereseti szabályt használja a tervezett érték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
+A Finance and Operations 0:100 kereseti szabályt használja a tervezett érték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
 
 A Projektvezetés és könyvelés részben a levélcsomópontok záró dátumát és a tervezett költséget adja meg. Ha a tervezett érték diagramja hetek szerint jelenik meg, a tervezett érték az összes levélcsomópont-feladat esetében hetek szerint lesz összesítve a projekt időtartama alatt. 
 
 **Jelenérték** Az EVM-elmélet kimondja, hogy a jelenérték-táblázat jelzi, hogy a projektcsapat ténylegesen milyen tempóban hoz létre értéket a projekten belül. 
 
-A Finance and Operations 0:100 kereseti szabályt használja a jelenérték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
+A Finance and Operations 0:100 kereseti szabályt használja a jelenérték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
 
 Jelenérték összeg számítása során minden egyes feladat előrehaladási százaléka számít. A 0:100 kereseti szabály szerint csak egy adott időszakban végrehajtott feladatok lesznek figyelembe véve a jelenérték kiszámításakor, az adott időszak vége alapján. A projekt jelenértékét az összes, a diagram létrehozásakor befejezett feladat vonatkozásában számítja ki a rendszer. 
 
 > [!NOTE] 
-> Jelenleg a WBS-nyomonkövetéshez használatos rendszer nem rendelkezik olyan adatstruktúrákkal, amelyekben feladatonként lehetne tárolni a az előrehaladás visszamenőleges százalékos adatait. Emiatt a jelenérték csak a kocka feldolgozásának időpontjára vonatkozóan jelenthető. A kockát rendszeresen fel kell dolgozni, hogy frissüljenek a létrehozott érték adatai a Szerepkör oldalon. 
+> Jelenleg a WBS-nyomonkövetéshez használatos rendszer nem rendelkezik olyan adatstruktúrákkal, amelyekben feladatonként lehetne tárolni a az előrehaladás visszamenőleges százalékos adatait. Emiatt a jelenérték csak a kocka feldolgozásának időpontjára vonatkozóan jelenthető. A kockát rendszeresen fel kell dolgozni, hogy frissüljenek a létrehozott érték adatai a Szerepkör oldalon. 
 
 **Tényleges költség** Az EVM-elmélet kimondja, hogy a tényleges költség kijelzése mutatja, hogy milyen arányban költik el a pénzt a projektre. 
 
@@ -314,7 +313,6 @@ Munka = Erőforrások száma × Időtartam × Órák száma egy normál munkanap
 Egyszerre kijavíthat minden ütemezési hibát, ha a **Minden ütemezési hiba kijavítása** lehetőségre kattint. 
 
 Azt is megteheti, hogy külön-külön javítja ki az ütemezési hibákat úgy, hogy az egyes feladatoknál rákattint a figyelmeztető ikonra.
-
 
 
 

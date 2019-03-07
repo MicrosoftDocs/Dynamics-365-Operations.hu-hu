@@ -1,13 +1,13 @@
---- 
-title: "ER konfigurációk tervezése jelentések Word-formátumú előállításához"
-description: "A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés formátumot kimenetek Microsoft Word-fájlként történő létrehozására."
+---
+title: ER konfigurációk tervezése jelentések Word-formátumú előállításához
+description: A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés formátumot kimenetek Microsoft Word-fájlként történő létrehozására.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362349"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>ER konfigurációk tervezése jelentések Word-formátumú előállításához
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés (ER) formátumot kimenetek Microsoft Word-fájlként történő létrehozására. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
+A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentési (ER) formátumot kimenetek Microsoft Word-fájlként történő létrehozására. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 
 Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfiguráció létrehozása az OPENXML formátumban létrejövő jelentésekre vonatkozóan” feladat-útmutató lépéseit. Előkészítésként le kell tölteni és menteni a következő sablonokat is helyileg a mintajelentéshez:
 
@@ -35,7 +35,7 @@ Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfigu
 - [Kifizetési jelentés bekötött sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 for Operations 1611-es verziójába került be.
+Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Microsoft Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Válassza ki a meglévő ER-jelentéskonfigurációt
@@ -99,5 +99,4 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 
 16. Kattintson az OK gombra.
 17. Kattintson az OK gombra.
     * Elemezze a létrehozott kimenetet. Ne feledje, hogy a létrehozott kimenet Word-formátumban jelenik meg, és a feldolgozott kifizetések adatait tartalmazza.  
-
 

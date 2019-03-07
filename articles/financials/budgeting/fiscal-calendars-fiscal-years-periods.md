@@ -1,13 +1,13 @@
 ---
-title: "Pénzügyi naptárak, pénzügyi évek és időszakok"
-description: "Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében."
+title: Pénzügyi naptárak, pénzügyi évek és időszakok
+description: Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 431d654aaffc27d54fd590dc7d5d2ab6c2313908
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361659"
 ---
-
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Pénzügyi naptárak, pénzügyi évek és időszakok
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Költségvetési ciklus időtartama, ameddig költségvetést használ. Költsé
 
 ## <a name="maintain-periods-for-your-organization"></a>A szervezet időszakok karbantartása
 Használhatja a főkönyvi naptár oldalt, hogy megtekintse a pénzügyi naptár részleteit, pénzügyi éveket és időszakokat, amelyeket a szervezete használ. Az időszakok állapotának módosítása, és válassza ki, mely felhasználók adhatnak fel tranzakciókat könyvelési időszakok is. Ez például egy új időszak kezdetén hasznos, ha azt szeretné, hogy csak egy adott felhasználócsoport végezzen feladásokat a régi időszakban, miközben a többi csoport csak az új időszakon dolgozik.
-
 
 
 

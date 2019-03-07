@@ -1,13 +1,13 @@
---- 
-title: "Alkalmazandó árak és engedmények keresése"
-description: "Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni egy termékhez, amely jelenleg érvényes egy meghatározott vevőre, értékesítési rendelés létrehozása nélkül."
+---
+title: Alkalmazandó árak és engedmények keresése
+description: Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni egy termékhez, amely jelenleg érvényes egy meghatározott vevőre, értékesítési rendelés létrehozása nélkül.
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ba95e651898da0e0fbd1221f61436ffac59db09e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359865"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Alkalmazandó árak és engedmények keresése
 
@@ -59,5 +59,4 @@ Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni e
 3. Kattintson a Sorengedmény megtekintése gombra.
     * A T0012 termékhez két sorkedvezmény-megállapodás tartozik, 5 százalék engedményt adva egy rendelési sor mennyiséghez 1-től 10-re, illetve 10 felett rendelési mennyiségre vonatkozóan 7 százalékos engedményt. Vegye figyelembe, hogy az engedmények egy termékcsoportra vonatkoznak, ebben a példában a 01 csoportkódra, amelynek a T0012 termék tagja.  
 4. Zárja be a lapot.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Oszlopdefiníciók a pénzügyi jelentésben"
-description: "Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják."
+title: Oszlopdefiníciók a pénzügyi jelentésben
+description: Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356346"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
 [!include [banner](../includes/banner.md)]
@@ -121,11 +120,11 @@ A következő táblázat az oszlopkorlátozás kódokat írja le.
 | Kiig.                     | Az oszlop összegeinek korlátozása periódushelyesbítési összegekre, ha vannak ilyen összegek elérhetőek. |
 | XAD                     | Az összegek korlátozása az oszlopban úgy, hogy a periódushelyesbítések ne jelenjenek meg. |
 | Tervezett átadás                      | Az összegek korlátozása az oszlopban úgy, hogy csak a feladott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek. |
-| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<blockquote>[!NOTE] Nem minden adatszolgáltató támogatja a feladatlan tranzakciókat. További tudnivalókért lásd a Microsoft Dynamics ERP <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>adatintegrációs útmutatóját</a>.</blockquote> |
+| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<blockquote>[!NOTE] Nem minden adatszolgáltató támogatja a feladatlan tranzakciókat. További információért tekintse át az <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>Microsoft Dynamics ERP rendszer adatintegrálási útmutatóját</a>.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Oszlop korlátozása egy jelentési egységre
 
-1. Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
+1. A Report Designer alkalmazásban nyissa meg a módosítani kívánt oszlopdefiníciót.
 2. Kattintson duplán a korlátozandó oszlop **Jelentési egység** cellájára.
 3. A **Jelentési egység kiválasztása** párbeszédpanelben, a **Jelentésfa** listában válasszon ki egy fát.
 4. Bontsa ki vagy csukja össze az egységek listáját, válasszon ki egy jelentésegységet, és kattintson az **OK** gombra.
@@ -171,7 +170,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 ### <a name="create-an-automatically-generated-header"></a>Automatikusan generált fejléc létrehozása
 
-A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC**, **FD** és **WKS** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a(z) **@CalMonthLong** a **7**-es hónapot **július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Például írja be azt, hogy **@CALMONTHLONG**. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **Időszak @FiscalPeriod-@FiscalYear kezdete: @StartDate vége: @EndDate**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
+A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC**, **FD** és **WKS** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a **@CalMonthLong** kód a **7** hónapot **Július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Így például a **@CALMONTHLONG** kódot kell beírni. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **@FiscalPeriod-@FiscalYear időszak, @StartDate és @EndDate között**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
 
 > [!NOTE]
 > Egyes szövegrészek, például a hosszú dátum a Finance and Operations szerver regionális beállításaitól függ. Ezen beállítások módosításához kattintson a **Start** gombra, majd a **Vezérlőpult** elemre, majd válassza a **Régiók és nyelv** opciót. Az alábbi táblázat felsorolja az oszlopfejlécekhez elérhető készszöveg-beállítáokat.
@@ -179,18 +178,18 @@ A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegk�
 
 | Kész szövegek beállításai és kódjai                | Leírás |
 |-----------------------------------------|-------------|
-| Hónap neve (@CalMonthLong)              | Az aktuális hónap nevét nyomtatja az oszlopfejlécbe. Ha úgy dönt, hogy a jelentésben szereplő összegeket ezerre, millióra vagy milliárdra kerekíti fel, vagy ha az oszlopszélességet négy karakternél szűkebbre állítja, akkor a hónap nevét a rendszer az első három betűre rövidíti. |
-| Rövidített hónapnév (@CalMonthShort) | A hónap teljes (nem rövidített) nevét nyomtatja ki a kiválasztott pénzügyi időszakra. |
-| Időszak száma (@FiscalPeriod)           | Az oszlophoz azonosított pénzügyi időszak számszerű formáját nyomtatja. Ha az oszlop több időszakra is kiterjed, a tartomány utolsó időszakát nyomtatja ki a program. |
-| Időszak leírása (@FiscalPeriodName)  | A pénzügyi adatokban azonosított pénzügyi időszak azonosítását nyomtatja ki. |
-| Pénzügyi év (@FiscalYear)               | Az oszlop pénzügyi évét számszerű formában nyomtatja ki. |
-| Naptári év (@CalYear)                | Az oszlop naptéri évét számszerű formában nyomtatja ki. |
-| Kezdő dátum (@StartDate)                 | Az oszlop kezdő dátumát nyomtatja ki. |
-| Záró dátum (@EndDate)                     | Az oszlop záró dátumát nyomtatja ki. |
-| Egység neve a fáról (@UnitName)         | Ha egy oszlopot a jelentésfa egy meghatározott egységére korlátozza, akkor az egység nevét nyomtatja ki az oszlopfejlécben. |
-| Egység leírása (@UnitDesc)            | Ha egy oszlopot a jelentésfa egy meghatározott egységére korlátozza, akkor az egység leírását nyomtatja ki az oszlopfejlécben. |
-| Könyv kódja (@BookCode)                   | Az oszlopban meghatározott könyvelési kódot nyomtatja ki. |
-| Üres sor (@Blank)                     | Üres sort szúr be az oszlopfejlécbe. |
+| Hónap neve (@TeljNaptáriHónap)              | Az aktuális hónap nevét nyomtatja az oszlopfejlécbe. Ha úgy dönt, hogy a jelentésben szereplő összegeket ezerre, millióra vagy milliárdra kerekíti fel, vagy ha az oszlopszélességet négy karakternél szűkebbre állítja, akkor a hónap nevét a rendszer az első három betűre rövidíti. |
+| Rövidített hónapnév (@RövNaptáriHónap) | A hónap teljes (nem rövidített) nevét nyomtatja ki a kiválasztott pénzügyi időszakra. |
+| Időszakszám (@PénzügyiIdőszak)           | Az oszlophoz azonosított pénzügyi időszak számszerű formáját nyomtatja. Ha az oszlop több időszakra is kiterjed, a tartomány utolsó időszakát nyomtatja ki a program. |
+| Időszakleírás (@PénzügyiIdőszakNév)  | A pénzügyi adatokban azonosított pénzügyi időszak azonosítását nyomtatja ki. |
+| Pénzügyi év (@PénzügyiÉv)               | Az oszlop pénzügyi évét számszerű formában nyomtatja ki. |
+| Naptári év (@NaptÉv)                | Az oszlop naptéri évét számszerű formában nyomtatja ki. |
+| Kezdő dátum (@KezdőDátum)                 | Az oszlop kezdő dátumát nyomtatja ki. |
+| Záró dátuma (@ZáróDátum)                     | Az oszlop záró dátumát nyomtatja ki. |
+| Egység neve a fáról (@EgységNév)         | Ha egy oszlopot a jelentésfa egy meghatározott egységére korlátozza, akkor az egység nevét nyomtatja ki az oszlopfejlécben. |
+| Egység leírása (@EgységLeírás)            | Ha egy oszlopot a jelentésfa egy meghatározott egységére korlátozza, akkor az egység leírását nyomtatja ki az oszlopfejlécben. |
+| Könyvelési kód (@KönyvelésiKód)                   | Az oszlopban meghatározott könyvelési kódot nyomtatja ki. |
+| Üres sor (@Üres)                     | Üres sort szúr be az oszlopfejlécbe. |
 
 ### <a name="create-a-conditional-spanning-header"></a>Feltételesen fejlesztett fejléc létrehozása
 
@@ -216,10 +215,10 @@ A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek ad
 Phyllis egy jelentést készít egy dinamikus hat hónapos előrejelzéshez. Azt szeretné, ha a „Tényleges” szó jelenne meg minden olyan oszlopban, amely tényadatokat tartalmaz, és a „Költségvetés” szó azoknál, amelyek csak költségkeret-előrejelzést tartalmaznak. A jelentés futtatásának minden egyes hónapja esetében, van egy további tényleges oszlop és kisebb költségvetés oszlop. Bár Phyllis kézzel is módosíthatná az oszlopdefiníciót a fejlécek kiigazítására, valahányszor jelentést generál, mégis időt és munkát spórol azzal, ha úgy dönt, feltételes terjesztésű fejléceket használ, amelyek automatikusan hozzák létre a fejléceket az érintett oszlopokban, valahányszor legenerálódik a jelentés. Phyllis megnyitja a Jelentéstervezőt, rákattint az **Oszlopdefiníció** menüpontra a navigációs ablakban, és megnyitja az oszlopdefiníciót a jelentéshez. Az alábbi adatokat adja meg. Az alapidőszak a jelentésdefinícióban 4.
 
 
-|                     |  A:   | milliárd             | K             | T             | E:             | P             | G:             | H:             | Én             | J             | ezer             | K             | H             |
+|                     |  N   | B             | C             | D             | E:             | F             | G:             | S             | I             | J             | ezer             | L             | E             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
 | 1. fejléc            |      | Tényleges        | Költségvetés        |               |               |               |               |               |               |               |               |               |               |
-| 2. fejléc            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| 2. fejléc            |      | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap |
 | 3. fejléc            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Oszloptípus         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
 | Könyvelési kód / Attribútum |      | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    |
@@ -612,4 +611,3 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 [Sordefiníciók a pénzügyi jelentésben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)
-

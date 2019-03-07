@@ -1,35 +1,34 @@
 ---
-title: "Adatok importálása több munkalapot tartalmazó Excel adatentitás-sablonokból"
-description: "Ez a témakör leírja, hogyan importálhatók az adatok Excel adatentitás-sablonokkal a Microsoft Dynamics 365 Finance and Operations megoldásba."
+title: Adatok importálása több munkalapot tartalmazó Excel adatentitás-sablonokból
+description: Ez a témakör leírja, hogyan lehet Excel adatentitás-sablonok segítségével adatokat importálni a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351263"
 ---
-
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Adatok importálása több munkalapot tartalmazó Excel adatentitás-sablonokból
 
 [!include [banner](../includes/banner.md)]
 
-Az adatkezelés a Microsoft Dynamics 365 for Finance and Operations megoldásban támogatja a Microsoft Excel-alapú sablonokat az adatentitások esetében. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
+Az adatok kezelése a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban támogatja a Microsoft Excel alapú sablonokat az adatentitások esetén. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Fájl feltöltése egyszer, és a hozzárendelése az összes entitáshoz
 Lássunk egy példát, amelyben egy Excel-fájl szerepel két munkalappal, amelyek a **Telephelyek** és **Raktárak** nevet viselik. Az adatimportálási projekt beállításához beállítjuk az első adatentitást, a **Telephelyeket**, majd feltöltjük a fájlt. A **Telephelyek** kiválasztható az ehhez az entitáshoz használandó munkalapként.
@@ -51,4 +50,3 @@ Azokban az esetekben, amikor ugyanannak a fájlnak egy új verzióját, vagy egy
 ## <a name="upload-a-file-using-run-project"></a>Fájl feltöltése a Projekt futtatása lehetőséggel
 
 Egy importálási projekt végrehajtásához feltölthet egy Excel-fájlt a **Projekt futtatása** funkció használatával. Ügyelnie kell arra, hogy csak olyan fájlokat töltsön fel, amelyek ugyanazokat a munkalapokat tartalmazzák, mint a meglévő leképezések az adatentitásokhoz az adatprojektben. Ha egy munkalap nem található az újonnan feltöltött fájlban, a rendszer hibaüzenetet jelenít meg, és az importálás leáll. Ha egy entitás esetében módosítani kell a hozzárendelést a munkalaphoz, akkor az adatprojektben a hozzárendeléseket először frissíteni kell az adatprojektből, mielőtt a fájlt használná **Projekt futtatása** funkcióban.
-

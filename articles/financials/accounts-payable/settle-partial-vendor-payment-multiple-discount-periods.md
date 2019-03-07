@@ -1,13 +1,13 @@
 ---
-title: "Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik"
-description: "Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak."
+title: Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
+description: Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c697d20bcbe6ab8f2bc38c03b181104db1f36838
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d88630a62cfdebf0daf19d3bb6af7fcc6e877876
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357956"
 ---
-
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,6 @@ Július 20 April végső kifizetést hoz létre a 200,00 összeghez. Kedvezmény
 | APP-10061  | 2015/7/12 |         | 495,00                               |                                       | 0,00    | dollár      |
 | DISC-10061 | 2015/7/12 |         | 5,00                                 |                                       | 0,00    | dollár      |
 | APP-10062  | 2015/7/20 |         | 200,00                               |                                       | 0,00    | dollár      |
-
 
 
 

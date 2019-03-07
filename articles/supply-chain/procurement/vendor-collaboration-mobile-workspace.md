@@ -1,13 +1,13 @@
 ---
-title: "Szállítói együttműködési mobil munkaterület"
-description: "Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik."
+title: Szállítói együttműködési mobil munkaterület
+description: Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358646"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a **Szállítói együttműködés** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
 
 ## <a name="overview"></a>Áttekintés 
-A **Szállítói együttműködés** mobil munkaterület folyamatosan tájékoztatja a szállítókat az új beszerzési rendelésekről, hogy megtekinthessék és válaszolhassanak a beszerzési rendelésekre a Microsoft Dynamics 365 for Finance and Operations webes ügyfélnél. 
+A **Szállítói együttműködési** mobil munkaterület folyamatosan tájékoztatja a szállítókat az új beszerzési rendelésekről, hogy láthassák és válaszolhassanak a beszerzési rendelésekre a Microsoft Dynamics 365 for Finance and Operations webes ügyfélnél. 
 
 >[!NOTE]
 > A mobil munkaterületet a szállító együttműködési webes felületének kiegészítéseként kell felhasználni, de nem helyettesíti azt. 
@@ -58,13 +57,13 @@ A **Szállítói együttműködés** mobil munkaterület lehetővé teszi egy sz
 -   Információkat tekinthet meg egy, a szállító által benyújtott felhasználói kérelemről és követheti a kérelem állapotát. (A feladathoz egy további biztonsági szerepkör szükséges.)
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az előfeltételek eltérőek lehetnek attól függően, hogy a szervezete a Microsoft Dynamics 365 melyik verzióját használja.
+Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziója szerint.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations rendszert használja 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
 Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Szállítói együttműködés** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>A Microsoft Dynamics 365 for Operations 1611-es verziójához 3. vagy újabb platformfrissítéséhez szükséges előfeltételek
-Amennyiben szervezete telepítette a Microsoft Dynamics for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations 1611-es verzió és Platform update 3 vagy újabb használatakor
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb Platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics for Operations 1611-es v
 <td>Rendszergazda</td>
 <td>A KB 3216943 egy bináris frissítés, amely a 3. platformfrissítés használata esetén szükséges. A KB végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
 <ol>
-<li>Töltse le a KB 3216943 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
+<li>Töltse le a KB 3216943 csomagot a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.</li>
 <li>Telepítse a bináris frissítést, amely telepíthető csomagként jelenik meg. A telepíthető csomag alkalmazásával kapcsolatos tudnivalókat lásd: <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Telepíthető csomag alkalmazása</a>.</li>
 </ol></td>
 </tr>
@@ -115,12 +114,12 @@ Amennyiben szervezete telepítette a Microsoft Dynamics for Operations 1611-es v
 
 Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
--   [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
 1.  Indítsa el az alkalmazást a mobileszközén.
-2.  Írja be a Microsoft Dynamics 365 URL-jét.
+2.  Adja meg a Microsoft Dynamics 365 URL-címét.
 4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
 5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
@@ -171,4 +170,3 @@ A rendelési soron végrehajtott összes módosítás megjelenik. A feltöltött
 
 ### <a name="open-confirmed-orders"></a>Visszaigazolt rendelések megnyitása
 Amikor a beszerzési rendelést megerősíti a vevő (ami azt jelenti, hogy a beszerzési rendelés **Megerősített** állapotra vált), megjelenik a nyitott és megerősített rendelésben. Mindaddig, amíg nincs regisztrálva fogadottként a vevő által, a listában marad.
-

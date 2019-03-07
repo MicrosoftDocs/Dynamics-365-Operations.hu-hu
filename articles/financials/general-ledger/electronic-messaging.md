@@ -1,33 +1,32 @@
 ---
-title: "Elektronikus üzenetküldés"
-description: "Ez a témakör az elektronikus üzenetküldésről nyújt áttekintést és beállítási információkat a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban."
+title: Elektronikus üzenetküldés
+description: Ez a témakör a áttekintést és beállítással kapcsolatos információt nyújt az elektromos üzenetküldéssel kapcsolatban a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357933"
 ---
-
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az elektronikus üzenetküldésről nyújt áttekintést és beállítási információkat a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
+Ez a témakör a áttekintést és beállítással kapcsolatos információt nyújt az elektromos üzenetküldéssel kapcsolatban a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
 
 Nemrég a világ számos országának és régiójának kormányai és törvényhozó hatóságai alkalmazni kezdték az adott országokban vagy régiókban regisztrált vállalatokkal szembeni jelentéskészítési előírásokat. A követelmények célja az, hogy ezektől a vállalatoktól elektronikus úton lehessen adatokat gyűjteni, közvetlenül a feljegyzésre, tárolásra és kezelésre használt rendszerből.
 
@@ -452,4 +451,3 @@ Most törölheti vagy frissítheti az üzenet állapotát. Az üzenet állapotá
 ![Az üzenet állapotának frissítése](media/update-status.png)
 
 Az üzenet állapota **Előkészítve** állapotra frissül, és most létrehozhatja a jelentést a **Jelentés létrehozása** kiválasztásával. A jelentés létrejött, az üzenet állapota és a műveletnapló pedig frissült. A létrehozott jelentés megtekintéséhez nyomja meg a **Csatolmány** gombot a Művelet panelen.
-

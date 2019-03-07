@@ -1,13 +1,13 @@
 ---
-title: "Rendelési értesítések megjelenítése a pénztárnál (POS)"
-description: "Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben. Idővel a fejlesztők kiterjeszthetik ezeket az értesítéseket további műveletekre a rendelés teljesítése műveletek mellett."
+title: Rendelési értesítések megjelenítése a pénztárnál (POS)
+description: Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben. Idővel a fejlesztők kiterjeszthetik ezeket az értesítéseket további műveletekre a rendelés teljesítése műveletek mellett.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361337"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
 
-A modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is. Mivel a nap folyamán különböző feladatokat kell végrehajtani, szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Microsoft Dynamics 365 for Retail 5. alkalmazásfrissítésétől ezek az értesítések csak pénztárműveletekhez konfigurálhatók.
+A modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is. Mivel a nap folyamán különböző feladatokat kell végrehajtani, szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Microsoft Dynamics 365 for Retail alkalmazásban az 5. alkalmazásfrissítéssel az értesítések csak pénztárműveleteknél állíthatók be.
 
 Jelenleg a rendszer csak a rendelés teljesítése műveletekhez képes értesítéseket megjeleníteni. Azonban mivel a keretrendszert bővíthetőnek tervezték, a fejlesztők végül írni fognak tudni egy értesítéskezelőt minden művelethez, és a művelet értesítéseit megjeleníthetik a pénztárban.
 
@@ -72,4 +71,3 @@ A következő ábrán az élő tartalom beállítása látható a rácsgombterve
 A következő ábra bemutatja a **Jobb felső** és a **Középen** kiválasztásának hatását a **Tartalom igazítása** mezőben, különböző méretű gombok esetében.
 
 ![Élő tartalom a pénztárgombokon](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztárgombokon")
-

@@ -1,13 +1,13 @@
---- 
-title: "ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával"
-description: "A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját."
+---
+title: ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
+description: A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342270"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
@@ -108,7 +108,7 @@ A lépések végrehajtásához először el kell végezni a „Hozzon létre egy
     * Fontos, hogy a létrehozott konfiguráció teljesített 1.1.1-es verzióként lesz mentve. Ez azt jelenti, hogy ez az egyéni BACS (UK fiktív egyéni) formátum 1-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló BACS (UK fiktív) 1-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-    * Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Dynamics 365 for Finance and Operations Enterprise kiadás szakaszban. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
+    * Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Dynamics 365 for Finance and Operations, Enterprise kiadás szakaszban. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>A meglévő országspecifikus konfiguráció frissítése
     * A Litware, Inc. rendszernek frissítenie kell a BACS (UK fiktív) konfigurációját, és igazodnia kell az új ország követelményeihez az elektronikus dokumentum formátumának kezelésére vonatkozóan. Később ezen konfiguráció új verziójában tárolva lesz, amelyet felajánlanak a szolgáltatás előfizetői számára, többek között a Proseware, Inc.  
@@ -198,6 +198,5 @@ A lépések végrehajtásához először el kell végezni a „Hozzon létre egy
     * Vegye figyelembe, hogy a rendszer a létrehozott konfigurációt teljesített 1.2.2-es verzióként menti: az alap BACS (UK fiktív egyéni) formátum 2-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló alap BACS (UK fiktív) formátum 2-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-    * Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket egy párhuzamos Dynamics 365 for Finance and Operations Enterprise kiadás szakaszban. Válassza ki a létrehozott BACS (UK fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
-
+    * Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Dynamics 365 for Finance and Operations, Enterprise kiadás szakaszban. Válassza ki a létrehozott BACS (UK fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
 

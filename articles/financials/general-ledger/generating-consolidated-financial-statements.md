@@ -1,14 +1,14 @@
 ---
-title: "Konszolidált pénzügyi kimutatások létrehozása"
-description: "Ez a témakör a különböző helyzeteket mutatja be, ahol konszolidált pénzügyi kimutatásokat hozhat létre."
+title: Konszolidált pénzügyi kimutatások létrehozása
+description: Ez a témakör a különböző helyzeteket mutatja be, ahol konszolidált pénzügyi kimutatásokat hozhat létre.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355196"
 ---
-
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -225,4 +224,3 @@ Annak érdekében, hogy a pénznemek használatakor helyesen átváltott összeg
 További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás](./financial-consolidations-currency-translation.md).
 
 A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online konszolidáció](./consolidate-online.md).
-

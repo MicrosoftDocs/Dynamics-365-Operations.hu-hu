@@ -1,13 +1,13 @@
 ---
-title: "Ürítési elvek"
-description: "Ez a témakör azt a négy ürítési elvet mutatja be, amelyeket a nyersanyag-fogyasztásnál használ a rendszer."
+title: Ürítési elvek
+description: Ez a témakör azt a négy ürítési elvet mutatja be, amelyeket a nyersanyag-fogyasztásnál használ a rendszer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e4b9cd918bec9a094744b208821285c57f01798a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358301"
 ---
-
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Nyersanyag-fogyasztás kezelése ürítési elvek használatával
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ A Befejezés ürítési alapelv azt jelzi, hogy anyag fog kell felhasználása a
 
 ### <a name="available-at-location"></a>Rendelkezésre áll a helyen
 Rendelkezésre álló hely kiürítési elvét, azt jelzi, hogy az anyag lesz automatikusan felhasználandó regisztrálásakor, valamint a termelés. Az anyag regisztrálva van, valamint a helyről munka a nyersanyag kitárolása befejeződött, vagy ha anyag érhető el a termelési bemeneti hely és az anyagjegyzéksorban ki van adva a raktárba. A kitárolási lista, amely a folyamat során létrejön egy kötegelt feladatban feladása. Ezt az elvet jelentősége, ha például egy termelési rendeléssel szembeni több kitárolási tevékenységek vannak beállítva. Ebben az esetben nem kell manuálisan a kitárolási lista frissítése, és letöltheti a folyamatban lévő munka egyenlegű aktuális nézetét.
-

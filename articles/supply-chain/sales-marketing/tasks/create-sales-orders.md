@@ -1,13 +1,13 @@
---- 
-title: "Értékesítési rendelések létrehozása"
-description: "Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni."
+---
+title: Értékesítési rendelések létrehozása
+description: Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8af0333d979ba3a4e12d4f22b1225f3b72d66a7a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4ccd2c4ace41f07dce14498031e3cc29ecb61b1c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "352114"
 ---
 # <a name="create-sales-orders"></a>Értékesítési rendelések létrehozása
 
@@ -68,5 +68,4 @@ Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni. Ezt a f
 2. Kattintson az Összegek lehetőségre.
     * Az Összegek oldalon a teljes rendeléssel kapcsolatos részletek láthatók. Ez magában foglalja a részösszeget, amely a sorok nettó összege az alkalmi sorengedményekhez van igazítva, a teljes számlaösszeget, amely egy részösszeg a alkalmi rendelési-szint engedményhez igazítva, díjakat és az áfát, a vevői hitelkeret helyzetét és továbbiakat.  A számlaösszeg az az érték, amely megjelenik a vevő számladokumentumában.  
 3. Kattintson az OK gombra.
-
 

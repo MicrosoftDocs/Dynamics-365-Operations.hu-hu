@@ -1,39 +1,38 @@
 ---
-title: "Feloldási stratégia termékkonfigurációhoz"
-description: "Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében."
+title: Feloldási stratégia termékkonfigurációhoz
+description: Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
 author: cvocph
 manager: AnnBe
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 4544128e580b30b14a6236a9a6147ff0a8641d72
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351148"
 ---
-
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
 
-A feloldási stratégia fogalmát először a Microsoft Dynamics AX 2012 R2 7. összesített frissítése (CU7) vezette be. Később bővítve lett a Microsoft Dynamics AX 2012 R3 és a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 8. összesített frissítésében (CU8) .
+A feloldási stratégia fogalmát először a Microsoft Dynamics AX 2012 R2 7. összesített frissítése (CU7) vezette be. Ez bővítve lett frissítése a Microsoft Dynamics AX 2012 R3 8. összesített frissítésében (CU 8) és Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 verziójában.
 
 A feloldási stratégia fogalma most a következő stratégiákból áll:
 
@@ -74,4 +73,3 @@ Az alábbi táblázat ajánlásokat tartalmaz a különböző forgatókönyvekn�
 [Heurisztika](https://techterms.com/definition/heuristic)
 
 [Kényszerkielégítési probléma](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
-

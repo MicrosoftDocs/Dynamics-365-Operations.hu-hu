@@ -1,13 +1,13 @@
 ---
-title: "Értékesítési teljesítmény felmérése termék szerint"
-description: "A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával."
+title: Értékesítési teljesítmény felmérése termék szerint
+description: A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d40f51208503fe9d2dadca455bb0531bbe519a4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343972"
 ---
-
 # <a name="assess-sales-performance-by-product"></a>Értékesítési teljesítmény felmérése termék szerint
 
 [!include [banner](includes/banner.md)]
@@ -45,4 +44,3 @@ Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek** j
 - **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
 - **Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Vezető termékek jelentései**
 - **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb termékek jelentés**
-

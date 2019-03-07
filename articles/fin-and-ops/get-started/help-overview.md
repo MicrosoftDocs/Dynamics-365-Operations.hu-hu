@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations súgórendszer"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza."
+title: Finance and Operations súgórendszer
+description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350734"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Finance and Operations súgórendszer
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza.
 
 > [!NOTE]
-> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 for Retail; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 for Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 A súgórendszer közös a következő termékek esetében:
 
@@ -78,7 +77,7 @@ Segítséget más Dynamics 365 termékekre vonatkozó a keresésükkel érhet el
 
 ### <a name="use-an-rss-feed"></a>RSS-hírcsatorna használata
 
-A Unified Operations összes frissítését bemutató RSS-hírcsatornára való előfizetéshez használja az alábbi hivatkozást egy az RSS-hírcsatornákat támogató böngészőből, például az Internet Explorerből vagy egy RSS-hírcsatorna-kezelőből:
+A Unified Operations összes frissítését bemutató RSS-hírcsatornára való előfizetéshez használja az alábbi hivatkozást egy az RSS-hírcsatornákat támogató böngészőből, például az Internet Explorer alkalmazásból vagy egy RSS-hírcsatorna-kezelőből:
 
 [RSS-hírcsatorna](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -137,7 +136,7 @@ Ha szeretné megtekinteni a Súgó tartalmát a Finance and Operation rendszerbe
 A Súgó ablakból hozzáférhet a Finance and Operations kliensre vonatkozó cikkekhez. Amikor először nyitja meg a Súgó ablakot, a **Súgó** lapra való kattintáskor a Finance and Operations rendszer aktuális oldalához kapcsolódó cikkek jelennek meg. Amennyiben nem találhatók cikkek, kulcsszavak beírásával módosíthatja a keresést. Amikor rákattint egy cikkre a Súgó ablakban, akkor egy új lap nyílik meg a böngészőben, és megjeleníti a cikket.
 
 > [!IMPORTANT]
-> Ez a szakasz nem vonatkozik a Dynamics 365 for Talent termékre. A Talent súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Emellett a Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
+> Ez a szakasz nem vonatkozik a Dynamics 365 for Talent alkalmazásra. A Talent súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Emellett a Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Feladat-útmutatók elérése a Súgó ablakból
 
@@ -158,7 +157,7 @@ A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
 2. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
 3. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 
-    - A Finance and Operations Microsoft-tartalom esetében válassza ki a következőt: 2017. februári Microsoft Dynamics 365 Finance and Operations QPC Egyesített könyvtár.
+    - A Finance and Operations programhoz és a Microsoft-tartalomhoz válassza ki a Microsoft Dynamics 365 for Finance and Operations 2017. februári QPC Egyesített könyvtárát.
     - A Retail esetében a könyvtárat júliusban adjuk ki.
     - A Talent esetében nem kell könyvtárat választani – a kapcsolatot a megfelelő könyvtárhoz létrehozzuk Önnek.
 
@@ -194,10 +193,9 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Állomások vagy hivatkozások az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | A Microsoft ingyenes e-tanulás webhelye. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a 365 for Finance and Operations projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és műveletekig. Ez a webhely az implementáció minden fázisában hasznos. |
-| [Támogatási blog](http://aka.ms/AXSupportBlog)                                                    | Tippeket és trükköket tartalmaz, amelyeket a Dynamics 365 for Finance and Operations támogató csapata jelentetett meg. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Egy felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a Dynamics 365 for Finance and Operations projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Ez a webhely az implementáció minden fázisában hasznos. |
+| [Támogatási blog](http://aka.ms/AXSupportBlog)                                                    | Tippeket és trükköket tartalmaz, amelyeket a Dynamics 365 for Finance and Operations támogató csapata adott fel. |
 | [Docs.microsoft.com/korábbi verziók](https://docs.microsoft.com/previous-versions/dynamics/) | A korábbi kiadások tartama. |
 | [Dynamics közösség](https://community.dynamics.com/)                                          | Blogokat, fórumokat és videókat tárol. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Értékelések és eladási információk érhetők el. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | A Finance and Operations néhány oktatóanyagát tárolja, letölthető jelentéseket és tanulmányokat, és ez az elsődleges támogatási webhely a szolgáltatási terv jogosultak számára. Szükség lehet egy szolgáltatástervre egyes erőforrások eléréséhez a webhelyen. |
-

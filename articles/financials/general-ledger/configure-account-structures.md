@@ -1,13 +1,13 @@
 ---
-title: "Számlastruktúrák konfigurálása"
-description: "Ez a témakör a számlastruktúrákról és a pénzügyi dimenziókról nyújt tájékoztatást."
+title: Számlastruktúrák konfigurálása
+description: Ez a témakör a számlastruktúrákról és a pénzügyi dimenziókról nyújt tájékoztatást.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351723"
 ---
-
 # <a name="configure-account-structures"></a>Számlastruktúrák konfigurálása
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ A számlastruktúra beállításakor van néhány ajánlott eljárás, melyet k�
 Ha elégedett az új beállítással vagy a számlastruktúra módosításával, aktiválnia kell. Ha egy számlastruktúra hozzá van rendelve egy főkönyvhöz, az aktiválási folyamat hosszú ideig is eltarthat, mivel a rendszerben szereplő összes fel nem adott tranzakciót szinkronizálni kell az új struktúrával. A feladott tranzakciókat nem befolyásolja a számlastruktúra módosítása.
 
 További tudnivalókért lásd: [Számlatükör tervezése](plan-chart-of-accounts.md), [Pénzügyi dimenziók](financial-dimensions.md) és [A számla és dimenzió kombinációk megadása (szegmentált bejegyzés ellenőrzés)](enter-account-dimension-combinations-segmented-entry-control.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Alkalmazotti kompetenciák és fejlődés Power BI-tartalom"
-description: "Ez a témakör a következőt ismerteti: Finance and Operations - Alkalmazotti kompetenciák és fejlődés Power BI-tartalom."
+title: Alkalmazotti kompetenciák és fejlődés Power BI-tartalom
+description: 'Ez a témakör a következőt ismerteti: Finance and Operations - Alkalmazotti kompetenciák és fejlődés Power BI-tartalom.'
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0442e795eadf28a07132c160d69ad44e9fb05eed
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352919"
 ---
-
 # <a name="employee-competencies-and-development-power-bi-content"></a>Alkalmazotti kompetenciák és fejlődés Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 08/13/2018
 Ez a témakör a következőt ismerteti: Finance and Operations - Alkalmazotti kompetenciák és fejlődés Power BI-tartalom. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
-Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás oldal a Power BI szolgáltatáshoz](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData) oldalon. A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés                            | Tartalom                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -40,7 +39,7 @@ Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer ada
 | Szakértelemprofil                     | Szakértelemprofil kiválasztott alkalmazott számára                |
 | Szakértelem-elemzés                    | Szakértelem típus és minősítés alapján                              |
 
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 Az Alkalmazotti kompetenciák és fejlődés tartalomcsomag jelentéseinek kitöltésére a Finance and Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
@@ -71,4 +70,3 @@ Az Alkalmazotti kompetenciák és fejlődés tartalomcsomag jelentéseinek kitö
 | Munkaerő\_WorkerName             | Keresztnév, vezetéknév és teljes név                                                                       | |
 | Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | |
 | Munkaerő\_WorkerTrend             | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat, Munkaerő\_Kompenzáció, Munkaerő\_GeographicLocation, Munkaerő\_Teljesítmény, Munkaerő\_WorkerName, Munkaerő\_ReportsToWorkerName, Munkaerő\_CalendarOffset, Munkaerő\_Dátum, Munkaerő\_WorkerTitle, Munkaerő\_Demográfia, Munkaerő\_Foglalkoztatás, Munkaerő\_Feladat |
-

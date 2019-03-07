@@ -1,13 +1,13 @@
 ---
-title: "Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával."
-description: "Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók a Finance and Operations alkalmazásban. Olyan ER-formátumokat is készíthet, amelyek a bejövő elektronikus dokumentumokat elemzik, és ezeknek a dokumentumoknak a tartalmát használják az alkalmazásadatok frissítésére."
+title: Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával.
+description: Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók a Finance and Operations alkalmazásban. Olyan ER-formátumokat is készíthet, amelyek a bejövő elektronikus dokumentumokat elemzik, és ezeknek a dokumentumoknak a tartalmát használják az alkalmazásadatok frissítésére.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer, IT Pro, Application user
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2a989b0000766478c71b243d7793b2fc8c4ece28
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6bb2b2480b619a8aee72c2d65052ed419c9a7c7d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349216"
 ---
-
 # <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával.
 
 [!include [banner](../includes/banner.md)]
@@ -42,4 +41,3 @@ Ezzel a funkcióval kapcsolatos további információért játssza le a Dokument
 - [ER adatmodellkonfiguráció: Instrastat (modell)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER modell leképezésének konfigurációja: Intrastat (leképezés)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER formátumkonfiguráció: Intrastat (formátum)](https://go.microsoft.com/fwlink/?linkid=849038)
-

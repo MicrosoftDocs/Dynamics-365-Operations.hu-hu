@@ -1,13 +1,13 @@
---- 
-title: "Tranzakciók korrekciója"
-description: "A feladatútmutató leírja, hogyan lehet beállítani egy projekt tranzakcióját."
+---
+title: Tranzakciók korrekciója
+description: A feladatútmutató leírja, hogyan lehet beállítani egy projekt tranzakcióját.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 922914a50932fcf91e80c80333d7ab0b4a66f089
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 94942b4dc499c225fd636e7080ef253d5370b96e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344501"
 ---
 # <a name="adjust-project-transactions"></a>Projekttranzakciók helyesbítése
 
@@ -44,4 +44,3 @@ A feladatútmutató leírja, hogyan lehet beállítani egy projekt tranzakciój�
 13. A listában jelölje meg a kiválasztott sort. 
 14. Adjon meg egy számot az Önköltségi ár mezőben. 
 15. Kattintson a Feladás lehetőségre. 
-

@@ -1,13 +1,13 @@
---- 
-title: "Munkaosztály létrehozása"
-description: "Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt."
+---
+title: Munkaosztály létrehozása
+description: Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5def9be0966d65728ffb0897229c0d749e7e13a0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9a775366bdaecb59a375f245f7a4d17a659cab11
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356024"
 ---
 # <a name="create-a-work-class"></a>Munkaosztály létrehozása
 
@@ -38,5 +38,4 @@ Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt. A munkaoszt�
 7. Írjon be egy értéket a Helytípus mezőbe.
     * Ha kiválaszt egy helytípust, azzal korlátozza a cikkek elhelyezését a kitárolás után. Akkor használja ezt a beállítást, ha egy helyutasítás a hely feloldására tesz kísérletet, vagy ha egy raktári dolgozó manuálisan biztosítja a mobileszköz-menüpont helyét.  
 8. Zárja be a lapot.
-
 

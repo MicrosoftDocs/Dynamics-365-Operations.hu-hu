@@ -1,13 +1,13 @@
 ---
-title: "SEPA beszedési megbízás – áttekintés"
-description: "Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát."
+title: SEPA beszedési megbízás – áttekintés
+description: Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23c418c6412e4bd300616eed4577e2b1d3f3d181
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fb55f4b0b06019891c2e490eda837cfad882e6db
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359198"
 ---
-
 # <a name="sepa-direct-debit-overview"></a>SEPA beszedési megbízás – áttekintés
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Létrehozhat elektronikus fizetési fájlokat a SEPA beszedési megbízásokhoz 
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Hogyan kezelhetők a visszatérítések és visszaküldések a SEPA beszedési megbízások vonatkozásában?
 A vevőnek mindkét SEPA beszedési megbízási rendszerben rendelkezik bizonyos visszatérítési jogokkal. A vevő az esedékességi dátum után nyolc héten belül jogosult bármely engedélyezett tranzakciót visszahívni, indoklás megadása nélkül. Abban az esetben, ha a tranzakció még nem került engedélyésre, ez az időszak az esedékességi dátum utáni 13 hónap. Bármely kifizetés sztornírozása, amely manuálisan lett végrehajtva a Kifizetés érvénytelenítése gombbal a Vevői tranzakciók oldalon.
-
 
 
 

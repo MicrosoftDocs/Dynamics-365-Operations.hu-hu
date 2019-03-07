@@ -1,13 +1,13 @@
---- 
-title: "Dolgozói adatok megadása"
-description: "Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében."
+---
+title: Dolgozói adatok megadása
+description: Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMMassHireProject, HRMMassHireLine
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0d850f271a3add191fcdc8ff5624bebbc6c6327f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339556"
 ---
 # <a name="enter-worker-information"></a>Dolgozói adatok megadása
 
@@ -44,5 +44,4 @@ Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat
 7. Keresse meg és jelölje ki a kívánt rekordot a listán.
 8. A listában szüntesse meg a kiválasztott sor megjelölését.
     * Válassza ki a következő beosztásállapotot, és folytassa a dolgozói információk megadását a felvehető embereknél.  
-
 

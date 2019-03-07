@@ -1,13 +1,13 @@
 ---
-title: "Költségvetés-tervezés frissítése"
-description: "Jelentős különbségek vannak a költségvetés tervezésében a Microsoft Dynamics AX 2012 és a Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után."
+title: Költségvetés-tervezés frissítése
+description: A költségvetés-tervezésben lényeges különbségek vannak a Microsoft Dynamics AX 2012 és Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,31 +17,30 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a39f516bb6d023ea18492ba3dfe721bd1127c60e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342960"
 ---
-
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
 [!include [banner](../includes/banner.md)]
 
-Jelentős különbségek vannak a költségvetés tervezésében a Microsoft Dynamics AX 2012 és a Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.  
+A költségvetés-tervezésben lényeges különbségek vannak a Microsoft Dynamics AX 2012 és Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.  
 
-A Microsoft Dynamics 365 for Finance and Operations programban a költségvetés-tervezés számos olyan fejlesztést tartalmaz, amelyek nem voltak elérhetők a Microsoft Dynamics AX 2012-ben. Ez a téma azokat a változásokat mutatja be, amelyeket a frissítő ügyfeleknek végre kell hajtaniuk. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A változtatások mértéke miatt a meglévő költségvetési tervek csak akkor nyithatók meg, ha a jelen témakörben felvázolt változtatások megtörténtek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
+A költségvetés-tervezés a Microsoft Dynamics 365 for Finance and Operations rendszerben sok fejlesztést kínál, amelyek nem érhetők el a Microsoft Dynamics AX 2012 rendszerben. Ez a téma azokat a változásokat mutatja be, amelyeket a frissítő ügyfeleknek végre kell hajtaniuk. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A változtatások mértéke miatt a meglévő költségvetési tervek csak akkor nyithatók meg, ha a jelen témakörben felvázolt változtatások megtörténtek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
 
 ## <a name="overview-of-changes"></a>Változások áttekintése
-Számos jelentős változás következett be a Dynamics 365 for Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Dynamics 365 for Finance and Operations szolgáltatásban:
+Számos jelentős változás következett be a Dynamics 365 for Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance and Operations szolgáltatásban:
 
 -   Költségvetésiterv-sablonok (Költségvetési terv konfigurációja)
 -   Költségvetésiterv-mappák (Költségvetési terv konfigurációja)
 -   A tervváltozat megszorításai (költségvetés-tervezés konfigurációja)
 -   A költségvetés-tervezés szakaszainak szabályai és sablonjai (költségvetés-tervezési folyamat)
 -   Munkalapsablonok mátrixmezői
--   Költségvetési terv Microsoft Excel-sablon varázsló
+-   Költségvetési terv Microsoft Excel sablonvarázslója
 
 Egyes új elemek nem frissíthetők közvetlenül a korábbi funkcióból. Ezért végre kell hajtania egyes újrakonfigurálásokat ezen új fogalmak kezeléséhez. Az alábbi szakaszok azokat a fogalmakat írják le, amelyek az előző listában szereplő elemek helyébe léptek.
 
@@ -51,7 +50,7 @@ Az oszlopok olyan új koncepciót jelentenek, amely az Excel-sablon egy része �
 
 ### <a name="layouts"></a>Elrendezések
 
-Az elrendezések az Excel-sablonokat felváltó új elemek. Az elrendezések tartalmazzák az oszlopokat, amelyek meghatározzák, hogy mely költségvetési vagy tényleges adatok és időszakok jelenjenek meg. Az elrendezések az ügyfél és az Excel-bővítmény között is megosztásra kerülnek. Ezért a Dynamics 365 for Finance and Operations ügyfélprogramban az adatok beírásával vagy megtekintésével kapcsolatos felhasználói élmény jobb, mint az AX 2012 felhasználói élménye. Ha adatokat szeretne felvinni a Finance and Operations ügyfélbe, már nem korlátozódik egyetlen forgatókönyv megtekintésére és bevitelére tranzakciós nézetben. Ehelyett az összehasonlító nézet lehetővé teszi, hogy egyszerre több időszakot és fiókot is egyszerre megtekinthessen, és összegeket írhasson be. Az elrendezések úgy is definiálhatók, hogy pénznemet, megjegyzést és egyéb opcionális adatokat adhat meg és tekinthet meg bennük. Az elrendezések segítségével továbbá meghatározhatja, hogy mely főkönyvi dimenziók és dimenzióleírások jelenjenek meg. Az elrendezések emellett forgatókönyv-korlátokat is tartalmaznak, amelyek meghatározzák, hogy a sablonok mely oszlopai szerkeszthetők, illetve mely oszlopok legyenek elérhetők az Excel-ben. Egy elrendezés meghatározását követően sablon jön létre hozzá. Ez a sablon ugyancsak létrehozza a megfelelő Excel-sablont. Ezután szerkesztheti az Excel-sablont, hogy az további képleteket és formázást tartalmazzon, majd feltöltheti újra. Az elrendezéseket ezután a rendszer minden egyes szakaszszabályhoz hozzárendeli a **Költségvetés-tervezési folyamat** oldalon. Ezért az elrendezések helyettesítik a sablonokat, amelyeknek hasonló a hozzárendelésük és használatuk.
+Az elrendezések az Excel-sablonokat felváltó új elemek. Az elrendezések tartalmazzák az oszlopokat, amelyek meghatározzák, hogy mely költségvetési vagy tényleges adatok és időszakok jelenjenek meg. Az elrendezések az ügyfél és az Excel-bővítmény között is megosztásra kerülnek. Ezért a Finance and Operations ügyfélprogramban az adatok beírásával vagy megtekintésével kapcsolatos felhasználói élmény jobb, mint az AX 2012 felhasználói élménye. Ha adatokat szeretne felvinni a Finance and Operations ügyfélbe, már nem korlátozódik egyetlen forgatókönyv megtekintésére és bevitelére tranzakciós nézetben. Ehelyett az összehasonlító nézet lehetővé teszi, hogy egyszerre több időszakot és fiókot is egyszerre megtekinthessen, és összegeket írhasson be. Az elrendezések úgy is definiálhatók, hogy pénznemet, megjegyzést és egyéb opcionális adatokat adhat meg és tekinthet meg bennük. Az elrendezések segítségével továbbá meghatározhatja, hogy mely főkönyvi dimenziók és dimenzióleírások jelenjenek meg. Az elrendezések emellett forgatókönyv-korlátokat is tartalmaznak, amelyek meghatározzák, hogy a sablonok mely oszlopai szerkeszthetők, illetve mely oszlopok legyenek elérhetők az Excel-ben. Egy elrendezés meghatározását követően sablon jön létre hozzá. Ez a sablon ugyancsak létrehozza a megfelelő Excel-sablont. Ezután szerkesztheti az Excel-sablont, hogy az további képleteket és formázást tartalmazzon, majd feltöltheti újra. Az elrendezéseket ezután a rendszer minden egyes szakaszszabályhoz hozzárendeli a **Költségvetés-tervezési folyamat** oldalon. Ezért az elrendezések helyettesítik a sablonokat, amelyeknek hasonló a hozzárendelésük és használatuk.
 
 ### <a name="budget-planning-processes"></a>Költségvetés-tervezési folyamatok
 
@@ -160,7 +159,6 @@ Számos adatentitás adódott hozzá a költségvetés-tervezés gyors implement
 -   Költségvetési terv prioritásai
 -   Költségvetési terv oszlopai
 -   Költségvetési terv elrendezésének elemei
-
 
 
 

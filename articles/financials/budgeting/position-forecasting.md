@@ -1,13 +1,13 @@
 ---
-title: "Beosztás előre jelzése"
-description: "A dolgozókhoz kapcsolódó kiadások gyakran a szervezet költségeinek nagy részét alkotják. A pozíció-előrejelzés lehetővé teszi hogy megtervezze ezeket a költségeket, és beleszámolja őket költségvetések tervezetébe."
+title: Beosztás előre jelzése
+description: A dolgozókhoz kapcsolódó kiadások gyakran a szervezet költségeinek nagy részét alkotják. A pozíció-előrejelzés lehetővé teszi hogy megtervezze ezeket a költségeket, és beleszámolja őket költségvetések tervezetébe.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356162"
 ---
-
 # <a name="position-forecasting"></a>Beosztás előre jelzése
 
 [!include [banner](../includes/banner.md)]
@@ -216,7 +215,6 @@ A létrehozási folyamat és a kiválasztási művelet esetében is a költségv
 A költségvetésiterv-sorok megjelenítik a költségvetési összegek forrását (az előre jelzett beosztás számát), de nincsenek összekapcsolva. Ezért az előre jelzett beosztás módosításai nem láthatók a költségvetésiterv-soron, és az előre jelzett beosztásban megjelennek a költségvetési terv sorának módosításai. Ha módosít egy előre jelzett beosztást, és szeretné, hogy a frissítések megjelenjenek költségvetési tervben, újra be kell vinnie a tervbe az előre jelzett beosztást. Ne feledje azonban, hogy ez a folyamat eltávolítja az összes olyan sort, amelyhez ez az előre jelzett beosztás hozzá van rendelve. Ezért az ezekben a sorokban végrehajtott összes módosítás törlődik. 
 
 Ha meg akarja tekinteni, hogy mely költségvetési tervekben szerepel egy előre jelzett beosztás, akkor létrehozhatja az **Előre jelzett beosztások költségvetési terv szerint** jelentést. Másik lehetőség, hogy az előre jelzett beosztáson megnyitja a **Társított költségvetési tervek** adatterületet a tervek megtekintéséhez.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Az elszámolóárra való átalakítás előfeltételei"
-description: "Ez a témakör az elszámolóárra való átalakítás futtatása előtt végrehajtandó feladatokat ismerteti."
+title: Az elszámolóárra való átalakítás előfeltételei
+description: Ez a témakör az elszámolóárra való átalakítás futtatása előtt végrehajtandó feladatokat ismerteti.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351930"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Az elszámolóárra való átalakítás előfeltételei
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Mielőtt futtatná az elszámolóárra való átalakítást, tegye a következő
 
         Az aktív költséglebontás azt jelenti, hogy egy legyártott cikk költségét engedélyezi, az eredmény a költségcsoport-szegmentálásban, a cikk költségrekordjában lesz eltárolva. Ha nem ír be értéket a **Költséglebontás** mezőbe, ez azt jelenti, hogy a költségcsoport-szegmentálás nem lesz fenntartva az elszámolóáras cikkeknél. Vagyis a legyártott cikk elszámolóára egy költségcsoport-szegmentálás nélküli önálló összegként lesz kiszámítva és karbantartva, és a gyártott összetevők költség-hozzájárulásai egy önálló összegbe lesznek összegyűjtve.
     -   Az **Eltérések a szabványtól** mező segítségével válassza ki az összesítve vagy a költségcsoportonként lehetőséget. A költségcsoportonként opció lehetővé teszi, hogy költségcsoportonként azonosítsa a beszerzési árkülönbözeteket és termelési eltéréseket. Ez lehetővé teszi, hogy azonosíthassa a négyfajta termelési eltérést (adagméret, mennyiség, ár és helyettesítési eltérések). Az összesítve opciót kiválasztása azt jelenti, hogy nem lehet költségcsoport szerint szétválasztani a különbözeteket, és nem lehet azonosítani a négyféle termelési eltérést. Csak egy összesített gyártási különbözetet lesz látható. A szokásos különbözetekkel kapcsolatos szabályok a költséglebontás szabályaitól függetlenek. Vagyis megteheti hogy nem választ ki egy költséglebontási szabályt sem, és a költségcsoportonkénti különbözeteket pedig úgy választja ki, hogy a költségcsoportonkénti gyártási különbözetek mégis meg lesznek tartva.
-
 
 
 
