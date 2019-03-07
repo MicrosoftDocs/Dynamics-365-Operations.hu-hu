@@ -1,13 +1,13 @@
---- 
+---
 title: " POS-engedélycsoportok létrehozása"
-description: "Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot."
+description: Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, HcmJob
 audience: Application User
 ms.reviewer: josaw
@@ -17,42 +17,41 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1b30c9a1d7fe4598695423ba700ebc88a794a49c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354460"
 ---
-# <a name="create-pos-permission-groups"></a><span data-ttu-id="1ce9b-103"> POS-engedélycsoportok létrehozása</span><span class="sxs-lookup"><span data-stu-id="1ce9b-103">Create POS permission groups</span></span>
+# <a name="create-pos-permission-groups"></a><span data-ttu-id="57af0-103"> POS-engedélycsoportok létrehozása</span><span class="sxs-lookup"><span data-stu-id="57af0-103">Create POS permission groups</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1ce9b-104">Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="1ce9b-105">A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="1ce9b-106">A feladat a Kiskereskedelmi üzemeltetési vezető szerepkör számára készült.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-106">This task is intended for the Retail operations manager role.</span></span>
+<span data-ttu-id="57af0-104">Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot.</span><span class="sxs-lookup"><span data-stu-id="57af0-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="57af0-105">A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="57af0-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="57af0-106">A feladat a Kiskereskedelmi üzemeltetési vezető szerepkör számára készült.</span><span class="sxs-lookup"><span data-stu-id="57af0-106">This task is intended for the Retail operations manager role.</span></span>
 
-1. <span data-ttu-id="1ce9b-107">Nyissa meg a következőt: Engedélycsoportok.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-107">Go to Permission groups.</span></span>
-2. <span data-ttu-id="1ce9b-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-108">Click New.</span></span>
-3. <span data-ttu-id="1ce9b-109">Írjon be egy értéket a POS-engedélycsoport azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-109">In the POS permission group ID field, type a value.</span></span>
-4. <span data-ttu-id="1ce9b-110">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="1ce9b-111">Válassza ki az Igen lehetőséget a Blokkolóóra bejegyzéseinek megtekintése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-111">Select Yes in the View time clock entries field.</span></span>
-    * <span data-ttu-id="1ce9b-112">Most engedélyezheti vagy a letilthatja a POS-engedélycsoport különféle engedélyeit.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="1ce9b-113">Egyes engedélyekhez beállíthat egy értéket, amely meghatározza, hogy a pénztári felhasználó végrehajthatja-e az adott műveletet.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="1ce9b-114">Ez a feladat-útmutató beállít néhány, pénztárosoknak adható engedélyt.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
-6. <span data-ttu-id="1ce9b-115">Válassza ki az Igen lehetőséget a Rendelés létrehozásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-115">Select Yes in the Allow create order field.</span></span>
-7. <span data-ttu-id="1ce9b-116">Válassza ki az Igen lehetőséget a Rendelés szerkesztésének engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-116">Select Yes in the Allow edit order field.</span></span>
-8. <span data-ttu-id="1ce9b-117">Válassza ki az Igen lehetőséget a Rendelés beolvasásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-117">Select Yes in the Allow retrieve order field.</span></span>
-9. <span data-ttu-id="1ce9b-118">Válassza ki az Igen lehetőséget a Jelszómódosítás engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-118">Select Yes in the Allow password change field.</span></span>
-10. <span data-ttu-id="1ce9b-119">Válassza ki az Igen lehetőséget a Számlálás nélküli zárás engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-119">Select Yes in the Allow blind close field.</span></span>
-11. <span data-ttu-id="1ce9b-120">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-120">Click Save.</span></span>
-    * <span data-ttu-id="1ce9b-121">A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
-12. <span data-ttu-id="1ce9b-122">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-122">Close the page.</span></span>
-13. <span data-ttu-id="1ce9b-123">Nyissa meg a következőt: Feladatok.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-123">Go to Jobs.</span></span>
-    * <span data-ttu-id="1ce9b-124">A következőkben hozzárendelünk egy POS-engedélycsoportot egy Feladathoz.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-124">Next we will assign the POS permission group to a Job.</span></span>  
-14. <span data-ttu-id="1ce9b-125">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-125">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="1ce9b-126">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-126">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="1ce9b-127">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-127">Click Edit.</span></span>
-17. <span data-ttu-id="1ce9b-128">Bontsa ki a Munkaköri besorolás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-128">Expand the Job classification section.</span></span>
-18. <span data-ttu-id="1ce9b-129">A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-129">In the POS permission group field, enter or select a value.</span></span>
-    * <span data-ttu-id="1ce9b-130">Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a POS-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók POS-engedélyeit a Pozíció szintjén felülbírálták.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
-19. <span data-ttu-id="1ce9b-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-131">Click Save.</span></span>
-    * <span data-ttu-id="1ce9b-132">A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.</span><span class="sxs-lookup"><span data-stu-id="1ce9b-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
-
+1. <span data-ttu-id="57af0-107">Nyissa meg a következőt: Engedélycsoportok.</span><span class="sxs-lookup"><span data-stu-id="57af0-107">Go to Permission groups.</span></span>
+2. <span data-ttu-id="57af0-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="57af0-108">Click New.</span></span>
+3. <span data-ttu-id="57af0-109">Írjon be egy értéket a POS-engedélycsoport azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="57af0-109">In the POS permission group ID field, type a value.</span></span>
+4. <span data-ttu-id="57af0-110">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="57af0-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="57af0-111">Válassza ki az Igen lehetőséget a Blokkolóóra bejegyzéseinek megtekintése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-111">Select Yes in the View time clock entries field.</span></span>
+    * <span data-ttu-id="57af0-112">Most engedélyezheti vagy a letilthatja a POS-engedélycsoport különféle engedélyeit.</span><span class="sxs-lookup"><span data-stu-id="57af0-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="57af0-113">Egyes engedélyekhez beállíthat egy értéket, amely meghatározza, hogy a pénztári felhasználó végrehajthatja-e az adott műveletet.</span><span class="sxs-lookup"><span data-stu-id="57af0-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="57af0-114">Ez a feladat-útmutató beállít néhány, pénztárosoknak adható engedélyt.</span><span class="sxs-lookup"><span data-stu-id="57af0-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
+6. <span data-ttu-id="57af0-115">Válassza ki az Igen lehetőséget a Rendelés létrehozásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-115">Select Yes in the Allow create order field.</span></span>
+7. <span data-ttu-id="57af0-116">Válassza ki az Igen lehetőséget a Rendelés szerkesztésének engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-116">Select Yes in the Allow edit order field.</span></span>
+8. <span data-ttu-id="57af0-117">Válassza ki az Igen lehetőséget a Rendelés beolvasásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-117">Select Yes in the Allow retrieve order field.</span></span>
+9. <span data-ttu-id="57af0-118">Válassza ki az Igen lehetőséget a Jelszómódosítás engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-118">Select Yes in the Allow password change field.</span></span>
+10. <span data-ttu-id="57af0-119">Válassza ki az Igen lehetőséget a Számlálás nélküli zárás engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="57af0-119">Select Yes in the Allow blind close field.</span></span>
+11. <span data-ttu-id="57af0-120">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="57af0-120">Click Save.</span></span>
+    * <span data-ttu-id="57af0-121">A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.</span><span class="sxs-lookup"><span data-stu-id="57af0-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+12. <span data-ttu-id="57af0-122">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="57af0-122">Close the page.</span></span>
+13. <span data-ttu-id="57af0-123">Nyissa meg a következőt: Feladatok.</span><span class="sxs-lookup"><span data-stu-id="57af0-123">Go to Jobs.</span></span>
+    * <span data-ttu-id="57af0-124">A következőkben hozzárendelünk egy POS-engedélycsoportot egy Feladathoz.</span><span class="sxs-lookup"><span data-stu-id="57af0-124">Next we will assign the POS permission group to a Job.</span></span>  
+14. <span data-ttu-id="57af0-125">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="57af0-125">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="57af0-126">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="57af0-126">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="57af0-127">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="57af0-127">Click Edit.</span></span>
+17. <span data-ttu-id="57af0-128">Bontsa ki a Munkaköri besorolás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="57af0-128">Expand the Job classification section.</span></span>
+18. <span data-ttu-id="57af0-129">A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="57af0-129">In the POS permission group field, enter or select a value.</span></span>
+    * <span data-ttu-id="57af0-130">Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a POS-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók POS-engedélyeit a Pozíció szintjén felülbírálták.</span><span class="sxs-lookup"><span data-stu-id="57af0-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
+19. <span data-ttu-id="57af0-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="57af0-131">Click Save.</span></span>
+    * <span data-ttu-id="57af0-132">A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.</span><span class="sxs-lookup"><span data-stu-id="57af0-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
 

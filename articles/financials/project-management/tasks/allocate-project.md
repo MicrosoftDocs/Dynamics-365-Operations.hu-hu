@@ -1,13 +1,13 @@
---- 
-title: "Projektköltségvetés vagy költségvetés-verzió felosztása időszakok között"
-description: "Ez az eljárás bemutatja, hogyan lehet projekt-költségvetési összegek időszakok között felosztani."
+---
+title: Projektköltségvetés vagy költségvetés-verzió felosztása időszakok között
+description: Ez az eljárás bemutatja, hogyan lehet projekt-költségvetési összegek időszakok között felosztani.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -16,32 +16,31 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: d001cd3d922fc4790a1e5288f432df13e90ce03c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344156"
 ---
-# <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="6855b-103">Projektköltségvetés vagy költségvetés-verzió felosztása időszakok között</span><span class="sxs-lookup"><span data-stu-id="6855b-103">Allocate a project budget or budget revision across periods</span></span>
+# <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="ec757-103">Projektköltségvetés vagy költségvetés-verzió felosztása időszakok között</span><span class="sxs-lookup"><span data-stu-id="ec757-103">Allocate a project budget or budget revision across periods</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6855b-104"> A projekt költségvetésének vagy a projekt költségvetés-verziójának megadása után, és jóváhagyásra való elküldése előtt, feloszthatja időszakok között az összegeket.</span><span class="sxs-lookup"><span data-stu-id="6855b-104">After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="6855b-105">Ha elutasítják a költségvetést vagy költségvetési-verziót, akkor az ismátelt benyújtás előtt is feloszthatja az összegeket.</span><span class="sxs-lookup"><span data-stu-id="6855b-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
+<span data-ttu-id="ec757-104"> A projekt költségvetésének vagy a projekt költségvetés-verziójának megadása után, és jóváhagyásra való elküldése előtt, feloszthatja időszakok között az összegeket.</span><span class="sxs-lookup"><span data-stu-id="ec757-104">After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="ec757-105">Ha elutasítják a költségvetést vagy költségvetési-verziót, akkor az ismátelt benyújtás előtt is feloszthatja az összegeket.</span><span class="sxs-lookup"><span data-stu-id="ec757-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
 
-<span data-ttu-id="6855b-106">A költségvetés vagy a költségvetés-verzió felosztása után felülvizsgálhatja az összegeket, és módosíthatja azokat, mielőtt beküldi a költségvetést vagy a költségvetés-verziót a jóváhagyási munkafolyamatba.</span><span class="sxs-lookup"><span data-stu-id="6855b-106">After a budget or budget revision has been allocated, you can review the allocation amounts and make adjustments to them before you submit the budget or budget revision to the approval workflow.</span></span> 
+<span data-ttu-id="ec757-106">A költségvetés vagy a költségvetés-verzió felosztása után felülvizsgálhatja az összegeket, és módosíthatja azokat, mielőtt beküldi a költségvetést vagy a költségvetés-verziót a jóváhagyási munkafolyamatba.</span><span class="sxs-lookup"><span data-stu-id="ec757-106">After a budget or budget revision has been allocated, you can review the allocation amounts and make adjustments to them before you submit the budget or budget revision to the approval workflow.</span></span> 
 
-1. <span data-ttu-id="6855b-107">Kattintson a következő csomópontra: Projektvezetés és könyvelés > Közös > Projektek > Minden projekt.</span><span class="sxs-lookup"><span data-stu-id="6855b-107">Click Project management and accounting > Common > Projects > All projects.</span></span> 
-2. <span data-ttu-id="6855b-108">Válassza ki vagy nyissa meg azt a projektet, amelyhez fel szeretné osztani a költségvetést vagy a költségvetés-verziót.</span><span class="sxs-lookup"><span data-stu-id="6855b-108">Select or open the project for which you want to allocate the budget or budget revision.</span></span> 
-3. <span data-ttu-id="6855b-109">A műveleti ablaktábla Terv lapján a Költségvetés csoportban kattintson a Projektköltségvetés elemre.</span><span class="sxs-lookup"><span data-stu-id="6855b-109">On the Action Pane, on the Plan tab, in the Budget group, click Project budget.</span></span> 
-4. <span data-ttu-id="6855b-110">A műveleti ablaktábla Költségvetés lapján, a Projektköltségvetés képernyőn, kattintson a Költségvetés felosztása elemre.</span><span class="sxs-lookup"><span data-stu-id="6855b-110">In the Project budget form, on the Action Pane, on the Budget tab, click Allocate budget.</span></span> 
-5. <span data-ttu-id="6855b-111">A Költségvetés felosztása képernyőn a Felosztás innen és a Felosztás ide mezőkben adja meg a költségvetés felosztásában szerepeltetni kívánt első és utolsó dátumot.</span><span class="sxs-lookup"><span data-stu-id="6855b-111">In the Allocate budget form, in the Allocate from and Allocate to fields, enter the first and last dates that you want to include in the budget allocation.</span></span> <span data-ttu-id="6855b-112">Ezek rendszerint a teljes projekt kezdési és befejezési dátumai, vagy az aktuális év első és utolsó dátuma.</span><span class="sxs-lookup"><span data-stu-id="6855b-112">These are usually either the first and last dates of the whole project, or the first and last dates of the current year.</span></span>  
-   > <span data-ttu-id="6855b-113">[MEGJEGYZÉS!] Egy tranzakciótípus felosztása és az összegek jóváhagyása után a felosztási időszakot már nem lehet módosítani a jövőbeli költségvetés-verziókban.</span><span class="sxs-lookup"><span data-stu-id="6855b-113">[NOTE!] After a transaction type has been allocated and the amounts approved, the allocation time period cannot be changed in future budget revisions.</span></span> 
-6. <span data-ttu-id="6855b-114">Az Időszakonként mezőben válassza ki, hogy a projekt-költségvetést évek, negyedévek vagy az éven belüli vállalati pénzügyi időszakok alapján szeretné lefoglalni.</span><span class="sxs-lookup"><span data-stu-id="6855b-114">In the By time period field, select whether you want to allocate the project budget by year, quarter, or company fiscal periods within the year.</span></span>
-7. <span data-ttu-id="6855b-115">Válassza ki a felosztandó tranzakciótípusokat, majd kattintson a Felosztás elemre.</span><span class="sxs-lookup"><span data-stu-id="6855b-115">Select the transaction types to allocate, and then click Allocate.</span></span> 
-8. <span data-ttu-id="6855b-116">A Projektköltségvetés felosztása képernyőn vagy a Projekt-költségvetési verzió felosztása képernyőre tekintse át és frissítse a felosztott összegeket.</span><span class="sxs-lookup"><span data-stu-id="6855b-116">In the Project budget allocation form or the Project budget revision allocation form, review or update the amounts that are allocated.</span></span> 
-9. <span data-ttu-id="6855b-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="6855b-117">Close the page.</span></span>
-10. <span data-ttu-id="6855b-118">Ha megfelelőnek tartja a felosztást, kattintson a Küldés elemre a Projekt költségvetése oldalon a költségvetés vagy a költségvetés-verzió jóváhagyási munkafolyamatba küldéséhez.</span><span class="sxs-lookup"><span data-stu-id="6855b-118">When the allocation is the way that you want it, click Submit in the Project budget page to send the budget or budget revisions to the approval workflow.</span></span>  
-
+1. <span data-ttu-id="ec757-107">Kattintson a következő csomópontra: Projektvezetés és könyvelés > Közös > Projektek > Minden projekt.</span><span class="sxs-lookup"><span data-stu-id="ec757-107">Click Project management and accounting > Common > Projects > All projects.</span></span> 
+2. <span data-ttu-id="ec757-108">Válassza ki vagy nyissa meg azt a projektet, amelyhez fel szeretné osztani a költségvetést vagy a költségvetés-verziót.</span><span class="sxs-lookup"><span data-stu-id="ec757-108">Select or open the project for which you want to allocate the budget or budget revision.</span></span> 
+3. <span data-ttu-id="ec757-109">A műveleti ablaktábla Terv lapján a Költségvetés csoportban kattintson a Projektköltségvetés elemre.</span><span class="sxs-lookup"><span data-stu-id="ec757-109">On the Action Pane, on the Plan tab, in the Budget group, click Project budget.</span></span> 
+4. <span data-ttu-id="ec757-110">A műveleti ablaktábla Költségvetés lapján, a Projektköltségvetés képernyőn, kattintson a Költségvetés felosztása elemre.</span><span class="sxs-lookup"><span data-stu-id="ec757-110">In the Project budget form, on the Action Pane, on the Budget tab, click Allocate budget.</span></span> 
+5. <span data-ttu-id="ec757-111">A Költségvetés felosztása képernyőn a Felosztás innen és a Felosztás ide mezőkben adja meg a költségvetés felosztásában szerepeltetni kívánt első és utolsó dátumot.</span><span class="sxs-lookup"><span data-stu-id="ec757-111">In the Allocate budget form, in the Allocate from and Allocate to fields, enter the first and last dates that you want to include in the budget allocation.</span></span> <span data-ttu-id="ec757-112">Ezek rendszerint a teljes projekt kezdési és befejezési dátumai, vagy az aktuális év első és utolsó dátuma.</span><span class="sxs-lookup"><span data-stu-id="ec757-112">These are usually either the first and last dates of the whole project, or the first and last dates of the current year.</span></span>  
+   > <span data-ttu-id="ec757-113">[MEGJEGYZÉS!] Egy tranzakciótípus felosztása és az összegek jóváhagyása után a felosztási időszakot már nem lehet módosítani a jövőbeli költségvetés-verziókban.</span><span class="sxs-lookup"><span data-stu-id="ec757-113">[NOTE!] After a transaction type has been allocated and the amounts approved, the allocation time period cannot be changed in future budget revisions.</span></span> 
+6. <span data-ttu-id="ec757-114">Az Időszakonként mezőben válassza ki, hogy a projekt-költségvetést évek, negyedévek vagy az éven belüli vállalati pénzügyi időszakok alapján szeretné lefoglalni.</span><span class="sxs-lookup"><span data-stu-id="ec757-114">In the By time period field, select whether you want to allocate the project budget by year, quarter, or company fiscal periods within the year.</span></span>
+7. <span data-ttu-id="ec757-115">Válassza ki a felosztandó tranzakciótípusokat, majd kattintson a Felosztás elemre.</span><span class="sxs-lookup"><span data-stu-id="ec757-115">Select the transaction types to allocate, and then click Allocate.</span></span> 
+8. <span data-ttu-id="ec757-116">A Projektköltségvetés felosztása képernyőn vagy a Projekt-költségvetési verzió felosztása képernyőre tekintse át és frissítse a felosztott összegeket.</span><span class="sxs-lookup"><span data-stu-id="ec757-116">In the Project budget allocation form or the Project budget revision allocation form, review or update the amounts that are allocated.</span></span> 
+9. <span data-ttu-id="ec757-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ec757-117">Close the page.</span></span>
+10. <span data-ttu-id="ec757-118">Ha megfelelőnek tartja a felosztást, kattintson a Küldés elemre a Projekt költségvetése oldalon a költségvetés vagy a költségvetés-verzió jóváhagyási munkafolyamatba küldéséhez.</span><span class="sxs-lookup"><span data-stu-id="ec757-118">When the allocation is the way that you want it, click Submit in the Project budget page to send the budget or budget revisions to the approval workflow.</span></span>  
 
 

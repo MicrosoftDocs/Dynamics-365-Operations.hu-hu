@@ -1,98 +1,96 @@
 ---
-title: "Szolgáltatás intervallumai"
-description: "A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén."
+title: Szolgáltatás intervallumai
+description: A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 10078cbd02209126e9655b823fcf844b692a4794
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352942"
 ---
-
-# <a name="service-intervals"></a><span data-ttu-id="93fa5-103">Szolgáltatás intervallumai</span><span class="sxs-lookup"><span data-stu-id="93fa5-103">Service intervals</span></span>
+# <a name="service-intervals"></a><span data-ttu-id="982bf-103">Szolgáltatás intervallumai</span><span class="sxs-lookup"><span data-stu-id="982bf-103">Service intervals</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="93fa5-104">A szolgáltatási szerződés intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.</span><span class="sxs-lookup"><span data-stu-id="93fa5-104">The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.</span></span>
+<span data-ttu-id="982bf-104">A szolgáltatási szerződés intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.</span><span class="sxs-lookup"><span data-stu-id="982bf-104">The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.</span></span>
 
-<span data-ttu-id="93fa5-105">Ha automatikusan hoz létre szervizrendeléseket, akkor a rendelés sorai a szerződéssor kezdő dátumától kezdve a szolgáltatási szerződés sorára meghatározott időközönként jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="93fa5-105">When you create service orders automatically, service order lines are created according to the interval that you have specified for the service agreement line from the start date of the agreement line.</span></span>
+<span data-ttu-id="982bf-105">Ha automatikusan hoz létre szervizrendeléseket, akkor a rendelés sorai a szerződéssor kezdő dátumától kezdve a szolgáltatási szerződés sorára meghatározott időközönként jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="982bf-105">When you create service orders automatically, service order lines are created according to the interval that you have specified for the service agreement line from the start date of the agreement line.</span></span>
 
-<span data-ttu-id="93fa5-106">Ha az **Intervallum** mező üres a **Szolgáltatási szerződések** lap valamelyik szerződéssorában, akkor az adott sor egyszeri eseményt jelöl, amely nem vesz részt a szervizrendelések ismételt létrehozásában.</span><span class="sxs-lookup"><span data-stu-id="93fa5-106">If the **Interval** field of a service agreement line in the **Service agreements** page is blank, the line is a one-time event, and it is not used to create service orders repeatedly.</span></span>
+<span data-ttu-id="982bf-106">Ha az **Intervallum** mező üres a **Szolgáltatási szerződések** lap valamelyik szerződéssorában, akkor az adott sor egyszeri eseményt jelöl, amely nem vesz részt a szervizrendelések ismételt létrehozásában.</span><span class="sxs-lookup"><span data-stu-id="982bf-106">If the **Interval** field of a service agreement line in the **Service agreements** page is blank, the line is a one-time event, and it is not used to create service orders repeatedly.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93fa5-107">Példa</span><span class="sxs-lookup"><span data-stu-id="93fa5-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="982bf-107">Példa</span><span class="sxs-lookup"><span data-stu-id="982bf-107">Example</span></span>
 
-<span data-ttu-id="93fa5-108">Ez a példa azt mutatja be, hogy miként befolyásolja a szerviz intervalluma a szolgáltatási szerződés sorait és a szervizrendeléssorokat egy szervizrendelésnél.</span><span class="sxs-lookup"><span data-stu-id="93fa5-108">This example illustrates how a service interval will affect service agreement lines and service order lines on a service order.</span></span>
+<span data-ttu-id="982bf-108">Ez a példa azt mutatja be, hogy miként befolyásolja a szerviz intervalluma a szolgáltatási szerződés sorait és a szervizrendeléssorokat egy szervizrendelésnél.</span><span class="sxs-lookup"><span data-stu-id="982bf-108">This example illustrates how a service interval will affect service agreement lines and service order lines on a service order.</span></span>
 
-### <a name="create-a-service-agreement"></a><span data-ttu-id="93fa5-109">Szolgáltatási szerződés létrehozása</span><span class="sxs-lookup"><span data-stu-id="93fa5-109">Create a service agreement</span></span>
+### <a name="create-a-service-agreement"></a><span data-ttu-id="982bf-109">Szolgáltatási szerződés létrehozása</span><span class="sxs-lookup"><span data-stu-id="982bf-109">Create a service agreement</span></span>
 
-<span data-ttu-id="93fa5-110">Először hozzon létre egy szolgáltatási szerződést, és állítsa a **Szervizrendelések kombinálása** beállítást **Szolgáltatási szerződés szerint** értékre.</span><span class="sxs-lookup"><span data-stu-id="93fa5-110">First, you create a service agreement and set the **Combine service orders** option to **By service agreement**.</span></span>
+<span data-ttu-id="982bf-110">Először hozzon létre egy szolgáltatási szerződést, és állítsa a **Szervizrendelések kombinálása** beállítást **Szolgáltatási szerződés szerint** értékre.</span><span class="sxs-lookup"><span data-stu-id="982bf-110">First, you create a service agreement and set the **Combine service orders** option to **By service agreement**.</span></span>
 
-1. <span data-ttu-id="93fa5-111">Kattintson a **Szolgáltatási szerződések** pontra</span><span class="sxs-lookup"><span data-stu-id="93fa5-111">Click **Service agreements**</span></span>
-2. <span data-ttu-id="93fa5-112">A **Műveleti ablaktáblán**, a **Szolgáltatási szerződés** lapon, az **Új** csoportban, kattintson a **Szolgáltatási szerződés** lehetőségre egy új szolgáltatási szerződés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="93fa5-112">On the **Action Pane**, on the **Service agreement** tab, in the **New** group, click **Service agreement** to create a new service agreement.</span></span>
-3. <span data-ttu-id="93fa5-113">Adjon meg egy leírást, válasszon ki egy projektet a **Projektazonosító** mezőben, és adjon meg egy dátumot a **Kezdő dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="93fa5-113">Enter a description, select a project in the **Project ID** field, and enter a date in the **Start date** field.</span></span>
-4. <span data-ttu-id="93fa5-114">A **Szervizrendelések kombinálása** mezőben válassza ki a **Szolgáltatási szerződés szerint** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="93fa5-114">In the **Combine service orders** field, select **By service agreement**.</span></span>
+1. <span data-ttu-id="982bf-111">Kattintson a **Szolgáltatási szerződések** pontra</span><span class="sxs-lookup"><span data-stu-id="982bf-111">Click **Service agreements**</span></span>
+2. <span data-ttu-id="982bf-112">A **Műveleti ablaktáblán**, a **Szolgáltatási szerződés** lapon, az **Új** csoportban, kattintson a **Szolgáltatási szerződés** lehetőségre egy új szolgáltatási szerződés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="982bf-112">On the **Action Pane**, on the **Service agreement** tab, in the **New** group, click **Service agreement** to create a new service agreement.</span></span>
+3. <span data-ttu-id="982bf-113">Adjon meg egy leírást, válasszon ki egy projektet a **Projektazonosító** mezőben, és adjon meg egy dátumot a **Kezdő dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="982bf-113">Enter a description, select a project in the **Project ID** field, and enter a date in the **Start date** field.</span></span>
+4. <span data-ttu-id="982bf-114">A **Szervizrendelések kombinálása** mezőben válassza ki a **Szolgáltatási szerződés szerint** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="982bf-114">In the **Combine service orders** field, select **By service agreement**.</span></span>
 
-<span data-ttu-id="93fa5-115">Ezzel létrehozta a következő szolgáltatási szerződést:</span><span class="sxs-lookup"><span data-stu-id="93fa5-115">You have now created the following service agreement:</span></span>
+<span data-ttu-id="982bf-115">Ezzel létrehozta a következő szolgáltatási szerződést:</span><span class="sxs-lookup"><span data-stu-id="982bf-115">You have now created the following service agreement:</span></span>
 
-| <span data-ttu-id="93fa5-116">Project</span><span class="sxs-lookup"><span data-stu-id="93fa5-116">Project</span></span>      | <span data-ttu-id="93fa5-117">Kezdő dátum</span><span class="sxs-lookup"><span data-stu-id="93fa5-117">Start date</span></span>                                                                         |
+| <span data-ttu-id="982bf-116">Project</span><span class="sxs-lookup"><span data-stu-id="982bf-116">Project</span></span>      | <span data-ttu-id="982bf-117">Kezdő dátum</span><span class="sxs-lookup"><span data-stu-id="982bf-117">Start date</span></span>                                                                         |
 |--------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="93fa5-118">Saját projekt</span><span class="sxs-lookup"><span data-stu-id="93fa5-118">Your project</span></span> | <span data-ttu-id="93fa5-119">A projektnél megadott dátum.</span><span class="sxs-lookup"><span data-stu-id="93fa5-119">The date you specified for the project.</span></span> <span data-ttu-id="93fa5-120">Ebben a példában az aktuális dátumot használjuk.</span><span class="sxs-lookup"><span data-stu-id="93fa5-120">In this example, the current date is used.</span></span> |
+| <span data-ttu-id="982bf-118">Saját projekt</span><span class="sxs-lookup"><span data-stu-id="982bf-118">Your project</span></span> | <span data-ttu-id="982bf-119">A projektnél megadott dátum.</span><span class="sxs-lookup"><span data-stu-id="982bf-119">The date you specified for the project.</span></span> <span data-ttu-id="982bf-120">Ebben a példában az aktuális dátumot használjuk.</span><span class="sxs-lookup"><span data-stu-id="982bf-120">In this example, the current date is used.</span></span> |
 
-### <a name="create-a-service-agreement-line"></a><span data-ttu-id="93fa5-121">Szolgáltatásiszerződés-sor létrehozása</span><span class="sxs-lookup"><span data-stu-id="93fa5-121">Create a service agreement line</span></span>
+### <a name="create-a-service-agreement-line"></a><span data-ttu-id="982bf-121">Szolgáltatásiszerződés-sor létrehozása</span><span class="sxs-lookup"><span data-stu-id="982bf-121">Create a service agreement line</span></span>
 
-<span data-ttu-id="93fa5-122">A következő lépésben hozzon létre egy szolgáltatásiszerződés-sort, amelynek tranzakciótípusa **Óra**.</span><span class="sxs-lookup"><span data-stu-id="93fa5-122">Next, you create a service agreement line that has the transaction type **Hour**.</span></span>
+<span data-ttu-id="982bf-122">A következő lépésben hozzon létre egy szolgáltatásiszerződés-sort, amelynek tranzakciótípusa **Óra**.</span><span class="sxs-lookup"><span data-stu-id="982bf-122">Next, you create a service agreement line that has the transaction type **Hour**.</span></span>
 
-<span data-ttu-id="93fa5-123">A példa jelen részének végrehajtásához létre kell hoznia egy 10 napos szolgáltatás-intervallumot a **Szolgáltatás-intervallum** lapon.</span><span class="sxs-lookup"><span data-stu-id="93fa5-123">To complete this part of the example, you must create a service interval of 10 days in the **Service intervals** page.</span></span> 
+<span data-ttu-id="982bf-123">A példa jelen részének végrehajtásához létre kell hoznia egy 10 napos szolgáltatás-intervallumot a **Szolgáltatás-intervallum** lapon.</span><span class="sxs-lookup"><span data-stu-id="982bf-123">To complete this part of the example, you must create a service interval of 10 days in the **Service intervals** page.</span></span> 
 
-1. <span data-ttu-id="93fa5-124">Válassza ki az imént létrehozott szolgáltatási szerződést.</span><span class="sxs-lookup"><span data-stu-id="93fa5-124">Select the service agreement that you just created.</span></span> 
-2. <span data-ttu-id="93fa5-125">A **Sorok** gyorslapon kattintson a **Hozzáadás** gombra egy új sor létrehozásához a **Szolgáltatási szerződések** lapon.</span><span class="sxs-lookup"><span data-stu-id="93fa5-125">On the **Lines** FastTab, click the **Add** button to create a new line in the lower pane of the **Service agreements** page.</span></span>
-3. <span data-ttu-id="93fa5-126">Válassza ki az **Óra** lehetőséget a **Tranzakció típusa** mezőben.</span><span class="sxs-lookup"><span data-stu-id="93fa5-126">In the **Transaction type** field, select **Hour**.</span></span>
-4. <span data-ttu-id="93fa5-127">A **Dolgozó** mezőben válassza ki azt a dolgozót, aki elvégzi a szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="93fa5-127">In the **Worker** field, select the worker who will deliver the service.</span></span>
-5. <span data-ttu-id="93fa5-128">A **Szolgáltatás intervalluma** mezőben válassza ki a 10 napos intervallumot.</span><span class="sxs-lookup"><span data-stu-id="93fa5-128">In the **Service interval** field, select the 10 days interval.</span></span>
+1. <span data-ttu-id="982bf-124">Válassza ki az imént létrehozott szolgáltatási szerződést.</span><span class="sxs-lookup"><span data-stu-id="982bf-124">Select the service agreement that you just created.</span></span> 
+2. <span data-ttu-id="982bf-125">A **Sorok** gyorslapon kattintson a **Hozzáadás** gombra egy új sor létrehozásához a **Szolgáltatási szerződések** lapon.</span><span class="sxs-lookup"><span data-stu-id="982bf-125">On the **Lines** FastTab, click the **Add** button to create a new line in the lower pane of the **Service agreements** page.</span></span>
+3. <span data-ttu-id="982bf-126">Válassza ki az **Óra** lehetőséget a **Tranzakció típusa** mezőben.</span><span class="sxs-lookup"><span data-stu-id="982bf-126">In the **Transaction type** field, select **Hour**.</span></span>
+4. <span data-ttu-id="982bf-127">A **Dolgozó** mezőben válassza ki azt a dolgozót, aki elvégzi a szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="982bf-127">In the **Worker** field, select the worker who will deliver the service.</span></span>
+5. <span data-ttu-id="982bf-128">A **Szolgáltatás intervalluma** mezőben válassza ki a 10 napos intervallumot.</span><span class="sxs-lookup"><span data-stu-id="982bf-128">In the **Service interval** field, select the 10 days interval.</span></span>
 
-<span data-ttu-id="93fa5-129">Ezzel létrehozta a szolgáltatásiszerződés-sort a következő adatokkal:</span><span class="sxs-lookup"><span data-stu-id="93fa5-129">You have now created a service agreement line with the following information:</span></span>
+<span data-ttu-id="982bf-129">Ezzel létrehozta a szolgáltatásiszerződés-sort a következő adatokkal:</span><span class="sxs-lookup"><span data-stu-id="982bf-129">You have now created a service agreement line with the following information:</span></span>
 
-| <span data-ttu-id="93fa5-130">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="93fa5-130">Transaction type</span></span> | <span data-ttu-id="93fa5-131">Kezdő dátum</span><span class="sxs-lookup"><span data-stu-id="93fa5-131">Start date</span></span>                               | <span data-ttu-id="93fa5-132">Szolgáltatás intervalluma</span><span class="sxs-lookup"><span data-stu-id="93fa5-132">Service interval</span></span> |
+| <span data-ttu-id="982bf-130">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="982bf-130">Transaction type</span></span> | <span data-ttu-id="982bf-131">Kezdő dátum</span><span class="sxs-lookup"><span data-stu-id="982bf-131">Start date</span></span>                               | <span data-ttu-id="982bf-132">Szolgáltatás intervalluma</span><span class="sxs-lookup"><span data-stu-id="982bf-132">Service interval</span></span> |
 |------------------|------------------------------------------|------------------|
-| <span data-ttu-id="93fa5-133">Óra</span><span class="sxs-lookup"><span data-stu-id="93fa5-133">Hour</span></span>             | <span data-ttu-id="93fa5-134">Az aktuális dátum.</span><span class="sxs-lookup"><span data-stu-id="93fa5-134">The current date.</span></span>                        | <span data-ttu-id="93fa5-135">10 naponta</span><span class="sxs-lookup"><span data-stu-id="93fa5-135">Every 10 days</span></span>    |
-| <span data-ttu-id="93fa5-136">Dolgozó</span><span class="sxs-lookup"><span data-stu-id="93fa5-136">Worker</span></span>           | <span data-ttu-id="93fa5-137">A szolgáltatást végző dolgozó.</span><span class="sxs-lookup"><span data-stu-id="93fa5-137">The worker who will perform the service.</span></span> |                  |
+| <span data-ttu-id="982bf-133">Óra</span><span class="sxs-lookup"><span data-stu-id="982bf-133">Hour</span></span>             | <span data-ttu-id="982bf-134">Az aktuális dátum.</span><span class="sxs-lookup"><span data-stu-id="982bf-134">The current date.</span></span>                        | <span data-ttu-id="982bf-135">10 naponta</span><span class="sxs-lookup"><span data-stu-id="982bf-135">Every 10 days</span></span>    |
+| <span data-ttu-id="982bf-136">Dolgozó</span><span class="sxs-lookup"><span data-stu-id="982bf-136">Worker</span></span>           | <span data-ttu-id="982bf-137">A szolgáltatást végző dolgozó.</span><span class="sxs-lookup"><span data-stu-id="982bf-137">The worker who will perform the service.</span></span> |                  |
 
-<span data-ttu-id="93fa5-138">Nincs megadott időszak a sornál.</span><span class="sxs-lookup"><span data-stu-id="93fa5-138">There is no time window specified for the line.</span></span> 
+<span data-ttu-id="982bf-138">Nincs megadott időszak a sornál.</span><span class="sxs-lookup"><span data-stu-id="982bf-138">There is no time window specified for the line.</span></span> 
 
-### <a name="create-planned-service-orders"></a><span data-ttu-id="93fa5-139">Tervezett szervizrendelések létrehozása</span><span class="sxs-lookup"><span data-stu-id="93fa5-139">Create planned service orders</span></span>
+### <a name="create-planned-service-orders"></a><span data-ttu-id="982bf-139">Tervezett szervizrendelések létrehozása</span><span class="sxs-lookup"><span data-stu-id="982bf-139">Create planned service orders</span></span>
 
-<span data-ttu-id="93fa5-140">Ekkor létrehozhatja a tervezett szervizrendeléseket és azok sorait a következő hónapra.</span><span class="sxs-lookup"><span data-stu-id="93fa5-140">You can now create planned service orders and service order lines for the coming month.</span></span>
+<span data-ttu-id="982bf-140">Ekkor létrehozhatja a tervezett szervizrendeléseket és azok sorait a következő hónapra.</span><span class="sxs-lookup"><span data-stu-id="982bf-140">You can now create planned service orders and service order lines for the coming month.</span></span>
 
-1. <span data-ttu-id="93fa5-141">A **Szolgáltatási szerződések** lap **műveleti ablaktábláján**, a **Szállítás** lapon kattintson a **Tervezett szervizrendelések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="93fa5-141">In the **Service agreements** page, on the **Action Pane**, on the **Deliver** tab, click **Planned service orders**.</span></span>
-2. <span data-ttu-id="93fa5-142">A **Szervizrendelések létrehozása** lapon adja meg az aktuális dátumot a **Kezdő dátum** mezőben, illetve az aktuális dátum után egy hónappal lévő dátumot a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="93fa5-142">In the **Create service orders** page, enter the current date in the **From date** field and a date that is one month from the current date in the **To date** field.</span></span>
-3. <span data-ttu-id="93fa5-143">Állítsa az **Óra** csúszkát **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="93fa5-143">Set the **Hour** slider to **Yes**.</span></span> 
-4. <span data-ttu-id="93fa5-144">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="93fa5-144">Click **OK**.</span></span>
+1. <span data-ttu-id="982bf-141">A **Szolgáltatási szerződések** lap **műveleti ablaktábláján**, a **Szállítás** lapon kattintson a **Tervezett szervizrendelések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="982bf-141">In the **Service agreements** page, on the **Action Pane**, on the **Deliver** tab, click **Planned service orders**.</span></span>
+2. <span data-ttu-id="982bf-142">A **Szervizrendelések létrehozása** lapon adja meg az aktuális dátumot a **Kezdő dátum** mezőben, illetve az aktuális dátum után egy hónappal lévő dátumot a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="982bf-142">In the **Create service orders** page, enter the current date in the **From date** field and a date that is one month from the current date in the **To date** field.</span></span>
+3. <span data-ttu-id="982bf-143">Állítsa az **Óra** csúszkát **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="982bf-143">Set the **Hour** slider to **Yes**.</span></span> 
+4. <span data-ttu-id="982bf-144">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="982bf-144">Click **OK**.</span></span>
 
-<span data-ttu-id="93fa5-145">Mivel a szervizrendelésen nincs csoportosítás (amit a **Szolgáltatási szerződés szerint** lehetőség jelez a **Szervizrendelések kombinálása** beállításban), ezért szervizrendelésenként egy szervizrendeléssor jön létre.</span><span class="sxs-lookup"><span data-stu-id="93fa5-145">Because there is no grouping on the service order (defined by the **By service agreement** option in the **Combine service orders** field), one service order line is created per service order.</span></span>
+<span data-ttu-id="982bf-145">Mivel a szervizrendelésen nincs csoportosítás (amit a **Szolgáltatási szerződés szerint** lehetőség jelez a **Szervizrendelések kombinálása** beállításban), ezért szervizrendelésenként egy szervizrendeléssor jön létre.</span><span class="sxs-lookup"><span data-stu-id="982bf-145">Because there is no grouping on the service order (defined by the **By service agreement** option in the **Combine service orders** field), one service order line is created per service order.</span></span>
 
-### <a name="service-orders-created"></a><span data-ttu-id="93fa5-146">A létrehozott szervizrendelések</span><span class="sxs-lookup"><span data-stu-id="93fa5-146">Service orders created</span></span>
+### <a name="service-orders-created"></a><span data-ttu-id="982bf-146">A létrehozott szervizrendelések</span><span class="sxs-lookup"><span data-stu-id="982bf-146">Service orders created</span></span>
 
-<span data-ttu-id="93fa5-147">Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrendelések létrehozása** párbeszédpanelen beállított időkeretbe esik.</span><span class="sxs-lookup"><span data-stu-id="93fa5-147">Three service order lines have been created within the time frame that you specified in the **Create service orders** dialog box.</span></span> <span data-ttu-id="93fa5-148">A szervizrendeléseket a **Szolgáltatási szerződések** lapon tekintheti meg (**Műveleti ablaktábla** \> **Szállítás** lap \>**Megjelenítés** gomb).</span><span class="sxs-lookup"><span data-stu-id="93fa5-148">You can view the service order lines in the **Service agreements** page (**Action Pane** \> **Deliver** tab \>**View** button).</span></span>
+<span data-ttu-id="982bf-147">Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrendelések létrehozása** párbeszédpanelen beállított időkeretbe esik.</span><span class="sxs-lookup"><span data-stu-id="982bf-147">Three service order lines have been created within the time frame that you specified in the **Create service orders** dialog box.</span></span> <span data-ttu-id="982bf-148">A szervizrendeléseket a **Szolgáltatási szerződések** lapon tekintheti meg (**Műveleti ablaktábla** \> **Szállítás** lap \>**Megjelenítés** gomb).</span><span class="sxs-lookup"><span data-stu-id="982bf-148">You can view the service order lines in the **Service agreements** page (**Action Pane** \> **Deliver** tab \>**View** button).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="93fa5-149">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="93fa5-149">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="982bf-149">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="982bf-149">Related topics</span></span>
 
-[<span data-ttu-id="93fa5-150">Szolgáltatás intervallumainak beállítása</span><span class="sxs-lookup"><span data-stu-id="93fa5-150">Set up service intervals</span></span>](set-up-service-intervals.md)  
-
+[<span data-ttu-id="982bf-150">Szolgáltatás intervallumainak beállítása</span><span class="sxs-lookup"><span data-stu-id="982bf-150">Set up service intervals</span></span>](set-up-service-intervals.md)  
 

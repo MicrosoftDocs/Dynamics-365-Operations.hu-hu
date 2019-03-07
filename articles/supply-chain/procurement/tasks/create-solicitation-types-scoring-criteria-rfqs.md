@@ -1,13 +1,13 @@
---- 
-title: "Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez"
-description: "Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogyan társíthatja azt pontozási módszerrel."
+---
+title: Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez
+description: Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogyan társíthatja azt pontozási módszerrel.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: shylaw
@@ -16,40 +16,39 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 14fd7d0bfa17427883f97c5e0a72044016d4965e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344616"
 ---
-# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="ba5ec-103">Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez</span><span class="sxs-lookup"><span data-stu-id="ba5ec-103">Create solicitation types and scoring criteria for RFQs</span></span>
+# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="eccaf-103">Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez</span><span class="sxs-lookup"><span data-stu-id="eccaf-103">Create solicitation types and scoring criteria for RFQs</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ba5ec-104">Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogyan társíthatja azt pontozási módszerrel.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="ba5ec-105">Tárgyalja a meghirdetési típus ajánlatkérésen való használatát is, amely meghatározza az alapértelmezett pontozási módszert.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="ba5ec-106">Ezeket a feladatokat jellemzően egy beszerzési vezető végezné el.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="ba5ec-107">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="ba5ec-108">A kezdéshez rendelkeznie kell egy elérhető pontozási módszerrel.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-108">You need to have a scoring method available before you start.</span></span>
+<span data-ttu-id="eccaf-104">Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogyan társíthatja azt pontozási módszerrel.</span><span class="sxs-lookup"><span data-stu-id="eccaf-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="eccaf-105">Tárgyalja a meghirdetési típus ajánlatkérésen való használatát is, amely meghatározza az alapértelmezett pontozási módszert.</span><span class="sxs-lookup"><span data-stu-id="eccaf-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="eccaf-106">Ezeket a feladatokat jellemzően egy beszerzési vezető végezné el.</span><span class="sxs-lookup"><span data-stu-id="eccaf-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="eccaf-107">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="eccaf-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="eccaf-108">A kezdéshez rendelkeznie kell egy elérhető pontozási módszerrel.</span><span class="sxs-lookup"><span data-stu-id="eccaf-108">You need to have a scoring method available before you start.</span></span>
 
 
-## <a name="create-a-solicitation-type"></a><span data-ttu-id="ba5ec-109">Ajánlatkérési típus létrehozása</span><span class="sxs-lookup"><span data-stu-id="ba5ec-109">Create a solicitation type</span></span>
-1. <span data-ttu-id="ba5ec-110">Navigáljon a következő helyre: Beszerzés és forrás > Beállítás > Ajánlatkérés > Meghirdetés típusa.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
-2. <span data-ttu-id="ba5ec-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-111">Click New.</span></span>
-3. <span data-ttu-id="ba5ec-112">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-112">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="ba5ec-113">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="ba5ec-114">A Pontozási módszer mezőben válassza ki azt a pontozási módszert, amelyet az adott meghirdetési típusnál használni kíván.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
-6. <span data-ttu-id="ba5ec-115">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-115">Click Save.</span></span>
-7. <span data-ttu-id="ba5ec-116">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-116">Close the page.</span></span>
+## <a name="create-a-solicitation-type"></a><span data-ttu-id="eccaf-109">Ajánlatkérési típus létrehozása</span><span class="sxs-lookup"><span data-stu-id="eccaf-109">Create a solicitation type</span></span>
+1. <span data-ttu-id="eccaf-110">Navigáljon a következő helyre: Beszerzés és forrás > Beállítás > Ajánlatkérés > Meghirdetés típusa.</span><span class="sxs-lookup"><span data-stu-id="eccaf-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
+2. <span data-ttu-id="eccaf-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eccaf-111">Click New.</span></span>
+3. <span data-ttu-id="eccaf-112">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="eccaf-112">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="eccaf-113">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eccaf-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="eccaf-114">A Pontozási módszer mezőben válassza ki azt a pontozási módszert, amelyet az adott meghirdetési típusnál használni kíván.</span><span class="sxs-lookup"><span data-stu-id="eccaf-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
+6. <span data-ttu-id="eccaf-115">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eccaf-115">Click Save.</span></span>
+7. <span data-ttu-id="eccaf-116">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eccaf-116">Close the page.</span></span>
 
-## <a name="use-the-solicitation-type"></a><span data-ttu-id="ba5ec-117">A meghirdetési típus használata</span><span class="sxs-lookup"><span data-stu-id="ba5ec-117">Use the solicitation type</span></span>
-1. <span data-ttu-id="ba5ec-118">Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
-2. <span data-ttu-id="ba5ec-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-119">Click New.</span></span>
-3. <span data-ttu-id="ba5ec-120">A Meghirdetés típusa mezőjében válassza ki az előzőleg létrehozott meghirdetési típust.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+## <a name="use-the-solicitation-type"></a><span data-ttu-id="eccaf-117">A meghirdetési típus használata</span><span class="sxs-lookup"><span data-stu-id="eccaf-117">Use the solicitation type</span></span>
+1. <span data-ttu-id="eccaf-118">Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.</span><span class="sxs-lookup"><span data-stu-id="eccaf-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="eccaf-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eccaf-119">Click New.</span></span>
+3. <span data-ttu-id="eccaf-120">A Meghirdetés típusa mezőjében válassza ki az előzőleg létrehozott meghirdetési típust.</span><span class="sxs-lookup"><span data-stu-id="eccaf-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
     *   
-4. <span data-ttu-id="ba5ec-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-121">Click OK.</span></span>
-5. <span data-ttu-id="ba5ec-122">Kattintson a Pontozási feltételek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-122">Click Scoring criteria.</span></span>
-    * <span data-ttu-id="ba5ec-123">Abból a pontozási módszerből jelennek meg a pontozási feltétek, amelyet a meghirdetés típusához társított.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="ba5ec-124">Ezen a lapon lehetősége van feltételek hozzáadására vagy törlésére.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="ba5ec-125">Új feltételeket más pontozási módszerből való másolással is hozzáadhat.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
-6. <span data-ttu-id="ba5ec-126">Kattintson a Feltételek másolása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-126">Click Copy criteria.</span></span>
-7. <span data-ttu-id="ba5ec-127">A Pontozási módszer mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-127">In the Scoring method field, enter or select a value.</span></span>
-8. <span data-ttu-id="ba5ec-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-128">Click OK.</span></span>
-9. <span data-ttu-id="ba5ec-129">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-129">Close the page.</span></span>
-
+4. <span data-ttu-id="eccaf-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eccaf-121">Click OK.</span></span>
+5. <span data-ttu-id="eccaf-122">Kattintson a Pontozási feltételek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eccaf-122">Click Scoring criteria.</span></span>
+    * <span data-ttu-id="eccaf-123">Abból a pontozási módszerből jelennek meg a pontozási feltétek, amelyet a meghirdetés típusához társított.</span><span class="sxs-lookup"><span data-stu-id="eccaf-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="eccaf-124">Ezen a lapon lehetősége van feltételek hozzáadására vagy törlésére.</span><span class="sxs-lookup"><span data-stu-id="eccaf-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="eccaf-125">Új feltételeket más pontozási módszerből való másolással is hozzáadhat.</span><span class="sxs-lookup"><span data-stu-id="eccaf-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
+6. <span data-ttu-id="eccaf-126">Kattintson a Feltételek másolása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eccaf-126">Click Copy criteria.</span></span>
+7. <span data-ttu-id="eccaf-127">A Pontozási módszer mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eccaf-127">In the Scoring method field, enter or select a value.</span></span>
+8. <span data-ttu-id="eccaf-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eccaf-128">Click OK.</span></span>
+9. <span data-ttu-id="eccaf-129">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eccaf-129">Close the page.</span></span>
 

@@ -1,13 +1,13 @@
---- 
-title: "Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz"
-description: "Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be."
+---
+title: Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz
+description: Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be.
 author: josaw1
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,30 +17,29 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dacd2b80ca0d51d81d2bdf5bc2636b47da621ee
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352620"
 ---
-# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="aee43-103">Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz</span><span class="sxs-lookup"><span data-stu-id="aee43-103">Parameter configurations for Retail statements</span></span>
+# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="02828-103">Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz</span><span class="sxs-lookup"><span data-stu-id="02828-103">Parameter configurations for Retail statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="aee43-104">Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be.</span><span class="sxs-lookup"><span data-stu-id="aee43-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="aee43-105">Ez az eljárás az USRT bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="aee43-105">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="02828-104">Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be.</span><span class="sxs-lookup"><span data-stu-id="02828-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="02828-105">Ez az eljárás az USRT bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="02828-105">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="aee43-106">Ugrás a Kiskereskedelem > Központ beállítás > Paraméterek > Kiskereskedelmi paraméterek elemre.</span><span class="sxs-lookup"><span data-stu-id="aee43-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
-2. <span data-ttu-id="aee43-107">Kattintson a Feladás lapra.</span><span class="sxs-lookup"><span data-stu-id="aee43-107">Click the Posting tab.</span></span>
-    * <span data-ttu-id="aee43-108">Ha kifejezetten az időszaki kedvezmények összegét szeretné feladni, akkor válassza az „Igen” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="aee43-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
-    * <span data-ttu-id="aee43-109">Válassza a „Normál” lehetőséget alapértelmezett számlák használatához, vagy az „Időszakos” lehetőséget, ha Ön szeretné megadni az egyes időszakos kedvezményekhez használandó számlákat.</span><span class="sxs-lookup"><span data-stu-id="aee43-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
-    * <span data-ttu-id="aee43-110">Válassza az „Összegzés” lehetőséget, ha szeretné, hogy a rendszer minden lehetséges alkalommal összesítse a sorokat.</span><span class="sxs-lookup"><span data-stu-id="aee43-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
-    * <span data-ttu-id="aee43-111">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Számlák és a Kifizetések a Kimutatás feladási folyamat során automatikusan rendezésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="aee43-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
-    * <span data-ttu-id="aee43-112">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Széfes befizetéses tranzakciók összesítésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="aee43-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="aee43-113">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Banki-fizetőeszköz tranzakciók összesítésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="aee43-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="aee43-114">Válassza az „Igen” lehetőséget, ha a Kimutatás-feladásnál szeretné bekapcsolni az összesítést.</span><span class="sxs-lookup"><span data-stu-id="aee43-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
-    * <span data-ttu-id="aee43-115">Válassza az „Igen” lehetőséget, ha szeretne párhuzamosan megrendeléseket hozni létre és dolgozni fel, amikor a kimutatás feladásra kerül.</span><span class="sxs-lookup"><span data-stu-id="aee43-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
-    * <span data-ttu-id="aee43-116">Adja meg a kötegelt feladatonként feldolgozandó megrendelések maximális számát.</span><span class="sxs-lookup"><span data-stu-id="aee43-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
-3. <span data-ttu-id="aee43-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="aee43-117">Click Save.</span></span>
-
+1. <span data-ttu-id="02828-106">Ugrás a Kiskereskedelem > Központ beállítás > Paraméterek > Kiskereskedelmi paraméterek elemre.</span><span class="sxs-lookup"><span data-stu-id="02828-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="02828-107">Kattintson a Feladás lapra.</span><span class="sxs-lookup"><span data-stu-id="02828-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="02828-108">Ha kifejezetten az időszaki kedvezmények összegét szeretné feladni, akkor válassza az „Igen” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="02828-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="02828-109">Válassza a „Normál” lehetőséget alapértelmezett számlák használatához, vagy az „Időszakos” lehetőséget, ha Ön szeretné megadni az egyes időszakos kedvezményekhez használandó számlákat.</span><span class="sxs-lookup"><span data-stu-id="02828-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="02828-110">Válassza az „Összegzés” lehetőséget, ha szeretné, hogy a rendszer minden lehetséges alkalommal összesítse a sorokat.</span><span class="sxs-lookup"><span data-stu-id="02828-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="02828-111">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Számlák és a Kifizetések a Kimutatás feladási folyamat során automatikusan rendezésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="02828-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="02828-112">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Széfes befizetéses tranzakciók összesítésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="02828-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="02828-113">Válassza az „Igen” lehetőséget, ha szeretné, hogy a Banki-fizetőeszköz tranzakciók összesítésre kerüljenek.</span><span class="sxs-lookup"><span data-stu-id="02828-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="02828-114">Válassza az „Igen” lehetőséget, ha a Kimutatás-feladásnál szeretné bekapcsolni az összesítést.</span><span class="sxs-lookup"><span data-stu-id="02828-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="02828-115">Válassza az „Igen” lehetőséget, ha szeretne párhuzamosan megrendeléseket hozni létre és dolgozni fel, amikor a kimutatás feladásra kerül.</span><span class="sxs-lookup"><span data-stu-id="02828-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="02828-116">Adja meg a kötegelt feladatonként feldolgozandó megrendelések maximális számát.</span><span class="sxs-lookup"><span data-stu-id="02828-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="02828-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="02828-117">Click Save.</span></span>
 

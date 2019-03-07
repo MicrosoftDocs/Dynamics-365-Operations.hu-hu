@@ -1,13 +1,13 @@
 ---
-title: "Késések"
-description: "Ez a cikk az alaptervezésben szereplő késleltetett dátumokról szolgál információval. A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum."
+title: Késések
+description: Ez a cikk az alaptervezésben szereplő késleltetett dátumokról szolgál információval. A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,37 +19,35 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: a87b19732f413aa2844101f76dea83535da86599
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359612"
 ---
-
-# <a name="delays"></a><span data-ttu-id="66076-104">Késések</span><span class="sxs-lookup"><span data-stu-id="66076-104">Delays</span></span>
+# <a name="delays"></a><span data-ttu-id="a6bd6-104">Késések</span><span class="sxs-lookup"><span data-stu-id="a6bd6-104">Delays</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="66076-105">Ez a cikk az alaptervezésben szereplő késleltetett dátumokról szolgál információval.</span><span class="sxs-lookup"><span data-stu-id="66076-105">This article provides information about delayed dates in master planning.</span></span> <span data-ttu-id="66076-106">A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum.</span><span class="sxs-lookup"><span data-stu-id="66076-106">A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.</span></span>
+<span data-ttu-id="a6bd6-105">Ez a cikk az alaptervezésben szereplő késleltetett dátumokról szolgál információval.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-105">This article provides information about delayed dates in master planning.</span></span> <span data-ttu-id="a6bd6-106">A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-106">A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.</span></span>
 
-<span data-ttu-id="66076-107">Az alaptervezés kiszámíthatja egy tranzakció legkorábbi teljesítési dátumát, az átfutási idők, az anyagok rendelkezésre állása, a rendelkezésre álló kapacitás és a különböző tervezési paraméterek alapján.</span><span class="sxs-lookup"><span data-stu-id="66076-107">Master planning can calculate the earliest fulfillment date for a transaction, based on lead times, material availability, capacity availability, and various planning parameters.</span></span> 
+<span data-ttu-id="a6bd6-107">Az alaptervezés kiszámíthatja egy tranzakció legkorábbi teljesítési dátumát, az átfutási idők, az anyagok rendelkezésre állása, a rendelkezésre álló kapacitás és a különböző tervezési paraméterek alapján.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-107">Master planning can calculate the earliest fulfillment date for a transaction, based on lead times, material availability, capacity availability, and various planning parameters.</span></span> 
 
-<span data-ttu-id="66076-108">Ha az alaptervezés olyan rendelési dátumot számít ki, amely az aktuális dátumnál korábbi, akkor a rendelés időben nem teljesíthető.</span><span class="sxs-lookup"><span data-stu-id="66076-108">If master planning calculates an order date that precedes the current date, the order can't be fulfilled on time.</span></span> <span data-ttu-id="66076-109">Emiatt a rendelés késik.</span><span class="sxs-lookup"><span data-stu-id="66076-109">Therefore, the order is delayed.</span></span> <span data-ttu-id="66076-110">Ebben az esetben az alaptervezés az aktuális dátumtól kezdve előretolja a tervet, és figyelembe veszi az átfutási időket is.</span><span class="sxs-lookup"><span data-stu-id="66076-110">In this case, master planning forward-plans the order from the current date and includes lead times.</span></span> <span data-ttu-id="66076-111">Ezek az átfutási idők bármely alacsonyabb szintű összetevő elemmel kezdődhetnek.</span><span class="sxs-lookup"><span data-stu-id="66076-111">These lead times start with any lower-level component items.</span></span> <span data-ttu-id="66076-112">A rendelés ezután egy késleltetett dátumot kap.</span><span class="sxs-lookup"><span data-stu-id="66076-112">The order then receives a delayed date.</span></span> <span data-ttu-id="66076-113">A késleltetett dátum egy valószerű, a tényleges adatokon alapuló dátum lesz.</span><span class="sxs-lookup"><span data-stu-id="66076-113">A delayed date is a realistic due date, based on the current data.</span></span> <span data-ttu-id="66076-114">Az alaptervezés emellett a késés napjait is kiszámítja.</span><span class="sxs-lookup"><span data-stu-id="66076-114">Master planning also calculates the number of delay days.</span></span> 
+<span data-ttu-id="a6bd6-108">Ha az alaptervezés olyan rendelési dátumot számít ki, amely az aktuális dátumnál korábbi, akkor a rendelés időben nem teljesíthető.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-108">If master planning calculates an order date that precedes the current date, the order can't be fulfilled on time.</span></span> <span data-ttu-id="a6bd6-109">Emiatt a rendelés késik.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-109">Therefore, the order is delayed.</span></span> <span data-ttu-id="a6bd6-110">Ebben az esetben az alaptervezés az aktuális dátumtól kezdve előretolja a tervet, és figyelembe veszi az átfutási időket is.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-110">In this case, master planning forward-plans the order from the current date and includes lead times.</span></span> <span data-ttu-id="a6bd6-111">Ezek az átfutási idők bármely alacsonyabb szintű összetevő elemmel kezdődhetnek.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-111">These lead times start with any lower-level component items.</span></span> <span data-ttu-id="a6bd6-112">A rendelés ezután egy késleltetett dátumot kap.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-112">The order then receives a delayed date.</span></span> <span data-ttu-id="a6bd6-113">A késleltetett dátum egy valószerű, a tényleges adatokon alapuló dátum lesz.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-113">A delayed date is a realistic due date, based on the current data.</span></span> <span data-ttu-id="a6bd6-114">Az alaptervezés emellett a késés napjait is kiszámítja.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-114">Master planning also calculates the number of delay days.</span></span> 
 
-<span data-ttu-id="66076-115">Bizonyos esetekben előfordulhat, hogy nem kívánja kiszámolni a késést, például amikor a felhasználók tudják, hogy alternatív szállítási módok kiválasztásával megsürgethetik az átfutási időt.</span><span class="sxs-lookup"><span data-stu-id="66076-115">In some situations, you might choose not to calculate delays, such as when users know that they can expedite lead times by selecting alternative modes of delivery.</span></span> 
+<span data-ttu-id="a6bd6-115">Bizonyos esetekben előfordulhat, hogy nem kívánja kiszámolni a késést, például amikor a felhasználók tudják, hogy alternatív szállítási módok kiválasztásával megsürgethetik az átfutási időt.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-115">In some situations, you might choose not to calculate delays, such as when users know that they can expedite lead times by selecting alternative modes of delivery.</span></span> 
 
-<span data-ttu-id="66076-116">Beállíthatja, hogyan számítsa ki a rendszer a fedezetcsoport késéseit.</span><span class="sxs-lookup"><span data-stu-id="66076-116">You can configure how delays are calculated for a coverage group.</span></span> <span data-ttu-id="66076-117">Ezt követően csatolhatja a fedezetcsoportot egy cikkhez.</span><span class="sxs-lookup"><span data-stu-id="66076-117">You can then attach the coverage group to an item later.</span></span> 
+<span data-ttu-id="a6bd6-116">Beállíthatja, hogyan számítsa ki a rendszer a fedezetcsoport késéseit.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-116">You can configure how delays are calculated for a coverage group.</span></span> <span data-ttu-id="a6bd6-117">Ezt követően csatolhatja a fedezetcsoportot egy cikkhez.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-117">You can then attach the coverage group to an item later.</span></span> 
 
-<span data-ttu-id="66076-118">Az **Alaptervezés paraméterei** lapon beállíthatja a késések számításának kezdő időpontját.</span><span class="sxs-lookup"><span data-stu-id="66076-118">On the **Master planning parameters** page, you can set the start time for the calculation of delays.</span></span> <span data-ttu-id="66076-119">Ha egy rendelés ezen időpont után teljesül, akkor egy nap hozzáadódik a rendelés késési dátumához.</span><span class="sxs-lookup"><span data-stu-id="66076-119">If an order is fulfilled after this time, a delay of one day is added to the delay date of the order.</span></span> 
+<span data-ttu-id="a6bd6-118">Az **Alaptervezés paraméterei** lapon beállíthatja a késések számításának kezdő időpontját.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-118">On the **Master planning parameters** page, you can set the start time for the calculation of delays.</span></span> <span data-ttu-id="a6bd6-119">Ha egy rendelés ezen időpont után teljesül, akkor egy nap hozzáadódik a rendelés késési dátumához.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-119">If an order is fulfilled after this time, a delay of one day is added to the delay date of the order.</span></span> 
 
-<span data-ttu-id="66076-120">**Megjegyzés:** A korábbi változatokban a késések kiszámítását *határidő-üzeneteknek* nevezték, a késleltetett dátum neve *határiő dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció*.</span><span class="sxs-lookup"><span data-stu-id="66076-120">**Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.</span></span>
+<span data-ttu-id="a6bd6-120">**Megjegyzés:** A korábbi változatokban a késések kiszámítását *határidő-üzeneteknek* nevezték, a késleltetett dátum neve *határiő dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció*.</span><span class="sxs-lookup"><span data-stu-id="a6bd6-120">**Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="66076-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="66076-121">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="a6bd6-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="a6bd6-121">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="66076-122">Fedezeti beállítások</span><span class="sxs-lookup"><span data-stu-id="66076-122">Coverage settings</span></span>](coverage-settings.md)
-
+[<span data-ttu-id="a6bd6-122">Fedezeti beállítások</span><span class="sxs-lookup"><span data-stu-id="a6bd6-122">Coverage settings</span></span>](coverage-settings.md)
 
 
 
