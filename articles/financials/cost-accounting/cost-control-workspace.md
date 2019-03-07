@@ -1,32 +1,31 @@
 ---
-title: "Költségellenőrzési munkaterület"
-description: "Ez a témakör a Költségellenőrzés munkaterületről nyújt tájékoztatást. Ez a munkaterület központi pont, ahol a menedzserek, akik felelősek egy költségobjektum vagy egy költségobjektum-készlet egy dimenzióban vagy dimenziókon belüli vezérléséért, hozzáférhetnek a jelentésekhez."
+title: Költségellenőrzési munkaterület
+description: Ez a témakör a Költségellenőrzés munkaterületről nyújt tájékoztatást. Ez a munkaterület központi pont, ahol a menedzserek, akik felelősek egy költségobjektum vagy egy költségobjektum-készlet egy dimenzióban vagy dimenziókon belüli vezérléséért, hozzáférhetnek a jelentésekhez.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c6a196c677ed27666efec8a180f1d3b7e7ee931c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363752"
 ---
-
 # <a name="cost-control-overview"></a>Költségkontroll áttekintése 
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Az **Adatszűrés** gyorslapon meghatározhatja a jelentés adatbeli alapjait. A
 |-------------------------------------------------------------------|-------------|
 | Költségkönyvelési főkönyv                                            | A **Költségkönyvelési főkönyv**, amely a jelentés alapjául szolgál. Az érték a **Költség-ellenőrzőegység** mezőből származik. |
 | Költség-ellenőrzőegység                                                 | A kiválasztott érték határozza meg a költségszámítási könyvelést és a költségelemeket, amelyekre ez a jelentés alapul. |
-| Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>[!NOTE]<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excelbe és a Microsoft Power BI tartalomcsomagba.</blockquote> |
+| Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>[!NOTE]<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excel programba és a Microsoft Power BI tartalomcsomagba.</blockquote> |
 | Költségobjektum dimenzióhierarchia                                   | Válassza ki a költségobjektum-dimenziók hierarchiáját, amely megfelel a jelentésben megadott célnak. |
 | Költségvetés eredeti verziója                                           | Válassza ki a költségkeret-azonosítót, amely az eredeti költségkeretként jelenik meg a jelentés összefüggésében. |
 | Költségvetés felülvizsgált verziója                                            | Válassza ki a költségkeret-azonosítót, amely a jelentés összefüggésében módosított költségvetésként működik. |
@@ -157,6 +156,5 @@ A következő példában az allokációs bázis a **Receptúrafelosztási alap**
 További erőforrások 
 
 [Hozzáférési jogok meghatározása költségobjektum-ellenőrök számára](access-rights-cost-object-controller.md)
-
 
 

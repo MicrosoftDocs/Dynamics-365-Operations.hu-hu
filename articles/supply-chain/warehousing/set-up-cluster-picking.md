@@ -1,13 +1,13 @@
 ---
-title: "Fürt beállítása"
-description: "Ez a témakör leírja a fürtkitárolás beállítását, és a cikk jóváhagyásának alkalmazását a fürtkitárolással."
+title: Fürt beállítása
+description: Ez a témakör leírja a fürtkitárolás beállítását, és a cikk jóváhagyásának alkalmazását a fürtkitárolással.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2ec0890963b2b01407acac8003453faf370894b4
-ms.openlocfilehash: 1c23421ddfda8c5f6fa27a31831a00ead6094db9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/11/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364097"
 ---
-
 [!include[banner](../includes/banner.md)]
 
 # <a name="set-up-cluster-picking"></a>Fürt beállítása
@@ -37,7 +36,7 @@ Miután munkarendelések ki vannak adva a raktárba, a dolgozó használható mo
 
 Szükség esetén dolgozó lehet átadni a fürt egy másik dolgozó. Ekkor a fürt állapotát megfelelt. A dolgozó használja a mobileszköz annak jelzésére, hogy a kitárolási és betárolási csökkenés munka befejezése, ha a szállítmány vagy rakomány meg kell erősíteni őket a Dynamics 365 for Finance and Operations ügyfél.
 
-## <a name="set-up-cluster-picking"></a>Fürt beállítása
+## <a name="set-up-cluster-picking"></a>Fürtkitárolás beállítása
 
 Ahhoz, hogy a fürtkitárolás, be kell állítania a következőket:
 
@@ -81,4 +80,3 @@ Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontoss�
 1.  A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** \> **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Mobileszköz menüpontjai**.
 
 2.  A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**. A **Termékmegerősítés** beállítás lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.
-

@@ -1,13 +1,13 @@
---- 
-title: "EUR-00015 Szállítói adószám rögzítése"
-description: "Ez az eljárás bemutatja, hogyan lehet áfaregisztrációs azonosítókat és áfamentességi számot adni egy szállítói fiókhoz."
+---
+title: EUR-00015 Szállítói adószám rögzítése
+description: Ez az eljárás bemutatja, hogyan lehet áfaregisztrációs azonosítókat és áfamentességi számot adni egy szállítói fiókhoz.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d9788a35e768a4a289742e9cd864b3ca185a0407
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370910"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Szállítói adószám rögzítése
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/14/2018
 
 Ez az eljárás bemutatja, hogyan lehet áfaregisztrációs azonosítókat és áfamentességi számot adni egy szállítói fiókhoz. Ez a folyamat hasonló a jogi személyek és az ügyfelek számára. 
 
-Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania. Ez az eljárás minden európai országra/régióra vonatkozik. Ezt az eljárást a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Ez az eljárás az adatkezelés rendszergazdája, a kötelezettségeket kezelő vezető és a kinnlevőség-kezelő számára szól. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania. Ez az eljárás minden európai országra/régióra vonatkozik. Ezt az eljárást a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Ez az eljárás az adatkezelés rendszergazdája, a kötelezettségeket kezelő vezető és a kinnlevőség-kezelő számára szól. Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 1. Ugrás a Kötelezettségek > Szállítók > Minden szállító elemre.
 2. A DE-01001 szállító megkeresése és kijelölése a listán
@@ -63,5 +63,4 @@ Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania. E
 24. Kattintson a Szerkesztés lehetőségre.
 25. Az Adómentességi szám mezőben adjon meg, vagy válasszon ki egy értéket.
 26. Kattintson a Mentés gombra.
-
 

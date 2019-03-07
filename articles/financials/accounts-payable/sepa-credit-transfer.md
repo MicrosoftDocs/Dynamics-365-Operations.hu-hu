@@ -1,13 +1,13 @@
 ---
-title: "SEPA átutalás áttekintése"
-description: "Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt."
+title: SEPA átutalás áttekintése
+description: Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363775"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>SEPA átutalás áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ A SEPA átutalás olyan kifizetés, amely egy vállalattól vagy személytől eg
 A SEPA átutalás fizetési formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 for Finance and Operations rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Milyen átutalási formátumokat támogat jelenleg a Finance and Operations?
-Mindig meg kell keresnie a Microsoft Dynamics Lifecycle szolgáltatások (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
+Mindig meg kell keresnie a Microsoft Dynamics Lifecycle services (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mit kell beállítanom?
 -   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
@@ -124,7 +123,6 @@ A nemzetközi bankszámlaszám (IBAN) és a bankazonosító kód (BIC) minden sz
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hogyan küldjem el a fizetési fájlt a banknak?
 Amikor kifizetéseket hoz létre, létrejön egy kifizetési fájl, és a rendszer arra kéri, hogy mentse le a böngészőből bármilyen rendelkezésre álló helyre. A következő lépés az, hogy az XML fájlt elküldje a bankjának. Ez a folyamat bankról bankra változik. Kövesse a banktól kapott utasításokat fájlok banki feldolgozásra való feladásához.
-
 
 
 

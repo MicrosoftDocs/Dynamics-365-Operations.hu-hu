@@ -1,13 +1,13 @@
 ---
-title: "Munkaerő optimalizálása részlegek, munkák és beosztások használatával"
-description: "A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően."
+title: Munkaerő optimalizálása részlegek, munkák és beosztások használatával
+description: A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374397"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Munkaerő optimalizálása részlegek, munkák és beosztások használatával
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően. 
 
@@ -165,7 +163,6 @@ Bizonyos rekordok esetében jövőbeni módosításokat is be lehet állítani a
 </table>
 
 Módosíthatja az előző táblázatban említett, az egyes beosztásokhoz és feladatokhoz tartozó adatokat, és megadhat egy dátumot, amikor a beosztáshoz vagy feladathoz kapcsolódó módosításoknak érvénybe kell lépniük. Például egy beosztás csak egy dolgozóhoz rendelhető hozzá, de Sanjay Patel, aki a Könyvelő-A beosztáshoz van rendelve, két hét múlva távozik. Sanjay Patel távozását követően Joe Healey veszi át a pozíciót. Annak ellenére, hogy Sanjay továbbra is hozzá van rendelve a beosztáshoz, Joe Healy is hozzárendelhető ugyanehhez a pozícióhoz úgy, hogy a hozzárendelés ténylegesen csak Sanjay utolsó napját követően lépjen hatályba.
-
 
 
 

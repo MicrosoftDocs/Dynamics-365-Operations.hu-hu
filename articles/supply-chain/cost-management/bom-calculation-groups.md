@@ -1,13 +1,13 @@
 ---
-title: "Anyagjegyzék-számítási csoportok"
-description: "Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt."
+title: Anyagjegyzék-számítási csoportok
+description: Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362878"
 ---
-
 # <a name="bom-calculations-groups"></a>Anyagjegyzék-számítási csoportok
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Az AJ számítások figyelmeztető üzeneteket hoznak létre. Megtekintheti a ki
 -   Azonosítja, ha az egyik anyagjegyzék-sorban szereplő cikkhez a kívántnál kisebb nyereségességi százalék tartozik.
 
 A figyelmeztető üzenetek közötti eltérések alapján azonosíthat több AJ számítási csoportot. Elég lehet például egy anyagjegyzék-számítási csoport is, amely figyelmeztetési feltételeket tartalmaz az aktív anyagjegyzékre, a nulla összetevő-mennyiségre és a nulla összetevőköltségre vonatkozóan. Amikor elindít egy AJ számítást, felülírhatja az anyagjegyzék-számítási csoporthoz társított figyelmeztetési feltételeket. Valamint hozzá is adhat, illetve el is távolíthat figyelmeztetési feltételeket. Eltávolítható például az aktív útvonalra vonatkozó figyelmeztetési feltétel, amikor az adott helyzetben nem kell útvonaladatokat kezelni. **Megjegyzés:** A munkaidő és jelenlét tartalmazza a **Számítási csoportok** oldalt, azonban ennek az oldalnak nincsen kapcsolata az AJ számítási csoportokhoz. A Munkaidő és jelenlétben a dolgozók hozzárendelhetőek olyan számítási csoportokhoz, amelyek megmutatják, hogy kik azok a dolgozók, akik ugyan ahhoz a felügyeleti személyhez vagy vezetőhöz tartoznak. A dolgozói regisztrációk számítása elvégezhető automatikusan vagy manuálisan egy felügyeleti személy vagy vezető által.
-
 
 
 

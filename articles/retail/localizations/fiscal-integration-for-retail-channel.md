@@ -1,13 +1,13 @@
 ---
-title: "A kiskereskedelmi csatorna pénzügyi integrálása"
-description: "Ez a témakör a Retail POS pénzügyi integrálásáról nyújt áttekintést."
+title: A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
+description: Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségekről ad áttekintést.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -15,122 +15,104 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c852d095505abecbd44d29e9e7b53875e9069def
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377135"
 ---
-# <a name="fiscal-integration-for-retail-channel"></a>A kiskereskedelmi csatorna pénzügyi integrálása
+# <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail pénzügyi integráció funkciójáról. A pénzügyi integráció funkció keretrendszer, amely támogatja a helyi pénzügyi törvényeket, amelyek célja a csalások elleni harc a kiskereskedelemben. A tipikus, pénzügyi integráció használatával megoldható esetek:
+## <a name="introduction"></a>Bevezetés
 
-- Pénzügyi nyugta nyomtatása, és odaadása a vevőnek.
-- A pénztárban végrehajtott értékesítéshez és visszáruhoz kapcsolódó adatok benyújtásának biztonságossá egy külső, az adóhatóság által nyújtott szolgáltatásba.
-- A hatóság engedélyezte digitális aláírással adatvédelem használata.
+Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik a kiskereskedelmi értékesítések pénzügyi regisztrációját a helyi pénzügyi törvényekkel összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók: 
 
-Ez a témakör bemutatja, hogyan kell a pénzügyi integrációt beállítani, hogy a felhasználók végrehajthassák a következő feladatokat. 
+- Kiskereskedelmi értékesítés regisztrálása olyan pénzügyi eszközön, amely a kiskereskedelmi pénztárhoz (POS) csatlakozik, például pénzügyi nyomtató, majd a pénzügyi nyugta nyomtatása a vevő számára.
+- A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
+- Segít az értékesítési tranzakcióadatok megmásíthatatlanságát digitális aláírások segítségével.
 
-- Állítsa be a pénzügyi összekötőket, amelyek pénzügyi eszközök és szolgáltatások pénzügyi regisztrációs célokra, például ezekhez: mentés, digitális aláírások és a pénzügyi adatok biztonságos benyújtása.
-- Állítsa be a dokumentum-szolgáltatót, amely meghatároz egy kimeneti módszert, valamint a pénzügyi bizonylat létrehozásának algoritmusát.
-- Konfigurálja a pénzügyi regisztráció folyamatát, amely meghatározza lépések sorát, és minden egyes lépéshez a használt összekötők csoportját.
-- POS-funkcióprofilokhoz rendeljen pénzügyi regisztrációs eljárást.
-- Rendeljen összekötő műszaki profilokat vagy hardverprofilokhoz (a helyi pénzügyi összekötőkhöz) vagy POS-funkcióprofilokhoz (más pénzügyiösszekötő-típusokhoz).
+A Retail szolgáltatás pénzügyi integrációs funkciója egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a kiskereskedelmi összetevők számos kiterjesztését is tartalmazza, és szerepel a Retail szoftverfejlesztő készletben (SDK). A Retail szoftverfejlesztői készletben (SDK) rendelkezésre álló pénzügyi integráció mintákkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs minták a Retail szoftverfejlesztői készletben (SDK)](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail SDK áttekintése](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## <a name="fiscal-integration-execution-flow"></a>Pénzügyi integráció végrehajtási folyamat
-A következő helyzet a közös pénzügyi integráció végrehajtási folyamatát jeleníti meg.
+Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integrációs minta, a Retail POS egyéb pénzügyi eszközökkel vagy szolgáltatásokkal való integrálásához, vagy a más országokban vagy régiókban levő követelmények lefedéséhez vagy ki kell terjesztenie a létező pénzügyi integrációs mintát, vagy új mintát kell létrehoznia egy meglévő minta példaként való használatával.
 
-1. A pénzügyi regisztrációs folyamat elkezdése.
-  
-   Bizonyos pénzügyi regisztrálást igénylő műveletek végrehajtása után (például kiskereskedelmi tranzakciók lezárása) a pénzügyi regisztrációs folyamat társítva van a jelenlegi pénztár funkcióprofillal.
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Pénzügyi regisztrációs folyamat és péntügyi integrációs minta pénzügyi eszközökhöz
 
-1. Pénzügyi összekötő keresése.
-   
-   Minden egyes pénzügyi regisztrációs lépéshez, amely szerepel a pénzügyi regisztráció folyamatban, a rendszer megfelelteti a pénzügyi összekötők listáját. Az összekötőknek van egy funkcióprofiljuk a megadott összekötőcsoportban, összekötők egy csoportjával, amelyeknek a műszaki profilja társítva van a jelenlegi hardverprofillal (a csak **helyi** típusú összekötő esetében), illetve az aktuális pénztár funkcióprofillal (a többi összekötőtípusnál).
-   
-1. Hajtsa végre a pénzügyi integrációt.
+A pénzügyi regisztrációs folyamat a Retail POS felületén egy vagy több lépésből állhat. Minden egyes lépés magában foglalja az adott kiskereskedelmi tranzakciók vagy események pénzügyi regisztrációját egy pénzügyi eszközben vagy szolgáltatásban. A következő megoldás-összetevők részt vesznek a pénzügyi regisztrációban egy hardverállomáshoz kapcsolódó pénzügyi eszközben:
 
-   A rendszer végrehajt minden szükséges műveletet, amelyeket megad a megtalált összekötőhöz kapcsolódó szerelvény. Ez a működési profil és a műszaki profil beállításainak megfelelően történik, amelyeket az előző lépésben találtunk meg az összekötőhöz.
+- **A Commerce runtime (CRT) kiterjesztése** – Ez az összetevő a kiskereskedelmi tranzakció/esemény adatokat olyan formátumba alakítja, amelyet a pénzügyi eszközzel való együttműködéshez használnak, elemzi a pénzügyi eszköz válaszait, és tárolja a válaszokat a csatorna-adatbázisban. A kiterjesztés a regisztrálandó meghatározott tranzakciókat és eseményeket is meghatározza. Ezt az összetevőt gyakran nevezik *Pénzügyi dokumentumszolgáltatónak*.
+- **Hardverállomás kiterjesztése** – Ez az összetevő a pénzügyi eszközzel kommunikációt indít, kéréseket és közvetlen parancsokat küld a pénzügyi eszköznek a kiskereskedelmi tranzakció/esemény adatai alapján, amelyet a pénzügyi dokumentumból kivont, és válaszokat fogad a pénzügyi eszköztől. Ezt az összetevőt gyakran nevezik *Pénzügyi csatlakozónak*.
 
-## <a name="setup-needed-before-using-fiscal-integration"></a>A pénzügyi integráció használatát megelőzően szükséges beállítás
-Mielőtt a pénzügyi integráció funkciót használná, adja meg a következő beállításokat:
+Egy pénzügyi eszköz pénzügyi integrációs mintája tartalmazza a CRT- és a hardverállomás-kiterjesztéseket egy pénzügyi dokumentumszolgáltatóra és egy pénzügyi csatlakozóra. A következő összetevő-konfigurációkat is tartalmazza:
 
-- A számsorozatot adja meg a **Kiskereskedelmi paraméterek** lapon a pénzügyi funkcionális profilszám számára.
-  
-- A számsorozatokat adja meg a **Megosztott kiskereskedelmi paraméterek** lapon a következő hivatkozásokhoz:
-  
-  - Pénzügyi technikai profil száma
-  - Pénzügyi csatlakozócsoport száma
-  - Regisztrációs folyamat száma
+- **Pénzügyi dokumentumszolgáltató konfigurációja** – Ez a beállítás meghatározza a pénzügyi dokumentumokhoz tartozó kimeneti módszert, valamint a formátumot. Az adatok hozzárendelését is tartalmazza az adókhoz és fizetési módokhoz, hogy a Retail POS adatai kompatibilisek legyenek a pénzügyi eszköz belső vezérlőprogramja által előre beállított értékekkel.
+- **Pénzügyi csatlakozó konfigurációja** – Ez a beállítás határozza meg a fizikai kommunikációt az adott pénzügyi eszközzel.
 
-- Hozzon létre egy **Pénzügyi összekötőt** a **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Pénzügyi összekötők** elemnél minden eszközre vagy szolgáltatásra, amelyet pénzügyi integrációs célokra tervez használni.
+Egy adott POS-pénztárgép pénzügyi regisztrációs folyamatát a pénztár funkcióprofiljának megfelelő beállítása határozza meg. A pénzügyi regisztrációs folyamat konfigurációjával, a pénzügyi dokumentumszolgáltató és pénzügyi csatlakozó konfigurációinak feltöltésével, és a paraméterek módosításával kapcsolatos további részletekért lásd: [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Hozzon létre egy **Pénzügyi bizonylat szolgáltatót** a **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Pénzügyi bizonylat szolgáltatók** elemnél az összes pénzügyi összekötőre. Az adatleképezést a pénzügyi bizonylat szolgáltató részének kell tekinteni. Azonos összekötőhöz különböző adatleképezések beállításához (például államspecifikus előírások) eltérő pénzügyi bizonylat szolgáltatókat kell létrehozni.
+A következő példa bemutatja a tipikus pénzügyi regisztrációs végrehajtási folyamatot egy pénzügyi eszközhöz. A folyamat a pénztárban történt eseménnyel kezdődik (például egy értékesítési tranzakció véglegesítése), és az alábbi lépéssorozatot hajtja végre:
 
-- Hozzon létre egy **Összekötő funkcionális profilt** a **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Összekötő funkcionális profilok** elemnél az egyes pénzügyi bizonylat szolgáltatókhoz.
-  - Válasszon ki egy összekötőnevet.
-  - Válasszon ki egy bizonylatszolgáltatót.
-  - Adja meg az áfaszázalékok beállításait a **Szolgáltatásbeállítás** lapon.
-  - Adja meg az áfakódok leképezését és a fizetőeszköz-típus leképezését az **Adatleképezés** lapon.
+1. A pénztár a CRT-ből pénzügyi bizonylatot kér.
+2. A CRT határozza meg, hogy szükséges-e az aktuális eseményhez pénzügyi regisztráció.
+3. A pénzügyi regisztrációs folyamat beállításainak megfelelően a CRT azonosít egy pénzügyi csatlakozót, és a hozzá tartozó pénzügyi dokumentumszolgáltatót, amelyet a pénzügyi nyilvántartáshoz használ majd.
+4. A CRT futtatja a pénzügyi dokumentumszolgáltatót, amely egy pénzügyi dokumentumot hoz létre (például egy XML-dokumentumot), amely képviseli a kiskereskedelmi tranzakciót vagy eseményt.
+5. A pénztár elküldi a pénzügyi bizonylatot, amelyet CRT előkészít a hardverállomás számára.
+6. A hardverállomás lefuttatja a pénzügyi csatlakozót, amely feldolgozza a pénzügyi dokumentumot, és tájékoztatja a pénzügyi eszközt vagy szolgáltatást.
+7. A pénztár elemzi a pénzügyi eszköz vagy szolgáltatás válaszát, és meghatározza, hogy sikeres volt-e a pénzügyi regisztráció.
+8. A CRT elmenti a választ a csatorna-adatbázisba.
 
-  #### <a name="examples"></a>Példák 
+![Megoldásséma](media/emea-fiscal-integration-solution.png "Megoldásséma")
 
-  |  | Formátum | Példa | 
-  |--------|--------|--------|
-  | Áfaszázalékok beállítása | value : VATrate | 1 : 2000, 2 : 1800 |
-  | Áfakódok leképezése | VATcode : value | vat20 : 1, vat18 : 2 |
-  | Fizetőeszköz-típusok leképezése | TenderTyp : value | Cash : 1, Card : 2 |
+## <a name="error-handling"></a>Hibakezelés
 
-- Hozzon létre **Pénzügyi összekötő csoportokat** a **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Összekötő pénzügyi csoport** elemnél. Az összekötőcsoport a funkcionális profil része, amely össze van kötve az azonos funkciókat végrehajtó pénzügyi összekötőkkel, és a pénzügyi regisztrációs folyamat azonos szakaszában használt.
+A pénzügyi integrációs keretrendszer a hibák kezelésére a pénzügyi regisztráció során a következő lehetőségeket nyújtja:
 
-   - Működési profilok hozzáadása az összekötőcsoporthoz. Kattintson a **Hozzáadás** lehetőségre a **Funkcionális profilok** lapon, majd válassza ki a profil számát.
-   - Ha fel szeretné függeszteni a működési profil használatát, a **Letiltás** beállítása legyen **Igen**. 
-   
-     Ez a módosítás csak az aktuális összekötőcsoportot érinti. Ugyanazt a funkcionális profilt az egyéb összekötőcsoportokban továbbra is használhatja.
+- **Újrapróbálkozás** – Az operátorok használhatják ezt a lehetőséget, ha a hiba gyorsan feloldható, és a pénzügyi regisztrációt újrafuttathatja. Például ezt a lehetőséget használhatja, amikor a pénzügyi eszköz nincs csatlakoztatva, a pénzügyi nyomtatóból kifogyott a papír, vagy papírelakadás van a pénzügyi nyomtatóban.
+- **Érvénytelenítés** – Ezzel a lehetőséggel az operátorok elhalaszthatják az aktuális tranzakció vagy esemény pénzügyi regisztrációját, ha sikertelen. A regisztráció elhalasztása után az operátor folytathatja a munkát a pénztában, és bármely műveletet végrehajthat, amihez nincs szükség a pénzügyi regisztrációra. Ha olyan esemény történik a pénztárban, amelyhez a pénzügyi regisztráció szükséges (például egy új tranzakciót nyitnak), a hibakezelési párbeszédpanel automatikusan megjelenik és értesíti az operátort, hogy a korábbi tranzakciót nem megfelelően regisztrálták, és hibakezelési lehetőségeket nyújt.
+- **Kihagyás** – Az operátorok használhatják ezt a lehetőséget, amikor a pénzügyi regisztráció bizonyos feltételek fennállása esetén elhagyható, és az általános műveletek folytathatók a pénztárban. Ez a beállítás például használható, amikor egy értékesítési tranzakciót, amelynek a pénzügyi regisztrációja nem sikerült, a különleges papírnaplóban lehet regisztrálni.
+- **Megjelölés regisztráltként** – Az operátorok használhatják ezt a lehetőséget, amikor a tranzakció ténylegesen regisztrálva van a pénzügyi eszközben (például egy pénzügyi nyugtát kinyomtattak), de hiba történt a pénzügyi válasz csatorna-adatbázisba mentése közben.
 
-     >[!NOTE]
-     > Egy összekötőcsoporton belül minden egyes pénzügyi összekötő csak egy funkcionális profillal rendelkezhet.
+> [!NOTE]
+> A **Kihagyás** és a **Megjelölés regisztráltként** beállításokat aktiválni kell a pénzügyi regisztrációs folyamatban a használatuk előtt. Ezenkívül megfelelő engedélyt kell biztosítani az operátoroknak.
 
-- Hozzon létre egy **Összekötő műszaki profilt** a **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Összekötő funkcionális profilok** elemnél az egyes pénzügyi összekötőkhöz.
-  - Válasszon ki egy összekötőnevet.
-  - Válasszon ki egy összekötőtípust. 
-      - **Helyi** – Állítsa be ezt a típust a fizikai eszközökhöz vagy a helyi számítógépen telepített alkalmazásokhoz.
-      - **Belső** – Állítsa be ezt a típust a kiskereskedelmi kiszolgálóhoz kapcsolódó pénzügyi eszközökhöz és szolgáltatásokhoz.
-      - **Külső** – Állítsa be ezt a típust a külső pénzügyi szolgáltatásokhoz, például az adóhatóság által megadott külső webportálokhoz.
-    
-  - A beállításokat adja meg a **Kapcsolat** lapon.
+A **Kihagyás** és **Megjelölés regisztráltként** beállítások lehetővé teszik az infókódok számára, hogy a hibával kapcsolatos meghatározott információkat rögzítsenek, például a hiba okát vagy a pénzügyi regisztráció kihagyásának indoklását, vagy a tranzakció regisztráltként való megjelölését. Hibakezelési paraméterek beállításával kapcsolatos további tudnivalókat lásd: [Hibakezelési beállítások beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > Egy korábban betöltött konfiguráció frissített változata lesz betöltve a funkcionális és a műszaki profilokhoz is. Ha egy megfelelő összekötő vagy dokumentum szolgáltató már használatban van, akkor értesítést kap. Alapértelmezés szerint a funkcionális és a műszaki profilokban saját kezűleg végrehajtott összes módosítás tárolva lesz. Annak érdekében, hogy ezeket a profilok a konfigurációból származó paraméterek alapértelmezett csoportjával felülbírálja, kattintson a **Frissítés** elemre az **Összekötő funkcionális profil** lapon és az **Összekötő műszaki profilok** lapon.
- 
-- Hozzon létre egy **Pénzügyi regisztráció folyamatot** itt: **Kiskereskedelem > Csatorna beállítása > Pénzügyi integráció > Pénzügyi regisztrációs eljárás**, a pénzügyi integráció minden egyedi folyamatához. A regisztrációs folyamatot a regisztrációs lépések sorrendje, és az egyes lépéseknél használt összekötőcsoport határozza meg. 
-  
-  - Regisztráció lépéseket adjon hozzá a folyamathoz:
-      - Kattintson a **Hozzáadás** gombra.
-      - Válasszon ki egy összekötőtípust.
-      
-      >[!NOTE]
-      > Ez a mező határozza meg, hogy a rendszer hol keresi az összekötőt a műszaki profilban, vagy a hardverprofilokban a **helyi** összekötőtípusnál, vagy a POS-funkcióprofilokban az egyéb pénzügyiösszekötő-típusoknál.
-      
-   - Válasszon ki egy összekötőcsoportot.
-   
-     >[!NOTE]
-     > Kattintson az **Érvényesítés** elemre a regisztrációs folyamat szerkezeti integritásának ellenőrzéséhez. Ellenőrzéseket végezni a következő esetekben ajánlott:
-       >- Egy új regisztrációs folyamathoz, miután minden beállítás befejeződött, többek között a POS-funkcióprofilok és hardverprofilok kötése.
-       >- Miután frissítéseket hajtottak végre egy meglévő regisztrációs folyamaton.
+## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Pénzügyi válasz tárolása pénzügyi tranzakcióban
 
--  A pénzügyi regisztrációs folyamatok kötése a POS-funkcióprofilokhoz: **Kiskereskedelem > Csatorna beállítása > POS-beállítás > POS-profilok > Funkcióprofilok**.
-   - Kattintson a **Szerkesztés** elemre, és válassza ki a **Folyamatszám** elemet a **Pénzügyi regisztrációs folyamat** lapon.
-- Az összekötő műszaki profilok kötése a hardverprofilokhoz: **Kiskereskedelem > Csatorna beállítása > POS-beállítás > POS-profilok > Hardverprofilok**.
-   - Kattintson a **Szerkesztés** elemre, majd kattintson az **Új** elemre a **Pénzügyi műszaki profil** lapon.
-   - Válasszon egy összekötő műszaki profilt a **Profil száma** mezőben.
-   
-     >[!NOTE]
-     > Egy hardverprofilhoz több technikai profilt adhat hozzá. Azonban ez nem támogatott, ha a hardverprofilnak egynél több metszete van bármely összekötőcsoporttal. A helytelen beállítások elkerülése érdekében azt ajánljuk, hogy az összes hardverprofil frissítése után ellenőrizze a regisztrációs folyamatot.
+Ha egy tranzakció vagy esemény pénzügyi regisztrációja sikeres, a pénzügyi tranzakció létrejön a csatorna-adatbázisban, és az eredeti tranzakcióhoz vagy eseményhez kapcsolódik. Hasonlóképpen ha a **Kihagyás** vagy **Megjelölés regisztráltként** lehetőség ki van választva egy sikertelen pénzügyi regisztráció esetén, a pénzügyi tranzakció ezeket az adatokat tárolja. A pénzügyi tranzakció tárolja a pénzügyi eszköz vagy szolgáltatás pénzügyi válaszát. Ha a pénzügyi regisztrációs folyamat több lépésből áll, a sikeres vagy sikertelen regisztrációt eredményező folyamat minden egyes lépéséhez létrejön egy pénzügyi tranzakció.
 
+Pénzügyi tranzakciók a Retail Headquarters szolgáltatásba kerülnek átvitelre a *P-feladat* segítségével, a kiskereskedelmi tranzakciókkal együtt. A **Pénzügyi tranzakciók** gyorslapon a **Kiskereskedelmi üzleti tranzakciók** oldalon belül megtekintheti a pénzügyi tranzakciókat, amelyek kiskereskedelmi tranzakciók kapcsolódnak.
+
+A pénzügyi tranzakció tárolja a következő adatokat:
+
+- Pénzügyi regisztrációs folyamat részletei (folyamat, csatlakozócsoport, csatlakozó stb). Szintén tárolja a pénzügyi eszköz sorozatszámát a **Pénztárgép száma** mezőben, ha ez az információ szerepel a pénzügyi válaszban.
+- A pénzügyi regisztráció állapota: **Kész** sikeres regisztráció esetén, **Kihagyva**, ha az operátor a **Kihagyás** lehetőséget választotta egy sikertelen regisztráció esetén, vagy **Megjelölve regisztráltként**, ha az operátor bejelölte a **Megjelölés regisztráltként** lehetőséget.
+- A kijelölt pénzügyi tranzakcióhoz kapcsolódó összes infókód-tranzakció. Az Infókód-tranzakciók megtekintéséhez a **Pénzügyi tranzakciók** gyorslapon válasszon egy olyan pénzügyi tranzakciót, amelynek állapota **Kihagyva** vagy **Megjelölve regisztráltként**, majd válassza ki **Infókód-tranzakciók** elemet.
+
+## <a name="fiscal-texts-for-discounts"></a>Pénzügyi szövegek engedményekhez
+
+Egyes országokban vagy régiókban különleges követelmények vannak érvényben a további szövegekkel kapcsolatban, amelyeket a pénzügyi nyugtára kell nyomtatni, amikor különböző engedményeket alkalmaznak. A pénzügyi integráció funkció segítségével beállíthat egy speciális szöveget az engedményhez, amelyet az engedmény sora után a pénzügyi nyugtára nyomtat. Manuális engedmények esetén, konfigurálhatja az infókódhoz megadott pénzügyi szöveget, amelyhez az infókód a **Termék engedménye** infókódként van megadva a pénztár funkcióprofilján. A pénzügyi szövegek engedményekhez való beállításával kapcsolatos további tudnivalókat lásd: [Pénzügyi szövegek beállítása engedményekhez](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Pénzügyi X- és pénzügyi Z-jelentések nyomtatása
+
+A pénzügyi integráció funkció támogatja az integrált pénzügyi eszköz vagy szolgáltatásra vonatkozóan egyedi napzáró kimutatások generálását:
+
+- A megfelelő műveletek futtatására használatos új gombokat a pénztár képernyő-elrendezésén kell hozzáadni. További részletekért lásd: [Pénzügyi X/Z jelentések beállítása a pénztárból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- A pénzügyi integrációs mintában ezeket a műveleteket meg kell feleltetni a pénzügyi eszköz megfelelő műveleteivel.
+
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Pénzügyi integrációs minták a Retail szoftverfejlesztői készletben (SDK)
+
+A Retail alkalmazással kiadott Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhetők el:
+
+- [Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan](emea-ita-fpi-sample.md)
+- [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)
+
+A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
+
+- [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
+- [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
+- [Ellenőrzőegység integrációs minta Svédország esetén](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

@@ -1,13 +1,13 @@
---- 
-title: "Kulcsrakész jelentések generálása és futtatása"
-description: "Használja ezt a feladatútmutató kulcsrakész jelentések futtatásához a központban a különböző munkaterületekről és Lekérdezésekből Értékesítési jelentések a Kiskereskedelem és Kereskedelem alatt."
+---
+title: Kulcsrakész jelentések generálása és futtatása
+description: Használja ezt a feladatútmutató kulcsrakész jelentések futtatásához a központban a különböző munkaterületekről és Lekérdezésekből Értékesítési jelentések a Kiskereskedelem és Kereskedelem alatt.
 author: ashishmsft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365247"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
 
@@ -39,8 +39,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 1. Ugorjon a Kiskereskedelem és kereskedelem > Termékek és kategóriák > Kategóriák és termékmenedzsment lehetőségre.
 2. Kattintson a nyílra a Jelentések szakasz kibontásához vagy összecsukásához.
 3. Kattintson a Vezető termékek jelentései lehetőségre.
-4. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+4. Adjon meg egy dátumot a Kezdő dátum mezőben.
 5. Adja meg a dátumot a „Záró dátum” mezőben.
 6. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 7. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.
@@ -52,8 +51,7 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 
 ## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Indítsa el a jelentéseket a lekérdezésekből, illetve a Retail & Commerce alkalmazás alatt található értékesítési jelentéseket.
 1. Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Értékesítési kategória-jelentés lehetőségre.
-2. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+2. Adjon meg egy dátumot a Kezdő dátum mezőben.
 3. Adja meg a dátumot a „Záró dátum” mezőben.
 4. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 5. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.
@@ -63,11 +61,9 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 
 ## <a name="export-an-hq-reports"></a>Központi jelentések exportálása
 1. Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Szervezeti kategória-jelentés lehetőségre.
-2. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+2. Adjon meg egy dátumot a Kezdő dátum mezőben.
 3. Adja meg a dátumot a „Záró dátum” mezőben.
 4. Kattintson az OK gombra.
 5. Kattintson az Exportálás elemre.
 6. Kattintson a PDF elemre.
-
 

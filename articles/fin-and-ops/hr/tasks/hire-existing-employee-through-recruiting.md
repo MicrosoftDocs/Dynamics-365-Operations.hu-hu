@@ -1,13 +1,13 @@
---- 
-title: "Meglévő dolgozók felvétele toborzás útján"
-description: "Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már alkalmazottak a szervezetben."
+---
+title: Meglévő dolgozók felvétele toborzás útján
+description: Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már alkalmazottak a szervezetben.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365385"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Meglévő dolgozók felvétele toborzás útján
 
@@ -40,5 +40,4 @@ Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már a
 8. Opcionálisan kiválaszthatja az ok kódját. Példa: Átszervezés
 9. Kattintson a Pozíció módosítása gombra.
     * Ezen a ponton a kompenzáció is módosítható. Ha most nem rendel hozzá kompenzációt, módosíthatja a munkaképernyőn, a Kompenzáció lap és Rögzített terv kiválasztásával. Miután kiválasztotta a Pozíció módosítása lehetőséget, az alkalmazás állapota „Alkalmazott”-ra frissül.  
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak"
-description: "A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz."
+---
+title: Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak
+description: A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 07f5a16ccb349fbef4c0d2be14c1ef02ed8831dd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364557"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz. A naplóból kollégák tevékenységéhez is küldhető dicséret. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz. A naplóból kollégák tevékenységéhez is küldhető dicséret. Ez az eljárás az USMF bemutatócéget használja. Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 1. Lépjen a Minden munkaterület > Alkalmazotti önkiszolgáló rendszer pontra.
 2. Kattintson a Teljesítménynapló elemre.
@@ -43,7 +43,7 @@ A teljesítménynapló a célok teljesítésének módjával, valamint adott id�
 9. A Kulcsszavak mezőben adjon meg egy értéket.
 10. Kattintson a Külső hivatkozás hozzáadása elemre.
 11. A Leírás mezőbe írja be az „Envision” értéket.
-12. Az Internetcím mezőbe írja be a „https://www.microsoft.com/en/envision/default” címet.
+12. Írja be a(z) „https://www.microsoft.com/en/envision/default” értéket az internetcím mezőbe.
 13. Kattintson a Mentés gomb alatti "Teljesítménynapló" feliratra a rácshoz való visszatéréshez.
     * A kijelölt napló vagy naplók hozzáadhatók egy célhoz, és ezt követően megjelennek a cél megnyitásakor. Bekerül egy hivatkozás a Hivatkozások gyorslapra. Ha egy naplót hozzáad egy célhoz, majd a célt hozzáadja egy ellenőrzéshez, úgy a napló automatikusan megjelenik az ellenőrzésben.  
     * A kijelölt napló vagy naplók hozzáadhatók egy ellenőrzéshez, és ezt követően megjelennek az ellenőrzés megnyitásakor.    Bekerül egy hivatkozás a Hivatkozások gyorslapra.  
@@ -55,5 +55,4 @@ A teljesítménynapló a célok teljesítésének módjával, valamint adott id�
 19. Válasszon ki valakit a cég alkalmazottainak listájából.
 20. A Leírás mezőbe írja be a „Köszönöm a konferencián nyújtott sok segítséget!” szöveget.
 21. Kattintson a Küldés gombra.
-
 

@@ -1,49 +1,48 @@
 ---
-title: "Gyakorlatvezető Power BI tartalom"
-description: "Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Gyakorlatkezelés Power BI tartalom
+description: Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367800"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Gyakorlatvezető Power BI tartalom
+# <a name="practice-manager-power-bi-content"></a>Gyakorlatkezelés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
-A **Gyakorlatvezető** Power BI-tartalom gyakorlatvezetők és projektvezetők számára készült. Olyan fontos mutatókat biztosít, amelyek a szervezetnél futó projektekkel kapcsolatosak. Az irányítópult áttekintést nyújt a projektekről és a kapcsolódó ügyfelekről. A jelentésszintű szűrők segítségével jelentés készíthető a meghatározott jogi személyekhez. Ez a Power BI-tartalom adatokat kér le a projektkönyvelés összetett méréseitől.
+A **Gyakorlatvezető** Power BI tartalom gyakorlatvezetők és projektvezetők számára készült. Olyan fontos mutatókat biztosít, amelyek a szervezetnél futó projektekkel kapcsolatosak. Az irányítópult áttekintést nyújt a projektekről és a kapcsolódó ügyfelekről. A jelentésszintű szűrők segítségével jelentés készíthető a meghatározott jogi személyekhez. Ez a Power BI tartalom adatokat kér le a projektkönyvelés összetett méréseitől.
 
-A **Gyakorlatvezető** Power BI-tartalom öt jelentésoldalt tartalmaz: egy áttekintő oldalt és négy olyan oldalt, amely a projekt költségeinek, bevételeinek, jelenérték-kezelésének és órainak mutatóira vonatkozó részleteket tartalmaz, amelyek különböző dimenziók szerint vannak lebontva.
+A **Gyakorlatvezető** Power BI tartalom öt jelentésoldalt tartalmaz: egy áttekintő oldalt és négy olyan oldalt, amely a projekt költségeinek, bevételeinek, jelenérték-kezelésének és órainak mutatóira vonatkozó részleteket tartalmaz, amelyek különböző dimenziók szerint vannak lebontva.
 
 A tartalom minden összege a rendszer pénznemében jelenik meg. Beállíthatja az rendszer alapértelmezett pénznemét a **Rendszerparaméterek** oldalon.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 
-A **Gyakorlatkezelés** Power BI-tartalom a **Projektvezetés** munkaterületen látható.
+A **Gyakorlatkezelés** Power BI tartalom a **Projektvezetés** munkaterületen látható.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Jelentések, amelyek a Power BI-tartalomban szerepelnek
 
 A következő táblázat ismerteti a **Gyakorlatvezető** Power BI-tartalom egyes jelentésoldalain található mutatókat.
 
@@ -55,11 +54,11 @@ A következő táblázat ismerteti a **Gyakorlatvezető** Power BI-tartalom egye
 | EVM               | Költség- és ütemezésteljesítmény-index projekt szerint |
 | óra             | <ul><li>Tényleges számlázható hasznos órák és tényleges számlázható haszontalan órák és költségvetési órák</li><li>Tényleges számlázható hasznos órák és tényleges számlázható haszontalan órák projekt szerint</li><li>Tényleges számlázható hasznos órák és tényleges számlázható haszontalan órák erőforrás szerint</li><li>Tényleges számlázható órák aránya projekt szerint.</li><li>Tényleges számlázható órák aránya erőforrás szerint.</li></ul> |
 
-Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) lehetőségre. Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése egy ábrán látható.
+Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése egy ábrán látható.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
-A **Gyakorlatvezető** Power BI-tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
+A **Gyakorlatvezető** Power BI tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
 A következő szakaszok leírják az egyes entitások által használt összesített mértékeket.
 
@@ -119,4 +118,3 @@ A következő szakaszok leírják az egyes entitások által használt összesí
 | Fő összesítő mérték       | Mező               | Leírás |
 |---------------------------------|---------------------|-------------|
 | Befejeződött tevékenység tervezett költsége | Sum(TotalCostPrice) | Befejeződött feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
-

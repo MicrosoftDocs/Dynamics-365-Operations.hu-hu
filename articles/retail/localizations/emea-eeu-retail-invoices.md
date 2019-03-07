@@ -1,13 +1,13 @@
 ---
-title: "Retail vevői számlák és eladási visszárurendelések a kelet-európai országokban"
-description: "Ez a témakör leírja, hogyan adja meg az adatokat a vevői számlákhoz és az értékesítési visszárurendelésekhez a közép-kelet-európai országok számára."
+title: Retail vevői számlák és eladási visszárurendelések a kelet-európai országokban
+description: Ez a témakör leírja, hogyan adja meg az adatokat a vevői számlákhoz és az értékesítési visszárurendelésekhez a közép-kelet-európai országok számára.
 author: epopov
 manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,15 +15,14 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 01239f0eff3e59f62188fca64f99e93be843d2e2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 20ae19fb03acb075b6553b95808779c905bcd31b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370858"
 ---
-
 # <a name="retail-customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Retail vevői számlák és eladási visszárurendelések a kelet-európai országokban
 
 
@@ -46,4 +45,3 @@ Az alábbi információkat állíthatja be a Retail POS rendszerben generált ve
   * Ugrás a **Szervezeti adminisztráció > Számsorozatok > Számlálókezelés** elemre. Rekordnak kell lennie ahol **Modul** = **Értékesítés** és **Típus** = **Számla**.
 
   * Ugrás a **Szervezeti adminisztráció > Számsorozatok > Számlaszámozás beállítása** elemre. Jelölje be a **Kiskereskedelem** jelölőmezőt annál a számsorozatnál, amellyel a vevői számlákat számozza.
-

@@ -1,13 +1,13 @@
 ---
-title: "Vevői és szállítói kompenzáció beállítása"
-description: "Ez a témakör arról nyújt információkat, hogy miként futtathat kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van."
+title: Vevői és szállítói kompenzáció beállítása
+description: Ez a témakör arról nyújt információkat, hogy miként futtathat kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
 author: mrolecki
 manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8ba93808076b83d7dcb32b1b3dc06d6055f693f3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: d249d64040a6fb2ae645c651ffaf367ddbfca944
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370908"
 ---
-
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -95,4 +94,3 @@ Miután létrehozott egy kompenzációs ajánlatot egy naplónál, és az együt
 **K: Minden országban vagy régióban rendelkezésre áll a kompenzáció funkciója?**
 
 **V:** A kompenzáció funkció csak azoknál a jogi személyeknél áll rendelkezésre, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
-

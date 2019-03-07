@@ -1,13 +1,13 @@
 ---
-title: "A pénzügyi jelentés összetevői"
-description: "A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát."
+title: A pénzügyi jelentés összetevői
+description: A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368145"
 ---
-
 # <a name="financial-report-components"></a>A pénzügyi jelentés összetevői
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,7 @@ Mindegyik építőelem-csoporthoz rendelt építőelemet megtekintheti. Az épí
 
 ### <a name="export-a-building-block-group"></a>Építőelem-csoport exportálása
 
-Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat a Finance and Operations telepítések között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
+Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat a Finance and Operations telepítések között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 
 1. A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2. Az **Építőelem-csoportok** párbeszédpanelen válassza ki az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** parancsra.
@@ -128,4 +127,3 @@ Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap ho
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-

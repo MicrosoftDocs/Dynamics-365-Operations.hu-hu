@@ -1,13 +1,13 @@
 ---
-title: "Kis értékű tárgyi eszközök"
-description: "Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt."
+title: Kis értékű tárgyi eszközök
+description: Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 85ca328013fdf276d770cdc12355eb37652d056d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: 72400aefb1d104be2eb350e72e32ee9e219eecf4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370870"
 ---
-
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Amikor beszerzési tranzakciót hoz létre egy olyan eszközhöz, amely a kis é
 ## <a name="generate-acquisition-and-depreciation-transactions-for-low-cost-fixed-assets"></a>Beszerzési és értékcsökkenési tranzakciók létrehozása kis értékű tárgyi eszközökhöz
 
 Eszköz megszerzésekor egy beszerzési tranzakciót hoz létre a beszerzést megelőző tranzakcióból. Amikor feladja a kis értékű tárgyi eszköz beszerzési tranzakcióját, az értékcsökkenési tranzakció automatikusan létrejön.
-
 
 
 

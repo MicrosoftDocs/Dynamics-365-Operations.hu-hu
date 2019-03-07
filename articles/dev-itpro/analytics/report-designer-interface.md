@@ -1,13 +1,13 @@
 ---
-title: "Jelentéstervező felület"
-description: "Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot."
+title: Jelentéstervező felület
+description: Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368030"
 ---
-
 # <a name="report-designer-interface"></a>Jelentéstervező felület
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ Az **Eszközök** menü minden felhasználó számára elérhető, de néhány p
 |-------------------------------|-------------|
 | Védelem                       | Jelszó alkalmazása az aktuális építőelemre. Ez a parancs **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
 | Jelentés-várólista állapota           | Nyissa meg a **Jelentés-várólista állapota** párbeszédpanelt, ahol megtekintheti a legutoljára létrehozott jelentéseket, illetve az egyes jelentések részleteit. |
-| Forrásrendszerre vonatkozó adatok     | Az Ön által használt Microsoft Dynamics ERP rendszer beállításainak megjelenítése. Ez a parancs **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
+| Forrásrendszer adatai     | A beállítások megjelenítése a Microsoft Dynamics ERP rendszerhez. Ez a parancs **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
 | Felelősnél tételek             | A jelenleg nyitva lévő sordefiníciók, oszlopdefiníciók, jelentési-fa definíciók, és jelentésdefiníciók megjelenítése. Ez a parancs **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
 | Gyorsítótárazott pénzügyi adatok frissítése | Adatok frissítése a pénzügyi dimenziók oszlopban. |
 | Beállítások                       | Nyissa meg a **Beállítások** párbeszédpanel, ahol módosítani tudja Jelentéstervezőre vonatkozó felhasználói preferenciákat. |
@@ -229,4 +228,3 @@ A Jelentéstervező eszköztár gyors hozzáférést biztosít a Jelentéstervez
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 
 [Pénzügyi jelentés létrehozása](generate-financial-report.md)
-

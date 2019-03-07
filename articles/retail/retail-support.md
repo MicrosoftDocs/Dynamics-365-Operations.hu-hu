@@ -1,35 +1,34 @@
 ---
-title: "Támogatás kérése a Dynamics 365 for Retail szolgáltatásnál"
-description: "Ez a cikk bemutatja, hogyan kérhető segítség a Microsoft Dynamics 365 for Retail szolgáltatással kapcsolatban."
+title: Támogatás kérése a Dynamics 365 for Retail alkalmazáshoz
+description: A cikk ismerteti, hogyan kaphat segítséget a Microsoft Dynamics 365 for Retail alkalmazáshoz.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364051"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>Támogatás kérése a Dynamics 365 for Retail szolgáltatásnál
+# <a name="get-support-for-dynamics-365-for-retail"></a>Támogatás kérése a Dynamics 365 for Retail alkalmazáshoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja, hogyan kérhető segítség a Dynamics 365 for Retail szolgáltatással kapcsolatban.
+A cikk ismerteti, hogyan kaphat segítséget a Dynamics 365 for Retail alkalmazáshoz.
 
 ## <a name="contact-support"></a>Kapcsolatfelvétel a támogatási szolgálattal
 
@@ -49,7 +48,7 @@ Ha támogatást szeretne a Retail szolgáltatással kapcsolatban, használja a k
 <tbody>
 <tr>
 <td>Kérdezzen a közösségtől.</td>
-<td>Ugorjon a <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> közösségi oldalára, hogy válaszokat kaphasson kérdéseire a Dynamics közösségtől.</td>
+<td>Ugrás a <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> közösség lapra a Dynamics közösségtől való segítségkéréshez.</td>
 </tr>
 <tr>
 <td>Használja a Megoldáskereső eszközt.</td>
@@ -72,7 +71,7 @@ Ha támogatást szeretne a Retail szolgáltatással kapcsolatban, használja a k
 <li>Olyan hibák, amelyek az LCS használatakor, illetve az LCS elérésekor fordulnak elő.</li>
 <li>A Retail használata során előforduló hibák.</li>
 </ul>
-A CustomerSource webhellyel és annak elérésével , az elektronikus tanulással a kereséssel, a Tudásbázissal, fájlok letöltésével és lapokkal vagy rendszerhibákkal kapcsolatos technikai kérdésekkel lépjen a <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Webhellyel kapcsolatos támogatás</a> lehetőségre.</td>
+A CustomerSource webhellyel és annak elérésével, az elektronikus tanulással a kereséssel, a Tudásbázissal, fájlok letöltésével és lapokkal vagy rendszerhibákkal kapcsolatos technikai kérdésekkel lépjen a <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Webhellyel kapcsolatos támogatás</a> lehetőségre.</td>
 </tr>
 <tr>
 <td>Találja meg a válaszait a Retail és a Finance and Operations licencelésével kapcsolatos kérdéseire.</td>
@@ -85,5 +84,4 @@ A CustomerSource webhellyel és annak elérésével , az elektronikus tanulássa
 </tbody>
 </table>
 
-Ha további tájékoztatást szeretne a Microsoft Dynamics támogatási ajánlatokról, lásd: [Microsoft Dynamics online támogatás](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Ha további tájékoztatást szeretne a Microsoft Dynamics támogatási ajánlatokról, lásd: [Microsoft Dynamics online támogatás](https://dynamics.microsoft.com/en-us/support/).

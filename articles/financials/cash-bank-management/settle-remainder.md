@@ -1,13 +1,13 @@
 ---
-title: "Hátralék kiegyenlítése"
-description: "Egy kiegyenlítési tevékenységből maradt összeget úgy egyenlíthet ki, hogy azt a főkönyvi számlához rendeli."
+title: Hátralék kiegyenlítése
+description: Egy kiegyenlítési tevékenységből maradt összeget úgy egyenlíthet ki, hogy azt a főkönyvi számlához rendeli.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367202"
 ---
-
 # <a name="settle-remainder"></a>Hátralék kiegyenlítése
 
 [!include [banner](../includes/banner.md)]
@@ -71,4 +70,3 @@ A hátralék kiegyenlítéséhez tegye a következőket:
 7)  Azt is teheti, hogy kifizetési naplót hoz létre a kiegyenlített hátralékkal, vagy napló nélkül is beküldheti. Válassza ki **Igen** lehetőséget a **Szerkesztés naplóban** menüben kifizetési napló létrehozásához. A létrehozott kifizetési naplót szerkeszteni is lehet.
 8)  Kattintson a **Hátralék kiegyenlítése** elemre. Ha azt választotta, hogy hozzon létre egy naplót, a gomb módosul a **Napló létrehozása** értékre. Ehelyett kattintson a **Napló létrehozása** gombra.
 9)  Ha egy kifizetési naplót hozott létre, a napló oldal nyílik meg, miután a **Hátralék kiegyenlítése** lehetőségre kattint. Egy naplósor hozzáadódik a naplóhoz, a kiegyenlített hátralék összegével összegként, illetve a hátralék kiegyenlítésének számlájával ellenszámlaként. Ha hozzáadott egy vevőt vagy szállítót, hogy a kiegyenlítésiösszeget egy másik vevőhöz vagy szállítóhoz helyezze át, egy további sor lesz hozzáadva a naplóhoz, hogy a kiegyenlítési összeg a vevőhöz vagy beszállítóhoz legyen áthelyezve.
-

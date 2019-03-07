@@ -1,13 +1,13 @@
 ---
-title: "125 százalékos degresszív értékcsökkenés"
-description: "Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
+title: 125 százalékos degresszív értékcsökkenés
+description: Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f7af5413376a98c3b2b7ded46c757c9156a3fadf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ec88d799c44e035b6490861383557f8c3beda41
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362717"
 ---
-
 # <a name="125-percent-reducing-balance-depreciation"></a>125 százalékos degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
@@ -85,8 +84,7 @@ A 125% degresszív értékcsökkenési módszer elosztja a 125 százalékot az �
 | 3. év | 5625 × 25% = 1406,25                        | (6625 – 1406,25) = 5218,75 | (5625 – 1406,25) = 4218,75         |
 
 > [!NOTE] 
-> Általában amikor az összeg számolása a 125 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz, mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamra létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
-
+> Általában amikor az összeg számolása a 125 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz, mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamra létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
 
 
 

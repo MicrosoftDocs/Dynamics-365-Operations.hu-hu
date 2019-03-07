@@ -1,13 +1,13 @@
 ---
-title: "Raktárteljesítmény Power BI-tartalom"
-description: "Ez a témakör azt ismerteti, mit tartalmaz a Raktári teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Raktári teljesítmény Power BI tartalom
+description: Ez a témakör azt ismerteti, mit tartalmaz a Raktári teljesítmény Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,35 +18,34 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365362"
 ---
-
-# <a name="warehouse-performance-power-bi-content"></a>Raktárteljesítmény Power BI-tartalom
+# <a name="warehouse-performance-power-bi-content"></a>Raktári teljesítmény Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Raktári teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör azt ismerteti, mit tartalmaz a **Raktári teljesítmény** Microsoft Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
-A **Raktári teljesítmény** Power BI-tartalmat úgy hozták létre, hogy a raktár és a műveletek vezetői képesek figyelemmel kísérni a fontos bejövő, kimenő és készletmutatókat. A program a Raktárkezelésre, termékekre vonatkozó és más tranzakciós adatokat használja, és egyaránt megjeleníti a raktárteljesítményt, illetve szállítókra, termékcsoportokra, termékekre, helyszínekre és raktárakra lebontva is bemutatja azt.
+A **Raktári teljesítmény** Power BI tartalmat úgy hozták létre, hogy a raktár és a műveletek vezetői képesek figyelemmel kísérni a fontos bejövő, kimenő és készletmutatókat. A program a Raktárkezelésre, termékekre vonatkozó és más tranzakciós adatokat használja, és egyaránt megjeleníti a raktárteljesítményt, illetve szállítókra, termékcsoportokra, termékekre, helyszínekre és raktárakra lebontva is bemutatja azt.
 
-A raktárkezelők a **Raktárteljesítmény** Power BI-tartalom segítségével a következő három területet mérhetik:
+A raktárkezelők a **Raktárteljesítmény** Power BI tartalom segítségével a következő három területet mérhetik:
 
 - **Beérkező teljesítmény** – Mérje meg, mennyire jól teljesít egy szállító egy ügyfél igényeihez képest (más szóval, mérje a szállítási teljesítményt), és mérje fel az elhúzódó teljesítményt, hogy azonosítsa azokat a problémákat, amelyek a munkavállalókat vagy a cikkeket egy adott időszakban érintik. Fontos tudni, hogy a szállítók időben, korán vagy későn szállítanak-e, így meghatározhatja, hogy a szállító teljesítménye milyen hatást gyakorol az átfogó teljesítményre. Egy olyan szállító, aki a megadott időpontokon kívül szállít, különös terhelést gyakorolhat a raktárra a váratlan munka miatt, és növelheti az átlagos betárolási időt.
 - **Szállítási teljesítmény** – Megmérheti, hogy a raktár teljes mértékben és időben szállít-e az ügyfeleknek (más szavakkal lemérheti a kimenő szállítási és kézbesítési teljesítményeket), hogy azonosítsa azokat a problémákat, amelyek termékekkel, helyekkel vagy raktárakkal, illetve adott ügyfelekkel kapcsolatosak. Ha úgy találja, hogy késedelmesen szállít adott területekre vagy városokba, akkor lehet, hogy több figyelmet kell fordítania a szállításra vagy az ügyfél kezelésére.
-- **Hely készletének pontossága** – A készlet pontossága fontos a belső raktár-üzletiintelligencia (BI) szempontjából. Nagyon fontos, hogy meghatározza, hogy általában mennyire pontosan számol. Azonban fontos, hogy meghatározza, mennyire pontos a cikkek megfelelő helyeken való tárolására, és hogy kiemelje az eltérési adatokat annak érdekében, hogy jobb pozíciókat találjon a cikkek számára, vagy megkezdhesse az adott cikk számlálását. (Jelenleg az új cikkalapú számlálási funkció gyorsjavításként jelenik meg.) Ha ezt a Power BI-tartalmat használja a helyszínen megtalálható készletadatok helyességének megállapításához, a lopás is azonosítható a boltokban. Azt is meghatározhatja, hogy van-e olyan hely, ahol a kéznél lévő mennyiségek eltérnek a vállalati erőforrás-tervezési rendszer (ERP) adataitól. Lehet, hogy ezek a helyek túl nagyok, vagy nem lehet megszámolni őket. Emellett a fizikai helymeghatározás esetenként téves lehet, ezért nehéz egyetlen típusú cikket szinkronban tartani a kéznél lévő adatokkal.
+- **Hely készletének pontossága** – A készlet pontossága fontos a belső raktár-üzletiintelligencia (BI) szempontjából. Nagyon fontos, hogy meghatározza, hogy általában mennyire pontosan számol. Azonban fontos, hogy meghatározza, mennyire pontos a cikkek megfelelő helyeken való tárolására, és hogy kiemelje az eltérési adatokat annak érdekében, hogy jobb pozíciókat találjon a cikkek számára, vagy megkezdhesse az adott cikk számlálását. (Jelenleg az új cikkalapú számlálási funkció gyorsjavításként jelenik meg.) Ha ezt a Power BI tartalmat használja a helyszínen megtalálható készletadatok helyességének megállapításához, a lopás is azonosítható a boltokban. Azt is meghatározhatja, hogy van-e olyan hely, ahol a kéznél lévő mennyiségek eltérnek a vállalati erőforrás-tervezési rendszer (ERP) adataitól. Lehet, hogy ezek a helyek túl nagyok, vagy nem lehet megszámolni őket. Emellett a fizikai helymeghatározás esetenként téves lehet, ezért nehéz egyetlen típusú cikket szinkronban tartani a kéznél lévő adatokkal.
 
-## <a name="accessing-the-power-bi-content-pack"></a>Power BI-tartalomcsomag elérése
-A **Raktári teljesítmény** Power BI-tartalom a **Raktári teljesítmény** oldalon látható (**Raktárkezelés** \> **Lekérdezések és jelentések** \> **Raktári teljesítményelemzés** \> **Raktári teljesítmény**).
+## <a name="accessing-the-power-bi-content-pack"></a>A Power BI tartalmi csomag elérése
+A **Raktári teljesítmény** Power BI tartalom a **Raktári teljesítmény** oldalon látható (**Raktárkezelés** \> **Lekérdezések és jelentések** \> **Raktári teljesítményelemzés** \> **Raktári teljesítmény**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
-A **Raktárteljesítmény** Power BI-tartalom jelentést tartalmaz. Ez a jelentés több olyan metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Raktárteljesítmény** Power BI-tartalom megjelenítési formáinak áttekintése található.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
+A **Raktárteljesítmény** Power BI tartalom jelentést tartalmaz. Ez a jelentés több olyan metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Raktári teljesítmény** Power BI-tartalom megjelenítési formáinak áttekintése található.
 
 | Jelentéslap                 | Diagramok                                   | Leírás |
 |-----------------------------|------------------------------------------|-------------|
@@ -79,7 +78,7 @@ A **Raktárteljesítmény** Power BI-tartalom jelentést tartalmaz. Ez a jelent�
 | Szállítási teljesítmény        | Szállító hely / raktár              | Korai, időbeni vagy késedelmes hely vagy raktár szerint szállított százalékos értéke. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Adatmodell, illetve számítások ismertetése
-A **Raktári teljesítmény** Power BI-tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
+A **Raktári teljesítmény** Power BI tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
 A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 
@@ -113,4 +112,3 @@ A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 | Szállítási teljesítmény        | Szállítva termék szerint                       | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Vevő által szállítva                      | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Szállító hely / raktár              | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
-

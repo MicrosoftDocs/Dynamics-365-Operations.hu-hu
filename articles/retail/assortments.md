@@ -1,13 +1,13 @@
 ---
-title: "Szortiment kezelése"
-description: "Ez a témakör bemutatja a Microsoft Dynamics 365 for Retail szortimentkezelésének az alapfogalmait, és tartalmaz a megvalósítással kapcsolatos szempontokat a projekt számára."
+title: Szortiment kezelése
+description: Ez a témakör bemutatja a Microsoft Dynamics 365 for Retail szortimentkezelésének az alapfogalmait, és tartalmaz a megvalósítással kapcsolatos szempontokat a projekt számára.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365040"
 ---
-
 # <a name="assortment-management"></a>Szortiment kezelése
 
 [!include [banner](../includes/banner.md)]
@@ -108,4 +107,3 @@ A következő végrehajtási követelményeket figyelembe kell venni a szortimen
 - **Értékesítés és visszáru a szortimenteken kívül** – Ez a lehetőség segítséget nyújt a kiskereskedőknek a szortimentek hatékony kezeléséhez úgy, hogy a rendelkezésre álló termékeket az üzlet alapvető termékmixére korlátozzák. Ez a lehetőség azt is lehetővé teszi a kiskereskedők számára, hogy sikeresen kezeljék azokat a helyzeteket, amikor a termék véletlenül kimaradt egy szortimentből, vagy egy terméket a szortiment érvényességi dátumait kívül hoztak vissza.
 
 Ha egy termékadat nem szerepel a csatorna-adatbázisban, a pénztár valós idejű hívást intéz a központhoz, hogy lekérje a szükséges adatokat, és így megtörténhessen a termék értékesítése, visszavitele vagy elhelyezése egy vevői rendelésen. Az ezen a módon lekért termékinformációk csak az adott tranzakció hatóköre során érhetők el. A termék nincs hozzáadva a szortiment definíciójához. Ennek megfelelően a későbbi valós idejű hívások szükség szerint történnek meg.
-

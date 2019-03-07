@@ -1,13 +1,13 @@
 ---
-title: "Termelési teljesítmény Power BI-tartalom"
-description: "Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Termelési teljesítmény Power BI tartalom
+description: Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365960"
 ---
-
-# <a name="production-performance-power-bi-content"></a>Termelési teljesítmény Power BI-tartalom
+# <a name="production-performance-power-bi-content"></a>Termelési teljesítmény Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Termelési teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör azt ismerteti, mit tartalmaz a **Termelési teljesítmény** Microsoft Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -42,10 +41,10 @@ Ez a Power BI-tartalom lehetővé teszi a termelési eltérések elemzését is.
 
 A **Termelési teljesítmény** Power BI-tartalom a termelési rendelésekből és a kötegelt rendelésekből származó adatokat tartalmazza. A jelentések nem tartalmazzák a kanban termelésekkel kapcsolatos adatokat.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 A **Termelési teljesítmény** Power BI-tartalom a **Termelési teljesítmény** oldalon látható (**Gyártásvezérlés** \> **Lekérdezések és jelentések** \> **Termelési teljesítmény elemzése** \> **Termelési teljesítmény**). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
 
 A **Termelési teljesítmény** Power BI-tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg.
 
@@ -63,7 +62,7 @@ Az alábbi táblázat tartalmazza a tartalomban szereplő megjelenítéseket.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
-A **Termelési teljesítmény** Power BI-tartalom jelentési oldalaihoz a következő adatokat használja a rendszer. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. Az entitástárral kapcsolatos további tudnivalókért lásd: [Power BI integrálása entitástárral](power-bi-integration-entity-store.md).
+A **Termelési teljesítmény** Power BI-tartalom jelentési oldalaihoz a következő adatokat használja a rendszer. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. Az entitástárral kapcsolatos további tudnivalókért lásd: [Power BI integrálása entitástárral](power-bi-integration-entity-store.md).
 
 A következő táblázat megjeleníti azokat a kulcsfontosságú összesítő mértékeket, amelyek a Power BI-tartalom alapjául szolgálnak.
 
@@ -130,4 +129,3 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Entitások                  | Azonosító és név                                                   |
 | Erőforrások                 | Erőforrás-azonosító, erőforrás neve, erőforrástípus és erőforráscsoport |
 | Termékek                  | Termékszám, termék neve, cikkazonosító és cikkcsoport         |
-

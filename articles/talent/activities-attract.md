@@ -1,14 +1,14 @@
 ---
-title: "Tevékenységek a folyamatban"
-description: "Ez a témakör a felvételi folyamatban használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást."
-author: 
+title: Tevékenységek a folyamatban
+description: Ez a témakör a felvételi folyamatban használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374757"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Tevékenységek a felvételi folyamatban
 
 [!include[banner](../includes/banner.md)]
 
-A tevékenységek a felvételi folyamat részeként adhatók hozzá a Microsoft Dynamics 365 for Talent: Attract esetében. A tevékenységeket folyamatsablonhoz lehet hozzáadni, vagy közvetlenül az állásnál adhatók hozzá a felvételi folyamathoz. Ha megadott egy állást, ki lesz választva egy folyamat, és a tevékenységek, amelyek szerepelnek a sablonban, az álláshoz adódnak. Az alapértelmezett sablont használja a rendszer, ha nincs sablon kiválasztva. A felvételi folyamat is módosítható az álláson a sablon alkalmazása után.
+A tevékenységek a felvételi folyamat részeként adhatók hozzá a Dynamics 365 for Talent: Attract esetében. A tevékenységeket folyamatsablonhoz lehet hozzáadni, vagy közvetlenül az állásnál adhatók hozzá a felvételi folyamathoz. Ha megadott egy állást, ki lesz választva egy folyamat, és a tevékenységek, amelyek szerepelnek a sablonban, az álláshoz adódnak. Az alapértelmezett sablont használja a rendszer, ha nincs sablon kiválasztva. A felvételi folyamat is módosítható az álláson a sablon alkalmazása után.
 
 > [!NOTE] 
 > A folyamatsablonok az Átfogó felvételi bővítmény részeként érhetők el.
@@ -43,31 +42,9 @@ A potenciális tevékenység azt szabályozza, hogy a potenciális jelöltek hoz
 
 A Pályázat tevékenység kötelező a felvételi folyamat sablonban. E-mail küldéséhez a pályázóknak a jelentkezésük benyújtásakor vagy amikor hozzáadják őket a Pályázat szakaszhoz, állítsa az **E-mail küldése a pályázónak** lehetőséget az **Igen** beállításra.
 
-## <a name="scheduler-activity"></a>Ütemezés tevékenység
+## <a name="interview-schedule-and-feedback-activity"></a>Interjú ütemezése és visszajelzés tevékenység
 
-Az Ütemezés tevékenység nem kötelező. A tevékenység két összetevőből áll: pályázó elérhetősége és ütemezés. A pályázó elérhetősége összetevő lehetővé teszi a pályázó elérhetőségének lekérését e-mail segítségével. Az ütemezés összetevő lehetővé teszi a pályázóval és a felvételi csapattal interjúk ütemezését. Az ütemezés tevékenységben a következő lehetőségek állítható be: **Pályázó elérhetőségének kérése**, **Online értekezlet** és **E-mail küldése pályázónak**.
-
-- E-mail küldéséhez a pályázók az elérhetősége lekéréséhez, állítsa a **Pályázó elérhetőségének kérése** lehetőséget **Be** beállításra. Ha a beállítás **Ki**, ez a lépés nem jelenik meg az állás felvételi folyamatában.
-- Skype for Business élő adatfolyam vagy konferenciahívás használatához állítsa az **Online értekezlet** mezőt **Skype for Business** beállításra. A megfelelő **Csatlakozás Skype értekezlethez** hivatkozás ekkor bekerül az interjúbonyolítóknak küldött interjúértekezlet-kérelembe.
-- E-mail küldéséhez a pályázók az ütemezés véglegesítéséhez, állítsa az **E-mail küldése a jelöltnek** lehetőséget **Be** beállításra. Ha a beállítást **Ki** lehetőségre állította, a jelentkező csak akkor fogja megkapni az interjúütemezést, amikor bejelentkezik a pályázó portálon.
-
-## <a name="feedback-activity"></a>Visszajelzés tevékenység
-
-A Visszajelzés tevékenység nem kötelező. A tevékenységhez lehetővé teszi az interjú résztvevőinek ajánlások hozzáadását egy pályázó számára. Visszajelzés megjegyzéseket is megadhatnak. A **Visszajelzési résztvevők átvétele a toborzócsapattól** beállítás bekapcsolásakor a toborzót, a felvételi vezetőt és az interjúbonyolítókat program automatikusan beírja a visszajelzés tevékenységhez. A szervezetek engedélyezhetik az interjúbonyolítók számára mások visszajelzésének megtekintését a sajátjuk beküldés előtt. A szervezetek az interjúbonyolítók számára engedélyezhetik a visszajelzést szerkesztését az elküldés után is.
-
-## <a name="interview-activity"></a>Interjú tevékenység
-
-Az Interjú tevékenység nem kötelező. A tevékenység három összetevőből áll: pályázó elérhetősége, ütemezés és visszajelzés. A pályázó elérhetősége összetevő lehetővé teszi a pályázó elérhetőségének lekérését e-mail segítségével. Az ütemezés összetevő lehetővé teszi a pályázóval és a felvételi csapattal interjúk ütemezését. Az ütemezés tevékenységben a következő lehetőségek állítható be: **Pályázó elérhetőségének kérése**, **Online értekezlet** és **E-mail küldése pályázónak**.
-
-- E-mail küldéséhez a pályázók az elérhetősége lekéréséhez, állítsa a **Pályázó elérhetőségének kérése** lehetőséget **Be** beállításra. Ha a beállítás **Ki**, ez a lépés nem jelenik meg az állás felvételi folyamatában.
-- Skype for Business élő adatfolyam vagy konferenciahívás használatához állítsa az **Online értekezlet** mezőt **Skype for Business** beállításra. A megfelelő **Csatlakozás Skype értekezlethez** hivatkozás ekkor bekerül az interjúértekezlet-kérelembe.
-- E-mail küldéséhez a pályázók az ütemezés véglegesítéséhez, állítsa az **E-mail küldése a jelöltnek** lehetőséget **Be** beállításra. Ha a beállítást **Ki** lehetőségre állította, a jelentkező csak akkor fogja megkapni az interjúütemezést, amikor bejelentkezik a pályázó portálon.
-
->[!NOTE]
-> - Minden 1:1 interjú esetében 24 óránként emlékeztetőt kapnak az interjúztatók, ha az interjúztató nem reagált (fogadta el vagy utasította el) az interjúkérelmet.
-> - Bizottsági interjúk esetében nincsenek automatikus emlékeztetők az interjúkérelemre vonatkozó válasszal kapcsolatosan. Az emlékeztető manuális indításához, szerkessze az interjút, és használja a **Módosítás és küldés** lehetőséget a kérés visszaküldéséhez az interjúztatóknak.
-
-A visszajelzés összetevő lehetővé teszi ajánlások beírását egy pályázó számára. Visszajelzés megjegyzéseket is megadhatnak. A **Visszajelzési résztvevők átvétele a toborzócsapattól** beállítás bekapcsolásakor a toborzót, a felvételi vezetőt és az interjúbonyolítókat program automatikusan beírja a visszajelzés összetevőhöz. A szervezetek engedélyezhetik az interjúbonyolítók számára mások visszajelzésének megtekintését a sajátjuk beküldés előtt. A szervezetek az interjúbonyolítók számára engedélyezhetik a visszajelzést szerkesztését az elküldés után is.
+A tevékenység három összetevőből áll: pályázó elérhetőségének lekérése, ütemezés és visszajelzés. Használja az állássablon interjú tevékenységét, ha szeretné szerepeltetni a folyamatban a jelölt rendelkezésre állásának kérését, ütemezést és visszajelzést, ahelyett, hogy egyenként a felvételi folyamat részeként használná őket. További tudnivalókért lásd: [Interjú ütemezése és visszajelzés](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>PowerApps tevékenység
 
@@ -80,7 +57,7 @@ Ha kiválasztja a **Résztvevők tevékenységhez való hozzáadásának engedé
 > [!NOTE]
 > A PowerApps tevékenység csak az átfogó felvételi bővítménnyel érhető el.
 
-## <a name="youtube-activity"></a>YouTube tevékenység
+## <a name="youtube-activity"></a>YouTube-tevékenység
 
 A YouTube tevékenység segítségével megoszthat a felvételi folyamat részeként YouTube videókat. A felvételi folyamatba a YouTube tevékenység mentéséhez meg kell adnia a YouTube videó URL-címét. Mint a PowerApps tevékenységnél, engedélyezheti a résztvevők hozzáadását a tevékenységhez. Ha bejelöli a **Megjelenítés csak a pályázónak** lehetőséget, a videó csak a pályázói élmény részeként jelenik meg. Nem látható a felvételi folyamat során Attractban.
 
@@ -102,4 +79,3 @@ A Microsoft Forms esetében a szerző módosíthatja a beállításokat, hogy a 
 
 > [!NOTE]
 > A Microsoft Forms tevékenység csak az átfogó felvételi bővítménnyel érhető el.
-

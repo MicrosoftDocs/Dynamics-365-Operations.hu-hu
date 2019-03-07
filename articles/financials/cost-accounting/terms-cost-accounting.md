@@ -1,13 +1,13 @@
 ---
-title: "Költségkönyvelési terminológia"
-description: "Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg."
+title: Költségkönyvelési terminológia
+description: Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365937"
 ---
-
 # <a name="cost-accounting-terminology"></a>Költségkönyvelési terminológia
 
 [!include [banner](../includes/banner.md)]
@@ -204,6 +203,5 @@ A kimutatások a költségellenőrzésért felelős vezetők számára létrehoz
 **Verzió**
 
 Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges*. A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
-
 
 

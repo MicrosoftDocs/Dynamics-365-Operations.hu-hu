@@ -1,13 +1,13 @@
 ---
-title: "Tárgyi eszközök értékcsökkenési módjai Magyarország esetében"
-description: "Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást."
+title: Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
+description: Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást.
 author: Anasyash
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 74fc2acf050ca359c84f7939c917bbb4690af1cd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: ad5659c38f09b1559e4c5b89b2417a71f32a0146
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370874"
 ---
-
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 
 [!include [banner](../includes/banner.md)]
@@ -161,7 +160,6 @@ Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (
 |------------|----------------|----------------|----------------------------------------------|
 | H1, 1. év | 40% (= 4 ÷ 10) | 181            | 23 802,74 (= 48 000 ÷ 365 × 181)             |
 | H2, 1. év | 40% (= 4 ÷ 10) | 184            | 24 197,26 (= 48 000 ÷ 365 × 184)             |
-
 
 
 

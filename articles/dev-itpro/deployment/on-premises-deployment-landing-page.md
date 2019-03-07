@@ -1,34 +1,34 @@
 ---
-title: "On-premises telepítések kezdőlapja"
-description: "Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat."
+title: On-premises telepítések kezdőlapja
+description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373277"
 ---
 # <a name="on-premises-deployments-home-page"></a>On-premises telepítések kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alkalmazást (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
+Telepíthet Microsoft Dynamics 365 for Finance and Operations (helyi) alkalmazást. Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
 
 ## <a name="get-started"></a>Első lépések
 - [Helyszíni telepítési lehetőség](on-premises-overview.md)
@@ -60,9 +60,10 @@ Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alk
 - [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../retail/retail-onprem.md)
 - [A kiskereskedelmi csatorna összetevőinek helyszíni környezetben való telepítési lépései](deploy-retail-onprem.md)
 - [A Retail Modern POS (MPOS) konfigurálása, telepítése és aktiválása](../../retail/retail-modern-pos-device-activation.md)
-- [A Retail Store Scale Unit konfigurálása és telepítése](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [A Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) konfigurálása és telepítése
 
-
+## <a name="upgrade"></a>Frissítés
+- [Helyi frissítési folyamaz helyszíni környezetekben](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Egyéb erőforrások
 - [Hibaelhárítás helyszíni telepítéseknél](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alk
 - [Eltávolított vagy elavult funkciók](../migration-upgrade/deprecated-features.md)
 - [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  
-

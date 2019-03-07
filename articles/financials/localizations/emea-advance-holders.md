@@ -1,13 +1,13 @@
 ---
-title: "Előlegre jogosultak"
-description: "Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról."
+title: Előlegre jogosultak
+description: Előlegre jogosult funkcióiról szóló tudnivalók a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: LizaGolub
 manager: AnnBe
 ms.date: 08/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
 ms.openlocfilehash: 1fc13461ab166d8f20ea2f56f641c86c3172f33b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370842"
 ---
-
 # <a name="advance-holders"></a>Előlegre jogosultak
 
 [!include [banner](../includes/banner.md)]
 
-Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról.
+Előlegre jogosult funkcióiról szóló tudnivalók a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 *Előlegre jogosultnak* egy vállalat azon alkalmazottját nevezzük, aki egy a szervezet által biztosított költségösszegért felel. Előlegre jogosult csak vállalati dolgozó lehet. Beszerzéskor az előlegre jogosult jelenti a vállalatnak a foganatosított kiadásokat. A vállalat a költség összegét megtéríti az alkalmazottnak. A vállalat minden előlegre jogosult egyenlegét vezeti. Az Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország területén működő jogi személyek felhasználói a szervezet által biztosított költségösszegért felelős alkalmazottak által végzett műveletekre vonatkozó konkrét tranzakciókat kezelhetnek.
 
@@ -124,7 +123,7 @@ Előlegre jogosultak tranzakcióival kapcsolatos jelentés megtekintéséhez vag
 
 ## <a name="advance-holder-transactions"></a>Előlegre jogosult tranzakciói
 
-Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival.
+Információk az előlegre jogosult tranzakcióival kapcsolatban a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 Ezen előlegre jogosult dolgozók számára tranzakciókat előlegrejogosult-fiókok segítségével lehet feladni. A minden előlegre jogosultnál megadott dolgozói azonosító használható az előlegre jogosultak összes tranzakciójának nyomon követésére. Ez a szám számlaszámként hívható le az előlegre jogosultak tranzakcióihoz a **Főkönyvi naplók** és **Előlegre jogosult tranzakciói** oldalakon.
 
@@ -160,7 +159,6 @@ A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** me
 
 - [Előleg alkalmazotthoz (Kelet-Európa)](tasks/advance-payment-employee.md)
 - [Előlegre jogosultak Oroszország esetén](rus-advance-holders.md)
-
 
 
 

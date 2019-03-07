@@ -1,13 +1,13 @@
 ---
-title: "Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával"
-description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti."
+title: Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
+description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364971"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Az egyeztetési folyamat befejezését követően be kell jelölnie a Banki egye
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Új, már egyeztetéssel egyeztetett tranzakciók könyvelése
 Az egyeztetés munkalapon **Új** értékkel jelölt Banki kivonat tranzakciók a **Banki kivonat** oldalon könyvelődnek. A **Banki kivonat** oldalon válassza a kivonat azonosítóját, a kivont adatainak megtekintéséhez. A **Könyvelés** menüben, használhatja a **Felosztások megtekintése** és a **Könyvelés megtekintése** lehetőségeket, az új tranzakciók és a hozzájuk tartozó tételek részletes adatainak megtekintéséhez. Válassza ki a **Könyvelés** lehetőséget az **Új** értékkel jelölt banki kivonat sorok főkönyvbe könyveléséhez. Fontos megjegyezni, hogy könyvelés csak egyszer hajtható végre banki kivonatonként.
-
 
 
 
