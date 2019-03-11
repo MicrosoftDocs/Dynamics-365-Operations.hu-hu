@@ -1,13 +1,13 @@
 ---
-title: "Költségvetés-tervezési adatfelosztás"
-description: "A cikk ismerteti a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető különféle felosztási módszereket, és bemutatja azok használatát."
+title: Költségvetés-tervezési adatfelosztás
+description: A cikk ismerteti a Microsoft Dynamics 365 for Finance and Operations-ben elérhető különféle felosztási módszereket és bemutatja azok használatát.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 430040f7b3706aa1ad913d70c0dbcab9249ea222
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352505"
 ---
-
 # <a name="budget-planning-data-allocation"></a>Költségvetés-tervezés – adatok megadása
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető különféle felosztási módszereket, és bemutatja azok használatát.  
+A cikk ismerteti a Microsoft Dynamics 365 for Finance and Operations-ben elérhető különféle felosztási módszereket és bemutatja azok használatát.  
 
 A költségvetési tervben számos módon eloszthatja az adatokat a tervezett összegek pontos megjelenítése érdekében.
 
@@ -72,7 +71,6 @@ Ezután hozzon létre szakaszfelosztást a **Költségvetés-tervezési konfigur
 Végül hozzá kell adni egy automatizált feladatot a költségvetés-tervezési szakaszhoz a kívánt munkafolyamat-szakaszban. A következő példában két költségvetés-tervezési szakaszfelosztás (pirossal jelölve) került a munkafolyamatba.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
-
 
 
 

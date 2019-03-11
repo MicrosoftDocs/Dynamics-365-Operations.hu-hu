@@ -1,13 +1,13 @@
 ---
-title: "A termelésbeállítás követelményei"
-description: "Ez a cikk tájékoztatást ad a beállítási követelményekről a Gyártásvezérlés használatba vétele előtt."
+title: A termelésbeállítás követelményei
+description: Ez a cikk tájékoztatást ad a beállítási követelményekről a Gyártásvezérlés használatba vétele előtt.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b811c11271097f4bb7910c34f7775955abba526d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366627"
 ---
-
 # <a name="production-setup-requirements"></a>A termelésbeállítás követelményei
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,6 @@ Ha útvonalakkal dolgozik, a műveleteket minden beállított termelési útvona
 1.  **Termelési csoportok** – Állítson be termelési csoportokat, hogy kapcsolatokat alakítson ki a termelési rendelés és a főkönyvi számlák között. A főkönyvi számlák rendelések jelentésekhez történő feladásához vagy csoportosításához használatosak.
 2.  **Termelési gyűjtők** – Hozzon létre termelési gyűjtőket, hogy csoportosítsa a termelési rendeléseket, annak érdekében, hogy feldolgozhassa a sürgős termelési rendeléseket vagy töröljön és feladjon megrendeléscsoportokat.
 3.  **Tulajdonságok** – Határozzon meg tulajdonságokat, hogy különleges attribútumokat hozzon létre, amelyeket az erőforrásaihoz rendelhet a termelési sorrend irányítása érdekében. Ezek az attribútumok hozzá vannak kapcsolva a munkaidő sablonnal.
-
 
 
 

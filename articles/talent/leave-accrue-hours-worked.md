@@ -1,31 +1,30 @@
 ---
-title: "Szabadság elhatárolása a ledolgozott órák alapján"
-description: "Ez a témakör leírja, hogyan állíthatók be a szabadságtervek úgy, hogy a szabadság elhatárolása ledolgozott órák alapján történjen."
+title: Szabadság elhatárolása a ledolgozott órák alapján
+description: Ez a témakör leírja, hogyan állíthatók be a szabadságtervek úgy, hogy a szabadság elhatárolása ledolgozott órák alapján történjen.
 author: Jcart1106
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2018-09-17
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: f6489b84c71f2ac5a492b2d19cf087a05de8a599
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304647"
 ---
-
 # <a name="accrue-time-off-based-on-hours-worked"></a>Szabadság elhatárolása a ledolgozott órák alapján
 
 [!include [banner](includes/banner.md)]
@@ -106,4 +105,3 @@ Egy adott dátum csak egy típushoz társítható.
 | 000337                | 2018/8/8             | Szabályos               | 8                    |
 | 000337                | 2018/7/8             | Szabályos               | 8                    |
 | 000337                | 2018/9/8             | Szabályos               | 8                    |
-

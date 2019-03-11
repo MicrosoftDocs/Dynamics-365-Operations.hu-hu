@@ -1,32 +1,30 @@
 ---
-title: "Szolgáltatáskezelés"
-description: "Használja a Szolgáltatáskezelés lehetőséget a szolgáltatási szerződések és szolgáltatási előfizetések létrehozására, a szolgáltatási rendelésekkel és a vevői kérdések kezelésére és arra, hogy kezelje és elemezze a vevőknek szánt szállítási szolgáltatásokat."
+title: Szolgáltatáskezelés
+description: Használja a Szolgáltatáskezelés lehetőséget a szolgáltatási szerződések és szolgáltatási előfizetések létrehozására, a szolgáltatási rendelésekkel és a vevői kérdések kezelésére és arra, hogy kezelje és elemezze a vevőknek szánt szállítási szolgáltatásokat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
 ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343811"
 ---
-
-
 # <a name="service-management"></a>Szolgáltatáskezelés 
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +48,7 @@ A jelentéskészítő eszközök használatával figyelheti a szervizrendelés �
 
 ## <a name="business-processes"></a>Üzleti folyamatok
 
-A következő ábra bemutatja a **Szolgáltatáskezelés** magas szintű üzleti folyamatait, és megmutatja, hogy a szolgáltatási folyamatok hol integrálódnak a Microsoft Dynamics 365 for Finance and Operations más moduljaival.
+A következő ábra bemutatja a **Szogáltatáskezelés** magas szintű üzleti folyamatait és megmutatja, hol integrálódnak az szolgáltatási folyamatok más modulokba a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 [![Szolgáltatáskezelés üzleti folyamat ábrája](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
@@ -72,5 +70,4 @@ A szolgáltatáskezelés az alábbi modulokkal integrálható:
   - [Emberi erőforrások](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   
-
 

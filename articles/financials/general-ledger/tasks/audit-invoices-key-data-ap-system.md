@@ -1,13 +1,13 @@
---- 
-title: "A kötelezettségkezelési rendszerben levő számlák és kulcsfontosságú adatok vizsgálata"
-description: "Amikor egy beszerzési rendelés után egy termékekről vagy szolgáltatásokról kiállított szállítói számlát fogad be, az üzleti folyamat megkövetelheti, hogy a számla kifizetésének a jóváhagyását megelőzően az áruk és szolgáltatások be legyenek vételezve."
+---
+title: A kötelezettségkezelési rendszerben levő számlák és kulcsfontosságú adatok vizsgálata
+description: Amikor egy beszerzési rendelés után egy termékekről vagy szolgáltatásokról kiállított szállítói számlát fogad be, az üzleti folyamat megkövetelheti, hogy a számla kifizetésének a jóváhagyását megelőzően az áruk és szolgáltatások be legyenek vételezve.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
 ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331529"
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>A kötelezettségkezelési rendszerben levő számlák és kulcsfontosságú adatok vizsgálata
 
@@ -61,5 +61,4 @@ Ez az eljárás az USMF bemutatócéget használja. A kötelezettségeket kezel�
 8. Kattintson az **OK** gombra.
 9. A Művelet panelen kattintson az **Áttekintés** lehetőségre.
 10. Kattintson a **Részletek egyeztetése** elemre.
-
 

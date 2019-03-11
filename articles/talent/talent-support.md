@@ -1,13 +1,13 @@
 ---
-title: "Támogatás kérése a Talent alkalmazáshoz"
-description: "Ez a témakör bemutatja, hogyan kérhető segítség a Dynamics 365 for Talent szolgáltatással kapcsolatban."
+title: Támogatás kérése a Talent alkalmazáshoz
+description: A témakör ismerteti, hogyan kaphat segítséget a Dynamics 365 for Talent alkalmazáshoz.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304759"
 ---
-
 # <a name="get-support-for-talent"></a>Támogatás kérése a Talent alkalmazáshoz
 
 [!include [banner](includes/banner.md)]
@@ -55,4 +54,3 @@ Ha támogatást szeretne az Attract és Onboard szolgáltatással kapcsolatban, 
 | Probléma jelentése                                                        | Válassza a **?** ikont a menüben, és válasszon a problémabejelentés lehetőségei közül. Írja be a problémát a leírásba, és adjon meg egy e-mail-címet, ha követni szeretné a jelentett problémát.                                                                                           |
 | Segítség a Talent-licencekkel kapcsolatos kérdésekkel kapcsolatban                         | Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal.                                                                                                                                                                                                                                        |
 | Új szolgáltatások és funkciók kérése az Attract vagy az Onboard szolgáltatáson belül | Kattintson a **?** Ikonra, és válassza az **Ötletek** lehetőséget, vagy használja a következő hivatkozásokat új ötletek megtekintéséhez, kereséséhez, a róluk való szavazáshoz, illetve új ötletek felvételéhez: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) vagy [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard). |
-

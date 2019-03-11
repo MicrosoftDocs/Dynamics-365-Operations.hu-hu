@@ -1,13 +1,13 @@
 ---
-title: "Kiskereskedelmi perifériák"
-description: "Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat."
+title: Kiskereskedelmi perifériák
+description: Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347859"
 ---
-
 # <a name="retail-peripherals"></a>Kiskereskedelmi perifériák
 
 [!include [banner](includes/banner.md)]
@@ -40,13 +39,13 @@ Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt;
 
 ### <a name="devices"></a>Eszközök
 
-Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra. Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja. Egy eszköz létrehozásakor a rendszer hozzárendeli azt egy pénztárhoz. Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt. Az eszközök a következő alkalmazástípusokhoz rendelhetők hozzá: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.
+Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra. Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja. Egy eszköz létrehozásakor a rendszer hozzárendeli azt egy pénztárhoz. Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt. Eszközök a következő alkalmazástípusokhoz rendelhetők: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
 A Modern POS a Microsoft Windows rendszeren futó pénztárprogram. A Windows 10 operációs rendszerre (OS) telepíthető.
 
-### <a name="cloud-pos"></a>Felhő POS
+### <a name="cloud-pos"></a>Felhő pénztár
 
 A Cloud POS a Modern POS program böngészőalapú verziója, amely webböngészőben érhető el.
 
@@ -119,7 +118,7 @@ A fizetési eszközök támogatása a fizetési csatlakozón keresztül valósul
 
 Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Retail programmal, a Microsoft Dynamics 365 for Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
 
-- **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k segítségével történik a Microsoft Dynamics 365 for Retail pénztárösszetevőjének tesztelése. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
+- **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k a Microsoft Dynamics 365 for Retail Pénztárkomponensének tesztelése szolgálnak. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
 - **Szolgáltatásobjektum** – A szolgáltatásobjektum biztosítja a kommunikációt a vezérlőobjektum (CCO) és az eszköz között. Általában az eszköz szolgáltatásobjektumát az eszköz gyártója biztosítja. Azonban egyes esetekben előfordulhat, hogy a szolgáltatásobjektumot le kell töltenie a gyártó webhelyéről. Rendelkezésre állhat például egy újabb szolgáltatásobjektum. A gyártó webhelyének címét lásd a hardverdokumentációban.
 
 [![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen
 Vezérlőobjektum és szolgáltatásobjektum Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a pénztár-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt.
 
 > [!NOTE]
-> Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. A Microsoft Dynamics 365 for Retail programnak először támogatnia kell az adott eszköztípust vagy -osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
+> Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. Microsoft Dynamics 365 for Retail rendszernek először támogatnia kell az első adott eszköztípust, vagy osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
 
 ### <a name="windows"></a>Windows
 
@@ -203,7 +202,7 @@ További információért lásd: [Kiskereskedelmi hardverállomás konfigurálá
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS for Windows telepítés és beállítás
 
-További információért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).
+További információ: [Retail Modern POS beállítása és a telepítése](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-eszköz telepítése és beállítása
 
@@ -223,9 +222,9 @@ A következő táblázat a támogatott topológiákat és telepítési forgatók
 | Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
 |-------------|----------------------|----------------------|
 | Windows alkalmazás | Igen                  | Igen                  |
-| Felhő POS   | Nincs                   | Igen                  |
-| Android     | Nincs                   | Igen                  |
-| iOS         | Nincs                   | Igen                  |
+| Felhő pénztár   | Szám                   | Igen                  |
+| Android     | Szám                   | Igen                  |
+| iOS         | Szám                   | Igen                  |
 
 ### <a name="network-peripherals"></a>Hálózati perifériák
 
@@ -234,9 +233,9 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 | Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
 |-------------|----------------------|----------------------|
 | Windows alkalmazás | Igen                  | Igen                  |
-| Felhő POS   | Nincs                   | Igen                  |
-| Android     | Nincs                   | Igen                  |
-| iOS         | Nincs                   | Igen                  |
+| Felhő pénztár   | Szám                   | Igen                  |
+| Android     | Szám                   | Igen                  |
+| iOS         | Szám                   | Igen                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Támogatott eszköztípusok hardverállomás-típus szerint
 
@@ -296,7 +295,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>[!NOTE] Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<blockquote>MEGJEGYZÉS: Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>[!NOTE] Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<blockquote>MEGJEGYZÉS: Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Windows-illesztőprogram
-<blockquote>[!NOTE] A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
+<blockquote>MEGJEGYZÉS: A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
 </li>
 <li>Hálózat</li>
 </ul>
@@ -405,7 +404,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>[!NOTE] Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<blockquote>MEGJEGYZÉS: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Windows-illesztőprogram
-<blockquote>[!NOTE] A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
+<blockquote>MEGJEGYZÉS: A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
 </li>
 <li>Hálózat</li>
 </ul>
@@ -492,7 +491,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>[!NOTE] Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<blockquote>MEGJEGYZÉS: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> A Microsoft Dynamics 365 for Retail 1611-es verziója esetében a hardverállomás-profil már nem használatos. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
+> A Microsoft Dynamics 365 for Retail 1611 verzióban, a hardverállomás-profil már nincs használatban. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows IPC (beépített) hardverállomással
 
@@ -743,7 +742,6 @@ A következő perifériákat dedikált (nem megosztott) IIS-hardverállomás has
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó     |
-| Star         | TSP100   | OPOS      | TSP650II-illesztőprogramokat igényel |
 | HP           | F7M67AA  | OPOS      | Tápellátású USB               |
 
 #### <a name="bar-code-scanner"></a>Vonalkódolvasó
@@ -818,7 +816,6 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó     |
-| Star         | TSP100   | OPOS      | TSP650II-illesztőprogramokat igényel |
 | HP           | F7M67AA  | OPOS      | Tápellátású USB               |
 
 #### <a name="payment-terminal"></a>Fizető terminál
@@ -894,4 +891,3 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 ## <a name="additional-resources"></a>További erőforrások
 
 [Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)
-

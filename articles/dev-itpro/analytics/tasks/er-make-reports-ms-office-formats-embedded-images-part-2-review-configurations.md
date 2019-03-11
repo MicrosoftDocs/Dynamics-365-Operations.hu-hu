@@ -1,13 +1,13 @@
---- 
-title: "Konfigurációk megújítása jelentések készítéséhez Office formátumban, beágyazott képekkel"
-description: "A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit."
+---
+title: Konfigurációk megújítása jelentések készítéséhez Office formátumban, beágyazott képekkel
+description: 'A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit.'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331414"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurációk megújítása jelentések készítéséhez Office formátumban, beágyazott képekkel
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 
 A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit.
 
-Ez az eljárás azt mutatja be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Microsoft Excelben és Microsoft Wordban, beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására. Ebben a példában áttekintjük a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. 
+Ez az eljárás azt mutatja be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Microsoft Excel és Microsoft Word programokban beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására. Ebben a példában áttekintjük a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. 
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült. A lépések a USMF-adathalmazzal hajthatók végre.
 
@@ -91,5 +91,4 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 14. A fában bontsa ki a „labels: Container” elemet.
     * Az előre nyomtatott csekk űrlapon megjelenő néhány címke szerepelni fog a jelentésben, amikor létrehozzák tesztelési célra. Azonban ezeket a címkéket a rendszer nem nyomtatja ki a tényleges nyomtatás közben, mert az előre nyomtatott űrlap már tartalmazza őket.  
 15. Zárja be a lapot.
-
 

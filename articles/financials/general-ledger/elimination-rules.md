@@ -1,13 +1,13 @@
 ---
-title: "Eltávolítási szabályok"
-description: "Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt."
+title: Eltávolítási szabályok
+description: Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0736d63c9a582948d197dc267f9941cbbd3e3c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333093"
 ---
-
 # <a name="elimination-rules"></a>Eltávolítási szabályok
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Az ön vállalata, A jogi személy, eszközöket értékesített egy, az ön sze
 Mindezen tranzakciók vállalatközi tranzakciók feladásait eredményezik a megfelelő számlákra. Ezen felül a tranzakciók tartalmazhatják a haszonkulcsokat és veszteségkulcsokat abban az esetben, ha a vállalatközi eladások összege és az eladott áruk beszerzési értéke nem egyenlő.
 
 ## <a name="set-up-elimination-rules"></a>Eltávolítási szabályok beállítása
-Eltávolítási szabályok beállításakor a Microsoft Dynamics 365 for Finance and Operations alkalmazásban ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
+Eltávolítási szabályok beállításakor a Microsoft Dynamics 365 for Finance and Operations programban ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
 
 Az eltávolítási beállítások a Konszolidáció modul Beállítás területén találhatók. Miután megadta a szabály leírását, ki kell választania a vállalatot, amelyben az eltávolítási napló könyvelni fog. Ez olyan vállalat legyen, amelynél a **Pénzügyi eltávolítási folyamatokhoz** lehetőség ki van választva a jogi személy beállításainál. 
 
@@ -153,7 +152,6 @@ Eltávolítási tranzakciók feldolgozása kétféleképpen lehetséges: vagy az
 Egy eltávolítási vállalatként meghatározott vállalatnál válassza az **Eltávolítási napló** lehetőséget a Konszolidáció modulban. Miután kiválasztotta a napló nevét kattintson a **Sorok** elemre. A javaslat futtatásához válassza a **Javaslatok** menüt, majd az **Eltávolítási javaslat** elemet.
 
 Válassza ki a konszolidált adatok forrásaként szolgáló vállalatot, és válassza ki a feldolgozni kívánt szabályt. Adjon meg egy kezdő dátumot, amelyen az eltávolítási összegek keresése kezdődik, és egy záró dátumot, amelyen az eltávolítási összegek keresése lezárul. A **Főkönyvi feladási dátum** mezőben adja meg a napló a főkönyvbe történő feladásának dátumát. Amikor rákattint a **OK** gombra, áttekintheti az összegeket és feladhatja a naplót.
-
 
 
 

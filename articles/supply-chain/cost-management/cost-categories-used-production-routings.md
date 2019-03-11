@@ -1,13 +1,13 @@
 ---
-title: "A termelési útvonalakban használt költségkategóriák"
-description: "Ez a cikk tájékoztatást ad az útvonalakat használó gyártási környezetekre vonatkozó költségkategóriákról."
+title: A termelési útvonalakban használt költségkategóriák
+description: Ez a cikk tájékoztatást ad az útvonalakat használó gyártási környezetekre vonatkozó költségkategóriákról.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315797"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>A termelési útvonalakban használt költségkategóriák
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ A költségrekord, amely egy költségkategóriára vonatkozik lehet helyspecifi
 Az útvonalműveletek általában öröklik az üzemi erőforráshoz vagy az alapművelethez hozzárendelt költségkategóriákat. Amikor egy termelési rendelés létrejön, a termelési útvonalon belüli útvonalműveletek a kiválasztott útvonalverziónak megfelelőek. A termelési útvonalon belüli műveletekhez hozzárendelt költségkategóriák felülbírálhatók. 
 
 A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ebben az esetben a költségkategóriára termelési és projektcélokból van szükség. További projektekkel kapcsolatos információkat kell meghatározni, amikor a költségkategória projekthasználatra engedélyezetté válik.
-
 
 
 

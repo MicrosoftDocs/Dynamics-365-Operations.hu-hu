@@ -1,13 +1,13 @@
 ---
-title: "Egyéni mezők létrehozása és használata"
-description: "Ez a témakör bemutatja, hogyan teszi lehetővé a Microsoft Dynamics 365 for Finance and Operations, hogy bizonyos felhasználók egyéni mezők létrehozásával az alkalmazást saját cégük igényeire szabhassák."
+title: Egyéni mezők létrehozása és felhasználása
+description: Ez a témakör bemutatja, hogyan teszi lehetővé a Microsoft Dynamics 365 for Finance and Operations, hogy bizonyos felhasználók egyéni mezők létrehozásával az alkalmazást saját cégük igényeire szabhassák.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348020"
 ---
-
-# <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és használata
+# <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és felhasználása
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +31,7 @@ Bár a Microsoft Dynamics 365 for Finance and Operations is mezők sokaságát b
 
 Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el.
 
-Ez a videó bemutatja, hogy milyen egyszerűen lehet egy egyéni mezőt hozzáadni egy weblaphoz: [Egyéni mezők felvétele a Dynamics 365 Pénzügy és műveletek alkalmazásban](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Ez a videó megmutatja, milyen egyszerű egy Egyéni mező hozzáadása az oldalhoz: [Egyéni mező hozzáadása az oldalhoz Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc) rendszerben.
 
 ## <a name="creating-custom-fields"></a>Egyéni mezők létrehozása
 
@@ -160,4 +159,3 @@ Teljesítmény- és a műszaki okok miatt jelenleg csak a következő feltétele
 - A tábla nem bővíthet másik táblát.
 - A tábla nem lehet rendszertáblaként megjelölve.
 - A tábla nem lehet ideiglenes tábla.
-

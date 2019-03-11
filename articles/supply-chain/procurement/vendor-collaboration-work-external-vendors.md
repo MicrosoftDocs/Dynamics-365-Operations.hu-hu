@@ -1,13 +1,13 @@
 ---
-title: "A külső szállítókkal történő szállítói együttműködés"
-description: "Ez a témakör azt magyarázza el, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt."
+title: A külső szállítókkal történő szállítói együttműködés
+description: Ez a témakör azt magyarázza el, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350021"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,7 @@ Az alábbi táblázat bemutatja a tipikus információcserét attól függően, 
 <tbody>
 <tr class="even">
 <td>A szállító <strong>elfogadja</strong> a rendelést, és a Finance and Operations automatikusan úgy van konfigurálva, hogy automatikusan megerősítse azokat a beszerzési rendeléseket, amelyeket a szállító elfogad.</td>
-<td>A rendelés állapota <strong>Visszaigazolva</strong> értékre frissül. Ha valami megakadályozza, hogy a rendelést frissítsék, a szállító válasza továbbra is <strong>Elfogadva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. 
+<td>A rendelés állapota <strong>Visszaigazolva</strong> értékre frissül. Ha valami megakadályozza, hogy a rendelést frissítsék, a szállító válasza továbbra is <strong>Elfogadva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés</strong> alatt állapotú marad. 
 
 A szállítónak elküldött és <strong>Külső ellenőrzés alatt</strong> állapotú beszerzési rendelés frissítése a sorok szállítási dátumainak visszaigazolása révén történik. Ez a frissítés egy új verziót indít el, amely automatikusan <strong>Megerősítve</strong> állapotra állítható. A beszerzési rendelés megerősítéskor megjelenik a szállítói együttműködési felületen.</td>
 </tr>
@@ -106,7 +105,7 @@ A szállítónak elküldött és <strong>Külső ellenőrzés alatt</strong> ál
 </tr>
 <tr class="even">
 <td>A szállító <strong>elutasítja</strong> a rendelést.</td>
-<td>A szállító válasza <strong>Elutasítva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. Az elutasítás a szállítói indoklással kerül kézbesítésre.</td>
+<td>A szállító válasza <strong>Elutasítva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. Az elutasítás az indoklással kerül kézbesítésre.</td>
 </tr>
 <tr class="odd">
 <td>Az a szállító, aki <strong>módosításokkal</strong> <strong>fogadja el</strong> a rendelést. A módosításokat a sor szintjén javasolja a program. A szállító elfogadhatja vagy elutasíthatja az egyes sorokat. Az alábbiakban néhány további olyan módosítást láthat, melyeket a szállító javasolhat:
@@ -260,4 +259,3 @@ A felhasználó, aki az ajánlatkérési folyamat paramétereit beállítja, tö
 - %createddate%
 
 Ha módosítás szükséges, és elküldik az ajánlatkérés elküldését követően, az ajánlatkérés elküldése minden meghívott szállítónál ismét megtörténik. A közzétett dokumentum is frissül a **Közzétett ajánlatkérések megnyitása** lapon.
-

@@ -1,13 +1,13 @@
 ---
-title: "Szállítói együttműködés a vevőkkel"
-description: "Ez a témakör leírja, hogyan használja a szállítói együttműködést a Microsoft Dynamics 365 for Finance and Operations alkalmazásban a beszerzési rendelések kezelése és a bizományosi készlet figyelése során."
+title: Szállítói együttműködés a vevőkkel
+description: Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 for Finance and Operations rendszerben a beszerzési rendelésekkel kezelése és a bizományosi készlet figyelése során.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342937"
 ---
-
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
 [!include [banner](../includes/banner.md)]
@@ -144,4 +143,3 @@ Az elérhető adatok tartalmazzák a szállító nevét, címeit, kapcsolattart�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
-

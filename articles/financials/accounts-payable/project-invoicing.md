@@ -1,13 +1,13 @@
 ---
-title: "Projekt számlázása:"
-description: "Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz."
+title: 'Projekt számlázása:'
+description: Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346318"
 ---
-
 # <a name="project-invoicing"></a>Projekt számlázása:
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Egyazon a dokumentumon jóváírásra kijelölt tranzakciókat, jóváírási tr
 Kiszámlázott összeg jóváírásához először ki kell választania a jóváírandó számlázott összeget, majd létre kell hoznia egy jóváírást. Ezután ugyanazokkal a lépésekkel hozhatja létre a jóváírást, amelyeket a vevői számlák létrehozására használ. 
 
 Létrehozhat negatív összegű számlát, ami így jóváírásnak minősülő számla lesz. Jóváírás létrehozásához és nyomtatásához ki kell választania azokat a tranzakciókat, amelyeket korábban feladott egy vevői számlára, majd módosítania kell a tranzakciókat. Amennyiben a jogi személy elsődleges címe nem Németországban van, úgy a számla neve „Javító számla” lesz.
-
 
 
 

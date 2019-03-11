@@ -1,13 +1,13 @@
 ---
-title: "Ciklikus leltározás"
-description: "Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el."
+title: Ciklikus leltározás
+description: Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323226"
 ---
-
 # <a name="cycle-counting"></a>Ciklikus leltározás
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási
 A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális készlet cikkeinek ellenőrzésére használhat. A ciklikus leltározás folyamata három lépésben írható le:
 
 1.  **Ciklikus leltározási munka létrehozása** – A ciklikus leltározási munka automatikusan létrehozható a cikkek küszöbértékeinek paraméterei alapján, vagy a ciklikus leltározási terv használatával. Másik megoldásként létrehozhatja a ciklikus leltározási munkát manuálisan, a cikk vagy a raktár paramétereinek segítségével a **Ciklikus leltározási munka cikk szerint** vagy a **Ciklikus leltározási munka hely szerint** oldalakról.
-2.  **A ciklikus leltár feldolgozása** – Miután létrehozott egy ciklikus leltározási munkát, a raktárhelyen található cikkek számlálásával végezheti el a ciklikus leltározási munkát, majd mobileszközén rögzítheti az eredményt a Microsoft Dynamics 365 Finance and Operations rendszerbe. Ciklikus leltározási munka létrehozása nélkül is megszámlálhatja a raktározási helyen található cikkeket. Ennek a folyamatnak *eseti ciklikus leltározás*a neve.
+2.  **A ciklikus leltár feldolgozása** – Miután létrehozott egy ciklikus leltározási munkát, a raktárhelyen található cikkek számlálásával végezheti el a ciklikus leltározási munkát, majd mobileszközén rögzítheti az eredményt a Microsoft Dynamics 365 for Finance and Operations rendszerbe. Ciklikus leltározási munka létrehozása nélkül is megszámlálhatja a raktározási helyen található cikkeket. Ennek a folyamatnak *eseti ciklikus leltározás*a neve.
 3.  **A ciklikus leltárérték különbségeinek feloldása** – Azok a cikkek, amelyek számlált értékeiben a ciklikus leltár után eltérés mutatkozik, **Ellenőrzése függőben** munkaállapotúvá válnak az **Összes munka** oldalon. Ezeket a különbségek feloldhatja a **Ciklikus leltározási munka ellenőrzése függőben** oldalon.
 
 Az alábbi ábra a ciklikus leltározás folyamatát mutatja be. ![Ciklikus leltározás végrehajtása azonnal](./media/performcyclecountinginawarehouselocation.jpg)
@@ -138,7 +137,6 @@ A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt ér
 
 ## <a name="additional-resources"></a>További erőforrások
 [Mobileszköz konfigurálása raktári munkához](configure-mobile-devices-warehouse.md)
-
 
 
 

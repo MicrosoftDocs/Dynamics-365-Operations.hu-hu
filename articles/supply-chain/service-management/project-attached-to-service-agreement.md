@@ -1,32 +1,30 @@
 ---
-title: "A szolgáltatási szerződéshez csatolt projektek"
-description: "Az idő típusú projekteket kivéve bármilyen típusú projekthez csatolhat szolgáltatási szerződéseket."
+title: A szolgáltatási szerződéshez csatolt projektek
+description: Az idő típusú projekteket kivéve bármilyen típusú projekthez csatolhat szolgáltatási szerződéseket.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e28595f65bdd960dbd0ff4b786584e1c01fa257
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1820866e1dc2757aab0f134891da78177d242a7e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349768"
 ---
-
-
 # <a name="project-attached-to-service-agreement"></a>A szolgáltatási szerződéshez csatolt projektek 
 
 [!include [banner](../includes/banner.md)]
@@ -37,6 +35,5 @@ Az **Idő típusú** projekteket kivéve bármilyen típusú projekthez csatolha
 Minden szervizrendelési-tranzakciót a szolgáltatási szerződéshez csatolt projekten keresztül regisztrálhat és adhat fel. A tranzakciók regisztrálására és feladására szolgáló naplókat a **Szolgáltatáskezelés paraméterei** képernyő **Naplók** hivatkozásain állíthatja be.
 
   
-
 
 

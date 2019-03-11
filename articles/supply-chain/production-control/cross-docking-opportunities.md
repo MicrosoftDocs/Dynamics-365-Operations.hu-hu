@@ -1,13 +1,13 @@
 ---
-title: "Termelési rendelések áttárolása kiszállítási területekbe"
-description: "Ez a témakör leírja, hogyan kell kezelni az anyag áttárolásának folyamatát, amelyet egy gyártósorról befejezettnek jelentenek egy kimenő szállítási dokk felé."
+title: Termelési rendelések áttárolása kiszállítási területekbe
+description: Ez a témakör leírja, hogyan kell kezelni az anyag áttárolásának folyamatát, amelyet egy gyártósorról befejezettnek jelentenek egy kimenő szállítási dokk felé.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329022"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Termelési rendelések áttárolása kiszállítási területekbe
 
 [!include [banner](../includes/banner.md)]
@@ -39,13 +38,13 @@ A termelésből a kimenő helyre történő áttárolás fontos azoknál a gyár
 
 Abban az esetben, ha nincs azonnali kereslet egy termékre, azt el kell helyezni a raktárhelyiségekbe a gyártási helyszínen. Ezt a folyamatot *alkalmi áttárolásnak* is nevezik, ami azt jelenti, hogy a termék szállítási igény esetén, majd ehhez a lehetőséghez használandó helyett betárolásra szolgál a termék belső tárolására.
 
-A következő példa három olyan változatot mutat be, amely a gyártósor végén (2) kezdődik.
+A következő példa három olyan folyamatváltozatot mutat be, amely a gyártósor végén (2) kezdődik.
 
-A terméket a gyártási kimeneti helyre (3) késztermékként jelentik, és egy targoncakezelő felveszi a raklapot ezen a helyen (3).
+A terméket a gyártási kimeneti helyre (3) késztermékként jelentik, és egy targoncakezelő felveszi a raklapot ezen a helyen (3).
 
--   Ha van tervezett tevékenység (6) a termék gyártóhely (1) és elosztó központ (7) közötti átvitelére, akkor a járművezetőt a rendszer irányítja arra, hogy a raklapot a megfelelő rakodóhelyre (4) helyezze el.
--   Ha a pótkocsi már hozzá van rendelve a rakodóhelyre, akkor a teherautó-vezető rakodja a terméket közvetlenül a pótkocsira.
--   Ha nincs tervezett tevékenység a termék átvitelére, akkor a targoncavezetőt arra irányítják, hogy a terméket a belső raktárba (5) helyezze el.
+-   Ha van tervezett tevékenység (6) a termék gyártóhely (1) és elosztó központ (7) közötti átvitelére, akkor a járművezetőt a rendszer irányítja arra, hogy a raklapot a megfelelő rakodóhelyre (4) helyezze el.
+-   Ha a pótkocsi már hozzá van rendelve a rakodóhelyre, akkor a teherautó-vezető rakodja a terméket közvetlenül a pótkocsira.
+-   Ha nincs tervezett tevékenység a termék átvitelére, akkor a targoncavezetőt arra irányítják, hogy a terméket a belső raktárba (5) helyezze el.
 
 [![lehetőség szerinti áttárolás](./media/scenario1.png)](./media/scenario1.png)
 
@@ -102,23 +101,23 @@ Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezi
 3.  Hozzon létre munkairányelvet. Ugorjon a **Munkairányelvek** oldalra, majd hozzon létre egy új munkairányelvet: **Áttárolás L0101**.
 4.  Állítson be rakományokat úgy, hogy automatikusan létrehozásra kerüljenek az átadási rendelések. A raktárparamétereknél állítson be rakományokat úgy, hogy automatikusan létrehozásra kerüljenek az átadási rendelések. A rakodás előfeltétele annak, hogy az átadási rendelés jogosult legyen az áttárolásra.
 5.  Állítsa be a cikk–rakomány hozzárendelését. Lépjen a **Cikk–rakomány megfeleltetés** oldalra, majd állítsa be a szabványos rakománysablont a **CarAudio** cikkcsoportnál. Ez a leképezés automatikusan áthelyezi a terhelési sablont a terhelésre, amikor az átadási rendelés létrejön.
-6.  Hozzon létre átmozgatási rendelést. Hozzon létre az L0101 tételszámú átadási rendelést. Mennyiség = 20.
+6.  Hozzon létre átmozgatási rendelést. Hozzon létre az L0101 tételszámú átadási rendelést. Mennyiség = 20.
 7.  Oldja fel az átadási rendelést a terheléstervező munkaállomástól. A **Szállítás** lapon válassza ki a menüelemet, a rakomány tervezési munkaterület és a, a **Kiadás** menüben a rakománysornál válassza a **Raktárba való kiadás** lehetőséget. Az átmozgatási rendelésben jelenleg létezik egy **Átmozgatási probléma** típusú nyitott hullámvonal.
 8.  Termelési rendelés létrehozása. Lépjen a **Termelési rendelés** listaoldalt, és hozzon létre egy gyártási rendelést az L0101 termékhez. Mennyiség = 20. A termelési rendelés becsült ideje és indulása. A **Kitárolási lista feladása** mező beállítása továbbra is **Nem**.
-9.  Készként jelentés a mobileszközről. Menjen a mobileszköz-portálra, és válassza ki a **Készként jelentés és betárolás** menüpontot. Most jelentse készként az L0101 cikkszámot a kézben tartott eszközről. Mennyiség = 10. Ne feledje, hogy a helyszín a **BAYDOOR**. Ezt a helyet az **Átmozgatási probléma** helymeghatározási irányelvnél találhatja az **Eltárolás** munkarendeléshez. Vegye figyelembe, hogy az **Átmozgatási probléma** típusú munkát létrehozták és befejezték. Lépjen az átmozgatási rendelés munkarészleteihez a munka ellenőrzéséhez.
+9.  Készként jelentés a mobileszközről. Menjen a mobileszköz-portálra, és válassza ki a **Készként jelentés és betárolás** menüpontot. Most jelentse készként az L0101 cikkszámot a kézben tartott eszközről. Mennyiség = 10. Ne feledje, hogy a helyszín a **BAYDOOR**. Ezt a helyet az **Átmozgatási probléma** helymeghatározási irányelvnél találhatja az **Eltárolás** munkarendeléshez. Vegye figyelembe, hogy az **Átmozgatási probléma** típusú munkát létrehozták és befejezték. Lépjen az átmozgatási rendelés munkarészleteihez a munka ellenőrzéséhez.
 10. Most jelentsen a mobileszközről további 10 darabot. Ne feledje, hogy a helyszín ismét a **BAYDOOR**. Figyelje meg, hogy egy új **Átmozgatási probléma** típusú munka jött létre a 10 darabhoz.
-11. Most próbáljon 20-szor többet elindítani a termelési rendelésben, majd próbáljon meg jelenteni 20-at a kézben tartott eszköz használatával. Ezúttal az **LP-001** helyszín javasolt eltárolási helyszínként. Ezt a helyet a helymeghatározási irányelvnél találhatja a **Késztermékek betárolása** lehetőségnél. Ezt a helymeghatározási irányelvet használják, mert nincs áttárolási lehetőség. Az LP-001 átadási rendelést teljes mértékben teljesítette a két áttárolási tevékenység a 9. és 10. lépésben. Figyelje meg, hogy létrejött és feldolgozásra került a **Késztermékek betárolása** funkció.
+11. Most próbáljon 20-szor többet elindítani a termelési rendelésben, majd próbáljon meg jelenteni 20-at a kézben tartott eszköz használatával. Ezúttal az **LP-001** helyszín javasolt eltárolási helyszínként. Ezt a helyet a helymeghatározási irányelvnél találhatja a **Késztermékek betárolása** lehetőségnél. Ezt a helymeghatározási irányelvet használják, mert nincs áttárolási lehetőség. Az LP-001 átadási rendelést teljes mértékben teljesítette a két áttárolási tevékenység a 9. és 10. lépésben. Figyelje meg, hogy létrejött és feldolgozásra került a **Késztermékek betárolása** funkció.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>2. forgatókönyv – Termelési rendelések áttárolása átadási rendelésekbe találkozási ütemtervvel
 
-Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezik egy rakodóhelyre, amelyet a rakodóhelyek kijelölési ütemterve határoz meg. Használja az USMF vállalatot.
+Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezik egy rakodóhelyre, amelyet a rakodóhelyek kijelölési ütemterve határoz meg. Használja az USMF vállalatot.
 
 1.  Módosítsa az áttárolási irányelvet. Módosítsa az 1. forgatókönyvben létrehozott áttárolási irányelvet **Az áttárolási igényhez meg kell adni a helyet.** jelölőnégyzet bejelölésével.
 2.  Hozzon létre új átadási rendelést.
 3.  Nyissa meg a **Rakománytervezési munkaterületet**.
 4.  A rakománytervezési munkaterületről lépj a **Rakományok** szakaszhoz, és válassza ki a **Találkozó ütemezése** lehetőséget a **Szállítás** menüben egy új találkozóütemezés létrehozásához. Ne feledje, hogy a találkozási ütemterv hivatkozik az átmozgatási rendelésre a **Rendelés száma** mezőben. A **Tervezett kezdő dátum és idő adott helyen** mezőben beállíthatja a megbeszélés dátumát és idejét. Ezt a dátumot és időt fogják használni, ha az áttárolási igényt az áttárolási folyamat során kiemelték. Az ezen a területen beállított dátum és idő frissíti a **Rakomány indításának ütemezett dátuma és időpontja** mezőt a kapcsolódó rakománynál. A **Szállítás részletei** gyorslap meghatározza az átmozgatási rendelés helyét.
 5.  A **Rakománytervező munkaterületen** adja ki a raktárnak.
-6.  Hozzon létre egy gyártási rendelést az **L0101** cikkszámhoz, és állítsa az állapotot **Elindítva** értékre, 20-as mennyiséggel.
+6.  Hozzon létre egy gyártási rendelést az **L0101** cikkszámhoz, és állítsa az állapotot **Elindítva** értékre, 20-as mennyiséggel.
 7.  Készként jelentés a mobileszközről.
 8.  Menjen a mobileszköz-portálra, és válassza ki a **Készként jelentés és betárolás** menüelemet.
 9.  Jelentse készként az **L0101** cikkszámot a kézben tartott eszközről. Ne feledje, hogy a helyszín a **BAYDOOR 2**. Ezt a helyet a találkozási ütemterv alapján találja meg az **Átmozgatási bevételezés** helymeghatározási irányelv helyett.
@@ -126,6 +125,5 @@ Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezi
 ### <a name="additional-information"></a>További információk
 
 -   Az áttárolási forgatókönyv támogatott a kötegelt és sorozatosan vezérelt cikkeknél, mind a köteg-, mind a sorozatszám-dimenziókkal, amelyeket a foglalási hierarchiában fent és alul találhat meg. 
-
 
 

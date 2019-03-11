@@ -1,13 +1,13 @@
 ---
-title: "Információs kódok és információs kódcsoportok"
-description: "Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról."
+title: Információs kódok és információs kódcsoportok
+description: Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340821"
 ---
-
 # <a name="info-codes-and-info-code-groups"></a>Információs kódok és információs kódcsoportok
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Az infókódok lehetőséget nyújtanak az adatrögzítésre a pénztárgép (PO
 
 ## <a name="info-codes-group"></a>Infókódok csoport
 
-A Dynamics 365 for Retail szolgáltatásban infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
+A Dynamics 365 for Retail szolgáltatásban az infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
 
 - Kevesebb infókód meghatározása és egyszerű újra felhasználása. Az iinfókód-csoportokban szereplő nfókódok nem rendelkeznek előre meghatározott függőséggel más infókódoktól. Az azonos infókódot több infókódcsoport is tartalmazhatja, és rangsor segítségével az azonos infókódok megjeleníthetők a megadott sorrendben, amely értelmes bármely adott helyzetben.
 - Infókódok csatolása más infókódokhoz vagy infókód-csoportokhoz egy termékről vagy tranzakcióról szóló információ gyűjtéséhez oly módon, ahogyan szüksége van rá anélkül, hogy külön infókódot vagy csatolt infókódot kellene megadnia minden egyes esethez.
@@ -57,4 +56,3 @@ Csatolhatja az infókódokat, így amikor egy infókód kiváltása megtörténi
 **2. példa: Infókód-csoportok infókódokhoz történő csatolása**
 
 Egyes termékek, például mobileszközök eladása esetén bizonyos adatokat kell mindig összegyűjtenie, mint például a telefonszám, mozgó berendezés azonosítója (MEID) és sorozatszám. Ugyanakkor érdemes különböző adatokat összegyűjtenie a tabletekkel és mobiltelefonokkal kapcsolatban. Beállíthat egy infókód-csoportot, amely utasításokat tartalmaz a telefonszámra, MEID azonosítóra és a sorozatszámra vonatkozóan, majd az infókód-csoportokat az egyes infókódokhoz csatolja. Ha termékspecifikus infókód kiváltása történik, az infókód-csoport kiváltása lehet a következő, hogy lehetővé tegye a gyakori adatok gyűjtését anélkül, hogy minden egyes eszközre több csatolt infókódot kellene meghatároznia.
-

@@ -1,13 +1,13 @@
 ---
-title: "A termelési rendelés állapotának sztornírozása"
-description: "Ez a témakör ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát."
+title: A termelési rendelés állapotának sztornírozása
+description: Ez a témakör ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367317"
 ---
-
 # <a name="reverse-the-production-order-status"></a>A termelési rendelés állapotának sztornírozása
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Ha a termelési rendelés állapotát **Kiadva** állapotról **Ütemezett** ál
 
 ## <a name="from-started-to-released"></a>Elindítva állapotról Kiadva állapotra
 Ha a termelési rendelés állapotát **Elindítva** állapotról **Kiadva** állapotra állítja vissza, akkor a program az összes készként jelentett cikket visszaállítja. Ha anyag kivételére is sor került, vagy bejövő és kimenő szállítások történtek a termelés során, akkor a program ezeket is visszaállítja. A **Fennmaradó állapot** mező a termelési rendelés anyagjegyzéksoraiban **Befejezve** állapotról **Anyagfelhasználás** állapotra módosul. Ha a regisztrált időt, vagy mennyiségeket jelentett készként a műveletekhez a termelési útvonalon, ezeket a beállításokat a program sztornírozza. A **Fennmaradó állapot** mező a termelési útvonalban **Befejezve** állapotról **Anyagfelhasználás** állapotra módosul. Az összes folyamatban lévőként feladott cikk és folyamatban lévő munka beállításai vissza lesznek állítva. A **Termelési rendelés adatai** oldalon a mezők, amelyek elindított vagy készként jelentett mennyiséget mutatnak, alaphelyzetbe kerülnek. Az ezen tranzakciókhoz tartozó dátumok is alaphelyzetbe kerülnek.
-
 
 
 

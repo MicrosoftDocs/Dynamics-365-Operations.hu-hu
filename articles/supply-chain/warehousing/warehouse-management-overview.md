@@ -1,13 +1,13 @@
 ---
-title: "Raktárkezelés"
-description: "Raktárkezelési funkció használata a raktározási folyamatok figyelésére és automatizálására."
+title: Raktárkezelés
+description: Raktárkezelési funkció használata a raktározási folyamatok figyelésére és automatizálására.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335255"
 ---
 # <a name="warehouse-management"></a>Raktárkezelés
 
 [!include [banner](../includes/banner.md)]
 
-A Dynamics 365 for Finance and Operations szolgáltatás raktárkezelő moduljában raktári folyamatok kezelhetők gyártási, elosztási, és kiskereskedelmi vállalatoknál. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált a Finance and Operationsben megtalálható más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
+A raktárkezelési modul a Dynamics 365 for Finance and Operations rendszerben lehetővé teszi a raktározási folyamatok kezelését a gyártási, elosztási és kiskereskedelmi vállalatokban. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált a Finance and Operationsben megtalálható más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
 
 ## <a name="get-started"></a>Első lépések
 A raktárkezelés használatának megkezdéséhez meg kell adnia a raktár általános beállításait a vállalat üzleti folyamatainak támogatásához.
@@ -66,12 +66,11 @@ Bejövő és kimenő raktározási folyamat-munkafolyamatok összetevőit az üz
 
 ## <a name="additional-resources"></a>További erőforrások
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog) véleményeket, híreket és egyéb információkat talál a Raktárkezelés modullal és egyéb megoldásokkal kapcsolatban.
+A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog) véleményeket, híreket és egyéb információkat talál a Raktárkezeléssel és egyéb megoldásokkal kapcsolatban.
 
 
  
-
 

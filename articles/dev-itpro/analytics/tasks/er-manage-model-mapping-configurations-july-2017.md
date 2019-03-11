@@ -1,13 +1,13 @@
---- 
-title: "ER modell-leképezés kezelése külön ER-konfigurációkban"
-description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER)."
+---
+title: ER modell-leképezés kezelése külön ER-konfigurációkban
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349147"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>ER modell-leképezés kezelése külön ER-konfigurációkban
 
@@ -70,7 +70,7 @@ Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-
 6. Kattintson a Tervező pontra.
     * Vegye figyelembe, hogy a létrehozott modell-hozzárendelési konfiguráció egy új, üres hozzárendelést tartalmaz, amelynek a neve azonos a létrehozott konfiguráció nevével. Ne feledje, hogy ha egy kijelölt szülő modellkonfiguráció modell-hozzárendeléseket tartalmaz, ha azok át lesznek másolva egy új modell-hozzárendelési konfigurációba.   
 7. Kattintson a Tervező pontra.
-8. A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.
+8. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla” csomópont.
 9. Kattintson a Gyökér hozzáadása gombra.
 10. A Név mezőbe írja be a Vállalat szót.
     * Cég  
@@ -123,7 +123,7 @@ Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-
 5. Kattintson a Konfiguráció létrehozása lehetőségre.
 6. Kattintson a Tervező pontra.
 7. Kattintson a Tervező pontra.
-8. A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.
+8. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla” csomópont.
 9. Kattintson a Gyökér hozzáadása gombra.
 10. A Név mezőbe írja be a Vállalat szót.
     * Cég  
@@ -161,5 +161,4 @@ Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-
 6. Kattintson a Futtatás elemre.
 7. Kattintson az OK gombra.
     * Vegye figyelembe, hogy ez a formátumkonfiguráció az alapértelmezett modell-hozzárendelési konfigurációt használja az elektronikus dokumentum létrehozásához (a létrehozott kimenet tartalmazza a vállalatkódot).  
-
 

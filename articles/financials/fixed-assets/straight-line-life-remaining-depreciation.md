@@ -1,13 +1,13 @@
 ---
-title: "Lineáris - hátralevő élettartam értékcsökkenés"
-description: "Ez a cikk a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást."
+title: Lineáris - hátralevő élettartam értékcsökkenés
+description: Ez a cikk a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 720a7c581dc0f68b14b769e9c9af0df791d0c273
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebca31727ecdaa2b94d4930174b2461845ab5578
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329666"
 ---
-
 # <a name="straight-line-life-remaining-depreciation"></a>Lineáris - hátralevő élettartam értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Az értékcsökkenési összeg minden évben megegyezik: (beszerzési ár - mara
 | 3. év | (7000 – 1000) ÷ 3 = 2000                   | 5 000                                 |
 | 4. év | (5000 – 1000) ÷ 2 = 2000                   | 3000                                 |
 | 5. év | (3000 – 1000) ÷ 1 = 2000                   | 1000                                 |
-
 
 
 

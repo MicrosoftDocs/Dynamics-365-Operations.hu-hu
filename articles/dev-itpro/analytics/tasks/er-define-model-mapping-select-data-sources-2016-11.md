@@ -1,13 +1,13 @@
---- 
-title: "ER-modelleképezések meghatározása és adatforrások kiválasztása hozzájuk"
-description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörű felhasználó miként választhat ki adatforrásokat az Elektronikus jelentés adatmodellhez."
+---
+title: ER-modelleképezések meghatározása és adatforrások kiválasztása hozzájuk
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörű felhasználó miként választhat ki adatforrásokat az Elektronikus jelentés adatmodellhez.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348871"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>ER-modelleképezések meghatározása és adatforrások kiválasztása hozzájuk
 
@@ -51,7 +51,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>Adja meg a szükséges adatforrásokat az aktuális modell-leképezéshez
 1. Kattintson a Tervező pontra.
-2. A fán válassza ki a „Dynamics 365 for Operations\Table records” pontot.
+2. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 3. Kattintson a Gyökér hozzáadása gombra.
     * Adja meg az adatforrást a fizetési tranzakció eléréséhez.  
 4. A Név mezőbe írja be a „Transactions” szöveget.
@@ -110,7 +110,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 41. A fában bontsa ki a Tranzakciók csomópontot.
 42. A fában bontsa ki a „Tranzakciók\$Összeg” elemet.
 43. A fában bontsa ki vagy csukja össze a „Tranzakciók” elemet.
-44. A fán válassza ki a „Dynamics 365 for Operations\Table records” pontot.
+44. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 45. Kattintson a Gyökér hozzáadása gombra.
     * Adja meg az adatforrást a vállalati bankszámla részleteihez való hozzáféréshez.  
 46. A Név mezőbe írja be a BankAccount szöveget.
@@ -157,5 +157,4 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 70. Zárja be a lapot.
 71. Zárja be a lapot.
 72. Zárja be a lapot.
-
 

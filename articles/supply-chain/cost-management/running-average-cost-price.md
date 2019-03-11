@@ -1,13 +1,13 @@
 ---
-title: "Mozgóátlagon alapuló önköltségi ár"
-description: "A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra."
+title: Mozgóátlagon alapuló önköltségi ár
+description: A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e14f38baaef32c72761594147feca8d08651a050
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aeb23f78d9bec93cf92214470e9ace3cd88b92c3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312025"
 ---
-
 # <a name="running-average-cost-price"></a>Mozgóátlagon alapuló önköltségi ár
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Ha az ön üzleti modellje lehetővé teszi a következő gyakorlatokat, azok se
 -   Amennyiben *nem* jelöli be a **Tényleges értékkel együtt** lehetőséget egy cikkhez, törölje a jelet a **Pénzügyi negatív készlet** jelölőnégyzetből, a **Cikkmodell csoportok** oldalon.
 
 Érdemes azt is szem előtt tartani, hogy a fizikai készletérték maximális ellenoldali értékét korlátozza a fizikai tranzakciók száma, illetve a fizikai és pénzügyi árak közötti különbség. Feltéve, hogy megtörténik az összes fizikai tranzakció pénzügyi frissítése, a fizikai érték nem emelkedhet extrém szintre. Végül pedig, vegye figyelembe, hogy a túlárazási hatás jelentős mértékben csökken, amikor az összesített ellenérték egy helyett, számos aktuális készleten lévő darab között kerül elosztásra.
-
 
 
 

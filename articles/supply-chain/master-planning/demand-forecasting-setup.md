@@ -1,13 +1,13 @@
 ---
-title: "Igény-előrejelzési beállítások"
-description: "Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be."
+title: Igény-előrejelzési beállítások
+description: Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330448"
 ---
-
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Egy cikk és annak különböző dimenziói csak egy cikkfelosztási kulcs alá 
 Raktározási egység (SKU) cikkfelosztási kulcshoz való hozzáadásához kattintson az **Alaptervezés** &gt; **Beállítás** &gt; **Igény-előrejelzés** &gt; **Cikkfelosztási kulcsok** menüpontra. Egy felosztási kulcsot egy cikkhez a **Cikkek társítása** oldal használatával tud hozzárendelni.
 
 ## <a name="intercompany-planning-groups"></a>Vállalatközi tervezőcsoportok
-Az igény-előrejelzés több vállalatra kiterjedő előrejelzést hoz létre. A Microsoft Dynamics 365 for Finance and Operations rendszerben együtt tervezett vállalatok egy vállalatközi tervezési csoportba vannak csoportosítva. Ahhoz, hogy vállalatonként meg tudja határozni, melyik cikkfelosztási kulcsot vegye figyelembe a rendszer igény-előrejelzés esetén, rendeljen hozzá egy cikkfelosztási kulcsot a vállalatközi tervezési csoport tagjához. Ehhez nyissa meg az **Alaptervezés** &gt; **Beállítás** &gt; **Vállalatközi tervezőcsoportok** menüpontot. 
+Az igény-előrejelzés több vállalatra kiterjedő előrejelzést hoz létre. A Microsoft Dynamics 365 for Finance and Operations rendszerben együtt tervező vállalatok egy vállalatközi tervezési csoportba vannak csoportosítva. Ahhoz, hogy vállalatonként meg tudja határozni, melyik cikkfelosztási kulcsot vegye figyelembe a rendszer igény-előrejelzés esetén, rendeljen hozzá egy cikkfelosztási kulcsot a vállalatközi tervezési csoport tagjához. Ehhez nyissa meg az **Alaptervezés** &gt; **Beállítás** &gt; **Vállalatközi tervezőcsoportok** menüpontot. 
 
 Alapértelmezés szerint, ha nincsenek cikkfelosztási kulcsok hozzárendelve a vállalatközi tervezési csoport tagjaihoz, az igény-előrejelzés az összes cikk összes cikkfelosztási kulcsához készül, az összes Dynamics 365 for Finance and Operationst használó vállalaton belül. További szűrési feltételek a vállalatokhoz és cikkfelosztási kulcsokhoz elérhetőek a **Statisztikai kiinduló előrejelzés létrehozása** oldalon. 
 
@@ -64,7 +63,7 @@ Az igény-előrejelzéshez bármikor hozzáadhat új előrejelzési dimenziókat
 
 Nem minden cikk viselkedik ugyan úgy, igény-előrejelzés szempontjából. Lehet hasonló cikkeket egy cikkfelosztási kulcs alá rendelni, valamint olyan jellemzőket, mint a tranzakció típusa vagy az előrejelzés fajtája, cikkfelosztási kulcsonként is megadhatóak. Kattintson a **Cikkfelosztási kulcsok** menüre az **Igény-előrejelzési paraméterek** lap bal oldalán. 
 
-Az előrejelzés létrehozásához a Dynamics 365 for Finance and Operations egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a Dynamics 365 for Finance and Operations rendszerben a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studióba:
+Az előrejelzés létrehozásához a Dynamics 365 for Finance and Operations egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a Finance and Operations rendszerben a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studióba:
 
 -   Az API programozási felület (Telephony Alkalmazásprogramozási Felület) beállítása
 -   URL webszolgáltatási végpont
@@ -86,7 +85,6 @@ A Dynamics 365 for Finance and Operations igény-előrejelzési szolgáltatása 
 [Statisztikai kiinduló előrejelzés generálása](generate-statistical-baseline-forecast.md)
 
 [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
-
 
 
 

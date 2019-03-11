@@ -1,13 +1,13 @@
---- 
-title: "ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból"
-description: "A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Lifecycle Services (LCS) rendszerből."
+---
+title: ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból
+description: A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Lifecycle Services (LCS) rendszerből.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 036d7e7e3f79e0945d6fef866a30edd41e688c07
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337256"
 ---
-
 # <a name="er-import-a-configuration-from-lifecycle-services"></a>ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -70,5 +69,4 @@ Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, ma
 11. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Válassza ki a „Megosztott” állapotú konfiguráció verzióját.  
     * Ne feledje, hogy már a kijelölt adatmodell konfigurációjának 1-es verziója is elérhető.  
-
 

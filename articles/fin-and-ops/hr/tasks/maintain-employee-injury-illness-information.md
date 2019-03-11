@@ -1,13 +1,13 @@
---- 
-title: "Dolgozói sérülések és megbetegedések adatainak karbantartása"
-description: "Javasoljuk, hogy először a „Sérülés és betegség beállítása” feladat-útmutatót fejezze be, mivel annak néhány beállítási adatait itt használjuk."
+---
+title: Dolgozói sérülések és megbetegedések adatainak karbantartása
+description: Javasoljuk, hogy először a „Sérülés és betegség beállítása” feladat-útmutatót fejezze be, mivel annak néhány beállítási adatait itt használjuk.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 03d1e7f7b648e65cbe628aa4ff8b39dfa03ce96b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332610"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Dolgozói sérülések és megbetegedések adatainak karbantartása
 
@@ -92,5 +92,4 @@ Ez a feladatrögzítés tartalmazza a sérülésre vagy betegségre vonatkozó a
     * Példa: A röntgen megerősítette a törést, sínt kell felhelyezni  
 36. Kattintson a Mentés gombra.
     * Az eset állapotát bármikor frissítheti.  Állítsa az eset állapotát a Folyamatban lévő értékre, ha a sérülés vagy a betegség feldolgozása folyamatban van.  Miután lezárta az eseményt, csak a költségek, a kezelés és a balesettel kapcsolatos adatok hozzáadására vagy eltávolítására van lehetősége.  Az egyéb adatok módosításához nyissa meg újra az esethez.  
-
 

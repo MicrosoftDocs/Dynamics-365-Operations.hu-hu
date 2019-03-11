@@ -1,13 +1,13 @@
 ---
-title: "Adja meg a bérlista nyitó egyenlegeit"
-description: "A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes a partnerek számára az adatok áttelepítéséhez vagy átviteléhez egy új Bérlista rendszerbe egy másik rendszerből."
+title: Adja meg a bérlista nyitó egyenlegeit
+description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes a partnerek számára az adatok áttelepítéséhez vagy átviteléhez egy új Bérlista rendszerbe egy másik rendszerből.
 author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312991"
 ---
-
 # <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
 
 [!include [banner](../../includes/banner.md)]
@@ -168,4 +167,3 @@ Lehetőség van a tranzakciók sztornírozására és ismételt bevitelére. A t
 2. Kattintson az **Igen** lehetőségre, amikor a következő üzenet: „Ha sztornírozza ezt a fizetési kimutatást, sztornírozó fizetési kimutatás kerül létrehozásra ezen fizetési kimutatás ellentételezésére. Egyik fizetési kimutatás sem szerkeszthető. Kívánja sztornírozni ezt a fizetési kimutatást?" jelenik meg. 
 
 A fizetési kimutatás sztornírozása után új fizetési kimutatást hozhat létre a munkavállaló számára a korábban létrehozott bevételi kimutatásból. Győződjön meg róla, hogy az új fizetési kimutatás létrehozása előtt kijavította a bevételi kimutatáson szereplő hibás sorokat, majd hozzon létre új fizetési kimutatásokat a helyes összegekkel. 
-

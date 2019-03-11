@@ -1,14 +1,14 @@
 ---
-title: "Intelligens ajánlások"
-description: "Ez a témakör bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak."
+title: Intelligens ajánlások
+description: Ez a témakör bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304691"
 ---
-
 # <a name="intelligent-recommendations"></a>Intelligens ajánlások
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ Bármely javasolt jelöltnél választhatja a **Jelölt megtekintése** lehetős
 ## <a name="job-recommendations"></a>Munkakörajánlások 
 
 Ha egy potenciális alkalmazott az előmeneteli webhely segítségével egy munkakörre jelentkezik, a szervezet más nyitott pozíció is ajánlva lesznek. Ezek a javaslatok a potenciális jelölt múltbeli jelentkezésein, illetve a pályázó önéletrajzán és profilján alapulnak. Ezért a munkakörajánlások segítenek a potenciális jelölteknek gyorsan azonosítani a számukra legjobban illő munkaköröket. A munkakörajánlások akkor állnak a potenciális jelentkező rendelkezésre, ha tíznél több munkakör van az előmeneteli webhelyen. Potenciális jelentkező megnyithatja az ajánlás kartonról az álláshirdetés részletes adatait. A jövőbeli ajánlások javítása érdekében az ajánlásokról visszajelzést is adhatnak.
-

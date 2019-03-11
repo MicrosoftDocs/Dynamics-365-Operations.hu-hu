@@ -1,13 +1,13 @@
---- 
-title: "Előd hozzáadása termelésifolyamat-tevékenységhez"
-description: "A termelésifolyamat-verziókban az összes tevékenységet sorba kell rendezni."
+---
+title: Előd hozzáadása termelésifolyamat-tevékenységhez
+description: A termelésifolyamat-verziókban az összes tevékenységet sorba kell rendezni.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9acb1c2672af70f535f3dce1c8f5a97e8d479158
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d19fb20e8cc941daeaa506e4bf1cb0c7031cf2ee
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343673"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Előd hozzáadása termelésifolyamat-tevékenységhez
 
@@ -51,5 +51,4 @@ További információért olvassa el a „Lean manufacturing: Termelési folyama
 4. Írjon be egy számot a Ciklusidőarány mezőbe.
     * A tevékenységkapcsolatok alapértelmezett ciklusidőaránya: 1. Ez azt feltételezi, hogy mindkét tevékenység azonos ütemben vagy taktidő szerint fut. Ha a megelőző tevékenység magasabb ütemben (alacsonyabb taktidővel) fut, az aránynak 1-nél kisebbnek kell lennie, ha a megelőző tevékenység futási üteme alacsonyabb (magasabb taktidő), a ciklusidő aránya 1-nél nagyobb.  
 5. Kattintson az OK gombra.
-
 

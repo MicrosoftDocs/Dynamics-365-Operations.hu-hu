@@ -1,13 +1,13 @@
 ---
-title: "Sor definiáló cellák módosítása"
-description: "A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását."
+title: Sor definiáló cellák módosítása
+description: A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323640"
 ---
-
 # <a name="modify-row-definition-cells"></a>Sor definiáló cellák módosítása
 
 [!include [banner](../includes/banner.md)]
@@ -387,10 +386,10 @@ Korlátozhatja a sort egy meglévő könyvelési kódra. A oszlopdefiníciónak 
 Néhány könyvelési rendszer támogatja a számla attribútumokat és a tranzakció attribútumokat a pénzügyi adatokban. Ezek az attribútumok virtuális fiók szegmensekként működnek, és kiegészítő információt hordozhatnak a számláról vagy a tranzakcióról. Ezek a kiegészítő információk lehetnek számla azonosítók, kötegelt azonosítók, irányítószámok vagy más jellemzők. Ha a könyvelési rendszer támogatja az attribútumokat, használhat számla attribútumokat vagy tranzakció attribútumokat sor módosítókként a sordefinícióban. A sor információ felülbírálásával kapcsolatos tudnivalókat a „Oszlopdefiníció felülírása” korábban ismertetett részében találja.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Hivatkozás megadása Pénzügyi dimenziók cellára
-A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra hivatkozik, amelyeket a jelentés egyes soraiban szerepeltetni kíván. Ez a cella dimenzióértékeket tartalmaz, de Microsoft Excel munkalapon is beállíthatja a cellákat és ezen felül a szegmensértékeket vagy a dimenzióértékeket. A **Dimenziók** párbeszéd megnyitásához kattintson duplán a **Hivatkozás Pénzügyi Dimenziókra** cellára.
+A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra hivatkozik, amelyeket a jelentés egyes soraiban szerepeltetni kíván. Ez a cella dimenzióértékeket tartalmaz, de megadhatja Microsoft Excel-munkalapok celláit is a szegmensértékek vagy a dimenzióértékek helyett, illetve ezek mellett is. A **Dimenziók** párbeszéd megnyitásához kattintson duplán a **Hivatkozás Pénzügyi Dimenziókra** cellára.
 
 > [!NOTE]
-> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Sordefinícióban már szereplő sorhoz információt a **Hivatkozás Pénzügyi Dimenziókra** cellában adhat meg. Pénzügyi adatokra hivatkozó új sorok hozzáadásához,használja a **Sor Beszúrása a** párbeszédpanelt, új sorok létrehozásához a jelentés definícióban. A következő táblázat bemutatja, hogy az oszlop címe attól függően változik, hogy hogyan konfigurálta az oszlopot.
+> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &,\*, \[, \], {, vagy }. Ha olyan sorhoz szeretne adatokat megadni, amely már szerepel a sordefinícióban, a **Kapcsolás a pénzügyi dimenziókhoz** cellában adja meg az adatokat. Pénzügyi adatokra hivatkozó új sorok hozzáadásához,használja a **Sor Beszúrása a** párbeszédpanelt, új sorok létrehozásához a jelentés definícióban. A következő táblázat bemutatja, hogy az oszlop címe attól függően változik, hogy hogyan konfigurálta az oszlopot.
 
 | A kiválasztott hivatkozás típusa       | A Hivatkozás oszlop leírása erre változik |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Ha természetes szegmensértéket ír be a **Dimenziók** párbeszédpanelen, he
 Megadhat egy tartományt a szegmens értékekhez vagy a dimenzió értékekhez. Egy értéktartomány meghatározásának az az előnye, hogy nem kell minden alkalommal frissítenie a sordefiníciót, valahányszor új szegmensértéket vagy dimenzióértéket adnak hozzá a pénzügyi adatokhoz. Például ha a tartomány értéke **+Számla=\[6100:6900\]** =, akkor a rendszer a 6100-tól 6900-ig tartó számlák értékeit tölti be a sorösszegbe. Ha egy tartomány tartalmaz egy helyettesítő karaktert (?), akkor a jelentéstervező nem értékeli ki a tartományt karakterenként. Ehelyett a tartomány alsó és felső végét állapítja meg, majd ezt a kettőt és a köztük levő összes értéket figyelembe veszi.
 
 > [!NOTE]
-> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
+> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &,\*, \[, \], {, vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Több-szegmenses vagy több-dimenziós tartományok
 
 Ha több dimenzióérték kombinálásával adja meg a tartományt, akkor a tartomány-összehasonlítást a rendszer ..\\financial-dimensions\\dimension-by-dimension végzi el. A tartomány-összehasonlítás nem hajtható végre karakterenkénti módszerrel, sem részleges szegmens alapján. Például, a **+Számla=\[5000:6000\], Részleg=\[1000:2000\], Költséghely=\[00\]** tartomány csak azokat a számlákat tartalmazza, amelyek minden egyes szegmenssel megegyeznek. Ebben a példában, az első dimenziónak az 5000-től 6000-ig terjedő tartományba, a második dimenziónak az 1000 és a 2000 közötti tartományba kell esnie, az utolsó dimenziónak pedig 00-nak kell lennie. Ezért például a **+Számla=\[5100\], Részleg=\[1100\], Költséghely=\[01\]** kombináció nem fog bekerülni a jelentésbe, mivel az utolsó szegmens a megadott tartományon kívül esik. Ha egy szegmensérték szóközt is tartalmaz, ezt a karaktert tegye szögletes zárójelbe (\[ \]). A következő értékek érvényesek egy négy karakterből álló szegmensnek: **\[ 234\], \[123 \], \[1 34\]**. A dimenzióértékeket is szögletes zárójelben (\[ \]) kell megadni, a jelentéstervező pedig automatikusan hozzáadja ezeket a zárójeleket. Ha több szegmenst vagy több dimenziót magába foglaló tartomány helyettesítő karaktereket (? vagy \*) is tartalmaz, akkor a rendszer meghatározza a teljes többszegmenses vagy többdimenziós tartomány alsó és felső értékét, majd hozzáveszi az ezek között található összes értéket. Nagyméretű tartomány esetén ( amilyen például az összes számla 40000-től 99999-ig) lehetőleg minden esetben érvényes kezdő és záró számlát adjon meg.
 
 > [!NOTE] 
-> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
+> A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &,\*, \[, \], {, vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Hozzáadás vagy kivonás sordefinícióban más számlákhoz
 Ha szeretné hozzáadni vagy kivonni egy számla pénzösszegét egy másikhoz, akkor a plusz (+) és mínusz (-) jeleket is használhatja a **Hivatkozás a pénzügyi dimenziókhoz** cellában. Az alábbi táblázat elfogadható formátumokat mutat, hozzáadás és kivonás hivatkozásokra a pénzügyi adatokban.
@@ -456,10 +455,10 @@ Ha szeretné hozzáadni vagy kivonni egy számla pénzösszegét egy másikhoz, 
 | Szegmensértékek tartományának kivonása.                                                     | -Számla=\[1200:1205\]                                                                                       |
 | Helyettesítő karaktereket is tartalmazó szegmensértékek tartományának kivonása.                    | -Számla=\[120?:130?\]                                                                                       |
 
-Annak ellenére, hogy közvetlenül módosíthatja a számlákat, használhatja a **Dimenziók** párbeszédpanelt, hogy a helyes formátumot alkalmazza a pénzügyi adat hivatkozásokra. Bármely értékek tartalmazhatnak helyettesítő karaktereket (? vagy \*). Azonban a jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }.
+Annak ellenére, hogy közvetlenül módosíthatja a számlákat, használhatja a **Dimenziók** párbeszédpanelt, hogy a helyes formátumot alkalmazza a pénzügyi adat hivatkozásokra. Bármely értékek tartalmazhatnak helyettesítő karaktereket (? vagy \*). Azonban a Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &,\*, \[, \], {, vagy }.
 
 > [!NOTE]
-> Értékek kivonásához zárójelek közé kell tennie az értékeket. Ha például a **450?-(4509)** képletet adja meg, az a következőképpen jelenik meg: **+Számla=\[4509\]-Számla=\[450?\]**, ezzel pedig arra utasítja a jelentéstervezőt, hogy vonja ki a 4509 számlaszegmens összegét bármely azon számlaszegmens összegéből, amelynek száma 450-nel kezdődik.
+> Kivonás esetén az értékeket zárójelbe kell helyeznie. Ha például a **450?-(4509)** képletet adja meg, az a következőképpen jelenik meg: **+Számla=\[4509\]-Számla=\[450?\]**, ezzel pedig arra utasítja a jelentéstervezőt, hogy vonja ki a 4509 számlaszegmens összegét bármely azon számlaszegmens összegéből, amelynek száma 450-nel kezdődik.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Számlák hozzáadása vagy kivonása más számlákból
 
@@ -533,4 +532,3 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-

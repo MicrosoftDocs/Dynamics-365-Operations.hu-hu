@@ -1,13 +1,13 @@
 ---
-title: "Banki kivonatfájl importálása – hibaelhárítás"
-description: "Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Finance and Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat."
+title: Banki kivonatfájl importálása – hibaelhárítás
+description: Fontos, hogy a bankszámlakivonat-fájl a Microsoft Dynamics 365 for Finance and Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a4006bf35673e3bb61bcf11619ecc68d295f29eb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c408f30c783d58766ab93b13c589079c3ef375de
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324445"
 ---
-
 # <a name="bank-statement-file-import-troubleshooting"></a>Banki kivonatfájl importálása – hibaelhárítás
 
 [!include [banner](../includes/banner.md)]
 
-Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Finance and Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
+Fontos, hogy a bankszámlakivonat-fájl a Microsoft Dynamics 365 for Finance and Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
 
 <a name="what-is-the-error"></a>Mi a hiba?
 ------------------
@@ -65,7 +64,7 @@ A BAI2 és MT940 fájlok szöveges fájlok, ezek módosítása szükséges a hib
 
 További tájékoztatást a következő témakörben talál: <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
 
-1.  Indítsa el a Microsoft Visual Studio alkalmazást.
+1.  Indítsa el a Microsoft Visual Studio programot.
 2.  Hozzon létre konzol alkalmazást.
 3.  Nyissa meg a megfelelő XSLT-fájlt.
 4.  Kattintson az XSLT-fájlra és annak tulajdonságlapjára.
@@ -99,7 +98,6 @@ A következő táblázat felsorolja a továbbfejlesztett banki egyeztetés impor
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
-
 
 
 

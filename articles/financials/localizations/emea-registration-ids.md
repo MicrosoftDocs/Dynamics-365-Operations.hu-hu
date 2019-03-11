@@ -1,13 +1,13 @@
 ---
-title: "Nyilvántartási azonosítók"
-description: "Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást."
+title: Nyilvántartási azonosítók
+description: Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350504"
 ---
-
 # <a name="registration-ids"></a>Nyilvántartási azonosítók
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási 
 |-----------------------|----------------|
 | Regisztráció típusa     | A nyilvántartási típus konkrét országban/régióban.|
 | Korlátozva         | Az adónyilvántartás-típusra vonatkozó korlátozás fajtája: Nincs, Személy, Szervezet.|
-| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A Microsoft Dynamics 365 for Finance and Operations által támogatott kategóriák teljes listája alább található. |
+| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A támogatott Microsoft Dynamics 365 for Finance and Operations kategóriák teljes listáját lásd alább. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
 
@@ -101,7 +100,7 @@ Az alábbi táblázat a Finance and Operations támogatott nyilvántartási típ
 | Hivatalos azonosító dokumentum                              | Spanyolország             | Hivatalos azonosító dokumentum|
 | Tartózkodási igazolás                                         | Spanyolország             | Tartózkodási igazolás|
 | Egyéb azonosító dokumentum                                 | Spanyolország             | Egyéb azonosító dokumentum|
-| Nincs cenzus                                                  | Spanyolország             | Nem érhető el az AX 2012 R3 esetében|
+| Nem összeírt                                                  | Spanyolország             | Nem érhető el az AX 2012 R3 esetében|
 
 
 A nyilvántartási azonosítók feldolgozásával kapcsolatos további információkért, ideértve a szükséges előfeltételeket, nézze meg az áfaazonosítóhoz kapcsolódó következő feladatrögzítéseket a Lifecycle Services (LCS) szolgáltatásban:
@@ -109,7 +108,6 @@ A nyilvántartási azonosítók feldolgozásával kapcsolatos további informác
 -   Áfaazonosító beállítása
 -   Szállítói áfaazonosító rögzítése
 -    Fél keresése adószám használatával
-
 
 
 

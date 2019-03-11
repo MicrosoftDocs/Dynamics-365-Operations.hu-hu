@@ -1,13 +1,13 @@
 ---
-title: "Mi új vagy mi változott a Dynamics 365 for Operations 1611. verziójában (2016. november)"
-description: "Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 for Operations szolgáltatásokat."
+title: Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
+description: Ez a témakör a Dynamics 365 for Operations 1611 verziójában található új vagy módosított szolgáltatásokat írja le.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339073"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Mi új vagy mi változott a Dynamics 365 for Operations 1611. verziójában (2016. november)
+# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 for Operations szolgáltatásokat.
+Ez a témakör a Dynamics 365 for Operations 1611 verziójában található új vagy módosított szolgáltatásokat írja le.
 
 ## <a name="cost-accounting"></a>Költségkönyvelés
 
@@ -51,7 +50,7 @@ Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 f
 </tr>
 <tr>
 <td>Költségobjektum-dimenziók meghatározása és költségobjektum-dimenziótagok importálása.</td>
-<td>A költségobjektumok bármilyen típusú objektumok, amelyekhez költségek vannak rendelve. A tipikus költségobjektumok közé tartoznak a termékek, projektek, erőforrások, részlegek, költséghelyek és földrajzi területek. Használhatja a Microsoft Dynamics 365 for Operations adatcsatlakozót a pénzügyi dimenziók és értékek lekéréséhez az Operationsből, vagy használhat egy általános adatcsatlakozót, amelynél a Microsoft Excel használatával történik a dimenziók és értékek beolvasása bármilyen más típusú forrásrendszerből. Például az objektumdimenzióként a költséghely pénzügyi dimenziót használja, minden importált költséghely dimenziótagja a költségobjektumnak.</td>
+<td>A költségobjektumok bármilyen típusú objektumok, amelyekhez költségek vannak rendelve. A tipikus költségobjektumok közé tartoznak a termékek, projektek, erőforrások, részlegek, költséghelyek és földrajzi területek. Használhatja a Microsoft Dynamics 365 for Operations adatcsatlakozót a pénzügyi dimenziók és értékek lekéréséhez az Operationsből, vagy használhat egy általános adatcsatlakozót, amelynél a Excel használatával történik a dimenziók és értékek beolvasása bármilyen más típusú forrásrendszerből. Például az objektumdimenzióként a költséghely pénzügyi dimenziót használja, minden importált költséghely dimenziótagja a költségobjektumnak.</td>
 </tr>
 <tr>
 <td>Statisztikai dimenziók meghatározása vagy importálása</td>
@@ -101,7 +100,7 @@ Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 f
 </tr>
 <tr>
 <td>Jelentések létrehozása az Excel programmal.
-<blockquote>[!NOTE] A Microsoft Excel 2016 verziót kell futtatnia.</blockquote>
+<blockquote>[!NOTE] Futtatnia kell a Microsoft Excel 2016-ot.</blockquote>
 </td>
 <td>A költségkönyvelési adatok közvetlenül exportálhatók az Excelbe adatentitásokkal, és a Microsoft PivotTable használatával lehet jelentéseket létrehozni.</td>
 </tr>
@@ -764,7 +763,7 @@ A zökkenőmentes többcsatornás kereskedelem a hagyományos fizikai üzleteket
 
 | Mit lehet tenni | Miért fontos ez |
 |-----------------|-----------------------|
-| Személyre szabott termékajánlások megtekintése több érintkezési pontnál a pénztáraknál annak meghatározásához, hogy mi iránt érdeklődhet egy ügyfél a vásárlási előzményei, a kívánságlistáján lévő cikkek, valamint azon cikkek alapján, amelyeket más ügyfelek vásároltak az interneten vagy a fizikai üzletekben | A nagy katalógusokkal rendelkező kiskereskedők esetén a személyre szabott ajánlások segítenek az ügyfélnek a termék felfedezésében, és lehetővé teszik az üzlettársításoknál az intelligens ügyféltárolást. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, értékesítésben, és növelhetik a vevők megtartását. A Microsoft Dynamics 365 for Retail rendszerben a termékajánlásokat a kognitív szolgáltatás és a Microsoft Azure gépi tanulás szolgálja ki. |
+| Személyre szabott termékajánlások megtekintése több érintkezési pontnál a pénztáraknál annak meghatározásához, hogy mi iránt érdeklődhet egy ügyfél a vásárlási előzményei, a kívánságlistáján lévő cikkek, valamint azon cikkek alapján, amelyeket más ügyfelek vásároltak az interneten vagy a fizikai üzletekben | A nagy katalógusokkal rendelkező kiskereskedők esetén a személyre szabott ajánlások segítenek az ügyfélnek a termék felfedezésében, és lehetővé teszik az üzlettársításoknál az intelligens ügyféltárolást. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, értékesítésben, és növelhetik a vevők megtartását. A Microsoft Dynamics 365 for Retail termékjavaslatok kognitiv szolgáltatásokra és Microsoft Azure gépi tanulásra épülnek. |
 
 ### <a name="pos-task-recorder"></a>Pénztári feladatrögzítő
 
@@ -784,8 +783,8 @@ Az üzleti rendszer üzembe helyezési választási lehetőség a kiskereskedők
 - Az üzlet kiskereskedelmi kiszolgálója közvetlenül kommunikál az Application Object Server (AOS) kiszolgálóval az üzleti rendszer központjában.
 - Támogatja a párhuzamos terminál eseteket, ahol nincs központi kapcsolat.
 - A Retail Modern POS és a Cloud POS mindig az üzletben levő kiskereskedelmi kiszolgálóval kommunikál.
-- Retail Modern POS és Cloud POS támogatása, ha nincs kapcsolat a központtal.
-- Retail Modern POS-specifikus offline adatbázis (minden egyes Retail Modern POS-példányra elszigetelt) támogatása, ha nincs kapcsolat a központtal.
+- A Retail Modern POS és Cloud POS támogatása, ha nincs kapcsolat a központtal.
+- A Retail Modern POS-specifikus offline adatbázis (minden egyes Retail Modern POS-példányra elszigetelt) támogatása, ha nincs kapcsolat a központtal.
 - A hitelesítés alapja a szolgáltatások közvetlen kommunikációja csak az üzleti rendszer esetében.
 - A valós idejű szolgáltatáshívások nem támogatottak, ha a nincs internetkapcsolat.
 - A Retail Modern POS és a csatornaadatbázis közvetlen adatbáziskapcsolata nem támogatott.
@@ -801,7 +800,7 @@ Az üzleti rendszer üzembe helyezési választási lehetőség a kiskereskedők
 | A kiskereskedő biztonságos kommunikációt folytathat a helyi üzleti rendszer és a központ között. | A kiskereskedő biztonságosan kommunikálhat az üzleti rendszerből, ha van kapcsolat. |
 | Az informatikai vezető és a Microsoft Operations figyelemmel követheti a helyszíni üzleti rendszert és jelentéseket készíthet (diagnosztika és jelentési módosítások). | Az informatikai vezető és a Microsoft Operations biztonságosan figyelheti az üzleti rendszert, és hatékony hibaelhárítást végezhet. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Univerzális Windows Platform alkalmazás a Retail Modern POS-hez
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Univerzális Windows-platform alkalmazás Retail Modern POS funkcióhoz
 
 A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asztali számítógépekhez és táblagépekhez, és Cloud POS formájában az asztali vagy táblagépes böngészőkhöz. Ebben a verzióban a Retail Modern POS-t univerzális Windows Platform (UWP) alkalmazássá konvertáljuk. Ez a módosítás lehetővé teszi a Retail Modern POS futtatását bármely Windows 10 eszközön (asztali, tábla vagy telefon), sőt, a nézetek közti váltást is a Continuum-kompatibilis eszközök esetében.
 
@@ -819,7 +818,7 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 | Szállítóként információ lekérése a bizományosi készletről, amelynek az átvitele megtörténik a vevőhöz. | A számla kiállításához a vevő számára a szállítónak szüksége van bizományosi készletből megvásárolt nyersanyagok adataira, valamint a vásárlás dátumára. A szállító is figyelemmel követheti a vevő telephelyén rendelkezésre álló készletet a szállítói együttműködés felhasználói felületén. |
 | A szállító tulajdonában lévő készlet átvitele átmozgatási napló segítségével. | A szállító által birtokolt készlet fizikai helyének nyomon követésére a helynek rögzíthetőnek kell lennie a rendszerben. Az átmozgatási naplót segítségével rögzítheti a készlet tényleges mozgatását, többek között az átmozgatást az egyik helyről a raktárban egy másik helyre a raktárban. |
 | A szállító tulajdonában lévő készlet igazítása számlálási napló segítségével. | Fontos, hogy a rendszerbeli aktuális készlet mindig szinkronban legyen a tényleges készlettel. A szállító által birtokolt készlet folyamatosan igazítható a számlálási eljárásokkal, például a mennyiség módosítása és a számlálási napló folyamatokkal. |
-| További tudnivalók a Dynamics 365 for Operations bizományosi támogatásáról | A bizományosi folyamatok támogatásával kapcsolatos további tudnivalókat lásd: [Szállítmány](../../supply-chain/inventory/consignment.md), [Szállítmány beállítása](../../supply-chain/inventory/set-up-consignment.md), [Bizományosi feltöltési rendelés létrehozása (Feladat-útmutató)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) és [Bizományosi készlet tulajdonosának módosítása gyártási igény alapján (Feladat-útmutató)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| További tudnivalók a szállítmány-támogatásról a Dynamics 365 for Operations rendszerben | A bizományosi folyamatok támogatásával kapcsolatos további tudnivalókat lásd: [Szállítmány](../../supply-chain/inventory/consignment.md), [Szállítmány beállítása](../../supply-chain/inventory/set-up-consignment.md), [Bizományosi feltöltési rendelés létrehozása (Feladat-útmutató)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) és [Bizományosi készlet tulajdonosának módosítása gyártási igény alapján (Feladat-útmutató)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Szállítói együttműködési (korábbi nevén a szállítói portál)
 
@@ -828,7 +827,7 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 | Engedély a szállítók számára a válaszolásra a beszerzési rendelés egyes soraira és módosítások javasolására. | Bizonyos esetekben szállítók szeretnének elfogadni egyes beszerzésirendelés-sorokat, másokat viszont elutasítani. A szállítók most már egyenként kezelhetik a beszerzésirendelés-sorokat. Minden sor elutasítható, elfogadhat, vagy elfogadható módosításokkal. A szállítók például módosíthatják a szállítási dátumot, feloszthatják a szállítást és a mennyiséget, vagy alternatív cikket javasolhatnak. |
 | Kapcsolattartó adatainak kezelésének engedélyezése a szállítók számára. | A szállítók tarthatják karban a vállalathoz tartozó kapcsolattartó személy adatait. Az adatok között szerepelnek a nevek, az e-mail címek és a telefonszámok. A funkcióhoz való hozzáférést megvalósítása dedikált biztonsági szerepkörön keresztül történik. |
 | A beszerzési rendelésekkel kapcsolatos dokumentumok megosztása a szállítókkal. | Amikor meg kell osztania egy dokumentum egy szállítóval, például egy követelményekkel kapcsolatos dokumentumot, kényelmes megoldás a dokumentumot behivatkozni a megfelelő beszerzési rendeléshez. A szállító így jegyzeteket és mellékleteket oszthat meg az ügyféllel úgy, hogy a dokumentumot behivatkozza a beszerzési rendelésre adott válaszához. A dokumentumkezelés az alapul szolgáló kiegészítő keretrendszer, és csak a „külsőként” besorolt jegyzetek és mellékletek oszthatók meg a szállítókkal. |
-| Új szállítói felhasználók létrehozása. | Ha a szállító a szállítói együttműködési felület használja, egyszerűen igényelhet új felhasználói fiókokat, amikor új kapcsolattartóknak kell hozzáférniük a szállítói együttműködéshez. A beszerzési szakemberek kérhetnek felhasználói fiókot a szállítói szervezet kapcsolattartói számára. Az a szállítói kapcsolattartó személy, aki már együttműködési felhasználó, szintén küldhet ilyen típusú kérelmet. A kérelem végül létrehoz egy új felhasználót Dynamics 365 for Operations megoldásban, amelyhez szállítóspecifikus biztonsági szerepkörök tartoznak. Emellett kérelmet indít el a Microsoft Azure B2B portálon, hogy a felhasználó megkapja az új Azure Active Directory (Azure AD) felhasználói fiókot. A szállítók emellett kérhetik adott szállítói felhasználói fiókok inaktívvá tételét, vagy a biztonsági szerepkörök módosítását. |
+| Új szállítói felhasználók létrehozása. | Ha a szállító a szállítói együttműködési felület használja, egyszerűen igényelhet új felhasználói fiókokat, amikor új kapcsolattartóknak kell hozzáférniük a szállítói együttműködéshez. A beszerzési szakemberek kérhetnek felhasználói fiókot a szállítói szervezet kapcsolattartói számára. Az a szállítói kapcsolattartó személy, aki már együttműködési felhasználó, szintén küldhet ilyen típusú kérelmet. A kérelem végül létrehoz egy új felhasználót Dynamics 365 for Operations megoldásban, amelyhez szállítóspecifikus biztonsági szerepkörök tartoznak. Megkönnyíti a kérelmet a Microsoft Azure B2B portál felé, hogy a felhasználónak új Azure Active Directory (Azure AD) felhasználói fiók legyen telepítve. A szállítók emellett kérhetik adott szállítói felhasználói fiókok inaktívvá tételét, vagy a biztonsági szerepkörök módosítását. |
 | További tudnivalók a Dynamics 365 for Operations szállítói együttműködési támogatásáról. | A szállítói együttműködéssel kapcsolatos további tudnivalókat lásd: [A külső szállítókkal történő szállítói együttműködés](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Szállítói együttműködés a vevőkkel](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Szállítói együttműködés felhasználóinak kezelése](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Szállítói együttműködés beállítása és karbantartása](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) és [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### <a name="intercompany-order-processing"></a>Vállalatközi rendelésfeldolgozás
@@ -884,8 +883,8 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 
 | Mit lehet tenni | Miért fontos ez |
 |-----------------|-----------------------|
-| Különböző tárolótípusok modellezése. | Különböző tárolótípusokat használhat a raktárban a tárolás optimalizálására vagy más okból. Az új tárolótípus entitás a tárolótípusok fizikai jellemzőit tartalmazza. Most már társíthatók az azonosítótáblák adott tárolótípusokkal, és használhatók a hely rakodási korlátai. A funkció segítségével például megadhatja, hány raklap (vagy más tárolótípus) van engedélyezve egy meghatározott helyen. A tárolótípusok az egységszekvencia-csoportokhoz is hozzá lettek adva, hogy alapértelmezett tárolótípusokat lehessen hozzáadni a bevételezési folyamathoz. A tárolótípusok a bejövő és kimenő helyutasításokkal használható. Az aktuális készlet nézetben is használhatók, ami segít megállapítani, hogy hány tárolótípus van a jelenleg tárolt készletben. További információért lásd a [Tárolótípussal társított azonosítótáblák használata a raktárkezelési folyamatok támogatásához](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/) blogbejegyzést. Annak ellenére, hogy a blogbejegyzés a Microsoft Dynamics AX 2012 egyik frissítését ismerteti, ugyanazt a támogatást adtuk most hozzá a Dynamics 365 for Operations megoldáshoz. |
-| Szállítmányok sztornírozása. | A raktárban kezelni kell tudni a késői változtatásokat. Például egyes áruk sérültek lehetnek, így nem szállíthatók. Azt is megtörténhet, hogy egy vevő késői kérelmeket küld, vagy megszakít vagy módosít egy megrendelést. A Dynamics 365 for Operations most már lehetővé teszi a szállítmányok sztornírozását. Emiatt érvényteleníthető a szállítólevél, hogy később frissíthető legyen a helyes mennyiségekkel. Ehhez hasonlóan a bejövő folyamatban érvényteleníthetők a termékbevételezések, és így frissített változat hozható létre. |
+| Különböző tárolótípusok modellezése. | Különböző tárolótípusokat használhat a raktárban a tárolás optimalizálására vagy más okból. Az új tárolótípus entitás a tárolótípusok fizikai jellemzőit tartalmazza. Most már társíthatók az azonosítótáblák adott tárolótípusokkal, és használhatók a hely rakodási korlátai. A funkció segítségével például megadhatja, hány raklap (vagy más tárolótípus) van engedélyezve egy meghatározott helyen. A tárolótípusok az egységszekvencia-csoportokhoz is hozzá lettek adva, hogy alapértelmezett tárolótípusokat lehessen hozzáadni a bevételezési folyamathoz. A tárolótípusok a bejövő és kimenő helyutasításokkal használható. Az aktuális készlet nézetben is használhatók, ami segít megállapítani, hogy hány tárolótípus van a jelenleg tárolt készletben. További információért lásd a [Tárolótípussal társított azonosítótáblák használata a raktárkezelési folyamatok támogatásához](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/) blogbejegyzést. Annak ellenére, hogy a blogbejegyzés az Microsoft Dynamics AX 2012 egyik frissítését ismerteti, ugyanazt a támogatást adtuk most hozzá a Dynamics 365 for Operations megoldáshoz. |
+| Szállítmányok sztornírozása. | A raktárban kezelni kell tudni a késői változtatásokat. Például egyes áruk sérültek lehetnek, így nem szállíthatók. Azt is megtörténhet, hogy egy vevő késői kérelmeket küld, vagy megszakít vagy módosít egy megrendelést. Dynamics 365 for Operations lehetővé teszi a szállítmány sztornírozását. Emiatt érvényteleníthető a szállítólevél, hogy később frissíthető legyen a helyes mennyiségekkel. Ehhez hasonlóan a bejövő folyamatban érvényteleníthetők a termékbevételezések, és így frissített változat hozható létre. |
 | Vegyes cikkeket tartalmazó raklapok használata. | Most már lehetőség van „vegyes” raklapok fogadására és regisztrálására. A vegyes raklapok különböző cikkeket tartalmaznak, amelyeket egy raklapra csomagoltak, egy vagy több beszerzési rendeléshez vagy sorhoz. Minden regisztráció összesíthető egy cél azonosítótáblára. A folyamat a raktári mobileszközzel engedélyezhető. Ha például a vegyes cikkeket tartalmazó raklap megérkezik a raktárba, a bevételezési adminisztrátor azonosítja raklapon levő cikkeket és mennyiségüket, mielőtt a raklapot átmozgatnák a kijelölt betárolási helyekre. A betárolási helyeket a munkasablonok és a helyutasítások azonosítják. Ha a betárolási helyek több olyan cikket érintenek, amelyeknek rögzített helye van, a funkció annyi betárolási munkasort hoz létre, amennyi különböző cikk van a vegyes raklapon. A funkció gyorsabbá és rugalmasabbá teszi a beérkező vegyes raklapok regisztrálását és betárolását. További tájékoztatásért lásd a [Vegyes forrásdokumentum-sorokkal rendelkező raklap beérkezése és regisztrálása egy azonosítótábla segítségével](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) blogbejegyzést, valamint az információkat a vegyes raklapok támogatásáról a [közelmúltbeli összesítő frissítés bejelentésében](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). Annak ellenére, hogy a blogbejegyzés az AX 2012 egyik frissítését ismerteti, ugyanazt a támogatást adtuk most hozzá a Dynamics 365 for Operations megoldáshoz. |
 
 ### <a name="minor-feature-enhancements-in-supply-chain-management"></a>Kisebb finomítások az ellátásilánc-kezelésben
@@ -946,4 +945,3 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy módosult elemek](whats-new-changed.md)
-

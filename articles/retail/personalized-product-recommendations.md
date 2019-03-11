@@ -1,13 +1,13 @@
 ---
-title: "Személyre szabott termékajánlások"
-description: "Ez a témakör a Dynamics 365 for Retail pénztár (POS) eszközön megjeleníthető termékajánlásaival kapcsolatban rendelkezik információval."
+title: Személyre szabott termékajánlatok
+description: Ez a témakör a Dynamics 365 for Retail pénztár (POS) eszközön megjeleníthető termékajánlásaival kapcsolatban rendelkezik információval.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326469"
 ---
-
 # <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük. További információ: [Eltávolított vagy elavult funkciók](../dev-itpro/migration-upgrade/deprecated-features.md).
 
-A Dynamics 365 for Retail rendszerben a termékajánlásokat meg lehet jeleníteni a pénztár (POS) eszközön. Az ajánlások olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. A nagy katalógussal dolgozó kiskereskedők esetében az ajánlások segítenek a vevőknek a termékek felderítésében. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, valamint a keresztértékesítésben, és növelhetik a vevők megtartását. A Dynamics 365 for Retail rendszerben a termékajánlásokat a kognitív szolgáltatás és a Microsoft Azure gépi tanulás szolgálja ki.
+A Dynamics 365 for Retail rendszerben a termékajánlásokat meg lehet jeleníteni a pénztár (POS) eszközön. Az ajánlások olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. A nagy katalógussal dolgozó kiskereskedők esetében az ajánlások segítenek a vevőknek a termékek felderítésében. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, valamint a keresztértékesítésben, és növelhetik a vevők megtartását. A Dynamics 365 for Retail termékjavaslatok kognitiv szolgáltatásokra és Microsoft Azure gépi tanulásra épülnek.
 
 ## <a name="scenarios"></a>Esetek
 
@@ -53,7 +52,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
     - Ha az üzlet alkalmazottja hozzáad egy vevőt a tranzakcióhoz, az ajánlások motor a vevői tranzakciók előzményeinek segítségével, valamint a kosárban levő cikkel alapján személyes ajánlásokat tesz.
 
     > [!NOTE]
-    > Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést Dynamics 365 for Retail rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra.
+    > Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést a Dynamics 365 for Retail rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra.
 
     [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
@@ -63,7 +62,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
 
     [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>A Dynamics 365 for Retail rendszer konfigurálása a POS-ajánlások engedélyezésére
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>A Dynamics 365 for Retail konfigurálása pénztárjavaslatok engedélyezéséhez
 
 A termékajánlások beállításához a következőket kell tenni:
 
@@ -94,4 +93,3 @@ Ha bekapcsolja az **Ajánlások engedélyezése** elemet, és elvégzi a konfigu
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ajánlások vezérlő hozzáadása egy POS-eszköz tranzakció lapján](add-recommendations-control-pos-screen.md)
-

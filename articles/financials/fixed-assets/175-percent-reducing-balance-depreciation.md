@@ -1,13 +1,13 @@
 ---
-title: "175 százalékos degresszív értékcsökkenés"
-description: "Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
+title: 175 százalékos degresszív értékcsökkenés
+description: Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 author: saraschi2
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2a63293dbf24c27733f8013947aeab5792fa0db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320167"
 ---
-
 # <a name="175-percent-reducing-balance-depreciation"></a>175 százalékos degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ A 175 % degresszív értékcsökkenési módszer elosztja a 175 százalékot az 
 
 > [!NOTE] 
 > Általában amikor az összeg számolása a 175 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamhoz létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
-
 
 
 

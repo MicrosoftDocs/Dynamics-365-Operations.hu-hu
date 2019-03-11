@@ -1,13 +1,13 @@
 ---
-title: "Újonnan gyártott cikkek elszámoló árának frissítése"
-description: "Ez a leírás az újonnan gyártott cikkek alapköltségeinek frissítéséhez nyújt útmutatást."
+title: Újonnan gyártott cikkek elszámoló árának frissítése
+description: Ez a leírás az újonnan gyártott cikkek alapköltségeinek frissítéséhez nyújt útmutatást.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc8725bcab61fa20a4c35a83473b00e54cf0bf28
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cfb04a98f7d01f7766bea97157ca3c44c51e326
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325503"
 ---
-
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Újonnan gyártott cikkek elszámoló árának frissítése
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Ha a befagyasztott időszak során új gyártott cikkeket kíván hozzáadni, te
 5.  Használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a zárolás jelzőt, ezzel lehetővé téve a második költségszámítási verzióba foglalt függőben lévő költségrekordok aktiválását.
 6.  Használja a **Költségszámítási verzió fenntartása** lapról megnyitható **Árak aktiválása** oldalt, hogy engedélyezze az összes a második költségszámítási verzióba foglalt függőben lévő költségrekordot. Elérhetővé teheti az egyes cikkekhez tartozó függőköltség-rekordokat is a **Cikk ár** oldalon szereplő **Aktiválás** gombbal.
 7.  A további adat-fenntartás megelőzése érdekében, használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a második költségszámítási verzióba foglalt zárolás jelzőket. Az irányelvek zárolása megakadályozza az új függő költségek bevitelét és a függő költségek aktiválását.
-
 
 
 

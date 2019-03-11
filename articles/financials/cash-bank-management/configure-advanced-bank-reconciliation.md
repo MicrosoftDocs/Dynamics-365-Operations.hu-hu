@@ -1,13 +1,13 @@
 ---
-title: "Továbbfejlesztett banki egyeztetés beállításának folyamata"
-description: "A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan."
+title: Továbbfejlesztett banki egyeztetés beállításának folyamata
+description: A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357335"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Továbbfejlesztett banki egyeztetés beállításának folyamata
 
 [!include [banner](../includes/banner.md)]
 
-A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.  
+A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.  
 
 Számos darabot a továbbfejlesztett banki egyeztetés funkció használata előtt be kell állítani. A Bankkivonat importálásának beállításával kapcsolatos további tudnivalókért lásd: [A banki kivonat importálási folyamatának beállítása](set-up-advanced-bank-reconciliation-import-process.md).  Az egyeztetési folyamatra vonatkozó követelmények alább vannak részletezve.
 
@@ -59,7 +58,6 @@ A **Banki kivonatok használata az elektronikus fizetések visszaigazolására**
 **A kimutatásokban szereplő bankszámla neve** mező neve az elektronikus banki kivonatokban szereplő bankszámlára vonatkozó névvel egyezik meg.  Ez a név annak eldöntésekor használatos, hogy mely tranzakciók kerüljenek importálásra azon kivonatból származó bankszámlára vonatkozóan, amely több bankszámlára vonatkozó információkat tartalmazhat. 
 
 Az **Egyeztetés az importálás után** lehetőségre történő beállítás automatikusan ellenőrzi a banki kivonatot, új banki egyeztetést és munkalapot hoz létre, és futtatja az Alapértelmezett egyeztetési szabálykészletet.  Ez a funkció automatizálja a folyamatot addig a pontig, ahol már a tranzakciókat kézzel kell egymáshoz rendelni.  A bankszámla beállítása visszaáll alapértelmezésre az importáláskor.
-
 
 
 

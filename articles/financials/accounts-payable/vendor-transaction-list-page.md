@@ -1,13 +1,13 @@
 ---
-title: "Szállítói tranzakciók listaoldala"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Szállítói tranzakciók lista oldalát mutatja be."
+title: Szállítói tranzakciók listaoldala
+description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Szállítói tranzakciós listaoldalával kapcsolatban nyújt tájékoztatást.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 99a169bd51e14f15c085f7547ec240b2787258cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341741"
 ---
-
 # <a name="vendor-transactions-list-page"></a>Szállítói tranzakciók listaoldala
 
 [!include [banner](../includes/banner.md)]
@@ -40,10 +39,10 @@ A műveleti panel **Kiegyenlítések megjelenítése** gombjával gyorsan hozzá
 
 4. A párbeszédpanelen a különböző feladatok hajthatók végre. Válasszon ki egy vagy több bizonylatot majd, válassza ki az alábbi gombok egyikét:
 
-    - **Kapcsolódók megtekintése** – a fizetési napló összes tranzakciója jelenik meg, amely a kifizetési naplóban lett létrehozva és kapcsolódik a dokumentumhoz. Ezenkívül ezek a kifizetésekhez kapcsolódó valamennyi kiegyenlítés jelenik meg. Miközben megtekinti a kapcsolódó fizetéseket, a gombon a címke a **Kiegyenlítések megjelenítése** értékre vált. Válassza a **Kiegyenlítések megjelenítése** lehetőséget hogy csak azokat a tranzakciókat jelenítse meg, amelyek meg lettek jelenítve amikor először nyitotta meg a **Kiegyenlítések megjelenítése** párbeszédpanelt.
+    - **Kapcsolódók megtekintése** – Megjeleníti az összes kifizetési napló tranzakciót és a főkönyvi napló tranzakcióit a szállítóhoz, akit abban a naplóban hoztak létre, amelyben a dokumentumok a létrehozott listában megjelennek. Például ha egy kifizetés megjelenik, akkor az összes olyan fizetés abban a fizetési naplóban, amelyben létrehozták, megjelenik. Ha egy számla vagy kifizetés megjelenik, és ezt egy általános naplóban hozták létre, akkor az adott általános naplóban levő összes dokumentum megjelenik. Ezenkívül az összes kiegyenlítés, amely a dokumentumlistához kapcsolódik, szintén megjelenik. Miközben megtekinti a kapcsolódó fizetéseket, a gombon a címke a **Kiegyenlítések megjelenítése** értékre vált. Válassza a **Kiegyenlítések megjelenítése** lehetőséget hogy csak azokat a tranzakciókat jelenítse meg, amelyek meg lettek jelenítve amikor először nyitotta meg a **Kiegyenlítések megjelenítése** párbeszédpanelt.
     - **Előzmények megtekintése** – A bizonylatok kiegyenlítési előzményeinek megtekintése. A **Bezárás** gombbal zárja be a párbeszédpanelt.
     - **Könyvelés megtekintése** – A kiválasztott dokumentumhoz kapcsolódó összes bizonylat megtekintése. A **Bezárás** gombbal zárja be a párbeszédpanelt.
-    - **Exportálás** – A kijelölt bizonylatok exportálása az Microsoft Excelbe.
+    - **Exportálás** – A kijelölt bizonylatok exportálása a Microsoft Excel programba.
     - **Tranzakciók kiegyenlítése** – Ez a gomb csak akkor jelenik meg, ha a kiválasztott eredeti dokumentum nem lett teljesen kiegyenlítve. Ha kiválasztja ezt a gombot, a **Tranzakciók kiegyenlítése** párbeszédpanel jelenik meg, ahol kiválaszthatja a tranzakciókat a kiegyenlítéshez.
     - **Kiegyenlítések visszavonása** – Ez a gomb csak akkor jelenik meg, ha a kiválasztott eredeti dokumentum teljesen ki lett egyenlítve. Ha kiválasztja ezt a gombot, megjelenik a **Kiegyenlítések visszavonása** párbeszédpanel jelenik meg, ahol visszavonhatók a dokumentumhoz végrehajtott kiegyenlítések.
 
@@ -98,4 +97,3 @@ Minden mező más hatással rendelkezik a tranzakcióra a szerkesztésekor:
 - **Készpénzfizetési engedmény feltételeinek módosítása:** – A készpénzfizetési engedmények módosulnak az alapdátum és a készpénzfizetési engedmény feltételei alapján.
 
 Amikor befejezte a fizetési beállítások módosítását, válassza a **Bezárás** elemet a módosítások mentéséhez.
-

@@ -1,13 +1,13 @@
 ---
-title: "Költségvetés-tervezési sablonok Excelhez"
-description: "Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok."
+title: Költségvetés-tervezési sablonok az Excel programhoz
+description: Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337049"
 ---
-
-# <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok Excelhez
+# <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok az Excel programhoz
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,7 +60,7 @@ Az Excel-sablon tartalmazza az összes olyan elemet a költségvetésiterv-dokum
 [![példa](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> A költségvetésiterv-adatok Excelben történő megtekintése és módosítása során fellépő lehetséges problémák elkerülése érdekében ugyanannak a felhasználónak kell bejelentkeznie a Microsoft Dynamics 365 for Finance and Operations alkalmazásba és a Microsoft Dynamics Office Adatcsatlakozó bővítményébe.
+> A költségvetésiterv-adatok Excelben történő megtekintése és módosítása során fellépő lehetséges problémák elkerülése érdekében ugyanannak a felhasználónak kell bejelentkeznie a Microsoft Dynamics 365 for Finance and Operations rendszerbe és a Microsoft Dynamics Office Adatcsatlakozó bővítményébe.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Fejléc felvétele költségvetésiterv-dokumentum sablonjába
 Fejlécadatok hozzáadásához jelölje ki a felső sort az Excel-fájlban, és illesszen be üres sorokat. Kattintson a **Tervezés** elemre az **Adatcsatlakozóban** a fejlécmezők az Excel-fájlhoz történő hozzáadásához.
@@ -136,7 +135,6 @@ Igen, a legtöbb normál Excel-funkció működik a költségvetésiterv-sablono
 Emellett létrehozhatók és használhatók kimutatások és diagramok a költségvetési adatok további csoportosítása és képi megjelenítése érdekében. Az **Adatok** lapon, a **Kapcsolatok** csoportban kattintson a **Mindent frissít** elemre, majd kattintson a **Kapcsolat tulajdonságai** elemre. Kattintson a **Használat** lapra. A **Frissítés** részben jelölje be az **Adatfrissítés a fájl megnyitásakor** jelölőnégyzetet. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

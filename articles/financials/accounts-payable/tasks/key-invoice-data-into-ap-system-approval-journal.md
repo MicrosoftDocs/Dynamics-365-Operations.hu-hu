@@ -1,13 +1,13 @@
---- 
-title: "Fő számlaadatok a Kintlevőségek rendszerbe, jóváhagyási napló használatával"
-description: "Ez a feladat-útmutató bemutatja hogy kell használni a számlajegyzéket számlák létrehozásához, majd hogyan kell a kiadási számlákat frissíteni a jóváhagyási napló segítségével."
+---
+title: Fő számlaadatok a Kintlevőségek rendszerbe, jóváhagyási napló használatával
+description: Ez a feladat-útmutató bemutatja hogy kell használni a számlajegyzéket számlák létrehozásához, majd hogyan kell a kiadási számlákat frissíteni a jóváhagyási napló segítségével.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 048eda77064b6aa3f666e998a8e551d2f7adc385
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363522"
 ---
 # <a name="key-invoice-data-into-ap-system-using-approval-journal"></a>Fő számlaadatok a Kintlevőségek rendszerbe, jóváhagyási napló használatával
 
@@ -62,5 +62,4 @@ Ez a feladat-útmutató bemutatja hogy kell használni a számlajegyzéket szám
 12. Kattintson a Feladás lehetőségre.
 13. Kattintson a Bizonylat lehetőségre, hogy megtekintse hova kerültek feladásra a bejegyzések.
     * A Függőben lévő számla visszavonásra kerül és egy tényleges költségszámla jön létre helyette.  
-
 

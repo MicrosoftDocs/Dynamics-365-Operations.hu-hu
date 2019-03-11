@@ -1,13 +1,13 @@
 ---
 title: Intrastat
-description: "Ez a témakör információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket."
+description: Ez a témakör információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
 ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370894"
 ---
-
 # <a name="intrastat"></a>Intrastat
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,7 @@ Az alábbi táblázatlista mutatja az Intrastat-jelentés előfeltételeit.
 </tr>
 <tr class="even">
 <td>Elektronikus jelentés</td>
-<td>Állítsa be az elektronikus jelentéskészítési konfigurációkat az Intrastat adatok egy olyan elektronikus fájlba történő exportálásához, amelynek formátuma megegyezik a hatóságok által kérttel, és az Intrastat fájlok felhasználóbarát, olvasható megtekintéséhez (például Microsoft Excelben).</td>
+<td>Állítsa be az elektronikus jelentéskészítési konfigurációkat az Intrastat adatok egy olyan elektronikus fájlba történő exportálásához, amelynek formátuma megegyezik a hatóságok által kérttel, és az Intrastat fájlok felhasználóbarát, olvasható megtekintéséhez (például Microsoft Excel programban).</td>
 </tr>
 <tr class="even">
 <td>Raktárkészlet-nyilvántartás</td>
@@ -240,5 +239,4 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </tr>
 </tbody>
 </table>
-
 

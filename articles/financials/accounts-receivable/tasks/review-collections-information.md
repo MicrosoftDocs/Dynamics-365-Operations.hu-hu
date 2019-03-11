@@ -1,13 +1,13 @@
---- 
-title: "A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata"
-description: "Ez az eljárás végigvezeti a beszedési adatok áttekintésén, valamint a különböző beállítási lehetőségeken és a beszedési tranzakciók ellenőrzésén."
+---
+title: A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata
+description: Ez az eljárás végigvezeti a beszedési adatok áttekintésén, valamint a különböző beállítási lehetőségeken és a beszedési tranzakciók ellenőrzésén.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349101"
 ---
 # <a name="review-collections-information"></a>A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata
 
@@ -131,5 +131,4 @@ Ez az eljárás végigvezeti a beszedési adatok áttekintésén, valamint a kü
     * Válassza ki a vevőhöz rendelt beszedési eseteket, vagy hagyja üresen a mezőt. Ha az eset be van jelölve, csak a tranzakciók és az esethez kapcsolódó tevékenységek jelennek meg ezen a képernyőn.  
 8. Kattintson a Lista megjelenítése elemre.
     * Válasszon egy vevőszámlát, vagy fogadja el az alapértelmezett adatot. Alapértelmezés szerint ez az a kiválasztott vevőszámla a listaoldalon vagy a képernyőn, amelyről megnyitotta a képernyőt. Ha a képernyőt egy listaoldalról nyitotta meg, a vevők a listában azok a vevők, amelyeket szerepeltet a gyűjteményékben, amelyek ezen az oldalon szerepelnek.  
-
 

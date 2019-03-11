@@ -1,13 +1,13 @@
 ---
-title: "Áfa áttekintése"
-description: "Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz."
+title: Áfa áttekintése
+description: Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11fe694af6180419460ba5dbf4c55f760a38f987
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311358"
 ---
-
 # <a name="sales-tax-overview"></a>Áfa áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Minden tranzakcióhoz (értékesítési vagy beszerzési bizonylatsorok, naplók
 Minden tranzakcióhoz megtekintheti a számított forgalmi adót a **Forgalmi adó tranzakció** oldalon. Megtekintheti a forgalmi adót egy dokumentumsorra vagy a teljes dokumentumra. Bizonyos dokumentumok esetében (például a szállítói számla és a főkönyvi naplók) módosíthatja a számított forgalmi adót, ha az eredeti dokumentum eltérő összegeket tartalmaz.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Áfakiegyenlítés és -bevallás
-A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). A Microsoft Dynamics 365 for Finance and Operations tartalmaz egy funkciót, amely lehetővé teszi az adószámlák kiegyenlítését egy intervallumra és az egyenlegek kiegyenlítési számláján az egyenlegek kiegyenlítését a főkönyvi feladási csoportokban meghatározottak szerint. Ez a funkció elérhető a **Forgalmi adó kiegyenlítése és feladása** oldalon. Meg kell adnia az áfakiegyenlítési időszakot, amelyben a forgalmi adót ki kell egyenlíteni. 
+A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). Microsoft Dynamics 365 for Finance and Operations tartalmaz egy funkciót, amely lehetővé teszi az adószámlák kiegyenlítését egy intervallumra és az egyenlegek kiegyenlítési számláján az egyenlegek kiegyenlítését a főkönyvi feladási csoportokban meghatározottak szerint. Ez a funkció elérhető a **Forgalmi adó kiegyenlítése és feladása** oldalon. Meg kell adnia az áfakiegyenlítési időszakot, amelyben a forgalmi adót ki kell egyenlíteni. 
 
 A forgalmi adó kifizetése után az áfakiegyenlítési számlán az egyenleget a bankszámlával szemben kell meghatározni. Ha az áfakifizetési időszakhoz megadott adóhatóság egy szállítói számlához kapcsolódik, akkor az áfaegyenleg nyitott szállítói számlaként lesz feladva, és szerepeltethető a rendszeres kifizetési javaslatban.
 
@@ -97,4 +96,3 @@ Ha viszont feltételes áfát használ, akkor rendezi az adót az adóhatóságg
 
 
 További információkért lásd: [Adóelőleg beállítása](tasks/set-up-withholding-tax.md).
-

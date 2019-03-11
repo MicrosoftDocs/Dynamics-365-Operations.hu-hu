@@ -1,13 +1,13 @@
 ---
-title: "Tárgyieszköz-tranzakciók beállításai"
-description: "Ez a cikk a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be."
+title: Tárgyieszköz-tranzakciók beállításai
+description: Ez a témakör a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377182"
 ---
-
 # <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakciók beállításai
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
+Ez a témakör a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
 
 A tárgyi eszközök modul integrálható a főkönyv, a követelések és a kinnlevőségek modullal. Arra is lehetőség van, hogy a készletbenkezelésben található cikkek belső felhasználás céljából átkerüljenek a tárgyi eszközök modulba.
 
@@ -66,9 +65,6 @@ A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános n
 | ** **                               | Kinnlevőségek      | Szabadszöveges számla                         |
 
 
+A tárgyi eszközök értékcsökkenési időszakok fennmaradó értéke nem frissül, ha az értékcsökkenési tranzakció típusú naplósort manuálisan hozták létre vagy importálták egy adatentitáson keresztül. Ez az érték frissül, ha az értékcsökkenés javaslati folyamata segítségével hozták létre a naplósort.
 
 További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
-
-
-
-

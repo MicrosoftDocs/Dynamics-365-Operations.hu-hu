@@ -1,13 +1,13 @@
 ---
-title: "Termékek és termékváltozatok keresése a rendelésbevitel során"
-description: "Használja a **Cikkszám** mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor. Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik."
+title: Termékek és termékváltozatok keresése a rendelésbevitel során
+description: Használja a **Cikkszám** mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor. Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323111"
 ---
-
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Termékek és termékváltozatok keresése a rendelésbevitel során
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ ms.lasthandoff: 05/08/2018
 
 Használja a **Cikkszám** mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor.  Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik.
 
-Előfordul, hogy nem a legjobb helyzet, ha valamiből túl sok van, és ez különösen akkor igaz, ha számos hasonló terméket értékesít, és megpróbálja felidézni a cikkszámokat és a termékek keresési neveit annak érdekében, hogy megtalálja a megfelelő terméket, amelyet fel kell tüntetni az értékesítési rendelésen. Az értékesítési rendelés vagy a beszerzési rendelés sorokban a **cikkszám** mező használható keresési mezőként. Megadhatja a termék nevének, számának vagy méreteinek bármely részét, és a keresés megjeleníti az összes olyan cikket, amely megfelel a keresőkifejezésnek.
+Előfordul, hogy nem a legjobb helyzet, ha valamiből túl sok van, és ez különösen akkor igaz, ha számos hasonló terméket értékesít, és megpróbálja felidézni a cikkszámokat és a termékek keresési neveit annak érdekében, hogy megtalálja a megfelelő terméket, amelyet fel kell tüntetni az értékesítési rendelésen. Az értékesítési rendelés vagy a beszerzési rendelés sorokban a **cikkszám** mező használható keresési mezőként. Megadhatja a termék nevének, számának vagy méreteinek bármely részét, és a keresés megjeleníti az összes olyan cikket, amely megfelel a keresőkifejezésnek.
 
-## <a name="how-search-works"></a>A keresés működése
+## <a name="how-searchworks"></a>A keresés működése
 Termékek vagy termékváltozatok keresésekor fontos, hogy megértsük, hogyan találja meg a keresési funkció a beírt szövegnek megfelelő termékeket. A keresési eredmények szállításakor a kulcsfontosságú keresési szabályok a következők:
 
 -   A keresési eredmények minden egyező rekordot visszaadnak, függetlenül a mezőtől, amelybe a keresett szöveget megadták.
@@ -47,7 +46,7 @@ Termékek vagy termékváltozatok keresésekor fontos, hogy megértsük, hogyan 
 
 ### <a name="examples"></a>Példák
 
-Az alábbi példák termékek és termékváltozatok használatával illusztrálják a keresés kezelésének módját különböző helyzetekben. **Előfeltétel:** Az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek &gt; Keresés típusa** alatt jelölje be a **Teljes egyezés** lehetőséget.
+Az alábbi példák termékek és termékváltozatok használatával illusztrálják a keresés kezelésének módját különböző helyzetekben. **Előfeltétel:** Az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek &gt; Keresés típusa alatt** jelölje be a **Teljes egyezés** lehetőséget.
 
 | Terméktípus     | Termék neve    | Termékszám megjelenítése | Cikkszám | Konfiguráció |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -63,12 +62,12 @@ A „speak 05” megadása esetén nem kap eredményt. Ennek az oka az, hogy a k
 
 A keresési eredmények száma korlátozható az **Eredmények száma** mezővel, amely az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek** lapon található. Ha ezt a mezőt 0-ra állítja, a rendszer minden keresési eredményt visszaad. Ha például 10-re állítja, a rendszer legfeljebb 10 keresési eredményt ad vissza.
 
-## <a name="configure-the-product-search"></a>Termékkeresés beállítása
+## <a name="configure-the-productsearch"></a>Termékkeresés beállítása
 A termék és termékváltozat keresési funkció használata előtt hajtsa végre a következő lépéseket a termékkeresés konfigurálásához. [![3 lépés a termékkeresés konfigurálásához\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
-### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>1. lépés: A keresési feltételek közé vegyen fel minden releváns termék- és termékváltozat-azonosítót és dimenziót
+### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>1. lépés: A keresési feltételek közé vegyen fel minden releváns termék- és termékváltozat-azonosítót és dimenziót
 
-Néhány példa a kereséshez használható termék- és termékváltozat-azonosítókra és dimenziókra: **Terméknév, Cikkszám**, **Termékszám megjelenítése, Konfiguráció, Szín, Méret, Stílus, Keresési név stb.**.  
+Néhány példa a kereséshez használható termék- és termékváltozat-azonosítókra és dimenziókra: **Terméknév, Cikkszám**, **Termékszám megjelenítése, Konfiguráció, Szín, Méret, Stílus, Keresési név stb.**.  
 
 Nyissa meg az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési feltételek** lapot. A **Keresési feltételek** lap lehetővé teszi a vevő, a potenciális vevő és a termékek keresési feltételeinek meghatározását. Győződjön meg arról, hogy a termék keresési feltételek megadásával szűri a lapot. Ehhez váltson a **Termék** lehetőségre a lap menüjében.  
 
@@ -76,7 +75,7 @@ A termékszám megjelenítése hozzáadásához a keresési feltételekhez katti
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>2. lépés: Töltse fel a termékkereséshez használt adatbázistáblát
 
-A **Keresési feltételek** lapon kattintson a **Keresési adatok frissítése** gombra. Ellenőrizze, hogy a **Keresési adatok frissítése** párbeszédpanelen a **Forrás** beállítása **Termék**, és kattintson az **OK** gombra. A rendszer egy táblázatban összegzi az 1. lépésben kiválasztott összes keresési feltételt. Ha sok a termék és termékváltozat, a művelet meglehetősen hosszú ideig tarthat, és lehet, hogy figyelmeztetést kap. Azt ajánljuk, hogy a keresési tábla feltöltését a kötegkiszolgálón olyan időpontra ütemezze, amikor a kiszolgáló nincs túlságosan leterhelve.  
+A **Keresési feltételek** lapon kattintson a **Keresési adatok frissítése** gombra. Ellenőrizze, hogy a **Keresési adatok frissítése** párbeszédpanelen a **Forrás** beállítása **Termék**, és kattintson az **OK** gombra. A rendszer egy táblázatban összegzi az 1. lépésben kiválasztott összes keresési feltételt. Ha sok a termék és termékváltozat, a művelet meglehetősen hosszú ideig tarthat, és lehet, hogy figyelmeztetést kap. Azt ajánljuk, hogy a keresési tábla feltöltését a kötegkiszolgálón olyan időpontra ütemezze, amikor a kiszolgáló nincs túlságosan leterhelve.  
 
 Mindaddig, amíg a tábla nincs feltöltve, a termékkeresés nem ad helyes eredményeket. Ha nem jelenik meg keresési eredmény, győződjön meg arról, hogy a tábla fel legyen töltve.  
 
@@ -84,10 +83,9 @@ A táblát csak akkor kell feltölteni, ha módosítja a keresési feltételeket
 
 ### <a name="step-3-enable-the-lookup-for-product-search-on-sales-and-purchase-order-lines"></a>3. lépés: Engedélyezze a kikeresést a termékkeresés számára az értékesítési és beszerzési rendelési sorokon
 
-A funkció engedélyezéséhez nyissa meg az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek** elemet, és a **Kikeresés engedélyezése termékek kereséséhez** beállítást állítsa **Igen** beállításra az **Általános** lapon.  
+A funkció engedélyezéséhez nyissa meg az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek** elemet, és a **Kikeresés engedélyezése termékek kereséséhez** beállítást állítsa **Igen** beállításra az **Általános** lapon.  
 
-Az értékesítési rendelési sor bejegyzéseinek esetében az alapértelmezett viselkedés a **Termékkeresés** oldal megnyitása, amikor elkezd írni a **Cikkszám** mezőben, majd megnyomja a **tabulátor** gombot. A **Termékkeresés** oldal módosítja a kontextust a rendelési sor létrehozásakor, amit néhány felhasználó feleslegesen beavatkozásnak tekinthet. Ha szeretné a keresési eredményeket megkapni a kikeresésnél, és nem szeretné elveszíteni a kontextust a rendelési sorok bevitelekor, használja a keresési kikeresést. Ha termékre vagy termékváltozatra keres, de nem választ semmit a kikeresésnél, majd megnyomja a **tabulátor** gombot, a **Termékkeresés** lap jelenik meg.
-
+Az értékesítési rendelési sor bejegyzéseinek esetében az alapértelmezett viselkedés a **Termékkeresés** oldal megnyitása, amikor elkezd írni a **Cikkszám** mezőben, majd megnyomja a **tabulátor** gombot. A **Termékkeresés** oldal módosítja a kontextust a rendelési sor létrehozásakor, amit néhány felhasználó feleslegesen beavatkozásnak tekinthet. Ha szeretné a keresési eredményeket megkapni a kikeresésnél, és nem szeretné elveszíteni a kontextust a rendelési sorok bevitelekor, használja a keresési kikeresést. Ha termékre vagy termékváltozatra keres, de nem választ semmit a kikeresésnél, majd megnyomja a **tabulátor** gombot, a **Termékkeresés** lap jelenik meg.
 
 
 

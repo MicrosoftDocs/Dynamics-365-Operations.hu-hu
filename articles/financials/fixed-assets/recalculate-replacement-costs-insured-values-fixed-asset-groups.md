@@ -1,13 +1,13 @@
 ---
-title: "Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása"
-description: "Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát."
+title: Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
+description: Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324376"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ A következő napon felettese közli, hogy a számítógépek értékei 10 száz
 
 > [!NOTE]  
 > A -10 százalékos tényező alkalmazását nem lehet 10 százalékos tényezővel visszaállítani (és a -10 és -8 százalék különbsége, a 2 százalék sem vezet eredményre), mivel az értékek számítása ekkor nem a kívánt eredményt adja. 
-
 
 
 

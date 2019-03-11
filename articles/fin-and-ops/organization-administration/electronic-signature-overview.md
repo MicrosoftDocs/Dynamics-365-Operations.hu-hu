@@ -1,13 +1,13 @@
 ---
-title: "Elektronikus aláírások"
-description: "Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok használatát Microsoft Dynamics 365 for Finance and Operations rendszerben."
+title: Elektronikus aláírások
+description: Ez a cikk áttekintést nyújt az elektronikus aláírásokról, és bemutatja, hogy hogyan használhatók a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325664"
 ---
-
 # <a name="electronic-signatures"></a>Elektronikus aláírások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok használatát Microsoft Dynamics 365 for Finance and Operations rendszerben.
+Ez a cikk áttekintést nyújt az elektronikus aláírásokról, és bemutatja, hogy hogyan használhatók a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 ## <a name="what-is-an-electronic-signature"></a>Mi az elektronikus aláírás?
 
@@ -41,7 +40,7 @@ Az elektronikus aláírás használatát törvény írja elő számos szabályoz
 > [!NOTE]
 > Az elektronikus aláírás önmagában nem ugyanaz, mint a digitális aláírás. Az elektronikus aláírás mindössze a kézzel írt aláírás helyettesítése, míg a digitális aláírás további biztonsági szolgáltatásokat biztosít. A digitális aláírások esetén meghatározható, hogy egy másik felhasználó vagy folyamat nem módosította-e illetéktelenül az adatokat. A digitális aláírások ellenőrizhetők, és ennek az ellenőrzésnek az eredményét nem cáfolhatja meg még az adatok aláírására használt tanúsítvány tulajdonosa sem. Az alábbi leírásból kiderül, hogy a Microsoft Dynamics 365 for Finance and Operations rendszerben használt elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve.
 
-## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronikus aláírások a Dynamics 365 for Finance and Operations rendszerben
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronikus aláírások a Dynamics 365 for Finance and Operations szolgáltatásban
 
 A Finance and Operations rendszerben a kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan.
 
@@ -111,4 +110,3 @@ Jóváhagyók kijelöléséhez kövesse az alábbi lépéseket.
 1. A **Beállítások** oldalon a **Számlák** fülön kattintson **Jóváhagyó kijelölése** parancsra.
 2. A **Jóváhagyó felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek alá kell írnia egy másik felhasználó által végzett módosításokat.
 3. Az **Aláírható felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek a módosításait alá kell írni.
-

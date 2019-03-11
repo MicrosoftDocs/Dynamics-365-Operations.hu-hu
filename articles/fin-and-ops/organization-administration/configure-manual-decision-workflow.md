@@ -1,13 +1,13 @@
 ---
-title: "Manuális döntések konfigurálása munkafolyamatban"
-description: "Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait."
+title: Manuális döntések konfigurálása munkafolyamatban
+description: Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341396"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuális döntések konfigurálása munkafolyamatban
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Meg kell adnia egy tárgysort, illetve utasításokat a manuális döntéshez ho
     </tr>
     <tr>
     <td>Felhasználó</td>
-    <td>Konkrét Microsoft Dynamics 365 for Finance and Operations-felhasználók</td>
+    <td>Meghatározott Microsoft Dynamics 365 for Finance and Operations-felhasználók</td>
     <td>
     <ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
@@ -372,4 +371,3 @@ Kövesse az alábbi lépéseket, ha a döntést egy megadott időn belül kell m
     - **Évek** – Válassza ki, hogy mely hónap, mely hét, mely napjáig kell a döntést meghozni. Kérheti például, hogy a döntést december harmadik hetének péntekéig kell meghozni.
 
 4. Ha lejár az időkorlát, a rendszer hozza meg a döntést. Válassza ki a **Művelet** listából, hogy milyen beállítást kell a rendszernek kiválasztania.
-

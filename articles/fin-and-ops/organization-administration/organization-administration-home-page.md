@@ -1,13 +1,13 @@
 ---
-title: "Szervezeti adminisztráció kezdőlap"
-description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Finance and Operations rendszert."
+title: Szervezeti adminisztráció kezdőlap
+description: Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használatba veheti a Microsoft Dynamics 365 for Finance and Operations rendszert.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332817"
 ---
-
 # <a name="organization-administration-home-page"></a>Szervezeti adminisztráció kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a kiemelt felhasználók és rendszergazdák hatékonyabban használhatják a Microsoft Dynamics 365 for Finance and Operations alkalmazást. A tartalom segítséget nyújt nekik a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára.
+Ez a témakör olyan tartalmakat kínál, amelyek haladó felhasználóknak és a rendszergazdának segítenek a Microsoft Dynamics 365 for Finance and Operations konfigurálában. A tartalom segítséget nyújt nekik a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára.
 
 A itt felsorolt tartalom java része a **Szervezeti adminisztráció** modul szolgáltatásaira vonatkozik. Vannak azonban feladatok, például rekordsablon létrehozása és használata, amelyek a szervezet minél hatékonyabb segítésére bármely modulból elvégezhetők.
 
@@ -103,4 +102,3 @@ A rekordsablonok segítenek a rekordok gyorsabb létrehozásában. Rekordsablon 
 - [A dokumentumkezelés konfigurálása](configure-document-management.md)
 - [E-mail konfigurálása és küldése](configure-email.md)
 - [Dátum-/időadatok és időzónák](date-time-zones.md)
-

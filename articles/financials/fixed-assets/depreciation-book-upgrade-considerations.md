@@ -1,13 +1,13 @@
 ---
-title: "Értékcsökkenési könyv frissítésének áttekintése"
-description: "A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es verziójában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. Ez a témakör olyan szempontokat ismertet, amelyeket figyelembe kell venni a frissítéshez."
+title: Értékcsökkenési könyv frissítésének áttekintése
+description: 'A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es verziójában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. Ez a témakör olyan szempontokat ismertet, amelyeket figyelembe kell venni a frissítéshez.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359313"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Értékcsökkenési könyv frissítésének áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,6 @@ Ha a rendszer által generált számsorozatú megközelítést (1. beállítás)
 Amikor a felhasználó által definiált, meglévő számsorozaton alapuló megközelítést (2. beállítás) használja, az adatfrissítés ellenőrzi, hogy a megadott hatókörű számsorozat létezik-e az adatbázisban minden olyan partíció és vállalat esetében, amelyek értékcsökkenési könyvéhez tranzakciók tartoznak. Ha létezik, a frissítés soronkénti feldolgozást használ a számsorozat keretrendszerét alkalmazó számsorozat által meghatározott bizonylatszámok felosztására. Ha a megadott hatókörrel rendelkező számsorozat nem létezik, a frissítés az alapértelmezett, a rendszer által definiált számsorozatú megközelítést fogja alkalmazni a bizonylatszámok felosztásához, és új számsorozatot hoz létre a megadott, alapértelmezett paraméterekkel, a felosztás után.
 
 Bármelyik módszert is alkalmazzák, az adatfrissítési parancsfájl a korábbi értékcsökkenési naplónevekhez létrehozott, az új főkönyv-naplóneveknél szereplő **bizonylatsorozatok** mezőjéhez tartozó számsorozatot fogja használni.
-
 
 
 

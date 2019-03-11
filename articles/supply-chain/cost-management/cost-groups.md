@@ -1,13 +1,13 @@
 ---
-title: "Költségcsoportok"
-description: "A költségcsoportok adják a legyártott cikk kiszámolt költségében a költség-hozzájárulások szegmentálásának és elemzésének alapját, mint például az anyag, a munka és a többletköltség költség-hozzájárulását. A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás."
+title: Költségcsoportok
+description: A költségcsoportok adják a legyártott cikk kiszámolt költségében a költség-hozzájárulások szegmentálásának és elemzésének alapját, mint például az anyag, a munka és a többletköltség költség-hozzájárulását. A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCostGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1f1f97981c33c72c71e055848e874002dad73813
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337417"
 ---
-
 # <a name="cost-groups"></a>Költségcsoportok
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ A költségcsoporthoz egy költségcsoport-típust lehet hozzárendelni és azt,
 
 -   **Költségcsoport-típus** − Minden költségcsoporthoz egy költségcsoport-típust kell hozzárendelni, amely jelzi, hogy a költségcsoport közvetlen anyag, közvetlen gyártás vagy közvetlen kiszervezés, vagy pedig közvetett, illetve definiálatlan. A költségcsoportok, amelyek közvetlen anyagként vannak meghatározva, cikkekhez rendelhetők hozzá. A közvetlen gyártási költségcsoportokat költségkategóriákhoz lehet hozzárendelni. A közvetlen kiszervezési költségcsoport szolgáltatási terméktípusokhoz rendelhető hozzá, amely lehetővé teszi a szolgáltatás beszerzési költségeinek alvállalkozói tevékenységekhez történő társítását. A közvetett költségcsoportok a felárak és pótdíjak közvetett költségéhez rendelhetők hozzá. A meghatározatlannak szánt költségcsoportokat cikkekhez, költségcsoportokhoz és közvetett költségekhez lehet hozzárendelni. Egy költségcsoport-típus társítása számos célt szolgál. Először is, korlátozza egy költségcsoport hozzárendelhetőségét és az alkalmazható költségcsoportok listájának megjeleníthetőségét. Másodszor, jelentési célokat szolgáló kiegészítő szegmentálást biztosít. Harmadszor, felhasználható arra, hogy főkönyvi számlákat rendeljenek az eltérésekhez.
 -   **Viselkedés** − Minden költségcsoport opcionálisan hozzárendelhető egy viselkedéshez, amely jelzi, hogy a költségcsoport a fix költségekre vagy a változó költségekre vonatkozik. Az olyan költségcsoportot, amelynek viselkedése nulla értékre van állítva, változó költségként kezeli a program. A viselkedés hozzárendelése csak jelentési célokat szolgál. Például a költségeket megjelenítheti a költségszámítási táblázaton fix és változó költségek szegmentálásával és a**Költségösszegzés költségcsoportok szerint** oldalon. Ha százalékos nyereségbeállítást rendel az egyes költségcsoportokhoz, az anyagjegyzék-számítás megadja a „költség plusz árrés” elv alapján javasolt eladási árat.
-
 
 
 

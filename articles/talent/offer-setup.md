@@ -1,28 +1,28 @@
 ---
-title: "Ajánlatkezelés beállítása"
-description: "Ez a témakör az ajánlatok beállítását írja le a Talent alkalmazásban."
+title: Ajánlatkezelés beállítása
+description: Ez a témakör az ajánlatok beállítását írja le a Talent alkalmazásban.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376507"
 ---
 # <a name="set-up-offer-management"></a>Ajánlatkezelés beállítása 
 
@@ -203,5 +203,7 @@ Az ajánlatkészítési folyamatnak számos olyan része van, amelyet egy Attrac
 
     - ESign – Ez az alapértelmezett beállítás, amelyet az alkalmazás tartalmaz, a felhasználó neve és monogramja beírásával írhatja alá az ajánlatot.
 
-Az ajánlat-létrehozási folyamat kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.
+>[!NOTE]
+> Adobe Sign licencekért és ingyenes próbaverzióért keresse fel ezt a [hivatkozást](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+Az ajánlat-létrehozási folyamat kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.

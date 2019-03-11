@@ -1,13 +1,13 @@
 ---
-title: "Operations-erőforrások"
-description: "Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat tevékenységeit. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak."
+title: Operations-erőforrások
+description: Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat tevékenységeit. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366604"
 ---
-
 # <a name="operations-resources"></a>Operations-erőforrások
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Projekt vagy termelés ütemezésekor a rendszer üzemi erőforrásokat rendel a
 
 -   **Kapacitás** – Adja meg az üzemi erőforrás óránkénti kapacitását az adott kapacitási mértékegységben.
 -   **Kötegelt kapacitás** – Adja meg a maximális darabszámot, amelyet az üzemi erőforrás egy futás alkalmával feldolgozni képes.
--   **Hatékonysági százalék** – Adja meg az üzemi erőforrással szemben támasztott hatékonysági elvárást. A hatékonysági százalék beállítja az üzemi erőforrás teljesítményét és befolyásolja az erőforrás kapcsán lefoglalt időt. Az üzemi erőforrást használó műveletek átfutási ideje is ennek megfelelően kerül módosításra. Itt látható a kiszámítására használt képlet: ütemezési idő = idő x 100 ÷ hatékonysági százalék. Az *Idő * a feldolgozási és a beállítási időt is magába foglalja.
+-   **Hatékonysági százalék** – Adja meg az üzemi erőforrással szemben támasztott hatékonysági elvárást. A hatékonysági százalék beállítja az üzemi erőforrás teljesítményét és befolyásolja az erőforrás kapcsán lefoglalt időt. Az üzemi erőforrást használó műveletek átfutási ideje is ennek megfelelően kerül módosításra. Itt látható a kiszámítására használt képlet: ütemezési idő = idő x 100 ÷ hatékonysági százalék. Az *Idő* a feldolgozási és a beállítási időt is magába foglalja.
 -   **Műveletek ütemezése** – Adja meg az üzemi erőforrások kapacitásának azt a maximális százalékát, amelyet a műveletek ütemezésében használni kíván. 100 százalék alatti értéket adjon meg, ha szeretné lehetővé tenni a rugalmas kapacitáshasználatot a feladatütemezés során.
 -   **Véges kapacitás** – Állítsa ezt a beállítást **Igen** értékre, ha az üzemi erőforrást a ténylegesen elérhető kapacitás alapján kell ütemezni, és ha a meglévő kapacitásfoglalásokat figyelembe kell venni. Ha ebben a beállításban **Nem** szerepel, az üzemi erőforrás feltételezett kapacitása korlátlan, és így előfordulhat az erőforrás túlfoglalása.
 -   **Véges tulajdonság** – Állítsa ezt a beállítást **Igen**-re, ha az üzemi erőforrást a ténylegesen elérhető kapacitás alapján kell ütemezni, és ha a meglévő kapacitásfoglalásokat figyelembe kell venni.
@@ -83,7 +82,6 @@ Erőforráscsoport lean munkacellaként történő használata esetén a munkace
 
 ## <a name="costing-resources"></a>Költségszámítási erőforrások
 Ha olyan tevékenységet ad meg, mint például egy útvonalművelet vagy egy projektóra-előrejelzés, úgy meghatározhat egy adott üzemi erőforrásra vagy erőforráscsoportra vonatkozó követelményeket. Megadhat azonban egy adott típusú, vagy egy adott képességgel vagy kompetenciával rendelkező üzemi erőforrásra vonatkozó követelményeket is. Emiatt az aktuális erőforrás-hozzárendelésre csak a tevékenység ütemezésekor, illetve a kapacitás lefoglalásakor kerül sor. Útvonalművelet esetén tehát megadhatja, hogy becslés, illetve az anyagjegyzék-számítás egy konkrét üzemi erőforrásra legyen alapozva. A rendszer a jelen üzemi erőforrásra, mint költségszámítási erőforrásra hivatkozik. A költségszámítási erőforrásról is tud költségkategóriákat és a műveleti időket vinni át a tevékenységre. Művelet ütemezése esetén a becslés és az anyagjegyzék-számítás a ténylegesen ütemezett üzemi erőforrás felhasználásával történik.
-
 
 
 

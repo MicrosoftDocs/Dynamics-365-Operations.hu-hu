@@ -1,13 +1,13 @@
---- 
-title: "Kanbanfeladatok ütemezése"
-description: "Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési folyamatával foglalkozik."
+---
+title: Kanbanfeladatok ütemezése
+description: Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési folyamatával foglalkozik.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5170fecf0190591d74f45d35fecc4472e7f5e900
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f36544993a9280ae10489a19252bc105abd40ac9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359543"
 ---
 # <a name="schedule-kanban-jobs"></a>Kanbanfeladatok ütemezése
 
@@ -61,5 +61,4 @@ Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési fo
 6. Kattintson az üzemezés lehetőségre.
     * Mindkét feladat a kívánt időszakhoz lett hozzáadva.  
     * A Kapacitási időszak szakaszban láthatja az egyes időszakok terhelését. A Felhasználás mező az időszak tervezett felhasználását mutatja. Ha az ütemezett felhasználás magasabb, mint az időszakban rendelkezésre álló kapacitás, a rendszer a túlterhelt felhasználást választja ki.  
-
 

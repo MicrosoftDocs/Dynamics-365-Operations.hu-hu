@@ -1,13 +1,13 @@
---- 
-title: "Együttműködés a belső ellátási lánc vevőivel"
-description: "Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók által teljesítendő rendelések."
+---
+title: Együttműködés a belső ellátási lánc vevőivel
+description: Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók által teljesítendő rendelések.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44b9f516835acc792ec1edba0b5efdcbd2823422
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2ce545650ee5d6151aa65d6e15b6b7bdcd6550e6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358048"
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>Együttműködés a belső ellátási lánc vevőivel
 
@@ -42,5 +42,4 @@ Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók
     * Ez a lap a belső ellátási láncba tartozó szállítók által kielégítendő, tervezett kereslet áttekintését biztosítja.  
 8. Bontsa ki a Felfelé irányuló igény részletes adatai részt.
     * Ebben a szakaszban a kereslet jövőbeli teljesítésének részleteit láthatja. Lehet, hogy meg kell várnia, amíg az alaptervezés a beszállítónál lefut, mielőtt további információkat láthatna itt.  
-
 

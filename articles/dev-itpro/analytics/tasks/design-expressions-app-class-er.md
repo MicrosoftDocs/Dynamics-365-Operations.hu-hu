@@ -1,13 +1,13 @@
---- 
-title: "ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)"
-description: "Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával."
+---
+title: ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
+description: Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357243"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
@@ -34,7 +34,7 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.   
-    * Tegyük fel, hogy egy alkalmazásadat-frissítéshez tervez egy folyamatot a beérkező banki kivonatok elemzésére. Az IBAN-kódokat tartalmazó bejövő banki kivonatokat TXT-fájlként fogja megkapni. A banki kivonat importálási folyamatának részeként ellenőriznie kell az IBAN-kódok helyességét a Dynamics 365 for Finance and Operations kiadás már elérhető logikáját használva.   
+    * Tegyük fel, hogy egy alkalmazásadat-frissítéshez tervez egy folyamatot a beérkező banki kivonatok elemzésére. Az IBAN-kódokat tartalmazó bejövő banki kivonatokat TXT-fájlként fogja megkapni. A banki kivonat importálási folyamatának részeként ellenőriznie kell az IBAN-kódok helyességét a Dynamics 365 for Finance and Operations már elérhető logikáját használva.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció importálása
 1. Keresse meg és jelölje ki a kívánt rekordot a listán.
@@ -103,7 +103,7 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
     * Adatmodell leképezése  
 6. Kattintson a Mentés gombra.
 7. Kattintson a Tervező pontra.
-8. A fán válassza ki a „Dynamics 365 for Operations\Class” pontot.
+8. A fastruktúrában válassza ki ezt: „Dynamics 365 for Operations\Osztály”.
 9. Kattintson a Gyökér hozzáadása gombra.
     * Adjon hozzá egy új adatforrást a meglévő alkalmazáslogika hívására az IBAN-kódok ellenőrzése érdekében.  
 10. A Név mezőbe írja be a „kódok ellenőrzése” szöveget.
@@ -157,5 +157,4 @@ Tesztelési célokra hajtsa végre a letöltött SampleIncomingMessage.txt fájl
     * Kattintson a Böngészés lehetőségre, és a navigáljon a korábban letöltött SampleIncomingMessage.txt fájlhoz.  
 2. Kattintson az OK gombra.
     * Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Vegye figyelembe, hogy az importált TXT-fájlnak csak 3 sora került feldolgozásra. A rendszer kihagyta a 4. sorban található érvénytelen IBAN-kódot, és hibaüzenetet hagyott az információs naplóban.  
-
 

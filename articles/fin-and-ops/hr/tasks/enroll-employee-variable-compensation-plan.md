@@ -1,13 +1,13 @@
---- 
-title: "Alkalmazottak felvétele változó kompenzációs konstrukcióba"
-description: "A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa."
+---
+title: Alkalmazottak felvétele változó kompenzációs konstrukcióba
+description: A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMCompVarEnrollEmpl
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 6ab2533293b5c8cb37953427893b75a98ddf3976
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329574"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Alkalmazottak felvétele változó kompenzációs konstrukcióba
 
@@ -42,5 +42,4 @@ A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottak
     * Ha az alkalmazottnak fix összeg jár a jutalomhoz, az összeget beállíthatja itt.  
 8. A Szervezeti felülbírálások szakasz bővítésének átváltása.
     * Ha az alkalmazott teljesítményét is figyelembe kell venni, a különböző részlegek teljesítménye vagy az alkalmazott beosztásától eltérő részleg esetén a részleg felülírható. A Százalék oszlopban összesen 100-nak kell szerepelnie.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Hitelkeretet a vevőknek"
-description: "Ez a cikk arról nyújt tájékoztatást, hogy a Microsoft Dynamics 365 for Finance and Operations rendszerben hogyan működik a hitelkeret."
+title: Hitelkeretet a vevőknek
+description: Ez a cikk a Microsoft Dynamics 365 for Finance and Operations rendszer hitelkereteinek működéséről nyújt tájékoztatást.
 author: omulvad
 manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e00828ea24434da6dfd7443153b007ea728375f3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312669"
 ---
-
 # <a name="credit-limits-for-customers"></a>Hitelkeretet a vevőknek
 
 [!include [banner](../includes/banner.md)]
@@ -139,4 +138,3 @@ Néha előfordulhat, hogy manuálisan kell ellenőrizni a vevő hitelkeretét. P
 1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**. Kattintson duplán egy értékesítési rendelésre.
 
 2.  Az **Értékesítési rendelés** képernyőn, a Művelet ablakban, a **Kezelés** lapon, kattintson a **Hitelkeretének ellenőrzése** elemre.
-

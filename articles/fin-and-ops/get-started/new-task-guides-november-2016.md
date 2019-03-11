@@ -1,13 +1,13 @@
 ---
-title: "Új vagy frissített feladat-útmutatók (2016. november)"
-description: "A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár."
+title: Új vagy frissített feladat-útmutatók (2016. november)
+description: Ez a témakör felsorolja a Microsoft (2016 november - minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348917"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített feladat-útmutatók (2016. november)
 
 [!include [banner](../includes/banner.md)]
 
-A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
+Ez a témakör felsorolja a Microsoft (2016 november – minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
 
-A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operationshöz, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, a Microsoft Dynamics AX 2. platformfrissítéséhez, a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
+A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operations rendszerhez, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, Microsoft Dynamics AX 2. platformfrissítéséhez, valamint a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
 
 > [!NOTE]
-> Egy csillag (\*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat Feladat-útmutatója a Dynamics 365 for Operations 2016. novemberi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióit nem támogatja.
+> Egy csillag (\*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics Dynamics 365 for Operations 2016. novemberi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 
@@ -549,4 +548,3 @@ A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Mi
 [Új vagy frissített feladat-útmutatók állnak rendelkezésre (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített feladat-útmutatók állnak rendelkezésre (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
-

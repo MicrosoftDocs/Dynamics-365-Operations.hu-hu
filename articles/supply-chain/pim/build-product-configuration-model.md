@@ -1,13 +1,13 @@
 ---
-title: "Termékkonfigurációs modell építése"
-description: "A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály."
+title: Termékkonfigurációs modell építése
+description: A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327458"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Termékkonfigurációs modell építése
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ A táblázatok megszorításai felhasználó által definiáltak vagy rendszer d
 
 A felhasználó által a felhasználó által definiált táblamegszorítás épül fel. A felhasználó választja ki, amely megadja annak a táblának az oszlopok Attribútumtípusok kombinációja, és ezután beírja az értékeket a tartományok, a kijelölt attribútum típusú alakítson ki a sorokat a táblamegszorításban.  
 
-A rendszer által definiált táblamegszorítás meghatározásához ki kell választani, mely Microsoft Dynamics 365 for Finance and Operations-táblát kívánja referenciaként használni, majd ebből a táblából ki kell választani a megszorítás oszlopait adó mezőket. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
+Rendszer által definiált táblamegszorítás referenciaként használandó Microsoft Dynamics 365 for Finance and Operations tábla kiválasztása, és kiválasztja az ebből a táblából alakítson ki az oszlopokat a megszorításban szereplő mezők határozzák meg. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
 
 Táblamegszorítás egy termékkonfigurációs modell a Táblamegszorítás oszlopai hivatkozásoknak a táblamegszorítás definíciójának és a modellben a megfelelő attribútumokat tartalmazza.
 
@@ -158,7 +157,6 @@ A konfiguráció az a célja, hogy hozzon létre egy külön változat a termék
 ### <a name="multiple-sites-and-intercompany"></a>Többszörös helyek és a vállalatközi
 
 Ha a beállítás történik, a hely vagy akár egy vállalat, amely eltér a hely vagy vállalat, ahol a termelési sor fog kerülni, az Anyagjegyzék és az útvonal lesz kell létrehozni, és a szállító helyén a szállító vállalatnál. A termékváltozat vesznek részt az ellátási lánc minden vállalatban kiadja a rendszer.
-
 
 
 

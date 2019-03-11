@@ -1,13 +1,13 @@
 ---
-title: "Toborzási Power BI-tartalom"
-description: "Ez a témakör ismerteti a Toborzási Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Toborzás Power BI tartalom
+description: Ez a témakör ismerteti a Toborzás Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347997"
 ---
-
-# <a name="recruiting-power-bi-content"></a>Toborzási Power BI-tartalom
+# <a name="recruiting-power-bi-content"></a>Toborzás Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör ismerteti a **Toborzás** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható.
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
+A **Toborzás** Power BI tartalom a **Toborzás kezelése** munkaterületen látható.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Jelentések és megjelenítések a Toborzás kezelése munkaterületen
 A **Toborzás kezelése** munkaterület tartalmaz egy **Elemzés** lapot. Ez a lap a beágyazott toborzási Power BI-tartalmat tartalmazza. A tartalom egy áttekintő lapból és további, részletesek adatokat tartalmazó fülekből áll. Az alábbi táblázatban található a füleken megjelenő jelentések ismertetése.
@@ -46,9 +45,9 @@ A **Toborzás kezelése** munkaterület tartalmaz egy **Elemzés** lapot. Ez a l
 | Toborzási elemzés  | Nettó felvételi arány, felvételig tartó napok átlagos száma, rossz felvételek százaléka, toborzási költségek, toborzási projektek száma, alkalmazottak és pályázók aránya, pályázók és nyitott pozíciók aránya toborzási projekt szerint |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-A következő táblázat mutatja a **Felvétel** entitásokat, amelyeken a Power BI-csomag alapul.
+A következő táblázat mutatja az entitásokat, amelyeken a **Toborzás** Power BI-csomag alapul.
 
 | Entitás               | Tartalom                                                         | Más entitásokkal való kapcsolatok |
 |----------------------|------------------------------------------------------------------|-----------------------------------|
@@ -66,4 +65,3 @@ A következő táblázat mutatja a **Felvétel** entitásokat, amelyeken a Power
 | Teljesítmény          | Minősítési, leírás és minősítési modell                            | Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt |
 | Toborzási projekt  | Projekt leírása, projekt állapota és nyitott pozíciók                | Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt |
 | A pályázó munkaviszonya megszűnt | Megszűnt pályázók, ok, teljesítmény és a megszűnés dátuma | Vállalat, naptáreltolás, dátum, földrajzi elhelyezkedés, teljesítmény, demográfiai adatok, foglalkoztatás, média, toborzási projekt, pályázó neve |
-

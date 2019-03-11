@@ -1,13 +1,13 @@
 ---
 title: Financial Insights
-description: "A Financial Insights a Microsoft Power BI-t használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására."
+description: A Financial Insights a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308851"
 ---
-
 # <a name="financial-insights"></a>Financial Insights
 
 [!include [banner](../includes/banner.md)]
 
-A **Financial Insights** a Microsoft Power BI-t használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására. A Power BI a Microsoft Dynamics 365 Finance and Operations beágyazott része. A **Financial Insights** lényege az analitikus jelentéskészítés. A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre. 
+A **Financial Insights** a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására. Power BI be van ágyazva a Microsoft Dynamics 365 Finance and Operations alkalmazásba. A **Financial Insights** lényege az analitikus jelentéskészítés. A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre. 
 
 A **Financial Insights** kombinálja az adatokat a főkönyvből és az analitikus naplókból, hogy teljesebb képet adjon a szervezet pénzügyi helyzetéről.
 
@@ -87,7 +86,7 @@ Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személy
 |-----------------------------------------|-------|------------|
 | Pénzügyi igazgatói áttekintés munkaterület megjelenítése             | Pénzügyi igazgató | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterülethez biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
 | Jelenlegi vállalat pénzügyi információinak megtekintése | <ul><li>Könyvelő</li><li>Főkönyvelő</li><li>Számviteli felügyelő</li><li>Könyvvizsgáló</li><li>Költségvetés-kezelő</li><li>Vezérigazgató</li><li>Pénzügyi igazgató</li><li>Pénzügyi ellenőr</li></ul> | Ez a feladatkör hozzáférést biztosít a Financial Insights alkalmazáshoz. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Nem adhat hozzá más jogi személyeket. |
-| Vállalatközi pénzügyi információk megtekintése   | A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 verzióban ez a feladatkör nincs szerepkörhöz rendelve. A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
+| Vállalatközi pénzügyi információk megtekintése   | A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában ez a kötelességhez nem rendelt szerepkört. A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>Pénzügyi jelentések és Pénzügyi statisztikák
@@ -240,14 +239,13 @@ A pénzügyi kimutatási vizuális elemeknél a megjeleníthető sorok száma ko
 A maximális érték túllépése esetén a pénzügyi kimutatásban megjelenő összegek helytelenek lesznek, mert nem minden sor kerül be a vizuális elembe.
 
 ### <a name="empty-rows"></a>Üres sorok
-A Power BI nem támogatja az üres sorok elrejtését és megjelenítését. Ha egy sor nem tartalmaz adatokat, a sor nem jelenik meg a vizuális elemben.
+Power BI nem támogatja az üres sorok elrejtését és megjelenítését. Ha egy sor nem tartalmaz adatokat, a sor nem jelenik meg a vizuális elemben.
 
 
-## <a name="additional-resources-for-power-bi"></a>További erőforrások a Power BI számára
+## <a name="additional-resources-for-power-bi"></a>További erőforrások a Power BI szolgáltatáshoz
 
-Az alábbi erőforrásokban található információk nem szükségesek **Pénzügyi igazgató áttekintés** vagy **Financial Insights** munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez. Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI-jelentéseit szeretné beágyazni a Finance and Operations alkalmazásba.
+Az alábbi erőforrásokban található információk nem szükségesek **Pénzügyi igazgató áttekintés** vagy **Financial Insights** munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez. Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI jelentéseit szeretné beágyazni a Finance and Operations alkalmazásba.
 
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

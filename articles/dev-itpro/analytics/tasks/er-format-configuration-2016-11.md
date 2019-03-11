@@ -1,13 +1,13 @@
---- 
-title: "ER – Formátumkonfiguráció létrehozása (2016. november)"
-description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre formátum konfigurációt az Elektronikus jelentéshez (ER)."
+---
+title: ER – Formátumkonfiguráció létrehozása (2016. november)
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre formátum konfigurációt az Elektronikus jelentéshez (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377549"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER – Formátumkonfiguráció létrehozása (2016. november)
 
@@ -35,8 +35,10 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 2. Kattintson a **Jelentéskészítés konfigurációi** lehetőségre.
 3. A fán válassza ki a következőt: **Payments (simplified model)**.
 4. A **Konfiguráció létrehozása** gombra kattintva megnyithatja a legördülő párbeszédablakot.
+
  > [!NOTE]
  > Ha nem látja a **Konfiguráció létrehozása** lehetőséget, a tervező módot engedélyeznie kell a **elektronikus bevallási paraméterek** lapon. 
+ 
 5. Az **Új** mezőbe írja be a **PaymentModel modellen alapuló formátum** kifejezést.
 6. A **Név** mezőbe írja be a **BACS (UK fictitious)** szöveget.
 7. A **Leírás** mezőbe írja be a **BACS vendor payment format (UK fictitious)** szöveget.
@@ -44,9 +46,6 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
     * Elektronikusdokumentum-formátum definiálható. Ezt a mezőt hagyja üresen, ha azt szeretné, hogy futásidőben választhassa ki a formátumot.  
 8. Az **Adatmodell mezőben** adjon meg vagy válasszon ki egy értéket.
 9. Kattintson a **Konfiguráció létrehozása** lehetőségre. Új konfiguráció létrehozása megtörtént. Egy vázlat verzió használható a tervezési formátum tárolására az elektronikus dokumentumok kezeléséhez.  
- > [!NOTE]
- > Ha nem látja a **Konfiguráció létrehozása** lehetőséget, a tervező módot engedélyeznie kell a **elektronikus bevallási paraméterek** lapon.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Elektronikus dokumentumok formátumának tervezése
 1. Kattintson a **Tervező** pontra.
@@ -159,5 +158,4 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 41. Kattintson az **OK** gombra.
 42. Kattintson a **Mentés** gombra.
 43. Zárja be a lapot.
-
 

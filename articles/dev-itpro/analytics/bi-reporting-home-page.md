@@ -1,13 +1,13 @@
 ---
-title: "Üzleti intelligencia és jelentéskészítés kezdőlap"
-description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
+title: Üzleti intelligencia (BI) és jelentéskészítés kezdőlap
+description: Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302363"
 ---
-
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Üzleti intelligencia és jelentéskészítés kezdőlap
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Üzleti intelligencia (BI) és jelentéskészítés kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia- (BI) eszközökre és jelentéskészítési eszközökre vonatkozóan.
+Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzleti intelligenciára (BI) vonatkozó és jelentéskészítési eszközökre vonatkozóan.
 
 ## <a name="get-started"></a>Első lépések
-- [Adatelérés és jelentéskészítés](information-access-reporting.md)
+- [Adathozzáférés és jelentéskészítés](information-access-reporting.md)
 - [Technikai előadás: Jelentéskészítési lehetőségek](https://www.youtube.com/watch?v=NzZONjKs5xA) (videó)
 - [Finance and Operations: Üzleti intelligencia](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
 
 ## <a name="analytical-workspaces"></a>Analitikus munkaterületek
-A Finance and Operations olyan interaktív jelentéseket biztosít, amelyek tökéletesen beépülnek az alkalmazási munkaterületekbe. A munkaterületek olyan multimédiás infografikákat és vizuális elemeket használhatnak, amelyeket támogat a Microsoft Power BI. Ezen infografikák és vizuális elemek között megtalálhatók különféle, harmadik féltól származó vezérlők is. A munkaterületek így rendkívül látványos, interaktív élményt biztosíthatnak a felhasználók számára.
+A Finance and Operations olyan interaktív jelentéseket biztosít, amelyek tökéletesen beépülnek az alkalmazási munkaterületekbe. A munkaterületek olyan multimédiás infografikákat és vizuális elemeket használhatnak, amelyeket támogat a Microsoft Power BI. Ezen infografikák és vizuális elemek között megtalálhatók különféle, harmadik féltől származó vezérlők is. A munkaterületek így rendkívül látványos, interaktív élményt biztosíthatnak a felhasználók számára.
 
 A felhasználók az oldalon található vizuális elemekre kattintva vagy azokat megérintve kezelhetik az adatokat. Láthatják az okot és a hatást, illetve elvégezhetnek egyszerű what-if műveleteket a munkaterület elhagyása nélkül. A látványos, interaktív vizuális elemeknek köszönhetően a felhasználók élvezettel ismerhetik meg az adatokkal és fedezhetik fel a rejtett trendeket.
 
@@ -45,11 +44,11 @@ A felhasználók az oldalon található vizuális elemekre kattintva vagy azokat
 
 További információk a következő témakörökben találhatók:
 
-- [Beágyazott Power BI a munkaterületeken](embed-power-bi-workspaces.md)
-- [A Power BI Embedded integrációja](power-bi-embedded-integration.md)
-- [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](add-analytics-tab-workspaces.md)
-- [Analitikai munkaterületek és jelentések biztosítása a Power BI Embedded segítségével](secure-analytical-workspaces.md)
-- [Power BI-tartalmak a Finance and Operations alkalmazáshoz](power-bi-home-page.md)
+- [Munkaterületekre beágyazott Power BI](embed-power-bi-workspaces.md)
+- [Power BI Embedded-integráció](power-bi-embedded-integration.md)
+- [Analitika hozzáadása munkaterületekhez a Power BI Embedded használatával](add-analytics-tab-workspaces.md)
+- [Analitikai munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával](secure-analytical-workspaces.md)
+- [Power BI-tartalom a Finance and Operations rendszerhez](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Üzleti dokumentumok és nyomtatás
 A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók részleteinek rögzítésére és kommunikálására. A jelentéskészítési megoldásoknak ezért képeseknek kell lenniük az üzleti adatok fizikai reprodukálására a meglévő eszközöket például hálózati nyomtatókat használva. Az üzleti dokumentumok közé tartoznak például az értékesítési számlák, a vevői kivonatok és a csekkek.
@@ -91,4 +90,3 @@ A következő jelentéseket hivatkozási információkat biztosítanak a Finance
 - [Licenckódok és konfigurációskulcs-jelentések](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services-jelentések](SSRS-report.md)
 - [Munkafolyamat-típusok jelentése](../../fin-and-ops/organization-administration/workflow-types-report.md)
-

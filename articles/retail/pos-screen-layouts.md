@@ -1,13 +1,13 @@
 ---
-title: "Képernyő-elrendezések a pénztár (POS) számára"
-description: "Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat."
+title: Képernyő-elrendezések a pénztár (POS) számára
+description: Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321892"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Képernyő-elrendezések a pénztár (POS) számára
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
+Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 
 A Retail pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők.
 
@@ -51,7 +50,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 - **Leírás** - Megadhat egy felismerhető nevet, amely segít azonosítani a megfelelő profilt az adott helyzetnek megfelelően.
 - **Téma** - A világos vagy a sötét alkalmazástémák közül választhat. A téma hatással van a betűk és háttér színére az alkalmazás egészében.
 - **Kiemelés színe** - A kiemelőszínt a rendszer használja a pénztárban mindenütt bizonyos vizuális elemek megkülönböztetésére és kiemelésére: ilyenek a csempék, a parancsgombok és a hivatkozások. Ezek az elemek általában interaktívak.
-- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Microsoft Dynamics 365 for Retail 1611-es verziójában érhető el.
+- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Microsoft Dynamics 365 for Retail 1611 verzióban nem érhető el.
 - **Bejelentkezési hátterek** - Megadhatja a bejelentkezési képernyő háttérképét. A háttérkép méretének a lehető legkisebbnek kell lennie, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
 - **Alkalmazásháttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. Bejelentkezési hátterek esetén a fájlméretet a lehető legkisebbnek kell tartani.
 
@@ -185,7 +184,7 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
     - **Egyéni téma** – A POS gombok alapértelmezés szerint a kiemelés színét használják a vizuális profilból. Ha bejelöli az **egyéni téma használata** négyzet jelölését, további színeket adhat meg.
 
         > [!NOTE]
-        > A Retail Modern POS és a Cloud POS csak a **háttérszín** és **betűszín** értékeket használja.
+        > A Retail Modern POS és a Cloud POS csak a **Háttérszín** és **Betűszín** értékeket használja.
 
     - **Gomb kép** – A gomb tartalmazhat képeket és ikonat. A rendelkezésre álló képek közül választhat, amelyek itt vannak megadva: **Kiskereskedelem \> Csatorna beállítása \> POS beállítása \> POS \> Képek**.
 
@@ -194,4 +193,3 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
 ## <a name="additional-resources"></a>További erőforrások
 
 [A Retail POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
-

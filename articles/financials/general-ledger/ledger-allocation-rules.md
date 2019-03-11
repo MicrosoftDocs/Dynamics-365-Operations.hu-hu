@@ -1,13 +1,13 @@
 ---
-title: "Főkönyvi felosztási szabályok"
-description: "Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket."
+title: Főkönyvi felosztási szabályok
+description: Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365730"
 ---
-
 # <a name="ledger-allocation-rules"></a>Főkönyvi felosztási szabályok
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Minden felosztási szabály négy elsődleges összetevőből áll: általános,
 -   **Cél** – A cél határozza meg, hogy a felosztási számítás eredményét hogyan kell elosztani a cél felosztási sorai között. Például lehet az egyes részlegekhez tartozó cél soronként.
 -   **Ellenoldal** – ezt az összetevőt határozza meg, hogyan fő számlák és dimenziók érdekében meg kell határozni az ellenoldali bejegyzéseket, amelyek kiegyenlítik a cél bejegyzései. Ezek a bejegyzések általában a forrás oldalán megadott számlák/dimenziók helyében állnak. Ha **Adatforrás** értéke **Rögzített érték**, a **Forrás** lehetőség nem használható.
 -   **Főkönyvi felosztási alap szabályok** – ezek szabályok saját forrás szűrési feltételek meghatározása, hogy mely főkönyvi egyenlegek használandó felosztási (például a bevétel szerinti beosztásokról) használja. Egy felosztási alapszabály több felosztási szabállyal együtt is használható.
-
 
 
 

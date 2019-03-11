@@ -1,13 +1,13 @@
---- 
-title: "Termelési rendelés kiadása"
-description: "Ez az eljárás a termelési rendelések kiadását mutatja be."
+---
+title: Termelési rendelés kiadása
+description: Ez az eljárás a termelési rendelések kiadását mutatja be.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdTableListPage, ProdParmRelease, SrsReportViewerForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 917fe1ef826c9b112be29ebce78ebd750652db64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 6e628d8564c093c5d75fffe268b2107262d508c3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345076"
 ---
 # <a name="release-a-production-order"></a>Termelési rendelés kiadása
 
@@ -40,5 +40,4 @@ Ez az eljárás a termelési rendelések kiadását mutatja be. Ez az eljárás 
 5. Jelölje be az Útvonalkártya nyomtatása jelölőnégyzetet.
 6. Kattintson az OK gombra.
 7. Zárja be a lapot.
-
 

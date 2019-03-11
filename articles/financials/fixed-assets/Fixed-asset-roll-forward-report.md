@@ -1,14 +1,14 @@
 ---
-title: "Jelentés a tárgyi eszköz meghosszabbításáról"
-description: "Ez a témakör bemutatja, hogyan használja a tárgyieszköz-meghosszabbítási jelentést."
+title: Jelentés a tárgyi eszköz meghosszabbításáról
+description: Ez a témakör bemutatja, hogyan használja a tárgyieszköz-meghosszabbítási jelentést.
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313750"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Jelentés a tárgyi eszköz meghosszabbításáról
 
 [!include [banner](../includes/banner.md)]
 
-A **Tárgyi eszköz meghosszabbítása** jelentés egyszerűen áttekinthető a Microsoft Excel formátumban részletes tárgyieszköz-adatokat szolgáltat az időszakzáráshoz, pénzügyi kimutatásokhoz és adóbevalláshoz. A jelentés kezdő és záró egyenleget tartalmaz a tárgyi eszközökhöz az időszak értékelési mozgásaival, valamint az adott időszakban történt új tárgyieszköz-beszerzésekkel és az értékesítésekekkel együtt. Az adatok az egyes tárgyi eszközökre vonatkoznak, és az értékek a tárgyieszköz-csoportok és a jogi személy esetében is összegzésre kerülnek.
+A **Tárgyi eszköz meghosszabbítása** jelentés egyszerűen áttekinthető a Microsoft Excel-formátumban részletes tárgyieszköz-adatokat szolgáltat az időszakzáráshoz, pénzügyi kimutatásokhoz és adóbevalláshoz. A jelentés kezdő és záró egyenleget tartalmaz a tárgyi eszközökhöz az időszak értékelési mozgásaival, valamint az adott időszakban történt új tárgyieszköz-beszerzésekkel és az értékesítésekekkel együtt. Az adatok az egyes tárgyi eszközökre vonatkoznak, és az értékek a tárgyieszköz-csoportok és a jogi személy esetében is összegzésre kerülnek.
 
 A **Tárgyi eszköz meghosszabbítása** jelentés az Elektronikus jelentési (ER) keretrendszert használja. A jelentés futtatása előtt a tárgyi eszközök modelljét és tárgyi eszközök meghosszabbításának konfigurációit importálni kell a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Ez a jelentés a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 változatban érhető el, vagy gyorsjavításként a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) kiadásban. Három gyorsjavítást kell alkalmazni a 2017. júliusi kiadást futtató környezetekben:
+Ez a jelentés megtalálható a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában, vagy gyorsjavításként a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. júliusi) kiadásában. Három gyorsjavítást kell alkalmazni a 2017. júliusi kiadást futtató környezetekben:
 
 - **KB 4041754:** az elektronikus jelentési (ER) konfiguráció nem tölthető le az LCS-ből, mivel nem alkalmazhat az aktuális alkalmazásverzióra a platformfrissítő csomag telepítése után
 - **KB 4056107:** elektronikus jelentés (GER) 5-ös összegző frissítés
@@ -66,5 +66,4 @@ Az alábbi táblázat bemutatja a jelentésben rendelkezésre álló mezőket.
 |            Kivezetések:-Értékesítési érték            |                                                                                               A kivezetési-értékesítési tranzakción átesett tárgyieszköz-könyv értékesítési értéke.                                                                                                |
 |           Kivezetés: Maradványérték            |                                                                                               A kivezetési-selejtezési tranzakción átesett tárgyieszköz-könyv maradványértéke.                                                                                               |
 |           Kivezetések: Nyereség/veszteség            |                                                                                 A nyereség vagy veszteség a tárgyieszköz-könyvön végrehajtott kivezetési tranzakció részeként kalkulált értéke.                                                                                 |
-
 

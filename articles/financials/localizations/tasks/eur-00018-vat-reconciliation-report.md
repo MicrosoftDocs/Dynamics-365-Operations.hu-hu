@@ -1,13 +1,13 @@
---- 
-title: "EUR-00018 Áfa-egyeztetési jelentés"
-description: "Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogalanyok számára rendelkezésre álló Adóegyeztetési jelentés."
+---
+title: EUR-00018 Áfa-egyeztetési jelentés
+description: Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogalanyok számára rendelkezésre álló Adóegyeztetési jelentés.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MainAccountLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5822a60456376647f2687fc2d211db3296575d47
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370900"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 Áfa-egyeztetési jelentés
 
@@ -36,10 +36,8 @@ Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogala
     * Válassza ki a 600180 értéket.  
 4. A Kifizetési időszak mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a „Hé” értéket.  
-5. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+5. Adjon meg egy dátumot a Kezdő dátum mezőben.
     * Válassza ki a 2015-11-01 értéket.  
 6. Válassza az Igen lehetőséget a Részletek megjelenítése mezőben.
 7. Kattintson az OK gombra.
-
 

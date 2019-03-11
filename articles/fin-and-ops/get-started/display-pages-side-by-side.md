@@ -1,13 +1,13 @@
 ---
-title: "Oldalak egymás melletti megjelenítése a Megnyitás új ablakban funkció használatával"
-description: "Ez a cikk ismerteti, hogy hogyan jeleníthet meg lapokat egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben."
+title: Oldalak egymás melletti megjelenítése a Megnyitás új ablakban funkció használatával
+description: Ez a cikk azt ismerteti, hogy miként jeleníthetők meg az oldalak egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330172"
 ---
-
-# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Oldalak egymás melletti megjelenítése a Megnyitás új ablakban funkció használatával
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk ismerteti, hogy hogyan jeleníthet meg lapokat egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben.
+Ez a cikk azt ismerteti, hogy miként jeleníthetők meg az oldalak egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
-A Microsoft Dynamics 365 for Finance and Operations rendszer segít a feladatok hatékony végrehajtásában. Bizonyos esetekben előfordulhat, hogy több oldalt akar párhuzamosan megjeleníteni, a feladat gyors végrehajtásához. Például szeretne érvényesíteni vagy hozzáadni sorokat egyszerre több naplóhoz. Általában ehhez folyamatosan váltani kell a lap, ami megjeleníti a naplókat, valamint egy másik lap között, ami megjeleníti a sorokat az adott naplóhoz. Azonban a **Megnyitás új ablakban** funkció lehetővé teszi, hogy ezen lapokat párhuzamosan jelenítse meg, ezzel gyorsítva az elvégzendő feladatot.
+Microsoft Dynamics 365 for Finance and Operations segít a feladatok hatékony elvégzésében. Bizonyos esetekben előfordulhat, hogy több oldalt akar párhuzamosan megjeleníteni, a feladat gyors végrehajtásához. Például szeretne érvényesíteni vagy hozzáadni sorokat egyszerre több naplóhoz. Általában ehhez folyamatosan váltani kell a lap, ami megjeleníti a naplókat, valamint egy másik lap között, ami megjeleníti a sorokat az adott naplóhoz. Azonban a **Megnyitás új ablakban** funkció lehetővé teszi, hogy ezen lapokat párhuzamosan jelenítse meg, ezzel gyorsítva az elvégzendő feladatot.
 
 A fenti példánál maradva, a sorok megtekintése közben rákattinthat a **Megnyitás új ablakban** ikonra.
 
@@ -50,4 +49,3 @@ A **Megnyitás új ablakban** funkció használata előtt a böngészőjében en
 A **Megnyitás új ablakban** funkció csak akkor elérhető, ha több, mint egy oldal van megnyitva az ablakban. A felugró ablakok is automatikusan bezárulnak, ha nincs több megnyitható lap (ha az ablak utolsó lapja is bezárásra kerül). A Finance and Operations rendszer bezárja a megnyitott lapokat is, ha Ön az alkalmazás egy másik részére navigál. Ezért ha van egy megnyitott felugró ablak, és Ön az alkalmazáson belül egy másik területre navigál, a felugró ablak automatikusan bezárul, mert az ablakon belüli lapokat a rendszer automatikusan bezárta.
 
 Az előugró ablak felső sora arról a vállalatról tartalmaz információt, amiben a lap meg lett nyitva, és csak olvasható. A felugró ablak a Finance and Operations rendszer fő böngésző ablakára támaszkodik. Ha a fő ablak bezárásra kerül, vagy frissítve lesz, az összes felugró ablak csak olvasható állapotba kerül. Ez azt jelenti, hogy ezután is megtekintheti az információkat ezekben az ablakokban, de nem lesz képes módosítani azokat.
-

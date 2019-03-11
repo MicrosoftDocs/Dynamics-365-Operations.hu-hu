@@ -1,13 +1,13 @@
---- 
-title: "Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban"
-description: "Ez az eljárás bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként."
+---
+title: Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
+description: Ez az eljárás bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként.
 author: mrolecki
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 01/17/2019
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,37 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b589d64a4446420164175b41f435cf48daac01a9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cc90bc86cd489b124a806c480632dd53ba47f3f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340545"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként. 
+Ez az témakör bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként.
 
-Ez az eljárás az DEMF bemutatócéget használja.
+Ez az ötödik azon öt eljárás közül, amelyek elektronikus jelentési beállítások használatával mutatják be a szállítói kifizetési folyamatot. Az DEMF bemutatóadatok segítségével végezze el ezt az példát.
 
-Ez az ötödik azon öt eljárás közül, amelyek elektronikus jelentési beállítások használatával mutatják be a szállítói kifizetési folyamatot. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+## <a name="example"></a>Példa
 
-
-## <a name="create-payment-lines"></a>Fizetési sorok létrehozása
-1. Ugorjon a Kötelezettségek > Fizetési beállítás > Fizetési napló pontra.
-2. Kattintson az Új lehetőségre.
-3. A listában jelölje meg a kiválasztott sort.
-4. A Név mezőben adjon meg vagy válasszon ki egy értéket.
-5. Kattintson a Sorok pontra.
-6. Kattintson a Fizetési javaslat lehetőségre.
-7. Kattintson a Fizetési javaslat létrehozása lehetőségre.
-8. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
-9. Kattintson a Szűrő parancsra.
-10. A listában jelölje ki a Szállítók táblára és a Szállítói számla mezőre vonatkozó sort.
-11. A Feltétel mezőben adjon meg vagy válasszon ki egy értéket.
-    * Bármilyen feltétel alkalmazható a szállítói fizetési tranzakció kiválasztásához - ebben a példában a DE-001-et használjuk szállítói számlaként.  
-12. Kattintson az OK gombra.
-13. Kattintson az OK gombra.
-14. Kattintson a Fizetések létrehozása lehetőségre.
-
-## <a name="generate-an-iso20022-payment-file"></a>ISO20022 típusú fizetési fájl létrehozása
-
+1.  Ugorjon a **Kötelezettségek > Fizetési beállítás > Fizetési napló** pontra.
+2.  Kattintson az **Új** elemre.
+3.  A **Név** mezőben adjon meg vagy válasszon ki egy értéket.
+4.  Kattintson a **Sorok > Kifizetési javaslat > Fizetési javaslat létrehozása** menügombra.
+5.  Bontsa ki a **Szerepeltetni kívánt rekordok** szakaszt.
+6.  Kattintson a **Szűrő** parancsra.
+7.  A listában jelölje ki a **Szállítók táblára** és a **Szállítói számla mezőre** vonatkozó sort.
+8.  A **Feltétel** mezőben adjon meg vagy válasszon ki egy értéket. Bármilyen feltétel alkalmazható a szállítói fizetési tranzakció kiválasztásához, ebben a példában a DE-001-et használjuk szállítói számlaként.
+12. Kattintson az **OK** gombra.
+13. Kattintson az **OK** gombra.
+14. Kattintson a **Fizetések létrehozása** lehetőségre.
+15. Hozzon létre egy ISO20022 típusú fizetési fájlt.
+    1.  Kattintson a **Kifizetések létrehozása** elemre.
+    2.  A **Fizetési mód** mezőben adjon meg vagy válasszon ki egy értéket.
+    3.  Írjon be egy értéket a **Fájlnév** mezőbe. Ebben a példában az euróban történő fizetés miatt a létrehozott fájl SEPA kompatibilis lesz. A ISO20022 jóváírás-átutalás és a többi szállítói fizetési dormátum is használható a fizetések létrehozására más pénznemekben.
+    4.  A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.
 

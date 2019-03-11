@@ -1,13 +1,13 @@
 ---
-title: "Követelések és beszedések kezelése Power BI-tartalom"
-description: "Ez a témakör a Követelések és beszedések kezelése Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Követelések és beszedések kezelése Power BI tartalom
+description: Ez a témakör a Követelések és beszedések kezelése Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325181"
 ---
-
-# <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI-tartalom
+# <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a **Követelések és beszedések kezelése** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör a **Követelések és beszedések kezelése** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -43,10 +42,10 @@ Minden összeg a rendszer pénznemében van megadva. Beállíthatja az rendszer 
 
 Alapértelmezés szerint a jelenlegi vállalat követeléseinek és beszedéseinek adatait jeleníti meg. Ha az összes vállalatra vonatkozó adatot látni szeretné, rendelje a **CustCollectionsBICrossCompany** kötelességet a szerepkörhöz.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Követelések és beszedések kezelése** Power BI-tartalom a**Követelések és beszedések kezelése** munkaterületen jelenik meg.
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
+A **Követelések és beszedések kezelése** Power BI-tartalom a **Vevői követelések és beszedések** munkaterületen jelenik meg.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Jelentések, amelyek a Power BI-tartalomban szerepelnek
 
 A **CustCollectionsBICrossCompany** Power BI-tartalom jelentést is tartalmaz, amelyben a mutatók egy készlete található. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázatban a **CustCollectionsBICrossCompany** Power BI-tartalom megjelenítési formáinak áttekintése található.
 
@@ -63,11 +62,11 @@ A **CustCollectionsBICrossCompany** Power BI-tartalom jelentést is tartalmaz, a
 | Beszedések állapota          | <ul><li>Vitatott</li><li>Nem tartotta a fizetési ígéretet</li><li>Fizetési ígéret</li><li>Beszedések állapotának részletei</li><li>Felszólítási állapot - összegek</li><li>Nyitott esetek</li><li>Nyitott tevékenységek</li></ul> |
 | Fizetési felszólítások         | <ul><li>Felszólító kód - összegek</li><li>Felszólító kód összegének részletei</li><li>Fizetési felszólító levelek összege vállalatok szerint</li><li>Fizetési felszólítások összege vevőcsoportok szerint</li><li>Fizetési felszólító levelek összege régió szerint</li></ul> |
 
-Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálására](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) lehetőségre. Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése ábrán látható.
+Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése ábrán látható.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
-A következő adatokkal tölthetők ki a jelentések oldala a **Követelések és beszedések kezelése** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
+A következő adatokkal tölthetők ki a jelentések oldala a **Követelések és beszedések kezelése** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
 
 |                   Entitás                    |      Kulcs összesítő mértékek      |             Adatforrás              |                           Mező                            |                                    Leírás                                     |
@@ -88,5 +87,4 @@ A következő adatokkal tölthetők ki a jelentések oldala a **Követelések é
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                A létrehozott kamatlevelek száma.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Az összes várakoztatott értékesítési rendelés száma.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                A leírt tranzakciók összege.                 |
-
 

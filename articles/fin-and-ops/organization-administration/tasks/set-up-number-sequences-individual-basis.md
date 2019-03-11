@@ -1,13 +1,13 @@
---- 
-title: "Az egyedi alap számsorozatainak beállítása"
-description: "A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer."
+---
+title: Az egyedi alap számsorozatainak beállítása
+description: A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362211"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Az egyedi alap számsorozatainak beállítása
 
@@ -43,5 +43,4 @@ A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzés
 8. Bontsa ki az Általános szakaszt.
     * Az Átalános Gyorslapon adja meg, hogy a számsorozat manuális, illetve folytonos vagy nem folytonos legyen. Ezen túlmenően adja meg a számsorozatban használható legkisebb és legnagyobb számot.     Nem folytonos számsorozat folytonos számsorozatra cserélése nem ajánlott. A számsorozat nem lesz valóban folyamatos. Ez a változtatás ismétlődő kulcsok miatti hibát is okozhat az adatbázisban. Ezenkívül a folyamatos számsorozatok nagyobb hatással vannak a teljesítményre.   
 9. Kattintson a Mentés gombra.
-
 

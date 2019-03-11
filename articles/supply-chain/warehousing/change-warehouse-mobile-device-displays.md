@@ -1,13 +1,13 @@
 ---
-title: "Raktári mobileszköz megjelenítési beállításai"
-description: "Ez a cikk azt mutatja be, hogy hogyan állíthatja be egy mobileszköz kijelzőjének megjelenését és hogyan adhatja hozzá a vezérlőkhöz a billentyűparancsokat, mint például gombokat."
+title: Raktári mobileszköz megjelenítési beállításai
+description: Ez a cikk azt mutatja be, hogy hogyan állíthatja be egy mobileszköz kijelzőjének megjelenését és hogyan adhatja hozzá a vezérlőkhöz a billentyűparancsokat, mint például gombokat.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328033"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Raktári mobileszköz megjelenítési beállításai
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,7 @@ A **Mobileszköz szövegszínei** oldalt használhatja a rendszer által létreh
 Szín kiválasztásához kattintson a **Szín kiválasztása** oldalon a palettára, vagy írjon be egy hexadecimális színkódot.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>A mobileszköz dátumformátumának megadása
-Minden telepítésnél kibővítheti az elfogadott dátumformátumok listáját. Ez például akkor lehet hasznos, ha olyan formátumot szeretne használni, amellyel a dolgozónak könnyebb megadnia a dátumot a mobileszközön. Az alapértelmezett formátumot a felhasználó alapértelmezett nyelve határozza meg, amely a **Nyelv** mezőben a **Felhasználói beállítások** oldalon található. (Ugyanezen az oldalon lehet egy adott raktár munkafelhasználóját egy alkalmazotthoz társítani.) **Megjegyzés**: a raktári mobileszközportál nem használja a **Dátum-, idő- és számformátum** mező beállítását a **Nyelvi és területi beállítások** oldalon. Ha módosítani szeretné a kívánt dátumformátumot, ismernie kell a .NET-keretrendszer reguláris kifejezéseit. További tudnivalókért lásd: [A .Net keretrendszer reguláris kifejezései](http://go.microsoft.com/fwlink/?LinkId=391260). Dátumformátumok definiálásához szerkessze azt a Dates.ini fájlt, amely a Content\\\Settings\\\Dates.ini helyen található a raktári mobileszközportál szerverén. Ez a fájl .NET reguláris kifejezések alapján határozza meg a dátumformátumot. A reguláris kifejezésnek tartalmaznia kell a nap, hónap és év (DDMMYY) megjelölésére létrehozott, névvel ellátott csoportokat jelölő alkifejezéseket is, ahogyan azt a következő példa szemlélteti:
+Minden telepítésnél kibővítheti az elfogadott dátumformátumok listáját. Ez például akkor lehet hasznos, ha olyan formátumot szeretne használni, amellyel a dolgozónak könnyebb megadnia a dátumot a mobileszközön. Az alapértelmezett formátumot a felhasználó alapértelmezett nyelve határozza meg, amely a **Nyelv** mezőben a **Felhasználói beállítások** oldalon található. (Ugyanezen az oldalon lehet egy adott raktár munkafelhasználóját egy alkalmazotthoz társítani.) **Megjegyzés**: a raktári mobileszközportál nem használja a **Dátum-, idő- és számformátum** mező beállítását a **Nyelvi és területi beállítások** oldalon. Ha módosítani szeretné a kívánt dátumformátumot, ismernie kell a Microsoft .NET-keretrendszer reguláris kifejezéseit. További tudnivalókért lásd: [A .Net keretrendszer reguláris kifejezései](http://go.microsoft.com/fwlink/?LinkId=391260). Dátumformátumok definiálásához szerkessze azt a Dates.ini fájlt, amely a Content\\\Settings\\\Dates.ini helyen található a raktári mobileszközportál szerverén. Ez a fájl .NET reguláris kifejezések alapján határozza meg a dátumformátumot. A reguláris kifejezésnek tartalmaznia kell a nap, hónap és év (DDMMYY) megjelölésére létrehozott, névvel ellátott csoportokat jelölő alkifejezéseket is, ahogyan azt a következő példa szemlélteti:
 
 ^(?&lt;nap&gt;\\d{2})(?&lt;hónap&gt;\\d{2})(?&lt;év&gt;\\d{2})$
 
@@ -101,7 +100,6 @@ Egynél több kifejezést is megadhat egy fájlban. Minden kifejezésnek külön
 --------
 
 [Mobileszközök konfigurálása raktári munkához](configure-mobile-devices-warehouse.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Automatikus kiegyenlítés és rangsorolás"
-description: "Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt."
+title: Automatikus kiegyenlítés és rangsorolás
+description: Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318971"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatikus kiegyenlítés és rangsorolás
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 
-A kifizetések számlákkal, vagy egyéb tranzakciókkal történő kiegyenlítésekor két lehetőség közül választhat. Kiválaszthatja manuálisan a kiegyenlítendő tranzakciókat, vagy a Microsoft Dynamics 365 for Finance and Operations automatikusan kiválasztja a tranzakciókat az automatikus kiegyenlítési funkciót alkalmazva. Az automatikus kiegyenlítés feldolgozását testreszabhatja a **Kiegyenlítés rangsorolása** lehetőséggel. Ezek a beállítások részei a kiegyenlítési paraméterek modulnak, amelyek a **Kinnlevőségek paraméterei** lapon vannak meghatározva. A tranzakciók automatikus kiegyenlítési módjai eltérhetnek, attól függően, hogy milyen módszert használ az automatikus kiegyenlítéshez. A következő módszerek állnak rendelkezésre:
+A kifizetések számlákkal, vagy egyéb tranzakciókkal történő kiegyenlítésekor két lehetőség közül választhat. Kiválaszthatja manuálisan a kiegyenlítendő tranzakciókat, vagy a Microsoft Dynamics 365 for Finance and Operations rendszer automatikusan kiválasztja a tranzakciókat az automatikus kiegyenlítési funkciót alkalmazva. Az automatikus kiegyenlítés feldolgozását testreszabhatja a **Kiegyenlítés rangsorolása** lehetőséggel. Ezek a beállítások részei a kiegyenlítési paraméterek modulnak, amelyek a **Kinnlevőségek paraméterei** lapon vannak meghatározva. A tranzakciók automatikus kiegyenlítési módjai eltérhetnek, attól függően, hogy milyen módszert használ az automatikus kiegyenlítéshez. A következő módszerek állnak rendelkezésre:
 
 -   Felhasználó által definiált kiegyenlítési rangsor
 -   alapértelmezett automatikus kiegyenlítés
@@ -45,8 +44,8 @@ A cikk későbbi kiegyenlítési példái az alábbi tranzakciókon alapszanak. 
 | Tranzakció   | Dátum        | Összeg | Készpénzfizetési engedmény feltételei | Készpénzfizetési engedmény dátuma | Megjegyzések                                                                                                                                                                                      |
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1. számla     | Augusztus 15.   | 100,00 | 2%14, nettó 30        | Augusztus 29.          |                                                                                                                                                                                               |
-| 2. számla     | Szeptember 1. | 250,00 | 2%14, nettó 30        | Szeptember 15.       |                                                                                                                                                                                               |
-| 3. számla     | Október 15.  | 500,00 | 2% 14/ nettó 30        | Október 29.         |                                                                                                                                                                                               |
+| 2. számla     | Szeptember 1. | 250.00 | 2%14, nettó 30        | Szeptember 15.       |                                                                                                                                                                                               |
+| 3. számla     | október 15.  | 500.00 | 2% 14/ nettó 30        | Október 29.         |                                                                                                                                                                                               |
 | Kamatlevél | Október 15.  | 7:00   |                     |                    | A kamatlevél az 1. és a 2. számlára vonatkozik. Az összeg kiszámolása során a 30 napja vagy annál régebben lejárt számlák esetében 2 százalékos kamat kerül felszámolásra. Példa: 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Felhasználó által definiált kiegyenlítési rangsor
@@ -79,7 +78,6 @@ Ha nincsen felhasználó által definiált kiegyenlítési rangsor, a tranzakci�
 | 2. számla     | 2015/1/9   | 10002   | 250,00                         | 250,00           | 0,00    | dollár      |
 | 3. számla     | 2015/15/10 |         | 500,00                         | 350.00           | 150,00  | dollár      |
 | Kamatlevél | 2015/15/10 |         | 7:00                           | 0,00             | 0,00    | dollár      |
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Készletgazdálkodás kezdőlap"
-description: "Ez a témakör a készletkezelésről nyújt áttekintést."
+title: Készletgazdálkodás kezdőlap
+description: Ez a témakör a készletkezelésről nyújt áttekintést.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5376c6c18c2d7d48d3ee253e8818e0c868a52145
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 01b51b3442ca2a924cec2e894c3840c90989791c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364925"
 ---
-
 # <a name="inventory-management"></a>Készletgazdálkodás 
 
 [!include [banner](../includes/banner.md)]
@@ -49,16 +48,15 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
-Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="inventory-accounting"></a>Készletkönyvelés 
 További tudnivalókért lásd: [Készletkönyvelés a költséggazdálkodásban](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Ellátási lánchoz és gyártáshoz kapcsolódó blogok
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában ](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a készletkezelésről és az egyéb megoldásokról.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a készletkezelésről és az egyéb megoldásokról.
 
 ### <a name="task-guides"></a>Feladat-útmutatók
 Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra.
-
 
 

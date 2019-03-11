@@ -1,13 +1,13 @@
 ---
-title: "Áfa-visszaigénylés a Költséggazdálkodás modulban"
-description: "Ez a témakör bemutatja, hogyan lehet visszatérítést kapni az erre jogosult általános forgalmi adó (áfa) tranzakciók után."
+title: Áfa-visszaigénylés a Költséggazdálkodás modulban
+description: Ez a témakör bemutatja, hogyan lehet visszatérítést kapni az erre jogosult általános forgalmi adó (áfa) tranzakciók után.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359566"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Áfa-visszaigénylés a Költséggazdálkodás modulban
 
 [!include [banner](../includes/banner.md)]
@@ -68,11 +67,10 @@ Amikor Arnie megkapja a papírra nyomtatott nyugtákat Nancytől, összeveti a d
 
 ## <a name="send-vat-recovery-data-to-the-third-party-vendor-to-file-international-recovery-returns"></a>Küldje el a harmadik fél szállítónak az áfa-visszaigénylési adatokat a nemzetközi visszaigénylések igényléséhez
 
-Amikor Arnie készen áll, hogy elküldje a harmadik fél szállítónak a költségjelentést, amelyik aztán elindítja az áfa-visszaigénylési folyamatot, megnyitja a **Költségadó-visszaigénylés** oldalt. Szűri az oldalt, hogy csak a **Visszatérítésre kész** megjelölésű költségjelentések legyenek láthatók. Arnie kiválasztja a **Fájl** &gt; **Exportálás az Excel programba** lehetőséget. A rendszer a költségjelentés áfa-adatait Microsoft Excel-munkalapba exportálja. Arnie ezt a munkalapot elküldi a külső szállítónak, és mellékel egy üzenetet, amely arról tájékoztat, hogy a papírra nyomtatott nyugtákat elküldte futárszolgálattal.
+Amikor Arnie készen áll, hogy elküldje a harmadik fél szállítónak a költségjelentést, amelyik aztán elindítja az áfa-visszaigénylési folyamatot, megnyitja a **Költségadó-visszaigénylés** oldalt. Szűri az oldalt, hogy csak a **Visszatérítésre kész** megjelölésű költségjelentések legyenek láthatók. Arnie kiválasztja a **Fájl** &gt; **Exportálás az Excel programba** lehetőséget. A rendszer a költségjelentés áfa-adatait Microsoft Excel munkalapba exportálja. Arnie ezt a munkalapot elküldi a külső szállítónak, és mellékel egy üzenetet, amely arról tájékoztat, hogy a papírra nyomtatott nyugtákat elküldte futárszolgálattal.
 
 ## <a name="process-expenses-for-domestic-vat-recovery"></a>Dolgozza fel a kiadásokat a belföldi áfa-visszaigényléshez
 
 Arnie-nak ellenőriznie kell, hogy a költségjelentés-tranzakciók jogosultak áfa-visszaigénylés, és hogy a digitális nyugtákat csatolták a jelentésekhez. A belföldi visszaigénylésre jogosult kiadások feldolgozásának elindításához Arnie megnyitja a **Költségadó-visszaigénylés** lapot, és kiválasztja a költségjelentést, amely megköveteli az ellenőrzést. Ellenőrzi, hogy nyugták ne az alkalmazott, hanem a vállalat nevére szóljanak. Áfa-visszaigényléshez a nyugtáknak a vállalat nevére kell szólniuk. Arnie ezután megerősíti, hogy a megfelelő áfacsoportot és cikk-áfakódokat alkalmazták.
 
 Amikor Arnie megkapja a papírra nyomtatott nyugtákat, a költségjelentés állapotát módosítja **Visszatérítésre kész** állapotra. Ekkor továbbíthatja a visszaigénylési kérelmet a megfelelő adóhatóság felé. Ebben az esetben, az Egyesült Államokban, a megfelelő adóhatóság az Internal Revenue Service (IRS).
-

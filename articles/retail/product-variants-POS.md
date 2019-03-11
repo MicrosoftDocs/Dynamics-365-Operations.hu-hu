@@ -1,32 +1,31 @@
 ---
-title: "Készlet ellenőrzése a pénztárnál (POS)"
-description: "Ez a témakör leírja a készletinformációinak megtekintéséhez a pénztárnál (POS) rendelkezésre álló beállításokat."
+title: Készlet ellenőrzése a pénztárnál (POS)
+description: Ez a témakör leírja a készletinformációinak megtekintéséhez a pénztárnál (POS) rendelkezésre álló beállításokat.
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314417"
 ---
-
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Készlet ellenőrzése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
@@ -116,4 +115,3 @@ A következő táblázatban tájékozódhat a rendelkezésre álló további mű
 | Elérhetőség         | Jelenítse meg az ígérethez rendelkezésre álló információkat a kiválasztott változatkombinációra a kiválasztott helyre. |
 | Minden hely megjelenítése   | Váltson át a szokásos készletkeresési nézetre, és jelölje ki a készletelérhetőségi információkat a cikkváltozatra az összes üzletben az üzlet-lokátorcsoportban, valamint a **Szabványos/Alapértelmezett** típusú elosztóközpontokban. |
 | Termék részleteinek megtekintése | Irányítsa át a felhasználót a társított alaptermék **Termék részletei** oldalára. |
-

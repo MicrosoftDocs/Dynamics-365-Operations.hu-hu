@@ -1,13 +1,13 @@
 ---
-title: "Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)"
-description: "Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014."
+title: Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)
+description: Ez a cikk a Microsoft Dynamics AX 7.0.1 alkalmazásverziójában található új vagy módosított szolgáltatásokat írja le. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314509"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014.
+Ez a cikk a Microsoft Dynamics AX 7.0.1 alkalmazásverziójában található új vagy módosított szolgáltatásokat írja le. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014.
 
 ## <a name="electronic-reporting-er"></a>Elektronikus jelentés (EJ)
 
@@ -107,4 +106,3 @@ Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú M
 [Új vagy módosult elemek](whats-new-changed.md)
 
 [Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
-

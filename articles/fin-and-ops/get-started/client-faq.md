@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations alkalmazás kliens GYIK"
-description: "Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Finance and Operations-klienssel kapcsolatos gyakori kérdésekre."
+title: Finance and Operations alkalmazás kliens GYIK
+description: Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Finance and Operations-klienssel kapcsolatos gyakori kérdésekre.
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316717"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations alkalmazás kliens GYIK
 
 [!include [banner](../includes/banner.md)]
@@ -56,4 +55,3 @@ A **Részletek megtekintése** beállítás több módon is elérhető:
 
 - Ha valamelyik vezérlő rendelkezik **Részletek megtekintése** lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
 - A **Részletek megtekintése** lehetőség is megtalálható a Finance and Operations helyi menüjében. Amennyiben szeretne többet megtudni arról, hogy mely helyi menük jelennek meg a Finance and Operations rendszerben az egér jobb gombjával kattintva, lásd az előző fejezetet.
-

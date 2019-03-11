@@ -1,13 +1,13 @@
---- 
-title: "Szabadszöveges számlasablon hozzárendelése vevőhöz"
-description: "A feladat bemutatja, hogyan kell szabadszöveges számlasablont vevőhöz hozzárendelni."
+---
+title: Szabadszöveges számlasablon hozzárendelése vevőhöz
+description: A feladat bemutatja, hogyan kell szabadszöveges számlasablont vevőhöz hozzárendelni.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318925"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Szabadszöveges számlasablon hozzárendelése vevőhöz
 
@@ -48,5 +48,4 @@ A feladat bemutatja, hogyan kell szabadszöveges számlasablont vevőhöz hozzá
 10. Válasszon ki egy ismétlődési szabályt.
     * Napi – Válassza ezt az opciót, majd adja meg a napok számát a / mezőben. Ha például a 15 értéket adja meg, akkor a rendszer 15 naponta generál számlát ehhez a vevőhöz.  Hetente – Válassza a Hetente opciót, majd adja meg a hetek számát a / mezőben. Ha például a 2 értéket adja meg, akkor a rendszer kéthetente generál számlát ehhez a vevőhöz.  Havonta – Válassza a Havonta opciót, majd adja meg a hónapok számát a / mezőben. Ha például a 6 értéket adja meg, akkor a rendszer félévente generál számlát ehhez a vevőhöz.  Évente – Válassza az Évente opciót, majd adja meg az évek számát a / mezőben. Ha például a 2 értéket adja meg, akkor a rendszer kétévente generál számlát ehhez a vevőhöz.  
 11. A / mezőben adjon meg egy számot.
-
 

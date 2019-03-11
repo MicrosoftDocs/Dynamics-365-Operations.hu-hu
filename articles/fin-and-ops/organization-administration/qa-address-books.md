@@ -1,13 +1,13 @@
 ---
-title: "Címjegyzékek GYIK"
-description: "Ez a témakör válaszokat ad a Microsoft Dynamics 365 for Finance and Operations címjegyzékeivel kapcsolatos gyakran feltett kérdésekre."
+title: Címjegyzékek GYIK
+description: Ez a témakör a címjegyzékek kapcsolatos gyakori kérdésekre ad válaszokat a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: bb0239fd9bd80ae15bd2cca08d5a5f5258aef638
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337808"
 ---
-
 # <a name="address-books-faq"></a>Címjegyzékek GYIK
 
 [!include [banner](../includes/banner.md)]
@@ -68,5 +67,4 @@ A felek rekordjait a globális címjegyzékben vagy a megfelelő entitáslapon a
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Le lehet fordítani a partnerrekordok címadatait?
 
-A címadatok fordítását be tudja úgy állítani, hogy az adatok az Ön felhasználói nyelvén (a rendszernyelven) jelenjenek meg a Microsoft Dynamics 365 for Finance and Operations rendszerben, de más nyelven az olyan dokumentumokban, mint például egy értékesítési rendelés. Az országok és régiók nevei, illetve címzési célok és névsorozatok kapcsán tud megadni fordításokat. Ha például az Ön rendszernyelve a dán, tud értékesítési rendelést hozni létre egy franciaországi vevő részére. Ebben az esetben a programban tudja dán nyelven megjeleníteni a vevőrekordot, a nyomtatott értékesítési rendelésen azonban franciául tüntetni fel a címadatokat. A fordítások beállításakor a listában szereplő minden cikkhez kell megadnia fordítást. Azok a cikkek, melyekhez nem ad meg fordítás, a rendszernyelven jelennek meg. Ha például az Ön rendszernyelve a dán, tud dokumentumot küldeni egy spanyolországi vevő részére. Ha nem adott meg spanyol (ESP) fordításokat a címadatok kapcsán, úgy ezek az adatok dán nyelven jelennek meg, mind a programban, mind a bizonylaton.
-
+A címadatok fordítását be tudja úgy állítani, hogy az adatok az Ön felhasználói nyelvén (a rendszernyelven) jelenjenek meg a Microsoft Dynamics 365 for Finance and Operations rendszerben, de más nyelven olyan dokumentumokban, mint például egy értékesítési rendelés. Az országok és régiók nevei, illetve címzési célok és névsorozatok kapcsán tud megadni fordításokat. Ha például az Ön rendszernyelve a dán, tud értékesítési rendelést hozni létre egy franciaországi vevő részére. Ebben az esetben a programban tudja dán nyelven megjeleníteni a vevőrekordot, a nyomtatott értékesítési rendelésen azonban franciául tüntetni fel a címadatokat. A fordítások beállításakor a listában szereplő minden cikkhez kell megadnia fordítást. Azok a cikkek, melyekhez nem ad meg fordítás, a rendszernyelven jelennek meg. Ha például az Ön rendszernyelve a dán, tud dokumentumot küldeni egy spanyolországi vevő részére. Ha nem adott meg spanyol (ESP) fordításokat a címadatok kapcsán, úgy ezek az adatok dán nyelven jelennek meg, mind a programban, mind a bizonylaton.

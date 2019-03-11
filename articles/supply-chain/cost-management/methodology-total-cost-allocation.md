@@ -1,13 +1,13 @@
 ---
-title: "Teljes költségfelosztási módszer"
-description: "Ez a témakör bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg."
+title: Teljes költségfelosztási módszer
+description: Ez a témakör bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cda1c5251b81a3bb73d4d8703d7c3fa1ab4e9c16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341580"
 ---
-
 # <a name="total-cost-allocation-method"></a>Teljes költségfelosztási módszer
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ A **Melléktermék költségfelosztása** mező a **Társtermékek** oldalon egy
 -   **Százalék** – A költségösszeg a termelés során felhasznált nyersanyagok teljes költségének egy százalékaként van kiszámítva. A számításokhoz használt százalék van megadva a mezőben.
 -   **Sorozatonként** – A költségösszeg a termelési rendelés szabványos kötegméretei utáni összegként van kiszámítva. Ez az összeg független a termelésben jelentett mennyiségtől. A számításokhoz használt összeg van megadva a mezőben.
 -   **Mennyiség szerint** – A költségösszeg a termelésben lévő receptúracikk jelentett mennyisége szerinti összegként van kiszámítva. A számításokhoz használt összeg van megadva a mezőben.
-
 
 
 

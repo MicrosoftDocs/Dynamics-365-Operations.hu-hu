@@ -1,13 +1,13 @@
 ---
-title: "Készletállapotok"
-description: "A cikk leírja hogyan alkalmazza a készletállapotokat a készlet nyomon követésének és kategorizálásának érdekében."
+title: Készletállapotok
+description: A cikk leírja hogyan alkalmazza a készletállapotokat a készlet nyomon követésének és kategorizálásának érdekében.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: be5e512dcb23ce525439f11b7674cc35d7306159
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5caa5620db428f18d451fdfe2aeae9e2a76a24f8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322789"
 ---
-
 # <a name="inventory-statuses"></a>Készletállapotok
 
 [!include [banner](../includes/banner.md)]
@@ -43,11 +42,10 @@ A készletállapotok a készlet csoportosítására használhatók. Ezután a el
 
 A készletállapot a tárolásidimenzió-csoport dimenziói közé tartozik. Készletállapotok kategóriája lehet elérhető vagy nem elérhető, és használhatja a **Készletzárolás** paramétert a nem elérhető állapotú cikkek blokkolására. A zárolt állapotú cikkek tényleges készletnek tekinthetők, és nem használhatók termelési rendelésben, értékesítési rendelésben, átmozgatási rendelésben vagy kimenő tranzakcióban.
 
-Bejövő munkához elérhető vagy nem elérhető készletállapotú cikkeket is használhat. Például létrehozhat egy elérhető állapotot, amely neve **Kész**, nem elérhető állapotot, amely neve **Sérült**, és zárolt állapotot, amely neve **Zárolva**. Bevételezett, vagy visszaküldött cikkek beszerzési rendelésének létrehozásakor, ha a cikkek megsérültek vagy eltörtek, a készlet állapotát módosíthatja **Sérült** értékre a beszerzési rendelésen. A cikkek bevételezése után, az állapot értéke automatikusan **Zárolva**. Ha mobileszköz használatával olvas be a sérült cikkeket, a Microsoft Dynamics 365 for Finance and Operations rendszer használhat helyutasításokat és munkasablonokat, hogy mutassa a megfelelő helyet és helytartományokat, ahova be lehet tárolni azokat a cikkeket. Visszaküldött cikkekhez **Foglalás** kiadástpus jön létre a **Készlettranzakciók** oldalon.
+Bejövő munkához elérhető vagy nem elérhető készletállapotú cikkeket is használhat. Például létrehozhat egy elérhető állapotot, amely neve **Kész**, nem elérhető állapotot, amely neve **Sérült**, és zárolt állapotot, amely neve **Zárolva**. Bevételezett, vagy visszaküldött cikkek beszerzési rendelésének létrehozásakor, ha a cikkek megsérültek vagy eltörtek, a készlet állapotát módosíthatja **Sérült** értékre a beszerzési rendelésen. A cikkek bevételezése után, az állapot értéke automatikusan **Zárolva**. Ha mobileszköz használatával olvas be a sérült cikkeket, a Microsoft Dynamics 365 for Finance and Operations használhat helyutasításokat és munkasablonokat, hogy mutassa a megfelelő helyet és helytartományokat, ahova be lehet tárolni azokat a cikkeket. Visszaküldött cikkekhez **Foglalás** kiadástpus jön létre a **Készlettranzakciók** oldalon.
 
 Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon. Ha **Törött** állapotú cikkekkel futtat alaptervezést, a rendszer hiányzónak fogja tekinteni őket, és automatikusan feltölti a készletet.
 
 Készletállapotok létrehozása után beállíthatja, hogy ez legyen az alapértelmezett készletállapot egy adott telephelyre, cikkre vagy raktárra vonatkozóan. Értékesítéshez, átadáshoz és beszerzési rendeléshez is létrehozhat alapértelmezett állapotot. Az értékesítési rendelések és a kimenő átmozgatási rendelések esetén a **Készletzárolás** alapértelmezett állapota nem lehet **Igen**. A raktár, cikk, beszerzési rendelés, átmozgatási rendelés vagy értékesítési rendelés alapértelmezett beállításaiból örökölt készletállapotot a mobileszköz, beszerzési rendelés, értékesítési rendelés, vagy átmozgatási rendelés sor segítségével lehet módosítani.
 
 Rendelkezésre álló készlet állapotú cikkek fedezeti tervének elkészítéséhez jelölje be a **Fedezeti terv dimenziónként** lehetőséget tárolási dimenziónak, a **Tárolási dimenziócsoportok** oldalon. A **Cikkfedezet** varázsló megnyitásakor, az elérhető állapotú cikkek jelenjenek meg az **Állapot** oldalon. A cikkekre vonatkozó fedezeti beállítások létrehozásához válassza ki a készletállapot azonosítóját a rendelkezésre álló készletállapotok közül. A fedezeti beállítások alapján számíthatja ki a cikkszükségletet és jelezheti előre az elérhető cikkekre vonatkozó kínálatot és kereslete az alaptervezés során. Zárolt készletállapottal nem lehet cikkfedezeti beállítás létrehozni. A cikkfedezeti paraméterek létrehozásához vagy módosításához használhatja az **Cikk fedezete** képernyőt is.
-

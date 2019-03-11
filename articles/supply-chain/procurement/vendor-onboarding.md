@@ -1,13 +1,13 @@
 ---
-title: "Szállítók felvétele"
-description: "Ez a témakör az új szállítók felvételének folyamatát mutatja be. Ismerteti, hogy a különböző szerepköröknek milyen műveleteket kell elvégezniük a folyamat közben."
+title: Szállítók felvétele
+description: Ez a témakör az új szállítók felvételének folyamatát mutatja be. Ismerteti, hogy a különböző szerepköröknek milyen műveleteket kell elvégezniük a folyamat közben.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322145"
 ---
-
 # <a name="onboard-vendors"></a>Szállítók felvétele
 [!include [banner](../includes/banner.md)]
 
@@ -46,10 +45,10 @@ Az alábbi táblázat bemutatja a folyamatban részt vevő szerepköröket és a
 |--------------------------|---|---|---|---|---|---|
 | System                   | Az új szállítóra való kérelem importálásra kerül. | | | | | A szállítókérés elfogadása után létrejön a szállítói rekord. |
 | Beszerző | | A felvételi művelet indítása. | | | Ellenőrizze, és fogadja-, vagy utasítsa el a szállítókérést. | |
-| Rendszergazda            | | | Hozzon létre egy felhasználói fiókot a Finance and Operationsben, illetve a Microsoft Azureban. | | | |
+| Adminisztrátor            | | | Hozzon létre egy felhasználói fiókot a Finance and Operations, illetve a Microsoft Azure rendszerben. | | | |
 | A szállító kapcsolattartója    | | | E-mail küldése a kapcsolattartónak. | Szállítói információ regisztrálása. | | |
 
-A Szállító felvételi folyamatának gyors bemutatásához nézze meg ezt a rövid videót a YouTube-on: [Új szállító felvétele a Dynamics 365 for Finance and Operations rendszerben] (https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Az új szállítók felvételi folyamatának gyors bemutatásáért nézze meg ezt a rövid YouTube-videót: [Új szállító beléptetése a Dynamics 365 for Finance and Operations rendszerben](https://www.youtube.com/watch?v=0KUc3AGaTKk}
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>A potenciális szállító regisztrálási kérelmének importálása
 
@@ -174,5 +173,4 @@ A **Törlés** művelet használatával a potenciális szállító regisztrálá
 |  Szállítókérés létrehozva  |                                                                     A szállítói regisztrációs varázsló befejeződött.                                                                      | Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.<blockquote>[!NOTE]<br>Nem használhatja a <strong>Törlés</strong> műveletet, amikor a szállítókérés ellenőrzési folyamatban van a munkafolyamaton belül.</blockquote> |
 |         Engedélyezve         |                                                                               A szállítókérés jóváhagyásra kerül.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
 |         Elutasítva         |                                                                               A szállítókérést elutasították.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
-
 

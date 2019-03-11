@@ -1,13 +1,13 @@
---- 
-title: "Juttatások lejárati dátumainak kezelése"
-description: "Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttatást, és miként kezelheti a juttatásra jogosult dolgozók tagsági időszakát."
+---
+title: Juttatások lejárati dátumainak kezelése
+description: Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttatást, és miként kezelheti a juttatásra jogosult dolgozók tagsági időszakát.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: c256dc54a2f28889ce328b5c09ba19e6d67eb6b6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334611"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Juttatások lejárati dátumainak kezelése
 
@@ -47,5 +47,4 @@ Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttat�
 14. Bontsa ki a Személyes adatok szakaszt.
 15. Kattintson a Juttatások lehetőségre.
 16. Keresse meg a juttatást és válassza ki a rekordot a listában. Ne feledje a juttatás nyújtásának új záró dátumát.
-
 

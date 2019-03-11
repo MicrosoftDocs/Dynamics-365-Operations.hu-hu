@@ -1,32 +1,31 @@
 ---
-title: "Termékazonosítók"
-description: "Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz."
+title: Termékazonosítók
+description: Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335416"
 ---
-
 # <a name="product-identifiers"></a>Termékazonosítók 
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Amikor az üzemben vagy a raktárban dolgozik termékekkel a Microsoft Dynamics 
 
 ## <a name="unique-product-numberproduct-id"></a>Egyedi termékszámot/termékazonosító
 
-A Microsoft Dynamics 365 for Finance and Operations rendszerben a termék elsődleges azonosítója a termékszám (azaz az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
+A Microsoft Dynamics 365 for Finance and Operations, rendszerben a termék elsődleges azonosít ja a termékszám (tehát az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
 
 Sok esetben a termékszámot eredetileg nem a Finance and Operations rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. A Finance and Operations ezután a számokat az összes műveletben használja.
 
@@ -186,4 +185,3 @@ Most már használhatók a **Termékentitás közös adatokszolgáltatási azono
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
 [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
-

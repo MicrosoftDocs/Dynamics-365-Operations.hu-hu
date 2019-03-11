@@ -1,13 +1,13 @@
---- 
-title: "Jövőben esedékes csekkek beállítása"
-description: "Ez a témakör bemutatja, hogyan állíthatja be, miként legyenek feladva a jövőben esedékes csekkek naplóbejegyzési, és melyik feladási naplókat kell használni elszámolási tételekhez és szállítói kifizetésekhez."
+---
+title: Jövőben esedékes csekkek beállítása
+description: Ez a témakör bemutatja, hogyan állíthatja be, miként legyenek feladva a jövőben esedékes csekkek naplóbejegyzési, és melyik feladási naplókat kell használni elszámolási tételekhez és szállítói kifizetésekhez.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e4b18ebe1388998b45e5ef38318b0ade9153f7c8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d83713f9d54b396a10894995024ac1c8dd47a6f1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342615"
 ---
 # <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
 
@@ -64,5 +64,4 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
 24. A Fizetési számla mezőben adja meg a kívánt értékeket.
     * Válassza ki a számlaösszeg levonására szolgáló bankszámlát.  
 25. Zárja be a lapot.
-
 

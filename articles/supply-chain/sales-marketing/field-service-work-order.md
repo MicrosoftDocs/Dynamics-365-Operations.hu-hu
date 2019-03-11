@@ -1,37 +1,36 @@
 ---
-title: "A Finance and Operations-munkarendelések szinkronizálása a Field Service vevői rendelésekre"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Finance and Operations-munkarendelések a Field Service vevői rendelésekre történő szinkronizálásához szükségesek."
+title: A Finance and Operations-munkarendelések szinkronizálása a Field Service vevői rendelésekre
+description: Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Finance and Operations-munkarendelések a Field Service vevői rendelésekre történő szinkronizálásához szükségesek.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 49cb5942532e4feab64aa271ebfecf5cb60b1c61
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
-ms.openlocfilehash: 250b7caa1e1495140d0d4f688ecae4acb8814467
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324100"
 ---
-
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-finance-and-operations"></a>A Finance and Operations-munkarendelések szinkronizálása a Field Service vevői rendelésekre
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Microsoft Dynamics 365 for Field Service-ben létező munkarendelések és a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban lévő vevői rendelések közötti szinkronizálására használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található értékesítési rendelésekkel történő szinkronizálására használatosak.
 
 [![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -273,4 +272,3 @@ Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstat
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004) vagy (msdyn_allocated ne true))
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-

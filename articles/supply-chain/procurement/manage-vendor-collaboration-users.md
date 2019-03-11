@@ -1,13 +1,13 @@
 ---
-title: "Szállítói együttműködés felhasználóinak kezelése"
-description: "Ez a témakör leírja, hogyan lehet kérni új szállítói együttműködési felhasználók létesítését, és hogyan lehet hozzáadni új szállítói együttműködési partnereket."
+title: Szállítói együttműködés felhasználóinak kezelése
+description: Ez a témakör leírja, hogyan lehet kérni új szállítói együttműködési felhasználók létesítését, és hogyan lehet hozzáadni új szállítói együttműködési partnereket.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
-ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356691"
 ---
-
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Amikor egy kérést benyújtanak, az hozzáadódik a **Szállítói együttműk�
 Mielőtt kérheti egy új felhasználó létrehozását a rendszerben, ezt a személyt be kell állítani kapcsolattartóként egy vagy több szállítói fiókhoz. Szállítói együttműködéshez kapcsolódó, új felhasználóra vonatkozó kérelem létrehozása:
 
 1. Az **Összes partner** lapon kattintson a **Szállítói felhasználó létrehozása** lehetőségre.
-2. Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja a felhasználó használni, hogy bejelentkezzen a Finance and Operations alkalmazásba. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő, Azure Active Directory (AAD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy ADD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail-címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet a Finance and Operations felhasználójaként regisztrálni.
+2. Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja a felhasználó használni, hogy bejelentkezzen a Finance and Operations alkalmazásba. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő Azure Active Directory(AAD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy AAD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet a Finance and Operations felhasználójaként regisztrálni.
 3. Állítsa a **Szállítói együttműködési hozzáférés engedélyezett** lehetőséget **Igenre** minden olyan jogi személy esetében, amelynél a felhasználónak hozzáférésre van szüksége.
 4. A **Felhasználói szerepkörök hozzárendelése** területen válassza ki a **Hozzárendelés** jelölőnégyzetet azoknál a biztonsági szerepköröknél, amelyekkel a felhasználónak rendelkeznie kell.
 5. Kattintson a **Küldés** hivatkozásra.
@@ -91,7 +90,6 @@ A felhasználóhoz tartozó biztonsági szerepkörök módosításának kérése
 2.  Írjon egy megjegyzést a **Üzleti indoklás** mezőbe.
 3.  A **Felhasználói szerepkörök kezelése** szakaszban válassza ki a hozzárendelni kívánt biztonsági szerepköröket, vagy törölje azokat, amelyeket el akar távolítani.
 4.  Kattintson a **Küldés** elemre.
-
 
 
 

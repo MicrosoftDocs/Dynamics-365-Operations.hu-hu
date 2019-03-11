@@ -1,13 +1,13 @@
---- 
-title: "Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén"
-description: "A folyamat révén új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet."
+---
+title: Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén
+description: A folyamat révén új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313635"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén
 
@@ -37,7 +37,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 3. A fastruktúrában jelölje ki a következőt: „Intrastat (model)\Intrastat sample mapping”.
 4. Kattintson a Tervező pontra.
 5. Kattintson a Tervező pontra.
-6. A fán válassza ki a „Dynamics 365 for Operations\Table records” pontot.
+6. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 7. Kattintson a Gyökér hozzáadása gombra.
     * Adja hozzá a csoportosítani kívánt rekordokat jelző új adatforrást.  
 8. A Név mezőbe írja be a „Transactions” szöveget.
@@ -116,5 +116,4 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 67. A fastruktúrában bontsa ki az Árucikkrekord(Instrastat) elemet.
 68. Kattintson a Mentés gombra.
     * Vegye figyelembe, hogy a Végrehajtás helye mező azt mutatja, hogy a csoportosításra a memória futásidőben kerül sor annak ellenére, hogy nincsenek definiálva aggregációk, és a Tábla rekordjai típus az Intrastat tábla megfelelő értékeire vonatkozik. Ennek oka az, hogy az adatforrás tartalmaz néhány olyan számított mezőt, amelyeket még nem lehet átszámítani az SQL-adatbázis szintjére.  
-
 

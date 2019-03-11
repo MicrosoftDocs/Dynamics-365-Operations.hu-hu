@@ -1,13 +1,13 @@
 ---
-title: "Figyelmeztetések"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations figyelmeztetéseiről nyújt általános információkat. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről."
+title: Figyelmeztetések
+description: Ez a témakör általános tájékoztatást tartalmaz a Microsoft Dynamics 365 for Finance and Operations figyelmeztetéseivel kapcsolatban. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367455"
 ---
-
 # <a name="alerts"></a>Figyelmeztetések
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>Figyelmeztetések
-A figyelmeztetések a Microsoft Dynamics 365 for Finance and Operations kritikus eseményeire vonatkozó értesítési rendszert alkotnak. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről. Egyszerűen létrehozhatja saját figyelmeztetésiszabály-rendszerét, hogy figyelmeztetést kapjon a következő eseményekkel kapcsolatban: lejárt szállítási határidők, törölt rendelések, változó árak és egyéb olyan események, amelyekre valamilyen válaszreakció szükséges.
+A figyelmeztetések értesítési rendszert alkotnak a kritikus eseményekere vonatkozóan a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről. Egyszerűen létrehozhatja saját figyelmeztetésiszabály-rendszerét, hogy figyelmeztetést kapjon a következő eseményekkel kapcsolatban: lejárt szállítási határidők, törölt rendelések, változó árak és egyéb olyan események, amelyekre valamilyen válaszreakció szükséges.
 
 A vállalatirányításban (ERP) számos tipikus forgatókönyv létezik, ahol a Finance and Operations riasztási funkciója használható. Íme néhány példa.
 
@@ -78,4 +77,3 @@ A figyelmeztetési szabályok öt összetevőből állnak:
 ## <a name="email-notifications-from-alerts"></a>E-mail értesítések figyelmeztetésekből
 
 Az e-mail értesítések figyelmeztetésekből még nincsenek engedélyezve. Ezt egy jövőbeli frissítésben lesz engedélyezve.
-

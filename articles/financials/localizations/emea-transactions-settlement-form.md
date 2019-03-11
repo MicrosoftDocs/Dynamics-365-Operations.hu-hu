@@ -1,13 +1,13 @@
 ---
-title: "A kelet-európai elszámolási tranzakciók megtekintése"
-description: "Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat."
+title: A kelet-európai elszámolási tranzakciók megtekintése
+description: Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ba1731e4b0dcdeb4591d49dacf517f36e472eef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ac75d1900a428777374dcc9d7eea10ce4d15b1e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370845"
 ---
-
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>A kelet-európai elszámolási tranzakciók megtekintése
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ A rendszer rögzíti az elszámolással kapcsolatos információkat, amelyek meg
 -   **Filléreltérés** – Egy számla kiegyenlítése olyan fizetéssel történik, amely némileg eltérő összeget a számlán szereplőhöz képest.
 -   **Feltételes adófeladás** - Egy számla olyan fizetéssel való kiegyenlítése, amelyre feltételes adó vonatkozik;
 -   **Több vállalatot érintő kiegyenlítés** – Vállalatközi funkció, amely segítségével egy számla egy szervezettől eredő fizetéssel egyenlíthető ki.
-
 
 
 

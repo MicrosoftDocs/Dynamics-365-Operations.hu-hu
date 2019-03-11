@@ -1,13 +1,13 @@
 ---
-title: "Többmegállós szállítási útvonal tervezése"
-description: "Ez a cikk a Microsoft Dynamics 365 for Finance and Operations szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti."
+title: Többmegállós szállítási útvonal tervezése
+description: Ez a cikk a Dynamics 365 for Finance and Operations szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328309"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Többmegállós szállítási útvonal tervezése
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Az ütemezett út egy előre meghatározott útvonalterv, mely ütemezett száll
 
 ## <a name="load-building-workbench"></a>Rakomány-összeállítási munkaterület
 A Rakomány-összeállítási munkaterület rakományjavaslat készítésekor vevői rendelésekhez tartozó vevők címeit és szállítási dátumokat, valamint az elérhető ütemezett útvonalakat használja. Az útvonal értékei a munkaterületre kerülnek az alapértelmezés szerint. Ugyanakkor az útvonal kezdő dátumánál korábbi kezdő dátum is választható. Rakományjavaslat esetén minden nyitott értékesítési rendelés szállítási címe és a szállítási dátuma ellenőrzésre kerül. Ha a szállítási cím irányítószáma és a központ irányítószáma egyezik az útvonaltervben, és ha a szállítási dátum a feltételekben a kijelölt tartományon belül van, a értékesítési rendelés javasolt lesz rakománynak. A rakománysablon-kapacitás szintén mérlegelésre kerül. Egyszerre csak rakományjavaslat lehetséges. Ha egy értékesítési rendelése nincs feltüntetve, más rakománysablont kell használnia (például egy rakománysablont nagyobb teherautó vagy tároló számára) vagy extra kiszállítást kell terveznie.
-
 
 
 

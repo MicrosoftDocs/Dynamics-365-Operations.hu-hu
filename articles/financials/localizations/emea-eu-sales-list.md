@@ -1,13 +1,13 @@
 ---
-title: "EU értékesítési lista jelentése"
-description: "Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást."
+title: EU értékesítési lista jelentése
+description: Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370902"
 ---
-
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 <li><strong>Országos/területi paraméterek</strong> lap: Azonosítsa az EU-tagállamokat. Minden egyes EU-tagállamhoz hozzon létre egy rekordot az oldalon, és adja meg a következő adatokat:
 <ul>
 <li><strong>Ország/régió</strong> – Válasszon ki egy országot/régiót.</li>
-<li><strong>Ország/régió típusa</strong> – Ha az <strong>Ország/régió</strong> értéke ugyan az, mint az ország/régió, ahol a vállalat regisztrálva van, jelölje be-e <strong>Belföldi</strong> lehetőséget. Ha az <strong>Ország/régió</strong> értéke egy másik EU-tagállam, mint ahol a vállalata regisztrálva van, válassza ki az <strong>EU</strong> értéket. Ha az <strong>Ország/régió</strong> értéke nem egy EU-tagállam, válassza ki a <strong>Harmadik ország/régió</strong>értéket.</li>
+<li><strong>Ország/régió típusa</strong> – Ha az <strong>Ország/régió</strong> értéke ugyan az, mint az ország/régió, ahol a vállalat regisztrálva van, jelölje be-e <strong>Belföldi</strong> lehetőséget. Ha az <strong>Ország/régió</strong> értéke egy másik EU-tagállam, mint ahol a vállalata regisztrálva van, válassza ki az <strong>EU</strong> értéket. Ha az <strong>Ország/régió</strong> értéke nem egy EU-tagállam, válassza ki a <strong>Harmadik ország/régió</strong> értéket.</li>
 </ul></li>
 <li><strong>Számsorozatok</strong> lap: A sorban, ahol a <strong>Hivatkozás</strong> értéke <strong>EU értékesítési lista</strong>, válasszon ki egy számsorozat kódot.</li>
 </ul></td>
@@ -158,7 +157,6 @@ Létrehozhat egy **EU értékesítési lista** jelentés, a **Jelentés**funkci�
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Az EU értékesítési lista jelentési időszakának lezárása.
 
 Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például amikor az adóhatóságok elfogadták az **EU értékesítési lista** jelentést), az ESL rekordokat, amelyek szerepelnek a jelentésben, megjelölheti, ha a **Jelentéskészítési állapot** értékét **Lezárt**értékre módosítja. Ezen állapot beállításához használja a **Megjelölés lezártként**funkciót az **EU értékesítési lista**oldalon. Az időszak zárásának visszaállításával megjelölheti az ESL rekordokat,ha a **Jelentéskészítési állapot** értékét **Beleszámít**értékre módosítja. Ezeket a rekordokat aztán felveheti egy **EU értékesítési lista** jelentésben újra. Ezen állapot beállításához használja a **Megjelölés** **beleszámítottként**funkciót az **EU értékesítési lista** oldalon.
-
 
 
 

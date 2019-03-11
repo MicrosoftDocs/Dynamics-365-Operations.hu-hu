@@ -1,13 +1,13 @@
 ---
-title: "Értékesítési rendelések mobil munkaterület"
-description: "Ez a témakör az Értékesítési rendelések mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban."
+title: Értékesítési rendelések mobil munkaterület
+description: Ez a témakör az Értékesítési rendelések mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,21 +18,20 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 03e8908ecb78b4f72dae8426b0165f9350d5fe85
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a3b06832112779a4b0826a51b696a1ced10711ec
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365063"
 ---
-
 # <a name="sales-orders-mobile-workspace"></a>Értékesítési rendelések mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör az **Értékesítési rendelések** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban. 
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
 
 ## <a name="overview"></a>Áttekintés
 Az **Értékesítési rendelések** mobil munkaterület teszi lehetővé az egyes értékesítési rendeléssel kapcsolatos részletes információk megtekintését. Ezek az információk magában foglalják a rendelés állapotát, az ügyfél kapcsolattartási információit és a rendelésfelvevő elérhetőségi adatait. Az **Értékesítési rendelések** mobil munkaterület azonnali rálátást biztosít az értékesítési rendelésekre. Megtekintheti az összes értékesítési rendelést, az értékesítési rendeléseket ügyfelek szerint, vagy megtekintheti egy adott értékesítési rendelés információit. 
@@ -82,13 +81,13 @@ Ez a nézet értékesítési rendeléseket jelenít meg vevőnként.
         -   Szállítmányok, amelyek megmutatják, hogyan és mikor szállították ki az értékesítési rendelést
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az előfeltételek eltérőek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
+Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations rendszert használja 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie az **Értékesítési rendelések** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
+Amennyiben szervezete telepítette a Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie az **Értékesítési rendelés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>A Dynamics 365 for Operations 1611-es verziójához 3. vagy újabb platformfrissítéséhez szükséges előfeltételek
-Amennyiben szervezete telepítette a Dynamics for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
+### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Dynamics 365 for Operations1611-es verzió és platform update 3 vagy újabb használatakor
+Amennyiben szervezete telepítette a Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
 
 <table>
 <thead>
@@ -105,7 +104,7 @@ Amennyiben szervezete telepítette a Dynamics for Operations 1611-es verzióján
 
 <td>A 4013633-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza az <strong>Értékesítési rendelések</strong> mobil munkaterületet. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Metaadat-gyorsjavítások letöltése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Telepítse a metaadatok gyorsjavítását</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Alkalmazza telepíthető csomagot</a>.</li>
@@ -123,7 +122,7 @@ Amennyiben szervezete telepítette a Dynamics for Operations 1611-es verzióján
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
--   [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
@@ -143,4 +142,3 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 4.  Válassza ki az ügyfelet.
 5.  Válassza ki a **Kapcsolattartó adatai** vagy az **Értékesítési rendelések** lehetőséget. Az **Értékesítési rendelések** kiválasztása esetén megjelenik egy lista a vevő számára az értékesítési rendelésekről.
 6.  Válassza ki az **Értékesítési rendelés** lehetőséget. Megtekintheti az értékesítési rendelések sorairól, a szállítmányokról, a vevői kapcsolattartási adatokról és a megrendelő elérhetőségéről szóló információkat.
-

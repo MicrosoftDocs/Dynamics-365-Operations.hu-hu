@@ -1,13 +1,13 @@
 ---
-title: "Vállalatfüggő személyzeti (HR) paraméterek beállítása"
-description: "Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a vállalatok között, azonban vannak olyan paraméter beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását."
+title: Vállalatfüggő személyzeti (HR) paraméterek beállítása
+description: Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a vállalatok között, azonban vannak olyan paraméter beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304748"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Vállalatfüggő személyzeti (HR) paraméterek beállítása
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a váll
 Az Emberi erőforrások (HR) paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos. Az **Emberierőforrás-paraméterek** oldalon a beállítások 6 lapra vannak szétosztva.
 
 -   Általános
--   Toborzás – ez a mező nem szerepel a Dynamics 365 for Talent rendszerben
+-   Toborzás - ez nem része a Dynamics 365 for Talent rendszernek
 -   Kompenzáció
 -   Számsorozatok
 -   Családi okokból történő és a betegszabadságról szóló amerikai törvény (FMLA)
@@ -50,7 +49,7 @@ A **Kompenzáció** lap meghatározza, hogy a felhasználóknak meg kell-e erős
 ### <a name="previously-released-functionality"></a>Korábban kiadott funkciók
 A **Számsorozat** lapon található beállítások határozzák meg a sorozatokat, amelyek a rendszer az azonosítók automatikus hozzárendelésekor használ az emberi erőforrások tételeihez (például pályázatok, távolléti regisztrációk, kompenzációs folyamatok eredményei, esetszámok, tanfolyamok és tanfolyami napirendek). A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (kattintson a **Szervezet felügyelete** &gt; **Számsorozatok** &gt; **Számsorozatok** lehetőségre).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Ha Dynamics 365 for Talent rendszert használ
+### <a name="if-youre-using-dynamics-365-for-talent"></a>A Dynamics 365 for Talent használata esetén
 A **Számsorozat** lapon található beállítások határozzák meg a sorozatokat, amelyek a rendszer az azonosítók automatikus hozzárendelésekor használ az emberi erőforrások tételeihez (például pályázatok, távolléti regisztrációk, kompenzációs folyamatok eredményei, esetszámok, tanfolyamok és tanfolyami napirendek). A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (kattintson a **Rendszerfelügyelet** &gt; **Hivatkozások lap** &gt; **Számsorozatok** &gt; **Számsorozatok** lehetőségre). 
 
 Az **FMLA** lapon található beállítások határozzák meg, mennyi órát kell egy alkalmazottnak dolgoznia, hogy jogosult legyen az FMLA-juttatásokra, a jogosultsághoz szükséges munkaviszony hosszát, illetve a munkaviszony kezdő dátumát, amely munkaviszony hosszának meghatározásához szükséges. Szintén ezek a beállítások határozzák meg az FMLA-órák számát, amelyekre az alkalmazottak jogosultak, illetve az FMLA-távolléti naptárat, amellyel kiszámítható, hogy mennyi FMLA-órát használtak fel az alkalmazottak. Az **FMLA** lap csak Egyesült Államokban működő vállalatok számára érhető el. 
@@ -61,7 +60,6 @@ Az **FMLA** lapon található beállítások határozzák meg, mennyi órát kel
 --------
 
 [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

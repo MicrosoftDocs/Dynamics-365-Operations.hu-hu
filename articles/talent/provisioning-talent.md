@@ -1,13 +1,13 @@
 ---
-title: "Talent üzembe helyezése"
-description: "Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 for Talent számára."
+title: Talent üzembe helyezése
+description: Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 for Talent számára.
 author: rschloma
 manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304732"
 ---
-# <a name="provision-talent"></a>Talent üzembe helyezése
+# <a name="provision-talent"></a>A Talent létesítése
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Az LCS a Talent kezelésére való használatához előbb egy LCS-projektet kell
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Talentre való előfizetéshez használt.
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
 3. Válassza a **Microsoft Dynamics 365 for Talent** terméknévként és termékverzióként.
-4. Válassza a **Dynamics 365 for Talent** módszert.
+4. A **Dynamics 365 for Talent** frissítési módszertan kiválasztása.
 5. Válassza a **Létrehozása** lehetőséget.
 
 A Talent használatának megkezdésével kapcsolatos tudnivalókhoz lásd az új projektben létrehozott **Talent** módszert. Miután elkészült a projekt létrehozása, hajtsa végre a következő eljárást a Talent környezetének létesítéséhez.
@@ -79,7 +79,7 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
  
    **Alapértelmezett PowerApps környezetek** Bár minden bérlő számára automatikusan megtörténik az alapértelmezett PowerApps környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a PowerApps környezethez, és a PowerApps vagy Flow integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
    
-   <strong>Tesztkörnyezetek</strong> A „TestDrive – alias@domain” névvel rendelkező környezetek 60 napos lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet.
+   <strong>Tesztkörnyezetek</strong> A „TestDrive – alias@domain’” névvel rendelkező környezetek 60 napos lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet.
    
    **Nem támogatott régiók** Jelenleg a Talent csak az alábbi területeken támogatott: Egyesült Államok, Európa és Ausztrália.
   
@@ -87,5 +87,4 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
  
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
 Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak azonban kifejezett módon engedélyezni kell a hozzáférést. Ha hozzáférést szeretne adni, [fel kell vennie a felhasználókat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users), és [hozzájuk kell rendelnie a megfelelő szerepköröket](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) az Alapvető HR környezetben. A Talent-et telepítő globális rendszergazdának el kell elindítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást és engedélyezze a hozzáférést más bérlő felhasználók számára is.  Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni.
-
 

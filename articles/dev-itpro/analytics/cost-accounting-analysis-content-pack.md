@@ -1,13 +1,13 @@
 ---
-title: "Költségkönyvelési elemzés Power BI-tartalom"
-description: "Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: Költségkönyvelés elemzése Power BI-tartalom
+description: Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347445"
 ---
-
-# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
+# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelés elemzése Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a **Költségkönyvelési elemzés** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör a **Költségkönyvelési elemzés** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -41,19 +40,19 @@ A **Költségkönyvelési elemzés** tartalom segítségével a költségkönyve
 
 A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költségkönyvelési honlap](../../financials/cost-accounting/cost-accounting-home-page.md).
 
-A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. Ha többet szeretne megtudni a hozzáférési szintű biztonságról és a sorszintű biztonságról, lásd: [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI-ban](setup-security-cost-accounting-content-pack.md).
+A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. Ha többet szeretne megtudni a hozzáférési szintű biztonságról és a sorszintű biztonságról, lásd: [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI szolgáltatásban](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 A **Költségkönyvelési elemzés** Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
-Mindenképp töltse le azt a **Költségkönyvelési elemzés** Power BI-tartalmat, amelyik a Microsoft Dynamics 365 Ön által használt verziójához készült.
+Mindenképp töltse le azt a **Költségkönyvelési elemzés** tartalmat, amelyik a Microsoft Dynamics 365 Ön által használt verziójához készült.
 
 > [!NOTE]
 > A KB 4011327 ezen Power BI-tartalom előfeltétele. Miután bejelentkezik az LCS-be, itt érhető el a KB: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
 A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkönyvelési elemzés** Power BI-tartalom megjelenítési formáinak áttekintése található.
 
 | Jelentéslap                      | Diagram                                                                                                                         | Csempe                                          |
@@ -75,7 +74,7 @@ A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrik
 |                                  | Tényleges költség Költségobjektum-dimenziótagnév alapján és Költségelem-dimenziótagnév                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A következő adatokkal tölthetők ki a jelentések oldalau a **Költségkönyvelési elemzés** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
+A következő adatokkal tölthetők ki a jelentések oldalai a **Költségkönyvelési elemzés** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
 A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 
@@ -127,4 +126,3 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
 | Pénzügyi évek                       | Naptári év                                                                                                        |
 | Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
-

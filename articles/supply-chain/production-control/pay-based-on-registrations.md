@@ -1,13 +1,13 @@
 ---
-title: "Fizetési regisztráció alapján"
-description: "Ez a témakör bemutatja, hogyan van kiszámítva a fizetés a dolgozói regisztrációk alapján."
+title: Fizetési regisztráció alapján
+description: Ez a témakör bemutatja, hogyan van kiszámítva a fizetés a dolgozói regisztrációk alapján.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: f36c411ce24dfd8cceacda3d4659ec9a98fd5aa9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321110"
 ---
-
 # <a name="pay-based-on-registrations"></a>Fizetési regisztráció alapján
 
 [!include [banner](../includes/banner.md)]
@@ -600,4 +599,3 @@ Ha a dolgozó munkanapon nem jelenik meg munkaidőben, és nincs tervezett távo
 - Távollét automatikus beillesztése
 
 Amikor egy olyan dolgozó esetében számítják ki a napi regisztrációkat, akinél engedélyezve vannak a rugalmas órák, a **Rugalmasidő-hiány automatikus beillesztése** mezőben megadott távolléti kód lesz alapértelmezett távolléti kódként használva. Ha a dolgozónál a rugalmas órák nem engedélyezettek, a **Távollét automatikus beillesztése** mezőben megadott távolléti kód kerül használatra. Ha egy vállalatnál olyan dolgozók is találhatók, akiknél engedélyezettek a rugalmas órák, és olyanok is,a kiknél a rugalmas órák nem engedélyezettek, mindkét paramétert be kell állítani.
-

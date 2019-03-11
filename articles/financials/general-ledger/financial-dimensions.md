@@ -1,13 +1,13 @@
 ---
-title: "Pénzügyi dimenziók"
-description: "Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját."
+title: Pénzügyi dimenziók
+description: Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ems.prod: 
+ems.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: shylaw
@@ -16,15 +16,14 @@ ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317545"
 ---
-
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Használja a **Pénzügyi dimenziók** oldalt pénzügyi dimenziók létrehozás
 
 A pénzügyi dimenziók létrehozása után használja a **Pénzügyi dimenzióértékek** oldalt, és rendeljen hozzá további tulajdonságokat az egyes pénzügyi dimenziókhoz.
 
-A pénzügyi dimenziók segítségével jogi személyek képezhetők le. A jogi személyeket nem kell létrehozni a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. Ugyanakkor a pénzügyi dimenziókat nem a jogi személyek üzemi vagy üzleti követelményeinek teljesítésére tervezték. A Microsoft Dynamics 365 for Finance and Operations rendszerben a Egységközi könyvelés funkció csak az egyes tranzakciók által létrehozott könyvelési tételek kezelését szolgálja.
+A pénzügyi dimenziók segítségével jogi személyek képezhetők le. Nem kell jogi személyeket létrehozni a Microsoft Dynamics 365 for Finance and Operations rendszerben. Ugyanakkor a pénzügyi dimenziókat nem a jogi személyek üzemi vagy üzleti követelményeinek teljesítésére tervezték. A Microsoft Dynamics 365 for Finance and Operations rendszerben a Egységközi könyvelés funkció csak az egyes tranzakciók által létrehozott könyvelési tételek kezelését szolgálja.
 
 Jogi személyiséggel rendelkező pénzügyi dimenziók beállítása előtt a következő területeken értékelje ki az üzleti folyamatait annak meghatározására, hogy ez a beállítás működik-e a szervezete esetében:
 
@@ -141,4 +140,3 @@ További információ a következő témakörökben olvasható:
 
 - [Pénzügyi dimenziók meghatározása](tasks/define-financial-dimensions.md)
 - [Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása](tasks/maintain-financial-dimension-default-templates.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Értékcsökkenési könyvek beállítása (2016. május)"
-description: "Ez a feladat-útmutató új értékcsökkenés könyvet hoz létre, illetve azt egy tárgyieszköz-csoporthoz társítja."
+---
+title: Értékcsökkenési könyvek beállítása (2016. május)
+description: Ez a feladat-útmutató új értékcsökkenés könyvet hoz létre, illetve azt egy tárgyieszköz-csoporthoz társítja.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1fd53ea1dff9b116d19c525c5d6967ece0993b6f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355564"
 ---
 # <a name="set-up-depreciation-books-may-2016"></a>Értékcsökkenési könyvek beállítása (2016. május)
 
@@ -55,5 +55,4 @@ Ez a feladat-útmutató új értékcsökkenés könyvet hoz létre, illetve azt 
 5. Válassza ki valamelyik lehetőséget az Értékcsökkenési szabály mezőben.
 6. Adjon meg egy számot az Élettartam mezőben.
     * Figyelje meg, hogy az Értékcsökkenési időszakok mező értéke az Élettartam beállítását követően kerül kiszámításra.  
-
 

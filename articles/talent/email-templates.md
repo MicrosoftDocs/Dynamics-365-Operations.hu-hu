@@ -1,14 +1,14 @@
 ---
 title: E-mail-sablonok
-description: "Ez a témakör ismerteti a Microsoft Dynamics 365 for Talent - Attract e-mailsablonjait, amelyeket létrehozhat és használhat."
+description: Ez a témakör ismerteti a Microsoft Dynamics 365 for Talent - Attract e-mail-sablonjait, amelyeket létrehozhat és használhat.
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304727"
 ---
-
-# <a name="email-templates"></a>E-mail-sablonok
+# <a name="email-templates"></a>E-mail sablonok
 [!include[banner](../includes/banner.md)]
 
 Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 for Talent: Attract használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Az Attract egyes e-mailjei automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
@@ -36,7 +35,7 @@ Az e-mail sablontár használatával a rendszergazdák egységes témát és má
 
 ## <a name="global-template-configurations"></a>Globális sablonkonfigurációk
 
-E-mail értesítések emblémájának konzisztens létrehozásához a rendszergazda először be kell vinni globális fejlécbe és láblécbe összes e-mail sablonokat. A felügyeleti központban a **E-mail sablon beállításai** lapon a **Fejléc** szakasz, az Adminisztráció feltöltheti minden e-mailek használni a fejlécben vagy transzparens kép. A kép lehet a vállalat emblémája, fejléce vagy bármelyik másik képe. Azt javasoljuk, hogy a szélesség 25 és 800 képpont közötti lehet, és a magassága 25 és 150 képpont között, mivel ezekre a dimenziókra a legtöbb e-mail ügyfél, például a Microsoft Outlook optimális. A képnek JPEG, JPG, PNG vagy SVG fájlnak kell lennie, és a fájl mérete kisebb, mint 1 megabájt (MB) kell lennie. Kép feltöltése után a fejléc előnézetét létrehozza és jelenik meg. Ha a fejléc képet el kell távolítani vagy ki kell cserélni, a rendszergazda használhatja az **Eltávolítás** elemet az előnézet lehetőség felett.
+E-mail értesítések emblémájának konzisztens létrehozásához a rendszergazda először be kell vinni globális fejlécbe és láblécbe összes e-mail sablonokat. A felügyeleti központban a **E-mail sablon beállításai** lapon a **Fejléc** szakasz, az Adminisztráció feltöltheti minden e-mailek használni a fejlécben vagy transzparens kép. A kép lehet a vállalat emblémája, fejléce vagy bármelyik másik képe. Azt javasoljuk, hogy a szélesség 25 és 800 képpont közötti lehet, és a magassága 25 és 150 képpont között, mivel ezek a dimenziók a legtöbb e-mail-kliens, például a Microsoft Outlook számára is optimálisak. A képnek JPEG, JPG, PNG vagy SVG fájlnak kell lennie, és a fájl mérete kisebb, mint 1 megabájt (MB) kell lennie. Kép feltöltése után a fejléc előnézetét létrehozza és jelenik meg. Ha a fejléc képet el kell távolítani vagy ki kell cserélni, a rendszergazda használhatja az **Eltávolítás** elemet az előnézet lehetőség felett.
 
 A **Lábléc** szakasz, az Adminisztráció teremthet kapcsolatot a cég adatvédelmi kommunikáció és a feltételek. Ezek a hivatkozások be vannak építve egy láblécbe, amely automatikusan létrejön. A lábléc előnézete akkor jelenik meg.
 
@@ -69,7 +68,7 @@ A **Címzett** mezője a sablonnak nem szerkeszthető, mivel már bejelölte a c
 
 Felvehet szereplőket, például **Toborzó** vagy **Felvételi vezető**, a másolat (Cc) sorba. Az e-mail küldésekor a szerepköröket automatikusan felülírják a megfelelő felhasználók, az állás kontextusa alapján.
 
-A tárgysor és a levél tartalma támogatja a helyőrzőket. Helyőrzőket a **\#** beírásával illeszthet be, majd válassza ki a megfelelő helyőrzőt az automatikus legördülő listában. Az elérhető helyőrzők listája megjelenik az oldal jobb oldalán. Az e-mail küldésekor a rendszer automatikusan felülírja a helyörzőket az állás kontextusa és a címzett alapján. Például a pályázónak küldött e-mail sablont tartalmaz ezt a helyőrzőt: \#{Candidate\_Name}. Az e-mail küldésekor a Cameron nevű pályázónak, a helyőrző helyére Cameron neve kerül.
+A tárgysor és a levél tartalma támogatja a helyőrzőket. Helyőrzőket a **\#** beírásával illeszthet be, majd válassza ki a megfelelő helyőrzőt az automatikus legördülő listában. Az elérhető helyőrzők listája megjelenik az oldal jobb oldalán. Az e-mail küldésekor a rendszer automatikusan felülírja a helyörzőket az állás kontextusa és a címzett alapján. Például a pályázónak küldött e-mail sablon tartalmazza ezt a helyőrzőt: \#{Candidate\_Name}. Az e-mail küldésekor a Cameron nevű pályázónak, a helyőrző helyére Cameron neve kerül.
 
 Az e-mail tartalomának szerkesztője rich text szövegszerkesztő, amely lehetővé teszi a szöveg stílusának és formátumának megadását. Ezenkívül lehetővé teszi a hivatkozások és horgonyok beszúrását.
 
@@ -81,4 +80,3 @@ Amikor a felvételi csapat e-mailt küld, használhatja a rendszergazda által l
 
 > [!NOTE] 
 > Az automatikusan küldött e-mailekhez több sablon is létrehozható. Az aktív sablonként azonban csak egy sablon állítható be. Mivel ezt a folyamatot események váltják ki, csak a rendszergazda határozhatja meg, hogy melyik sablont kell használni, az **Alapértelmezett** és **Automatikusan küldött** jelvény kombinációja alapján a sablonkönyvtárban.
-

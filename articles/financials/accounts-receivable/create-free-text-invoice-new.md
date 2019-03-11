@@ -1,13 +1,13 @@
---- 
-title: "Szabadszöveges számlák létrehozása"
-description: "Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni."
+---
+title: Szabadszöveges számlák létrehozása
+description: Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
 ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332242"
 ---
-
 # <a name="create-free-text-invoices"></a>Szabadszöveges számlák létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ A sorok másolása után módosíthatja az adatokat, szükség szerint.
 Szabadszöveges számla sablonól létrehozása is lehetséges. Az **Új sablonból** kiválasztásakor a **Számla** lapon ki lehet választani a sablon nevét és az új szabadszöveges számlához kapcsolódó vevőszámlát. Alapértelmezett értékek, például a fizetési feltételek és a fizetési mód kitölthető a vevőtől, vagy a sablonnal mentett értékek is használhatók.
 
 Ekkor létrejön a szabadszöveges számla, és igény szerint szerkesztheti az értékeket.
-

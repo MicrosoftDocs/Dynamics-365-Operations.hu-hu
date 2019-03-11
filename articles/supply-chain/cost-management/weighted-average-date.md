@@ -1,13 +1,13 @@
 ---
-title: "Dátum szerinti súlyozott átlag"
-description: "A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák."
+title: Dátum szerinti súlyozott átlag
+description: A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355403"
 ---
-
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Ha az adott napon vagy azelőtt csak egy bevételezés történt akkor nem kell 
 
 A rendszerben az alábbi képlet segítségével számítja ki a súlyozott átlagos dátum költségét: 
 
-Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
 A készlet zárása során a számítás minden nap lefut a zárási időszak alatt, ahogy az alábbi ábrán is látható. 
 
@@ -54,7 +53,7 @@ A készletkiadásokat hagyó készlettranzakciók, például az értékesítési
 
 Az elszámolások készletzárási feladások, amelyek módosítják a kiadásokat a záró dátumnak megfelelő helyes súlyozott átlagra. 
 
-**Megjegyzés:** További információkért a kiegyenlítéssel kapcsolatban lásd a készletzárás cikket. A következő példák azt mutatják be, hogy milyen hatást fejt ki a súlyozott átlag öt konfigurációban:
+**Megjegyzés:** További információkért a kiegyenlítéssel kapcsolatban lásd a készletzárás cikket. A következő példák azt mutatják be, hogy milyen hatást fejt ki a súlyozott átlag öt konfigurációban:
 
 -   Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítás nincs aktiválva
 -   Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítás aktiválása nélkül
@@ -195,7 +194,6 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 -   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
-
 
 
 

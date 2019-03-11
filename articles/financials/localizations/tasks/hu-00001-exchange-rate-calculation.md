@@ -1,13 +1,13 @@
---- 
-title: "HU-00001 Árfolyamszámítás"
-description: "Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán."
+---
+title: HU-00001 Árfolyamszámítás
+description: Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 8ab710e2506c2c44f3f44f39f02ed8d8bf4f059e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370888"
 ---
 # <a name="hu-00001-exchange-rate-calculation"></a>HU-00001 Árfolyamszámítás
 
@@ -31,7 +31,7 @@ Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámítás�
 
 Az átváltási árfolyamok naplósorokhoz számíthatók ki. Készpénzes és banki tranzakciókhoz a napi átváltási árfolyam vagy egy átlagos átváltási árfolyam használható. Pénztár és bank naplósorokban az átlagos átváltási árfolyam kiszámításához a könyvelési pénznem és a külföldi pénznem összesített összegei használatosak a tranzakció megadott időpontja előtt.
 
-Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a jogi személy székhelyének országát/régióját Magyarországra állítottuk. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a jogi személy székhelyének országát/régióját Magyarországra állítottuk. Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 1. Ugorjon a Főkönyv > Naplóbejegyzések > Általános naplók pontra.
 2. Kattintson az Új lehetőségre.
@@ -46,11 +46,9 @@ Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a 
     * Használhatja az „USD” értéket.  
 11. Kattintson a Funkciók elemre.
 12. Kattintson az Árfolyam-számítási szabályok lehetőségre.
-13. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+13. Adjon meg egy dátumot a Kezdő dátum mezőben.
     * Válasszon ki egy tranzakciódátumot egy időszak meghatározásához. A rendszer azokat a főkönyvi tranzakciókat veszi figyelembe az átlagos árfolyam számításánál, amelyek tranzakciódátumai az ezen mezőbe beírt dátumra esnek vagy azt követik, valamint a naplósor tranzakciódátumánál korábbiak. Ha ezt a mezőt üresen hagyja, a rendszer a számítás során figyelembe veszi mindazokat a főkönyvi tranzakciókat, amelyek tranzakciódátuma a naplósor tranzakciódátuma elé esik.  
 14. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
     * Majd a Belefoglalandó rekordok fül használatával állítson be kiválasztási feltételeket az átváltási árfolyam számításában szerepeltetni kívánt sorokhoz. Ha nem állít be kiválasztási feltételeket a Szűrő űrlapon, a kiválasztott számítási módszer kerül felhasználásra az aktuális naplóban lévő minden sorhoz.  
 15. Kattintson az OK gombra.
-
 

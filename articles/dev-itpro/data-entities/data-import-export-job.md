@@ -1,13 +1,13 @@
 ---
-title: "Adatimportálási és -exportálási feladatok"
-description: "Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat."
+title: Adatimportálási és -exportálási feladatok
+description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360210"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Adatimportálási és -exportálási feladatok
 
 [!include [banner](../includes/banner.md)]
 
-Adatimportálási és -exportálási feladatok létrehozásához és kezeléséhez a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használja az **Adatkezelés** munkaterületet. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
+A Microsoft Dynamics 365 for Finance and Operations rendszerben az **Adatkezelés** munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
 > [!NOTE]
 > Ez a témakör feltételezi, hogy már ismeri az [adatentitásokat](data-entities.md).
@@ -158,4 +157,3 @@ Az előkészítési táblák adattisztítását elvégezheti **Az előkészíté
 - **Adatprojektek** – Ha csak egy adatprojekt van kiválasztva, a rendszer az összes entitás összes rekordját törli az összes feladatra nézve a kiválasztott adatprojektben.
 
 A lehetőségek kombinálásával tovább korlátozhatja a törölt rekordkészletet.
-

@@ -1,13 +1,13 @@
 ---
-title: "Részlegesen foglalt átmozgatási rendelések kötegelt kiadása"
-description: "Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja mobileszközről a részlegesen foglalt átmozgatási rendelések kötegelt kiadását."
+title: Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
+description: Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja mobileszközről a részlegesen foglalt átmozgatási rendelések kötegelt kiadását.
 author: pjacobse
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 578b9875deec077a077b54a9227815e2c4fd3b2d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 4477749c721cf8c8bd244f551d9eca7ec9449fd1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343719"
 ---
-
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
 [!include [banner](../includes/banner.md)]
@@ -65,4 +64,3 @@ A **Mennyiség** paraméter határozza meg, hogy a teljes mennyiséget vagy a t�
 -   Az átmozgatási rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Átmozgatási rendelések automatikus kiadása** elemre.
 
 -   Az értékesítési rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Értékesítési rendelések automatikus kiadása** elemre.
-

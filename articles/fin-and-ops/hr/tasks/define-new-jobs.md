@@ -1,13 +1,13 @@
---- 
-title: "Új feladatok meghatározása"
-description: "Ez a feladat új feladat létrehozását célozza."
+---
+title: Új feladatok meghatározása
+description: Ez a feladat új feladat létrehozását célozza.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abb85b1e8d9bc7386bf2d2f059b78faff9933f5c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347928"
 ---
 # <a name="define-new-jobs"></a>Új feladatok meghatározása
 
@@ -57,7 +57,7 @@ Ez a feladat új feladat létrehozását célozza. Manuális bevitellel és sabl
 21. Keresse meg és jelölje ki a kívánt rekordot a listán.
 22. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 23. Váltsa át a Képzettségek szakasz kibontását.
-    * Ne feledje, hogy a Szakértelem, a Végzettség és a Tanúsítványok gyorslap mezői üresek. Adatok beosztássablonból történő másolása után az ezekben a mezőkben szereplő adatok egy lépésben megadhatók.   
+    * Ne feledje, hogy a Szakértelem, a Végzettség és a Tanúsítványok gyorslap mezői üresek. Adatok beosztássablonból történő másolása után az ezekben a mezőkben szereplő adatok egy lépésben megadhatók.   
 24. Kattintson a Mentés gombra.
 25. Kattintson a Másolás innen pontra.
 26. Kattintson a Másolás sablonból pontra.
@@ -70,5 +70,4 @@ Ez a feladat új feladat létrehozását célozza. Manuális bevitellel és sabl
 32. Váltsa át a Tanúsítványok szakasz kibontását.
 33. Váltsa át a Végzettségek szakasz kibontását
 34. Kattintson a Mentés gombra.
-
 

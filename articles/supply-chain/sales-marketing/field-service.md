@@ -1,37 +1,36 @@
 ---
-title: "Integráció a Microsoft Dynamics 365 for Field Service szolgáltatással"
-description: "Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Field Service szolgáltatással való integrációról."
+title: Integráció a Microsoft Dynamics 365 for Field Service rendszerrel
+description: Ez a témakör a Microsoft Dynamics 365 for Field Service szolgáltatással való integrációról nyújt áttekintést.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377878"
 ---
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integráció a Microsoft Dynamics 365 for Field Service szolgáltatással
+# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integráció a Microsoft Dynamics 365 for Field Service rendszerrel
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations lehetővé teszik az üzleti folyamatok szinkronizálását a Finance and Operations és a Microsoft Dynamics 365 for Field Service között. Az integrációs forgatókönyvek konfigurálása bővíthető adatintegrációs sablonok és a Common Data Service (CDS) segítségével történik az üzleti folyamatok szinkronizálása érdekében.
+A Microsoft Dynamics 365 for Finance and Operations lehetővé teszi a Finance and Operations és Microsoft Dynamics 365 for Field Service közti üzleti folyamatok szinkronizálását. Az integrációs forgatókönyvek konfigurálása bővíthető adatintegrációs sablonok és a Common Data Service (CDS) segítségével történik az üzleti folyamatok szinkronizálása érdekében.
 Szabványos sablonok használhatók egyéni integrációs projektek létrehozására, ahol további szabványos és egyéni mezők, valamint entitások is leképezhetők az integráció módosítására és az üzleti igények teljesítésére. 
 
 A field service integráció a meglévő Potenciális vevő készpénzre váltása funkcióra épül.
@@ -46,25 +45,9 @@ A Field Service és a Finance and Operations közötti integráció első fázis
 - [Finance and Operations-munkarendelések Field Service vevői rendelésekké](field-service-work-order.md)
 - [Finance and Operations-számlák Field Service szabadszöveges számlákká](field-service-invoice.md)
 
-A Field Service és a Finance and Operations közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót [Munkarendelések szinkronizálása a Microsoft Dynamics 365 integrációval](https://www.youtube.com/watch?v=46ylO7raZAo).
+A Field Service és a Finance and Operations közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót: [Munkarendelések szinkronizálása a Microsoft Dynamics 365 integrációval](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
-A Field Service integráció a következő verziókat támogatja:
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations 8.0-es verzió (2018. április) vagy újabb
-
-- A Dynamics 365 for Finance and Operations 8.0 verziója (2018. április) 2018 áprilisában jelent, meg, az alkalmazás buildszáma 8.0.30.8020, 15-ös platformfrissítés (7.0.4841.35234). 
-
-## <a name="system-requirements-for-field-service"></a>A Field Service rendszerkövetelményei
-A Field Service integrációs megoldás használatához telepítenie kell a következő összetevőket:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 vagy újabb
-
-- Dynamics 365 for Field Service, verzió: 1612 (9.0.1.733) (DB 9.0.1.733) online vagy későbbi verzió.
-- A potenciális ügyfelek készpénzre váltása (P2C) megoldás Dynamics 365 szolgáltatáshoz, 1.15.0.1 vagy későbbi verzió. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)-ból.
-- Field Service integrációs megoldás Dynamics 365-höz, 1.0.0.0 vagy későbbi verzió.. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration)-ból.
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integráció a Microsoft Dynamics 365 for Field Service alkalmazással, beleértve a készlet és a projekt adatait
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integráció a Microsoft Dynamics 365 for Field Service szolgáltatással, beleértve a készlet- és a projektadatokat
 
 A második fázisban a további funkciók célja, hogy a szerviztechnikusok betekintést kapjanak a készletinformációkba a Finance and Operations alkalmazásban, így lehetőségük legyen a készletszintek frissítése és anyagmozgatásra. Ezenkívül az eladott áruk karbantartásával és telepítésével foglalkozó vállalatok számára előnyt jelent az, hogy jobban kezelhetik a teljes értékesítési és szervizfolyamatot, illetve rálátást kapnak arra a projektintegrációnak köszönhetően.
 
@@ -73,8 +56,8 @@ A második fázisban a további funkciók célja, hogy a szerviztechnikusok bete
 - Aktuálisan készlettel kapcsolatos információk
 - Készletátvitelek
 - Készlethelyesbítések
-- A Dynamics 365 for Finance and Operations projektek össze vannak kapcsolva a Dynamics 365 for Field Service munkarendelésekkel
-- A Dynamics 365 for Field Service munkarendelések, amelyek kapcsolva vannak a Dynamics 365 for Finance and Operations projektekhez ezt a projektszámot rendelik a Dynamics 365 for Finance and Operations étékesítési rendelésekhez, hogy lehetséges legyen a számlázás a projektből. 
+- Dynamics 365 for Finance and Operations projektek a Dynamics 365 for Field Service munkarendelésekhez kapcsolva
+- A Dynamics 365 for Field Servicemunkarendelések, amelyek hivatkozással rendelkeznek Dynamics 365 for Finance and Operations projektekre, alkalmazzák ezt a projektszámot a Dynamics 365 for Finance and Operations értékesítési rendelésre, amelyek így számlázhatók a projektből. 
 
 ![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSv2overview.png)
 
@@ -87,15 +70,16 @@ A második fázisban a további funkciók célja, hogy a szerviztechnikusok bete
 - Munkamegrendelések projekttel (Fin and Ops – Field Service) - Munkarendelések a Field Service alkalmazásból értékelési rendelésekbe a Finance and Operations alkalmazásba projekttámogatással [Speciális lekérdezés] 
 - Filed Srevice termékek készletegységgel(Fin and Ops – Sales) - Finance and Operations „Értékesíthető kiadott termékek” a Field Service, Értékesítési „termékeibe” beleértve a raktáregységet is 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
+## <a name="system-requirements"></a>Rendszerkövetelmények
+
+### <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
 A Field Service integráció a következő verziókat támogatja:
 
-- A Dynamics 365 for Finance and Operations 8.1.2 verziója (2019. december) 2019 decemberében jelent, meg, az alkalmazás buildszáma 8.1.195, 22-ös platformfrissítés (7.0.5095). 
+- Dynamics 365 for Finance and Operations 8.1.2-es verziója (2019. december) 2019. decemberben jelent meg, az alkalmazás buildszáma pedig 8.1.195, valamint Platform Update 22 (7.0.5095). 
 
-## <a name="system-requirements-for-field-service"></a>A Field Service rendszerkövetelményei
+### <a name="system-requirements-for-field-service"></a>A Field Service rendszerkövetelményei
 A Field Service integrációs megoldás használatához telepítenie kell a következő összetevőket:
 
-- Field Service for Dynamics 365 (8.2.0.286 verzió) vagy újabb verzió Dynamics 365 9.1.x példányon - 2018. novemberében kiadva
-- A potenciális ügyfelek készpénzre váltása (P2C) megoldás Dynamics 365 szolgáltatáshoz, 1.15.0.1 vagy későbbi verzió. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)-ból.
-- „Field Service Integration, Project and Inventory” megoldás Dynamics 365-höz, 2.0.0.0 vagy későbbi verzió. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2)-ból.
-
+- Field Service for Dynamics 365 (8.2.0.286-os verzió) vagy újabb verziója a Dynamics 365 9.1.x – 2018. novemberben kiadott verzióján
+- A potenciális ügyfelek készpénzre váltása (P2C) megoldás Dynamics 365 szolgáltatáshoz, 1.15.0.1 vagy későbbi verzió. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) felületéről.
+- „Field Service Integration, Project and Inventory” megoldás Dynamics 365-höz, 2.0.0.0 vagy későbbi verzió. A megoldás letölthető az [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2) felületéről.

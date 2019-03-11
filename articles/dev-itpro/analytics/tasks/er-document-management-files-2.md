@@ -1,13 +1,13 @@
---- 
-title: "ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész – Adatmodell kibővítése)"
-description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben."
+---
+title: ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész – Adatmodell kibővítése)
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320949"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész: Adatmodell kibővítése)
 
@@ -31,7 +31,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 
 A lépések végrehajtásához először végre kell hajtania az „ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész: Adatmodell előkészítése)” feladat-útmutató lépéseit.
 
-Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 
 ## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a>Az adatmodell kibővítése a benne található Dokumentumkezelés fájlok megjelenítéséhez
@@ -58,7 +58,7 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operat
 17. A Cikktípus mezőben válassza ki a „Karakterlánc” lehetőséget.
 18. Kattintson a Hozzáadás gombra.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Az új adatmodellelemek leképezése a Dynamics 365 for Finance and Operations Enterprise kiadás adatforrásokra
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Az új adatmodellelemek leképezése a Dynamics 365 for Finance and Operations, Enterprise kiadás adatforrásokra
 1. Kattintson a Modell hozzárendelése adatforráshoz gombra.
 2. A gyorsszűrő használatával keresse meg azokat a rekordokat, ahol a Definíció mezőben az „InvoiceCustomer” érték szerepel.
     * InvoiceCustomer  
@@ -91,5 +91,4 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operat
 25. Kattintson az Állapot módosítása elemre.
 26. Kattintson a Befejezés gombra.
 27. Kattintson az OK gombra.
-
 

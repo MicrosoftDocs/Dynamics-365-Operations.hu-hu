@@ -1,13 +1,13 @@
---- 
-title: "Fő számla létrehozása"
-description: "A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlatükörhöz."
+---
+title: Fő számla létrehozása
+description: A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlatükörhöz.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5fd332121bae2be55ada39b33e5f381096c9b74d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331575"
 ---
 # <a name="create-a-main-account"></a>Fő számla létrehozása
 
@@ -35,7 +35,7 @@ A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlat
 4. Írjon be egy értéket a Név mezőbe.
 5. A Fő számla típusa mezőben válasszon ki egy olyan típust, amely leginkább bemutatja a számlaegyenleget és a pénzügyi kimutatások helyét.
 6. A listában válassza ki azt a számlakategóriát, amelyhez a fő számla tartozik.
-    * A számlakategóriát az alapértelmezett pénzügyi jelentésekhez és az Power BI irányítópultjának tartalmához használhatja.  
+    * A számlakategóriát az alapértelmezett pénzügyi jelentésekhez és a Power BI irányítópultjának tartalmához használhatja.  
 7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Módosítsa az alapértelmezett tartozási vagy követelési egyenleget.  
 8. Az Alapértelmezett pénznem mezőben válasszon ki egy értéket a pénznemek listájából.
@@ -53,5 +53,4 @@ A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlat
 20. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 21. A Pénznem átszámítási típusa mezőben válassza ki a számlához tartozó átváltási árfolyamok számításához használt módszert.
 22. Zárja be a lapot.
-
 

@@ -1,32 +1,31 @@
 ---
-title: "Biztonsági készlet teljesítése cikkek számára"
-description: "Ez a témakör bemutatja a biztonsági készlet teljesítését és a biztonsági készletmennyiség beállítását cikkek számára."
+title: Biztonsági készlet teljesítése cikkek számára
+description: Ez a témakör bemutatja a biztonsági készlet teljesítését és a biztonsági készletmennyiség beállítását cikkek számára.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341534"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Biztonsági készlet teljesítése cikkek számára
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ A biztonsági készlet követelmény-tranzakciójának teljesítése elveszti pr
 Az Alaptervezés fedezeti időszaka során a biztonsági készlet feltöltése visszanyeri prioritását. Az aktuális készlet minden egyéb igénytípus előtt használható. A késleltetés számítása során egy új logika adódik hozzá a késleltetett értékesítési sorokhoz, anyajegyzéksor-követelményekhez, és minden egyéb igénytípushoz, hogy meghatározza, hogy ezek időben történő kiszállítása lehetséges-e a biztonsági készlet használatával. Ha a rendszer arra az eredményre jut, hogy a biztonsági készlet használatával minimalizálhatja a késéseket, akkor az értékesítési-, illetve anyajegyzéksorok a kezdeti fedezetüket a biztonsági készletre cserélik, és a rendszer a biztonsági készlet feltöltését indítja el.
 
 Ha a terv vagy a cikk nem késleltetett számításra van beállítva, akkor a biztonsági készlet megszorítás ugyanolyan prioritást élvez, mint bármelyik más keresettípus. Ez azt jelenti, hogy van egy aktuális-, és egyéb elérhető készletből álló tartalék más keresettípusok előtt.
-

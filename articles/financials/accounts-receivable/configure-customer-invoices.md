@@ -1,13 +1,13 @@
 ---
-title: "Vevői számla létrehozása"
-description: "Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad."
+title: Vevői számla létrehozása
+description: Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
 ms.openlocfilehash: 6d7c9a61f935503b74ac27b354c875df095d84b4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365270"
 ---
-
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,7 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 <ul>
 <li><strong>Szállítás most</strong> – A <strong>Szállítás most</strong> mezőben megadott összes mennyiség kijelölése. Ezzel a beállítással részleges rendelést lehet megerősíteni vagy szállítani.</li>
 <li><strong>Kitárolt</strong> – A már kitárolt mennyiségek kiválasztása.</li>
-<li><strong>Minden</strong> – Az aktuális dokumentumtípussal még nem frissített összes értékesítési rendelési mennyiség kijelölése.</li>
+<li><strong>Összes</strong> – Az aktuális dokumentumtípussal még nem frissített összes értékesítési rendelési mennyiség kijelölése.</li>
 <li><strong>Csomagolási elismervény</strong> – A csomagjegyzéken szereplő összes, még nem frissített mennyiség kijelölése.</li>
 <li><strong>Kitárolt mennyiség és nem raktározott termékek</strong> – Jelölje be az összes, már kitárolt mennyiséget és az összes nem raktározott termékmennyiséget.</li>
 </ul></td>
@@ -100,7 +99,7 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 <td>Feladás</td>
 <td><ul>
 <li>Jelölje be ezt az opciót az értékesítési rendelés naplózásához.</li>
-<li>Számviteli számla értékesítési rendelés nyomtatásához törölje ezt az opciót. <strong>Megjegyzés:</strong> Ha megállapodott a fizetési ütemezésről, akkor az nem látható a számviteli számla értékesítési rendelésen. A fizetési ütemezések csak magán az értékesítési rendeléseken láthatóak.</li>
+<li>Számviteli számla értékesítési rendelés nyomtatásához törölje ezt az opciót. <strong>Megjegyzés</strong>: Ha megállapodott a fizetési ütemezésről, akkor az nem látható a számviteli számla értékesítési rendelésen. A fizetési ütemezések csak magán az értékesítési rendeléseken láthatóak.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -163,7 +162,6 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 </tr>
 </tbody>
 </table>
-
 
 
 

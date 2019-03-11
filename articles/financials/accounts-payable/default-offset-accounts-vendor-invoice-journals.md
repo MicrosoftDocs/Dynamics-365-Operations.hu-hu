@@ -1,13 +1,13 @@
 ---
-title: "Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára"
-description: "A jelent témakör segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz."
+title: Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára
+description: A jelent témakör segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f876e5dfdab67dd98b2449993c3ba2baacde1587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 90b24e8e00a78c122e0f7c712a694c9c62bd4824
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320259"
 ---
-
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 <td>Ezt a lehetőséget akkor használja, ha általában azonos típusú elemeket szokott fizetni, ugyanazoktól a szállítóktól.</td>
 </tr>
 <tr class="odd">
-<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Válassza ki a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhatók meg alapértelmezett ellenszámlák a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
+<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Válassza ki a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlajegyzék</strong> vagy <strong>Jóváhagyás</strong>.</td>
 <td><ul>
 <li>Naplófejléc, amely a naplónevet használja.</li>
 <li>Naplóbejegyzések a naplókban, amelyek a naplónevet használják</li>
@@ -78,7 +77,7 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 <td>Az opció segítségével naplókat állíthat be meghatározott költségekre és kiadásokra, amelyek bizonyos számlákat terhelnek, függetlenül attól, hogy ki a szállító vagy mely szállítói csoporthoz tartozik.</td>
 </tr>
 <tr class="even">
-<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Törölje a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhatók meg alapértelmezett ellenszámlák a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
+<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Törölje a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlajegyzék</strong> vagy <strong>Jóváhagyás</strong>.</td>
 <td><ul>
 <li>Napló fejléce</li>
 <li>Naplóbejegyzések a naplókban, amelyek a naplónevet használják</li>
@@ -87,14 +86,13 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 <td>Használja ezt az opciót az alapértelmezett számlák beállításához, amelyeket akkor használ, amikor az alapértelmezett szállítói ellenszámla nincs hozzárendelve.</td>
 </tr>
 <tr class="odd">
-<td><strong>Napló fejléce</strong> – Állítson be alapértelmezett ellenszámlát egy naplóhoz, amelyet alapértelmezett bejegyzésként használhat a napló bizonylat oldalakon. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a napló fejlécén, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
+<td><strong>Napló fejléce</strong> – Állítson be alapértelmezett ellenszámlát egy naplóhoz, amelyet alapértelmezett bejegyzésként használhat a napló bizonylat oldalakon. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a napló fejlécén, ha a naplónevek naplótípusa <strong>Számlajegyzék</strong> vagy <strong>Jóváhagyás</strong>.</td>
 <td>A napló naplóbejegyzések a naplóban</td>
 <td>Az alapértelmezett ellenszámla egy naplóhoz alapértelmezett bejegyzésként használatos a napló bizonylat oldalakon.</td>
 <td>A beállítás segítségével felgyorsítható az adatbevitel, ha a naplóban lévő legtöbb bejegyzés ugyanazzal az ellenszámlával rendelkezik.</td>
 </tr>
 </tbody>
 </table>
-
 
 
 

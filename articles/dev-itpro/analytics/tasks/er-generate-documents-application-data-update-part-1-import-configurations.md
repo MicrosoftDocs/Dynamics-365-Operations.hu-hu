@@ -1,13 +1,13 @@
---- 
-title: "Konfigurációk importálása alkalmazásadatokkal rendelkező dokumentumok létrehozásához"
-description: "A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit."
+---
+title: Konfigurációk importálása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
+description: A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340798"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Konfigurációk importálása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 
@@ -75,5 +75,4 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 29. A fastruktúrában válassza ki ezt: „File”.
     * Tekintse át az Intrastat-jelentés elkészítéséhez használt formátum szerkezetét. Megjegyzés: úgy van tervezve, hogy létrehozzon egy XML-fájlt az adatok feltöltésével az adatmodellből, amelynek az alapja „A kimenő dokumentumok” gyökérelem. Győződjön meg arról, hogy a létrehozott fájl neve meg van-e adva a felhasználói párbeszédpanel űrlapon (erre az 'fn"adatforrás szolgál).   
 30. Zárja be a lapot.
-
 

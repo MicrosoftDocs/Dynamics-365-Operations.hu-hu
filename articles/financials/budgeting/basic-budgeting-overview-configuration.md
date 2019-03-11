@@ -1,13 +1,13 @@
 ---
-title: "Költségvetés áttekintése"
-description: "Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben."
+title: Költségvetés áttekintése
+description: Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332311"
 ---
-
 # <a name="budgeting-overview"></a>Költségvetés-készítés áttekintése 
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ A jogi személy számára jóváhagyott költségvetés egy dokumentumban van ve
 Többféle módszer létezik költségvetésitételjegyzék-bejegyzések létrehozására a Finance and Operations rendszerben:
 
 -   Manuálisan adja meg a dokumentum adatait a **Költségvetésjegyzék bejegyzés** oldalon.
--   Használja a Microsoft Excel sablont amelyet a **Megnyitás Excel fájlban** gomb megnyomásával nyithat meg a **Költségvetésjegyzék bejegyzések** oldalról.
+-   Használja a Microsoft Excel sablont amelyet a **Megnyitás Excel-fájlban** gomb megnyomásával nyithat meg a **Költségvetésjegyzék-bejegyzések** oldalról.
 -   Használja a **Költségvetési számlabejegyzések** adatentitást az Adatkezelés lehetőségben költségvetésjegyzék bejegyzések importálásához. Fontolja meg a módszer használatát és a **Halmazalapú** **feldolgozás** paraméter bekapcsolását, amikor sok költségvetésitételjegyzék-bejegyzést kell importálni a rendszerbe.
 -   Ha a vállalat Költségvetési tervezés funkciót használ a költségvetési adatok előkészítéséhez, akkor használhatja a **Költségjegyzék bejegyzés generálása** időszakos folyamatot.
 
@@ -80,7 +79,6 @@ A költségvetés-kezelő tekintheti meg a költségvetés aktuális állapotát
 A **tényleges és költségvetési érték összevetése** lekérdezési lap lehetővé teszi a költségvetés-tényleges összegek és részletesen. Válasszon ki egy sort a lekérdezési lapon, és kattintson a **időszaki egyenlegek** pénzügyi időszakok közötti terjednek költségvetés és a tényleges összegek megtekintéséhez. A **költségvetési számlabejegyzések** lap megjeleníti a részletező szeretné a költségvetési tételjegyzék-bejegyzések költségvetési összeg részletes adatait. A **általános naplóbejegyzések** lap megnyitása a főkönyvi tranzakciók szerepelnek a számított **tényleges** összege. 
 
 A vállalat által használt költségvetés-tervezési funkció is létrehozása és alkalmazása *költségvetési előrejelzések alapján* a a **főkönyvi költségvetések és az előrejelzések** munkaterület.
-
 
 
 

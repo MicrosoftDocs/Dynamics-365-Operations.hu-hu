@@ -1,13 +1,13 @@
 ---
-title: "Vállalati címtár mobil munkaterület"
-description: "Ez a témakör a Vállalat címtára mobil munkaterületről nyújt tájékoztatást. Ez a munkaterület lehetővé teszi, hogy a felhasználók megtekintsék és felkeressék a szervezet más alkalmazottait."
+title: Vállalati címtár mobil munkaterület
+description: Ez a témakör a Vállalat címtára mobil munkaterületről nyújt tájékoztatást. Ez a munkaterület lehetővé teszi, hogy a felhasználók megtekintsék és felkeressék a szervezet más alkalmazottait.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308621"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Vállalati címtár mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a **Vállalat címtára** mobil munkaterületről nyújt tájékoztatást. A munkaterület lehetővé teszi, hogy a felhasználók megtekintsék és felkeressék a szervezet más alkalmazottait.
 
-A mobil munkaterület a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban használható.
+A mobil munkaterület a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban használható.
 
 ## <a name="overview"></a>Áttekintés
 A **Vállalat címtára** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:
@@ -72,12 +71,12 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
--   [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
 1.  Indítsa el az alkalmazást a mobileszközén.
-2.  Írja be a Microsoft Dynamics 365 URL-jét.
+2.  Adja meg a Microsoft Dynamics 365 URL-címét.
 3.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
 4.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
@@ -91,4 +90,3 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 1.  Válassza ki a **Vállalat címtára** munkaterületet a mobilalkalmazásban.
 2.  Írja be az alkalmazott keresztnevét, vezetéknevét, beosztását vagy részlegét a **Keresés** mezőben a keresés elindításához.
 3.  Válasszon egy alkalmazottat. Megjelenik az **Alkalmazott profilja** lap. Az ezen a lapon megjelenő információ az alkalmazott keresztnevét, vezetéknevét, beosztását és a részlegét tartalmazza.
-

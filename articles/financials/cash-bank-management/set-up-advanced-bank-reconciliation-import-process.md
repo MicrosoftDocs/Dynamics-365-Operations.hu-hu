@@ -1,13 +1,13 @@
 ---
-title: "Továbbfejlesztett banki egyeztetés importálásának beállítása"
-description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz."
+title: Továbbfejlesztett banki egyeztetés importálásának beállítása
+description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a04517de6e7695cd27bbc6e6a825e1ccaac7306
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334565"
 ---
-
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -176,7 +175,6 @@ Az utolsó lépés a banki kivonatok importálásnak tesztelése.
 8.  Kattintson az **OK** gombra.
 
 Ha az importálás sikeres, egy üzenetet fog kapni, amely arról tájékoztatja, hogy sikeresen importálta az ön kivonatát. Ha az importálás nem sikeres, az **Adatok kezelése** munkaterületen, a **Feladatelőzmények** szakaszban, keresse meg a feladatot. Kattintson a feladathoz tartozó **Végrehajtási részletek** lehetőségre, a **Végrehajtási összefoglalás** lap megnyitásához, majd kattintson a **Végrehajtási napló megtekintése** lehetőségre, az importálási hibák megtekintéséhez.
-
 
 
 

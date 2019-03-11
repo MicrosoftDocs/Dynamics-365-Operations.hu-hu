@@ -1,13 +1,13 @@
 ---
-title: "Visszavezetéses költségelszámolás"
-description: "Ez a témakör bemutatja a lean manufacturing során használt visszavezetéses költségelszámolást."
+title: Visszavezetéses költségelszámolás
+description: Ez a témakör bemutatja a lean manufacturing során használt visszavezetéses költségelszámolást.
 author: cvocph
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9fe717752da4c697cf0d896c0d40832330f0d118
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352712"
 ---
-
 # <a name="backflush-costing"></a>Visszavezetéses költségelszámolás
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ A termelési folyamaton kívül eső termékek esetében az anyagjegyzék-szám�
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>A termelési folyamaton alapuló számítás
 
-A Microsoft Dynamics 365 for Finance and Operations lean manufacturing modulja független az útvonalaktól. A termelési folyamatból megadott termékek költségszámítása magán a termelési folyamaton alapulhat. A számítás végrehajtásához előbb egy kanbanszabályt kell létrehozni, amely a terméket a termelési folyamaton kívül adja meg. Ha egy termék több ugyanazon a helyen több termelési folyamatból származhat a számítási dátumon, kiválaszthatja az anyagjegyzék-számítás termelési folyamatát. Az **Alapértelmezett termelési folyamat** lapon beállíthatja az alapértelmezett termelési folyamatot minden egyes cikkhez. Ha ugyanazon termék ugyanazon termelési folyamatánál több, a számítási napon aktív kanbanszabály létezik, a számítás a számításhoz az első aktív kanbanszabályt választja ki.
+A Microsoft Dynamics 365 for Finance and Operations lean manufacturing funkciója útvonalaktól független. A termelési folyamatból megadott termékek költségszámítása magán a termelési folyamaton alapulhat. A számítás végrehajtásához előbb egy kanbanszabályt kell létrehozni, amely a terméket a termelési folyamaton kívül adja meg. Ha egy termék több ugyanazon a helyen több termelési folyamatból származhat a számítási dátumon, kiválaszthatja az anyagjegyzék-számítás termelési folyamatát. Az **Alapértelmezett termelési folyamat** lapon beállíthatja az alapértelmezett termelési folyamatot minden egyes cikkhez. Ha ugyanazon termék ugyanazon termelési folyamatánál több, a számítási napon aktív kanbanszabály létezik, a számítás a számításhoz az első aktív kanbanszabályt választja ki.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Az útvonalon alapuló számítás
 
@@ -122,7 +121,6 @@ Futtasson visszavezetéses költségelszámolást a befejezetlen termelés rends
     -   Minden, a felhasznált anyagra az adott időszakon belül kiszámított közvetett költség kiszámítása és levonása a befejezetlen termelésből történik. A fennmaradó közvetett költség eltérésként kerül feladásra.
 
 5.  Számítsa ki a termelési és az elszámolóár között eltéréseket. Az eltérés kiszámítása költségcsoportonként történik.
-
 
 
 

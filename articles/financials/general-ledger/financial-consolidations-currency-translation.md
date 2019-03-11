@@ -1,14 +1,14 @@
 ---
-title: "énzügyi konszolidáció és devizaátváltás"
-description: "Ez a témakör leírja a pénzügyi konszolidálási és devizaátváltási tranzkaciókat a főkönyvben."
+title: énzügyi konszolidáció és devizaátváltás
+description: Ez a témakör leírja a pénzügyi konszolidálási és devizaátváltási tranzkaciókat a főkönyvben.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354000"
 ---
-
-# <a name="financial-consolidations-and-currency-translation"></a>énzügyi konszolidáció és devizaátváltás
+# <a name="financial-consolidations-and-currency-translation"></a>Pénzügyi konszolidáció és pénznemátváltás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör végigvezeti a konszolidációhoz használt módszereken Microsoft Dynamics 365 for Finance and Operations és a Pénzügyi jelentéskészítés esetében Leírja, kapcsolódó többvállalatos jelentéskészítéssel, összesítéssel, eltávolítással és kisebbség kamattal kapcsolatos eseteket. Azt is bemutatja, hogyan kezelje a különleges helyzeteket, például ha jogi személyek különböző pénzügyi időszakokkal vagy a számlatükörrel rendelkeznek.
+Ez a témakör végigvezeti Önt a megközelítésen, amely mind a Microsoft Dynamics 365 for Finance and Operations és pénzügyi jelentéskészítés a konszolidációhoz használt. Leírja, kapcsolódó többvállalatos jelentéskészítéssel, összesítéssel, eltávolítással és kisebbség kamattal kapcsolatos eseteket. Azt is bemutatja, hogyan kezelje a különleges helyzeteket, például ha jogi személyek különböző pénzügyi időszakokkal vagy a számlatükörrel rendelkeznek.
 
 Ez a témakör a felhasználók és működési tanácsadók számára készült, és azt feltételezi, hogy olvasók általános ismeretekkel rendelkeznek a Finance and Operations and Financial és pénzügyi jelentések terén. Az általános beállítások nincsenek bemutatva.
 
@@ -181,4 +180,3 @@ Az alábbiakban néhány az konszolidációs esetet, amelyeket a Financial repor
 
 ## <a name="generating-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások generálása
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
-

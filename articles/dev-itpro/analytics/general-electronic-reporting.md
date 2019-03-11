@@ -1,13 +1,13 @@
 ---
-title: "Elektronikus jelentés (EJ)"
-description: "Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról."
+title: Elektronikus jelentés (EJ)
+description: Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310806"
 ---
-
 # <a name="electronic-reporting-er"></a>Elektronikus jelentés (EJ)
 
 [!include [banner](../includes/banner.md)]
@@ -36,12 +35,12 @@ Az elektronikus jelentés (ER) olyan eszköz, amelyet bejövő és kimenő elekt
 
 Az ER-motor a fejlesztők helyett az üzleti felhasználóknak készült. Mivel nem kódokat, hanem formátumokat konfigurál, az elektronikus dokumentumok formátumának létrehozása és beállítása gyorsabb és könnyebb.
 
-Az ER jelenleg a TEXT, XML, Microsoft Word dokumentum és OPENXML munkalap-formátumokat támogatja. Azonban egy kiterjesztési felület további formátumok támogatását biztosítja.
+Az ER jelenleg a TEXT, XML, Microsoft Word dokumentumokat és OPENXML munkalap-formátumokat támogatja. Azonban egy kiterjesztési felület további formátumok támogatását biztosítja.
 
 ## <a name="capabilities"></a>Képességek
 Az ER motor a következő képességekkel rendelkezik:
 
-- Egységes, megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Microsoft Dynamics 365 for Finance and Operations rendszerben.
+- Egyetlen megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Microsoft Dynamics 365 for Finance and Operations-ben.
 - A jelentés formátumát elkülöníti jelenlegi Dynamics 365 for Finance and Operations rendszertől. Más szóval a formátum a Dynamics 365 for Finance and Operations különböző verzióiban is használható.
 - Támogatja egy egyéni formátum létrehozását, ami az eredeti formátumon alapul. Emellett képes automatikusan frissíteni az egyéni formátumot, ha változás történik az eredeti formátumban új honosítási/személyre szabási követelmények miatt.
 - Ez válik az elsődleges, szabványos eszközzé a honosítási követelmények támogatására az elektronikus jelentésekben, mind a Microsoft-nál, mind a Microsoft partnereinél.
@@ -170,7 +169,7 @@ Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigur�
 
 Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi Finance and Operations példányból egy adott **LCS-projekt** tárházba. Importálhat továbbá konfigurációkat egy **LCS-projekt** tárházából a Finance and Operations jelenlegi példányába.
 
-A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a Finance and Operations jelenlegi példányába. Vegye figyelembe, hogy ez az adattípus az alábbi Dynamics 365 for Finance and Operations környezetekben érhető el:
+A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a Finance and Operations jelenlegi példányába. Vegye figyelembe, hogy ez a tárhelytípus elérhető a következő Dynamics 365 for Finance and Operations-környezetekben:
 - fejlesztés céljából telepített felhőbeli környezetek (amelyek a csatolt csomagok tesztmodelljeit tartalmazzák)
 - helyileg telepített környezetek (helyszíni vagy helyi üzleti adatok telepítése (LBD))
 
@@ -381,4 +380,3 @@ Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a szárm
 [H honosítási követelményeknek – Elektronikus jelentési konfiguráció létrehozása](electronic-reporting-configuration.md)
 
 [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
-

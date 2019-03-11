@@ -1,37 +1,36 @@
 ---
-title: "A Field Service-ben lévő szerződéses számlák és a Finance and Operations-ben lévő szabadszöveges számlák szinkronizálása"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a szerződéses számlák a Microsoft Dynamics 365 for Field Service és a Microsoft Dynamics 365 for Finance and Operations közötti szinkronizálására használhatók."
+title: A Field Service-ben lévő szerződéses számlák és a Finance and Operations-ben lévő szabadszöveges számlák szinkronizálása
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Field Service szerződési számláinak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333254"
 ---
-
-# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>A Field Service-ben lévő szerződéses számlák és a Finance and Operations-ben lévő szabadszöveges számlák szinkronizálása
+# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a szerződéses számlák a Microsoft Dynamics 365 for Field Service és a Microsoft Dynamics 365 for Finance and Operations közötti szinkronizálására használhatók.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Field Service szerződési számláinak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
@@ -107,4 +106,3 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Szerződéshez kapcsolódő számlák (Field Service - Finance and Operations): számlák sorai
 
 [![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-

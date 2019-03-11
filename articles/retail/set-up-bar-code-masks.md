@@ -1,13 +1,13 @@
 ---
-title: "Vonalkódmaszkok beállítása"
-description: "Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz."
+title: Vonalkódmaszkok beállítása
+description: Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340614"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Vonalkódmaszkok beállítása
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ A vonalkódmaszkok vonalkódok létrehozására és a pénztárnál beolvasott v
 | Alkalmazott         | Az alkalmazott azonosítószámának vonalkódszegmensét jelzi a vonalkódos pénztári bejelentkezésnél. |
 | Vevő         | Az ügyfélazonosító szegmensét jelzi. |
 | Adatbevitel       | *Még nincs megvalósítva.* |
-| Engedmény kódja    | *Értékcsökkentett* a Dynamics 365 for Retail 2017 tavaszi verziójára vonatkozóan. Korábban: Olyan vonalkód engedménykódját jelzi, amellyel engedményt adna egy pénztári tranzakcióhoz. |
+| Engedmény kódja    | *Elavult* a Dynamics 365 for Retail 2017 tavaszi kiadása óta. Korábban: Olyan vonalkód engedménykódját jelzi, amellyel engedményt adna egy pénztári tranzakcióhoz. |
 | Utalványkód      | Olyan vonalkód engedménykódját jelzi, amelynek segítségével engedményt lehet hozzáadni egy kiskereskedelmi rendeléshez. Ez lépett az engedménykód helyébe. |
 | Ajándékutalvány        | Az ajándékutalvány számát jelzi, ha ajándékutalványt ad ki, vagy azzal fizet. |
 | Hűségkártya     | Hűségkártyával rendelkező ügyfél hozzáadása egy tranzakcióhoz – később a hűségkártyával való fizetéseknél használható. |
@@ -84,4 +83,3 @@ A vonalkódokmaszkokat hozzá kell rendelni vonalkódokhoz ahhoz, hogy használn
 5. Kattintson a **Mentés** gombra.
 
 A vonalkódmaszk mostantól a termékek vonalkódjainak létrehozására használható. A fenti lépések példák arra, hogyan hozhat létre vonalkódmaszkokat a termékek számára, de bemutatják azt is, hogyan hozhat létre vonalkódmaszkokat bármely más támogatott vonalkódtípushoz. A vonalkódmaszkokat, -típusokat és -hosszokat az adott környezetéhez kell igazítania.
-

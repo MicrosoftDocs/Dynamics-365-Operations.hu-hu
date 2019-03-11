@@ -1,13 +1,13 @@
 ---
-title: "A kiindulási adatok inicializálása új Retail-környezetekben"
-description: "A cikk a Microsoft Dynamics 365 for Retail inicializálási folyamatának részeként létrehozott adatokat ismerteti."
+title: A kiindulási adatok inicializálása új Retail-környezetekben
+description: A cikk a Microsoft Dynamics 365 for Retail inicializálási folyamatának részeként létrehozott adatokat ismerteti.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327895"
 ---
-
-# <a name="initialize-seed-data-in-new-retail-environments"></a>A kiindulási adatok inicializálása új Retail-környezetekben
+# <a name="initialize-seed-data-in-new-retail-environments"></a>Kiindulási adatok inicializálása új Retail-környezetben
 
 [!include [banner](includes/banner.md)]
 
@@ -40,7 +39,7 @@ Miután megtörtént a Kiskereskedelem megoldás telepítése a Microsoft Dynami
 
 A kiskereskedelmi konfiguráció inicializálásához kövesse az alábbi lépéseket.
 
-1. Indítsa el a Dynamics 365 for Retail klienst.
+1. Indítsa el a Dynamics 365 for Retail ügyfelet.
 2. Kattintson a **Kiskereskedelem** &gt; **Központ beállítása** &gt; **Paraméterek** &gt; **Kiskereskedelmi paraméterek** lehetőségre.
 3. Kattintson az **Inicializálás** lehetőségre.
 
@@ -56,9 +55,9 @@ Az inicializálási a következő alapértelmezett konfigurációs adatokat hozz
 - Csatornajelentések
 - Attribútum metaadatai
 - Entitás-ellenőrzési sablonok
-- Kötegelt feladat a Commerce Data Exchange-munkamenet-előzmények törlésére
+- Kötegelt feladat a Commerce Data Exchange munkamenet-előzményeinek törlésére
 
-Továbbá, a fizetésikártya-iparághoz (PCI) kapcsolódó naplózás engedélyezett a Dynamics 365 for Retail adatbázis esetében.
+Továbbá, a fizetésikártya-iparághoz (PCI) kapcsolódó naplózás engedélyezett a Dynamics 365 for Retail-adatbázis esetében.
 
 > [!NOTE]
 > Nincs lehetőség a Kiskereskedelmi tervezés és ütemezés külön konfigurálására. Ez az opció lehetővé teszi a Kiskereskedelmi tervezés és ütemezés konfigurációjának visszaállítását az alapértelmezett beállításokra.
@@ -70,4 +69,3 @@ Az inicializálás befejezése után konfigurálni kell a kiegészítő kiskeres
 - Kiskereskedelmi csatornák
 - Jegyzékek és eszközök
 - Szortimentek
-

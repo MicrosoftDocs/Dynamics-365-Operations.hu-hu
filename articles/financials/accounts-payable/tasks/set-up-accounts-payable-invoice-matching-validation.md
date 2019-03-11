@@ -1,13 +1,13 @@
---- 
-title: "A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása"
-description: "Ez a felvétel az USMF bemutatócéget használja."
+---
+title: A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
+description: Ez a felvétel az USMF bemutatócéget használja.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 7a26a057b524f162e4b288b88e8c30f7c5db7a45
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346847"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
 
@@ -50,5 +50,4 @@ Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő
 11. Módosítsa a Költségek egyeztetése szakasz bővítését.
 12. A tényleges költségek és a várható költségek, a beszerzési rendelés adatai alapján történő egyeztetéséhez jelölje be a Költségegyeztetés jelölőnégyzetet.
 13. Zárja be a lapot.
-
 

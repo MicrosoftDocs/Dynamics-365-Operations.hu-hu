@@ -1,13 +1,13 @@
 ---
-title: "Projektszerződések"
-description: "Ez a témakör a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations alkalmazásban."
+title: Projektszerződések
+description: Ez a témakör a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektek megrendelői felé történő számlakiállítás módszereit a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310369"
 ---
-
 # <a name="project-contracts"></a>Projektszerződések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations rendszerben.
+Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektek megrendelői felé történő számlakiállítás módszereit a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 A projektszerződés teljesítésére létrehozott projekt típusa határozza meg a megrendelő felé történő számlakiállítás módszerét. A projektszerződés és a hozzá kapcsolódó projekt módosítható, de a projekt típusa nem. 
 
@@ -342,7 +341,6 @@ Amikor létrehozza a projektszerződést, megegyezik, hogy a vevőt minden egyes
 -   Vevői számla létrehozása a projekt során minden naptári hónap végén.
 
 Az első hónapban 800 órák összesen rögzítésre kerülnek a tanácsadók a projekt szerint. A projekthez számlázott irodai kellékek költsége 2 000. Tehát a hónap végén 122 000-re hoz létre számlát, amely úgy kerül kiszámításra, hogy 800 óra, óránkénti 150-el, továbbá 2000 az irodai kellékért.
-
 
 
 

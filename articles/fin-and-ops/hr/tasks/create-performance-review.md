@@ -1,13 +1,13 @@
---- 
-title: "Teljesítmény-áttekintés létrehozása"
-description: "Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját."
+---
+title: Teljesítmény-áttekintés létrehozása
+description: Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338475"
 ---
 # <a name="create-a-performance-review"></a>Teljesítmény-áttekintés létrehozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját. Az eljárás a USMF bemutatócég segítségével lett létrehozva. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját. Az eljárás a USMF bemutatócég segítségével lett létrehozva. Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 1. Kattintson az Alkalmazotti önkiszolgáló rendszerre.
 2. Kattintson az Új ellenőrzés lehetőségre új ellenőrzés létrehozásához.
@@ -79,5 +79,4 @@ Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, �
     * Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.  
 42. Kattintson a Láttamozások fülre.
     * Az ellenőrzést a dolgozó és a vezető láttamozhatja. Ha minden szükséges láttamozás kész, az állapot átáll Befejezett értékre, és többé nem végezhető módosítás.  
-
 

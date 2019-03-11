@@ -1,13 +1,13 @@
 ---
-title: "Sordefiníciók a pénzügyi jelentéstervezőben"
-description: "Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az egyes sorok tartalmait egy pénzügyi jelentésben. A sordefiníciók kombinálhatóak oszlop,- jelentési fa- és jelentési definíciókkal, építőelem-csoportok létrehozásához, amelyek több vállalat által használhatóak."
+title: Sordefiníciók a pénzügyi jelentéstervezőben
+description: Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az egyes sorok tartalmait egy pénzügyi jelentésben. A sordefiníciók kombinálhatóak oszlop,- jelentési fa- és jelentési definíciókkal, építőelem-csoportok létrehozásához, amelyek több vállalat által használhatóak.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350435"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Sordefiníciók a pénzügyi jelentéstervezőben
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az
 Egy sordefiníció legfeljebb 20 000 pénzügyidimenzió-sort és a következő információkat tartalmazhatja:
 
 - Leíró szöveget, amely értelmet ad a jelentésnek szakaszcímek, sorok és terek létrehozásával, például **Készpénz** vagy **Teljes bevétel**
-- Pénzügyi adatokra mutató hivatkozásokat, amelyek tartalmazhatnak a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő dimenzióértékeket
+- Pénzügyi adatokra mutató hivatkozásokat, amelyek tartalmazhatnak a Microsoft Dynamics 365 for Finance and Operations rendszerben szereplő dimenzióértékeket
 
     > [!NOTE]
     > A sordefiníciót beállíthatja úgy, hogy minden alkalommal lekérje az adatokat a pénzügyi dimenziók rendszeréből, amikor a jelentést elkészítik.
@@ -158,9 +157,9 @@ Létrehozhat, és módosíthat betűtípusokat a jelentéséhez. Ezeket a stílu
 
 ### <a name="format-row-text"></a>Sorszöveg formázása
 
-A sordefinícióban meghatározott formázás felülír minden formázást, amely az oszlop- és jelentésdefinícióban van meghatározva. A Formázás eszköztár vezérlőelemei segítségével módosíthatja a szöveg formátumot. Ezek a vezérlők szabványos Microsoft Windows vezérlők.
+A sordefinícióban meghatározott formázás felülír minden formázást, amely az oszlop- és jelentésdefinícióban van meghatározva. A Formázás eszköztár vezérlőelemei segítségével módosíthatja a szöveg formátumot. Ezek a Microsoft Windows rendszerben szokásos szabványos vezérlőelemek.
 
-1. Nyissa meg a módosítandó sordefiníciót a jelentéstervezőben.
+1. A Report Designer alkalmazásban nyissa meg a módosítani kívánt sordefiníciót.
 2. Válassza ki a formázandó cellákat. Több cella kijelöléséhez tartsa lenyomva a Ctrl gombot, amíg kijelöli a cellát.
 3. Kattintson a formátum eszköztári gombjára, hogy alkalmazza. Például, egy sor behúzásához jelölje ki a sort, és kattintson a Behúzás növelése **Behúzás növelése** ![Behúzás növelése](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Behúzás növelése") elemre az eszköztárban.
 
@@ -189,4 +188,3 @@ Hogy megkönnyítse azon oszlopok áttekintését, amelyeken a sordefinícióban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-

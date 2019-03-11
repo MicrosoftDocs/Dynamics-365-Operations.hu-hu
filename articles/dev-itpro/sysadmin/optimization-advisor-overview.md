@@ -1,32 +1,31 @@
 ---
-title: "Optimalizálási tanácsadó"
-description: "Ez a témakör leírja, hogyan használhatja az Optimalizálási tanácsadót a Microsoft Dynamics 365 Finance and Operations optimális konfigurációjának biztosítása érdekében."
+title: Optimalizálási tanácsadó
+description: Ez a témakör leírja, hogyan használhatja az Optimalizálási tanácsadót a Microsoft Dynamics 365 Finance and Operations optimális konfigurációjának biztosítása érdekében.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335623"
 ---
-
 # <a name="optimization-advisor"></a>Optimalizálási tanácsadó
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ A modul helytelen konfigurálása és beállítása hátrányosan befolyásolhat
 
 Az **Optimalizálási tanácsadó** munkaterület egy olyan eszköz, amely a kiemelt felhasználók, az üzleti elemzők, a funkcionális tanácsadók és az informatikai funkciók számára teszi lehetővé a problémák azonosítását a modulkonfigurációkban és az üzleti adatokban. Az optimalizálási tanácsadó javaslatot tesz a modulok konfigurációjának legjobb gyakorlatára, és azonosítja az elavult vagy helytelen üzleti adatokat.
 
-Az optimalizálási tanácsadó rendszeres időközönként lefuttatja az ajánlott eljárás szabályait. A Microsoft Dynamics 365 for Finance and Operations 8.0-s verziójával (2018. április) alapértelmezett szabálycsomag kerül kiadásra. A felhasználók azonban olyan szabályokat is létrehozhatnak, amelyek egyediek a saját testreszabásaikra, független szoftverszállítók (ISV) megoldásaira és üzleti adatokra. További információ a szabályok létrehozásáról: [Új szabályok létrehozása](./create-rules-optimization-advisor.md).
+Az optimalizálási tanácsadó rendszeres időközönként lefuttatja az ajánlott eljárás szabályait. Az alapértelmezett szabálykészlet a Microsoft Dynamics 365 for Finance and Operations 8.0 (2018 április) 8.0 verzióban van kiadva. A felhasználók azonban olyan szabályokat is létrehozhatnak, amelyek egyediek a saját testreszabásaikra, független szoftverszállítók (ISV) megoldásaira és üzleti adatokra. További információ a szabályok létrehozásáról: [Új szabályok létrehozása](./create-rules-optimization-advisor.md).
 
 Egy szabály megsértésének észlelésekor optimalizálási lehetőséget jön létre és jelenik meg az **Optimalizálási tanácsadó** munkaterületen. A felhasználó közvetlenül az **Optimalizálási tanácsadó** munkaterületről végezheti el a megfelelő javító intézkedéseket.
 
@@ -49,7 +48,7 @@ Szabványos biztonsági házirendek vonatkoznak az optimalizálási lehetősége
 
 Amikor műveletet hajt végre az optimalizálási lehetőségeken, a rendszer kiszámítja a lehetőség hatását az üzleti folyamatok futásidő-csökkentésének szempontjából. Sajnos ez a funkció nem használható az összes optimalizálási lehetőséghez.
 
-Ha többet szeretne megtudni az Optimalizálási tanácsadóról nézze meg a rövid [A Dynamics 365 for Finance and Operations Optimalizálási tanácsadója](https://www.youtube.com/watch?v=MRsAzgFCUSQ) videót.
+Ha többet szeretne megtudni optimalizálási tanácsadóról nézze meg a rövid [Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) videóban.
 
 ## <a name="optimization-rules"></a>Optimalizálási szabályok
 
@@ -95,5 +94,4 @@ Adott szabályok kiértékelésének inaktiválásához válassza a szabály ál
 
 [Új szabályok létrehozása](./create-rules-optimization-advisor.md)
 
-[Optimalizációs tanácsadó a Dynamics 365 for Finance and Operations szolgáltatáshoz (videó)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+[Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations (Videó)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

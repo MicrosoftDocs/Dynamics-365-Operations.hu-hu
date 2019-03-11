@@ -1,13 +1,13 @@
 ---
-title: "Projekt tényleges adatainak közvetlen szinkronizálása a Project Service Automation alkalmazásból közvetlenül a projektintegrációs naplóba a feladáshoz a Finance and Operations alkalmazásba"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a projekt tényleges adatainak a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Project Service Automation közötti szinkronizálásra."
+title: Projekt tényleges adatainak közvetlen szinkronizálása a Project Service Automation alkalmazásból közvetlenül a projektintegrációs naplóba a feladáshoz a Finance and Operations alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Project Service Automation aktuális projektjeinek közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343351"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Projekt tényleges adatainak közvetlen szinkronizálása a Project Service Automation alkalmazásból közvetlenül a projektintegrációs naplóba a feladáshoz a Finance and Operations alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a projekt tényleges adatainak a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Project Service Automation közötti szinkronizálásra.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Project Service Automation aktuális projektjeinek közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
 
 A sablon szinkronizálja a tranzakciókat a Project Service Automation alkalmazásból a Finance and Operations egy előkészítési táblájába. Szinkronizálás befejezése után, importálnia **kell** az adatokat az előkészítő táblából a integrációs naplóba.
 
 > [!NOTE]
-> - Projekt-tényleges adatainak integrációja a Microsoft Dynamics 365 for Finance and Operations 8.01-es vagy újabb verziójában érhető el.
+> - A projekt tényleges adatok integráció a Microsoft Dynamics 365 for Finance and Operations 8.0.1 vagy újabb verzióiban érhető el.
 > - Amennyiben a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0-ás verziót használja, a KB 4132657 és KB 4132660 telepítését követően, használhat sablonokat projektfeladatok, kiadási tranzakciókategóriák, becsült órák, becsült kiadások és a tényleges értékek integrálásához, és a funkciók zárolásának beállításához. Ha a könyvelési felosztásokat kell visszaállítania, ajánlott a KB 4131710 telepítése is.
 > - Ha a Finance and Operations 7.3.0 verzióját használja, tranzakciókat hív be a Project Service Automation alkalmazásból, telepítenie kell KB 4345320 frissítést annak érdekében, hogy a díjakat megjelenítse a projektszámlán.
 > - Ha időhöz kapcsolódó áfát vagy kiadási tranzakciókat visz be visz be a Project Service Automationbe , telepíteni kell a Project Service Automation Update 7 frissítést. Máskülönben a tényleges adó nem lesz csatolva a kapcsolódó tényleges időhöz vagy a költséghez, és nem lesz szinkronizálva a Finance and Operations alkalmazásba. Forduljon a támogatáshoz további információért.
@@ -50,7 +50,7 @@ A következő ábra bemutatja a Project Service Automation és a Finance and Ope
 
 ### <a name="template-and-tasks"></a>Sablon és feladatok
 
-A rendelkezésre álló sablonok eléréséhez a Microsoft PowerApps admin centerben válassza a **Projektek** lehetőséget, majd ezután kattintson a jobb felső sarkában **Új projekt** lehetőségre a nyilvános sablonok kiválasztásához.
+A rendelkezésre álló sablonok eléréséhez a Microsoft PowerApps adminisztrációs központban válassza a **Projektek** lehetőséget, majd kattintson a jobb felső sarkában **Új projekt** lehetőségre a nyilvános sablonok kiválasztásához.
 
 A következő sablon és alapul szolgáló feladatok használhatók az aktuális projektadatok szinkronizálásához a Project Service Automation és Finance and Operations között:
 
@@ -140,4 +140,3 @@ Az alábbi ábrán példákat láthat sablonfeladatok hozzárendelésére az Ada
 [![Sablon-hozzárendelés](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![Sablon-hozzárendelés](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

@@ -1,13 +1,13 @@
 ---
-title: "Elszámoló árak frissítése nem-termelő jellegű környezetben"
-description: "Ez a cikk az elszámoló-árak nem-gyártási környezetben történő frissítésének útmutatását tartalmazza."
+title: Elszámoló árak frissítése nem-termelő jellegű környezetben
+description: Ez a cikk az elszámoló-árak nem-gyártási környezetben történő frissítésének útmutatását tartalmazza.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4fa545aa6903bd6f789dda20ab5755ffe9a12b88
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0386ca1e5e7bf6e578ba2abf1b2c9eefe4dd2a02
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323019"
 ---
-
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Elszámoló árak frissítése nem-termelő jellegű környezetben
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Az új cikkekre vonatkozó elszámoló árak javításához, korrekciójához va
 4.  Használja a **Költségszámítási verzió fenntartása** lapot, hogy módosítsa a zárolás jelzőt, ezzel lehetővé téve a második költségszámítási verzióba foglalt függőben lévő költségrekordok aktiválását.
 5.  Használja a **Költségszámítási verzió fenntartása** lapról megnyitható **Árak aktiválása** oldalt, hogy aktiválja az összes a második költségszámítási verzióba foglalt függőben lévő költségrekordot. Az egyes cikkekhez tartozó függőköltség-rekordokat is aktiválhatja a **Cikk ár** oldalon szereplő **Függő-ár aktiválása** gombbal .
 6.  A további adat-fenntartás megelőzése érdekében, használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a második költségszámítási verzióba foglalt zárolás jelzőket. Az irányelvek zárolása megakadályozza az új függő költségek bevitelét és a függő költségek aktiválását.
-
 
 
 

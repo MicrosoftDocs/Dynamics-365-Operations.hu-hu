@@ -1,13 +1,13 @@
 ---
-title: "Projektvezetés és könyvelés"
-description: "A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez."
+title: Projektvezetés és könyvelés
+description: A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311335"
 ---
-
 # <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ A projektvezetési és könyvelési funkció több ágazatban is használható a
 
 [![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható. A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre. A marketingben a kampány egy leszállítandó munkakészletet jelöl. Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat. Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Finance and Operations projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében és elemzésében nyújthatnak segítséget.
+Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható. A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre. A marketingben a kampány egy leszállítandó munkakészletet jelöl. Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat. Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket, és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Finance and Operations projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében, és elemzésében nyújthatnak segítséget.
 
 ## <a name="project-phases"></a>A projekt fázisai
 Ugyan a következő folyamatábra olyan külső projektre vagy projektekre vonatkozik, amelyek egy vagy több ügyfél számára kerülnek teljesítésre, ez a funkció a házon belüli, csak kiadással járó projektekre is alkalmazható. 
@@ -206,7 +205,7 @@ A rendelés-felhasználás a vállalat a készletben szereplő cikkeket projekte
 
 A cikkek megrendelésének módszere attól függ, honnan rendeli őket:
 
--   Ha a vállalat készletéből rendel cikkeket, akkor cikkszükségletként kell megadnia a rendelést. Ha a **Cikkszükséglet** oldalt használja, a követelményt beállíthatja úgy, hogy a cikkeket részleges szállításként kapja. Így egy cikkmennyiség felhasználását elhalaszthatja arra az időre, amikor a cikkre szükség lesz.
+-   Ha a vállalat készletéből rendel cikkeket, akkor cikkszükségletként kell megadnia a rendelést. Ha a **Cikkszükséglet** oldalt használja, a követelményt beállíthatja úgy, hogy a cikkeket részleges szállításként kapja. Így egy cikkmennyiség felhasználását elhalaszthatja arra az időre, amikor a cikkre szükség lesz.
 -   Ha külső szállítótól rendeli meg a cikkeket, akkor egy beszerzési rendelést kell létrehoznia a **Beszerzési rendelés** oldalon.
 
 > [!NOTE] 
@@ -301,7 +300,7 @@ A beállításoktól függően a kiválasztott projekt pénzbeáramlások előre
 -   **Projekt dátuma:** 2012. március 5.
 -   **Számla dátuma:** 2012. március 31. A dátum meghatározása a számlázási gyakoriság alapján történik. Ebben a példában a Számlagyakoriság meg az aktuális hónaphoz. Emiatt a március hónapban feladott összes tranzakció számlázása a hónap utolsó napját.
 -   **Határidő:** 2012. április 14. A dátum meghatározása a projekthez beállított fizetési feltételek alapján történik. Ebben a példában a kiválasztott fizetési feltételek 14 napos. Ezért 14 nap hozzáadódnak rakódó határidő 2012. április 14. a számla dátumát.
--   **Várható értékesítési kifizetési dátuma:** 2012. április 27. A dátum kiszámítása a napok összeadásával történik: először az **Általános puffernapok** mező, **Projektvezetési és könyvelési paraméterek** oldal napjai lesznek összeadva az **Egyedi puffernapok** mező, **Projektszerződések** oldal napjaival, majd az összeg össze lesz adva a **Határidő** mező teljes napszámával. Ebben a példában a beírt **3** a **Általános puffernapok** mező és **10** a **Egyedi puffernapok** mező. Ezért 13 nap hozzáadódnak rakódó határidő 2012. április 27. a számla dátumát.
+-   **Várható értékesítési kifizetési dátuma:** 2012. április 27. A dátum kiszámítása a napok összeadásával történik: először az **Általános puffernapok** mező, **Projektvezetési és könyvelési paraméterek** oldal napjai lesznek összeadva az **Egyedi puffernapok** mező, **Projektszerződések** oldal napjaival, majd az összeg össze lesz adva a **Határidő mező** teljes napszámával. Ebben a példában a beírt **3** a **Általános puffernapok** mező és **10** a **Egyedi puffernapok** mező. Ezért 13 nap hozzáadódnak rakódó határidő 2012. április 27. a számla dátumát.
 
 Az Általános puffernapok vagy cserélhető meg az egyedi puffernapok, vagy hozzá kell adni az egyedi Puffernapok:
 
@@ -316,7 +315,7 @@ A tényleges pénzbeáramlás nagyon hasonló az előrejelzéshez, kivéve azt, 
 
 -   **Számla dátuma:** 2012. március 2.
 -   **Határidő:** 2012. március 16. A fizetési feltételek beállítása 14 nap.
--   **Várható értékesítési kifizetési dátuma:** 2012. március 29. A számítás magában foglal három általános puffernapot és 10 egyedi puffernapot.
+-   **Várható értékesítési kifizetési dátuma:** 2012. március 29. A számítás magában foglal három általános puffernapot és 10 egyedi puffernapot.
 
 #### <a name="cost-forecasting"></a>Költség-előrejelzés
 
@@ -441,4 +440,3 @@ A kimutatás kiszámítása után megtekintheti az egyes lapokon a következő a
 -   **Felhasználás** – a felhasználás az órák, kiadások, cikkek és bérlista-tranzakciók adatait.
 -   **Számla** – számlákat és a részszámla készítésére vonatkozó információk.
 -   **Órabér** – Az eredményszámlákra feladott órák órabérének megtekintése.
-

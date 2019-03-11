@@ -1,13 +1,13 @@
 ---
-title: "Látszólagos cikkek"
-description: "Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben a Microsoft Dynamics 365 for Finance and Operations szolgáltatásnál."
+title: Látszólagos cikkek
+description: Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben Microsoft Dynamics 365 for Finance and Operations rendszerben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341810"
 ---
-
 # <a name="phantom-items"></a>Látszólagos cikkek
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Ebben a szerkezetben láthatja, hogy nem értelmezhetők az F és G részek, és
 
 A Műszaki anyagjegyzék két műveletlapot is tartalmazott, ellentétben a Gyártási anyagjegyzékkel, amelynek csak egy műveletlapja van. A G részhez kapcsolt csomagolási műveletet szintén kiemelte a rendszer, és az most a H termék műveleti lapjának részévé vált. Az első művelet az elektromos egység összeszerelése. Ez a rendelés jónak tűnik, mert ezt az egységet használja a rendszer a következő műveletben, amely a gépösszeszerelés. Az utolsó művelet a csomagolási művelet, amely két csomagolóanyagot (C és D) használ fel.
 
-A Microsoft Dynamics 365 for Finance and Operations szolgáltatásban a Műszaki anyagjegyzék és a Gyártási anyagjegyzék közötti átmenet engedélyezése a Látszólagos anyagjegyzék sortípuson keresztül történik. Amint arra a „látszólagos” kifejezés is utal, az F és G részek eltűntek a két anyagjegyzéktípus közötti átmenet során. Ebben a példában a Látszólagos sortípust alkalmazza a rendszer az F és G részekre a Műszaki anyagjegyzékben. Amikor létrejön egy termelési vagy kötegrendelés, a rendszer a Műszaki anyagjegyzéket bemásolja a termelési vagy kötegrendelésbe. Ezután, a rendelés becslésekor, végbemegy az átmenet a Műszaki anyagjegyzékből a Gyártási anyagjegyzékbe, ahogyan azt az előző ábrákon láthatta. A második ábra műveleti lapjáról a C és D csomagolóanyagok meg vannak adva a művelethez. 
+A Microsoft Dynamics 365 for Finance and Operations rendszerben az átmenet a műszaki anyagjegyzék és a gyártási anyagjegyzék közötti a Phantom anyagjegyzék sortípuson keresztül engedélyezhető. Amint arra a „látszólagos” kifejezés is utal, az F és G részek eltűntek a két anyagjegyzéktípus közötti átmenet során. Ebben a példában a Látszólagos sortípust alkalmazza a rendszer az F és G részekre a Műszaki anyagjegyzékben. Amikor létrejön egy termelési vagy kötegrendelés, a rendszer a Műszaki anyagjegyzéket bemásolja a termelési vagy kötegrendelésbe. Ezután, a rendelés becslésekor, végbemegy az átmenet a Műszaki anyagjegyzékből a Gyártási anyagjegyzékbe, ahogyan azt az előző ábrákon láthatta. A második ábra műveleti lapjáról a C és D csomagolóanyagok meg vannak adva a művelethez. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Többszintű látszólagos anyagjegyzék-struktúrák
 A Látszólagos sortípus többszintű anyagjegyzék-struktúráknál is használható, a következő ábrán látható módon. Ebben a példában (a) a G termék anyagjegyzéke, míg (b) az E és F rész, valamint a G termék útvonallapja. 
@@ -74,4 +73,3 @@ A látszólagos anyagjegyzékek olyan anyagjegyzéknél is használhatók, amely
 A következő példában (a) a G termék és F rész anyagjegyzéke, míg (b) a G termék és F rész útvonallapja.
 
 ![G termék és F rész útvonallapokkal](media/product-G-part-F-with-route-sheet.png)
-

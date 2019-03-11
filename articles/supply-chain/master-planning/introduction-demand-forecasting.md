@@ -1,13 +1,13 @@
 ---
-title: "Igény-előrejelzés áttekintése"
-description: "Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez."
+title: Igény-előrejelzés áttekintése
+description: Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310001"
 ---
-
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ A következő ábrán az igény-előrejelzés alapfolyamata látható.
 
 [![igény-előrejelzési bevezetési diagram](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Az igény-előrejelzés generálás elindul a Finance and Operationsben. A rendszer begyűjti az előzménytranzakciók adatait a Finance and Operations tranzakciós adatbázisából, majd beírja ezeket egy előkészítési táblába. Ez az előkészítő tábla később egy Machine Learning szolgáltatáshoz kerül. Alig néhány testrestabási beállítás elvégzése után az előkészítő tábla számos adatforrással kiegészíthető. Az adatforrások lehetnek Microsoft Excel-fájlok, vesszővel tagolt értékfájlok (CSV), illetve a Microsoft Dynamics AX 2009-ből és a Microsoft Dynamics AX 2012-ből származó adatok. Tehát több különféle rendszerben tárolt előzményadatok alapján is létrehozhatóak igény-előrejelzések. Azonban az alapadatoknak (például a cikkneveknek és a mértékegységeknek) minden adatforrásban azonosnak kell lenniük.
+Az igény-előrejelzés generálás elindul a Finance and Operationsben. A rendszer begyűjti az előzménytranzakciók adatait a Finance and Operations tranzakciós adatbázisából, majd beírja ezeket egy előkészítési táblába. Ez az előkészítő tábla később egy Machine Learning szolgáltatáshoz kerül. Alig néhány testrestabási beállítás elvégzése után az előkészítő tábla számos adatforrással kiegészíthető. Az adatforrások lehetnek Microsoft Excel-fájlok, vesszővel tagolt értékfájlok (CSV), illetve adatok a Microsoft Dynamics AX 2009 és Microsoft Dynamics AX 2012 szolgáltatásokból. Tehát több különféle rendszerben tárolt előzményadatok alapján is létrehozhatóak igény-előrejelzések. Azonban az alapadatoknak (például a cikkneveknek és a mértékegységeknek) minden adatforrásban azonosnak kell lenniük.
 
 A Finance and Operations Igény-előrejelzés Machine Learning kísérleteinek használatakor azok a kiinduló jelzés kiszámításához megkeresik az öt idősorozat szerinti előrejelzési módszer közül a legmegfelelőbbet. Ezeknek az előrejelzési módszereknek a paraméterei a Finance and Operations rendszerben kezelhetőek. 
 
@@ -88,7 +87,6 @@ A Finance and Operations Igény-előrejelzés egy olyan eszköz, amely a gyárt�
 [Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
 
 
 

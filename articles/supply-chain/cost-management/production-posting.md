@@ -1,13 +1,13 @@
 ---
-title: "Termelés feladása"
-description: "Ez a cikk a termelési folyamat feladásainak különböző típusáról nyújt tájékoztatást."
+title: Termelés feladása
+description: Ez a cikk a termelési folyamat feladásainak különböző típusáról nyújt tájékoztatást.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332403"
 ---
-
 # <a name="production-posting"></a>Termelés feladása
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ A **Gyártásvezérlési paraméterek** részen a **Főkönyvi feladás** mezőb
 -   **Termelési csoportok** – a termelési csoportokban a nyersanyagokra és időfelhasználásra beállított főkönyvi számlákat használja. A kiadott termékhez csatolja a termelési csoportokat, majd a rendelések létrehozásakor átmásolja ezeket a termelési rendelésre. A termelési rendelések feladása ezután a termelési rendeléshez társított termelési csoportokat követi.
 
 **Megjegyzés:** Ha az elkészült cikk költségének kiszámításához a normál módszert használta, az a végső tranzakciókon is látható lesz. Ha különbség van a tényleges költségek és a normál módszerrel számított költségek között, azt a program feladja az eredményt mutató számlára.
-
 
 
 

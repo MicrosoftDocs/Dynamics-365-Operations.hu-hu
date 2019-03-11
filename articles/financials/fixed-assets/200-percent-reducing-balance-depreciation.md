@@ -1,13 +1,13 @@
 ---
-title: "200 százalék degresszív értékcsökkenés"
-description: "Ez a cikk a 200 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
+title: 200 százalék degresszív értékcsökkenés
+description: Ez a cikk a 200 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ec51f9e12e31e81c56fab9e82d0fc18d45beb5e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322720"
 ---
-
 # <a name="200-percent-reducing-balance-depreciation"></a>200 százalék degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
@@ -82,13 +81,12 @@ A 200% degresszív értékcsökkenési módszer elosztja a 200 százalékot az �
 
 | Időszak | Az éves értékcsökkenés-összeg számítása | Könyv szerinti érték             | Nettó könyv szerinti érték az év végén |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| 1. év | (11 000 – 1 000) × 40% = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
+| 1. év | (11 000 – 1 000) × 40% = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
 | 2. év | 6 000 × 40% = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
 | 3. év | 3 600 × 40% = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
-> Általában amikor az összeg számolása a 200% degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamhoz létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
-
+> Általában amikor az összeg számolása a 200 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz, mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamra létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
 
 
 

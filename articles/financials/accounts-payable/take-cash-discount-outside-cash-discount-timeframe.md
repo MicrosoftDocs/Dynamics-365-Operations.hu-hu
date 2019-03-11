@@ -1,13 +1,13 @@
 ---
-title: "Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül"
-description: "A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt."
+title: Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
+description: A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f02bba975e5438443c4719e887a38247094cb20b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3ff83f0ab68f7a87921dc2b6c3dcad43e5d331b7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356875"
 ---
-
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | -5,05     |
-
 
 
 

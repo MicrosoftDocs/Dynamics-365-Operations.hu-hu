@@ -1,13 +1,13 @@
 ---
-title: "Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez"
-description: "Ez a témakör ismerteti, hogyan adható hozzá ajánlások vezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 for Retail képernyő-elrendezés tervezőjének használatával."
+title: Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
+description: Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 for Retail képernyő-elrendezés tervezőjének használatával.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320443"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
 
 [!include [banner](includes/banner.md)]
@@ -34,9 +33,9 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük. További információ: [Eltávolított vagy elavult funkciók](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-Ez a témakör ismerteti, hogyan adható hozzá ajánlások vezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 for Retail képernyő-elrendezés tervezőjének használatával.
+Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 for Retail képernyő-elrendezés tervezőjének használatával.
 
-A Microsoft Dynamics 365 for Retail használata esetén megjeleníthet termékajánlásokat a POS-eszközön. Az *Ajánlások* olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. Termékajánlások megjelenítéséhez vezérlőt kell hozzáadni a tranzakciós képernyőhöz a képernyő-elrendezés tervezőjének segítségével.
+A Microsoft Dynamics 365 for Retail használata esetén megjeleníthet termékajánlásokat a pénztáreszközön. Az *Ajánlások* olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. Termékajánlások megjelenítéséhez vezérlőt kell hozzáadni a tranzakciós képernyőhöz a képernyő-elrendezés tervezőjének segítségével.
 
 ## <a name="open-layout-designer"></a>Az Elrendezéstervező megnyitása
 
@@ -67,7 +66,7 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
     [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Az **X** gombra kattintva zárja be az Elrendezéstervezőt.
-4. A Dynamics 365 for Retailben lépjen a **Kiskereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezések** elemre.
+4. A Dynamics 365 for Retail alkalmazásban lépjen a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 5. Válassza az  **1090, Pénztárgépek** elemet.
 6. Kattintson a **Futtatás most** elemre.
 
@@ -88,11 +87,10 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 7. A **Kép** mezőben válassza ki a lapon megjelenítendő képet.
 8. Kattintson az **OK** gombra. Az új lap megjelenik a gombrácsban.
 9. Az **X** gombra kattintva zárja be az Elrendezéstervezőt.
-10. A Dynamics 365 for Retailben lépjen a **Kiskereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezések** elemre.
+10. A Dynamics 365 for Retail alkalmazásban lépjen a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 11. A listában válassza a **1090, Pénztárgépek** elemet.
 12. Kattintson a **Futtatás most** elemre.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Személyre szabott termékajánlatok áttekintése](personalized-product-recommendations.md)
-

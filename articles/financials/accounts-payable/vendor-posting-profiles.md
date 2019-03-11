@@ -1,13 +1,13 @@
 ---
-title: "Szállítói feladási profilok"
-description: "A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák."
+title: Szállítói feladási profilok
+description: A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ae019ebec2788fc499b0f2ef27a7eb2832ceaa9d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3571726fd3603371b8e1daec7d6ebe85d72d280d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346525"
 ---
-
 # <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 | **Elszámolás** | Válassza ki ezt a lehetőséget a feladási profillal rendelkező tranzakciók automatikus elszámolásának engedélyezéséhez. Ha ez a lehetőség nincs bejelölve, manuálisan kell rendeznie a tranzakciókat a Nyitott tranzakciók kiegyenlítése oldalon vagy a Vevő kifizetések megadása oldalon. |
 | **Mégse**     | Válassza ki ezt a lehetőséget, ha szeretné érvényteleníteni a feladási profillal rendelkező tranzakciókat.                                                                                                               |
 | **Zárás**      | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.                                       |
-
 
 
 

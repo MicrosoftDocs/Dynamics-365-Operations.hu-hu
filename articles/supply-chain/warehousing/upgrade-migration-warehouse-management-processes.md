@@ -1,13 +1,13 @@
 ---
-title: "Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra"
-description: "Ez a témakör áttekintést nyújt a termékek és a raktárkezelés áttelepítési beállításairól."
+title: A raktárkezelés frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
+description: Ez a témakör áttekintést nyújt a termékek és a raktárkezelés áttelepítési beállításairól.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,20 +18,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324468"
 ---
-
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>A raktárkezelés frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics AX 2012 R3 verzióról, WMSII-modullal, a Microsoft Dynamics 365 for Finance and Operations alkalmazásra frissítésről.
+Ez a témakör áttekintés nyújt a frissítéshez a Microsoft Dynamics AX 2012 R3, WMSII modulban futó változatáról a Microsoft Dynamics 365 for Finance and Operations rendszerre.
 
 A Finance and Operations rendszer már nem támogatja a Microsoft Dynamics AX 2012 rendszerből származó örökölt **WMSII** modult. Ehelyett a **Raktárkezelés** modult használhatja. A WMSII modulban a pénzügyi készlethez ki lehet választani a hely és raklap-azonosító készletdimenziókat, azonban a raklap-azonosító készletdimenzió nem használható pénzügyi készletként, a Finance and Operations alkalmazásban.
 
@@ -81,7 +80,6 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 3.  A **Foglalási hierarchia** lapon határozzon meg egy új foglalási hierarchiát a cikk tárolási és nyomon követési dimenziócsoportjai alapján.
 4.  Hozzon létre egy vagy több egységszekvencia-csoportot, amelyek ugyanazokat a mértékegységeket tartalmazzák, amelyeket a cikk készletegységében használnak.
 5.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Tárolási dimenziócsoportok módosítása cikkekhez** lehetőségre.
-6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés](../../dev-itpro/data-entities/data-entities.md) lehetőségben.
+6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../dev-itpro/data-entities/data-entities.md).
 7.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 8.  Dolgozza fel a módosításokat. A készletdimenziók frissítése eltarthat egy ideig. A kötegelt feladatok segítségével figyelemmel követheti a folyamat állapotát.
-

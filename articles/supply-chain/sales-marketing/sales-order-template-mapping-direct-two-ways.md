@@ -1,37 +1,36 @@
 ---
-title: "Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében."
+title: Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között
+description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
 ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339119"
 ---
-
-# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között
+# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében.
+Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
@@ -198,4 +197,3 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
-

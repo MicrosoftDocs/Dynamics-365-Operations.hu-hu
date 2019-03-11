@@ -1,13 +1,13 @@
 ---
-title: "Képletszerkesztő elektronikus jelentésekhez (ER)"
-description: "Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER)."
+title: Képletszerkesztő elektronikus jelentésekhez (ER)
+description: Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,25 +18,24 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331276"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER). Ha egy formátumot az ER-ben meghatározott elektronikus dokumentumra vonatkozóan tervez meg, akkor használhat képleteket az adatok átalakításához a dokumentum teljesítésére és formázására vonatkozó követelményekhez történő megfeleltetés érdekében. Ezek a képletek a Microsoft Excelben található képletekre hasonlítanak. A képletek funkciók különféle típusait támogatják - szöveg, dátum és időpont, matematikai logika, információ, adattípus-konvertálás és egyéb (üzletitartomány-specifikus funkciók).
+Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER). Ha egy formátumot az ER-ben meghatározott elektronikus dokumentumra vonatkozóan tervez meg, akkor használhat képleteket az adatok átalakításához a dokumentum teljesítésére és formázására vonatkozó követelményekhez történő megfeleltetés érdekében. Ezek a képletek a Microsoft Excel programban található képletekre hasonlítanak. A képletek funkciók különféle típusait támogatják - szöveg, dátum és időpont, matematikai logika, információ, adattípus-konvertálás és egyéb (üzletitartomány-specifikus funkciók).
 
 ## <a name="formula-designer-overview"></a>Képletszerkesztő áttekintése
 
 Az ER támogatja a képletszerkesztőt. Ezért tervezéskor konfigurálhatja a futtatás közben a következő feladatokhoz használható kifejezéseket:
 
-- A Microsoft Dynamics 365 for Finance and Operations adatbázisból érkező átalakítási adatok, amelyeket át kell vinni az ER-formátumokra vonatkozó adatforrásnak tervezett ER-adatmodellbe (szűrés, csoportosítás, adattípus-átalakítás stb.). (Például ezek az átalakítások magukban foglalhatják a szűrést, csoportosítást és az adattípus-konverziót.)
+- Átalakításra vonatkozó adatok, amelyek a Microsoft Dynamics 365 for Finance and Operations adatbázisából származnak, és egy ER adatmodellben kell megadni őket, amelyet az ER formátumok adatforrási feladataira terveztek. (Például ezek az átalakítások magukban foglalhatják a szűrést, csoportosítást és az adattípus-konverziót.)
 - Olyan formátumadatok, amelyeket egy generáló elektronikus dokumentumba kell küldeni, egy adott ER-formátum elrendezésének és feltételeinek megfelelően. (Például a formázás a kért nyelv vagy kultúra,illetve a kódolás alapján történhet).
 - Elektronikus dokumentumok létrehozási folyamatának szabályozása. (Például a kifejezések az adatok feldolgozásától függően engedélyezhetik vagy letilthatják a formátum egyes elemeinek kimenetét. Meg is szakíthatják a dokumentum létrehozásának folyamatát, vagy üzeneteket küldhetnek a felhasználóknak.)
 
@@ -625,8 +624,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </ul></li>
 <li>A SYS18389 címkével ellátott Finance and Operations a következő szöveggel rendelkezik:
 <ul>
-<li><strong>Az EN-US nyelvhez</strong>: &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>A DE nyelvhez</strong>: &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>Az EN-US nyelvhez:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
+<li><strong>DE nyelvhez:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Íme a tervezhető képlet:</p>
@@ -692,7 +691,7 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 <tr>
 <td>JSONVALUE (azonosító, elérési út)</td>
 <td>Adatok elemzése a megadott elérési út által használt JavaScript Object Notation (JSON) formátumban, a megadott azonosítón alapuló skaláris érték kibontásához.</td>
-<td>Az adatforrás: <strong>$JsonField</strong> JSON-formátumban a következő adatokat tartalmazza: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Az adatforrásra: </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> ezt az értéket adja eredményül: <strong>7.3.1234.1</strong>, a <strong>karakterlánc</strong> adattípussal.</td>
+<td>Az adatforrás <strong>$JsonField</strong> JSON-formátumban a következő adatokat tartalmazza:<strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Az adatforrásra: </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> ezt az értéket adja eredményül: <strong>7.3.1234.1</strong>, a <strong>karakterlánc</strong> adattípussal.</td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +730,7 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 | FA\_BALANCE (tárgyi eszköz kódja, értékmodell kódja, jelentési év, jelentés dátuma) | A tárgyieszköz-egyenleg előkészített adattárolóját adja vissza. A jelentési évet a Finance and Operations **AssetYear** felsorolásának értékeként kell meghatározni. | A **FA\_SUM ("COMP-000001", "Aktuális", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** a **„COMP-000001”** tárgyieszköz-egyenlegek előkészített adattárolóját adja vissza **„Aktuális”** értékmodellként az aktuális Finance and Operations munkamenet dátumán. |
 | TABLENAME2ID (karakterlánc) | Egy adott táblanévhez tartozó táblaazonosítót ad vissza egész számokkal kifejezett formában. | A **TABLENAME2ID ("Intrastat")** az **1510** értéket adja vissza. |
 | ISVALIDCHARACTERISO7064 (karakterlánc) | A logikai **IGAZ** értéket adja vissza, ha a megadott karakterlánc érvényes nemzetközi bankszámlaszámnak (IBAN) felel meg. Ellenkező esetben a visszaadott logikai érték **HAMIS**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** az **IGAZ** értéket adja vissza. **ISVALIDCHARACTERISO7064 ("AT61")** a **HAMIS** értéket adja vissza. |
-| NUMSEQVALUE (számsorozat kódját, hatókör, hatókör-azonosító) | Egy számsorozat új generált értékét adja vissza a megadott számsorozat kódja, a hatókör és a hatókör-azonosító alapján. A hatókör értéket a **ERExpressionNumberSequenceScopeType** felsorolás alapján kell megadni (**megosztott**, **jogi személy** vagy **vállalat**). A **megosztott** hatókörnél egy üres karakterláncot adjon meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél a vállalat azonosítóját adja meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél, ha egy üres karakterláncot ad meg a hatókör-azonosítóként, az aktuális vállalati azonosít lesz használatos. | A következő adatforrás megadása a modell-hozzárendelésben:<ul><li>**enumScope** (**Dynamics 365 for Operations felsorolási** típusa), amely az **ERExpressionNumberSequenceScopeType** felsorolásra hivatkozik</li><li>**NumSeq** (**Számított mező** típus), amely ezt a kifejezést tartalmazza: **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják. |
+| NUMSEQVALUE (számsorozat kódját, hatókör, hatókör-azonosító) | Egy számsorozat új generált értékét adja vissza a megadott számsorozat kódja, a hatókör és a hatókör-azonosító alapján. A hatókör értéket a **ERExpressionNumberSequenceScopeType** felsorolás alapján kell megadni (**megosztott**, **jogi személy** vagy **vállalat**). A **megosztott** hatókörnél egy üres karakterláncot adjon meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél a vállalat azonosítóját adja meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél, ha egy üres karakterláncot ad meg a hatókör-azonosítóként, az aktuális vállalati azonosít lesz használatos. | A következő adatforrás megadása a modell-hozzárendelésben:<ul><li>**enumScope** (**Dynamics 365 for Operations felsorolás** típusa), amely az **ERExpressionNumberSequenceScopeType** felsorolásra hivatkozik</li><li>**NumSeq** (**Számított mező** típus), amely ezt a kifejezést tartalmazza: **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják. |
 | NUMSEQVALUE (számsorozatkód) | Egy számsorozat új generált értékét adja vissza, a megadott számsorozat alapján, a **vállalat** hatókörben, és (mint hatókör-azonosító) a vállalat kódját, amely a kontextust adja, amely alatt az ER-formátumot futtatják. | A modell-hozzárendelésben határozza meg a következő adatforrást: **NumSeq** (**számított mező** típus). Az adatforrás tartalmazza a kifejezést: **NUMSEQVALUE ("Gene\_1")**. Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják. |
 | NUMSEQVALUE (számsorozat-rekordazonosító) | Egy számsorozat új generált értékét adja vissza a megadott számsorozat rekordazonosítója alapján. | A következő adatforrás megadása a modell-hozzárendelésben:<ul><li>**LedgerParms** (**Tábla** típus), amely a LedgerParameters táblára hivatkozik</li><li>**NumSeq** (**Számított mező** típus), amely ezt a kifejezést tartalmazza: **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a számsorozatnak, amely a vállalathoz van beállítva a főkönyvi paraméterekben, amely a kontextust adja, amely alatt az ER-formátumot futtatják. Ez a számsorozat egyértelműen azonosítja naplókat, és kötegszámként viselkedik, amely összekapcsolja a tranzakciókat. |
 
@@ -743,4 +742,3 @@ Az ER segítségével bővítheti az ER kifejezésekben használt függvények l
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md)
-

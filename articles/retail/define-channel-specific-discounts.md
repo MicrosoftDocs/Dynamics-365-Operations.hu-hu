@@ -1,13 +1,13 @@
 ---
-title: "Csatornaspecifikus engedmények definiálása"
-description: "A kiskereskedők gyakran különböző engedményeket állítanak be a különböző csatornákon. Ez a témakör ellenőrzi azokat a fogalmakat, amelyeket a megadott csatornára vonatkozó engedmények létrehozásához tudnia kell."
+title: Csatornaspecifikus engedmények definiálása
+description: A kiskereskedők gyakran különböző engedményeket állítanak be a különböző csatornákon. Ez a témakör ellenőrzi azokat a fogalmakat, amelyeket a megadott csatornára vonatkozó engedmények létrehozásához tudnia kell.
 author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318603"
 ---
-
 # <a name="define-channel-specific-discounts"></a>Csatornaspecifikus engedmények definiálása
 
 [!include [banner](includes/banner.md)]
@@ -37,7 +36,7 @@ A kiskereskedők gyakran különböző engedményeket állítanak be a különb�
 
 A kiskereskedők gyakran különböző engedményeket ajánlanak a különböző csatornákon. Ezt tehetik a helyi piaci feltétetelek kezelése vagy a versenytárs kiskereskedők legyőzése érdekében.
 
-A Microsoft Dynamics 365 for Retail árcsoportok segítségével csatornaspecifikus engedményeket határoz meg. Az árcsoportok a következő entitások egy vagy több lehetőségéhez rendelhetők hozzá: csatornák, katalógusok, fiókok és hűségprogramok. A cikk a csatornákat tárgyalja, de az azonos koncepciók a katalógus engedményekre, fiók engedményekre és a hűséges engedményekre vonatkoznak.
+A Microsoft Dynamics 365 for Retail árcsoportok segítségével definiálja a csatornaspecifikus engedményeket. Az árcsoportok a következő entitások egy vagy több lehetőségéhez rendelhetők hozzá: csatornák, katalógusok, fiókok és hűségprogramok. A cikk a csatornákat tárgyalja, de az azonos koncepciók a katalógus engedményekre, fiók engedményekre és a hűséges engedményekre vonatkoznak.
 
 ## <a name="price-groups"></a>Árcsoportok
 
@@ -63,4 +62,3 @@ A következő példa bemutatja egy csatorna engedmény beállításába bevont f
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ármódosítások és engedmények](price-adjustments-discounts.md)
-

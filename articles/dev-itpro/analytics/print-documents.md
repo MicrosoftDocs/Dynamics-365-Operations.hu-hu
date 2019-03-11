@@ -1,13 +1,13 @@
 ---
-title: "Dokumentumok nyomtatása"
-description: "A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a dokumentumok nyomtathatók helyi nyomtató vagy a hálózathoz csatlakoztatott eszköz használatával. A cikk a dokumentumok nyomtatási módjainak áttekintését nyújtja."
+title: Dokumentumok nyomtatása
+description: A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a dokumentumok nyomtathatók helyi nyomtató vagy a hálózathoz csatlakoztatott eszköz használatával. A cikk a dokumentumok nyomtatási módjainak áttekintését nyújtja.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4fd20022ff91fedb6d0323e82fbe3c1acae38e48
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362050"
 ---
-
 # <a name="document-printing"></a>Dokumentumok nyomtatása
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ A következő ábra bemutatja az alapvető összetevőket, amelyek segítik a h�
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Vegye figyelembe, hogy egyetlen nyomtatót több dokumentumot útválasztás ügynökhöz is lehet regisztrálni. A nyomtatóbeállítások feloldásához az üzemeltetett szolgáltatás a hálózati elérési utat használja, amely egyedileg azonosítja az összes hálózati nyomtatót. Emiatt akkor is, ha a nyomtató több ügyféllel van regisztrálva, egyetlen kiválasztható elemként jelenik meg a Finance and Operations alkalmazásokban rendelkezésre álló nyomtatók listáján.
-

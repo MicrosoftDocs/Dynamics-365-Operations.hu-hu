@@ -1,13 +1,13 @@
 ---
-title: "Képek beállítása és kezelése a Retail Modern POS (MPOS) számára"
-description: "Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit."
+title: Képek beállítása és kezelése a Retail Modern POS (MPOS) esetében
+description: Ez a cikk ismerteti a Retail Modern POS (MPOS) rendszerben megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356737"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Képek beállítása és kezelése a Retail Modern POS (MPOS) számára
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Képek beállítása és kezelése a Retail Modern POS (MPOS) esetében
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit.
+Ez a cikk ismerteti a Retail Modern POS (MPOS) rendszerben megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit.
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>A média alap URL-cím létrehozása és médiasablonok meghatározása a kép-URL-ek formátumának konfigurálásához.
 
-A Retail Modern POS-ban (MPOS) megjelenő képeket külső helyen kell tárolni, a Microsoft Dynamics 365 for Retail programon kívül. Általában egy tartalomkezelési rendszer, a tartalomkézbesítési hálózat (CDN) vagy médiaszerver tárolja őket. Ezután a MPOS lekérdezi és kijelzi a képeket a megfelelő entitások, például termékek és katalógusok számára, a cél URL-cím elérésével. Ezen külsőleg tárolt képek lekéréséhez az MPOS a képek helyes URL-formátumát igényli. A képekhez a megfelelő URL-t a **Média alap URL-cím** érték a csatornaprofilban való beállításával és a **Médiasablon definiálása** funkció használatával állíthatja be az entitások számára. Az entitások alcsoportjainál felül is írhatja a szabvány szerinti URL formátumot a **Szerkesztés az Excel programban** funkció használatával.
+A képeket, amelyek megjelennek a Retail Modern POS (MPOS) a Microsoft Dynamics 365 for Retail rendszeren kívül kell hosztolni. Általában egy tartalomkezelési rendszer, a tartalomkézbesítési hálózat (CDN) vagy médiaszerver tárolja őket. Ezután a MPOS lekérdezi és kijelzi a képeket a megfelelő entitások, például termékek és katalógusok számára, a cél URL-cím elérésével. Ezen külsőleg tárolt képek lekéréséhez az MPOS a képek helyes URL-formátumát igényli. A képekhez a megfelelő URL-t a **Média alap URL-cím** érték a csatornaprofilban való beállításával és a **Médiasablon definiálása** funkció használatával állíthatja be az entitások számára. Az entitások alcsoportjainál felül is írhatja a szabvány szerinti URL formátumot a **Szerkesztés az Excel programban** funkció használatával.
 
 > [!IMPORTANT]
 > A Dynamics 365 for Retail jelenlegi verziójában már nem állíthatja be az URL-formátumot a **Kép** XML attribútumot a MPOS számára az **Alapértelmezett** entitások attribútum-csoportjában. Ha ismeri a Microsoft Dynamics AX 2012 R3-at, és már használja a Dynamics 365 for Retail jelenlegi verzióját, ellenőrizze, hogy mindig az új **Médiasablon definiálása** funkciót használja a képek beállításához. Ne használja vagy módosítsa a **Kép** attribútumot az entitások **Alapértelmezett** attribútumcsoportjában, beleértve a termékeket is. A képek **Alapértelmezett** attribútum-csoportjában közvetlenül elvégzett módosítások nem fognak megjelenni. Ez a beállítás nem lesz használható a jövőbeli programverzióban.
@@ -47,7 +46,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>A média alap URL-cím beállítása egy csatornához
 
-1. Nyissa meg a Dynamics 365 for Retail HQ portált.
+1. Nyissa meg a Dynamics 365 for Retail HQ-portált.
 2. Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornaprofilok** lehetőségekre.
 
     [![csatornaprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -63,7 +62,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 3. A **Média elérési útja** gyorslapon írja be a fennmaradó útvonalat a kép helyéhez. A média elérési útvonala a **LanguageID** lehetőséget támogatja változóként. Például a bemutató adatok esetében létrehozhat egy **Katalógusok** mappát az összes katalóguskép számára a média alap URL-címe alatt a médiaszerverhez (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Minden egyes nyelvhez felállíthat egy mappát, például en-US vagy fr-FR, és minden mappába bemásolhatja a megfelelő képeket. Ha nem rendelkezik a különböző képekkel a különböző nyelvekhez, akkor kihagyhatja a **LanguageID** változót a mappastruktúrából, és mutathat közvetlenül a katalógusok mappára, amely tartalmazza a katalógusképeket.
 
     > [!NOTE]
-    > A Dynamics 365 for Retail jelenlegi verziója a **{LanguageId}** tokent a Katalógus, Termék és a Kategória entitások esetében támogatja. (A jelenlegi szabvány alapján a **{LanguageID}** token nem támogatott a Vevő és Dolgozó entitások esetében, ez a Microsoft Dynamics AX 6.x. óta van érvényben)
+    > Megjegyzés: A Dynamics 365 for Retail jelenlegi verziója a **{LanguageId}** tokent a Katalógus, Termék és a Kategória entitások esetében támogatja. (A jelenlegi szabvány alapján a **{LanguageID}** token nem támogatott a Vevő és Dolgozó entitások esetében, ez a Microsoft Dynamics AX 6.x. óta van érvényben)
 
 4. Képek esetén a fájlnév formátuma katalógus nevébe van véglegesen kódolva, és nem lehet módosítani. Ezért úgy nevezze át a képeket, hogy azok megfelelő katalógusnévvel rendelkezzenek, ezzel garantálva, hogy az MPOS megfelelően kezeli azokat.
 5. A **Fájlkiterjesztés** mezőben válassza ki a várható fájlkiterjesztést, a képek típusától függően. Például a bemutatóadatokhoz a katalógusképek a .jpg kiterjesztéssel vannak beállítva. (A képfájlokat azért is átnevezhetik, hogy legyen katalógusnevük.)
@@ -214,4 +213,3 @@ Katalógus, kategória, alkalmazott, és vevő képeket, amelyeket Kapcsolat né
 5. A többi entitás esetében is hasonló folyamatot kövessen, például a Kategória, Alkalmazott és Vevő esetében.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

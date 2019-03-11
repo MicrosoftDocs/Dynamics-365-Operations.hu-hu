@@ -1,13 +1,13 @@
 ---
-title: "Beszerzési rendelések jóváhagyása és megerősítése"
-description: "Ez a témakör ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre."
+title: Beszerzési rendelések jóváhagyása és megerősítése
+description: Ez a témakör ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -15,18 +15,17 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336957"
 ---
-
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Miután a beszerzési rendelés létre lett hozva, lehet, hogy át kell esnie eg
 ## <a name="approval-of-purchase-orders"></a>A beszerzési rendelések jóváhagyása
 Azok a beszerzési rendelések, amelyek nem használják a változáskezelést, azoknak az állapota létrehozás után **Jóváhagyva** lesz, míg a változáskezelést használó beszerzési rendelések létrehozás után **Vázlat** állapotúak. Az a beszerzési rendelés, amely az alaptervezés során egy tervezett rendelés megerősítéséből jön létre, azonnal **Jóváhagyva** állapotú lesz, a változáskezelési beállításoktól függetlenül. A beszerzési rendelés csak akkor hoz létre készlettranzakciót, ha eléri a **Jóváhagyva** állapotot. Ezért az a készlet nem lesz elérhető a foglalásoknál vagy jelöléseknél, amíg a rendelés nem lesz elfogadva.  
 
-Engedélyezheti a változáskezelést a beszerzési rendelésekhez a **Változáskezelés aktiválása** beállításával a **Beszerzési és forrásparaméterek** lapon. Ha a változáskezelés engedélyezve van, a beszerzési rendelésnek, elkészítés után, végig kell haladnia egy jóváhagyási munkafolyamaton. A Microsoft Dynamics 365 for Finance and Operations rendszer rendelkezik olyan munkafolyamat-szerkesztővel, ami segít felállítani egy munkafolyamatot a jóváhagyási folyamathoz. Ez a munkafolyamat tartalmazhat szabályokat az automatikus jóváhagyáshoz, szabályokat, amelyek meghatározzák, hogy ki lesz hozzárendelve egy bizonyos beszerzési rendeléshez, valamint olyan szabályokat, amik eszkalálják azokat a munkafolyamatokat, amik már régóta jóváhagyásra várnak. A változáskezelési folyamatot engedélyezheti az összes szállítóhoz, vagy csak bizonyos szállítókhoz. Beállíthatja úgy is a folyamatot, hogy az minden beszerzési rendelés esetében felülírható legyen.  
+Engedélyezheti a változáskezelést a beszerzési rendelésekhez a **Változáskezelés aktiválása** beállításával a **Beszerzési és forrásparaméterek** lapon. Ha a változáskezelés engedélyezve van, a beszerzési rendelésnek, elkészítés után, végig kell haladnia egy jóváhagyási munkafolyamaton. A Microsoft Dynamics 365 for Finance and Operations rendelkezik olyan munkafolyamat-szerkesztővel, ami segít felállítani egy munkafolyamatot a jóváhagyási folyamathoz. Ez a munkafolyamat tartalmazhat szabályokat az automatikus jóváhagyáshoz, szabályokat, amelyek meghatározzák, hogy ki lesz hozzárendelve egy bizonyos beszerzési rendeléshez, valamint olyan szabályokat, amik eszkalálják azokat a munkafolyamatokat, amik már régóta jóváhagyásra várnak. A változáskezelési folyamatot engedélyezheti az összes szállítóhoz, vagy csak bizonyos szállítókhoz. Beállíthatja úgy is a folyamatot, hogy az minden beszerzési rendelés esetében felülírható legyen.  
 
 Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhagyási állapoton mennek keresztül, kezdve a **Vázlat** állapottól, a **Véglegesítve** állapotig. Miután egy rendelés jóvá lett hagyva, azoknak a felhasználóknak, akik módosítani szeretnék, a **Változtatás kérése** művelet kell használniuk.
 
@@ -86,7 +85,6 @@ Miután egy rendelés meg lett erősítve, nem törölheti azt. Azonban érvény
 [Termékbevételezés összevetése a beszerzési rendelésekkel](product-receipt-against-purchase-orders.md)
 
 [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

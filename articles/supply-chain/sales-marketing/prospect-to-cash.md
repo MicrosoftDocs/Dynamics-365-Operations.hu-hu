@@ -1,39 +1,38 @@
 ---
-title: "A potenciális ügyfelek készpénzre váltása"
-description: "Ez a témakör áttekintést nyújt A potenciális ügyfelek készpénzre váltása megoldásról a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Sales alkalmazásokban."
+title: A potenciális ügyfelek készpénzre váltása
+description: Ez a témakör a Potenciális vevő készpénzre váltása megoldásról a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Sales között megoldásról,nyújt áttekintést.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309495"
 ---
-
 # <a name="prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása
 
 [!include [banner](../includes/banner.md)]
 
-A potenciális ügyfelek készpénzre váltása megoldás közvetlen szinkronizálást biztosít a Dynamics 365 for Finance and Operations és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával. 
+A Potenciális vevők készpénzre váltás megoldás közvetlen szinkronizálást nyújt a Dynamics 365 for Finance and Operations és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával. 
 
-A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót: [potenciális ügyfél készpénzre váltása i](https://www.youtube.com/watch?v=AVV9x5x-XCg).
+A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót: [Potenciális ügyfél készpénzre váltása](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú közvetlen szinkronizálást biztosítja:
 
@@ -49,11 +48,11 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 
 ### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. december - Alkalmazás buildszáma 7.3.11971.56116, 12-es platformfrissítéssel (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (December 2017) - Alkalmazásbuild 7.3.11971.56116 12-es platformfrissítéssel (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (2017. július)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) - 8-as platformfrissítéssel (alkalmazás buildszáma 7.2.11792.56024, platform buildszáma 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) - 8-as platformfrissítéssel (7.2.11792.56024 alkalmazásbuild 7.0.4565.16212 platformbuilddel).
 - A következők gyorsjavítások szükségesek:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Sales rendszerből a Finance and Operations alkalmazásba. Ezenkívül számos más fejlesztést is biztosít.
@@ -63,9 +62,9 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
     > [!NOTE]
     > Csak a KB4045570-et kell telepíteni, mivel a telepítés tartalmazza a többi gyorsjavítás változásait. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations 1611-es verzió (2016. november)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations 1611-es verzió (2016 november)
 
-- Dynamics 365 for Finance and Operations, 1611-es verzió (2016. november) 8-as vagy újabb platformfrissítéssel
+- Dynamics 365 for Finance and Operations 1611 verzió (2016. november) 8-as vagy újabb platformfrissítéssel
 
 - A következők gyorsjavítások szükségesek:
 
@@ -81,6 +80,5 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 
 A Potenciális ügyfelek készpénzre váltása megoldás használatához telepítenie kell a következő összetevőket:
 
-- Dynamics 365 for Sales, verzió: 1612 (8.2.1.207) (DB 8.2.1.207) online vagy későbbi verzió.
-- A potenciális ügyfelek készpénzre váltása megoldás Dynamics 365 for Sales szolgáltatáshoz, 1.15.0.0 vagy későbbi verzió. A megoldás letölthető az AppSource-ból. [Töltse le a Dynamics 365, potenciális vevő készpénzfizetési](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-
+- Dynamics 365 for Sales 1612 verzió (8.2.1.207) (DB 8.2.1.207) online vagy újabb verzió
+- A potenciális ügyfelek készpénzre váltása megoldás a Dynamics 365 for Sales 1.15.0.0 vagy későbbi verziójához. A megoldás letölthető az AppSource felületéről. [Töltse le a Dynamics 365, potenciális vevő készpénzfizetési](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

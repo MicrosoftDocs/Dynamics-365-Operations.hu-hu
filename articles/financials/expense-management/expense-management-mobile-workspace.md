@@ -1,13 +1,13 @@
 ---
-title: "Költségkezelés mobil munkaterület"
-description: "Ez a témakör a Költséggazdálkodás mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket."
+title: Költségkezelés mobil munkaterület
+description: Ez a témakör a Költséggazdálkodás mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344340"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Költségkezelési mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Ez a témakör a **Költséggazdálkodás** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket. Ezenkívül a jóváhagyók a **Költséggazdálkodás** mobil munkaterület segítségével megtekinthetik a hozzájuk rendelt költségjelentéseket, majd jóváhagyhatják vagy elutasíthatják az adott költségjelentéseket.
 
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
 
 
 ## <a name="overview"></a>Áttekintés
@@ -42,11 +41,11 @@ Számos szervezet megköveteli, hogy a nyugta egy példányát csatolja az utaz�
 
 A **Költségkezelés** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:
 
-- Készítsen fotót a nyugtáról, és töltse azt fel a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba. A fotót később is csatolhatja a költségjelentéshez.
+- Készítsen fotót a nyugtáról, és töltse fel a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba. A fotót később is csatolhatja a költségjelentéshez.
 - Fájl feltöltése rögzített nyugtaként. A fájlt később is csatolhatja a költségjelentéshez.
 - Új költségsor létrehozása csatolt nyugta használatával. Később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.
 
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations rendszert használja, a következő funkciók is elérhetők:
+Ha Microsoft Dynamics 365 for Finance and Operations alkalmazást használ, ezeket a funkciókat is használhatja:
 
 - Új költségjelentés készítése.
 - Hitelkártya-tranzakciók és egyéb, korábban létrehozott költségek csatolása egy költségjelentéshez.
@@ -60,11 +59,11 @@ Amennyiben a Microsoft Dynamics 365 for Finance and Operations rendszert haszná
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations rendszert használja 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
 Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
-Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations1611-es verzió és platform update 3 vagy újabb használatakor
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a 
 <td>Rendszergazda</td>
 <td>A 4019015-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza a <strong>Költséggazdálkodás</strong> mobil munkaterületet. A KB 4019015 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Metaadat-gyorsjavítások letöltése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Telepítse a metaadatok gyorsjavítását</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza az <strong>ApplicationSuite</strong> és az <strong>ExpenseMobile</strong> modelleket, majd töltse fel a telepíthető csomagot az LCS-be.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Alkalmazza telepíthető csomagot</a>.</li>
@@ -94,10 +93,10 @@ Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a 
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>A Dynamics 365 for Operations mobilalkalmazás letöltése és telepítése
 Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
-- [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+- [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 - [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
@@ -243,4 +242,3 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 22. Válassza a **Beküldés** lehetőséget.
 23. Adja meg a jóváhagyóra vonatkozó esetleges megjegyzéseket.
 24. Válassza a **Kész** lehetőséget.
-

@@ -1,13 +1,13 @@
 ---
-title: "Követelések és beszedések beállítása"
-description: "Ez a cikk a beszedési funkciók beállítását ismerteti."
+title: Követelések és beszedések beállítása
+description: Ez a cikk a beszedési funkciók beállítását ismerteti.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351838"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Ha eseteket fog használni a beszedési munka megszervezéséhez, akkor állíts
 Állítsa be az alapértelmezett ok-kódot, amely akkor használatos, amikor a tranzakciók leírásra kerülnek a **beszedések** lapon. Módosíthatja a kódot a leírási folyamat ideje alatt.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Mappa beállítása e-mail mellékletekhez, e-mail sablonok létrehozása
-Ha e-mail üzeneteket fog küldeni a **beszedések** lapról, amelyek Microsoft Excel mellékletekkel rendelkeznek, akkor létrehozhat opcionális e-mail sablonokat ezekhez az üzenetekhez.
+Ha e-mail üzeneteket fog küldeni a **Beszedések** lapról, amelyek Microsoft Excel mellékletekkel rendelkeznek, akkor létrehozhat opcionális e-mail sablonokat ezekhez az üzenetekhez.
 
 ## <a name="set-up-accounts-receivable-parameters-for-collections"></a>Kinnlevőségek paramétereinek beállítása a beszedésekhez
 Állítsa be a kinnlevőségek paramétereit, amelyek a **beszedések** lapon jelennek meg.
@@ -100,5 +99,4 @@ További információ a következő témakörökben olvasható:
  - [Fizetési felszólítások feldolgozása](tasks/process-collection-letters.md)
 
  - [A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata](tasks/review-collections-information.md)
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Általános napló feldolgozása"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, a belső ellenőrzés megfelelő működését."
+title: Általános napló feldolgozása
+description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, illetve a belső ellenőrzés megfelelő működését.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358439"
 ---
-
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, a belső ellenőrzés megfelelő működését.  
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, illetve a belső ellenőrzés megfelelő működését.  
 
 ## <a name="journal-names"></a>Naplónevek
 
@@ -97,4 +96,3 @@ További információ a következő témakörökben olvasható:
 A **Feladás szimulálása** lehetőséget a legtöbb napló esetében az **Ellenőrzés** menüben találhatja. Amikor érvényesít egy naplót az **Ellenőrzés** funkcióval, a rendszer teszteli a naplót bizonyos hibákat keresve. Ha a **Feladás szimulálása** funkciót használja, akkor a rendszer lefuttatja mindazokat a folyamatokat, amelyek a feladás során végbemennek, anélkül, hogy ténylegesen feladná a naplót. Ezt követően ellenőrizheti a feladással kapcsolatban megjelenő üzeneteket, kijavíthatja az észlelt hibákat, majd rákattinthat a **Feladás** menüre a napló feladásához. 
 
 A **Feladás szimulálása** lehetőség nem áll rendelkezésre a kötegelt feldolgozásnál. Van azonban elérhető kód, amellyel végrehajtható a kötegelt feladás szimulálása, és a fejlesztők kibővíthetik a kódot a funkció hozzáadása érdekében.  
-

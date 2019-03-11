@@ -1,13 +1,13 @@
---- 
-title: "Adatmodell-definíciók kiválasztása formátumok létrehozásakor"
-description: "A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit."
+---
+title: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
+description: A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334496"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Adatmodell-definíciók kiválasztása formátumok létrehozásakor
 
@@ -81,7 +81,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
     * Az ER-tervező segítségével adja meg a modell-hozzárendeléseket a szükséges gyökérelemekhez.  
 2. Kattintson a Tervező pontra.
     * A kiválasztott modell-hozzárendelésnek a kiválasztott modell gyökéreleméhez való beállításának szimulálása.  
-3. A fán válassza ki a „Dynamics 365 for Operations\Table records” pontot.
+3. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 4. Kattintson a Gyökér hozzáadása gombra.
 5. A Név mezőbe írja be ezt: 'Főkönyv'.
 6. Írja be a Tábla mezőbe a „LedgerJournalTrans” szöveget.
@@ -98,5 +98,4 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 4. Az Adatmodell mezőben adjon meg vagy válasszon ki egy értéket.
     * Vegye figyelembe, hogy mostantól csak egy gyökérelem érhető el az alkalmazás adatforrásaihoz való hozzárendelésre. Amikor van legalább egy modell-hozzárendelés, csak a modell alkalmazás-adatforrásokhoz hozzárendelt gyökérelemei választhatók ki modelldefinícióként az ER-formátum hozzáadása közben.   
 5. Zárja be a lapot.
-
 

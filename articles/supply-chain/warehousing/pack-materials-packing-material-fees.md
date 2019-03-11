@@ -1,13 +1,13 @@
 ---
-title: "Csomagolóanyagok és díjak"
-description: "A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban."
+title: Csomagolóanyagok és díjak
+description: A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312301"
 ---
-
 # <a name="packing-materials-and-fees"></a>Csomagolóanyagok és díjak
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Ha a vállalat fizeti a csomagolóanyag-díjakat, ne adja meg a vevő licencszá
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Csomagolóanyag súlyadatainak nyomtatása a számlákra
 A számlákra rá lehet nyomtatni a csomagolóanyag súlyadatait, és jelezni lehet, hogy ki fizeti a számlán szereplő csomagolóanyag-díjakat. A súlyok összegzése a csomagolóanyag-kód alapján történik.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Az anyagjegyzék- és receptúrasorok kiadása a raktárba"
-description: "Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba."
+title: Az anyagjegyzék- és receptúrasorok kiadása a raktárba
+description: Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343144"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,7 @@ A következő ábrán egy termelési rendelés látható, amelyhez két művelet
 
 ![Példa anyag kiadására műveletszám szerint](media/two-operations.PNG)
 
-Ha gyors áttekintést szeretne arról, lehet kiadni a késztermékek arányában anyagokat, nézze meg ezt a rövid YouTube-videót: [A termelési rendelés kiadási folyamatának fejlesztései Dynamics 365 for Finance and Operations alkalmazásban](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
+Ha gyors áttekintést szeretne arról, lehet kiadni a késztermékek arányában anyagokat, nézze meg ezt a rövid YouTube-videót: [A termelési rendelés kiadási folyamatának fejlesztései Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0) alkalmazásban
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Anyagok kiadása a késztermékek mennyiségének arányában
 
@@ -99,4 +98,3 @@ Nyersanyagok kiadhatók késztermékek részleges mennyiségéhez vagy meghatár
     A rendelkezésre álló egységek a késztermék egység-szekvenciacsoportazonosítójában vannak meghatározva.
 
     Egy készterméknek például a következő egységátváltással rendelkezik a font (lbs.) és a raklap (PL) között: 1 PL = 100 lbs. Termelési rendelés létrehozásához 10 000 lbs. késztermékhez kiadhatja a nyersanyagokat annyi raklaphoz, amennyit gyártani tervez. Válassza a **PL** lehetőséget egységként, majd adjon meg egy megfelelő számot a **Mennyiség** mezőben.
-

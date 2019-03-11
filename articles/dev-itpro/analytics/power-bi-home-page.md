@@ -1,13 +1,13 @@
 ---
-title: "PowerBI.com megoldások kezdőlapja"
-description: "Ez a témakör a rendelkezésre PowerBI.com-megoldásokat sorolja fel, és útbaigazítást ad azon erőforrásokhoz, ahol többet tudhat meg a megoldásokról."
+title: PowerBI.com megoldások kezdőlapja
+description: Ez a témakör a rendelkezésre PowerBI.com-megoldásokat sorolja fel, és útbaigazítást ad azon erőforrásokhoz, ahol többet tudhat meg a megoldásokról.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316694"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com megoldások kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-A következő PowerBI.com megoldások a Dynamics 365 Pénzügy és műveletek környezetben érhetők el.
+A következő PowerBI.com megoldások érhetők el Dynamics 365 for Finance and Operations környezetekhez.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>A PowerBI.com megoldások itt érhetők el: Lifecycle Services (LCS)
 
 A következő PowerBI.com megoldások az LCS megosztott eszközök könyvtárában érhetők el. A megosztott eszközök könyvtárában ellenőrizze a verzióinformációt, hogy a környezetnek megfelelő verziót töltse le.
 
 > [!NOTE]
-> Az alábbi listán szereplő PowerBI.com megoldások többsége a Dynamics 365 Pénzügy és műveletek újabb változatainak analitikai munkaterületeibe van beágyazva. Az analitikus munkaterületek használatakor nem szükséges ezeket a megoldásokat letölteni az LCS megosztott eszközök könyvtárából. A jelen listán szereplő témakörök jelzik, hogy ezek a PowerBI.com megoldások hol vannak beágyazva a Pénzügy és a műveletek alkalmazásban (ahol ilyenek használatban vannak).
+> Az alábbi listán szereplő PowerBI.com megoldások többsége a Dynamics 365 for Finance and Operations újabb változatainak analitikai munkaterületeibe van beágyazva. Az analitikus munkaterületek használatakor nem szükséges ezeket a megoldásokat letölteni az LCS megosztott eszközök könyvtárából. A jelen listán szereplő témakörök jelzik, hogy ezek a PowerBI.com megoldások hol vannak beágyazva a Pénzügy és a műveletek alkalmazásban (ahol ilyenek használatban vannak).
 
 - [Tényleges - költségvetés](ledger-budgets-power-bi.md)
 - [Készpénzáttekintés](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
@@ -59,12 +58,11 @@ A következő PowerBI.com megoldások az LCS megosztott eszközök könyvtáráb
 
 ## <a name="powerbicom-solutions-available-from-appsource"></a>Az AppSource-ban elérhető PowerBI.com megoldások
 
-A következő PowerBI.com megoldások itt érhetők el: [Microsoft AppSource](https://appsource.microsoft.com).
+A következő PowerBI.com megoldások érhetők el környezetekhez [Microsoft AppSource](https://appsource.microsoft.com) helyről.
 
 > [!NOTE]
-> Ezek a megoldások elavulttá váltak a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Ezek a megoldások elavulttá váltak a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) helyen.
 
 - Költségkezelés
 - [Pénzügyi teljesítmény](financial-performance-power-bi-content-pack.md)
 - [Kiskereskedelmi csatorna teljesítménye ](retail-channel-performance-dashboard-power-bi-data.md)
-

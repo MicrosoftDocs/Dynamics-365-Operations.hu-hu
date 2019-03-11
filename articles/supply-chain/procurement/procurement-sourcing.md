@@ -1,13 +1,13 @@
 ---
-title: "Beszerzési és forrásparaméterek kezdőlapja"
-description: "Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel."
+title: Beszerzési és forrásparaméterek kezdőlapja
+description: Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
 author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 091b50c26cf596fc03e42f60fc662b8d1f25f06b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338590"
 ---
-
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
 [!include [banner](../includes/banner.md)]
@@ -56,11 +55,11 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Szállítói együttműködés a vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
 -   [Szállítói együttműködés beállítása és karbantartása](set-up-maintain-vendor-collaboration.md)
--   [Bejövő szállítmánykészlet bemutató parancsprogramja a Microsoft Dynamics 365 for Finance and Operations rendszerhez](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(ismertető)
+-   [Bejövő szállítmánykészlet bemutató parancsfájl: Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(ismertető)
 -   [Bizományosi készlet figyelése szállítói együttműködéssel](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md) (csak a Dynamics AX 2016 februári és 2016 májusi verziói)
 -   [Biztonsági funkciók konfigurálása a szállítói portál felhasználói számára](configure-security-vendor-portal-users.md) (csak a Finance and Operations 2016 februári és 2016 májusi verziói)
--   [Szállítói együttműködés mobil munkaterület a Microsoft Dynamics 365 for Finance and Operations alkalmazás számára](vendor-collaboration-mobile-workspace.md)
+-   [Szállítói együttműködési mobil munkaterület a Microsoft Dynamics 365 for Finance and Operations alkalmazáshoz](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Beszerzési termék kezelése
 -   [Beszerzési katalógusok](procurement-catalogs.md)
@@ -102,7 +101,6 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (útmutató)
 -   [Beszerzési irányelvek](purchase-policies.md)
 -   [Beszerzési irányelvek létrehozása](tasks/create-purchasing-policies.md)
-
 
 
 

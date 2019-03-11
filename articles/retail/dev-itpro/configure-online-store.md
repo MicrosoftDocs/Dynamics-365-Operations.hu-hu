@@ -1,13 +1,13 @@
 ---
-title: "Online áruházak beállítása"
-description: "Ez a cikk olyan témakörökre mutató hivatkozásokat tartalmaz, amelyek segítenek az online áruház központi konfigurálásában és kezelésében."
+title: Online áruházak beállítása
+description: Ez a cikk olyan témakörökre mutató hivatkozásokat tartalmaz, amelyek segítenek az online áruház központi konfigurálásában és kezelésében.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: d353baf67540b64168f29be3506d73e721e73523
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354368"
 ---
-
 # <a name="configure-online-stores"></a>Online áruházak beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -37,8 +36,8 @@ A következő táblázatban felsorolt témakörök segítenek konfigurálni a Re
 
 | Feladat                                                | Részletek                                                                                                                                                                                                                                                                                                                                                   | Témakörök                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Retail-összetevők konfigurálása.                        | A kiskereskedelmi műveletek adatainak kezelése és beállítása. Ezen információk tartalma: áruházak, adók, termékek, ajándékutalványok, promóciók és kedvezmények.                                                                                                                                                                                                          | [A Retail beállítása és karbantartása](https://technet.microsoft.com/en-us/library/hh597201.aspx) (TechNet-tartalom a Microsoft Dynamics AX 2012-höz)                                                                                                                                                                                                                                                                                          |
-| Kiskereskedelmi csatorna navigációs hierarchiájának konfigurálása.    | Hozza létre a kiskereskedelmi csatornák navigációs kategóriahierarchiáját, amely kategóriaszerkezet beállítására használható online áruházon keresztül kínált termékekhez. Ön megadja a kategóriahierarchiát, majd termékeket, termékattribútumok csoportjait és attribútumértékeket rendel a kategóriákhoz. Ezután a kategóriahierarchiát hozzárendeli egy online áruházhoz.                            | [Kiskereskedelmi hierarchia beállítása](https://technet.microsoft.com/en-us/library/hh580593.aspx) (TechNet-tartalom az AX 2012-höz) [Attribútumok és attribútumtípusok beállítása.](https://technet.microsoft.com/en-us/library/hh227548.aspx) (TechNet-tartalom az AX 2012-höz) [Attribútumok és attribútumtípusok beállítása.](https://technet.microsoft.com/en-us/library/jj728713.aspx) (TechNet-tartalom az AX 2012-höz) |
+| Retail-összetevők konfigurálása.                        | A kiskereskedelmi műveletek adatainak kezelése és beállítása. Ezen információk tartalma: áruházak, adók, termékek, ajándékutalványok, promóciók és kedvezmények.                                                                                                                                                                                                          | A [Retail beállítása és karbantartása](https://technet.microsoft.com/en-us/library/hh597201.aspx) (TechNet-tartalom a Microsoft Dynamics AX 2012-höz)                                                                                                                                                                                                                                                                                          |
+| Kiskereskedelmi csatorna navigációs hierarchiájának konfigurálása.    | Hozza létre a kiskereskedelmi csatornák navigációs kategóriahierarchiáját, amely kategóriaszerkezet beállítására használható online áruházon keresztül kínált termékekhez. Ön megadja a kategóriahierarchiát, majd termékeket, termékattribútumok csoportjait és attribútumértékeket rendel a kategóriákhoz. Ezután a kategóriahierarchiát hozzárendeli egy online áruházhoz.                            | [Kiskereskedelmi hierarchia beállítása](https://technet.microsoft.com/en-us/library/hh580593.aspx) (TechNet-tartalom az AX 2012-höz) [Attribútumok és attribútumtípusok beállítása](https://technet.microsoft.com/en-us/library/hh227548.aspx). (TechNet-tartalom az AX 2012-höz) [Kiskereskedelmi attribútumcsoportok beállítása](https://technet.microsoft.com/en-us/library/jj728713.aspx). (TechNet-tartalom az AX 2012-höz) |
 | Adja hozzá az online áruházat a szervezeti hierarchiához. | A létrehozott online áruházban termékválaszték hozzárendelése, a megrendelések teljesítése vagy az online áruházi adatokat tartalmazó jelentések előállítása előtt az áruházat hozzá kell rendelnie egy vagy több szervezeti hierarchiához. Az online áruházat hozzá kell rendelnie legalább egy olyan szervezeti hierarchiához, amely termékválasztékot tartalmaz. | [Online áruház beállítása](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-tartalom az AX 2012-höz)                                                                                                                                                                                                                                                                                                     |
 | Adjon hozzá szállítási módokat az online áruházhoz.          | Válassza ki a szállítási módokat, amelyeket az online áruház kínál.                                                                                                                                                                                                                                                                                                 | [Online áruház beállítása](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-tartalom a Microsoft AX 2012-höz)                                                                                                                                                                                                                                                                                                     |
 | Feleltessen meg attribútumokat és adjon hozzá metaadatokat.                   | Jelölje ki azokat a beállításokat, amelyek az attribútumok viselkedését jelzik az online áruház egyes kategóriáinál vagy csatornatermékeinél a Microsoft SharePoint webhelyen.                                                                                                                                                                                              | [Online áruház beállítása](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-tartalom az AX 2012-höz)                                                                                                                                                                                                                                                                                                     |
@@ -59,7 +58,6 @@ A következő táblázatban felsorolt témakörök segítenek konfigurálni a Re
 | Feladat                                 | Részletek                                                                                                                               | Témakörök                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Csatornaintegrácis profilok beállítása. | A profilok lehetővé teszik a Retail összetevőinek egymással folytatott kommunikációját. Állítson be profilokat az adatcsere beállításainak konfigurálása előtt. | [Valós idejű szolgáltatási profil beállítása](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet-tartalom az AX 2012-höz) [Csatornaprofil beállítása](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet-tartalom az AX 2012-höz) |
-
 
 
 

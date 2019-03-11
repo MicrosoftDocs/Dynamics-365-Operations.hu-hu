@@ -1,13 +1,13 @@
 ---
-title: "Jóváhagyási folyamatok konfigurálása munkafolyamatban"
-description: "A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait."
+title: Jóváhagyási folyamatok konfigurálása munkafolyamatban
+description: A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325641"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Jóváhagyási folyamatok konfigurálása munkafolyamatban
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Beállíthatja, hogy a rendszer automatikusan intézkedjen arról a dokumentumr�
     </tr>
     <tr>
     <td><strong>Felhasználó</strong></td>
-    <td>Konkrét Microsoft Dynamics 365 for Finance and Operations-felhasználók</td>
+    <td>Meghatározott Microsoft Dynamics 365 for Finance and Operations-felhasználók</td>
     <td>
     <ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Microsoft Dynamics 365 for Finance and Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listába.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong>: lista az összes Microsoft Dynamics 365 for Finance and Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listába.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ Egy jóváhagyási eljárás jóváhagyási lépésekből áll. Az alábbi eljá
 1. A munkafolyamat-szerkesztőben kattintson duplán a jóváhagyási folyamatra. A munkafolyamat-szerkesztő megjeleníti a jóváhagyási eljárás lépéseit.
 2. Jóváhagyási lépés hozzáadásához húzza a **Munkafolyamat-elemek** lehetőséget a vászonra.
 3. A jóváhagyási lépés konfigurálásához lásd a [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md) pontot.
-

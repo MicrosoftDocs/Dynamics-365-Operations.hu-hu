@@ -1,13 +1,13 @@
 ---
-title: "Folyamatkompenzáció"
-description: "A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján."
+title: Folyamatkompenzáció
+description: A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján.
 author: kherr75
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 0886f60dbdfc531893cd2c1b23df5b52a4a2f4b6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304704"
 ---
-
 # <a name="process-compensation"></a>Folyamatkompenzáció
 
 [!include [banner](includes/banner.md)]
@@ -80,4 +79,3 @@ Miután a kompenzációs összegeket egy alkalmazottra nézve ellenőrizték és
 Amint egy vagy több alkalmazotti eseményállapota Jóváhagyva értékre módosul, ezek betölthetők az alkalmazottak Fix kompenzációs rekordjaiba. Ezt úgy teheti meg, hogy vagy egyenként kijelöl minden alkalmazotti eseményt, és az **Alkalmazotti eredmények** lapon az **Alkalmazotti kompenzáció betöltése** gombra kattint, vagy kattint a **Kompenzáció betöltése** lehetőségre a **Folyamateredmények** lapon az összes jóváhagyott alkalmazotti események egyszerre történő betöltéséhez.
 
 Kattintson az **OK** gombra a **Kompenzáció betöltése** párbeszédpanelen, amellyel hozzáadja a nullától különböző kompenzációs műveletsorokat az **Alkalmazott fix kompenzációja** lapon.
-

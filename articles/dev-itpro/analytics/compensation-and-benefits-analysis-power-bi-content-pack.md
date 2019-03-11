@@ -1,13 +1,13 @@
 ---
-title: "Kompenzáció és juttatások Power BI-tartalom"
-description: "Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom."
+title: Kompenzációk és Juttatások Power BI tartalom
+description: 'Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom.'
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,29 +17,28 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6834940b16749461066e8f1000cbb7c2d4371109
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327435"
 ---
-
-# <a name="compensation-and-benefits-power-bi-content"></a>Kompenzáció és juttatások Power BI-tartalom
+# <a name="compensation-and-benefits-power-bi-content"></a>Kompenzációk és Juttatások Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
-Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás oldal a Power BI szolgáltatáshoz](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData) oldalon. A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés                     | Tartalom                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Kompenzáció és juttatások elemzése | Órabéres és bérezéses alkalmazottak vállalatonként, átlagos órabér, átlagos bér, alkalmazottak foglalkoztatási típus és tervben való részvétel alapján |
 | Alkalmazotti juttatások          | Alkalmazotti részvétel kijelölt juttatás alapján                                                                                               |
 
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A Kompenzáció és juttatások tartalomcsomag jelentéseinek feltöltésére a Finance and Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
@@ -68,4 +67,3 @@ A Kompenzáció és juttatások tartalomcsomag jelentéseinek feltöltésére a 
 | Munkaerő\_WorkerName             | Keresztnév, vezetéknév és teljes név                                                                       | Munkaerő\_CurrentWorker, Munkaerő\_TerminatedWorker, Munkaerő\_WorkerTrend |
 | Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | Munkaerő\_CurrentWorker, Munkaerő\_TerminatedWorker, Munkaerő\_WorkerTrend |
 | Munkaerő\_WorkerTrend            | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat, Munkaerő\_Kompenzáció, Munkaerő\_GeographicLocation, Munkaerő\_Teljesítmény, Munkaerő\_WorkerName, Munkaerő\_ReportsToWorkerName, Munkaerő\_CalendarOffset, Munkaerő\_Dátum, Munkaerő\_WorkerTitle, Munkaerő\_Demográfia, Munkaerő\_Foglalkoztatás, Munkaerő\_Feladat, Munkaerő\_WorkerBenefit |
-

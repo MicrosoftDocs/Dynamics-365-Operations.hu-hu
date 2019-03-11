@@ -1,13 +1,13 @@
 ---
-title: "Készlet zárása"
-description: "A kiadási tranzakció bevételezési tranzakciókkal való kiegyenlítésének részeként lehetősége van frissíteni a főkönyvet, hogy az tükrözze a végrehajtott módosításokat."
+title: Készlet zárása
+description: A kiadási tranzakció bevételezési tranzakciókkal való kiegyenlítésének részeként lehetősége van frissíteni a főkönyvet, hogy az tükrözze a végrehajtott módosításokat.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326492"
 ---
-
 # <a name="inventory-close"></a>Készlet zárása
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ Néhány körülmény között előfordulhat, hogy nem tud semmit sem tenni a fi
 Bizonyos esetekben szükség lehet egy befejezett készletzárás sztornírozására annak érdekében, hogy a kiegyenlítéseket a módosítások előtti állapotába állítsa vissza. Befejezett készletzárás sztornírozása esetén a készletet újra megnyitja a rendszer, hogy lehetővé tegye a készletzárás által lefedett időszakhoz kapcsolódó feladásokat. Kapcsolódó módosításokat a főkönyvben is végrehajthatja. Miután befejezte a szükséges módosításokat, ismét futtathatja a készletzárást az érintett periódusra. 
 
 **Megjegyzés:** Csak a legutóbb lezárt készletidőszakot lehet újra megnyitni. A korábbi készlet zárásának sztornírozása érdekében, először sztorníroznia kell minden egyes készletzárást a legutolsó zárással kezdődően.
-
 
 
 

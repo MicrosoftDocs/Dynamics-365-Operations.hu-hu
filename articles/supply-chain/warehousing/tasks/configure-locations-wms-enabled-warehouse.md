@@ -1,13 +1,13 @@
---- 
-title: "Helyek konfigurálása WMS szolgáltatással rendelkező raktárban"
-description: "Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait."
+---
+title: Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
+description: Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2be3c7cb33225041872e8b747ba28063f897dae9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1082c86361180db84bb2b5c0b8158816f76a219e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337325"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
@@ -193,5 +193,4 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 5. A Hely mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 7. Zárja be a lapot.
-
 

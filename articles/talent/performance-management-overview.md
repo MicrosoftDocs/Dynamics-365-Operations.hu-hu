@@ -1,13 +1,13 @@
 ---
-title: "Teljesítménykezelés"
-description: "A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak."
+title: Teljesítménykezelés
+description: A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304628"
 ---
-
 # <a name="performance-management"></a>Teljesítménykezelés
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Az **ESS** munkaterületéről való elérés esetén a **teljesítménynapló**
 
 A teljesítménynaplót emellett külső webhelyhez is kapcsolhatja, ha tárolja az adott webhely URL-címét. Ha a napló célokhoz vagy teljesítmény-ellenőrzésekhez kapcsolódik, akkor hozzárendelheti egyhez vagy többhöz. Ha a teljesítménynaplót az **MSS** oldalról érte el, akkor megadhatja ugyanazokat az adatokat, amelyeket az alkalmazotti naplóban is. Ezenkívül megadhatja, hogy melyik alkalmazottnak hozza létre a naplót. Kiválaszthatja, hogy meg szeretné-e osztani a vezetői naplót az alkalmazottal.
 
-### <a name="praise"></a>Dicséret
+### <a name="send-feedback"></a>Visszajelzés küldése
 
-A teljesítménynapló egy kiegészítő funkciót is tartalmaz, melynek neve Dicséret. Amikor rákattint a **Pozitív visszajelzés küldése** lehetőségre, válasszon ki egy alkalmazottat, és adjon visszajelzést e-mailben az adott alkalmazottról. Az üzenetet elküldi a rendszer az érintett alkalmazottnak, az alkalmazott vezetőjének, a visszajelzést küldő alkalmazottnak és az alkalmazott vezetőjének. Teljesítménynapló-bejegyzés jön létre minden olyan személy, akik megkapják a pozitív visszajelzést.
+A teljesítménynapló egy kiegészítő funkciót is tartalmaz, melynek neve Visszajelzés. Amikor rákattint a **Visszajelzés küldése** lehetőségre, válasszon ki egy alkalmazottat, és adjon visszajelzést e-mailben az adott alkalmazottról. Az üzenetet elküldi a rendszer a visszajelzést kapó alkalmazottnak, az alkalmazott vezetőjének, a visszajelzést küldő alkalmazottnak és az alkalmazott vezetőjének. Teljesítménynapló-bejegyzés jön létre minden olyan személyhez, akik megkapják a visszajelzést.
 
 ## <a name="goals"></a>Célok
 A **teljesítménycélok** oldal révén könnyebben nyomon követheti a célokat, amelyeket a vezetője létrehozott Önnek. Tetszőleges számú célt hozhat létre, és ezen célok eltérő időszakokra és teljesítmény-ellenőrzésekre terjedhetnek ki. Emellett egyszerű vagy összetett célokat is létrehozhat, attól függően, hogy mennyi információt szeretne megadni a célról. Célok nem szükségesek a teljesítményellenőrzésekhez. 
@@ -151,7 +150,6 @@ A teljesítménynapló forrástípusai leírják, hogy honnan származnak a telj
 ### <a name="review-types"></a>Ellenőrzési típusok
 
 A teljesítmény-ellenőrzés típusai révén szabályozhatja egy ellenőrzés működését. Engedélyezi vagy letiltja a munkafolyamatot egy ellenőrzésnél. Ha az ellenőrzés nem használ munkafolyamatot, akkor definiálhatja azt az alapértelmezett állapotot, amelyet a rendszer a felülvizsgálat létrehozásakor használ. Meghatározhatja azt is, hogy az alkalmazott, a vezető vagy mindkettő szükséges-e az ellenőrzés láttamozáshoz.
-
 
 
 

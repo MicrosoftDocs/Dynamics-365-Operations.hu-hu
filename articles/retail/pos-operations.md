@@ -1,40 +1,39 @@
 ---
-title: "Online és offline pénztár (POS) műveletek"
-description: "Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) műveleteinek részleteit mutatja be. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el."
+title: Online és offline pénztár (POS) műveletek
+description: Ez a témakör ismerteti a pénztár (POS) műveleteit Microsoft Dynamics 365 for Retail alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353816"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
 [!include [banner](includes/banner.md)]
 
-A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. A műveletek konfigurálása és kezelése a Microsoft Dynamics 365 for Retail háttérirodai szolgáltatásánál történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
+A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. Műveletek konfigurálása és kezelése a Microsoft Dynamics 365 for Retail háttérirodában történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
 
-A következő táblázatban megtalálható a érhetők el a Retail Modern POS és a felhőből Dynamics 365 for Retail POS-műveletekkel kapcsolatos részletek. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
+A következő táblázatban a Retail Modern POS és a Cloud POS for Dynamics 365 for Retail rendszerekben rendelkezésre álló műveleteket találja. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
 
-Bizonyos műveleteket nem érhető el a Retail Modern POS vagy Dynamics 365 for Retail POS felhőből. Ezek a műveletek közül bármelyik területspecifikus szükséges további bővítmények és a konfigurációs műveletek. Más tulajdonságok és a Microsoft Dynamics AX 2012 rendszerből származó funkciók, amelyek jelenleg nem támogatott.
+Bizonyos műveleteket jelenleg nem érhetők el a Retail Modern POS vagy Cloud POS for Dynamics 365 for Retail rendszerben. Ezek a műveletek közül bármelyik területspecifikus szükséges további bővítmények és a konfigurációs műveletek. Más tulajdonságok és a Microsoft Dynamics AX 2012 rendszerből származó funkciók, amelyek jelenleg nem támogatott.
 
 A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 
@@ -199,4 +198,3 @@ A felfüggesztett tranzakciók ‡ a POS offline állapotban, ha csak az aktuál
 A felfüggesztett tranzakciók ‡ a POS offline állapotban a jelenlegi offline adatbázisban, ha csak az aktuális jegyzék offline adatbázis is hívható.
 
 \*\* A felfüggesztett tranzakciók ‡ a POS offline állapotban a jelenlegi offline adatbázisban, ha csak az aktuális jegyzék offline adatbázis látható a naplóban.
-

@@ -1,14 +1,14 @@
 ---
-title: "Biztonság és szerepkörök kezelése az Attract alkalmazásban"
-description: "Ez a témakör a Microsoft Dynamics 365 for Talent - Attract szerepkör szerinti biztonságáról ad tájékoztatást."
+title: Biztonság és szerepkörök kezelése az Attract alkalmazásban
+description: Ez a témakör az adatentitások biztonságával kapcsolatban nyújt tájékoztatást a Microsoft Dynamics 365 for Talent - Attract rendszerben.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374780"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Biztonság és szerepkörök kezelése az Attract alkalmazásban
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract szerepköralapú biztonságot használ. Más szóval a hozzáférést nem egyéni felhasználókhoz rendeli, hanem biztonsági szerepkörökhöz, amelyekhez a felhasználók hozzá vannak rendelve. Biztonsági szerepkörhöz hozzárendelt felhasználó hozzáfér a szerepkörhöz társított jogosultságok csoportjához.
+A Microsoft Dynamics 365 for Talent Attract szerepköralapú biztonságot használ. Más szóval a hozzáférést nem egyéni felhasználókhoz rendeli, hanem biztonsági szerepkörökhöz, amelyekhez a felhasználók hozzá vannak rendelve. Biztonsági szerepkörhöz hozzárendelt felhasználó hozzáfér a szerepkörhöz társított jogosultságok csoportjához.
 
 Az Attract öt alapvető felhasználói szerepkört nyújt:
 
@@ -65,7 +64,7 @@ A toborzó szerepkörhöz hozzárendelt felhasználók rendelkeznek-e teljes olv
 
 ## <a name="interviewer"></a>Interjúkészítő
 
-Bármely felhasználó, aki Microsoft Azure Active Directory (Azure AD) fiókkal rendelkezik a szervezeteben hozzáadható a toborzócsoporthoz interjúkészítőként Az interjúkészítő szerepkörhöz hozzárendelt felhasználók feladat részleteit és a pályázók adatait azon feladatokhoz, amelyekre vonatkozóan a toborzócsapat tagjai. Azokn feladatok esetében az interjúkészítők felvételi ajánlásokat adhatnak és a pályázókkal kapcsolatban is adhatnak visszajelzést. Azonban nem frissíthetik a pályázók adatait és a feladat részleteit.
+Bármely felhasználó, aki Azure Active Directory (Azure AD) fiókkal rendelkezik a szervezeteben hozzáadható a toborzócsoporthoz interjúkészítőként Az interjúkészítő szerepkörhöz hozzárendelt felhasználók feladat részleteit és a pályázók adatait azon feladatokhoz, amelyekre vonatkozóan a toborzócsapat tagjai. Azokn feladatok esetében az interjúkészítők felvételi ajánlásokat adhatnak és a pályázókkal kapcsolatban is adhatnak visszajelzést. Azonban nem frissíthetik a pályázók adatait és a feladat részleteit.
 
 ## <a name="read-only"></a>Csak olvasható
 
@@ -108,7 +107,7 @@ A következő jogosultságok a pályázókra vonatkozó feladatspecifikus adatok
 | Szakasz előreléptetése           | Elutasíthat, ha a felhasználó a toborzócsoport tagja | Előreléptethet, ha a felhasználó a toborzócsoport tagja | Nem engedélyezett |
 | Ajánlatkezelés indítása | Elindíthatja ajánlatkezelést | Tartozik egy konfigurációslehetőség az ajánlat tevékenységhez. | Nem engedélyezett |
 
-\*\* Egy konfigurációs beállítás a [visszajelzés tevékenység beállítása](./activities-attract.md#feedback-activity) helyen szabályozza, hogy az interjúkészítők láthatják-e egymás a visszajelzéseit.
+\*\* Egy konfigurációs beállítás a [visszajelzés tevékenység beállítása](activities-attract.md#feedback-activity) helyen szabályozza, hogy az interjúkészítők láthatják-e egymás a visszajelzéseit.
 
 ## <a name="process-templates"></a>Folyamatsablonok
 
@@ -146,4 +145,3 @@ A jelöltek azok a személyek akik hozzá lettek adva a tehetségállományhoz, 
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – jelöltek adatai | Létrehozás, olvasás, frissítés és törlés | Létrehozás, olvasás, frissítés és törlés | Nincs hozzáférés   |
 | Bizonylatok                   | Létrehozás, olvasás, frissítés és törlés | Létrehozás, olvasás, frissítés és törlés | Nincs hozzáférés   |
-

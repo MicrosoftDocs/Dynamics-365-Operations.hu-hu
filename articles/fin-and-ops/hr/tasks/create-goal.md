@@ -1,13 +1,13 @@
---- 
-title: "Cél létrehozása"
-description: "Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követhet méréseket, és a célokat ellenőrzéshez kapcsolhatja."
+---
+title: Cél létrehozása
+description: Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követhet méréseket, és a célokat ellenőrzéshez kapcsolhatja.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350711"
 ---
 # <a name="create-a-goal"></a>Cél létrehozása
 
@@ -59,5 +59,4 @@ Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követ
     * Gyakran vannak olyan célok, amelyek ugyanazok vagy hasonlók csoporttagok vagy az összes alkalmazott esetén.     A HR-adminisztrátor vagy vezető sablonokat hozhatnak létre ezekhez a célokhoz. Cél hozzáadható sablon alapján, majd módosítható úgy, hogy megfeleljen az ütemtervnek.  
     * Gyakran van több olyan cél, amely ugyanaz vagy hasonló csoporttagok vagy az összes alkalmazott esetén.     A HR-adminisztrátor vagy vezető létrehozhatnak egy vagy több célsablont tartalmazó célcsoportot. Célok hozzáadhatók célcsoportból, majd módosíthatók úgy, hogy megfeleljen az ütemtervnek.  
     * Ellenőrzés létrehozásánál célok adhatók hozzá az ellenőrzéshez. Az ellenőrzések feladat-útmutatójában megtekintheti, hogyan adhat hozzá célokat az ellenőrzésekhez.  
-
 

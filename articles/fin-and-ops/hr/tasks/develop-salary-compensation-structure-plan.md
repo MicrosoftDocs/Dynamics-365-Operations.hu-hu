@@ -1,13 +1,13 @@
---- 
-title: "Munkabér-/kompenzációs struktúra és terv kialakítása"
-description: "Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét."
+---
+title: Munkabér-/kompenzációs struktúra és terv kialakítása
+description: Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332771"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Munkabér-/kompenzációs struktúra és terv kialakítása
 
@@ -74,5 +74,4 @@ Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompe
     * Válassza ki azokat a feltételeket, amelyeknek egy alkalmazottnak meg kell felelnie annak érdekében, hogy a kompenzációs konstrukció érvényes legyen rá. A feltételek közé tartozhat a Részleg, a Szakszervezet, a Hely (Kompenzációs régió), a Feladat, a Funkció, a Feladattípus vagy a Kompenzációs szint. Az alkalmazottnak minden megadott feltételt teljesítenie kell ahhoz, hogy a kompenzációs konstrukció érvényes legyen rá. Ha nincs megadva feltétel, minden alkalmazottra érvényes a kompenzációs konstrukció. Ha egy alkalmazott nem felel meg az alkalmazhatósági szabályban megadott feltételeknek, vagy egy alkalmazhatósági szabály nem volt megadva a kompenzációs konstrukcióhoz, a kompenzációs konstrukció nem fog megjelenni a Keresésben az alkalmazotthoz tartozó Fix kompenzációs rekord létrehozásakor.  
 7. Zárja be a lapot.
 8. Zárja be a lapot.
-
 

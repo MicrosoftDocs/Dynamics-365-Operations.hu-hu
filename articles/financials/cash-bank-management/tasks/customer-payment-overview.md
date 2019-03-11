@@ -1,13 +1,13 @@
---- 
-title: "Vevői kifizetések áttekintése"
-description: "Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál használt különböző módszereken."
+---
+title: Vevői kifizetések áttekintése
+description: Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál használt különböző módszereken.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e82be0d68165f62bbdc72a70b0675c7418b14ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6e10d0d0a05b0594ba5cf6a77f474b461bd9dca
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317407"
 ---
 # <a name="customer-payment-overview"></a>Vevői kifizetések áttekintése
 
@@ -62,5 +62,4 @@ Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál haszn�
 21. A Fizetési hivatkozás mezőben adja meg a fizetési hivatkozást. gombra.
     * A kifizetési hivatkozás csak akkor szükséges, ha bejelöli azt, hogy a kifizetés egy letéti jegyen is szerepeljen.  
 22. Adja fel a vevői kifizetéseket. 
-
 

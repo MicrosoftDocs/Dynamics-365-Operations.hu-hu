@@ -1,32 +1,31 @@
 ---
-title: "Forráskeresés LinkedIn Recruiter segítségével"
-description: "Ez a témakör a gépi tanulásnak az állás- és állásjelölti javaslatok beszerzésére való használatával kapcsolatban tartalmaz tájékoztatást."
+title: Forráskeresés LinkedIn Recruiter segítségével
+description: Ez a témakör a gépi tanulásnak az állás- és állásjelölti javaslatok beszerzésére való használatával kapcsolatban tartalmaz tájékoztatást.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304633"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Forráskeresés LinkedIn Recruiter segítségével
 [!include[banner](../includes/banner.md)]
 
@@ -125,9 +124,9 @@ LinkedIn Recruiter használatával nyomon követheti, hogy pályázó jelentkeze
 > [!NOTE]
 > A pályázó- és pályázati adatok nem lesznek szinkronizálva a LinkedIn Recruiter-rel, ha a jelentkező nem lépett túl a potenciális szakaszon.
 
-### <a name="inmail-history"></a>InMail előzmények
+### <a name="inmail-history"></a>InMail-előzmények
 
-Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail előzményei a LinkedIn Recruiterben. Ha engedélyezve van, a pályázó teljes InMail előzményei megjeleníthetők. Megtekintheti, hogy a szervezetből ki váltott InMail üzeneteket a pályázóval, az üzeneteket azonban nem lehet megtekinteni.
+Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail előzményei a LinkedIn Recruiter szolgáltatásban. Ha engedélyezve van, a pályázó teljes InMail előzményei megjeleníthetők. Megtekintheti, hogy a szervezetből ki váltott InMail üzeneteket a pályázóval, az üzeneteket azonban nem lehet megtekinteni.
 
 Az InMail-előzmények megtekintéséhez ugorjon a jelentkező profiljára, menjen a **LinkedIn** lapra, és görgessen az előzmények megtekintéséhez a lap aljára. Ha a pályázóval beszélgetett, megtekintheti az InMail-előzményeket. Az InMail üzenetei az Attract rendszerével néhány óránként szinkronizálódnak.
 
@@ -139,7 +138,6 @@ A megjegyzéselőzmények megtekintéséhez ugorjon a jelentkező profiljára, m
 
 ### <a name="inmail-stub-profile"></a>InMail csonka profil
 
-Szerződés szintű hozzáféréssel elérhetők a LinkedIn InMail csonka profilok a LinkedIn Recruiterben. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord. Ha a pályázó már létezik a rendszerben egy e-mail címmel, vagy úgy döntött, hogy megosztja e-mail-címét a toborzóval, megtekintheti a jelölt e-mail-címét.
+Szerződés szintű hozzáféréssel elérhetők az InMail csonka profil a LinkedIn Recruiterben. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord. Ha a pályázó már létezik a rendszerben egy e-mail címmel, vagy úgy döntött, hogy megosztja e-mail-címét a toborzóval, megtekintheti a jelölt e-mail-címét.
 
 A pályázók listájának megtekintéséhez menjen a **Szaktudásgyűjtők** elemhez a rendszer által létrehozott LinkedIn szaktudásgyűjtők ellenőrzéséhez. A szaktudásgyűjtő a LinkedIntől kapott jelöltlistákat és a jelöltek csonka profiljait tartalmazza, a jelölt keresztnevét és vezetéknevét mutatva. A pályázó e-mail-azonosítója fog megjelenni, ha a pályázó az e-mail-címe megosztását választotta.
-

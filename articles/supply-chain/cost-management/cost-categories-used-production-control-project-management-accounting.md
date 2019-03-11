@@ -1,13 +1,13 @@
 ---
-title: "A gyártásvezérlésben és a projekt vezetés könyvelésében alkalmazott költségkategóriák"
-description: "A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ez a cikk tájékoztatást nyújt azokról a költségkategóriákról, amelyeket meg kell határozni a termelési munka ezen típusaihoz a termelés és a projekt céljai számára."
+title: A gyártásvezérlésben és a projekt vezetés könyvelésében alkalmazott költségkategóriák
+description: A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ez a cikk tájékoztatást nyújt azokról a költségkategóriákról, amelyeket meg kell határozni a termelési munka ezen típusaihoz a termelés és a projekt céljai számára.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326032"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>A gyártásvezérlésben és a projekt vezetés könyvelésében alkalmazott költségkategóriák
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésé
 -   A költségekhez és értékesítéshez kapcsolódó főkönyvi számlák rendszerint a költségkategóriához rendelt költségcsoportra vonatkozóan vannak meghatározva. Azonban bizonyos számlák egy adott egyéni költségkategóriára vonatkozóan vannak meghatározva.
 
 A **Költségkategóriák** lapon található további gombokkal elérheti a kijelölt költségkategóriára vonatkozó, projektekkel kapcsolatos információkat. Például megjelenítheti a projekthez kapcsolódó tranzakciókat, megadhatja az alkalmazottakat vagy a projekteket, meghatározhatja az óránkénti költségeket és az eladási árakat és megjelenítheti a jelentéseket.
-
 
 
 

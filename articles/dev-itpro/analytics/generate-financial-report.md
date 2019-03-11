@@ -1,13 +1,13 @@
 ---
-title: "Pénzügyi jelentések létrehozása"
-description: "Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban."
+title: Pénzügyi jelentések létrehozása
+description: Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340890"
 ---
-
 # <a name="generate-financial-reports"></a>Pénzügyi jelentések létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ A jelentések generálása során a következő lehetőségek közül választha
 
 Jelentés készítésekor az Ön által a Jelentésdefiníció lapon megadott beállításokat használatosak.
 
-## <a name="generate-a-financial-report"></a>Pénzügyi jelentés létrehozása
+## <a name="generate-a-financial-report"></a>Pénzügyi jelentés elkészítése
 
-Pénzügyi jelentés létrehozásához a Microsoft Dynamics 365 for Finance and Operations rendszerben lépjen a következő elemhez: **Főkönyv** \> **Lekérdezések és jelentések** \> **Pénzügyi jelentések**.
+A pénzügyi jelentések készítéséhez a Microsoft Dynamics 365 for Finance and Operations rendszerrel lépjen a **Főkönyv** \> **Lekérdezések és jelentések** \> **Pénzügyi jelentések** részhez.
 
 - Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre.
 - Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.
@@ -115,7 +114,7 @@ A sordefiníció vagy jelentési-fa definíció legalacsonyabb és legmagasabb �
 > [!TIP]
 > Érvényesítési célból ezt a folyamatot mindig érdemes lefuttatni havi jelentések előállítása előtt, illetve új építőelemek létrehozásakor.
 
-Értéktartományokat tartalmazó jelentésekből kevésbé valószínű, hogy hiányzik számla. Amikor csak lehetséges, újonnan létrehozott számlák szerepeltetéséhez használjon tartományokat az építőelemben. Ha bármely jelentésdefiníció értéke @ANY vállalat, akkor bejelentkezhet egy adott vállalathoz és arra vonatkozóan hiányzó számlaelemzést futtathat.
+Értéktartományokat tartalmazó jelentésekből kevésbé valószínű, hogy hiányzik számla. Amikor csak lehetséges, újonnan létrehozott számlák szerepeltetéséhez használjon tartományokat az építőelemben. Ha valamely jelentésdefiníció a @ANY vállalatra van beállítva, akkor bejelentkezhet egy adott vállalatba, és lefuttathatja a hiányzó számlák elemzését arra a vállalatra.
 
 > [!NOTE]
 > Ha új vállalat hozzáadására került sor, hozzá kell adnia azt a meglévő jelentések jelentési fáihoz, különben a vállalat nem fog szerepelni a hiányzó számla elemzésben.
@@ -158,4 +157,3 @@ Hiányzó számla elemzésekor a következő billentyűparancsok használhatók.
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 
 [A Report Designer felhasználói kezelőfelülete](report-designer-interface.md)
-

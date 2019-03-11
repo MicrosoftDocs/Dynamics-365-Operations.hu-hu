@@ -1,32 +1,30 @@
 ---
-title: "Előfizetési díjak napjainak csökkentése"
-description: "Ha egy meglévő előfizetési díjnál csökkenteni szeretné a napok számát, létrehozhat egy új tranzakciót, amelyben eltávolítja azt az időtartamot, amelynek már nem kell szerepelnie az előfizetési intervallumban."
+title: Előfizetési díjak napjainak csökkentése
+description: Ha egy meglévő előfizetési díjnál csökkenteni szeretné a napok számát, létrehozhat egy új tranzakciót, amelyben eltávolítja azt az időtartamot, amelynek már nem kell szerepelnie az előfizetési intervallumban.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 04b183d8fc8083c630bcb4e0e69fb755f8a50f95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c70e393c125eecef85e8711d1635250f5ff408d9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362004"
 ---
-
-
 # <a name="reduce-the-days-on-subscription-fees"></a>Előfizetési díjak napjainak csökkentése 
 
 [!include [banner](../includes/banner.md)]
@@ -55,6 +53,5 @@ Továbbá ha a csökkentési időszaknál a **Kezdő dátum** értéke január 2
 [Csökkentési napok – Példa](reduction-days-example.md)
 
   
-
 
 

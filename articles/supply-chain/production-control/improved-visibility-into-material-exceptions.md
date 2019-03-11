@@ -1,13 +1,13 @@
 ---
-title: "Betekintés az anyagkivételekbe"
-description: "Ez a témakör leírja, hogyan nyerhet jobb betekintést a nyersanyagkivételekbe a termelési rendelések és a kötegrendelések esetében."
+title: Betekintés az anyagkivételekbe
+description: Ez a témakör leírja, hogyan nyerhet jobb betekintést a nyersanyagkivételekbe a termelési rendelések és a kötegrendelések esetében.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344754"
 ---
 # <a name="visibility-into-material-exceptions"></a>Betekintés az anyagkivételekbe
 
@@ -67,4 +67,3 @@ A csempe kijelölésekor megnyílik a **Minden termelési hullám** lap. Ezt a l
 A **Figyelmet igénylő nyitott raktári munka** csempe azoknak az anyagjegyzék- és receptúrasoroknak a számát jeleníti meg, amelyekhez feldolgozatlan munka tartozik, és olyan nyersanyagdátumuk van, amely korábbi vagy ugyanaz, mint a munkaterület dátuma. A sorokatat egy művelet-erőforrásnak is fel kell dolgoznia, amely a munkaterület szűrőjére vonatkozik.
 
 A csempe kijelölésekor megnyílik a **Minden munka** lap. Ezt a lapot azoknak a nyitott munkafejléceknek a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó munkasorokat tartalmaznak. A **Minden munka** lapon manuálisan fel lehet dolgozni a munkát.
-

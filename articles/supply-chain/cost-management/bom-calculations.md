@@ -1,13 +1,13 @@
 ---
-title: "Anyagjegyzék-számítások"
-description: "A költségösszesítés és az eladási ár számítását anyagjegyzék-számításoknak nevezik, és indításuk a Számítások lapról történik. A témakör tájékoztatást nyújt az anyagjegyzék-számításokkal kapcsolatban."
+title: Anyagjegyzék-számítások
+description: A költségösszesítés és az eladási ár számítását anyagjegyzék-számításoknak nevezik, és indításuk a Számítások lapról történik. A témakör tájékoztatást nyújt az anyagjegyzék-számításokkal kapcsolatban.
 author: AndersGirke
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 29ea9ddefba3416a33cd0e2f873624cc5c781a55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341557"
 ---
-
 # <a name="bom-calculations"></a>Anyagjegyzék-számítások
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,6 @@ A rendelésspecifikus anyagjegyzék-számítás a legyártott cikkre vonatkozó 
 
 -   Először is, a rendelésspecifikus anyagjegyzék-számítással nem jön létre költségszámítási verzión belül cikk-költségrekord. Ezért az anyagjegyzék-számítási szabályok nem vonatkoznak a cikk-költség rekordok létrehozására vagy a költségrekordok felülírására.
 -   A rendelésspecifikus anyagjegyzék-számítás mindig az aktív költségrekordokat használja fel az összetevőkre, a költségkategóriákra és a közvetett költségek számítási képleteire vonatkozóan.
-
 
 
 

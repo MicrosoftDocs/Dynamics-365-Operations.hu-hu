@@ -1,13 +1,13 @@
 ---
-title: "Mezőleírások megtekintése és exportálása"
-description: "Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével."
+title: Mezőleírások megtekintése és exportálása
+description: Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359336"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ Ha a **Leírás nélküli mezőkkel együtt** beállításnál az **Igen** lehet
 Egy lap leírásainak exportálásához kövesse az alábbi lépéseket.
 
 1. Válasszon egy lapot a **Lap kijelölése** mezőben.
-2. Kattintson a jobb felső sarokban lévő **Megnyitás Microsoft Office programban** gombra, majd válassza a **FieldDescriptionTmp** lehetőséget.
+2. Kattintson a jobb felső sarokban lévő **Megnyitás Microsoft Office** programban gombra, majd válassza a **FieldDescriptionTmp** lehetőséget.
 
 ### <a name="searching-for-a-page"></a>Egy lap keresése
 
@@ -109,4 +108,3 @@ A lapok különféle módon megvalósítható megkereséséről bővebben feljeb
 ## <a name="additional-resources"></a>További erőforrások
 
 [Mező testreszabása – súgó](../../dev-itpro/user-interface/customize-field-help.md)
-

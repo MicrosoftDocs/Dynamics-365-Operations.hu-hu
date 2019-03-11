@@ -1,13 +1,13 @@
---- 
-title: "Munkaidő és jelenlét bérlistafolyamatának engedélyezése"
-description: "Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét bérlistafolyamatát."
+---
+title: Munkaidő és jelenlét bérlistafolyamatának engedélyezése
+description: Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét bérlistafolyamatát.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0174f438396d814d153befe4a59a79b6eebb2288
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 16d8fc2120dfb7b356b238957019a29d05963f9a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311105"
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Munkaidő és jelenlét bérlistafolyamatának engedélyezése
 
@@ -69,5 +69,4 @@ Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét 
 6. Bontsa ki az Időnyilvántartás szakaszt.
 7. Kattintson a Szerkesztés lehetőségre.
 8. A Fizetési megállapodás mezőben adjon meg vagy válasszon ki egy értéket.
-
 

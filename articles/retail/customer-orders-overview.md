@@ -1,13 +1,13 @@
 ---
-title: "Vevői rendelések a Retail Modern POS-ben"
-description: "Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja."
+title: Vevői rendelések a Retail Modern POS (MPOS) szolgáltatásban
+description: Ez a témakör a Retail Modern POS (MPOS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: hu-hu
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336612"
 ---
-
-# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Vevői rendelések a Retail Modern POS-ben
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Vevői rendelések a Retail Modern POS (MPOS) szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
+Ez a témakör a Retail Modern POS (MPOS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 
 A sokcsatornás kiskereskedelmi világ számos kiskereskedő biztosít lehetőséget vevői rendelésekre vagy speciális rendelésekre, hogy így elégítsen ki termékkel és teljesítéssel kapcsolatos különböző igényeket. Íme néhány tipikus forgatókönyv:
 
@@ -57,7 +56,7 @@ A kiskereskedők a készlethiány által okozott elmaradt értékesítések mini
 
 ## <a name="transaction-flow-for-customer-orders"></a>Tranzakció folyamata vevői rendeléseknél
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Vevői rendelés létrehozása Retail Modern POS-ben
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Vevői rendelés létrehozása a Retail Modern POS alkalmazásban
 
 1. Vevő hozzáadása a tranzakcióhoz
 2. Adjon hozzá termékeket a kosárhoz.
@@ -102,4 +101,3 @@ Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**
 ## <a name="additional-resources"></a>További erőforrások
 
 [Hibrid vevői rendelések](hybrid-customer-orders.md)
-

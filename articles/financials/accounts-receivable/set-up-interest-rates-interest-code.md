@@ -1,13 +1,13 @@
 ---
-title: "Kamatlábak beállítása kamatkódhoz"
-description: "A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon."
+title: Kamatlábak beállítása kamatkódhoz
+description: A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Interest
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 665c58fd29fb986bf51e10f5814c4793940c0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317775"
 ---
-
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Kamatlábak beállítása kamatkódhoz
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Beállíthat kamatlábakat, amelyek egy megadott százalékot számítanak.
 
 - A kamat összege az összes pénznemre vonatkozik.
 - A nem kötelező kamat összeg határaival lehet megadni.
-- <strong>Százalék</strong> van kiválasztva** <strong>a Kamat számítása alapján</strong> mezőben a <strong>Kamatkódok beállítása</strong> oldalon.
+- <strong>Százalék</strong> van kiválasztva** <strong>a **Kamat számítása alapján</strong> mezőben a <strong>Kamatkódok beállítása</strong> oldalon.
 
 Például, ha olyan kamatkódot szeretne beállítani, amely kéthavonta 5 % kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 2 értéket az **Összes kamat kiszámítása** mezőbe, és jelölje be **Hónap** lehetőséget.
 
@@ -129,7 +128,6 @@ A tartomány adatait a következőképpen kell beállítani.
 A kamatkódok dátum érvényességek. Ha szeretné módosítani a kamatlábat, létrehozhat egy **új verziót**, ami a jövőbeli dátum szerint hatályos.
 
 Különböző verziói megtekintéséhez használja a **Dátum, mint** menüt lehetőséget a fordulónap kiválasztásához. Bejelölheti a **Összes rekord megjelenítése** lehetőséget a lapon megjelenő összes kamatkód megtekintéséhez.
-
 
 
 

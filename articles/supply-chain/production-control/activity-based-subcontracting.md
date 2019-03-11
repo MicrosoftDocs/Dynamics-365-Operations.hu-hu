@@ -1,13 +1,13 @@
 ---
-title: "Tevékenységi alapú alvállalkozásba adás"
-description: "Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében."
+title: Tevékenységi alapú alvállalkozásba adás
+description: Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350044"
 ---
-
 # <a name="activity-based-subcontracting"></a>Tevékenységi alapú alvállalkozásba adás
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
 
-A Microsoft Dynamics 365 for Finance and Operationsben az alvállalkozásba adásnak két megközelítése van: termelési rendelések és lean manufacturing. A lean manufacturing megközelítés esetén az alvállalkozói munka egy termelési folyamat egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Egy speciális, **Közvetlen kiszervezés** nevű költségcsoporttípus került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele az anyagjegyzékbe (AJ). Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába.
+A Microsoft Dynamics 365 for Finance and Operations-ben az alvállalkozásba adásnak két megközelítése van: termelési rendelések és lean manufacturing. A lean manufacturing megközelítés esetén az alvállalkozói munka egy termelési folyamat egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Egy speciális, **Közvetlen kiszervezés** nevű költségcsoporttípus került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele az anyagjegyzékbe (AJ). Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Alvállalkozókat magukban foglaló termelési folyamatok
 A termelési folyamatok alapelve nem módosul tevékenységek alvállalkozásba adásával. Az anyagok továbbra is helyek között mozognak, a folyamattevékenységek az anyagokat termékekké alakítják, a szállítási tevékenységek pedig anyagokat vagy termékeket helyeznek át egyik helyről a másikra. A helyek és munkacellák szállító által kezeltként történő modellezéséhez rendelje a szállítói számlát raktárhoz vagy erőforráscsoport erőforrásához.  
@@ -104,7 +103,6 @@ Az emberek a szállítást gyakran nem termelékeny és hozzáadott értéket ne
 A tevékenységalapú alvállalkozásba adás a lean manufacturingben lehetővé teszi azon fuvarozók és a szállítmányozási szállítók integrálását, amelyek anyagokat és termékeket mozgatnak a termelési folyamat helyei között. Az átviteli tevékenységek modellezésével fuvarozó vagy szállító rendehető hozzá. Az átviteli tevékenység/feladat szolgáltatási és beszerzési szerződésen alapul, és a tényleges átviteli feladatok alapján beszerzési rendelések és beérkezési tanácsadók hozhatók létre. Ez a szolgáltatás ugyanaz, mint az alvállalkozói folyamattevékenységek funkciója.  
 
 Ezért a Finance and Operations mostantól támogatja az olyan anyagjegyzék-kalkulációkat, amelyek a termelési folyamat költségszámításának részeként szállítási szolgáltatásokat, kapcsolódó beszerzési rendeléseket, integrált beérkezési nyilvántartást és integrált szállítási szolgáltatási költségeket biztosítanak.
-
 
 
 

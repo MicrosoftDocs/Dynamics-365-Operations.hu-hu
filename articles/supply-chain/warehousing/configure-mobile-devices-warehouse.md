@@ -1,13 +1,13 @@
 ---
-title: "Mobileszközök beállítása raktári munkához"
-description: "Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához."
+title: Mobileszközök beállítása raktári munkához
+description: Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347951"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
 [!include [banner](../includes/banner.md)]
@@ -208,12 +207,12 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nincs</td>
+<td>Egyik sem</td>
 <td>Ez az alapértelmezett érték nem dolgozza fel a munkát.</td>
 </tr>
 <tr class="even">
 <td>Rendszer által irányított</td>
-<td>A Microsoft Dynamics 365 for Finance and Operations szabályozza a dolgozóhoz rendelt munka típusát és a megrendelés típusát, amelynek keretében a dolgozó a munkát végzi. Amikor ezt a beállítást választja, kattintson <strong>Rendszer által irányított munka</strong> elemre a műveletpanelen a <strong>Rendszer által meghatározott rendezési sorrend</strong> oldal megnyitásához, amelyen beállíthatja rendezési feltételeket a munkához. A rendezési feltételek azt szabályozzák, hogy a dolgozó milyen sorrendben hajtja végre a munkát. Annyi feltételt adhat hozzá, amennyire szüksége van.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations szabályozza a munka típusát a dolgozóhoz társítva, és a megrendelést, amelyen a dolgozó munkát végez. Amikor ezt a beállítást választja, kattintson <strong>Rendszer által irányított munka</strong> elemre a műveletpanelen a <strong>Rendszer által meghatározott rendezési sorrend</strong> oldal megnyitásához, amelyen beállíthatja rendezési feltételeket a munkához. A rendezési feltételek azt szabályozzák, hogy a dolgozó milyen sorrendben hajtja végre a munkát. Annyi feltételt adhat hozzá, amennyire szüksége van.</td>
 </tr>
 <tr class="odd">
 <td>Felhasználó által irányított</td>
@@ -225,7 +224,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="odd">
 <td>Rendszercsoportosítás</td>
-<td>A Microsoft Dynamics 365 for Finance and Operations csoportok egy megadott mező dolgozója alapján működnek. Például a kitárolási munka csoportosított, ha egy dolgozó beolvas egy szállítmányazonosítót, terhelésazonosítót vagy bármely értéket, amely minden munkaegységhez csatolható. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
+<td>A Microsoft Dynamics 365 for Finance and Operations csoportok egy megadott mező dolgozójának munkája alapján működnek. Például a kitárolási munka csoportosított, ha egy dolgozó beolvas egy szállítmányazonosítót, terhelésazonosítót vagy bármely értéket, amely minden munkaegységhez csatolható. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
 <ul>
 <li><strong>Rendszercsoportosítás mezője</strong> – Válassza ki azt a mezőt, amelyet a dolgozó beolvas a munka csoportosításához.</li>
 <li><strong>Csoportosító rendszercímke</strong> – Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be a munka csoportosításához.</li>
@@ -334,7 +333,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="odd">
 <td>Csoportos betárolás</td>
-<td>Jelölje be ezt a lehetőséget, ha csoportosítani szeretné a betárolási munkát. Ez a lehetőség akkor érhető el, ha a munka vagy a dolgozó, vagy a Microsoft Dynamics 365 for Finance and Operations szerint volt csoportosítva. Amikor a dolgozó befejezte az összes kitárolási munkát a csoportban, a betárolási munka létrejön ugyanabban a csoportban.</td>
+<td>Jelölje be ezt a lehetőséget, ha csoportosítani szeretné a betárolási munkát. Ez akkor érhető el, ha a munka csoportosítva vagy a dolgozó, vagy a Microsoft Dynamics 365 for Finance and Operations szerint volt csoportosítva. Amikor a dolgozó befejezte az összes kitárolási munkát a csoportban, a betárolási munka létrejön ugyanabban a csoportban.</td>
 </tr>
 <tr class="even">
 <td>Készlet-kiigazítás típusai </td>
@@ -357,7 +356,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 <td>Adja meg, hogy a dolgozó egy helyen a legrégebbi köteget válassza-e ki először. Az alábbi lehetőségek közül választhat:
 <ul>
 <li><strong>Nincs</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen. A dolgozó nem kap üzenetet.</li>
-<li><strong>Figyelmeztetés</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen, de figyelmeztető üzenetet kap, ha az nem a legrégebbi köteg.</li>
+<li><strong>Figyelmeztetés </strong>– A dolgozó bármilyen köteget kiválaszthat a helyen, de figyelmeztető üzenetet kap, ha az nem a legrégebbi köteg.</li>
 <li><strong>Kötelező</strong> – A dolgozó a legrégebbi köteget kell, hogy kiválassza a helyen. A dolgozó hibaüzenetet kap, ha a köteg nem legrégebbi köteg. <strong>Megjegyzés:</strong> Ez az opció csak akkor fontos, ha a <strong>Kötegszám</strong> alacsonyabb mint a <strong>Hely</strong> abban a foglalási hierarchiában, amelyhez a cikk tartozik.</li>
 </ul></td>
 </tr>
@@ -367,7 +366,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="even">
 <td>Csoportosító rendszermező</td>
-<td>Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a Microsoft Dynamics 365 for Finance and Operations a dolgozók számára a kitárolási munkát csoportosítani. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Csoportosító rendszercímke</strong> mezőben is meg kell adnia egy szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be.</td>
+<td>Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a Microsoft Dynamics 365 for Finance and Operations a dolgozó számára a kitárolási munkát csoportosítani. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Csoportosító rendszercímke</strong> mezőben is meg kell adnia egy szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be.</td>
 </tr>
 <tr class="odd">
 <td>Csoportosító rendszercímke</td>
@@ -387,7 +386,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="odd">
 <td>Munkasablonkód</td>
-<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem választ ki munkasablont, akkor a Microsoft Dynamics 365 for Finance and Operations a lekérdezési feltételek alapján rendel hozzá sablont. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
+<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem jelöl be munkasablont, a Microsoft Dynamics 365 for Finance and Operations hozzárendel egy sablont a lekérdezési feltételek alapján. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -420,6 +419,5 @@ A következő táblázat leírja a különféle munkatípusokat, amelyekkel hasz
 
 [Mobileszköz-menüelem beállítása a bevételezett elem regisztrálásához (Feladat-útmutató)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Készletállapotok használatának előnyei](../inventory/inventory-statuses.md)
-
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Egy munkafolyamat munkatételeinek delegálása"
-description: "Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz."
+---
+title: Egy munkafolyamat munkatételeinek delegálása
+description: Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz.
 author: jasongre
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4765fec0cdce0e2f8859c979ff97d20aa6b20bfa
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346249"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Egy munkafolyamat munkatételeinek delegálása
 
@@ -48,5 +48,4 @@ Ez az eljárás az USMF bemutatócéget használja.
 8. A delegálási szabály aktiválásához jelölje be az Engedélyezett jelölőnégyzetet.
     * Ha hatókörként a modult választotta, ki kell választania a modult a Név mezőben.    Ha hatókörként a munkafolyamatot választotta, ki kell választania a konkrét munkafolyamatot a Név mezőben.  
 9. A Megjegyzés mezőben adjon meg egy megjegyzést, amely leírja, miért delegálja a munkatételeket.
-
 

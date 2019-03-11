@@ -1,13 +1,13 @@
---- 
-title: "EUR-00002 Közösségen belüli tranzakcióhoz berakodási cím megadása"
-description: "Ez az eljárás bemutatja, hogyan adhatja meg egy közösségen belüli kereskedelmi tranzakció berakodási címét."
+---
+title: EUR-00002 Közösségen belüli tranzakcióhoz berakodási cím megadása
+description: Ez az eljárás bemutatja, hogyan adhatja meg egy közösségen belüli kereskedelmi tranzakció berakodási címét.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4db22444bee1590770a47ca5946941b530ae85ce
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370867"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Közösségen belüli tranzakcióhoz berakodási cím megadása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan adhatja meg egy közösségen belüli kereskedelmi tranzakció berakodási címét. Például egy német cég egy német üzleti címmel rendelkező szállítótól rendel cikkeket. A szállítónak van egy raktára Olaszországban, és innen szállítja a cikkeket. Ezt a szállítást jelenteni kell az Intrastatban. Ugyanez érvényes az ügyfél visszáruszállításaira is.
-Ez az eljárás minden európai országra/régióra vonatkozik. Ezt a feladatot a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Az eljárás végrehajtása előtt be kell állítania az Intrastat jelentéskészítést. Ez az eljárás könyvelőknek szól. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+Ez az eljárás minden európai országra/régióra vonatkozik. Ezt a feladatot a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Az eljárás végrehajtása előtt be kell állítania az Intrastat jelentéskészítést. Ez az eljárás könyvelőknek szól. Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 
 1. Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.
 2. Kattintson az Új lehetőségre.
@@ -72,5 +72,4 @@ Ez az eljárás minden európai országra/régióra vonatkozik. Ezt a feladatot 
 36. Kattintson az OK gombra.
 37. Kattintson az Általános fülre.
     * Keressen meg egy újonnan létrehozott sort, és győződjön meg arról, hogy a feladó az árukat Olaszországból szállította.  
-
 

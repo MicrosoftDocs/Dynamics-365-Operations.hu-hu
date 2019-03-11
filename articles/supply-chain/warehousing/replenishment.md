@@ -1,13 +1,13 @@
 ---
-title: "Feltöltés"
-description: "A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat."
+title: Feltöltés
+description: A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
 author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344524"
 ---
-
 # <a name="replenishment"></a>Feltöltés
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Az igényfeltöltés értékesítési rendelések, átmozgatási rendelések, te
 ## <a name="minmax-replenishment"></a>Minimális vagy maximális feltöltés
 Minimális/maximális feltöltés esetén a készletet úgy töltik fel, hogy a beállított minimális és maximális értékhatárok között legyen. Általában ez a folyamat naponta egyszer fut le, hogy biztosítsa, a kitárolás megkezdése előtt minden kitárolási hely maximálisan fel legyen töltve. 
 
-A minimális és maximális összeg a feltöltési sablonban van meghatározva. A sablon számos egyéb beállítása hasonlít a Hullámigény feltöltése során használt sablonok beállításaira. A sablonnak tartalmaznia kell egy-egy sort minden egyes cikkhez és helyhez. Ha a kötegelt feldolgozással futtatja a feltöltést, a Microsoft Dynamics 365 for Finance and Operations megvizsgálja, hogy szükséges-e feltöltés abban a sorrendben, amelyben a sorok rendezve vannak. 
+A minimális és maximális összeg a feltöltési sablonban van meghatározva. A sablon számos egyéb beállítása hasonlít a Hullámigény feltöltése során használt sablonok beállításaira. A sablonnak tartalmaznia kell egy-egy sort minden egyes cikkhez és helyhez. Ha a kötegelt feldolgozással futtatja a feltöltést, a Microsoft Dynamics 365 for Finance and Operations megvizsgálja, hogy feltöltés szükséges-e abban a sorrendben, amelyben a sorok rendezve vannak. 
 
 Fontos megjegyezni, hogy a minimális/maximális feltöltési stratégia nem tud üres helyet feltölteni, kivéve, ha a hely a cikkhez rögzített helyként van beállítva. Ha a hely, amit fel kell tölteni, nem rögzített hely, a rendszer nem tudja megállapítani, melyik cikk feltöltése szükséges. Ezért legalább néhány aktuális készlet szükséges a feltöltés bekövetkezte előtt.
 
@@ -77,5 +76,4 @@ Ahelyett, hogy a felosztási folyamat végén összegezné az igényeket és vé
 |    Helyprofilok    |                                                                                                        Tárolóhelyek létrehozásához helyprofilok meglétére van szükség.                                                                                                        |
 |   Helyutasítások   |                                                       Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van.                                                        |
 |     Munkasablonok      |                                                   Munkasablonok szükségesek a <strong>Feltöltés</strong> típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható.                                                    |
-
 

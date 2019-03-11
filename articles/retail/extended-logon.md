@@ -1,13 +1,13 @@
 ---
-title: "Kiterjesztett bejelentkezés funkció beállítása MPOS-hoz és Pénztár felhőhöz"
-description: "A témakör magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit."
+title: Kiterjesztett bejelentkezés funkció beállítása MPOS-hoz és Pénztár felhőhöz
+description: A témakör magába foglalja a Cloud POS és Retail Modern POS (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: c5771146723b791eb0b3eb5f571ef012cfaadcb9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4e3f8042871e5e423b559bb0e0dae0006af00194
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317913"
 ---
-
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Kiterjesztett bejelentkezés funkció beállítása MPOS-hoz és Pénztár felhőhöz
+# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
 
 [!include [banner](includes/banner.md)]
 
-A témakör magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
+A témakör magába foglalja a Cloud POS és Retail Modern POS (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
 
 ## <a name="setting-up-extended-logon"></a>Kiterjesztett bejelentkezés beállítása
 
@@ -68,4 +67,3 @@ A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető 
 ## <a name="using-extended-logon"></a>Kiterjesztett bejelentkezés használata
 
 Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve. Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..
-

@@ -1,13 +1,13 @@
 ---
-title: "Termékkonfigurációs modell beállítása"
-description: "Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beállításának lépéseit."
+title: Termékkonfigurációs modell beállítása
+description: Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beállításának lépéseit.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360670"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Termékkonfigurációs modell beállítása
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beáll
 | Termékkonfigurációs modell tesztelése.                         | A termékkonfigurációs modell tesztelése a **Megszorításon alapuló termékkonfigurációs modell részletei** lapról vagy a **Termékkonfigurációs modellek listája** oldalról. A termékkonfigurációs modell tesztelése szimulálja a termékmodell konfigurálási folyamatát, amely a rendeléskezelés során zajlik.                                                                                                |
 | Termékkonfigurációs modell sablonjának létrehozása.                | Termékkonfigurációs modell sablonjának létrehozása a **Konfigurációs sablonok** oldalon. Konfigurációs sablon attribútumértékeket tartalmaz a termékkonfigurációs modellben. Válassza ki az attribútumértékeket a **Sor konfigurálása** oldalon. A termékmodell konfigurálása során kiválaszthatja a betölteni kívánt termékmodell-konfiguráció sablont.                                                   |
 | Cikk konfigurálása.                                          | A termékkonfigurációs modellek konfigurálhatók egy értékesítési rendelésből, árajánlatból, beszerzési rendelésből vagy termelési rendelésből.                                                                                                                                                                                                                                                                           |
-
 
 
 

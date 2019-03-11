@@ -1,13 +1,13 @@
---- 
-title: "Termékmodell útvonalának karbantartása"
-description: "Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre."
+---
+title: Termékmodell útvonalának karbantartása
+description: Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0e793466e021671501570aed06959d684d5e9c15
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317154"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Termékmodell útvonalának karbantartása
 
@@ -66,5 +66,4 @@ Ezen eljárás futtatásához szükség van egy már létező termékkonfigurác
     * Döntse el, hogy akar-e megadni konkrét erőforrásokat vagy adottságokat, amelyeket fel kell dolgozniuk.  
 15. A Követelmény mezőben adjon meg vagy válasszon ki egy értéket.
 16. Kattintson az OK gombra.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Jelentési fa definíciója a pénzügyi jelentésekben"
-description: "Ez a cikk a jelentési fa definíciójáról tartalmaz információt. A jelentési fa definíciója a jelentés azon összetevője vagy építőeleme, amely segít meghatározni szervezetének szerkezetét és hierarchiáját."
+title: Jelentési fa definíciója a pénzügyi jelentésekben
+description: Ez a cikk a jelentési fa definíciójáról tartalmaz információt. A jelentési fa definíciója a jelentés azon összetevője vagy építőeleme, amely segít meghatározni szervezetének szerkezetét és hierarchiáját.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316947"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ A jelentési fa meghatározása az alábbi táblázatban leírt oszlopokat tarta
 
 | Jelentési fa oszlop | Leírás |
 |-----------------------|-------------|
-| Cég               | A jelentési egység vállalati neve. Az **@ANY** érték, amely rendszerint csak az összesítő szintjéhez van hozzárendelve, lehetővé teszi, hogy a jelentési fát az összes vállalatra vonatkozóan használni lehessen. Minden gyermek ághoz hozzá van rendelve egy vállalat. |
+| Vállalat               | A jelentési egység vállalati neve. Az általában csak az összesítő szinteken hozzárendelt **@ANY** érték lehetővé teszi a jelentésfa valamennyi vállalathoz történő felhasználását. Minden gyermek ághoz hozzá van rendelve egy vállalat. |
 | Egység neve             | A kód, amely azonosítja ezt a jelentési egységet a grafikus jelentési fán. Bizonyosodjon meg róla, hogy egy konzisztens kódolási rendszert hoz létre, amit a felhasználók könnyen megérthetnek. |
 | Egység leírása      | A jelentési egység címe megjelenik jelentés fejlécében vagy a láblécben, az **UnitDesc** kódként való megadásakor a jelentésdefiníció **Fejlécek és láblécek** lapján. A cím megjelenik a jelentés sorleírásában, ha beírja az **UnitDesc** kódot a sordefiníció **Leírás** cellájába. |
 | Dimenziók            | Egy jelentési egység, amely az adatokat közvetlenül pénzügyi adatokból vonja ki. A fiók és a kapcsolódó szegmensek logikai pozícióját és hosszát határozza meg. Ebben az oszlopban minden jelentési egység sornak rendelkeznie kell egy dimenzióval. Helyezhet dimenziót az összesítő egység sorába (például azokhoz a költségekhez, amelyek közvetlenül kapcsolódnak az egységhez) Ha beír egy dimenziót egy összesítő egység sorába, azokat a fiókokat, amelyeket fölérendelt egységek használnak, nem szabad használni alárendelt egységekben. Ellenkező esetben az összegek megduplázódhatnak. |
@@ -107,7 +106,7 @@ A jelentési fa segítségével összesítheti az alárendelt jelentési egység
     > Ha a dimenziókat az alá- és fölérendelt egységekben is megadjuk, ez dupla adatokat eredményezhet a jelentésben.
 
 - A jelentési egységek, amelyek a jelentési fában dimenziókat tartalmaznak, megfelelnek azoknak a dimenzióknak, melyek a sor- és oszlopdefiníciókban használatosak. A dimenziók kombinációja határozza meg az adott egységbe visszatérő összegeket. Például a 2. példában a 6. és 7. sorok csak a 00 és 01 részlegek értékeit küldik vissza.
-- A jelentési fában dimenziókat nem tartalmazó fölérendelt jelentési egységek mennyiségeit az alárendelt egység jelentéséből kell meghatározni, és ezt a mennyiséget kell összesíteni a fölérendelt egységbe. Például ha a fölérendelt egység (lásd a Contoso USA 2. példában az adatok összesítését) két alárendelt egységgel rendelkezik (022 és 023), és nem tartalmaz dimenziókat, egy jelentés keletkezik minden alárendelt egységhez és a fölérendelt egységhez. A fölérendelt egység teljes összege a két alárendelt mennyiség összege.
+- A jelentési fában dimenziókat nem tartalmazó fölérendelt jelentési egységek mennyiségeit az alárendelt egység jelentéséből kell meghatározni, és ezt a mennyiséget kell összesíteni a fölérendelt egységbe. Például ha a fölérendelt egység (lásd a Contoso USA 2. példában az adatok összesítését) két alárendelt egységgel rendelkezik (022 és 023), és nem tartalmaz dimenziókat, egy jelentés keletkezik minden alárendelt egységhez és a fölérendelt egységhez. A fölérendelt egység teljes összege a két alárendelt mennyiség összege.
 
 ### <a name="manage-reporting-units"></a>Jelentési egységek kezelése
 
@@ -166,9 +165,9 @@ Egyes felhasználók és csoportok számára megakadályozhatja a hozzáférést
 3. Az **Egységbiztonság** párbeszédpanelen válasszon ki egy nevet, majd kattintson az **Eltávolítás** gombra.
 4. Kattintson az **OK** gombra.
 
-### <a name="link-to-reports"></a>Hivatkozás a jelentésekhez
+### <a name="link-toreports"></a>Hivatkozás a jelentésekhez
 
-Miután létrehozott egy **jelentés** oszlopot a sordefinícióban, és megadta a jelentést, melynek szerepelnie kell a jelentésben, frissítenie kell a jelentési fát a csatolt oszloppal és a jelentés adataival. Egy jelentés bármely egységbe lehet importálni a jelentési fában.
+Miután létrehozott egy **jelentés** oszlopot a sordefinícióban, és megadta a jelentést, melynek szerepelnie kell a jelentésben, frissítenie kell a jelentési fát a csatolt oszloppal és a jelentés adataival. Egy jelentés bármely egységbe lehet importálni a jelentési fában.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>A jelentés azonosítása a jelentési fában.
 
@@ -222,4 +221,3 @@ Az alábbi példák lehetséges információkat mutatnak, melyeket a jelentési 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "A raktári munka irányelveinek beállítása (Alkalmazás, 2016. május)"
-description: "A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát."
+---
+title: A raktári munka irányelveinek beállítása (Alkalmazás, 2016. május)
+description: A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 34b4255c85bb53f7e238b60559890571070953a6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335324"
 ---
 # <a name="set-up-warehouse-work-policies-application-may-2016"></a>A raktári munka irányelveinek beállítása (Alkalmazás, 2016. május)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát. A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken. A rendszer az USMF bemutatócéget használta a rögzítés létrehozására. Ez a feladat 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
+A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát. A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken. A rendszer az USMF bemutatócéget használta a rögzítés létrehozására. Ez a feladat-útmutató 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
 
 1. Ugorjon a Raktárkezelés > Beállítás > Munka > Munkairányelvek pontra.
 2. Kattintson az Új lehetőségre.
@@ -51,5 +51,4 @@ A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát. A mun
 19. A listában jelölje meg a kiválasztott sort.
 20. Az Elemszám mezőben adjon meg, vagy válasszon ki „L0101” értéket.
 21. Kattintson a Mentés gombra.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Változattermék hozzáadása beszerzési rendelésekhez változatsúlyokkal"
-description: "Ez az eljárás azt mutatja be, hogy milyen lépések segítségével tudja a változatsúlyokat felhasználni a beszerzési-megrendelés sorok automatikus kitöltéséhez mindegyik termékváltozatra."
+---
+title: Változattermék hozzáadása beszerzési rendelésekhez változatsúlyokkal
+description: Ez az eljárás azt mutatja be, hogy milyen lépések segítségével tudja a változatsúlyokat felhasználni a beszerzési-megrendelés sorok automatikus kitöltéséhez mindegyik termékváltozatra.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 446260a09bd5177877637ac8a288ad584dfa2b2b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3db13646c82ea6dc6949aaa714a5769f9c5ad2a9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345490"
 ---
 # <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a>Változattermék hozzáadása beszerzési rendelésekhez változatsúlyokkal
 
@@ -46,5 +46,4 @@ Ez az eljárás azt mutatja be, hogy milyen lépések segítségével tudja a v�
 16. A cikkszám mezőbe írja be a „0140” értéket.
 17. Állítsa a mennyiséget 1000 értékre.
 18. Kattintson a Mentés gombra.
-
 

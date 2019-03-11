@@ -1,14 +1,14 @@
 ---
-title: "Kiskereskedelmi eladási ár kezelése"
-description: "Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Microsoft Dynamics 365 Retail rendszerben."
+title: Kiskereskedelmi eladási ár kezelése
+description: Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Microsoft Dynamics 365 for Retail rendszerben.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362142"
 ---
-
-# <a name="retail-sales-price-management"></a>Kiskereskedelmi eladási ár kezelése
+# <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör információkat nyújt a kiskereskedelmi eladási árak létrehozása és kezelése folyamatról a Microsoft Dynamics 365 Retail rendszerben. A folyamatban szerepet játszó fogalmakra, valamint a különböző beállítások eladási árra gyakorolt hatására koncentrál.
+Ez a témakör leírja a kiskereskedelmi eladási árak létrehozásának és kezelésének folyamatait a Microsoft Dynamics 365 for Retail rendszerben. A folyamatban szerepet játszó fogalmakra, valamint a különböző beállítások eladási árra gyakorolt hatására koncentrál.
 
 ## <a name="terminology"></a>Fogalmak
 
@@ -232,4 +231,3 @@ Emellett **csak** a kiskereskedelmi árképzés motor támogatja a következő �
 
 - Az ár a termékdimenziókon alapul, a következő sorrendben: a leginkább specifikus változatártól a legkevésbé specifikus változatárig, majd az alaptermékárig. A két termékdimenzió (például szín és méret) használatával beállított ár a csak egy termékdimenzió használatával beállított ár (például a méret) előtt használatos.
 - Ugyanaz az árcsoport használható az árképzés és az engedmények kezelésére.
-

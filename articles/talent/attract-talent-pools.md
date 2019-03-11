@@ -1,31 +1,30 @@
 ---
-title: "Pályázók gyűjtése szaktudásgyűjtők segítségével"
-description: "Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Attract szaktudásgyűjtőit."
-author: 
+title: Pályázók gyűjtése szaktudásgyűjtők segítségével
+description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Attract szaktudásgyűjtőit.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304675"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Pályázók gyűjtése szaktudásgyűjtők segítségével
 
 [!include[banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ A szaktudásgyűjtő tulajdonosa és felhasználói számára leheséges: pály�
 
     - Egy belső jelölt hozzáadásához kereshet személyt e-mail-cím alapján. A sikeres keresés után a pályázó e-mail-címe, keresztneve és vezetékneve ki van töltve. Ha rendelkezik a pályázó önéletrajzával vagy tetszés szerinti kapcsolódó dokumentumokkal a jelentkezővel kapcsolatban, ezen a ponton feltöltheti. Ezután válassza a **Hozzáadás** elemet a pályázó hozzáadásához a szaktudásgyűjtőhöz.
     - Egy külső pályázó hozzáadásához manuálisan adja meg az illető e-mail-címét, keresztnevét és vezetéknevét. Ha rendelkezik a pályázó önéletrajzával vagy tetszés szerinti kapcsolódó dokumentumokkal a jelentkezővel kapcsolatban, ezen a ponton feltöltheti. Ezután válassza a **Hozzáadás** elemet a pályázó hozzáadásához a szaktudásgyűjtőhöz.
-    - Több pályázók hozzáadásához használja az **Excelből** lapot. Ezután letöltheti és telepítheti a szükséges Microsoft Excel-sablont, a pályázók részleteinek megadása után mentse az Excel-munkalapot, és töltse fel a programba.
+    - Több pályázók hozzáadásához használja az **Excel programból** lapot. Ezután letöltheti és telepítheti a szükséges Microsoft Excel-sablont, a pályázók részleteinek megadása után mentse az Excel-munkalapot, és töltse fel a programba.
 
         Ha hibák találhatók a munkalapon, üzeneteket fog kapni. Javítsa a hibákat, majd próbálja újból feltölteni a munkalapot. Amikor nem található több hiba, válassza a **Hozzáadás** elemet feltölteni a munkalapot. A munkalap feldolgozása a háttérben történik, és ha valamennyi pályázó hozzá lett adva a szaktudásgyűjtőhöz, értesítést kap.
 
@@ -108,7 +107,7 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. Vá
 
 - A **Dokumentumok** lap megjeleníti dokumentumokat, amelyeket a pályázó hozzáadott a profilból vagy az álláspályázatok során. Ezen lap használatával lehet kezelni a jelölt önéletrajzát, kísérőlevelét, portfóliómunkáját stb. A lap használatával dokumentumokat hozzáadni is lehet.
 
-    A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Az alkalmazásban a Microsoft Word-dokumentumokat a Microsoft Office 365 segítségével tekintheti meg. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
+    A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft Office 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
 
 - A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További tudnivalókért lásd: [Forráskeresés LinkedIn Recruiter segítségével](./attract-linked-in-recruiter.md).
 
@@ -139,4 +138,3 @@ Gyakran sok jó jelöltet nem választanak ki egy állásra, de nem szeretnénk 
 1. A jelentkezés lapon jelölje be a **Hozzáadás tehetségállományhoz** lehetőséget. A tehetségállományok listája jelenik meg, amelyekhez hozzáféréssel rendelkezik.
 
 1. Válassza ki vagy a keresse meg a szaktudásgyűjtőt, és válassza ki a **Hozzáadás** elemet a pályázó hozzadásához.
-

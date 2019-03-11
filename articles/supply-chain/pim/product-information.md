@@ -1,32 +1,31 @@
 ---
-title: "Termékek adatainak áttekintése"
-description: "Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba."
+title: Termékek adatainak áttekintése
+description: Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363016"
 ---
-
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,7 @@ Vegye figyelembe, hogy a dinamikus és aktív szervezeteknél a termékinformác
 
 ## <a name="product-masters-and-product-variants"></a>Alaptermékek és termékváltozatok
 
-Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Microsoft Dynamics 365 for Finance and Operations rendszerben ezeket az általános termékeket nevezik *Alaptermékeknek*. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok*.
+Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Microsoft Dynamics 365 for Finance and Operations rendszerben ezeket az általános termékeket *Alaptermékeknek* nevezik. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok*.
 
 A Finance and Operations rendszerben az alaptermék egy termékdimenzió-csoporthoz és egy konfigurációs technológiához van társítva az üzleti szabályok meghatározása érdekében. A termékdimenziók (szín, méret, stílus és konfiguráció) olyan meghatározott attribútumkészletet jelentenek, amelyek az alkalmazás egészében használhatók a kapcsolódó termékek konkrét viselkedésének meghatározására és nyomon követésére. Ezek a dimenziók segítik a felhasználókat a termékek keresésében és azonosításában is.
 
@@ -97,4 +96,3 @@ A munkaterület összegző lapokból és két listából áll. A **Nyitott esete
 ### <a name="manually-creating-a-new-released-product"></a>Újonnan kiadott termék manuális létrehozása
 
 Manuálisan hozhat létre egy kiadott terméket egyetlen futtatásban a szervezet üzleti folyamataitól attól függően, valamint attól függően, hogy milyen szabályokat alkalmaz a funkció használatával kapcsolatban. Ez a funkció létrehoz egy új terméket, és automatikusan kiadja azt az aktuális jogi személynek. Új termék létrehozásához kattintson a **Kiadott termékek** lehetőségre a **Kiadott termék karbantartása** munkaterületen vagy a **Kiadott termék** listaoldalon.
-

@@ -1,13 +1,13 @@
---- 
-title: "Szállítói kifizetési díjak meghatározása"
-description: "Szállítói kifizetési díjak beállítása."
+---
+title: Szállítói kifizetési díjak meghatározása
+description: Szállítói kifizetési díjak beállítása.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399291a98ddc6b01fb08f7a5c629ec7a6f8acfbf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f62d07ffa1ee4a525f0f266922bc88e5ac8d5ada
-ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363200"
 ---
 # <a name="define-vendor-payment-fees"></a>Szállítói kifizetési díjak meghatározása
 
@@ -58,5 +58,4 @@ Szállítói kifizetési díjak beállítása. Ez a feladat az USMF bemutatócé
 17. A Díj pénzneme mezőben válassza ki a díj értékelésének pénznemét.
     * Ez a pénznem a díjra vonatkozik. A fizetési pénznem azt határozza meg, hogy a díj szabálya a fizetés pénzneme alapján kerüljön-e értékelésre. Előfordulhat például, hogy a bank díjat számít fel, ha a fizetés EUR pénznemben történik, de az egyéb fizetések díjmentesek.  
 18. Kattintson a Mentés gombra.
-
 

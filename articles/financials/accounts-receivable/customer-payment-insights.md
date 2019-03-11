@@ -1,28 +1,27 @@
 ---
-title: "Vevőikifizetés-információk (előnézet)"
-description: "Ez a témakör leírja, hogyan segíthet a vevőikifizetés-információk megjósolni egy számla kifizetésének időpontját és segíti a szervezetet optimalizálási stratégiájának létrehozásához, mely javítja a határidőre fizetések arányát."
+title: Vevőikifizetés-információk (előnézet)
+description: Ez a témakör leírja, hogyan segíthet a vevőikifizetés-információk megjósolni egy számla kifizetésének időpontját és segíti a szervezetet optimalizálási stratégiájának létrehozásához, mely javítja a határidőre fizetések arányát.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344662"
 ---
-
 # <a name="customer-payment-insights-preview"></a>Vevőikifizetés-információk (előnézet)
 
 [!include[banner](../includes/banner.md)]
@@ -78,4 +77,3 @@ Ha szeretné kipróbálni a vevőikifizetés-információkat (előnézet) lépet
 ## <a name="privacy-statement"></a>Adatvédelmi nyilatkozat
 
 Az előnézetek az Egyesült Államokban tárolják az ügyféladatokat. Mindemellett az előnézetek (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmaznak, mint a Dynamics 365 for Finance and Operations szolgáltatás (2) és nem tartalmazza s szolgáltatásiszint szerződés ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-

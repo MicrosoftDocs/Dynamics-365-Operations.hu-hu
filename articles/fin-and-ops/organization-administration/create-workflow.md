@@ -1,13 +1,13 @@
 ---
-title: "Munkafolyamatok létrehozása"
-description: "Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be."
+title: Munkafolyamatok létrehozása
+description: Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353356"
 ---
-
 # <a name="create-workflows"></a>Munkafolyamatok létrehozása
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
 
 ## <a name="open-the-workflow-editor"></a>A munkafolyamat-szerkesztő megnyitása
 
-A használt Microsoft Dynamics 365 for Finance and Operations modul határozza meg, hogy milyen típusú munkafolyamatot hozhat létre. Ezekkel a lépésekkel válassza ki a létrehozni kívánt munkafolyamat-típust, és nyissa meg a munkafolyamat-szerkesztőt.
+A Microsoft Dynamics 365 for Finance and Operations modul, amelyben éppen dolgozik, meghatározza a létrehozható munkafolyamatokok típusát. Ezekkel a lépésekkel válassza ki a létrehozni kívánt munkafolyamat-típust, és nyissa meg a munkafolyamat-szerkesztőt.
 
 1. Nyissa meg a modult, amelyhez új munkafolyamatot szeretne létrehozni. Például egy beszerzési igénylés munkafolyamatának létrehozásához kattintson a **Beszerzés és forrás** lehetőségre.
 2. Kattintson a **Beállítás** &gt; **\[Modulnév\]-munkafolyamatok** elemre.
@@ -85,4 +84,3 @@ Ha készen áll a munkafolyamat mentésére és aktiválására, kövesse az al�
 
     - A munkafolyamat aktuális verziójának aktiválásához kattintson az **Új verzió aktiválása** lehetőségre. Ha egy munkafolyamat aktív, akkor a felhasználók dokumentumokat küldhetnek feldolgozásra.
     - Ha nem szeretné aktiválni ezt a verziót, kattintson a **Ne aktiválja az új verziót** lehetőségre. A munkafolyamatot később is aktiválhatja.
-

@@ -1,13 +1,13 @@
---- 
-title: "Projekt időnyilvántartásának megadása"
-description: "Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy üres munkaidő-nyilvántartási képernyő felhasználásával."
+---
+title: Projekt időnyilvántartásának megadása
+description: Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy üres munkaidő-nyilvántartási képernyő felhasználásával.
 author: kherr75
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations, Talent
@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329551"
 ---
 # <a name="enter-project-timesheets"></a>Projekt időnyilvántartásának megadása
 
@@ -61,5 +61,4 @@ Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy ü
 20. A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.
 21. Kattintson a Küldés hivatkozásra.
 22. Kattintson a Küldés hivatkozásra.
-
 
