@@ -46,6 +46,10 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: Fejlesztői eszközökkel kapcsolatos oktatóanyag
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: BaseX for AppChecker telepítése
+        href: dev-tools/install-basex.md
     - name: Application Explorer
       href: dev-tools/application-explorer.md
     - name: Projektek létrehozása és hibakeresés
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: Bővítési módosítások, 8.1.3-as verzió
         href: extensibility/extensibility-changes-813.md
+      - name: Bővítési módosítások, 10.0-s verzió
+        href: extensibility/extensibility-changes-10.md
     - name: Alapelvek
       items:
       - name: Tolakodó testreszabások
@@ -887,6 +893,7 @@ items:
   - name: Bemutatókörnyezetek telepítése
     href: deployment/deploy-demo-environment.md
   - name: Felhőbeli telepítés
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Önkiszolgáló központi telepítés
       href: deployment/infrastructure-stack.md
@@ -1073,10 +1080,12 @@ items:
       href: dev-tools/update-development-tools.md
   - name: Értékcsökkenések
     items:
-    - name: Elavult API-k
-      href: migration-upgrade/deprecated-apis.md
-    - name: Elavult funkciók
+    - name: Eltávolított vagy elavult funkciók
       href: migration-upgrade/deprecated-features.md
+    - name: Módszerek és metaadat-elemek elavulása
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Elavult API-k (2017. június)
+      href: migration-upgrade/deprecated-apis.md
 - name: Rendszerfelügyelet
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1122,6 +1131,8 @@ items:
       href: sysadmin/activeperiod.md
     - name: Kötegkezelő biztonsági szerepköre
       href: sysadmin/runby.md
+    - name: Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Optimalizálási tanácsadó
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1200,18 +1211,30 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: Fordításimemória-fájlok
       href: lifecycle-services/use-translation-service-tm.md
-- name: Adatbáziskezelés
+- name: Adatbázis-áthelyezési műveletek
   items:
-  - name: Adatbázisok másolása az Azure SQL Database adatbázisból az SQL Server környezeteibe
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Adatbázisok másolása az SQL Server szolgáltatásból a gyártási Azure SQL Database környezeteibe
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Adatbázisok visszaállítása nem termelési környezetekben
-    href: database/request-point-in-time-restore.md
-  - name: Adatbázisok másolatainak exportálása a későbbi visszaállításhoz
-    href: database/copy-operations-database.md
-  - name: Védőfal-adatbázis frissítésének kérése
-    href: database/database-refresh.md
+  - name: Áttekintés
+    href: database/dbmovement-operations.md
+  - name: Első lépéseket bemutató rövid útmutatók
+    items:
+    - name: Adatbázis frissítése
+      href: database/database-refresh.md
+    - name: Adatbázis exportálása
+      href: database/export-database.md
+    - name: Adatbázis importálása
+      href: database/import-database.md
+    - name: Adatbázis időponthoz kötött visszaállítása
+      href: database/database-point-in-time-restore.md
+  - name: Oktatóanyagok
+    items:
+    - name: Oktatási célú frissítés
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Hibakeresés és diagnosztika
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Az „arany konfiguráció” promóciója
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Romboló tesztelés
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Támogatás
   items:
   - name: Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: A Finance and Operations támogatási tapasztalatainak kezelése
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373323"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773802"
