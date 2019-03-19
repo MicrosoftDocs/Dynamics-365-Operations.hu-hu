@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302385"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380016"
 ---
 # <a name="distributed-order-management-dom"></a>Elosztott rendeléskezelés (DOM)
 
@@ -63,7 +63,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
         1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszközök tárát, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
         2. Indítsa el a Microsoft IIS-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS szolgáltatásgyökér\>\\webes gyökérről** megnyílik egy új Windows Explorer-ablak. Jegyezze fel az \<AOS szolgáltatásgyökér\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
-        3. Másolja a konfigurációs fájlt az **\<AOS Services gyökér\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
+        3. Másolja a konfigurációs fájlt az **\<AOS Service gyökér\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
         4. Lépjen a Retail Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
 
         > [!NOTE]

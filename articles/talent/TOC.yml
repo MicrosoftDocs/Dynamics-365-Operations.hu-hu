@@ -5,44 +5,52 @@ items:
   - name: Első lépések
     href: talent-get-started.md
     items:
-    - name: Új vagy módosult elemek
+    - name: Új vagy módosult elemek a Talent szolgáltatásban
       href: whats-new.md
       items:
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2019. január 31.)
+      - name: 2019. március 5.
+        href: whats-new-talent-march-5.md
+      - name: 2019. február 27.
+        href: whats-new-talent-feb-27.md
+      - name: 2019. február 14.
+        href: whats-new-talent-feb14.md
+      - name: 2019. február 7.
+        href: whats-new-talent-february-7.md
+      - name: 2019. január 31.
         href: whats-new-talent-january-29.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2019. január 23.)
+      - name: 2019. január 23.
         href: whats-new-talent-january-23.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2019. január 17.)
+      - name: 2019. január 17.
         href: whats-new-talent-january-17.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2019. január 11.)
+      - name: 2019. január 11.
         href: whats-new-talent-january-11.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 14.)
+      - name: 2018. december 14.
         href: whats-new-talent-december-14.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
+      - name: 2018. december 6.
         href: whats-new-talent-december-6.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 27.)
+      - name: 2018. november 27.
         href: whats-new-talent-november-27.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 15.)
+      - name: 2018. november 15.
         href: whats-new-talent-november-15.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 31.)
+      - name: 2018. október 31.
         href: whats-new-talent-october-31.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 19.)
+      - name: 2018. október 19.
         href: whats-new-talent-october-19.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 15.)
+      - name: 2018. október 15.
         href: whats-new-talent-october-11.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 8.)
+      - name: 2018. október 8.
         href: whats-new-talent-october-8.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 1.)
+      - name: 2018. október 1.
         href: whats-new-talent-october-01.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 24.)
+      - name: 2018. szeptember 24.
         href: whats-new-talent-september-24.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
+      - name: 2018. szeptember 17.
         href: whats-new-talent-september-17-2018.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 10.)
+      - name: 2018. szeptember 10.
         href: whats-new-talent-september-10.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
+      - name: 2018. augusztus
         href: whats-new-talent-august2018.md
-      - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. július)
+      - name: 2018. július
         href: whats-new-talent-july2018.md
     - name: Rendszerkövetelmények és frissítési irányelv
       href: talent-versions-update-policy.md
@@ -193,6 +201,8 @@ items:
       href: data-integration.md
     - name: Integrációval kapcsolatos GYIK
       href: talent-fo-integration.md
+    - name: Ismétlődő adatexportálás Azure Logic Apps használatával
+      href: tutorial-integration-recurring-export.md
   - name: Office-integráció
     items:
     - name: Office-integrációs oktatóanyag
@@ -322,9 +332,9 @@ items:
       href: talent-FO-integration.md
     - name: Azure Active Directory-felhasználók nem találhatók a Személyválasztó szolgáltatásban
       href: people-picker-user-not-found.md
-ms.openlocfilehash: 2e3035ec9aa71fd66cba7b394bf5007880646aca
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: 4123fb80126695bb35a02d3d2fc00b3ea38c1881
+ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374827"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "782752"

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Üdvözöljük a Dynamics 365 for Talent szolgáltatásban!
-description: A Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
+description: 'A Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302361"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Üdvözöljük a Dynamics 365 for Talent szolgáltatásban!
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, i
 
 ## <a name="develop-and-train-employees"></a>Alkalmazottak fejlesztése és képzése
 
-Támogassa alkalmazottait célkitűzéseik elérésében, miközben kiemelkedő üzleti igényeket elégít ki: állítson be célokat, hozzon létre teljesítmény-ellenőrzéseket, és kövesse nyomon a visszajelzéseket. Az alkalmazottak munkavégzéshez szükséges szakértelem fejlesztése érdekében állítson be oktatókat, tanfolyamtípusokat, tanfolyamokat, tanfolyamleírásokat, napirendeket, szekciókat és munkameneteket egy oktató tanfolyamhoz történő hozzárendelése vagy egy alkalmazott tanfolyamra történő regisztrálása előtt. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
+Az alkalmazottak előmeneteli céljainak elérésének elősegítéséhez, valamint a kritikus üzleti igények teljesítéséhez célokat lehet beállítani, teljesítménybeszámolókat lehet létrehozni, és nyomon követhetők a visszajelzések. Segítségnyújtásként az alkalmazottaknak a szükséges készségek kifejlesztéséhez, mielőtt egy oktatót vagy dolgozót hozzátársítana egy képzéshez, megadhatja az oktatókat, a tanfolyamtípusokat, a tanfolyamokat, a tanfolyamleírásokat, a napirendeket, a szekciókat és a munkameneteket is. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
 
 -   [Teljesítménykezelés](performance-management-overview.md)
 -   [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](skills.md)

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Microsoft Dynamics 365 for Finance and Operations dokumentáció
 description: A Microsoft Dynamics 365 for Finance and Operations szolgáltatásra vonatkozó dokumentáció.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302365"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations dokumentáció
 
 [!include [banner](includes/banner.md)]
@@ -44,12 +40,26 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 <h3><a href="get-started/before-you-buy.md">Vásárlás előtti teendők</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Regisztrálás az előzetes verziót tartalmazó előfizetésre</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Telepítési beállítás kiválasztása</a></p>
- <p><a href="get-started/purchase-on-premises.md">A Finance and Operations megvásárlása (helyszíni)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">A Finance and Operations (on-premises) megvásárlása</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Végrehajtási életciklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Projekt felvétele</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Előkészítés az éles indításra</a></p>
+
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Egyverziós szolgáltatásfrissítések</a></h3>
+<p><a href="get-started/one-version.md">Egyverziós szolgáltatásfrissítések GYIK</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">A szoftver életciklusára vonatkozó irányelv: Felhő</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">A szoftver életciklusára vonatkozó irányelv: Helyszíni</a></p>
+<p><a href="get-started/public-preview-releases.md">Szokásos és első kiadási szolgáltatásfrissítések</a></p>
+<p><a href="get-started/whats-new-changed.md">Új vagy módosult elemek</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Frissítések és gyorsjavítások</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Frissítések alkalmazása felhőalapú környezetekre</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Szolgáltatásfrissítések konfigurálása</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Szolgáltatásfrissítések szüneteltetése</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Értesítések kérése szolgáltatásfrissítésekkel kapcsolatban</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Adatfeladat automatizálása</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 
 <h3><a href="../financials/index.md">Pénzgazdálkodás</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kötelezettségek</a></p>
@@ -71,6 +81,8 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 <p><a href="hr/manage-recruiting-process.md">Felvétel</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Egyesült Államok bérlista</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Ellátásilánc-kezelés</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Költségkezelés</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Készletkezelés</a></p>
@@ -82,8 +94,7 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Szállításkezelés</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Raktárkezelés</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligencia</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Elemzés</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Üzleti dokumentumok</a></p>
