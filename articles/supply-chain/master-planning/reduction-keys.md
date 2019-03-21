@@ -3,7 +3,7 @@ title: Csökkentési kulcsok
 description: Ez a cikk az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364810"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770916"
 ---
 # <a name="reduction-keys"></a>Csökkentési kulcsok
 
@@ -98,6 +98,7 @@ A legtöbb esetben rendszerek vannak beállítva, hogy a tranzakciók csökkenti
 
    Ez előrejelzésben, nincs időszak törlése a következő előre jelzett dátum között: az első és második dátum között nincs négy nappal az az időtartam, és a második és harmadik dátum között van az az időtartam hét nap. A különböző kiterjed a dinamikus időszakok lesznek.
 2. Értékesítésirendelés-sorok létrehozása.
+
    | Dátum                             | Eladási árhoz kapcsolódó mennyiség |
    |----------------------------------|----------------------|
    | December 15-re vonatkozóan az előző év | 500                  |

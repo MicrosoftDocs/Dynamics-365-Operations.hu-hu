@@ -3,7 +3,7 @@ title: Adatimportálási és -exportálási feladatok
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360210"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834660"
 ---
 # <a name="data-import-and-export-jobs"></a>Adatimportálási és -exportálási feladatok
 
@@ -128,6 +128,9 @@ A feladatok egy időben biztosíthatók szerepkörök, felhasználók és jogi s
 
 ## <a name="run-the-import-or-export-job"></a>Az importálási vagy az exportálási feladat futtatása
 A feladat meghatározása után a feladat futtatható egyszer az **Importálás** vagy az **Exportálás** gomb megnyomásával. Ismétlődő feladat beállításához jelölje be az **Ismétlődő adatkezelési feladat létrehozása** lehetőséget.
+
+[!NOTE]
+Egy importálási vagy az exportálási feladat futtatható aszinkron módon az **Importálás** vagy **Exportálás** gomb kiválasztásával. Az aszinkorn futtatás a Finance and Operations az aszinkron keretrendszerét használja, amely nem ugyanaz, mint a kötegkeretrendszer. Azonban a kötegkeretrendszerhez hasonlóan az aszinkron keretrendszer is leszabályozhat és ennek következtében a feladat nem futhat le azonnal. A feladatok futtatható szinkronban is az **Importálás most** vagy az **Exportálás most** kiválasztásával. Ez a azonnal elindítja a feladatot, és akkor hasznos, ha a aszinkron vagy kötegelt feladatként nem indul el lekorlátozás miatt. A feladatok végrehajthatók kötegelten is a **Futtatás kötegben** lehetőség kiválasztásával. A Kötegerőforrások leszabályozásnak lehetnek kitéve, így a kötegelt feladat nem feltétlenül indul el azonnal. Az aszinkron beállítás akkor hasznos, ha a felhasználók közvetlenül lépnek interakcióba a felhasználói felülettel, és nem haladó felhasználók akik értik a kötegelt ütemezést. A kötegelés alkalmazása egy másik megoldás akkor, ha a nagy tömegben kell az exportálni vagy importálni. Kötegelt feladatok ütemezhetők futtatásához egy adott kötegcsoportban, amelynek több szabályozást tesz lehetővé a terhelés elosztása szempontjából. Ha az aszinkron és kötegelt feladat is leszabályoz magas erőforrás-kihasználtság miatt a rendszerben, akkor azonnali megoldásként az importálás és exportálás szinkronizált verziója használható. A szinkronizált beállítás azonnal indul, és a felhasználói felületet blokkolja, mert szinkronizálást hajt végre. A böngészőablaknak nyitva kell maradnia, amikor a szinkronizált művelet folyamatban van.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ellenőrizze, hogy a feladat megfelelően futott le
 A feladatelőzmények hibaelhárítási és vizsgálati célra rendelkezésre állnak mind az importálási, mint az exportálási feladatoknál. Az előzményfeladat-futtatások időtartományok szerint vannak rendezve.

@@ -3,7 +3,7 @@ title: Feloldási stratégia termékkonfigurációhoz
 description: Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351148"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403916"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
@@ -62,8 +62,8 @@ Az alábbi táblázat ajánlásokat tartalmaz a különböző forgatókönyvekn�
 | Feloldási stratégia      | A stratégia használata ebben az esetben |
 |----------------------|-----------------------------------|
 | Alapértelmezett              | Az **Alapértelmezett** stratégia táblakorlátozásokon alapuló modellek megoldására van optimalizálva. Vevői végrehajtási tanulmányok azt mutatják, hogy ez a stratégia a leghatékonyabb stratégia olyan forgatókönyveknél, ahol széles körben használnak táblakorlátozásokat. |
-| Előbb a minimumtartomány | Az **Előbb a minimumtartomány** és a **Felülről lefelé** stratégiák szoros kapcsolatban állnak egymással. Vevői végrehajtási tanulmányok azt mutatják, hogy a CU8-cal bevezetett **Felülről lefelé** stratégia jobb teljesítményt nyújt, mint az **Előbb a minimumtartomány** stratégia. Azonban az **Előbb a minimumtartomány** stratégiát megtartottuk a termékben a visszamenőleges kompatibilitás érdekében. Mindkét feloldási stratégia bizonyítottan hatékonyabb egyszerre több aritmetikai kifejezést tartalmazó olyan modellek megoldásához, amelyekben nincsenek táblakorlátozások. Azonban bizonyos esetekben az **Alapértelmezett** stratégia jobb teljesítményt nyújt, mint ez a két stratégia. Ezért ne feledje, hogy minden egyes stratégiát próbáljon ki. |
-| Felülről lefelé             | Az **Előbb a minimumtartomány** és a **Felülről lefelé** stratégiák szoros kapcsolatban állnak egymással. Vevői végrehajtási tanulmányok azt mutatják, hogy a CU8-cal bevezetett **Felülről lefelé** stratégia jobb teljesítményt nyújt, mint az **Előbb a minimumtartomány** stratégia. Azonban az **Előbb a minimumtartomány** stratégiát megtartottuk a termékben a visszamenőleges kompatibilitás érdekében. Mindkét feloldási stratégia bizonyítottan hatékonyabb egyszerre több aritmetikai kifejezést tartalmazó olyan modellek megoldásához, amelyekben nincsenek táblakorlátozások. Azonban bizonyos esetekben az **Alapértelmezett** stratégia jobb teljesítményt nyújt, mint ez a két stratégia. Ezért ne feledje, hogy minden egyes stratégiát próbáljon ki. |
+| Előbb a minimumtartományok | Az **Előbb a minimumtartományok** és a **Felülről lefelé** stratégiák szoros kapcsolatban állnak egymással. Vevői végrehajtási tanulmányok azt mutatják, hogy a **Felülről lefelé** stratégia jobb teljesítményt nyújt, mint az **Előbb a minimumtartományok** stratégia. Azonban az **Előbb a minimumtartományok** stratégiát megtartottuk a termékben a visszamenőleges kompatibilitás érdekében. Mindkét feloldási stratégia bizonyítottan hatékonyabb egyszerre több aritmetikai kifejezést tartalmazó olyan modellek megoldásához, amelyekben nincsenek táblakorlátozások. Azonban bizonyos esetekben az **Alapértelmezett** stratégia jobb teljesítményt nyújt, mint ez a két stratégia. Ezért ne feledje, hogy minden egyes stratégiát próbáljon ki. |
+| Felülről lefelé             | Az **Előbb a minimumtartományok** és a **Felülről lefelé** stratégiák szoros kapcsolatban állnak egymással. Vevői végrehajtási tanulmányok azt mutatják, hogy a **Felülről lefelé** stratégia jobb teljesítményt nyújt, mint az **Előbb a minimumtartományok** stratégia. Azonban az **Előbb a minimumtartományok** stratégiát megtartottuk a termékben a visszamenőleges kompatibilitás érdekében. Mindkét feloldási stratégia bizonyítottan hatékonyabb egyszerre több aritmetikai kifejezést tartalmazó olyan modellek megoldásához, amelyekben nincsenek táblakorlátozások. Azonban bizonyos esetekben az **Alapértelmezett** stratégia jobb teljesítményt nyújt, mint ez a két stratégia. Ezért ne feledje, hogy minden egyes stratégiát próbáljon ki. |
 | Z3                   | Azt ajánljuk, hogy alapértelmezett feloldási stratégiaként használja a **Z3** stratégiát. Ha érdekli a teljesítmény és a skálázhatóság, akkor értékelheti a többi stratégiát. |
 
 ## <a name="additional-resources"></a>További erőforrások

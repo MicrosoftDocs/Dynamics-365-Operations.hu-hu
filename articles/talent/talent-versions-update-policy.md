@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304609"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768485"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>A Talent rendszerkövetelményei és frissítési irányelvei
 
@@ -36,8 +36,8 @@ A Microsoft Dynamics 365 for Talent webes alkalmazás az alábbi böngészők b�
 
 *   Microsoft Edge (legfrissebb elérhető verziója) a Windows 10 rendszeren
 *   Internet Explorer 11, Windows 10, Windows 8.1 vagy Windows 7 rendszereken
-*   Google Chrome (legfrissebb elérhető verziója) Windows 10, Windows 8.1, Windows 8, Windows 7 rendszereken, vagy Google Nexus 10 táblagépen
-*   Apple Safari (legfrissebb elérhető verziója) Mac OS X 10.10 (Yosemite), 10.11 (El Capitan), 10.12 (Sierra) rendszereken, vagy Apple iPad készüléken
+*   Google Chrome (legfrissebb elérhető verzió)
+*   Apple Safari (legfrissebb elérhető verzió)
 
 A böngésző legfrissebb változatáért látogasson el a szoftver gyártójának webhelyére. 
 

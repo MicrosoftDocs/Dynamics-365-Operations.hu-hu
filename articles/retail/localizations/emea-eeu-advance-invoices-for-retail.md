@@ -16,14 +16,15 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ba2cfb176242e2e611375c9943a9e4da2b2bb02a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0dd49d6fc3294342ebc13d16eb871d0b20229b0c
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370850"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760702"
 ---
 # <a name="advance-invoices-for-retail-for-eastern-europe"></a>Retail előlegszámlák (Kelet-Európa)
+
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a kelet-európai honosításra vonatkozik, és a kiskereskedelemmel foglalkozik.
@@ -32,7 +33,7 @@ Lengyelország, Magyarország és Csehország számára egy vevőtől Point of S
 
 Az értékesítési rendelés számlájának feladásakor a végső dokumentumnak tartalmaznia kell az előlegszámlát, és bármely előleget meg kell jelölni.
 
-Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
+Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 

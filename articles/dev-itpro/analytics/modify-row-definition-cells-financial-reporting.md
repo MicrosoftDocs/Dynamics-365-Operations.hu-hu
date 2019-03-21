@@ -1,9 +1,9 @@
 ---
-title: Sor definiáló cellák módosítása
-description: A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
+title: Sordefiniáló cellák módosítása
+description: A témakör ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323640"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379664"
 ---
-# <a name="modify-row-definition-cells"></a>Sor definiáló cellák módosítása
+# <a name="modify-row-definition-cells"></a>Sordefiniáló cellák módosítása
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
+A témakör ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Határozzon meg egy sor kódot a sor definícióban
 
@@ -386,17 +386,15 @@ Korlátozhatja a sort egy meglévő könyvelési kódra. A oszlopdefiníciónak 
 Néhány könyvelési rendszer támogatja a számla attribútumokat és a tranzakció attribútumokat a pénzügyi adatokban. Ezek az attribútumok virtuális fiók szegmensekként működnek, és kiegészítő információt hordozhatnak a számláról vagy a tranzakcióról. Ezek a kiegészítő információk lehetnek számla azonosítók, kötegelt azonosítók, irányítószámok vagy más jellemzők. Ha a könyvelési rendszer támogatja az attribútumokat, használhat számla attribútumokat vagy tranzakció attribútumokat sor módosítókként a sordefinícióban. A sor információ felülbírálásával kapcsolatos tudnivalókat a „Oszlopdefiníció felülírása” korábban ismertetett részében találja.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Hivatkozás megadása Pénzügyi dimenziók cellára
-A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra hivatkozik, amelyeket a jelentés egyes soraiban szerepeltetni kíván. Ez a cella dimenzióértékeket tartalmaz, de megadhatja Microsoft Excel-munkalapok celláit is a szegmensértékek vagy a dimenzióértékek helyett, illetve ezek mellett is. A **Dimenziók** párbeszéd megnyitásához kattintson duplán a **Hivatkozás Pénzügyi Dimenziókra** cellára.
+A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra hivatkozik, amelyeket a jelentés egyes soraiban szerepeltetni kíván. Ez a cella dimenzióértékeket tartalmaz. A **Dimenziók** párbeszéd megnyitásához kattintson duplán a **Hivatkozás Pénzügyi Dimenziókra** cellára.
 
 > [!NOTE]
 > A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &,\*, \[, \], {, vagy }. Ha olyan sorhoz szeretne adatokat megadni, amely már szerepel a sordefinícióban, a **Kapcsolás a pénzügyi dimenziókhoz** cellában adja meg az adatokat. Pénzügyi adatokra hivatkozó új sorok hozzáadásához,használja a **Sor Beszúrása a** párbeszédpanelt, új sorok létrehozásához a jelentés definícióban. A következő táblázat bemutatja, hogy az oszlop címe attól függően változik, hogy hogyan konfigurálta az oszlopot.
 
 | A kiválasztott hivatkozás típusa       | A Hivatkozás oszlop leírása erre változik |
 |----------------------------------|----------------------------------------------------|
-| Pénzügyi Dimenziók             | Pénzügyi Dimenziókhoz Csatolás                       |
-| Külső Munkalap               | Hivatkozás Munkalapra                                  |
-| Pénzügyi dimenziók + munkalap | Kapcsolás a pénzügyi dimenziókhoz + munkalap           |
-| Felügyeleti jelentéskészítő jelentése       | Felügyeleti jelentéskészítő jelentése                         |
+| Pénzügyi Dimenziók             | Hivatkozás pénzügyi dimenziókra                       |
+| Munkalapjelentés                 | Pénzügyi jelentéskészítési jelentés                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Dimenzió vagy tartomány megadása
 

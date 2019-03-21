@@ -3,7 +3,7 @@ title: Az Attact bővíthetősége
 description: Ez a témakör leírja, hogyan bővítheti a Dynamics 365 for Talent - Attract alkalmazást a Microsoft Power platform segítségével.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304661"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789651"
 ---
 # <a name="extensibility-in-attract"></a>Az Attact bővíthetősége
 
 [!include[banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Talent a Common Data Service (CDS) for Apps platformra épül, és a Microsoft Power Platform, valamint a Common Data Service for Apps lehetőségeivel többféleképpen lehet kiterjeszteni. Ennek megfelelően a rendszer konfigurálható és testreszabható a Microsoft PowerApps és a Microsoft Flow segítségével. A Microsoft Power BI használatával kiegészítő analitikát kaphat az emberekről. Ezenkívül új egyéni tevékenységek, például a PowerApps és a webes tartalom (iframe) tevékenységek, minden eddiginél alkalmazkodóbbá teszik a felvételi folyamatot. Ezen tevékenységek segítségével az üzleti igényekhez és folyamatokhoz szabhatja a felvételi folyamatot, és szavatolhatja, hogy a felvételi csoport és a pályázók számára egyaránt zökkenőmentes és személyre szabott legyen a használati élmény.
+
+## <a name="extending-option-sets-in-attract"></a>Beállításkészletek kiterjesztése az Attract alkalmazásban
+
+Egy **Beállításkészlet** (választólista) olyan mezőtípus, amely egy entitásba foglalható. Beállítások készletét határozza meg. Egy beállítás megjelenítésekor egy űrlapon legördülő lista vezérlőként jelenik meg.  Az Attract alkalmazásban, több mező is van, amely beállításkészlet.  Elkezdtük bevezetni a képességet a beállításkészletek kiterjesztésére, kezdve az Elutasítás okkód mezővel a Foglalkoztatási típusa mezővel, és Szolgálati idő típusa mezővel.   Ezenkívül lefordított megjelenő címkéket is hozzáadhat a felvett beállításokhoz.  Tekintse meg a következő hivatkozást további információkért: [Beállításcímkék testreszabása](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Az álláshirdetés a LinkedIn-re funkcióhoz a **Foglalkoztatási típusa** és **Szolgálati idő típusa** mezők szükségesek az **Állás részletei** lapon. Ezen a mezők az alapértelmezett értékekeit a LinkedIn támogatja és meg lesznek jelenítve az állás feladásakor. Tehát, ha állásokat tesz közzé a LinkedIn-en, és ezen a mezők a meglévő beállításkészlet-értékeit módosítja, az állás továbbra is közzé lesz téve, de LinkedIn nem jeleníti meg az egyéni **Foglalkoztatási típusa** és **Szolgálati idő típusa** értékeket.  
+
+Az alábbiakban az **Elutasítás oka** mező frissítésének lépéseit találja olyan értékekre, amelyek a vállalatának megfelelők.  
+
+1. Az **Elutasítás oka** beállításkészlet kiterjesztéséhez menjen [PowerApps felügyeleti webhelyre.](Https://admin.powerapps.microsoft.com)
+2. Lehetséges, hogy fel lesz kérve, hogy jelentkezzen be fiókjával. Adja meg felhasználónevét és jelszavát, amelyet a Dynamics365 és/vagy Office365 bejelentkezéshez használ, és kattintson a **Következő** gombra.
+3. A **Környezetek** lapon válassza ki a környezetet, amelyet kezelni szeretne, és kattintson duplán a **Részletek** lap megnyitásához.
+4. A **Részletek** lapon jelölje be a **Dynamics 365 felügyeleti központ** lehetőséget.
+5. Válassza ki a módosítani kívánt példányt, és válassza a **Megnyitás** lehetőséget.
+6. Keresse meg **Beállítások**, majd a **Testreszabások** lehetőséget, és válassza a **Rendszer testreszabása** lehetőséget.
+7. Keresse meg az entitást, amelyhez bővíteni szeretné a beállításkészletet, válassza az **Entitások** lehetőséget, és bontsa ki a csoportot. Ebben a példában ez az **Állásjelentkezés entitás** lesz.
+8. Menjen a mezőre, amelyhez ki szeretné bővíteni a beállításkészletet, ehhez válassza a **Mezők** lehetőséget. Ebben a példában ez az **msdyn_rejectionreason** lesz. Kattintson duplán a mezőre.
+9. A **Beállításkészlet** mezőben válassza a **Szerkesztés** lehetőséget.
+10. Válassza ki a **+** ikont.
+11. Adja meg a **Címke** elemet  (Ez legyen egyedi érték – nem lehet duplikált).
+12. Válassza a **Mentés** lehetőséget.
+13. Válassza a **Közzététel** lehetőséget az oldal tetején.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Használja ki a Microsoft Power platform előnyeit 
 

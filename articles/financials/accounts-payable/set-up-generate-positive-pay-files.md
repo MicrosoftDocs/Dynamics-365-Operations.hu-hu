@@ -1,9 +1,9 @@
 ---
 title: Fizetési ellenőrző fájlok beállítása és létrehozása
-description: Ez a cikk ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását.
+description: Ez a témakör ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346088"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778178"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását. 
+Ez a témakör ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását. 
 
 A fizetési ellenőrzés beállítása elektronikus csekklista generálásához, amely a banknak elküldhető. Ezután, amikor egy csekket bemutatnak a banknak a bank összehasonlítja azt a csekklistával. Ha a csekk megfelel a listában szereplő csekkel a bank törli azt. Ha a csekk nem egyezik meg a listában szereplő csekkel, akkor a bank bent tartja ellenőrzésre.
 
@@ -94,7 +94,7 @@ Az ellenőrzött fizetési fájlok adatentitások használatával jönnek létre
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

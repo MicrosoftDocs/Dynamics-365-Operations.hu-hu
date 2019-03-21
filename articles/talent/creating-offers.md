@@ -3,7 +3,7 @@ title: Ajánlatok létrehozása, jóváhagyása és aláírása
 description: Ez a témakör az ajánlatok létrehozását, jóváhagyását és aláírását ismertheti a Dynamics 365 for Talent megoldást használó jelöltek számára.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304729"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768905"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Ajánlatok létrehozása, jóváhagyása és aláírása
 
@@ -104,15 +104,20 @@ Számos művelet hajtható végre az ajánlat pályázónak való küldése elő
 
 -  Lehetnek az ajánlat elfogadási folyamatának bevenni kívánt további dokumentumok. Lehetőség van a kötelező dokumentumtípus listázására.
 
-- Elektronikus aláírási lehetőség: Ha az Adobe Sign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy Adobe Sign licenct.. Ezt kétféleképpen lehet. Menjen a Felhasználói **Beállítások** elemhez az **Ajánlat**alatti **Kapcsolatok** menüben, hogy csatlakozzon **Adobe Sign** szolgáltatáshoz. Vagy, amennyiben a felhasználói beállításokban nem lett létrehozva a kapcsolat az Ajánlat küldésénél lesz erre felkérve a jelölt képernyőjén. 
+- Elektronikus aláírási lehetőség: kétféleképpen lehet tetszés szerinti e-aláírás-szolgáltatót csatlakoztatni. Menjen a **Felhasználói Beállítások** elemhez az **Ajánlat** alatti **Kapcsolatok** menüben, hogy csatlakozzon **Adobe Sign** vagy **DocuSign** szolgáltatáshoz. Vagy, amennyiben a felhasználói beállításokban nem lett létrehozva a kapcsolat az **Ajánlat küldése jelentkezőnek** oldalon lesz erre felkérve a jelölt képernyőjén. Az elektronikus aláírási fiókot csak egyszer kell csatlakoztatni. Minden olyan jövőbeli ajánlat csomaghoz, amelyeket az adott felhasználó küld ki, ugyanez a licenc lesz használva. 
 
-> [!NOTE]
-> A felhasználóknak csak egyszer kell csatlakoztatni Adobe Sign-fiókjukat. Minden olyan jövőbeli ajánlat csomaghoz, amelyeket az adott felhasználó küld ki, ugyanez a licenc lesz használva. 
+### <a name="adobe-sign"></a>Adobe Sign
+Ha az Adobe Sign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy Adobe Sign licencet ebben a lépésben. 
+
+### <a name="docusign"></a>DocuSign
+Ha a DocuSign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy DocuSign licencet ebben a lépésben. A bejelentkezést követően DocuSign profilhoz társított alapértelmezett fiók és engedélyek kapcsolódnak a Talent Attract alkalmazáshoz. 
 
 -  Megtekintheti és szerkesztheti az e-mail sablont, szükség szerint.
 
 Amikor készen áll az ajánlatot, és rákattint a **Küldés a pályázónak** elemre, a jelölt kap egy e-mailt, amely szerint az ajánlat ellenőrzésre vár.
 
+>[!NOTE]
+> Ha Adobe Sign vagy DocuSign megoldást használ, és hibába ütközik az ajánlat küldése során a pályázónak, próbálja leválasztani, majd csatlakotatni az elektronius aláíráshoz tartozó felhasználói fiókot a **Felhasználói beállításokban**. Ha a probléma továbbra is fennáll, forduljon támogatásunkhoz a **Probléma bejelentése** hivatkozással.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Az ajánlat kézhezvétele utáni jelölti műveletek
 

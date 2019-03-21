@@ -3,7 +3,7 @@ title: Készletegységgel rendelkező termékek szinkronizálása a Finance and 
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Microsoft Dynamics 365 for Finance and Operations raktáregységeinek a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359244"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836302"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
 
@@ -34,9 +34,11 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Micr
 
 [![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-A használt **Field Service termékek (Finance and Operations – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Finance and Operations – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Finance and Operations – Sales) – Közvetlen](products-template-mapping-direct.md).
+A használt **Field Service termékek készletegységgel (Finance and Operations – Field Service)** sablon a **Field Service termékek (Finance and Operations – Field Serivce)** sablonon alapul. További tudnivalókért lásd: [Field Service termékek (Finance and Operations – Field Service)](field-service-product.md).
 
-Ez a témakör csak a **Field Service termékek (Finance and Operations – Field Service)** és a **Field Service termékek (Finance and Operations – Field Serivce)** sablonok közötti különbségeket mutatja be.
+Ez a témakör csak a két sablonok eltéréseit írja le: 
+- **Készletegységgel rendelkező Field Service termékek (a Finance and Operations alkalmazásból a Sales alkalmazásba)**
+- **Field Service termékek (Finance and Operations – Field Service)**. 
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 

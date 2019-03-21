@@ -3,7 +3,7 @@ title: Pénzügyi naptárak, pénzügyi évek és időszakok
 description: Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361659"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778201"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Pénzügyi naptárak, pénzügyi évek és időszakok
 
@@ -43,7 +43,7 @@ A záró időszakot a pénzügyi év lezárásakor létrehozott főkönyvi tranz
 Amikor létrehoz egy záró időszakot válassza ki az időszakot, amelynek állapota szabad és azokkal a dátumokkal rendelkezik, amelyeket használni kíván. Az új záró időszak átveszi a meglévő időszak kezdő és záró dátumát. Az eredeti időszak is megmarad. Válassza ki például a 12. időszak lehetőséget, amely a pénzügyi év utolsó időszaka, és az augusztus 1–31. dátumokat tartalmazza. A záró időszaknak megadhatja például a Zárás nevet. Miután létrehozta az új záró időszakot, a rendszerben megtalálja az eredeti időszakot és a záró időszakot is. Mindkét időszak augusztus 1-jén kezdődik, és augusztus 31-én fejeződik be.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Főkönyvekben, tárgyi eszközöknél és költségvetéseknél használt naptárak beállítása
-Pénzügyi naptárak tárgyi eszköz értékcsökkenése, a pénzügyi tranzakciók használják, és a költségvetési ciklusok. A pénzügyi naptár létrehozása esetén több célra is használhatja. Kiválaszthatja, hogy egy pénzügyi naptárat érték értékmodellt vagy értékcsökkenés könyvet a tárgyieszköz-naptár létrehozásához. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Használhatja ugyanazt a pénzügyi naptárat, ezek közül.
+Pénzügyi naptárak tárgyi eszköz értékcsökkenése, a pénzügyi tranzakciók használják, és a költségvetési ciklusok. A pénzügyi naptár létrehozása esetén több célra is használhatja. Kiválaszthat egy pénzügyi naptárat egy tárgyieszköz könyvhöz tárgyieszköz-naptár létrehozásához. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Használhatja ugyanazt a pénzügyi naptárat, ezek közül.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Válassza ki a jogi személy pénzügyi naptárát.
 
@@ -51,7 +51,7 @@ Válassza ki a pénzügyi naptárat, amit használni kíván a jogi személye f�
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Pénzügyi naptár választása főkönyvhöz
 
-Kiválaszthatja, hogy egy pénzügyi naptárat egy értékmodellt vagy értékcsökkenés könyvet, és a pénzügyi naptárat használja a program által a tárgyi eszközök, amelyek használják a kijelölt értékmodell vagy értékcsökkenés könyvet. Bármely pénzügyi évből választhat, amely meg van határozva a pénzügyi naptárak lapon.
+Kiválaszthat egy pénzügyi naptárat egy tárgyi eszköz könyvhöz, és a pénzügyi naptárat használja a program által a tárgyi eszközökhöz, amelyek a kiválasztott könyvet használják. Bármely pénzügyi évből választhat, amely meg van határozva a pénzügyi naptárak lapon.
 
 ### <a name="define-budget-cycle-time-spans"></a>Költségvetési ciklus időtartamainak karbantartása
 

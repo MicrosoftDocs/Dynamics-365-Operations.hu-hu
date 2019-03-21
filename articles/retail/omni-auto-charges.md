@@ -3,7 +3,7 @@ title: Többcsatornás speciális automatikus költségek
 description: Ez a témakör a Retail csatorna rendeléseihez kapcsolódó kiegészítő rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345559"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789771"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0-s verziójában.
@@ -67,6 +66,8 @@ Az új műveletek alább láthatók.
 - **143 – Költségek újraszámolása** – A művelet segítségével az értékesítési tranzakcióhoz a költségek teljes ismételt számítását végrehajthatja. Bármely korábbi felhasználó által felülbírált automatikus költségek újra lesznek számítva a bevásárlókocsi aktuális konfigurációja alapján.  
 
 Mint minden pénztárműveletnál, a biztonsági konfigurációk beállíthatók úgy, hogy vezetői jóváhagyást igényeljenek a művelet végrehajtásához.
+
+Fontos megjegyezni, hogy a fent felsorolt POS-műveletek a POS-elrendezés akkor is hozzáadhatók, ha a **Speciális automatikus költségek használat** paraméter le van tiltva. Ebben az esetben a szervezetek még további előnyöket élvezhetnek, azáltal hogy a manuálisan hozzáadott díjakat megtekinthetik és szerkesztheti a **Költségek kezelése** művelettel. Felhasználók használhatják a **Fejlécköltségek hozzáadása** és **Sorköltségek hozzáadása** műveleteket POS-tranzakciókhoz, még akkor is, ha a **Speciális automatikus költségek használata** paraméter le van tiltva. A **Költségek újraszámolása** művelet kevesebb funkcióval rendelkezik, ha a **Speciális automatikus költésgek használata** le van tiltva. Ebben a szituációban semmi nem lesz újraszámítva, és a manuálisan hozzáadott díjak a tranzakcióhoz visszaállnak $0.00 értékre.
 
 ## <a name="use-case-examples"></a>Használati eset példái
 Ebben a szakaszban használati eseteket mutatunk be, amellyel jobban megértheti az automatikus költségek és vegyes költségek beállítását és használatát a Kiskereskedelmi csatorna rendelései vonatkozásában. Az alábbi példák bemutatják az alkalmazás működését, amikor a **Speciális automatikus díjak használata** paraméter engedélyezve van.
@@ -207,3 +208,7 @@ Azt ajánljuk, hogy a szervezet szabadszöveges mezőket is adjon hozzá a nyugt
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Megakadályozza, hogy a költségeket kiszámítsák a pénztárrendelés befejezéséig
 
 Előfordulhat, hogy egyes szervezetek szívesebben várnak, amíg a felhasználó befejezte az összes értékesítés hozzáadását a pénztártranzakcióhoz a költségek számítása előtt. Annak megakadályozására, hogy a költségek számítását cikkekként hozzáadják a pénztártranzakciókhoz, kapcsolja be a **Manuális költségszámítás** paramétert az üzlet által használt **Funkcióprofil** oldalán. Ez a paraméter engedélyezése arra kötelezi a pénztárfelhasználót, hogy a **Teljes összeg kiszámítása** műveletet használja, amikor a termékek hozzáadása a pénztártranzakcióhoz befejeződött. A **Teljes összeg kiszámítása** művelet majd elindítja a rendelés fejlécére vagy megfelelő sorokra vonatkozó automatikus díjak számítását.
+
+### <a name="charges-override-reports"></a>Költség-felülbírálási jelentések
+
+Ha felhasználó manuálisan felülírja a számított költségeket vagy manuálisan ad hozzá költséget a tranzakcióhoz, ez az adatot lesz elérhető ellenőrzésre a **Költség-felülbírálás előzményei** jelentésben. A jelentés itt érhető el: **Kiskereskedelem \> Lekérdezések és jelentések \> Költség-felülbírálás előzményei**.  Fontos megjegyezni, hogy a jelentéshez szükséges adatokat importálása a csatorna-adatbázisból történik a központba „P” elosztási munkaütemezésen keresztül. Emiatt a POS-ban végrehajtott felülbírálások adatait nem lesznek azonnal elérhetők a jelentésben mindaddig, amíg a feladat fel nincs töltve az üzlet tranzakciós adatokaiba a központban. 

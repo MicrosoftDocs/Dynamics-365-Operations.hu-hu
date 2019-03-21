@@ -3,7 +3,7 @@ title: Kötelezettségek számlaegyeztetése
 description: A kötelezettségek számlaegyeztetése a szállítói számla, a beszerzési rendelés és a termékbevételezés egyeztetési folyamatát jelenti.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6d1582d268be759cd1f1686c9e80f6cf7eeb2da8
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310277"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389933"
 ---
 # <a name="accounts-payable-invoice-matching"></a>Kötelezettségek számlaegyeztetése
 
@@ -49,7 +49,7 @@ A Kötelezettségek számlaegyeztetése funkció következő típusai használha
 
 A kétirányú és a háromirányú egyeztetés mindig az egységár alapján egyezteti az árinformációkat. Úgy is beállíthatja ezeket az egyeztetési módokat, hogy az árinformációk egyeztetése a teljes ár alapján történjen.
 -   Nettó egységárak egyeztetése – A kétirányú vagy háromirányú egyeztetés árinformációinak egyeztetése a számla minden egyes sorára számított nettó egységárak és a beszerzési rendelésen szereplő ugyanezen nettó egységárak összehasonlításával. A nettó egységár számítása a következő képlettel történik: A sorban szereplő Nettó összeg / A sorban szereplő Mennyiség
--   Teljes árak egyeztetése – A kétirányú vagy háromirányú egyeztetés árinformációinak egyeztetése a számla minden egyes sorára számított nettó összegek (teljes árak) és a beszerzési rendelésen szereplő ugyanezen nettó összegek összehasonlításával. A nettó összeg számítása a következő képlettel történik: (Egységár \* A sorban szereplő Mennyiség) + A sorban szereplő Költségek - A sorban szereplő Engedmények
+-   Teljes árak egyeztetése – A kétirányú vagy háromirányú egyeztetés árinformációinak egyeztetése a számla minden egyes sorára számított nettó összegek (teljes árak) és a beszerzési rendelésen szereplő ugyanezen nettó összegek összehasonlításával. A nettó összeg számítása a következő képlettel történik: *(Egységár \* A sorban szereplő Mennyiség) + A sorban szereplő Költségek - A sorban szereplő Engedmények*. Teljes árak egyeztetése során százalékkal, a rendszer a tranzakciós pénznem használatával hasonlítja össze az értékeket. Teljes árak egyeztetése során mennyiség alapján, a rendszer a könyvelési pénznem használatával hasonlítja össze az értékeket.
 
 A számlaegyeztetési számítások legtöbbször automatikusan történnek, amikor a Szállítói számla lapon szállítói számlákat szerkeszt. Másik lehetőségként a számlaegyeztetés igény szerinti időpontban is végrehajtható. A jogi személyre nézve az igény szerint lefuttatható számlaegyeztetés a Számla ellenőrzése lap Kötelezettségek paraméterei oldalán, a Számlafejléc állapotának automatikus frissítése lehetőséggel vezérelhető. A számlaegyeztetés a számlaellenőrzési folyamat részeként is elvégezhető. A számlaegyeztetés eredményeit a Szállítói számla oldalon és a kapcsolódó számlaegyeztetési oldalakon tekintheti meg.
 

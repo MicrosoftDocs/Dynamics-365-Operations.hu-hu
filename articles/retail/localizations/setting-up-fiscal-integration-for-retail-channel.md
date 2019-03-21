@@ -3,7 +3,7 @@ title: A kiskereskedelmi csatornák pénzügyi integrálásának beállítása
 description: Ez a témakör bemutatja, hogyan a állíthatja be a pénzügyi integráció funkciót a kereskedelmi csatornákhoz.
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377309"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773327"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának beállítása
 
@@ -175,7 +175,7 @@ Bizonyos esetekben különleges szöveget nyomtatni egy pénzügyi nyugtára eng
     3. A **Pénzügyi nyugta szövege** mezőben adja meg a pénzügyi szöveget, amelyet a pénzügyi nyugtára kell nyomtatni.
 
     > [!NOTE]
-    > Több engedmény alkalmazása esetén ugyanazon tranzakciósorhoz, a pénzügyi nyugta tartalmazza a pénzügyi szövegeket minden engedményből, amelyek kapcsolva vannak ahhoz a tranzakciós sorhoz. 
+    > Több engedmény alkalmazása esetén ugyanazon tranzakciósorhoz, a pénzügyi nyugta tartalmazza a pénzügyi szövegeket minden engedményből, amelyek kapcsolva vannak ahhoz a tranzakciós sorhoz.
 
 ## <a name="set-error-handling-settings"></a>Hibakezelés beállításainak megadása
 
@@ -210,3 +210,4 @@ Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárbó
     2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi X nyomtatása** gombtulajdonságot
     3. Adja hozzá az új gombot, és és állítsa a **Pénzügyi Z nyomtatása** gombtulajdonságot
     4. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosítások átviteléhez a csatorna-adatbázisba.
+

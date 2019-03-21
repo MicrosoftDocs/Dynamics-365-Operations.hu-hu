@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376507"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768882"
 ---
 # <a name="set-up-offer-management"></a>Ajánlatkezelés beállítása 
 
@@ -199,11 +199,11 @@ Az ajánlatkészítési folyamatnak számos olyan része van, amelyet egy Attrac
 - **Jelölt ajánlati élménye** - rendszergazdaként, lehetősége van azt beállítani, hogy minden ajánlathoz tartozik-e lejárati dátum, és ha igen, mi legyen az alapértelmezett eltolás a lejárati dátum esetén. Az is konfigurálható, hogy a pályázók elutasíthatja-e az ajánlatot.
 
 - **e-aláírások** – Rendszergazdaként,kiválaszthatja, hogy a pályázók milyen módot használhatnak az aláírásokhoz.
-    - Adobe Sign – Az összes ajánlati csomag küldése és aláírása az Adobe Sign használatával történik. Minden egyes ajánlatot létrehozó esetében kapcsolni kell Adobe Sign licencét az Attract alkalmazáshoz. 
+    - Adobe Sign – Az összes ajánlati csomag küldése és aláírása az Adobe Sign használatával történik. Minden egyes ajánlatot létrehozó esetében kapcsolni kell Adobe Sign fiókot az Attract alkalmazáshoz. Adobe Sign licencekért és ingyenes próbaverzióért keresse fel ezt a [hivatkozást](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign – Az összes ajánlati csomag küldése és aláírása a DocuSign használatával történik. Minden egyes ajánlatot létrehozó esetében kapcsolni kell DocuSign fiókot az Attract alkalmazáshoz. 
+    
     - ESign – Ez az alapértelmezett beállítás, amelyet az alkalmazás tartalmaz, a felhasználó neve és monogramja beírásával írhatja alá az ajánlatot.
 
->[!NOTE]
-> Adobe Sign licencekért és ingyenes próbaverzióért keresse fel ezt a [hivatkozást](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Az ajánlat-létrehozási folyamat kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.
