@@ -3,7 +3,7 @@ title: Központosított kifizetések a Kötelezettségekhez
 description: Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b61320617dd85a880414b31ad6c88e611beca161
+ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327067"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "390166"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Központosított kifizetések a Kötelezettségekhez
 
@@ -33,7 +33,7 @@ Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és
 
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. Továbbá a szervezet időt takarít meg, mivel a kifizetési folyamat hatékony.
 
-Egy szervezet központosított kifizetéseiben több jogi személy létezik a műveletekhez és minden működő jogi személy kezeli a saját beszállítói számláit. A kifizetések minden működő jogi személyhez egyetlen jogi személy által jönnek létre, amely a kifizetés jogi személyeként ismert. A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók. Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy realizált veszteség tranzakciókat, és hogy a vállalatközi kifizetésekhez kapcsolódó készpénzfizetési-engedmény tranzakciók hogyan legyenek kezelve. 
+Egy szervezet központosított kifizetéseiben több jogi személy létezik a műveletekhez és minden működő jogi személy kezeli a saját beszállítói számláit. A kifizetések minden működő jogi személyhez egyetlen jogi személy által jönnek létre, amely a kifizetés jogi személyeként ismert. A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók. Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy realizált veszteség tranzakciókat, és hogy a vállalatközi kifizetésekhez kapcsolódó készpénzfizetési-engedmény tranzakciók hogyan legyenek kezelve. A központosított kifizetési naplósoron a **Számlatípus** értékét Szállítóra kell állítani. Az **Ellenszámla típusa** Bank vagy Főkönyv kell legyen. A bankszámlának az aktuális vállalatban kell lennie. 
 
 A következő példák bemutatják, hogyan kezeli a rendszer a feladást a különböző helyzetekben. Mindegyik példa a következő konfigurációból indul ki:
 

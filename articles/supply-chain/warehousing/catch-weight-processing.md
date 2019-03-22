@@ -3,7 +3,7 @@ title: A tényleges súllyal rendelkező termék feldolgozása a raktárkezelés
 description: A témakör azt ismerteti, hogy a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzést végezni a raktárban.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334059"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777272"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**Funkció kitettsége**
+## <a name="feature-exposure"></a>Funkció kitettsége
 
 Hogy a tényleges súllyal rendelkező termékek feldolgozásához használja a raktárkezelési funkciókat, a funkció bekapcsolásához a licenc konfigurációs kulcsot kell használnia. (Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre. Ezután a **Konfigurációs kulcsok** fülön bontsa ki a **Kereskedelem \> Raktár- és szállításkezelés** elemet, és jelölje be a jelölőnégyzetet a **Tényleges súly raktár esetén** lehetőséget).
 
 > [!NOTE]
-> Mind a **Raktár-és szállításkezelés** licenc konfigurációs kulcsot, mind a **Folyamatelosztási tényleges súly** licenc konfigurációs kulcsokat is be kell kapcsolni.
+> Mind a **Raktár-és szállításkezelés** licenc konfigurációs kulcsot, mind a **Folyamatelosztás \> tényleges súly** licenc konfigurációs kulcsokat is be kell kapcsolni.
 
 Miután a licenc konfigurációs kulcs be van kapcsolva, a kiadott termék létrehozásakor kiválaszthatja a **Tényleges súlyt**. A kiadott termékhez tárolási dimenziócsoportot társíthat, amelyhez a **Raktárkezelési folyamatok használata** paraméter ki van választva.
 

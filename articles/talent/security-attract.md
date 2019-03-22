@@ -3,7 +3,7 @@ title: Biztonság és szerepkörök kezelése az Attract alkalmazásban
 description: Ez a témakör az adatentitások biztonságával kapcsolatban nyújt tájékoztatást a Microsoft Dynamics 365 for Talent - Attract rendszerben.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374780"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789697"
 ---
 # <a name="security-and-role-management-in-attract"></a>Biztonság és szerepkörök kezelése az Attract alkalmazásban
 
@@ -100,14 +100,16 @@ A következő jogosultságok a pályázókra vonatkozó feladatspecifikus adatok
 | Adat vagy művelet          | Toborzó | Felvételi vezető | Interjúkészítő |
 |-------------------------|-----------|----------------|-------------|
 | Pályázati dokumentumok   | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Csak olvasható |
-| Pályázati jegyzetek       | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Létrehozás |
+| Pályázati jegyzetek       | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Létrehozás, olvasás, frissítés és törlés azon feladatokkal kapcsolatban, ahol a felhasználó a toborzócsoport tagja | Csak olvasható|
 | Pályázat aktivitása    | Megtekintés, ha a felhasználó a toborzócsoport tagja | Megtekintés, ha a felhasználó a toborzócsoport tagja | Csak olvasható |
 | Pályázati visszajelzés    | Visszajelzések adása és megtekintése, ha a felhasználó a toborzócsapat tagja | Visszajelzések adása és megtekintése, ha a felhasználó a toborzócsapat tagja | Visszajelzést adhat hozzá.\*\* |
 | Pályázat elutasítása      | Elutasíthat, ha a felhasználó a toborzócsoport tagja | Nem engedélyezett | Nem engedélyezett |
 | Szakasz előreléptetése           | Elutasíthat, ha a felhasználó a toborzócsoport tagja | Előreléptethet, ha a felhasználó a toborzócsoport tagja | Nem engedélyezett |
 | Ajánlatkezelés indítása | Elindíthatja ajánlatkezelést | Tartozik egy konfigurációslehetőség az ajánlat tevékenységhez. | Nem engedélyezett |
 
-\*\* Egy konfigurációs beállítás a [visszajelzés tevékenység beállítása](activities-attract.md#feedback-activity) helyen szabályozza, hogy az interjúkészítők láthatják-e egymás a visszajelzéseit.
+
+\*\* Egy konfigurációs beállítás a [visszajelzés tevékenység beállítása](./activities-attract.md) helyen szabályozza, hogy az interjúkészítők láthatják-e egymás a visszajelzéseit.
+
 
 ## <a name="process-templates"></a>Folyamatsablonok
 

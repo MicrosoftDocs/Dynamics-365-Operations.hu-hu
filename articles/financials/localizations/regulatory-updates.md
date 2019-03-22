@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 for Finance and Operations tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9dcf958165cffa3e3cd62b88a71295eefae9cf8f
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "375990"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832101"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -40,6 +40,14 @@ Ha a dátum oszlopban hónap van feltűntetve szabályozó frissítés kiadása 
 |      március 2019.          |   10,0,0      | Ausztria      |   A Kammerumlage (A beszerzési illeték) 2019-es változásai    |
 |      március 2019.          |   10,0,0      |   Brazília    |     SPED EFD hozzájárulások - 004 és 005 elrendezés  |
 |      március 2019.          |   10,0,0      |    Malajzia     |Malajzia lecseréli GST-t SST forgalmi adóval        |
+|      április 2019.          |   10.0.1      |    Ausztria     |Kiskereskedelem – Pénzügyi integráció         |
+|      április 2019.          |   10.0.1      |    Európa     |E-számlázás - Vevő számlák exportálása PEPPOL BIS 3 formátumban         |
+|      április 2019.          |   10.0.1      |    Európa     |E-számlázás - Szállítói számlák importálása PEPPOL BIS 3 formátumban         |
+|      április 2019.          |   10.0.1      |   Németország     |E-számlázás - Vevő számlák exportálása xRechnung 1.1 formátumban         |
+|      április 2019.          |   10.0.1      |    Egyesült Királyság     |[Áfakimutatás elküldési módosítások (Adó digitalizálása)](emea-gbr-mtd-vat-integration.md)    |    
+|      április 2019.          |   10.0.1      |    Brazília     |NF-e új NT 2018.005         |
+|      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től         |
+|      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től (bevételi és kiadási számlakönyvformátumok)  |
 
 ## <a name="additional-resources"></a>További erőforrások
 - Az összes tervezett és a jogszabálykövető frissítés keresése [Lifecycle Service - Problémakereső](https://lcs.dynamics.com/Logon/Index) (bejelentkezés szükséges).

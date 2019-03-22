@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377135"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773277"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
@@ -30,7 +30,7 @@ ms.locfileid: "377135"
 
 ## <a name="introduction"></a>Bevezetés
 
-Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik a kiskereskedelmi értékesítések pénzügyi regisztrációját a helyi pénzügyi törvényekkel összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók: 
+Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik a kiskereskedelmi értékesítések pénzügyi regisztrációját a helyi pénzügyi törvényekkel összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók:
 
 - Kiskereskedelmi értékesítés regisztrálása olyan pénzügyi eszközön, amely a kiskereskedelmi pénztárhoz (POS) csatlakozik, például pénzügyi nyomtató, majd a pénzügyi nyugta nyomtatása a vevő számára.
 - A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
@@ -87,6 +87,7 @@ Ha egy tranzakció vagy esemény pénzügyi regisztrációja sikeres, a pénzüg
 
 Pénzügyi tranzakciók a Retail Headquarters szolgáltatásba kerülnek átvitelre a *P-feladat* segítségével, a kiskereskedelmi tranzakciókkal együtt. A **Pénzügyi tranzakciók** gyorslapon a **Kiskereskedelmi üzleti tranzakciók** oldalon belül megtekintheti a pénzügyi tranzakciókat, amelyek kiskereskedelmi tranzakciók kapcsolódnak.
 
+
 A pénzügyi tranzakció tárolja a következő adatokat:
 
 - Pénzügyi regisztrációs folyamat részletei (folyamat, csatlakozócsoport, csatlakozó stb). Szintén tárolja a pénzügyi eszköz sorozatszámát a **Pénztárgép száma** mezőben, ha ez az információ szerepel a pénzügyi válaszban.
@@ -115,4 +116,5 @@ A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK
 
 - [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
 - [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
-- [Ellenőrzőegység integrációs minta Svédország esetén](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Ellenőrzőegység integrációs minta Svédország esetén](./retail-sdk-control-unit-sample.md)
+

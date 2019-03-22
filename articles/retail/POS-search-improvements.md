@@ -3,7 +3,7 @@ title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313589"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789869"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -69,7 +69,7 @@ A helyi termékkeresés használata felhasználóbarátabbá vált. A következ�
 
 ## <a name="customer-search"></a>Vevőkeresés
 
-A vevőkereséssel különböző célokkal kereshetők vevők. Például lehet, hogy a pénztáros szeretné megnézni egy vevő kívánságlistáját vagy beszerzési előzményeit, vagy hozzá akarja adni a vevőt egy tranzakcióhoz. Több kulcsszavas keresés esetén a vevőkeresési algoritmus az összes olyan vevőt visszaadja, aki a keresett kulcsszavak bármelyikének megfelel. A legtöbb kulcsszónak megfelelő vevők azonban az eredmények tetején jelennek meg. Ez a viselkedés hasonló ahhoz, ahogy a többi keresési motor megjeleníti az eredményeket. Először a legtöbb keresett feltételnek megfelelő eredményeket jelenítik meg, utánuk pedig azokat az eredményeket, amelyek részben felelnek meg a kulcsszavaknak. Ez a viselkedés segítséget nyújt a pénztárosoknak az olyan helyzetekben, ahol a keresés során több kulcsszót használnak, de az egyik kulcsszóban helyesírási hiba található.
+A vevőkereséssel különböző célokkal kereshetők vevők. Például lehet, hogy a pénztáros szeretné megnézni egy vevő kívánságlistáját vagy beszerzési előzményeit, vagy hozzá akarja adni a vevőt egy tranzakcióhoz. Keresés algoritmus megfelelteti a keresési kifejezéseket a következő vevőtulajdonságokban szereplő értékekkel: név, e-mail cím, telefon, hűségkártya száma, cím és számlaszám. Ezek közül a név tulajdonság nyújtja a legnagyobb rugalmasságot, több kulcsszavas keresések esetén, mivel az algoritmus visszaadja az összes ügyefelet, aki megfelel bármely keresett kulcsszónak, és a legtöbb kulcsszónak megfelelő ügyfél jelenik meg az eredmények elején. Ez a viselkedés segít a pénztárosoknak olyan helyzetekben, amikor teljes névvel keresnek de a kezdeti adatbeviteli során a vezetéknév és keresztnév fel lett cserélve. Azonban a megfelelő teljesítmény érdekében, minden más tulajdonság megőrzi a keresőszavak sorrendjét, tehát, ha a kulcsszavak nem felelnek meg annak a sorrend, amelyben tárolva vannak az adatok, akkor a rendszer nem ad vissza eredményt.
 
 Alapértelmezés szerint a vevő keresése az üzlethez társított vevői címjegyzékekben történik. Az ilyen típusú keresés *helyi vevőkeresés* néven ismert. Azonban az alkalmazottak kereshetnek vevőt globálisan is. Más szavakkal kereshetnek a vállalat üzletei és az összes többi jogi személy között. Az ilyen típusú keresés *távoli vevőkeresés* néven ismert.
 

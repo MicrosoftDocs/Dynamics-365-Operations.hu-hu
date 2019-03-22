@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329252"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836348"
 ---
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
@@ -35,11 +35,77 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva vag
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-> [!Note]
+> [!NOTE]
 > A Dynamics 365 for Finance and Operations 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát. Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.
 
-> [!Note]
+> [!NOTE]
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 és 25-as platformfrissítés
+
+> [!IMPORTANT]
+> A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat az [Szokásos és első kiadási szolgáltatásfrissítések](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Elavult API-k és a lehetséges kompatibilitástörlő változások
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>A belső osztályok történő származtatás elavult.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtti kiadásokban létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdődően a fordító megjelenít egy figyelmeztető üzenetet he ezt kísérli meg.|
+| **Felváltotta másik szolgáltatás?**   | Egy közelgő platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy ha a 25-ös platformfrissítést vagy újabb verziót futtat ez telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elevult – Egy közelgő platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>A belső módszerek felülbírálása elavult
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtti kiadásokban lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdődően a fordító megjelenít egy figyelmeztető üzenetet he ezt kísérli meg.|
+| **Felváltotta másik szolgáltatás?**   | Egy közelgő platformfrissítésben a fordítói figyelmeztetés hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy ha a 25-ös platformfrissítést vagy újabb verziót futtat ez telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elevult – Egy közelgő platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 és 23-as platformfrissítés
+
+### <a name="print-to-screen-functionality"></a>Nyomtatás a képernyőre funkció
+Az ügyfelek használhatják a **importálási** művelet amely a Jelentésmegtekintő vezérlőben érhető el a Finance and Operations alkalmazások által létrehozott dokumentumok letöltéséhez Ez a HTML-alapú megjelenítése a jelentésnek la dokumentum nem oldalakra bontott előnézetét kínálja a dokumentumnak
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A HTML-alapú előnézeti tapasztalat nem oldalakra bontott jellege **nem** biztosítja a Finance and Operations rendszerrel készített végső dokumentumok hitelességét A PDF alkalmazásával, mint a szokásos üzleti műveletek formátuma, jelentősen egyszerűsíthetők az alkalmazás jelentéseivel kapcsolatos felhasználói beállítások, és egyszerűbbé tehettük a dokumentumok létrehozásának folyamatát. |
+| **Felváltotta másik szolgáltatás?**   | Innentől a PDF-dokumentum lesz az alapértelmezett formátum a Finance and Operations jelentéseihez.   |
+| **Érintett területek**         | Ez a módosítás **nem** befolyásolja, azon ügyfélszituációkat ahol jelentések elektronikus úton elosztottak vagy közvetlenül nyomtatókra küldik azokat.    |
+| **Telepítési beállítás**              | Összes  |
+| **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. A funkció, amellyel automatikusan letölthetők a pályázati jelentések a böngészőbe PDF-dokumentumokként, a tervek szerint a 2019. májusi platformfrissítésben lesz elérhető. <br><br>**Fontos:** Azon meglévő ügyfelek számára akik a nyomtatása képernyőre funkciót használják, javasolt, hogy értesítsék a [Támogatást](../lifecycle-services/lcs-support.md), mielőtt a 26-os platformfrissítésre frissítenének. |
+
+### <a name="client-kpi-controls"></a>Ügyfél KPI-vezérlők
+A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio rendszerben egy fejlesztő által és a végfelhasználó tovább testreszabhatja azokat.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A KPI-k meghatározásához használt natív ügyfélvezérlők alacsony szintű megértést várnak el az ügyféltől, és a fejlesztők adhatják hozzá a követhető mutatókat. |
+| **Felváltotta másik szolgáltatás?**   | PowerBI.com szolgáltatás világszínvonalú eszközöket kínál KPI-k kezeléséhez és meghatározásához külső forrásból származó adatok alapján.  Egy közelgő kiadásban tervezzük PowerBI.com-on tárolt megoldások beágyazását az alkalmazások munkaterületeire   |
+| **Érintett területek**         | Ez a frissítés megakadályozza, hogy a fejlesztők új KPI-vezérlők vezessenek be a Visual Studio tervezőjében.    |
+| **Telepítési beállítás**              | Összes  |
+| **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Elavult API-k és jövőbeni kompatibilitástörlő változások
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak. A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba*, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül. Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban. A probléma megoldásához:<br><br>1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.<br><br>2. Fordítsa újra.<br><br>3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett. |
+| **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva.  |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
+| **Telepítési beállítás**              | Mind. |
+| **Állapot**                         | Elavult - A figyelmeztetés fordítási hiba lesz a jövőben. Jelenleg a 30-as platformfrissítés van megcélozva. |
+
+#### <a name="complete-list"></a>Teljes lista
+Az elavulás alatt álló API-k teljes listáját lásd: [Módszerek és metaadat-elemek elavulása](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 és 20-as platformfrissítés
 
@@ -1093,7 +1159,7 @@ A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben
 
 |   |  | 
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | - A virtuális vállalatokat még az adatok táblákban való tárolása előtt be kell állítani. A virtuális vállalatok, már meglevő implementációra történő modernizálása nagyon nehézkes.<br><br>- Mivel a Microsoft Dynamics AX jelenlegi verziójában rengeteg adatnormalizáció történt, igen nehézkessé vált átlátni azt, hogy a táblagyűjteményekhez mit szükséges hozzáadni. Például nehéz megállapítani, mely táblák kerüljenek megosztásra. A virtuális vállalatokban lévő táblákból hivatkozott összes egyéb táblát is hozzá kell adni. A táblanormalizáció miatt, még egy több táblában szétszóródó egyszerű alapadatot is a virtuális vállalat részévé kell tenni. Bármilyen itt történő hiba működési diszfunkciókat okozhat.<br><br>- Egy virtuális vállalat részét képező táblában elvesznek az adatok eredetére vonatkozó információk, és csak a virtuális vállalat kerül rögzítésre.   |
+| **Elavulás/eltávolítás oka** | - A virtuális vállalatokat még az adatok táblákban való tárolása előtt be kell állítani. A virtuális vállalatok, már meglevő implementációra történő modernizálása nagyon nehézkes.<br><br>- Mivel a Dynamics AX jelenlegi verziójában rengeteg adatnormalizáció történt, igen nehézkessé vált átlátni azt, hogy a táblagyűjteményekhez mit szükséges hozzáadni. Például nehéz megállapítani, mely táblák kerüljenek megosztásra. A virtuális vállalatokban lévő táblákból hivatkozott összes egyéb táblát is hozzá kell adni. A táblanormalizáció miatt, még egy több táblában szétszóródó egyszerű alapadatot is a virtuális vállalat részévé kell tenni. Bármilyen itt történő hiba működési diszfunkciókat okozhat.<br><br>- Egy virtuális vállalat részét képező táblában elvesznek az adatok eredetére vonatkozó információk, és csak a virtuális vállalat kerül rögzítésre.   |
 | **Felváltotta másik szolgáltatás?** | Globális táblák használatával a táblákat elérhetővé teheti az összes vállalatból. Jelenleg nincs helyettesítés. |   
 | **Érintett területek**       | Minden modul |   
 | **Állapot**                       | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |   

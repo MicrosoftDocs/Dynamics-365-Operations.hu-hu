@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356346"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832148"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -62,7 +62,7 @@ Az oszlopdefiníció 2 - 255 oszlopot tartalmazhat.
 Egy oszlopdefiníció a következő információkat tartalmazza:
 
 - Egy oszlop a sordefiníció leírásai számára
-- Olyan összegoszlopok, amelyek a pénzügyi adatokból, Microsoft Excel munkalapból, vagy az oszlopdefinícióban található más adatokon alapuló számításokból mutatnak adatokat
+- Olyan összegoszlopok, amelyek a pénzügyi adatokból vagy az oszlopdefinícióban található más adatokon alapuló számításokból mutatnak adatokat
 - Oszlopok formázása
 - Attribútumoszlopok
 
@@ -170,7 +170,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 ### <a name="create-an-automatically-generated-header"></a>Automatikusan generált fejléc létrehozása
 
-A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC**, **FD** és **WKS** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a **@CalMonthLong** kód a **7** hónapot **Július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Így például a **@CALMONTHLONG** kódot kell beírni. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **@FiscalPeriod-@FiscalYear időszak, @StartDate és @EndDate között**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
+A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC** és **FD** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a **@CalMonthLong** kód a **7** hónapot **Július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Így például a **@CALMONTHLONG** kódot kell beírni. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **@FiscalPeriod-@FiscalYear időszak, @StartDate és @EndDate között**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
 
 > [!NOTE]
 > Egyes szövegrészek, például a hosszú dátum a Finance and Operations szerver regionális beállításaitól függ. Ezen beállítások módosításához kattintson a **Start** gombra, majd a **Vezérlőpult** elemre, majd válassza a **Régiók és nyelv** opciót. Az alábbi táblázat felsorolja az oszlopfejlécekhez elérhető készszöveg-beállítáokat.
@@ -291,7 +291,7 @@ A **Több szóköz az oszlop elé** cellában megadható, hány szóköznyi hely
 1. Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
 2. A **Több szóköz az oszlop előtt** cellában adja meg az oszlopok közötti szóközök számát.
 
-### <a name="specify-a-currency"></a>Pénznem megadása
+### <a name="specify-a-format-currency-override"></a>Formátum/pénznem felülbírálásának beállítása
 
 A **Formátum/pénznem felülírás** cella határozza meg az oszlopban szereplő tizedes, pénznem és százalékos összegek formázását. Ez a formázás felülírja minden, a jelentésdefinícióban meghatározott vagy rendszer szerinti alapértelemezett formátumot.
 
@@ -361,7 +361,7 @@ A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípu
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Pénzügyi adatok vagy Excel munkalapból származó adatok megjelenítése, ha <strong>Hivatkozás a pénzügyi dimenziókhoz</strong> vagy <strong>Hivatkozás munkalapra</strong> oszlopot használ a sordefinícióban. Amikor az <strong>FD</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer: <ul>
+    <td>Pénzügyi adatok megjelenítése a <strong>Pénzügyi dimenziókhoz kapcsolás</strong> oszlop használata esetén a sordefinícióban. Amikor az <strong>FD</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer: <ul>
     <li><strong>Könyvelési kód / Attribútumkategória:</strong> TÉNYLEGES</li>
     <li><strong>Könyvelési kód / Attribútumkategória:</strong> TÉNYLEGES</li>
     <li><strong>Pénzügyi év:</strong> ALAP</li>
@@ -394,14 +394,6 @@ Az alapértelmezett beállítások módosíthatóak.</td>
     <tr>
     <td>OLDAL</td>
     <td>Függőleges oldaltörést szúr be a jelentésbe. A <strong>PAGE</strong> oszloptól jobbra lévő oszlopok új lapon fognak megjelenni.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Excel-munkafüzetből beillesztett adatokat jelenít meg. Amikor a <strong>WKS</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer: <ul>
-    <li><strong>Pénzügyi év:</strong> IDŐSZAKOS</li>
-    <li><strong>Időszak:</strong> ALAP</li>
-    </ul>
-Az alapértelmezett beállítások módosíthatóak.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Használhatja továbbá az alfanumerikus karakterek bármely kombinációját a 
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Több pénznemű jelentés formázása egy oszlopdefinícióban
 
-A több pénznemű jelentés megjelenítheti az összegeket a természetes (helyi) pénznemben, a működési (alapértelmezett) pénznemben vagy a jelentési pénznemben is. Egy vállalat működési pénznemének meghatározására a Microsoft Dynamics ERP rendszerben kerül sor. Nem szabad összetéveszteni ezt az ERP-beállítást az operációs rendszer regionális opciók beállításával, ahol az alapértelmezett pénznemszimbólumokat állíthatja be a jelentésekhez. A következő, pénznemekhez kapcsolódó cellák találhatóak az oszlopdefinícióban:
+Több pénznemet tartalmazó jelentés képes megjeleníteni az összegeket a főkönyvi könyvelési pénznemében, a főkönyvi jelentések az eredeti tranzakció pénznemében vagy lefordított jelentési pénznemben. Egy vállalat könyvelési pénznemének meghatározására a Főkönyv beállításában kerül sor. Nem szabad összetéveszteni ezt a beállítást az operációs rendszer regionális opciók beállításával, ahol az alapértelmezett pénznemszimbólumokat állíthatja be a jelentésekhez. A következő, pénznemekhez kapcsolódó cellák találhatóak az oszlopdefinícióban:
 
-- **Pénznem megjelenítése** – A tranzakciók megjelenítéséhez használt pénznem típusát (természetes, működési vagy jelentési) adja meg. Ezt a funkciót egyes esetekben pénznemátváltásnak is nevezik. A pénznemátváltás az a funkció, amellyel a főkönyvi összegeket olyan pénznemben is megjelenítheti a jelentésben, amely egyébként nem számít a cég működési pénznemének, vagy a tranzakció megadásakor használt pénznemnek.
+- **Pénznem megjelenítése** – A tranzakciók megjelenítéséhez használt pénznem típusát (könyvelés, jelentéskészítés vagy lefordított jelentés) adja meg. Átszámított a jelentési pénznemet néha pénznemátváltásnak is nevezik. A pénznemátváltás az a funkció, amellyel a főkönyvi összegeket olyan pénznemben is megjelenítheti a jelentésben, amely egyébként nem számít a cég jelentési pénznemének, vagy a tranzakció megadásakor használt pénznemnek.
 - **Pénznemszűrő** – Pénznemszűrő megadása. Csak a kiválasztott pénznemben megadott tranzakciók jelennek meg a jelentésben.
 
-> [!NOTE]
-> Ha több pénznemet használó jelentéseket kíván létrehozni, akkor be kell jelölnie a **Minden jelentési pénznem szerepeltetése** jelölőmezőt a jelentésdefiníció **Jelentés** lapján. A vállalat működési pénznemének meghatározásához kövesse az alábbi lépéseket.
+> 
+A vállalat könyvelési pénznemének meghatározásához kövesse az alábbi lépéseket.
 
 1. A Report Designer eszköz **Vállalat** menüjében kattintson a **Vállalatok** elemre.
 2. A **Vállalatok** párbeszédpanelen válasszon egy vállalatot, majd kattintson az **Megtekintés** gombra.
@@ -533,20 +525,18 @@ A több pénznemű jelentés megjelenítheti az összegeket a természetes (hely
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Pénznem meghatározása több pénznemű jelentésen
 
 1. Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2. Kattintson duplán a **Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Természetes/Származó pénznem**, **Működési pénznem a vállalati információkból** vagy a jelentési pénznem.
+2. Kattintson duplán a **Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Főkönyvi könyvelési pénznem**, **Főkönyvi jelentések** vagyválassza, hogy átváltja egy másik jelentési pénznembe.
 3. Kattintson duplán a **Pénznemszűrő** cellára a megfelelő **FD** oszlopban, és válassza ki a listában a megfelelő pénznemkódot. Csak az ebben a pénznemben megadott tranzakciók jelennek meg a jelentésben.
 
-> [!NOTE]
-> Az itt leírt lehetőségek a használt ERP rendszertől függően eltérhetnek. További tájékoztatásért olvassa át saját [Microsoft ERP rendszerének dokumentációját](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Példa a Pénznem megjelenítése és a Pénznemszűrő cellákra
 
 Phyllis a pénznemmel kapcsolatos következő választásokat tette az oszlopdefiníciójában:
 
 - **Pénznemszűrő:** jen
-- **Pénznem megjelenítése:** Működési (USD)
+- **Pénznem megjelenítése:** Könyvelési pénznem a Főkönyvből (USA dollár)
 
-A Phyllis által kiválasztott pénznemszűrő miatt a jelentés csak japán jenben (JPY) bevitt tranzakciókat tartalmaz. A kiválasztott pénznemmegjelenítési beállítás miatt a jelentés ezeket a tranzakciókat a működési pénznemben, amerikai dollárban (USD) jelenti meg.
+A Phyllis által kiválasztott pénznemszűrő miatt a jelentés csak japán jenben (JPY) bevitt tranzakciókat tartalmaz. A kiválasztott pénznemmegjelenítési beállítás miatt a jelentés ezeket a tranzakciókat a könyvelési pénznemben, amerikai dollárban (USD) jelenti meg.
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>A Pénznemszűrő és a Pénznem megjelenítése kombinációi
 
@@ -555,10 +545,10 @@ Az alábbi táblázat bemutatja a jelentés különböző eredményeit, amelyek 
 
 | Pénznem megjelenítése cella                        | Pénznemszűrő cella | Eredmények jelentése |
 |----------------------------------------------|----------------------|---------------|
-| Természetes/származó pénznem                 | **JEN**              | **Y 6000** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg. |
-| Működési pénznem a vállalati adatokból | **JEN**              |**$60** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg, ezeket azonban USD-ben jeleníti meg.<blockquote>[!NOTE] Az átváltási árfolyam körülbelül 100 JPY / USD.</blockquote> |
-| Funkcionális pénznem a vállalati információk közül | Üres                | **$ 2310** – Az eredmény minden adatot a vállalati információk között beállított működési pénznemben jelenít meg.<blockquote>[!NOTE] Ez az összeg a tranzakciók összesítése, működési pénznemben.</blockquote> |
-| Természetes/származó pénznem                 | Üres                | **$ 2250** – Az eredmény minden összeget abban a pénznemben mutat meg, amelyben a tranzakciót elvégezték. |
+| Tranzakció pénzneme                 | **JEN**              | **Y 6000** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg. |
+| Könyvelési pénznem a főkönyvből | **JEN**              |**$60** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg, ezeket azonban USD-ben jeleníti meg.<blockquote>[!NOTE] Az átváltási árfolyam körülbelül 100 JPY / USD.</blockquote> |
+| Könyvelési pénznem a főkönyvből | Üres                | **$ 2310** – Az eredmény minden adatot a Főkönyvben beállított könyvelési pénznemben jelenít meg.<blockquote>[!NOTE] Ez az összeg a tranzakciók összesítése, könyvelési pénznemben.</blockquote> |
+| Tranzakció pénzneme                 | Üres                | **$ 2250** – Az eredmény minden összeget abban a pénznemben mutat meg, amelyben a tranzakciót elvégezték. Ez azt jelenti, hogy a teljes összeg különféle pénznemekből áll össze. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Számítás oszlop egy oszlopdefinícióban
 

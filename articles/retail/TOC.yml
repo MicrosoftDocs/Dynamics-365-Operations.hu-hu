@@ -5,6 +5,10 @@ items:
   items:
   - name: Új vagy módosult elemek
     href: get-started/whats-new.md
+  - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.1-es verziójában
+    href: get-started/whats-new-10-0-1.md
+  - name: Új vagy módosult elemek a Dynamics 365 for Retail (2019. április) szolgáltatásban
+    href: get-started/april-whats-new.md
   - name: Mielőtt megvásárolná a Retail terméket
     href: get-started/before-you-buy.md
   - name: Regisztrálás az előzetes verziót tartalmazó előfizetésre
@@ -15,7 +19,7 @@ items:
     href: dev-itpro/choose-deployment.md
   - name: Támogatás kérése a Retail alkalmazáshoz
     href: retail-support.md
-  - name: Egyverziós szolgáltatási frissítések GYIK
+  - name: Egyverziós szolgáltatásfrissítések GYIK
     href: ../fin-and-ops/get-started/one-version.md
 - name: A végrehajtási életciklus megértése
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
@@ -109,7 +113,11 @@ items:
   - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Többcsatornás speciális automatikus költségek
-  href: omni-auto-charges.md
+  items:
+  - name: Speciális automatikus költségek konfigurálása és használata
+    href: omni-auto-charges.md
+  - name: A fejléc automatikus költségeinek arányosítása és csoportosítása
+    href: pro-rate-charges-matching-lines.md
 - name: Hívásközpont
   items:
   - name: Hívásközpont értékesítési funkciói
@@ -387,7 +395,7 @@ items:
     - name: Pénztárgép funkciói
       href: localizations/emea-swe-cash-registers.md
     - name: A Retail POS integrációja ellenőrzőegységekkel
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail feladatok
   items:
   - name: Termék létrehozása
@@ -553,6 +561,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: A pénztár kérelemkezelőjének felülírása
       href: dev-itpro/pos-handler.md
+    - name: Pénztárbővítmény csomaginformációjának megtekintése
+      href: view-pos-extension-package-details.md
   - name: Hardware Station és bővíthetősége
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server bővíthetősége
@@ -659,9 +669,9 @@ items:
     items:
     - name: Hűségidő kiterjesztése
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377251"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791638"

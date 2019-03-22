@@ -3,7 +3,7 @@ title: Projektszámmal rendelkező munkarendelések szinkronizálása a Field Se
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található projektszámaival történő szinkronizálására használatos.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329850"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836442"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Projektszámmal rendelkező munkarendelések szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
 
@@ -34,9 +34,11 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Micro
 
 [![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-A használt **Field Service termékek (Finance and Operations – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Finance and Operations – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Finance and Operations – Sales) – Közvetlen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+A használt **Mukerdnelések projektekkel (Fin and Ops – Field and Ops)** sablon a **Munkarendelések (Field Service – Fin and Ops)** sablonon alapul. További információért, lásd: [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 
-Ez a témakör csak a **Field Service termékek (Finance and Operations – Field Service)** és a **Field Service termékek (Finance and Operations – Field Serivce)** sablonok közötti különbségeket mutatja be.
+Ez a témakör csak a két sablonok eltéréseit írja le:
+- **Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba)**
+- **Munkarendelések (a Field Service alkalmazásból a Fin and Ops alkalmazásba)**
 
 A fő különbség, hogy ez a sablon tartalmazza a munkarendeléshez hozzárendelt projektszámot a Field Service megoldásban, ami biztosítja, hogy a Finance and Operations megoldásban létrehozott értékesítési rendelés tartalmazza a projektszámot, és hogy megtörténhessen a számlázás a kapcsolódó projektben. Emellett a sablon használja a speciális lekérdezés és szűrést.
 
@@ -44,7 +46,7 @@ A fő különbség, hogy ez a sablon tartalmazza a munkarendeléshez hozzárende
 
 **A sablon neve az adatintegrációban:**
 
-- Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba)
+- Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba)
 
 **A feladat neve az adatintegrációs projektben:**
 
@@ -60,18 +62,18 @@ A **Külső projekt** mezőt hozzáadtuk a munkarendelés entitáshoz. Ez a mez�
 
 Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheader"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderHeader
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheaderproject"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>Munkarendelések projekttel(a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderHeaderProject
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderproduct"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderProduct
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Finance and Operations alkalmazásba): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderService
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP4.png)](./media/FSWOP4.png)

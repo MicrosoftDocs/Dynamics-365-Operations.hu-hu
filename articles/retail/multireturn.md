@@ -3,7 +3,7 @@ title: Több vevői rendelést és számlát érintő visszárucikkek
 description: Ez a témakör azt mutatja be, hogy hogyan lehet több vevői rendelést és számlát érintő visszárukat engedélyezni a Microsoft Dynamics 365 for Retail alkalmazásban.
 author: josaw1
 manager: AnnBe
-ms.date: 1/08/2019
+ms.date: 03/05/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2cf6f92e90ef196827abb599c65c732615ec7bb
-ms.sourcegitcommit: e72eae546d48d41d4b07ff78cfc0242c32b793e7
+ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373068"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777226"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Több vevői rendelést és számlát érintő visszárucikkek
 
 [!include [banner](includes/banner.md)]
-[!include [preview banner](includes/preview-banner.md)]
+
 
 A Dynamics 365 for Finance and Operations 10.0-s verziójában lehetővé vált a több rendelést és számlát érintő visszáruk végrehajtása, míg a 10.0-s verzió előtti kiadásokban a visszárukat egyszerre egyetlen számlára vonatkozóan lehetett csak elvégezni. 
 

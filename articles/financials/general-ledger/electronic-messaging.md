@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357933"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832195"
 ---
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
@@ -69,6 +69,7 @@ Ha nem importál adatentitás-csomagot, akkor manuálisan is beállíthatja az E
 - [További mezők](#additional-fields)
 - [Végrehajtható osztály beállításai](#executable-class-settings)
 - [Rekordok műveletek feltöltése](#populate-records-actions)
+- [Webalkalmazások](#web-applications)
 - [Webszolgáltatás-beállítások](#web-service-settings)
 - [Üzenetfeldolgozási műveletek](#message-processing-actions)
 - [Elektronikus üzenetek feldolgozása](#electronic-message-processing)
@@ -85,27 +86,49 @@ Az üzenetelem-típusok azonosítják a rekordok típusait, amelyeket elektronik
 
 Az üzenetelem-állapotok azonosítják az állapotokat, amelyek az üzenetelemre vonatkoznak majd a feldolgozásban, amelyet beállít. Az üzenetelem-típusokat az **Üzenetelem-állapotok** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetelem-állapotok**).
 
+A **Törlés engedélyezése** paraméter egy üzenet elemállapotában határozza meg, hogy felhasználó számára engedélyezett ebben az állapotban üzenetelem törlése az **Elektronikus üzenetek** vagy **Elektronikusüzenet-elemek** képernyőtől. 
+
 ### <a name="message-statuses"></a>Üzenetállapotok
 
 Üzenetállapotok beállítása, amelyek rendelkezésre állnak az üzenetek feldolgozása során. Az üzenetállapotokat az **Üzenetállapotok** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetállapotok**).
+
+Mezők leírása:
+
+| Mezőnév           | Leírás |
+|----------------------|-------------|
+|Üzenet állapota        | Az elektronikusüzenet-állapot egyedi neve, amely jellemzi az üzenet állapotát az egyes pillanatokban. Ez a név jelenik meg az Elektronikus üzenetek képernyőn és az elektronikus üzenethez kapcsolódó naplóban. |
+|Leírás           | Az elektronikus üzenet állapotához kapcsolódó leírás      |
+|Választípus         | Előfordulhat, hogy bizonyos műveletek feldolgozásban egynél több választípust eredményeznek. Például a **Webszolgáltatás** típusú művelet **Sikeresen végrehajtott** vagy **Technikai hiba** választípust is eredményezhet a végrehajtása eredményétől függően. Ebben az esetben mindkét választípus üzenetállapotát meg kell határozni. Lásd: [Üzenetfeldolgozási művelettípusok](#message-processing-action-types) további információért a művelettípusokról és a kapcsolódó választípusokról. |
+|Üzenetelem-állapot   |Vannak olyan esetek, ahol az elektronikusüzenet-állapot befolyásolja a kapcsolódó üzenetelemek állapotát. Ilyen üzenetelem-állapotot ehhez a mezőhöz társítsa a kijelölésével a keresésből. |
+|Törölhető          | A **Törlés engedélyezése** paraméter egy elektronikus üzenet elemállapotában határozza meg, hogy felhasználó számára engedélyezett ebben az állapotban elektronikus üzenet törlése az **Elektronikus üzenetek** képernyőtől.            |
 
 ### <a name="additional-fields"></a>További mezők
 
 Az Elektronikus üzenetek funkció segítségével feltöltheti a rekordokat egy tranzakciós táblából. Ezzel a módszerrel a rekordokat előkészítheti a jelentéskészítésre, majd jelentheti őket. Bizonyos esetekben nem áll rendelkezésre elegendő információ a tranzakciós távlában egy rekord jelentéséhez a jelentés előírásainak megfelelően. Az összes információt, amelyet egy rekordhoz jelenteni kell, megadhatja további mezők beállításával. A további mezőket az üzenetekhez és üzenetelemekhez is társíthatja. További mezőket a **További mezők** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **További mezők**).
 
-Az alábbi táblázat ismerteti a **További mezők** oldalon elérhető mezőket.
+Az alábbi táblázat ismerteti a **További mezők** oldalon elérhető általános mezőket:
 
 | Mező                | Leírás |
 |----------------------|-------------|
 | Mezőnév           | Adja meg a folyamathoz kapcsolódó üzenetelemek további attribútumai nevét. Ez a név jelenik meg a felhasználói felületen a folyamat közben. A folyamathoz kapcsolódó ER-konfigurációban is használatos. |
 | Leírás          | Adja meg a folyamathoz kapcsolódó üzenetelemek további attribútumai leírását. |
-| Mező értéke          | Adja meg a jelentés során az üzenetelemhez kapcsolódóan használandó mezőértéket. |
-| Mező leírása    | Adja meg a jelentés során az üzenetelemhez kapcsolódóan használandó mezőérték leírását. |
+| Felhasználói szerkesztés            | Abban az esetben, amikor a felhasználó számára szükséges lehet arra, a felhasználói felületről származó további mező értékének módosítása, állítsa be ezt a jelölőnégyzetet **Igen** értékre, ellenkező esetben a **Nem** értékre. |
+| Számláló              | Ha a kiegészítő mező az elektronikus üzenetben sorszámot kell tartalmazzon, jelölje be ezt a jelölőnégyzetet. A kiegészítő mező értékei automatikusan ki lesznek töltve automatikusan kitölti az "Elektronikus jelentés exportálása" típusú művelet futtatása során.  |
+| Rejtett               | Ha a kiegészítő mezőt el kell rejteni a felhasználói felületről, akkor jelölje be ezt a jelölőnégyzetet.  |
+
+Minden további mező eltérő értékeket tartalmazhat a feldolgozáshoz. Ezeket az értékeket Értékek gyorslapon adhatja meg:
+
+| Mező                | Leírás |
+|----------------------|-------------|
+| Mező értéke          | Adja meg a jelentés során az üzenethez vagy üzenetelemhez kapcsolódóan használandó mezőértéket. |
+| Mező leírása    | Adja meg a jelentés során az üzenethez vagy üzenetelemhez kapcsolódóan használandó mezőérték leírását. |
 | Számla típusa         | Lehet hogy a további mezők értékei meghatározott számlatípusokra van korlátozva. Válassza ki a következő értékek egyikét: **Összes**, **Vevő**, vagy **Szállító**. |
 | Számlakód         | Ha a **Számlatípus** mezőben **Vevő** vagy **Szállító** lehetőséget választott, a mezőértékek használatát tovább korlátozhatja egy meghatározott csoportra vagy táblára. |
 | Számla/csoport száma | Ha a **Számlatípus** mezőben **Vevő** vagy **Szállító** lehetőséget választott, és ha a **Számlakód** mezőben megadott egy csoportot vagy táblát, akkor ebben a mezőben megadhat egy meghatározott csoportot vagy ellenoldali felet. |
 | Érvénybe lépés            | Adja meg a dátumot, amikortól az értéket figyelembe kell venni. |
 | Lejárat           | Adja meg a dátumot, amikortól az értéket már nem kell figyelembe venni. |
+
+A **Számla/csoportszám**, **Számlakód**, **Hatályos**, **Lejárat** mezőkben meghatározott kritériumkombinációk alapértelmezés szerint nincsenek hatással a kiegészítő mező értékválasztására, de használhatók végrehajtható osztályban bizonyos specifikus számítási logika implementálásához egy kiegészítő mező értékéből.
 
 ### <a name="executable-class-settings"></a>Végrehajtható osztály beállításai
 
@@ -120,6 +143,8 @@ Manuálisan beállíthat egy végrehajtható osztályt a **Végrehajtható oszt�
 | Végrehajtható osztály neve | Jelöljön ki egy X ++ végrehajtható osztályt. |
 | Végrehajtási szint       | Ez a mező automatikusan kerül beállításra, mert az értéket előre meg kell határozni a kiválasztott végrehajtható osztályhoz. A mező korlátozza a szintet, amelyen a kapcsolódó értékelés fut. |
 | Osztály leírása     | Ez a mező automatikusan kerül beállításra, mert az értéket előre meg kell határozni a kiválasztott végrehajtható osztályhoz. |
+
+Előfordulhat, hogy az egyes végrehajtható osztályok kötelező paramétereket tartalmaznak, amelyeket a végrehajtható osztály első lefuttatása előtt meg kell adni. Ezek a paraméterek meghatározásához kattintson a **Paraméterek** gombra a Művelet panelen, állítsa be a megfelelő értékeket és a mezőket a párbeszédablakban, és kattintson az **OK** gombra. Fontos, hogy kattintson az **OK** gombra itt, máskülönben a paraméterek nem lesznek mentve és az alap- és végrehajtható osztály nem lesz megfelelő meghívva.
 
 ### <a name="populate-records-actions"></a>Rekordok műveletek feltöltése
 
@@ -143,6 +168,37 @@ Az **Adatforrások beállítása** gyorslapon adjon hozzá egy sort minden olyan
 | Dokumentumszámla mező | Válassza ki a mezőt, amelyből a választott táblában a dokumentumszámlát kell venni. |
 | Felhasználó lekérdezése             | Ha ez a jelölőnégyzet be van jelölve, akkor lekérdezést állíthat be, ha kiválasztja a rács felett a **Lekérdezés szerkesztése** lehetőséget. Ellenkező esetben az összes rekord az adatforrásból került feltöltésre. |
 
+### <a name="web-applications"></a>Webalkalmazások
+
+Az alkalmazások lap használatával beállíthatja egy webes alkalmazás paramétereit, amely támogatja teszi standard OAuth 2.0 megnyitását, és lehetővé teszi a felhasználóknak "biztonságos delegált elérés" megadását az alkalmazásnak hozzáférési hitelesítő adataik megosztása nélkül. Erről a lapról is elvégezheti az engedélyezési folyamatot, kérhet egy ellenőrzőkódot és a hozzáférési tokent. A webes alkalmazás beállításait a **Webes alkalmazások** oldalon (**Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes alkalmazások**) állíthatja be.
+
+Az alábbi táblázat ismerteti a **Webes alkalmazások** oldalon elérhető mezőket.
+
+| Mező                         | Leírás |
+|-------------------------------|-------------|
+| Alkalmazásnév              | Adja meg a webes alkalmazás nevét. |
+| Leírás                   | Itt megadhatja a webes alkalmazás leírását. |
+| Alap URL                      | Adja meg a webes alkalmazás alap internetcímét. |
+| Engedélyezési URL-cím elérési útja        | Adja meg a hitelesítésre szolgáló URL-cím összeállításának elérési útját.  |
+| Jogkivonat URL-címe                | Adja meg a tokenhez szolgáló URL-cím összeállításának elérési útját.  |
+| Átirányítási URL-cím                  | Adja meg az átirányítási URL-címet.  |
+| Ügyfél azonosítója                     | Adja meg a webalkalmazás ügyfél-azonosítóját.  |
+| Titkos ügyfélkód                 | Adja meg a webalkalmazás titkos ügyfélkódját.  |
+| Kiszolgálói jogkivonat                  | Adja meg a webalkalmazás kiszolgálótokenjét.  |
+| Engedélyezési formátum megfeleltetése  | Válassza ki az engedélykérés generálásához használandó elektronikus jelentéskészítési (ER) formátumot.   |
+| Jogkivonat modell-leképezésének importálása    | Válasszon egy ER importáló modell-leképezést, amely a hozzáférési token tárolására szolgál  |
+| Megadott hatály      Az elérési token lejárata  | Ez a mező automatikusan frissül. Értéke a webalkalmazásnak megadott kérelemhatályokat mutatja.  |
+| Elfogadás                        | Határozza meg a webes kérelem elfogadási tulajdonságát. Például: „application/vnd.hmrc.1.0+json”.  |
+| Tartalomtípus           | Határozza meg a tartalomtípust. Például „application/json”.  |
+
+Következő funkciók érhetők el a **Webalkalmazások** lapról az engedélyezési folyamat támogatásához:
+-   **Engedélyezési kód lekérése** - webalkalmazás engedélyezésének kezdeményezéséhez.
+-   **Hozzáférési token lekérése** - a hozzáférési token lekérésének kezdeményezéséhez.
+-   **Hozzáférési token frissítése** - a hozzáférési token frissítéséhez.
+
+Amikor egy webalkalmazás hozzáférési tokenjét titkosított formátumban tárolja a rendszer adatbázisában, az használható webes szolgáltatással kapcsolatos kérelmekhez. A biztonsági okokból a hozzáférést a hozzáférési tokenhez korlátozni kell azon szerepkörökhöz, amelyekhez engedélyezni kell azon kérések címzését. Ha egy biztonsági csoport kívüli felhasználói kísérel megcímezni egy kérelmet, egykivétel tájékoztatja felhasználó, hogy nem engedélyezett számára az együttműködés a kiválasztott webes alkalmazáson keresztül.
+Használja a **Biztonsági szerepkörök** gyorstáblát az Adó> Beállítás > Elektronikus üzenetek > Webalkalmazások lapon, azon szerepkörök beállításához, amelyek el kell érjék a tokent. Ha nincsenek megadva egy webes alkalmazáshoz biztonsági szerepkörök, csak egy rendszergazda tud együttműködni a webes alkalmazás segítségével.
+
 ### <a name="web-service-settings"></a>Webszolgáltatás-beállítások
 
 Webes szolgáltatás beállításainak segítségével beállíthatja a közvetlen adatátvitelt a webes szolgáltatáshoz. A webes szolgáltatás beállításait a **Webes szolgáltatás beállításai** oldalon (**Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes szolgáltatás beállításai**) állíthatja be.
@@ -153,13 +209,17 @@ Az alábbi táblázat ismerteti a **Webes szolgáltatás beállításai** oldalo
 |-------------------------|-------------|
 | Webes szolgáltatás             | Adja meg a webes szolgáltatás nevét. |
 | Leírás             | Itt megadhatja a webes szolgáltatás leírását. |
-| Internetcím        | Adja meg a webes szolgáltatás internetcímét. |
+| Internetcím        | Adja meg a webes szolgáltatás internetcímét. Ha egy webalkalmazás van megadva egy webes szolgáltatáshoz, és az internetcímnek meg kell egyeznie a kiválasztott webalkalmazáshoz meghatározottal, kattintson az **Alap URL-cím másolása** gombra az **Alap URL-cím** másoláshoz a webalkalmazásból a webes szolgáltatás **Internetcím** mezőjébe.  |
 | Diploma             | Válasszon ki egy korábban beállított Key Vault-tanúsítványt. |
+| Webalkalmazás         | Válasszon ki egy korábban beállított Key Vault-tanúsítványt. |
 | A válasz típusa – XML | Állítsa ezt a beállítást **Igen** értékre, ha a választípus XML. |
 | Kérelemmetódus          | Adja meg a kérés metódusát. A HTTP meghatároz egy készlet kérésmetódust, amely jelzi a műveletet, amelyet az adott erőforráshoz el kell végezni. A metódus lehet **GET**, **POST**, vagy más HTTP-metódus. |
 | Kérelem fejléce         | Adja meg a kérés fejléceit. A kérés fejléce egy HTTP-fejlév, amelyet egy HTTP-kérésben lehet használni, és amely nem kapcsolódik az üzenet tartalmához. |
+| Elfogadás                  | Határozza meg a webes kérelem elfogadási tulajdonságát. |
 | Kódolás elfogadása         | Adja me az Accept-Encoding kérést. Az Accept-Encoding kérés HTTP-fejléce a tartalom kódolását hirdeti, amelyet a kliens is megért. Ez a tartalomkódolás általában egy kompressziós algoritmus. |
 | Tartalomtípus            | Határozza meg a tartalom típusát. A Tartalomtípus entitás fejléce jelzi az erőforrás médiatípusát. |
+| Sikeres válasz kódja   | Adja meg a HTTP-állapototkódot, amely jelzi, hogy a kérelem sikeres volt. |
+| Kérelem fejlécéhez tartozó formátum megfeleltetése  | Válassza ki az ER-formátumot a webes kérések fejléceinek létrehozásához. |
 
 ### <a name="message-processing-actions"></a>Üzenetfeldolgozási műveletek
 
@@ -172,17 +232,21 @@ Az alábbi táblázat ismerteti az **Üzenetfeldolgozási műveletek** oldalon e
 | Mező                   | Leírás |
 |-------------------------|-------------|
 | Művelettípus             | Válassza ki a művelet típusát. A rendelkezésre álló lehetőségekkel kapcsolatos további tudnivalókat lásd az [Üzenetfeldolgozási művelettípusok](#message-processing-action-types) szakaszban. |
-| Formátum leképezése          | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Elektronikus jelentéskészítés exportálási üzenete** típusokhoz tartozó műveletekhez érhető el. |
-| Üzenetelem típusa       | Válassza ki a rekordok típusát, amelyhez a műveletet értékelni kell. Ez a mező az **Üzenetcikk végrehajtási szint**, **Elektronikus jelentéskészítés exportálása** és **Elektronikus jelentéskészítés importálása** típusokhoz tartozó műveletekhez érhető el, és még néhány másik típushoz. Ha üresen hagyja ezt a mezőt, minden olyan üzenetelem-típus értékelésre kerül, amely az üzenetfeldolgozáshoz meg van határozva. |
+| Formátum leképezése          | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása**, **Elektronikus jelentéskészítés exportálási üzenete** típusokhoz tartozó műveletekhez érhető el. |
+| Formátum megfeleltetése az URL-cím elérési útvonalára vonatkozóan | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak a **Webszolgáltatás**-típusok műveleteihez érhető el és annak az URL-címnek az összeállítására szolgál, amely hozzá lesz adva a kiválasztott webkiszolgálóhoz meghatározott alap internetcímhez. |
+| Üzenetelem típusa       | Válassza ki a rekordok típusát, amelyhez a műveletet értékelni kell. Ez a mező az **Üzenetelem végrehajtási szint**, **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Webszolgáltatás** típusokhoz tartozó műveletekhez érhető el, és még néhány másik típushoz. Ha üresen hagyja ezt a mezőt, minden olyan üzenetelem-típus értékelésre kerül, amely az üzenetfeldolgozáshoz meg van határozva. |
 | Végrehajtható osztály        | Jelölje ki a korábban létrehozott végrehajthatóosztály-beállításokat. Ez a mező csak az **Üzenetelem-végrehajtási szint** és **Üzenetelem-végrehajtási szint** típusokhoz tartozó műveletekhez érhető el. |
 | Rekordok művelet feltöltése | Válasszon ki egy korábban már beállított rekordfeltöltési műveletet. Ez a mező csak a **Rekordfeltöltés** típusú műveletekhez érhető el. |
+| Webes szolgáltatás  | Válasszon ki egy korábban már beállított webszolgáltatást. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el.  |
+| Fájlnév  | Adja meg a fájlt, amely műveletként jön létre válaszaként a webkiszolgálótól vagy a jelentés létrehozása esetén. Ez a mező csak a **Webszolgáltatás** és **Elektronikus jelentéskészítés üzenet exportálása** típusok műveleteihez érhető el.   |
+| Párbeszédpanel megjelenítése  | Akkor jelölje be ezt a jelölőnégyzetet, ha a párbeszédpanelt kell megjeleníteni egy felhasználónak a jelentés generálása előtt. Ez a mező csak az **Elektronikus jelentéskészítés üzenet exportálása** típus műveleteihez érhető el.   |
 
 ##### <a name="message-processing-action-types"></a>Üzenetfeldolgozási művelettípusok
 
 A **Művelettípus** mezőben az alábbi lehetőségek éérhetők el:
 
-- **Rekordok feltöltése** – A **Rekordok feltöltése** művelet előzőleg be kell állítani. Társítsa ezt egy **Rekordfeltöltés**-típusú művelettel, hogy engedélyezze a feldolgozásban való szerepeltetését. Feltételezhető, hogy ez a művelettípust használják az üzenetfeldolgozás első műveleteként. Ezért csak egy eredményállapotot lehet beállítani egy ilyen típusú művelethez. Kiindulási állapot nem állítható be.
 - **Üzenet létrehozása** – Ennek a típusnak a segítségével a felhasználók manuálisan hozhatnak létre üzeneteket az **Elektronikus üzenet** oldalon. Kiindulási állapotot nem lehet beállítani ilyen típusú művelethez.
+- **Rekordok feltöltése** – A **Rekordok feltöltése** művelet előzőleg be kell állítani. Társítsa ezt egy **Rekordfeltöltés**-típusú művelettel, hogy engedélyezze a feldolgozásban való szerepeltetését. Feltételezett, hogy ez a művelettípus vagy üzenetfeldolgozás első műveletéhez (ha nincs előre létrehozva elektronikus üzenet) vagy üzenetelemek hozzáadásához egy korábban létrehozott üzenet művelethez használatos (**Üzenet létrehozása** típus művelete által). Ezért csak üzenetelemek állapotát lehet beállítani egy ilyen típusú művelethez. A kiindulási állapot csak üzenethez állítható be.
 - **Üzenet-végrehajtási szint** – Ennek a típusnak a használatával be lehet egy végrehajtható osztályt állítani, amelyet az üzenet szintjén kell értékelni.
 - **Üzenetelem-végrehajtási szint** – Ennek a típusnak a használatával be lehet egy végrehajtható osztályt állítani, amelyet az üzenetelem szintjén kell értékelni.
 - **Elektronikus jelentéskészítés exportálása** – Ez a típus használható az olyan műveletekhez, amelyeknek reportot kell létrehozniuk egy exportálási ER-konfiguráció alapján az üzenetelem szintjén.
@@ -190,13 +254,13 @@ A **Művelettípus** mezőben az alábbi lehetőségek éérhetők el:
 - **Elektronikus jelentéskészítés importálása** – Ez a típus használható az olyan műveletekhez, amelyeknek reportot kell létrehozniuk egy importálási ER-konfiguráció alapján.
 - **Üzenetszint felhasználói feldolgozás** – Ez a típus használható olyan műveletekhez, amelyek valamilyen manuális felhasználói műveletet feltételeznek. Például a felhasználó frissítheti az üzenetek állapotát.
 - **Felhasználói feldolgozás** – Ez a típus használható olyan műveletekhez, amelyek valamilyen manuális felhasználói műveletet feltételeznek. Például a felhasználó frissítheti az üzenetelemek állapotát.
-- **Webes szolgáltatás** – Ez a típus használható olyan műveletekhez, amelyeknek egy létrehozott jelentést egy webes szolgáltatáshoz kell továbbítaniuk. Ez a művelettípus nem használatos az Olasz beszerzés és az Értékesítési számlakommunikáció jelentéskészítéséhez.
+- **Webes szolgáltatás** – Ez a típus használható olyan műveletekhez, amelyeknek egy létrehozott jelentést egy webes szolgáltatáshoz kell továbbítaniuk. Ez a művelettípus nem használatos az Olasz beszerzés és az Értékesítési számlakommunikáció jelentéskészítéséhez. A **Webszolgáltatás** típusú műveletekhez meghatározhat **Visszaigazolási szöveg** elemet a **Vegyes részletek** gyorslapon az **Üzenetfeldolgozási műveletek** helyen. Ez a visszaigazolás szöveg lesz a megjelenítve a felhasználó számára, mielőtt a kiválasztott webszolgáltatás kérelme címezve lenne.
 - **Ellenőrzés kérése** – ezzel a típussal ellenőrzést lehet kérni a kiszolgálótól.
 
 #### <a name="initial-statuses-fasttab"></a>Kiindulási állapotok gyorslap
 
 > [!NOTE]
-> A **Kiindulási állapotok** gyorslap nem érhető el olyan műveletekhez, amelyeknek kiindulási állapota **Rekordfeltöltés** vagy **Üzenet létrehozása**.
+> A **Kiindulási állapotok** gyorslap nem érhető el olyan műveletekhez, amelyeknek kiindulási állapota **Üzenet létrehozása**.
 
 | Mező               | Leírás                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
@@ -212,11 +276,29 @@ A **Művelettípus** mezőben az alábbi lehetőségek éérhetők el:
 | Választípus       | A kiválasztott üzenetállapot választípusa. |
 | Üzenetelem-állapot | Válassza ki azokat az eredményállapotokat, amelyeknek elérhetőnek kell lenniük, miután a kiválasztott üzenetfeldolgozási műveletet a rendszer értékelte. Ez a mező csak az üzenetelem szintjén értékelt üzenetfeldolgozási műveletekhez elérhető. Például elérhető a **Felhasználói feldolgozás** és **Üzenetszint felhasználói feldolgozás** típusokhoz. Az üzenet szintjén értékelt üzenetfeldolgozási műveletek esetén ez a mező az üzenetelem-állapotot mutatja, amelyet a kiválasztot üzenetállapothoz beállítottak, |
 
+Az alábbi táblázat bemutatja, hogy milyen eredmény állapotokat kell beállítani a művelettípusok vonatkozásában:
+
+| Elektronikus üzenet művelettípus \ Választípus  | Sikeresen végrehajtva  | Üzleti hiba  | Technikai hiba  | Felhasználó által meghatározott  | Érvénytelenít  |
+|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
+| Üzenet létrehozása                                  | X            |         |       |     |                 |
+| Elektronikus jelentéskészítés exportálása                     | X            |         |       |     |                 |
+| Elektronikus jelentéskészítés importálása                     |              |         |       |     |                 |
+| Webes szolgáltatás                                     | X            |         | X     |     |                 |
+| Felhasználói feldolgozás                                 |              |         |       |     |                 |
+| Üzenet végrehajtási szint                         |              |         |       |     |                 |
+| Rekordok felöltése                                |              |         |       |     |                 |
+| Üzenetcikk végrehajtási szint                    |              |         |       |     |                 |
+| Kérelem ellenőrzése                            | X            |  X      | X     |     |                 |
+| Elektronikus jelentéskészítés üzenet exportálása             | X            |         |       |     |                 |
+| Üzenetszint felhasználói feldolgozás                   |              |         |       |     |                 |
+
 ### <a name="electronic-message-processing"></a>Elektronikus üzenetek feldolgozása
 
-Az elektronikus üzenetfeldolgozás az Elektronikus üzenetek funkció alapvető koncepciója. Összesíti azokat a műveleteket, amelyeket az elektronikus üzenet esetén értékelni kell. A műveletek összekapcsolása kiindulási állapoton és eredményállapoton keresztül történhet. Másik lehetőségként a **Felhasználó feldolgozás** típusú műveletek önállóan is elindíthatók. Az **Elektronikus üzenetek feldolgozása** lapon (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása**) további mezőket választhat ki, amelyeket a rendszer támogatni fog feldolgozás közben.
+Az elektronikus üzenetfeldolgozás az Elektronikus üzenetek funkció alapvető koncepciója. Összesíti azokat a műveleteket, amelyeket az elektronikus üzenet esetén értékelni kell. A műveletek összekapcsolása kiindulási állapoton és eredményállapoton keresztül történhet. Másik lehetőségként a **Felhasználó feldolgozás** típusú műveletek önállóan is elindíthatók. Az **Elektronikus üzenetek feldolgozása** lapon (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása**) további mezőket választhat ki, amelyeket a rendszer támogatni fog feldolgozás közben vagy üzenetszinten vagy üzenetelemek szintjén.
 
-A **Művelet** gyorslapon előre meghatározott műveleteket adhat a feldolgozáshoz. Megadhatja, hogy egy műveletet külön kell-e futtatni, vagy a feldolgozás során elindítható. (A felhasználói műveleteket külön kell futtatni.)
+A **Művelet** gyorslapon előre meghatározott műveleteket adhat a feldolgozáshoz. Megadhatja, hogy egy műveletet külön kell-e futtatni, vagy a feldolgozás során elindítható. Annak meghatározásához, hogy a művelet csak egy felhasználó lehet kezdeményezhesse jelölje be a **Futtatás külön** jelölőnégyzetet, a feldolgozása műveletéhez. Törölje a jelölést a **Futtatás külön** paramétertől, ha azt szeretné, hogy a műveletet a feldolgozás elindítsa ha az üzenetek vagy üzenetállapotok az állapotban kiinduló állapotnak vannak meghatározva ehhez a művelethez. A **felhasználói művelet** típus műveletét külön szabad csak futtatni. 
+
+Bizonyos esetekben szükséges lehet több művelet összesítésére egy a sorozatba, még akkor is, ha az első azok közül külön futtatáshoz van meghatározva. Például, ha követelmény, hogy a jelentés létrehozását a felhasználó kezdeményezze, de a létrehozott jelentést azonnal el kell küldeni a webszolgáltatásnak és a webszolgáltatás válaszának tükröződnie kell a rendszerben. Erre a célra egy **El nem választható sorozat** használható. Ehhez kattintson az **El nem választható sorozat** gombra a **Művelet** a gyorslap Művelet ablakában az **Elektronikus üzenetfeldolgozás** lap alatt, hozzon létre egy sorozatot, és válassza ki azt az **El nem választható sorozat** oszlopot azokhoz a műveletekhez, amelyek mindig együtt kell futtatni. Az első művelet ebben az esetben beállítható **Futtatás külön** értékre, de a többi nem.
 
 Az **Üzenetelem további mezői** gyorslapon hozzáadhat előre meghatározott további mezőket, amelyek az üzenetelemekhez kapcsolódnak. Minden egyes üzenettípushoz kell további mezőket hozzáadnia, amelyekhez a mezők kapcsolódnak.
 
@@ -238,16 +320,22 @@ Az **Üzenetek** gyorslap a kijelölt feldolgozáshoz jeleníti meg az elektroni
 
 - **Új** – Ez a gomb az **Üzenet létrehozása** típusú műveletekhez van társítva.
 - **Törlés** – Ez a gomb akkor érhető el, ha a **Törlés engedélyezése** jelölőnégyzet be van jelölve a kiválasztott üzenet aktuális állapotához.
+- **Adatgyűjtés** -Ez a gomb a **Rekordok feltöltése** típushoz van társítva.
 - **Jelentés létrehozása** – Ez a gomb az **Elektronikus jelentéskészítési exportálási üzenet** típusú műveletekhez van társítva.
 - **Jelentés küldése** – Ez a gomb a **Webes szolgáltatás** típusú műveletekhez van társítva.
+- **Válasz importálása** – Ez a gomb az **Elektronikus jelentéskészítés importálása** típushoz van társítva.
 - **Állapot frissítése** – Ez a gomb az **Üzenetszint felhasználói feldolgozás** típusú műveletekhez van társítva.
 - **Üzenetelemek** – Nyissa meg az **Elektronikus üzenetelemek** oldalt.
 
-A **Műveleti napló** gyorslap a kiválasztott üzenethez kapcsolódóan futtatott összes műveletről megjelenít információkat.
+A **Műveleti napló** gyorslap a kiválasztott üzenethez kapcsolódóan futtatott összes műveletről megjelenít információkat. Ha a művelet hibát eredményezett, a hibával kapcsolatos információk hozzá lesznek fűzve a kapcsolódó Műveletnaplónaplósorhoz. Válassza ki a sort, és kattintson a **klip** gombra a jobb felső sarokban a lapon a hibával kapcsolatos információk áttekintéséhez.
 
 Az **Üzenet további mezők** gyorslapon az üzenetekhez a feldolgozás beállításában meghatározott összes további mező látható. Ez a további mezők értékeit is megjeleníti.
 
-Az **Üzenetelemek** gyorslap a kiválasztott üzenethez kapcsolódó összes üzenetelemet megjeleníti.
+Az **Üzenetelemek** gyorslap a kiválasztott üzenethez kapcsolódó összes üzenetelemet megjeleníti. Az egyes üzenetelemekhez a következő funkciók használhatók az üzenetelem állapotától függően:
+
+- **Törlés** – Ez a gomb akkor érhető el, ha a **Törlés engedélyezése** jelölőnégyzet be van jelölve a kiválasztott üzenetelemhez.
+- **Állapot frissítése** – Ez a gomb a **Felhasználói feldolgozás** típusú műveletekhez van társítva.
+- **Eredeti dokumentum** – Ez a gomb lehetővé teszi, hogy a felhasználó megnyisson egy lapot a kijelölt üzenethez tartozó az eredeti dokumentummal.
 
 Áttekintheti a kiválasztott üzenet minden csatolmányát. Ezek a csatolmányok olyan jelentések, amelyeket már létrehoztak és fogadtak. Válassza ki az üzenetet, amelynek csatolmányait át szeretné tekinteni, majd nyomja meg a **Csatolmányok** gombot a Művelet panelen.
 

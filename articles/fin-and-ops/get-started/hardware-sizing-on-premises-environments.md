@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340729"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768414"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Hardverméretezési követelmények helyszíni környezetekben
 
@@ -86,7 +86,7 @@ A méretezési követelmények megértése érdekében ismernie kell az ön ált
     - További funkciók használata, mint például az adatbázisnapló és a figyelmeztetések. Az extrém adatbázis-naplózás tovább csökkenti a teljesítményt, óránként és processzormagonként 3000 alatti sorsebességre.
     - Adatösszetétel összetettsége – Egy egyszerű számlatükör és egy részletes számlatükör különböző módon befolyásolják a teljesítményt (egy példaként).
     - Tranzakció jellemzése.
-    - 2 GB-tól 4 GB-ig terjedő memória minden egyes processzormag számára.
+    - 2 GB-tól 16 GB-ig terjedő memória minden egyes processzormag számára.
     - Kiegészítő adatbázisok az adatbázis-kiszolgálón, mint például a felügyeleti jelentéskészítő és az SSRS-adatbázisok.
     - Ideiglenes adatbázis = az adatbázis méretének 15%-a, annyi fájllal, amennyi tényleges processzor van.
     - SAN mérete és teljesítménye a teljes egyidejű tranzakciós terjedelem/felhasználás alapján.

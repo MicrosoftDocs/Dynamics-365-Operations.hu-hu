@@ -3,7 +3,7 @@ title: Állás létrehozása, jóváhagyása és közzététele az Attract alkal
 description: Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304707"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772811"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban
 
@@ -76,8 +76,23 @@ A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további 
 
 Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedIn oldalán lehet feladni. 
 
+Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd.
+
+Álláshirdetések kapcsolatos további tudnivalókat lásd: [Attract karrierwebhely funkciói](career-site.md).
+
 > [!NOTE]
-> Három fontos dolgot kell megjegyezni a LinkedIn-re történő munkaküldési folyamattal kapcsolatosan.
+> Az állásfeladási funkciók csak az Attract alkalmazás Átfogó felvételi bővítményének része.
+
+### <a name="posting-jobs-to-linkedin"></a>Munkák közzététele a LinkedIn szolgáltatásban 
+
+Mielőtt egy állást közzétenne az Attract alkalmazásból a LinkedIn felületen, a rendszergazdának kell hozzáadnia a LinkedIn Vállalatazonosítót és LinkedIn vállalatnevet a **Felügyeleti beállításokban**. Annak biztosítására, hogy az Attract állásai a megfelelő vállalat laphoz legyenek rendelve szükséges a LinkedIn vállalat azonosítója.
+
+Az Ön LinkedIn vállalatazonosítója számokból álló karakterlánc, amely egyedileg azonosítja a vállalatot LinkedIn oldalon belül. További információért a LinkedIn Vállalatazonosító megkereéséhez, keresse fel a [LinkedIn oldalt](https://aka.ms/findID).
+
+A LinkedIn vállalat frissítéséhez válassza a **Felügyeleti köpont** lehetőséget a **Beállítások** menüben (fogaskerék szimbólum), majd válassza ki a **LinkedIn integráció** lapot. A **Kapcsolódás LinkedIn-hez** szakaszban írja be LinkedIn vállalatnevet és a LinkedIn válllati azonosítót és mentse a beállításokat.
+
+> [!NOTE]
+> Négy fontos dolgot kell megjegyezni a LinkedIn-re történő munkaküldési folyamattal kapcsolatosan.
 > 1. A LinkedIn-re küldött munkák „Korlátozott hirdetésként” lesznek feladva A LinkedIn webhelyen nem hirdethetőek a korlátozott hirdetésű munkák. Ha szeretné hirdetni a LinkedIn-re küldött korlátozott hirdetési munkákat az Attractból együtt kell működnie a LinkedIn-nel a „Job Wrapping” funkció engedélyezéséhez. Használja az alábbi hivatkozásokat, és további részletekért forduljon a LinkedIn támogatásához.
 >
 >    [Limited Listings és Premium Job Slotok összehasonlítása Job Wrapping esetén](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazd
 >
 >    Ha ezen lépés után problémák merülnek fel, forduljon a LinkedIn támogatásához. 
 > 
+> 1. A LinkedIn oldalra közzátett állássok az élő LinkedIn webhelyen jelennek meg. Nincs tesztelési környezet a LinkedIn közzétételhez. 
+>
 > 1. A munka LinkedIn-re történő feladásától számítva akár 24 óráig is eltarthat, amíg a LinkedIn-en található jelöltek számára az látható lesz, ennek az oka a LinkedIn kötegelt munkaközzétételi folyamata.
 
-Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd.
-
-Álláshirdetések kapcsolatos további tudnivalókat lásd: [Attract karrierwebhely funkciói](./career-site.md).
-
-> [!NOTE]
-> Az állásfeladási funkciók csak az Attract alkalmazás Átfogó felvételi bővítményének része.
 
 ## <a name="activate"></a>Aktiválás
 
