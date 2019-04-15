@@ -26,7 +26,7 @@ items:
           href: get-started/system-requirements-on-prem.md
         - name: Helyszíni telepítések raktárkezelésének konfigurálása
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Szokásos és első kiadási szolgáltatásfrissítések
+      - name: Szolgáltatási frissítés rendelkezésre állása
         href: get-started/public-preview-releases.md
       - name: A Finance and Operations alkalmazás megvásárlása
         items:
@@ -43,13 +43,17 @@ items:
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: A helyszíni telepítéseknél nem alkalmazott funkciók
         href: get-started/features-not-implemented-on-prem.md
-      - name: Előzetes funkciók a Finance and Operations 10.0.1-es (2019. áprilisi) verziójában
+      - name: Előzetes funkciók a Finance and Operations 10.0.2-es (2019. májusi) verziójában
+        href: get-started/whats-new-changed-10-0-2.md
+      - name: Finance and Operations, 10.0.1 verzió (2019. április)
         href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations, 10.0 verzió (2019. április)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations, 8.1.3 verzió (2019. január)
         href: get-started/whats-new-changed-8-1-3.md
-      - name: Előzetes funkciók a Finance and Operations Platform Update 25 (2019. áprilisi) verziójában
+      - name: Előzetes funkciók a Finance and Operations Platform Update 26 (2019. májusi) verziójában
+        href: get-started/whats-new-platform-update-26.md
+      - name: Finance and Operations, platform update 25 (2019. április)
         href: get-started/whats-new-platform-25.md
       - name: Platform update 24 (2019. március)
         href: get-started/whats-new-platform-update-24.md
@@ -209,7 +213,7 @@ items:
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: A szoftver életciklusára vonatkozó irányelv – Helyszíni
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Szokásos és első kiadási szolgáltatásfrissítések
+    - name: Szolgáltatási frissítés rendelkezésre állása
       href: get-started/public-preview-releases.md
     - name: Frissítések alkalmazása felhőalapú környezetekre
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
@@ -230,12 +234,16 @@ items:
       href: ../dev-itpro/business-events/app-business-events.md
     - name: Munkafolyamat – üzleti események
       href: ../dev-itpro/business-events/business-events-workflow.md
+    - name: Figyelmeztetések üzleti eseményekként
+      href: ../dev-itpro/business-events/alerts-business-events.md
     - name: Üzleti események Microsoft Flow szolgáltatásban
       href: ../dev-itpro/business-events/business-events-flow.md
     - name: Üzleti események fejlesztői dokumentációja
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Üzleti események hibaelhárítása
       href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Esetek üzleti eseményekhez történő használata
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Megfelelés
     items:
     - name: Könyvvizsgálati irányelvszabályok
@@ -370,6 +378,8 @@ items:
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
         href: ../dev-itpro/data-entities/third-party-service-test.md
+    - name: Finance and Operations csatlakoztató
+      href: ../dev-itpro/data-entities/fin-ops-connector.md
     - name: Fejlesztés integrációhoz
       items:
       - name: Adatintegráció az adatentitások használatával
@@ -747,6 +757,8 @@ items:
         href: ../financials/cash-bank-management/cash-flow-forecasting.md
       - name: Bankkezelési munkaterület
         href: ../financials/cash-bank-management/Bank-management-workspace.md
+      - name: Bank – devizaátértékelés
+        href: ../financials/cash-bank-management/bank-revaluation.md
       - name: Készpénzfizetési engedmények
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Készpénzfizetési engedmények túlfizetések esetére
@@ -1893,6 +1905,8 @@ items:
           href: ../financials/localizations/apac-ind-gst-reference-groups.md
         - name: GST integrációja pénztárgépekhez
           href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Adóköteles cikk nem regisztrált szállítótól történő vásárlása
+          href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
       - name: Pénztárgépek telepítésére vonatkozó irányelvek
         href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
       - name: Adómotor áttekintése
@@ -2291,6 +2305,8 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: Értékcsökkenés számítása
           href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Tárgyi eszközök átvitele
+          href: ../financials/localizations/rus-fixed-asset-transfer.md
       - name: Kötelezettségek és kinnlevőségek
         items:
         - name: Kifizetendő számlák
@@ -2303,6 +2319,8 @@ items:
         items:
         - name: Pénzügyi jelentéskészítés
           href: ../financials/localizations/rus-financial-reports.md
+        - name: Pénzügyi jelentések konfigurálása Excelben
+          href: ../financials/localizations/rus-excel-financial-report.md
       - name: Vállalati részlegek
         href: ../financials/localizations/rus-company-divisions.md
       - name: Devizatranzakciók árfolyamainak beállítása
@@ -2321,6 +2339,10 @@ items:
         href: ../financials/localizations/rus-accounting-reporting.md
       - name: Pénzforgalom kezelése
         href: ../financials/localizations/rus-cash-flow.md
+      - name: Devizaeladások/-vásárlások/ és -átutalások
+        href: ../financials/localizations/rus-currency-sale-purchase.md
+      - name: Kiszabott adóbevallások
+        href: ../financials/localizations/rus-assessed-tax-declaration.md
     - name: Szaúd-Arábia
       href: ../financials/localizations/saudi-arabia.md
       items:
@@ -2669,6 +2691,8 @@ items:
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Alkalmazotti fejlesztés
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Költséggazdálkodási Power BI-tartalom
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Pénzügyi teljesítmény
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Pénzügyi információk
@@ -3092,8 +3116,12 @@ items:
         href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
       - name: Saját csapat
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Projekt mobilalkalmazásainak áttekintése
+        href: ../financials/project-management/project-mobile-application-overview.md
       - name: Projekt időbejegyzése
         href: ../financials/project-management/project-time-entry-mobile-workspace.md
+      - name: Projekt időnyilvántartása
+        href: ../financials/project-management/project-timesheet.md
       - name: Beszerzési rendelés jóváhagyása
         href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
       - name: Értékesítési rendelések
@@ -3333,6 +3361,8 @@ items:
         href: get-started/create-alerts.md
       - name: Figyelmeztetések kötegelt feldolgozása
         href: get-started/alerts-managing.md
+      - name: Ügyfél riasztási értesítései e-mailben
+        href: get-started/alert-email-notifications.md
     - name: Elektronikus aláírások
       href: organization-administration/electronic-signature-overview.md
       items:
@@ -3373,6 +3403,8 @@ items:
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: Anyagjegyzék-tervező funkció
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Látszólagos cikkek
+          href: ../supply-chain/production-control/phantom-items.md
         - name: Anyagjegyzék-számítások
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Mértékegység kezelése
@@ -3787,6 +3819,8 @@ items:
       href: ../financials/project-management/project-contracts.md
     - name: Projekt-előrejelzések és -költségvetések
       href: ../financials/project-management/project-forecasts-budgets.md
+    - name: Projekt értékesítési rendelései
+      href: ../financials/project-management/project-sales-orders.md
     - name: Projekt beszerzési rendelései
       href: ../financials/project-management/project-purchase-orders.md
     - name: Projektajánlatok
@@ -3800,8 +3834,12 @@ items:
       items:
       - name: Microsoft Project-ügyfélintegráció
         href: ../financials/project-management/project-integration.md
+    - name: Projekt mobilalkalmazásainak áttekintése
+      href: ../financials/project-management/project-mobile-application-overview.md
     - name: Projektidő megadására szolgáló mobil munkaterület
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
+    - name: Projekt-időnyilvántartás mobilalkalmazás
+      href: ../financials/project-management/project-timesheet.md
   - name: Értékesítés és marketing
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
@@ -4286,9 +4324,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 9cb4d9114b745a42ad7c7650686639efe33c6192
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836396"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975966"

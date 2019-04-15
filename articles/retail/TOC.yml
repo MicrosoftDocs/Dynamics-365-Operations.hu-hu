@@ -5,7 +5,9 @@ items:
   items:
   - name: Új vagy módosult elemek
     href: get-started/whats-new.md
-  - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.1-es verziójában
+  - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.2-es verziójában
+    href: get-started/whats-new-10-0-2.md
+  - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.1 szolgáltatásban
     href: get-started/whats-new-10-0-1.md
   - name: Új vagy módosult elemek a Dynamics 365 for Retail (2019. április) szolgáltatásban
     href: get-started/april-whats-new.md
@@ -108,7 +110,7 @@ items:
     href: ../financials/general-ledger/indirect-taxes-overview.md
   - name: Áfaszámítási módok a Kiindulás mezőben
     href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-  - name: " Áfa-hozzárendelés és felülbírálások"
+  - name: Áfa-hozzárendelés és felülbírálások
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
@@ -116,7 +118,7 @@ items:
   items:
   - name: Speciális automatikus költségek konfigurálása és használata
     href: omni-auto-charges.md
-  - name: A fejléc automatikus költségeinek arányosítása és csoportosítása
+  - name: Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
     href: pro-rate-charges-matching-lines.md
 - name: Hívásközpont
   items:
@@ -274,7 +276,7 @@ items:
     href: price-management.md
   - name: Ármódosítások és engedmények
     href: price-adjustments-discounts.md
-  - name: Többszörös kiskereskedelmi engedmény alkalmazása egy termékre
+  - name: Többszörös engedmény alkalmazása egy termékre
     href: Apply-multiple-retail-discounts.md
   - name: Átfedő engedmények optimális kombinációjának meghatározása
     href: optimal-combination-overlapping-discounts.md
@@ -282,6 +284,8 @@ items:
     href: define-channel-specific-discounts.md
   - name: Lehetőségek a kiskereskedelmi termékekre vonatkozó engedmény megakadályozására
     href: prevent-discounts.md
+  - name: Szállítási engedmény áttekintése
+    href: retail-shipping-discount.md
   - name: Kiskereskedelmi értékesítési utalványok beállítása
     href: retail-coupons.md
 - name: Termékek és értékesítés
@@ -354,6 +358,10 @@ items:
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: A kiskereskedelmi csatorna pénzügyi integrálásának beállítása
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Ausztria
+    items:
+    - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
+      href: localizations/emea-aut-fi-sample.md
   - name: Kelet-Európa
     items:
     - name: Retail előlegszámlák (Kelet-Európa)
@@ -366,6 +374,8 @@ items:
       href: localizations/emea-eeu-deployment.md
     - name: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
       href: localizations/emea-pol-fpi-sample.md
+    - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan
+      href: localizations/emea-cze-fi-sample.md
   - name: Franciaország
     items:
     - name: Pénztárgép funkciói
@@ -440,11 +450,11 @@ items:
     href: tasks/define-channel-attributes.md
   - name: Folytonossági ütemezések meghatározása
     href: tasks/define-continuity-schedules.md
-  - name: " Hűségprogramok meghatározása"
+  - name: Hűségprogramok meghatározása
     href: tasks/define-loyalty-programs.md
-  - name: " Hűségpontok definiálása"
+  - name: Hűségpontok definiálása
     href: tasks/define-loyalty-reward-points.md
-  - name: " Hűségprogramok meghatározása"
+  - name: Hűségprogramok meghatározása
     href: tasks/define-loyalty-schemes.md
   - name: A szervezeti egységek közötti kapcsolatok megtervezése
     href: tasks/design-relationships-between-organizational-units.md
@@ -477,6 +487,8 @@ items:
       href: retail-components.md
     - name: Retail Server-architektúra
       href: dev-itpro/retail-server-architecture.md
+    - name: Válasszon üzleti topológiát
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS architektúra
@@ -562,7 +574,7 @@ items:
     - name: A pénztár kérelemkezelőjének felülírása
       href: dev-itpro/pos-handler.md
     - name: Pénztárbővítmény csomaginformációjának megtekintése
-      href: view-pos-extension-package-details.md
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station és bővíthetősége
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server bővíthetősége
@@ -669,9 +681,9 @@ items:
     items:
     - name: Hűségidő kiterjesztése
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791638"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975920"
