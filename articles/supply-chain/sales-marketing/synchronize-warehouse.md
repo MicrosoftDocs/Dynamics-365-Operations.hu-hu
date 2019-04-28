@@ -3,7 +3,7 @@ title: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Fi
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations raktárainak a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 34cd18a18715d12d4002e6dbeee047467ed2a5ad
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7e6d7626c00b9d7d98ce872652653c36ce7bc975
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340315"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842533"
 ---
 # <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
 
@@ -38,7 +38,7 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Mi
 A következő sablonok és a mögöttes tevékenységek használatosak a raktárak szinkronizálásához a Microsoft Dynamics 365 for Finance and Operations alkalmazásból a Microsoft Dynamics 365 for Field Service alkalmazásba.
 
 **Sablon az adatintegrációban**
-- Raktárak (a Finance and Operations megoldásból a Field Service megoldásba)
+- Raktárak (a Fin and Ops megoldásból a Field Service megoldásba)
 
 **Feladat az adatintegrációs projektben**
 - Raktár
@@ -76,6 +76,6 @@ A raktárak szinkronizálása előtt ellenőrizze, hogy frissítése a speciáli
 
 Az alábbi ábrán látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="warehouses-finance-and-operations-to-field-service-warehouse"></a>Raktárak (a Finance and Operations megoldásból a Field Service megoldásba): Raktár
+### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Raktárak (a Fin and Ops megoldásból a Field Service megoldásba): Raktár
 
 [![Sablonleképezés az adatintegrátorban](./media/Warehouse1.png)](./media/Warehouse1.png)

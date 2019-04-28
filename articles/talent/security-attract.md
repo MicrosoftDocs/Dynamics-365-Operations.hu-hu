@@ -1,7 +1,7 @@
 ---
 title: Biztonság és szerepkörök kezelése az Attract alkalmazásban
 description: Ez a témakör az adatentitások biztonságával kapcsolatban nyújt tájékoztatást a Microsoft Dynamics 365 for Talent - Attract rendszerben.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789697"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993691"
 ---
 # <a name="security-and-role-management-in-attract"></a>Biztonság és szerepkörök kezelése az Attract alkalmazásban
 
@@ -70,6 +70,16 @@ Bármely felhasználó, aki Azure Active Directory (Azure AD) fiókkal rendelkez
 
 A Csak olvasható szerepkörhöz hozzárendelt felhasználók csak olvasási hozzáféréssel rendelkeznek minden adathoz az Attract környezetben. Azonban nem hozhatnak létre és szerkeszthetnek adatokat.
 
+## <a name="find-out-which-roles-you-have"></a>Tudje meg, milyen szerepkörei vannak
+
+1.  Az Attract szolgáltatásban kattintson az oldal jobb felső sarkában található kérdőjel (**?**) ikonra.
+
+2.  Kattintson a **Névjegy** lehetőségre.
+
+    Az ablakban láthatja, milyen Attract szerepkörei vannak:
+
+    ![Az Attract licenctípus megtekintése](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>Delegált szerepkörök
 
 A toborzók és felvételi vezetők minden egyes feladathoz, ahol a toborzócsapat tagjai egy vagy több delegáltat jelölhetnek ki saját maguk helyett. Azonban a felvételi csapat más tagjaihoz nem jelölhetnek ki delegáltakat.

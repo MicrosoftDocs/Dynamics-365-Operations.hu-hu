@@ -3,7 +3,7 @@ title: A tényleges súllyal rendelkező termék feldolgozása a raktárkezelés
 description: A témakör azt ismerteti, hogy a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzést végezni a raktárban.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777272"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946433"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -97,7 +97,9 @@ Például **Doboz** a tényleges súly egysége, és kap egy raklapot nyolc dobo
 
 Ha a tényleges súly címke nyomon követését nem alkalmazzák, a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
 
-Kimenő tömeg rögzítés módszerei esetén megadhatja, hogy a mérés minden tényleges súly egységre megtörtént (például dobozonként), vagy a súly rögzítése a kitárolandó mennyiség alapján rögzített (például három doboz). Vegye figyelembe, hogy a termelési sor kitárolási folyamatához az átlagos súlyt használják, ha a **Nem rögzített** beállítás van használatban.
+Kimenő tömeg rögzítés módszerei esetén megadhatja, hogy a mérés minden tényleges súly egységre megtörtént (például dobozonként), vagy a súly rögzítése a kitárolandó mennyiség alapján rögzített (például három doboz). Vegye figyelembe, hogy a termelési sor kitárolási és belső átmozgatási folyamatához az átlagos súlyt használják, ha a **Nem rögzített** beállítás van használatban.
+
+Ha szeretné a raktárkezelés kitárolási folyamatait korlátozni, hogy a súly rögzítése ne eredményezzen ténylegessúly-profit/-veszteség kiigazításokat, használhatja a Kimenő súly változó metódust.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 
@@ -121,14 +123,12 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
  
 ### <a name="order-processing"></a>Rendelés feldolgozása
 
-- Vállalatközi rendelések feldolgozása nem támogatott.
 - Előzetes kiszállítási értesítés (ASN/csomagolási szerkezetek) létrehozása nem támogatja a súlyadatokat.
 - A rendelési mennyiséget a tényleges súly egysége alapján kell karbantartani.
  
 ### <a name="inbound-warehouse-processing"></a>Bejövő raktárkezelés
 
 - Az azonosítótáblák bevételezéséhez szüksége, hogy a súlyokat a regisztráció során rendeljék hozzá, mert a tömegadatokat a rendszer nem támogatja az előzetes kiszállítási értesítés részeként. Ha a tényleges súly címke folyamatokat használnak, a címke számát manuálisan kell hozzárendelni egy tényleges súly egységenként megadva.
-- Vegyes azonosítótáblák bevételezése tényleges súllyal rendelkező termékek esetében nem támogatott.
  
 ### <a name="inventory-and-warehouse-operations"></a>Készlet- és raktárműveletek
 
@@ -169,7 +169,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Egyéb korlátozások és a viselkedések a tényleges súllyal megadott termékek feldolgozásához raktárkezelés használatával
 
-- Ha a tényleges súly címkéket a raktári alkalmazás feldolgozása részeként vannak rögzítve, a felhasználó nem vonhatja vissza a munkaefolyamatot.
 - Kitárolási folyamatok során, amelyen a felhasználót a rendszer nem kéri nyomon követési dimenziók meghatározására, a súly hozzárendelését az átlagos tömeg alapján végzik. Ez a viselkedés akkor fordul elő, amikor például nyomon követési dimenziók egy kombinációját használják ugyanazon a helyen, és miután a felhasználó feldolgozza a kitárolást, csak egy nyomon követési dimenzióérték marad az adott helyen.
 - Ha a készlet le van foglalva a tényleges súllyal rendelkező termék számára, amelyet a raktárkezelési folyamatokhoz konfiguráltak, a foglalás a meghatározott minimális súly alapján történik, akkor is, ha ez a mennyiség az aktuális utolsó kezelési mennyiség. Ez a viselkedés eltér az olyan cikkek viselkedésétől, amelyeket a raktárkezelési folyamatokhoz nem konfiguráltak.
 - Azok a folyamatok, amelyek a súlyt kapacitásszámítás részeként használják (hullám küszöbértékei, munka maximális szünetek, tároló maximumok, hely terhelési kapacitásai stb.) nem használják a készlet tényleges súlyát. Ehelyett a folyamatok a termékhez meghatározott fizikai kezelési súlyon alapulnak.
@@ -193,3 +192,5 @@ Jelenleg a tényleges súly címkék funkciója csak a következő helyzetekben 
 - Amikor tárolók újranyitása történik.
 - Amikor receptúratermékeket készként jelentik a raktáralkalmazás segítségével.
 - Amikor szállítási rakományokat dolgoznak fel a raktáralkalmazás segítségével.
+
+A ténylegessúly-címkét létrehozhatja raktáralkalmazási folyamattal, manuálisan a képernyőn vagy adatentitás-folyamat segítségével. Ha egy ténylegessúly-címkét társítanak egy bejövő forrásbizonylatsorral, például beszerzési rendelési sorral, a címke nyilvántartásba kerül. Ha a sort kimenő feldolgozásra használják. A címke szállított állapotúra frissül.

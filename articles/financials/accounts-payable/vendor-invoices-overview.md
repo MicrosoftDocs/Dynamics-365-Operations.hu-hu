@@ -1,9 +1,9 @@
 ---
 title: Szállítói számlák áttekintése
 description: Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329758"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975802"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak. 
 
-<a name="vendor-invoices"></a>Szállítói számlák
----------------
+## <a name="vendor-invoices"></a>Szállítói számlák
 
 A beszerzési rendelés szállítói számlája egy olyan számla, amit a szállítóval egyeztetett beszerzési rendelés alapján termékek vagy szolgáltatások kézbesítésekor jön létre. A szállítói számla fejlécet, valamint a cikkekre vagy szolgáltatásokra vonatkozó egy vagy több sort tartalmaz. A szállítói számlával a ciklus beszerzési rendelésből termékbevételezésre és szállítói számlára léphet tovább. 
 
@@ -79,8 +79,15 @@ További informáiók: [A szállítói számlák rögzítése és összevetése 
 
 Dolgozhat egyszerre több számlával, és fel is adhatja azokat egyszerre. Ha több számlát kell létrehoznia, akkor használja a **Függőben lévő szállítói számlák** oldalt. Ha több szállítói számlát kell feladni és nyomtatni, akkor használja a számla-jóváhagyási napló oldal.t Ha számla-jóváhagyási naplót használ, legalább egy termékbevételezést feladtak, és a beszerzési rendelés számláját fel kell adni a számlajegyzékbe. A számla pénzügyi adatai a számlajegyzékbe feladott számláról származnak.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Használatban lévő szállítói számlák visszaállítása.
 
-További tudnivalók:
+Amikor egy szállítói számla használatban van, akkor egy másik felhasználó által nem szerkeszthető. Azonban a számla állapota időnként azt jelezheti, hogy a számla használatban van, annak ellenére, hogy az nincs aktívan szerkesztve. Ha például az alkalmazás nem válaszolt, miközben a számlán módosították, vagy a felhasználó lehet, hogy véletlenül hagyta megnyitva a számlát az alkalmazásban.
+
+Használhatja a **Szállítói számlák helyreállítása** lapot a szállítói számlák visszaállításához vagy feloldásához, amelyeket több, mint négy órája vannak használatban, hogy azok szerkeszthetők legyenek. Megnyithatja ezt a lapot az **Ismétlődő feladat** navigációs elemről vagy a **Szállítói számla bevitele** munkaterület egy csempéjéről. A számla visszaállítást követően az szerkeszthető lesz a **Szállítói számla** oldalon.
+
+A **Szállítói számlák helyreállítása** laphoz csak akkor férhet hozzá, ha a **Használatban lévő szállítói számlák helyreállítása** biztonsági kötelezettség és jogosultság Önhöz van rendelve. Ezenkívül a **Szállítói számla visszaállítása** paramétert a **Kötelezettségek paraméterei** lapon be kell kapcsolni.
+
+## <a name="additional-resources"></a>További erőforrások
 
  - [Szállítói számla irányelveinek beállítása](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

@@ -1,29 +1,29 @@
 ---
 title: Intelligens ajánlások
 description: Ez a témakör bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304691"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896557"
 ---
 # <a name="intelligent-recommendations"></a>Intelligens ajánlások
 
@@ -32,8 +32,9 @@ ms.locfileid: "304691"
 A gépi tanulás segít a toborzóknak és a felvételi menedzsereknek a munkakör legjobb jelöltjeinek gyors azonosításában. A potenciális jelölteknek is segíthet olyan munkakör keresésében, amely leginkább illik a profiljukhoz és az érdeklődésükhöz. A funkciók használatával és a beérkező visszajelzésekkel az ajánlások javulni fognak.
 
 > [!NOTE] 
-> - Az intelligens ajánlási funkciók csak az átfogó felvételi bővítménnyel érhetők el.
-> - Ahhoz, hogy a pályázó és feladatajánlás funkciók működjenek, egy rendszergazdának be kell kapcsolnia hozzájuk az előnézeti beállításokat. A felügyeleti központban a **Felügyeleti szolgáltatás** lapon, győződjön meg róla, hogy a **Funkciók előnézete** beállítása **Be**. Ezután győződjön meg róla, hogy az egyes **Jelentkező ajánlása** és **Ajánlott beosztás** beállítása **Be**.
+> - Az intelligens ajánlási funkciók csak az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) érhetők el.
+> - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Ez a funkció használatához kérje meg a rendszergazdát az engedélyezésére az **Adminisztratív beállításokban** az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Jelentkező ajánlásai
 
@@ -43,4 +44,15 @@ Bármely javasolt jelöltnél választhatja a **Jelölt megtekintése** lehetős
 
 ## <a name="job-recommendations"></a>Munkakörajánlások 
 
-Ha egy potenciális alkalmazott az előmeneteli webhely segítségével egy munkakörre jelentkezik, a szervezet más nyitott pozíció is ajánlva lesznek. Ezek a javaslatok a potenciális jelölt múltbeli jelentkezésein, illetve a pályázó önéletrajzán és profilján alapulnak. Ezért a munkakörajánlások segítenek a potenciális jelölteknek gyorsan azonosítani a számukra legjobban illő munkaköröket. A munkakörajánlások akkor állnak a potenciális jelentkező rendelkezésre, ha tíznél több munkakör van az előmeneteli webhelyen. Potenciális jelentkező megnyithatja az ajánlás kartonról az álláshirdetés részletes adatait. A jövőbeli ajánlások javítása érdekében az ajánlásokról visszajelzést is adhatnak.
+Ha egy potenciális alkalmazott az előmeneteli webhely segítségével egy munkakörre jelentkezik, az Attract a szervezet más nyitott pozícióra is ajánlja. Ezek a javaslatok a potenciális jelölt múltbeli jelentkezésein, illetve a pályázó önéletrajzán és jelöltprofilján alapulnak. Ezért a munkakörajánlások segítenek a potenciális jelölteknek gyorsan azonosítani a számukra legjobban illő munkaköröket. A munkakörajánlások akkor állnak a potenciális jelentkező rendelkezésre, ha tíznél több munkakör van az előmeneteli webhelyen. Potenciális jelentkező megnyithatja az ajánlás kartonról az álláshirdetés részletes adatait. A jövőbeli ajánlások javítása érdekében az ajánlásokról visszajelzést is adhatnak.
+
+## <a name="prospect-recommendations"></a>Potenciális jelöltekre vonatkozó javaslatok 
+
+Ha egy új beosztást válik elérhetővé, a múltbeli pályázók és a tehetséghálózaton áttekintése eltarthat egy ideig. Az Attract segíthet ebben, intelligens gép tanulás algoritmus használatával. Ez azt jelenti, hogy Attract áttekinti az összes jelentkezőt, és ajánlja a megfelelőket már az állás létrehozásánál. Ezen javaslatok megtekintéséhez engedélyezze a **Potenciális** jelölt fázist az álláshoz. Eltarthat egy ideig az Attract számára a teljes jelölti adatbázis átvizsgálása ajánlások készítéséhez.
+
+A javaslatok kártyaként jelennek meg a **Potenciális jelöltek** lapon minden álláshoz, ahol engedélyezve van **Potenciális jelölt** fázis. Ezeket a kártyák listázzák a szakértelmeket a potenciális jelölt profiljában, valamint az esetleges végzettségre, képesítésre vonatkozó információkat. Ha talál egy szimpatikus ajánlást a pályázót hozzáadhatja potenciális jelöltként ahhoz a munkához.
+
+> [!NOTE]
+> Ha nemrég kezdte el használni az Attract megoldást, várjon, amíg legalább 10 vagy több pályázók, akik teljes profillal vagy önéletrajzzal rendelkezik rendelkezésre áll, mielőtt elkezdené használni ezt a képességet.
+
+Az elfogult ajánlások elkerülése érdekében, az Attract csak szakértelmeket, képesítéseket és egyéb kulcsszavakat keres a jelentkezői profilokban, amelyek megfelelnek az állás leírásának. Ezenkívül Attract a személyes azonosító adatokat eltávolítja a jelölt profilok kiértékelése előtt.

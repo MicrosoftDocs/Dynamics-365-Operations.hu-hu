@@ -1,28 +1,28 @@
 ---
 title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 18f668bdc49da1022230278f1de8494150e8a5f9
+ms.sourcegitcommit: bdcdcdddcb0517f0c64d541258ccbd119b960719
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313980"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "977206"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhő és helyszíni szolgáltatások összehasonlítása
 
@@ -56,9 +56,12 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | Súgó | | Igen | Nincs |
 | Emberi erőforrások | | Igen | Igen |
 | Intelligencia | | Igen | Igen |
-| | Elektronikus jelentés (ER) – LCS-integrálás | Igen | Szám |
-| | Elektronikus jelentés (ER) – integrálás SharePoint szolgáltatással | Igen | Szám |
-| | PowerBI.com integrálása | Igen | Szám |
+| | Elektronikus jelentés (EJ) | Igen | Igen |
+| | ER: Integráció az LCS rendszerrel | Igen | Nem |
+| | ER: Integráció a SharePoint szolgáltatással | Igen | Nem |
+| | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással | Igen | Nem |
+| | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem | Igen |
+| | PowerBI.com integrálása | Igen | Nem |
 | | Analitikus munkaterületek | Igen | Nincs |
 | | Intelligens üzleti folyamat: ajánlások | Igen | Szám |
 | | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával | Igen | Szám |

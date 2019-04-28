@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 for Talent és Dynamics 365 for Finance and Operations integráció – GYIK.
 description: Ez a témakör bemutatja, hogy milyen adatok vannak a szinkronizálva a Talent és a Finance and Operations integrációjában.
-author: negudava
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: negudava
+ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aea025bc4898d6399e82030cf1f52b21949e014f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304715"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950083"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent és Dynamics 365 for Finance and Operations integráció – GYIK.
 
@@ -34,15 +34,15 @@ Ez a témakör gyakori kérdésekre válaszol azzal kapcsolatban, hogy milyen ad
 
 A Core Human Resources (HR), az adatok egy részhalmaza, amely szinkronizálva lesz. Összes entitás listáját lásd: [A Dynamics 365 for Talent és a Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md) közötti integráció.
 
-Az Attract és Onboard esetében minden adat natív a Common Data Services (CDS) for Apps számára.
+Az Attract és Onboard esetében minden adat natív a Common Data Service számára.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Létrehozhatok egy új hozzárendelést a sablonok használata nélkül?
 
-Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) szolgáltatásba.
+Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) for Apps szolgáltatásba.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Hozzárendelhetek pénzügyi dimenziókat átvitelre a Talent és a Finance and Operations között?
 
-Pénzügyi dimenziók jelenleg nem szerepelnek a CDS for Apps-ban, és ebből következően nem az alapértelmezett sablon részei. Ez az entitás tervezett, de jelenleg nincs a kiadási időterv.
+Pénzügyi dimenziók jelenleg nem szerepelnek a Common Data Service szolgáltatásban, és ebből következően nem az alapértelmezett sablon részei. Ez az entitás tervezett, de jelenleg nincs a kiadási időterv.
 
 Azon adatok esetében, amelyek léteznek a Finance and Operations alkalmazásban, de a Talent rendszerben nem nem, a Talent **Hivatkozások beállítása** funkciójával kapcsolja össze. A Talent és a Finance and Operations közötti kapcsolatok beállításával kapcsolatos további tudnivalókat lásd: [A Dynamics 365 for Talent Core HR újdonságai és módosításai (2018. október 31.)](whats-new-talent-october-31.md).
 
@@ -64,7 +64,7 @@ A „Speciális lekérdezés” használatával szűrheti és átformálhatja a 
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Meghatározhatom, hogy mely mezők legyenek átküldve a Finance and Operations rendszerbe egy adott entitáshoz?
 
-Mezők hozzáadhatók vagy eltávolíthatók az integrációs feladatból. Nem minden meglévő a CDS for Apps (CD 2.0) entitásban meglévő mező lesz kitöltve a Core HR-ből.
+Mezők hozzáadhatók vagy eltávolíthatók az integrációs feladatból. Nem minden meglévő a Common Data Service entitásban meglévő mező lesz kitöltve a Core HR-ből.
 További adatok is ki lehet kitölteni a PowerApps-ől.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
@@ -83,7 +83,7 @@ Nem, az Adatintegrátor nem rögzít adatátvitelre törölt rekordokat. Csak az
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Futtathatok ismét egy a hibás végrehajtást? Ha igen, akkor elküldi teljes a fájlt, vagy csak a módosításokat?
 
-Az Adatintegrátor első futása mindig teljes futás. További futások változáskövetésen alapulnak. Futtatás hibás végrehajtásakor, kigyűjti a futáshoz tartozó rekordokat, és elküldi a legfrissebb módosításokat a CDS-ből.
+Az Adatintegrátor első futása mindig teljes futás. További futások változáskövetésen alapulnak. Futtatás hibás végrehajtásakor, kigyűjti a futáshoz tartozó rekordokat, és elküldi a legfrissebb módosításokat a Common Data Service szolgáltatásból.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>A projekt mentésekor a következő hibaüzenetet kapom: „Projektben hozzárendelési hibák vannak.” Mi a teendő?
 
@@ -97,15 +97,15 @@ Igen, az egyes jogi személyekhez a Finance and Operations alkalmazásban külö
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Olyan adatokat kell átvinnem, amelyek nem szerepelnek a Microsoft által biztosított alapértelmezett sablonban. Megtehetem ezt?
 
-Igen, mezőket lehetséges felvenni vagy eltávolítani a meglévő sablon esetében. A sablont módosíthatóm hogy tartalmazzon további adatokat más CDS vagy Apps entitásokból Az entitásnak szerepelnie kell a CDS for Apps rendszerben, hogy bekerülhessen a sablonba. 
+Igen, mezőket lehetséges felvenni vagy eltávolítani a meglévő sablon esetében. A sablont módosíthatóm hogy tartalmazzon további adatokat más Common Data Service entitásokból Az entitásnak szerepelnie kell a Common Data Service megoldásban, hogy bekerülhessen a sablonba. 
 
 ## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Új Finance and Operations és Talent környezeteket hoztam létre, és a következő hibát kapom: „Az adatérték sérti az integritási megszorításokat." Miért?
 
 A hiba okai a következők lehetnek:
 
-- Az adatok átvitele az ismétlődő rekordokok kivonását eredményezte a forrásnál (CDS).
+- Az adatok átvitele az ismétlődő rekordokok kivonását eredményezte a forrásnál (Common Data Service).
 
-- Az adatátvitel olyan mezőiben vannak nulla értékek, amelyek szükségesek a Finance and Operations alkalmazásnak. Ellenőrizze , hogy a CDS adatai megfelelnek a Finance and Operations követelményeinek.
+- Az adatátvitel olyan mezőiben vannak nulla értékek, amelyek szükségesek a Finance and Operations alkalmazásnak. Ellenőrizze , hogy a Common Data Service adatai megfelelnek a Finance and Operations követelményeinek.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Ha a végrehajtási hibák vannak és az Alkalmazott azonosítója nem lett szinkronizálva, hogyan találom meg az előzményfeladatot, amelyben meghiúsult az alkalmazotti rekord?
 
@@ -127,17 +127,17 @@ Kövesse nyomon az időt az adatintegrátor végrehajtási előzményeiben és k
 
 ## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>A Talent és a Finance and Operations integrációját követően nem látom a Talent adatait a Finance and Operations alkalmazásban Mi a teendő?
 
-A Finance and Operations integrációja két lépésből áll. Először ellenőrizze, hogy a Talent adatai frissítve vannak. és elérhetők a CDS-ben. Ez kzel valós idejű szinkronizálási, és ellenőrizhető a PowerApps-ben, az adatbejegyzések közötti adatok megtekintésével.
+A Finance and Operations integrációja két lépésből áll. Először ellenőrizze, hogy a Talent adatai frissítve vannak. és elérhetők a Common Data Service megoldásban. Ez kzel valós idejű szinkronizálási, és ellenőrizhető a PowerApps-ben, az adatbejegyzések közötti adatok megtekintésével.
 
-![A CDS adatai](media/DataInCDS.png)
+![Adatok a Common Data Service megoldásban](media/DataInCDS.png)
 
-Ha az adatok nem a várt módon jelennek meg a CDS-ben, győződjön meg róla, az entitást az integráció támogatja. További adatok felvételéhez a CDS-be módosításara van szükség a Microsoft oldalán.
+Ha az adatok nem a várt módon jelennek meg a Common Data Service megoldásban, győződjön meg róla, az entitást az integráció támogatja. További adatok felvételéhez a Common Data Service megoldásba módosításara van szükség a Microsoft oldalán.
 
-Ha az entitás támogatott, és az adatok elérhetők a CDS-ben, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Ha az entitás támogatott, és az adatok elérhetők a Common Data Service megoldásban, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>A saját alkalmazottak címei helytelenek a Finance and Operations alkalmazásba importálás után. Mit tegyek?
 
-A **Helyazonosító** számsorozata ugyanazt a mintát használja a Talent és Finance and Operations alkalmazásokban. A számsorozat egyedi kell legyen mindkét oldalon, hogy ne legyenek címütközések történő az adatok integrálásakor a CDS-ből a Finance and Operations alkalmazásba.
+A **Helyazonosító** számsorozata ugyanazt a mintát használja a Talent és Finance and Operations alkalmazásokban. A számsorozat egyedi kell legyen mindkét oldalon, hogy ne legyenek címütközések történő az adatok integrálásakor a Common Data Service megoldásból a Finance and Operations alkalmazásba.
 
 A Talent végrehajtása során győződjön meg róla, hogy a számsorozatok nem azonosak a Talent és Finance and Operations alkalmazásokban. Ellenőrizze, hogy nem azonosak számsorozatok egyetlen esetben sem, amikor az adatokat mindkét rendszer kezeli.
 
@@ -147,7 +147,7 @@ A Talent végrehajtása során győződjön meg róla, hogy a számsorozatok nem
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Munkaviszonyok szinkronizáláskor a következő hibaüzenet jelenik meg: „CompanyInfo_FK nem létezik” vagy „A 12/31/2154 11:59:59 pm' érték a 'Munkaviszony befejezésének dátuma' mezőben a kapcsolódó 'Munkaviszony' táblában nem található” Mit tegyek?
 
-Győződjön meg róla, hogy a megfelelő jogi személyekhez rendel hozzá. Jogi személy szinkronizálása nem része az alapértelmezett sablonnak, így elvárt, hogy minden egyes jogi személy, amely szerepel a Talent alkalmazásban szerepeljen a Finance and Operations alkalmazásban is.
+Győződjön meg róla, hogy a megfelelő jogi személyekhez rendel hozzá. Jogi személy szinkronizálása nem része az alapértelmezett sablonnak, így elvárt, hogy minden egyes jogi személy, amely szerepel a Talent és Common Data Service megoldásban szerepeljen a Finance and Operations alkalmazásban is.
 Győződjön meg arról is, hogy a helyes jogi személyeket választja ki a társított Csatlakozókészletben.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>A projektem felállítását követően a Finance and Operations alkalmazáshoz tartozó mezőtársítás üres. Mit tegyek?
@@ -160,11 +160,11 @@ Frissítse a Finance and Operations adatentitásait az **Adatkezelés \> Keretre
 
 - Adatintegrátor(DI): 
 
-  - [Adatok integrálása a Common Data Service for Apps rendszerbe](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Adatok integrálása: Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
 
   - [Hibakezelés és hibaelhárítás az Adatintegrátorban](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
 
-  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a PowerApps-ben Microsoft Flow és Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a PowerApps-ben Microsoft Flow megoldásban és a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) megoldásban.
 
 - Adatkezelés:
 

@@ -1,7 +1,7 @@
 ---
 title: Borderó kifizetés sztornózása
 description: Ez a cikk egy kifizetés sztornírozását, törlését, érvénytelenítését és visszautasítását mutatja be. Elmagyarázza továbbá szállítói számlák sztornírozásának két módját.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 95bdb0a17dfcf3af35b6645ac5706262543d51d3
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329620"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896189"
 ---
 # <a name="reverse-a-vendor-payment"></a>Borderó kifizetés sztornózása
 

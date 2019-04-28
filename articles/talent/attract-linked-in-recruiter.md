@@ -1,7 +1,7 @@
 ---
 title: Forráskeresés LinkedIn Recruiter segítségével
 description: Ez a témakör a gépi tanulásnak az állás- és állásjelölti javaslatok beszerzésére való használatával kapcsolatban tartalmaz tájékoztatást.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,21 +10,21 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304633"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859574"
 ---
 # <a name="sourcing-with-linkedin-recruiter"></a>Forráskeresés LinkedIn Recruiter segítségével
 [!include[banner](../includes/banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "304633"
 A LinkedIn a világ legnagyobb szaktudás-adatbázisa, és gyakran az elsődleges rendszer, amelyet a toborzók jelöltek megtalálására, a velük való kommunikációra és forráskeresésre használnak az aktuális állásra. A LinkedIn Recruiter és a Dynamics 365 for Talent: Attract integrálása megkönnyíti a felhasználók számára a felvételt, valamint az adatok két rendszer közötti szinkronizálását.
 
 > [!NOTE]
-> Az átfogó felvételi bővítmény és LinkedIn Recruiter helyek szükségesek a LinkedIn Recruiter és az Attract integrációjának használatához.
+> Az átfogó felvételi bővítmény és LinkedIn Recruiter-helyek szükségesek a LinkedIn Recruiter és az Attract integrációjának használatához.
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>Az Attract és a LinkedIn Recruiter beállítása 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>Állítsa be LinkedIn Recruiter szolgáltatást az Attract alkalmazással 
 
-A LinkedIn Recruiter funkciók használata előtt konfigurálnia kell szerződésszintű, vagy a vállalatiszintű hozzáférést az Attract-példánnyal. A konfiguráció befejezéséhez a LinkedIn Recruiter szerződés rendszergazda felhasználójával kell együttműködnie. A következő lépések bemutatják a LinkedIn Recruiter és az Attract beállítását.
+A LinkedIn Recruiter-funkciók használata előtt konfigurálnia kell szerződésszintű, vagy a vállalatiszintű hozzáférést az Attract-példánnyal. A konfiguráció befejezéséhez a LinkedIn Recruiter-szerződés rendszergazda felhasználójával kell együttműködnie. A következő lépések bemutatják a LinkedIn Recruiter és az Attract beállítását.
 
 1.  Jelentkezzen be rendszergazdaként az Attract rendszerébe, és nyissa meg: **Adminisztratív beállítások**.
 
 2.  A bal panelen kattintson a **LinkedIn integráció** lapra.
 
-[![Attract adminisztrátori nézet a LinkedIn Recruiter integráció indításához](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+[![Attract adminisztrátori nézet a LinkedIn Recruiter-integráció indításához](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3.  Kattintson a **Csatlakozás** elemre a telepítő elindításához, és csinálja végig a LinkedIn bejelentkezési folyamatát.
 
@@ -50,13 +50,13 @@ A LinkedIn Recruiter funkciók használata előtt konfigurálnia kell szerződé
 
 5.  A LinkedIn widget most betölti a rendszergazdai beállításokat integrációk megjelenített listájával. A **Recruiter rendszer csatlakozás** alatt kattintson a **Kérés** elemre.
 
-[![Attract adminisztrátori nézet, a LinkedIn Recruiter integráció kérése](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+[![Attract adminisztrátori nézet a LinkedIn Recruiter-integráció kérelmezéséhez](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6.  Az integráció kérelmezése után az Attract rendszertől, megjelenik a **Partner kész** módon, és már be lehet kapcsolni a **Recruiter adminisztratív beállítások** helyről. Ha a **Partner értesítése** megjelenik ezen az oldalon, várjon néhány másodpercet, kattintson a **Partner értesítése** elemre, majd frissítse a lapot. Most meg kell jelennie a **Partner kész** állapotban.
 
 [![Attract adminisztrátori nézet, az Attract oldaláról érkező kérelmet teljesítették](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
 
-A következő lépésre teljesítéséhez rendszergazdai jogosultság szükséges a LinkedIn Recruiter szerződésen.
+A következő lépésre teljesítéséhez rendszergazdai jogosultság szükséges a LinkedIn Recruiter-szerződésen.
 
 7.  A LinkedIn rendszerébe a rendszergazda fiók használatával jelentkezzen be, és nyissa meg a jobb felső sarokban LinkedIn Recruiter elemet. 
 
@@ -72,11 +72,11 @@ Az Attract rendszer jelenik meg a néhány beállítással, amelyek bekapcsolhat
 
 12. Térjen vissza az Attract adminisztratív beállításokhoz AttractAdminként, és válassza ki a **LinkedIn integráció** lapot. Azt kell látnia, hogy a LinkedIn widget be van töltődve **Engedélyezett** állapottal, a kijelölt hozzáférési szint pedig be van kapcsolva.
 
-[![LinkedIn Recruiter-integráció kész](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiter-integráció befejeződött](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-## <a name="using-linkedin-recruiter-capabilities"></a>A LinkedIn Recruiter lehetőségeinek használata
+## <a name="using-linkedin-recruiter-capabilities"></a>LinkedIn Recruiter-funkciók használata
 
-Miután LinkedIn Recruiter lehetőségeket az Attract rendszergazda engedélyezte, elérhető a felvételi vezetők és a toborzók számára. A funkciók használatához csatlakoztassa LinkedIn-fiókját itt: **Felhasználói beállítások**. Több képesség lesz elérhető az adminisztrációs és felhasználói beállítások csatlakoztatása után.
+Miután a LinkedIn Recruiter lehetőségeket az Attract rendszergazda engedélyezte, elérhető a felvételi vezetők és a toborzók számára. A funkciók használatához csatlakoztassa LinkedIn-fiókját itt: **Felhasználói beállítások**. Több képesség lesz elérhető az adminisztrációs és felhasználói beállítások csatlakoztatása után.
 
 ### <a name="in-ats-profile-widget"></a>In-ATS profil widget
 
@@ -122,7 +122,7 @@ LinkedIn Recruiter használatával nyomon követheti, hogy pályázó jelentkeze
 6.  Válassza ki a **Megjegyzések** lapot a pályázóhoz az Attractban rögzített megjegyzések megtekintéséhez.
 
 > [!NOTE]
-> A pályázó- és pályázati adatok nem lesznek szinkronizálva a LinkedIn Recruiter-rel, ha a jelentkező nem lépett túl a potenciális szakaszon.
+> A pályázó- és pályázati adatok nem lesznek szinkronizálva a LinkedIn Recruiter rendszerrel, ha a jelentkező nem lépett túl a potenciális szakaszon.
 
 ### <a name="inmail-history"></a>InMail-előzmények
 
@@ -132,12 +132,12 @@ Az InMail-előzmények megtekintéséhez ugorjon a jelentkező profiljára, menj
 
 ### <a name="notes-history"></a>Megjegyzések előzményei 
 
-Szerződés szintű hozzáféréssel elérhetők a LinkedIn megjegyzések előzményei a LinkedIn Recruiterben. Ha engedélyezve van, megtekintheti a szervezet különböző toborzói által a jelölttel kapcsolatosan rögzített megjegyzéseket.
+Szerződés szintű hozzáféréssel elérhetők a LinkedIn-megjegyzések előzményei a LinkedIn Recruiter szolgáltatásban. Ha engedélyezve van, megtekintheti a szervezet különböző toborzói által a jelölttel kapcsolatosan rögzített megjegyzéseket.
 
-A megjegyzéselőzmények megtekintéséhez ugorjon a jelentkező profiljára, menjen a **LinkedIn** lapra, és görgessen az előzmények megtekintéséhez a lap aljára. A pályázóval kapcsolatosan rögzített összes megjegyzést megtekintheti a LinkedIn Recruiterből.
+A megjegyzéselőzmények megtekintéséhez ugorjon a jelentkező profiljára, menjen a **LinkedIn** lapra, és görgessen az előzmények megtekintéséhez a lap aljára. A pályázóval kapcsolatosan rögzített összes megjegyzést megtekintheti a LinkedIn Recruiter rendszerében.
 
 ### <a name="inmail-stub-profile"></a>InMail csonka profil
 
-Szerződés szintű hozzáféréssel elérhetők az InMail csonka profil a LinkedIn Recruiterben. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord. Ha a pályázó már létezik a rendszerben egy e-mail címmel, vagy úgy döntött, hogy megosztja e-mail-címét a toborzóval, megtekintheti a jelölt e-mail-címét.
+Szerződés szintű hozzáféréssel elérhetők az InMail csonka profil a LinkedIn Recruiter rendszerében. Ha a pályázó elfogadja a LinkedIn-profilja megosztása a szervezet egy felhasználójával, nyomon követheti a jelölteket az Attract rendszerében, és minden egyes jelölthöz létrejön egy új jelentkezőrekord. Ha a pályázó már létezik a rendszerben egy e-mail címmel, vagy úgy döntött, hogy megosztja e-mail-címét a toborzóval, megtekintheti a jelölt e-mail-címét.
 
 A pályázók listájának megtekintéséhez menjen a **Szaktudásgyűjtők** elemhez a rendszer által létrehozott LinkedIn szaktudásgyűjtők ellenőrzéséhez. A szaktudásgyűjtő a LinkedIntől kapott jelöltlistákat és a jelöltek csonka profiljait tartalmazza, a jelölt keresztnevét és vezetéknevét mutatva. A pályázó e-mail-azonosítója fog megjelenni, ha a pályázó az e-mail-címe megosztását választotta.

@@ -1,29 +1,29 @@
 ---
 title: Pályázók gyűjtése szaktudásgyűjtők segítségével
 description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Attract szaktudásgyűjtőit.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304675"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949344"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Pályázók gyűjtése szaktudásgyűjtők segítségével
 
@@ -34,7 +34,7 @@ A felvételi vezetők és a toborzók az Attract szaktudásgyűjtők funkciójá
 
 ## <a name="create-and-share-a-talent-pool"></a>Szaktudásgyűjtők hozzáadása és megosztása
 
-Minden olyan felhasználót, aki a toborzó, felvételi vezető vagy Attract rendszergazdai szerepkörű, szaktudásgyűjtőket hozhat létre. Egy szaktudásgyűjtőt a tulajdonosa megoszthat más felhasználókkal, hogy a felhasználócsoportok, különösen a toborzók, megtekinthessék pályázók megosztott készleteit.
+Minden olyan felhasználót, aki a toborzó, felvételi vezető vagy Attract rendszergazdai szerepkörű, tehetségállományokat hozhat létre. Egy szaktudásgyűjtőt a tulajdonosa megoszthat más felhasználókkal, hogy a felhasználócsoportok, különösen a toborzók, megtekinthessék pályázók megosztott készleteit.
 
 A szaktudásgyűjtő közreműködői megtekinthetik a benne levő pályázók listáját. Pályázókat is hozzáadhatnak a szaktudásgyűjtőhöz, vagy pályázókat távolíthatnak el.
 
@@ -44,7 +44,7 @@ Kövesse az alábbi lépéseket szaktudásgyűjtő létrehozásához és megoszt
 
     A **Saját szaktudásgyűjtők** lap megjeleníti az összes szaktudásgyűjtőt, amelyhez hozzáférhet, minden egyes adattal együtt. A részletes adatok tartalmazzák a gyűjtő tulajdonosát és a benne levő pályázók számát.
 
-1. Kattintson a jobb felső részen az **+ új** elemre a **Szaktudásgyűjtő létrehozása** párbeszédpanel megnyitásához.
+1. Kattintson az oldal jobb felső részen az **Új** elemre a **Tehetségállomány létrehozása** párbeszédpanel megnyitásához.
 1. A szaktudásgyűjtő egyedi nevét adja meg.
 1. Emberek hozzáadásához a szaktudásgyűjtő közreműködőként, keressen a nevükre az névjegyzékben, és adja hozzá őket a listához. Minden olyan felhasználóval, aki a toborzó, felvételi vezető vagy Attract rendszergazdai szerepkörű, megoszthatók a szaktudásgyűjtők.
 1. Válassza a **Hozzáadás** lehetőséget a szaktudásgyűjtő létrehozásához.
@@ -78,26 +78,35 @@ A szaktudásgyűjtő tulajdonosa és felhasználói számára leheséges: pály�
 
 ## <a name="search-and-view-candidate-profiles"></a>Keresése és megtekintése a jelölt profiloknak
 
-A szaktudásgyűjtő felhasználóinak meg lehet tekinteni a jelentkező profilját, LinkedIn adatait, kapcsolódó dokumentumait vagy a pályázó teljes jelentkezési előzményeit. Kereshet az egész jelöltadatbázisban bármely jelöltre, aki eddig bármikor állásra jelentkezett a szervezeténél, vagy akik bármikor hozzá lett adva bármely szaktudásgyűjtőhöz.
+> [!NOTE] 
+> Ez a funkció jelenleg előnézetben van. Ha ki szeretné próbálni, akkor [be kell kapcsolnia az Attract rendszergazdai beállításai között](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. A keresési mezőt használja a felső részén a **Saját szaktudásgyűjtők** lapnak a teljes jelöltadatbázis kereséséhez.
-1. Keresés különböző profilattribútumok közül. Válassza ki a keresési attribútum kategóriát, a keresési lekérdezés és válassza a jobbra nyílat (**-\>**) a keresés futtatásához.
+A tehetségállományok segítségével megtekintheti egy jelölt profilját, LinkedIn-adatait, kapcsolódó dokumentumait és pályázati előzményeit. A bármely tehetségállományhoz hozzáadott összes jelöltet tartalmazó adatbázis egészében kereshet, beleértve a lezárt és aktív pályázókat is.
 
-    Megjeleníthetők pályázók a következő szerint: név; a szervezet, ahol dolgoznak; szakértelem, amellyem meg vannak címkézve; végzettségi előzmények; aktuális beosztás; megszerzett végzettség; ha ez az információ a profilban szerepel.
+>[!NOTE]
+> Ha új jelölteket vagy pályázókat ad hozzá, legfeljebb 15 percbe telhet, amíg az újonnan hozzáadottak is bekerülnek a keresésbe.
 
-    Létrehozhat keresési feltételeket is, kettő vagy több attribútumot használó lekérdezéshez. A feltételek kombinálhatók egy **és** operátor segítségével.
+A továbbfejlesztett keresési élménynek köszönhetően az összes jelölti dokumentumban kereshet, és szűrheti őket ezüstérmesek, források, szakértelmek, tanulmányok és más szempontok alapján. A korábbi verziókban meg kellett adni az entitást, amelyben keresni akart. Az Attract most képes az összes jelölttel kapcsolatos mezőben keresni, és rangsorolni az eredményeket.
 
-    Ha bármelyik pályázók megfelel a keresési feltételeknek, a keresési eredmények között szerepelnek.
+1. Új keresés indításához a jelölti adatbázisban adja meg a keresni kívánt szöveget a **Tehetségállományok** oldalon található keresőmezőben. 
 
-1. Az eredmények szűkítéséhez frissítheti a lekérdezést a fenti keresési mező használatával.
+Begépelheti a jelölt nevét, vagy bármely keresett attribútumot. Az attribútumokat szóközzel válassza el.
 
-    Alternatívaként a használható intelligens szűrők listája a jobb oldalon található. Az intelligens szűrők dinamikusan igényeltek, a keresési eredmények alapján.
+Leszűkítheti a találatok körét a keresési lekérdezés módosításával, vagy az intelligens szűrők használatával, amelyek a lap bal oldalán találhatók.
 
-    A keresés eredmények megjelenítik a felső 20 szakértelmeket, iskolát, szervezetet stb., amely leggyakrabban található meg a pályázók listáján. Az attribútumokhoz további szűrőket hozzáadva tovább szűkítheti a keresési eredményeket.
+A keresési eredmények között a keresési lekérdezésnek megfelelő különböző attribútumok jelennek meg kiemelve. Válassza ki bármely, Önt érdeklő jelöltet a profilja megtekintéséhez.
 
-1. A pályázó azonosítását követően jelölje ki az adott jelölt sorát a profilja megtekintéséhez.
+### <a name="syntax-highlights"></a>Kiemelt szintaxis 
 
-Minden felhasználó rendelkezik a pályázói profilok közös nézetével. Válassza ki a jelölt sorát a keresési eredményekben vagy egy szaktudásgyűjtőben, a profilja megtekintéséhez. A **Profil** lap megjeleníti az összes adatot, szakértelmet, gyakorlatot és képzést, amelyeket a pályázó az előmeneteli portálról frissített.
+| Operátor | Használat                                                      | Példa              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Részkarakterláncokra keres; az összes rekord visszaadására használatos | Bemenet: Mi\* <br></br> Eredmény: Az összes rekord, amely olyan mezőket tartalmaz, amely a „Mi” szótaggal kezdődik, mint például a Microsoft, Micro systems, Midtown Enterprises vagy Middleton. <br></br>Bemenet: \* <br></br> Eredmény: Az összes rekord az adatbázisban |
+| “”       | Pontos egyezés keresése                                | Bemenet: „Microsoft” <br></br> Eredmény: A „Microsoft” szót tartalmazó összes rekord                    |
+
+>[!WARNING]
+> Ne kapcsolja ki a Common Data Service-példány relevanciakeresését. Ezzel letiltja az Attract keresési élményét.
+
+Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A **Profil** lap megjeleníti az összes adatot, szakértelmet, munkatapasztalatot és tanulmányokat, amelyeket a pályázó pályázatával benyújtott a karrierportálon.
 
 - Megtekintheti a pályázó kapcsolatfelvételi adatait. Szintén szerkesztheti, illetve frissítheti az adatokat szükség szerint a **Részletes adatok szerkesztése** gombbal.
 
@@ -117,7 +126,7 @@ A keresési eredményekből vagy egy szaktudásgyűjtőből a jelöltek átvihet
 
 1. A jelölt keresése a Keresés gomb használatával, és nyissa meg a profilját. Alternatívaként nyissa meg a szaktudásgyűjtőt a **Saját szaktudásgyűjtők** lapon, keresse meg a jelöltet, majd nyissa meg a profilját.
 
-1. A jelölt profillapján válassza ki a **+ hozzáadás az álláshoz** lehetőséget a jobb felső részén. 
+1. A jelölt profillapján válassza ki a **Hozzáadás az álláshoz** lehetőséget a jobb felső részén. 
      
      Az állások listája jelenik meg, amelyhez a felvételi csapat tagjaként tartozik, akár toborzóként, akár felvételi vezetőként.
 

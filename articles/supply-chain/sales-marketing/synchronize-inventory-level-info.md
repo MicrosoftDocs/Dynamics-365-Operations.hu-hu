@@ -3,7 +3,7 @@ title: Készletszintű információk szinkronizálása a Finance and Operations 
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations készletszint-adatainak közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356783"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842556"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba 
 
@@ -38,14 +38,14 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Mi
 A következő sablon és a mögöttes feladatok, amelyek a Microsoft Dynamics 365 for Finance and Operations aktuális készletszintjeinek közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 
 **Sablon az adatintegrációban**
-- Termékkészlet (a Finance and Operations megoldásból a Field Service megoldásba)
+- Termékkészlet (a Field Service megoldásból a Fin and Ops megoldásba)
   
 **Feladat az adatintegrációs projektben**
 - Termékkészlet
 
 A következő szinkronizálási feladatok kötelezők, mielőtt a készletszintek szinkronizálása megtörténhetne:
-- Raktárak (a Finance and Operations megoldásból a Field Service megoldásba) 
-- Készletegységgel rendelkező Field Service termékek (a Finance and Operations alkalmazásból a Sales alkalmazásba) 
+- Raktárak (a Fin and Ops megoldásból a Field Service megoldásba) 
+- Készletegységgel rendelkező Field Service termékek (a Fin and Ops alkalmazásból a Sales alkalmazásba) 
 
 ## <a name="entity-set"></a>Entitás beállítása
 
@@ -80,6 +80,6 @@ Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérlé
 
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Termékkészlet (a Finance and Operations megoldásból a Field Service megoldásba): Termékkészlet
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Termékkészlet (a Fin and Op megoldásból a Field Service megoldásba): Termékkészlet
 
 [![Sablonleképezés az adatintegrátorban](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

@@ -1,26 +1,26 @@
 ---
 title: Bérlista-integráció konfigurálása a Talnet és a Dayforce közötti
 description: Ez a témakör bemutatja, hogyan kell konfigurálni az integrációt a Microsoft Dynamics 365 for Talent és a Ceridian Dayforce között úgy, hogy fel lehessen dolgozni fizetési időszakot.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304657"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898444"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talent és a Dayforce között
 
@@ -358,7 +358,10 @@ Ha a fizetést generálása alkalmazottaknak az Egyesült Államokban és Kanad�
 - Részlegek szükségesek beosztásokhoz.
 - Költséghelyek pénzügyi dimenziókként kell beállítani, és az alapértelmezett pénzügyi dimenzió karakterlánc első elemének kell lennie.
 
-### <a name="job-types"></a>Beosztástípusok
+> [!NOTE] 
+> Beállíthatja a Talent szolgáltatást úgy, hogy a Beosztásokhoz kötelező legyen beállítani Részleget. Ehhez kattintson a **Emberi erőforrások megosztott beosztásai > Beosztások > Részlegek szükségesek beosztásokhoz.** elemre. Azt ajánljuk, hogy ezt a beállítást tartassa be az integráció során.
+
+### <a name="job-types"></a>Feladattípusok
 
 Beosztástípusok használatával a hasonló feladatok kategóriákba sorolhatók. A beosztástípusok szükségesek az Egyesült Államokban és Kanadában a bérlisták feldolgozásához. Beosztástípusok többek között a teljes és részmunkaidős, illetve a munkabéres és az órabéres. A beosztástípusok a fizetéstípusokként vannak hozzárendelve a Dayforce-hoz, melyek jelzik, hogy a munkavállaló órás vagy bérezéses.
 
