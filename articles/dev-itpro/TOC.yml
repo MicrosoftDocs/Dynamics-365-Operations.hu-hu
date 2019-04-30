@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Osztálykiterjesztés módszercsomagolással és parancslánccal
         href: extensibility/method-wrapping-coc.md
-      - name: Modellbővítmények elnevezési irányelvei
+      - name: Bővítmények elnevezési irányelvei
         href: extensibility/naming-guidelines-extensions.md
       - name: Modellkorlátozások enyhítése a felülrétegzés bővítményekbe történő újrabontása érdekében
         href: extensibility/refactoring-over-layering.md
@@ -374,6 +374,28 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest-szűrés osztály- és metódusattribútumok használatával
       href: perf-test/systest-filtering.md
+    - name: Elfogadásiteszt-könyvtárak
+      href: perf-test/acceptance-test-library.md
+    - name: Navigációs fogalmak
+      href: perf-test/concepts-navigation.md
+    - name: Tesztadatmódszerek
+      href: perf-test/test-data-methods.md
+    - name: Az elfogadásiteszt-könyvtárban lévő entitások
+      href: perf-test/concepts-entities.md
+    - name: Elfogadásiteszt-könyvtár parancsai
+      href: perf-test/concepts-commands.md
+    - name: Az elfogadásiteszt-könyvtárban lévő létrehozók
+      href: perf-test/concepts-creators.md
+    - name: Az elfogadásiteszt-könyvtárban lévő lekérdezések
+      href: perf-test/concepts-queries.md
+    - name: Meghatározási osztályok
+      href: perf-test/concepts-specifications.md
+    - name: Elfogadásiteszt-könyvtár kódgenerálási varázslója
+      href: perf-test/code-generation-wizard.md
+    - name: Az elfogadásiteszt-könyvtár bevált gyakorlatai
+      href: perf-test/atl-best-practices.md
+    - name: Gyakori kérdések
+      href: perf-test/atl-faq.md
   - name: Dátum érvényessége
     href: dev-tools/date-effectivity.md
   - name: ISV-licenckezelés
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: Üzenetek
     items:
+    - name: Funkcióbuborékok
+      href: user-interface/feature-callouts.md
     - name: Csúszka és üzenetpanelek
       href: user-interface/slider-messagebox.md
     - name: API az üzenetközponthoz, az üzenetsávhoz és az üzenetadatokhoz
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Frissítések és bővítmények alkalmazása a felhőben tárolt Retail-csatorna összetevőire
       href: deployment/Update-retail-channel.md
-    - name: Felhőben tárolt Retail-csatorna összetevőinek inicializálása
+    - name: Retail Cloud Scale Unit inicializálása
       href: deployment/Initialize-Retail-Channels.md
   - name: Helyszíni telepítés
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: A legújabb kiadásra való áttelepítés folyamata
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Környezetek frissítése a 8.0-ás verzióról a 8.1-es verzióra
+    - name: Környezetek frissítése a 8.0-ás verzióról a 8.1.X/10.X-es verzióra
       href: migration-upgrade/appupdate-80-81.md
     - name: A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Kötegelt figyelmeztetések konfigurálása
+      href: sysadmin/alerts.md
+    - name: Továbbfejlesztett kötegelt képernyők
+      href: sysadmin/enhanced-forms.md
+    - name: Kötegeltfeladat-előzmények törlése
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimalizálási tanácsadó
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: Oktatási célú frissítés
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Hibakeresés és diagnosztika
+    - name: Keressen hibákat a termelési adatbázis egyik példányában
       href: database/dbmovement-scenario-debugdiag.md
+    - name: A szabványos felhasználói tesztelési (UAT) adatbázis egy példányának exportálása
+      href: database/dbmovement-scenario-exportuat.md
     - name: Az „arany konfiguráció” promóciója
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Romboló tesztelés
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: A Finance and Operations támogatási tapasztalatainak kezelése
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773802"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976012"

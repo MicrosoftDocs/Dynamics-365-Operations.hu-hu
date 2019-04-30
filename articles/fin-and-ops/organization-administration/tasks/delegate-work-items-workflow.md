@@ -3,7 +3,7 @@ title: Egy munkafolyamat munkatételeinek delegálása
 description: Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz.
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,25 +16,26 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346249"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976781"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Egy munkafolyamat munkatételeinek delegálása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz. Az eljárás segítségével beállíthatja a rendszert arra, hogy automatikusan delegálja az Ön munkaelemeit egy másik felhasználónak.
+## <a name="manually-delegate-a-work-item"></a>Munkaelem delegálátsa manuálisan
 
+Ha egyetlen munkaelemet szeretne delegálni, válassza a **Delegálás** beállítást a **Munkafolyamat** menüben, majd adja meg a delegálni kívánt felhasználót a megjegyzéssel együtt. Ez hozzárendeli a munkaelemet újra a felhasználóhoz, így végrehajthatja.
 
+## <a name="automatically-delegate-work-items"></a>Munkaelem delegálása automatikusan
 
-Ez az eljárás az USMF bemutatócéget használja.
+Ha úgy tervezi, hogy nem lesz az irodában vagy más okból nem lesz elérhető a munkaelemek feldolgozáshoz egy bizonyos ideig, automatikusan delegálhatja az új munkaelemeket más felhasználókhoz a **Felhasználói beállítások** oldal segítségével.
 
-
-## <a name="set-up-automatic-delegation"></a>Automatikus delegálás beállítása
+### <a name="set-up-automatic-delegation"></a>Automatikus delegálás beállítása
 1. Ugrás a Közös > Beállítás > Felhasználói beállítások elemre.
 2. Kattintson a Munkafolyamat fülre.
     * Győződjön meg arról, hogy a Delegálás terület ki legyen bontva.    Annak a konfigurálásához, hogy a rendszer automatikusan delegálja az Ön munkaelemeit más felhasználóknak, delegálási szabályok kell létrehoznia, amelyek megadják, hogy mikor kell bizonyos típusú munkatételeket delegálni. Delegálási szabály létrehozásához kövesse az alábbi lépéseket.  

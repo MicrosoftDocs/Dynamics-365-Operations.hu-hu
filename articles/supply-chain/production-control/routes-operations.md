@@ -3,7 +3,7 @@ title: Útvonalak és műveletek
 description: Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333346"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850668"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -59,11 +59,10 @@ Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési pa
 
 [![Útvonalhálózat](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Megjegyzések:**
-
--   Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
--   Nincs garancia arra, hogy több olyan művelet, amelynek azonos a következő művelete (az előző példában a 30-as és 40-es művelet), ténylegesen párhuzamosan fog futni. Az erőforrások rendelkezésre állása és kapacitása korlátokat szabhat a műveletek ütemezésére vonatkozóan.
--   Műveleti számként a 0 (zéró) nem használható. Ez a szám foglalt, és segítségével megadhatja, hogy az útvonal utolsó művelete nem rendelkezik következő művelettel.
+> [!NOTE]
+> -   Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
+> -   Ez nem biztosítja, hogy több olyan művelet, amelynek azonos a következő művelete (az előző példában a 30-as és 40-es művelet), ténylegesen párhuzamosan fog futni. Az erőforrások rendelkezésre állása és kapacitása korlátokat szabhat a műveletek ütemezésére vonatkozóan.
+> -   Műveleti számként a 0 (zéró) nem használható. Ez a szám foglalt, és segítségével megadhatja, hogy az útvonal utolsó művelete nem rendelkezik következő művelettel.
 
 ### <a name="parallel-operations"></a>Párhuzamos műveletek
 
@@ -122,7 +121,8 @@ Azt is megadhatja, hogy egy műveleti kapcsolat egy adott helyre érvényes. Ezz
 
 A műveleti kapcsolatok révén rendkívül rugalmasan határozhatja meg az útvonalait. Továbbá az alapértelmezett tulajdonságok meghatározásának képessége révén csökkenthető azoknak az alapadatoknak a mennyisége, amelyeket fenn kell tartania. Ez a rugalmasság azonban azt is jelenti, hogy figyelembe kell vennie azt a környezetet, amelyben módosítja a műveleti kapcsolatot.  
 
-**Megjegyzés:**? Mivel a műveleti tulajdonságok tárolása útvonalanként és műveletenként történik, az adott művelet minden előfordulásánál (például összeszerelés) azonos a beállítási idő, a futtatási idő, az erőforrás-szükséglet stb. Ezért ha egy műveletnek kétszer kell előfordulnia ugyanazon az útvonalon, de eltérő futtatási időkkel, létre kell hoznia két különböző műveletet, például Összeszerelés1 és Összeszerelés2.
+> [!NOTE]
+> Megjegyzés:? Mivel a műveleti tulajdonságok tárolása az egyes útvonalanként és műveletenként történik, az adott művelet minden előfordulásánál (például összeszerelés) azonos a beállítási idő, a futtatási idő, az erőforrás-szükséglet stb. Ezért ha egy műveletnek kétszer kell előfordulnia ugyanazon az útvonalon, de eltérő futtatási időkkel, létre kell hoznia két külön műveletet, például Összeszerelés1 és Összeszerelés2.
 
 ### <a name="modifying-product-specific-routes"></a>Termékspecifikus útvonalak módosítása
 
@@ -132,7 +132,8 @@ Az **Útvonal** lapon módosíthatja a művelet tulajdonságait, így például 
 
 Emellett manuálisan is létrehozhat egy olyan műveletet, amelye egy útvonalhoz és kiadott termékhez kapcsolódik a **Kapcsolat másolása és szerkesztése** funkció segítségével.  
 
-**Megjegyzés:** Ha új műveletet ad egy útvonalhoz az **Útvonal** oldalon, akkor létrejön egy műveleti kapcsolat csak az aktuálisan kiadott termékhez. Ezért, ha az útvonalat más kiadott termékek előállítására is használják, akkor ezeknek a kiadott termékeknek nem lesz megfelelő műveleti kapcsolata, és az útvonalat már nem lehet használni a kiadott termékek esetében.
+> [!NOTE]
+> Ha új műveletet ad egy útvonalhoz az **Útvonal** oldalon, akkor létrejön egy műveleti kapcsolat csak az aktuálisan kiadott termékhez. Ezért, ha az útvonalat más kiadott termékek előállítására is használják, akkor ezeknek a kiadott termékeknek nem lesz megfelelő műveleti kapcsolata, és az útvonalat már nem lehet használni a kiadott termékek esetében.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Műveleti kapcsolatok karbantartása útvonalanként
 
@@ -228,17 +229,32 @@ Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőfor
 -   **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
 -   **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 
+### <a name="set-up-route-groups"></a>Útvonalcsoportok beállítása
 
-<a name="additional-resources"></a>További erőforrások
---------
+Meg lehet adni az útvonalcsoportokat és az útvonal vagy feladattípus típusok beállítását a **Gyártásvezérlés > Beállítás > Útvonalak > Útvonal-csoportok** helyen. Minden Útvonal/feladattípushoz az útvonalcsoportban bejölheti vagy törölheti a következőket:
 
-[Anyagjegyzékek és receptúrák](bill-of-material-bom.md)
+- **Aktiválás** Jelölje be ezt a lehetőséget ahhoz, hogy engedélyezze a számításokat és az ütemezést a kiválasztott feladattípushoz, illetve visszajelzést kapjon a feladatütemezés futtatásakor. Ezzel a beállítással engedélyezheti a feladattípust, és válaszhatja ki a további beállításokat ahhoz a munkatípushoz. Ha az aktiválás nincs bejelölve, az a feladattípus nem lesz engedélyezve, függetlenül a többi beállítás kiválasztásától. 
+- **Feladatkezelés** Jelölje be ezt az opciót, hogy a feladattípus szerepeljen feladatkezelésben a feladatütemezés futtatásakor. 
+- **Munkaidő** Jelölje be ezt a beállítást, hogy a feladat típusának az üzemi erőforrásoknál meghatározott naptár szerinti ütemezéséhez, máskülönben a Gregorián naptár lesz használva. A munkaidő ütemezése a Gergely-naptár vagy a megadott munkanaptár révén adható meg. Ha ezt a lehetőséget választja, az ütemezés a megadott munkanaptáron alapul. Ezenkívül a feladattípus feladatának ütemezése a projekt kezdő dátumának napján éjféltől van.
+- **Kapacitás** – Jelölje be ezt az opciót, hogy a feladattípushoz lefoglalja a kapacitást a feladatütemezés futtatásakor. Ha bejelöli ezt az opciót, hogy a feladattípushoz lefoglalja a kapacitást a kiválasztott feladattípus ütemezésének futtatásakor. Ez lehetővé teszi, hogy áttekintse, hogy mely útvonalcsoportokban mely feladattípusok használják az üzemi erőforrásokat. Például egy olyan esetben, ha szárítási erőforrások szűk keresztmetszetű erőforrások, az erőforrásokról meg kell adni, hogy szűk keresztmetszetűek. A szárítási műveletek, amelyek várakozási idő feladattípusúak, szárítási erőforrásokat fognak lefoglalni. 
 
-[A termelési útvonaltervezésben használt költségkategóriák](../cost-management/cost-categories-used-production-routings.md)
+A feladattípusok mindegyikéhez először aktiválnia vagy deaktiválnia kell azt. Ha ki van kapcsolva semmilyen más beállítás (feladatkezelés, munkaidő és a kapacitás) nem lesz figyelembe véve, mivel a feladat típusa nem lesz aktív. 
 
-[Erőforrás-képességek](resource-capabilities.md)
+A feladattípusok között megtalálja az Átfedést. Átfedés lehetővé teszi, hogy a különböző feladatok, egyidőben legyenek végrehajtva. Ha a feladatok átfedésben vannak, az erőforrások használhatók, de nem foglalhatók le meghatározott feladatokhoz.
+Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás (feladatkezelés, munkaidő és a kapacitás) nem befolyásolják ezt az útvonalcsoportot. 
 
-[Az elektronikus aláírás áttekintése](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Verziók frissítésekor előfordulhat a következő hiba: **„Az ütemezési motor meghívása során CLR-hiba történt.”**. Ha ezt a hibát kapja menjen az **Útvonal-csoportok** lap és minden az útvonalon, ahol aktiválta az **Átfedést**, törölje a jelet a **Feladatkezelés**, **Munkaidő** és **Kapacitás** beállításokból. 
+
+## <a name="additional-resources"></a>További erőforrások
+
+- [Anyagjegyzékek és receptúrák](bill-of-material-bom.md)
+
+- [A termelési útvonaltervezésben használt költségkategóriák](../cost-management/cost-categories-used-production-routings.md)
+
+- [Erőforrás-képességek](resource-capabilities.md)
+
+- [Az elektronikus aláírás áttekintése](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

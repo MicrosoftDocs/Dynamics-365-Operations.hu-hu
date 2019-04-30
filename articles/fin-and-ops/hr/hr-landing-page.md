@@ -1,7 +1,7 @@
 ---
 title: Emberi erőforrások
 description: Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c8b743e667413dfc263fe640b4c6c7350e887142
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "341764"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859805"
 ---
 # <a name="human-resources"></a>Emberi erőforrások
 
@@ -45,7 +45,7 @@ Az Emberi erőforrások modullal a következő feladatok végezhetők el:
 
 Az Emberi erőforrások modulban különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek az Emberi erőforrások modul alapvető elemei. Az egyes alkalmazottak beosztásokhoz rendelhetők, amelyek feladatokhoz vannak társítva.
 
-- [Munkaerő szervezése részlegek, munkák és beosztások szerint](../../talent/departments-jobs-positions.md)
+- [Munkaerő szervezése részlegek, feladatok és beosztások szerint](../../talent/departments-jobs-positions.md)
 - [Vállalatfüggő HR-paraméterek beállítása](../../talent/set-up-company-specific-hr-parameters.md)
 - [Több jogi személyre kiterjedő HR-paraméterek beállítása](../../talent/set-up-hr-parameters-across-legal-entities.md)
 

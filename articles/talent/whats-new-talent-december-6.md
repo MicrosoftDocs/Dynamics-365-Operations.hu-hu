@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304754"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949943"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
 
@@ -135,7 +135,7 @@ A dolgozók a munkához feladat esetében frissíteni kell a következő hozzár
 
 A Nem mezőtranszformációt is frissíteni kell. Válassza ki a **fn** (függvény) leképezéstípust a nemhez, és frissítse a következő értékleképezéseket.
 
-| CDS-érték   | Finance and Operations érték | | ------------|------------------ -----------| | 75440000    | Férfi                         | | 75440001    | Nő                       | | 75440002    | Nincs                         | | 75440003    | Nem meghatározott                  |
+| Common Data Service érték   | Finance and Operations érték | | ------------|------------------ -----------| | 75440000    | Férfi                         | | 75440001    | Nő                       | | 75440002    | Nincs                         | | 75440003    | Nem meghatározott                  |
 
 A frissített leképezéseknek az alábbiak szerint kell kinézniük.
 

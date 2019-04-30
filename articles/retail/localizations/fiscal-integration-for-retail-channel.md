@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773277"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950404"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
@@ -81,12 +81,37 @@ A pénzügyi integrációs keretrendszer a hibák kezelésére a pénzügyi regi
 
 A **Kihagyás** és **Megjelölés regisztráltként** beállítások lehetővé teszik az infókódok számára, hogy a hibával kapcsolatos meghatározott információkat rögzítsenek, például a hiba okát vagy a pénzügyi regisztráció kihagyásának indoklását, vagy a tranzakció regisztráltként való megjelölését. Hibakezelési paraméterek beállításával kapcsolatos további tudnivalókat lásd: [Hibakezelési beállítások beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Opcionális pénzügyi regisztráció
+
+Pénzügyi regisztráció kötelező lehet az egyes műveletekhez, míg másoknál opcionális. Például előfordulhat, hogy a pénzügyi regisztráció normál értékesítések és visszáru esetében kötelező, de lehet, hogy a vevői letétekhez kapcsolódó műveletek pénzügyi regisztrációja nem kötelező. Ebben az esetben az eladás pénzügyi regisztrálásának elmulasztása blokkolja a további értékesítést, de a vevői letétet pénzügyi regisztrációjának elmulasztása nem akadályozza meg a további értékesítést. A kötelező és választható műveletek megkülönböztetéséhez ajánlott a különböző dokumentum szolgáltatókon keresztül kezelni azokat, és hogy külön lépéseket állítson be a pénzügyi regisztrációs folyamatban ezekhez a szolgáltatókhoz. A **Hiba esetén folytatás** paramétert engedélyezni kell minden lépéshez, amely kapcsolódik az opcionális pénzügyi regisztrációhoz. Hibakezelési paraméterek beállításával kapcsolatos további tudnivalókat lásd: [Hibakezelési beállítások beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Pénzügyi regisztráció manuális futtatása
+
+Ha egy tranzakció vagy esemény pénzügyi regisztrációja el lett halasztva egy hiba után (például akkor, ha a kezelő **Mégse** lehetőséget választotta hibakezelési párbeszédpanelen a), manuálisan újrafuttathatja a pénzügyi regisztrációt a hozzá tartozó művelet meghívásával. További részletekért lásd: [Elhalasztott pénzügyi regisztrációs manuális végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Pénzügyi regisztráció állapotának ellenőrzése
+
+A pénzügyi regisztrációkhoz tartozó állapotellenőrzési eljárás ellenőrzi az elérhetőségét egy pénzügyi eszköznek vagy szolgáltatásnak bizonyos események bekövetkezésekor. Ha a pénzügyi regisztráció jelenleg nem hajtható végre, a kezelő előre értesítést kap.
+
+A pénztár lefuttatja az állapotellenőrzést a következő események bekövetkezése esetén:
+
+- Új tranzakció megnyitása.
+- Egy felfüggesztett tranzakció visszahívása.
+- Egy értékesítési vagy visszáru-tranzakció lezárása.
+
+Ha az állapotellenőrzés sikertelen, a POS megjeleníti az állapotellenőrzés párbeszédpanelt. Ez a párbeszédpanel a következő gombokat teszi elérhetővé:
+
+- **OK** – Ez a gomb lehetővé teszi, hogy a kezelő az állapotellenőrzési hibát figyelmen kívül hagyja, és folytassa a műveletet. Kezelők csak akkor választhatják ki ezt a gombot, ha az **Állapotellenőrzési hiba kihagyásának ellenőrzése** jogosultság engedélyezve van hozzájuk.
+- **Mégse** – Ha a kezelő ezt a gombot választja , a POS érvényteleníti az utolsó művelet (például egy cikk nem adódik hozzá egy új tranzakcióhoz).
+
+> [!NOTE]
+> Az állapotellenőrzés futtatása csak akkor történik meg, ha az aktuális művelethez pénzügyi regisztráció szükséges, és a **Hiba esetén folytatás** paraméter a pénzügyi regisztráció aktuális lépéséhez le van tiltva. További részletekért lásd: [Hibakezelés beállításainak megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Pénzügyi válasz tárolása pénzügyi tranzakcióban
 
 Ha egy tranzakció vagy esemény pénzügyi regisztrációja sikeres, a pénzügyi tranzakció létrejön a csatorna-adatbázisban, és az eredeti tranzakcióhoz vagy eseményhez kapcsolódik. Hasonlóképpen ha a **Kihagyás** vagy **Megjelölés regisztráltként** lehetőség ki van választva egy sikertelen pénzügyi regisztráció esetén, a pénzügyi tranzakció ezeket az adatokat tárolja. A pénzügyi tranzakció tárolja a pénzügyi eszköz vagy szolgáltatás pénzügyi válaszát. Ha a pénzügyi regisztrációs folyamat több lépésből áll, a sikeres vagy sikertelen regisztrációt eredményező folyamat minden egyes lépéséhez létrejön egy pénzügyi tranzakció.
 
 Pénzügyi tranzakciók a Retail Headquarters szolgáltatásba kerülnek átvitelre a *P-feladat* segítségével, a kiskereskedelmi tranzakciókkal együtt. A **Pénzügyi tranzakciók** gyorslapon a **Kiskereskedelmi üzleti tranzakciók** oldalon belül megtekintheti a pénzügyi tranzakciókat, amelyek kiskereskedelmi tranzakciók kapcsolódnak.
-
 
 A pénzügyi tranzakció tárolja a következő adatokat:
 
@@ -111,10 +136,11 @@ A Retail alkalmazással kiadott Retail SDK-ban jelenleg a következő pénzügyi
 
 - [Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan](emea-ita-fpi-sample.md)
 - [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)
+- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan](emea-aut-fi-sample.md)
+- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](emea-cze-fi-sample.md)
 
 A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
 
 - [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
 - [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
 - [Ellenőrzőegység integrációs minta Svédország esetén](./retail-sdk-control-unit-sample.md)
-

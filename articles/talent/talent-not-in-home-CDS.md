@@ -1,7 +1,7 @@
 ---
-title: A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (CDS1.0)
+title: A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (Common Data Service 1.0)
 description: Ez a témakör bemutatja, mi a teendő, ha a vevő nem látja a Microsoft Dynamics 365 for Talent alkalmazást a Microsoft Dynamics 365 alkalmazások között.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
@@ -9,22 +9,22 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32ae0ab807e953bd811a557e6878b9bee79d293c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
+ms.sourcegitcommit: 45b79d1e587e03f5cde2766cdec4eaa7a2a897a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304717"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "949782"
 ---
-# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-cds10"></a>A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (CDS1.0)
+# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (Common Data Service 1.0)
 
 [!include [banner](includes/banner.md)]
 

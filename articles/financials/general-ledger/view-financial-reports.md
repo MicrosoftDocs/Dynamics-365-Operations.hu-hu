@@ -3,7 +3,7 @@ title: Pénzügyi jelentések megtekintése
 description: Ez a témakör bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics 365 for Finance and Operations rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791441"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894588"
 ---
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
@@ -46,12 +46,11 @@ A pénzügyi jelentés többszintű részletességgel rendelkezhet. A pénzügyi
 Ha az adat költségvetési adat, dönthet úgy, hogy megnyitja a költségvetési számla bejegyzéseit. A jelentés bármely szintjének bezárásához megnyomhatja az Esc billentyűt, vagy kattintson a **Bezárás** gombra (**X**) a jobb felső sarokban.
 
 ## <a name="change-report-options"></a>Jelentés beállításainak megváltoztatása
-Megváltoztathatja a jelentés dátumát, alkalmazhat attribútum és dimenzió szűrőket, vagy megváltoztathatja a költségvetés változatát az **Tény és a tervezet költségvetésének összevetése** jelentésben. A műveleti ablakban kattintson a **Jelentés beállítások** menüre, majd kövessen legalább egy lépést az alábbiak közül:
+Alkalmazhat attribútum és dimenzió szűrőket, vagy megváltoztathatja a költségvetés változatát az **Tény és a tervezet költségvetésének összevetése** jelentésben. A műveleti ablakban kattintson a **Jelentés beállítások** menüre, majd kövessen legalább egy lépést az alábbiak közül:
 
--   Az alap időszak és a jelentés alapévének megváltoztatásához válasszon ki egy alap időszakot és egy alap évet, majd kattintson az **OK** gombra.
 -   Attribútum szűrő alkalmazásához egy jelentésen válassza ki az **Egy attribútum szűrő hozzáadása** lehetőséget. Válassza ki az attribútum típusát és az attribútum értékét, majd kattintson az **OK** gombra. Ha például bejelöli a **Számla kategória** attribútumot, adja az **Értékesítési** értéket az attribútumnak. Egy attribútum szűrő eltávolításához kattintson a **Törlés** gombra.
 -   Dimenziószűrő alkalmazásához egy jelentésen válassza ki az **Egy dimenziószűrő hozzáadása** lehetőséget. Válassza ki a dimenziót, majd írja be a dimenzióazonosítót, vagy válassza ki a dimenziót a listából. Egy dimenzió szűrő eltávolításához kattintson a **Törlés** gombra.
--   Az eset módosításához egy **Tény és tervezet költségvetésének összevetése** jelentésen, válasszon ki egy új esetet, és kattintson az **OK** gombra. Ha a kiválasztott eset egy másik évhez tartozik, bizonyosodjon meg róla, hogy frissítette az alap évet. Például, ha az aktuális esetet az FY2015-höz tartozik, majd kiválaszt egy új esetet, ami az FY2016-hoz tartozik, akkor az alap évet a következőre kell változtatni: **2016**.
+-   Az eset módosításához egy **Tény és tervezet költségvetésének összevetése** jelentésen, válasszon ki egy új esetet, és kattintson az **OK** gombra. Ha a kiválasztott forgatókönyv egy másik pénzügyi évre vonatkozik, nem ad vissza eredményt. Ha például egy jelentés a 2015-ös pénzügyi évben lett generálva, és az aktuális forgatókönyv a 2015-ös pénzügyi évre vonatkozik, és az új kiválasztott forgatókönyv a 2016-os pénzügyi évre vonatkozik, nem lesznek visszaadva eredmények. Ha egy új forgatókönyv szükséges egy másik pénzügyi évhez, generáljon egy j verziót a jelentéshez a forgatókönyvhöz kapcsolódó pénzügyi évhez.
 
 Amikor rákattint az **OK** gombra, a kiválasztott beállítások lesznek alkalmazva a jelentésre. Ha úgy dönt, hogy nem szeretné alkalmazni a kiválasztott beállításokat, kattintson a **Mégse** gombra.
 

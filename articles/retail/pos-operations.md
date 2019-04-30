@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353816"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842722"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -93,7 +93,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 614 | Vevői rendelés szerkesztése | A kiválasztott rendelés visszahívása, úgy, hogy a POS módosítható. | Nincs | Nincs | Nincs | Nincs | Nincs |
 | 615 | Árajánlat szerkesztése | A kiválasztott árajánlat visszahívása, úgy, hogy a POS módosítható. | Nincs | Nincs | Nincs | Nincs | Nincs |
 | 518 | Kiadási számlák | A pénztárfiókból eseti kiadásokra kivett készpénz nyilvántartása. | Igen | Igen | Igen | Igen | Nincs |
-| 919 | Kiterjesztett bejelentkezés | Bejelentkezési jogosultság hozzárendelése vagy eltávolítása .vonalkód beolvasásával vagy kártya lehúzásával. | Igen | Igen | Igen | Nincs | Nincs |
+| 919 | Kiterjesztett bejelentkezés | Bejelentkezési jogosultság hozzárendelése vagy eltávolítása .vonalkód beolvasásával vagy kártya lehúzásával. | Igen | Igen | Igen | Igen | Nem |
 | 1201 | Váltópénzbetét | Ez a művelet lehetővé teszi, hogy a felhasználó további pénzt hozzáadása az aktuális fiók vagy a műszak. | Igen | Igen | Igen | Igen | Nincs |
 | 1218 | Perifériás eszköz zárfeloldásának kényszerítése | A rendszer ezt a műveletet segítségével zárolásának feloldása a POS-perifériák beállításait. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
 | 520 | Ajándékutalvány egyenlege | Az ajándékutalvány egyenlegének megjelenítése. | Igen | Igen | Nincs | Nincs | Nincs |

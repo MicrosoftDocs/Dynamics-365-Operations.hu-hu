@@ -3,7 +3,7 @@ title: Mi az, ami új vagy módosított
 description: Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait.
 author: josaw1
 manager: AnnBe
-ms.date: 02/07/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 262d301262189ec1ba40577e962eeee2ccff0da3
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 47b8a5354635303e8ce280d09201e7823137661f
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791568"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975779"
 ---
 # <a name="whats-new-or-changed"></a>Új vagy módosult elemek
 
@@ -53,11 +53,19 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.2</td>
+<td>10.0.80</td>
+<td>május 2019.</td>
+<td><a href="whats-new-changed-10-0-2.md">Előnézeti szolgáltatások a Dynamics 365 for Finance and Operations 10.0.2 verzióban (2019 május)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.1</td>
 <td>10.0.51</td>
 <td>április 2019.</td>
-<td><a href="whats-new-changed-10-0-1.md">Előnézeti szolgáltatások a Dynamics 365 for Finance and Operations 10.0.1 verzióban (2019 április)</a></td>
-</tr><tr>
+<td><a href="whats-new-changed-10-0-1.md">Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.1-es verziójában (2019. április)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0</td>
 <td>10.0.8</td>
@@ -152,10 +160,17 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>26-as platformfrissítés</td>
+<td>7.0.5257</td>
+<td>május 2019.</td>
+<td><a href="whats-new-platform-update-26.md">Előzetes funkciók a Dynamics 365 for Finance and Operations Platform Update 26 (2019. május) verziójában</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>25-as platformfrissítés</td>
 <td>7.0.5222</td>
 <td>április 2019.</td>
-<td><a href="whats-new-platform-25.md">Előzetes funkciók a Dynamics 365 for Finance and Operations Platform Update 25 (2019. áprilisi) verziójában</a></td>
+<td><a href="whats-new-platform-25.md">Mi új vagy mi változott a Dynamics 365 for Finance and Operations 25. platformfrissítésében (2019. április)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>24-as platformfrissítés</td>

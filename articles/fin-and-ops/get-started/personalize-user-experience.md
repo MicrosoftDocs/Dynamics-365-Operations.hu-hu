@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363476"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975851"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
 
@@ -47,6 +48,8 @@ A **Felhasználói beállítások** lap tartalmaz több rendszerszintű beállí
 - **Beállítások** – Válassza ki a Finance and Operations megnyitásakor mindig használt alapértelmezett értékeket. Az értékek között található a vállalat, a kezdőlap és az alapértelmezett megjelenítési/szerkesztési mód. (A megjelenítési/szerkesztési mód határozza meg, hogy egy oldalt zárolt vagy megnyitott a szerkesztésre, minden alkalommal, amikor megnyitja.) Ez a lap a nyelv, az időzóna és a dátum, az idő- és számformátum beállításait is lehetővé teszi. Végül ezen a lapon több vegyes beállítás található, amelyek az egyes kiadások esetében eltérők lehetnek.
 - **Fiók:** – Itt adhatja meg a felhasználónevet és más fiókhoz kapcsolódó beállításokat.
 - **Munkafolyamat** – Válassza ki a munkafolyamattal kapcsolatos beállításokat.
+
+A felhasználói beállítások módosításán túl, megtekintheti és törlheti is a használati adatokat és személyreszabásokat **Használati adatok** gombbal. A program menti a felhasználói beállítások nagy részét, így a rendszer használata a jövőben kényelmesebb lesz. A **Személyre szabás** lap segítségével tekintheti meg és kezelheti a személyes módosításokat, amelyeket végrehajtott a lapokon a rendszerben. Funkcióbuborékok – előugró ablakok, amelyek új funkciókat vezetnek be a termékben (26-os platform frissítéstől érhető el) is visszaállíthatók erről a lapról, hogy újra figyelmeztetést kapjon a korábban már használt funkciókról.  
 
 ## <a name="implicit-personalizations"></a>Implicit testreszabás
 
@@ -160,7 +163,7 @@ Rendszergazdai jogokkal rendelkező felhasználók más felhasználók személye
 
 - **Alkalmazás** – Importálhat vagy kiválaszthat egy személyre szabási beállítást egy vagy több felhasználó számára. A személyre szabás alkalmazásához egy vagy több felhasználóra, először jelölje ki a szerepkört és az adott szerepkörrel rendelkező felhasználókat. Válasszon egy meglévő személyre szabást vagy importáljon egy személyre szabási fájlt a kiválasztott felhasználókra történő alkalmazáshoz. A rendszer ellenőrzi a személyre szabást, és alkalmazza az összes kijelölt felhasználóra, amikor azok legközelebb megnyitják a kijelölt lapot.
 - **Törlés** – A lap vagy a munkaterület összes személyre szabása egy vagy több felhasználó esetében is törölhető. Először válasszon egy oldalt vagy munkaterületet, hogy megtekinthesse azon felhasználók listáját, akik személyre szabták ezt az oldalt. Ezután válassza ki azokat a felhasználókat, akiknek az adott oldalhoz vagy munkaterülethez tartozó személyre szabását törölni kell, majd válassza a **Törlés** elemet. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
-- **Kezelés felhasználónként** – Válasszon egy felhasználót, hogy megtekinthesse az általa személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a kiválasztott felhasználó számára.
+- **Kezelés felhasználónként** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó általa személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a kiválasztott felhasználó számára. Ezenkívül visszaállíthatja a funkcióbuborékokat a kijelölt felhasználóhoz amelynek hatására az összes korábban figyelmen kívül hagyott előugró ablak , amelyek új funkciókat mutattak be ismét megjelennek, amikor a felhasználó ezekkel a funkciókkal találkozik.   
 - **Rendszer:** – Itt tudja ideiglenesen letiltani a rendszerben szereplő személyes beállításokat az összes felhasználó számára. Ebben az esetben a személyre szabott beállítások törlődnek. Minden lap minden felhasználó számára az alapértelmezett értékére áll. Amennyiben később újra engedélyezi a személyes beállításokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. Nem lehet visszaállítani a törölt személyes beállításokat. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
 
 ## <a name="personalization-of-inventory-dimensions"></a>A készletdimenziók személyre szabása

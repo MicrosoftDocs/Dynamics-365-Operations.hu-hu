@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836348"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992883"
 ---
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
@@ -41,45 +41,114 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 és 26-as platformfrissítés
+
+> [!IMPORTANT]
+> A Dynamics 365 for Finance and Operations 10.0.2 26-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
+
+### <a name="legacy-default-action-behavior"></a>Örökölt alapértelmezett művelet viselkedése
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az rácsokban végzett alapértelmezett műveletek örökölt viselkedése azt eredményezheti, hogy az egyik, alapértelmezett művelet hivatkozását tartalmazó, rácsoszlopok után szereplő váratlan oszlop átrendezése történik személyre szabáson keresztül. Az új beragadó alapértelmezett művelet funkció ennek javítására használatos. További részletekért lásd: [Alapértelmezett beragadó műveletek rácsokban](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Felváltotta másik szolgáltatás?**   | A 21-es platformfrissítéstől kezdődően bevezettük az „alapértelmezett beragadó műveletek” funkciót. A funkciót az **Ügyfélteljesítmény beállításai** oldalon lehet engedélyezni. |
+| **Érintett területek**         | Rácsok a webes ügyfélnél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2020. áprilistól kezdődően az alapértelmezett beragadó műveletek lesznek az alapértelmezett műveletek, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Örökölt „egyike a következőknek” szűrési élmény
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az „egyike a következőknek” szűrési gyakorlatot a 22-es platformfrissítésben átterveztük, mivel a jövőben ez lesz az egyetlen „egyike a következőknek” szűrési gyakorlat. |
+| **Felváltotta másik szolgáltatás?**   | A 22-es platformfrissítéstől kezdődően a továbbfejlesztett „egyike a következőknek” szűrési gyakorlat elérhetővé vált az **Ügyfélteljesítmény beállításai** oldalon. További információért lásd: [Optimalizált „egyike a következőknek” szűrési élmény](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2020. áprilistól kezdődően a továbbfejlesztett „egyike a következőknek” gyakorlat lesz az alapértelmezett viselkedés, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>A belső osztályok történő származtatás elavult.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
+| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti.|
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>A belső módszerek felülbírálása elavult
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
+| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a figyelmeztetése fordítási hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Paraméter, amellyel engedélyezhetők a több projektszerződéses finanszírozási forrással rendelkező értékesítési rendelések
+Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a projekszerződéseknél több finanszírozási forrás is engedélyezve van a **Projektvezetési paraméterek** beállítás **Több finanszírozási forrással rendelkező projekthez tartozó értékesítési rendelések engedélyezése** értékével. Alapértelmezés szerint ez a paraméter nincs engedélyezve. 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A funkciót a rendszer mindig engedélyezi a paraméter eltávolítása után. |
+| **Felváltotta másik szolgáltatás?**   | Szám A funkció, amely támogatja a projektalapú értékesítési rendelkéseket, amelyek több finanszírozási forrással rendelkeznek, mindig engedélyezve lesz.   |
+| **Érintett területek**         |A **Több finanszírozási forrással rendelkező projektekhez tartozó értékesítési rendelések engedélyezése** paraméter el lesz távolítva. Paraméter eltávolításakor a következő metódusok módosulnak: **ctrlSalesOrderTable** metódus a **ProjStatusType** osztályban, az **ellenőrzés** metódus a **ProjId** mezőre vonatkozóan, és a **futtatás** metódus a **SalescreateOrder** képernyőn. A kövektező metódusok elavulnak a paraméter eltávolításakor: **IsSalesOrderAllowedForMultipleFundingSources** a **ProjTable** táblafájlban, a **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** metódus a **ProjTable** táblafájlban, az **AllowSalesOrdersForMultipleFundingSources** adatmező a **ProjParameters** képernyőn és a **ProjParameterEntity** fájlokban, az **IsAssociatedToMultipleFundingSourcesContract** privát metódus a**ProjTable** táblafájlban. |
+| **Telepítési beállítás**              | Összes  |
+| **Állapot**                         | Az elavulást a 2020. áprilisi kiadási hullámra tervezzük. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Örökölt munkafolyamat-jelentések nyomon követéshez és példányállapothoz
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A nyomon követéshez és példányállapothoz használt örökölt munkafolyamat-jelentések elavulnak, mivel már nem hivatkoznak rájuk a navigációból. A jelentések nevei a következők: WorkflowWorkflowInstanceByStatusReport és WorkflowWorkflowTrackingReport. |
+| **Felváltotta másik szolgáltatás?**   | Ehelyett a munkafolyamat-előzmények képernyő használható. |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: A funkció eltávolításának célként meghatározott időkerete 2020 áprilisa. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 és 25-as platformfrissítés
 
 > [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat az [Szokásos és első kiadási szolgáltatásfrissítések](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
+> A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Elavult API-k és a lehetséges kompatibilitástörlő változások
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>A belső osztályok történő származtatás elavult.
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtti kiadásokban létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdődően a fordító megjelenít egy figyelmeztető üzenetet he ezt kísérli meg.|
-| **Felváltotta másik szolgáltatás?**   | Egy közelgő platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy ha a 25-ös platformfrissítést vagy újabb verziót futtat ez telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
-| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
+| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti.|
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elevult – Egy közelgő platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>A belső módszerek felülbírálása elavult
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtti kiadásokban lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdődően a fordító megjelenít egy figyelmeztető üzenetet he ezt kísérli meg.|
-| **Felváltotta másik szolgáltatás?**   | Egy közelgő platformfrissítésben a fordítói figyelmeztetés hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy ha a 25-ös platformfrissítést vagy újabb verziót futtat ez telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
-| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
+| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
+| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a figyelmeztetése fordítási hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elevult – Egy közelgő platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 és 23-as platformfrissítés
 
-### <a name="print-to-screen-functionality"></a>Nyomtatás a képernyőre funkció
-Az ügyfelek használhatják a **importálási** művelet amely a Jelentésmegtekintő vezérlőben érhető el a Finance and Operations alkalmazások által létrehozott dokumentumok letöltéséhez Ez a HTML-alapú megjelenítése a jelentésnek la dokumentum nem oldalakra bontott előnézetét kínálja a dokumentumnak
+### <a name="sql-server-reporting-services-reportviewer-control"></a>Az SQL Server Reporting Services ReportViewer vezérlője
+Az ügyfelek használhatják az **Exportálás** művelet, amelyet a beágyazott SQL Server Reporting Services (SSRS) Report Viewer vezérlője biztosít a Finance and Operations alkalmazások által létrehozott dokumentumok letöltése céljából. Ez a HTML-alapú megjelenítése a jelentésnek la dokumentum nem oldalakra bontott előnézetét kínálja a dokumentumnak
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A HTML-alapú előnézeti tapasztalat nem oldalakra bontott jellege **nem** biztosítja a Finance and Operations rendszerrel készített végső dokumentumok hitelességét A PDF alkalmazásával, mint a szokásos üzleti műveletek formátuma, jelentősen egyszerűsíthetők az alkalmazás jelentéseivel kapcsolatos felhasználói beállítások, és egyszerűbbé tehettük a dokumentumok létrehozásának folyamatát. |
+| **Elavulás/eltávolítás oka** | A HTML-alapú előnézeti tapasztalat nem oldalakra bontott jellege **nem** biztosítja a Finance and Operations rendszerrel készített végső dokumentumok hitelességét Amennyiben teljes mértékben elfogadják, hogy a PDF az üzleti dokumentumok szabványos formátuma, a felhasználók élvezhetik a modern megtekintési élmény által nyújtott előnyöket, amelyek az alkalmazásjelentések létrehozásakor megnövelt teljesítményt nyújtanak. |
 | **Felváltotta másik szolgáltatás?**   | Innentől a PDF-dokumentum lesz az alapértelmezett formátum a Finance and Operations jelentéseihez.   |
 | **Érintett területek**         | Ez a módosítás **nem** befolyásolja, azon ügyfélszituációkat ahol jelentések elektronikus úton elosztottak vagy közvetlenül nyomtatókra küldik azokat.    |
 | **Telepítési beállítás**              | Összes  |
-| **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. A funkció, amellyel automatikusan letölthetők a pályázati jelentések a böngészőbe PDF-dokumentumokként, a tervek szerint a 2019. májusi platformfrissítésben lesz elérhető. <br><br>**Fontos:** Azon meglévő ügyfelek számára akik a nyomtatása képernyőre funkciót használják, javasolt, hogy értesítsék a [Támogatást](../lifecycle-services/lcs-support.md), mielőtt a 26-os platformfrissítésre frissítenének. |
+| **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. A funkció, amellyel automatikusan megtekinthető a pályázati jelentések előnézete egy beágyazott PDF-megtekintő segítségével, a tervek szerint a 2019. májusi platformfrissítésben lesz elérhető. |
 
 ### <a name="client-kpi-controls"></a>Ügyfél KPI-vezérlők
 A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio rendszerben egy fejlesztő által és a végfelhasználó tovább testreszabhatja azokat.
@@ -102,7 +171,7 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 | **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva.  |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök. |
 | **Telepítési beállítás**              | Mind. |
-| **Állapot**                         | Elavult - A figyelmeztetés fordítási hiba lesz a jövőben. Jelenleg a 30-as platformfrissítés van megcélozva. |
+| **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba lesz a jövőben. Jelenleg a 30-as platformfrissítés van megcélozva. |
 
 #### <a name="complete-list"></a>Teljes lista
 Az elavulás alatt álló API-k teljes listáját lásd: [Módszerek és metaadat-elemek elavulása](deprecation-deletion-apis.md).
@@ -110,7 +179,7 @@ Az elavulás alatt álló API-k teljes listáját lásd: [Módszerek és metaada
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 és 20-as platformfrissítés
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Kötegelt átviteli szabályok analitikus naplószámla bejegyzéseihez
-A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.  A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség. 
+A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.  A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség. További információért lásd: [Főkönyvi paraméterek – Kötegelt átmozgatás szabályai](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blogot.
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásb
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 és platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
-2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -277,7 +346,7 @@ A felhasználók a kormányzati portálról tölthetik le.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
-2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy k�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció.       |
-| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app) című részben talál. |
+| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](../../supply-chain/warehousing/install-configure-warehousing-app.md) című részben talál. |
 | **Érintett területek**         | Raktárkezelés, szállításkezelés     |
 | **Telepítési beállítás**              | A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.               |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.   |
@@ -687,6 +756,17 @@ Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki 
 | **Felváltotta másik szolgáltatás?**   | Ezt a szolgáltatást felváltotta az Adatimportálási és -exportálási keretrendszer, amely támogatja az ismétlődő tömeges importálást/exportálást. AxBC esetén a tényleges táblák használatát javasoljuk. |
 | **Érintett területek**         | AxD-k, AxBC-k és AIF   |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.   |
+
+### <a name="billing-code-rate-scripts"></a>Számlázási kód díjalap parancsfájljai
+
+Számlázási parancsfájlok számlázási kódokhoz tartozó számlázási díjak kiszámításához használatosak. Ezekhez a parancsfájlokhoz egyéni fejlesztés volt szükséges C# vagy Visual Basic programozási nyelvben. A Dynamics AX aktuális verziójában a **Számlázási kód díjalap parancsfájljai** nem támogatottak.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az egyéni C# vagy Visual Basic parancsfájlok támogatása nem elérhető a Dynamics AX 7.0-s verzióban. |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                                                      |
+| **Érintett területek**         | Állami szektor, kinnlevőségek                                    |
+| **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>Anyagjegyzékek Anyagjegyzék-verziók nélkül
 
@@ -1068,7 +1148,7 @@ A Termékszerkesztő használatával korábban értékesítési rendelésekből,
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott. Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.  |
-| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Érintett területek**         | Termékinformációk kezelése, Értékesítés és marketing  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.      |
 

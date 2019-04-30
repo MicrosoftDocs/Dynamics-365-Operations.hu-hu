@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773327"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898977"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának beállítása
 
@@ -60,7 +60,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 2. Töltse fel a konfigurációkat a pénzügyi csatlakozók és a pénzügyi bizonylatszolgáltatók számára.
 
     A pénzügyi bizonylatszolgáltató pénzügyi bizonylatokat generálásáért, amelyek megfelelnek a pénztárban regisztrált pénzügyi tranzakcióknak és eseményeknek, olyan formátumban, amely felhasználható az interakcióhoz a pénzügyi eszközzel vagy szolgáltatással. Például egy pénzügyi bizonylatszolgáltató létrehozhat egy pénzügyi nyugtát XML-formátumban.
-    
+
     A pénzügyi csatlakozó felelős a kommunikációért a pénzügyi eszközzel vagy szolgáltatással. Például egy pénzügyi csatlakozó elküldhet egy XML-formátumban létrehozott pénzügyi nyugtát, amelyet egy pénzügyi dokumentumszolgáltató hozott létre egy pénzügyi nyomtatónak. Pénzügyi integráció összetevőinek kapcsolatos további tudnivalókat lásd: [Pénzügyi regisztráció folyamata és pénzügyi integrációs minták pénzügyi eszközökhöz](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. A **Pénzügyi összekötők** oldalon (**Kiskereskedelem \> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi összekötők**) töltsön fel egy XML-konfigurációt minden eszközhöz vagy szolgáltatáshoz, amelyet pénzügyi integrációs célokra tervez használni.
@@ -185,8 +185,12 @@ A hibakezelési beállításokat, amelyek elérhetők a pénzügyi integrációb
 
     - **Kihagyás engedélyezése** – Ez a paraméter engedélyezi a **Kihagyás** lehetőséget a hibakezelés párbeszédpanelen.
     - **Regisztráltnak megjelölés engedélyezése** – Ez a paraméter bekapcsolja a **Megjelölése a regisztráltként** lehetőséget a hibakeresés párbeszédablakában.
+    - **Hiba esetén folytatás** – Ha ez a paraméter engedélyezve van, a pénzügyi regisztrációs folyamat folytatódhat a pénztárgépen, Ha egy tranzakciós esemény pénzügyi regisztrációja sikertelen. Ellenkező esetben a következő esemény vagy tranzakció pénzügyi regisztrációjának futtatásához, a kezelőnek kell újra kell próbálnia a sikertelen pénzügyi regisztrációt, ki kell hagynia vagy meg kell jelölnie a tranzakciót vagy esemény regisztráltként. További tudnivalókért lásd: [Opcionális pénzügyi regisztráció](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. A **Kihagyás** és **Megjelölés regisztráltként** lehetőségekhez hibakezelés párbeszédpanelen szükséges **Kihagyás vagy regisztráltként megjelölés engedélyezése** engedély. Tehát az **Engedélycsoportok** lapon (**Kiskereskedelem \> Alkalmazottak \> Engedélycsoportok**) kapcsolja be a **Kihagyás vagy regisztráltként megjelölés engedélyezése** lehetőséget.
+    > [!NOTE]
+    > Ha a **Hiba esetén folytatás** paraméter engedélyezve van, a **Kihagyása engedélyezése** és **Regisztráltnak megjelölés engedélyezése** paraméterek automatikusan le lesznek tiltva.
+
+2. A **Kihagyás** és **Megjelölés regisztráltként** lehetőségekhez hibakezelés párbeszédpanelen szükséges **Regisztráció kihagyásának vagy regisztráltként megjelölés engedélyezése** engedély. Tehát az **Engedélycsoportok** lapon (**Kiskereskedelem \> Alkalmazottak \> Engedélycsoportok**) kapcsolja be a **Regisztráció kihagyása vagy regisztráltként megjelölés engedélyezése** lehetőséget.
 3. A **Kihagyás** és **Megjelölése a regisztráltként** beállítások lehetővé teszik a kezelőknek, hogy további információkat adjanak meg, ha a pénzügyi regisztráció meghiúsul. A funkció elérhetővé tételéhez, meg kell adnia a **Kihagyás** és **Megjelölése a regisztráltként** infókódokat a pénzügyi csatlakozócsoportban. A kezelők által megadott információk infókód-tranzakcióként lesznek mentve, amely a pénzügyi tranzakcióhoz van kapcsolva. Infókódokkal kapcsolatos további tudnivalókat lásd: [Infókódok és infókódcsoportok](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ A hibakezelési beállításokat, amelyek elérhetők a pénzügyi integrációb
     > - **Pénzügyi dokumentum** – Kötelező dokumentum, amelyet sikeresen kell regisztrálni (például egy pénzügyi nyugta).
     > - **Nem pénzügyi dokumentum** – a tranzakció vagy esemény kiegészítő dokumentuma (például ajándékkártya-bizonylat).
 
+4. Ha az operátornak képesnek kell lennie az aktuális művelet folytatására (például tranzakció létrehozása vagy véglegesítése) az állapotellenőrzési hiba után, engedélyezze a **Állapotellenőrzési hiba kihagyásának engedélyezése** engedélyt az **Engedélycsoportok** lapon (**Kiskereskedelmi \> Alkalmazottak \> Engedélycsoportok**). Az állapotellenőrzési eljárással kapcsolatos további tudnivalókat lásd: [Pénzügyi regisztráció állapotának ellenőrzése](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Pénzügyi X / Z-jelentések beállítása a pénztárból
 
 Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárból új gombokat kell hozzáadni a pénztár elrendezéséhez.
@@ -211,3 +217,12 @@ Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárbó
     3. Adja hozzá az új gombot, és és állítsa a **Pénzügyi Z nyomtatása** gombtulajdonságot
     4. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosítások átviteléhez a csatorna-adatbázisba.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Elhalasztott pénzügyi regisztrációs manuális végrehajtásának engedélyezése.
+
+Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezéséhez, egy új gombot kell hozzáadnia a pénztár elrendezéséhez.
+
+- A **Gombrácsok** oldalon hajtsa végre az [Egyéni műveleti gombok hozzáadása a pénztár elrendezéséhez a Kiskereskedelmi központban](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
+
+    1. A frissítendő elrendezés kiválasztása.
+    2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi regisztrációs folyamat befejezése** gombtulajdonságot.
+    3. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosításai átviteléhez a csatorna-adatbázisba.

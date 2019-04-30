@@ -3,14 +3,14 @@ title: Elektronikus jelentés (EJ)
 description: Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310806"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902960"
 ---
 # <a name="electronic-reporting-er"></a>Elektronikus jelentés (EJ)
 
@@ -163,21 +163,33 @@ Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szer
 
 #### <a name="repository"></a>Tárház
 
-Egy ER tárház ER konfigurációkat tárol. Négyféle ER-adattár támogatott jelenleg: **Üzemi erőforrások**, **LCS-projekt (LCS)**, **Fájlrendszer**, **Jogszabályban előírt konfigurációs szolgáltatás (RCS)**.
+Egy ER tárház ER konfigurációkat tárol. A következő típusú ER tárházak támogatottak jelenleg: 
 
-Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket a Finance and Operations megoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató,. Ezek a konfigurációk importálhatóak a jelenlegi Finance and Operations munkamenetbe és felhasználhatóak elektronikus jelentés céljából. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz.
+- LCS megosztott tár
+- LCS-projekt
+- Fájlrendszer
+- Jogszabályban előírt konfigurációs szolgáltatások (RCS)
+- Üzemi erőforrások
+
+
+Egy **LCS megosztott könyvtár** tár a megosztott eszköztárbó elérést biztosít a konfigurációk listájához a közös eszköz könyvtárban a Lifecycle Services (LCS) szolgáltatásban. Az ilyen típusú ER tárházat csak a Microsoft-szolgáltatóhoz lehet regisztrálni. Az LCS közös eszköz tárból importálhatja a legújabb verzióit az ER konfigurációknak az aktuális Finance and Operations példányba.
 
 Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi Finance and Operations példányból egy adott **LCS-projekt** tárházba. Importálhat továbbá konfigurációkat egy **LCS-projekt** tárházából a Finance and Operations jelenlegi példányába.
 
-A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a Finance and Operations jelenlegi példányába. Vegye figyelembe, hogy ez a tárhelytípus elérhető a következő Dynamics 365 for Finance and Operations-környezetekben:
-- fejlesztés céljából telepített felhőbeli környezetek (amelyek a csatolt csomagok tesztmodelljeit tartalmazzák)
-- helyileg telepített környezetek (helyszíni vagy helyi üzleti adatok telepítése (LBD))
+A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a Finance and Operations jelenlegi példányába. 
 
-Keresse fel a [Elektronikus jelentéskészítési (ER) konfigurációk importálása](./electronic-reporting-import-ger-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+Vegye figyelembe, hogy ez a tárhelytípus elérhető a következő Dynamics 365 for Finance and Operations-környezetekben:
 
-Az **RCS példány** adattár hozzáférést biztosít a meghatározott RCS-példány konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi Finance and Operations példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak.
+- Fejlesztés céljából telepített felhőbeli környezetek (amelyek a csatolt csomagok tesztmodelljeit tartalmazzák)
+- Helyben telepített környezetek (helyszíni)
 
-Keresse fel az [Elektronikus jelentéskészítési (ER) konfigurációk importálása Jogszabályban előírt konfigurációs szolgáltatásból (RCS)](./rcs-download-configurations.md) oldalt az ezzel kapcsolatos további részletekért.
+További információ: [Elektronikus jelentéskészítési (ER) konfigurációk importálása](./electronic-reporting-import-ger-configurations.md).
+
+Az **RCS példány** adattár hozzáférést biztosít a meghatározott RCS-példány konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi Finance and Operations példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak fel.
+
+További információért lásd: [Elektronikus jelentéskészítési (ER) konfigurációk importálása a jogszabályban előírt konfigurációs szolgáltatásból (RCS)](./rcs-download-configurations.md)
+
+Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket kezdetben a a Finance and Operations megoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató. Ezek a konfigurációk importálhatóak a jelenlegi Finance and Operations munkamenetbe és felhasználhatóak elektronikus jelentés céljából vagy egyszerű feladatútmutatók lejátszásához. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz. Vegye figyelembe, hogy a Microsoft által bizosított legfrissebb ER konfigurációkat az LCS megosztott eszköztárból kell importálni a megfelelő ER tárház használatával.
 
 A szükséges **LCS-projekt**, **Fájlrendszer**, és **Jogszabályban előírt konfigurációs szolgáltatás** adattárakat külön-külön is lehet regisztrálni az aktuális Finance and Operations példány minden egyes konfigurációs szolgáltatójára. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 
@@ -377,6 +389,5 @@ Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a szárm
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[H honosítási követelményeknek – Elektronikus jelentési konfiguráció létrehozása](electronic-reporting-configuration.md)
-
-[Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [H honosítási követelményeknek – Elektronikus jelentési konfiguráció létrehozása](electronic-reporting-configuration.md)
+- [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)

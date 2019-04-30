@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782893"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949805"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 5.)
 
@@ -35,7 +35,7 @@ Ez a témakör a Talent új vagy módosított szolgáltatásait írja le.
 
 ### <a name="extending-option-sets-in-attract"></a>Beállításkészletek kiterjesztése az Attract alkalmazásban
 
-Az Attract alkalmazásban, több mezők is van, amely beállításkészlet a Common Data Service (CD) szolgáltatásban. Új képességek lettek bevezetve a beállításkészletek kiterjesztésére, kezdve az **Elutasítás** okkód mezővel a **Foglalkoztatási típusa** mezővel, és **Szolgálati idő típusa** mezővel.
+Az Attract alkalmazásban, több mezők is van, amely beállításkészlet a Common Data Service szolgáltatásban. Új képességek lettek bevezetve a beállításkészletek kiterjesztésére, kezdve az **Elutasítás** okkód mezővel a **Foglalkoztatási típusa** mezővel, és **Szolgálati idő típusa** mezővel.
 
 > [!IMPORTANT]
 > Az álláshirdetés a LinkedIn funkcióhoz a **Foglalkoztatási típusa** és **Szolgálati idő típusa** mezők szükségesek az **Állás részletei** lapon. Ezen a mezők az alapértelmezett értékekeit a LinkedIn támogatja és meg lesznek jelenítve az állás feladásakor. Ha állásokat tesz közzé a LinkedIn-en, és ezen a mezők a meglévő beállításkészlet-értékeit módosítja, az állás továbbra is közzé lesz téve, de LinkedIn nem jeleníti meg az egyéni **Foglalkoztatási típusa** és **Szolgálati idő típusa** értékeket.
@@ -70,8 +70,8 @@ Ezzel a módosítással a meglévő beosztások módosításának kérelme sorá
 ### <a name="other-miscellaneous-bug-fixes"></a>Egyéb vegyes hibajavítások
 További kisebb hibajavítások ebben a verzióban.
 
-### <a name="upgrade-to-cds-for-apps"></a>A CDS for Apps-re frissítés
-CDS for Apps-re frissítés határideje gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Fissítés a Common Data Service for Apps-re](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
+A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="coming-soon"></a>Hamarosan
 

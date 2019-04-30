@@ -3,7 +3,7 @@ title: Készletátvitelek és -kiigazítások szinkronizálása a Field Service 
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations készletkorrekcióinak és átviteleinek közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308368"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842415"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Készletátvitelek és szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
 
@@ -38,8 +38,8 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Mi
 A következő sablon és a mögöttes feladatok, amelyek a Microsoft Dynamics 365 for Field Service készletkorrekcióinak és átviteleinek közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
 
 **Sablonok az adatintegrációban**
-- Készletkiigazítás (a Field Service megoldásból a Finance and Operations megoldásba)
-- Készletátvitelek (a Field Service megoldásból a Finance and Operations megoldásba)
+- Készletkiigazítás (a Field Service megoldásból a Fin and Ops megoldásba)
+- Készletátvitelek (a Field Service megoldásból a Fin and Ops megoldásba)
 
 **Feladatok az adatintegrációs projektekben:**
 - Készletkiigazítás
@@ -71,11 +71,11 @@ Az integráció által generált integrációs készletnaplókat automatikusan k
 
 Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>Készletkiigazítás (a Field Service megoldásból a Finance and Operations megoldásba): Készletkiigazítás
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>Készletkiigazítás (a Field Service megoldásból a Fin and Ops megoldásba): Készletkiigazítás
 
 [![Sablonleképezés az adatintegrátorban](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Készletátvitel (a Field Service megoldásból a Finance and Operations megoldásba): Készletátvitel
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>Készletátvitel (a Field Service megoldásból a Fin and Ops megoldásba): Készletátvitel
 
 [![Sablonleképezés az adatintegrátorban](./media/FSTrans1.png)](./media/FSTrans1.png)
