@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> <span data-ttu-id="c1557-101">Ez a funkció jelenleg csak meghívóval érhető el.</span><span class="sxs-lookup"><span data-stu-id="c1557-101">This feature is currently available by invitation only.</span></span> <span data-ttu-id="c1557-102">Ha részvételre szeretné jelölni a szervezetét, töltse ki [ezt a felmérést](https://aka.ms/ax2012upgrade).</span><span class="sxs-lookup"><span data-stu-id="c1557-102">To nominate your organization to participate, please complete [this survey](https://aka.ms/ax2012upgrade).</span></span> 
