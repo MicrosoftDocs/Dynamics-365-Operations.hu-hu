@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a925d16239ec78b09403a0c0db1346e35b7eee20
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: b1a8d153ff3b245af9e2d705532bfc0d19a63214
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1514669"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
@@ -41,7 +41,7 @@ A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után 
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 Kibocsátási megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 

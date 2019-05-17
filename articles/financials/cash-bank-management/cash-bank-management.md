@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: b09396c43864ae0797a737d84f981922bab6bbf5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403308"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1508579"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelési kezdőlap
 
@@ -86,7 +86,7 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 Kibocsátási megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 
