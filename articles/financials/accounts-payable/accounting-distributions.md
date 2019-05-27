@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3ba6a581efe8353ccb9e02606db58d18550d71af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "320466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559480"
 ---
 # <a name="accounting-distributions"></a>Könyvelési felosztások
 
@@ -52,7 +52,7 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
     -   **Helyes** gomb jelenik meg, és engedélyezve van a dokumentumoknak, amelyeken elvégezhetők javítások. A **Megfelelő** új felosztásokat hoz létre. Először felosztások jönnek létre, amelyek megfordítják az eredeti felosztásokat. Ezek a felosztások nem módosíthatók. Ezután létrejönnek az új, megfelelő könyvelési felosztások. Ezeknek a felosztások módosíthatóak, ha az eredeti felosztások módosíthatók.
     -   A**Projektadatok** gomb használható kiterjesztésként, amikor a projekt egy sor kapcsolódik. Projekt könyvelési felosztása segítségével módosíthatja a részleteket, például a finanszírozási forrás és a sortulajdonság.
     -   Az aktuális dokumentum számviteli állapotát itt tekintheti meg: **Hivatkozás**. Az állapot a teljes dokumentumra vonatkozik, és jelzi, hogy a dokumentum folyamatban van vagy befejeződött-e.
--   ** Felosztások megtekintése** – A bizonylat összes sorához és a pénzösszegekhez tartozó könyvelési felosztás megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
+-   **Felosztások megtekintése** – A bizonylat összes sorához és a pénzösszegekhez tartozó könyvelési felosztás megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
 
 
 További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).

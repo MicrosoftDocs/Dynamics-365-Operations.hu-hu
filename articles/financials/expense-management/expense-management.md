@@ -1,9 +1,9 @@
 ---
 title: Költséggazdálkodás
-description: A Költséggazdálkodás modulban olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára.
+description: Ez a témakör a Költségkezeléssel kapcsolatos általános tudnivalókról szól, valamint további erőforrásokra mutató hivatkozásokat tartalmaz. A Költséggazdálkodás modul használatával olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,41 +18,44 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403214"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538609"
 ---
 # <a name="expense-management"></a>Költséggazdálkodás
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-A Költséggazdálkodás modulban olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára. Meghatározhatja a kiadásokra vonatkozó szabályokat és automatizálhatja az utazási költségtérítés elszámolását. 
+A Költséggazdálkodás modul használatával olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára. Meghatározhatja a kiadásokra vonatkozó szabályokat és automatizálhatja az utazási költségtérítés elszámolását.
 
-[Költséggazdálkodás tervezése](plan-expense-management.md) 
+A részleteket lásd: [Költségkezelés konfigurálása](plan-expense-management.md).
 
-### <a name="additional-resources"></a>További erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
-#### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
+### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 Kibocsátási megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+A tervezett új funkciók megtekintéséhez lépjen a [Microsoft Dynamics 365 kibocsátási megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára.
 
-#### <a name="blogs"></a>Blogok
+#### <a name="expense-report-entry"></a>Költségjelentés bejegyzése
+
+A költségjelentés bejegyzését újratervezték, hogy leegyszerűsítse az élményt, és csökkentse a költségjelentések kitöltéséhez szükséges időt. Ezt a funkciót a Funkciókezelés részben be lehet kapcsolni. Hozzáadhat egy új beállítási lapot a költségmező láthatóságának konfigurálásához, és megadhatja, hogy milyen adatok kötelezők, választhatók vagy nem elérhetők a költségjelentés bevitele során. Ha ez a funkció be van kapcsolva, rendelkezésre áll egy új költséggel kapcsolatos munkaterület. Ez a munkaterület lecseréli az előző költséggel kapcsolatos munkaterületet, és a továbbfejlesztett beviteli élmény céloldala.
+
+A részleteket lásd: [Költségjelentések újragondolva](ExpenseWorkspaceNew.md).
+
+### <a name="blogs"></a>Blogok
 
 A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
 
-A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről. 
+A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
 
-#### <a name="task-guides"></a>Feladat-útmutatók
-Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.
+### <a name="task-guides"></a>Feladat-útmutatók
 
-#### <a name="videos"></a>Videók
+További súgó áll rendelkezésére feladat útmutatókon belül a Microsoft Dynamics 365 for Finance and Operations rendszerben. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombjára.
+
+### <a name="videos"></a>Videók
 
 Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
-
-
-
-
-

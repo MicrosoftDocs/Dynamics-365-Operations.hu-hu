@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561810"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -119,7 +119,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 | Állítsa össze az egységes köztes nyelvet (Common Intermediate language, CIL) az összes funkcióhoz. | Az X ++ fordítása: p-kód. | A vadonatúj X ++ fordító minden funkcióhoz generál CIL-t. A CIL ugyanaz a közvetítő nyelv, amelyet más .NET-alapú nyelvek használnak. | A CIL gyorsabb, hatékonyan tud a felügyelt dinamikus csatolású könyvtárakban (DLL) lévő osztályokra hivatkozni, és .NET segédprogramok nagyszámú eszközalapján futtatható. |
 | Üzletiintelligencia-jelentések és vizualizációk beágyazása a Microsoft Dynamics AX ügyfélbe. | Nem érhető el. | Könnyen elsajátítható és folyékony képi megjelenítés létrehozása. | Az Üzleti intelligencián alapuló döntéshozatali információkkal szolgál. |
 | Integráció a Microsoft Office rendszerrel. | Nem érhető el. | Az új lehetőségek közé tartozik az Excel Data Connector alkalmazás, a **Munkafüzettervező** lap, az API exportálása és a Dokumentumkezelés. | Termelékenységmegoldásokat hozhat létre a végfelhasználói számára. |
-| Az építés, a tesztelés és a telepítés automatizálása. | Részben elérhető | Telepítse a fejlesztői topológiát a Fejlesztő és az Építő virtuális gép használatával. Virtuális gép Építás automatikus beállítása a Visual Studio Online-ból (VSO) származó modulok felfedezésére, építésére és tesztek futtatására. A C\# és az X ++ modul fordítása és hivatkozások támogatottak. | A tesztelés és ellenőrzések költségének és munkájának csökkentésével növeli a fejlesztői termelékenységet. |
+| Az építés, a tesztelés és a telepítés automatizálása. | Részben elérhető | Telepítse a fejlesztői topológiát a Fejlesztő és az Építő virtuális gép használatával. Virtuális gép Építés automatikus beállítása a Visual Studio Online megoldásból (VSO) származó modulok felfedezésére, építésére és tesztek futtatására. A C\# és az X ++ modul fordítása és hivatkozások támogatottak. | A tesztelés és ellenőrzések költségének és munkájának csökkentésével növeli a fejlesztői termelékenységet. |
 | A felülrétegzés és a kiterjesztés testreszabása. | Kiterjesztések nem érhetők el. | A Dynamics AX jelenlegi verziója rendelkezik egy új testreszabási modell-lel. | Testre szabhatja azoknak a modellelemeknek a forráskódját és metaadatait, melyeket a Microsoft vagy harmadik fél Microsoft-partnerek szállítanak le. |
 | Új vezérlőelemek és felhasználói felület elemek építése az X++ és modern webes keretrendszer használatával. | Az egyéni vezérlők olyan külső keretrendszerekre támaszkodnak, mint például a Microsoft ActiveX és a Windows megjelenítési alaprendszer (WPF). | Célszerűbb vezérlőelemeket építeni az aktuális verzióba. Az X ++ keretrendszer alkalmazás működésére és az üzleti logikára használható, és a HTML/JavaScript-alapú ügyfél lehetővé teszi a modern képi megjelenítést. | A vezérlőket ki lehet úgy alakítani, hogy úgy nézzenek ki és viselkedjenek úgy, mint a Dynamics AX kulcsrakész (OOB) vezérlők. |
 | Értékeljen és végezze a finomhangolást új eszközök használatával. | A PerfSDK, az Adatbővítő eszközkészlet, a Trace Parser webalkalmazás és a PerfTimer nem érhetők el. | A PerfSDK, az Adatbővítő eszközkészlet, a Trace Parser webalkalmazás és a PerfTimer új. | A szoftverfejlesztő készlet (SDK) segítségével tesztelheti és ellenőrizehti az összes kritikus üzleti folyamat teljesítményét egyfelhasználós, szükség esetén több felhasználó tesztfuttatásban. Az Adatbővítő eszközkészlettel megfelelően kibővítheti az összes teljesítménytesztet, amelyekben az alapadatokat és a tranzakciós adatokat megfelelő módon ki kell bontani. A Trace Parser segítségével ellenőrizheti az egyfelhasználós teljesítménytesztet vagy többfelhasználós futtatást. A PerfTimer segítségével ellenőrizheti, hogy van-e olyan lekérdezés, vagy bármilyen meghatározott metódushívás, amely teljesítménybeli problémát okoz. Ilyen módon nincs szükség követésre és nincs szükség rá, hogy mindent részletesen elemezzen. |

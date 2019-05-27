@@ -1,12 +1,12 @@
 ---
 title: Talent – előnézeti funkciók elérése
 description: Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előnézeti funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg engedélyezettek.
-author: andreabichsel
+author: tracykeya
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +15,15 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: trkeya
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856324"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518218"
 ---
 # <a name="access-preview-features-in-talent"></a>Talent – előnézeti funkciók elérése
 
@@ -72,6 +72,7 @@ Használhatja a Microsoft Dynamics 365 for Talent felügyeleti központjában az
 
 - **Pályázó jelentkezése** – A belső és külső jelentkezők most közvetlenül a karrier webhely állásoldaláról jelentkezhetnek.
 - **Ajánlatkezelés** – A felhasználók ajánlati leveleket hozhatnak létre helyőrzőket tartalmazó sablonokból. Ahogyan a jelöltek tovább lépnek az ajánlati szintre, a toborzók és a felvételi menedzserek az ajánlati eszközzel formális ajánlatokat hozhatnak létre a sablonok segítségével, és elküldhetik az ajánlatot belső jóváhagyásra, majd végül elküldhetik az ajánlatot aláírásra a pályázónak. Idővel az ajánlati eszközhöz számos új lehetőség hozzáadódik, és az előnézeti funkció frissül ezekkel a lehetőségekkel, amint ezek készen állnak előzetes megtekintése.
+- **[Analitikus jelentések](analytic-reports.md)** – A felvételi munkacsoportok az Elemzési központban megtekinthetik az egyes feladatok kulcsfontosságú mutatóit vagy összesített mutatókat az összes feladatra vonatkozóan.
 
 ### <a name="core-hr"></a>Alapvető HR
 
