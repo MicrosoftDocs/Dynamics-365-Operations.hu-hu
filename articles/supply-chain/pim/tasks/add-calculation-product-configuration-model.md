@@ -17,25 +17,25 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9754c46010e7bbdb2edef0d6e68162f344bb1257
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570411"
 ---
-# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="040bd-103">Kalkuláció hozzáadása termékkonfigurációs modellhez</span><span class="sxs-lookup"><span data-stu-id="040bd-103">Add a calculation to a product configuration model</span></span>
+# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="3a71b-103">Kalkuláció hozzáadása termékkonfigurációs modellhez</span><span class="sxs-lookup"><span data-stu-id="3a71b-103">Add a calculation to a product configuration model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="040bd-104">Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új számítást egy termékkonfigurációs modellhez.</span><span class="sxs-lookup"><span data-stu-id="040bd-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="040bd-105">Azt mutatja, hogyan lehet létrehozni egy logikai kifejezést az „if” operátorral, hogy a fehér hangszórók magassága 10 az egyéb felületekkel rendelkezőké pedig 15 legyen.</span><span class="sxs-lookup"><span data-stu-id="040bd-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="040bd-106">Az eljárás a Felső kategóriás hangszóró összetevőt használja az USMF bemutatócégben.</span><span class="sxs-lookup"><span data-stu-id="040bd-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="3a71b-104">Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új számítást egy termékkonfigurációs modellhez.</span><span class="sxs-lookup"><span data-stu-id="3a71b-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="3a71b-105">Azt mutatja, hogyan lehet létrehozni egy logikai kifejezést az „if” operátorral, hogy a fehér hangszórók magassága 10 az egyéb felületekkel rendelkezőké pedig 15 legyen.</span><span class="sxs-lookup"><span data-stu-id="3a71b-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="3a71b-106">Az eljárás a Felső kategóriás hangszóró összetevőt használja az USMF bemutatócégben.</span><span class="sxs-lookup"><span data-stu-id="3a71b-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="add-a-calculation"></a><span data-ttu-id="040bd-107">Számítás hozzáadása</span><span class="sxs-lookup"><span data-stu-id="040bd-107">Add a calculation</span></span>
+## <a name="add-a-calculation"></a><span data-ttu-id="3a71b-107">Számítás hozzáadása</span><span class="sxs-lookup"><span data-stu-id="3a71b-107">Add a calculation</span></span>
 
-## <a name="create-calculation-expression"></a><span data-ttu-id="040bd-108">Számításkifejezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="040bd-108">Create calculation expression</span></span>
-1. <span data-ttu-id="040bd-109">Kattintson a Kifejezés szerkesztése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="040bd-109">Click Edit expression.</span></span>
-2. <span data-ttu-id="040bd-110">A ConstraintBody mezőben írja be, hogy „If[CabinetFinish =="White", 10, 15]”.</span><span class="sxs-lookup"><span data-stu-id="040bd-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
-3. <span data-ttu-id="040bd-111">Kattintson az Érvényesítés gombra.</span><span class="sxs-lookup"><span data-stu-id="040bd-111">Click Validate.</span></span>
-4. <span data-ttu-id="040bd-112">Kattintson a Bezárás gombra.</span><span class="sxs-lookup"><span data-stu-id="040bd-112">Click Close.</span></span>
-5. <span data-ttu-id="040bd-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="040bd-113">Click OK.</span></span>
+## <a name="create-calculation-expression"></a><span data-ttu-id="3a71b-108">Számításkifejezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="3a71b-108">Create calculation expression</span></span>
+1. <span data-ttu-id="3a71b-109">Kattintson a Kifejezés szerkesztése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a71b-109">Click Edit expression.</span></span>
+2. <span data-ttu-id="3a71b-110">A ConstraintBody mezőben írja be, hogy „If[CabinetFinish =="White", 10, 15]”.</span><span class="sxs-lookup"><span data-stu-id="3a71b-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
+3. <span data-ttu-id="3a71b-111">Kattintson az Érvényesítés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a71b-111">Click Validate.</span></span>
+4. <span data-ttu-id="3a71b-112">Kattintson a Bezárás gombra.</span><span class="sxs-lookup"><span data-stu-id="3a71b-112">Click Close.</span></span>
+5. <span data-ttu-id="3a71b-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a71b-113">Click OK.</span></span>
 

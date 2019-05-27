@@ -19,34 +19,34 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e37bd328ebceacc8acf134c5fbb20e6d6a6428d5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1567525"
 ---
-# <a name="disposition-codes-and-return-reason-codes"></a><span data-ttu-id="70589-103">Intézkedési kódok és visszaadási okkódok</span><span class="sxs-lookup"><span data-stu-id="70589-103">Disposition codes and return reason codes</span></span> 
+# <a name="disposition-codes-and-return-reason-codes"></a><span data-ttu-id="c91b2-103">Intézkedési kódok és visszaadási okkódok</span><span class="sxs-lookup"><span data-stu-id="c91b2-103">Disposition codes and return reason codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="70589-104">Hozzon létre visszaadási okkódokat és intézkedési kódokat a visszajuttatott termékekkel kapcsolatot folyamatok támogatásához.</span><span class="sxs-lookup"><span data-stu-id="70589-104">Create and use return reason codes and disposition codes to support the process for returning products.</span></span>
+<span data-ttu-id="c91b2-104">Hozzon létre visszaadási okkódokat és intézkedési kódokat a visszajuttatott termékekkel kapcsolatot folyamatok támogatásához.</span><span class="sxs-lookup"><span data-stu-id="c91b2-104">Create and use return reason codes and disposition codes to support the process for returning products.</span></span>
 
-<span data-ttu-id="70589-105">Használjon visszaküldési okkódot azon okok leírására, ami miatt a vevő vissza kíván küldeni egy cikket.</span><span class="sxs-lookup"><span data-stu-id="70589-105">Use a return reason code to describe the reason that the customer wants to return an item.</span></span> <span data-ttu-id="70589-106">A **Visszaadási kérések** képernyőn rendelheti hozzá a visszaadási kódot.</span><span class="sxs-lookup"><span data-stu-id="70589-106">You can assign a reason code in the **Create return orders** form.</span></span>
+<span data-ttu-id="c91b2-105">Használjon visszaküldési okkódot azon okok leírására, ami miatt a vevő vissza kíván küldeni egy cikket.</span><span class="sxs-lookup"><span data-stu-id="c91b2-105">Use a return reason code to describe the reason that the customer wants to return an item.</span></span> <span data-ttu-id="c91b2-106">A **Visszaadási kérések** képernyőn rendelheti hozzá a visszaadási kódot.</span><span class="sxs-lookup"><span data-stu-id="c91b2-106">You can assign a reason code in the **Create return orders** form.</span></span>
 
-<span data-ttu-id="70589-107">Az intézkedési kódot cikk bevételezésekor vagy visszáru fizikai ellenőrzése során rendelje hozzá.</span><span class="sxs-lookup"><span data-stu-id="70589-107">Assign a disposition code when an item is received or during the physical inspection of a returned item.</span></span> <span data-ttu-id="70589-108">Intézkedési kódok segítségével leírhatja egy cikk állapotát.</span><span class="sxs-lookup"><span data-stu-id="70589-108">You can use disposition codes to describe the condition of the item.</span></span> <span data-ttu-id="70589-109">Intézkedési kódok segítségével megadhatja azt is, hogy van-e szükség további lépésekre a tranzakciónál.</span><span class="sxs-lookup"><span data-stu-id="70589-109">You can also use disposition codes to indicate whether additional action is required for the transaction.</span></span> <span data-ttu-id="70589-110">Hozzon létre intézkedési kódokat például a következő műveletekre:</span><span class="sxs-lookup"><span data-stu-id="70589-110">For example, create disposition codes for the following actions:</span></span>
+<span data-ttu-id="c91b2-107">Az intézkedési kódot cikk bevételezésekor vagy visszáru fizikai ellenőrzése során rendelje hozzá.</span><span class="sxs-lookup"><span data-stu-id="c91b2-107">Assign a disposition code when an item is received or during the physical inspection of a returned item.</span></span> <span data-ttu-id="c91b2-108">Intézkedési kódok segítségével leírhatja egy cikk állapotát.</span><span class="sxs-lookup"><span data-stu-id="c91b2-108">You can use disposition codes to describe the condition of the item.</span></span> <span data-ttu-id="c91b2-109">Intézkedési kódok segítségével megadhatja azt is, hogy van-e szükség további lépésekre a tranzakciónál.</span><span class="sxs-lookup"><span data-stu-id="c91b2-109">You can also use disposition codes to indicate whether additional action is required for the transaction.</span></span> <span data-ttu-id="c91b2-110">Hozzon létre intézkedési kódokat például a következő műveletekre:</span><span class="sxs-lookup"><span data-stu-id="c91b2-110">For example, create disposition codes for the following actions:</span></span>
 
-  - <span data-ttu-id="70589-111">A visszárucikket selejtezze le, majd adjon az ügyfélnek csereterméket.</span><span class="sxs-lookup"><span data-stu-id="70589-111">Scrap the returned item and provide a replacement item to the customer.</span></span>
+  - <span data-ttu-id="c91b2-111">A visszárucikket selejtezze le, majd adjon az ügyfélnek csereterméket.</span><span class="sxs-lookup"><span data-stu-id="c91b2-111">Scrap the returned item and provide a replacement item to the customer.</span></span>
 
-  - <span data-ttu-id="70589-112">Helyezze vissza a cikket a készletbe, majd írja jóvá a termék árát a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="70589-112">Return the item to inventory and credit the customer for the cost of the item.</span></span>
+  - <span data-ttu-id="c91b2-112">Helyezze vissza a cikket a készletbe, majd írja jóvá a termék árát a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="c91b2-112">Return the item to inventory and credit the customer for the cost of the item.</span></span>
 
-  - <span data-ttu-id="70589-113">Javítsa meg a terméket és küldje vissza a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="70589-113">Repair the item and return it to the customer.</span></span>
+  - <span data-ttu-id="c91b2-113">Javítsa meg a terméket és küldje vissza a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="c91b2-113">Repair the item and return it to the customer.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="70589-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="70589-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c91b2-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="c91b2-114">See also</span></span>
 
-[<span data-ttu-id="70589-115">Visszaadási okkódok beállítása</span><span class="sxs-lookup"><span data-stu-id="70589-115">Set up return reason codes</span></span>](set-up-return-reason-code.md)
+[<span data-ttu-id="c91b2-115">Visszaadási okkódok beállítása</span><span class="sxs-lookup"><span data-stu-id="c91b2-115">Set up return reason codes</span></span>](set-up-return-reason-code.md)
 
-[<span data-ttu-id="70589-116">Intézkedési kódok beállítása</span><span class="sxs-lookup"><span data-stu-id="70589-116">Set up disposition codes</span></span>](set-up-disposition-codes.md)
+[<span data-ttu-id="c91b2-116">Intézkedési kódok beállítása</span><span class="sxs-lookup"><span data-stu-id="c91b2-116">Set up disposition codes</span></span>](set-up-disposition-codes.md)
 
 
 

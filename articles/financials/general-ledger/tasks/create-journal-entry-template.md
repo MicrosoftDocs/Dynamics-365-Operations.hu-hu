@@ -17,50 +17,50 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4a749740b62e39202d502a112f947679f85ca085
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562502"
 ---
-# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="8140e-103">Naplóbejegyzés létrehozása sablon alapján</span><span class="sxs-lookup"><span data-stu-id="8140e-103">Create a journal entry using template</span></span>
+# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="15f57-103">Naplóbejegyzés létrehozása sablon alapján</span><span class="sxs-lookup"><span data-stu-id="15f57-103">Create a journal entry using template</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8140e-104">A naplóba feladott bizonylatok Bizonylatsablonként elmenthetők és egy új naplóbizonylatként alkalmazhatók.</span><span class="sxs-lookup"><span data-stu-id="8140e-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="8140e-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="8140e-105">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="15f57-104">A naplóba feladott bizonylatok Bizonylatsablonként elmenthetők és egy új naplóbizonylatként alkalmazhatók.</span><span class="sxs-lookup"><span data-stu-id="15f57-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="15f57-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="15f57-105">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="8140e-106">Főkönyv > Naplóbejegyzések > Általános naplók.</span><span class="sxs-lookup"><span data-stu-id="8140e-106">General ledger > Journal entries > General journals.</span></span> <span data-ttu-id="8140e-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8140e-107">Click New.</span></span>
-    * <span data-ttu-id="8140e-108">Ez az eljárás naplóbizonylat létrehozásával és feladásával indul, de minden korábban feladott naplóbizonylat elmenthető sablonként.</span><span class="sxs-lookup"><span data-stu-id="8140e-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
-2. <span data-ttu-id="8140e-109">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="8140e-109">In the Name field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="8140e-110">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="8140e-110">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="8140e-111">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="8140e-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="8140e-112">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="8140e-112">Click Lines.</span></span>
-6. <span data-ttu-id="8140e-113">Adjon meg számlát a Számlatípusnál.</span><span class="sxs-lookup"><span data-stu-id="8140e-113">Enter an account for the Account type.</span></span>
-7. <span data-ttu-id="8140e-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8140e-114">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="8140e-115">Írjon be egy összeget a Terhelés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8140e-115">Enter an amount in the Debit field.</span></span>
-9. <span data-ttu-id="8140e-116">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-116">Click New.</span></span>
-10. <span data-ttu-id="8140e-117">Adjon meg másik számlát a Számlatípusnál.</span><span class="sxs-lookup"><span data-stu-id="8140e-117">Enter a different account for the Account type.</span></span>
-11. <span data-ttu-id="8140e-118">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8140e-118">In the Description field, type a value.</span></span>
-12. <span data-ttu-id="8140e-119">Írjon be egy összeget a Terhelés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8140e-119">Enter an amount in the Debit field.</span></span>
-13. <span data-ttu-id="8140e-120">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-120">Click New.</span></span>
-14. <span data-ttu-id="8140e-121">A Számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="8140e-121">In the Account field, specify the desired values.</span></span>
-15. <span data-ttu-id="8140e-122">Írjon egy értéket a „Leírás” mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8140e-122">In the Description field, type a value.</span></span>
-16. <span data-ttu-id="8140e-123">Írjon egy összeget a Követelés mezőbe a bizonylat kiegyenlítéséhez.</span><span class="sxs-lookup"><span data-stu-id="8140e-123">Enter an amount in the Credit field to balance the voucher.</span></span>
-17. <span data-ttu-id="8140e-124">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8140e-124">Click Post.</span></span>
-18. <span data-ttu-id="8140e-125">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-125">Click Functions.</span></span>
-19. <span data-ttu-id="8140e-126">Kattintson a Bizonylatsablon mentése elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-126">Click Save voucher template.</span></span>
-20. <span data-ttu-id="8140e-127">Ez az eljárás Százaléksablon típusú.</span><span class="sxs-lookup"><span data-stu-id="8140e-127">This procedure assumes a Percent Template type.</span></span> <span data-ttu-id="8140e-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8140e-128">Click OK.</span></span>
-    * <span data-ttu-id="8140e-129">• Százalék: A bizonylaton szereplő összegeket a rendszer átváltja százalékos tényezőre, amely lehetővé teszi bármilyen összeg alkalmazását a Bizonylatsablon kiválasztásakor.</span><span class="sxs-lookup"><span data-stu-id="8140e-129">• Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>  <span data-ttu-id="8140e-130">• Összeg: A tényleges összegeket a rendszer eltárolja és alkalmazza.</span><span class="sxs-lookup"><span data-stu-id="8140e-130">• Amount: The actual amounts will be stored and applied.</span></span>  
-21. <span data-ttu-id="8140e-131">Kattintson az Általános naplók elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-131">Click General journals.</span></span>
-22. <span data-ttu-id="8140e-132">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8140e-132">Click New.</span></span>
-23. <span data-ttu-id="8140e-133">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="8140e-133">In the Name field, click the drop-down button to open the lookup.</span></span>
-24. <span data-ttu-id="8140e-134">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="8140e-134">In the list, click the link in the selected row.</span></span>
-25. <span data-ttu-id="8140e-135">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="8140e-135">Click Lines.</span></span>
-26. <span data-ttu-id="8140e-136">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-136">Click Functions.</span></span>
-27. <span data-ttu-id="8140e-137">Kattintson a Bizonylatsablon kiválasztása elemre.</span><span class="sxs-lookup"><span data-stu-id="8140e-137">Click Select voucher template.</span></span>
-28. <span data-ttu-id="8140e-138">Keresse meg a korábban létrehozott sablont.</span><span class="sxs-lookup"><span data-stu-id="8140e-138">Find the template that you created earlier.</span></span> <span data-ttu-id="8140e-139">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8140e-139">Click OK.</span></span>
-    * <span data-ttu-id="8140e-140">Több sablon esetén elképzelhető, hogy az Előző lépésre kell kattintania, és kiválasztania a helyes sablont.</span><span class="sxs-lookup"><span data-stu-id="8140e-140">You may need to click Previous step and then select the correct template if other templates exist.</span></span>  
-29. <span data-ttu-id="8140e-141">Az Összeg mezőben adja meg a bizonylatra alkalmazandó összeget.</span><span class="sxs-lookup"><span data-stu-id="8140e-141">In the Amount field, enter the amount to be applied to the voucher.</span></span>
-    * <span data-ttu-id="8140e-142">Az összeg mező csak akkor jelenik meg, ha a bizonylatsablon százalék típusú.</span><span class="sxs-lookup"><span data-stu-id="8140e-142">The amount field is only displayed if the voucher template is of type Percent.</span></span>  
-30. <span data-ttu-id="8140e-143">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8140e-143">Click OK.</span></span>
+1. <span data-ttu-id="15f57-106">Főkönyv > Naplóbejegyzések > Általános naplók.</span><span class="sxs-lookup"><span data-stu-id="15f57-106">General ledger > Journal entries > General journals.</span></span> <span data-ttu-id="15f57-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="15f57-107">Click New.</span></span>
+    * <span data-ttu-id="15f57-108">Ez az eljárás naplóbizonylat létrehozásával és feladásával indul, de minden korábban feladott naplóbizonylat elmenthető sablonként.</span><span class="sxs-lookup"><span data-stu-id="15f57-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
+2. <span data-ttu-id="15f57-109">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="15f57-109">In the Name field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="15f57-110">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="15f57-110">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="15f57-111">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="15f57-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="15f57-112">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="15f57-112">Click Lines.</span></span>
+6. <span data-ttu-id="15f57-113">Adjon meg számlát a Számlatípusnál.</span><span class="sxs-lookup"><span data-stu-id="15f57-113">Enter an account for the Account type.</span></span>
+7. <span data-ttu-id="15f57-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="15f57-114">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="15f57-115">Írjon be egy összeget a Terhelés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="15f57-115">Enter an amount in the Debit field.</span></span>
+9. <span data-ttu-id="15f57-116">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-116">Click New.</span></span>
+10. <span data-ttu-id="15f57-117">Adjon meg másik számlát a Számlatípusnál.</span><span class="sxs-lookup"><span data-stu-id="15f57-117">Enter a different account for the Account type.</span></span>
+11. <span data-ttu-id="15f57-118">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="15f57-118">In the Description field, type a value.</span></span>
+12. <span data-ttu-id="15f57-119">Írjon be egy összeget a Terhelés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="15f57-119">Enter an amount in the Debit field.</span></span>
+13. <span data-ttu-id="15f57-120">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-120">Click New.</span></span>
+14. <span data-ttu-id="15f57-121">A Számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="15f57-121">In the Account field, specify the desired values.</span></span>
+15. <span data-ttu-id="15f57-122">Írjon egy értéket a „Leírás” mezőbe.</span><span class="sxs-lookup"><span data-stu-id="15f57-122">In the Description field, type a value.</span></span>
+16. <span data-ttu-id="15f57-123">Írjon egy összeget a Követelés mezőbe a bizonylat kiegyenlítéséhez.</span><span class="sxs-lookup"><span data-stu-id="15f57-123">Enter an amount in the Credit field to balance the voucher.</span></span>
+17. <span data-ttu-id="15f57-124">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="15f57-124">Click Post.</span></span>
+18. <span data-ttu-id="15f57-125">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-125">Click Functions.</span></span>
+19. <span data-ttu-id="15f57-126">Kattintson a Bizonylatsablon mentése elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-126">Click Save voucher template.</span></span>
+20. <span data-ttu-id="15f57-127">Ez az eljárás Százaléksablon típusú.</span><span class="sxs-lookup"><span data-stu-id="15f57-127">This procedure assumes a Percent Template type.</span></span> <span data-ttu-id="15f57-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="15f57-128">Click OK.</span></span>
+    * <span data-ttu-id="15f57-129">• Százalék: A bizonylaton szereplő összegeket a rendszer átváltja százalékos tényezőre, amely lehetővé teszi bármilyen összeg alkalmazását a Bizonylatsablon kiválasztásakor.</span><span class="sxs-lookup"><span data-stu-id="15f57-129">• Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>  <span data-ttu-id="15f57-130">• Összeg: A tényleges összegeket a rendszer eltárolja és alkalmazza.</span><span class="sxs-lookup"><span data-stu-id="15f57-130">• Amount: The actual amounts will be stored and applied.</span></span>  
+21. <span data-ttu-id="15f57-131">Kattintson az Általános naplók elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-131">Click General journals.</span></span>
+22. <span data-ttu-id="15f57-132">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="15f57-132">Click New.</span></span>
+23. <span data-ttu-id="15f57-133">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="15f57-133">In the Name field, click the drop-down button to open the lookup.</span></span>
+24. <span data-ttu-id="15f57-134">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="15f57-134">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="15f57-135">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="15f57-135">Click Lines.</span></span>
+26. <span data-ttu-id="15f57-136">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-136">Click Functions.</span></span>
+27. <span data-ttu-id="15f57-137">Kattintson a Bizonylatsablon kiválasztása elemre.</span><span class="sxs-lookup"><span data-stu-id="15f57-137">Click Select voucher template.</span></span>
+28. <span data-ttu-id="15f57-138">Keresse meg a korábban létrehozott sablont.</span><span class="sxs-lookup"><span data-stu-id="15f57-138">Find the template that you created earlier.</span></span> <span data-ttu-id="15f57-139">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="15f57-139">Click OK.</span></span>
+    * <span data-ttu-id="15f57-140">Több sablon esetén elképzelhető, hogy az Előző lépésre kell kattintania, és kiválasztania a helyes sablont.</span><span class="sxs-lookup"><span data-stu-id="15f57-140">You may need to click Previous step and then select the correct template if other templates exist.</span></span>  
+29. <span data-ttu-id="15f57-141">Az Összeg mezőben adja meg a bizonylatra alkalmazandó összeget.</span><span class="sxs-lookup"><span data-stu-id="15f57-141">In the Amount field, enter the amount to be applied to the voucher.</span></span>
+    * <span data-ttu-id="15f57-142">Az összeg mező csak akkor jelenik meg, ha a bizonylatsablon százalék típusú.</span><span class="sxs-lookup"><span data-stu-id="15f57-142">The amount field is only displayed if the voucher template is of type Percent.</span></span>  
+30. <span data-ttu-id="15f57-143">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="15f57-143">Click OK.</span></span>
 

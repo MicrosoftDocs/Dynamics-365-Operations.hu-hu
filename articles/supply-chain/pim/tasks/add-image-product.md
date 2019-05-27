@@ -17,23 +17,23 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c663c9f6b4f74ea20f0481632af9eef303ba27ed
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570139"
 ---
-# <a name="add-an-image-to-a-product"></a><span data-ttu-id="3e83d-103">Kép hozzáadása termékhez</span><span class="sxs-lookup"><span data-stu-id="3e83d-103">Add an image to a product</span></span>
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="1f24a-103">Kép hozzáadása termékhez</span><span class="sxs-lookup"><span data-stu-id="1f24a-103">Add an image to a product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="3e83d-104">Ez az eljárás bemutatja, hogyan lehet hozzáadni képet termékhez; a feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="3e83d-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="1f24a-104">Ez az eljárás bemutatja, hogyan lehet hozzáadni képet termékhez; a feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="1f24a-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="3e83d-105">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3e83d-105">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="3e83d-106">Bontsa ki a Termék kép Adatterület lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3e83d-106">Expand the Product image FactBox.</span></span>
-3. <span data-ttu-id="3e83d-107">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="3e83d-107">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="3e83d-108">A mostani példában válassza ki a C0002 cikkszámot.</span><span class="sxs-lookup"><span data-stu-id="3e83d-108">For example, select the item number C0002.</span></span>  
-4. <span data-ttu-id="3e83d-109">Kattintson a Kép módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="3e83d-109">Click Change image.</span></span>
-5. <span data-ttu-id="3e83d-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3e83d-110">Click New.</span></span>
-    * <span data-ttu-id="3e83d-111">Kattintson a Tallózáslehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3e83d-111">Click Browse.</span></span> <span data-ttu-id="3e83d-112">Keresse meg a képet, amelyet használni szeretne, jelölje ki azt, majd zárja be a párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3e83d-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
+1. <span data-ttu-id="1f24a-105">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1f24a-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="1f24a-106">Bontsa ki a Termék kép Adatterület lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1f24a-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="1f24a-107">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="1f24a-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="1f24a-108">A mostani példában válassza ki a C0002 cikkszámot.</span><span class="sxs-lookup"><span data-stu-id="1f24a-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="1f24a-109">Kattintson a Kép módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="1f24a-109">Click Change image.</span></span>
+5. <span data-ttu-id="1f24a-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1f24a-110">Click New.</span></span>
+    * <span data-ttu-id="1f24a-111">Kattintson a Tallózáslehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1f24a-111">Click Browse.</span></span> <span data-ttu-id="1f24a-112">Keresse meg a képet, amelyet használni szeretne, jelölje ki azt, majd zárja be a párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="1f24a-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 

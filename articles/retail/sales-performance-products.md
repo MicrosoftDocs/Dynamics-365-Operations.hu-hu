@@ -20,27 +20,27 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546386"
 ---
-# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="0b857-103">Értékesítési teljesítmény felmérése termék szerint</span><span class="sxs-lookup"><span data-stu-id="0b857-103">Assess sales performance by product</span></span>
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="16bc1-103">Értékesítési teljesítmény felmérése termék szerint</span><span class="sxs-lookup"><span data-stu-id="16bc1-103">Assess sales performance by product</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0b857-104">A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával.</span><span class="sxs-lookup"><span data-stu-id="0b857-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="16bc1-104">A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával.</span><span class="sxs-lookup"><span data-stu-id="16bc1-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span>
 
-<span data-ttu-id="0b857-105">A Dynamics 365 for Retail részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb termékek (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:</span><span class="sxs-lookup"><span data-stu-id="0b857-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
+<span data-ttu-id="16bc1-105">A Dynamics 365 for Retail részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb termékek (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:</span><span class="sxs-lookup"><span data-stu-id="16bc1-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
-- <span data-ttu-id="0b857-106">Értékesítési összeg</span><span class="sxs-lookup"><span data-stu-id="0b857-106">Sales amount</span></span>
-- <span data-ttu-id="0b857-107">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="0b857-107">Quantity</span></span>
-- <span data-ttu-id="0b857-108">Bruttó haszonkulcs</span><span class="sxs-lookup"><span data-stu-id="0b857-108">Gross profit margin</span></span>
-- <span data-ttu-id="0b857-109">Árrés százalékosan</span><span class="sxs-lookup"><span data-stu-id="0b857-109">Margin percentage</span></span>
+- <span data-ttu-id="16bc1-106">Értékesítési összeg</span><span class="sxs-lookup"><span data-stu-id="16bc1-106">Sales amount</span></span>
+- <span data-ttu-id="16bc1-107">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="16bc1-107">Quantity</span></span>
+- <span data-ttu-id="16bc1-108">Bruttó haszonkulcs</span><span class="sxs-lookup"><span data-stu-id="16bc1-108">Gross profit margin</span></span>
+- <span data-ttu-id="16bc1-109">Árrés százalékosan</span><span class="sxs-lookup"><span data-stu-id="16bc1-109">Margin percentage</span></span>
 
-<span data-ttu-id="0b857-110">Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek** jelentést, melyet a következő helyek bármelyikéről megnyithat:</span><span class="sxs-lookup"><span data-stu-id="0b857-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
+<span data-ttu-id="16bc1-110">Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek** jelentést, melyet a következő helyek bármelyikéről megnyithat:</span><span class="sxs-lookup"><span data-stu-id="16bc1-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
-- <span data-ttu-id="0b857-111">**Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**</span><span class="sxs-lookup"><span data-stu-id="0b857-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
-- <span data-ttu-id="0b857-112">**Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Vezető termékek jelentései**</span><span class="sxs-lookup"><span data-stu-id="0b857-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
-- <span data-ttu-id="0b857-113">**Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb termékek jelentés**</span><span class="sxs-lookup"><span data-stu-id="0b857-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="16bc1-111">**Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**</span><span class="sxs-lookup"><span data-stu-id="16bc1-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="16bc1-112">**Kategória- és termékkezelés** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Vezető termékek jelentései**</span><span class="sxs-lookup"><span data-stu-id="16bc1-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="16bc1-113">**Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb termékek jelentés**</span><span class="sxs-lookup"><span data-stu-id="16bc1-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
