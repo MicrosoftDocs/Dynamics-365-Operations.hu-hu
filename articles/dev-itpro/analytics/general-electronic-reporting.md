@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
-ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "902960"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505984"
 ---
 # <a name="electronic-reporting-er"></a>Elektronikus jelentés (EJ)
 
@@ -41,7 +41,7 @@ Az ER jelenleg a TEXT, XML, Microsoft Word dokumentumokat és OPENXML munkalap-f
 Az ER motor a következő képességekkel rendelkezik:
 
 - Egyetlen megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Microsoft Dynamics 365 for Finance and Operations-ben.
-- A jelentés formátumát elkülöníti jelenlegi Dynamics 365 for Finance and Operations rendszertől. Más szóval a formátum a Dynamics 365 for Finance and Operations különböző verzióiban is használható.
+- A jelentés formátumát elkülöníti jelenlegi Microsoft Dynamics 365 for Finance and Operations rendszertől. Más szóval a formátum a Microsoft Dynamics 365 for Finance and Operations különböző verzióiban is használható.
 - Támogatja egy egyéni formátum létrehozását, ami az eredeti formátumon alapul. Emellett képes automatikusan frissíteni az egyéni formátumot, ha változás történik az eredeti formátumban új honosítási/személyre szabási követelmények miatt.
 - Ez válik az elsődleges, szabványos eszközzé a honosítási követelmények támogatására az elektronikus jelentésekben, mind a Microsoft-nál, mind a Microsoft partnereinél.
 - Támogatja a formátumok elosztását a partnerek és a vevők részére, a Microsoft Dynamics Lifecycle Services (LCS) rendszeren keresztül.

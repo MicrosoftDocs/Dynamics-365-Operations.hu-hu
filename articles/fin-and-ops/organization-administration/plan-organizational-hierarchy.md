@@ -19,11 +19,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545786"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
@@ -39,17 +39,17 @@ Hierarchiák tervezése esetén fontos figyelembe venni a szervezeti hierarchia 
 > Annak ellenére, hogy a pénzügyi dimenziók felhasználhatók jogi személyek képviseletére jogi személyek létrehozása nélkül a Finance and Operations alkalmazásban, a pénzügyi dimenziókat nem jogi személyek működési vagy üzleti igényeinek kielégítésére tervezték. A Microsoft Dynamics 365 for Finance and Operations rendszerben a Egységközi könyvelés funkció csak az egyes tranzakciók által létrehozott könyvelési tételek kezelését szolgálja.
 
 > [!IMPORTANT]
-> A szervezetek modellezéséről nem szabad pusztán az e cikkben megadott információ alapján dönteni. Ez a dokumentáció útmutató. Dolgozhat az Dynamics 365 for Finance and Operations partnerrel a további útmutatásért. A Dynamics 365 for Finance and Operations partner tapasztalatot szerzett különböző ágazatokban és a vevő alapok között.
+> A szervezetek modellezéséről nem szabad pusztán az e cikkben megadott információ alapján dönteni. Ez a dokumentáció útmutató. Dolgozhat az Microsoft Dynamics 365 for Finance and Operations partnerrel a további útmutatásért. A Microsoft Dynamics 365 for Finance and Operations partner tapasztalatot szerzett különböző ágazatokban és a vevő alapok között.
 
 ## <a name="decide-whether-to-model-internal-organizations-as-legal-entities-or-operating-units"></a>Döntse el, hogy a belső szervezeteket jogi személyekként vagy üzemi egységekként modellezi
 
-Rendelkeznie kell legalább egy jogi személlyel, hogy képviselje a vállalatot a Dynamics 365 for Finance and Operations programban. A jogi személy törvényes szerződéseket köthet és pénzügyi kimutatásokat kell készítenie, amely beszámol teljesítményéről.
+Rendelkeznie kell legalább egy jogi személlyel, hogy képviselje a vállalatot a Microsoft Dynamics 365 for Finance and Operations programban. A jogi személy törvényes szerződéseket köthet és pénzügyi kimutatásokat kell készítenie, amely beszámol teljesítményéről.
 
-A Dynamics 365 for Finance and Operations jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatók. Ez azt jelenti, hogy a jogi személy a Finance and Operations programban nem feltétlenül képvisel valódi entitást a vállalkozásban. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
+A Microsoft Dynamics 365 for Finance and Operations jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatók. Ez azt jelenti, hogy a jogi személy a Finance and Operations programban nem feltétlenül képvisel valódi entitást a vállalkozásban. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
 
 A vállalatban lévő belső szervezetek, mint például a területi irodák további jogi személyekként vagy a fő jogi személy üzemi egységeként ábrázolhatók. Az üzemi egységnek nem kell jogilag meghatározott szervezetnek lennie. Az üzemi egységek az üzletben lévő gazdasági erőforrások és üzemeltetési folyamatok szabályozására használatosak. Például a részlegek és a költséghelyek üzemi egységek.
 
-Néhány funkció a Dynamics 365 for Finance and Operations programban másképpen működik, attól függően, hogy a szervezet egy jogi személy vagy egy üzemi egység. Gondosan vizsgálja meg az alábbiakban leírt funkciót a döntés meghozatalakor.
+Néhány funkció a Microsoft Dynamics 365 for Finance and Operations programban másképpen működik, attól függően, hogy a szervezet egy jogi személy vagy egy üzemi egység. Gondosan vizsgálja meg az alábbiakban leírt funkciót a döntés meghozatalakor.
 
 ### <a name="master-data"></a>Alapadatok
 
@@ -75,7 +75,7 @@ A modulparaméterek az üzemi egységek között vannak megosztva.
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-A legtöbb adatot automatikusan védi a vállalat azonosítója. A vállalati azonosító a jogi személyhez társított adatok egyedi azonosítója. Egy vállalat csak egy jogi személyhez lehet társítva, egy jogi személy pedig csak egy vállalathoz lehet társítva. A felhasználók csak azon vállalatok adatait érhetik el, amelyekhez van hozzáférésük. Nem szükséges testreszabni a Dynamics 365 for Finance and Operations rendszert az adatvédelemhez a vállalat azonosítójának segítségével.
+A legtöbb adatot automatikusan védi a vállalat azonosítója. A vállalati azonosító a jogi személyhez társított adatok egyedi azonosítója. Egy vállalat csak egy jogi személyhez lehet társítva, egy jogi személy pedig csak egy vállalathoz lehet társítva. A felhasználók csak azon vállalatok adatait érhetik el, amelyekhez van hozzáférésük. Nem szükséges testreszabni a Microsoft Dynamics 365 for Finance and Operations rendszert az adatvédelemhez a vállalat azonosítójának segítségével.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
@@ -157,7 +157,7 @@ Ha a regionális hivatalt üzemi egységként modellezi, akkor a számlázás é
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Jogi személy az adott országban/területen érvényes adóhatóság adótörvényeinek hatálya alá tartozik, ahol a jogi személy regisztrálva van. Például egy jogi személyre, amely regisztrálva van Dániában a dán adó törvények és jogszabályok tartoznak. A Dynamics 365 for Finance and Operations rendszerben egy jogi személy csak egy országhoz/régióhoz tartozhat. A jogi személyhez elsődleges címként beállított ország/régió határozza meg az adott jogi személy számára hozzáférhető ország/régióspecifikus funkciókat. Például ha a jogi személy elsődleges címe Dániában van, dán adótörvényekhez és jogszabályokhoz kapcsolódó funkciók válnak elérhetővé. Ennek megfelelően, ha a szervezetek különböző országokban/régiókban vannak és különböző helyi adóbeállításokat igényelnek, be kell állítania a szervezeteket önálló jogi személyekként.
+Jogi személy az adott országban/területen érvényes adóhatóság adótörvényeinek hatálya alá tartozik, ahol a jogi személy regisztrálva van. Például egy jogi személyre, amely regisztrálva van Dániában a dán adó törvények és jogszabályok tartoznak. A Microsoft Dynamics 365 for Finance and Operations rendszerben egy jogi személy csak egy országhoz/régióhoz tartozhat. A jogi személyhez elsődleges címként beállított ország/régió határozza meg az adott jogi személy számára hozzáférhető ország/régióspecifikus funkciókat. Például ha a jogi személy elsődleges címe Dániában van, dán adótörvényekhez és jogszabályokhoz kapcsolódó funkciók válnak elérhetővé. Ennek megfelelően, ha a szervezetek különböző országokban/régiókban vannak és különböző helyi adóbeállításokat igényelnek, be kell állítania a szervezeteket önálló jogi személyekként.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
@@ -167,14 +167,14 @@ Az üzemi egységek a fölérendelt jogi személy ország kontextusát használj
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Az olyan országok és régiók, amelyeket a Dynamics 365 for Finance and Operations program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd, [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) a Finance and Operations rendszerhez. (Egy CustomerSource bejelentkezés szükséges.)
+Az olyan országok és régiók, amelyeket a Microsoft Dynamics 365 for Finance and Operations program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd, [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) a Finance and Operations rendszerhez. (Egy CustomerSource bejelentkezés szükséges.)
 
 > [!NOTE]
 > A Finance and Operationsben a főkönyvi feladási réteg segítségével a korrekciós bejegyzések elvégezhetők olyan fölérendelt vállalatba, amely egy másik könyvelési standardot használ mint az alárendelt vállalat. Ha például egy vállalatra vonatkozóan, amely az Egyesült Királyságban (Egyesült Királyság GAAP) általánosan elfogadott könyvelési gyakorlatokat használ helyesbítő tételeket végezhet a feladási rétegben. Ezek a bejegyzések konszolidálhatók a fölérendelt vállalatba, amely az Egyesült Államokban általánosan elfogadott könyvelési elveket (GAAP) használja. A korrekciós bejegyzések nem befolyásolják a UK GAAP jelentést.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
-Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Győződjön meg arról, hogy az adatok rögzítése megtörténik a Dynamics 365 for Finance and Operations rendszerben az üzemi egységek követelményeinek támogatására, ahol azok különböznek a központ követelményeitől.
+Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Győződjön meg arról, hogy az adatok rögzítése megtörténik a Microsoft Dynamics 365 for Finance and Operations rendszerben az üzemi egységek követelményeinek támogatására, ahol azok különböznek a központ követelményeitől.
 
 ### <a name="currency"></a>Pénznem
 
