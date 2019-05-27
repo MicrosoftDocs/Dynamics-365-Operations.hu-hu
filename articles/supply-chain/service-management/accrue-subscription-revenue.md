@@ -19,26 +19,26 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a9a6b5b71d8ff1e0f300e7b5f03987942bf2b8ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559094"
 ---
-# <a name="accrue-subscription-revenue"></a><span data-ttu-id="50643-103">Előfizetési bevétel könyvelése</span><span class="sxs-lookup"><span data-stu-id="50643-103">Accrue subscription revenue</span></span> 
+# <a name="accrue-subscription-revenue"></a><span data-ttu-id="64ae5-103">Előfizetési bevétel könyvelése</span><span class="sxs-lookup"><span data-stu-id="64ae5-103">Accrue subscription revenue</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="50643-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Időszakos**\>**Szolgáltatási előfizetések**\>**Előfizetési bevétel könyvelése**.</span><span class="sxs-lookup"><span data-stu-id="50643-104">Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.</span></span>
+1.  <span data-ttu-id="64ae5-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Időszakos**\>**Szolgáltatási előfizetések**\>**Előfizetési bevétel könyvelése**.</span><span class="sxs-lookup"><span data-stu-id="64ae5-104">Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.</span></span>
 
-2.  <span data-ttu-id="50643-105">Az **Időszakkód** mezőben válasszon időszakkódot.</span><span class="sxs-lookup"><span data-stu-id="50643-105">In the **Period code** field, select a period code.</span></span> <span data-ttu-id="50643-106">A bevétel feladása az összes olyan előfizetésidíj-tranzakcióhoz történik, amely a kijelölt időszakkóddal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="50643-106">Revenue is posted for all subscription fee transactions that have the selected period code.</span></span>
+2.  <span data-ttu-id="64ae5-105">Az **Időszakkód** mezőben válasszon időszakkódot.</span><span class="sxs-lookup"><span data-stu-id="64ae5-105">In the **Period code** field, select a period code.</span></span> <span data-ttu-id="64ae5-106">A bevétel feladása az összes olyan előfizetésidíj-tranzakcióhoz történik, amely a kijelölt időszakkóddal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="64ae5-106">Revenue is posted for all subscription fee transactions that have the selected period code.</span></span>
 
-3.  <span data-ttu-id="50643-107">A **Feladási dátum** mezőben adjon meg egy feladási dátumot, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="50643-107">In the **Posting date** field, enter a posting date, and then click **OK**.</span></span>
+3.  <span data-ttu-id="64ae5-107">A **Feladási dátum** mezőben adjon meg egy feladási dátumot, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="64ae5-107">In the **Posting date** field, enter a posting date, and then click **OK**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="50643-108">Az elhatárolt bevételt addig nem lehet feladni, amíg nincsenek kiszámlázva a díjtranzakciók.</span><span class="sxs-lookup"><span data-stu-id="50643-108">You cannot post accrued revenue until the fee transactions are invoiced.</span></span><P>
+> <P><span data-ttu-id="64ae5-108">Az elhatárolt bevételt addig nem lehet feladni, amíg nincsenek kiszámlázva a díjtranzakciók.</span><span class="sxs-lookup"><span data-stu-id="64ae5-108">You cannot post accrued revenue until the fee transactions are invoiced.</span></span><P>
 
 
   
