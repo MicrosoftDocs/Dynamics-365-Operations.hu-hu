@@ -1,16 +1,16 @@
 ---
 title: Speciális formázási beállítások a pénzügyi jelentésben
 description: Pénzügyi jelentésről készült jelentés létrehozásakor további formázási funkciók érhetők el, többek között a dimenziók szűrői, oszlopok és jelentési egységek korlátozásai, a nem nyomtatható sorok és a számításokban szereplő IF/THEN/ELSE kimutatások.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335577"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502565"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Speciális formázási beállítások a pénzügyi jelentésben
 
@@ -41,6 +41,7 @@ Az alábbi táblázat bemutatja a rendelkezésre álló formázási funkciókat 
 | Oszlopkorlátozás         | Az oszlopkorlátozás a sordefinícióban olyan értékek elrejtéséhez ajánlott, melyek csak a jelentés egyes sorainál relevánsak. Ha egy sorban százalékos számításokat végez, az oszlopkorlátozás megakadályozza, hogy az összeg- vagy más oszlopok is ki legyenek nyomtatva, ha azok a számok nem relevánsak. |
 | Oszloptörés               | A sordefinícióban oszloptöréseket is hozzáadhat, hogy a jelentés információi egymás mellett jelenjenek meg. Több oszloptörést is hozzáadhat egy sordefinícióhoz, az oszlop fejléce minden oszlop tetején megismétlődik, az oszloptörés után. Az oszloptörések között jelennek meg a jelentéshez írt megjegyzések. |
 | IF/THEN/ELSE utasítások     | A számítások a sor- vagy oszlopdefinícióban módosíthatók. |
+| Egyszeres idézőjelek ('') és „és” jel (&) használata a dimenzióértékeknél | A jelentéstervezéshez használhat dimenzióértékeket, többek között az „és” jelet. |
 
 ## <a name="advanced-cell-placement"></a>Speciális cella elhelyezése
 A speciális cella elhelyezése, vagy a *Kényszerítés* adott értékek meghatározott cellába való elhelyezését jelenti. Például a kényszerítés gyakran használatos a megfelelő egyenleg elmozdítására egy pénzforgalmi jelentésben. A kényszerítést például a következő célokra használhatja:
@@ -297,3 +298,9 @@ Az **IF/THEN/ELSE** állítás lehetővé teszi, hogy bármely számítás bárm
 
 > [!NOTE]
 > Egy számítás eredményeit nem helyezheti át a többi oszlopba. Az eredményeknek a képletet tartalmazó oszlopban kell lenniük.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Egyszeres idézőjelek ('') és „és” jel (&) használata a dimenzióértékeknél egy sorban, oszlopban vagy fastruktúrában
+
+Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel. 
+
+Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet. 

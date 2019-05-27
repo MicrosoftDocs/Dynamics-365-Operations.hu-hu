@@ -1,9 +1,9 @@
 ---
 title: Támogatás kérése a Talent alkalmazáshoz
-description: A témakör ismerteti, hogyan kaphat segítséget a Dynamics 365 for Talent alkalmazáshoz.
+description: A témakör ismerteti, hogyan kaphat segítséget a Microsoft Dynamics 365 for Talent alkalmazáshoz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,32 +15,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 39aadda6e4c221e243d55e2fd60bbc8484d3b21d
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 9895ae8bdc6326b3863585d77b93576fe5fddcb4
+ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992812"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538773"
 ---
 # <a name="get-support-for-talent"></a>Támogatás kérése a Talent alkalmazáshoz
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan kérhető segítség a Talent: Core HR, Attract és Onboard esetében.
+Ez a témakör bemutatja, hogyan kérhető segítség a Microsoft Dynamics 365 for Talent Core HR, Dynamics 365 Talent: Attract, és Dynamics 365 Talent: Onboard alkalmazásokhoz.
 
-<a name="contact-support"></a>Kapcsolatfelvétel a támogatási szolgálattal
----------------
+## <a name="support-for-talent"></a>Támogatás a Talent alkalmazáshoz
 
-A témakörben ismertetett információkkal kapcsolatban forduljon a Microsofthoz, ha műszaki kérdései vannak a Talent szolgáltatással kapcsolatban.
+Ha támogatást szeretne kérni a Talent szolgáltatással kapcsolatban, használja a következő táblázatban lévő forrásokat. Ezeket az erőforrásokat annak sorrendjében soroljuk fel, amilyen sorrendben javasoljuk használatukat a hibaelhárítás során.
 
-### <a name="talent-support"></a>A Talent támogatása 
+| Feladat | További információ |
+|------|------------------|
+| Kérdezzen a közösségtől. | Lépjen a [Dynamics 365 for Talent Közösségbe](https://community.dynamics.com/365/talent), és kérjen választ a kérdéseidre. A válaszok megkereséséhez írja be a kérdést a keresési mezőbe a **Kérdésem van** felirat mellett. Kérdés feladásához válassza a **Tegye fel kérdését**lehetőséget. |
+| Használja a Felhőalapú támogatás eszközt. | A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) területen nyissa meg a projektet, és válassza a **Támogatás** csempét. Innen kétféleképpen küldheti el a problémákat:<ul><li>Az **Aktív problémák** lapon válassza ki azt a problémát, amelyet el szeretne küldeni, majd válassza a **Küldés a Microsoftnak** lehetőséget.</li><li>Az **Elküldve a Microsoftnak** lapon válassza az **Új esemény küldése** lehetőséget az új probléma elküldéséhez.</li></ul> |
+| Támogatás kérése az alkalmazáson belül. | Kattintson bármely lap jobb felső sarkában látható **Súgó** (**?**) gombra. Majd, ha a Core HR területen van, akkor válassza a **Támogatás**elemet. Ha az Attract vagy az Onboard megoldásban van, válassz a **Probléma jelentése** lehetőséget. A problémák jelentése az **Aktív problémák** lapon történik az LCS-ben, ahol az adminisztrátor eldöntheti, hogy biztosítja-e a belső támogatást, vagy elküldheti a problémákat a Microsoftnak. (Ha az Onboard önálló verziójával rendelkezik, akkor a problémákat közvetlenül a Microsofthoz nyújtják be a rendszer.) |
+| Segítség a Talent-licencekkel kapcsolatos kérdésekkel kapcsolatban. | Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal. |
+| Új szolgáltatások és funkciók kérése a Talent szolgáltatáson belül. | Az alkalmazás fő Talent oldalán válassza a **Súgó** gombot (**?**), majd válassza az **Ötletek** lehetőséget. Ellátogathat [Dynamics 365 alkalmazással kapcsolatos ötletek](https://experience.dynamics.com/ideas/) helyre is a meglévő ötletek megtekintéséhez, kereséséhez vagy szavazásához, illetve új ötletek hozzáadásához. |
 
-Ha támogatást szeretne a Talent szolgáltatással kapcsolatban, használja a következő táblázatban lévő forrásokat. Ezeket az erőforrásokat annak sorrendjében soroljuk fel, amilyen sorrendben javasoljuk használatukat a hibaelhárítás során.
+## <a name="support-for-the-onboard-stand-alone-app"></a>A különálló Onboard alkalmazás támogatása
 
-| **Feladat**                                                | **További információ**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kérdezzen a közösségtől                                      | Lépjen a [Kérdezzen a közösségtől](https://community.dynamics.com/365/talent) lapra, ha segítséget szeretne a kérdéseivel kapcsolatban, és használja a „Súgó” lehetőséget, amelynek segítségével rákereshet a témakörökre a Core HR szolgáltatáson belül.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Használja a Felhőalapú támogatás eszközt                     | A [Lifecycle Services (LCS)](https://lcs.dynamics.com/) programban a **Támogatás** csempe nyújt segítséget a támogatási események kezelésében. Ha közvetlenül a Microsoft számára szeretné beküldeni a problémákat, lépjen a **Támogatás** csempére az LCS projektjében, vagy használja a **támogatási jegyek panelt** az LCS szolgáltatásban, és kattintson a **Felhőalapú támogatás** pontra. Innen kétféleképpen küldheti el a problémákat. 1: Amikor az LCS szolgáltatáson keresztül küld be egy problémát, az **Aktív probléma** lapon válassza ki a problémát, és kattintson a **Küldés a Microsoftnak** lehetőségre. 2: Az **Elküldve a Microsoftnak** lapon kattintson az **Új esemény küldése** lehetőségre az új problémák elküldéséhez.  |
-| Alkalmazáson belüli támogatás                                 | Válassza a **?** ikont a menüben, és válassza ki a **Támogatás (Core HR) probléma bejelentése (Attract fedélzeti)** lehetőséget. A problémák az **Aktív problémák** LCS lapon lesznek bejelentve. Vegye figyelembe, hogy amennyiben a különálló Onboard megoldást vásárolta, a bejelentett problémák a Microsoftnak lesznek elküldve.  |
-| Segítség a Talent-licencekkel kapcsolatos kérdésekkel kapcsolatban         | Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal.     |
-| Új szolgáltatások és funkciók kérése a Talent szolgáltatáson belül | Az alkalmazás fő Talent lapján kattintson válassza a **?** Ikont, és válassza az **Ötletek** lehetőséget, vagy használja az [Ötletek](https://experience.dynamics.com/ideas/) hivatkozást új ötletek megtekintéséhez, kereséséhez, a róluk való szavazáshoz, illetve új ötletek felvételéhez.          |                                                                                                                                                                                                                                                                                           
+Ha támogatást szeretne az Onboard önálló alkalmazással kapcsolatban, használja a következő táblázatban lévő forrásokat. Ezeket az erőforrásokat annak sorrendjében soroljuk fel, amilyen sorrendben javasoljuk használatukat a hibaelhárítás során. Ezeket a támogatási lehetőségeket a lap jobb felső sarkában a **Súgó** gombra (**?**) kattintva találhatja meg.
+
+| Feladat | További információ |
+|------|------------------|
+| Kérdezzen a közösségtől. | Lépjen a [Dynamics 365 for Talent Közösségbe](https://community.dynamics.com/365/talent), és kérjen segítséget. A válaszok megkereséséhez írja be a kérdést a keresési mezőbe a **Kérdésem van** felirat mellett. Kérdés feladásához válassza a **Tegye fel kérdését**lehetőséget. |
+| Egy hiba jelentése. | Válassza ki a lap jobb felső sarkában látható **Súgó** gombot (**?**), majd válassza a **Probléma jelentése** lehetőséget. Írja be a probléma leírását, és adjon meg egy e-mail-címet, ha követni szeretné a jelentett problémát. |
+| Segítség a Talent-licencekkel kapcsolatos kérdésekkel kapcsolatban. | Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal. |
+| Új szolgáltatások és funkciók kérése az Onboard szolgáltatáson belül. | Válassza a **Súgó** gombot (**?**), és válassz az **Ötletek** lehetőséget. Ellátogathat [Dynamics 365 for Talent: Onboard alkalmazással kapcsolatos ötletek](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) helyre is a meglévő ötletek megtekintéséhez, kereséséhez vagy szavazásához, illetve új ötletek hozzáadásához. |

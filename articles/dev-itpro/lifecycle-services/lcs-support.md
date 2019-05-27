@@ -1,5 +1,5 @@
 ---
-title: Támogatás igénylése a Dynamics 365 for Finance and Operations vagy a Lifecycle Services szolgáltatáshoz
+title: Támogatás igénylése a Microsoft Dynamics 365 for Finance and Operations vagy a Lifecycle Services szolgáltatáshoz
 description: A cikk ismerteti, hogyan kérhet segítséget a Microsoft Dynamics 365 for Finance and Operations vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.
 author: kfend
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552487"
 ---
-# <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Támogatás igénylése a Dynamics 365 for Finance and Operations vagy a Lifecycle Services szolgáltatáshoz
+# <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Támogatás igénylése a Microsoft Dynamics 365 for Finance and Operations vagy a Lifecycle Services szolgáltatáshoz
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: Beszerzési és ráfordítási elemzés Power BI tartalom
 description: Ez a témakör a Beszerzési kiadások elemzése Power BI tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527717"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Beszerzési és ráfordítási elemzés Power BI tartalom
 
@@ -33,7 +33,7 @@ Ez a témakör a **Beszerzési kiadások elemzése** Microsoft Power BI tartalom
 
 ## <a name="overview"></a>Áttekintés
 
-A **Beszerzési kiadások elemzése** Power BI-tartalom a beszerzési vezetők és olyan vezetők segítségével készült, akik a beszerzési kiadások költségvetéésért felelősek. A vezetők az alábbi módokon elemezhetik a beszerzési költségeket:
+A **Beszerzési kiadások elemzése** Power BI-tartalom a beszerzési vezetők és olyan vezetők segítségével készült, akik a beszerzési kiadások költségvetéésének nyomon követésért felelősek. A vezetők az alábbi módokon elemezhetik a beszerzési költségeket:
 
 - Az év megadott napjáig tartó beszerzések (szállítói csoport és az egyes szállítók , beszerzési kategória és egyes termékek, valamint a szállító helye szerint)
 - Egy éves időszak beszerzési változásai (szállítói csoport és a beszerzési kategória szerint)
@@ -44,88 +44,88 @@ A tartalom beszerzési tranzakciós adatokat használ, és egyrészt összesíte
 A **Beszerzési és ráfordítási elemzés** Power BI tartalom a **Beszerzési és ráfordítási elemzés** oldalon látható (**Beszerzés és forrás** \> **Lekérdezések és jelentések** \> **Beszerzési teljesítményelemzés** \> **Beszerzési és ráfordítási elemzés**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
-A **Beszerzési kiadások elemzése** Power BI tartalomcsomag tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázat tartalmazza a megjelenítések áttekintését.
+A **Beszerzési kiadások elemzése** Power BI tartalomcsomag tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. 
 
-<table>
-<thead>
-<tr>
-<th>Jelentéslap</th>
-<th>Diagramok</th>
-<th>Mozaik</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Szállító beszerzés</td>
-<td><ul>
-<li>10 legmagasabb szállító beszerzés szerint (halmozott sávdiagram)</li>
-<li>Teljes beszerzések szállítói csoport / ország / név szerint (kördiagram)</li>
-<li>Beszerzések szállítói csoport / ország / név szerint (oszlopdiagram)</li>
-<li>Átlagos beszerzések szállítói csoport / ország / név szerint (oszlopdiagram)</li>
-</ul></td>
-<td><ul>
-<li>Összes beszerzés</li>
-<li>Egy éves időszak beszerzési növekedése</li>
-<li>Összes szállító száma</li>
-<li>Aktív szállítók száma</li>
-</ul></td>
-</tr>
-<tr>
-<td>Beszerzés termékenként</td>
-<td><ul>
-<li>Beszerzés beszerzési kategória / termék neve szerint (oszlopdiagram)</li>
-<li>Összes beszerzés beszerzési kategória / termék neve szerint (kördiagram)</li>
-<li>10 legmagasabb termék beszerzés szerint (halmozott sávdiagram)</li>
-</ul></td>
-<td><ul>
-<li>Termékek összes száma</li>
-<li>Összes aktív termék, teljes termékszám százaléka</li>
-<li>A beszerzések 80%-át lefedő termékek száma</li>
-</ul></td>
-</tr>
-<tr>
-<td>Beszerzés időszak szerint*</td>
-<td><ul>
-<li>Beszerzés hónap / nap szerint (oszlopdiagram)</li>
-<li>Összesített beszerzés, egy éves időszak eltérése (vízesésdiagram)</li>
-<li>Teljes beszerzés, egy éves időszak növekedése (oszlopdiagram)</li>
-<li>Beszerzési kimutatás (mátrix)</li>
-</ul></td>
-<td><ul>
-<li>Egy éves időszak beszerzési növekedése</li>
-<li>Egy éves időszak beszerzési növekedése %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Beszerzés a szállító helye szerint</td>
-<td><ul>
-<li>Beszerzés település szerint</li>
-<li>Egy éves időszak beszerzési növekedési százaléka</li>
-<li>Beszerzési ország szerint</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Beszerzési kiadások elemzése idő szerint</td>
-<td><ul>
-<li>Beszerzési folyó év, hónap / nap szerint (vonaldiagram)</li>
-<li>Beszerzés, jelenlegi és az előző év (vonal- és oszlopdiagram)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Beszerzési kiadások elemzése szállító szerint</td>
-<td><ul>
-<li>A legjobb szállítói beszerzési %-a a beszerzésekből (tölcsér)</li>
-<li>Top 10 szállító megnövekedett kiadásokkal egy éves időszakban</li>
-<li>Top 10 szállító csökkent kiadásokkal egy éves időszakban</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Az alábbi szakaszok tartalmazzák a megjelenítések áttekintését.
 
-\* Erre az évre és az előző évre eső beszerzés, és növekedés beszerzési kategória szerint
+### <a name="purchase-by-vendor-report-page"></a>Beszerzés a szállítói jelentés lapján
+**Diagramok**
+- 10 legmagasabb szállító beszerzés szerint (halmozott sávdiagram)
+- Teljes beszerzések szállítói csoport / ország / név szerint (kördiagram)
+- Beszerzések szállítói csoport / ország / név szerint (oszlopdiagram)
+- Átlagos beszerzések szállítói csoport / ország / név szerint (oszlopdiagram)
+
+**Mozaik**
+- Összes beszerzés
+- Egy éves időszak beszerzési növekedése
+- Összes szállító száma
+- Aktív szállítók száma
+
+**Példa**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Beszerzés a termékjelentés lapján
+
+**Diagramok**
+- Beszerzés beszerzési kategória / termék neve szerint (oszlopdiagram)
+- Összes beszerzés beszerzési kategória / termék neve szerint (kördiagram)
+- 10 legmagasabb termék beszerzés szerint (halmozott sávdiagram)
+
+**Mozaik**
+- Termékek összes száma</li>
+- Összes aktív termék, teljes termékszám százaléka
+- A beszerzések 80%-át lefedő termékek száma
+
+**Példa**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Beszerzés a az időszakjelentés lapján
+Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növekedés beszerzési kategória szerint adatokat mutatja.
+
+**Diagramok** 
+- Beszerzés hónap / nap szerint (oszlopdiagram)
+- Összesített beszerzés, egy éves időszak eltérése (vízesésdiagram)
+- Teljes beszerzés, egy éves időszak növekedése (oszlopdiagram)
+- Beszerzési kimutatás (mátrix)
+
+**Mozaik**
+- Egy éves időszak beszerzési növekedése
+- Egy éves időszak beszerzési növekedése %
+
+**Példa**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Beszerzés a szállítói helyjelentés lapján
+
+**Diagramok**
+- Beszerzés település szerint
+- Egy éves időszak beszerzési növekedési százaléka
+- Beszerzési ország szerint
+
+**Példa**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Beszerzési kiadások elemzése idő szerint lapján
+
+**Diagramok** 
+- Beszerzési folyó év, hónap / nap szerint (vonaldiagram)
+- Beszerzés, jelenlegi és az előző év (vonal- és oszlopdiagram)
+
+**Példa**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Beszerzési kiadások elemzése beszállító szerint lapján
+
+**Diagramok** 
+- A legjobb szállítói beszerzési %-a a beszerzésekből (tölcsér)
+- Top 10 szállító megnövekedett kiadásokkal egy éves időszakban
+- Top 10 szállító csökkent kiadásokkal egy éves időszakban
+
+**Példa** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Adatmodell és entitások
 A **Beszerzési kiadások elemzése** Power BI tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).

@@ -3,7 +3,7 @@ title: Kimutatásfeladás funkcionalitás továbbfejlesztései
 description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321432"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541291"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
@@ -43,7 +43,7 @@ A Finance and Operations a következő ellenőrzéseket tartalmazza, amelyek eze
 - Ugyanazokat a konfigurációs kulcsokat kell használni az adott kimutatáson az életciklusa során végrehajtott összes művelethez (létrehozás, kiszámítás, törlés, feladás és így tovább). Például nem lehet létrehozni és kiszámítani egy kimutatást, amíg a **Kiskereskedelmi kimutatás (korábbi verzió)** konfigurációs kulcs be van kapcsolva, és aztán megpróbálni feladni ugyanazt az utasítást, amíg a **Kiskereskedelmi kimutatás** konfigurációs kulcs ki van kapcsolva.
 
 > [!NOTE]
-> Azt ajánljuk, hogy használja a **Kiskereskedelmi kimutatások** konfigurációs kulcsot a továbbfejlesztett kimutatásfeladási szolgáltatáshoz, kivéve, ha nyomós oka van a **Kiskereskedelmi kimutatások (korábbi verzió)** konfigurációs kulcs használatára helyette. A Microsoft folyamatosan dolgozik az új és továbbfejlesztett feladási funkción, és fontos váltani a legkorábban, hogy ki tudja használni. Az örökölt kimutatásfeladási funkciót kivezetjük valamelyik jövőbeli programverzióban.
+> Azt ajánljuk, hogy használja a **Kiskereskedelmi kimutatások** konfigurációs kulcsot a továbbfejlesztett kimutatásfeladási szolgáltatáshoz, kivéve, ha nyomós oka van a **Kiskereskedelmi kimutatások (korábbi verzió)** konfigurációs kulcs használatára helyette. A Microsoft folyamatosan dolgozik az új és továbbfejlesztett feladási funkción, és fontos váltani a legkorábban, hogy ki tudja használni. Az örökölt kimutatásfeladási funkciót kivezetjük 8.0-ás kiadástól.
 
 ## <a name="setup"></a>Beállítás
 
@@ -56,11 +56,15 @@ A kimutatásfeladási funkció javításának részeként három új paramétert
 
 - **Számlálás letiltása szükséges** – Ha ez a beállítás **Igen**, a kimutatás feladására használt eljárás tovább folytatódik akkor is, ha a kimutatáson a számolt összeg és a tranzakciós összeg közötti különbség túl van azon a küszöbértéken, amely meg van határozva a kiskereskedelmi áruházak **Kimutatás** gyorslapján.
 
-Ezenkívül a **Párhuzamos kivonatfeladás maximális száma** mező megjelent a **Kötegelt feldolgozás** gyorslapon. Ez a mező meghatározza, hogy hány kötegelt feladatot lehet egy időben futtatni. Jelenleg manuálisan meg kell adni a mező értékét.
+Ezenkívül a következő paraméterek kerültek be a **Kötegelt feldolgozás** gyorslapra a **Feladás lapra** a **Kiskereskedelmi paraméterek** oldalon: 
 
-Az új feladási folyamat során emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kiskereskedelmi paraméterek** lapon. Ez igaz akkor is, ha a szervezet által használva nincsenek ajándékutalványok.
+- **Párhuzamos kimutatásfeladááok maximális száma** -Ez a mező a kötegelt feladatok számát határozza meg, amelyek több nyilatkozat feladása esetén használatosak. 
+- **Szálak maximális száma a rendelésfeladáshoz kimutatásonként** – Ez a mező a kimutatás feladására szolgáló kötegelt feladat által az egyes kimutatások értékesítési rendeléseinek létrehozásához és számlázásához használt szálak maximális számát jelzi. A kimutatásfeladási folyamat által használt szálak teljes számát a program úgy számítja ki, hogy ezen paraméter értékét megszorozza a **Párhuzamos kivonatfeladások maximális száma** értékével. A paraméter értékének beállítása túl magasra negatív hatással lehet a kimutatásfeladási folyamatának teljesítményére.
+- **Összesítésben szereplő maximális tranzakciós sorok** – Ez a mező azt határozza meg, hogy hány tranzakciós sor fog szerepelni egy összesített tranzakcióban, mielőtt újat hoz létre. Az összesített tranzakciók a különböző összesítési feltételek, például a vevő, az üzleti dátum vagy a pénzügyi dimenziók alapján jönnek létre. Fontos megjegyezni, hogy az egyetlen kiskereskedelmi tranzakció sorait a rendszer nem osztja szét különböző összesített tranzakciók között. Ez azt jelenti, hogy egy összesített tranzakció sorainak száma valamivel több vagy kevesebb lehet olyan tényezők alapján mint egyedi termékek.
+- **Üzleti tranzakciók ellenőrzéséhez szükséges szálak maximális száma** A szálak maximális száma, amelyek kiskereskedelmi tranzakció ellenőrzéséhez fel lesznek használva. A kiskereskedelmi tranzakciók érvényesítése olyan szükséges lépés, amelyet el kell végezni azelőtt, hogy a tranzakciókat be lehessen húzni a kimutatásba. Emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kiskereskedelmi paraméterek** lapon. Ezt definiálni kell akkor is, ha a szervezet nem használ ajándékutalványokat.
 
-Megjegyzendő, hogy minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kiskereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
+> [!NOTE]
+> Minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kiskereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
 
 ## <a name="processing"></a>Feldolgozás
 

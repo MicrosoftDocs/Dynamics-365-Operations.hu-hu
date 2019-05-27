@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505096"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -70,7 +70,9 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 106 | Mennyiség törlése | A jelenleg kijelölt rendeléssorban szereplő mennyiségtől alaphelyzetbe **1**. | Igen | Igen | Nincs | Igen | Nincs |
 | 640 | Üzletkötő törlése a sorban | Távolítsa el a kijelölt sor a jutalék értékesítési csoportjának (Értékesítés munkatárs). | Igen | Igen | Nincs | Igen | Nincs |
 | 121 | Értékesítő törlése | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
-| 1055 | Műszakzárás | Az aktuális Műszakzárás, és a Z-jelentés nyomtatása a rendszerből a felhasználói bejelentkezés. | Igen | Igen | Igen | Nincs | Nincs |
+| 1055 | Műszakzárás | Az aktuális Műszakzárás, és a Z-jelentés nyomtatása a rendszerből a felhasználói bejelentkezés. | Igen | Igen | Igen | Nem | Nem |
+| 139 | Tranzakció lezárása | Megkéri a felhasználót, hogy válasszon fizetési módot | Igen | Igen | Nem | Igen | Nem |
+| 620 | Vevői rendelés létrehozása | A kijelölt pénztártranzakció átalakítása vevői rendeléssé | Igen | Igen | Nem | Igen\* | Nem |
 | 925 | Banki csekk másolása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Igen |
 | 620 | Vevői rendelés létrehozása | A kijelölt pénztártranzakció átalakítása vevői rendeléssé | Igen | Igen | Nincs | Igen\* | Nincs |
 | 621 | Árajánlat létrehozása | A kijelölt pénztártranzakció átalakítása értékesítési árajánlattá. | Igen | Igen | Nincs | Igen\* | Nincs |

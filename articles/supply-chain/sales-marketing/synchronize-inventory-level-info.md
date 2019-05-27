@@ -3,7 +3,7 @@ title: Készletszintű információk szinkronizálása a Finance and Operations 
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations készletszint-adatainak közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: c7dce4427810b93e0ee4f1a27881c2b1b04fb125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842556"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1535698"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba 
 
@@ -75,6 +75,14 @@ A **Külső termékkészlet** entitás új entitás, amely csak az integráció 
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
+### <a name="data-integration"></a>Adatintegrálás
+A projekt működéséhez gondoskodni kell arról, hogy az integrációs kulcs frissüljön a msdynce_externalproductinventories entitáshoz.
+1.  Nyissa meg az **Adatintegráció > Csatlakozókészletek** menüt.
+2.  Válassza ki a használt Csatlakozási beállítást.
+3.  Győződjön meg arról, hogy az **Integrációs kulcs lapon** a következő kulcsok hozzá vannak adva az msdynce_externalproductinventories entitáshoz:
+      - msdynce_productnumber (Termékszám)
+      - msdynce_warehouseid (Raktár azonosítója)
+      
 ### <a name="data-integration-project"></a>Adatintegrációs projekt
 Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérléséhez, hogy a kívánt termékek küldjenek raktárszintadatokat a Finance and Operations alkalmazásból a Field Service alkalmazásba.
 

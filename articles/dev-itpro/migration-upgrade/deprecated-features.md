@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527671"
 ---
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
@@ -66,26 +66,6 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020. áprilistól kezdődően a továbbfejlesztett „egyike a következőknek” gyakorlat lesz az alapértelmezett viselkedés, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>A belső osztályok történő származtatás elavult.
-
-|   |  |
-|------------|--------------------|
-| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
-| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti.|
-| **Érintett területek**         | Visual Studio fejlesztőeszközök |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>A belső módszerek felülbírálása elavult
-
-|   |  |
-|------------|--------------------|
-| **Elavulás/eltávolítás oka** | A 25-ös platformfrissítés előtt lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva. Ez nem egy biztonságos programozási gyakorlat. A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg. |
-| **Felváltotta másik szolgáltatás?**   | A 26-os platformfrissítésben a figyelmeztetése fordítási hibaüzenetre lesz módosítva. Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására. Ez a változtatás csak a fejlesztési és fordítási időt érinti. |
-| **Érintett területek**         | Visual Studio fejlesztőeszközök |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Paraméter, amellyel engedélyezhetők a több projektszerződéses finanszírozási forrással rendelkező értékesítési rendelések
 Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a projekszerződéseknél több finanszírozási forrás is engedélyezve van a **Projektvezetési paraméterek** beállítás **Több finanszírozási forrással rendelkező projekthez tartozó értékesítési rendelések engedélyezése** értékével. Alapértelmezés szerint ez a paraméter nincs engedélyezve. 

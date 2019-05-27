@@ -20,11 +20,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543629"
 ---
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
@@ -169,7 +169,7 @@ Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugt�
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD önköltségi áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD önköltségi áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD önköltségi áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD önköltségi áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD önköltségi áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD önköltségi áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD önköltségi áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD önköltségi áron.
