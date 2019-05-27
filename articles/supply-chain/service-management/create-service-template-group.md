@@ -19,23 +19,23 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e2c3af831cd9433bdc6180811a3af82d3fbbf8c5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "348227"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552138"
 ---
-# <a name="create-a-service-template-group"></a><span data-ttu-id="bc777-103">Szolgáltatássablon-csoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="bc777-103">Create a service template group</span></span>  
+# <a name="create-a-service-template-group"></a><span data-ttu-id="2cc1f-103">Szolgáltatássablon-csoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="2cc1f-103">Create a service template group</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bc777-104">Használhat szolgáltatásisablon-csoportokat a szolgáltatási sablonok rendezésére és szűrésére.</span><span class="sxs-lookup"><span data-stu-id="bc777-104">You can use service template groups to sort and filter service templates.</span></span>
+<span data-ttu-id="2cc1f-104">Használhat szolgáltatásisablon-csoportokat a szolgáltatási sablonok rendezésére és szűrésére.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-104">You can use service template groups to sort and filter service templates.</span></span>
 
-1. <span data-ttu-id="bc777-105">Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatási szerződések** \> **Szolgáltatásisablon-csoportok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="bc777-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
-2. <span data-ttu-id="bc777-106">Hozzon létre egy szolgáltatásisablon-csoportot.</span><span class="sxs-lookup"><span data-stu-id="bc777-106">Create a new service template group.</span></span>
-3. <span data-ttu-id="bc777-107">Adja meg a csoport azonosítóját, leírását és a szülő szolgáltatásisablon-csoportot, amennyiben van ilyen.</span><span class="sxs-lookup"><span data-stu-id="bc777-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
-4. <span data-ttu-id="bc777-108">Mentse a szolgáltatásisablon-csoportot.</span><span class="sxs-lookup"><span data-stu-id="bc777-108">Save the service template group.</span></span>
-5. <span data-ttu-id="bc777-109">Állítsa a **Fa ellenőrzése** csúszkát az **Igen** állásba ahhoz, hogy meg tudja nyitni a fanézetet, és megtekinthesse a szolgáltatási sablonok csoportjait hierarchiaként egy fanézetben, vagy áttekintésként.</span><span class="sxs-lookup"><span data-stu-id="bc777-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
+1. <span data-ttu-id="2cc1f-105">Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatási szerződések** \> **Szolgáltatásisablon-csoportok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
+2. <span data-ttu-id="2cc1f-106">Hozzon létre egy szolgáltatásisablon-csoportot.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-106">Create a new service template group.</span></span>
+3. <span data-ttu-id="2cc1f-107">Adja meg a csoport azonosítóját, leírását és a szülő szolgáltatásisablon-csoportot, amennyiben van ilyen.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
+4. <span data-ttu-id="2cc1f-108">Mentse a szolgáltatásisablon-csoportot.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-108">Save the service template group.</span></span>
+5. <span data-ttu-id="2cc1f-109">Állítsa a **Fa ellenőrzése** csúszkát az **Igen** állásba ahhoz, hogy meg tudja nyitni a fanézetet, és megtekinthesse a szolgáltatási sablonok csoportjait hierarchiaként egy fanézetben, vagy áttekintésként.</span><span class="sxs-lookup"><span data-stu-id="2cc1f-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
 
 
 

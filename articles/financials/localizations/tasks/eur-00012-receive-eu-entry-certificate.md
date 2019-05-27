@@ -16,29 +16,29 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbcf6d8dc71b833b3d90e72e7ef6c9d438241640
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f1c0e289a5505bfacb20726a5e74a779afdb9cb
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537961"
 ---
-# <a name="eur-00012-receive-an-eu-entry-certificate"></a><span data-ttu-id="79c0f-103">EUR-00012 Európai beérkezési igazolás fogadása</span><span class="sxs-lookup"><span data-stu-id="79c0f-103">EUR-00012 Receive an EU entry certificate</span></span>
+# <a name="eur-00012-receive-an-eu-entry-certificate"></a><span data-ttu-id="00ce9-103">EUR-00012 Európai beérkezési igazolás fogadása</span><span class="sxs-lookup"><span data-stu-id="00ce9-103">EUR-00012 Receive an EU entry certificate</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="79c0f-104">Ez az eljárás bemutatja a harmadik fél által kiállított, a vevőtől származó EU beérkezési igazolás regisztrálását.</span><span class="sxs-lookup"><span data-stu-id="79c0f-104">This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</span></span>
+<span data-ttu-id="00ce9-104">Ez az eljárás bemutatja a harmadik fél által kiállított, a vevőtől származó EU beérkezési igazolás regisztrálását.</span><span class="sxs-lookup"><span data-stu-id="00ce9-104">This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</span></span>
 
 
 
-<span data-ttu-id="79c0f-105">Ez az eljárás az DEMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="79c0f-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="00ce9-105">Ez az eljárás az DEMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="00ce9-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. <span data-ttu-id="79c0f-106">Ugorjon a Kintlévőségek > Lekérdezések és jelentések > Beérkezési igazolások naplója elemre.</span><span class="sxs-lookup"><span data-stu-id="79c0f-106">Go to Accounts receivable > Inquiries and reports > Entry certificate journal.</span></span>
-2. <span data-ttu-id="79c0f-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="79c0f-107">Click New.</span></span>
-3. <span data-ttu-id="79c0f-108">Adjon meg egy értéket a Beérkezési igazolás mezőben.</span><span class="sxs-lookup"><span data-stu-id="79c0f-108">In the Entry certificate field, type a value.</span></span>
-4. <span data-ttu-id="79c0f-109">A Vevői számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="79c0f-109">In the Customer account field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="79c0f-110">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="79c0f-110">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="79c0f-111">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="79c0f-111">Click Save.</span></span>
-    * <span data-ttu-id="79c0f-112">Csatoljon további adatokat a naplóhoz.</span><span class="sxs-lookup"><span data-stu-id="79c0f-112">Attach additional information to the journal.</span></span>  
-    * <span data-ttu-id="79c0f-113">Például csatoljon egy beolvasott képet az EU beérkezési igazolásról a naplóhoz.</span><span class="sxs-lookup"><span data-stu-id="79c0f-113">For example, attach a scanned image of the EU Entry certificate to the journal.</span></span>  
+1. <span data-ttu-id="00ce9-106">Ugorjon a Kintlévőségek > Lekérdezések és jelentések > Beérkezési igazolások naplója elemre.</span><span class="sxs-lookup"><span data-stu-id="00ce9-106">Go to Accounts receivable > Inquiries and reports > Entry certificate journal.</span></span>
+2. <span data-ttu-id="00ce9-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="00ce9-107">Click New.</span></span>
+3. <span data-ttu-id="00ce9-108">Adjon meg egy értéket a Beérkezési igazolás mezőben.</span><span class="sxs-lookup"><span data-stu-id="00ce9-108">In the Entry certificate field, type a value.</span></span>
+4. <span data-ttu-id="00ce9-109">A Vevői számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="00ce9-109">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="00ce9-110">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="00ce9-110">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="00ce9-111">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="00ce9-111">Click Save.</span></span>
+    * <span data-ttu-id="00ce9-112">Csatoljon további adatokat a naplóhoz.</span><span class="sxs-lookup"><span data-stu-id="00ce9-112">Attach additional information to the journal.</span></span>  
+    * <span data-ttu-id="00ce9-113">Például csatoljon egy beolvasott képet az EU beérkezési igazolásról a naplóhoz.</span><span class="sxs-lookup"><span data-stu-id="00ce9-113">For example, attach a scanned image of the EU Entry certificate to the journal.</span></span>  
 

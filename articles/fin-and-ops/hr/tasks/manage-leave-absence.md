@@ -17,33 +17,33 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4ce57495be4ae601d6ac06bb4780a2e1192dfcc5
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859344"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1509757"
 ---
-# <a name="manage-leave-of-absence"></a><span data-ttu-id="1961e-103">Szabadság kezelése</span><span class="sxs-lookup"><span data-stu-id="1961e-103">Manage leave of absence</span></span>
+# <a name="manage-leave-of-absence"></a><span data-ttu-id="aa63b-103">Szabadság kezelése</span><span class="sxs-lookup"><span data-stu-id="aa63b-103">Manage leave of absence</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1961e-104">Ez az eljárás végigvezeti az alkalmazotti szabadságrekordok létrehozásán.</span><span class="sxs-lookup"><span data-stu-id="1961e-104">This procedure walks through the creation of employee leave records.</span></span> <span data-ttu-id="1961e-105">Nyomon követheti többek között az egészségügyi, oktatási vagy szülői tevékenység miatt szabadságok idejét.</span><span class="sxs-lookup"><span data-stu-id="1961e-105">You can track leave time for reasons that include medical, educational, or parental activities.</span></span> <span data-ttu-id="1961e-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="1961e-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="aa63b-104">Ez az eljárás végigvezeti az alkalmazotti szabadságrekordok létrehozásán.</span><span class="sxs-lookup"><span data-stu-id="aa63b-104">This procedure walks through the creation of employee leave records.</span></span> <span data-ttu-id="aa63b-105">Nyomon követheti többek között az egészségügyi, oktatási vagy szülői tevékenység miatt szabadságok idejét.</span><span class="sxs-lookup"><span data-stu-id="aa63b-105">You can track leave time for reasons that include medical, educational, or parental activities.</span></span> <span data-ttu-id="aa63b-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="aa63b-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="1961e-107">Ugrás az Emberi erőforrások > Dolgozók > Alkalmazottak lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1961e-107">Go to Human resources > Workers > Employees.</span></span>
-2. <span data-ttu-id="1961e-108">A listából válasszon egy alkalmazottat.</span><span class="sxs-lookup"><span data-stu-id="1961e-108">In the list, select an employee.</span></span>
-3. <span data-ttu-id="1961e-109">A kiválasztott alkalmazott részletes adatainak megjelenítése az alkalmazott nevének kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="1961e-109">Display detailed information for the selected employee by selecting the employee's name.</span></span>
-4. <span data-ttu-id="1961e-110">Kattintson a Foglalkoztatás lapra.</span><span class="sxs-lookup"><span data-stu-id="1961e-110">Click the Employment tab.</span></span>
-5. <span data-ttu-id="1961e-111">Kattintson a Szabadság elemre.</span><span class="sxs-lookup"><span data-stu-id="1961e-111">Click Leave.</span></span>
-6. <span data-ttu-id="1961e-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1961e-112">Click New.</span></span>
-7. <span data-ttu-id="1961e-113">A Szabadságtípus mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="1961e-113">In the Leave type field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="1961e-114">A Szabadságtípusok képernyőn egy szabadságtípust társíthat egy kereseti kódhoz.</span><span class="sxs-lookup"><span data-stu-id="1961e-114">You can associate a leave type to an earning code in the Leave types form.</span></span> <span data-ttu-id="1961e-115">Ha egy szabadságtípus egy kereseti kóddal van társítva, egy kereseti sor fog létrejönni a társított kereseti kóddal a beírt szabadság időszakban.</span><span class="sxs-lookup"><span data-stu-id="1961e-115">If a leave type is associated with an earning code, an earning line will be generated with the associated earning code during the leave period that you enter.</span></span>  
-8. <span data-ttu-id="1961e-116">Ebből a listából válassza ki a szabadság típusát.</span><span class="sxs-lookup"><span data-stu-id="1961e-116">In the list, select a leave type.</span></span> 
-    * <span data-ttu-id="1961e-117">Például: Örökbefogadás</span><span class="sxs-lookup"><span data-stu-id="1961e-117">For example: Adoption</span></span>  
-9. <span data-ttu-id="1961e-118">Adja meg szabadság kezdetének időpontját.</span><span class="sxs-lookup"><span data-stu-id="1961e-118">Enter the date that the leave will start.</span></span> <span data-ttu-id="1961e-119">Példa: 2015-10-26</span><span class="sxs-lookup"><span data-stu-id="1961e-119">Example: '2015-10-26'</span></span>
-    * <span data-ttu-id="1961e-120">Példa: 2015-10-26</span><span class="sxs-lookup"><span data-stu-id="1961e-120">For example:  2015-10-26</span></span>  
-10. <span data-ttu-id="1961e-121">Adja meg szabadság kezdetének időpontját.</span><span class="sxs-lookup"><span data-stu-id="1961e-121">Enter the date that the leave will start.</span></span> 
-    * <span data-ttu-id="1961e-122">Példa: 2015-11-20</span><span class="sxs-lookup"><span data-stu-id="1961e-122">For example:  2015-11-20</span></span>  
-11. <span data-ttu-id="1961e-123">Adjon meg egy leírást a jegyzet mezőben.</span><span class="sxs-lookup"><span data-stu-id="1961e-123">In the note field, enter a description.</span></span>
-    * <span data-ttu-id="1961e-124">Például: örökbefogdás miatti szabadság</span><span class="sxs-lookup"><span data-stu-id="1961e-124">For example: Leave for adoption</span></span>  
-12. <span data-ttu-id="1961e-125">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1961e-125">Click Save.</span></span>
+1. <span data-ttu-id="aa63b-107">Ugrás az Emberi erőforrások > Dolgozók > Alkalmazottak lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="aa63b-107">Go to Human resources > Workers > Employees.</span></span>
+2. <span data-ttu-id="aa63b-108">A listából válasszon egy alkalmazottat.</span><span class="sxs-lookup"><span data-stu-id="aa63b-108">In the list, select an employee.</span></span>
+3. <span data-ttu-id="aa63b-109">A kiválasztott alkalmazott részletes adatainak megjelenítése az alkalmazott nevének kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="aa63b-109">Display detailed information for the selected employee by selecting the employee's name.</span></span>
+4. <span data-ttu-id="aa63b-110">Kattintson a Foglalkoztatás lapra.</span><span class="sxs-lookup"><span data-stu-id="aa63b-110">Click the Employment tab.</span></span>
+5. <span data-ttu-id="aa63b-111">Kattintson a Szabadság elemre.</span><span class="sxs-lookup"><span data-stu-id="aa63b-111">Click Leave.</span></span>
+6. <span data-ttu-id="aa63b-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="aa63b-112">Click New.</span></span>
+7. <span data-ttu-id="aa63b-113">A Szabadságtípus mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="aa63b-113">In the Leave type field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="aa63b-114">A Szabadságtípusok képernyőn egy szabadságtípust társíthat egy kereseti kódhoz.</span><span class="sxs-lookup"><span data-stu-id="aa63b-114">You can associate a leave type to an earning code in the Leave types form.</span></span> <span data-ttu-id="aa63b-115">Ha egy szabadságtípus egy kereseti kóddal van társítva, egy kereseti sor fog létrejönni a társított kereseti kóddal a beírt szabadság időszakban.</span><span class="sxs-lookup"><span data-stu-id="aa63b-115">If a leave type is associated with an earning code, an earning line will be generated with the associated earning code during the leave period that you enter.</span></span>  
+8. <span data-ttu-id="aa63b-116">Ebből a listából válassza ki a szabadság típusát.</span><span class="sxs-lookup"><span data-stu-id="aa63b-116">In the list, select a leave type.</span></span> 
+    * <span data-ttu-id="aa63b-117">Például: Örökbefogadás</span><span class="sxs-lookup"><span data-stu-id="aa63b-117">For example: Adoption</span></span>  
+9. <span data-ttu-id="aa63b-118">Adja meg szabadság kezdetének időpontját.</span><span class="sxs-lookup"><span data-stu-id="aa63b-118">Enter the date that the leave will start.</span></span> <span data-ttu-id="aa63b-119">Példa: 2015-10-26</span><span class="sxs-lookup"><span data-stu-id="aa63b-119">Example: '2015-10-26'</span></span>
+    * <span data-ttu-id="aa63b-120">Példa: 2015-10-26</span><span class="sxs-lookup"><span data-stu-id="aa63b-120">For example:  2015-10-26</span></span>  
+10. <span data-ttu-id="aa63b-121">Adja meg szabadság kezdetének időpontját.</span><span class="sxs-lookup"><span data-stu-id="aa63b-121">Enter the date that the leave will start.</span></span> 
+    * <span data-ttu-id="aa63b-122">Példa: 2015-11-20</span><span class="sxs-lookup"><span data-stu-id="aa63b-122">For example:  2015-11-20</span></span>  
+11. <span data-ttu-id="aa63b-123">Adjon meg egy leírást a jegyzet mezőben.</span><span class="sxs-lookup"><span data-stu-id="aa63b-123">In the note field, enter a description.</span></span>
+    * <span data-ttu-id="aa63b-124">Például: örökbefogdás miatti szabadság</span><span class="sxs-lookup"><span data-stu-id="aa63b-124">For example: Leave for adoption</span></span>  
+12. <span data-ttu-id="aa63b-125">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="aa63b-125">Click Save.</span></span>
 

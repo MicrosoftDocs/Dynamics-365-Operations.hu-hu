@@ -19,24 +19,24 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 84410a0fd112907bf821710c15a8f261c7d9f1ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546041"
 ---
-# <a name="service-activities"></a><span data-ttu-id="bd513-103">Szolgáltatási tevékenységek</span><span class="sxs-lookup"><span data-stu-id="bd513-103">Service activities</span></span>        
+# <a name="service-activities"></a><span data-ttu-id="e497b-103">Szolgáltatási tevékenységek</span><span class="sxs-lookup"><span data-stu-id="e497b-103">Service activities</span></span>        
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="bd513-104">Hozzon létre szolgáltatási tevékenységeket a szolgáltatási rendelés definiálásához és fenntartásához.</span><span class="sxs-lookup"><span data-stu-id="bd513-104">Create service activities to define and maintain tasks in a service order.</span></span> <span data-ttu-id="bd513-105">Egy szolgáltatási rendeléshez egy vagy több dolgozó által elvégzendő szolgáltatási tevékenység is tartozhat.</span><span class="sxs-lookup"><span data-stu-id="bd513-105">A service order can include one or more service activities to be performed by a worker.</span></span>
+<span data-ttu-id="e497b-104">Hozzon létre szolgáltatási tevékenységeket a szolgáltatási rendelés definiálásához és fenntartásához.</span><span class="sxs-lookup"><span data-stu-id="e497b-104">Create service activities to define and maintain tasks in a service order.</span></span> <span data-ttu-id="e497b-105">Egy szolgáltatási rendeléshez egy vagy több dolgozó által elvégzendő szolgáltatási tevékenység is tartozhat.</span><span class="sxs-lookup"><span data-stu-id="e497b-105">A service order can include one or more service activities to be performed by a worker.</span></span>
 
-<span data-ttu-id="bd513-106">A szolgáltatási tevékenységek a **Tevékenységtípusok** képernyőn vannak meghatározva.</span><span class="sxs-lookup"><span data-stu-id="bd513-106">Service activities are defined in the **Activity types** form.</span></span> <span data-ttu-id="bd513-107">(Kattintson ide: **Értékesítés és marketing** \> **Beállítás** \> **Tevékenységek** \> **Tevékenységtípusok**.) A tevékenységek beállítása után automatikusan hozzáadhatja azokat a kapcsolódó szolgáltatási megállapodások szerint, vagy kézzel is hozzáadhatja a tevékenységeket a sorok hozzáadásakor a szervizrendeléshez.</span><span class="sxs-lookup"><span data-stu-id="bd513-107">(Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.) After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.</span></span>
+<span data-ttu-id="e497b-106">A szolgáltatási tevékenységek a **Tevékenységtípusok** képernyőn vannak meghatározva.</span><span class="sxs-lookup"><span data-stu-id="e497b-106">Service activities are defined in the **Activity types** form.</span></span> <span data-ttu-id="e497b-107">(Kattintson ide: **Értékesítés és marketing** \> **Beállítás** \> **Tevékenységek** \> **Tevékenységtípusok**.) A tevékenységek beállítása után automatikusan hozzáadhatja azokat a kapcsolódó szolgáltatási megállapodások szerint, vagy kézzel is hozzáadhatja a tevékenységeket a sorok hozzáadásakor a szervizrendeléshez.</span><span class="sxs-lookup"><span data-stu-id="e497b-107">(Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.) After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.</span></span>
 
-<span data-ttu-id="bd513-108">A tevékenységek státusza megtekinthető a **Diszpécserközpont** lapon.</span><span class="sxs-lookup"><span data-stu-id="bd513-108">You can view the status of service activities in the **Dispatch board** form.</span></span> <span data-ttu-id="bd513-109">Azon a lapon az egyes tevékenységeket átadhatja az egyik dolgózótól a másiknak.</span><span class="sxs-lookup"><span data-stu-id="bd513-109">You can also reassign activities from one worker to another worker in that form.</span></span>
+<span data-ttu-id="e497b-108">A tevékenységek státusza megtekinthető a **Diszpécserközpont** lapon.</span><span class="sxs-lookup"><span data-stu-id="e497b-108">You can view the status of service activities in the **Dispatch board** form.</span></span> <span data-ttu-id="e497b-109">Azon a lapon az egyes tevékenységeket átadhatja az egyik dolgózótól a másiknak.</span><span class="sxs-lookup"><span data-stu-id="e497b-109">You can also reassign activities from one worker to another worker in that form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="bd513-110">Lásd még</span><span class="sxs-lookup"><span data-stu-id="bd513-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e497b-110">Lásd még</span><span class="sxs-lookup"><span data-stu-id="e497b-110">See also</span></span>
 
-<span data-ttu-id="bd513-111">[Diszpécserközpont (képernyő)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="bd513-111">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="e497b-111">[Diszpécserközpont (képernyő)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="e497b-111">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
 
