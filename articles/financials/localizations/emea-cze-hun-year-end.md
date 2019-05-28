@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e49e612ecd78768879731882a59fdba69cf96660
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: cb741f3f4f1078ca39ebc01cecfb7e7ef2e8e44a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370844"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513115"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Év végi zárás Magyarország és Csehország esetén
 [!include[banner](../includes/banner.md)]

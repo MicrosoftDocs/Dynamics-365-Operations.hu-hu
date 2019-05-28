@@ -1,9 +1,9 @@
 ---
-title: Kiegyenlítés – áttekintés
-description: Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
+title: Kiegyenlítés áttekintése
+description: Ez a témakör a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338291"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539967"
 ---
-# <a name="settlement-overview"></a>Kiegyenlítés – áttekintés
+# <a name="settlement-overview"></a>Kiegyenlítés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
+Ez a témakör a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
 
 Kiegyenlítés során az egy bizonylaton található tranzakciók alkalmazásra kerülnek egy másik bizonylaton található tranzakciókhoz, hogy az egyes bizonylatok egyenlegét növeljék vagy csökkentsék. Például egy kifizetés alkalmazható egy számlához. Számos tranzakció-típus egyenlíthető ki különböző időkben és különböző módokon. A kiegyenlítés járhat továbbá új tranzakciók létrehozásával.
 
@@ -40,7 +40,7 @@ A kötelezettségeken vagy kinnlevőségeken belüli tranzakciók létrejöhetne
 A tranzakciók a fizetési tétel idejében egyenlíthetőek ki. Például, amikor létrehoz egy kifizetést egy szállítónak, akkor általában kiválasztja a kifizetendő számlákat. A számlák kijelölésével megjelöli őket kiegyenlítésre a kifizetés számára. Amikor egy kinnlevőség-kifizetés ügyintéző rögzít egy vevői kifizetés, akkor megjelölik a megfelelő számlákat kiegyenlítésre, a vevői kifizetésben szereplő adatok alapján. A **Tranzakciók kiegyenlítése** lap használatos a tranzakciók megjelöléséhez kiegyenlítéshez. Ez a lap megnyitható bármely feladatlan számlából vagy kifizetésből. Amikor a tranzakció feladásra kerül, akkor a kiegyenlítés is feladásra kerül. A tranzakciók kiegyenlíthetőek továbbá a feladásuk után. Megadhat és feladhat egy vevői kifizetést anélkül, hogy kiegyenlítene vele bármilyen számlát. Előfordulhat azonban, hogy utána kell járnia a dolgoknak, hogy meggyőződjön, hogy a kifizetés a megfelelő számlát egyenlíti ki. A **Tranzakciók kiegyenlítése** lap megnyitható az **Összes vevő** vagy **Összes szállító** lapról, vagy a **Tranzakciók** lapról bármely vevőhöz, vagy szállítóhoz. Lefoglalhat továbbá feladott előlegeket egy számlához a megjelölve a kifizetést a beszerzési rendelés vagy értékesítési rendelés kiegyenlítéséhez. Ebben az esetben a kifizetés továbbra is nyílt egyenleggel fog rendelkezni, de nem lehet majd vele más számlát kiegyenlíteni. A kifizetés automatikusan a beszerzési rendelésből vagy értékesítési rendelésből létrejött számla kiegyenlítéséhez lesz felhasználva.
 
 ## <a name="how-to-settle-transactions"></a>Hogyan történik a tranzakciók kiegyenlítése
-A tranzakciók kiegyenlíthetőek manuálisan, automatikusan, vagy a két módszer kombinálásával. A kifizetési mód kiválasztása az üzleti folyamatoktól függ, amely ezután megvalósítható a kiegyenlítés beállításai alapján, amely a kötelezettségek paraméterekben és a kinnlevőségek paraméterekben található. Létrehozhat szállítói kifizetéseket és vevői közvetlen levonás kifizetéseket egy kifizetési ajánlat használatával, amely a kifizetendő számlák kiválasztásánál használatos. A kifizetési ajánlat manuálisan van elindítva, azonban azután a Microsoft Dynamics 365 for Finance and Operations automatikusan megjelöli a kijelölt számlákat kiegyenlítésre, amikor a kifizetések létrejönnek. Ha a kifizetéseket manuálisan hozza létre, akkor használhatja a **Tranzakciók kiegyenlítése** lapot, hogy kiválassza a kiegyenlítendő számlákat. Manuálisan kiválaszthatja a számlákat vagy használhatja a **Megjelölés prioritás szerint** opciót, hogy a számlákat automatikusan megjelölje kiegyenlítéshez. A **Megjelölés prioritás szerint** beállítás csak a kinnlevőségek számára érhető el. Hogy engedélyezze ezt a beállítást használja a **Kiegyenlítési rangsor** lapot a kinnlevőségi paraméterekben. Ha egy kifizetési ügynök rögzít egy kifizetés, de nem egyenlíti ki a kifizetést mielőtt feladja, akkor a kifizetés kiegyenlíthető automatikusan. Engedélyezheti az automatikus kiegyenlítést a kinnlevőségi paraméterekben és kötelezettség paraméterekben. Amikor az automatikus kiegyenlítést használja, akkor használhatja az előre meghatározott kiegyenlítési sorrendet, vagy meghatározhatja a saját kiegyenlítési rangsorát a kinnlevőségi paraméterekben. Ez a funkció csak a kinnlevőségek számára érhető el.
+A tranzakciók kiegyenlíthetőek manuálisan, automatikusan, vagy a két módszer kombinálásával. A kifizetési mód kiválasztása az üzleti folyamatoktól függ, amely ezután megvalósítható a kiegyenlítés beállításai alapján, amely a kötelezettségek paraméterekben és a kinnlevőségek paraméterekben található. Létrehozhat szállítói kifizetéseket és vevői közvetlen levonás kifizetéseket egy kifizetési ajánlat használatával, amely a kifizetendő számlák kiválasztásánál használatos. A kifizetési ajánlat manuálisan van elindítva, és azután a Dynamics 365 for Finance and Operations automatikusan megjelöli a kijelölt számlákat kiegyenlítésre, amikor a kifizetések létrejönnek. Ha a kifizetéseket manuálisan hozza létre, akkor használhatja a **Tranzakciók kiegyenlítése** lapot, hogy kiválassza a kiegyenlítendő számlákat. Manuálisan kiválaszthatja a számlákat vagy használhatja a **Megjelölés prioritás szerint** opciót, hogy a számlákat automatikusan megjelölje kiegyenlítéshez. A **Megjelölés prioritás szerint** beállítás csak a kinnlevőségek számára érhető el. Hogy engedélyezze ezt a beállítást használja a **Kiegyenlítési rangsor** lapot a kinnlevőségi paraméterekben. Ha egy kifizetési ügynök rögzít egy kifizetés, de nem egyenlíti ki a kifizetést mielőtt feladná, akkor a kifizetés kiegyenlíthető automatikusan. Engedélyezheti az automatikus kiegyenlítést a kinnlevőségi paraméterekben és kötelezettség paraméterekben. Az automatikus elszámolás ugyanazokon a jogi személyeken belül egyenlíti ki a tranzakciókat, és nem egyenlíti ki több jogi személy között. Amikor az automatikus kiegyenlítést használja, akkor használhatja az előre meghatározott kiegyenlítési sorrendet, vagy meghatározhatja a saját kiegyenlítési rangsorát a kinnlevőségi paraméterekben. Ez a funkció csak a kinnlevőségek számára érhető el.
 
 ## <a name="results-of-settlement"></a>A kifizetés eredménye
 Ahogy a tranzakciók kifizetésre kerülnek az egyes tranzakciók hátralékos egyenlege növekszik vagy csökken a megfelelő mértékben. Egy jellemző esetben, ahol egy számla és kifizetés kerül kiegyenlítésre az egyes tranzakciók állapota és egyenlege a következő szabályoknak megfelelően frissül:

@@ -3,7 +3,7 @@ title: Bank – devizaátértékelés
 description: Ez a témakör a banki devizaátértékelés folyamatával kapcsolatban nyújt áttekintést. A telepítéssel, a folyamat futtatásával, a folyamathoz tartozó számításokkal és az újraértékelési tranzakciók sztornírozásával kapcsolatban tartalmaz információkat.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976665"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538632"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – devizaátértékelés
 
@@ -52,7 +52,7 @@ A devizaáértékelések feldolgozása csak azután lehetséges, hogy bekapcsolt
 3. A **Számsorozatok** lapon adjon meg egy számsorozatot a devizaátértékeléshez.
 4. Frissítse a böngészőt, hogy megjelenjen a **Devizaátértékelés** a területlap **Időszakos feladatok** szakaszában.
 
-Minden olyan jogi személyhez be kell kapcsolnia a funkciót, amely használ majd devizaátértékelést.
+Minden olyan jogi személyhez be kell kapcsolnia a funkciót, amely használ majd devizaátértékelést. Ha Önhöz a rendszergazda szerepkör vagy a funkciókezelő szerepkör van társítva, akkor ez a lépés kiküszöbölhető a **Paraméter nélküli banki átértékelés engedélyezése** elnevezésű funkció engedélyezésével a **Funkciókezelés** munkaterületen.
 
 > [!NOTE]
 > Ha a jogi személy orosz, lengyel vagy magyar ország/régiókódot használ, akkor már végezhet banki devizaátértékelést. A más országok és régiók által használt devizaátértékelést nem használhatja.

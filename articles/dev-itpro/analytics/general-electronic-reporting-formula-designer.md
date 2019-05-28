@@ -3,7 +3,7 @@ title: Képletszerkesztő elektronikus jelentésekhez (ER)
 description: Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331276"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541268"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -439,6 +439,11 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>FILTER (lista, feltétel)</td>
 <td>Visszaadja meg a megadott listát, miután a lekérdezést módosította és szűrte a megadott feltételek szerint. Ez a függvény eltér a <strong>WHERE</strong> függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a <strong>Táblarekordok</strong> típus bármely ER adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.</td>
 <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a VendTable táblára és ha a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket <strong>karakterlánc</strong> adattípusként adja vissza, a <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
+</tr>
+<tr>
+<td>INDEX (lista, index)</td>
+<td>Ez a funkció egy megadott numerikus index által kiválasztott rekordot ad vissza a listában. Kivétel történik, ha az index kívül esik a listán szereplő rekordok tartományán.</td>
+<td>Ha megadja a <strong>DS</strong> adatforrást a <strong>Számított mező</strong> típushoz és az tartalmazza a <strong>(SPLIT ("A|B|C", “|”), 2)</strong> kifejezést, a <strong>DS.Value</strong> kifejezés a „B” szöveges értéket adja vissza. Az <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> kifejezés szintén a „B” szövegértéket adja vissza.</td>
 </tr>
 </tbody>
 </table>

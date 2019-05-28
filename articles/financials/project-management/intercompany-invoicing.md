@@ -19,11 +19,11 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 857aee796db2a4743cdbd91da3eb1cf6f996f9d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333484"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557260"
 ---
 # <a name="intercompany-invoicing"></a>Vállalatközi számlázás
 
@@ -52,7 +52,7 @@ A cél a Költségkontroll, az árbevétel elszámolást, az adók, és transzfe
     -   **Hozzájárulási arány** – Az **Árképzés** mezőben megadott szám a hozzájárulási arány, amelyet az eladási ár százalékaként fejeznek ki.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>1. Példa: A vállalatközi számlázásra vonatkozó paraméterek beállítása
-Ebben a példában az USSI a kölcsönadó jogi személy, és az erőforrásai azon kölcsönbe vevő jogi személy idő jelentése, amelyhez a végső vevővel kötött szerződést tartozik. Az Órák és kiadások, az USSI alkalmazottak jelentését tartalmazhatja a projekt számlázása, amely FRSI-t hoz létre. Ezen kívül van a tranzakcióknak egy harmadik forrása is, amely a kölcsönadó jogi személytől származik (ebben a példában USSI), amikor az biztosítja a megosztott szállítók szolgáltatásait (például FRSI) és azokat a költségeket továbbítja a projektek számára a leányvállalatokon belül. Az összes megfelelő számladokumentum és adó számítását a Dynamics 365 for Finance and Operations rendszer végzi el. 
+Ebben a példában az USSI a kölcsönadó jogi személy, és az erőforrásai azon kölcsönbe vevő jogi személy idő jelentése, amelyhez a végső vevővel kötött szerződést tartozik. Az Órák és kiadások, az USSI alkalmazottak jelentését tartalmazhatja a projekt számlázása, amely FRSI-t hoz létre. Ezen kívül van a tranzakcióknak egy harmadik forrása is, amely a kölcsönadó jogi személytől származik (ebben a példában USSI), amikor az biztosítja a megosztott szállítók szolgáltatásait (például FRSI) és azokat a költségeket továbbítja a projektek számára a leányvállalatokon belül. Az összes megfelelő számladokumentum és adó számítását a Microsoft Dynamics 365 for Finance and Operations rendszer végzi el. 
 
 Ebben a példában az FRSI lehetőségnek kell az USSI jogi személy vevőjének lennie és az USSI lehetőségnek az FRSI jogi személy szállítójának kell lennie. Ezt követően beállíthat egy vállalatközi kapcsolatot a két jogi személy között. A következő eljárás bemutatja,hogy hogyan állíthatja be úgy a paramétereket, hogy mindkét jogi személy szerepeljen a vállalatközi számlázásban.
 

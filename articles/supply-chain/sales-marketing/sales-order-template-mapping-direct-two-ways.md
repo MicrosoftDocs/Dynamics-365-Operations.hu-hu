@@ -3,7 +3,7 @@ title: Értékelési rendelések szinkronizálása közvetlenül a Sales és a F
 description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339119"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539114"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
 
@@ -146,6 +146,16 @@ Az értékesítési rendelés állapota **Aktív** marad annak biztosítására,
 ### <a name="setup-in-finance-and-operations"></a>Beállítás a Finance and Operations alkalmazásban
 
 - Lépjen az **Értékesítés és marketing** &gt; **Időszakos feladatok** &gt; **Eladási összegek számítása** lehetőséghez, és állítsa be a feladat futását kötegelt feladatként. Állítsa az **Értékesítési rendelések teljes összegének kiszámítása** beállítást **Igen** értékre. Ez a lépés azért fontos, mert csak a kiszámított eladási összeggel rendelkező értékesítési rendelések szinkronizálása történik meg a Sales szolgáltatásba. A kötegelt feladat gyakoriságát az értékesítési rendelés szinkronizálásának gyakoriságához kell igazítani.
+
+Ha a munkarendelés integrációját is használja, akkor be kell állítania az értékesítési forrást. Az értékesítés forrása használatos azon értékesítési rendelések megkülönböztetésére a Finance and Operations szolgáltatásban, amelyek a Field Service szolgáltatásban lévő munkarendelésekből jöttek létre. Ha egy értékesítési rendelés értékesítési eredetű a **Munkarendelés-integráció** típusból, a **Külső munkarendelés állapota** mező megjelenik az értékesítési rendelés fejlécében. Ezenkívül az értékesítés származásának segítségével garantálható, hogy munkarendelésekből a Field Service szolgáltatásban létrejött értékesítési rendelések kiszűrésre kerüljenek, amikor az értékesítési rendelések szinkronizálása zajlik a Finance and Operations szolgáltatásból a Field Service szolgáltatásba.
+
+1. Válassza az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Értékesítési forrás** lehetőséget.
+2. Válassza az **Új** elemet új értékesítési forrás létrehozásához.
+3. Az **Értékesítési forrás** mezőbe írjon be egy nevet az értékesítés eredetének, például **SalesOrder**.
+4. A **Leírás** mezőben adjon meg egy leírást, például **Értékesítési munkarendelés**.
+5. Jelölje be az **Eredettípus hozzárendelése** négyzetet.
+6. Állítsa az **Értékesítési forrás típusa** mezőt **Értékesítésirendelés-integráció** értékre.
+7. Válassza a **Mentés** lehetőséget.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Beállítás Értékesítési rendeléseknél (Fin and Ops – Sales) – Közvetlen adatintegrációs projekt
 

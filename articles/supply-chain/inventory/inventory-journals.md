@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553438"
 ---
 # <a name="inventory-journals"></a>Készletnaplók
 
@@ -68,7 +68,7 @@ Ha egy anyagjegyzéket készként jelent, akkor létrehozhatja az anyagjegyzék-
 
 ### <a name="item-arrival"></a>Cikk érkezése
 
-A cikkérkezési napló segítségével regisztrálhatja a cikkek bevételezését (például beszerzési rendelésből). Egy cikkérkezési napló létrehozható az érkezési kezelés részeként **Érkeztetés áttekintése** oldalon, vagy manuálisan létrehozhat egy naplóbejegyzést a **Cikk érkeztetés** oldalon. Ha engedélyezi a cikknaplónévnek a kitárolási helyek ellenőrzését, akkor a Dynamics 365 for Finance and Operations rendszer egy helyet keres a beérkezett cikkeknek és ha van hely, akkor célhelyet hoz létre a beérkező cikkeknek.
+A cikkérkezési napló segítségével regisztrálhatja a cikkek bevételezését (például beszerzési rendelésből). Egy cikkérkezési napló létrehozható az érkezési kezelés részeként **Érkeztetés áttekintése** oldalon, vagy manuálisan létrehozhat egy naplóbejegyzést a **Cikk érkeztetés** oldalon. Ha engedélyezi a cikknaplónévnek a kitárolási helyek ellenőrzését, akkor a Microsoft Dynamics 365 for Finance and Operations rendszer egy helyet keres a beérkezett cikkeknek és ha van hely, akkor célhelyet hoz létre a beérkező cikkeknek.
 
 ### <a name="production-input"></a>Termelések beérkezése
 

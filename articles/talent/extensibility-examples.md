@@ -3,14 +3,14 @@ title: A Talent bővítése a PowerApps és a Microsoft Flow segítségével –
 description: Ez a témakör néhány példa bővítési forgatókönyvet ír le a Microsoft Dynamics 365 for Talent alkalmazáshoz, amelyek a Microsoft PowerApps és Microsoft Flow megoldásokat használják.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949920"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518160"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
 
@@ -101,7 +101,21 @@ Ezzel a sablon bővíthető, így minden a SharePoint integrációt érintő for
 
 A **Flow – SharePoint integráció** sablon letöltéséhez ugorjon a [Flow – SharePoint integráció](https://go.microsoft.com/fwlink/?linkid=2082109) oldalra a Microsoft Letöltőközpontban
 
+## <a name="admin-console-to-manage-talent-pools"></a>Felügyeleti konzol a tehetségállományok kezeléséhez
 
+Ha engedélyezi a LinkedIn integrációját, az Attract automatikusan létrehoz egy LinkedIn tehetségállományt. Amikor egy állásközvetítő InMail-t cserél LinkedIn-en keresztül, az Attract létrehoz egy profilt a toborzotthoz, és a toborzott tagja lesz a LinkedIn tehetségállományának. Ez a PowerApps alkalmazás jól használható a tehetségállományokban lévő jelöltek átszervezéséhez a szakértelem alapján.
+
+Futtassa ezt a PowerApps alkalmazást felügyeleti konzolként a következő feladatok végrehajtásához:
+
+- Jelöltek lsitázása a tehetségállományban
+- A tehetségállományból jelöltek hozzáadása egy álláshoz vagy eltávolításuk
+- Jelöltek áthelyezése egyik tehetségállományból egy másikba
+- Annak meghatározása, hogy a jelöltek már részei-e egy tehetségállománynak, mielőtt áthelyezik azokat
+- A jelentkezők szakértelmének ellenőrzésére, mielőtt áthelyeznék őket egy másik tehetségállományba
+
+Ez a PowerApps alkalmazás több a többhöz kapcsolatot használ, így sablonként használhatja más esetekhez, ahol olyan rekordokat kell kinyernie, amelyek több a többhöz kapcsolattal rendelkeznek.
+
+A **Felügyeleti konzol a tehetségállományok kezeléséhez** sablon kezeléséhez, nyissa meg [Felügyeleti konzol a tehetségállományok kezeléséhez](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) oldalt a Microsoft letöltőközpontban.
 
 ## <a name="additional-resources"></a>További erőforrások
 

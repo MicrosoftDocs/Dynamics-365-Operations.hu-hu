@@ -18,11 +18,11 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558952"
 ---
 # <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
 
@@ -44,7 +44,7 @@ A dinamikus csatolás és frissítés az oldal biztonságáért felelős adatok 
 
 Néhány lapnak több nézete is van, mint például a Rács nézet, a Fejléc nézet, vagy a Részletek nézet. A **Megnyitás új ablakban** ikon hatására az egész lap egy új böngészőben nyílik meg. Emiatt nem lehet párhuzamosan megjeleníteni ugyan annak a lapnak két különböző nézetét a **Megnyitás új ablakban** szolgáltatás segítségével. Azonban a legtöbb ilyen oldal rendelkezik egy navigációs listával, aminek a segítségével válthat a rekordok között, egy hasonló eredményt elérve.
 
-A **Megnyitás új ablakban** funkció használata előtt a böngészőjében engedélyeznie kell a felugró ablakokat a Dynamics 365 for Finance and Operations rendszer weblapján. Például engedélyezheti a felugró ablakokat a „\*.dynamics.com” helyről.
+A **Megnyitás új ablakban** funkció használata előtt a böngészőjében engedélyeznie kell a felugró ablakokat a Microsoft Dynamics 365 for Finance and Operations rendszer weblapján. Például engedélyezheti a felugró ablakokat a „\*.dynamics.com” helyről.
 
 A **Megnyitás új ablakban** funkció csak akkor elérhető, ha több, mint egy oldal van megnyitva az ablakban. A felugró ablakok is automatikusan bezárulnak, ha nincs több megnyitható lap (ha az ablak utolsó lapja is bezárásra kerül). A Finance and Operations rendszer bezárja a megnyitott lapokat is, ha Ön az alkalmazás egy másik részére navigál. Ezért ha van egy megnyitott felugró ablak, és Ön az alkalmazáson belül egy másik területre navigál, a felugró ablak automatikusan bezárul, mert az ablakon belüli lapokat a rendszer automatikusan bezárta.
 

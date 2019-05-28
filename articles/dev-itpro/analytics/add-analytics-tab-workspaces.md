@@ -16,11 +16,11 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355219"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548185"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
@@ -88,7 +88,7 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 12. Kattintson a jobb gombbal a vezérlőelem, és adja meg **Új** \> **Csoport** új űrlapvezérlő csoport hozzáadása.
 13. Nevezze át a lap következhet, mint például **powerBIReportGroup**.
 14. Az űrlap-tervezőben, jelölje be a **PanoramaBody (lap)**, és húzza a vezérlő a **munkaterület** lapon.
-15. A tervezési meghatározásában, válassza ki a felső elem címkéje **tervezési |} Minta: Munkaterület üzemi**.
+15. A tervezési meghatározásában, válassza ki a felső elem címkéje **tervezési | Minta: Munkaterület üzemi**.
 16. Válasszon egy feladatot, kattintson rá a jobb gombbal, majd válassza a **Minta eltávolítása** menüpontot.
 17. Kattintson ismét jobb gombbal, és adja meg **Hozzáadás minta** \> **Munkaterület többlapos**.
 18. A build ellenőrizheti a módosítások végrehajtása.

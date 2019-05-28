@@ -18,11 +18,11 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561462"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Projektszerződések és projektek közvetlen szinkronizálása a Project Service Automation alkalmazásból a Finance and Operations alkalmazásba
 
@@ -102,7 +102,7 @@ Project Service Automation és Finance and Operations közötti integrációs me
     | Érték | Leírás   |
     |-------|---------------|
     | 1     | Nettó 30        |
-    | 2     | 2%10, nettó 30 |
+    | 2     | 2% 10, nettó 30 |
     | 3     | Nettó 45        |
     | 4     | Nettó 60        |
 

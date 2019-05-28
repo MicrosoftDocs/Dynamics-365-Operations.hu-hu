@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 543735fd030ae665125f9f2b6807839bfef10630
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2da572d98082e6c3feee90c323f7c8c68ed589fd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537975"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 

@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548032"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
@@ -802,7 +802,7 @@ Az üzleti rendszer üzembe helyezési választási lehetőség a kiskereskedők
 
 ### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Univerzális Windows-platform alkalmazás Retail Modern POS funkcióhoz
 
-A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asztali számítógépekhez és táblagépekhez, és Cloud POS formájában az asztali vagy táblagépes böngészőkhöz. Ebben a verzióban a Retail Modern POS-t univerzális Windows Platform (UWP) alkalmazássá konvertáljuk. Ez a módosítás lehetővé teszi a Retail Modern POS futtatását bármely Windows 10 eszközön (asztali, tábla vagy telefon), sőt, a nézetek közti váltást is a Continuum-kompatibilis eszközök esetében.
+A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asztali számítógépekhez és táblagépekhez, és Cloud POS formájában az asztali vagy táblagépes böngészőkhöz. Ebben a verzióban a Retail Moderns POS-t univerzális Windows Platform (UWP) alkalmazássá konvertáljuk. Ez a módosítás lehetővé teszi a Retail Modern POS futtatását bármely Windows 10 eszközön (asztali, tábla vagy telefon), sőt, a nézetek közti váltást is a Continuum-kompatibilis eszközök esetében.
 
 | Mit lehet tenni | Miért fontos ez |
 |-----------------|-----------------------|

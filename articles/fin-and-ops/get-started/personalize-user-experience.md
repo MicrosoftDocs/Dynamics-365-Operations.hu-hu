@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528844"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -75,7 +75,7 @@ Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők
 
 Ezenkívül a legtöbb alaptípusok explicit személyre szabása akkor érhetők el, kattintson a jobb gombbal egy elemre, és válassza a **Személyre szabást**. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem tulajdonság ablaka.
 
-[![Egy elem tulajdonságainak személyre szabása](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Egy elem tulajdonságainak személyre szabása](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 A tulajdonságablak segítségével egy elem testreszabása a következőképpen történik:
 
@@ -91,7 +91,7 @@ A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az ele
 
 Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módosításokat szeretne végrehajtani, amelyek nem érhetők el más mechanizmusokon keresztül (például az elemek újrarendezése), használhatja a **Személyre szabás** eszköztárat. Megnyitásához a **Személyre szabása** eszköztárnak válassza **Testreszabása ezen a képernyőn** a tulajdonságablak egy elemet. Is kiválaszthat **testreszabása ezen a képernyőn** a a **személyre szabása** csoportosításhoz a **lehetőségek** minden egyes oldal műveletpanel lapján.
 
-[![Személyre szabási eszköztár](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Személyre szabási eszköztár](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigálás a lapon
 

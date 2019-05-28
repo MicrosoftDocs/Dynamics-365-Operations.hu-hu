@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353793"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530868"
 ---
 # <a name="define-financial-dimensions"></a>Pénzügyi dimenziók meghatározása
 
@@ -32,8 +32,8 @@ Ez a feladat-útmutató bemutatja az entitás által támogatott pénzügyi dime
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Entitás által biztosított pénzügyi dimenzió létrehozása
 1. Ugrás a következő útvonalra: Főkönyv > Számlatükör > Dimenziók > Pénzügyi dimenziók.
-2. Kattintson az Új lehetőségre.
-3. A pénzügyi dimenzió alapjául a Felhasználói értékek forrása mezőben jelöljön ki egy rendszer által definiált entitást. 
+2. Kattintson az Új elemre.
+3. A pénzügyi dimenzió alapjául a Felhasználói értékek űrlapja mezőben jelöljön ki egy rendszer által definiált entitást. 
 4. A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.
     * A név eltérhet a rendszer által meghatározott entitástól, de nem tartalmazhat szóközt vagy különleges karaktert.  
 5. Kattintson az Aktiválás gombra.
@@ -46,8 +46,8 @@ Ez a feladat-útmutató bemutatja az entitás által támogatott pénzügyi dime
 
 ## <a name="create-a-custom-financial-dimension"></a>Egyéni pénzügyi dimenzió létrehozása
 1. Zárja be a lapot.
-2. Kattintson az Új lehetőségre.
-3. Az Értékek forrása mezőben válassza a(z) <Custom dimension> lehetőséget.
+2. Kattintson az Új elemre.
+3. A Használandó értékek forrása mezőben válassza az Egyéni dimenziók értéket
 4. A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.
     * A név nem tartalmazhat szóközt vagy különleges karaktert.  
     * A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát.   

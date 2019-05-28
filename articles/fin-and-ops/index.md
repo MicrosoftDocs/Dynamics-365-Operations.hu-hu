@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Microsoft Dynamics 365 for Finance and Operations dokumentáció
 description: A Microsoft Dynamics 365 for Finance and Operations szolgáltatásra vonatkozó dokumentáció.
 author: margoc
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 04/11/2019
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507589"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations dokumentáció
 
 [!include [banner](includes/banner.md)]
@@ -60,6 +64,11 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Értesítések kérése szolgáltatásfrissítésekkel kapcsolatban</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Adatfeladat automatizálása</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrációk</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Üzleti események</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Adatentitások</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integráció a Microsoft Flow használatával</a></p>
 
 <h3><a href="../financials/index.md">Pénzgazdálkodás</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kötelezettségek</a></p>
@@ -105,10 +114,6 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Fejlesztés</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Bővíthetőség</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Adatintegrálás</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Adatkezelés</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integráció</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Folyamatos szállítás</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobil platform</a></p>
@@ -116,10 +121,9 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre (Microsoft Dynamics 
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Adminisztráció</h3>
 <p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Felhőbeli telepítés</a></p>
-<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">On-premises telepítés</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Helyszíni telepítés</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Frissítés</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Karbantartás</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Adatkezelési keretrendszer</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Szervezeti adminisztráció</a></p>
 </td>

@@ -20,11 +20,11 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345996"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548554"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 
@@ -34,7 +34,7 @@ Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail
 
 ## <a name="overview"></a>Áttekintés
 
-A Retail Modern POS és a felhőalapú POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
+A Retail Modern POS és a felhőalapú POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
 
 ## <a name="architecture"></a>Felépítés
 

@@ -1,9 +1,9 @@
 ---
 title: Rendelési értesítések megjelenítése a pénztárnál (POS)
-description: Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben. Idővel a fejlesztők kiterjeszthetik ezeket az értesítéseket további műveletekre a rendelés teljesítése műveletek mellett.
+description: Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361337"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530270"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
@@ -67,6 +67,10 @@ A pénztárgombok most már egy számlálót is megjeleníthetnek, amelynek a se
 A következő ábrán az élő tartalom beállítása látható a rácsgombtervezőben.
 
 ![Élő tartalom beállítása a rácsgombtervezőben](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
+
+Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása**adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a Dynamics 365 for Finance and Operations rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail > Retail IT > Elosztási ütemezés** menüpontot, és futtassa a 1090 (Kasszák) munkát az elrendezésmódosítások szinkronizálásához 
+
+![A pénztár által használt képernyőelrendezés megkeresése](./media/Choose_screen_layout.png "Képernyőelrendezés megkeresése ")
 
 A következő ábra bemutatja a **Jobb felső** és a **Középen** kiválasztásának hatását a **Tartalom igazítása** mezőben, különböző méretű gombok esetében.
 

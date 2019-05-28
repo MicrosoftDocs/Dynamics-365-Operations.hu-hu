@@ -1,9 +1,9 @@
 ---
-title: Honosítási és szabályozási funkciók
-description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról.
+title: Globalizáció
+description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról és ajánlatokról.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2018
+ms.date: 04/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,49 +17,59 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b9815ee404981719888e4fdf637bd81f1744d7fb
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517085"
 ---
-# <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
+# <a name="globalization"></a>Globalizáció
+
+## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
+Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az országban/régióban érvényes követelményeknek kell megfelelnie a Finance and Operations rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
+
+[Microsoft Dynamics 365 for Finance and Operations – a 21Vianet működteti Kínában](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+
+## <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 
 [!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations a [Termékhonosítási és -fordítási rendelkezésre állási útmutatóban](https://aka.ms/dynamics_365_international_availability_deck) rögzített országokra/régiókra vonatkozóan tartalmaz funkciókat. Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
 
 Ez a témakör olyan erőforrások listáját tartalmazza, amelyek segítségével a következőket teheti: 
-- további információkat szerezhet ország- vagy régióspecifikus megoldások kialakításáról
-- ország- vagy régióspecifikus frissítéseket kaphat
-- szabályozási figyelmeztetéseket küldhet el és ellenőrizhet
-- megtudhatja, hogyan tudja az ország- vagy régióspecifikus funkciókat használni 
+- További információkat szerezhet ország- vagy régióspecifikus megoldások kialakításáról.
+- Ország- vagy régióspecifikus frissítéseket kaphat.
+- Szabályozási figyelmeztetéseket küldhet el és ellenőrizhet.
+- Megtudhatja, hogyan tudja az ország- vagy régióspecifikus funkciókat használni.
 
-## <a name="developing-localized-solutions"></a>Honosított funkciók fejlesztése
-A következő erőforrások az ország- és régióspecifikus testreszabásokat létrehozó, illetve a Microsoft által nem támogatott országok számára megoldást biztosító fejlesztők és ISV-k számára nyújtanak útmutatást és információkat.
+### <a name="developing-localized-solutions"></a>Honosított funkciók fejlesztése
+A következő erőforrások az ország- és régióspecifikus testreszabásokat létrehozó, illetve a Microsoft által nem támogatott országok számára megoldást biztosító fejlesztők és független szoftverszállítók számára nyújtanak útmutatást és információkat.
 -   [Eltérő honosítási modellek](separate-localization-models.md)
 -   [Ország/régióspecifikus tartalom alkalmazása](apply-country-context.md)
 -   [Jogszabályban előírt tanúsítványok](regulatory-certifications.md)
 -   [Honosítási funkciók osztályozása](classify-localization-features.md)
 -   [Országkódok – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="regulatory-updates-and-communication"></a>Jogszabályban előírt frissítések és közlemények
+### <a name="regulatory-updates-and-communication"></a>Jogszabályban előírt frissítések és közlemények
 A következő erőforrások a tervezett és új honosítási funkciókat ismertetik. 
 
-### <a name="regulatory-updates"></a>Jogszabály-követési frissítések
+#### <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 -   [Jogszabály-követési frissítések](../../financials/localizations/regulatory-updates.md)
 -   [Honosítási portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (hetente frissítve)
 -   [LCS megoldáskereső](../lifecycle-services/issue-search-lcs.md) (naponta frissítve)
 
-### <a name="communication-and-alerts"></a>Közlemények és figyelmeztetések
+#### <a name="communication-and-alerts"></a>Közlemények és figyelmeztetések
 -   [Szabályozások figyelésére és frissítésére vonatkozó kommunikáció](regulatory-watch-communication.md)
 -   [A Microsoft tájékoztatása az országos/régióbeli szabályozással kapcsolatos figyelmeztetésről és a jogszabály-követési funkciók állapotának nyomon követése](submit-localization-alerts.md)
 
-### <a name="dynamics-365-release-notes"></a>Dynamics 365-megjegyzések
-A [Dynamics 365 verziójára vonatkozó megjegyzések (PDF-fájl letöltése)](https://aka.ms/businessappsreleasenotes) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok új és továbbfejlesztett képességeit. 
+#### <a name="dynamics-365-release-notes"></a>Dynamics 365 programverzióra vonatkozó megjegyzések
+A [Dynamics 365 programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
 
-## <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
+#### <a name="finance-and-operations-whats-new"></a>Finance and Operations – újdonságok
+Az [Újdonságok tartalom](../../fin-and-ops/get-started/whats-new-changed.md) felsorolja azokat a funkciókat, amelyek a Finance and Operations meghatározott kiadásaiban szerepelnek.
+
+### <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:
 -   [Elektronikus jelentések áttekintése](../analytics/general-electronic-reporting.md)
 -   [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
@@ -71,7 +81,7 @@ Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi 
 -   [Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával](../analytics/generate-electronic-documents-update-application-data.md)
 
-## <a name="task-guides"></a>Feladat-útmutatók
+### <a name="task-guides"></a>Feladat-útmutatók
 A feladat-útmutatók a termék súgópaneljéről érhetők el, és lépésről lépésre végigvezetik a felhasználót a legfontosabb üzleti folyamatokon. A feladat-útmutatók megnyitásával végigolvashatja a kívánt üzleti folyamat lépéseit, vagy a feladat-útmutatót lejátszva a rendszer végigkíséri az üzleti folyamat és az adatbevitel menetén.
 
 A feladat-útmutatók megkereséséhez lépjen a Microsoft Dynamics 365 for Finance and Operations kívánt oldalára, és kattintson a Súgó lehetőségre. A súgó panel felsorolja az oldalt használó feladat-útmutatókat. A súgó panelen cím szerint is kereshet feladat-útmutatókra.
@@ -79,7 +89,7 @@ A feladat-útmutatók megkereséséhez lépjen a Microsoft Dynamics 365 for Fina
 További információ: [Feladat-útmutatók](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
-## <a name="countryregion-specific-help-content"></a>Ország- vagy régióspecifikus súgótartalmak
+### <a name="countryregion-specific-help-content"></a>Ország- vagy régióspecifikus súgótartalmak
 :::row:::
     :::column:::
         - [Ausztrália](../../financials/localizations/australia.md)

@@ -20,11 +20,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355679"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563668"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
@@ -201,7 +201,7 @@ Az alábbi ábra a következő tranzakciókat mutatja be:
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.

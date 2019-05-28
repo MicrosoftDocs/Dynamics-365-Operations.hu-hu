@@ -3,7 +3,7 @@ title: Kettős pénznem
 description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 for Finance and Operations esetében.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532248"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
@@ -61,6 +61,9 @@ Különféle jelentések és lekérdezések esetében hozzá lett adva egy logik
 ## <a name="financial-journals"></a>Pénzügyi naplók
 
 A pénzügyi naplók, például a főkönyvi napló és a szállítói számla naplója frissítve lett, hogy további információt tartalmazzanak a jelentési pénznemben. A bizonylat és a napló összegei most már a jelentési pénznemben láthatók. Ezen kívül a jelentési pénznem árfolyamáról most már információk jelennek meg a naplósorok **Általános** lapján. Ennek megfelelően felül lehet írni a jelentési pénznem árfolyamát a tranzakciók beírásakor.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Szállítói számlák, értékesítési rendelések és értékesítési szerződések
+A szállítói számlák, értékesítési rendelések és értékesítési szerződések frissítve lettek, így már tartalmazzák a jelentési pénznem rögzített árfolyamát. Ha a tranzakció pénzneme eltér, akkor meg lehet határozni a könyvelési pénznemhez és a jelentési pénznemhez is egy rögzített árfolyamot. Ha a könyvelési pénznem és a jelentési pénznem megegyezik, akkor a rögzített árfolyamot szinkronizálni fogja a rendszer úgy, hogy a könyvelési pénznem rögzített árfolyamát használja a jelentési pénznem rögzített árfolyamaként. Ehhez a konfigurációhoz a jelentési pénznem rögzített árfolyama nem módosítható. Ha a könyvelési pénznem és a jelentési pénznem eltér, akkor meg lehet határozni a könyvelési pénznemhez és a jelentési pénznemhez is egy rögzített árfolyamot a tranzakció bevitele során. Ha a jelentési pénznem nincs megadva a főkönyvben, akkor a **Jelentési pénznem rögzített árfolyama** mező nincs engedélyezve, és a rendszer nem számítja ki a jelentési pénznem összegét.
 
 ## <a name="module-changes"></a>Modulváltozások
 

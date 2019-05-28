@@ -20,11 +20,11 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356645"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546258"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>A termékkonfigurációs modellek kifejezésmegszorításai
 
@@ -83,7 +83,7 @@ A termék a következő megszorítás beállítások használatával konfigurál
 
 ### <a name="expression-constraint-setup"></a>Kifejezésmegszorítás
 
-(Szín == "Fekete" & (méret == "30" |} méret == "50")) |} (szín == "Piros" & mérete = "20")
+(Szín == "Fekete" & (méret == "30" | méret == "50")) | (szín == "Piros" & mérete = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>I. operátorokkal, vagy infix a jelölés kifejezés megszorítások írva?
 Előtag rendelkezésre álló operátorok a használatával egy Kifejezésmegszorítás írhat vagy használatával infix jelölés. A **Min**, **Max** és **Abs** operátoroknál nem használhat infix jelölést. A legtöbb programnyelven alapértelmezésként ezen operátorok jelennek meg.
