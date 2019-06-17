@@ -1,54 +1,108 @@
----
-title: HU-00001 Árfolyamszámítás
-description: Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.
-author: v-oloski
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Hungary
-ms.author: v-oloski
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c8104393143f2b118af19b13d833bffd8dd155c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537958"
----
-# <a name="hu-00001-exchange-rate-calculation"></a><span data-ttu-id="8367b-103">HU-00001 Árfolyamszámítás</span><span class="sxs-lookup"><span data-stu-id="8367b-103">HU-00001 Exchange rate calculation</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="8367b-104">Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.</span><span class="sxs-lookup"><span data-stu-id="8367b-104">This task walks you through running an average exchange rate calculation.</span></span> 
-
-<span data-ttu-id="8367b-105">Az átváltási árfolyamok naplósorokhoz számíthatók ki.</span><span class="sxs-lookup"><span data-stu-id="8367b-105">You can calculate the exchange rates for journal lines.</span></span> <span data-ttu-id="8367b-106">Készpénzes és banki tranzakciókhoz a napi átváltási árfolyam vagy egy átlagos átváltási árfolyam használható.</span><span class="sxs-lookup"><span data-stu-id="8367b-106">For cash and bank transactions, you can use either the daily exchange rate or an average exchange rate.</span></span> <span data-ttu-id="8367b-107">Pénztár és bank naplósorokban az átlagos átváltási árfolyam kiszámításához a könyvelési pénznem és a külföldi pénznem összesített összegei használatosak a tranzakció megadott időpontja előtt.</span><span class="sxs-lookup"><span data-stu-id="8367b-107">For petty cash and bank journal lines, the calculation of the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.</span></span>
-
-<span data-ttu-id="8367b-108">Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a jogi személy székhelyének országát/régióját Magyarországra állítottuk.</span><span class="sxs-lookup"><span data-stu-id="8367b-108">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Hungary.</span></span> <span data-ttu-id="8367b-109">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="8367b-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
-
-1. <span data-ttu-id="8367b-110">Ugorjon a Főkönyv > Naplóbejegyzések > Általános naplók pontra.</span><span class="sxs-lookup"><span data-stu-id="8367b-110">Go to General ledger > Journal entries > General journals.</span></span>
-2. <span data-ttu-id="8367b-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8367b-111">Click New.</span></span>
-3. <span data-ttu-id="8367b-112">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8367b-112">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="8367b-113">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="8367b-113">Click Lines.</span></span>
-5. <span data-ttu-id="8367b-114">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8367b-114">In the Account type field, select 'Customer'.</span></span>
-6. <span data-ttu-id="8367b-115">A Számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="8367b-115">In the Account field, specify the desired values.</span></span>
-7. <span data-ttu-id="8367b-116">Írjon be bármilyen összeget a Terhelés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8367b-116">In the Debit field, enter any amount.</span></span>
-8. <span data-ttu-id="8367b-117">Az Ellenszámla típusa mezőben válassza a „Bank” értéket.</span><span class="sxs-lookup"><span data-stu-id="8367b-117">In the Offset account type field, select 'Bank'.</span></span>
-9. <span data-ttu-id="8367b-118">Az Ellenszámla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="8367b-118">In the Offset account field, specify the desired values.</span></span>
-10. <span data-ttu-id="8367b-119">A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8367b-119">In the Currency field, enter or select a value.</span></span>
-    * <span data-ttu-id="8367b-120">Használhatja az „USD” értéket.</span><span class="sxs-lookup"><span data-stu-id="8367b-120">You may use value 'USD'.</span></span>  
-11. <span data-ttu-id="8367b-121">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="8367b-121">Click Functions.</span></span>
-12. <span data-ttu-id="8367b-122">Kattintson az Árfolyam-számítási szabályok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8367b-122">Click Exchange rate calculation.</span></span>
-13. <span data-ttu-id="8367b-123">Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="8367b-123">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="8367b-124">Válasszon ki egy tranzakciódátumot egy időszak meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="8367b-124">Select a transaction date to specify a period.</span></span> <span data-ttu-id="8367b-125">A rendszer azokat a főkönyvi tranzakciókat veszi figyelembe az átlagos árfolyam számításánál, amelyek tranzakciódátumai az ezen mezőbe beírt dátumra esnek vagy azt követik, valamint a naplósor tranzakciódátumánál korábbiak.</span><span class="sxs-lookup"><span data-stu-id="8367b-125">Ledger transactions are included in the calculation of the average exchange rate if the transaction dates are on or after the date that you enter in this field, and before the transaction date of the journal line.</span></span> <span data-ttu-id="8367b-126">Ha ezt a mezőt üresen hagyja, a rendszer a számítás során figyelembe veszi mindazokat a főkönyvi tranzakciókat, amelyek tranzakciódátuma a naplósor tranzakciódátuma elé esik.</span><span class="sxs-lookup"><span data-stu-id="8367b-126">If you leave this field blank, the calculation includes all ledger transactions for which the transaction dates are before the transaction date of the journal line.</span></span>  
-14. <span data-ttu-id="8367b-127">Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="8367b-127">Expand the Records to include section.</span></span>
-    * <span data-ttu-id="8367b-128">Majd a Belefoglalandó rekordok fül használatával állítson be kiválasztási feltételeket az átváltási árfolyam számításában szerepeltetni kívánt sorokhoz.</span><span class="sxs-lookup"><span data-stu-id="8367b-128">Use ‘Records to include tab’ to set up selection criteria for the lines to include in the exchange rate calculation.</span></span> <span data-ttu-id="8367b-129">Ha nem állít be kiválasztási feltételeket a Szűrő űrlapon, a kiválasztott számítási módszer kerül felhasználásra az aktuális naplóban lévő minden sorhoz.</span><span class="sxs-lookup"><span data-stu-id="8367b-129">If you do not set up selection criteria in the Filter form, the calculation method that you selected is used for all lines in the current journal.</span></span>  
-15. <span data-ttu-id="8367b-130">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8367b-130">Click OK.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="hu-00001-exchange-rate-calculation.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>hu-00001-exchange-rate-calculation.b974eb.8ab710e2506c2c44f3f44f39f02ed8d8bf4f059e.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>8ab710e2506c2c44f3f44f39f02ed8d8bf4f059e</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\hu-00001-exchange-rate-calculation.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>HU-00001 Exchange rate calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HU-00001 Árfolyamszámítás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This task walks you through running an average exchange rate calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>HU-00001 Exchange rate calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HU-00001 Árfolyamszámítás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This task walks you through running an average exchange rate calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>You can calculate the exchange rates for journal lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átváltási árfolyamok naplósorokhoz számíthatók ki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For cash and bank transactions, you can use either the daily exchange rate or an average exchange rate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készpénzes és banki tranzakciókhoz a napi átváltási árfolyam vagy egy átlagos átváltási árfolyam használható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>For petty cash and bank journal lines, the calculation of the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztár és bank naplósorokban az átlagos átváltási árfolyam kiszámításához a könyvelési pénznem és a külföldi pénznem összesített összegei használatosak a tranzakció megadott időpontja előtt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Hungary.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a jogi személy székhelyének országát/régióját Magyarországra állítottuk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Go to General ledger &gt; Journal entries &gt; General journals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Főkönyv &gt; Naplóbejegyzések &gt; Általános naplók pontra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In the Name field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Név mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Click Lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Sorok pontra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>In the Account type field, select 'Customer'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számla típusa mezőben válassza a Vevő lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>In the Account field, specify the desired values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számla mezőben adja meg a kívánt értékeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In the Debit field, enter any amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Írjon be bármilyen összeget a Terhelés mezőbe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>In the Offset account type field, select 'Bank'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Ellenszámla típusa mezőben válassza a „Bank” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In the Offset account field, specify the desired values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Ellenszámla mezőben adja meg a kívánt értékeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the Currency field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>You may use value 'USD'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Használhatja az „USD” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Click Functions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Funkciók elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Click Exchange rate calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Árfolyam-számítási szabályok lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the From date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon meg egy dátumot a Kezdő dátum mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Select a transaction date to specify a period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy tranzakciódátumot egy időszak meghatározásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Ledger transactions are included in the calculation of the average exchange rate if the transaction dates are on or after the date that you enter in this field, and before the transaction date of the journal line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer azokat a főkönyvi tranzakciókat veszi figyelembe az átlagos árfolyam számításánál, amelyek tranzakciódátumai az ezen mezőbe beírt dátumra esnek vagy azt követik, valamint a naplósor tranzakciódátumánál korábbiak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>If you leave this field blank, the calculation includes all ledger transactions for which the transaction dates are before the transaction date of the journal line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha ezt a mezőt üresen hagyja, a rendszer a számítás során figyelembe veszi mindazokat a főkönyvi tranzakciókat, amelyek tranzakciódátuma a naplósor tranzakciódátuma elé esik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Expand the Records to include section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Use ‘Records to include tab’ to set up selection criteria for the lines to include in the exchange rate calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Majd a Belefoglalandó rekordok fül használatával állítson be kiválasztási feltételeket az átváltási árfolyam számításában szerepeltetni kívánt sorokhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>If you do not set up selection criteria in the Filter form, the calculation method that you selected is used for all lines in the current journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha nem állít be kiválasztási feltételeket a Szűrő űrlapon, a kiválasztott számítási módszer kerül felhasználásra az aktuális naplóban lévő minden sorhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,99 +1,534 @@
----
-title: Árfolyam-korrekciók
-description: Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 04/10/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: LedgerParameters
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 272683
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 83f1b5686088292a4f23da2b479e963a8ed086fa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513091"
----
-# <a name="exchange-rate-adjustments"></a><span data-ttu-id="72567-103">Árfolyam-korrekciók</span><span class="sxs-lookup"><span data-stu-id="72567-103">Exchange rate adjustments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="72567-104">Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.</span><span class="sxs-lookup"><span data-stu-id="72567-104">This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span>
-
-<span data-ttu-id="72567-105">Az Észtországra, Magyarországra, Csehországra, Lettországra, Litvániára, Lengyelországra és Oroszországra vonatkozó árfolyam-korrekciós funkció a következő, a Kinnlevőségek és a Kötelezettségek szempontjából releváns kiterjesztéseket tartalmazza:</span><span class="sxs-lookup"><span data-stu-id="72567-105">The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</span></span>
-
--   <span data-ttu-id="72567-106">Az árfolyam-korrekciók feladásait az eredeti kiigazítások helyesbítéseként (negatív összegek) lehet sztornírozni.</span><span class="sxs-lookup"><span data-stu-id="72567-106">Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</span></span>
--   <span data-ttu-id="72567-107">Egymást követő nem realizált kiigazítások feladásakor a rendszer azonos főkönyvi feladási számlát és tranzakciótípust használ, függetlenül attól, hogy a kiigazítások nyereséget vagy veszteséget képviselnek.</span><span class="sxs-lookup"><span data-stu-id="72567-107">When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</span></span>
--   <span data-ttu-id="72567-108">A számított árfolyamnyereségeket mindig nyereségszámlákra adja fel, és a számított árfolyamveszteségeket pedig mindig eredményszámlákra adja fel.</span><span class="sxs-lookup"><span data-stu-id="72567-108">Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</span></span>
-
-<span data-ttu-id="72567-109">Azon jogi személyek, akik elsődleges címe a Cseh Köztársaságban van, speciális árfolyam-korrekciós módot használhatnak.</span><span class="sxs-lookup"><span data-stu-id="72567-109">Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</span></span> <span data-ttu-id="72567-110">Ezt a módot Növekményes módnak nevezik.</span><span class="sxs-lookup"><span data-stu-id="72567-110">This method is known as the Incremental method.</span></span> <span data-ttu-id="72567-111">Ha ez a mód be van kapcsolva, az aktuális funkció által bevezetett módosításokat a rendszer nem alkalmazza.</span><span class="sxs-lookup"><span data-stu-id="72567-111">When this method is turned on, changes that the current feature introduces aren't applied.</span></span> <span data-ttu-id="72567-112">A nem realizált és a realizált nyereségek vagy veszteségek számítása az utolsó használt árfolyamon történik.</span><span class="sxs-lookup"><span data-stu-id="72567-112">Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</span></span> <span data-ttu-id="72567-113">A helyesbített eredeti összeg az eredeti összeg helyett használatos a számítás alapjaként.</span><span class="sxs-lookup"><span data-stu-id="72567-113">The adjusted amount is used instead of the original amount as the basis of calculation.</span></span> <span data-ttu-id="72567-114">A Növekményes árfolyam-korrekciós módra történő váltáshoz a **Főkönyvi paraméterek** lapon a **Devizaátértékelés** szakaszban található **Számítási mód** mezőben válassza a **Növekményes** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72567-114">To switch to the Incremental exchange rate adjustment method, on the **General ledger parameters** page, in the **Foreign currency revaluation** section, in the **Calculation method** field, select **Incremental**.</span></span> <span data-ttu-id="72567-115">A következő példa bemutatja az árfolyam-korrekció funkció működését Észtországban, Magyarországon, Csehországban, Lettországban, Litvániában, Lengyelországban és Oroszországban.</span><span class="sxs-lookup"><span data-stu-id="72567-115">The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span> <span data-ttu-id="72567-116">Lássuk a következő üzleti esetet:</span><span class="sxs-lookup"><span data-stu-id="72567-116">Here is the business scenario for this example:</span></span>
-
--   <span data-ttu-id="72567-117">2012. december 1-jén devizában adtak fel egy számlát.</span><span class="sxs-lookup"><span data-stu-id="72567-117">An invoice in a foreign currency is posted on December 1, 2012.</span></span>
--   <span data-ttu-id="72567-118">A devizában történő kifizetés feladása 2013. január 3-án történt.</span><span class="sxs-lookup"><span data-stu-id="72567-118">The payment in the foreign currency is posted on January 3, 2013</span></span>
--   <span data-ttu-id="72567-119">A kiegyenlítés a kifizetés számlára történő alkalmazásával történik.</span><span class="sxs-lookup"><span data-stu-id="72567-119">Settlement is done to apply the payment to the invoice.</span></span>
--   <span data-ttu-id="72567-120">Az árfolyam-korrekciót 2012. december 31-én hajtják végre (mód = Normál).</span><span class="sxs-lookup"><span data-stu-id="72567-120">Exchange rates adjustment is done on December 31, 2012 (method = Standard).</span></span>
--   <span data-ttu-id="72567-121">Az árfolyam-korrekciót 2013. január 1-jén hajtják végre (mód = Számla dátuma).</span><span class="sxs-lookup"><span data-stu-id="72567-121">Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</span></span>
-
-<span data-ttu-id="72567-122">Ebben a példában a kanadai dollár (CAD) amerikai dollárra (USD) történő átváltási árfolyamai:</span><span class="sxs-lookup"><span data-stu-id="72567-122">Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</span></span>
-
--   <span data-ttu-id="72567-123">2012. december 1.: 400,0000</span><span class="sxs-lookup"><span data-stu-id="72567-123">December 1, 2012: 400.0000</span></span>
--   <span data-ttu-id="72567-124">2012. december 31.: 450,0000</span><span class="sxs-lookup"><span data-stu-id="72567-124">December 31, 2012: 450.0000</span></span>
--   <span data-ttu-id="72567-125">2013. január 3.: 420,0000</span><span class="sxs-lookup"><span data-stu-id="72567-125">January 3, 2013: 420.0000</span></span>
-
-### <a name="invoice"></a><span data-ttu-id="72567-126">Számla</span><span class="sxs-lookup"><span data-stu-id="72567-126">Invoice</span></span>
-
-| <span data-ttu-id="72567-127">Dátum</span><span class="sxs-lookup"><span data-stu-id="72567-127">Date</span></span>                             | <span data-ttu-id="72567-128">Tartozik/követel</span><span class="sxs-lookup"><span data-stu-id="72567-128">Debit/credit</span></span> | <span data-ttu-id="72567-129">Összegek</span><span class="sxs-lookup"><span data-stu-id="72567-129">Amounts</span></span>               | <span data-ttu-id="72567-130">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="72567-130">General ledger (GL) account</span></span>    | <span data-ttu-id="72567-131">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="72567-131">Transaction type</span></span>             | <span data-ttu-id="72567-132">Feladás típusa</span><span class="sxs-lookup"><span data-stu-id="72567-132">Posting type</span></span>       | <span data-ttu-id="72567-133">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-133">Credit</span></span> | <span data-ttu-id="72567-134">Korrekció</span><span class="sxs-lookup"><span data-stu-id="72567-134">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="72567-135">12-dec-1</span><span class="sxs-lookup"><span data-stu-id="72567-135">1-Dec-12</span></span>                         | <span data-ttu-id="72567-136">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-136">Debit</span></span>        | <span data-ttu-id="72567-137">10 000 CAD/40 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-137">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="72567-138">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-138">AR</span></span>                             | <span data-ttu-id="72567-139">Számla</span><span class="sxs-lookup"><span data-stu-id="72567-139">Invoice</span></span>                      | <span data-ttu-id="72567-140">Vevői egyenleg</span><span class="sxs-lookup"><span data-stu-id="72567-140">Customer balance</span></span>   |        |            |
-| <span data-ttu-id="72567-141">12-dec-1</span><span class="sxs-lookup"><span data-stu-id="72567-141">1-Dec-12</span></span>                         | <span data-ttu-id="72567-142">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-142">Credit</span></span>       | <span data-ttu-id="72567-143">10 000 CAD/40 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-143">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="72567-144">Ellenoldal</span><span class="sxs-lookup"><span data-stu-id="72567-144">Offset</span></span>                         | <span data-ttu-id="72567-145">Számla</span><span class="sxs-lookup"><span data-stu-id="72567-145">Invoice</span></span>                      | <span data-ttu-id="72567-146">Főkönyvi napló</span><span class="sxs-lookup"><span data-stu-id="72567-146">Ledger journal</span></span>     | <span data-ttu-id="72567-147">X</span><span class="sxs-lookup"><span data-stu-id="72567-147">X</span></span>      |
-
-### <a name="payment"></a><span data-ttu-id="72567-148">Fizetés</span><span class="sxs-lookup"><span data-stu-id="72567-148">Payment</span></span>
-
-| <span data-ttu-id="72567-149">Dátum</span><span class="sxs-lookup"><span data-stu-id="72567-149">Date</span></span>                             | <span data-ttu-id="72567-150">Tartozik/követel</span><span class="sxs-lookup"><span data-stu-id="72567-150">Debit/credit</span></span> | <span data-ttu-id="72567-151">Összegek</span><span class="sxs-lookup"><span data-stu-id="72567-151">Amounts</span></span>               | <span data-ttu-id="72567-152">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="72567-152">General ledger (GL) account</span></span>    | <span data-ttu-id="72567-153">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="72567-153">Transaction type</span></span>             | <span data-ttu-id="72567-154">Feladás típusa</span><span class="sxs-lookup"><span data-stu-id="72567-154">Posting type</span></span>       | <span data-ttu-id="72567-155">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-155">Credit</span></span> | <span data-ttu-id="72567-156">Korrekció</span><span class="sxs-lookup"><span data-stu-id="72567-156">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="72567-157">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-157">3-Jan-13</span></span>                         | <span data-ttu-id="72567-158">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-158">Debit</span></span>        | <span data-ttu-id="72567-159">10 000 CAD/42 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-159">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="72567-160">Ellenoldal</span><span class="sxs-lookup"><span data-stu-id="72567-160">Offset</span></span>                         | <span data-ttu-id="72567-161">Fizetés</span><span class="sxs-lookup"><span data-stu-id="72567-161">Payment</span></span>                      | <span data-ttu-id="72567-162">Főkönyvi napló</span><span class="sxs-lookup"><span data-stu-id="72567-162">Ledger journal</span></span>     |        |            |
-| <span data-ttu-id="72567-163">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-163">3-Jan-13</span></span>                         | <span data-ttu-id="72567-164">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-164">Credit</span></span>       | <span data-ttu-id="72567-165">10 000 CAD/42 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-165">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="72567-166">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-166">AR</span></span>                             | <span data-ttu-id="72567-167">Fizetés</span><span class="sxs-lookup"><span data-stu-id="72567-167">Payment</span></span>                      | <span data-ttu-id="72567-168">Vevői egyenleg</span><span class="sxs-lookup"><span data-stu-id="72567-168">Customer balance</span></span>   | <span data-ttu-id="72567-169">X</span><span class="sxs-lookup"><span data-stu-id="72567-169">X</span></span>      |            |
-
-### <a name="settlement"></a><span data-ttu-id="72567-170">Kiegyenlítés</span><span class="sxs-lookup"><span data-stu-id="72567-170">Settlement</span></span>
-
-| <span data-ttu-id="72567-171">Dátum</span><span class="sxs-lookup"><span data-stu-id="72567-171">Date</span></span>                             | <span data-ttu-id="72567-172">Tartozik/követel</span><span class="sxs-lookup"><span data-stu-id="72567-172">Debit/credit</span></span> | <span data-ttu-id="72567-173">Összegek</span><span class="sxs-lookup"><span data-stu-id="72567-173">Amounts</span></span>               | <span data-ttu-id="72567-174">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="72567-174">General ledger (GL) account</span></span>    | <span data-ttu-id="72567-175">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="72567-175">Transaction type</span></span>             | <span data-ttu-id="72567-176">Feladás típusa</span><span class="sxs-lookup"><span data-stu-id="72567-176">Posting type</span></span>       | <span data-ttu-id="72567-177">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-177">Credit</span></span> | <span data-ttu-id="72567-178">Korrekció</span><span class="sxs-lookup"><span data-stu-id="72567-178">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-|<span data-ttu-id="72567-179">2013. január 3. (= kifizetési dátum)</span><span class="sxs-lookup"><span data-stu-id="72567-179">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="72567-180">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-180">Debit</span></span>        | <span data-ttu-id="72567-181">0 CAD/2 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-181">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="72567-182">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-182">AR</span></span>                             | <span data-ttu-id="72567-183">Vevő</span><span class="sxs-lookup"><span data-stu-id="72567-183">Customer</span></span>                     | <span data-ttu-id="72567-184">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-184">Exchange rate gain</span></span> |        |            |
-<span data-ttu-id="72567-185">2013. január 3. (= kifizetési dátum)</span><span class="sxs-lookup"><span data-stu-id="72567-185">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="72567-186">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-186">Credit</span></span>       | <span data-ttu-id="72567-187">0 CAD/2 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-187">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="72567-188">Realizált árfolyam-korrekciós nyereség</span><span class="sxs-lookup"><span data-stu-id="72567-188">Realized currency adj profit</span></span>   | <span data-ttu-id="72567-189">Vevő</span><span class="sxs-lookup"><span data-stu-id="72567-189">Customer</span></span>                     | <span data-ttu-id="72567-190">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-190">Exchange rate gain</span></span> | <span data-ttu-id="72567-191">X</span><span class="sxs-lookup"><span data-stu-id="72567-191">X</span></span>      |            |
-
-
-### <a name="revaluation--standard-method-date--december-31-2012"></a><span data-ttu-id="72567-192">Átértékelés  (normál módszer; dátum = 2012. december 31.)</span><span class="sxs-lookup"><span data-stu-id="72567-192">Revaluation  (Standard method; date = December 31, 2012)</span></span>
-<span data-ttu-id="72567-193">Az átértékelési példában figyelje meg, hogy a 2013. január 3-i bejegyzés a fölötte levő bejegyzés (2012. december 31.) közvetlen sztornírozása.</span><span class="sxs-lookup"><span data-stu-id="72567-193">For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</span></span> <span data-ttu-id="72567-194">Még a főkönyvi számlák és a feladási típusok is megegyeznek.</span><span class="sxs-lookup"><span data-stu-id="72567-194">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="72567-195">Ezenkívül figyelje meg, hogy a **Helyesbítés** jelző van beállítva.</span><span class="sxs-lookup"><span data-stu-id="72567-195">Additionally, notice that the **Correction** flag has been set.</span></span>
-
-| <span data-ttu-id="72567-196">Dátum</span><span class="sxs-lookup"><span data-stu-id="72567-196">Date</span></span>                             | <span data-ttu-id="72567-197">Tartozik/követel</span><span class="sxs-lookup"><span data-stu-id="72567-197">Debit/credit</span></span> | <span data-ttu-id="72567-198">Összegek</span><span class="sxs-lookup"><span data-stu-id="72567-198">Amounts</span></span>               | <span data-ttu-id="72567-199">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="72567-199">General ledger (GL) account</span></span>    | <span data-ttu-id="72567-200">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="72567-200">Transaction type</span></span>             | <span data-ttu-id="72567-201">Feladás típusa</span><span class="sxs-lookup"><span data-stu-id="72567-201">Posting type</span></span>       | <span data-ttu-id="72567-202">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-202">Credit</span></span> | <span data-ttu-id="72567-203">Korrekció</span><span class="sxs-lookup"><span data-stu-id="72567-203">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="72567-204">12-dec-31</span><span class="sxs-lookup"><span data-stu-id="72567-204">31-Dec-12</span></span>           | <span data-ttu-id="72567-205">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-205">Debit</span></span>        | <span data-ttu-id="72567-206">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-206">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="72567-207">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-207">AR</span></span>                             | <span data-ttu-id="72567-208">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-208">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-209">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-209">Exchange rate gain</span></span> |        |            |
-| <span data-ttu-id="72567-210">12-dec-31</span><span class="sxs-lookup"><span data-stu-id="72567-210">31-Dec-12</span></span>           | <span data-ttu-id="72567-211">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-211">Credit</span></span>       | <span data-ttu-id="72567-212">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-212">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="72567-213">Nem realizált árfolyam-korrekciós nyereség</span><span class="sxs-lookup"><span data-stu-id="72567-213">Unrealized currency adj profit</span></span> | <span data-ttu-id="72567-214">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-214">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-215">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-215">Exchange rate gain</span></span> | <span data-ttu-id="72567-216">X</span><span class="sxs-lookup"><span data-stu-id="72567-216">X</span></span>      |            |
-| <span data-ttu-id="72567-217">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-217">3-Jan-13</span></span>            | <span data-ttu-id="72567-218">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-218">Debit</span></span>        | <span data-ttu-id="72567-219">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-219">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="72567-220">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-220">AR</span></span>                             | <span data-ttu-id="72567-221">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-221">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-222">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-222">Exchange rate gain</span></span> |        | <span data-ttu-id="72567-223">X</span><span class="sxs-lookup"><span data-stu-id="72567-223">X</span></span>          |
- <span data-ttu-id="72567-224">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-224">3-Jan-13</span></span>            | <span data-ttu-id="72567-225">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-225">Credit</span></span>       | <span data-ttu-id="72567-226">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-226">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="72567-227">Nem realizált árfolyam-korrekciós nyereség</span><span class="sxs-lookup"><span data-stu-id="72567-227">Unrealized currency adj profit</span></span> | <span data-ttu-id="72567-228">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-228">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-229">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-229">Exchange rate gain</span></span> | <span data-ttu-id="72567-230">X</span><span class="sxs-lookup"><span data-stu-id="72567-230">X</span></span>      | <span data-ttu-id="72567-231">X</span><span class="sxs-lookup"><span data-stu-id="72567-231">X</span></span>          |
-
-
-### <a name="revaluation-invoice-date-method-date--january-1-2013"></a><span data-ttu-id="72567-232">Átértékelés (Számlázás dátuma mód; dátum = 2013. január 1.)</span><span class="sxs-lookup"><span data-stu-id="72567-232">Revaluation (Invoice date method; date = January 1, 2013)</span></span>
-<span data-ttu-id="72567-233">Az átértékelésben figyelje meg, hogy a 2013. január 1-i bejegyzés a fölötte levő bejegyzés (2013. január 3.) közvetlen sztornírozása.</span><span class="sxs-lookup"><span data-stu-id="72567-233">For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</span></span> <span data-ttu-id="72567-234">Még a főkönyvi számlák és a feladási típusok is megegyeznek.</span><span class="sxs-lookup"><span data-stu-id="72567-234">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="72567-235">Ezenkívül figyelje meg, hogy a **Helyesbítés** jelző van beállítva.</span><span class="sxs-lookup"><span data-stu-id="72567-235">Additionally, notice that the **Correction** flag has been set.</span></span>
-
-| <span data-ttu-id="72567-236">Dátum</span><span class="sxs-lookup"><span data-stu-id="72567-236">Date</span></span>   | <span data-ttu-id="72567-237">Tartozik/követel</span><span class="sxs-lookup"><span data-stu-id="72567-237">Debit/credit</span></span> | <span data-ttu-id="72567-238">Összegek</span><span class="sxs-lookup"><span data-stu-id="72567-238">Amounts</span></span> | <span data-ttu-id="72567-239">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="72567-239">General ledger (GL) account</span></span>| <span data-ttu-id="72567-240">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="72567-240">Transaction type</span></span>| <span data-ttu-id="72567-241">Feladás típusa</span><span class="sxs-lookup"><span data-stu-id="72567-241">Posting type</span></span>| <span data-ttu-id="72567-242">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-242">Credit</span></span> | <span data-ttu-id="72567-243">Korrekció</span><span class="sxs-lookup"><span data-stu-id="72567-243">Correction</span></span> |
-|--------|--------------|---------|----------------------------|----------------|--------|------------|--------------|
-|<span data-ttu-id="72567-244">13-jan-1</span><span class="sxs-lookup"><span data-stu-id="72567-244">1-Jan-13</span></span> | <span data-ttu-id="72567-245">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-245">Debit</span></span>  | <span data-ttu-id="72567-246">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-246">0 CAD/5,000 USD</span></span> | <span data-ttu-id="72567-247">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-247">AR</span></span>                             | <span data-ttu-id="72567-248">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-248">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-249">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-249">Exchange rate gain</span></span> |   | <span data-ttu-id="72567-250">X</span><span class="sxs-lookup"><span data-stu-id="72567-250">X</span></span> |
-|<span data-ttu-id="72567-251">13-jan-1</span><span class="sxs-lookup"><span data-stu-id="72567-251">1-Jan-13</span></span> | <span data-ttu-id="72567-252">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-252">Credit</span></span> | <span data-ttu-id="72567-253">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-253">0 CAD/5,000 USD</span></span> | <span data-ttu-id="72567-254">Nem realizált árfolyam-korrekciós nyereség</span><span class="sxs-lookup"><span data-stu-id="72567-254">Unrealized currency adj profit</span></span> | <span data-ttu-id="72567-255">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-255">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-256">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-256">Exchange rate gain</span></span> | <span data-ttu-id="72567-257">X</span><span class="sxs-lookup"><span data-stu-id="72567-257">X</span></span> | <span data-ttu-id="72567-258">X</span><span class="sxs-lookup"><span data-stu-id="72567-258">X</span></span> |
-|<span data-ttu-id="72567-259">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-259">3-Jan-13</span></span> | <span data-ttu-id="72567-260">Tartozik</span><span class="sxs-lookup"><span data-stu-id="72567-260">Debit</span></span>  | <span data-ttu-id="72567-261">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-261">0 CAD/5,000 USD</span></span> | <span data-ttu-id="72567-262">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="72567-262">AR</span></span>                             | <span data-ttu-id="72567-263">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-263">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-264">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-264">Exchange rate gain</span></span> |   |   |
-|<span data-ttu-id="72567-265">13-jan-3</span><span class="sxs-lookup"><span data-stu-id="72567-265">3-Jan-13</span></span> | <span data-ttu-id="72567-266">Jóváírás</span><span class="sxs-lookup"><span data-stu-id="72567-266">Credit</span></span> | <span data-ttu-id="72567-267">0 CAD/5 000 USD</span><span class="sxs-lookup"><span data-stu-id="72567-267">0 CAD/5,000 USD</span></span> | <span data-ttu-id="72567-268">Nem realizált árfolyam-korrekciós nyereség</span><span class="sxs-lookup"><span data-stu-id="72567-268">Unrealized currency adj profit</span></span> | <span data-ttu-id="72567-269">Devizaátértékelés</span><span class="sxs-lookup"><span data-stu-id="72567-269">Foreign currency revaluation</span></span> | <span data-ttu-id="72567-270">Árfolyamnyereség</span><span class="sxs-lookup"><span data-stu-id="72567-270">Exchange rate gain</span></span> | <span data-ttu-id="72567-271">X</span><span class="sxs-lookup"><span data-stu-id="72567-271">X</span></span> |   |
-
-<span data-ttu-id="72567-272">A rendszer viselkedése megegyezik, függetlenül attól, hogy a **Helyesbítés** lehetőség beállítása a **Tranzakció sztornírozása** szakaszban a **Főkönyvi paraméterek** lapon **Igen** vagy **Nem**.</span><span class="sxs-lookup"><span data-stu-id="72567-272">The system behavior is the same, regardless of whether the **Correction** option in the **Transaction reversal** section on the **General ledger parameters** page is set to **Yes** or **No**.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-exchange-rate-adjustments.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-exchange-rate-adjustments.8c3cbc.eece22113824fd520568dc46bbd384bda23c3c8d.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>eece22113824fd520568dc46bbd384bda23c3c8d</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-exchange-rate-adjustments.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Exchange rate adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyam-korrekciók</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Exchange rate adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyam-korrekciók</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Észtországra, Magyarországra, Csehországra, Lettországra, Litvániára, Lengyelországra és Oroszországra vonatkozó árfolyam-korrekciós funkció a következő, a Kinnlevőségek és a Kötelezettségek szempontjából releváns kiterjesztéseket tartalmazza:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az árfolyam-korrekciók feladásait az eredeti kiigazítások helyesbítéseként (negatív összegek) lehet sztornírozni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egymást követő nem realizált kiigazítások feladásakor a rendszer azonos főkönyvi feladási számlát és tranzakciótípust használ, függetlenül attól, hogy a kiigazítások nyereséget vagy veszteséget képviselnek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A számított árfolyamnyereségeket mindig nyereségszámlákra adja fel, és a számított árfolyamveszteségeket pedig mindig eredményszámlákra adja fel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azon jogi személyek, akik elsődleges címe a Cseh Köztársaságban van, speciális árfolyam-korrekciós módot használhatnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>This method is known as the Incremental method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a módot Növekményes módnak nevezik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>When this method is turned on, changes that the current feature introduces aren't applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha ez a mód be van kapcsolva, az aktuális funkció által bevezetett módosításokat a rendszer nem alkalmazza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A nem realizált és a realizált nyereségek vagy veszteségek számítása az utolsó használt árfolyamon történik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The adjusted amount is used instead of the original amount as the basis of calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A helyesbített eredeti összeg az eredeti összeg helyett használatos a számítás alapjaként.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To switch to the Incremental exchange rate adjustment method, on the <bpt id="p1">**</bpt>General ledger parameters<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Foreign currency revaluation<ept id="p2">**</ept> section, in the <bpt id="p3">**</bpt>Calculation method<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>Incremental<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Növekményes árfolyam-korrekciós módra történő váltáshoz a <bpt id="p1">**</bpt>Főkönyvi paraméterek<ept id="p1">**</ept> lapon a <bpt id="p2">**</bpt>Devizaátértékelés<ept id="p2">**</ept> szakaszban található <bpt id="p3">**</bpt>Számítási mód<ept id="p3">**</ept> mezőben válassza a <bpt id="p4">**</bpt>Növekményes<ept id="p4">**</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő példa bemutatja az árfolyam-korrekció funkció működését Észtországban, Magyarországon, Csehországban, Lettországban, Litvániában, Lengyelországban és Oroszországban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Here is the business scenario for this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lássuk a következő üzleti esetet:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>An invoice in a foreign currency is posted on December 1, 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2012. december 1-jén devizában adtak fel egy számlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The payment in the foreign currency is posted on January 3, 2013</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A devizában történő kifizetés feladása 2013. január 3-án történt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Settlement is done to apply the payment to the invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiegyenlítés a kifizetés számlára történő alkalmazásával történik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Exchange rates adjustment is done on December 31, 2012 (method = Standard).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az árfolyam-korrekciót 2012. december 31-én hajtják végre (mód = Normál).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az árfolyam-korrekciót 2013. január 1-jén hajtják végre (mód = Számla dátuma).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben a példában a kanadai dollár (CAD) amerikai dollárra (USD) történő átváltási árfolyamai:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>December 1, 2012: 400.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2012. december 1.: 400,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>December 31, 2012: 450.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2012. december 31.: 450,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>January 3, 2013: 420.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2013. január 3.: 420,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik/követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladás típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>1-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-dec-1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>10,000 CAD/40,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/40 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Customer balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>1-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-dec-1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>10,000 CAD/40,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/40 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Offset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenoldal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Ledger journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi napló</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik/követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladás típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>10,000 CAD/42,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/42 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Offset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenoldal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Ledger journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi napló</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>10,000 CAD/42,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/42 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Customer balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Settlement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiegyenlítés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik/követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladás típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>January 3, 2013 (= payment date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2013. január 3. (= kifizetési dátum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>0 CAD/2,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>January 3, 2013 (= payment date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2013. január 3. (= kifizetési dátum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>0 CAD/2,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Realized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Realizált árfolyam-korrekciós nyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Revaluation  (Standard method; date = December 31, 2012)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átértékelés  (normál módszer; dátum = 2012. december 31.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átértékelési példában figyelje meg, hogy a 2013. január 3-i bejegyzés a fölötte levő bejegyzés (2012. december 31.) közvetlen sztornírozása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Even the GL accounts and posting types are the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Még a főkönyvi számlák és a feladási típusok is megegyeznek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezenkívül figyelje meg, hogy a <bpt id="p1">**</bpt>Helyesbítés<ept id="p1">**</ept> jelző van beállítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik/követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladás típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>31-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-dec-31</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>31-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-dec-31</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem realizált árfolyam-korrekciós nyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem realizált árfolyam-korrekciós nyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Revaluation (Invoice date method; date = January 1, 2013)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átértékelés (Számlázás dátuma mód; dátum = 2013. január 1.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átértékelésben figyelje meg, hogy a 2013. január 1-i bejegyzés a fölötte levő bejegyzés (2013. január 3.) közvetlen sztornírozása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Even the GL accounts and posting types are the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Még a főkönyvi számlák és a feladási típusok is megegyeznek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezenkívül figyelje meg, hogy a <bpt id="p1">**</bpt>Helyesbítés<ept id="p1">**</ept> jelző van beállítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik/követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladás típusa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>1-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>1-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem realizált árfolyam-korrekciós nyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13-jan-3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5 000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem realizált árfolyam-korrekciós nyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Devizaátértékelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árfolyamnyereség</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>The system behavior is the same, regardless of whether the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Transaction reversal<ept id="p2">**</ept> section on the <bpt id="p3">**</bpt>General ledger parameters<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept> or <bpt id="p5">**</bpt>No<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer viselkedése megegyezik, függetlenül attól, hogy a <bpt id="p1">**</bpt>Helyesbítés<ept id="p1">**</ept> lehetőség beállítása a <bpt id="p2">**</bpt>Tranzakció sztornírozása<ept id="p2">**</ept> szakaszban a <bpt id="p3">**</bpt>Főkönyvi paraméterek<ept id="p3">**</ept> lapon <bpt id="p4">**</bpt>Igen<ept id="p4">**</ept> vagy <bpt id="p5">**</bpt>Nem<ept id="p5">**</ept>.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

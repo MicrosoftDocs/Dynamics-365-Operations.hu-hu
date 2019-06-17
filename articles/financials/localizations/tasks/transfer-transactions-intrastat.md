@@ -1,191 +1,519 @@
----
-title: Tranzakciók átvitele az Intrastatba
-description: Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba.
-author: Anasyash
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategory, UnitOfMeasureLookup, ProcCategoryAddCommodityCode, EcoResProductDetailsExtended, IntrastatCommodityLookup, IntrastatTransactionCode, IntrastatParameters, DeliveryMode, MarkupTable, SalesTableListPage, SalesCreateOrder, SalesTable, MarkupTrans, SalesEditLines,  Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a0e332d5cae09c5026a64a4463e301a008860bd9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537955"
----
-# <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="1fa7d-103">Tranzakciók átvitele az Intrastatba</span><span class="sxs-lookup"><span data-stu-id="1fa7d-103">Transfer transactions to the Intrastat</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="1fa7d-104">Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-104">This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</span></span> <span data-ttu-id="1fa7d-105">Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-105">This procedure was created using the demo data company DEMF.</span></span>
-
-
-## <a name="create-new-and-update-existing-commodity-code"></a><span data-ttu-id="1fa7d-106">Hozzon létre egy új árucikk-kódot és módosítsa a meglévő árucikk-kódot</span><span class="sxs-lookup"><span data-stu-id="1fa7d-106">Create new and update existing commodity code</span></span>
-1. <span data-ttu-id="1fa7d-107">Ugorjon a Termékinformációk kezelése > Beállítás > Kategóriák és attribútumok > Kategóriahierarchiák pontra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-107">Go to Product information management > Setup > Categories and attributes > Category hierarchies.</span></span>
-2. <span data-ttu-id="1fa7d-108">A listában keresse meg vagy válassza ki a „Intrastat-vámtarifakódok” rekordot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-108">In the list, find or select the record "Intrastat commodity codes."</span></span>
-3. <span data-ttu-id="1fa7d-109">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-109">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="1fa7d-110">Válassza ki az „egy rekord” lehetőséget a fastruktúrában.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-110">In the tree, select 'a record'.</span></span>
-    * <span data-ttu-id="1fa7d-111">Például válassza ki a „Intrastat\Beszélő” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-111">For example, select 'Intrastat\Speaker'.</span></span>  
-5. <span data-ttu-id="1fa7d-112">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-112">Click Edit.</span></span>
-6. <span data-ttu-id="1fa7d-113">Bontsa ki a Külkereskedelem szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-113">Expand the Foreign trade section.</span></span>
-7. <span data-ttu-id="1fa7d-114">A Kiegészítő egységek mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-114">In the Additional units field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-115">Válassza ki például a „darab” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-115">For example, choose 'pcs'.</span></span>  
-8. <span data-ttu-id="1fa7d-116">Válassza az Igen értéket a Súly nem alkalmazható mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-116">Select Yes in the Weight not applicable field.</span></span>
-9. <span data-ttu-id="1fa7d-117">Válassza ki az „Intrastat” lehetőséget a fastruktúrában.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-117">In the tree, select 'Intrastat'.</span></span>
-10. <span data-ttu-id="1fa7d-118">Kattintson az Új kategória-csomópont gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-118">Click New category node.</span></span>
-11. <span data-ttu-id="1fa7d-119">A Név mezőben adja meg az árucikk nevét.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-119">In the Name field, enter the name of commodity.</span></span>
-    * <span data-ttu-id="1fa7d-120">Például írja be a „Másik árucikk” szöveget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-120">For example, type 'Other commodity'.</span></span>  
-12. <span data-ttu-id="1fa7d-121">A Kód mezpben adja meg az árucikk-kódját.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-121">In the Code field, enter the commodity code.</span></span>
-    * <span data-ttu-id="1fa7d-122">Például írja be a „995 00 00” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-122">For example, type '995 00 00'.</span></span>  
-13. <span data-ttu-id="1fa7d-123">Írjon be egy értéket a Barátságos név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-123">In the Friendly name field, type a value.</span></span>
-    * <span data-ttu-id="1fa7d-124">Például írja be az „Egyéb” szöveget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-124">For example, type 'Other'.</span></span>  
-14. <span data-ttu-id="1fa7d-125">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-125">Click Save.</span></span>
-15. <span data-ttu-id="1fa7d-126">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-126">Close the page.</span></span>
-
-## <a name="assign-commodity-code-to-product-hierarchy-and-released-product"></a><span data-ttu-id="1fa7d-127">Rendelje hozzá az árucikk-kódot a termékhierarchiához és a kiadott termékhez.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-127">Assign commodity code to product hierarchy and released product</span></span>
-1. <span data-ttu-id="1fa7d-128">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-128">Use the Quick Filter to find records.</span></span> <span data-ttu-id="1fa7d-129">Végezzen szűrést a Név mezőben az „Értékesítés” értékkel.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-129">For example, filter on the Name field with a value of 'sales'.</span></span>
-2. <span data-ttu-id="1fa7d-130">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-130">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="1fa7d-131">Bontsa ki a fastruktúrában a „a kategória-csomópont” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-131">In the tree, expand 'a category node'.</span></span>
-    * <span data-ttu-id="1fa7d-132">Például bontsa ki az „Értékesítési hierarchia\Home audio” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-132">For example, expand 'Sales hierarchy\Home audio'.</span></span>  
-4. <span data-ttu-id="1fa7d-133">Válassza ki a „A vámtarifakódhoz társítandó kategória” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-133">In the tree, select 'the category to assign to the commodity code'.</span></span>
-    * <span data-ttu-id="1fa7d-134">Például válassza ki az „Értékesítési hierarchia\Home audio\Beszélő” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-134">For example, select 'Sales hierarchy\Home audio\Speakers.</span></span>  
-5. <span data-ttu-id="1fa7d-135">Bontsa ki az Árucikk-kódok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-135">Expand the Commodity codes section.</span></span>
-6. <span data-ttu-id="1fa7d-136">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-136">Click Add.</span></span>
-7. <span data-ttu-id="1fa7d-137">A Hierarchia kiválasztás mezőben válassza ki az „Intrastat” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-137">In the Select hierarchy field, select 'Intrastat'.</span></span>
-8. <span data-ttu-id="1fa7d-138">Keresse meg és válassza ki az árucikk-kódot a listában</span><span class="sxs-lookup"><span data-stu-id="1fa7d-138">In the list, find and select the commodity code</span></span>
-    * <span data-ttu-id="1fa7d-139">Például válassza ki a „920 20 34 Beszélő” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-139">For example, select '920 20 34 Speaker'.</span></span>  
-9. <span data-ttu-id="1fa7d-140">Kattintson a SelectCodes lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-140">Click SelectCodes.</span></span>
-10. <span data-ttu-id="1fa7d-141">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-141">Click OK.</span></span>
-11. <span data-ttu-id="1fa7d-142">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-142">Go to Product information management > Products > Released products.</span></span>
-12. <span data-ttu-id="1fa7d-143">Válassza ki a listában azt a kiadott terméket, amelyet az árucikk-kódhoz rendel.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-143">In the list, choose the released product that you will assign to the commodity code.</span></span>
-    * <span data-ttu-id="1fa7d-144">Válassza ki például a „D0001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-144">For example, choose 'D0001'.</span></span>  
-13. <span data-ttu-id="1fa7d-145">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-145">Click Edit.</span></span>
-14. <span data-ttu-id="1fa7d-146">Bontsa ki a Külkereskedelem szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-146">Expand the Foreign trade section.</span></span>
-15. <span data-ttu-id="1fa7d-147">Az Árucikk mezőben adja meg az árucikk-kódját.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-147">In the Commodity field, enter the commodity code</span></span>
-    * <span data-ttu-id="1fa7d-148">Válassza ki például a „920 20 34 Beszélő” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-148">For example, select value '920 20 34 Speaker'.</span></span>    
-16. <span data-ttu-id="1fa7d-149">Adjon meg egy számot a Költségszázalék mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-149">In the Charges percentage field, enter a number.</span></span>
-    * <span data-ttu-id="1fa7d-150">Adja meg például a „3” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-150">For example, enter '3'.</span></span>  
-17. <span data-ttu-id="1fa7d-151">Az ország/régió mezőben adjon meg vagy válasszon ki egy származási országot vagy régiót</span><span class="sxs-lookup"><span data-stu-id="1fa7d-151">In the Country/region field, enter or select a country or region of origin</span></span>
-    * <span data-ttu-id="1fa7d-152">Válassza ki például az „AUT” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-152">For example, select 'AUT'.</span></span>  
-18. <span data-ttu-id="1fa7d-153">Bontsa ki a Készletkezelés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-153">Expand the Manage inventory section.</span></span>
-19. <span data-ttu-id="1fa7d-154">Adja meg egy Súly (kg) értéket a Nettó tömeg mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-154">In the Net weight field, enter a weight in kg.</span></span>
-    * <span data-ttu-id="1fa7d-155">Adja meg például a „2,5” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-155">For example, enter '2.5'.</span></span>  
-20. <span data-ttu-id="1fa7d-156">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-156">Click Save.</span></span>
-
-## <a name="set-up-intrastat-transaction-codes-and-foreign-trade-parameters"></a><span data-ttu-id="1fa7d-157">Állítsa be az Intrastat-tranzakciókódokat és a Külkereskedelmi paramétereket</span><span class="sxs-lookup"><span data-stu-id="1fa7d-157">Set up Intrastat transaction codes and foreign trade parameters</span></span>
-1. <span data-ttu-id="1fa7d-158">Ugorjon az Adó > Beállítás > Külkereskedelem > Tranzakciókódok pontra</span><span class="sxs-lookup"><span data-stu-id="1fa7d-158">Go to Tax > Setup > Foreign trade > Transaction codes</span></span>
-2. <span data-ttu-id="1fa7d-159">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-159">Click New.</span></span>
-3. <span data-ttu-id="1fa7d-160">Írjon be egy értéket a Tranzakciókódok mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-160">In the Transaction code field, type a value.</span></span>
-    * <span data-ttu-id="1fa7d-161">Írja be például a „21” értéket a visszatérítésként használt tranzakciókódra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-161">For example, enter '21' for the transaction code used as return.</span></span>  
-4. <span data-ttu-id="1fa7d-162">A Név mezőbe írja be a Tranzakciókódok nevét.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-162">In the Name field, type the name of transaction code.</span></span>
-    * <span data-ttu-id="1fa7d-163">Adja meg például a „Visszatérés” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-163">For example, enter 'Return'.</span></span>  
-5. <span data-ttu-id="1fa7d-164">Válasszon ki egy lehetőséget a Statisztikai összeg mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-164">In the Statistical amount field, select an option.</span></span>
-    * <span data-ttu-id="1fa7d-165">Jelölje ki például az „Üres” lehetőséget, amely azt jelzi, hogy a „21”-es tranzakciókódos tranzakcióra vonatkozóan jelentendő Statisztikai értéknek mindig nullának kell lennie.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-165">For example, select 'Empty' which indicates that the Statistical value to be reported for transactions with Transaction code of "21" will always be zero.</span></span>  
-6. <span data-ttu-id="1fa7d-166">Ugrás az Adó > Beállítás > Külkereskedelem > Külkereskedelmi paraméterek pontra</span><span class="sxs-lookup"><span data-stu-id="1fa7d-166">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-7. <span data-ttu-id="1fa7d-167">A Tranzakciókód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-167">In the Transaction code field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-168">Válassza ki például a „11”-es lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-168">For example, select '11'.</span></span>  
-8. <span data-ttu-id="1fa7d-169">A Jóváírás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-169">In the Credit note field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-170">Ez az érték a fizikai visszárut azonosítja.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-170">This value also identifies the physical return.</span></span> <span data-ttu-id="1fa7d-171">A rendszer a tényleges visszaadásra vonatkozó jóváírást az ellenkező irányba helyezi át az Intrastat naplóban.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-171">The credit note for the physical return will be transferred in the Intrastat journal with opposite direction.</span></span> <span data-ttu-id="1fa7d-172">Például a rendszer az érkezés visszáruzásának átvitelét kiszállításként végzi el.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-172">For example, the return of arrival is transferred as dispatch.</span></span>   <span data-ttu-id="1fa7d-173">Ellenkező esetben a jóváírást helyesbítésnek minősül, és a rendszer ugyanabba az irányba helyezi át, de ellenkező előjellel.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-173">Otherwise, the credit note is considered a correction and is transferred with the same direction and opposite sign.</span></span> <span data-ttu-id="1fa7d-174">Például a rendszer az érkezés helyesbítésének átvitelét negatív összeges érkezésként végzi el és az aktív jelzőt „Helyesbítés” értékre állítja.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-174">For example, the correction of arrival is transferred as an arrival with negative amount and the active flag is set to "Correction".</span></span>  
-9. <span data-ttu-id="1fa7d-175">Bontsa ki az Átvitel szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-175">Expand the Transfer section.</span></span>
-10. <span data-ttu-id="1fa7d-176">Válassza az Igen lehetőséget a Cikkek árucikk-kóddal mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-176">Select Yes in the Items with commodity code field.</span></span>
-    * <span data-ttu-id="1fa7d-177">Jelölje be ezt a lehetőséget, ha csak az árucikk-kóddal rendelkező tranzakció átvitelét szeretné elvégezni.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-177">Select this option to transfer only the transactions with a commodity code assigned.</span></span> <span data-ttu-id="1fa7d-178">Az árucikk-kód nélküli tranzakciókat nem lehet áthelyezni az Intrastatba.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-178">Transactions without a commodity code won't be transferred to Intrastat.</span></span>  
-11. <span data-ttu-id="1fa7d-179">Az Átvitel, ha megfelel a következő feltételnek mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-179">In the Transfer when meeting criterion for field, select an option.</span></span>
-    * <span data-ttu-id="1fa7d-180">Válassza ki például az „A kijelöltek egyike” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-180">For example, select 'One of the selected'.</span></span>  
-12. <span data-ttu-id="1fa7d-181">Bontsa ki az Árucikk-kódok hierarchiája szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-181">Expand the Commodity code hierarchy section.</span></span>
-13. <span data-ttu-id="1fa7d-182">Kattintson az Ország/régió tulajdonságai lapra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-182">Click the Country/region properties tab.</span></span>
-14. <span data-ttu-id="1fa7d-183">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-183">Click New.</span></span>
-15. <span data-ttu-id="1fa7d-184">Az Ország/régió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-184">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-185">Válassza ki például a „FRA” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-185">For example, select the value 'FRA'.</span></span>  
-16. <span data-ttu-id="1fa7d-186">Az Intrastat kód mezőben adja meg az ország ISO-kódját.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-186">In the Intrastat code field, enter the ISO code for the country.</span></span>
-    * <span data-ttu-id="1fa7d-187">Írja be például a „FR” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-187">For example, type 'FR'.</span></span>  
-17. <span data-ttu-id="1fa7d-188">Az Ország/régió típusa mezőben válassza ki az „EU” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-188">In the Country/region type field, select 'EU'.</span></span>
-18. <span data-ttu-id="1fa7d-189">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-189">Click the Number sequences tab.</span></span>
-
-## <a name="set-up-modes-of-delivery-and-rules-for-including-charges-in-intrastat"></a><span data-ttu-id="1fa7d-190">Állítsa be a Szállítási módot és az Intrastat költségek bevételére vonatkozó szabályokat</span><span class="sxs-lookup"><span data-stu-id="1fa7d-190">Set up Modes of delivery and rules for including charges in Intrastat</span></span>
-1. <span data-ttu-id="1fa7d-191">Ugorjon az Értékesítés és marketing > Beállítás > Elosztás > Szállítási módok pontra</span><span class="sxs-lookup"><span data-stu-id="1fa7d-191">Go to Sales and marketing > Setup > Distribution > Modes of delivery</span></span>
-2. <span data-ttu-id="1fa7d-192">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-192">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="1fa7d-193">Válassza ki például a „20 Légi” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-193">For example, select '20 Air'.</span></span>  
-3. <span data-ttu-id="1fa7d-194">Bontsa ki a Külkereskedelem szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-194">Expand the Foreign trade section.</span></span>
-4. <span data-ttu-id="1fa7d-195">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-195">Click Edit.</span></span>
-5. <span data-ttu-id="1fa7d-196">A Szállítás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-196">In the Transport field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-197">Válassza ki például a „02” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-197">For example, select '02'.</span></span>  
-6. <span data-ttu-id="1fa7d-198">Ugorjon a Kintlévőségek > Költségek beállítása > Költségkód pontra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-198">Go to Accounts receivable > Charges setup > Charges code.</span></span>
-7. <span data-ttu-id="1fa7d-199">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-199">Use the Quick Filter to find records.</span></span> <span data-ttu-id="1fa7d-200">Például végezzen szűrést a Költségkód mezőben a „ fuvardíj” értékkel.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-200">For example, filter on the Charges code field with a value of 'freight'.</span></span>
-8. <span data-ttu-id="1fa7d-201">Bontsa ki a Külkereskedelem szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-201">Expand the Foreign trade section.</span></span>
-9. <span data-ttu-id="1fa7d-202">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-202">Click Edit.</span></span>
-10. <span data-ttu-id="1fa7d-203">Válassza az Igen lehetőséget az Intrastat számlaérték mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-203">Select Yes in the Intrastat invoice value field.</span></span>
-    * <span data-ttu-id="1fa7d-204">A rendszer átviszi az összeget a Számlaköltségek mezőbe és a Számla összege mezőbe átvitt összeggel végzi el az összegzést.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-204">The amount will be transferred to the  Invoice charges field and will be summarized with the amount transferred in the Invoice amount field.</span></span>    <span data-ttu-id="1fa7d-205">Jelölje be az Igen értéket az Intrastat statisztikai érték mezőben, ha a módosítások összegét át kell vinni a Statisztikai költségekbe és összegezni kell a Statisztikai összeggel.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-205">Select Yes in the Intrastat statistical value field if the amount of changes need to be transferred to the field Statistical charges and summarized with Statistical amount.</span></span>  
-
-## <a name="sell-products-for-eu-customers"></a><span data-ttu-id="1fa7d-206">Termékek értékesítése az EU vevőkre vonatkozóan</span><span class="sxs-lookup"><span data-stu-id="1fa7d-206">Sell products for EU customers</span></span>
-1. <span data-ttu-id="1fa7d-207">Ugorjon a Kinnlevőségek > Rendelések > Minden értékesítési rendelés elemre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-207">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="1fa7d-208">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-208">Click New.</span></span>
-3. <span data-ttu-id="1fa7d-209">Válasszon ki egy uniós vevőt a Vevői számla mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-209">In the Customer account field, select an EU customer</span></span>
-    * <span data-ttu-id="1fa7d-210">Jelölje be például a „DE-012 Litware Kiskereskedelem” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-210">For example, select "DE-012 Litware Retail".</span></span>  
-4. <span data-ttu-id="1fa7d-211">Bontsa ki a Szállítás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-211">Expand the Delivery section.</span></span>
-5. <span data-ttu-id="1fa7d-212">A Szállítás módja mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-212">In the Mode of delivery field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-213">Válassza ki például a „20 Légi” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-213">For example, select '20 Air'.</span></span>  
-6. <span data-ttu-id="1fa7d-214">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-214">Click OK.</span></span>
-7. <span data-ttu-id="1fa7d-215">Vigye a mutatót az értékesítésirendelés-sorok első sorához.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-215">Place the cursor on the first row of sales order lines.</span></span>
-8. <span data-ttu-id="1fa7d-216">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-216">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-217">Válassza ki például az „D001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-217">For example, select 'D001'.</span></span>  
-9. <span data-ttu-id="1fa7d-218">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-218">Expand the Line details section.</span></span>
-10. <span data-ttu-id="1fa7d-219">Kattintson a Külkereskedelem fülre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-219">Click the Foreign trade tab.</span></span>
-    * <span data-ttu-id="1fa7d-220">A rendszer automatikusan kitölti az átvitelt a kiválasztott a szállítási mód alapján.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-220">The transport is filled automatically from the chosen Mode of delivery.</span></span>  
-11. <span data-ttu-id="1fa7d-221">A Port mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-221">In the Port field, enter or select a value.</span></span>
-12. <span data-ttu-id="1fa7d-222">Kattintson a Pénzügyre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-222">Click Financials.</span></span>
-    * <span data-ttu-id="1fa7d-223">A beállítások szerint ez az összeg fog szerepelni az Intrastat számlaértékben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-223">As per the settings, this amount will be included in Intrastat invoice value.</span></span>  
-13. <span data-ttu-id="1fa7d-224">Kattintson a Költségek karbantartása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-224">Click Maintain charges.</span></span>
-14. <span data-ttu-id="1fa7d-225">A Költségkód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-225">In the Charges code field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-226">Jelölje ki például a „Fuvardíj” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-226">For example, select 'FREIGHT'.</span></span>  
-15. <span data-ttu-id="1fa7d-227">Jelölje be a Megtartás jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-227">Select the Keep check box.</span></span>
-16. <span data-ttu-id="1fa7d-228">Adjon meg egy számot az Költségek értéke mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-228">In the Charges value field, enter a number.</span></span>
-    * <span data-ttu-id="1fa7d-229">Adja meg például a „10” értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-229">For example, enter '10'.</span></span>  
-17. <span data-ttu-id="1fa7d-230">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-230">Click Save.</span></span>
-18. <span data-ttu-id="1fa7d-231">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-231">Close the page.</span></span>
-19. <span data-ttu-id="1fa7d-232">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-232">On the Action Pane, click Invoice.</span></span>
-20. <span data-ttu-id="1fa7d-233">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-233">Click Invoice.</span></span>
-21. <span data-ttu-id="1fa7d-234">Bontsa ki a Paraméterek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-234">Expand the Parameters section.</span></span>
-22. <span data-ttu-id="1fa7d-235">A Mennyiség mezőben válassza a „Mind” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-235">In the Quantity field, select 'All'.</span></span>
-23. <span data-ttu-id="1fa7d-236">Bontsa ki a Beállítások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-236">Expand the Setup section.</span></span>
-24. <span data-ttu-id="1fa7d-237">A Számla dátuma mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-237">In the Invoice date field, enter a date.</span></span>
-    * <span data-ttu-id="1fa7d-238">Adja meg például a „2015.01.31.” dátumot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-238">For example, enter '2015-01-31'.</span></span>  
-25. <span data-ttu-id="1fa7d-239">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-239">Click OK.</span></span>
-26. <span data-ttu-id="1fa7d-240">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-240">Click OK.</span></span>
-27. <span data-ttu-id="1fa7d-241">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-241">Close the page.</span></span>
-28. <span data-ttu-id="1fa7d-242">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-242">Click New.</span></span>
-29. <span data-ttu-id="1fa7d-243">Válasszon ki egy uniós vevőt a Vevői számla mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-243">In the Customer account field, select an EU customer.</span></span>
-    * <span data-ttu-id="1fa7d-244">Válassza ki például a „DE-013 Trey Wholesales” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-244">For example, select 'DE-013 Trey Wholesales'</span></span>  
-30. <span data-ttu-id="1fa7d-245">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-245">Click OK.</span></span>
-31. <span data-ttu-id="1fa7d-246">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-246">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="1fa7d-247">Válassza ki például az „D0001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-247">For example, select 'D0001'.</span></span>  
-32. <span data-ttu-id="1fa7d-248">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-248">Click Save.</span></span>
-33. <span data-ttu-id="1fa7d-249">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-249">Click Invoice.</span></span>
-34. <span data-ttu-id="1fa7d-250">A Számla dátuma mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-250">In the Invoice date field, enter a date.</span></span>
-    * <span data-ttu-id="1fa7d-251">Adja meg például a „2015.01.31.” dátumot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-251">For example, enter the date '2015-01-31'.</span></span>  
-35. <span data-ttu-id="1fa7d-252">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-252">Click OK.</span></span>
-36. <span data-ttu-id="1fa7d-253">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-253">Click OK.</span></span>
-
-## <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="1fa7d-254">Tranzakciók átvitele az Intrastatba</span><span class="sxs-lookup"><span data-stu-id="1fa7d-254">Transfer transactions to the Intrastat</span></span>
-1. <span data-ttu-id="1fa7d-255">Ugorjon az Adó > Nyilatkozatok > Külkereskedelem > Intrastat pontra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-255">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-2. <span data-ttu-id="1fa7d-256">Kattintson az Áthelyezés elemre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-256">Click Transfer.</span></span>
-3. <span data-ttu-id="1fa7d-257">Válassza az Igen lehetőséget a Vevői számla mezőben.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-257">Select Yes in the Customer invoice field.</span></span>
-4. <span data-ttu-id="1fa7d-258">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-258">Click Filter.</span></span>
-5. <span data-ttu-id="1fa7d-259">Jelölje meg a Dátummal ellátott sort a listában</span><span class="sxs-lookup"><span data-stu-id="1fa7d-259">In the list, mark the row with Date</span></span>
-6. <span data-ttu-id="1fa7d-260">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-260">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="1fa7d-261">Adja meg például a szűrést a 2015 januári időszakra vonatkozóan (a pontos érték a dátumformátumtól függ): 2015.01.01. .. 2015.01.31.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-261">For example, enter the filter for the period January 2015 (the exact value depends on your date format): 1/1/2015..1/31/2015</span></span>  
-7. <span data-ttu-id="1fa7d-262">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-262">Click OK.</span></span>
-8. <span data-ttu-id="1fa7d-263">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-263">Click OK.</span></span>
-9. <span data-ttu-id="1fa7d-264">Keresse meg és válassza ki az átvitt rekordot a listában.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-264">In the list, find and selected the transferred record.</span></span>
-10. <span data-ttu-id="1fa7d-265">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-265">Click the General tab.</span></span>
-    * <span data-ttu-id="1fa7d-266">Tekintse át az átvitt adatokat, többek között a cél/feladás országát/régióját, a származási országot, a súlyt, a mennyiséget, a kiegészítő egységek mennyiségét, az árucikket, a tranzakciókódot, a számlaösszeget és a statisztikai összegeket.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-266">Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts.</span></span>   <span data-ttu-id="1fa7d-267">Szükség esetén módosíthatja az adatot.</span><span class="sxs-lookup"><span data-stu-id="1fa7d-267">You can modify data if necessary.</span></span>  
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="transfer-transactions-intrastat.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>transfer-transactions-intrastat.25c761.13cc9dc2119ad3dc85d580e92edee7bb9ef2075c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>13cc9dc2119ad3dc85d580e92edee7bb9ef2075c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\transfer-transactions-intrastat.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakciók átvitele az Intrastatba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakciók átvitele az Intrastatba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This procedure was created using the demo data company DEMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Create new and update existing commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre egy új árucikk-kódot és módosítsa a meglévő árucikk-kódot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Go to Product information management &gt; Setup &gt; Categories and attributes &gt; Category hierarchies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Termékinformációk kezelése &gt; Beállítás &gt; Kategóriák és attribútumok &gt; Kategóriahierarchiák pontra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>In the list, find or select the record "Intrastat commodity codes."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listában keresse meg vagy válassza ki a „Intrastat-vámtarifakódok” rekordot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>In the list, click the link in the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listában kattintson a kijelölt sorban lévő hivatkozásra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>In the tree, select 'a record'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az „egy rekord” lehetőséget a fastruktúrában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>For example, select 'Intrastat\Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például válassza ki a „Intrastat\Beszélő” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szerkesztés lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Külkereskedelem szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>In the Additional units field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Kiegészítő egységek mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>For example, choose 'pcs'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „darab” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Select Yes in the Weight not applicable field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza az Igen értéket a Súly nem alkalmazható mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>In the tree, select 'Intrastat'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az „Intrastat” lehetőséget a fastruktúrában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Click New category node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új kategória-csomópont gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the Name field, enter the name of commodity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Név mezőben adja meg az árucikk nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>For example, type 'Other commodity'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például írja be a „Másik árucikk” szöveget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the Code field, enter the commodity code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Kód mezpben adja meg az árucikk-kódját.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>For example, type '995 00 00'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például írja be a „995 00 00” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the Friendly name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Írjon be egy értéket a Barátságos név mezőbe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>For example, type 'Other'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például írja be az „Egyéb” szöveget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárja be a lapot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Assign commodity code to product hierarchy and released product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelje hozzá az árucikk-kódot a termékhierarchiához és a kiadott termékhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Use the Quick Filter to find records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekordok kereséséhez használja a gyorsszűrőt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>For example, filter on the Name field with a value of 'sales'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Végezzen szűrést a Név mezőben az „Értékesítés” értékkel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>In the list, click the link in the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listában kattintson a kijelölt sorban lévő hivatkozásra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the tree, expand 'a category node'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a fastruktúrában a „a kategória-csomópont” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, expand 'Sales hierarchy\Home audio'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például bontsa ki az „Értékesítési hierarchia\Home audio” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the tree, select 'the category to assign to the commodity code'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a „A vámtarifakódhoz társítandó kategória” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, select 'Sales hierarchy\Home audio\Speakers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például válassza ki az „Értékesítési hierarchia\Home audio\Beszélő” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Commodity codes section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki az Árucikk-kódok szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Hozzáadás gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>In the Select hierarchy field, select 'Intrastat'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Hierarchia kiválasztás mezőben válassza ki az „Intrastat” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the list, find and select the commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Keresse meg és válassza ki az árucikk-kódot a listában</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, select '920 20 34 Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például válassza ki a „920 20 34 Beszélő” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Click SelectCodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a SelectCodes lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Go to Product information management &gt; Products &gt; Released products.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the list, choose the released product that you will assign to the commodity code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a listában azt a kiadott terméket, amelyet az árucikk-kódhoz rendel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>For example, choose 'D0001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „D0001” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szerkesztés lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Külkereskedelem szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>In the Commodity field, enter the commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Árucikk mezőben adja meg az árucikk-kódját.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>For example, select value '920 20 34 Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „920 20 34 Beszélő” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the Charges percentage field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon meg egy számot a Költségszázalék mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>For example, enter '3'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „3” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>In the Country/region field, enter or select a country or region of origin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ország/régió mezőben adjon meg vagy válasszon ki egy származási országot vagy régiót</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>For example, select 'AUT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például az „AUT” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Expand the Manage inventory section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Készletkezelés szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the Net weight field, enter a weight in kg.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg egy Súly (kg) értéket a Nettó tömeg mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For example, enter '2.5'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „2,5” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Set up Intrastat transaction codes and foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa be az Intrastat-tranzakciókódokat és a Külkereskedelmi paramétereket</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Transaction codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon az Adó &gt; Beállítás &gt; Külkereskedelem &gt; Tranzakciókódok pontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the Transaction code field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Írjon be egy értéket a Tranzakciókódok mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>For example, enter '21' for the transaction code used as return.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Írja be például a „21” értéket a visszatérítésként használt tranzakciókódra vonatkozóan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>In the Name field, type the name of transaction code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Név mezőbe írja be a Tranzakciókódok nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>For example, enter 'Return'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „Visszatérés” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In the Statistical amount field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy lehetőséget a Statisztikai összeg mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>For example, select 'Empty' which indicates that the Statistical value to be reported for transactions with Transaction code of "21" will always be zero.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje ki például az „Üres” lehetőséget, amely azt jelzi, hogy a „21”-es tranzakciókódos tranzakcióra vonatkozóan jelentendő Statisztikai értéknek mindig nullának kell lennie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugrás az Adó &gt; Beállítás &gt; Külkereskedelem &gt; Külkereskedelmi paraméterek pontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In the Transaction code field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Tranzakciókód mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>For example, select '11'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „11”-es lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>In the Credit note field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Jóváírás mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>This value also identifies the physical return.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az érték a fizikai visszárut azonosítja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The credit note for the physical return will be transferred in the Intrastat journal with opposite direction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer a tényleges visszaadásra vonatkozó jóváírást az ellenkező irányba helyezi át az Intrastat naplóban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>For example, the return of arrival is transferred as dispatch.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a rendszer az érkezés visszáruzásának átvitelét kiszállításként végzi el.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Otherwise, the credit note is considered a correction and is transferred with the same direction and opposite sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenkező esetben a jóváírást helyesbítésnek minősül, és a rendszer ugyanabba az irányba helyezi át, de ellenkező előjellel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For example, the correction of arrival is transferred as an arrival with negative amount and the active flag is set to "Correction".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a rendszer az érkezés helyesbítésének átvitelét negatív összeges érkezésként végzi el és az aktív jelzőt „Helyesbítés” értékre állítja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Expand the Transfer section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki az Átvitel szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Select Yes in the Items with commodity code field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza az Igen lehetőséget a Cikkek árucikk-kóddal mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Select this option to transfer only the transactions with a commodity code assigned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be ezt a lehetőséget, ha csak az árucikk-kóddal rendelkező tranzakció átvitelét szeretné elvégezni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Transactions without a commodity code won't be transferred to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az árucikk-kód nélküli tranzakciókat nem lehet áthelyezni az Intrastatba.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>In the Transfer when meeting criterion for field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Átvitel, ha megfelel a következő feltételnek mezőben válasszon ki egy lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>For example, select 'One of the selected'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például az „A kijelöltek egyike” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Expand the Commodity code hierarchy section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki az Árucikk-kódok hierarchiája szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Click the Country/region properties tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Ország/régió tulajdonságai lapra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>In the Country/region field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Ország/régió mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>For example, select the value 'FRA'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „FRA” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>In the Intrastat code field, enter the ISO code for the country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Intrastat kód mezőben adja meg az ország ISO-kódját.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For example, type 'FR'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Írja be például a „FR” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>In the Country/region type field, select 'EU'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Ország/régió típusa mezőben válassza ki az „EU” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Click the Number sequences tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számsorozatok lapra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Set up Modes of delivery and rules for including charges in Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa be a Szállítási módot és az Intrastat költségek bevételére vonatkozó szabályokat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Go to Sales and marketing &gt; Setup &gt; Distribution &gt; Modes of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon az Értékesítés és marketing &gt; Beállítás &gt; Elosztás &gt; Szállítási módok pontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Keresse meg és jelölje ki a kívánt rekordot a listán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>For example, select '20 Air'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „20 Légi” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Külkereskedelem szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szerkesztés lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>In the Transport field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Szállítás mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>For example, select '02'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „02” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Go to Accounts receivable &gt; Charges setup &gt; Charges code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Kintlévőségek &gt; Költségek beállítása &gt; Költségkód pontra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Use the Quick Filter to find records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekordok kereséséhez használja a gyorsszűrőt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>For example, filter on the Charges code field with a value of 'freight'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például végezzen szűrést a Költségkód mezőben a „ fuvardíj” értékkel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Külkereskedelem szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szerkesztés lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Select Yes in the Intrastat invoice value field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza az Igen lehetőséget az Intrastat számlaérték mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>The amount will be transferred to the  Invoice charges field and will be summarized with the amount transferred in the Invoice amount field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer átviszi az összeget a Számlaköltségek mezőbe és a Számla összege mezőbe átvitt összeggel végzi el az összegzést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Select Yes in the Intrastat statistical value field if the amount of changes need to be transferred to the field Statistical charges and summarized with Statistical amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az Igen értéket az Intrastat statisztikai érték mezőben, ha a módosítások összegét át kell vinni a Statisztikai költségekbe és összegezni kell a Statisztikai összeggel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Sell products for EU customers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékek értékesítése az EU vevőkre vonatkozóan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Go to Accounts receivable &gt; Orders &gt; All sales orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Kinnlevőségek &gt; Rendelések &gt; Minden értékesítési rendelés elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the Customer account field, select an EU customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy uniós vevőt a Vevői számla mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>For example, select "DE-012 Litware Retail".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be például a „DE-012 Litware Kiskereskedelem” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Expand the Delivery section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Szállítás szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>In the Mode of delivery field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Szállítás módja mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>For example, select '20 Air'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „20 Légi” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Place the cursor on the first row of sales order lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vigye a mutatót az értékesítésirendelés-sorok első sorához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>In the Item number field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>For example, select 'D001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például az „D001” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Expand the Line details section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Soradatok szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Click the Foreign trade tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Külkereskedelem fülre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>The transport is filled automatically from the chosen Mode of delivery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer automatikusan kitölti az átvitelt a kiválasztott a szállítási mód alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>In the Port field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Port mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Click Financials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Pénzügyre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>As per the settings, this amount will be included in Intrastat invoice value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A beállítások szerint ez az összeg fog szerepelni az Intrastat számlaértékben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Click Maintain charges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Költségek karbantartása lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>In the Charges code field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Költségkód mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>For example, select 'FREIGHT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje ki például a „Fuvardíj” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Select the Keep check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be a Megtartás jelölőnégyzetet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>In the Charges value field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon meg egy számot az Költségek értéke mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>For example, enter '10'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „10” értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárja be a lapot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>On the Action Pane, click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számla lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Expand the Parameters section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Paraméterek szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>In the Quantity field, select 'All'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Mennyiség mezőben válassza a „Mind” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Expand the Setup section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Beállítások szakaszt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>In the Invoice date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számla dátuma mezőben adjon meg egy dátumot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>For example, enter '2015-01-31'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „2015.01.31.” dátumot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárja be a lapot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>In the Customer account field, select an EU customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy uniós vevőt a Vevői számla mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>For example, select 'DE-013 Trey Wholesales'</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például a „DE-013 Trey Wholesales” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>In the Item number field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>For example, select 'D0001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki például az „D0001” lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számla lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>In the Invoice date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számla dátuma mezőben adjon meg egy dátumot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>For example, enter the date '2015-01-31'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a „2015.01.31.” dátumot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakciók átvitele az Intrastatba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon az Adó &gt; Nyilatkozatok &gt; Külkereskedelem &gt; Intrastat pontra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Click Transfer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Áthelyezés elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Select Yes in the Customer invoice field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza az Igen lehetőséget a Vevői számla mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Click Filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szűrő parancsra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>In the list, mark the row with Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje meg a Dátummal ellátott sort a listában</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>In the Criteria field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Érték beírása a Feltétel mezőbe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>For example, enter the filter for the period January 2015 (the exact value depends on your date format): 1/1/2015..1/31/2015</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg például a szűrést a 2015 januári időszakra vonatkozóan (a pontos érték a dátumformátumtól függ): 2015.01.01. .. 2015.01.31.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>In the list, find and selected the transferred record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Keresse meg és válassza ki az átvitt rekordot a listában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Click the General tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Általános fülre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tekintse át az átvitt adatokat, többek között a cél/feladás országát/régióját, a származási országot, a súlyt, a mennyiséget, a kiegészítő egységek mennyiségét, az árucikket, a tranzakciókódot, a számlaösszeget és a statisztikai összegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>You can modify data if necessary.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szükség esetén módosíthatja az adatot.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
