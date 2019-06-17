@@ -1,167 +1,258 @@
----
-title: Aláírók beállítása nyomtatási űrlapokhoz
-description: A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 263464
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3b97de064d7e151c6136d77d993ff4323055bc8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537974"
----
-# <a name="set-up-signers-for-print-forms"></a><span data-ttu-id="2963b-103">Aláírók beállítása nyomtatási űrlapokhoz</span><span class="sxs-lookup"><span data-stu-id="2963b-103">Set up signers for print forms</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="2963b-104">A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.</span><span class="sxs-lookup"><span data-stu-id="2963b-104">For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.</span></span>
-
-<a name="set-up-default-values"></a><span data-ttu-id="2963b-105">Alapértelmezett értékek beállítása</span><span class="sxs-lookup"><span data-stu-id="2963b-105">Set up default values</span></span>
----------------------
-
-<span data-ttu-id="2963b-106">Aláírók megadásához egy vállalat által kinyomtatott dokumentumokhoz használja a **Tisztviselők** oldalt.</span><span class="sxs-lookup"><span data-stu-id="2963b-106">To set up signers for the documents that a company prints, use the **Officials** page.</span></span> <span data-ttu-id="2963b-107">Beállíthat aláírókat és a beosztásaikat mind a vállalat, mind a vevők vagy szállítók számára, a dokumentum típusától függően.</span><span class="sxs-lookup"><span data-stu-id="2963b-107">You can set up signers and their titles both for the company and for customers or vendors, depending on the document type.</span></span> <span data-ttu-id="2963b-108">Az alábbi táblázat ismerteti a **Tisztviselők** oldalon elérhető lapokat.</span><span class="sxs-lookup"><span data-stu-id="2963b-108">The following table describes the tabs on the **Officials** page.</span></span>
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><span data-ttu-id="2963b-109">Lap</span><span class="sxs-lookup"><span data-stu-id="2963b-109">Tab</span></span></th>
-<th><span data-ttu-id="2963b-110">Leírás</span><span class="sxs-lookup"><span data-stu-id="2963b-110">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="2963b-111">Általános</span><span class="sxs-lookup"><span data-stu-id="2963b-111">General</span></span></td>
-<td><span data-ttu-id="2963b-112">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz (igazgató és főkönyvelő), akik az összes típusú dokumentumot aláírhatják.</span><span class="sxs-lookup"><span data-stu-id="2963b-112">Add positions and related information for signers (Director and Chief accountant) who can sign print documents of all types.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-113">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="2963b-113">Ledger</span></span></td>
-<td><span data-ttu-id="2963b-114">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, pénzforgalomhoz kapcsolódó belső pénzügyi dokumentumokat írhatják alá:</span><span class="sxs-lookup"><span data-stu-id="2963b-114">Add the position and related information for signers who can sign the following internal financial documents that are related to cash flow:</span></span>
-<ul>
-<li><span data-ttu-id="2963b-115">Pénztárbizonylatok</span><span class="sxs-lookup"><span data-stu-id="2963b-115">Cash slips</span></span></li>
-<li><span data-ttu-id="2963b-116">Előzetes jelentés</span><span class="sxs-lookup"><span data-stu-id="2963b-116">Advance report</span></span></li>
-<li><span data-ttu-id="2963b-117">Pénztárbizonylati oldal</span><span class="sxs-lookup"><span data-stu-id="2963b-117">Page of cash book</span></span></li>
-<li><span data-ttu-id="2963b-118">Számlálási kivonat</span><span class="sxs-lookup"><span data-stu-id="2963b-118">Count statement</span></span></li>
-<li><span data-ttu-id="2963b-119">Halasztások<em></span><span class="sxs-lookup"><span data-stu-id="2963b-119">Deferrals<em></span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="2963b-120">Értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="2963b-120">Sales orders</span></span></td>
-<td><span data-ttu-id="2963b-121">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, vevőkhöz kapcsolódó, kimenő elsődleges dokumentumokat írhatják alá:</span><span class="sxs-lookup"><span data-stu-id="2963b-121">Add positions and related information for signers who can sign the following outgoing primary documents that are related to customers:</span></span>
-<ul>
-<li><span data-ttu-id="2963b-122">Kifizetendő számla</span><span class="sxs-lookup"><span data-stu-id="2963b-122">Invoice for payment</span></span></em></li>
-<li><span data-ttu-id="2963b-123">Számla</span><span class="sxs-lookup"><span data-stu-id="2963b-123">Invoice</span></span></li>
-<li><span data-ttu-id="2963b-124">Számviteli számla<em></span><span class="sxs-lookup"><span data-stu-id="2963b-124">Facture<em></span></span></li>
-<li><span data-ttu-id="2963b-125">Számla - jóváírás</span><span class="sxs-lookup"><span data-stu-id="2963b-125">Invoice - credit-note</span></span></li>
-<li><span data-ttu-id="2963b-126">Számviteli számla - jóváírás</span><span class="sxs-lookup"><span data-stu-id="2963b-126">Facture - credit-note</span></span></em></li>
-<li><span data-ttu-id="2963b-127">Adótranzakció - pénzügyi dokumentum (ügyfél)<em></span><span class="sxs-lookup"><span data-stu-id="2963b-127">Tax transaction facture (client)<em></span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-128">Beszerzési rendelések</span><span class="sxs-lookup"><span data-stu-id="2963b-128">Purchase orders</span></span></td>
-<td><span data-ttu-id="2963b-129">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, szállítókhoz kapcsolódó, bejövő elsődleges dokumentumokat írhatják alá:</span><span class="sxs-lookup"><span data-stu-id="2963b-129">Add positions and related information for signers who can sign the following incoming primary documents that are related to vendors:</span></span>
-<ul>
-<li><span data-ttu-id="2963b-130">Számla</span><span class="sxs-lookup"><span data-stu-id="2963b-130">Invoice</span></span></li>
-<li><span data-ttu-id="2963b-131">Számviteli számla</span><span class="sxs-lookup"><span data-stu-id="2963b-131">Facture</span></span></em></li>
-<li><span data-ttu-id="2963b-132">Számla - jóváírás</span><span class="sxs-lookup"><span data-stu-id="2963b-132">Invoice - credit-note</span></span></li>
-<li><span data-ttu-id="2963b-133">Számviteli számla - jóváírás<em></span><span class="sxs-lookup"><span data-stu-id="2963b-133">Facture - credit-note<em></span></span></li>
-<li><span data-ttu-id="2963b-134">Kifizetendő számla</span><span class="sxs-lookup"><span data-stu-id="2963b-134">Invoice for payment</span></span></em></li>
-<li><span data-ttu-id="2963b-135">Adótranzakció - pénzügyi dokumentum (szállító)<em></span><span class="sxs-lookup"><span data-stu-id="2963b-135">Tax transaction facture (vendor)<em></span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="2963b-136">Készletcikk kezelése</span><span class="sxs-lookup"><span data-stu-id="2963b-136">Inventory item management</span></span></td>
-<td><span data-ttu-id="2963b-137">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő raktározási bizonylatokat írhatják alá, amikor materiális eszköz kiadására kerül sor vevő részére vagy bevételezésére szállítótól:</span><span class="sxs-lookup"><span data-stu-id="2963b-137">Add positions and related information for signers who can sign the following warehouse documents when tangible assets are issued to a customer or received from a vendor:</span></span>
-<ul>
-<li><span data-ttu-id="2963b-138">Kiadási bizonylat értékesítési rendeléshez (M-15)</span><span class="sxs-lookup"><span data-stu-id="2963b-138">Issue slip for sales order (M-15)</span></span></em></li>
-<li><span data-ttu-id="2963b-139">Bevételezési</span><span class="sxs-lookup"><span data-stu-id="2963b-139">Rmb.</span></span> <span data-ttu-id="2963b-140">pénztárbizonylat / befizetési utalvány</span><span class="sxs-lookup"><span data-stu-id="2963b-140">slip/Receipt order</span></span></li>
-<li><span data-ttu-id="2963b-141">Kiadási bizonylat átmozgatási rendeléshez (M-15)\*</span><span class="sxs-lookup"><span data-stu-id="2963b-141">Issue slip for transfer order (M-15)\*</span></span></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="2963b-142">\* (Ez az dokumentumtípus csak a oroszországi elsődleges címmel rendelkező jogi személyek számára elérhető.)</span><span class="sxs-lookup"><span data-stu-id="2963b-142">\* This document type is available only for legal entities that have their primary address in Russia.</span></span> <span data-ttu-id="2963b-143">Az alábbi táblázat ismerteti a **Tisztviselők** oldalon elérhető mezőket.</span><span class="sxs-lookup"><span data-stu-id="2963b-143">The following table describes the fields on the **Officials** page.</span></span>
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><span data-ttu-id="2963b-144">Mező</span><span class="sxs-lookup"><span data-stu-id="2963b-144">Field</span></span></th>
-<th><span data-ttu-id="2963b-145">Leírás</span><span class="sxs-lookup"><span data-stu-id="2963b-145">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="2963b-146">Pozíció</span><span class="sxs-lookup"><span data-stu-id="2963b-146">Position</span></span></td>
-<td><span data-ttu-id="2963b-147">Válassza ki az aláíró beosztását.</span><span class="sxs-lookup"><span data-stu-id="2963b-147">Select the signer’s post title.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-148">Név</span><span class="sxs-lookup"><span data-stu-id="2963b-148">Name</span></span></td>
-<td><span data-ttu-id="2963b-149">Válassza ki az aláíró nevét.</span><span class="sxs-lookup"><span data-stu-id="2963b-149">Select the signer’s name.</span></span> <span data-ttu-id="2963b-150">A listán szereplő nevek vagy a Kapcsolattartók táblából, vagy az Alkalmazottak táblából származnak az aláíró típusától függően (ez azt jelenti, attól függően, hogy az <strong>A mi</strong> jelölőnégyzet be van-e jelölve).</span><span class="sxs-lookup"><span data-stu-id="2963b-150">The names in the list come from either the Contacts table or the Employees table, depending on the type of signer (that is, depending on whether the <strong>Our</strong> check box is selected).</span></span> <span data-ttu-id="2963b-151">Ha az aláíró neve nem szerepel a listában, manuálisan adja meg az aláíró teljes nevét.</span><span class="sxs-lookup"><span data-stu-id="2963b-151">If the signer&#39;s name isn&#39;t in the list, manually enter the signer’s full name.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="2963b-152">Beosztás</span><span class="sxs-lookup"><span data-stu-id="2963b-152">Job title</span></span></td>
-<td><span data-ttu-id="2963b-153">Válassza ki az aláíró munkabeosztását.</span><span class="sxs-lookup"><span data-stu-id="2963b-153">Select the signer’s job title.</span></span> <span data-ttu-id="2963b-154">Ha az aláíró beosztása nem szerepel a listában, manuálisan adja meg az aláíró beosztását.</span><span class="sxs-lookup"><span data-stu-id="2963b-154">If the signer’s title isn&#39;t in the list, manually enter the signer’s title.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-155">Számlakód</span><span class="sxs-lookup"><span data-stu-id="2963b-155">Account code</span></span></td>
-<td><span data-ttu-id="2963b-156">Válassza ki, hogy az aláíró aláírhatja-e a kiválasztott dokumentumtípus összes dokumentumát, vagy csak egy adott vevő vagy szállító dokumentumait.</span><span class="sxs-lookup"><span data-stu-id="2963b-156">Select whether the signer can sign all documents of the selected document type, or only documents for a specific customer or vendor.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="2963b-157">Számlakapcsolat</span><span class="sxs-lookup"><span data-stu-id="2963b-157">Account relation</span></span></td>
-<td><span data-ttu-id="2963b-158">Válassza ki a vevői vagy szállítói számlát, amely a kijelölt számlakódhoz kapcsolódik.</span><span class="sxs-lookup"><span data-stu-id="2963b-158">Select the customer or vendor account that is related to the selected account code.</span></span> <span data-ttu-id="2963b-159">Ez a mező csak akkor érhető el, ha a <strong>Rekord</strong> lehetőséget választja a <strong>Számlakód</strong> mezőben.</span><span class="sxs-lookup"><span data-stu-id="2963b-159">This field is available only if you select <strong>Record</strong> in the <strong>Account code</strong> field.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-160">A mi</span><span class="sxs-lookup"><span data-stu-id="2963b-160">Our</span></span></td>
-<td><span data-ttu-id="2963b-161">A bejelölt jelölőnégyzet azt jelzi, hogy a pozíció belső.</span><span class="sxs-lookup"><span data-stu-id="2963b-161">A selected check box indicates that the position is internal.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="2963b-162">Hozzárendelés raktárhoz</span><span class="sxs-lookup"><span data-stu-id="2963b-162">Association with warehouse</span></span></td>
-<td><span data-ttu-id="2963b-163">Válassza ki, hogy az aláíró az összes raktárhoz hozzá van-e rendelve, vagy csak egy adott raktárhoz.</span><span class="sxs-lookup"><span data-stu-id="2963b-163">Select whether the signer is assigned to all warehouses or only a specific warehouse.</span></span> <span data-ttu-id="2963b-164">Az alábbi lehetőségek közül választhat:</span><span class="sxs-lookup"><span data-stu-id="2963b-164">The following options are available:</span></span>
-<ul>
-<li><span data-ttu-id="2963b-165"><strong>Minden</strong> – az aláíró az összes raktárhoz hozzá van rendelve.</span><span class="sxs-lookup"><span data-stu-id="2963b-165"><strong>All</strong> – The signer is assigned to all warehouses.</span></span></li>
-<li><span data-ttu-id="2963b-166"><strong>Rekord</strong> – az aláíró adott raktárhoz van hozzárendelve.</span><span class="sxs-lookup"><span data-stu-id="2963b-166"><strong>Record</strong> – The signer is assigned to a specific warehouse.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="2963b-167">Raktár</span><span class="sxs-lookup"><span data-stu-id="2963b-167">Warehouse</span></span></td>
-<td><span data-ttu-id="2963b-168">Válassza ki a raktárkódot, amely megfelel annak a raktárnak, amelyhez az aláíró hozzá van rendelve.</span><span class="sxs-lookup"><span data-stu-id="2963b-168">Select the warehouse code that corresponds to the warehouse that the signer is assigned to.</span></span> <span data-ttu-id="2963b-169">Ez a mező csak akkor érhető el, ha a <strong>Rekord</strong> lehetőséget választja a <strong>Hozzárendelés raktárhoz</strong> mezőben.</span><span class="sxs-lookup"><span data-stu-id="2963b-169">This field is available only if you select <strong>Record</strong> in the <strong>Association with warehouse</strong> field.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-## <a name="set-up-a-number-sequence-code-for-officials"></a><span data-ttu-id="2963b-170">Állítsa be a hivatalnokok számsorozatkódját</span><span class="sxs-lookup"><span data-stu-id="2963b-170">Set up a number sequence code for officials</span></span>
-<span data-ttu-id="2963b-171">Hivatalnokokhoz számsorozatkódot a **Számsorozatok** részben rendelhet hozzá a **Jogi személyek** oldalon.</span><span class="sxs-lookup"><span data-stu-id="2963b-171">You can assign a number sequence code for officials in the **Number sequences** section of the **Legal entities** page.</span></span> <span data-ttu-id="2963b-172">Válasszon ki egy számsorozatkódot a **Hivatalnokok munkamenet-azonosítója** hivatkozáshoz.</span><span class="sxs-lookup"><span data-stu-id="2963b-172">Select a number sequence code for the **Officials session ID** reference.</span></span>
-
-## <a name="modify-signers-in-primary-documents"></a><span data-ttu-id="2963b-173">Elsődleges dokumentumok aláíróinak módosítása</span><span class="sxs-lookup"><span data-stu-id="2963b-173">Modify signers in primary documents</span></span>
-<span data-ttu-id="2963b-174">A Hivatalnokok funkció az előre definiált alapértelmezett aláírókat a Hivatalnokok táblából mutatja.</span><span class="sxs-lookup"><span data-stu-id="2963b-174">The Officials functionality shows the default predefined signers from the Officials table.</span></span> <span data-ttu-id="2963b-175">A **Számla feladása** oldalon a **Hivatalnokok** lapon módosíthatja az aláíró nevét és beosztását az elsődleges dokumentumon a következő dokumentumtípusoknál:</span><span class="sxs-lookup"><span data-stu-id="2963b-175">On the **Posting invoice** page, on the **Officials** tab, you can modify a signer’s name and title on the primary document for the following document types:</span></span>
-
--   <span data-ttu-id="2963b-176">Vevői számla</span><span class="sxs-lookup"><span data-stu-id="2963b-176">Customer invoice</span></span>
--   <span data-ttu-id="2963b-177">Szállítói számla</span><span class="sxs-lookup"><span data-stu-id="2963b-177">Vendor invoice</span></span>
--   <span data-ttu-id="2963b-178">Átmozgatási rendelések szállítása</span><span class="sxs-lookup"><span data-stu-id="2963b-178">Ship transfer order</span></span>
--   <span data-ttu-id="2963b-179">Készpénzutalvány</span><span class="sxs-lookup"><span data-stu-id="2963b-179">Cash order</span></span>
-
-<span data-ttu-id="2963b-180">**Megjegyzés:** Könyvelt bizonylatoknál a hivatalnokokat nem lehet szerkeszteni.</span><span class="sxs-lookup"><span data-stu-id="2963b-180">**Note:** After a document is posted, officials can't be edited.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-set-up-signers-for-printing-forms.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-set-up-signers-for-printing-forms.af81e0.c81625e9a042bf88268759065727bde332d37ea9.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>c81625e9a042bf88268759065727bde332d37ea9</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-set-up-signers-for-printing-forms.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up signers for print forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aláírók beállítása nyomtatási űrlapokhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up signers for print forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aláírók beállítása nyomtatási űrlapokhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Set up default values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett értékek beállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>To set up signers for the documents that a company prints, use the <bpt id="p1">**</bpt>Officials<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aláírók megadásához egy vállalat által kinyomtatott dokumentumokhoz használja a <bpt id="p1">**</bpt>Tisztviselők<ept id="p1">**</ept> oldalt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>You can set up signers and their titles both for the company and for customers or vendors, depending on the document type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beállíthat aláírókat és a beosztásaikat mind a vállalat, mind a vevők vagy szállítók számára, a dokumentum típusától függően.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The following table describes the tabs on the <bpt id="p1">**</bpt>Officials<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi táblázat ismerteti a <bpt id="p1">**</bpt>Tisztviselők<ept id="p1">**</ept> oldalon elérhető lapokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Tab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>General</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Általános</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Add positions and related information for signers (Director and Chief accountant) who can sign print documents of all types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz (igazgató és főkönyvelő), akik az összes típusú dokumentumot aláírhatják.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Add the position and related information for signers who can sign the following internal financial documents that are related to cash flow:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, pénzforgalomhoz kapcsolódó belső pénzügyi dokumentumokat írhatják alá:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Cash slips</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárbizonylatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Advance report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előzetes jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Page of cash book</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárbizonylati oldal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Count statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlálási kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Deferrals<ph id="ph1">&lt;em&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Halasztások<ph id="ph1">&lt;em&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Sales orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítési rendelések</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Add positions and related information for signers who can sign the following outgoing primary documents that are related to customers:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, vevőkhöz kapcsolódó, kimenő elsődleges dokumentumokat írhatják alá:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Invoice for payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kifizetendő számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Facture<ph id="ph1">&lt;em&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számviteli számla<ph id="ph1">&lt;em&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Invoice - credit-note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla - jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Facture - credit-note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számviteli számla - jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Tax transaction facture (client)<ph id="ph1">&lt;em&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adótranzakció - pénzügyi dokumentum (ügyfél)<ph id="ph1">&lt;em&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelések</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Add positions and related information for signers who can sign the following incoming primary documents that are related to vendors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, szállítókhoz kapcsolódó, bejövő elsődleges dokumentumokat írhatják alá:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Facture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számviteli számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Invoice - credit-note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számla - jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Facture - credit-note<ph id="ph1">&lt;em&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számviteli számla - jóváírás<ph id="ph1">&lt;em&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Invoice for payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kifizetendő számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Tax transaction facture (vendor)<ph id="ph1">&lt;em&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adótranzakció - pénzügyi dokumentum (szállító)<ph id="ph1">&lt;em&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Inventory item management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletcikk kezelése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Add positions and related information for signers who can sign the following warehouse documents when tangible assets are issued to a customer or received from a vendor:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő raktározási bizonylatokat írhatják alá, amikor materiális eszköz kiadására kerül sor vevő részére vagy bevételezésére szállítótól:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Issue slip for sales order (M-15)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiadási bizonylat értékesítési rendeléshez (M-15)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Rmb.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevételezési</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>slip/Receipt order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pénztárbizonylat / befizetési utalvány</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Issue slip for transfer order (M-15)*</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiadási bizonylat átmozgatási rendeléshez (M-15)*</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><ph id="ph1">\*</ph> This document type is available only for legal entities that have their primary address in Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph> (Ez az dokumentumtípus csak a oroszországi elsődleges címmel rendelkező jogi személyek számára elérhető.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>The following table describes the fields on the <bpt id="p1">**</bpt>Officials<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi táblázat ismerteti a <bpt id="p1">**</bpt>Tisztviselők<ept id="p1">**</ept> oldalon elérhető mezőket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mező</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Position</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pozíció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Select the signer’s post title.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az aláíró beosztását.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Név</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Select the signer’s name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az aláíró nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The names in the list come from either the Contacts table or the Employees table, depending on the type of signer (that is, depending on whether the <bpt id="p1">&lt;strong&gt;</bpt>Our<ept id="p1">&lt;/strong&gt;</ept> check box is selected).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listán szereplő nevek vagy a Kapcsolattartók táblából, vagy az Alkalmazottak táblából származnak az aláíró típusától függően (ez azt jelenti, attól függően, hogy az <bpt id="p1">&lt;strong&gt;</bpt>A mi<ept id="p1">&lt;/strong&gt;</ept> jelölőnégyzet be van-e jelölve).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>If the signer&amp;#39;s name isn&amp;#39;t in the list, manually enter the signer’s full name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha az aláíró neve nem szerepel a listában, manuálisan adja meg az aláíró teljes nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Job title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beosztás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Select the signer’s job title.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az aláíró munkabeosztását.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>If the signer’s title isn&amp;#39;t in the list, manually enter the signer’s title.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha az aláíró beosztása nem szerepel a listában, manuálisan adja meg az aláíró beosztását.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Account code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlakód</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Select whether the signer can sign all documents of the selected document type, or only documents for a specific customer or vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki, hogy az aláíró aláírhatja-e a kiválasztott dokumentumtípus összes dokumentumát, vagy csak egy adott vevő vagy szállító dokumentumait.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Account relation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlakapcsolat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Select the customer or vendor account that is related to the selected account code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a vevői vagy szállítói számlát, amely a kijelölt számlakódhoz kapcsolódik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>This field is available only if you select <bpt id="p1">&lt;strong&gt;</bpt>Record<ept id="p1">&lt;/strong&gt;</ept> in the <bpt id="p2">&lt;strong&gt;</bpt>Account code<ept id="p2">&lt;/strong&gt;</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a mező csak akkor érhető el, ha a <bpt id="p1">&lt;strong&gt;</bpt>Rekord<ept id="p1">&lt;/strong&gt;</ept> lehetőséget választja a <bpt id="p2">&lt;strong&gt;</bpt>Számlakód<ept id="p2">&lt;/strong&gt;</ept> mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Our</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A mi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>A selected check box indicates that the position is internal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A bejelölt jelölőnégyzet azt jelzi, hogy a pozíció belső.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Association with warehouse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzárendelés raktárhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Select whether the signer is assigned to all warehouses or only a specific warehouse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki, hogy az aláíró az összes raktárhoz hozzá van-e rendelve, vagy csak egy adott raktárhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>The following options are available:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi lehetőségek közül választhat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>All<ept id="p1">&lt;/strong&gt;</ept> – The signer is assigned to all warehouses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Minden<ept id="p1">&lt;/strong&gt;</ept> – az aláíró az összes raktárhoz hozzá van rendelve.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Record<ept id="p1">&lt;/strong&gt;</ept> – The signer is assigned to a specific warehouse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Rekord<ept id="p1">&lt;/strong&gt;</ept> – az aláíró adott raktárhoz van hozzárendelve.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Warehouse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raktár</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Select the warehouse code that corresponds to the warehouse that the signer is assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a raktárkódot, amely megfelel annak a raktárnak, amelyhez az aláíró hozzá van rendelve.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>This field is available only if you select <bpt id="p1">&lt;strong&gt;</bpt>Record<ept id="p1">&lt;/strong&gt;</ept> in the <bpt id="p2">&lt;strong&gt;</bpt>Association with warehouse<ept id="p2">&lt;/strong&gt;</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a mező csak akkor érhető el, ha a <bpt id="p1">&lt;strong&gt;</bpt>Rekord<ept id="p1">&lt;/strong&gt;</ept> lehetőséget választja a <bpt id="p2">&lt;strong&gt;</bpt>Hozzárendelés raktárhoz<ept id="p2">&lt;/strong&gt;</ept> mezőben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Set up a number sequence code for officials</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa be a hivatalnokok számsorozatkódját</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>You can assign a number sequence code for officials in the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Legal entities<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hivatalnokokhoz számsorozatkódot a <bpt id="p1">**</bpt>Számsorozatok<ept id="p1">**</ept> részben rendelhet hozzá a <bpt id="p2">**</bpt>Jogi személyek<ept id="p2">**</ept> oldalon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Select a number sequence code for the <bpt id="p1">**</bpt>Officials session ID<ept id="p1">**</ept> reference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy számsorozatkódot a <bpt id="p1">**</bpt>Hivatalnokok munkamenet-azonosítója<ept id="p1">**</ept> hivatkozáshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Modify signers in primary documents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elsődleges dokumentumok aláíróinak módosítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>The Officials functionality shows the default predefined signers from the Officials table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Hivatalnokok funkció az előre definiált alapértelmezett aláírókat a Hivatalnokok táblából mutatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>On the <bpt id="p1">**</bpt>Posting invoice<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Officials<ept id="p2">**</ept> tab, you can modify a signer’s name and title on the primary document for the following document types:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Számla feladása<ept id="p1">**</ept> oldalon a <bpt id="p2">**</bpt>Hivatalnokok<ept id="p2">**</ept> lapon módosíthatja az aláíró nevét és beosztását az elsődleges dokumentumon a következő dokumentumtípusoknál:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Customer invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Vendor invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Ship transfer order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átmozgatási rendelések szállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Cash order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készpénzutalvány</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> After a document is posted, officials can't be edited.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Könyvelt bizonylatoknál a hivatalnokokat nem lehet szerkeszteni.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

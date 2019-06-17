@@ -1,51 +1,162 @@
----
-title: Készletnapló-jelentések
-description: Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: InventJournalName
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 265144
-ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: v-lenest
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4369500884d4a55c2960126a16dc612d7dbbe737
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513051"
----
-# <a name="inventory-journal-reports"></a><span data-ttu-id="2bca6-103">Készletnapló-jelentések</span><span class="sxs-lookup"><span data-stu-id="2bca6-103">Inventory journal reports</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="2bca6-104">Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.</span><span class="sxs-lookup"><span data-stu-id="2bca6-104">When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.</span></span>
-
-<span data-ttu-id="2bca6-105">Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon (**Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet**) adja meg a jelentés nevét.</span><span class="sxs-lookup"><span data-stu-id="2bca6-105">To set up a relationship between a specific report and a journal type, on the **Inventory journal names** page (**Inventory management** &gt; **Setup** &gt; **Journal names** &gt; **Inventory**), enter a name for the report.</span></span> <span data-ttu-id="2bca6-106">**Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat.</span><span class="sxs-lookup"><span data-stu-id="2bca6-106">**Note:** To set up supported configurations, download the required electronic reporting configurations.</span></span> <span data-ttu-id="2bca6-107">További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="2bca6-107">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="2bca6-108">Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.</span><span class="sxs-lookup"><span data-stu-id="2bca6-108">Examples of inventory reports with supported configurations in Europe are listed in the following table.</span></span>
-
-|                    |                                     |                  |                                         |
-|--------------------|-------------------------------------|------------------|-----------------------------------------|
-| <span data-ttu-id="2bca6-109">**Ország**</span><span class="sxs-lookup"><span data-stu-id="2bca6-109">**Country**</span></span>        | <span data-ttu-id="2bca6-110">**Jelentés leírása**</span><span class="sxs-lookup"><span data-stu-id="2bca6-110">**Report description**</span></span>              | <span data-ttu-id="2bca6-111">**Napló típusa**</span><span class="sxs-lookup"><span data-stu-id="2bca6-111">**Journal type**</span></span> | <span data-ttu-id="2bca6-112">**Formátum-hozzárendelés neve**</span><span class="sxs-lookup"><span data-stu-id="2bca6-112">**Format mapping name**</span></span>                 |
-| <span data-ttu-id="2bca6-113">Litvánia, Magyarország</span><span class="sxs-lookup"><span data-stu-id="2bca6-113">Lithuania, Hungary</span></span> | <span data-ttu-id="2bca6-114">Készletkimutatás-jelentés</span><span class="sxs-lookup"><span data-stu-id="2bca6-114">Inventory statement report</span></span>          | <span data-ttu-id="2bca6-115">Számlálás</span><span class="sxs-lookup"><span data-stu-id="2bca6-115">Counting</span></span>         | <span data-ttu-id="2bca6-116">Készletkimutatás (HU, LT)</span><span class="sxs-lookup"><span data-stu-id="2bca6-116">Inventory statement (HU, LT)</span></span>            |
-| <span data-ttu-id="2bca6-117">Lettország, Lengyelország</span><span class="sxs-lookup"><span data-stu-id="2bca6-117">Latvia, Poland</span></span>     | <span data-ttu-id="2bca6-118">Készletátsorolási bizonylat</span><span class="sxs-lookup"><span data-stu-id="2bca6-118">Inventory reclassification document</span></span> | <span data-ttu-id="2bca6-119">Átvitel</span><span class="sxs-lookup"><span data-stu-id="2bca6-119">Transfer</span></span>         | <span data-ttu-id="2bca6-120">InventoryReclassificationDocument\_PLLV</span><span class="sxs-lookup"><span data-stu-id="2bca6-120">InventoryReclassificationDocument\_PLLV</span></span> |
-| <span data-ttu-id="2bca6-121">Észtország</span><span class="sxs-lookup"><span data-stu-id="2bca6-121">Estonia</span></span>            | <span data-ttu-id="2bca6-122">Készletátsorolási bizonylat</span><span class="sxs-lookup"><span data-stu-id="2bca6-122">Inventory reclassification document</span></span> | <span data-ttu-id="2bca6-123">Átvitel</span><span class="sxs-lookup"><span data-stu-id="2bca6-123">Transfer</span></span>         | <span data-ttu-id="2bca6-124">InventoryReclassificationDocument\_EE</span><span class="sxs-lookup"><span data-stu-id="2bca6-124">InventoryReclassificationDocument\_EE</span></span>   |
-| <span data-ttu-id="2bca6-125">Lengyelország</span><span class="sxs-lookup"><span data-stu-id="2bca6-125">Poland</span></span>             | <span data-ttu-id="2bca6-126">Belső PW/RW</span><span class="sxs-lookup"><span data-stu-id="2bca6-126">Internal PW/RW</span></span>                      | <span data-ttu-id="2bca6-127">Mozgás</span><span class="sxs-lookup"><span data-stu-id="2bca6-127">Movement</span></span>         | <span data-ttu-id="2bca6-128">InventJournalLinesDocPL</span><span class="sxs-lookup"><span data-stu-id="2bca6-128">InventJournalLinesDocPL</span></span>                 |
-| <span data-ttu-id="2bca6-129">Lettország</span><span class="sxs-lookup"><span data-stu-id="2bca6-129">Latvia</span></span>             | <span data-ttu-id="2bca6-130"> Készletmozgási bizonylat</span><span class="sxs-lookup"><span data-stu-id="2bca6-130">Inventory movement document</span></span>         | <span data-ttu-id="2bca6-131">Mozgás</span><span class="sxs-lookup"><span data-stu-id="2bca6-131">Movement</span></span>         | <span data-ttu-id="2bca6-132">Mozgás\_LV</span><span class="sxs-lookup"><span data-stu-id="2bca6-132">Movement\_LV</span></span>                            |
-| <span data-ttu-id="2bca6-133">Lettország</span><span class="sxs-lookup"><span data-stu-id="2bca6-133">Latvia</span></span>             | <span data-ttu-id="2bca6-134">Készletleírási bizonylat</span><span class="sxs-lookup"><span data-stu-id="2bca6-134">Inventory write-down document</span></span>       | <span data-ttu-id="2bca6-135">Korrekció</span><span class="sxs-lookup"><span data-stu-id="2bca6-135">Adjustment</span></span>       | <span data-ttu-id="2bca6-136">InventJournalLines\_LV</span><span class="sxs-lookup"><span data-stu-id="2bca6-136">InventJournalLines\_LV</span></span>                  |
-| <span data-ttu-id="2bca6-137">Lettország</span><span class="sxs-lookup"><span data-stu-id="2bca6-137">Latvia</span></span>             | <span data-ttu-id="2bca6-138">Szállítás - szállítólevél</span><span class="sxs-lookup"><span data-stu-id="2bca6-138">Transfer delivery note</span></span>              | <span data-ttu-id="2bca6-139">Átvitel</span><span class="sxs-lookup"><span data-stu-id="2bca6-139">Transfer</span></span>         | <span data-ttu-id="2bca6-140">InternalTransferDeliveryNote\_LV</span><span class="sxs-lookup"><span data-stu-id="2bca6-140">InternalTransferDeliveryNote\_LV</span></span>        |
-| <span data-ttu-id="2bca6-141">Lettország</span><span class="sxs-lookup"><span data-stu-id="2bca6-141">Latvia</span></span>             | <span data-ttu-id="2bca6-142">Leltáribizonylat-jelentés</span><span class="sxs-lookup"><span data-stu-id="2bca6-142">Counting document report</span></span>            | <span data-ttu-id="2bca6-143">Számlálás</span><span class="sxs-lookup"><span data-stu-id="2bca6-143">Counting</span></span>         | <span data-ttu-id="2bca6-144">CountedDocument\_LV</span><span class="sxs-lookup"><span data-stu-id="2bca6-144">CountedDocument\_LV</span></span>                     |
-| <span data-ttu-id="2bca6-145">Lettország</span><span class="sxs-lookup"><span data-stu-id="2bca6-145">Latvia</span></span>             | <span data-ttu-id="2bca6-146">Leltárlista-jelentés</span><span class="sxs-lookup"><span data-stu-id="2bca6-146">Counting list report</span></span>                | <span data-ttu-id="2bca6-147">Számlálás</span><span class="sxs-lookup"><span data-stu-id="2bca6-147">Counting</span></span>         | <span data-ttu-id="2bca6-148">Leltárlista</span><span class="sxs-lookup"><span data-stu-id="2bca6-148">Counting list</span></span>                           |
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-set-up-report-inventory-journal-names.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-set-up-report-inventory-journal-names.2e74a7.b7077522e02f6b91d335c70adc26e23524d65aae.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b7077522e02f6b91d335c70adc26e23524d65aae</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-set-up-report-inventory-journal-names.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Inventory journal reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletnapló-jelentések</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Inventory journal reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletnapló-jelentések</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>To set up a relationship between a specific report and a journal type, on the <bpt id="p1">**</bpt>Inventory journal names<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Inventory management<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Journal names<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Inventory<ept id="p5">**</ept>), enter a name for the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy adott jelentés és naplótípus közötti kapcsolat beállításához a <bpt id="p1">**</bpt>Készletnaplónevek<ept id="p1">**</ept> oldalon (<bpt id="p2">**</bpt>Készletgazdálkodás<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Beállítás<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Naplónevek<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Készlet<ept id="p5">**</ept>) adja meg a jelentés nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> To set up supported configurations, download the required electronic reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>For more information, see <bpt id="p1">[</bpt>Download Electronic reporting configurations from Lifecycle Services<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További tudnivalókért lásd: <bpt id="p1">[</bpt>Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Examples of inventory reports with supported configurations in Europe are listed in the following table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">**</bpt>Country<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ország<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">**</bpt>Report description<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentés leírása<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Journal type<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Napló típusa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>Format mapping name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Formátum-hozzárendelés neve<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Lithuania, Hungary</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Litvánia, Magyarország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Inventory statement report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletkimutatás-jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Counting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlálás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Inventory statement (HU, LT)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletkimutatás (HU, LT)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Latvia, Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország, Lengyelország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Inventory reclassification document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletátsorolási bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Transfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átvitel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>InventoryReclassificationDocument<ph id="ph1">\_</ph>PLLV</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventoryReclassificationDocument<ph id="ph1">\_</ph>PLLV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Észtország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Inventory reclassification document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletátsorolási bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Transfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átvitel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>InventoryReclassificationDocument<ph id="ph1">\_</ph>EE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventoryReclassificationDocument<ph id="ph1">\_</ph>EE</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lengyelország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Internal PW/RW</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belső PW/RW</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Movement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mozgás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>InventJournalLinesDocPL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventJournalLinesDocPL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Inventory movement document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Készletmozgási bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Movement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mozgás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Movement<ph id="ph1">\_</ph>LV</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mozgás<ph id="ph1">\_</ph>LV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Inventory write-down document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletleírási bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Adjustment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrekció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>InventJournalLines<ph id="ph1">\_</ph>LV</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventJournalLines<ph id="ph1">\_</ph>LV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Transfer delivery note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítás - szállítólevél</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Transfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átvitel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>InternalTransferDeliveryNote<ph id="ph1">\_</ph>LV</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InternalTransferDeliveryNote<ph id="ph1">\_</ph>LV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Counting document report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leltáribizonylat-jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Counting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlálás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>CountedDocument<ph id="ph1">\_</ph>LV</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CountedDocument<ph id="ph1">\_</ph>LV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lettország</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Counting list report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leltárlista-jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Counting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlálás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Counting list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leltárlista</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,126 +1,471 @@
----
-title: Pénzügyi jelentéskészítés
-description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
-author: aprilolson
-manager: AnnBe
-ms.date: 09/26/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: FinancialReports
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 10444
-ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
-ms.search.region: Global
-ms.author: aolson
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550305"
----
-# <a name="financial-reporting"></a><span data-ttu-id="9c034-104">Pénzügyi jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="9c034-104">Financial reporting</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="9c034-105">Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat.</span><span class="sxs-lookup"><span data-stu-id="9c034-105">This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</span></span> <span data-ttu-id="9c034-106">Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="9c034-106">It includes a description of the default financial reports that are provided.</span></span>
-
-<a name="accessing-financial-reporting"></a><span data-ttu-id="9c034-107">Pénzügyi jelentéskészítés elérése</span><span class="sxs-lookup"><span data-stu-id="9c034-107">Accessing financial reporting</span></span>
------------------------------
-
-<span data-ttu-id="9c034-108">A **Pénzügyi jelentéskészítés** menüt a következőképpen találhatja meg a Finance and Operations szoftverben:</span><span class="sxs-lookup"><span data-stu-id="9c034-108">You can find the **Financial reporting** menu in the following places in Finance and Operations:</span></span>
-
--   <span data-ttu-id="9c034-109">**Főkönyv** &gt; **Lekérdezések és jelentések**</span><span class="sxs-lookup"><span data-stu-id="9c034-109">**General Ledger** &gt; **Inquiries and reports**</span></span>
--   <span data-ttu-id="9c034-110">**Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Alapvető költségvetés-tervezés**</span><span class="sxs-lookup"><span data-stu-id="9c034-110">**Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**</span></span>
--   <span data-ttu-id="9c034-111">**Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Költségvetés-tervezés**</span><span class="sxs-lookup"><span data-stu-id="9c034-111">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget planning**</span></span>
--   <span data-ttu-id="9c034-112">**Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Költségvetés-ellenőrzés**</span><span class="sxs-lookup"><span data-stu-id="9c034-112">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget control**</span></span>
--   <span data-ttu-id="9c034-113">Konszolidációk</span><span class="sxs-lookup"><span data-stu-id="9c034-113">Consolidations</span></span>
-
-<span data-ttu-id="9c034-114">Ha pénzügyi jelentést szeretne létrehozni és generálni egy jogi személy számára, be kell állítania a következő adatokat az adott jogi személyhez:</span><span class="sxs-lookup"><span data-stu-id="9c034-114">To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</span></span>
-
--   <span data-ttu-id="9c034-115">Pénzügyi naptár</span><span class="sxs-lookup"><span data-stu-id="9c034-115">Fiscal calendar</span></span>
--   <span data-ttu-id="9c034-116">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="9c034-116">Ledger</span></span>
--   <span data-ttu-id="9c034-117">Számlatükör</span><span class="sxs-lookup"><span data-stu-id="9c034-117">Chart of accounts</span></span>
--   <span data-ttu-id="9c034-118">Pénznem</span><span class="sxs-lookup"><span data-stu-id="9c034-118">Currency</span></span>
-
-<span data-ttu-id="9c034-119">A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhetők el, amelyek megfelelő jogosultságokkal és kiadott feladatokkal rendelkeznek a biztonsági szerepkörüknek megfelelően.</span><span class="sxs-lookup"><span data-stu-id="9c034-119">The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</span></span> <span data-ttu-id="9c034-120">Az alábbi szakaszok tartalmazzák ezen jogosultságok és feladatkörök listáját, valamint a kapcsolódó szerepköröket.</span><span class="sxs-lookup"><span data-stu-id="9c034-120">The following sections list these privileges and duties, together with the associated roles.</span></span>
-
-### <a name="duties"></a><span data-ttu-id="9c034-121">Feladatkör</span><span class="sxs-lookup"><span data-stu-id="9c034-121">Duties</span></span>
-
-| <span data-ttu-id="9c034-122">Adó címke</span><span class="sxs-lookup"><span data-stu-id="9c034-122">Duty label</span></span>                            | <span data-ttu-id="9c034-123">Leírás</span><span class="sxs-lookup"><span data-stu-id="9c034-123">Description</span></span>                                                             | <span data-ttu-id="9c034-124">AOT neve</span><span class="sxs-lookup"><span data-stu-id="9c034-124">AOT name</span></span>                         |
-|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| <span data-ttu-id="9c034-125">Pénzügyi jelentések biztonságának karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-125">Maintain financial reporting security</span></span> | <span data-ttu-id="9c034-126">Pénzügyi jelentések biztonságának karbantartása és adminisztratív feladatok végrehajtása.</span><span class="sxs-lookup"><span data-stu-id="9c034-126">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="9c034-127">PénzügyiJelentésekBiztonságánakKarbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-127">FinancialReportsSecurityMaintain</span></span> |
-| <span data-ttu-id="9c034-128">Pénzügyi jelentések karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-128">Maintain financial reports</span></span>            | <span data-ttu-id="9c034-129">Pénzügyi jelentések tervezése és karbantartása.</span><span class="sxs-lookup"><span data-stu-id="9c034-129">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="9c034-130">PénzügyiJelentésekKarbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-130">FinancialReportsMaintain</span></span>         |
-| <span data-ttu-id="9c034-131">Pénzügyi jelentések létrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-131">Generate financial reports</span></span>            | <span data-ttu-id="9c034-132">Pénzügyi jelentések létrehozása és frissítése.</span><span class="sxs-lookup"><span data-stu-id="9c034-132">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="9c034-133">PénzügyiJelentésekLétrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-133">FinancialReportsGenerate</span></span>         |
-| <span data-ttu-id="9c034-134">Pénzügyi teljesítmény ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="9c034-134">Review financial performance</span></span>          | <span data-ttu-id="9c034-135">Pénzügyi teljesítmény ellenőrzése és elemzése.</span><span class="sxs-lookup"><span data-stu-id="9c034-135">Review and analyze financial performance.</span></span>                               | <span data-ttu-id="9c034-136">PénzügyiJelentésekTeljEllenőrzése</span><span class="sxs-lookup"><span data-stu-id="9c034-136">FinancialReportsPerfReview</span></span>       |
-
-### <a name="privileges"></a><span data-ttu-id="9c034-137">Jogosultságok</span><span class="sxs-lookup"><span data-stu-id="9c034-137">Privileges</span></span>
-
-| <span data-ttu-id="9c034-138">Jogosultság címkéje</span><span class="sxs-lookup"><span data-stu-id="9c034-138">Privilege label</span></span>                       | <span data-ttu-id="9c034-139">Leírás</span><span class="sxs-lookup"><span data-stu-id="9c034-139">Description</span></span>                                                             | <span data-ttu-id="9c034-140">AOT neve</span><span class="sxs-lookup"><span data-stu-id="9c034-140">AOT name</span></span>                         |
-|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| <span data-ttu-id="9c034-141">Pénzügyi jelentések biztonságának karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-141">Maintain financial reporting security</span></span> | <span data-ttu-id="9c034-142">Pénzügyi jelentések biztonságának karbantartása és adminisztratív feladatok végrehajtása.</span><span class="sxs-lookup"><span data-stu-id="9c034-142">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="9c034-143">PénzügyiJelentésekBiztonságánakKarbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-143">FinancialReportsSecurityMaintain</span></span> |
-| <span data-ttu-id="9c034-144">Pénzügyi jelentések karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-144">Maintain financial reports</span></span>            | <span data-ttu-id="9c034-145">Pénzügyi jelentések tervezése és karbantartása.</span><span class="sxs-lookup"><span data-stu-id="9c034-145">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="9c034-146">PénzügyiJelentésekKarbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-146">FinancialReportsMaintainReports</span></span>  |
-| <span data-ttu-id="9c034-147">Pénzügyi jelentések létrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-147">Generate financial reports</span></span>            | <span data-ttu-id="9c034-148">Pénzügyi jelentések létrehozása és frissítése.</span><span class="sxs-lookup"><span data-stu-id="9c034-148">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="9c034-149">PénzügyiJelentésekLétrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-149">FinancialReportsGenerateReports</span></span>  |
-| <span data-ttu-id="9c034-150">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="9c034-150">View financial reports</span></span>                | <span data-ttu-id="9c034-151">Pénzügyi jelentések megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-151">View financial reports.</span></span>                                                 | <span data-ttu-id="9c034-152">PénzügyiJelentésekMegtekintése</span><span class="sxs-lookup"><span data-stu-id="9c034-152">FinancialReportsView</span></span>             |
-
-### <a name="roles"></a><span data-ttu-id="9c034-153">Szerepkörök</span><span class="sxs-lookup"><span data-stu-id="9c034-153">Roles</span></span>
-
-| <span data-ttu-id="9c034-154">Jogosultság címkéje</span><span class="sxs-lookup"><span data-stu-id="9c034-154">Privilege label</span></span>                       | <span data-ttu-id="9c034-155">Feladatkör</span><span class="sxs-lookup"><span data-stu-id="9c034-155">Duty</span></span>                                  | <span data-ttu-id="9c034-156">Szerepkörök</span><span class="sxs-lookup"><span data-stu-id="9c034-156">Roles</span></span>                                                                           |
-|---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
-| <span data-ttu-id="9c034-157">Pénzügyi jelentések biztonságának karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-157">Maintain financial reporting security</span></span> | <span data-ttu-id="9c034-158">Pénzügyi jelentések biztonságának karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-158">Maintain financial reporting security</span></span> | <span data-ttu-id="9c034-159">Biztonsági rendszergazda</span><span class="sxs-lookup"><span data-stu-id="9c034-159">Security administrator</span></span>                                                          |
-| <span data-ttu-id="9c034-160">Pénzügyi jelentések karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-160">Maintain financial reports</span></span>            | <span data-ttu-id="9c034-161">Pénzügyi jelentések karbantartása</span><span class="sxs-lookup"><span data-stu-id="9c034-161">Maintain financial reports</span></span>            | <span data-ttu-id="9c034-162">Főkönyvelő, számviteli felügyelő, pénzügyi ellenőr, költségvetés-kezelő</span><span class="sxs-lookup"><span data-stu-id="9c034-162">Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</span></span> |
-| <span data-ttu-id="9c034-163">Pénzügyi jelentések létrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-163">Generate financial reports</span></span>            | <span data-ttu-id="9c034-164">Pénzügyi jelentések létrehozása</span><span class="sxs-lookup"><span data-stu-id="9c034-164">Generate financial reports</span></span>            | <span data-ttu-id="9c034-165">Vezérigazgató, pénzügyi igazgató, könyvelő</span><span class="sxs-lookup"><span data-stu-id="9c034-165">CEO, CFO, Accountant</span></span>                                                            |
-| <span data-ttu-id="9c034-166">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="9c034-166">View financial reports</span></span>                | <span data-ttu-id="9c034-167">Pénzügyi teljesítmény ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="9c034-167">Review financial performance</span></span>          | <span data-ttu-id="9c034-168">Nincs hozzárendelve</span><span class="sxs-lookup"><span data-stu-id="9c034-168">None assigned</span></span>                                                                   |
-
-<span data-ttu-id="9c034-169">Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a pénzügyi beszámolókat néhány percen belül.</span><span class="sxs-lookup"><span data-stu-id="9c034-169">After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</span></span> <span data-ttu-id="9c034-170">**Megjegyzés:** a sysadmin szerepkör hozzáadódik a pénzügyi beszámoló minden szerepköréhez.</span><span class="sxs-lookup"><span data-stu-id="9c034-170">**Note:** The sysadmin role is added to all roles in financial reporting.</span></span>
-
-## <a name="default-reports"></a><span data-ttu-id="9c034-171">Alapértelmezett jelentések</span><span class="sxs-lookup"><span data-stu-id="9c034-171">Default reports</span></span>
-<span data-ttu-id="9c034-172">A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés található.</span><span class="sxs-lookup"><span data-stu-id="9c034-172">Financial reporting provides 22 default financial reports.</span></span> <span data-ttu-id="9c034-173">Minden jelentés egy alapértelmezett számlakategóriát használ a Finance and Operations rendszerben.</span><span class="sxs-lookup"><span data-stu-id="9c034-173">Every report uses the default main account categories in Finance and Operations.</span></span> <span data-ttu-id="9c034-174">Használhatja ezeket a jelentéseket úgy, ahogy vannak, vagy kiindulópontként a pénzügyi beszámolók készítéséhez.</span><span class="sxs-lookup"><span data-stu-id="9c034-174">You can use these reports as is or as a starting point for your financial reporting needs.</span></span> <span data-ttu-id="9c034-175">A hagyományos pénzügyi kimutatások, például a Bevétel-kimutatás vagy a Mérlegkimutatás mellett az alapértelmezett jelentések között olyan jelentések is vannak, amelyek különböző pénzügyi kimutatásokat tartalmaznak, amelyeket létrehozhat.</span><span class="sxs-lookup"><span data-stu-id="9c034-175">In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</span></span> 
-
-<!--Each report in the following table links to an Office Mix presentation about the report.-->
-
-| <span data-ttu-id="9c034-176">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="9c034-176">Default report</span></span>                                                                                         | <span data-ttu-id="9c034-177">Leírás</span><span class="sxs-lookup"><span data-stu-id="9c034-177">Description</span></span>                                                                                                                                                                                                                                                                                                          |
-|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="9c034-178">12 hónapos egyoszlopos bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-178">12 Month Rolling Single Column Income Statement – Default</span></span> | <span data-ttu-id="9c034-179">A szervezet nyereségességének megtekintése az elmúlt 12 hónapban egy oszlopban.</span><span class="sxs-lookup"><span data-stu-id="9c034-179">View an organization’s profitability for the past 12 months in a single column.</span></span>                                                                                                                                                                                                                                      |
-| <span data-ttu-id="9c034-180">12 hónapos trend bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-180">12 Month Trend Income Statement – Default</span></span>                 | <span data-ttu-id="9c034-181">A szervezet nyereségességének megtekintése az elmúlt 12 hónapban egy oszlopban.</span><span class="sxs-lookup"><span data-stu-id="9c034-181">View an organization’s profitability for each of the last 12 months.</span></span> <span data-ttu-id="9c034-182">Ez a 12 hónap több mint egy pénzügyi évre is kiterjedhet.</span><span class="sxs-lookup"><span data-stu-id="9c034-182">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                             |
-| <span data-ttu-id="9c034-183">Kiadások és költségvetés – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-183">Actual vs Budget – Default</span></span>                                | <span data-ttu-id="9c034-184">Az összes számla eredeti költségvetési egyenlege részletes adatainak megtekintése, és összehasonlítása a módosított költségvetéssel, amelyben eltérő kiadások vannak.</span><span class="sxs-lookup"><span data-stu-id="9c034-184">View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</span></span>                                                                                                                                                                          |
-| <span data-ttu-id="9c034-185">Könyvvizsgálati részletek – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-185">Audit Details – Default</span></span>                                  | <span data-ttu-id="9c034-186">Az összes számla egyenlegének részletes adatainak megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-186">View detailed balance information for all accounts.</span></span> <span data-ttu-id="9c034-187">Ez a jelentés a hitel- és bankkártya egyenlegeket mutatja a jelentési pénznemben és a helyi pénznemben a tranzakciók további adataival együtt, mint például a felhasználói azonosító, az utolsó módosítást végrehajtó felhasználó, az utolsó módosítás dátuma, és a napló azonosítója.</span><span class="sxs-lookup"><span data-stu-id="9c034-187">This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</span></span> |
-| <span data-ttu-id="9c034-188">Vevői egyenleglista – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-188">Balance List – Default</span></span>                                   | <span data-ttu-id="9c034-189">Az összes számla egyenlegének részletes adatainak megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-189">View detailed balance information for all accounts.</span></span> <span data-ttu-id="9c034-190">Ez a jelentés megjeleníti a nyitó és záró egyenlegeket, a hitel- és bankkártyák egyenlegeit az aktuális időszakra és a folyó év aktuális napjáig a tranzakciók további adataival együtt, mint például a bizonylat.</span><span class="sxs-lookup"><span data-stu-id="9c034-190">This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</span></span>                                                                    |
-| <span data-ttu-id="9c034-191">Mérleg – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-191">Balance Sheet – Default</span></span>                                   | <span data-ttu-id="9c034-192">A szervezet éves pénzügyi helyzetének megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-192">View the organization's financial position for the year.</span></span>                                                                                                                                                                                                                                                             |
-| <span data-ttu-id="9c034-193">Mérleg és bevétel-kimutatás egymás mellett – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-193">Balance Sheet and Income Statement Side by Side - Default</span></span> | <span data-ttu-id="9c034-194">A vállalat éves pénzügyi helyzetének és nyereségességének megjelenítése egymás mellett.</span><span class="sxs-lookup"><span data-stu-id="9c034-194">View the organization’s financial position and profitability for the year side by side.</span></span>                                                                                                                                                                                                                              |
-| <span data-ttu-id="9c034-195">Pénzforgalom – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-195">Cash Flow – Default</span></span>                                       | <span data-ttu-id="9c034-196">Betekintés a szervezet beérkező és kimenő készpénzfizetéseibe.</span><span class="sxs-lookup"><span data-stu-id="9c034-196">Gain insight into the cash that is coming in to and going out of the organization.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="9c034-197">Részletes JE és TB áttekintés – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-197">Detailed JE and TB Review – Default</span></span>                      | <span data-ttu-id="9c034-198">Nyitó egyenleg és a tevékenységi információk megtekintése az összes fiókban.</span><span class="sxs-lookup"><span data-stu-id="9c034-198">View opening balance and activity information for all accounts.</span></span>                                                                                                                                                                                                                                                      |
-| <span data-ttu-id="9c034-199">Részletes főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-199">Detailed Trial Balance - Default</span></span>                         | <span data-ttu-id="9c034-200">Egyenleginformációk megtekintése minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.</span><span class="sxs-lookup"><span data-stu-id="9c034-200">View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</span></span>                                                                                                                                  |
-| <span data-ttu-id="9c034-201">Negyedéves költségtrend három évre – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-201">Expenses Three Year Quarterly Trend – Default</span></span>             | <span data-ttu-id="9c034-202">Betekintést nyújt az elmúlt három év 12 negyedévének költségeibe.</span><span class="sxs-lookup"><span data-stu-id="9c034-202">Gain insight into expenses for the past 12 quarters over the previous three years.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="9c034-203">JE és TB pénzügyi feliratok áttekintése – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-203">Financial Captions JE and TB Review – Default</span></span>            | <span data-ttu-id="9c034-204">Az eszköz, a kötelezettség, a tulajdonosi tőke, a bevétel, a kiadás, a nyereség vagy a veszteség pénzügyi feliratok egyenlegeinek és aktivitásának áttekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-204">See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</span></span>                                                                                                                                                                           |
-| <span data-ttu-id="9c034-205">Bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-205">Income Statement – Default</span></span>                                | <span data-ttu-id="9c034-206">A szervezet nyereségességének megtekintése az aktuális időszakra és a folyó év mai napjáig.</span><span class="sxs-lookup"><span data-stu-id="9c034-206">View the organization’s profitability for the current period and the year to date.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="9c034-207">Főkönyvi tranzakciók listája – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-207">Ledger Transaction List – Default</span></span>                        | <span data-ttu-id="9c034-208">Az összes számla egyenlegének részletes adatainak megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-208">View detailed balance information for all accounts.</span></span> <span data-ttu-id="9c034-209">Ez a jelentés a hitel- és bankkártyák egyenlegét mutatja a tranzakciók további adataival együtt, mint például a tranzakció időpontja, a napló száma, a bizonylat, a feladás típusa és a nyomkövetési szám.</span><span class="sxs-lookup"><span data-stu-id="9c034-209">This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</span></span>                                                                            |
-| <span data-ttu-id="9c034-210">Mutatószámok – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-210">Ratios – Default</span></span>                                          | <span data-ttu-id="9c034-211">A szervezet éves fizetőképességének, nyereségességének és hatékonysági rátájának megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-211">View the solvency, profitability, and efficiency ratios for the organization for the year.</span></span>                                                                                                                                                                                                                           |
-| <span data-ttu-id="9c034-212">12 hónapos költségek – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-212">Rolling 12 Month Expenses – Default</span></span>                       | <span data-ttu-id="9c034-213">Az elmúlt 12 hónap költségeinek megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-213">Gain insight into expenses for each of the last 12 months.</span></span> <span data-ttu-id="9c034-214">Ez a 12 hónap több mint egy pénzügyi évre is kiterjedhet.</span><span class="sxs-lookup"><span data-stu-id="9c034-214">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                                       |
-| <span data-ttu-id="9c034-215">Folyamatos negyedéves bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-215">Rolling Quarter Income Statement – Default</span></span>               | <span data-ttu-id="9c034-216">A szervezet nyereségességének megtekintése negyedéves lebontásban az elmúlt évben, valamint a folyó évben az aktuális időpontig.</span><span class="sxs-lookup"><span data-stu-id="9c034-216">View the organization’s profitability on a quarterly basis for the past year and the year to date.</span></span>                                                                                                                                                                                                                   |
-| <span data-ttu-id="9c034-217">Mérleg egymás mellett – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-217">Side by Side Balance Sheet – Default</span></span>                      | <span data-ttu-id="9c034-218">A szervezet éves pénzügyi helyzetének megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9c034-218">View the organization's financial position for the year.</span></span> <span data-ttu-id="9c034-219">Ez a jelentés az eszközöket és a kötelezettséget, valamint a részvényesek saját tőkéjét jeleníti meg egyidejűleg.</span><span class="sxs-lookup"><span data-stu-id="9c034-219">This report shows assets and liability, and shareholder equity side by side.</span></span>                                                                                                                                                                                |
-| <span data-ttu-id="9c034-220">Összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-220">Summary Trial Balance – Default</span></span>                          | <span data-ttu-id="9c034-221">Egyenleg-adatok megtekintése az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</span><span class="sxs-lookup"><span data-stu-id="9c034-221">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</span></span>                                                                                                                                                                  |
-| <span data-ttu-id="9c034-222">Éves összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-222">Summary Trial Balance Year Over Year – Default</span></span>           | <span data-ttu-id="9c034-223">Az egyenleg-adatok megtekintése az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</span><span class="sxs-lookup"><span data-stu-id="9c034-223">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</span></span>                                                                                                                           |
-| <span data-ttu-id="9c034-224">Heti értékesítések és kedvezmények – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-224">Weekly Sales and Discounts - Default</span></span>                     | <span data-ttu-id="9c034-225">Betekintés a hónap egyes heteinek értékesítéseibe és kedvezményeibe.</span><span class="sxs-lookup"><span data-stu-id="9c034-225">Gain insight into sales and discounts for each week in a month.</span></span> <span data-ttu-id="9c034-226">Ez a jelentés összesen négy hetet tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="9c034-226">This report includes a four-week total.</span></span>                                                                                                                                                                                                              |
-| <span data-ttu-id="9c034-227">Rendelkezésre álló költségvetési alapok - alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="9c034-227">Budget Funds Available - Default</span></span>                         | <span data-ttu-id="9c034-228">A felülvizsgált költségvetés, a tényleges kiadások, költségvetési foglalások és az összes számla rendelkezésére álló költségvetési források részletes összehasonlításának megtekintése</span><span class="sxs-lookup"><span data-stu-id="9c034-228">View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</span></span>                                                                                                                                                                                  |
-
-## <a name="opening-financial-reports"></a><span data-ttu-id="9c034-229">Pénzügyi jelentés megnyitása</span><span class="sxs-lookup"><span data-stu-id="9c034-229">Opening financial reports</span></span>
-<span data-ttu-id="9c034-230">Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat alapértelmezett pénzügyi jelentéseinek listája jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="9c034-230">When you click the **Financial reporting** menu, the list of default financial reports for the company is shown.</span></span> <span data-ttu-id="9c034-231">Ezután megnyithatja vagy módosíthatja a jelentést.</span><span class="sxs-lookup"><span data-stu-id="9c034-231">You can then open or modify a report.</span></span> <span data-ttu-id="9c034-232">Az alapértelmezett jelentés megnyitásához válassza ki a jelentés nevét.</span><span class="sxs-lookup"><span data-stu-id="9c034-232">To open one of the default reports, select the report name.</span></span> <span data-ttu-id="9c034-233">A jelentés első megnyitásakor automatikusan létrejön a jelentés az előző hónapra.</span><span class="sxs-lookup"><span data-stu-id="9c034-233">The first time that a report is opened, it's automatically generated for the previous month.</span></span> <span data-ttu-id="9c034-234">Például, ha 2016 augusztusában nyit meg egy jelentést először, a jelentés a 2016. július 31-i dátumhoz jön létre.</span><span class="sxs-lookup"><span data-stu-id="9c034-234">For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</span></span> <span data-ttu-id="9c034-235">Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.</span><span class="sxs-lookup"><span data-stu-id="9c034-235">After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</span></span>
-
-## <a name="creating-and-modifying-financial-reports"></a><span data-ttu-id="9c034-236">Pénzügyi jelentések létrehozása és módosítása</span><span class="sxs-lookup"><span data-stu-id="9c034-236">Creating and modifying financial reports</span></span>
-<span data-ttu-id="9c034-237">A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést.</span><span class="sxs-lookup"><span data-stu-id="9c034-237">From the financial reports list, you can create a new report or modify an existing report.</span></span> <span data-ttu-id="9c034-238">Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen.</span><span class="sxs-lookup"><span data-stu-id="9c034-238">If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane.</span></span> <span data-ttu-id="9c034-239">Letöltődik a készülékére egy jelentéstervező program.</span><span class="sxs-lookup"><span data-stu-id="9c034-239">A report designer program is downloaded to your device.</span></span> <span data-ttu-id="9c034-240">A jelentéstervező elindulása után új jelentést hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="9c034-240">After the report designer starts you can then create the new report.</span></span> <span data-ttu-id="9c034-241">Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában.</span><span class="sxs-lookup"><span data-stu-id="9c034-241">After you save the new report, it appears in the financial reports list.</span></span> <span data-ttu-id="9c034-242">A listában csak a Finance and Operation rendszerben használt vállalatra vonatkozó jelentések jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="9c034-242">The list shows only reports that were created for the company that you're using in Finance and Operations.</span></span> 
-
-> [!NOTE] 
-> <span data-ttu-id="9c034-243">A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának.</span><span class="sxs-lookup"><span data-stu-id="9c034-243">The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</span></span> <span data-ttu-id="9c034-244">A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/en-us/download/details.aspx?id=53345) tölthető le és telepíthető.</span><span class="sxs-lookup"><span data-stu-id="9c034-244">This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span></span> <span data-ttu-id="9c034-245">Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez.</span><span class="sxs-lookup"><span data-stu-id="9c034-245">If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</span></span> <span data-ttu-id="9c034-246">Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban.</span><span class="sxs-lookup"><span data-stu-id="9c034-246">If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</span></span> <span data-ttu-id="9c034-247">Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában.</span><span class="sxs-lookup"><span data-stu-id="9c034-247">You can also modify a report that appears in the financial reports list.</span></span> <span data-ttu-id="9c034-248">Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="9c034-248">When the area around the report name is selected, click **Edit** on the Action Pane.</span></span> <span data-ttu-id="9c034-249">A jelentéstervező program elindul.</span><span class="sxs-lookup"><span data-stu-id="9c034-249">The report designer program starts.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="9c034-250">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="9c034-250">Additional resources</span></span>
-- [<span data-ttu-id="9c034-251">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="9c034-251">View financial reports</span></span>](view-financial-reports.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="financial-reporting-getting-started.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>financial-reporting-getting-started.2bf0de.b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\financial-reporting-getting-started.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It includes a description of the default financial reports that are provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It includes a description of the default financial reports that are provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Accessing financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítés elérése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You can find the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu in the following places in Finance and Operations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Pénzügyi jelentéskészítés<ept id="p1">**</ept> menüt a következőképpen találhatja meg a Finance and Operations szoftverben:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">**</bpt>General Ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Főkönyv<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Lekérdezések és jelentések<ept id="p2">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquires and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Basic budgeting<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Költségvetés készítése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Lekérdezések és jelentések<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Alapvető költségvetés-tervezés<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Költségvetés készítése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Lekérdezések és jelentések<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Költségvetés-tervezés<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget control<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Költségvetés készítése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Lekérdezések és jelentések<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Költségvetés-ellenőrzés<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Consolidations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konszolidációk</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha pénzügyi jelentést szeretne létrehozni és generálni egy jogi személy számára, be kell állítania a következő adatokat az adott jogi személyhez:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Fiscal calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi naptár</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Chart of accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlatükör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénznem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhetők el, amelyek megfelelő jogosultságokkal és kiadott feladatokkal rendelkeznek a biztonsági szerepkörüknek megfelelően.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The following sections list these privileges and duties, together with the associated roles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi szakaszok tartalmazzák ezen jogosultságok és feladatkörök listáját, valamint a kapcsolódó szerepköröket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Duties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladatkör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Duty label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó címke</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>AOT name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOT neve</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Maintain financial reporting security and perform administrative tasks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása és adminisztratív feladatok végrehajtása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>FinancialReportsSecurityMaintain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekBiztonságánakKarbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Design and maintain financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések tervezése és karbantartása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>FinancialReportsMaintain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekKarbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Generate and refresh financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása és frissítése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>FinancialReportsGenerate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekLétrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Review financial performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi teljesítmény ellenőrzése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Review and analyze financial performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi teljesítmény ellenőrzése és elemzése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>FinancialReportsPerfReview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekTeljEllenőrzése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Privileges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jogosultságok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Privilege label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jogosultság címkéje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>AOT name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOT neve</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Maintain financial reporting security and perform administrative tasks.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása és adminisztratív feladatok végrehajtása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>FinancialReportsSecuritySystemMaintain</source><target logoport:matchpercent="0" state="translated">FinancialReportsSecuritySystemMaintain</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Design and maintain financial reports.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések tervezése és karbantartása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>FinancialReportsMaintainReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekKarbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Generate and refresh financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása és frissítése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>FinancialReportsGenerateReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekLétrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>View financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>View financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>FinancialReportsView</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PénzügyiJelentésekMegtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerepkörök</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Privilege label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jogosultság címkéje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Duty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladatkör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerepkörök</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések biztonságának karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Security administrator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Biztonsági rendszergazda</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések karbantartása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvelő, számviteli felügyelő, pénzügyi ellenőr, költségvetés-kezelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>CEO, CFO, Accountant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vezérigazgató, pénzügyi igazgató, könyvelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>View financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Review financial performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi teljesítmény ellenőrzése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>None assigned</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs hozzárendelve</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a pénzügyi beszámolókat néhány percen belül.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The sysadmin role is added to all roles in financial reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> a sysadmin szerepkör hozzáadódik a pénzügyi beszámoló minden szerepköréhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Default reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett jelentések</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Financial reporting provides 22 default financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés található.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Every report uses the default main account categories in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden jelentés egy alapértelmezett számlakategóriát használ a Finance and Operations rendszerben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>You can use these reports as is or as a starting point for your financial reporting needs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Használhatja ezeket a jelentéseket úgy, ahogy vannak, vagy kiindulópontként a pénzügyi beszámolók készítéséhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A hagyományos pénzügyi kimutatások, például a Bevétel-kimutatás vagy a Mérlegkimutatás mellett az alapértelmezett jelentések között olyan jelentések is vannak, amelyek különböző pénzügyi kimutatásokat tartalmaznak, amelyeket létrehozhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>12 Month Rolling Single Column Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 hónapos egyoszlopos bevétel-kimutatás – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>View an organization’s profitability for the past 12 months in a single column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet nyereségességének megtekintése az elmúlt 12 hónapban egy oszlopban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>12 Month Trend Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 hónapos trend bevétel-kimutatás – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>View an organization’s profitability for each of the last 12 months.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet nyereségességének megtekintése az elmúlt 12 hónapban egy oszlopban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>These 12 months can span more than one fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a 12 hónap több mint egy pénzügyi évre is kiterjedhet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Actual vs Budget – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiadások és költségvetés – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az összes számla eredeti költségvetési egyenlege részletes adatainak megtekintése, és összehasonlítása a módosított költségvetéssel, amelyben eltérő kiadások vannak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Audit Details – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvvizsgálati részletek – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az összes számla egyenlegének részletes adatainak megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelentés a hitel- és bankkártya egyenlegeket mutatja a jelentési pénznemben és a helyi pénznemben a tranzakciók további adataival együtt, mint például a felhasználói azonosító, az utolsó módosítást végrehajtó felhasználó, az utolsó módosítás dátuma, és a napló azonosítója.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Balance List – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői egyenleglista – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az összes számla egyenlegének részletes adatainak megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelentés megjeleníti a nyitó és záró egyenlegeket, a hitel- és bankkártyák egyenlegeit az aktuális időszakra és a folyó év aktuális napjáig a tranzakciók további adataival együtt, mint például a bizonylat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mérleg – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>View the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet éves pénzügyi helyzetének megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Balance Sheet and Income Statement Side by Side - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mérleg és bevétel-kimutatás egymás mellett – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>View the organization’s financial position and profitability for the year side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A vállalat éves pénzügyi helyzetének és nyereségességének megjelenítése egymás mellett.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Cash Flow – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzforgalom – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Gain insight into the cash that is coming in to and going out of the organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betekintés a szervezet beérkező és kimenő készpénzfizetéseibe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Detailed JE and TB Review – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részletes JE és TB áttekintés – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>View opening balance and activity information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyitó egyenleg és a tevékenységi információk megtekintése az összes fiókban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Detailed Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részletes főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleginformációk megtekintése minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Expenses Three Year Quarterly Trend – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Negyedéves költségtrend három évre – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Gain insight into expenses for the past 12 quarters over the previous three years.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betekintést nyújt az elmúlt három év 12 negyedévének költségeibe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Financial Captions JE and TB Review – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JE és TB pénzügyi feliratok áttekintése – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eszköz, a kötelezettség, a tulajdonosi tőke, a bevétel, a kiadás, a nyereség vagy a veszteség pénzügyi feliratok egyenlegeinek és aktivitásának áttekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevétel-kimutatás – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>View the organization’s profitability for the current period and the year to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet nyereségességének megtekintése az aktuális időszakra és a folyó év mai napjáig.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Ledger Transaction List – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi tranzakciók listája – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az összes számla egyenlegének részletes adatainak megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelentés a hitel- és bankkártyák egyenlegét mutatja a tranzakciók további adataival együtt, mint például a tranzakció időpontja, a napló száma, a bizonylat, a feladás típusa és a nyomkövetési szám.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Ratios – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mutatószámok – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>View the solvency, profitability, and efficiency ratios for the organization for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet éves fizetőképességének, nyereségességének és hatékonysági rátájának megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Rolling 12 Month Expenses – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 hónapos költségek – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Gain insight into expenses for each of the last 12 months.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az elmúlt 12 hónap költségeinek megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>These 12 months can span more than one fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a 12 hónap több mint egy pénzügyi évre is kiterjedhet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Rolling Quarter Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folyamatos negyedéves bevétel-kimutatás – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>View the organization’s profitability on a quarterly basis for the past year and the year to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet nyereségességének megtekintése negyedéves lebontásban az elmúlt évben, valamint a folyó évben az aktuális időpontig.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mérleg egymás mellett – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>View the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezet éves pénzügyi helyzetének megtekintése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>This report shows assets and liability, and shareholder equity side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelentés az eszközöket és a kötelezettséget, valamint a részvényesek saját tőkéjét jeleníti meg egyidejűleg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Summary Trial Balance – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg-adatok megtekintése az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Summary Trial Balance Year Over Year – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Éves összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyenleg-adatok megtekintése az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Weekly Sales and Discounts - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Heti értékesítések és kedvezmények – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Gain insight into sales and discounts for each week in a month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betekintés a hónap egyes heteinek értékesítéseibe és kedvezményeibe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>This report includes a four-week total.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelentés összesen négy hetet tartalmaz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Budget Funds Available - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelkezésre álló költségvetési alapok - alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felülvizsgált költségvetés, a tényleges kiadások, költségvetési foglalások és az összes számla rendelkezésére álló költségvetési források részletes összehasonlításának megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Opening financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentés megnyitása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>When you click the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu, the list of default financial reports for the company is shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amikor rákattint a <bpt id="p1">**</bpt>Pénzügyi jelentéskészítés<ept id="p1">**</ept> menüre, a vállalat alapértelmezett pénzügyi jelentéseinek listája jelenik meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>You can then open or modify a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután megnyithatja vagy módosíthatja a jelentést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>To open one of the default reports, select the report name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett jelentés megnyitásához válassza ki a jelentés nevét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The first time that a report is opened, it's automatically generated for the previous month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentés első megnyitásakor automatikusan létrejön a jelentés az előző hónapra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például, ha 2016 augusztusában nyit meg egy jelentést először, a jelentés a 2016. július 31-i dátumhoz jön létre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Creating and modifying financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések létrehozása és módosítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>From the financial reports list, you can create a new report or modify an existing report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>If you have the appropriate permissions, you can create a new financial report by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the Action Pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az <bpt id="p1">**</bpt>Új<ept id="p1">**</ept> gombra kattintva a műveletpanelen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>A report designer program is downloaded to your device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Letöltődik a készülékére egy jelentéstervező program.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>After the report designer starts you can then create the new report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentéstervező elindulása után új jelentést hozhat létre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>After you save the new report, it appears in the financial reports list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>The list shows only reports that were created for the company that you're using in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listában csak a Finance and Operation rendszerben használt vállalatra vonatkozó jelentések jelennek meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>This version of the Microsoft .NET Framework can be downloaded and installed from the <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft .NET Framework ezen verziója a <bpt id="p1">[</bpt>Microsoft letöltőközpontból<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept> tölthető le és telepíthető.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>You can also modify a report that appears in the financial reports list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>When the area around the report name is selected, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> on the Action Pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha be van jelölve a jelentés neve körüli terület, kattintson a <bpt id="p1">**</bpt>Szerkesztés<ept id="p1">**</ept> menüpontra a Műveleti ablaktáblán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>The report designer program starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentéstervező program elindul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További erőforrások</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Pénzügyi jelentések megtekintése<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

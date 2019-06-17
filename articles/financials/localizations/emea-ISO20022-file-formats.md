@@ -1,131 +1,330 @@
----
-title: ISO20022 fájlok importálása
-description: Ez a témakör ismerteti az ISO-20022 camt.054 és pain.002 formátumú fizetési fájlok importálását a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba.
-author: neserovleo
-manager: AnnBe
-ms.date: 07/27/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
-ms.author: v-lenest
-ms.search.validFrom: 2017-06-01
-ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f8c9fe8f1e705937996c0c5464a962133ecf72d7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537986"
----
-# <a name="import-iso20022-files"></a><span data-ttu-id="9f7dc-103">ISO20022 fájlok importálása</span><span class="sxs-lookup"><span data-stu-id="9f7dc-103">Import ISO20022 files</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="9f7dc-104">A következő formátumú fizetési fájlokat importálhatja:</span><span class="sxs-lookup"><span data-stu-id="9f7dc-104">You can import payment files that have the following formats:</span></span>
-
- - <span data-ttu-id="9f7dc-105">**ISO20022 camt.054 jóváírási bizonylat** – Ilyen formátumú fájlból bejövő befizetéseket importálhat az Ügyfél fizetési naplójába.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-105">**ISO20022 camt.054 credit advice** – Import incoming payments from a file in this format into the Customer payment journal.</span></span>
- - <span data-ttu-id="9f7dc-106">**ISO20022 pain.002 visszáru** és **ISO20022 camt.054 jóváírási bizonylat** – Az ilyen formátumú visszárufájlokat a kötelezettségek kifizetési naplójába importálhatja.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-106">**ISO20022 pain.002 status return** and **ISO20022 camt.054 debit advice** – Import return files in these formats into the AP Payment transfer journal.</span></span>
-
-## <a name="prerequisites-for-importing-the-camt054-credit-advice-file"></a><span data-ttu-id="9f7dc-107">A camt.054 jóváírásibizonylat-fájl importálásának előfeltételei</span><span class="sxs-lookup"><span data-stu-id="9f7dc-107">Prerequisites for importing the camt.054 credit advice file</span></span>
-<span data-ttu-id="9f7dc-108">Teljesítenie kell az alábbi előfeltételeket a banki értesítések camt.054.001.002 formátumban történő importálásához az ügyfél fizetési naplójába.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-108">You must complete the following prerequisites to import bank notification messages in the camt.054.001.002 format into the Customer payment journal.</span></span>
-
-1. <span data-ttu-id="9f7dc-109">Importálja az **ISO20022 camt.054** elektromos jelentési (ER) konfigurációt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-109">Import the **ISO20022 camt.054** Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="9f7dc-110">Ezután, a **Vevői fizetési mód** oldalon, az **Importformátum konfigurációja** mezőben válassza ki a konfigurációt.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-110">Then, on the **Customer method of payment** page, in the **Import format configuration** field, select that configuration.</span></span> <span data-ttu-id="9f7dc-111">További információ: [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md).</span><span class="sxs-lookup"><span data-stu-id="9f7dc-111">For more information, see [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md).</span></span>
-2. <span data-ttu-id="9f7dc-112">A **Minden vevő** oldalon adjon meg egy nevet és egy szervezetszámot minden vevőnél.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-112">On the **All customers** page, enter a name and organization number for each customer.</span></span>
-3. <span data-ttu-id="9f7dc-113">A **vevői bankszámla** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-113">On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</span></span>
-4. <span data-ttu-id="9f7dc-114">A **Bankszámlák** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-114">On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</span></span>
-
-   > [!NOTE]
-   > <span data-ttu-id="9f7dc-115">Továbbfejlesztett banki egyeztetés használni tervezi a **egyeztetés** gyorslapon állítsa a **a banki egyeztetés speciális** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="9f7dc-116">Fel nem adott importált fizetések egyeztetni szeretné, ha a **bankszámlakivonatok használja az elektronikus fizetések visszaigazolására** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
-
-5. <span data-ttu-id="9f7dc-117">Választható: A a **Tranzakciókód-hozzárendelés** lapon állítsa be a bank Kifizetésitranzakció-kódok a fájlt, és a banki tranzakciótípusok közötti megfeleltetés.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-117">Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.</span></span>
-6. <span data-ttu-id="9f7dc-118">Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a **vevői kifizetés díja** oldalon.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-118">If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page.</span></span> <span data-ttu-id="9f7dc-119">Ezt a **fizetési módok** oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-119">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>
-7. <span data-ttu-id="9f7dc-120">Ha fogja tartalmazni az ISR-hivatkozások (érvényes jogi személyek Svájcban) ESR kifizetések importálására fog sor kerülni, hajtsa végre a következő beállításokat:</span><span class="sxs-lookup"><span data-stu-id="9f7dc-120">If ESR payments will be imported and will contain ISR references (applicable for legal entities in Switzerland), complete the following setup:</span></span>
-
-    - <span data-ttu-id="9f7dc-121">A **vevői kifizetések, számla hosszúság** mezőbe írja be a vevőkód használt hosszát, ISR-hivatkozás vagy a vevő azonosítása automatikus.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-121">In the **Customer payments, account lengths** field, enter the length of the customer code that is used in ISR references or for automatic identification of the customer.</span></span>
-    - <span data-ttu-id="9f7dc-122">Győződjön meg arról, hogy a vevő számát és a számla száma (Számsorozatok) csak számjegyeket tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-122">Make sure that the customer number and invoice number (number sequences) contain only digits.</span></span> <span data-ttu-id="9f7dc-123">Más karaktereket nem tartalmazhatnak.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-123">They must contain no other characters.</span></span> <span data-ttu-id="9f7dc-124">A számla száma nem lehet a vezető nullákat.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-124">The invoice number must not have leading zeros.</span></span>
-    - <span data-ttu-id="9f7dc-125">Az ESR, BESR gyorslapon adja meg a jogi személyhez tartozó bankszámlaszámokat és regisztrációs azonosítókat.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-125">Enter the ESR, BESR, and routing number for the legal entity bank account.</span></span> <span data-ttu-id="9f7dc-126">További tudnivalókért lásd: [örökölt ESR szolgáltatás](emea-che-esr-customer-payments-import.md), mert a hasonló beállításokat meg kell adni.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-126">For more information, see [legacy ESR feature](emea-che-esr-customer-payments-import.md), because similar settings are required.</span></span>
-    
-## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a><span data-ttu-id="9f7dc-127">A követel bizonylat camt.054 fájl importálása a vevői kifizetési naplóhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-127">Import the camt.054 credit advice file into the Customer payment journal</span></span>
-1. <span data-ttu-id="9f7dc-128">A **vevő kifizetési naplósoraiban** lap **funkciók** > **Importkifizetések**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-128">On the **Customer payment journal lines** page, click **Functions** > **Import payments**.</span></span>
-2. <span data-ttu-id="9f7dc-129">Válassza ki, amely rendelkezik a szükséges beállításokat az ISO20022 camt.054 formátumhoz fizetési mód.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-129">Select the method of payment that has the required settings for the ISO20022 camt.054 format.</span></span>
-3. <span data-ttu-id="9f7dc-130">Adja meg a szükséges paramétereket és a fájl elérési útját, és kattintson a **OK**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-130">Specify the required parameters and the path of the file, and then click **OK**.</span></span> <span data-ttu-id="9f7dc-131">Megtörténik a fájl importálása.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-131">The file is imported.</span></span>
-
-## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a><span data-ttu-id="9f7dc-132">Az pain.002 visszáru és camt.054 jóváírási bizonylat előfeltételei – Az ilyen formátumú visszárufájlokat a kötelezettségek kifizetési naplójába importálhatja.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-132">Prerequisites for importing files in the pain.002 status return and camt.054 debit advice formats into the AP Payment transfer journal</span></span>
-<span data-ttu-id="9f7dc-133">Hajtsa végre a következő formátumban ISO20022 banki üzenetek importálása a következő előfeltételek az **szállítói kifizetések átviteli** oldal: pain.002.001.003 állapotát vissza üzeneteit és camt.054.001.002 jóváírási bizonylat.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-133">You must complete the following prerequisites to import bank messages in the following ISO20022 formats to the **Vendor payment transfer** page: pain.002.001.003 status return messages and camt.054.001.002 debit advice.</span></span>
-
-1. <span data-ttu-id="9f7dc-134">Importálás a **ISO20022 camt.054** és **ISO20022 pain.002** ER konfigurációk LCS közül.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-134">Import the **ISO20022 camt.054** and **ISO20022 pain.002** ER configurations from LCS.</span></span>
-2. <span data-ttu-id="9f7dc-135">A **szállítói fizetési mód** oldalon, a a **visszatérési formátumát konfigurációs** és **visszatérési formátumát másodlagos konfiguráció** mezőben válassza ki az importált ER konfigurációt.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-135">On the **Vendor method of payment** page, in the **Return format configuration** and **Return format secondary configuration** fields, select the ER configurations that you imported.</span></span> <span data-ttu-id="9f7dc-136">Az általános elektronikus a kiválasztott fizetési mód visszatérési formátumát aktiválni kell.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-136">You will have to activate the generic electronic return format for the selected method of payment.</span></span>
-3. <span data-ttu-id="9f7dc-137">A **visszáru-formátum állapot leképezés** a megfeleltetés pain.002 állapotok és a szállítói kifizetési napló állapotok között állapotkódok beállítása lapon.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-137">On the **Return format status mapping** page, set up the mapping of status codes between pain.002 statuses and Vendor payment journal statuses.</span></span>
-
-    <span data-ttu-id="9f7dc-138">Íme, egy példa az állapotbeállításra.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-138">Here is an example of a status setup.</span></span>
-
-    <span data-ttu-id="9f7dc-139">Visszatérési állapot</span><span class="sxs-lookup"><span data-stu-id="9f7dc-139">Return status</span></span> | <span data-ttu-id="9f7dc-140">Fizetés állapota</span><span class="sxs-lookup"><span data-stu-id="9f7dc-140">Payment status</span></span>
-    --------------|---------------
-    <span data-ttu-id="9f7dc-141">RJCT</span><span class="sxs-lookup"><span data-stu-id="9f7dc-141">RJCT</span></span>          | <span data-ttu-id="9f7dc-142">Elutasítva</span><span class="sxs-lookup"><span data-stu-id="9f7dc-142">Rejected</span></span>
-    <span data-ttu-id="9f7dc-143">ACCP</span><span class="sxs-lookup"><span data-stu-id="9f7dc-143">ACCP</span></span>          | <span data-ttu-id="9f7dc-144">Elfogadva</span><span class="sxs-lookup"><span data-stu-id="9f7dc-144">Accepted</span></span>
-    <span data-ttu-id="9f7dc-145">ACSP</span><span class="sxs-lookup"><span data-stu-id="9f7dc-145">ACSP</span></span>          | <span data-ttu-id="9f7dc-146">Fogadott</span><span class="sxs-lookup"><span data-stu-id="9f7dc-146">Received</span></span>
-
-4. <span data-ttu-id="9f7dc-147">A **visszatérési formátumát hibakódok** pain.002 hibák kódjait és leírásait, összhangban a külső ISO20022 állapot okkódok beállítása lapon.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-147">On the **Return format error codes** page, set up pain.002 error codes and descriptions in accordance with external ISO20022 status reason codes.</span></span>
-
-    <span data-ttu-id="9f7dc-148">Íme egy példa egy hibakódbeállításra.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-148">Here is an example of part of an error code setup.</span></span>
-
-    <span data-ttu-id="9f7dc-149">Kód</span><span class="sxs-lookup"><span data-stu-id="9f7dc-149">Code</span></span> | <span data-ttu-id="9f7dc-150">Név</span><span class="sxs-lookup"><span data-stu-id="9f7dc-150">Name</span></span>
-    -----|-----
-    <span data-ttu-id="9f7dc-151">AC01</span><span class="sxs-lookup"><span data-stu-id="9f7dc-151">AC01</span></span> | <span data-ttu-id="9f7dc-152">IncorrectAccountNumber</span><span class="sxs-lookup"><span data-stu-id="9f7dc-152">IncorrectAccountNumber</span></span>
-    <span data-ttu-id="9f7dc-153">AC02</span><span class="sxs-lookup"><span data-stu-id="9f7dc-153">AC02</span></span> | <span data-ttu-id="9f7dc-154">InvalidDebtorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="9f7dc-154">InvalidDebtorAccountNumber</span></span>
-    <span data-ttu-id="9f7dc-155">AC03</span><span class="sxs-lookup"><span data-stu-id="9f7dc-155">AC03</span></span> | <span data-ttu-id="9f7dc-156">InvalidCreditorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="9f7dc-156">InvalidCreditorAccountNumber</span></span>
-    <span data-ttu-id="9f7dc-157">AC04</span><span class="sxs-lookup"><span data-stu-id="9f7dc-157">AC04</span></span> | <span data-ttu-id="9f7dc-158">ClosedAccountNumber</span><span class="sxs-lookup"><span data-stu-id="9f7dc-158">ClosedAccountNumber</span></span>
-    <span data-ttu-id="9f7dc-159">AC05</span><span class="sxs-lookup"><span data-stu-id="9f7dc-159">AC05</span></span> | <span data-ttu-id="9f7dc-160">ClosedDebtorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="9f7dc-160">ClosedDebtorAccountNumber</span></span>
-    <span data-ttu-id="9f7dc-161">AC06</span><span class="sxs-lookup"><span data-stu-id="9f7dc-161">AC06</span></span> | <span data-ttu-id="9f7dc-162">BlockedAccount</span><span class="sxs-lookup"><span data-stu-id="9f7dc-162">BlockedAccount</span></span>
-
-5. <span data-ttu-id="9f7dc-163">Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a **vevői kifizetés díja** oldalon.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-163">If the camt.054 file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Vendor payment fee** page.</span></span> <span data-ttu-id="9f7dc-164">Ezt a **fizetési módok** oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-164">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>
-
-## <a name="import-the-pain002-status-return-or-camt054-debit-advice-files-into-the-vendor-payment-journal"></a><span data-ttu-id="9f7dc-165">A pain.002 állapota visszaadási vagy camt.054 tartozik bizonylat-fájlok importálása a szállítói kifizetési naplóhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-165">Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal</span></span>
-1. <span data-ttu-id="9f7dc-166">Nyissa meg a **átutalása** a Kötelezettségek menü oldalra.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-166">Open the **Payment transfers** page in Accounts Payable menu.</span></span>
-2. <span data-ttu-id="9f7dc-167">A **átutalása** lap **Visszárufájl - Szállító**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-167">On the **Payment transfers** page, click **Return file - vendor**.</span></span>
-3. <span data-ttu-id="9f7dc-168">Válassza ki, amely rendelkezik a szükséges beállításokat az ISO20022 camt.054 formátumhoz, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-168">Select the method of payment that has the required settings for ISO20022 files, and then click **OK**.</span></span>
-4. <span data-ttu-id="9f7dc-169">Válassza ki azt a fájlformátumot, amelyet importálni kíván, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-169">Select the file format that you plan to import, and then click **OK**.</span></span>
-5. <span data-ttu-id="9f7dc-170">Adja meg a szükséges paramétereket és a fájl elérési útját, és kattintson a **OK**.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-170">Specify the required parameters and the path of the file, and then click **OK**.</span></span>
-
-<span data-ttu-id="9f7dc-171">A pain.002 fájlt importál, ha a szállítói kifizetési sorok állapota frissül, az importált fájlban szereplő információk alapján.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-171">If you're importing the pain.002 file, the status of vendor payment lines is updated, based the information in the imported file.</span></span>
-
-<span data-ttu-id="9f7dc-172">Ha a camt.054 fájlt importál, meg kell adnia a következő kiegészítő paraméterek:</span><span class="sxs-lookup"><span data-stu-id="9f7dc-172">If you're importing the camt.054 file, you should specify the following additional parameters:</span></span>
-
-- <span data-ttu-id="9f7dc-173">**Díj azonosítója** – adja meg a díj azonosítója, amellyel így meghatározhatja az új fizetési Díjsorok, ha a költség összegét a camt.054 fájlban található meg a szállítói fizetési napló sorából létrehozandó.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-173">**Fee ID** – Enter the Fee ID which will define new payment fee lines, which will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.</span></span>
-- <span data-ttu-id="9f7dc-174">**Új naplónév** és **új napló leírása** – adja meg a nevét, és át szeretné vinni a feldolgozott tranzakciók napló leírása.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-174">**New journal name** and **New journal description** – Enter the name and description of the journal that processed transactions will be transferred to.</span></span> <span data-ttu-id="9f7dc-175">Az átvitel után az új bizonylatszámmal az új napló kell hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-175">After the transfer, new voucher numbers should be assigned in the new journal.</span></span>
-- <span data-ttu-id="9f7dc-176">**Beszedési tranzakciók importálása** – állítja ezt a beállítást **Igen**, ha a kimenő közvetlen tételek kell importálhatók a szállítói kifizetési naplóhoz.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-176">**Import direct debit transactions** – Set this option to **Yes** if outgoing direct debits must be imported into the Vendor payment journal.</span></span>
-- <span data-ttu-id="9f7dc-177">**Naplónév** – adja meg egy új naplónevet a beszedési megbízás importált tranzakciókhoz.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-177">**Journal name** – Define a new journal name for the imported direct debit transactions.</span></span>
-- <span data-ttu-id="9f7dc-178">**Tranzakciók kiegyenlítése** – állítja ezt a beállítást **Igen** Ha importált szállítói kifizetések számlákkal, amelyek megtalálhatók a rendszerben ki kell egyenlíteni.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-178">**Settle transactions** – Set this option to **Yes** if imported vendor payments must be settled with invoices that are found in the system.</span></span>
-
-<span data-ttu-id="9f7dc-179">Megtekintheti az importált adatokat a **átutalása** oldalon.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-179">You can view the imported information on the **Payment transfers** page.</span></span> 
-
-## <a name="additional-details"></a><span data-ttu-id="9f7dc-180">További részletek</span><span class="sxs-lookup"><span data-stu-id="9f7dc-180">Additional details</span></span>
-
-<span data-ttu-id="9f7dc-181">Ha formátumkonfigurációt importál az LCS-rendszerből, a teljes konfigurációs fát importálja, ami azt jelenti, hogy a Modell és a Modell hozzárendelése konfigurációk is szerepelnek benne.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-181">When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included.</span></span> <span data-ttu-id="9f7dc-182">A Fizetési modellben a 8-as verziótól kezdve a hozzárendelések külön ER-konfigurációkban találhatók a megoldásfán (Fizetési modell hozzárendelése 1611, Fizetési modell hozzárendelése az ISO20022 célhoz stb.).</span><span class="sxs-lookup"><span data-stu-id="9f7dc-182">In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc).</span></span> <span data-ttu-id="9f7dc-183">Egyetlen modell (Fizetési modell) keretén belül több különböző fizetési formátum létezik, így a hozzárendelések különálló kezelése a könnyű karbantartás kulcsa.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-183">There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance.</span></span> <span data-ttu-id="9f7dc-184">Tegyük fel a következő esetet: az ISO20022 kifizetések segítségével általános átutalási fájlokat hoz létre, majd importálja a bank visszaküldött üzeneteit.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-184">For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank.</span></span> <span data-ttu-id="9f7dc-185">Ebben az esetben a következő konfigurációkat kell használnia:</span><span class="sxs-lookup"><span data-stu-id="9f7dc-185">In this scenario, you should use the following configurations:</span></span>
-
- - <span data-ttu-id="9f7dc-186">**Fizetési modell**</span><span class="sxs-lookup"><span data-stu-id="9f7dc-186">**Payment model**</span></span>
- - <span data-ttu-id="9f7dc-187">**Fizetési modell hozzárendelése 1611** – a rendszer ezt a hozzárendelést használja az exportfájl létrehozásakor</span><span class="sxs-lookup"><span data-stu-id="9f7dc-187">**Payment model mapping 1611** – this mapping will be used to generate the export file</span></span>
- - <span data-ttu-id="9f7dc-188">**Fizetési modell hozzárendelése az ISO20022 célhoz** – ez a konfiguráció tartalmazza az adatimportáláshoz („a célhoz” hozzárendelési irány) használt összes hozzárendelést</span><span class="sxs-lookup"><span data-stu-id="9f7dc-188">**Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)</span></span>
- - <span data-ttu-id="9f7dc-189">**ISO20022 átutalás** – ez a konfiguráció tartalmazza felelős az exportálási fájl létrehozásáért (pain.001) felelős formátum-összetevőt a Fizetési modell hozzárendelése 1611 alapján, valamint egy modell-hozzárendelési összetevő-formátumot, amelyet Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használ a rendszer az exportált fizetések regisztrálására a további importálási célok érdekében (importálás a CustVendProcessedPayments műszaki táblában).</span><span class="sxs-lookup"><span data-stu-id="9f7dc-189">**ISO20022 Credit transfer** – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)</span></span>
- - <span data-ttu-id="9f7dc-190">**ISO20022 átutalás (CE)**, ahol a CE az országjelzésnek felel meg – az ISO20022 átutalás származtatott formátuma azonos struktúrával és az egyes országspecifikus eltérésekkel</span><span class="sxs-lookup"><span data-stu-id="9f7dc-190">**ISO20022 Credit transfer (CE)**, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences</span></span>
- - <span data-ttu-id="9f7dc-191">**Pain.002** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a pain.002 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében</span><span class="sxs-lookup"><span data-stu-id="9f7dc-191">**Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal</span></span>
- - <span data-ttu-id="9f7dc-192">**Camt.054** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a camt.054 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-192">**Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal.</span></span> <span data-ttu-id="9f7dc-193">Ugyanaz a formátumkonfiguráció fog szerepelni a vevői kifizetések importálása funkcióban, de a rendszer különböző hozzárendelést fog használni a Fizetési modell hozzárendelése az ISO20022 célhoz konfigurációban.</span><span class="sxs-lookup"><span data-stu-id="9f7dc-193">The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.</span></span>
-
-<span data-ttu-id="9f7dc-194">Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="9f7dc-194">For more information about Electronic reporting, refer to [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md).</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="9f7dc-195">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="9f7dc-195">Additional resources</span></span>
-- [<span data-ttu-id="9f7dc-196">Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban</span><span class="sxs-lookup"><span data-stu-id="9f7dc-196">Create and export vendor payments using ISO20022 payment format</span></span>](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [<span data-ttu-id="9f7dc-197">ISO20022 jóváírási konfiguráció importálása</span><span class="sxs-lookup"><span data-stu-id="9f7dc-197">Import ISO20022 credit transfer configuration</span></span>](./tasks/import-iso20022-credit-transfer-configuration.md)
-- [<span data-ttu-id="9f7dc-198">ISO20022 beszedési megbízási konfiguráció importálása</span><span class="sxs-lookup"><span data-stu-id="9f7dc-198">Import ISO20022 direct debit configuration</span></span>](./tasks/import-iso20022-direct-debit-configuration.md)
-- [<span data-ttu-id="9f7dc-199">Vállalati bankszámlák beállítása ISO20022 típusú átutalásokhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-199">Set up company bank accounts for ISO20022 credit transfers</span></span>](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
-- [<span data-ttu-id="9f7dc-200">Vállalati bankszámlák beállítása ISO20022 beszedési megbízásokhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-200">Set up company bank accounts for ISO20022 direct debits</span></span>](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
-- [<span data-ttu-id="9f7dc-201">Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-201">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
-- [<span data-ttu-id="9f7dc-202">Fizetési mód beállítása ISO20022-jóváírás átutalásához</span><span class="sxs-lookup"><span data-stu-id="9f7dc-202">Set up method of payment for ISO20022 credit transfer</span></span>](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [<span data-ttu-id="9f7dc-203">Fizetési mód beállítása ISO20022 beszedési megbízáshoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-203">Set up method of payment for ISO20022 direct debit</span></span>](./tasks/setup-method-payment-iso20022-direct-debit.md)
-- [<span data-ttu-id="9f7dc-204">Szállítók és szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz</span><span class="sxs-lookup"><span data-stu-id="9f7dc-204">Set up vendors and vendor bank accounts for ISO20022 credit transfers</span></span>](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-ISO20022-file-formats.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-ISO20022-file-formats.35e138.d91e937c62d4d498e67d753e39676514835f4161.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>d91e937c62d4d498e67d753e39676514835f4161</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-ISO20022-file-formats.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>ISO20022 files import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISO20022 fájlok importálása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör ismerteti az ISO-20022 camt.054 és pain.002 formátumú fizetési fájlok importálását a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Import ISO20022 files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISO20022 fájlok importálása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>You can import payment files that have the following formats:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő formátumú fizetési fájlokat importálhatja:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source><bpt id="p1">**</bpt>ISO20022 camt.054 credit advice<ept id="p1">**</ept> – Import incoming payments from a file in this format into the Customer payment journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISO20022 camt.054 jóváírási bizonylat<ept id="p1">**</ept> – Ilyen formátumú fájlból bejövő befizetéseket importálhat az Ügyfél fizetési naplójába.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><bpt id="p1">**</bpt>ISO20022 pain.002 status return<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ISO20022 camt.054 debit advice<ept id="p2">**</ept> – Import return files in these formats into the AP Payment transfer journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISO20022 pain.002 visszáru<ept id="p1">**</ept> és <bpt id="p2">**</bpt>ISO20022 camt.054 jóváírási bizonylat<ept id="p2">**</ept> – Az ilyen formátumú visszárufájlokat a kötelezettségek kifizetési naplójába importálhatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Prerequisites for importing the camt.054 credit advice file</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A camt.054 jóváírásibizonylat-fájl importálásának előfeltételei</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You must complete the following prerequisites to import bank notification messages in the camt.054.001.002 format into the Customer payment journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teljesítenie kell az alábbi előfeltételeket a banki értesítések camt.054.001.002 formátumban történő importálásához az ügyfél fizetési naplójába.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Import the <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importálja az <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> elektromos jelentési (ER) konfigurációt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Then, on the <bpt id="p1">**</bpt>Customer method of payment<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Import format configuration<ept id="p2">**</ept> field, select that configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután, a <bpt id="p1">**</bpt>Vevői fizetési mód<ept id="p1">**</ept> oldalon, az <bpt id="p2">**</bpt>Importformátum konfigurációja<ept id="p2">**</ept> mezőben válassza ki a konfigurációt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>For more information, see <bpt id="p1">[</bpt>File formats for methods of payment<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információ: <bpt id="p1">[</bpt>Fizetési módok fájlformátumai<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>On the <bpt id="p1">**</bpt>All customers<ept id="p1">**</ept> page, enter a name and organization number for each customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Minden vevő<ept id="p1">**</ept> oldalon adjon meg egy nevet és egy szervezetszámot minden vevőnél.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>On the <bpt id="p1">**</bpt>Customer bank account<ept id="p1">**</ept> page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>vevői bankszámla<ept id="p1">**</ept> oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>On the <bpt id="p1">**</bpt>Bank accounts<ept id="p1">**</ept> page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Bankszámlák<ept id="p1">**</ept> oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>If you plan to use Advanced bank reconciliation, on the <bpt id="p1">**</bpt>Reconciliation<ept id="p1">**</ept> FastTab, set the <bpt id="p2">**</bpt>Advanced bank reconciliation<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Továbbfejlesztett banki egyeztetés használni tervezi a <bpt id="p1">**</bpt>egyeztetés<ept id="p1">**</ept> gyorslapon állítsa a <bpt id="p2">**</bpt>a banki egyeztetés speciális<ept id="p2">**</ept> lehetőséggel <bpt id="p3">**</bpt>Igen<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>If you plan to reconcile unposted imported payments, set the <bpt id="p1">**</bpt>Use bank statements as confirmation of electronic payments<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fel nem adott importált fizetések egyeztetni szeretné, ha a <bpt id="p1">**</bpt>bankszámlakivonatok használja az elektronikus fizetések visszaigazolására<ept id="p1">**</ept> lehetőséggel <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Optional: On the <bpt id="p1">**</bpt>Transaction code mapping<ept id="p1">**</ept> page, set up the mapping between bank transaction codes in the file and bank transaction types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Választható: A a <bpt id="p1">**</bpt>Tranzakciókód-hozzárendelés<ept id="p1">**</ept> lapon állítsa be a bank Kifizetésitranzakció-kódok a fájlt, és a banki tranzakciótípusok közötti megfeleltetés.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the <bpt id="p1">**</bpt>Customer payment fee<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a <bpt id="p1">**</bpt>vevői kifizetés díja<ept id="p1">**</ept> oldalon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Then, on the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page, associate the payment fee with the bank account in the payment fee setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a <bpt id="p1">**</bpt>fizetési módok<ept id="p1">**</ept> oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>If ESR payments will be imported and will contain ISR references (applicable for legal entities in Switzerland), complete the following setup:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha fogja tartalmazni az ISR-hivatkozások (érvényes jogi személyek Svájcban) ESR kifizetések importálására fog sor kerülni, hajtsa végre a következő beállításokat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the <bpt id="p1">**</bpt>Customer payments, account lengths<ept id="p1">**</ept> field, enter the length of the customer code that is used in ISR references or for automatic identification of the customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>vevői kifizetések, számla hosszúság<ept id="p1">**</ept> mezőbe írja be a vevőkód használt hosszát, ISR-hivatkozás vagy a vevő azonosítása automatikus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Make sure that the customer number and invoice number (number sequences) contain only digits.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Győződjön meg arról, hogy a vevő számát és a számla száma (Számsorozatok) csak számjegyeket tartalmazhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>They must contain no other characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Más karaktereket nem tartalmazhatnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The invoice number must not have leading zeros.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A számla száma nem lehet a vezető nullákat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Enter the ESR, BESR, and routing number for the legal entity bank account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ESR, BESR gyorslapon adja meg a jogi személyhez tartozó bankszámlaszámokat és regisztrációs azonosítókat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>For more information, see <bpt id="p1">[</bpt>legacy ESR feature<ept id="p1">](emea-che-esr-customer-payments-import.md)</ept>, because similar settings are required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További tudnivalókért lásd: <bpt id="p1">[</bpt>örökölt ESR szolgáltatás<ept id="p1">](emea-che-esr-customer-payments-import.md)</ept>, mert a hasonló beállításokat meg kell adni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Import the camt.054 credit advice file into the Customer payment journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A követel bizonylat camt.054 fájl importálása a vevői kifizetési naplóhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>On the <bpt id="p1">**</bpt>Customer payment journal lines<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Functions<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Import payments<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>vevő kifizetési naplósoraiban<ept id="p1">**</ept> lap <bpt id="p2">**</bpt>funkciók<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Importkifizetések<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Select the method of payment that has the required settings for the ISO20022 camt.054 format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki, amely rendelkezik a szükséges beállításokat az ISO20022 camt.054 formátumhoz fizetési mód.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Specify the required parameters and the path of the file, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a szükséges paramétereket és a fájl elérési útját, és kattintson a <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The file is imported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megtörténik a fájl importálása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Prerequisites for importing files in the pain.002 status return and camt.054 debit advice formats into the AP Payment transfer journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az pain.002 visszáru és camt.054 jóváírási bizonylat előfeltételei – Az ilyen formátumú visszárufájlokat a kötelezettségek kifizetési naplójába importálhatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>You must complete the following prerequisites to import bank messages in the following ISO20022 formats to the <bpt id="p1">**</bpt>Vendor payment transfer<ept id="p1">**</ept> page: pain.002.001.003 status return messages and camt.054.001.002 debit advice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hajtsa végre a következő formátumban ISO20022 banki üzenetek importálása a következő előfeltételek az <bpt id="p1">**</bpt>szállítói kifizetések átviteli<ept id="p1">**</ept> oldal: pain.002.001.003 állapotát vissza üzeneteit és camt.054.001.002 jóváírási bizonylat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Import the <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ISO20022 pain.002<ept id="p2">**</ept> ER configurations from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importálás a <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> és <bpt id="p2">**</bpt>ISO20022 pain.002<ept id="p2">**</ept> ER konfigurációk LCS közül.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>On the <bpt id="p1">**</bpt>Vendor method of payment<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Return format configuration<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Return format secondary configuration<ept id="p3">**</ept> fields, select the ER configurations that you imported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>szállítói fizetési mód<ept id="p1">**</ept> oldalon, a a <bpt id="p2">**</bpt>visszatérési formátumát konfigurációs<ept id="p2">**</ept> és <bpt id="p3">**</bpt>visszatérési formátumát másodlagos konfiguráció<ept id="p3">**</ept> mezőben válassza ki az importált ER konfigurációt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>You will have to activate the generic electronic return format for the selected method of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az általános elektronikus a kiválasztott fizetési mód visszatérési formátumát aktiválni kell.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>On the <bpt id="p1">**</bpt>Return format status mapping<ept id="p1">**</ept> page, set up the mapping of status codes between pain.002 statuses and Vendor payment journal statuses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>visszáru-formátum állapot leképezés<ept id="p1">**</ept> a megfeleltetés pain.002 állapotok és a szállítói kifizetési napló állapotok között állapotkódok beállítása lapon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Here is an example of a status setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Íme, egy példa az állapotbeállításra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Return status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visszatérési állapot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Payment status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés állapota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>RJCT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RJCT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Rejected</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elutasítva</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>ACCP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACCP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Accepted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elfogadva</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>ACSP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACSP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Received</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fogadott</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>On the <bpt id="p1">**</bpt>Return format error codes<ept id="p1">**</ept> page, set up pain.002 error codes and descriptions in accordance with external ISO20022 status reason codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>visszatérési formátumát hibakódok<ept id="p1">**</ept> pain.002 hibák kódjait és leírásait, összhangban a külső ISO20022 állapot okkódok beállítása lapon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Here is an example of part of an error code setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Íme egy példa egy hibakódbeállításra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Név</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>AC01</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC01</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>IncorrectAccountNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IncorrectAccountNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>AC02</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC02</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>InvalidDebtorAccountNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvalidDebtorAccountNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>AC03</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC03</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>InvalidCreditorAccountNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvalidCreditorAccountNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>AC04</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC04</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>ClosedAccountNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClosedAccountNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>AC05</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC05</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>ClosedDebtorAccountNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClosedDebtorAccountNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>AC06</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC06</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>BlockedAccount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BlockedAccount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>If the camt.054 file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the <bpt id="p1">**</bpt>Vendor payment fee<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a <bpt id="p1">**</bpt>vevői kifizetés díja<ept id="p1">**</ept> oldalon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Then, on the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page, associate the payment fee with the bank account in the payment fee setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a <bpt id="p1">**</bpt>fizetési módok<ept id="p1">**</ept> oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pain.002 állapota visszaadási vagy camt.054 tartozik bizonylat-fájlok importálása a szállítói kifizetési naplóhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Open the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page in Accounts Payable menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyissa meg a <bpt id="p1">**</bpt>átutalása<ept id="p1">**</ept> a Kötelezettségek menü oldalra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>On the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Return file - vendor<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>átutalása<ept id="p1">**</ept> lap <bpt id="p2">**</bpt>Visszárufájl - Szállító<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Select the method of payment that has the required settings for ISO20022 files, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki, amely rendelkezik a szükséges beállításokat az ISO20022 camt.054 formátumhoz, majd kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Select the file format that you plan to import, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki azt a fájlformátumot, amelyet importálni kíván, majd kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Specify the required parameters and the path of the file, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a szükséges paramétereket és a fájl elérési útját, és kattintson a <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>If you're importing the pain.002 file, the status of vendor payment lines is updated, based the information in the imported file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pain.002 fájlt importál, ha a szállítói kifizetési sorok állapota frissül, az importált fájlban szereplő információk alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>If you're importing the camt.054 file, you should specify the following additional parameters:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a camt.054 fájlt importál, meg kell adnia a következő kiegészítő paraméterek:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source><bpt id="p1">**</bpt>Fee ID<ept id="p1">**</ept> – Enter the Fee ID which will define new payment fee lines, which will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Díj azonosítója<ept id="p1">**</ept> – adja meg a díj azonosítója, amellyel így meghatározhatja az új fizetési Díjsorok, ha a költség összegét a camt.054 fájlban található meg a szállítói fizetési napló sorából létrehozandó.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><bpt id="p1">**</bpt>New journal name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>New journal description<ept id="p2">**</ept> – Enter the name and description of the journal that processed transactions will be transferred to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Új naplónév<ept id="p1">**</ept> és <bpt id="p2">**</bpt>új napló leírása<ept id="p2">**</ept> – adja meg a nevét, és át szeretné vinni a feldolgozott tranzakciók napló leírása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>After the transfer, new voucher numbers should be assigned in the new journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átvitel után az új bizonylatszámmal az új napló kell hozzárendelni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source><bpt id="p1">**</bpt>Import direct debit transactions<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> if outgoing direct debits must be imported into the Vendor payment journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Beszedési tranzakciók importálása<ept id="p1">**</ept> – állítja ezt a beállítást <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept>, ha a kimenő közvetlen tételek kell importálhatók a szállítói kifizetési naplóhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source><bpt id="p1">**</bpt>Journal name<ept id="p1">**</ept> – Define a new journal name for the imported direct debit transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Naplónév<ept id="p1">**</ept> – adja meg egy új naplónevet a beszedési megbízás importált tranzakciókhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">**</bpt>Settle transactions<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> if imported vendor payments must be settled with invoices that are found in the system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tranzakciók kiegyenlítése<ept id="p1">**</ept> – állítja ezt a beállítást <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept> Ha importált szállítói kifizetések számlákkal, amelyek megtalálhatók a rendszerben ki kell egyenlíteni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>You can view the imported information on the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megtekintheti az importált adatokat a <bpt id="p1">**</bpt>átutalása<ept id="p1">**</ept> oldalon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Additional details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További részletek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha formátumkonfigurációt importál az LCS-rendszerből, a teljes konfigurációs fát importálja, ami azt jelenti, hogy a Modell és a Modell hozzárendelése konfigurációk is szerepelnek benne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Fizetési modellben a 8-as verziótól kezdve a hozzárendelések külön ER-konfigurációkban találhatók a megoldásfán (Fizetési modell hozzárendelése 1611, Fizetési modell hozzárendelése az ISO20022 célhoz stb.).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyetlen modell (Fizetési modell) keretén belül több különböző fizetési formátum létezik, így a hozzárendelések különálló kezelése a könnyű karbantartás kulcsa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tegyük fel a következő esetet: az ISO20022 kifizetések segítségével általános átutalási fájlokat hoz létre, majd importálja a bank visszaküldött üzeneteit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>In this scenario, you should use the following configurations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben az esetben a következő konfigurációkat kell használnia:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">**</bpt>Payment model<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fizetési modell<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source><bpt id="p1">**</bpt>Payment model mapping 1611<ept id="p1">**</ept> – this mapping will be used to generate the export file</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fizetési modell hozzárendelése 1611<ept id="p1">**</ept> – a rendszer ezt a hozzárendelést használja az exportfájl létrehozásakor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">**</bpt>Payment model mapping to destination ISO20022<ept id="p1">**</ept> – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fizetési modell hozzárendelése az ISO20022 célhoz<ept id="p1">**</ept> – ez a konfiguráció tartalmazza az adatimportáláshoz („a célhoz” hozzárendelési irány) használt összes hozzárendelést</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source><bpt id="p1">**</bpt>ISO20022 Credit transfer<ept id="p1">**</ept> – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISO20022 átutalás<ept id="p1">**</ept> – ez a konfiguráció tartalmazza felelős az exportálási fájl létrehozásáért (pain.001) felelős formátum-összetevőt a Fizetési modell hozzárendelése 1611 alapján, valamint egy modell-hozzárendelési összetevő-formátumot, amelyet Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használ a rendszer az exportált fizetések regisztrálására a további importálási célok érdekében (importálás a CustVendProcessedPayments műszaki táblában).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><bpt id="p1">**</bpt>ISO20022 Credit transfer (CE)<ept id="p1">**</ept>, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISO20022 átutalás (CE)<ept id="p1">**</ept>, ahol a CE az országjelzésnek felel meg – az ISO20022 átutalás származtatott formátuma azonos struktúrával és az egyes országspecifikus eltérésekkel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source><bpt id="p1">**</bpt>Pain.002<ept id="p1">**</ept> – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Pain.002<ept id="p1">**</ept> – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a pain.002 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source><bpt id="p1">**</bpt>Camt.054<ept id="p1">**</ept> – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Camt.054<ept id="p1">**</ept> – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a camt.054 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugyanaz a formátumkonfiguráció fog szerepelni a vevői kifizetések importálása funkcióban, de a rendszer különböző hozzárendelést fog használni a Fizetési modell hozzárendelése az ISO20022 célhoz konfigurációban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>For more information about Electronic reporting, refer to <bpt id="p1">[</bpt>Electronic reporting overview<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: <bpt id="p1">[</bpt>Elektronikus jelentések áttekintése<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További erőforrások</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source><bpt id="p1">[</bpt>Create and export vendor payments using ISO20022 payment format<ept id="p1">](./tasks/create-export-vendor-payments-iso20022-payment-format.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban<ept id="p1">](./tasks/create-export-vendor-payments-iso20022-payment-format.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source><bpt id="p1">[</bpt>Import ISO20022 credit transfer configuration<ept id="p1">](./tasks/import-iso20022-credit-transfer-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ISO20022 jóváírási konfiguráció importálása<ept id="p1">](./tasks/import-iso20022-credit-transfer-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><bpt id="p1">[</bpt>Import ISO20022 direct debit configuration<ept id="p1">](./tasks/import-iso20022-direct-debit-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ISO20022 beszedési megbízási konfiguráció importálása<ept id="p1">](./tasks/import-iso20022-direct-debit-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source><bpt id="p1">[</bpt>Set up company bank accounts for ISO20022 credit transfers<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Vállalati bankszámlák beállítása ISO20022 típusú átutalásokhoz<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source><bpt id="p1">[</bpt>Set up company bank accounts for ISO20022 direct debits<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Vállalati bankszámlák beállítása ISO20022 beszedési megbízásokhoz<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source><bpt id="p1">[</bpt>Set up customers and customer bank accounts for ISO20022 direct debits<ept id="p1">](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz<ept id="p1">](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><bpt id="p1">[</bpt>Set up method of payment for ISO20022 credit transfer<ept id="p1">](./tasks/set-up-method-payment-iso20022-credit-transfer.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Fizetési mód beállítása ISO20022-jóváírás átutalásához<ept id="p1">](./tasks/set-up-method-payment-iso20022-credit-transfer.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source><bpt id="p1">[</bpt>Set up method of payment for ISO20022 direct debit<ept id="p1">](./tasks/setup-method-payment-iso20022-direct-debit.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Fizetési mód beállítása ISO20022 beszedési megbízáshoz<ept id="p1">](./tasks/setup-method-payment-iso20022-direct-debit.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source><bpt id="p1">[</bpt>Set up vendors and vendor bank accounts for ISO20022 credit transfers<ept id="p1">](./tasks/set-up-vendor-iso20022-credit-transfers.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Szállítók és szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz<ept id="p1">](./tasks/set-up-vendor-iso20022-credit-transfers.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

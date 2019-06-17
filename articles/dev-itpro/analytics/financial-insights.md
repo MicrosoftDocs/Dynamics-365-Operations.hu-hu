@@ -1,251 +1,837 @@
----
-title: Financial Insights
-description: A Financial Insights a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.
-author: kweekley
-manager: AnnBe
-ms.date: 08/14/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Application User, IT Pro
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 106233
-ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
-ms.search.region: Global
-ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554092"
----
-# <a name="financial-insights"></a><span data-ttu-id="50706-103">Financial Insights</span><span class="sxs-lookup"><span data-stu-id="50706-103">Financial Insights</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="50706-104">A **Financial Insights** a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.</span><span class="sxs-lookup"><span data-stu-id="50706-104">**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</span></span> <span data-ttu-id="50706-105">Power BI be van ágyazva a Microsoft Dynamics 365 Finance and Operations alkalmazásba.</span><span class="sxs-lookup"><span data-stu-id="50706-105">Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</span></span> <span data-ttu-id="50706-106">A **Financial Insights** lényege az analitikus jelentéskészítés.</span><span class="sxs-lookup"><span data-stu-id="50706-106">The focus of **Financial Insights** is analytical reporting.</span></span> <span data-ttu-id="50706-107">A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre.</span><span class="sxs-lookup"><span data-stu-id="50706-107">Personas across an organization can view, research, understand, and act.</span></span> 
-
-<span data-ttu-id="50706-108">A **Financial Insights** kombinálja az adatokat a főkönyvből és az analitikus naplókból, hogy teljesebb képet adjon a szervezet pénzügyi helyzetéről.</span><span class="sxs-lookup"><span data-stu-id="50706-108">**Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="50706-109">Ez a dokumentum az alábbi Power BI terminológiát használja:</span><span class="sxs-lookup"><span data-stu-id="50706-109">This document uses the following Power BI terminology:</span></span>
-> 
-> - <span data-ttu-id="50706-110">**Jelentés** – Egyetlen .pbix fájl, amelybe az összes fül összes vizuális eleme elmentésre kerül.</span><span class="sxs-lookup"><span data-stu-id="50706-110">**Report** – A single .pbix file that all the visuals on all tabs are saved to.</span></span>
-> - <span data-ttu-id="50706-111">**Oldal** – Egyetlen .pbix fájl egy füle.</span><span class="sxs-lookup"><span data-stu-id="50706-111">**Page** – A tab in a single .pbix file.</span></span> <span data-ttu-id="50706-112">Minden egyes oldal egy vagy több vizuális elemet tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="50706-112">Each page can contain one or more visuals.</span></span>
-> - <span data-ttu-id="50706-113">**Vizuális elem** – Egyetlen adatforrás, például karton, KPI, diagram, grafikon, mátrix vagy pénzügyi kimutatás.</span><span class="sxs-lookup"><span data-stu-id="50706-113">**Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement.</span></span> <span data-ttu-id="50706-114">Az olyan oldal, amelyen pénzügyi kimutatás szerepel vizuális elemként, nem tartalmazhat más vizuális elemeket a jelentésben szereplő adatok mérete miatt.</span><span class="sxs-lookup"><span data-stu-id="50706-114">A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.</span></span>
-
-<span data-ttu-id="50706-115">Jelenleg a **Financial Insights** az aktív jogi személy vagy az összes jogi személy adatainak megtekintésére szolgál.</span><span class="sxs-lookup"><span data-stu-id="50706-115">Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities.</span></span> <span data-ttu-id="50706-116">A jövőbeli kiadásokban a munkaterület úgy fog fejlődni, hogy a Power BI segítségével módosíthat és létrehozhat majd vizuális elemeket.</span><span class="sxs-lookup"><span data-stu-id="50706-116">In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.</span></span>
-
-<span data-ttu-id="50706-117">A **Pénzügyi igazgató-áttekintés** munkaterület ugyanazokat a vizuális elemeket jeleníti meg, mint a **Financial Insights**, de középpontjában a meglévő jelentések adatainak megtekintése és szűrése áll.</span><span class="sxs-lookup"><span data-stu-id="50706-117">The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports.</span></span> <span data-ttu-id="50706-118">A jövőbeni kiadásokban új vizuális elemeket adhat hozzá a **Financial Insights** munkaterülethez.</span><span class="sxs-lookup"><span data-stu-id="50706-118">In future releases, you will be able to add new visuals to the **Financial Insights** workspace.</span></span> <span data-ttu-id="50706-119">Az új vizuális elemek olyan munkaterületeken is elérhetők lehetnek, amelyek más szerepkörökre koncentrálnak, például a projektmenedzserekre vagy a kötelezettségek kezelőire.</span><span class="sxs-lookup"><span data-stu-id="50706-119">The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers.</span></span> <span data-ttu-id="50706-120">A **Pénzügyi igazgató áttekintés** a munkaterület továbbra is minden jogi személynél megjeleníti az adatokat, függetlenül azoktól a jogi személyektől, amelyekhez a szerepkör hozzáfér.</span><span class="sxs-lookup"><span data-stu-id="50706-120">The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.</span></span>
-
-## <a name="finance-and-operations-setup"></a><span data-ttu-id="50706-121">A Finance and Operations beállítása</span><span class="sxs-lookup"><span data-stu-id="50706-121">Finance and Operations setup</span></span>
-<span data-ttu-id="50706-122">**Főkönyv**</span><span class="sxs-lookup"><span data-stu-id="50706-122">**General ledger**</span></span>
-
-<span data-ttu-id="50706-123">A megfelelő alapértelmezés szerinti fő számlák kitöltésére a **Mérleg** pénzügyi kimutatásban és a **Financial Insights** alkalmazáson belüli különböző **Eredménykimutatás** pénzügyi kimutatásokban a fő számla típusa és a főszámla-kategóriák használatosak.</span><span class="sxs-lookup"><span data-stu-id="50706-123">The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.</span></span>
-
-<span data-ttu-id="50706-124">A **Fő számlák** lapon meg kell adnia a fő számlát, hogy hozzárendelje az alábbi típusok egyikét:</span><span class="sxs-lookup"><span data-stu-id="50706-124">On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:</span></span>
-
-- <span data-ttu-id="50706-125">Bevétel</span><span class="sxs-lookup"><span data-stu-id="50706-125">Revenue</span></span>
-- <span data-ttu-id="50706-126">Expense</span><span class="sxs-lookup"><span data-stu-id="50706-126">Expense</span></span>
-- <span data-ttu-id="50706-127">Eszközök</span><span class="sxs-lookup"><span data-stu-id="50706-127">Assets</span></span>
-- <span data-ttu-id="50706-128">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="50706-128">Liabilities</span></span>
-- <span data-ttu-id="50706-129">Saját tőke</span><span class="sxs-lookup"><span data-stu-id="50706-129">Equity</span></span>
-
-<span data-ttu-id="50706-130">Ne rendeljen semmilyen más főszámla-típust (például **Mérleg** vagy **Eredmény**) a fő számlákhoz.</span><span class="sxs-lookup"><span data-stu-id="50706-130">Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts.</span></span> <span data-ttu-id="50706-131">A jelentéstétel nem tudja meghatározni a fő fiók típusát, ha más főfiók-típusok vannak hozzárendelve, mivel ezek nem eléggé részletesek.</span><span class="sxs-lookup"><span data-stu-id="50706-131">Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough.</span></span> <span data-ttu-id="50706-132">A fő számla típusát úgy kell meghatározni, hogy a források és a bevétel pozitív összegekként jelenjenek meg a pénzügyi kimutatásokban.</span><span class="sxs-lookup"><span data-stu-id="50706-132">The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.</span></span>
-
-<span data-ttu-id="50706-133">A pénzügyi kimutatásokban való megjelenítéshez és a különféle egyéb vizuális elemekbe - például a KPI-kba - való befoglaláshoz minden fő számlához főszámla-kategóriát kell rendelni.</span><span class="sxs-lookup"><span data-stu-id="50706-133">To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category.</span></span> <span data-ttu-id="50706-134">A Főszámla-kategóriákat továbbfejlesztettük, hogy megjelenítési sorrendet tartalmazzanak.</span><span class="sxs-lookup"><span data-stu-id="50706-134">The main account categories have been enhanced so that they include a display order.</span></span> <span data-ttu-id="50706-135">A megjelenítési sorrend kifejezetten használatos a **Financial Insights** pénzügyi kimutatásaiban.</span><span class="sxs-lookup"><span data-stu-id="50706-135">The display order is used specifically on financial statements in **Financial Insights**.</span></span> <span data-ttu-id="50706-136">Új főszámla-kategória hozzáadása vagy szerkesztése után módosítható a **Megjelenítési sorrend** értéke, és ezzel megadható a sorrend, amelyben a főszámla-kategóriák megjelennek a pénzügyi kimutatásokban.</span><span class="sxs-lookup"><span data-stu-id="50706-136">After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement.</span></span> <span data-ttu-id="50706-137">Ha számos főszámla-kategória megjelenítési sorrendjét módosítania kell, használhatja a Megnyitás az Excel programban funkciót a módosítások gyors szerkesztéséhez és a Finance and Operations alkalmazásban való közzétételéhez.</span><span class="sxs-lookup"><span data-stu-id="50706-137">If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.</span></span>
-
-## <a name="entity-store"></a><span data-ttu-id="50706-138">Entitástár</span><span class="sxs-lookup"><span data-stu-id="50706-138">Entity store</span></span>
-<span data-ttu-id="50706-139">A **Financial Insights** adatainak lekérése az Entitástárból történik (**Rendszerfelügyelet** \> **Beállítás** \> **Entitástár**).</span><span class="sxs-lookup"><span data-stu-id="50706-139">The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**).</span></span> <span data-ttu-id="50706-140">Ha megnyitja a **Pénzügyi igazgató áttekintés** vagy **Financial Insights** munkaterület, és a következő figyelmeztető üzenet jelenik meg a vizuális elemekben, frissítenie kell az entitásokat.</span><span class="sxs-lookup"><span data-stu-id="50706-140">If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.</span></span>
-
-![Figyelmeztetés](./media/Cantdisplay.png)
-
-<span data-ttu-id="50706-142">Frissítenie kell a következő entitásokat az adatok a **Financial Insights** és **Pénzügyi igazgató áttekintés** munkaterületeken való megtekintéséhez:</span><span class="sxs-lookup"><span data-stu-id="50706-142">You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:</span></span>
-
-- <span data-ttu-id="50706-143">CustCollectionsBIMeasurements</span><span class="sxs-lookup"><span data-stu-id="50706-143">CustCollectionsBIMeasurements</span></span>
-- <span data-ttu-id="50706-144">FinancialReportingOtherData</span><span class="sxs-lookup"><span data-stu-id="50706-144">FinancialReportingOtherData</span></span>
-- <span data-ttu-id="50706-145">FinancialReportingReferenceData</span><span class="sxs-lookup"><span data-stu-id="50706-145">FinancialReportingReferenceData</span></span>
-- <span data-ttu-id="50706-146">FinancialReportingTransactionData</span><span class="sxs-lookup"><span data-stu-id="50706-146">FinancialReportingTransactionData</span></span>
-- <span data-ttu-id="50706-147">LedgerCovLiquidityMeasurement</span><span class="sxs-lookup"><span data-stu-id="50706-147">LedgerCovLiquidityMeasurement</span></span>
-- <span data-ttu-id="50706-148">Beszerzés kocka</span><span class="sxs-lookup"><span data-stu-id="50706-148">Purchase cube</span></span>
-- <span data-ttu-id="50706-149">Értékesítés kocka</span><span class="sxs-lookup"><span data-stu-id="50706-149">Sales cube</span></span>
-
-<span data-ttu-id="50706-150">Az előző verzióban a LedgerActivityMeasure és VendPaymentBIMeasure entitás a **Pénzügyi igazgató-áttekintés** munkaterület adataihoz voltak használva.</span><span class="sxs-lookup"><span data-stu-id="50706-150">In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the **CFO overview** workspace.</span></span> <span data-ttu-id="50706-151">A jelenlegi verzióban azonban már nem használatosak.</span><span class="sxs-lookup"><span data-stu-id="50706-151">However, they are no longer used in the current release.</span></span>
-
-<span data-ttu-id="50706-152">Meghatározhat egy ismétlődő köteget, hogy rendszeresen frissítse az entitások adatait.</span><span class="sxs-lookup"><span data-stu-id="50706-152">You can define a recurring batch to regularly update the data in the entities.</span></span> <span data-ttu-id="50706-153">Mivel minden egyes entitás teljes mértékben újraépül a frissítések során, óvatosan válassza ki az entitásfrissítések idejét és gyakoriságát.</span><span class="sxs-lookup"><span data-stu-id="50706-153">Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully.</span></span> <span data-ttu-id="50706-154">A pénzügyi kimutatásoknál használt elsődleges entitás a FinancialReportingTransactionData entitás.</span><span class="sxs-lookup"><span data-stu-id="50706-154">The primary entity that is used for financial statements is the FinancialReportingTransactionData entity.</span></span> <span data-ttu-id="50706-155">Ezért dönthet úgy, hogy gyakrabban frissíti ezt az entitást.</span><span class="sxs-lookup"><span data-stu-id="50706-155">Therefore, you might decide to update that entity more often.</span></span>
-
-## <a name="security"></a><span data-ttu-id="50706-156">Biztonság</span><span class="sxs-lookup"><span data-stu-id="50706-156">Security</span></span>
-<span data-ttu-id="50706-157">Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személyekre korlátozni, amelyekhez a felhasználó hozzáfér.</span><span class="sxs-lookup"><span data-stu-id="50706-157">Currently, the data on embedded Power BI reports can't be limited to the legal entities that the user has access to.</span></span> <span data-ttu-id="50706-158">Ezért a beágyazott Power BI jelentések felügyelete a biztonsági beállítások feladatköreivel történik.</span><span class="sxs-lookup"><span data-stu-id="50706-158">Therefore, the embedded Power BI reports are controlled through duties in the security setup.</span></span> <span data-ttu-id="50706-159">A meghatározott feladatkörök valamennyi jogi személy vagy csak az aktív vállalat adataihoz engedélyezik a hozzáférést.</span><span class="sxs-lookup"><span data-stu-id="50706-159">The duties that are defined allow access to data for either all legal entities or only the active company.</span></span> <span data-ttu-id="50706-160">Az alábbi táblázat bemutatja a létező feladatköröket és a szerepköröket, amelyekhez ezek hozzá vannak rendelve.</span><span class="sxs-lookup"><span data-stu-id="50706-160">The following table shows the duties that exist and the roles that they are assigned to.</span></span> <span data-ttu-id="50706-161">A feladatkörök eltávolíthatók vagy más szerepkörökhöz rendelhetők a szervezet igényei alapján.</span><span class="sxs-lookup"><span data-stu-id="50706-161">The duties can be removed or assigned to different roles, based on your organization's requirements.</span></span>
-
-| <span data-ttu-id="50706-162">Feladatkör</span><span class="sxs-lookup"><span data-stu-id="50706-162">Duty</span></span>                                    | <span data-ttu-id="50706-163">Szerepkörök</span><span class="sxs-lookup"><span data-stu-id="50706-163">Roles</span></span> | <span data-ttu-id="50706-164">Leírás</span><span class="sxs-lookup"><span data-stu-id="50706-164">Decription</span></span> |
-|-----------------------------------------|-------|------------|
-| <span data-ttu-id="50706-165">Pénzügyi igazgatói áttekintés munkaterület megjelenítése</span><span class="sxs-lookup"><span data-stu-id="50706-165">View CFO Overview workspace</span></span>             | <span data-ttu-id="50706-166">Pénzügyi igazgató</span><span class="sxs-lookup"><span data-stu-id="50706-166">Chief Financial Officer</span></span> | <span data-ttu-id="50706-167">Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterülethez biztosít hozzáférést.</span><span class="sxs-lookup"><span data-stu-id="50706-167">This duty provides access to the CFO overview workspace.</span></span> <span data-ttu-id="50706-168">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</span><span class="sxs-lookup"><span data-stu-id="50706-168">By default, the active company is used as a filter.</span></span> <span data-ttu-id="50706-169">Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="50706-169">However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</span></span> |
-| <span data-ttu-id="50706-170">Jelenlegi vállalat pénzügyi információinak megtekintése</span><span class="sxs-lookup"><span data-stu-id="50706-170">View financial insights current company</span></span> | <ul><li><span data-ttu-id="50706-171">Könyvelő</span><span class="sxs-lookup"><span data-stu-id="50706-171">Accountant</span></span></li><li><span data-ttu-id="50706-172">Főkönyvelő</span><span class="sxs-lookup"><span data-stu-id="50706-172">Accounting manager</span></span></li><li><span data-ttu-id="50706-173">Számviteli felügyelő</span><span class="sxs-lookup"><span data-stu-id="50706-173">Accounting supervisor</span></span></li><li><span data-ttu-id="50706-174">Könyvvizsgáló</span><span class="sxs-lookup"><span data-stu-id="50706-174">Auditor</span></span></li><li><span data-ttu-id="50706-175">Költségvetés-kezelő</span><span class="sxs-lookup"><span data-stu-id="50706-175">Budget manager</span></span></li><li><span data-ttu-id="50706-176">Vezérigazgató</span><span class="sxs-lookup"><span data-stu-id="50706-176">Chief executive officer</span></span></li><li><span data-ttu-id="50706-177">Pénzügyi igazgató</span><span class="sxs-lookup"><span data-stu-id="50706-177">Chief financial officer</span></span></li><li><span data-ttu-id="50706-178">Pénzügyi ellenőr</span><span class="sxs-lookup"><span data-stu-id="50706-178">Financial controller</span></span></li></ul> | <span data-ttu-id="50706-179">Ez a feladatkör hozzáférést biztosít a Financial Insights alkalmazáshoz.</span><span class="sxs-lookup"><span data-stu-id="50706-179">This duty provides access to Financial Insights.</span></span> <span data-ttu-id="50706-180">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</span><span class="sxs-lookup"><span data-stu-id="50706-180">By default, the active company is used as a filter.</span></span> <span data-ttu-id="50706-181">Nem adhat hozzá más jogi személyeket.</span><span class="sxs-lookup"><span data-stu-id="50706-181">You can't add other legal entities.</span></span> |
-| <span data-ttu-id="50706-182">Vállalatközi pénzügyi információk megtekintése</span><span class="sxs-lookup"><span data-stu-id="50706-182">View financial insights cross company</span></span>   | <span data-ttu-id="50706-183">A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában ez a kötelességhez nem rendelt szerepkört.</span><span class="sxs-lookup"><span data-stu-id="50706-183">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role.</span></span> <span data-ttu-id="50706-184">A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre.</span><span class="sxs-lookup"><span data-stu-id="50706-184">In the next release, this duty will be assigned to the Chief financial officer role.</span></span> | <span data-ttu-id="50706-185">Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést.</span><span class="sxs-lookup"><span data-stu-id="50706-185">This duty provides access to the menu item for the CFO overview workspace.</span></span> <span data-ttu-id="50706-186">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</span><span class="sxs-lookup"><span data-stu-id="50706-186">By default, the active company is used as a filter.</span></span> <span data-ttu-id="50706-187">Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez.</span><span class="sxs-lookup"><span data-stu-id="50706-187">However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</span></span> |
-
-
-## <a name="financial-reporting-vs-finanical-insights"></a><span data-ttu-id="50706-188">Pénzügyi jelentések és Pénzügyi statisztikák</span><span class="sxs-lookup"><span data-stu-id="50706-188">Financial reporting vs. Finanical insights</span></span>
-<span data-ttu-id="50706-189">Noha a **Pénzügyi statisztikák** tartalmaznak pénzügyi kimutatásokat, nem helyettesítik a Finance and Operations Pénzügyi jelentéskészítés funkcióját.</span><span class="sxs-lookup"><span data-stu-id="50706-189">Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations.</span></span> <span data-ttu-id="50706-190">A **Pénzügyi statisztikák** alapértelmezett pénzügyi kimutatásai korlátozottak, és nem tartalmazzák a pénzügyi kimutatások valamennyi típusát.</span><span class="sxs-lookup"><span data-stu-id="50706-190">The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements.</span></span> <span data-ttu-id="50706-191">Pénzügyi jelentéskészítő modul továbbra is elsődleges eszköz a jogszabályban meghatározott pénzügyi kimutatások megtervezéséhez, létrehozásához és előállításához.</span><span class="sxs-lookup"><span data-stu-id="50706-191">Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.</span></span>
-
-<span data-ttu-id="50706-192">A következő összehasonlító táblázattal különbséget tehet a két lehetőség között:</span><span class="sxs-lookup"><span data-stu-id="50706-192">The following comparison chart will help differentiate the two options:</span></span>
-
-
-|                                                          | <span data-ttu-id="50706-193">Pénzügyi jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="50706-193">Financial Reporting</span></span>                                               | <span data-ttu-id="50706-194">Financial Insights</span><span class="sxs-lookup"><span data-stu-id="50706-194">Financial Insights</span></span> |
-|----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| <span data-ttu-id="50706-195">**Alapértelmezett jelentések szerkesztése**</span><span class="sxs-lookup"><span data-stu-id="50706-195">**Edit default reports**</span></span>                                 | <span data-ttu-id="50706-196">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-196">Yes</span></span>                                                               | <span data-ttu-id="50706-197">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-197">No</span></span> |
-| <span data-ttu-id="50706-198">**Új jelentések készítése**</span><span class="sxs-lookup"><span data-stu-id="50706-198">**Create new reports**</span></span>                                   | <span data-ttu-id="50706-199">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-199">Yes</span></span>                                                               | <span data-ttu-id="50706-200">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-200">No</span></span> |
-| <span data-ttu-id="50706-201">**Jelentések nyomtatása**</span><span class="sxs-lookup"><span data-stu-id="50706-201">**Print reports**</span></span>                                        | <span data-ttu-id="50706-202">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-202">Yes</span></span>                                                               | <span data-ttu-id="50706-203">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-203">No</span></span> |
-| <span data-ttu-id="50706-204">**Exportálás az Excel programba**</span><span class="sxs-lookup"><span data-stu-id="50706-204">**Export to Excel**</span></span>                                      | <span data-ttu-id="50706-205">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-205">Yes</span></span>                                                               | <span data-ttu-id="50706-206">A korlátozott nyers adatokat exportál az Excel programba, nem formázott jelentést</span><span class="sxs-lookup"><span data-stu-id="50706-206">Limited Exports raw data to Excel, not a formatted report</span></span> |
-| <span data-ttu-id="50706-207">**Jelentéskészítési hierarchia / szervezeti hierarchia támogatása**</span><span class="sxs-lookup"><span data-stu-id="50706-207">**Support reporting hierarchy/Organization hierarchy**</span></span>   | <span data-ttu-id="50706-208">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-208">Yes</span></span>                                                               | <span data-ttu-id="50706-209">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-209">No</span></span> |
-| <span data-ttu-id="50706-210">**Jelentés analitikus adatokról**</span><span class="sxs-lookup"><span data-stu-id="50706-210">**Report on subledger data**</span></span>                             | <span data-ttu-id="50706-211">Igen a Korlátozott csak szállítóra, vevőre</span><span class="sxs-lookup"><span data-stu-id="50706-211">Yes Limited to only vendor, customer</span></span>                              | <span data-ttu-id="50706-212">Igen: szállító, vevő, vevői és szállítói csoportok, vevői és szállítói címek stb.</span><span class="sxs-lookup"><span data-stu-id="50706-212">Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.</span></span> |
-| <span data-ttu-id="50706-213">**Jelentési pénznem**</span><span class="sxs-lookup"><span data-stu-id="50706-213">**Reporting Currency**</span></span>                                   | <span data-ttu-id="50706-214">Igen: könyvelési pénznem és a fordítás jelentési pénznemre</span><span class="sxs-lookup"><span data-stu-id="50706-214">Yes Accounting currency and translate to reporting currency</span></span>       | <span data-ttu-id="50706-215">Nem: Csak a könyvelési pénznem</span><span class="sxs-lookup"><span data-stu-id="50706-215">No Accounting currency only</span></span> |
-| <span data-ttu-id="50706-216">**Biztonság**</span><span class="sxs-lookup"><span data-stu-id="50706-216">**Security**</span></span>                                             | <span data-ttu-id="50706-217">Igen: a Finance and Operations és a jelentési fa biztonsága alapján</span><span class="sxs-lookup"><span data-stu-id="50706-217">Yes Adheres to Finance and Operations and reporting tree security</span></span> | <span data-ttu-id="50706-218">Korlátozott: jelentések megtekintése minden vállalatnál (Finance and Operations biztonságtól függetlenül) vagy csak az aktív vállalatnál</span><span class="sxs-lookup"><span data-stu-id="50706-218">Limited View reports for all companies (regardless of Finance and Operations security) or only active company</span></span> |
-| <span data-ttu-id="50706-219">**Támogatás különböző számlatükrökhöz és pénzügyi évekhez**</span><span class="sxs-lookup"><span data-stu-id="50706-219">**Support different Chart of accounts and fiscal years**</span></span> | <span data-ttu-id="50706-220">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-220">Yes</span></span>                                                               | <span data-ttu-id="50706-221">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-221">No</span></span> |
-| <span data-ttu-id="50706-222">**jelentés külső adatokról**</span><span class="sxs-lookup"><span data-stu-id="50706-222">**report on external data**</span></span>                              | <span data-ttu-id="50706-223">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-223">No</span></span>                                                                | <span data-ttu-id="50706-224">Nincs</span><span class="sxs-lookup"><span data-stu-id="50706-224">No</span></span> |
-| <span data-ttu-id="50706-225">**Konszolidációk támogatása**</span><span class="sxs-lookup"><span data-stu-id="50706-225">**Support consolidations**</span></span>                               | <span data-ttu-id="50706-226">Igen</span><span class="sxs-lookup"><span data-stu-id="50706-226">Yes</span></span>                                                               | <span data-ttu-id="50706-227">Korlátozott: jelentés több vállalatról is, de csak a könyvelési pénznem használatával</span><span class="sxs-lookup"><span data-stu-id="50706-227">Limited Can report on multiple companies but use accounting currency only</span></span> |
-
-<span data-ttu-id="50706-228">Az eredeti **Pénzügyi igazgató áttekintés** munkaterületből származó felhasználói felületen kívül új KPI-k, diagramok és pénzügyi kimutatások is elérhetők.</span><span class="sxs-lookup"><span data-stu-id="50706-228">In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available.</span></span> <span data-ttu-id="50706-229">A következő pénzügyi kimutatások állnak rendelkezésre:</span><span class="sxs-lookup"><span data-stu-id="50706-229">The following financial statements are available:</span></span>
-
-- <span data-ttu-id="50706-230">Főkönyvi kivonat</span><span class="sxs-lookup"><span data-stu-id="50706-230">Trial balance</span></span>
-- <span data-ttu-id="50706-231">Mérleg</span><span class="sxs-lookup"><span data-stu-id="50706-231">Balance sheet</span></span>
-- <span data-ttu-id="50706-232">Eredménykimutatás régiónként</span><span class="sxs-lookup"><span data-stu-id="50706-232">Income statement by region</span></span>
-- <span data-ttu-id="50706-233">Eredménykimutatás – Tényleges és tervezett</span><span class="sxs-lookup"><span data-stu-id="50706-233">Income statement actual vs. budget</span></span>
-- <span data-ttu-id="50706-234">Eltéréseket tartalmazó eredménykimutatás</span><span class="sxs-lookup"><span data-stu-id="50706-234">Income statement with variances</span></span>
-- <span data-ttu-id="50706-235">12 hónapos trend eredménykimutatás</span><span class="sxs-lookup"><span data-stu-id="50706-235">12-month trend income statement</span></span>
-- <span data-ttu-id="50706-236">Költségek három éves trendje</span><span class="sxs-lookup"><span data-stu-id="50706-236">Expenses three-year trend</span></span>
-- <span data-ttu-id="50706-237">Szállítónkénti költségek</span><span class="sxs-lookup"><span data-stu-id="50706-237">Expenses by vendor</span></span>
-- <span data-ttu-id="50706-238">Értékesítés vevőnként</span><span class="sxs-lookup"><span data-stu-id="50706-238">Sales by customer</span></span>
-
-## <a name="edit-visuals"></a><span data-ttu-id="50706-239">Vizuális elemek szerkesztése</span><span class="sxs-lookup"><span data-stu-id="50706-239">Edit visuals</span></span>
-<span data-ttu-id="50706-240">A **Financial Insights** kezdeti kiadásában egyetlen vizuális elem sem szerkeszthető.</span><span class="sxs-lookup"><span data-stu-id="50706-240">In the initial release of **Financial Insights**, none of the visuals can be edited.</span></span> <span data-ttu-id="50706-241">A jövőbeli kiadásokban a megfelelő biztonsággal rendelkező felhasználók képesek lesznek új vizuális elemeket készíteni, meglévő vizuális elemeket másolni és szerkeszteni.</span><span class="sxs-lookup"><span data-stu-id="50706-241">In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals.</span></span> <span data-ttu-id="50706-242">Bár a jelentéseket tartalmazó .pbix fájlok erőforrásokként érhetők el, nem javasoljuk az alapértelmezett jelentések szerkesztését.</span><span class="sxs-lookup"><span data-stu-id="50706-242">Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports.</span></span> <span data-ttu-id="50706-243">További módosításokra kerül sor az adatmodellen, az alapértelmezett jelentéseken és a pénzügyi kimutatások létrehozásához használt egyéni pénzügyi kimutatás vizuális elemen.</span><span class="sxs-lookup"><span data-stu-id="50706-243">Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements.</span></span> <span data-ttu-id="50706-244">Ezért, hogy kihasználhassa az új funkciók és az adatmodell a következő kiadásban megjelenő módosításait, újra meg kell ismételnie az alapértelmezett jelentéseken a Microsoft Power BI Desktop segítségével elvégzett módosításokat.</span><span class="sxs-lookup"><span data-stu-id="50706-244">Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.</span></span>
-
-## <a name="filtering"></a><span data-ttu-id="50706-245">Szűrés</span><span class="sxs-lookup"><span data-stu-id="50706-245">Filtering</span></span>
-<span data-ttu-id="50706-246">A felhasználók a bal oldali **Szűrés** ablaktáblával szűrhetik a jelentést.</span><span class="sxs-lookup"><span data-stu-id="50706-246">Users can filter the report by using the **Filter** pane on the left.</span></span> <span data-ttu-id="50706-247">Ez az ablaktábla ugyanaz, mint ami a Power BI Desktop segítségével érhető el.</span><span class="sxs-lookup"><span data-stu-id="50706-247">This pane is the same pane that is available through Power BI Desktop.</span></span> <span data-ttu-id="50706-248">A szűrésnek különböző szintjei vannak, amelyek közül egyesek esetleg nem állnak rendelkezésre attól függően, hogy mit választott ki az oldalon (lapon), illetve hogy használja-e a részletezési funkciókat:</span><span class="sxs-lookup"><span data-stu-id="50706-248">There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:</span></span>
-
-- <span data-ttu-id="50706-249">**Jelentésszintű szűrők** – Ezek a szűrők az összes oldalon (lapon) található összes vizuális elemre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="50706-249">**Report-level filters** – These filters are applied to all visuals on all pages (tabs).</span></span>
-- <span data-ttu-id="50706-250">**Oldalszintű szűrők** – Ezek a szűrők az aktív lapon lévő összes vizuális elemre vonatkoznak. Ezeket a szűrőket a jelentésszintű szűrőkön túlmenően alkalmazza a rendszer.</span><span class="sxs-lookup"><span data-stu-id="50706-250">**Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.</span></span>
-- <span data-ttu-id="50706-251">**Vizuális elemszintű szűrők** – Ezek a szűrők csak a kiválasztott vizuális elemre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="50706-251">**Visual-level filters** – These filters are applied only to the selected visual.</span></span> <span data-ttu-id="50706-252">Ezeket a szűrőket az oldalszintű szűrökön túlmenően alkalmazza a rendszer.</span><span class="sxs-lookup"><span data-stu-id="50706-252">These filters are applied on top of the page level filters.</span></span>
-- <span data-ttu-id="50706-253">**Részletező szűrő** – Ez a szűrő olyan „forrás” vizuális elemből szűr, amelyet a jelenlegi vizuális elemre alkalmazott, amikor a forrás vizuális elemről a jelenlegi vizuális elemre részletezett.</span><span class="sxs-lookup"><span data-stu-id="50706-253">**Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.</span></span>
-
-![Szűrő](./media/filter.png)
-
-<span data-ttu-id="50706-255">Egy adott szűrőérték eltávolításához válassza a mellette látható radírszimbólumot.</span><span class="sxs-lookup"><span data-stu-id="50706-255">To remove a specific filter value, select the eraser symbol next to it.</span></span> <span data-ttu-id="50706-256">Ne az X kiválasztásával távolítsa el a szűrőt. Ha kiválasztja az X-et, akkor a szűrt mező törlődik a szűrőlehetőségek közül.</span><span class="sxs-lookup"><span data-stu-id="50706-256">Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option.</span></span> <span data-ttu-id="50706-257">Ha véletlenül eltávolít egy mezőt a szűrőből, zárja be a munkaterületet, majd nyissa meg újra.</span><span class="sxs-lookup"><span data-stu-id="50706-257">If you accidently remove a field from the filter, close the workspace, and then reopen it.</span></span> <span data-ttu-id="50706-258">Az alapértelmezett szűrőbeállítások újra alkalmazásra kerülnek.</span><span class="sxs-lookup"><span data-stu-id="50706-258">The default filter settings will be reapplied.</span></span>
-
-<span data-ttu-id="50706-259">Alapértelmezés szerint amikor először megnyitja a munkaterületeket, az aktív jogi személy használatos jelentésszintű szűrőként.</span><span class="sxs-lookup"><span data-stu-id="50706-259">By default, when you first open workspaces, the active legal entity is used as the report-level filter.</span></span> <span data-ttu-id="50706-260">Biztonságuk függvényében a felhasználók esetleg más jogi személyeket is felvehetnek, vagy megváltoztathatják a szűrőben kiválasztott alapértelmezett jogi személyt.</span><span class="sxs-lookup"><span data-stu-id="50706-260">Depending on their security, users might be able to add other legal entities or change the default legal entity that is selected in the filter.</span></span>
-
-<span data-ttu-id="50706-261">A **Pénzügyi naptár** szűrőt kell használni, hogy a megfelelő naptár kerüljön felhasználásra a vizuális elemhez.</span><span class="sxs-lookup"><span data-stu-id="50706-261">The **Fiscal calendar** filter is required so that the correct calendar is used for the visual.</span></span> <span data-ttu-id="50706-262">A jelentésszintű szűrő alapértelmezés szerint az aktív jogi személy pénzügyi naptárára van állítva.</span><span class="sxs-lookup"><span data-stu-id="50706-262">By default, the report-level filter is set to the active legal entity's fiscal calendar.</span></span> <span data-ttu-id="50706-263">Ha a szűrőt olyan pénzügyi naptárra állítja át, amelynek más a kezdő vagy befejező dátuma, a kezdeti egyenlegek nem kerülnek be.</span><span class="sxs-lookup"><span data-stu-id="50706-263">If you change the filter to a fiscal calendar that has a different start or end date, the beginning balances won't be included.</span></span> <span data-ttu-id="50706-264">Emiatt a **Mérleg** pénzügyi kimutatások nem a helyes egyenlegeket fogják megjeleníteni.</span><span class="sxs-lookup"><span data-stu-id="50706-264">Therefore, your **Balance sheet** financial statements won't show the correct balances.</span></span> <span data-ttu-id="50706-265">Ha új pénzügyi naptárt választ ki a szűrőben, oszlopok további csoportja áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="50706-265">If you select an additional fiscal calendar in the filter, you will have an additional set of columns.</span></span> <span data-ttu-id="50706-266">Az oszlopok minden további csoportja egy másik pénzügyi naptár összegeit mutatja.</span><span class="sxs-lookup"><span data-stu-id="50706-266">Each additional set of columns shows the amounts for a different fiscal calendar.</span></span>
-
-<span data-ttu-id="50706-267">A **Feladási réteg** szűrő is szükséges.</span><span class="sxs-lookup"><span data-stu-id="50706-267">The **Posting layer** filter is also required.</span></span> <span data-ttu-id="50706-268">Alapértelmezés szerint a szűrő beállítása az Aktuális.</span><span class="sxs-lookup"><span data-stu-id="50706-268">By default, the filter is set to Current.</span></span> <span data-ttu-id="50706-269">További feladási rétegeket választhat ki a szűrőben az összesített összegek megjelenítéséhez.</span><span class="sxs-lookup"><span data-stu-id="50706-269">You can select additional posting layers in the filter to show the aggregated amounts.</span></span>
-
-<span data-ttu-id="50706-270">Szűrők érhetők el a **Dátum** és **Pénzügyi év** mezőkhöz is.</span><span class="sxs-lookup"><span data-stu-id="50706-270">Filters are also available for the **Date** and **Fiscal year** fields.</span></span> <span data-ttu-id="50706-271">Általában ezeket a szűrőket az oldal szintjén alkalmazzuk.</span><span class="sxs-lookup"><span data-stu-id="50706-271">Typically, these filters are applied at the page level.</span></span> <span data-ttu-id="50706-272">Alapértelmezés szerint a **Dátum** szűrő egy módosítható relációs dátumot használ.</span><span class="sxs-lookup"><span data-stu-id="50706-272">By default, the **Date** filter uses a relational date that you can change.</span></span> <span data-ttu-id="50706-273">A relációs dátum szűrő el is távolítható, és helyettesíthető a **Pénzügyi év** szűrővel.</span><span class="sxs-lookup"><span data-stu-id="50706-273">You can also remove the relational date filter and use the **Fiscal year** filter instead.</span></span>
-
-## <a name="currency"></a><span data-ttu-id="50706-274">Pénznem</span><span class="sxs-lookup"><span data-stu-id="50706-274">Currency</span></span>
-
-<span data-ttu-id="50706-275">Az általános főkönyvi adatokra vonatkozó összes vizuális elem a könyvelési pénznemben mutatja az összegeket.</span><span class="sxs-lookup"><span data-stu-id="50706-275">All visuals that report on general ledger data show amounts in the accounting currency.</span></span> <span data-ttu-id="50706-276">Ezért ha a jogi személyre szűr, ügyeljen arra, hogy csak azon jogi személyeket vegye fel, amelyeknél a könyvelési pénznem ugyanaz.</span><span class="sxs-lookup"><span data-stu-id="50706-276">Therefore, when you filter on the legal entity, you must be careful to include only legal entities that have the same accounting currency.</span></span> <span data-ttu-id="50706-277">Ellenkező esetben az összegző adatok különböző pénznemekben fognak szerepelni.</span><span class="sxs-lookup"><span data-stu-id="50706-277">Otherwise, you will aggregate data in different currencies.</span></span>
-
-<span data-ttu-id="50706-278">Az analitikus adatokra vonatkozó vizuális elemek, például **Pénzforgalmi előrejelzés** és **A legjobb 10** vizuális elem a rendszer pénznemében mutatja az összegeket.</span><span class="sxs-lookup"><span data-stu-id="50706-278">All visuals that report on subledger data, such as the **Cash flow forecast** and **Top 10** visuals, show amounts in the system currency.</span></span> <span data-ttu-id="50706-279">A rendszer pénzneme és a rendszer árfolyamtípusa a **Rendszerparaméterek** oldalon határozhatók meg.</span><span class="sxs-lookup"><span data-stu-id="50706-279">The system currency and system exchange rate type are defined on the **System parameters** page.</span></span>
-
-<span data-ttu-id="50706-280">A **Bankszámla egyenlege** vizuális elem a bankszámlák pénznemében használja az összegeket.</span><span class="sxs-lookup"><span data-stu-id="50706-280">The **Balance by bank account** visual uses amounts in the bank accounts' currency.</span></span>
-
-## <a name="dimensions"></a><span data-ttu-id="50706-281">Dimenziók</span><span class="sxs-lookup"><span data-stu-id="50706-281">Dimensions</span></span>
-
-<span data-ttu-id="50706-282">Az alapértelmezett pénzügyi kimutatások nem tartalmaznak pénzügyi dimenziót, hanem csak a fő számlára összpontosítanak.</span><span class="sxs-lookup"><span data-stu-id="50706-282">The default financial statements don't include any financial dimensions but are focused only on the main account.</span></span> <span data-ttu-id="50706-283">A pénzügyi dimenziók támogatása elérhető lesz a jövőbeli kiadásokban, amikor a jelentések szerkeszthetővé válnak.</span><span class="sxs-lookup"><span data-stu-id="50706-283">Support for financial dimensions will be available in future releases, when the reports become editable.</span></span> <span data-ttu-id="50706-284">A szervezetek ezután képesek lesznek pénzügyi dimenzióértékekre szűrni.</span><span class="sxs-lookup"><span data-stu-id="50706-284">Organizations will then be able to filter on financial dimension values.</span></span>
-
-<span data-ttu-id="50706-285">Egyes pénzügyi kimutatások analitikus tranzakciókon alapuló dimenziókat tartalmaznak.</span><span class="sxs-lookup"><span data-stu-id="50706-285">Some financial statements contain dimensions that are based on subledger transactions.</span></span> <span data-ttu-id="50706-286">Az új pénzügyi kimutatások célja, hogy lehetővé tegyék a pénzügyi dimenzióként be nem állított dimenziók szűrését.</span><span class="sxs-lookup"><span data-stu-id="50706-286">The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions.</span></span> <span data-ttu-id="50706-287">Például az alapértelmezett Szállítónkénti költségek jelentésben a fő számlán túl is bővíthet, és így az egyenlegeket szállító szerinti bontásban is láthatja.</span><span class="sxs-lookup"><span data-stu-id="50706-287">For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor.</span></span> <span data-ttu-id="50706-288">A szállító nincs beállítva pénzügyi dimenziónak.</span><span class="sxs-lookup"><span data-stu-id="50706-288">The vendor isn't set up as a financial dimension.</span></span> <span data-ttu-id="50706-289">Ehelyett a rendszer visszanyúl a kiindulási analitikus tranzakcióhoz a szállító megtalálásához.</span><span class="sxs-lookup"><span data-stu-id="50706-289">Instead, the system returns to the originating subledger transaction to find the vendor.</span></span>
-
-<span data-ttu-id="50706-290">A következő dimenziók használatosak az alapértelmezett jelentésekben.</span><span class="sxs-lookup"><span data-stu-id="50706-290">The following dimensions are used on the default reports.</span></span> <span data-ttu-id="50706-291">E dimenziók egyike sem pénzügyi dimenzió.</span><span class="sxs-lookup"><span data-stu-id="50706-291">None of these dimensions are financial dimensions.</span></span>
-
-- <span data-ttu-id="50706-292">Szállító</span><span class="sxs-lookup"><span data-stu-id="50706-292">Vendor</span></span>
-- <span data-ttu-id="50706-293">Szállítói csoport</span><span class="sxs-lookup"><span data-stu-id="50706-293">Vendor group</span></span>
-- <span data-ttu-id="50706-294">Vevő</span><span class="sxs-lookup"><span data-stu-id="50706-294">Customer</span></span>
-- <span data-ttu-id="50706-295">Vevőcsoport</span><span class="sxs-lookup"><span data-stu-id="50706-295">Customer group</span></span>
-- <span data-ttu-id="50706-296">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="50706-296">Country/region</span></span>
-- <span data-ttu-id="50706-297">Állam/tartomány</span><span class="sxs-lookup"><span data-stu-id="50706-297">State/province</span></span>
-- <span data-ttu-id="50706-298">Város</span><span class="sxs-lookup"><span data-stu-id="50706-298">City</span></span>
-
-> [!IMPORTANT] 
-> <span data-ttu-id="50706-299">Ha több szállító vagy vevő tranzakcióit összesíti egy bizonylaton a pénzügyi naplók használatával, az adatok helytelenek lesznek.</span><span class="sxs-lookup"><span data-stu-id="50706-299">If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect.</span></span> <span data-ttu-id="50706-300">A jelentések nem tudják meghatározni, hogy melyik szállító vagy vevő kapcsolódik egy adott főkönyvi számlához egy naplóbejegyzésben, mert ezeket az adatokat nem vezetik sehol.</span><span class="sxs-lookup"><span data-stu-id="50706-300">Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere.</span></span> <span data-ttu-id="50706-301">Emiatt nem ajánlott több szállítót, vevőt, tárgyi eszközt vagy projektet feltüntetni egy bizonylaton.</span><span class="sxs-lookup"><span data-stu-id="50706-301">Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.</span></span>
-
-## <a name="drill-on-data"></a><span data-ttu-id="50706-302">Leásás adatokhoz</span><span class="sxs-lookup"><span data-stu-id="50706-302">Drill on data</span></span>
-
-<span data-ttu-id="50706-303">Különböző leásási szintek érhetők el a Power BI segítségével.</span><span class="sxs-lookup"><span data-stu-id="50706-303">Various levels of drilling are available through Power BI.</span></span> <span data-ttu-id="50706-304">Minden szintnek eltérő neve és különböző funkciói vannak.</span><span class="sxs-lookup"><span data-stu-id="50706-304">Each level has a different name and different functionality.</span></span> <span data-ttu-id="50706-305">Sorokra és oszlopokra is le lehet ásni.</span><span class="sxs-lookup"><span data-stu-id="50706-305">You can also drill on rows and columns.</span></span> <span data-ttu-id="50706-306">Ez a szakasz a **Főkönyvi kivonat** pénzügyi kimutatást példaként használva mutatja be a különféle lehetőségeket, és megmutatja, hogyan lehet leásni a sorokban.</span><span class="sxs-lookup"><span data-stu-id="50706-306">This section discusses the various options by using the **Trial balance** financial statement as an example and showing how you can drill on the rows.</span></span> <span data-ttu-id="50706-307">Ugyanez a funkció létezik az oszlopokhoz is.</span><span class="sxs-lookup"><span data-stu-id="50706-307">The same functionality exists for columns.</span></span> <span data-ttu-id="50706-308">Csak módosítania kell a **Leásás célja** beállítást.</span><span class="sxs-lookup"><span data-stu-id="50706-308">You just have to change the **Drill on** setting.</span></span>
-
-<span data-ttu-id="50706-309">Az alábbi példában a **Főkönyvi kivonat** kimutatás összecsukódik a sorhierarchia legmagasabb szintjére, amely a fő számla típusa.</span><span class="sxs-lookup"><span data-stu-id="50706-309">In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.</span></span>
-
-![Főkönyvi kivonat](./media/trial-balance.png)
-
-<span data-ttu-id="50706-311">Ha a hierarchia következő szintjét, a főszámla-kategóriákat szeretné megtekinteni, állítsa a **Leásás célja** mezőt **Sorok** értékre, és válassza a **Kibontás** gombot (a harmadik gomb a Leásás célja mező után).</span><span class="sxs-lookup"><span data-stu-id="50706-311">To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field).</span></span> <span data-ttu-id="50706-312">Most kibontva látja az összes főszámla-kategóriát.</span><span class="sxs-lookup"><span data-stu-id="50706-312">You now see all the main account categories expanded.</span></span> <span data-ttu-id="50706-313">Jelenleg a Power BI nem teszi lehetővé, hogy csak egy sort vagy oszlopot bontson ki, de mégis lássa az összes többi sort vagy oszlopot.</span><span class="sxs-lookup"><span data-stu-id="50706-313">Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.</span></span>
-
-![Főkönyvi kivonat](./media/trial-balance2.png)
-
-<span data-ttu-id="50706-315">A fő számlák az összes sorra vonatkozó kibontásához újra használhatja a **Kibontás** gombot.</span><span class="sxs-lookup"><span data-stu-id="50706-315">To expand to the main accounts for all rows, you can again use the **Expand** button.</span></span> <span data-ttu-id="50706-316">Azonban, ha csak egy sornál szeretne leásni a fő számlákig, először válassza a **Leásás** gombot (az ablak jobb oldalán levő egyetlen lefelé mutató nyíl), majd válassza ki a sort, amelynél le szeretne ásni.</span><span class="sxs-lookup"><span data-stu-id="50706-316">However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on.</span></span> <span data-ttu-id="50706-317">Az alábbi ábrán az az eredmény látható, ha az **Értékesítés** sor van kiválasztva a **Leásás** gomb kiválasztása után.</span><span class="sxs-lookup"><span data-stu-id="50706-317">The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.</span></span>
-
-![Főkönyvi kivonat](./media/trial-balance3.png)
-
-<span data-ttu-id="50706-319">Miután egy sornál leásott, több kattintás szükséges ahhoz, hogy visszatérjen a teljes főkönyvi kivonathoz.</span><span class="sxs-lookup"><span data-stu-id="50706-319">After you drill down on a single row, multiple clicks are required in order to return to the full trial balance.</span></span> <span data-ttu-id="50706-320">A **Felásás** gomb (az első gomb a **Leásás** mező után) csak az **Értékesítés** kategória környezetében ás felfelé, a következő ábrán látható módon.</span><span class="sxs-lookup"><span data-stu-id="50706-320">The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.</span></span>
-
-![Főkönyvi kivonat](./media/trial-balance4.png)
-
-<span data-ttu-id="50706-322">Folytathatja a **Felásás** gomb használatát a sorok legmagasabb szintű összegzéséig.</span><span class="sxs-lookup"><span data-stu-id="50706-322">You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.</span></span>
-
-<span data-ttu-id="50706-323">A Power BI egy olyan gombbal is rendelkezik, amely lehetővé teszi, hogy a hierarchiában a következő szintre lépjen (a második gomb a **Leásás célja** mező után).</span><span class="sxs-lookup"><span data-stu-id="50706-323">Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field).</span></span> <span data-ttu-id="50706-324">Ennek a gombnak a hatása különbözik a **Kibontás** gombétól (a harmadik gomb a **Leásás célja** mező után), amely a hierarchia kibontására használatos.</span><span class="sxs-lookup"><span data-stu-id="50706-324">The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy.</span></span> <span data-ttu-id="50706-325">A hierarchiát kibontva a jelentésben megmarad a hierarchia.</span><span class="sxs-lookup"><span data-stu-id="50706-325">When you expand the hierarchy, the hierarchy is maintained on the report.</span></span> <span data-ttu-id="50706-326">Például, amint korábban bemutattuk, ha a fő számla típusára kibontva továbbra is megjelenik a fő számla típusa a jelentésben.</span><span class="sxs-lookup"><span data-stu-id="50706-326">For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report.</span></span> <span data-ttu-id="50706-327">Azonban a hierarchiában a következő szintre lépve a jelentés többé nem jeleníti meg a szülőt a hierarchiában, ahogyan az a következő ábrán látható.</span><span class="sxs-lookup"><span data-stu-id="50706-327">However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.</span></span>
-
-![Főkönyvi kivonat](./media/trial-balance5.png)
-
-<span data-ttu-id="50706-329">Az összegzett egyenlegek mögötti tranzakció részleteinek megtekintéséhez kiválaszthat bizonyos összegeket a Financial and Operations alkalmazásba való visszaásáshoz.</span><span class="sxs-lookup"><span data-stu-id="50706-329">To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.</span></span>
-
-<span data-ttu-id="50706-330">A pénzügyi kimutatásokból való visszaásással a Könyvelési források böngészőjébe (ASE), kerül, nem pedig a bizonylati ügyletekhez.</span><span class="sxs-lookup"><span data-stu-id="50706-330">The drill-back from the financial statements takes you to the Accounting source explorer (ASE), not to the voucher transactions.</span></span> <span data-ttu-id="50706-331">Az ASE nem csak a főkönyvben meglévő könyvelési tételeket mutatja meg.</span><span class="sxs-lookup"><span data-stu-id="50706-331">The ASE doesn't show just the accounting entries in the general ledger.</span></span> <span data-ttu-id="50706-332">Ehelyett az analitikus tranzakció részletes adatait mutatja.</span><span class="sxs-lookup"><span data-stu-id="50706-332">Instead, it shows the details of the subledger transaction.</span></span> <span data-ttu-id="50706-333">Ezért sokkal több részletet kap a kiinduló tranzakcióról, és elemzésre is felhasználhatja.</span><span class="sxs-lookup"><span data-stu-id="50706-333">Therefore, you get much more detail about the originating transaction and can use it for analysis.</span></span> <span data-ttu-id="50706-334">Például láthatja, hogy ki volt a szállító vagy a vevő, mit vásárolt a vevő vagy mit adott el az eladó, és még azt is, hogy milyen a projekt szerepelt a tranzakcióban.</span><span class="sxs-lookup"><span data-stu-id="50706-334">For example, you can see who the vendor or customer was, what the customer bought or the vendor sold, and even what project was on the transaction.</span></span>
-
-<span data-ttu-id="50706-335">A pénzügyi kimutatásokból a következő szűrők elküldésre kerülnek az ASE-nek, hogy az ASE megjeleníthesse az összesített tranzakciókat:</span><span class="sxs-lookup"><span data-stu-id="50706-335">The following filters from the financial statements are sent to the ASE, so that the ASE shows the transactions that are aggregated:</span></span>
-
-<span data-ttu-id="50706-336">Kötelezően kitöltendő mezők szűréshez:</span><span class="sxs-lookup"><span data-stu-id="50706-336">Required fields for filtering:</span></span>
-
-- <span data-ttu-id="50706-337">Jogi személy</span><span class="sxs-lookup"><span data-stu-id="50706-337">Legal entity</span></span>
-- <span data-ttu-id="50706-338">Pénzügyi naptár</span><span class="sxs-lookup"><span data-stu-id="50706-338">Fiscal calendar</span></span>
-- <span data-ttu-id="50706-339">Év</span><span class="sxs-lookup"><span data-stu-id="50706-339">Year</span></span>
-- <span data-ttu-id="50706-340">Fő számla azonosítója</span><span class="sxs-lookup"><span data-stu-id="50706-340">Main account ID</span></span>
-
-<span data-ttu-id="50706-341">Opcionálisan kitöltendő mezők szűréshez:</span><span class="sxs-lookup"><span data-stu-id="50706-341">Optional fields for filtering:</span></span>
-
-- <span data-ttu-id="50706-342">Negyedév</span><span class="sxs-lookup"><span data-stu-id="50706-342">Quarter</span></span>
-- <span data-ttu-id="50706-343">Hónap</span><span class="sxs-lookup"><span data-stu-id="50706-343">Month</span></span>
-- <span data-ttu-id="50706-344">Időszak</span><span class="sxs-lookup"><span data-stu-id="50706-344">Period</span></span>
-
-<span data-ttu-id="50706-345">Ha egy sorban nem bont ki elegendő mélységig, a leásás nem működik.</span><span class="sxs-lookup"><span data-stu-id="50706-345">If you don't expand down far enough on a row, the drill-down doesn't work.</span></span> <span data-ttu-id="50706-346">Például ha csak a főszámla-kategóriáig bővít, akkor nem lehet leásni az ASE-ig az egyenleg után, mivel a fő számla mezőt kötelező kitölteni az ASE-ben végzett szűréshez.</span><span class="sxs-lookup"><span data-stu-id="50706-346">For example, if you expand down only to the main account category, you can't drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.</span></span>
-
-<span data-ttu-id="50706-347">Ha túlságosan mélyre bővít egy sorban, a pénzügyi kimutatásokra vonatkozó további szűrőket a rendszer nem küldi el az ASE-nek.</span><span class="sxs-lookup"><span data-stu-id="50706-347">If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE.</span></span> <span data-ttu-id="50706-348">Emiatt eltérő számok jelenhetnek meg.</span><span class="sxs-lookup"><span data-stu-id="50706-348">Therefore, you might see a difference in your numbers.</span></span> <span data-ttu-id="50706-349">Például ha az országig vagy régióig bővít lefelé a régiónkénti eredménykimutatás pénzügyi kimutatás sorain, az ország vagy régió nem kerül be szűrőként az ASE-be.</span><span class="sxs-lookup"><span data-stu-id="50706-349">For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't be included as a filter in the ASE.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="50706-350">A pénzügyi kimutatási sorokban és oszlopokban mélyebbre le lehet ásni, mint ameddig az ASE jelenleg a szűrést támogatja.</span><span class="sxs-lookup"><span data-stu-id="50706-350">You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering.</span></span> <span data-ttu-id="50706-351">Ezért bizonyos esetekben a ASE-ben megjelenő részletes tranzakciók összege más lesz, mint az az egyenleg, ameddig leásott.</span><span class="sxs-lookup"><span data-stu-id="50706-351">Therefore, in some situations, the sum of detailed transactions in the ASE won't match the balance that you're drilling back on.</span></span> <span data-ttu-id="50706-352">Ezt a funkciót a jövőben továbbfejlesztjük.</span><span class="sxs-lookup"><span data-stu-id="50706-352">This functionality will continue to be enhanced in the future.</span></span>
-
-## <a name="hierarchies"></a><span data-ttu-id="50706-353">Hierarchiák</span><span class="sxs-lookup"><span data-stu-id="50706-353">Hierarchies</span></span>
-
-<span data-ttu-id="50706-354">Az alapértelmezett pénzügyi kimutatások két hierarchiát használnak az az adatok kibontásához és a bennük való leásáshoz.</span><span class="sxs-lookup"><span data-stu-id="50706-354">The default financial statements use two hierarchies to drill and expand on the data.</span></span> <span data-ttu-id="50706-355">Az egyik hierarchia a sorokra vonatkozik, a másik pedig az oszlopokra.</span><span class="sxs-lookup"><span data-stu-id="50706-355">One hierarchy is for the rows, and the other hierarchy is for the columns.</span></span> <span data-ttu-id="50706-356">Mindkét hierarchia előre meg van határozva a pénzügyi kimutatás tervezése során.</span><span class="sxs-lookup"><span data-stu-id="50706-356">Both hierarchies are predefined in the design of the financial statement.</span></span> <span data-ttu-id="50706-357">A legtöbb pénzügyi kimutatásnál a sor hierarchiája a következő **Fő számlatípus** \> **Főszámla-kategóriák** \> **Fő számla**.</span><span class="sxs-lookup"><span data-stu-id="50706-357">For most financial statements, the row hierarchy is **Main account type** \> **Main account categories** \> **Main account**.</span></span> <span data-ttu-id="50706-358">Egyes jelentéseknél azonban további mezők is vannak, például Ország és Régió.</span><span class="sxs-lookup"><span data-stu-id="50706-358">However, some reports have additional fields, such as Country and Region.</span></span> <span data-ttu-id="50706-359">A hierarchia további csomópontjai az egyes tranzakciók analitikus adatain alapulnak.</span><span class="sxs-lookup"><span data-stu-id="50706-359">The additional nodes of the hierarchy are based on subledger data for each transaction.</span></span>
-
-<span data-ttu-id="50706-360">Az oszlopok esetében a hierarchia a jogi személyekre és a pénzügyi időszakokra koncentrál.</span><span class="sxs-lookup"><span data-stu-id="50706-360">For the columns, the hierarchy is focused on the legal entities and the fiscal periods.</span></span> <span data-ttu-id="50706-361">A legtöbb pénzügyi kimutatásnál az oszlop hierarchiája a következő: **Jogi személy** \> **Pénzügyi naptár** \> **Pénzügyi év** \> **Negyedév** \> **Időszak**.</span><span class="sxs-lookup"><span data-stu-id="50706-361">For most financial statements, the column hierarchy is **Legal entity** \> **Fiscal calendar** \> **Fiscal year** \> **Quarter** \> **Period**.</span></span>
-
-<span data-ttu-id="50706-362">Jelenleg a pénzügyi kimutatások nem támogatják az olyan szervezeti hierarchiákat, amelyek lehetővé teszik az adatok összesítését.</span><span class="sxs-lookup"><span data-stu-id="50706-362">Currently, the financial statements don't support the organizational hierarchies, which let you aggregate data.</span></span>
-
-## <a name="data-limitations"></a><span data-ttu-id="50706-363">Adatkorlátozások</span><span class="sxs-lookup"><span data-stu-id="50706-363">Data limitations</span></span>
-<span data-ttu-id="50706-364">A pénzügyi kimutatási vizuális elemeknél a megjeleníthető sorok száma korlátozott.</span><span class="sxs-lookup"><span data-stu-id="50706-364">The financial statement visuals have a limit on the number of rows that can be shown.</span></span> <span data-ttu-id="50706-365">Jelenleg a korlát értéke 30 000.</span><span class="sxs-lookup"><span data-stu-id="50706-365">Currently, the limit is set to 30,000.</span></span> <span data-ttu-id="50706-366">Ha meghaladja ezt a határértéket, akkor a vizuális elem figyelmeztető szimbólummal tájékoztatja a helyzetről.</span><span class="sxs-lookup"><span data-stu-id="50706-366">If you exceed this limit, the visual will have a warning symbol to notify you about this situation.</span></span>
-
-![Adatkorlátozások](./media/data-limit.png)
-
-<span data-ttu-id="50706-368">A maximális érték túllépése esetén a pénzügyi kimutatásban megjelenő összegek helytelenek lesznek, mert nem minden sor kerül be a vizuális elembe.</span><span class="sxs-lookup"><span data-stu-id="50706-368">If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.</span></span>
-
-### <a name="empty-rows"></a><span data-ttu-id="50706-369">Üres sorok</span><span class="sxs-lookup"><span data-stu-id="50706-369">Empty rows</span></span>
-<span data-ttu-id="50706-370">Power BI nem támogatja az üres sorok elrejtését és megjelenítését.</span><span class="sxs-lookup"><span data-stu-id="50706-370">Power BI doesn't provide an option to hide and show empty rows.</span></span> <span data-ttu-id="50706-371">Ha egy sor nem tartalmaz adatokat, a sor nem jelenik meg a vizuális elemben.</span><span class="sxs-lookup"><span data-stu-id="50706-371">If a row doesn't have any data, the row won't appear in the visual.</span></span>
-
-
-## <a name="additional-resources-for-power-bi"></a><span data-ttu-id="50706-372">További erőforrások a Power BI szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="50706-372">Additional resources for Power BI</span></span>
-
-<span data-ttu-id="50706-373">Az alábbi erőforrásokban található információk nem szükségesek **Pénzügyi igazgató áttekintés** vagy **Financial Insights** munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez.</span><span class="sxs-lookup"><span data-stu-id="50706-373">The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment.</span></span> <span data-ttu-id="50706-374">Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI jelentéseit szeretné beágyazni a Finance and Operations alkalmazásba.</span><span class="sxs-lookup"><span data-stu-id="50706-374">Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.</span></span>
-
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
-
-- <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="financial-insights.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>financial-insights.ea0c66.9edcb192d2fac5acb954d8b87be691f0943e0db7.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>9edcb192d2fac5acb954d8b87be691f0943e0db7</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>23ab3c99d05869ea2c73514754608e8684697d8c</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\financial-insights.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Financial Insights</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Financial Insights</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Financial Insights a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Financial Insights</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Financial Insights</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source><bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI be van ágyazva a Microsoft Dynamics 365 Finance and Operations alkalmazásba.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The focus of <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is analytical reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> lényege az analitikus jelentéskészítés.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Personas across an organization can view, research, understand, and act.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> kombinálja az adatokat a főkönyvből és az analitikus naplókból, hogy teljesebb képet adjon a szervezet pénzügyi helyzetéről.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>This document uses the following Power BI terminology:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a dokumentum az alábbi Power BI terminológiát használja:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">**</bpt>Report<ept id="p1">**</ept> – A single .pbix file that all the visuals on all tabs are saved to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentés<ept id="p1">**</ept> – Egyetlen .pbix fájl, amelybe az összes fül összes vizuális eleme elmentésre kerül.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Page<ept id="p1">**</ept> – A tab in a single .pbix file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Oldal<ept id="p1">**</ept> – Egyetlen .pbix fájl egy füle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Each page can contain one or more visuals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden egyes oldal egy vagy több vizuális elemet tartalmazhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">**</bpt>Visual<ept id="p1">**</ept> – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vizuális elem<ept id="p1">**</ept> – Egyetlen adatforrás, például karton, KPI, diagram, grafikon, mátrix vagy pénzügyi kimutatás.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az olyan oldal, amelyen pénzügyi kimutatás szerepel vizuális elemként, nem tartalmazhat más vizuális elemeket a jelentésben szereplő adatok mérete miatt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Currently, <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is used to view data for either the active legal entity or all legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> az aktív jogi személy vagy az összes jogi személy adatainak megtekintésére szolgál.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jövőbeli kiadásokban a munkaterület úgy fog fejlődni, hogy a Power BI segítségével módosíthat és létrehozhat majd vizuális elemeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>The <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace shows the same visuals as <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept>, but is focused on letting you view and filter the data on existing reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Pénzügyi igazgató-áttekintés<ept id="p1">**</ept> munkaterület ugyanazokat a vizuális elemeket jeleníti meg, mint a <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept>, de középpontjában a meglévő jelentések adatainak megtekintése és szűrése áll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In future releases, you will be able to add new visuals to the <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jövőbeni kiadásokban új vizuális elemeket adhat hozzá a <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> munkaterülethez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új vizuális elemek olyan munkaterületeken is elérhetők lehetnek, amelyek más szerepkörökre koncentrálnak, például a projektmenedzserekre vagy a kötelezettségek kezelőire.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Pénzügyi igazgató áttekintés<ept id="p1">**</ept> a munkaterület továbbra is minden jogi személynél megjeleníti az adatokat, függetlenül azoktól a jogi személyektől, amelyekhez a szerepkör hozzáfér.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Finance and Operations setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finance and Operations beállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Főkönyv<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The main account type and the main account categories are used to fill in appropriate default main accounts on the <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> financial statement and the various <bpt id="p2">**</bpt>Income statement<ept id="p2">**</ept> financial statements in <bpt id="p3">**</bpt>Financial Insights<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A megfelelő alapértelmezés szerinti fő számlák kitöltésére a <bpt id="p1">**</bpt>Mérleg<ept id="p1">**</ept> pénzügyi kimutatásban és a <bpt id="p3">**</bpt>Financial Insights<ept id="p3">**</ept> alkalmazáson belüli különböző <bpt id="p2">**</bpt>Eredménykimutatás<ept id="p2">**</ept> pénzügyi kimutatásokban a fő számla típusa és a főszámla-kategóriák használatosak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>On the <bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> page, you must define your main account so that one of the following types is assigned to it:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Fő számlák<ept id="p1">**</ept> lapon meg kell adnia a fő számlát, hogy hozzárendelje az alábbi típusok egyikét:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Revenue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevétel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Expense</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Expense</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Assets</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eszközök</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Liabilities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Equity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saját tőke</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Do not assign any other main account type, such as <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Profit and Loss<ept id="p2">**</ept>, to your main accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne rendeljen semmilyen más főszámla-típust (például <bpt id="p1">**</bpt>Mérleg<ept id="p1">**</ept> vagy <bpt id="p2">**</bpt>Eredmény<ept id="p2">**</ept>) a fő számlákhoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentéstétel nem tudja meghatározni a fő fiók típusát, ha más főfiók-típusok vannak hozzárendelve, mivel ezek nem eléggé részletesek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fő számla típusát úgy kell meghatározni, hogy a források és a bevétel pozitív összegekként jelenjenek meg a pénzügyi kimutatásokban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatásokban való megjelenítéshez és a különféle egyéb vizuális elemekbe - például a KPI-kba - való befoglaláshoz minden fő számlához főszámla-kategóriát kell rendelni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The main account categories have been enhanced so that they include a display order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Főszámla-kategóriákat továbbfejlesztettük, hogy megjelenítési sorrendet tartalmazzanak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The display order is used specifically on financial statements in <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A megjelenítési sorrend kifejezetten használatos a <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> pénzügyi kimutatásaiban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>After you edit or add a new main account category, you can change the <bpt id="p1">**</bpt>Display order<ept id="p1">**</ept> value to define the order that the main account categories should be shown in on a financial statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Új főszámla-kategória hozzáadása vagy szerkesztése után módosítható a <bpt id="p1">**</bpt>Megjelenítési sorrend<ept id="p1">**</ept> értéke, és ezzel megadható a sorrend, amelyben a főszámla-kategóriák megjelennek a pénzügyi kimutatásokban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha számos főszámla-kategória megjelenítési sorrendjét módosítania kell, használhatja a Megnyitás az Excel programban funkciót a módosítások gyors szerkesztéséhez és a Finance and Operations alkalmazásban való közzétételéhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Entity store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Entitástár</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>The data for <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is pulled from the Entity store (<bpt id="p2">**</bpt>System administration<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Entity store<ept id="p4">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> adatainak lekérése az Entitástárból történik (<bpt id="p2">**</bpt>Rendszerfelügyelet<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Beállítás<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Entitástár<ept id="p4">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>If you open the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> workspace, and the following warning message appears in the visuals, you must update the entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha megnyitja a <bpt id="p1">**</bpt>Pénzügyi igazgató áttekintés<ept id="p1">**</ept> vagy <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> munkaterület, és a következő figyelmeztető üzenet jelenik meg a vizuális elemekben, frissítenie kell az entitásokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Warning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Figyelmeztetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>You must update the following entities to see data in the <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CFO overview<ept id="p2">**</ept> workspaces:</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Frissítenie kell a következő entitásokat az adatok a <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> és <bpt id="p2">**</bpt>Pénzügyi igazgató áttekintés<ept id="p2">**</ept> munkaterületeken való megtekintéséhez:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Financial reporting transaction data version 2 (<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is new with version 10.0.1 and replaces the previous entity.)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pénzügyi jelentéskészítés tranzakcióadatok 2-es verzió (<bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Ez új a 10.0.1-es verzióban, és az előző entitás helyébe lép.)</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Financial reporting transaction data</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítés tranzakciós adatai</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>CustCollectionsBIMeasurements</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">CustCollectionsBIMeasurements</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>LedgerCovLiquidityMeasurement</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">LedgerCovLiquidityMeasurement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Purchase cube</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Beszerzés kocka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Sales cube</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Értékesítés kocka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előző verzióban a LedgerActivityMeasure és VendPaymentBIMeasure entitás a <bpt id="p1">**</bpt>Pénzügyi igazgató-áttekintés<ept id="p1">**</ept> munkaterület adataihoz voltak használva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>However, they are no longer used in the current release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelenlegi verzióban azonban már nem használatosak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>You can define a recurring batch to regularly update the data in the entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meghatározhat egy ismétlődő köteget, hogy rendszeresen frissítse az entitások adatait.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mivel minden egyes entitás teljes mértékben újraépül a frissítések során, óvatosan válassza ki az entitásfrissítések idejét és gyakoriságát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>The primary entity that is used for financial statements is the FinancialReportingTransactionData entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatásoknál használt elsődleges entitás a FinancialReportingTransactionData entitás.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Therefore, you might decide to update that entity more often.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért dönthet úgy, hogy gyakrabban frissíti ezt az entitást.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Biztonság</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Currently, the data on embedded Power BI reports can't be limited to the legal entities that the user has access to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személyekre korlátozni, amelyekhez a felhasználó hozzáfér.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Therefore, the embedded Power BI reports are controlled through duties in the security setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért a beágyazott Power BI jelentések felügyelete a biztonsági beállítások feladatköreivel történik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The duties that are defined allow access to data for either all legal entities or only the active company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A meghatározott feladatkörök valamennyi jogi személy vagy csak az aktív vállalat adataihoz engedélyezik a hozzáférést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>The following table shows the duties that exist and the roles that they are assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi táblázat bemutatja a létező feladatköröket és a szerepköröket, amelyekhez ezek hozzá vannak rendelve.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The duties can be removed or assigned to different roles, based on your organization's requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladatkörök eltávolíthatók vagy más szerepkörökhöz rendelhetők a szervezet igényei alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Duty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladatkör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerepkörök</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Decription</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>View CFO Overview workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi igazgatói áttekintés munkaterület megjelenítése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Chief Financial Officer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi igazgató</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>This duty provides access to the CFO overview workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterülethez biztosít hozzáférést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>By default, the active company is used as a filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>View financial insights current company</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenlegi vállalat pénzügyi információinak megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Accountant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Accounting manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Accounting supervisor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számviteli felügyelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Auditor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvvizsgáló</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Budget manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Költségvetés-kezelő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Chief executive officer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vezérigazgató</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Chief financial officer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi igazgató</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Financial controller</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi ellenőr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>This duty provides access to Financial Insights.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladatkör hozzáférést biztosít a Financial Insights alkalmazáshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>By default, the active company is used as a filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>You can't add other legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem adhat hozzá más jogi személyeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>View financial insights cross company</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vállalatközi pénzügyi információk megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában ez a kötelességhez nem rendelt szerepkört.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>In the next release, this duty will be assigned to the Chief financial officer role.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>This duty provides access to the menu item for the CFO overview workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>By default, the active company is used as a filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint az aktív vállalat szolgál szűrőként.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Financial reporting vs. Finanical insights</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentések és Pénzügyi statisztikák</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Although <bpt id="p1">**</bpt>Financial insights<ept id="p1">**</ept> contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Noha a <bpt id="p1">**</bpt>Pénzügyi statisztikák<ept id="p1">**</ept> tartalmaznak pénzügyi kimutatásokat, nem helyettesítik a Finance and Operations Pénzügyi jelentéskészítés funkcióját.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>The default financial statements in <bpt id="p1">**</bpt>Financial insights<ept id="p1">**</ept> are limited in scope and don't include all types of financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Pénzügyi statisztikák<ept id="p1">**</ept> alapértelmezett pénzügyi kimutatásai korlátozottak, és nem tartalmazzák a pénzügyi kimutatások valamennyi típusát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítő modul továbbra is elsődleges eszköz a jogszabályban meghatározott pénzügyi kimutatások megtervezéséhez, létrehozásához és előállításához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The following comparison chart will help differentiate the two options:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő összehasonlító táblázattal különbséget tehet a két lehetőség között:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Financial Reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Financial Insights</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Financial Insights</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><bpt id="p1">**</bpt>Edit default reports<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Alapértelmezett jelentések szerkesztése<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source><bpt id="p1">**</bpt>Create new reports<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Új jelentések készítése<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source><bpt id="p1">**</bpt>Print reports<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentések nyomtatása<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source><bpt id="p1">**</bpt>Export to Excel<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Exportálás az Excel programba<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Limited Exports raw data to Excel, not a formatted report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A korlátozott nyers adatokat exportál az Excel programba, nem formázott jelentést</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source><bpt id="p1">**</bpt>Support reporting hierarchy/Organization hierarchy<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentéskészítési hierarchia / szervezeti hierarchia támogatása<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source><bpt id="p1">**</bpt>Report on subledger data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentés analitikus adatokról<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Yes Limited to only vendor, customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen a Korlátozott csak szállítóra, vevőre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen: szállító, vevő, vevői és szállítói csoportok, vevői és szállítói címek stb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source><bpt id="p1">**</bpt>Reporting Currency<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentési pénznem<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Yes Accounting currency and translate to reporting currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen: könyvelési pénznem és a fordítás jelentési pénznemre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>No Accounting currency only</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem: Csak a könyvelési pénznem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>Security<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Biztonság<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Yes Adheres to Finance and Operations and reporting tree security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen: a Finance and Operations és a jelentési fa biztonsága alapján</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Limited View reports for all companies (regardless of Finance and Operations security) or only active company</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott: jelentések megtekintése minden vállalatnál (Finance and Operations biztonságtól függetlenül) vagy csak az aktív vállalatnál</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">**</bpt>Support different Chart of accounts and fiscal years<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Támogatás különböző számlatükrökhöz és pénzügyi évekhez<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source><bpt id="p1">**</bpt>report on external data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>jelentés külső adatokról<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source><bpt id="p1">**</bpt>Support consolidations<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Konszolidációk támogatása<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Limited Can report on multiple companies but use accounting currency only</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott: jelentés több vállalatról is, de csak a könyvelési pénznem használatával</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>In addition to the user interface in the original <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace, new KPIs, charts, and financial statements are now available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eredeti <bpt id="p1">**</bpt>Pénzügyi igazgató áttekintés<ept id="p1">**</ept> munkaterületből származó felhasználói felületen kívül új KPI-k, diagramok és pénzügyi kimutatások is elérhetők.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>The following financial statements are available:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő pénzügyi kimutatások állnak rendelkezésre:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Trial balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Balance sheet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mérleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Income statement by region</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredménykimutatás régiónként</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Income statement actual vs. budget</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredménykimutatás – Tényleges és tervezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Income statement with variances</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltéréseket tartalmazó eredménykimutatás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>12-month trend income statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 hónapos trend eredménykimutatás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Expenses three-year trend</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Költségek három éves trendje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Expenses by vendor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítónkénti költségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Sales by customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítés vevőnként</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Edit visuals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vizuális elemek szerkesztése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>In the initial release of <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept>, none of the visuals can be edited.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> kezdeti kiadásában egyetlen vizuális elem sem szerkeszthető.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jövőbeli kiadásokban a megfelelő biztonsággal rendelkező felhasználók képesek lesznek új vizuális elemeket készíteni, meglévő vizuális elemeket másolni és szerkeszteni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bár a jelentéseket tartalmazó .pbix fájlok erőforrásokként érhetők el, nem javasoljuk az alapértelmezett jelentések szerkesztését.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További módosításokra kerül sor az adatmodellen, az alapértelmezett jelentéseken és a pénzügyi kimutatások létrehozásához használt egyéni pénzügyi kimutatás vizuális elemen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért, hogy kihasználhassa az új funkciók és az adatmodell a következő kiadásban megjelenő módosításait, újra meg kell ismételnie az alapértelmezett jelentéseken a Microsoft Power BI Desktop segítségével elvégzett módosításokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Filtering</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szűrés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Users can filter the report by using the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane on the left.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasználók a bal oldali <bpt id="p1">**</bpt>Szűrés<ept id="p1">**</ept> ablaktáblával szűrhetik a jelentést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>This pane is the same pane that is available through Power BI Desktop.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az ablaktábla ugyanaz, mint ami a Power BI Desktop segítségével érhető el.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szűrésnek különböző szintjei vannak, amelyek közül egyesek esetleg nem állnak rendelkezésre attól függően, hogy mit választott ki az oldalon (lapon), illetve hogy használja-e a részletezési funkciókat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source><bpt id="p1">**</bpt>Report-level filters<ept id="p1">**</ept> – These filters are applied to all visuals on all pages (tabs).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jelentésszintű szűrők<ept id="p1">**</ept> – Ezek a szűrők az összes oldalon (lapon) található összes vizuális elemre vonatkoznak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source><bpt id="p1">**</bpt>Page-level filters<ept id="p1">**</ept> – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Oldalszintű szűrők<ept id="p1">**</ept> – Ezek a szűrők az aktív lapon lévő összes vizuális elemre vonatkoznak. Ezeket a szűrőket a jelentésszintű szűrőkön túlmenően alkalmazza a rendszer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source><bpt id="p1">**</bpt>Visual-level filters<ept id="p1">**</ept> – These filters are applied only to the selected visual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vizuális elemszintű szűrők<ept id="p1">**</ept> – Ezek a szűrők csak a kiválasztott vizuális elemre vonatkoznak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>These filters are applied on top of the page level filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezeket a szűrőket az oldalszintű szűrökön túlmenően alkalmazza a rendszer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source><bpt id="p1">**</bpt>Drill-through filter<ept id="p1">**</ept> – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Részletező szűrő<ept id="p1">**</ept> – Ez a szűrő olyan „forrás” vizuális elemből szűr, amelyet a jelenlegi vizuális elemre alkalmazott, amikor a forrás vizuális elemről a jelenlegi vizuális elemre részletezett.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szűrő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>To remove a specific filter value, select the eraser symbol next to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy adott szűrőérték eltávolításához válassza a mellette látható radírszimbólumot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne az X kiválasztásával távolítsa el a szűrőt. Ha kiválasztja az X-et, akkor a szűrt mező törlődik a szűrőlehetőségek közül.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>If you accidently remove a field from the filter, close the workspace, and then reopen it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha véletlenül eltávolít egy mezőt a szűrőből, zárja be a munkaterületet, majd nyissa meg újra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>The default filter settings will be reapplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett szűrőbeállítások újra alkalmazásra kerülnek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>By default, when you first open workspaces, the active legal entity is used as the report-level filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint amikor először megnyitja a munkaterületeket, az aktív jogi személy használatos jelentésszintű szűrőként.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Depending on their security, users might be able to add other legal entities or change the default legal entity that is selected in the filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Biztonságuk függvényében a felhasználók esetleg más jogi személyeket is felvehetnek, vagy megváltoztathatják a szűrőben kiválasztott alapértelmezett jogi személyt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>The <bpt id="p1">**</bpt>Fiscal calendar<ept id="p1">**</ept> filter is required so that the correct calendar is used for the visual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Pénzügyi naptár<ept id="p1">**</ept> szűrőt kell használni, hogy a megfelelő naptár kerüljön felhasználásra a vizuális elemhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>By default, the report-level filter is set to the active legal entity's fiscal calendar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentésszintű szűrő alapértelmezés szerint az aktív jogi személy pénzügyi naptárára van állítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>If you change the filter to a fiscal calendar that has a different start or end date, the beginning balances won't be included.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a szűrőt olyan pénzügyi naptárra állítja át, amelynek más a kezdő vagy befejező dátuma, a kezdeti egyenlegek nem kerülnek be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Therefore, your <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> financial statements won't show the correct balances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emiatt a <bpt id="p1">**</bpt>Mérleg<ept id="p1">**</ept> pénzügyi kimutatások nem a helyes egyenlegeket fogják megjeleníteni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>If you select an additional fiscal calendar in the filter, you will have an additional set of columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha új pénzügyi naptárt választ ki a szűrőben, oszlopok további csoportja áll rendelkezésre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Each additional set of columns shows the amounts for a different fiscal calendar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az oszlopok minden további csoportja egy másik pénzügyi naptár összegeit mutatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>The <bpt id="p1">**</bpt>Posting layer<ept id="p1">**</ept> filter is also required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Feladási réteg<ept id="p1">**</ept> szűrő is szükséges.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>By default, the filter is set to Current.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint a szűrő beállítása az Aktuális.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>You can select additional posting layers in the filter to show the aggregated amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További feladási rétegeket választhat ki a szűrőben az összesített összegek megjelenítéséhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Filters are also available for the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fiscal year<ept id="p2">**</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szűrők érhetők el a <bpt id="p1">**</bpt>Dátum<ept id="p1">**</ept> és <bpt id="p2">**</bpt>Pénzügyi év<ept id="p2">**</ept> mezőkhöz is.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Typically, these filters are applied at the page level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Általában ezeket a szűrőket az oldal szintjén alkalmazzuk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>By default, the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> filter uses a relational date that you can change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint a <bpt id="p1">**</bpt>Dátum<ept id="p1">**</ept> szűrő egy módosítható relációs dátumot használ.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>You can also remove the relational date filter and use the <bpt id="p1">**</bpt>Fiscal year<ept id="p1">**</ept> filter instead.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A relációs dátum szűrő el is távolítható, és helyettesíthető a <bpt id="p1">**</bpt>Pénzügyi év<ept id="p1">**</ept> szűrővel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénznem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>All visuals that report on general ledger data show amounts in the accounting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az általános főkönyvi adatokra vonatkozó összes vizuális elem a könyvelési pénznemben mutatja az összegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Therefore, when you filter on the legal entity, you must be careful to include only legal entities that have the same accounting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért ha a jogi személyre szűr, ügyeljen arra, hogy csak azon jogi személyeket vegye fel, amelyeknél a könyvelési pénznem ugyanaz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Otherwise, you will aggregate data in different currencies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenkező esetben az összegző adatok különböző pénznemekben fognak szerepelni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>All visuals that report on subledger data, such as the <bpt id="p1">**</bpt>Cash flow forecast<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Top 10<ept id="p2">**</ept> visuals, show amounts in the system currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az analitikus adatokra vonatkozó vizuális elemek, például <bpt id="p1">**</bpt>Pénzforgalmi előrejelzés<ept id="p1">**</ept> és <bpt id="p2">**</bpt>A legjobb 10<ept id="p2">**</ept> vizuális elem a rendszer pénznemében mutatja az összegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>The system currency and system exchange rate type are defined on the <bpt id="p1">**</bpt>System parameters<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszer pénzneme és a rendszer árfolyamtípusa a <bpt id="p1">**</bpt>Rendszerparaméterek<ept id="p1">**</ept> oldalon határozhatók meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>The <bpt id="p1">**</bpt>Balance by bank account<ept id="p1">**</ept> visual uses amounts in the bank accounts' currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Bankszámla egyenlege<ept id="p1">**</ept> vizuális elem a bankszámlák pénznemében használja az összegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimenziók</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>The default financial statements don't include any financial dimensions but are focused only on the main account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett pénzügyi kimutatások nem tartalmaznak pénzügyi dimenziót, hanem csak a fő számlára összpontosítanak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Support for financial dimensions will be available in future releases, when the reports become editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi dimenziók támogatása elérhető lesz a jövőbeli kiadásokban, amikor a jelentések szerkeszthetővé válnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Organizations will then be able to filter on financial dimension values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezetek ezután képesek lesznek pénzügyi dimenzióértékekre szűrni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Some financial statements contain dimensions that are based on subledger transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyes pénzügyi kimutatások analitikus tranzakciókon alapuló dimenziókat tartalmaznak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új pénzügyi kimutatások célja, hogy lehetővé tegyék a pénzügyi dimenzióként be nem állított dimenziók szűrését.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például az alapértelmezett Szállítónkénti költségek jelentésben a fő számlán túl is bővíthet, és így az egyenlegeket szállító szerinti bontásban is láthatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>The vendor isn't set up as a financial dimension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szállító nincs beállítva pénzügyi dimenziónak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Instead, the system returns to the originating subledger transaction to find the vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett a rendszer visszanyúl a kiindulási analitikus tranzakcióhoz a szállító megtalálásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>The following dimensions are used on the default reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő dimenziók használatosak az alapértelmezett jelentésekben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>None of these dimensions are financial dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E dimenziók egyike sem pénzügyi dimenzió.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Vendor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállító</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Vendor group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói csoport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevő</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Customer group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevőcsoport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Country/region</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ország/régió</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>State/province</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állam/tartomány</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>City</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Város</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha több szállító vagy vevő tranzakcióit összesíti egy bizonylaton a pénzügyi naplók használatával, az adatok helytelenek lesznek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentések nem tudják meghatározni, hogy melyik szállító vagy vevő kapcsolódik egy adott főkönyvi számlához egy naplóbejegyzésben, mert ezeket az adatokat nem vezetik sehol.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emiatt nem ajánlott több szállítót, vevőt, tárgyi eszközt vagy projektet feltüntetni egy bizonylaton.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Drill on data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leásás adatokhoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Various levels of drilling are available through Power BI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Különböző leásási szintek érhetők el a Power BI segítségével.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Each level has a different name and different functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden szintnek eltérő neve és különböző funkciói vannak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>You can also drill on rows and columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sorokra és oszlopokra is le lehet ásni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>This section discusses the various options by using the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> financial statement as an example and showing how you can drill on the rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szakasz a <bpt id="p1">**</bpt>Főkönyvi kivonat<ept id="p1">**</ept> pénzügyi kimutatást példaként használva mutatja be a különféle lehetőségeket, és megmutatja, hogyan lehet leásni a sorokban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>The same functionality exists for columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugyanez a funkció létezik az oszlopokhoz is.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>You just have to change the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> setting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csak módosítania kell a <bpt id="p1">**</bpt>Leásás célja<ept id="p1">**</ept> beállítást.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>In the following illustration, the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> statement is collapsed to the highest level of the row hierarchy, the main account type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi példában a <bpt id="p1">**</bpt>Főkönyvi kivonat<ept id="p1">**</ept> kimutatás összecsukódik a sorhierarchia legmagasabb szintjére, amely a fő számla típusa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Trial Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>To view the next level of the hierarchy, the main account categories, you can set the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Rows<ept id="p2">**</ept> and then select the <bpt id="p3">**</bpt>Expand<ept id="p3">**</ept> button (the third button after the Drill on field).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a hierarchia következő szintjét, a főszámla-kategóriákat szeretné megtekinteni, állítsa a <bpt id="p1">**</bpt>Leásás célja<ept id="p1">**</ept> mezőt <bpt id="p2">**</bpt>Sorok<ept id="p2">**</ept> értékre, és válassza a <bpt id="p3">**</bpt>Kibontás<ept id="p3">**</ept> gombot (a harmadik gomb a Leásás célja mező után).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>You now see all the main account categories expanded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Most kibontva látja az összes főszámla-kategóriát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a Power BI nem teszi lehetővé, hogy csak egy sort vagy oszlopot bontson ki, de mégis lássa az összes többi sort vagy oszlopot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Trial Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>To expand to the main accounts for all rows, you can again use the <bpt id="p1">**</bpt>Expand<ept id="p1">**</ept> button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fő számlák az összes sorra vonatkozó kibontásához újra használhatja a <bpt id="p1">**</bpt>Kibontás<ept id="p1">**</ept> gombot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>However, to drill down to the main accounts for only one row, first select the <bpt id="p1">**</bpt>Drill down<ept id="p1">**</ept> button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azonban, ha csak egy sornál szeretne leásni a fő számlákig, először válassza a <bpt id="p1">**</bpt>Leásás<ept id="p1">**</ept> gombot (az ablak jobb oldalán levő egyetlen lefelé mutató nyíl), majd válassza ki a sort, amelynél le szeretne ásni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>The following illustration shows the result when the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> row is selected after the <bpt id="p2">**</bpt>Drill down<ept id="p2">**</ept> button is selected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi ábrán az az eredmény látható, ha az <bpt id="p1">**</bpt>Értékesítés<ept id="p1">**</ept> sor van kiválasztva a <bpt id="p2">**</bpt>Leásás<ept id="p2">**</ept> gomb kiválasztása után.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Trial Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>After you drill down on a single row, multiple clicks are required in order to return to the full trial balance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miután egy sornál leásott, több kattintás szükséges ahhoz, hogy visszatérjen a teljes főkönyvi kivonathoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>The <bpt id="p1">**</bpt>Drill up<ept id="p1">**</ept> button (the first button after the <bpt id="p2">**</bpt>Drill<ept id="p2">**</ept> on field) drills up only in the context of the <bpt id="p3">**</bpt>Sales<ept id="p3">**</ept> category, as shown in the following illustration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Felásás<ept id="p1">**</ept> gomb (az első gomb a <bpt id="p2">**</bpt>Leásás<ept id="p2">**</ept> mező után) csak az <bpt id="p3">**</bpt>Értékesítés<ept id="p3">**</ept> kategória környezetében ás felfelé, a következő ábrán látható módon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Trial Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>You can continue to use the <bpt id="p1">**</bpt>Drill up<ept id="p1">**</ept> button to return to the highest level of summarization for the rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folytathatja a <bpt id="p1">**</bpt>Felásás<ept id="p1">**</ept> gomb használatát a sorok legmagasabb szintű összegzéséig.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> field).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Power BI egy olyan gombbal is rendelkezik, amely lehetővé teszi, hogy a hierarchiában a következő szintre lépjen (a második gomb a <bpt id="p1">**</bpt>Leásás célja<ept id="p1">**</ept> mező után).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>The effect of this button differs from the effect of the <bpt id="p1">**</bpt>Expand<ept id="p1">**</ept> button (the third button after the <bpt id="p2">**</bpt>Drill on<ept id="p2">**</ept> field), which is used to expand the hierarchy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennek a gombnak a hatása különbözik a <bpt id="p1">**</bpt>Kibontás<ept id="p1">**</ept> gombétól (a harmadik gomb a <bpt id="p2">**</bpt>Leásás célja<ept id="p2">**</ept> mező után), amely a hierarchia kibontására használatos.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>When you expand the hierarchy, the hierarchy is maintained on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A hierarchiát kibontva a jelentésben megmarad a hierarchia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például, amint korábban bemutattuk, ha a fő számla típusára kibontva továbbra is megjelenik a fő számla típusa a jelentésben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azonban a hierarchiában a következő szintre lépve a jelentés többé nem jeleníti meg a szülőt a hierarchiában, ahogyan az a következő ábrán látható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Trial Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az összegzett egyenlegek mögötti tranzakció részleteinek megtekintéséhez kiválaszthat bizonyos összegeket a Financial and Operations alkalmazásba való visszaásáshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>The drill-back from the financial statements takes you to the Accounting source explorer (ASE), not to the voucher transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatásokból való visszaásással a Könyvelési források böngészőjébe (ASE), kerül, nem pedig a bizonylati ügyletekhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>The ASE doesn't show just the accounting entries in the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ASE nem csak a főkönyvben meglévő könyvelési tételeket mutatja meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Instead, it shows the details of the subledger transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett az analitikus tranzakció részletes adatait mutatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Therefore, you get much more detail about the originating transaction and can use it for analysis.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért sokkal több részletet kap a kiinduló tranzakcióról, és elemzésre is felhasználhatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>For example, you can see who the vendor or customer was, what the customer bought or the vendor sold, and even what project was on the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például láthatja, hogy ki volt a szállító vagy a vevő, mit vásárolt a vevő vagy mit adott el az eladó, és még azt is, hogy milyen a projekt szerepelt a tranzakcióban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>The following filters from the financial statements are sent to the ASE, so that the ASE shows the transactions that are aggregated:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatásokból a következő szűrők elküldésre kerülnek az ASE-nek, hogy az ASE megjeleníthesse az összesített tranzakciókat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Required fields for filtering:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezően kitöltendő mezők szűréshez:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Legal entity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jogi személy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Fiscal calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi naptár</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Év</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Main account ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fő számla azonosítója</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Optional fields for filtering:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opcionálisan kitöltendő mezők szűréshez:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Quarter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Negyedév</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Month</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hónap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Period</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Időszak</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>If you don't expand down far enough on a row, the drill-down doesn't work.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha egy sorban nem bont ki elegendő mélységig, a leásás nem működik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>For example, if you expand down only to the main account category, you can't drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például ha csak a főszámla-kategóriáig bővít, akkor nem lehet leásni az ASE-ig az egyenleg után, mivel a fő számla mezőt kötelező kitölteni az ASE-ben végzett szűréshez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha túlságosan mélyre bővít egy sorban, a pénzügyi kimutatásokra vonatkozó további szűrőket a rendszer nem küldi el az ASE-nek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Therefore, you might see a difference in your numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emiatt eltérő számok jelenhetnek meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't be included as a filter in the ASE.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például ha az országig vagy régióig bővít lefelé a régiónkénti eredménykimutatás pénzügyi kimutatás sorain, az ország vagy régió nem kerül be szűrőként az ASE-be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatási sorokban és oszlopokban mélyebbre le lehet ásni, mint ameddig az ASE jelenleg a szűrést támogatja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Therefore, in some situations, the sum of detailed transactions in the ASE won't match the balance that you're drilling back on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért bizonyos esetekben a ASE-ben megjelenő részletes tranzakciók összege más lesz, mint az az egyenleg, ameddig leásott.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>This functionality will continue to be enhanced in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a funkciót a jövőben továbbfejlesztjük.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Hierarchies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hierarchiák</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>The default financial statements use two hierarchies to drill and expand on the data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett pénzügyi kimutatások két hierarchiát használnak az az adatok kibontásához és a bennük való leásáshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>One hierarchy is for the rows, and the other hierarchy is for the columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyik hierarchia a sorokra vonatkozik, a másik pedig az oszlopokra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Both hierarchies are predefined in the design of the financial statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mindkét hierarchia előre meg van határozva a pénzügyi kimutatás tervezése során.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>For most financial statements, the row hierarchy is <bpt id="p1">**</bpt>Main account type<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Main account categories<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Main account<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A legtöbb pénzügyi kimutatásnál a sor hierarchiája a következő <bpt id="p1">**</bpt>Fő számlatípus<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Főszámla-kategóriák<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Fő számla<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>However, some reports have additional fields, such as Country and Region.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyes jelentéseknél azonban további mezők is vannak, például Ország és Régió.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>The additional nodes of the hierarchy are based on subledger data for each transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A hierarchia további csomópontjai az egyes tranzakciók analitikus adatain alapulnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>For the columns, the hierarchy is focused on the legal entities and the fiscal periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az oszlopok esetében a hierarchia a jogi személyekre és a pénzügyi időszakokra koncentrál.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>For most financial statements, the column hierarchy is <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Fiscal calendar<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Fiscal year<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Quarter<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Period<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A legtöbb pénzügyi kimutatásnál az oszlop hierarchiája a következő: <bpt id="p1">**</bpt>Jogi személy<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Pénzügyi naptár<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Pénzügyi év<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Negyedév<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Időszak<ept id="p5">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Currently, the financial statements don't support the organizational hierarchies, which let you aggregate data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a pénzügyi kimutatások nem támogatják az olyan szervezeti hierarchiákat, amelyek lehetővé teszik az adatok összesítését.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>Data limitations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatkorlátozások</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>The financial statement visuals have a limit on the number of rows that can be shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatási vizuális elemeknél a megjeleníthető sorok száma korlátozott.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Currently, the limit is set to 30,000.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a korlát értéke 30 000.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>If you exceed this limit, the visual will have a warning symbol to notify you about this situation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha meghaladja ezt a határértéket, akkor a vizuális elem figyelmeztető szimbólummal tájékoztatja a helyzetről.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Data limitations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatkorlátozások</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A maximális érték túllépése esetén a pénzügyi kimutatásban megjelenő összegek helytelenek lesznek, mert nem minden sor kerül be a vizuális elembe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Empty rows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üres sorok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Power BI doesn't provide an option to hide and show empty rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI nem támogatja az üres sorok elrejtését és megjelenítését.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>If a row doesn't have any data, the row won't appear in the visual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha egy sor nem tartalmaz adatokat, a sor nem jelenik meg a vizuális elemben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Additional resources for Power BI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További erőforrások a Power BI szolgáltatáshoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>The information in the following resources isn't required in order to enable the embedded reports for the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> workspace in a production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi erőforrásokban található információk nem szükségesek <bpt id="p1">**</bpt>Pénzügyi igazgató áttekintés<ept id="p1">**</ept> vagy <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI jelentéseit szeretné beágyazni a Finance and Operations alkalmazásba.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

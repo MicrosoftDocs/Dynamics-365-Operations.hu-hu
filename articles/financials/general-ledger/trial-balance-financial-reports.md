@@ -1,112 +1,258 @@
----
-title: Főkönyvi kivonat pénzügyi jelentés
-description: Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek.
-author: jcart1106
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: LedgerTrialBalanceListPage
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 12314
-ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
-ms.search.region: Global
-ms.author: jcart
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e8c16724364df4dd62150056299e818470aa63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553691"
----
-# <a name="trial-balance-financial-reports"></a><span data-ttu-id="fcb59-104">Főkönyvi kivonat pénzügyi jelentés</span><span class="sxs-lookup"><span data-stu-id="fcb59-104">Trial balance financial reports</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="fcb59-105">Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be.</span><span class="sxs-lookup"><span data-stu-id="fcb59-105">This article describes the default reports for trial balances.</span></span> <span data-ttu-id="fcb59-106">Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek.</span><span class="sxs-lookup"><span data-stu-id="fcb59-106">It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</span></span> 
-
-<a name="default-trial-balance-reports"></a><span data-ttu-id="fcb59-107">Alapértelmezett főkönyvi kivonat jelentés</span><span class="sxs-lookup"><span data-stu-id="fcb59-107">Default trial balance reports</span></span>
------------------------------
-
-<span data-ttu-id="fcb59-108">A Microsoft Dynamics 365 for Finance and Operations Pénzügyi jelentéskészítése három főkönyvi kivonatot tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="fcb59-108">Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations.</span></span>
-
-| <span data-ttu-id="fcb59-109">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="fcb59-109">Default report</span></span>                                 | <span data-ttu-id="fcb59-110">Mire szolgál?</span><span class="sxs-lookup"><span data-stu-id="fcb59-110">What it does</span></span>                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="fcb59-111">Részletes főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-111">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="fcb59-112">Egyenleginformációkat ad minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.</span><span class="sxs-lookup"><span data-stu-id="fcb59-112">Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.</span></span>                  |
-| <span data-ttu-id="fcb59-113">Összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-113">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="fcb59-114">Egyenleg-adatokat ad az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</span><span class="sxs-lookup"><span data-stu-id="fcb59-114">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.</span></span>                                        |
-| <span data-ttu-id="fcb59-115">Éves összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-115">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="fcb59-116">Az egyenleg-adatokat ad az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</span><span class="sxs-lookup"><span data-stu-id="fcb59-116">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year.</span></span> |
-
-## <a name="building-blocks"></a><span data-ttu-id="fcb59-117">Építőelemek</span><span class="sxs-lookup"><span data-stu-id="fcb59-117">Building blocks</span></span>
-<span data-ttu-id="fcb59-118">A főkönyvi kivonat pénzügyi jelentések a következő építőelemekből állnak.</span><span class="sxs-lookup"><span data-stu-id="fcb59-118">The trial balance financial reports use the following building blocks.</span></span>
-
-| <span data-ttu-id="fcb59-119">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="fcb59-119">Default report</span></span>                                 | <span data-ttu-id="fcb59-120">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="fcb59-120">Row definition</span></span>          | <span data-ttu-id="fcb59-121">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="fcb59-121">Column definition</span></span>                              |
-|------------------------------------------------|-------------------------|------------------------------------------------|
-| <span data-ttu-id="fcb59-122">Részletes főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-122">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="fcb59-123">Főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-123">Trial Balance - Default</span></span> | <span data-ttu-id="fcb59-124">Részletes főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-124">Detailed Trial Balance - Default</span></span>               |
-| <span data-ttu-id="fcb59-125">Összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-125">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="fcb59-126">Főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-126">Trial Balance - Default</span></span> | <span data-ttu-id="fcb59-127">Összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-127">Summary Trial Balance - Default</span></span>                |
-| <span data-ttu-id="fcb59-128">Éves összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-128">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="fcb59-129">Főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-129">Trial Balance - Default</span></span> | <span data-ttu-id="fcb59-130">Éves összegző főkönyvi kivonat – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="fcb59-130">Summary Trial Balance Year Over Year - Default</span></span> |
-
-### <a name="row-definition"></a><span data-ttu-id="fcb59-131">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="fcb59-131">Row definition</span></span>
-
-<span data-ttu-id="fcb59-132">A sordefiníció, Főkönyvi kivonat – Alapértelmezett, egy sort tartalmaz, amely behúzza az összes fő számlát.</span><span class="sxs-lookup"><span data-stu-id="fcb59-132">The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts.</span></span> <span data-ttu-id="fcb59-133">Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne.</span><span class="sxs-lookup"><span data-stu-id="fcb59-133">Therefore, anyone can generate the report without having to make any modifications.</span></span> <span data-ttu-id="fcb59-134">A jelentés megtekintésekor, láshat egy sorhoz, az egyes számlák részleteinek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fcb59-134">When you view the report, you drill into the single row to see details about each account.</span></span> <span data-ttu-id="fcb59-135">Módosíthatja a sordefiníciót, hogy további részleteket tartalmazzon.</span><span class="sxs-lookup"><span data-stu-id="fcb59-135">You can modify the row definition so that it includes more detail.</span></span> <span data-ttu-id="fcb59-136">A főkönyvi kivonat módosítása – Alapértelmezett sordefiníció, ezért tartalmazza az összes számla sorait, kövesse az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="fcb59-136">To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.</span></span>
-
-1.  <span data-ttu-id="fcb59-137">Kattintson a **Szerkesztés** lehetőségre, majd kattintson a **Sorok beszúrása dimenziókból** elemre.</span><span class="sxs-lookup"><span data-stu-id="fcb59-137">Click **Edit**, and then click **Insert Rows from Dimensions**.</span></span> <span data-ttu-id="fcb59-138">A **Sorok beszúrása dimenziókból** parancs segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában.</span><span class="sxs-lookup"><span data-stu-id="fcb59-138">The **Insert Rows from Dimensions** command lets you choose the dimensions that you want to have in your row definition.</span></span> <span data-ttu-id="fcb59-139">Ehhez a sordefinícióhoz a **Fő számlát** fogja használni.</span><span class="sxs-lookup"><span data-stu-id="fcb59-139">For this row definition, you're going to use **Main Account**.</span></span>
-2.  <span data-ttu-id="fcb59-140">Győződjön meg róla, hogy a **Fő számla** tartalmaz minden és-jelet (&), majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="fcb59-140">Make sure that **Main Account** contains all ampersands (&), and then click **OK**.</span></span>
-
-<span data-ttu-id="fcb59-141">A sordefiníció most tartalmazza az alapértelmezett jogi személy minden fő számláját.</span><span class="sxs-lookup"><span data-stu-id="fcb59-141">The row definition now contains all the main accounts for your default legal entity.</span></span>
-
-### <a name="column-definition"></a><span data-ttu-id="fcb59-142">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="fcb59-142">Column definition</span></span>
-
-<span data-ttu-id="fcb59-143">Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ.</span><span class="sxs-lookup"><span data-stu-id="fcb59-143">Each trial balance report uses a different column definition.</span></span> <span data-ttu-id="fcb59-144">Ezek az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különböző szintű részletességre és pénzügyi adatokra.</span><span class="sxs-lookup"><span data-stu-id="fcb59-144">These column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
-
--   <span data-ttu-id="fcb59-145">**Részletes főkönyvi kivonat – Alapértelmezett oszloptípusok:**</span><span class="sxs-lookup"><span data-stu-id="fcb59-145">**Detailed Trial Balance – Default column types:**</span></span>
-    -   <span data-ttu-id="fcb59-146">**DESC** – A leírás a sordefinícióból</span><span class="sxs-lookup"><span data-stu-id="fcb59-146">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="fcb59-147">**ACCT** – Számlakódok</span><span class="sxs-lookup"><span data-stu-id="fcb59-147">**ACCT** – Account codes</span></span>
-    -   <span data-ttu-id="fcb59-148">**ATTR (3)** – Attribútumok:</span><span class="sxs-lookup"><span data-stu-id="fcb59-148">**ATTR (3)** – Attributes:</span></span>
-        -   <span data-ttu-id="fcb59-149">Tranzakció dátuma</span><span class="sxs-lookup"><span data-stu-id="fcb59-149">Transaction Date</span></span>
-        -   <span data-ttu-id="fcb59-150">Bizonylat</span><span class="sxs-lookup"><span data-stu-id="fcb59-150">Voucher</span></span>
-        -   <span data-ttu-id="fcb59-151">Napló leírása</span><span class="sxs-lookup"><span data-stu-id="fcb59-151">Journal Description</span></span>
-    -   <span data-ttu-id="fcb59-152">**FD** – Csak kötelezettségeket tartalmazó pénzügyi adat</span><span class="sxs-lookup"><span data-stu-id="fcb59-152">**FD** – Financial data that contains only debits</span></span>
-    -   <span data-ttu-id="fcb59-153">**FD** – Csak jóváírásokat tartalmazó pénzügyi adat</span><span class="sxs-lookup"><span data-stu-id="fcb59-153">**FD** – Financial data that contains only credits</span></span>
-    -   <span data-ttu-id="fcb59-154">**CALC** – Nettó eltérés</span><span class="sxs-lookup"><span data-stu-id="fcb59-154">**CALC** – The net difference</span></span>
--   <span data-ttu-id="fcb59-155">**Összesítő főkönyvi kivonat – Alapértelmezett oszloptípusok:**</span><span class="sxs-lookup"><span data-stu-id="fcb59-155">**Summary Trial Balance – Default columns types:**</span></span>
-    -   <span data-ttu-id="fcb59-156">**ACCT** – Számlakódok</span><span class="sxs-lookup"><span data-stu-id="fcb59-156">**ACCT** – Account codes</span></span>
-    -   <span data-ttu-id="fcb59-157">**DESC** – A leírás a sordefinícióból</span><span class="sxs-lookup"><span data-stu-id="fcb59-157">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="fcb59-158">**ATTR** – Egy attribútum:</span><span class="sxs-lookup"><span data-stu-id="fcb59-158">**ATTR** – An attribute:</span></span>
-        -   <span data-ttu-id="fcb59-159">Bizonylat</span><span class="sxs-lookup"><span data-stu-id="fcb59-159">Voucher</span></span>
-    -   <span data-ttu-id="fcb59-160">**FD** – A pénzügyi adatok kezdőegyenlege</span><span class="sxs-lookup"><span data-stu-id="fcb59-160">**FD** – The beginning balance financial data</span></span>
-    -   <span data-ttu-id="fcb59-161">**FD** – Csak kötelezettségeket tartalmazó pénzügyi adat</span><span class="sxs-lookup"><span data-stu-id="fcb59-161">**FD** – Financial data that contains only debits</span></span>
-    -   <span data-ttu-id="fcb59-162">**FD** – Csak jóváírásokat tartalmazó pénzügyi adat</span><span class="sxs-lookup"><span data-stu-id="fcb59-162">**FD** – Financial data that contains only credits</span></span>
-    -   <span data-ttu-id="fcb59-163">**CALC** – Nettó eltérés</span><span class="sxs-lookup"><span data-stu-id="fcb59-163">**CALC** – The net difference</span></span>
-    -   <span data-ttu-id="fcb59-164">**CALC** – Záró egyenleg</span><span class="sxs-lookup"><span data-stu-id="fcb59-164">**CALC** – The closing balance</span></span>
--   <span data-ttu-id="fcb59-165">**Éves összegző főkönyvi kivonat – Alapértelmezett:**</span><span class="sxs-lookup"><span data-stu-id="fcb59-165">**Summary Trial Balance Year Over Year – Default:**</span></span>
-    -   <span data-ttu-id="fcb59-166">**ACCT** – Számlakódok</span><span class="sxs-lookup"><span data-stu-id="fcb59-166">**ACCT** – Account codes</span></span>
-    -   <span data-ttu-id="fcb59-167">**DESC** – A leírás a sordefinícióból</span><span class="sxs-lookup"><span data-stu-id="fcb59-167">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="fcb59-168">**ATTR** – Egy attribútum</span><span class="sxs-lookup"><span data-stu-id="fcb59-168">**ATTR** – An attribute</span></span>
-        -   <span data-ttu-id="fcb59-169">Bizonylat</span><span class="sxs-lookup"><span data-stu-id="fcb59-169">Voucher</span></span>
-    -   <span data-ttu-id="fcb59-170">**FD** – A folyó év kezdő egyenleg pénzügyi adata</span><span class="sxs-lookup"><span data-stu-id="fcb59-170">**FD** – The beginning balance financial data for the current year</span></span>
-    -   <span data-ttu-id="fcb59-171">**FD** – A folyó évre csak kötelezettségeket tartalmazó pénzügyi adatok</span><span class="sxs-lookup"><span data-stu-id="fcb59-171">**FD** – Financial data that contains only debits for the current year</span></span>
-    -   <span data-ttu-id="fcb59-172">**FD** – A folyó évre csak jóváírásokat tartalmazó pénzügyi adatok</span><span class="sxs-lookup"><span data-stu-id="fcb59-172">**FD** – Financial data that contains only credits for the current year</span></span>
-    -   <span data-ttu-id="fcb59-173">**CALC** – Nettó eltérés</span><span class="sxs-lookup"><span data-stu-id="fcb59-173">**CALC** – The net difference</span></span>
-    -   <span data-ttu-id="fcb59-174">**CALC** – Záró egyenleg</span><span class="sxs-lookup"><span data-stu-id="fcb59-174">**CALC** – The closing balance</span></span>
-    -   <span data-ttu-id="fcb59-175">**FD** – A előző évre csak kötelezettségeket tartalmazó pénzügyi adatok</span><span class="sxs-lookup"><span data-stu-id="fcb59-175">**FD** – Financial data that contains only debits for the last year</span></span>
-    -   <span data-ttu-id="fcb59-176">**FD** – A előző évre csak jóváírásokat tartalmazó pénzügyi adatok</span><span class="sxs-lookup"><span data-stu-id="fcb59-176">**FD** – Financial data that contains only credits for the last year</span></span>
-
-
-
-<a name="additional-resources"></a><span data-ttu-id="fcb59-177">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="fcb59-177">Additional resources</span></span>
---------
-
-[<span data-ttu-id="fcb59-178">Pénzügyi jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="fcb59-178">Financial reporting</span></span>](financial-reporting-getting-started.md)
-
-[<span data-ttu-id="fcb59-179">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="fcb59-179">View financial reports</span></span>](view-financial-reports.md)
-
-[<span data-ttu-id="fcb59-180">Dynamics Pénzügyi jelentések blog</span><span class="sxs-lookup"><span data-stu-id="fcb59-180">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="trial-balance-financial-reports.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>trial-balance-financial-reports.b5c612.cd500c2880545ccae3cde7e2ead2fc5b83167d32.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>cd500c2880545ccae3cde7e2ead2fc5b83167d32</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\trial-balance-financial-reports.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Trial balance financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat pénzügyi jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This article describes the default reports for trial balances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Trial balance financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat pénzügyi jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This article describes the default reports for trial balances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Default trial balance reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett főkönyvi kivonat jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 for Finance and Operations Pénzügyi jelentéskészítése három főkönyvi kivonatot tartalmaz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>What it does</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mire szolgál?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Detailed Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részletes főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleginformációkat ad minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Summary Trial Balance – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg-adatokat ad az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Summary Trial Balance Year Over Year – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Éves összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyenleg-adatokat ad az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Building blocks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Építőelemek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The trial balance financial reports use the following building blocks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A főkönyvi kivonat pénzügyi jelentések a következő építőelemekből állnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett jelentés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sor definíciója</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oszlopdefiníció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Detailed Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részletes főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Detailed Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részletes főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Summary Trial Balance – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Summary Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Summary Trial Balance Year Over Year – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Éves összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Summary Trial Balance Year Over Year - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Éves összegző főkönyvi kivonat – Alapértelmezett</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sor definíciója</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sordefiníció, Főkönyvi kivonat – Alapértelmezett, egy sort tartalmaz, amely behúzza az összes fő számlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Therefore, anyone can generate the report without having to make any modifications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>When you view the report, you drill into the single row to see details about each account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentés megtekintésekor, láshat egy sorhoz, az egyes számlák részleteinek megtekintéséhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>You can modify the row definition so that it includes more detail.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Módosíthatja a sordefiníciót, hogy további részleteket tartalmazzon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A főkönyvi kivonat módosítása – Alapértelmezett sordefiníció, ezért tartalmazza az összes számla sorait, kövesse az alábbi lépéseket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Insert Rows from Dimensions<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Szerkesztés<ept id="p1">**</ept> lehetőségre, majd kattintson a <bpt id="p2">**</bpt>Sorok beszúrása dimenziókból<ept id="p2">**</ept> elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>The <bpt id="p1">**</bpt>Insert Rows from Dimensions<ept id="p1">**</ept> command lets you choose the dimensions that you want to have in your row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Sorok beszúrása dimenziókból<ept id="p1">**</ept> parancs segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For this row definition, you're going to use <bpt id="p1">**</bpt>Main Account<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehhez a sordefinícióhoz a <bpt id="p1">**</bpt>Fő számlát<ept id="p1">**</ept> fogja használni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Make sure that <bpt id="p1">**</bpt>Main Account<ept id="p1">**</ept> contains all ampersands (&amp;), and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Győződjön meg róla, hogy a <bpt id="p1">**</bpt>Fő számla<ept id="p1">**</ept> tartalmaz minden és-jelet (&amp;), majd kattintson az <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>The row definition now contains all the main accounts for your default legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sordefiníció most tartalmazza az alapértelmezett jogi személy minden fő számláját.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oszlopdefiníció</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Each trial balance report uses a different column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>These column definitions contain different types of columns to provide different levels of detail and financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezek az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különböző szintű részletességre és pénzügyi adatokra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">**</bpt>Detailed Trial Balance – Default column types:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Részletes főkönyvi kivonat – Alapértelmezett oszloptípusok:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – A leírás a sordefinícióból</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Account codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Számlakódok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">**</bpt>ATTR (3)<ept id="p1">**</ept> – Attributes:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ATTR (3)<ept id="p1">**</ept> – Attribútumok:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Transaction Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tranzakció dátuma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Journal Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Napló leírása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only debits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Csak kötelezettségeket tartalmazó pénzügyi adat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only credits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Csak jóváírásokat tartalmazó pénzügyi adat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The net difference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – Nettó eltérés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source><bpt id="p1">**</bpt>Summary Trial Balance – Default columns types:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Összesítő főkönyvi kivonat – Alapértelmezett oszloptípusok:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Account codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Számlakódok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – A leírás a sordefinícióból</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> – An attribute:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> – Egy attribútum:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – The beginning balance financial data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A pénzügyi adatok kezdőegyenlege</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only debits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Csak kötelezettségeket tartalmazó pénzügyi adat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only credits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Csak jóváírásokat tartalmazó pénzügyi adat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The net difference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – Nettó eltérés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The closing balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – Záró egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">**</bpt>Summary Trial Balance Year Over Year – Default:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Éves összegző főkönyvi kivonat – Alapértelmezett:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Account codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ACCT<ept id="p1">**</ept> – Számlakódok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – A leírás a sordefinícióból</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source><bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> – An attribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> – Egy attribútum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – The beginning balance financial data for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A folyó év kezdő egyenleg pénzügyi adata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only debits for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A folyó évre csak kötelezettségeket tartalmazó pénzügyi adatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only credits for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A folyó évre csak jóváírásokat tartalmazó pénzügyi adatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The net difference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – Nettó eltérés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The closing balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – Záró egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only debits for the last year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A előző évre csak kötelezettségeket tartalmazó pénzügyi adatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data that contains only credits for the last year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – A előző évre csak jóváírásokat tartalmazó pénzügyi adatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További erőforrások</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">[</bpt>Financial reporting<ept id="p1">](financial-reporting-getting-started.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Pénzügyi jelentéskészítés<ept id="p1">](financial-reporting-getting-started.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Pénzügyi jelentések megtekintése<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">[</bpt>Dynamics Financial Reporting Blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Dynamics Pénzügyi jelentések blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

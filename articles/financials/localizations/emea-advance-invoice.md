@@ -1,155 +1,603 @@
----
-title: Előlegszámlák Kelet-Európa számára
-description: Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum. Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre. Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.
-author: EvgenyPopovMBS
-manager: AnnBe
-ms.date: 04/10/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: CustParameters
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 272643
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: epopov
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 88893b4eda4ce45e9947a6072d000e8b1e66c98e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537987"
----
-# <a name="advance-invoices-for-eastern-europe"></a><span data-ttu-id="46cf0-105">Előlegszámlák Kelet-Európa számára</span><span class="sxs-lookup"><span data-stu-id="46cf0-105">Advance invoices for Eastern Europe</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="46cf0-106">Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum.</span><span class="sxs-lookup"><span data-stu-id="46cf0-106">An advance invoice is a document that you can create for a customer or vendor.</span></span> <span data-ttu-id="46cf0-107">Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-107">It states the amount that must be prepaid on a sales order.</span></span> <span data-ttu-id="46cf0-108">Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="46cf0-108">This topic provides information about advance invoices for Eastern Europe.</span></span>
-
-<span data-ttu-id="46cf0-109">Az előlegszámlák funkció a következő műveletek végrehajtását teszi lehetővé :</span><span class="sxs-lookup"><span data-stu-id="46cf0-109">Advance invoice functionality lets you perform the following tasks:</span></span>
-
--   <span data-ttu-id="46cf0-110">Előlegszámlák kiállítása vevők számára, és ezen előlegszámlák állapotának követése (**Nyitott**, **Részben fizetve** vagy **Lezárt**).</span><span class="sxs-lookup"><span data-stu-id="46cf0-110">Issue advance invoices to customers, and track the status of those advance invoices (**Open**, **Partially paid**, or **Closed**).</span></span>
--   <span data-ttu-id="46cf0-111">Előzetes számlatranzakciók és általános forgalmi adóval kapcsolatos (áfa-) tranzakciók (csak Lengyelország) feladása.</span><span class="sxs-lookup"><span data-stu-id="46cf0-111">Post advance invoice transactions and value-added tax (VAT) transactions (for Poland only).</span></span>
--   <span data-ttu-id="46cf0-112">Kifizetési naplósorok automatikus létrehozása egy előlegszámla alapján.</span><span class="sxs-lookup"><span data-stu-id="46cf0-112">Generate payment journal lines automatically, based on an advance invoice.</span></span>
--   <span data-ttu-id="46cf0-113">A vevőktől kapott előlegek csatolása előlegszámlákhoz (az előleg feladása előtt vagy után).</span><span class="sxs-lookup"><span data-stu-id="46cf0-113">Link prepayments that are received from customers to advance invoices (either before or after you post the prepayment).</span></span>
--   <span data-ttu-id="46cf0-114">A feladott előlegek áfafeladásának módosítása (például előleg átalakítása kifizetéssé vagy a kifizetés átalakítása előleggé, vagy a feladási dátum, az adó mértéke vagy az összeg módosítása).</span><span class="sxs-lookup"><span data-stu-id="46cf0-114">Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).</span></span>
--   <span data-ttu-id="46cf0-115">Adóbizonylat létrehozása az áfaköteles szállítások esetében (kizárólag Csehország).</span><span class="sxs-lookup"><span data-stu-id="46cf0-115">Create a tax document for the VAT liable delivery (for Czech Republic only).</span></span>
-
-## <a name="advance-invoices-for-poland"></a><span data-ttu-id="46cf0-116">Előlegszámlák Lengyelország számára</span><span class="sxs-lookup"><span data-stu-id="46cf0-116">Advance invoices for Poland</span></span>
-<span data-ttu-id="46cf0-117">Az előlegeket is átvevő lengyel vállalatoknak az előlegről is ki kell állítaniuk számlát a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="46cf0-117">Polish companies that receive prepayments must create an invoice for prepayments for the customer.</span></span> <span data-ttu-id="46cf0-118">Ezt az előlegszámlát a főkönyvben kell feladni, és az áfaadózási célok kötelező dokumentuma.</span><span class="sxs-lookup"><span data-stu-id="46cf0-118">This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes.</span></span> <span data-ttu-id="46cf0-119">Az előlegszámlán kiszámított adót jelenteni kell az adóhatóságnak.</span><span class="sxs-lookup"><span data-stu-id="46cf0-119">The tax that is calculated on the advance invoice must be reported to the tax authority.</span></span> <span data-ttu-id="46cf0-120">Az áruk végleges eladása után az előlegszámlát meg kell adni az értékesítési számlán.</span><span class="sxs-lookup"><span data-stu-id="46cf0-120">When the final sale of goods is performed, the advance invoice should be specified on the sales invoice.</span></span> <span data-ttu-id="46cf0-121">Az értékesítés teljes összegének tartalmaznia kell az előlegeket.</span><span class="sxs-lookup"><span data-stu-id="46cf0-121">The total amount of sales must include prepayments.</span></span> <span data-ttu-id="46cf0-122">Az értékesítési számla feladásakor a program sztornírozza a kiegyenlített előlegszámlákat.</span><span class="sxs-lookup"><span data-stu-id="46cf0-122">When the sales invoice is posted, the settled advance invoice will be reversed.</span></span> <span data-ttu-id="46cf0-123">Az eredeti előlegszámla kiegyenlítése egy előlegszámla sztornírozásával történik.</span><span class="sxs-lookup"><span data-stu-id="46cf0-123">The original advance invoice will be settled with an advance invoice reversal.</span></span>
-
-## <a name="set-up-accounts-receivable-for-advance-invoices"></a><span data-ttu-id="46cf0-124">A Kinnlevőségek előlegszámlákhoz történő beállítása</span><span class="sxs-lookup"><span data-stu-id="46cf0-124">Set up Accounts receivable for advance invoices</span></span>
-<span data-ttu-id="46cf0-125">A **Kinnlevőségek paraméterei** oldal **Frissítések** lapján adja meg a következő paramétereket.</span><span class="sxs-lookup"><span data-stu-id="46cf0-125">On the **Accounts receivable parameters** page, on the **Updates** tab, specify the following parameters.</span></span>
-
-
-|     <span data-ttu-id="46cf0-126">Gyorslap</span><span class="sxs-lookup"><span data-stu-id="46cf0-126">FastTab</span></span>     |             <span data-ttu-id="46cf0-127">Paraméter</span><span class="sxs-lookup"><span data-stu-id="46cf0-127">Parameter</span></span>             |                                                                                                                                                                                           <span data-ttu-id="46cf0-128">Leírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-128">Description</span></span>                                                                                                                                                                                           |
-|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="46cf0-129">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-129">Advance invoice</span></span> |          <span data-ttu-id="46cf0-130">Feladási profil</span><span class="sxs-lookup"><span data-stu-id="46cf0-130">Posting profile</span></span>          | <span data-ttu-id="46cf0-131">Válassza ki az előlegszámlával használandó feladási profilt (csak Lengyelország).</span><span class="sxs-lookup"><span data-stu-id="46cf0-131">Select the posting profile to use with advance invoicing (for Poland only).</span></span> <span data-ttu-id="46cf0-132"><strong>Fontos:</strong> Csehország és Magyarország esetében a program az előlegszámlákat nem könyvelési és adóbizonylatokként kezeli, és nem a főkönyvbe adja fel őket.</span><span class="sxs-lookup"><span data-stu-id="46cf0-132"><strong>Important:</strong> For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger.</span></span> <span data-ttu-id="46cf0-133">Ezért hagyja üresen ezt a mezőt ezen országok esetében, hogy megakadályozza az előlegszámlák főkönyvbe történő feladását.</span><span class="sxs-lookup"><span data-stu-id="46cf0-133">Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger.</span></span> |
-|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <span data-ttu-id="46cf0-134">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-134">Advance invoice</span></span> |                <span data-ttu-id="46cf0-135">Ki</span><span class="sxs-lookup"><span data-stu-id="46cf0-135">Off</span></span>                |                                                                                                                                                                                           <span data-ttu-id="46cf0-136">számla beállítása</span><span class="sxs-lookup"><span data-stu-id="46cf0-136">set account</span></span>                                                                                                                                                                                           |
-| <span data-ttu-id="46cf0-137">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-137">Advance invoice</span></span> |          <span data-ttu-id="46cf0-138">Áfacsoport</span><span class="sxs-lookup"><span data-stu-id="46cf0-138">Sales tax group</span></span>          |                                                                                                                                                      <span data-ttu-id="46cf0-139">Válassza ki, hogy melyik áfacsoportot kell használni, amikor az áfát az előlegszámlázáshoz számítja ki.</span><span class="sxs-lookup"><span data-stu-id="46cf0-139">Select the sales tax group to use when sales tax is calculated for advance invoicing.</span></span>                                                                                                                                                      |
-| <span data-ttu-id="46cf0-140">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-140">Advance invoice</span></span> |      <span data-ttu-id="46cf0-141">Helyesbítőként sztornírozás</span><span class="sxs-lookup"><span data-stu-id="46cf0-141">Reversal as correction</span></span>       |                                                                                                                                                 <span data-ttu-id="46cf0-142">Jelölje be ezt a jelölőnégyzetet, ha az előlegszámla sztornírozását helyesbítésnek kell tekinteni.</span><span class="sxs-lookup"><span data-stu-id="46cf0-142">Select this check box if the reversal of an advance invoice should be considered a correction.</span></span>                                                                                                                                                  |
-| <span data-ttu-id="46cf0-143">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-143">Advance invoice</span></span> |      <span data-ttu-id="46cf0-144">Sztornírozás számlanapon</span><span class="sxs-lookup"><span data-stu-id="46cf0-144">Reverse on invoice date</span></span>      |                                                                                                                                                     <span data-ttu-id="46cf0-145">Ezen jelölőnégyzet bejelölésével sztornírozhatja az előleget a számla feladásának dátumán.</span><span class="sxs-lookup"><span data-stu-id="46cf0-145">Select this check box to reverse the prepayment on the date when the invoice is posted.</span></span>                                                                                                                                                     |
-|     <span data-ttu-id="46cf0-146">Fizetés</span><span class="sxs-lookup"><span data-stu-id="46cf0-146">Payment</span></span>     |     <span data-ttu-id="46cf0-147">Több előlegfizetési dátum</span><span class="sxs-lookup"><span data-stu-id="46cf0-147">Multiple prepayment dates</span></span>     |                                                                                                                                        <span data-ttu-id="46cf0-148">A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.</span><span class="sxs-lookup"><span data-stu-id="46cf0-148">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
-|     <span data-ttu-id="46cf0-149">Fizetés</span><span class="sxs-lookup"><span data-stu-id="46cf0-149">Payment</span></span>     |           <span data-ttu-id="46cf0-150">Dátumeltérés</span><span class="sxs-lookup"><span data-stu-id="46cf0-150">Date mismatch</span></span>           |                                                                                                                                        <span data-ttu-id="46cf0-151">A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.</span><span class="sxs-lookup"><span data-stu-id="46cf0-151">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
-|     <span data-ttu-id="46cf0-152">Fizetés</span><span class="sxs-lookup"><span data-stu-id="46cf0-152">Payment</span></span>     |          <span data-ttu-id="46cf0-153">Összegeltérés</span><span class="sxs-lookup"><span data-stu-id="46cf0-153">Amount mismatch</span></span>          |                                                                                                                                        <span data-ttu-id="46cf0-154">A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.</span><span class="sxs-lookup"><span data-stu-id="46cf0-154">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
-|     <span data-ttu-id="46cf0-155">Fizetés</span><span class="sxs-lookup"><span data-stu-id="46cf0-155">Payment</span></span>     | <span data-ttu-id="46cf0-156">Kapcsolás feladott előlegszámlához</span><span class="sxs-lookup"><span data-stu-id="46cf0-156">Linking to posted advance invoice</span></span> |                                                                                                                                        <span data-ttu-id="46cf0-157">A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.</span><span class="sxs-lookup"><span data-stu-id="46cf0-157">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
-|     <span data-ttu-id="46cf0-158">Fizetés</span><span class="sxs-lookup"><span data-stu-id="46cf0-158">Payment</span></span>     | <span data-ttu-id="46cf0-159">(CZE), (POL) Előleg kezelése</span><span class="sxs-lookup"><span data-stu-id="46cf0-159">(CZE), (POL) Prepayment handling</span></span>  |                                                                                                                                                                                <span data-ttu-id="46cf0-160">Válassza a <strong>Speciális</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="46cf0-160">Select <strong>Advanced</strong>.</span></span>                                                                                                                                                                                |
-
-<span data-ttu-id="46cf0-161">A **Számsorozatok** lapon állítsa be az alábbi hivatkozások számsorozatkódját:</span><span class="sxs-lookup"><span data-stu-id="46cf0-161">On the **Number sequences** tab, set up number sequences for the following references:</span></span>
-
--   <span data-ttu-id="46cf0-162">Adóbizonylat</span><span class="sxs-lookup"><span data-stu-id="46cf0-162">Tax document</span></span>
--   <span data-ttu-id="46cf0-163">Adójóváírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-163">Tax credit memo</span></span>
--   <span data-ttu-id="46cf0-164">Előlegszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-164">Advance invoice</span></span>
--   <span data-ttu-id="46cf0-165">Előlegszámla-jóváírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-165">Advance invoice credit note</span></span>
--   <span data-ttu-id="46cf0-166">Előlegszámla sztornírozása</span><span class="sxs-lookup"><span data-stu-id="46cf0-166">Advance invoice reversal</span></span>
--   <span data-ttu-id="46cf0-167">Előlegszámla bizonylata</span><span class="sxs-lookup"><span data-stu-id="46cf0-167">Advance invoice voucher</span></span>
--   <span data-ttu-id="46cf0-168">Előlegszámla-jóváírás bizonylata</span><span class="sxs-lookup"><span data-stu-id="46cf0-168">Advance invoice credit note voucher</span></span>
--   <span data-ttu-id="46cf0-169">Előlegszámla sztornírozási bizonylata</span><span class="sxs-lookup"><span data-stu-id="46cf0-169">Advance invoice reversal voucher</span></span>
-
-## <a name="create-a-customer-advance-invoice"></a><span data-ttu-id="46cf0-170">Vevői előlegszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="46cf0-170">Create a customer advance invoice</span></span>
-<span data-ttu-id="46cf0-171">Kattintson a **Kinnlevőségek** &gt; **Közös** &gt; **Előlegszámlák** &gt; **Minden előlegszámla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-171">Click **Accounts receivable** &gt; **Common** &gt; **Advance invoices** &gt; **All advance invoices**.</span></span> <span data-ttu-id="46cf0-172">Új előlegszámla létrehozásához a Műveleti ablaktáblán az **Előlegszámla** lapon kattintson az **Előlegszámla** elemre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-172">To create a new advance invoice, on the Action Pane, on the **Advance invoice** tab, click **Advance invoice**.</span></span> <span data-ttu-id="46cf0-173">Adja meg a szükséges adatokat, majd kattintson a **Feladás** elemre az előleszámla feladásához.</span><span class="sxs-lookup"><span data-stu-id="46cf0-173">Enter the required information, and then click **Post** to post the advance invoice.</span></span> <span data-ttu-id="46cf0-174">Az előlegszámla az alábbi állapotokkal rendelkezhet: **Megnyitva**, **Részben fizetve** vagy **Lezárt**.</span><span class="sxs-lookup"><span data-stu-id="46cf0-174">An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**.</span></span> <span data-ttu-id="46cf0-175">Manuálisan módosíthatja a feladott előlegszámla állapotát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-175">You can manually change the status of an advance invoice that has been posted.</span></span> <span data-ttu-id="46cf0-176">Kattintson az **Állapot** lehetőségre, majd az **Előlegszámla állapotának módosítása** lapon az **Új állapot** mezőben válassza ki az előlegszámla új állapotát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-176">Click **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.</span></span> <span data-ttu-id="46cf0-177">**Megjegyzés:** Egy előlegszámla állapota bármikor módosítható.</span><span class="sxs-lookup"><span data-stu-id="46cf0-177">**Note:** You can change the status of an advance invoice at any time.</span></span> <span data-ttu-id="46cf0-178">Zárt előlegszámlákat tranzakciókban nem lehet feldolgozni.</span><span class="sxs-lookup"><span data-stu-id="46cf0-178">You can't process closed advance invoices in transactions.</span></span> <span data-ttu-id="46cf0-179">**Megjegyzés:** Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</span><span class="sxs-lookup"><span data-stu-id="46cf0-179">**Note:** For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span> <span data-ttu-id="46cf0-180">A feladott tranzakciók megtekintéséhez az **Előlegszámla** lapon kattintson a **Bizonylat** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-180">To view transactions that have been posted, on the **Advance invoice** page, click **Voucher**.</span></span>
-
-## <a name="vat-on-advance-invoices"></a><span data-ttu-id="46cf0-181">Előlegszámlák áfája</span><span class="sxs-lookup"><span data-stu-id="46cf0-181">VAT on advance invoices</span></span>
-<span data-ttu-id="46cf0-182">A vállalatoknak kötelező áfát figyelembe venniük a vevőktől kapott előlegekre annak ellenére, hogy az értékesítés még nem történt meg.</span><span class="sxs-lookup"><span data-stu-id="46cf0-182">Companies must record VAT on prepayments from customers, even though the sale hasn't been completed.</span></span> <span data-ttu-id="46cf0-183">Az előleg áfájának feladásához hozzáadhat egy sort, amely tartalmazza előlegszámla áfa-specifikációit.</span><span class="sxs-lookup"><span data-stu-id="46cf0-183">To post VAT from a prepayment, you can add a line that contains specifications of VAT to an advance invoice.</span></span> <span data-ttu-id="46cf0-184">Az előlegszámla több sort tartalmazhat, és a sorok az értékesítési rendelési sorokból vett áfa-specifikációkat tartalmazhatnak.</span><span class="sxs-lookup"><span data-stu-id="46cf0-184">An advance invoice can have several lines, and the lines can contain VAT specifications that are taken from sales order lines.</span></span> <span data-ttu-id="46cf0-185">Ezért az előleg áfáját szigorúan az értékesítési rendelési soroknak megfelelően adhatja fel.</span><span class="sxs-lookup"><span data-stu-id="46cf0-185">Therefore, you can post VAT from a prepayment in strict accordance to sales order lines.</span></span> <span data-ttu-id="46cf0-186">**Megjegyzés:** Az áfa-specifikációk csak akkor másolódnak az előlegszámla soraiba, ha az **Adótípus** mező az **Áfakódok** lapon **Normál áfa** vagy **Csökkentett áfa** értékre van állítva.</span><span class="sxs-lookup"><span data-stu-id="46cf0-186">**Note:** The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**.</span></span> <span data-ttu-id="46cf0-187">Ellenkező esetben a sor úgy kerül rá az előlegszámlára, mintha az áfa összege 0 (nulla) lenne.</span><span class="sxs-lookup"><span data-stu-id="46cf0-187">Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</span></span>
-
-## <a name="link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice"></a><span data-ttu-id="46cf0-188">Előlegszámla csatolása értékesítési rendeléshez vagy szabadszöveges számlához</span><span class="sxs-lookup"><span data-stu-id="46cf0-188">Link an advance invoice to a sales order or a free text invoice</span></span>
-<span data-ttu-id="46cf0-189">Minden egyes előlegszámla egyszerre csak egy értékesítési rendeléshez vagy szabadszöveges számlához csatolható.</span><span class="sxs-lookup"><span data-stu-id="46cf0-189">Each advance invoice can be linked with only one sales order or free text invoice at a time.</span></span> <span data-ttu-id="46cf0-190">Egy meglévő előlegszámlát is hozzárendelhet egy másik értékesítési rendeléshez vagy egy szabadszöveges számlához, feltéve, hogy nem kapcsolódnak előlegek az előlegszámlához.</span><span class="sxs-lookup"><span data-stu-id="46cf0-190">You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.</span></span> <span data-ttu-id="46cf0-191">Előlegszámla értékesítési rendeléshez történő csatolásakor a **Minden előlegszámla** lapon válassza ki az előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-191">To link an advance invoice to a sales order, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="46cf0-192">A Műveleti ablaktáblán kattintson az **Előlegszámla** lehetőségre, majd az **Értékesítési rendelés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-192">On the Action Pane, click **Advance invoice**, and then click **Sales order**.</span></span> <span data-ttu-id="46cf0-193">Válassza ki az előlegszámlához csatolni kívánt értékesítési rendelést, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="46cf0-193">Then select the sales order to link to the advance invoice, and click **OK**.</span></span> <span data-ttu-id="46cf0-194">Előlegszámla szabadszöveget számlához történő csatolásakor a **Minden előlegszámla** lapon válassza ki az előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-194">To link an advance invoice to a free text invoice, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="46cf0-195">A Műveleti ablaktáblán kattintson az **Előlegszámla** lehetőségre, majd a **Szabadszöveges számla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-195">On the Action Pane, click **Advance invoice**, and then click **Free text invoice**.</span></span> <span data-ttu-id="46cf0-196">Válassza ki az előlegszámlához csatolni kívánt szabadszöveges számlát, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="46cf0-196">Then select the free text invoice to link to the advance invoice, and click **OK**.</span></span>
-
-## <a name="create-a-customer-advance-invoice-from-a-sales-order"></a><span data-ttu-id="46cf0-197">Vevői előlegszámla készítése értékesítési rendelésből</span><span class="sxs-lookup"><span data-stu-id="46cf0-197">Create a customer advance invoice from a sales order</span></span>
-<span data-ttu-id="46cf0-198">Hozzon létre értékesítési rendelést, vagy válasszon ki egy létező értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="46cf0-198">Create a sales order, or select an existing sales order.</span></span> <span data-ttu-id="46cf0-199">Kattintson a **Számla** lehetőségre, majd kattintson a **Létrehozás** &gt; **Előlegszámla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-199">Click **Invoice**, and then click **Generate** &gt; **Advance invoice**.</span></span> <span data-ttu-id="46cf0-200">Az **Előlegszámla létrehozása** lapon állítsa be a következő mezőket.</span><span class="sxs-lookup"><span data-stu-id="46cf0-200">On the **Create advance invoice** page, set following fields.</span></span>
-
-| <span data-ttu-id="46cf0-201">Mező</span><span class="sxs-lookup"><span data-stu-id="46cf0-201">Field</span></span>                                           | <span data-ttu-id="46cf0-202">Leírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-202">Description</span></span>                                                                                                                                                                                                                               |
-|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="46cf0-203">Százalék</span><span class="sxs-lookup"><span data-stu-id="46cf0-203">Percent</span></span>                                         | <span data-ttu-id="46cf0-204">Adja meg az értékesítési rendelés előlegének százalékát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-204">Specify the percentage of the prepayment for the sales order.</span></span>                                                                                                                                                                             |
-| <span data-ttu-id="46cf0-205">Ellenszámla</span><span class="sxs-lookup"><span data-stu-id="46cf0-205">Offset account</span></span>                                  | <span data-ttu-id="46cf0-206">Válassza ki az előlegszámlázáshoz használandó alapértelmezett ellenszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-206">Select the default offset account to use with advanced invoicing.</span></span>                                                                                                                                                                         |
-| <span data-ttu-id="46cf0-207">Rendelés frissítése</span><span class="sxs-lookup"><span data-stu-id="46cf0-207">Update order</span></span>                                    | <span data-ttu-id="46cf0-208">Válasszon a következő lehetőségek közül: **Mind**, **Szállítás most**, **Kitárolva**, **Szállítólevél** vagy **Kitárolt mennyiség és nem raktározott termékek**.</span><span class="sxs-lookup"><span data-stu-id="46cf0-208">Select from the following options: **All**, **Deliver now**, **Picked**, **Packing slip**, or **Picked quantity and non-stocked products**.</span></span> <span data-ttu-id="46cf0-209">Az előlegszámla összegét a program a cikkek értékesítési rendelési összegei alapján számítja ki.</span><span class="sxs-lookup"><span data-stu-id="46cf0-209">The advance invoice amount will be calculated based on the Sales order amounts for the items.</span></span> |
-| <span data-ttu-id="46cf0-210">Áfa feladása</span><span class="sxs-lookup"><span data-stu-id="46cf0-210">Post VAT</span></span>                                        | <span data-ttu-id="46cf0-211">Adja meg, hogy fel akarja-e adni az áfát az előzetes számla feladása során.</span><span class="sxs-lookup"><span data-stu-id="46cf0-211">Specify whether VAT should be posted during advance invoice posting.</span></span>                                                                                                                                                                      |
-| <span data-ttu-id="46cf0-212">Áfadátum feladása</span><span class="sxs-lookup"><span data-stu-id="46cf0-212">Post VAT date</span></span>                                   | <span data-ttu-id="46cf0-213">Adja meg az áfa feladásának dátumát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-213">Specify the date for posting VAT.</span></span>                                                                                                                                                                                                         |
-| <span data-ttu-id="46cf0-214">Feladási profil az előlegnapló-bizonylathoz</span><span class="sxs-lookup"><span data-stu-id="46cf0-214">Posting profile with prepayment journal voucher</span></span> | <span data-ttu-id="46cf0-215">Adja meg az előleghez tartozó feladási profilt.</span><span class="sxs-lookup"><span data-stu-id="46cf0-215">Specify the posting profile for the prepayment.</span></span>                                                                                                                                                                                           |
-| <span data-ttu-id="46cf0-216">Adódokumentum létrehozása</span><span class="sxs-lookup"><span data-stu-id="46cf0-216">Create tax document</span></span>                             | <span data-ttu-id="46cf0-217">Adja meg, hogy létrejöjjön-e adóbizonylat.</span><span class="sxs-lookup"><span data-stu-id="46cf0-217">Specify whether a tax document should be created.</span></span>                                                                                                                                                                                         |
-
-> <span data-ttu-id="46cf0-218">[!MEGJEGYZÉS} Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</span><span class="sxs-lookup"><span data-stu-id="46cf0-218">[!NOTE} For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span>
-
-## <a name="create-a-customer-advance-invoice-from-a-free-text-invoice"></a><span data-ttu-id="46cf0-219">Vevői előlegszámla létrehozása szabadszöveges számlából</span><span class="sxs-lookup"><span data-stu-id="46cf0-219">Create a customer advance invoice from a free text invoice</span></span>
-<span data-ttu-id="46cf0-220">Hozzon létre szabadszöveges számlát, vagy válasszon ki egy létező szabadszöveges számlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-220">Create a free text invoice, or select an existing free text invoice.</span></span> <span data-ttu-id="46cf0-221">A **Számla** lapon az **Új** szakaszban kattintson az **Előlegszámla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-221">On **Invoice** tab, in the **New** section, click **Advance invoice**.</span></span> <span data-ttu-id="46cf0-222">Ezt követően létrehozhatja a szabadszöveges számlához kapcsolódó új előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-222">You can then create a new advance invoice that will be linked to the free text invoice.</span></span> <span data-ttu-id="46cf0-223">**Megjegyzés:** Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</span><span class="sxs-lookup"><span data-stu-id="46cf0-223">**Note:** For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span>
-
-## <a name="print-an-advance-invoice"></a><span data-ttu-id="46cf0-224">Előlegszámla nyomtatása</span><span class="sxs-lookup"><span data-stu-id="46cf0-224">Print an advance invoice</span></span>
-<span data-ttu-id="46cf0-225">Előlegszámla nyomtatásához at **Előlegszámla** lapon kattintson a **Nyomtatás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-225">To print an advance invoice, on the **Advance invoice** page, click **Print**.</span></span> <span data-ttu-id="46cf0-226">Lengyelország esetében kinyomtathatja a pénzügyi bizonylat előlegszámla-bizonylatát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-226">For Poland, you can print an advance invoice document of the fiscal document.</span></span> <span data-ttu-id="46cf0-227">Válasszon ki egy beállítást az előlegszámla feladása során.</span><span class="sxs-lookup"><span data-stu-id="46cf0-227">Select an option during advance invoice posting.</span></span> <span data-ttu-id="46cf0-228">Lengyelország esetében az értékesítési számláknak és a szabadszöveges számladokumentumoknak tartalmazniuk kell az elszámolandó előlegszámlával kapcsolatos következő információkat:</span><span class="sxs-lookup"><span data-stu-id="46cf0-228">For Poland, the layout of the sales invoice and free text invoice documents should include the following information about the advance invoice that is settled:</span></span>
-
--   <span data-ttu-id="46cf0-229">Előlegszámla száma</span><span class="sxs-lookup"><span data-stu-id="46cf0-229">Number of the advance invoice</span></span>
--   <span data-ttu-id="46cf0-230">Előlegszámla dátuma</span><span class="sxs-lookup"><span data-stu-id="46cf0-230">Date of the advance invoice</span></span>
--   <span data-ttu-id="46cf0-231">Áfa nélküli összeg, áfa összege, összeg áfával és pénznem</span><span class="sxs-lookup"><span data-stu-id="46cf0-231">Amount without VAT, VAT amount, amount with VAT, and currency</span></span>
--   <span data-ttu-id="46cf0-232">Adó (%)</span><span class="sxs-lookup"><span data-stu-id="46cf0-232">Tax percentage</span></span>
-
-<span data-ttu-id="46cf0-233">Az áfaösszegek összesítésének tartalmaznia kell az **Előlegszámla adója** pontot.</span><span class="sxs-lookup"><span data-stu-id="46cf0-233">The summary of VAT amounts should include **Tax from Advance Invoice**.</span></span> <span data-ttu-id="46cf0-234">Az esedékes összeget csökkenteni kell az előlegszámla összegével.</span><span class="sxs-lookup"><span data-stu-id="46cf0-234">The amount that is due should be reduced by the amount of the advance invoice.</span></span>
-
-## <a name="create-a-payment-proposal-from-an-advance-invoice"></a><span data-ttu-id="46cf0-235">Fizetési javaslat létrehozása előlegszámlából</span><span class="sxs-lookup"><span data-stu-id="46cf0-235">Create a payment proposal from an advance invoice</span></span>
-<span data-ttu-id="46cf0-236">Automatikusan létrehozhat kifizetési naplósorokat egy előlegszámla alapján.</span><span class="sxs-lookup"><span data-stu-id="46cf0-236">You can generate payment journal lines automatically, based on an advance invoice.</span></span> <span data-ttu-id="46cf0-237">Amikor új kifizetési naplót hoz létre, a **Fizetési napló** lapon válassza az **Előlegnapló-bizonylat** lehetőséget, majd kattintson a **Sorok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-237">When you create a new payment journal, on the **Payment journal** page, select the **Prepayment journal voucher** option, and then click **Lines**.</span></span> <span data-ttu-id="46cf0-238">A **Naplóbizonylat** lapon kattinthat a **Kifizetési javaslat** &gt; **Kifizetési javaslat előlegszámlából** lehetőségre egy kifizetési javaslat előlegszámlákból történő létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="46cf0-238">On the **Journal voucher** page, you can click **Payment proposal** &gt; **Payment proposal from advance invoice** to create a payment proposal from advance invoices.</span></span> <span data-ttu-id="46cf0-239">A feladási profil és az áfacsoportok adatai az előlegszámlából származnak.</span><span class="sxs-lookup"><span data-stu-id="46cf0-239">Information such as the posting profile and sales tax groups is taken from the advance invoice.</span></span> <span data-ttu-id="46cf0-240">**Megjegyzés:** Az új előlegfizetések automatikusan az előlegszámlákhoz lesznek kapcsolva, ha az **Előlegek csatolása** és az **Állapot módosítása** beállítások vannak kijelölve a **Fizetési javaslat létrehozása előlegszámlákból** lapon.</span><span class="sxs-lookup"><span data-stu-id="46cf0-240">**Note:** New prepayments will be linked automatically to advance invoices if the **Link prepayments** and **Change status** options are selected on the **Create payment proposal from advance invoices** page.</span></span>
-
-## <a name="link-a-prepayment-to-an-advance-invoice"></a><span data-ttu-id="46cf0-241">Előleg csatolása előlegszámlához</span><span class="sxs-lookup"><span data-stu-id="46cf0-241">Link a prepayment to an advance invoice</span></span>
-<span data-ttu-id="46cf0-242">Ha egy előleget szeretne kapcsolni egy előlegszámlához a kifizetési naplóból, nyissa meg a kifizetési naplót, válassza ki az előleget tartalmazó sort, és kattintson a **Funkciók** &gt; **Csatolás előlegszámlákhoz** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-242">To link a prepayment to an advance invoice from the payment journal, open the payment journal, select the line that has the prepayment, and then click **Functions** &gt; **Link to advance invoices**.</span></span> <span data-ttu-id="46cf0-243">Ha az előleget a **Vevőtranzakciók** lapon levő előlegszámlához szeretné csatolni, kattintson a **Minden vevő** &gt; **Vevő** &gt; **Tranzakciók** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-243">To link a prepayment to an advance invoice from the **Customer transactions** page, click **All customers** &gt; **Customer** &gt; **Transactions**.</span></span> <span data-ttu-id="46cf0-244">Válassza ki a kifizetési naplót, válassza ki az előleget tartalmazó sort, majd kattintson a **Funkciók** &gt; **Csatolás előlegszámlákhoz** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-244">Select the payment journal, select the line that has the prepayment, and then click **Functions** &gt; **Link to advance invoices**.</span></span>
-
-## <a name="link-an-advance-invoice-to-a-prepayment"></a><span data-ttu-id="46cf0-245">Előlegszámla csatolása előleghez</span><span class="sxs-lookup"><span data-stu-id="46cf0-245">Link an advance invoice to a prepayment</span></span>
-<span data-ttu-id="46cf0-246">Előlegszámla előlegsorhoz történő csatolásakor a **Minden előlegszámla** lapon válassza ki az előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-246">To link an advance invoice to a prepayment line, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="46cf0-247">A Műveleti ablaktáblán kattintson az **Előlegszámla** lehetőségre, majd az **Előleg** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-247">On the Action Pane, click **Advance invoice**, and then click **Prepayment**.</span></span> <span data-ttu-id="46cf0-248">Válassza ki az előlegszámlához csatolni kívánt előlegsort, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="46cf0-248">Then select the prepayment line to link to the advance invoice, and click **OK**.</span></span>
-
-## <a name="advance-invoice-credit-note"></a><span data-ttu-id="46cf0-249">Előlegszámla-jóváírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-249">Advance invoice credit note</span></span>
--   <span data-ttu-id="46cf0-250">(POL) Előlegszámla érvénytelenítéséhez létrehozhat egy előlegszámla-jóváírást, és feladhatja azt a főkönyvbe.</span><span class="sxs-lookup"><span data-stu-id="46cf0-250">(POL) To cancel an advance invoice you can create an advance invoice credit note and post it to the general ledger.</span></span>
--   <span data-ttu-id="46cf0-251">A jóváírás létrehozásához létrehozhat egy új előlegszámlát, majd kattintson a **Jóváírás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-251">To create a credit note, you can create a new advance invoice and then click **Credit note**.</span></span> <span data-ttu-id="46cf0-252">Ezután kiválaszthatja az érvénytelenítendő előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-252">You can then select the advance invoice to cancel.</span></span>
--   <span data-ttu-id="46cf0-253">Előlegszámla kiegyenlítéséhez kapcsolódó értékesítésiszámla-jóváírást is létrehozhat.</span><span class="sxs-lookup"><span data-stu-id="46cf0-253">You can also create a credit note of a sales invoice that has advance invoice settlement.</span></span>
--   <span data-ttu-id="46cf0-254">Az előlegszámla-jóváírás elrendezése a korrekció előtti és utáni sorok adatait tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="46cf0-254">The layout of advance invoice credit note invoices contains information about the lines both before and after correction.</span></span>
--   <span data-ttu-id="46cf0-255">(POL) Főkönyvi tranzakciók előlegszámla jóváírásának feladása után jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-255">(POL) General ledger transactions are created after the advance invoice credit note is posted.</span></span>
-
-## <a name="cze-tax-documents"></a><span data-ttu-id="46cf0-256">(CZE) Adóbizonylatok</span><span class="sxs-lookup"><span data-stu-id="46cf0-256">(CZE) Tax documents</span></span>
-<span data-ttu-id="46cf0-257">A Cseh Köztársaság esetében létrehozhat egy olyan adóbizonylatot, amely az áfaköteles szállításra vonatkozó előlegadatokon alapul.</span><span class="sxs-lookup"><span data-stu-id="46cf0-257">For the Czech Republic, you can create a tax document that is based on prepayment information for the VAT liable delivery.</span></span> <span data-ttu-id="46cf0-258">Az előleg lapon létrehozhatja, létrehozhatja és megjelenítheti, valamint létrehozhatja és kinyomtathatja az adóbizonylatot.</span><span class="sxs-lookup"><span data-stu-id="46cf0-258">You can create, create and show, or create and print the tax document from the prepayment page.</span></span> <span data-ttu-id="46cf0-259">Kattintson a **Funkciók** &gt; **Adóbizonylag** elemre, és válasszon a következő lehetőségek közül.</span><span class="sxs-lookup"><span data-stu-id="46cf0-259">Click **Functions** &gt; **Tax document**, and select one of the options.</span></span> <span data-ttu-id="46cf0-260">Az adóbizonylat tartalmazza az áfa részletes adatait, például az áfa típusát és értékét, valamint annak alapját a könyvelési pénznemben és a tranzakció pénznemében.</span><span class="sxs-lookup"><span data-stu-id="46cf0-260">The tax document contains detailed information about the VAT, such as the VAT type, the value, and its basis in the accounting currency and the transaction currency.</span></span>
-
-## <a name="set-up-accounts-payable-for-advance-invoices"></a><span data-ttu-id="46cf0-261">A Kötelezettségek előlegszámlákhoz történő beállítása</span><span class="sxs-lookup"><span data-stu-id="46cf0-261">Set up Accounts payable for advance invoices</span></span>
-<span data-ttu-id="46cf0-262">A **Kötelezettségek paraméterei** lapon a **Számsorozatok** lapon határozza meg az előlegszámlák számsorozatát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-262">On the **Accounts payable parameters** page, on the **Number sequences** tab, specify a number sequence for advance invoices.</span></span>
-
-## <a name="create-a-vendor-advance-invoice"></a><span data-ttu-id="46cf0-263">Szállítói előlegszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="46cf0-263">Create a vendor advance invoice</span></span>
-<span data-ttu-id="46cf0-264">Manuálisan létrehozhat előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-264">You can manually create an advance invoice.</span></span> <span data-ttu-id="46cf0-265">Másik lehetőségként az új előlegszámla egy meglévő beszerzési rendelésen alapulhat.</span><span class="sxs-lookup"><span data-stu-id="46cf0-265">Alternatively, the new advance invoice can be based on an existing purchase order.</span></span>
-
-## <a name="manually-create-a-vendor-advance-invoice"></a><span data-ttu-id="46cf0-266">Szállítói előlegszámla manuális létrehozása</span><span class="sxs-lookup"><span data-stu-id="46cf0-266">Manually create a vendor advance invoice</span></span>
-<span data-ttu-id="46cf0-267">Kattintson a **Kötelezettségek** &gt; **Közös** &gt; **Előlegszámlák** &gt; **Minden előlegszámla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-267">Click **Accounts payable** &gt; **Common** &gt; **Advance invoices** &gt; **All advance invoices**.</span></span> <span data-ttu-id="46cf0-268">Új előlegszámla létrehozásához a Műveleti ablaktáblán az **Előlegszámla** lapon kattintson az **Előlegszámla** elemre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-268">To create a new advance invoice, on the Action Pane, on the **Advance invoice** tab, click **Advance invoice**.</span></span> <span data-ttu-id="46cf0-269">Ezután adja meg a szükséges adatokat, majd kattintson a **Feladás** elemre az előleszámla feladásához.</span><span class="sxs-lookup"><span data-stu-id="46cf0-269">Then enter the required information, and click **Post** to post the advance invoice.</span></span> <span data-ttu-id="46cf0-270">Az előlegszámla az alábbi állapotokkal rendelkezhet: **Megnyitva**, **Részben fizetve** vagy **Lezárt**.</span><span class="sxs-lookup"><span data-stu-id="46cf0-270">An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**.</span></span> <span data-ttu-id="46cf0-271">Manuálisan módosíthatja a feladott előlegszámla állapotát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-271">You can manually change the status of an advance invoice that has been posted.</span></span> <span data-ttu-id="46cf0-272">Kattintson az **Állapot** lehetőségre, majd az **Előlegszámla állapotának módosítása** lapon az **Új állapot** mezőben válassza ki az előlegszámla új állapotát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-272">Click **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.</span></span> <span data-ttu-id="46cf0-273">**Megjegyzés:** Egy előlegszámla állapota bármikor módosítható.</span><span class="sxs-lookup"><span data-stu-id="46cf0-273">**Note:** You can change the status of an advance invoice at any time.</span></span> <span data-ttu-id="46cf0-274">Zárt előlegszámlákat tranzakciókban nem lehet feldolgozni.</span><span class="sxs-lookup"><span data-stu-id="46cf0-274">You can't process closed advance invoices in transactions.</span></span> <span data-ttu-id="46cf0-275">**Megjegyzés:** Az áfa-specifikációk csak akkor másolódnak az előlegszámla soraiba, ha az **Adótípus** mező az **Áfakódok** lapon **Normál áfa** vagy **Csökkentett áfa** értékre van állítva.</span><span class="sxs-lookup"><span data-stu-id="46cf0-275">**Note:** The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**.</span></span> <span data-ttu-id="46cf0-276">Ellenkező esetben a sor úgy kerül rá az előlegszámlára, mintha az áfa összege 0 (nulla) lenne.</span><span class="sxs-lookup"><span data-stu-id="46cf0-276">Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</span></span>
-
-## <a name="link-an-advance-invoice-to-a-purchase-order"></a><span data-ttu-id="46cf0-277">Előlegszámla csatolása beszerzési rendeléshez</span><span class="sxs-lookup"><span data-stu-id="46cf0-277">Link an advance invoice to a purchase order</span></span>
-<span data-ttu-id="46cf0-278">Minden egyes előlegszámla egyszerre csak egy beszerzési rendeléshez csatolható.</span><span class="sxs-lookup"><span data-stu-id="46cf0-278">Each advance invoice can be linked with only one purchase order at a time.</span></span> <span data-ttu-id="46cf0-279">Egy meglévő előlegszámlát is hozzárendelhet egy másik beszerzési rendeléshez, feltéve, hogy nem kapcsolódnak előlegek az előlegszámlához.</span><span class="sxs-lookup"><span data-stu-id="46cf0-279">You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.</span></span> <span data-ttu-id="46cf0-280">Előlegszámla beszerzési rendeléshez történő csatolásakor a **Minden előlegszámla** lapon válassza ki az előlegszámlát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-280">To link an advance invoice to a purchase order, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="46cf0-281">A Műveleti ablaktáblán kattintson az **Előlegszámla** lehetőségre, majd a **Beszerzési rendelés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-281">On the Action Pane, click **Advance invoice**, and then click **Purchase order**.</span></span> <span data-ttu-id="46cf0-282">Válassza ki az előlegszámlához csatolni kívánt beszerzési rendelést, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="46cf0-282">Then select the purchase order to link to the advance invoice, and click **OK**.</span></span>
-
-## <a name="create-a-vendor-advance-invoice-from-a-purchase-order"></a><span data-ttu-id="46cf0-283">Szállítói előlegszámla létrehozása beszerzési rendelés alapján</span><span class="sxs-lookup"><span data-stu-id="46cf0-283">Create a vendor advance invoice from a purchase order</span></span>
-<span data-ttu-id="46cf0-284">Hozzon létre egy beszerzési rendelést, vagy válasszon ki egy meglévő beszerzési rendelést.</span><span class="sxs-lookup"><span data-stu-id="46cf0-284">Create a purchase order, or select an existing purchase order.</span></span> <span data-ttu-id="46cf0-285">Kattintson a **Számla** lehetőségre, majd kattintson a **Létrehozás** &gt; **Előlegszámla** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46cf0-285">Click **Invoice**, and then click **Generate** &gt; **Advance invoice**.</span></span> <span data-ttu-id="46cf0-286">Az **Előlegszámla létrehozása** lapon állítsa be a következő mezőket.</span><span class="sxs-lookup"><span data-stu-id="46cf0-286">On the **Create advance invoice** page, set following fields.</span></span>
-
-| <span data-ttu-id="46cf0-287">Mező</span><span class="sxs-lookup"><span data-stu-id="46cf0-287">Field</span></span>                                           | <span data-ttu-id="46cf0-288">Leírás</span><span class="sxs-lookup"><span data-stu-id="46cf0-288">Description</span></span>                                                                                                              |
-|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="46cf0-289">Százalék</span><span class="sxs-lookup"><span data-stu-id="46cf0-289">Percent</span></span>                                         | <span data-ttu-id="46cf0-290">Adja meg a beszerzési rendelés előlegének százalékát.</span><span class="sxs-lookup"><span data-stu-id="46cf0-290">Specify the percentage of the prepayment for the purchase order.</span></span>                                                         |
-| <span data-ttu-id="46cf0-291">Beszerzés frissítése</span><span class="sxs-lookup"><span data-stu-id="46cf0-291">Update purchase</span></span>                                 | <span data-ttu-id="46cf0-292">A következő lehetőségek közül választhat.</span><span class="sxs-lookup"><span data-stu-id="46cf0-292">Select from the options.</span></span> <span data-ttu-id="46cf0-293">Az előlegszámla összegét a program a cikkek beszerzési rendelési összege alapján számítja ki.</span><span class="sxs-lookup"><span data-stu-id="46cf0-293">The advance invoice amount will be calculated based on the Purchase order amount for the items.</span></span> |
-| <span data-ttu-id="46cf0-294">Feladási profil az előlegnapló-bizonylathoz</span><span class="sxs-lookup"><span data-stu-id="46cf0-294">Posting profile with prepayment journal voucher</span></span> | <span data-ttu-id="46cf0-295">Adja meg az előleghez tartozó feladási profilt.</span><span class="sxs-lookup"><span data-stu-id="46cf0-295">Specify the posting profile for the prepayment.</span></span>                                                                          |
-
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-advance-invoice.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-advance-invoice.f8d309.03129177bca7d1a104d297cff70978c43f0bb9c7.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>03129177bca7d1a104d297cff70978c43f0bb9c7</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-advance-invoice.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Advance invoices for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámlák Kelet-Európa számára</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>An advance invoice is a document that you can create for a customer or vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It states the amount that must be prepaid on a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
+          <source>This topic provides information about advance invoices for Eastern Europe.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Advance invoices for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámlák Kelet-Európa számára</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>An advance invoice is a document that you can create for a customer or vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>It states the amount that must be prepaid on a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>This topic provides information about advance invoices for Eastern Europe.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Advance invoice functionality lets you perform the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámlák funkció a következő műveletek végrehajtását teszi lehetővé :</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Issue advance invoices to customers, and track the status of those advance invoices (<bpt id="p1">**</bpt>Open<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámlák kiállítása vevők számára, és ezen előlegszámlák állapotának követése (<bpt id="p1">**</bpt>Nyitott<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Részben fizetve<ept id="p2">**</ept> vagy <bpt id="p3">**</bpt>Lezárt<ept id="p3">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Post advance invoice transactions and value-added tax (VAT) transactions (for Poland only).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előzetes számlatranzakciók és általános forgalmi adóval kapcsolatos (áfa-) tranzakciók (csak Lengyelország) feladása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Generate payment journal lines automatically, based on an advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kifizetési naplósorok automatikus létrehozása egy előlegszámla alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Link prepayments that are received from customers to advance invoices (either before or after you post the prepayment).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A vevőktől kapott előlegek csatolása előlegszámlákhoz (az előleg feladása előtt vagy után).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladott előlegek áfafeladásának módosítása (például előleg átalakítása kifizetéssé vagy a kifizetés átalakítása előleggé, vagy a feladási dátum, az adó mértéke vagy az összeg módosítása).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Create a tax document for the VAT liable delivery (for Czech Republic only).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóbizonylat létrehozása az áfaköteles szállítások esetében (kizárólag Csehország).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Advance invoices for Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámlák Lengyelország számára</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Polish companies that receive prepayments must create an invoice for prepayments for the customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegeket is átvevő lengyel vállalatoknak az előlegről is ki kell állítaniuk számlát a vevőnek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt az előlegszámlát a főkönyvben kell feladni, és az áfaadózási célok kötelező dokumentuma.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The tax that is calculated on the advance invoice must be reported to the tax authority.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámlán kiszámított adót jelenteni kell az adóhatóságnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>When the final sale of goods is performed, the advance invoice should be specified on the sales invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az áruk végleges eladása után az előlegszámlát meg kell adni az értékesítési számlán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The total amount of sales must include prepayments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az értékesítés teljes összegének tartalmaznia kell az előlegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>When the sales invoice is posted, the settled advance invoice will be reversed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az értékesítési számla feladásakor a program sztornírozza a kiegyenlített előlegszámlákat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The original advance invoice will be settled with an advance invoice reversal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eredeti előlegszámla kiegyenlítése egy előlegszámla sztornírozásával történik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Set up Accounts receivable for advance invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Kinnlevőségek előlegszámlákhoz történő beállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>On the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Updates<ept id="p2">**</ept> tab, specify the following parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Kinnlevőségek paraméterei<ept id="p1">**</ept> oldal <bpt id="p2">**</bpt>Frissítések<ept id="p2">**</ept> lapján adja meg a következő paramétereket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>FastTab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gyorslap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Parameter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paraméter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Posting profile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladási profil</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Select the posting profile to use with advance invoicing (for Poland only).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlával használandó feladási profilt (csak Lengyelország).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Important:<ept id="p1">&lt;/strong&gt;</ept> For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Fontos:<ept id="p1">&lt;/strong&gt;</ept> Csehország és Magyarország esetében a program az előlegszámlákat nem könyvelési és adóbizonylatokként kezeli, és nem a főkönyvbe adja fel őket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért hagyja üresen ezt a mezőt ezen országok esetében, hogy megakadályozza az előlegszámlák főkönyvbe történő feladását.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Off</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>set account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">számla beállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Sales tax group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfacsoport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select the sales tax group to use when sales tax is calculated for advance invoicing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki, hogy melyik áfacsoportot kell használni, amikor az áfát az előlegszámlázáshoz számítja ki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Reversal as correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyesbítőként sztornírozás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Select this check box if the reversal of an advance invoice should be considered a correction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be ezt a jelölőnégyzetet, ha az előlegszámla sztornírozását helyesbítésnek kell tekinteni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Reverse on invoice date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornírozás számlanapon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Select this check box to reverse the prepayment on the date when the invoice is posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezen jelölőnégyzet bejelölésével sztornírozhatja az előleget a számla feladásának dátumán.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Multiple prepayment dates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Több előlegfizetési dátum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő lehetőségek közül választhat: <bpt id="p1">&lt;strong&gt;</bpt>Elfogadás<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Figyelmeztetés<ept id="p2">&lt;/strong&gt;</ept> vagy <bpt id="p3">&lt;strong&gt;</bpt>Hiba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Date mismatch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátumeltérés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő lehetőségek közül választhat: <bpt id="p1">&lt;strong&gt;</bpt>Elfogadás<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Figyelmeztetés<ept id="p2">&lt;/strong&gt;</ept> vagy <bpt id="p3">&lt;strong&gt;</bpt>Hiba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Amount mismatch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összegeltérés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő lehetőségek közül választhat: <bpt id="p1">&lt;strong&gt;</bpt>Elfogadás<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Figyelmeztetés<ept id="p2">&lt;/strong&gt;</ept> vagy <bpt id="p3">&lt;strong&gt;</bpt>Hiba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Linking to posted advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kapcsolás feladott előlegszámlához</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő lehetőségek közül választhat: <bpt id="p1">&lt;strong&gt;</bpt>Elfogadás<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Figyelmeztetés<ept id="p2">&lt;/strong&gt;</ept> vagy <bpt id="p3">&lt;strong&gt;</bpt>Hiba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>(CZE), (POL) Prepayment handling</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZE), (POL) Előleg kezelése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Select <bpt id="p1">&lt;strong&gt;</bpt>Advanced<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza a <bpt id="p1">&lt;strong&gt;</bpt>Speciális<ept id="p1">&lt;/strong&gt;</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, set up number sequences for the following references:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Számsorozatok<ept id="p1">**</ept> lapon állítsa be az alábbi hivatkozások számsorozatkódját:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Tax document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóbizonylat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Tax credit memo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adójóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Advance invoice credit note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla-jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Advance invoice reversal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla sztornírozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Advance invoice voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla bizonylata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Advance invoice credit note voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla-jóváírás bizonylata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Advance invoice reversal voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla sztornírozási bizonylata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Create a customer advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői előlegszámla létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Click <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoices<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All advance invoices<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Kinnlevőségek<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Közös<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Előlegszámlák<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Minden előlegszámla<ept id="p4">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>To create a new advance invoice, on the Action Pane, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Advance invoice<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Új előlegszámla létrehozásához a Műveleti ablaktáblán az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lapon kattintson az <bpt id="p2">**</bpt>Előlegszámla<ept id="p2">**</ept> elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Enter the required information, and then click <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> to post the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a szükséges adatokat, majd kattintson a <bpt id="p1">**</bpt>Feladás<ept id="p1">**</ept> elemre az előleszámla feladásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>An advance invoice can have one of the following statuses: <bpt id="p1">**</bpt>Opened<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla az alábbi állapotokkal rendelkezhet: <bpt id="p1">**</bpt>Megnyitva<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Részben fizetve<ept id="p2">**</ept> vagy <bpt id="p3">**</bpt>Lezárt<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>You can manually change the status of an advance invoice that has been posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuálisan módosíthatja a feladott előlegszámla állapotát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Click <bpt id="p1">**</bpt>Status<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Change the status of an advance invoice<ept id="p2">**</ept> page, in the <bpt id="p3">**</bpt>New status<ept id="p3">**</ept> field, select the new status of the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az <bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept> lehetőségre, majd az <bpt id="p2">**</bpt>Előlegszámla állapotának módosítása<ept id="p2">**</ept> lapon az <bpt id="p3">**</bpt>Új állapot<ept id="p3">**</ept> mezőben válassza ki az előlegszámla új állapotát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can change the status of an advance invoice at any time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Egy előlegszámla állapota bármikor módosítható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>You can't process closed advance invoices in transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárt előlegszámlákat tranzakciókban nem lehet feldolgozni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>To view transactions that have been posted, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Voucher<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladott tranzakciók megtekintéséhez az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lapon kattintson a <bpt id="p2">**</bpt>Bizonylat<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>VAT on advance invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámlák áfája</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Companies must record VAT on prepayments from customers, even though the sale hasn't been completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A vállalatoknak kötelező áfát figyelembe venniük a vevőktől kapott előlegekre annak ellenére, hogy az értékesítés még nem történt meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>To post VAT from a prepayment, you can add a line that contains specifications of VAT to an advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előleg áfájának feladásához hozzáadhat egy sort, amely tartalmazza előlegszámla áfa-specifikációit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>An advance invoice can have several lines, and the lines can contain VAT specifications that are taken from sales order lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla több sort tartalmazhat, és a sorok az értékesítési rendelési sorokból vett áfa-specifikációkat tartalmazhatnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Therefore, you can post VAT from a prepayment in strict accordance to sales order lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért az előleg áfáját szigorúan az értékesítési rendelési soroknak megfelelően adhatja fel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The VAT specifications are copied to the advance invoice lines only if the <bpt id="p2">**</bpt>Type of tax<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>Sales tax codes<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Standard VAT<ept id="p4">**</ept> or <bpt id="p5">**</bpt>Reduced VAT<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Az áfa-specifikációk csak akkor másolódnak az előlegszámla soraiba, ha az <bpt id="p2">**</bpt>Adótípus<ept id="p2">**</ept> mező az <bpt id="p3">**</bpt>Áfakódok<ept id="p3">**</ept> lapon <bpt id="p4">**</bpt>Normál áfa<ept id="p4">**</ept> vagy <bpt id="p5">**</bpt>Csökkentett áfa<ept id="p5">**</ept> értékre van állítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenkező esetben a sor úgy kerül rá az előlegszámlára, mintha az áfa összege 0 (nulla) lenne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Link an advance invoice to a sales order or a free text invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla csatolása értékesítési rendeléshez vagy szabadszöveges számlához</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Each advance invoice can be linked with only one sales order or free text invoice at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden egyes előlegszámla egyszerre csak egy értékesítési rendeléshez vagy szabadszöveges számlához csatolható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy meglévő előlegszámlát is hozzárendelhet egy másik értékesítési rendeléshez vagy egy szabadszöveges számlához, feltéve, hogy nem kapcsolódnak előlegek az előlegszámlához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>To link an advance invoice to a sales order, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla értékesítési rendeléshez történő csatolásakor a <bpt id="p1">**</bpt>Minden előlegszámla<ept id="p1">**</ept> lapon válassza ki az előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Sales order<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Műveleti ablaktáblán kattintson az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lehetőségre, majd az <bpt id="p2">**</bpt>Értékesítési rendelés<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Then select the sales order to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlához csatolni kívánt értékesítési rendelést, és kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>To link an advance invoice to a free text invoice, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla szabadszöveget számlához történő csatolásakor a <bpt id="p1">**</bpt>Minden előlegszámla<ept id="p1">**</ept> lapon válassza ki az előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Free text invoice<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Műveleti ablaktáblán kattintson az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lehetőségre, majd a <bpt id="p2">**</bpt>Szabadszöveges számla<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Then select the free text invoice to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlához csatolni kívánt szabadszöveges számlát, és kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Create a customer advance invoice from a sales order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői előlegszámla készítése értékesítési rendelésből</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Create a sales order, or select an existing sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre értékesítési rendelést, vagy válasszon ki egy létező értékesítési rendelést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Click <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Számla<ept id="p1">**</ept> lehetőségre, majd kattintson a <bpt id="p2">**</bpt>Létrehozás<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Előlegszámla<ept id="p3">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>On the <bpt id="p1">**</bpt>Create advance invoice<ept id="p1">**</ept> page, set following fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">**</bpt>Előlegszámla létrehozása<ept id="p1">**</ept> lapon állítsa be a következő mezőket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mező</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Percent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Százalék</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Specify the percentage of the prepayment for the sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg az értékesítési rendelés előlegének százalékát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Offset account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenszámla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Select the default offset account to use with advanced invoicing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlázáshoz használandó alapértelmezett ellenszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Update order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelés frissítése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Select from the following options: <bpt id="p1">**</bpt>All<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Deliver now<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Picked<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Packing slip<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>Picked quantity and non-stocked products<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon a következő lehetőségek közül: <bpt id="p1">**</bpt>Mind<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Szállítás most<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Kitárolva<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Szállítólevél<ept id="p4">**</ept> vagy <bpt id="p5">**</bpt>Kitárolt mennyiség és nem raktározott termékek<ept id="p5">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>The advance invoice amount will be calculated based on the Sales order amounts for the items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla összegét a program a cikkek értékesítési rendelési összegei alapján számítja ki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Post VAT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfa feladása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Specify whether VAT should be posted during advance invoice posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg, hogy fel akarja-e adni az áfát az előzetes számla feladása során.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Post VAT date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfadátum feladása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Specify the date for posting VAT.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg az áfa feladásának dátumát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Posting profile with prepayment journal voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladási profil az előlegnapló-bizonylathoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Specify the posting profile for the prepayment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg az előleghez tartozó feladási profilt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Create tax document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adódokumentum létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Specify whether a tax document should be created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg, hogy létrejöjjön-e adóbizonylat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>[!NOTE} For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[!MEGJEGYZÉS} Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Create a customer advance invoice from a free text invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői előlegszámla létrehozása szabadszöveges számlából</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Create a free text invoice, or select an existing free text invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre szabadszöveges számlát, vagy válasszon ki egy létező szabadszöveges számlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>On <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>New<ept id="p2">**</ept> section, click <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Számla<ept id="p1">**</ept> lapon az <bpt id="p2">**</bpt>Új<ept id="p2">**</ept> szakaszban kattintson az <bpt id="p3">**</bpt>Előlegszámla<ept id="p3">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>You can then create a new advance invoice that will be linked to the free text invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt követően létrehozhatja a szabadszöveges számlához kapcsolódó új előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Lengyelország esetében előzetes számlatranzakciók jönnek létre, ha a Kinnlevőségek paramétereiben állított be feladási profilt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Print an advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla nyomtatása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>To print an advance invoice, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Print<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla nyomtatásához at <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lapon kattintson a <bpt id="p2">**</bpt>Nyomtatás<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>For Poland, you can print an advance invoice document of the fiscal document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lengyelország esetében kinyomtathatja a pénzügyi bizonylat előlegszámla-bizonylatát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Select an option during advance invoice posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon ki egy beállítást az előlegszámla feladása során.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>For Poland, the layout of the sales invoice and free text invoice documents should include the following information about the advance invoice that is settled:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lengyelország esetében az értékesítési számláknak és a szabadszöveges számladokumentumoknak tartalmazniuk kell az elszámolandó előlegszámlával kapcsolatos következő információkat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Number of the advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla száma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Date of the advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla dátuma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Amount without VAT, VAT amount, amount with VAT, and currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfa nélküli összeg, áfa összege, összeg áfával és pénznem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Tax percentage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó (%)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The summary of VAT amounts should include <bpt id="p1">**</bpt>Tax from Advance Invoice<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az áfaösszegek összesítésének tartalmaznia kell az <bpt id="p1">**</bpt>Előlegszámla adója<ept id="p1">**</ept> pontot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>The amount that is due should be reduced by the amount of the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az esedékes összeget csökkenteni kell az előlegszámla összegével.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Create a payment proposal from an advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési javaslat létrehozása előlegszámlából</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>You can generate payment journal lines automatically, based on an advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automatikusan létrehozhat kifizetési naplósorokat egy előlegszámla alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>When you create a new payment journal, on the <bpt id="p1">**</bpt>Payment journal<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Prepayment journal voucher<ept id="p2">**</ept> option, and then click <bpt id="p3">**</bpt>Lines<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amikor új kifizetési naplót hoz létre, a <bpt id="p1">**</bpt>Fizetési napló<ept id="p1">**</ept> lapon válassza az <bpt id="p2">**</bpt>Előlegnapló-bizonylat<ept id="p2">**</ept> lehetőséget, majd kattintson a <bpt id="p3">**</bpt>Sorok<ept id="p3">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>On the <bpt id="p1">**</bpt>Journal voucher<ept id="p1">**</ept> page, you can click <bpt id="p2">**</bpt>Payment proposal<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Payment proposal from advance invoice<ept id="p3">**</ept> to create a payment proposal from advance invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Naplóbizonylat<ept id="p1">**</ept> lapon kattinthat a <bpt id="p2">**</bpt>Kifizetési javaslat<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Kifizetési javaslat előlegszámlából<ept id="p3">**</ept> lehetőségre egy kifizetési javaslat előlegszámlákból történő létrehozásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Information such as the posting profile and sales tax groups is taken from the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladási profil és az áfacsoportok adatai az előlegszámlából származnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> New prepayments will be linked automatically to advance invoices if the <bpt id="p2">**</bpt>Link prepayments<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Change status<ept id="p3">**</ept> options are selected on the <bpt id="p4">**</bpt>Create payment proposal from advance invoices<ept id="p4">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Az új előlegfizetések automatikusan az előlegszámlákhoz lesznek kapcsolva, ha az <bpt id="p2">**</bpt>Előlegek csatolása<ept id="p2">**</ept> és az <bpt id="p3">**</bpt>Állapot módosítása<ept id="p3">**</ept> beállítások vannak kijelölve a <bpt id="p4">**</bpt>Fizetési javaslat létrehozása előlegszámlákból<ept id="p4">**</ept> lapon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Link a prepayment to an advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előleg csatolása előlegszámlához</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>To link a prepayment to an advance invoice from the payment journal, open the payment journal, select the line that has the prepayment, and then click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Link to advance invoices<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha egy előleget szeretne kapcsolni egy előlegszámlához a kifizetési naplóból, nyissa meg a kifizetési naplót, válassza ki az előleget tartalmazó sort, és kattintson a <bpt id="p1">**</bpt>Funkciók<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Csatolás előlegszámlákhoz<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>To link a prepayment to an advance invoice from the <bpt id="p1">**</bpt>Customer transactions<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>All customers<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Transactions<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha az előleget a <bpt id="p1">**</bpt>Vevőtranzakciók<ept id="p1">**</ept> lapon levő előlegszámlához szeretné csatolni, kattintson a <bpt id="p2">**</bpt>Minden vevő<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Vevő<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Tranzakciók<ept id="p4">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Select the payment journal, select the line that has the prepayment, and then click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Link to advance invoices<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a kifizetési naplót, válassza ki az előleget tartalmazó sort, majd kattintson a <bpt id="p1">**</bpt>Funkciók<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Csatolás előlegszámlákhoz<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Link an advance invoice to a prepayment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla csatolása előleghez</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>To link an advance invoice to a prepayment line, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla előlegsorhoz történő csatolásakor a <bpt id="p1">**</bpt>Minden előlegszámla<ept id="p1">**</ept> lapon válassza ki az előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Prepayment<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Műveleti ablaktáblán kattintson az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lehetőségre, majd az <bpt id="p2">**</bpt>Előleg<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Then select the prepayment line to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlához csatolni kívánt előlegsort, és kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Advance invoice credit note</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla-jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>(POL) To cancel an advance invoice you can create an advance invoice credit note and post it to the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(POL) Előlegszámla érvénytelenítéséhez létrehozhat egy előlegszámla-jóváírást, és feladhatja azt a főkönyvbe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>To create a credit note, you can create a new advance invoice and then click <bpt id="p1">**</bpt>Credit note<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jóváírás létrehozásához létrehozhat egy új előlegszámlát, majd kattintson a <bpt id="p1">**</bpt>Jóváírás<ept id="p1">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>You can then select the advance invoice to cancel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután kiválaszthatja az érvénytelenítendő előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>You can also create a credit note of a sales invoice that has advance invoice settlement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla kiegyenlítéséhez kapcsolódó értékesítésiszámla-jóváírást is létrehozhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>The layout of advance invoice credit note invoices contains information about the lines both before and after correction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla-jóváírás elrendezése a korrekció előtti és utáni sorok adatait tartalmazza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>(POL) General ledger transactions are created after the advance invoice credit note is posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(POL) Főkönyvi tranzakciók előlegszámla jóváírásának feladása után jönnek létre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>(CZE) Tax documents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZE) Adóbizonylatok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>For the Czech Republic, you can create a tax document that is based on prepayment information for the VAT liable delivery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Cseh Köztársaság esetében létrehozhat egy olyan adóbizonylatot, amely az áfaköteles szállításra vonatkozó előlegadatokon alapul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>You can create, create and show, or create and print the tax document from the prepayment page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előleg lapon létrehozhatja, létrehozhatja és megjelenítheti, valamint létrehozhatja és kinyomtathatja az adóbizonylatot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Tax document<ept id="p2">**</ept>, and select one of the options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Funkciók<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Adóbizonylag<ept id="p2">**</ept> elemre, és válasszon a következő lehetőségek közül.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>The tax document contains detailed information about the VAT, such as the VAT type, the value, and its basis in the accounting currency and the transaction currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adóbizonylat tartalmazza az áfa részletes adatait, például az áfa típusát és értékét, valamint annak alapját a könyvelési pénznemben és a tranzakció pénznemében.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Set up Accounts payable for advance invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Kötelezettségek előlegszámlákhoz történő beállítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>On the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Number sequences<ept id="p2">**</ept> tab, specify a number sequence for advance invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Kötelezettségek paraméterei<ept id="p1">**</ept> lapon a <bpt id="p2">**</bpt>Számsorozatok<ept id="p2">**</ept> lapon határozza meg az előlegszámlák számsorozatát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Create a vendor advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói előlegszámla létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>You can manually create an advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuálisan létrehozhat előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Alternatively, the new advance invoice can be based on an existing purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Másik lehetőségként az új előlegszámla egy meglévő beszerzési rendelésen alapulhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Manually create a vendor advance invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói előlegszámla manuális létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Click <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoices<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All advance invoices<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Kötelezettségek<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Közös<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Előlegszámlák<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Minden előlegszámla<ept id="p4">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>To create a new advance invoice, on the Action Pane, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Advance invoice<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Új előlegszámla létrehozásához a Műveleti ablaktáblán az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lapon kattintson az <bpt id="p2">**</bpt>Előlegszámla<ept id="p2">**</ept> elemre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Then enter the required information, and click <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> to post the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután adja meg a szükséges adatokat, majd kattintson a <bpt id="p1">**</bpt>Feladás<ept id="p1">**</ept> elemre az előleszámla feladásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>An advance invoice can have one of the following statuses: <bpt id="p1">**</bpt>Opened<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla az alábbi állapotokkal rendelkezhet: <bpt id="p1">**</bpt>Megnyitva<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Részben fizetve<ept id="p2">**</ept> vagy <bpt id="p3">**</bpt>Lezárt<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>You can manually change the status of an advance invoice that has been posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuálisan módosíthatja a feladott előlegszámla állapotát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Click <bpt id="p1">**</bpt>Status<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Change the status of an advance invoice<ept id="p2">**</ept> page, in the <bpt id="p3">**</bpt>New status<ept id="p3">**</ept> field, select the new status of the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az <bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept> lehetőségre, majd az <bpt id="p2">**</bpt>Előlegszámla állapotának módosítása<ept id="p2">**</ept> lapon az <bpt id="p3">**</bpt>Új állapot<ept id="p3">**</ept> mezőben válassza ki az előlegszámla új állapotát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can change the status of an advance invoice at any time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Egy előlegszámla állapota bármikor módosítható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>You can't process closed advance invoices in transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárt előlegszámlákat tranzakciókban nem lehet feldolgozni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The VAT specifications are copied to the advance invoice lines only if the <bpt id="p2">**</bpt>Type of tax<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>Sales tax codes<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Standard VAT<ept id="p4">**</ept> or <bpt id="p5">**</bpt>Reduced VAT<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés:<ept id="p1">**</ept> Az áfa-specifikációk csak akkor másolódnak az előlegszámla soraiba, ha az <bpt id="p2">**</bpt>Adótípus<ept id="p2">**</ept> mező az <bpt id="p3">**</bpt>Áfakódok<ept id="p3">**</ept> lapon <bpt id="p4">**</bpt>Normál áfa<ept id="p4">**</ept> vagy <bpt id="p5">**</bpt>Csökkentett áfa<ept id="p5">**</ept> értékre van állítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenkező esetben a sor úgy kerül rá az előlegszámlára, mintha az áfa összege 0 (nulla) lenne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Link an advance invoice to a purchase order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla csatolása beszerzési rendeléshez</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Each advance invoice can be linked with only one purchase order at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden egyes előlegszámla egyszerre csak egy beszerzési rendeléshez csatolható.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy meglévő előlegszámlát is hozzárendelhet egy másik beszerzési rendeléshez, feltéve, hogy nem kapcsolódnak előlegek az előlegszámlához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>To link an advance invoice to a purchase order, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előlegszámla beszerzési rendeléshez történő csatolásakor a <bpt id="p1">**</bpt>Minden előlegszámla<ept id="p1">**</ept> lapon válassza ki az előlegszámlát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Purchase order<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Műveleti ablaktáblán kattintson az <bpt id="p1">**</bpt>Előlegszámla<ept id="p1">**</ept> lehetőségre, majd a <bpt id="p2">**</bpt>Beszerzési rendelés<ept id="p2">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Then select the purchase order to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki az előlegszámlához csatolni kívánt beszerzési rendelést, és kattintson az <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> gombra.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Create a vendor advance invoice from a purchase order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói előlegszámla létrehozása beszerzési rendelés alapján</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Create a purchase order, or select an existing purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre egy beszerzési rendelést, vagy válasszon ki egy meglévő beszerzési rendelést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Click <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a <bpt id="p1">**</bpt>Számla<ept id="p1">**</ept> lehetőségre, majd kattintson a <bpt id="p2">**</bpt>Létrehozás<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Előlegszámla<ept id="p3">**</ept> lehetőségre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>On the <bpt id="p1">**</bpt>Create advance invoice<ept id="p1">**</ept> page, set following fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">**</bpt>Előlegszámla létrehozása<ept id="p1">**</ept> lapon állítsa be a következő mezőket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mező</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Percent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Százalék</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Specify the percentage of the prepayment for the purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a beszerzési rendelés előlegének százalékát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Update purchase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzés frissítése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Select from the options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő lehetőségek közül választhat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>The advance invoice amount will be calculated based on the Purchase order amount for the items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előlegszámla összegét a program a cikkek beszerzési rendelési összege alapján számítja ki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Posting profile with prepayment journal voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladási profil az előlegnapló-bizonylathoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Specify the posting profile for the prepayment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg az előleghez tartozó feladási profilt.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,115 +1,219 @@
----
-title: Álláshirdetések feladása külső karrieroldalak felületére az Attractból
-description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 for Talent - Attract alkalmazást használni állások közzétételére külső toborzóoldalakon
-author: pganapmsft
-manager: AnnBe
-ms.date: 03/20/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-talent
-ms.technology: ''
-audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Talent
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: Global
-ms.author: anbichse
-ms.search.validFrom: 2019-03-19
-ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eca599ad189edae29ef2de496196b08799a5e745
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518187"
----
-# <a name="post-jobs-to-external-career-sites-from-attract"></a><span data-ttu-id="c8143-103">Álláshirdetések feladása külső karrieroldalak felületére az Attractból</span><span class="sxs-lookup"><span data-stu-id="c8143-103">Post jobs to external career sites from Attract</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="c8143-104">A nyitott pozíciókat elehető legjobb alkalmas jelölt számára szeretné eljuttatni.</span><span class="sxs-lookup"><span data-stu-id="c8143-104">You want to get your open positions in front of as many qualified candidates as possible.</span></span> <span data-ttu-id="c8143-105">A toborzási oldalak, például a Broadbean segítenek elérni ezt a célt.</span><span class="sxs-lookup"><span data-stu-id="c8143-105">Recruiting sites such as Broadbean help you accomplish this goal.</span></span> <span data-ttu-id="c8143-106">A Microsoft Dynamics 365 Talent: Attract lehetővé teszi, hogy állásokat egyen közzé a Broadbean oldalon, és a Microsoft folyamatosan új ajánlatokat biztosít majd ezen a területen.</span><span class="sxs-lookup"><span data-stu-id="c8143-106">Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.</span></span>
-
-## <a name="post-jobs-to-broadbean"></a><span data-ttu-id="c8143-107">Állások közzététele a Broadbean-en</span><span class="sxs-lookup"><span data-stu-id="c8143-107">Post jobs to Broadbean</span></span>
-
-<span data-ttu-id="c8143-108">Mielőtt állást tehetne közzé a Broadbean-en konfigurálnia kell az Broadbean integrációt.</span><span class="sxs-lookup"><span data-stu-id="c8143-108">Before you can post jobs to Broadbean, you must configure the Broadbean integration.</span></span>
-
-> [!NOTE]
-> - <span data-ttu-id="c8143-109">Állások közzétételéhez külső webhelyeken rendelkeznie kell az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span><span class="sxs-lookup"><span data-stu-id="c8143-109">To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span></span>
-> - <span data-ttu-id="c8143-110">Ez a funkció jelenleg előnézetben van.</span><span class="sxs-lookup"><span data-stu-id="c8143-110">This feature is currently in preview.</span></span> <span data-ttu-id="c8143-111">Ha ki szeretné próbálni, akkor [be kell kapcsolnia az Attract rendszergazdai beállításai között](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span><span class="sxs-lookup"><span data-stu-id="c8143-111">If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span></span>
-
-### <a name="configure-broadbean-integration"></a><span data-ttu-id="c8143-112">Broadbean integráció konfigurálása</span><span class="sxs-lookup"><span data-stu-id="c8143-112">Configure Broadbean integration</span></span>
-
-1. <span data-ttu-id="c8143-113">Jelentkezzen be Attract alkalmazásba rendszergazdaként</span><span class="sxs-lookup"><span data-stu-id="c8143-113">Sign in to Attract as an admin.</span></span>
-2. <span data-ttu-id="c8143-114">Válassza ki a **Beállítások** gombot (fogaskerék-szimbólum) a lap jobb felső sarkában, majd válassza a **Felügyeleti központ** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c8143-114">Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.</span></span>
-3. <span data-ttu-id="c8143-115">A **Feladattábla beállításai** lapon a **Broadbean integráció engedélyezése** szakaszban, kapcsolja be az integrációt.</span><span class="sxs-lookup"><span data-stu-id="c8143-115">On the **Job board settings** tab, in the **Enable Broadbean integration** section, turn on the integration.</span></span>
-4. <span data-ttu-id="c8143-116">Forduljon a Broadbean-hoz, és adja meg az adatokat a **Felhasználónév, Ügyfél-azonosító, Titkosítási Token** elemekhez.</span><span class="sxs-lookup"><span data-stu-id="c8143-116">Contact Broadbean, and enter your information in **Username, Client ID, Encryption Token**.</span></span>
-
-> [!WARNING]
-> <span data-ttu-id="c8143-117">A Broadbean hitelesítő adatai kényes és bizalmas természetűek.</span><span class="sxs-lookup"><span data-stu-id="c8143-117">Your Broadbean credentials are sensitive and confidential.</span></span> <span data-ttu-id="c8143-118">Ezért átgondoltan ossza meg azokat.</span><span class="sxs-lookup"><span data-stu-id="c8143-118">Therefore, store and share them responsibly.</span></span> <span data-ttu-id="c8143-119">Mindenki akinek rendszergazdai szerepköre van az Attract megoldásban megtekintheti ezeket a hitelesítő adatokat.</span><span class="sxs-lookup"><span data-stu-id="c8143-119">Anyone who has an Administrator role in Attract can view these credentials.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="c8143-120">A Microsoft és Attract vesz nem részt ezen értékek létrehozásában és kezelésében.</span><span class="sxs-lookup"><span data-stu-id="c8143-120">Microsoft and Attract aren't involved in creating and maintaining these values.</span></span> <span data-ttu-id="c8143-121">Az Ön felelőssége naprakészen tartani azokat az Attract megoldásban, illetve az, hogy együttműködjön a Broadbeannel, hogy megoldja a hitelesítési adatokkal kapcsolatos esetleges problémákat.</span><span class="sxs-lookup"><span data-stu-id="c8143-121">It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.</span></span>
-
-### <a name="post-a-job-to-broadbean"></a><span data-ttu-id="c8143-122">Állás közzététele a Broadbean-en</span><span class="sxs-lookup"><span data-stu-id="c8143-122">Post a job to Broadbean</span></span>
-
-<span data-ttu-id="c8143-123">Miután a Broadbean be van kapcsolva,a toborzók és a rendszergazdák állásokat tehetnek közzé rajta.</span><span class="sxs-lookup"><span data-stu-id="c8143-123">After Broadbean has been turned on, recruiters and admins can post a job to it.</span></span> <span data-ttu-id="c8143-124">Egy jelentkezési URL-cím szükséges az álláshoz.</span><span class="sxs-lookup"><span data-stu-id="c8143-124">You must have an apply URL for the job.</span></span>
-
-1. <span data-ttu-id="c8143-125">Az Attract megoldásban nyissa meg az állást, amelyet fel szeretné adni, a Broadbean-be.</span><span class="sxs-lookup"><span data-stu-id="c8143-125">In Attract, open the job that you want to post to Broadbean.</span></span>
-2. <span data-ttu-id="c8143-126">A **Feladások** részben válassza a **Feladás most** gombot, amely megfele a Broadbean-nek.</span><span class="sxs-lookup"><span data-stu-id="c8143-126">In the **Postings** section, select the **Post Now** button that corresponds to Broadbean.</span></span>
-3. <span data-ttu-id="c8143-127">Kövesse a Broadbean ablakának utasításait.</span><span class="sxs-lookup"><span data-stu-id="c8143-127">Follow the instructions in the Broadbean window.</span></span>
-
-<span data-ttu-id="c8143-128">Az Attract a következő adatokat továbbítja a Broadbean számára:</span><span class="sxs-lookup"><span data-stu-id="c8143-128">Attract passes the following information to Broadbean:</span></span>
-
-- <span data-ttu-id="c8143-129">Kérésazonosító</span><span class="sxs-lookup"><span data-stu-id="c8143-129">Request ID</span></span>
-- <span data-ttu-id="c8143-130">Beosztás</span><span class="sxs-lookup"><span data-stu-id="c8143-130">Job title</span></span>
-- <span data-ttu-id="c8143-131">Feladat leírása</span><span class="sxs-lookup"><span data-stu-id="c8143-131">Job description</span></span>
-- <span data-ttu-id="c8143-132">Munkavégzés helyszíne</span><span class="sxs-lookup"><span data-stu-id="c8143-132">Job location</span></span>
-- <span data-ttu-id="c8143-133">Jelentkezési URL</span><span class="sxs-lookup"><span data-stu-id="c8143-133">Apply URL</span></span>
-- <span data-ttu-id="c8143-134">Toborzó adatai</span><span class="sxs-lookup"><span data-stu-id="c8143-134">Recruiter information</span></span>
-
-<span data-ttu-id="c8143-135">A feladás sikeres befejezése után a Broadbean-ben a **Feladások** részében Attract állásnak a Broadbean státusza **Feladva**.</span><span class="sxs-lookup"><span data-stu-id="c8143-135">After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.</span></span>
-
-> [!NOTE]
-> - <span data-ttu-id="c8143-136">A Broadbean megköveteli az **Iparág** mezőt.</span><span class="sxs-lookup"><span data-stu-id="c8143-136">Broadbean requires the **Industry** field.</span></span> <span data-ttu-id="c8143-137">Alapértelmezés szerint ez a mező **IT** értékre van beállítva.</span><span class="sxs-lookup"><span data-stu-id="c8143-137">Currently, this field is set to **IT** by default.</span></span> <span data-ttu-id="c8143-138">Az érték módosítható a megfelelő iparágra a Broadbean álláshirdetés ablakában.</span><span class="sxs-lookup"><span data-stu-id="c8143-138">However, you can change the value to the correct industry in the window for Broadbean job posting.</span></span>
-> - <span data-ttu-id="c8143-139">Eltart egy ideig, amíg a Boradbean befejezi az állás közzétételét az összes kiválasztott hirdetőfelületre</span><span class="sxs-lookup"><span data-stu-id="c8143-139">It takes some time for Broadbean to finish posting your job to all the job boards that you selected.</span></span> <span data-ttu-id="c8143-140">Emiatt előfordulhat, hogy csak egy kis késedelemmel végzi el az Attract az állapotfrissítés t az álláshoz.</span><span class="sxs-lookup"><span data-stu-id="c8143-140">Therefore, there might be a slight delay before Attract provides a status update for the job.</span></span>
-
-### <a name="view-a-broadbean-job-posting"></a><span data-ttu-id="c8143-141">Egy Broadbean álláshirdetés megtekintése</span><span class="sxs-lookup"><span data-stu-id="c8143-141">View a Broadbean job posting</span></span>
-
-<span data-ttu-id="c8143-142">Miután Broadbean-ben közzétesz egy állást az, Attractból is megtekintheti.</span><span class="sxs-lookup"><span data-stu-id="c8143-142">After you post a job to Broadbean, you can view it from Attract.</span></span>
-
-1. <span data-ttu-id="c8143-143">Az Attract megoldásban nyissa meg az állást, amelyet meg szeretne tekinteni a Broadbean-ben.</span><span class="sxs-lookup"><span data-stu-id="c8143-143">In Attract, open the job that you want to view on Broadbean.</span></span>
-2. <span data-ttu-id="c8143-144">A **feladások** szakaszban,válassz a három pont (**...**) gombot, amely megfelel a Broadbean-nek, és válassza **Megtekintés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c8143-144">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
-
-<span data-ttu-id="c8143-145">A Broadbean álláshirdetés egy új ablakban jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="c8143-145">The Broadbean job posting appears in a new window.</span></span>
-
-### <a name="update-a-broadbean-job-posting"></a><span data-ttu-id="c8143-146">Egy Broadbean álláshirdetés frissítése</span><span class="sxs-lookup"><span data-stu-id="c8143-146">Update a Broadbean job posting</span></span>
-
-<span data-ttu-id="c8143-147">Kétféle módon frissíthet egy Broadbean álláshirdetést.</span><span class="sxs-lookup"><span data-stu-id="c8143-147">You can update a Broadbean job posting in two ways.</span></span>
-
-1. <span data-ttu-id="c8143-148">Az Attract megoldásban nyissa meg az állást, amelyet frissíteni szeretne.</span><span class="sxs-lookup"><span data-stu-id="c8143-148">In Attract, open the job that you want to update.</span></span>
-2. <span data-ttu-id="c8143-149">A **Feladások** részben válassza a **Feladás frissítése** gombot, amely megfele a Broadbean-nek.</span><span class="sxs-lookup"><span data-stu-id="c8143-149">In the **Postings** section, select the **Update Post** button that corresponds to Broadbean.</span></span>
-3. <span data-ttu-id="c8143-150">Szerkessze a feladást a Broadbean ablakában.</span><span class="sxs-lookup"><span data-stu-id="c8143-150">Edit the posting in the Broadbean window.</span></span>
-
-<span data-ttu-id="c8143-151">– vagy –</span><span class="sxs-lookup"><span data-stu-id="c8143-151">–or–</span></span>
-
-1. <span data-ttu-id="c8143-152">Az Attract megoldásban nyissa meg az állást, amelyet meg szeretne tekinteni a Broadbean-ben.</span><span class="sxs-lookup"><span data-stu-id="c8143-152">In Attract, open the job that you want to view on Broadbean.</span></span>
-2. <span data-ttu-id="c8143-153">A **feladások** szakaszban,válassz a három pont (**...**) gombot, amely megfelel a Broadbean-nek, és válassza **Megtekintés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c8143-153">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
-3. <span data-ttu-id="c8143-154">Broadbean ablakában szerkesztheti az állás adatait, és ezután újraküldheti az állást.</span><span class="sxs-lookup"><span data-stu-id="c8143-154">In the Broadbean window, edit the job details, and then repost the job.</span></span> <span data-ttu-id="c8143-155">Az állás részletei az Attract megoldásban nem változnak.</span><span class="sxs-lookup"><span data-stu-id="c8143-155">The job details in Attract aren't changed.</span></span>
-
-### <a name="remove-a-broadbean-job-posting"></a><span data-ttu-id="c8143-156">Egy Broadbean álláshirdetés eltávolítása</span><span class="sxs-lookup"><span data-stu-id="c8143-156">Remove a Broadbean job posting</span></span>
-
-<span data-ttu-id="c8143-157">A Broadbean-ből igény esetén eltávolíthatja az álláshirdetést.</span><span class="sxs-lookup"><span data-stu-id="c8143-157">You can remove a job posting from Broadbean as you require.</span></span>
-
-1. <span data-ttu-id="c8143-158">Az Attract megoldásban nyissa meg az állást, amelyet el szeretne távolítani.</span><span class="sxs-lookup"><span data-stu-id="c8143-158">In Attract, open the job that you want to remove.</span></span>
-2. <span data-ttu-id="c8143-159">A **Feladások** szakaszban,válassza a három pont (**...**) gombot, amely megfelel a Broadbean-nek, és válassza **Közzététel eltávolítása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c8143-159">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **Remove Post**.</span></span>
-
-<span data-ttu-id="c8143-160">Miután a Broadbean eltávolítja az állást Broadbean elemhez az Attract megoldásban megjelenik egy **Feladás most** gomb.</span><span class="sxs-lookup"><span data-stu-id="c8143-160">After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button.</span></span> <span data-ttu-id="c8143-161">Ez a gomb jelzi, hogy az állás törölve lett, és újra fel lehet adni.</span><span class="sxs-lookup"><span data-stu-id="c8143-161">The presence of this button indicates that the job has been removed and can be posted again.</span></span>
-
-### <a name="troubleshoot-the-broadbean-integration"></a><span data-ttu-id="c8143-162">Broadbean-integráció – hibaelhárítás</span><span class="sxs-lookup"><span data-stu-id="c8143-162">Troubleshoot the Broadbean integration</span></span>
-
-<span data-ttu-id="c8143-163">Ha probléma merül fel a feladással a Broadbean-be, próbálja meg ezeket a lépéseket.</span><span class="sxs-lookup"><span data-stu-id="c8143-163">If you're having trouble posting a job to Broadbean, try these steps.</span></span>
-
-1. <span data-ttu-id="c8143-164">Győződjön meg róla, hogy az Attract megoldásban megadott Broadbean hitelesítő adatok érvényesek és helyesek.</span><span class="sxs-lookup"><span data-stu-id="c8143-164">Verify that the Broadbean credentials that you entered in Attract are valid and correct.</span></span>
-2. <span data-ttu-id="c8143-165">Ha a hitelesítő adatok érvényesek és helyesek forduljon a [Broadbean támogatáshoz](https://www.broadbean.com/resources/support/).</span><span class="sxs-lookup"><span data-stu-id="c8143-165">If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).</span></span>
-3. <span data-ttu-id="c8143-166">Ha a probléma továbbra is fennáll, forduljon [Microsoft támogatáshoz](./talent-support.md).</span><span class="sxs-lookup"><span data-stu-id="c8143-166">If the issue persists, contact [Microsoft support](./talent-support.md).</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="posting-jobs-external.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>posting-jobs-external.8aa4da.9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>cadce85ca3004d53caf6bc49147a524c1bfd421f</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\talent\posting-jobs-external.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Post jobs to external career sites from Attract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Álláshirdetések feladása külső karrieroldalak felületére az Attractból</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör bemutatja, hogyan lehet a Dynamics 365 for Talent - Attract alkalmazást használni állások közzétételére külső toborzóoldalakon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Post jobs to external career sites from Attract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Álláshirdetések feladása külső karrieroldalak felületére az Attractból</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>You want to get your open positions in front of as many qualified candidates as possible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A nyitott pozíciókat elehető legjobb alkalmas jelölt számára szeretné eljuttatni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Recruiting sites such as Broadbean help you accomplish this goal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A toborzási oldalak, például a Broadbean segítenek elérni ezt a célt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 Talent: Attract lehetővé teszi, hogy állásokat egyen közzé a Broadbean oldalon, és a Microsoft folyamatosan új ajánlatokat biztosít majd ezen a területen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Post jobs to Broadbean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állások közzététele a Broadbean-en</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Before you can post jobs to Broadbean, you must configure the Broadbean integration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mielőtt állást tehetne közzé a Broadbean-en konfigurálnia kell az Broadbean integrációt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>To post jobs to external sites, you must have the <bpt id="p1">[</bpt>Comprehensive hiring add-on<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring)</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Állások közzétételéhez külső webhelyeken rendelkeznie kell az <bpt id="p1">[</bpt>Átfogó felvételi bővítménnyel<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>To post jobs to Broadbean through Attract, you must have a Broadbean subscription.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Az állásoknak a Broadbean felületére az Attract szolgáltatáson keresztül történő feladásához Broadbean előfizetés szükséges.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>This feature is currently in preview.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ez a funkció jelenleg előnézetben van.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>If you want to try it, you must <bpt id="p1">[</bpt>turn it on in the Attract admin settings<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature)</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ha ki szeretné próbálni, akkor <bpt id="p1">[</bpt>be kell kapcsolnia az Attract rendszergazdai beállításai között<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Configure Broadbean integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Broadbean integráció konfigurálása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Sign in to Attract as an admin.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be Attract alkalmazásba rendszergazdaként</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Select the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> button (the gear symbol) in the upper-right corner of the page, and then select <bpt id="p2">**</bpt>Admin center<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Beállítások<ept id="p1">**</ept> gombot (fogaskerék-szimbólum) a lap jobb felső sarkában, majd válassza a <bpt id="p2">**</bpt>Felügyeleti központ<ept id="p2">**</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>On the <bpt id="p1">**</bpt>Job board settings<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Enable Broadbean integration<ept id="p2">**</ept> section, turn on the integration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Feladattábla beállításai<ept id="p1">**</ept> lapon a <bpt id="p2">**</bpt>Broadbean integráció engedélyezése<ept id="p2">**</ept> szakaszban, kapcsolja be az integrációt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Contact Broadbean, and enter your information in <bpt id="p1">**</bpt>Username, Client ID, Encryption Token<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forduljon a Broadbean-hoz, és adja meg az adatokat a <bpt id="p1">**</bpt>Felhasználónév, Ügyfél-azonosító, Titkosítási Token<ept id="p1">**</ept> elemekhez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Your Broadbean credentials are sensitive and confidential.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Broadbean hitelesítő adatai kényes és bizalmas természetűek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Therefore, store and share them responsibly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért átgondoltan ossza meg azokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Anyone who has an Administrator role in Attract can view these credentials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mindenki akinek rendszergazdai szerepköre van az Attract megoldásban megtekintheti ezeket a hitelesítő adatokat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Microsoft and Attract aren't involved in creating and maintaining these values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft és Attract vesz nem részt ezen értékek létrehozásában és kezelésében.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Ön felelőssége naprakészen tartani azokat az Attract megoldásban, illetve az, hogy együttműködjön a Broadbeannel, hogy megoldja a hitelesítési adatokkal kapcsolatos esetleges problémákat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Post a job to Broadbean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állás közzététele a Broadbean-en</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>After Broadbean has been turned on, recruiters and admins can post a job to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miután a Broadbean be van kapcsolva,a toborzók és a rendszergazdák állásokat tehetnek közzé rajta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>You must have an apply URL for the job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy jelentkezési URL-cím szükséges az álláshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>In Attract, open the job that you want to post to Broadbean.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract megoldásban nyissa meg az állást, amelyet fel szeretné adni, a Broadbean-be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>In the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section, select the <bpt id="p2">**</bpt>Post Now<ept id="p2">**</ept> button that corresponds to Broadbean.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Feladások<ept id="p1">**</ept> részben válassza a <bpt id="p2">**</bpt>Feladás most<ept id="p2">**</ept> gombot, amely megfele a Broadbean-nek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Follow the instructions in the Broadbean window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kövesse a Broadbean ablakának utasításait.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Attract passes the following information to Broadbean:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract a következő adatokat továbbítja a Broadbean számára:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Request ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kérésazonosító</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Job title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beosztás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Job description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladat leírása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Job location</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkavégzés helyszíne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Apply URL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezési URL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Recruiter information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toborzó adatai</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>After Broadbean successfully completes the posting, the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section of the job in Attract shows the Broadbean status as <bpt id="p2">**</bpt>Posted<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladás sikeres befejezése után a Broadbean-ben a <bpt id="p1">**</bpt>Feladások<ept id="p1">**</ept> részében Attract állásnak a Broadbean státusza <bpt id="p2">**</bpt>Feladva<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Broadbean requires the <bpt id="p1">**</bpt>Industry<ept id="p1">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Broadbean megköveteli az <bpt id="p1">**</bpt>Iparág<ept id="p1">**</ept> mezőt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Currently, this field is set to <bpt id="p1">**</bpt>IT<ept id="p1">**</ept> by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint ez a mező <bpt id="p1">**</bpt>IT<ept id="p1">**</ept> értékre van beállítva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>However, you can change the value to the correct industry in the window for Broadbean job posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az érték módosítható a megfelelő iparágra a Broadbean álláshirdetés ablakában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>It takes some time for Broadbean to finish posting your job to all the job boards that you selected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltart egy ideig, amíg a Boradbean befejezi az állás közzétételét az összes kiválasztott hirdetőfelületre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Therefore, there might be a slight delay before Attract provides a status update for the job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emiatt előfordulhat, hogy csak egy kis késedelemmel végzi el az Attract az állapotfrissítés t az álláshoz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>View a Broadbean job posting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy Broadbean álláshirdetés megtekintése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>After you post a job to Broadbean, you can view it from Attract.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miután Broadbean-ben közzétesz egy állást az, Attractból is megtekintheti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In Attract, open the job that you want to view on Broadbean.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract megoldásban nyissa meg az állást, amelyet meg szeretne tekinteni a Broadbean-ben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section, select the ellipsis button (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) that corresponds to Broadbean, and then select <bpt id="p3">**</bpt>View<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>feladások<ept id="p1">**</ept> szakaszban,válassz a három pont (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) gombot, amely megfelel a Broadbean-nek, és válassza <bpt id="p3">**</bpt>Megtekintés<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>The Broadbean job posting appears in a new window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Broadbean álláshirdetés egy új ablakban jelenik meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Update a Broadbean job posting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy Broadbean álláshirdetés frissítése</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>You can update a Broadbean job posting in two ways.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kétféle módon frissíthet egy Broadbean álláshirdetést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In Attract, open the job that you want to update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract megoldásban nyissa meg az állást, amelyet frissíteni szeretne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section, select the <bpt id="p2">**</bpt>Update Post<ept id="p2">**</ept> button that corresponds to Broadbean.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Feladások<ept id="p1">**</ept> részben válassza a <bpt id="p2">**</bpt>Feladás frissítése<ept id="p2">**</ept> gombot, amely megfele a Broadbean-nek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Edit the posting in the Broadbean window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerkessze a feladást a Broadbean ablakában.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>–or–</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">– vagy –</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>In Attract, open the job that you want to view on Broadbean.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract megoldásban nyissa meg az állást, amelyet meg szeretne tekinteni a Broadbean-ben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section, select the ellipsis button (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) that corresponds to Broadbean, and then select <bpt id="p3">**</bpt>View<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>feladások<ept id="p1">**</ept> szakaszban,válassz a három pont (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) gombot, amely megfelel a Broadbean-nek, és válassza <bpt id="p3">**</bpt>Megtekintés<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>In the Broadbean window, edit the job details, and then repost the job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Broadbean ablakában szerkesztheti az állás adatait, és ezután újraküldheti az állást.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>The job details in Attract aren't changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az állás részletei az Attract megoldásban nem változnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Remove a Broadbean job posting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy Broadbean álláshirdetés eltávolítása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>You can remove a job posting from Broadbean as you require.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Broadbean-ből igény esetén eltávolíthatja az álláshirdetést.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>In Attract, open the job that you want to remove.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Attract megoldásban nyissa meg az állást, amelyet el szeretne távolítani.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the <bpt id="p1">**</bpt>Postings<ept id="p1">**</ept> section, select the ellipsis button (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) that corresponds to Broadbean, and then select <bpt id="p3">**</bpt>Remove Post<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Feladások<ept id="p1">**</ept> szakaszban,válassza a három pont (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) gombot, amely megfelel a Broadbean-nek, és válassza <bpt id="p3">**</bpt>Közzététel eltávolítása<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>After Broadbean removes the job, the Broadbean item in Attract has a <bpt id="p1">**</bpt>Post Now<ept id="p1">**</ept> button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miután a Broadbean eltávolítja az állást Broadbean elemhez az Attract megoldásban megjelenik egy <bpt id="p1">**</bpt>Feladás most<ept id="p1">**</ept> gomb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>The presence of this button indicates that the job has been removed and can be posted again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a gomb jelzi, hogy az állás törölve lett, és újra fel lehet adni.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Troubleshoot the Broadbean integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Broadbean-integráció – hibaelhárítás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>If you're having trouble posting a job to Broadbean, try these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha probléma merül fel a feladással a Broadbean-be, próbálja meg ezeket a lépéseket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Verify that the Broadbean credentials that you entered in Attract are valid and correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Győződjön meg róla, hogy az Attract megoldásban megadott Broadbean hitelesítő adatok érvényesek és helyesek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>If the credentials are valid and correct, contact <bpt id="p1">[</bpt>Broadbean support<ept id="p1">](https://www.broadbean.com/resources/support/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a hitelesítő adatok érvényesek és helyesek forduljon a <bpt id="p1">[</bpt>Broadbean támogatáshoz<ept id="p1">](https://www.broadbean.com/resources/support/)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>If the issue persists, contact <bpt id="p1">[</bpt>Microsoft support<ept id="p1">](./talent-support.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a probléma továbbra is fennáll, forduljon <bpt id="p1">[</bpt>Microsoft támogatáshoz<ept id="p1">](./talent-support.md)</ept>.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

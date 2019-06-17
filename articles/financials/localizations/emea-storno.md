@@ -1,172 +1,657 @@
----
-title: Sztornókönyvelés
-description: A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 1219713
-ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-semaz
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42e7819eba74608f33ea8ec5f7b7e978953b460
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537972"
----
-# <a name="storno-accounting"></a><span data-ttu-id="6d8e1-103">Sztornókönyvelés</span><span class="sxs-lookup"><span data-stu-id="6d8e1-103">Storno accounting</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="6d8e1-104">A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
-
-<span data-ttu-id="6d8e1-105">A *sztornókönyvelés* az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-105">*Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries.</span></span> <span data-ttu-id="6d8e1-106">Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat *piros sztornó* néven is ismert.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-106">Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*.</span></span> <span data-ttu-id="6d8e1-107">A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-107">Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</span></span>
-
-## <a name="example"></a><span data-ttu-id="6d8e1-108">Példa</span><span class="sxs-lookup"><span data-stu-id="6d8e1-108">Example</span></span>
-<span data-ttu-id="6d8e1-109">Egy könyvelő feladja egy szállító számláját 120 USD összegről.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-109">A bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="6d8e1-110">A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-110">During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</span></span> <span data-ttu-id="6d8e1-111">Most a°könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-111">Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</span></span> <span data-ttu-id="6d8e1-112">További tudnivalók: [Számla a szállítótól](../accounts-payable/vendor-invoices-overview.md).</span><span class="sxs-lookup"><span data-stu-id="6d8e1-112">For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md).</span></span> <span data-ttu-id="6d8e1-113">Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-113">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="6d8e1-114">**Dokumentumazonosító**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-114">**Document ID**</span></span> | <span data-ttu-id="6d8e1-115">**Számla**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-115">**Account**</span></span> | <span data-ttu-id="6d8e1-116">**Tartozik**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-116">**Debit**</span></span> | <span data-ttu-id="6d8e1-117">**Követel**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-117">**Credit**</span></span> | <span data-ttu-id="6d8e1-118">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-118">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="6d8e1-119">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-119">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-120">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-120">Purch acc</span></span>   | <span data-ttu-id="6d8e1-121">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-121">120</span></span>       |            | <span data-ttu-id="6d8e1-122">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-122">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="6d8e1-123">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-123">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-124">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-124">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-125">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-125">120</span></span>        | <span data-ttu-id="6d8e1-126">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-126">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="6d8e1-127">Storno0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-127">Storno0001</span></span>      | <span data-ttu-id="6d8e1-128">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-128">Purch acc</span></span>   | <span data-ttu-id="6d8e1-129">-120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-129">-120</span></span>     |            | <span data-ttu-id="6d8e1-130">Sztornó</span><span class="sxs-lookup"><span data-stu-id="6d8e1-130">Storno</span></span>                       |
-| <span data-ttu-id="6d8e1-131">Storno0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-131">Storno0001</span></span>      | <span data-ttu-id="6d8e1-132">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-132">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-133">-120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-133">-120</span></span>      | <span data-ttu-id="6d8e1-134">Sztornó</span><span class="sxs-lookup"><span data-stu-id="6d8e1-134">Storno</span></span>                       |
-|                 |             |           |            |                              |
-| <span data-ttu-id="6d8e1-135">Invoice0002</span><span class="sxs-lookup"><span data-stu-id="6d8e1-135">Invoice0002</span></span>     | <span data-ttu-id="6d8e1-136">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-136">Purch acc</span></span>   | <span data-ttu-id="6d8e1-137">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-137">102</span></span>       |            | <span data-ttu-id="6d8e1-138">Helyes számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-138">Correct Invoice</span></span>              |
-| <span data-ttu-id="6d8e1-139">Invoice0002</span><span class="sxs-lookup"><span data-stu-id="6d8e1-139">Invoice0002</span></span>     | <span data-ttu-id="6d8e1-140">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-140">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-141">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-141">102</span></span>        | <span data-ttu-id="6d8e1-142">Helyes számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-142">Correct Invoice</span></span>              |
-
-<span data-ttu-id="6d8e1-143">Ebben a példában az egyenleg a következőt jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-143">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="6d8e1-144">Könyvelési számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-144">Account</span></span>    | <span data-ttu-id="6d8e1-145">Tartozik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-145">Debit</span></span> | <span data-ttu-id="6d8e1-146">Követel</span><span class="sxs-lookup"><span data-stu-id="6d8e1-146">Credit</span></span> | <span data-ttu-id="6d8e1-147">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-147">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="6d8e1-148">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-148">Purch acc</span></span>  | <span data-ttu-id="6d8e1-149">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-149">102</span></span>   | <span data-ttu-id="6d8e1-150">0</span><span class="sxs-lookup"><span data-stu-id="6d8e1-150">0</span></span>      | <span data-ttu-id="6d8e1-151">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-151">102</span></span>     |
-| <span data-ttu-id="6d8e1-152">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-152">Vendor acc</span></span> | <span data-ttu-id="6d8e1-153">0</span><span class="sxs-lookup"><span data-stu-id="6d8e1-153">0</span></span>     | <span data-ttu-id="6d8e1-154">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-154">102</span></span>    | <span data-ttu-id="6d8e1-155">-102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-155">-102</span></span>    |
-
-## <a name="differences-between-storno-and-reverse-entries"></a><span data-ttu-id="6d8e1-156">A sztornírozás és a fordított bejegyzések közötti különbségek</span><span class="sxs-lookup"><span data-stu-id="6d8e1-156">Differences between Storno and reverse entries</span></span>
-<span data-ttu-id="6d8e1-157">Kétféleképpen lehet javítani a bejegyzést – sztornírozással és fordított bejegyzéssel.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-157">There are two ways in which to correct posting entries – reverse and storno.</span></span> <span data-ttu-id="6d8e1-158">Fordított bejegyzés használata esetén az eredeti általános bejegyzés egy példányát fordított adós- és hitelszámlával hozza létre, és az összegek ugyanazokkal a jelekkel maradnak.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-158">If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</span></span> <span data-ttu-id="6d8e1-159">Sztornó használatakor a rendszer létrehoz egy példányt az eredeti főkönyvi bejegyzésből, de negatív előjellel kell elszámolni az összegeket.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-159">If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</span></span> <span data-ttu-id="6d8e1-160">Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-160">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="6d8e1-161">**Dokumentumazonosító**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-161">**Document ID**</span></span> | <span data-ttu-id="6d8e1-162">**Számla**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-162">**Account**</span></span> | <span data-ttu-id="6d8e1-163">**Tartozik**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-163">**Debit**</span></span> | <span data-ttu-id="6d8e1-164">**Követel**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-164">**Credit**</span></span> | <span data-ttu-id="6d8e1-165">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-165">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="6d8e1-166">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-166">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-167">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-167">Purch acc</span></span>   | <span data-ttu-id="6d8e1-168">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-168">120</span></span>       |            | <span data-ttu-id="6d8e1-169">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-169">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="6d8e1-170">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-170">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-171">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-171">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-172">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-172">120</span></span>        | <span data-ttu-id="6d8e1-173">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-173">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="6d8e1-174">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-174">Reverse0001</span></span>     | <span data-ttu-id="6d8e1-175">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-175">Purch acc</span></span>   |           | <span data-ttu-id="6d8e1-176">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-176">120</span></span>        | <span data-ttu-id="6d8e1-177">Megfordítás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-177">Reverse</span></span>                      |
-| <span data-ttu-id="6d8e1-178">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-178">Reverse0001</span></span>     | <span data-ttu-id="6d8e1-179">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-179">Vendor acc</span></span>  | <span data-ttu-id="6d8e1-180">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-180">120</span></span>       |            | <span data-ttu-id="6d8e1-181">Megfordítás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-181">Reverse</span></span>                      |
-|                 |             |           |            |                              |
-| <span data-ttu-id="6d8e1-182">Invoice0002</span><span class="sxs-lookup"><span data-stu-id="6d8e1-182">Invoice0002</span></span>     | <span data-ttu-id="6d8e1-183">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-183">Purch acc</span></span>   | <span data-ttu-id="6d8e1-184">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-184">102</span></span>       |            | <span data-ttu-id="6d8e1-185">Helyes számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-185">Correct Invoice</span></span>              |
-| <span data-ttu-id="6d8e1-186">Invoice0002</span><span class="sxs-lookup"><span data-stu-id="6d8e1-186">Invoice0002</span></span>     | <span data-ttu-id="6d8e1-187">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-187">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-188">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-188">102</span></span>        | <span data-ttu-id="6d8e1-189">Helyes számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-189">Correct Invoice</span></span>              |
-
-<span data-ttu-id="6d8e1-190">Ebben a példában az egyenleg a következőt jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-190">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="6d8e1-191">Könyvelési számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-191">Account</span></span>    | <span data-ttu-id="6d8e1-192">Tartozik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-192">Debit</span></span> | <span data-ttu-id="6d8e1-193">Követel</span><span class="sxs-lookup"><span data-stu-id="6d8e1-193">Credit</span></span> | <span data-ttu-id="6d8e1-194">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-194">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="6d8e1-195">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-195">Purch acc</span></span>  | <span data-ttu-id="6d8e1-196">222</span><span class="sxs-lookup"><span data-stu-id="6d8e1-196">222</span></span>   | <span data-ttu-id="6d8e1-197">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-197">120</span></span>    | <span data-ttu-id="6d8e1-198">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-198">102</span></span>     |
-| <span data-ttu-id="6d8e1-199">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-199">Vendor acc</span></span> | <span data-ttu-id="6d8e1-200">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-200">120</span></span>   | <span data-ttu-id="6d8e1-201">222</span><span class="sxs-lookup"><span data-stu-id="6d8e1-201">222</span></span>    | <span data-ttu-id="6d8e1-202">-102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-202">-102</span></span>    |
-
-<span data-ttu-id="6d8e1-203">Ne feledje, hogy az egyenlegek egyenlők a sztornírozottnál és a sztornírozásnál.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-203">Note that the balances are equal for the reverse and the storno.</span></span> <span data-ttu-id="6d8e1-204">Különbség van a beszedési forgalom és a hitelforgalom között, mert a fordított bejegyzés felesleges beszedési és hitelforgalmat hoz létre.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-204">There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</span></span> <span data-ttu-id="6d8e1-205">A sztornírozási bejegyzés, ahol ritkán használja a forgalom országokban/régiókban használatos.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-205">The reverse entry is used in countries/regions where turnover is rarely use.</span></span> <span data-ttu-id="6d8e1-206">Más országok/régiók sztornókönyvelés.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-206">Other countries/regions use Storno accounting.</span></span>
-
-## <a name="partial-storno"></a><span data-ttu-id="6d8e1-207">Részleges sztornírozás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-207">Partial Storno</span></span>
-<span data-ttu-id="6d8e1-208">A *Részleges sztornírozás* olyan könyvelési gyakorlat, ahol a negatív tartozik és követel összegek használatával visszafordítja az eredeti napló számlabejegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-208">*Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</span></span> <span data-ttu-id="6d8e1-209">Egyes országokban/régiókban engedélyezi, hogy használja a részleges sztornírozása.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-209">Some countries/regions allow the use the partial Storno.</span></span> <span data-ttu-id="6d8e1-210">Például egy könyvelő feladja egy szállító számláját 120 USD összegről.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-210">For example, a bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="6d8e1-211">A fizetési eljárás során kiderül, hogy a könyvelő véletlenül nem megfelelően adta meg a számsorozatot.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-211">During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</span></span> <span data-ttu-id="6d8e1-212">Az eredeti, 102 USD-s számlán hiba szerepelt a számsorozatban.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-212">The original invoice for 102 USD had a mistake in the number sequence.</span></span><span data-ttu-id="6d8e1-213"> Részleges sztornó segítségével a könyvelőnek létre kell hoznia egy sztornót 18 USD-ról.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-213"> Using partial Storno, the bookkeeper should create Storno for 18 USD.</span></span> <span data-ttu-id="6d8e1-214">Az alábbi tábla a részleges sztornírozás általános bejegyzését mutatja be.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-214">The following table shows the general entry for partial Storno.</span></span>
-
-| <span data-ttu-id="6d8e1-215">**Dokumentumazonosító**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-215">**Document ID**</span></span> | <span data-ttu-id="6d8e1-216">**Számla**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-216">**Account**</span></span> | <span data-ttu-id="6d8e1-217">**Tartozik**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-217">**Debit**</span></span> | <span data-ttu-id="6d8e1-218">**Követel**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-218">**Credit**</span></span> | <span data-ttu-id="6d8e1-219">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="6d8e1-219">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="6d8e1-220">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-220">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-221">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-221">Purch acc</span></span>   | <span data-ttu-id="6d8e1-222">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-222">120</span></span>       |            | <span data-ttu-id="6d8e1-223">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-223">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="6d8e1-224">Invoice0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-224">Invoice0001</span></span>     | <span data-ttu-id="6d8e1-225">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-225">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-226">120</span><span class="sxs-lookup"><span data-stu-id="6d8e1-226">120</span></span>        | <span data-ttu-id="6d8e1-227">Eredeti számla (helytelen)</span><span class="sxs-lookup"><span data-stu-id="6d8e1-227">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="6d8e1-228">Storno0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-228">Storno0001</span></span>      | <span data-ttu-id="6d8e1-229">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-229">Purch acc</span></span>   | <span data-ttu-id="6d8e1-230">\-18.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-230">\-18</span></span>      |            | <span data-ttu-id="6d8e1-231">Részleges sztornírozás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-231">Partial Storno</span></span>               |
-| <span data-ttu-id="6d8e1-232">Storno0001</span><span class="sxs-lookup"><span data-stu-id="6d8e1-232">Storno0001</span></span>      | <span data-ttu-id="6d8e1-233">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-233">Vendor acc</span></span>  |           | <span data-ttu-id="6d8e1-234">\-18.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-234">\-18</span></span>       | <span data-ttu-id="6d8e1-235">Részleges sztornírozás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-235">Partial Storno</span></span>               |
-
-<span data-ttu-id="6d8e1-236">Ebben a példában az egyenleg a következőt jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-236">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="6d8e1-237">Könyvelési számla</span><span class="sxs-lookup"><span data-stu-id="6d8e1-237">Account</span></span>    | <span data-ttu-id="6d8e1-238">Tartozik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-238">Debit</span></span> | <span data-ttu-id="6d8e1-239">Követel</span><span class="sxs-lookup"><span data-stu-id="6d8e1-239">Credit</span></span> | <span data-ttu-id="6d8e1-240">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-240">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="6d8e1-241">Purch acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-241">Purch acc</span></span>  | <span data-ttu-id="6d8e1-242">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-242">102</span></span>   | <span data-ttu-id="6d8e1-243">0</span><span class="sxs-lookup"><span data-stu-id="6d8e1-243">0</span></span>      | <span data-ttu-id="6d8e1-244">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-244">102</span></span>     |
-| <span data-ttu-id="6d8e1-245">Vendor acc</span><span class="sxs-lookup"><span data-stu-id="6d8e1-245">Vendor acc</span></span> | <span data-ttu-id="6d8e1-246">0</span><span class="sxs-lookup"><span data-stu-id="6d8e1-246">0</span></span>     | <span data-ttu-id="6d8e1-247">102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-247">102</span></span>    | <span data-ttu-id="6d8e1-248">-102</span><span class="sxs-lookup"><span data-stu-id="6d8e1-248">-102</span></span>    |
-
-<span data-ttu-id="6d8e1-249">Részleges sztornírozása hibát hoz létre az eredeti példány nyomtatása űrlapon.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-249">Partial Storno can create an issue on the Original Print form.</span></span><span data-ttu-id="6d8e1-250"> Az eredeti dokumentum dátuma és a Sztornírozás dátuma közötti eltérés esetén ez megnehezíti a pontos pénznemösszeg beolvasását.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-250"> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</span></span> <span data-ttu-id="6d8e1-251">Részleges sztornó emiatt csak bizonyos dokumentumok esetén engedélyezett.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-251">As a result, partial Storno is only allowed for certain documents.</span></span> <span data-ttu-id="6d8e1-252">A Microsoft Dynamics 365 for Operations az engedélyezett dokumentumok és országok/régiók esetén biztosít részleges sztornírozási funkciót.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-252">Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</span></span>
-
-## <a name="how-to-enter-stornoon-journal-lines"></a><span data-ttu-id="6d8e1-253">Sztornírozás bejegyzésének módja a naplósorokban</span><span class="sxs-lookup"><span data-stu-id="6d8e1-253">How to enter Storno on journal lines</span></span>
-<span data-ttu-id="6d8e1-254">Adja meg a tartozás vagy követelés összegét negatív előjellel a naplósorban a sztornóbejegyzés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-254">Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</span></span> <span data-ttu-id="6d8e1-255">A **Javítás** mező értékét a feladási folyamat során állítják be.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-255">The **Correction** field is set during the posting process.</span></span> 
-
-## <a name="how-storno-is-displayed"></a><span data-ttu-id="6d8e1-256">Hogyan jelenjen meg sztornírozása</span><span class="sxs-lookup"><span data-stu-id="6d8e1-256">How Storno is displayed</span></span>
-<span data-ttu-id="6d8e1-257">A Dynamics 365 for Operations különlegesen kezeli a negatív naplóösszegeket.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-257">Dynamics 365 for Operations handles negative journal amounts in a special way.</span></span> <span data-ttu-id="6d8e1-258">Általános naplóbejegyzés, a vevői tranzakció, a szállítói tranzakció és a más tranzakciók nyújtanak a sztornírozás funkcióz az alább leírt módon.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-258">The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</span></span>
-
-<table>
-<thead>
-<tr class="row-1">
-<th class="column-1" rowspan="2"><span data-ttu-id="6d8e1-259">A naplósor felhasználói adatbevitel</span><span class="sxs-lookup"><span data-stu-id="6d8e1-259">User input at journal line</span></span></th>
-<th class="column-2" colspan="2"><span data-ttu-id="6d8e1-260">Tárolási elve</span><span class="sxs-lookup"><span data-stu-id="6d8e1-260">Storage principle</span></span></th>
-<th class="column-4" colspan="2"><span data-ttu-id="6d8e1-261">Megjelenítési szabály</span><span class="sxs-lookup"><span data-stu-id="6d8e1-261">Display principle</span></span></th>
-<th class="column-6" colspan="3"><span data-ttu-id="6d8e1-262">A kivonat jelentés hatása</span><span class="sxs-lookup"><span data-stu-id="6d8e1-262">Impact to the Statement report</span></span></th>
-</tr>
-<tr class="row-1">
-<th class="column-2"><span data-ttu-id="6d8e1-263">Javítás mező</span><span class="sxs-lookup"><span data-stu-id="6d8e1-263">Correction field</span></span></th>
-<th class="column-3"><span data-ttu-id="6d8e1-264">Összeg mező</span><span class="sxs-lookup"><span data-stu-id="6d8e1-264">Amount field</span></span></th>
-<th class="column-4"><span data-ttu-id="6d8e1-265">Összeg a tranzakció pénznemében.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-265">Amount in transaction currency</span></span></th>
-<th class="column-5"><span data-ttu-id="6d8e1-266">Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-266">Amount</span></span></th>
-<th class="column-6"><span data-ttu-id="6d8e1-267">Tartozás oszlop</span><span class="sxs-lookup"><span data-stu-id="6d8e1-267">Debit column</span></span></th>
-<th class="column-7"><span data-ttu-id="6d8e1-268">Követel oszlophoz</span><span class="sxs-lookup"><span data-stu-id="6d8e1-268">Credit column</span></span></th>
-<th class="column-8"><span data-ttu-id="6d8e1-269">Egyenleg oszlop</span><span class="sxs-lookup"><span data-stu-id="6d8e1-269">Balance column</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-2">
-<td class="column-1"><span data-ttu-id="6d8e1-270"> Tartozik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-270"> Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="6d8e1-271">Nincs</span><span class="sxs-lookup"><span data-stu-id="6d8e1-271">No</span></span></td>
-<td class="column-3"><span data-ttu-id="6d8e1-272">&gt;0.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-272">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="6d8e1-273">Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-273">Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="6d8e1-274">Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-274">Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="6d8e1-275">Növekszik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-275">Increases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="6d8e1-276">Növekszik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-276">Increases</span></span></td>
-</tr>
-<tr class="row-3">
-<td class="column-1"><span data-ttu-id="6d8e1-277"> Követel</span><span class="sxs-lookup"><span data-stu-id="6d8e1-277"> Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="6d8e1-278">Nincs</span><span class="sxs-lookup"><span data-stu-id="6d8e1-278">No</span></span></td>
-<td class="column-3"><span data-ttu-id="6d8e1-279">&lt;0.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-279">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="6d8e1-280">-Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-280">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="6d8e1-281">Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-281">Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="6d8e1-282">Növekszik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-282">Increases</span></span></td>
-<td class="column-8"><span data-ttu-id="6d8e1-283">Csökken</span><span class="sxs-lookup"><span data-stu-id="6d8e1-283">Decreases</span></span></td>
-</tr>
-<tr class="row-4">
-<td class="column-1"><span data-ttu-id="6d8e1-284">-Terhelés</span><span class="sxs-lookup"><span data-stu-id="6d8e1-284">-Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="6d8e1-285">Igen</span><span class="sxs-lookup"><span data-stu-id="6d8e1-285">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="6d8e1-286">&gt;0.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-286">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="6d8e1-287">+Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-287">+Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="6d8e1-288">-Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-288">-Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="6d8e1-289">Csökken</span><span class="sxs-lookup"><span data-stu-id="6d8e1-289">Decreases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="6d8e1-290">Növekszik</span><span class="sxs-lookup"><span data-stu-id="6d8e1-290">Increases</span></span></td>
-</tr>
-<tr class="row-5">
-<td class="column-1"><span data-ttu-id="6d8e1-291">-Jóváírás</span><span class="sxs-lookup"><span data-stu-id="6d8e1-291">-Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="6d8e1-292">Igen</span><span class="sxs-lookup"><span data-stu-id="6d8e1-292">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="6d8e1-293">&lt;0.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-293">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="6d8e1-294">-Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-294">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="6d8e1-295">-Összeg</span><span class="sxs-lookup"><span data-stu-id="6d8e1-295">-Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="6d8e1-296">Csökken</span><span class="sxs-lookup"><span data-stu-id="6d8e1-296">Decreases</span></span></td>
-<td class="column-8"><span data-ttu-id="6d8e1-297">Csökken</span><span class="sxs-lookup"><span data-stu-id="6d8e1-297">Decreases</span></span></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="6d8e1-298">Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszlopokban és mezőkben.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-298">You can customize the display of Storno in forms, grids, columns, and fields.</span></span> <span data-ttu-id="6d8e1-299">Például kikapcsolhatja az előjel megjelenítését vagy módosíthatja a negatív összegek kitöltését.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-299">For example, you can turn off sign display or change padding for negative amounts.</span></span> <span data-ttu-id="6d8e1-300">Használhatja a **Javítás** mezőt minden képernyőbeállítással, ha a **Javítás** mezőben szerepel az "Igen", akkor egy sztornóbejegyzés.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-300">You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.</span></span>
-
-![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
-
-## <a name="how-documents-create-storno"></a><span data-ttu-id="6d8e1-302">Sztornírozási dokumentumok létrehozása</span><span class="sxs-lookup"><span data-stu-id="6d8e1-302">How documents create Storno</span></span>
-<span data-ttu-id="6d8e1-303">Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-303">Certain documents create cancellation transactions.</span></span> <span data-ttu-id="6d8e1-304">Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-304">For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</span></span> <span data-ttu-id="6d8e1-305">További részletekért lásd: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="6d8e1-305">For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span></span> <span data-ttu-id="6d8e1-306">Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-306">After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</span></span> <span data-ttu-id="6d8e1-307">Érvénytelenítési tranzakciók is létrejöhetnek a készlethez.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-307">Cancellation transactions are also created for inventory.</span></span> <span data-ttu-id="6d8e1-308">További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md).</span><span class="sxs-lookup"><span data-stu-id="6d8e1-308">For more information, see [Inventory close](../../supply-chain/cost-management/inventory-close.md).</span></span> <span data-ttu-id="6d8e1-309">Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-309">There are documents that allow you to cancel the previously posted document.</span></span> <span data-ttu-id="6d8e1-310">Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-310">For example, the User can create a Credit Note to cancel a previously created Invoice.</span></span> <span data-ttu-id="6d8e1-311">A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-311">Documents use specific parameters to create reverse or Storno transactions.</span></span> <span data-ttu-id="6d8e1-312">Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-312">For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</span></span> <span data-ttu-id="6d8e1-313">A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.</span><span class="sxs-lookup"><span data-stu-id="6d8e1-313">The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-storno.md" target-language="hu-HU">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-storno.ef97bf.a9352b0a80d8c5fe013e951bd4380b87834c0030.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a9352b0a80d8c5fe013e951bd4380b87834c0030</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-storno.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornókönyvelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornókönyvelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source><bpt id="p1">*</bpt>Storno accounting<ept id="p1">*</ept> is a practice of using negative debit or credit amounts to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">*</bpt>sztornókönyvelés<ept id="p1">*</ept> az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as <bpt id="p1">*</bpt>Red Storno<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat <bpt id="p1">*</bpt>piros sztornó<ept id="p1">*</ept> néven is ismert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Példa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>A bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy könyvelő feladja egy szállító számláját 120 USD összegről.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Most a°könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For more information, see<bpt id="p1"> [</bpt>Invoice from Vendor<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További tudnivalók:<bpt id="p1"> [</bpt>Számla a szállítótól<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dokumentumazonosító<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Számla<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tartozik<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Követel<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornó</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornó</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyes számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyes számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben a példában az egyenleg a következőt jeleníti meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvelési számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Differences between Storno and reverse entries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sztornírozás és a fordított bejegyzések közötti különbségek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>There are two ways in which to correct posting entries – reverse and storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kétféleképpen lehet javítani a bejegyzést – sztornírozással és fordított bejegyzéssel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított bejegyzés használata esetén az eredeti általános bejegyzés egy példányát fordított adós- és hitelszámlával hozza létre, és az összegek ugyanazokkal a jelekkel maradnak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornó használatakor a rendszer létrehoz egy példányt az eredeti főkönyvi bejegyzésből, de negatív előjellel kell elszámolni az összegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dokumentumazonosító<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Számla<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tartozik<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Követel<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reverse0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfordítás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reverse0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfordítás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyes számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyes számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben a példában az egyenleg a következőt jeleníti meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvelési számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Note that the balances are equal for the reverse and the storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne feledje, hogy az egyenlegek egyenlők a sztornírozottnál és a sztornírozásnál.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Különbség van a beszedési forgalom és a hitelforgalom között, mert a fordított bejegyzés felesleges beszedési és hitelforgalmat hoz létre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>The reverse entry is used in countries/regions where turnover is rarely use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A sztornírozási bejegyzés, ahol ritkán használja a forgalom országokban/régiókban használatos.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Other countries/regions use Storno accounting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Más országok/régiók sztornókönyvelés.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részleges sztornírozás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source><bpt id="p1">*</bpt>Partial Storno<ept id="p1">*</ept> is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">*</bpt>Részleges sztornírozás<ept id="p1">*</ept> olyan könyvelési gyakorlat, ahol a negatív tartozik és követel összegek használatával visszafordítja az eredeti napló számlabejegyzéseket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Some countries/regions allow the use the partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyes országokban/régiókban engedélyezi, hogy használja a részleges sztornírozása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>For example, a bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például egy könyvelő feladja egy szállító számláját 120 USD összegről.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési eljárás során kiderül, hogy a könyvelő véletlenül nem megfelelően adta meg a számsorozatot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The original invoice for 102 USD had a mistake in the number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eredeti, 102 USD-s számlán hiba szerepelt a számsorozatban.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source> Using partial Storno, the bookkeeper should create Storno for 18 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Részleges sztornó segítségével a könyvelőnek létre kell hoznia egy sztornót 18 USD-ról.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The following table shows the general entry for partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi tábla a részleges sztornírozás általános bejegyzését mutatja be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dokumentumazonosító<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Számla<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tartozik<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Követel<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjegyzés<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Invoice0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eredeti számla (helytelen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\-</ph>18.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részleges sztornírozás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\-</ph>18.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részleges sztornírozás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben a példában az egyenleg a következőt jeleníti meg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Könyvelési számla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Purch acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vendor acc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Partial Storno can create an issue on the Original Print form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részleges sztornírozása hibát hoz létre az eredeti példány nyomtatása űrlapon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Az eredeti dokumentum dátuma és a Sztornírozás dátuma közötti eltérés esetén ez megnehezíti a pontos pénznemösszeg beolvasását.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>As a result, partial Storno is only allowed for certain documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Részleges sztornó emiatt csak bizonyos dokumentumok esetén engedélyezett.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 for Operations az engedélyezett dokumentumok és országok/régiók esetén biztosít részleges sztornírozási funkciót.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>How to enter Storno on journal lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornírozás bejegyzésének módja a naplósorokban</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a tartozás vagy követelés összegét negatív előjellel a naplósorban a sztornóbejegyzés létrehozásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field is set during the posting process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Javítás<ept id="p1">**</ept> mező értékét a feladási folyamat során állítják be.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>How Storno is displayed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hogyan jelenjen meg sztornírozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Dynamics 365 for Operations handles negative journal amounts in a special way.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics 365 for Operations különlegesen kezeli a negatív naplóösszegeket.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Általános naplóbejegyzés, a vevői tranzakció, a szállítói tranzakció és a más tranzakciók nyújtanak a sztornírozás funkcióz az alább leírt módon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>User input at journal line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A naplósor felhasználói adatbevitel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Storage principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tárolási elve</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Display principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megjelenítési szabály</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Impact to the Statement report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kivonat jelentés hatása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Correction field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Javítás mező</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Amount field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg mező</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Amount in transaction currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg a tranzakció pénznemében.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Debit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tartozás oszlop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Credit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Követel oszlophoz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Balance column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyenleg oszlop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source><ph id="ph1"> </ph>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Tartozik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;gt;</ph>0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Növekszik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Növekszik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><ph id="ph1"> </ph>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Követel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph>0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Növekszik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csökken</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>-Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Terhelés</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;gt;</ph>0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>+Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csökken</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Növekszik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>-Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Jóváírás</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph>0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Összeg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csökken</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csökken</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>You can customize the display of Storno in forms, grids, columns, and fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszlopokban és mezőkben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>For example, you can turn off sign display or change padding for negative amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például kikapcsolhatja az előjel megjelenítését vagy módosíthatja a negatív összegek kitöltését.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>You can also use the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field with all display settings, if the <bpt id="p2">**</bpt>Correction<ept id="p2">**</ept> field has ‘Yes’, then it is a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Használhatja a <bpt id="p1">**</bpt>Javítás<ept id="p1">**</ept> mezőt minden képernyőbeállítással, ha a <bpt id="p2">**</bpt>Javítás<ept id="p2">**</ept> mezőben szerepel az "Igen", akkor egy sztornóbejegyzés.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Journal Entry Storno amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Naplóösszegekben bejegyzés sztornírozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>How documents create Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sztornírozási dokumentumok létrehozása</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Certain documents create cancellation transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>For more details, see <bpt id="p1">[</bpt>Foreign currency revaluation for General Ledger<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> or <bpt id="p2">[</bpt>Accounts payable and Accounts receivable<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További részletekért lásd: <bpt id="p1">[</bpt>Főkönyvi devizaátértékelés<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> vagy <bpt id="p2">[</bpt>A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Cancellation transactions are also created for inventory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Érvénytelenítési tranzakciók is létrejöhetnek a készlethez.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>For more information, see<bpt id="p1"> [</bpt>Inventory close<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információ:<bpt id="p1"> [</bpt>Készletzárás<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>There are documents that allow you to cancel the previously posted document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>For example, the User can create a Credit Note to cancel a previously created Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Documents use specific parameters to create reverse or Storno transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
