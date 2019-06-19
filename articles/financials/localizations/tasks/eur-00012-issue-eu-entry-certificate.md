@@ -1,204 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00012-issue-eu-entry-certificate.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00012-issue-eu-entry-certificate.2f67ef.5a566b1d25064e3fccc8953dc883aa63bd16a301.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>5a566b1d25064e3fccc8953dc883aa63bd16a301</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00012-issue-eu-entry-certificate.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Európai beérkezési igazolás kibocsátása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás bemutatja az EU beérkezési igazolás engedélyezésén és a vevői számla beállításán a beérkezési igazolások használata és az igazolás kiállítása érdekében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Európai beérkezési igazolás kibocsátása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás bemutatja az EU beérkezési igazolás engedélyezésén és a vevői számla beállításán a beérkezési igazolások használata és az igazolás kiállítása érdekében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the demo data company DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Enable entry certificate management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beérkezési igazolások kezelésének engedélyezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Go to Accounts receivable &gt; Setup &gt; Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Kintlévőségek &gt; Beállítás &gt; Kinnlevőségek paraméterei pontra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Click the Shipments tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szállítások fülre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Expand the Entry certificate section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Beérkezési igazolás szakaszt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select Yes in the Enable entry certificate management field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az Igent a Beérkezési igazolások kezelésének engedélyezése mezőben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Select Yes in the Enable entry certificate issuing field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az Igent a Beérkezési igazolások kiadásának engedélyezése mezőben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click the Number sequences tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számsorozatok lapra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the list, find and select Entry certificate row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A listában keresse meg és jelölje be a Beérkezési igazolás sort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Number sequence code field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Set up a customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ügyfél beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Go to Accounts receivable &gt; Customers &gt; All customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Kinnlevőségek &gt; Vevők &gt; Minden vevő pontra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Use the Quick Filter to find records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekordok kereséséhez használja a gyorsszűrőt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>For example, filter on the Account field with a value of 'DE-015'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például szűkítsen a „Számla” mezővel a „DE-015” értéket beírva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Open customer account details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyissa meg a Vevői számla részletes adatait.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Szerkesztés lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Expand the Invoice and delivery section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyissa meg A számlázás és szállítás szakaszt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Select Yes in the Entry certificate required field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az Igent a Beérkezési igazolás szükséges hozzá mezőben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Select Yes in the Issue entry certificate field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az Igent a Beérkezési igazolás kiadása mezőben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Create an EU entry certificate automatically</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EU-s beérkezési igazolás automatikus létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Go to Accounts receivable &gt; Orders &gt; All sales orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a Kinnlevőségek &gt; Rendelések &gt; Minden értékesítési rendelés elemre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Új lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the Customer account field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In the Item number field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Mentés gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>On the Action Pane, click Pick and pack.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Kitárolás és csomagolás elemre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Click Post packing slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson A szállítólevél feladása lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Expand the Parameters section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bontsa ki a Paraméterek szakaszt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In the Quantity field, select 'All'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Mennyiség mezőben válassza a „Mind” lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Clear the Issue entry certificate check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Törölje a jelet a jelölőnégyzetből a Beérkezési igazolások kiállítása mellett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>An entry certificate can be issued during packing slip posting or during order invoicing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A beérkezési igazolást a szállítólevél feladásakor, vagy a rendelés számlázása során állíthatja ki.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Leave the Issue entry certificate checkbox unchecked to issue it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hagyja üresen a Beérkezési igazolás kiállítása jelölőnégyzetet, ha később szeretné azt kiállítani.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Győződjön meg róla, hogy a Beérkezési igazolás szükséges, és a Bejegyzési tanúsítvány kiadása, illetve az Áttekintés jelölőnégyzetek be vannak jelölve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You can also select the Print entry certificate check box to allow printing of the certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiválaszthatja a Beérkezési igazolás nyomtatása jelölőnégyzetet is az igazolás kinyomtatásához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Kiállított beérkezési igazolások megtekintése elemre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Click Print.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Nyomtatás parancsra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárja be a lapot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Click Change status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az Állapot módosítása elemre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In the New status field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Új állapot mezőben válasszon ki egy opciót.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zárja be a lapot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Create an EU entry certificate manually</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EU-s beérkezési igazolás manuális létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Click Create entry certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Beérkezési igazolás létrehozása elemre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson az OK gombra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Művelet panelen kattintson a Számla lehetőségre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kattintson a Kiállított beérkezési igazolások megtekintése elemre.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00012 Európai beérkezési igazolás kibocsátása
+description: Ez az eljárás bemutatja az EU beérkezési igazolás engedélyezésén és a vevői számla beállításán a beérkezési igazolások használata és az igazolás kiállítása érdekében.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566776"
+---
+# <a name="eur-00012-issue-an-eu-entry-certificate"></a><span data-ttu-id="48702-103">EUR-00012 Európai beérkezési igazolás kibocsátása</span><span class="sxs-lookup"><span data-stu-id="48702-103">EUR-00012 Issue an EU entry certificate</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="48702-104">Ez az eljárás bemutatja az EU beérkezési igazolás engedélyezésén és a vevői számla beállításán a beérkezési igazolások használata és az igazolás kiállítása érdekében.</span><span class="sxs-lookup"><span data-stu-id="48702-104">This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</span></span> <span data-ttu-id="48702-105">Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.</span><span class="sxs-lookup"><span data-stu-id="48702-105">This procedure was created using the demo data company DEMF.</span></span>
+
+
+## <a name="enable-entry-certificate-management"></a><span data-ttu-id="48702-106">Beérkezési igazolások kezelésének engedélyezése</span><span class="sxs-lookup"><span data-stu-id="48702-106">Enable entry certificate management</span></span>
+1. <span data-ttu-id="48702-107">Ugorjon a Kintlévőségek > Beállítás > Kinnlevőségek paraméterei pontra.</span><span class="sxs-lookup"><span data-stu-id="48702-107">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="48702-108">Kattintson a Szállítások fülre.</span><span class="sxs-lookup"><span data-stu-id="48702-108">Click the Shipments tab.</span></span>
+3. <span data-ttu-id="48702-109">Bontsa ki a Beérkezési igazolás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="48702-109">Expand the Entry certificate section.</span></span>
+4. <span data-ttu-id="48702-110">Jelölje be az Igent a Beérkezési igazolások kezelésének engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="48702-110">Select Yes in the Enable entry certificate management field.</span></span>
+5. <span data-ttu-id="48702-111">Jelölje be az Igent a Beérkezési igazolások kiadásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="48702-111">Select Yes in the Enable entry certificate issuing field.</span></span>
+6. <span data-ttu-id="48702-112">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="48702-112">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="48702-113">A listában keresse meg és jelölje be a Beérkezési igazolás sort.</span><span class="sxs-lookup"><span data-stu-id="48702-113">In the list, find and select Entry certificate row.</span></span>
+8. <span data-ttu-id="48702-114">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="48702-114">In the Number sequence code field, enter or select a value.</span></span>
+
+## <a name="set-up-a-customer"></a><span data-ttu-id="48702-115">Ügyfél beállítása</span><span class="sxs-lookup"><span data-stu-id="48702-115">Set up a customer</span></span>
+1. <span data-ttu-id="48702-116">Ugorjon a Kinnlevőségek > Vevők > Minden vevő pontra.</span><span class="sxs-lookup"><span data-stu-id="48702-116">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="48702-117">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="48702-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="48702-118">Például szűkítsen a „Számla” mezővel a „DE-015” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="48702-118">For example, filter on the Account field with a value of 'DE-015'.</span></span>
+3. <span data-ttu-id="48702-119">Nyissa meg a Vevői számla részletes adatait.</span><span class="sxs-lookup"><span data-stu-id="48702-119">Open customer account details.</span></span>
+4. <span data-ttu-id="48702-120">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-120">Click Edit.</span></span>
+5. <span data-ttu-id="48702-121">Nyissa meg A számlázás és szállítás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="48702-121">Expand the Invoice and delivery section.</span></span>
+6. <span data-ttu-id="48702-122">Jelölje be az Igent a Beérkezési igazolás szükséges hozzá mezőben.</span><span class="sxs-lookup"><span data-stu-id="48702-122">Select Yes in the Entry certificate required field.</span></span>
+7. <span data-ttu-id="48702-123">Jelölje be az Igent a Beérkezési igazolás kiadása mezőben.</span><span class="sxs-lookup"><span data-stu-id="48702-123">Select Yes in the Issue entry certificate field.</span></span>
+8. <span data-ttu-id="48702-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-124">Click Save.</span></span>
+
+## <a name="create-an-eu-entry-certificate-automatically"></a><span data-ttu-id="48702-125">EU-s beérkezési igazolás automatikus létrehozása</span><span class="sxs-lookup"><span data-stu-id="48702-125">Create an EU entry certificate automatically</span></span>
+1. <span data-ttu-id="48702-126">Ugorjon a Kinnlevőségek > Rendelések > Minden értékesítési rendelés elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="48702-127">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-127">Click New.</span></span>
+3. <span data-ttu-id="48702-128">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="48702-128">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="48702-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-129">Click OK.</span></span>
+5. <span data-ttu-id="48702-130">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="48702-130">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="48702-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-131">Click Save.</span></span>
+7. <span data-ttu-id="48702-132">A Művelet panelen kattintson a Kitárolás és csomagolás elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-132">On the Action Pane, click Pick and pack.</span></span>
+8. <span data-ttu-id="48702-133">Kattintson A szállítólevél feladása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-133">Click Post packing slip.</span></span>
+9. <span data-ttu-id="48702-134">Bontsa ki a Paraméterek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="48702-134">Expand the Parameters section.</span></span>
+10. <span data-ttu-id="48702-135">A Mennyiség mezőben válassza a „Mind” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="48702-135">In the Quantity field, select 'All'.</span></span>
+11. <span data-ttu-id="48702-136">Törölje a jelet a jelölőnégyzetből a Beérkezési igazolások kiállítása mellett.</span><span class="sxs-lookup"><span data-stu-id="48702-136">Clear the Issue entry certificate check box.</span></span>
+    * <span data-ttu-id="48702-137">A beérkezési igazolást a szállítólevél feladásakor, vagy a rendelés számlázása során állíthatja ki.</span><span class="sxs-lookup"><span data-stu-id="48702-137">An entry certificate can be issued during packing slip posting or during order invoicing.</span></span> <span data-ttu-id="48702-138">Hagyja üresen a Beérkezési igazolás kiállítása jelölőnégyzetet, ha később szeretné azt kiállítani.</span><span class="sxs-lookup"><span data-stu-id="48702-138">Leave the Issue entry certificate checkbox unchecked to issue it later.</span></span>  
+12. <span data-ttu-id="48702-139">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-139">Click OK.</span></span>
+13. <span data-ttu-id="48702-140">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-140">Click OK.</span></span>
+14. <span data-ttu-id="48702-141">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-141">On the Action Pane, click Invoice.</span></span>
+15. <span data-ttu-id="48702-142">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-142">Click Invoice.</span></span>
+    * <span data-ttu-id="48702-143">Győződjön meg róla, hogy a Beérkezési igazolás szükséges, és a Bejegyzési tanúsítvány kiadása, illetve az Áttekintés jelölőnégyzetek be vannak jelölve.</span><span class="sxs-lookup"><span data-stu-id="48702-143">Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</span></span>  <span data-ttu-id="48702-144">Kiválaszthatja a Beérkezési igazolás nyomtatása jelölőnégyzetet is az igazolás kinyomtatásához.</span><span class="sxs-lookup"><span data-stu-id="48702-144">You can also select the Print entry certificate check box to allow printing of the certificate.</span></span>  
+16. <span data-ttu-id="48702-145">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-145">Click OK.</span></span>
+17. <span data-ttu-id="48702-146">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-146">Click OK.</span></span>
+18. <span data-ttu-id="48702-147">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-147">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="48702-148">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-148">Click Invoice.</span></span>
+20. <span data-ttu-id="48702-149">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-149">On the Action Pane, click Invoice.</span></span>
+21. <span data-ttu-id="48702-150">Kattintson a Kiállított beérkezési igazolások megtekintése elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-150">Click View issued entry certificates.</span></span>
+22. <span data-ttu-id="48702-151">Kattintson a Nyomtatás parancsra.</span><span class="sxs-lookup"><span data-stu-id="48702-151">Click Print.</span></span>
+23. <span data-ttu-id="48702-152">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="48702-152">Close the page.</span></span>
+24. <span data-ttu-id="48702-153">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-153">Click Change status.</span></span>
+25. <span data-ttu-id="48702-154">Az Új állapot mezőben válasszon ki egy opciót.</span><span class="sxs-lookup"><span data-stu-id="48702-154">In the New status field, select an option.</span></span>
+26. <span data-ttu-id="48702-155">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-155">Click OK.</span></span>
+27. <span data-ttu-id="48702-156">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="48702-156">Close the page.</span></span>
+
+## <a name="create-an-eu-entry-certificate-manually"></a><span data-ttu-id="48702-157">EU-s beérkezési igazolás manuális létrehozása</span><span class="sxs-lookup"><span data-stu-id="48702-157">Create an EU entry certificate manually</span></span>
+1. <span data-ttu-id="48702-158">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-158">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="48702-159">Kattintson a Beérkezési igazolás létrehozása elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-159">Click Create entry certificate.</span></span>
+3. <span data-ttu-id="48702-160">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48702-160">Click OK.</span></span>
+4. <span data-ttu-id="48702-161">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48702-161">On the Action Pane, click Invoice.</span></span>
+5. <span data-ttu-id="48702-162">Kattintson a Kiállított beérkezési igazolások megtekintése elemre.</span><span class="sxs-lookup"><span data-stu-id="48702-162">Click View issued entry certificates.</span></span>
+
