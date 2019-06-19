@@ -1,84 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="fixed-assets.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>fixed-assets.9b56a8.a925d16239ec78b09403a0c0db1346e35b7eee20.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>a925d16239ec78b09403a0c0db1346e35b7eee20</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\fixed-assets\fixed-assets.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Fixed assets home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tárgyi eszközök kezdőlap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Fixed assets home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tárgyi eszközök kezdőlap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>You can calculate adjustments to the fixed assets, and also dispose of them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The Fixed assets functionality incorporates many of these standards and rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Business process<ept id="p1">](./media/FA-process.PNG)](./media/FA-process.PNG)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Üzleti folyamat<ept id="p1">](./media/FA-process.PNG)](./media/FA-process.PNG)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További erőforrások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>What's new and in development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Újdonságok és fejlesztés alatt levő megoldások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Go to the <bpt id="p1">[</bpt>Microsoft Dynamics 365 Release Notes<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> to see what new features have been planned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lépjen a <bpt id="p1">[</bpt>Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> oldalára a tervezett új funkciók megtekintéséhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>You can find opinions, news, and other information on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> and the <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Financials blog<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">[</bpt>Microsoft Dynamics 365 blogon<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> és a <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept> véleményeket, híreket és egyéb információkat talál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>The <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner közösségi blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Task guides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladat-útmutatók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Additional help is available as task guides inside Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>To access task guides, click the Help button on any page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Videos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Check out the how-to videos that are now available on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube Channel<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tekintse meg az útmutató-videókat, amelyek a <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube csatornáján<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept> láthatók.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Tárgyi eszközök kezdőlap
+description: A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/31/2017
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: AssetWorkspace
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 21481
+ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
+ms.search.region: Global
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a925d16239ec78b09403a0c0db1346e35b7eee20
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543841"
+---
+# <a name="fixed-assets-home-page"></a><span data-ttu-id="a28bb-103">Tárgyi eszközök kezdőlap</span><span class="sxs-lookup"><span data-stu-id="a28bb-103">Fixed assets home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a28bb-104">A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak.</span><span class="sxs-lookup"><span data-stu-id="a28bb-104">Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</span></span> 
+
+<span data-ttu-id="a28bb-105">A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására.</span><span class="sxs-lookup"><span data-stu-id="a28bb-105">You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</span></span> <span data-ttu-id="a28bb-106">Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése.</span><span class="sxs-lookup"><span data-stu-id="a28bb-106">You can calculate adjustments to the fixed assets, and also dispose of them.</span></span> <span data-ttu-id="a28bb-107">Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét.</span><span class="sxs-lookup"><span data-stu-id="a28bb-107">When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</span></span> <span data-ttu-id="a28bb-108">A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is.</span><span class="sxs-lookup"><span data-stu-id="a28bb-108">The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</span></span> <span data-ttu-id="a28bb-109">A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak.</span><span class="sxs-lookup"><span data-stu-id="a28bb-109">Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</span></span> <span data-ttu-id="a28bb-110">A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.</span><span class="sxs-lookup"><span data-stu-id="a28bb-110">The Fixed assets functionality incorporates many of these standards and rules.</span></span>
+
+<span data-ttu-id="a28bb-111">[![Üzleti folyamat](./media/FA-process.PNG)](./media/FA-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="a28bb-111">[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)</span></span>
+
+
+
+### <a name="additional-resources"></a><span data-ttu-id="a28bb-112">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="a28bb-112">Additional resources</span></span>
+
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="a28bb-113">Újdonságok és fejlesztés alatt levő megoldások</span><span class="sxs-lookup"><span data-stu-id="a28bb-113">What's new and in development</span></span>
+
+<span data-ttu-id="a28bb-114">Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="a28bb-114">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
+
+#### <a name="blogs"></a><span data-ttu-id="a28bb-115">Blogok</span><span class="sxs-lookup"><span data-stu-id="a28bb-115">Blogs</span></span>
+
+<span data-ttu-id="a28bb-116">A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.</span><span class="sxs-lookup"><span data-stu-id="a28bb-116">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+
+<span data-ttu-id="a28bb-117">A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.</span><span class="sxs-lookup"><span data-stu-id="a28bb-117">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+
+#### <a name="task-guides"></a><span data-ttu-id="a28bb-118">Feladat-útmutatók</span><span class="sxs-lookup"><span data-stu-id="a28bb-118">Task guides</span></span>
+<span data-ttu-id="a28bb-119">Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="a28bb-119">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="a28bb-120">A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.</span><span class="sxs-lookup"><span data-stu-id="a28bb-120">To access task guides, click the Help button on any page.</span></span>
+
+#### <a name="videos"></a><span data-ttu-id="a28bb-121">Videók</span><span class="sxs-lookup"><span data-stu-id="a28bb-121">Videos</span></span>
+
+<span data-ttu-id="a28bb-122">Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.</span><span class="sxs-lookup"><span data-stu-id="a28bb-122">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+
+
+
+
+
+

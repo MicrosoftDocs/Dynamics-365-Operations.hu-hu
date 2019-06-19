@@ -1,699 +1,258 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="attribute-attributegroups-lifecycle.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>attribute-attributegroups-lifecycle.90dcb9.7c722c311048258ce75170ac4276d397fe2828fe.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7c722c311048258ce75170ac4276d397fe2828fe</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\attribute-attributegroups-lifecycle.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok és attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azt írja le, hogyan lehet attribútumok segítségével egy terméket és a jellemzőit leírni a felhasználó által definiált mezőkben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok és attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source><bpt id="p1">*</bpt>Attributes<ept id="p1">*</ept> provide a way to further describe a product and its characteristics through user-defined fields (such as <bpt id="p2">**</bpt>Memory size<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Hard disk capacity<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Is Energy star compliant<ept id="p4">**</ept>, and so on).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">*</bpt>Attribútumok<ept id="p1">*</ept> lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például <bpt id="p2">**</bpt>Memória mérete<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Merevlemez kapacitása<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Energy Star kompatibilis<ept id="p4">**</ept> és így tovább).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 for Finance and Operationsszolgáltatásban az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For example, a typical television product might have the following attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például egy tipikus televízió terméknek a következő attribútumai lehetnek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kategória</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Attribute</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Permissible values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megengedett értékek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Default value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett érték</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>TV &amp; Video</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TV és videó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Brand</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Márka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Any valid brand value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bármilyen érvényes márkaérték</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>TV</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TV</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Screen Size</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képernyőméret</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>20–80 inches</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20–80 hüvelyk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Vertical Resolution</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Függőleges felbontás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>480i, 720p, 1080i, or 1080p</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">480i, 720p, 1080i vagy 1080p</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>1080p</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1080p</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Screen Refresh Rate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képernyő-frissítési gyakoriság</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>60hz, 120hz, or 240hz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">60hz, 120hz vagy 240hz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>60hz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">60hz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>HDMI Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HDMI-bemenetek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>DVI Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DVI-bemenetek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Composite Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompozit bemenetek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Component Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komponens bemenetek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>LCD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>3D Ready</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3D Ready</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Yes or No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen vagy Nem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>3D Enabled</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3D Enabled</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Yes or No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen vagy Nem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Plasma</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plazma</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Operating Temp From</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Min. üzemhőmérséklet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>32–110 degrees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32–110 fok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>32</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Operating Temp To</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Max. üzemhőmérséklet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>32–110 degrees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32–110 fok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>100</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Projection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projektoros</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Projection Tube Warranty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képcsőgarancia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>6, 12, or 18 months</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6, 12 vagy 18 hónap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><ph id="ph1">\#</ph> of Projection Tubes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képcsövek száma (<ph id="ph1">\#</ph> képcső)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>1–5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1–5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Attributes and attribute types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok és attribútumtípusok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Attributes are based on <bpt id="p1">*</bpt>attribute types<ept id="p1">*</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumok az <bpt id="p1">*</bpt>attribútumtípusokon<ept id="p1">*</ept> alapulnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The attribute type identifies the type of data that can be entered for a specific attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumtípus az adott attribútumba bevihető adatok típusát azonosítja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Finance and Operations currently supports the following attribute types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finance and Operations jelenleg a következő attribútumtípusokat támogatja:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">**</bpt>Currency<ept id="p1">**</ept> – This type supports a currency value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Pénznem<ept id="p1">**</ept> – Ez a típus egy pénznemértékeket támogat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>It can be bounded (that is, it can support a range of values), or it can be left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">**</bpt>DateTime<ept id="p1">**</ept> – This type supports a date and time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DateTime<ept id="p1">**</ept> – Ez a típus a dátum és idő értékeket támogatja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehet kötött, vagy nyitva is hagyható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Decimal<ept id="p1">**</ept> – This type supports a numerical value that includes decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Decimal<ept id="p1">**</ept> – Ez a típus egy numerikus értéket támogat, amely tizedesjegyeket tartalmaz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>It also supports a unit of measure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mértékegységet is támogat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehet kötött, vagy nyitva is hagyható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><bpt id="p1">**</bpt>Integer<ept id="p1">**</ept> – This type supports a numerical value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Itenger<ept id="p1">**</ept> – Ez a típus egy numerikus értékeket támogat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>It also supports a unit of measure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mértékegységet is támogat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehet kötött, vagy nyitva is hagyható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">**</bpt>Text<ept id="p1">**</ept> – This type supports a text value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Text<ept id="p1">**</ept> – Ez a típus egy szöveges értéket támogat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>It also supports a predefined set of possible values (that is, an <bpt id="p1">*</bpt>enumeration<ept id="p1">*</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előre meghatározott, lehetséges értékcsoportokat is támogat (vagyis <bpt id="p1">*</bpt>felsorolás<ept id="p1">*</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> – This type supports a binary value (<bpt id="p2">**</bpt>true<ept id="p2">**</ept> or <bpt id="p3">**</bpt>false<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> – Ez a típus egy bináris értéket támogat (<bpt id="p2">**</bpt>igaz<ept id="p2">**</ept> vagy <bpt id="p3">**</bpt>hamis<ept id="p3">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Reference<ept id="p1">**</ept> – This type references other attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hivatkozás<ept id="p1">**</ept> – Ez a típus más jellemzőkre hivatkozik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Set up attribute types in Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumtípusok beállítása a Finance and Operations alkalmazásban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Sign in to the Finance and Operations back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a Finance and Operations háttérirodai ügyfelébe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribute types<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a következő útvonalra: <bpt id="p1">**</bpt>Termékinformációk kezelése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Beállítás<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategóriák és attribútumok<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribútumtípusok<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Create two attribute types of the <bpt id="p1">**</bpt>Text<ept id="p1">**</ept> type, set the <bpt id="p2">**</bpt>Fixed list<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>, and then add a list of values:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre két <bpt id="p1">**</bpt>Szöveg<ept id="p1">**</ept> típusú attribútumtípust, állítsa a <bpt id="p2">**</bpt>Rögzített lista<ept id="p2">**</ept> lehetőséget az <bpt id="p3">**</bpt>Igen<ept id="p3">**</ept> beállításra, majd adja hozzá az értékek listáját:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Name one attribute type <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept>, and add the following values: <bpt id="p2">**</bpt>Oval<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Square<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Rectangle<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy attribútumtípust nevezzen el így: <bpt id="p1">**</bpt>Lencsealakzat<ept id="p1">**</ept>, és adja meg a következő értéket: <bpt id="p2">**</bpt>Ovális<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Szögletes<ept id="p3">**</ept> és <bpt id="p4">**</bpt>Négyszög<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Name the other attribute type <bpt id="p1">**</bpt>Sunglass brand<ept id="p1">**</ept>, and add the following values: <bpt id="p2">**</bpt>Ray ban<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Aviator<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Oakley<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A másik attribútumtípust nevezze el így: <bpt id="p1">**</bpt>Napszemüvegmárka<ept id="p1">**</ept>, és adja meg a következő értéket: <bpt id="p2">**</bpt>Ray ban<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Aviator<ept id="p3">**</ept> és <bpt id="p4">**</bpt>Oakley<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Attribute types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumtípusok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Set up an attribute in Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútum beállítása a Finance and Operations alkalmazásban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attributes<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a következő útvonalra: <bpt id="p1">**</bpt>Termékinformációk kezelése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Beállítás<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategóriák és attribútumok<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribútumok<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Create an attribute that is named <bpt id="p1">**</bpt>Lens<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre egy <bpt id="p1">**</bpt>Lencsék<ept id="p1">**</ept> nevű attribútum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Set the <bpt id="p1">**</bpt>Attribute type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Lens shape<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa az <bpt id="p1">**</bpt>Attribútumtípus<ept id="p1">**</ept> mezőt <bpt id="p2">**</bpt>Lencsealakzat<ept id="p2">**</ept> értékre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Attribute metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútum metaadatai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">*</bpt>Attribute metadata<ept id="p1">*</ept> lets you select options to specify how the attributes for each product should behave.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">*</bpt>Attribútum-metaadatok<ept id="p1">*</ept> beállítások megadását teszi lehetővé annak a megadásához, hogy az attribútumok termékenként hogyan működjenek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megadhatja például, hogy szükség van-e attribútumokra, hogy használhatóak-e keresésekhez, illetve szűrőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>For retail products, the attribute metadata settings can be overridden at the channel level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi termékek esetén az attribútummetaadat-beállítások a csatorna szintjén felülbírálhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>This capability will be discussed later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a lehetőséget a témakör későbbi tárgyalja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>As you might notice, the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page includes options that are related to attribute metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfigyelheti, hogy az <bpt id="p1">**</bpt>Attribútumok<ept id="p1">**</ept> lap tartalmazza a beállításokat, amelyek kapcsolódnak az attribútum-metaadatokhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Under <bpt id="p1">**</bpt>Attribute metadata for POS<ept id="p1">**</ept>, one option that is named <bpt id="p2">**</bpt>Can be refined<ept id="p2">**</ept> affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">**</bpt>attribútum-metaadatok a POS számára<ept id="p1">**</ept> alatt egy <bpt id="p2">**</bpt>Szűkíthető<ept id="p2">**</ept> nevű lehetőség befolyásolja az attribútumértékek viselkedését a kiskereskedelmi pénztárban, vagy azt, hogy a rendszer hogyan kezeli ezeket az attribútumértékeket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Only attributes for which you may set the <bpt id="p1">**</bpt>Can be refined<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, will show up for refinement or filtering of products in the retail POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csak azok az attribútumok, amelyekre beállíthatja a <bpt id="p1">**</bpt>Szűkíthető<ept id="p1">**</ept> lehetőség <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept> beállítását, jelennek meg a retail POS alkalmazásban termékek finomítására vagy szűrésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Here are the remaining attribute metadata options on the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbiak a további attribútummetaadat-beállítások az <bpt id="p1">**</bpt>Attribútumok<ept id="p1">**</ept> lapon:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Searchable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kereshető</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Retrievable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beolvasható</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Can be queried</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lekérdezhető</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Sortable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendezhető</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Allow multiple values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Több érték engedélyezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Ignore case and format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kis- és nagybetűk, illetve formázás figyelmen kívül hagyása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Complete match</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teljes egyezés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>These options were originally intended to improve the search functionality for the online storefront.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bár a Finance and Operations nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Customers can use this SDK to put products into a search index of their choice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In that way, they can build an optimal index to make sure that they index only attributes that, <bpt id="p1">*</bpt>in their opinion<ept id="p1">*</ept>, should be indexed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket <bpt id="p1">*</bpt>véleményük szerint<ept id="p1">*</ept> indexelni kell.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>For information about the purpose of these remaining options, see <bpt id="p1">[</bpt>Overview of the search schema in SharePoint Server 2013<ept id="p1">](https://technet.microsoft.com/library/jj219669.aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: <bpt id="p1">[</bpt>A SharePoint Server 2013 keresési sémájának áttekintése<ept id="p1">](https://technet.microsoft.com/library/jj219669.aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Filter settings for attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok szűrési beállításai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Filter settings for attributes let you define how the filters for attributes are shown in the retail POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumok szűrőbeállításaival határozható meg, hogyan jelennek meg a kiskereskedelmi pénztárban az attribútumok szűrői.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>To access the filter settings for an attribute, on the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page in Finance and Operations, select the attribute, and then, on the Action Pane, select <bpt id="p2">**</bpt>Filter settings<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy attribútum szűrőbeállításainak eléréséhez az <bpt id="p1">**</bpt>Attribútumok<ept id="p1">**</ept> lapon a Finance and Operations alkalmazásban válassza ki az attribútumot, majd a műveleti ablakban válassza a <bpt id="p2">**</bpt>Szűrőbeállítások<ept id="p2">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The <bpt id="p1">**</bpt>Filter display preferences<ept id="p1">**</ept> page includes the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Szűrőmegjelenítési beállítások<ept id="p1">**</ept> lap tartalmazza a következő mezőket:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – By default, this field is set to the name of the attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Név<ept id="p1">**</ept> – Alapértelmezés szerint a mező értéke az attribútum neve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>However, you can change the value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az érték azonban módosítható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source><bpt id="p1">**</bpt>Display option<ept id="p1">**</ept> – The following options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjelenítési beállítás<ept id="p1">**</ept> – A következő beállítások közül választhat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source><bpt id="p1">**</bpt>Single value<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Currency<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Decimal<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Integer<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Text<ept id="p6">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Egyetlen érték<ept id="p1">**</ept> – Ez a lehetőség a következő attribútumtípusokhoz érhető el: <bpt id="p2">**</bpt>logikai<ept id="p2">**</ept>, <bpt id="p3">**</bpt>pénznem<ept id="p3">**</ept>, <bpt id="p4">**</bpt>decimális<ept id="p4">**</ept>, <bpt id="p5">**</bpt>egész<ept id="p5">**</ept> és <bpt id="p6">**</bpt>szöveg<ept id="p6">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>This option enables single value selection for these attributes in the client for refinement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a beállítás lehetővé teszi az attribútumok finomítását egyetlen érték kiválasztásával az ügyfélprogramban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source><bpt id="p1">**</bpt>Multi value<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Text<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Többértékű<ept id="p1">**</ept> – Ez a lehetőség a következő attribútumtípusokhoz érhető el: <bpt id="p2">**</bpt>pénznem<ept id="p2">**</ept>, <bpt id="p3">**</bpt>decimális<ept id="p3">**</ept>, <bpt id="p4">**</bpt>egész<ept id="p4">**</ept> és <bpt id="p5">**</bpt>szöveg<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>This option enables multi-value selection for this attribute in the client for refinement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a beállítás lehetővé teszi az attribútum finomítását több érték kiválasztásával az ügyfélprogramban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source><bpt id="p1">**</bpt>Display control<ept id="p1">**</ept> – The following options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megjelenítés szabályozása<ept id="p1">**</ept> – A következő beállítások közül választhat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source><bpt id="p1">**</bpt>List<ept id="p1">**</ept> – This option is available for the all attribute types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lista<ept id="p1">**</ept> – Ez a beállítás minden attribútumtípushoz elérhető.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source><bpt id="p1">**</bpt>Range<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tartomány<ept id="p1">**</ept> – Ez a lehetőség a következő attribútumtípusokhoz érhető el: <bpt id="p2">**</bpt>pénznem<ept id="p2">**</ept>, <bpt id="p3">**</bpt>decimális<ept id="p3">**</ept> és <bpt id="p4">**</bpt>egész<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source><bpt id="p1">**</bpt>Slider<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Csúszka<ept id="p1">**</ept> – Ez a lehetőség a következő attribútumtípusokhoz érhető el: <bpt id="p2">**</bpt>pénznem<ept id="p2">**</ept>, <bpt id="p3">**</bpt>decimális<ept id="p3">**</ept> és <bpt id="p4">**</bpt>egész<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source><bpt id="p1">**</bpt>Slider with bars<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Csúszka sávokkal<ept id="p1">**</ept> – Ez a lehetőség a következő attribútumtípusokhoz érhető el: <bpt id="p2">**</bpt>pénznem<ept id="p2">**</ept>, <bpt id="p3">**</bpt>decimális<ept id="p3">**</ept> és <bpt id="p4">**</bpt>egész<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source><bpt id="p1">**</bpt>Threshold value<ept id="p1">**</ept> – This setting is required if you selected <bpt id="p2">**</bpt>Range<ept id="p2">**</ept> as the display control type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Küszöbérték<ept id="p1">**</ept> – A beállítás akkor szükséges, ha a <bpt id="p2">**</bpt>Tartomány<ept id="p2">**</ept> lehetőséget választotta a megjelenítés szabályozási típusának.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>You can define values by using a semicolon (;) as a delimiter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elválasztóként a pontosvessző (;) használatával definiálhat értékeket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>For example, for the filter like <bpt id="p1">**</bpt>Bag Volume<ept id="p1">**</ept>, a threshold value can be <bpt id="p2">**</bpt>10; 20; 50; 100; 200; 500; 1000; 5000<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a <bpt id="p1">**</bpt>Táskatérfogat<ept id="p1">**</ept> szűrőnél a küszöbérték lehet <bpt id="p2">**</bpt>10; 20. 50. 100. 200; 500; 1000; 5000<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>In this case, the retail POS will show the following ranges.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben az esetben a kiskereskedelmi pénztár a következő tartományokat jeleníti meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Any ranges that don't have any products in the result set will appear dimmed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tartományok, amelyek nem rendelkeznek termékekkel az eredményben, inaktívvá válnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Less than 10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kevesebb mint 10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>10 – 20</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10–20</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>20 – 50</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20–50</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>50 – 100</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">50–100</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>100 – 200</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100–200</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>200 – 500</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">200–500</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>500 or more</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">500 vagy több</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Attribute filter settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumszűrő beállításai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>After attributes have been defined, they can be assigned to attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumok a definiálásuk után attribútumcsoportokhoz rendelhetők.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>An <bpt id="p1">*</bpt>attribute group<ept id="p1">*</ept> is used to group the individual attributes for a component or subcomponent in a product configuration model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékkonfigurációs modellben lévő összetevők és részösszetevők egyes attribútumainak csoportosítására egy <bpt id="p1">*</bpt>attribútumcsoport<ept id="p1">*</ept> szolgál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>An attribute can be included in more than one attribute group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Több attribútumcsoportba is felvehet egy attribútumot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Attribute groups can help users configure products, because the various selections are arranged in a specific context.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumcsoportok segíthetik a felhasználókat a termékek konfigurálásában, mert a különböző kiválasztások rendezve jelennek meg az adott környezetben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Attribute groups can be assigned to retail categories or retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumcsoportokat hozzárendelheti a kiskereskedelmi csatornákhoz vagy a kiskereskedelmi kategóriákhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>You can also set default values for attributes that are included in an attribute group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelyek szerepelnek egy attribútumcsoportban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>For example, you add an attribute for color to an attribute group and select <bpt id="p1">**</bpt>Blue<ept id="p1">**</ept> as the default attribute value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például szín attribútum hozzáadása egy attribútumcsoporthoz, és a <bpt id="p1">**</bpt>kék<ept id="p1">**</ept> kiválasztása alapértelmezett attribútumértékeként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>In this case, when the attribute group is added to a retail product that includes color as one of its attributes, <bpt id="p1">**</bpt>Blue<ept id="p1">**</ept> appears as the default color for that product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ebben az esetben, amikor az attribútumcsoport hozzáadják egy kiskereskedelmi termékekhez, amelyik az egyik attribútumként a színt is tartalmazza, a <bpt id="p1">**</bpt>kék<ept id="p1">**</ept> jelenik meg a termék alapértelmezett színeként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Create an attribute group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoport létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribute groups<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugorjon a következő útvonalra: <bpt id="p1">**</bpt>Termékinformációk kezelése<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Beállítás<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategóriák és attribútumok<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribútumcsoportok<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Create an attribute group that is named <bpt id="p1">**</bpt>Fashion Sunglasses<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre egy <bpt id="p1">**</bpt>divatnapszemüvegek<ept id="p1">**</ept> nevű attribútumcsoport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Add the following attributes: <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sunglass brand<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja hozzá a következő attribútumokat: <bpt id="p1">**</bpt>Lencsealakzat<ept id="p1">**</ept> és <bpt id="p2">**</bpt>Napszemüvegmárka<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Assign attribute groups to retail categories</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoportok társítása kiskereskedelmi kategóriákhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy vagy több attribútumcsoport társítható a kategória-csomópontokkal a következő típusú kiskereskedelmikategória-hierarchiákban: kiskereskedelmi termékek hierarchiája, csatornák navigációs kategóriahierarchiája és kiegészítő termékek kategóriahierarchiája.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Then, when products are categorized, they inherit the attributes that are included in the attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután, a kategorizálást követően, a termékek öröklik az attribútumcsoportba tartozó attribútumokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Retail product hierarchy – Product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi termékek hierarchiája – Termékattribútum-csoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Follow these steps to assign attribute groups to categories in the Retail product hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kövesse az alábbi lépéseket attribútumcsoportok hozzárendeléséhez kategóriákhoz a kiskereskedelmi termékek hierarchiájában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Category and product management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail product hierarchy<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menjen ide: <bpt id="p1">**</bpt>Kiskereskedelem<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Kategória és termék kezelése<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kiskereskedelmi termékek hierarchiája<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Select <bpt id="p1">**</bpt>Fashion navigation hierarchy<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassz a <bpt id="p1">**</bpt>Divat navigációs hierarchiája<ept id="p1">**</ept> elemet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Under <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Product attribute groups<ept id="p3">**</ept> FastTab, add an attribute group that is named <bpt id="p4">**</bpt>Men's belt<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Férfiruházat<ept id="p1">**</ept> alatt jelölje be a <bpt id="p2">**</bpt>Nadrágok<ept id="p2">**</ept> kategóriát, majd a <bpt id="p3">**</bpt>Termékattribútum-csoportok<ept id="p3">**</ept> gyorslapon adja hozzá a <bpt id="p4">**</bpt>Férfiöv<ept id="p4">**</ept> nevű attribútumcsoportot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Select the <bpt id="p1">**</bpt>Fashion sunglasses<ept id="p1">**</ept> category, and verify the new attributes in the <bpt id="p2">**</bpt>Fashion Sunglasses<ept id="p2">**</ept> attribute group by selecting <bpt id="p3">**</bpt>View attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be a <bpt id="p1">**</bpt>Divatnapszemüvegek<ept id="p1">**</ept> kategóriát, és ellenőrizze az új attribútumokat a <bpt id="p2">**</bpt>Divatnapszemüvegek<ept id="p2">**</ept> attribútumcsoportban az <bpt id="p3">**</bpt>Attribútumok megtekintése<ept id="p3">**</ept> kiválasztásával.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>The attribute group should show the new <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sunglass brand<ept id="p2">**</ept> attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumcsoportnak meg kell jelenítenie az új <bpt id="p1">**</bpt>Lencsealakzat<ept id="p1">**</ept> és <bpt id="p2">**</bpt>Napszemüvegmárka<ept id="p2">**</ept> attribútumokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Under <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and verify the attributes for the <bpt id="p3">**</bpt>Men's belt<ept id="p3">**</ept> attribute group by selecting <bpt id="p4">**</bpt>View attributes<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Férfiruházat<ept id="p1">**</ept> alatt jelölje be a <bpt id="p2">**</bpt>Nadrágok<ept id="p2">**</ept> kategóriát, és ellenőrizze a <bpt id="p3">**</bpt>Férfiöv<ept id="p3">**</ept> attribútumcsoportot az <bpt id="p4">**</bpt>Attribútumok megtekintése<ept id="p4">**</ept> kiválasztásával.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>The attribute group should show the <bpt id="p1">**</bpt>Men's belt brand<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Belt fabric<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Belt size<ept id="p3">**</ept> attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumcsoportban meg kell jelenítenie a <bpt id="p1">**</bpt>Férfiövmárka<ept id="p1">**</ept>, az <bpt id="p2">**</bpt>Öv anyaga<ept id="p2">**</ept> és az <bpt id="p3">**</bpt>Öv mérete<ept id="p3">**</ept> attribútumoknak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezzel az eljárással attribútumcsoportokat is hozzárendelhet a kategóriákhoz a csatorna navigációs kategóriahierarchiájában és a kiegészítő termékek kategóriahierarchiájában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>In step 2, use the following navigation paths:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 2. lépésben használja a következő navigációs elérési utakat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Retail <ph id="ph1">&amp;gt;</ph> Category and product management <ph id="ph2">&amp;gt;</ph> Channel navigation categories</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Kiskereskedelem <ph id="ph1">&amp;gt;</ph> Kategória és termék kezelése <ph id="ph2">&amp;gt;</ph> Csatorna navigációs kategóriák</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Retail <ph id="ph1">&amp;gt;</ph> Category and product management <ph id="ph2">&amp;gt;</ph> Supplemental product categories</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Kiskereskedelem <ph id="ph1">&amp;gt;</ph> Kategória és termék kezelése <ph id="ph2">&amp;gt;</ph> Kiegészítő termékkategóriák</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Assign attribute groups to retail stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoportok hozzárendelése kiskereskedelmi boltokhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy vagy több attribútumcsoport társítható kiskereskedelmi üzlethez a kiskereskedelmi üzlet hierarchiában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kategorizálást követően az adott kiskereskedelmi üzletekhez bővített termékek öröklik az attribútumcsoportba tartozó attribútumokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel categories and product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyissa meg a következőt: <bpt id="p1">**</bpt>Kiskereskedelem<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Csatorna beállítása<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Csatornakategóriák és termékattribútumok<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Assign attribute groups to the Houston channel:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumcsoportok hozzárendelése a Houston csatornához:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Select the <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> csatornát.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>On the <bpt id="p1">**</bpt>Attribute group<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then, in the <bpt id="p3">**</bpt>Name<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>SharePointProvisionedProductAttributeGroup<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">**</bpt>Attribútumcsoport<ept id="p1">**</ept> gyorslapon válassza a <bpt id="p2">**</bpt>Hozzáadás<ept id="p2">**</ept> elemet, majd a <bpt id="p3">**</bpt>Név<ept id="p3">**</ept> mezőben válassza ki ezt: <bpt id="p4">**</bpt>SharePointProvisionedProductAttributeGroup<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> again, and then, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Men's belt<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ismét a <bpt id="p1">**</bpt>Hozzáadás<ept id="p1">**</ept> elemet, és ezt követően a <bpt id="p2">**</bpt>Név<ept id="p2">**</ept> mezőben válassza ki a <bpt id="p3">**</bpt>Férfiöv<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> again, and then, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ismét a <bpt id="p1">**</bpt>Hozzáadás<ept id="p1">**</ept> elemet, és ezt követően a <bpt id="p2">**</bpt>Név<ept id="p2">**</ept> mezőben válassza ki a <bpt id="p3">**</bpt>Divatnapszemüvegek<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>An option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy beállítás lehetővé teszi annak a megadását, hogy ennek a csatornának örökölnie kell az attribútumcsoportokat a szülő csatornájától a hierarchiában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>If you set the <bpt id="p1">**</bpt>Inherit<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha az <bpt id="p1">**</bpt>Öröklés<ept id="p1">**</ept> lehetőséget <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept> beállításra állítja, a gyermek csatornacsomópont örökli az összes attribútumcsoportot, az attribútumcsoportokban levő összes attribútummal együtt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Enable the attributes so that they are available in the Houston channel:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumok engedélyezése, hogy elérhetők legyenek a Houston csatornában:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Set attribute metadata<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza a műveleti ablakban az <bpt id="p1">**</bpt>Attribútum-metaadatok beállítása<ept id="p1">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> category node, and then, on the <bpt id="p2">**</bpt>Channel product attributes<ept id="p2">**</ept> FastTab, select <bpt id="p3">**</bpt>Include attribute<ept id="p3">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Divat<ept id="p1">**</ept> kategória-csomópont, majd a <bpt id="p2">**</bpt>Csatorna termékattribútumok<ept id="p2">**</ept> gyorslapon jelölje be az <bpt id="p3">**</bpt>Attribútum befoglalása<ept id="p3">**</ept> lehetőséget minden attribútumra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Select the <bpt id="p1">**</bpt>Fashion Accessories<ept id="p1">**</ept> category node, select the <bpt id="p2">**</bpt>Fashion Sunglasses<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Channel product attributes<ept id="p3">**</ept> FastTab, select <bpt id="p4">**</bpt>Include attribute<ept id="p4">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Divatáru kiegészítők<ept id="p1">**</ept> kategória-csomópontot, válassza ki a <bpt id="p2">**</bpt>Divatnapszemüvegek<ept id="p2">**</ept> kategóriát, majd a <bpt id="p3">**</bpt>Csatorna termékattribútumok<ept id="p3">**</ept> gyorslapon jelölje be az <bpt id="p4">**</bpt>Attribútum befoglalása<ept id="p4">**</ept> lehetőséget minden attribútumra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Select the <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept> category node, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Channel product attributes<ept id="p3">**</ept> FastTab, select <bpt id="p4">**</bpt>Include attribute<ept id="p4">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Férfiruházat<ept id="p1">**</ept> kategória-csomópontot, válassza ki a <bpt id="p2">**</bpt>Nadrágok<ept id="p2">**</ept> kategóriát, majd a <bpt id="p3">**</bpt>Csatorna termékattribútumok<ept id="p3">**</ept> gyorslapon jelölje be az <bpt id="p4">**</bpt>Attribútum befoglalása<ept id="p4">**</ept> lehetőséget minden attribútumra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Channel categories and product attributes – Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornakategóriák és termékattribútumok – Attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Overriding attribute values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumértékek felülbírálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>The default values of attributes can be overridden for individual products at the product level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az attribútumok alapértelmezett értéke felülírható az egyedi termékek esetében a termékszinten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett érték is felülírható meghatározott katalógusokba tartozó egyedi termékek esetében, amelyek egy adott kiskereskedelmi csatornát céloznak meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Override the attribute values of an individual product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyedi termékek attribútumértékeinek felülbírálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Category and product management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Released products by category<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menjen ide: <bpt id="p1">**</bpt>Kiskereskedelem<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Kategória és termék kezelése<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Felszabadított termékek kategóriák szerint<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fashion Accessories<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept> category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Divatáru<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Divatáru kiegészítők<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Divatnapszemüvegek<ept id="p3">**</ept> kategória-csomópontot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Select the required product in the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be a kívánt terméket a rácsban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Then, on the Action Pane, on the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Set up<ept id="p2">**</ept> group, select <bpt id="p3">**</bpt>Product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután a műveleti ablaktáblán a <bpt id="p1">**</bpt>Termék<ept id="p1">**</ept> lapon a <bpt id="p2">**</bpt>Beállítás<ept id="p2">**</ept> csoportban válassza a <bpt id="p3">**</bpt>Termékattribútumok<ept id="p3">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Select an attribute in the left pane, and then update its value in the right pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelöljön ki egy attribútumot a bal oldali ablakban, és frissítse az értékét a jobb oldali ablakban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Product details page – Product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékadatok lap – Termékattribútum-csoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Override the attribute values of products in a catalog</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékek attribútumértékeinek felülbírálása a katalógusban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Catalog management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All catalogs<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menjen ide: <bpt id="p1">**</bpt>Kiskereskedelem<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Katalóguskezelés<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Minden katalógus<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Select the <bpt id="p1">**</bpt>Fabrikam Base Catalog<ept id="p1">**</ept> catalog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Fabrikam Base Catalog<ept id="p1">**</ept> katalógust.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fashion Accessories<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept> category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Divatáru<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Divatáru kiegészítők<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Divatnapszemüvegek<ept id="p3">**</ept> kategória-csomópontot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>On the <bpt id="p1">**</bpt>Products<ept id="p1">**</ept> FastTab, select the required product, and then select <bpt id="p2">**</bpt>Attributes<ept id="p2">**</ept> above the product grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Termékek<ept id="p1">**</ept> gyorslapon jelölje be a szükséges terméket, és válassza ki az <bpt id="p2">**</bpt>Attribútumok<ept id="p2">**</ept> elemet a termékrács felett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>On the following FastTabs, update the values of the required attributes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Shared product media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megosztott termékhez tartozó média</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Shared product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megosztott termékattribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Channel media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornamédia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Channel product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornatermék-attribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Catalog product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katalógus-termékattribútum csoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Override the attribute values of products in a channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékek attribútumértékeinek felülbírálása egy csatornában</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel categories and product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyissa meg a következőt: <bpt id="p1">**</bpt>Kiskereskedelem<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Csatorna beállítása<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Csatornakategóriák és termékattribútumok<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Select the <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válassza ki a <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> csatornát.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>On the <bpt id="p1">**</bpt>Products<ept id="p1">**</ept> FastTab, select the required product, and then select <bpt id="p2">**</bpt>Attributes<ept id="p2">**</ept> above the product grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Termékek<ept id="p1">**</ept> gyorslapon jelölje be a szükséges terméket, és válassza ki az <bpt id="p2">**</bpt>Attribútumok<ept id="p2">**</ept> elemet a termékrács felett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>If no products are available, add products by selecting <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Products<ept id="p2">**</ept> FastTab and then selecting the required products in the <bpt id="p3">**</bpt>Add products<ept id="p3">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha egy termék sem áll rendelkezésre, végezze el a kiválasztott termékek hozzáadását a <bpt id="p1">**</bpt>Hozzáadás<ept id="p1">**</ept> elemmel a <bpt id="p2">**</bpt>Termékek<ept id="p2">**</ept> gyorslapon, majd a szükséges terméket válassza ki a <bpt id="p3">**</bpt>Termékek hozzáadása<ept id="p3">**</ept> párbeszédpanelen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>On the following FastTabs, update the values of the required attributes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Shared product media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megosztott termékhez tartozó média</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Shared product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megosztott termékattribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Channel media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornamédia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Channel product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornatermék-attribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Attribútumok és attribútumcsoportok
+description: Ez a témakör azt írja le, hogyan lehet attribútumok segítségével egy terméket és a jellemzőit leírni a felhasználó által definiált mezőkben.
+author: ashishmsft
+manager: AnnBe
+ms.date: 04/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2018-03-30
+ms.dyn365.ops.version: Application pdate 5, AX 8.0
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606895"
+---
+# <a name="attributes-and-attribute-groups"></a><span data-ttu-id="6084b-103">Attribútumok és attribútumcsoportok</span><span class="sxs-lookup"><span data-stu-id="6084b-103">Attributes and attribute groups</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="6084b-104">Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább).</span><span class="sxs-lookup"><span data-stu-id="6084b-104">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="6084b-105">A Microsoft Dynamics 365 for Finance and Operationsszolgáltatásban az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek.</span><span class="sxs-lookup"><span data-stu-id="6084b-105">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="6084b-106">A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához.</span><span class="sxs-lookup"><span data-stu-id="6084b-106">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="6084b-107">Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.</span><span class="sxs-lookup"><span data-stu-id="6084b-107">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
+
+<span data-ttu-id="6084b-108">Például egy tipikus televízió terméknek a következő attribútumai lehetnek.</span><span class="sxs-lookup"><span data-stu-id="6084b-108">For example, a typical television product might have the following attributes.</span></span>
+
+| <span data-ttu-id="6084b-109">Kategória</span><span class="sxs-lookup"><span data-stu-id="6084b-109">Category</span></span>   | <span data-ttu-id="6084b-110">Attribútum</span><span class="sxs-lookup"><span data-stu-id="6084b-110">Attribute</span></span>                | <span data-ttu-id="6084b-111">Megengedett értékek</span><span class="sxs-lookup"><span data-stu-id="6084b-111">Permissible values</span></span>          | <span data-ttu-id="6084b-112">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="6084b-112">Default value</span></span> |
+|------------|--------------------------|-----------------------------|---------------|
+| <span data-ttu-id="6084b-113">TV és videó</span><span class="sxs-lookup"><span data-stu-id="6084b-113">TV & Video</span></span> | <span data-ttu-id="6084b-114">Márka</span><span class="sxs-lookup"><span data-stu-id="6084b-114">Brand</span></span>                    | <span data-ttu-id="6084b-115">Bármilyen érvényes márkaérték</span><span class="sxs-lookup"><span data-stu-id="6084b-115">Any valid brand value</span></span>       | <span data-ttu-id="6084b-116">Nincs</span><span class="sxs-lookup"><span data-stu-id="6084b-116">None</span></span>          |
+| <span data-ttu-id="6084b-117">TV</span><span class="sxs-lookup"><span data-stu-id="6084b-117">TV</span></span>         | <span data-ttu-id="6084b-118">Képernyőméret</span><span class="sxs-lookup"><span data-stu-id="6084b-118">Screen Size</span></span>              | <span data-ttu-id="6084b-119">20–80 hüvelyk</span><span class="sxs-lookup"><span data-stu-id="6084b-119">20–80 inches</span></span>                | <span data-ttu-id="6084b-120">Nincs</span><span class="sxs-lookup"><span data-stu-id="6084b-120">None</span></span>          |
+|            | <span data-ttu-id="6084b-121">Függőleges felbontás</span><span class="sxs-lookup"><span data-stu-id="6084b-121">Vertical Resolution</span></span>      | <span data-ttu-id="6084b-122">480i, 720p, 1080i vagy 1080p</span><span class="sxs-lookup"><span data-stu-id="6084b-122">480i, 720p, 1080i, or 1080p</span></span> | <span data-ttu-id="6084b-123">1080p</span><span class="sxs-lookup"><span data-stu-id="6084b-123">1080p</span></span>         |
+|            | <span data-ttu-id="6084b-124">Képernyő-frissítési gyakoriság</span><span class="sxs-lookup"><span data-stu-id="6084b-124">Screen Refresh Rate</span></span>      | <span data-ttu-id="6084b-125">60hz, 120hz vagy 240hz</span><span class="sxs-lookup"><span data-stu-id="6084b-125">60hz, 120hz, or 240hz</span></span>       | <span data-ttu-id="6084b-126">60hz</span><span class="sxs-lookup"><span data-stu-id="6084b-126">60hz</span></span>          |
+|            | <span data-ttu-id="6084b-127">HDMI-bemenetek</span><span class="sxs-lookup"><span data-stu-id="6084b-127">HDMI Inputs</span></span>              | <span data-ttu-id="6084b-128">0–10</span><span class="sxs-lookup"><span data-stu-id="6084b-128">0–10</span></span>                        | <span data-ttu-id="6084b-129">3</span><span class="sxs-lookup"><span data-stu-id="6084b-129">3</span></span>             |
+|            | <span data-ttu-id="6084b-130">DVI-bemenetek</span><span class="sxs-lookup"><span data-stu-id="6084b-130">DVI Inputs</span></span>               | <span data-ttu-id="6084b-131">0–10</span><span class="sxs-lookup"><span data-stu-id="6084b-131">0–10</span></span>                        | <span data-ttu-id="6084b-132">1</span><span class="sxs-lookup"><span data-stu-id="6084b-132">1</span></span>             |
+|            | <span data-ttu-id="6084b-133">Kompozit bemenetek</span><span class="sxs-lookup"><span data-stu-id="6084b-133">Composite Inputs</span></span>         | <span data-ttu-id="6084b-134">0–10</span><span class="sxs-lookup"><span data-stu-id="6084b-134">0–10</span></span>                        | <span data-ttu-id="6084b-135">2</span><span class="sxs-lookup"><span data-stu-id="6084b-135">2</span></span>             |
+|            | <span data-ttu-id="6084b-136">Komponens bemenetek</span><span class="sxs-lookup"><span data-stu-id="6084b-136">Component Inputs</span></span>         | <span data-ttu-id="6084b-137">0–10</span><span class="sxs-lookup"><span data-stu-id="6084b-137">0–10</span></span>                        | <span data-ttu-id="6084b-138">1</span><span class="sxs-lookup"><span data-stu-id="6084b-138">1</span></span>             |
+| <span data-ttu-id="6084b-139">LCD</span><span class="sxs-lookup"><span data-stu-id="6084b-139">LCD</span></span>        | <span data-ttu-id="6084b-140">3D Ready</span><span class="sxs-lookup"><span data-stu-id="6084b-140">3D Ready</span></span>                 | <span data-ttu-id="6084b-141">Igen vagy Nem</span><span class="sxs-lookup"><span data-stu-id="6084b-141">Yes or No</span></span>                   | <span data-ttu-id="6084b-142">Igen</span><span class="sxs-lookup"><span data-stu-id="6084b-142">Yes</span></span>           |
+|            | <span data-ttu-id="6084b-143">3D Enabled</span><span class="sxs-lookup"><span data-stu-id="6084b-143">3D Enabled</span></span>               | <span data-ttu-id="6084b-144">Igen vagy Nem</span><span class="sxs-lookup"><span data-stu-id="6084b-144">Yes or No</span></span>                   | <span data-ttu-id="6084b-145">Nincs</span><span class="sxs-lookup"><span data-stu-id="6084b-145">No</span></span>            |
+| <span data-ttu-id="6084b-146">Plazma</span><span class="sxs-lookup"><span data-stu-id="6084b-146">Plasma</span></span>     | <span data-ttu-id="6084b-147">Min. üzemhőmérséklet</span><span class="sxs-lookup"><span data-stu-id="6084b-147">Operating Temp From</span></span>      | <span data-ttu-id="6084b-148">32–110 fok</span><span class="sxs-lookup"><span data-stu-id="6084b-148">32–110 degrees</span></span>              | <span data-ttu-id="6084b-149">32</span><span class="sxs-lookup"><span data-stu-id="6084b-149">32</span></span>            |
+|            | <span data-ttu-id="6084b-150">Max. üzemhőmérséklet</span><span class="sxs-lookup"><span data-stu-id="6084b-150">Operating Temp To</span></span>        | <span data-ttu-id="6084b-151">32–110 fok</span><span class="sxs-lookup"><span data-stu-id="6084b-151">32–110 degrees</span></span>              | <span data-ttu-id="6084b-152">100</span><span class="sxs-lookup"><span data-stu-id="6084b-152">100</span></span>           |
+| <span data-ttu-id="6084b-153">Projektoros</span><span class="sxs-lookup"><span data-stu-id="6084b-153">Projection</span></span> | <span data-ttu-id="6084b-154">Képcsőgarancia</span><span class="sxs-lookup"><span data-stu-id="6084b-154">Projection Tube Warranty</span></span> | <span data-ttu-id="6084b-155">6, 12 vagy 18 hónap</span><span class="sxs-lookup"><span data-stu-id="6084b-155">6, 12, or 18 months</span></span>         | <span data-ttu-id="6084b-156">12</span><span class="sxs-lookup"><span data-stu-id="6084b-156">12</span></span>            |
+|            | <span data-ttu-id="6084b-157">Képcsövek száma (\# képcső)</span><span class="sxs-lookup"><span data-stu-id="6084b-157">\# of Projection Tubes</span></span>   | <span data-ttu-id="6084b-158">1–5</span><span class="sxs-lookup"><span data-stu-id="6084b-158">1–5</span></span>                         | <span data-ttu-id="6084b-159">3</span><span class="sxs-lookup"><span data-stu-id="6084b-159">3</span></span>             |
+
+## <a name="attributes-and-attribute-types"></a><span data-ttu-id="6084b-160">Attribútumok és attribútumtípusok</span><span class="sxs-lookup"><span data-stu-id="6084b-160">Attributes and attribute types</span></span>
+
+<span data-ttu-id="6084b-161">Az attribútumok az *attribútumtípusokon* alapulnak.</span><span class="sxs-lookup"><span data-stu-id="6084b-161">Attributes are based on *attribute types*.</span></span> <span data-ttu-id="6084b-162">Az attribútumtípus az adott attribútumba bevihető adatok típusát azonosítja.</span><span class="sxs-lookup"><span data-stu-id="6084b-162">The attribute type identifies the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="6084b-163">A Finance and Operations jelenleg a következő attribútumtípusokat támogatja:</span><span class="sxs-lookup"><span data-stu-id="6084b-163">Finance and Operations currently supports the following attribute types:</span></span>
+
+- <span data-ttu-id="6084b-164">**Pénznem** – Ez a típus egy pénznemértékeket támogat.</span><span class="sxs-lookup"><span data-stu-id="6084b-164">**Currency** – This type supports a currency value.</span></span> <span data-ttu-id="6084b-165">Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.</span><span class="sxs-lookup"><span data-stu-id="6084b-165">It can be bounded (that is, it can support a range of values), or it can be left open.</span></span>
+- <span data-ttu-id="6084b-166">**DateTime** – Ez a típus a dátum és idő értékeket támogatja</span><span class="sxs-lookup"><span data-stu-id="6084b-166">**DateTime** – This type supports a date and time value.</span></span> <span data-ttu-id="6084b-167">Lehet kötött, vagy nyitva is hagyható.</span><span class="sxs-lookup"><span data-stu-id="6084b-167">It can be bounded or left open.</span></span>
+- <span data-ttu-id="6084b-168">**Decimal** – Ez a típus egy numerikus értéket támogat, amely tizedesjegyeket tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="6084b-168">**Decimal** – This type supports a numerical value that includes decimal places.</span></span> <span data-ttu-id="6084b-169">Mértékegységet is támogat.</span><span class="sxs-lookup"><span data-stu-id="6084b-169">It also supports a unit of measure.</span></span> <span data-ttu-id="6084b-170">Lehet kötött, vagy nyitva is hagyható.</span><span class="sxs-lookup"><span data-stu-id="6084b-170">It can be bounded or left open.</span></span>
+- <span data-ttu-id="6084b-171">**Itenger** – Ez a típus egy numerikus értékeket támogat.</span><span class="sxs-lookup"><span data-stu-id="6084b-171">**Integer** – This type supports a numerical value.</span></span> <span data-ttu-id="6084b-172">Mértékegységet is támogat.</span><span class="sxs-lookup"><span data-stu-id="6084b-172">It also supports a unit of measure.</span></span> <span data-ttu-id="6084b-173">Lehet kötött, vagy nyitva is hagyható.</span><span class="sxs-lookup"><span data-stu-id="6084b-173">It can be bounded or left open.</span></span>
+- <span data-ttu-id="6084b-174">**Text** – Ez a típus egy szöveges értéket támogat.</span><span class="sxs-lookup"><span data-stu-id="6084b-174">**Text** – This type supports a text value.</span></span> <span data-ttu-id="6084b-175">Előre meghatározott, lehetséges értékcsoportokat is támogat (vagyis *felsorolás*).</span><span class="sxs-lookup"><span data-stu-id="6084b-175">It also supports a predefined set of possible values (that is, an *enumeration*).</span></span>
+- <span data-ttu-id="6084b-176">**Boolean** – Ez a típus egy bináris értéket támogat (**igaz** vagy **hamis**).</span><span class="sxs-lookup"><span data-stu-id="6084b-176">**Boolean** – This type supports a binary value (**true** or **false**).</span></span>
+- <span data-ttu-id="6084b-177">**Hivatkozás** – Ez a típus más jellemzőkre hivatkozik.</span><span class="sxs-lookup"><span data-stu-id="6084b-177">**Reference** – This type references other attributes.</span></span>
+
+### <a name="set-up-attribute-types-in-finance-and-operations"></a><span data-ttu-id="6084b-178">Attribútumtípusok beállítása a Finance and Operations alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="6084b-178">Set up attribute types in Finance and Operations</span></span>
+
+1. <span data-ttu-id="6084b-179">Jelentkezzen be a Finance and Operations háttérirodai ügyfelébe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-179">Sign in to the Finance and Operations back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-180">Ugorjon a következő útvonalra: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Kategóriák és attribútumok** &gt; **Attribútumtípusok**.</span><span class="sxs-lookup"><span data-stu-id="6084b-180">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.</span></span>
+3. <span data-ttu-id="6084b-181">Hozzon létre két **Szöveg** típusú attribútumtípust, állítsa a **Rögzített lista** lehetőséget az **Igen** beállításra, majd adja hozzá az értékek listáját:</span><span class="sxs-lookup"><span data-stu-id="6084b-181">Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:</span></span>
+
+    - <span data-ttu-id="6084b-182">Egy attribútumtípust nevezzen el így: **Lencsealakzat**, és adja meg a következő értéket: **Ovális**, **Szögletes** és **Négyszög**.</span><span class="sxs-lookup"><span data-stu-id="6084b-182">Name one attribute type **Lens shape**, and add the following values: **Oval**, **Square**, and **Rectangle**.</span></span>
+    - <span data-ttu-id="6084b-183">A másik attribútumtípust nevezze el így: **Napszemüvegmárka**, és adja meg a következő értéket: **Ray ban**, **Aviator** és **Oakley**.</span><span class="sxs-lookup"><span data-stu-id="6084b-183">Name the other attribute type **Sunglass brand**, and add the following values: **Ray ban**, **Aviator**, and **Oakley**.</span></span>
+
+![Attribútumtípusok](media/AttributeType.png)
+
+### <a name="set-up-an-attribute-in-finance-and-operations"></a><span data-ttu-id="6084b-185">Attribútum beállítása a Finance and Operations alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="6084b-185">Set up an attribute in Finance and Operations</span></span>
+
+1. <span data-ttu-id="6084b-186">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-186">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-187">Ugorjon a következő útvonalra: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Kategóriák és attribútumok** &gt; **Attribútumok**.</span><span class="sxs-lookup"><span data-stu-id="6084b-187">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.</span></span>
+3. <span data-ttu-id="6084b-188">Hozzon létre egy **Lencsék** nevű attribútum.</span><span class="sxs-lookup"><span data-stu-id="6084b-188">Create an attribute that is named **Lens**.</span></span>
+4. <span data-ttu-id="6084b-189">Állítsa az **Attribútumtípus** mezőt **Lencsealakzat** értékre.</span><span class="sxs-lookup"><span data-stu-id="6084b-189">Set the **Attribute type** field to **Lens shape**.</span></span>
+
+![Attribútumok](media/Attribute.png)
+
+## <a name="attribute-metadata"></a><span data-ttu-id="6084b-191">Attribútum metaadatai</span><span class="sxs-lookup"><span data-stu-id="6084b-191">Attribute metadata</span></span>
+
+<span data-ttu-id="6084b-192">Az *Attribútum-metaadatok* beállítások megadását teszi lehetővé annak a megadásához, hogy az attribútumok termékenként hogyan működjenek.</span><span class="sxs-lookup"><span data-stu-id="6084b-192">*Attribute metadata* lets you select options to specify how the attributes for each product should behave.</span></span> <span data-ttu-id="6084b-193">Megadhatja például, hogy szükség van-e attribútumokra, hogy használhatóak-e keresésekhez, illetve szűrőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-193">For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.</span></span>
+
+<span data-ttu-id="6084b-194">Kiskereskedelmi termékek esetén az attribútummetaadat-beállítások a csatorna szintjén felülbírálhatók.</span><span class="sxs-lookup"><span data-stu-id="6084b-194">For retail products, the attribute metadata settings can be overridden at the channel level.</span></span> <span data-ttu-id="6084b-195">Ezt a lehetőséget a témakör későbbi tárgyalja.</span><span class="sxs-lookup"><span data-stu-id="6084b-195">This capability will be discussed later in this topic.</span></span>
+
+<span data-ttu-id="6084b-196">Megfigyelheti, hogy az **Attribútumok** lap tartalmazza a beállításokat, amelyek kapcsolódnak az attribútum-metaadatokhoz.</span><span class="sxs-lookup"><span data-stu-id="6084b-196">As you might notice, the **Attributes** page includes options that are related to attribute metadata.</span></span> <span data-ttu-id="6084b-197">Az **attribútum-metaadatok a POS számára** alatt egy **Szűkíthető** nevű lehetőség befolyásolja az attribútumértékek viselkedését a kiskereskedelmi pénztárban, vagy azt, hogy a rendszer hogyan kezeli ezeket az attribútumértékeket.</span><span class="sxs-lookup"><span data-stu-id="6084b-197">Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values.</span></span> <span data-ttu-id="6084b-198">Csak azok az attribútumok, amelyekre beállíthatja a **Szűkíthető** lehetőség **Igen** beállítását, jelennek meg a retail POS alkalmazásban termékek finomítására vagy szűrésére.</span><span class="sxs-lookup"><span data-stu-id="6084b-198">Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the retail POS.</span></span>
+
+<span data-ttu-id="6084b-199">Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** lapon:</span><span class="sxs-lookup"><span data-stu-id="6084b-199">Here are the remaining attribute metadata options on the **Attributes** page:</span></span>
+
+- <span data-ttu-id="6084b-200">Kereshető</span><span class="sxs-lookup"><span data-stu-id="6084b-200">Searchable</span></span>
+- <span data-ttu-id="6084b-201">Beolvasható</span><span class="sxs-lookup"><span data-stu-id="6084b-201">Retrievable</span></span>
+- <span data-ttu-id="6084b-202">Lekérdezhető</span><span class="sxs-lookup"><span data-stu-id="6084b-202">Can be queried</span></span>
+- <span data-ttu-id="6084b-203">Rendezhető</span><span class="sxs-lookup"><span data-stu-id="6084b-203">Sortable</span></span>
+- <span data-ttu-id="6084b-204">Több érték engedélyezése</span><span class="sxs-lookup"><span data-stu-id="6084b-204">Allow multiple values</span></span>
+- <span data-ttu-id="6084b-205">Kis- és nagybetűk, illetve formázás figyelmen kívül hagyása</span><span class="sxs-lookup"><span data-stu-id="6084b-205">Ignore case and format</span></span>
+- <span data-ttu-id="6084b-206">Teljes egyezés</span><span class="sxs-lookup"><span data-stu-id="6084b-206">Complete match</span></span>
+
+<span data-ttu-id="6084b-207">Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak.</span><span class="sxs-lookup"><span data-stu-id="6084b-207">These options were originally intended to improve the search functionality for the online storefront.</span></span> <span data-ttu-id="6084b-208">Bár a Finance and Operations nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK).</span><span class="sxs-lookup"><span data-stu-id="6084b-208">Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK).</span></span> <span data-ttu-id="6084b-209">Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben.</span><span class="sxs-lookup"><span data-stu-id="6084b-209">Customers can use this SDK to put products into a search index of their choice.</span></span> <span data-ttu-id="6084b-210">Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább.</span><span class="sxs-lookup"><span data-stu-id="6084b-210">Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on.</span></span> <span data-ttu-id="6084b-211">Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.</span><span class="sxs-lookup"><span data-stu-id="6084b-211">In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.</span></span>
+
+<span data-ttu-id="6084b-212">A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/library/jj219669.aspx).</span><span class="sxs-lookup"><span data-stu-id="6084b-212">For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).</span></span>
+
+## <a name="filter-settings-for-attributes"></a><span data-ttu-id="6084b-213">Attribútumok szűrési beállításai</span><span class="sxs-lookup"><span data-stu-id="6084b-213">Filter settings for attributes</span></span>
+
+<span data-ttu-id="6084b-214">Az attribútumok szűrőbeállításaival határozható meg, hogyan jelennek meg a kiskereskedelmi pénztárban az attribútumok szűrői.</span><span class="sxs-lookup"><span data-stu-id="6084b-214">Filter settings for attributes let you define how the filters for attributes are shown in the retail POS.</span></span> <span data-ttu-id="6084b-215">Egy attribútum szűrőbeállításainak eléréséhez az **Attribútumok** lapon a Finance and Operations alkalmazásban válassza ki az attribútumot, majd a műveleti ablakban válassza a **Szűrőbeállítások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6084b-215">To access the filter settings for an attribute, on the **Attributes** page in Finance and Operations, select the attribute, and then, on the Action Pane, select **Filter settings**.</span></span>
+
+<span data-ttu-id="6084b-216">A **Szűrőmegjelenítési beállítások** lap tartalmazza a következő mezőket:</span><span class="sxs-lookup"><span data-stu-id="6084b-216">The **Filter display preferences** page includes the following fields:</span></span>
+
+- <span data-ttu-id="6084b-217">**Név** – Alapértelmezés szerint a mező értéke az attribútum neve.</span><span class="sxs-lookup"><span data-stu-id="6084b-217">**Name** – By default, this field is set to the name of the attribute.</span></span> <span data-ttu-id="6084b-218">Ez az érték azonban módosítható.</span><span class="sxs-lookup"><span data-stu-id="6084b-218">However, you can change the value.</span></span>
+- <span data-ttu-id="6084b-219">**Megjelenítési beállítás** – A következő beállítások közül választhat:</span><span class="sxs-lookup"><span data-stu-id="6084b-219">**Display option** – The following options are available:</span></span>
+
+    - <span data-ttu-id="6084b-220">**Egyetlen érték** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **logikai**, **pénznem**, **decimális**, **egész** és **szöveg**.</span><span class="sxs-lookup"><span data-stu-id="6084b-220">**Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**.</span></span> <span data-ttu-id="6084b-221">Ez a beállítás lehetővé teszi az attribútumok finomítását egyetlen érték kiválasztásával az ügyfélprogramban.</span><span class="sxs-lookup"><span data-stu-id="6084b-221">This option enables single value selection for these attributes in the client for refinement.</span></span>
+    - <span data-ttu-id="6084b-222">**Többértékű** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális**, **egész** és **szöveg**.</span><span class="sxs-lookup"><span data-stu-id="6084b-222">**Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**.</span></span> <span data-ttu-id="6084b-223">Ez a beállítás lehetővé teszi az attribútum finomítását több érték kiválasztásával az ügyfélprogramban.</span><span class="sxs-lookup"><span data-stu-id="6084b-223">This option enables multi-value selection for this attribute in the client for refinement.</span></span>
+
+- <span data-ttu-id="6084b-224">**Megjelenítés szabályozása** – A következő beállítások közül választhat:</span><span class="sxs-lookup"><span data-stu-id="6084b-224">**Display control** – The following options are available:</span></span>
+
+    - <span data-ttu-id="6084b-225">**Lista** – Ez a beállítás minden attribútumtípushoz elérhető.</span><span class="sxs-lookup"><span data-stu-id="6084b-225">**List** – This option is available for the all attribute types.</span></span>
+    - <span data-ttu-id="6084b-226">**Tartomány** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.</span><span class="sxs-lookup"><span data-stu-id="6084b-226">**Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+    - <span data-ttu-id="6084b-227">**Csúszka** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.</span><span class="sxs-lookup"><span data-stu-id="6084b-227">**Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+    - <span data-ttu-id="6084b-228">**Csúszka sávokkal** – Ez a lehetőség a következő attribútumtípusokhoz érhető el: **pénznem**, **decimális** és **egész**.</span><span class="sxs-lookup"><span data-stu-id="6084b-228">**Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+
+- <span data-ttu-id="6084b-229">**Küszöbérték** – A beállítás akkor szükséges, ha a **Tartomány** lehetőséget választotta a megjelenítés szabályozási típusának.</span><span class="sxs-lookup"><span data-stu-id="6084b-229">**Threshold value** – This setting is required if you selected **Range** as the display control type.</span></span> <span data-ttu-id="6084b-230">Elválasztóként a pontosvessző (;) használatával definiálhat értékeket.</span><span class="sxs-lookup"><span data-stu-id="6084b-230">You can define values by using a semicolon (;) as a delimiter.</span></span>
+
+    <span data-ttu-id="6084b-231">Például a **Táskatérfogat** szűrőnél a küszöbérték lehet **10; 20. 50. 100. 200; 500; 1000; 5000**.</span><span class="sxs-lookup"><span data-stu-id="6084b-231">For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**.</span></span> <span data-ttu-id="6084b-232">Ebben az esetben a kiskereskedelmi pénztár a következő tartományokat jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="6084b-232">In this case, the retail POS will show the following ranges.</span></span> <span data-ttu-id="6084b-233">A tartományok, amelyek nem rendelkeznek termékekkel az eredményben, inaktívvá válnak.</span><span class="sxs-lookup"><span data-stu-id="6084b-233">Any ranges that don't have any products in the result set will appear dimmed.</span></span>
+
+    - <span data-ttu-id="6084b-234">Kevesebb mint 10</span><span class="sxs-lookup"><span data-stu-id="6084b-234">Less than 10</span></span>
+    - <span data-ttu-id="6084b-235">10–20</span><span class="sxs-lookup"><span data-stu-id="6084b-235">10 – 20</span></span>
+    - <span data-ttu-id="6084b-236">20–50</span><span class="sxs-lookup"><span data-stu-id="6084b-236">20 – 50</span></span>
+    - <span data-ttu-id="6084b-237">50–100</span><span class="sxs-lookup"><span data-stu-id="6084b-237">50 – 100</span></span>
+    - <span data-ttu-id="6084b-238">100–200</span><span class="sxs-lookup"><span data-stu-id="6084b-238">100 – 200</span></span>
+    - <span data-ttu-id="6084b-239">200–500</span><span class="sxs-lookup"><span data-stu-id="6084b-239">200 – 500</span></span>
+    - <span data-ttu-id="6084b-240">500 vagy több</span><span class="sxs-lookup"><span data-stu-id="6084b-240">500 or more</span></span>
+
+![Attribútumszűrő beállításai](media/AttributeFilterSettings.PNG)
+
+## <a name="attribute-groups"></a><span data-ttu-id="6084b-242">Attribútumcsoportok</span><span class="sxs-lookup"><span data-stu-id="6084b-242">Attribute groups</span></span>
+
+<span data-ttu-id="6084b-243">Az attribútumok a definiálásuk után attribútumcsoportokhoz rendelhetők.</span><span class="sxs-lookup"><span data-stu-id="6084b-243">After attributes have been defined, they can be assigned to attribute groups.</span></span> <span data-ttu-id="6084b-244">A termékkonfigurációs modellben lévő összetevők és részösszetevők egyes attribútumainak csoportosítására egy *attribútumcsoport* szolgál.</span><span class="sxs-lookup"><span data-stu-id="6084b-244">An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model.</span></span> <span data-ttu-id="6084b-245">Több attribútumcsoportba is felvehet egy attribútumot.</span><span class="sxs-lookup"><span data-stu-id="6084b-245">An attribute can be included in more than one attribute group.</span></span> <span data-ttu-id="6084b-246">Az attribútumcsoportok segíthetik a felhasználókat a termékek konfigurálásában, mert a különböző kiválasztások rendezve jelennek meg az adott környezetben.</span><span class="sxs-lookup"><span data-stu-id="6084b-246">Attribute groups can help users configure products, because the various selections are arranged in a specific context.</span></span> <span data-ttu-id="6084b-247">Az attribútumcsoportokat hozzárendelheti a kiskereskedelmi csatornákhoz vagy a kiskereskedelmi kategóriákhoz.</span><span class="sxs-lookup"><span data-stu-id="6084b-247">Attribute groups can be assigned to retail categories or retail channels.</span></span>
+
+<span data-ttu-id="6084b-248">Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelyek szerepelnek egy attribútumcsoportban.</span><span class="sxs-lookup"><span data-stu-id="6084b-248">You can also set default values for attributes that are included in an attribute group.</span></span> <span data-ttu-id="6084b-249">Például szín attribútum hozzáadása egy attribútumcsoporthoz, és a **kék** kiválasztása alapértelmezett attribútumértékeként.</span><span class="sxs-lookup"><span data-stu-id="6084b-249">For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value.</span></span> <span data-ttu-id="6084b-250">Ebben az esetben, amikor az attribútumcsoport hozzáadják egy kiskereskedelmi termékekhez, amelyik az egyik attribútumként a színt is tartalmazza, a **kék** jelenik meg a termék alapértelmezett színeként.</span><span class="sxs-lookup"><span data-stu-id="6084b-250">In this case, when the attribute group is added to a retail product that includes color as one of its attributes, **Blue** appears as the default color for that product.</span></span>
+
+![Attribútumcsoportok](media/AttributeGroup.png)
+
+### <a name="create-an-attribute-group"></a><span data-ttu-id="6084b-252">Attribútumcsoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="6084b-252">Create an attribute group</span></span>
+
+1. <span data-ttu-id="6084b-253">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-253">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-254">Ugorjon a következő útvonalra: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Kategóriák és attribútumok** &gt; **Attribútumcsoportok**.</span><span class="sxs-lookup"><span data-stu-id="6084b-254">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.</span></span>
+3. <span data-ttu-id="6084b-255">Hozzon létre egy **divatnapszemüvegek** nevű attribútumcsoport.</span><span class="sxs-lookup"><span data-stu-id="6084b-255">Create an attribute group that is named **Fashion Sunglasses**.</span></span>
+4. <span data-ttu-id="6084b-256">Adja hozzá a következő attribútumokat: **Lencsealakzat** és **Napszemüvegmárka**.</span><span class="sxs-lookup"><span data-stu-id="6084b-256">Add the following attributes: **Lens shape** and **Sunglass brand**.</span></span>
+
+### <a name="assign-attribute-groups-to-retail-categories"></a><span data-ttu-id="6084b-257">Attribútumcsoportok társítása kiskereskedelmi kategóriákhoz</span><span class="sxs-lookup"><span data-stu-id="6084b-257">Assign attribute groups to retail categories</span></span>
+
+<span data-ttu-id="6084b-258">Egy vagy több attribútumcsoport társítható a kategória-csomópontokkal a következő típusú kiskereskedelmikategória-hierarchiákban: kiskereskedelmi termékek hierarchiája, csatornák navigációs kategóriahierarchiája és kiegészítő termékek kategóriahierarchiája.</span><span class="sxs-lookup"><span data-stu-id="6084b-258">One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy.</span></span> <span data-ttu-id="6084b-259">Ezután, a kategorizálást követően, a termékek öröklik az attribútumcsoportba tartozó attribútumokat.</span><span class="sxs-lookup"><span data-stu-id="6084b-259">Then, when products are categorized, they inherit the attributes that are included in the attribute groups.</span></span>
+
+![Kiskereskedelmi termékek hierarchiája – Termékattribútum-csoportok](media/AGRetailProdHierarchy.PNG)
+
+<span data-ttu-id="6084b-261">Kövesse az alábbi lépéseket attribútumcsoportok hozzárendeléséhez kategóriákhoz a kiskereskedelmi termékek hierarchiájában.</span><span class="sxs-lookup"><span data-stu-id="6084b-261">Follow these steps to assign attribute groups to categories in the Retail product hierarchy.</span></span>
+
+1. <span data-ttu-id="6084b-262">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-262">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-263">Menjen ide: **Kiskereskedelem** &gt; **Kategória és termék kezelése** &gt; **Kiskereskedelmi termékek hierarchiája**.</span><span class="sxs-lookup"><span data-stu-id="6084b-263">Go to **Retail** &gt; **Category and product management** &gt; **Retail product hierarchy**.</span></span>
+3. <span data-ttu-id="6084b-264">Válassz a **Divat navigációs hierarchiája** elemet.</span><span class="sxs-lookup"><span data-stu-id="6084b-264">Select **Fashion navigation hierarchy**.</span></span>
+4. <span data-ttu-id="6084b-265">A **Férfiruházat** alatt jelölje be a **Nadrágok** kategóriát, majd a **Termékattribútum-csoportok** gyorslapon adja hozzá a **Férfiöv** nevű attribútumcsoportot.</span><span class="sxs-lookup"><span data-stu-id="6084b-265">Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**.</span></span>
+5. <span data-ttu-id="6084b-266">Jelölje be a **Divatnapszemüvegek** kategóriát, és ellenőrizze az új attribútumokat a **Divatnapszemüvegek** attribútumcsoportban az **Attribútumok megtekintése** kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="6084b-266">Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**.</span></span>
+
+    <span data-ttu-id="6084b-267">Az attribútumcsoportnak meg kell jelenítenie az új **Lencsealakzat** és **Napszemüvegmárka** attribútumokat.</span><span class="sxs-lookup"><span data-stu-id="6084b-267">The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.</span></span>
+
+6. <span data-ttu-id="6084b-268">A **Férfiruházat** alatt jelölje be a **Nadrágok** kategóriát, és ellenőrizze a **Férfiöv** attribútumcsoportot az **Attribútumok megtekintése** kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="6084b-268">Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**.</span></span>
+
+    <span data-ttu-id="6084b-269">Az attribútumcsoportban meg kell jelenítenie a **Férfiövmárka**, az **Öv anyaga** és az **Öv mérete** attribútumoknak.</span><span class="sxs-lookup"><span data-stu-id="6084b-269">The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="6084b-270">Ezzel az eljárással attribútumcsoportokat is hozzárendelhet a kategóriákhoz a csatorna navigációs kategóriahierarchiájában és a kiegészítő termékek kategóriahierarchiájában.</span><span class="sxs-lookup"><span data-stu-id="6084b-270">This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy.</span></span> <span data-ttu-id="6084b-271">A 2. lépésben használja a következő navigációs elérési utakat:</span><span class="sxs-lookup"><span data-stu-id="6084b-271">In step 2, use the following navigation paths:</span></span>
+>
+> - <span data-ttu-id="6084b-272">Kiskereskedelem &gt; Kategória és termék kezelése &gt; Csatorna navigációs kategóriák</span><span class="sxs-lookup"><span data-stu-id="6084b-272">Retail &gt; Category and product management &gt; Channel navigation categories</span></span>
+> - <span data-ttu-id="6084b-273">Kiskereskedelem &gt; Kategória és termék kezelése &gt; Kiegészítő termékkategóriák</span><span class="sxs-lookup"><span data-stu-id="6084b-273">Retail &gt; Category and product management &gt; Supplemental product categories</span></span>
+
+### <a name="assign-attribute-groups-to-retail-stores"></a><span data-ttu-id="6084b-274">Attribútumcsoportok hozzárendelése kiskereskedelmi boltokhoz</span><span class="sxs-lookup"><span data-stu-id="6084b-274">Assign attribute groups to retail stores</span></span>
+
+<span data-ttu-id="6084b-275">Egy vagy több attribútumcsoport társítható kiskereskedelmi üzlethez a kiskereskedelmi üzlet hierarchiában.</span><span class="sxs-lookup"><span data-stu-id="6084b-275">One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy.</span></span> <span data-ttu-id="6084b-276">A kategorizálást követően az adott kiskereskedelmi üzletekhez bővített termékek öröklik az attribútumcsoportba tartozó attribútumokat.</span><span class="sxs-lookup"><span data-stu-id="6084b-276">Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.</span></span>
+
+1. <span data-ttu-id="6084b-277">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-277">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-278">Nyissa meg a következőt: **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornakategóriák és termékattribútumok**.</span><span class="sxs-lookup"><span data-stu-id="6084b-278">Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.</span></span>
+3. <span data-ttu-id="6084b-279">Attribútumcsoportok hozzárendelése a Houston csatornához:</span><span class="sxs-lookup"><span data-stu-id="6084b-279">Assign attribute groups to the Houston channel:</span></span>
+
+    1. <span data-ttu-id="6084b-280">Válassza ki a **Houston** csatornát.</span><span class="sxs-lookup"><span data-stu-id="6084b-280">Select the **Houston** channel.</span></span>
+    2. <span data-ttu-id="6084b-281">Az **Attribútumcsoport** gyorslapon válassza a **Hozzáadás** elemet, majd a **Név** mezőben válassza ki ezt: **SharePointProvisionedProductAttributeGroup**.</span><span class="sxs-lookup"><span data-stu-id="6084b-281">On the **Attribute group** FastTab, select **Add**, and then, in the **Name** field, select **SharePointProvisionedProductAttributeGroup**.</span></span>
+    3. <span data-ttu-id="6084b-282">Válassza ismét a **Hozzáadás** elemet, és ezt követően a **Név** mezőben válassza ki a **Férfiöv** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6084b-282">Select **Add** again, and then, in the **Name** field, select **Men's belt**.</span></span>
+    4. <span data-ttu-id="6084b-283">Válassza ismét a **Hozzáadás** elemet, és ezt követően a **Név** mezőben válassza ki a **Divatnapszemüvegek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6084b-283">Select **Add** again, and then, in the **Name** field, select **Fashion Sunglasses**.</span></span>
+
+        > [!NOTE]
+        > <span data-ttu-id="6084b-284">Egy beállítás lehetővé teszi annak a megadását, hogy ennek a csatornának örökölnie kell az attribútumcsoportokat a szülő csatornájától a hierarchiában.</span><span class="sxs-lookup"><span data-stu-id="6084b-284">An option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy.</span></span> <span data-ttu-id="6084b-285">Ha az **Öröklés** lehetőséget **Igen** beállításra állítja, a gyermek csatornacsomópont örökli az összes attribútumcsoportot, az attribútumcsoportokban levő összes attribútummal együtt.</span><span class="sxs-lookup"><span data-stu-id="6084b-285">If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.</span></span>
+
+4. <span data-ttu-id="6084b-286">Az attribútumok engedélyezése, hogy elérhetők legyenek a Houston csatornában:</span><span class="sxs-lookup"><span data-stu-id="6084b-286">Enable the attributes so that they are available in the Houston channel:</span></span>
+
+    1. <span data-ttu-id="6084b-287">Válassza a műveleti ablakban az **Attribútum-metaadatok beállítása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6084b-287">On the Action Pane, select **Set attribute metadata**.</span></span>
+    2. <span data-ttu-id="6084b-288">Válassza ki a **Divat** kategória-csomópont, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.</span><span class="sxs-lookup"><span data-stu-id="6084b-288">Select the **Fashion** category node, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+    3. <span data-ttu-id="6084b-289">Válassza ki a **Divatáru kiegészítők** kategória-csomópontot, válassza ki a **Divatnapszemüvegek** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.</span><span class="sxs-lookup"><span data-stu-id="6084b-289">Select the **Fashion Accessories** category node, select the **Fashion Sunglasses** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+    4. <span data-ttu-id="6084b-290">Válassza ki a **Férfiruházat** kategória-csomópontot, válassza ki a **Nadrágok** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.</span><span class="sxs-lookup"><span data-stu-id="6084b-290">Select the **Menswear** category node, select the **Pants** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+
+![Csatornakategóriák és termékattribútumok – Attribútumcsoportok](media/CCPAttrGrp.png)
+
+## <a name="overriding-attribute-values"></a><span data-ttu-id="6084b-292">Attribútumértékek felülbírálása</span><span class="sxs-lookup"><span data-stu-id="6084b-292">Overriding attribute values</span></span>
+
+<span data-ttu-id="6084b-293">Az attribútumok alapértelmezett értéke felülírható az egyedi termékek esetében a termékszinten.</span><span class="sxs-lookup"><span data-stu-id="6084b-293">The default values of attributes can be overridden for individual products at the product level.</span></span> <span data-ttu-id="6084b-294">Az alapértelmezett érték is felülírható meghatározott katalógusokba tartozó egyedi termékek esetében, amelyek egy adott kiskereskedelmi csatornát céloznak meg.</span><span class="sxs-lookup"><span data-stu-id="6084b-294">Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.</span></span>
+
+### <a name="override-the-attribute-values-of-an-individual-product"></a><span data-ttu-id="6084b-295">Az egyedi termékek attribútumértékeinek felülbírálása</span><span class="sxs-lookup"><span data-stu-id="6084b-295">Override the attribute values of an individual product</span></span>
+
+1. <span data-ttu-id="6084b-296">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-296">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-297">Menjen ide: **Kiskereskedelem** &gt; **Kategória és termék kezelése** &gt; **Felszabadított termékek kategóriák szerint**.</span><span class="sxs-lookup"><span data-stu-id="6084b-297">Go to **Retail** &gt; **Category and product management** &gt; **Released products by category**.</span></span>
+3. <span data-ttu-id="6084b-298">Válassza ki a **Divatáru** &gt; **Divatáru kiegészítők** &gt; **Divatnapszemüvegek** kategória-csomópontot.</span><span class="sxs-lookup"><span data-stu-id="6084b-298">Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.</span></span>
+4. <span data-ttu-id="6084b-299">Jelölje be a kívánt terméket a rácsban.</span><span class="sxs-lookup"><span data-stu-id="6084b-299">Select the required product in the grid.</span></span> <span data-ttu-id="6084b-300">Ezután a műveleti ablaktáblán a **Termék** lapon a **Beállítás** csoportban válassza a **Termékattribútumok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6084b-300">Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.</span></span>
+5. <span data-ttu-id="6084b-301">Jelöljön ki egy attribútumot a bal oldali ablakban, és frissítse az értékét a jobb oldali ablakban.</span><span class="sxs-lookup"><span data-stu-id="6084b-301">Select an attribute in the left pane, and then update its value in the right pane.</span></span>
+
+![Termékadatok lap – Termékattribútum-csoportok](media/ProdDetailsProdAttrValues.png)
+
+### <a name="override-the-attribute-values-of-products-in-a-catalog"></a><span data-ttu-id="6084b-303">A termékek attribútumértékeinek felülbírálása a katalógusban</span><span class="sxs-lookup"><span data-stu-id="6084b-303">Override the attribute values of products in a catalog</span></span>
+
+1. <span data-ttu-id="6084b-304">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-304">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-305">Menjen ide: **Kiskereskedelem** &gt; **Katalóguskezelés** &gt; **Minden katalógus**.</span><span class="sxs-lookup"><span data-stu-id="6084b-305">Go to **Retail** &gt; **Catalog management** &gt; **All catalogs**.</span></span>
+3. <span data-ttu-id="6084b-306">Válassza ki a **Fabrikam Base Catalog** katalógust.</span><span class="sxs-lookup"><span data-stu-id="6084b-306">Select the **Fabrikam Base Catalog** catalog.</span></span>
+4. <span data-ttu-id="6084b-307">Válassza ki a **Divatáru** &gt; **Divatáru kiegészítők** &gt; **Divatnapszemüvegek** kategória-csomópontot.</span><span class="sxs-lookup"><span data-stu-id="6084b-307">Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.</span></span>
+5. <span data-ttu-id="6084b-308">A **Termékek** gyorslapon jelölje be a szükséges terméket, és válassza ki az **Attribútumok** elemet a termékrács felett.</span><span class="sxs-lookup"><span data-stu-id="6084b-308">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
+6. <span data-ttu-id="6084b-309">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</span><span class="sxs-lookup"><span data-stu-id="6084b-309">On the following FastTabs, update the values of the required attributes:</span></span>
+
+    - <span data-ttu-id="6084b-310">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="6084b-310">Shared product media</span></span>
+    - <span data-ttu-id="6084b-311">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="6084b-311">Shared product attributes</span></span>
+    - <span data-ttu-id="6084b-312">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="6084b-312">Channel media</span></span>
+    - <span data-ttu-id="6084b-313">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="6084b-313">Channel product attributes</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="6084b-314">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="6084b-314">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+
+![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
+
+### <a name="override-the-attribute-values-of-products-in-a-channel"></a><span data-ttu-id="6084b-316">A termékek attribútumértékeinek felülbírálása egy csatornában</span><span class="sxs-lookup"><span data-stu-id="6084b-316">Override the attribute values of products in a channel</span></span>
+
+1. <span data-ttu-id="6084b-317">Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.</span><span class="sxs-lookup"><span data-stu-id="6084b-317">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="6084b-318">Nyissa meg a következőt: **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornakategóriák és termékattribútumok**.</span><span class="sxs-lookup"><span data-stu-id="6084b-318">Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.</span></span>
+3. <span data-ttu-id="6084b-319">Válassza ki a **Houston** csatornát.</span><span class="sxs-lookup"><span data-stu-id="6084b-319">Select the **Houston** channel.</span></span>
+4. <span data-ttu-id="6084b-320">A **Termékek** gyorslapon jelölje be a szükséges terméket, és válassza ki az **Attribútumok** elemet a termékrács felett.</span><span class="sxs-lookup"><span data-stu-id="6084b-320">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="6084b-321">Ha egy termék sem áll rendelkezésre, végezze el a kiválasztott termékek hozzáadását a **Hozzáadás** elemmel a **Termékek** gyorslapon, majd a szükséges terméket válassza ki a **Termékek hozzáadása** párbeszédpanelen.</span><span class="sxs-lookup"><span data-stu-id="6084b-321">If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required products in the **Add products** dialog box.</span></span>
+
+5. <span data-ttu-id="6084b-322">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</span><span class="sxs-lookup"><span data-stu-id="6084b-322">On the following FastTabs, update the values of the required attributes:</span></span>
+
+    - <span data-ttu-id="6084b-323">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="6084b-323">Shared product media</span></span>
+    - <span data-ttu-id="6084b-324">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="6084b-324">Shared product attributes</span></span>
+    - <span data-ttu-id="6084b-325">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="6084b-325">Channel media</span></span>
+    - <span data-ttu-id="6084b-326">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="6084b-326">Channel product attributes</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="6084b-327">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="6084b-327">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>

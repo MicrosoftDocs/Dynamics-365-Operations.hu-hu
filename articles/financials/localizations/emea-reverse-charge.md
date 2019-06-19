@@ -1,228 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-reverse-charge.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-reverse-charge.754531.26f7f3f11408cac387c58a5345b566ac50ed426f.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>26f7f3f11408cac387c58a5345b566ac50ed426f</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-reverse-charge.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Reverse charge VAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított áfa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to set up the reverse charge value-added tax (VAT) for European countries and Saudi Arabia.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azt ismerteti, hogyan állítható be a fordított áfa számítása az európai országoknál és Szaúd-Arábiában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Reverse charge VAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított áfa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása Szaúd-Arábiában és az európai országoknál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezért az áruk és/vagy szolgáltatások fogadói vallják be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>In some countries or regions, the Reverse Charge schema is implemented only for some goods and/or services, and there are additional conditions or thresholds on sales amounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyes országokban vagy régiókban a fordított áfafizetés rendszere csak bizonyos termékekre és/vagy szolgáltatásokra érvényes, és további feltételek vagy küszöbök érvényesek az értékesítési összegek függvényében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>In other countries or regions, the responsibility for VAT payment depends on the status of the supplier and the buyer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Más országokban vagy régiókban az áfafizetés felelőssége a beszállító és a vevő állapotától függ.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>If the buyer is liable to pay VAT, this fact must be clearly indicated on the invoice that the supplier issues.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a vevő köteles megfizetni az áfát, akkor ezt egyértelműen jelezni kell a beszállító által kiadott számlán.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>For example, the invoice must include the words "Reverse charge" and must indicate which positions are under the Reverse Charge schema.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például a számlán szerepelnie kell a „Fordított áfa” megjelölésnek, valamint annak, hogy mely pozíciókra érvényes a fordított áfafizetési rendszer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>To apply the reverse charge, you must complete the following setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő beállításokat kell elvégeznie a fordított áfa alkalmazásához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Set up sales tax codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfakódok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>We recommend that you use separate sales tax codes for sales operations and purchase operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Javasoljuk, hogy külön áfakódokat használjon az értékesítési és beszerzési műveleteknél.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax code for sales<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Áfakód az értékesítésekre vonatkozóan<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Create a sales tax code for reverse charge sales operations (<bpt id="p1">&lt;strong&gt;</bpt>Tax<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Indirect taxes<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Sales tax<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Sales tax codes<ept id="p4">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre áfakódot a fordított áfa fizetésének műveleteihez (<bpt id="p1">&lt;strong&gt;</bpt>Adó<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Közvetett adók<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Áfa<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Áfakódok<ept id="p4">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax code for purchases<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Áfakód a vásárlásoknál<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Create positive and negative sales tax codes for the reverse charge VAT for purchases (<bpt id="p1">&lt;strong&gt;</bpt>Tax<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Indirect taxes<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Sales tax<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Sales tax codes<ept id="p4">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre pozitív és negatív áfakódot a fordított áfa számára a beszerzéseknél (<bpt id="p1">&lt;strong&gt;</bpt>Adó<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Közvetett adók<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Áfa<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Áfakódok<ept id="p4">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Create a sales tax code that has a positive value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Olyan áfakódot létrehozása, amelynek értéke pozitív.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Create a sales tax code that has a negative value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Olyan áfakódot létrehozása, amelynek értéke negatív.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Set the <bpt id="p1">&lt;strong&gt;</bpt>Allow negative sales tax percentage<ept id="p1">&lt;/strong&gt;</ept> option to <bpt id="p2">&lt;strong&gt;</bpt>Yes<ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa a <bpt id="p1">&lt;strong&gt;</bpt>Negatív áfaszázalék engedélyezése<ept id="p1">&lt;/strong&gt;</ept> opciót <bpt id="p2">&lt;strong&gt;</bpt>Igen<ept id="p2">&lt;/strong&gt;</ept> értékre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>You must assign this negative sales tax code to an item sales tax group and then assign that item sales tax group to the items that are subject to the reverse charge VAT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a negatív áfakódot egy cikkáfacsoporthoz rendelje hozzá, majd ebbe a cikkáfacsoportba sorolja be azokat a cikkeket, melyeknél a fordított áfafizetés érvényes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>For more information, see the next section, <ph id="ph1">&amp;quot;</ph>Set up sales tax groups and item sales tax groups.<ph id="ph2">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információért lásd a következő szakaszt: <ph id="ph1">&amp;quot;</ph>Áfacsoportok és cikkáfacsoportok beállítása<ph id="ph2">&amp;quot;</ph>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Set up sales tax groups and item sales tax groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adócsoportok és cikkáfacsoportok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>We recommend that you use separate sales tax groups for sales operations and purchase operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Javasoljuk, hogy külön áfacsoportokat használjon az értékesítési és beszerzési műveleteknél.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax groups for sales<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Áfacsoportok az értékesítésekre vonatkozóan<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Create a sales tax group for sales operations that have the reverse charge (<bpt id="p1">&lt;strong&gt;</bpt>Tax<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Indirect taxes<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Sales tax<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Sales tax groups<ept id="p4">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre áfacsoportot a fordított áfát tartalmazó értékesítési műveleteihez (<bpt id="p1">&lt;strong&gt;</bpt>Adó<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Közvetett adók<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Áfa<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Áfacsoportok<ept id="p4">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>Setup<ept id="p1">&lt;/strong&gt;</ept> tab, include the sales tax code for the reverse charge in this group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">&lt;strong&gt;</bpt>Beállítás<ept id="p1">&lt;/strong&gt;</ept> lapon szerepeltesse a csoport költségéhez tartozó áfakódot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Select the <bpt id="p1">&lt;strong&gt;</bpt>Exempt<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Reverse charge<ept id="p2">&lt;/strong&gt;</ept> check boxes for the sales tax code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be az <bpt id="p1">&lt;strong&gt;</bpt>Adómentes<ept id="p1">&lt;/strong&gt;</ept> és a <bpt id="p2">&lt;strong&gt;</bpt>Fordított adó<ept id="p2">&lt;/strong&gt;</ept> négyzetet az áfakódnál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax groups for purchases<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Áfacsoportok a beszerzéshez<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Create a sales tax group for purchase operations that have the reverse charge (<bpt id="p1">&lt;strong&gt;</bpt>Tax<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Indirect taxes<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Sales tax<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Sales tax groups<ept id="p4">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozzon létre áfacsoportot a fordított áfát tartalmazó beszerzési műveleteihez (<bpt id="p1">&lt;strong&gt;</bpt>Adó<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Közvetett adók<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Áfa<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Áfacsoportok<ept id="p4">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>Setup<ept id="p1">&lt;/strong&gt;</ept> tab, include both positive and negative sales tax codes in this group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">&lt;strong&gt;</bpt>Beállítás<ept id="p1">&lt;/strong&gt;</ept> lapon egyaránt szerepeltesse a csoporthoz tartozó pozitív és negatív áfakódokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Select the <bpt id="p1">&lt;strong&gt;</bpt>Reverse charge<ept id="p1">&lt;/strong&gt;</ept> check box for the sales tax code that has a negative value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelölje be a <bpt id="p1">&lt;strong&gt;</bpt>Fordított adó<ept id="p1">&lt;/strong&gt;</ept> jelölőnégyzetet annál az áfakódnál, amelyiknek negatív az értéke.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Item sales tax groups<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Cikkáfacsoportok<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Create or update the item sales tax group with the sales tax code that has a negative value (<bpt id="p1">&lt;strong&gt;</bpt>Tax<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Indirect taxes<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Sales tax<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Item sales tax groups<ept id="p4">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hozza létre vagy frissítse a cikkáfacsoportot a negatív értékű áfakóddal (<bpt id="p1">&lt;strong&gt;</bpt>Adó<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Közvetett adók<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Áfa<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Cikkáfacsoportok<ept id="p4">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>You must assign the default item sales tax group to the products and categories that are subject to the reverse charge.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alapértelmezett cikkáfacsoportot hozzá kell rendelnie azokhoz a termékekhez és kategóriákhoz, amelyek a fordított fizetés hatálya alá tartoznak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Set up reverse charge groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított adózású csoportok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>On the <bpt id="p1">**</bpt>Reverse charge item groups<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Tax<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Sales tax<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Reverse charge item groups<ept id="p5">**</ept>), you can define groups of products or services, or individual products or services, that the reverse charge can be applied to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Fordított fizetésű cikkcsoportok<ept id="p1">**</ept> oldalon (<bpt id="p2">**</bpt>Adó<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Beállítás<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Áfa<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Fordított fizetésű cikkcsoportok<ept id="p5">**</ept>) oldalon termékek vagy szolgáltatások csoportjait határozhatja meg, illetve olyan egyedi termékeket vagy szolgáltatásokat, amelyeknél alkalmazható a fordított adózás.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>For each reverse charge item group, define the list of items, item groups, and categories for sales and/or purchases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg mindegyik fordított adózású cikkcsoportnál a cikkek, cikkcsoportok és kategóriák listáját az értékesítéseknél és/vagy vásárlásoknál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Set up reverse charge rules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adja meg a fordított fizetésekkel kapcsolatos szabályokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>On the <bpt id="p1">**</bpt>Reverse charge rules<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Tax<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Sales tax<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Reverse charge rules<ept id="p5">**</ept>), you can define the applicability rules for purchase and sales purposes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Fordított fizetés szabályai<ept id="p1">**</ept> oldalon (<bpt id="p2">**</bpt>Adó<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Beállítás<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Áfa<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Fordított fizetés szabályai<ept id="p5">**</ept>) megadhatja az alkalmazhatósági szabályokat a beszerzési és értékesítési célokhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>You can configure a set of reverse charge applicability rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított költség-alkalmazhatósági szabályokat is beállíthat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>For each rule, set the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állítsa be a következő mezőket minden egyes szabálynál:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Document type<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Purchase order<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Vendor invoice journal<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Sales order<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Free text invoice<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Customer invoice journal<ept id="p6">**</ept>, and/or <bpt id="p7">**</bpt>Vendor invoice<ept id="p7">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dokumentumtípus<ept id="p1">**</ept> – Válassza ki: <bpt id="p2">**</bpt>Beszerzési rendelés<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Szállítói számla naplója<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Értékesítési rendelés<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Szabadszöveges számla<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Vevői számlanapló<ept id="p6">**</ept>, illetve <bpt id="p7">**</bpt>Szállítói számla<ept id="p7">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">**</bpt>Country/region type of the partner<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Domestic<ept id="p2">**</ept>, <bpt id="p3">**</bpt>EU<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Foreign<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Partner országának/régiójának típusa<ept id="p1">**</ept> – Válasszon a <bpt id="p2">**</bpt>Belföldi<ept id="p2">**</ept>, <bpt id="p3">**</bpt>EU<ept id="p3">**</ept> és <bpt id="p4">**</bpt>Külföldi<ept id="p4">**</ept> lehetőségek közül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Alternatively, if the rule can be applied to all trade partners, regardless of the country or region of their address, select <bpt id="p1">**</bpt>All<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emellett ha a szabály minden kereskedelmi partnernél – a címük országától vagy régiójától függetlenül – alkalmazható a szabály, válassza a <bpt id="p1">**</bpt>Mindegyik<ept id="p1">**</ept> lehetőséget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">**</bpt>Domestic delivery address<ept id="p1">**</ept> – Select this check box to apply the rule to deliveries within the same country or region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Belföldi szállítási cím<ept id="p1">**</ept> – Jelölje be ezt a jelölőnégyzetet, ha a szabály az azonos országban vagy régióban lévő szállításokra érvényes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>This check box can't be selected for the <bpt id="p1">**</bpt>Vendor invoice journal<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Customer invoice journal<ept id="p2">**</ept> document types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a jelölőnégyzet nem jelölhető be a <bpt id="p1">**</bpt>Szállítói számla naplója<ept id="p1">**</ept> és a <bpt id="p2">**</bpt>Vevői számlanapló<ept id="p2">**</ept> dokumentumtípusoknál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">**</bpt>Reverse charge item group<ept id="p1">**</ept> – Select the group that the rule can be applied to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fordított fizetésű cikkcsoport<ept id="p1">**</ept> – Válassza ki a csoportot, amelyiknél alkalmazható a szabály.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">**</bpt>Threshold amount<ept id="p1">**</ept> – The Reverse Charge schema is applied to an invoice only if the value of items and/or services that are included in the reverse charge item group exceeds the limit that you specify here.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Küszöbösszeg<ept id="p1">**</ept> – A fordított adózás sémáját csak akkor kell a számlára alkalmazni, ha a fordított adótételek csoportjában szereplő tételek és/vagy szolgáltatások értéke meghaladja az itt megadott értéket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You can also use the <bpt id="p1">**</bpt>Effective date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Expiration date<ept id="p2">**</ept> fields to define the period when the rule is effective.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">**</bpt>Érvényesség dátuma<ept id="p1">**</ept> és <bpt id="p2">**</bpt>Lejárat dátuma<ept id="p2">**</ept> mezőkkel is meghatározhatja a szabály érvényességének időtartamát.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Additionally, you can specify whether a notification appears and the document line is updated with the default reverse charge sales tax group if the condition for that document line is met.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezenkívül megadhatja, hogy megjelenjen-e egy értesítés, és a dokumentumsor frissüljön-e az alapértelmezett fordított áfacsoporttal, ha teljesül a dokumentumsor feltétele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The following options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az alábbi lehetőségek közül választhat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>None<ept id="p1">**</ept> – The document line isn't updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nincs<ept id="p1">**</ept> – A dokumentum nem frissül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>Prompt<ept id="p1">**</ept> – A notification appears to confirm that the reverse charge can be applied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kérdés<ept id="p1">**</ept> – Megjelenik egy értesítés annak megerősítésére, hogy alkalmazható-e a fordított áfa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">**</bpt>Set<ept id="p1">**</ept> – The document line is updated without additional notification.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Beállítás<ept id="p1">**</ept> – A dokumentumsor külön értesítés nélkül frissül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Set up default parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezett paraméterek beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>To enable the functionality for reverse charge VAT, on the <bpt id="p1">**</bpt>General ledger parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Reverse charge<ept id="p2">**</ept> tab, set the <bpt id="p3">**</bpt>Enable reverse charge<ept id="p3">**</ept> option to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fordított áfa funkció engedélyezéséhez a <bpt id="p1">**</bpt>Főkönyvi paraméterek<ept id="p1">**</ept> oldal <bpt id="p2">**</bpt>Fordított áfa<ept id="p2">**</ept> lapján állítsa a <bpt id="p3">**</bpt>Fordított fizetés engedélyezése<ept id="p3">**</ept> opciót <bpt id="p4">**</bpt>Igen<ept id="p4">**</ept> értékre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the <bpt id="p1">**</bpt>Purchase order sales tax group<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sales order tax group<ept id="p2">**</ept> fields, select the default sales tax groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Beszerzési rendelés áfacsoportja<ept id="p1">**</ept> és az <bpt id="p2">**</bpt>Értékesítési rendelés áfacsoportja<ept id="p2">**</ept> mezőknél válassza ki az alapértelmezett áfacsoportokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>When a reverse charge applicability condition is met, the sales or purchase order line is updated with these sales tax groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha a fordított adózási alkalmazhatósági feltétel teljesül, akkor az értékesítési vagy beszerzési sor frissül ezekkel az áfacsoportokkal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Reverse charge on a sales invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított áfa értékesítési számlánál</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>For sales under the Reverse Charge schema, the seller doesn't charge VAT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fordított áfa hatályába tartozó értékesítéseknél az eladó nem számítja fel az áfát</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Instead, the invoice indicates both the items that are subject to the reverse charge VAT and the total amount of the reverse charge VAT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett a számlán megjelennek mind a fordított áfa hatálya alá tartozó cikkek, mint a fordított áfa teljes összege.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>When a sales invoice that has the reverse charge is posted, the sales tax transactions have the <bpt id="p1">**</bpt>Sales tax payable<ept id="p1">**</ept> tax direction and zero sales tax, and the <bpt id="p2">**</bpt>Reverse charge<ept id="p2">**</ept> check box is selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amikor olyan értékesítési számlát adnak fel, melyen fordított áfa szerepel, akkor az áfatranzakcióknál az <bpt id="p1">**</bpt>fizetendő áfa<ept id="p1">**</ept> áfairány és nulla áfa szerepel, és pipa kerül a <bpt id="p2">**</bpt>Fordított áfa<ept id="p2">**</ept> jelölőnégyzetbe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Reverse charge on a purchase invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordított áfa beszerzési számlánál</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>For purchases under the Reverse Charge schema, the purchaser who receives the invoice that has the reverse charge acts as a buyer and a seller for VAT accounting purposes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fordított áfaszámítás alá eső beszerzéseknél a fordított áfás számlát fogadó beszerző számít vevőnek és eladónak is az áfa könyvelésének szempontjából.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>When a purchase invoice that has the reverse charge is posted, two sales tax transactions are created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha fordított áfát tartalmazó beszerzési számlát ad fel, akkor két áfatranzakció jön létre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>One transaction has the <bpt id="p1">**</bpt>Sales tax receivable<ept id="p1">**</ept> tax direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyik tranzakció a <bpt id="p1">**</bpt>Visszaigényelhető áfa<ept id="p1">**</ept> áfairánnyal rendelkezik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>The other transaction has the <bpt id="p1">**</bpt>Sales tax payable<ept id="p1">**</ept> tax direction, and the <bpt id="p2">**</bpt>Reverse charge<ept id="p2">**</ept> check box is selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A másik tranzakció a <bpt id="p1">**</bpt>Fizetendő áfa<ept id="p1">**</ept> áfairánnyal rendelkezik, és pipa kerül a <bpt id="p2">**</bpt>Fordított áfa<ept id="p2">**</ept> jelölőnégyzetbe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>In the following screenshot, one transaction has the <bpt id="p1">**</bpt>Sales tax receivable<ept id="p1">**</ept> direction, and the other transaction has the <bpt id="p2">**</bpt>Sales tax payable<ept id="p2">**</ept> direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő képernyőképen egy tranzakciónál a <bpt id="p1">**</bpt>Visszaigényelhető áfa<ept id="p1">**</ept> irány, a másik tranzakciónál pedig a <bpt id="p2">**</bpt>Fizetendő áfa<ept id="p2">**</ept> irány szerepel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Posted sales tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladott áfa</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Fordított áfa
+description: Ez a témakör azt ismerteti, hogyan állítható be a fordított áfa számítása az európai országoknál és Szaúd-Arábiában.
+author: epodkolz
+manager: AnnBe
+ms.date: 04/05/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.author: epodkolz
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571171"
+---
+# <a name="reverse-charge-vat"></a><span data-ttu-id="9ef3c-103">Fordított áfa</span><span class="sxs-lookup"><span data-stu-id="9ef3c-103">Reverse charge VAT</span></span>
+
+
+[!include [banner](../includes/banner.md)]
+
+
+<span data-ttu-id="9ef3c-104">Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása Szaúd-Arábiában és az európai országoknál.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-104">This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.</span></span>
+
+<span data-ttu-id="9ef3c-105">A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-105">Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services.</span></span> <span data-ttu-id="9ef3c-106">Ezért az áruk és/vagy szolgáltatások fogadói vallják be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-106">Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.</span></span>
+
+<span data-ttu-id="9ef3c-107">Egyes országokban vagy régiókban a fordított áfafizetés rendszere csak bizonyos termékekre és/vagy szolgáltatásokra érvényes, és további feltételek vagy küszöbök érvényesek az értékesítési összegek függvényében.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-107">In some countries or regions, the Reverse Charge schema is implemented only for some goods and/or services, and there are additional conditions or thresholds on sales amounts.</span></span> <span data-ttu-id="9ef3c-108">Más országokban vagy régiókban az áfafizetés felelőssége a beszállító és a vevő állapotától függ.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-108">In other countries or regions, the responsibility for VAT payment depends on the status of the supplier and the buyer.</span></span> <span data-ttu-id="9ef3c-109">Ha a vevő köteles megfizetni az áfát, akkor ezt egyértelműen jelezni kell a beszállító által kiadott számlán.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-109">If the buyer is liable to pay VAT, this fact must be clearly indicated on the invoice that the supplier issues.</span></span> <span data-ttu-id="9ef3c-110">Például a számlán szerepelnie kell a „Fordított áfa” megjelölésnek, valamint annak, hogy mely pozíciókra érvényes a fordított áfafizetési rendszer.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-110">For example, the invoice must include the words "Reverse charge" and must indicate which positions are under the Reverse Charge schema.</span></span> 
+
+<span data-ttu-id="9ef3c-111">A következő beállításokat kell elvégeznie a fordított áfa alkalmazásához.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-111">To apply the reverse charge, you must complete the following setup.</span></span>
+
+## <a name="set-up-sales-tax-codes"></a><span data-ttu-id="9ef3c-112">Áfakódok beállítása</span><span class="sxs-lookup"><span data-stu-id="9ef3c-112">Set up sales tax codes</span></span>
+<span data-ttu-id="9ef3c-113">Javasoljuk, hogy külön áfakódokat használjon az értékesítési és beszerzési műveleteknél.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-113">We recommend that you use separate sales tax codes for sales operations and purchase operations.</span></span>
+
+<table>
+<body>
+<tr>
+<td><span data-ttu-id="9ef3c-114"><strong>Áfakód az értékesítésekre vonatkozóan</strong></span><span class="sxs-lookup"><span data-stu-id="9ef3c-114"><strong>Sales tax code for sales</strong></span></span></td>
+<td><span data-ttu-id="9ef3c-115">Hozzon létre áfakódot a fordított áfa fizetésének műveleteihez (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfakódok</strong>).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-115">Create a sales tax code for reverse charge sales operations (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).</span></span>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="9ef3c-116"><strong>Áfakód a vásárlásoknál</strong></span><span class="sxs-lookup"><span data-stu-id="9ef3c-116"><strong>Sales tax code for purchases</strong></span></span></td>
+<td><p><span data-ttu-id="9ef3c-117">Hozzon létre pozitív és negatív áfakódot a fordított áfa számára a beszerzéseknél (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfakódok</strong>).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-117">Create positive and negative sales tax codes for the reverse charge VAT for purchases (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).</span></span></p>
+<ol>
+<li><span data-ttu-id="9ef3c-118">Olyan áfakódot létrehozása, amelynek értéke pozitív.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-118">Create a sales tax code that has a positive value.</span></span></li>
+<li><span data-ttu-id="9ef3c-119">Olyan áfakódot létrehozása, amelynek értéke negatív.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-119">Create a sales tax code that has a negative value.</span></span> <span data-ttu-id="9ef3c-120">Állítsa a <strong>Negatív áfaszázalék engedélyezése</strong> opciót <strong>Igen</strong> értékre.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-120">Set the <strong>Allow negative sales tax percentage</strong> option to <strong>Yes</strong>.</span></span>
+<span data-ttu-id="9ef3c-121">Ezt a negatív áfakódot egy cikkáfacsoporthoz rendelje hozzá, majd ebbe a cikkáfacsoportba sorolja be azokat a cikkeket, melyeknél a fordított áfafizetés érvényes.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-121">You must assign this negative sales tax code to an item sales tax group and then assign that item sales tax group to the items that are subject to the reverse charge VAT.</span></span></li>
+</ol>
+<p><span data-ttu-id="9ef3c-122">További információért lásd a következő szakaszt: &quot;Áfacsoportok és cikkáfacsoportok beállítása&quot;.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-122">For more information, see the next section, &quot;Set up sales tax groups and item sales tax groups.&quot;</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="9ef3c-123">Adócsoportok és cikkáfacsoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="9ef3c-123">Set up sales tax groups and item sales tax groups</span></span>
+<span data-ttu-id="9ef3c-124">Javasoljuk, hogy külön áfacsoportokat használjon az értékesítési és beszerzési műveleteknél.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-124">We recommend that you use separate sales tax groups for sales operations and purchase operations.</span></span>
+
+<table>
+<tr>
+<td><span data-ttu-id="9ef3c-125"><strong>Áfacsoportok az értékesítésekre vonatkozóan</strong></span><span class="sxs-lookup"><span data-stu-id="9ef3c-125"><strong>Sales tax groups for sales</strong></span></span></td>
+<td><span data-ttu-id="9ef3c-126">Hozzon létre áfacsoportot a fordított áfát tartalmazó értékesítési műveleteihez (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfacsoportok</strong>).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-126">Create a sales tax group for sales operations that have the reverse charge (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax groups</strong>).</span></span> <span data-ttu-id="9ef3c-127">A <strong>Beállítás</strong> lapon szerepeltesse a csoport költségéhez tartozó áfakódot.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-127">On the <strong>Setup</strong> tab, include the sales tax code for the reverse charge in this group.</span></span> <span data-ttu-id="9ef3c-128">Jelölje be az <strong>Adómentes</strong> és a <strong>Fordított adó</strong> négyzetet az áfakódnál.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-128">Select the <strong>Exempt</strong> and <strong>Reverse charge</strong> check boxes for the sales tax code.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="9ef3c-129"><strong>Áfacsoportok a beszerzéshez</strong></span><span class="sxs-lookup"><span data-stu-id="9ef3c-129"><strong>Sales tax groups for purchases</strong></span></span></td>
+<td><span data-ttu-id="9ef3c-130">Hozzon létre áfacsoportot a fordított áfát tartalmazó beszerzési műveleteihez (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfacsoportok</strong>).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-130">Create a sales tax group for purchase operations that have the reverse charge (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax groups</strong>).</span></span> <span data-ttu-id="9ef3c-131">A <strong>Beállítás</strong> lapon egyaránt szerepeltesse a csoporthoz tartozó pozitív és negatív áfakódokat.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-131">On the <strong>Setup</strong> tab, include both positive and negative sales tax codes in this group.</span></span> <span data-ttu-id="9ef3c-132">Jelölje be a <strong>Fordított adó</strong> jelölőnégyzetet annál az áfakódnál, amelyiknek negatív az értéke.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-132">Select the <strong>Reverse charge</strong> check box for the sales tax code that has a negative value.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="9ef3c-133"><strong>Cikkáfacsoportok</strong></span><span class="sxs-lookup"><span data-stu-id="9ef3c-133"><strong>Item sales tax groups</strong></span></span></td>
+<td><span data-ttu-id="9ef3c-134">Hozza létre vagy frissítse a cikkáfacsoportot a negatív értékű áfakóddal (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Cikkáfacsoportok</strong>).</span><span class="sxs-lookup"><span data-stu-id="9ef3c-134">Create or update the item sales tax group with the sales tax code that has a negative value (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Item sales tax groups</strong>).</span></span> <span data-ttu-id="9ef3c-135">Az alapértelmezett cikkáfacsoportot hozzá kell rendelnie azokhoz a termékekhez és kategóriákhoz, amelyek a fordított fizetés hatálya alá tartoznak.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-135">You must assign the default item sales tax group to the products and categories that are subject to the reverse charge.</span></span></td>
+</tr>
+</table>
+
+## <a name="set-up-reverse-charge-groups"></a><span data-ttu-id="9ef3c-136">Fordított adózású csoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="9ef3c-136">Set up reverse charge groups</span></span>
+<span data-ttu-id="9ef3c-137">A **Fordított fizetésű cikkcsoportok** oldalon (**Adó** &gt; **Beállítás** &gt; **Áfa** &gt; **Fordított fizetésű cikkcsoportok**) oldalon termékek vagy szolgáltatások csoportjait határozhatja meg, illetve olyan egyedi termékeket vagy szolgáltatásokat, amelyeknél alkalmazható a fordított adózás.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-137">On the **Reverse charge item groups** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge item groups**), you can define groups of products or services, or individual products or services, that the reverse charge can be applied to.</span></span> <span data-ttu-id="9ef3c-138">Adja meg mindegyik fordított adózású cikkcsoportnál a cikkek, cikkcsoportok és kategóriák listáját az értékesítéseknél és/vagy vásárlásoknál.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-138">For each reverse charge item group, define the list of items, item groups, and categories for sales and/or purchases.</span></span>
+
+## <a name="set-up-reverse-charge-rules"></a><span data-ttu-id="9ef3c-139">Adja meg a fordított fizetésekkel kapcsolatos szabályokat.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-139">Set up reverse charge rules</span></span>
+<span data-ttu-id="9ef3c-140">A **Fordított fizetés szabályai** oldalon (**Adó** &gt; **Beállítás** &gt; **Áfa** &gt; **Fordított fizetés szabályai**) megadhatja az alkalmazhatósági szabályokat a beszerzési és értékesítési célokhoz.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-140">On the **Reverse charge rules** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge rules**), you can define the applicability rules for purchase and sales purposes.</span></span> <span data-ttu-id="9ef3c-141">Fordított költség-alkalmazhatósági szabályokat is beállíthat.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-141">You can configure a set of reverse charge applicability rules.</span></span> <span data-ttu-id="9ef3c-142">Állítsa be a következő mezőket minden egyes szabálynál:</span><span class="sxs-lookup"><span data-stu-id="9ef3c-142">For each rule, set the following fields:</span></span>
+
+- <span data-ttu-id="9ef3c-143">**Dokumentumtípus** – Válassza ki: **Beszerzési rendelés**, **Szállítói számla naplója**, **Értékesítési rendelés**, **Szabadszöveges számla**, **Vevői számlanapló**, illetve **Szállítói számla**.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-143">**Document type** – Select **Purchase order**, **Vendor invoice journal**, **Sales order**, **Free text invoice**, **Customer invoice journal**, and/or **Vendor invoice**.</span></span>
+- <span data-ttu-id="9ef3c-144">**Partner országának/régiójának típusa** – Válasszon a **Belföldi**, **EU** és **Külföldi** lehetőségek közül.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-144">**Country/region type of the partner** – Select **Domestic**, **EU**, or **Foreign**.</span></span> <span data-ttu-id="9ef3c-145">Emellett ha a szabály minden kereskedelmi partnernél – a címük országától vagy régiójától függetlenül – alkalmazható a szabály, válassza a **Mindegyik** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-145">Alternatively, if the rule can be applied to all trade partners, regardless of the country or region of their address, select **All**.</span></span>
+- <span data-ttu-id="9ef3c-146">**Belföldi szállítási cím** – Jelölje be ezt a jelölőnégyzetet, ha a szabály az azonos országban vagy régióban lévő szállításokra érvényes.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-146">**Domestic delivery address** – Select this check box to apply the rule to deliveries within the same country or region.</span></span> <span data-ttu-id="9ef3c-147">Ez a jelölőnégyzet nem jelölhető be a **Szállítói számla naplója** és a **Vevői számlanapló** dokumentumtípusoknál.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-147">This check box can't be selected for the **Vendor invoice journal** and **Customer invoice journal** document types.</span></span>
+- <span data-ttu-id="9ef3c-148">**Fordított fizetésű cikkcsoport** – Válassza ki a csoportot, amelyiknél alkalmazható a szabály.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-148">**Reverse charge item group** – Select the group that the rule can be applied to.</span></span>
+- <span data-ttu-id="9ef3c-149">**Küszöbösszeg** – A fordított adózás sémáját csak akkor kell a számlára alkalmazni, ha a fordított adótételek csoportjában szereplő tételek és/vagy szolgáltatások értéke meghaladja az itt megadott értéket.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-149">**Threshold amount** – The Reverse Charge schema is applied to an invoice only if the value of items and/or services that are included in the reverse charge item group exceeds the limit that you specify here.</span></span>
+
+<span data-ttu-id="9ef3c-150">Az **Érvényesség dátuma** és **Lejárat dátuma** mezőkkel is meghatározhatja a szabály érvényességének időtartamát.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-150">You can also use the **Effective date** and **Expiration date** fields to define the period when the rule is effective.</span></span>
+
+<span data-ttu-id="9ef3c-151">Ezenkívül megadhatja, hogy megjelenjen-e egy értesítés, és a dokumentumsor frissüljön-e az alapértelmezett fordított áfacsoporttal, ha teljesül a dokumentumsor feltétele.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-151">Additionally, you can specify whether a notification appears and the document line is updated with the default reverse charge sales tax group if the condition for that document line is met.</span></span> <span data-ttu-id="9ef3c-152">Az alábbi lehetőségek közül választhat:</span><span class="sxs-lookup"><span data-stu-id="9ef3c-152">The following options are available:</span></span>
+
+- <span data-ttu-id="9ef3c-153">**Nincs** – A dokumentum nem frissül.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-153">**None** – The document line isn't updated.</span></span>
+- <span data-ttu-id="9ef3c-154">**Kérdés** – Megjelenik egy értesítés annak megerősítésére, hogy alkalmazható-e a fordított áfa.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-154">**Prompt** – A notification appears to confirm that the reverse charge can be applied.</span></span>
+- <span data-ttu-id="9ef3c-155">**Beállítás** – A dokumentumsor külön értesítés nélkül frissül.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-155">**Set** – The document line is updated without additional notification.</span></span>
+
+## <a name="set-up-default-parameters"></a><span data-ttu-id="9ef3c-156">Alapértelmezett paraméterek beállítása</span><span class="sxs-lookup"><span data-stu-id="9ef3c-156">Set up default parameters</span></span>
+<span data-ttu-id="9ef3c-157">A fordított áfa funkció engedélyezéséhez a **Főkönyvi paraméterek** oldal **Fordított áfa** lapján állítsa a **Fordított fizetés engedélyezése** opciót **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-157">To enable the functionality for reverse charge VAT, on the **General ledger parameters** page, on the **Reverse charge** tab, set the **Enable reverse charge** option to **Yes**.</span></span> <span data-ttu-id="9ef3c-158">A **Beszerzési rendelés áfacsoportja** és az **Értékesítési rendelés áfacsoportja** mezőknél válassza ki az alapértelmezett áfacsoportokat.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-158">In the **Purchase order sales tax group** and **Sales order tax group** fields, select the default sales tax groups.</span></span> <span data-ttu-id="9ef3c-159">Ha a fordított adózási alkalmazhatósági feltétel teljesül, akkor az értékesítési vagy beszerzési sor frissül ezekkel az áfacsoportokkal.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-159">When a reverse charge applicability condition is met, the sales or purchase order line is updated with these sales tax groups.</span></span>
+
+## <a name="reverse-charge-on-a-sales-invoice"></a><span data-ttu-id="9ef3c-160">Fordított áfa értékesítési számlánál</span><span class="sxs-lookup"><span data-stu-id="9ef3c-160">Reverse charge on a sales invoice</span></span>
+<span data-ttu-id="9ef3c-161">A fordított áfa hatályába tartozó értékesítéseknél az eladó nem számítja fel az áfát</span><span class="sxs-lookup"><span data-stu-id="9ef3c-161">For sales under the Reverse Charge schema, the seller doesn't charge VAT.</span></span> <span data-ttu-id="9ef3c-162">Ehelyett a számlán megjelennek mind a fordított áfa hatálya alá tartozó cikkek, mint a fordított áfa teljes összege.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-162">Instead, the invoice indicates both the items that are subject to the reverse charge VAT and the total amount of the reverse charge VAT.</span></span>
+
+<span data-ttu-id="9ef3c-163">Amikor olyan értékesítési számlát adnak fel, melyen fordított áfa szerepel, akkor az áfatranzakcióknál az **fizetendő áfa** áfairány és nulla áfa szerepel, és pipa kerül a **Fordított áfa** jelölőnégyzetbe.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-163">When a sales invoice that has the reverse charge is posted, the sales tax transactions have the **Sales tax payable** tax direction and zero sales tax, and the **Reverse charge** check box is selected.</span></span>
+
+## <a name="reverse-charge-on-a-purchase-invoice"></a><span data-ttu-id="9ef3c-164">Fordított áfa beszerzési számlánál</span><span class="sxs-lookup"><span data-stu-id="9ef3c-164">Reverse charge on a purchase invoice</span></span>
+<span data-ttu-id="9ef3c-165">A fordított áfaszámítás alá eső beszerzéseknél a fordított áfás számlát fogadó beszerző számít vevőnek és eladónak is az áfa könyvelésének szempontjából.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-165">For purchases under the Reverse Charge schema, the purchaser who receives the invoice that has the reverse charge acts as a buyer and a seller for VAT accounting purposes.</span></span>
+
+<span data-ttu-id="9ef3c-166">Ha fordított áfát tartalmazó beszerzési számlát ad fel, akkor két áfatranzakció jön létre.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-166">When a purchase invoice that has the reverse charge is posted, two sales tax transactions are created.</span></span> <span data-ttu-id="9ef3c-167">Az egyik tranzakció a **Visszaigényelhető áfa** áfairánnyal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-167">One transaction has the **Sales tax receivable** tax direction.</span></span> <span data-ttu-id="9ef3c-168">A másik tranzakció a **Fizetendő áfa** áfairánnyal rendelkezik, és pipa kerül a **Fordított áfa** jelölőnégyzetbe.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-168">The other transaction has the **Sales tax payable** tax direction, and the **Reverse charge** check box is selected.</span></span>
+
+<span data-ttu-id="9ef3c-169">A következő képernyőképen egy tranzakciónál a **Visszaigényelhető áfa** irány, a másik tranzakciónál pedig a **Fizetendő áfa** irány szerepel.</span><span class="sxs-lookup"><span data-stu-id="9ef3c-169">In the following screenshot, one transaction has the **Sales tax receivable** direction, and the other transaction has the **Sales tax payable** direction.</span></span> 
+
+![Feladott áfa](media/apac-sau-posted-sales-tax.png)
