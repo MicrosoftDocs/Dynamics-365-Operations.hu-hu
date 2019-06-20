@@ -1,1056 +1,696 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>TOC.1b20fc.88485598ac4a9d5d2829a3021361885065ad76a4.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>88485598ac4a9d5d2829a3021361885065ad76a4</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\TOC.yml</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101">
-          <source>Welcome to Dynamics 365 for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102">
-          <source>Get started</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Első lépések</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>What's new or changed</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Új vagy módosult elemek</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Preview features in Dynamics 365 for Retail 10.0.3</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Előzetes funkciók a Dynamics 365 for Retail 10.0.3-as verziójában</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>What's new or changed in Dynamics 365 for Retail 10.0.2</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Új vagy módosult elemek a Dynamics 365 for Retail 10.0.2-es verziójában</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>What's new ot changed in Dynamics 365 for Retail 10.0.1</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Új vagy módosult elemek a Dynamics 365 for Retail 10.0.1-es verziójában</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>What's new or changed in Dynamics 365 for Retail (April 2019)</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Új vagy módosult elemek a Dynamics 365 for Retail (2019. április) szolgáltatásban</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Before you buy Retail</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Mielőtt megvásárolná a Retail terméket</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Sign up for a preview subscription</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Regisztrálás az előzetes verziót tartalmazó előfizetésre</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Deploy a demo environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemutatókörnyezet telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Deployment options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepítési beállítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Get support for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Támogatás kérése a Retail alkalmazáshoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>One Version service updates FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyverziós szolgáltatásfrissítések GYIK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Understand the implementation lifecycle</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A végrehajtási életciklus megértése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Microsoft FastTrack for Dynamics 365</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft FastTrack for Dynamics 365</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Onboarding</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Felvétel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Preparing for go-live</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előkészítés az éles indításra</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Go-live FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Éles indítás GYIK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Submit a service request</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szolgáltatási kérelem benyújtása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Subscriptions, LCS projects, and Azure Active Directory tenants FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előfizetésekhez, LCS-projektekhez és Azure Active Directory-bérlőkhöz kapcsolódó GYIK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Move environments between data centers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Környezetek áthelyezése az adatközpontok között</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Move licenses between agreement types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Licencek áthelyezése szerződéstípusok között</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Move an LCS Implementation project to another Azure Active Directory tenant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS végrehajtási projekt áthelyezése egy másik Azure Active Directory-bérlőhöz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Implement multiple LCS projects and production environments on the same Azure Active Directory tenant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Több LCS-projekt és termelési környezet végrehajtása ugyanazon az Azure Active Directory-bérlőn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Implement Finance and Operations Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Finance and Operations Retail-projektek megvalósítása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Set up new environments, Azure DevOps, and branches for Retail projects</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Új környezetek, Azure DevOps és ágak beállítása a Retail-projektekhez</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Update code and environments for Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kód és környezetek frissítése a Retail-projekteknél</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Testing and performance issues</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tesztelési vagy teljesítménnyel kapcsolatos problémák</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Distributed order management (DOM)</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Felosztott rendeléskezelés (DOM)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>DOM overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">DOM áttekintés</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Cost configuration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Költségkonfiguráció</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Payments</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Kifizetések</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Payment methods</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Fizetési módok</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Credit card setup, authorization, and capture</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Hitelkártya beállítása, engedélyezése és rögzítése</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Configure cash denominations for the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Készpénzcímletek konfigurálása a pénztárhoz</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Dynamics 365 Payment Connector for Adyen</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Saving online payment instruments with the Adyen connector</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Online fizetési eszközök mentése az Adyen összekötővel</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Set up pay invoice scenarios</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Számlafizetési forgatókönyvek beállítása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Payments FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kifizetésekkel kapcsolatos GYIK</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Duplicate payments prevention</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Ismétlődő kifizetések megakadályozása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Purchase order overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelések áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Create purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelések létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Product receipt against purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékbevételezés összevetése a beszerzési rendelésekkel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Approve and confirm purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelések jóváhagyása és megerősítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Purchase order approval mobile workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzési rendelés jóváhagyásához használt mobil munkaterület</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kimutatások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi kimutatások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Retail transaction consistency checker</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi tranzakció konzisztencia-ellenőrzése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Create, calculate, and post statements for a retail store</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Improvements to statement posting functionality</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kimutatásfeladás funkcióinak továbbfejlesztései</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Improved handling of batch tracked items</source><target logoport:matchpercent="98" state="translated" state-qualifier="x-fuzzy-match-unedited">Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Configure Retail parameters that affect retail statements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">A kiskereskedelmi kimutatásokat befolyásoló kiskereskedelmi paraméterek konfigurálása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Configure payment method settings that affect retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiskereskedelmi kimutatásokat befolyásoló fizetésimód-beállítások konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Configure and run a job to calculate statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kimutatások számításához használt feladat konfigurálása és futtatása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Configure and run a job to post statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kimutatások feladásához használt feladat konfigurálása és futtatása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Configure store settings that affect retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiskereskedelmi kimutatásokat befolyásoló áruház-beállítások konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Sales tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Sales tax overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfa áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Sales tax calculation methods in the Origin field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfaszámítási módok a Kiindulás mezőben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Sales tax assignment and overrides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfa-hozzárendelés és felülbírálások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Whole amount and Interval calculation options for sales tax codes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Teljesösszeg- és intervallumszámítási opciók áfakódokhoz</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Omni-channel payments overview</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Többcsatornás fizetések áttekintése</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Omni-channel advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Többcsatornás speciális automatikus költségek</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Configure and use advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Speciális automatikus költségek konfigurálása és használata</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Prorate header charges to matching sales lines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fejlécköltségek arányosítása az egyező értékesítési sorokhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Call center</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközpont</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Call center sales functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközpont értékesítési funkciói</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Call center catalogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközpont-katalógusok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Configure delivery modes and charges</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítási módok és költségek konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Set up and work with fraud alerts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csalással kapcsolatos figyelmeztetések beállítása és használata</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Set up call center channels</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközponti csatornák beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Set up continuity programs for call centers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folytonossági programok beállítása hívásközpontok számára</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Configure and work with call center order holds</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Payment methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési módok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Channel setup and management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatorna beállítása és kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Initialize seed data in new Retail environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiindulási adatok inicializálása új Retail-környezetben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Define and maintain retail channels</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiskereskedelmi csatornák definiálása és karbantartása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Assortment management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szortiment kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Set up online stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Online áruházak beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Configure and install Retail hardware station</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail Hardware Station konfigurálása és telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Time and attendance in Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkaidő és jelenlét a Retailben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Modern Point of Sale (MPOS) and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern Point of Sale (MPOS) és Cloud POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Choose between MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az MPOS és a felhőalapú pénztár (POS) közötti választás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Online and offline POS operations</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Online és offline pénztári műveletek</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Device activation of a customized Retail MPOS</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Személyre szabott Retail MPOS eszköz aktiválása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Demo data screen layouts in MPOS and Cloud POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Product and customer search in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Termék és vevő keresése a pénztárban</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Cash management improvements</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Készpénzkezelés fejlesztései</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Inventory lookup in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Készletkeresés a pénztárban</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Suspend and resume transactions in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tranzakciók felfüggesztése és újraindítása a pénztárban</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Hardware peripherals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardverperifériák</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Retail peripherals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-perifériák</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Retail peripheral simulator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail perifériaszimulátor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Connect peripherals to the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perifériák csatlakoztatása a pénztárhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Screen layouts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képernyő-elrendezések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Demo data screen layouts in MPOS/CPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az MPOS/CPOS bemutató adatképernyő-elrendezései</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Screen layouts for the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztár képernyő-elrendezései</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Install the Retail POS layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail POS képernyőelrendezés-tervező telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Choose notification settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értesítési beállítások kiválasztása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>POS application and user language settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-alkalmazás és felhasználói nyelvi beállítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Set up and manage images for MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Képek beállítása és kezelése az MPOS esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Info codes and info code groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Infókódok és infókódcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>POS improvements for serialized products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárjavítások szerializált termékekhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékajánlatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Személyre szabott termékajánlatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Add a recommendations control on POS devices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ajánlások vezérlőelem felvétele a pénztári eszközökön</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Offline POS functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kapcsolat nélküli pénztár funkciói</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Shift and cash drawer management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Műszak és pénztárgépfiók kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Cash out gift card balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készpénzkifizetési ajándékutalvány egyenlege</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Customer orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői rendelések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Customer orders in MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői rendelések az MPOS-ben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Hybrid customer orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hibrid vevői rendelések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Sales associates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítési társítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Track commissions in the POS using sales groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jutalékok követése a POS készülékben értékesítési csoportok révén</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Ship orders from another store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelések szállítása egy másik áruházból</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Device activation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eszköz aktiválása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Configure, install and activate MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az MPOS konfigurálása, telepítése és aktiválása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Set up extended logon functionality for MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Manage Retail activation accounts and validate devices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Receipts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyugták</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Set up and design receipt formats</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyugtaformátumok beállítása és tervezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Send email receipts from MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E-mailes nyugták küldése MPOS pénztárból</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Task recorder and Help for MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladatrögzítő és Súgó az MPOS-hez és a Cloud POS-hez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Order fulfillment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelésteljesítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Store order fulfillment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelésteljesítés az üzletben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Set up order fulfillment for stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelésteljesítés beállítása az üzletek esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Show order notifications in the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelési értesítések megjelenítése a pénztárban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Returns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visszáru</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Sell and return products not included in a store's assortment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Configure and process an exchange on a return order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csere konfigurálása és feldolgozása visszárurendelésen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Restrict payment methods for returns without a receipt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyugta nélküli visszárukhoz használható fizetési módok korlátozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Return items across multiple customer orders and invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Több vevői rendelést és számlát érintő visszárucikkek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Monitoring and analysis</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfigyelés és elemzés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Monitor sales and margin performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítés és teljesítménykülönbözet megfigyelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Analyze sales trends and patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítési trendek és mintázatok elemzése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Assess sales performance by product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítési teljesítmény felmérése termék szerint</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Assess customer and product profitability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevők és termékek nyereségességének felmérése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Analyze store performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az üzletteljesítmény elemzése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Retail price reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi árjelentések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Pricing and discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Árképzés és engedmények</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Retail discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi engedmények</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Retail sales price management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi értékesítési ár kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Price adjustments and discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ármódosítások és engedmények</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Apply multiple discounts to a product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Többszörös engedmény alkalmazása egy termékre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Determine the optimal combination of overlapping discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Átfedő engedmények optimális kombinációjának meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Define channel-specific discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornaspecifikus engedmények definiálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Options for preventing discounts for retail products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehetőségek a kiskereskedelmi termékekre vonatkozó engedmény megakadályozására</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Shipping discount overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítási engedmény áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Set up coupons for retail sales</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi értékesítési utalványok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Products and merchandising</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékek és értékesítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Product information overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékek adatainak áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Retail hierarchies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi hierarchiák</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atribútumok és attribútumcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Create and manage attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attribútumok létrehozása és kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Set up retail products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi termékek beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Manage Retail product categories and products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-termékkategóriák és termékek kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Product dimensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékdimenziók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Set up bar codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vonalkódok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Set up bar code masks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vonalkódmaszkok beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Set up assortments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szortimentek beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Sell and return products not included in a store's assortment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Default order settings for dimensions and product variants</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Search for products and product variants during order entry</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékek és termékváltozatok keresése a rendelésbevitel során</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Loyalty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Loyalty overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűség áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Inventory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készlet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Store inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üzleti árukészlet kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Register serial numbers in the sales process</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sorozatszámok regisztrálása az értékesítési folyamat során</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Inventory journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletnaplók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Inventory tag counting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletcímke számlálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>FIFO with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIFO tényleges értékkel és jelöléssel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>LIFO Date with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIFO dátum tényleges értékkel és jelöléssel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>LIFO with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIFO tényleges értékkel és jelöléssel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Weighted average date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dátum szerinti súlyozott átlag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Weighted average with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Súlyozott átlag tényleges értékkel és jelöléssel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Quarantine orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Karanténutasítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Running average cost price</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mozgóátlagon alapuló önköltségi ár</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Track running average cost per inventory dimension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Human resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberi erőforrások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Organize your workforce using departments, jobs, and positions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkaerő szervezése részlegek, feladatok és beosztások szerint</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Set up the components of a job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feladat összetevőinek beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Localization and regulatory features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Honosítási és szabályozási funkciók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Fiscal integration overview for Retail channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiskereskedelmi csatorna pénzügyi integrálásának áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Set up fiscal integration for Retail channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kiskereskedelmi csatorna pénzügyi integrálásának beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ausztria</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Fiscal registration service integration sample for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kelet-Európa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Advance invoices for Retail for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail előlegszámlák (Kelet-Európa)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Petty cash management for Retail for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail pénztárkezelés (Kelet-Európa)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Retail customer invoices and return sales orders in Eastern European countries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail vevői számlák és visszárukra vonatkozó értékesítési rendelések a kelet-európai országokban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgépek telepítési útmutatói a Cseh Köztársaságra, Magyarországra és Lengyelországra vonatkozóan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Fiscal printer integration sample for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Fiscal registration service integration sample for Czech Republic</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>France</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Franciaország</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgép funkciói</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgépek telepítésére vonatkozó irányelvek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">India</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Goods and Services Tax (GST) integration for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áruk és szolgáltatások adójának (GST) integrálása a pénztárgépek esetén</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgépek telepítésére vonatkozó irányelvek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Support for upgrade and N-1 for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frissítés és N-1 támogatása (India)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Olaszország</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Fiscal printer integration sample for Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norvégia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgép funkciói</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgépek telepítésére vonatkozó irányelvek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Svédország</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárgép funkciói</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Sample for Retail POS integration with control units</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail POS integrációja ellenőrzőegységekkel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Retail tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail feladatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Create a product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termék létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Configure linked products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összekapcsolt termékek konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Release a product/product master to legal entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termék/alaptermék kiadása más jogi személyeknek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Create channel-specific trade agreements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornaspecifikus kereskedelmi megállapodások létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Create trade agreements using category pricing rules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kereskedelmi megállapodások létrehozása kategória-árazási szabályokat segítségével</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Configure credit card processing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hitelkártya-feldolgozás konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Configure functionality profiles for sales representatives</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkcióprofilok konfigurálása értékesítési képviselőknek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Configure machine learning-powered product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gépi tanulási alapú termékajánlások konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Create devices and associate them with registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eszközök létrehozása és hozzárendelése jegyzékekhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Create hardware stations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardverállomások létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Create POS registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-pénztárgépek létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Create call center orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközponti rendelések létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Create financial dimensions for POS registers and configure dimension values on registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Create financial dimensions for retail channels and configure dimension values on stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Create online channels and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Online csatornák létrehozása és a csatorna attribútumainak meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Create POS permission groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-engedélycsoportok létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Create POS visual profiles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vizuális profilok létrehozása pénztárakhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>Create product packages for purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékcsomagok létrehozása beszerzési rendelések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Create call center channels and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>Define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatornaattribútumok meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Define continuity schedules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folytonossági ütemezések meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>Define loyalty programs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűségprogramok meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Define loyalty reward points</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűségpontok definiálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Define loyalty schemes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűségprogramok meghatározása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Design the relationships between organizational units</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szervezeti egységek közötti kapcsolatok megtervezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Manage assortments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szortimentek kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Download hardware stations by using self-service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardverállomások letöltése önkiszolgáló segítségével</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Post online sales and payments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Online értékesítések és kifizetések feladása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Process adjustments of loyalty reward points</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűségpont-helyesbítések feldolgozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>Push products from distribution centers to stores via buyer's push</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékek elosztása az elosztási központokból az üzletekbe a központi elosztás használatával</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>Create retail price adjustments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi ármódosítások létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Generate and run out-of-box reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulcsrakész jelentések generálása és futtatása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>Set up rules and parameters for cross-docking and buyer's push</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>Selling continuity programs and processing sales orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folytonossági programok eladása és értékesítési rendelések feldolgozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>Configure retail workers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi dolgozók konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Retail development and administration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi fejlesztés és adminisztráció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>Architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektúra</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Retail components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-összetevők</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Retail Server architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server-architektúra</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Select an in-store topology</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Válasszon üzleti topológiát</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Commerce Data Exchange and retail channel communications</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>Retail Modern POS architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS architektúra</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Retail online store publishing architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail online üzlet közzétételi felépítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Retail Channel Performance Power BI content</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Channel Performance Power BI-tartalom</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>Payment Application Data Security Standards (PA-DSS) certification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Retail capabilities available in on-premises deployments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>Deployment and hotfixes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepítés és gyorsjavítások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Retail Store Scale Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>Configure and install Retail Store Scale Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail Store Scale Unit konfigurálása és telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Retail Modern POS configuration and installation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS konfigurációja és telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>Manage Retail accounts and devices from headquarters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-számlák és eszközök kezelése a központból</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>Retail POS device activation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS eszköz aktiválása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>Help secure Cloud POS in shared environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Cloud POS biztonságossá tétele megosztott környezetekben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>Retail Hardware Station configuration and installation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail Hardware Station konfigurálása és telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>Mass deployment of Retail self-service components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail önkiszolgáló központi telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>Retail component events for diagnostics and troubleshooting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-összetevő-események a diagnosztikához és a hibaelhárításhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>Apply a deployable package</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepíthető csomag alkalmazása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Upgrade and N-1 support</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frissítés és N-1-támogatás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>Upgrade and N-1 support for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frissítés és N-1 támogatás a Retailhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Phased Rollout (N-1) installation, configuration, and cutover</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>Upgrade the Retail channel extension to the latest Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Implementation guidance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megvalósítási útmutatás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>Device management implementation guidance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eszközkezelés megvalósítási útmutatása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Environment configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A környezet konfigurációja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>Add links to your organization's legal terms and privacy statement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>Manage Bing Maps</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Bing Térképek kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>Localize Retail extension resources and label files</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-kiterjesztés erőforrásainak és címkefájljainak honosítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>Point of sale extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztár bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>Retail POS screen layouts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS-képernyő elrendezései</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>Open URL in POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">URL megnyitása a pénztárban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Install the POS Layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénztárelrendezés-tervező telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>Retail Modern POS in offline mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS offline módban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>Extend the POS Dual display view</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénztár kettős megjelenítési nézetének kiterjesztése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>Retail Modern POS and Cloud POS trigger extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail Modern POS és Cloud POS eseményindító bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>Add custom controls to POS views</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni vezérlők hozzáadása a pénztárnézetekhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Add POS operations to POS layouts using Button grid designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>Retail POS APIs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS API-k</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>POS payment extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárkifizetés kiterjesztése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>Support for external gift cards</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Támogatás külső ajándékutalványokhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>Create and apply branding to the Retail Experience app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>Set up POS Hybrid app on Android and iOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS Hybrid alkalmazás telepítése Android és iOS rendszerre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Override POS request handler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénztár kérelemkezelőjének felülírása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>View POS extension package information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárbővítmény csomaginformációjának megtekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>Hardware Station and extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardware Station és bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>Retail Server extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>Extend a Retail Server OData controller</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server OData-vezérlőjének kiterjesztése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>Create a Web API controller for Retail Server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Webes API-vezérlő létrehozása a Retail Serverhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>Retail Server customer and consumer APIs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server – ügyfél és fogyasztói API-k</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Extend the default Retail Server metadata controller</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Az alapértelmezett Retail Server metaadat-vezérlő kiterjesztése</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>Call the CRT service in offline mode</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">A CRT szolgáltatás hívása offline módban</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>Commerce runtime (CRT) extensibility</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Commerce Runtime (CRT) bővíthetősége</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>CRT architecture and configuration</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">A CRT architektúrája és konfigurálása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>CRT services</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT-szolgáltatások</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>CRT and Retail Server extensibility</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">A CRT és a Retail Server bővíthetősége</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>Add customer preference data to channel databases</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Ügyfélpreferencia-adatok hozzáadása a csatorna-adatbázisokhoz</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>Add properties to sales orders</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tulajdonságok hozzáadása az értékesítési rendelésekhez</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>CRT extensibility and triggers</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">A CRT bővíthetősége és az eseményindítók</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>Block transactions using triggers</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tranzakciók zárolása eseményindítók segítségével</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>Implement a return policy using triggers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visszavételi irányelvek bevezetése eseményindítók segítségével</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>e-Commerce extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus kereskedelem bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>Configure online stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Online áruházak beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>Configure authentication providers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hitelesítési szolgáltatók konfigurálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>e-Commerce platform</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus kereskedelmi platform</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>e-Commerce platform SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus kereskedelmi platform SDK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>Payment connector extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési csatlakozó bővíthetősége</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>Create a payment integration for a payment terminal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési integráció létrehozása fizetési terminálhoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>Implementing a payment connector and payment device (white paper)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>Deploy payment connectors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési csatlakozók telepítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>Create custom localized error messages for payment terminal extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>Create Windows installers for payment connectors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows-telepítők létrehozása fizetési összekötőkhöz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>Payment data use</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési adatok használata</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>Enable duplicate payment protection for payment connector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail szoftverfejlesztői készlet (SDK)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>Upcoming changes in the Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail szoftverfejlesztői készlet (SDK) közelgő változásai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>Merge the build systems for Retail and Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail és Finance and Operations buildrendszereinek egyesítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>Retail SDK extensibility samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail SDK bővíthetőségi mintái</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>Create retail deployable packages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi telepíthető csomagok létrehozása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Retail SDK samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK-minták</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>Extension points for packing slips</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítólevelek kiterjesztési pontjai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>Channel database extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A csatorna-adatbázis bővítményei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>Enable custom CDX synchronization via extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>Add custom fields to the POS Totals panel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni mezők hozzáadása a pénztár Összegek paneljéhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Define and set order attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rendelési attribútumok meghatározása és beállítása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>Customer attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevőattribútumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Retail Typescript and C# proxies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Retail Typescript és a C# proxyk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>Run the Retail POS samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS-minták futtatása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>Extend POS views to add custom columns and app bar buttons</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztárnézetek kibővítése egyéni oszlopok és alkalmazássáv-gombok hozzáadásához</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>Add custom controls to Retail Modern POS transaction pages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Add custom columns to a POS transaction grid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni oszlopok hozzáadása a pénztár tranzakciós rácsához</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>Call POS APIs or operations from POS extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénztár API-k meghívása vagy pénztárbővítményekből indított műveletek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>Retail Modern POS triggers and printing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS eseményindítók és nyomtatás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Add custom controls to non-screen designer-based POS views</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyéni vezérlők hozzáadása nem képernyő tervező alapú pénztárnézetekhez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>Development in cloud-hosted dev environments without admin access</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>Commerce runtime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kereskedelmi futtatókörnyezet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>Loyalty extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hűségidő kiterjesztése</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+- name: Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
+  href: index.md
+- name: Első lépések
+  items:
+    - name: Új vagy módosult elemek
+      href: get-started/whats-new.md
+    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.3-as verziójában
+      href: get-started/whats-new-10-0-3.md
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.2-es verziójában
+      href: get-started/whats-new-10-0-2.md
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.1-es verziójában
+      href: get-started/whats-new-10-0-1.md
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail (2019. április) szolgáltatásban
+      href: get-started/april-whats-new.md
+    - name: Mielőtt megvásárolná a Retail terméket
+      href: get-started/before-you-buy.md
+    - name: Regisztrálás az előzetes verziót tartalmazó előfizetésre
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Bemutatókörnyezet telepítése
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Telepítési beállítások
+      href: dev-itpro/choose-deployment.md
+    - name: Támogatás kérése a Retail alkalmazáshoz
+      href: retail-support.md
+    - name: Egyverziós szolgáltatásfrissítések GYIK
+      href: ../fin-and-ops/get-started/one-version.md
+- name: A végrehajtási életciklus megértése
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Felvétel
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Előkészítés az éles indításra
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Éles indítás GYIK
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Szolgáltatási kérelem benyújtása
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Előfizetésekhez, LCS-projektekhez és Azure Active Directory-bérlőkhöz kapcsolódó GYIK'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Környezetek áthelyezése az adatközpontok között
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Licencek áthelyezése szerződéstípusok között
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: LCS végrehajtási projekt áthelyezése egy másik Azure Active Directory-bérlőhöz
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Több LCS-projekt és termelési környezet végrehajtása ugyanazon az Azure Active Directory-bérlőn
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Finance and Operations Retail-projektek megvalósítása
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Új környezetek, Azure DevOps és ágak beállítása a Retail-projektekhez'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Kód és környezetek frissítése a Retail-projekteknél
+      href: dev-itpro/updating-environments.md
+    - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
+      href: dev-itpro/retail-implementation-testing-performance.md
+- name: Felosztott rendeléskezelés (DOM)
+  items:
+    - name: DOM áttekintés
+      href: dom.md
+    - name: Költségkonfiguráció
+      href: cost.md
+- name: Kifizetések
+  items:
+    - name: Fizetési módok
+      href: payment-methods.md
+    - name: 'Hitelkártya beállítása, engedélyezése és rögzítése'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Készpénzcímletek konfigurálása a pénztárhoz
+      href: cash-denominations.md
+    - name: Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz
+      href: dev-itpro/adyen-connector.md
+    - name: Online fizetési eszközök mentése az Adyen összekötővel
+      href: dev-itpro/adyen-connector-listPI.md
+    - name: Számlafizetési forgatókönyvek beállítása
+      href: payinvoice.md
+    - name: Kifizetésekkel kapcsolatos GYIK
+      href: dev-itpro/payments-retail.md
+    - name: Ismétlődő kifizetések megakadályozása
+      href: duplicate-payment-protection.md
+- name: Beszerzési rendelések
+  items:
+    - name: Beszerzési rendelések áttekintése
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Beszerzési rendelések létrehozása
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Termékbevételezés összevetése a beszerzési rendelésekkel
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Beszerzési rendelések jóváhagyása és megerősítése
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Beszerzési rendelés jóváhagyásához használt mobil munkaterület
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Kimutatások
+  items:
+    - name: Kiskereskedelmi kimutatások
+      href: retail-statements.md
+    - name: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
+      href: valid-checker.md
+    - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Kimutatásfeladás funkcióinak továbbfejlesztései
+      href: statement-posting-EOD.md
+    - name: Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
+      href: batch.md
+    - name: A kiskereskedelmi kimutatásokat befolyásoló kiskereskedelmi paraméterek konfigurálása
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: A kiskereskedelmi kimutatásokat befolyásoló fizetésimód-beállítások konfigurálása
+      href: tasks/payment-configurations-retail-statements.md
+    - name: Kimutatások számításához használt feladat konfigurálása és futtatása
+      href: tasks/run-job-calculate-statements.md
+    - name: Kimutatások feladásához használt feladat konfigurálása és futtatása
+      href: tasks/run-job-post-statements.md
+    - name: A kiskereskedelmi kimutatásokat befolyásoló áruház-beállítások konfigurálása
+      href: tasks/store-configurations-retail-statements.md
+- name: Áfa
+  items:
+    - name: Áfa áttekintése
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Áfaszámítási módok a Kiindulás mezőben
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: Áfa-hozzárendelés és felülbírálások
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Teljesösszeg- és intervallumszámítási opciók áfakódokhoz
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Többcsatornás fizetések áttekintése
+  href: omni-channel-payments.md
+- name: Többcsatornás speciális automatikus költségek
+  items:
+    - name: Speciális automatikus költségek konfigurálása és használata
+      href: omni-auto-charges.md
+    - name: Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
+      href: pro-rate-charges-matching-lines.md
+- name: Hívásközpont
+  items:
+    - name: Hívásközpont értékesítési funkciói
+      href: call-center-functionality.md
+    - name: Hívásközpont-katalógusok
+      href: call-center-catalogs.md
+    - name: Szállítási módok és költségek konfigurálása
+      href: configure-call-center-delivery.md
+    - name: Csalással kapcsolatos figyelmeztetések beállítása és használata
+      href: set-up-fraud-alerts.md
+    - name: Hívásközponti csatornák beállítása
+      href: set-up-order-processing-options.md
+    - name: Folytonossági programok beállítása hívásközpontok számára
+      href: set-up-continuity-program.md
+    - name: Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
+      href: work-with-order-holds.md
+    - name: Fizetési módok
+      href: work-with-payments.md
+- name: Csatorna beállítása és kezelése
+  items:
+    - name: Kiindulási adatok inicializálása új Retail-környezetben
+      href: enable-configure-retail-functionality.md
+    - name: A kiskereskedelmi csatornák definiálása és karbantartása
+      href: define-maintain-retail-channels.md
+    - name: Szortiment kezelése
+      href: assortments.md
+    - name: Online áruházak beállítása
+      href: online-stores.md
+    - name: A Retail Hardware Station konfigurálása és telepítése
+      href: retail-hardware-station-configuration-installation.md
+    - name: Munkaidő és jelenlét a Retailben
+      href: retail-time-attendance.md
+- name: Modern Point of Sale (MPOS) és Cloud POS
+  items:
+    - name: Az MPOS és a felhőalapú pénztár (POS) közötti választás
+      href: MPOS-or-CPOS.md
+    - name: Online és offline pénztári műveletek
+      href: pos-operations.md
+    - name: Személyre szabott Retail MPOS eszköz aktiválása
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései
+      href: demo-data.md
+    - name: Termék és vevő keresése a pénztárban
+      href: POS-search-improvements.md
+    - name: Készpénzkezelés fejlesztései
+      href: cash-mgmt.md
+    - name: Készletkeresés a pénztárban
+      href: product-variants-POS.md
+    - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
+      href: pos-suspend-recall-transactions.md
+    - name: Hardverperifériák
+      items:
+        - name: Retail-perifériák
+          href: retail-peripherals-overview.md
+        - name: Retail perifériaszimulátor
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: Perifériák csatlakoztatása a pénztárhoz
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Képernyő-elrendezések
+      items:
+        - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
+          href: demo-data.md
+        - name: Pénztár képernyő-elrendezései
+          href: pos-screen-layouts.md
+        - name: A Retail POS képernyőelrendezés-tervező telepítése
+          href: install-pos-layout-designer.md
+        - name: Értesítési beállítások kiválasztása
+          href: Notifications-POS.md
+        - name: POS-alkalmazás és felhasználói nyelvi beállítások
+          href: pos-application-user-language-settings.md
+        - name: Képek beállítása és kezelése az MPOS esetében
+          href: set-up-manage-images-retail-mpos.md
+    - name: Infókódok és infókódcsoportok
+      href: info-codes-retail.md
+    - name: Pénztárjavítások szerializált termékekhez
+      href: serialized-inventory.md
+    - name: Termékajánlatok
+      items:
+        - name: Személyre szabott termékajánlatok
+          href: personalized-product-recommendations.md
+        - name: Ajánlások vezérlőelem felvétele a pénztári eszközökön
+          href: add-recommendations-control-pos-screen.md
+    - name: Kapcsolat nélküli pénztár funkciói
+      href: pos-offline-functionality.md
+    - name: Műszak és pénztárgépfiók kezelése
+      href: shift-drawer-management.md
+    - name: Készpénzkifizetési ajándékutalvány egyenlege
+      href: dev-itpro/gift-card-cash-out.md
+    - name: Vevői rendelések
+      items:
+        - name: Vevői rendelések az MPOS-ben
+          href: customer-orders-overview.md
+        - name: Hibrid vevői rendelések
+          href: hybrid-customer-orders.md
+    - name: Értékesítési társítások
+      items:
+        - name: Jutalékok követése a POS készülékben értékesítési csoportok révén
+          href: pos-sales-groups-track-commissions.md
+    - name: Rendelések szállítása egy másik áruházból
+      href: charge-send.md
+    - name: Eszköz aktiválása
+      items:
+        - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
+          href: retail-modern-pos-device-activation.md
+        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
+          href: extended-logon.md
+        - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Nyugták
+      items:
+        - name: Nyugtaformátumok beállítása és tervezése
+          href: receipt-templates-printing.md
+        - name: E-mailes nyugták küldése MPOS pénztárból
+          href: email-receipts.md
+    - name: Feladatrögzítő és Súgó az MPOS-hez és a Cloud POS-hez
+      href: task-recorder-retail-pos.md
+- name: Rendelésteljesítés
+  items:
+    - name: Rendelésteljesítés az üzletben
+      href: Order-fulfillment-overview.md
+    - name: Rendelésteljesítés beállítása az üzletek esetében
+      href: Order-fulfillment-POS-setup.md
+    - name: Rendelési értesítések megjelenítése a pénztárban
+      href: Notifications-POS.md
+- name: Visszáru
+  items:
+    - name: Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele
+      href: sell-return-outside-assortments.md
+    - name: Csere konfigurálása és feldolgozása visszárurendelésen
+      href: orderexchanges.md
+    - name: Nyugta nélküli visszárukhoz használható fizetési módok korlátozása
+      href: payment-methods-restrictions.md
+    - name: Több vevői rendelést és számlát érintő visszárucikkek
+      href: multireturn.md
+- name: Megfigyelés és elemzés
+  items:
+    - name: Értékesítés és teljesítménykülönbözet megfigyelése
+      href: monitor-sales-margin-performance.md
+    - name: Értékesítési trendek és mintázatok elemzése
+      href: analyze-sales-trends-patterns.md
+    - name: Értékesítési teljesítmény felmérése termék szerint
+      href: sales-performance-products.md
+    - name: Vevők és termékek nyereségességének felmérése
+      href: assess-customer-product-profitability.md
+    - name: Az üzletteljesítmény elemzése
+      href: store-performance-information.md
+    - name: 'Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása'
+      href: set-up-rfm-analysis.md
+- name: Kiskereskedelmi árjelentések
+  href: price-report.md
+- name: Árképzés és engedmények
+  items:
+    - name: Kiskereskedelmi engedmények
+      href: retail-discounts-overview.md
+    - name: Kiskereskedelmi értékesítési ár kezelése
+      href: price-management.md
+    - name: Ármódosítások és engedmények
+      href: price-adjustments-discounts.md
+    - name: Többszörös engedmény alkalmazása egy termékre
+      href: Apply-multiple-retail-discounts.md
+    - name: Átfedő engedmények optimális kombinációjának meghatározása
+      href: optimal-combination-overlapping-discounts.md
+    - name: Csatornaspecifikus engedmények definiálása
+      href: define-channel-specific-discounts.md
+    - name: Lehetőségek a kiskereskedelmi termékekre vonatkozó engedmény megakadályozására
+      href: prevent-discounts.md
+    - name: Szállítási engedmény áttekintése
+      href: retail-shipping-discount.md
+    - name: Kiskereskedelmi értékesítési utalványok beállítása
+      href: retail-coupons.md
+- name: Termékek és értékesítés
+  items:
+    - name: Termékek adatainak áttekintése
+      href: ../supply-chain/pim/product-information.md
+    - name: Kiskereskedelmi hierarchiák
+      href: retail-hierarchies.md
+    - name: Atribútumok és attribútumcsoportok
+      href: attribute-attributegroups-lifecycle.md
+    - name: Attribútumok létrehozása és kezelése
+      href: create-manage-attributes.md
+    - name: Kiskereskedelmi termékek beállítása
+      href: set-up-retail-products.md
+    - name: Retail-termékkategóriák és termékek kezelése
+      href: category-management-product-creation.md
+    - name: Termékdimenziók
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Vonalkódok beállítása
+      href: set-up-bar-codes.md
+    - name: Vonalkódmaszkok beállítása
+      href: set-up-bar-code-masks.md
+    - name: Szortimentek beállítása
+      href: set-up-assortments.md
+    - name: Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele
+      href: sell-return-outside-assortments.md
+    - name: Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: Termékek és termékváltozatok keresése a rendelésbevitel során
+      href: ../supply-chain/pim/search-products-product-variants.md
+- name: Hűség
+  items:
+    - name: Hűség áttekintése
+      href: set-up-customer-loyalty-program.md
+- name: Készlet
+  items:
+    - name: Üzleti árukészlet kezelése
+      href: work-with-store-inventory.md
+    - name: Sorozatszámok regisztrálása az értékesítési folyamat során
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Készletnaplók
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Készletcímke számlálása
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: FIFO tényleges értékkel és jelöléssel
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: LIFO dátum tényleges értékkel és jelöléssel
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: LIFO tényleges értékkel és jelöléssel
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Dátum szerinti súlyozott átlag
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Súlyozott átlag tényleges értékkel és jelöléssel
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karanténutasítások
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Mozgóátlagon alapuló önköltségi ár
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+- name: Emberi erőforrások
+  items:
+    - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
+      href: ../talent/departments-jobs-positions.md
+    - name: Feladat összetevőinek beállítása
+      href: ../talent/create-job.md
+- name: Honosítási és szabályozási funkciók
+  items:
+    - name: A kiskereskedelmi csatorna pénzügyi integrálásának áttekintése
+      href: localizations/fiscal-integration-for-retail-channel.md
+    - name: A kiskereskedelmi csatorna pénzügyi integrálásának beállítása
+      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+    - name: Ausztria
+      items:
+        - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
+          href: localizations/emea-aut-fi-sample.md
+    - name: Kelet-Európa
+      items:
+        - name: Retail előlegszámlák (Kelet-Európa)
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Retail pénztárkezelés (Kelet-Európa)
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Retail vevői számlák és visszárukra vonatkozó értékesítési rendelések a kelet-európai országokban
+          href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Pénztárgépek telepítési útmutatói a Cseh Köztársaságra, Magyarországra és Lengyelországra vonatkozóan'
+          href: localizations/emea-eeu-deployment.md
+        - name: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
+          href: localizations/emea-pol-fpi-sample.md
+        - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan
+          href: localizations/emea-cze-fi-sample.md
+    - name: Franciaország
+      items:
+        - name: Pénztárgép funkciói
+          href: localizations/emea-fra-cash-registers.md
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
+          href: localizations/emea-fra-deployment.md
+    - name: India
+      items:
+        - name: Áruk és szolgáltatások adójának (GST) integrálása a pénztárgépek esetén
+          href: localizations/apac-ind-cash-registers.md
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Frissítés és N-1 támogatása (India)
+          href: localizations/apac-ind-n-1-for-india.md
+    - name: Olaszország
+      items:
+        - name: Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan
+          href: localizations/emea-ita-fpi-sample.md
+    - name: Norvégia
+      items:
+        - name: Pénztárgép funkciói
+          href: localizations/emea-nor-cash-registers.md
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Svédország
+      items:
+        - name: Pénztárgép funkciói
+          href: localizations/emea-swe-cash-registers.md
+        - name: A Retail POS integrációja ellenőrzőegységekkel
+          href: localizations/retail-sdk-control-unit-sample.md
+- name: Retail feladatok
+  items:
+    - name: Termék létrehozása
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Összekapcsolt termékek konfigurálása
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Termék/alaptermék kiadása más jogi személyeknek
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Csatornaspecifikus kereskedelmi megállapodások létrehozása
+      href: tasks/base-price-trade-agreements.md
+    - name: Kereskedelmi megállapodások létrehozása kategória-árazási szabályokat segítségével
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: Hitelkártya-feldolgozás konfigurálása
+      href: tasks/configure-credit-card-processing.md
+    - name: Funkcióprofilok konfigurálása értékesítési képviselőknek
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: Gépi tanulási alapú termékajánlások konfigurálása
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: Eszközök létrehozása és hozzárendelése jegyzékekhez
+      href: tasks/create-associate-device.md
+    - name: Hardverállomások létrehozása
+      href: tasks/create-associate-hardware-station.md
+    - name: POS-pénztárgépek létrehozása
+      href: tasks/create-associate-registers.md
+    - name: Hívásközponti rendelések létrehozása
+      href: tasks/create-call-center-orders.md
+    - name: Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken
+      href: tasks/create-financial-dimensions-pos.md
+    - name: Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: Online csatornák létrehozása és a csatorna attribútumainak meghatározása
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: POS-engedélycsoportok létrehozása
+      href: tasks/create-pos-permission-groups.md
+    - name: Vizuális profilok létrehozása pénztárakhoz
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: Termékcsomagok létrehozása beszerzési rendelések
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: Csatornaattribútumok meghatározása
+      href: tasks/define-channel-attributes.md
+    - name: Folytonossági ütemezések meghatározása
+      href: tasks/define-continuity-schedules.md
+    - name: Hűségprogramok meghatározása
+      href: tasks/define-loyalty-programs.md
+    - name: Hűségpontok definiálása
+      href: tasks/define-loyalty-reward-points.md
+    - name: Hűségprogramok meghatározása
+      href: tasks/define-loyalty-schemes.md
+    - name: A szervezeti egységek közötti kapcsolatok megtervezése
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Szortimentek kezelése
+      href: tasks/manage-assortments-2016-11.md
+    - name: Hardverállomások letöltése önkiszolgáló segítségével
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: Online értékesítések és kifizetések feladása
+      href: tasks/posting-online-sales-payments.md
+    - name: Hűségpont-helyesbítések feldolgozása
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Termékek elosztása az elosztási központokból az üzletekbe a központi elosztás használatával
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Kiskereskedelmi ármódosítások létrehozása
+      href: tasks/retail-price-adjustments.md
+    - name: Kulcsrakész jelentések generálása és futtatása
+      href: tasks/run-out-box-reports.md
+    - name: Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Folytonossági programok eladása és értékesítési rendelések feldolgozása
+      href: tasks/use-continuity-program.md
+    - name: Kiskereskedelmi dolgozók konfigurálása
+      href: tasks/worker.md
+- name: Kiskereskedelmi fejlesztés és adminisztráció
+  href: dev-itpro/dev-retail-home-page.md
+  items:
+    - name: Architektúra
+      items:
+        - name: Retail-összetevők
+          href: retail-components.md
+        - name: Retail Server-architektúra
+          href: dev-itpro/retail-server-architecture.md
+        - name: Válasszon üzleti topológiát
+          href: dev-itpro/retail-in-store-topology.md
+        - name: Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Retail Modern POS architektúra
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Retail online üzlet közzétételi felépítése
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Retail Channel Performance Power BI-tartalom
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek
+          href: retail-onprem.md
+    - name: Telepítés és gyorsjavítások
+      items:
+        - name: Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: A Retail Store Scale Unit konfigurálása és telepítése
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Retail Modern POS konfigurációja és telepítése
+          href: retail-modern-pos-device-activation.md
+        - name: Retail-számlák és eszközök kezelése a központból
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Retail POS eszköz aktiválása
+          href: dev-itpro/retail-device-activation.md
+        - name: A Cloud POS biztonságossá tétele megosztott környezetekben
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: A Retail Hardware Station konfigurálása és telepítése
+          href: retail-hardware-station-configuration-installation.md
+        - name: Retail önkiszolgáló központi telepítése
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Retail-összetevő-események a diagnosztikához és a hibaelhárításhoz
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Telepíthető csomag alkalmazása
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Frissítés és N-1-támogatás
+      items:
+        - name: Frissítés és N-1 támogatás a Retailhez
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
+          href: dev-itpro/n-1-installation-configuration.md
+        - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
+          href: dev-itpro/retailSDK-update.md
+    - name: Megvalósítási útmutatás
+      items:
+        - name: Eszközkezelés megvalósítási útmutatása
+          href: implementation-considerations-devices.md
+    - name: A környezet konfigurációja
+      items:
+        - name: Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: A Bing Térképek kezelése
+          href: dev-itpro/manage-bing-maps.md
+    - name: Retail-kiterjesztés erőforrásainak és címkefájljainak honosítása
+      href: dev-itpro/extension-resource-localization.md
+    - name: Pénztár bővíthetősége
+      items:
+        - name: Retail POS-képernyő elrendezései
+          href: pos-screen-layouts.md
+        - name: URL megnyitása a pénztárban
+          href: Open-URL-in-POS.md
+        - name: A pénztárelrendezés-tervező telepítése
+          href: install-pos-layout-designer.md
+        - name: Retail Modern POS offline módban
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: A pénztár kettős megjelenítési nézetének kiterjesztése
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: A Retail Modern POS és Cloud POS eseményindító bővíthetősége
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
+          href: dev-itpro/pos-custom-control.md
+        - name: Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel
+          href: dev-itpro/add-POS-operations.md
+        - name: Retail POS API-k
+          href: dev-itpro/POS-APIs.md
+        - name: Pénztárkifizetés kiterjesztése
+          href: dev-itpro/pos-payment-extension.md
+        - name: Támogatás külső ajándékutalványokhoz
+          href: dev-itpro/gift-card.md
+        - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
+          href: dev-itpro/create-retail-experience-app.md
+        - name: POS Hybrid alkalmazás telepítése Android és iOS rendszerre
+          href: dev-itpro/hybridApp.md
+        - name: A pénztár kérelemkezelőjének felülírása
+          href: dev-itpro/pos-handler.md
+        - name: Pénztárbővítmény csomaginformációjának megtekintése
+          href: dev-itpro/view-pos-extension-package-details.md
+    - name: Hardware Station és bővíthetősége
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Retail Server bővíthetősége
+      items:
+        - name: Retail Server OData-vezérlőjének kiterjesztése
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Webes API-vezérlő létrehozása a Retail Serverhez
+          href: dev-itpro/odata-controllers-api.md
+        - name: Retail Server – ügyfél és fogyasztói API-k
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Az alapértelmezett Retail Server metaadat-vezérlő kiterjesztése
+          href: dev-itpro/extend-metadata.md
+        - name: A CRT szolgáltatás hívása offline módban
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Commerce Runtime (CRT) bővíthetősége
+      items:
+        - name: A CRT architektúrája és konfigurálása
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: CRT-szolgáltatások
+          href: dev-itpro/crt-services.md
+        - name: A CRT és a Retail Server bővíthetősége
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Ügyfélpreferencia-adatok hozzáadása a csatorna-adatbázisokhoz
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
+          href: dev-itpro/add-properties-sales-order.md
+        - name: A CRT bővíthetősége és az eseményindítók
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: Tranzakciók zárolása eseményindítók segítségével
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: Visszavételi irányelvek bevezetése eseményindítók segítségével
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Elektronikus kereskedelem bővíthetősége
+      items:
+        - name: Online áruházak beállítása
+          href: dev-itpro/configure-online-store.md
+        - name: Hitelesítési szolgáltatók konfigurálása
+          href: dev-itpro/configure-authentication-providers.md
+        - name: Elektronikus kereskedelmi platform
+          href: dev-itpro/ecommerce-platform.md
+        - name: Elektronikus kereskedelmi platform SDK
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Fizetési csatlakozó bővíthetősége
+      items:
+        - name: Fizetési integráció létrehozása fizetési terminálhoz
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Fizetési csatlakozók telepítése
+          href: dev-itpro/deploy-payment-connector.md
+        - name: Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Windows-telepítők létrehozása fizetési összekötőkhöz
+          href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Fizetési adatok használata
+          href: payment-connector-data-fields.md
+        - name: Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz
+          href: dev-itpro/duplicate-payment-protection.md
+    - name: Retail szoftverfejlesztői készlet (SDK)
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: A Retail és Finance and Operations buildrendszereinek egyesítése
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: A Retail SDK bővíthetőségi mintái
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Kiskereskedelmi telepíthető csomagok létrehozása
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: Retail SDK-minták
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Szállítólevelek kiterjesztési pontjai
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: A csatorna-adatbázis bővítményei
+          href: dev-itpro/channel-db-extensions.md
+        - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel
+          href: dev-itpro/cdx-extensibility.md
+        - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Rendelési attribútumok meghatározása és beállítása
+          href: dev-itpro/order-attributes.md
+        - name: Vevőattribútumok
+          href: dev-itpro/customer-attributes.md
+        - name: 'A Retail Typescript és a C# proxyk'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Retail POS-minták futtatása
+          href: dev-itpro/pos-run-samples.md
+        - name: Pénztárnézetek kibővítése egyéni oszlopok és alkalmazássáv-gombok hozzáadásához
+          href: dev-itpro/pos-view-extension.md
+        - name: Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Egyéni oszlopok hozzáadása a pénztár tranzakciós rácsához
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: Pénztár API-k meghívása vagy pénztárbővítményekből indított műveletek
+          href: dev-itpro/pos-api-extension.md
+        - name: Retail Modern POS eseményindítók és nyomtatás
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Egyéni vezérlők hozzáadása nem képernyő tervező alapú pénztárnézetekhez
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
+          href: dev-itpro/cloud-dev-box.md
+    - name: Kereskedelmi futtatókörnyezet
+      items:
+        - name: Hűségidő kiterjesztése
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md

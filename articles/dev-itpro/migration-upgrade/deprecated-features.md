@@ -1,4029 +1,1282 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="deprecated-features.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>deprecated-features.a8ef67.9daba2449b6a20634c13117cedb6b63fcc8ee674.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>9daba2449b6a20634c13117cedb6b63fcc8ee674</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>fcae2e7938d7dbd94b76b0948b084d90d5fc919c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\deprecated-features.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Removed or deprecated features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolított vagy elavult funkciók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes features that have been removed, or that are planned for removal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Removed or deprecated features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolított vagy elavult szolgáltatások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva vagy elavultak a Dynamics 365 for Finance and Operations szolgáltatásban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>A <bpt id="p1">*</bpt>removed<ept id="p1">*</ept> feature is no longer available in the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">*</bpt>eltávolított<ept id="p1">*</ept> szolgáltatások már nem érhetők el a termékben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>A <bpt id="p1">*</bpt>deprecated<ept id="p1">*</ept> feature is not in active development and may be removed in a future update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az <bpt id="p1">*</bpt>elavult<ept id="p1">*</ept> szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This list is intended to help you consider these removals and deprecations for your own planning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics 365 for Finance and Operations 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>All of the previous releases mentioned in this topic supported cloud deployments only.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Detailed information about objects in Finance and Operations can be found in the <bpt id="p1">[</bpt>Technical reference reports<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finance and Operations objektumaival kapcsolatban a <bpt id="p1">[</bpt>Technikai referenciajelentésekben<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept> talál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Dynamics 365 for Finance and Operations 10.0.4</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>France: FEC Accounting data export in XML</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">FEC Könyvelési adatok exportálása XML-formátumban, Franciaország</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Replaced by TXT format, <bpt id="p1">**</bpt>French FEC audit file<ept id="p1">**</ept> is available through <bpt id="p2">**</bpt>General ledger<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Periodic tasks<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Data export<ept id="p4">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A TXT formátumra cserélve a <bpt id="p1">**</bpt>Francia FEC könyvvizsgálati fájl<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Főkönyv<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Ismétlődő feladatok<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Adatok exportálása<ept id="p4">**</ept> pontban érhető el.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Yes</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>General ledger</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>All</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Deprecated.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Elavult.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Target timeframe for the functionality to be removed is July 2020.</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">A funkció eltávolításának céljaként megjelölt időkeret 2020. július.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A Dynamics 365 for Finance and Operations 10.0.4 28-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tartalom és a funkciók megváltozhatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Az előzetes kiadásokkal kapcsolatban további információkat a <bpt id="p1">[</bpt>Szolgáltatásfrissítések elérhetősége<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept> oldalon találhat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Legacy navigation bar</source><target logoport:matchpercent="69" state="translated" state-qualifier="fuzzy-match">Korábbi navigációs sáv</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Header alignment with other Dynamics and Office products.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fejléc igazítása más Dynamics és Office termékekkel.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>For more details, see <bpt id="p1">[</bpt>Updated navigation bar that aligns with the Office header<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A további tudnivalókat lásd: <bpt id="p1">[</bpt>A frissített navigációs sáv mostantól igazodik az Office fejléchez<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Starting in Platform update 24, a restyled navigation bar that features search was introduced.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A Platform update 24-től kezdve bevezetésre került egy újratervezett navigációs sáv, amelyen keresés is található.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Web client</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Webes ügyfél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>All</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Elavult: 2020 áprilisában a korábbi navigációs sáv már nem lesz elérhető.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Until that point, customers can revert to the legacy navigation bar through the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Eddig a pontig a vevők a korábbi navigációs sávra az <bpt id="p1">**</bpt>Ügyfélteljesítmény beállításai<ept id="p1">**</ept> lapon térhetnek vissza.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.2 és 26-as platformfrissítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A Dynamics 365 for Finance and Operations 10.0.2 26-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tartalom és a funkciók megváltozhatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előzetes kiadásokkal kapcsolatban további információkat a <bpt id="p1">[</bpt>Szolgáltatásfrissítések elérhetősége<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept> oldalon találhat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Legacy default action behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Örökölt alapértelmezett művelet viselkedése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az rácsokban végzett alapértelmezett műveletek örökölt viselkedése azt eredményezheti, hogy az egyik, alapértelmezett művelet hivatkozását tartalmazó, rácsoszlopok után szereplő váratlan oszlop átrendezése történik személyre szabáson keresztül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>The new sticky default action feature corrects this.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új beragadó alapértelmezett művelet funkció ennek javítására használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>For more details, see <bpt id="p1">[</bpt>Sticky default actions in grids<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További részletekért lásd: <bpt id="p1">[</bpt>Alapértelmezett beragadó műveletek rácsokban<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Starting in Platform update 21, a feature for "sticky default actions" was introduced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 21-es platformfrissítéstől kezdődően bevezettük az „alapértelmezett beragadó műveletek” funkciót.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>This feature can be enabled on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkciót az <bpt id="p1">**</bpt>Ügyfélteljesítmény beállításai<ept id="p1">**</ept> oldalon lehet engedélyezni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Grids in the web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rácsok a webes ügyfélnél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: 2020. áprilistól kezdődően az alapértelmezett beragadó műveletek lesznek az alapértelmezett műveletek, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Legacy "is one of" filtering experience</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Örökölt „egyike a következőknek” szűrési élmény</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az „egyike a következőknek” szűrési gyakorlatot a 22-es platformfrissítésben átterveztük, mivel a jövőben ez lesz az egyetlen „egyike a következőknek” szűrési gyakorlat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Starting in Platform update 22, an improved "is one of" filtering experience became available on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 22-es platformfrissítéstől kezdődően a továbbfejlesztett „egyike a következőknek” szűrési gyakorlat elérhetővé vált az <bpt id="p1">**</bpt>Ügyfélteljesítmény beállításai<ept id="p1">**</ept> oldalon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>For more information, see <bpt id="p1">[</bpt>Optimized is one of filtering experience<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információért lásd: <bpt id="p1">[</bpt>Optimalizált „egyike a következőknek” szűrési élmény<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Webes ügyfél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: 2020. áprilistól kezdődően a továbbfejlesztett „egyike a következőknek” gyakorlat lesz az alapértelmezett viselkedés, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Parameter to enable sales orders with multiple project contract funding sources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paraméter, amellyel engedélyezhetők a több projektszerződéses finanszírozási forrással rendelkező értékesítési rendelések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the <bpt id="p1">**</bpt>Project management parameters<ept id="p1">**</ept> setting <bpt id="p2">**</bpt>Allow sales orders for project with multiple funding sources<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a projekszerződéseknél több finanszírozási forrás is engedélyezve van a <bpt id="p1">**</bpt>Projektvezetési paraméterek<ept id="p1">**</ept> beállítás <bpt id="p2">**</bpt>Több finanszírozási forrással rendelkező projekthez tartozó értékesítési rendelések engedélyezése<ept id="p2">**</ept> értékével.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>By default, this parameter is not enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint ez a paraméter nincs engedélyezve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>The functionality will always be enabled after the parameter is removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkciót a rendszer mindig engedélyezi a paraméter eltávolítása után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The functionality to support project-based sales orders with multiple funding sources will always be enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció, amely támogatja a projektalapú értékesítési rendelkéseket, amelyek több finanszírozási forrással rendelkeznek, mindig engedélyezve lesz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>The <bpt id="p1">**</bpt>Allow sales orders for projects with multiple funding sources<ept id="p1">**</ept> parameter will be removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Több finanszírozási forrással rendelkező projektekhez tartozó értékesítési rendelések engedélyezése<ept id="p1">**</ept> paraméter el lesz távolítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>The following methods will be modified when the parameter is removed: <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept> method in <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept> class, <bpt id="p3">**</bpt>validate<ept id="p3">**</ept> method for <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept> field, and <bpt id="p5">**</bpt>run<ept id="p5">**</ept> method in <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept> form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paraméter eltávolításakor a következő metódusok módosulnak: <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept> metódus a <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept> osztályban, az <bpt id="p3">**</bpt>ellenőrzés<ept id="p3">**</ept> metódus a <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept> mezőre vonatkozóan, és a <bpt id="p5">**</bpt>futtatás<ept id="p5">**</ept> metódus a <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept> képernyőn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>The following methods will be deprecated when the parameter is removed: <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> in <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept> table file, <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept> method in <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept> table file, <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept> data field in <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept> form and <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept> files, <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept> private method in <bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept> table file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kövektező metódusok elavulnak a paraméter eltávolításakor: <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> a <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept> táblafájlban, a <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept> metódus a <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept> táblafájlban, az <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept> adatmező a <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept> képernyőn és a <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept> fájlokban, az <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept> privát metódus a<bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept> táblafájlban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Deprecation is planned for the April 2020 release wave.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az elavulást a 2020. áprilisi kiadási hullámra tervezzük.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Legacy workflow reports for tracking and instance status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Örökölt munkafolyamat-jelentések nyomon követéshez és példányállapothoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A nyomon követéshez és példányállapothoz használt örökölt munkafolyamat-jelentések elavulnak, mivel már nem hivatkoznak rájuk a navigációból.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentések nevei a következők: WorkflowWorkflowInstanceByStatusReport és WorkflowWorkflowTrackingReport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The workflow history form can be used instead.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett a munkafolyamat-előzmények képernyő használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Webes ügyfél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Deprecated: Target timeframe for the functionality to be removed is April 2020.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A funkció eltávolításának célként meghatározott időkerete 2020 áprilisa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.1 és 25-as platformfrissítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tartalom és a funkciók megváltozhatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az előzetes kiadásokkal kapcsolatban további információkat a <bpt id="p1">[</bpt>Szolgáltatásfrissítések elérhetősége<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept> oldalon találhat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Deprecated APIs and potential breaking changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult API-k és a lehetséges kompatibilitástörlő változások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Deriving from internal classes is deprecated</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A belső osztályok történő származtatás elavult.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 25-ös platformfrissítés előtt létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>This is not a safe coding practice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez nem egy biztonságos programozási gyakorlat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>As of Platform update 25, the compiler will display a warning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>The compiler warning will be replaced by an error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 26-os platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>This change only affects development and compile time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a változtatás csak a fejlesztési és fordítási időt érinti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Visual Studio development tools</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio fejlesztőeszközök</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Overriding internal methods is deprecated</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A belső módszerek felülbírálása elavult</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 25-ös platformfrissítés előtt lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>This is not a safe coding practice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez nem egy biztonságos programozási gyakorlat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>As of Platform update 25, the compiler will display a warning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>This warning will be replaced by a compile error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 26-os platformfrissítésben a figyelmeztetése fordítási hibaüzenetre lesz módosítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>This change only affects development and compile time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a változtatás csak a fejlesztési és fordítási időt érinti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Visual Studio development tools</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio fejlesztőeszközök</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1.3 és 23-as platformfrissítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>SQL Server Reporting Services ReportViewer Control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az SQL Server Reporting Services ReportViewer vezérlője</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Customers can use the <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ügyfelek használhatják az <bpt id="p1">**</bpt>Exportálás<ept id="p1">**</ept> művelet, amelyet a beágyazott SQL Server Reporting Services (SSRS) Report Viewer vezérlője biztosít a Finance and Operations alkalmazások által létrehozott dokumentumok letöltése céljából.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>This HTML-based presentation of the report offers users a non-paginated preview of the document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a HTML-alapú megjelenítése a jelentésnek la dokumentum nem oldalakra bontott előnézetét kínálja a dokumentumnak</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The non-paginated nature of the HTML-based preview experience does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> deliver fidelity with the physical documents ultimately produced by Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A HTML-alapú előnézeti tapasztalat nem oldalakra bontott jellege <bpt id="p1">**</bpt>nem<ept id="p1">**</ept> biztosítja a Finance and Operations rendszerrel készített végső dokumentumok hitelességét</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amennyiben teljes mértékben elfogadják, hogy a PDF az üzleti dokumentumok szabványos formátuma, a felhasználók élvezhetik a modern megtekintési élmény által nyújtott előnyöket, amelyek az alkalmazásjelentések létrehozásakor megnövelt teljesítményt nyújtanak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Innentől a PDF-dokumentum lesz az alapértelmezett formátum a Finance and Operations jelentéseihez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>This change does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> impact customer scenarios where reports are distributed electronically or sent directly to printers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a módosítás <bpt id="p1">**</bpt>nem<ept id="p1">**</ept> befolyásolja, azon ügyfélszituációkat ahol jelentések elektronikus úton elosztottak vagy közvetlenül nyomtatókra küldik azokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció, amellyel automatikusan megtekinthető a pályázati jelentések előnézete egy beágyazott PDF-megtekintő segítségével, a tervek szerint a 2019. májusi platformfrissítésben lesz elérhető.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Client KPI controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ügyfél KPI-vezérlők</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio rendszerben egy fejlesztő által és a végfelhasználó tovább testreszabhatja azokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A KPI-k meghatározásához használt natív ügyfélvezérlők alacsony szintű megértést várnak el az ügyféltől, és a fejlesztők adhatják hozzá a követhető mutatókat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PowerBI.com szolgáltatás világszínvonalú eszközöket kínál KPI-k kezeléséhez és meghatározásához külső forrásból származó adatok alapján.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy közelgő kiadásban tervezzük PowerBI.com-on tárolt megoldások beágyazását az alkalmazások munkaterületeire</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>This update will prevent developers from introducing new KPI controls in Visual Studio designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a frissítés megakadályozza, hogy a fejlesztők új KPI-vezérlők vezessenek be a Visual Studio tervezőjében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Deprecated APIs and future breaking changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult API-k és jövőbeni kompatibilitástörlő változások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Field groups containing invalid field references</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>It is possible for table metadata definitions to have field groups containing invalid field references.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>This issue is currently categorized as a <bpt id="p1">*</bpt>compiler warning<ept id="p1">*</ept> rather than an <bpt id="p2">*</bpt>error<ept id="p2">*</ept>, meaning that the deployable package creation and deployment can proceed without fixing the issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A probléma jelenleg a <bpt id="p1">*</bpt>fordítói figyelmeztetés<ept id="p1">*</ept> kategóriába tartozik, és nem <bpt id="p2">*</bpt>hiba<ept id="p2">*</ept>, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>To fix this issue:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A probléma megoldásához:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>1. Remove the invalid field reference from the table field group definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>2. Recompile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2. Fordítsa újra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>3. Ensure any warnings or errors are addressed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>This warning will be replaced by a compile error in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Visual Studio development tools.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio fejlesztőeszközök.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>All.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mind.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Deprecated: The warning will become a compile-time error in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A figyelmeztetés fordítási hiba lesz a jövőben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>We're currently targeting Platform update 30.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg a 30-as platformfrissítés van megcélozva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Complete list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teljes lista</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>To access the full list of APIs that are being deprecated, see <bpt id="p1">[</bpt>Deprecation of methods and meta data elements<ept id="p1">](deprecation-deletion-apis.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az elavulás alatt álló API-k teljes listáját lásd: <bpt id="p1">[</bpt>Módszerek és metaadat-elemek elavulása<ept id="p1">](deprecation-deletion-apis.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Dynamics 365 for Finance and Operations 8.1 with platform update 20</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1 és 20-as platformfrissítés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Batch transfer rules for subledger journal account entries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötegelt átviteli szabályok analitikus naplószámla bejegyzéseihez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>The Synchronous transfer mode is being deprecated in the General ledger parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>For additional information, see the <bpt id="p1">[</bpt>General Ledger Parameters – Batch transfer rules<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept> blog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információért lásd: <bpt id="p1">[</bpt>Főkönyvi paraméterek – Kötegelt átmozgatás szabályai<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept> blogot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>We are removing the synchronous option due to performance impact to the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szinkron beállítást a rendszer teljesítményére gyakorolt hatás miatt szüntetjük meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Asynchronous and scheduled batch are options to use in place of Synchronous.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szinkron helyett az aszinkron és az ütemezett köteg beállítás használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv, Kötelezettségek, Kinnlevőségek, Beszerzés, Költség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A funkció eltávolításának cél időkerete a 10.0-s verzió.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Electronic reporting for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus jelentéskészítés Oroszország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Feature for configuring .txt and .xml file formats of declarations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkció a bevallások .txt és .xml fájlformátumainak konfigurálásához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Replaced with Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyére az elektronikus jelentéskészítés kerül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>General Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Financial reports generator for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi jelentéskészítő Oroszország számára</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eszköz az adatgyűjtemény elszámolás és adókimutatások céljából való beállításához, valamint annak érdekében, hogy XLS és DOC kimutatássablonokba exportálhassa az adatokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkcionális részek: Adatok exportálása XLS és DOC jelentéssablonokba, lekérdezések, a rögzített kellékek eltávolításra kerülnek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Removed parts are replaced with Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eltávolított részek helyére az elektronikus jelentések kerülnek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénzügyi kimutatások beállításának kezelőfelülete használandó az adatgyűjtemény-szabályok főkönyvi számlál és adónyilvántartások általi beállítására.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatok exportálása különböző fájltípusokba; a rögzített elemek és a lekérdezésszerű adatgyűjtési szabályok konfigurálása az elektronikus jelentésekben történik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>General ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Integration with external providers for sending electronic reporting through communication channels for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Külső szolgáltatók integrálása elektronikus jelentések kommunikációs csatornákon keresztül való küldéséhez Oroszország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A deklaráció elektronikus fájljait exportáló funkció, amely az exportálást egy mappába végzi, hogy továbbküldhesse az adatokat az elektronikus jelentések hivatalos szolgáltatóinak, akik visszaadják az állapotot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Replaced with electronic messages configurable feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Helyére az elektronikus üzenetek konfigurálható funkciója kerül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>General Ledger, Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv, Adó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Profit tax register wizard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyereségadó-jegyzék varázsló</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Feature for creating templates for new profit tax registers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozásához használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció X++ objektumokat hoz létre az új jegyzékekhez, amelyeket utána sablonként létre lehez hozni, ha a megfelelő kalkulációs logikát hozzáadják.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció nem kompatibilis a Dynamics 365 for Finance and Operations bővíthetőségi modellel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Dynamics 365 for Finance and Operations 8.0 with platform update 15</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.0 és platform update 15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>No features have been removed or deprecated with this release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 és platform update 12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Személyre szabott termékajánlatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információ: <bpt id="p1">[</bpt>Személyre szabott termékajánlatok áttekintése<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>Personalized product recommendations in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Személyre szabott termékajánlások a POS felületén.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mind</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Removed as of February 15, 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva 2018. február 15-én.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>This affects customers running Dynamics 365 for Operations 1611 and later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez befolyásolja a Dynamics 365 for Operations 1611-es és újabb verzióit futtató ügyfeleket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Extension of the list of Electronic reporting (ER) functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>The possibility to introduce custom functions to be used in the ER expression builder (for more information, see <bpt id="p1">[</bpt>Extend the list of Electronic reporting functions<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>) is not supported any more.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: <bpt id="p1">[</bpt>Elektronikus jelentéskészítési funkciók listájának kibővítése<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>) már nem támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Code sealing initiative</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kódzárolási kezdeményezés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>None.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyik sem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amikor csak új beépített függvényre van szükség, új bővítési kérelmet kell benyújtani az ER-keretrendszer csapatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ideiglenes megoldásként, amíg az ER-csapat fejleszti a kért függvényt, a szükséges logika egy egyéni alkalmazásosztály metódusaként is programozható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>This method can be accessed in an ER expression as a property of the added ER data source of the <bpt id="p1">**</bpt>Application\Class<ept id="p1">**</ept> type that refers to that custom application class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a metódus egy ER kifejezésben érhető el a hozzáadott ER adatforrás tulajdonságaként az <bpt id="p1">**</bpt>Application\Class<ept id="p1">**</ept> típusnak, amely az egyéni alkalmazásosztályra hivatkozik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Electronic reporting framework</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronikus jelentéskészítési keretrendszer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Finance and Operations, Enterprise edition 7.3 után.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Inventory by item group and Inventory by inventory dimension aging reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készlet a cikkcsoport és készlet a készletdimenzió korosítási jelentései szerint</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>These two reports are no longer supported in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a két jelentést már nem támogatja a Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>Instead, the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report can be used to improve the user experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehelyett a <bpt id="p1">**</bpt>Készletkorosítási<ept id="p1">**</ept> jelentés használható a felhasználói élmény fokozása érdekében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source><bpt id="p1">**</bpt>Reason for deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Megszűnés oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Máshol már meglévő funkció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>The two reports have been replaced by the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A két jelentést leváltotta a <bpt id="p1">**</bpt>Készletkorosítási<ept id="p1">**</ept> jelentés.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>Inventory management, Cost management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletkezelés, költségkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mind</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Deprecated: The menu items for the two reports have been removed in version 7.3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A két jelentés menüpontjai el lettek távolítva a 7.3 verzióban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>However, the code for the reports remains in the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jelentések kódja azonban a termékben marad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>The plan is to remove the code in a future release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A terv szerint valamelyik jövőbeli programverzióban eltávolítjuk a kódot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>Power BI content packs available on AppSource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI tartalom csomagok elérhetők az AppSource felületén</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are deprecated as a consequence of product updates in Microsoft Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Költségkezelés<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Pénzügyi teljesítmény<ept id="p2">**</ept> és <bpt id="p3">**</bpt>Retail Channel Performance<ept id="p3">**</ept> tartalomcsomagok, amelyek elérhetők a <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> webhelyen, a Microsoft Power BI termékfrissítései miatt elavulttá válnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>Product updates in Microsoft Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Power BI termékfrissítései.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are being replaced by analytical applications which allow for solution integrations at the database level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Költségkezelés<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Pénzügyi teljesítmény<ept id="p2">**</ept> és <bpt id="p3">**</bpt>Retail Channel Performance<ept id="p3">**</ept> tartalomcsomagok, amelyek elérhetők a <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> webhelyen, olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>For more information about analytical applications, see <bpt id="p1">[</bpt>Embedded Power BI in workspackes<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: <bpt id="p1">[</bpt>Beágyazott Power BI-munkaterületek<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>Cost management, Finance, and Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Költségkezelés, pénzügy és kiskereskedelem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csak felhő (A PowerBI.com webhellyel való integráció nem támogatott a helyszíni telepítések esetében.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>Deprecated: Target timeframe for the functionality removal is Q2 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>Standard UI in data management workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Normál kezelőfelület az adatkezelési munkaterületen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A normál adatkezelési kezelőfelület a régebbi kezelőfelület, amely a felhasználók számára alapértelmezetten jelenik meg, amikor megnyitják az adatok kezelése munkaterületet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>We are investing in providing new user experiences in the new UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Befektetünk az új felhasználói élmény nyújtásában az új felhasználói felület segítségével.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>The new UI called <bpt id="p1">*</bpt>Enhanced views<ept id="p1">*</ept> is replacing the old UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új felhasználói felület neve <bpt id="p1">*</bpt>Bővített nézet<ept id="p1">*</ept>, és a régi felhasználói felületet váltja le.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Data management workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatkezelési munkaterület</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mind</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Excise, Sales Tax, Service Tax for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fogyasztási adó, áfa, szolgáltatási adó India esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>These taxes have been subsumed into Indian GST.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezeket az adókat már magában foglalja az indiai GST.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás vagy eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>These taxes have been subsumed into Indian GST.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezeket az adókat már magában foglalja az indiai GST.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Indian GST</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indiai GST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>File Validation Utility (FVU) for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fájlellenőrzési segédprogram (FVU) India esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás vagy eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői használat hiánya.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>Indian withholding tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indiai adóelőleg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>TDS/TCS certificate for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TDS/TCS-tanúsítvány India esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>Users can download this from the government portal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasználók a kormányzati portálról tölthetik le.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás vagy eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői használat hiánya.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>Indian withholding tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indiai adóelőleg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>Export/import (EXIM) incentive scheme for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exportálási/importálási (EXIM) ösztönző rendszer India esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás vagy eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői használat hiánya.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>Import and export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importálás és exportálás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>Dynamics 365 for Retail 7.2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail 7.2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Személyre szabott termékajánlatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További információ: <bpt id="p1">[</bpt>Személyre szabott termékajánlatok áttekintése<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>Personalized product recommendations in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Személyre szabott termékajánlások a POS felületén.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mind</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>Removed as of February 15, 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva 2018. február 15-én.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>This affects customers running Dynamics 365 for Retail 7.2  and later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez befolyásolja a Dynamics 365 for Retail 7.2-es és újabb verzióit futtató ügyfeleket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise edition 2017 júliusi verzió és platform update 8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Currency conversion for accounting and reporting currencies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénznemátváltás könyvelési és jelentési pénznemek esetén</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A pénznemátváltást könyvelési és jelentési pénznem esetén az euró bevezetésekor vezettük be.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>Limited usage and addition of the Copy legal entity functionality as a replacement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott felhasználás és a Jogi személy másolása funkció bevezetése a helyettesítésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem, de bevezettük a Jogi személy másolása és a Konfigurációk funkciókat, hogy megkönnyítsük az olyan vállalatokhoz való áthelyezést, amelyeknél változnak az alapkövetelmények.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>Financial management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzgazdálkodás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>Warehouse mobile devices portal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raktári mobileszközportál</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>This component is no longer supported in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt az összetevőt már nem támogatja a Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>A native app that improves the user experience has replaced the functionality of WMDP.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A WMDP funkció helyére egy natív alkalmazás lépett, amely javítja a felhasználói élményt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>Duplicate functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Máshol már meglévő funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>This feature has been replaced by Finance and Operations - Warehousing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>For more information about setup and prerequisites, see <bpt id="p1">[</bpt>Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a <bpt id="p1">[</bpt>Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept> című részben talál.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>Warehouse management, Transportation management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raktárkezelés, szállításkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>Advanced bank reconciliation matching rule for manual matching</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Továbbfejlesztett banki egyeztetési szabály kézi egyeztetéshez</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyeztetési munkalapon a dokumentumok kézi egyeztetéséhez egy egyeztetési szabályt használtak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>Limited usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott felhasználás.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>Column filtering capabilities should be used to find documents for reconciliation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az oszlopszűrési lehetőségeket kell használni az egyeztetendő dokumentumok keresésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készpénz- és bankkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Telepítési beállítás<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Összes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>Removed as of July 2017.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva 2017 júliusában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>Dynamics 365 for Operations 1611 with platform update 3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Operations 1611 és platform update 3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>AEB payment formats for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spanyol AEB fizetési formátumok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Consejo Superior Bancario fizetési formátumok átutalási fájlok bankhoz történő küldésére voltak használatosak vevői és szállítói kifizetések esetén.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>The content of these formats was determined by the Asociación Española de Banca.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezen formátumok tartalmát az Asociación Española de Banca határozta meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>It covers Cuaderno 19, 32, 58, 34.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következőket fedi le: Cuaderno 19, 32, 58, 34.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, az ISO20022 átutalási és beszedési formátumok Spanyolország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettség és kinnlevőség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>Bank payments transfer for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Banki átutalásos kifizetések Litvánia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A banki átutalásos kifizetések létrehozása és nyomtatása a fizetési átutalás (LT) exportformátumban történt Litvánia vonatkozásában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A litván piac 2005-ben kezdte el a LITAS egységesített elektronikus bankrendszert használni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>Yes, ISO20022 Credit transfer payment format for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Litvánia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>BBS Direkte Remittering payment formats for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BBS Direkte Remittering fizetési formátumok Norvégia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A BBS Direkte Remittering fizetési formátumok a következőket tartalmazzák: vevői fizetés beszedésének exportálása (beszedési megbízás) és a válaszüzenet importálása.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Norvégiában rendelkezésre álló, AvtaleGiro vevői fizetési formátum használható beszedési megbízási üzenetek létrehozására.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>Return message import will be implemented in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A visszaigazoló üzenetek importálása a jövőbeli kiadásokban kerül bevezetésre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettség és kinnlevőség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>Chart of Accounts tool for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlatükör eszköz Spanyolország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>This tool is used when a chart of accounts in Spain requires major changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az eszköz akkor használatos, ha a számlatükör esetében jelentős változtatásokra van szükség Spanyolországban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasználók importálhatják az új számlatükröt Microsoft Excel- vagy szöveges formátumban, valamint importálhatják a pénzügyi kimutatásokat is.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott felhasználás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>Dom80 payment format for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belga Dom80 fizetési formátum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>Legacy Belgian payment format for payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hagyományos fizetési formátum fizetés beszedéséhez (beszedési megbízási).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>Yes, ISO 20022 Direct debit payment format for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO 20022 beszedési megbízási fizetési formátum Belgium esetében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>DTA/EZAG payment formats for Switzerland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DTA/EZAG fizetési formátumok Svájc esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A DTA/EZAG formátumok az ESR rendszer integrált részét alkotják, mert rendelkezhetnek hivatkozási számmal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mivel a hivatkozási számok nem kötelezők, ezért bármilyen szállítói fizetés feldolgozható ezen formátumok használatával.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>These formats are used by companies that have a bank account in a location other than “Postfinance.”</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezeket a formátumokat olyan vállalatok használják, amelyeknek a „Postfinance”-től eltérő helyen van bankszámlája.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>Yes, ISO20022 Credit transfer payment format for Switzerland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Svájc esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>EDIFACT-DIRDEB payment format for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIFACT-DIRDEB fizetési formátum Ausztria esetében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>EDIFACT-DIRDEB payment format for payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIFACT-DIRDEB fizetési formátum fizetés beszedéséhez (beszedési megbízás).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>Yes, ISO 20022 Direct debit payment format for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO 20022 beszedési megbízási fizetési formátum Ausztria esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>EDIVAT for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIVAT Belgium esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult belga szabványa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics AX 2012 megtartja a csak olvasható megoldást annak érdekében, hogy a régebbi adatokhoz hozzá lehessen férni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source>The functionality is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció már nincs használatban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>eGiro EDIFACT CREMUL payment import format for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eGiro EDIFACT CREMUL fizetési importformátum Norvégia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi szabványon alapszik, amely a vevői kifizetések automatikus feladásához használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics AX alkalmazásban az eGiro vevői fizetési importformátumként van megvalósítva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>External inventory for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Külső készlet Lengyelország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>Evidence of goods that are taken from a vendor for sales without purchase.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítótól beszerzés nélkül, értékesítésre átvett áruk bizonylata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A külső készleten kezelt áruk, amelyek a normál készletet nem érintik, és automatikusan eladhatóak, majd később megvásárolhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>This process creates real inventory movements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a folyamat tényleges készletmozgást hoz létre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Másik szolgáltatás váltotta fel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>Yes, the core Inbound consignment functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, a bejövő szállítmány alapfunkciója</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>Accounts payable, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek, készletkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>Financial reports generator for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi beszámolók létrehozása Kelet-Európa esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy eszköz szolgál a könyvelési és adójelentések adatgyűjtésének beállításához és az adatok XLS vagy DOC jelentéssablonba való exportálásához</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott felhasználás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>The tool will be replaced by Electronic reporting configurations in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az eszközt elektronikus jelentési konfigurációk fogják leváltani a jövőbeli kiadásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>General Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>Import of customer payment transactions for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői kifizetési tranzakciók importálása Finnország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiválaszthat egy olyan importálási formátumot a finn fizetésekhez, amely a vevői kifizetési tranzakciókat importálja egy bank által biztosított külső fájlból.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>Import of payment transactions into a general ledger journal for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finnországra vonatkozó fizetési tranzakciók importálása a főkönyvi naplóba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>A format that is specific to Finland is used to import accounting transactions into the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finnországra vonatkozó, specifikus formátum, amellyel könyvelési tranzakciók importálhatóak a főkönyvbe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>Integration with Isabel synchronized (CIS) for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integráció az Isabel-hez szinkronizált (CIS) rendszerekkel Belgium esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Isabel az elektronikus banki ügyintézés európai rendszere, Belgiumban de facto szabványnak minősül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>Integration with Isabel client has been discontinued.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Isabel-klienssel való integráció már nincs forgalomban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A már nem használt fizetési formátumok helyébe ISO20022 átutalási fizetési formátum lépett Belgium esetében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Modifications in the chart of accounts and accounting rules for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A számlatükör és a számviteli szabályok módosulása Spanyolország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>This feature is used for changes in the chart of accounts and accounting rules in Spain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció a számlatükör és a számviteli szabályok változásaihoz használatos Spanyolországban esetében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leképezi a számlákat, hogy segítsen a régi számlatükröt az új számlatükörré alakítani, és összehasonlítja az előző pénzügyi évet az új pénzügyi évvel még akkor is, ha azokhoz eltérő számlaszámokat rendeltek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korlátozott felhasználás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>Pagamento Fornittori vendor payment format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pagamento Fornittori szállítói fizetési formátum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>Legacy Italian payment format for credit transfers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hagyományos olasz fizetési formátum átutalásokhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátum már nem használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>Yes, ISO20022 Credit transfer payment format for Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Olaszország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source>Payment export formats for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kifizetésexportálás formátuma Észtország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source>The Telehansa and Teleservice formats are used for bank payment export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Banki fizetés exportálása a Telehansa és Teleservice formátumot használja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="711">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="712">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="713">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="714">
-          <source>Yes, ISO20022 Credit transfer payment format for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Észtország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="715">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="716">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="717">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="718">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="719">
-          <source>Payment file archive for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fizetési fájlarchívum Norvégia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="720">
-          <source>When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amikor fizetési fájlok jönnek létre, a fájlarchívum automatikusan archivál minden létrehozott fájlt, még akkor is fájlokat korábban írták vagy olvasták.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="721">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="722">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Másik szolgáltatás váltotta fel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="723">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="724">
-          <source>Yes, Electronic reporting archived jobs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen. Elektronikus jelentéskészítési archivált feladatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="725">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="726">
-          <source>Accounts payable, Accounts receivable, Organization administration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek, kinnlevőségek, a szervezet felügyelete</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="727">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="728">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="729">
-          <source>Payment import formats for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kifizetésimportálás formátuma Észtország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="730">
-          <source>The Telehansa and TeleTeenus formats are used for bank payment import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Banki fizetés importálása a TeleTeenus formátumot használja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="731">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="732">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="733">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="734">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="735">
-          <source>The formats will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátumok helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="736">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="737">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="738">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="739">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="740">
-          <source>Payroll information in Human Resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bérlistaadatok az Emberi Erőforrásokban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="741">
-          <source>Human Resources Payroll information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberi Erőforrások Bérlistaadatai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="742">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="743">
-          <source>This functionality has been replaced by core Payroll and Human Resources pages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a funkciót az alapvető Bérlista és az Emberi Erőforrások lapokok váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="744">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="745">
-          <source><bpt id="p1">**</bpt>Benefits<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Earnings<ept id="p2">**</ept>, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Juttatások<ept id="p1">**</ept> és a <bpt id="p2">**</bpt>Bevételek<ept id="p2">**</ept> oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="746">
-          <source>This functionality is accessed by using the <bpt id="p1">**</bpt>Human Resources 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Payroll<ept id="p2">**</ept> configuration key.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció a <bpt id="p1">**</bpt>Humán Erőforrások 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Bérlista<ept id="p2">**</ept>-konfigurációs kulcs használatával érhető el.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="747">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="748">
-          <source>Human Resources, Payroll</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberi Erőforrások, Bérlista</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="749">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="750">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="751">
-          <source>Performance management goal workflow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teljesítménymenedzsment, célok munkafolyamata</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="752">
-          <source>Performance management includes goal management and integration with performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A teljesítménymenedzsment a célok kezelését tartalmazza, és integrálja a teljeseítményellenőrzést.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="753">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="754">
-          <source>Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A teljesítménymenedzsment át lett tervezve, és a célok oldalainak száma csökkent a folyamat egyszerűsítése érdekében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="755">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="756">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="757">
-          <source>Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A célok láthatók a vezetők számára az Vezetők önkiszolgáló portálján; ezeket a vezető módosíthatja és megtekintheti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="758">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="759">
-          <source>Human capital management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberierőforrás-menedzselés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="760">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="761">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="762">
-          <source>Postgirot and Postgirot Utland payment formats for Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="763">
-          <source>Postgirot and Postgirot Utland payment formats for Sweden.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="764">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="765">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="766">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="767">
-          <source>Yes, ISO20022 Credit transfer payment format for Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Svédország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="768">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="769">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="770">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="771">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="772">
-          <source>Radio frequency identifier</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rádiófrekvenciás azonosító</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="773">
-          <source>Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A rádiófrekvenciás azonosítás (Radio Frequency Identification – RFID) egy olyan adatgyűjtési technológia, amely az azonosítási adatok tárolásához elektronikus címkéket használ, az azonosítási adatok beolvasásához pedig nem közvetlen rálátású olvasót.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="774">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="775">
-          <source>Low customer usage and a limited feature set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="776">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="777">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="778">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="779">
-          <source>Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletgazdálkodás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="780">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="781">
-          <source>Removed as of Dynamics 365 for Operations 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva az Dynamics 365 for Operations 1611-es verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="782">
-          <source>Report about state invoices numbering for Latvia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állami számlák számozására vonatkozó jelentés Lettország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="783">
-          <source>Latvian legislation provides specific rules about the numbering of sales invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A lett jogszabályok szigorú szabályokat írnak elő az értékesítési számlák számozására vonatkozóan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="784">
-          <source>The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkciók segítségével egyedi számokat lehet az értékesítési számlákhoz rendelni, a felhasználó vagy felhasználói csoport alapján.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="785">
-          <source>You can then generate a report or an XML file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezután lehet létrehozni egy jelentést vagy egy XML-fájlt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="786">
-          <source>You can also print a report about invoice numbers that are used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasznált számlaszámokról jelentést is lehet nyomtatni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="787">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="788">
-          <source>The state invoice numbering no longer has to be maintained.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az állami számlák számozását már nem kell fenntartani.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="789">
-          <source>The report about used invoice numbers is no longer required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasznált számlaszámokra vonatkozó jelentésre már nincs szükség.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="790">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="791">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="792">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="793">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="794">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="795">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="796">
-          <source>Set up the names of the manager and general accountant of a company for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valamely vállalat vezetője és főkönyvelője nevének beállítása Litvánia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="797">
-          <source>The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A vállalat vezetőjének és főkönyvelőjének nevét a vállalati adatok között lehet megadni, és fel lehet használni különböző, helyi nyomtatott jelentésekben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="798">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="799">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Másik szolgáltatás váltotta fel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="800">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="801">
-          <source>Yes, the setup of officials can be used for the same purpose.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, a tisztviselők beállítása ugyanerre a célra használható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="802">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="803">
-          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek, Kinnlevőségek, Készpénz- és bankkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="804">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="805">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="806">
-          <source>Shipping carrier interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítmányozói felületek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="807">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="808">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Máshol már meglévő funkció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="809">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="810">
-          <source>Partially replaced by Transportation management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szállításkezelés részlegesen lecserélte</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="811">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="812">
-          <source>Sales and marketing, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítés és marketing, Készletkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="813">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="814">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="815">
-          <source>Telepay payment formats for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TelePay fizetési formátumok Norvégia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="816">
-          <source>Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TelePay fizetési formátumok közé tartozik a szállítói fizetés exportálása (átutalás) és a vevői kifizetési gyűjtemény (beszedési megbízás).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="817">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="818">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="819">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="820">
-          <source>Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum és AvtaleGiro vevői kifizetési formátum Norvégia esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="821">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="822">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettség és kinnlevőség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="823">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="824">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="825">
-          <source>Vendor payment export formats for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói fizetésexportálási formátumok Finnország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="826">
-          <source>Two formats for exporting payments are available for Finland.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finnországban két formátum érhető el fizetések exportálásához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="827">
-          <source>LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LM02 (FI) belföldi fizetésekhez használható, az LUM2 (FI) pedig külföldi fizetésekhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="828">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="829">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fizetési formátumok már nem használhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="830">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="831">
-          <source>Yes, ISO20022 Credit transfer payment format for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ISO20022 átutalási fizetési formátum Finnország esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="832">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="833">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="834">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="835">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="836">
-          <source>Warehouse management II</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raktárkezelés II</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="837">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="838">
-          <source>The Warehouse management II solution (WMS II) that was available in the <bpt id="p1">**</bpt>Inventory management<ept id="p1">**</ept> module duplicates functionality that is in the <bpt id="p2">**</bpt>Warehouse management<ept id="p2">**</ept> module that was released in Microsoft Dynamics AX 2012 R3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A korábban a <bpt id="p1">**</bpt>Készletkezelés<ept id="p1">**</ept> modulban elérhető Raktárkezelés II megoldás (WMS II) ugyanazokkal a funkciókkal rendelkezik, mint a Microsoft Dynamics AX 2012 R3 verzióban kiadott <bpt id="p2">**</bpt>Raktárkezelés<ept id="p2">**</ept> modul.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="839">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="840">
-          <source>The <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 és Dynamics AX 2012 R3 CU9 verziókban kiadott <bpt id="p1">**</bpt>Raktárkezelés<ept id="p1">**</ept> modul váltja fel a Raktárkezelés II szolgáltatást.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="841">
-          <source>The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új modul több speciális funkcióval és rugalmasabb raktárkezelési folyamatokkal rendelkezik, mint a Raktárkezelés II funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="842">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="843">
-          <source>Inventory management, Sales and marketing, Procurement and sourcing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletkezelés, értékesítés és marketing, beszerzés és forrás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="844">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="845">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="846">
-          <source>Worker reminders in Human Resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dolgozói emlékeztetők az Emberi Erőforrásokban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="847">
-          <source>Human Resources Payroll information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberi Erőforrások Bérlistaadatai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="848">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="849">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony használat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="850">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="851">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="852">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="853">
-          <source>Human resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberi erőforrások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="854">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="855">
-          <source>Removed as of Dynamics 365 for Operations version 1611</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="856">
-          <source>Workflow for creating goals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Célok létrehozásának munkafolyamata</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="857">
-          <source>A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyamat a számos olyan munkafolyamat egyike, amely rendelkezésre állt a teljesítménykezelési folyamat koordinálásának elősegítésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="858">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="859">
-          <source>Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A teljesítménykezelést teljesen újraterveztük a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="860">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="861">
-          <source>The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átalakított teljesítménymendzsment funkciója segítségével jobban lehet felügyelni a célok tartalmát, az előrehaladás nyomon követéséhez használt méréseket és a kiegészítő dokumentumok csatolását.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="862">
-          <source>Goals can be stored as templates and then reused.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A célok sablonként tárolhatók, és ezután újra felhasználhatók.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="863">
-          <source>This feature can help you set up additional goals for your employees more quickly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezen funkció segítségével gyorsabban beállíthatók további célok az alkalmazottak számára.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="864">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="865">
-          <source>Human capital management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Emberierőforrás-menedzselés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="866">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="867">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="868">
-          <source>Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 7.0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="869">
-          <source>Ability to cancel changes to a vendor invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói számla módosításainak érvénytelenítésére vonatkozó képesség</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="870">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="871">
-          <source>Performance enhancement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teljesítménynövekedés.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="872">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="873">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="874">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="875">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="876">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="877">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="878">
-          <source>AIF, AxD, and AxBC integrations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AIF, AxD és AxBC integrációja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="879">
-          <source>In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="880">
-          <source>Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX dokumentumokon és .NET Business Connector-on (AxBC) alapuló szolgáltatásokat tartalmaz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="881">
-          <source>A document is created by using XML.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokumentumok XML használatával hozhatóak létre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="882">
-          <source>The XML includes header information that is added to create a <bpt id="p1">*</bpt>message<ept id="p1">*</ept> that can be transferred into or out of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az XML által tartalmazott fejlécadatok hozzáadásával <bpt id="p1">*</bpt>üzenet<ept id="p1">*</ept> hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="883">
-          <source>Examples of documents include sales orders and purchase orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokumentumok például az értékesítési rendelések és a beszerzési rendelések.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="884">
-          <source>However, almost any entity, such as a customer, can be represented by a document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azonban szinte minden entitást (például vevőt) képviselhet dokumentum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="885">
-          <source>Services that are based on documents use the <bpt id="p1">**</bpt>Axd <ph id="ph1">\&lt;</ph>Document<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A dokumentumokon alapuló szolgáltatások az <bpt id="p1">**</bpt>Axd <ph id="ph1">\&lt;</ph>Document<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> osztályokat használják.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="886">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="887">
-          <source>The architecture of AIF and AxDs could not be scaled to a cloud service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az AIF és az AxD-k architektúráját nem sikerült felhőszolgáltatáshoz méretezni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="888">
-          <source>There were performance issues around bulk import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A tömeges importálás során teljesítményproblémák léptek fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="889">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="890">
-          <source>This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást felváltotta az Adatimportálási és -exportálási keretrendszer, amely támogatja az ismétlődő tömeges importálást/exportálást.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="891">
-          <source>For AxBC, we recommend that you use the actual tables.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxBC esetén a tényleges táblák használatát javasoljuk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="892">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="893">
-          <source>AxDs, AxBCs, and AIF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxD-k, AxBC-k és AIF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="894">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="895">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="896">
-          <source>Billing code rate scripts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlázási kód díjalap parancsfájljai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="897">
-          <source>Billing scripts were used to calculate billing rates for billing codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Számlázási parancsfájlok számlázási kódokhoz tartozó számlázási díjak kiszámításához használatosak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="898">
-          <source>This scripts required custom development in the C Sharp or Visual Basic programming language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezekhez a parancsfájlokhoz egyéni fejlesztés volt szükséges C# vagy Visual Basic programozási nyelvben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="899">
-          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>billing code rate scripts<ept id="p1">**</ept> are not supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX aktuális verziójában a <bpt id="p1">**</bpt>Számlázási kód díjalap parancsfájljai<ept id="p1">**</ept> nem támogatottak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="900">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="901">
-          <source>The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyéni C# vagy Visual Basic parancsfájlok támogatása nem elérhető a Dynamics AX 7.0-s verzióban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="902">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="903">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="904">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="905">
-          <source>Public sector, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Állami szektor, kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="906">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="907">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="908">
-          <source>BOMs without BOM versions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anyagjegyzékek Anyagjegyzék-verziók nélkül</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="909">
-          <source>When the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korábban az <bpt id="p1">**</bpt>Anyagjegyzék-verziók<ept id="p1">**</ept> konfigurációs kulcs letiltásakor, az anyagjegyzék-verziók (BOM) minden képernyőn rejtett állapotba kerültek, és a rendszer kötelezővé tette a kiadott termékek és anyagjegyzékek közti 1:1 arányú kapcsolatot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="910">
-          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key can't be disabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX jelenlegi verziójában az <bpt id="p1">**</bpt>Anyagjegyzék-verziók<ept id="p1">**</ept> konfigurációs kulcsot nem lehet letiltani.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="911">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="912">
-          <source>Using a configuration key to control BOM versions doesn't scale in a cloud environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anyagjegyzék-verziók konfigurációs kulcsokkal való vezérlése nem méretezhető felhő környezetre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="913">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="914">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="915">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="916">
-          <source>Product information management, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékinformációk kezelése, Készletkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="917">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="918">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="919">
-          <source>Brazilian Bordero</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazil borderó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="920">
-          <source>Specific method of payment for Brazilian companies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egyedi fizetési mód brazil vállalatok esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="921">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="922">
-          <source>Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Brazil borderó fizetési mód támogatása már nem része a brazil honosításnak</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="923">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="924">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="925">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="926">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="927">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="928">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="929">
-          <source>Brazilian Sintegra statement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazil Sintegra kivonat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="930">
-          <source>Federal tax statement for ICMS tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szövetségi adókimutatás az ICMS adó esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="931">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="932">
-          <source>This statement is no longer applicable in some Brazilian states.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a kimutatás már nem alkalmazható néhány brazil államban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="933">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="934">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="935">
-          <source>Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhasználók általános elektronikus jelentési eszközt használhatnak a kimutatás beállításához, ha arra bizonyos helyzetekben szükség van.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="936">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="937">
-          <source>Fiscal books</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pénzügyi könyvek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="938">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="939">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="940">
-          <source>Brazilian SCAN contingency mode for NF-e</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazil SCAN készenléti mód az NF-e esetében</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="941">
-          <source>(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A (SCAN) készenléti környezet a Nota Fiscal eletrônica (NF-e) állapotának előállítására, exportálására és importálására szolgál, amikor nem érhető el a Secretaria da Fazenda (SEFAZ) környezet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="942">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="943">
-          <source>This method of contingency is no longer applicable in all Brazilian states</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a készenléti módszer már nem alkalmazható minden brazil államban</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="944">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="945">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="946">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="947">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="948">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="949">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="950">
-          <source>Business Analyzer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Business Analyzer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="951">
-          <source>This mobile application let users review key business metrics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a mobilalkalmazás lehetővé teszi a felhasználók számára a kulcsfontosságú üzleti mutatók áttekintését.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="952">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="953">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="954">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="955">
-          <source>The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Power BI Pénzügyi teljesítményfigyelő tartalmi csomagja magába foglalja a Business Analyzer alkalmazásban korábban elérhető kulcsfontosságú üzleti mutatókat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="956">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="957">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="958">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="959">
-          <source>Deprecated: The use of Business Analyzer has been deprecated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az üzleti elemző elavult.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="960">
-          <source>Business statistics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üzleti statisztikák</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="961">
-          <source>The setup of business statistics inquiries that can help you analyze the performance of the organization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üzleti statisztikai lekérdezések beállítása, amelyek segítségével elemezhető a szervezet teljesítménye.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="962">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="963">
-          <source>Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Üzleti intelligencia (BI) elavult megközelítése, alacsony vevői használat és a korlátozott szolgáltatási kör.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="964">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="965">
-          <source>New BI solutions for the current version of Dynamics AX</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Új Üzleti Intelligencia megoldások a Dynamics AX jelenlegi verziójában</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="966">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="967">
-          <source>Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beszerzés és forrás, Kötelezettségek, Értékesítés és marketing, Kinnlevőségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="968">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="969">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="970">
-          <source>Change document date function in Invoice approval journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számla-jóváhagyási naplóban található Dokumentum dátumának módosítása funkció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="971">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="972">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony használat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="973">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="974">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="975">
-          <source>The document date on the posted vendor transaction can be changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feladott szállítói tranzakció dokumentumdátuma módosítható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="976">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="977">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="978">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="979">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="980">
-          <source>ClieOp03 payment format for the Netherlands</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A holland ClieOp03 fizetési formátum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="981">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="982">
-          <source>The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum már nem alkalmazható Hollandiában, mivel azt felváltotta a SEPA funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="983">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="984">
-          <source>SEPA payments export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SEPA exportkifizetések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="985">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="986">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="987">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="988">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="989">
-          <source>Compliance Center</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfelelési Központ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="990">
-          <source>The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Megfelelési Központ egy Enterprise Portal webhely volt, amely a Sarbanes-Oxley törvénnyel kapcsolatos megfelelési kezdeményezések dokumentációs követelményeinek kezelésére szolgált.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="991">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="992">
-          <source>Lack of customer usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői használat hiánya.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="993">
-          <source>Microsoft SharePoint includes the same capability that was available in the Compliance Center.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft SharePoint magában foglalja ugyanazt a képességet, ami korábban a Megfelelési Központban volt elérhető.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="994">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="995">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="996">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="997">
-          <source>Compliance and internal controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfelelés és belső ellenőrzés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="998">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="999">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1000">
-          <source>Connector for Microsoft Dynamics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatlakozó a Microsoft Dynamics szolgáltatáshoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1001">
-          <source>This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származó kulcsadatokat a Microsoft Dynamics ERP alkalmazásokba.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1002">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1003">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1004">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1005">
-          <source>Common data service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Common Data Service</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1006">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1007">
-          <source>Connector for Microsoft Dynamics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatlakozó a Microsoft Dynamics szolgáltatáshoz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1008">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1009">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1010">
-          <source>Container unit and multi dimension on-hand</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tárolóegység és a készleten lévő több dimenzió</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1011">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1012">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Máshol már meglévő funkció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1013">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1014">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1015">
-          <source>Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az AX 2012 óta, ezt a funkciót az összesített kötegrendelések szolgáltatáskészlet váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1016">
-          <source>This feature set includes the consolidated on-hand view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szolgáltatáskészlet tartalmazza az egyesített készletnézetet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1017">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1018">
-          <source>Product information management, Production control, Inventory management, Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékinformációk kezelése, Gyártásvezérlés, Készletkezelés, Értékesítés és marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1019">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1020">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1021">
-          <source>Cue group metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötegcsoport-metaadatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1022">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1023">
-          <source>Cue groups were used to display one or more Cues in the FactBox area.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötegcsoportok használatával korábban egy vagy több Köteget lehetett megjeleníteni az Adatterületen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1024">
-          <source>There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A feltöltés korlátozottsága mellett teljesítményproblémák is felléptek, mivel egy szülőűrlapon történő rekordváltoztatás a Kötegcsoport minden egyes Kötegéhez létrehozott egy lekérdezést.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1025">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1026">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1027">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1028">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1029">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1030">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1031">
-          <source>Cue metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Köteg-metaadatok</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1032">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1033">
-          <source>Cue metadata was limited to count or sum information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A köteg-metaadatok információk számlálására vagy összesítésére korlátozódtak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1034">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1035">
-          <source>Tile metadata was introduced to provide more flexibility for modeling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annak érdekében, hogy a modellezéshez nagyobb rugalmasságot biztosítsunk, bevezettük a csempe-metaadatokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1036">
-          <source>For example, you can model current counts, navigation, and key performance indicators (KPIs).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modellezhet például aktuális számlálókat, navigációt, valamint fő teljesítménymutatókat (KPI-ket).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1037">
-          <source>Count tile metadata is the direct replacement of the Cue metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Köteg-metaadatokat közvetlenül helyettesítik a Csempeszámláló metaadatai.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1038">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1039">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1040">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1041">
-          <source>Removed as of Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1042">
-          <source>Danish check format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dán csekkformátum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1043">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1044">
-          <source>Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A dán csekkformátum elrendezésének támogatása megszűnt, a jelentést eltávolítottuk a dán honosításból.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1045">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1046">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1047">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1048">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1049">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1050">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1051">
-          <source>Data partitions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatpartíciók</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1052">
-          <source>Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adatpartíciók az adatok logikus elkülönítését biztosítják a Microsoft Dynamics AX adatbázisában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1053">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1054">
-          <source>Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adatpartíciókat a Microsoft Dynamics AX 2012 R2 változatában vezették be adatok elkülönítéséhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1055">
-          <source>In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Általános esetben a vállalat leányvállalatokkal rendelkezik, és egy leányvállalat adatait nem láthatja egy másik leányvállalat, annak ellenére, hogy mindkét leányvállalatot azonos informatikai részleg kezeli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1056">
-          <source>However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azonban további parancsfájlok és kezelési többletköltség voltak szükségesek új partíciók létrehozására és azok adatokkal való feltöltésére, és a partíció adatainak biztonsági mentésére.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1057">
-          <source>In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A felhőben, ahol hozzáférésünk van platformhoz mint szolgáltatáshoz (PaaS), adatbázis-szolgáltatáshoz (Microsoft Azure SQL Database), sokkal hatékonyabb az adatbázist elkülönítési tárolóként használni, mint a elkülönítést végezni a programon belül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1058">
-          <source>Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Függetlenül attól, hogy adatpartíció szükségesek leányvállalatoknak, több bérlőnek vagy csak mérlegelésre, úgy véljük, hogy az esetek jobban kezelhetők több Finance and Operations példánnyal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1059">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1060">
-          <source>Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adatpartíciókat használó vevőknek a Finance and Operations több példányát kell használniuk, ha az adatbázis szintű elkülönítése kritikus fontosságú.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1061">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1062">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1063">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1064">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1065">
-          <source>Database and file share storage for attachments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adatbázis és fájlmegosztás tárolása a mellékletek számára</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1066">
-          <source>Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az adatbázisban és a fájlmegosztásokban.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1067">
-          <source>Both of those options are no longer supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezek a lehetőségek a továbbiakban nem támogatottak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1068">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1069">
-          <source>Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A fájlmegosztással történő tárolás a továbbiakban már nem támogatott, mert a felhőalapú tárolási környezet nem tud kommunikálni a helyi fájlmegosztásokkal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1070">
-          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1071">
-          <source>Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Azure Blob-tárolás megegyezik az adatbázisban való tárolással, mivel a dokumentumok elérése csak a Dynamics 365 for Finance and Operations ügyfélképernyőkön keresztül történhet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1072">
-          <source>This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a megoldás azzal a plusz előnnyel jár, hogy olyan tárhelyet kínál, amely nem befolyásolja negatívan az adatbázis teljesítményét.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1073">
-          <source>Blob storage is the default storage mechanism for Document Management and works immediately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Blob-tárolás a dokumentumkezelés alapértelmezett tárolási mechanizmusa, és azonnal működik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1074">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1075">
-          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1076">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1077">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1078">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1079">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1080">
-          <source>Delimitation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elválasztás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1081">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1082">
-          <source>No use of the functionality was found.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció hasznossága nem mutatható ki.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1083">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1084">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1085">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1086">
-          <source>Time and attendance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkaidő és jelenlét</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1087">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1088">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1089">
-          <source>Desktop client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asztali ügyfél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1090">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1091">
-          <source>The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX ügyfél felhasználói felületét a több platformon és eszközön való jobb felhasználhatóság érdekében újraterveztük.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1092">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1093">
-          <source>The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1094">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1095">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1096">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1097">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1098">
-          <source>Direct database connection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Közvetlen adatbázis-kapcsolat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1099">
-          <source>In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX 2012 R3 rendszerben a Retail Modern POS az Enterprise POS rendszerhez hasonló módon, közvetlenül tudott kapcsolódni a csatorna-adatbázishoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1100">
-          <source>This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez ráadás volt a Retail Modern POS Retail Server kiszolgálón keresztüli kommunikációjához használt szokásos kommunikációs módja mellett.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1101">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1102">
-          <source>Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1103">
-          <source>Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finance and Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1104">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1105">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1106">
-          <source>Only standard Retail Server communication is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg csak a szabványos Retail Server által biztosított kommunikáció támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1107">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1108">
-          <source>Channel DB/Retail Modern POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csatorna-adatbázis/Retail Modern POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1109">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1110">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1111">
-          <source>Dutch SWIFT MT940</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Holland SWIFT MT940</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1112">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1113">
-          <source>Generic functionality is now used instead of localized functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A honosított funkció helyett már az általános funkció használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1114">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1115">
-          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1116">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1117">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1118">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1119">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1120">
-          <source>eBilanz (XBRL for Germany)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eBilanz (XBRL, Németország)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1121">
-          <source>This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztosítja, amely kifejezetten a német eBilanz rendszertan részére lett szánva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1122">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1123">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vevői használat hiánya.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1124">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1125">
-          <source>This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást nem váltotta fel másik, azonban számos speciális, széles körű XBRL funkciókat magában foglaló XBRL csomag érthető el a német piac számára.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1126">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1127">
-          <source>Management Reporter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1128">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1129">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1130">
-          <source>Enterprise Portal client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enterprise Portal-ügyfél</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1131">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1132">
-          <source>A single client platform has been provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy együgyfeles platform biztosított.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1133">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1134">
-          <source>The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1135">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1136">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1137">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1138">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1139">
-          <source>Environmental sustainability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Környezeti fenntarthatóság</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1140">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1141">
-          <source>Low customer usage and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1142">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1143">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1144">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1145">
-          <source>Compliance and internal controls, Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megfelelés és belső ellenőrzés, Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1146">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1147">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1148">
-          <source>Form ActiveX and Managed Host controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActiveX és Felügyelt Állomás vezérlők</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1149">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1150">
-          <source>The ActiveX and Managed Host controls are based on the deprecated desktop client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az ActiveX és Felügyelt Állomás vezérlők a már megszűnt asztali ügyfélen alapulnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1151">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1152">
-          <source>The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">A bővíthető vezérlési keretrendszer támogatja új, HTML-, CSS- és JavaScript-alapú vezérlések kiépítését, továbbá Microsoft Visual Studio Tooling környezetben elsőrangú vezérlő.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1153">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1154">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1155">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1156">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1157">
-          <source>Generate prenotes by using a batch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellenőrző tranzakciók létrehozása a köteg használatával</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1158">
-          <source>Prenote generation can't be done by using a batch, but it can still be done by a user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felhasználó által továbbra is végrehajtható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1159">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1160">
-          <source>No form exists to persist and display the resulting prenote file when it's generated by using a batch.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem létezik olyan képernyő, amely a köteg használatával létrehozott előjegyzési fájl tárolására és megjelenítésére alkalmas lenne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1161">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1162">
-          <source>Prenotes can still be generated, and the user has control over the location where the file is saved.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Előjegyzések továbbra is létrehozhatók, ekkor a fájl mentésének helyét a felhasználó állíthatja be.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1163">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1164">
-          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek, Kinnlevőségek, Készpénz- és bankkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1165">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1166">
-          <source>Removed as of AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva az AX 7.0-es verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1167">
-          <source>German DTAUS payment export and account statement import (totals and transactions)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Német DTAUS kifizetési export és számlakivonat-import (összegek és tranzakciók)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1168">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1169">
-          <source>The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1170">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1171">
-          <source>Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ez a funkció le lett cserélve a SEPA kifizetési export és a továbbfejlesztett banki egyeztetés funkciókra a számlakivontok importálásához.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1172">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1173">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1174">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1175">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1176">
-          <source>German DTAZV payment format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Német DTAZV fizetési formátum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1177">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1178">
-          <source>The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1179">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1180">
-          <source>SEPA payments export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SEPA exportkifizetések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1181">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1182">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1183">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1184">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1185">
-          <source>German MT940 import</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Német MT940 importálása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1186">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1187">
-          <source>Generic functionality is now used instead of localized functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A honosított funkció helyett már az általános funkció használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1188">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1189">
-          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1190">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1191">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1192">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1193">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1194">
-          <source>German XML EU Sales list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Német XML-formátumú EU Értékesítési lista</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1195">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1196">
-          <source>The XML format for German EU Sales List reporting is no longer supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Német EU Értékesítési Lista jelentés XML-formátuma, már nem támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1197">
-          <source>Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Csak az ELMA5 szövegfájl formátumban lehet a Német Adóhivatal számára jelenteni az EU értékesítési lista jelentést.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1198">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1199">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1200">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1201">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1202">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1203">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1204">
-          <source>GL SSRS reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GL SSRS-jelentések</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1205">
-          <source>Reports that include the following menu items have been removed: <bpt id="p1">**</bpt>Summary trial balance<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Detailed trial balance<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Chart of accounts<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Audit trail<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Balances<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Balance list<ept id="p6">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: <bpt id="p1">**</bpt>Összegző főkönyvi kivonat<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Részletes főkönyvi kivonat<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Számlatükör<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Könyvvizsgálati ellenőrzés<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Egyenlegek<ept id="p5">**</ept> és <bpt id="p6">**</bpt>Egyenleglista<ept id="p6">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1206">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1207">
-          <source>Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft SQL Server Reporting Services (SSRS) pénzügyi jelentéseket felváltották a Management Reporter funkciói és az alapértelmezett jelentések.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1208">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1209">
-          <source>Management Reporter (labeled <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> in the current version of Dynamics AX)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (a Dynamics AX jelenlegi verziójában <bpt id="p1">**</bpt>Pénzügyi jelentéskészítés<ept id="p1">**</ept> megjelöléssel)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1210">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1211">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1212">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1213">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1214">
-          <source>InfoPart and FormPart metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart és FormPart metaadatai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1215">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1216">
-          <source>InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az InfoPart és FormPart metaadatok két különböző ügyfél számára engedélyezték Adatterületek létrehozását.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1217">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1218">
-          <source>InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fejlesztés után az InfoPart metaadatokat, amelyek egy egyszerűsített képernyődefiníciót adtak meg, Képernyővé alakítottuk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1219">
-          <source>FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fejlesztés után a FormPart metaadatokat, amelyek egy Képernyőre hivatkoztak, közvetlenebb hivatkozással váltottuk fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1220">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1221">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1222">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1223">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1224">
-          <source>Main account list page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fő számla listaoldal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1225">
-          <source>A list of accounts for the legal entity and related balance information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A jogi személy számláinak listája és kapcsolódó egyenleginformációk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1226">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1227">
-          <source>Balance information is available on the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> list page by account and dimension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az egyenleginformációk elérhetőek a <bpt id="p1">**</bpt>Főkönyvi kivonat<ept id="p1">**</ept> listaoldalon, számla és dimenzió szerint.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1228">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1229">
-          <source><bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> contains the same list of accounts that the <bpt id="p2">**</bpt>Main account<ept id="p2">**</ept> list page contained.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Fő számlák<ept id="p1">**</ept> ugyanazt a számlalistát tartalmazza, amit korábban a <bpt id="p2">**</bpt>Fő számla<ept id="p2">**</ept> listaoldal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1230">
-          <source>The grid view in <bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> also shows an even smaller, grid-like view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Fő számlák<ept id="p1">**</ept> rácsnézetével egy még kisebb, rácsszerű megjelenítés is elérhető.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1231">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1232">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1233">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1234">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1235">
-          <source>Malaysia and Singapore bank cash flow report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malajziai és szingapúri banki pénzforgalmi jelentés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1236">
-          <source>This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szolgáltatás olyan pénzforgalmi jelentés nyomtatását tette lehetővé a felhasználó számára, amelyen megjelentek a kiválasztott bankszámlák megadott dátumtartományához kapcsolódó tranzakciók, illetve a pénzbeáramlások és a pénzkiáramlások részletei.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1237">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1238">
-          <source>The same information can be obtained from the Inquiry bank transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ugyanezek az adatok a Banki tranzakció lekérdezéséből is beszerezhetőek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1239">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1240">
-          <source>The Inquiry bank transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Banki tranzakció lekérdezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1241">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1242">
-          <source>Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készpénz- és bankkezelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1243">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1244">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1245">
-          <source>Mexican CFD electronic invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mexikói CFD elektronikus számla</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1246">
-          <source>This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a funkció lehetővé tette a CFD módszerrel történő mexikói elektronikus számlák létrehozását, abban az esetben ha vállalat írja alá a számlát, valamint kérvényezi a kapcsolódó állami engedélyeket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1247">
-          <source>This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szolgáltatás egy olyan havi jelentést is magában foglal, amely a periódusban kiadott összes elektronikus számlát tartalmazza.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1248">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1249">
-          <source>The method is no longer applicable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A módszer már nem alkalmazható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1250">
-          <source>The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az adóhatóságok beszüntettették az elektronikus számlák CFD módszerrel való létrehozását. Ennek helyét a CFDI (Comprobante Fiscal Digital a través de Internet) módszer vette át, amelynek megfelelően egy külső szolgáltató (PAC) ír alá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1251">
-          <source>The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A havi jelentést eltávolítottuk, a felhasználók egy lekérdezési lehetőség segítségével kérhetnek le előzménytranzakciókat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1252">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1253">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1254">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1255">
-          <source>Account receivables, Project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kinnlevőségek, Projekt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1256">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1257">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1258">
-          <source>Mexico realized and unrealized VAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mexikói realizált és nem realizált áfa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1259">
-          <source>Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics AX 2012 a nem realizált áfát a Mexikó-specifikus nem realizált adó funkció használatával kezelte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1260">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1261">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Máshol már meglévő funkció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1262">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1263">
-          <source>Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen, ezt a funkciót felváltotta az alapból biztosított standard feltételes áfa funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1264">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1265">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adó</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1266">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1267">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1268">
-          <source>Microsoft Outlook integration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Outlook-integráció</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1269">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1270">
-          <source>This functionality has been replaced by Microsoft Exchange Server integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást a Microsoft Exchange Server integrációja váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1271">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1272">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1273">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1274">
-          <source>Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Értékesítés és marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1275">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1276">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1277">
-          <source>Private blocking of inventory and warehouse management journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készlet- és raktárkezelési naplók személyes zárolása</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1278">
-          <source>The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A készlet- és raktárnaplók már nem támogatják naplók megjelölését egy kiválasztott felhasználó személyes tartalmaként.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1279">
-          <source>Only the process of blocking journals as private for user groups and blocking during editing is supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A naplók zárolásának folyamata csak felhasználócsoportok személyes tartalmaként, illetve szerkesztés alatt támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1280">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1281">
-          <source>No use of the functionality was found.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció hasznossága nem mutatható ki.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1282">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1283">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1284">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1285">
-          <source>Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Készletgazdálkodás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1286">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1287">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1288">
-          <source>Product builder</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékszerkesztő</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1289">
-          <source>Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Termékszerkesztő használatával korábban értékesítési rendelésekből, beszerzési rendelésekből, termelési rendelésekből, értékesítési ajánlatokból projektajánlatokból vagy cikkszükségletekből származó cikkek dinamikus konfigurálására volt lehetőség.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1290">
-          <source>Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Egy modellezési változókkal rendelkező termékmodell alapján a felhasználó ki tudta választani a vevői követelményeknek megfelelő értékeket, valamint létre tudott hozni egy egyedi, anyagjegyzékkel és útvonallal rendelkező termékváltozatot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1291">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1292">
-          <source>Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1293">
-          <source>It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1294">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1295">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1296">
-          <source>The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1297">
-          <source>The constraint-based configuration technology is selected on the product masters to enable the configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1298">
-          <source>To learn more, see <bpt id="p1">[</bpt>Build a product configuration model<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">További tudnivalókért lásd: <bpt id="p1">[</bpt>Termékkonfigurációs modell felépítése<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1299">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1300">
-          <source>Product information management, Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékinformációk kezelése, Értékesítés és marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1301">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1302">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1303">
-          <source>Production Floor app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termelési üzem alkalmazás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1304">
-          <source>This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez az alkalmazás a Windows 8.1 RT és Windows 8.1 Pro rendszereket futtató táblagépekhez való.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1305">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1306">
-          <source>With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A webalapú kliensre való váltásnak köszönhetően a natív Dynamics AX 7.0 kliensen keresztül is végrehajtható hasonló funkció.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1307">
-          <source>The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Feladatkártya eszköze olyan termelési üzem felhasználói felületet biztosít, amely érintőképernyők és táblagép formátumú tényezőkre is optimalizálva van.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1308">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1309">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1310">
-          <source>The Job Card Device, which is a native part of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Feladatkártya eszköze a Dynamics AX 7.0 natív része.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1311">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1312">
-          <source>Production control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gyártásvezérlés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1313">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1314">
-          <source>Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elavult: A Microsoft Store-ból való eltávolítás dátuma még nem került meghatározásra ehhez a funkcióhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1315">
-          <source>Rename product dimension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékdimenzió átnevezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1316">
-          <source>This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szolgáltatás lehetővé tette a három alap termékdimenzió egyikének (méret, szín vagy stílus) átnevezését egy olyan névre, amely jobban megfelel az üzleti követelményeknek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1317">
-          <source>Renaming included all the labels where the product dimension name was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az átnevezés kiterjedt minden olyan címkére, ahol megjelent a termékdimenzió neve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1318">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1319">
-          <source>The current version of Dynamics AX doesn't support label changes at run time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX jelenlegi verziója nem támogatja címkék módosítását futtatás alatt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1320">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1321">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1322">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1323">
-          <source>Product information management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termékinformációk kezelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1324">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1325">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1326">
-          <source>Retail Server connectivity using HTTP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server kapcsolat ellenőrzése HTTP segítségével</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1327">
-          <source>In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem védett) használatával működött.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1328">
-          <source>This was in addition to the standard communication using HTTPS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a szabványos HTTPS-t használó szokásos kommunikáció mellett működött.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1329">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1330">
-          <source>Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Új biztonsági óvintézkedések következményeképpen kizárólag a TLS 1.2 (vagy az újabb, ha rendelkezésre áll) protokollt használó biztonságos kommunikáció támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1331">
-          <source>The self-service installer will automatically configure the computer for this communication.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az önkiszolgáló telepítő automatikusan konfigurálja a számítógépet ehhez a kommunikációs módhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1332">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1333">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1334">
-          <source>Only standard HTTPS communication is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg csak a szabványos HTTPS által biztosított kommunikáció támogatott.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1335">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1336">
-          <source>Retail Server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiskereskedelmi kiszolgáló</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1337">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1338">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1339">
-          <source>Role Center pages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerepkör főoldalak lapjai</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1340">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1341">
-          <source>Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Szerepkör főoldalak lapjai a már megszűnt Enterprise Portal platformra épültek, amelynek helyét a Dynamics AX jelenlegi verziójában az új webes ügyfélplatform vette át.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1342">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1343">
-          <source>The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az új Munkaterület képernyőminta folyamatközpontú tervezése egyszerű hozzáférést biztosít az adott folyamaton belül gyakran használt feladatokhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1344">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1345">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1346">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1347">
-          <source>Removed as of Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1348">
-          <source>Sales tax jurisdictions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Áfailletékességek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1349">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1350">
-          <source>Low customer usage and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1351">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1352">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1353">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1354">
-          <source>US sales tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amerikai áfa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1355">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1356">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1357">
-          <source>Sites Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sites Services</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1358">
-          <source>Sites Services let you build websites that extend your business processes to the Internet without IT support.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, melyek kiterjesztik az üzleti folyamatokat az internetre informatikai segítség nélkül.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1359">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1360">
-          <source>The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Dynamics AX által használt Microsoft Azure infrastruktúra új helyettesítő lehetőségekkel rendelkezik (például Azure oldalakkal).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1361">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1362">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nincs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1363">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1364">
-          <source>HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HR-toborzás, esetkezelés, ajánlatkérés, szállítóregisztrálás, lehetőségekhez és kampányokhoz tartozó együttműködési munkaterületek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1365">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1366">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1367">
-          <source>SSAS demand forecasting strategy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SSAS igény-előrejelzési szolgáltatások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1368">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1369">
-          <source>The design of the feature cannot be supported in the new cloud architecture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció kialakítása az új felhő architektúrában nem támogatható.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1370">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1371">
-          <source>Azure Machine Learning demand forecasting strategy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure gépi tanulási kereslet-előrejelzési stratégia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1372">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1373">
-          <source>Master planning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alaptervezés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1374">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1375">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1376">
-          <source>Vendor invoice pool excluding posting details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szállítói számlagyűjtő a feladási részletek nélkül</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1377">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1378">
-          <source>Low usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony használat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1379">
-          <source>This functionality has been replaced by the Invoice journal that has workflow functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a funkciót felváltotta a munkafolyamat funkcióval rendelkező Számlanapló.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1380">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1381">
-          <source>Workflow capabilities of the Invoice journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Számlanapló munkafolyamat funkciói.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1382">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1383">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kötelezettségek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1384">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1385">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1386">
-          <source>Virtual company accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtuális vállalati számlák</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1387">
-          <source>The virtual companies feature is no longer supported in Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1388">
-          <source>The virtual companies feature let users set up tables that could be shared by a set of companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1389">
-          <source>For a description of the feature, see <bpt id="p1">[</bpt>Company accounts and Virtual company accounts<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szolgáltatás leírása itt található: <bpt id="p1">[</bpt>Vállalati számlák és Virtuális vállalati számlák<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1390">
-          <source>The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1391">
-          <source>Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1392">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1393">
-          <source>- Virtual companies must be set up before data is stored in the tables.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- A virtuális vállalatokat még az adatok táblákban való tárolása előtt be kell állítani.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1394">
-          <source>Retrofitting virtual companies onto an existing implementation is very difficult.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A virtuális vállalatok, már meglevő implementációra történő modernizálása nagyon nehézkes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1395">
-          <source>- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Mivel a Dynamics AX jelenlegi verziójában rengeteg adatnormalizáció történt, igen nehézkessé vált átlátni azt, hogy a táblagyűjteményekhez mit szükséges hozzáadni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1396">
-          <source>For example, it's difficult to know which tables to share.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Például nehéz megállapítani, mely táblák kerüljenek megosztásra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1397">
-          <source>All the tables referenced from tables that are in a virtual company must also added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A virtuális vállalatokban lévő táblákból hivatkozott összes egyéb táblát is hozzá kell adni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1398">
-          <source>Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A táblanormalizáció miatt, még egy több táblában szétszóródó egyszerű alapadatot is a virtuális vállalat részévé kell tenni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1399">
-          <source>Any mistake that is made here will cause functional issues.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bármilyen itt történő hiba működési diszfunkciókat okozhat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1400">
-          <source>- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Egy virtuális vállalat részét képező táblában elvesznek az adatok eredetére vonatkozó információk, és csak a virtuális vállalat kerül rögzítésre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1401">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1402">
-          <source>Global tables can be used to make tables accessible from all companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Globális táblák használatával a táblákat elérhetővé teheti az összes vállalatból.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1403">
-          <source>Currently, there is no replacement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelenleg nincs helyettesítés.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1404">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1405">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minden modul</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1406">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1407">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1408">
-          <source>Windows 8 tablet app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows 8 táblagépes alkalmazás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1409">
-          <source>The Windows 8 tablet app provided functionality for expense entry and approval.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbeírást és a jóváhagyást.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1410">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1411">
-          <source>Finance and Operations is compatible with tablets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Finance and Operations kompatibilis a táblagépekkel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1412">
-          <source>The tablet app is no longer required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A táblagépes alkalmazásra már nincs szükség.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1413">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1414">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szám</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1415">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1416">
-          <source>Expense management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Költséggazdálkodás</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1417">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1418">
-          <source>Removed: This functionality is only available for Dynamics AX 2012 R3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva: Ez a funkció csak a Dynamics AX 2012 R3 verzióban érhető el.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1419">
-          <source>Workplanner</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkatervező</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1420">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Elavulás/eltávolítás oka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1421">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alacsony használat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1422">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Felváltotta másik szolgáltatás?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1423">
-          <source>No, but the <bpt id="p1">**</bpt>Profile relation<ept id="p1">**</ept> page, which is opened from the <bpt id="p2">**</bpt>Profile groups<ept id="p2">**</ept> page, supports the same business scenario as the deprecated <bpt id="p3">**</bpt>Workplanner<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem, de a <bpt id="p1">**</bpt>Profilkapcsolat<ept id="p1">**</ept> lap (amely a <bpt id="p2">**</bpt>Profilcsoportok<ept id="p2">**</ept> oldalon nyitható meg), ugyan azt az üzleti forgatókönyvet támogatja, mint az elavult <bpt id="p3">**</bpt>Munkatervező<ept id="p3">**</ept> oldal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1424">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Érintett területek<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1425">
-          <source>Time and attendance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Munkaidő és jelenlét</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1426">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Állapot<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1427">
-          <source>The code has not been removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A kódot nem távolítottuk el.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1428">
-          <source>However, the form, JmgWorkPlanner, was not migrated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azonban a JmgWorkPlanner űrlap nem lett áttelepítve.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1429">
-          <source>X++ financial statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ pénzügyi kimutatások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1430">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Reason for deprecation/removal<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Elavulás/eltávolítás oka<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1431">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1432">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Replaced by another feature?<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Felváltotta másik szolgáltatás?<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1433">
-          <source>Management Reporter (labeled <bpt id="p1">&lt;strong&gt;</bpt>Financial reporting<ept id="p1">&lt;/strong&gt;</ept> in the current version of Dynamics AX)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (a Dynamics AX jelenlegi verziójában <bpt id="p1">&lt;strong&gt;</bpt>Pénzügyi jelentéskészítés<ept id="p1">&lt;/strong&gt;</ept> megjelöléssel)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1434">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Product areas affected<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Érintett területek<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1435">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Főkönyv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1436">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Status<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Állapot<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1437">
-          <source>Removed as of Dynamics AX 2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eltávolítva a Dynamics AX 2012-s verziójától kezdve</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Eltávolított vagy elavult funkciók
+description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
+author: sericks007
+manager: AnnBe
+ms.date: 06/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Operations
+ms.custom: 21821
+ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620645"
+---
+# <a name="removed-or-deprecated-features"></a><span data-ttu-id="c77f5-103">Eltávolított vagy elavult szolgáltatások</span><span class="sxs-lookup"><span data-stu-id="c77f5-103">Removed or deprecated features</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="c77f5-104">Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva vagy elavultak a Dynamics 365 for Finance and Operations szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-104">This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</span></span>
+
+- <span data-ttu-id="c77f5-105">Az *eltávolított* szolgáltatások már nem érhetők el a termékben.</span><span class="sxs-lookup"><span data-stu-id="c77f5-105">A *removed* feature is no longer available in the product.</span></span>
+- <span data-ttu-id="c77f5-106">Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.</span><span class="sxs-lookup"><span data-stu-id="c77f5-106">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+
+<span data-ttu-id="c77f5-107">Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére.</span><span class="sxs-lookup"><span data-stu-id="c77f5-107">This list is intended to help you consider these removals and deprecations for your own planning.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="c77f5-108">A Dynamics 365 for Finance and Operations 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát.</span><span class="sxs-lookup"><span data-stu-id="c77f5-108">Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</span></span> <span data-ttu-id="c77f5-109">Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.</span><span class="sxs-lookup"><span data-stu-id="c77f5-109">All of the previous releases mentioned in this topic supported cloud deployments only.</span></span>
+
+> <span data-ttu-id="c77f5-110">A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál.</span><span class="sxs-lookup"><span data-stu-id="c77f5-110">Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span></span> <span data-ttu-id="c77f5-111">Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-111">You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a><span data-ttu-id="c77f5-112">Dynamics 365 for Finance and Operations 10.0.4</span><span class="sxs-lookup"><span data-stu-id="c77f5-112">Dynamics 365 for Finance and Operations 10.0.4</span></span> 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a><span data-ttu-id="c77f5-113">FEC Könyvelési adatok exportálása XML-formátumban, Franciaország</span><span class="sxs-lookup"><span data-stu-id="c77f5-113">France: FEC Accounting data export in XML</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-114">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-114">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-115">A TXT formátumra cserélve a **Francia FEC könyvvizsgálati fájl** a **Főkönyv** \> **Ismétlődő feladatok** \> **Adatok exportálása** pontban érhető el.</span><span class="sxs-lookup"><span data-stu-id="c77f5-115">Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.</span></span>
+| <span data-ttu-id="c77f5-116">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-116">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-117">Igen</span><span class="sxs-lookup"><span data-stu-id="c77f5-117">Yes</span></span> |
+| <span data-ttu-id="c77f5-118">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-118">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-119">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-119">General ledger</span></span> |
+| <span data-ttu-id="c77f5-120">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-120">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-121">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-121">All</span></span> |
+| <span data-ttu-id="c77f5-122">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-122">**Status**</span></span>                         | <span data-ttu-id="c77f5-123">Elavult.</span><span class="sxs-lookup"><span data-stu-id="c77f5-123">Deprecated.</span></span> <span data-ttu-id="c77f5-124">A funkció eltávolításának céljaként megjelölt időkeret 2020. július.</span><span class="sxs-lookup"><span data-stu-id="c77f5-124">Target timeframe for the functionality to be removed is July 2020.</span></span> |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a><span data-ttu-id="c77f5-125">Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés</span><span class="sxs-lookup"><span data-stu-id="c77f5-125">Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="c77f5-126">A Dynamics 365 for Finance and Operations 10.0.4 28-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</span><span class="sxs-lookup"><span data-stu-id="c77f5-126">Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="c77f5-127">A tartalom és a funkciók megváltozhatnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-127">The content and the functionality are subject to change.</span></span> <span data-ttu-id="c77f5-128">Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-128">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="legacy-navigation-bar"></a><span data-ttu-id="c77f5-129">Korábbi navigációs sáv</span><span class="sxs-lookup"><span data-stu-id="c77f5-129">Legacy navigation bar</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-130">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-130">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-131">Fejléc igazítása más Dynamics és Office termékekkel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-131">Header alignment with other Dynamics and Office products.</span></span> <span data-ttu-id="c77f5-132">A további tudnivalókat lásd: [A frissített navigációs sáv mostantól igazodik az Office fejléchez](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</span><span class="sxs-lookup"><span data-stu-id="c77f5-132">For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).</span></span>
+| <span data-ttu-id="c77f5-133">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-133">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-134">A Platform update 24-től kezdve bevezetésre került egy újratervezett navigációs sáv, amelyen keresés is található.</span><span class="sxs-lookup"><span data-stu-id="c77f5-134">Starting in Platform update 24, a restyled navigation bar that features search was introduced.</span></span> |
+| <span data-ttu-id="c77f5-135">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-135">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-136">Webes ügyfél</span><span class="sxs-lookup"><span data-stu-id="c77f5-136">Web client</span></span> |
+| <span data-ttu-id="c77f5-137">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-137">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-138">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-138">All</span></span> |
+| <span data-ttu-id="c77f5-139">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-139">**Status**</span></span>                         | <span data-ttu-id="c77f5-140">Elavult: 2020 áprilisában a korábbi navigációs sáv már nem lesz elérhető.</span><span class="sxs-lookup"><span data-stu-id="c77f5-140">Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available.</span></span> <span data-ttu-id="c77f5-141">Eddig a pontig a vevők a korábbi navigációs sávra az **Ügyfélteljesítmény beállításai** lapon térhetnek vissza.</span><span class="sxs-lookup"><span data-stu-id="c77f5-141">Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a><span data-ttu-id="c77f5-142">Dynamics 365 for Finance and Operations 10.0.2 és 26-as platformfrissítés</span><span class="sxs-lookup"><span data-stu-id="c77f5-142">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="c77f5-143">A Dynamics 365 for Finance and Operations 10.0.2 26-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</span><span class="sxs-lookup"><span data-stu-id="c77f5-143">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="c77f5-144">A tartalom és a funkciók megváltozhatnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-144">The content and the functionality are subject to change.</span></span> <span data-ttu-id="c77f5-145">Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-145">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="legacy-default-action-behavior"></a><span data-ttu-id="c77f5-146">Örökölt alapértelmezett művelet viselkedése</span><span class="sxs-lookup"><span data-stu-id="c77f5-146">Legacy default action behavior</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-147">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-147">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-148">Az rácsokban végzett alapértelmezett műveletek örökölt viselkedése azt eredményezheti, hogy az egyik, alapértelmezett művelet hivatkozását tartalmazó, rácsoszlopok után szereplő váratlan oszlop átrendezése történik személyre szabáson keresztül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-148">The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</span></span> <span data-ttu-id="c77f5-149">Az új beragadó alapértelmezett művelet funkció ennek javítására használatos.</span><span class="sxs-lookup"><span data-stu-id="c77f5-149">The new sticky default action feature corrects this.</span></span> <span data-ttu-id="c77f5-150">További részletekért lásd: [Alapértelmezett beragadó műveletek rácsokban](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span><span class="sxs-lookup"><span data-stu-id="c77f5-150">For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span></span> |
+| <span data-ttu-id="c77f5-151">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-151">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-152">A 21-es platformfrissítéstől kezdődően bevezettük az „alapértelmezett beragadó műveletek” funkciót.</span><span class="sxs-lookup"><span data-stu-id="c77f5-152">Starting in Platform update 21, a feature for "sticky default actions" was introduced.</span></span> <span data-ttu-id="c77f5-153">A funkciót az **Ügyfélteljesítmény beállításai** oldalon lehet engedélyezni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-153">This feature can be enabled on the **Client performance options** page.</span></span> |
+| <span data-ttu-id="c77f5-154">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-154">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-155">Rácsok a webes ügyfélnél</span><span class="sxs-lookup"><span data-stu-id="c77f5-155">Grids in the web client</span></span> |
+| <span data-ttu-id="c77f5-156">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-156">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-157">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-157">All</span></span> |
+| <span data-ttu-id="c77f5-158">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-158">**Status**</span></span>                         | <span data-ttu-id="c77f5-159">Elavult: 2020. áprilistól kezdődően az alapértelmezett beragadó műveletek lesznek az alapértelmezett műveletek, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-159">Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
+
+### <a name="legacy-is-one-of-filtering-experience"></a><span data-ttu-id="c77f5-160">Örökölt „egyike a következőknek” szűrési élmény</span><span class="sxs-lookup"><span data-stu-id="c77f5-160">Legacy "is one of" filtering experience</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-161">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-161">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-162">Az „egyike a következőknek” szűrési gyakorlatot a 22-es platformfrissítésben átterveztük, mivel a jövőben ez lesz az egyetlen „egyike a következőknek” szűrési gyakorlat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-162">The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</span></span> |
+| <span data-ttu-id="c77f5-163">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-163">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-164">A 22-es platformfrissítéstől kezdődően a továbbfejlesztett „egyike a következőknek” szűrési gyakorlat elérhetővé vált az **Ügyfélteljesítmény beállításai** oldalon.</span><span class="sxs-lookup"><span data-stu-id="c77f5-164">Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page.</span></span> <span data-ttu-id="c77f5-165">További információért lásd: [Optimalizált „egyike a következőknek” szűrési élmény](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span><span class="sxs-lookup"><span data-stu-id="c77f5-165">For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span></span> |
+| <span data-ttu-id="c77f5-166">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-166">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-167">Webes ügyfél</span><span class="sxs-lookup"><span data-stu-id="c77f5-167">Web client</span></span> |
+| <span data-ttu-id="c77f5-168">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-168">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-169">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-169">All</span></span> |
+| <span data-ttu-id="c77f5-170">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-170">**Status**</span></span>                         | <span data-ttu-id="c77f5-171">Elavult: 2020. áprilistól kezdődően a továbbfejlesztett „egyike a következőknek” gyakorlat lesz az alapértelmezett viselkedés, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-171">Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a><span data-ttu-id="c77f5-172">Paraméter, amellyel engedélyezhetők a több projektszerződéses finanszírozási forrással rendelkező értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="c77f5-172">Parameter to enable sales orders with multiple project contract funding sources</span></span>
+<span data-ttu-id="c77f5-173">Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a projekszerződéseknél több finanszírozási forrás is engedélyezve van a **Projektvezetési paraméterek** beállítás **Több finanszírozási forrással rendelkező projekthez tartozó értékesítési rendelések engedélyezése** értékével.</span><span class="sxs-lookup"><span data-stu-id="c77f5-173">Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**.</span></span> <span data-ttu-id="c77f5-174">Alapértelmezés szerint ez a paraméter nincs engedélyezve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-174">By default, this parameter is not enabled.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-175">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-175">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-176">A funkciót a rendszer mindig engedélyezi a paraméter eltávolítása után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-176">The functionality will always be enabled after the parameter is removed.</span></span> |
+| <span data-ttu-id="c77f5-177">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-177">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-178">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-178">No.</span></span> <span data-ttu-id="c77f5-179">A funkció, amely támogatja a projektalapú értékesítési rendelkéseket, amelyek több finanszírozási forrással rendelkeznek, mindig engedélyezve lesz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-179">The functionality to support project-based sales orders with multiple funding sources will always be enabled.</span></span>   |
+| <span data-ttu-id="c77f5-180">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-180">**Product areas affected**</span></span>         |<span data-ttu-id="c77f5-181">A **Több finanszírozási forrással rendelkező projektekhez tartozó értékesítési rendelések engedélyezése** paraméter el lesz távolítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-181">The **Allow sales orders for projects with multiple funding sources** parameter will be removed.</span></span> <span data-ttu-id="c77f5-182">Paraméter eltávolításakor a következő metódusok módosulnak: **ctrlSalesOrderTable** metódus a **ProjStatusType** osztályban, az **ellenőrzés** metódus a **ProjId** mezőre vonatkozóan, és a **futtatás** metódus a **SalescreateOrder** képernyőn.</span><span class="sxs-lookup"><span data-stu-id="c77f5-182">The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form.</span></span> <span data-ttu-id="c77f5-183">A kövektező metódusok elavulnak a paraméter eltávolításakor: **IsSalesOrderAllowedForMultipleFundingSources** a **ProjTable** táblafájlban, a **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** metódus a **ProjTable** táblafájlban, az **AllowSalesOrdersForMultipleFundingSources** adatmező a **ProjParameters** képernyőn és a **ProjParameterEntity** fájlokban, az **IsAssociatedToMultipleFundingSourcesContract** privát metódus a**ProjTable** táblafájlban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-183">The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file.</span></span> |
+| <span data-ttu-id="c77f5-184">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-184">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-185">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-185">All</span></span>  |
+| <span data-ttu-id="c77f5-186">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-186">**Status**</span></span>                         | <span data-ttu-id="c77f5-187">Az elavulást a 2020. áprilisi kiadási hullámra tervezzük.</span><span class="sxs-lookup"><span data-stu-id="c77f5-187">Deprecation is planned for the April 2020 release wave.</span></span> |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a><span data-ttu-id="c77f5-188">Örökölt munkafolyamat-jelentések nyomon követéshez és példányállapothoz</span><span class="sxs-lookup"><span data-stu-id="c77f5-188">Legacy workflow reports for tracking and instance status</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-189">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-189">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-190">A nyomon követéshez és példányállapothoz használt örökölt munkafolyamat-jelentések elavulnak, mivel már nem hivatkoznak rájuk a navigációból.</span><span class="sxs-lookup"><span data-stu-id="c77f5-190">The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</span></span> <span data-ttu-id="c77f5-191">A jelentések nevei a következők: WorkflowWorkflowInstanceByStatusReport és WorkflowWorkflowTrackingReport.</span><span class="sxs-lookup"><span data-stu-id="c77f5-191">The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</span></span> |
+| <span data-ttu-id="c77f5-192">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-192">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-193">Ehelyett a munkafolyamat-előzmények képernyő használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-193">The workflow history form can be used instead.</span></span> |
+| <span data-ttu-id="c77f5-194">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-194">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-195">Webes ügyfél</span><span class="sxs-lookup"><span data-stu-id="c77f5-195">Web client</span></span> |
+| <span data-ttu-id="c77f5-196">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-196">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-197">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-197">All</span></span> |
+| <span data-ttu-id="c77f5-198">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-198">**Status**</span></span>                         | <span data-ttu-id="c77f5-199">Elavult: A funkció eltávolításának célként meghatározott időkerete 2020 áprilisa.</span><span class="sxs-lookup"><span data-stu-id="c77f5-199">Deprecated: Target timeframe for the functionality to be removed is April 2020.</span></span> |
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a><span data-ttu-id="c77f5-200">Dynamics 365 for Finance and Operations 10.0.1 és 25-as platformfrissítés</span><span class="sxs-lookup"><span data-stu-id="c77f5-200">Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="c77f5-201">A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként.</span><span class="sxs-lookup"><span data-stu-id="c77f5-201">Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="c77f5-202">A tartalom és a funkciók megváltozhatnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-202">The content and the functionality are subject to change.</span></span> <span data-ttu-id="c77f5-203">Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-203">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a><span data-ttu-id="c77f5-204">Elavult API-k és a lehetséges kompatibilitástörlő változások</span><span class="sxs-lookup"><span data-stu-id="c77f5-204">Deprecated APIs and potential breaking changes</span></span>
+
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a><span data-ttu-id="c77f5-205">A belső osztályok történő származtatás elavult.</span><span class="sxs-lookup"><span data-stu-id="c77f5-205">Deriving from internal classes is deprecated</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-206">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-206">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-207">A 25-ös platformfrissítés előtt létre lehetett hozni egy osztályt vagy táblát, amely egy belső osztályból/táblából származik, amelyik egy másik csomagban/modulban van definiálva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-207">Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</span></span> <span data-ttu-id="c77f5-208">Ez nem egy biztonságos programozási gyakorlat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-208">This is not a safe coding practice.</span></span> <span data-ttu-id="c77f5-209">A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg.</span><span class="sxs-lookup"><span data-stu-id="c77f5-209">As of Platform update 25, the compiler will display a warning.</span></span> |
+| <span data-ttu-id="c77f5-210">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-210">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-211">A 26-os platformfrissítésben a fordítói figyelmeztetése hibaüzenetre lesz módosítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-211">The compiler warning will be replaced by an error in Platform update 26.</span></span> <span data-ttu-id="c77f5-212">Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására.</span><span class="sxs-lookup"><span data-stu-id="c77f5-212">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="c77f5-213">Ez a változtatás csak a fejlesztési és fordítási időt érinti.</span><span class="sxs-lookup"><span data-stu-id="c77f5-213">This change only affects development and compile time.</span></span>|
+| <span data-ttu-id="c77f5-214">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-214">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-215">Visual Studio fejlesztőeszközök</span><span class="sxs-lookup"><span data-stu-id="c77f5-215">Visual Studio development tools</span></span> |
+| <span data-ttu-id="c77f5-216">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-216">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-217">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-217">All</span></span> |
+| <span data-ttu-id="c77f5-218">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-218">**Status**</span></span>                         | <span data-ttu-id="c77f5-219">Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-219">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a><span data-ttu-id="c77f5-220">A belső módszerek felülbírálása elavult</span><span class="sxs-lookup"><span data-stu-id="c77f5-220">Overriding internal methods is deprecated</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-221">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-221">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-222">A 25-ös platformfrissítés előtt lehetséges volt felülbírálni egy belső metódust egy származtatott osztályban, amelyik egy másik csomagban/modulban van definiálva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-222">Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</span></span> <span data-ttu-id="c77f5-223">Ez nem egy biztonságos programozási gyakorlat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-223">This is not a safe coding practice.</span></span> <span data-ttu-id="c77f5-224">A 25-ös platformfrissítéstől kezdve a fordító figyelmeztetést jelenít meg.</span><span class="sxs-lookup"><span data-stu-id="c77f5-224">As of Platform update 25, the compiler will display a warning.</span></span> |
+| <span data-ttu-id="c77f5-225">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-225">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-226">A 26-os platformfrissítésben a figyelmeztetése fordítási hibaüzenetre lesz módosítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-226">This warning will be replaced by a compile error in Platform update 26.</span></span> <span data-ttu-id="c77f5-227">Ez a módosítás visszafelé kompatibilis futásidőben, ami azt jelenti, hogy, hogy a 25-ös platformfrissítés vagy az újabb verziók telepíthetők bármely teszt- vagy a termelési környezetben, anélkül, hogy szükséges lenne egyéni kód módosítására.</span><span class="sxs-lookup"><span data-stu-id="c77f5-227">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="c77f5-228">Ez a változtatás csak a fejlesztési és fordítási időt érinti.</span><span class="sxs-lookup"><span data-stu-id="c77f5-228">This change only affects development and compile time.</span></span> |
+| <span data-ttu-id="c77f5-229">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-229">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-230">Visual Studio fejlesztőeszközök</span><span class="sxs-lookup"><span data-stu-id="c77f5-230">Visual Studio development tools</span></span> |
+| <span data-ttu-id="c77f5-231">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-231">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-232">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-232">All</span></span> |
+| <span data-ttu-id="c77f5-233">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-233">**Status**</span></span>                         | <span data-ttu-id="c77f5-234">Elavult: A 26-os platformfrissítésben a figyelmeztetés fordítói hibaüzenetre lesz módosítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-234">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a><span data-ttu-id="c77f5-235">Dynamics 365 for Finance and Operations 8.1.3 és 23-as platformfrissítés</span><span class="sxs-lookup"><span data-stu-id="c77f5-235">Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</span></span>
+
+### <a name="sql-server-reporting-services-reportviewer-control"></a><span data-ttu-id="c77f5-236">Az SQL Server Reporting Services ReportViewer vezérlője</span><span class="sxs-lookup"><span data-stu-id="c77f5-236">SQL Server Reporting Services ReportViewer Control</span></span>
+<span data-ttu-id="c77f5-237">Az ügyfelek használhatják az **Exportálás** művelet, amelyet a beágyazott SQL Server Reporting Services (SSRS) Report Viewer vezérlője biztosít a Finance and Operations alkalmazások által létrehozott dokumentumok letöltése céljából.</span><span class="sxs-lookup"><span data-stu-id="c77f5-237">Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</span></span> <span data-ttu-id="c77f5-238">Ez a HTML-alapú megjelenítése a jelentésnek la dokumentum nem oldalakra bontott előnézetét kínálja a dokumentumnak</span><span class="sxs-lookup"><span data-stu-id="c77f5-238">This HTML-based presentation of the report offers users a non-paginated preview of the document.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-239">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-239">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-240">A HTML-alapú előnézeti tapasztalat nem oldalakra bontott jellege **nem** biztosítja a Finance and Operations rendszerrel készített végső dokumentumok hitelességét</span><span class="sxs-lookup"><span data-stu-id="c77f5-240">The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations.</span></span> <span data-ttu-id="c77f5-241">Amennyiben teljes mértékben elfogadják, hogy a PDF az üzleti dokumentumok szabványos formátuma, a felhasználók élvezhetik a modern megtekintési élmény által nyújtott előnyöket, amelyek az alkalmazásjelentések létrehozásakor megnövelt teljesítményt nyújtanak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-241">By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</span></span> |
+| <span data-ttu-id="c77f5-242">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-242">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-243">Innentől a PDF-dokumentum lesz az alapértelmezett formátum a Finance and Operations jelentéseihez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-243">Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</span></span>   |
+| <span data-ttu-id="c77f5-244">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-244">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-245">Ez a módosítás **nem** befolyásolja, azon ügyfélszituációkat ahol jelentések elektronikus úton elosztottak vagy közvetlenül nyomtatókra küldik azokat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-245">This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.</span></span>    |
+| <span data-ttu-id="c77f5-246">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-246">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-247">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-247">All</span></span>  |
+| <span data-ttu-id="c77f5-248">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-248">**Status**</span></span>                         | <span data-ttu-id="c77f5-249">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-249">Deprecated: A removal date has not been set for this feature.</span></span> <span data-ttu-id="c77f5-250">A funkció, amellyel automatikusan megtekinthető a pályázati jelentések előnézete egy beágyazott PDF-megtekintő segítségével, a tervek szerint a 2019. májusi platformfrissítésben lesz elérhető.</span><span class="sxs-lookup"><span data-stu-id="c77f5-250">The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</span></span> |
+
+### <a name="client-kpi-controls"></a><span data-ttu-id="c77f5-251">Ügyfél KPI-vezérlők</span><span class="sxs-lookup"><span data-stu-id="c77f5-251">Client KPI controls</span></span>
+<span data-ttu-id="c77f5-252">A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio rendszerben egy fejlesztő által és a végfelhasználó tovább testreszabhatja azokat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-252">Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-253">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-253">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-254">A KPI-k meghatározásához használt natív ügyfélvezérlők alacsony szintű megértést várnak el az ügyféltől, és a fejlesztők adhatják hozzá a követhető mutatókat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-254">The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</span></span> |
+| <span data-ttu-id="c77f5-255">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-255">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-256">PowerBI.com szolgáltatás világszínvonalú eszközöket kínál KPI-k kezeléséhez és meghatározásához külső forrásból származó adatok alapján.</span><span class="sxs-lookup"><span data-stu-id="c77f5-256">PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</span></span>  <span data-ttu-id="c77f5-257">Egy közelgő kiadásban tervezzük PowerBI.com-on tárolt megoldások beágyazását az alkalmazások munkaterületeire</span><span class="sxs-lookup"><span data-stu-id="c77f5-257">In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</span></span>   |
+| <span data-ttu-id="c77f5-258">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-258">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-259">Ez a frissítés megakadályozza, hogy a fejlesztők új KPI-vezérlők vezessenek be a Visual Studio tervezőjében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-259">This update will prevent developers from introducing new KPI controls in Visual Studio designer.</span></span>    |
+| <span data-ttu-id="c77f5-260">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-260">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-261">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-261">All</span></span>  |
+| <span data-ttu-id="c77f5-262">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-262">**Status**</span></span>                         | <span data-ttu-id="c77f5-263">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-263">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a><span data-ttu-id="c77f5-264">Elavult API-k és jövőbeni kompatibilitástörlő változások</span><span class="sxs-lookup"><span data-stu-id="c77f5-264">Deprecated APIs and future breaking changes</span></span>
+
+#### <a name="field-groups-containing-invalid-field-references"></a><span data-ttu-id="c77f5-265">Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok</span><span class="sxs-lookup"><span data-stu-id="c77f5-265">Field groups containing invalid field references</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-266">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-266">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-267">Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-267">It is possible for table metadata definitions to have field groups containing invalid field references.</span></span> <span data-ttu-id="c77f5-268">A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba*, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-268">This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue.</span></span> <span data-ttu-id="c77f5-269">Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-269">If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</span></span> <span data-ttu-id="c77f5-270">A probléma megoldásához:</span><span class="sxs-lookup"><span data-stu-id="c77f5-270">To fix this issue:</span></span><br><br><span data-ttu-id="c77f5-271">1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</span><span class="sxs-lookup"><span data-stu-id="c77f5-271">1. Remove the invalid field reference from the table field group definition.</span></span><br><br><span data-ttu-id="c77f5-272">2. Fordítsa újra.</span><span class="sxs-lookup"><span data-stu-id="c77f5-272">2. Recompile.</span></span><br><br><span data-ttu-id="c77f5-273">3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett.</span><span class="sxs-lookup"><span data-stu-id="c77f5-273">3. Ensure any warnings or errors are addressed.</span></span> |
+| <span data-ttu-id="c77f5-274">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-274">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-275">A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-275">This warning will be replaced by a compile error in the future.</span></span>  |
+| <span data-ttu-id="c77f5-276">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-276">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-277">Visual Studio fejlesztőeszközök.</span><span class="sxs-lookup"><span data-stu-id="c77f5-277">Visual Studio development tools.</span></span> |
+| <span data-ttu-id="c77f5-278">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-278">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-279">Mind.</span><span class="sxs-lookup"><span data-stu-id="c77f5-279">All.</span></span> |
+| <span data-ttu-id="c77f5-280">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-280">**Status**</span></span>                         | <span data-ttu-id="c77f5-281">Elavult: A figyelmeztetés fordítási hiba lesz a jövőben.</span><span class="sxs-lookup"><span data-stu-id="c77f5-281">Deprecated: The warning will become a compile-time error in the future.</span></span> <span data-ttu-id="c77f5-282">Jelenleg a 30-as platformfrissítés van megcélozva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-282">We're currently targeting Platform update 30.</span></span> |
+
+#### <a name="complete-list"></a><span data-ttu-id="c77f5-283">Teljes lista</span><span class="sxs-lookup"><span data-stu-id="c77f5-283">Complete list</span></span>
+<span data-ttu-id="c77f5-284">Az elavulás alatt álló API-k teljes listáját lásd: [Módszerek és metaadat-elemek elavulása](deprecation-deletion-apis.md).</span><span class="sxs-lookup"><span data-stu-id="c77f5-284">To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a><span data-ttu-id="c77f5-285">Dynamics 365 for Finance and Operations 8.1 és 20-as platformfrissítés</span><span class="sxs-lookup"><span data-stu-id="c77f5-285">Dynamics 365 for Finance and Operations 8.1 with platform update 20</span></span>
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a><span data-ttu-id="c77f5-286">Kötegelt átviteli szabályok analitikus naplószámla bejegyzéseihez</span><span class="sxs-lookup"><span data-stu-id="c77f5-286">Batch transfer rules for subledger journal account entries</span></span>
+<span data-ttu-id="c77f5-287">A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.</span><span class="sxs-lookup"><span data-stu-id="c77f5-287">The Synchronous transfer mode is being deprecated in the General ledger parameters.</span></span>  <span data-ttu-id="c77f5-288">A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség.</span><span class="sxs-lookup"><span data-stu-id="c77f5-288">This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</span></span> <span data-ttu-id="c77f5-289">További információért lásd: [Főkönyvi paraméterek – Kötegelt átmozgatás szabályai](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blogot.</span><span class="sxs-lookup"><span data-stu-id="c77f5-289">For additional information, see the [General Ledger Parameters – Batch transfer rules](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blog.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-290">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-290">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-291">A szinkron beállítást a rendszer teljesítményére gyakorolt hatás miatt szüntetjük meg.</span><span class="sxs-lookup"><span data-stu-id="c77f5-291">We are removing the synchronous option due to performance impact to the system.</span></span> |
+| <span data-ttu-id="c77f5-292">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-292">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-293">A szinkron helyett az aszinkron és az ütemezett köteg beállítás használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-293">Asynchronous and scheduled batch are options to use in place of Synchronous.</span></span>   |
+| <span data-ttu-id="c77f5-294">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-294">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-295">Főkönyv, Kötelezettségek, Kinnlevőségek, Beszerzés, Költség</span><span class="sxs-lookup"><span data-stu-id="c77f5-295">General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</span></span>    |
+| <span data-ttu-id="c77f5-296">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-296">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-297">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-297">All</span></span>  |
+| <span data-ttu-id="c77f5-298">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-298">**Status**</span></span>                         | <span data-ttu-id="c77f5-299">Elavult: A funkció eltávolításának cél időkerete a 10.0-s verzió.</span><span class="sxs-lookup"><span data-stu-id="c77f5-299">Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</span></span>|
+
+### <a name="electronic-reporting-for-russia"></a><span data-ttu-id="c77f5-300">Elektronikus jelentéskészítés Oroszország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-300">Electronic reporting for Russia</span></span>
+<span data-ttu-id="c77f5-301">Funkció a bevallások .txt és .xml fájlformátumainak konfigurálásához.</span><span class="sxs-lookup"><span data-stu-id="c77f5-301">Feature for configuring .txt and .xml file formats of declarations.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-302">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-302">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-303">Helyére az elektronikus jelentéskészítés kerül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-303">Replaced with Electronic reporting.</span></span> |
+| <span data-ttu-id="c77f5-304">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-304">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-305">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-305">Yes.</span></span> |
+| <span data-ttu-id="c77f5-306">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-306">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-307">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-307">General Ledger</span></span> |
+| <span data-ttu-id="c77f5-308">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-308">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-309">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-309">All</span></span> |
+| <span data-ttu-id="c77f5-310">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-310">**Status**</span></span>                         | <span data-ttu-id="c77f5-311">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-311">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+### <a name="financial-reports-generator-for-russia"></a><span data-ttu-id="c77f5-312">Pénzügyi jelentéskészítő Oroszország számára</span><span class="sxs-lookup"><span data-stu-id="c77f5-312">Financial reports generator for Russia</span></span>
+<span data-ttu-id="c77f5-313">Eszköz az adatgyűjtemény elszámolás és adókimutatások céljából való beállításához, valamint annak érdekében, hogy XLS és DOC kimutatássablonokba exportálhassa az adatokat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-313">A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span> <span data-ttu-id="c77f5-314">Funkcionális részek: Adatok exportálása XLS és DOC jelentéssablonokba, lekérdezések, a rögzített kellékek eltávolításra kerülnek.</span><span class="sxs-lookup"><span data-stu-id="c77f5-314">Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-315">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-315">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-316">Az eltávolított részek helyére az elektronikus jelentések kerülnek.</span><span class="sxs-lookup"><span data-stu-id="c77f5-316">Removed parts are replaced with Electronic reporting.</span></span> |
+| <span data-ttu-id="c77f5-317">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-317">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-318">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-318">Yes.</span></span> <span data-ttu-id="c77f5-319">A pénzügyi kimutatások beállításának kezelőfelülete használandó az adatgyűjtemény-szabályok főkönyvi számlál és adónyilvántartások általi beállítására.</span><span class="sxs-lookup"><span data-stu-id="c77f5-319">Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</span></span> <span data-ttu-id="c77f5-320">Adatok exportálása különböző fájltípusokba; a rögzített elemek és a lekérdezésszerű adatgyűjtési szabályok konfigurálása az elektronikus jelentésekben történik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-320">Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</span></span> |
+| <span data-ttu-id="c77f5-321">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-321">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-322">Főkönyv.</span><span class="sxs-lookup"><span data-stu-id="c77f5-322">General ledger.</span></span> |
+| <span data-ttu-id="c77f5-323">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-323">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-324">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-324">All</span></span> |
+| <span data-ttu-id="c77f5-325">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-325">**Status**</span></span>                         | <span data-ttu-id="c77f5-326">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-326">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a><span data-ttu-id="c77f5-327">Külső szolgáltatók integrálása elektronikus jelentések kommunikációs csatornákon keresztül való küldéséhez Oroszország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-327">Integration with external providers for sending electronic reporting through communication channels for Russia</span></span>
+<span data-ttu-id="c77f5-328">A deklaráció elektronikus fájljait exportáló funkció, amely az exportálást egy mappába végzi, hogy továbbküldhesse az adatokat az elektronikus jelentések hivatalos szolgáltatóinak, akik visszaadják az állapotot.</span><span class="sxs-lookup"><span data-stu-id="c77f5-328">Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-329">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-330">Helyére az elektronikus üzenetek konfigurálható funkciója kerül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-330">Replaced with electronic messages configurable feature.</span></span> |
+| <span data-ttu-id="c77f5-331">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-331">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-332">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-332">Yes.</span></span>  |
+| <span data-ttu-id="c77f5-333">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-333">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-334">Főkönyv, Adó</span><span class="sxs-lookup"><span data-stu-id="c77f5-334">General Ledger, Tax</span></span> |
+| <span data-ttu-id="c77f5-335">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-335">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-336">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-336">All</span></span> |
+| <span data-ttu-id="c77f5-337">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-337">**Status**</span></span>                         | <span data-ttu-id="c77f5-338">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-338">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+
+### <a name="profit-tax-register-wizard"></a><span data-ttu-id="c77f5-339">Nyereségadó-jegyzék varázsló</span><span class="sxs-lookup"><span data-stu-id="c77f5-339">Profit tax register wizard</span></span>
+<span data-ttu-id="c77f5-340">Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozásához használatos.</span><span class="sxs-lookup"><span data-stu-id="c77f5-340">Feature for creating templates for new profit tax registers.</span></span> <span data-ttu-id="c77f5-341">A funkció X++ objektumokat hoz létre az új jegyzékekhez, amelyeket utána sablonként létre lehez hozni, ha a megfelelő kalkulációs logikát hozzáadják.</span><span class="sxs-lookup"><span data-stu-id="c77f5-341">This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-342">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-342">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-343">A funkció nem kompatibilis a Dynamics 365 for Finance and Operations bővíthetőségi modellel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-343">Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</span></span> |
+| <span data-ttu-id="c77f5-344">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-344">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-345">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-345">No</span></span> |
+| <span data-ttu-id="c77f5-346">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-346">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-347">Adó</span><span class="sxs-lookup"><span data-stu-id="c77f5-347">Tax</span></span> |
+| <span data-ttu-id="c77f5-348">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-348">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-349">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-349">All</span></span> |
+| <span data-ttu-id="c77f5-350">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-350">**Status**</span></span>                         | <span data-ttu-id="c77f5-351">Eltávolítva a Dynamics 365 for Finance and Operations 8.1-es verzió és platform update 20 után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-351">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a><span data-ttu-id="c77f5-352">Dynamics 365 for Finance and Operations 8.0 és platform update 15</span><span class="sxs-lookup"><span data-stu-id="c77f5-352">Dynamics 365 for Finance and Operations 8.0 with platform update 15</span></span>
+<span data-ttu-id="c77f5-353">Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-353">No features have been removed or deprecated with this release.</span></span> <span data-ttu-id="c77f5-354">A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.</span><span class="sxs-lookup"><span data-stu-id="c77f5-354">Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a><span data-ttu-id="c77f5-355">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 és platform update 12</span><span class="sxs-lookup"><span data-stu-id="c77f5-355">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</span></span>
+
+### <a name="personalized-product-recommendations"></a><span data-ttu-id="c77f5-356">Személyre szabott termékajánlatok</span><span class="sxs-lookup"><span data-stu-id="c77f5-356">Personalized product recommendations</span></span> 
+<span data-ttu-id="c77f5-357">2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön.</span><span class="sxs-lookup"><span data-stu-id="c77f5-357">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="c77f5-358">További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="c77f5-358">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-359">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-359">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-360">A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.</span><span class="sxs-lookup"><span data-stu-id="c77f5-360">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
+| <span data-ttu-id="c77f5-361">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-361">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-362">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-362">No.</span></span> <span data-ttu-id="c77f5-363">2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="c77f5-363">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
+| <span data-ttu-id="c77f5-364">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-364">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-365">Személyre szabott termékajánlások a POS felületén.</span><span class="sxs-lookup"><span data-stu-id="c77f5-365">Personalized product recommendations in POS.</span></span>                                                    |
+| <span data-ttu-id="c77f5-366">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-366">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-367">Mind</span><span class="sxs-lookup"><span data-stu-id="c77f5-367">All</span></span>                                                                                      |
+| <span data-ttu-id="c77f5-368">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-368">**Status**</span></span>                         |<span data-ttu-id="c77f5-369">Eltávolítva 2018. február 15-én.</span><span class="sxs-lookup"><span data-stu-id="c77f5-369">Removed as of February 15, 2018.</span></span> <span data-ttu-id="c77f5-370">Ez befolyásolja a Dynamics 365 for Operations 1611-es és újabb verzióit futtató ügyfeleket.</span><span class="sxs-lookup"><span data-stu-id="c77f5-370">This affects customers running Dynamics 365 for Operations 1611 and later.</span></span>  |
+
+### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a><span data-ttu-id="c77f5-371">Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése</span><span class="sxs-lookup"><span data-stu-id="c77f5-371">Extension of the list of Electronic reporting (ER) functions</span></span>
+<span data-ttu-id="c77f5-372">A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: [Elektronikus jelentéskészítési funkciók listájának kibővítése](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) már nem támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-372">The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more.</span></span> <span data-ttu-id="c77f5-373">Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-373">Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-374">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-374">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-375">Kódzárolási kezdeményezés</span><span class="sxs-lookup"><span data-stu-id="c77f5-375">Code sealing initiative</span></span>  |
+| <span data-ttu-id="c77f5-376">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-376">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-377">Egyik sem.</span><span class="sxs-lookup"><span data-stu-id="c77f5-377">None.</span></span> <span data-ttu-id="c77f5-378">Amikor csak új beépített függvényre van szükség, új bővítési kérelmet kell benyújtani az ER-keretrendszer csapatnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-378">Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</span></span><br><br><span data-ttu-id="c77f5-379">Ideiglenes megoldásként, amíg az ER-csapat fejleszti a kért függvényt, a szükséges logika egy egyéni alkalmazásosztály metódusaként is programozható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-379">As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</span></span> <span data-ttu-id="c77f5-380">Ez a metódus egy ER kifejezésben érhető el a hozzáadott ER adatforrás tulajdonságaként az **Application\Class** típusnak, amely az egyéni alkalmazásosztályra hivatkozik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-380">This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.</span></span>  |
+| <span data-ttu-id="c77f5-381">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-381">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-382">Elektronikus jelentéskészítési keretrendszer</span><span class="sxs-lookup"><span data-stu-id="c77f5-382">Electronic reporting framework</span></span>                                                      |
+| <span data-ttu-id="c77f5-383">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-383">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-384">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-384">All</span></span>                                                                                      |
+| <span data-ttu-id="c77f5-385">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-385">**Status**</span></span>                         | <span data-ttu-id="c77f5-386">Eltávolítva a Dynamics 365 for Finance and Operations, Enterprise edition 7.3 után.</span><span class="sxs-lookup"><span data-stu-id="c77f5-386">Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</span></span>    |
+
+### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a><span data-ttu-id="c77f5-387">Készlet a cikkcsoport és készlet a készletdimenzió korosítási jelentései szerint</span><span class="sxs-lookup"><span data-stu-id="c77f5-387">Inventory by item group and Inventory by inventory dimension aging reports</span></span>
+
+<span data-ttu-id="c77f5-388">Ezt a két jelentést már nem támogatja a Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c77f5-388">These two reports are no longer supported in Finance and Operations.</span></span> <span data-ttu-id="c77f5-389">Ehelyett a **Készletkorosítási** jelentés használható a felhasználói élmény fokozása érdekében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-389">Instead, the **Inventory aging** report can be used to improve the user experience.</span></span>
+
+|   |  |
+|--------------|-----------------------|
+| <span data-ttu-id="c77f5-390">**Megszűnés oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-390">**Reason for deprecation**</span></span>       | <span data-ttu-id="c77f5-391">Máshol már meglévő funkció</span><span class="sxs-lookup"><span data-stu-id="c77f5-391">Duplicate functionality</span></span>  |
+| <span data-ttu-id="c77f5-392">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-392">**Replaced by another feature?**</span></span> | <span data-ttu-id="c77f5-393">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-393">Yes.</span></span> <span data-ttu-id="c77f5-394">A két jelentést leváltotta a **Készletkorosítási** jelentés.</span><span class="sxs-lookup"><span data-stu-id="c77f5-394">The two reports have been replaced by the **Inventory aging** report.</span></span>     |
+| <span data-ttu-id="c77f5-395">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-395">**Product areas affected**</span></span>       | <span data-ttu-id="c77f5-396">Készletkezelés, költségkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-396">Inventory management, Cost management</span></span>        |
+| <span data-ttu-id="c77f5-397">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-397">**Deployment option**</span></span>        | <span data-ttu-id="c77f5-398">Mind</span><span class="sxs-lookup"><span data-stu-id="c77f5-398">All</span></span>|
+| <span data-ttu-id="c77f5-399">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-399">**Status**</span></span>                       | <span data-ttu-id="c77f5-400">Elavult: A két jelentés menüpontjai el lettek távolítva a 7.3 verzióban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-400">Deprecated: The menu items for the two reports have been removed in version 7.3.</span></span> <span data-ttu-id="c77f5-401">A jelentések kódja azonban a termékben marad.</span><span class="sxs-lookup"><span data-stu-id="c77f5-401">However, the code for the reports remains in the product.</span></span> <span data-ttu-id="c77f5-402">A terv szerint valamelyik jövőbeli programverzióban eltávolítjuk a kódot.</span><span class="sxs-lookup"><span data-stu-id="c77f5-402">The plan is to remove the code in a future release.</span></span> |
+
+### <a name="power-bi-content-packs-available-on-appsource"></a><span data-ttu-id="c77f5-403">Power BI tartalom csomagok elérhetők az AppSource felületén</span><span class="sxs-lookup"><span data-stu-id="c77f5-403">Power BI content packs available on AppSource</span></span>
+<span data-ttu-id="c77f5-404">A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen, a Microsoft Power BI termékfrissítései miatt elavulttá válnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-404">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI.</span></span> <span data-ttu-id="c77f5-405">A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-405">System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-406">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-406">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-407">A Microsoft Power BI termékfrissítései.</span><span class="sxs-lookup"><span data-stu-id="c77f5-407">Product updates in Microsoft Power BI.</span></span> |
+| <span data-ttu-id="c77f5-408">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-408">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-409">A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [AppSource](https://appsource.microsoft.com) webhelyen, olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt.</span><span class="sxs-lookup"><span data-stu-id="c77f5-409">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level.</span></span> <span data-ttu-id="c77f5-410">Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI-munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span><span class="sxs-lookup"><span data-stu-id="c77f5-410">For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span></span>    |
+| <span data-ttu-id="c77f5-411">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-411">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-412">Költségkezelés, pénzügy és kiskereskedelem</span><span class="sxs-lookup"><span data-stu-id="c77f5-412">Cost management, Finance, and Retail</span></span>                                                                                               |
+| <span data-ttu-id="c77f5-413">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-413">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-414">Csak felhő (A PowerBI.com webhellyel való integráció nem támogatott a helyszíni telepítések esetében.)</span><span class="sxs-lookup"><span data-stu-id="c77f5-414">Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</span></span>                                                                                                            |
+| <span data-ttu-id="c77f5-415">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-415">**Status**</span></span>                         | <span data-ttu-id="c77f5-416">Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-416">Deprecated: Target timeframe for the functionality removal is Q2 2018.</span></span>    |
+
+### <a name="standard-ui-in-data-management-workspace"></a><span data-ttu-id="c77f5-417">Normál kezelőfelület az adatkezelési munkaterületen</span><span class="sxs-lookup"><span data-stu-id="c77f5-417">Standard UI in data management workspace</span></span>
+
+<span data-ttu-id="c77f5-418">A normál adatkezelési kezelőfelület a régebbi kezelőfelület, amely a felhasználók számára alapértelmezetten jelenik meg, amikor megnyitják az adatok kezelése munkaterületet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-418">The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</span></span>
+
+|   |  |
+|------------------|-------------------------|
+| <span data-ttu-id="c77f5-419">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-419">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-420">Befektetünk az új felhasználói élmény nyújtásában az új felhasználói felület segítségével.</span><span class="sxs-lookup"><span data-stu-id="c77f5-420">We are investing in providing new user experiences in the new UI.</span></span>             |
+| <span data-ttu-id="c77f5-421">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-421">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-422">Az új felhasználói felület neve *Bővített nézet*, és a régi felhasználói felületet váltja le.</span><span class="sxs-lookup"><span data-stu-id="c77f5-422">The new UI called *Enhanced views* is replacing the old UI.</span></span>            |
+| <span data-ttu-id="c77f5-423">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-423">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-424">Adatkezelési munkaterület</span><span class="sxs-lookup"><span data-stu-id="c77f5-424">Data management workspace</span></span>                                                     |
+| <span data-ttu-id="c77f5-425">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-425">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-426">Mind</span><span class="sxs-lookup"><span data-stu-id="c77f5-426">All</span></span>                                                                           |
+| <span data-ttu-id="c77f5-427">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-427">**Status**</span></span>                         | <span data-ttu-id="c77f5-428">Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-428">Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</span></span> |
+
+### <a name="excise-sales-tax-service-tax-for-india"></a><span data-ttu-id="c77f5-429">Fogyasztási adó, áfa, szolgáltatási adó India esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-429">Excise, Sales Tax, Service Tax for India</span></span>
+
+<span data-ttu-id="c77f5-430">Ezeket az adókat már magában foglalja az indiai GST.</span><span class="sxs-lookup"><span data-stu-id="c77f5-430">These taxes have been subsumed into Indian GST.</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="c77f5-431">**Elavulás vagy eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-431">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="c77f5-432">Ezeket az adókat már magában foglalja az indiai GST.</span><span class="sxs-lookup"><span data-stu-id="c77f5-432">These taxes have been subsumed into Indian GST.</span></span>                          |
+| <span data-ttu-id="c77f5-433">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-433">**Replaced by another feature?**</span></span>            | <span data-ttu-id="c77f5-434">Indiai GST</span><span class="sxs-lookup"><span data-stu-id="c77f5-434">Indian GST</span></span>                                                              |
+| <span data-ttu-id="c77f5-435">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-435">**Product areas affected**</span></span>                  | <span data-ttu-id="c77f5-436">Adó</span><span class="sxs-lookup"><span data-stu-id="c77f5-436">Tax</span></span>                                                                     |
+| <span data-ttu-id="c77f5-437">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-437">**Deployment option**</span></span>                       | <span data-ttu-id="c77f5-438">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-438">All modules</span></span>                                                   |
+| <span data-ttu-id="c77f5-439">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-439">**Status**</span></span>                                  | <span data-ttu-id="c77f5-440">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-440">Deprecated: A removal date has not been set for this feature.</span></span> |    
+
+### <a name="file-validation-utility-fvu-for-india"></a><span data-ttu-id="c77f5-441">Fájlellenőrzési segédprogram (FVU) India esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-441">File Validation Utility (FVU) for India</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="c77f5-442">**Elavulás vagy eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-442">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="c77f5-443">Vevői használat hiánya.</span><span class="sxs-lookup"><span data-stu-id="c77f5-443">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="c77f5-444">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-444">**Replaced by another feature?**</span></span>            | <span data-ttu-id="c77f5-445">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-445">No</span></span>                                                                      |
+| <span data-ttu-id="c77f5-446">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-446">**Product areas affected**</span></span>                  | <span data-ttu-id="c77f5-447">Indiai adóelőleg</span><span class="sxs-lookup"><span data-stu-id="c77f5-447">Indian withholding tax</span></span>                                                  |
+| <span data-ttu-id="c77f5-448">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-448">**Deployment option**</span></span>                       | <span data-ttu-id="c77f5-449">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-449">All modules</span></span>                                                                    |
+| <span data-ttu-id="c77f5-450">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-450">**Status**</span></span>                                  | <span data-ttu-id="c77f5-451">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-451">Deprecated: A removal date has not been set for this feature.</span></span>   |        
+
+### <a name="tdstcs-certificate-for-india"></a><span data-ttu-id="c77f5-452">TDS/TCS-tanúsítvány India esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-452">TDS/TCS certificate for India</span></span>
+
+<span data-ttu-id="c77f5-453">A felhasználók a kormányzati portálról tölthetik le.</span><span class="sxs-lookup"><span data-stu-id="c77f5-453">Users can download this from the government portal.</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="c77f5-454">**Elavulás vagy eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-454">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="c77f5-455">Vevői használat hiánya.</span><span class="sxs-lookup"><span data-stu-id="c77f5-455">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="c77f5-456">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-456">**Replaced by another feature?**</span></span>            | <span data-ttu-id="c77f5-457">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-457">No</span></span>                                                                      |
+| <span data-ttu-id="c77f5-458">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-458">**Product areas affected**</span></span>                  | <span data-ttu-id="c77f5-459">Indiai adóelőleg</span><span class="sxs-lookup"><span data-stu-id="c77f5-459">Indian withholding tax</span></span>                                                  |
+| <span data-ttu-id="c77f5-460">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-460">**Deployment option**</span></span>                       | <span data-ttu-id="c77f5-461">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-461">All modules</span></span>                                                                   |
+| <span data-ttu-id="c77f5-462">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-462">**Status**</span></span>                                  | <span data-ttu-id="c77f5-463">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-463">Deprecated: A removal date has not been set for this feature.</span></span>     |    
+
+### <a name="exportimport-exim-incentive-scheme-for-india"></a><span data-ttu-id="c77f5-464">Exportálási/importálási (EXIM) ösztönző rendszer India esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-464">Export/import (EXIM) incentive scheme for India</span></span>
+
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="c77f5-465">**Elavulás vagy eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-465">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="c77f5-466">Vevői használat hiánya.</span><span class="sxs-lookup"><span data-stu-id="c77f5-466">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="c77f5-467">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-467">**Replaced by another feature?**</span></span>            | <span data-ttu-id="c77f5-468">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-468">No</span></span>                                                                      |
+| <span data-ttu-id="c77f5-469">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-469">**Product areas affected**</span></span>                  | <span data-ttu-id="c77f5-470">Importálás és exportálás</span><span class="sxs-lookup"><span data-stu-id="c77f5-470">Import and export</span></span>                                                       |
+| <span data-ttu-id="c77f5-471">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-471">**Deployment option**</span></span>                       | <span data-ttu-id="c77f5-472">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-472">All modules</span></span>                                                                    |
+| <span data-ttu-id="c77f5-473">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-473">**Status**</span></span>                                  | <span data-ttu-id="c77f5-474">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-474">Deprecated: A removal date has not been set for this feature.</span></span>  |    
+
+
+## <a name="dynamics-365-for-retail-72"></a><span data-ttu-id="c77f5-475">Dynamics 365 for Retail 7.2</span><span class="sxs-lookup"><span data-stu-id="c77f5-475">Dynamics 365 for Retail 7.2</span></span>
+
+### <a name="personalized-product-recommendations"></a><span data-ttu-id="c77f5-476">Személyre szabott termékajánlatok</span><span class="sxs-lookup"><span data-stu-id="c77f5-476">Personalized product recommendations</span></span> 
+<span data-ttu-id="c77f5-477">2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön.</span><span class="sxs-lookup"><span data-stu-id="c77f5-477">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="c77f5-478">További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="c77f5-478">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-479">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-479">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-480">A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.</span><span class="sxs-lookup"><span data-stu-id="c77f5-480">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
+| <span data-ttu-id="c77f5-481">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-481">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-482">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-482">No.</span></span> <span data-ttu-id="c77f5-483">2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="c77f5-483">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
+| <span data-ttu-id="c77f5-484">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-484">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-485">Személyre szabott termékajánlások a POS felületén.</span><span class="sxs-lookup"><span data-stu-id="c77f5-485">Personalized product recommendations in POS.</span></span>                                                    |
+| <span data-ttu-id="c77f5-486">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-486">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-487">Mind</span><span class="sxs-lookup"><span data-stu-id="c77f5-487">All</span></span>                                                                                      |
+| <span data-ttu-id="c77f5-488">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-488">**Status**</span></span>                         |<span data-ttu-id="c77f5-489">Eltávolítva 2018. február 15-én.</span><span class="sxs-lookup"><span data-stu-id="c77f5-489">Removed as of February 15, 2018.</span></span> <span data-ttu-id="c77f5-490">Ez befolyásolja a Dynamics 365 for Retail 7.2-es és újabb verzióit futtató ügyfeleket.</span><span class="sxs-lookup"><span data-stu-id="c77f5-490">This affects customers running Dynamics 365 for Retail 7.2  and later.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a><span data-ttu-id="c77f5-491">Dynamics 365 for Finance and Operations, Enterprise edition 2017 júliusi verzió és platform update 8</span><span class="sxs-lookup"><span data-stu-id="c77f5-491">Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</span></span>
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a><span data-ttu-id="c77f5-492">Pénznemátváltás könyvelési és jelentési pénznemek esetén</span><span class="sxs-lookup"><span data-stu-id="c77f5-492">Currency conversion for accounting and reporting currencies</span></span>
+
+<span data-ttu-id="c77f5-493">A pénznemátváltást könyvelési és jelentési pénznem esetén az euró bevezetésekor vezettük be.</span><span class="sxs-lookup"><span data-stu-id="c77f5-493">Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-494">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-494">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-495">Korlátozott felhasználás és a Jogi személy másolása funkció bevezetése a helyettesítésére.</span><span class="sxs-lookup"><span data-stu-id="c77f5-495">Limited usage and addition of the Copy legal entity functionality as a replacement.</span></span>      |
+| <span data-ttu-id="c77f5-496">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-496">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-497">Nem, de bevezettük a Jogi személy másolása és a Konfigurációk funkciókat, hogy megkönnyítsük az olyan vállalatokhoz való áthelyezést, amelyeknél változnak az alapkövetelmények.</span><span class="sxs-lookup"><span data-stu-id="c77f5-497">No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</span></span> |
+| <span data-ttu-id="c77f5-498">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-498">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-499">Pénzgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="c77f5-499">Financial management</span></span>     |
+| <span data-ttu-id="c77f5-500">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-500">**Status**</span></span>                         | <span data-ttu-id="c77f5-501">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-501">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+
+### <a name="warehouse-mobile-devices-portal"></a><span data-ttu-id="c77f5-502">Raktári mobileszközportál</span><span class="sxs-lookup"><span data-stu-id="c77f5-502">Warehouse mobile devices portal</span></span>
+
+<span data-ttu-id="c77f5-503">A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-503">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span> <span data-ttu-id="c77f5-504">Ezt az összetevőt már nem támogatja a Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c77f5-504">This component is no longer supported in Finance and Operations.</span></span> <span data-ttu-id="c77f5-505">A WMDP funkció helyére egy natív alkalmazás lépett, amely javítja a felhasználói élményt.</span><span class="sxs-lookup"><span data-stu-id="c77f5-505">A native app that improves the user experience has replaced the functionality of WMDP.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-506">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-506">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-507">Máshol már meglévő funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-507">Duplicate functionality.</span></span>       |
+| <span data-ttu-id="c77f5-508">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-508">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-509">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-509">Yes.</span></span> <span data-ttu-id="c77f5-510">Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-510">This feature has been replaced by Finance and Operations - Warehousing.</span></span> <span data-ttu-id="c77f5-511">A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](../../supply-chain/warehousing/install-configure-warehousing-app.md) című részben talál.</span><span class="sxs-lookup"><span data-stu-id="c77f5-511">For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md).</span></span> |
+| <span data-ttu-id="c77f5-512">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-512">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-513">Raktárkezelés, szállításkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-513">Warehouse management, Transportation management</span></span>     |
+| <span data-ttu-id="c77f5-514">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-514">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-515">A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-515">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span>               |
+| <span data-ttu-id="c77f5-516">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-516">**Status**</span></span>                         | <span data-ttu-id="c77f5-517">Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-517">Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</span></span>   |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a><span data-ttu-id="c77f5-518">Továbbfejlesztett banki egyeztetési szabály kézi egyeztetéshez</span><span class="sxs-lookup"><span data-stu-id="c77f5-518">Advanced bank reconciliation matching rule for manual matching</span></span>
+
+<span data-ttu-id="c77f5-519">Az egyeztetési munkalapon a dokumentumok kézi egyeztetéséhez egy egyeztetési szabályt használtak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-519">A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-520">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-520">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-521">Korlátozott felhasználás.</span><span class="sxs-lookup"><span data-stu-id="c77f5-521">Limited usage.</span></span>                                                                         |
+| <span data-ttu-id="c77f5-522">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-522">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-523">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-523">No.</span></span> <span data-ttu-id="c77f5-524">Az oszlopszűrési lehetőségeket kell használni az egyeztetendő dokumentumok keresésére.</span><span class="sxs-lookup"><span data-stu-id="c77f5-524">Column filtering capabilities should be used to find documents for reconciliation.</span></span> |
+| <span data-ttu-id="c77f5-525">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-525">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-526">Készpénz- és bankkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-526">Cash and bank management</span></span>                                                               |
+| <span data-ttu-id="c77f5-527">**Telepítési beállítás**</span><span class="sxs-lookup"><span data-stu-id="c77f5-527">**Deployment option**</span></span>              | <span data-ttu-id="c77f5-528">Összes</span><span class="sxs-lookup"><span data-stu-id="c77f5-528">All</span></span>                                                                                    |
+| <span data-ttu-id="c77f5-529">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-529">**Status**</span></span>                         | <span data-ttu-id="c77f5-530">Eltávolítva 2017 júliusában.</span><span class="sxs-lookup"><span data-stu-id="c77f5-530">Removed as of July 2017.</span></span>                                                               |
+
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a><span data-ttu-id="c77f5-531">Dynamics 365 for Operations 1611 és platform update 3</span><span class="sxs-lookup"><span data-stu-id="c77f5-531">Dynamics 365 for Operations 1611 with platform update 3</span></span>
+
+### <a name="aeb-payment-formats-for-spain"></a><span data-ttu-id="c77f5-532">Spanyol AEB fizetési formátumok</span><span class="sxs-lookup"><span data-stu-id="c77f5-532">AEB payment formats for Spain</span></span>
+
+<span data-ttu-id="c77f5-533">A Consejo Superior Bancario fizetési formátumok átutalási fájlok bankhoz történő küldésére voltak használatosak vevői és szállítói kifizetések esetén.</span><span class="sxs-lookup"><span data-stu-id="c77f5-533">The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</span></span> <span data-ttu-id="c77f5-534">Ezen formátumok tartalmát az Asociación Española de Banca határozta meg.</span><span class="sxs-lookup"><span data-stu-id="c77f5-534">The content of these formats was determined by the Asociación Española de Banca.</span></span> <span data-ttu-id="c77f5-535">A következőket fedi le: Cuaderno 19, 32, 58, 34.</span><span class="sxs-lookup"><span data-stu-id="c77f5-535">It covers Cuaderno 19, 32, 58, 34.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-536">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-536">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-537">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-537">The payment formats are no longer used.</span></span>                                  |
+| <span data-ttu-id="c77f5-538">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-538">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-539">Igen, az ISO20022 átutalási és beszedési formátumok Spanyolország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-539">Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</span></span> |
+| <span data-ttu-id="c77f5-540">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-540">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-541">Kötelezettség és kinnlevőség</span><span class="sxs-lookup"><span data-stu-id="c77f5-541">Accounts payable, Accounts receivable</span></span>                                    |
+| <span data-ttu-id="c77f5-542">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-542">**Status**</span></span>                         | <span data-ttu-id="c77f5-543">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-543">Deprecated: A removal date has not been set for this feature.</span></span>           |
+
+### <a name="bank-payments-transfer-for-lithuania"></a><span data-ttu-id="c77f5-544">Banki átutalásos kifizetések Litvánia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-544">Bank payments transfer for Lithuania</span></span>
+
+<span data-ttu-id="c77f5-545">A banki átutalásos kifizetések létrehozása és nyomtatása a fizetési átutalás (LT) exportformátumban történt Litvánia vonatkozásában.</span><span class="sxs-lookup"><span data-stu-id="c77f5-545">Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</span></span> <span data-ttu-id="c77f5-546">A litván piac 2005-ben kezdte el a LITAS egységesített elektronikus bankrendszert használni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-546">The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-547">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-547">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-548">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-548">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="c77f5-549">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-549">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-550">Igen, ISO20022 átutalási fizetési formátum Litvánia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-550">Yes, ISO20022 Credit transfer payment format for Lithuania</span></span>     |
+| <span data-ttu-id="c77f5-551">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-551">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-552">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-552">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-553">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-553">**Status**</span></span>                         | <span data-ttu-id="c77f5-554">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-554">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a><span data-ttu-id="c77f5-555">BBS Direkte Remittering fizetési formátumok Norvégia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-555">BBS Direkte Remittering payment formats for Norway</span></span>
+
+<span data-ttu-id="c77f5-556">A BBS Direkte Remittering fizetési formátumok a következőket tartalmazzák: vevői fizetés beszedésének exportálása (beszedési megbízás) és a válaszüzenet importálása.</span><span class="sxs-lookup"><span data-stu-id="c77f5-556">BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-557">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-557">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-558">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-558">The payment formats are no longer used.</span></span>  |
+| <span data-ttu-id="c77f5-559">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-559">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-560">A Norvégiában rendelkezésre álló, AvtaleGiro vevői fizetési formátum használható beszedési megbízási üzenetek létrehozására.</span><span class="sxs-lookup"><span data-stu-id="c77f5-560">The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</span></span> <span data-ttu-id="c77f5-561">A visszaigazoló üzenetek importálása a jövőbeli kiadásokban kerül bevezetésre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-561">Return message import will be implemented in future releases.</span></span> |
+| <span data-ttu-id="c77f5-562">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-562">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-563">Kötelezettség és kinnlevőség</span><span class="sxs-lookup"><span data-stu-id="c77f5-563">Accounts payable, Accounts receivable</span></span>   |
+| <span data-ttu-id="c77f5-564">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-564">**Status**</span></span>                         | <span data-ttu-id="c77f5-565">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-565">Deprecated: A removal date has not been set for this feature.</span></span>                                                                                                 |
+
+### <a name="chart-of-accounts-tool-for-spain"></a><span data-ttu-id="c77f5-566">Számlatükör eszköz Spanyolország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-566">Chart of Accounts tool for Spain</span></span>
+
+<span data-ttu-id="c77f5-567">Ez az eszköz akkor használatos, ha a számlatükör esetében jelentős változtatásokra van szükség Spanyolországban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-567">This tool is used when a chart of accounts in Spain requires major changes.</span></span> <span data-ttu-id="c77f5-568">A felhasználók importálhatják az új számlatükröt Microsoft Excel- vagy szöveges formátumban, valamint importálhatják a pénzügyi kimutatásokat is.</span><span class="sxs-lookup"><span data-stu-id="c77f5-568">Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-569">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-569">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-570">Korlátozott felhasználás</span><span class="sxs-lookup"><span data-stu-id="c77f5-570">Limited usage</span></span>                                                  |
+| <span data-ttu-id="c77f5-571">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-571">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-572">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-572">No</span></span>                                                             |
+| <span data-ttu-id="c77f5-573">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-573">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-574">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-574">General ledger</span></span>                                                 |
+| <span data-ttu-id="c77f5-575">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-575">**Status**</span></span>                         | <span data-ttu-id="c77f5-576">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-576">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="dom80-payment-format-for-belgium"></a><span data-ttu-id="c77f5-577">Belga Dom80 fizetési formátum</span><span class="sxs-lookup"><span data-stu-id="c77f5-577">Dom80 payment format for Belgium</span></span>
+
+<span data-ttu-id="c77f5-578">Hagyományos fizetési formátum fizetés beszedéséhez (beszedési megbízási).</span><span class="sxs-lookup"><span data-stu-id="c77f5-578">Legacy Belgian payment format for payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-579">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-579">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-580">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-580">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="c77f5-581">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-581">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-582">Igen, ISO 20022 beszedési megbízási fizetési formátum Belgium esetében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-582">Yes, ISO 20022 Direct debit payment format for Belgium</span></span>         |
+| <span data-ttu-id="c77f5-583">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-583">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-584">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-584">Accounts receivable</span></span>                                            |
+| <span data-ttu-id="c77f5-585">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-585">**Status**</span></span>                         | <span data-ttu-id="c77f5-586">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-586">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="dtaezag-payment-formats-for-switzerland"></a><span data-ttu-id="c77f5-587">DTA/EZAG fizetési formátumok Svájc esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-587">DTA/EZAG payment formats for Switzerland</span></span>
+
+<span data-ttu-id="c77f5-588">A DTA/EZAG formátumok az ESR rendszer integrált részét alkotják, mert rendelkezhetnek hivatkozási számmal.</span><span class="sxs-lookup"><span data-stu-id="c77f5-588">DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</span></span> <span data-ttu-id="c77f5-589">Mivel a hivatkozási számok nem kötelezők, ezért bármilyen szállítói fizetés feldolgozható ezen formátumok használatával.</span><span class="sxs-lookup"><span data-stu-id="c77f5-589">Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</span></span> <span data-ttu-id="c77f5-590">Ezeket a formátumokat olyan vállalatok használják, amelyeknek a „Postfinance”-től eltérő helyen van bankszámlája.</span><span class="sxs-lookup"><span data-stu-id="c77f5-590">These formats are used by companies that have a bank account in a location other than “Postfinance.”</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-591">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-591">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-592">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-592">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="c77f5-593">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-593">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-594">Igen, ISO20022 átutalási fizetési formátum Svájc esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-594">Yes, ISO20022 Credit transfer payment format for Switzerland</span></span>   |
+| <span data-ttu-id="c77f5-595">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-595">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-596">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-596">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-597">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-597">**Status**</span></span>                         | <span data-ttu-id="c77f5-598">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-598">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="edifact-dirdeb-payment-format-for-austria"></a><span data-ttu-id="c77f5-599">EDIFACT-DIRDEB fizetési formátum Ausztria esetében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-599">EDIFACT-DIRDEB payment format for Austria</span></span>
+
+<span data-ttu-id="c77f5-600">EDIFACT-DIRDEB fizetési formátum fizetés beszedéséhez (beszedési megbízás).</span><span class="sxs-lookup"><span data-stu-id="c77f5-600">EDIFACT-DIRDEB payment format for payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-601">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-601">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-602">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-602">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="c77f5-603">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-603">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-604">Igen, ISO 20022 beszedési megbízási fizetési formátum Ausztria esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-604">Yes, ISO 20022 Direct debit payment format for Austria</span></span>         |
+| <span data-ttu-id="c77f5-605">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-605">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-606">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-606">Accounts receivable</span></span>                                            |
+| <span data-ttu-id="c77f5-607">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-607">**Status**</span></span>                         | <span data-ttu-id="c77f5-608">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-608">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="edivat-for-belgium"></a><span data-ttu-id="c77f5-609">EDIVAT Belgium esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-609">EDIVAT for Belgium</span></span>
+
+<span data-ttu-id="c77f5-610">EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult belga szabványa.</span><span class="sxs-lookup"><span data-stu-id="c77f5-610">EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</span></span> <span data-ttu-id="c77f5-611">A Microsoft Dynamics AX 2012 megtartja a csak olvasható megoldást annak érdekében, hogy a régebbi adatokhoz hozzá lehessen férni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-611">Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-612">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-612">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-613">Ez a funkció már nincs használatban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-613">The functionality is no longer used.</span></span>                           |
+| <span data-ttu-id="c77f5-614">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-614">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-615">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-615">No</span></span>                                                             |
+| <span data-ttu-id="c77f5-616">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-616">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-617">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-617">General ledger</span></span>                                                 |
+| <span data-ttu-id="c77f5-618">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-618">**Status**</span></span>                         | <span data-ttu-id="c77f5-619">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-619">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a><span data-ttu-id="c77f5-620">eGiro EDIFACT CREMUL fizetési importformátum Norvégia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-620">eGiro EDIFACT CREMUL payment import format for Norway</span></span>
+
+<span data-ttu-id="c77f5-621">Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi szabványon alapszik, amely a vevői kifizetések automatikus feladásához használatos.</span><span class="sxs-lookup"><span data-stu-id="c77f5-621">eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</span></span> <span data-ttu-id="c77f5-622">A Microsoft Dynamics AX alkalmazásban az eGiro vevői fizetési importformátumként van megvalósítva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-622">In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-623">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-623">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-624">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-624">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="c77f5-625">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-625">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-626">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-626">No.</span></span> <span data-ttu-id="c77f5-627">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-627">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="c77f5-628">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-628">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-629">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-629">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="c77f5-630">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-630">**Status**</span></span>                         | <span data-ttu-id="c77f5-631">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-631">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="external-inventory-for-poland"></a><span data-ttu-id="c77f5-632">Külső készlet Lengyelország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-632">External inventory for Poland</span></span>
+
+<span data-ttu-id="c77f5-633">Szállítótól beszerzés nélkül, értékesítésre átvett áruk bizonylata.</span><span class="sxs-lookup"><span data-stu-id="c77f5-633">Evidence of goods that are taken from a vendor for sales without purchase.</span></span> <span data-ttu-id="c77f5-634">A külső készleten kezelt áruk, amelyek a normál készletet nem érintik, és automatikusan eladhatóak, majd később megvásárolhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-634">Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</span></span> <span data-ttu-id="c77f5-635">Ez a folyamat tényleges készletmozgást hoz létre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-635">This process creates real inventory movements.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-636">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-636">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-637">Másik szolgáltatás váltotta fel</span><span class="sxs-lookup"><span data-stu-id="c77f5-637">Replaced by another feature</span></span>                                    |
+| <span data-ttu-id="c77f5-638">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-638">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-639">Igen, a bejövő szállítmány alapfunkciója</span><span class="sxs-lookup"><span data-stu-id="c77f5-639">Yes, the core Inbound consignment functionality</span></span>                |
+| <span data-ttu-id="c77f5-640">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-640">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-641">Kötelezettségek, készletkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-641">Accounts payable, Inventory management</span></span>                         |
+| <span data-ttu-id="c77f5-642">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-642">**Status**</span></span>                         | <span data-ttu-id="c77f5-643">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-643">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="financial-reports-generator-for-eastern-europe"></a><span data-ttu-id="c77f5-644">Pénzügyi beszámolók létrehozása Kelet-Európa esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-644">Financial reports generator for Eastern Europe</span></span>
+
+<span data-ttu-id="c77f5-645">Egy eszköz szolgál a könyvelési és adójelentések adatgyűjtésének beállításához és az adatok XLS vagy DOC jelentéssablonba való exportálásához</span><span class="sxs-lookup"><span data-stu-id="c77f5-645">A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-646">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-646">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-647">Korlátozott felhasználás</span><span class="sxs-lookup"><span data-stu-id="c77f5-647">Limited usage</span></span>                                                                            |
+| <span data-ttu-id="c77f5-648">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-648">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-649">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-649">No.</span></span> <span data-ttu-id="c77f5-650">Az eszközt elektronikus jelentési konfigurációk fogják leváltani a jövőbeli kiadásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-650">The tool will be replaced by Electronic reporting configurations in future releases.</span></span> |
+| <span data-ttu-id="c77f5-651">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-651">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-652">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-652">General Ledger</span></span>                                                                           |
+| <span data-ttu-id="c77f5-653">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-653">**Status**</span></span>                         | <span data-ttu-id="c77f5-654">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-654">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="import-of-customer-payment-transactions-for-finland"></a><span data-ttu-id="c77f5-655">Vevői kifizetési tranzakciók importálása Finnország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-655">Import of customer payment transactions for Finland</span></span>
+
+<span data-ttu-id="c77f5-656">Kiválaszthat egy olyan importálási formátumot a finn fizetésekhez, amely a vevői kifizetési tranzakciókat importálja egy bank által biztosított külső fájlból.</span><span class="sxs-lookup"><span data-stu-id="c77f5-656">You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-657">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-657">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-658">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-658">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="c77f5-659">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-659">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-660">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-660">No.</span></span> <span data-ttu-id="c77f5-661">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-661">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="c77f5-662">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-662">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-663">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-663">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="c77f5-664">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-664">**Status**</span></span>                         | <span data-ttu-id="c77f5-665">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-665">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a><span data-ttu-id="c77f5-666">A Finnországra vonatkozó fizetési tranzakciók importálása a főkönyvi naplóba</span><span class="sxs-lookup"><span data-stu-id="c77f5-666">Import of payment transactions into a general ledger journal for Finland</span></span>
+
+<span data-ttu-id="c77f5-667">Finnországra vonatkozó, specifikus formátum, amellyel könyvelési tranzakciók importálhatóak a főkönyvbe.</span><span class="sxs-lookup"><span data-stu-id="c77f5-667">A format that is specific to Finland is used to import accounting transactions into the general ledger.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-668">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-668">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-669">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-669">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="c77f5-670">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-670">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-671">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-671">No.</span></span> <span data-ttu-id="c77f5-672">A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-672">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="c77f5-673">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-673">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-674">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-674">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="c77f5-675">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-675">**Status**</span></span>                         | <span data-ttu-id="c77f5-676">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-676">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a><span data-ttu-id="c77f5-677">Integráció az Isabel-hez szinkronizált (CIS) rendszerekkel Belgium esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-677">Integration with Isabel synchronized (CIS) for Belgium</span></span>
+
+<span data-ttu-id="c77f5-678">Az Isabel az elektronikus banki ügyintézés európai rendszere, Belgiumban de facto szabványnak minősül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-678">Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-679">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-679">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-680">Az Isabel-klienssel való integráció már nincs forgalomban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-680">Integration with Isabel client has been discontinued.</span></span>   |
+| <span data-ttu-id="c77f5-681">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-681">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-682">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-682">No.</span></span> <span data-ttu-id="c77f5-683">A már nem használt fizetési formátumok helyébe ISO20022 átutalási fizetési formátum lépett Belgium esetében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-683">The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</span></span> |
+| <span data-ttu-id="c77f5-684">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-684">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-685">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-685">Accounts payable</span></span>     |
+| <span data-ttu-id="c77f5-686">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-686">**Status**</span></span>                         | <span data-ttu-id="c77f5-687">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-687">Deprecated: A removal date has not been set for this feature.</span></span>    |
+
+### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a><span data-ttu-id="c77f5-688">A számlatükör és a számviteli szabályok módosulása Spanyolország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-688">Modifications in the chart of accounts and accounting rules for Spain</span></span>
+
+<span data-ttu-id="c77f5-689">Ez a funkció a számlatükör és a számviteli szabályok változásaihoz használatos Spanyolországban esetében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-689">This feature is used for changes in the chart of accounts and accounting rules in Spain.</span></span> <span data-ttu-id="c77f5-690">Leképezi a számlákat, hogy segítsen a régi számlatükröt az új számlatükörré alakítani, és összehasonlítja az előző pénzügyi évet az új pénzügyi évvel még akkor is, ha azokhoz eltérő számlaszámokat rendeltek.</span><span class="sxs-lookup"><span data-stu-id="c77f5-690">It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-691">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-691">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-692">Korlátozott felhasználás</span><span class="sxs-lookup"><span data-stu-id="c77f5-692">Limited usage</span></span>                                                  |
+| <span data-ttu-id="c77f5-693">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-693">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-694">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-694">No</span></span>                                                             |
+| <span data-ttu-id="c77f5-695">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-695">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-696">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-696">General ledger</span></span>                                                 |
+| <span data-ttu-id="c77f5-697">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-697">**Status**</span></span>                         | <span data-ttu-id="c77f5-698">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-698">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="pagamento-fornittori-vendor-payment-format"></a><span data-ttu-id="c77f5-699">Pagamento Fornittori szállítói fizetési formátum</span><span class="sxs-lookup"><span data-stu-id="c77f5-699">Pagamento Fornittori vendor payment format</span></span>
+
+<span data-ttu-id="c77f5-700">Hagyományos olasz fizetési formátum átutalásokhoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-700">Legacy Italian payment format for credit transfers.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-701">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-701">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-702">A fizetési formátum már nem használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-702">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="c77f5-703">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-703">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-704">Igen, ISO20022 átutalási fizetési formátum Olaszország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-704">Yes, ISO20022 Credit transfer payment format for Italy</span></span>         |
+| <span data-ttu-id="c77f5-705">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-705">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-706">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-706">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-707">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-707">**Status**</span></span>                         | <span data-ttu-id="c77f5-708">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-708">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="payment-export-formats-for-estonia"></a><span data-ttu-id="c77f5-709">Kifizetésexportálás formátuma Észtország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-709">Payment export formats for Estonia</span></span>
+
+<span data-ttu-id="c77f5-710">Banki fizetés exportálása a Telehansa és Teleservice formátumot használja.</span><span class="sxs-lookup"><span data-stu-id="c77f5-710">The Telehansa and Teleservice formats are used for bank payment export.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-711">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-711">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-712">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-712">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="c77f5-713">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-713">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-714">Igen, ISO20022 átutalási fizetési formátum Észtország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-714">Yes, ISO20022 Credit transfer payment format for Estonia</span></span>       |
+| <span data-ttu-id="c77f5-715">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-715">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-716">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-716">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-717">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-717">**Status**</span></span>                         | <span data-ttu-id="c77f5-718">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-718">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="payment-file-archive-for-norway"></a><span data-ttu-id="c77f5-719">Fizetési fájlarchívum Norvégia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-719">Payment file archive for Norway</span></span>
+
+<span data-ttu-id="c77f5-720">Amikor fizetési fájlok jönnek létre, a fájlarchívum automatikusan archivál minden létrehozott fájlt, még akkor is fájlokat korábban írták vagy olvasták.</span><span class="sxs-lookup"><span data-stu-id="c77f5-720">When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-721">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-721">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-722">Másik szolgáltatás váltotta fel</span><span class="sxs-lookup"><span data-stu-id="c77f5-722">Replaced by another feature</span></span>                                        |
+| <span data-ttu-id="c77f5-723">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-723">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-724">Igen. Elektronikus jelentéskészítési archivált feladatok</span><span class="sxs-lookup"><span data-stu-id="c77f5-724">Yes, Electronic reporting archived jobs</span></span>                            |
+| <span data-ttu-id="c77f5-725">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-725">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-726">Kötelezettségek, kinnlevőségek, a szervezet felügyelete</span><span class="sxs-lookup"><span data-stu-id="c77f5-726">Accounts payable, Accounts receivable, Organization administration</span></span> |
+| <span data-ttu-id="c77f5-727">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-727">**Status**</span></span>                         | <span data-ttu-id="c77f5-728">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-728">Deprecated: A removal date has not been set for this feature.</span></span>     |
+
+### <a name="payment-import-formats-for-estonia"></a><span data-ttu-id="c77f5-729">Kifizetésimportálás formátuma Észtország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-729">Payment import formats for Estonia</span></span>
+
+<span data-ttu-id="c77f5-730">Banki fizetés importálása a TeleTeenus formátumot használja.</span><span class="sxs-lookup"><span data-stu-id="c77f5-730">The Telehansa and TeleTeenus formats are used for bank payment import.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-731">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-731">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-732">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-732">The payment formats are no longer used.</span></span>                                                    |
+| <span data-ttu-id="c77f5-733">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-733">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-734">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-734">No.</span></span> <span data-ttu-id="c77f5-735">A formátumok helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-735">The formats will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="c77f5-736">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-736">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-737">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-737">Accounts receivable</span></span>                                                                        |
+| <span data-ttu-id="c77f5-738">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-738">**Status**</span></span>                         | <span data-ttu-id="c77f5-739">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-739">Deprecated: A removal date has not been set for this feature.</span></span>                             |
+
+### <a name="payroll-information-in-human-resources"></a><span data-ttu-id="c77f5-740">Bérlistaadatok az Emberi Erőforrásokban</span><span class="sxs-lookup"><span data-stu-id="c77f5-740">Payroll information in Human Resources</span></span>
+
+<span data-ttu-id="c77f5-741">Emberi Erőforrások Bérlistaadatai</span><span class="sxs-lookup"><span data-stu-id="c77f5-741">Human Resources Payroll information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-742">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-742">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-743">Ezt a funkciót az alapvető Bérlista és az Emberi Erőforrások lapokok váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-743">This functionality has been replaced by core Payroll and Human Resources pages.</span></span>  |
+| <span data-ttu-id="c77f5-744">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-744">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-745">A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-745">**Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</span></span> <span data-ttu-id="c77f5-746">Ez a funkció a **Humán Erőforrások 1** \> **Bérlista**-konfigurációs kulcs használatával érhető el.</span><span class="sxs-lookup"><span data-stu-id="c77f5-746">This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key.</span></span> |
+| <span data-ttu-id="c77f5-747">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-747">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-748">Emberi Erőforrások, Bérlista</span><span class="sxs-lookup"><span data-stu-id="c77f5-748">Human Resources, Payroll</span></span>   |
+| <span data-ttu-id="c77f5-749">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-749">**Status**</span></span>                         | <span data-ttu-id="c77f5-750">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-750">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="performance-management-goal-workflow"></a><span data-ttu-id="c77f5-751">Teljesítménymenedzsment, célok munkafolyamata</span><span class="sxs-lookup"><span data-stu-id="c77f5-751">Performance management goal workflow</span></span>
+
+<span data-ttu-id="c77f5-752">A teljesítménymenedzsment a célok kezelését tartalmazza, és integrálja a teljeseítményellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="c77f5-752">Performance management includes goal management and integration with performance reviews.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-753">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-753">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-754">A teljesítménymenedzsment át lett tervezve, és a célok oldalainak száma csökkent a folyamat egyszerűsítése érdekében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-754">Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</span></span>                 |
+| <span data-ttu-id="c77f5-755">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-755">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-756">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-756">No.</span></span> <span data-ttu-id="c77f5-757">A célok láthatók a vezetők számára az Vezetők önkiszolgáló portálján; ezeket a vezető módosíthatja és megtekintheti.</span><span class="sxs-lookup"><span data-stu-id="c77f5-757">Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</span></span> |
+| <span data-ttu-id="c77f5-758">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-758">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-759">Emberierőforrás-menedzselés</span><span class="sxs-lookup"><span data-stu-id="c77f5-759">Human capital management</span></span>       |
+| <span data-ttu-id="c77f5-760">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-760">**Status**</span></span>                         | <span data-ttu-id="c77f5-761">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-761">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a><span data-ttu-id="c77f5-762">PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-762">Postgirot and Postgirot Utland payment formats for Sweden</span></span>
+
+<span data-ttu-id="c77f5-763">PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében.</span><span class="sxs-lookup"><span data-stu-id="c77f5-763">Postgirot and Postgirot Utland payment formats for Sweden.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-764">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-764">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-765">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-765">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="c77f5-766">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-766">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-767">Igen, ISO20022 átutalási fizetési formátum Svédország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-767">Yes, ISO20022 Credit transfer payment format for Sweden</span></span>        |
+| <span data-ttu-id="c77f5-768">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-768">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-769">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-769">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-770">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-770">**Status**</span></span>                         | <span data-ttu-id="c77f5-771">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-771">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="radio-frequency-identifier"></a><span data-ttu-id="c77f5-772">Rádiófrekvenciás azonosító</span><span class="sxs-lookup"><span data-stu-id="c77f5-772">Radio frequency identifier</span></span>
+
+<span data-ttu-id="c77f5-773">A rádiófrekvenciás azonosítás (Radio Frequency Identification – RFID) egy olyan adatgyűjtési technológia, amely az azonosítási adatok tárolásához elektronikus címkéket használ, az azonosítási adatok beolvasásához pedig nem közvetlen rálátású olvasót.</span><span class="sxs-lookup"><span data-stu-id="c77f5-773">Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-774">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-774">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-775">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-775">Low customer usage and a limited feature set.</span></span>   |
+| <span data-ttu-id="c77f5-776">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-776">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-777">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-777">No</span></span>                                              |
+| <span data-ttu-id="c77f5-778">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-778">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-779">Készletgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="c77f5-779">Inventory management</span></span>                            |
+| <span data-ttu-id="c77f5-780">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-780">**Status**</span></span>                         | <span data-ttu-id="c77f5-781">Eltávolítva az Dynamics 365 for Operations 1611-es verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-781">Removed as of Dynamics 365 for Operations 1611.</span></span> |
+
+### <a name="report-about-state-invoices-numbering-for-latvia"></a><span data-ttu-id="c77f5-782">Állami számlák számozására vonatkozó jelentés Lettország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-782">Report about state invoices numbering for Latvia</span></span>
+
+<span data-ttu-id="c77f5-783">A lett jogszabályok szigorú szabályokat írnak elő az értékesítési számlák számozására vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="c77f5-783">Latvian legislation provides specific rules about the numbering of sales invoices.</span></span> <span data-ttu-id="c77f5-784">A funkciók segítségével egyedi számokat lehet az értékesítési számlákhoz rendelni, a felhasználó vagy felhasználói csoport alapján.</span><span class="sxs-lookup"><span data-stu-id="c77f5-784">The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</span></span> <span data-ttu-id="c77f5-785">Ezután lehet létrehozni egy jelentést vagy egy XML-fájlt.</span><span class="sxs-lookup"><span data-stu-id="c77f5-785">You can then generate a report or an XML file.</span></span> <span data-ttu-id="c77f5-786">A felhasznált számlaszámokról jelentést is lehet nyomtatni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-786">You can also print a report about invoice numbers that are used.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-787">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-787">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-788">Az állami számlák számozását már nem kell fenntartani.</span><span class="sxs-lookup"><span data-stu-id="c77f5-788">The state invoice numbering no longer has to be maintained.</span></span> <span data-ttu-id="c77f5-789">A felhasznált számlaszámokra vonatkozó jelentésre már nincs szükség.</span><span class="sxs-lookup"><span data-stu-id="c77f5-789">The report about used invoice numbers is no longer required.</span></span> |
+| <span data-ttu-id="c77f5-790">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-790">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-791">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-791">No</span></span>       |
+| <span data-ttu-id="c77f5-792">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-792">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-793">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-793">Accounts receivable</span></span>    |
+| <span data-ttu-id="c77f5-794">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-794">**Status**</span></span>                         | <span data-ttu-id="c77f5-795">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-795">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a><span data-ttu-id="c77f5-796">Valamely vállalat vezetője és főkönyvelője nevének beállítása Litvánia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-796">Set up the names of the manager and general accountant of a company for Lithuania</span></span>
+
+<span data-ttu-id="c77f5-797">A vállalat vezetőjének és főkönyvelőjének nevét a vállalati adatok között lehet megadni, és fel lehet használni különböző, helyi nyomtatott jelentésekben.</span><span class="sxs-lookup"><span data-stu-id="c77f5-797">The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-798">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-798">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-799">Másik szolgáltatás váltotta fel</span><span class="sxs-lookup"><span data-stu-id="c77f5-799">Replaced by another feature</span></span>                                     |
+| <span data-ttu-id="c77f5-800">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-800">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-801">Igen, a tisztviselők beállítása ugyanerre a célra használható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-801">Yes, the setup of officials can be used for the same purpose.</span></span>   |
+| <span data-ttu-id="c77f5-802">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-802">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-803">Kötelezettségek, Kinnlevőségek, Készpénz- és bankkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-803">Accounts payable, Accounts receivable, Cash and bank management</span></span> |
+| <span data-ttu-id="c77f5-804">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-804">**Status**</span></span>                         | <span data-ttu-id="c77f5-805">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-805">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="shipping-carrier-interface"></a><span data-ttu-id="c77f5-806">Szállítmányozói felületek</span><span class="sxs-lookup"><span data-stu-id="c77f5-806">Shipping carrier interface</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-807">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-807">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-808">Máshol már meglévő funkció</span><span class="sxs-lookup"><span data-stu-id="c77f5-808">Duplicate functionality</span></span>   |
+| <span data-ttu-id="c77f5-809">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-809">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-810">A szállításkezelés részlegesen lecserélte</span><span class="sxs-lookup"><span data-stu-id="c77f5-810">Partially replaced by Transportation management</span></span> |
+| <span data-ttu-id="c77f5-811">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-811">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-812">Értékesítés és marketing, Készletkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-812">Sales and marketing, Inventory management</span></span>  |
+| <span data-ttu-id="c77f5-813">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-813">**Status**</span></span>                         | <span data-ttu-id="c77f5-814">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-814">Removed as of Dynamics 365 for Operations version 1611.</span></span>  |
+
+### <a name="telepay-payment-formats-for-norway"></a><span data-ttu-id="c77f5-815">TelePay fizetési formátumok Norvégia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-815">Telepay payment formats for Norway</span></span>
+
+<span data-ttu-id="c77f5-816">TelePay fizetési formátumok közé tartozik a szállítói fizetés exportálása (átutalás) és a vevői kifizetési gyűjtemény (beszedési megbízás).</span><span class="sxs-lookup"><span data-stu-id="c77f5-816">Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-817">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-817">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-818">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-818">The payment formats are no longer used.</span></span>                                                        |
+| <span data-ttu-id="c77f5-819">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-819">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-820">Igen, ISO20022 átutalási fizetési formátum és AvtaleGiro vevői kifizetési formátum Norvégia esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-820">Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</span></span> |
+| <span data-ttu-id="c77f5-821">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-821">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-822">Kötelezettség és kinnlevőség</span><span class="sxs-lookup"><span data-stu-id="c77f5-822">Accounts payable, Accounts receivable</span></span>                                                          |
+| <span data-ttu-id="c77f5-823">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-823">**Status**</span></span>                         | <span data-ttu-id="c77f5-824">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-824">Deprecated: A removal date has not been set for this feature.</span></span>                                 |
+
+### <a name="vendor-payment-export-formats-for-finland"></a><span data-ttu-id="c77f5-825">Szállítói fizetésexportálási formátumok Finnország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-825">Vendor payment export formats for Finland</span></span>
+
+<span data-ttu-id="c77f5-826">Finnországban két formátum érhető el fizetések exportálásához.</span><span class="sxs-lookup"><span data-stu-id="c77f5-826">Two formats for exporting payments are available for Finland.</span></span> <span data-ttu-id="c77f5-827">LM02 (FI) belföldi fizetésekhez használható, az LUM2 (FI) pedig külföldi fizetésekhez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-827">LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-828">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-828">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-829">A fizetési formátumok már nem használhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-829">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="c77f5-830">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-830">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-831">Igen, ISO20022 átutalási fizetési formátum Finnország esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-831">Yes, ISO20022 Credit transfer payment format for Finland</span></span>       |
+| <span data-ttu-id="c77f5-832">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-832">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-833">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-833">Accounts payable</span></span>                                               |
+| <span data-ttu-id="c77f5-834">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-834">**Status**</span></span>                         | <span data-ttu-id="c77f5-835">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-835">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="warehouse-management-ii"></a><span data-ttu-id="c77f5-836">Raktárkezelés II</span><span class="sxs-lookup"><span data-stu-id="c77f5-836">Warehouse management II</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-837">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-837">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-838">A korábban a **Készletkezelés** modulban elérhető Raktárkezelés II megoldás (WMS II) ugyanazokkal a funkciókkal rendelkezik, mint a Microsoft Dynamics AX 2012 R3 verzióban kiadott **Raktárkezelés** modul.</span><span class="sxs-lookup"><span data-stu-id="c77f5-838">The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.</span></span>                                                                         |
+| <span data-ttu-id="c77f5-839">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-839">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-840">Az AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 és Dynamics AX 2012 R3 CU9 verziókban kiadott **Raktárkezelés** modul váltja fel a Raktárkezelés II szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="c77f5-840">The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</span></span> <span data-ttu-id="c77f5-841">Az új modul több speciális funkcióval és rugalmasabb raktárkezelési folyamatokkal rendelkezik, mint a Raktárkezelés II funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-841">The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</span></span> |
+| <span data-ttu-id="c77f5-842">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-842">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-843">Készletkezelés, értékesítés és marketing, beszerzés és forrás</span><span class="sxs-lookup"><span data-stu-id="c77f5-843">Inventory management, Sales and marketing, Procurement and sourcing</span></span>   |
+| <span data-ttu-id="c77f5-844">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-844">**Status**</span></span>                         | <span data-ttu-id="c77f5-845">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-845">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="worker-reminders-in-human-resources"></a><span data-ttu-id="c77f5-846">Dolgozói emlékeztetők az Emberi Erőforrásokban</span><span class="sxs-lookup"><span data-stu-id="c77f5-846">Worker reminders in Human Resources</span></span>
+
+<span data-ttu-id="c77f5-847">Emberi Erőforrások Bérlistaadatai</span><span class="sxs-lookup"><span data-stu-id="c77f5-847">Human Resources Payroll information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-848">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-848">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-849">Alacsony használat</span><span class="sxs-lookup"><span data-stu-id="c77f5-849">Low usage</span></span>                                                           |
+| <span data-ttu-id="c77f5-850">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-850">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-851">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-851">No</span></span>                                                                  |
+| <span data-ttu-id="c77f5-852">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-852">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-853">Emberi erőforrások</span><span class="sxs-lookup"><span data-stu-id="c77f5-853">Human resources</span></span>                                                     |
+| <span data-ttu-id="c77f5-854">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-854">**Status**</span></span>                         | <span data-ttu-id="c77f5-855">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve</span><span class="sxs-lookup"><span data-stu-id="c77f5-855">Removed as of Dynamics 365 for Operations version 1611</span></span> |
+
+### <a name="workflow-for-creating-goals"></a><span data-ttu-id="c77f5-856">Célok létrehozásának munkafolyamata</span><span class="sxs-lookup"><span data-stu-id="c77f5-856">Workflow for creating goals</span></span>
+
+<span data-ttu-id="c77f5-857">A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyamat a számos olyan munkafolyamat egyike, amely rendelkezésre állt a teljesítménykezelési folyamat koordinálásának elősegítésére.</span><span class="sxs-lookup"><span data-stu-id="c77f5-857">A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-858">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-858">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-859">A teljesítménykezelést teljesen újraterveztük a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-859">Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</span></span>     |
+| <span data-ttu-id="c77f5-860">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-860">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-861">Az átalakított teljesítménymendzsment funkciója segítségével jobban lehet felügyelni a célok tartalmát, az előrehaladás nyomon követéséhez használt méréseket és a kiegészítő dokumentumok csatolását.</span><span class="sxs-lookup"><span data-stu-id="c77f5-861">The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</span></span> <span data-ttu-id="c77f5-862">A célok sablonként tárolhatók, és ezután újra felhasználhatók.</span><span class="sxs-lookup"><span data-stu-id="c77f5-862">Goals can be stored as templates and then reused.</span></span> <span data-ttu-id="c77f5-863">Ezen funkció segítségével gyorsabban beállíthatók további célok az alkalmazottak számára.</span><span class="sxs-lookup"><span data-stu-id="c77f5-863">This feature can help you set up additional goals for your employees more quickly.</span></span> |
+| <span data-ttu-id="c77f5-864">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-864">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-865">Emberierőforrás-menedzselés</span><span class="sxs-lookup"><span data-stu-id="c77f5-865">Human capital management</span></span>                 |
+| <span data-ttu-id="c77f5-866">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-866">**Status**</span></span>                         | <span data-ttu-id="c77f5-867">Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-867">Removed as of Dynamics 365 for Operations version 1611.</span></span> |
+
+## <a name="dynamics-ax-70"></a><span data-ttu-id="c77f5-868">Dynamics AX 7.0</span><span class="sxs-lookup"><span data-stu-id="c77f5-868">Dynamics AX 7.0</span></span> 
+
+
+### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a><span data-ttu-id="c77f5-869">Szállítói számla módosításainak érvénytelenítésére vonatkozó képesség</span><span class="sxs-lookup"><span data-stu-id="c77f5-869">Ability to cancel changes to a vendor invoice</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-870">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-870">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-871">Teljesítménynövekedés.</span><span class="sxs-lookup"><span data-stu-id="c77f5-871">Performance enhancement</span></span>        |
+| <span data-ttu-id="c77f5-872">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-872">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-873">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-873">No</span></span>                             |
+| <span data-ttu-id="c77f5-874">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-874">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-875">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-875">Accounts payable</span></span>               |
+| <span data-ttu-id="c77f5-876">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-876">**Status**</span></span>                         | <span data-ttu-id="c77f5-877">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-877">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="aif-axd-and-axbc-integrations"></a><span data-ttu-id="c77f5-878">AIF, AxD és AxBC integrációja</span><span class="sxs-lookup"><span data-stu-id="c77f5-878">AIF, AxD, and AxBC integrations</span></span>
+
+<span data-ttu-id="c77f5-879">Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-879">In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</span></span> <span data-ttu-id="c77f5-880">A Dynamics AX dokumentumokon és .NET Business Connector-on (AxBC) alapuló szolgáltatásokat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-880">Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</span></span> <span data-ttu-id="c77f5-881">Dokumentumok XML használatával hozhatóak létre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-881">A document is created by using XML.</span></span> <span data-ttu-id="c77f5-882">Az XML által tartalmazott fejlécadatok hozzáadásával *üzenet* hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető.</span><span class="sxs-lookup"><span data-stu-id="c77f5-882">The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX.</span></span> <span data-ttu-id="c77f5-883">Dokumentumok például az értékesítési rendelések és a beszerzési rendelések.</span><span class="sxs-lookup"><span data-stu-id="c77f5-883">Examples of documents include sales orders and purchase orders.</span></span> <span data-ttu-id="c77f5-884">Azonban szinte minden entitást (például vevőt) képviselhet dokumentum.</span><span class="sxs-lookup"><span data-stu-id="c77f5-884">However, almost any entity, such as a customer, can be represented by a document.</span></span> <span data-ttu-id="c77f5-885">A dokumentumokon alapuló szolgáltatások az **Axd \<Document\>** osztályokat használják.</span><span class="sxs-lookup"><span data-stu-id="c77f5-885">Services that are based on documents use the **Axd \<Document\>** classes.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-886">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-886">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-887">Az AIF és az AxD-k architektúráját nem sikerült felhőszolgáltatáshoz méretezni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-887">The architecture of AIF and AxDs could not be scaled to a cloud service.</span></span> <span data-ttu-id="c77f5-888">A tömeges importálás során teljesítményproblémák léptek fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-888">There were performance issues around bulk import.</span></span>                                        |
+| <span data-ttu-id="c77f5-889">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-889">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-890">Ezt a szolgáltatást felváltotta az Adatimportálási és -exportálási keretrendszer, amely támogatja az ismétlődő tömeges importálást/exportálást.</span><span class="sxs-lookup"><span data-stu-id="c77f5-890">This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</span></span> <span data-ttu-id="c77f5-891">AxBC esetén a tényleges táblák használatát javasoljuk.</span><span class="sxs-lookup"><span data-stu-id="c77f5-891">For AxBC, we recommend that you use the actual tables.</span></span> |
+| <span data-ttu-id="c77f5-892">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-892">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-893">AxD-k, AxBC-k és AIF</span><span class="sxs-lookup"><span data-stu-id="c77f5-893">AxDs, AxBCs, and AIF</span></span>   |
+| <span data-ttu-id="c77f5-894">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-894">**Status**</span></span>                         | <span data-ttu-id="c77f5-895">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-895">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="billing-code-rate-scripts"></a><span data-ttu-id="c77f5-896">Számlázási kód díjalap parancsfájljai</span><span class="sxs-lookup"><span data-stu-id="c77f5-896">Billing code rate scripts</span></span>
+
+<span data-ttu-id="c77f5-897">Számlázási parancsfájlok számlázási kódokhoz tartozó számlázási díjak kiszámításához használatosak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-897">Billing scripts were used to calculate billing rates for billing codes.</span></span> <span data-ttu-id="c77f5-898">Ezekhez a parancsfájlokhoz egyéni fejlesztés volt szükséges C# vagy Visual Basic programozási nyelvben.</span><span class="sxs-lookup"><span data-stu-id="c77f5-898">This scripts required custom development in the C Sharp or Visual Basic programming language.</span></span> <span data-ttu-id="c77f5-899">A Dynamics AX aktuális verziójában a **Számlázási kód díjalap parancsfájljai** nem támogatottak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-899">In the current version of Dynamics AX, the **billing code rate scripts** are not supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-900">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-900">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-901">Az egyéni C# vagy Visual Basic parancsfájlok támogatása nem elérhető a Dynamics AX 7.0-s verzióban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-901">The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</span></span> |
+| <span data-ttu-id="c77f5-902">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-902">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-903">Nem</span><span class="sxs-lookup"><span data-stu-id="c77f5-903">No</span></span>                                                                                      |
+| <span data-ttu-id="c77f5-904">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-904">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-905">Állami szektor, kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-905">Public sector, Accounts receivable</span></span>                                    |
+| <span data-ttu-id="c77f5-906">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-906">**Status**</span></span>                         | <span data-ttu-id="c77f5-907">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-907">Removed as of Dynamics AX 7.0.</span></span>                                                          |
+
+### <a name="boms-without-bom-versions"></a><span data-ttu-id="c77f5-908">Anyagjegyzékek Anyagjegyzék-verziók nélkül</span><span class="sxs-lookup"><span data-stu-id="c77f5-908">BOMs without BOM versions</span></span>
+
+<span data-ttu-id="c77f5-909">Korábban az **Anyagjegyzék-verziók** konfigurációs kulcs letiltásakor, az anyagjegyzék-verziók (BOM) minden képernyőn rejtett állapotba kerültek, és a rendszer kötelezővé tette a kiadott termékek és anyagjegyzékek közti 1:1 arányú kapcsolatot.</span><span class="sxs-lookup"><span data-stu-id="c77f5-909">When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</span></span> <span data-ttu-id="c77f5-910">A Dynamics AX jelenlegi verziójában az **Anyagjegyzék-verziók** konfigurációs kulcsot nem lehet letiltani.</span><span class="sxs-lookup"><span data-stu-id="c77f5-910">In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-911">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-911">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-912">Anyagjegyzék-verziók konfigurációs kulcsokkal való vezérlése nem méretezhető felhő környezetre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-912">Using a configuration key to control BOM versions doesn't scale in a cloud environment.</span></span> |
+| <span data-ttu-id="c77f5-913">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-913">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-914">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-914">No</span></span>                                                                                      |
+| <span data-ttu-id="c77f5-915">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-915">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-916">Termékinformációk kezelése, Készletkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-916">Product information management, Inventory management</span></span>                                    |
+| <span data-ttu-id="c77f5-917">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-917">**Status**</span></span>                         | <span data-ttu-id="c77f5-918">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-918">Removed as of Dynamics AX 7.0.</span></span>                                                          |
+
+### <a name="brazilian-bordero"></a><span data-ttu-id="c77f5-919">Brazil borderó</span><span class="sxs-lookup"><span data-stu-id="c77f5-919">Brazilian Bordero</span></span>
+
+<span data-ttu-id="c77f5-920">Egyedi fizetési mód brazil vállalatok esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-920">Specific method of payment for Brazilian companies</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-921">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-921">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-922">A Brazil borderó fizetési mód támogatása már nem része a brazil honosításnak</span><span class="sxs-lookup"><span data-stu-id="c77f5-922">Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</span></span> |
+| <span data-ttu-id="c77f5-923">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-923">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-924">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-924">No</span></span>   |
+| <span data-ttu-id="c77f5-925">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-925">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-926">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-926">Accounts payable</span></span>   |
+| <span data-ttu-id="c77f5-927">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-927">**Status**</span></span>                         | <span data-ttu-id="c77f5-928">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-928">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="brazilian-sintegra-statement"></a><span data-ttu-id="c77f5-929">Brazil Sintegra kivonat</span><span class="sxs-lookup"><span data-stu-id="c77f5-929">Brazilian Sintegra statement</span></span>
+
+<span data-ttu-id="c77f5-930">Szövetségi adókimutatás az ICMS adó esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-930">Federal tax statement for ICMS tax</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-931">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-931">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-932">Ez a kimutatás már nem alkalmazható néhány brazil államban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-932">This statement is no longer applicable in some Brazilian states.</span></span> |
+| <span data-ttu-id="c77f5-933">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-933">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-934">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-934">No.</span></span> <span data-ttu-id="c77f5-935">A felhasználók általános elektronikus jelentési eszközt használhatnak a kimutatás beállításához, ha arra bizonyos helyzetekben szükség van.</span><span class="sxs-lookup"><span data-stu-id="c77f5-935">Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</span></span> |
+| <span data-ttu-id="c77f5-936">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-936">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-937">Pénzügyi könyvek</span><span class="sxs-lookup"><span data-stu-id="c77f5-937">Fiscal books</span></span>    |
+| <span data-ttu-id="c77f5-938">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-938">**Status**</span></span>                         | <span data-ttu-id="c77f5-939">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-939">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="brazilian-scan-contingency-mode-for-nf-e"></a><span data-ttu-id="c77f5-940">Brazil SCAN készenléti mód az NF-e esetében</span><span class="sxs-lookup"><span data-stu-id="c77f5-940">Brazilian SCAN contingency mode for NF-e</span></span>
+
+<span data-ttu-id="c77f5-941">A (SCAN) készenléti környezet a Nota Fiscal eletrônica (NF-e) állapotának előállítására, exportálására és importálására szolgál, amikor nem érhető el a Secretaria da Fazenda (SEFAZ) környezet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-941">(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-942">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-942">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-943">Ez a készenléti módszer már nem alkalmazható minden brazil államban</span><span class="sxs-lookup"><span data-stu-id="c77f5-943">This method of contingency is no longer applicable in all Brazilian states</span></span> |
+| <span data-ttu-id="c77f5-944">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-944">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-945">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-945">No</span></span>                                                                          |
+| <span data-ttu-id="c77f5-946">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-946">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-947">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-947">Accounts receivable</span></span>                                                         |
+| <span data-ttu-id="c77f5-948">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-948">**Status**</span></span>                         | <span data-ttu-id="c77f5-949">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-949">Deprecated: A removal date has not been set for this feature.</span></span>              |
+
+### <a name="business-analyzer"></a><span data-ttu-id="c77f5-950">Business Analyzer</span><span class="sxs-lookup"><span data-stu-id="c77f5-950">Business Analyzer</span></span>
+
+<span data-ttu-id="c77f5-951">Ez a mobilalkalmazás lehetővé teszi a felhasználók számára a kulcsfontosságú üzleti mutatók áttekintését.</span><span class="sxs-lookup"><span data-stu-id="c77f5-951">This mobile application let users review key business metrics.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-952">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-952">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-953">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-953">This functionality has been replaced by another feature.</span></span>   |
+| <span data-ttu-id="c77f5-954">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-954">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-955">A Microsoft Power BI Pénzügyi teljesítményfigyelő tartalmi csomagja magába foglalja a Business Analyzer alkalmazásban korábban elérhető kulcsfontosságú üzleti mutatókat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-955">The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</span></span> |
+| <span data-ttu-id="c77f5-956">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-956">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-957">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-957">General ledger</span></span>      |
+| <span data-ttu-id="c77f5-958">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-958">**Status**</span></span>                         | <span data-ttu-id="c77f5-959">Elavult: Az üzleti elemző elavult.</span><span class="sxs-lookup"><span data-stu-id="c77f5-959">Deprecated: The use of Business Analyzer has been deprecated.</span></span>    |
+
+### <a name="business-statistics"></a><span data-ttu-id="c77f5-960">Üzleti statisztikák</span><span class="sxs-lookup"><span data-stu-id="c77f5-960">Business statistics</span></span>
+
+<span data-ttu-id="c77f5-961">Üzleti statisztikai lekérdezések beállítása, amelyek segítségével elemezhető a szervezet teljesítménye.</span><span class="sxs-lookup"><span data-stu-id="c77f5-961">The setup of business statistics inquiries that can help you analyze the performance of the organization</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-962">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-962">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-963">Üzleti intelligencia (BI) elavult megközelítése, alacsony vevői használat és a korlátozott szolgáltatási kör.</span><span class="sxs-lookup"><span data-stu-id="c77f5-963">Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</span></span> |
+| <span data-ttu-id="c77f5-964">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-964">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-965">Új Üzleti Intelligencia megoldások a Dynamics AX jelenlegi verziójában</span><span class="sxs-lookup"><span data-stu-id="c77f5-965">New BI solutions for the current version of Dynamics AX</span></span>                                      |
+| <span data-ttu-id="c77f5-966">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-966">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-967">Beszerzés és forrás, Kötelezettségek, Értékesítés és marketing, Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-967">Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</span></span>         |
+| <span data-ttu-id="c77f5-968">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-968">**Status**</span></span>                         | <span data-ttu-id="c77f5-969">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-969">Removed as of Dynamics AX 7.0.</span></span>                                                               |
+
+### <a name="change-document-date-function-in-invoice-approval-journal"></a><span data-ttu-id="c77f5-970">A Számla-jóváhagyási naplóban található Dokumentum dátumának módosítása funkció</span><span class="sxs-lookup"><span data-stu-id="c77f5-970">Change document date function in Invoice approval journal</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-971">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-971">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-972">Alacsony használat</span><span class="sxs-lookup"><span data-stu-id="c77f5-972">Low usage</span></span>                                                               |
+| <span data-ttu-id="c77f5-973">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-973">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-974">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-974">Yes.</span></span> <span data-ttu-id="c77f5-975">A feladott szállítói tranzakció dokumentumdátuma módosítható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-975">The document date on the posted vendor transaction can be changed.</span></span> |
+| <span data-ttu-id="c77f5-976">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-976">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-977">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-977">Accounts payable</span></span>                                                        |
+| <span data-ttu-id="c77f5-978">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-978">**Status**</span></span>                         | <span data-ttu-id="c77f5-979">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-979">Removed as of Dynamics AX 7.0.</span></span>                                          |
+
+### <a name="clieop03-payment-format-for-the-netherlands"></a><span data-ttu-id="c77f5-980">A holland ClieOp03 fizetési formátum</span><span class="sxs-lookup"><span data-stu-id="c77f5-980">ClieOp03 payment format for the Netherlands</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-981">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-981">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-982">A formátum már nem alkalmazható Hollandiában, mivel azt felváltotta a SEPA funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-982">The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</span></span> |
+| <span data-ttu-id="c77f5-983">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-983">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-984">SEPA exportkifizetések</span><span class="sxs-lookup"><span data-stu-id="c77f5-984">SEPA payments export</span></span>  |
+| <span data-ttu-id="c77f5-985">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-985">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-986">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-986">All modules</span></span>     |
+| <span data-ttu-id="c77f5-987">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-987">**Status**</span></span>                         | <span data-ttu-id="c77f5-988">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-988">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="compliance-center"></a><span data-ttu-id="c77f5-989">Megfelelési Központ</span><span class="sxs-lookup"><span data-stu-id="c77f5-989">Compliance Center</span></span>
+
+<span data-ttu-id="c77f5-990">A Megfelelési Központ egy Enterprise Portal webhely volt, amely a Sarbanes-Oxley törvénnyel kapcsolatos megfelelési kezdeményezések dokumentációs követelményeinek kezelésére szolgált.</span><span class="sxs-lookup"><span data-stu-id="c77f5-990">The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-991">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-991">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-992">Vevői használat hiánya.</span><span class="sxs-lookup"><span data-stu-id="c77f5-992">Lack of customer usage.</span></span> <span data-ttu-id="c77f5-993">A Microsoft SharePoint magában foglalja ugyanazt a képességet, ami korábban a Megfelelési Központban volt elérhető.</span><span class="sxs-lookup"><span data-stu-id="c77f5-993">Microsoft SharePoint includes the same capability that was available in the Compliance Center.</span></span> |
+| <span data-ttu-id="c77f5-994">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-994">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-995">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-995">No</span></span>   |
+| <span data-ttu-id="c77f5-996">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-996">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-997">Megfelelés és belső ellenőrzés</span><span class="sxs-lookup"><span data-stu-id="c77f5-997">Compliance and internal controls</span></span>  |
+| <span data-ttu-id="c77f5-998">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-998">**Status**</span></span>                         | <span data-ttu-id="c77f5-999">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-999">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="connector-for-microsoft-dynamics"></a><span data-ttu-id="c77f5-1000">Csatlakozó a Microsoft Dynamics szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="c77f5-1000">Connector for Microsoft Dynamics</span></span>
+
+<span data-ttu-id="c77f5-1001">Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származó kulcsadatokat a Microsoft Dynamics ERP alkalmazásokba.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1001">This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1002">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1002">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1003">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1003">This functionality has been replaced by another feature.</span></span> |
+| <span data-ttu-id="c77f5-1004">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1004">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1005">Common Data Service</span><span class="sxs-lookup"><span data-stu-id="c77f5-1005">Common data service</span></span>                                      |
+| <span data-ttu-id="c77f5-1006">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1006">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1007">Csatlakozó a Microsoft Dynamics szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="c77f5-1007">Connector for Microsoft Dynamics</span></span>                         |
+| <span data-ttu-id="c77f5-1008">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1008">**Status**</span></span>                         | <span data-ttu-id="c77f5-1009">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1009">Removed as of Dynamics AX 7.0.</span></span>                           |
+
+### <a name="container-unit-and-multi-dimension-on-hand"></a><span data-ttu-id="c77f5-1010">Tárolóegység és a készleten lévő több dimenzió</span><span class="sxs-lookup"><span data-stu-id="c77f5-1010">Container unit and multi dimension on-hand</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1011">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1011">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1012">Máshol már meglévő funkció</span><span class="sxs-lookup"><span data-stu-id="c77f5-1012">Duplicate functionality</span></span> |
+| <span data-ttu-id="c77f5-1013">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1013">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1014">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1014">Yes.</span></span> <span data-ttu-id="c77f5-1015">Az AX 2012 óta, ezt a funkciót az összesített kötegrendelések szolgáltatáskészlet váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1015">Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</span></span> <span data-ttu-id="c77f5-1016">Ez a szolgáltatáskészlet tartalmazza az egyesített készletnézetet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1016">This feature set includes the consolidated on-hand view.</span></span> |
+| <span data-ttu-id="c77f5-1017">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1017">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1018">Termékinformációk kezelése, Gyártásvezérlés, Készletkezelés, Értékesítés és marketing</span><span class="sxs-lookup"><span data-stu-id="c77f5-1018">Product information management, Production control, Inventory management, Sales and marketing</span></span>  |
+| <span data-ttu-id="c77f5-1019">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1019">**Status**</span></span>                         | <span data-ttu-id="c77f5-1020">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1020">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="cue-group-metadata"></a><span data-ttu-id="c77f5-1021">Kötegcsoport-metaadatok</span><span class="sxs-lookup"><span data-stu-id="c77f5-1021">Cue group metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1022">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1022">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1023">Kötegcsoportok használatával korábban egy vagy több Köteget lehetett megjeleníteni az Adatterületen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1023">Cue groups were used to display one or more Cues in the FactBox area.</span></span> <span data-ttu-id="c77f5-1024">A feltöltés korlátozottsága mellett teljesítményproblémák is felléptek, mivel egy szülőűrlapon történő rekordváltoztatás a Kötegcsoport minden egyes Kötegéhez létrehozott egy lekérdezést.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1024">There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</span></span> |
+| <span data-ttu-id="c77f5-1025">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1025">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1026">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1026">No</span></span>      |
+| <span data-ttu-id="c77f5-1027">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1027">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1028">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1028">All modules</span></span>    |
+| <span data-ttu-id="c77f5-1029">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1029">**Status**</span></span>                         | <span data-ttu-id="c77f5-1030">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1030">Removed as of Dynamics AX 7.0.</span></span>  |
+
+### <a name="cue-metadata"></a><span data-ttu-id="c77f5-1031">Köteg-metaadatok</span><span class="sxs-lookup"><span data-stu-id="c77f5-1031">Cue metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1032">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1032">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1033">A köteg-metaadatok információk számlálására vagy összesítésére korlátozódtak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1033">Cue metadata was limited to count or sum information.</span></span>    |
+| <span data-ttu-id="c77f5-1034">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1034">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1035">Annak érdekében, hogy a modellezéshez nagyobb rugalmasságot biztosítsunk, bevezettük a csempe-metaadatokat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1035">Tile metadata was introduced to provide more flexibility for modeling.</span></span> <span data-ttu-id="c77f5-1036">Modellezhet például aktuális számlálókat, navigációt, valamint fő teljesítménymutatókat (KPI-ket).</span><span class="sxs-lookup"><span data-stu-id="c77f5-1036">For example, you can model current counts, navigation, and key performance indicators (KPIs).</span></span> <span data-ttu-id="c77f5-1037">A Köteg-metaadatokat közvetlenül helyettesítik a Csempeszámláló metaadatai.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1037">Count tile metadata is the direct replacement of the Cue metadata.</span></span> |
+| <span data-ttu-id="c77f5-1038">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1038">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1039">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1039">All modules</span></span>           |
+| <span data-ttu-id="c77f5-1040">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1040">**Status**</span></span>                         | <span data-ttu-id="c77f5-1041">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve</span><span class="sxs-lookup"><span data-stu-id="c77f5-1041">Removed as of Dynamics AX 7.0</span></span>      |
+
+### <a name="danish-check-format"></a><span data-ttu-id="c77f5-1042">Dán csekkformátum</span><span class="sxs-lookup"><span data-stu-id="c77f5-1042">Danish check format</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1043">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1043">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1044">A dán csekkformátum elrendezésének támogatása megszűnt, a jelentést eltávolítottuk a dán honosításból.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1044">Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</span></span> |
+| <span data-ttu-id="c77f5-1045">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1045">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1046">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1046">No</span></span>    |
+| <span data-ttu-id="c77f5-1047">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1047">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1048">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1048">All modules</span></span>    |
+| <span data-ttu-id="c77f5-1049">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1049">**Status**</span></span>                         | <span data-ttu-id="c77f5-1050">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1050">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="data-partitions"></a><span data-ttu-id="c77f5-1051">Adatpartíciók</span><span class="sxs-lookup"><span data-stu-id="c77f5-1051">Data partitions</span></span>
+
+<span data-ttu-id="c77f5-1052">Az adatpartíciók az adatok logikus elkülönítését biztosítják a Microsoft Dynamics AX adatbázisában.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1052">Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1053">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1053">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1054">Az adatpartíciókat a Microsoft Dynamics AX 2012 R2 változatában vezették be adatok elkülönítéséhez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1054">Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</span></span> <span data-ttu-id="c77f5-1055">Általános esetben a vállalat leányvállalatokkal rendelkezik, és egy leányvállalat adatait nem láthatja egy másik leányvállalat, annak ellenére, hogy mindkét leányvállalatot azonos informatikai részleg kezeli.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1055">In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</span></span> <span data-ttu-id="c77f5-1056">Azonban további parancsfájlok és kezelési többletköltség voltak szükségesek új partíciók létrehozására és azok adatokkal való feltöltésére, és a partíció adatainak biztonsági mentésére.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1056">However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</span></span> <span data-ttu-id="c77f5-1057">A felhőben, ahol hozzáférésünk van platformhoz mint szolgáltatáshoz (PaaS), adatbázis-szolgáltatáshoz (Microsoft Azure SQL Database), sokkal hatékonyabb az adatbázist elkülönítési tárolóként használni, mint a elkülönítést végezni a programon belül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1057">In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</span></span> <span data-ttu-id="c77f5-1058">Függetlenül attól, hogy adatpartíció szükségesek leányvállalatoknak, több bérlőnek vagy csak mérlegelésre, úgy véljük, hogy az esetek jobban kezelhetők több Finance and Operations példánnyal.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1058">Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</span></span> |
+| <span data-ttu-id="c77f5-1059">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1059">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1060">Az adatpartíciókat használó vevőknek a Finance and Operations több példányát kell használniuk, ha az adatbázis szintű elkülönítése kritikus fontosságú.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1060">Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</span></span>    |
+| <span data-ttu-id="c77f5-1061">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1061">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1062">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1062">All modules</span></span>  |
+| <span data-ttu-id="c77f5-1063">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1063">**Status**</span></span>                         | <span data-ttu-id="c77f5-1064">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1064">Removed as of Dynamics AX 7.0.</span></span>  |
+
+
+### <a name="database-and-file-share-storage-for-attachments"></a><span data-ttu-id="c77f5-1065">Adatbázis és fájlmegosztás tárolása a mellékletek számára</span><span class="sxs-lookup"><span data-stu-id="c77f5-1065">Database and file share storage for attachments</span></span>
+
+<span data-ttu-id="c77f5-1066">A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az adatbázisban és a fájlmegosztásokban.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1066">Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</span></span> <span data-ttu-id="c77f5-1067">Ezek a lehetőségek a továbbiakban nem támogatottak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1067">Both of those options are no longer supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1068">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1068">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1069">A fájlmegosztással történő tárolás a továbbiakban már nem támogatott, mert a felhőalapú tárolási környezet nem tud kommunikálni a helyi fájlmegosztásokkal.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1069">Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</span></span> <span data-ttu-id="c77f5-1070">Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1070">Database storage has been deprecated in favor of Azure Blob storage.</span></span> <span data-ttu-id="c77f5-1071">Az Azure Blob-tárolás megegyezik az adatbázisban való tárolással, mivel a dokumentumok elérése csak a Dynamics 365 for Finance and Operations ügyfélképernyőkön keresztül történhet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1071">Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</span></span> <span data-ttu-id="c77f5-1072">Ez a megoldás azzal a plusz előnnyel jár, hogy olyan tárhelyet kínál, amely nem befolyásolja negatívan az adatbázis teljesítményét.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1072">This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</span></span> <span data-ttu-id="c77f5-1073">A Blob-tárolás a dokumentumkezelés alapértelmezett tárolási mechanizmusa, és azonnal működik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1073">Blob storage is the default storage mechanism for Document Management and works immediately.</span></span> |
+| <span data-ttu-id="c77f5-1074">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1074">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1075">Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1075">Database storage has been deprecated in favor of Azure Blob storage.</span></span>   |
+| <span data-ttu-id="c77f5-1076">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1076">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1077">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1077">All modules</span></span>  |
+| <span data-ttu-id="c77f5-1078">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1078">**Status**</span></span>                         | <span data-ttu-id="c77f5-1079">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1079">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="delimitation"></a><span data-ttu-id="c77f5-1080">Elválasztás</span><span class="sxs-lookup"><span data-stu-id="c77f5-1080">Delimitation</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1081">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1081">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1082">A funkció hasznossága nem mutatható ki.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1082">No use of the functionality was found.</span></span> |
+| <span data-ttu-id="c77f5-1083">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1083">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1084">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1084">No</span></span>                                     |
+| <span data-ttu-id="c77f5-1085">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1085">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1086">Munkaidő és jelenlét</span><span class="sxs-lookup"><span data-stu-id="c77f5-1086">Time and attendance</span></span>                    |
+| <span data-ttu-id="c77f5-1087">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1087">**Status**</span></span>                         | <span data-ttu-id="c77f5-1088">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1088">Removed as of Dynamics AX 7.0.</span></span>         |
+
+### <a name="desktop-client"></a><span data-ttu-id="c77f5-1089">Asztali ügyfél</span><span class="sxs-lookup"><span data-stu-id="c77f5-1089">Desktop client</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1090">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1090">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1091">A Dynamics AX ügyfél felhasználói felületét a több platformon és eszközön való jobb felhasználhatóság érdekében újraterveztük.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1091">The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</span></span>                      |
+| <span data-ttu-id="c77f5-1092">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1092">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1093">Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1093">The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
+| <span data-ttu-id="c77f5-1094">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1094">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1095">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1095">All modules</span></span>  |
+| <span data-ttu-id="c77f5-1096">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1096">**Status**</span></span>                         | <span data-ttu-id="c77f5-1097">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1097">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="direct-database-connection"></a><span data-ttu-id="c77f5-1098">Közvetlen adatbázis-kapcsolat</span><span class="sxs-lookup"><span data-stu-id="c77f5-1098">Direct database connection</span></span>
+
+<span data-ttu-id="c77f5-1099">A Dynamics AX 2012 R3 rendszerben a Retail Modern POS az Enterprise POS rendszerhez hasonló módon, közvetlenül tudott kapcsolódni a csatorna-adatbázishoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1099">In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</span></span> <span data-ttu-id="c77f5-1100">Ez ráadás volt a Retail Modern POS Retail Server kiszolgálón keresztüli kommunikációjához használt szokásos kommunikációs módja mellett.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1100">This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1101">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1101">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1102">A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1102">Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</span></span> <span data-ttu-id="c77f5-1103">A Finance and Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1103">Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</span></span> |
+| <span data-ttu-id="c77f5-1104">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1104">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1105">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-1105">No.</span></span> <span data-ttu-id="c77f5-1106">Jelenleg csak a szabványos Retail Server által biztosított kommunikáció támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1106">Only standard Retail Server communication is now supported.</span></span>  |
+| <span data-ttu-id="c77f5-1107">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1107">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1108">Csatorna-adatbázis/Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="c77f5-1108">Channel DB/Retail Modern POS</span></span>   |
+| <span data-ttu-id="c77f5-1109">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1109">**Status**</span></span>                         | <span data-ttu-id="c77f5-1110">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1110">Removed as of Dynamics AX 7.0.</span></span>  |
+
+### <a name="dutch-swift-mt940"></a><span data-ttu-id="c77f5-1111">Holland SWIFT MT940</span><span class="sxs-lookup"><span data-stu-id="c77f5-1111">Dutch SWIFT MT940</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1112">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1112">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1113">A honosított funkció helyett már az általános funkció használatos.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1113">Generic functionality is now used instead of localized functionality.</span></span>                    |
+| <span data-ttu-id="c77f5-1114">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1114">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1115">Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1115">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
+| <span data-ttu-id="c77f5-1116">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1116">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1117">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1117">All modules</span></span>                                                                              |
+| <span data-ttu-id="c77f5-1118">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1118">**Status**</span></span>                         | <span data-ttu-id="c77f5-1119">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1119">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="ebilanz-xbrl-for-germany"></a><span data-ttu-id="c77f5-1120">eBilanz (XBRL, Németország)</span><span class="sxs-lookup"><span data-stu-id="c77f5-1120">eBilanz (XBRL for Germany)</span></span>
+
+<span data-ttu-id="c77f5-1121">Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztosítja, amely kifejezetten a német eBilanz rendszertan részére lett szánva.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1121">This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1122">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1122">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1123">Vevői használat hiánya.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1123">Lack of customer usage</span></span>  |
+| <span data-ttu-id="c77f5-1124">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1124">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1125">Ezt a szolgáltatást nem váltotta fel másik, azonban számos speciális, széles körű XBRL funkciókat magában foglaló XBRL csomag érthető el a német piac számára.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1125">This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</span></span> |
+| <span data-ttu-id="c77f5-1126">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1126">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1127">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="c77f5-1127">Management Reporter</span></span>      |
+| <span data-ttu-id="c77f5-1128">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1128">**Status**</span></span>                         | <span data-ttu-id="c77f5-1129">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1129">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="enterprise-portal-client"></a><span data-ttu-id="c77f5-1130">Enterprise Portal-ügyfél</span><span class="sxs-lookup"><span data-stu-id="c77f5-1130">Enterprise Portal client</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1131">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1131">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1132">Egy együgyfeles platform biztosított.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1132">A single client platform has been provided.</span></span>  |
+| <span data-ttu-id="c77f5-1133">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1133">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1134">Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1134">The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
+| <span data-ttu-id="c77f5-1135">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1135">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1136">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1136">All modules</span></span>  |
+| <span data-ttu-id="c77f5-1137">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1137">**Status**</span></span>                         | <span data-ttu-id="c77f5-1138">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1138">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="environmental-sustainability"></a><span data-ttu-id="c77f5-1139">Környezeti fenntarthatóság</span><span class="sxs-lookup"><span data-stu-id="c77f5-1139">Environmental sustainability</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1140">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1140">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1141">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1141">Low customer usage and a limited feature set</span></span>  |
+| <span data-ttu-id="c77f5-1142">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1142">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1143">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1143">No</span></span>              |
+| <span data-ttu-id="c77f5-1144">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1144">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1145">Megfelelés és belső ellenőrzés, Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-1145">Compliance and internal controls, Accounts payable</span></span>  |
+| <span data-ttu-id="c77f5-1146">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1146">**Status**</span></span>                         | <span data-ttu-id="c77f5-1147">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1147">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="form-activex-and-managed-host-controls"></a><span data-ttu-id="c77f5-1148">ActiveX és Felügyelt Állomás vezérlők</span><span class="sxs-lookup"><span data-stu-id="c77f5-1148">Form ActiveX and Managed Host controls</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1149">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1149">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1150">Az ActiveX és Felügyelt Állomás vezérlők a már megszűnt asztali ügyfélen alapulnak.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1150">The ActiveX and Managed Host controls are based on the deprecated desktop client.</span></span> |
+| <span data-ttu-id="c77f5-1151">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1151">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1152">A bővíthető vezérlési keretrendszer támogatja új, HTML-, CSS- és JavaScript-alapú vezérlések kiépítését, továbbá Microsoft Visual Studio Tooling környezetben elsőrangú vezérlő.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1152">The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</span></span> |
+| <span data-ttu-id="c77f5-1153">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1153">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1154">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1154">All modules</span></span>     |
+| <span data-ttu-id="c77f5-1155">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1155">**Status**</span></span>                         | <span data-ttu-id="c77f5-1156">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1156">Removed as of Dynamics AX 7.0.</span></span>       |
+
+### <a name="generate-prenotes-by-using-a-batch"></a><span data-ttu-id="c77f5-1157">Ellenőrző tranzakciók létrehozása a köteg használatával</span><span class="sxs-lookup"><span data-stu-id="c77f5-1157">Generate prenotes by using a batch</span></span>
+
+<span data-ttu-id="c77f5-1158">Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felhasználó által továbbra is végrehajtható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1158">Prenote generation can't be done by using a batch, but it can still be done by a user.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1159">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1159">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1160">Nem létezik olyan képernyő, amely a köteg használatával létrehozott előjegyzési fájl tárolására és megjelenítésére alkalmas lenne.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1160">No form exists to persist and display the resulting prenote file when it's generated by using a batch.</span></span> |
+| <span data-ttu-id="c77f5-1161">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1161">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1162">Előjegyzések továbbra is létrehozhatók, ekkor a fájl mentésének helyét a felhasználó állíthatja be.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1162">Prenotes can still be generated, and the user has control over the location where the file is saved.</span></span>   |
+| <span data-ttu-id="c77f5-1163">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1163">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1164">Kötelezettségek, Kinnlevőségek, Készpénz- és bankkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-1164">Accounts payable, Accounts receivable, Cash and bank management</span></span>  |
+| <span data-ttu-id="c77f5-1165">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1165">**Status**</span></span>                         | <span data-ttu-id="c77f5-1166">Eltávolítva az AX 7.0-es verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1166">Removed as of AX 7.0.</span></span>    |
+
+### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a><span data-ttu-id="c77f5-1167">Német DTAUS kifizetési export és számlakivonat-import (összegek és tranzakciók)</span><span class="sxs-lookup"><span data-stu-id="c77f5-1167">German DTAUS payment export and account statement import (totals and transactions)</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1168">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1168">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1169">A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1169">The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</span></span>                    |
+| <span data-ttu-id="c77f5-1170">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1170">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1171">Igen, ez a funkció le lett cserélve a SEPA kifizetési export és a továbbfejlesztett banki egyeztetés funkciókra a számlakivontok importálásához.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1171">Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</span></span> |
+| <span data-ttu-id="c77f5-1172">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1172">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1173">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1173">All modules</span></span>  |
+| <span data-ttu-id="c77f5-1174">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1174">**Status**</span></span>                         | <span data-ttu-id="c77f5-1175">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1175">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="german-dtazv-payment-format"></a><span data-ttu-id="c77f5-1176">Német DTAZV fizetési formátum</span><span class="sxs-lookup"><span data-stu-id="c77f5-1176">German DTAZV payment format</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1177">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1177">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1178">A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1178">The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</span></span> |
+| <span data-ttu-id="c77f5-1179">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1179">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1180">SEPA exportkifizetések</span><span class="sxs-lookup"><span data-stu-id="c77f5-1180">SEPA payments export</span></span>    |
+| <span data-ttu-id="c77f5-1181">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1181">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1182">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1182">All modules</span></span>   |
+| <span data-ttu-id="c77f5-1183">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1183">**Status**</span></span>                         | <span data-ttu-id="c77f5-1184">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1184">Deprecated: A removal date has not been set for this feature.</span></span>    |
+
+### <a name="german-mt940-import"></a><span data-ttu-id="c77f5-1185">Német MT940 importálása</span><span class="sxs-lookup"><span data-stu-id="c77f5-1185">German MT940 import</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1186">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1186">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1187">A honosított funkció helyett már az általános funkció használatos.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1187">Generic functionality is now used instead of localized functionality.</span></span>                    |
+| <span data-ttu-id="c77f5-1188">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1188">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1189">Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1189">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
+| <span data-ttu-id="c77f5-1190">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1190">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1191">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1191">All modules</span></span>                                                                              |
+| <span data-ttu-id="c77f5-1192">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1192">**Status**</span></span>                         | <span data-ttu-id="c77f5-1193">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1193">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="german-xml-eu-sales-list"></a><span data-ttu-id="c77f5-1194">Német XML-formátumú EU Értékesítési lista</span><span class="sxs-lookup"><span data-stu-id="c77f5-1194">German XML EU Sales list</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1195">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1195">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1196">A Német EU Értékesítési Lista jelentés XML-formátuma, már nem támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1196">The XML format for German EU Sales List reporting is no longer supported.</span></span> <span data-ttu-id="c77f5-1197">Csak az ELMA5 szövegfájl formátumban lehet a Német Adóhivatal számára jelenteni az EU értékesítési lista jelentést.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1197">Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</span></span> |
+| <span data-ttu-id="c77f5-1198">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1198">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1199">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1199">No</span></span>         |
+| <span data-ttu-id="c77f5-1200">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1200">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1201">Adó</span><span class="sxs-lookup"><span data-stu-id="c77f5-1201">Tax</span></span>        |
+| <span data-ttu-id="c77f5-1202">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1202">**Status**</span></span>                         | <span data-ttu-id="c77f5-1203">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1203">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="gl-ssrs-reports"></a><span data-ttu-id="c77f5-1204">GL SSRS-jelentések</span><span class="sxs-lookup"><span data-stu-id="c77f5-1204">GL SSRS reports</span></span>
+
+<span data-ttu-id="c77f5-1205">A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: **Összegző főkönyvi kivonat**, **Részletes főkönyvi kivonat**, **Számlatükör**, **Könyvvizsgálati ellenőrzés**, **Egyenlegek** és **Egyenleglista**.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1205">Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1206">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1206">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1207">A Microsoft SQL Server Reporting Services (SSRS) pénzügyi jelentéseket felváltották a Management Reporter funkciói és az alapértelmezett jelentések.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1207">Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</span></span> |
+| <span data-ttu-id="c77f5-1208">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1208">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1209">Management Reporter (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel)</span><span class="sxs-lookup"><span data-stu-id="c77f5-1209">Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)</span></span>    |
+| <span data-ttu-id="c77f5-1210">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1210">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1211">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-1211">General ledger</span></span>   |
+| <span data-ttu-id="c77f5-1212">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1212">**Status**</span></span>                         | <span data-ttu-id="c77f5-1213">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1213">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="infopart-and-formpart-metadata"></a><span data-ttu-id="c77f5-1214">InfoPart és FormPart metaadatai</span><span class="sxs-lookup"><span data-stu-id="c77f5-1214">InfoPart and FormPart metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1215">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1215">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1216">Az InfoPart és FormPart metaadatok két különböző ügyfél számára engedélyezték Adatterületek létrehozását.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1216">InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</span></span> |
+| <span data-ttu-id="c77f5-1217">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1217">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1218">Fejlesztés után az InfoPart metaadatokat, amelyek egy egyszerűsített képernyődefiníciót adtak meg, Képernyővé alakítottuk.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1218">InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</span></span> <span data-ttu-id="c77f5-1219">Fejlesztés után a FormPart metaadatokat, amelyek egy Képernyőre hivatkoztak, közvetlenebb hivatkozással váltottuk fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1219">FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</span></span> |
+| <span data-ttu-id="c77f5-1220">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1220">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1221">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1221">All modules</span></span>    |
+| <span data-ttu-id="c77f5-1222">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1222">**Status**</span></span>                         | <span data-ttu-id="c77f5-1223">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1223">Removed as of Dynamics AX 7.0.</span></span>        |
+
+### <a name="main-account-list-page"></a><span data-ttu-id="c77f5-1224">Fő számla listaoldal</span><span class="sxs-lookup"><span data-stu-id="c77f5-1224">Main account list page</span></span>
+
+<span data-ttu-id="c77f5-1225">A jogi személy számláinak listája és kapcsolódó egyenleginformációk</span><span class="sxs-lookup"><span data-stu-id="c77f5-1225">A list of accounts for the legal entity and related balance information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1226">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1226">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1227">Az egyenleginformációk elérhetőek a **Főkönyvi kivonat** listaoldalon, számla és dimenzió szerint.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1227">Balance information is available on the **Trial balance** list page by account and dimension.</span></span>  |
+| <span data-ttu-id="c77f5-1228">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1228">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1229">A **Fő számlák** ugyanazt a számlalistát tartalmazza, amit korábban a **Fő számla** listaoldal.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1229">**Main accounts** contains the same list of accounts that the **Main account** list page contained.</span></span> <span data-ttu-id="c77f5-1230">A **Fő számlák** rácsnézetével egy még kisebb, rácsszerű megjelenítés is elérhető.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1230">The grid view in **Main accounts** also shows an even smaller, grid-like view.</span></span> |
+| <span data-ttu-id="c77f5-1231">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1231">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1232">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-1232">General ledger</span></span>      |
+| <span data-ttu-id="c77f5-1233">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1233">**Status**</span></span>                         | <span data-ttu-id="c77f5-1234">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1234">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="malaysia-and-singapore-bank-cash-flow-report"></a><span data-ttu-id="c77f5-1235">Malajziai és szingapúri banki pénzforgalmi jelentés</span><span class="sxs-lookup"><span data-stu-id="c77f5-1235">Malaysia and Singapore bank cash flow report</span></span>
+
+<span data-ttu-id="c77f5-1236">Ez a szolgáltatás olyan pénzforgalmi jelentés nyomtatását tette lehetővé a felhasználó számára, amelyen megjelentek a kiválasztott bankszámlák megadott dátumtartományához kapcsolódó tranzakciók, illetve a pénzbeáramlások és a pénzkiáramlások részletei.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1236">This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1237">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1237">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1238">Ugyanezek az adatok a Banki tranzakció lekérdezéséből is beszerezhetőek.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1238">The same information can be obtained from the Inquiry bank transaction.</span></span> |
+| <span data-ttu-id="c77f5-1239">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1239">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1240">A Banki tranzakció lekérdezése</span><span class="sxs-lookup"><span data-stu-id="c77f5-1240">The Inquiry bank transaction</span></span>                                            |
+| <span data-ttu-id="c77f5-1241">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1241">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1242">Készpénz- és bankkezelés</span><span class="sxs-lookup"><span data-stu-id="c77f5-1242">Cash and bank management</span></span>                                                |
+| <span data-ttu-id="c77f5-1243">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1243">**Status**</span></span>                         | <span data-ttu-id="c77f5-1244">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1244">Deprecated: A removal date has not been set for this feature.</span></span>          |
+
+### <a name="mexican-cfd-electronic-invoice"></a><span data-ttu-id="c77f5-1245">Mexikói CFD elektronikus számla</span><span class="sxs-lookup"><span data-stu-id="c77f5-1245">Mexican CFD electronic invoice</span></span>
+
+<span data-ttu-id="c77f5-1246">Ez a funkció lehetővé tette a CFD módszerrel történő mexikói elektronikus számlák létrehozását, abban az esetben ha vállalat írja alá a számlát, valamint kérvényezi a kapcsolódó állami engedélyeket.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1246">This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</span></span> <span data-ttu-id="c77f5-1247">Ez a szolgáltatás egy olyan havi jelentést is magában foglal, amely a periódusban kiadott összes elektronikus számlát tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1247">This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1248">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1248">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1249">A módszer már nem alkalmazható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1249">The method is no longer applicable.</span></span> <span data-ttu-id="c77f5-1250">Az adóhatóságok beszüntettették az elektronikus számlák CFD módszerrel való létrehozását. Ennek helyét a CFDI (Comprobante Fiscal Digital a través de Internet) módszer vette át, amelynek megfelelően egy külső szolgáltató (PAC) ír alá.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1250">The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</span></span> <span data-ttu-id="c77f5-1251">A havi jelentést eltávolítottuk, a felhasználók egy lekérdezési lehetőség segítségével kérhetnek le előzménytranzakciókat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1251">The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</span></span> |
+| <span data-ttu-id="c77f5-1252">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1252">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1253">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1253">No</span></span>    |
+| <span data-ttu-id="c77f5-1254">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1254">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1255">Kinnlevőségek, Projekt</span><span class="sxs-lookup"><span data-stu-id="c77f5-1255">Account receivables, Project</span></span>   |
+| <span data-ttu-id="c77f5-1256">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1256">**Status**</span></span>                         | <span data-ttu-id="c77f5-1257">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1257">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="mexico-realized-and-unrealized-vat"></a><span data-ttu-id="c77f5-1258">Mexikói realizált és nem realizált áfa</span><span class="sxs-lookup"><span data-stu-id="c77f5-1258">Mexico realized and unrealized VAT</span></span>
+
+<span data-ttu-id="c77f5-1259">A Microsoft Dynamics AX 2012 a nem realizált áfát a Mexikó-specifikus nem realizált adó funkció használatával kezelte.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1259">Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1260">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1260">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1261">Máshol már meglévő funkció</span><span class="sxs-lookup"><span data-stu-id="c77f5-1261">Duplicate functionality</span></span>  |
+| <span data-ttu-id="c77f5-1262">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1262">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1263">Igen, ezt a funkciót felváltotta az alapból biztosított standard feltételes áfa funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1263">Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</span></span> |
+| <span data-ttu-id="c77f5-1264">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1264">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1265">Adó</span><span class="sxs-lookup"><span data-stu-id="c77f5-1265">Tax</span></span>   |
+| <span data-ttu-id="c77f5-1266">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1266">**Status**</span></span>                         | <span data-ttu-id="c77f5-1267">Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1267">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="microsoft-outlook-integration"></a><span data-ttu-id="c77f5-1268">Microsoft Outlook-integráció</span><span class="sxs-lookup"><span data-stu-id="c77f5-1268">Microsoft Outlook integration</span></span>
+
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1269">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1269">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1270">Ezt a szolgáltatást a Microsoft Exchange Server integrációja váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1270">This functionality has been replaced by Microsoft Exchange Server integration.</span></span> |
+| <span data-ttu-id="c77f5-1271">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1271">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1272">Igen</span><span class="sxs-lookup"><span data-stu-id="c77f5-1272">Yes</span></span>                                                                            |
+| <span data-ttu-id="c77f5-1273">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1273">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1274">Értékesítés és marketing</span><span class="sxs-lookup"><span data-stu-id="c77f5-1274">Sales and marketing</span></span>                                                            |
+| <span data-ttu-id="c77f5-1275">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1275">**Status**</span></span>                         | <span data-ttu-id="c77f5-1276">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1276">Removed as of Dynamics AX 7.0.</span></span>                                                 |
+
+### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a><span data-ttu-id="c77f5-1277">Készlet- és raktárkezelési naplók személyes zárolása</span><span class="sxs-lookup"><span data-stu-id="c77f5-1277">Private blocking of inventory and warehouse management journals</span></span>
+
+<span data-ttu-id="c77f5-1278">A készlet- és raktárnaplók már nem támogatják naplók megjelölését egy kiválasztott felhasználó személyes tartalmaként.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1278">The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</span></span> <span data-ttu-id="c77f5-1279">A naplók zárolásának folyamata csak felhasználócsoportok személyes tartalmaként, illetve szerkesztés alatt támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1279">Only the process of blocking journals as private for user groups and blocking during editing is supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1280">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1280">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1281">A funkció hasznossága nem mutatható ki.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1281">No use of the functionality was found.</span></span> |
+| <span data-ttu-id="c77f5-1282">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1282">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1283">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1283">No</span></span>                                     |
+| <span data-ttu-id="c77f5-1284">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1284">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1285">Készletgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="c77f5-1285">Inventory management</span></span>                   |
+| <span data-ttu-id="c77f5-1286">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1286">**Status**</span></span>                         | <span data-ttu-id="c77f5-1287">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1287">Removed as of Dynamics AX 7.0.</span></span>         |
+
+### <a name="product-builder"></a><span data-ttu-id="c77f5-1288">Termékszerkesztő</span><span class="sxs-lookup"><span data-stu-id="c77f5-1288">Product builder</span></span>
+
+<span data-ttu-id="c77f5-1289">A Termékszerkesztő használatával korábban értékesítési rendelésekből, beszerzési rendelésekből, termelési rendelésekből, értékesítési ajánlatokból projektajánlatokból vagy cikkszükségletekből származó cikkek dinamikus konfigurálására volt lehetőség.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1289">Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</span></span> <span data-ttu-id="c77f5-1290">Egy modellezési változókkal rendelkező termékmodell alapján a felhasználó ki tudta választani a vevői követelményeknek megfelelő értékeket, valamint létre tudott hozni egy egyedi, anyagjegyzékkel és útvonallal rendelkező termékváltozatot.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1290">Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1291">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1291">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1292">A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1292">Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</span></span> <span data-ttu-id="c77f5-1293">Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1293">It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</span></span>  |
+| <span data-ttu-id="c77f5-1294">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1294">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1295">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1295">Yes.</span></span> <span data-ttu-id="c77f5-1296">A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1296">The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</span></span> <span data-ttu-id="c77f5-1297">A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1297">The constraint-based configuration technology is selected on the product masters to enable the configuration.</span></span> <span data-ttu-id="c77f5-1298">További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](../../supply-chain/pim/build-product-configuration-model.md).</span><span class="sxs-lookup"><span data-stu-id="c77f5-1298">To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md).</span></span> |
+| <span data-ttu-id="c77f5-1299">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1299">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1300">Termékinformációk kezelése, Értékesítés és marketing</span><span class="sxs-lookup"><span data-stu-id="c77f5-1300">Product information management, Sales and marketing</span></span>  |
+| <span data-ttu-id="c77f5-1301">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1301">**Status**</span></span>                         | <span data-ttu-id="c77f5-1302">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1302">Removed as of Dynamics AX 7.0.</span></span>      |
+
+### <a name="production-floor-app"></a><span data-ttu-id="c77f5-1303">Termelési üzem alkalmazás</span><span class="sxs-lookup"><span data-stu-id="c77f5-1303">Production Floor app</span></span>
+<span data-ttu-id="c77f5-1304">Ez az alkalmazás a Windows 8.1 RT és Windows 8.1 Pro rendszereket futtató táblagépekhez való.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1304">This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1305">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1305">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1306">A webalapú kliensre való váltásnak köszönhetően a natív Dynamics AX 7.0 kliensen keresztül is végrehajtható hasonló funkció.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1306">With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</span></span> <span data-ttu-id="c77f5-1307">A Feladatkártya eszköze olyan termelési üzem felhasználói felületet biztosít, amely érintőképernyők és táblagép formátumú tényezőkre is optimalizálva van.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1307">The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</span></span> |
+| <span data-ttu-id="c77f5-1308">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1308">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1309">Igen.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1309">Yes.</span></span> <span data-ttu-id="c77f5-1310">A Feladatkártya eszköze a Dynamics AX 7.0 natív része.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1310">The Job Card Device, which is a native part of Dynamics AX 7.0.</span></span>                                                                           |
+| <span data-ttu-id="c77f5-1311">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1311">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1312">Gyártásvezérlés</span><span class="sxs-lookup"><span data-stu-id="c77f5-1312">Production control</span></span>                                                |
+| <span data-ttu-id="c77f5-1313">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1313">**Status**</span></span>                         | <span data-ttu-id="c77f5-1314">Elavult: A Microsoft Store-ból való eltávolítás dátuma még nem került meghatározásra ehhez a funkcióhoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1314">Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</span></span>                                                |
+
+
+### <a name="rename-product-dimension"></a><span data-ttu-id="c77f5-1315">Termékdimenzió átnevezése</span><span class="sxs-lookup"><span data-stu-id="c77f5-1315">Rename product dimension</span></span>
+
+<span data-ttu-id="c77f5-1316">Ez a szolgáltatás lehetővé tette a három alap termékdimenzió egyikének (méret, szín vagy stílus) átnevezését egy olyan névre, amely jobban megfelel az üzleti követelményeknek.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1316">This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</span></span> <span data-ttu-id="c77f5-1317">Az átnevezés kiterjedt minden olyan címkére, ahol megjelent a termékdimenzió neve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1317">Renaming included all the labels where the product dimension name was used.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1318">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1318">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1319">A Dynamics AX jelenlegi verziója nem támogatja címkék módosítását futtatás alatt.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1319">The current version of Dynamics AX doesn't support label changes at run time.</span></span> |
+| <span data-ttu-id="c77f5-1320">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1320">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1321">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1321">No</span></span>                                                                            |
+| <span data-ttu-id="c77f5-1322">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1322">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1323">Termékinformációk kezelése</span><span class="sxs-lookup"><span data-stu-id="c77f5-1323">Product information management</span></span>                                                |
+| <span data-ttu-id="c77f5-1324">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1324">**Status**</span></span>                         | <span data-ttu-id="c77f5-1325">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1325">Removed as of Dynamics AX 7.0.</span></span>                                                |
+
+### <a name="retail-server-connectivity-using-http"></a><span data-ttu-id="c77f5-1326">Retail Server kapcsolat ellenőrzése HTTP segítségével</span><span class="sxs-lookup"><span data-stu-id="c77f5-1326">Retail Server connectivity using HTTP</span></span>
+
+<span data-ttu-id="c77f5-1327">A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem védett) használatával működött.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1327">In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</span></span> <span data-ttu-id="c77f5-1328">Ez a szabványos HTTPS-t használó szokásos kommunikáció mellett működött.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1328">This was in addition to the standard communication using HTTPS.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1329">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1330">Új biztonsági óvintézkedések következményeképpen kizárólag a TLS 1.2 (vagy az újabb, ha rendelkezésre áll) protokollt használó biztonságos kommunikáció támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1330">Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</span></span> <span data-ttu-id="c77f5-1331">Az önkiszolgáló telepítő automatikusan konfigurálja a számítógépet ehhez a kommunikációs módhoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1331">The self-service installer will automatically configure the computer for this communication.</span></span> |
+| <span data-ttu-id="c77f5-1332">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1332">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1333">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-1333">No.</span></span> <span data-ttu-id="c77f5-1334">Jelenleg csak a szabványos HTTPS által biztosított kommunikáció támogatott.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1334">Only standard HTTPS communication is now supported.</span></span> |
+| <span data-ttu-id="c77f5-1335">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1335">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1336">Kiskereskedelmi kiszolgáló</span><span class="sxs-lookup"><span data-stu-id="c77f5-1336">Retail Server</span></span>  |
+| <span data-ttu-id="c77f5-1337">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1337">**Status**</span></span>                         | <span data-ttu-id="c77f5-1338">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1338">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="role-center-pages"></a><span data-ttu-id="c77f5-1339">Szerepkör főoldalak lapjai</span><span class="sxs-lookup"><span data-stu-id="c77f5-1339">Role Center pages</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1340">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1340">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1341">A Szerepkör főoldalak lapjai a már megszűnt Enterprise Portal platformra épültek, amelynek helyét a Dynamics AX jelenlegi verziójában az új webes ügyfélplatform vette át.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1341">Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</span></span> |
+| <span data-ttu-id="c77f5-1342">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1342">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1343">Az új Munkaterület képernyőminta folyamatközpontú tervezése egyszerű hozzáférést biztosít az adott folyamaton belül gyakran használt feladatokhoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1343">The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</span></span>                       |
+| <span data-ttu-id="c77f5-1344">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1344">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1345">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1345">All modules</span></span>    |
+| <span data-ttu-id="c77f5-1346">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1346">**Status**</span></span>                         | <span data-ttu-id="c77f5-1347">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve</span><span class="sxs-lookup"><span data-stu-id="c77f5-1347">Removed as of Dynamics AX 7.0</span></span>   |
+
+### <a name="sales-tax-jurisdictions"></a><span data-ttu-id="c77f5-1348">Áfailletékességek</span><span class="sxs-lookup"><span data-stu-id="c77f5-1348">Sales tax jurisdictions</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1349">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1349">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1350">Alacsony vevői használat és korlátozott szolgáltatáskészlet.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1350">Low customer usage and a limited feature set</span></span> |
+| <span data-ttu-id="c77f5-1351">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1351">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1352">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1352">No</span></span>                                           |
+| <span data-ttu-id="c77f5-1353">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1353">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1354">Amerikai áfa</span><span class="sxs-lookup"><span data-stu-id="c77f5-1354">US sales tax</span></span>                                 |
+| <span data-ttu-id="c77f5-1355">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1355">**Status**</span></span>                         | <span data-ttu-id="c77f5-1356">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1356">Removed as of Dynamics AX 7.0.</span></span>               |
+
+### <a name="sites-services"></a><span data-ttu-id="c77f5-1357">Sites Services</span><span class="sxs-lookup"><span data-stu-id="c77f5-1357">Sites Services</span></span>
+
+<span data-ttu-id="c77f5-1358">Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, melyek kiterjesztik az üzleti folyamatokat az internetre informatikai segítség nélkül.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1358">Sites Services let you build websites that extend your business processes to the Internet without IT support.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1359">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1359">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1360">A Dynamics AX által használt Microsoft Azure infrastruktúra új helyettesítő lehetőségekkel rendelkezik (például Azure oldalakkal).</span><span class="sxs-lookup"><span data-stu-id="c77f5-1360">The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</span></span> |
+| <span data-ttu-id="c77f5-1361">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1361">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1362">Nincs</span><span class="sxs-lookup"><span data-stu-id="c77f5-1362">No</span></span>   |
+| <span data-ttu-id="c77f5-1363">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1363">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1364">HR-toborzás, esetkezelés, ajánlatkérés, szállítóregisztrálás, lehetőségekhez és kampányokhoz tartozó együttműködési munkaterületek</span><span class="sxs-lookup"><span data-stu-id="c77f5-1364">HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</span></span>  |
+| <span data-ttu-id="c77f5-1365">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1365">**Status**</span></span>                         | <span data-ttu-id="c77f5-1366">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1366">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="ssas-demand-forecasting-strategy"></a><span data-ttu-id="c77f5-1367">SSAS igény-előrejelzési szolgáltatások</span><span class="sxs-lookup"><span data-stu-id="c77f5-1367">SSAS demand forecasting strategy</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1368">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1368">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1369">A funkció kialakítása az új felhő architektúrában nem támogatható.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1369">The design of the feature cannot be supported in the new cloud architecture.</span></span> |
+| <span data-ttu-id="c77f5-1370">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1370">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1371">Azure gépi tanulási kereslet-előrejelzési stratégia</span><span class="sxs-lookup"><span data-stu-id="c77f5-1371">Azure Machine Learning demand forecasting strategy</span></span>                           |
+| <span data-ttu-id="c77f5-1372">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1372">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1373">Alaptervezés</span><span class="sxs-lookup"><span data-stu-id="c77f5-1373">Master planning</span></span>                                                              |
+| <span data-ttu-id="c77f5-1374">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1374">**Status**</span></span>                         | <span data-ttu-id="c77f5-1375">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1375">Removed as of Dynamics AX 7.0.</span></span>                                               |
+
+### <a name="vendor-invoice-pool-excluding-posting-details"></a><span data-ttu-id="c77f5-1376">Szállítói számlagyűjtő a feladási részletek nélkül</span><span class="sxs-lookup"><span data-stu-id="c77f5-1376">Vendor invoice pool excluding posting details</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1377">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1377">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1378">Alacsony használat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1378">Low usage.</span></span> <span data-ttu-id="c77f5-1379">Ezt a funkciót felváltotta a munkafolyamat funkcióval rendelkező Számlanapló.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1379">This functionality has been replaced by the Invoice journal that has workflow functionality.</span></span> |
+| <span data-ttu-id="c77f5-1380">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1380">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1381">A Számlanapló munkafolyamat funkciói.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1381">Workflow capabilities of the Invoice journal.</span></span>     |
+| <span data-ttu-id="c77f5-1382">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1382">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1383">Kötelezettségek</span><span class="sxs-lookup"><span data-stu-id="c77f5-1383">Accounts payable</span></span> |
+| <span data-ttu-id="c77f5-1384">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1384">**Status**</span></span>                         | <span data-ttu-id="c77f5-1385">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1385">Removed as of Dynamics AX 7.0.</span></span>    |
+
+
+### <a name="virtual-company-accounts"></a><span data-ttu-id="c77f5-1386">Virtuális vállalati számlák</span><span class="sxs-lookup"><span data-stu-id="c77f5-1386">Virtual company accounts</span></span>
+
+<span data-ttu-id="c77f5-1387">A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1387">The virtual companies feature is no longer supported in Dynamics AX.</span></span> <span data-ttu-id="c77f5-1388">A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1388">The virtual companies feature let users set up tables that could be shared by a set of companies.</span></span> <span data-ttu-id="c77f5-1389">A szolgáltatás leírása itt található: [Vállalati számlák és Virtuális vállalati számlák](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span><span class="sxs-lookup"><span data-stu-id="c77f5-1389">For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span></span> <span data-ttu-id="c77f5-1390">A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1390">The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</span></span> <span data-ttu-id="c77f5-1391">Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1391">Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</span></span>
+
+|   |  | 
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1392">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1392">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1393">- A virtuális vállalatokat még az adatok táblákban való tárolása előtt be kell állítani.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1393">- Virtual companies must be set up before data is stored in the tables.</span></span> <span data-ttu-id="c77f5-1394">A virtuális vállalatok, már meglevő implementációra történő modernizálása nagyon nehézkes.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1394">Retrofitting virtual companies onto an existing implementation is very difficult.</span></span><br><br><span data-ttu-id="c77f5-1395">- Mivel a Dynamics AX jelenlegi verziójában rengeteg adatnormalizáció történt, igen nehézkessé vált átlátni azt, hogy a táblagyűjteményekhez mit szükséges hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1395">- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</span></span> <span data-ttu-id="c77f5-1396">Például nehéz megállapítani, mely táblák kerüljenek megosztásra.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1396">For example, it's difficult to know which tables to share.</span></span> <span data-ttu-id="c77f5-1397">A virtuális vállalatokban lévő táblákból hivatkozott összes egyéb táblát is hozzá kell adni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1397">All the tables referenced from tables that are in a virtual company must also added.</span></span> <span data-ttu-id="c77f5-1398">A táblanormalizáció miatt, még egy több táblában szétszóródó egyszerű alapadatot is a virtuális vállalat részévé kell tenni.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1398">Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</span></span> <span data-ttu-id="c77f5-1399">Bármilyen itt történő hiba működési diszfunkciókat okozhat.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1399">Any mistake that is made here will cause functional issues.</span></span><br><br><span data-ttu-id="c77f5-1400">- Egy virtuális vállalat részét képező táblában elvesznek az adatok eredetére vonatkozó információk, és csak a virtuális vállalat kerül rögzítésre.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1400">- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</span></span>   |
+| <span data-ttu-id="c77f5-1401">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1401">**Replaced by another feature?**</span></span> | <span data-ttu-id="c77f5-1402">Globális táblák használatával a táblákat elérhetővé teheti az összes vállalatból.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1402">Global tables can be used to make tables accessible from all companies.</span></span> <span data-ttu-id="c77f5-1403">Jelenleg nincs helyettesítés.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1403">Currently, there is no replacement.</span></span> |   
+| <span data-ttu-id="c77f5-1404">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1404">**Product areas affected**</span></span>       | <span data-ttu-id="c77f5-1405">Minden modul</span><span class="sxs-lookup"><span data-stu-id="c77f5-1405">All modules</span></span> |   
+| <span data-ttu-id="c77f5-1406">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1406">**Status**</span></span>                       | <span data-ttu-id="c77f5-1407">Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1407">Removed as of Dynamics AX 7.0.</span></span>   |   
+
+### <a name="windows-8-tablet-app"></a><span data-ttu-id="c77f5-1408">Windows 8 táblagépes alkalmazás</span><span class="sxs-lookup"><span data-stu-id="c77f5-1408">Windows 8 tablet app</span></span>
+
+<span data-ttu-id="c77f5-1409">A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbeírást és a jóváhagyást.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1409">The Windows 8 tablet app provided functionality for expense entry and approval.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1410">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1410">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1411">A Finance and Operations kompatibilis a táblagépekkel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1411">Finance and Operations is compatible with tablets.</span></span> <span data-ttu-id="c77f5-1412">A táblagépes alkalmazásra már nincs szükség.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1412">The tablet app is no longer required.</span></span>    |
+| <span data-ttu-id="c77f5-1413">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1413">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1414">Szám</span><span class="sxs-lookup"><span data-stu-id="c77f5-1414">No.</span></span>          |
+| <span data-ttu-id="c77f5-1415">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1415">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1416">Költséggazdálkodás</span><span class="sxs-lookup"><span data-stu-id="c77f5-1416">Expense management</span></span>   |
+| <span data-ttu-id="c77f5-1417">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1417">**Status**</span></span>                         | <span data-ttu-id="c77f5-1418">Eltávolítva: Ez a funkció csak a Dynamics AX 2012 R3 verzióban érhető el.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1418">Removed: This functionality is only available for Dynamics AX 2012 R3.</span></span> |
+
+### <a name="workplanner"></a><span data-ttu-id="c77f5-1419">Munkatervező</span><span class="sxs-lookup"><span data-stu-id="c77f5-1419">Workplanner</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="c77f5-1420">**Elavulás/eltávolítás oka**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1420">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="c77f5-1421">Alacsony használat</span><span class="sxs-lookup"><span data-stu-id="c77f5-1421">Low usage</span></span> |
+| <span data-ttu-id="c77f5-1422">**Felváltotta másik szolgáltatás?**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1422">**Replaced by another feature?**</span></span>   | <span data-ttu-id="c77f5-1423">Nem, de a **Profilkapcsolat** lap (amely a **Profilcsoportok** oldalon nyitható meg), ugyan azt az üzleti forgatókönyvet támogatja, mint az elavult **Munkatervező** oldal.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1423">No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page.</span></span> |
+| <span data-ttu-id="c77f5-1424">**Érintett területek**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1424">**Product areas affected**</span></span>         | <span data-ttu-id="c77f5-1425">Munkaidő és jelenlét</span><span class="sxs-lookup"><span data-stu-id="c77f5-1425">Time and attendance</span></span>     |
+| <span data-ttu-id="c77f5-1426">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="c77f5-1426">**Status**</span></span>                         | <span data-ttu-id="c77f5-1427">A kódot nem távolítottuk el.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1427">The code has not been removed.</span></span> <span data-ttu-id="c77f5-1428">Azonban a JmgWorkPlanner űrlap nem lett áttelepítve.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1428">However, the form, JmgWorkPlanner, was not migrated.</span></span>    |
+
+### <a name="x-financial-statements"></a><span data-ttu-id="c77f5-1429">X++ pénzügyi kimutatások</span><span class="sxs-lookup"><span data-stu-id="c77f5-1429">X++ financial statements</span></span>
+
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="c77f5-1430"><strong>Elavulás/eltávolítás oka</strong></span><span class="sxs-lookup"><span data-stu-id="c77f5-1430"><strong>Reason for deprecation/removal</strong></span></span> |                         <span data-ttu-id="c77f5-1431">Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.</span><span class="sxs-lookup"><span data-stu-id="c77f5-1431">This functionality has been replaced by another feature.</span></span>                         |
+|  <span data-ttu-id="c77f5-1432"><strong>Felváltotta másik szolgáltatás?</strong></span><span class="sxs-lookup"><span data-stu-id="c77f5-1432"><strong>Replaced by another feature?</strong></span></span>  | <span data-ttu-id="c77f5-1433">Management Reporter (a Dynamics AX jelenlegi verziójában <strong>Pénzügyi jelentéskészítés</strong> megjelöléssel)</span><span class="sxs-lookup"><span data-stu-id="c77f5-1433">Management Reporter (labeled <strong>Financial reporting</strong> in the current version of Dynamics AX)</span></span> |
+|     <span data-ttu-id="c77f5-1434"><strong>Érintett területek</strong></span><span class="sxs-lookup"><span data-stu-id="c77f5-1434"><strong>Product areas affected</strong></span></span>     |                                              <span data-ttu-id="c77f5-1435">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="c77f5-1435">General ledger</span></span>                                              |
+|             <span data-ttu-id="c77f5-1436"><strong>Állapot</strong></span><span class="sxs-lookup"><span data-stu-id="c77f5-1436"><strong>Status</strong></span></span>             |                                      <span data-ttu-id="c77f5-1437">Eltávolítva a Dynamics AX 2012-s verziójától kezdve</span><span class="sxs-lookup"><span data-stu-id="c77f5-1437">Removed as of Dynamics AX 2012</span></span>                                      |
+

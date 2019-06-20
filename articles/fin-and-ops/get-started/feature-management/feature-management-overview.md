@@ -1,369 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="feature-management-overview.md" target-language="hu-HU">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>feature-management-overview.30fae6.b200156a623c67a562cc1a5952899e3a77517528.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b200156a623c67a562cc1a5952899e3a77517528</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\fin-and-ops\get-started\feature-management\feature-management-overview.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Feature management overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkciókezelés áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the Feature management feature and how you can use it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Feature management overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkciókezelés áttekintése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Microsoft Dynamics 365 for Finance and Operations minden kiadásában új szolgáltatások és frissítések jelennek meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkció-kezelési élmény olyan munkaterületet tartalmaz, amelyen megtekintheti az egyes kiadásokban elérhetővé tett szolgáltatások listáját.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>By default, new features are turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>You can use the workspace to turn them on and view the documentation for them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The Feature management workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A Funkciókezelés munkaterület használata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You can open the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace by selecting the appropriate tile on the dashboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterületet úgy nyithatja meg, hogy kijelöli az irányítópult megfelelő csempéjét.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>You will see a page that shows a list of features for all releases that are supported by the Feature management experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Megjelenik egy lap, amelyen megtekintheti az összes funkciót az összes kiadáshoz, amelyeket támogat a Funkciókezelés élmény.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Idővel a Microsoft javítja A Funkciókezelés élményét, így további funkciókat is kínál majd, amelyek segítik a funkciók kezelését.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The feature list includes the following information:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A funkciólista a következő információkat tartalmazza:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">**</bpt>Feature name<ept id="p1">**</ept> – A description of the feature that was added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Funkció neve<ept id="p1">**</ept> – A hozzáadott funkció leírása.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">**</bpt>Enabled status<ept id="p1">**</ept> – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), or is mandatorily turned on (lock).</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Engedélyezett állapot<ept id="p1">**</ept> – Egy szimbólum azt jelzi, hogy be van-e kapcsolva a funkció (pipa),nincs bekapcsolva (üres), ütemezve van bekapcsolásra (óra), vagy kötelezően ebe van kapcsolva (lakat).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The setting that is shown here is used for all legal entities.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Az itt megjelenített beállítás minden jogi személynél használatos.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Note that even when a feature has been turned on, it's still controlled by security.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne felejtse el, hogy ha a funkció be is van kapcsolva, a biztonság szabályozza azt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Therefore, the feature will be available only to users who have access to it, based on their security role.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ennélfogva a funkció csak azoknak a felhasználóknak érhető el, akik hozzáférhetnek a biztonsági szerepkörük alapján.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>It will also be available only in legal entities that the user has access to.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">Csak olyan jogi személyekben érhető el, amelyekhez a felhasználó hozzáfér.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">**</bpt>Enable date<ept id="p1">**</ept> – The date when the feature was turned on or is scheduled to be turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Engedélyezési dátum<ept id="p1">**</ept> – Az a dátum, amikor a funkciót bekapcsolták, vagy ütemezve van a bekapcsolásra.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Feature added<ept id="p1">**</ept> – The date when the feature was added to your environment.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Funkció hozzáadása<ept id="p1">**</ept> – Az a dátum, amikor a funkciót hozzáadták a környezethez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>This date is automatically entered when you update your environment during the monthly release cycles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A program automatikusan beírja ezt a dátumot, amikor a havi kiadási ciklus során frissíti a környezetet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>Module<ept id="p1">**</ept> – The module that is affected by the new feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modul<ept id="p1">**</ept> – Az új funkció által érintett modul.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>When you select a feature, additional information appears in the details pane to the right of the feature list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ha kiválaszt egy funkciót, akkor a részleteket ablaktáblában, a szolgáltatások listájának jobb oldalán megjelennek a további információk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a <bpt id="p1">**</bpt>Learn more<ept id="p1">**</ept> link.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A ablaktábla tetején látható a funkció neve, a funkció hozzáadásának dátuma, a funkció által érintett modul, valamint egy <bpt id="p1">**</bpt>További információk<ept id="p1">**</ept> hivatkozás.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Select this link to view the documentation for the feature.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Erre a hivatkozásra kattintva megtekintheti a funkció dokumentációját.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>If documentation isn't available, you're taken to a temporary page.</source><target logoport:matchpercent="89" state="translated" state-qualifier="x-fuzzy-match-unedited">Ha a dokumentáció nem érhető el, akkor egy ideiglenes oldalra kerül.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The details pane also includes a <bpt id="p1">**</bpt>Comments<ept id="p1">**</ept> field where you can add your own comments about the feature.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A részleteket tartalmazó ablaktábla tartalmaz egy <bpt id="p1">**</bpt>Megjegyzések<ept id="p1">**</ept> mezőt is, amelybe felveheti a saját megjegyzéseit a funkcióval kapcsolatosan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>The <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace also has several tabs, each of which shows a list of features.</source><target logoport:matchpercent="76" state="translated" state-qualifier="fuzzy-match">A <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterület több lapot is tartalmaz, amelyek mindegyikén a funkciók listája látható.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">**</bpt>New<ept id="p1">**</ept> – This tab shows all features that have been added since the last monthly update.</source><target logoport:matchpercent="88" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Új<ept id="p1">**</ept> – Ez a lap a legutóbbi havi frissítés óta hozzáadott összes funkciót jeleníti meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>If you've skipped any monthly updates, the tab shows all the new features that have been added since the last time that you updated.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha kihagyott egy havi frissítést, akkor a lap megjeleníti a legutóbbi frissítés óta hozzáadott összes új funkciót.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The newest features appear at the top of the list.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A legújabb funkciók a lista tetején jelennek meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>The total number of new features is also shown on a tile at the top of the page.</source><target logoport:matchpercent="96" state="translated" state-qualifier="x-fuzzy-match-unedited">Az új funkciók száma összesen a lap felső részén található csempén jelenik meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Not enabled<ept id="p1">**</ept> – This tab shows all features that haven't been turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Nincs engedélyezve<ept id="p1">**</ept> – Ezen a lapon látható az összes olyan funkció, amely még nem lett bekapcsolva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The newest features appear at the top of the list.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">A legújabb funkciók a lista tetején jelennek meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The total number of new features that haven't been turned on is also shown on a tile at the top of the page.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Az új, még nem bekapcsolt funkciók száma összesen a lap felső részén található csempén jelenik meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Scheduled<ept id="p1">**</ept> – This tab shows all features that have been scheduled to be turned on in the future.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Ütemezve<ept id="p1">**</ept> – Ezen a lapon látható az összes olyan funkció, amelynek bekapcsolását egy jövőbeli dátumra ütemeztek.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The features that have the earliest scheduled date appear at the top of the list.</source><target logoport:matchpercent="93" state="translated" state-qualifier="x-fuzzy-match-unedited">A legkorábbi dátumra ütemezett szolgáltatások jelennek meg a lista tetején.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>The total number of schedule new features is also shown on a tile at the top of the page.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">Az ütemezett új funkciók száma összesen a lap felső részén található csempén jelenik meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">**</bpt>All<ept id="p1">**</ept> – This tab shows all features.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Összes<ept id="p1">**</ept> – Ezen a lapon látható az összes funkció.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The newest features appear at the top of the list.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">A legújabb funkciók a lista tetején jelennek meg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Turn on a feature</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Funkció bekapcsolása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>If a feature hasn't been turned on, an <bpt id="p1">**</bpt>Enable Now<ept id="p1">**</ept> button appears in the details pane.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Ha egy funkció nincs bekapcsolva, az <bpt id="p1">**</bpt>Engedélyezés most<ept id="p1">**</ept> gomb látható a részletek ablaktáblán.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>You can use this button to turn on the feature.</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Ezt a gombot használhatja a funkció bekapcsolásához.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Select the feature to turn on, and then, in the details pane, select <bpt id="p1">**</bpt>Enable Now<ept id="p1">**</ept>.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az <bpt id="p1">**</bpt>Engedélyezés most<ept id="p1">**</ept>lehetőséget.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The feature is turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A funkció be van kapcsolva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Some features can't be turned off after you turn them on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Néhány funkció nem kapcsolható ki a bekapcsolás után.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If the feature that you're trying to turn on can't be turned off, you receive a warning.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Ha a bekapcsolni kívánt funkció nem kapcsolható ki, egy figyelmeztetés jelenik meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>At that point, you can select <bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept> to cancel the operation and leave the feature turned off.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Ezen a ponton választhatja <bpt id="p1">**</bpt>Mégsem<ept id="p1">**</ept> lehetőséget a művelet visszavonásához és a szolgáltatás kikapcsolásának fenntartásához.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>However, if you select <bpt id="p1">**</bpt>Enable<ept id="p1">**</ept> to turn on the feature, you won't be able to turn it off later.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Ha azonban az <bpt id="p1">**</bpt>Engedélyezés<ept id="p1">**</ept> lehetőséget választja a bekapcsoláshoz, és engedélyezi a funkciót, akkor nem fogja tudni kikapcsolni később.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>After a feature is turned on, a message appears below the <bpt id="p1">**</bpt>Learn more<ept id="p1">**</ept> link in the details pane.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Miután a funkció be van kapcsolva, a részletek ablaktáblán megjelenik egy üzenet a <bpt id="p1">**</bpt>További információ<ept id="p1">**</ept> hivatkozása alatt.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a jövőbeli dátumot jelzi, amikor a funkció engedélyezve lesz a jövőben.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>It appears every time that you select the feature in the feature list.</source><target logoport:matchpercent="89" state="translated" state-qualifier="x-fuzzy-match-unedited">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Features that are scheduled to be turned on in the future appear on the <bpt id="p1">**</bpt>Scheduled<ept id="p1">**</ept> tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A jövőre ütemezett bekapcsolású funkciók az <bpt id="p1">**</bpt>Ütemezett<ept id="p1">**</ept> lapon jelennek meg. A megadott dátum napján éjfélkor egy kötegfolyamat kapcsolja be őket, a rendszerdátum által képviselt időzóna alapján.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Reschedule a feature</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Funkció újraütemezése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>If a feature has been scheduled to be turned on in the future, a <bpt id="p1">**</bpt>Schedule<ept id="p1">**</ept> button appears in the details pane.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Ha egy funkció a jövőre vonatkozóan van bekapcsolásra ütemezve, az <bpt id="p1">**</bpt>Ütemezés<ept id="p1">**</ept> gomb látható a részletek ablaktáblán.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>You can use this button to change the <bpt id="p1">**</bpt>Enable date<ept id="p1">**</ept> value to a different date.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match">Ezzel a gombbal módosíthatja az <bpt id="p1">**</bpt>Engedélyezés dátuma<ept id="p1">**</ept> értékét egy másik dátumra.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select the scheduled feature to reschedule, and then, in the details pane, select <bpt id="p1">**</bpt>Schedule<ept id="p1">**</ept>.</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">Válassza ki az ütemezett funkciót, amelyet át szeretne ütemezni, majd a részletek ablaktáblán válassza az <bpt id="p1">**</bpt>Ütemezés<ept id="p1">**</ept>lehetőséget.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the dialog box that appears, in the <bpt id="p1">**</bpt>Enable date<ept id="p1">**</ept> field, specify the new date when the feature should be turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A megjelenő párbeszédpanelen az <bpt id="p1">**</bpt>Engedélyezés dátuma<ept id="p1">**</ept> mezőben adja meg azt az új dátumot, amikor a funkciót be kell kapcsolni.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Select <bpt id="p1">**</bpt>Enable<ept id="p1">**</ept> to reschedule the feature or <bpt id="p2">**</bpt>Disable<ept id="p2">**</ept> to cancel the schedule.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Válassza az <bpt id="p1">**</bpt>Engedélyezés<ept id="p1">**</ept> lehetőséget a funkció újraütemezéséhez, vagy a <bpt id="p2">**</bpt>Letiltás<ept id="p2">**</ept> lehetőséget az ütemezés megszüntetéséhez.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Turn off a feature</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Funkció kikapcsolása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>If a feature has already been turned on, a <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept> button appears in the details pane.</source><target logoport:matchpercent="88" state="translated" state-qualifier="fuzzy-match">Ha egy funkció már be van kapcsolva, a <bpt id="p1">**</bpt>Letiltás<ept id="p1">**</ept> gomb látható a részletek ablaktáblán.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>You can use this button to turn off the feature.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Ezt a gombot használhatja a funkció kikapcsolásához.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>The <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept> button isn't available if the feature can't be turned off after it's turned on.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">A <bpt id="p1">**</bpt>Letiltás<ept id="p1">**</ept> gomb nem érhető el, ha a funkciót annak bekapcsolása után nem lehet kikapcsolni.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Select the feature to turn off, and then, in the details pane, select <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept>.</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Válassza ki a kikapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza a <bpt id="p1">**</bpt>Letiltás<ept id="p1">**</ept> lehetőséget.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>The feature is turned off, and the <bpt id="p1">**</bpt>Enable date<ept id="p1">**</ept> field is cleared.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A funkció ki van kapcsolva, és az <bpt id="p1">**</bpt>Engedélyezés dátuma<ept id="p1">**</ept> mező kiürült.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>After a feature is turned off, a message appears below the <bpt id="p1">**</bpt>Learn more<ept id="p1">**</ept> link in the details pane.</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Miután a funkció ki van kapcsolva, a részletek ablaktáblán megjelenik egy üzenet a <bpt id="p1">**</bpt>További információ<ept id="p1">**</ept> hivatkozása alatt.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>This message states that the feature hasn't yet been turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ez az üzenet azt jelzi, hogy a funkció még nincs bekapcsolva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>It appears every time that you select the feature in the feature list.</source>
-        <target logoport:matchpercent="89" state="translated" state-qualifier="leveraged-inherited">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Features that haven't been turned on appear on the <bpt id="p1">**</bpt>Not enabled<ept id="p1">**</ept> tab.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">A funkciók, amely még nem lettek bekapcsolva, a <bpt id="p1">**</bpt>Nem engedélyezett<ept id="p1">**</ept> lapon jelennek meg.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Features that must be turned on</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">Funkciók, amelyeket be kell kapcsolni</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Sometimes, a critical feature is delivered that must be turned on automatically when you do an update.</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Néha a frissítés során kritikus fontosságú funkciók érkeznek, amelyeket be kell kapcsolni a frissítés során.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>These features will be turned on automatically on the date that is specified in the <bpt id="p1">**</bpt>Enable date<ept id="p1">**</ept> field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ezek a funkciók automatikusan be lesznek kapcsolva az <bpt id="p1">**</bpt>Engedélyezés dátuma<ept id="p1">**</ept> mezőben megadott dátumon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>For these features, a message appears below the <bpt id="p1">**</bpt>Learn more<ept id="p1">**</ept> link in the details pane.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Ezeknél a funkcióknál a részletek ablaktáblán megjelenik egy üzenet a <bpt id="p1">**</bpt>További információ<ept id="p1">**</ept> hivatkozása alatt.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This message either states that the feature was turned on or indicates the future date when the feature will be turned on.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a dátumot jelzi, amikor a funkció be lesz kapcsolva a jövőben.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>It appears every time that you select the feature in the feature list.</source>
-        <target logoport:matchpercent="89" state="translated" state-qualifier="leveraged-inherited">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Turn on all features automatically</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Az összes funkció automatikus bekapcsolása</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>By default, all features that are added to your environment are turned off, unless they are mandatory features.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva, hacsak nem kötelező funkciók.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha viszont automatikusan be kívánja kapcsolni az összes új funkciót, akkor a munkaterület címe alatti legördülő lista segítségével módosíthatja, hogy mi történik az új szolgáltatások hozzáadásakor.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Select <bpt id="p1">**</bpt>All new features will be enabled by default<ept id="p1">**</ept> to automatically turn on all new features when they are added to your environment.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Válassza az <bpt id="p1">**</bpt>Összes új funkció alapértelmezett módon engedélyezve<ept id="p1">**</ept> lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Select <bpt id="p1">**</bpt>All new features will be disabled by default<ept id="p1">**</ept> to automatically turn off all new features when they are added to your environment.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">Válassza az <bpt id="p1">**</bpt>Összes új funkció alapértelmezett módon letiltva<ept id="p1">**</ept> lehetőséget az összes új funkció kikapcsolásához, amikor hozzáadják őket a környezetéhez.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Assigning roles</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Szerepkörök hozzárendelése</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>The <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace can be opened by system admins, and also by users who are assigned to the Feature manager role or the Feature viewer role.</source><target logoport:matchpercent="74" state="translated" state-qualifier="fuzzy-match">A <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterületet rendszeradminisztrátorok és a Funkciókezelő vagy Funkciómegtekintő szerepkörhöz rendelt felhasználók is megnyithatják.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>These two roles were created to support the Feature management experience.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ez a két szerepkör a Funkciókezelési gyakorlat támogatására jött létre.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Users in the Feature manager role can turn any feature on or off.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A szolgáltatáskezelő szerepkörben lévő felhasználók bármilyen funkciót be-és kikapcsolhatnak.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>They can also update the <bpt id="p1">**</bpt>Comments<ept id="p1">**</ept> field for the feature.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Ezenkívül a funkcióhoz tartozó <bpt id="p1">**</bpt>Megjegyzések<ept id="p1">**</ept> mezőt is módosíthatják.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Users in the Feature viewer role can only view the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A funkciómegtekintő szerepkör felhasználói csak megtekinthetik a <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterületet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>They can't turn features on or off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nem kapcsolhatnak be és ki funkciókat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>The Feature manager role and Feature viewer role don't override the existing security that a user has.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A funkciókezelő szerepkör és a funkciómegtekintő szerepkör nem bírálja felül a felhasználó által megadott biztonságot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>They just control whether the user can turn features on and off.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ők csak azt szabályozzák, hogy a felhasználó ki- és bekapcsolhatja-e a funkciókat.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>They don't provide access to the features themselves.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Nem biztosítanak hozzáférést magukhoz a funkciókhoz.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Features that use configuration keys</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A konfigurációs kulcsokat használó funkciók</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>If a feature uses a configuration key, but the configuration key isn't turned on, the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace doesn't show the feature in the list of available features.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha egy funkció konfigurációs kulcsot használ, de a konfigurációs kulcs nincs bekapcsolva, akkor a <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterület nem jeleníti meg a funkciót a választható funkciók listáján.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>After you turn on the configuration key, you must update the feature list by using the <bpt id="p1">**</bpt>Check for update<ept id="p1">**</ept> menu item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Miután bekapcsolta a konfigurációs kulcsot, frissítenie kell a funkciók listáját a <bpt id="p1">**</bpt>Frissítések ellenőrzése<ept id="p1">**</ept> menüelem használatával.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>The feature then appears in the feature list.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ez a funkció aztán megjelenik a funkciók listájában.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>If you turn off the configuration key, the feature isn't removed from the feature list.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha kikapcsolja a konfigurációs kulcsot, akkor a funkció nem törlődik a funkciók listájából.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Data entities</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Adatentitások</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>A data entity that is named <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> lets you export the Feature management settings from one environment and then import them into another environment.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> nevű adatentitás segítségével exportálhatja a Funkciókezelési beállításokat egy környezetből, majd importálhatja őket más környezetbe.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>This entity updates only existing features.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ez az entitás csak a meglévő funkciókat frissíti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>The business logic in the entity also helps guarantee that the same rules that are used on the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace will be applied when the import is done.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Az entitás üzleti logikája azt is segít szavatolni, hogy a <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> munkaterületen ugyanazokat a szabályokat alkalmazza a program, amikor az importálás megtörtént.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>For example, you can't override a mandatory feature setting by removing the date during import.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Például a kötelező funkció beállítását nem lehet felülbírálni úgy, hogy a dátumot eltávolítja az importálás során.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>The following examples describe what occurs when you use the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> entity to import data.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A következő példák azt mutatják be, hogy mi történik, ha a <bpt id="p1">**</bpt>Funkciókezelés<ept id="p1">**</ept> entitást használja az adatok importálásához.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>If you change the value of the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, the feature is turned on, and the <bpt id="p3">**</bpt>Enable date<ept id="p3">**</ept> field is set to the current date.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha az <bpt id="p1">**</bpt>Engedélyezett<ept id="p1">**</ept> mező értékét <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept>értékre módosítja, akkor a funkció be van kapcsolva, és az <bpt id="p3">**</bpt>Engedélyezés dátuma<ept id="p3">**</ept> mező az aktuális dátumra van állítva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>If you change the value of the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>No<ept id="p2">**</ept> or leave the <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> field blank, the feature is turned off, and the <bpt id="p4">**</bpt>Enable date<ept id="p4">**</ept> field is cleared.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Ha az <bpt id="p1">**</bpt>Engedélyezett<ept id="p1">**</ept> mező értékét <bpt id="p2">**</bpt>Nem<ept id="p2">**</ept> értékre módosítja, vagy az <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> mezőt üresen hagyja, akkor a funkció ki van kapcsolva, és az <bpt id="p4">**</bpt>Engedélyezés dátuma<ept id="p4">**</ept> mező törlődik.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>You can't turn off a mandatory feature or a feature that can't be turned off after it's turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Nem lehet kikapcsolni a kötelező funkciókat vagy egy olyan funkciót, amely nem kapcsolható ki, ha be van kapcsolva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>If you change the value of the <bpt id="p1">**</bpt>EnableDate<ept id="p1">**</ept> field to a future date, the feature is scheduled for that date.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha az <bpt id="p1">**</bpt>EnableDate<ept id="p1">**</ept> mező értékét a jövőbeli dátumra módosítja, akkor a szolgáltatás erre a dátumra van ütemezve.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>If you change the value of the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> and change the value of the <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> field to a future date, the feature is scheduled for that date.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Ha az <bpt id="p1">**</bpt>Engedélyezett<ept id="p1">**</ept> mező értékét <bpt id="p2">**</bpt>Igen<ept id="p2">**</ept> értékre módosítja, és az <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> mező értékét egy jövőbeli dátumra állítja, akkor a funkció az adott dátumra lesz ütemezve.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>If you change the value of the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>, but you also change the value of the <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> field to a future date, the feature is scheduled for that date.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Ha az <bpt id="p1">**</bpt>Engedélyezett<ept id="p1">**</ept> mező értékét <bpt id="p2">**</bpt>Nem<ept id="p2">**</ept> értékre módosítja, de az <bpt id="p3">**</bpt>EnableDate<ept id="p3">**</ept> mező értékét egy jövőbeli dátumra állítja, akkor a funkció az adott dátumra lesz ütemezve.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>If a feature is turned on, and you add an <bpt id="p1">**</bpt>EnableDate<ept id="p1">**</ept> field that is set to a future date, the feature remains turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ha egy funkció be van kapcsolva, és olyan <bpt id="p1">**</bpt>EnableDate<ept id="p1">**</ept> -mezőt ad hozzá, amely a jövőbeli dátumra van állítva, akkor a funkció továbbra is be van kapcsolva.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>To reschedule the feature, you must change the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A funkció újraütemezéséhez az <bpt id="p1">**</bpt>Engedélyezett<ept id="p1">**</ept> mezőt <bpt id="p2">**</bpt>Nem<ept id="p2">**</ept> értékre kell állítani.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Feature management and flighting</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Funkciókezelés és tesztelés</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Feature management lets you to control the features that are delivered in each release.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">A funkciókezelés funkcióval szabályozhatja az egyes kiadásokban szállított funkciókat.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match">A tesztelés lehetővé teszi a Microsoft Teams számára, hogy korlátozott számú ügyfél számára adjanak ki funkciókat, így a szolgáltatások tesztelése és ellenőrzése nem érinti az összes ügyfelet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Feature management doesn't control the flighting of any features.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match">A funkciókezelés nem szabályozza a funkciók tesztelését.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Using Feature management to turn on ISV features or custom features</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">A Funkciókezelés használata az ISV-funkciók és az egyéni funkciók bekapcsolásához</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Feature management is currently unavailable for features from independent software vendors (ISVs) and custom features.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A funkciókezelés jelenleg nem érhető el a független szoftvergyártók (ISV-k) funkcióihoz és egyéni funkciókhoz.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>However, Microsoft is adding more functionality to enhance Feature management.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A Microsoft azonban további funkciókat ad hozzá a Funkciókezelés fejlesztéséhez.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>After those enhancements are completed, Microsoft will make Feature management available to all features and provide instructions for updating your features to use it.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">A fejlesztések befejezését követően a Microsoft minden funkció számára elérhetővé teszi a Funkciókezelést, és útmutatást nyújt a funkciók használatához szükséges frissítéshez.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Funkciókezelés áttekintése
+description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
+author: mikefalkner
+manager: AnnBe
+ms.date: 06/04/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: FeatureManagementWorkspace
+audience: IT Pro, Application user
+ms.reviewer: sericks
+ms.search.scope: Operations, Core
+ms.search.region: Global
+ms.author: mfalkner
+ms.search.validFrom:
+- month/year of release that feature was introduced in
+- in format yyyy-mm-dd
+ms.dyn365.ops.version: 10.0.2
+ms.openlocfilehash: b200156a623c67a562cc1a5952899e3a77517528
+ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1619144"
+---
+# <a name="feature-management-overview"></a><span data-ttu-id="54565-103">Funkciókezelés áttekintése</span><span class="sxs-lookup"><span data-stu-id="54565-103">Feature management overview</span></span>
+
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+
+<span data-ttu-id="54565-104">A Microsoft Dynamics 365 for Finance and Operations minden kiadásában új szolgáltatások és frissítések jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="54565-104">Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="54565-105">A funkció-kezelési élmény olyan munkaterületet tartalmaz, amelyen megtekintheti az egyes kiadásokban elérhetővé tett szolgáltatások listáját.</span><span class="sxs-lookup"><span data-stu-id="54565-105">The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release.</span></span> <span data-ttu-id="54565-106">Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-106">By default, new features are turned off.</span></span> <span data-ttu-id="54565-107">A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt.</span><span class="sxs-lookup"><span data-stu-id="54565-107">You can use the workspace to turn them on and view the documentation for them.</span></span>
+
+## <a name="the-feature-management-workspace"></a><span data-ttu-id="54565-108">A Funkciókezelés munkaterület használata.</span><span class="sxs-lookup"><span data-stu-id="54565-108">The Feature management workspace</span></span>
+
+<span data-ttu-id="54565-109">A **Funkciókezelés** munkaterületet úgy nyithatja meg, hogy kijelöli az irányítópult megfelelő csempéjét.</span><span class="sxs-lookup"><span data-stu-id="54565-109">You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard.</span></span> <span data-ttu-id="54565-110">Megjelenik egy lap, amelyen megtekintheti az összes funkciót az összes kiadáshoz, amelyeket támogat a Funkciókezelés élmény.</span><span class="sxs-lookup"><span data-stu-id="54565-110">You will see a page that shows a list of features for all releases that are supported by the Feature management experience.</span></span> <span data-ttu-id="54565-111">Idővel a Microsoft javítja A Funkciókezelés élményét, így további funkciókat is kínál majd, amelyek segítik a funkciók kezelését.</span><span class="sxs-lookup"><span data-stu-id="54565-111">Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.</span></span>
+
+<span data-ttu-id="54565-112">A funkciólista a következő információkat tartalmazza:</span><span class="sxs-lookup"><span data-stu-id="54565-112">The feature list includes the following information:</span></span>
+
+- <span data-ttu-id="54565-113">**Funkció neve** – A hozzáadott funkció leírása.</span><span class="sxs-lookup"><span data-stu-id="54565-113">**Feature name** – A description of the feature that was added.</span></span>
+- <span data-ttu-id="54565-114">**Engedélyezett állapot** – Egy szimbólum azt jelzi, hogy be van-e kapcsolva a funkció (pipa),nincs bekapcsolva (üres), ütemezve van bekapcsolásra (óra), vagy kötelezően ebe van kapcsolva (lakat).</span><span class="sxs-lookup"><span data-stu-id="54565-114">**Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), or is mandatorily turned on (lock).</span></span> <span data-ttu-id="54565-115">Az itt megjelenített beállítás minden jogi személynél használatos.</span><span class="sxs-lookup"><span data-stu-id="54565-115">The setting that is shown here is used for all legal entities.</span></span> <span data-ttu-id="54565-116">Ne felejtse el, hogy ha a funkció be is van kapcsolva, a biztonság szabályozza azt.</span><span class="sxs-lookup"><span data-stu-id="54565-116">Note that even when a feature has been turned on, it's still controlled by security.</span></span> <span data-ttu-id="54565-117">Ennélfogva a funkció csak azoknak a felhasználóknak érhető el, akik hozzáférhetnek a biztonsági szerepkörük alapján.</span><span class="sxs-lookup"><span data-stu-id="54565-117">Therefore, the feature will be available only to users who have access to it, based on their security role.</span></span> <span data-ttu-id="54565-118">Csak olyan jogi személyekben érhető el, amelyekhez a felhasználó hozzáfér.</span><span class="sxs-lookup"><span data-stu-id="54565-118">It will also be available only in legal entities that the user has access to.</span></span>
+- <span data-ttu-id="54565-119">**Engedélyezési dátum** – Az a dátum, amikor a funkciót bekapcsolták, vagy ütemezve van a bekapcsolásra.</span><span class="sxs-lookup"><span data-stu-id="54565-119">**Enable date** – The date when the feature was turned on or is scheduled to be turned on.</span></span>
+- <span data-ttu-id="54565-120">**Funkció hozzáadása** – Az a dátum, amikor a funkciót hozzáadták a környezethez.</span><span class="sxs-lookup"><span data-stu-id="54565-120">**Feature added** – The date when the feature was added to your environment.</span></span> <span data-ttu-id="54565-121">A program automatikusan beírja ezt a dátumot, amikor a havi kiadási ciklus során frissíti a környezetet.</span><span class="sxs-lookup"><span data-stu-id="54565-121">This date is automatically entered when you update your environment during the monthly release cycles.</span></span>
+- <span data-ttu-id="54565-122">**Modul** – Az új funkció által érintett modul.</span><span class="sxs-lookup"><span data-stu-id="54565-122">**Module** – The module that is affected by the new feature.</span></span>
+
+<span data-ttu-id="54565-123">Ha kiválaszt egy funkciót, akkor a részleteket ablaktáblában, a szolgáltatások listájának jobb oldalán megjelennek a további információk.</span><span class="sxs-lookup"><span data-stu-id="54565-123">When you select a feature, additional information appears in the details pane to the right of the feature list.</span></span> <span data-ttu-id="54565-124">A ablaktábla tetején látható a funkció neve, a funkció hozzáadásának dátuma, a funkció által érintett modul, valamint egy **További információk** hivatkozás.</span><span class="sxs-lookup"><span data-stu-id="54565-124">At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link.</span></span> <span data-ttu-id="54565-125">Erre a hivatkozásra kattintva megtekintheti a funkció dokumentációját.</span><span class="sxs-lookup"><span data-stu-id="54565-125">Select this link to view the documentation for the feature.</span></span> <span data-ttu-id="54565-126">Ha a dokumentáció nem érhető el, akkor egy ideiglenes oldalra kerül.</span><span class="sxs-lookup"><span data-stu-id="54565-126">If documentation isn't available, you're taken to a temporary page.</span></span> <span data-ttu-id="54565-127">A részleteket tartalmazó ablaktábla tartalmaz egy **Megjegyzések** mezőt is, amelybe felveheti a saját megjegyzéseit a funkcióval kapcsolatosan.</span><span class="sxs-lookup"><span data-stu-id="54565-127">The details pane also includes a **Comments** field where you can add your own comments about the feature.</span></span>
+
+<span data-ttu-id="54565-128">A **Funkciókezelés** munkaterület több lapot is tartalmaz, amelyek mindegyikén a funkciók listája látható.</span><span class="sxs-lookup"><span data-stu-id="54565-128">The **Feature management** workspace also has several tabs, each of which shows a list of features.</span></span>
+
+- <span data-ttu-id="54565-129">**Új** – Ez a lap a legutóbbi havi frissítés óta hozzáadott összes funkciót jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="54565-129">**New** – This tab shows all features that have been added since the last monthly update.</span></span> <span data-ttu-id="54565-130">Ha kihagyott egy havi frissítést, akkor a lap megjeleníti a legutóbbi frissítés óta hozzáadott összes új funkciót.</span><span class="sxs-lookup"><span data-stu-id="54565-130">If you've skipped any monthly updates, the tab shows all the new features that have been added since the last time that you updated.</span></span> <span data-ttu-id="54565-131">A legújabb funkciók a lista tetején jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="54565-131">The newest features appear at the top of the list.</span></span> <span data-ttu-id="54565-132">Az új funkciók száma összesen a lap felső részén található csempén jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="54565-132">The total number of new features is also shown on a tile at the top of the page.</span></span>
+- <span data-ttu-id="54565-133">**Nincs engedélyezve** – Ezen a lapon látható az összes olyan funkció, amely még nem lett bekapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-133">**Not enabled** – This tab shows all features that haven't been turned on.</span></span> <span data-ttu-id="54565-134">A legújabb funkciók a lista tetején jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="54565-134">The newest features appear at the top of the list.</span></span> <span data-ttu-id="54565-135">Az új, még nem bekapcsolt funkciók száma összesen a lap felső részén található csempén jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="54565-135">The total number of new features that haven't been turned on is also shown on a tile at the top of the page.</span></span>
+- <span data-ttu-id="54565-136">**Ütemezve** – Ezen a lapon látható az összes olyan funkció, amelynek bekapcsolását egy jövőbeli dátumra ütemeztek.</span><span class="sxs-lookup"><span data-stu-id="54565-136">**Scheduled** – This tab shows all features that have been scheduled to be turned on in the future.</span></span> <span data-ttu-id="54565-137">A legkorábbi dátumra ütemezett szolgáltatások jelennek meg a lista tetején.</span><span class="sxs-lookup"><span data-stu-id="54565-137">The features that have the earliest scheduled date appear at the top of the list.</span></span> <span data-ttu-id="54565-138">Az ütemezett új funkciók száma összesen a lap felső részén található csempén jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="54565-138">The total number of schedule new features is also shown on a tile at the top of the page.</span></span>
+- <span data-ttu-id="54565-139">**Összes** – Ezen a lapon látható az összes funkció.</span><span class="sxs-lookup"><span data-stu-id="54565-139">**All** – This tab shows all features.</span></span> <span data-ttu-id="54565-140">A legújabb funkciók a lista tetején jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="54565-140">The newest features appear at the top of the list.</span></span>
+
+## <a name="turn-on-a-feature"></a><span data-ttu-id="54565-141">Funkció bekapcsolása</span><span class="sxs-lookup"><span data-stu-id="54565-141">Turn on a feature</span></span>
+
+<span data-ttu-id="54565-142">Ha egy funkció nincs bekapcsolva, az **Engedélyezés most** gomb látható a részletek ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="54565-142">If a feature hasn't been turned on, an **Enable Now** button appears in the details pane.</span></span> <span data-ttu-id="54565-143">Ezt a gombot használhatja a funkció bekapcsolásához.</span><span class="sxs-lookup"><span data-stu-id="54565-143">You can use this button to turn on the feature.</span></span>
+
+- <span data-ttu-id="54565-144">Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most**lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="54565-144">Select the feature to turn on, and then, in the details pane, select **Enable Now**.</span></span> <span data-ttu-id="54565-145">A funkció be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-145">The feature is turned on.</span></span>
+
+<span data-ttu-id="54565-146">Néhány funkció nem kapcsolható ki a bekapcsolás után.</span><span class="sxs-lookup"><span data-stu-id="54565-146">Some features can't be turned off after you turn them on.</span></span> <span data-ttu-id="54565-147">Ha a bekapcsolni kívánt funkció nem kapcsolható ki, egy figyelmeztetés jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="54565-147">If the feature that you're trying to turn on can't be turned off, you receive a warning.</span></span> <span data-ttu-id="54565-148">Ezen a ponton választhatja **Mégsem** lehetőséget a művelet visszavonásához és a szolgáltatás kikapcsolásának fenntartásához.</span><span class="sxs-lookup"><span data-stu-id="54565-148">At that point, you can select **Cancel** to cancel the operation and leave the feature turned off.</span></span> <span data-ttu-id="54565-149">Ha azonban az **Engedélyezés** lehetőséget választja a bekapcsoláshoz, és engedélyezi a funkciót, akkor nem fogja tudni kikapcsolni később.</span><span class="sxs-lookup"><span data-stu-id="54565-149">However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.</span></span>
+
+<span data-ttu-id="54565-150">Miután a funkció be van kapcsolva, a részletek ablaktáblán megjelenik egy üzenet a **További információ** hivatkozása alatt.</span><span class="sxs-lookup"><span data-stu-id="54565-150">After a feature is turned on, a message appears below the **Learn more** link in the details pane.</span></span> <span data-ttu-id="54565-151">Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a jövőbeli dátumot jelzi, amikor a funkció engedélyezve lesz a jövőben.</span><span class="sxs-lookup"><span data-stu-id="54565-151">This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on.</span></span> <span data-ttu-id="54565-152">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</span><span class="sxs-lookup"><span data-stu-id="54565-152">It appears every time that you select the feature in the feature list.</span></span>
+
+<span data-ttu-id="54565-153">A jövőre ütemezett bekapcsolású funkciók az **Ütemezett** lapon jelennek meg. A megadott dátum napján éjfélkor egy kötegfolyamat kapcsolja be őket, a rendszerdátum által képviselt időzóna alapján.</span><span class="sxs-lookup"><span data-stu-id="54565-153">Features that are scheduled to be turned on in the future appear on the **Scheduled** tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.</span></span>
+
+## <a name="reschedule-a-feature"></a><span data-ttu-id="54565-154">Funkció újraütemezése</span><span class="sxs-lookup"><span data-stu-id="54565-154">Reschedule a feature</span></span>
+
+<span data-ttu-id="54565-155">Ha egy funkció a jövőre vonatkozóan van bekapcsolásra ütemezve, az **Ütemezés** gomb látható a részletek ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="54565-155">If a feature has been scheduled to be turned on in the future, a **Schedule** button appears in the details pane.</span></span> <span data-ttu-id="54565-156">Ezzel a gombbal módosíthatja az **Engedélyezés dátuma** értékét egy másik dátumra.</span><span class="sxs-lookup"><span data-stu-id="54565-156">You can use this button to change the **Enable date** value to a different date.</span></span>
+
+1. <span data-ttu-id="54565-157">Válassza ki az ütemezett funkciót, amelyet át szeretne ütemezni, majd a részletek ablaktáblán válassza az **Ütemezés**lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="54565-157">Select the scheduled feature to reschedule, and then, in the details pane, select **Schedule**.</span></span>
+2. <span data-ttu-id="54565-158">A megjelenő párbeszédpanelen az **Engedélyezés dátuma** mezőben adja meg azt az új dátumot, amikor a funkciót be kell kapcsolni.</span><span class="sxs-lookup"><span data-stu-id="54565-158">In the dialog box that appears, in the **Enable date** field, specify the new date when the feature should be turned on.</span></span>
+3. <span data-ttu-id="54565-159">Válassza az **Engedélyezés** lehetőséget a funkció újraütemezéséhez, vagy a **Letiltás** lehetőséget az ütemezés megszüntetéséhez.</span><span class="sxs-lookup"><span data-stu-id="54565-159">Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.</span></span>
+
+## <a name="turn-off-a-feature"></a><span data-ttu-id="54565-160">Funkció kikapcsolása</span><span class="sxs-lookup"><span data-stu-id="54565-160">Turn off a feature</span></span>
+
+<span data-ttu-id="54565-161">Ha egy funkció már be van kapcsolva, a **Letiltás** gomb látható a részletek ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="54565-161">If a feature has already been turned on, a **Disable** button appears in the details pane.</span></span> <span data-ttu-id="54565-162">Ezt a gombot használhatja a funkció kikapcsolásához.</span><span class="sxs-lookup"><span data-stu-id="54565-162">You can use this button to turn off the feature.</span></span> <span data-ttu-id="54565-163">A **Letiltás** gomb nem érhető el, ha a funkciót annak bekapcsolása után nem lehet kikapcsolni.</span><span class="sxs-lookup"><span data-stu-id="54565-163">The **Disable** button isn't available if the feature can't be turned off after it's turned on.</span></span>
+
+- <span data-ttu-id="54565-164">Válassza ki a kikapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza a **Letiltás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="54565-164">Select the feature to turn off, and then, in the details pane, select **Disable**.</span></span> <span data-ttu-id="54565-165">A funkció ki van kapcsolva, és az **Engedélyezés dátuma** mező kiürült.</span><span class="sxs-lookup"><span data-stu-id="54565-165">The feature is turned off, and the **Enable date** field is cleared.</span></span>
+
+<span data-ttu-id="54565-166">Miután a funkció ki van kapcsolva, a részletek ablaktáblán megjelenik egy üzenet a **További információ** hivatkozása alatt.</span><span class="sxs-lookup"><span data-stu-id="54565-166">After a feature is turned off, a message appears below the **Learn more** link in the details pane.</span></span> <span data-ttu-id="54565-167">Ez az üzenet azt jelzi, hogy a funkció még nincs bekapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-167">This message states that the feature hasn't yet been turned on.</span></span> <span data-ttu-id="54565-168">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</span><span class="sxs-lookup"><span data-stu-id="54565-168">It appears every time that you select the feature in the feature list.</span></span> <span data-ttu-id="54565-169">A funkciók, amely még nem lettek bekapcsolva, a **Nem engedélyezett** lapon jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="54565-169">Features that haven't been turned on appear on the **Not enabled** tab.</span></span>
+
+## <a name="features-that-must-be-turned-on"></a><span data-ttu-id="54565-170">Funkciók, amelyeket be kell kapcsolni</span><span class="sxs-lookup"><span data-stu-id="54565-170">Features that must be turned on</span></span>
+
+<span data-ttu-id="54565-171">Néha a frissítés során kritikus fontosságú funkciók érkeznek, amelyeket be kell kapcsolni a frissítés során.</span><span class="sxs-lookup"><span data-stu-id="54565-171">Sometimes, a critical feature is delivered that must be turned on automatically when you do an update.</span></span> <span data-ttu-id="54565-172">Ezek a funkciók automatikusan be lesznek kapcsolva az **Engedélyezés dátuma** mezőben megadott dátumon.</span><span class="sxs-lookup"><span data-stu-id="54565-172">These features will be turned on automatically on the date that is specified in the **Enable date** field.</span></span> <span data-ttu-id="54565-173">Ezeknél a funkcióknál a részletek ablaktáblán megjelenik egy üzenet a **További információ** hivatkozása alatt.</span><span class="sxs-lookup"><span data-stu-id="54565-173">For these features, a message appears below the **Learn more** link in the details pane.</span></span> <span data-ttu-id="54565-174">Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a dátumot jelzi, amikor a funkció be lesz kapcsolva a jövőben.</span><span class="sxs-lookup"><span data-stu-id="54565-174">This message either states that the feature was turned on or indicates the future date when the feature will be turned on.</span></span> <span data-ttu-id="54565-175">Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.</span><span class="sxs-lookup"><span data-stu-id="54565-175">It appears every time that you select the feature in the feature list.</span></span>
+
+## <a name="turn-on-all-features-automatically"></a><span data-ttu-id="54565-176">Az összes funkció automatikus bekapcsolása</span><span class="sxs-lookup"><span data-stu-id="54565-176">Turn on all features automatically</span></span>
+
+<span data-ttu-id="54565-177">Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva, hacsak nem kötelező funkciók.</span><span class="sxs-lookup"><span data-stu-id="54565-177">By default, all features that are added to your environment are turned off, unless they are mandatory features.</span></span> <span data-ttu-id="54565-178">Ha viszont automatikusan be kívánja kapcsolni az összes új funkciót, akkor a munkaterület címe alatti legördülő lista segítségével módosíthatja, hogy mi történik az új szolgáltatások hozzáadásakor.</span><span class="sxs-lookup"><span data-stu-id="54565-178">However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.</span></span>
+
+- <span data-ttu-id="54565-179">Válassza az **Összes új funkció alapértelmezett módon engedélyezve** lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.</span><span class="sxs-lookup"><span data-stu-id="54565-179">Select **All new features will be enabled by default** to automatically turn on all new features when they are added to your environment.</span></span>
+- <span data-ttu-id="54565-180">Válassza az **Összes új funkció alapértelmezett módon letiltva** lehetőséget az összes új funkció kikapcsolásához, amikor hozzáadják őket a környezetéhez.</span><span class="sxs-lookup"><span data-stu-id="54565-180">Select **All new features will be disabled by default** to automatically turn off all new features when they are added to your environment.</span></span>
+
+## <a name="assigning-roles"></a><span data-ttu-id="54565-181">Szerepkörök hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="54565-181">Assigning roles</span></span>
+
+<span data-ttu-id="54565-182">A **Funkciókezelés** munkaterületet rendszeradminisztrátorok és a Funkciókezelő vagy Funkciómegtekintő szerepkörhöz rendelt felhasználók is megnyithatják.</span><span class="sxs-lookup"><span data-stu-id="54565-182">The **Feature management** workspace can be opened by system admins, and also by users who are assigned to the Feature manager role or the Feature viewer role.</span></span> <span data-ttu-id="54565-183">Ez a két szerepkör a Funkciókezelési gyakorlat támogatására jött létre.</span><span class="sxs-lookup"><span data-stu-id="54565-183">These two roles were created to support the Feature management experience.</span></span> <span data-ttu-id="54565-184">A szolgáltatáskezelő szerepkörben lévő felhasználók bármilyen funkciót be-és kikapcsolhatnak.</span><span class="sxs-lookup"><span data-stu-id="54565-184">Users in the Feature manager role can turn any feature on or off.</span></span> <span data-ttu-id="54565-185">Ezenkívül a funkcióhoz tartozó **Megjegyzések** mezőt is módosíthatják.</span><span class="sxs-lookup"><span data-stu-id="54565-185">They can also update the **Comments** field for the feature.</span></span> <span data-ttu-id="54565-186">A funkciómegtekintő szerepkör felhasználói csak megtekinthetik a **Funkciókezelés** munkaterületet.</span><span class="sxs-lookup"><span data-stu-id="54565-186">Users in the Feature viewer role can only view the **Feature management** workspace.</span></span> <span data-ttu-id="54565-187">Nem kapcsolhatnak be és ki funkciókat.</span><span class="sxs-lookup"><span data-stu-id="54565-187">They can't turn features on or off.</span></span>
+
+<span data-ttu-id="54565-188">A funkciókezelő szerepkör és a funkciómegtekintő szerepkör nem bírálja felül a felhasználó által megadott biztonságot.</span><span class="sxs-lookup"><span data-stu-id="54565-188">The Feature manager role and Feature viewer role don't override the existing security that a user has.</span></span> <span data-ttu-id="54565-189">Ők csak azt szabályozzák, hogy a felhasználó ki- és bekapcsolhatja-e a funkciókat.</span><span class="sxs-lookup"><span data-stu-id="54565-189">They just control whether the user can turn features on and off.</span></span> <span data-ttu-id="54565-190">Nem biztosítanak hozzáférést magukhoz a funkciókhoz.</span><span class="sxs-lookup"><span data-stu-id="54565-190">They don't provide access to the features themselves.</span></span>
+
+## <a name="features-that-use-configuration-keys"></a><span data-ttu-id="54565-191">A konfigurációs kulcsokat használó funkciók</span><span class="sxs-lookup"><span data-stu-id="54565-191">Features that use configuration keys</span></span>
+
+<span data-ttu-id="54565-192">Ha egy funkció konfigurációs kulcsot használ, de a konfigurációs kulcs nincs bekapcsolva, akkor a **Funkciókezelés** munkaterület nem jeleníti meg a funkciót a választható funkciók listáján.</span><span class="sxs-lookup"><span data-stu-id="54565-192">If a feature uses a configuration key, but the configuration key isn't turned on, the **Feature management** workspace doesn't show the feature in the list of available features.</span></span> <span data-ttu-id="54565-193">Miután bekapcsolta a konfigurációs kulcsot, frissítenie kell a funkciók listáját a **Frissítések ellenőrzése** menüelem használatával.</span><span class="sxs-lookup"><span data-stu-id="54565-193">After you turn on the configuration key, you must update the feature list by using the **Check for update** menu item.</span></span> <span data-ttu-id="54565-194">Ez a funkció aztán megjelenik a funkciók listájában.</span><span class="sxs-lookup"><span data-stu-id="54565-194">The feature then appears in the feature list.</span></span>
+
+<span data-ttu-id="54565-195">Ha kikapcsolja a konfigurációs kulcsot, akkor a funkció nem törlődik a funkciók listájából.</span><span class="sxs-lookup"><span data-stu-id="54565-195">If you turn off the configuration key, the feature isn't removed from the feature list.</span></span>
+
+## <a name="data-entities"></a><span data-ttu-id="54565-196">Adatentitások</span><span class="sxs-lookup"><span data-stu-id="54565-196">Data entities</span></span>
+
+<span data-ttu-id="54565-197">A **Funkciókezelés** nevű adatentitás segítségével exportálhatja a Funkciókezelési beállításokat egy környezetből, majd importálhatja őket más környezetbe.</span><span class="sxs-lookup"><span data-stu-id="54565-197">A data entity that is named **Feature management** lets you export the Feature management settings from one environment and then import them into another environment.</span></span> <span data-ttu-id="54565-198">Ez az entitás csak a meglévő funkciókat frissíti.</span><span class="sxs-lookup"><span data-stu-id="54565-198">This entity updates only existing features.</span></span> <span data-ttu-id="54565-199">Az entitás üzleti logikája azt is segít szavatolni, hogy a **Funkciókezelés** munkaterületen ugyanazokat a szabályokat alkalmazza a program, amikor az importálás megtörtént.</span><span class="sxs-lookup"><span data-stu-id="54565-199">The business logic in the entity also helps guarantee that the same rules that are used on the **Feature management** workspace will be applied when the import is done.</span></span> <span data-ttu-id="54565-200">Például a kötelező funkció beállítását nem lehet felülbírálni úgy, hogy a dátumot eltávolítja az importálás során.</span><span class="sxs-lookup"><span data-stu-id="54565-200">For example, you can't override a mandatory feature setting by removing the date during import.</span></span>
+
+<span data-ttu-id="54565-201">A következő példák azt mutatják be, hogy mi történik, ha a **Funkciókezelés** entitást használja az adatok importálásához.</span><span class="sxs-lookup"><span data-stu-id="54565-201">The following examples describe what occurs when you use the **Feature management** entity to import data.</span></span>
+
+- <span data-ttu-id="54565-202">Ha az **Engedélyezett** mező értékét **Igen**értékre módosítja, akkor a funkció be van kapcsolva, és az **Engedélyezés dátuma** mező az aktuális dátumra van állítva.</span><span class="sxs-lookup"><span data-stu-id="54565-202">If you change the value of the **Enabled** field to **Yes**, the feature is turned on, and the **Enable date** field is set to the current date.</span></span>
+- <span data-ttu-id="54565-203">Ha az **Engedélyezett** mező értékét **Nem** értékre módosítja, vagy az **EnableDate** mezőt üresen hagyja, akkor a funkció ki van kapcsolva, és az **Engedélyezés dátuma** mező törlődik.</span><span class="sxs-lookup"><span data-stu-id="54565-203">If you change the value of the **Enabled** field to **No** or leave the **EnableDate** field blank, the feature is turned off, and the **Enable date** field is cleared.</span></span> <span data-ttu-id="54565-204">Nem lehet kikapcsolni a kötelező funkciókat vagy egy olyan funkciót, amely nem kapcsolható ki, ha be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-204">You can't turn off a mandatory feature or a feature that can't be turned off after it's turned on.</span></span>
+- <span data-ttu-id="54565-205">Ha az **EnableDate** mező értékét a jövőbeli dátumra módosítja, akkor a szolgáltatás erre a dátumra van ütemezve.</span><span class="sxs-lookup"><span data-stu-id="54565-205">If you change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.</span></span>
+- <span data-ttu-id="54565-206">Ha az **Engedélyezett** mező értékét **Igen** értékre módosítja, és az **EnableDate** mező értékét egy jövőbeli dátumra állítja, akkor a funkció az adott dátumra lesz ütemezve.</span><span class="sxs-lookup"><span data-stu-id="54565-206">If you change the value of the **Enabled** field to **Yes** and change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.</span></span> 
+- <span data-ttu-id="54565-207">Ha az **Engedélyezett** mező értékét **Nem** értékre módosítja, de az **EnableDate** mező értékét egy jövőbeli dátumra állítja, akkor a funkció az adott dátumra lesz ütemezve.</span><span class="sxs-lookup"><span data-stu-id="54565-207">If you change the value of the **Enabled** field to **No**, but you also change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.</span></span>
+- <span data-ttu-id="54565-208">Ha egy funkció be van kapcsolva, és olyan **EnableDate** -mezőt ad hozzá, amely a jövőbeli dátumra van állítva, akkor a funkció továbbra is be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="54565-208">If a feature is turned on, and you add an **EnableDate** field that is set to a future date, the feature remains turned on.</span></span> <span data-ttu-id="54565-209">A funkció újraütemezéséhez az **Engedélyezett** mezőt **Nem** értékre kell állítani.</span><span class="sxs-lookup"><span data-stu-id="54565-209">To reschedule the feature, you must change the **Enabled** field to **No**.</span></span>
+
+## <a name="feature-management-and-flighting"></a><span data-ttu-id="54565-210">Funkciókezelés és tesztelés</span><span class="sxs-lookup"><span data-stu-id="54565-210">Feature management and flighting</span></span>
+
+<span data-ttu-id="54565-211">A funkciókezelés funkcióval szabályozhatja az egyes kiadásokban szállított funkciókat.</span><span class="sxs-lookup"><span data-stu-id="54565-211">Feature management lets you to control the features that are delivered in each release.</span></span> <span data-ttu-id="54565-212">A tesztelés lehetővé teszi a Microsoft Teams számára, hogy korlátozott számú ügyfél számára adjanak ki funkciókat, így a szolgáltatások tesztelése és ellenőrzése nem érinti az összes ügyfelet.</span><span class="sxs-lookup"><span data-stu-id="54565-212">Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers.</span></span> <span data-ttu-id="54565-213">A funkciókezelés nem szabályozza a funkciók tesztelését.</span><span class="sxs-lookup"><span data-stu-id="54565-213">Feature management doesn't control the flighting of any features.</span></span>
+
+## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a><span data-ttu-id="54565-214">A Funkciókezelés használata az ISV-funkciók és az egyéni funkciók bekapcsolásához</span><span class="sxs-lookup"><span data-stu-id="54565-214">Using Feature management to turn on ISV features or custom features</span></span>
+
+<span data-ttu-id="54565-215">A funkciókezelés jelenleg nem érhető el a független szoftvergyártók (ISV-k) funkcióihoz és egyéni funkciókhoz.</span><span class="sxs-lookup"><span data-stu-id="54565-215">Feature management is currently unavailable for features from independent software vendors (ISVs) and custom features.</span></span> <span data-ttu-id="54565-216">A Microsoft azonban további funkciókat ad hozzá a Funkciókezelés fejlesztéséhez.</span><span class="sxs-lookup"><span data-stu-id="54565-216">However, Microsoft is adding more functionality to enhance Feature management.</span></span> <span data-ttu-id="54565-217">A fejlesztések befejezését követően a Microsoft minden funkció számára elérhetővé teszi a Funkciókezelést, és útmutatást nyújt a funkciók használatához szükséges frissítéshez.</span><span class="sxs-lookup"><span data-stu-id="54565-217">After those enhancements are completed, Microsoft will make Feature management available to all features and provide instructions for updating your features to use it.</span></span>
