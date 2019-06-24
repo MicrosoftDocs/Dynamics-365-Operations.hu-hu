@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552717"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606895"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok
 
@@ -176,8 +176,8 @@ Kövesse az alábbi lépéseket attribútumcsoportok hozzárendeléséhez kateg�
 > [!NOTE]
 > Ezzel az eljárással attribútumcsoportokat is hozzárendelhet a kategóriákhoz a csatorna navigációs kategóriahierarchiájában és a kiegészítő termékek kategóriahierarchiájában. A 2. lépésben használja a következő navigációs elérési utakat:
 >
-> - **Kiskereskedelem** &gt; **Kategória és termék kezelése** &gt; **Csatorna navigációs kategóriák**
-> - **Kiskereskedelem** &gt; **Kategória és termék kezelése** &gt; **Kiegészítő termékkategóriák**.
+> - Kiskereskedelem &gt; Kategória és termék kezelése &gt; Csatorna navigációs kategóriák
+> - Kiskereskedelem &gt; Kategória és termék kezelése &gt; Kiegészítő termékkategóriák
 
 ### <a name="assign-attribute-groups-to-retail-stores"></a>Attribútumcsoportok hozzárendelése kiskereskedelmi boltokhoz
 

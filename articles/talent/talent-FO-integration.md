@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518229"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617343"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent és Dynamics 365 for Finance and Operations integráció – GYIK.
 
@@ -46,7 +46,7 @@ Pénzügyi dimenziók jelenleg nem szerepelnek a Common Data Service szolgáltat
 
 Azon adatok esetében, amelyek léteznek a Finance and Operations alkalmazásban, de a Talent rendszerben nem nem, a Talent **Hivatkozások beállítása** funkciójával kapcsolja össze. A Talent és a Finance and Operations közötti kapcsolatok beállításával kapcsolatos további tudnivalókat lásd: [A Dynamics 365 for Talent Core HR újdonságai és módosításai (2018. október 31.)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Pénzügyi dimenziók leképezése](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Bizonyos esetekben, amikor az alkalmazottakat importálok inaktív dolgozókként kerülnek be a Finance and Operations rendszerbe. Miért?
 
@@ -60,14 +60,14 @@ Adatszinkronizálás végrehajtási ütemezést követi. Az integráció átvesz
 
 A „Speciális lekérdezés” használatával szűrheti és átformálhatja a forrásadatokat a célhelyre történő továbbítás előtt.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Aktív dolgozók speciális lekérdezése](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Meghatározhatom, hogy mely mezők legyenek átküldve a Finance and Operations rendszerbe egy adott entitáshoz?
 
 Mezők hozzáadhatók vagy eltávolíthatók az integrációs feladatból. Nem minden meglévő a Common Data Service entitásban meglévő mező lesz kitöltve a Core HR-ből.
 További adatok is ki lehet kitölteni a PowerApps-ől.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Mezők hozzáadása vagy eltávolítása az integrációs feladatból](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Kötegelt feladatként állítottam be az integrációt, de a Talent kapcsolata megszakadt a célrendszerrel. Hogyan lehet elküldeni a célrendszernek ugyanazokat a módosításokat?
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573372"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606849"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
 
@@ -40,13 +40,13 @@ A Microsoft Dynamics 365 for Retail használata esetén megjeleníthet termékaj
 ## <a name="open-layout-designer"></a>Az Elrendezéstervező megnyitása
 
 1. Lépjen a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztár** &gt; **Képernyő-elrendezések** lehetőségre.
-2. A vezérlővel bővíteni kívánt képernyő megkereséséhez használja a gyorsszűrőt. Például szűrjön a **Képernyő-elrendezés azonosítója** mezőre „F2CP16:9M” érték használatával.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán. Például válassza a „Név: F2CP16:9M Képernyő-elrendezés azonosítója: F2CP16:9M” lehetőséget.
+2. A vezérlővel bővíteni kívánt képernyő megkereséséhez használja a gyorsszűrőt. Például szűrjön a **Képernyő-elrendezés azonosítója** mezőre az **F2CP16:9M** érték használatával.
+3. Keresse meg és jelölje ki a kívánt rekordot a listán. Például válassza a **Név: F2CP16:9M Képernyő-elrendezés azonosítója: F2CP16:9M** lehetőséget.
 4. Kattintson az **Elrendezéstervező** elemre.
 5. Kövesse az utasításokat az elrendezéstervező elindításához. Amikor a rendszer kéri a hitelesítő adatokat, adja meg ugyanazokat a hitelesítő adatokat, amelyekkel az Elrendezéstervezőt a **Képernyő-elrendezések** oldalról elindította.
 6. A bejelentkezéstkor az alábbihoz hasonló oldal jelenik meg. Az elrendezés a bolthoz végzett testreszabásoktól függően eltérő lesz.
 
-    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Elrendezéstervező](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Válasszon ki egy megjelenítési beállítást
 
@@ -59,11 +59,11 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 1. Csökkentse a tranzakciós sorok részletei terület magasságát úgy, hogy a tőle balra eső ügyfélpanellel egyforma magas legyen.
 
-    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![A tranzakciós sorok részletezési területének magassága csökkentve](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. A bal oldali menüből húzza az ajánlások vezérlőt a tranzakciós sor részletei terület és a tranzakciós képernyőn lent középen látható gombrács közé. Méretezze át a vezérlőt, hogy elférjen.
 
-    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Javaslatok vezérlő az elrendezéshez adva](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Az **X** gombra kattintva zárja be az Elrendezéstervezőt.
 4. A Dynamics 365 for Retail alkalmazásban lépjen a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
@@ -75,13 +75,13 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 1. Kattintson a jobb gombbal az oldal jobb oldalán található gombrács utolsó lapja alatti üres területre.
 2. Kattintson a **Testreszabás** lehetőségre.
 
-    [![pic-5](./media/pic-5.png)](./media/pic-5.png)
+    [![Testreszabás – Lapvezérlő párbeszédpanel](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kattintson az **Új lap** elemre.
 4. Keresse meg a most felvett új lapot. Ehhez lehet, hogy le kell görgetnie.
 5. A **Tartalom** legördülő menüben válassza az **Ajánlott termékek** elemet.
 
-    [![pic-6](./media/pic-6.png)](./media/pic-6.png)
+    [![Javasolt termékek kiválasztása a Tartalmak mezőben](./media/pic-6.png)](./media/pic-6.png)
 
 6. A **Címke** mezőben adjon meg egy nevet a javaslatok lapnak Például „Javasolt termékek”.
 7. A **Kép** mezőben válassza ki a lapon megjelenítendő képet.

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530270"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577980"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
@@ -68,7 +68,7 @@ A következő ábrán az élő tartalom beállítása látható a rácsgombterve
 
 ![Élő tartalom beállítása a rácsgombtervezőben](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
 
-Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása**adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a Dynamics 365 for Finance and Operations rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail > Retail IT > Elosztási ütemezés** menüpontot, és futtassa a 1090 (Kasszák) munkát az elrendezésmódosítások szinkronizálásához 
+Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása**adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a Dynamics 365 for Finance and Operations rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail \> Retail IT \> Elosztási ütemezés** menüpontot, és futtassa a 1090 (Pénztárgépek) feladatot az elrendezésmódosítások szinkronizálásához
 
 ![A pénztár által használt képernyőelrendezés megkeresése](./media/Choose_screen_layout.png "Képernyőelrendezés megkeresése ")
 

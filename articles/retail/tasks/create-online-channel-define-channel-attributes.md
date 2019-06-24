@@ -3,7 +3,7 @@ title: Online csatorna létrehozása és a csatorna attribútumainak meghatároz
 description: Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és ezt hogyan adhatja hozzá a szervezeti hierarchiához.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569521"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618296"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Online csatorna létrehozása és a csatorna attribútumainak meghatározása
 
@@ -60,4 +60,10 @@ Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és
 9. A Közzététel gombra kattintva megnyithatja a legördülő párbeszédablakot.
 10. Az Érvényesség dátuma mezőben adjon meg egy dátumot és időpontot.
 11. Kattintson a Közzététel parancsra.
+
+## <a name="configure-orders-for-near-realtime-notification"></a>Megrendelések konfigurálása a szinte valós idejű értesítésekhez
+1. Lépjen a Kiskereskedelem > Központ beállítása > Paraméterek > Kiskereskedelmi paraméterek menüpontra.
+2. A Valós idejű szolgáltatás használata az elektronikus kereskedelmi megrendelés létrehozásához beállítást állítsa „Igen” értékre.
+3. Futtassa a 1070 elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba. 
+
 

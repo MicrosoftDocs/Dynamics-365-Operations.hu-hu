@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546830"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595685"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -63,7 +63,7 @@ Kétféleképpen vásárolhat előfizetést az on-premises telepítéseknél
 
 ### <a name="buy-through-volume-licensing"></a>Vásárlás mennyiségalapú licenceléssel
 
-Ha szervezete 250 vagy több Dynamics 365-felhasználóval rendelkezik, akkor érdemes lehet megismernie a [mennyiségi licencen alapuló megállapodást](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+Ha szervezete 250 vagy több Dynamics 365-felhasználóval rendelkezik, akkor érdemes lehet megismernie a [mennyiségi licencen alapuló megállapodást](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 A mennyiségi licencelés esetén a Finance and Operations a következő módokon érhető el:
 
@@ -87,7 +87,7 @@ A Microsoft rugalmas, iparági szinten is vezető támogatást, szolgáltatások
 További információ:
 
 - [Dynamics 365 támogatás](https://www.microsoft.com/dynamics365/support)
-- [Rövid útmutató a Microsoft Dynamics felhőalapú szolgáltatási támogatásának előnyeiről](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Rövid útmutató a Microsoft Dynamics felhőalapú szolgáltatási támogatásának előnyeiről](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>4\. lépés: A FastTrack megismerése és a telepítés megtervezése
 

@@ -1,5 +1,5 @@
 ---
-title: Elosztott rendeléskezelés (DOM)
+title: Felosztott rendeléskezelés (DOM)
 description: Ez a témakör a Microsoft Dynamics 365 for Retail elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0251321f02d533326e1e8b642e30002a633b6871
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565806"
 ---
-# <a name="distributed-order-management-dom"></a>Elosztott rendeléskezelés (DOM)
+# <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
 [!include [banner](includes/banner.md)]
 
@@ -42,11 +42,11 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 ## <a name="set-up-dom"></a>DOM beállítása
 
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
-2. A **Konfigurációs kulcsok** lapon bontsa ki a **Kiskereskedelmi** csomópontot, majd válassza ki az **Elosztott rendeléskezelés** jelölőnégyzetet.
-3. Lépjen a **Kiskereskedelmi \> Elosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
+2. A **Konfigurációs kulcsok** lapon bontsa ki a **Kiskereskedelmi** csomópontot, majd válassza ki az **Felosztott rendeléskezelés** jelölőnégyzetet.
+3. Lépjen a **Kiskereskedelmi \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 4. Az **Általános** lapon állítsa be a következő értékeket:
 
-    - **Elosztott rendeléskezelés engedélyezése** – Állítsa a beállítás értékét **Igen** értékre.
+    - **Felosztott rendeléskezelés engedélyezése** – Állítsa a beállítás értékét **Igen** értékre.
     - **Bing Térképek-használat megerősítése a DOM-hoz** – Állítsa a beállítást **Igen** értékre.
 
         > [!NOTE]
@@ -71,7 +71,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         >
         > Bár az Egyszerűsített feloldás ugyanolyan képességekkel rendelkezik, mint a Termelés feloldás, különböző korlátai vannak, például a teljesítményben (az egy futás során kezelt rendelések és rendelési sorok száma) és az eredmények konvergenciája (bizonyos esetekben a rendelések kötegével nem a legjobb eredményt lehet elérni).
      
-6. Lépjen vissza a **Retail \> Elosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
+6. Lépjen vissza a **Retail \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 7. A **Számsorozatok** lapon rendelje hozzá a szükséges számsorozatokat a különböző DOM-entitásokhoz.
 
     > [!NOTE]
@@ -84,7 +84,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     3. Válassza a **Mentés** lehetőséget.
     4. Ha egyetlen helyet szeretne a csoporthoz hozzáadni, válassza a **Sor hozzáadása** elemet. Továbbá a **Sorok hozzáadása** elemmel egyszerre több helyet is hozzáadhat.
 
-9. A szabályok definiálásához ugorjon a **Retail \> Elosztott rendeléskezelés \> Beállítás \> Szabályok kezelése** lehetőségre. Jelenleg a következő DOM-szabályok támogatottak:
+9. A szabályok definiálásához ugorjon a **Retail \> Felosztott rendeléskezelés \> Beállítás \> Szabályok kezelése** lehetőségre. Jelenleg a következő DOM-szabályok támogatottak:
 
     - **Minimumkészlet szabálya** – Ez a szabálytípus lehetővé teszi a szervezetnek, hogy elkülönítsék egy termék bizonyos mennyiségét rendelésteljesítéstől eltérő célra. Például előfordulhat, hogy a szervezet nem szeretné, hogy a DOM a teljes készletet figyelembe vegye a rendelésteljesítéshez, ami az üzletben található. Ehelyett szeretnék a készlet egy részét a besétáló vásárlók számára fenntartani. Ilyen típusú szabály használatakor meghatározhatja az adott termékkategóriára, egy egyéni termékre vagy termékváltozatra vonatkozó minimum fenntartandó készlet mennyiségét helyekre vagy helyek csoportjára lebontva.
     - **Teljesítés helye prioritási szabály** – Ezzel a szabálytípussal a szervezetek meghatározhatják a helyek hierarchiáját, amelynek megfelelő prioritást vesz a DOM-motor figyelembe, amikor a meghatározott termék teljesítési helyét igyekszik beazonosítani. A prioritások érvényes tartománya 1 és 10 közötti, ahol 1 a legmagasabb, 10 pedig a legalacsonyabb prioritást jelzi. A magasabb prioritással rendelkező helyeket a rendszer előbb veszi figyelembe, mint az alacsonyabb prioritással rendelkezőket. Ha a szabályt szigorú korlátként határozza meg, a rendeléseket csak a meghatározott prioritással rendelkező helyekre közvetíti a rendszer.
@@ -126,7 +126,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
 10. A teljesítési profilokat a rendszer szabályok, jogi személyek, értékesítésirendelés-források és kiszállítási módok gyűjteményének csoportosítására használja. Minden DOM-futás egy meghatározott teljesítési profilhoz tartozik. Így a szervezetek meghatározhatnak és lefuttathatnak szabályok egy sorozatát jogi személyek egy csoportjára, olyan rendeléseken, amelyek specifikus értékesítésirendelés-forrásokkal vagy szállítási módokkal rendelkeznek. Ezért tehát amennyiben különböző szabálycsoportokat kell lefuttatni a különböző értékesítésirendelés-források vagy kiszállítási módok esetén, a teljesítési profilokat ennek megfelelően lehet megadni. A teljesítési profilok beállításához kövesse az alábbi lépéseket:  
 
-    1. Lépjen a **Kiskereskedelmi \> Elosztott rendeléskezelés \> Beállítás \> Teljesítési profilok** lehetőségre.
+    1. Lépjen a **Kiskereskedelmi \> Felosztott rendeléskezelés \> Beállítás \> Teljesítési profilok** lehetőségre.
     2. Válassza az **Új** lehetőséget.
     3. Adjon meg értékeket a **Profil** és a **Leírás** mezőkben.
     4. Állítsa be az **Eredmények automatikus alkalmazása** lehetőséget. Ha ezt a beállítást **Igen** értékre állítja, akkor a profilhoz tartozó DOM-futás eredményeit a rendszer automatikusan alkalmazza az értékesítési rendelés soraira. Ha **Nem** értékre állítja, akkor az eredményeket csak a teljesítési tervben tudja megtekinteni. Ezeket a rendszer nem alkalmazza az értékesítési rendelés soraira.
@@ -153,7 +153,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
 A DOM csak kötegelt feladatban futtatható. A DOM futásokhoz tartozó kötegelt feladat konfigurálásához kövesse az alábbi lépéseket.
 
-1. Lépjen a **Kiskereskedelmi \> Elosztott rendeléskezelés \> Kötegfeldolgozás \> DOM-feldolgozási feladat beállítása** elemre.
+1. Lépjen a **Kiskereskedelmi \> Felosztott rendeléskezelés \> Kötegfeldolgozás \> DOM-feldolgozási feladat beállítása** elemre.
 1. A **Paraméterek** gyorslapon található **Teljesítési profil** mezőben válassza ki azt a profilt, amelyhez a DOM-ot futtatni kívánja.
 1. A **Futtatás a háttérben** gyorslapon található **Kötegcsoport** mezőben válasszon egy konfigurált kötegcsoportot.
 1. A **Feladatleírás** mezőbe írja be a kötegelt feladat nevét.
@@ -183,8 +183,8 @@ Ha a teljesítési profil **Automatikus alkalmazás** típusúra van állítva, 
 
 Az összes létrehozott teljesítési terv megtekintéséhez kövesse az alábbi lépéseket.
 
-1. Lépjen a **Kiskereskedelem \> Elosztott rendeléskezelés \> Elosztott rendeléskezelés** elemre.
-2. Az **Elosztott rendeléskezelés** munkaterületen válassza a **Teljesítési tervek** csempét.
+1. Lépjen a **Kiskereskedelem \> Felosztott rendeléskezelés \> Felosztott rendeléskezelés** elemre.
+2. Az **Felosztott rendeléskezelés** munkaterületen válassza a **Teljesítési tervek** csempét.
 3. Válassza a releváns rendelés teljesítési tervének azonosítóját a teljesítési terv megtekintéséhez.
 
     A teljesítési terv rendelési részletek szakaszában láthatók a futás részét képező, eredeti értékesítési rendelési sorok. A megszokott értékesítési rendelési sor mezőkön kívül a rendelési részletek szakasz az alábbi három, DOM-hoz kapcsolódó mezőt is tartalmazza:
@@ -217,7 +217,7 @@ A következő leírásban a rendelési sor beállításait ismerheti meg. A rend
 
 Amikor lefut egy DOM-feldolgozás, teljesítési tervek jönnek létre. Idővel a rendszer számos teljesítési tervet tárol már. A rendszer által tárolt nagy mennyiségű teljesítési terv kezelése érdekében konfigurálhat egy olyan kötegelt feladatot, amely törli a régebbi teljesítési terveket a **Megőrzési időszak (nap)** értékének megfelelően.
 
-1. Lépjen a **Kiskereskedelmi \> Elosztott rendeléskezelés \> Kötegfeldolgozás \> DOM-teljesítési adatok törlése feladat beállítása** elemre. 
+1. Lépjen a **Kiskereskedelmi \> Felosztott rendeléskezelés \> Kötegfeldolgozás \> DOM-teljesítési adatok törlése feladat beállítása** elemre. 
 1. A **Kötegcsoport** mezőben válasszon ki egy konfigurált kötegcsoportot.
 1. Válassza ki az **Ismétlődés** lehetőséget, és adja meg a kötegelt feladat ismétlődését.
 1. Válassza ki az **OK** lehetőséget.

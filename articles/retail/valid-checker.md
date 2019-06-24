@@ -3,7 +3,7 @@ title: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 description: Ebben a témakörben részletes leírást találhat a Microsoft Dynamics 365 for Retail kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkciójáról.
 author: josaw1
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 05/30/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 972c4d6b244eebc85cc801353ce8fb25ecbc0655
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517081"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617320"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 
@@ -33,12 +33,12 @@ ms.locfileid: "1517081"
 
 Ebben a témakörben részletes leírást találhat a Microsoft Dynamics 365 for Finance and Operations 8.1.3 verziójában bemutatott kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkcióról. A konzisztencia-ellenőrző azonosítja és elkülöníti az inkonzisztens tranzakciókat, mielőtt a kimutatásfeladási folyamat kezeli őket.
 
-Egy kimutatás feladása során a Retail szolgáltatásban a feladás sikertelen lehet, ha inkonzisztens adatok találhatók a kiskereskedelmi tranzakciók táblájában. Az adatokkal kapcsolatos problémákat a pénztár (POS) alkalmazás előre nem látható problémái okozhatják, vagy ha a tranzakciók importálása nem megfelelően történt egy külső fél pénztárrendszeréből. Az alábbiakban az inkonzisztenciák megjelenésére mutatunk be példákat: 
+Egy kimutatás feladása során a Microsoft Dynamics 365 for Retail szolgáltatásban a feladás sikertelen lehet, ha inkonzisztens adatok találhatók a kiskereskedelmi tranzakciók táblájában. Az adatokkal kapcsolatos problémákat a pénztár (POS) alkalmazás előre nem látható problémái okozhatják, vagy ha a tranzakciók importálása nem megfelelően történt egy külső fél pénztárrendszeréből. Az alábbiakban az inkonzisztenciák megjelenésére mutatunk be példákat: 
 
-  - A fejléctáblában szereplő tranzakciós végösszeg nem egyezik meg a sorokban található tranzakciók összegével.
-  - A fejléctábla sorainak száma nem egyezik meg a tranzakciós tábla sorainak számával.
-  - A fejléctáblában szereplő adók nem egyeznek meg a sorokban szereplő adó összegével. 
-  
+- A fejléctáblában szereplő tranzakciós végösszeg nem egyezik meg a sorokban található tranzakciók összegével.
+- A fejléctábla sorainak száma nem egyezik meg a tranzakciós tábla sorainak számával.
+- A fejléctáblában szereplő adók nem egyeznek meg a sorokban szereplő adó összegével. 
+
 Ha a kimutatásfeladási folyamat feldolgozza az inkonzisztens tranzakciókat, akkor inkonzisztens értékesítési számlák és fizetési naplók keletkeznek, és emiatt a teljes kimutatásfeladási folyamat sikertelen lesz. Ha a kimutatásokat ebből az állapotból szeretné helyreállítani, ahhoz számos tranzakciós táblát érintő, komplex adathelyesbítési művelet szükséges. A kereskedelmi tranzakció konzisztencia-ellenőrzője megelőzi az ehhez hasonló problémák létrejöttét.
 
 Az alábbi ábrán a tranzakció konzisztencia-ellenőrzőjével végrehajtott feladási folyamat látható.
@@ -47,13 +47,24 @@ Az alábbi ábrán a tranzakció konzisztencia-ellenőrzőjével végrehajtott f
 
 Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kiskereskedelmi tranzakciós táblázatok konzisztenciáját az alábbi esetekben.
 
-- Vevői számla – Ellenőrzi, hogy a kiskereskedelmi tranzakciós táblában szereplő vevői számla létezik a HQ-ban a vevői alapadatok között.
-- Sorok száma – Ellenőrzi, hogy a tranzakciós fejléctáblában rögzített sorok száma megegyezik az értékesítési tranzakciók táblájában található sorok számával.
+- **Vevői számla** – Ellenőrzi, hogy a kiskereskedelmi tranzakciós táblában szereplő vevői számla létezik a HQ-ban a vevői alapadatok között.
+- **Sorok száma** – Ellenőrzi, hogy a tranzakciós fejléctáblában rögzített sorok száma megegyezik az értékesítési tranzakciók táblájában található sorok számával.
+- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Az ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban.
+- **Bruttó összeg** – Ellenőrzi, hogy a fejlécben szereplő bruttó összeg megfelel-e a sorokban található nettó összegek és az adó összegének összesítésével.
+- **Nettó összeg** – Ellenőrzi, hogy a fejlécben szereplő nettó összeg megfelel-e a sorokban található nettó összegek összesítésével.
+- **Alulfizetés/Túlfizetés** – Ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem haladja meg a maximális alulfizetés/túlfizetés konfigurációját.
+- **Engedmény összege** – Ellenőrzi, hogy az engedménytáblákban szereplő engedmény összege és a kiskereskedelmi tranzakció sorában szereplő engedmény összege konzisztens-e, és hogy a fejlécben található engedmény összege egyenlő-e a sorok engedményeinek összegével.
+- **Sorengedmény** – Ellenőrzi, hogy a tranzakciós sorban található sorengedmény megegyezik-e az adott tranzakciós sorhoz kapcsolódó engedménytábla összes sorának összegével.
+- **Ajándékutalvány-cikk** – A Retail alkalmazás nem támogatja az ajándékutalvány-cikkek visszaküldését. Azonban az ajándékutalvány egyenlegét ki lehet fizetni készpénzben. Ha az ajándékutalványcikket visszárusorként dolgozzák fel készpénzes kifizetési sor helyett, akkor a kimutatás feladási folyamata sikertelen lesz. Az ajándékutalvány-cikkek ellenőrzési folyamata segítségével garantálható, hogy a kiskereskedelmi tranzakciós táblákban szereplő, ajándékutalvány-cikkek visszaküldésére vonatkozó sorok ajándékutalvány készpénzes kifizetési sorok legyenek.
+- **Negatív ár** – Ellenőrzi, hogy nincsenek negatív árt tartalmazó tranzakciós sorok.
+- **Cikk és változat** – Ellenőrzi, hogy a tranzakciós sorban szereplő cikkek és változatok léteznek a cikk és a változat törzsadatfájljában.
 
 ## <a name="set-up-the-consistency-checker"></a>Konzisztencia-ellenőrző beállítása
-Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futás esetén a **Kiskereskedelem \> Kiskereskedelem IT \> POS-feladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
+
+Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futás esetén a **Kiskereskedelem \> Kiskereskedelem IT \> pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
 
 ## <a name="results-of-validation-process"></a>Ellenőrzési folyamat eredményei
+
 A kötegfolyamat által végzett ellenőrzés eredményeit a rendszer felcímkézi a megfelelő kiskereskedelmi tranzakcióra. A kiskereskedelmi tranzakció rekordján található **Ellenőrzés állapota** mező vagy **Sikeres** vagy **Hiba** értékre van beállítva, és az utolsó ellenőrzés futásának dátuma a **Legutóbbi ellenőrzés időpontja** mezőben látható.
 
 Ha további, ellenőrzési hibához kapcsolódó leíróbb jellegű hibaüzenetet szeretne megtekinteni, válassza ki a megfelelő kiskereskedelmi üzlet tranzakciós rekordját, majd kattintson az **Ellenőrzési hibák** gombra.

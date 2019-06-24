@@ -3,7 +3,7 @@ title: Talent üzembe helyezése
 description: Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 for Talent számára.
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576921"
 ---
 # <a name="provision-talent"></a>A Talent létesítése
 
@@ -47,13 +47,14 @@ A Talent használatának megkezdésével kapcsolatos tudnivalókhoz lásd az új
 LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
 1. Az LCS-projektben válassza a **Talent alkalmazás kezelése** csempét.
-2. A Talent alkalmazást mindig biztosítva van a Microsoft PowerApps környezetben annak érdekében, hogy biztosítsa a PowerApps integrációját és bővíthetőségét. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik PowerApps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a PowerApps adminisztrációs központjába. Kövesse a [PowerApps környezet létrehozása](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment) részben leírt lépéseket.
+2. Azt jelzi, hogy ez a Talent Védőfal- vagy termelési példánya. A korai előzetes funkciók elérhetők lehetnek a Védőfalpéldányokban, a korai visszajelzések és tesztelés érdekében. 
+3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
+4. A Talent alkalmazást mindig biztosítva van a Microsoft PowerApps környezetben annak érdekében, hogy biztosítsa a PowerApps integrációját és bővíthetőségét. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik PowerApps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a PowerApps adminisztrációs központjába. Kövesse a [PowerApps környezet létrehozása](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment) részben leírt lépéseket.
 
     > [!NOTE]
     > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Talentet létesítő bérlő adminisztrátort hozzá kell rendelni a PowerApps P2 licenchez. Ha szervezete nem rendelkezik PowerApps P2 licenccel, kaphat egyet a CSP-től vagy a [PowerApps árképzési lapon](https://powerapps.microsoft.com/en-us/pricing/).
 
-4. Válassza a **Hozzáadás** elemet, majd válassza ki a környezetet, amelybe létesíteni kívánja a Talent rendszert.
-5. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
+5. Válassza ki azt a környezetet, amelybe telepíteni szeretné a Talent szolgáltatást.
 6. Válassza az **Igen** lehetőséget a feltételek elfogadásához és a telepítés megkezdéséhez.
 
     Az új környezet megjelenik a bal oldali navigációs panelen látható környezetek listájában. Azonban a környezet nem indítható el mindaddig, amíg a telepítés állapota nem frissül **Telepítve** értékre. Ez a folyamat jellemzően csak pár percig tart. Ha a jogosultságkezelés folyamata sikertelen, kérje az Ügyfélszolgálat segítségét.

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571558"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577929"
 ---
 # <a name="retail-peripherals"></a>Kiskereskedelmi perifériák
 
@@ -295,7 +295,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>MEGJEGYZÉS: Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<p><strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>MEGJEGYZÉS: Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<p><strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Windows-illesztőprogram
-<blockquote>MEGJEGYZÉS: A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
+<p><strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</p>
 </li>
 <li>Hálózat</li>
 </ul>
@@ -404,7 +404,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>MEGJEGYZÉS: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<p><strong>Megjegyzés:</strong>: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Windows-illesztőprogram
-<blockquote>MEGJEGYZÉS: A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</blockquote>
+<p><strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</p>
 </li>
 <li>Hálózat</li>
 </ul>
@@ -491,7 +491,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <ul>
 <li>OPOS</li>
 <li>Hálózat
-<blockquote>MEGJEGYZÉS: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</blockquote>
+<p><strong>Megjegyzés:</strong>: Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</p>
 </li>
 </ul>
 </td>

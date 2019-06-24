@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502730"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595339"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -120,7 +120,7 @@ A következő táblázat az oszlopkorlátozás kódokat írja le.
 | Kiig.                     | Az oszlop összegeinek korlátozása periódushelyesbítési összegekre, ha vannak ilyen összegek elérhetőek. |
 | XAD                     | Az összegek korlátozása az oszlopban úgy, hogy a periódushelyesbítések ne jelenjenek meg. |
 | Tervezett átadás                      | Az összegek korlátozása az oszlopban úgy, hogy csak a feladott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek. |
-| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<blockquote>[!NOTE] Nem minden adatszolgáltató támogatja a feladatlan tranzakciókat. További információért tekintse át az <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>Microsoft Dynamics ERP rendszer adatintegrálási útmutatóját</a>.</blockquote> |
+| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<p><strong>Megjegyzés:</strong> Nem minden adatszolgáltató támogatja a fel nem adott tranzakciók használatát. További információért tekintse át az <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>Microsoft Dynamics ERP rendszer adatintegrálási útmutatóját</a>.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Oszlop korlátozása egy jelentési egységre
 
@@ -310,7 +310,7 @@ A **Nyomtatásvezérlő** cella olyan kódokat tartalmazhat, amelyek módosítj�
 | Nyomtatási vezérlőkód | Átszámítás                                     | Leírás |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Nem nyomtatandó                                     | Az ebben az oszlopban szereplő összegek kizárása a nyomtatott jelentésből és a számításokból. Nem nyomtatandó oszlopoknak a számításba való beiktatásához közvetlenül az oszlopra kell hivatkozni a számítási képletben. Például a nem nyomtatandó C oszlop szerepel a következő számításban: **B+C+D**. Azonban a nem nyomtatandó C oszlop nem szerepel a következő számításban: **B:D**. |
-| XCR                | Módosítsa a jelet, ha a jellemző soregyenlegmző egyenlege csak jóváírás | Költségvetés vagy különbözeti jelentés létrehozása, ahol a kedvezőtlen eltérés (például bevételi hiány vagy költségtúllépés) mindig negatív. Ha ezt a kódot **CALC** oszlopra használja, akkor megfordítja az oszlopösszeg előjelét, amennyiben egy adott sor tipikus egyenlege követel jellegű (ezt **C** betű jelöli a sordefiníció **Normál egyenleg** oszlopában).<blockquote>[!NOTE] Megjegyzés: A <strong>TOT</strong> és </strong>CAL</strong> sorok esetében, amelyek tipikusan követel egyenleggel rendelkeznek, mindenképpen <strong>C</strong> beállítást adjon meg a sordefiníció <strong>Normál</strong> egyenleg oszlopában.</blockquote> |
+| XCR                | Módosítsa a jelet, ha a jellemző soregyenlegmző egyenlege csak jóváírás | Költségvetés vagy különbözeti jelentés létrehozása, ahol a kedvezőtlen eltérés (például bevételi hiány vagy költségtúllépés) mindig negatív. Ha ezt a kódot **CALC** oszlopra használja, akkor megfordítja az oszlopösszeg előjelét, amennyiben egy adott sor tipikus egyenlege követel jellegű (ezt **C** betű jelöli a sordefiníció **Normál egyenleg** oszlopában).<p><strong>Megjegyzés:</strong> A <strong>TOT</strong> és </strong>CAL</strong> sorok esetében, amelyek tipikusan követel egyenleggel rendelkeznek, mindenképpen <strong>C</strong> beállítást adjon meg a sordefiníció <strong>Normál egyenleg</strong> oszlopában.</p> |
 | X0                 | Oszlop elrejtése, ha minden cella zéró vagy üres          | Egy **FD** oszlop kizárása a jelentésből, ha az adott oszlopban az összes cella üres vagy nullákat tartalmaz. |
 | SR                 | Kerekítés elrejtése                               | Az ebben az oszlopban szereplő összegek kerekítésének megakadályozása. |
 | XR                 | Kumulatív frissítés kihagyása                                 | Kumulatív frissítés kihagyása. Ha a jelentés egy jelentési fát használ, az adott oszlopban szereplő összegek nem lesznek összesítve későbbi fölérendelt csomópontokba. |
@@ -546,8 +546,8 @@ Az alábbi táblázat bemutatja a jelentés különböző eredményeit, amelyek 
 | Pénznem megjelenítése cella                        | Pénznemszűrő cella | Eredmények jelentése |
 |----------------------------------------------|----------------------|---------------|
 | Tranzakció pénzneme                 | **JEN**              | **Y 6000** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg. |
-| Könyvelési pénznem a főkönyvből | **JEN**              |**$60** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg, ezeket azonban USD-ben jeleníti meg.<blockquote>[!NOTE] Az átváltási árfolyam körülbelül 100 JPY / USD.</blockquote> |
-| Könyvelési pénznem a főkönyvből | Üres                | **$ 2310** – Az eredmény minden adatot a Főkönyvben beállított könyvelési pénznemben jelenít meg.<blockquote>[!NOTE] Ez az összeg a tranzakciók összesítése, könyvelési pénznemben.</blockquote> |
+| Könyvelési pénznem a főkönyvből | **JEN**              |**$60** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg, ezeket azonban USD-ben jeleníti meg.<p><strong>Megjegyzés:</strong> Az átváltási árfolyam körülbelül 100 JPY / USD.</p> |
+| Könyvelési pénznem a főkönyvből | Üres                | **$ 2310** – Az eredmény minden adatot a Főkönyvben beállított könyvelési pénznemben jelenít meg.<p><strong>Megjegyzés:</strong> Ez az összeg a tranzakciók összesítése, könyvelési pénznemben.</p> |
 | Tranzakció pénzneme                 | Üres                | **$ 2250** – Az eredmény minden összeget abban a pénznemben mutat meg, amelyben a tranzakciót elvégezték. Ez azt jelenti, hogy a teljes összeg különféle pénznemekből áll össze. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Számítás oszlop egy oszlopdefinícióban
@@ -565,7 +565,7 @@ Hozzáadáshoz, kivonáshoz, szorzáshoz vagy osztáshoz a számítás sorrendj�
 |----------|---------------------|-------------|
 | +        | A+C                 | Hozzáadja az A oszlopban szereplő összeget a C oszlop összegéhez. |
 | :        | A:C A:C-D           | Egymást követő oszloptartományok hozzáadása. Például az **A:C** képlet összeadja az A-tól C-ig terjedő oszlopok összegeit, míg az **A:C-D** képlet ugyanígy összeadja ezeket, majd kivonja belőlük a D oszlop összegét. |
-| -        | A-C                 | A C oszlopban szereplő összeg kivonása az A oszlopban szereplő összegből<blockquote>[!NOTE] A mínusz jel (-) emellett az oszlopban szereplő összeg előjelének megfordítására is alkalmas. Például az <strong>-A+B</strong> képlettel az A oszlop negatív fordítottjának összegeit adhatja hozzá a B oszlophoz.</blockquote> |
+| -        | A-C                 | A C oszlopban szereplő összeg kivonása az A oszlopban szereplő összegből<p><strong>Megjegyzés:</strong> A mínuszjel (-) segítségével megfordíthatja az oszlopban lévő jeleket. Például az <strong>-A+B</strong> képlettel az A oszlop negatív fordítottjának összegeit adhatja hozzá a B oszlophoz.</p> |
 | \*       | A\*C                | Megszorozza az A oszlopban szereplő összeget a C oszlop összegével. |
 | /        | A/C                 | Elosztja az A oszlopban szereplő összeget a C oszlop összegével. |
 

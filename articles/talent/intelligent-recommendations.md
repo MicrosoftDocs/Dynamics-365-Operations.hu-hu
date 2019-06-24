@@ -3,7 +3,7 @@ title: Intelligens ajánlások
 description: Ez a témakör bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518163"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620620"
 ---
 # <a name="intelligent-recommendations"></a>Intelligens ajánlások
 
@@ -33,7 +33,7 @@ A gépi tanulás segít a toborzóknak és a felvételi menedzsereknek a munkak�
 
 > [!NOTE] 
 > - Az intelligens ajánlási funkciók csak az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) érhetők el.
-> - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Ez a funkció használatához kérje meg a rendszergazdát az engedélyezésére az **Adminisztratív beállításokban** az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. A funkció használatához kérje meg a rendszergazdát az engedélyezésére a **Felügyeleti központ** pontban az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Jelentkező ajánlásai

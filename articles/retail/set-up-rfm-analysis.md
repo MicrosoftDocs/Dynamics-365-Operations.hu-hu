@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553045"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606826"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency/gyakorisági/monetáris (RFM) elemzés beállítása
 
@@ -46,7 +46,7 @@ Például, a szervezet 1-től 5-ig terjedő skálán határozza meg a minősít�
 
 Ha a szervezet által használt szám egy összesített szám, az egyes minősítések összeadódnak. A példánál maradva a vevő minősítése 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>RFM elemzés beállítása a szervezet vevőinél
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>RFM elemzés beállítása a szervezet vevőinél
 
 1. Lépjen a **Hívásközpont** \> **Időszakos** \> **RFM analízis** ponthoz.
 2. Az **RFM analízis** oldalon válassza az **Új** lehetőséget. Az **RFM-definíció** mezőbe írja be az RFM-definíció nevét. Például a definíció hívhatja RFM-nak.

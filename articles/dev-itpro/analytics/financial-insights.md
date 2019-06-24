@@ -3,7 +3,7 @@ title: Financial Insights
 description: A Financial Insights a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.
 author: kweekley
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9edcb192d2fac5acb954d8b87be691f0943e0db7
+ms.sourcegitcommit: 23ab3c99d05869ea2c73514754608e8684697d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554092"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595076"
 ---
 # <a name="financial-insights"></a>Financial Insights
 
@@ -67,10 +67,9 @@ A **Financial Insights** adatainak lekérése az Entitástárból történik (**
 
 Frissítenie kell a következő entitásokat az adatok a **Financial Insights** és **Pénzügyi igazgató áttekintés** munkaterületeken való megtekintéséhez:
 
+- Pénzügyi jelentéskészítés tranzakcióadatok 2-es verzió (**Megjegyzés:** Ez új a 10.0.1-es verzióban, és az előző entitás helyébe lép.)
+- Pénzügyi jelentéskészítés tranzakciós adatai
 - CustCollectionsBIMeasurements
-- FinancialReportingOtherData
-- FinancialReportingReferenceData
-- FinancialReportingTransactionData
 - LedgerCovLiquidityMeasurement
 - Beszerzés kocka
 - Értékesítés kocka

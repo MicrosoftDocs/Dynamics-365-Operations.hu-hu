@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544449"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595440"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
@@ -36,7 +36,7 @@ A lépések végrehajtásához először el kell végezni a „Hozzon létre egy
 
 ## <a name="select-format-configuration-for-customization"></a>Válassza ki a formátumkonfigurációt a testreszabáshoz
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Ebben a példában a Litware, Inc. mintavállalat (http://www.litware.com) konfigurációszolgáltatóként működik, így támogatja az elektronikus kifizetésekre vonatkozó formátumkonfigurációkat egy adott országra vonatkozóan.    A Proseware, Inc. mintavállalat (http://www.proseware.com) a formátumkonfiguráció felhasználójaként működik, amelyet a Litware, Inc. rendszer hozott létre. A Proseware, Inc. az adott ország bizonyos régióiban szereplő formátumokat használja.  
+    * Ebben a példában a Litware, Inc. mintavállalat (https://www.litware.com) konfigurációszolgáltatóként működik, így támogatja az elektronikus kifizetésekre vonatkozó formátumkonfigurációkat egy adott országra vonatkozóan.    A Proseware, Inc. mintavállalat (http://www.proseware.com) a formátumkonfiguráció felhasználójaként működik, amelyet a Litware, Inc. rendszer hozott létre. A Proseware, Inc. az adott ország bizonyos régióiban szereplő formátumokat használja.  
 2. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 3. Kattintson a Szűrők megjelenítése pontra.
 4. Alkalmazza a következő szűrőket: adja meg a „BACS (UK fiktív)” szűrőértéket a „Név” mezőben az „ezzel kezdődik” szűrési operátor használatával.

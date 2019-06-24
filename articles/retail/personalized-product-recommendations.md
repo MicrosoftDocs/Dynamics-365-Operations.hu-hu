@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559558"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607004"
 ---
 # <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások
 
@@ -44,7 +44,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
     - Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákat lefedve, az ajánlások motor további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
     - Ha az üzlet alkalmazottja hozzáad egy vevőt a tranzakcióhoz, majd látogat egy **Termékadatok** lapot, az ajánlások motor a vevői tranzakciók előzményeinek segítségével személyre szabott ajánlásokat tesz.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Javaslatok a Termék részletei oldalon](./media/proddetails.png)](./media/proddetails.png)
 
 2. A **Tranzakció** oldalon:
 
@@ -54,13 +54,11 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
     > [!NOTE]
     > Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést a Dynamics 365 for Retail rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Javaslatok a Tranzakció oldalon](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. A **Vevő adatai** oldalon:
+3. Az **Ügyféladatok** oldalon a javaslatok motorja a felhasználói azonosító és az ügyfél kívánságlistáján található cikkek alapján cikkeket javasol.
 
-    - Az ajánlások motor a felhasználói azonosító és a vevő kívánságlistáján levő cikkek alapján cikkeket javasol.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Javaslatok az Ügyféladatok oldalon](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>A Dynamics 365 for Retail konfigurálása pénztárjavaslatok engedélyezéséhez
 
@@ -83,7 +81,7 @@ Az **Entitástár** entitás frissítésekor a következő műveletek végrehajt
 Ha bekapcsolja az **Ajánlások engedélyezése** elemet, és elvégzi a konfigurációs feladatok futtatását, a következő műveletek végrehajtása történik.
 
 - A modell hitelesítő adatokat és az azonosítót a rendszer az API segítségével szerzi meg, majd a Dynamics 365 for Retail működési adatbázisában tárolja, az AOS web.config állományában, illetve a kiskereskedelmi kiszolgálón is.
-- A modell hitelesítő adatok és az azonosító hozzáférhetők a CRT számára, hogy ki lehessen szolgálni a felhő POS és az MPOS felől online módban érkező termékajánlás-lehívásokat.
+- A modell hitelesítő adatok és az azonosító hozzáférhetők a CRT számára, hogy ki lehessen szolgálni a felhőalapú pénztár és az MPOS felől online módban érkező termékajánlás-lehívásokat.
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Már engedélyezett termékajánlások esetében problémák elhárítása
 

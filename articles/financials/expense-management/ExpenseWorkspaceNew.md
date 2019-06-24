@@ -3,7 +3,7 @@ title: Költségjelentések újragondolva
 description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations újratervezett és újragondolt költségjelentési bejegyzésekre vonatkozó élményével kapcsolatban tartalmaz információkat. Az új élmény egyszerűbbé teszi a költségjelentés végrehajtási folyamatát, és csökkenti a szükséges időt.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538690"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592637"
 ---
 # <a name="expense-reports-reimagined"></a>Költségjelentések újragondolva
 
@@ -46,10 +46,9 @@ Az új élmény bekapcsolásához használja a **Funkciókezelés** munkaterüle
 
 ## <a name="getting-started-video-for-new-users"></a>Kezdő lépésekről szóló videó új felhasználóknak
 
-Megnézhet egy rövid videót, amely bemutatja a költségbejegyzés főbb funkcióit.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> A videó még nem érhető el. Ez a témakör a videoklipek rendelkezésre állását követően frissül.
+A (fenti videón látható) [Költséggel kapcsolatos gyakorlat a Dynamics 365 for Finance and Operations rendszerben](https://youtu.be/Ocy-MsTvEE0) szerepel a YouTube felületén megtalálható [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW).
 
 ## <a name="new-features"></a>Új funkciók
 

@@ -4,11 +4,11 @@
   items:
     - name: Új vagy módosult elemek
       href: get-started/whats-new.md
-    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.3-es verziójában
+    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.3-as verziójában
       href: get-started/whats-new-10-0-3.md
-    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.2-es verziójában
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.2-es verziójában
       href: get-started/whats-new-10-0-2.md
-    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.1 szolgáltatásban
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.1-es verziójában
       href: get-started/whats-new-10-0-1.md
     - name: Új vagy módosult elemek a Dynamics 365 for Retail (2019. április) szolgáltatásban
       href: get-started/april-whats-new.md
@@ -49,14 +49,18 @@
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
     - name: Finance and Operations Retail-projektek megvalósítása
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Új környezetek, Azure DevOps és alágak beállítása a Retail-projektekhez'
+    - name: 'Új környezetek, Azure DevOps és ágak beállítása a Retail-projektekhez'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Kód és környezetek frissítése a Retail-projekteknél
       href: dev-itpro/updating-environments.md
     - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
       href: dev-itpro/retail-implementation-testing-performance.md
-- name: Elosztott rendeléskezelés (DOM)
-  href: dom.md
+- name: Felosztott rendeléskezelés (DOM)
+  items:
+    - name: DOM áttekintés
+      href: dom.md
+    - name: Költségkonfiguráció
+      href: cost.md
 - name: Kifizetések
   items:
     - name: Fizetési módok
@@ -67,6 +71,8 @@
       href: cash-denominations.md
     - name: Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz
       href: dev-itpro/adyen-connector.md
+    - name: Online fizetési eszközök mentése az Adyen összekötővel
+      href: dev-itpro/adyen-connector-listPI.md
     - name: Számlafizetési forgatókönyvek beállítása
       href: payinvoice.md
     - name: Kifizetésekkel kapcsolatos GYIK
@@ -95,7 +101,9 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: Kimutatásfeladás funkcióinak továbbfejlesztései
       href: statement-posting-EOD.md
-    - name: A kiskereskedelmi kimutatásokat befolyásoló Retail-paraméterek konfigurálása
+    - name: Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
+      href: batch.md
+    - name: A kiskereskedelmi kimutatásokat befolyásoló kiskereskedelmi paraméterek konfigurálása
       href: tasks/parameter-configurations-retail-statements.md
     - name: A kiskereskedelmi kimutatásokat befolyásoló fizetésimód-beállítások konfigurálása
       href: tasks/payment-configurations-retail-statements.md
@@ -113,8 +121,10 @@
       href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
     - name: Áfa-hozzárendelés és felülbírálások
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
-    - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
+    - name: Teljesösszeg- és intervallumszámítási opciók áfakódokhoz
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Többcsatornás fizetések áttekintése
+  href: omni-channel-payments.md
 - name: Többcsatornás speciális automatikus költségek
   items:
     - name: Speciális automatikus költségek konfigurálása és használata
@@ -159,12 +169,14 @@
       href: MPOS-or-CPOS.md
     - name: Online és offline pénztári műveletek
       href: pos-operations.md
-    - name: Személyre szabott Retail Modern POS eszközének aktiválása
+    - name: Személyre szabott Retail MPOS eszköz aktiválása
       href: dev-itpro/retail-POS-activation-changes.md
     - name: Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései
       href: demo-data.md
     - name: Termék és vevő keresése a pénztárban
       href: POS-search-improvements.md
+    - name: Készpénzkezelés fejlesztései
+      href: cash-mgmt.md
     - name: Készletkeresés a pénztárban
       href: product-variants-POS.md
     - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
@@ -586,11 +598,11 @@
           href: dev-itpro/odata-controllers-api.md
         - name: Retail Server – ügyfél és fogyasztói API-k
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Az alapértelmezett Retail Server metadata-vezérlő kiterjesztése
+        - name: Az alapértelmezett Retail Server metaadat-vezérlő kiterjesztése
           href: dev-itpro/extend-metadata.md
-        - name: A CRT szolgáltatása hívása offline módban
+        - name: A CRT szolgáltatás hívása offline módban
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce runtime (CRT) bővíthetősége
+    - name: Commerce Runtime (CRT) bővíthetősége
       items:
         - name: A CRT architektúrája és konfigurálása
           href: dev-itpro/commerce-runtime-overview.md
@@ -598,7 +610,7 @@
           href: dev-itpro/crt-services.md
         - name: A CRT és a Retail Server bővíthetősége
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázisokhoz
+        - name: Ügyfélpreferencia-adatok hozzáadása a csatorna-adatbázisokhoz
           href: dev-itpro/add-customer-preference-channel.md
         - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
           href: dev-itpro/add-properties-sales-order.md

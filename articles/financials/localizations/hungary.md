@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d1b758cb276226984190d7a84963d7fd55ebc48
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e07ffc6e062f01d49c010104c3d8c18ac59e1b8a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560390"
 ---
 # <a name="hungary"></a>Magyarország 
 

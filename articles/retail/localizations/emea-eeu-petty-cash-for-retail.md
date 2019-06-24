@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 86df4508d897f1534c24e97bb4f4309d0d730c34
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5b91d8589fa4226a2c28e6935b32109e702afc1a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571535"
 ---
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Retail pénztárkezelés (Kelet-Európa)
 

@@ -1,9 +1,9 @@
 ---
 title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
-author: TLeforMicrosoft
+author: jasongre
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 05/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,20 +15,19 @@ ms.search.scope: Core, Operations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
+ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1528844"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620014"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
 
@@ -75,7 +74,7 @@ Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők
 
 Ezenkívül a legtöbb alaptípusok explicit személyre szabása akkor érhetők el, kattintson a jobb gombbal egy elemre, és válassza a **Személyre szabást**. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem tulajdonság ablaka.
 
-[![Egy elem tulajdonságainak személyre szabása](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
+![Egy elem tulajdonságainak testreszabása](./media/personalization-element-properties.png)
 
 A tulajdonságablak segítségével egy elem testreszabása a következőképpen történik:
 

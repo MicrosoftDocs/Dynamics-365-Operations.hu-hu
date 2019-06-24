@@ -2,11 +2,18 @@
   href: index.md
   items:
     - name: Első lépések
-      href: talent-get-started.md
       items:
+        - name: Első lépések a Talent alkalmazásban
+          href: talent-get-started.md
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. május 28.
+              href: whats-new-talent-may-28-2019.md
+            - name: 2019. május 21.
+              href: whats-new-talent-may-21-2019.md
+            - name: 2019. május 13.
+              href: whats-new-talent-may-13-2019.md
             - name: 2019. május 6.
               href: whats-new-talent-may-6-2019.md
             - name: 2019. április 30.
@@ -89,33 +96,7 @@
           href: access-preview-feature.md
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
-    - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
-      href: departments-jobs-positions.md
-      items:
-        - name: Feladat összetevőinek beállítása
-          href: create-job.md
-        - name: Részlegek létrehozása és megjelenítése a szervezeti hierarchiában
-          href: create-department-add-department-hierarchy.md
-        - name: Több jogi személyre kiterjedő HR-paraméterek beállítása
-          href: set-up-hr-parameters-across-legal-entities.md
-        - name: Vállalatfüggő HR-paraméterek beállítása
-          href: set-up-company-specific-hr-parameters.md
-        - name: Személyzeti műveletekkel kapcsolatos GYIK
-          href: personnel-actions-faq.md
-        - name: Üzleti folyamatok formalizálása
-          href: formalize-business-processes.md
-        - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
-          href: workflow-manage-employee-information.md
-    - name: Szabadság és távollét kezelése
-      href: leave-absence-overview.md
-      items:
-        - name: Szabadság- és távollétkoncepciók
-          href: leave-absence-concepts.md
-        - name: Elhatárolt szabadság a ledolgozott órák alapján
-          href: leave-accrue-hours-worked.md
-        - name: Munkaidőnaptárak
-          href: working-time-calendars.md
-    - name: A szervezeti személyzet kiépítése
+    - name: Személyzet felvétele a szervezetéhez az Attract alkalmazással
       items:
         - name: Az Attract melyik verziója?
           href: attract-comprehensive-hiring.md
@@ -123,11 +104,11 @@
           href: attract-overview.md
         - name: Folyamatsablon létrehozása az Attract alkalmazásban
           href: Process-templates-Attract.md
-        - name: 'Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban'
+        - name: 'Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban'
           href: Creating-jobs-Attract.md
-        - name: Állások feladása külső webhelyekre az Attract szolgáltatásból
+        - name: Állások feladása külső karrierwebhelyekre az Attract szolgáltatásból
           href: posting-jobs-external.md
-        - name: Jelöltek keresése tehetségállományok segítségével
+        - name: Jelöltek felkutatása tehetségállományok segítségével
           href: attract-talent-pools.md
         - name: Forráskeresés LinkedIn Recruiter segítségével
           href: attract-linked-in-recruiter.md
@@ -135,9 +116,9 @@
           href: activities-attract.md
         - name: Interjú ütemezése és visszajelzés
           href: interview-scheduling-feedback.md
-        - name: Bővíthetőség
+        - name: Bővíthetőség az Attract szolgáltatásban
           href: extensibility-attract.md
-        - name: Attract előmeneteli webhely funkció
+        - name: Karrierwebhely-funkciók az Attract alkalmazásban
           href: career-site.md
         - name: Az ajánlatkezelés beállítása
           href: offer-setup.md
@@ -153,74 +134,186 @@
           href: Intelligent-Recommendations.md
         - name: Lebilincselő felvételi eljárás létrehozása
           href: create-onboarding-experience.md
-        - name: Jelöltek profiljai és pályázatai forrásainak nyomon követése
+        - name: Jelöltprofilok és -pályázatok forrásának nyomon követése
           href: source-tracking.md
         - name: Analitikus jelentések használata a toborzási folyamattal kapcsolatos információk érdekében
           href: analytic-reports.md
-    - name: Alkalmazottak motiválása
+    - name: Munkaerő kezelése a Core HR alkalmazással
       items:
-        - name: Kompenzációs konstrukciók
-          href: compensation-plans.md
-        - name: Fix kompenzációs konstrukciók létrehozása
-          href: create-fixed-compensation-plans.md
-        - name: Változó kompenzációs konstrukciók létrehozása
-          href: create-variable-compensation-plans.md
-        - name: Kompenzáció feldolgozása
-          href: process-compensation.md
-        - name: Feladat összetevőinek beállítása
-          href: create-job.md
-    - name: Alkalmazottak fejlesztése és képzése
-      items:
-        - name: Teljesítménymenedzsment
-          href: performance-management-overview.md
-        - name: A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása
-          href: skills.md
-        - name: Tanfolyamok beállítása
-          href: courses.md
-    - name: Juttatási program meghatározása és kezelése
-      items:
-        - name: Juttatási program meghatározása és kezelése
-          href: manage-benefit-program.md
-        - name: Juttatásra vonatkozó jogosultsági irányelvek
-          href: benefit-eligibility-policies.md
-        - name: Affordable Care Act (ACA) jelentések létrehozása
-          href: generate-aca-reports.md
-        - name: A dolgozóknak kölcsönzött cikkek kezelése
-          href: loan-items.md
-    - name: Kérdőívek
-      href: questionnaires.md
-      items:
-        - name: Kérdőívek tervezése
-          href: design-questionnaires.md
-        - name: Kérdőívek terjesztése és ütemezése
-          href: distribute-questionnaires.md
-        - name: A kérdőívek eredményeinek megtekintése és kiértékelése
-          href: evaluate-questionnaire-results.md
-    - name: Munkahelyi biztonság és megfelelőség (Egyesült Államok)
-      items:
-        - name: Személyes adatokra vonatkozó kérés megválaszolása a Talent rendszerben
-          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: 'I-9-es űrlap: foglalkoztatási ellenőrzés'
-          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: ADA-megfelelőség
-          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Intelligencia
-      items:
-        - name: Munkaterületekre beágyazott Power BI
-          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Mobilalkalmazás
-      items:
-        - name: Mobil munkaterületek
+        - name: Munkaerő-szervezés
           items:
-            - name: Vállalati címtár mobil munkaterület
-              href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Saját csapat mobil munkaterület
-              href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Mobil munkaterületek közzététele
-          href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
+              href: departments-jobs-positions.md
+            - name: Feladat összetevőinek beállítása
+              href: create-job.md
+            - name: Részlegek létrehozása és megjelenítése a szervezeti hierarchiában
+              href: create-department-add-department-hierarchy.md
+            - name: Több jogi személyre kiterjedő HR-paraméterek beállítása
+              href: set-up-hr-parameters-across-legal-entities.md
+            - name: Vállalatfüggő HR-paraméterek beállítása
+              href: set-up-company-specific-hr-parameters.md
+            - name: Személyzeti műveletekkel kapcsolatos GYIK
+              href: personnel-actions-faq.md
+            - name: Üzleti folyamatok formalizálása
+              href: formalize-business-processes.md
+            - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
+              href: workflow-manage-employee-information.md
+            - name: Számsorozatok beállítása
+              items:
+                - name: Számsorozatok áttekintése
+                  href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Egyedi számsorozatok beállítása
+                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Számsorozatok beállítása a varázsló segítségével
+                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Szervezetek és szervezeti hierarchiák konfigurálása
+              items:
+                - name: Szervezetek áttekintése
+                  href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Szervezeti hierarchia megtervezése
+                  href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Szervezeti hierarchia létrehozása
+                  href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Jogi személy létrehozása
+                  href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Üzemi egység létrehozása
+                  href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Globális címjegyzék beállítása
+              items:
+                - name: Globális címjegyzék áttekintése
+                  href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Tervezés a globális címjegyzékhez és egyebekhez
+                  href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Globális címjegyzék konfigurálása
+                  href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Címjegyzékek GYIK
+                  href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Munkafolyamatok konfigurálása
+              items:
+                - name: Munkafolyamat áttekintése
+                  href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Munkafolyamat-elemek
+                  href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Munkafolyamat-jóváhagyási folyamatok műveletei
+                  href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Munkafolyamatok létrehozása
+                  href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  items:
+                    - name: Munkafolyamat-tulajdonságok konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Manuális feladatok konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Automatizált feladatok konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Jóváhagyási folyamatok konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Jóváhagyási lépések konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Manuális döntések konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Feltételes döntések konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Párhuzamos tevékenységek konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Párhuzamos ágak konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: Sortétel munkafolyamatainak konfigurálása
+                      href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Az üzenetet feldolgozó kötegelt feladat konfigurálása
+                  href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Egy munkafolyamat munkatételeinek delegálása
+                  href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Munkafolyamat-előzmények megtekintése
+                  href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Munkafolyamattal kapcsolatos e-mail-üzenetek fogadásának engedélyezése a felhasználók számára
+                  href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Figyelmeztetések beállítása
+              items:
+                - name: Figyelmeztetések áttekintése
+                  href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Figyelmeztetési szabályok létrehozása
+                  href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Figyelmeztetések kötegelt feldolgozása
+                  href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Esetek kezelése
+              items:
+                - name: Esetkezelés – áttekintés
+                  href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 'Esetbiztonság, folyamatok és kategóriák tervezése'
+                  href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: A dokumentumkezelés konfigurálása
+              href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: E-mail konfigurálása és küldése
+              href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Dátum/időadatok és időzónák
+              href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Szabadság és távollét beállítása
+          items:
+            - name: Szabadság és távollét kezelése
+              href: leave-absence-overview.md
+            - name: Szabadság- és távollétkoncepciók
+              href: leave-absence-concepts.md
+            - name: Elhatárolt szabadság a ledolgozott órák alapján
+              href: leave-accrue-hours-worked.md
+            - name: Munkaidőnaptárak
+              href: working-time-calendars.md
+        - name: Kompenzációs konstrukciók beállítása
+          items:
+            - name: Kompenzációs konstrukciók áttekintése
+              href: compensation-plans.md
+            - name: Fix kompenzációs konstrukciók létrehozása
+              href: create-fixed-compensation-plans.md
+            - name: Változó kompenzációs konstrukciók létrehozása
+              href: create-variable-compensation-plans.md
+            - name: Kompenzáció feldolgozása
+              href: process-compensation.md
+            - name: Feladat összetevőinek beállítása
+              href: create-job.md
+        - name: Alkalmazottak fejlesztése és képzése
+          items:
+            - name: Teljesítménymenedzsment
+              href: performance-management-overview.md
+            - name: A munkaerő szakértelme és az üzleti igények harmonizálása
+              href: skills.md
+            - name: Tanfolyamok beállítása
+              href: courses.md
+            - name: Hozzáadás a saját teljesítménynaplóhoz és pozitív visszajelzés küldése másnak
+              href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Cél létrehozása
+              href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Teljesítménykimutatás létrehozása
+              href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Juttatási program meghatározása és kezelése
+          items:
+            - name: Juttatási program meghatározása és kezelése
+              href: manage-benefit-program.md
+            - name: Juttatásra vonatkozó jogosultsági irányelvek
+              href: benefit-eligibility-policies.md
+            - name: Affordable Care Act (ACA) jelentések létrehozása
+              href: generate-aca-reports.md
+            - name: A dolgozóknak kölcsönzött cikkek kezelése
+              href: loan-items.md
+        - name: Fő mutatók értékelése kérdőívekkel
+          items:
+            - name: Információgyűjtés kérdőívekkel
+              href: questionnaires.md
+            - name: Kérdőívek tervezése
+              href: design-questionnaires.md
+            - name: Kérdőívek terjesztése és ütemezése
+              href: distribute-questionnaires.md
+            - name: A kérdőívek eredményeinek megtekintése és kiértékelése
+              href: evaluate-questionnaire-results.md
+        - name: Munkahelyi biztonság és megfelelőség (Egyesült Államok)
+          items:
+            - name: Személyes adatokra vonatkozó kérés megválaszolása a Talent rendszerben
+              href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 'I-9-es űrlap: foglalkoztatási ellenőrzés'
+              href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: ADA-megfelelőség
+              href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Integráció
       items:
-        - name: Integrálás a Dynamics 365 for Finance and Operations szolgáltatásba
+        - name: Integráció a Dynamics 365 for Finance and Operations rendszerrel
           href: talent-financeandoperations-integration.md
         - name: Bérlista-integráció konfigurálása a Talent és a Dayforce között
           href: configure-payroll-integration.md
@@ -228,121 +321,40 @@
           href: data-integration.md
         - name: Integrációval kapcsolatos GYIK
           href: talent-fo-integration.md
-        - name: Ismétlődő adatexportálás Azure Logic Apps használatával
+        - name: Ismétlődő adatexportálás Azure Logic alkalmazások használatával
           href: tutorial-integration-recurring-export.md
+        - name: Office-integráció
+          items:
+            - name: Office-integrációs oktatóanyag
+              href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Entitás adatainak frissítése az Excel alkalmazásban
+              href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
+              href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Office-integráció – hibaelhárítás
+              href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Bővíthetőség
       items:
-        - name: A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
+        - name: Munkaterületekre beágyazott Power BI
+          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: A Talent bővítése a PowerApps és a Microsoft Flow segítségével – Példa-forgatókönyvek
           href: extensibility-examples.md
+        - name: Mobilalkalmazás
+          items:
+            - name: Mobil munkaterületek
+              items:
+                - name: Vállalati címtár mobil munkaterülete
+                  href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Saját csapat mobil munkaterülete
+                  href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Mobil munkaterületek közzététele
+              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: A toborzási adatok változásainak nyomon követése
           href: process-auditing.md
         - name: Bővíthetőség az Attract szolgáltatásban
           href: extensibility-attract.md
         - name: A Core HR egyéni mezői
           href: corehr-custom-fields.md
-    - name: Office-integráció
-      items:
-        - name: Office-integrációs oktatóanyag
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Entitás adatainak frissítése az Excel alkalmazásban
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Az Excel programban történő megnyitási élmények létrehozása
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Office-integráció – hibaelhárítás
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Szervezeti adminisztráció
-      items:
-        - name: Számsorozatok
-          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Egyedi számsorozatok beállítása
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Számsorozatok beállítása a varázsló segítségével
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Szervezetek és szervezeti hierarchiák
-          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Szervezeti hierarchia megtervezése
-              href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Szervezeti hierarchia létrehozása
-              href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Jogi személy létrehozása
-              href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Üzemi egység létrehozása
-              href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Globális címjegyzék
-          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Terv a globális címjegyzékhez és egyebekhez
-              href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Globális címjegyzék konfigurálása
-              href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Címjegyzékek GYIK
-              href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Munkafolyamat
-          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Munkafolyamat-elemek
-              href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Jóváhagyási folyamatok műveletei
-              href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Munkafolyamatok létrehozása
-              href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-              items:
-                - name: Munkafolyamat-tulajdonságok konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Manuális feladatok konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Automatizált feladatok konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Jóváhagyási folyamatok konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Jóváhagyási lépések konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Manuális döntések konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Feltételes döntések konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Párhuzamos tevékenységek konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Párhuzamos ágak konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Sortétel munkafolyamatainak konfigurálása
-                  href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Az üzenetet feldolgozó kötegelt feladat konfigurálása
-              href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Egy munkafolyamat munkatételeinek delegálása
-              href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Munkafolyamat-előzmények megtekintése
-              href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Munkafolyamattal kapcsolatos e-mail-üzenetek engedélyezése a felhasználóknak
-              href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Figyelmeztetések
-          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Figyelmeztetési szabályok létrehozása
-              href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Figyelmeztetések kötegelt feldolgozása
-              href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Esetkezelés
-          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: 'Esetbiztonság, folyamatok és kategóriák tervezése'
-              href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: A dokumentumkezelés konfigurálása
-          href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: E-mail konfigurálása és küldése
-          href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Dátum-/időadatok és időzónák
-          href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Emberi erőforrások feladatok
-      items:
-        - name: Hozzáadás a saját teljesítménynaplóhoz és pozitív visszajelzés küldése másnak
-          href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Cél létrehozása
-          href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Teljesítménykimutatás létrehozása
-          href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Talent – hibaelhárítás
       items:
         - name: Az elemzési jelentések nincsenek frissítve

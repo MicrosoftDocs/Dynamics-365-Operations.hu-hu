@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 for Finance and Operations tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530707"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593343"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -52,9 +52,20 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      április 2019.          |   10.0.1      |   Németország     |E-számlázás - Vevő számlák exportálása xRechnung 1.1 formátumban         |
 |      április 2019.          |   10.0.1      |    Egyesült Királyság     |[Áfakimutatás elküldési módosítások (Adó digitalizálása)](emea-gbr-mtd-vat-integration.md)    |    
 |      április 2019.          |   10.0.1      |    Brazília     |NF-e új NT 2018.005         |
-|      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től         |
-|      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től (bevételi és kiadási számlakönyvek) 
+|      április 2019.          |   10.0.1      |    Oroszország     |[Áfa bevallási formátummódosítások 2019-től](rus-VAT-declaration.md) |
+|      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től (bevételi és kiadási számlakönyvek) |
+|      április 2019.          |   10.0.1      |    Oroszország     |A 2018-as földadóbevallás módosításai |
+|      április 2019.          |   10.0.1      |    Oroszország     |[A 2019-es ingatlanadó-bevallás módosításai](rus-assessed-tax-declaration.md)|
+|      április 2019.          |   10.0.1      |    Oroszország     |A 2019-es szállításiadó-bevallás módosításai  |
+|      április 2019.            |   10.0.1      | Magyarország      |  Magyarország: Online számlázás v. 1.1 2019 a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban  |
 |      május 2019.            |   10.0.2      | Brazília      |   SPED ECD Layout 7   |
+|      Függőben            |   10.0.3      | Brazília      |   NF-e új NT 2018.005 - v.1.20   |
+|      Függőben            |   10.0.3      | Brazília      |   SPED ECD Layout 7   |
+|      Függőben            |   10.0.3      | Brazília      |   SPED ECF – 5. elrendezés 2019-es évre   |
+|      Függőben            |   10.0.3      | Litvánia    |   i.SAF-jelentés a felhasználó határozza meg a rendszer áfakódjait a jogi adókódok összefüggésében.    |
+|      Függőben            |   10.0.3      | Lengyelország     |   SAF számlák (JPK_FA) v. 2 2019. július 1-től  |
+|      Függőben            |   10.0.3      | Brazília   |   ICMS pénzügyi dokumentum-korrekciók engedélyezése 5.2 tábla   |
+|      Függőben            |   10.0.3      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>További erőforrások

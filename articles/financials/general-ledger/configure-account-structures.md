@@ -3,7 +3,7 @@ title: Számlastruktúrák konfigurálása
 description: Ez a témakör a számlastruktúrákról és a pénzügyi dimenziókról nyújt tájékoztatást.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552005"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617296"
 ---
 # <a name="configure-account-structures"></a>Számlastruktúrák konfigurálása
 
@@ -70,6 +70,16 @@ A **Megengedett értékek részletei** szakasz végigvezeti a feltételek létre
 
 [![Értékek engedélyezése](./media/account.png)](./media/account.png) 
 
+Az engedélyezett értékek az alapértelmezett érték lesz egy napló- vagy könyvelési felosztási bejegyzés oldalán, ha nincsen már lehetséges, kiválasztható érték a számlastruktúra-beállítás alapján.
+
+Itt egy példa az **Eredményszámla struktúrájára**.
+
+|Fő számla          | Üzleti egység    |Részleg           | Költséghely    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Egy napló bevitelekor és egy számla kiválasztásakor az eredménytartományban a „002”-es üzleti egység választásával a 022 és 014 értékek válnak alapértelmezetté a számlavezérlőben. Ez a viselkedés a könyvelési felosztás lapon is megjelenik. 
+
 ## <a name="more-than-7-criteria-needed"></a>Több, mint 7 feltételek szükséges
 
 Ha több, mint 7 feltétel szükséges, folytathatja és hozzáadhatja őket a következő sorban. Miközben a **Megengedett értékek részletei** . szakaszon dolgozik, megfigyelheti, hogy az **+Új hozzáadása** feltétel már nem aktív, miután a hetedik kritériát is megadta. Ez számos tényezőnek köszönhető, például: 
@@ -79,8 +89,6 @@ Ha több, mint 7 feltétel szükséges, folytathatja és hozzáadhatja őket a k
  - Használhatóság  
  
 A további feltételek hozzáadásának folytatásához kattintson **Duplikálás a szegmensben** és a **Megengedett értékek szakasz** lehetőségekre. Ezzel átmásolja a feltételt egy új sorba. Ezután átírhatja vagy módosíthatja a **Megengedett értékek részletei** szakaszt.
-
-(LINK A KÉSŐBBIEKBEN ELKÉSZÜLŐ VIDEÓHOZ)
 
 ## <a name="best-practices"></a>Gyakorlati tanácsok
 A számlastruktúra beállításakor van néhány ajánlott eljárás, melyet követhet. Ez azonban csak útmutatás, így vegye fontolóra, hogy a megbeszélés során sort kerítsen az üzleti kérdések, növekedési és karbantartási terv átfogó megbeszélésére is.

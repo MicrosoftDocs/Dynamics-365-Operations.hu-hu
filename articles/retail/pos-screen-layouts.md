@@ -3,7 +3,7 @@ title: Képernyő-elrendezések a pénztár (POS) számára
 description: Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549428"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607037"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Képernyő-elrendezések a pénztár (POS) számára
 
@@ -51,6 +51,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 - **Téma** - A világos vagy a sötét alkalmazástémák közül választhat. A téma hatással van a betűk és háttér színére az alkalmazás egészében.
 - **Kiemelés színe** - A kiemelőszínt a rendszer használja a pénztárban mindenütt bizonyos vizuális elemek megkülönböztetésére és kiemelésére: ilyenek a csempék, a parancsgombok és a hivatkozások. Ezek az elemek általában interaktívak.
 - **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Microsoft Dynamics 365 for Retail 1611 verzióban nem érhető el.
+- **Dátum/idő megjelenítése** – Engedélyezés esetén az aktuális dátum és idő a pénztárfejlécben fog megjelenni.
 - **Bejelentkezési hátterek** - Megadhatja a bejelentkezési képernyő háttérképét. A háttérkép méretének a lehető legkisebbnek kell lennie, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
 - **Alkalmazásháttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. Bejelentkezési hátterek esetén a fájlméretet a lehető legkisebbnek kell tartani.
 

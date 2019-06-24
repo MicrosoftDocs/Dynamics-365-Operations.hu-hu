@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518160"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577795"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
 
@@ -115,7 +115,7 @@ Futtassa ezt a PowerApps alkalmazást felügyeleti konzolként a következő fel
 
 Ez a PowerApps alkalmazás több a többhöz kapcsolatot használ, így sablonként használhatja más esetekhez, ahol olyan rekordokat kell kinyernie, amelyek több a többhöz kapcsolattal rendelkeznek.
 
-A **Felügyeleti konzol a tehetségállományok kezeléséhez** sablon kezeléséhez, nyissa meg [Felügyeleti konzol a tehetségállományok kezeléséhez](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) oldalt a Microsoft letöltőközpontban.
+A **Felügyeleti konzol a tehetségállományok kezeléséhez** sablon kezeléséhez, nyissa meg [Felügyeleti konzol a tehetségállományok kezeléséhez](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) oldalt a Microsoft letöltőközpontban.
 
 ## <a name="additional-resources"></a>További erőforrások
 

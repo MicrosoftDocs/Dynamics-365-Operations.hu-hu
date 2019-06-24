@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c8104393143f2b118af19b13d833bffd8dd155c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8ab710e2506c2c44f3f44f39f02ed8d8bf4f059e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556589"
 ---
 # <a name="hu-00001-exchange-rate-calculation"></a>HU-00001 Árfolyamszámítás
 

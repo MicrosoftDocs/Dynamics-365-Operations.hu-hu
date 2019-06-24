@@ -17,12 +17,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ebb8e5300e7370441bedc471b729d251cd26a583
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 85ca328013fdf276d770cdc12355eb37652d056d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571204"
 ---
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 

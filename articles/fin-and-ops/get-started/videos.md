@@ -3,7 +3,7 @@ title: Videók a Finance and Operations rendszerhez
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Dynamics 365 for Finance and Operations alkalmazásra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561668"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591548"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videók a Finance and Operations rendszerhez
 
@@ -50,7 +50,7 @@ A videók szolgáltatás szerint vannak listázva, így görgessen le a videók 
 - [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [A fejlesztési fiók és a build beállítása](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [A fejlesztési gépek beállítása](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Azure DevOps-integráció a Lifecycle Services szolgáltatással](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Azure DevOps-integráció a Lifecycle Services rendszerrel](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Ismerje meg a felhasználói felületet
 
@@ -63,6 +63,7 @@ A videók szolgáltatás szerint vannak listázva, így görgessen le a videók 
 - [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
 - [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 - [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
+- [Költséggel kapcsolatos gyakorlat](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>Intelligencia
 
@@ -185,7 +186,7 @@ A [FastTrack for Dynamics 365 műszaki előadások](https://infopedia.eventbuild
 - [AX 2009 áttelepítési eszközök (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2012 Dynamics 365 for Operations frissítés (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [7.0 (RTW)/7.1 (Release 1611) verzióról 7.2 (2017. június) verzióra frissítés (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Az Azure DevOps beállítása (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Azure DevOps telepítése (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="warehouse-management"></a>Raktárkezelés
 

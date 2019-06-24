@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552369"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595546"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -52,7 +52,7 @@ Az igény-előrejelzés három fő téma szerint valósul meg:
     -   A Finance and Operations Igény-előrejelzési kísérleteket letöltheti, saját üzleti igényeinek megfelelően testreszabhatja, webszolgáltatásként közzéteheti az Azure rendszeren és felhasználhatja őket igény-előrejelzések létrehozására. A kísérletek egy termeléstervező mint vállalati szintű felhasználó Finance and Operations előfizetésének megvásárlása után tölthetőek le.
     -   A jelenleg elérhető igény-előrejelzési kísérletek bármelyikét letöltheti a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról. Míg a Finance and Operations Igény-előrejelzés kísérletek a Finance and Operations rendszerrel való integrációja automatikus, a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) gyűjteményből letöltött kísérletek integrálását a vevőknek és partnereknek kell kezelniük. Emiatt a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról származó kísérletek – a Finance and Operations Igény-előrejelzési kísérleteivel ellentétben – nem használhatóak fel közvetlenül. A Finance and Operations API alkalmazásprogramozási felületének megfelelően módosítani kell a kísérletek kódját.
     -   A Microsoft Azure Machine Learning Studio rendszerében saját kísérleteket hozhat létre, ezeket szolgáltatásként közzéteheti az Azure rendszeren, és használatukkal igény-előrejelzéseket generálhat.
-    -   Amennyiben nincs szükség nagy teljesítményre vagy nagy mennyiségű adat feldolgozására, használhatja a Machine Learning ingyenes szintjét. Javasoljuk, hogy mindig erről a szintről induljon, különösen a megvalósítás és a tesztelés fázisában. Ha nagyobb teljesítményre és kiegészítő tárhelyre van szüksége, a Machine Learning standard szintjét használhatja. Ehhez a szinthez Azure előfizetés, valamint további költségek megfizetése szükséges. A gépi tanulás árazásával kapcsolatos további tájékoztatás: <http://aka.ms/machine-learning-price-info>.
+    -   Amennyiben nincs szükség nagy teljesítményre vagy nagy mennyiségű adat feldolgozására, használhatja a Machine Learning ingyenes szintjét. Javasoljuk, hogy mindig erről a szintről induljon, különösen a megvalósítás és a tesztelés fázisában. Ha nagyobb teljesítményre és kiegészítő tárhelyre van szüksége, a Machine Learning standard szintjét használhatja. Ehhez a szinthez Azure előfizetés, valamint további költségek megfizetése szükséges. A Machine Learning használatának költségeiről a [Machine Learnin Studio árképzése](https://aka.ms/machine-learning-price-info) oldalon olvashat részletesen.
 -   **Előrejelzés redukálása bármely szétválasztási pontnál** – A Finance and Operations igény-előrejelzése ezen a funkción alapul, amely mind a függő, mind a független igények előrejelzését lehetővé teszi bármely szétválasztási pontnál.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Az igény-előrejelzés alapfolyamata

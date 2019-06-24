@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546363"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606941"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Képek beállítása és kezelése a Retail Modern POS (MPOS) esetében
 
@@ -49,11 +49,11 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 1. Nyissa meg a Dynamics 365 for Retail HQ-portált.
 2. Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornaprofilok** lehetőségekre.
 
-    [![csatornaprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigáció](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. A csatornaprofilban, amelyet az üzlet az MPOS-nél használ, frissítse a **Média alap URL-cím** mezőt a médiakiszolgáló vagy a CDN alap URL-címére. Az alap URL-cím az URL-cím első része, amely a különböző entitások esetében az összes képmappánál ugyanaz.
 
-    [![channel-profile2](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Csatornaprofilok oldal](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>A médiasablon meghatározása egy entitáshoz
 
@@ -71,7 +71,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 8. Futtassa le a szinkronizálási feladatokat, hogy az új sablon a csatorna-adatbázisba kerüljön, hogy az MPOS használhassa a sablont a képek eléréséhez.
 9. A katalógusképek médiasablonjának frissítéséhez a csatorna oldalon ügyeljen arra, hogy futtassa a **Katalógusfeladat 1150** opciót a **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** opciókból.
 
-    [![catalog1](./media/catalog1.png)](./media/catalog1.png)
+    [![Médiasablon párbeszédpanel meghatározása](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Az entitás szintről kép előzetes megtekintése
 
@@ -80,12 +80,12 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 3. A **Hozzáadás** és az **Eltávolítás** gombok használatával manuálisan módosíthatja az adott képhez használt és az implicit sablonon alapuló útvonalat. További tájékoztatásért lásd a [Médiasablon felülírása entitáscikkekhez](#overwriting-the-media-template-for-entity-items) részt a jelen cikk későbbi részében.
 4. Miután befejezte egy kép előnézetének megtekintését és a kívánt módosításokat, indítsa el az MPOS-folyamatot a megfelelő üzletnél, és nézze meg, hogy megjelennek-e katalógusképek.
 
-    [![catalog4](./media/catalog4.png)](./media/catalog4.png)
+    [![Képek párbeszédpanel](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Ugyanezt az eljárást használhatja mind az öt támogatott entitás esetében: Dolgozó, Vevő, Katalógus, Kategória és Termékek. A „Katalógustermékek” (a katalógus szintjén beállított termékek) és a „Csatornatermékek” (a csatorna szintjén beállított termékek) a Termékek entitáshoz beállított médiasablont használják. A Termékek médiasablonhoz kiválaszthatja a termékenként megjelenítendő termékképek számát. Ezenfelül beállíthatja az alapértelmezett képet is egy adott termékhez. Ilyen módon elkerülheti az üres képek megjelenítését az MPOS-ben és meghatározhatja, hogy melyik kép legyen az alapértelmezett kép egy termék esetében. Az alábbi példában minden terméknek van öt képe, és az első kép van beállítva alapértelmezett képként. A termékváltozatokat a rendszer ugyanúgy kezeli, mint az alaptermékeket. A képfájl fájlnevének a termékszámon kell alapulnia. Néhány karaktert fel is old a rendszer, míg a fájlnév létrejön. Ezért célszerű ellenőrizni a fájlnevet a **Kép-URL-címek létrehozása az Excel számára** szakasz használatával.
 >
-> [![term](./media/prods.png)](./media/prods.png)
+> [![Médiasablon párbeszédpanel meghatározása](./media/prods.png)](./media/prods.png)
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Szinkronizálási feladatok egy médiasablon a csatorna oldalra való küldéséhez
 
@@ -111,11 +111,11 @@ Az előző szakaszból tudjuk, hogy egy adott entitás médiasablonja csak egy k
     > [!IMPORTANT]
     > Ha megváltozik a médiasablon, rá kell kattintania **Létrehozás** opcióra, mielőtt használhatja a Szerkesztés funkciót az Excelben.
 
-    [![excel1](./media/excel1.jpg)](./media/excel1.jpg)
+    [![Képek URL-címeinek létrehozása az Excel gyorslaphoz](./media/excel1.jpg)](./media/excel1.jpg)
 
     Megjelenik a kép-URL-címek előnézete, amely az utolsó elmentett médiasablon alapján jött létre.
 
-    [![excel2](./media/excel2.png)](./media/excel2.png)
+    [![Képek URL-címeinek létrehozása az Excel gyorslaphoz a Létrehozás kiválasztása után](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Az Excel számára generált URL-címek a definiált médiasablon útvonalát és konvencióit használják. Ezek a szabályok tartalmazzák a fájlnevekre vonatkozó szabályokat. Az elvárás, hogy a fizikai képeket a Dynamics 365 for Retail rendszeren kívül állította be, és a képek az URL-címeken keresztül érhetők el, melyeket a korábban definiált médiasablonból lehet beolvasni. Ezeket a beolvasott URL-eket az Excel Szerkesztés funkciójával írhatja fölül.
@@ -160,11 +160,11 @@ A Termékek kivételével minden entitás esetében a kép-URL-t egy adott entit
 3. Ha szeretné megjeleníteni ezt a képet az MPOS-ben a katalógushoz, akkor beállíthatja alapértelmezett képként.
 4. Kattintson az **OK** gombra. A kép-URL frissül ehhez a katalógusképhez, és megjelenik az előnézet.
 
-    [![előnézet3](./media/preview3.png)](./media/preview3.png)
+    [![URL frissítve az Új kép párbeszédablakban](./media/preview3.png)](./media/preview3.png)
 
 5. Az összes felülírt kép-URL képi előnézetét megtekintheti a **Katalógusképek** galérialapon.
 
-    [![preview-4](./media/preview-4.png)](./media/preview-4.png)
+    [![Katalógusképek galérialapja](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > Jelenleg a galéria nem mutat előnézetet a médiasablon kép-URL-ekhez. A Katalógus, Dolgozó, Vevő és Kategória entitásokhoz, ha a felhasználó expliciten ezen az oldalon keresztül ad meg egy URL-t, ajánlott jelölni, hogy melyik kép az alapértelmezett, mert a Retail szerver kliensek csak egy képet mutatnak Katalógusonként, Vevőnként, Dolgozónként és Kategóriánként. Ha a felhasználó nem ad meg egy alapértelmezett képet, a rendszer határozza meg azt, és elküldi a Kiskereskedelmi szolgáltatás hívójára (MPOS vagy Elektronikus kereskedelem).
@@ -179,7 +179,7 @@ A Katalógustermék képeinek kép-URL-jeinek felülírásához az **Előnézet*
 4. Kattintson a **Hozzáadás** lehetőségre, majd írja felül a kép-URL-t egy új URL-címre.
 5. Kattintson az **OK** gombra. Most az új kép az előnézeti képe jelenik meg, és ezt beállíthatja alapértelmezett képként.
 
-    [![cat3](./media/cat3.png)](./media/cat3.png)
+    [![Kép előnézete az Új kép párbeszédablakban](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > A kategóriakép-társítás után közzé kell tennie a csatornát és le kell futtatnia a Csatornafeladatot, hogy a módosítások biztosan a csatorna-adatbázison legyenek közzétéve.
@@ -200,7 +200,7 @@ A Kapcsolat nélküli módban használandó termékképek úgy állíthatók be,
 6. Miközben MPOS Online módban van, futtassa a Katalógusfeladatot a HQ-ban, hogy az adatok legalább egyszer el legyenek küldve az offline adatbázisba.
 7. Tegye az MPOS-t Offline módba. Megjelenik az adott termékhez a feltöltött kép a HQ-ban.
 
-    [![offline1](./media/offline1.png)](./media/offline1.png)
+    [![Termékkép offline módban](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Katalógus, kategória, alkalmazott és vevő képek beállítása az MPOS Kapcsolat nélküli módban való megjelenítésre
 
@@ -212,4 +212,4 @@ Katalógus, kategória, alkalmazott, és vevő képeket, amelyeket Kapcsolat né
 4. Futtassa le a Katalógusfeladatot. A kép most már az adott katalógushoz Kapcsolat nélküli képként lesz használatos az MPOS-ben.
 5. A többi entitás esetében is hasonló folyamatot kövessen, például a Kategória, Alkalmazott és Vevő esetében.
 
-    [![offline2](./media/offline2.png)](./media/offline2.png)
+    [![Offline kép](./media/offline2.png)](./media/offline2.png)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561810"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595662"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -721,7 +721,7 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 </thead>
 <tbody>
 <tr>
-<td>Csatalkozás egy kiskereskedelmi futtatókörnyezet (CRT) adatbázishoz, amely CRT-szolgáltatásokkal üzleti adatokat tárol a csatornához.</td>
+<td>Csatalkozás egy Commerce Runtime (CRT) adatbázishoz, amely CRT-szolgáltatások használatával üzleti adatokat tárol a csatornához.</td>
 <td>Az OData V3 támogatott.</td>
 <td>Az OData V4 támogatott.</td>
 <td>Segít a vevőnek, hogy naprakész legyen a OData szabályok segítségével. Továbbá az üzletbeli, mobil- és online csatornákon keresztüli értékesítés integrálásával egy robusztus omni csatorna tapasztalatot hoz létre.</td>
@@ -971,7 +971,7 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 </tr>
 <tr>
 <td>A rendszer állapotának figyelése, hibák és problémák diagnosztizálása.</td>
-<td>Ehhez a funkcióhoz a következő szükséges: <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 felügyeleti csomag a Microsoft Dynamics AX 2012 R3 CU8 Kiskereskedelemhez</a>.</td>
+<td>Ehhez a funkcióhoz a következő szükséges: <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 felügyeleti csomag a Microsoft Dynamics AX 2012 R3 CU8 Kiskereskedelemhez</a>.</td>
 <td>A kiskereskedelmi összetevők felügyelete és diagnosztizálás már elérhető az <strong>Üzemeltetési elképzelések</strong> irányítópulton keresztül az LCS-ben.</td>
 <td>Az <strong>Üzemeltetési elképzelések</strong> irányítópult egy felhőalapú ellenőrzési portál, amely felülírja a System Center üzemeltetési vezető (SCOM) infrastruktúra telepítését.</td>
 </tr>

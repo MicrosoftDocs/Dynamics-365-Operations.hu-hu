@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538956"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595639"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations súgórendszer
 
@@ -192,7 +192,7 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 | [Docs.microsoft.com](/dynamics365/)                                                            | Állomások vagy hivatkozások az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | A Microsoft ingyenes e-tanulás webhelye. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Egy felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a Dynamics 365 for Finance and Operations projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Ez a webhely az implementáció minden fázisában hasznos. |
-| [Támogatási blog](http://aka.ms/AXSupportBlog)                                                    | Tippeket és trükköket tartalmaz, amelyeket a Dynamics 365 for Finance and Operations támogató csapata adott fel. |
+| [Támogatási blog](https://aka.ms/AXSupportBlog)                                                    | Tippeket és trükköket tartalmaz, amelyeket a Dynamics 365 for Finance and Operations támogató csapata adott fel. |
 | [Docs.microsoft.com/korábbi verziók](https://docs.microsoft.com/previous-versions/dynamics/) | A korábbi kiadások tartama. |
 | [Dynamics közösség](https://community.dynamics.com/)                                          | Blogokat, fórumokat és videókat tárol. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Értékelések és eladási információk érhetők el. |

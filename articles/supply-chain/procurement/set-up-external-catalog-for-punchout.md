@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571633"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595611"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Állítson be külső katalógust a PunchOut e-beszerzés számára
 
@@ -59,8 +59,10 @@ Ebben a szakaszban további tájékoztatást talál az előző szakasz 4. felada
 4. Válassza ki a katalógushoz tartozó szállítót. A **Jogi személyek** listában minden egyes jogi személyhez tartozik egy sor, ahol a szállító be van állítva. Annak érdekében, hogy a felhasználók csak bizonyos jogi személyek esetében igényelhessék közvetlenül a termékeket a szállítói katalógusból, másokban pedig nem, használhatja a **Hozzáférés megakadályozása** vagy a **Hozzáférés engedélyezése** gombot minden olyan jogi személy esetében, amelynél szeretné beállítani a katalógus elérhetőségét.
 5. Az **Alapértelmezett lejárat (nap)** mezőben adja meg azon napok számát, amíg a külső katalógusból kapott árajánlatok érvényesek és használhatók maradnak a külső szállítótól történő beszerzéshez. Amikor létrehoz és lekér egy árajánlatot a szállító külső katalóguswebhelyéről, az árajánlat az aktuális rendszerdátumtól kezdve az ebben a mezőben megadott számú napig marad érvényes.
 6. Kattintson a **Hozzáadás** gombra a beszerzési kategóriák külső katalógusnak történő megfeleltetésének elkezdéséhez. Ezután a Kategória neve listából válasszon egy kategóriát. A kategóriák listája olyan beszerzési kategóriaszabvány, amelynek a szállítót megfeleltette a rendszer a szállítóhoz tartozó minden jogi személy esetében.
-[!NOTE]
-A beszerzési irányelvek segítségével engedélyezheti vagy korlátozhatja a vevő jogi személyre vagy a fogadó üzemi egységre vonatkozó kategóriák hozzáférhetőségét. A külső katalógushoz történő kilépés megköveteli, hogy legalább egy olyan beszerzési kategóriához létezzen hozzáférési jogosultság, amely a katalógushoz van rendelve.
+
+    > [!NOTE]
+    > A beszerzési irányelvek segítségével engedélyezheti vagy korlátozhatja a vevő jogi személyre vagy a fogadó üzemi egységre vonatkozó kategóriák hozzáférhetőségét. A külső katalógushoz történő kilépés megköveteli, hogy legalább egy olyan beszerzési kategóriához létezzen hozzáférési jogosultság, amely a katalógushoz van rendelve.
+
 7. Állítsa be a szállítónak küldendő cXML beállításkérési üzenetet. Az automatikusan generált üzenetformátum a munkamenet elindításához szükséges minimális sablon. Töltse ki a címkék értékeit.
 
 Bármikor újra betöltheti be a rendszer által generált üzenetsablont az **Üzenetformátum visszaállítása lehetőségre** kattintva. 
@@ -85,7 +87,7 @@ Az alábbiakban megtalálja a sablonban szereplő címkék leírását:
 
 A külső elem további információt jelent, például egy olyan felhasználónév, amely a külső katalógust használó felhasználónak felel meg. A külső elem beállítása a külső katalógus használatakor történik, és elküldhető a beállításkérési üzenetben.
 Megtörténhet, hogy a szállítónál követelmény áll fenn egy a beállítási kérelemben levő külső elem fogadása tekintetében. Ebben az esetben hozzá kell adni a külső elemet a külső elemek listájához az **Üzenetformátum** részben a **Külső katalógus** lapon. Olyan nevet adjon a külső elemnek, amelyet a szállító felismer, és meg tudja feleltetni egy értéknek. A lehetséges értékek a következők: Felhasználónév, Felhasználói e-mail vagy Véletlenszerű érték.
-További információ az cXML protokollról: http://cxml.org/
+A cXML-protokollal kapcsolatos további tudnivalókat lásd: [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Visszajelzési üzenet
 A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Finance and Operations rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet:

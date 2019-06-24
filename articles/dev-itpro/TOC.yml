@@ -216,19 +216,20 @@
               href: dev-ref/r-classes.md
             - name: S osztályok
               href: dev-ref/s-classes.md
-            - name: T osztályok
+            - name: T-osztályok
               href: dev-ref/t-classes.md
-            - name: U osztályok
+            - name: U-osztályok
               href: dev-ref/u-classes.md
-            - name: V osztályok
+            - name: V-osztályok
               href: dev-ref/v-classes.md
-            - name: W osztályok
+            - name: W-osztályok
               href: dev-ref/w-classes.md
-            - name: X osztályok
+            - name: X-osztályok
               href: dev-ref/x-classes.md
     - name: Bővíthetőség
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Bővíthetőség kezdőlap
+          href: extensibility/extensibility-home-page.md
         - name: Bevezetés és az első lépések
           items:
             - name: Alkalmazásbővítési terv
@@ -239,42 +240,44 @@
               href: extensibility/app-sealing-faq.md
             - name: Áttelepítés a felülrétegzésből a bővítményekbe
               href: extensibility/migrate-overlayer-extension.md
-            - name: Modellelemek testreszabása kiterjesztésekkel (oktatóanyag)
+            - name: Modellelemek testreszabása bővítményekkel (oktatóanyag)
               href: extensibility/customize-model-elements-extensions.md
-            - name: Testreszabás kiterjesztésekkel és felülrétegezéssel
+            - name: Testreszabás bővítményekkel és felülrétegezéssel
               href: extensibility/customization-overlayering-extensions.md
         - name: Újdonságok
           items:
-            - name: 'Bővítési módosítások, 2017. július'
-              href: extensibility/changes-july-2017.md
-            - name: Bővítési módosítások a 7.3-as verzióban
-              href: extensibility/extensibility-changes-73.md
-            - name: Bővítési módosítások a 8.0-as verzióban
-              href: extensibility/changes-80.md
-            - name: 'Bővítési módosítások, 8.0.1-as verzió'
-              href: extensibility/extensibility-changes-801.md
-            - name: 'Bővítési módosítások, 8.0.2-es verzió'
-              href: extensibility/extensibility-changes-802.md
-            - name: 'Bővítési módosítások, 8.0.3-as verzió'
-              href: extensibility/extensibility-changes-803.md
-            - name: 'Bővítési módosítások, 8.0.4-es verzió'
-              href: extensibility/extensibility-changes-804.md
-            - name: 'Bővítési módosítások, 8.1-es verzió'
-              href: extensibility/extensibility-changes-81.md
-            - name: 'Bővítési módosítások, 8.1.1-es verzió'
-              href: extensibility/extensibility-changes-811.md
-            - name: 'Bővítési módosítások, 8.1.2-es verzió'
-              href: extensibility/extensibility-changes-812.md
-            - name: 'Bővítési módosítások, 8.1.3-as verzió'
-              href: extensibility/extensibility-changes-813.md
-            - name: 'Bővítési módosítások, 10.0-ás verzió'
-              href: extensibility/extensibility-changes-10.md
-            - name: 'Bővítési módosítások, 10.0.1-es verzió'
-              href: extensibility/extensibility-changes-10-1.md
-            - name: 'Bővítési módosítások, 10.0.2-es verzió'
-              href: extensibility/extensibility-changes-10-2.md
-            - name: 'Bővítési módosítások, 10.0.3-as verzió'
+            - name: Új vagy módosult elemek a bővíthetőséggel kapcsolatban
+              href: extensibility/extensibility-new.md
+            - name: 'Bővíthetőség módosításai, 10.0.3-as verzió'
               href: extensibility/extensibility-changes-10-3.md
+            - name: 'Bővíthetőség módosításai, 10.0.2-es verzió'
+              href: extensibility/extensibility-changes-10-2.md
+            - name: 'Bővíthetőség módosításai, 10.0.1-es verzió'
+              href: extensibility/extensibility-changes-10-1.md
+            - name: 'Bővíthetőség módosításai, 10.0-ás verzió'
+              href: extensibility/extensibility-changes-10.md
+            - name: 'Bővíthetőség módosításai, 8.1.3-as verzió'
+              href: extensibility/extensibility-changes-813.md
+            - name: 'Bővíthetőség módosításai, 8.1.2-es verzió'
+              href: extensibility/extensibility-changes-812.md
+            - name: 'Bővíthetőség módosításai, 8.1.1-es verzió'
+              href: extensibility/extensibility-changes-811.md
+            - name: 'Bővíthetőség módosításai, 8.1-es verzió'
+              href: extensibility/extensibility-changes-81.md
+            - name: 'Bővíthetőség módosításai, 8.0.4-es verzió'
+              href: extensibility/extensibility-changes-804.md
+            - name: 'Bővíthetőség módosításai, 8.0.3-as verzió'
+              href: extensibility/extensibility-changes-803.md
+            - name: 'Bővíthetőség módosításai, 8.0.2-es verzió'
+              href: extensibility/extensibility-changes-802.md
+            - name: 'Bővíthetőség módosításai, 8.0.1-as verzió'
+              href: extensibility/extensibility-changes-801.md
+            - name: Bővíthetőség módosításai a 8.0-as verzióban
+              href: extensibility/changes-80.md
+            - name: Bővíthetőség módosításai a 7.3-as verzióban
+              href: extensibility/extensibility-changes-73.md
+            - name: 'Bővíthetőség módosításai, 2017. július'
+              href: extensibility/changes-july-2017.md
         - name: Alapelvek
           items:
             - name: Tolakodó testreszabások
@@ -361,8 +364,14 @@
       items:
         - name: Nyomon követés a Trace parser használatával
           href: perf-test/trace-trace-tutorial.md
-        - name: Teljesítmény SDK és többfelhasználós tesztelés a Visual Studio Online segítségével
-          href: perf-test/perfsdk-tutorial.md
+        - name: Egyfelhasználós tesztelés a Feladatrögzítő és a Teljesítmény SDK segítségével
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Többfelhasználós tesztelés a Teljesítmény SDK és a helyi tesztvezérlő segítségével
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Többfelhasználós tesztelés a Teljesítmény SDK és az Azure DevOps segítségével
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Egyfelhasználós vagy többfelhasználós tesztekkel kapcsolatos hibaelhárítási útmutató a Performance SDK segítségével
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Teljesítmény SDK és többfelhasználós tesztelés helyszíni környezetben
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Hibák diagnosztizálása és teljesítményelemzés a Trace parser használatával
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Árfolyam-szolgáltatók létrehozása a Finance and Operations 8.0 alkalmazásban
           href: financial/create-exchange-rate-8.md
+    - name: 'Tranzakciók kiegyenlítése a CustTrans::settleTransaction használatával'
+      href: financial/settletransact-obsolete.md
 - name: Ellátásilánc-fejlesztés
   items:
     - name: Gantt-vezérlő – fejlesztési útmutató
@@ -1076,7 +1087,7 @@
       items:
         - name: Kód áttelepítésének előkészítése
           href: migration-upgrade/prepare-migration.md
-        - name: Az Azure DevOps leképezés konfigurálása
+        - name: Azure DevOps-megfeleltetés konfigurálása
           href: migration-upgrade/configure-vso-solution.md
         - name: Osztott modellek
           href: dev-tools/model-split.md

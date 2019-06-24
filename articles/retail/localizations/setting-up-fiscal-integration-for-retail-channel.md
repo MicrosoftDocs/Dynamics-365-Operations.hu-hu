@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525325"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577900"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának beállítása
 
@@ -88,7 +88,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
         Az adatok hozzárendelésének paramétereit a csatlakozó működési profiljában módosíthatja. A pénzügyi dokumentum-szolgáltató konfigurációjában meghatározott alapértelmezett paraméterek visszaállításához válassza a **Frissítés** lehetőséget.
 
         **Példák**
-    
+
         |   | Formátum | Példa |
         |---|--------|---------|
         | **Áfaszázalékok beállítása** | value : VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 4. Hozzon létre pénzügyi csatlakozócsoportokat.
 
     A pénzügyi csatlakozócsoport azonos funkciókat végrehajtó, és a pénzügyi regisztrációs folyamat azonos szakaszában használt pénzügyi csatlakozókat kombinál. Például, ha több pénzügyi nyomtató modellt használnak kiskereskedelmi üzletekben, azon pénzügyi nyomtatók pénzügyi csatlakozói egy csatlakozócsoportba kombinálhatók.
-    
+
     1. Az **Pénzügyi csatlakozócsoport** lapon (**Kiskereskedelem \> Csatorna beállításai \> Pénzügyi integráció \> Pénzügyi csatlakozócsoportok**), hozzon létre egy új pénzügyi csatlakozócsoportot.
     2. Működési profilok hozzáadása az összekötőcsoporthoz. A **Funkcionális profilok** lapon válassza a **Hozzáadás** lehetőséget, és válasszon egy profilszámot. Egy csatlakozócsoporton belül minden egyes pénzügyi csatlakozó csak egy funkcionális profillal rendelkezhet.
     3. A működési profil használatának felfüggesztéséhez, a **Letiltás** beállítása legyen **Igen**. Ez a módosítás csak az aktuális csatlakozócsoportot érinti. Ugyanazt a funkcionális profilt az egyéb csatlakozócsoportokban továbbra is használhatja.
@@ -119,7 +119,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 5. A pénzügyi regisztrációs folyamat létrehozása.
 
     A pénzügyi regisztrációs folyamatot a regisztrációs lépések sorrendje, és az egyes lépéseknél használt összekötőcsoport határozza meg.
-    
+
     1. A **Pénzügyi regisztrációs folyamat** oldalon (**Kiskereskedelem \> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi regisztrációs eljárások**) hozzon létre új rekordot a pénzügyi integráció minden egyedi folyamatához.
     2. Regisztráció lépéseket adjon hozzá a folyamathoz:
 
@@ -145,7 +145,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 7. A **Pénzügyi regisztrációs folyamat** oldalon (**Kiskereskedelem \> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi regisztrációs eljárások**) válassza az **Ellenőrzés** lehetőséget a pénzügyi regisztrációs folyamat ellenőrzéséhez.
 
     Ajánljuk, hogy az ilyen típusú érvényesítési futtassa a következő esetekben:
-    
+
     - Egy új regisztrációs folyamathoz, miután minden beállítás befejeződött, többek a regisztrációs folyamatok hozzárendelése a POS-funkcióprofilokhoz és hardverprofilokhoz.
     - Miután módosított egy meglévő pénzügyi regisztrációs folyamatot, és előfordulhat, hogy ezek a változtatások azt okozzák, hogy futásidőben egy másik pénzügyi csatlakozó lesz kiválasztva (például egy pénzügyi regisztrációs folyamat lépésének módosítja csatlakozócsoportját, engedélyez egy csatlakozó működési profilt a csatlakozócsoportban, vagy új csatlakozó funkcionális profilt ad hozzá egy csatlakozócsoporthoz).
     - Miután módosította a csatlakozó műszaki profilok hozzárendelését a a hardverprofilokhoz.

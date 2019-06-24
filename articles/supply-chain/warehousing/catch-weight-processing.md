@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536710"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617973"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funkció kitettsége
@@ -138,10 +138,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 - Karanténutasítások manuális létrehozása a tényleges súllyal rendelkező termékek esetében nem támogatott.
 - A készlet manuális mozgatása, amely munkához kapcsolódik, nem támogatot a tényleges súllyal rendelkező termékek esetén.
 - Az azonosítótáblák konszolidációja tényleges súllyal rendelkező termékek esetében nem támogatott.
-- A raktári készletállapot módosításai ismétlődő feladat részeként a tényleges súllyal rendelkező termékek esetében nem támogatottak.
-- A készletállapot módosításai, amelyet lekérdezés határoz meg, a tényleges súllyal rendelkező termékek nem támogatottak. (A minőségi rendelés készletállapot módosításai sem támogatottak.)
-- A tényleges súllyal rendelkező termékek esetén a készlet állapota nem módosítható az **Aktuális készlet hely szerint** oldalról.
-- Tényleges súllyal rendelkező termékek esetén a készlet állapota nem módosítható a raktáralkalmazás áthelyezési munka részeként.
 - Azonosítótábla rakodása, amely inicializálja a raktári készletet, tényleges súllyal rendelkező termékek esetében nem támogatott.
 - Tételalapú kiigazítási folyamatok a tényleges súllyal rendelkező termékek esetében nem támogatottak.
 - Negatív tényleges készlet kezelése tényleges súllyal rendelkező termékek esetében nem támogatott.
@@ -151,7 +147,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 
 - Tényleges súllyal rendelkező termékek esetén a fürtkitárolás funkció nem támogatott.
 - Kitárolás és csomagolás raktári feldolgozása tényleges súllyal rendelkező termékek esetében nem támogatott.
-- Tényleges súllyal rendelkező termékek esetén a munka nem fejezhető be a **Munka** oldalról.
 - A tényleges súllyal rendelkező termékek esetén a munkasablonon megadott munka automatikusan futtatható.
 - Tényleges súllyal rendelkező termékek esetén a munka sztornírozása funkció nem támogatott.
 - Tényleges súllyal rendelkező termékekesetén a kézi csomagolási állomás feldolgozása nem támogatott, ha munka a tárolók bezárása után kerül létrehozásra.
@@ -163,7 +158,7 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 - Tényleges súllyal rendelkező termékek esetén a kanban funkció nem támogatott.
 - Tényleges súllyal rendelkező termékek esetén a sorozatszámok nem regisztrálhatók a felhasználás előtt.
 - Tényleges súllyal rendelkező termékek esetén az azonosítótáblák sztornírozása funkció nem támogatott.
-- Tényleges súllyal rendelkező termékek esetén a készként való jelentés regisztrálható sorozatszám szerint.
+- Tényleges súllyal rendelkező termékek esetén a készként való jelentés nem regisztrálható sorozatszám szerint.
 
 ### <a name="transportation-management-processing"></a>Szállításkezelési folyamatok feldolgozása
 
