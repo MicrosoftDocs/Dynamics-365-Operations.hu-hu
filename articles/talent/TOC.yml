@@ -8,6 +8,16 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. július 2.
+              href: whats-new-talent-july-2-2019.md
+            - name: 2019. június 25.
+              href: whats-new-talent-june-25-2019.md
+            - name: 2019. június 18.
+              href: whats-new-talent-june-18-2019.md
+            - name: 2019. június 11.
+              href: whats-new-talent-june-11-2019.md
+            - name: 2019. június 4.
+              href: whats-new-talent-june-4-2019.md
             - name: 2019. május 28.
               href: whats-new-talent-may-28-2019.md
             - name: 2019. május 21.
@@ -16,26 +26,26 @@
               href: whats-new-talent-may-13-2019.md
             - name: 2019. május 6.
               href: whats-new-talent-may-6-2019.md
-            - name: 2019. április 30.
-              href: whats-new-talent-april-30-2019.md
-            - name: 2019. április 25.
-              href: whats-new-talent-april-25-2019.md
-            - name: 2019. április 16.
-              href: whats-new-talent-april-16-2019.md
-            - name: 2019. április 9.
-              href: whats-new-talent-april-9-2019.md
-            - name: 2019. április 2.
-              href: whats-new-talent-april-2-2019.md
-            - name: 2019. március 26.
-              href: whats-new-talent-march-26-2019.md
-            - name: 2019. március 20.
-              href: whats-new-talent-march-20.md
-            - name: 2019. március 14.
-              href: whats-new-talent-march-14.md
-            - name: 2019. március 5.
-              href: whats-new-talent-march-5.md
             - name: Újdonságok (2019-es archívum)
               items:
+                - name: 2019. április 30.
+                  href: whats-new-talent-april-30-2019.md
+                - name: 2019. április 25.
+                  href: whats-new-talent-april-25-2019.md
+                - name: 2019. április 16.
+                  href: whats-new-talent-april-16-2019.md
+                - name: 2019. április 9.
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2019. április 2.
+                  href: whats-new-talent-april-2-2019.md
+                - name: 2019. március 26.
+                  href: whats-new-talent-march-26-2019.md
+                - name: 2019. március 20.
+                  href: whats-new-talent-march-20.md
+                - name: 2019. március 14.
+                  href: whats-new-talent-march-14.md
+                - name: 2019. március 5.
+                  href: whats-new-talent-march-5.md
                 - name: 2019. február 27.
                   href: whats-new-talent-feb-27.md
                 - name: 2019. február 14.
@@ -102,16 +112,24 @@
           href: attract-comprehensive-hiring.md
         - name: Az Attract funkciói és lehetőségei
           href: attract-overview.md
+        - name: LinkedIn GYIK
+          href: attract-linkedin-faq.md
+        - name: E-mail beállítások megadása
+          href: attract-configure-email-settings.md
         - name: Folyamatsablon létrehozása az Attract alkalmazásban
           href: Process-templates-Attract.md
-        - name: 'Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban'
+        - name: Állások létrehozása és feladása
           href: Creating-jobs-Attract.md
-        - name: Állások feladása külső karrierwebhelyekre az Attract szolgáltatásból
+        - name: A LinkedIn integrációjának beállítása
+          href: attract-admin-linkedin.md
+        - name: Állások feladása a LinkedIn felületére az Attract szolgáltatásból
+          href: attract-post-jobs-to-linkedin.md
+        - name: Állások feladása a Broadbean felületére az Attract szolgáltatásból
           href: posting-jobs-external.md
         - name: Jelöltek felkutatása tehetségállományok segítségével
           href: attract-talent-pools.md
-        - name: Forráskeresés LinkedIn Recruiter segítségével
-          href: attract-linked-in-recruiter.md
+        - name: Jelöltek felkutatása a LinkedIn Recruiter segítségével
+          href: attract-linkedin-recruiter.md
         - name: Tevékenységek a felvételi folyamatban
           href: activities-attract.md
         - name: Interjú ütemezése és visszajelzés
@@ -132,12 +150,28 @@
           href: Admin-Settings-Attract.md
         - name: Intelligens ajánlások
           href: Intelligent-Recommendations.md
-        - name: Lebilincselő felvételi eljárás létrehozása
-          href: create-onboarding-experience.md
         - name: Jelöltprofilok és -pályázatok forrásának nyomon követése
           href: source-tracking.md
         - name: Analitikus jelentések használata a toborzási folyamattal kapcsolatos információk érdekében
           href: analytic-reports.md
+    - name: Új dolgozók üdvözlése az Onboard alkalmazással
+      items:
+        - name: Első lépések az Onboard alkalmazásban
+          href: create-onboarding-experience.md
+        - name: Az Onboard alkalmazás letöltése
+          href: onboard-get-app.md
+        - name: Felvételi útmutató létrehozása és küldése
+          href: onboard-create-guide.md
+        - name: Felvételi sablon létrehozása
+          href: onboard-create-template.md
+        - name: Útmutatók és sablonok szerkesztése
+          href: onboard-edit-guides-templates.md
+        - name: Tartalom megosztása
+          href: onboard-share-template.md
+        - name: Állapot megjelenítése
+          href: onboard-view-status.md
+        - name: Toborzócsapat létrehozása
+          href: onboard-create-team.md
     - name: Munkaerő kezelése a Core HR alkalmazással
       items:
         - name: Munkaerő-szervezés
@@ -357,6 +391,8 @@
           href: corehr-custom-fields.md
     - name: Talent – hibaelhárítás
       items:
+        - name: Az állások LinkedIn felületére való feladásával kapcsolatos hibák elhárítása
+          href: attract-troubleshoot-linkedin.md
         - name: Az elemzési jelentések nincsenek frissítve
           href: analytic-reports-not-updated.md
         - name: Nem lehet környezetet létrehozni a PowerApps felügyeleti központjában
