@@ -1,10 +1,10 @@
-- name: Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
+- name: Üdvözöljük a Dynamics 365 for Retail rendszerben
   href: index.md
 - name: Első lépések
   items:
     - name: Új vagy módosult elemek
       href: get-started/whats-new.md
-    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.3-as verziójában
+    - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.3-es verziójában
       href: get-started/whats-new-10-0-3.md
     - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.2-es verziójában
       href: get-started/whats-new-10-0-2.md
@@ -407,6 +407,10 @@
       items:
         - name: Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan
           href: localizations/emea-ita-fpi-sample.md
+    - name: Mexikó
+      items:
+        - name: Globális CFDI e-számlák Mexikóban
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: Norvégia
       items:
         - name: Pénztárgép funkciói
@@ -602,7 +606,7 @@
           href: dev-itpro/extend-metadata.md
         - name: A CRT szolgáltatás hívása offline módban
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce Runtime (CRT) bővíthetősége
+    - name: A Commerce Runtime (CRT) bővíthetősége
       items:
         - name: A CRT architektúrája és konfigurálása
           href: dev-itpro/commerce-runtime-overview.md
