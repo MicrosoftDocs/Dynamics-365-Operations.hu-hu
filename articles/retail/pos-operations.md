@@ -3,7 +3,7 @@ title: Online és offline pénztár (POS) műveletek
 description: Ez a témakör ismerteti a pénztár (POS) műveleteit Microsoft Dynamics 365 for Retail alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505096"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625665"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -159,9 +159,9 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 114 | Visszáru-tranzakció | Korábbi tranzakció visszahívása bizonylatszám alapján egy vagy több termék visszaküldéséhez. | Igen | Igen | Igen | Igen§ | Nincs |
 | 1211 | Széfes befizetés | Széfes befizetés, mellyel a pénz áthelyezhető a pénztárból a széfbe. | Igen | Igen | Igen | Igen | Nincs |
 | 516 | Értékesítési számla | Ez a művelet lehetővé teszi, hogy a vevő felé a kiválasztott értékesítési számla kifizetéseket. | Igen | Igen | Nincs | Nincs | Nincs |
-| 502 | Értékesítő | Ez a művelet lehetővé teszi, hogy a felhasználó beállítsa az **Értékesítési átvevő** értéket az ügyfélrendelésekre vonatkozó értékesítési rendelésen a pénztárnál. | Igen | Igen | Nincs | Igen\* | Nincs |
-| 2000 | Ütemezéskezelés | Ez a művelet segítségével a felhasználók létrehozása, módosítása vagy alkalmazott ütemezések megtekintése. | Igen | Igen | Igen | Nincs | Nincs |
-| 2001 | Kérelmek ütemezése | Ez a művelet lehetővé teszi, hogy a felhasználó kérés ideje ki, műszakok felcserélése vagy más alkalmazottak ajánlja fel a műszakok. | Igen | Igen | Igen | Nincs | Nincs |
+| 502 | Értékesítő | Ez a művelet lehetővé teszi, hogy a felhasználó beállítsa az **Értékesítési átvevő** értéket az ügyfélrendelésekre vonatkozó értékesítési rendelésen a pénztárnál. | Igen | Igen | Nem | Igen\* | Nem |
+| 2000 | Ütemezéskezelés | Ez a művelet még nem támogatott. | Igen | Igen | Igen | Nem | Nem |
+| 2001 | Kérelmek ütemezése | Ez a művelet még nem támogatott. | Igen | Igen | Igen | Nem | Nem |
 | 622 | Rendelések keresése | Ez a művelet segítségével a felhasználók előre POS cikk, vevő vagy kategória szerinti keresés gombra. | Igen | Igen | Igen | Igen | Nincs |
 | 1213 | Szállítási cím keresése | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
 | 709 | Hardverállomás kiválasztása | Ez a művelet lehetővé teszi, hogy a felhasználó jelölje ki azt a rendelkezésre álló állomás listájában hardverállomás. | Igen | Igen | Igen | Igen | Nincs |

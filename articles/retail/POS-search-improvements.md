@@ -3,7 +3,7 @@ title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530776"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625642"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -40,7 +40,7 @@ A termékek keresése alapértelmezés szerint az üzletszortiment alapján tör
 A **Katalógus módosítása** oldalon az alkalmazottak egyszerűen kiválaszthatnak minden üzletet, illetve végezhetnek keresést termékekre minden üzletben.
 
 ![A katalógus módosítása](./media/Changecatalog.png "A katalógus módosítása")
- 
+
 A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 
 - Termékszám
@@ -55,7 +55,7 @@ A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 A helyi termékkeresés használata felhasználóbarátabbá vált. A következő fejlesztések történtek:
 
 - A termék és vevő legördülő menük bekerültek a Keresés mezőbe, hogy az alkalmazottak választhassanak a **Termék** vagy a **Vevő** közül a keresés előtt. Alapértelmezés szerint a **Termék** van ki jelölve a következő ábrán látható módon.
-- A több kulcsszavas keresésnél (például a keresési kifejezések használatával végzett keresésnél), a kiskereskedők beállíthatják, hogy a keresési találatok közé a *bármelyik* keresési feltételnek megfelelő találatok vagy csak az *összes* keresési feltételeknek megfelelő találatok kerüljenek-e be. Ez a beállítás a pénztári funkcióprofilban, a **Termékkeresés** nevű új csoportban érhető el. Az alapértelmezett beállítás **Bármelyik keresési kifejezés egyeztetése**. Ez a beállítás egyúttal az ajánlott beállítás is. A **Bármely keresési kifejezésnek megfelel** beállítás használatakor minden olyan termék megjelenik a találatok között, amely egy vagy több teljes vagy részleges keresési kifejezést tartalmaz. Ezeket az eredményeket a rendszer automatikusan sorrendbe rendezi azon olyan termékek növekvő sorrendjében, amelyeknél a legtöbb a kulcsszóegyezés (teljes vagy részleges).
+- A több kulcsszavas keresésnél (például a keresési kifejezések használatával végzett keresésnél), a kiskereskedők beállíthatják, hogy a keresési találatok közé a *bármelyik* keresési feltételnek megfelelő találatok vagy csak az *összes* keresési feltételeknek megfelelő találatok kerüljenek-e be. A funkció beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű új csoportban érhető el. Az alapértelmezett beállítás **Bármelyik keresési kifejezés egyeztetése**. Ez a beállítás egyúttal az ajánlott beállítás is. A **Bármely keresési kifejezésnek megfelel** beállítás használatakor minden olyan termék megjelenik a találatok között, amely egy vagy több teljes vagy részleges keresési kifejezést tartalmaz. Ezeket az eredményeket a rendszer automatikusan sorrendbe rendezi azon olyan termékek növekvő sorrendjében, amelyeknél a legtöbb a kulcsszóegyezés (teljes vagy részleges).
 
     Az **Az összes keresési kifejezés egyeztetése** beállítás csak a minden a keresési feltételnek (egészben vagy részlegesen) megfelelő termékeket adja vissza. Ez a beállítás akkor hasznos, ha a a terméknevek hosszúak, és az alkalmazottak csak korlátozott számú terméket akarnak látni a keresési eredmények között. Azonban az ilyen típusú keresésre két korlátozás vonatkozik:
 
@@ -65,11 +65,20 @@ A helyi termékkeresés használata felhasználóbarátabbá vált. A következ�
 - A kiskereskedők a termékkeresést úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
 - A termékkeresési algoritmus mostantól a **Keresési név** terméktulajdonságban is keresi a keresési kifejezéseket.
 
-    ![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
+![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
 
 ## <a name="customer-search"></a>Vevőkeresés
 
-A vevőkereséssel különböző célokkal kereshetők vevők. Például lehet, hogy a pénztáros szeretné megnézni egy vevő kívánságlistáját vagy beszerzési előzményeit, vagy hozzá akarja adni a vevőt egy tranzakcióhoz. Keresés algoritmus megfelelteti a keresési kifejezéseket a következő vevőtulajdonságokban szereplő értékekkel: név, e-mail cím, telefon, hűségkártya száma, cím és számlaszám. Ezek közül a név tulajdonság nyújtja a legnagyobb rugalmasságot, több kulcsszavas keresések esetén, mivel az algoritmus visszaadja az összes ügyefelet, aki megfelel bármely keresett kulcsszónak, és a legtöbb kulcsszónak megfelelő ügyfél jelenik meg az eredmények elején. Ez a viselkedés segít a pénztárosoknak olyan helyzetekben, amikor teljes névvel keresnek de a kezdeti adatbeviteli során a vezetéknév és keresztnév fel lett cserélve. Azonban a megfelelő teljesítmény érdekében, minden más tulajdonság megőrzi a keresőszavak sorrendjét, tehát, ha a kulcsszavak nem felelnek meg annak a sorrend, amelyben tárolva vannak az adatok, akkor a rendszer nem ad vissza eredményt.
+A vevőkereséssel különböző célokkal kereshetők vevők. Például lehet, hogy a pénztáros szeretné megnézni egy vevő kívánságlistáját vagy beszerzési előzményeit, vagy hozzá akarja adni a vevőt egy tranzakcióhoz. A keresési algoritmus egyezteti a keresési kifejezéseket és a következő vevőtulajdonságokban szereplő értékeket:
+
+- Név
+- E-mail cím
+- Telefonszám
+- Hűségkártya száma
+- Cím
+- Számlaszám
+
+Ezek közül a tulajdonságok közül a név használható a legrugalmasabban a több kulcsszavas keresésekhez, mivel az algoritmus minden olyan vevőt visszaad, amely esetében egyezés van a keresett kulcsszavakkal. A legtöbb kulcsszónak megfelelő vevők az eredmények tetején jelennek meg. Ez a viselkedés segít a pénztárosoknak olyan helyzetekben, amikor teljes névre keresnek, de a kezdeti adatbeviteli során fel lett cserélve a vezetéknév és a keresztnév. A megfelelő teljesítmény érdekében azonban minden egyéb tulajdonság esetében megmarad a keresési kulcsszavak sorrendje. Ha tehát a keresési kulcsszavak sorrendje és az adatok tárolási sorrendje különbözik, akkor a rendszer nem ad vissza eredményt.
 
 Alapértelmezés szerint a vevő keresése az üzlethez társított vevői címjegyzékekben történik. Az ilyen típusú keresés *helyi vevőkeresés* néven ismert. Azonban az alkalmazottak kereshetnek vevőt globálisan is. Más szavakkal kereshetnek a vállalat üzletei és az összes többi jogi személy között. Az ilyen típusú keresés *távoli vevőkeresés* néven ismert.
 
@@ -86,7 +95,7 @@ A távoli vevőkeresésnél a vevőkód nem jelenik meg a más jogi személyekt�
 
 A telefonszámon alapuló keresések egyszerűbbé váltak. Ezek a keresések most figyelmen kívül hagyják a különleges karaktereket, például a szóközöket, kötőjeleket és zárójeleket, amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Kereshetnek a vevők részleges telefonszámának beírásával is. Ha egy telefonszám különleges karaktereket tartalmaz, megtalálható a speciális karakterek után megjelenő számok keresésével is. Ha például egy vevő telefonszámát **123-456-7890** formában rögzítették, a pénztáros kereshet a vevőre az **123**, **456**, **7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
 
-A hagyományos vevőkeresés időigényes lehet, mivel több mező között keres. Ehelyett most a pénztárosok kereshetnek egyetlen egyéni tulajdonságra, például névre, e-mail-címre vagy telefonszámra. A vevőkeresési algoritmus által használt tulajdonságok együttes neve: *vevőkeresési feltételek*. A rendszergazda egyszerűen konfigurálhat egy vagy több kritériumot olyan rövidítésként, amelyek megjelennek a pénztárban. Mivel a keresés egyetlen feltétel korlátozódik, csak a releváns keresési eredmények jelennek meg, és a teljesítmény sokkal nagyobb, mint a szokásos vevő keresés teljesítménye. Az alábbi ábra mutatja a pénztár vevőkeresési rövidítéseit.
+A hagyományos vevőkeresés időigényes lehet, mivel több mező között keres. Ehelyett a pénztárosok kereshetnek a vevő egyik tulajdonságra, például a névre, az e-mail-címre vagy a telefonszámra. A vevőkeresési algoritmus által használt tulajdonságok együttes neve: *vevőkeresési feltételek*. A rendszergazda egyszerűen konfigurálhat egy vagy több kritériumot olyan rövidítésként, amelyek megjelennek a pénztárban. Mivel a keresés egyetlen feltétel korlátozódik, csak a releváns keresési eredmények jelennek meg, és a teljesítmény sokkal nagyobb, mint a szokásos vevő keresés teljesítménye. Az alábbi ábra mutatja a pénztár vevőkeresési rövidítéseit.
 
 ![Vevőkeresési rövidítések](./media/SearchShortcutsPOS.png "Vevőkeresési rövidítések")
 
@@ -101,3 +110,7 @@ A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések j
 
 > [!NOTE]
 > Az egyéni tulajdonság, amelyet hozzáadnak a felsoroláshoz, nem befolyásolja a normál vevői keresési algoritmust. Más szóval a vevőkereső algoritmus nem keres az egyéni tulajdonságban. A felhasználók csak akkor használhatják az egyéni tulajdonságokat keresésre, ha az adott tulajdonság hozzá van adva rövidítésként, vagy ha az alapértelmezett keresési algoritmust felülbírálják.
+
+A Microsoft Dynamics 365 for Retail valamelyik jövőbeli kiadásában a kiskereskedők a pénztárban be tudják majd állítani a **Keresés az összes üzletben** értéket a vevők alapértelmezett keresési módjaként. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Új, **Alapértelmezett vevőkeresési mód** nevű beállítás érhető el a pénztár működési profiljában. A **Be** érték megadásával az alapértelmezett keresési módként a **Keresés az összes üzletben** lehetőséget állítja be. Minden vevőkeresési kísérlet valós idejű hívást indít a központba.
+
+A teljesítménnyel kapcsolatos váratlan problémák megelőzése érdekében ezt a beállítást a **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** tesztelési jelző mögé rejtettük. Így a felhasználói felület **Alapértelmezett vevőkeresési mód** beállításának megjelenítéséhez a kiskereskedőnek támogatási jegyben kell kérnie a felhasználói tesztelést (UAT) és a termelési környezet használatát. Miután megkapjuk a jegyet, a mérnöki csapat segít a kiskereskedőnek, hogy nem termelési környezetben történő teszteléssel tudja felmérni a teljesítményt, és végre tudja hajtani a szükséges optimalizációt.

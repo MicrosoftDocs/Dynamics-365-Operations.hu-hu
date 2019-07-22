@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518221"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729703"
 ---
 # <a name="career-site-functionality-in-attract"></a>Attract előmeneteli webhely funkció
 
@@ -48,11 +48,14 @@ Az alábbi elemek értékének beállításához jelentkezzen be az Attract rend
  
 Az alábbi elemek értékének beállításához jelentkezzen be az Attract rendszerébe rendszergazdaként, válassza az **Adminisztrációs központ** lehetőséget a **Beállítások** menüben, és válassza ki a **Karrieroldal kezelése** lapot.
 
--   **Keresőmotor optimalizálása** -Ha engedélyezve van, az Attract karrierwebhelyre feladott összes nyilvános állás kereshető keresőmotorok, Bing és Google segítségével.
+-   **Keresőmotor optimalizálása** -Ha engedélyezve van, az Attract karrierwebhelyre feladott összes nyilvános állás kereshető keresőmotorok, Bing és Google segítségével. 
 
     > [!NOTE] 
     > A beállítás bekapcsolása és a keresési eredmények megjelenése között eltelhet egy kis idő, és attól függően, hogy milyen keresőmotor használ.
-         
+    
+-   **Feltételek és kikötések** – ha engedélyezve van, az összes pályázónak el kell fogadnia a szervezet feltételeit és kikötéseit, amikor bármilyen feladatra pályáznak. Az Attract adminisztrátora konfigurálhatja saját elfogadási szövegét, valamint a feltételek lapra mutató hivatkozást. 
+
+        
 ## <a name="career-site-urls"></a>Karrierwebhely URL-címek
 
 Az alábbi lista a gyakran használt karrierwebhely URL-címeket és azok elérési módját tartalmazza.

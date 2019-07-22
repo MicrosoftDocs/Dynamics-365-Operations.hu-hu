@@ -3,7 +3,7 @@ title: Mi az, ami új vagy módosított
 description: Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait.
 author: josaw1
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: bc13efe11f383157338ccd6b2ae378ee1f92a698
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 42c31195a0b1a785afadfefc33f5cf7e1a6fce1f
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619192"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632005"
 ---
 # <a name="whats-new-or-changed"></a>Új vagy módosult elemek
 
@@ -63,7 +63,7 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 <td>10.0.3</td>
 <td>10.0.107</td>
 <td>június 2019.</td>
-<td><a href="whats-new-changed-10-0-3.md">Előnézeti szolgáltatások a Dynamics 365 for Finance and Operations 10.0.3 verzióban (2019 június)</a></td>
+<td><a href="whats-new-changed-10-0-3.md">Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.3-as verziójában (2019. június)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.2</td>
@@ -183,7 +183,7 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 <td>27-as platformfrissítés</td>
 <td>7.0.5286</td>
 <td>június 2019.</td>
-<td><a href="whats-new-platform-update-27.md">Előzetes funkciók a Dynamics 365 for Finance and Operations Platform Update 27 (2019. június) verziójában</a></td>
+<td><a href="whats-new-platform-update-27.md">Melyek a Dynamics 365 for Finance and Operations 27. platformfrissítésének új vagy módosult elemei (2019. június)?</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>26-as platformfrissítés</td>

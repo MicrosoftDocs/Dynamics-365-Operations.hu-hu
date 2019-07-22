@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Finance and Operations rendszert.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620014"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625011"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -169,6 +169,6 @@ Rendszergazdai jogokkal rendelkező felhasználók más felhasználók személye
 
 Amikor a készletdimenziók beállítását szabja személyre egy lapon, fontolja meg azokat a beállításokat, amelyek segítségével létrehozta a **Megjelenítendő dimenzió** lehetőséget. Például személyre szabás segítségével egy oszlopot elrejt a kötegszám-készlet dimenzióból, de az oszlop megjelenik, amikor legközelebb megnyitja a lapot. Ez azért fordul elő, mert a **Dimenzió megjelenítése** beállítások határozzák meg a készlet dimenzió megjelenő oszlopait.
 
-A **Dimenzió megjelenítési** beállításai minden lapon érvényesülnek, és ezek a beállítások az egyes lapok minden személyre szabott készletdimenzió-mező beállításait felülírják.
+A **dimenzió megjelenítési** beállításai minden lapon érvényesülnek, és az egyes lapok személyre szabott készletdimenzió-mezőinek minden beállítását felülírják.
 
-Ennek eredményeként az előző példában, ha nem szeretné, hogy a Köteg száma készletdimenzió megjelenjen, a dimenziót törölnie kell a **Dimenziók megjelenítése** tábla beállítás részeként. Végül a módosítás nemcsak egy adott lapon, hanem minden lapon érvényes volna.
+Ez azt jelenti, hogy ha az előző példában nem szeretné, hogy a Köteg száma készletdimenzió megjelenjen egy oldalon, a dimenziót törölnie kell az adott oldal **Dimenziók megjelenítése** beállításának megadásakor.

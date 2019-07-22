@@ -3,7 +3,7 @@ title: Finance and Operations súgórendszer
 description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595639"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625329"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations súgórendszer
 
@@ -95,16 +95,18 @@ Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megj
 
     ![Megjegyzés elküldése](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Javasoljon módosítást vagy járuljon hozzá a tartalomhoz a GitHub használatával
+### <a name="contribute-to-the-documentation"></a>Közreműködés a dokumentációban
 
-Módosítás javasolásához GitHub-fiókra van szükség, és alá kell írni a közreműködői licencszerződést. Egy lekéréses kérelem benyújtása után át fogjuk tekinteni a javasolt módosításokat. Szükség esetén belső körben megvitatjuk őket, és felvesszük a kapcsolatot önnel.
+A Finance and Operations dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörön, vagy menjen a repónkra a <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public> címen. A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
 
-Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörön, vagy menjen a repónkra a <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public> címen.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
 
-További tudnivalókért olvassa el a következő közreműködői útmutatót: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
+A [Közreműködés a Microsoft Dynamics 365 dokumentációjához](https://youtu.be/m5djioozRbg) videó (fent látható) szerepel az [Újdonságok a Dynamics 365 szolgáltatásban lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9), ami elérhető a YouTube felületén.
+
+További tudnivalókért olvassa el a közreműködői útmutatót, amelyet itt talál <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
 > [!NOTE]
-> Jelenleg csak az angol nyelvű repóhoz fogadunk el közreműködést.
+> Jelenleg csak az angol nyelvű tartalomhoz fogadunk el közreműködést.
 
 ## <a name="task-guides"></a>Feladat-útmutatók
 

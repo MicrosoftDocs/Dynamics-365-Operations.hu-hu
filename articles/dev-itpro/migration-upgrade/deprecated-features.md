@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620645"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624907"
 ---
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
@@ -40,7 +40,10 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
 
-## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés
+
+> [!IMPORTANT]
+> A Dynamics 365 for Finance and Operations 10.0.4 28-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>FEC Könyvelési adatok exportálása XML-formátumban, Franciaország
 
@@ -52,17 +55,12 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult. A funkció eltávolításának céljaként megjelölt időkeret 2020. július. |
 
-=======
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés
-
-> [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.4 28-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
 
 ### <a name="legacy-navigation-bar"></a>Korábbi navigációs sáv
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Fejléc igazítása más Dynamics és Office termékekkel. A további tudnivalókat lásd: [A frissített navigációs sáv mostantól igazodik az Office fejléchez](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)
+| **Elavulás/eltávolítás oka** | Fejléc igazítása más Dynamics és Office termékekkel. A további tudnivalókat lásd: [A frissített navigációs sáv mostantól igazodik az Office fejléchez](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Felváltotta másik szolgáltatás?**   | A Platform update 24-től kezdve bevezetésre került egy újratervezett navigációs sáv, amelyen keresés is található. |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
@@ -71,8 +69,6 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 és 26-as platformfrissítés
 
-> [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.2 26-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
 
 ### <a name="legacy-default-action-behavior"></a>Örökölt alapértelmezett művelet viselkedése
 
@@ -116,9 +112,6 @@ Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a 
 | **Állapot**                         | Elavult: A funkció eltávolításának célként meghatározott időkerete 2020 áprilisa. |
 
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 és 25-as platformfrissítés
-
-> [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.1 25-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Elavult API-k és a lehetséges kompatibilitástörlő változások
 

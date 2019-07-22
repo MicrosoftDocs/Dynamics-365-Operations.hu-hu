@@ -3,7 +3,7 @@ title: Költségjelentések újragondolva
 description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations újratervezett és újragondolt költségjelentési bejegyzésekre vonatkozó élményével kapcsolatban tartalmaz információkat. Az új élmény egyszerűbbé teszi a költségjelentés végrehajtási folyamatát, és csökkenti a szükséges időt.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 9e87a61bd6dd7bc1c7ef569882daf2074c7cade9
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592637"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1631955"
 ---
 # <a name="expense-reports-reimagined"></a>Költségjelentések újragondolva
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 A költségjelentés bejegyzését újratervezték, hogy leegyszerűsítse a költségjelentés kitöltési folyamatát, és csökkentse a szükséges időt. Az új, költséggel kapcsolatos gyakorlat főbb összetevői a következők:
 

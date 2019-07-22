@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518197"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729726"
 ---
 # <a name="email-templates"></a>E-mail sablonok
 [!include[banner](../includes/banner.md)]
 
-Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 for Talent: Attract használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Az Attract egyes e-mailjei automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
+Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 for Talent: Attract and Offer használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Egyes e-mailek automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
 
 > [!NOTE]
 > E-mail sablonok használatához a szervezetének rendelkeznie kell az Átfogó felvételi bővítménnyel.
@@ -37,7 +37,7 @@ Az e-mail sablontár használatával a rendszergazdák egységes témát és má
 
 E-mail értesítések emblémájának konzisztens létrehozásához a rendszergazda először be kell vinni globális fejlécbe és láblécbe összes e-mail sablonokat. A felügyeleti központban a **E-mail sablon beállításai** lapon a **Fejléc** szakasz, az Adminisztráció feltöltheti minden e-mailek használni a fejlécben vagy transzparens kép. A kép lehet a vállalat emblémája, fejléce vagy bármelyik másik képe. Azt javasoljuk, hogy a szélesség 25 és 800 képpont közötti lehet, és a magassága 25 és 150 képpont között, mivel ezek a dimenziók a legtöbb e-mail-kliens, például a Microsoft Outlook számára is optimálisak. A képnek JPEG, JPG, PNG vagy SVG fájlnak kell lennie, és a fájl mérete kisebb, mint 1 megabájt (MB) kell lennie. Kép feltöltése után a fejléc előnézetét létrehozza és jelenik meg. Ha a fejléc képet el kell távolítani vagy ki kell cserélni, a rendszergazda használhatja az **Eltávolítás** elemet az előnézet lehetőség felett.
 
-A **Lábléc** szakasz, az Adminisztráció teremthet kapcsolatot a cég adatvédelmi kommunikáció és a feltételek. Ezek a hivatkozások be vannak építve egy láblécbe, amely automatikusan létrejön. A lábléc előnézete akkor jelenik meg.
+A **Lábléc** szakasz, az Adminisztráció teremthet kapcsolatot a cég adatvédelmi kommunikáció és a feltételek. Ezek a hivatkozások be vannak építve egy láblécbe, amely automatikusan létrejön. A lábléc előnézete akkor jelenik meg. Az adminisztrátor egy adott nyelvet is választhat, amelyen az e-mailek élőlábát a program az összes e-mail részeként elküldi. Ugyanezt a nyelvi konfigurációt fogja használni a felvételi összesítő tábla összeállítására is. 
 
 Ügyeljen arra, hogy mentse a módosításokat, mielőtt bezárja az Admin centert.
 
@@ -46,7 +46,7 @@ A **Lábléc** szakasz, az Adminisztráció teremthet kapcsolatot a cég adatvé
 
 ## <a name="email-template-library"></a>E-mail sablontár 
 
-Miután a globális beállítások be vannak állítva, a rendszergazda létrehozhat és karbantarthat sablonokat az Attract alkalmazásból küldött összes e-mailhez. Az e-mail sablontár csak rendszergazdák számára érhető el. Válassza ki a könyvtár, a fő navigációs menü megnyitása a **E-mail sablonok** lapon. A könyvtár Attract küldött e-mailek kell, például az ütemezés, az értékelés, és a feladat létrehozása a különböző tevékenységekhez módszere. A rendszergazda választhat egy kategóriára, amelyek a tevékenységhez társított összes e-mail-típus megjelenítése. Kiválaszthatja például az **Ütemezés** elemet az ütemezési folyamat során különféle e-mailtípusok megtekintéséhez, és a különböző típusú e-mailekhez rendelkezésre álló összes sablon megtekintéséhez. Minden alszakasz a kategóriákban egy e-mailtípust jelöl.
+Miután a globális beállítások be vannak állítva, a rendszergazda létrehozhat és karbantarthat sablonokat az Attract and Offer alkalmazásból küldött összes e-mailhez. Az e-mail sablontár csak rendszergazdák számára érhető el. Válassza ki a könyvtár, a fő navigációs menü megnyitása az **E-mail sablonok** lapon. A könyvtár Attract küldött e-mailek kell, például az ütemezés, az értékelés, és a pozíció létrehozása és ajánlat a különböző tevékenységekhez módszere. A rendszergazda választhat egy kategóriára, amelyek a tevékenységhez társított összes e-mail-típus megjelenítése. Kiválaszthatja például az **Ütemezés** elemet az ütemezési folyamat során különféle e-mailtípusok megtekintéséhez, és a különböző típusú e-mailekhez rendelkezésre álló összes sablon megtekintéséhez. Minden alszakasz a kategóriákban egy e-mailtípust jelöl.
 
 Bizonyos típusú e-maileknek egynél több címzettje lehet. Például az **Ütemezés** kategóriában azokat az e-maileket, amelyeket akkor küldenek el, amikor az interjúütemezésések összegzésére van szükség, a jelöltnek, valamint az interjúbonyolítóknak is elküldik. Minden egyes szakasznak két fő oszlopa van: **Sablon címe** és **Címzett**. A szakasz minden sora egy sablon e-mail típust jelent. Először minden sablon sorában egy zár szimbólum fog megjelenni. Ez a szimbólum jelzi, hogy a sablon a szabványos, Attract alkalmazáshoz mellékelt sablon, és nem törölhető. Az adminisztrátor minden sablonnál használhatja a (**...**) gombot a sablon másolásához, beállításához alapértelmezett sablonként, vagy törléséhez. A sablon alapértelmezett sablonként beállításakor két viselkedés egyikére kerülhet sor. A viselkedés a sablon sorban megjelenő jelvényen vagy jelvényeken van megadva:
 

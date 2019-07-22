@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592660"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625872"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -651,6 +651,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>SZÁMFORMÁTUM (szám, formátum)</td>
 <td>A megadott szám karakterlánc formáját adja vissza a megadott formátumban. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
 <td>Az EN-US kultúrában a <strong>SZÁMFORMÁTUM (0.45, &quot;p&quot;)</strong> a következőt adja vissza: <strong>&quot;45.00 %&quot;</strong>. <strong>SZÁMFORMÁTUM (10.45, &quot;#&quot;)</strong> a következőt adja vissza: <strong>&quot;10&quot;</strong>.</td>
+</tr>
+<tr>
+<td>NUMBERFORMAT (szám, formátum, kulturális környezet)</td>
+<td>A megadott számot parancsfájl formájában adja vissza a megadott formátum és területi beállítások alapján. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">szokásos</a> és <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">egyéni</a>.).</td>
+<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> visszaadja a <strong>3,33</strong> értéket, míg <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> visszaadja a <strong>3.33</strong> értéket.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (szám, nyelv, pénznem, pénznem névjelzőjének nyomtatása, tizedes)</td>

@@ -3,7 +3,7 @@ title: Követelések és beszedések kezelése Power BI tartalom
 description: Ez a témakör a Követelések és beszedések kezelése Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547232"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702772"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI tartalom
 
@@ -42,7 +42,17 @@ Minden összeg a rendszer pénznemében van megadva. Beállíthatja az rendszer 
 
 Alapértelmezés szerint a jelenlegi vállalat követeléseinek és beszedéseinek adatait jeleníti meg. Ha az összes vállalatra vonatkozó adatot látni szeretné, rendelje a **CustCollectionsBICrossCompany** kötelességet a szerepkörhöz.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>A Power BI-tartalom megtekintéséhez beállítás szükséges
+
+A következő beállításokat meg kell adni, hogy az adatok megjelenjenek a **Vevői követelések és beszedések** között, a Power BI vizuális elemei között.
+
+1. Nyissa meg a **Rendszeradminisztráció > Beállítás > Rendszerparaméterek** pontot a **Rendszerpénznem** és a **Rendszerváltási árfolyam** beállításához.
+2. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre, és a **Könyvelési pénznem** és az **Árfolyamtípus** beállítása.
+3. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
+4. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **CustCollectionsBIMeasurements** összesítő mérték frissítéséhez.
+
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
+
 A **Követelések és beszedések kezelése** Power BI-tartalom a **Vevői követelések és beszedések** munkaterületen jelenik meg.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Jelentések, amelyek a Power BI-tartalomban szerepelnek
@@ -63,28 +73,3 @@ A **CustCollectionsBICrossCompany** Power BI-tartalom jelentést is tartalmaz, a
 | Fizetési felszólítások         | <ul><li>Felszólító kód - összegek</li><li>Felszólító kód összegének részletei</li><li>Fizetési felszólító levelek összege vállalatok szerint</li><li>Fizetési felszólítások összege vevőcsoportok szerint</li><li>Fizetési felszólító levelek összege régió szerint</li></ul> |
 
 Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése ábrán látható.
-
-## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-
-A következő adatokkal tölthetők ki a jelentések oldala a **Követelések és beszedések kezelése** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Entitás                    |      Kulcs összesítő mértékek      |             Adatforrás              |                           Mező                            |                                    Leírás                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     A lezárt tevékenységek száma, illetve az az átlagos idő, amely a tevékenységek lezárásához szükséges.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           A nyitott tevékenységek száma.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Korosított egyenlegek összege.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           A késésben lévő összegek.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        A lezárt esetek száma, illetve az az átlagos idő, amely az esetek lezárásához szükséges.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              A nyitott esetek száma.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       A nyitott fizetési felszólítások listájának száma.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     A feladott fizetési felszólítások egyenlege.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                A felszólítási állapotban lévő tranzakciók egyenlege.                 |
-|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | A hitelkockázatok és azon összegek összesítése, amennyivel az ügyfelek túllépték a hitelkeretet. |
-|         CustCollectionsBICustOnHold         |               Letiltva                |      CustCollectionsBICustTable      |                       Szám(tiltott)                       |                     A várakoztatott ügyfelek száma.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Kintlevőség-elmaradási napok száma 30.                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 A következő évben várt befizetések összege.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                A létrehozott kamatlevelek száma.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Az összes várakoztatott értékesítési rendelés száma.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                A leírt tranzakciók összege.                 |
-

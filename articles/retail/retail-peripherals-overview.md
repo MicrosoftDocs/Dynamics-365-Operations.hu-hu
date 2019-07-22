@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577929"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624812"
 ---
 # <a name="retail-peripherals"></a>Kiskereskedelmi perifériák
 
@@ -156,13 +156,13 @@ A **Windows** eszköztípus csak nyomtatókhoz használt. Ha Windows-nyomtatót 
 
 ### <a name="network"></a>Hálózat
 
-Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózaton keresztül is használhatók vagy a Modern POS for Windows alkalmazásba beépített folyamatközi kommunikációs (IPC) hardverállomáson keresztül, vagy az IIS-hardverállomáson át más Modern POS-ügyfelek esetében.
+Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózaton keresztül is használhatók, vagy közvetlenül, a Modern POS for Windows vagy a Modern POS for Android alkalmazásba beépített folyamatközi kommunikációs (IPC) hardverállomáson keresztül, vagy az IIS-hardverállomáson át más Modern POS-ügyfelek esetében.
 
 ## <a name="hardware-station-deployment-options"></a>Hardverállomás-telepítési lehetőségek
 
 ### <a name="ipc-built-in"></a>IPC (beépített)
 
-A Modern POS for Windows alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Az IPC-hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows alkalmazást fogja használni. Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja. Amikor elindítja a Modern POS alkalmazást, az IPC-hardverállomás aktív lesz, és a konfigurált POS-perifériák használatra készek lesznek. Ha átmenetileg nincs szüksége a helyi hardverre valamilyen okból, a **Hardverállomások kezelése** művelettel kapcsolja ki a hardverállomás funkcionalitást. A Modern POS arra is használhatja az IPC-hardverállomást, hogy közvetlenül kommunikáljon a hálózati perifériákkal.
+A Modern POS for Windows és a Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Az IPC-hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows alkalmazást fogja használni. Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja. Amikor elindítja a Modern POS alkalmazást, az IPC-hardverállomás aktív lesz, és a konfigurált POS-perifériák használatra készek lesznek. Ha átmenetileg nincs szüksége a helyi hardverre valamilyen okból, a **Hardverállomások kezelése** művelettel kapcsolja ki a hardverállomás funkcionalitást. A Modern POS arra is használhatja az IPC-hardverállomást, hogy közvetlenül kommunikáljon a hálózati perifériákkal.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ A hardverprofilban levő eszközök hálózati megjelölése lehetővé teszi a 
 
 Két helyen lehet megadni a hálózati perifériákhoz tartozó IP-címeket. Ha a Modern POS Windows-ügyfél hálózati perifériák egyetlen készletet használja, az IP-címeket az eszközökhöz a Művelet panel **IP-konfiguráció** beállításának segítségével adja a pénztárgéphez. Az olyan hálózati eszközök esetében, amelyeken több pénztárgép osztozik, a hozzárendelt hálózati eszközökkel rendelkező hardverprofil közvetlenül rendelhető egy megosztott hardverállomáshoz. Az IP-címek hozzárendeléséhez jelölje ki a hardverállomást a **Kiskereskedelmi üzletek** oldalon, és alkalmazza az **IP-konfiguráció** lehetőséget a **Hardverállomások** szakaszban a hardverállomáshoz hozzárendelt hálózati eszközök megadásához. Az olyan hardverállomásoknál, amelyek csak hálózati eszközökkel rendelkeznek, nem kell telepíteni magát a hardverállomást. Ebben az esetben a hardverállomásra csak ahhoz van szükség, hogy fogalmi szinten csoportosítsuk a hálózati címmel rendelkező eszközöket a helyük szerint a kiskereskedelmi üzletben.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS for iOS és Modern POS for Android
+#### <a name="modern-pos-for-android"></a>Modern POS for Android
+
+A 8.1.3-as Dynamics 365 for Retail-verzióhoz használható Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Ez a hardverállomás támogatja a hálózati nyomtatókkal és a fizetési csatlakozókkal folytatott kommunikációt. További információ: [Hibrid alkalmazás Android rendszerhez](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS és Modern POS iOS rendszerhez
 
 A fizikailag csatlakoztatott és hálózati címmel rendelkező perifériákat működtető logika a hardverállomásban található. Ezért a Modern POS for Windows kivételével az összes ügyfél esetében egy IIS-hardverállomást kell telepíeni és aktiválni ahhoz, hogy a pénztár kommunikálhasson a perifériákkal, függetlenül attól, hogy a perifériák fizikailag csatlakoztatottak egy hardverállomáshoz, vagy a hálózaton keresztül vannak megcímezve.
 
@@ -222,9 +226,9 @@ A következő táblázat a támogatott topológiákat és telepítési forgatók
 | Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
 |-------------|----------------------|----------------------|
 | Windows alkalmazás | Igen                  | Igen                  |
-| Felhő pénztár   | Szám                   | Igen                  |
-| Android     | Szám                   | Igen                  |
-| iOS         | Szám                   | Igen                  |
+| Felhő pénztár   | Nem                   | Igen                  |
+| Android     | Igen                  | Igen                  |
+| iOS         | Nem                   | Igen                  |
 
 ### <a name="network-peripherals"></a>Hálózati perifériák
 
@@ -233,9 +237,9 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 | Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
 |-------------|----------------------|----------------------|
 | Windows alkalmazás | Igen                  | Igen                  |
-| Felhő pénztár   | Szám                   | Igen                  |
-| Android     | Szám                   | Igen                  |
-| iOS         | Szám                   | Igen                  |
+| Felhő pénztár   | Nem                   | Igen                  |
+| Android     | Igen                  | Igen                  |
+| iOS         | Nem                   | Igen                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Támogatott eszköztípusok hardverállomás-típus szerint
 
@@ -661,14 +665,15 @@ A következő perifériákat a Modern POS for Windows beépített IPC-hardverál
 
 #### <a name="printer"></a>Nyomtató
 
-| Gyártó | Típus    | Interfész | Megjegyzések                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó   |
-| Star         | mPOP     | OPOS      | Bluetooth-kapcsolattal csatlakozó |
-| HP           | F7M67AA  | OPOS      | Tápellátású USB             |
+| Gyártó | Típus      | Interfész | Megjegyzések                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Egyéni    | Hálózaton keresztül csatlakozó   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Egyéni    | Hálózaton keresztül csatlakozó   |
+| Star         | mPOP       | OPOS      | Bluetooth-kapcsolattal csatlakozó |
+| HP           | F7M67AA    | OPOS      | Tápellátású USB             |
 
 #### <a name="bar-code-scanner"></a>Vonalkódolvasó
 
@@ -688,11 +693,12 @@ A következő perifériákat a Modern POS for Windows beépített IPC-hardverál
 
 #### <a name="payment-terminal"></a>Fizető terminál
 
-| Gyártó | Típus | Interfész | Megjegyzések                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Egyéni    | A fizetési csatlakoztató testreszabását igényli                                |
-| VeriFone     | MX925 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
-| VeriFone     | MX915 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| Gyártó | Típus        | Interfész | Megjegyzések                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Egyéni    | A fizetési csatlakoztató testreszabását igényli                                |
+| VeriFone     | MX925        | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| VeriFone     | MX915        | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| Verifone     | Megjegyzések megtekintése | Adyen     | Az Adyen-összekötő az összes [itt](https://www.adyen.com/pos-payments/terminals) említett eszközt támogatja |
 
 #### <a name="cash-drawer"></a>Pénzfiók
 
