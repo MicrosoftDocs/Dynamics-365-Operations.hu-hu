@@ -3,7 +3,7 @@ title: Pályázók gyűjtése szaktudásgyűjtők segítségével
 description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Attract szaktudásgyűjtőit.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518143"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711294"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Pályázók gyűjtése szaktudásgyűjtők segítségével
 
@@ -110,8 +110,6 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A *
 
 - Megtekintheti a pályázó kapcsolatfelvételi adatait. Szintén szerkesztheti, illetve frissítheti az adatokat szükség szerint a **Részletes adatok szerkesztése** gombbal.
 
-- A jelentkező szakértelmének azonosítását segítő további szakértelemcímkéket is hozzáadhat.
-
 - A pályázó teljes előzményeit is megtekintheti. Megtekintheti az állásokat, amelyekre a pályázó jelentkezett a szervezetnél, valamint ezeknek a jelentkezéseknek az állapotát. Ha egy állás felvételi csapatának a tagja, választhatja a **Megtekintés** lehetőséget a jelentkezés részleteinek megtekintéséhez.
 
 - A **Dokumentumok** lap megjeleníti dokumentumokat, amelyeket a pályázó hozzáadott a profilból vagy az álláspályázatok során. Ezen lap használatával lehet kezelni a jelölt önéletrajzát, kísérőlevelét, portfóliómunkáját stb. A lap használatával dokumentumokat hozzáadni is lehet.
@@ -119,6 +117,9 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A *
     A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft Office 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
 
 - A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További tudnivalókért lásd: [Forráskeresés LinkedIn Recruiter segítségével](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Csak a jelentkezők frissíthetik tudásukat, oktatási előzményeiket és munkatapasztalatokat.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>A szaktudásgyűjtőből jelöltek hozzáadása egy álláshoz
 

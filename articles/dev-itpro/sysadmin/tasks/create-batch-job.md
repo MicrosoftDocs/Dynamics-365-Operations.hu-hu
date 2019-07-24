@@ -3,7 +3,7 @@ title: Kötegelt feladat létrehozása
 description: A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához elküldött feladatcsoport az automatikus feldolgozáshoz.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fbb844ebcf8d4b47b127132a5bf0ea45fa40f747
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d211dcd7cb47df135d395d2a993429746aa35a85
+ms.sourcegitcommit: 6ba4006fb6a67ddd4b1e54e3d62b9d1239b5e5a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562881"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "1700841"
 ---
 # <a name="create-a-batch-job"></a>Kötegelt feladat létrehozása
 
@@ -31,21 +31,27 @@ A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához el
 
 
 ## <a name="create-the-batch-job"></a>Kötegelt feladat létrehozása
-1. Ugorjon a Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok pontra.
-2. Kattintson az Új lehetőségre.
-3. A Munkaköri leírás mezőbe írjon be egy értéket.
-4. Az Ütemezett kezdő dátum/idő mezőben adjon meg egy dátumot és időt.
-5. Kattintson a Mentés gombra.
+1. Ugorjon a **Navigációs lap > Modulok > Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok** pontra.
+2. Kattintson az **Új** elemre.
+3. A **Munkaköri leírás** mezőbe írjon be egy értéket.
+4. Az **Ütemezett kezdő dátum/idő** mezőben adjon meg egy dátumot és időt.
+5. Kattintson a **Mentés** gombra.
 
 ## <a name="create-a-recurrence"></a>Ismétlődés létrehozása
-1. Kattintson a Művelet Panelen a Kötegelt feladat lehetőségre.
-2. Kattintson az Ismétlődésre.
-    * E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
-3. Kattintson az OK gombra.
+1. Kattintson a Művelet panelen a **Kötegelt feladat** lehetőségre.
+2. Kattintson az **Ismétlődésre**. E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
+3. Kattintson az **OK** gombra.
 
 ## <a name="add-alerts"></a>Figyelmeztetések hozzáadása
-1. Kattintson a Művelet Panelen a Kötegelt feladat lehetőségre.
-2. Kattintson a figyelmeztetések lehetőségre.
-    * Jelezze, ha szeretne figyelmeztető üzenetet kapni a kötegelt feladat befejeződése, meghibásodása vagy törlődése esetén. Adja meg, ha azt szeretné, hogy a figyelmeztetések előugró üzenetekként jelenjenek meg.   
-3. Kattintson az OK gombra.
+1. Kattintson a Művelet panelen a **Kötegelt feladat** lehetőségre.
+2. Kattintson a **Figyelmeztetések** lehetőségre. Jelezze, ha szeretne figyelmeztető üzenetet kapni a kötegelt feladat befejeződése, meghibásodása vagy törlődése esetén. Adja meg, ha azt szeretné, hogy a figyelmeztetések előugró üzenetekként jelenjenek meg.   
+3. Kattintson az **OK** gombra.
 
+## <a name="adjust-batch-job-status"></a>Kötegelt feladat állapotának beállítása
+1. Ugorjon a **Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok** pontra.
+2. Jelölje ki a megfelelő kötegelt feladatokat.
+3. Kattintson a Művelet panelen a **Kötegelt feladat > Funkciók > Állapot módosítása** lehetőségre.
+4. Válassza ki a megfelelő állapotot.
+    - **Visszatartás**: A kötegelt feladat **visszatartási** értékre állítása, így a kötegelt munkaütemezőből visszatartható. A *leállítással* egyenértékű.
+    - **Várakozás**: A kötegelt feladat **várakozásra** történő beállítása, így a kötegelt munkaütemező által elindítható. A *mehettel* egyenértékű.
+5. Kattintson az **OK** gombra.

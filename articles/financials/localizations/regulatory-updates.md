@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 for Finance and Operations tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593343"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624311"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -66,6 +66,13 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      Függőben            |   10.0.3      | Lengyelország     |   SAF számlák (JPK_FA) v. 2 2019. július 1-től  |
 |      Függőben            |   10.0.3      | Brazília   |   ICMS pénzügyi dokumentum-korrekciók engedélyezése 5.2 tábla   |
 |      Függőben            |   10.0.3      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
+  | Függőben            |   10.0.4      | Brazília    |   Beérkező pénzügyi bizonylat, 66   |
+   | Függőben            |   10.0.4      | Brazília    |   NF-e és NFC-e – 13/2019 számú rendelet és SUCIEF 55/2019- RJ rendelet – új feltételek az adómentességi címkék kiadásáról az NF-e-ben.   |
+   | Függőben            |   10.0.4      | India   |   A „Teljesítés helyének” és az „Állapotnak” a megjelenítése a GST-adószámlán  |
+   | Függőben            |   10.0.4      | Mexikó   |  Harmadik fél DIOT-nyilatkozata – az elrendezés változásai, 2019   |
+   | Függőben            |   10.0.4      | Brazília    |   NF-e ICMS-ST – CAT 42/18 rendelet az SP állapotához – CAT 42/18
+   | Függőben            |   10.0.4      | Brazília    |   NF-e rendelet 54.308/18 – RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>További erőforrások

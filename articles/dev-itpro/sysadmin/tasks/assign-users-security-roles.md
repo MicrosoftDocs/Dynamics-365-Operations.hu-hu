@@ -3,7 +3,7 @@ title: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 description: A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab9f2f5ea07ae1d616c48dffa8810b966f7dbb2f
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556709"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711131"
 ---
 # <a name="assign-users-to-security-roles"></a>Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 
@@ -31,25 +31,20 @@ A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás elérés
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Felhasználók automatikus hozzárendelése a szerepkörökhöz
-1. Ugorjon a Rendszerfelügyelet > Biztonság > Felhasználók szerepkörökhöz rendelése pontra.
-2. Válassza ki a fastruktúrában a „Számviteli felügyelő” lehetőséget.
-    * Válassza ki azt a szerepkört, amelyre vonatkozóan konfigurálni kívánja a szabályt. Ebben a példában válassza ki a Számviteli felügyelő lehetőséget.  
-3. Kattintson a Szabály hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.
-4. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki a lekérdezést ezen szabály használatához.  
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. Kattintson A lekérdezés szerkesztése elemre.
-    * Igény szerint módosítsa a lekérdezést.  
-7. Kattintson az OK gombra.
+1. Ugorjon a **Navigációs lap > Modulok > Rendszerfelügyelet > Biztonság > Felhasználók szerepkörökhöz rendelése** pontra.
+2. Válassza ki a fastruktúrában a „Számviteli felügyelő” lehetőséget. Válassza ki azt a szerepkört, amelyre vonatkozóan konfigurálni kívánja a szabályt. Ebben a példában válassza ki a Számviteli felügyelő lehetőséget. 
+3. Kattintson a **Szabály hozzáadása** lehetőségre a legördülő párbeszédpanel megnyitásához.
+4. A kívánt rekord megkeresése és kijelölése a **Lekérdezés kiválasztása** listában. Válassza ki a lekérdezést ezen szabály használatához.  
+5. A **Tagsági szabály neve** listában kattintson a kijelölt sorban lévő hivatkozásra.
+6. Kattintson a **Lekérdezés szerkesztése** elemre. Igény szerint módosítsa a lekérdezést.  
+7. Kattintson az **OK** gombra.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>A felhasználók kizárása az Automatikus szerepkör-hozzárendelésből
 1. Zárja be a lapot.
-2. Ugorjon a Rendszerfelügyelet > Biztonság > Felhasználók szerepkörökhöz rendelése pontra.
-3. Válassza ki a fastruktúrában a „Számviteli felügyelő” lehetőséget.
-    * Szerepkör választása. Például, válassza ki a Számviteli felügyelő lehetőséget.  
-4. Kattintson a Felhasználók kézi hozzárendelése/kizárása lehetőségre.
-5. A listában jelölje meg a kiválasztott sort.
-    * Felhasználó kiválasztása  
-6. Kattintson a Kizárás szerepkörből lehetőségre.
-    * Kattintson a Kizárás szerepkörből lehetőségre a kiválasztott felhasználók szerepkörből történő kizárásához. A kivételek eltávolításához jelölje ki azokat a felhasználókat, akikre vonatkozóan el szeretné távolítani a kizárásokat, majd ezt követően kattintson az Állapot visszaállítása lehetőségre. Amikor eltávolít egy kizárást a felhasználói állapot visszaállításával, a rendszer ismét automatikusan hozzárendeli a felhasználó szerepkört. Azonban a rendszer a felhasználót nem rendeli hozzá automatikusan a szerepkörhöz és kizárja a szerepkörből, amikor a rendszer visszaállítja az állapotát. A rendszer ehelyett a felhasználót vagy hozzárendeli a szerepkörhöz vagy eltávolítja a szerepkörből a következő alkalommal, hogy az automatikus szerepkör-hozzárendelési szabályokat futtassa a rendszer.  
-
+2. Ugorjon a **Navigációs lap > Modulok > Rendszerfelügyelet > Biztonság > Felhasználók szerepkörökhöz rendelése** pontra.
+3. Válassza ki a fastruktúrában a „Számviteli felügyelő” lehetőséget. Szerepkör választása. Például, válassza ki a Számviteli felügyelő lehetőséget.  
+4. A **Szerepkörhöz rendelt felhasználók** menüben válassza ki a **Felhasználók manuális hozzárendelését/kizárását**.
+5. A **Felhasználók szerepkörhöz rendelése vagy kizárása onnan** listában jelölje meg a kiválasztott sorokat. Felhasználó kiválasztása  
+6. A **Műveleti ablaktáblán** kattintson a **Kizárás szerepkörből** elemre.
+    
+    Kattintson a **Kizárás szerepkörből** lehetőségre a kiválasztott felhasználók szerepkörből történő kizárásához. A kivételek eltávolításához jelölje ki azokat a felhasználókat, akikre vonatkozóan el szeretné távolítani a kizárásokat, majd ezt követően kattintson az **Állapot visszaállítása** lehetőségre. Amikor eltávolít egy kizárást a felhasználói állapot visszaállításával, a rendszer ismét automatikusan hozzárendeli a felhasználó szerepkört. Azonban a rendszer a felhasználót nem rendeli hozzá automatikusan a szerepkörhöz és kizárja a szerepkörből, amikor a rendszer visszaállítja az állapotát. A rendszer ehelyett a felhasználót vagy hozzárendeli a szerepkörhöz vagy eltávolítja a szerepkörből a következő alkalommal, hogy az automatikus szerepkör-hozzárendelési szabályokat futtassa a rendszer.  

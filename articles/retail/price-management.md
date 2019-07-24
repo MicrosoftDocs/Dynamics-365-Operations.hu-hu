@@ -3,7 +3,7 @@ title: Kiskereskedelmi eladási ár kezelése
 description: Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Microsoft Dynamics 365 for Retail rendszerben.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
-ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
+ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1594070"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624789"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -234,6 +234,6 @@ Emellett **csak** a kiskereskedelmi árképzés motor támogatja a következő �
 
 ## <a name="pricing-api-enhancements"></a>Árképzési API-fejlesztések
 
-Az ár az egyik legfontosabb tényező, amely a vevők vásárlási döntéseit vezérli, és a vásárlás előtt számos vevő a különböző telephelyek árait hasonlítja össze. Annak érdekében, hogy garantálni tudják a versenyképes árak biztosítását, a kiskereskedők szorosan figyelemmel kísérik versenytársaikat, és gyakran promóciókat futtatnak. Ezért a kiskereskedőknek a vevők vonzására történő segítése érdekében fontos, hogy a termékek keresése, a böngészés funkció, a listák és a termék részletei lap a legpontosabb árakat jelenítse meg.
+Az ár az egyik legfontosabb tényező, amely a vevők vásárlási döntéseit vezérli, és a vásárlás előtt számos vevő a különböző helyek árait hasonlítja össze. A kiskereskedők – annak érdekében, hogy versenyképes árakat tudjanak biztosítani – szorosan figyelemmel a kísérik versenytársaikat, és gyakran biztosítanak promóciókat. Ahhoz, hogy a kiskereskedők megfelelően fel tudják kelteni a vevők figyelmét, fontos, hogy a termékek keresése, a böngészési funkció, a listákat és a termék részleteit tartalmazó lap a legpontosabb árakat jelenítse meg.
 
 A Retail közelgő kiadásában a **GetActivePrices** alkalmazásprogramozási felület (API) olyan árakat ad vissza, amelyek egyszerű engedményeket tartalmaznak (például egysoros engedményeket, amelyek nem függnek a kosár egyéb cikkeitől). Ily módon a megjelenített árak a cikkeknél a vevők által kifizetett tényleges összeg közelében találhatók. Ez az API az egyszerű engedmények minden típusát fogja tartalmazni: fiókon alapuló, hűségprogramon alapuló, a katalóguson alapuló és a csatorna alapú engedmények. Az API emellett az alkalmazott kedvezmények neveit és érvényességi adatait is visszaadja, így a kiskereskedők részletesebb leírást adhatnak az árhoz, és sürgető érzést teremtenek, ha a kedvezmény érvényessége hamarosan lejár.

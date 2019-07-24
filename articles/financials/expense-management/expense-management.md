@@ -3,7 +3,7 @@ title: Költséggazdálkodás
 description: Ez a témakör a Költségkezeléssel kapcsolatos általános tudnivalókról szól, valamint további erőforrásokra mutató hivatkozásokat tartalmaz. A Költséggazdálkodás modul használatával olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: 7509553df57b9cba206e606b78c70732da32074d
+ms.sourcegitcommit: 169b593b0d9afb228d2cfb0f3b742e4777ec81af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538609"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "1633975"
 ---
 # <a name="expense-management"></a>Költséggazdálkodás
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 A Költséggazdálkodás modul használatával olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára. Meghatározhatja a kiadásokra vonatkozó szabályokat és automatizálhatja az utazási költségtérítés elszámolását.
 

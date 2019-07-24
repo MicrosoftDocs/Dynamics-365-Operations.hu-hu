@@ -3,7 +3,7 @@ title: Műveletek ütemezése
 description: Ez a témakör információkat nyújt a műveletek ütemezésével kapcsolatban. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560259"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691462"
 ---
 # <a name="operations-scheduling"></a>Műveletek ütemezése
 
@@ -67,6 +67,9 @@ A műveletek ütemezése az alaptervezést is elindítja, valamint meghatározza
 -   **Visszanaplózott termelések** – Olyan termékek, amelyek termelését már tervezték, kiadták vagy elindították
 -   **Anyagok rendelkezésre állása** – Készlet, altermelések, beszállítók
 -   **Kapacitás rendelkezésre állása** – A termeléshez szükséges erőforrások
+
+> [!NOTE]
+> Ha többszálas alaptervezést és műveletütemezést használ, akkor a rendszer nem veszi figyelembe a véges kapacitást. 
 
 ## <a name="cancellations"></a>Visszavonások
 Műveletütemezés futtatásakor törölheti az útvonal meghatározott részeit. Ide tartozik például a várakozási idő, a beállítási idő, a feldolgozási idő, az átfedési idő és a szállítási idő.

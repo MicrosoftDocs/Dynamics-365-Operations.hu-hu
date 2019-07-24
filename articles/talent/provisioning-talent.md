@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576921"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624607"
 ---
 # <a name="provision-talent"></a>A Talent létesítése
 
@@ -48,6 +48,8 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
 1. Az LCS-projektben válassza a **Talent alkalmazás kezelése** csempét.
 2. Azt jelzi, hogy ez a Talent Védőfal- vagy termelési példánya. A korai előzetes funkciók elérhetők lehetnek a Védőfalpéldányokban, a korai visszajelzések és tesztelés érdekében. 
+    > [!NOTE]
+    > A Talent példánytípus eltér a PowerApps-környezet PowerApps Felügyeleti központjában beállítható példánytípusától.
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
 4. A Talent alkalmazást mindig biztosítva van a Microsoft PowerApps környezetben annak érdekében, hogy biztosítsa a PowerApps integrációját és bővíthetőségét. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik PowerApps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a PowerApps adminisztrációs központjába. Kövesse a [PowerApps környezet létrehozása](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment) részben leírt lépéseket.
 

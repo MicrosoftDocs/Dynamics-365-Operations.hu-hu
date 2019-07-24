@@ -3,7 +3,7 @@ title: Videók a Finance and Operations rendszerhez
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Dynamics 365 for Finance and Operations alkalmazásra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: josaw1
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
+ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591548"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625397"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videók a Finance and Operations rendszerhez
 
@@ -64,6 +64,10 @@ A videók szolgáltatás szerint vannak listázva, így görgessen le a videók 
 - [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 - [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
 - [Költséggel kapcsolatos gyakorlat](https://youtu.be/Ocy-MsTvEE0)
+
+#### <a name="help-system"></a>Súgórendszer
+
+- [Hozzájárulás a Microsoft Dynamics 365 dokumentációjához](https://youtu.be/m5djioozRbg)
 
 #### <a name="intelligence"></a>Intelligencia
 

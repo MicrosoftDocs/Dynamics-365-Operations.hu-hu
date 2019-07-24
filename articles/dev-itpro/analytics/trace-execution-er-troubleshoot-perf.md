@@ -3,7 +3,7 @@ title: Az ER-formátum végrehajtásának nyomon követése a teljesítménnyel 
 description: Ez a témakör azt mutatja be, hogyan kell használni az Elektronikus jelentéskészítés (ER) teljesítményfigyelő funkcióját a teljesítménnyel kapcsolatos problémák elhárításához.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576546"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703875"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -346,3 +346,29 @@ Ha a Finance and Operations ezen verzióinak egyikét használja, akkor közvetl
 Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére.
+
+![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Külső eszközök használata az adatbázis-lekérdezéseket tartalmazó végrehajtási nyomon követés áttekintéséhez
+
+Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhetően a teljesítmény PerfView formátumában létrehozott nyomon követése több részletet biztosít az ER-formátum végrehajtásáról. A Microsoft Dynamics 365 for Finance and Operations 10.0.4-es verziójában (2019. július) ez a nyomon követés az alkalmazás-adatbázishoz végrehajtott SQL-lekérdezések részleteire is kiterjedhet.
+
+### <a name="configure-user-parameters"></a>Felhasználói paraméterek konfigurálása
+
+1. A Finance and Operations alkalmazásban lépjen a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk** részre.
+2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
+3. A **Felhasználói paraméterek** párbeszédpanel **Végrehajtás nyomon követése** szakaszában állítsa be az alábbi paramétereket:
+
+    - A **Végrehajtási nyomkövetés formátuma** mezőben válassza a **PerfView XML** értéket.
+    - A **Lekérdezési statisztikák gyűjtése** beállításnál adja meg az **Igen** értéket.
+    - A **Lekérdezés nyomon követése** beállításhoz adja meg az **Igen** lehetőséget.
+
+    ![A felhasználói paraméterek párbeszédpanel a Finance and Operations modulban](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Az ER-formátum futtatása
+
+Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
+
+Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére. Ez a nyomon követés már az SQL-adatbázis ER-formátum végrehajtása alatti hozzáférés részleteire is vonatkozik.
+
+![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

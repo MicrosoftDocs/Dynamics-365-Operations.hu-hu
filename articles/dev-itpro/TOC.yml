@@ -997,6 +997,8 @@
               href: deployment/deploy-retail-onprem.md
         - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: PowerBI.com-integráció helyszíni környezetekkel
+          href: analytics/entity-store-on-prem.md
         - name: Fordított proxyk konfigurálása a helyszíni környezetekhez
           href: deployment/onprem-reverseproxy.md
         - name: Frissítések alkalmazása helyszíni telepítéshez
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Hibaelhárítás helyszíni telepítéseknél
           href: deployment/troubleshoot-on-prem.md
+        - name: Tanúsítványváltás
+          href: deployment/certificate-rotation-on-prem.md
     - name: Egyéni kód telepítése
       items:
         - name: Telepíthető csomagok létrehozása a modellekhez

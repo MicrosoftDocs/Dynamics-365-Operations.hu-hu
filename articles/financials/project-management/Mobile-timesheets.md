@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557329"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624884"
 ---
-# <a name="project-timesheets-on-a-mobile-device"></a>Munkaidő-nyilvántartások mobileszközön
+# <a name="project-timesheets-on-a-mobile-device"></a>Projekthez tartozó időnyilvántartások mobileszközön
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Áttekintés
 
 A **(mobilra optimalizált) Saját időnyilvántartások** segítségével az alkalmazottak elkészíthetnek és elküldhetnek projekt-időtáblákat, amelyeken mobileszközön rögzíthetik egy adott projektre fordított munkaidejüket. Az alkalmazottak létrehozhatnak egy új időnyilvántartást vagy másolhatják az adatokat egy meglévő időnyilvántartásból a gyors és pontos időbejegyzés érdekében. Ha Ön meghatalmazottként van kijelölve, más dolgozók számára is megadhat egy munkaidő-nyilvántartást. Az alkalmazás lehetővé teszi az alkalmazottak számára a projekt, az erőforrás vagy a jóváhagyási állapot szűrését, hogy gyorsan megtalálják és kiválasszák az időnyilvántartást. Emellett lehetővé teszi az alkalmazottak számára a kedvencek mentését, ami a projekt és a tevékenységinformációkat az időnyilvántartásban tárolja. A mentett kedvencek felhasználhatók későbbi időnyilvántartások létrehozására, ami felgyorsítja az időbejegyzés folyamatát. A pénzügyi dimenzióinformációk szerkesztése vagy megtekintése nem támogatott a mobilalkalmazásból. A **Saját időnyilvántartások (mobileszközre optimalizálva)** a mobileszközön lévő webböngészőn keresztül érhető el.
 
@@ -35,8 +33,7 @@ Az **Időnyilvántartások saját vizsgálathoz (mobileszközre optimalizálva)*
 A mobilalkalmazás kompatibilis az iPhone esetén a Dynamics 365 for Finance and Operations platform update 15-ös verzióval.
 Az Android kompatibilis lesz a 16-os platformfrissítéssel, amikor elérhető lesz.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Projekt-időnyilvántartás létrehozása a mobileszközön
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Projekt-időnyilvántartás létrehozása a mobileszközön
 
 1.  Figyelje meg a Dynamics 365 URL-címét a **Projektvezetés és könyvelés** \> **Időnyilvántartások** \> **Saját időnyilvántartások (mobileszközre optimalizálva)** oldalon.
 

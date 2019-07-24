@@ -3,7 +3,7 @@ title: A termékek szinkronizálása Sales-termékekre közvetlenül a Finance a
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek Microsoft Dynamics 365 for Sales szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572604"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624335"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
 
@@ -43,7 +43,7 @@ A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálá
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
-A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://preview.admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
+A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
 
 A következő sablonokat és alapul szolgáló feladatokat használják a termékek szinkronizálásához a Finance and Operations és a Sales között:
 

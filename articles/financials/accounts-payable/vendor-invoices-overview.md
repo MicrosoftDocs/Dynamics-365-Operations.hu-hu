@@ -3,7 +3,7 @@ title: Szállítói számlák áttekintése
 description: Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618273"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625079"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
@@ -91,13 +91,6 @@ Használhatja a **Szállítói számlák helyreállítása** lapot a szállító
 
 A **Szállítói számlák helyreállítása** laphoz csak akkor férhet hozzá, ha a **Használatban lévő szállítói számlák helyreállítása** biztonsági kötelezettség és jogosultság Önhöz van rendelve. Ezenkívül a **Szállítói számla visszaállítása** paramétert a **Kötelezettségek paraméterei** lapon be kell kapcsolni.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Szállítói számlák munkafolyamat-állapotának visszaállítása Helyreállíthatatlan állapotból Tervezet állapotba
-
-A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyreállíthatatlan** munkafolyamat-állapotot kap. Ha egy szállítóiszámla-munkafolyamat állapota **Helyreállíthatatlan**, visszaállíthatja **Tervezet** állapotba. Ezután szerkesztheti a szállítói számlát. Ez a funkció akkor érhető el, ha a **Funkciókezelés** oldal **Tervezet állapot visszaállítása szállítóiszámla-munkafolyamathoz** paramétere be van kapcsolva.
-
-A **Szállítóiszámla-munkafolyamat állapotának visszaállítása** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt a lapot megnyithatja az **Időszakos feladat** navigációból. Ezen a lapon látható az összes szállítói számla, amely **Helyreállíthatatlan** munkafolyamat-állapottal rendelkezik a jelenlegi jogi személyben. Azt is megjeleníti, hogy az egyes számlákat a munkafolyamatba ki küldte be, a számla azonosítóját, valamint hivatkozást a munkafolyamat-előzményekre. A munkafolyamat állapotának **Tervezet** állapotra való visszaállításához jelöljön ki egy vagy több számlát, és válassza a **Frissítés Tervezet állapotra** lehetőséget. Miután a munkafolyamat állapotát visszaállította **Tervezet** állapotba, szerkeszthetővé válik a **Szállítói számlák** lapon.
-
-A **Szállítóiszámla-munkafolyamat állapotának visszaállítása** oldal csak akkor hozzáférhető, ha a **Szállítóiszámla-munkafolyamat állapotának karbantartása** biztonsági feladatát és a **Szállítóiszámla-munkafolyamat állapotának visszaállítása** jogosultságot Önhöz rendelték.
 
 ## <a name="additional-resources"></a>További erőforrások
 
