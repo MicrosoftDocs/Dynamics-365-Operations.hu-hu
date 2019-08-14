@@ -1,9 +1,11 @@
-- name: Üdvözöljük a Dynamics 365 for Retail rendszerben
+- name: Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
   href: index.md
 - name: Első lépések
   items:
     - name: Új vagy módosult elemek
       href: get-started/whats-new.md
+    - name: Előzetes funkciók a Dynamics 365 for Retail 10.0.5-es verziójában
+      href: get-started/whats-new-10-0-5.md
     - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.3-es verziójában
       href: get-started/whats-new-10-0-3.md
     - name: Új vagy módosult elemek a Dynamics 365 for Retail 10.0.2-es verziójában
@@ -257,6 +259,8 @@
       href: Notifications-POS.md
 - name: Visszáru
   items:
+    - name: Csatolt visszatérítések
+      href: dev-itpro/linked-refunds.md
     - name: Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele
       href: sell-return-outside-assortments.md
     - name: Csere konfigurálása és feldolgozása visszárurendelésen
