@@ -106,10 +106,28 @@
           items:
             - name: X++ nyelvi referencia
               href: dev-ref/xpp-language-reference.md
-            - name: X++ típusú változók és adattípusok
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'X++ típusú állítások, ciklusok és kivételkezelés'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Változók és adattípusok
+              items:
+                - name: Változók
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Primitív adattípusok
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Összetett adattípusok
+                  href: dev-ref/xpp-data-composite.md
+                - name: Gyűjteményosztályok
+                  href: dev-ref/xpp-data-collection.md
+                - name: Kiterjesztett adattípusok
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Állítások, ciklusok és kivételkezelés'
+              items:
+                - name: 'Megjegyzések, használat és nyomtatás'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Feltételes állítások
+                  href: dev-ref/xpp-conditional.md
+                - name: Ciklusos kimutatások
+                  href: dev-ref/xpp-loops.md
+                - name: Kivételkezelés
+                  href: dev-ref/xpp-exceptions.md
             - name: SQL-kapcsolat hiba X++-kivétele
               href: dev-ref/sql-connection-error.md
             - name: X++-operátorok
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: X++-adatkiválasztás és -manipuláció
               href: dev-ref/xpp-data-query.md
+            - name: Adatok elérése a SysDa API használatával
+              href: dev-ref/sysda.md
             - name: X++-makrók
               href: dev-ref/xpp-macros.md
             - name: X++-attribútumosztályok
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Dynamics szimbólum betűtípusa
           href: user-interface/symbol-font.md
+        - name: Mentett nézetek
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása
+          href: user-interface/understanding-saved-views.md
         - name: Egyedi mintákat használó tesztűrlapok
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Megosztható, titkosított URL-címek (mélylinkek) létrehozása'
@@ -494,9 +518,9 @@
           href: user-interface/slider-messagebox.md
         - name: 'API az üzenetközponthoz, az üzenetsávhoz és az üzenetadatokhoz'
           href: user-interface/messaging-api-center-bar-details.md
-        - name: 'GYIK az üzenetközpontról, az üzenetsávról és az üzenetadatokról'
+        - name: 'Üzenetközpontról, üzenetsáv és az üzenetadatok – GYIK'
           href: user-interface/messaging-user.md
-    - name: Elsődleges űrlap mintáira vonatkozó irányelvek
+    - name: Űrlapmintákra vonatkozó irányelvek
       items:
         - name: Űrlapminták áttelepített űrlapokhoz
           href: user-interface/select-form-pattern.md
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Gyorsjavítások
       items:
-        - name: Gyorsjavítások letöltése a Lifecycle Services szolgáltatásból
+        - name: Frissítések beszerzése Lifecycle Services szolgáltatásból
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Frissítések alkalmazása felhőalapú környezetekre
           href: deployment/apply-deployable-package-system.md
@@ -1162,6 +1186,8 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: B2b-felhasználók exportálása Azure AD szolgáltatásba
       href: sysadmin/implement-b2b.md
+    - name: Munkamenet üresjárati időkorlátjának beállítása
+      href: sysadmin/session-idle-timeout.md
     - name: Szerepköralapú biztonság
       href: sysadmin/role-based-security.md
       items:
@@ -1310,6 +1336,8 @@
   items:
     - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
       href: lifecycle-services/lcs-support.md
+    - name: A Dynamics 365 támogatásának áttekintése
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Támogatás kérése a 21Vianet által Kínában működtetett Finance and Operations rendszerrel kapcsolatban
       href: lifecycle-services/21vianet-support.md
     - name: Premier támogatási jegy naplózása

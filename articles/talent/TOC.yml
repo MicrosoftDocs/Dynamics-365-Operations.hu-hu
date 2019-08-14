@@ -8,6 +8,12 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. július 23.
+              href: whats-new-talent-july-24-2019.md
+            - name: 2019. július 16.
+              href: whats-new-talent-july-16-2019.md
+            - name: 2019. július 9.
+              href: whats-new-talent-july-9-2019.md
             - name: 2019. július 2.
               href: whats-new-talent-july-2-2019.md
             - name: 2019. június 25.
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR és Common Data Service
           href: CoreHREntities.md
-        - name: Előzetes funkciók elérése
-          href: access-preview-feature.md
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
     - name: Személyzet felvétele a szervezetéhez az Attract alkalmazással
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Az Attract funkciói és lehetőségei
           href: attract-overview.md
-        - name: LinkedIn GYIK
-          href: attract-linkedin-faq.md
-        - name: E-mail beállítások megadása
-          href: attract-configure-email-settings.md
-        - name: Folyamatsablon létrehozása az Attract alkalmazásban
-          href: Process-templates-Attract.md
+        - name: Gyakori kérdések
+          items:
+            - name: Gyakran ismételt kérdések LinkedIn-integrációval kapcsolatosan
+              href: attract-linkedin-faq.md
+        - name: Rendszerbeállítások megadása
+          items:
+            - name: Vállalat adatainak beállítása
+              href: admin-settings-attract.md
+            - name: Felhasználói jogosultságok beállítása
+              href: security-attract.md
+            - name: Szolgáltatások kezelése
+              href: access-preview-feature.md
+            - name: A karrierwebhely beállítása
+              href: career-site.md
+            - name: Broadbean integráció engedélyezése
+              href: attract-admin-job-board-settings.md
+            - name: E-mail beállítások megadása
+              href: attract-configure-email-settings.md
+            - name: A LinkedIn integrációjának beállítása
+              href: attract-admin-linkedin.md
+        - name: Toborzófolyamat létrehozása
+          items:
+            - name: Folyamatsablon létrehozása
+              href: process-templates-attract.md
+            - name: Tevékenységek a toborzási folyamatban
+              href: activities-attract.md
+            - name: E-mail-sablonok
+              href: email-templates.md
+            - name: Elemzési jelentések használata
+              href: analytic-reports.md
         - name: Állások létrehozása és feladása
-          href: Creating-jobs-Attract.md
-        - name: A LinkedIn integrációjának beállítása
-          href: attract-admin-linkedin.md
-        - name: Állások feladása a LinkedIn felületére az Attract szolgáltatásból
-          href: attract-post-jobs-to-linkedin.md
-        - name: Állások feladása a Broadbean felületére az Attract szolgáltatásból
-          href: posting-jobs-external.md
-        - name: Jelöltek felkutatása tehetségállományok segítségével
-          href: attract-talent-pools.md
-        - name: Jelöltek felkutatása a LinkedIn Recruiter segítségével
-          href: attract-linkedin-recruiter.md
-        - name: Tevékenységek a felvételi folyamatban
-          href: activities-attract.md
-        - name: Interjú ütemezése és visszajelzés
-          href: interview-scheduling-feedback.md
+          items:
+            - name: Feladat létrehozása
+              href: creating-jobs-attract.md
+            - name: Álláshirdetések feladása a LinkedIn felületén
+              href: attract-post-jobs-to-linkedin.md
+            - name: Állások közzététele a Broadbean felületén
+              href: posting-jobs-external.md
+            - name: Állás lezárása
+              href: attract-close-job.md
+        - name: Jelöltek felkutatása
+          items:
+            - name: Jelöltek keresése tehetségállományok segítségével
+              href: attract-talent-pools.md
+            - name: Jelöltek felkutatása a LinkedIn Recruiter segítségével
+              href: attract-linkedin-recruiter.md
+            - name: Jelöltforrások nyomon követése
+              href: source-tracking.md
+            - name: Intelligens ajánlások
+              href: Intelligent-Recommendations.md
+        - name: Interjúk beállítása
+          items:
+            - name: Interjú ütemezése és visszajelzés
+              href: interview-scheduling-feedback.md
+        - name: Ajánlat készítése
+          items:
+            - name: Az ajánlatkezelés beállítása
+              href: offer-setup.md
+            - name: 'Ajánlatok létrehozása, jóváhagyása és aláírása'
+              href: creating-offers.md
         - name: Bővíthetőség az Attract szolgáltatásban
           href: extensibility-attract.md
-        - name: Karrierwebhely-funkciók az Attract alkalmazásban
-          href: career-site.md
-        - name: Az ajánlatkezelés beállítása
-          href: offer-setup.md
-        - name: 'Ajánlatok létrehozása, jóváhagyása és aláírása'
-          href: creating-offers.md
-        - name: E-mail-sablonok
-          href: email-templates.md
-        - name: Biztonság és szerepkörök kezelése az Attract alkalmazásban
-          href: security-attract.md
-        - name: Adminisztratív beállítások az Attract alkalmazásban
-          href: Admin-Settings-Attract.md
-        - name: Intelligens ajánlások
-          href: Intelligent-Recommendations.md
-        - name: Jelöltprofilok és -pályázatok forrásának nyomon követése
-          href: source-tracking.md
-        - name: Analitikus jelentések használata a toborzási folyamattal kapcsolatos információk érdekében
-          href: analytic-reports.md
     - name: Új dolgozók üdvözlése az Onboard alkalmazással
       items:
         - name: Első lépések az Onboard alkalmazásban
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Vállalatfüggő HR-paraméterek beállítása
               href: set-up-company-specific-hr-parameters.md
+            - name: Dátuma és Idő mezők a Talent alkalmazásban
+              href: date-time-fields-in-talent.md
             - name: Személyzeti műveletekkel kapcsolatos GYIK
               href: personnel-actions-faq.md
             - name: Üzleti folyamatok formalizálása

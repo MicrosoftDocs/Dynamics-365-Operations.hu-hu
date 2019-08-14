@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617320"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790421"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 
@@ -49,7 +49,8 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kiskereske
 
 - **Vevői számla** – Ellenőrzi, hogy a kiskereskedelmi tranzakciós táblában szereplő vevői számla létezik a HQ-ban a vevői alapadatok között.
 - **Sorok száma** – Ellenőrzi, hogy a tranzakciós fejléctáblában rögzített sorok száma megegyezik az értékesítési tranzakciók táblájában található sorok számával.
-- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Az ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban.
+- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban.
+- **Kifizetetti összeg** – Ellenőrzi, hogy a kifizetési rekordok megegyeznek-e a fejlécben található kifizetett összeggel.
 - **Bruttó összeg** – Ellenőrzi, hogy a fejlécben szereplő bruttó összeg megfelel-e a sorokban található nettó összegek és az adó összegének összesítésével.
 - **Nettó összeg** – Ellenőrzi, hogy a fejlécben szereplő nettó összeg megfelel-e a sorokban található nettó összegek összesítésével.
 - **Alulfizetés/Túlfizetés** – Ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem haladja meg a maximális alulfizetés/túlfizetés konfigurációját.
@@ -58,10 +59,11 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kiskereske
 - **Ajándékutalvány-cikk** – A Retail alkalmazás nem támogatja az ajándékutalvány-cikkek visszaküldését. Azonban az ajándékutalvány egyenlegét ki lehet fizetni készpénzben. Ha az ajándékutalványcikket visszárusorként dolgozzák fel készpénzes kifizetési sor helyett, akkor a kimutatás feladási folyamata sikertelen lesz. Az ajándékutalvány-cikkek ellenőrzési folyamata segítségével garantálható, hogy a kiskereskedelmi tranzakciós táblákban szereplő, ajándékutalvány-cikkek visszaküldésére vonatkozó sorok ajándékutalvány készpénzes kifizetési sorok legyenek.
 - **Negatív ár** – Ellenőrzi, hogy nincsenek negatív árt tartalmazó tranzakciós sorok.
 - **Cikk és változat** – Ellenőrzi, hogy a tranzakciós sorban szereplő cikkek és változatok léteznek a cikk és a változat törzsadatfájljában.
+- **Adó összege** – Ellenőrzi, hogy az adórekordok megegyeznek-e a sorokban szereplő adók összegével. 
 
 ## <a name="set-up-the-consistency-checker"></a>Konzisztencia-ellenőrző beállítása
 
-Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futás esetén a **Kiskereskedelem \> Kiskereskedelem IT \> pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
+Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Kiskereskedelem \> Kiskereskedelem IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
 
 ## <a name="results-of-validation-process"></a>Ellenőrzési folyamat eredményei
 
