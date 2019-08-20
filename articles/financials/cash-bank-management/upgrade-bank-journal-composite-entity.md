@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
@@ -17,40 +17,40 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 70db65dca4cfadd1ed8769386b4b437cecc217a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 974d6b3b11df92debdec26860fd9eea00a9f2313
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565921"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841777"
 ---
-# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="fc5c4-103">Banki napló összetett entitásának frissítése</span><span class="sxs-lookup"><span data-stu-id="fc5c4-103">Update the bank journal composite entity</span></span>
+# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="de6df-103">Banki napló összetett entitásának frissítése</span><span class="sxs-lookup"><span data-stu-id="de6df-103">Update the bank journal composite entity</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fc5c4-104">A következő lépéseket kell elvégeznie ahhoz, hogy az összetett BankJournalEntity lehetőséghez további BankTransactionType mezőt adjon hozzá.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="de6df-104">A következő lépéseket kell elvégeznie ahhoz, hogy az összetett BankJournalEntity lehetőséghez további BankTransactionType mezőt adjon hozzá.</span><span class="sxs-lookup"><span data-stu-id="de6df-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-<span data-ttu-id="fc5c4-105">A következő lépések segítségével az összetett BankJournalEntity lehetőséghez adja hozzá a további BankTransactionType mezőt.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="de6df-105">A következő lépések segítségével az összetett BankJournalEntity lehetőséghez adja hozzá a további BankTransactionType mezőt.</span><span class="sxs-lookup"><span data-stu-id="de6df-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-1.  <span data-ttu-id="fc5c4-106">Állítsa össze és szinkronizálja a következő banki napló összetett entitásokat, entitásokat és előkészítési táblákat:</span><span class="sxs-lookup"><span data-stu-id="fc5c4-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
-    -   <span data-ttu-id="fc5c4-107">Összetett entitás\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="fc5c4-107">Composite Entity\\BankJournalEntity</span></span>
-    -   <span data-ttu-id="fc5c4-108">Entitás\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="fc5c4-108">Entity\\BankJournalHeaderEntity</span></span>
-    -   <span data-ttu-id="fc5c4-109">Entitás\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="fc5c4-109">Entity\\BankJournalLineEntity</span></span>
-    -   <span data-ttu-id="fc5c4-110">Tábla\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="fc5c4-110">Table\\BankJournalHeaderStaging</span></span>
-    -   <span data-ttu-id="fc5c4-111">Tábla\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="fc5c4-111">Table\\BankJournalLineStaging</span></span>
+1.  <span data-ttu-id="de6df-106">Állítsa össze és szinkronizálja a következő banki napló összetett entitásokat, entitásokat és előkészítési táblákat:</span><span class="sxs-lookup"><span data-stu-id="de6df-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
+    -   <span data-ttu-id="de6df-107">Összetett entitás\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="de6df-107">Composite Entity\\BankJournalEntity</span></span>
+    -   <span data-ttu-id="de6df-108">Entitás\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="de6df-108">Entity\\BankJournalHeaderEntity</span></span>
+    -   <span data-ttu-id="de6df-109">Entitás\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="de6df-109">Entity\\BankJournalLineEntity</span></span>
+    -   <span data-ttu-id="de6df-110">Tábla\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="de6df-110">Table\\BankJournalHeaderStaging</span></span>
+    -   <span data-ttu-id="de6df-111">Tábla\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="de6df-111">Table\\BankJournalLineStaging</span></span>
 
-2.  <span data-ttu-id="fc5c4-112">Adatok kezelése\\adatprojektek</span><span class="sxs-lookup"><span data-stu-id="fc5c4-112">Data management\\data projects</span></span>
-    -   <span data-ttu-id="fc5c4-113">Jelenítse meg a **Banki tranzakció**típusát a **Forrásadatok**elrendezésben.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
-        -   <span data-ttu-id="fc5c4-114">Forrásadatok formátuma = XML-elem</span><span class="sxs-lookup"><span data-stu-id="fc5c4-114">Source data format = XML-Element</span></span>
-        -   <span data-ttu-id="fc5c4-115">Entitás neve = Banki napló</span><span class="sxs-lookup"><span data-stu-id="fc5c4-115">Entity name = Bank Journal</span></span>
-        -   <span data-ttu-id="fc5c4-116">Adatfájl feltöltése = SampleBankJournalCompositeEntity.xml új verziója</span><span class="sxs-lookup"><span data-stu-id="fc5c4-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
-        -   <span data-ttu-id="fc5c4-117">Kattintson az **Igen** gombra a meglévő fájl felülírásához.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-117">Click **Yes** to overwrite the existing file.</span></span>
-        -   <span data-ttu-id="fc5c4-118">Kattintson az **Igen** lehetőségre a hozzárendelés elejétől kezdve történő létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-118">Click **Yes** to generate mapping from scratch.</span></span>
-        -   <span data-ttu-id="fc5c4-119">Győződjön meg róla, hogy hozzárendelte a Banki tranzakció típusát.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-119">Verify that the Bank Transaction Type is mapped.</span></span>
-            -   <span data-ttu-id="fc5c4-120">Kattintson a **Leképezés megtekintése** lehetőségre a Sor entitáson.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-120">Click **View map** on Line entity.</span></span>
-            -   <span data-ttu-id="fc5c4-121">Ellenőrizze, hogy a Banki tranzakció típusa hozzá van-e rendelve a forrásból az előkészítéshez.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
+2.  <span data-ttu-id="de6df-112">Adatok kezelése\\adatprojektek</span><span class="sxs-lookup"><span data-stu-id="de6df-112">Data management\\data projects</span></span>
+    -   <span data-ttu-id="de6df-113">Jelenítse meg a **Banki tranzakció**típusát a **Forrásadatok**elrendezésben.</span><span class="sxs-lookup"><span data-stu-id="de6df-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
+        -   <span data-ttu-id="de6df-114">Forrásadatok formátuma = XML-elem</span><span class="sxs-lookup"><span data-stu-id="de6df-114">Source data format = XML-Element</span></span>
+        -   <span data-ttu-id="de6df-115">Entitás neve = Banki napló</span><span class="sxs-lookup"><span data-stu-id="de6df-115">Entity name = Bank Journal</span></span>
+        -   <span data-ttu-id="de6df-116">Adatfájl feltöltése = SampleBankJournalCompositeEntity.xml új verziója</span><span class="sxs-lookup"><span data-stu-id="de6df-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
+        -   <span data-ttu-id="de6df-117">Kattintson az **Igen** gombra a meglévő fájl felülírásához.</span><span class="sxs-lookup"><span data-stu-id="de6df-117">Click **Yes** to overwrite the existing file.</span></span>
+        -   <span data-ttu-id="de6df-118">Kattintson az **Igen** lehetőségre a hozzárendelés elejétől kezdve történő létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="de6df-118">Click **Yes** to generate mapping from scratch.</span></span>
+        -   <span data-ttu-id="de6df-119">Győződjön meg róla, hogy hozzárendelte a Banki tranzakció típusát.</span><span class="sxs-lookup"><span data-stu-id="de6df-119">Verify that the Bank Transaction Type is mapped.</span></span>
+            -   <span data-ttu-id="de6df-120">Kattintson a **Leképezés megtekintése** lehetőségre a Sor entitáson.</span><span class="sxs-lookup"><span data-stu-id="de6df-120">Click **View map** on Line entity.</span></span>
+            -   <span data-ttu-id="de6df-121">Ellenőrizze, hogy a Banki tranzakció típusa hozzá van-e rendelve a forrásból az előkészítéshez.</span><span class="sxs-lookup"><span data-stu-id="de6df-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
 
-3.  <span data-ttu-id="fc5c4-122">Importálja az új kivonatot.</span><span class="sxs-lookup"><span data-stu-id="fc5c4-122">Import the new statement.</span></span>
+3.  <span data-ttu-id="de6df-122">Importálja az új kivonatot.</span><span class="sxs-lookup"><span data-stu-id="de6df-122">Import the new statement.</span></span>
 
 
 

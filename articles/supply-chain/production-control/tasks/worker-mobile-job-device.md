@@ -1,72 +1,70 @@
 ---
 title: Dolgozó konfigurálása mobil feladatvégző eszközzel
-description: Ez az eljárás bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
+description: Ez a témakör bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571358"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835774"
 ---
-# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="1d72f-103">Dolgozó konfigurálása mobil feladatvégző eszközzel</span><span class="sxs-lookup"><span data-stu-id="1d72f-103">Configure a worker using the mobile job device</span></span>
+# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="da9a2-103">Dolgozó konfigurálása mobil feladatvégző eszközzel</span><span class="sxs-lookup"><span data-stu-id="da9a2-103">Configure a worker using the mobile job device</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1d72f-104">Ez az eljárás bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.</span><span class="sxs-lookup"><span data-stu-id="1d72f-104">This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
+<span data-ttu-id="da9a2-104">Ez a témakör bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.</span><span class="sxs-lookup"><span data-stu-id="da9a2-104">This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
 
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a><span data-ttu-id="da9a2-105">Annak ellenőrzése, hogy a dolgozó hozzá van-e rendelve egy adott szerephez</span><span class="sxs-lookup"><span data-stu-id="da9a2-105">Verify that a worker is assigned a certain role</span></span>
 
-## <a name="assign-roles-to-user-account"></a><span data-ttu-id="1d72f-105">Szerepkörök hozzárendelése a felhasználói fiókhoz</span><span class="sxs-lookup"><span data-stu-id="1d72f-105">Assign roles to user account</span></span>
-1. <span data-ttu-id="1d72f-106">Ugrás a Rendszerfelügyelet > Felhasználók > Felhasználók elemre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-106">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="1d72f-107">A gyorsszűrő segítségével szűrheti a dolgozó nevét, amikor a felhasználói fiók társítva van a gépkezelő szerepkörrel.</span><span class="sxs-lookup"><span data-stu-id="1d72f-107">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="1d72f-108">A mintaadatok esetében a név Shannon lenne.</span><span class="sxs-lookup"><span data-stu-id="1d72f-108">In the sample data, the name would be Shannon.</span></span>
-3. <span data-ttu-id="1d72f-109">Jelölje ki a Felhasználói fiók rekordot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-109">Highlight the user account record.</span></span>
-4. <span data-ttu-id="1d72f-110">A listában kattintson a „Név” hivatkozásra a kijelölt sorban a felhasználói fiók adatainak megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="1d72f-110">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
-5. <span data-ttu-id="1d72f-111">A fán jelölje be a „Szerepkörök\gépkezelő" lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1d72f-111">In the tree, select 'Roles\Machine operator'.</span></span>
-6. <span data-ttu-id="1d72f-112">Zárja be a Felhasználói fiók részletei lapot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-112">Close the user account details page.</span></span>
-7. <span data-ttu-id="1d72f-113">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-113">Close the page.</span></span>
+<span data-ttu-id="da9a2-106">Ebben a példában a dolgozó fiókjának konfigurálása előtt ellenőrizze, hogy a „SHANNON” nevű felhasználó hozzá van-e rendelve a gépkezelői szerepkörhöz.</span><span class="sxs-lookup"><span data-stu-id="da9a2-106">For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.</span></span>
 
-## <a name="configure-worker-account"></a><span data-ttu-id="1d72f-114">Dolgozói fiók konfigurálása</span><span class="sxs-lookup"><span data-stu-id="1d72f-114">Configure worker account.</span></span>
-1. <span data-ttu-id="1d72f-115">Ugrás az Emberi erőforrások > Dolgozók > Dolgozók elemre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-115">Go to Human resources > Workers > Workers.</span></span>
-2. <span data-ttu-id="1d72f-116">A gyorsszűrő segítségével szűrheti a dolgozó nevét, amikor a felhasználói fiók társítva van a gépkezelő szerepkörrel.</span><span class="sxs-lookup"><span data-stu-id="1d72f-116">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="1d72f-117">A mintaadatok esetében a név Shannon lenne.</span><span class="sxs-lookup"><span data-stu-id="1d72f-117">In the sample data, the name would be Shannon.</span></span>
-3. <span data-ttu-id="1d72f-118">Jelölje ki a Felhasználói fiók rekordot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-118">Highlight the user account record.</span></span>
-4. <span data-ttu-id="1d72f-119">A listában kattintson a „Név” hivatkozásra a kijelölt sorban a felhasználói fiók adatainak megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="1d72f-119">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
-5. <span data-ttu-id="1d72f-120">Kattintson a Foglalkoztatás lapra.</span><span class="sxs-lookup"><span data-stu-id="1d72f-120">Click the Employment tab.</span></span>
-6. <span data-ttu-id="1d72f-121">Bontsa ki a munkaidő-nyilvántartás gyorslapot, és kattintson az Aktiválás a regisztrációs terminálokon elemre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-121">Expand the Time registration FastTab and click Activate on registration terminals.</span></span>
-7. <span data-ttu-id="1d72f-122">Kattintson az Aktiválás a regisztrációs terminálokon elemre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-122">Click Activate on registration terminals.</span></span>
-8. <span data-ttu-id="1d72f-123">A Számításcsoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1d72f-123">In the Calculation group field, enter or select a value.</span></span>
-9. <span data-ttu-id="1d72f-124">Az Alapértelmezett számítási csoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1d72f-124">In the Default calculation group field, enter or select a value.</span></span>
-10. <span data-ttu-id="1d72f-125">A Jóváhagyáscsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1d72f-125">In the Approval group field, enter or select a value.</span></span>
-11. <span data-ttu-id="1d72f-126">A Normál profil mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1d72f-126">In the Standard profile field, enter or select a value.</span></span>
-12. <span data-ttu-id="1d72f-127">Az Profilcsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1d72f-127">In the Profile group field, enter or select a value.</span></span>
-13. <span data-ttu-id="1d72f-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1d72f-128">Click OK.</span></span>
-14. <span data-ttu-id="1d72f-129">Kattintson a Szerkesztés gombra az új munkaidő-nyilvántartásos munkavállaló belépőkártyaszámának megadásához.</span><span class="sxs-lookup"><span data-stu-id="1d72f-129">Click Edit to enter a badge number for the new time registration worker.</span></span>
-15. <span data-ttu-id="1d72f-130">Írjon be egy értéket a Belépőkártya-azonosító mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1d72f-130">In the Badge ID field, type a value.</span></span>
-16. <span data-ttu-id="1d72f-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1d72f-131">Click Save.</span></span>
-17. <span data-ttu-id="1d72f-132">Használja a SaveRecord parancsikont.</span><span class="sxs-lookup"><span data-stu-id="1d72f-132">Use the SaveRecord shortcut.</span></span>
-18. <span data-ttu-id="1d72f-133">Zárja be a Dolgozók részletei lapot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-133">Close the worker details page.</span></span>
-19. <span data-ttu-id="1d72f-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-134">Close the page.</span></span>
+1. <span data-ttu-id="da9a2-107">Ugorjon a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Felhasználók > Felhasználók** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="da9a2-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="da9a2-108">Keressen felhasználót a gyorsszűrőben.</span><span class="sxs-lookup"><span data-stu-id="da9a2-108">Search for a user in the quick filter.</span></span> <span data-ttu-id="da9a2-109">Ennél a példánál adja meg a `shannon` nevet.</span><span class="sxs-lookup"><span data-stu-id="da9a2-109">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="da9a2-110">Válassza ki a hivatkozást a felhasználói fiók **Felhasználóazonosító** oszlopában.</span><span class="sxs-lookup"><span data-stu-id="da9a2-110">Select the link in the **User ID** column of the user account that appears.</span></span>
+4. <span data-ttu-id="da9a2-111">A **Felhasználói szerepkörök** fán, válassza ki a **Szerepkörök > Gépkezelő** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-111">In the **User's roles** tree, select **Roles > Machine operator**.</span></span>
+5. <span data-ttu-id="da9a2-112">A kezdőlapra való visszatéréshez zárja be a **felhasználói adatok** és **felhasználók** oldalakat.</span><span class="sxs-lookup"><span data-stu-id="da9a2-112">Close the **user details** and **users** pages to return to the home page.</span></span>
 
-## <a name="assign-worker-to-device-group"></a><span data-ttu-id="1d72f-135">Társítsa a dolgozót az eszközcsoporthoz.</span><span class="sxs-lookup"><span data-stu-id="1d72f-135">Assign worker to device group.</span></span>
-1. <span data-ttu-id="1d72f-136">Ugrás a Gyártásvezérlés > Beállítás > Gyártásvégrehajtás > Feladatkártya konfigurálása az eszközökhöz elemre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-136">Go to Production control > Setup > Manufacturing execution > Configure job card for devices.</span></span>
-2. <span data-ttu-id="1d72f-137">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="1d72f-137">Click Add.</span></span>
-3. <span data-ttu-id="1d72f-138">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="1d72f-138">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="1d72f-139">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1d72f-139">Click OK.</span></span>
-5. <span data-ttu-id="1d72f-140">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1d72f-140">Click Edit.</span></span>
-6. <span data-ttu-id="1d72f-141">A Termelési egység mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz.</span><span class="sxs-lookup"><span data-stu-id="1d72f-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="1d72f-142">Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön.</span><span class="sxs-lookup"><span data-stu-id="1d72f-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
-7. <span data-ttu-id="1d72f-143">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1d72f-143">Close the page.</span></span>
+## <a name="configure-worker-account"></a><span data-ttu-id="da9a2-113">Konfigurálja a dolgozó fiókját</span><span class="sxs-lookup"><span data-stu-id="da9a2-113">Configure worker account</span></span>
+1. <span data-ttu-id="da9a2-114">Ugorjon a **Navigációs ablaktábla > Modulok > Emberi erőforrások > Dolgozók > Dolgozók >** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="da9a2-114">Go to **Navigation pane > Modules > Human resources > Workers > Workers**.</span></span>
+2. <span data-ttu-id="da9a2-115">Keressen felhasználót a gyorsszűrőben.</span><span class="sxs-lookup"><span data-stu-id="da9a2-115">Search for a user in the quick filter.</span></span> <span data-ttu-id="da9a2-116">Ennél a példánál adja meg a `shannon` nevet.</span><span class="sxs-lookup"><span data-stu-id="da9a2-116">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="da9a2-117">Válassza ki a hivatkozást a felhasználói fiók **Név** oszlopában.</span><span class="sxs-lookup"><span data-stu-id="da9a2-117">Select the link in the **Name** column of the user account that appears.</span></span>
+4. <span data-ttu-id="da9a2-118">Válassza ki az **Időnyilvántartás** fület.</span><span class="sxs-lookup"><span data-stu-id="da9a2-118">Select the **Time registration** tab.</span></span>
+5. <span data-ttu-id="da9a2-119">Válassza ki az **Aktiválás a regisztrációs terminálokon** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-119">Select **Activate on registration terminals**.</span></span>
+6. <span data-ttu-id="da9a2-120">Adja meg vagy válassza ki a következő mezőkben szereplő értékeket:</span><span class="sxs-lookup"><span data-stu-id="da9a2-120">Enter or select values in the following fields:</span></span>  
+
+    - <span data-ttu-id="da9a2-121">**Számítási csoport**</span><span class="sxs-lookup"><span data-stu-id="da9a2-121">**Calculation group**</span></span>  
+    - <span data-ttu-id="da9a2-122">**Alapértelmezett számítási csoport**</span><span class="sxs-lookup"><span data-stu-id="da9a2-122">**Default calculation group**</span></span>  
+    - <span data-ttu-id="da9a2-123">**Jóváhagyási csoport**</span><span class="sxs-lookup"><span data-stu-id="da9a2-123">**Approval group**</span></span>  
+    - <span data-ttu-id="da9a2-124">**Szokásos profil**</span><span class="sxs-lookup"><span data-stu-id="da9a2-124">**Standard profile**</span></span>  
+    - <span data-ttu-id="da9a2-125">**Profilcsoport**</span><span class="sxs-lookup"><span data-stu-id="da9a2-125">**Profile group**</span></span>  
+
+7. <span data-ttu-id="da9a2-126">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-126">Select **OK**.</span></span>
+8. <span data-ttu-id="da9a2-127">Válassza ki a **Szerkesztés** lehetőséget az új munkaidő-nyilvántartásos dolgozó belépőkártyaszámának megadásához.</span><span class="sxs-lookup"><span data-stu-id="da9a2-127">Select **Edit** to enter a badge number for the new time registration worker.</span></span> <span data-ttu-id="da9a2-128">Adjon meg egy értéket a**Belépőkártya azonosítója** mezőben.</span><span class="sxs-lookup"><span data-stu-id="da9a2-128">Enter a value in the **Badge ID** field.</span></span>
+9. <span data-ttu-id="da9a2-129">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-129">Select **Save**.</span></span>
+10. <span data-ttu-id="da9a2-130">Zárja be a **Dolgozó részletes adatai** és **Dolgozók** oldalt.</span><span class="sxs-lookup"><span data-stu-id="da9a2-130">Close the **Worker details** and **Workers** pages.</span></span>
+
+## <a name="assign-worker-to-device-group"></a><span data-ttu-id="da9a2-131">Dolgozó társítása eszközcsoporthoz</span><span class="sxs-lookup"><span data-stu-id="da9a2-131">Assign worker to device group</span></span>
+1. <span data-ttu-id="da9a2-132">Ugorjon a **Gyártásvezérlés > Beállítás > Gyártásvégrehajtás > Feladatkártya konfigurálása az eszközökhöz** elemre.</span><span class="sxs-lookup"><span data-stu-id="da9a2-132">Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.</span></span>
+2. <span data-ttu-id="da9a2-133">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-133">Select **Add**.</span></span>
+3. <span data-ttu-id="da9a2-134">Válassza ki a listából a kívánt dolgozót.</span><span class="sxs-lookup"><span data-stu-id="da9a2-134">In the list, select the desired worker.</span></span> <span data-ttu-id="da9a2-135">Ebben a példában válassza ki **SHANNON-t**.</span><span class="sxs-lookup"><span data-stu-id="da9a2-135">For this example, select **SHANNON**.</span></span>
+4. <span data-ttu-id="da9a2-136">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="da9a2-136">Select **OK**.</span></span>
+5. <span data-ttu-id="da9a2-137">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="da9a2-137">Select **Edit**.</span></span>
+6. <span data-ttu-id="da9a2-138">A **Termelési egység** mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz.</span><span class="sxs-lookup"><span data-stu-id="da9a2-138">In the **Production unit** field, you can set the default filter for the worker.</span></span> <span data-ttu-id="da9a2-139">Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön.</span><span class="sxs-lookup"><span data-stu-id="da9a2-139">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span> <span data-ttu-id="da9a2-140">Adja meg a kívánt értéket.</span><span class="sxs-lookup"><span data-stu-id="da9a2-140">Enter the desired value.</span></span>
+7. <span data-ttu-id="da9a2-141">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="da9a2-141">Close the page.</span></span>
 

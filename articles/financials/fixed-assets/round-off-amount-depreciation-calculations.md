@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
@@ -18,33 +18,33 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7721e46a72e0f8133ed67c597a066a97ffd61669
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40fd019b1b5900fbd15866d9d3c32ed6d88147b4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549127"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1840193"
 ---
-# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="f192c-103">Az értékcsökkenési számítások kerekítési összegei.</span><span class="sxs-lookup"><span data-stu-id="f192c-103">Round-off amount for depreciation calculations</span></span>
+# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="f5d78-103">Az értékcsökkenési számítások kerekítési összegei.</span><span class="sxs-lookup"><span data-stu-id="f5d78-103">Round-off amount for depreciation calculations</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f192c-104">Ez a cikk az Értékcsökkenés kerekítése mezőt taglalja, amely a Könyv beállítása lapon található meg.</span><span class="sxs-lookup"><span data-stu-id="f192c-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
+<span data-ttu-id="f5d78-104">Ez a cikk az Értékcsökkenés kerekítése mezőt taglalja, amely a Könyv beállítása lapon található meg.</span><span class="sxs-lookup"><span data-stu-id="f5d78-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
 
-<span data-ttu-id="f192c-105">Az értékcsökkenések kerekítési összegei minden egyes könyvhöz beállíthatók.</span><span class="sxs-lookup"><span data-stu-id="f192c-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="f192c-106">Az értékcsökkenés-kerekítési összegek a tárgyi eszközök értékcsökkenési profiljában használhatóak, amely megmutatja a tárgyi eszköz értékének jövőbeni értékcsökkenését és az értékcsökkenési javaslatot.</span><span class="sxs-lookup"><span data-stu-id="f192c-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="f192c-107">Adja meg a könyvben engedélyezett értékcsökkenés legalacsonyabb összegét.</span><span class="sxs-lookup"><span data-stu-id="f192c-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
+<span data-ttu-id="f5d78-105">Az értékcsökkenések kerekítési összegei minden egyes könyvhöz beállíthatók.</span><span class="sxs-lookup"><span data-stu-id="f5d78-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="f5d78-106">Az értékcsökkenés-kerekítési összegek a tárgyi eszközök értékcsökkenési profiljában használhatóak, amely megmutatja a tárgyi eszköz értékének jövőbeni értékcsökkenését és az értékcsökkenési javaslatot.</span><span class="sxs-lookup"><span data-stu-id="f5d78-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="f5d78-107">Adja meg a könyvben engedélyezett értékcsökkenés legalacsonyabb összegét.</span><span class="sxs-lookup"><span data-stu-id="f5d78-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
 
-<span data-ttu-id="f192c-108">A beállított kerekítéstől függetlenül az utolsó értékcsökkenési időszak értékcsökkenési összege nem kerül kerekítésre.</span><span class="sxs-lookup"><span data-stu-id="f192c-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="f192c-109">Az utolsó értékcsökkenési időszak végén a tárgyi eszköz értékének nulla kell legyen, vagy a selejtérték összege, ha használ selejtértéket.</span><span class="sxs-lookup"><span data-stu-id="f192c-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
+<span data-ttu-id="f5d78-108">A beállított kerekítéstől függetlenül az utolsó értékcsökkenési időszak értékcsökkenési összege nem kerül kerekítésre.</span><span class="sxs-lookup"><span data-stu-id="f5d78-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="f5d78-109">Az utolsó értékcsökkenési időszak végén a tárgyi eszköz értékének nulla kell legyen, vagy a selejtérték összege, ha használ selejtértéket.</span><span class="sxs-lookup"><span data-stu-id="f5d78-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
 
-### <a name="example"></a><span data-ttu-id="f192c-110">Példa</span><span class="sxs-lookup"><span data-stu-id="f192c-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="f5d78-110">Példa</span><span class="sxs-lookup"><span data-stu-id="f5d78-110">Example</span></span>
 
-<span data-ttu-id="f192c-111">A kerekítés nélkül számított értékcsökkenés 2444,44 egység.</span><span class="sxs-lookup"><span data-stu-id="f192c-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="f192c-112">Ahogy azt az alábbi tábla is mutatja, a javasolt összegek között különbség lehet, attól függően, milyen kerekítés van beállítva.</span><span class="sxs-lookup"><span data-stu-id="f192c-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
+<span data-ttu-id="f5d78-111">A kerekítés nélkül számított értékcsökkenés 2444,44 egység.</span><span class="sxs-lookup"><span data-stu-id="f5d78-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="f5d78-112">Ahogy azt az alábbi tábla is mutatja, a javasolt összegek között különbség lehet, attól függően, milyen kerekítés van beállítva.</span><span class="sxs-lookup"><span data-stu-id="f5d78-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
 
-| <span data-ttu-id="f192c-113">Kerekítési mód</span><span class="sxs-lookup"><span data-stu-id="f192c-113">Rounding method</span></span> | <span data-ttu-id="f192c-114">Értékcsökkenés összege</span><span class="sxs-lookup"><span data-stu-id="f192c-114">Depreciation amount</span></span> |
+| <span data-ttu-id="f5d78-113">Kerekítési mód</span><span class="sxs-lookup"><span data-stu-id="f5d78-113">Rounding method</span></span> | <span data-ttu-id="f5d78-114">Értékcsökkenés összege</span><span class="sxs-lookup"><span data-stu-id="f5d78-114">Depreciation amount</span></span> |
 |-----------------|---------------------|
-| <span data-ttu-id="f192c-115">Kerekítés: 0,1</span><span class="sxs-lookup"><span data-stu-id="f192c-115">Rounding 0.1</span></span>    | <span data-ttu-id="f192c-116">2444,40</span><span class="sxs-lookup"><span data-stu-id="f192c-116">2,444.40</span></span>            |
-| <span data-ttu-id="f192c-117">Kerekítés: 1,00</span><span class="sxs-lookup"><span data-stu-id="f192c-117">Rounding 1.00</span></span>   | <span data-ttu-id="f192c-118">2,444.00</span><span class="sxs-lookup"><span data-stu-id="f192c-118">2,444.00</span></span>            |
-| <span data-ttu-id="f192c-119">Kerekítés: 10,00</span><span class="sxs-lookup"><span data-stu-id="f192c-119">Rounding 10.00</span></span>  | <span data-ttu-id="f192c-120">2,440.00</span><span class="sxs-lookup"><span data-stu-id="f192c-120">2,440.00</span></span>            |
-| <span data-ttu-id="f192c-121">Kerekítés: 100,00</span><span class="sxs-lookup"><span data-stu-id="f192c-121">Rounding 100.00</span></span> | <span data-ttu-id="f192c-122">2,400.00</span><span class="sxs-lookup"><span data-stu-id="f192c-122">2,400.00</span></span>            |
+| <span data-ttu-id="f5d78-115">Kerekítés: 0,1</span><span class="sxs-lookup"><span data-stu-id="f5d78-115">Rounding 0.1</span></span>    | <span data-ttu-id="f5d78-116">2444,40</span><span class="sxs-lookup"><span data-stu-id="f5d78-116">2,444.40</span></span>            |
+| <span data-ttu-id="f5d78-117">Kerekítés: 1,00</span><span class="sxs-lookup"><span data-stu-id="f5d78-117">Rounding 1.00</span></span>   | <span data-ttu-id="f5d78-118">2,444.00</span><span class="sxs-lookup"><span data-stu-id="f5d78-118">2,444.00</span></span>            |
+| <span data-ttu-id="f5d78-119">Kerekítés: 10,00</span><span class="sxs-lookup"><span data-stu-id="f5d78-119">Rounding 10.00</span></span>  | <span data-ttu-id="f5d78-120">2,440.00</span><span class="sxs-lookup"><span data-stu-id="f5d78-120">2,440.00</span></span>            |
+| <span data-ttu-id="f5d78-121">Kerekítés: 100,00</span><span class="sxs-lookup"><span data-stu-id="f5d78-121">Rounding 100.00</span></span> | <span data-ttu-id="f5d78-122">2,400.00</span><span class="sxs-lookup"><span data-stu-id="f5d78-122">2,400.00</span></span>            |
 
 
 

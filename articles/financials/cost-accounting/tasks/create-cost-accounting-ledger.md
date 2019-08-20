@@ -9,32 +9,32 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9878a03181ccb1eb9e31edefae345cee84b40c5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49ad1b2478516392d80720c24803024d9f5d00a5
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543818"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841273"
 ---
-# <a name="create-a-cost-accounting-ledger"></a><span data-ttu-id="a029c-103">Költségkönyvelési főkönyv létrehozása</span><span class="sxs-lookup"><span data-stu-id="a029c-103">Create a cost accounting ledger</span></span>
+# <a name="create-a-cost-accounting-ledger"></a><span data-ttu-id="5af96-103">Költségkönyvelési főkönyv létrehozása</span><span class="sxs-lookup"><span data-stu-id="5af96-103">Create a cost accounting ledger</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a029c-104">A költségkönyvelési főkönyv megfelel a teljes adatszolgáltatási egységnek.</span><span class="sxs-lookup"><span data-stu-id="a029c-104">A cost accounting ledger represents the overall reporting unit.</span></span> <span data-ttu-id="a029c-105">A következők határozzák meg: költségösszetevő-dimenzió, statisztikai dimenzió, pénzügyi naptár és pénznem.</span><span class="sxs-lookup"><span data-stu-id="a029c-105">It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency.</span></span> <span data-ttu-id="a029c-106">Független a jogi személyek fogalmától.</span><span class="sxs-lookup"><span data-stu-id="a029c-106">It is agnostic to the concept of legal entities.</span></span> <span data-ttu-id="a029c-107">A jogi személy és annak adatai számos költségkönyvelési főkönyvvel társíthatók.</span><span class="sxs-lookup"><span data-stu-id="a029c-107">A legal entity and its data can be associated with many cost accounting ledgers.</span></span> <span data-ttu-id="a029c-108">Ez a felvétel az USP2 bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="a029c-108">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="5af96-104">A költségkönyvelési főkönyv megfelel a teljes adatszolgáltatási egységnek.</span><span class="sxs-lookup"><span data-stu-id="5af96-104">A cost accounting ledger represents the overall reporting unit.</span></span> <span data-ttu-id="5af96-105">A következők határozzák meg: költségösszetevő-dimenzió, statisztikai dimenzió, pénzügyi naptár és pénznem.</span><span class="sxs-lookup"><span data-stu-id="5af96-105">It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency.</span></span> <span data-ttu-id="5af96-106">Független a jogi személyek fogalmától.</span><span class="sxs-lookup"><span data-stu-id="5af96-106">It is agnostic to the concept of legal entities.</span></span> <span data-ttu-id="5af96-107">A jogi személy és annak adatai számos költségkönyvelési főkönyvvel társíthatók.</span><span class="sxs-lookup"><span data-stu-id="5af96-107">A legal entity and its data can be associated with many cost accounting ledgers.</span></span> <span data-ttu-id="5af96-108">Ez a felvétel az USP2 bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="5af96-108">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="a029c-109">Lépjen a Költségkönyvelés > Főkönyv beállításai > Költségkönyvelési főkönyvek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a029c-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="a029c-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a029c-110">Click New.</span></span>
-3. <span data-ttu-id="a029c-111">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="a029c-111">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="a029c-112">A Költségösszetevő-dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a029c-112">In the Cost element dimension field, enter or select a value.</span></span>
-5. <span data-ttu-id="a029c-113">A Pénzügyi naptár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a029c-113">In the Fiscal calendar field, enter or select a value.</span></span>
-6. <span data-ttu-id="a029c-114">A Könyvelési pénznem mezőben írjon be vagy adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a029c-114">In the Accounting currency field, enter or select a value.</span></span>
-7. <span data-ttu-id="a029c-115">Az Árfolyamtípus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a029c-115">In the Exchange rate type field, enter or select a value.</span></span>
-8. <span data-ttu-id="a029c-116">A Statisztikai dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a029c-116">In the Statistical dimension field, enter or select a value.</span></span>
-9. <span data-ttu-id="a029c-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="a029c-117">Click Save.</span></span>
+1. <span data-ttu-id="5af96-109">Lépjen a Költségkönyvelés > Főkönyv beállításai > Költségkönyvelési főkönyvek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="5af96-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="5af96-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="5af96-110">Click New.</span></span>
+3. <span data-ttu-id="5af96-111">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="5af96-111">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="5af96-112">A Költségösszetevő-dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5af96-112">In the Cost element dimension field, enter or select a value.</span></span>
+5. <span data-ttu-id="5af96-113">A Pénzügyi naptár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5af96-113">In the Fiscal calendar field, enter or select a value.</span></span>
+6. <span data-ttu-id="5af96-114">A Könyvelési pénznem mezőben írjon be vagy adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5af96-114">In the Accounting currency field, enter or select a value.</span></span>
+7. <span data-ttu-id="5af96-115">Az Árfolyamtípus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5af96-115">In the Exchange rate type field, enter or select a value.</span></span>
+8. <span data-ttu-id="5af96-116">A Statisztikai dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5af96-116">In the Statistical dimension field, enter or select a value.</span></span>
+9. <span data-ttu-id="5af96-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="5af96-117">Click Save.</span></span>
 

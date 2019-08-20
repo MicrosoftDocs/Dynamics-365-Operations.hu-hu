@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fb8bd2ce7fed6962563773ad63a7a48943e1ca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566501"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743188"
 ---
-# <a name="set-up-disposition-codes"></a><span data-ttu-id="f4363-103">Intézkedési kódok beállítása</span><span class="sxs-lookup"><span data-stu-id="f4363-103">Set up disposition codes</span></span> 
+# <a name="set-up-disposition-codes"></a><span data-ttu-id="98e13-103">Intézkedési kódok beállítása</span><span class="sxs-lookup"><span data-stu-id="98e13-103">Set up disposition codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f4363-104">Az intézkedéskódok beállításával adhatja meg, hogyan kell feldolgozni egy vevő által visszaküldött cikket.</span><span class="sxs-lookup"><span data-stu-id="f4363-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="f4363-105">Hozzon létre például egy **Javítás és visszaküldés** intézkedéskódot annak jelzésére, hogy a visszaküldött cikket megjavítják, majd visszaküldik a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="f4363-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="f4363-106">A vevők által visszaküldött cikkek esetében használt tipikus intézkedéskódokra további példákért lásd: [A visszaadott cikkek kivezetési módjának megadása](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="f4363-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
+<span data-ttu-id="98e13-104">Az intézkedéskódok beállításával adhatja meg, hogyan kell feldolgozni egy vevő által visszaküldött cikket.</span><span class="sxs-lookup"><span data-stu-id="98e13-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="98e13-105">Hozzon létre például egy **Javítás és visszaküldés** intézkedéskódot annak jelzésére, hogy a visszaküldött cikket megjavítják, majd visszaküldik a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="98e13-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="98e13-106">A vevők által visszaküldött cikkek esetében használt tipikus intézkedéskódokra további példákért lásd: [A visszaadott cikkek kivezetési módjának megadása](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="98e13-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
 
-<span data-ttu-id="f4363-107">Okkód beállításával segíthet megmagyarázni, miért került sor egy cikk visszaküldésére.</span><span class="sxs-lookup"><span data-stu-id="f4363-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="f4363-108">Az okkódokkal kapcsolatos további tudnivalókat lásd: [Visszaadási okkódok beállítása](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="f4363-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
+<span data-ttu-id="98e13-107">Okkód beállításával segíthet megmagyarázni, miért került sor egy cikk visszaküldésére.</span><span class="sxs-lookup"><span data-stu-id="98e13-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="98e13-108">Az okkódokkal kapcsolatos további tudnivalókat lásd: [Visszaadási okkódok beállítása](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="98e13-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
 
-1.  <span data-ttu-id="f4363-109">Kattintson az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Visszaadás** \> **Intézkedési kódok**.</span><span class="sxs-lookup"><span data-stu-id="f4363-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
+1.  <span data-ttu-id="98e13-109">Kattintson az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Visszaadás** \> **Intézkedési kódok**.</span><span class="sxs-lookup"><span data-stu-id="98e13-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
 
-2.  <span data-ttu-id="f4363-110">Kattintson az **Új** elemre, vagy nyomja le a CTRL+N billentyűkombinációt egy új intézkedéskód létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="f4363-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
+2.  <span data-ttu-id="98e13-110">Kattintson az **Új** elemre, vagy nyomja le a CTRL+N billentyűkombinációt egy új intézkedéskód létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="98e13-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
 
-3.  <span data-ttu-id="f4363-111">Adjon meg egy egyedi, jellemző nevet, válasszon ki egy műveletet, majd adja meg az intézkedéskód leírását.</span><span class="sxs-lookup"><span data-stu-id="f4363-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
+3.  <span data-ttu-id="98e13-111">Adjon meg egy egyedi, jellemző nevet, válasszon ki egy műveletet, majd adja meg az intézkedéskód leírását.</span><span class="sxs-lookup"><span data-stu-id="98e13-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
 
-4.  <span data-ttu-id="f4363-112">Ha az intézkedési kódhoz bármilyen díjat szeretne meghatározni a vevők számára, a **Költségek** gombra kattintva nyissa meg a **Költségek beállítása** képernyőt.</span><span class="sxs-lookup"><span data-stu-id="f4363-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
+4.  <span data-ttu-id="98e13-112">Ha az intézkedési kódhoz bármilyen díjat szeretne meghatározni a vevők számára, a **Költségek** gombra kattintva nyissa meg a **Költségek beállítása** képernyőt.</span><span class="sxs-lookup"><span data-stu-id="98e13-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
 
-5.  <span data-ttu-id="f4363-113">Ha a vállalat saját intézkedési kódjainak egyeztetése céljából külső kódokat is meg szeretne határozni, a **Külső kódok** gombra kattintva nyissa meg a **Külső kódok** képernyőt.</span><span class="sxs-lookup"><span data-stu-id="f4363-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
+5.  <span data-ttu-id="98e13-113">Ha a vállalat saját intézkedési kódjainak egyeztetése céljából külső kódokat is meg szeretne határozni, a **Külső kódok** gombra kattintva nyissa meg a **Külső kódok** képernyőt.</span><span class="sxs-lookup"><span data-stu-id="98e13-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f4363-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="f4363-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="98e13-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="98e13-114">See also</span></span>
 
-[<span data-ttu-id="f4363-115">Intézkedési kódok és visszaadási okkódok</span><span class="sxs-lookup"><span data-stu-id="f4363-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
+[<span data-ttu-id="98e13-115">Intézkedési kódok és visszaadási okkódok</span><span class="sxs-lookup"><span data-stu-id="98e13-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
 
-<span data-ttu-id="f4363-116">[Intézkedési kódok (képernyő)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="f4363-116">[Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span></span>
+<span data-ttu-id="98e13-116">[Intézkedési kódok (képernyő)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="98e13-116">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
 
-<span data-ttu-id="f4363-117">[Automatikus költségek (képernyő)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="f4363-117">[Auto charges (form)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span></span>
+<span data-ttu-id="98e13-117">[Automatikus költségek (képernyő)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="98e13-117">[Auto charges (form)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span></span>
 
-<span data-ttu-id="f4363-118">[Külső kódok (képernyő)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="f4363-118">[External codes (form)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span></span>
+<span data-ttu-id="98e13-118">[Külső kódok (képernyő)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="98e13-118">[External codes (form)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span></span>
 
   
 

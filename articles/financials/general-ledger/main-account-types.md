@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccount
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 3381
 ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5aadac3defc01be10daf5f3737d428135f4fb544
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: acbe3d6c10891ba8b290f3efdd8e5aab3ca2c1c3
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561559"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1838943"
 ---
-# <a name="main-account-types"></a><span data-ttu-id="3a043-103">Főszámlatípusok</span><span class="sxs-lookup"><span data-stu-id="3a043-103">Main account types</span></span>
+# <a name="main-account-types"></a><span data-ttu-id="88d7b-103">Főszámlatípusok</span><span class="sxs-lookup"><span data-stu-id="88d7b-103">Main account types</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3a043-104">A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.</span><span class="sxs-lookup"><span data-stu-id="3a043-104">The main account types determine how a main account is used in the chart of accounts.</span></span>
+<span data-ttu-id="88d7b-104">A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.</span><span class="sxs-lookup"><span data-stu-id="88d7b-104">The main account types determine how a main account is used in the chart of accounts.</span></span>
 
-<span data-ttu-id="3a043-105">Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, választania kell egy típust.</span><span class="sxs-lookup"><span data-stu-id="3a043-105">You must select a main account type when you create a main account in the Main accounts - chart of accounts page.</span></span>
--   <span data-ttu-id="3a043-106">Eredmény, Bevétel és Kiadás – ezek a feladási számlaként használt fő számlák.</span><span class="sxs-lookup"><span data-stu-id="3a043-106">Profit and loss, Revenue, and Expense – These main accounts are used as posting accounts.</span></span> <span data-ttu-id="3a043-107">Az eredményszámlákon történik a bevételek és a kiadások rögzítése.</span><span class="sxs-lookup"><span data-stu-id="3a043-107">Profit and loss accounts are used to record revenue and expenses.</span></span> <span data-ttu-id="3a043-108">Az összes eredmény-, bevétel- és költségszámla összege határozza meg az év végi eredményt.</span><span class="sxs-lookup"><span data-stu-id="3a043-108">The sum of all profit and loss, revenue, and expense accounts determines the year-end results.</span></span> <span data-ttu-id="3a043-109">A bevételi és a költség fő számlák funkciója megegyezik az eredményszámláéval.</span><span class="sxs-lookup"><span data-stu-id="3a043-109">Revenue and Expense main accounts have the same function as Profit and loss main accounts.</span></span>
--   <span data-ttu-id="3a043-110">Mérleg, eszköz, kötelezettség és saját tőke – ezek a fő számlák használhatóak tranzakciószámlaként, ezekben lehet rögzíteni a jogi személy által birtokolt vagy a tartozásában levő összegeket.</span><span class="sxs-lookup"><span data-stu-id="3a043-110">Balance sheet, Asset, Liability, and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.</span></span>
--   <span data-ttu-id="3a043-111">Összesen – ezen fő számlákkal lehet számlaintervallumokat hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="3a043-111">Total – These main accounts are used to add account intervals.</span></span> <span data-ttu-id="3a043-112">Az Összesen főszámlatípust a Számlaintervallum oldalon lehet konfigurálni, amely megjeleníti az összes számlaintervallum csoportegyenlegeinek összegét.</span><span class="sxs-lookup"><span data-stu-id="3a043-112">Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals.</span></span> <span data-ttu-id="3a043-113">A Számlaintervallum oldal eléréséhez kattintson az Általános lapon az Összesen elemre, miután egy Összesen számlatípust választott.</span><span class="sxs-lookup"><span data-stu-id="3a043-113">Access the Account interval page by click Totals on the General tab once you have selected a Total account type.</span></span>
--   <span data-ttu-id="3a043-114">Jelentések – ezek a fő számlák csak a Brazil rendszerben használt pénzügyi kimutatási jelentésekre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="3a043-114">Reporting – These main accounts are used for financial statement reporting for Brazil only.</span></span>
+<span data-ttu-id="88d7b-105">Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, választania kell egy típust.</span><span class="sxs-lookup"><span data-stu-id="88d7b-105">You must select a main account type when you create a main account in the Main accounts - chart of accounts page.</span></span>
+-   <span data-ttu-id="88d7b-106">Eredmény, Bevétel és Kiadás – ezek a feladási számlaként használt fő számlák.</span><span class="sxs-lookup"><span data-stu-id="88d7b-106">Profit and loss, Revenue, and Expense – These main accounts are used as posting accounts.</span></span> <span data-ttu-id="88d7b-107">Az eredményszámlákon történik a bevételek és a kiadások rögzítése.</span><span class="sxs-lookup"><span data-stu-id="88d7b-107">Profit and loss accounts are used to record revenue and expenses.</span></span> <span data-ttu-id="88d7b-108">Az összes eredmény-, bevétel- és költségszámla összege határozza meg az év végi eredményt.</span><span class="sxs-lookup"><span data-stu-id="88d7b-108">The sum of all profit and loss, revenue, and expense accounts determines the year-end results.</span></span> <span data-ttu-id="88d7b-109">A bevételi és a költség fő számlák funkciója megegyezik az eredményszámláéval.</span><span class="sxs-lookup"><span data-stu-id="88d7b-109">Revenue and Expense main accounts have the same function as Profit and loss main accounts.</span></span>
+-   <span data-ttu-id="88d7b-110">Mérleg, eszköz, kötelezettség és saját tőke – ezek a fő számlák használhatóak tranzakciószámlaként, ezekben lehet rögzíteni a jogi személy által birtokolt vagy a tartozásában levő összegeket.</span><span class="sxs-lookup"><span data-stu-id="88d7b-110">Balance sheet, Asset, Liability, and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.</span></span>
+-   <span data-ttu-id="88d7b-111">Összesen – ezen fő számlákkal lehet számlaintervallumokat hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="88d7b-111">Total – These main accounts are used to add account intervals.</span></span> <span data-ttu-id="88d7b-112">Az Összesen főszámlatípust a Számlaintervallum oldalon lehet konfigurálni, amely megjeleníti az összes számlaintervallum csoportegyenlegeinek összegét.</span><span class="sxs-lookup"><span data-stu-id="88d7b-112">Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals.</span></span> <span data-ttu-id="88d7b-113">A Számlaintervallum oldal eléréséhez kattintson az Általános lapon az Összesen elemre, miután egy Összesen számlatípust választott.</span><span class="sxs-lookup"><span data-stu-id="88d7b-113">Access the Account interval page by click Totals on the General tab once you have selected a Total account type.</span></span>
+-   <span data-ttu-id="88d7b-114">Jelentések – ezek a fő számlák csak a Brazil rendszerben használt pénzügyi kimutatási jelentésekre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="88d7b-114">Reporting – These main accounts are used for financial statement reporting for Brazil only.</span></span>
 
-<span data-ttu-id="3a043-115">További tudnivalókért lásd: [Fő számla kategóriáinak beállítása](tasks/set-up-main-account-categories.md).</span><span class="sxs-lookup"><span data-stu-id="3a043-115">For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).</span></span>
+<span data-ttu-id="88d7b-115">További tudnivalókért lásd: [Fő számla kategóriáinak beállítása](tasks/set-up-main-account-categories.md).</span><span class="sxs-lookup"><span data-stu-id="88d7b-115">For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).</span></span>
 
 
 

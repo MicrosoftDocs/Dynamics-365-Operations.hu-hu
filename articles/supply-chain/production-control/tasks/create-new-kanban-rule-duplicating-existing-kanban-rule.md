@@ -10,37 +10,37 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f72dbca0debf9e6a03ee700a979d4f4c110f819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3aef2725152d39e49070f33d0c56089200c94353
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559854"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837806"
 ---
-# <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a><span data-ttu-id="1f6e0-103">Új kanbanszabály létrehozása egy meglévő kanbanszabály másolásával</span><span class="sxs-lookup"><span data-stu-id="1f6e0-103">Create a new kanban rule by duplicating an existing kanban rule</span></span>
+# <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a><span data-ttu-id="f7571-103">Új kanbanszabály létrehozása egy meglévő kanbanszabály másolásával</span><span class="sxs-lookup"><span data-stu-id="f7571-103">Create a new kanban rule by duplicating an existing kanban rule</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1f6e0-104">Ez az eljárás egy létező kanbanszabály másolatának létrehozásával foglalkozik.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-104">This procedure focuses on creating a duplicate of an existing kanban rule.</span></span> <span data-ttu-id="1f6e0-105">Ez akkor hasznos, ha már létező kanbanszabályok alapján szeretne új kanbanszabályt létrehozni.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-105">This is useful if you want to create new kanban rules based on existing kanban rules.</span></span> <span data-ttu-id="1f6e0-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="1f6e0-107">Ez az eljárás a folyamatmérnök vagy az érték-előállítási vezető munkáját segíti, mert ők készítik elő a termelést a módosított termelési folyamathoz vagy az új feltöltési szabályhoz.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-107">This procedure is intended for the process engineer or the value stream manager as they prepare production for a changed production flow or a new replenishment rule.</span></span>
+<span data-ttu-id="f7571-104">Ez az eljárás egy létező kanbanszabály másolatának létrehozásával foglalkozik.</span><span class="sxs-lookup"><span data-stu-id="f7571-104">This procedure focuses on creating a duplicate of an existing kanban rule.</span></span> <span data-ttu-id="f7571-105">Ez akkor hasznos, ha már létező kanbanszabályok alapján szeretne új kanbanszabályt létrehozni.</span><span class="sxs-lookup"><span data-stu-id="f7571-105">This is useful if you want to create new kanban rules based on existing kanban rules.</span></span> <span data-ttu-id="f7571-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="f7571-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f7571-107">Ez az eljárás a folyamatmérnök vagy az érték-előállítási vezető munkáját segíti, mert ők készítik elő a termelést a módosított termelési folyamathoz vagy az új feltöltési szabályhoz.</span><span class="sxs-lookup"><span data-stu-id="f7571-107">This procedure is intended for the process engineer or the value stream manager as they prepare production for a changed production flow or a new replenishment rule.</span></span>
 
 
-## <a name="select-a-kanban-rule"></a><span data-ttu-id="1f6e0-108">Válasszon ki egy kanbanszabályt</span><span class="sxs-lookup"><span data-stu-id="1f6e0-108">Select a kanban rule</span></span>
-1. <span data-ttu-id="1f6e0-109">Ugorjon a Kanbanszabályokhoz.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-109">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="1f6e0-110">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="1f6e0-111">Válassza ki a 000017 kanbanszabályt az M0006 termékhez.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-111">Select kanban rule 000017 for Product M0006.</span></span>  
+## <a name="select-a-kanban-rule"></a><span data-ttu-id="f7571-108">Válasszon ki egy kanbanszabályt</span><span class="sxs-lookup"><span data-stu-id="f7571-108">Select a kanban rule</span></span>
+1. <span data-ttu-id="f7571-109">Ugorjon a Kanbanszabályokhoz.</span><span class="sxs-lookup"><span data-stu-id="f7571-109">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="f7571-110">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="f7571-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="f7571-111">Válassza ki a 000017 kanbanszabályt az M0006 termékhez.</span><span class="sxs-lookup"><span data-stu-id="f7571-111">Select kanban rule 000017 for Product M0006.</span></span>  
 
-## <a name="duplicate-a-kanban-rule"></a><span data-ttu-id="1f6e0-112">Másolja a kanbanszabályt</span><span class="sxs-lookup"><span data-stu-id="1f6e0-112">Duplicate a kanban rule</span></span>
-1. <span data-ttu-id="1f6e0-113">Kattintson a Kanbanszabály másolása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-113">Click Duplicate kanban rule.</span></span>
-    * <span data-ttu-id="1f6e0-114">Egy kanbanszabály másolásakor lehetősége van módosítani a típust, a dátumokat, a tevékenységeket és a termékkiválasztást.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-114">When duplicating a kanban rule, it is possible to change type, dates, activities, and the product selection.</span></span> <span data-ttu-id="1f6e0-115">A következő lépésben módosítsa a terméket ehhez az eljáráshoz.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-115">Change the product for this procedure in the next step.</span></span>  
-2. <span data-ttu-id="1f6e0-116">A Termék mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-116">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="1f6e0-117">Válassza az M0007 lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-117">Select M0007.</span></span>  
-3. <span data-ttu-id="1f6e0-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-118">Click OK.</span></span>
-    * <span data-ttu-id="1f6e0-119">Vegye figyelembe, hogy a 000017 kanbanszabályról létrejön egy másolat.</span><span class="sxs-lookup"><span data-stu-id="1f6e0-119">Note that a duplicate of kanban rule 000017 is created.</span></span>    
+## <a name="duplicate-a-kanban-rule"></a><span data-ttu-id="f7571-112">Másolja a kanbanszabályt</span><span class="sxs-lookup"><span data-stu-id="f7571-112">Duplicate a kanban rule</span></span>
+1. <span data-ttu-id="f7571-113">Kattintson a Kanbanszabály másolása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f7571-113">Click Duplicate kanban rule.</span></span>
+    * <span data-ttu-id="f7571-114">Egy kanbanszabály másolásakor lehetősége van módosítani a típust, a dátumokat, a tevékenységeket és a termékkiválasztást.</span><span class="sxs-lookup"><span data-stu-id="f7571-114">When duplicating a kanban rule, it is possible to change type, dates, activities, and the product selection.</span></span> <span data-ttu-id="f7571-115">A következő lépésben módosítsa a terméket ehhez az eljáráshoz.</span><span class="sxs-lookup"><span data-stu-id="f7571-115">Change the product for this procedure in the next step.</span></span>  
+2. <span data-ttu-id="f7571-116">A Termék mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f7571-116">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7571-117">Válassza az M0007 lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7571-117">Select M0007.</span></span>  
+3. <span data-ttu-id="f7571-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f7571-118">Click OK.</span></span>
+    * <span data-ttu-id="f7571-119">Vegye figyelembe, hogy a 000017 kanbanszabályról létrejön egy másolat.</span><span class="sxs-lookup"><span data-stu-id="f7571-119">Note that a duplicate of kanban rule 000017 is created.</span></span>    
 

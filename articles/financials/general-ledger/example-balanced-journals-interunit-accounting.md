@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
@@ -18,38 +18,38 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b596a2332a9ada01df7b4e718a79eb624ee52fc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e84d96b5467b38e07a9ed31f142c27b638289284
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549104"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839353"
 ---
-# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="94524-103">Kiegyensúlyozott naplók egységközi számlázáshoz</span><span class="sxs-lookup"><span data-stu-id="94524-103">Balanced journals for interunit accounting</span></span>
+# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="67353-103">Kiegyensúlyozott naplók egységközi számlázáshoz</span><span class="sxs-lookup"><span data-stu-id="67353-103">Balanced journals for interunit accounting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="94524-104">Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor.</span><span class="sxs-lookup"><span data-stu-id="94524-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
+<span data-ttu-id="67353-104">Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor.</span><span class="sxs-lookup"><span data-stu-id="67353-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
 
-<span data-ttu-id="94524-105">Ha a könyvelési bejegyzések a pénzügyi dimenzióértékek szintjén nem kiegyenlítettek, akkor automatikusan további könyvelési bejegyzéseket hoz létre a rendszer a napló kiegyensúlyozása érdekében.</span><span class="sxs-lookup"><span data-stu-id="94524-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="94524-106">Ezek a számlatételek az **Egységközi - tartozás** és**Egységközi - jóváírás** feladási típusokat használják a **Számlák automatikus tranzakciókhoz** lapon a fő számla meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="94524-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="94524-107">Például az Üzleti egység, amely a második szegmens a főkönyvi számlában, a kiegyenlítő pénzügyi dimenzióként van kiválasztva, és a következő könyvelési tételek lesznek elkészítve.</span><span class="sxs-lookup"><span data-stu-id="94524-107">For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
+<span data-ttu-id="67353-105">Ha a könyvelési bejegyzések a pénzügyi dimenzióértékek szintjén nem kiegyenlítettek, akkor automatikusan további könyvelési bejegyzéseket hoz létre a rendszer a napló kiegyensúlyozása érdekében.</span><span class="sxs-lookup"><span data-stu-id="67353-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="67353-106">Ezek a számlatételek az **Egységközi - tartozás** és**Egységközi - jóváírás** feladási típusokat használják a **Számlák automatikus tranzakciókhoz** lapon a fő számla meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="67353-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="67353-107">Például az Üzleti egység, amely a második szegmens a főkönyvi számlában, a kiegyenlítő pénzügyi dimenzióként van kiválasztva, és a következő könyvelési tételek lesznek elkészítve.</span><span class="sxs-lookup"><span data-stu-id="67353-107">For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
 
 |                      |           |
 |----------------------|-----------|
-| <span data-ttu-id="94524-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="94524-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="94524-109">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="94524-109">100.00 DR</span></span> |
-| <span data-ttu-id="94524-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="94524-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="94524-111">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="94524-111">100.00 DR</span></span> |
-| <span data-ttu-id="94524-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="94524-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="94524-113">200.00 CR</span><span class="sxs-lookup"><span data-stu-id="94524-113">200.00 CR</span></span> |
+| <span data-ttu-id="67353-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="67353-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="67353-109">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="67353-109">100.00 DR</span></span> |
+| <span data-ttu-id="67353-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="67353-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="67353-111">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="67353-111">100.00 DR</span></span> |
+| <span data-ttu-id="67353-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="67353-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="67353-113">200.00 CR</span><span class="sxs-lookup"><span data-stu-id="67353-113">200.00 CR</span></span> |
 
-<span data-ttu-id="94524-114">Ebben az esetben a következő egyenlegek vannak meghatározva:</span><span class="sxs-lookup"><span data-stu-id="94524-114">In this case, the following balances are determined:</span></span>
+<span data-ttu-id="67353-114">Ebben az esetben a következő egyenlegek vannak meghatározva:</span><span class="sxs-lookup"><span data-stu-id="67353-114">In this case, the following balances are determined:</span></span>
 
--   <span data-ttu-id="94524-115">Üzleti egység – MSP = 100.00 CR</span><span class="sxs-lookup"><span data-stu-id="94524-115">For Business Unit MSP = 100.00 CR</span></span>
--   <span data-ttu-id="94524-116">Üzleti egység – NY = 100.00 DR</span><span class="sxs-lookup"><span data-stu-id="94524-116">For Business Unit NY = 100.00 DR</span></span>
+-   <span data-ttu-id="67353-115">Üzleti egység – MSP = 100.00 CR</span><span class="sxs-lookup"><span data-stu-id="67353-115">For Business Unit MSP = 100.00 CR</span></span>
+-   <span data-ttu-id="67353-116">Üzleti egység – NY = 100.00 DR</span><span class="sxs-lookup"><span data-stu-id="67353-116">For Business Unit NY = 100.00 DR</span></span>
 
-<span data-ttu-id="94524-117">Ezért a következő könyvelési bejegyzések automatikusan létrejönnek a napló kiegyenlítésére a pénzügyi dimenzió értékeinek szintjén.</span><span class="sxs-lookup"><span data-stu-id="94524-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
+<span data-ttu-id="67353-117">Ezért a következő könyvelési bejegyzések automatikusan létrejönnek a napló kiegyenlítésére a pénzügyi dimenzió értékeinek szintjén.</span><span class="sxs-lookup"><span data-stu-id="67353-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
 
 |                                   |           |
 |-----------------------------------|-----------|
-| <span data-ttu-id="94524-118">(Egységközi - terhelés) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="94524-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="94524-119">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="94524-119">100.00 DR</span></span> |
-| <span data-ttu-id="94524-120">(Egységközi - jóváírás) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="94524-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="94524-121">100.00 CR</span><span class="sxs-lookup"><span data-stu-id="94524-121">100.00 CR</span></span> |
+| <span data-ttu-id="67353-118">(Egységközi - terhelés) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="67353-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="67353-119">100,00 TARTOZÁS</span><span class="sxs-lookup"><span data-stu-id="67353-119">100.00 DR</span></span> |
+| <span data-ttu-id="67353-120">(Egységközi - jóváírás) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="67353-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="67353-121">100.00 CR</span><span class="sxs-lookup"><span data-stu-id="67353-121">100.00 CR</span></span> |
 
 
 
