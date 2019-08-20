@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16d9f48ed38a5033fab94d45821f0ed6f7f1f011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c442eed4e9e8d868db253ae0c042f0b6c977f20
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558388"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743049"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása 
 
@@ -58,9 +58,9 @@ Ezzel a művelettel indíthatja el és állíthatja le az idő rögzítését ol
 
 ## <a name="see-also"></a>Lásd még
 
-[Szolgáltatásiszint-szerződés idő-nyilvántartásának leállítása (képernyő)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))
+[Szolgáltatásiszint-szerződés idő-nyilvántartásának leállítása (képernyő)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))
 
-[Szolgáltatásiszint-szerződés idő-nyilvántartásának leállítása (képernyő)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))
+[Szolgáltatásiszint-szerződés idő-nyilvántartásának leállítása (képernyő)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))
 
   
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
-ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.openlocfilehash: 7a55c0a1ac8ac833315afa179c1b6d4eb78195fc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1594960"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839207"
 ---
 # <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
 
@@ -117,7 +117,7 @@ Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat ala
 A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Finance and Operation rendszerben használt vállalatra vonatkozó jelentések jelennek meg. 
 
 > [!NOTE] 
-> A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/en-us/download/details.aspx?id=53345) tölthető le és telepíthető. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában. Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán. A jelentéstervező program elindul.
+> A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában. Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán. A jelentéstervező program elindul.
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Pénzügyi jelentések megtekintése](view-financial-reports.md)

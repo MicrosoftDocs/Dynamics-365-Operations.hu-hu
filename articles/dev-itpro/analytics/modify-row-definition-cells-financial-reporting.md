@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551837"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863724"
 ---
 # <a name="modify-row-definition-cells"></a>Sordefiniáló cellák módosítása
 
@@ -402,7 +402,7 @@ A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra 
 2. Kattintson duplán egy cellára a **Kapcsolás a pénzügyi dimenziókhoz** oszlopban.
 3. A **Dimenziók** párbeszédpanelen kattintson duplán egy cellára a dimenzió neve alatt.
 4. A dimenzióhoz a párbeszédpanelen, válassza az **Egyéni vagy tartomány**-t.
-5. A **Kezdő érték** mezőben adja meg a kezdő dimenziót, vagy kattintson a ![Tallózás](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Tallózás") elemre, így kereshet a rendelkezésre álló dimenziók között. Dimenziók tartományának megadásához adja meg az utolsó dimenziót az **Idáig** mezőben.
+5. A **Kezdő érték** mezőben adja meg a kezdő dimenziót, vagy kattintson a ![Tallózás](media/browse.gif "Tallózás") elemre, így kereshet a rendelkezésre álló dimenziók között. Dimenziók tartományának megadásához adja meg az utolsó dimenziót az **Idáig** mezőben.
 6. Kattintson az **OK** gombra, a dimenziók párbeszédpaneljának bezárásához. A **Dimenziók** párbeszédpanel a frissített dimenziókészletet vagy tartományt jeleníti meg.
 7. Kattintson az **OK** gombra hogy bezárja a **Dimenziók** párbeszédpanelt.
 
@@ -479,7 +479,7 @@ Az alábbi táblázat bemutatja a **Dimenziók** párbeszédpanelben megjelenő 
 
 | Cikk                | Leírás |
 |---------------------|-------------|
-| Egyéni vagy tartományi | A **Kezdő** érték mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Tallózás"), ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
+| Egyéni vagy tartományi | A **Kezdő** érték mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás](media/browse.gif "Tallózás"), ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
 | Dimenzióérték Beállítása | A **Név** mezőbe írja be a dimenzióérték-készlet nevét. Készlet létrehozásához, módosításához, másolásához, vagy törléséhez, kattintson a **Dimenziókészletek Értékének Kezelése** gombra. A **Képlet** mezőben a sordefinícióban az ehhez a dimenzióérték-készlethez tartozó **Hivatkozás a pénzügyi dimenziókhoz** cella képlete töltődik be. |
 | Számlák összesítése   | A **Név** mezőbe írja be vagy tallózással keresse meg az összesítő számlákra vonatkozó dimenziót. A Jelentésdefinícióban, a **Képlet** mező, a számlaösszesítő **Hivatkozás Pénzügyi Dimenziókra** cellájában szereplő képlettel van kitöltve. |
 

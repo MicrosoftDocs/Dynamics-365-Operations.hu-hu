@@ -3,7 +3,7 @@ title: Funkciókezelés áttekintése
 description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632053"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862938"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations minden kiadásában új szolgáltatások és frissítések jelennek meg. A funkció-kezelési élmény olyan munkaterületet tartalmaz, amelyen megtekintheti az egyes kiadásokban elérhetővé tett szolgáltatások listáját. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt.
 
@@ -38,7 +39,7 @@ A **Funkciókezelés** munkaterületet úgy nyithatja meg, hogy kijelöli az ir�
 A funkciólista a következő információkat tartalmazza:
 
 - **Funkció neve** – A hozzáadott funkció leírása.
-- **Engedélyezett állapot** – Egy szimbólum azt jelzi, hogy be van-e kapcsolva a funkció (pipa),nincs bekapcsolva (üres), ütemezve van bekapcsolásra (óra), vagy kötelezően ebe van kapcsolva (lakat). Az itt megjelenített beállítás minden jogi személynél használatos. Ne felejtse el, hogy ha a funkció be is van kapcsolva, a biztonság szabályozza azt. Ennélfogva a funkció csak azoknak a felhasználóknak érhető el, akik hozzáférhetnek a biztonsági szerepkörük alapján. Csak olyan jogi személyekben érhető el, amelyekhez a felhasználó hozzáfér.
+- **Engedélyezett állapot** – A jel azt jelzi, hogy egy funkció be van-e kapcsolva (pipa), még nem lett bekapcsolva (üres), bekapcsolásra ütemezett (óra), kötelezően be lett kapcsolva (zár), a bekapcsolás előtt ellenőrzendő (figyelmeztetés) vagy nem engedélyezhető (X). A látható beállítást minden jogi személyhez használja a rendszer. Ne felejtse el, hogy ha a funkció be is van kapcsolva, a biztonság szabályozza azt. Ennélfogva a funkció csak azoknak a felhasználóknak érhető el, akik hozzáférhetnek a biztonsági szerepkörük alapján. Csak olyan jogi személyekben érhető el, amelyekhez a felhasználó hozzáfér.
 - **Engedélyezési dátum** – Az a dátum, amikor a funkciót bekapcsolták, vagy ütemezve van a bekapcsolásra.
 - **Funkció hozzáadása** – Az a dátum, amikor a funkciót hozzáadták a környezethez. A program automatikusan beírja ezt a dátumot, amikor a havi kiadási ciklus során frissíti a környezetet.
 - **Modul** – Az új funkció által érintett modul.
@@ -59,6 +60,10 @@ Ha egy funkció nincs bekapcsolva, az **Engedélyezés most** gomb látható a r
 - Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most**lehetőséget. A funkció be van kapcsolva.
 
 Néhány funkció nem kapcsolható ki a bekapcsolás után. Ha a bekapcsolni kívánt funkció nem kapcsolható ki, egy figyelmeztetés jelenik meg. Ezen a ponton választhatja **Mégsem** lehetőséget a művelet visszavonásához és a szolgáltatás kikapcsolásának fenntartásához. Ha azonban az **Engedélyezés** lehetőséget választja a bekapcsoláshoz, és engedélyezi a funkciót, akkor nem fogja tudni kikapcsolni később.
+
+Bizonyos funkciók esetében a bekapcsolás előtt további információkat biztosító üzenetek jelennek meg. Ezeket a funkciókat sárga figyelmeztető jel jelöli. Alaposan tanulmányozza át a további információkat, hogy megtudja, mi történik a funkció bekapcsolása esetén. A funkciót azonban bármikor bekapcsolhatja az **Engedélyezés** lehetőséggel.
+
+Bizonyos funkciók esetében üzenet jelenik meg, hogy a funkció engedélyezéséhez valamilyen műveletet kell végrehajtani. Ezeket a funkciókat piros X jel jelöli. A funkció engedélyezéséhez el kell végezni a leírásban említett műveleteket. Ha egy funkció például nem használható egy konfigurációs kulcs letiltása nélkül, akkor először le kell tiltani a kulcsot, és utána kell engedélyezni a funkciót a Funkció kezelése részen.
 
 Miután a funkció be van kapcsolva, a részletek ablaktáblán megjelenik egy üzenet a **További információ** hivatkozása alatt. Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a jövőbeli dátumot jelzi, amikor a funkció engedélyezve lesz a jövőben. Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.
 
@@ -84,12 +89,28 @@ Miután a funkció ki van kapcsolva, a részletek ablaktáblán megjelenik egy �
 
 Néha a frissítés során kritikus fontosságú funkciók érkeznek, amelyeket be kell kapcsolni a frissítés során. Ezek a funkciók automatikusan be lesznek kapcsolva az **Engedélyezés dátuma** mezőben megadott dátumon. Ezeknél a funkcióknál a részletek ablaktáblán megjelenik egy üzenet a **További információ** hivatkozása alatt. Ez az üzenet vagy azt jelzi, hogy a funkció be van kapcsolva, vagy a dátumot jelzi, amikor a funkció be lesz kapcsolva a jövőben. Mindig akkor jelenik meg, amikor kiválasztja a funkciót a szolgáltatások listájában.
 
+## <a name="enable-all-features"></a>Az összes funkció engedélyezése
+
+Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva. Az összes funkció **Az összes engedélyezése** gombbal engedélyezhető. 
+
+**Az összes engedélyezése** gombra kattintáskor megjelenik egy beállítás, ahol meg kell adni a következő adatokat:
+- Az olyan funkciók listája, amelyeknek az engedélyezését jóvá kell hagyni. Ha engedélyezni szeretné a listában szereplő funkciókat, válassza az **Igen** lehetőséget a **Megerősítést igénylő funkciók engedélyezése** gombnál.
+- Megjelenik az olyan funkciók listája, amelyek nem engedélyezhetők. Ezek nem engedélyezhető funkciók
+
+Az összes olyan funkció, amely engedélyezhető, engedélyezve lesz. Ha egy funkció jövőbeli engedélyezésre ütemezett, az ütemezés nem módosul. 
+
 ## <a name="turn-on-all-features-automatically"></a>Az összes funkció automatikus bekapcsolása
 
 Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva, hacsak nem kötelező funkciók. Ha viszont automatikusan be kívánja kapcsolni az összes új funkciót, akkor a munkaterület címe alatti legördülő lista segítségével módosíthatja, hogy mi történik az új szolgáltatások hozzáadásakor.
 
 - Válassza az **Összes új funkció alapértelmezett módon engedélyezve** lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.
 - Válassza az **Összes új funkció alapértelmezett módon letiltva** lehetőséget az összes új funkció kikapcsolásához, amikor hozzáadják őket a környezetéhez.
+
+Ha minden funkciót automatikusan engedélyez, azzal engedélyezi az olyan funkciókat, amelyek engedélyezve lesznek **Az összes engedélyezése** gombra kattintáskor. Az olyan funkciók nem lesznek engedélyezve, amelyek engedélyezéséhez valamilyen jóváhagyásra vagy műveletre van szükség.
+
+## <a name="check-for-updates"></a>Frissítések keresése
+
+A rendszer az egyes frissítések után funkciókat ad a környezethez. A **Frissítések keresése** gombra kattintva manuálisan is kereshet frissítéseket. A frissítés után a rendszerhez hozzáadott funkciók bekerülnek a funkciók listájába. Ha például a kiadás után engedélyezve van egy tesztelt funkció, kereshet frissítéseket, és a funkció bekerül a listába.
 
 ## <a name="assigning-roles"></a>Szerepkörök hozzárendelése
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e49e612ecd78768879731882a59fdba69cf96660
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4393931dd68a919b1c123a37bea4be82a068a2c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558869"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852300"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Év végi zárás Magyarország és Csehország esetén
 [!include[banner](../includes/banner.md)]

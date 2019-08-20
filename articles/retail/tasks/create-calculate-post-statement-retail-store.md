@@ -1,6 +1,6 @@
 ---
-title: Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása
-description: Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit.
+title: Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása
+description: Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,34 +17,34 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
+ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548324"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755523"
 ---
-# <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics AX programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat. Az eljárás a Microsoft Dynamics AX szolgáltatásra vonatkozhat. Ne feledje, hogy a Dynamics AX új neve Microsoft Dynamics 365 for Operations.
+Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics 365 for Finance and Operations programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.
 
-1. Lépjen Az összes munkaterület > .. > Kiskereskedelmi üzlet pénzügyei lehetőségre.
-2. Kattintson az Új kimutatás lehetőségre.
-3. Az Üzlet száma mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-5. Kattintson az OK gombra.
-    * A Beállítások csoportban beállíthatja, hogy mely tranzakciók szerepeljenek a kimutatásban, és hogy azok hogyan legyenek sorokba csoportosítva. Megnyithatja a Beállítások csoportot és megváltoztathatja a beállításokat, vagy használhatja az alapértelmezett beállításokat is.  
-    * A Kimutatás módja mező megadja, hogy a kimutatás sorai hogyan lesznek csoportosítva.  
-    * Válasszon ki egy munkatársat vagy egy jegyzéket, ha a kimutatást csak egy bizonyos munkatársra vagy jegyzékre vonatkozóan szeretné elkészíteni.  
-6. Válassza ki valamelyik lehetőséget a Zárási mód mezőben.
-7. Kattintson a Kimutatás számítása lehetőségre.
-8. Kattintson az Igen gombra.
-    * A kimutatás elkészítése után külön sorokban kell szerepelnie a teljes összegnek minden alkalmazott fizetési mód és kimutatási mód esetén.  
-    * Adjon meg egy leszámolt összeget minden sorban, amelyben meg kell adni vagy frissíteni kell az értéket. A leszámolt értéket tartalmazó mező a pénztárban végrehajtott fizetőeszköz-elszámolások során kapott összeggel van kitöltve.  
-9. Kattintson a Kimutatás feladása lehetőségre.
-10. Kattintson a Bezárás gombra.
-11. Ugorjon a következő oldalra: Kiskereskedelem és kereskedelem > Csatornák > Kiskereskedelmi üzlet pénzügyei.
-12. Kattintson a Feladott kimutatások fülre.
+1. Válassza ki a **Kiskereskedelmi üzlet pénzügyei** lehetőséget a kezdőlapról.
+2. Válassza az **Új kimutatás** lehetőséget.
+3. Az **Üzlet száma** mezőben válasszon ki egy opciót a legördülő menüben.
+4. Válassza ki az **OK** lehetőséget.
+5. A **Beállítások** csoportban beállíthatja, hogy mely tranzakciók szerepeljenek a kimutatásban, és hogy azok hogyan legyenek sorokba csoportosítva. Megnyithatja a **Beállítások** csoportot és megváltoztathatja a beállításokat, vagy használhatja az alapértelmezett beállításokat is.  
+    - A **Kimutatás módja** mező megadja, hogy a kimutatás sorai hogyan lesznek csoportosítva.  
+    - Válasszon ki egy munkatársat vagy egy jegyzéket a **munkatárs/jegyzék** mezőben, ha a kimutatást csak egy bizonyos munkatársra vagy jegyzékre vonatkozóan szeretné elkészíteni.  
+6. Válassza ki valamelyik lehetőséget a **Zárási mód** mezőben.
+7. Válassza a **Kimutatás számítása** lehetőséget a Művelet alaktábláról.
+8. Válassza ki az **Igen** lehetőséget.
+    - A kimutatás elkészítése után külön sorokban kell szerepelnie a teljes összegnek minden alkalmazott fizetési mód és kimutatási mód esetén.  
+    - Adjon meg egy leszámolt összeget minden sorban, amelyben meg kell adni vagy frissíteni kell az értéket. A leszámolt értéket tartalmazó mező a pénztárban végrehajtott fizetőeszköz-elszámolások során kapott összeggel van kitöltve.  
+9. Válassza a **Kimutatás feladása** lehetőséget a Művelet alaktábláról.
+10. Válassza **Bezárás** lehetőséget.
+11. Zárja be a panelt.
+12. A kezdőlapon válassza ki a **Kiskereskedelmi üzlet pénzügyei** lehetőséget.
+13. Kattintson a **Feladott kimutatások** fülre.
 

@@ -1,26 +1,26 @@
 ---
 title: Fordított áfa
-description: Ez a témakör azt ismerteti, hogyan állítható be a fordított áfa számítása az európai országoknál és Szaúd-Arábiában.
+description: A cikk azt tekinti át, hogyan állítható be fordított áfa az európai országokhoz, Szaúd-Arábiához és Szingapúrhoz.
 author: epodkolz
 manager: AnnBe
-ms.date: 04/05/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571171"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852423"
 ---
 # <a name="reverse-charge-vat"></a>Fordított áfa
 
@@ -28,7 +28,7 @@ ms.locfileid: "1571171"
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása Szaúd-Arábiában és az európai országoknál.
+A cikk a fordított áfa európai országokhoz, Szaúd-Arábiához és Szingapúrhoz való beállításának általános leírását adja.
 
 A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza. Ezért az áruk és/vagy szolgáltatások fogadói vallják be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).
 

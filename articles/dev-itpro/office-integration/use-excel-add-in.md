@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554990"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741110"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Entitásadatok megnyitása az Excel programban, és frissítésük az Excel-modul használatával
 
@@ -60,7 +60,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 
 6. A módosítások megerősítéséhez válassza az **OK**, majd az **Igen** elemet. Az Excel-bővítmény újraindul és betölti a metaadatokat.
 
-    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör [Hibaelhárítás](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) című szakaszában.
+    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör [Hibaelhárítás](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) című szakaszában.
 
 7. Válassza a **Tervezés** lehetőséget. Az Excel-bővítmény lekéri az entitás metaadatait.
 8. Válassza a **Táblázat beszúrása** lehetőséget. Megjelenik az entitások listája. Az entitások „Név – címke” formátumban jelennek meg.

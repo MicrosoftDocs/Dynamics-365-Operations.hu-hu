@@ -3,7 +3,7 @@ title: Billentyűparancsok
 description: A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561833"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780058"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
@@ -138,9 +138,13 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Egy sortartomány hozzáadása a kijelölt készlethez<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>         | Shift+Kattintás                     |
 | Ugrás az adatok következő/előző oldalára                                                                                   | Page up / Page down             |
 | Új sor létrehozása a rács alján                                                                             | Lefelé nyíl (az utolsó sorból)  |
-| Az összes sor kijelölése vagy törlése                                                                                               | Ctrl+Shift+M                    |
 | Ugrás az első rekordra                                                                                               | Ctrl+Home                       |
 | Ugrás az utolsó rekordra                                                                                                | Ctrl+End                        |
+| Az összes sor kijelölése vagy törlése                                                                                               | Ctrl+Shift+M                    |
+| Ugrás az első megjelölt sorra                                                                                           | Alt+Shift+M, F                    |
+| Ugrás a következő megjelölt sorra                                                                                            | Alt+Shift+M, L                    |
+| Ugrás az előző megjelölt sorra                                                                                        | Alt+Shift+M, P                    |
+| Ugrás az utolsó megjelölt sorra                                                                                           | Alt+Shift+M, N                    |
 | Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |

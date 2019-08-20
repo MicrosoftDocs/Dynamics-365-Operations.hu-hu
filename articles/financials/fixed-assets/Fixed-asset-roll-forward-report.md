@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d0f7d63fa0566cfc2a23b3228d687d7f85d848c9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549583"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1840745"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Jelentés a tárgyi eszköz meghosszabbításáról
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549583"
 
 A **Tárgyi eszköz meghosszabbítása** jelentés egyszerűen áttekinthető a Microsoft Excel-formátumban részletes tárgyieszköz-adatokat szolgáltat az időszakzáráshoz, pénzügyi kimutatásokhoz és adóbevalláshoz. A jelentés kezdő és záró egyenleget tartalmaz a tárgyi eszközökhöz az időszak értékelési mozgásaival, valamint az adott időszakban történt új tárgyieszköz-beszerzésekkel és az értékesítésekekkel együtt. Az adatok az egyes tárgyi eszközökre vonatkoznak, és az értékek a tárgyieszköz-csoportok és a jogi személy esetében is összegzésre kerülnek.
 
-A **Tárgyi eszköz meghosszabbítása** jelentés az Elektronikus jelentési (ER) keretrendszert használja. A jelentés futtatása előtt a tárgyi eszközök modelljét és tárgyi eszközök meghosszabbításának konfigurációit importálni kell a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+A **Tárgyi eszköz meghosszabbítása** jelentés az Elektronikus jelentési (ER) keretrendszert használja. A jelentés futtatása előtt a tárgyi eszközök modelljét és tárgyi eszközök meghosszabbításának konfigurációit importálni kell a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 Ez a jelentés megtalálható a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában, vagy gyorsjavításként a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. júliusi) kiadásában. Három gyorsjavítást kell alkalmazni a 2017. júliusi kiadást futtató környezetekben:
 

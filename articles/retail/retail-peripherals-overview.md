@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624812"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742633"
 ---
 # <a name="retail-peripherals"></a>Kiskereskedelmi perifériák
 
@@ -192,7 +192,7 @@ Két helyen lehet megadni a hálózati perifériákhoz tartozó IP-címeket. Ha 
 
 #### <a name="modern-pos-for-android"></a>Modern POS for Android
 
-A 8.1.3-as Dynamics 365 for Retail-verzióhoz használható Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Ez a hardverállomás támogatja a hálózati nyomtatókkal és a fizetési csatlakozókkal folytatott kommunikációt. További információ: [Hibrid alkalmazás Android rendszerhez](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+A 8.1.3-as Dynamics 365 for Retail-verzióhoz használható Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Ez a hardverállomás támogatja a hálózati nyomtatókkal és a fizetési csatlakozókkal folytatott kommunikációt. További információ: [Hibrid alkalmazás Android rendszerhez](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS és Modern POS iOS rendszerhez
 
@@ -541,7 +541,7 @@ Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített
 
 4. Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 5. Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-6. Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
+6. Válassza ki az **1070** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 7. Telepítse és aktiválja a Modern POS for Windows alkalmazást.
 8. Indítsa el a Modern POS for Window alkalmazást, és kezdje el használni a kapcsolódó perifériaeszközöket.
 

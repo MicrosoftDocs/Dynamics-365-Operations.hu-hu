@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 266eec2bb870be270b7796b35903a402e014c67c
-ms.sourcegitcommit: 1f211ac6bd384fd8a2b5352104baf264d88f39b0
+ms.openlocfilehash: ca473de65135ddddea12ddc72e902056cc7b1db7
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538726"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845293"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -93,7 +93,7 @@ Ha szeretné megadni a dátumokat, amikor a vevő fogad szállításokat, rendel
 
 Ne feledje, ügyfelenként csak egy naptár hozzárendelése lehetséges. Ha az ügyfél egyes különböző címeihez szeretne hozzárendelni naptárat, létrehozhat címenként egy ügyfelet, majd hozzárendelhet saját naptárát. 
 
-A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Szállítási naptár jogi személyhez
 Ha jelezni szeretné a dátumokat, amelyeken a jogi személy árut tud szállítani, beállíthat egy szállítási naptárat a **Szervezet felügyelete > Szervezetek > Jogi személyek** helyen. Válassza ki a jogi személyt és adja hozzá a naptárat a **Külkereskedelem és logisztika** lapon a **Szállítási naptár** mezőben. A szállítási naptárat a jogi személyhez tartozó összes raktári naptár alapértelmezéseinek forrása lesz. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc7c721af4b25e1586e546392518648110a3fb6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ed17e968debf47d7d212a945975ae1cfaccdff4
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562300"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743237"
 ---
 # <a name="service-order-item-requirements"></a>Szervizrendelési cikkre vonatkozó követelmények   
 
@@ -68,5 +68,5 @@ Ha egy szervizrendelésen cikkszükséglet van létrehozva, a szervizrendelést 
 
 ## <a name="see-also"></a>Lásd még
 
-[Cikkszükséglet (képernyő)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\))
+[Cikkszükséglet (képernyő)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 

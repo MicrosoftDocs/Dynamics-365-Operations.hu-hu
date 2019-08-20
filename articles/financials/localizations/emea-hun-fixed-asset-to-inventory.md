@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalAsset
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 274423
 ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 77d2f8ada2810fdf1b36b2573e4df01df22a35eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2df2c13d6a5238e9b037c907b2b6265c3132f3cf
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564405"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852234"
 ---
 # <a name="move-a-fixed-asset-to-inventory"></a>Tárgyi eszköz áthelyezése leltárba
 

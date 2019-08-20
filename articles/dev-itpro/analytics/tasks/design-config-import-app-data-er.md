@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551483"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741355"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>ER-konfigurációk tervezése bejövő dokumentumok elemzésére
 
@@ -30,7 +30,7 @@ Ez az eljárás egy bejövő elektronikus dokumentumot elemző elektronikus jele
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 
-Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt hozzákezdene, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez” témakörben tárgyalt fájlokat (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents)). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt hozzákezdene, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez” témakörben tárgyalt fájlokat (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents)). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.  

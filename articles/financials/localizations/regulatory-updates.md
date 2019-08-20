@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624311"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849332"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -59,19 +59,22 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      április 2019.          |   10.0.1      |    Oroszország     |A 2019-es szállításiadó-bevallás módosításai  |
 |      április 2019.            |   10.0.1      | Magyarország      |  Magyarország: Online számlázás v. 1.1 2019 a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban  |
 |      május 2019.            |   10.0.2      | Brazília      |   SPED ECD Layout 7   |
-|      Függőben            |   10.0.3      | Brazília      |   NF-e új NT 2018.005 - v.1.20   |
-|      Függőben            |   10.0.3      | Brazília      |   SPED ECD Layout 7   |
-|      Függőben            |   10.0.3      | Brazília      |   SPED ECF – 5. elrendezés 2019-es évre   |
-|      Függőben            |   10.0.3      | Litvánia    |   i.SAF-jelentés a felhasználó határozza meg a rendszer áfakódjait a jogi adókódok összefüggésében.    |
-|      Függőben            |   10.0.3      | Lengyelország     |   SAF számlák (JPK_FA) v. 2 2019. július 1-től  |
-|      Függőben            |   10.0.3      | Brazília   |   ICMS pénzügyi dokumentum-korrekciók engedélyezése 5.2 tábla   |
-|      Függőben            |   10.0.3      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
-  | Függőben            |   10.0.4      | Brazília    |   Beérkező pénzügyi bizonylat, 66   |
-   | Függőben            |   10.0.4      | Brazília    |   NF-e és NFC-e – 13/2019 számú rendelet és SUCIEF 55/2019- RJ rendelet – új feltételek az adómentességi címkék kiadásáról az NF-e-ben.   |
-   | Függőben            |   10.0.4      | India   |   A „Teljesítés helyének” és az „Állapotnak” a megjelenítése a GST-adószámlán  |
-   | Függőben            |   10.0.4      | Mexikó   |  Harmadik fél DIOT-nyilatkozata – az elrendezés változásai, 2019   |
-   | Függőben            |   10.0.4      | Brazília    |   NF-e ICMS-ST – CAT 42/18 rendelet az SP állapotához – CAT 42/18
-   | Függőben            |   10.0.4      | Brazília    |   NF-e rendelet 54.308/18 – RS NF   |
+|      június 2019.            |   10.0.3      | Brazília      |   NF-e új NT 2018.005 - v.1.20   |
+|      június 2019.            |   10.0.3      | Brazília      |   SPED ECD Layout 7   |
+|      június 2019.            |   10.0.3      | Brazília      |   SPED ECF – 5. elrendezés 2019-es évre   |
+|      június 2019.            |   10.0.3      | Litvánia    |   i.SAF-jelentés a felhasználó határozza meg a rendszer áfakódjait a jogi adókódok összefüggésében.    |
+|      június 2019.            |   10.0.3      | Lengyelország     |   SAF számlák (JPK_FA) v. 2 2019. július 1-től  |
+|      június 2019.            |   10.0.3      | Brazília   |   ICMS pénzügyi dokumentum-korrekciók engedélyezése 5.2 tábla   |
+|      június 2019.            |   10.0.3      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
+  | 2019. július            |   10.0.4      | Brazília    |   Beérkező pénzügyi bizonylat, 66   |
+   | 2019. július            |   10.0.4      | Brazília    |   NF-e és NFC-e – 13/2019 számú rendelet és SUCIEF 55/2019- RJ rendelet – új feltételek az adómentességi címkék kiadásáról az NF-e-ben.   |
+   | 2019. július            |   10.0.4      | India   |   A „Teljesítés helyének” és az „Állapotnak” a megjelenítése a GST-adószámlán  |
+   | 2019. július            |   10.0.4      | Mexikó   |  Harmadik fél DIOT-nyilatkozata – az elrendezés változásai, 2019   |
+   | 2019. július            |   10.0.4      | Brazília    |   NF-e ICMS-ST – CAT 42/18 rendelet az SP állapotához – CAT 42/18
+   | 2019. július            |   10.0.4      | Brazília    |   NF-e rendelet 54.308/18 – RS NF   |
+       | Függőben            |   10.0.5      | Brazília    |   Sped hozzájárulások gyakorlati útmutatója, 1.31-es verzió. új útmutató   |
+         | Függőben            |   10.0.5      | Brazília    |   Az NF-e: NT 2019.001 1.00-s verziójához készült technikai megjegyzések új verziója   |
+          | Függőben            |   10.0.5      | Spanyolország    |   Ellenőrzési szabályok változása 2019. október 1-jétől   |
    
 
 

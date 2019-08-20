@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23e91b6aee62157da9141cc7b6c4fae39c19ce32
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ba9cc4dcdfcfbc1bdb933336e85da9b4b6d97a40
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544679"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791856"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész: Formátum módosítása és futtatása)
 
@@ -29,7 +29,7 @@ ms.locfileid: "1544679"
 
 A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben. Ezeket a lépéseket a DEMF vállalatban hajthatja végre.
 
-A lépések végrehajtásához először végre kell hajtania az „ER Dokumentumkezelési fájlok használata formátumkimenetekben (4. rész): Formátum futtatása” eljárás lépéseit.
+A lépések végrehajtásához először végre kell hajtani az „ER Dokumentumkezelési fájlok használata formátumkimenetekben (4. rész: formátum futtatása)” eljárás lépéseit.
 
 Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.
 

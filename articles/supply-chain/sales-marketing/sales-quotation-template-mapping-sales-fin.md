@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: efe943f5c874ed041ce7984272ebc19f57cca6ef
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572581"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743371"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
 
@@ -33,7 +33,7 @@ ms.locfileid: "1572581"
 Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az ajánlatfejlécek és sorok közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
 
 > [!NOTE]
-> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 

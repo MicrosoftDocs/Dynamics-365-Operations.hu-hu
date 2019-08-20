@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555360"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743249"
 ---
 # <a name="service-orders"></a>Szervizrendelések   
 
@@ -76,7 +76,7 @@ A január hónapra generált szervizrendelések egyike lejár, mivel a munkát t
 
 ## <a name="post-from-projects"></a>Feladás projektekből
 
-A hetek utolsó napján a diszpécsernek minden projekthez csatolt szervizrendelést fel kell adnia. Emiatt a diszpécser megkeresi a megfelelő projektet a **Projektek** képernyő, és feladja a szervizrendeléseket, amelyek már befejeződtek. További információkkal kapcsolatban lásd: [Szervizrendelések feladása (osztályképernyő)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+A hetek utolsó napján a diszpécsernek minden projekthez csatolt szervizrendelést fel kell adnia. Emiatt a diszpécser megkeresi a megfelelő projektet a **Projektek** képernyő, és feladja a szervizrendeléseket, amelyek már befejeződtek. További információkkal kapcsolatban lásd: [Szervizrendelések feladása (osztályképernyő)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Szervizrendelések törlése
 
@@ -84,7 +84,7 @@ Az év második felében az egyik vevő úgy dönt, hogy a szervizlátogatások 
 
 ## <a name="see-also"></a>Lásd még
 
-[Szervizrendelések (képernyő)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Szervizrendelések (képernyő)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 
