@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557731"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863700"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
@@ -49,11 +49,11 @@ Ahogy a konszolidált jelentés a következő ábrán mutatja, ha a jelentési f
 
 Többszintű jelentési fastruktúrát szükség szerint akármennyi szinttel is létrehozhat. A következő ábrán egy többszintű jelentési fa definíció látható, amely világrégiónként görgetett összesítésekkel rendelkezik.
 
-![Többszintű jelentési fa definíció görgetett összesítésekkel régiónként](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Többszintű jelentési fa definíció görgetett összesítésekkel régiónként")
+![Többszintű jelentési fa definíció görgetett összesítésekkel régiónként](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Többszintű jelentési fa definíció görgetett összesítésekkel régiónként")
 
 A következő ábrán egy többszintű jelentési fa definíció látható, amely funkciónkénti görgetett összesítésekkel rendelkezik.
 
-![Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként")
+![Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként")
 
 ### <a name="viewing-companies-side-by-side"></a>Vállalatok megtekintése egymás mellett
 Számos vevő olyan jelentéseket részesít előnyben, ahol a vállalatok egymás mellett jelennek meg, és egy oszlop mutatja a konszolidált teljes összeget. Ez a formátum könnyen elérhető a jelentési fa létrehozása után. Az alábbiakban az átfogó lépések láthatók a vállalatok egymás mellett való megtekintéséhez a konszolidált pénzügyi kimutatásokon.
@@ -98,7 +98,7 @@ A jelentési fa definícióban adja meg a tulajdon százalékát a **Görgetett 
 > [!NOTE]
 > Ezt a tulajdonszázalékot bármely jelentési egység esetén alkalmazhatja, nem csak a vállalati szinten. 
 
-![Jelentési fa definíciós százalék használata](./media/Using-reporting%20tree-definition-percentage.png "Jelentési fa definíciós százalék használata")
+![Jelentési fa definíciós százalék használata](./media/Using-reporting-tree-definition-percentage.png "Jelentési fa definíciós százalék használata")
 
 A jelentés létrehozásakor a Contoso Németország jelentésében az értékesítés összegének 100%-a jelenik majd meg, és az összeg 80%-át allokálják és görgetik tovább az értékesítés konszolidált szintjére.
 

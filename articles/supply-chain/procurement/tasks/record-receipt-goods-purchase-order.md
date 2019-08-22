@@ -1,55 +1,51 @@
 ---
 title: Az áruk bevételezésének rögzítése a beszerzési rendelésen
-description: Ez az eljárás bemutatja Önnek, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésre.
+description: Ez a témakör azt ismerteti, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésnél.
 author: FrankDahl
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/19
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14d1d43479f9864d8fd5ed94a98a654e75eeedf0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3e81bb3fe95326636c28885d4decad69f841e3db
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551906"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844009"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Az áruk bevételezésének rögzítése a beszerzési rendelésen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja Önnek, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésre. Ezen kívül lehetséges az is, hogy rögzítsen árubeérkezést a raktárban, amit majd később rögzíthet a beszerzési rendelésre. A feladatot általában a beszerzési ügynök, vagy a fizetendő számla koordinátor végzi el. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. A példa tartalmazza az egyszerű beszerzési rendelés létrehozásához szükséges lépéseket, így feladat segédletként használhatja a folyamat során. Ha az eljárás alatt a saját adatait használta, az Árubeérkeztetés részfeladattal kellett volna kezdenie.
+Ez a témakör azt ismerteti, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésnél. Ezen kívül lehetséges az is, hogy rögzítsen árubeérkezést a raktárban, amit majd később rögzíthet a beszerzési rendelésre. A feladatot általában a beszerzési ügynök, vagy a fizetendő számla koordinátor végzi el. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. A példa tartalmazza az egyszerű beszerzési rendelés létrehozásához szükséges lépéseket, így feladat segédletként használhatja a folyamat során. Ha az eljárás alatt a saját adatait használja, az **Árubeérkeztetés** részfeladattal kell kezdenie.
 
 
 ## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a>Új beszerzési rendelés készítése áru bevételezéshez
-1. Ugorjon a Beszerzés és forrás > Beszerzési rendelés > Összes beszerzési rendelés pontra.
-2. Kattintson az Új lehetőségre.
-3. Írja be az „IS-101” értéket a Szállítói számla mezőbe.
-4. Kattintson az OK gombra.
-5. Adja meg a „M0001” értéket a Cikkszám mezőben.
-6. Adja meg az „5” értéket a Mennyiség mezőbe.
-7. A Művelet panelen kattintson a Beszerzés elemre.
-8. Kattintson a Megerősítés gombra.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Beszerzés és forrás > Beszerzési rendelések > Összes beszerzési rendelés** elemre.
+2. Válassza az **Új** lehetőséget.
+3. Adja meg az `US-101` értéket a **Szállítói számla** mezőben.
+4. Válassza ki az **OK** lehetőséget.
+5. Adja meg az `M0001` értéket a **Cikkszám** mezőben.
+6. Adja meg az `5` értéket a **Mennyiség** mezőben.
+7. A Műveleti ablaktáblán válassza ki a **Beszerzés** lehetőséget.
+8. Válassza ki a **Megerősítés** elemet.
 
 ## <a name="record-receipt-of-goods"></a>Áruk bevételezésének rögzítése
-1. A Művelet panelen kattintson a Bevételezés elemre.
-2. Kattintson a Termékbevételezés elemre.
-    * A Mennyiség mező segítségével kiválaszthat különböző lehetőségeket ahhoz a mennyiséghez, amelyet szeretne beérkeztetni. Például, ha a mennyiség korábban már regisztrálva lett a raktárban, akkor kiválaszthatja, hogy ez Regisztrált mennyiség.  Ebben a példában használja a Rendelt mennyiséget.   
-3. Írjon be egy értéket a Termék bevételezés mezőbe.
-    * Ezzel a mezővel lehet megadni olyan hivatkozást, ami bizonylatként lesz használva a termék bevételezési naplójához.  
-4. Bontsa ki a Sorok szakaszt.
-5. Állítsa a mennyiséget 4 értékre.
-    * Itt is manuálisan adhatja meg a mennyiséget, ami a rendelés minden sorához tartozó bevételezett mennyiség.  
-6. Csukja össze Sorok szakaszt.
-7. Kattintson az OK gombra.
-    * Az áruk most már beérkezettként szerepelnek a beszerzési rendelésen és egy termékbevételezési napló lett létrehozva ennek a dokumentálására. A Termék-bevételezési művelet segítségével áttekintheti a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett és mikor.  
+1. A Művelet ablaktáblán válassza ki a **Bevételezés** elemet.
+2. Válassza ki a **Termékbevételezés** elemet. A **Mennyiség** mező segítségével kiválaszthat különböző lehetőségeket ahhoz a mennyiséghez, amelyet szeretne beérkeztetni. Ha például a mennyiség korábban már regisztrálva lett a raktárban, akkor kiválaszthatja a **Regisztrált mennyiség** lehetőséget. Ebben a példában használja a **Megrendelt mennyiség** elemet.
+3. Bontsa ki az **Áttekintés** szakaszt.
+4. Adjon meg egy értéket a **Termékbevételezés** mezőben. Ezzel a mezővel lehet megadni olyan hivatkozást, ami bizonylatként lesz használva a termék bevételezési naplójához.  
+5. Bontsa ki a **Sorok** szakaszt.
+6. Állítsa a **Mennyiség** lehetőséget „4-re”. Itt is manuálisan adhatja meg a mennyiséget, ami a rendelés minden sorához tartozó bevételezett mennyiség.  
+7. Válassza ki az **OK** lehetőséget. Az áruk most már beérkezettként szerepelnek a beszerzési rendelésen és egy termékbevételezési napló lett létrehozva ennek a dokumentálására. A Termék-bevételezési művelet segítségével áttekintheti a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett és mikor.  
 

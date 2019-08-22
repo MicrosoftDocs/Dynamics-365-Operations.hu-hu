@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702772"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835142"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI tartalom
 
@@ -72,4 +72,4 @@ A **CustCollectionsBICrossCompany** Power BI-tartalom jelentést is tartalmaz, a
 | Beszedések állapota          | <ul><li>Vitatott</li><li>Nem tartotta a fizetési ígéretet</li><li>Fizetési ígéret</li><li>Beszedések állapotának részletei</li><li>Felszólítási állapot - összegek</li><li>Nyitott esetek</li><li>Nyitott tevékenységek</li></ul> |
 | Fizetési felszólítások         | <ul><li>Felszólító kód - összegek</li><li>Felszólító kód összegének részletei</li><li>Fizetési felszólító levelek összege vállalatok szerint</li><li>Fizetési felszólítások összege vevőcsoportok szerint</li><li>Fizetési felszólító levelek összege régió szerint</li></ul> |
 
-Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése ábrán látható.
+Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lásd: [Irányítópult létrehozása és konfigurálása](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése ábrán látható.

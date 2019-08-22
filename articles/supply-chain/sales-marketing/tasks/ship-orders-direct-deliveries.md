@@ -1,105 +1,84 @@
 ---
 title: Szállítási rendelés közvetlen kiszállításként
-description: Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait.
+description: Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5cd68aa1c15672c702db887c08ecf9b3d63f2618
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1bce2674b321475bc516724f74bac2d3a648e257
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557779"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843361"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Szállítási rendelés közvetlen kiszállításként
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
-
+Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Állítson be egyetlen rendelést közvetlen kiszállításhoz.
-1. Ugrás az összes értékesítési rendelésre.
-2. Kattintson az Új lehetőségre.
-3. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „US-001” számlát.  
-4. Kattintson az OK gombra.
-5. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „T0020” cikket.  
-6. Kattintson a Mentés gombra.
-7. A Művelet panelen kattintson az Értékesítési rendelés elemre.
-8. Kattintson a Közvetlen kiszállítás lehetőségre.
-    * A Szállítás létrehozás lap felsorolja az összes nyitott értékesítésirendelés-sort az értékesítési rendelésből másolva. Áttekintheti a rendelési részleteket, és ha szükséges módosíthatja az olyan részleteket, mint a beszerzési mennyiség és az árképzési feltételek a közvetlen kiszállítás létrehozása előtt.  
-9. Válassza ki az Igen lehetőséget az Összes belefoglalása mezőben.
-    * Ha az értékesítésirendelés-soroknak csupán egy részhalmazához szeretne közvetlen kiszállítást létrehozni, akkor ezeket egyenként válassza ki.  
-    * A Szállítószámla mező ekkor lehet üres, de akár már szerepelhet is benne egy szállítószám. Ha van alapértelmezett szállítói beállítva a termékhez (a kapcsolódó cikkfedezetnél), akkor az ez a szállító be lesz másolva a sorba. Ellenkező esetben a szállítót manuálisan kell megadni. Ebben a példában egy új szállítót választunk ki a következő lépésben, még akkor is, ha már be van írva egy.   
-10. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az 1001 számlát.  
-11. Kattintson az OK gombra.
-    * Az üzenet tájékoztat arról, hogy a beszerzési rendelés létrehozása megtörtént.   
-12. Bontsa ki a Soradatok szakaszt.
-13. Kattintson a Kiszállítás lapra.
-    * A Közvetlen kiszállítás mező értéke most Igen.  
-    * A közvetlen kiszállítás állapota: a beszerzési rendelés létrehozva.   
-14. A Művelet panelen kattintson az Általános elemre.
-15. Kattintson a Kapcsolódó rendelések lehetőségre.
-16. Kattintson a Beszerzési rendelés mezőben található hivatkozásra.
-17. Bontsa ki a Soradatok szakaszt.
-18. Kattintson a Cím fülre.
-    * Ne feledje, hogy a beszerzési rendelési sorhoz a szállítási cím a vevő szállítási címe, és nem a vállalat címe.  
-    * Ha az eredeti értékesítésirendelés-sor vagy a beszerzésirendelés-sor szállítási címét módosítja, akkor a megfelelő rendelési sor szállítási címe automatikusan frissülni fog.  
-19. Kattintson a Kiszállítás lapra.
-    * Ahogy az értékesítésirendelés-sor esetében, a társított beszerzésirendelés-sor típusa is Közvetlen kiszállítás értékre lesz állítva.  
-    * A beszerzésirendelés-sor szállítási dátuma és visszaigazolt szállítási dátuma rendre az eredeti értékesítésirendelés-sor kért bevételezési dátumára és visszaigazolt bevételezési dátumára lesznek állítva.   
-    * Ha ezek közül valamelyik dátumot frissíti a beszerzési sornál vagy az értékesítési sornál, akkor a megfelelő rendelésnél automatikusan frissülnek a dátumok.     
-    * Egy speciális társítás kapcsolja az eredeti értékesítési rendeléshez azon beszerzési rendeléseket, amelyek a beállítás szerint közvetlenül a vevőhöz szállítanak. Ezen társítás azzal a szabállyal jár, hogy az értékesítési rendelés szállítólevél-frissítését nem lehet az értékesítési rendelésből elvégezni, csak a beszerzési rendelés segítségével. A vevői számlázást azonban az értékesítési rendelésből kell elvégezni.  
-20. A Művelet panelen kattintson a Beszerzés elemre.
-21. Kattintson a Megerősítés gombra.
-22. Kattintson az OK gombra.
-23. A Művelet panelen kattintson a Bevételezés elemre.
-24. Kattintson a Termékbevételezés elemre.
-25. Írjon be egy értéket a Termékbevételezés mezőbe.
-26. Kattintson az OK gombra.
-27. A Művelet panelen kattintson az Általános elemre.
-28. Kattintson a Kapcsolódó rendelések lehetőségre.
-29. A listában jelölje meg a kiválasztott sort.
-    * Miután a beszerzési rendelés bevételezett állapotúre frissült, vagyis amikor a szállító kiszállította az árut a vevő címére, az eredeti értékesítési rendelés állapota automatikusan Leszállítottra frissül  
-    * Az értékesítési rendelés most már számlázható.    
-30. Kattintson az OK gombra.
-31. Zárja be a lapot.
-32. Kattintson az OK gombra.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Kintlévőségek > Megrendelések > Minden értékesítési megrendelés** lehetőségre.
+2. Válassza az **Új** lehetőséget.
+3. A **Vevőkód** mezőben adjon meg vagy válasszon ki egy értéket, majd nyomja meg az **OK** gombot
+4. Írja be vagy válassza ki a **Cikkszámot** és a **Webhely** mező értékét, majd válassza ki a **Mentés** parancsot.
+5. A Műveleti ablaktáblán válassza ki az **Értékesítési rendelés** lehetőséget, majd a **Közvetlen kiszállítás** elemet. A Szállítás létrehozás lap felsorolja az összes nyitott értékesítésirendelés-sort az értékesítési rendelésből másolva. Áttekintheti a rendelési részleteket, és ha szükséges módosíthatja az olyan részleteket, mint a beszerzési mennyiség és az árképzési feltételek a közvetlen kiszállítás létrehozása előtt.  
+6. Válassza ki az **Igen** lehetőséget az **Összes belefoglalása** mezőben.
+    - Ha az értékesítésirendelés-soroknak csupán egy részhalmazához szeretne közvetlen kiszállítást létrehozni, akkor ezeket egyenként válassza ki.  
+    - A **Szállítószámla** mező ekkor lehet üres, de szerepelhet is benne egy szállítószám. Ha van alapértelmezett szállítói beállítva a termékhez (a kapcsolódó cikkfedezetnél), akkor az ez a szállító be lesz másolva a sorba. Ellenkező esetben a szállítót manuálisan kell megadni. Ebben a példában egy új szállítót választunk ki a következő lépésben, még akkor is, ha már be van írva egy.   
+7. A **Szállítói számla** mezőben adjon meg vagy válasszon ki egy értéket, majd nyomja meg az **OK** gombot. Az üzenet tájékoztat arról, hogy a beszerzési rendelés létrehozása megtörtént.   
+8. Bontsa ki a **Sorrészletek** szakaszt.
+9. Válassza ki a **Szállítás** lapot, és ellenőrizze, hogy a **Közvetlen kiszállítás** mező értéke **Igen**-e.
+10. A Művelet ablaktáblán válassza ki az **Általános** elemet.
+11. Válassza ki a **Tervezett rendelések** lehetőséget.
+12. Válassza ki a **Beszerzési rendelés** mezőben található hivatkozást.
+13. Bontsa ki a **Soradatok** szakaszt, és válassza ki a **Cím** lapot.
+    - A beszerzési rendelési sorhoz a szállítási cím a vevő szállítási címe, és nem a vállalat címe.  
+    - Ha az eredeti értékesítésirendelés-sor vagy a beszerzésirendelés-sor szállítási címét módosítja, akkor a megfelelő rendelési sor szállítási címe automatikusan frissülni fog.  
+14. Válassza ki a **Szállítás** lapot.
+    - Ahogy az értékesítésirendelés-sor esetében, a társított beszerzésirendelés-sor típusa is Közvetlen kiszállítás értékre lesz állítva.  
+    - A beszerzésirendelés-sor szállítási dátuma és visszaigazolt szállítási dátuma rendre az eredeti értékesítésirendelés-sor kért bevételezési dátumára és visszaigazolt bevételezési dátumára lesznek állítva.   
+    - Ha ezek közül valamelyik dátumot frissíti a beszerzési sornál vagy az értékesítési sornál, akkor a megfelelő rendelésnél automatikusan frissülnek a dátumok.     
+    - Egy speciális társítás kapcsolja az eredeti értékesítési rendeléshez azokat a beszerzési rendeléseket, amelyek a beállítás szerint közvetlenül a vevőhöz szállítanak. Ezen társítás azzal a szabállyal jár, hogy az értékesítési rendelés szállítólevél-frissítését nem lehet az értékesítési rendelésből elvégezni, csak a beszerzési rendelés segítségével. A vevői számlázást azonban az értékesítési rendelésből kell elvégezni.  
+15. A Műveleti ablaktáblán válassza ki a **Beszerzés** lehetőséget.
+16. Válassza ki a **Visszaigazolás** lehetőséget.
+17. Válassza ki az **OK** lehetőséget.
+18. A Művelet ablaktáblán válassza ki a **Bevételezés** elemet.
+19. Válassza ki a **Termékbevételezés** elemet.
+20. Írjon be egy értéket a **Termékbevételezés** mezőbe.
+21. Válassza ki az **OK** lehetőséget.
+22. A Művelet ablaktáblán válassza ki az **Általános** elemet.
+23. Válassza ki a **Kapcsolódó rendelések** lehetőséget, és jelölje ki a kívánt rekordot.
+    - Miután a beszerzési rendelés bevételezett állapotúre frissült, vagyis amikor a szállító kiszállította az árut a vevő címére, az eredeti értékesítési rendelés állapota automatikusan Leszállítottra frissül  
+    - Az értékesítési rendelés most már számlázható.    
+24. Válassza ki az **OK** lehetőséget.
+25. Zárja be a lapot.
+26. Válassza ki az **OK** lehetőséget. Zárja be az oldalakat, és térjen vissza a kezdőlapra.
 
 ## <a name="create-direct-deliveries-from-the-workbench"></a>Közvetlen kiszállítások létrehozása a munkaterületről
-1. Zárja be a lapot.
-2. Zárja be a lapot.
-3. Ugrás az összes értékesítési rendelésre.
-4. Kattintson az Új lehetőségre.
-5. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-6. Kattintson az OK gombra.
-7. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-8. Bontsa ki a Soradatok szakaszt.
-9. Kattintson a Kiszállítás lapra.
-    * Ahelyett, hogy létrehozna egy közvetlen kiszállítást az értékesítési rendelés feldolgozásának a részeként, mint az előző eljárásban, most választhatja azt, hogy átadja ezt a feladatot egy beszerzési szakértőnek. Ahhoz, hogy az értékesítésirendelés-sor közvetlen kiszállítás kezelési folyamtának része legyen, be kell jelölni a közvetlen kiszállítást a sornál.  
-10. Válassza az Igen lehetőséget a Közvetlen kiszállítás mezőben.
-    *   Ha a cikkhez már alapértelmezés szerint a közvetlen kiszállítás van beállítva, akkor a mező értéke automatikusan Igen lesz a rendelésisor-bejegyzésnél. A Közvetlen kiszállítás lehetőséget Igen értékre állítva, és egy alapértelmezett közvetlen kiszállítási raktár kiválasztásával beállíthatja egy cikkhez a közvetlen kiszállítást a kiadott termék alaptermékénél.  
-    * Mivel a beszerzési rendelést még nem hozták létre, a Közvetlen szállítás állapota közvetlen szállítás.   
-11. Zárja be a lapot.
-12. Zárja be a lapot.
-13. Lépjen a Közvetlen kiszállítás részre.
-    * A Közvetlen kiszállítás lap munkaterületként funkcionál, és lehetővé teszi a beszerzési ügynökök számára az összes, közvetlen kiszállításra állított értékesítési rendelés áttekintését, így lehetővé teszi számukra, hogy létrehozzák a megfelelő beszerzési rendeléseket. Továbbá a Visszaigazolás és Kiszállítás lapokon megtekinthetik a nyitott közvetlen kiszállítású rendeléseket és a visszaigazolt rendeléseket.   
-14. Kattintson a Közvetlen kiszállítású rendelés létrehozása lehetőségre.
-15. Kattintson a Visszaigazolás fülre.
-    * Miután létrehozott egy közvetlen kiszállítású rendelést, automatikusan a Visszaigazolás lapra került. Közvetlenül erről a lapról is megerősítheti a rendelést. Amint megtörténik a beszerzés megerősítése, automatikusan átkerül a Szállítás lapra, ahonnan nyilvántartásba vehető a bevételezése.  
+1. Ugorjon a **Navigáció > Modulok > Kintlévőségek > Megrendelések > Minden értékesítési megrendelés** lehetőségre.
+2. Válassza az **Új** lehetőséget.
+3. A **Vevőkód** mezőben adjon meg vagy válasszon ki egy értéket, majd nyomja meg az **OK** gombot.
+4. Adjon meg vagy válasszon ki egy értéket a **Cikkszám** és a **hely** mezőben.
+5. Bontsa ki a **Soradatok** szakaszt, majd válassza ki a **Szállítás** lapot. Ahelyett, hogy létrehozna egy közvetlen kiszállítást az értékesítési rendelés feldolgozásának a részeként, mint az előző eljárásban, most választhatja azt, hogy átadja ezt a feladatot egy beszerzési szakértőnek. Ahhoz, hogy az értékesítésirendelés-sor közvetlen kiszállítás kezelési folyamtának része legyen, be kell jelölni a közvetlen kiszállítást a sornál.  
+6. Válassza ki az **Igen** lehetőséget a **Közvetlen kiszállítás** mezőben.
+    - Ha a cikkhez már alapértelmezés szerint a közvetlen kiszállítás van beállítva, akkor a mező értéke automatikusan Igen lesz a rendelésisor-bejegyzésnél. A Közvetlen kiszállítás lehetőséget Igen értékre állítva, és egy alapértelmezett közvetlen kiszállítási raktár kiválasztásával beállíthatja egy cikkhez a közvetlen kiszállítást a kiadott termék alaptermékénél.  
+    - Mivel a beszerzési rendelést még nem hozták létre, a Közvetlen kiszállítás állapota „közvetlen kiszállítással”.   
+7. Válassza a **Mentés** lehetőséget.
+8. Zárja be az oldalakat, és térjen vissza a kezdőlapra.
+9. Írja be a keresősávba a következőt: `Direct delivery`.
+    - A Közvetlen kiszállítás lap munkaterületként funkcionál, és lehetővé teszi a beszerzési ügynökök számára az összes, közvetlen kiszállításra állított értékesítési rendelés áttekintését, így lehetővé teszi számukra, hogy létrehozzák a megfelelő beszerzési rendeléseket. Továbbá a Visszaigazolás és Kiszállítás lapokon megtekinthetik a nyitott közvetlen kiszállítású rendeléseket és a visszaigazolt rendeléseket.  
+    - Miután létrehozott egy közvetlen kiszállítású rendelést, automatikusan a Visszaigazolás lapra került. Közvetlenül erről a lapról is megerősítheti a rendelést. Amint megtörténik a beszerzés megerősítése, automatikusan átkerül a Szállítás lapra, ahonnan nyilvántartásba vehető a bevételezése.  
 

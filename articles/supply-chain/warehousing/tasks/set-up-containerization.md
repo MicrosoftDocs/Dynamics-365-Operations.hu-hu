@@ -1,118 +1,83 @@
 ---
 title: Tárolóra bontás beállítása
-description: Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben.
+description: Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/19
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 56fc6adc2a0eeb5b824089ff4b1b781f3a99a34c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ba435ee145a8516391d7864bdfe338b0f3862f49
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558056"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1847207"
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben. Az automatizált tárolóra bontás folyamat tárolókat és a szállítmányok kitárolási munkáját hozza létre, amikor a rendszer feldolgozza a hullámot és amikor a munkasorokat a tárolókhoz illeszkedő mennyiségekre lehet felosztani. Ez megkönnyíti a raktári dolgozóknak a cikkek egyenesen a kiválasztott tárolóba történő kitárolását. A kézi csomagolási folyamathoz képest olyan feladatok, mint például a tárolók létrehozása, a cikkek társítása, és a rendszer által automatizált tárolók lezárása. Ez az eljárás az USMF bemutató vállalatot használja, amelyet a raktárvezető végez.
+Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben. Az automatizált tárolóra bontás folyamat tárolókat és a szállítmányok kitárolási munkáját hozza létre, amikor a rendszer feldolgozza a hullámot és amikor a munkasorokat a tárolókhoz illeszkedő mennyiségekre lehet felosztani. Ez megkönnyíti a raktári dolgozóknak a cikkek egyenesen a kiválasztott tárolóba történő kitárolását. A kézi csomagolási folyamathoz képest olyan feladatok, mint például a tárolók létrehozása, a cikkek társítása, és a rendszer által automatizált tárolók lezárása. Ez az eljárás az USMF bemutató vállalatot használja, amelyet a raktárvezető végez.
 
 
 ## <a name="set-up-a-wave-template"></a>Állítsa be a hullámsablon lehetőséget
-1. Ugorjon a Raktárkezelés > Beállítás > Hullám > Hullámsablonok pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Hullámsablon mezőbe.
-4. Írjon be egy értéket a Hullámsablon leírása mezőbe.
-5. A Hely mezőben adjon meg vagy válasszon ki egy értéket.
-6. A Raktár mezőben adjon meg vagy válasszon ki egy értéket.
-7. Bontsa ki a Módszerek szakaszt.
-    * A kiválasztott módszerek ablaktábláján megtalálhatóak a kiválasztott hullámsablon típusára vonatkozó módszerek. A hullámsablonnak tartalmaznia kell a tárolóra bontás módszert.  
-8. Keresse meg és jelölje ki a kívánt rekordot a listán.
-9. A Hullámlépés kódja mezőben írjon be egy értéket.
-    * Adjon meg egy hullámlépéskódot a hozzáadott módra vonatkozóan, amely bármilyen kód lehet. Egynél többször is hozzáadhatja a módszert, illetve különböző hullámlépéskódokat társíthat. Ehhez válassza ki a Megismételhető ennél a metódusnál a Hullámfeldolgozási módokban lapot.  
-10. Kattintson a Mentés gombra.
-11. Zárja be a lapot.
+1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Hullámok > Hullámsablonok** lehetőségre.
+2. Válassza az **Új** lehetőséget.
+3. Adjon meg egy értéket a **Hullámsablon neve** mezőben.
+4. Adjon meg egy értéket a **Hullámsablon leírása** mezőben.
+5. A **Hely** mezőben adjon meg vagy válasszon ki egy értéket.
+6. A **Raktár** mezőben adjon meg vagy válasszon ki egy értéket.
+7. Bontsa ki a **Módszerek** szakaszt. A **Kiválasztott módszerek** ablaktábláján megtalálhatóak a kiválasztott hullámsablon típusára vonatkozó módszerek. A hullámsablonnak tartalmaznia kell a tárolóra bontás módszert.  
+8. A **Hullámlépés kódja** mezőben írjon be egy értéket. Adjon meg egy hullámlépéskódot a hozzáadott módra vonatkozóan, amely bármilyen kód lehet. Egynél többször is hozzáadhatja a módszert, illetve különböző hullámlépéskódokat társíthat. Ehhez válassza ki a **Megismételhető ennél a metódusnál** lehetőséget a **Hullámfeldolgozási metódusok** lapon.  
+9. Válassza a **Mentés** lehetőséget.
+10. Zárja be a lapot.
 
 ## <a name="set-up-a-container-type"></a>Tárolótípus beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolótípusok pontra.
-    * Meghatározhatja a tárolóit a Tárolótípusok lapon. Konfigurálhatja a tárolók fizikai dimenzióit, többek között a csomagolási súlyát, az össztömegét, a maximális térfogatát, a hosszúságát, a szélességét és a magasságát. Ebben a példában három különböző méretű doboz található.  
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Tároló típuskódja mezőbe.
-4. Adjon meg egy számot a Tárasúly mezőben.
-5. Adjon meg egy számot a Maximális súly mezőben.
-6. A Térfogat mezőben adjon meg egy számot.
-7. Adjon meg egy számot a Hosszúság mezőben.
-8. Adjon meg egy számot a Szélesség mezőben.
-9. Adjon meg egy számot a Magasság mezőben.
-10. A Leírás mezőben adjon meg egy értéket.
-11. Kattintson a Mentés gombra.
-12. Kattintson az Új lehetőségre.
-13. Írjon be egy értéket a Tároló típuskódja mezőbe.
-14. A Leírás mezőben adjon meg egy értéket.
-15. Adjon meg egy számot a Tárasúly mezőben.
-16. Adjon meg egy számot a Maximális súly mezőben.
-17. A Térfogat mezőben adjon meg egy számot.
-18. Adjon meg egy számot a Hosszúság mezőben.
-19. Adjon meg egy számot a Szélesség mezőben.
-20. Adjon meg egy számot a Magasság mezőben.
-21. Kattintson a Mentés gombra.
-22. Kattintson az Új lehetőségre.
-23. Írjon be egy értéket a Tároló típuskódja mezőbe.
-24. A Leírás mezőben adjon meg egy értéket.
-25. Adjon meg egy számot a Tárasúly mezőben.
-26. Adjon meg egy számot a Maximális súly mezőben.
-27. A Térfogat mezőben adjon meg egy számot.
-28. Adjon meg egy számot a Hosszúság mezőben.
-29. Adjon meg egy számot a Szélesség mezőben.
-30. Adjon meg egy számot a Magasság mezőben.
-31. Kattintson a Mentés gombra.
-32. Zárja be a lapot.
+1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Tárolók > Tárolótípusok** lehetőségre. Meghatározhatja a tárolóit a **Tárolótípusok** lapon. Konfigurálhatja a tárolók fizikai dimenzióit, többek között a csomagolási súlyát, az össztömegét, a maximális térfogatát, a hosszúságát, a szélességét és a magasságát. Ebben a példában három különböző méretű doboz található.  
+2. Válassza az **Új** lehetőséget.
+3. Adjon meg egy értéket a **Tároló típuskódja** mezőben.
+4. Adjon meg egy számot a **Tárasúly** mezőben.
+5. Adjon meg egy számot a **Maximális súly** mezőben.
+6. A **Térfogat** mezőben adjon meg egy számot.
+7. Adjon meg egy számot a **Hosszúság** mezőben.
+8. Adjon meg egy számot a **Szélesség** mezőben.
+9. Adjon meg egy számot a **Magasság** mezőben.
+10. Írjon egy értéket a **Leírás** mezőbe.
+11. Válassza a **Mentés** lehetőséget.
+13. Ismételje meg a 2–11. lépést két alkalommal a három teljes tárolótípus létrehozásához.
+14. Zárja be a lapot.
 
 ## <a name="set-up-a-container-group"></a>Tárolócsoport beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolócsoport azonosítója pontra.
-2. Kattintson az Új lehetőségre.
-    * A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
-3. Írjon be egy értéket a Tárolócsoport azonosítója mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson az Új elemre.
-6. A listában jelölje meg a kiválasztott sort.
-7. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-8. Kattintson az Új elemre.
-9. A listában jelölje meg a kiválasztott sort.
-10. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-11. Kattintson az Új elemre.
-12. A listában jelölje meg a kiválasztott sort.
-13. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-14. Kattintson a Mentés gombra.
-15. Zárja be a lapot.
+1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Tárolók > Tárolócsoportok** lehetőségre.
+2. A műveleti ablaktáblán válassza ki az **Új** elemet. A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
+3. Adja meg a korábban létrehozott értéket a **Tárolócsoport azonosítója** mezőben.
+4. Írjon egy értéket a **Leírás mezőbe**.
+5. Ismételje meg a 2–4. lépést a korábban létrehozott mindhárom típusú tároló esetében.
+6. Válassza a **Mentés** lehetőséget.
+7. Zárja be a lapot.
 
 ## <a name="set-up-a-container-build-template"></a>Tárolóépítési sablon beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolóépítési sablonok pontra.
-2. Kattintson az Új lehetőségre.
-    * A tárolóépítési sablon azon alapul, amelyen a tároló-létrehozási folyamatait elvégzik. Minden egyes tárolóépítési sablon meghatároz egy hullámsablon által használandó tároló-létrehozási folyamatot. A szerkesztési lekérdezés beállítással meghatározhatja azokat a feltételeket, amelyek alapján a kiválasztott sablonokat feldolgozza. Például az is lehetséges, hogy csak a Tárolóra bontást futtatja a bizonyos vevőkre, a termékekre vagy a raktárakra vonatkozóan, vagy hozzáadhatja a sablonokhoz a megfeleltetési lekérdezési tartományokat. A Hullámlépéskód mező a tárolóépítési sablon a hullámsablonban található lépésekhez történő kapcsolódásának módját jelenti. Amikor végrehajtja a rendszer a hullámot, meghatározza, hogy a rendszer mely tárolóépítési sablon(ok)at használja fel a Tárolóra bontás folyamatának kezdeményezésére. Az Alap lekérdezéstípusok mezőben meghatározza a becsomagolni kívánt terméket és a szűrőlekérdezés alapját.  
-3. A listában jelölje meg a kiválasztott sort.
-4. Írjon be egy értéket a Tárolósablon azonosítója mezőbe.
-5. A Tárolócsoport azonosítója mezőben adjon meg, vagy válasszon ki egy értéket.
-6. A Hullámlépés kódja mezőben írjon be egy értéket.
-7. Jelölje be a Kitárolások szétosztásának engedélyezése jelölőnégyzetet.
-8. Kattintson a Mentés gombra.
-9. Kattintson a Tárolóvegyesítési megszorítások lehetőségre.
-    * A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a Cikkszám mezőt, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
-10. Kattintson az Új lehetőségre.
-11. Válasszon ki egy lehetőséget a Tábla mezőben.
-12. A Mezőválasztás mezőben adjon meg vagy válasszon ki egy értéket.
-13. Kattintson az OK gombra.
+1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Tárolók > Tárolóépítési sablonok** lehetőségre.
+2. Válassza az **Új** lehetőséget. A tárolóépítési sablon azon alapul, amelyen a tároló-létrehozási folyamatait elvégzik. Minden egyes tárolóépítési sablon meghatároz egy hullámsablon által használandó tároló-létrehozási folyamatot. A **Szerkesztési lekérdezés** beállítással meghatározhatja azokat a feltételeket, amelyek alapján a kiválasztott sablonokat feldolgozza. Például az is lehetséges, hogy csak a Tárolóra bontást futtatja a bizonyos vevőkre, a termékekre vagy a raktárakra vonatkozóan, vagy hozzáadhatja a sablonokhoz a megfeleltetési lekérdezési tartományokat. A **Hullámlépéskód** mező a tárolóépítési sablon a hullámsablonban található lépésekhez történő kapcsolódásának módját jelenti. Amikor végrehajtja a rendszer a hullámot, meghatározza, hogy a rendszer mely tárolóépítési sablon(ok)at használja fel a Tárolóra bontás folyamatának kezdeményezésére. Az Alap lekérdezéstípusok mezőben meghatározza a becsomagolni kívánt terméket és a szűrőlekérdezés alapját. 
+3. Adjon meg egy értéket a **Tárolósablon azonosítója** mezőben.
+4. A **Tárolócsoport azonosítója** mezőben adjon meg vagy válasszon ki egy értéket.
+5. A **Hullámlépés kódja** mezőben írjon be egy értéket.
+6. Jelölje be a **Kitárolások szétosztásának engedélyezése** jelölőnégyzetet.
+7. Válassza a **Mentés** lehetőséget.
+8. Válassza ki a **Tárolóvegyesítési megszorítások** lehetőséget. A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a **Cikkszám mezőt**, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
+9. Válassza az **Új** lehetőséget.
+10. Válasszon ki egy lehetőséget a **Tábla** mezőben.
+11. A **Mezőválasztás** mezőben adjon meg vagy válasszon ki egy értéket.
+12. Válassza ki az **OK** lehetőséget.
 

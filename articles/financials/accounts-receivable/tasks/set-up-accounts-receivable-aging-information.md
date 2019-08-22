@@ -3,25 +3,25 @@ title: Kinnlevőségek korosítási adatainak beállítás és létrehozása
 description: Az útmutató segít a korosítási időszak definíciójának, vevői egyenlegek korosításának beállításában és az egyenlegek megtekintésében a Gyűjtések oldal Korosított egyenleg listájában.
 author: mikefalkner
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fd8738cfd3466464c9fec1760e9a369ff3a4a67
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77b5dd5feb16cc3bd6d64b6520cc47087c5b5224
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568235"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834367"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Kinnlevőségek korosítási adatainak beállítás és létrehozása
 
@@ -31,34 +31,31 @@ Az útmutató segít a korosítási időszak definíciójának, vevői egyenlege
 
 
 ## <a name="create-an-aging-period-definition"></a>Korosítási időszak definícióinak létrehozása.
-1. Ugorjon a Követel és beszedések > Beállítás > Korosítási időszak definíciók pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Korosítási időszak meghatározása mezőbe.
-4. Írjon egy értéket a „Leírás” mezőbe.
-5. Új korosítási időszak beszúrásához kattintson a Hozzáadás hivatkozásra.
-6. A Periódus mezőbe írja be a leírást a korosodási jelentések megjelenítéséhez.
-7. Az Egység mezőben adjon meg egy számot.
-8. Egy lehetőség kiválasztása a Intervallum mezőben.
-    * A Főkönyvi időszak megegyezik a főkönyvi naptári időszakkal. Napok, hetek, hónapok, negyedévek és évek határozzák meg a dátumtartományok típusának méretét. A Korlátlan lehetőség kiválasztja az összes tranzakció előtti vagy utáni periódust, attól függően, hogy ez az első vagy az utolsó periódus.  
-9. Egy lehetőség kiválasztása a Korosítás jelölője mezőben.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Követelések és beszedések > Beállítás > Korosítási időszak definíciói** lehetőségre.
+2. Kattintson az **Új** elemre.
+3. Írjon be egy értéket a **Korosítási időszak definíciója** mezőbe.
+4. Írjon egy értéket a **Leírás** mezőbe.
+5. Új korosítási időszak beszúrásához kattintson a **Hozzáadás alá** hivatkozásra.
+6. Az **Időszak** mezőben adja meg a leírást a korosodási jelentések megjelenítéséhez.
+7. Az **Egység** mezőben adjon meg egy számot.
+8. Válasszon ki egy lehetőséget az **Intervallum** mezőben. A Főkönyvi időszak megegyezik a főkönyvi naptári időszakkal. Napok, hetek, hónapok, negyedévek és évek határozzák meg a dátumtartományok típusának méretét. A Korlátlan lehetőség kiválasztja az összes tranzakció előtti vagy utáni periódust, attól függően, hogy ez az első vagy az utolsó periódus.  
+9. Válasszon ki egy lehetőséget a **Korosítás jelölője** mezőben.
 10. A rács tetején válassza ki a periódust. Frissítse a leírást a korosítási időszak definíciójában a legrégebbi periódus leírásához
-11. A Periódus mezőbe írja be a korosítási időszak új leírását.
+11. Az **Időszak** mezőben adja meg a korosítási időszak új leírását.
 12. Zárja be a lapot.
 
 ## <a name="age-the-balances"></a>Korosítsa az egyenlegeket
-1. Ugorjon a Követelések és beszedések > Időszakos feladatok > Vevői egyenlegek korosítása pontra.
-2. A Korosítási időszak definíciója mezőben válassza ki a létrehozott korosítási időszak definícióját.
-    * Egy aktív pillanatképet rendelhet minden egyes korosítási időszak definíciójához.  
-    * Alapértelmezés szerint az összes vevő feldolgozásra kerül. Ezzel a választással egyéni gyűjtéseket számolhat vevőgyűjtőhöz.  
-    * Válassza ki a dátumot a tranzakcióból, amelyet a korosításhoz fog használni.  
-    * Korosítás "kezdete" dátum kiválasztása. Az alapértelmezett érték a mai nap, de ez módosítható a Kiválasztott dátum értékére, ilyenkor tetszés szerinti dátumot adhat meg. Kötegfolyamathoz használja a mai dátumot.  
-3. Bővítse ki a vállalati tartományt. Kiválaszthatja a vállalatokat, amelyek bekerülnek pillanatképbe. A jelenlegi vállalat van kiválasztva az alapértelmezett beállítások szerint.
-4. A pillanatkép elkészítéséhez kattintson az Ok gombra. Eltart egy ideig, várjon, amíg a csúszka eltűnik, nézze meg érkezett-e üzenet az üzenetközpontba.
+1. Ugorjon a **Követelések és beszedések > Időszakos feladatok > Vevői egyenlegek korosítása** elemre.
+2. A **Korosítási időszak definíciója** mezőben válassza ki a létrehozott korosítási időszak definícióját.
+    + Egy aktív pillanatképet rendelhet minden egyes korosítási időszak definíciójához.  
+    + Alapértelmezés szerint az összes vevő feldolgozásra kerül. Ezzel a választással egyéni gyűjtéseket számolhat vevőgyűjtőhöz.  
+    + Válassza ki a dátumot a tranzakcióból, amelyet a korosításhoz fog használni.  
+    + Korosítás "kezdete" dátum kiválasztása. Az alapértelmezett érték a mai nap, de ez módosítható a Kiválasztott dátum értékére, ilyenkor tetszés szerinti dátumot adhat meg. Kötegfolyamathoz használja a mai dátumot.  
+3. Bővítse ki a **Vállalati** tartományt. Kiválaszthatja a vállalatokat, amelyek bekerülnek pillanatképbe. A jelenlegi vállalat van kiválasztva az alapértelmezett beállítások szerint.
+4. A pillanatkép elkészítéséhez kattintson az **Ok** gombra. Eltart egy ideig, várjon, amíg a csúszka eltűnik, nézze meg érkezett-e üzenet az üzenetközpontba.
 
 ## <a name="view-the-balances-on-the-aged-balances-list-and-on-the-collection-page"></a>A Gyűjtések oldalon a Korosított egyenlegek lista egyenlegeinek megtekintése
-1. Ugorjon a Hitelezés és beszedés > Beszedés > Korosított egyenlegek pontra.
-    * A lista oldal a vevő egyenlegeit mutatja. A korosítási ikon a legrégebbi tranzakció korosítási időszakát jelzi.  
+1. Ugorjon a **Hitelezés és beszedés > Beszedés > Korosított egyenlegek** elemre. A lista oldal a vevő egyenlegeit mutatja. A korosítási ikon a legrégebbi tranzakció korosítási időszakát jelzi.  
 2. Válasszon egy egyenleggel rendelkező vevőt.
-3. Bontsa ki a Korosítás adatterületet a korosított egyenleg megtekintéséhez.
-    * A korosítási időszak definíciója az adatterülethez a paraméterek között meghatározott alapértelmezett korosítási időszak definíciójából származik. A Gyűjtés menü segítségével megváltoztathatja.  
+3. Bontsa ki a **Korosítás adatterületet** a korosított egyenleg megtekintéséhez. A korosítási időszak definíciója az adatterülethez a paraméterek között meghatározott alapértelmezett korosítási időszak definíciójából származik. A Gyűjtés menü segítségével megváltoztathatja.  
 

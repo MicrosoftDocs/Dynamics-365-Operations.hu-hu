@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be23b99ddc224328cf067fe0bf36be93fcef4337
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561462"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846033"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Projektszerződések és projektek közvetlen szinkronizálása a Project Service Automation alkalmazásból a Finance and Operations alkalmazásba
 
@@ -94,8 +94,8 @@ Project Service Automation és Finance and Operations közötti integrációs me
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
 - Projektek és projektszerződések szinkronizálása előtt szinkronizálnia kell a fiókokat.
-- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_organizationalunits**, **msdyn\_name \[Name\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) részt.
-- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_projects**, **msdynce\_projectnumber \[Project Number\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) részt.
+- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_organizationalunits**, **msdyn\_name \[Name\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/powerapps/administrator/data-integrator) részt.
+- A kapcsolatbeállításában adjon hozzá egy integráció kulcsmező hozzárendelést a következőhöz: **msdyn\_projects**, **msdynce\_projectnumber \[Project Number\]**. Előfordulhat, hogy először egy projektet kell hozzáadnia a kapcsolatkészlethez. További információkért tekintse át az [Adatok integrálása a Common Data Service for Apps alkalmazásba](https://docs.microsoft.com/powerapps/administrator/data-integrator) részt.
 - **SourceDataID** projekt szerződések és projektek frissíthetők egy másik értékre, vagy eltávolíthatók a hozzárendelésből. Az alapértelmezett sablonérték **Project Service Automation**.
 - A **PaymentTerms** hozzárendelést frissíteni kell, hogy az megfeleljenek Finance and Operations alkalmazásban érvényes fizetési feltételeknek. A hozzárendelést el is távolíthatja a projektfeladatból. Az alapértelmezett értékhozzárendelés alapértelmezett értékeket tartalmaz a bemutató adatokból. Az alábbi táblázat bemutatja a Project Service Automation értékeit.
 

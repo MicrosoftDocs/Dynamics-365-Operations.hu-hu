@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625872"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849509"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -215,12 +215,12 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 | Ma () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátum értékként jeleníti meg. | |
 | NULLDATE () | **Nulla** dátumértéket jelenik meg. | |
 | NULLDATETIME () | **Null** dátum/idő értéket ad vissza. | |
-| DATETIMEFORMAT (dátum és idő, a formátum) | A megadott dátum/idő értéket a megadott formátumban karakterlánccá alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), „nn-hh-éééé”)** a jelenlegi Finance and Operations alkalmazáskiszogáló dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
-| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum/idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| DATETIMEFORMAT (dátum és idő, a formátum) | A megadott dátum/idő értéket a megadott formátumban karakterlánccá alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), „nn-hh-éééé”)** a jelenlegi Finance and Operations alkalmazáskiszogáló dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
+| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum/idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
 | SESSIONTODAY () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátumértékként adja vissza. | |
 | SESSIONNOW () | A jelenlegi Finance and Operations munkamenet dátumát és időpontját dátum/idő értékként adja vissza. | |
 | DATEFORMAT (dátum, formátum) | A megadott dátumot karakterlánc formájában adja vissza a megadott formátumban. | **DATEFORMAT (SESSIONTODAY (), "nn-hh-éééé")** a jelenlegi Finance and Operations munkamenet dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
-| DATEFORMAT (dátum, formátum, területi beállítások) | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| DATEFORMAT (dátum, formátum, területi beállítások) | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
 | DAYOFYEAR (dátum) | Január 1. és a megadott dátum közötti napok számát adja vissza egész szám formátumban. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** a **61** értéket adja vissza. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** a **1** értéket adja vissza. |
 | DAYS (1. dátum, 2. dátum) | Az első megadott dátum és a második megadott dátum közötti napok számát adja vissza. Pozitív értéket ad vissza, ha az első dátum későbbi, mint a második dátum, **0**-t (nullát) ad vissza, ha az első dátum megegyezik a második dátummal, vagy pedig negatív értéket ad vissza, ha az első dátum korábbi a második dátumnál. | A **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "ééééHHnn"), "ééééHHnn"))** **-1**-et ad vissza. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>SZÁMFORMÁTUM (szám, formátum)</td>
-<td>A megadott szám karakterlánc formáját adja vissza a megadott formátumban. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
+<td>A megadott szám karakterlánc formáját adja vissza a megadott formátumban. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
 <td>Az EN-US kultúrában a <strong>SZÁMFORMÁTUM (0.45, &quot;p&quot;)</strong> a következőt adja vissza: <strong>&quot;45.00 %&quot;</strong>. <strong>SZÁMFORMÁTUM (10.45, &quot;#&quot;)</strong> a következőt adja vissza: <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (szám, formátum, kulturális környezet)</td>
-<td>A megadott számot parancsfájl formájában adja vissza a megadott formátum és területi beállítások alapján. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">szokásos</a> és <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">egyéni</a>.).</td>
+<td>A megadott számot parancsfájl formájában adja vissza a megadott formátum és területi beállítások alapján. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">szokásos</a> és <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">egyéni</a>.).</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> visszaadja a <strong>3,33</strong> értéket, míg <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> visszaadja a <strong>3.33</strong> értéket.</td>
 </tr>
 <tr>

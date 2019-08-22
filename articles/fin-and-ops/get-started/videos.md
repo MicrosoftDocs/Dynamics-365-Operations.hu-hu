@@ -3,13 +3,13 @@ title: Videók a Finance and Operations rendszerhez
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Dynamics 365 for Finance and Operations alkalmazásra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625397"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852081"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videók a Finance and Operations rendszerhez
 
@@ -39,11 +39,11 @@ A videók szolgáltatás szerint vannak listázva, így görgessen le a videók 
 #### <a name="data-integration"></a>Adatintegrálás
 
 - [Készpénz-integrációra jelölt](https://youtu.be/AVV9x5x-XCg)
-- [Munkarendelések szinkronizálása a Dynamics 365 for Field Service és a Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be) között
+- [Munkarendelések szinkronizálása a Dynamics 365 for Field Service és a Finance and Operations között](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Adatkezelés
 
-- [Adatentitások és adatcsomagok használata a Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be) alkalmazásban
+- [Adatentitások és adatcsomagok használata a Dynamics 365 for Finance and Operations alkalmazásban](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
 #### <a name="development"></a>Fejlesztés
 
@@ -71,6 +71,8 @@ A videók szolgáltatás szerint vannak listázva, így görgessen le a videók 
 
 #### <a name="intelligence"></a>Intelligencia
 
+- [Beágyazott jelentés szerkesztése analitikai munkaterületen](https://youtu.be/_8WlwmSggcQ)
+- [PowerBI.com jelentések beágyazása a következőbe:Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Használja saját adatbázisát (BYOD) a Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Költségkezelés Power BI-tartalom használata a Dynamics 365 alkalmazásban](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 

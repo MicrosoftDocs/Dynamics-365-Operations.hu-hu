@@ -3,14 +3,14 @@ title: Szállítói számlák áttekintése
 description: Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625079"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863323"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 
@@ -90,6 +90,13 @@ Amikor egy szállítói számla használatban van, akkor egy másik felhasznál�
 Használhatja a **Szállítói számlák helyreállítása** lapot a szállítói számlák visszaállításához vagy feloldásához, amelyeket több, mint négy órája vannak használatban, hogy azok szerkeszthetők legyenek. Megnyithatja ezt a lapot az **Ismétlődő feladat** navigációs elemről vagy a **Szállítói számla bevitele** munkaterület egy csempéjéről. A számla visszaállítást követően az szerkeszthető lesz a **Szállítói számla** oldalon.
 
 A **Szállítói számlák helyreállítása** laphoz csak akkor férhet hozzá, ha a **Használatban lévő szállítói számlák helyreállítása** biztonsági kötelezettség és jogosultság Önhöz van rendelve. Ezenkívül a **Szállítói számla visszaállítása** paramétert a **Kötelezettségek paraméterei** lapon be kell kapcsolni.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Szállítói számlák munkafolyamat-állapotának visszaállítása Helyreállíthatatlan állapotból Tervezet állapotba
+
+A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyreállíthatatlan** munkafolyamat-állapotot kap. Ha egy szállítóiszámla-munkafolyamat állapota **Helyreállíthatatlan**, a **Visszahívás** kiválasztásával visszaállíthatja **Tervezet** állapotba. Ezután szerkesztheti a szállítói számlát. Ez a funkció akkor érhető el, ha a **Funkciókezelés** oldal **Tervezet állapot visszaállítása szállítóiszámla-munkafolyamathoz** paramétere be van kapcsolva.
+
+A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt az oldalt a **Szállítói számla**  vagy a **Közös > Lekérdezések > Munkafolyamatok** lehetőséghez navigálva nyithatja meg. A munkafolyamat állapotának **Tervezet** értékre való visszaállításához válassza ki a **Visszahívás** lehetőséget. A munkafolyamat-állapotot úgy is visszaállíthatja tervezetnek, ha a **Szállítói számla** vagy a **Függőben lévő szállítói számlák** oldalon kiválasztja a **Visszahívás** műveletet. Miután a munkafolyamat állapotát visszaállította **Tervezet** állapotba, szerkeszthetővé válik a **Szállítói számlák** lapon.
+
 
 
 ## <a name="additional-resources"></a>További erőforrások

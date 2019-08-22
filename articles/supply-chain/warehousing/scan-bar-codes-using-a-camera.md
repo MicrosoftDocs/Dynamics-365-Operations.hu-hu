@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559039"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742933"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Vonalkódok beolvasása a Dynamics 365 for Finance and Operations kamerája segítségével – Raktározás
 
@@ -36,7 +36,7 @@ A funkció használatához a Raktárkezelés 1.2.0.0-s verziójának kell telep�
 ## <a name="setup"></a>Beállítás
 A Raktárkezelés alkalmazás Megjelenítési beállítások szakaszában kiválaszthatja, hogy a kamerát szeretné-e használni a vonalkódok beolvasására. Ha engedélyezi a **Kamera használata beolvasásra** lehetőséget, akkor használhatja a kamerát mindegyik olyan beviteli mezőn, amelynél az előnyben részesített beviteli mód a **Beolvasás**. 
 
-Annak irányításához, hogy egy beviteli mező beolvasható legyen-e, a Dynamics 365 for Finance and Operations **A raktári alkalmazáson belüli** mezőnevek lapján állítsa a **Preferált beviteli mód** beállítást **Beolvasás** értékre. Ha ez a beállítás van kijelölve, egy kamera használható beolvasásra a Raktárkezelés alkalmazásban. Ha információt szeretne arról, hogy miként konfigurálhatók az alkalmazásmezőnevek a Raktárkezelésnél, lásd a következőt: [A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+Annak irányításához, hogy egy beviteli mező beolvasható legyen-e, a Dynamics 365 for Finance and Operations **A raktári alkalmazáson belüli** mezőnevek lapján állítsa a **Preferált beviteli mód** beállítást **Beolvasás** értékre. Ha ez a beállítás van kijelölve, egy kamera használható beolvasásra a Raktárkezelés alkalmazásban. Ha információt szeretne arról, hogy miként konfigurálhatók az alkalmazásmezőnevek a Raktárkezelésnél, lásd a következőt: [A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Támogatott vonalkódformátumok
 A leggyakoribb vonalkódformátumok támogatottak, beleértve a következőket: Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A és QR-kódok. 

@@ -19,19 +19,19 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: b4a6fab3a4831bc3d18313b351e453c615788843
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624335"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742424"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek közvetlenül a Microsoft Dynamics 365 for Sales szolgáltatásba történő szinkronizálására használatosak.
 

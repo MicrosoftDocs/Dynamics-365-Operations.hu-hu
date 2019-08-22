@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555061"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742470"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
@@ -65,7 +65,7 @@ Mielőtt kérheti egy új felhasználó létrehozását a rendszerben, ezt a sze
 4. A **Felhasználói szerepkörök hozzárendelése** területen válassza ki a **Hozzárendelés** jelölőnégyzetet azoknál a biztonsági szerepköröknél, amelyekkel a felhasználónak rendelkeznie kell.
 5. Kattintson a **Küldés** hivatkozásra.
 
-Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó a Finance and Operations alkalmazásban, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Finance and Operations felhasználói fiókjával. További tudnivalókért lásd: [Mi az Azure AD B2B együttműködés?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó a Finance and Operations alkalmazásban, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Finance and Operations felhasználói fiókjával. További tudnivalókért lásd: [Mi az Azure AD B2B együttműködés?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Egy felhasználó inaktiválása
 

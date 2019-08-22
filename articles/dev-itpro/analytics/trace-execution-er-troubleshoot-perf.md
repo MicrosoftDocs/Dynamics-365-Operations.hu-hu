@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
-ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
+ms.openlocfilehash: 7ec16bea1e4f7685f95178f848ba7348a06c31f3
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "1703875"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741503"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -104,7 +104,7 @@ Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ez
 ### <a id='import-configuration'></a>ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations modulba
 
 1. Jelentkezzen be a Finance and Operations példányába.
-2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) a Finance and Operations-példányba (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) eljárást.
+2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) a Finance and Operations-példányba (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) eljárást.
 3. A következő lépések végrehajtásával importálhatja a konfigurációkat az RCS szolgáltatásból a Finance and Operations modulba:
 
     1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Litware, Inc.** konfigurációszolgáltató csempéjén válassza ki a **Tárházak**elemet.

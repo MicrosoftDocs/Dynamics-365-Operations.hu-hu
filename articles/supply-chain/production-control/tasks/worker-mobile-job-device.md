@@ -1,72 +1,70 @@
 ---
 title: Dolgozó konfigurálása mobil feladatvégző eszközzel
-description: Ez az eljárás bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
+description: Ez a témakör bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571358"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835774"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Dolgozó konfigurálása mobil feladatvégző eszközzel
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
+Ez a témakör bemutatja, hogyan lehet a megfelelő szerepköröket hozzárendelni egy dolgozó felhasználói fiókjához, és ezt követően engedélyezni a dolgozónak az üzemi regisztrációk végrehajtását.
 
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>Annak ellenőrzése, hogy a dolgozó hozzá van-e rendelve egy adott szerephez
 
-## <a name="assign-roles-to-user-account"></a>Szerepkörök hozzárendelése a felhasználói fiókhoz
-1. Ugrás a Rendszerfelügyelet > Felhasználók > Felhasználók elemre.
-2. A gyorsszűrő segítségével szűrheti a dolgozó nevét, amikor a felhasználói fiók társítva van a gépkezelő szerepkörrel. A mintaadatok esetében a név Shannon lenne.
-3. Jelölje ki a Felhasználói fiók rekordot.
-4. A listában kattintson a „Név” hivatkozásra a kijelölt sorban a felhasználói fiók adatainak megtekintéséhez.
-5. A fán jelölje be a „Szerepkörök\gépkezelő" lehetőséget.
-6. Zárja be a Felhasználói fiók részletei lapot.
-7. Zárja be a lapot.
+Ebben a példában a dolgozó fiókjának konfigurálása előtt ellenőrizze, hogy a „SHANNON” nevű felhasználó hozzá van-e rendelve a gépkezelői szerepkörhöz.
 
-## <a name="configure-worker-account"></a>Dolgozói fiók konfigurálása
-1. Ugrás az Emberi erőforrások > Dolgozók > Dolgozók elemre.
-2. A gyorsszűrő segítségével szűrheti a dolgozó nevét, amikor a felhasználói fiók társítva van a gépkezelő szerepkörrel. A mintaadatok esetében a név Shannon lenne.
-3. Jelölje ki a Felhasználói fiók rekordot.
-4. A listában kattintson a „Név” hivatkozásra a kijelölt sorban a felhasználói fiók adatainak megtekintéséhez.
-5. Kattintson a Foglalkoztatás lapra.
-6. Bontsa ki a munkaidő-nyilvántartás gyorslapot, és kattintson az Aktiválás a regisztrációs terminálokon elemre.
-7. Kattintson az Aktiválás a regisztrációs terminálokon elemre.
-8. A Számításcsoport mezőben adjon meg vagy válasszon ki egy értéket.
-9. Az Alapértelmezett számítási csoport mezőben adjon meg vagy válasszon ki egy értéket.
-10. A Jóváhagyáscsoport mezőben adjon meg, vagy válasszon ki egy értéket.
-11. A Normál profil mezőben adjon meg vagy válasszon ki egy értéket.
-12. Az Profilcsoport mezőben adjon meg, vagy válasszon ki egy értéket.
-13. Kattintson az OK gombra.
-14. Kattintson a Szerkesztés gombra az új munkaidő-nyilvántartásos munkavállaló belépőkártyaszámának megadásához.
-15. Írjon be egy értéket a Belépőkártya-azonosító mezőbe.
-16. Kattintson a Mentés gombra.
-17. Használja a SaveRecord parancsikont.
-18. Zárja be a Dolgozók részletei lapot.
-19. Zárja be a lapot.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Felhasználók > Felhasználók** lehetőségre.
+2. Keressen felhasználót a gyorsszűrőben. Ennél a példánál adja meg a `shannon` nevet.
+3. Válassza ki a hivatkozást a felhasználói fiók **Felhasználóazonosító** oszlopában.
+4. A **Felhasználói szerepkörök** fán, válassza ki a **Szerepkörök > Gépkezelő** lehetőséget.
+5. A kezdőlapra való visszatéréshez zárja be a **felhasználói adatok** és **felhasználók** oldalakat.
 
-## <a name="assign-worker-to-device-group"></a>Társítsa a dolgozót az eszközcsoporthoz.
-1. Ugrás a Gyártásvezérlés > Beállítás > Gyártásvégrehajtás > Feladatkártya konfigurálása az eszközökhöz elemre.
-2. Kattintson a Hozzáadás gombra.
-3. A listában jelölje meg a kiválasztott sort.
-4. Kattintson az OK gombra.
-5. Kattintson a Szerkesztés lehetőségre.
-6. A Termelési egység mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz. Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön.
+## <a name="configure-worker-account"></a>Konfigurálja a dolgozó fiókját
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Emberi erőforrások > Dolgozók > Dolgozók >** lehetőségre.
+2. Keressen felhasználót a gyorsszűrőben. Ennél a példánál adja meg a `shannon` nevet.
+3. Válassza ki a hivatkozást a felhasználói fiók **Név** oszlopában.
+4. Válassza ki az **Időnyilvántartás** fület.
+5. Válassza ki az **Aktiválás a regisztrációs terminálokon** lehetőséget.
+6. Adja meg vagy válassza ki a következő mezőkben szereplő értékeket:  
+
+    - **Számítási csoport**  
+    - **Alapértelmezett számítási csoport**  
+    - **Jóváhagyási csoport**  
+    - **Szokásos profil**  
+    - **Profilcsoport**  
+
+7. Válassza ki az **OK** lehetőséget.
+8. Válassza ki a **Szerkesztés** lehetőséget az új munkaidő-nyilvántartásos dolgozó belépőkártyaszámának megadásához. Adjon meg egy értéket a**Belépőkártya azonosítója** mezőben.
+9. Válassza a **Mentés** lehetőséget.
+10. Zárja be a **Dolgozó részletes adatai** és **Dolgozók** oldalt.
+
+## <a name="assign-worker-to-device-group"></a>Dolgozó társítása eszközcsoporthoz
+1. Ugorjon a **Gyártásvezérlés > Beállítás > Gyártásvégrehajtás > Feladatkártya konfigurálása az eszközökhöz** elemre.
+2. Válassza a **Hozzáadás** lehetőséget.
+3. Válassza ki a listából a kívánt dolgozót. Ebben a példában válassza ki **SHANNON-t**.
+4. Válassza ki az **OK** lehetőséget.
+5. Válassza ki a **Szerkesztés** opciót.
+6. A **Termelési egység** mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz. Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön. Adja meg a kívánt értéket.
 7. Zárja be a lapot.
 

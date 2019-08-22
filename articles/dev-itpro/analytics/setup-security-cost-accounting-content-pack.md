@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab9b9533ae650c05f57a45be25aec6cbe2e3db76
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551460"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849867"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez
 
@@ -63,4 +63,4 @@ Ha frissítéseket véget a hozzáférés szintű biztonságnál a Költségnyil
 Feltételezzük, hogy szervezete korlátozni szeretné az adatokhoz való hozzáférést. Ha valamilyen okból a biztonsági paraméterek le vannak tiltva a Költségkönyvelés futtatásakor, akkor a tulajdonosnak felhasználókat kell hozzáadnia a **Költségkönyvelő munkatárs** szerepkörhöz a Power BI felületén. Ha a biztonságot engedélyezett állapotról letiltott állapotra váltja, akkor érdemes lehet eltávolítania felhasználókat a **Költségobjektum-ellenőr** szerepből. És ez fordítva is igaz, ha újra engedélyezi a biztonságot. A felhasználók mindkét szerepkörhöz is tartozhatnak. A közös hozzáférés a két szerepkör egységét jelenti. A **Költségkönyvelési elemzés** Power BI tartalom esetében a közös hozzáféréssel rendelkező felhasználók adatokhoz való hozzáférése korlátozás nélküli. Ha célja a korlátozott hozzáférés alkalmazása, akkor a felhasználókat csak a **Költségobjektum-ellenőr** szerepkörhöz szabad hozzárendelni. Ezek a sorszintű biztonsági frissítések azonnal hatályba lépnek. Az érintett felhasználóknak frissíteniük kell a böngészőprogramjukat.
 
 ## <a name="additional-resources"></a>További erőforrások
-Ha további információt szeretne a Power BI sorszintű biztonságáról, lásd: [Biztonság kezelése a modelljén a Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model) szolgáltatással.
+Ha további információt szeretne a Power BI sorszintű biztonságáról, lásd: [Biztonság kezelése a modelljén a Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model) szolgáltatással.

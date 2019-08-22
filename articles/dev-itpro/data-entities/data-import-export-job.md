@@ -3,28 +3,29 @@ title: Adatimportálási és -exportálási feladatok
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505794"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862904"
 ---
 # <a name="data-import-and-export-jobs"></a>Adatimportálási és -exportálási feladatok
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations rendszerben az **Adatkezelés** munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
@@ -129,8 +130,8 @@ A feladatok egy időben biztosíthatók szerepkörök, felhasználók és jogi s
 ## <a name="run-the-import-or-export-job"></a>Az importálási vagy az exportálási feladat futtatása
 A feladat meghatározása után a feladat futtatható egyszer az **Importálás** vagy az **Exportálás** gomb megnyomásával. Ismétlődő feladat beállításához jelölje be az **Ismétlődő adatkezelési feladat létrehozása** lehetőséget.
 
-[!NOTE]
-Egy importálási vagy az exportálási feladat futtatható aszinkron módon az **Importálás** vagy **Exportálás** gomb kiválasztásával. Az aszinkorn futtatás a Finance and Operations az aszinkron keretrendszerét használja, amely nem ugyanaz, mint a kötegkeretrendszer. Azonban a kötegkeretrendszerhez hasonlóan az aszinkron keretrendszer is leszabályozhat és ennek következtében a feladat nem futhat le azonnal. A feladatok futtatható szinkronban is az **Importálás most** vagy az **Exportálás most** kiválasztásával. Ez a azonnal elindítja a feladatot, és akkor hasznos, ha a aszinkron vagy kötegelt feladatként nem indul el lekorlátozás miatt. A feladatok végrehajthatók kötegelten is a **Futtatás kötegben** lehetőség kiválasztásával. A Kötegerőforrások leszabályozásnak lehetnek kitéve, így a kötegelt feladat nem feltétlenül indul el azonnal. Az aszinkron beállítás akkor hasznos, ha a felhasználók közvetlenül lépnek interakcióba a felhasználói felülettel, és nem haladó felhasználók akik értik a kötegelt ütemezést. A kötegelés alkalmazása egy másik megoldás akkor, ha a nagy tömegben kell az exportálni vagy importálni. Kötegelt feladatok ütemezhetők futtatásához egy adott kötegcsoportban, amelynek több szabályozást tesz lehetővé a terhelés elosztása szempontjából. Ha az aszinkron és kötegelt feladat is leszabályoz magas erőforrás-kihasználtság miatt a rendszerben, akkor azonnali megoldásként az importálás és exportálás szinkronizált verziója használható. A szinkronizált beállítás azonnal indul, és a felhasználói felületet blokkolja, mert szinkronizálást hajt végre. A böngészőablaknak nyitva kell maradnia, amikor a szinkronizált művelet folyamatban van.
+> [!NOTE]
+> Egy importálási vagy az exportálási feladat futtatható aszinkron módon az **Importálás** vagy **Exportálás** gomb kiválasztásával. Az aszinkorn futtatás a Finance and Operations az aszinkron keretrendszerét használja, amely nem ugyanaz, mint a kötegkeretrendszer. Azonban a kötegkeretrendszerhez hasonlóan az aszinkron keretrendszer is leszabályozhat és ennek következtében a feladat nem futhat le azonnal. A feladatok futtatható szinkronban is az **Importálás most** vagy az **Exportálás most** kiválasztásával. Ez a azonnal elindítja a feladatot, és akkor hasznos, ha a aszinkron vagy kötegelt feladatként nem indul el lekorlátozás miatt. A feladatok végrehajthatók kötegelten is a **Futtatás kötegben** lehetőség kiválasztásával. A Kötegerőforrások leszabályozásnak lehetnek kitéve, így a kötegelt feladat nem feltétlenül indul el azonnal. Az aszinkron beállítás akkor hasznos, ha a felhasználók közvetlenül lépnek interakcióba a felhasználói felülettel, és nem haladó felhasználók akik értik a kötegelt ütemezést. A kötegelés alkalmazása egy másik megoldás akkor, ha a nagy tömegben kell importálni vagy exportálni. Kötegelt feladatok ütemezhetők futtatásához egy adott kötegcsoportban, amelynek több szabályozást tesz lehetővé a terhelés elosztása szempontjából. Ha az aszinkron és kötegelt feladat is leszabályoz magas erőforrás-kihasználtság miatt a rendszerben, akkor azonnali megoldásként az importálás és exportálás szinkronizált verziója használható. A szinkronizált beállítás azonnal indul, és a felhasználói felületet blokkolja, mert szinkronizálást hajt végre. A böngészőablaknak nyitva kell maradnia, amikor a szinkronizált művelet folyamatban van.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ellenőrizze, hogy a feladat megfelelően futott le
 A feladatelőzmények hibaelhárítási és vizsgálati célra rendelkezésre állnak mind az importálási, mint az exportálási feladatoknál. Az előzményfeladat-futtatások időtartományok szerint vannak rendezve.
@@ -144,15 +145,17 @@ Minden lefuttatott feladat megadja a következő adatokat:
 
 A végrehajtás részletei megmutatják a feladat által feldolgozott minden egyes adatentitás állapotát. Ezért gyorsan megtalálhatja a következő adatokat:
 
-- Melyek a feldolgozott entitások
-- Egy entitás esetében hány rekord feldolgozása történt meg sikeresen, és hány volt sikertelen
-- Az előkészítési rekordok az egyes entitásokhoz
+- Melyek a feldolgozott entitások.
+- Egy entitás esetében hány rekord feldolgozása történt meg sikeresen, és hány volt sikertelen.
+- Az előkészítési rekordok az egyes entitásokhoz.
 
 Letöltheti az előkészítési adatokat fájlban az exportálási feladatokhoz, vagy letöltheti csomagként az importálási és exportálási feladatokhoz.
 
 A végrehajtás részleteknél a végrehajtási napló is megnyitható.
 
 ## <a name="clean-up-the-staging-tables"></a>Az előkészítési táblák megtisztítása
+A 29-es platformfrissítéstől kezdődően ez a funkció elavult. Ezt lecseréli az alább ismertetett, munkaelőzmények tisztítási funkció új verziója.
+
 Az előkészítési táblák adattisztítását elvégezheti **Az előkészítési táblák megtisztítása** funkcióval az **Adatkezelés** munkaterületen. A következő beállítások segítségével választható ki, hogy mely rekordok törlődjenek melyik előkészítési táblából:
 
 - **Entitás** – Ha csak egy entitás van megadva, az entitás előkészítési táblájának minden rekordja törlődik. Ezt a lehetőséget akkor használja, ha minden adatot törölni akar az entitásra nézve, az összes adatprojektben és az összes feladatban.
@@ -160,3 +163,37 @@ Az előkészítési táblák adattisztítását elvégezheti **Az előkészíté
 - **Adatprojektek** – Ha csak egy adatprojekt van kiválasztva, a rendszer az összes entitás összes rekordját törli az összes feladatra nézve a kiválasztott adatprojektben.
 
 A lehetőségek kombinálásával tovább korlátozhatja a törölt rekordkészletet.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>A feladatelőzmények törlése (a 29-es patformfrissítéstől érhető el)
+
+Az adatkezelés során a feladatelőzmények törlési funkcióit kell használni a végrehajtási előzmények periodikus törlésének ütemezéséhez. Ez a funkció felváltja a korábbi előkészítési tábla törlése funkciót, amely most már elavult. A következő táblák lesznek törölve a törlési folyamat során.
+
+-   Minden előkészítési tábla
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+A funkció elérhető az **Adatkezelés \> Feladatelőzmények törlése** helyen érhető el.
+
+### <a name="scheduling-parameters"></a>Ütemezési paraméterek
+
+A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni a tisztítási feltételek definiálásához.
+
+-   **Az előzményekben megtartandó napok száma** – ez a beállítás a megőrzendő végrehajtási előzmények mennyiségének megadására szolgál Ez napok számában van megadva. Ha a tisztítási feladat ismétlődő kötegelt feladatként van ütemezve, ez a beállítás egy folyamatosan mozgó ablakhoz hasonlóan működik, mindig megtartja a megadott szám nap eredményeit, míg a többi törli. Az alapértelmezett érték 7 nap.
+
+-   A feladat**végrehajtásához tartozó óraszám** – A törlendő előzmények számától függően a törlési feladat teljes végrehajtási ideje néhány perctől néhány óráig tarthat. Mivel az említett táblázatok tisztítása csak akkor végezhető el, ha a rendszerben nincs más adatkezelési tevékenység, ezért fontos, hogy a tisztítási feladat az üzleti tevékenység megkezdése előtt fusson le és fejeződjön be.
+
+    A maximális végrehajtási idő a feladat futási idejének felső határértékével adható meg. A tisztítási logika egyszerre egy feladat-végrehajtási azonosítót végez el, időrendi sorrendben, az előzmények törlését a legrégebbivel kezdi. Nem vesz át további végrehajtási azonosítókat törésre, amikor a fennmaradó végrehajtási időtartam a megadott időtartan utolsó 10%-án belül van. Egyes esetekben várható, hogy a törlési feladat a megadott maximális idő után is folytatódni fog. Ez nagyban függ attól, hogy hány rekordot kell törölni az aktuális végrehajtási azonosító alapján amely még a 10%-os küszöb elérése előtt indult el. Az adatok sértetlenségének biztosításához az elindított törlési feladatot is el kell végezni, ami azt jelenti, hogy a törlése a megadott korlát túllépése ellenére is folytatódni fog. Ha ez befejeződött, új végrehajtási azonosító már nem lesz felvéve és a törlési feladat befejeződik. A hátralévő végrehajtási előzmények, amelyek a megfelelő végrehajtási idő hiányában nem lettek törölve, a következő alkalommal kerülnek felvételre, amikorra a törlési feladat ütemezve van. A beállítás alapértelmezett és minimális értéke 2 óra.
+
+-   **Ismétlődő köteg** – A törlési feladat futtatható egyszeri, manuális végrehajtással, vagy ismétlődő kötegelt végrehajtás is ütemezhető. A köteget be a **Futtatás a háttérben** beállítások segítségével beállításokkal lehet ütemezni, ez a standard kötegelési beállítás.

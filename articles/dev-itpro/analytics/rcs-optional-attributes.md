@@ -1,5 +1,5 @@
 ---
-title: Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
+title: Fájlok importálása XML-formátumban opcionális attribútumokkal
 description: Ez a rész az olyan ER-formátumok kialakítását ismerteti, amelyek meghatározzák az XML-formátumú beérkező elektronikus dokumentumok elemzésére használt XML-attribútumokat.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726575"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849995"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Fájlok importálása XML-formátumban opcionális attribútumokkal
 
 Olyan elektronikus jelentési (ER) formátumokat tervezhet, amelyekkel elemezhetők az XML-formátumú bejövő elektronikus dokumentumok. Az XML-elemek bizonyos attribútumai választhatóként adhatók meg a tervezett ER-formátumban. Ezzel a megoldással megfelelően kezelhetők az ilyen XML-attribútumokkal rendelkező és nem rendelkező bejövő fájlok. Az ezekből a fájljokból származó tartalmakat felhasználhatja az alkalmazásadatok frissítésére.
 
@@ -98,10 +98,10 @@ A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus je
 6.  Kattintson a **Tervező** pontra.
 7.  A fastruktúrában bontsa ki a **format** csomópontot.
 8.  A fastruktúrában bontsa ki a **format\root: XML Element(root)** csomópontot.
-9.  A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* (dokumentum)** lehetőséget.
+9.  A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
 10. Kattintson a **Kötés** gombra.
-11. A fastruktúrában bontsa ki a **format\root: XML Element(root)\document: XML Element 1..* (dokumentum)** részt.
-12. A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* (document)\id** részt.
+11. A fastruktúrában bontsa ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
+12. A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (document)\id**.
 13. A fastruktúrában bontsa ki a **List = format.root.document** részt.
 14. A fastruktúrában válassza ki a **List = format.root.document\Code** pontot.
 15. Kattintson a **Kötés** gombra.

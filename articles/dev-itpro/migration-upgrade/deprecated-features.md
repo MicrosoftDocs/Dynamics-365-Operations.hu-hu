@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624907"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863383"
 ---
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
@@ -40,10 +40,32 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 és 29-as platformfrissítés
 
 > [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.4 28-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
+> A Dynamics 365 for Finance and Operations 10.0.5 29-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
+
+### <a name="us-payroll-tax-updates"></a>USA bérszámfejtési adófrissítések
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Kivezetjük az adófrissítéseket az amerikai bérszámfejtés funkcióhoz, mivel keveset volt használva, és továbbfejlesztett funkciók érhetők el a most kínált stratégiai integrációkban.  |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Bérlista |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavul : 2021. október 1-jén, azt tervezzük, hogy már nem nyújtunk adófrissítéseket az amerikai bérszámfejtés ügyfeleknek. A funkcionalitás megmarad a termékben, de a fejlesztések többé nem tartják naprakészen a funkcionalitást, és minden termékhibát eseti alapon fognak értékelni. További információ: [Adófrissítések kivezetése az amerikai bérszámfejtés funkcióhoz a Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq) megoldásban. |
+
+
+### <a name="data-management-staging-clean-up"></a>Az adatkezelés előkészítési megtisztítása
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Nem felel meg az időszakos törlés ütemezéséhez szükséges alapkövetelményeknek. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a Munkaelőzmények törlése funkció lett hozzáadva a használati esetek kezelésére. |
+| **Érintett területek**         | Adatkezelés |
+| **Telepítési beállítás**              | Összes  |
+| **Állapot**                         | Elavult: A funkció eltávolításának célként meghatározott időkerete 2020 decembere. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 és 28-as platformfrissítés
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>FEC Könyvelési adatok exportálása XML-formátumban, Franciaország
 
@@ -1235,7 +1257,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 
 ### <a name="virtual-company-accounts"></a>Virtuális vállalati számlák
 
-A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben. A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be. A szolgáltatás leírása itt található: [Vállalati számlák és Virtuális vállalati számlák](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik. Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.
+A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben. A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be. A szolgáltatás leírása itt található: [Vállalati számlák és Virtuális vállalati számlák](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik. Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.
 
 |   |  | 
 |------------|--------------------|
