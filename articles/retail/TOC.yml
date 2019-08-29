@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: Egyverziós szolgáltatásfrissítések GYIK
       href: ../fin-and-ops/get-started/one-version.md
-- name: A végrehajtási életciklus megértése
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Életciklus-kezelés bevezetése
   items:
+    - name: Életciklus-kezelés bevezetésének kezdőlapja
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: Felvétel
@@ -165,6 +166,8 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Munkaidő és jelenlét a Retailben
       href: retail-time-attendance.md
+    - name: Nyitvatartási idő létrehozása és módosítása
+      href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) és Cloud POS
   items:
     - name: Az MPOS és a felhőalapú pénztár (POS) közötti választás
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Kiskereskedelmi termékek beállítása
       href: set-up-retail-products.md
-    - name: Retail-termékkategóriák és termékek kezelése
+    - name: Kiskereskedelmi termékkategóriák és termékek kezelése
       href: category-management-product-creation.md
+    - name: Árusítási entitások rendezési sorrendjének módosítása
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Termékdimenziók
       href: ../supply-chain/pim/product-dimensions.md
     - name: Vonalkódok beállítása
@@ -499,9 +504,10 @@
       href: tasks/use-continuity-program.md
     - name: Kiskereskedelmi dolgozók konfigurálása
       href: tasks/worker.md
-- name: Kiskereskedelmi fejlesztés és adminisztráció
-  href: dev-itpro/dev-retail-home-page.md
+- name: Retail fejlesztés és adminisztráció
   items:
+    - name: Retail informatikai szakemberek és fejlesztők számára
+      href: dev-itpro/dev-retail-home-page.md
     - name: Architektúra
       items:
         - name: Retail-összetevők
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Hardware Station és bővíthetősége
       href: dev-itpro/hardware-station-extensibility.md
+    - name: A pénztár integrálása új hardvereszközzel
+      href: dev-itpro/hardware-device-extension.md
     - name: Retail Server bővíthetősége
       items:
         - name: Retail Server OData-vezérlőjének kiterjesztése
@@ -655,21 +663,21 @@
         - name: Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail szoftverfejlesztői készlet (SDK)
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
           href: dev-itpro/UpcomingSDKChanges.md
         - name: A Retail és Finance and Operations buildrendszereinek egyesítése
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-        - name: A Retail SDK bővíthetőségi mintái
+        - name: A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
         - name: Kiskereskedelmi telepíthető csomagok létrehozása
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Retail SDK-minták
+        - name: A Retail szoftverfejlesztői készlet (SDK) mintái
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Szállítólevelek kiterjesztési pontjai
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Szállítólevelek kiterjesztési pontjai
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: A csatorna-adatbázis bővítményei
           href: dev-itpro/channel-db-extensions.md
         - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel

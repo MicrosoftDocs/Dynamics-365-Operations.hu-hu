@@ -1,9 +1,9 @@
 ---
-title: Globalizáció
-description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról és ajánlatokról.
+title: Globalizációs erőforrások
+description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország- és régióspecifikus funkciókról és ajánlatokról.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 668a24c54ded798658a136b8482823b595962306
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850615"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864966"
 ---
-# <a name="globalization"></a>Globalizáció
+# <a name="globalization-resources"></a>Globalizációs erőforrások
 
 ## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
 Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az országban/régióban érvényes követelményeknek kell megfelelnie a Finance and Operations rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
