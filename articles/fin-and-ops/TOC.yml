@@ -1,20 +1,23 @@
 - name: Dynamics 365 for Finance and Operations
-  href: index.md
   items:
+    - name: Dynamics 365 for Finance and Operations dokumentáció
+      href: index.md
     - name: Első lépések
       items:
         - name: Vásárlás előtti teendők
-          href: get-started/before-you-buy.md
           items:
+            - name: Vásárlás előtti teendők kezdőlapja
+              href: get-started/before-you-buy.md
             - name: Regisztrálás az előzetes verziót tartalmazó előfizetésre
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Bemutatókörnyezet telepítése
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
               href: get-started/cloud-prem-comparison.md
-            - name: Telepítési beállítások
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: Telepítési szempontok
               items:
+                - name: Telepítési beállítások
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: Felhőbeli telepítés
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: Felhőbeli telepítések rendszerkövetelményei
@@ -36,8 +39,9 @@
                 - name: A Finance and Operations (on-premises) megvásárlása
                   href: get-started/purchase-on-premises.md
         - name: Új vagy módosult elemek
-          href: get-started/whats-new-changed.md
           items:
+            - name: Új vagy módosult elemek kezdőlapja
+              href: get-started/whats-new-changed.md
             - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Eltávolított vagy elavult funkciók
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Ismerje meg a felhasználói felületet
           items:
+            - name: A felhasználói felület elemei
+              href: get-started/user-interface-elements.md
             - name: Hozzáférhetőségi funkciók
               href: get-started/accessibility-features.md
             - name: Funkciókezelés áttekintése
@@ -196,9 +202,10 @@
               href: get-started/glossary.md
         - name: Videók a Finance and Operations rendszerhez
           href: get-started/videos.md
-    - name: Életciklus-kezelése bevezetése
-      href: imp-lifecycle/implementation-lifecycle.md
+    - name: Életciklus-kezelés bevezetése
       items:
+        - name: Életciklus-kezelés bevezetésének kezdőlapja
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Finance and Operations-architektúra
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
@@ -224,8 +231,9 @@
         - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Egyverziós szolgáltatásfrissítések
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: Egyverziós szolgáltatásfrissítések áttekintése
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: Egyverziós szolgáltatásfrissítések GYIK
           href: get-started/one-version.md
         - name: A szoftver életciklusára vonatkozó irányelv – Felhő
@@ -246,17 +254,12 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Egyverziós ISV-megoldások nyújtása
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Tesztautomatizálás
-          items:
-            - name: Felhasználói tesztelés létrehozása és automatizálása
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Regression Suite Automation Tool-oktatóanyag beállítása
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Regression Suite Automation Tool-oktatóanyag használata
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: Felhasználói tesztelés létrehozása és automatizálása
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Üzleti események
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: Üzleti események áttekintése
+          href: ../dev-itpro/business-events/home-page.md
         - name: Alkalmazás – üzleti események
           href: ../dev-itpro/business-events/app-business-events.md
         - name: Munkafolyamat – üzleti események
@@ -273,22 +276,34 @@
           href: ../dev-itpro/business-events/potential-use-cases.md
         - name: Oktatóanyagok
           items:
-            - name: Üzleti események felhasználása Microsoft Flow használatával
+            - name: Üzleti események és a Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Üzleti események felhasználása az Azure Event Grid használatával
+            - name: Üzleti események és az Azure Event Grid
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Üzleti események felhasználása az Azure Service Bus használatával
+            - name: Üzleti események és az Azure Service Bus
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: Munkafolyamat-jóváhagyó üzleti eseményeinek felhasználása
+            - name: Üzleti események és munkafolyamat-jóváhagyások
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: A Microsoft Forms Pro használata üzleti eseményekhez
+            - name: Üzleti események és a Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: Költségkezelés
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: Üzleti események és az Azure Event Hubs
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: Megfelelés
       items:
+        - name: Könyvvizsgálati irányelvszabályok
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Könyvvizsgálati irányelvsértések és esetek
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Könyvvizsgálati irányelvek meghatározása a forrásbizonylatok számára
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: Költségkezelés
+      items:
+        - name: "Költségkezelés\_kezdőlapja"
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: Az elszámolóár előfeltételei
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: Az elszámolóár előfeltételeinek áttekintése
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: Átalakítás elszámolóárra – áttekintés
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Az elszámolóárra való átalakítás előfeltétele
@@ -308,8 +323,9 @@
             - name: Felkészülés a gyártott cikkek elszámolóárának karbantartására
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: Költségszámítási verziók
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: Költségszámítási verziók áttekintése
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: Költségszámítási táblázatok
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: Költségváltozások szimulálása tervezett költségek költségszámítási verziójának alkalmazásával
@@ -397,8 +413,9 @@
             - name: Adatkezelési csomag REST API-ja
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Szolgáltatási végpontok
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Szolgáltatási végpontok áttekintése
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: Szolgáltatáshitelesítési hibaelhárítás
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
@@ -414,8 +431,9 @@
         - name: Fejlesztés integrációhoz
           items:
             - name: Adatintegráció az adatentitások használatával
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Adatintegráció az adatentitások használatával – áttekintés
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: Entitás fejlesztése az adatátvitelhez
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: Összetett adatentitások fejlesztése
@@ -428,7 +446,7 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Adatintegráció a Common Data Service használatával
               items:
-                - name: Az adatintegráció áttekintése
+                - name: Adatintegráció a Common Data Service használatával – áttekintés
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
                 - name: 'Szinkronizált, kétirányú integráció'
                   items:
@@ -448,9 +466,9 @@
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
                 - name: 'Aszinkron, kétirányú integráció'
                   items:
-                    - name: A potenciális ügyfelek készpénzre váltása
+                    - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
                       items:
-                        - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
+                        - name: A potenciális vevők készpénzre váltása
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: A Field Service szolgáltatással való integráció konfigurálása
                       items:
-                        - name: A Field Service szolgáltatással való integráció konfigurálása
+                        - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -486,9 +504,9 @@
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
                         - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Project Service Automation integráció konfigurálása
                       items:
-                        - name: Project Service Automation integráció konfigurálása
+                        - name: A Project Service Automation áttekintése
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Project Service Automation integráció paraméterei
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: Elektronikus üzenetküldés
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Adatkezelés
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Adatkezelés – áttekintés
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Adatentitások
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Adatentitások áttekintése
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurációs adatprojektek
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurációs adatok másolása – áttekintés
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurációs adatcsomagok
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)
@@ -538,8 +559,9 @@
             - name: Konfigurációs adatcsomagok
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Adatimportálási és -exportálási feladatok
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Adatimportálási és -exportálási feladatok áttekintése
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Fejlesztés adatentitásokhoz
@@ -581,16 +603,19 @@
         - name: Adatkezelési hibaleírások
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Pénzgazdálkodás
-      href: ../financials/index.md
       items:
+        - name: Pénzgazdálkodás kezdőlap
+          href: ../financials/index.md
         - name: Kötelezettségek
-          href: ../financials/accounts-payable/accounts-payable.md
           items:
+            - name: Kötelezettségek kezdőlap
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: Szállítói számlák áttekintése
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: Kötelezettségek konfigurálása
-              href: ../financials/accounts-payable/accounts-payable-overview.md
               items:
+                - name: Kötelezettségek konfigurálása – áttekintés
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
                 - name: Fő számlaadatok a kötelezettségekbe egy szállítói számla használatával
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: Fő számlaadatok a kötelezettségekbe jóváhagyási napló használatával
@@ -604,8 +629,9 @@
             - name: Háromirányú egyeztetési irányelvek
               href: ../financials/accounts-payable/three-way-matching-policies.md
             - name: Kötelezettségek számlaegyeztetése
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
               items:
+                - name: Kötelezettségek számlaegyeztetése – áttekintés
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: A kötelezettségek számlaegyeztetésének hitelesítésbeállítása
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szállítói számlákhoz
@@ -625,8 +651,9 @@
             - name: Szállítói munkafolyamat
               href: ../financials/accounts-payable/vendor-workflow.md
             - name: Számlaösszegek egyeztetési eltéréseinek feloldása
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
+                - name: Számlaösszegek számlaegyeztetési eltéréseinek feloldása – áttekintés
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Kivételek kivizsgálása/feloldása
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: Szállítói feladási profilok
@@ -688,8 +715,9 @@
                 - name: Szállítói tranzakciók listaoldala
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Kinnlevőségek
-          href: ../financials/accounts-receivable/accounts-receivable.md
           items:
+            - name: Kinnlevőségek kezdőlap
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: Követelések és beszedések a Kinnlevőségek modulban
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: 'A Kinnlevőségek modul, követelések és beszedések konfigurálása'
@@ -782,14 +810,15 @@
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
                 - name: Vevői tranzakciók listaoldala
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
-        - name: Költségvetés készítése
-          href: ../financials/budgeting/budgeting-overview.md
+        - name: Költségvetés-készítés
           items:
+            - name: Költségvetés-készítés kezdőlap
+              href: ../financials/budgeting/budgeting-overview.md
             - name: Költségvetés-tervezés áttekintése
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: Költségvetés-ellenőrzés áttekintése
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: Költségvetés készítésének áttekintése
+            - name: Költségvetés áttekintése
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Beosztás előre jelzése
               href: ../financials/budgeting/position-forecasting.md
@@ -808,8 +837,9 @@
             - name: A Költségvetés-tervezés integrálása más modulokkal
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Készpénz- és bankkezelés
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: Készpénz- és bankkezelési kezdőlap
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: Pénzforgalmi előrejelzés
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: Bankkezelési munkaterület
@@ -885,8 +915,9 @@
                 - name: Banki napló összetett entitás frissítése
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Költségkönyvelés
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: "Költségkönyvelés\_kezdőlap"
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: Költségkönyvelési terminológia
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
@@ -958,8 +989,9 @@
             - name: Költségellenőrzési munkaterület alkalmazása a Finance and Operations mobilalkalmazásban
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
         - name: Költséggazdálkodás
-          href: ../financials/expense-management/expense-management.md
           items:
+            - name: Költséggazdálkodás – áttekintés
+              href: ../financials/expense-management/expense-management.md
             - name: Költségjelentések újragondolva
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: Költséggazdálkodás tervezése
@@ -995,8 +1027,9 @@
             - name: Személyes kiadások a költségjelentéseken
               href: ../financials/expense-management/personal-expenses.md
         - name: Tárgyi eszközök
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Tárgyi eszközök kezdőlap
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: Tárgyi eszköz létrehozása
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: Tárgyi eszköz kiegészítésének bevitele
@@ -1100,15 +1133,187 @@
                 - name: Élettartamon alapuló lineáris értékcsökkenés
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Főkönyv
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: Főkönyv áttekintése
+              href: ../financials/general-ledger/general-ledger.md
+            - name: Számlák
+              items:
+                - name: Elhatárolások áttekintése
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Eltávolítási szabályok
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Számla- és dimenziókombinációk
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Kiegyensúlyozott naplók egységközi számlázáshoz
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Feladásdefiníciók
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: Feladásdefiníció-példák
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Főkönyvi számlaegyenlegek
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Pénzügyi dimenziók meghatározása
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Számlastruktúrák létrehozása
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: A pénzügyi dimenziók és a feladás
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Elhatárolási sémák létrehozása
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Pénzügyi konszolidáció és pénznemátváltás
+                  items:
+                    - name: Pénzügyi konszolidáció és pénznemátváltás áttekintése
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: Online konszolidálás
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Konszolidált pénzügyi kimutatások létrehozása
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Konszolidációs csoportok és további konszolidációs számla létrehozása
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Fő számla típusai
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Fő számla létrehozása
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Számlatükör tervezése
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Kiegyenlítési tranzakciók a főkönyvi számlák között
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Főkönyvi számlaalias beállítása
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Fő számla kategóriáinak beállítása
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Könyvelési források böngészője
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Könyvelési felosztások
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Felosztások feldolgozása
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Pénzügyi dimenziók
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Könyvelési vagy jelentési pénznem átváltása
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konszolidációs számlacsoportok és számlák
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Konszolidáció és megszüntetés áttekintése
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Számlastruktúrák konfigurálása
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: Kettős pénznem
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: Naplók és főkönyvek
+              items:
+                - name: Általános napló feldolgozása
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Időszaki naplók feladása
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Főkönyvi felosztási napló feldolgozása
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Vállalatközi könyvelés beállítása
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Főkönyvi felosztási szabályok
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Speciális szabályok létrehozása naplók részére
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: Speciális szabálystruktúrák létrehozása és hozzárendelése
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Főkönyvi napló típusai
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: Naplók létrehozása és érvényesítése
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Naplóbejegyzések vagy tranzakciók megtekintése
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Naplóbejegyzés létrehozása sablon alapján
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Főkönyvi könyvelés tranzakcióinak létrehozása
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Naplósorok és dokumentumok közzététele az Excel programból
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Naplóbejegyzések és tranzakciók megtekintése
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Feladott naplóbejegyzések naplózása
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Devizaátértékelés konszolidált vállalatban
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Főkönyvi devizaátértékelés
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Devizaárfolyamok importálása
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Egy bizonylat
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: Főkönyvi kiegyenlítések
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Időszak végi lezárás
+              items:
+                - name: A főkönyv lezárása az időszak végén
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Pénzügyi időszak lezárása munkaterület
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Év végi zárás
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: A pénzügyi év lezárása
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Pénzügyi időszakok tömeges lezárása
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: Áfa
+              items:
+                - name: Áfa áttekintése
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Számítás alapján és számítási módokon alapuló áfa értéke
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Áfakifizetések és kerekítési szabályok
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Áfaszámítási módok a Kiindulás mezőben
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Áfakifizetés létrehozása
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: Áfatranzakciók létrehozása dokumentumokra
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Főkönyvi feladási csoportok beállítása az áfához
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Adóhatóságok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Áfakódok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: Adócsoportok és cikkáfacsoportok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Áfabevallás kódjainak beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Áfafizetési időszakok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Adóelőleg beállítása
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Feladott áfatranzakciók megtekintése
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: Könyvvizsgálati munkaterület
+              items:
+                - name: Könyvvizsgálati irányelvszabályok
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: Könyvvizsgálati irányelvsértések és esetek
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: Könyvvizsgálati irányelvek meghatározása a forrásbizonylatok számára
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Állami szektor
+          items:
+            - name: Állami szektor kezdőlap
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: Az Állami szektor funkció tervezése
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseire vonatkozóan
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Kötelezettségek az állami szektorban
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: Kötelezettségek az állami szektorban – áttekintés
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: Beszerzési rendelési kódok az állami szektorban
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban
@@ -1130,8 +1335,9 @@
                 - name: Beszerzési szerződés osztályozásainak beállítása az állami szektorban
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Kinnlevőségek az állami szektorban
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: Kinnlevőségek az állami szektorban – áttekintés
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: Számlázási osztályok és számlázási kódok az állami szektorban
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: Számlázási osztály létrehozása az állami szektorban
@@ -1145,8 +1351,9 @@
                 - name: Visszatérítések az állami szektorban
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: Költségvetés-készítés az állami szektorban
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Költségvetés-készítés az állami szektorban – áttekintés
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: Eredeti költségvetés létrehozása és az előzetes költségvetési bejegyzések sztornírozása az állami szektorban
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Előzetes költségvetés létrehozása az állami szektor részére
@@ -1172,8 +1379,9 @@
             - name: Tárgyi eszközök az állami szektorban
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Főkönyv az állami szektorban
-              href: ../financials/public-sector/general-ledger-public-sector.md
               items:
+                - name: Főkönyv az állami szektorban – áttekintés
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: Speciális főkönyvi bejegyzések az állami szektorban
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: Speciális főkönyvi bejegyzés létrehozása állami szektorban
@@ -1199,8 +1407,9 @@
             - name: Hitelesítési típus hozzáadása egy szállítóhoz az állami szektorban
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Pénzügyi jelentéskészítés
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: Pénzügyi jelentéskészítés – áttekintés
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: Pénzügyi jelentéskészítés – áttekintés
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: A pénzügyi jelentés összetevői
@@ -1236,14 +1445,16 @@
         - name: Elektronikus üzenetküldés
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Globalizáció
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Globalizációs erőforrások
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
         - name: Jogszabály-követési frissítések
           href: ../financials/localizations/regulatory-updates.md
         - name: Ausztrália
-          href: ../financials/localizations/australia.md
           items:
-            - name: BAS-jelentés
+            - name: Ausztrália – áttekintés
+              href: ../financials/localizations/australia.md
+            - name: BAS jelentés
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Jelentési mezők hozzáadása és a BAS-jelentés elkészítése
               href: ../financials/localizations/tasks/add-bas-report-boxes.md
@@ -1252,8 +1463,9 @@
             - name: BAS-okkódok beállítása
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: Ausztria
-          href: ../financials/localizations/austria.md
           items:
+            - name: Ausztria – áttekintés
+              href: ../financials/localizations/austria.md
             - name: Féléves értékcsökkenés a további beszerzéseken
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: Csomagolóanyag díjai
@@ -1261,8 +1473,9 @@
             - name: Áfabevallás
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: Belgium
-          href: ../financials/localizations/belgium.md
           items:
+            - name: Belgium – áttekintés
+              href: ../financials/localizations/belgium.md
             - name: CODA banki kivonat
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: Tranzakciók létrehozása és továbbítása a BLWI számára
@@ -1276,13 +1489,15 @@
             - name: PRODCOM beállítása és karbantartása
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: Brazília
-          href: ../financials/localizations/brazil.md
           items:
+            - name: Brazília – áttekintés
+              href: ../financials/localizations/brazil.md
             - name: Honosítás köre
               href: ../financials/localizations/latam-bra-scope.md
             - name: Pénzügyi könyvek
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: Brazília – pénzügyi könyvek áttekintése
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: Pénzügyi könyvek konfigurálása
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: ICMS pénzügyi adóbizonylatok
@@ -1350,8 +1565,9 @@
                 - name: Projektterhelések
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: NF-e folyamat
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: Brazília – NF-e folyamat áttekintése
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: NF-e pénzügyi bizonylatok automatikus továbbítása
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: 'E-mailek létrehozása az elfogadott NF-e-hez, és a DANFE PDF-fájlok és NF-e XML-fájlok csatolása az e-mailekhez'
@@ -1397,8 +1613,9 @@
             - name: Kamat és bírságok kiszámítása a vevői kifizetésekhez
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
             - name: Adók
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
               items:
+                - name: Brazília – adók áttekintése
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: Adó kiszámítása a beszerzési árajánlatokhoz
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: Adómegállapítás létrehozása – ICMS
@@ -1444,8 +1661,9 @@
                 - name: A szállítói kifizetések adóelőlegei
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: Kína
-          href: ../financials/localizations/china.md
           items:
+            - name: Kína – áttekintés
+              href: ../financials/localizations/china.md
             - name: A Finance and Operations üzemeltetője a 21Vianet Kínában
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: Anyagjegyzékek összehasonlítása
@@ -1485,8 +1703,9 @@
             - name: Vevői áfaszámlák GYIK
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: Cseh Köztársaság
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: Cseh Köztársaság
+              href: ../financials/localizations/czech-republic.md
             - name: Jóváírás készpénzfizetési engedményre
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: Tárgyi eszközök
@@ -1514,8 +1733,9 @@
             - name: Év végi zárás
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Dánia
-          href: ../financials/localizations/denmark.md
           items:
+            - name: Dánia – áttekintés
+              href: ../financials/localizations/denmark.md
             - name: Fizetésiutalvány-formátum hozzárendelése vevői számlához
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: Vevői számla létrehozása és feladása állami szektorba tartozó vevőhöz
@@ -1539,18 +1759,21 @@
             - name: Fizetési bizonylat formátumának beállítása
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: Észtország
-          href: ../financials/localizations/estonia.md
           items:
+            - name: Észtország – áttekintés
+              href: ../financials/localizations/estonia.md
             - name: Személyes információk kérése
               href: ../financials/localizations/emea-est-personal-info.md
             - name: Áfabevallás
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Európa
-          href: ../financials/localizations/europe.md
           items:
+            - name: Európa – áttekintés
+              href: ../financials/localizations/europe.md
             - name: Előlegre jogosultak
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: Előlegre jogosultak áttekintése
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: Előlegre jogosultak tranzakciói
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: Előleg fizetése alkalmazottnak (Kelet-Európa)
@@ -1606,8 +1829,9 @@
                 - name: Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: Intrastat – áttekintés
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: Tranzakciók átvitele az Intrastatba
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: Közösségen belüli tranzakcióhoz berakodási cím megadása
@@ -1685,8 +1909,9 @@
             - name: Kiegyenlítési tranzakciók megtekintése
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: Franciaország
-          href: ../financials/localizations/france.md
           items:
+            - name: Franciaország – áttekintés
+              href: ../financials/localizations/france.md
             - name: Állami szektor
               items:
                 - name: Állami szektor könyvelése
@@ -1740,13 +1965,15 @@
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: Németország
-          href: ../financials/localizations/germany.md
           items:
+            - name: Németország – áttekintés
+              href: ../financials/localizations/germany.md
             - name: Értékcsökkenés a további beszerzéseken
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: Könyvvizsgálati fájl
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: A német könyvvizsgálati fájl áttekintése
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: Könyvvizsgálati fájl konfigurációjának testreszabása
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: Könyvvizsgálati fájl generálása
@@ -1762,23 +1989,25 @@
             - name: Elektronikus adóbevallások beállítása
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: Magyarország
-          href: ../financials/localizations/hungary.md
           items:
+            - name: Magyarország – áttekintés
+              href: ../financials/localizations/hungary.md
             - name: Árfolyamszámítás
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
-            - name: Értékcsökkenés módjai tárgyi eszközöknél
+            - name: Értékcsökkenés módjai tárgyi eszköznél
               href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
             - name: Kis értékű tárgyi eszközök
               href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
             - name: Tárgyi eszköz áthelyezése készletbe
               href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
-            - name: Adóvisszaigénylési dokumentum
+            - name: Adó-visszaigénylési dokumentum
               href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
             - name: Év végi zárás
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Izland
-          href: ../financials/localizations/iceland.md
           items:
+            - name: Izland – áttekintés
+              href: ../financials/localizations/iceland.md
             - name: Szállítói számla létrehozása és számlabevallás-kategória csatolása
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: Szállítók számára történő számlabevallás beállítása
@@ -1788,11 +2017,15 @@
             - name: 'Szállítói számla bevallásainak frissítése, és jelentés készítése'
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: India
-          href: ../financials/localizations/india.md
           items:
+            - name: India – áttekintés
+              href: ../financials/localizations/india.md
+            - name: Az indiai honosítások köre
+              href: ../financials/localizations/apac-ind-scope.md
             - name: Tárgyi eszközök
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: India – tárgyi eszközök áttekintése
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: Nap alapú naptár csatolása tárgyieszköz-könyvhöz
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: Eltolódás értékcsökkenésének számítása
@@ -1816,8 +2049,9 @@
                 - name: Tőkeelemek átvitele a tárgyi eszközre
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: India GST
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: India – GST áttekintése
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: India GST-hivatkozáscsoportok
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: GST integrációja pénztárgépekhez
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Adómotor áttekintése
-              href: ../financials/general-ledger/tax-engine.md
+            - name: Adómotor
               items:
-                - name: Importálás konfigurálása
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: Adómotor alkalmazhatósága
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: Adómotor integrációja
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: Adómotor kiterjesztése
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: Adómotor áttekintése
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: Importálás konfigurálása
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: Adómotor alkalmazhatósága
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: Adómotor integrációja
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: Adómotor kiterjesztése
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: Adóküszöbértékekre vonatkozó GYIK
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: Készletmozgatások
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: Olaszország
-          href: ../financials/localizations/italy.md
           items:
+            - name: Olaszország – áttekintés
+              href: ../financials/localizations/italy.md
             - name: Áfabevallások részletei
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: Tiltólista-jelentés
@@ -1997,8 +2236,9 @@
             - name: Adóelőleg
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: Japán
-          href: ../financials/localizations/japan.md
           items:
+            - name: Japán – áttekintés
+              href: ../financials/localizations/japan.md
             - name: Tárgyi eszköz beszerzése és állami támogatás igénylése
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: Tárgyi eszköz beszerzése kivezetési kötelezettséggel
@@ -2156,8 +2396,9 @@
             - name: Szétszerelési lista használata tárgyi eszközökhöz
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: Lettország
-          href: ../financials/localizations/latvia.md
           items:
+            - name: Lettország – áttekintés
+              href: ../financials/localizations/latvia.md
             - name: Tárgyieszköz-könyvelés
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: Tárgyi eszközök helyváltozásának nyomon követése
@@ -2169,8 +2410,9 @@
             - name: Áfabevallás részletei
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: Litvánia
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: Litvánia – áttekintés
+              href: ../financials/localizations/lithuania.md
             - name: Tárgyi eszköz javítási kimutatása
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: Bizonylat létrehozása a raktárak közti tárgyieszköz-átvitelről
@@ -2180,8 +2422,9 @@
             - name: Áfabevallás részletei
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: Malajzia
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: Malajzia – áttekintés
+              href: ../financials/localizations/malaysia.md
             - name: Ügyféljóváírás létrehozása projektértékesítéshez
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: Vevői terhelés létrehozása projektértékesítéshez
@@ -2203,8 +2446,9 @@
             - name: GST mentességi záradék beállítása
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: Mexikó
-          href: ../financials/localizations/mexico.md
           items:
+            - name: Mexikó – áttekintés
+              href: ../financials/localizations/mexico.md
             - name: Honosítás köre
               href: ../financials/localizations/latam-mex-scope.md
             - name: Kiigazítás – inflációkimutatási jelentés
@@ -2242,15 +2486,17 @@
             - name: Szállítói regisztrációs azonosítók
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: Hollandia
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: Hollandia – áttekintés
+              href: ../financials/localizations/netherlands.md
             - name: Elektronikus adóbevallások (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Semansys XBRL-integráció
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Norvégia
-          href: ../financials/localizations/norway.md
           items:
+            - name: Norvégia – áttekintés
+              href: ../financials/localizations/norway.md
             - name: Vevői és szállítói kifizetési formátumok hozzárendelése
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: Vevői kifizetés fizetési azonosító alapján
@@ -2264,8 +2510,9 @@
             - name: Pénztárgépek telepítésére vonatkozó irányelvek
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Lengyelország
-          href: ../financials/localizations/poland.md
           items:
+            - name: Lengyelország – áttekintés
+              href: ../financials/localizations/poland.md
             - name: Sztornókönyvelés aktiválása
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: Sorengedmények kiszámítása az egységár alapján
@@ -2293,8 +2540,9 @@
             - name: Forgalom- és mérlegkimutatás
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Oroszország
-          href: ../financials/localizations/russia.md
           items:
+            - name: Oroszország – áttekintés
+              href: ../financials/localizations/russia.md
             - name: Főkönyv
               items:
                 - name: Számlák megfeleltetése
@@ -2306,8 +2554,9 @@
                 - name: Devizaárfolyamok importálása CBRF-ből
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Előlegre jogosultak
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: Oroszország – előlegre jogosultak áttekintése
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: Előlegre jogosult létrehozása
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Előlegre jogosultak napi műveletei
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: Előlegre jogosultak jelentése
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: Bank
+            - name: Készpénz és bank
               items:
                 - name: Bankszámlák beállítása
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: Utalványok beállítása és feldolgozása
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: Árfolyam-kiigazítás
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: Devizaeladások/-vásárlások/ és -átutalások
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: Pénztár
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: Áfa
               items:
                 - name: Kimeneti ÁFA helyi specifikus feladása
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: Számla jellegű pénzügyi dokumentumok feldolgozása és nyomtatása
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: Felülvizsgálati számviteli számlák és helyesbítő számviteli számlák
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: Általános forgalmi adó (áfa) az adózási ügynökök számára
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: Áfabevallás
@@ -2382,6 +2639,8 @@
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: Kötelezettségek és kinnlevőségek
               items:
+                - name: Jóváírás-helyesbítések (Oroszország)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: Kifizetendő számlák
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: Kiegyenlítések dimenzióvezérlésének beállítása
@@ -2429,20 +2688,23 @@
                 - name: Halasztásokkal kapcsolatos jelentések
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Szaúd-Arábia
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: Szaúd-Arábia – áttekintés
+              href: ../financials/localizations/saudi-arabia.md
             - name: Áfa
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Szaúd-arábiai zakátjelentés
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Szingapúr
-          href: ../financials/localizations/singapore.md
           items:
-            - name: A GST-05 jelentés elkészítése
+            - name: Szingapúr – áttekintés
+              href: ../financials/localizations/singapore.md
+            - name: Az GST-05 jelentés elkészítése
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: Spanyolország
-          href: ../financials/localizations/spain.md
           items:
+            - name: Spanyolország – áttekintés
+              href: ../financials/localizations/spain.md
             - name: Készpénzfizetési engedmény alkalmazása a számlán
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Váltóbeállítások
@@ -2472,8 +2734,9 @@
             - name: Speciális bevitelek és nyitólapok
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: Svédország
-          href: ../financials/localizations/sweden.md
           items:
+            - name: Svédország – áttekintés
+              href: ../financials/localizations/sweden.md
             - name: Pénzügyi adatok exportálása könyvvizsgálóknak Svédország esetében
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: Fizetési formátumok importálása
@@ -2481,13 +2744,15 @@
             - name: Pénztárgépek
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: Svájc
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: Svájc – áttekintés
+              href: ../financials/localizations/switzerland.md
             - name: Vevői kifizetések importálása ESR-ben
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: Thaiföld
-          href: ../financials/localizations/thailand.md
           items:
+            - name: Thaiföld – áttekintés
+              href: ../financials/localizations/thailand.md
             - name: Készletkarton-jelentések
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: Helyettesítési/kiigazítási adószámla
@@ -2497,8 +2762,9 @@
             - name: Adóelőleg
               href: ../financials/localizations/apac-tha-withholding-tax.md
         - name: Egyesült Királyság
-          href: ../financials/localizations/united-kingdom.md
           items:
+            - name: Egyesült Királyság – áttekintés
+              href: ../financials/localizations/united-kingdom.md
             - name: Építőipari séma
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: Jóváírás létrehozása a kiegyenlítési engedményen
@@ -2516,15 +2782,17 @@
             - name: Adó digitalizálása az áfára vonatkozóan
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: Amerikai Egyesült Államok
-          href: ../financials/localizations/united-states.md
           items:
+            - name: Egyesült Államok – áttekintés
+              href: ../financials/localizations/united-states.md
             - name: Év végi 1099-es jelentés az Egyesült Államok számára
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: 1099-es űrlap az állami szektor számára
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Emberi erőforrások
-      href: hr/hr-landing-page.md
       items:
+        - name: Emberi erőforrások áttekintése
+          href: hr/hr-landing-page.md
         - name: Emberi erőforrásokra vonatkozó stratégia kialakítása
           items:
             - name: Célok létrehozása
@@ -2676,8 +2944,9 @@
             - name: Alkalmazotti sérülések és megbetegedések adatainak karbantartása
               href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: Egyesült Államok bérlista
-          href: hr/localizations/noam-usa-payroll.md
           items:
+            - name: Egyesült Államok bérlista – áttekintés
+              href: hr/localizations/noam-usa-payroll.md
             - name: Bérlista beállítása
               items:
                 - name: Bérlista beállítása a dolgozók számára
@@ -2743,16 +3012,18 @@
                 - name: Szabványos bérlistajelentések
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: Intelligencia
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Intelligencia kezdőlapja
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: Adathozzáférés és jelentéskészítés
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Power BI-tartalom
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Power BI-tartalom kezdőlapja
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: Tényleges – költségvetés szerinti
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
-            - name: Juttatások
+            - name: Előnyök
               href: ../dev-itpro/analytics/benefits-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Készpénzáttekintés
               href: ../financials/cash-bank-management/Cash-Overview-Power-BI-content.md
@@ -2763,8 +3034,9 @@
             - name: Kompenzáció és juttatások
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Költségkönyvelési elemzés
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Költségkönyvelés elemzése Power BI-tartalom
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Költségkezelés
@@ -2807,13 +3079,14 @@
               href: ../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
         - name: Jelentésdokumentumok készítése és nyomtatása
           items:
-            - name: A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése
+            - name: A Dokumentumjelentési szolgáltatások áttekintése
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
             - name: SSRS beállítása helyszíni telepítésekhez
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Nyomtatás
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
+                - name: A dokumentumnyomtatás áttekintése
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: A dokumentumirányítási ügynök frissítése
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: ER-konfigurációktól függő Finance and Operation-verzió tervezése
-              items:
-                - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: ER-megoldás tervezése pénzügyi dimenziók használatára
               items:
                 - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
@@ -3032,6 +3303,8 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: Üzletidokumentum-kezelés – áttekintés
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: ER-keretrendszer API
               items:
                 - name: Elektronikus jelentéskészítési funkciók listájának kibővítése
@@ -3081,16 +3354,19 @@
             - name: Használja saját adatbázisát
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Készletgazdálkodás
-      href: ../supply-chain/inventory/inventory-home-page.md
       items:
-        - name: Beérkezés áttekintése
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Készletgazdálkodás áttekintése
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: Beérkezés
           items:
+            - name: Beérkezés áttekintése
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: A cikk érkezésáttekintési profiljának beállítása
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: Minőségkezelés
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: Minőségkezelés áttekintése
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: Minőségkezelési folyamatok
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: Szabálytalanság kezelése
@@ -3156,8 +3432,9 @@
             - name: Aktuális készlet mobil munkaterület
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: Kimenő folyamat
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: Kimenő folyamat áttekintése
+              href: ../supply-chain/inventory/outbound-process.md
             - name: Készletmennyiségek lefoglalása
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: Egy értékesítési rendelés foglalása ugyanazon kötegből
@@ -3265,12 +3542,140 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: Karbantartási kérés jelentései
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: Alaptervezés
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: Alaptervek
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: Munkarendelések beállítása
           items:
+            - name: 'Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák'
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: Munkarendelés életciklus-állapotai
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: Munkarendelés típusai
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: Munkarendelési projekt beállítása
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: Szolgáltatási szint és leírás
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: Ütemezett végrehajtás
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: Hibakezelés
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: Munkarendelések
+          items:
+            - name: Bevezetés a munkarendelések használatába
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: Manuálisan létrehozott munkarendelések
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: Karbantartási előrejelzések
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: Beszerzés
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: Eszközök számlálóinak manuális frissítése
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: Eszközök számlálóinak automatikus frissítése
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: Karbantartási ellenőrző listák
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: Karbantartás miatti üzemkimaradás
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: Hiba hozzáadása munkarendeléshez
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: Munkarendelés jelentése
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: Munkarendelés-gyűjtők
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: Aktív munkarendelés-karbantartási feladatok
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: Munkarendelések és tárgyi eszközök
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: A Projektvezetés és könyveléssel való integráció
+          items:
+            - name: 'Előrejelzések, munkarendelések és projektek'
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Megelőző és reaktív karbantartás
+          items:
+            - name: Megelőző karbantartás
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: Karbantartási tervek
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: Karbantartási tervek ütemezése
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: Karbantartási körök
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: Karbantartási ütemezés
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: Karbantartási ütemezés költsége
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: Munkarendelések létrehozása
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: Karbantartás miatti üzemkimaradás
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Kapacitástervezés
+          items:
+            - name: Kapacitásterhelés kiszámítása
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: Cikkelőrejelzés kiszámítása
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: Munkarendelés ütemezése
+          items:
+            - name: Karbantartási dolgozó naptára és ütemezés
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: Preferált karbantartási dolgozók
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: Munkarendelések ütemezése
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: Munkarendelés elküldése
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: Munkarendelés ütemezése megadott dátumra és időpontra
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: Ütemezett munkarendelés-karbantartási feladatok
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: Kapacitásterhelés számítása ütemezett munkarendeléseken
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: Felhasználás
+          items:
+            - name: Felhasználás regisztrálása
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: Felhasználási jelentések létrehozása
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: Garancia
+          items:
+            - name: Garanciaszerződés
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: Eszközök és eszköztípusok garanciája
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: Karbantartási költségvetések
+          items:
+            - name: Karbantartási költségvetések
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: Karbantartási költségvetések frissítése
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: Kontrolling és jelentéskészítés
+          items:
+            - name: Költség- és dátumellenőrzés
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: Munkaóra-ellenőrzés
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: Hibás eszköz költségkontrollja
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: Eszköz hibájának elemzése
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: Eszköz KPI-k
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: Cikk használati helye
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: Karbantartás állapota
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: Adatkezelés
+          items:
+            - name: Célentitások
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: Alaptervezés
+      items:
+        - name: Alaptervezés kezdőlap
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: Alaptervek
+          items:
+            - name: Alaptervek áttekintése
+              href: ../supply-chain/master-planning/master-plans.md
             - name: Alaptervek beállítása
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Alaptervezés beállítóvarázsló
@@ -3304,8 +3709,9 @@
             - name: Az alaptervezés teljesítményének javítása
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Alaptervek és több telephelyes funkciók
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: Az alaptervezés és a többhelyes funkció áttekintése
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: 'Alaptervezés telephely-lefedettséghez, kötelező raktár'
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: 'Alaptervezés helyfedezethez, a raktár nem kötelező'
@@ -3327,8 +3733,9 @@
             - name: Együttműködés a belső ellátási lánc vevőivel
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Igény-előrejelzés
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: Igény-előrejelzés áttekintése
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: Igény-előrejelzés beállítása
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: Előzményadatok importálása az igény-előrejelzésekhez
@@ -3349,12 +3756,14 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Igény-előrejelzés manuális módosítása
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilalkalmazás
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Dynamics 365 for Unified Operations mobilalkalmazás
       items:
-        - name: Elérhető mobil munkaterületek
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Dynamics 365 for Unified Operations mobilalkalmazás kezdőlapja
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: Mobil munkaterületek
           items:
+            - name: Elérhető mobil munkaterületek
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: Vállalat címtára
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Költségkontroll
@@ -3367,11 +3776,11 @@
               href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Saját csapat
               href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
-            - name: Projekt mobilalkalmazásainak áttekintése
+            - name: Project-mobilalkalmazások áttekintése
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: Projekt időbejegyzése
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: Projekt időnyilvántartása
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: Beszerzési rendelés jóváhagyása
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: Mobil munkaterületek közzététele
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office-integráció
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Az Office-integráció áttekintése
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Office-integrációs oktatóanyag
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
@@ -3401,25 +3811,29 @@
         - name: Office-integráció – hibaelhárítás
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
     - name: Beszerzés és forrás
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
       items:
+        - name: A Beszerzés és forrás modul áttekintése
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamat
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: Beszerzési katalógusok
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: Beszerzési katalógusok áttekintése
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: Beszerzési katalógus létrehozása
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: Beszerzési kategóriák hierarchiájának beállítása
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: Beszerzési igénylések
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
+            - name: Beszerzési igénylések áttekintése
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
             - name: Beszerzési igénylési munkafolyamat
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: Ajánlatkérések
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: Ajánlatkérések (RFQ-k) áttekintése
+              href: ../supply-chain/procurement/request-quotations.md
             - name: Ajánlatkérés létrehozása
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: 'Olyan igénylés létrehozása, amely ajánlatkérést használ'
@@ -3471,8 +3885,9 @@
             - name: Szállítói visszatérítések
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: Beszerzési irányelvek
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: Beszerzési irányelvek áttekintése
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: Beszerzési irányelvek létrehozása
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: Beszerzésikategória-hierarchiák irányelveinek beállítása
@@ -3530,18 +3945,21 @@
             - name: Projekt-költségvetési verziók elküldése és jóváhagyása
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: Szervezeti adminisztráció
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: Szervezeti adminisztráció kezdőlap
+          href: organization-administration/organization-administration-home-page.md
         - name: Számsorozatok
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: Számsorozatok áttekintése
+              href: organization-administration/number-sequence-overview.md
             - name: Egyedi számsorozatok beállítása
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: Számsorozatok beállítása a varázsló segítségével
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Szervezetek és szervezeti hierarchiák
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: Szervezetek és szervezeti hierarchiák áttekintése
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: Szervezeti hierarchia megtervezése
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Szervezeti hierarchia létrehozása
@@ -3551,8 +3969,9 @@
             - name: Üzemi egységek létrehozása
               href: organization-administration/tasks/create-operating-unit.md
         - name: Globális címjegyzék
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: Globális címjegyzék áttekintése
+              href: organization-administration/overview-global-address-book.md
             - name: Terv a globális címjegyzékhez és egyéb címjegyzékekhez
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Globális címjegyzék konfigurálása
@@ -3562,8 +3981,9 @@
             - name: Címjegyzékek konfigurálása
               href: organization-administration/tasks/address-books.md
         - name: Munkafolyamat-rendszer
-          href: organization-administration/overview-workflow-system.md
           items:
+            - name: A munkafolyamat-rendszer áttekintése
+              href: organization-administration/overview-workflow-system.md
             - name: A munkafolyamat-rendszer felépítése
               href: organization-administration/workflow-system-architecture.md
             - name: Munkafolyamat-elemek
@@ -3571,8 +3991,9 @@
             - name: Munkafolyamat-műveletek
               href: organization-administration/workflow-actions.md
             - name: Munkafolyamatok létrehozása
-              href: organization-administration/create-workflow.md
               items:
+                - name: Munkafolyamatok létrehozása – áttekintés
+                  href: organization-administration/create-workflow.md
                 - name: Munkafolyamat-tulajdonságok konfigurálása
                   href: organization-administration/configure-workflow-properties.md
                 - name: Manuális feladatok konfigurálása
@@ -3624,27 +4045,31 @@
             - name: Munkafolyamat GYIK
               href: organization-administration/workflow-FAQ.md
         - name: Figyelmeztetések
-          href: get-started/alerts-overview.md
           items:
+            - name: Figyelmeztetések áttekintése
+              href: get-started/alerts-overview.md
             - name: Figyelmeztetési szabályok létrehozása
               href: get-started/create-alerts.md
             - name: Figyelmeztetések kötegelt feldolgozása
               href: get-started/alerts-managing.md
-            - name: Ügyfél riasztási értesítései e-mailben
+            - name: Ügyfél figyelmeztetési értesítései e-mailben
               href: get-started/alert-email-notifications.md
         - name: Elektronikus aláírások
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: Az elektronikus aláírások áttekintése
+              href: organization-administration/electronic-signature-overview.md
             - name: Elektronikus aláírások beállítása
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Esetkezelés
-          href: organization-administration/cases.md
           items:
+            - name: Esetkezelés – áttekintés
+              href: organization-administration/cases.md
             - name: 'Esetbiztonság, folyamatok és kategóriák tervezése'
               href: organization-administration/plan-case-management.md
         - name: Rekordsablonok
-          href: organization-administration/record-templates.md
           items:
+            - name: Rekordsablonok áttekintése
+              href: organization-administration/record-templates.md
             - name: Rekordsablon létrehozása
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: Rekordsablon használata egy új rekord létrehozásához
@@ -3653,11 +4078,12 @@
           href: organization-administration/configure-document-management.md
         - name: E-mail konfigurálása és küldése
           href: organization-administration/configure-email.md
-        - name: Dátum-/időadatok és időzónák
+        - name: Dátum/időadatok és időzónák
           href: organization-administration/date-time-zones.md
     - name: Gyártásvezérlés
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: Termelési folyamat áttekintése
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'Vegyes módú tervezés: Elkülönített, folyamatos és lean típusú források kombinálása'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: Alvállalkozói munka kezelése a termelésben
@@ -3721,8 +4147,9 @@
             - name: Termelési feladatok működtetése
               items:
                 - name: Termelési rendelés életciklusának kezelése
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: Termelési rendelés életciklusának áttekintése
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: Termelési rendelés létrehozása
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: Termelési rendelés becslése
@@ -3782,8 +4209,9 @@
                 - name: Termelés feladása
                   href: ../supply-chain/cost-management/production-posting.md
             - name: Munkaidő és jelenlét rögzítése
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: Munkaidő és jelenlét rögzítésének áttekintése
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: Regisztrációk alapján történő fizetés
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: Távollét regisztrálása munkaidőben és jelenlétben
@@ -3944,9 +4372,10 @@
                   href: ../supply-chain/production-control/consumption.md
                 - name: Termelés feladása
                   href: ../supply-chain/cost-management/production-posting.md
-    - name: Termékinformációk kezelése
-      href: ../supply-chain/pim/product-information.md
+    - name: Termékinformáció-kezelés
       items:
+        - name: Termékek adatainak áttekintése
+          href: ../supply-chain/pim/product-information.md
         - name: Termékinformációk
           items:
             - name: Termékazonosítók
@@ -3972,8 +4401,9 @@
             - name: Kiadott termék létrehozása egyetlen vállalat részére
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: Termékéletciklus állapota
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: Termékéletciklus-állapot áttekintése
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: Új termékéletciklus-állapot létrehozása
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: Alapértelmezett termékéletciklus-állapot létrehozása
@@ -4017,11 +4447,13 @@
             - name: Anyagjegyzék-számítások
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: Termékkonfiguráció
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: Termékkonfiguráció áttekintése
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: Dimenzión alapuló konfiguráció létrehozása
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: Dimenzión alapuló termékkonfiguráció áttekintése
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: Termékdimenzió
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: Dimenzión alapuló alaptermék létrehozása
@@ -4041,8 +4473,9 @@
                 - name: Dimenzión alapuló konfigurációk létrehozása
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: Megszorításon alapuló konfiguráció létrehozása
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: Termékkonfigurációs modell beállítása
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: Számítás a termékkonfigurációs modellhez GYIK
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: Konfigurációs szabály
@@ -4072,8 +4505,9 @@
                 - name: Termékmodellekhez szükséges adatok továbbítása
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: Projektvezetés és könyvelés
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: Projektvezetés és könyvelés áttekintése
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: Vállalatközi számlázás
           href: ../financials/project-management/intercompany-invoicing.md
         - name: Vállalatközi projektszámlázás konfigurálása
@@ -4099,23 +4533,25 @@
         - name: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: Munkalebontási struktúrák
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Microsoft Project-ügyfélintegráció
+            - name: Munkalebontási struktúrák áttekintése
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Microsoft Project Client-integráció
               href: ../financials/project-management/project-integration.md
-        - name: Projekt mobilalkalmazásainak áttekintése
+        - name: Project-mobilalkalmazások áttekintése
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: Projektidő megadására szolgáló mobil munkaterület
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: Projekt-időnyilvántartás mobilalkalmazás
+        - name: Project Timesheet mobilalkalmazás
           href: ../financials/project-management/project-timesheet.md
         - name: Projekthez tartozó időnyilvántartások mobileszközön
           href: ../financials/project-management/mobile-timesheets.md
-        - name: Egyéni mezők alkalmazása a Projekt-időnyilvántartás mobilalkalmazás számára
+        - name: Egyéni mezők alkalmazása a Project Timesheet mobilalkalmazás számára
           href: ../financials/project-management/custom-fields-mobile.md
     - name: Értékesítés és marketing
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: Értékesítés és marketing – áttekintés
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: Értékesítési rendelések
           items:
             - name: Rendelési ígéretek
@@ -4149,8 +4585,9 @@
             - name: Értékesítési rendelések megerősítése
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: Értékesítési szerződések
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: Értékesítési szerződések áttekintése
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: Értékesítési szerződések megadása
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: Értékesítési szerződések teljesítése
@@ -4179,18 +4616,20 @@
               href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
             - name: Értékesítési jutalékok szabályainak beállítása
               href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
-        - name: Kereskedelmi kedvezmény
+        - name: Promóciós engedmény
           href: ../supply-chain/sales-marketing/trade-allowance.md
         - name: Új kereskedelmi szerződés létrehozása
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
     - name: Szolgáltatáskezelés
-      href: ../supply-chain/service-management/service-management-home-page.md
       items:
+        - name: Szolgáltatáskezelés áttekintése
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: Ügyfélszolgálat beállítása
           items:
             - name: Szolgáltatási szerződések beállítása
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: Szolgáltatási szerződések áttekintése
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: Szolgáltatási szerződések létrehozása
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: Szolgáltatás intervallumai
@@ -4204,13 +4643,15 @@
                 - name: Szolgáltatássablon-csoport létrehozása
                   href: ../supply-chain/service-management/create-service-template-group.md
             - name: Szervizfeladatok beállítása
-              href: ../supply-chain/service-management/service-tasks.md
               items:
+                - name: Szervizfeladatok áttekintése
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: Szervizfeladat-kapcsolatok létrehozása
                   href: ../supply-chain/service-management/create-service-task-relations.md
             - name: Szolgáltatási tárgyak beállítása
-              href: ../supply-chain/service-management/service-objects.md
               items:
+                - name: Szolgáltatási tárgyak áttekintése
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: Szolgáltatási objektumok létrehozása
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: Készletcikkek hozzárendelése a szolgáltatás tárgyához
@@ -4230,8 +4671,9 @@
                 - name: Sablonok csatolása szolgáltatásobjektumokhoz
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: Okkódok meghatározása a szervizrendelésekhez
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: Okkódok szervizrendelésekhez
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: A szervizrendelések fokozatai
                   href: ../supply-chain/service-management/service-order-stages.md
                 - name: Szervizrendelési fokozatok beállítása
@@ -4239,9 +4681,10 @@
                 - name: Okkódok létrehozása
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: Szolgáltatási szerződések és előfizetések beállítása
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
-                - name: Eőfizetés eladási árai
+                - name: Szolgáltatásiszint-szerződések áttekintése
+                  href: ../supply-chain/service-management/service-level-agreements.md
+                - name: Előfizetés eladási árai
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: Előfizetési csoportok
                   href: ../supply-chain/service-management/subscription-groups.md
@@ -4254,8 +4697,9 @@
             - name: A javításkezelés beállítása
               href: ../supply-chain/service-management/repair-management.md
             - name: Vevői visszáru beállítása
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
               items:
+                - name: Vevői visszáru áttekintése
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
                 - name: Intézkedési kódok beállítása
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: Visszaadási okkódok beállítása
@@ -4263,14 +4707,17 @@
                 - name: A visszaadott cikkek kivezetési módjának megadása
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: A vevőknek nyújtott szolgáltatások használata
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: A vevőknek nyújtott szolgáltatások használata – áttekintés
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: Szolgáltatási szerződések teljesítése
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Szolgáltatási szerződések teljesítése – áttekintés
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Szerződés kialakítása és megkötése
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: Szolgáltatási szerződések kialakítása és megkötése – áttekintés
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: Szolgáltatási szerződések létrehozása
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: Szolgáltatási előfizetések
@@ -4296,8 +4743,9 @@
                     - name: Előfizetési árak frissítése és indexelése
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: Vevői kérések kezelése
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Szolgáltatási szerződések teljesítése – áttekintés
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: Szervizrendelés kezdési időpontjának és tartamának megtekintése
@@ -4407,8 +4855,9 @@
                     - name: Előfizetési tranzakciók számlázása
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: Szállításkezelés
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: Szállításkezelés áttekintése
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: Szállításkezelési motorok
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: Új szállításkezelő motor létrehozása
@@ -4420,8 +4869,9 @@
         - name: Szállítmányozási útvonaltervezés
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Rakományok tervezése központösszevonás használatával
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: Rakományok tervezése központösszevonás használatával – áttekintés
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: Rakományok és szállítmányok tervezése a Rakománytervezési munkaterülettel
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: A tároló tömegének és térfogatának feltüntetése a rakományon
@@ -4448,14 +4898,16 @@
           href: ../supply-chain/transportation/tasks/set-up-rate-masters.md
         - name: A szállítmányozók beállítása
           href: ../supply-chain/transportation/tasks/set-up-shipping-carriers.md
-        - name: Egy elemre vonatkozó szállítási megszorítások beállítása
+        - name: Egy cikkre vonatkozó szállítási megszorítások beállítása
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: Raktárkezelés
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: Raktárkezelés áttekintése
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: Raktár konfigurálása
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: Raktár konfigurálása – áttekintés
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: Raktár beállítása a raktári konfigurációs sablon segítségével
               href: ../supply-chain/inventory/warehouse-template.md
             - name: Munka ellenőrzése munkasablonok és helyutasítások használatával
@@ -4485,8 +4937,9 @@
             - name: Raktár beállítása átmozgatási rendelésekhez
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: Raktári munkairányelvek
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: Raktári munkairányelvek áttekintése
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: Raktári munkairányelvek beállítása
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Készlet mozgatásának engedélyezése társított munkával a Raktárkezelésben
@@ -4546,8 +4999,9 @@
             - name: Készletcímke számlálása
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: Feltöltés
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: Feltöltés áttekintése
+              href: ../supply-chain/warehousing/replenishment.md
             - name: Azonnali feltöltés
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: Feltöltés visszavonási kanbanokkal
@@ -4555,8 +5009,9 @@
             - name: A minimum-maximum feltöltési folyamat beállítása
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
         - name: A raktározási alkalmazás telepítése és konfigurálása
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
+            - name: A telepítés és konfigurálás áttekintése
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: Mezőnevek konfigurálása a raktározási alkalmazásban
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: Mobileszközök beállítása raktári munkához
