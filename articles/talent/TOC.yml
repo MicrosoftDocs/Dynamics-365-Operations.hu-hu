@@ -8,6 +8,14 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. augusztus 22.
+              href: whats-new-talent-august-21-2019.md
+            - name: 2019. augusztus 13.
+              href: whats-new-talent-august-15-2019.md
+            - name: 2019. augusztus 6.
+              href: whats-new-talent-august-7-2019.md
+            - name: 2019. július 30.
+              href: whats-new-talent-july-31-2019.md
             - name: 2019. július 23.
               href: whats-new-talent-july-24-2019.md
             - name: 2019. július 16.
@@ -24,16 +32,16 @@
               href: whats-new-talent-june-11-2019.md
             - name: 2019. június 4.
               href: whats-new-talent-june-4-2019.md
-            - name: 2019. május 28.
-              href: whats-new-talent-may-28-2019.md
-            - name: 2019. május 21.
-              href: whats-new-talent-may-21-2019.md
-            - name: 2019. május 13.
-              href: whats-new-talent-may-13-2019.md
-            - name: 2019. május 6.
-              href: whats-new-talent-may-6-2019.md
             - name: Újdonságok (2019-es archívum)
               items:
+                - name: 2019. május 28.
+                  href: whats-new-talent-may-28-2019.md
+                - name: 2019. május 21.
+                  href: whats-new-talent-may-21-2019.md
+                - name: 2019. május 13.
+                  href: whats-new-talent-may-13-2019.md
+                - name: 2019. május 6.
+                  href: whats-new-talent-may-6-2019.md
                 - name: 2019. április 30.
                   href: whats-new-talent-april-30-2019.md
                 - name: 2019. április 25.
@@ -204,6 +212,8 @@
               href: departments-jobs-positions.md
             - name: Feladat összetevőinek beállítása
               href: create-job.md
+            - name: Korszerű alkalmazotti belépés és navigálás
+              href: streamlined-employee-entry.md
             - name: Részlegek létrehozása és megjelenítése a szervezeti hierarchiában
               href: create-department-add-department-hierarchy.md
             - name: Több jogi személyre kiterjedő HR-paraméterek beállítása
@@ -220,7 +230,7 @@
               href: workflow-manage-employee-information.md
             - name: Számsorozatok beállítása
               items:
-                - name: Számsorozatok áttekintése
+                - name: Számsorozat áttekintése
                   href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Egyedi számsorozatok beállítása
                   href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
