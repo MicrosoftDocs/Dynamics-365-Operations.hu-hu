@@ -1,9 +1,9 @@
 ---
-title: A vevőknek nyújtott szolgáltatások használata
+title: A vevőknek nyújtott szolgáltatások használata – áttekintés
 description: Az Ügyfélszolgálat modul a professzionális, szolgáltatás-központú vállalatokat és gyártási szolgáltató szervezeteket támogatja.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,33 +18,33 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f51b749cc9527cb3e86352b0373babd6c524dbe7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a73852bf6163a887c7bab954a61581fd8e0a8ded
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550468"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865782"
 ---
-# <a name="work-with-customer-service"></a><span data-ttu-id="1476d-103">A vevőknek nyújtott szolgáltatások használata</span><span class="sxs-lookup"><span data-stu-id="1476d-103">Work with customer service</span></span> 
+# <a name="work-with-customer-service-overview"></a><span data-ttu-id="0b07d-103">A vevőknek nyújtott szolgáltatások használata – áttekintés</span><span class="sxs-lookup"><span data-stu-id="0b07d-103">Work with customer service overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="1476d-104">Az Ügyfélszolgálat modul a professzionális, szolgáltatás-központú vállalatokat és gyártási szolgáltató szervezeteket támogatja.</span><span class="sxs-lookup"><span data-stu-id="1476d-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
+<span data-ttu-id="0b07d-104">Az Ügyfélszolgálat modul a professzionális, szolgáltatás-központú vállalatokat és gyártási szolgáltató szervezeteket támogatja.</span><span class="sxs-lookup"><span data-stu-id="0b07d-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
 
-<span data-ttu-id="1476d-105">Az ügyfélszolgálat a következő funkciókat tartalmazza:</span><span class="sxs-lookup"><span data-stu-id="1476d-105">Customer service includes the following functionality:</span></span>
+<span data-ttu-id="0b07d-105">Az ügyfélszolgálat a következő funkciókat tartalmazza:</span><span class="sxs-lookup"><span data-stu-id="0b07d-105">Customer service includes the following functionality:</span></span>
 
-  - <span data-ttu-id="1476d-106">A fő szolgáltatáskezelési folyamatok, például a szolgáltatási szerződések, szervizrendelések és visszárukezelés.</span><span class="sxs-lookup"><span data-stu-id="1476d-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
+  - <span data-ttu-id="0b07d-106">A fő szolgáltatáskezelési folyamatok, például a szolgáltatási szerződések, szervizrendelések és visszárukezelés.</span><span class="sxs-lookup"><span data-stu-id="0b07d-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
 
-  - <span data-ttu-id="1476d-107">Egy fejlett javításkezelési rendszer, amely magában foglalja a javítások nyilvántartását és a darabjegyzékek verziókövetését.</span><span class="sxs-lookup"><span data-stu-id="1476d-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
+  - <span data-ttu-id="0b07d-107">Egy fejlett javításkezelési rendszer, amely magában foglalja a javítások nyilvántartását és a darabjegyzékek verziókövetését.</span><span class="sxs-lookup"><span data-stu-id="0b07d-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
 
-  - <span data-ttu-id="1476d-108">Alkalmazotti szerepek, például szervizvezető, diszpécser, szerviztechnikus és szerviztanácsadó szerep támogatása</span><span class="sxs-lookup"><span data-stu-id="1476d-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
+  - <span data-ttu-id="0b07d-108">Alkalmazotti szerepek, például szervizvezető, diszpécser, szerviztechnikus és szerviztanácsadó szerep támogatása</span><span class="sxs-lookup"><span data-stu-id="0b07d-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
 
-  - <span data-ttu-id="1476d-109">Szolgáltatás-előfizetések, amelyek a bevételeket folyamatossá teszik, és a szervizek gyakoriságától függetlenek.</span><span class="sxs-lookup"><span data-stu-id="1476d-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
+  - <span data-ttu-id="0b07d-109">Szolgáltatás-előfizetések, amelyek a bevételeket folyamatossá teszik, és a szervizek gyakoriságától függetlenek.</span><span class="sxs-lookup"><span data-stu-id="0b07d-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
 
-  - <span data-ttu-id="1476d-110">Szolgáltatásiszint-szerződések a differenciált vevőbázis támogatására.</span><span class="sxs-lookup"><span data-stu-id="1476d-110">Service-level agreements that support a differentiated customer base</span></span>
+  - <span data-ttu-id="0b07d-110">Szolgáltatásiszint-szerződések a differenciált vevőbázis támogatására.</span><span class="sxs-lookup"><span data-stu-id="0b07d-110">Service-level agreements that support a differentiated customer base</span></span>
 
-<span data-ttu-id="1476d-111">Ebben a szakaszban található témakörök az ügyfélszolgálati üzleti folyamatot és minden üzleti folyamat összetevő áttekintését nyújtják.</span><span class="sxs-lookup"><span data-stu-id="1476d-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="1476d-112">Felsorolja az egyes üzleti folyamat összetevőkhöz tartozó képernyőket is, valamint tárgyalja az egyes összetevőkhöz kapcsolódó feladatokat.</span><span class="sxs-lookup"><span data-stu-id="1476d-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
+<span data-ttu-id="0b07d-111">Ebben a szakaszban található témakörök az ügyfélszolgálati üzleti folyamatot és minden üzleti folyamat összetevő áttekintését nyújtják.</span><span class="sxs-lookup"><span data-stu-id="0b07d-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="0b07d-112">Felsorolja az egyes üzleti folyamat összetevőkhöz tartozó képernyőket is, valamint tárgyalja az egyes összetevőkhöz kapcsolódó feladatokat.</span><span class="sxs-lookup"><span data-stu-id="0b07d-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
 
 
 

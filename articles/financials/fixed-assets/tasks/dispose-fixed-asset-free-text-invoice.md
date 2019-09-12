@@ -1,9 +1,9 @@
 ---
 title: Tárgyi eszköz kivezetése szabadszöveges számlával
-description: Ez a folyamat bemutatja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével.
+description: Ez a témakör leírja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,28 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26446df21a3b55abcdd5f163ae84f8e35d853965
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 179a6e45d57baf810068cb5c14aed670ebb94706
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846991"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914653"
 ---
-# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="f1aa8-103">Tárgyi eszköz kivezetése szabadszöveges számlával</span><span class="sxs-lookup"><span data-stu-id="f1aa8-103">Dispose of a fixed asset using a free text invoice</span></span>
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="f47c5-103">Tárgyi eszköz kivezetése szabadszöveges számlával</span><span class="sxs-lookup"><span data-stu-id="f47c5-103">Dispose of a fixed asset using a free text invoice</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f1aa8-104">Ez az eljárás bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadszöveges számla használatával.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-104">This procedure shows how to dispose of a fixed asset using the free text invoice.</span></span>
+<span data-ttu-id="f47c5-104">Ez a témakör bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadszöveges számla használatával.</span><span class="sxs-lookup"><span data-stu-id="f47c5-104">This topic explains how to dispose of a fixed asset using the free text invoice.</span></span>
 
-1. <span data-ttu-id="f1aa8-105">Ugorjon a Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák pontra.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-105">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
-2. <span data-ttu-id="f1aa8-106">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-106">Click New.</span></span>
-3. <span data-ttu-id="f1aa8-107">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-107">In the Customer account field, enter or select a value.</span></span>
-4. <span data-ttu-id="f1aa8-108">Ellenőrizze, és szükség szerint módosítsa a számla alapértelmezett dátumát.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-108">Validate the default Invoice date and edit if applicable.</span></span>
-5. <span data-ttu-id="f1aa8-109">Ellenőrizze a hátralévő alapértelmezett fejlécmezőket, például a pénznemét, és ha szükséges, módosítsa.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-109">Validate remaining default header fields, such as Currency and edit if applicable.</span></span>
-6. <span data-ttu-id="f1aa8-110">Adjon meg egy leírást a számlasorban.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-110">Enter a Description into the invoice line.</span></span>
-7. <span data-ttu-id="f1aa8-111">Adja meg vagy válassza ki a a számlasor fő számláját.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-111">Enter or select the Main account for the invoice line.</span></span>
-8. <span data-ttu-id="f1aa8-112">Ellenőrizze az alapértelmezett áfacsoportot és a cikk áfacsoportját.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-112">Validate the default Sales tax group and Item sales tax group.</span></span>
-9. <span data-ttu-id="f1aa8-113">Írja be az egységárat vagy a tárgyi eszköz értékesítésének összegét.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-113">Enter the Unit price or hte Amount of the sale of the fixed asset.</span></span>
-10. <span data-ttu-id="f1aa8-114">Kattintson az Sor részletei lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-114">Click Line details.</span></span>  
-11. <span data-ttu-id="f1aa8-115">Válassza ki az értékesítendő tárgyi eszköz számát.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-115">Select the Fixed asset number to be sold.</span></span>
-12. <span data-ttu-id="f1aa8-116">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f1aa8-116">Click Post.</span></span>
+1. <span data-ttu-id="f47c5-105">A navigációs panelen ugorjon ide: **Modulok > Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák**.</span><span class="sxs-lookup"><span data-stu-id="f47c5-105">In the navigation pane, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
+2. <span data-ttu-id="f47c5-106">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f47c5-106">Select **New**.</span></span>
+3. <span data-ttu-id="f47c5-107">A **Vevőszámla** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f47c5-107">In the **Customer account** field, enter or select a value.</span></span>
+4. <span data-ttu-id="f47c5-108">Ellenőrizze, és szükség szerint módosítsa a **Számla** alapértelmezett dátumát.</span><span class="sxs-lookup"><span data-stu-id="f47c5-108">Validate the default **Invoice** date and edit if applicable.</span></span>
+5. <span data-ttu-id="f47c5-109">Ellenőrizze a hátralévő alapértelmezett fejlécmezőket, például a **Pénznemet**, és ha szükséges, módosítsa.</span><span class="sxs-lookup"><span data-stu-id="f47c5-109">Validate remaining default header fields, such as **Currency** and edit if applicable.</span></span>
+6. <span data-ttu-id="f47c5-110">A **Számlasorok** szakaszban ellenőrizze a **Leírás** és a **Fő számla** mezőket.</span><span class="sxs-lookup"><span data-stu-id="f47c5-110">In the **Invoice lines** section, validate the **Description** and **Main account** fields.</span></span>
+7. <span data-ttu-id="f47c5-111">Ellenőrizze az alapértelmezett **Áfacsoportot** és a **Cikk áfacsoportja** mezőket.</span><span class="sxs-lookup"><span data-stu-id="f47c5-111">Validate the default **Sales tax group** and **Item sales tax group** fields.</span></span>
+8. <span data-ttu-id="f47c5-112">Írja be az **Egységárat** vagy a tárgyi eszköz értékesítésének **összegét**.</span><span class="sxs-lookup"><span data-stu-id="f47c5-112">Enter the **Unit price** or the **Amount** of the sale of the fixed asset.</span></span>
+9. <span data-ttu-id="f47c5-113">Jelölje ki a **Sorrészletek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="f47c5-113">Select the **Line details** section.</span></span>  
+10. <span data-ttu-id="f47c5-114">A **Tárgyi eszköz** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f47c5-114">Enter or select a value in the **Fixed asset** field.</span></span>
+11. <span data-ttu-id="f47c5-115">Válassza a **Feladás** parancsot.</span><span class="sxs-lookup"><span data-stu-id="f47c5-115">Select **Post**.</span></span> 
 

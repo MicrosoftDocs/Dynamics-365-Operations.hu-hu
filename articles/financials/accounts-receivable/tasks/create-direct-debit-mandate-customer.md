@@ -3,7 +3,7 @@ title: Beszedési megbízási felhatalmazás létrehozása vevő részére
 description: Ez az útmutató bemutatja, hogyan hozhat létre beszedési megbízási felhatalmazást, és hogyan használhatja azt számlához.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,77 +16,77 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c93a1aba6ca32e783a6ed6f005c72aab3e06978
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5ca5ff2290df2179004ca1cebd11f67fbb7a724e
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843001"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916369"
 ---
-# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="4aa99-103">Beszedési megbízási felhatalmazás létrehozása vevő részére</span><span class="sxs-lookup"><span data-stu-id="4aa99-103">Create a direct debit mandate for a customer</span></span>
+# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="e0fed-103">Beszedési megbízási felhatalmazás létrehozása vevő részére</span><span class="sxs-lookup"><span data-stu-id="e0fed-103">Create a direct debit mandate for a customer</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4aa99-104">Ez az útmutató bemutatja, hogyan hozhat létre beszedési megbízási felhatalmazást, és hogyan használhatja azt számlához.</span><span class="sxs-lookup"><span data-stu-id="4aa99-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
+<span data-ttu-id="e0fed-104">Ez az útmutató bemutatja, hogyan hozhat létre beszedési megbízási felhatalmazást, és hogyan használhatja azt számlához.</span><span class="sxs-lookup"><span data-stu-id="e0fed-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
 
 
-## <a name="create-a-bank-account"></a><span data-ttu-id="4aa99-105">Bankszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="4aa99-105">Create a bank account</span></span>
-1. <span data-ttu-id="4aa99-106">Ugorjon a Kinnlevőségek > Vevők > Minden vevő pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-106">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="4aa99-107">Válassza ki például az US-001-et.</span><span class="sxs-lookup"><span data-stu-id="4aa99-107">For example, select US-001</span></span>
-3. <span data-ttu-id="4aa99-108">A Művelet panelen kattintson a Vevő elemre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-108">On the Action Pane, click Customer.</span></span>
-4. <span data-ttu-id="4aa99-109">Kattintson a Bankszámlák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-109">Click Bank accounts.</span></span>
-5. <span data-ttu-id="4aa99-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-110">Click New.</span></span>
-6. <span data-ttu-id="4aa99-111">A Bankszámla mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-111">In the Bank account field, type a value.</span></span>
-7. <span data-ttu-id="4aa99-112">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4aa99-112">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="4aa99-113">Az IBAN mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-113">In the IBAN field, type a value.</span></span>
-9. <span data-ttu-id="4aa99-114">Érték beírása a Pénznem mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4aa99-114">In the Currency field, type a value.</span></span>
-10. <span data-ttu-id="4aa99-115">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-115">Click Save.</span></span>
-11. <span data-ttu-id="4aa99-116">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-116">Close the page.</span></span>
-12. <span data-ttu-id="4aa99-117">Menjen a Készpénz és bankkezelés > Bankszámlák > Bankszámlák menüpontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-117">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
-13. <span data-ttu-id="4aa99-118">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="4aa99-118">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="4aa99-119">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-119">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="4aa99-120">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-120">Click Edit.</span></span>
-16. <span data-ttu-id="4aa99-121">Bontsa ki a További azonosítás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4aa99-121">Expand the Additional identification section.</span></span>
-17. <span data-ttu-id="4aa99-122">Írjon egy értéket a Beszedési megbízási azonosító mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4aa99-122">In the Direct debit ID field, type a value.</span></span>
-18. <span data-ttu-id="4aa99-123">Az IBAN mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-123">In the IBAN field, type a value.</span></span>
-19. <span data-ttu-id="4aa99-124">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-124">Close the page.</span></span>
-20. <span data-ttu-id="4aa99-125">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-125">Close the page.</span></span>
+## <a name="create-a-bank-account"></a><span data-ttu-id="e0fed-105">Bankszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="e0fed-105">Create a bank account</span></span>
+1. <span data-ttu-id="e0fed-106">A **Navigációs ablaktáblán** ugorjon a **Modulok > Kintlévőségek > Ügyfelek > Minden ügyfél** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-106">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="e0fed-107">A listában válasszon ki egy rekordot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-107">In the list, select a record.</span></span> <span data-ttu-id="e0fed-108">Válassza ki például az US-001-et.</span><span class="sxs-lookup"><span data-stu-id="e0fed-108">For example, select US-001</span></span>
+3. <span data-ttu-id="e0fed-109">A Művelet panelen kattintson a **Vevő** elemre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-109">On the Action Pane, click **Customer**.</span></span>
+4. <span data-ttu-id="e0fed-110">Kattintson a **Bankszámlák** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-110">Click **Bank accounts**.</span></span>
+5. <span data-ttu-id="e0fed-111">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-111">Click **New**.</span></span>
+6. <span data-ttu-id="e0fed-112">A **Bankszámla** mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-112">In the **Bank account** field, type a value.</span></span>
+7. <span data-ttu-id="e0fed-113">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e0fed-113">In the **Name** field, type a value.</span></span>
+8. <span data-ttu-id="e0fed-114">Az **IBAN** mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-114">In the **IBAN** field, type a value.</span></span>
+9. <span data-ttu-id="e0fed-115">Érték beírása a **Pénznem** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e0fed-115">In the **Currency** field, type a value.</span></span>
+10. <span data-ttu-id="e0fed-116">Kattintson a **Mentés** gombra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-116">Click **Save**.</span></span>
+11. <span data-ttu-id="e0fed-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-117">Close the page.</span></span>
+12. <span data-ttu-id="e0fed-118">A **navigációs ablakban** nyissa meg ezt: **Modulok > Készpénz- és banki menedzsment > Bankszámlák > Bankszámlák**.</span><span class="sxs-lookup"><span data-stu-id="e0fed-118">In the **Navigation pane**, go to **Modules > Cash and bank management > Bank accounts > Bank accounts**.</span></span>
+13. <span data-ttu-id="e0fed-119">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="e0fed-119">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="e0fed-120">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-120">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="e0fed-121">Kattintson a **Szerkesztés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-121">Click **Edit**.</span></span>
+16. <span data-ttu-id="e0fed-122">Bontsa ki a **További azonosítás** gyorslapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-122">Expand the **Additional identification** fastTab.</span></span>
+17. <span data-ttu-id="e0fed-123">Írjon egy értéket a **Beszedési megbízási azonosító** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e0fed-123">In the **Direct debit ID** field, type a value.</span></span>
+18. <span data-ttu-id="e0fed-124">Az **IBAN** mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-124">In the **IBAN** field, type a value.</span></span>
+19. <span data-ttu-id="e0fed-125">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-125">Close the page.</span></span>
+20. <span data-ttu-id="e0fed-126">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-126">Close the page.</span></span>
 
-## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="4aa99-126">Elektronikus fizetési mód meghatározása</span><span class="sxs-lookup"><span data-stu-id="4aa99-126">Define the electronic payment method</span></span>
-1. <span data-ttu-id="4aa99-127">Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési mód pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-127">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
-2. <span data-ttu-id="4aa99-128">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-128">Click New.</span></span>
-3. <span data-ttu-id="4aa99-129">Írjon be egy értéket a Fizetési mód mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4aa99-129">In the Method of payment field, type a value.</span></span>
-4. <span data-ttu-id="4aa99-130">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-130">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="4aa99-131">A beszedési megbízási felhatalmazás fizetési módjában elektronikus fizetést kell beállítani.</span><span class="sxs-lookup"><span data-stu-id="4aa99-131">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
-6. <span data-ttu-id="4aa99-132">Válassza az Igen lehetőséget a Felhatalmazás szükséges mezőben.</span><span class="sxs-lookup"><span data-stu-id="4aa99-132">Select Yes in the Require mandate field.</span></span>
-7. <span data-ttu-id="4aa99-133">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-133">Close the page.</span></span>
+## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="e0fed-127">Elektronikus fizetési mód meghatározása</span><span class="sxs-lookup"><span data-stu-id="e0fed-127">Define the electronic payment method</span></span>
+1. <span data-ttu-id="e0fed-128">A **navigációs ablaktáblán** ugorjon a **Modulok > Követelések és beszedések > Fizetés beállítása > Fizetési módok** elemre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-128">In the **Navigation pane**, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.</span></span>
+2. <span data-ttu-id="e0fed-129">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-129">Click **New**.</span></span>
+3. <span data-ttu-id="e0fed-130">Írjon be egy értéket a **Fizetési mód** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e0fed-130">In the **Method of payment** field, type a value.</span></span>
+4. <span data-ttu-id="e0fed-131">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e0fed-131">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="e0fed-132">A **Fizetés típusa** mezőben adja meg az „Elektronikus fizetés” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e0fed-132">In the **Payment type** field, enter 'Electronic payment'.</span></span> <span data-ttu-id="e0fed-133">A beszedési megbízási felhatalmazás fizetési módjában elektronikus fizetést kell beállítani.</span><span class="sxs-lookup"><span data-stu-id="e0fed-133">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
+6. <span data-ttu-id="e0fed-134">Válassza az Igen lehetőséget a **Felhatalmazás szükséges** mezőben.</span><span class="sxs-lookup"><span data-stu-id="e0fed-134">Select Yes in the **Require mandate** field.</span></span>
+7. <span data-ttu-id="e0fed-135">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-135">Close the page.</span></span>
 
-## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="4aa99-134">Beszedési megbízási rendelet hozzáadása a vevőhöz.</span><span class="sxs-lookup"><span data-stu-id="4aa99-134">Add a direct debit mandate to a customer.</span></span>
-1. <span data-ttu-id="4aa99-135">Ugorjon a Kinnlevőségek > Vevők > Minden vevő pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-135">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="4aa99-136">Válassza ki például az US-001-et.</span><span class="sxs-lookup"><span data-stu-id="4aa99-136">For example, select US-001</span></span>
-3. <span data-ttu-id="4aa99-137">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-137">Click Edit.</span></span>
-4. <span data-ttu-id="4aa99-138">Bontsa ki a Fizetés alapértelmezései szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4aa99-138">Expand the Payment defaults section.</span></span>
-5. <span data-ttu-id="4aa99-139">A Fizetési mód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-139">In the Method of payment field, enter or select a value.</span></span>
-6. <span data-ttu-id="4aa99-140">Bontsa ki a Fizetés alapértelmezései szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4aa99-140">Expand the Payment defaults section.</span></span>
-7. <span data-ttu-id="4aa99-141">Bontsa ki a beszedési megbízási felhatalmazások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4aa99-141">Expand the Direct debit mandates section.</span></span>
-8. <span data-ttu-id="4aa99-142">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-142">Click Add.</span></span>
-9. <span data-ttu-id="4aa99-143">A Bankszámlák mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-143">In the Bank account field, enter or select a value.</span></span>
-10. <span data-ttu-id="4aa99-144">A Hitelező bank mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-144">In the Creditor bank account field, enter or select a value.</span></span>
-11. <span data-ttu-id="4aa99-145">Adja meg, hogy várhatóan hány fizetést tervez feldolgozni ehhez a felhatalmazáshoz.</span><span class="sxs-lookup"><span data-stu-id="4aa99-145">Enter the number of payments that you expect to process for this mandate.</span></span>
-12. <span data-ttu-id="4aa99-146">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-146">Click OK.</span></span>
-13. <span data-ttu-id="4aa99-147">Kattintson a Nyomtatás parancsra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-147">Click Print.</span></span>
-14. <span data-ttu-id="4aa99-148">Kattintson a Felhatalmazás jelentése pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-148">Click Mandate report.</span></span>
-15. <span data-ttu-id="4aa99-149">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-149">Close the page.</span></span>
-16. <span data-ttu-id="4aa99-150">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-150">Click Edit.</span></span>
-17. <span data-ttu-id="4aa99-151">Adja meg a dátumot az Aláírás dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="4aa99-151">In the Signature date field, enter a date.</span></span>
-18. <span data-ttu-id="4aa99-152">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-152">Click Yes.</span></span>
-19. <span data-ttu-id="4aa99-153">Adja meg a felhatalmazás aláírásának helyét.</span><span class="sxs-lookup"><span data-stu-id="4aa99-153">Enter the location where the mandate was signed.</span></span>
-20. <span data-ttu-id="4aa99-154">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-154">Click OK.</span></span>
-21. <span data-ttu-id="4aa99-155">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4aa99-155">Close the page.</span></span>
+## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="e0fed-136">Beszedési megbízási rendelet hozzáadása a vevőhöz.</span><span class="sxs-lookup"><span data-stu-id="e0fed-136">Add a direct debit mandate to a customer.</span></span>
+1. <span data-ttu-id="e0fed-137">A **Navigációs ablaktáblán** ugorjon a **Modulok > Kintlévőségek > Ügyfelek > Minden ügyfél** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-137">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="e0fed-138">A listában válasszon ki egy rekordot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-138">In the list, select a record.</span></span> <span data-ttu-id="e0fed-139">Válassza ki például az US-001-et.</span><span class="sxs-lookup"><span data-stu-id="e0fed-139">For example, select US-001</span></span>
+3. <span data-ttu-id="e0fed-140">Kattintson a **Szerkesztés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-140">Click **Edit**.</span></span>
+4. <span data-ttu-id="e0fed-141">Bontsa ki a **Fizetés alapértelmezései** gyorslapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-141">Expand the **Payment defaults** fastTab.</span></span>
+5. <span data-ttu-id="e0fed-142">A **Fizetési mód** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-142">In the **Method of payment** field, enter or select a value.</span></span>
+6. <span data-ttu-id="e0fed-143">Bontsa ki a **Fizetés alapértelmezései** gyorslapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-143">Expand the **Payment defaults** fastTab.</span></span>
+7. <span data-ttu-id="e0fed-144">Bontsa ki a **Beszedési megbízási felhatalmazások** gyorslapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-144">Expand the **Direct debit mandates** fastTab.</span></span>
+8. <span data-ttu-id="e0fed-145">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-145">Click **Add**.</span></span>
+9. <span data-ttu-id="e0fed-146">A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-146">In the **Bank account** field, enter or select a value.</span></span>
+10. <span data-ttu-id="e0fed-147">A **Hitelező bank mezőben** adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-147">In the **Creditor bank account** field, enter or select a value.</span></span>
+11. <span data-ttu-id="e0fed-148">A **Fizetés gyakorisága** mezőben adja meg, hogy várhatóan hány fizetést tervez feldolgozni ehhez a felhatalmazáshoz.</span><span class="sxs-lookup"><span data-stu-id="e0fed-148">In the **Payment frequency** field, enter the number of payments that you expect to process for this mandate.</span></span>
+12. <span data-ttu-id="e0fed-149">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-149">Click **OK**.</span></span>
+13. <span data-ttu-id="e0fed-150">Kattintson a **Nyomtatás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-150">Click **Print**.</span></span>
+14. <span data-ttu-id="e0fed-151">Kattintson a **Felhatalmazás jelentése** pontra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-151">Click **Mandate report**.</span></span>
+15. <span data-ttu-id="e0fed-152">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-152">Close the page.</span></span>
+16. <span data-ttu-id="e0fed-153">Kattintson a **Szerkesztés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-153">Click **Edit**.</span></span>
+17. <span data-ttu-id="e0fed-154">Adja meg a dátumot az **Aláírás dátuma** mezőben.</span><span class="sxs-lookup"><span data-stu-id="e0fed-154">In the **Signature date** field, enter a date.</span></span>
+18. <span data-ttu-id="e0fed-155">Kattintson az **Igen** gombra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-155">Click **Yes**.</span></span>
+19. <span data-ttu-id="e0fed-156">Adja meg a felhatalmazás aláírásának helyét.</span><span class="sxs-lookup"><span data-stu-id="e0fed-156">Enter the location where the mandate was signed.</span></span>
+20. <span data-ttu-id="e0fed-157">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="e0fed-157">Click **OK**.</span></span>
+21. <span data-ttu-id="e0fed-158">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e0fed-158">Close the page.</span></span>
 
-## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="4aa99-156">Szabadszöveges számla létrehozása felhatalmazással</span><span class="sxs-lookup"><span data-stu-id="4aa99-156">Create a free text invoice with mandate</span></span>
-1. <span data-ttu-id="4aa99-157">Ugorjon a Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa99-157">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
-2. <span data-ttu-id="4aa99-158">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4aa99-158">Click New.</span></span>
-3. <span data-ttu-id="4aa99-159">Válassza ki a vevőt, akihez hozzáadta a felhatalmazást.</span><span class="sxs-lookup"><span data-stu-id="4aa99-159">Select the customer that you added the mandate to.</span></span>
-4. <span data-ttu-id="4aa99-160">A Beszedési megbízási felhatalmazás azonosítója mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4aa99-160">In the Direct debit mandate ID field, enter or select a value.</span></span>
+## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="e0fed-159">Szabadszöveges számla létrehozása felhatalmazással</span><span class="sxs-lookup"><span data-stu-id="e0fed-159">Create a free text invoice with mandate</span></span>
+1. <span data-ttu-id="e0fed-160">A **Navigációs panelen** ugorjon ide: **Modulok > Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák**.</span><span class="sxs-lookup"><span data-stu-id="e0fed-160">In the **Navigation pane**, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
+2. <span data-ttu-id="e0fed-161">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="e0fed-161">Click **New**.</span></span>
+3. <span data-ttu-id="e0fed-162">Válassza ki a vevőt, akihez hozzáadta a felhatalmazást.</span><span class="sxs-lookup"><span data-stu-id="e0fed-162">Select the customer that you added the mandate to.</span></span>
+4. <span data-ttu-id="e0fed-163">A **Beszedési megbízási felhatalmazás azonosítója** mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e0fed-163">In the **Direct debit mandate ID** field, enter or select a value.</span></span>
 

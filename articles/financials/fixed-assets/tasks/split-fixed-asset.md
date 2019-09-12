@@ -1,9 +1,9 @@
 ---
 title: Tárgyi eszköz felosztása
-description: Ez a feladat-útmutató az egyik eszközkönyv egy részét egy másik eszközkönyvhöz rendeli.
+description: Ez a témakör azt ismerteti, hogyan kell egy eszközkönyv egy részét egy másik eszközkönyvhöz rendeli.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,46 +16,47 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8e5fdc8a7b326daca1fc0f0962c69bb8fb1ff64
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a4e001a6fdf390c6211ba85aa327b60dcdf16d9e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839713"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867583"
 ---
-# <a name="split-a-fixed-asset"></a><span data-ttu-id="728e7-103">Tárgyi eszköz felosztása</span><span class="sxs-lookup"><span data-stu-id="728e7-103">Split a fixed asset</span></span>
+# <a name="split-a-fixed-asset"></a><span data-ttu-id="df047-103">Tárgyi eszköz felosztása</span><span class="sxs-lookup"><span data-stu-id="df047-103">Split a fixed asset</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="728e7-104">Ez a feladat-útmutató az egyik eszközkönyv egy részét egy másik eszközkönyvhöz rendeli.</span><span class="sxs-lookup"><span data-stu-id="728e7-104">This task guide will split a percentage of one asset book to a new asset book.</span></span>  <span data-ttu-id="728e7-105">A Könyvelői szerepkört és a USMF bemutató adatokat használja.</span><span class="sxs-lookup"><span data-stu-id="728e7-105">It uses the Accountant role and USMF demo data.</span></span>
+<span data-ttu-id="df047-104">Ez a témakör azt ismerteti, hogyan kell egy eszközkönyv egy részét egy másik eszközkönyvhöz rendeli.</span><span class="sxs-lookup"><span data-stu-id="df047-104">This topic explains how to split a percentage of one asset book to a new asset book.</span></span> <span data-ttu-id="df047-105">A Könyvelői szerepkört és a USMF bemutató adatokat használja.</span><span class="sxs-lookup"><span data-stu-id="df047-105">It uses the Accountant role and USMF demo data.</span></span>
 
 
-## <a name="create-a-new-fixed-asset"></a><span data-ttu-id="728e7-106">Új tárgyi eszköz létrehozása</span><span class="sxs-lookup"><span data-stu-id="728e7-106">Create a new fixed asset</span></span>
-1. <span data-ttu-id="728e7-107">Nyissa meg a következőt: Tárgyi eszközök > Tárgyi eszközök > Tárgyi eszközök.</span><span class="sxs-lookup"><span data-stu-id="728e7-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="728e7-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="728e7-108">Click New.</span></span>
-3. <span data-ttu-id="728e7-109">A Tárgyieszköz-csoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="728e7-109">In the Fixed asset group field, enter or select a value.</span></span>
-4. <span data-ttu-id="728e7-110">Jegyezze fel a tárgyi eszköz számát, a felosztás során későbbi felhasználás céljából.</span><span class="sxs-lookup"><span data-stu-id="728e7-110">Note the fixed asset number to use in the split process later.</span></span>
-5. <span data-ttu-id="728e7-111">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="728e7-111">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="728e7-112">Zárja be az űrlapot.</span><span class="sxs-lookup"><span data-stu-id="728e7-112">Close the form.</span></span>
+## <a name="create-a-new-fixed-asset"></a><span data-ttu-id="df047-106">Új tárgyi eszköz létrehozása</span><span class="sxs-lookup"><span data-stu-id="df047-106">Create a new fixed asset</span></span>
+1. <span data-ttu-id="df047-107">A navigációs ablaktáblán ugorjon a **Modulok > Tárgyi eszközök > Tárgyi eszközök > Tárgyi eszközök** elemre.</span><span class="sxs-lookup"><span data-stu-id="df047-107">In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.</span></span>
+2. <span data-ttu-id="df047-108">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df047-108">Select **New**.</span></span>
+3. <span data-ttu-id="df047-109">A **Tárgyieszköz-csoport** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="df047-109">In the **Fixed asset group** field, enter or select a value.</span></span> <span data-ttu-id="df047-110">Jegyezze fel a tárgyi eszköz számát, a felosztás során későbbi felhasználás céljából.</span><span class="sxs-lookup"><span data-stu-id="df047-110">Note the fixed asset number to use in the split process later.</span></span>  
+4. <span data-ttu-id="df047-111">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="df047-111">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="df047-112">Zárja be az űrlapot.</span><span class="sxs-lookup"><span data-stu-id="df047-112">Close the form.</span></span>
 
-## <a name="split-a-fixed-asset"></a><span data-ttu-id="728e7-113">Tárgyi eszköz felosztása</span><span class="sxs-lookup"><span data-stu-id="728e7-113">Split a fixed asset</span></span>
-1. <span data-ttu-id="728e7-114">A listában keresse meg és válassza ki a felosztani kívánt tárgyi eszközt.</span><span class="sxs-lookup"><span data-stu-id="728e7-114">In the list, find and select the fixed asset to split.</span></span>
-2. <span data-ttu-id="728e7-115">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="728e7-115">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="728e7-116">Kattintson a Könyvek elemre.</span><span class="sxs-lookup"><span data-stu-id="728e7-116">Click Books.</span></span>
-    * <span data-ttu-id="728e7-117">Válassza ki az új tárgyi eszközhöz hozzárendelni kívánt könyvet.</span><span class="sxs-lookup"><span data-stu-id="728e7-117">Select the book to split to the new asset.</span></span>  
-4. <span data-ttu-id="728e7-118">Kattintson a Funkciók elemre.</span><span class="sxs-lookup"><span data-stu-id="728e7-118">Click Functions.</span></span>
-5. <span data-ttu-id="728e7-119">Kattintson a Tárgyi eszköz értékének felosztása gombra.</span><span class="sxs-lookup"><span data-stu-id="728e7-119">Click Split fixed asset.</span></span>
-6. <span data-ttu-id="728e7-120">A Cél tárgyi eszköz mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="728e7-120">In the To fixed asset field, enter or select a value.</span></span>
-7. <span data-ttu-id="728e7-121">A Könyvbe mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="728e7-121">In the To book field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="728e7-122">A Tranzakció dátuma mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="728e7-122">In the Transaction date field, enter a date.</span></span>
-9. <span data-ttu-id="728e7-123">A Százalék mezőbe írjon be egy számot.</span><span class="sxs-lookup"><span data-stu-id="728e7-123">In the Percent field, enter a number.</span></span>
-10. <span data-ttu-id="728e7-124">A Napló neve mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="728e7-124">In the Journal name field, enter or select a value.</span></span>
-11. <span data-ttu-id="728e7-125">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="728e7-125">Click OK.</span></span>
+## <a name="split-a-fixed-asset"></a><span data-ttu-id="df047-113">Tárgyi eszköz felosztása</span><span class="sxs-lookup"><span data-stu-id="df047-113">Split a fixed asset</span></span>
+1. <span data-ttu-id="df047-114">A listában keresse meg és válassza ki a felosztani kívánt tárgyi eszköz hivatkozását.</span><span class="sxs-lookup"><span data-stu-id="df047-114">In the list, find and select the link of the fixed asset to split.</span></span>
+2. <span data-ttu-id="df047-115">Válassza ki a **Könyvek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df047-115">Select **Books**.</span></span> <span data-ttu-id="df047-116">Válassza ki az új tárgyi eszközhöz hozzárendelni kívánt könyvet.</span><span class="sxs-lookup"><span data-stu-id="df047-116">Select the book to split to the new asset.</span></span>  
+3. <span data-ttu-id="df047-117">Válassza a **Funkciók** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df047-117">Select **Functions**.</span></span>
+4. <span data-ttu-id="df047-118">Válassza ki a **Tárgyi eszköz felosztása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df047-118">Select **Split fixed asset**.</span></span>
+5. <span data-ttu-id="df047-119">A **Záró tárgyi eszköz** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="df047-119">In the **To fixed asset** field, enter or select a value.</span></span>
+6. <span data-ttu-id="df047-120">A **Könyvhöz** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="df047-120">In the **To book** field, select the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="df047-121">A **Tranzakció dátuma** mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="df047-121">In the **Transaction date** field, enter a date.</span></span>
+8. <span data-ttu-id="df047-122">Adjon meg egy számot a  **Százalék** mezőben.</span><span class="sxs-lookup"><span data-stu-id="df047-122">In the **Percent** field, enter a number.</span></span>
+9. <span data-ttu-id="df047-123">A **Napló neve** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="df047-123">In the **Journal name** field, enter or select a value.</span></span>
+10. <span data-ttu-id="df047-124">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df047-124">Select **OK**.</span></span>
 
-## <a name="post-the-journal-transaction"></a><span data-ttu-id="728e7-126">Naplótranzakciók feladása</span><span class="sxs-lookup"><span data-stu-id="728e7-126">Post the journal transaction</span></span>
-1. <span data-ttu-id="728e7-127">Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.</span><span class="sxs-lookup"><span data-stu-id="728e7-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="728e7-128">A listában válassza ki a felosztással létrehozott naplót.</span><span class="sxs-lookup"><span data-stu-id="728e7-128">In the list, select the journal created with the split process.</span></span>
-3. <span data-ttu-id="728e7-129">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="728e7-129">Click Lines.</span></span>
-    * <span data-ttu-id="728e7-130">Erősítse meg a létrehozott naplósorokat.</span><span class="sxs-lookup"><span data-stu-id="728e7-130">Verify the journal lines created.</span></span>  <span data-ttu-id="728e7-131">Egy beszerzés-helyesbítési tranzakció jön létre az eredeti tárgyi eszközhöz az értéknek a felosztás során generált százalékkal történő csökkentéséhez.</span><span class="sxs-lookup"><span data-stu-id="728e7-131">An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.</span></span>  <span data-ttu-id="728e7-132">Egy Beszerzési tranzakció jön létre az új eszközhöz ugyanazzal az összeggel.</span><span class="sxs-lookup"><span data-stu-id="728e7-132">An Acquisition transaction is created for the new asset for the same amount.</span></span>  
-4. <span data-ttu-id="728e7-133">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="728e7-133">Click Post.</span></span>
+## <a name="post-the-journal-transaction"></a><span data-ttu-id="df047-125">Naplótranzakciók feladása</span><span class="sxs-lookup"><span data-stu-id="df047-125">Post the journal transaction</span></span>
+1. <span data-ttu-id="df047-126">A navigációs ablaktáblán nyissa meg a **Modulok > Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója** elemet.</span><span class="sxs-lookup"><span data-stu-id="df047-126">In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.</span></span>
+2. <span data-ttu-id="df047-127">A listában válassza ki a felosztással létrehozott naplót.</span><span class="sxs-lookup"><span data-stu-id="df047-127">In the list, select the journal created with the split process.</span></span>
+3. <span data-ttu-id="df047-128">**Sorok** kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="df047-128">Select **Lines**.</span></span>
+
+    - <span data-ttu-id="df047-129">Erősítse meg a létrehozott naplósorokat.</span><span class="sxs-lookup"><span data-stu-id="df047-129">Verify the journal lines created.</span></span>  
+    - <span data-ttu-id="df047-130">Egy beszerzés-helyesbítési tranzakció jön létre az eredeti tárgyi eszközhöz az értéknek a felosztás során generált százalékkal történő csökkentéséhez.</span><span class="sxs-lookup"><span data-stu-id="df047-130">An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.</span></span>  
+    - <span data-ttu-id="df047-131">Egy Beszerzési tranzakció jön létre az új eszközhöz ugyanazzal az összeggel.</span><span class="sxs-lookup"><span data-stu-id="df047-131">An Acquisition transaction is created for the new asset for the same amount.</span></span>  
+
+4. <span data-ttu-id="df047-132">Válassza a **Feladás** parancsot.</span><span class="sxs-lookup"><span data-stu-id="df047-132">Select **Post**.</span></span>
 

@@ -3,7 +3,7 @@ title: Naplóbejegyzések vagy tranzakciók megtekintése
 description: Ezzel az eljárással lehet a Bizonylat-tranzakciók lekérdezését naplóbejegyzések vagy tranzakciók kereséséhez felhasználni.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,32 +16,30 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c93b581e22665b27c1b99503cc91c20ead14ac81
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8c72ea9b7b706e1dbd8e4261534f098589535886
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834684"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916184"
 ---
-# <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="f8d07-103">Naplóbejegyzések vagy tranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="f8d07-103">View journal entries or transactions</span></span>
+# <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="4bc8d-103">Naplóbejegyzések vagy tranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="4bc8d-103">View journal entries or transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f8d07-104">Ezzel az eljárással lehet a Bizonylat-tranzakciók lekérdezését naplóbejegyzések vagy tranzakciók kereséséhez felhasználni.</span><span class="sxs-lookup"><span data-stu-id="f8d07-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
+<span data-ttu-id="4bc8d-104">Ezzel az eljárással lehet a Bizonylat-tranzakciók lekérdezését naplóbejegyzések vagy tranzakciók kereséséhez felhasználni.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
 
-1. <span data-ttu-id="f8d07-105">Ugrás a következőhöz: Főkönyv > Lekérdezések és jelentések >; Bizonylat-tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="f8d07-105">Go to General ledger > Inquiries and reports > Voucher transactions.</span></span>
-2. <span data-ttu-id="f8d07-106">Jelölje ki a mezőt, amelyhez szűrőfeltételt kíván meghatározni.</span><span class="sxs-lookup"><span data-stu-id="f8d07-106">Select the field for which you want to define a filter criteria.</span></span>
-3. <span data-ttu-id="f8d07-107">Adja meg a szűrőfeltételeket a kijelölt mezőhöz.</span><span class="sxs-lookup"><span data-stu-id="f8d07-107">Enter your filter critieria for the selected field.</span></span>
-    * <span data-ttu-id="f8d07-108">Szűrhet egyetlen értékre vagy tartományra.</span><span class="sxs-lookup"><span data-stu-id="f8d07-108">You could filter on a single value or a range.</span></span> <span data-ttu-id="f8d07-109">Tartomány meghatározásakor győződjön meg arról, hogy a helyes szintaxist használja.</span><span class="sxs-lookup"><span data-stu-id="f8d07-109">When defining a range, make sure the correct syntax is used.</span></span> <span data-ttu-id="f8d07-110">Az értékeket két ponttal (..) kell elválasztani.</span><span class="sxs-lookup"><span data-stu-id="f8d07-110">The values should be separated by a double period (..).</span></span>  
-4. <span data-ttu-id="f8d07-111">Szűrni kívánt további táblák hozzáadásához kattintson az Illesztések fülre.</span><span class="sxs-lookup"><span data-stu-id="f8d07-111">Click the Joins tab to add additional tables from which to filter.</span></span>
-5. <span data-ttu-id="f8d07-112">A fán válassza a „Táblák\Általános naplóbejegyzés” elemet.</span><span class="sxs-lookup"><span data-stu-id="f8d07-112">In the tree, select 'Tables\General journal entry'.</span></span>
-6. <span data-ttu-id="f8d07-113">Kattintson a Tábla-összekapcsolás hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f8d07-113">Click Add table join.</span></span>
-7. <span data-ttu-id="f8d07-114">Kattintson a Mégse gombra, ha úgy dönt, hogy nem ad hozzá további táblát.</span><span class="sxs-lookup"><span data-stu-id="f8d07-114">Click Cancel if you decide not to add an additional table.</span></span>
-8. <span data-ttu-id="f8d07-115">Kattintson a Tartomány fülre.</span><span class="sxs-lookup"><span data-stu-id="f8d07-115">Click the Range tab.</span></span>
-9. <span data-ttu-id="f8d07-116">A lekérdezés futtatásához kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f8d07-116">Click OK to run the query.</span></span>
-10. <span data-ttu-id="f8d07-117">Kattintson a Tranzakció eredete elemre.</span><span class="sxs-lookup"><span data-stu-id="f8d07-117">Click Transaction origin.</span></span>
-    * <span data-ttu-id="f8d07-118">A rács körüli különböző gombok használhatók a bizonylat kiválasztott rekordjával kapcsolatos további információk kereséséhez.</span><span class="sxs-lookup"><span data-stu-id="f8d07-118">Various buttons about the grid can be used to research additional information about the selected record of the voucher.</span></span> <span data-ttu-id="f8d07-119">A tranzakció típusától és az ügylet jellemzőitől függően előfordulhat, hogy néhány gomb nem érhető el.</span><span class="sxs-lookup"><span data-stu-id="f8d07-119">Some buttons may not be available, depending on the type of transaction and characteristics of the transaction.</span></span>  
-11. <span data-ttu-id="f8d07-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f8d07-120">Close the page.</span></span>
-12. <span data-ttu-id="f8d07-121">Kattintson az Eredeti dokumentum elemre.</span><span class="sxs-lookup"><span data-stu-id="f8d07-121">Click Original document.</span></span>
-13. <span data-ttu-id="f8d07-122">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f8d07-122">Close the page.</span></span>
+1. <span data-ttu-id="4bc8d-105">Lépjen a **Navigációs ablaktábla > Modulok > Főkönyv > Lekérdezések és jelentések Bizonylattranzakciók** pontra.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-105">Go to **Navigation pane > Modules > General ledger > Inquiries and reports > Voucher transactions**.</span></span>
+2. <span data-ttu-id="4bc8d-106">Jelölje ki a mezőt, amelyhez szűrőfeltételt kíván meghatározni.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-106">Select the field for which you want to define a filter criteria.</span></span>
+3. <span data-ttu-id="4bc8d-107">Adja meg a szűrőfeltételeket a kijelölt mezőhöz.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-107">Enter your filter critieria for the selected field.</span></span> <span data-ttu-id="4bc8d-108">Szűrhet egyetlen értékre vagy tartományra.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-108">You could filter on a single value or a range.</span></span> <span data-ttu-id="4bc8d-109">Tartomány meghatározásakor győződjön meg arról, hogy a helyes szintaxist használja.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-109">When defining a range, make sure the correct syntax is used.</span></span> <span data-ttu-id="4bc8d-110">Az értékeket két ponttal (..) kell elválasztani.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-110">The values should be separated by a double period (..).</span></span>  
+4. <span data-ttu-id="4bc8d-111">Szűrni kívánt további táblák hozzáadásához kattintson az **Illesztések** fülre.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-111">Click the **Joins** tab to add additional tables from which to filter.</span></span>
+5. <span data-ttu-id="4bc8d-112">A fán válassza a **Táblák/Általános naplóbejegyzés** elemet.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-112">In the tree, select **Tables/General journal entry**.</span></span>
+6. <span data-ttu-id="4bc8d-113">Kattintson a **Tábla-összekapcsolás hozzáadása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-113">Click **Add table join**.</span></span>
+7. <span data-ttu-id="4bc8d-114">Kattintson a **Mégse** gombra, ha úgy dönt, hogy nem ad hozzá további táblát.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-114">Click **Cancel** if you decide not to add an additional table.</span></span>
+8. <span data-ttu-id="4bc8d-115">Kattintson a **Tartomány** fülre.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-115">Click the **Range** tab.</span></span>
+9. <span data-ttu-id="4bc8d-116">A lekérdezés futtatásához kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-116">Click **OK** to run the query.</span></span>
+10. <span data-ttu-id="4bc8d-117">A Műveleti ablaktáblán kattintson a **Tranzakció eredete** elemre.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-117">On the Action pane, click **Transaction origin**.</span></span> <span data-ttu-id="4bc8d-118">A rács körüli különböző gombok használhatók a bizonylat kiválasztott rekordjával kapcsolatos további információk kereséséhez.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-118">Various buttons about the grid can be used to research additional information about the selected record of the voucher.</span></span> <span data-ttu-id="4bc8d-119">A tranzakció típusától és az ügylet jellemzőitől függően előfordulhat, hogy néhány gomb nem érhető el.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-119">Some buttons may not be available, depending on the type of transaction and characteristics of the transaction.</span></span>
+11. <span data-ttu-id="4bc8d-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-120">Close the page.</span></span>
+12. <span data-ttu-id="4bc8d-121">A Műveleti ablaktáblán kattintson az **Eredeti dokumentum** elemre.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-121">On the Action pane, Click **Original document**.</span></span>
+13. <span data-ttu-id="4bc8d-122">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4bc8d-122">Close the page.</span></span>
 
