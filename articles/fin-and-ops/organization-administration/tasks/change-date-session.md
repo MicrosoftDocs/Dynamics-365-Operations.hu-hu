@@ -1,9 +1,9 @@
 ---
-title: A munkamenet dátumának módosítása
-description: Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja.
+title: Munkamenet dátumának módosítása
+description: Ez a témakör azt mutatja be, hogyan lehet módosítani a munkamenet dátumát a Dynamics 365 for Finance and Operations megoldásban.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d27a4d36ff8c8192d2342cd97f29c556540d00b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 81b45f71cda7c682e7a9dee241e483890a80d487
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545624"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867360"
 ---
-# <a name="change-the-date-for-the-session"></a>A munkamenet dátumának módosítása
+# <a name="change-the-date-for-a-session"></a>Munkamenet dátumának módosítása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja. Megváltoztathatja az aktuális munkamenethez használt dátumot. Használja ezt a szolgáltatást a naplóbejegyzések vagy forrásbizonylatok szükség szerinti visszadátumozásához.
+Ez a témakör azt mutatja be, hogyan lehet módosítani a munkamenet dátumát a Dynamics 365 for Finance and Operations megoldásban. Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja. Megváltoztathatja az aktuális munkamenethez használt dátumot. Használja ezt a szolgáltatást a naplóbejegyzések vagy forrásbizonylatok szükség szerinti visszadátumozásához.
 
-1. Ugrás a Közös > Közös > Munkamenet dátuma és ideje lehetőségre.
-2. Adja meg a dátumot a Dátum mezőben.
-3. Kattintson az OK gombra.
+1. A navigációs ablakban nyissa meg a **Modulok > Közös > Közös > Munkamenet dátuma és ideje** elemet.
+2. Adja meg a dátumot a **Dátum** mezőben.
+3. Válassza ki az **OK** lehetőséget.
 

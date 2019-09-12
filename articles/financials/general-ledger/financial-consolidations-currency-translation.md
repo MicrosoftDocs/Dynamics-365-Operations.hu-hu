@@ -1,9 +1,9 @@
 ---
-title: énzügyi konszolidáció és devizaátváltás
+title: Pénzügyi konszolidáció és pénznemátváltás áttekintése
 description: Ez a témakör leírja a pénzügyi konszolidálási és devizaátváltási tranzkaciókat a főkönyvben.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8ec6268daa7c7b6c455aad571ef22c083283b5d9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f72aaf3056ec1966352e010f2a723f1a2a93c300
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839279"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865799"
 ---
-# <a name="financial-consolidations-and-currency-translation"></a>Pénzügyi konszolidáció és pénznemátváltás
+# <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
 [!include [banner](../includes/banner.md)]
 

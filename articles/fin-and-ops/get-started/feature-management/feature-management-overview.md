@@ -3,7 +3,7 @@ title: Funkciókezelés áttekintése
 description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862938"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887111"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -103,8 +103,9 @@ Az összes olyan funkció, amely engedélyezhető, engedélyezve lesz. Ha egy fu
 
 Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva, hacsak nem kötelező funkciók. Ha viszont automatikusan be kívánja kapcsolni az összes új funkciót, akkor a munkaterület címe alatti legördülő lista segítségével módosíthatja, hogy mi történik az új szolgáltatások hozzáadásakor.
 
-- Válassza az **Összes új funkció alapértelmezett módon engedélyezve** lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.
-- Válassza az **Összes új funkció alapértelmezett módon letiltva** lehetőséget az összes új funkció kikapcsolásához, amikor hozzáadják őket a környezetéhez.
+- Válassza az **Új funkciók automatikus engedélyezése** lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.
+- Válassza az **Új funkciókat ne engedélyezze automatikusan** lehetőséget az összes új funkció alapértelmezett kikapcsolásához, amikor hozzáadják őket a környezetéhez.
+
 
 Ha minden funkciót automatikusan engedélyez, azzal engedélyezi az olyan funkciókat, amelyek engedélyezve lesznek **Az összes engedélyezése** gombra kattintáskor. Az olyan funkciók nem lesznek engedélyezve, amelyek engedélyezéséhez valamilyen jóváhagyásra vagy műveletre van szükség.
 

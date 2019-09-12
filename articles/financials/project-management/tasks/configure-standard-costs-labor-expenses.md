@@ -1,9 +1,9 @@
 ---
 title: Munka és kiadások elszámolóárainak konfigurálása
-description: Ez az eljárás bemutatja, hogyan állítható be egy projekt munkához és kiadásokhoz tartozó elszámolóára.
+description: Ez a témakör elmagyarázza, hogyan állítható be egy projekt munkához és kiadásokhoz tartozó elszámolóára.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,46 +17,40 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b76956e9b1ce1a1e977aaa7c4974e73754e0d261
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 60ab8eb94d4a8a0fb2c1e732ec7b25bfd5e7611e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845888"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867726"
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Munka és kiadások elszámolóárainak konfigurálása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan állítható be egy projekt munkához és kiadásokhoz tartozó elszámolóára. Ez a feladat az USSI-adatkészletet használja.
+Ez a témakör elmagyarázza, hogyan állítható be egy projekt munkához és kiadásokhoz tartozó elszámolóára. Ez a feladat az USSI-adatkészletet használja.
 
-1. Nyissa meg a Projektvezetés és könyvelés > Beállítás > Árak > Költségár (óra) elemet.
-2. Kattintson az Új lehetőségre.
-3. Adja meg a dátumot az Érvényesség dátuma mezőben.
-4. Adjon meg egy számot az Önköltségi ár mezőben.
-    * A projektkategóriához megadható elszámolóár, de megadható az önköltségi ár dolgozószám, projektszám, kategória, dátum vagy ezek tetszőleges kombinációja alapján is. A rendszer a legnagyobb részletességű szinten létező önköltségi árat alkalmazza.  
-5. Kattintson a Mentés gombra.
-6. Zárja be a lapot.
-7. Nyissa meg a Projektvezetés és könyvelés > Beállítás > Árak > Eladási ár (óra) elemet.
-8. Kattintson az Új lehetőségre.
-9. Adja meg a dátumot az Érvényesség dátuma mezőben.
-10. Az Érvényes mezőben válasszon ki egy lehetőséget.
-11. Adjon meg egy számot az Árazás mezőben.
-    * Beállítható az óratranzakciók és projektkategóriák szokásos eladási ára. Szintén be lehet állítani dolgozók száma, projekt száma, kategória, tranzakció dátuma vagy ezek bármely kombinációja szerinti eladási árakat. Amikor a dolgozó az óranaplóban beviszi a tranzakciót, a legrészletesebb szintű eladási ár lesz az aktuális eladási ár. Ha például egy általános és egy dolgozóra vonatkozó eladási ár is be van állítva, akkor a rendszer a dolgozóra vonatkozó eladási árat választja.  
-12. Kattintson a Mentés gombra.
-13. Zárja be a lapot.
-14. Nyissa meg a Projektvezetés és könyvelés > Beállítás > Árak > Költségár (kiadás) elemet.
-15. Kattintson az Új lehetőségre.
-16. Adja meg a dátumot az Érvényesség dátuma mezőben.
-17. Adjon meg egy számot az Önköltségi ár mezőben.
-    * Több mező is kitölthető, de ez a minimálisan szükséges a rekord mentéséhez.  
-18. Kattintson a Mentés gombra.
-19. Zárja be a lapot.
-20. Nyissa meg a Projektvezetés és könyvelés > Beállítás > Árak > Értékesítési ár (kiadás) elemet.
-21. Kattintson az Új lehetőségre.
-22. Adja meg a dátumot az Érvényesség dátuma mezőben.
-23. Az Érvényes mezőben válasszon ki egy lehetőséget.
-24. Adjon meg egy számot az Árazás mezőben.
-    * Amikor a dolgozó a költségnaplóba beviszi a tranzakciót, a legrészletesebb szintű eladási ár lesz az aktuális eladási ár. Ha például egy általános és egy dolgozóra vonatkozó eladási ár is be van állítva, akkor a rendszer a dolgozóra vonatkozó eladási árat választja.  
-25. Kattintson a Mentés gombra.
+1. A navigációs ablakban lépjen a **Modulok > Projektvezetés és könyvelés > Beállítás > Árak > Önköltségi ár (óra)** részre.
+2. Válassza az **Új** lehetőséget.
+3. Adja meg a dátumot az **Érvényesség dátuma** mezőben.
+4. Adjon meg egy számot az **Önköltségi ár** mezőben. A projektkategóriához megadható elszámolóár, de megadható az önköltségi ár dolgozószám, projektszám, kategória, dátum vagy ezek tetszőleges kombinációja alapján is. A rendszer a legnagyobb részletességű szinten létező önköltségi árat alkalmazza.  
+5. Válassza a **Mentés** lehetőséget.
+6. A navigációs ablakban lépjen a **Modulok > Projektvezetés és könyvelés > Beállítás > Árak > Eladási ár (óra)** részre.
+7. Válassza az **Új** lehetőséget.
+8. Adja meg a dátumot az **Érvényesség dátuma** mezőben.
+9. Az **Érvényes** mezőben válasszon ki egy lehetőséget.
+10. Adjon meg egy számot az **Árazás** mezőben. Beállítható az óratranzakciók és projektkategóriák szokásos eladási ára. Szintén be lehet állítani dolgozók száma, projekt száma, kategória, tranzakció dátuma vagy ezek bármely kombinációja szerinti eladási árakat. Amikor a dolgozó az óranaplóban beviszi a tranzakciót, a legrészletesebb szintű eladási ár lesz az aktuális eladási ár. Ha például egy általános és egy dolgozóra vonatkozó eladási ár is be van állítva, akkor a rendszer a dolgozóra vonatkozó eladási árat választja.  
+11. Válassza a **Mentés** lehetőséget.
+12. Zárja be a lapot.
+13. A navigációs ablakban lépjen a **Modulok > Projektvezetés és könyvelés > Beállítás > Árak > Önköltségi ár (költség)** részre.
+14. Válassza az **Új** lehetőséget.
+15. Adja meg a dátumot az **Érvényesség dátuma** mezőben.
+16. Adjon meg egy számot az **Önköltségi ár** mezőben. Több mező is kitölthető, de ez a minimálisan szükséges a rekord mentéséhez.  
+17. Válassza a **Mentés** lehetőséget.
+18. A navigációs ablakban lépjen a **Modulok > Projektvezetés és könyvelés > Beállítás > Árak > Eladási ár (költség)** részre.
+19. Válassza az **Új** lehetőséget.
+20. Adja meg a dátumot az **Érvényesség dátuma** mezőben.
+21. Az **Érvényes** mezőben válasszon ki egy lehetőséget.
+22. Adjon meg egy számot az **Árazás** mezőben. Amikor a dolgozó a költségnaplóba beviszi a tranzakciót, a legrészletesebb szintű eladási ár lesz az aktuális eladási ár. Ha például egy általános és egy dolgozóra vonatkozó eladási ár is be van állítva, akkor a rendszer a dolgozóra vonatkozó eladási árat választja.  
+23. Válassza a **Mentés** lehetőséget.
 

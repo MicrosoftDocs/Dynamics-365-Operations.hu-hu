@@ -3,7 +3,7 @@ title: Új felhasználók létrehozása
 description: A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89e492ef5030dd28020094152259b615010aa676
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: a542ece226750330262e0c44427e5654fa4f6369
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851311"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916484"
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
@@ -31,28 +31,22 @@ A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és 
 
 
 ## <a name="add-a-new-user"></a>Új felhasználó hozzáadása
-1. Ugrás a Rendszerfelügyelet > Felhasználók > Felhasználók elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Felhasználói azonosító mezőbe.
-    * A felhasználó egyedi azonosítójának megadása. A felhasználó azonosítóját kötelező megadni.  
-4. Írjon be egy értéket a Felhasználó neve mezőbe.
-    * A felhasználó nevének megadása.  
-5. Írjon be egy értéket a Tartomány mezőbe.
-    * A felhasználó tartományának megadása.  
-6. Írjon be egy értéket az Alias mezőbe.
-    * A felhasználó aliasának megadása.  
-7. A Cég neve mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-8. Keresse meg és jelölje ki a kívánt rekordot a listán.
-9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Válassza ki a felhasználó cégét  
-10. Kattintson a Szerepkörök hozzárendelése elemre.
-11. Keresse meg és jelölje ki a kívánt rekordot a listán.
-12. Kattintson az OK gombra.
-13. Kattintson a Mentés gombra.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Felhasználók > Felhasználók** lehetőségre.
+2. A **Műveleti panelen** kattintson az **Új** elemre.
+3. Írjon be egy értéket a **Felhasználói azonosító** mezőbe. A felhasználó egyedi azonosítójának megadása. A felhasználó azonosítóját kötelező megadni.  
+4. Írjon be egy értéket a **Felhasználó neve** mezőbe. A felhasználó nevének megadása.  
+5. Írjon be egy értéket a **Tartomány** mezőbe. A felhasználó tartományának megadása.  
+6. Írjon be egy értéket az **Alias** mezőbe. A felhasználó aliasának megadása.  
+7. A **Cég** neve mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+8. Keresse meg és jelölje ki a kívánt rekordot a listán. 
+9. Kattintson a **Felhasználó szerepkörei** szakasz **Szerepkörök hozzárendelése** elemére.
+10. Keresse meg és jelölje ki a kívánt rekordot a listán.
+11. Kattintson az **OK** gombra.
+12. Kattintson a **Mentés** gombra.
 
 ## <a name="import-users"></a>Felhasználók importálása
-1. Kattintson a Felhasználók importálása elemre.
+1. A **Művelet panelen** kattintson a **Felhasználók importálása** elemre.
 2. A listában jelölje meg a kiválasztott sort.
-3. Kattintson a Felhasználók importálása elemre.
-4. Kattintson a Bezárás gombra.
+3. Kattintson a **Felhasználók importálása** elemre.
+4. Kattintson a **Bezárás** gombra.
 

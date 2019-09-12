@@ -3,7 +3,7 @@ title: Üzemi egység létrehozása
 description: Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a gazdasági források és működési folyamatok ellenőrzését egy üzletben.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755569"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874903"
 ---
 # <a name="create-an-operating-unit"></a>Üzemi egység létrehozása
 
@@ -40,5 +40,5 @@ Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a
     + Adja meg a címadatokat, mint például az utcanevet és a házszámot, az irányítószámot és a várost. A **Hozzáadás** gombra kattintva új címrekordot adhat meg, illetve a Szerkesztés gombra kattintva meglévő címrekordot módosíthat.   
     + Bontsa ki a **Kapcsolattartási adatok** szakaszt, ha szükséges.  
     + Adja meg a kommunikációs módszerekkel kapcsolatos adatokat, például e-mail-címeket, URL-címeket és telefonszámokat. Új kommunikációs rekord megadásához kattintson az Új gombra. Egy meglévő kommunikációs rekord módosításához kattintson a **További beállítások > Speciális** gombra.   
-6. Kattintson a **Mentés** gombra.
-
+6. Igény szerint módosítsa az **Üzemi egység számát**. Ne felejtse el, hogy ez a szám egyedi azonosító a vonatkozó **Fél** rekordban, és nem lehet ugyanaz, mint bármely más üzemi egységé.
+7. Válassza a **Mentés** lehetőséget.

@@ -3,7 +3,7 @@ title: Feladott naplóbejegyzések naplózása
 description: Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbf7ee8063487303cd4c8d2b76a8b44bacc86193
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e20229ca910aa0d7d820434c22edf5a27030bba5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846391"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916253"
 ---
 # <a name="journalize-posted-journal-entries"></a>Feladott naplóbejegyzések naplózása
 
@@ -29,16 +29,14 @@ ms.locfileid: "1846391"
 
 Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Ellenőrizze a naplózási beállításokat a Főkönyv > Főkönyv beállításai > Főkönyvi paraméterek menüpontban.
-2. A Bővített főkönyvnapló mező értéke lehet Igen vagy Nem. Ha Igen, akkor a kapott jelentés eltérő lesz.
-3. Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le.
-    * Ha a megadott érték Igen, az időszakot nem lehet lezárni mindaddig, amíg az adott időszakra a naplózási folyamat be nem fejeződött.  
+1. A **Navigációs panelen** válassza a **Modulok > Főkönyv > Főkönyv beállítás > Főkönyv paraméterei** lehetőséget.
+2. A **Bővített főkönyvnapló** mező értéke lehet Igen vagy Nem. Ha Igen, akkor a kapott jelentés eltérő lesz.
+3. Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le. Ha a megadott érték Igen, az időszakot nem lehet lezárni mindaddig, amíg az adott időszakra a naplózási folyamat be nem fejeződött.  
 4. Zárja be a lapot.
-5. Ugorjon a Főkönyv > Időszaki feladatok > Naplózás pontra.
-6. Kattintson a Szűrő parancsra.
+5. Nyissa meg a **Navigációs ablakban** a **Modulok > Főkönyv > Időszakos feladatok >Naplózás** elemet.
+6. Kattintson a **Szűrő** parancsra.
 7. Jelölje ki a sort a megadni kívánt szűrőfeltételekkel.
-8. A Feltételek mezőben adja meg vagy válassza ki a szűrőfeltételeket.
-9. Kattintson az OK gombra a szűrőoldal bezárásához.
-10. Kattintson az OK gombra a naplózási folyamat elindításához.
-    * A folyamat befejezése után jelentés készül.  
+8. A **Feltételek** mezőben adja meg vagy válassza ki a szűrőfeltételeket.
+9. Kattintson az **OK** gombra a szűrőoldal bezárásához.
+10. Kattintson az **OK** gombra a naplózási folyamat elindításához. A folyamat befejezése után jelentés készül.  
 

@@ -1,9 +1,9 @@
 ---
-title: Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz
-description: Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be.
+title: A kiskereskedelmi kimutatásokat befolyásoló kiskereskedelmi paraméterek konfigurálása
+description: Ez a cikk a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,29 +17,29 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dacd2b80ca0d51d81d2bdf5bc2636b47da621ee
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b9a0386a4d61395903e82d988244dd131c1febaf
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564293"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867271"
 ---
-# <a name="parameter-configurations-for-retail-statements"></a>Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz
+# <a name="configure-retail-parameters-that-affect-retail-statements"></a>A kiskereskedelmi kimutatásokat befolyásoló kiskereskedelmi paraméterek konfigurálása
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be. Ez az eljárás az USRT bemutatócéget használja.
+Ez a cikk a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi paraméterek konfigurációit mutatja be. Ez az eljárás az USRT bemutatócéget használja.
 
-1. Ugrás a Kiskereskedelem > Központ beállítás > Paraméterek > Kiskereskedelmi paraméterek elemre.
-2. Kattintson a Feladás lapra.
-    * Ha kifejezetten az időszaki kedvezmények összegét szeretné feladni, akkor válassza az „Igen” lehetőséget.  
-    * Válassza a „Normál” lehetőséget alapértelmezett számlák használatához, vagy az „Időszakos” lehetőséget, ha Ön szeretné megadni az egyes időszakos kedvezményekhez használandó számlákat.  
-    * Válassza az „Összegzés” lehetőséget, ha szeretné, hogy a rendszer minden lehetséges alkalommal összesítse a sorokat.  
-    * Válassza az „Igen” lehetőséget, ha szeretné, hogy a Számlák és a Kifizetések a Kimutatás feladási folyamat során automatikusan rendezésre kerüljenek.  
-    * Válassza az „Igen” lehetőséget, ha szeretné, hogy a Széfes befizetéses tranzakciók összesítésre kerüljenek.  
-    * Válassza az „Igen” lehetőséget, ha szeretné, hogy a Banki-fizetőeszköz tranzakciók összesítésre kerüljenek.  
-    * Válassza az „Igen” lehetőséget, ha a Kimutatás-feladásnál szeretné bekapcsolni az összesítést.  
-    * Válassza az „Igen” lehetőséget, ha szeretne párhuzamosan megrendeléseket hozni létre és dolgozni fel, amikor a kimutatás feladásra kerül.  
-    * Adja meg a kötegelt feladatonként feldolgozandó megrendelések maximális számát.  
-3. Kattintson a Mentés gombra.
+1. A navigációs ablaktáblán lépjen a **Modulok > Kiskereskedelem és kereskedelem > Központ beállítás > Paraméterek > Kiskereskedelmi paraméterek** részhez.
+2. Lépjen a **Feladás** lapra.
+    - Ha kifejezetten az időszaki engedmények összegét szeretné feladni, akkor válassza az **Igen** lehetőséget.  
+    - Válassza a **Normál** lehetőséget az alapértelmezett számlák használatához, vagy az **Időszakos** lehetőséget, ha Ön szeretné megadni az egyes időszakos engedményekhez használandó számlákat.  
+      - Válassza az **Összegzés** lehetőséget, ha szeretné, hogy a rendszer minden lehetséges alkalommal összesítse a készlet sorait.  
+      - Válassza az **Igen** lehetőséget, ha szeretné, hogy a rendszer automatikusan rendezze a számlákat és a kifizetéseket a Kimutatásfeladási folyamat során.  
+      - Válassza az **Igen** lehetőséget, ha összesíteni szeretné a széfes befizetéses tranzakciókat.  
+      - Válassza az **Igen** lehetőséget, ha összesíteni szeretné a banki fizetőeszközökkel végrehajtott tranzakciókat.  
+      - Válassza az **Igen** lehetőséget, ha a kimutatásfeladáshoz be szeretné kapcsolni az összesítést.  
+      - Válassza az **Igen** lehetőséget, ha szeretne párhuzamos megrendeléseket létrehozni és feldolgozni a kimutatás feladása során.  
+      - Adja meg a kötegelt feladatonként feldolgozandó megrendelések maximális számát.  
+3. Válassza a **Mentés** lehetőséget.
 

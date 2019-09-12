@@ -1,9 +1,9 @@
 ---
-title: Alaptervek
+title: Az alaptervek áttekintése
 description: A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9731ba47f449e037850c95a7873e1ae4551e2a9
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 6a3fa16e0eeb4c392a80cc16cff004cf3765bd12
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595523"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865417"
 ---
-# <a name="master-plans"></a>Alaptervek
+# <a name="master-plans-overview"></a>Az alaptervek áttekintése
 
 [!include [banner](../includes/banner.md)]
 

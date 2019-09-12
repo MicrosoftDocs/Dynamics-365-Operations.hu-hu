@@ -3,7 +3,7 @@ title: Vevői kifizetések letétbe helyezése
 description: Vevői kifizetések letétele.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: afbf74d1cf3dc87e97dda0873115b5c7fa49ca3d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 595d1b609ae83af8f1581caeff9ef7d3892a6207
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834463"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867774"
 ---
 # <a name="deposit-customer-payments"></a>Vevői kifizetések letétbe helyezése
 
@@ -29,29 +29,22 @@ ms.locfileid: "1834463"
 
 Vevői kifizetések letétele. Ez a feladat az USMF bemutatócéget használja.
 
-1. Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.
-2. Kattintson az Új lehetőségre.
-3. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A fizetési napló kiválasztása. 
-5. Kattintson a Sorok pontra.
-6. A Számla mezőben válassza ki azt a vevőt, akihez rögzíti a fizetést.
-7. A Követel mezőbe írja be a fizetés összegét.
-    * Az összeget üresen is hagyhatja, ilyenkor a rendszer kiszámítja, ha kiválasztja a kifizetett számlákat.  
-8. Írjon be egy értéket a Fizetési hivatkozás mezőbe.
-    * A kifizetési hivatkozás lehet a bevitt kifizetés csekkszáma. A kifizetési hivatkozás azért szükséges, hogy a kifizetés letéti jegyen is szerepeljen.  
-9. Jelölje be a négyzetet a letéti jegy használatához.
-    * Ha a kifizetésnek szerepelnie kell a letéten, ezt a beállítást állítsa az Igen lehetőségre.  
-10. Kattintson az Új lehetőségre.
-11. A Számla mezőben válassza ki a vevőt a következő fizetéshez.
-12. Adja meg a fizetés összegét a Követel mezőben.
-13. Írjon be egy értéket a Fizetési hivatkozás mezőbe.
-14. Jelölje be a négyzetet a letéti jegy használatához.
-15. Kattintson a Feladás lehetőségre.
-    * Letéti jegyet csak akkor hozhat létre, ha feladta a kifizetéseket. Ez azért van így, hogy a kifizetés ne változhasson a letéti jegy létrehozása után.  
-16. Kattintson a Funkciók elemre.
-17. Kattintson a Letéti jegyre.
-18. Kattintson az OK gombra.
-    * Az első oldalon a letéti jegyet hozhatja létre.  
-19. Kattintson az OK gombra.
-    * A második lépésben kinyomtatja a letéti jegyet, de ez a lépés ne kötelező.  
+1. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések > Kifizetési napló** elemet.
+2. Válassza az **Új** lehetőséget.
+3. A **Név** mezőben válassza ki a **CustPay** elemet a legördülő menüből.
+4. **Sorok** kiválasztása.
+5. A **Számla** mezőben válassza ki azt a vevőt, akihez rögzíti a fizetést.
+6. A **Követel** mezőbe írja be a fizetés összegét. Az összeget üresen is hagyhatja, ilyenkor a rendszer kiszámítja, ha kiválasztja a kifizetett számlákat.  
+7. Írjon be egy értéket a **Fizetési hivatkozás** mezőbe. A kifizetési hivatkozás lehet a bevitt kifizetés csekkszáma. A kifizetési hivatkozás azért szükséges, hogy a kifizetés letéti jegyen is szerepeljen.  
+8. Jelölje be a négyzetet a letéti jegy használatához. Ha a kifizetésnek szerepelnie kell a letéten, ezt a beállítást állítsa az Igen lehetőségre.  
+9. Válassza az **Új** lehetőséget.
+10. A **Számla** mezőben válassza ki a vevőt a következő fizetéshez.
+11. Adja meg a fizetés összegét a **Követel** mezőben.
+12. Írjon be egy értéket a **Fizetési hivatkozás** mezőbe.
+13. Jelölje be a négyzetet a **Letéti jegy használatához**.
+14. Válassza a **Feladás** parancsot. Letéti jegyet csak akkor hozhat létre, ha feladta a kifizetéseket. Ez azért van így, hogy a kifizetés ne változhasson a letéti jegy létrehozása után.  
+15. Válassza a **Funkciók** lehetőséget.
+16. Válassza a **Letéti jegy** lehetőséget.
+17. Válassza ki az **OK** lehetőséget. Az első oldalon a letéti jegyet hozhatja létre.  
+18. Válassza ki az **OK** lehetőséget. A második lépésben kinyomtatja a letéti jegyet, de ez a lépés ne kötelező.  
 

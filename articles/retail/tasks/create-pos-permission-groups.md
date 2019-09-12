@@ -1,9 +1,9 @@
 ---
-title: " POS-engedélycsoportok létrehozása"
-description: Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot.
+title: POS-engedélycsoportok létrehozása
+description: Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja be.
 author: scott-tucker
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,41 +17,34 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b30c9a1d7fe4598695423ba700ebc88a794a49c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e6782c60aa659523775cc6c4eb1694430a4bf4f
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566364"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914801"
 ---
-# <a name="create-pos-permission-groups"></a> POS-engedélycsoportok létrehozása
+# <a name="create-pos-permission-groups"></a>POS-engedélycsoportok létrehozása
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. A feladat a Kiskereskedelmi üzemeltetési vezető szerepkör számára készült.
+Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja be. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. A feladat a Kiskereskedelmi üzemeltetési vezető szerepkör számára készült.
 
-1. Nyissa meg a következőt: Engedélycsoportok.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a POS-engedélycsoport azonosítója mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Válassza ki az Igen lehetőséget a Blokkolóóra bejegyzéseinek megtekintése mezőben.
-    * Most engedélyezheti vagy a letilthatja a POS-engedélycsoport különféle engedélyeit. Egyes engedélyekhez beállíthat egy értéket, amely meghatározza, hogy a pénztári felhasználó végrehajthatja-e az adott műveletet.  Ez a feladat-útmutató beállít néhány, pénztárosoknak adható engedélyt.  
-6. Válassza ki az Igen lehetőséget a Rendelés létrehozásának engedélyezése mezőben.
-7. Válassza ki az Igen lehetőséget a Rendelés szerkesztésének engedélyezése mezőben.
-8. Válassza ki az Igen lehetőséget a Rendelés beolvasásának engedélyezése mezőben.
-9. Válassza ki az Igen lehetőséget a Jelszómódosítás engedélyezése mezőben.
-10. Válassza ki az Igen lehetőséget a Számlálás nélküli zárás engedélyezése mezőben.
-11. Kattintson a Mentés gombra.
-    * A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.  
-12. Zárja be a lapot.
-13. Nyissa meg a következőt: Feladatok.
-    * A következőkben hozzárendelünk egy POS-engedélycsoportot egy Feladathoz.  
-14. Keresse meg és jelölje ki a kívánt rekordot a listán.
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-16. Kattintson a Szerkesztés lehetőségre.
-17. Bontsa ki a Munkaköri besorolás szakaszt.
-18. A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a POS-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók POS-engedélyeit a Pozíció szintjén felülbírálták.  
-19. Kattintson a Mentés gombra.
-    * A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.  
+1. A navigációs ablakban nyissa meg a **Modulok > Kiskereskedelem > Alkalmazottak > Engedélycsoportok** elemet.
+2. Válassza az **Új** lehetőséget.
+3. Írjon be egy értéket a **POS-engedélycsoport azonosítója** mezőbe.
+4. Írjon egy értéket a **Leírás** mezőbe.
+5. Válassza ki az **Igen** lehetőséget a **Blokkolóóra bejegyzéseinek megtekintése** mezőben. Most engedélyezheti vagy a letilthatja a POS-engedélycsoport különféle engedélyeit. Egyes engedélyekhez beállíthat egy értéket, amely meghatározza, hogy a pénztári felhasználó végrehajthatja-e az adott műveletet. Ez a feladat-útmutató beállít néhány, pénztárosoknak adható engedélyt.  
+6. Válassza ki az **Igen** lehetőséget a **Rendelés létrehozásának engedélyezése** mezőben.
+7. Válassza ki az **Igen** lehetőséget a **Rendelés szerkesztésének engedélyezése** mezőben.
+8. Válassza ki az **Igen** lehetőséget a **Rendelés beolvasásának engedélyezése** mezőben.
+9. Válassza ki az **Igen** lehetőséget a **Jelszómódosítás engedélyezése** mezőben.
+10. Válassza ki az **Igen** lehetőséget a **Számlálás nélküli zárás engedélyezése** mezőben.
+11. Válassza a **Mentés** lehetőséget. A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba. 
+12. Ugorjon a Navigációs ablaktábla **Modulok > Emberi erőforrások > Állások > Állások** lehetőségre.
+13. A következőkben hozzárendelünk egy POS-engedélycsoportot egy Feladathoz. Keresse meg és jelölje ki a kívánt rekordot a listán.
+14. Válassza ki a **Szerkesztés** opciót.
+15. Bontsa ki a **Munkaköri besorolás** szakaszt.
+16. A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket. Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a POS-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók POS-engedélyeit a Pozíció szintjén felülbírálták.  
+17. Válassza a **Mentés** lehetőséget. A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a kiskereskedelmi csatornákba.  
 

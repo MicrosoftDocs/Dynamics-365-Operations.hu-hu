@@ -1,5 +1,5 @@
 ---
-title: Kelet-európai házipénztár
+title: Pénztár Kelet Európához és Oroszországhoz
 description: Ez a témakör ismerteti a házipénztár funkciót, amellyel a felhasználók az Észtország, Litvánia, a Cseh Köztársaság, Magyarország, Lettország, Lengyelország és Oroszország készpénzműveleteit tükrözhetik a rendszerben.
 author: ShylaThompson
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6ba7d34b2b4f1e2f003627c8f055802e66ad9d92
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: f016c9a210dbb131c3cb6959cd051a2216fcc15f
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852447"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871072"
 ---
 # <a name="petty-cash-for-eastern-europe"></a>Kelet-európai házipénztár
 

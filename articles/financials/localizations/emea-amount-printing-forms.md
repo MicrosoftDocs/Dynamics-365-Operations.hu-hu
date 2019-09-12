@@ -1,9 +1,9 @@
 ---
 title: Jelentések és dokumentumok összegformátumának megjelenítésének módosítása
 description: Ez a témakör a jelentésekben és egyéb dokumentumokban megjelenített összegek frissítésének módjáról tartalmaz információkat Észtország, Lettország, Litvánia, Lengyelország, Csehország, Magyarország és Oroszország tekintetében.
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2c19023a5b1edf75b7b355adccb3c00bd19c01c0
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 29d9369aaeef8cb62d4dd8f9eb8fcc171a28ca6a
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852139"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886655"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Jelentések és dokumentumok összegformátumának megjelenítésének módosítása
 
@@ -37,8 +37,8 @@ Pénzegységek teljes és rövid nevének és nyelvek részegységeinek beállí
 
 1. Nyissa meg a **Pénznemek** oldalt.
 2. Válassza ki a pénznemet.
-3. A Művelet panelen kattintson a **Ragozás** elemre.
-4. Egy nyelvhez teljes név és rövid név hozzáadásához kattintson a **Új** elemre, és töltse ki a következő mezőket.
+3. A Műveleti ablaktáblán válassza a **Ragozás** elemet.
+4. Egy nyelvhez teljes név és rövid név hozzáadásához kattintson a **Új** elemre, és adjon meg adatokat a következő mezőkbe.
 
    |                                                                        |                                                                                                                                                                                                                                                                        |
    |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -51,10 +51,7 @@ Pénzegységek teljes és rövid nevének és nyelvek részegységeinek beállí
    |    <strong>Egységek rövidített neve (Mezőcsoport rövid neve)</strong>    |                                                                                         Adja meg a pénznem azonosítására szolgáló ISO-kódot. Például a litván litas azonosítására az LTL karaktersort adja meg.                                                                                         |
    |   <strong>Részek rövidített neve (Mezőcsoport rövid neve)</strong>    |                                                                                               Adja meg a pénznem alegységének megnevezését. Például írja be azt, hogy Centas.                                                                                               |
    |       <strong>„És” kapcsolat az egységek és részek között</strong>       |                                     Jelölje be a pénzegységek és egységrészek közötti „és” kapcsolat kinyomtatásához. A 100,20 LTL összeg például így „100 litas és 20 centas” formában jelenik meg a számlákon és jelentéseken.                                      |
+   |       <strong>Nem</strong>       |  Válassza ki a **Férfi**, **Nő** vagy **Semleges** értéket. Ez a paraméter befolyásolhatja annak az összegnek a szövegét, amely a készpénzes rendelésen szereplő helyi nyelvű szövegében látható. Ha például a **Nemet** a **Semleges**nem értékre állítja az EUR valutához, akkor az 1,01 EUR összeg 1,01 EUR-ként a Cseh nyelvű *Edno euró 01 cent* nyugtán.  |
 
-
-5. Kattintson a **Mentés** gombra.
-
-
-
+5. Válassza a **Mentés** lehetőséget.
 

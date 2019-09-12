@@ -3,7 +3,7 @@ title: Használja a biztonsági készlet naplót, hogy frissítse a minimális f
 description: Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3b2916d6d2f24579fd9795c0e0bc548b6c2b747
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 478dd85abebf76dd264e93bcbe3f218a0ff0a5a8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835779"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916806"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 
@@ -32,47 +32,37 @@ Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat
 
 
 ## <a name="create-a-new-safety-stock-journal-name"></a>Hozzon létre egy új biztonsági készlet napló nevet
-1. Menjen a Biztonsági készlet naplók neveihez.
-2. Kattintson az Új lehetőségre.
-3. A Név mezőbe írja be: típus „Anyag”.
-4. A Leírás mezőbe írja be: típus „Anyag”.
+1. A **Navigációs ablaktáblán** lépjen az **Alaptervezés > Beálítás > Biztonsági készlet naplójának nevei** elemre.
+2. Kattintson az **Új** elemre.
+3. A **Név** mezőbe írja be: „Anyag”.
+4. A **Leírás** mezőbe írja be: „Anyag”.
 5. Zárja be a lapot.
 
 ## <a name="create-a-safety-stock-journal"></a>Hozzon létre egy biztonsági készlet naplót
-1. Menjen a Biztonsági készlet számításához.
-2. Kattintson az Új lehetőségre.
-3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
-    * Válassza ki a létrehozott biztonsági napló nevet, például Anyag.  
-4. Kattintson a Sorok létrehozása lehetőségre.
-5. Adjon meg egy dátumot a Kezdő dátum mezőben.
-    * Állítsa a dátumot erre: „2015-01-02”.  
-6. Adja meg a dátumot a „Záró dátum” mezőben.
-    * Állítsa a dátumot erre: „2015-12-30”.  
-7. Kattintson az OK gombra.
-    * Ez hoz létre sorokat a készlettranzakciókkal rendelkező dimenziókhoz.  
+1. A **Navigációs ablaktáblán** lépjen az **Alaptervezés > Alaptervezés > Futtatás > Biztonsági készlet számítása** elemre.
+2. Kattintson az **Új** elemre.
+3. A **Név** mezőben adjon meg vagy válasszon ki egy értéket. Válassza ki a létrehozott biztonsági napló nevet, például Anyag.  
+4. Kattintson a **Sorok létrehozása** lehetőségre.
+5. Adjon meg egy dátumot a **Kezdő dátum** mezőben.  
+6. Adjon meg egy dátumot a **Záró dátum** mezőben.
+7. Kattintson az **OK** gombra. Ez hoz létre sorokat a készlettranzakciókkal rendelkező dimenziókhoz.  
 
 ## <a name="calculate-proposal"></a>Javaslat számítása
-1. Kattintson a Javaslat számítására.
-2. Válassza az Átlagos kiadás használata az átfutási idő alatt lehetőséget.
-3. A szorzótényezőt állítsa „10”-re.
-    * A Multiply tényező a javaslat beállításához használható. Mivel a bemutató adatokban csak néhány tranzakció van, Önnek kell majd beállítania a tényezőt, hogy reális javaslatot kapjon.  
-4. Kattintson az OK gombra.
-    * Görgessen le, hogy megtalálja M0002 és M0003 értékeket. Tekintse meg a Kiszámított minimum mennyiség oszlopot.   
+1. Kattintson a **Javaslat számítása** pontra.
+2. Válassza az **Átlagos kiadás használata az átfutási idő alatt** lehetőséget.
+3. A **Szorzótényező** értékét állítsa „10”-re. A Multiply tényező a javaslat beállításához használható. Mivel a bemutató adatokban csak néhány tranzakció van, Önnek kell majd beállítania a tényezőt, hogy reális javaslatot kapjon.  
+4. Kattintson az **OK** gombra. Görgessen le, hogy megtalálja M0002 és M0003 értékeket. Tekintse meg a **Kiszámított minimum** mennyiségoszlopot.   
 
 ## <a name="update-minimum-quantity"></a>Frissítse a minimum mennyiséget
-1. Az Új minimum mennyiség mezőben adjon meg egy számot.
-    * Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét. Például megadhatja a Kiszámított minimum mennyiséget ebbe a mezőbe az M0002-höz, akié a 12-es raktár.  
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Például kiválaszthatja az M0002-őt, akié a 12-es raktár.  
-3. Az Új minimum mennyiség mezőben adjon meg egy számot.
-    * Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét.  
+1. Az **Új minimális mennyiség** mezőben adjon meg egy számot. Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét. Például megadhatja a Kiszámított minimum mennyiséget ebbe a mezőbe az M0002-höz, akié a 12-es raktár.  
+2. Keresse meg és jelölje ki a kívánt rekordot a listán. Például kiválaszthatja az M0002-őt, akié a 12-es raktár.  
+3. Az **Új minimális mennyiség** mezőben adjon meg egy számot. Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét.  
 
 ## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Vigye fel az új minimum mennyiséget és ellenőrizze az eredményt
-1. Kattintson a Feladás lehetőségre.
-2. Kattintson az OK gombra.
-3. Kattintson a Cikkszám mezőben található hivatkozásra.
-4. Kattintson a Cikkszám mezőben található hivatkozásra.
-5. A Művelet panelen kattintson a Terv elemre.
-6. Kattintson a cikkfedezet elemre.
-    * Fontos megjegyezni, hogy a minimum mennyiséget frissítettük, így most már a biztonsági készlet naplójában szereplő minimum mennyiséget tükrözi.  
+1. Kattintson a **Bejegyzés** lehetőségre.
+2. Kattintson az **OK** gombra.
+3. Kattintson a **Cikkszám** mezőben található hivatkozásra.
+4. Kattintson a **Cikkszám** mezőben található hivatkozásra.
+5. A **Művelet panelen** kattintson a Tervezés elemre.
+6. Kattintson a **Cikkfedezet** elemre. Fontos megjegyezni, hogy a **Minimális mennyiség** frissült, így most már a biztonsági készlet naplójában szereplő minimum mennyiséget tükrözi.  
 

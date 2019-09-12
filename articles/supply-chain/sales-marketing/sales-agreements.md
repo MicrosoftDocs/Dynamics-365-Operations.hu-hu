@@ -1,9 +1,9 @@
 ---
-title: Értékesítési szerződések
+title: Értékesítési szerződések áttekintése
 description: A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560117"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865969"
 ---
-# <a name="sales-agreements"></a>Értékesítési szerződések
+# <a name="sales-agreements-overview"></a>Értékesítési szerződések áttekintése
 
 [!include [banner](../includes/banner.md)]
 

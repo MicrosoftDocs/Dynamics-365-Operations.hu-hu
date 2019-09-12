@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837252"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867750"
 ---
 # <a name="reverse-a-vendor-payment"></a>Borderó kifizetés sztornózása
 
@@ -48,7 +48,7 @@ Tudnivalók a szervezet által használt módszertől, megtekintheti a **Készp�
 Ha a vállalat által azonnal megtörténik, amikor rákattint a bankcsekk-sztornírozási feladandó **Kifizetés sztornírozása** az **Ellenőrzések** képernyőn, kövesse az alábbi lépéseket. A naplótípus használatához állítsa az **Ellenőrzési folyamat alkalmazása a kifizetések sztornírozásakor** lehetőséget a **Készpénz- és bankkezelési paraméterek** oldalon a **Nem** értékre. A **Csekkek** lapon kiválaszthatja a csekk visszavonására, és válassza ki **Kifizetés sztornírozása**. Adja meg a dátumot, és válassza ki a sztornírozás okát.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>A Csekksztornírozási naplóban a megtekintés után feladott csekk sztornírozása
-Ha a vállalat által a feladás előtt tekintse át a bankcsekk-sztornírozási, ellenőrzésre és a csekk sztornírozási napló létrehozása a **készpénz- és bankkezelési paraméterek** oldal, állítsa be a **használata ellenőrzési folyamat a kifizetések sztornírozásakor** lehetőséggel **Igen**. A **Csekkek** lapon kiválaszthatja a csekk visszavonására, és válassza ki **Kifizetés sztornírozása**. Adja meg a dátumot, és válassza ki a sztornírozás okát. Hozzon létre egy naplót, egy naplónevet is be kell jelölnie a sztornírozás naplót.
+Ha a vállalat által a feladás előtt tekintse át a bankcsekk-sztornírozási, ellenőrzésre és a csekk sztornírozási napló létrehozása a **készpénz- és bankkezelési paraméterek** oldal, állítsa be a **használata ellenőrzési folyamat a kifizetések sztornírozásakor** lehetőséggel **Igen**. A **Csekkek** lapon kiválaszthatja a csekk visszavonására, és válassza ki **Kifizetés sztornírozása**. Adja meg a dátumot, és válassza ki a sztornírozás okát. A pénzügyi okot mind a banki, mind a szállítói típusokhoz be kell állítani. Hozzon létre egy naplót, egy naplónevet is be kell jelölnie a sztornírozás naplót.
 
 ### <a name="review-a-reversal"></a>Sztornírozás ellenőrzése
 

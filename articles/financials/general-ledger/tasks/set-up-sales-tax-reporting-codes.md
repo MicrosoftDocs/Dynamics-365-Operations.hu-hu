@@ -3,7 +3,7 @@ title: Áfabevallás kódjainak beállítása
 description: A áfajelentési kódok az áfajelent mezőszámaira hivatkoznak.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 830a3465944b32cc17feee60e3cbc5ad0a4dc9d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4751256858da417ec9bb1b7d9ccd16fb6bef1cac
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834774"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916091"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Áfabevallás kódjainak beállítása
 
@@ -31,14 +31,11 @@ A áfajelentési kódok az áfajelent mezőszámaira hivatkoznak. Ezek országsp
 
 Ez a felvétel az DEMF bemutatócéget használja.
 
-
-
-1. Ugorjon az Adó > Beállítás > Áfa > Adójelentési kódok pontra.
-2. Kattintson az Új lehetőségre.
-3. Annak az elrendezésnek a kiválasztása, amelyre a jelentési kód hivatkozik.
-    * Az elrendezés használatos az áfakód elérhető jelentési kódjának szűréséhez. Minden áfakód az adott kiegyenlítési időszakra vonatkozik, amely egy jelentésformátumot használó adóhatósághoz tartozik.  
-4. Írjon be egy számot, amely az áfajelentés egy mezőjére hivatkozik.
-5. A jelentés szövegmezőbe írjon be egy, a jelentésekben megjelenítendő leírást.
-6. A Rövid leírás mezőben adjon meg egy belső használatra szánt leírást.
-7. Kattintson a Mentés gombra.
+1. A **Navigációs ablaktáblán**  ugorjon az **Adó > Beállítás > Áfa > Áfajelentési kódok** lehetőségre.
+2. Kattintson az **Új** elemre.
+3. Annak az elrendezésnek a kiválasztása, amelyre a jelentési kód hivatkozik. Az elrendezés használatos az áfakód elérhető jelentési kódjának szűréséhez. Minden áfakód az adott kiegyenlítési időszakra vonatkozik, amely egy jelentésformátumot használó adóhatósághoz tartozik.  
+4. A **Jelentés kódja** mezőben adjon meg egy számot.
+5. A **Jelentés szövege** mezőbe írjon be egy, a jelentésekben megjelenítendő leírást.
+6. A **Rövid leírás** mezőben adjon meg egy belső használatra szánt leírást.
+7. Kattintson a **Mentés** gombra.
 

@@ -1,9 +1,9 @@
 ---
-title: Beszerzési katalógusok
+title: Beszerzési katalógusok áttekintése
 description: Ez a cikk magas szinten leírja, hogy a beszerzési szakemberek hogyan állíthatnak be és tarthatnak fenn beszerzési katalógusokat. A beszerzési katalógusok határozzák meg a cikkeket és szolgáltatásokat, amelyeket a vállalati alkalmazottak megrendelhetnek belső használat céljából.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f49c25e8d653219c9a2e5bead0c25f09898e27b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 06713d4f1ca1fe1c3feafe314da3a155fa7cd126
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559903"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865304"
 ---
-# <a name="procurement-catalogs"></a>Beszerzési katalógusok
+# <a name="procurement-catalogs-overview"></a>Beszerzési katalógusok áttekintése
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
 title: Beszerzési szerződés létrehozása
-description: Ez az eljárás végigvezeti a beszerzési szerződés létrehozásán.
+description: Ez a témakör végigvezeti a beszerzési szerződés létrehozásán.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,72 +16,59 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df74eaad51fc4ef28caf96e4bcdc7b03f7e6ec3b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836360"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866850"
 ---
 # <a name="create-a-purchase-agreement"></a>Beszerzési szerződés létrehozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás végigvezeti a beszerzési szerződés létrehozásán. Ez általában egy beszerzési vezető által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt létre kell hozni a beszerzési szerződés osztályozásait. Miután létrehozta a megállapodást, használhatja, amikor létrehoz egy beszerzési rendelést, és ez bemásolja a beszerzési szerződés feltételeit a megállapodás által érintett rendelés fejlécébe és soraiba.
+Ez a témakör végigvezeti a beszerzési szerződés létrehozásán. Ez általában egy beszerzési vezető által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt létre kell hozni a beszerzési szerződés osztályozásait. Miután létrehozta a megállapodást, használhatja, amikor létrehoz egy beszerzési rendelést, és ez bemásolja a beszerzési szerződés feltételeit a megállapodás által érintett rendelés fejlécébe és soraiba.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Új beszerzési szerződés létrehozása
-1. Ugorjon a Beszerzés és vásárlás > Beszerzési szerződések > Beseszerzési szerződések gombra.
-2. Kattintson az Új lehetőségre.
-3. A Szállítói számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A kívánt rekord megkeresése és kijelölése a listán
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. A Beszerzési szerződés osztályozása mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. Keresse meg és jelölje ki a kívánt rekordot a listán.
-8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-9. Bontsa ki az Általános szakaszt.
-10. Adjon meg egy dátumot a Lejárati dátum mezőben.
-    * Ez a lejárati dátum lesz az alapértelmezés az összes kötelezettségvállalási sorban, és meghatározza, mennyi ideig érvényesek a kötelezettségek.  
-11. A Dokumentum címe mezőbe írja be a beszerzési szerződés nevét.
-    * Hagyja az Alapértelmezett kötelezettségvállalás mezőt Termékmennyiségi kötelezettség értéken (vagy módosítsa erre, ha nem ez az értéke).  
-    * Az alapértelmezett kötelezettségvállalási érték határozza meg a megállapodási sorokban látható opciókat. Ha új kötelezettségtípusra van szüksége a megállapodási sorok létrehozásakor, módosítsa az alapértelmezett kötelezettséget a fejlécben.  A kötelezettségvállalásoknak 4 típusa van: Termékmennyiségi kötelezettség – egy adott mennyiségű termékre; Termék értékére vonatkozó kötelezettség – termékösszeg adott pénznemben; Termék kategóriaértékére vonatkozó kötelezettség – egy beszerzési kategóriában lévő konkrét összeg devizában, ahol az összeg katalóguscikkre vagy a katalóguson kívüli cikkre vonatkozhat; Értékre vonatkozó kötelezettség – adott pénznemben lévő összegre, amely bármely termékre vagy beszerzési kategóriára vonatkozhat.  
-12. Kattintson az OK gombra.
+1. Ugorjon a **Navigációs ablaktábla > Modulok > Beszerzés és forrás > Beszerzési szerződések > Beszerzési szerződések** elemre.
+2. Kattintson az **Új** elemre.
+3. A **Szállítói számla** mezőben válassza ki a legördülő menüt, majd a kívánt rekord sorát.
+4. A **Beszerzési szerződés osztályozása** mezőben válassza ki a legördülő menüt, majd a kívánt rekord sorát.
+5. Bontsa ki az **Általános** gyorslapot.
+6. Adjon meg egy dátumot a **Lejárati dátum** mezőben.
+
+    - Ez a lejárati dátum lesz az alapértelmezés az összes kötelezettségvállalási sorban, és meghatározza, mennyi ideig érvényesek a kötelezettségek.  
+
+7. A **Dokumentum címe** mezőbe írja be a beszerzési szerződés nevét.
+
+    - Hagyja az **Alapértelmezett kötelezettségvállalás** mezőt **Termékmennyiségi kötelezettség** értéken (vagy módosítsa erre, ha nem ez az értéke).  
+    - Az alapértelmezett kötelezettségvállalási érték határozza meg a megállapodási sorokban látható opciókat. Ha új kötelezettségtípusra van szüksége a megállapodási sorok létrehozásakor, módosítsa az alapértelmezett kötelezettséget a fejlécben. A kötelezettségvállalásoknak 4 típusa van: **Termékmennyiségi kötelezettség** – egy adott mennyiségű termékre; **Termék értékére vonatkozó kötelezettség** – termékösszeg adott pénznemben; **Termék kategóriaértékére vonatkozó kötelezettség** – egy beszerzési kategóriában lévő konkrét összeg devizában, ahol az összeg katalóguscikkre vagy a katalóguson kívüli cikkre vonatkozhat; **Értékre vonatkozó kötelezettség** – adott pénznemben lévő összegre, amely bármely termékre vagy beszerzési kategóriára vonatkozhat.  
+
+8. Válassza ki az **OK** lehetőséget.
 
 ## <a name="add-a-commitment"></a>Kötelezettség hozzáadása
-1. Kattintson az Új sor hozzáadása lehetőségre.
-2. A listában jelölje meg a kiválasztott sort.
-3. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Jelölje ki a terméket, amelyhez hozzá szeretné adni a kötelezettségvállalást.
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. Adjon meg egy számot a Mennyiség mezőben.
-    * Ez az a teljes mennyiség, amelyeket a megállapodás szerint beszerez a szállítótól.  
-7. Adjon meg egy számot az Egységár mezőben.
-8. Bontsa ki a Soradatok szakaszt.
-9. Állítsa a Maximális kényszerítése opciót Igen-re.
-    * A Maximum betartatása beállítás korlátozza a kötelezettségvállalás használatát. Csak a Mennyiség mezőben megadott mennyiséget vásárolhatja meg az adott sorhoz.  
-10. Csukja össze a Soradatok szakaszt.
+1. Válassza a **Sor hozzáadása** lehetőséget.
+2. A **Cikkszám** mezőben válassza ki a kívánt rekordot a legördülő menüből.
+3. Adjon meg egy számot a **Mennyiség** mezőben. Ez az a teljes mennyiség, amelyeket a megállapodás szerint beszerez a szállítótól.  
+4. Adjon meg egy számot az **Egységár** mezőben.
+5. Bontsa ki a **Sorrészletek** szakaszt.
+6. Állítsa a **Maximális kényszerítése** opciót **Igen**-re. A **Maximum betartatása** beállítás korlátozza a kötelezettségvállalás használatát. Csak a **Mennyiség** mezőben megadott mennyiséget vásárolhatja meg az adott sorhoz.  
 
 ## <a name="add-header-conditions"></a>Fejlécben megadott feltételek hozzáadása
-1. A Művelet ablaktáblában kattintson a Beállítások elemre.
-2. Kattintson a Nézetváltás elemre.
-3. Kattintson a Fejlécnézet gombra.
-4. Bontsa ki a Feltételek szakaszt.
-5. A Fizetési mód mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-    * Alapértelmezés szerint a szállítói számla fizetési feltételei láthatók itt.       
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Kiszállítási mód mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-10. A Szállítási feltételek mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-11. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+1. A műveleti ablaktáblán válassza ki a **Beállítások** elemet.
+2. Válassza ki a **Nézetváltás** lehetőséget.
+3. Válassza ki a **Fejlécnézet** elemet.
+4. Bontsa ki a **Feltételek** szakaszt.
+5. A **Fizetési mód** mezőben válassza ki a kívánt rekordot a legördülő menüből. Alapértelmezés szerint a szállítói számla fizetési feltételei láthatók itt.  
+6. A **Szállítási mód** mezőben válassza ki a kívánt rekordot a legördülő menüből.
+7. A **Szállítási feltételek** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 
 ## <a name="confirm-and-activate-the-agreement"></a>Erősítse meg és aktiválja a megállapodást
-1. A Művelet panelen kattintson a Beszerzési szerződés elemre.
-2. Kattintson a Megerősítés gombra.
-    * Állítsa a Szerződés megjelölése érvényesként beállítást Igen értékre.  
-3. Kattintson az OK gombra.
-4. A Művelet panelen kattintson a Beszerzési szerződés elemre.
-5. Kattintson a Beszerzési szerződés-visszaigazolásokra.
-    * Az Előnézet/nyomtatás beállítás lehetővé teszi a beszerzési szerződéshez dokumentum létrehozását, amelyet kinyomtathat vagy elküldhet a szállítónak. Ha később frissítési a szerződést, és ismételten megerősíti, mindkét verzió megjelenik itt.  
+1. A Művelet panelen kattintson a **Beszerzési szerződés** elemre.
+2. Válassza ki a **Visszaigazolás** lehetőséget. Állítsa a **Szerződés megjelölése érvényesként** beállítást **Igen** értékre.  
+3. Válassza ki az **OK** lehetőséget.
+4. A Művelet panelen kattintson a **Beszerzési szerződés** elemre.
+5. Válassza a **Beszerzésiszerződés-visszaigazolások** elemet. Az **Előnézet/nyomtatás** beállítás lehetővé teszi a beszerzési szerződéshez dokumentum létrehozását, amelyet kinyomtathat vagy elküldhet a szállítónak. Ha később frissítési a szerződést, és ismételten megerősíti, mindkét verzió megjelenik itt.  
 6. Zárja be a lapot.
 

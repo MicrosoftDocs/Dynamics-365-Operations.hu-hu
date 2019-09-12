@@ -3,7 +3,7 @@ title: A tényleges súllyal rendelkező termék feldolgozása a raktárkezelés
 description: A témakör azt ismerteti, hogy a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzést végezni a raktárban.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836115"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887135"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -136,7 +136,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 
 - Karanténutasítások manuális létrehozása a tényleges súllyal rendelkező termékek esetében nem támogatott.
 - A készlet manuális mozgatása, amely munkához kapcsolódik, nem támogatot a tényleges súllyal rendelkező termékek esetén.
-- Az azonosítótáblák konszolidációja tényleges súllyal rendelkező termékek esetében nem támogatott.
 - Azonosítótábla rakodása, amely inicializálja a raktári készletet, tényleges súllyal rendelkező termékek esetében nem támogatott.
 - Tételalapú kiigazítási folyamatok a tényleges súllyal rendelkező termékek esetében nem támogatottak.
 - Negatív tényleges készlet kezelése tényleges súllyal rendelkező termékek esetében nem támogatott.
@@ -147,7 +146,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 - Tényleges súllyal rendelkező termékek esetén a fürtkitárolás funkció nem támogatott.
 - Kitárolás és csomagolás raktári feldolgozása tényleges súllyal rendelkező termékek esetében nem támogatott.
 - A tényleges súllyal rendelkező termékek esetén a munkasablonon megadott munka automatikusan futtatható.
-- Tényleges súllyal rendelkező termékek esetén a munka sztornírozása funkció nem támogatott.
 - Tényleges súllyal rendelkező termékekesetén a kézi csomagolási állomás feldolgozása nem támogatott, ha munka a tárolók bezárása után kerül létrehozásra.
 - Tényleges súllyal rendelkező termékek esetén a darabonkénti beolvasás funkció nem támogatott.
  

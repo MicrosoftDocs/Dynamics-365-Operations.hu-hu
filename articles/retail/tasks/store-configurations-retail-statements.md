@@ -3,7 +3,7 @@ title: " Konfigurációk tárolása kiskereskedelmi kimutatásokhoz"
 description: Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi-üzlet konfigurációkat mutatja be.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fddeb8434d916df1613d61da88110dec8fb4465
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dbedcda59f503b103d5448e59038e4ed8ca0b51d
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563644"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916530"
 ---
 # <a name="store-configurations-for-retail-statements"></a> Konfigurációk tárolása kiskereskedelmi kimutatásokhoz
 
@@ -30,21 +30,22 @@ ms.locfileid: "1563644"
 
 Ez az eljárás a Kiskereskedelmi kimutatások létrehozásának és feladásának módját befolyásoló Kiskereskedelmi-üzlet konfigurációkat mutatja be. A Kiskereskedelmi üzletekkel kapcsolatos pénzügyi dimenziókat egy másik eljárás mutatja be. Ez az eljárás az USRT bemutatócéget használja.
 
-1. Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Csatornák > Kiskereskedelmi áruházak > Minden kiskereskedelmi üzlet.
+1. A **Navigációs ablaktáblán** lépjen a **Modulok > Kiskereskedelem és kereskedelem > Csatornák > Kiskereskedelmi áruházak > Minden kiskereskedelmi üzlet** részhez.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * A Kimutatás/zárás szakasz beállításai hatással vannak a kimutatások létrehozására, ellenőrzésére és az üzlet részére történő feladására.  Nyissa meg a Kimutatás/zárás szakaszt.  
-    * Válassza ki a kimutatássorok csoportosításához használni kívánt módszert.  
-    * Válassza az "Igen" lehetőséget, ha csak napi egy kimutatást szeretne létrehozni amikor a kimutatás létrehozása kötegelt feladat segítségével hoz létre kimutatásokat.  
-    * A fizetőeszköz-elszámolás számítási mező határozza meg, hogy a rendszer összeadja-e a fizetőeszköz-elszámolásokat, vagy az utolsó elemet használja.  
-    * Állítsa be, hogy a kerekítési különbségek a főkönyvi számlába kerüljenek feladásra.  
-    * A Kerekítés maximális összege mezőben megadhatja a maximálisan megengedett kerekítési összeget.  
-    * A Feladás mezőben megadhatja egy adott kimutatás esetén engedélyezett maximális teljes feladási eltérést.  
-    * A Műszak mezőben megadhatja egy adott műszak esetén engedélyezett maximális teljes eltérést.  
-    * A Tranzakció mezőben megadhatja egy adott kimutatás sorban engedélyezett maximális teljes eltérést.  
-    * A Zárási mód mezőben meghatározhatja, hogy a kimutatásban csak lezárt műszak részét képező tranzakciók szerepelhessenek-e, vagy bekerülhessen bármilyen, az adott dátum/idősávba eső tranzakció.  
-    * A Munkanap vége mezőben tud megadni megfelelő időpontot, ha azt szeretné, hogy az éjfél utáni tranzakciók az előző napra vonatkozóan kerüljenek feladásra.  
-    * Válassza az „Igen” lehetőséget, ha azt szeretné, hogy az éjfél utáni tranzakciók az előző napra vonatkozóan kerüljenek feladásra  
-    * Válassza az „Igen” lehetőséget, ha szeretné, hogy a rendszer hozzon létre kimutatást minden megjelölt kimutatásmódszer segítségével. Ez akkor lehet hasznos, ha a feladás teljesítményét javítani szükséges a magas tranzakciószámmal működő üzletek esetében, így ugyanis a rendszer több kisebb, párhuzamosan feldolgozható kimutatást hoz létre.  
-    * Az Alapértelmezett vevő mezőben tudja kiválasztani az utcáról betérő vevőkhöz használni kívánt vevőszámlát.  
+4. Kattintson a **Szerkesztés** lehetőségre.
+5. A **Kimutatás/zárás** gyorslap beállításai hatással vannak a kimutatások létrehozására, ellenőrzésére és az üzlet részére történő feladására. Bontsa ki a **Kimutatás/zárás**gyorslapot.  
+6. A **Kimutatás módszere** mezőben válassza ki a kimutatássorok csoportosításához használni kívánt módszert.  
+7. Válassza az "Igen" lehetőséget a **Naponta egy kimutatás** pontban, ha csak napi egy kimutatást szeretne létrehozni, amikor a kimutatás létrehozása kötegelt feladat segítségével hoz létre kimutatásokat.  
+8. A **Fizetőeszköz-elszámolási számítás** mező határozza meg, hogy a rendszer összeadja-e a fizetőeszköz-elszámolásokat, vagy az utolsó elemet használja.  
+9. A **Kerekítés** mezőben válassza ki, hogy a kerekítési különbségek a főkönyvi számlába kerüljenek.  
+10. A **Kerekítés maximális összege** mezőben megadhatja a maximálisan megengedett kerekítési összeget.
+11. A **Feladás** mezőben megadhatja az adott kimutatás esetén engedélyezett maximális teljes feladási eltérést.
+12. A **Műszak** mezőben megadhatja egy adott műszak esetén engedélyezett maximális teljes eltérést.  
+13. A **Tranzakció** mezőben megadhatja az adott kimutatássorban engedélyezett maximális teljes eltérést.  
+14. A **Zárási mód** mezőben meghatározhatja, hogy a kimutatásban csak lezárt műszak részét képező tranzakciók szerepelhessenek-e, vagy bekerülhessen bármilyen, az adott dátumsávba/idősávba eső tranzakció.  
+15. A **Munkanap vége** mezőben tud megadni megfelelő időpontot, ha azt szeretné, hogy az éjfél utáni tranzakciókat az előző napra vonatkozóan adja fel a rendszer.  
+16. Válassza az „Igen” lehetőséget a **Feladás munkanapként** pontban, ha azt szeretné, hogy az éjfél utáni tranzakciókat az előző napra vonatkozóan adja fel a rendszer.  
+17. Válassza az „Igen” lehetőséget a **Kimutatás szerinti bontás módszere** pontban, ha szeretné, hogy a rendszer hozzon létre kimutatást minden megjelölt kimutatásmódszer segítségével. Ez akkor lehet hasznos, ha a feladás teljesítményét javítani szükséges a magas tranzakciószámmal működő üzletek esetében, így ugyanis a rendszer több kisebb, párhuzamosan feldolgozható kimutatást hoz létre.  
+18. Az **Általános** gyorslapon az **Alapértelmezett vevő** mezőben tudja kiválasztani az utcáról betérő vevőkhöz használni kívánt vevőszámlát.  
 
