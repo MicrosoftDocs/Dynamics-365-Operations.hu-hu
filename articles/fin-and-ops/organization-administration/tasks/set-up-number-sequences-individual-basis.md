@@ -3,7 +3,7 @@ title: Egyedi számsorozatok beállítása
 description: Ez a témakör az egyedi számsorozatok beállítását ismerteti.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738881"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886600"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Egyedi számsorozatok beállítása
 
@@ -33,7 +33,7 @@ Ez a témakör az egyedi számsorozatok beállítását ismerteti. A számsoroza
 2. Válassza ki a **Számsorozat** elemet.
 3. Adjon meg egy értéket a **Számsorozat kódja** mezőben.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. A **Hatókör paraméterei** gyorslapon válassza ki a számsorozathoz tartozó hatókört és a hatókör értékét a legördülő listából. A hatókör határozza meg, mely szervezetek használják a számsorozatot. Ezenkívül azok a számsorozatok, amelyek nem **Megosztott** állapotú hatókörrel rendelkeznek olyan szegmensekkel rendelkezhetnek, amelyek megfelelnek a hatókörüknek. Például egy **Jogi személy** hatókörrel ellátott számsorozat rendelkezhet jogi személy hatókörrel. A hatókörökkel kapcsolatos további információkat lásd: [Számsorozatok áttekintése](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. A **Hatókör paraméterei** gyorslapon válassza ki a számsorozathoz tartozó hatókört és a hatókör értékét a legördülő listából. A hatókör határozza meg, mely szervezetek használják a számsorozatot. Ezenkívül azok a számsorozatok, amelyek nem **Megosztott** állapotú hatókörrel rendelkeznek olyan szegmensekkel rendelkezhetnek, amelyek megfelelnek a hatókörüknek. Például egy **Jogi személy** hatókörrel ellátott számsorozat rendelkezhet jogi személy hatókörrel. A hatókörökkel kapcsolatos további információkat lásd: [Számsorozatok áttekintése](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Bontsa ki a **Szegmensek** szakaszt.
     - A szegmensek hozzáadásával, eltávolításával és átrendezésével adja meg a számsorozat formátumát.  
     - Az összes hatókör számsorozata tartalmazhatja az *Állandó szegmenseket* és az *Alfanumerikus szegmenseket*. Az állandó szegmensek tartalmazzák azoknak az alfanumerikus karakterek a készletét, amelyek nem módosulnak. Ezen szegmenstípus használatával írjon be egy kötőjelet vagy más elválasztót a Számsorozat szegmensei közé. Az Alfanumerikus szegmensek a kettős kereszt (#) és az és-jel (&) kombinációját tartalmazzák. Ezek a karakterek betűk és számok, melyek a sorozat számainak minden használatánál növekednek. A kettős kereszt (#) használatával jelezheti a növekvő számokat, az (&) jel pedig a növekvő betűket. Például a `#####_2014` formátum az `00001_2014`, `00002_2014` és így tovább sorozatot hozza létre. Legalább egy alfanumerikus szegmensnek lennie kell. A hatókörszegmensek, mint például a társaság vagy a jogi személy, nem kötelező jellegűek. Azonban, ha a formátumban nem helyezi el a hatókörszegmenseket, a rendszer a kijelölt hivatkozáshoz tartozó számokat továbbra is hatókörönként fogja létrehozni.  

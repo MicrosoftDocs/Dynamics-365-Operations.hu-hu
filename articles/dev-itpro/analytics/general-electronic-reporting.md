@@ -1,9 +1,9 @@
 ---
-title: Elektronikus jelentés (EJ)
+title: Elektronikus jelentéskészítés (ER) áttekintése
 description: Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9504af391656e2515d34d18a15fab74f1698fa2
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 73a8f44d75c9a6778cfa4c547b4b32dbebcad825
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849485"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864718"
 ---
-# <a name="electronic-reporting-er"></a>Elektronikus jelentés (EJ)
+# <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
 [!include [banner](../includes/banner.md)]
 

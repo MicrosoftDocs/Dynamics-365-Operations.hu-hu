@@ -3,7 +3,7 @@ title: Kettős pénznem
 description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 for Finance and Operations esetében.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839401"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867511"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations 8.1 verziójában (2018. október) megjelent funkció lehetővé teszi, hogy a jelentési pénznem célja módosítható legyen, és második könyvelési pénznemként legyen használva. Ezt a funkciót *kettős pénznemnek* nevezik. A kettős pénznem módosításai konfigurációs kulccsal vagy paraméterrel nem kapcsolhatók ki. Mivel a jelentési pénznem szolgál második könyvelési pénznemként, a jelentési pénznemben kiszámítási módja a feladási logikában megváltozott.
 
-Ezenkívül különböző modulok javítva lettek a jelentési pénznem nyomon követése, jelentése és használata érdekében a különböző folyamatokban. A következő modulok érintettek többek között: **Főkönyv**, **Pénzügyi beszámolók**, **Kötelezettségek**, **Kinnlevőségek**, **Készpénz- és bankkezelés** és **Tárgyi eszközök**. Egy frissítést követően el kell végezni bizonyos lépéseket a Készpénz- és bankkezelés esetében. Ezért ügyeljen arra, hogy a témakör vonatkozó részeit figyelmesen olvassa el.
+Ezenkívül több modul javítva lett a jelentési pénznem nyomon követése, jelentése és használata érdekében a különböző folyamatokban. Az érintett modulok a következők:
+
+- Főkönyv 
+- Pénzügyi jelentéskészítés 
+- Kötelezettségek
+- Kinnlevőségek 
+- Készpénz- és bankkezelés 
+- Tárgyi eszközök 
+- Konszolidációk
+
+Egy frissítést követően el kell végezni bizonyos lépéseket a Készpénz- és bankkezelés esetében. Ezért ügyeljen arra, hogy a témakör vonatkozó részeit figyelmesen olvassa el.
 
 ## <a name="posting-process"></a>Feladási folyamat
 
@@ -75,6 +86,7 @@ A következő moduloknak használják a jelentési pénznemet második könyvel�
 - [Kinnlevőségek](#accounts-payable-and-accounts-receivable)
 - [Készpénz- és bankkezelés](#cash-and-bank-management)
 - [Tárgyi eszközök](#fixed-assets)
+- [Konszolidációk](#consolidations)
 
 ### <a name="general-ledger"></a>Főkönyv
 
@@ -124,6 +136,8 @@ Korábban a **Tárgyi eszköz** modul nem követte nyomon a jelentési pénznemb
 Ezenkívül jelentős módosítást végeztünk az értékcsökkenés folyamaton. Ezekhez a változtatásokhoz a frissítés után felhasználói beavatkozás szükséges. Fontos, hogy elolvasta és megértse az alábbi változtatások akkor is, ha még nem használt tárgyi eszközöket.
 
 - Módosult az, ahogy az értékcsökkenés folyamat meghatározza a jelentési pénznem összegét. A következő helyzet annak az összehasonlítására szolgál, hogy az értékcsökkenés hogyan határozta meg korábban a jelentési pénznem összegét, és hogy határozza meg a jelentési pénznem összegét most.
+
+
 
     **Értékcsökkenési eset**
 
@@ -186,3 +200,13 @@ Ezenkívül jelentős módosítást végeztünk az értékcsökkenés folyamaton
     - Ha egy értékcsökkenési tranzakciótípus szerepel a tárgyieszköz-naplóban, az új oszlopokban a jelentési pénznem összege jelenik meg. Ezeket az összegeket módosíthatja.
     - Ha a főkönyvben a könyvelési pénznem és a jelentési pénznem megegyezik, az összegek folyamatosan szinkronban lesznek. Ha módosítja a **Követel** összeget, a **Jóváírás jelentési pénznemben** összege automatikusan módosul, úgy, hogy megfeleljen neki.
     - Ha bármilyen más tranzakciótípus szerepel a tárgyieszköz-naplóban, ha a **Tartozás jelentési pénznemben** és a **Követelés jelentési pénznemben** összegek soha nem jelennek meg, feladás előtt és után sem. A könyvelési pénznem és a jelentési pénznem összegei továbbra is elérhetők a bizonylaton, amely a főkönyvbe végzi a feladást.
+    
+### <a name="consolidations"></a>Konszolidációk
+    
+A Microsoft Dynamics 365 for Finance and Operations 10.0.5 verziójában (2019. október) bevezetett funkciók lehetővé teszik a szolgáltatások funkcióinak kezelését a konszolidáció és a kettős pénznem továbbfejlesztett rugalmassága érdekében. A funkció engedélyezéséhez nyissa meg a **Funkciókezelés** munkaterületet, és jelölje be a **Kettős pénznem funkció engedélyezése a Főkönyv konszolidálásához** jelölőnégyzetet.
+
+A Főkönyv konszolidálásához egy új beállítás lett hozzáadva, amely a forrásoldali vállalatoktól származó könyvelési vagy jelentési pénznemek összegeit összesíti. Ha a könyvelési vagy a jelentési pénznem megegyezik a konszolidációs vállalat könyvelési vagy jelentési pénznemével, akkor az összegeket a program az átváltás helyett közvetlenül másolja.
+
+-  Ezután kiválaszthatja, hogy a forrás vállalattól a könyvelési pénznemet vagy a jelentési pénznemet használja-e a konszolidációs vállalatban a tranzakciós pénznemnek.
+
+- A forrásvállalat könyvelési vagy jelentési pénzneme közvetlenül lesz másolva a konszolidációs vállalat könyvelési vagy jelentési pénznemösszegeire, ha valamelyik pénznem megegyezik. A konszolidációs vállalatban a könyvelési és jelentési pénznem összegeit az árfolyam alapján számítja ki a program, ha a pénznemek egyike sem egyezik meg.

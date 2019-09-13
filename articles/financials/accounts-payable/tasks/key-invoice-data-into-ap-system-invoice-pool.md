@@ -1,9 +1,9 @@
 ---
 title: A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával
-description: Ez a feladat-útmutató bemutatja, hogy hogyan tud számlákat hozni létre a számlajegyzék segítségével.
+description: Ez a témakör azt mutatja be, hogyan lehet számlákat létrehozni a számlajegyzékben.
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,66 +15,56 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b870613512a8f4a5c19a0a05cd72b35ea32861b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843217"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867702"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez a feladat-útmutató bemutatja, hogy hogyan tud számlákat hozni létre a számlajegyzék segítségével.  Ezután egyeztesse a számlát egy beszerzési rendeléssel a számlagyűjtő segítségével, majd véglegesítse a költséget a szállítói számla oldalon.
+Ez a témakör azt mutatja be, hogyan lehet számlákat létrehozni a számlajegyzékben. Ezután egyeztesse a számlát egy beszerzési rendeléssel a számlagyűjtő segítségével, majd véglegesítse a költséget a szállítói számla oldalon.
 
 
 ## <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
-1. Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Beszerzési rendelések.
-2. Új beszerzési rendelés létrehozásához kattintson az Új lehetőségre.
-3. A Szállítói számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Válasszon ki a listából a szállítót. Például a 1001-es szállítót.
-5. Kattintson az OK gombra.
-6. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A listából keresse ki a szolgáltatási cikkszámot. Válassza, például az S0001-t.
-8. Kattintson a cikkszámra, majd válassza ki azt.
-    * A nettó összeg 75,00.  Ezt az összeget szeretnénk viszontlátni a számlán is.  
-9. A Művelet panelen kattintson a Beszerzés elemre.
-10. Kattintson a Megerősítés gombra.
+1. A navigációs ablaktáblán nyissa meg a **Modulok > Kötelezettségek > beszerzési rendelések > Beszerzési rendelések** pontot.
+2. Új beszerzési rendelés létrehozásához kattintson az **Új** elemre.
+3. A **Szállítói számla** mezőben nyissa meg válasszon egy beszállítót a legördülő listához. Válassza ki például az **1001**-es szállítót.
+4. Válassza ki az **OK** lehetőséget.
+5. A **Cikkszám** mezőben válassza ki a kívánt szolgáltatási cikkszámot a legördülő listából. Válassza például a **S0001-t**. A nettó összeg 75,00.  Ezt az összeget szeretnénk viszontlátni a számlán is.  
+6. A Műveleti ablaktáblán válassza ki a **Beszerzés** lehetőséget.
+7. Válassza ki a **Megerősítés** elemet.
 
 ## <a name="create-and-post-and-invoice"></a>Számla létrehozása és feladása
-1. Ugorjon a Kötelezettségek > Számlák > Számlajegyzék elemre.
-2. Kattintson az Új lehetőségre.
+1. Anavigációs ablaktáblán válassza a **Modulok > Kötelezettségek > számlák > Számlajegyzék** elemre.
+2. Válassza az **Új** lehetőséget.
 3. Nyissa meg a keresőlistát a használni kívánt számlajegyzék nevének kiválasztásához.
 4. Válassza ki a használni kívánt számlajegyzék nevét.
-5. Kattintson a Sorokra a jegyzék megnyitásához, adjon meg költségsorokat.
-6. A keresőben válasszon egy szállítót. Például, kattintson a 1001 szállító lehetőségre.
-7. A Számla mezőben adja meg a számlaszámot.
-8. Írjon egy értéket a „Leírás” mezőbe.
-9. A Hitelkeret mezőben adjon meg egy számot.
-10. A Beszerzési rendelés mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-11. Válassza ki a korábban létrehozott beszerzési rendelést.
-12. A Jóváhagyó mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-13. Jelöljön ki egy jóváhagyót és kattintson a Kijelölés gombra a jóváhagyó kiválasztásához.
-14. Kattintson a Feladás lehetőségre.
-15. Zárja be az űrlapot.
-16. Zárja be az űrlapot.
+5. Kattintson a **Sorokra** a jegyzék megnyitásához, adjon meg költségsorokat.
+6. A keresőben válasszon egy szállítót. Válassza ki például az **1001**-es szállítót.
+7. A **Számla** mezőben adja meg a számlaszámot.
+8. Írjon egy értéket a **Leírás** mezőbe.
+9. A **Hitelkeret** mezőben adjon meg egy számot.
+10. A **Beszerzési rendelés** mezőben nyissa meg a legördülő listát a korábban létrehozott beszerzési rendelés kiválasztásához.
+11. A **Jóváhagyó** mezőben jelöljön ki egy jóváhagyót a legördülő listából, majd a **Kiválasztás** gombra kattintva válassza ki a jóváhagyót.
+12. Válassza a **Feladás** parancsot.
 
 ## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a>A számlafolyamat befejezéséhez nyisson meg egy számlát a gyűjtőből, és válassza ki hozzá a megfelelő beszerzési rendelést.
-1. Ugorjon a Kötelezettségek > Számlák > Számlajegyzék elemre.
-2. Kattintson a Beszerzési rendelés elemre, ha szállítói számlát kíván létrehozni a számlajegyzékből.
+1. Anavigációs ablaktáblán válassza a **Modulok > Kötelezettségek > számlák > Számlagyűjtő** elemre.
+2. Kattintson a **Beszerzési rendelés** elemre, ha szállítói számlát kíván létrehozni a számlajegyzékből.
 3. Válassza ki a megtekinteni kívánt számlát.
-4. Az egyeztetés befejezéséhez kattintson az Egyeztetési állapot frissítése elemre.
-5. A Művelet ablaktáblában kattintson a Beállítások elemre.
-6. Kattintson a Nézetváltás elemre.
-7. Kattintson a Rács nézet elemre.
-8. Kattintson a Feladás lehetőségre.
+4. Az egyeztetés befejezéséhez kattintson az **Egyeztetési állapot frissítése** elemre.
+5. A műveleti ablaktáblán válassza ki a **Beállítások** elemet.
+6. Válassza ki a **Nézetváltás** lehetőséget.
+7. Válassza a **Rácsnézet** elemet.
+8. Válassza a **Feladás** parancsot.
 9. Zárja be az űrlapot.
-10. Nyissa meg a következőt: Kötelezettségek > Szállítók > Szállítók.
-11. Válassza ki a beszerzési rendeléshez tartozó szállítót. Válassza ki például az 1001-es szállítót.
-12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. A Művelet ablaktáblában kattintson a Szállító elemre.
-14. Kattintson a Tranzakciók elemre.
-15. Válassza ki a létrehozott számlát.
-    * A számlajegyzék-elhatárolás sztornírozásra, illetve a megfelelő költségszámlára feladásra került.  
+10. A Navigációs ablaktáblán válassza a **Modulok > Kötelezettségek > Szállítók > Beszállítók** elemet.
+11. Válassza ki a beszerzési rendeléshez tartozó szállítót. Válassza ki például az **1001**-es szállítót.
+12. A műveleti ablaktáblán válassza a **Szállító** lehetőséget.
+13. Válassza a **Tranzakciók** lehetőséget.
+14. Válassza ki a létrehozott számlát. A számlajegyzék-elhatárolás sztornírozásra, illetve a megfelelő költségszámlára feladásra került.  
 

@@ -1,9 +1,9 @@
 ---
 title: Értékcsökkenési javaslat létrehozása
-description: Ez az eljárás bemutatja, hogy hogyan működnek az értékcsökkenési kötegjavaslatok, illetve elmagyarázza, hogy hogyan hozhat létre tárgyi eszközök értékcsökkenésére irányuló javaslatot.
+description: Ez a témakör leírja, hogyan működnek az értékcsökkenési kötegjavaslatok, és bemutatja, hogyan hozhat létre tárgyi eszközök értékcsökkenésére irányuló javaslatot.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,35 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07146adfe1ead2b6e06e3c323963f8c012381b76
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 90c24e9d89c055ea95ca5f25cd85ef4042476a90
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1840001"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867607"
 ---
-# <a name="create-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
+# <a name="create-a-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan működnek az értékcsökkenési kötegjavaslatok, illetve elmagyarázza, hogy hogyan hozhat létre tárgyi eszközök értékcsökkenésére irányuló javaslatot. Ez a feladat a USMF bemutató vállalatot, illetve a könyvelői szerepkört használja.
+Ez a témakör leírja, hogyan működnek az értékcsökkenési kötegjavaslatok, és bemutatja, hogyan hozhat létre tárgyi eszközök értékcsökkenésére irányuló javaslatot. Ez a feladat a USMF bemutató vállalatot, illetve a könyvelői szerepkört használja.
 
 
-## <a name="create-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
-1. Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Értékcsökkenési javaslat létrehozása pontra.
-2. A Napló neve mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Adja meg a dátumot a „Záró dátum” mezőben.
-    * A z Értékcsökkenés összegzése opció kiválasztásával egyetlen naplósorba összegezheti a havi értékcsökkenéseket.  
-    * Például ha a záródátum értéke 2015. március 31., a program a következő leírást generálja: „Értékcsökkenés 2015. január 31-e óta”. A javasolt naplósorok Dátummezője ekkor 2015. március 31-re áll át.  
-    * A Szűrő opció segítségével eszköz, eszközcsoport vagy egyéb feltétel szerint szűrheti az értékcsökkenési javaslatokat.  
-    * A Beszerzési vagy értékcsökkenési javaslatok tárgyi eszközökhöz adatlap használata esetén tud kötegenkénti értékcsökkenésre vonatkozó javaslatot adni meg. Ezt a módszert ajánljuk olyan nagyobb javaslatoknál, amelyek komolyabb mértékben használják a rendszer erőforrásait. Ha a köteg lehetőséget választja, akkor a rendszert közben más feladatokhoz is használhatja. Ha ezzel a módszerrel hoz létre értékcsökkenési javaslatot, akkor az értékcsökkenés a tárgyieszköz-értékmodellekre jön létre.  
-5. Kattintson a Napló létrehozása lehetőségre.
+## <a name="create-a-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
+1. A navigációs ablaktáblán nyissa meg a **Modulok > Tárgyi eszközök > Naplóbejegyzések > Értékcsökkenési javaslat létrehozása** elemet.
+2. A **Napló neve** mezőben válasszon ki egy opciót a legördülő menüben.
+3. Adjon meg egy dátumot a **Záró dátum** mezőben.
+
+    - Az **Értékcsökkenés összegzése** opció kiválasztásával egyetlen naplósorba összegezheti a havi értékcsökkenéseket.  
+    - Például ha a záródátum értéke 2015. március 31., a program a következő leírást generálja: „Értékcsökkenés 2015. január 31-e óta”. A javasolt naplósorok **Dátum** mezője ekkor 2015. március 31-re áll át.  
+    - A **Szűrő** opció segítségével eszköz, eszközcsoport vagy egyéb feltétel szerint szűrheti az értékcsökkenési javaslatokat.  
+    - A **Beszerzési vagy értékcsökkenési javaslatok tárgyi eszközökhöz** adatlap használata esetén tud kötegenkénti értékcsökkenésre vonatkozó javaslatot adni meg. Ezt a módszert ajánljuk olyan nagyobb javaslatoknál, amelyek komolyabb mértékben használják a rendszer erőforrásait. Ha a köteg lehetőséget választja, akkor a rendszert közben más feladatokhoz is használhatja. Ha ezzel a módszerrel hoz létre értékcsökkenési javaslatot, akkor az értékcsökkenés a tárgyieszköz-értékmodellekre jön létre.  
+
+4. Válassza a **Napló létrehozása** elemet.
 
 ## <a name="review-depreciation-entries"></a>Tekintse át az értékcsökkenés bejegyzéseket
-1. Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.
+1. A navigációs ablaktáblán nyissa meg a **Modulok > Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója** elemet.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. Kattintson a Sorok pontra.
-4. Kattintson a Feladás lehetőségre.
+3. **Sorok** kiválasztása.
+4. Válassza a **Feladás** parancsot.
 

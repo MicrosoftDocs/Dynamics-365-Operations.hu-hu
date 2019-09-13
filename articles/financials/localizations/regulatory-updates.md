@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 for Finance and Operations tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: a9d107fa57bdc2edf2dc1a69081e02b3c4321551
+ms.sourcegitcommit: b7f70ee1e54c65c19e1d33c76d2428f9c6c05c66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849332"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "1918465"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -51,30 +51,32 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      április 2019.          |   10.0.1      |    Európa     |E-számlázás - Szállítói számlák importálása PEPPOL BIS 3 formátumban         |
 |      április 2019.          |   10.0.1      |   Németország     |E-számlázás - Vevő számlák exportálása xRechnung 1.1 formátumban         |
 |      április 2019.          |   10.0.1      |    Egyesült Királyság     |[Áfakimutatás elküldési módosítások (Adó digitalizálása)](emea-gbr-mtd-vat-integration.md)    |    
-|      április 2019.          |   10.0.1      |    Brazília     |NF-e új NT 2018.005         |
 |      április 2019.          |   10.0.1      |    Oroszország     |[Áfa bevallási formátummódosítások 2019-től](rus-VAT-declaration.md) |
 |      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től (bevételi és kiadási számlakönyvek) |
 |      április 2019.          |   10.0.1      |    Oroszország     |A 2018-as földadóbevallás módosításai |
 |      április 2019.          |   10.0.1      |    Oroszország     |[A 2019-es ingatlanadó-bevallás módosításai](rus-assessed-tax-declaration.md)|
 |      április 2019.          |   10.0.1      |    Oroszország     |A 2019-es szállításiadó-bevallás módosításai  |
-|      április 2019.            |   10.0.1      | Magyarország      |  Magyarország: Online számlázás v. 1.1 2019 a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban  |
-|      május 2019.            |   10.0.2      | Brazília      |   SPED ECD Layout 7   |
-|      június 2019.            |   10.0.3      | Brazília      |   NF-e új NT 2018.005 - v.1.20   |
-|      június 2019.            |   10.0.3      | Brazília      |   SPED ECD Layout 7   |
+|      április 2019.          |   10.0.1      |    Litvánia     |i.SAF-jelentés a felhasználó határozza meg a rendszer áfakódjait a jogi adókódok összefüggésében.  |
+|      április 2019.          |   10.0.1      | Magyarország      |  Magyarország: Online számlázás v.1.1 2019  |
+|      április 2019.          |   10.0.1      | Japán      |  2019 – japán naptári korszak változása  |
+|      április 2019.          |   10.0.3/10.0.2/10.0.1      | India      |  IEC-számformátum változása  |
+|      június 2019.           |   10.0.1HF/10.0.2HF/10.0.3      | Brazília      |   NF-e új NT 2018.005 - v.1.20   |
+|      június 2019.           |   10.0.1HF/10.0.2HF/10.0.3      | Brazília      |   SPED ECD Layout 7   |
+|      június 2019.           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
+|      2019. július           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brazília    |   NF-e és NFC-e – 13/2019 számú rendelet és SUCIEF 55/2019- RJ rendelet – új feltételek az adómentességi címkék kiadásáról az NF-e-ben.   |
+|      június 2019.           |   10.0.2     | Olaszország      |   „Új Spesometro” (Esterometro) a fájlméret és a rekordokszámok korlátai alapján történő fájlmegosztás támogatásához   |
+ | 2019. augusztus            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5      | Brazília    |   Az NF-e: NT 2019.001 1.00-s verziójához készült technikai megjegyzések új verziója   |
+|      2019. július            |   10.0.3/10.0.4      | India   |   A „Teljesítés helyének” és az „Állapotnak” a megjelenítése a GST-adószámlán  | 2019. július            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5HF/10.0.6      | Brazília    |   NF-e ICMS-ST – CAT 42/18 rendelet az SP állapotához – CAT 42/18   |
 |      június 2019.            |   10.0.3      | Brazília      |   SPED ECF – 5. elrendezés 2019-es évre   |
-|      június 2019.            |   10.0.3      | Litvánia    |   i.SAF-jelentés a felhasználó határozza meg a rendszer áfakódjait a jogi adókódok összefüggésében.    |
 |      június 2019.            |   10.0.3      | Lengyelország     |   SAF számlák (JPK_FA) v. 2 2019. július 1-től  |
 |      június 2019.            |   10.0.3      | Brazília   |   ICMS pénzügyi dokumentum-korrekciók engedélyezése 5.2 tábla   |
-|      június 2019.            |   10.0.3      | Brazília    |   NF-e rendelet 54.308/18 (RS)   |
+|      június 2019.            |   10.0.3      | India    |   Adókiigazítás BOE-ban, a vám pénznemében a tranzakció pénzneme helyett  |
   | 2019. július            |   10.0.4      | Brazília    |   Beérkező pénzügyi bizonylat, 66   |
-   | 2019. július            |   10.0.4      | Brazília    |   NF-e és NFC-e – 13/2019 számú rendelet és SUCIEF 55/2019- RJ rendelet – új feltételek az adómentességi címkék kiadásáról az NF-e-ben.   |
-   | 2019. július            |   10.0.4      | India   |   A „Teljesítés helyének” és az „Állapotnak” a megjelenítése a GST-adószámlán  |
-   | 2019. július            |   10.0.4      | Mexikó   |  Harmadik fél DIOT-nyilatkozata – az elrendezés változásai, 2019   |
-   | 2019. július            |   10.0.4      | Brazília    |   NF-e ICMS-ST – CAT 42/18 rendelet az SP állapotához – CAT 42/18
-   | 2019. július            |   10.0.4      | Brazília    |   NF-e rendelet 54.308/18 – RS NF   |
-       | Függőben            |   10.0.5      | Brazília    |   Sped hozzájárulások gyakorlati útmutatója, 1.31-es verzió. új útmutató   |
-         | Függőben            |   10.0.5      | Brazília    |   Az NF-e: NT 2019.001 1.00-s verziójához készült technikai megjegyzések új verziója   |
-          | Függőben            |   10.0.5      | Spanyolország    |   Ellenőrzési szabályok változása 2019. október 1-jétől   |
+  | 2019. július            |   10.0.4      | Mexikó   |  Harmadik fél DIOT-nyilatkozata – az elrendezés változásai, 2019   |  
+  | 2019. augusztus            |   10.0.5      | Brazília    |   Sped hozzájárulások technikai útmutatója, 1.31-es verzió. új útmutató   | 
+  | 2019. augusztus            |   10.0.5      | Spanyolország    |   Ellenőrzési szabályok változása 2019. október 1-jétől   |
+  | 2019. augusztus          |   10.0.5      | Mexikó    |   CFDI 3.3 – Az IEPS áfatranzakcióik adatainak XML-formátumban az ügyfél profiljától függően választhatónak kell lenniük  |
+  |      2019. augusztus           |   10.0.5      | Egyesült Királyság    |   DCR – Adó digitalizálása – csalásmegelőzési paraméterek az eredeti eszközről  |
    
 
 

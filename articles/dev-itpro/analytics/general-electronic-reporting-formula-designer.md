@@ -2,8 +2,8 @@
 title: Képletszerkesztő elektronikus jelentésekhez (ER)
 description: Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849509"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864294"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -113,6 +113,33 @@ Az ER képletszerkesztő segítségével generálhat egy fájlnevet a létrejöv
 - Egy kifejezés lehetővé teszi ( **IGAZ** visszaküldése esetén) a fájl létrehozási folyamatát azon kötegekre vonatkozóan, amelyek legalább egy rekordot tartalmaznak.
 
 [![Fájlvezérlés](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Dokumentumtartalmak szabályzása
+
+Az elektronikus képlettervező segítségével olyan kifejezéseket állíthat be, amelyek vezérlik, hogy milyen adatokat kell elhelyezni az elektronikus dokumentumokban futásidőben. A kifejezések az adatok feldolgozásától és a konfigurált logikától függően engedélyezhetik vagy letilthatják a formátum egyes elemeinek kimenetét. Ezeket a kifejezéseket egyetlen formátumú elemként is megadhatja az **Engedélyezve** mezőben **Műveleti tervező lap** **Hozzárendelés lapján**, **Logikai értéket** visszaadó logikai feltételként:
+
+-   Ha **igaz** értéket ad vissza, a program végrehajtja az aktuális formátumelemet.
+-   Ha **Hamis** értéket ad vissza, a program kihagyja az aktuális formátumelemet.
+
+A következő ábra az ilyen típusú kifejezéseket mutatja meg (a **11.12.11** verzió a **ISO20022 Credit transfer (NO)** formátum konfiguráció a Microsoft részéről egy példa). Az **XMLHeader** -formátum összetevő úgy van beállítva, hogy leírja a átutalási üzenet szerkezetét az ISO 20022 XML-szabványoknak megfelelően. Az **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** formátumösszetevő úgy van beállítva, hogy hozzáadja a létrejövő üzenethez az **Ustrd** XML-elemet, és az átutalási adatokat elhelyezze strukturálatlan formátumban a következő XML-elemek szövegeként:
+
+-   A **PaymentNotes** összetevő a fizetési megjegyzések szövegének kimeneteként szolgál.
+-   A **DelimitedSequence** összetevő kimenete az aktuális átutalás kiegyenlítéséhez használt vesszővel tagolt számlaszámok.
+
+[![Művelettervező](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> A **PaymentNotes** és **DelimitedSequence** összetevők kérdőjellel vannak megjelölve. Ez azt jelenti, hogy mindkét összetevő használata feltételes következő kritériumok alapján:
+
+-   A **PaymentNote** összetevőjéhez a **@.PaymentsNotes<>""** kifejezés lehetővé teszi (**IGAZ** érték visszaküldésével) az **Ustrd** XML-elembe generálását, a fizetési megjegyzések szövegét, ha az aktuális átutalás szövege nem üres.
+
+[![Művelettervező](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   A **DelimitedSequence** összetevőhöz definiált **@.PaymentsNotes=""** kifejezés engedélyezi (**IGAZ** érték visszaküldésével) az **Ustrd** XML elem kitöltését, vesszővel elválasztott számlaszámokkal, amelyeket az aktuális átutalás kiegyenlítéséhez használnak amikor az átutalás fizetési megjegyzése üres.
+
+[![Művelettervező](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Ennek a beállításnak a alapján az összes adósi kifizetésre generált üzenet **Ustrd** XML-elem tartalmazni fogja a fizetési megjegyzések szövegét, vagy ha az ilyen szöveg üres, akkor a kifizetés kiegyenlítéséhez használt számlákat vesszővel elválasztva.
 
 ### <a name="basic-syntax"></a>Alap szintaxis
 

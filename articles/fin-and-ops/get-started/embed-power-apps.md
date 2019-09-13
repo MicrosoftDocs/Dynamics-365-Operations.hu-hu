@@ -3,7 +3,7 @@ title: PowerApps alkalmazások beágyazása
 description: Ez a témakör leírja, hogyan végezhető el a PowerApps beágyazása a Finance and Operations ügyfélbe a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
 manager: AnnBe
-ms.date: 09/04/2018
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 4bb8af1ffbe1b627856e0476eba5be2fc075d15f
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: ed189a13574b3d6b486d98404722a5322ce1b7a7
+ms.sourcegitcommit: e552111e148a80544a3468da60ea0464f02a658d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1794878"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "1875296"
 ---
 # <a name="embed-powerapps-apps"></a>PowerApps alkalmazások beágyazása
 
@@ -123,12 +123,13 @@ public final class ClassTest_Extension
     public static boolean isPowerAppPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
+    
     public static boolean isPowerAppTabPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppTabPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
 }
 ```

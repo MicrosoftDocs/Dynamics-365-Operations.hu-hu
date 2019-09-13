@@ -3,7 +3,7 @@ title: Tényleges készlet áthelyezése a raktáron belül
 description: Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845257"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916576"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Tényleges készlet áthelyezése a raktáron belül
 
@@ -32,40 +32,30 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Készletátviteli napló létrehozása
-1. Ugrás az Áthelyezéshez.
-2. Kattintson az Új lehetőségre.
-3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson az OK gombra.
-    * Az egyes naplósorok esetében meg lehet adni a „Kezdőérték” és a „Végérték” dimenziókat. Ezek a szükségesek ehhez a naplótípushoz. Más szabályokat alkalmazva is lehet cikkeket átszállítani. Ebben a példában egy adott raktáron belül fogunk egy cikket átszállítani, egy olyan helyről, ahol azonosítótábla alapján történik a vezérlés egy olyan helyre, ahol nem azonosítótábla alapján.   
+1. A **Navigációs ablaktáblán** lépjen a **Készletgazdálkodás > Naplóbejegyzések > Cikkek > Átvitel** elemre.
+2. Kattintson az **Új** elemre.
+3. A **Név** mezőben adjon meg vagy válasszon ki egy értéket.
+4. Kattintson az **OK** gombra. Az egyes naplósorok esetében meg lehet adni a „Kezdőérték” és a „Végérték” dimenziókat. Ezek a szükségesek ehhez a naplótípushoz. Más szabályokat alkalmazva is lehet cikkeket átszállítani. Ebben a példában egy adott raktáron belül fogunk egy cikket átszállítani, egy olyan helyről, ahol azonosítótábla alapján történik a vezérlés egy olyan helyre, ahol nem azonosítótábla alapján.   
 
 ## <a name="create-journal-lines"></a>Naplósorok létrehozása
-1. Kattintson az Új lehetőségre.
-2. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „A0001” lehetőséget.  
-3. A Forrástelep mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „2” lehetőséget.  
-4. A Céltelep mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „2” lehetőséget.  
-5. A Forrásraktár mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-6. A Célraktár mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-7. A Forráshely mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „FL-001” lehetőséget.  
-8. A Célhely mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „BULK-001” lehetőséget.  
-9. Adjon meg egy számot a Mennyiség mezőben.
-10. Kattintson a Készlet dimenziók lapra.
-11. Az Azonosítótábla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-12. Kattintson a Mentés gombra.
+1. A **Naplósorok gyorslapon** kattintson az **Új** lehetőségre.
+2. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja az „A0001” lehetőséget.  
+3. A **Forrástelephely** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja az „2” lehetőséget.  
+4. A **Céltelephely** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja az „2” lehetőséget.  
+5. A **Forrásraktár** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja a „24” lehetőséget  
+6. A **Célraktár** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja a „24” lehetőséget  
+7. A **Forráshely** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja az „FL-001” lehetőséget.  
+8. A **Célhely** mezőben adjon meg vagy válasszon ki egy értéket. Az USMF használata esetén választhatja a „BULK-001” lehetőséget.  
+9. Adjon meg egy számot a **Mennyiség** mezőben.
+10. A **Sorrészletek** gyorslapon kattintson a **Készletdimenziók** lapra.
+11. A **Forrás-készletdimenziók** pontban az **Azonosítótábla** mezőben adjon meg vagy válasszon egy értéket. Az USMF használata esetén választhatja a „24” lehetőséget  
+12. Kattintson a **Mentés** gombra.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Készletátviteli napló feladása
-1. Kattintson a Feladás lehetőségre.
-2. Kattintson az OK gombra.
+1. A **Művelet panelen** kattintson a **Feladás** elemre.
+2. Kattintson az **OK** gombra.
 
 ## <a name="view-inventory-transactions"></a>Készlettranzakciók megtekintése
-1. Kattintson a Készlet parancsra.
-2. Kattintson a Tranzakciók elemre.
-    * Itt láthatók a napló feladásakor létrehozott tranzakciók.  
+1. Kattintson a **Készlet** parancsra.
+2. Kattintson a **Tranzakciók** elemre. Itt láthatók a napló feladásakor létrehozott tranzakciók.  
 

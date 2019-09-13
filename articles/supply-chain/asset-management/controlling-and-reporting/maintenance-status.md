@@ -1,0 +1,66 @@
+---
+title: Karbantartás állapota
+description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a karbantartási állapotot az Eszközkezelés modulban.
+author: josaw1
+manager: AnnBe
+ms.date: 08/23/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 516607c056125a16e075c33f3c2ad069efb396d9
+ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "1918349"
+---
+# <a name="maintenance-status"></a>Karbantartás állapota
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
+Az Eszközkezelésben számítást végezhet, hogy egy adott időszakra vonatkozóan áttekintést kapjon az új, az aktív és a befejezett karbantartási kérésekről, munkarendelésekről és karbantartás miatti üzemkimaradásokról. Az időszakra vonatkozóan megtekintheti az elvégzett állapotfelmérések számát is. A számítással áttekintést kaphat a beérkező és a teljesített karbantartási kérésekre és munkarendelésekre vonatkozó terhelésekről.
+
+## <a name="make-a-maintenance-status-calculation"></a>Karbantartási állapot számításának elkészítése
+
+1. Kattintson az **Eszközkezelő** > **Lekérdezések** > **Karbantartás állapota** elemre.
+
+2. Az **Állapot kiszámítása** párbeszédpanel **Kezdő dátum** és **Záró dátum** mezőjében válassza ki azt az időszakot, amelyhez el szeretné végezni a számítást.
+
+3. A **Szint** mezőben megadhatja, hogy a karbantartási sorok milyen részletesen jelenítsék meg a munkavégzési helyszíneket. Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínekhez, akkor a munkavégzési helyszínekhez tartozó karbantartási sorok a legfelső szinten jelenik meg, így a sorban szereplő állapot hozzáadható az alacsonyabb szinten található munkavégzési helyszínekből. Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely minden karbantartási sort megjelenít az összes olyan munkavégzési helyszínnél, amelyhez a sor kapcsolódik.
+
+4. Kattintson az **OK** gombra az számítás indításához.
+
+5. Az Eszközórák ellenőrzése lapon a **Csoportosítási szempont...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott műveleti ablaktábla gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
+
+6. Ne felejtse a **Frissítés** gombra kattintani frissíteni a számítást, amikor a **Csoportosítás alapja...** gombok aktiválásával vagy inaktiválásával módosítást végez, vagy új időszakhoz végez számítást.
+
+7. Ha új karbantartási állapothoz szeretne számítást végezni, kattintson az **Állapot** elemre.
+
+>[!NOTE]
+>A **Karbantartás állapota** részen látható eredmények csak a tényleges kezdési dátummal és idővel rendelkező karbantartási kéréseket és munkarendeléseket tartalmazzák. A záró dátum és időpont üres is lehet.
+
+*1. példa:*
+
+Az alábbi ábrán az **Év** és a **Hónap** gomb aktiválva látható. Itt havi szinten általános áttekintést kaphat a karbantartási kérésekhez és a munkarendelésekhez kapcsolódó terhelésről és teljesítményről. 
+
+![1. ábra](media/13-controlling-and-reporting.png)
+
+*2. példa:*
+
+Az alábbi ábrán a munkavégzési helyszínekkel kapcsolatos információk is hozzá lettek adva. Ekkor összehasonlíthatja a többek között földrajzi helyeket, gyárakat vagy munkaterületeket jelölő munkavégzési helyszínek terhelését és teljesítményét. 
+
+![2. ábra](media/14-controlling-and-reporting.png)
+

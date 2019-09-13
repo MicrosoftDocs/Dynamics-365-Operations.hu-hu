@@ -1,9 +1,9 @@
 ---
 title: Pénzügyi időszakok tömeges lezárása
-description: Ez az eljárás bemutatja, hogyan helyezhető várakoztatásba, illetve hogyan zárható le véglegesen egy időszak egy időben több jogi személyre vonatkoztatva.
+description: Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le véglegesen egy időszak egyszerre, több jogi személyre vonatkoztatva.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,29 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fbe2d3f7d623384e1b356d9bb683db8046a85220
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 398a62e575010501291af3016553fc72fbc891de
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846343"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914630"
 ---
 # <a name="mass-financial-period-close"></a>Pénzügyi időszakok tömeges lezárása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan helyezhető várakoztatásba, illetve hogyan zárható le véglegesen egy időszak egy időben több jogi személyre vonatkoztatva. Ezenkívül a feladat megmutatja, hogyan lehet bizonyos modulokra korlátozni a felhasználói csoportok könyvelését.
+Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le véglegesen egy időszak egyszerre, több jogi személyre vonatkoztatva. Ezenkívül a feladat megmutatja, hogyan lehet bizonyos modulokra korlátozni a felhasználói csoportok könyvelését.
 
-1. Lépjen a Főkönyv > Időszak lezárása > Főkönyvi naptárak elemre.
-    * Vegye figyelembe, hogy a megjelenített jogi személyek listája a lapon kiválasztott pénzügyi naptár függvénye. Csak azok a jogi személyek jelennek meg, akik a kijelölt pénzügyi naptárat használják.  
-2. Kattintson a Szerkesztés lehetőségre.
+1. A navigációs ablakban lépjen a **Modulok > Főkönyv > Időszak lezárása > Főkönyvi naptárak** részre. Vegye figyelembe, hogy a megjelenített jogi személyek listája a lapon kiválasztott pénzügyi naptár függvénye. Csak azok a jogi személyek jelennek meg, akik a kijelölt pénzügyi naptárat használják.
+2. Válassza ki a **Szerkesztés** opciót.
 3. Válassza ki azt az időszakot, amelynek az állapotát módosítani szeretné.
-4. Válassza ki a jogi személyeket, amelyeknek az állapotát frissíteni szeretné.
-    * Gyorsan kijelölhet minden jogi személyt a rács bal felső oldalán látható pipa kiválasztásával.  
-5. A kiválasztott modul könyvelés általi elérésének megadásához jelölje be a Modulelérés frissítése lehetőséget.
-    * A modul állapota egyesével is frissíthető, ha egyenként szerkeszti a rácsban szereplő rekordokat. A gomb akkor hasznos, ha több jogi személy rekordjait kívánja gyorsan frissíteni.  
-6. A Pályázat modul mezőben válassza ki a modult, amelynek frissíteni kívánja az állapotát. Kattintson a Kiválasztás lehetőségre.
-7. A Hozzáférési szint elemnél válasszon az Összes és az Egyik sem lehetőség, illetve adott felhasználói csoport között. Kattintson a Kiválasztás lehetőségre.
-    * Az Összes lehetőség jelezi, hogy az összes modulhoz szerkesztési joggal rendelkező felhasználó feladhat, ha az időszak nyitott. Az Egyik sem lehetőség azt jelezi, hogy a felhasználók nem adhatnak fel a modulba, ha az időszak nyitott. Egy adott felhasználócsoport lehetőség azt jelzi, hogy csak a csoportba tartozó felhasználók adhatnak fel a modulba, ha az időszak nyitott.  
-8. Kattintson a Módosítás gombra.
+4. Válassza ki a jogi személyeket, amelyeknek az állapotát frissíteni szeretné. Gyorsan kijelölhet minden jogi személyt a rács bal felső oldalán látható pipa kiválasztásával.  
+5. A kiválasztott modul könyvelés általi elérésének megadásához jelölje be a **Modulelérés frissítése** lehetőséget. A modul állapota egyesével is frissíthető, ha egyenként szerkeszti a rácsban szereplő rekordokat. A gomb akkor hasznos, ha több jogi személy rekordjait kívánja gyorsan frissíteni.  
+6. A **Pályázat** modulban válassza ki azt a modult, amelynek frissíteni kívánja az állapotát. Kattintson a **Kiválasztás** lehetőségre.
+7. A **Hozzáférési szintnél** válasszon az **Összes** és az **Egyik sem** lehetőség, illetve egy adott felhasználói csoport között. Kattintson a **Kiválasztás** lehetőségre. Az Összes lehetőség jelezi, hogy az összes modulhoz szerkesztési joggal rendelkező felhasználó feladhat, ha az időszak nyitott. Az Egyik sem lehetőség azt jelezi, hogy a felhasználók nem adhatnak fel a modulba, ha az időszak nyitott. Egy adott felhasználócsoport lehetőség azt jelzi, hogy csak a csoportba tartozó felhasználók adhatnak fel a modulba, ha az időszak nyitott.  
+8. Válassza ki a **Frissítés** lehetőséget.
 9. Válasszon másik időszakot állapotfrissítésre.
 10. Válassza ki a jogi személyeket, amelyek időszakállapotát frissíteni szeretné.
-11. Válassza az Időszak állapotának frissítése lehetőséget, és az állapotot állítsa Várakoztatott, Nyitott vagy Véglegesen lezárt értékre.
-    * Nyitott lehetőség jelzi, hogy az időszakba fel lehet adni, ha a felhasználó rendelkezik hozzáféréssel. A Várakoztatott azt jelenti, hogy az időszak nem adható fel, de az időszak újra megnyitható. A Véglegesen lezárt azt jelenti, hogy az időszak le van zárva, és többé nem lehet megnyitni. Kiigazítások nem adhatók fel. Nem ajánlott véglegesen lezártra állítani egy időszakot, amíg az összes kiigazítás és vizsgálat le nem zárult.  
-12. Kattintson a Módosítás gombra.
+11. Válassza az **Időszak állapotának frissítése** lehetőséget, és az állapotot állítsa **Várakoztatott**, **Nyitott** vagy **Véglegesen lezárt** értékre. A **Nyitott** lehetőség jelzi, hogy az időszakhoz lehetséges a feladás (ha a felhasználó rendelkezik hozzáféréssel). A **Várakoztatott** érték azt jelenti, hogy az időszak nem adható fel, de újra megnyitható. A **Véglegesen lezárt** azt jelenti, hogy az időszak le van zárva, és többé nem lehet megnyitni. Kiigazítások nem adhatók fel. Nem ajánlott **véglegesen lezártra** állítani egy időszakot, amíg az összes kiigazítás és vizsgálat le nem zárult.  
+12. Válassza ki a **Frissítés** lehetőséget.
 

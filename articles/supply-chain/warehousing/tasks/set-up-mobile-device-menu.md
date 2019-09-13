@@ -1,9 +1,9 @@
 ---
 title: Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez
-description: Ez az eljárás bemutatja, hogy hogyan kerül sor a mobileszköz menüelemeinek beállítására.
+description: Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek beállítására.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,68 +17,55 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 707fc9c798da8eac30cc9f56c158be3d96b271d6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c1c922d16b46e26031e5f80886e4e4e8f08bcdaf
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847111"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916867"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan kerül sor a mobileszköz menüelemeinek beállítására. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
+Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek beállítására. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Mobileszköz-menüpont létrehozása
-1. Ugrás a Mobileszköz menüpontokhoz.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Menüelem neve mezőbe.
-    * Egyedi érték megadása. Ha például beírhatja a „Beszerzési rendelés áthelyezés” kifejezést. Jegyezze meg az értéket, később szüksége lesz rá.  
-4. Érték beírása a Címmezőbe.
-    * Ez az a cím, amely a felhasználók mobileszközein a jelenik meg. Ha például beírhatja a „Beszerzési rendelés áthelyezés” kifejezést.  
-5. A Mód mezőben válassza ki a „Munka” lehetőséget.
-6. A Meglévő munka használata mezőben válassza az Igen lehetőséget.
-    * A mobileszköz-menüpont meglévő munkához használatos. Ezért ennek az értéknek Igennek kell lennie.  
-    * A Készletállapot megjelenítése mező meghatározza, hogy az aktuális készlet készletállapota megjelenjen raktári dolgozó mobileszközén.  
-7. Az Irányítja mezőben válassza a „Rendszercsoportosítás” lehetőséget.
-    * Ha valamit kijelöl az Irányítja mezőben, további mezők jelennek meg ezen a lapon az Általános szakaszban. A megjelenő mezők attól függenek, hogy Ön mit jelölt ki. A Rendszercsoportosítás kijelölésekor 2 új mező kerül hozzáadásra. Ezek magyarázata alább látható.  
-8. Írja be a Rendszer-csoportosítás mezőbe a „WorkPoolId” szöveget.
-    * Amikor a raktári dolgozók megnyitják a menüpontot, a munkagyűjtő azonosító ellenőrzése szükséges lesz. Minden, ehhez a menüponthoz rendelt munkarendelés ezzel a Munkagyűjtő azonosítóval és minden Megnyitott munkarendeléssor munkaosztálya a felhasználóhoz kerül.  
-9. Írjon be egy értéket a Rendszer-csoportosítási címke mezőbe.
-    * Ez a szöveg jelenik meg a mobileszköz-felhasználó számára. Például beírhatja a „Munkagyűjtő” kifejezést.  
-10. Válassza az Igen lehetőséget az Azonosítótábla felülbírálása betároláskor mezőben.
-    * Ez a beállítás lehetővé teszi, hogy a raktárosok felülírják a cél azonosítótáblát, amikor azonosítótáblás szabályozású helyre kerülnek elemek.  
-11. Válassza az Igen lehetőséget a Csoportos betárolás mezőben.
-    * Ha a betárolási sorok a munkarendelésen ugyanazon a helyen találhatók, a felhasználó egy összevont Elhelyezési utasítást fog kapni az összes sorhoz.  
-    * Vizsgálati sablon azonosítója: Egy munkavizsgálati sablon lehetővé teszi egy menüpont munkafolyamatának megszakítását más művelet végrehajtásához. Például ha ez a menüpont a bejövő munkához áll rendelkezésre, a vizsgálati sablon megkövetelheti, hogy a dolgozó ellenőrizze a hőmérsékletet. A vizsgálati sablonban van megadva az a pont ahol a folyamat megszakad – ez lehet például a munka kezdése vagy befejezése, illetve az állapot megváltozása.  
-12. Bontsa ki a Munkaosztályok szakaszt.
-13. Kattintson az Új lehetőségre.
-14. Írja be a Munkaosztály azonosítója mezőbe a „Beszerzés” szöveget.
-    * A munkagyűjtő korlátozza a munkát, amelyre a menüelem használható. Ebben az esetben a Munkaosztály azonosító beszerzése ponttal rendelkező megnyitott munkarendeléssorok fogják használni.  
-15. Kattintson a Mentés gombra.
+1. A keresősávba beírva ugorjon a **Mobileszköz menüpontjai** elemre.
+2. Válassza az **Új** lehetőséget.
+3. Írjon be egy értéket a **Menüelem neve** mezőbe. Egyedi érték megadása. Például megadhatja a `POMove` kifejezést. Jegyezze meg az értéket, később szüksége lesz rá.  
+4. Érték beírása a **Cím** mezőbe. Ez az a cím, amely a felhasználók mobileszközein a jelenik meg. Például megadhatja a `PO Move` kifejezést.  
+5. A **Mód** mezőben válassza ki a **Munka** lehetőséget.
+6. A **Meglévő munka használata** mezőben válassza az **Igen** lehetőséget.
+    - A mobileszköz-menüpont meglévő munkához használatos. Ezért ezt **Igen** értékre kell állítania.  
+    - A **Készletállapot megjelenítése** mező meghatározza, hogy az aktuális készlet készletállapota megjelenjen a raktári dolgozó mobileszközén.  
+7. Az **Irányítja** mezőben válassza ki a **Rendszer-csoportosítás** lehetőséget. Ha valamit kijelöl az **Irányítja** mezőben, további mezők jelennek meg ezen a lapon az **Általános** szakaszban. A megjelenő mezők attól függenek, hogy Ön mit jelölt ki. A **Rendszer-csoportosítás** kiválasztásakor két új mezővel bővül. Ezek magyarázata alább látható.  
+8. A **Rendszer-csoportosítás** mezőben válassza ki a **WorkPoolId** szöveget. Amikor a raktári dolgozók megnyitják a menüpontot, a munkagyűjtő azonosító ellenőrzése szükséges lesz. Minden, ehhez a menüponthoz rendelt munkarendelés ezzel a Munkagyűjtő azonosítóval és minden Megnyitott munkarendeléssor munkaosztálya a felhasználóhoz kerül.  
+9. Adjon meg egy értéket a **Rendszer-csoportosítási címke** mezőben. Ez a szöveg jelenik meg a mobileszköz-felhasználó számára. Például beírhatja a **Munkagyűjtő** kifejezést.  
+10. Válassza az **Igen** lehetőséget az **Azonosítótábla felülbírálása betároláskor** mezőben. Ez a beállítás lehetővé teszi, hogy a raktárosok felülírják a cél azonosítótáblát, amikor azonosítótáblás szabályozású helyre kerülnek elemek.  
+11. Válassza az **Igen** lehetőséget a **Csoportos betárolás** mezőben.
+    - Ha a betárolási sorok a munkarendelésen ugyanazon a helyen találhatók, a felhasználó egy összevont Elhelyezési utasítást fog kapni az összes sorhoz. 
+    - Vizsgálati sablon azonosítója: Egy munkavizsgálati sablon lehetővé teszi egy menüpont munkafolyamatának megszakítását más művelet végrehajtásához. Például ha ez a menüpont a bejövő munkához áll rendelkezésre, a vizsgálati sablon megkövetelheti, hogy a dolgozó ellenőrizze a hőmérsékletet. A vizsgálati sablonban van megadva az a pont ahol a folyamat megszakad – ez lehet például a munka kezdése vagy befejezése, illetve az állapot megváltozása.  
+12. Bontsa ki a **Munkaosztályok** szakaszt.
+13. Válassza az **Új** lehetőséget.
+14. Írja be, hogy `Purchase` a **Munkagyűjtő-azonosító** mezőbe. A munkagyűjtő korlátozza a munkát, amelyre a menüelem használható. Ebben az esetben a Munkaosztály azonosító beszerzése ponttal rendelkező megnyitott munkarendeléssorok fogják használni.  
+15. Válassza a **Mentés** lehetőséget.
 
 ## <a name="set-up-work-confirmation"></a>Munkamegerősítés beállítása
-1. Kattintson a Munka-visszaigazolás beállítására.
-2. A Munkatípus mezőben válassza a „Kitárolás” lehetőséget.
-3. Válassza ki az Automatikus megerősítés jelölőnégyzetet.
-    * A Kitárolás munkatípusú munkautasítás automatikus megerősítésre kerül. A felhasználónak ez az utasítás nem fog megjelenni.  
-4. Kattintson az Új lehetőségre.
-5. A Munkatípus mezőben válassza a „Betárolás” lehetőséget.
-6. Válassza ki a Helymegerősítés jelölőnégyzetet.
-    * A cikk elhelyezése előtt a raktári dolgozónak meg kell erősítenie a hely átvizsgálását.  
-7. Kattintson a Mentés gombra.
-8. Zárja be a lapot.
-9. Zárja be a lapot.
+1. Válassza ki **Munka-visszaigazolás beállítása** lehetőséget.
+2. A **Munkatípus** mezőben válassza a **Kitárolás** lehetőséget.
+3. Válassza ki az **Automatikus megerősítés** jelölőnégyzetet. A Kitárolás munkatípusú munkautasítás automatikus megerősítésre kerül. A felhasználónak ez az utasítás nem fog megjelenni.  
+4. Válassza az **Új** lehetőséget.
+5. A **Munkatípus** mezőben válassza ki a „Betárolás” lehetőséget.
+6. Válassza ki a **Helymegerősítés** jelölőnégyzetet. A cikk elhelyezése előtt a raktári dolgozónak meg kell erősítenie a hely átvizsgálását.  
+7. Válassza a **Mentés** lehetőséget.
 
 ## <a name="add-the-menu-item-to-a-mobile-device-menu"></a>A menüelem hozzáadása a mobileszköz menühöz
-1. Ugrás a Mobileszköz menübe.
-2. Kattintson a Szerkesztés lehetőségre.
-3. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a „Név” mezővel a „bejövő” szót beírva.
-    * Szeretné megtalálni bejövő menüpontokhoz használt menüt. Az USMF rendszerben ennek a mezőnek a neve: Bejövő.  
-4. A fában válassza ki az „egy érték” lehetőséget.
+1. A keresősávba beírva ugorjon a **Mobileszköz** menüre.
+2. Válassza ki a **Szerkesztés** opciót.
+3. Rekordok kereséséhez használja a gyorsszűrőt. Például végezzen szűrést a **Név** mezőre a **bejövő** kifejezést beírva. Szeretné megtalálni bejövő menüpontokhoz használt menüt. Az USMF rendszerben ennek a mezőnek a neve: **Bejövő**.  
+4. A fán válassza ki az **egy érték** lehetőséget.
 5. Kattintson a jobbra mutató nyílra.
-6. Kattintson a Mentés gombra.
+6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a lapot.
-

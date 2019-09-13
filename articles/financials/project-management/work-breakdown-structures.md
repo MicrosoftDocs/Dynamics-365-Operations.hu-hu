@@ -1,9 +1,9 @@
 ---
-title: Munkalebontási struktúrák
+title: Munkalebontási struktúrák áttekintése
 description: A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 068a811c3f1e7033e2625a99975652e0d6f1a139
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 78509898d0c2279750df3860a670d3d7a6badfc0
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838223"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865580"
 ---
-# <a name="work-breakdown-structures"></a>Munkalebontási struktúrák
+# <a name="work-breakdown-structures-overview"></a>Munkalebontási struktúrák áttekintése
 
 [!include [banner](../includes/banner.md)]
 

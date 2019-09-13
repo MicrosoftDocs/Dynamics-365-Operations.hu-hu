@@ -1,9 +1,9 @@
 ---
 title: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
-description: Ez az eljárás bemutatja, hogyan lehet cikkeket átvenni beszerzési rendeléssel egy cikkszükségletből.
+description: Ez a cikk bemutatja, hogyan lehet cikkeket átvenni beszerzési rendeléssel egy cikkszükségletből.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,43 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fee2c965b0c065f00564b849ec93504336fb3f60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7afdae65c5ae7e3196c6b9f142dd87aec39b5ea3
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838247"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867295"
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet cikkeket átvenni beszerzési rendeléssel egy cikkszükségletből.
+Ez a cikk bemutatja, hogyan lehet cikkeket átvenni beszerzési rendeléssel egy cikkszükségletből.
 
 Ha cikktranzakció helyett cikkszükségletet használ, közvetlenül a cikk tényleges felhasználása előttre tervezheti a szállítást, beszerzési rendelést hozhat létre, a cikket szerepeltetheti a kereskedelmi megállapodási keretrendszerben, és a cikkszükségletet szerepeltetheti a gyártástervezésben. 
 
 Ez a feladat az USSI-adatkészletet használja.
 
-1. Ugorjon a Projektvezetés és könyvelés > Projektek > Minden projekt pontra.
-2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-3. A Művelet panelen kattintson a Terv elemre.
-4. Kattintson a cikkszükségletek elemre.
-5. Kattintson az Új lehetőségre.
-6. A listában jelölje meg a kiválasztott sort.
-7. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-8. Adjon meg egy számot a Mennyiség mezőben.
-9. Kattintson a Mentés gombra.
-10. A Művelet panelen kattintson a Kezelés elemre.
-11. Kattintson a Funkciók elemre.
-12. Kattintson a Beszerzési rendelés létrehozása elemre.
-13. Jelölje be a Szerepeljen jelölőnégyzetet.
-14. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-15. Kattintson az OK gombra.
-16. Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.
-17. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-18. A Művelet panelen kattintson a Beszerzés elemre.
-19. Kattintson a Megerősítés gombra.
-20. A Művelet panelen kattintson a Bevételezés elemre.
-21. Kattintson a Termékbevételezés elemre.
-22. A listában jelölje meg a kiválasztott sort.
-23. Írjon be egy értéket a Termékbevételezés mezőbe.
-24. Kattintson az OK gombra.
+1. A navigációs ablakban lépjen a **Modulok > Projektvezetés és könyvelés > Projektek > Minden projekt** részre.
+2. A listában válassza ki a kívánt sorból a hivatkozást.
+3. A Műveleti ablaktáblán kattintson a **Tervezés** elemre.
+4. Válassza a **Cikkszükséglet** lehetőséget.
+5. Válassza az **Új** lehetőséget.
+6. Az új sorban adjon meg, vagy válasszon ki egy értéket a **Cikkszám** mezőben.
+7. Adjon meg egy számot a **Mennyiség** mezőben.
+8. Válassza a **Mentés** lehetőséget.
+9. A műveleti ablaktáblán válassza a **Kezelés** lehetőséget.
+10. Válassza a **Funkciók** lehetőséget.
+11. Válassza a **Beszerzési rendelés létrehozása** lehetőséget.
+12. Jelölje be **Az összes belefoglalása** jelölőnégyzetet.
+13. A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket.
+14. Válassza ki az **OK** lehetőséget.
+15. A navigációs ablaktáblán nyissa meg a **Modulok > Kötelezettségek > beszerzési rendelések > Összes beszerzési rendelés** pontot.
+16. A listában válassza ki a kívánt sorból a hivatkozást.
+17. A Műveleti ablaktáblán válassza ki a **Beszerzés** lehetőséget.
+18. Válassza ki a **Megerősítés** elemet.
+19. A Művelet ablaktáblán válassza ki a **Bevételezés** elemet.
+20. Válassza ki a **Termékbevételezés** elemet.
+21. Írjon be egy értéket a **Termékbevételezés** mezőbe.
+22. Válassza ki az **OK** lehetőséget.
 

@@ -1,9 +1,9 @@
 ---
 title: Szabálytalanság létrehozása és feldolgozása
-description: Ezekkel a lépésekkel végrehajthatja a szabálytalanság kezelését, a meglévő minőségi rendelés alapján.
+description: Ez a témekör ismerteti, hogy hogyan hajtsa végre a szabálytalanság kezelését, a meglévő minőségi rendelés alapján.
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,65 +16,54 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e9cf42f80ef7a4c9c5f68a308386db5835c8f2e
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572811"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916645"
 ---
 # <a name="create-and-process-a-conformance"></a>Szabálytalanság létrehozása és feldolgozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ezekkel a lépésekkel végrehajthatja a szabálytalanság kezelését, a meglévő minőségi rendelés alapján. Ezt a felvételt futtathatja az USMF bemutató vállalatban, és használhatja a javasolt értékeket. Ezt az eljárást általában a minőségi adminisztrátor végzi.  Előfeltételként futtassa az „Áruk minőségének vizsgálata” feladatrögzítést. A szabálytalanság jóváhagyásának feldolgozását a feladat rögzítését futtató felhasználónak rendelkeznie kell hozzárendelt „Név” értékkel a Felhasználók lapon. A dokumentummegjegyzések használatához a felhasználónak rendelkeznie kell a Dokumentumkezeléssel, amelyet a felhasználói beállításokban kell aktiválni.
+Ez a témekör ismerteti, hogy hogyan hajtsa végre a szabálytalanság kezelését, a meglévő minőségi rendelés alapján. Ezt a felvételt futtathatja az USMF bemutató vállalatban, és használhatja a javasolt értékeket. Ezt az eljárást általában a minőségi adminisztrátor végzi.  Előfeltételként hajtsa végre a következő utasításait: [Áruk minőségének vizsgálata](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md). A szabálytalanság jóváhagyásának feldolgozását a feladat rögzítését futtató felhasználónak rendelkeznie kell hozzárendelt „Név” értékkel a Felhasználók lapon. A dokumentummegjegyzések használatához a felhasználónak rendelkeznie kell a Dokumentumkezeléssel, amelyet a felhasználói beállításokban kell aktiválni.
 
 
 ## <a name="select-a-quality-order"></a>Minőségi rendelés kiválasztása
-1. Ugrás a Minőségi rendelések elemhez.
-2. A listában jelölje meg a kiválasztott sort.
-    * Válassza ki a „Vizsgálja meg az áruk minőségét” tevékenységfelvétel alapján létrejött minőségi rendelést.  
+1. A navigációs ablaktáblán lépjen a **Modulok > Készletgazdálkodás > Időszakos feladatok > Minőségkezelés > Minőségi rendelések** részre.
+2. A listában válassza ki az itt létrejött minőségi rendelést: [Áruk minőségénak vizsgálata](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).  
 
 ## <a name="create-a-nonconformance"></a>Kattintson a Szabálytalanság létrehozása elemre.
-1. Kattintson a Lekérdezések elemre.
-2. Kattintson a Szabálytalanságok elemre.
-3. Kattintson az Új lehetőségre.
-4. A Probléma típusa mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-    * Válassza ki az ellenőrzési eljárás során található problémát.  
-5. A Probléma típusa mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. Kattintson az OK gombra.
+1. A műveleti ablaktáblán válassza a **Lekérdezések** elemet.
+2. Válassza a **Szabálytalanságok** elemet.
+3. Válassza az **Új** lehetőséget.
+4. A **Probléma típusa** mező legördülő menüjében válassza ki az ellenőrzési folyamat során talált problémát.  
+5. Válassza ki az **OK** lehetőséget.
 
 ## <a name="approvereject-a-nonconformance"></a>Szabálytalanság jóváhagyása/elutasítása
-1. Kattintson a Funkciók elemre.
-2. Kattintson A szabálytalanság jóváhagyása elemre.
-    * Ebben a példában hagyja jóvá a szabálytalanságot. A jóváhagyott szabálytalanságokat társíthatja a kapcsolódó műveletekhez az olyan munka rögzítése érdekében, amely a szabálytalanság kezelésének része, illetve a javítás kezelési feldolgozásának a része.  
-3. Kattintson az Igen gombra.
+1. Válassza a **Funkciók** lehetőséget.
+2. Válassza a **Szabálytalanság jóváhagyása** elemet. Ebben a példában hagyja jóvá a szabálytalanságot. A jóváhagyott szabálytalanságokat társíthatja a kapcsolódó műveletekhez az olyan munka rögzítése érdekében, amely a szabálytalanság kezelésének része, illetve a javítás kezelési feldolgozásának a része, ahogy ebben a témakörben.  
+3. Válassza ki az **Igen** lehetőséget.
 
 ## <a name="create-a-correction-action"></a>Javító művelet létrehozása
-1. Kattintson a Korrekciók elemre.
-2. Kattintson az Új lehetőségre.
-3. A listában jelölje meg a kiválasztott sort.
-4. A Személyes szám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. Kattintson a Kiválasztás lehetőségre.
-7. Kattintson a Csatolás elemre.
-    * Hozzon létre egy megjegyzést a javításhoz. Ebben a példában a művelet a szállítóval való kapcsolatfelvétel a szabálytalansági eset megvitatása céljából.  
-8. Kattintson az Új lehetőségre.
-9. Kattintson a Megjegyzés elemre.
-    * Ne feledje, hogy a jelentés beállításától függően a különféle dokumentumtípusokat kinyomtathatja a szabálytalanság kezeléséhez kapcsolódó jelentéseken.  
-10. A Leírás mezőben adjon meg egy értéket.
-11. Zárja be a lapot.
+1. Válassza a **Helyesbítések** elemet.
+2. Válassza az **Új** lehetőséget.
+3. Az új sor **Személyzeti szám** mezőjében válassza ki a kívánt rekordot a legördülő menüből.
+4. Kattintson a **Kiválasztás** lehetőségre.
+5. Válassza a **Csatolás** elemet. Hozzon létre egy megjegyzést a javításhoz. Ebben a példában a művelet a szállítóval való kapcsolatfelvétel a szabálytalansági eset megvitatása céljából.  
+6. Válassza az **Új** lehetőséget.
+7. Válassza a **Megjegyzés** lehetőséget. A jelentés beállításától függően a különféle dokumentumtípusokat kinyomtathatja a szabálytalanság kezeléséhez kapcsolódó jelentéseken.  
+8. Írjon egy értéket a **Leírás** mezőbe.
+9. Zárja be a lapot.
 
 ## <a name="maintain-a-correction"></a>Korrekció kezelése
-1. Kattintson a Befejezés jelölése gombra.
-2. Kattintson az OK gombra.
+1. Válassza a **Megjelölés készként** lehetőséget.
+2. Válassza ki az **OK** lehetőséget.
 3. Zárja be a lapot.
 
 ## <a name="close-a-nonconformance"></a>Szabálytalanság lezárása
-1. Kattintson a Funkciók elemre.
-2. Kattintson A szabálytalanság lezárása elemre.
-3. Kattintson az Igen gombra.
-4. Zárja be a lapot.
-5. Zárja be a lapot.
+1. Válassza a **Funkciók** lehetőséget.
+2. Válassza a **Szabálytalanság lezárása** elemet.
+3. Válassza ki az **Igen** lehetőséget.
+4. Zárja be a lapokat.

@@ -3,7 +3,7 @@ title: Számlastruktúrák létrehozása
 description: Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2183f88356fc8094781af147bf079c4e53ffb2b4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b100d5da6ec26dc386c0c6cb0793245531eb0d8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846703"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916230"
 ---
 # <a name="create-account-structures"></a>Számlastruktúrák létrehozása
 
@@ -29,56 +29,35 @@ ms.locfileid: "1846703"
 
 Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát. A lépés a USMF bemutató vállalati adatait használja.
 
-1. Ugorjon a Főkönyv > Számlatükör > Struktúrák > Számlastruktúrák konfigurálása pontra.
-2. Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-3. A Számlastruktúra mezőbe írjon be egy nevet, amely leírja a számlastruktúra célját.
-4. A Leírás mezőbe írjon be egy leírást, amely megadja a számlastruktúra célját.
-5. Kattintson az Új > lehetőségre.
-6. Kattintson a Szegmens hozzáadása hivatkozásra.
-7. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-8. Kattintson a Szegmens hozzáadása hivatkozásra.
-9. Kattintson a Szegmens hozzáadása hivatkozásra.
-10. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-11. Kattintson a Szegmens hozzáadása hivatkozásra.
-12. Kattintson a Szegmens hozzáadása hivatkozásra.
-13. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-14. Kattintson a Szegmens hozzáadása hivatkozásra.
-15. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Kattintson például a Fő számlába.  
-16. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-17. Érték beírása az Érték mezőbe.
-    * Például 600 000.  
-18. Írjon be egy értéket a – mezőbe.
-    * Például 699 999.  
-19. Kattintson az Alkalmaz gombra.
-20. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: részleg.  
-21. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-22. Érték beírása az Érték mezőbe.
-    * Például: 022.  
-23. Írjon be egy értéket a – mezőbe.
-    * Például: 031.  
-24. Kattintson az Új feltételek hozzáadása elemre.
-25. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-26. Érték beírása az Érték mezőbe.
-    * Például: 033.  
-27. Írjon be egy értéket a – mezőbe.
-    * Például: 034.  
-28. Kattintson az Alkalmaz gombra.
-29. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: költséghely.  
-30. Írjon be egy értéket a Költséghely mezőbe.
-    * Például 007..021.  
-31. Kattintson a Hozzáadás gombra.
-32. Írjon be egy értéket a Fő számla mezőbe.
-    * Például: 600000..699999  
-33. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: részleg.  
-34. Írjon be egy értéket a Részleg mezőbe.
-    * Például: 032.  
-35. Írjon be egy értéket a Költséghely mezőbe.
-    * Például: 086.  
-36. Kattintson az Érvényesítés gombra.
-37. Kattintson az Aktiválás gombra.
-38. Kattintson az Aktiválás gombra.
+1. Ugrás a következő útvonalra: **Navigációs ablaktábla > Modulok > Főkönyv > Számlatükör > Struktúrák > Számlastruktúrák konfigurálása**.
+2. Az **Művelet ablaktáblán** kattintson az **Új** elemre a legördülő párbeszédpanel megnyitásához.
+3. A **Számlastruktúra** mezőbe írjon be egy nevet, amely leírja a számlastruktúra célját.
+4. A **Leírás** mezőbe írjon be egy leírást, amely megadja a számlastruktúra célját.
+5. Kattintson az **Új** > lehetőségre.
+6. A **Szegmensek és megengedett értékek** területen kattintson a **Szegmens hozzáadása** elemre.
+7. A dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
+8. A lista végén kattintson a **Szegmens hozzáadása** hivatkozásra.
+9. Szükség szerint ismételje meg a 6–9. lépést.
+10. Az **Megengedett értékek részletei** szakaszban jelölje ki a szegmenst a megengedett értékek módosításához.
+    Kattintson például a **Fő számla** mezőre.  
+11. A **Kezelő** mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
+12. Érték beírása az **Érték** mezőbe. Például 600 000.  
+13. Írjon be egy értéket a **–** mezőbe. Például 699 999.  
+14. Az **Engedélyezett érték részletei** szakaszban kattintson az **Alkalmaz** gombra.
+15. Szükség szerint ismételje meg a 10–15. lépést.  
+16. Az **Engedélyezett érték részletei** szakaszban kattintson az **Új feltétel hozzáadása** gombra.
+17. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
+18. Érték beírása az **Érték** mezőbe. Például: 033.  
+19. Írjon be egy értéket a **–** mezőbe. Például: 034.  
+20. Kattintson az **Alkalmaz** gombra.
+21. A rácson jelölje ki a szegmenst a megengedett értékek módosításához. Például: költséghely.  
+22. Írjon be egy értéket a **Költséghely** mezőbe. Például 007..021.  
+23. A **Szegmensek és megengedett értékek** területen kattintson a **Hozzáadás** elemre.
+24. Írjon be egy értéket a **Fő számla** mezőbe. Például: 600000..699999  
+25. A rácson jelölje ki a szegmenst a megengedett értékek módosításához. Például: részleg.  
+26. Írjon be egy értéket a Részleg mezőbe. Például: 032.  
+27. Írjon be egy értéket a Költséghely mezőbe. Például: 086.  
+28. A **Művelet panelen** kattintson az **Érvényesítés** elemre.
+29. A **Művelet panelen** kattintson az **Aktiválás** elemre.
+30. Kattintson az **Aktiválás** gombra.
 

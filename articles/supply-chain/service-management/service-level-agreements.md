@@ -1,9 +1,9 @@
 ---
-title: Szolgáltatásiszint-szerződések
+title: Szolgáltatásiszint-szerződések áttekintése
 description: A szolgáltatásiszint-szerződésben a vevő elfogad egy minimális válaszidőt annak alapján, amikor a szolgáltató cég rögzíti a problémát, és amikor a probléma megoldódik.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cffe3a7766502dd5d888a7a99a32150967911301
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 90915502100c6165838f7eb2ebc620c7b15e6ec8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562626"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865921"
 ---
-# <a name="service-level-agreements"></a>Szolgáltatásiszint-szerződések        
+# <a name="service-level-agreements-overview"></a>Szolgáltatásiszint-szerződések áttekintése       
 
 [!include [banner](../includes/banner.md)]
 
