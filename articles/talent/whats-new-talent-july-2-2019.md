@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32eb177da53ffa4cf8ecdc73a93e88f30778f69c
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729782"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>A Dynamics 365 for Talent új vagy módosult elemei (2019. július 2.)
 
@@ -37,13 +37,18 @@ Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgá
 
 Beállíthatja, hogy a jelentkezőknek, az interjúkészítőknek, a toborzóknak és a toborzásért vezetőknek küldött e-maileket a szervezet e-mail-szolgáltatásfiókja küldje. További információ: [E-mail-szolgáltatásfiók csatlakoztatása](./attract-configure-email-settings.md#connect-an-email-service-account).
 
-#### <a name="offer-email-templates"></a>E-mail-sablonok rendelkezésre állása 
+### <a name="offer-email-templates"></a>E-mail-sablonok rendelkezésre állása 
 
 Az összes előkészítési, jóváhagyási és elfogadási szakaszhoz konfigurálhat e-mail-sablonokat a szervezetben. A felhasználók használhatják változtatások nélkül az alapértelmezett sablont, vagy az e-mailek elküldése előtt is testre is szabhatják. További információ: [Az e-mail-sablonok beállításainak megadása](./attract-configure-email-settings.md#configure-email-template-settings).
 
 ### <a name="candidate-consent-on-application"></a>Pályázói hozzájárulás a pályázathoz
 
 Aktiválható a szervezet „Feltételek és kikötések” dokumentumra mutató hivatkozása. Ha a beállítás engedélyezve van, akkor a jelentkezőknek az álláspályázat benyújtása előtt el kell fogadniuk a feltételeket és a kikötéseket. 
+
+### <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
+#### <a name="job-approvals-appear-on-the-home-page"></a>A feladatok jóváhagyása megjelenik a kezdőképernyőn
+
+A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek meg. A jóváhagyók megtekinthetik a rájuk váró jóváhagyásokat az **Önhöz rendelt** részen, ahol látható a feladat azonosítója és neve, a többi jóváhagyó és a feladat hozzárendelésének dátuma. Azok a felhasználók, akik elküldenek jóváhagyásra egy feladatot, az **Ön által küldött kérések** szakaszban látják a feladatot, ahol megjelennek azok a jóváhagyók, akiknek még jóvá kell hagyniuk a feladatot.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 

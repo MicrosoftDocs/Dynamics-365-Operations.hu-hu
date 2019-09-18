@@ -1,6 +1,6 @@
 ---
-title: Adminisztratív beállítások az Attract alkalmazásban
-description: Ez a témakör bemutatja, hogyan lehet engedélyezni a szervezetek és felhasználók szolgáltatásfunkcióit az Attractban.
+title: Vállalat adatainak beállítása – Microsoft Dynamics 365 for Talent - Attract
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a vállalat adatait és arculatát a Microsoft Dynamics 365 for Talent - Attract megoldásban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c5b051497777a01ab304736f1d454391b5d98e63
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518219"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739564"
 ---
-# <a name="admin-settings-in-attract"></a>Adminisztratív beállítások az Attract alkalmazásban
+# <a name="configure-company-information"></a>Vállalat adatainak beállítása
 [!include[banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Talent: Attract felügyeleti központja konfigurációs beállításokat, integrációs beállításokat és az Attract alkalmazás beállításait tartalmazza.
@@ -36,7 +36,7 @@ Adjon meg egy megjelenített nevet a vállalatnak, és adjon hozzá egy vállala
 
 ## <a name="linkedin-integration"></a>LinkedIn-integráció
 
-A LinkedIn Recruiter System Connect  (RSC) modul integrációjának beállítása. A LinkedIn kapcsolódás után a LinkedIn hitelesítő adatok használatával, szinkronizálhatja a jelentkező LinkedIn profilját, az alkalmazásokat, az interjú-visszajelzéseket és a felvételi csapat megjegyzéseit. Teljes LinkedIn toborzó licenccel kell rendelkeznie. További tájékoztatásért az LinkedIn Recruiter szolgáltatással kapcsolatban lásd: [Recruiter System Connect (RSC) – GYIK](https://www.linkedin.com/help/recruiter/answer/90483).
+A LinkedIn Recruiter System Connect (RSC) modul integrációjának beállítása. A LinkedIn kapcsolódás után a LinkedIn hitelesítő adatok használatával, szinkronizálhatja a jelentkező LinkedIn profilját, az alkalmazásokat, az interjú-visszajelzéseket és a felvételi csapat megjegyzéseit. Teljes LinkedIn toborzó licenccel kell rendelkeznie. További tájékoztatásért az LinkedIn Recruiter szolgáltatással kapcsolatban lásd: [Recruiter System Connect (RSC) – GYIK](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Felhasználói jogosultságok
 

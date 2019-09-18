@@ -1,6 +1,6 @@
 ---
-title: Analitikus jelentések használata a toborzási folyamattal kapcsolatos információk érdekében
-description: Ez a témakör az Attract analitikus jelentéseiről szól
+title: Elemzési jelentések használata a Microsoft Dynamics 365 for Talent - Attract megoldásban
+description: Ez a témakör azt mutatja be, hogy milyen elemzési jelentések állnak rendelkezésre a toborzási folyamathoz a Microsoft Dynamics 365 for Talent - Attract megoldásban
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516560"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742888"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Analitikus jelentések használata a toborzási folyamattal kapcsolatos információk érdekében
+# <a name="use-analytic-reports"></a>Elemzési jelentések használata
 
 Az Attract analitikus jelentései egy beépített (OOTB) megoldást biztosítanak a felvételi folyamat háttérinformációihoz. A rendelkezésre álló funkciók a következők:
 
@@ -81,8 +81,8 @@ Az Álláselemzés jelentések a kiválasztott állás adatait jelenítik meg. A
 
 ## <a name="cross-filter"></a>Keresztszűrés
 
-A Power BI egyik nagyszerű funkciója az a mód, ahogy a jelentés oldalának összes vizuális eleme összeköttetésben van. Ha kijelöl egy adatpontot az egyik vizális elemen, az oldalon található összes másik vizuális elem módosul, amely tartalmazza az adatot, a kiválasztás alapján. További információt és példát a [Hogyan végeznek a vizuális elemek keresztszűrést egy Power BI-jelentésben](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions) részben talál.
+A Power BI egyik nagyszerű funkciója az a mód, ahogy a jelentés oldalának összes vizuális eleme összeköttetésben van. Ha kijelöl egy adatpontot az egyik vizális elemen, az oldalon található összes másik vizuális elem módosul, amely tartalmazza az adatot, a kiválasztás alapján. További információt és példát a [Hogyan végeznek a vizuális elemek keresztszűrést egy Power BI-jelentésben](https://docs.microsoft.com/power-bi/consumer/end-user-interactions) részben talál.
 
 ## <a name="export-to-excel"></a>Exportálás az Excel programba
 
-Ha meg szeretné tekinteni a jelentések adatait az Excel programban, kattintson a vizuális elem beállítások menüpontjára (három pont), és válassza a **Háttéradatok exportálása** lehetőséget. Az exportált adatok szűrve kerülnek exportálásra, az Attract szolgáltatásban érvényes felhasználói engedélyek figyelembe vételével. A további információkért lásd: [Adatok exportálása vizualizációból](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Ha meg szeretné tekinteni a jelentések adatait az Excel programban, kattintson a vizuális elem beállítások menüpontjára (három pont), és válassza a **Háttéradatok exportálása** lehetőséget. Az exportált adatok szűrve kerülnek exportálásra, az Attract szolgáltatásban érvényes felhasználói engedélyek figyelembe vételével. A további információkért lásd: [Adatok exportálása vizualizációból](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 42b9541b152d2a6daa1dbf95ecf30a2f51eb36f3
-ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
+ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1634480"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741618"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>A Dynamics 365 for Talent új és módosult elemei (2019. június 11.)
 
@@ -76,9 +76,9 @@ Hozzáadtuk a feladatcsoport entitást.
 
 ### <a name="preview-features-will-be-enabled-only-in-sandbox-environments"></a>Az előnézeti szolgáltatások csak a Védőfal környezetekben használhatók.
 
-További információ a módosítások közzétételéről: [A Talent létesítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+További információ a módosítások közzétételéről: [A Talent létesítése](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-Amikor új Talent-példányt hoz létre, jelezheti, hogy a példány Termelési vagy Védőfal típusú legyen-e. A Védőfal típusú példányokkal az új szolgáltatások korai tesztelése végezhető el. Minden létező Talent példányt a **Termelési** példány típusára lesz frissítve. Ha a meglévő példányokat **Védőfal** típusúra szeretné frissíteni, kérje az [ügyfélszolgálat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) segítségét.
+Amikor új Talent-példányt hoz létre, jelezheti, hogy a példány Termelési vagy Védőfal típusú legyen-e. A Védőfal típusú példányokkal az új szolgáltatások korai tesztelése végezhető el. Minden létező Talent példányt a **Termelési** példány típusára lesz frissítve. Ha a meglévő példányokat **Védőfal** típusúra szeretné frissíteni, kérje az [ügyfélszolgálat](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) segítségét.
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>A szabadság típusának korlátozása a távolléti kérelmekben
 

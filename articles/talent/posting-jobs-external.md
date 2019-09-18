@@ -17,42 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590482"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739817"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Álláshirdetések feladása külső karrieroldalak felületére az Attractból
+# <a name="post-jobs-to-broadbean"></a>Állások közzététele a Broadbean felületén
 
 [!include [banner](../includes/banner.md)]
 
-A nyitott pozíciókat elehető legjobb alkalmas jelölt számára szeretné eljuttatni. A toborzási oldalak, például a Broadbean segítenek elérni ezt a célt. A Microsoft Dynamics 365 Talent: Attract lehetővé teszi, hogy állásokat egyen közzé a Broadbean oldalon, és a Microsoft folyamatosan új ajánlatokat biztosít majd ezen a területen.
+A Microsoft Dynamics 365 for Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a Boadbean felületén tegye közzé. Miután [létrehozta az állást](./creating-jobs-attract.md) az Attract megoldásban, csupán egy gombot kell kiválasztania ahhoz, hogy az állást az összes potenciális pályázóhoz eljuttassa a Broadbean oldalán.
 
-## <a name="post-jobs-to-broadbean"></a>Állások közzététele a Broadbean-en
+Az állásoknak a Broadbeanen történő feladásához megfelelő Broadbean-licenc szükséges. A Broadbean különböző termékeket és csomagokat kínál. Ha további tájékoztatást szeretne a Broadbean licenceléséről és árképzéséről, [vegye fel a kapcsolatot a Broadbeannel](https://www.broadbean.com/contact-us/).
 
-Mielőtt állást tehetne közzé a Broadbean-en konfigurálnia kell az Broadbean integrációt.
+Ha Ön egy olyan adminisztrátor, akinek több információra van szüksége a Broadbean-integrációnak az Attract szolgáltatással történő konfigurálásával kapcsolatban, lásd: [Külső álláshirdetések beállításainak megadása](./attract-admin-job-board-settings.md).
 
-> [!NOTE]
-> - Állások közzétételéhez külső webhelyeken rendelkeznie kell az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Az állásoknak a Broadbean felületére az Attract szolgáltatáson keresztül történő feladásához Broadbean előfizetés szükséges.
-> - Ez a funkció jelenleg előnézetben van. Ha ki szeretné próbálni, akkor [be kell kapcsolnia az Attract rendszergazdai beállításai között](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-
-### <a name="configure-broadbean-integration"></a>Broadbean integráció konfigurálása
-
-1. Jelentkezzen be Attract alkalmazásba rendszergazdaként
-2. Válassza ki a **Beállítások** gombot (fogaskerék-szimbólum) a lap jobb felső sarkában, majd válassza a **Felügyeleti központ** lehetőséget.
-3. A **Feladattábla beállításai** lapon a **Broadbean integráció engedélyezése** szakaszban, kapcsolja be az integrációt.
-4. Forduljon a Broadbean-hoz, és adja meg az adatokat a **Felhasználónév, Ügyfél-azonosító, Titkosítási Token** elemekhez.
-
-> [!WARNING]
-> A Broadbean hitelesítő adatai kényes és bizalmas természetűek. Ezért átgondoltan ossza meg azokat. Mindenki akinek rendszergazdai szerepköre van az Attract megoldásban megtekintheti ezeket a hitelesítő adatokat.
-
-> [!NOTE]
-> A Microsoft és Attract vesz nem részt ezen értékek létrehozásában és kezelésében. Az Ön felelőssége naprakészen tartani azokat az Attract megoldásban, illetve az, hogy együttműködjön a Broadbeannel, hogy megoldja a hitelesítési adatokkal kapcsolatos esetleges problémákat.
-
-### <a name="post-a-job-to-broadbean"></a>Állás közzététele a Broadbean-en
+## <a name="post-jobs-to-broadbean"></a>Állások közzététele a Broadbean felületén
 
 Miután a Broadbean be van kapcsolva,a toborzók és a rendszergazdák állásokat tehetnek közzé rajta. Egy jelentkezési URL-cím szükséges az álláshoz.
 
@@ -80,7 +62,7 @@ A feladás sikeres befejezése után a Broadbean-ben a **Feladások** részében
 Miután Broadbean-ben közzétesz egy állást az, Attractból is megtekintheti.
 
 1. Az Attract megoldásban nyissa meg az állást, amelyet meg szeretne tekinteni a Broadbean-ben.
-2. A **feladások** szakaszban,válassz a három pont (**...**) gombot, amely megfelel a Broadbean-nek, és válassza **Megtekintés** lehetőséget.
+2. A **Feladások** szakaszban válassza a három pont (**...**) gombot, amely megfelel a Broadbean-nek, és válassza **Megtekintés** lehetőséget.
 
 A Broadbean álláshirdetés egy új ablakban jelenik meg.
 
@@ -107,10 +89,16 @@ A Broadbean-ből igény esetén eltávolíthatja az álláshirdetést.
 
 Miután a Broadbean eltávolítja az állást Broadbean elemhez az Attract megoldásban megjelenik egy **Feladás most** gomb. Ez a gomb jelzi, hogy az állás törölve lett, és újra fel lehet adni.
 
-### <a name="troubleshoot-the-broadbean-integration"></a>Broadbean-integráció – hibaelhárítás
+### <a name="troubleshoot-job-posting-to-broadbean"></a>A Broadbean álláshirdetéseinek hibaelhárítása
 
 Ha probléma merül fel a feladással a Broadbean-be, próbálja meg ezeket a lépéseket.
 
 1. Győződjön meg róla, hogy az Attract megoldásban megadott Broadbean hitelesítő adatok érvényesek és helyesek.
 2. Ha a hitelesítő adatok érvényesek és helyesek forduljon a [Broadbean támogatáshoz](https://www.broadbean.com/resources/support/).
 3. Ha a probléma továbbra is fennáll, forduljon [Microsoft támogatáshoz](./talent-support.md).
+
+## <a name="see-also"></a>Lásd még
+
+[Állások létrehozása](./creating-jobs-attract.md)
+
+[Külső álláshirdetések beállításainak megadása](./attract-admin-job-board-settings.md)

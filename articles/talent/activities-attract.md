@@ -1,9 +1,9 @@
 ---
-title: Tevékenységek a folyamatban
-description: Ez a témakör a felvételi folyamatban használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
+title: Tevékenységek a Microsoft Dynamics 365 for Talent - Attract folyamataiban
+description: Ez a témakör a Microsoft Dynamics 365 for Talent - Attract felvételi folyamatában használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518216"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739715"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Tevékenységek a felvételi folyamatban
+# <a name="activities-in-hiring-processes"></a>Tevékenységek a toborzási folyamatban
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ A tevékenységek a felvételi folyamat részeként adhatók hozzá a Dynamics 3
 ## <a name="prospect-activity"></a>Potenciális tevékenység
 
 A potenciális tevékenység azt szabályozza, hogy a potenciális jelöltek hozzáadhatók-e egy álláshoz. Alapértelmezés szerint potenciális jelöltek adhatók az álláshoz. A potenciális tevékenység kikapcsolásához állítsa a **Potenciális jelöltek engedélyezése** lehetőséget **Ki** beállításra. A potenciális tevékenység bekapcsolásakor a felvételi vezetők hozzáadhatják és megtekinthetik a potenciális jelölteket, és a **Potenciális jelölt** lap megjelenik az állásnál.
+
+> [!NOTE]
+> Ha engedélyezni szeretné, hogy a jelentkezők hozzá legyenek álláshoz a LinkedIn webhelyről, állítsa a **Potenciális jelöltek** elemet **Be** értékre.
 
 ## <a name="application-activity"></a>Pályázat tevékenység
 

@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518153"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795244"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 2.) szolgáltatásban
 
@@ -57,13 +57,13 @@ Attract és Onboard megoldásokban a végfelhasználók által naplózott probl�
 A szakaszban ismertetett módosítások a 8.1.2216-ös buildre vonatkoznak.
 
 ### <a name="platform-update-25"></a>25-as platformfrissítés
-25. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 for Finance and Operations 25. platformfrissítésében (2019. április)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+25. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 for Finance and Operations 25. platformfrissítésében (2019. április)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Haladó kompenzációs biztonsági (fix és változó)
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezeket a rekordokat tartalmazhatnak a vezetőkhöz és regionális alkalmazottakhoz Ez a módosítás lehetővé teszi a HR számára kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. Biztonsági szerepköröket rendelhet a fix és változó konstrukciókhoz. Ezek a biztonsági szerepkörök szabályozzák a konstrukciók és a kapcsolódó alkalmazott adatok, például a fizetés vagy bónuszrekordok elérést, hogy csak ezek dolgozhassanak fel kompenzációt az alkalmazotti csoportokhoz.
 
 ### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
-A Common Data Service frissítés gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
+A Common Data Service frissítés gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="in-preview"></a>Előnézetben
 

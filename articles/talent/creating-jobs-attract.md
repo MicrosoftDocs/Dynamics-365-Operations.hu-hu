@@ -3,7 +3,7 @@ title: Állás létrehozása, jóváhagyása és közzététele az Attract alkal
 description: Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518166"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773256"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban
+# <a name="create-a-job"></a>Feladat létrehozása
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazd
 > [!NOTE]
 > Az állásfeladási funkciók csak az Attract alkalmazás Átfogó felvételi bővítményének része.
 
-### <a name="posting-jobs-to-linkedin"></a>Munkák közzététele a LinkedIn szolgáltatásban 
-
-Mielőtt egy állást közzétenne az Attract alkalmazásból a LinkedIn felületen, a rendszergazdának kell hozzáadnia a LinkedIn Vállalatazonosítót és LinkedIn vállalatnevet a **Felügyeleti beállításokban**. Annak biztosítására, hogy az Attract állásai a megfelelő vállalat laphoz legyenek rendelve szükséges a LinkedIn vállalat azonosítója.
-
-Az Ön LinkedIn vállalatazonosítója számokból álló karakterlánc, amely egyedileg azonosítja a vállalatot LinkedIn oldalon belül. További információért a LinkedIn Vállalatazonosító megkereéséhez, keresse fel a [LinkedIn oldalt](https://aka.ms/findID).
-
-A LinkedIn vállalat frissítéséhez válassza a **Felügyeleti köpont** lehetőséget a **Beállítások** menüben (fogaskerék szimbólum), majd válassza ki a **LinkedIn integráció** lapot. A **Kapcsolódás LinkedIn-hez** szakaszban írja be LinkedIn vállalatnevet és a LinkedIn válllati azonosítót és mentse a beállításokat.
-
-> [!NOTE]
-> Négy fontos dolgot kell megjegyezni a LinkedIn-re történő munkaküldési folyamattal kapcsolatosan.
-> 1. A LinkedIn-re küldött munkák „Korlátozott hirdetésként” lesznek feladva A LinkedIn webhelyen nem hirdethetőek a korlátozott hirdetésű munkák. Ha szeretné hirdetni a LinkedIn-re küldött korlátozott hirdetési munkákat az Attractból együtt kell működnie a LinkedIn-nel a „Job Wrapping” funkció engedélyezéséhez. Használja az alábbi hivatkozásokat, és további részletekért forduljon a LinkedIn támogatásához.
->
->    [Limited Listings és Premium Job Slotok összehasonlítása Job Wrapping esetén](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Job Wrapping gyakori kérdések](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. Amikor munkákat tesz közzé a LinkedIn-en, az Attract átküldi a Microsoft 365 szervezet nevét is munkához. A LinkedIn a munkákat az átadott szervezetnév alapján kapcsolja a LinkedIn oldalán található vállalthoz. Ha a munka rossz vállalathoz kerül a LinkedIn-en, ellenőrizze hogy a Microsoft 365 szervezet neve megegyezik-e a vállalatnévvel a LinkedIn-en.  
->
->    [Címzett, kapcsolattartó stb. módosítása](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Ha ezen lépés után problémák merülnek fel, forduljon a LinkedIn támogatásához. 
-> 
-> 1. A LinkedIn oldalra közzátett állássok az élő LinkedIn webhelyen jelennek meg. Nincs tesztelési környezet a LinkedIn közzétételhez. 
->
-> 1. A munka LinkedIn-re történő feladásától számítva akár 24 óráig is eltarthat, amíg a LinkedIn-en található jelöltek számára az látható lesz, ennek az oka a LinkedIn kötegelt munkaközzétételi folyamata.
-
-
 ## <a name="activate"></a>Aktiválás
 
 Az állást az aktiválása után lehet feladni, és a potenciális jelöltek és pályázók is adhatók hozzá. A potenciális jelöltek hozzáadása egy álláshoz Potenciális jelöltek tevékenységeinél van beállítva a felvételi folyamatban.
@@ -142,7 +115,7 @@ Ha egy felhasználó a jóváhagyás után, de az aktiválás előtt módosítja
 A jóváhagyóként felsorolt személyek jóváhagyási értesítést kapnak az Attract rendszerében, és egy e-mailt, amely tájékoztatja őket arról, hogy egy elem a jóváhagyásukra vár.  Az e-mailben a jóváhagyó rákattinthat a hivatkozásra, amellyel megnyithatja az állást, áttekintheti a részleteket, és jóváhagyhatja vagy elutasíthatja. Miután az állás állapota **Jóváhagyva** vagy **Elutasítva** lett, a beküldőt az Attract értesíti, és küld neki egy e-mailt. A jóváhagyó is kapnak egy emlékeztető e-mailt, ha nem válaszoltak a jóváhagyási kérelemre 24 órán belül.
 
 > [!NOTE]
-> A jóváhagyási e-mailekhez egyéni e-mail-sablonokat is létrehozhat. További információért lásd: [E-mail-sablonok létrehozása és kezelése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> A jóváhagyási e-mailekhez egyéni e-mail-sablonokat is létrehozhat. További információért lásd: [E-mail-sablonok létrehozása és kezelése](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Feladat létrehozása
 

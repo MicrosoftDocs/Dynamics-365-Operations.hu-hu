@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577795"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781442"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
 
@@ -101,24 +101,15 @@ Ezzel a sablon bővíthető, így minden a SharePoint integrációt érintő for
 
 A **Flow – SharePoint integráció** sablon letöltéséhez ugorjon a [Flow – SharePoint integráció](https://go.microsoft.com/fwlink/?linkid=2082109) oldalra a Microsoft Letöltőközpontban
 
-## <a name="admin-console-to-manage-talent-pools"></a>Felügyeleti konzol a tehetségállományok kezeléséhez
+## <a name="referral-app"></a>Referral alkalmazás
+A Referral alkalmazás segítségével jelölteket adhat hozzá egy közös tehetségállományhoz. Az ajánló megadhat **Keresztnevet**, **Vezetéknevet**, **E-mail-címet** és **Linkedln URL-t** a jelölt beküldésekor. A pályázó forrásmetaadatai ezt követően lesznek generálva az ajánló adataival
 
-Ha engedélyezi a LinkedIn integrációját, az Attract automatikusan létrehoz egy LinkedIn tehetségállományt. Amikor egy állásközvetítő InMail-t cserél LinkedIn-en keresztül, az Attract létrehoz egy profilt a toborzotthoz, és a toborzott tagja lesz a LinkedIn tehetségállományának. Ez a PowerApps alkalmazás jól használható a tehetségállományokban lévő jelöltek átszervezéséhez a szakértelem alapján.
+Ez az alkalmazás beágyazható az Alkalmazotti önkiszolgáló rendszerbe (ESS), vagy használhatja azt hiperlinkként a Vállalati portálon vagy futtathatja különálló alkalmazásként is.
 
-Futtassa ezt a PowerApps alkalmazást felügyeleti konzolként a következő feladatok végrehajtásához:
-
-- Jelöltek lsitázása a tehetségállományban
-- A tehetségállományból jelöltek hozzáadása egy álláshoz vagy eltávolításuk
-- Jelöltek áthelyezése egyik tehetségállományból egy másikba
-- Annak meghatározása, hogy a jelöltek már részei-e egy tehetségállománynak, mielőtt áthelyezik azokat
-- A jelentkezők szakértelmének ellenőrzésére, mielőtt áthelyeznék őket egy másik tehetségállományba
-
-Ez a PowerApps alkalmazás több a többhöz kapcsolatot használ, így sablonként használhatja más esetekhez, ahol olyan rekordokat kell kinyernie, amelyek több a többhöz kapcsolattal rendelkeznek.
-
-A **Felügyeleti konzol a tehetségállományok kezeléséhez** sablon kezeléséhez, nyissa meg [Felügyeleti konzol a tehetségállományok kezeléséhez](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) oldalt a Microsoft letöltőközpontban.
+A **Referral alkalmazás**letöltéséhez látogasson le a [Dynamics 365 for Talent bővíthetőségi megoldás Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) oldalra a Microsoft letöltőközpontban. Ezt az alkalmazást importálhatja, és testreszabhatja további funkciók hozzáadásához.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [A Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Alkalmazás bérlők és környezetek közötti áttelepítése](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Alkalmazás bérlők és környezetek közötti áttelepítése](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

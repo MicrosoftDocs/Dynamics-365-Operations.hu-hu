@@ -19,14 +19,15 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 360937b807ea149edb2f16ad6799d74791d599b5
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729783"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739495"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-for-talent---attract"></a>E-mail beállítások megadása a Microsoft Dynamics 365 for Talent - Attract esetében
+# <a name="configure-email-settings"></a>E-mail beállítások megadása
+
 [!include[banner](../includes/banner.md)]
 
 A márkanév bizalmi kapcsolatot létesít, és segít felépíteni egy kapcsolatot a jelentkezők előtt, még mielőtt jelentkeznének a beosztásokra. A pozitív márkaértékelés vonzza a legjobb tehetséget, és növeli a meglévő alkalmazottak hűségét. Microsoft Dynamics 365 for Talent: az Attract lehetővé teszi az e-mailek konfigurálását, hogy azok tükrözzék a vállalat márkáját. Ennek megfelelően a pályázók számára a jelentkezési folyamat során egységes tapasztalatot lehet biztosítani.

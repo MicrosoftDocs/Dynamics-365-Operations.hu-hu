@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518217"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741890"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 5.)
 
@@ -43,10 +43,10 @@ Az Attract alkalmazásban, több mezők is van, amely beállításkészlet a Com
 ## <a name="changes-in-onboarding"></a>Változások az Onboarding alkalmazásban
 
 ### <a name="private-preview-for-onboard-teams"></a>Privát előnézet Onboard csoportoknak
-Mostantól egyszerűen megoszthatja a teljes szervezeten belüli a sablonokat az együttműködéshez. További tudnivalókért lásd: [Bevált gyakorlatok megosztása a szervezetben az Onboard Teams használatával](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Mostantól egyszerűen megoszthatja a teljes szervezeten belüli a sablonokat az együttműködéshez. További tudnivalókért lásd: [Bevált gyakorlatok megosztása a szervezetben az Onboard Teams használatával](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>A megbízott helyőrzők privát előnézete
-A tevékenységeket az egyes személyek helyett személyekhez rendelheti, így gazdagítva sablonjait. A Szerepkörök majd személyekhez lesznek rendelve az útmutató a létrehozásának időpontjában. További tudnivalókért lásd: [Az útmutatófelügyeleti tevékenységek egyszerűsítése tevékenységek hozzárendelésével a szerepkörökhöz](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+A tevékenységeket az egyes személyek helyett személyekhez rendelheti, így gazdagítva sablonjait. A Szerepkörök majd személyekhez lesznek rendelve az útmutató a létrehozásának időpontjában. További tudnivalókért lásd: [Az útmutatófelügyeleti tevékenységek egyszerűsítése tevékenységek hozzárendelésével a szerepkörökhöz](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 **Build 8.1.2178**
@@ -71,7 +71,7 @@ Ezzel a módosítással a meglévő beosztások módosításának kérelme sorá
 További kisebb hibajavítások ebben a verzióban.
 
 ### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
-A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
+A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="coming-soon"></a>Hamarosan
 
@@ -79,4 +79,4 @@ A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen b
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők csak bizonyos kompenzációs rekordokat érhetnek el, például a vezetők és a területi alapú alkalmazottak rekordjait. Ez a módosítás lehetővé teszi a kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A fix és változó kompenzációs tervek, amelyek hozzárendelhetők biztonsági szerepkörökhöz, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz, például fizetés és bónuszrekordok. Csak a szerepkörök, amelyek rendelkeznek a meghatározott hozzáféréssel tudnak kompenzációt feldolgozni azokhoz az alkalmazottakhoz.
 
 ###  <a name="platform-update-24"></a>24-as platformfrissítés
-A 24-es platformfrissítéssel kapcsolatos részleteket lásd a [jdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+A 24-es platformfrissítéssel kapcsolatos részleteket lásd a [jdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
