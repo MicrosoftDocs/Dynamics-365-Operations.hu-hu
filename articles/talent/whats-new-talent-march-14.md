@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 38641d6a84340112ce15335533795ed7faf91123
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518205"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742493"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 14.)
 
@@ -47,7 +47,7 @@ Az ebben a verzióban végrehajtott módosítások engedélyezik a teljesítmén
 Ezzel a módosítással immár kiválaszthat több alkalmazottat, és egyszerre rendelhet hozzá ellenőrzőlistákat ezekhez az alkalmazottakhoz. 
 
 ### <a name="platform-update-24"></a>24-as platformfrissítés
-A 24-es platformfrissítéssel kapcsolatos részleteket lásd a [jdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
+A 24-es platformfrissítéssel kapcsolatos részleteket lásd a [jdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
 
 - Engedélyezve van az értesítések a Talent megoldásban.
 - A frissített navigációs sáv mostantól igazodik az Office fejléchez.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620620"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741752"
 ---
 # <a name="intelligent-recommendations"></a>Intelligens ajánlások
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620620"
 A gépi tanulás segít a toborzóknak és a felvételi menedzsereknek a munkakör legjobb jelöltjeinek gyors azonosításában. A potenciális jelölteknek is segíthet olyan munkakör keresésében, amely leginkább illik a profiljukhoz és az érdeklődésükhöz. A funkciók használatával és a beérkező visszajelzésekkel az ajánlások javulni fognak.
 
 > [!NOTE] 
-> - Az intelligens ajánlási funkciók csak az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) érhetők el.
+> - Az intelligens ajánlási funkciók csak az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) érhetők el.
 > - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. A funkció használatához kérje meg a rendszergazdát az engedélyezésére a **Felügyeleti központ** pontban az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](./access-preview-feature.md). 
 
 

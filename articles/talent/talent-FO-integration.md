@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617343"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742709"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent és Dynamics 365 for Finance and Operations integráció – GYIK.
 
@@ -38,7 +38,7 @@ Az Attract és Onboard esetében minden adat natív a Common Data Service szám�
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Létrehozhatok egy új hozzárendelést a sablonok használata nélkül?
 
-Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) for Apps szolgáltatásba.
+Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator) for Apps szolgáltatásba.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Hozzárendelhetek pénzügyi dimenziókat átvitelre a Talent és a Finance and Operations között?
 
@@ -133,7 +133,7 @@ A Finance and Operations integrációja két lépésből áll. Először ellenő
 
 Ha az adatok nem a várt módon jelennek meg a Common Data Service megoldásban, győződjön meg róla, az entitást az integráció támogatja. További adatok felvételéhez a Common Data Service megoldásba módosításara van szükség a Microsoft oldalán.
 
-Ha az entitás támogatott, és az adatok elérhetők a Common Data Service megoldásban, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Ha az entitás támogatott, és az adatok elérhetők a Common Data Service megoldásban, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>A saját alkalmazottak címei helytelenek a Finance and Operations alkalmazásba importálás után. Mit tegyek?
 
@@ -145,7 +145,7 @@ A Talent végrehajtása során győződjön meg róla, hogy a számsorozatok nem
 
 Ügyeljen arra, hogy a kapcsolatok létrehozása során a Dynamics 365 for Finance and Operations (jelenleg előnézet) és a Common Data Service lehetőségeket válassza ki.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Munkaviszonyok szinkronizáláskor a következő hibaüzenet jelenik meg: „CompanyInfo_FK nem létezik” vagy „A 12/31/2154 11:59:59 pm' érték a 'Munkaviszony befejezésének dátuma' mezőben a kapcsolódó 'Munkaviszony' táblában nem található” Mit tegyek?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Munkaviszonyok szinkronizáláskor a következő hibaüzenet jelenik meg: „CompanyInfo_FK nem létezik” vagy „A 12/31/2154 11:59:59 pm' érték a 'Munkaviszony befejezésének dátuma' mezőben a kapcsolódó 'Munkaviszony' táblában nem található” Mit tegyek?
 
 Győződjön meg róla, hogy a megfelelő jogi személyekhez rendel hozzá. Jogi személy szinkronizálása nem része az alapértelmezett sablonnak, így elvárt, hogy minden egyes jogi személy, amely szerepel a Talent és Common Data Service megoldásban szerepeljen a Finance and Operations alkalmazásban is.
 Győződjön meg arról is, hogy a helyes jogi személyeket választja ki a társított Csatlakozókészletben.
@@ -160,12 +160,12 @@ Frissítse a Finance and Operations adatentitásait az **Adatkezelés \> Keretre
 
 - Adatintegrátor(DI): 
 
-  - [Adatok integrálása: Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Adatok integrálása: Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Hibakezelés és hibaelhárítás az Adatintegrátorban](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Hibakezelés és hibaelhárítás az Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a PowerApps-ben Microsoft Flow megoldásban és a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) megoldásban.
+  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a PowerApps-ben Microsoft Flow megoldásban és a Common Data Service megoldásban.](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Adatkezelés:
 
-  - [Adatkezelés](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Adatkezelés](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

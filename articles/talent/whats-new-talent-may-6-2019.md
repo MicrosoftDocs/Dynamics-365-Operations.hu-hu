@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4830c5d626e5e10972c81c3445eb54e4b6b00e6c
-ms.sourcegitcommit: 0400bfd66e98af50e64444a1c102575099a9312f
+ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539405"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741544"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. május 6.)
 
@@ -47,7 +47,7 @@ A szakaszban ismertetett módosítások a 8.1.2282-ös buildre vonatkoznak. A n�
 
 ### <a name="platform-update-26"></a>26-as platformfrissítés
 
-26. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 for Finance and Operations 26. platformfrissítésében (2019. május)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+26. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 for Finance and Operations 26. platformfrissítésében (2019. május)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service entitás-támogatás egyéni mezőkhöz
 

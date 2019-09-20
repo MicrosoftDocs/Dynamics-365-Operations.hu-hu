@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518172"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742749"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory-felhasználók nem találhatók a Személyválasztó szolgáltatásban
 
@@ -36,9 +36,9 @@ Egyes érvényes felhasználók a Microsoft Azure Active Directory (Azure AD) a 
 
 Bizonyos felhasználótípusok jelenleg nem támogatottak a Attract és Onboard alkalmazásokban. Győződjön meg róla, hogy a felhasználó nem egy Azure AD Business to Business (B2B) vendégfelhasználó. A „Felhasználó típusa” információk az Azure Active Directory lapon találhatók az Azure portálon.
 
-Az Azure B2B-vel kapcsolatos további tudnivalókat lásd: [Mi a vendég felhasználói hozzáférés az Azure Active Directory B2B-ben](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+Az Azure B2B-vel kapcsolatos további tudnivalókat lásd: [Mi a vendég felhasználói hozzáférés az Azure Active Directory B2B-ben](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-Nem B2B felhasználóknak bizonyos felhasználók esetében hiányos„Felhasználótípus” tulajdonság lehet a **Felhasználó** objektumban. Ez ellenőrizhető és javítható az Azure AD Powershell modul használatával. További tájékoztatást a következő témakörben talál: [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+Nem B2B felhasználóknak bizonyos felhasználók esetében hiányos„Felhasználótípus” tulajdonság lehet a **Felhasználó** objektumban. Ez ellenőrizhető és javítható az Azure AD Powershell modul használatával. További tájékoztatást a következő témakörben talál: [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## <a name="resolution"></a>Feloldás
 

@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518155"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856424"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 9.) szolgáltatásban
 
@@ -37,10 +37,10 @@ Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait
 Attract és Onboard megoldásokban a végfelhasználók által naplózott problémák a probléma jelentése szolgáltatással automatikusan támogatási problémákat hoznak létre az ügyfél LCS projektjében. Az adminisztrátorok ezt követően besorolhatják a problémákat, majd elküldhetik azokat a Microsoftnak, amikor szükséges. Ez megfelel annak, ahogy a Core HR kezeli a végfelhasználói támogatási problémákat.
 
 ### <a name="relevance-search"></a>Relevanciakeresés
-A tehetségállományokban adott szakértelmek, nevek és tanulmányi hátterek alapján kereshet a teljese jelölti adatbázisban. Nem kell többé megadnia, hogy melyik részében szeretne keresni a jelentkező profiljának. Az Attract a teljes profilban keres, és az összes találatot kiemeli. Az Attract keres minden olyan dokumentumban, amely elérhető a jelöthöz, és intelligens módon osztályozza a keresési eredményeket. Ezenkívül az eredményeket szűrheti, forrás szerint vagy az alapján, hogy ezüstérmesek-e. További tudnivalókért lásd: [Keresése és megtekintése a jelölt profiloknak](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+A tehetségállományokban adott szakértelmek, nevek és tanulmányi hátterek alapján kereshet a teljese jelölti adatbázisban. Nem kell többé megadnia, hogy melyik részében szeretne keresni a jelentkező profiljának. Az Attract a teljes profilban keres, és az összes találatot kiemeli. Az Attract keres minden olyan dokumentumban, amely elérhető a jelöthöz, és intelligens módon osztályozza a keresési eredményeket. Ezenkívül az eredményeket szűrheti, forrás szerint vagy az alapján, hogy ezüstérmesek-e. További tudnivalókért lásd: [Keresése és megtekintése a jelölt profiloknak](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Potenciális jelöltekre vonatkozó javaslatok
-Az Attract segít elindítani a keresést egy munkához amint aktiválja azt, azáltal, hogy intelligens jelöltajánlásokat kínál a vállalat jelöltadatbázisából. Az ajánlások tartalmazzák a szakértelemre oktatásra vonatkozó adatokat, amikor a releváns potenciális jelöltek között keres. Ezek a javaslatok megjelennek a **Potenciális jelöltek** lapon egy állás alatt, ha engedélyezi a az állás felvételi folyamata során. További információ: [Potenciális jelöltekre vonatkozó javaslatok](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Az Attract segít elindítani a keresést egy munkához amint aktiválja azt, azáltal, hogy intelligens jelöltajánlásokat kínál a vállalat jelöltadatbázisából. Az ajánlások tartalmazzák a szakértelemre oktatásra vonatkozó adatokat, amikor a releváns potenciális jelöltek között keres. Ezek a javaslatok megjelennek a **Potenciális jelöltek** lapon egy állás alatt, ha engedélyezi a az állás felvételi folyamata során. További információ: [Potenciális jelöltekre vonatkozó javaslatok](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Interjúkészítők elérhetőségének állapota
 Az interjúütemezők hamarosan megtekinthetik a **Házon kívül, máshol dolgozik** állapotokat az interjúztatókhoz, így olyan időpontokat ütemezhetnek, amelyek jobban megfelelnek az interjúztatóknak.

@@ -1,6 +1,6 @@
 ---
-title: Attract előmeneteli webhely funkció
-description: Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról az Attract-ban.
+title: A karrierwebhely beállítása a Microsoft Dynamics 365 for Talent - Attract megoldásban
+description: 'Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról a Microsoft Dynamics 365 for Talent - Attract: Attract megoldásban.'
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729703"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739771"
 ---
-# <a name="career-site-functionality-in-attract"></a>Attract előmeneteli webhely funkció
+# <a name="set-up-your-career-site"></a>A karrierwebhely beállítása
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ Megkönnyítheti a jelöltek számára a pozícióira való pályázást, ha be�
 1. Jelentkezzen be Attract alkalmazásba rendszergazdaként
 2. Válassza ki a **Beállítások** gombot (fogaskerék-szimbólum) a lap jobb felső sarkában, majd válassza a **Felügyeleti központ** lehetőséget.
 3. Válassza ki a **LinkedIn-integráció** fület, és kapcsolja össze egy LinkedIn Recruiter-fiókkal.
-4. A **LinkedIn Recruiter System Connect -integráció** szakaszban válassza az **Engedélyezve** értéket a **Jelentkezés LinkedIn-profillal** beállításhoz.
+4. A **LinkedIn Recruiter System Connect-integráció** szakaszban válassza az **Engedélyezve** értéket a **Jelentkezés LinkedIn-profillal** beállításhoz.
 
 Miután engedélyezte a beállítást, a jelöltek jelentkezhetnek a meglévő LinkedIn-profiladataikkal. Amikor a pályázók a **Jelentkezés LinkedIn-profillal** gomb kiválasztásával jelentkeznek, akkor a rendszer megkéri őket, hogy használják LinkedIn-hitelesítő adataikat, ha még nincsenek bejelentkezve. A hitelesítés után a LinkedIn-profiljuk adatai lépnek a pályázati oldalon már létező profiladataik helyébe. A pályázók szükség szerint szerkeszthetik az adataikat, majd elküldhetik a pályázatot. Ha a jelölt elnavigál az oldalról anélkül, hogy pályázott volna az állásra, profiladataik nem frissülnek az Attract alkalmazásban.
 

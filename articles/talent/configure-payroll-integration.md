@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702818"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742913"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talent és a Dayforce között
 
@@ -52,8 +52,8 @@ Ha az integráció engedélyezve van, adatexport adatcsomagok és fájlok jönne
 
 Azure tárolási fiókokkal és Azure tárolási kapcsolati karakterláncokat kapcsolatos további információt az alábbi Azure-témakörökben találja:
 
-- [Az Azure Storage-fiókokról](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure Storage kapcsolati karakterláncok konfigurálása](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Az Azure Storage-fiókokról](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure Storage kapcsolati karakterláncok konfigurálása](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technikai részletek a bérlista integrációjának engedélyezésekor
 
@@ -123,10 +123,10 @@ A Dayforce létrehozza a következő levonásokat, a juttatási tervben definiá
 
 A juttatási programok definiálásával és kezelésével kapcsolatosan további tájékoztatás a következő témakörökben talál:
 
-- [Alkalmazotti juttatási program megvalósítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Új juttatás létrehozása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Dolgozók juttatásainak felvétele és eltávolítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Alkalmazotti juttatási program megvalósítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Új juttatás létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Dolgozók juttatásainak felvétele és eltávolítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompenzáció 
 
@@ -136,20 +136,20 @@ A Dayforce a kompenzációs adatok segítségével kiszámítja az alkalmazott �
 
 A következő témakörökben bővebben olvashat a kompenzációs tervekről:
 
-- [Fix kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Változó kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Munkabér-/kompenzációs struktúra és tervek kialakítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Folyamatkompenzáció](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Fix kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Változó kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Munkabér-/kompenzációs struktúra és tervek kialakítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Folyamatkompenzáció](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Beosztások 
 
 A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvártak. További információ a következő témakörökben olvasható:
 
-- [Feladat összetevőinek beállítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Új feladatok meghatározása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Feladat összetevőinek beállítása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Új feladatok meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Beosztások
 
@@ -173,8 +173,8 @@ A azonos osztály több beosztása társítva van az ugyanazon a feladathoz, azo
 
 További információ a következő témakörökben olvasható:
 
-- [Munkaerő szervezése részlegek, munkák és beosztások szerint](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Beosztások beállítása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Munkaerő szervezése részlegek, munkák és beosztások szerint](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Beosztások beállítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Osztályok
 
@@ -182,8 +182,8 @@ A részleg egy működési egység, amely a szervezet egy kategóriáját vagy m
 
 További információ a következő témakörökben olvasható:
 
-- [Részleg létrehozása és társítása a szervezeti hierarchiához](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Új részlegek meghatározása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Részleg létrehozása és társítása a szervezeti hierarchiához](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Új részlegek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Fizetési ciklusok és fizetési időszakok
 

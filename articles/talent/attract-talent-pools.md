@@ -1,6 +1,6 @@
 ---
-title: Pályázók gyűjtése szaktudásgyűjtők segítségével
-description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Attract szaktudásgyűjtőit.
+title: Jelöltek keresése tehetségállományok segítségével a Microsoft Dynamics 365 for Talent - Attract megoldásban
+description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Microsoft Dynamics 365 for Talent - Attract tehetségállományait.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711294"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741867"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Pályázók gyűjtése szaktudásgyűjtők segítségével
+# <a name="source-candidates-with-talent-pools"></a>Jelöltek keresése tehetségállományok segítségével
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ A szaktudásgyűjtő tulajdonosa és felhasználói számára leheséges: pály�
 ## <a name="search-and-view-candidate-profiles"></a>Keresése és megtekintése a jelölt profiloknak
 
 > [!NOTE] 
-> Ez a funkció jelenleg előnézetben van. Ha ki szeretné próbálni, akkor [be kell kapcsolnia az Attract rendszergazdai beállításai között](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Ez a funkció jelenleg előnézetben van. Ha ki szeretné próbálni, akkor [be kell kapcsolnia az Attract rendszergazdai beállításai között](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 A tehetségállományok segítségével megtekintheti egy jelölt profilját, LinkedIn-adatait, kapcsolódó dokumentumait és pályázati előzményeit. A bármely tehetségállományhoz hozzáadott összes jelöltet tartalmazó adatbázis egészében kereshet, beleértve a lezárt és aktív pályázókat is.
 
@@ -116,7 +116,7 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A *
 
     A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft Office 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
 
-- A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További tudnivalókért lásd: [Forráskeresés LinkedIn Recruiter segítségével](./attract-linked-in-recruiter.md).
+- A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További tudnivalókért lásd: [Forráskeresés LinkedIn Recruiter segítségével](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Csak a jelentkezők frissíthetik tudásukat, oktatási előzményeiket és munkatapasztalatokat.

@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505864"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795220"
 ---
 # <a name="extensibility-in-attract"></a>Bővíthetőség az Attract szolgáltatásban
 
@@ -33,7 +33,7 @@ A Microsoft Dynamics 365 for Talent a Common Data Service platformra épül, és
 
 ## <a name="extending-option-sets-in-attract"></a>Beállításkészletek kiterjesztése az Attract alkalmazásban
 
-Egy **Beállításkészlet** (választólista) olyan mezőtípus, amely egy entitásba foglalható. Beállítások készletét határozza meg. Egy beállítás megjelenítésekor egy űrlapon legördülő lista vezérlőként jelenik meg.  Az Attract alkalmazásban, több mező is van, amely beállításkészlet.  Elkezdtük bevezetni a képességet a beállításkészletek kiterjesztésére, kezdve az Elutasítás okkód mezővel a Foglalkoztatási típusa mezővel, és Szolgálati idő típusa mezővel.   Ezenkívül lefordított megjelenő címkéket is hozzáadhat a felvett beállításokhoz. További tudnivalókért lásd: [Beállításcímkék testreszabása](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+Egy **Beállításkészlet** (választólista) olyan mezőtípus, amely egy entitásba foglalható. Beállítások készletét határozza meg. Egy beállítás megjelenítésekor egy űrlapon legördülő lista vezérlőként jelenik meg.  Az Attract alkalmazásban, több mező is van, amely beállításkészlet.  Elkezdtük bevezetni a képességet a beállításkészletek kiterjesztésére, kezdve az Elutasítás okkód mezővel a Foglalkoztatási típusa mezővel, és Szolgálati idő típusa mezővel.   Ezenkívül lefordított megjelenő címkéket is hozzáadhat a felvett beállításokhoz. További tudnivalókért lásd: [Beállításcímkék testreszabása](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Az álláshirdetés a LinkedIn-re funkcióhoz a **Foglalkoztatási típusa** és **Szolgálati idő típusa** mezők szükségesek az **Állás részletei** lapon. Ezen a mezők az alapértelmezett értékekeit a LinkedIn támogatja és meg lesznek jelenítve az állás feladásakor. Tehát, ha állásokat tesz közzé a LinkedIn-en, és ezen a mezők a meglévő beállításkészlet-értékeit módosítja, az állás továbbra is közzé lesz téve, de LinkedIn nem jeleníti meg az egyéni **Foglalkoztatási típusa** és **Szolgálati idő típusa** értékeket.  
@@ -62,15 +62,15 @@ Mivel az Attract összes adata Common Data Service megoldásban található, a M
 
 A PowerApps segítségével könnyen hozhat létre alkalmazásokat, amelyek csatlakoztatják Attract adatait, és olyan kifejezéseket használnak, mint a Microsoft Excel kifejezései, logika hozzáadásához. A PowerApps segítségével épített alkalmazásokat a weben, az Apple iOS és Google Android eszközökön lehet futtatni.
 
-Megkönnyítheti például a toborzók számára a munkát az egyetemi állásbörzéken azzal, hogy létrehoz egy leegyszerűsített alkalmazást, amely lehetővé teszi az önéletrajzok beolvasását és a pályázók hozzákötését egy pozícióhoz az Attract rendszerében. Másik lehetőségként létrehozható egy alkalmazás, amely segít a szervezet megfelelési követelményeinek teljesítését. A PowerApps és az alkalmazások építésére való használatára vonatkozó további tudnivalókért lásd: [Adatok integrálása a Common Data Service](https://docs.microsoft.com/en-us/powerapps) megoldásba.
+Megkönnyítheti például a toborzók számára a munkát az egyetemi állásbörzéken azzal, hogy létrehoz egy leegyszerűsített alkalmazást, amely lehetővé teszi az önéletrajzok beolvasását és a pályázók hozzákötését egy pozícióhoz az Attract rendszerében. Másik lehetőségként létrehozható egy alkalmazás, amely segít a szervezet megfelelési követelményeinek teljesítését. A PowerApps és az alkalmazások építésére való használatára vonatkozó további tudnivalókért lásd: [Adatok integrálása a Common Data Service](https://docs.microsoft.com/powerapps) megoldásba.
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-A Microsoft Flow segítségével az Attract adatokon futó automatizált munkafolyamatok hozhatók létre. Egyszerűen csatlakozhat több száz népszerű alkalmazáshoz és szolgáltatáshoz kód írása nélkül. Az Attract Munkakör, Pályázó és Jelentkezés entitásaival a Common Data Service megoldásban együttműködő folyamatok felépítésével automatizálni lehet különböző műveleteket. Például amikor egy jelölt elfogad egy ajánlatot, értesítést lehet küldeni egy bevezetési csoportnak, vagy a híreket be lehet jelenteni a Twitteren. A folyamatokkal kapcsolatos további tudnivalók a [Microsoft Flow rendszer fejlesztői dokumentációjában](https://docs.microsoft.com/en-us/flow/) olvashatók.
+A Microsoft Flow segítségével az Attract adatokon futó automatizált munkafolyamatok hozhatók létre. Egyszerűen csatlakozhat több száz népszerű alkalmazáshoz és szolgáltatáshoz kód írása nélkül. Az Attract Munkakör, Pályázó és Jelentkezés entitásaival a Common Data Service megoldásban együttműködő folyamatok felépítésével automatizálni lehet különböző műveleteket. Például amikor egy jelölt elfogad egy ajánlatot, értesítést lehet küldeni egy bevezetési csoportnak, vagy a híreket be lehet jelenteni a Twitteren. A folyamatokkal kapcsolatos további tudnivalók a [Microsoft Flow rendszer fejlesztői dokumentációjában](https://docs.microsoft.com/flow/) olvashatók.
 
 ### <a name="power-bi"></a>Power BI
 
-Power BI segítségével létrehozhatók és megtekinthetők egyéni jelentések és irányítópultok, amelyekkel mélyebb betekintést nyerhet Attract adataiba. További információért a Power BI témájáról és az interaktív jelentések és irányítópultok létrehozásának módját kapcsolatban lásd: [Power BI dokumentáció](https://docs.microsoft.com/en-us/power-bi/).
+Power BI segítségével létrehozhatók és megtekinthetők egyéni jelentések és irányítópultok, amelyekkel mélyebb betekintést nyerhet Attract adataiba. További információért a Power BI témájáról és az interaktív jelentések és irányítópultok létrehozásának módját kapcsolatban lásd: [Power BI dokumentáció](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Egyéni tevékenységek 
 

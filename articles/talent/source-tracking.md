@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518210"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742716"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Jelöltek profiljai és pályázatai forrásainak nyomon követése 
+# <a name="track-candidate-sources"></a>Jelöltforrások nyomon követése
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Ez a funkció használatához kérje meg a rendszergazdát az engedélyezésére az **Adminisztratív beállításokban** az Attract megoldásban. Egy későbbi verzió forráskövetési jelentéseket is kínál majd. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Ez a funkció használatához kérje meg a rendszergazdát az engedélyezésére az **Adminisztratív beállításokban** az Attract megoldásban. Egy későbbi verzió forráskövetési jelentéseket is kínál majd. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 Amikor a pályázók egy állásra jelentkeznek, az Attract automatikusan nyomon követi a pályázatok forrását így értékes információkat nyújt a toborzás célzásához. A toborzók és felvételi vezető kiválaszthatják egy jelentkezés forrását amikor manuálisan hozzáadnak egy jelentkezőt egy álláshoz vagy tehetségállományhoz.
 
 A pályázat forrását a pályázati tevékenység részleteiben tekintheti meg a **Tevékenység** lapon, valamint a pályázati előzmények is elérhetők a **Profil** alatt a tehetségállományokban. A jelentkező profiljának forrását a jelentkező adatainál találja a **Profil** lapon jelentkezésekben és a tehetségállományokban is.
 
 > [!NOTE] 
-> A folyamatsablonokat az [Átfogó felvételi bővítményben](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) találja.
+> A folyamatsablonokat az [Átfogó felvételi bővítményben](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) találja.
 
 ## <a name="pre-configured-sources"></a>Előre konfigurált források
 
@@ -93,7 +93,7 @@ Az alapértelmezett forráslista gyakori pályázatforrásokat tartalmaz. Bizony
 
 ## <a name="customize-the-source-list"></a>Forráslista testreszabása 
 
-Az további jelentkezési források is szerepeltethetők a forráslistában. Ez a lista testreszabásához kövesse [Beállításkészletek kiterjesztése az Attract alkalmazásban](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract) utasításait. Szerkessze a **TalentSource** entitást további források felvételéhez. 
+Az további jelentkezési források is szerepeltethetők a forráslistában. Ez a lista testreszabásához kövesse [Beállításkészletek kiterjesztése az Attract alkalmazásban](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract) utasításait. Szerkessze a **TalentSource** entitást további források felvételéhez. 
 
 A felhasználói felület negatív befolyásolása elkerülésére nem szerkessze vagy törölje a **TalentCategory** enumerációs értékeket (nem nevek) a következőkhöz:
 
