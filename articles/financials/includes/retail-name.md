@@ -1,2 +1,0 @@
-> [!NOTE]
-> <span data-ttu-id="4d6e9-101">Ez a témakör a Dynamics 365 for Finance and Operations és a Dynamics 365 for Retail rendszerekre egyaránt érvényes.</span><span class="sxs-lookup"><span data-stu-id="4d6e9-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
