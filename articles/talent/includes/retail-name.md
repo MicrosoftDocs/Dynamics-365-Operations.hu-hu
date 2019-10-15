@@ -1,2 +1,2 @@
 > [!NOTE]
-> Ez a témakör a Dynamics 365 for Finance and Operations és a Dynamics 365 for Retail rendszerekre egyaránt érvényes. 
+> Ez a témakör a Finance, a Supply Chain Management és a Retail rendszerre vonatkozik. 

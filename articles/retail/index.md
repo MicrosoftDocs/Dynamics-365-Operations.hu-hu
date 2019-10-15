@@ -1,6 +1,6 @@
 ---
-title: Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
-description: A Dynamics 365 for Retail kezdőoldala
+title: A Dynamics 365 Retail súgóerőforrásai
+description: A Dynamics 365 Retail kezdőoldala
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,27 +18,30 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874927"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278106"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Üdvözöljük a Dynamics 365 for Retail szolgáltatásban!
+# <a name="help-resources-for-dynamics-365-retail"></a>A Dynamics 365 Retail súgóerőforrásai
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán keresztül egyesített kereskedelem létrehozását teszi lehetővé. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és a dolgozók jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett magával ragadó ügyfélélményt biztosít minden érintkezési ponton.
-
-> [!NOTE]
-> A Dynamics 365 for Retail szolgáltatás szorosan kapcsolódik a Dynamics 365 for Finance and Operations és a Dynamics 365 for Talent szolgáltatásokhoz. Ugyanaz a funkció mindhárom termékben megjelenhet. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Microsoft Dynamics 365 for Retail; az elsődlegesen a központi termékhez (Finance and Operations) kapcsolódó témakörökben a terméknév Microsoft Dynamics 365 for Finance and Operations; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 for Talent lesz.
+A Microsoft Dynamics 365 Retail egy olyan, végponttól végpontig terjedő megoldás, amellyel egyesített kereskedelem biztosítható az összes csatornán keresztül. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és a dolgozók jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett minden érintkezési ponton magával ragadó élményt kínál az ügyfeleknek.
 
 A bal ablaktáblában válasszon ki egy szolgáltatásterületet, amelyről többet szeretne megtudni.
 
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (előzetes)
+
+A bevált Dynamics 365 Retail-funkciókra épülő Dynamics 365 Commerce az irodát, az üzletet, a hívásközpontot és a digitális megoldásokat egyesítő általános többcsatornás megoldást kínál. A Commerce jelenleg előzetes verzióban áll a vevők rendelkezésére. A meglévő Dynamics 365 Retail-vevők csak akkor tudják majd frissíteni a Commerce-t, ha a szolgáltatás általánosan is elérhetővé válik.
+
+A Dynamics 365 Commerce rendszerről [A Dynamics 365 Commerce súgóerőforrásai](../commerce/index.md) oldalon található további információ.
+
 ## <a name="channel-management"></a>Csatornakezelés
 
-A Retail-élmény beállításakor meghatározhatja és konfigurálhatja üzleteit, amelyek lehetnek tényleges üzlethelyiségek, online áruházak és hívásközpontok.
+A Retail Experience beállításakor meghatározhatja és konfigurálhatja az üzleteket, amelyek tényleges üzlethelyiségek, online áruházak és hívásközpontok egyaránt lehetnek.
 
 Minden kiskereskedelmi áruház saját fizetési módokkal, szállítási módokkal, árcsoportokkal, bevételi/kiadási számlákkal, pénztárakkal és személyzettel rendelkezhet. Miután létrehozta a kiskereskedelmi áruházat, hozza létre az áruház által kezelendő termékválasztékot. Megadhatja az áruház saját, az áruházban elérhető termékekre vonatkozó árait és engedményeit.
 
@@ -78,8 +81,8 @@ Több összetevőt kell beállítania az üzlet, az üzleten belüli POS-pénzt�
 
 Ha szükség van a környezet testreszabására vagy a rendszer telepítésére és fenntartására, mindenképpen tekintse meg a Retail rendszer fejlesztői és rendszergazda-specifikus tartalmait, és az általánosabb tartalmakat.
 
-- [Dynamics 365 for Retail informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
-- [Fejlesztés és felügyelet a Dynamics 365 for Finance and Operations szolgáltatás esetén](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
+- [Fejlesztés és felügyelet a Dynamics 365 Finance szolgáltatás esetén](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

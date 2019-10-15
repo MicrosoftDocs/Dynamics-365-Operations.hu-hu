@@ -1,6 +1,6 @@
 ---
 title: Számlafizetési forgatókönyvek beállítása
-description: Ez a témakör azt részletezi, hogy hogyan lehet a Dynamics 365 for Retail szolgáltatást úgy konfigurálni, hogy támogassa a számlakifizetésekkel kapcsolatos különböző eseteket.
+description: Ez a témakör azt részletezi, hogy hogyan lehet a Dynamics 365 Retail szolgáltatást úgy konfigurálni, hogy támogassa a számlakifizetésekkel kapcsolatos különböző eseteket.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb9101843396e489e4d7b63879e9df35e52fe64
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564970"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018013"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Számlafizetési forgatókönyvek beállítása
 
 [!include [banner](includes/banner.md)]
 
-A Dynamics 365 for Retail Számlafizetés funkcióját a következők támogatására terjesztették ki:
+A Dynamics 365 Retail Számlafizetés funkcióját a következők támogatására terjesztették ki:
 
 - Több értékesítési rendelés számlájának kifizetése egyetlen pénztártranzakció során.
 - Különböző vevői számlatípusok kifizetése, mint például szabadszöveges számlák, projektalapú számlák és jóváírások.

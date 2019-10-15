@@ -1,9 +1,9 @@
 ---
-title: Az ellátási lánc kezelése kezdőlap
-description: Ez az oldal a Microsoft Dynamics 365 for Finance and Operations ellátásilánc-kezeléssel kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza.
-author: ShylaThompson
+title: A Supply Chain Management súgóerőforrásai
+description: Ez az oldal a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,26 +18,27 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557592"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278324"
 ---
-# <a name="supply-chain-management-home-page"></a>Az ellátási lánc kezelése kezdőlap
+# <a name="help-resources-for-supply-chain-management"></a>A Supply Chain Management súgóerőforrásai
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations ellátásilánc-kezeléssel kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
+Ez a témakör a Dynamics 365 Supply Chain Management súgótémaköreinek és más erőforrásainak listáját tartalmazza. 
 
 ## <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
-Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalt az új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
+A kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalon tekinthetők meg. 
 
 ## <a name="core-concepts-and-tasks"></a>Alapvető fogalmak és feladatok
 
 További információkért válasszon ki egy szolgáltatásterületet.
 
+- [Eszközök kezelése](asset-management/index.md)
 - [Költségkönyvelés](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Költségkezelés](cost-management/cost-management-home-page.md)  
 - [Készletkezelés](inventory/inventory-home-page.md)
@@ -50,9 +51,13 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Szállításkezelés](transportation/transportation-management-overview.md)
 - [Raktárkezelés](warehousing/warehouse-configuration.md)
 
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+A Dynamics 365 Finance rendszerről [A Dynamics 365 Finance súgóerőforrásai](../finance/index.md) oldalon talál további információt.
+
 ## <a name="videos"></a>Videók
 
-Ezek a rövid videók a Microsoft Dynamics 365 for Finance and Operations 8.0 verzióban (2018. április) található új funkciókkal kapcsolatban nyújtanak információt.
+Ezek a rövid videók a Microsoft Dynamics 365 for Finance and Operations 8.0 verzióban (2018. április) található új funkciókról nyújtanak információt.
 
 - [Munkarendelések szinkronizálása a Field Service és a Finance and Operations között](https://youtu.be/hAB4TDVMjxU)
 
@@ -113,6 +118,6 @@ A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing ku
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">A Microsoft Dynamics 365 for Finance and Operations által biztosított mobilitás a raktárban</a>
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
-Ha további információra van szüksége a Microsoft Dynamics 365 for Finance and Operations-képzéssel kapcsolatban, látogasson el a <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Tanulási Portálra</a>. (CustomerSource-számla szükséges) 
+A Dynamics 365-képzésről a <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Tanulási Portálon</a> talál további információt. (CustomerSource-fiók szükséges) 
 
 
