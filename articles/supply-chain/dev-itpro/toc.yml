@@ -1,0 +1,1620 @@
+- name: A Finance and Operations fejlesztése és adminisztrációja
+  href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Új vagy módosult elemek
+  items:
+    - name: A 30-as platformfrissítés (2019. október) előnézeti funkciói
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 29-es platformfrissítés (2019. október)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 28-as platformfrissítés (2019. július)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 27-es platformfrissítés (2019. június)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Platform update 26 (2019. május)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Platform update 25 (2019. április)
+      href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Platform update 24 (2019. március)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 23-as platformfrissítés (2019. január)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 22-es platformfrissítés (2018. december)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 21-es platformfrissítés (2018. november)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 20-as platformfrissítés (2018. szeptember)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 15-ös platformfrissítés (2018. március)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Üzleti események
+  items:
+    - name: Üzleti események áttekintése
+      href: ../../dev-itpro/business-events/home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Alkalmazás – üzleti események
+      href: ../../dev-itpro/business-events/app-business-events.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Munkafolyamat – üzleti események
+      href: ../../dev-itpro/business-events/business-events-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Figyelmeztetések üzleti eseményekként
+      href: ../../dev-itpro/business-events/alerts-business-events.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzleti események Microsoft Flow szolgáltatásban
+      href: ../../dev-itpro/business-events/business-events-flow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzleti események fejlesztői dokumentációja
+      href: ../../dev-itpro/business-events/business-events-dev-doc.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzleti események hibaelhárítása
+      href: ../../dev-itpro/business-events/troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Esetek üzleti eseményekhez történő használata
+      href: ../../dev-itpro/business-events/potential-use-cases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Oktatóanyagok
+      items:
+        - name: Üzleti események és a Microsoft Flow
+          href: ../../dev-itpro/business-events/how-to/how-to-flow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti események és az Azure Event Grid
+          href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti események és az Azure Service Bus
+          href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti események és munkafolyamat-jóváhagyások
+          href: ../../dev-itpro/business-events/how-to/how-to-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti események és a Microsoft Forms Pro
+          href: ../../dev-itpro/business-events/how-to/FormsPro.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti események és az Azure Event Hubs
+          href: ../../dev-itpro/business-events/how-to/event-hub.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Folyamatos szállítás
+  items:
+    - name: Folyamatos szállítás kezdőlap
+      href: ../../dev-itpro/dev-tools/continuous-delivery-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Fejlesztési és folyamatos szállítási GYIK
+      href: ../../dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Tesztcsomagok kizárása az előállított buildből
+      href: ../../dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel
+      href: ../../dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Verziómodellek frissítése az automatizált buildben
+      href: ../../dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Adatintegrálás
+  items:
+    - name: Adatintegrálási (importálási/exportálási) stratégia kiválasztása
+      href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatintegrációs API-k
+      items:
+        - name: Adatkezelési csomag REST API-ja
+          href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szolgáltatási végpontok
+          items:
+            - name: Szolgáltatási végpontok áttekintése
+              href: ../../dev-itpro/data-entities/services-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Szolgáltatáshitelesítési hibaelhárítás
+              href: ../../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: OData
+          href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyéni szolgáltatásfejlesztés
+          href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ismétlődő integrációk
+          href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Finance and Operations csatlakoztató
+      href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Fejlesztés integrációhoz
+      items:
+        - name: Adatintegráció az adatentitások használatával
+          items:
+            - name: Adatintegráció az adatentitások használatával – áttekintés
+              href: ../../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Entitás fejlesztése az adatátvitelhez
+              href: ../../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Összetett adatentitások fejlesztése
+              href: ../../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Vállalatközi pénzügyi adatmegosztás konfigurálása
+              href: ../../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Rekordsablonok létrehozása az adatbevitel megkönnyítése érdekében
+              href: ../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Rekordok létrehozása rekordsablonokkal
+              href: ../../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatintegráció a Common Data Service használatával
+          items:
+            - name: Adatintegráció a Common Data Service használatával – áttekintés
+              href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Szinkronizált, kétirányú integráció'
+              items:
+                - name: Közel valós idejű adatintegráció
+                  href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Szervezeti hierarchia a Common Data Service megoldásban
+                  href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Vállalat fogalma a Common Data Service szolgáltatásokban
+                  href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Integrált vevői alapadat
+                  href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Egységes terméktapasztalat
+                  href: ../../dev-itpro/data-entities/dual-write-product.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Integrált szállítói alapadat
+                  href: ../../dev-itpro/data-entities/dual-write-vendor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Integrált helyek és raktárak
+                  href: ../../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Kezdeti szinkronizálás
+                  href: ../../dev-itpro/data-entities/dual-write-initial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Az adatintegrálás hibaelhárítása
+                  href: ../../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Aszinkron, kétirányú integráció'
+              items:
+                - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
+                  items:
+                    - name: A potenciális vevők készpénzre váltása
+                      href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+                      href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
+                      href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
+                      href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
+                      href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
+                      href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
+                      href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: A Field Service szolgáltatással való integráció konfigurálása
+                  items:
+                    - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
+                      href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+                      href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
+                      href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                      href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                      href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Project Service Automation integráció konfigurálása
+                  items:
+                    - name: A Project Service Automation áttekintése
+                      href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Project Service Automation integráció paraméterei
+                      href: ../../financials/project-management/PSA-parameters.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Projektszerződések és projektek szinkronizálása
+                      href: ../../financials/project-management/project-contracts-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Projektfeladatok szinkronizálása
+                      href: ../../financials/project-management/project-tasks-template.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Projektköltség-kategóriák szinkronizálása
+                      href: ../../financials/project-management/project-categories-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
+                      href: ../../financials/project-management/project-estimates-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                    - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
+                      href: ../../financials/project-management/project-actuals-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Külső webszolgáltatások használata
+      href: ../../dev-itpro/data-entities/consume-external-web-service.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Elektronikus üzenetküldés
+      href: ../../financials/general-ledger/electronic-messaging.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Adatkezelés
+  items:
+    - name: Adatkezelés – áttekintés
+      href: ../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatentitások
+      items:
+        - name: Adatentitások áttekintése
+          href: ../../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációs adatprojektek
+          href: ../../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
+          items:
+            - name: Konfigurációs adatok másolása – áttekintés
+              href: ../../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Konfigurációs adatcsomagok
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
+              href: ../../dev-itpro/data-entities/entity-store-data-lake.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációs adatsablonok
+          href: ../../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Entitás változásainak nyomon követése
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Normál adatentitásokkal kapcsolatos információk
+          href: ../../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatsablonok több munkalappal
+          href: ../../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Változáskövetés engedélyezése az entitások esetében
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációs kulcsok és adatentitások
+          href: ../../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációs adatcsomagok
+          href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatimportálási és -exportálási feladatok
+      items:
+        - name: Adatimportálási és -exportálási feladatok áttekintése
+          href: ../../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
+          href: ../../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Fejlesztés adatentitásokhoz
+      items:
+        - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
+          href: ../../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Új adatentitások létrehozása
+          href: ../../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatentitás-tulajdonságok
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Számítási oszlopok és virtuális mezők létrehozása
+          href: ../../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vállalatközi viselkedés
+          href: ../../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ország-/régiókódok kezelése
+          href: ../../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Öröklődési minták
+          href: ../../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatokentitás-varázsló szabályai
+          href: ../../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Metaadat-tulajdonságok
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Hitelesítések, alapértékek és leképezéssel nem rendelkező mezők'
+          href: ../../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Biztonság és adatentitások
+          href: ../../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Harmadik fél szolgáltatásának tesztelésére szolgáló segédprogramok használata
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Csak olvasható entitások létrehozása, amelyek elérhetővé teszik a pénzügyi dimenziókat'
+          href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Használja saját adatbázisát
+      href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Automatizált entitástár-frissítés
+      href: ../../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatfeladat automatizálása
+      href: ../../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatellenőrzési ellenőrzőlista munkaterülete
+      href: ../../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatkezelési hibaleírások
+      href: ../../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Adatbázis-áthelyezési műveletek
+  items:
+    - name: Áttekintés
+      href: ../../dev-itpro/database/dbmovement-operations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Első lépéseket bemutató rövid útmutatók
+      items:
+        - name: Adatbázis frissítése
+          href: ../../dev-itpro/database/database-refresh.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatbázis exportálása
+          href: ../../dev-itpro/database/export-database.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatbázis importálása
+          href: ../../dev-itpro/database/import-database.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatbázis időponthoz kötött visszaállítása
+          href: ../../dev-itpro/database/database-point-in-time-restore.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Oktatóanyagok
+      items:
+        - name: Oktatási célú frissítés
+          href: ../../dev-itpro/database/dbmovement-scenario-general-refresh.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Keressen hibákat a termelési adatbázis egyik példányában
+          href: ../../dev-itpro/database/dbmovement-scenario-debugdiag.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A szabványos felhasználói tesztelési (UAT) adatbázis egy példányának exportálása
+          href: ../../dev-itpro/database/dbmovement-scenario-exportuat.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Az „arany konfiguráció” promóciója
+          href: ../../dev-itpro/database/dbmovement-scenario-goldenconfig.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Romboló tesztelés
+          href: ../../dev-itpro/database/dbmovement-scenario-destructivetests.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Bemutató adatok
+  items:
+    - name: Bemutató adatok – áttekintés
+      href: ../../fin-and-ops/get-started/demo-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json?toc=/dev-itpro/toc.json
+    - name: Bemutató adatok létrehozása adatcsomagok felhasználásával
+      href: ../../dev-itpro/data-entities/generate-demo-data-packages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Telepítés
+  items:
+    - name: Bemutatókörnyezetek telepítése
+      href: ../../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Felhőbeli telepítés
+      items:
+        - name: Felhőbeli telepítés áttekintése
+          href: ../../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Önkiszolgáló központi telepítés
+          items:
+            - name: Az önkiszolgáló központi telepítés áttekintése
+              href: ../../dev-itpro/deployment/infrastructure-stack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Új bemutatókörnyezet telepítése
+              href: ../../dev-itpro/deployment/deployenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Telepítés GYIK
+              href: ../../dev-itpro/deployment/deploymentFAQ.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az önkiszolgáló központi telepítéssel kapcsolatos ismert problémák
+              href: ../../dev-itpro/deployment/known-issues-new-deployment-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Karbantartási műveletek a telepítéshez
+              href: ../../dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Környezet frissítése
+              href: ../../dev-itpro/deployment/updateenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Önkiszolgáló központi telepítéssel üzembe helyezett környezetekkel kapcsolatos hibaelhárítás
+              href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Azure Resource Manager felvételi folyamat teljesítése
+          href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Azure ExpressRoute és Finance and Operations
+          href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations-architektúra
+          href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Frissítések alkalmazása felhőalapú környezetekre
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Frissítések és bővítmények alkalmazása a felhőben tárolt Retail-csatorna összetevőire
+          href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Retail Cloud Scale Unit inicializálása
+          href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Retail adattárolási hely
+          href: ../../dev-itpro/deployment/retail-data-residency.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Helyszíni telepítés
+      items:
+        - name: Helyszíni telepítés kezdőlapja
+          href: ../../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni telepítés áttekintése
+          href: ../../dev-itpro/deployment/on-premises-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni telepítések tervezése és előkészítése
+          href: ../../dev-itpro/deployment/plan-onprem-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Hardver méretezésére vonatkozó követelmények
+          href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json?toc=/dev-itpro/toc.json
+        - name: Helyszíni projektek beállítása
+          href: ../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni környezetek beállítása és telepítése
+          items:
+            - name: Helyszíni környezetek beállítása és telepítése kezdőlap
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-environments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Helyszíni környezetek telepítése (Platform update 12-es és újabb verziókon)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Helyszíni környezetek telepítése (Platform update 8-on és 11-en)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
+              href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
+          href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: PowerBI.com-integráció helyszíni környezetekkel
+          href: ../../dev-itpro/analytics/entity-store-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fordított proxyk konfigurálása a helyszíni környezetekhez
+          href: ../../dev-itpro/deployment/onprem-reverseproxy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Frissítések alkalmazása helyszíni telepítéshez
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni diagnosztikák
+          href: ../../dev-itpro/deployment/on-premises-diagnostics.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni telepítések újratelepítése
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyi ügynök
+          items:
+            - name: AD FS Office 365 kompatibilitása
+              href: ../../dev-itpro/deployment/onprem-adfscompatibility.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Helyi ügynök telepítés előtti és telepítés utáni parancsfájljai
+              href: ../../dev-itpro/lifecycle-services/pre-post-scripts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: A helyi ügynök frissítése
+              href: ../../dev-itpro/lifecycle-services/update-local-agent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Környezetek újrakonfigurálása
+          href: ../../dev-itpro/lifecycle-services/reconfigure-environment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kliens internetkapcsolata
+          href: ../../dev-itpro/user-interface/client-disconnected.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Hibaelhárítás helyszíni telepítéseknél
+          href: ../../dev-itpro/deployment/troubleshoot-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Tanúsítványváltás
+          href: ../../dev-itpro/deployment/certificate-rotation-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Egyéni kód telepítése
+      items:
+        - name: Telepíthető csomagok létrehozása a modellekhez
+          href: ../../dev-itpro/deployment/create-apply-deployable-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Telepíthető csomagok telepítése a parancssorból
+          href: ../../dev-itpro/deployment/install-deployable-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Csomag eltávolítása
+          href: ../../dev-itpro/deployment/uninstall-deployable-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Csomagalkalmazási problémák elhárítása
+          href: ../../dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Fejlesztés és testreszabás
+  items:
+    - name: Fejlesztés és testreszabás kezdőoldala
+      href: ../../dev-itpro/dev-tools/developer-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Az alkalmazásverem és a kiszolgáló architektúrája
+      href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Értékelési példányok beszerzése
+      href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Regisztrálás az előfizetések előnézetére
+      href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Fejlesztői környezetek telepítése és hozzáférés
+      items:
+        - name: Fejlesztői környezetek
+          href: ../../dev-itpro/dev-tools/access-instances.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Különálló fejlesztői környezetetek konfigurálása
+          href: ../../dev-itpro/dev-tools/configure-developer-vm.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Új felhasználók létrehozása fejlesztési gépeken
+          href: ../../dev-itpro/dev-tools/enable-development-machine.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
+          href: ../../dev-itpro/sysadmin/VMs-no-admin-access.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyi környezetek átnevezése az Azure DevOps eléréséhez
+          href: ../../dev-itpro/migration-upgrade/vso-machine-renaming.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fejlesztési rendszerkövetelmények
+          href: ../../dev-itpro/dev-tools/development-system-requirements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 'Verziókövetés, metaadatok keresése és navigáció'
+      href: ../../dev-itpro/dev-tools/version-control-metadata-navigation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Flottakezelés – mintaalkalmazás
+      items:
+        - name: Végponttól végpontig érvényes eset a Flottakezelés mintaalkalmazáshoz
+          href: ../../dev-itpro/dev-tools/fleet-management-sample.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Flottakezelés – mintaalkalmazás
+          href: ../../dev-itpro/dev-tools/introduction-fleet-management-sample.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: A Visual Studio eszközei
+      items:
+        - name: Fejlesztői eszközök
+          href: ../../dev-itpro/dev-tools/development-tools-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fejlesztői eszközökkel kapcsolatos oktatóanyag
+          href: ../../dev-itpro/dev-tools/introduction-visual-studio.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Alkalmazás-ellenőrző
+          items:
+            - name: BaseX telepítése az alkalmazás-ellenőrzőhöz
+              href: ../../dev-itpro/dev-tools/install-basex.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Alkalmazásböngésző
+          href: ../../dev-itpro/dev-tools/application-explorer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Projektek létrehozása és hibakeresés
+          href: ../../dev-itpro/dev-tools/build-debug-project.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Buildműveletek
+          href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kódszerkesztői funkciók
+          href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Modellek és adatmodellelemek létrehozása
+          items:
+            - name: Modellek és adatmodellelemek létrehozásának áttekintése
+              href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővítmények elnevezési irányelvei
+              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: A modelltestreszabási és elavulási funkciók kikapcsolása
+              href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Testreszabás-elemzési jelentés
+          href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Elemtervezők
+          href: ../../dev-itpro/dev-tools/element-designers.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Az elemek használatának meghatározására szolgáló parancsok
+          href: ../../dev-itpro/dev-tools/element-usage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Modellek exportálása és importálása
+          href: ../../dev-itpro/dev-tools/models-export-import.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Metaadatok keresése a Visual Studio szolgáltatásban
+          href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Modellek és csomagok
+          href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations projekttípus
+          href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Eszközökhöz tartozó bővítmények a Visual Studio szolgáltatáshoz
+          href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Visual Studio fejlesztői eszközeinek frissítése
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: X++ programozási nyelv
+      items:
+        - name: X++ és hibakeresési funkciók
+          href: ../../dev-itpro/dev-tools/new-x-debugger-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Hibakeresés az X++-kódban
+          href: ../../dev-itpro/dev-tools/debug-xpp.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
+          href: ../../dev-itpro/dev-tools/event-handler-result-class.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Üzleti logika írása C# és X++ forráskóddal'
+          href: ../../dev-itpro/dev-tools/write-business-logic.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Az X ++ és az X ++ fordító változásai
+          href: ../../dev-itpro/dev-tools/programming-language-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'LINQ-szolgáltató a C#-nyelvhez'
+          href: ../../dev-itpro/dev-tools/linq-provider-c.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ajánlott eljárási szabályok írása
+          href: ../../dev-itpro/dev-tools/author-best-practice-rules.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Az Alkalmazásböngésző tulajdonságai
+          href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: X++ nyelvi referencia
+          items:
+            - name: X++ nyelvi referencia áttekintése
+              href: ../../dev-itpro/dev-ref/xpp-language-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Változók és adattípusok
+              items:
+                - name: Változók
+                  href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Primitív adattípusok
+                  href: ../../dev-itpro/dev-ref/xpp-data-primitive.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Összetett adattípusok
+                  href: ../../dev-itpro/dev-ref/xpp-data-composite.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Gyűjteményosztályok
+                  href: ../../dev-itpro/dev-ref/xpp-data-collection.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Kiterjesztett adattípusok
+                  href: ../../dev-itpro/dev-ref/xpp-data-edt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Állítások, ciklusok és kivételkezelés'
+              items:
+                - name: 'Megjegyzések, használat és nyomtatás'
+                  href: ../../dev-itpro/dev-ref/xpp-statements-loops.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Feltételes állítások
+                  href: ../../dev-itpro/dev-ref/xpp-conditional.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Ciklusos kimutatások
+                  href: ../../dev-itpro/dev-ref/xpp-loops.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Kivételkezelés
+                  href: ../../dev-itpro/dev-ref/xpp-exceptions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: SQL-kapcsolat hiba X++-kivétele
+              href: ../../dev-itpro/dev-ref/sql-connection-error.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-operátorok
+              href: ../../dev-itpro/dev-ref/xpp-operators.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-operátorprecedencia
+              href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-osztályok és módszerek
+              items:
+                - name: Osztályok és módszerek
+                  href: ../../dev-itpro/dev-ref/xpp-classes-methods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Öröklődés
+                  href: ../../dev-itpro/dev-ref/xpp-inheritance.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Statikus osztálytagok
+                  href: ../../dev-itpro/dev-ref/xpp-static-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Interfészek
+                  href: ../../dev-itpro/dev-ref/xpp-interfaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Tárak
+                  href: ../../dev-itpro/dev-ref/xpp-library-objects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+                - name: Események
+                  href: ../../dev-itpro/dev-ref/xpp-events.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-adatkiválasztás és -manipuláció
+              href: ../../dev-itpro/dev-ref/xpp-data-query.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Adatok elérése a SysDa API használatával
+              href: ../../dev-itpro/dev-ref/sysda.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-makrók
+              href: ../../dev-itpro/dev-ref/xpp-macros.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++-attribútumosztályok
+              href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Az X++ és a C# összehasonlítása'
+              href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az X++ szintaxisa
+              href: ../../dev-itpro/dev-ref/xpp-syntax.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 'Alkalmazásprogramozási felület, osztály- és táblareferenciák'
+      items:
+        - name: 'Alkalmazásprogramozási felület, osztály- és táblaerőforrások'
+          href: ../../dev-itpro/dev-ref/api-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: X++ fordításidejű funkciók
+          href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: X++ futásidejű funkciók
+          items:
+            - name: X++ futásidejű funkció-erőforrások
+              href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ üzleti futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ tároló futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ konverzió futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ dátum futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ matematikai futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ reflexió futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ munkamenet futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X++ karakterlánc futásidejű funkciók
+              href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Rendszertáblák
+          href: ../../dev-itpro/dev-ref/system-tables.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Rendszerosztályok
+          items:
+            - name: A osztályok
+              href: ../../dev-itpro/dev-ref/a-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: B osztályok
+              href: ../../dev-itpro/dev-ref/b-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: C osztályok
+              href: ../../dev-itpro/dev-ref/c-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: D osztályok
+              href: ../../dev-itpro/dev-ref/d-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: E osztályok
+              href: ../../dev-itpro/dev-ref/e-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FieldBinding – FormBuildAnimateControl'
+              href: ../../dev-itpro/dev-ref/fieldbinding-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormBuildButtonControl – FormBuildFastTabSummarySeparator'
+              href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormBuildFilterPaneControl – FormBuildRealControl'
+              href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormBuildReferenceControl – FormButtonSeparatorControl'
+              href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormChangeTracker – FormControlEventArgs'
+              href: ../../dev-itpro/dev-ref/formchangetracker-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormDataObject – FormFastTabHeaderControl'
+              href: ../../dev-itpro/dev-ref/formdataobject-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: F osztályok (FormFastTabSummarySeparator – FormGridControl)
+              href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: F osztályok (FormGroupControl – FormIntControl)
+              href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: F osztályok (FormListBoxControl – FormNotifyEventArgs)
+              href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: F osztályok (FormObject – FormRealControl)
+              href: ../../dev-itpro/dev-ref/formobject-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormReferenceControl – FormStringControl'
+              href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'F osztályok: FormTabControl – FormWindowControl'
+              href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: G osztályok
+              href: ../../dev-itpro/dev-ref/g-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: H osztályok
+              href: ../../dev-itpro/dev-ref/h-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: I osztályok
+              href: ../../dev-itpro/dev-ref/i-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: J osztályok
+              href: ../../dev-itpro/dev-ref/j-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: K osztályok
+              href: ../../dev-itpro/dev-ref/k-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: L osztályok
+              href: ../../dev-itpro/dev-ref/l-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: M osztályok
+              href: ../../dev-itpro/dev-ref/m-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: N osztályok
+              href: ../../dev-itpro/dev-ref/n-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: O osztályok
+              href: ../../dev-itpro/dev-ref/o-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: P osztályok
+              href: ../../dev-itpro/dev-ref/p-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Q osztályok
+              href: ../../dev-itpro/dev-ref/q-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: R osztályok
+              href: ../../dev-itpro/dev-ref/r-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: S osztályok
+              href: ../../dev-itpro/dev-ref/s-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: T-osztályok
+              href: ../../dev-itpro/dev-ref/t-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: U-osztályok
+              href: ../../dev-itpro/dev-ref/u-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: V-osztályok
+              href: ../../dev-itpro/dev-ref/v-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: W-osztályok
+              href: ../../dev-itpro/dev-ref/w-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: X-osztályok
+              href: ../../dev-itpro/dev-ref/x-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Bővíthetőség
+      items:
+        - name: Bővíthetőség kezdőlap
+          href: ../../dev-itpro/extensibility/extensibility-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bevezetés és az első lépések
+          items:
+            - name: Alkalmazásbővítési terv
+              href: ../../dev-itpro/extensibility/extensibility-roadmap.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővítési kérelmek
+              href: ../../dev-itpro/extensibility/extensibility-requests.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővíthetőség GYIK
+              href: ../../dev-itpro/extensibility/app-sealing-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Áttelepítés a felülrétegzésből a bővítményekbe
+              href: ../../dev-itpro/extensibility/migrate-overlayer-extension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Modellelemek testreszabása bővítményekkel (oktatóanyag)
+              href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Testreszabás bővítményekkel és felülrétegezéssel
+              href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Újdonságok
+          items:
+            - name: Új vagy módosult elemek a bővíthetőséggel kapcsolatban
+              href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 10.0.3-as verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 10.0.2-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-2.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 10.0.1-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-1.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 10.0-ás verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-10.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.1.3-as verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-813.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.1.2-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-812.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.1.1-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-811.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.1-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-81.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.0.4-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-804.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.0.3-as verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-803.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.0.2-es verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-802.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 8.0.1-as verzió'
+              href: ../../dev-itpro/extensibility/extensibility-changes-801.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővíthetőség módosításai a 8.0-as verzióban
+              href: ../../dev-itpro/extensibility/changes-80.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővíthetőség módosításai a 7.3-as verzióban
+              href: ../../dev-itpro/extensibility/extensibility-changes-73.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: 'Bővíthetőség módosításai, 2017. július'
+              href: ../../dev-itpro/extensibility/changes-july-2017.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Alapelvek
+          items:
+            - name: Tolakodó testreszabások
+              href: ../../dev-itpro/extensibility/intrusive-customizations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Osztálykiterjesztési modell
+              href: ../../dev-itpro/extensibility/class-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Osztálykiterjesztés módszercsomagolással és parancslánccal
+              href: ../../dev-itpro/extensibility/method-wrapping-coc.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Bővítmények elnevezési irányelvei
+              href: ../../dev-itpro/extensibility/naming-guidelines-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Modellkorlátozások enyhítése a felülrétegzés bővítményekbe történő újrabontása érdekében
+              href: ../../dev-itpro/extensibility/refactoring-over-layering.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bővítmények létrehozása
+          items:
+            - name: Értékek hozzáadása az enumerálásokhoz
+              href: ../../dev-itpro/extensibility/add-enum-value.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kiterjesztett adattípusok módosítása
+              href: ../../dev-itpro/extensibility/modify-edt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Alosztályok regisztrálása gyári módszerhez
+              href: ../../dev-itpro/extensibility/register-subclass-factory-methods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Válasz az EventHandlerResult szolgáltatással
+              href: ../../dev-itpro/extensibility/respond-event-handler-result.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: A RunBase osztály bővítése
+              href: ../../dev-itpro/extensibility/extend-runbase-class.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az alkalmazás indításának tesreszabása delegáltak segítségével
+              href: ../../dev-itpro/extensibility/startup-customizations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Létező mezők módosítása egy táblában
+              href: ../../dev-itpro/extensibility/modify-existing-field.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Mezők hozzáadása a táblákhoz
+              href: ../../dev-itpro/extensibility/add-field-extension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Indexek hozzáadása a táblákhoz
+              href: ../../dev-itpro/extensibility/add-index.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kapcsolatok hozzáadása a táblákhoz
+              href: ../../dev-itpro/extensibility/add-relation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Táblatulajdonságok módosítása
+              href: ../../dev-itpro/extensibility/modify-properties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Metódusok hozzáadása a táblákhoz
+              href: ../../dev-itpro/extensibility/add-method-table.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Üzleti műveletek végrehajtása táblarekordok életciklusán keresztül
+              href: ../../dev-itpro/extensibility/subscribe-table-events.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Adatforrások hozzáadása űrlapokhoz
+              href: ../../dev-itpro/extensibility/add-datasource.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Űrlapok feliratának módosítása
+              href: ../../dev-itpro/extensibility/change-caption-form.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Űrlapvezérlő tulajdonságainak módosítása
+              href: ../../dev-itpro/extensibility/modify-control-properties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Számsorozatok hatáskörének bővítése
+              href: ../../dev-itpro/extensibility/extend-number-sequence-scope.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Új készletdimenziók hozzáadása
+              href: ../../dev-itpro/extensibility/inventory-dimensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az ár és az engedmény bővíthetősége
+              href: ../../dev-itpro/extensibility/pricing-app73.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Táblahozzárendelés-bővítmény
+              href: ../../dev-itpro/extensibility/map-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Interfészként használt tábla-leképezések kiterjesztése
+              href: ../../dev-itpro/extensibility/maps-as-interfaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Verziókövetésre használt táblaleképezések kiterjesztése
+              href: ../../dev-itpro/extensibility/maps-with-versioning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: A kijelölt adattípusok decimális pontosságának kiterjesztése
+              href: ../../dev-itpro/extensibility/decimal-point-precision.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kiterjeszthető megoldások létrehozása
+          items:
+            - name: Kiterjeszthető kód írása
+              href: ../../dev-itpro/extensibility/writing-extensible-code.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Osztályok
+              href: ../../dev-itpro/extensibility/extensible-classes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Módszerek
+              href: ../../dev-itpro/extensibility/extensible-methods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Képernyők
+              href: ../../dev-itpro/extensibility/extensible-forms.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kiterjesztett adattípusok
+              href: ../../dev-itpro/extensibility/extensible-edts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kiterjeszthető enumerálások
+              href: ../../dev-itpro/extensibility/extensible-enums.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Delegáltak
+              href: ../../dev-itpro/extensibility/extensible-code-delegates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Táblák
+              href: ../../dev-itpro/extensibility/extensible-tables.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Módszerek kiterjeszthetőségi attribútumai
+              href: ../../dev-itpro/extensibility/extensibility-attributes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kompatibilitástörő változások
+              href: ../../dev-itpro/extensibility/breaking-changes.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Teljesítmény
+      items:
+        - name: Nyomon követés a Trace parser használatával
+          href: ../../dev-itpro/perf-test/trace-trace-tutorial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyfelhasználós tesztelés a Feladatrögzítő és a Teljesítmény SDK segítségével
+          href: ../../dev-itpro/perf-test/single-user-test-perf-sdk.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Többfelhasználós tesztelés a Teljesítmény SDK és a helyi tesztvezérlő segítségével
+          href: ../../dev-itpro/perf-test/multi-user-testing-local-test-controller.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Többfelhasználós tesztelés a Teljesítmény SDK és az Azure DevOps segítségével
+          href: ../../dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyfelhasználós vagy többfelhasználós tesztekkel kapcsolatos hibaelhárítási útmutató a Performance SDK segítségével
+          href: ../../dev-itpro/perf-test/troubleshoot-perf-sdk-user-testing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Teljesítmény SDK és többfelhasználós tesztelés helyszíni környezetben
+          href: ../../dev-itpro/perf-test/perfsdk-tutorial-lbd.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Hibák diagnosztizálása és teljesítményelemzés a Trace parser használatával
+          href: ../../dev-itpro/perf-test/trace-parser.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Teljesítményidőzítő
+          href: ../../dev-itpro/perf-test/performance-timer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Tesztelés támogatása a Visual Studio szolgáltatásban
+      items:
+        - name: Tesztelés és ellenőrzések
+          href: ../../dev-itpro/perf-test/testing-validation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Tesztprojektek a Visual Studio szolgáltatásban
+          href: ../../dev-itpro/perf-test/testing-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A folyamatos build- és tesztautomatizálást támogató környezetek telepítése
+          href: ../../dev-itpro/perf-test/continuous-build-test-automation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: SysTest-szűrés osztály- és metódusattribútumok használatával
+          href: ../../dev-itpro/perf-test/systest-filtering.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Elfogadásiteszt-könyvtárak
+          items:
+            - name: Elfogadásiteszt-könyvtár erőforrásai
+              href: ../../dev-itpro/perf-test/acceptance-test-library.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Navigációs fogalmak
+              href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Tesztadatmódszerek
+              href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az elfogadásiteszt-könyvtárban lévő entitások
+              href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Elfogadásiteszt-könyvtár parancsai
+              href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az elfogadásiteszt-könyvtárban lévő létrehozók
+              href: ../../dev-itpro/perf-test/concepts-creators.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az elfogadásiteszt-könyvtárban lévő lekérdezések
+              href: ../../dev-itpro/perf-test/concepts-queries.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Meghatározási osztályok
+              href: ../../dev-itpro/perf-test/concepts-specifications.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Elfogadásiteszt-könyvtár kódgenerálási varázslója
+              href: ../../dev-itpro/perf-test/code-generation-wizard.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Az elfogadásiteszt-könyvtár bevált gyakorlatai
+              href: ../../dev-itpro/perf-test/atl-best-practices.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Gyakori kérdések
+              href: ../../dev-itpro/perf-test/atl-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Dátum érvényessége
+      href: ../../dev-itpro/dev-tools/date-effectivity.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Független szoftverszállítók licencelése
+      href: ../../dev-itpro/dev-tools/isv-licensing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Független szoftverszállítók helyszíni licencelése
+      href: ../../dev-itpro/dev-tools/isv-licensing-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Általános adatvédelmi rendelet (GDPR)
+  items:
+    - name: Általános adatvédelmi rendelet áttekintése
+      href: ../../dev-itpro/gdpr/gdpr-guide.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: GDPR-adatkérések megválaszolása
+      items:
+        - name: GDPR-adatkérések megválaszolása – erőforrások
+          href: ../../dev-itpro/gdpr/gdpr-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Eszközosztályozások
+          href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Személykeresési jelentés
+          href: ../../dev-itpro/gdpr/gdpr-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Személykeresési jelentés kiterjesztése
+          href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bizalmas adatokhoz való hozzáférés kezelése
+          href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Személyes adatokra vonatkozó kérések megválaszolása a Talent használatával
+          href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Személyes adatokra vonatkozó kérések megválaszolása az AX 2012 rendszerben
+          href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: LCS GDPR-adatkérelmei
+          href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Lifecycle Services
+  items:
+    - name: Erőforrások a Lifecycle Services szolgáltatáshoz
+      items:
+        - name: Lifecycle Services-erőforrások
+          href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: LCS ügyfelek számára
+          href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: LCS a partnerek számára
+          href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Újdonságok
+          href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ismert problémák
+          href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Lifecycle Services használati útmutató
+      href: ../../dev-itpro/lifecycle-services/lcs-user-guide.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Előfizetésbecslő
+      href: ../../dev-itpro/lifecycle-services/subscription-estimator.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: A biztonsági beállítások megadása
+      href: ../../dev-itpro/lifecycle-services/configure-lcs-security.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Megoldáskereső
+      href: ../../dev-itpro/lifecycle-services/issue-search-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Konfigurációkezelő
+      items:
+        - name: Konfigurációkezelő áttekintése
+          href: ../../dev-itpro/lifecycle-services/configuration-manager-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Konfigurációkezelő beállítása
+          href: ../../dev-itpro/lifecycle-services/set-up-configuration-manager-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Kódfrissítési szolgáltatás konfigurálása
+      href: ../../dev-itpro/lifecycle-services/configure-execute-code-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Módszertanok létrehozása és frissítése
+      href: ../../dev-itpro/lifecycle-services/create-methodology.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzletifolyamat-modellező
+      href: ../../dev-itpro/lifecycle-services/bpm-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben
+      href: ../../dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: 'Üzletifolyamat-modellező könyvtárak létrehozása, szerkesztése és böngészése'
+      href: ../../dev-itpro/lifecycle-services/creating-editing-browsing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Feladatok végrehajtása az üzletifolyamat-modellezőben
+      href: ../../dev-itpro/lifecycle-services/complete-tasks-bpm.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Tevékenységi diagramok felhasználása a BPM-könyvtárakban
+      href: ../../dev-itpro/lifecycle-services/using-activity-diagrams.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: BPM-könyvtárak és az Azure DevOps szinkronizálása
+      href: ../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Felhasználói elfogadási tesztkönyvtárak létrehozása a feladat-útmutatók és a BPM segítségével
+      href: ../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Az üzletifolyamat-modellező folyamatábrái
+      href: ../../dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Egyéni üzleti folyamatok feltöltése az üzletifolyamat-modellezőbe
+      href: ../../dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Megfigyelés és diagnosztika
+      href: ../../dev-itpro/lifecycle-services/monitoring-diagnostics.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Környezeti szolgáltatások újraindítása
+      href: ../../dev-itpro/lifecycle-services/restart-environment-services.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Termelési kimaradás jelentése
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Felhasználói bejelentkezések nyomon követése
+      href: ../../dev-itpro/lifecycle-services/user-logins.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Eszköztár
+      href: ../../dev-itpro/lifecycle-services/asset-library.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Teljesítményhibák elhárítása az LCS eszközeivel
+      href: ../../dev-itpro/lifecycle-services/performancetroubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Lekérdezési útmutató
+      href: ../../dev-itpro/lifecycle-services/querycookbook.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Microsoft Dynamics 365 Translation Service
+      items:
+        - name: Dynamics 365 Translation Service áttekintése
+          href: ../../dev-itpro/lifecycle-services/translation-service-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Felhasználói felülethez tartozó fájlok fordítása
+          href: ../../dev-itpro/lifecycle-services/use-translation-service.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dokumentációs fájlok fordítása
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-ua.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fordításimemória-fájlok
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-tm.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Mobil platform
+  items:
+    - name: Mobil platform erőforrásai
+      href: ../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Első lépések
+      items:
+        - name: Első lépések a mobil platformon
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-getting-started.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Felépítési és tervezési szempontok
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-architecture.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Üzleti logika események
+          href: ../../dev-itpro/mobile-apps/platform/business-logic-events-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Oldaltervezési irányelvek
+          href: ../../dev-itpro/mobile-apps/platform/page-design-guidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Művelettervezési irányelvek
+          href: ../../dev-itpro/mobile-apps/platform/action-design-guidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Képernyőtervezési követelmények
+          href: ../../dev-itpro/mobile-apps/platform/form-design-requirements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Általános feladatok
+      items:
+        - name: Munkaterületek beállítása a SysAppWorkspace osztály használatával
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A mobilalkalmazás oldalain megjelenő mezők kattinthatóvá tétele
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Számlálók megjelenítése a mezőkben
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/display-count-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mobil munkaterületek biztonságossá tétele
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mobil munkaterületek honosítása
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mezők kötelezővé tétele munkaterület-osztályok használatával
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Kiszolgálóoldali fejlesztési hivatkozás
+      items:
+        - name: Kiszolgálóoldali fejlesztés (X++ munkaterület API-k)
+          href: ../../dev-itpro/mobile-apps/platform/mobile-workspace-server-apis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Ügyféloldali fejlesztési hivatkozás
+      items:
+        - name: Ügyféloldali tervezési API-k
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ügyfél API-k
+          items:
+            - name: Ügyfél API-k kezdőlapja
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/client-apis-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageState-felsorolás
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Alkalmazásmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Halasztási modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/defer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Esemény modulja
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Vezérlési modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Tárolómodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Mezőmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Fájlfeltöltési modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Csoportmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Hiperhivatkozás-modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Képmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Beviteli modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Listamodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Keresési modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Többszörös keresési modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Oldalmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Pagelink-modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Részmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Szolgáltatások modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Értékmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Alkalmazástípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ApplicationMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: AsyncService típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: CacheService típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: CompleteEventArgs típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ContainerControl típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ContainerControlDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ContainerControlMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ControlMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: DataService típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Halasztott típus<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Design típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: EventHook típus<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Mezőtípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: FieldDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: FieldMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: FileUploader típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: FileUploaderDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: FileUploaderMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: GenericValue típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: getDataSource típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Csoporttípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: GroupDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: GroupMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: HyperLink típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: HyperLinkDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: HyperLinkMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Kép típusa
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ImageDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ImageMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: InputControl típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: InputControlDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: InputControlMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Listatípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ListDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ListMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Keresés típusa
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: LookupDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: LookupMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: MetadataService típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: MultiLookup típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: MultiLookupDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: MultiLookupMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: NavigationArgs típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: NumberSequenceConfig típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Laptípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageData típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageLink típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageLinkDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageLinkMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageOptions típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageSubmitArgs típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PageTarget típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Résztípus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PartDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: PartMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Sor típusa
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Érték típusa
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ValueDesign típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: ValueMetadata típus
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool áttekintése
+      href: ../../dev-itpro/perf-test/rsat/rsat-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Telepítés és konfiguráció
+      href: ../../dev-itpro/perf-test/rsat/rsat-install-configure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Az adatok agnosztikus tesztelése a Regression Suite Automation Tool használatával
+      href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Tesztesetek futtatása
+      href: ../../dev-itpro/perf-test/rsat/rsat-run.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Várható értékek ellenőrzése
+      href: ../../dev-itpro/perf-test/rsat/rsat-validate-expected.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Láncszerű tesztesetek
+      href: ../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Származtatott tesztesetek
+      href: ../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: A Regression Suite Automation Tool-oktatóanyag használata
+      href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Gyakorlati tanácsok
+      href: ../../dev-itpro/perf-test/rsat/rsat-best-practices.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Hibaelhárítás
+      href: ../../dev-itpro/perf-test/rsat/rsat-troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Megoldások kiadása a Lifecycle Services használatával
+  items:
+    - name: Fejlesztés és kiadás
+      href: ../../dev-itpro/lcs-solutions/lcs-solutions-app-source.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Állapot és közzététel
+      href: ../../dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Módszertanok hozzáadása
+      href: ../../dev-itpro/lcs-solutions/methodologies-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzletifolyamat-modellező könyvtárak beállítása
+      href: ../../dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Kód áthelyezése
+      href: ../../dev-itpro/lcs-solutions/code-migration-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Pályázatok ellenőrzése
+      href: ../../dev-itpro/lcs-solutions/app-validation-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatcsomagok feldolgozása és felhasználása
+      href: ../../dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Biztonsági mentés készítése megoldási adatbázisokról
+      href: ../../dev-itpro/lcs-solutions/database-backup-lcs-solutions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Honosítási és szabályozási funkciók
+      items:
+        - name: Globalizációs erőforrások
+          href: ../../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Honosítási funkciók osztályozása
+          href: ../../dev-itpro/lcs-solutions/classify-localization-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ország/régióspecifikus tartalom alkalmazása
+          href: ../../dev-itpro/lcs-solutions/apply-country-context.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Jogszabályban előírt tanúsítványinformációk a funkciók nevében
+          href: ../../dev-itpro/lcs-solutions/regulatory-certifications.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Jogszabály-követési frissítések
+          href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Honosítási modellek elválasztása
+          href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szabályozó figyelmeztetések elküldése
+          href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Támogatás
+  items:
+    - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
+      href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: A Dynamics 365 támogatásának áttekintése
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: Támogatás kérése a 21Vianet által Kínában működtetett Finance and Operations rendszerrel kapcsolatban
+      href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Premier támogatási jegy naplózása
+      href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Igénylések benyújtása a Dynamics Service mérnöki csapatához
+      href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Műszaki támogatás beállítása a Finance and Operations szolgáltatáshoz
+      href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Tervezett karbantartási időtartamra vonatkozó GYIK
+      href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Felhőműveletek és szervizelés
+      href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: A Finance and Operations támogatási tapasztalatainak kezelése
+      href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Rendszerfelügyelet
+  items:
+    - name: Rendszerfelügyelet kezdőlap
+      href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Linkek hozzáadása a szervezetek jogi szerződési feltételeihez és adatvédelmi irányelvéhez
+      href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Licenckódok és konfigurációskulcs-jelentések
+      href: ../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Vállalatközi adatmegosztás
+      href: ../../dev-itpro/sysadmin/cross-company-data-sharing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Karbantartási mód
+      href: ../../dev-itpro/sysadmin/maintenance-mode.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Előre konfigurált rendszerfiókok
+      href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: B2B-felhasználók exportálása Azure AD szolgáltatásba
+      href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Biztonság
+      items:
+        - name: Szerepköralapú biztonság
+          href: ../../dev-itpro/sysadmin/role-based-security.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Biztonsági architektúra
+          href: ../../dev-itpro/sysadmin/security-architecture.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Munkamenet üresjárati időkorlátjának beállítása
+          href: ../../dev-itpro/sysadmin/session-idle-timeout.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kulcsrakész biztonsági jelentések
+          href: ../../dev-itpro/sysadmin/security-reports.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Új felhasználók létrehozása
+          href: ../../dev-itpro/sysadmin/tasks/create-new-users.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Felhasználók tömeges importálása
+          href: ../../dev-itpro/sysadmin/tasks/import-bulk-users.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feladatkörök szétválasztásának beállítása
+          href: ../../dev-itpro/sysadmin/tasks/set-up-segregation-duties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
+          href: ../../dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
+          href: ../../dev-itpro/sysadmin/tasks/assign-users-security-roles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Kötegelt feldolgozás
+      items:
+        - name: Kötegelt feldolgozás áttekintése
+          href: ../../dev-itpro/sysadmin/batch-processing-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegelt feldolgozás és kötegkiszolgálók
+          href: ../../dev-itpro/sysadmin/batch-server-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegelt feladatok létrehozása
+          href: ../../dev-itpro/sysadmin/tasks/create-batch-job.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegelt feladat másolása
+          href: ../../dev-itpro/sysadmin/copy-batch-job.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Aktív kötegidőszakok
+          href: ../../dev-itpro/sysadmin/activeperiod.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegkezelő biztonsági szerepköre
+          href: ../../dev-itpro/sysadmin/runby.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
+          href: ../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegelt figyelmeztetések konfigurálása
+          href: ../../dev-itpro/sysadmin/alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Továbbfejlesztett kötegelt képernyők
+          href: ../../dev-itpro/sysadmin/enhanced-forms.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kötegeltfeladat-előzmények törlése
+          href: ../../dev-itpro/sysadmin/batch-history-cleanup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Végrehajtási kötegelt feladat megszakítása
+          href: ../../dev-itpro/sysadmin/batch-abort.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Optimalizálási tanácsadó
+      items:
+        - name: Optimalizálási tanácsadó – áttekintés
+          href: ../../dev-itpro/sysadmin/optimization-advisor-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Optimalizálási tanácsadó szabályainak létrehozása
+          href: ../../dev-itpro/sysadmin/create-rules-optimization-advisor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Termelési kimaradás jelentése
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Frissítések és gyorsjavítások
+  items:
+    - name: Frissítések és gyorsjavítások erőforrásai
+      href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Frissítés AX 2012-ről
+      items:
+        - name: Frissítés AX 2012-ről a Finance and Operations alkalmazásra
+          href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
+          href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – A Kódfrissítési szolgáltatás használata a szükséges ráfordítás megbecsüléséhez
+          href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Bemutatókörnyezet telepítése elemzéshez
+          href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Adatfrissítés fejlesztői környezetben
+          href: ../../dev-itpro/migration-upgrade/data-upgrade-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Frissítés előtti ellenőrzőlista az adatfrissítéshez
+          href: ../../dev-itpro/migration-upgrade/prepare-data-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetben
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Átállásteszt
+          href: ../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Frissítés utáni feladatok
+          href: ../../dev-itpro/migration-upgrade/app-validation-process.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Sikeres funkcionális tesztek
+          href: ../../dev-itpro/migration-upgrade/upgrade-functional-validation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Felkészülés az éles indításra
+          href: ../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 frissítés – Éles indulás
+          href: ../../dev-itpro/migration-upgrade/2012-upgrade-cutover.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Módosítások, amelyek hatással vannak az AX 2012-ről való frissítésre'
+          items:
+            - name: A számlatükör-elválasztó egyedivé tétele
+              href: ../../dev-itpro/migration-upgrade/chart-accounts-delimiter-unique.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Egyetlen bizonylatos naplók és pénznemértékelések frissítése
+              href: ../../dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Projekterőforrás-ütemezés adatmodellje
+              href: ../../dev-itpro/migration-upgrade/data-model-changes-resource-management.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Munkafolyamat alrendszer módosításai
+              href: ../../dev-itpro/migration-upgrade/workflow-subsystem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Összesített modellek használata a kockák helyett az elemzésekhez
+              href: ../../dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Frissített értékesítési kockák átvitele az entitástárba
+              href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Költségvetés-tervezés frissítése
+              href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Adatok áttelepítése AX 2009-ből
+      items:
+        - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
+          href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítése – Az adatáttelepítési eszköz telepítése
+          href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítés – Leképezések létrehozása
+          href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítés – Sablonok létrehozása
+          href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítés – Áttelepítési csoportok létrehozása
+          href: ../../dev-itpro/migration-upgrade/create-definition.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítés – Csomagok exportálása
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-export-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2009 áttelepítés – Csomagok importálása
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-import-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Kód áttelepítése és frissítése
+      items:
+        - name: Kód áttelepítése és frissítése kezdőlap
+          href: ../../dev-itpro/migration-upgrade/code-migration-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kód áttelepítésének előkészítése
+          href: ../../dev-itpro/migration-upgrade/prepare-migration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Azure DevOps-megfeleltetés konfigurálása
+          href: ../../dev-itpro/migration-upgrade/configure-vso-solution.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Osztott modellek
+          href: ../../dev-itpro/dev-tools/model-split.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Delegáltak használata a modellek közötti függőségek megoldásához
+          href: ../../dev-itpro/migration-upgrade/delegates-migration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Frissítés egy legutóbbi frissítésre (felhő)
+      items:
+        - name: A legújabb kiadásra való áttelepítés folyamata
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyverziós elérési utak
+          items:
+            - name: Önkiszolgáló frissítés a legújabb verzióra
+              href: ../../dev-itpro/migration-upgrade/self-service-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            - name: Újraépítés és frissítés a legújabb verzióra
+              href: ../../dev-itpro/migration-upgrade/appupdate-80-81.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások
+          href: ../../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A legújabb platformfrissítés alkalmazása a környezetekre
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatok frissítése a fejlesztői vagy a bemutató környezetben
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-to-latest-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fejlesztői eszközök frissítése
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kódok fordításának tervezése és felkészülés a legújabb frissítésnek megfelelően
+          href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Frissítés egy legutóbbi frissítésre (helyszíni)
+      items:
+        - name: Frissítések alkalmazása helyszíni telepítésekhez
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Helyszíni telepítés újratelepítése
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Helyszíni 7.x verzió 8.1 verzióra való, helyben történő frissítése'
+          href: ../../dev-itpro/migration-upgrade/on-prem-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Gyorsjavítások
+      items:
+        - name: Frissítések beszerzése Lifecycle Services szolgáltatásból
+          href: ../../dev-itpro/migration-upgrade/download-hotfix-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Frissítések alkalmazása felhőalapú környezetekre
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Metaadatok gyorsjavításának telepítése a fejlesztői környezetekben
+          href: ../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Reporting Services javítása különálló környezetekben
+          href: ../../dev-itpro/migration-upgrade/patch-reporting-service-environment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Visual Studio fejlesztői eszközeinek frissítése
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Értékcsökkenések
+      items:
+        - name: Eltávolított vagy elavult funkciók
+          href: ../../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Módszerek és metaadatelemek elavulása
+          href: ../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Elavult API-k
+          href: ../../dev-itpro/migration-upgrade/deprecated-apis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+- name: Felhasználói felület fejlesztése
+  items:
+    - name: Felhasználói felület fejlesztése kezdőlap
+      href: ../../dev-itpro/user-interface/user-interface-development-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Oktatóanyagok
+      items:
+        - name: Kölcsönzés költségtípusa űrlap létrehozása
+          href: ../../dev-itpro/user-interface/build-rental-charge-type-form.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vevő űrlap létrehozása
+          href: ../../dev-itpro/user-interface/build-customer-form.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Navigáció létrehozása
+          href: ../../dev-itpro/user-interface/build-navigation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Munkaterületek létrehozása
+          href: ../../dev-itpro/user-interface/build-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Képernyők
+      items:
+        - name: Navigációs fogalmak
+          href: ../../dev-itpro/user-interface/page-navigation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Oldalelrendezés a webes ügyfélnél
+          href: ../../dev-itpro/user-interface/page-layout.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dynamics szimbólum betűtípusa
+          href: ../../dev-itpro/user-interface/symbol-font.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mentett nézetek
+          href: ../../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása
+          href: ../../dev-itpro/user-interface/understanding-saved-views.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyedi mintákat használó tesztűrlapok
+          href: ../../dev-itpro/user-interface/testing-forms-custom-patterns.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Megosztható, titkosított URL-címek (mélylinkek) létrehozása'
+          href: ../../dev-itpro/user-interface/create-deep-links.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Űrlapok, termékek és vezérlők hozzáférhetősége'
+          href: ../../dev-itpro/user-interface/enable-accessibility.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mezőleírások testreszabása
+          href: ../../dev-itpro/user-interface/customize-field-help.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Vezérlőelemek
+      items:
+        - name: Műveleti vezérlők
+          href: ../../dev-itpro/user-interface/action-controls.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Beviteli vezérlők és rácsoszlopméretek
+          href: ../../dev-itpro/user-interface/sizing-input-controls-grid-columns.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Jelölőnégyzet-támogatás a favezérlőkben
+          href: ../../dev-itpro/user-interface/check-box-tree-controls.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szűrési beállítások
+          href: ../../dev-itpro/user-interface/filtering.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: PowerApps hosztkontroll
+          href: ../../dev-itpro/user-interface/powerapps-host-control.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Ablakkezelés
+      items:
+        - name: Helyimenü-kód áthelyezése
+          href: ../../dev-itpro/migration-upgrade/code-migration-context-menus.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dupla kattintási logika áthelyezése az egérrel
+          href: ../../dev-itpro/migration-upgrade/code-migration-double-click.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Környezeti adatbevitel a keresésekhez
+          href: ../../dev-itpro/user-interface/contextual-data-entry-lookups.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: HierarchyViewer-vezérlő
+          href: ../../dev-itpro/user-interface/hierarchy-viewer-control.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Keresési vezérlők
+          href: ../../dev-itpro/user-interface/lookups-controls.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Fájlfeltöltési vezérlő
+          href: ../../dev-itpro/user-interface/file-upload-control.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Rendszer által definiált gombok
+          href: ../../dev-itpro/user-interface/system-defined-buttons.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Képek egy oldalon vagy egy rácsban
+          href: ../../dev-itpro/user-interface/images-form-grid.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Betűtípus és háttérszínek a bevitelhez, a táblázathoz és a rácsvezérlőkhöz'
+          href: ../../dev-itpro/user-interface/specify-color-font-background-controls.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Jobbról balra író nyelvek támogatása és kétirányú szöveg
+          href: ../../dev-itpro/user-interface/bidirectional-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Ikonok létrehozása a munkaterület csempéihez
+          href: ../../dev-itpro/user-interface/create-icons-workspace-tiles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Nyilvános JavaScript API-k kiterjeszthető vezérlőkhöz
+          href: ../../dev-itpro/user-interface/public-javascript-apis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vezérlő-ellenőrzőlista
+          href: ../../dev-itpro/user-interface/control-checklist.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Üzenetek
+      items:
+        - name: Funkcióbuborékok
+          href: ../../dev-itpro/user-interface/feature-callouts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Csúszka és üzenetpanelek
+          href: ../../dev-itpro/user-interface/slider-messagebox.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'API az üzenetközponthoz, az üzenetsávhoz és az üzenetadatokhoz'
+          href: ../../dev-itpro/user-interface/messaging-api-center-bar-details.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: 'Üzenetközpontról, üzenetsáv és az üzenetadatok – GYIK'
+          href: ../../dev-itpro/user-interface/messaging-user.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Űrlapmintákra vonatkozó irányelvek
+      items:
+        - name: Űrlapminták áttelepített űrlapokhoz
+          href: ../../dev-itpro/user-interface/select-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Űrlapstílusok és -minták
+          href: ../../dev-itpro/user-interface/form-styles-patterns.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Visual Studio űrlapmintákat támogató bővítményei
+          href: ../../dev-itpro/user-interface/form-pattern-add-ins.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Űrlapminták
+      items:
+        - name: Űrlapokkal kapcsolatos általános irányelvek
+          href: ../../dev-itpro/user-interface/general-form-guidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Részletek alapűrlap mintája
+          href: ../../dev-itpro/user-interface/details-master-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Részletek tranzakciója űrlap mintája
+          href: ../../dev-itpro/user-interface/details-transaction-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Űrlaprészszakasz-lista űrlap mintája
+          href: ../../dev-itpro/user-interface/section-list-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Listaoldal űrlap mintája
+          href: ../../dev-itpro/user-interface/list-page-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyszerű adatok űrlap mintája
+          href: ../../dev-itpro/user-interface/simple-details-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyszerű lista és adatok űrlap mintája
+          href: ../../dev-itpro/user-interface/simple-list-details-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Egyszerű lista űrlap mintája
+          href: ../../dev-itpro/user-interface/simple-list-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Tartalomjegyzék űrlap mintája
+          href: ../../dev-itpro/user-interface/table-of-contents-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feladat dupla űrlapmintája
+          href: ../../dev-itpro/user-interface/task-double-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feladat egyszerű űrlapmintája
+          href: ../../dev-itpro/user-interface/task-single-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Varázsló-űrlapminta
+          href: ../../dev-itpro/user-interface/wizard-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Munkaterület űrlap mintája
+          href: ../../dev-itpro/user-interface/workspace-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Másodlagos űrlap mintái
+      items:
+        - name: Összetett választási űrlap mintája
+          href: ../../dev-itpro/user-interface/advanced-selection-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Párbeszéd űrlap mintája
+          href: ../../dev-itpro/user-interface/dialog-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Legördülő párbeszédpanel űrlap mintája
+          href: ../../dev-itpro/user-interface/drop-dialog-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Keresési űrlap mintája
+          href: ../../dev-itpro/user-interface/lookup-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Adatterület űrlapjának mintái
+          href: ../../dev-itpro/user-interface/factbox-form-patterns.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Alminták
+      items:
+        - name: Egyéni szűrőcsoport-alminta
+          href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dimenzióbelépés-vezérlő alminta
+          href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dimenziókifejezés-szerkesztési alminta
+          href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Mezők és mezőcsoportok almintája
+          href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szűrők és az Eszköztár almintái
+          href: ../../dev-itpro/user-interface/filters-toolbar-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szöveges alminta kitöltése
+          href: ../../dev-itpro/user-interface/fill-text-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Függőleges mezők és gombcsoport almintája
+          href: ../../dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kép előnézetének almintája
+          href: ../../dev-itpro/user-interface/image-preview-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Listapanel almintája
+          href: ../../dev-itpro/user-interface/list-panel-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Beágyazott Egyszerű lista és Részletek alminta
+          href: ../../dev-itpro/user-interface/nested-simple-list-details-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Diagram szakasz űrlapminta
+          href: ../../dev-itpro/user-interface/section-chart-form-pattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Power BI szakasz alminta
+          href: ../../dev-itpro/user-interface/section-powerbi-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Kapcsolódó linkek szakasz alminta
+          href: ../../dev-itpro/user-interface/section-related-links-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Halmozott diagram szakasz alminta
+          href: ../../dev-itpro/user-interface/section-stacked-chart-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szakaszlap listájának almintája
+          href: ../../dev-itpro/user-interface/section-tabbed-list-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Szakaszcsempék almintája
+          href: ../../dev-itpro/user-interface/section-tiles-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Táblázatos mezők almintája
+          href: ../../dev-itpro/user-interface/tabular-fields-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Eszköztár és mezők almintái
+          href: ../../dev-itpro/user-interface/toolbar-fields-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Eszköztár és lista almintái
+          href: ../../dev-itpro/user-interface/toolbar-list-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Munkaterület oldalának szűrőcsoport-almintája
+          href: ../../dev-itpro/user-interface/workspace-filter-group-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Vezérlőbővíthetőség
+      items:
+        - name: Bővíthető vezérlők létrehozása
+          href: ../../dev-itpro/user-interface/build-extensible-control.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Billentyűparancsok a bővíthető vezérlőkhöz
+          href: ../../dev-itpro/user-interface/keyboard-shortcuts-controls.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bővíthető vezérlő programozási referenciája
+          href: ../../dev-itpro/user-interface/extensible-control-programming-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vezérlőbővíthetőség
+          href: ../../dev-itpro/user-interface/control-extensibility.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Honosítható címkék létrehozása
+          href: ../../dev-itpro/user-interface/create-localizable-labels-client.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Bővíthető vezérlő elrendezésének irányelvei
+          href: ../../dev-itpro/user-interface/extensible-controls-layout.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: A Feladatrögzítő által ellenőrzéshez generált szöveg kezelése
+          href: ../../dev-itpro/user-interface/task-recorder-control-text.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Munkaterületek létrehozása
+      items:
+        - name: Üzemeltetési munkaterület létrehozása
+          href: ../../dev-itpro/user-interface/build-workspaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Csempe- és lista-gyorsítótárazás a munkaterületekhez
+          href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Feladatrögzítő
+      items:
+        - name: Feladatrögzítő erőforrásai
+          href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feladatrögzítő gyors áttekintése
+          href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Dokumentáció vagy képzés létrehozása feladatrögzítések segítségével
+          href: ../../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
