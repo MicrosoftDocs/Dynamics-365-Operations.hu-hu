@@ -1,6 +1,6 @@
 ---
 title: Értékesítési trendek és mintázatok elemzése
-description: A Microsoft Dynamics 365 for Retail-rendszerben valós időben tanulmányozhatja az értékesítési trendeket és mintákat.
+description: A Dynamics 365 Retail-rendszerben valós időben tanulmányozhatja az értékesítési trendeket és mintákat.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c54e707d312d7ac3bbcad71a914e528859038a13
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557900"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025817"
 ---
 # <a name="analyze-sales-trends-and-patterns"></a>Értékesítési trendek és mintázatok elemzése
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail-rendszerben valós időben tanulmányozhatja az értékesítési trendeket és mintákat.
+A Dynamics 365 Retail-rendszerben valós időben tanulmányozhatja az értékesítési trendeket és mintákat.
 
-A Dynamics 365 for Retail részeként a felhasználók valós időben tanulmányozhatják az értékesítési trendeket és mintázatokat szervezeti hierarchia különböző szintjein éveken keresztül a kulcsrakész **Csatorna értékesítése év szerint** jelentés segítségével. Ezt a jelentést az alábbi helyek bármelyikéről megnyithatja:
+A Retail részeként a felhasználók valós időben tanulmányozhatják az értékesítési trendeket és mintázatokat szervezeti hierarchia különböző szintjein éveken keresztül a kulcsrakész **Csatorna értékesítése** év szerint jelentés segítségével. Ezt a jelentést az alábbi helyek bármelyikéről megnyithatja:
 
 - **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**
 - **Kiskereskedelmi üzlet pénzügyei** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna értékesítése év szerint jelentés**

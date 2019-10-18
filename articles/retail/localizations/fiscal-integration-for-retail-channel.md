@@ -1,6 +1,6 @@
 ---
 title: A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
-description: Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségekről ad áttekintést.
+description: Ez a témakör a Dynamics 365 Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségekről ad áttekintést.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516238"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025407"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516238"
 
 ## <a name="introduction"></a>Bevezetés
 
-Ez a témakör a Microsoft Dynamics 365 for Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik a kiskereskedelmi értékesítések pénzügyi regisztrációját a helyi pénzügyi törvényekkel összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók:
+Ez a témakör a Dynamics 365 Retail szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik a kiskereskedelmi értékesítések pénzügyi regisztrációját a helyi pénzügyi törvényekkel összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók:
 
 - Kiskereskedelmi értékesítés regisztrálása olyan pénzügyi eszközön, amely a kiskereskedelmi pénztárhoz (POS) csatlakozik, például pénzügyi nyomtató, majd a pénzügyi nyugta nyomtatása a vevő számára.
 - A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
 - Segít az értékesítési tranzakcióadatok megmásíthatatlanságát digitális aláírások segítségével.
 
-A Retail szolgáltatás pénzügyi integrációs funkciója egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a kiskereskedelmi összetevők számos kiterjesztését is tartalmazza, és szerepel a Retail szoftverfejlesztő készletben (SDK). A Retail szoftverfejlesztői készletben (SDK) rendelkezésre álló pénzügyi integráció mintákkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs minták a Retail szoftverfejlesztői készletben (SDK)](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail SDK áttekintése](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a kiskereskedelmi összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail SDK áttekintése](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integrációs minta, a Retail POS egyéb pénzügyi eszközökkel vagy szolgáltatásokkal való integrálásához, vagy a más országokban vagy régiókban levő követelmények lefedéséhez vagy ki kell terjesztenie a létező pénzügyi integrációs mintát, vagy új mintát kell létrehoznia egy meglévő minta példaként való használatával.
 
@@ -44,7 +44,7 @@ Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integr�
 
 A pénzügyi regisztrációs folyamat a Retail POS felületén egy vagy több lépésből állhat. Minden egyes lépés magában foglalja az adott kiskereskedelmi tranzakciók vagy események pénzügyi regisztrációját egy pénzügyi eszközben vagy szolgáltatásban. A következő megoldás-összetevők részt vesznek a pénzügyi regisztrációban egy hardverállomáshoz kapcsolódó pénzügyi eszközben:
 
-- **A Commerce runtime (CRT) kiterjesztése** – Ez az összetevő a kiskereskedelmi tranzakció/esemény adatokat olyan formátumba alakítja, amelyet a pénzügyi eszközzel való együttműködéshez használnak, elemzi a pénzügyi eszköz válaszait, és tárolja a válaszokat a csatorna-adatbázisban. A kiterjesztés a regisztrálandó meghatározott tranzakciókat és eseményeket is meghatározza. Ezt az összetevőt gyakran nevezik *Pénzügyi dokumentumszolgáltatónak*.
+- A **Commerce runtime (CRT) kiterjesztése** – Ez az összetevő a kiskereskedelmi tranzakció/esemény adatokat olyan formátumba alakítja, amelyet a pénzügyi eszközzel való együttműködéshez használnak, elemzi a pénzügyi eszköz válaszait, és tárolja a válaszokat a csatorna-adatbázisban. A kiterjesztés a regisztrálandó meghatározott tranzakciókat és eseményeket is meghatározza. Ezt az összetevőt gyakran nevezik *Pénzügyi dokumentumszolgáltatónak*.
 - **Hardverállomás kiterjesztése** – Ez az összetevő a pénzügyi eszközzel kommunikációt indít, kéréseket és közvetlen parancsokat küld a pénzügyi eszköznek a kiskereskedelmi tranzakció/esemény adatai alapján, amelyet a pénzügyi dokumentumból kivont, és válaszokat fogad a pénzügyi eszköztől. Ezt az összetevőt gyakran nevezik *Pénzügyi csatlakozónak*.
 
 Egy pénzügyi eszköz pénzügyi integrációs mintája tartalmazza a CRT- és a hardverállomás-kiterjesztéseket egy pénzügyi dokumentumszolgáltatóra és egy pénzügyi csatlakozóra. A következő összetevő-konfigurációkat is tartalmazza:
@@ -60,7 +60,7 @@ A következő példa bemutatja a tipikus pénzügyi regisztrációs végrehajtá
 2. A CRT határozza meg, hogy szükséges-e az aktuális eseményhez pénzügyi regisztráció.
 3. A pénzügyi regisztrációs folyamat beállításainak megfelelően a CRT azonosít egy pénzügyi csatlakozót, és a hozzá tartozó pénzügyi dokumentumszolgáltatót, amelyet a pénzügyi nyilvántartáshoz használ majd.
 4. A CRT futtatja a pénzügyi dokumentumszolgáltatót, amely egy pénzügyi dokumentumot hoz létre (például egy XML-dokumentumot), amely képviseli a kiskereskedelmi tranzakciót vagy eseményt.
-5. A pénztár elküldi a pénzügyi bizonylatot, amelyet CRT előkészít a hardverállomás számára.
+5. A pénztár elküldi a pénzügyi bizonylatot, amelyet a CRT előkészít a hardverállomás számára.
 6. A hardverállomás lefuttatja a pénzügyi csatlakozót, amely feldolgozza a pénzügyi dokumentumot, és tájékoztatja a pénzügyi eszközt vagy szolgáltatást.
 7. A pénztár elemzi a pénzügyi eszköz vagy szolgáltatás válaszát, és meghatározza, hogy sikeres volt-e a pénzügyi regisztráció.
 8. A CRT elmenti a választ a csatorna-adatbázisba.
@@ -132,7 +132,7 @@ A pénzügyi integráció funkció támogatja az integrált pénzügyi eszköz v
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Pénzügyi integrációs minták a Retail szoftverfejlesztői készletben (SDK)
 
-A Retail alkalmazással kiadott Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhetők el:
+A Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhetők el:
 
 - [Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan](emea-ita-fpi-sample.md)
 - [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)

@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek és Dynamics 365 for Retail
-description: Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Retail rendszer legújabb kiadásainak új szolgáltatásait.
+title: Új vagy módosult elemek és Dynamics 365 Retail
+description: Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 Retail rendszer legújabb kiadásainak új szolgáltatásait.
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
@@ -16,22 +16,22 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 23156e4f19beaf1bfe6ab9a66a326d55e7d85213
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845707"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025491"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail"></a>Új és módosult elemek a Dynamics 365 for Retail szolgáltatásban
+# <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Új és módosult elemek a Dynamics 365 Retail szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Retail rendszer legújabb kiadásainak új szolgáltatásait és funkcióit.
+Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 Retail rendszer legújabb kiadásainak új szolgáltatásait és funkcióit.
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="releases-of-dynamics-365-for-retail"></a>A Dynamics 365 for Retail kiadásai
+## <a name="releases-of-dynamics-365-retail"></a>A Dynamics 365 Retail kiadásai
 
 | Kiadás | Szám felépítése | Elérhetőség | További információ |
 |---------|--------------|--------------|------------|

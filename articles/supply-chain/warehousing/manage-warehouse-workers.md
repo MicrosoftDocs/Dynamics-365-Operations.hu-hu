@@ -1,6 +1,6 @@
 ---
 title: Raktári dolgozók kezelése
-description: Ez a cikk leírja, hogyan használható a Dynamics 365 for Finance and Operations az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+description: Ez a cikk leírja, hogyan használható a Dynamics 365 Supply Chain Management - Warehousing alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572558"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018621"
 ---
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk leírja, hogyan használható a Microsoft Dynamics 365 for Finance and Operations az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+Ez a cikk leírja, hogyan használható a Dynamics 365 Supply Chain Management - Warehousing alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 
 A funkció használatakor a raktárkezelésben minden, raktári dolgozó által elvégzett művelet *munka*. Az munkákat, mint a kitárolás, áthelyezés és az aktuális készlet leltározása, mobilkészülékek segítségével rögzítik. Mielőtt egy raktári dolgozó munkát végezhetne, társítani kell őt egy dolgozóval a humán erőforrásokban. Minden egyes **Dolgozó** fiókhoz több raktárimunka-felhasználó társítható. Ezek a munkafelhasználók dolgozhatnak különböző raktárakban, és különböző szintű hozzáféréssel rendelkezhetnek a különféle mobilkészülékmenükhöz. A raktárimunka-felhasználókra úgy lehet tekinteni, mint egy adott dolgozó többszörös bejelentkezéseire. Minden egyes munkafelhasználó rendelkezik egy alapértelmezett raktárral, és a menüelemek jelenítik meg a konkrét munkafolyamatokat, amelyek elérhetők az adott munkafelhasználó számára. 
 

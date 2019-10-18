@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526015"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025172"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja a fejléc szintű automatikus díjak csoportosításához, illetve azok arányosításához a kiskereskedelmi értékesítési csatornákhoz funkciókat. Ez a funkció a Microsoft Dynamics 365 for Retail 10.0.1 verzióban a pénztárnál (POS) létrehozott tranzakciók érhető el és olyan értékesítésekhez, amelyek a Microsoft Dynamics 365 for Retail 10.0.2 verziójának hívásközpontjában lettek létrehozva.
+Ez a témakör leírja a fejléc szintű automatikus díjak csoportosításához, illetve azok arányosításához a kiskereskedelmi értékesítési csatornákhoz funkciókat. Ez a funkció a Retail 10.0.1 verzióban a pénztárnál (POS) létrehozott tranzakciók érhető el és olyan értékesítésekhez, amelyek a Retail 10.0.2 verziójának hívásközpontjában lettek létrehozva.
 
 Ez a funkció csak akkor érhető el, ha a [speciális automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) szolgáltatás be van kapcsolva a **Kiskereskedelmi paraméterek** lap beállításával. Ezenkívül a továbbfejlesztett számítási módok az automatikus költségekhez csak a kiskereskedelmi értékesítési rendelésekhez rendelhetők hozzá, amelyeket kiskereskedelmi csatornákon keresztül hoztak létre (a POS egy hívásközpont és a Dynamics elektronikus kereskedelmi platform).
 
 Ez az új funkció nagyobb rugalmasságot nyújt szervezeteknek úgy, hogy a fejlécszintű automatikus díjak kiszámítás megtörténik, és alkalmazva lesznek az értékesítési tranzakciókra.
 
-A Microsoft Dynamics 365 for Retail 10.0.1 verziónál korábbi verzióiban, a fejlécszintű automatikus díjak, amelyekhez egy konkrét szállításimód-kapcsolat tartozik csak akkor lesznek kiszámítva, ha van egyezés a szállítási móddal, amely meg van határozva az értékesítési rendelés fejlécében.
+A Retail 10.0.1 verziónál korábbi verzióiban, a fejlécszintű automatikus díjak, amelyekhez egy konkrét szállításimód-kapcsolat tartozik csak akkor lesznek kiszámítva, ha van egyezés a szállítási móddal, amely meg van határozva az értékesítési rendelés fejlécében.
 
 Például fejlécszintű automatikus díjak vannak meghatározva a **99**-es szállítási módhoz és a **11**-es szállítási módhoz. Egy értékesítési rendelés jön létre, és a **99**-es szállítási mód van megadva a rendelés fejlécében. Azonban egyes értékesítési sorok úgy vannak beállítva, hogy azok a **11**-es szállítási mód használatával lesznek szállítva. Ebben az esetben csak azon fejlécszintű díjak, amelyek a **99**-es szállítási módhoz vannak kapcsolva lesznek figyelembe véve és alkalmazva az értékesítési rendelésre vonatkozóan.
 
-A Dynamics 365 for Retail rendszerben a fejlécszintű díjak egy további funkcióval is rendelkeznek amely lehetővé teszi egy [többszintű költségkonfigurációs](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) meghatározását, amely a rendelés értékén alapul. Például, ha a rendelés értéke $50,00 és $200,00 között van, lehet hogy egy szervezet a $5,00 szállítási költséget szeretne felszámolni. Azonban, ha a rendelés értéke $200,01 és $500,00 között van a szállítási költéség $4,00 lehet.
+A Retail rendszerben a fejlécszintű díjak egy további funkcióval is rendelkeznek amely lehetővé teszi egy [többszintű költségkonfigurációs](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) meghatározását, amely a rendelés értékén alapul. Például, ha a rendelés értéke $50,00 és $200,00 között van, lehet hogy egy szervezet a $5,00 szállítási költséget szeretne felszámolni. Azonban, ha a rendelés értéke $200,01 és $500,00 között van a szállítási költéség $4,00 lehet.
 
 Egyes szervezetek szeretnék kihasználni a többszintű díjkalkuláció előnyeit, amelyek elérhetők a fejlécszintű díjakkal. Azonban több szállítási módot tartalmazó esetekben, arról is gondoskodni szeretnének, hogy a számított költségek az illeszkedő szállítási módon alapulnak, amely meg van határozva az egyes értékesítési sorokon.
 

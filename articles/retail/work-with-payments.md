@@ -1,6 +1,6 @@
 ---
 title: Fizetési módok hívásközpontoknál
-description: Ez a témakör bemutatja a Microsoft Dynamics 365 for Retail rendszer hívásközpontjaiban használható különböző fizetési módokat.
+description: Ez a témakör bemutatja a Dynamics 365 Retail rendszer hívásközpontjaiban használható különböző fizetési módokat.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018228"
 ---
 # <a name="payment-methods-in-call-centers"></a>Fizetési módok hívásközpontoknál
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail alkalmazásban a hívásközponti csatornák konfigurációja tartalmazza a **Rendeléskiegészítés engedélyezése** nevű beállítást. A beállítás segítségével garantálható, hogy minden olyan rendelés, amelyet a csatorna felhasználói hoznak létre, csak akkor lesz kiadva rendelésfeldolgozásra, ha a jóváhagyott tűréshatáron belüli előre kifizetett vagy előzetesen jóváhagyott kifizetése van. Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a hívásközpont felhasználói bevihetnek kifizetéseket a vevőkhöz tartozó értékesítési rendelések ellenében a hívásközpont fizetésfeldolgozási funkciói segítségével. Ha a beállítás ki van kapcsolva, hívásközpont felhasználói nem használhatják a hívásközpont fizetésfeldolgozási funkcióit, de továbbra is alkalmazhatnak előlegeket az értékesítési rendelésekre a szabványos Kinnlevőségek funkció segítségével.
+A Dynamics 365 Retail alkalmazásban a hívásközponti csatornák konfigurációja tartalmazza a **Rendeléskiegészítés engedélyezése** nevű beállítást. A beállítás segítségével garantálható, hogy minden olyan rendelés, amelyet a csatorna felhasználói hoznak létre, csak akkor lesz kiadva rendelésfeldolgozásra, ha a jóváhagyott tűréshatáron belüli előre kifizetett vagy előzetesen jóváhagyott kifizetése van. Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a hívásközpont felhasználói bevihetnek kifizetéseket a vevőkhöz tartozó értékesítési rendelések ellenében a hívásközpont fizetésfeldolgozási funkciói segítségével. Ha a beállítás ki van kapcsolva, hívásközpont felhasználói nem használhatják a hívásközpont fizetésfeldolgozási funkcióit, de továbbra is alkalmazhatnak előlegeket az értékesítési rendelésekre a szabványos Kinnlevőségek funkció segítségével.
 
 A csatorna konfigurálásának részeként a vállalat határozhatja meg, mely fizetési módokat engedélyezi a hívásközponti csatornára. A hívásközponti csatorna a kiskereskedelmi üzlet csatornákra megadottakkal azonos fizetési módokat használ.
 

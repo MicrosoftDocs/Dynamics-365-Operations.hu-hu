@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 4517b9ddeb648b3d789773fc0dcb1ecd3c8be85c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755523"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024798"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics 365 for Finance and Operations programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.
+Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics 365 Retail programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.
 
 1. Válassza ki a **Kiskereskedelmi üzlet pénzügyei** lehetőséget a kezdőlapról.
 2. Válassza az **Új kimutatás** lehetőséget.

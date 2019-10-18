@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471ab164d7bd2e85f5192c082a905f3c30de3d2b
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866089"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026716"
 ---
 # <a name="warehouse-configuration-overview"></a>Raktár konfigurálása – áttekintés
 
@@ -34,7 +34,7 @@ Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendez�
 **Megjegyzés:** Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
-A Microsoft Dynamics 365 for Finance and Operations rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
+A Finance and Operations rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
 
 -   Magas és alacsony prioritású tárolók területeket hozhat létre a termékek optimális elhelyezéséhez.
 -   A különböző raktározási igényeknek megfelelően, mint például hőmérsékleti követelmények vagy a cikkek változó forgalmi arányai, feloszthatja a raktárat különböző zónákra.

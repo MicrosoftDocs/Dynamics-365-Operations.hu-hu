@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916553"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017758"
 ---
 # <a name="base-price-and-trade-agreements"></a> Alapár- és kereskedelmi megállapodások
 
@@ -56,7 +56,7 @@ Ez az eljárás bemutatja csatornaspecifikus eladási árra vonatkozó kereskede
 24. Kattintson a **Kereskedelmi megállapodások létrehozása** lehetőségre.
 25. Kattintson az **Új** elemre.
 26. A **Név** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-27. A listában válassza ki a következőt: „Kiskereskedelem”. A bemutató adatsorban a „Kiskereskedelem” naplónév a következő alapértelmezett objektumkapcsolattal rendelkezik: „Ár (eladási)”. Ez azt jelenti, hogy minden létrehozott új sor alapértelmezés szerint eladási árra vonatkozó kereskedelmi megállapodás lesz.  
+27. A listában válassza ki a következőt: **Retail**. A bemutató adatsorban a **Kiskereskedelem** naplónév a következő alapértelmezett objektumkapcsolattal rendelkezik: **Ár (eladási)**. Ez azt jelenti, hogy minden létrehozott új sor alapértelmezés szerint eladási árra vonatkozó kereskedelmi megállapodás lesz.  
 28. A **Művelet ablaktáblán** kattintson a **Sorok** elemre.
 29. A **Számlakód** mezőben válassza ki a következőt: „Csoport”.
 30. A **Fiókválasztás** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.

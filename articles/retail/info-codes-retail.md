@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572127"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023364"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Információs kódok és információs kódcsoportok
 
@@ -42,7 +42,7 @@ Az infókódok lehetőséget nyújtanak az adatrögzítésre a pénztárgép (PO
 
 ## <a name="info-codes-group"></a>Infókódok csoport
 
-A Dynamics 365 for Retail szolgáltatásban az infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
+A Retail esetében az infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
 
 - Kevesebb infókód meghatározása és egyszerű újra felhasználása. Az iinfókód-csoportokban szereplő nfókódok nem rendelkeznek előre meghatározott függőséggel más infókódoktól. Az azonos infókódot több infókódcsoport is tartalmazhatja, és rangsor segítségével az azonos infókódok megjeleníthetők a megadott sorrendben, amely értelmes bármely adott helyzetben.
 - Infókódok csatolása más infókódokhoz vagy infókód-csoportokhoz egy termékről vagy tranzakcióról szóló információ gyűjtéséhez oly módon, ahogyan szüksége van rá anélkül, hogy külön infókódot vagy csatolt infókódot kellene megadnia minden egyes esethez.

@@ -1,6 +1,6 @@
 ---
 title: A Retail Modern POS (MPOS) és a Cloud POS bemutató adatképernyő-elrendezései
-description: Ez a témakör a Microsoft Dynamics 365 for Retail pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a témakör a Dynamics 365 Retail pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570644"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019324"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>A Retail Modern POS (MPOS) és a Cloud POS bemutató adatképernyő-elrendezései
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Retail pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
+Ez a témakör a Dynamics 365 Retail pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -40,7 +40,7 @@ Bemutató adatokhoz mellékelt Retail minta képernyő-elrendezések különböz
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Képernyő-elrendezés azonosítójának szerkezete
 
-A Retail képernyő-elrendezések megkereséséhez kattintson a **Retail** \> **Csatorna beállításai** \> **POS-beállítás** \> **POS** \> **Képernyő-elrendezések** lehetőségre.
+A képernyő-elrendezések megkereséséhez kattintson a **Retail** \> **Csatorna beállításai** \> **POS-beállítás** \> **POS** \> **Képernyő-elrendezések** lehetőségre.
 
 ![Retail képernyő-elrendezések lap](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ Az alábbi táblázat bemutatja a jellemző képernyőfelbontásokhoz rendelkez�
 \*Ezek a további elrendezési méretek csak a Kalandorbolt és a Gyár elrendezésekben érhetők el.
 
 > [!TIP]
-> A pénztár automatikusan kiválasztja az elrendezésméreteket, az aktuális alkalmazásablak képernyőfelbontásához elérhető legközelebbi méret alapján. A jelenleg használt képernyőelrendezés-azonosító és elrendezésfelbontás megkereséséhez a Retail Modern POS (MPOS) vagy Retail Cloud POS (CPOS) esetében nyissa meg a **Beállítások** oldalt, majd tekintse meg a **Munkamenet adatai** szakaszt. A jelenlegi alkalmazás vagy böngészőkeret tényleges ablakfelbontása is megtekinthető. Ezeket az adatokat begyűjtve az elrendezéstartalom forrásának megkereséséhez a Retail esetében menjen a **Csatorna beállítása** \> **POS beállítása** \> **POS** \> **Képernyő-elrendezések** menübe.
+> A pénztár automatikusan kiválasztja az elrendezésméreteket, az aktuális alkalmazásablak képernyőfelbontásához elérhető legközelebbi méret alapján. A jelenleg használt képernyőelrendezés-azonosító és elrendezésfelbontás megkereséséhez a Retail Modern POS (MPOS) vagy Retail Cloud POS (CPOS) esetében nyissa meg a **Beállítások** oldalt, majd tekintse meg a **Munkamenet adatai** szakaszt. A jelenlegi alkalmazás vagy böngészőkeret tényleges ablakfelbontása is megtekinthető. Ezeket az adatokat begyűjtve az elrendezéstartalom forrásának megkereséséhez menjen a **Csatorna beállítása** \> **POS beállítása** \> **POS** \> **Képernyő-elrendezések** menübe.
 
 ![Képernyő-elrendezések és elrendezésfelbontások/méretek a Retail és a POS esetében](../retail/media/demo-screen-layouts-fig-3-1.png)
 

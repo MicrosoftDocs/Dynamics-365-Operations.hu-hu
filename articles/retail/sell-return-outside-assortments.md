@@ -1,6 +1,6 @@
 ---
 title: Értékesített és a visszaküldött termékek, amelyek nem részei egy üzlet szortimentjének
-description: Szortimenten kívüli termékek eladása és visszavétele a Dynamics 365 for Retail rendszerben.
+description: Szortimenten kívüli termékek eladása és visszavétele a Dynamics 365 Retail rendszerben.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567909"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024937"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Értékesített és a visszaküldött termékek, amelyek nem részei egy üzlet szortimentjének
 
@@ -37,7 +37,7 @@ Minden kiskereskedőben közös, hogy termékeket értékesítenek az ügyfelekn
 + A kiskereskedő üzletében nincsenek ott a kontkrét termékek, vagy nincsenek készleten abban az üzletben, ahol a vevő járt, de a termékek elérhetők más üzletekben. Az üzlet alkalmazottja segítséget nyújthat az ügyfélnek a raktárban lévő termékek keresése vagy tallózása révén, hozzáadhatja azokat a kosárhoz, és elvégezheti a fizetést egy kiszállítási mód kiválasztásával.
 + A kiskereskedő számos üzlettel rendelkezik egy bizonyos város vagy irányítószám körzetében, és nem akarja az ügyfeleket arra kényszeríteni, hogy ugyanabba az üzletbe vigyék vissza a termékeket, amelyikben vásárolták őket. Ehelyett a vevők bármelyik üzletbe visszavihetik a termékeket.
 
-A Dynamics 365 for Retail használatával ezek az általános forgatókönyvek elérhetők a kiskereskedők számára. A Retail alkalmazással a következőket teheti:
+A Retail használatával ezek az általános forgatókönyvek elérhetők a kiskereskedők számára. A Retail alkalmazással a következőket teheti:
 
 + Más üzletekben lévő termékek keresése vagy tallózása.
 + Az összes kiadott termék keresése vagy tallózása.

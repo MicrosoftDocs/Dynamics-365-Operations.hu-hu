@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875696"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024499"
 ---
 # <a name="maintenance-forecasts"></a>Karbantartási előrejelzések
 
@@ -104,7 +104,7 @@ A cikkek munkarendelés karbantartási előrejelzéshez történő hozzáadásá
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Munkarendelés-előrejelzések automatikus frissítése
 
-Az Eszközkezelésben automatikusan frissítheti a munkarendelések előrejelzéseinek módosításait a az óraköltség, a cikköltségekhez és más kiadásokhoz, amelyek frissítve lettek a Dynamics 365 for Finance and Operations moduljaiban. Erre azért van szükség, hogy a legutóbbi önköltségi árak legyenek mindig használva a munkarendelés-előrejelzésekben. Hasonló frissítések lehetségesek a [karbantartási feladattípus előrejelzésekhez](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) is.
+Az Eszközkezelésben automatikusan frissítheti a munkarendelések előrejelzéseinek módosításait az óraköltség, a cikköltségekhez és más kiadásokhoz, amelyek frissítve lettek más modulokban. Erre azért van szükség, hogy a legutóbbi önköltségi árak legyenek mindig használva a munkarendelés-előrejelzésekben. Hasonló frissítések lehetségesek a [karbantartási feladattípus előrejelzésekhez](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) is.
 
 1. Kattintson az **Eszközkezelés** > **Időszakos** > **Előrejelzés** > **Munkarendelés-előrejelzés frissítése** hivatkozásra.
 

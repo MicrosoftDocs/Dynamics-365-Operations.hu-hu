@@ -1,6 +1,6 @@
 ---
 title: Szállítási módok és költségek beállítása a hívásközponthoz
-description: Ez a témakör leírja, hogyan lehet a hívásközpont rendeléshez tartozó költségeket és szállítási költségeket beállítani a Microsoft Dynamics 365 for Retail szolgáltatásban.
+description: Ez a témakör leírja, hogyan lehet a hívásközpont rendeléshez tartozó költségeket és szállítási költségeket beállítani a Dynamics 365 Retail szolgáltatásban.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553599"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019485"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Szállítási módok és költségek beállítása a hívásközponthoz
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Amikor leadnak egy értékesítési rendelést a Microsoft Dynamics 365 for Retail szolgáltatásban, ha az értékesítési rendelést leadó személy hozzá van kapcsolva egy hívásközponti csatornához, a logika és a szabályok segítségével megtörténik a szállítás módjának (szállítási mód) ellenőrzése és a rendeléshez kapcsolódó költségek kiszámítása.
+Amikor leadnak egy értékesítési rendelést a Dynamics 365 Retail szolgáltatásban, ha az értékesítési rendelést leadó személy hozzá van kapcsolva egy hívásközponti csatornához, a logika és a szabályok segítségével megtörténik a szállítás módjának (szállítási mód) ellenőrzése és a rendeléshez kapcsolódó költségek kiszámítása.
 
 Értékesítési rendelés létrehozásakor az értékesítési rendelés fejlécén és az értékesítésirendelés-sorokban szereplő szállítási módok közül választhat. Alapértelmezés szerint a fejlécben kiválasztott szállítási mód fog szerepleni az összes értékesítésirendelés-sorban. Azonban szükség esetén felül lehet írni az alapértelmezett szállítási módot az egyes értékesítési sorokban. Vevőrekordban is meg lehet adni szállítási módot. Ezután amikor megtörténik a rendelések létrehozása a vevő számára, ezt a rendelési módot használja a rendszer alapértelmezettként az értékesítési rendelés fejlécében.
 

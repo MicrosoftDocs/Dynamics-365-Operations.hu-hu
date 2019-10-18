@@ -1,6 +1,6 @@
 ---
 title: Szortiment beállítása
-description: Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket a Microsoft Dynamics 365 for Retail programban.
+description: Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket a Dynamics 365 Retail programban.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb0ca55478d0676f46fee70082645523b6bfdb78
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546409"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024914"
 ---
 # <a name="set-up-assortments"></a>Szortimentek beállítása
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket a Microsoft Dynamics 365 for Retail programban.
+Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket a Dynamics 365 Retail programban.
 
 A választék olyan kapcsolódó termékek gyűjteménye, amelyeket egy kiskereskedelmi csatornához hozzárendelnek, például egy fizikai üzlethez vagy egy online áruházhoz. A kiskereskedelmi áruházban rendelkezésre álló termékek azonosítása. Szortiment termékkategóriák is tartozhat. A kijelölt kategóriához rendelt összes termék szerepel a szortimentben. A vállalatfüggő termékek és termékek meghatározott változatok szortiment is tartalmazhatnak. Szortiment beállításával rendelhet termékek ezer a kiskereskedelmi csatornák egyidejűleg, bármilyen kombinációban az üzletben igénylő. Tetszőleges számú termék szortimentek van szüksége, be lehet állítani. Megadhat egy vagy több szortimentet, és minden termék egy vagy több szortimenthez rendelhető hozzá. Például megadhatja egy szortiment, amelyek a termékek alapvető készletét tartalmazza. Az összes üzlet a szortimentet kapja. Egy másik szortiment csak nagy sporteseményekre berendezések tartalmazó majd határozza meg. A nagyobb üzletek a szortimentet kapja. A következő ábra bemutatja, hogyan termékek rendelhetők szortimenteket a rendszerben, és hogyan kiskereskedelmi csatornák e szortimentek rendelhető.
 
@@ -44,7 +44,7 @@ Szortiment beállítása, és rendelje hozzá a kiskereskedelmi csatorna, mielő
 |-----------------------------------|-------------|
 | Csatornaprofil beállítása.          | A kiskereskedelmi csatornák közé tartoznak a tényleges áruházak, az online áruházak és az online piacterek. Állítsa be, ha legalább egy kiskereskedelmi csatorna kell, és adja meg a beállításokat az üzlet. Szortimentek azonosító, amely egy adott üzletre szállít üzletek vannak hozzárendelve. |
 | Szervezeti hierarchia tervezése. | Miután beállította a kiskereskedelmi csatornák a szervezetben, konfigurálnia kell a kiskereskedelmi szervezeti hierarchia, amely tartalmazza a kiskereskedelmi csatornák szervezeti felépítését. A szervezeti hierarchia például szortimentekhez, feltöltéshez vagy jelentéshez használható. A kiskereskedelmi csatornák szervezeti hierarchia hozzáadásával szortimentek rendelhet üzletek csoportja. Nem rendeli a szortiment külön-külön az egyes üzletekhez, rendel a szortiment a szervezet legfelső szintű csomópont. Ezt követően a szervezet legfelső szintű csomópont hozzá van rendelve egy új kiskereskedelmi csatorna, amikor adott kiskereskedelmi csatorna automatikusan öröklik a magasabb szintű szervezeti csomópont rendelt minden szortimenteket a rendszerben. Csak a kiskereskedelmi csatornák hozzárendelt szervezeti hierarchiában szereplő hozzárendelheti a szortimenteket a rendszerben a **kiskereskedelmi szortiment** célját. |
-| Termékek definiálása.                  | Mielőtt egy szortiment termékek adna hozzá kell adnia azokat a Microsoft Dynamics 365 for Retail rendszerben. Termékek manuálisan is hozzá lehet adni, vagy a szállító importálhatja. Miután hozzáadta a termékeket, a jogi személyhez kell elengedése. Csak a jogi személynek számára kiadott termékek bocsáthatók rendelkezésre a kiskereskedelmi csatornák számára. Termékek, amelyek még nem még nincs kiadva jogi személy egy szortiment lehet hozzáadni, és a szortiment jóvá kell hagyni. Csak a jogi személynek számára kiadott termékek bocsáthatók rendelkezésre a kiskereskedelmi csatornák számára. |
+| Termékek definiálása.                  | Mielőtt egy szortimenthez termékeket adna, hozzá kell adnia azokat a Retail szolgáltatásban. Termékek manuálisan is hozzá lehet adni, vagy a szállító importálhatja. Miután hozzáadta a termékeket, a jogi személyhez kell elengedése. Csak a jogi személynek számára kiadott termékek bocsáthatók rendelkezésre a kiskereskedelmi csatornák számára. Termékek, amelyek még nem még nincs kiadva jogi személy egy szortiment lehet hozzáadni, és a szortiment jóvá kell hagyni. Csak a jogi személynek számára kiadott termékek bocsáthatók rendelkezésre a kiskereskedelmi csatornák számára. |
 | Kategóriahierarchia beállítása.      | A kiskereskedelmi termékek létrehozásakor csoportosíthatja, és kategorizálhatja őket a kategóriahierarchia funkcióval. Egy alapvető hierarchia csoportosítására és az összes termék, amelyet a kiskereskedelmi csatornák keresztül terjeszti kategorizálni lehet létrehozni. Létrehozhat külön, kiegészítő Kategóriahierarchiák vagy a csoport a termékek kategorizálása például előléptetés vagy szortimentek különleges célra is. Kategóriahierarchiák használatával egy adott kategóriára szereplő összes termék rendelhet egy szortiment. E terméket ad hozzá a kategóriát, amely a szortiment része automatikusan szerepelnek a készletben található. Ezt követően a kiskereskedelmi szortiment tervezés és ütemezés fut, amikor legközelebb ezeket a termékeket elérhetővé válnak a kiskereskedelmi csatornák, amely a szortiment hozzá van rendelve. |
 
 ## <a name="setting-up-an-assortment"></a>Szortiment beállítása

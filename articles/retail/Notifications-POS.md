@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577980"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023703"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
 
-A modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is. Mivel a nap folyamán különböző feladatokat kell végrehajtani, szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Microsoft Dynamics 365 for Retail alkalmazásban az 5. alkalmazásfrissítéssel az értesítések csak pénztárműveleteknél állíthatók be.
+A modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is. Mivel a nap folyamán különböző feladatokat kell végrehajtani, szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Dynamics 365 for Retail alkalmazásban az 5. alkalmazásfrissítéssel az értesítések csak pénztárműveleteknél állíthatók be.
+
 
 Jelenleg a rendszer csak a rendelés teljesítése műveletekhez képes értesítéseket megjeleníteni. Azonban mivel a keretrendszert bővíthetőnek tervezték, a fejlesztők végül írni fognak tudni egy értesítéskezelőt minden művelethez, és a művelet értesítéseit megjeleníthetik a pénztárban.
 
@@ -68,7 +69,8 @@ A következő ábrán az élő tartalom beállítása látható a rácsgombterve
 
 ![Élő tartalom beállítása a rácsgombtervezőben](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
 
-Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása**adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a Dynamics 365 for Finance and Operations rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail \> Retail IT \> Elosztási ütemezés** menüpontot, és futtassa a 1090 (Pénztárgépek) feladatot az elrendezésmódosítások szinkronizálásához
+Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása**adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail \> Retail IT \> Elosztási ütemezés** menüpontot, és futtassa a 1090 (Pénztárgépek) feladatot az elrendezésmódosítások szinkronizálásához
+
 
 ![A pénztár által használt képernyőelrendezés megkeresése](./media/Choose_screen_layout.png "Képernyőelrendezés megkeresése ")
 

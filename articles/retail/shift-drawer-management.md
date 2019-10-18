@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017897"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Műszak és pénztárgépfiók kezelése
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556437"
 
 Ez a témakör bemutatja, hogyan állíthatók be és használhatók a műszakok a kiskereskedelmi pénztár (POS) esetében.
 
-A Microsoft Dynamics 365 for Retail esetében a *műszak* kifejezés a pénztár tranzakciós adatait és tevékenységeit írja le két időbeli pont között. Minden műszakhoz az összeget, amely várható, hasonlítja a megszámlált és deklarált összeggel.
+A Dynamics 365 Retail esetében a *műszak* kifejezés a pénztár tranzakciós adatait és tevékenységeit írja le két időbeli pont között. Minden műszakhoz az összeget, amely várható, hasonlítja a megszámlált és deklarált összeggel.
 
 A műszakok általában a munkanap kezdetekor vannak megnyitva. Ezen a ponton a felhasználó feltünteti a nyitó összeget, amelyet a pénztárfiók tartalmaz. A nap folyamán értékesítési tranzakciókat hajtanak végre. Végül a nap végén megszámolják a fiók tartalmát, és a záró összeget deklarálják. A műszak le van zárva, és Z-jelentés készül. A Z-jelentés azt jelzi, hogy van-e felesleg vagy hiány.
 
@@ -69,7 +69,7 @@ Az üzletekben megosztott műszak használatához a pénztárfiókot is be kell 
 
 ## <a name="shift-and-drawer-operations"></a>Fiók és műszak műveletek
 
-Különféle műveletek hajthatók végre a műszak állapotának módosítására, vagy a pénzfiókban levő pénzösszeg növelésére vagy csökkentésére. Ez a szakasz bemutatja a műszakműveleteket a Microsoft Dynamics 365 for Retail Modern POS Cloud POS alkalmazásokban.
+Különféle műveletek hajthatók végre a műszak állapotának módosítására, vagy a pénzfiókban levő pénzösszeg növelésére vagy csökkentésére. Ez a szakasz bemutatja a műszakműveleteket a Retail Modern POS és a Cloud POS alkalmazásokban.
 
 ### <a name="open-shift"></a>Nyitott műszak
 

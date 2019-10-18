@@ -1,6 +1,6 @@
 ---
 title: Hívásközpont-csatornák beállítása
-description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Microsoft Dynamics 365 for Retail használatával.
+description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Dynamics 365 Retail használatával.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549359"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024821"
 ---
 # <a name="set-up-call-center-channels"></a>Hívásközponti csatornák beállítása
 
 [!include [banner](includes/banner.md)]
 
-A vállalat több hívásközponti csatornát is meghatározhat a Microsoft Dynamics 365 for Retail rendszerben. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
+A vállalat több hívásközponti csatornát is meghatározhat a Dynamics 365 Retail rendszerben. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
 
 Új hívásközponti csatorna létrehozásakor rendszerszerűen hozzárendelnek egy üzemiegység-számot. Mivel a hívásközpontok üzemi egységekként jönnek létre, a felhasználók a hívásközponti csatornákat különböző Retail funkciókhoz rendelhetik hozzá, ilyenek például a szortimentek, a katalógusok és az adott szállítási módok.
 
@@ -76,6 +76,8 @@ A hívásközponti csatornák definiálásakor a csatornafelhasználókat hozzá
 
 Alapértelmezés szerint a **Kiskereskedelem értékesítés** jelző az értékesítési rendelés fejlécében be van kapcsolva a hívásközpont felhasználói által létrehozott minden megrendelésre. A rendelések ezután élvezhetik a rendszer kiskereskedelem-specifikus ár- és promóció funkcióinak előnyeit.
 
-Hívásközponti csatornához nem kapcsolt felhasználók szokásos rendelésibeviteli funkciókat használhatják a Microsoft Dynamics 365 for Finance and Operations rendszerben. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Retail megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, a kiskereskedelmi árképzés logika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
+
+Hívásközponti csatornához nem kapcsolt felhasználók szokásos rendelésibeviteli funkciókat használhatják a Microsoft Dynamics 365 Finance rendszerben. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Retail megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, a kiskereskedelmi árképzés logika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
+
 
 A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak megadása után, a kívánt rendszerviselkedés garantálásának elősegítésére, ellenőrizze, hogy az összes szükséges hívásközponti paraméterek meg van határozva itt: **Kiskereskedelem** \> **Csatorna beállítása** \> **Hívásközpont beállítása** \> **Hívásközponti paraméterek**. Győződjön meg arról, hogy kapcsolódó számsorozatok is meg vannak határozva.

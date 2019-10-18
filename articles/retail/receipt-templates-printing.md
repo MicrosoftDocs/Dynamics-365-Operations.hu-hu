@@ -1,6 +1,6 @@
 ---
 title: Bevételezési formátumok beállítása és tervezése
-description: Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Microsoft Dynamics 365 for Retail és kiskereskedelem és kereskedelem képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
+description: Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Dynamics 365 Retail és kiskereskedelem és kereskedelem képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025125"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bevételezési formátumok beállítása és tervezése
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Microsoft Dynamics 365 for Retail és kiskereskedelem és kereskedelem képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
+Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Dynamics 365 Retail képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
 
 > [!IMPORTANT]
 > Ahhoz, hogy a Retail Modern POS és Cloud POS használatával nyugtákat és egyéb bizonylatokat tudjon nyomtatni, be kell állítania a képernyő-elrendezéseket és a nyugtaprofilokat. A nyugtaprofilba több képernyőelrendezést is felvehet. Ezután hozzárendelheti a nyugta profilt egy nyomtatóhoz a hardver profil módosításával.
@@ -55,7 +55,7 @@ A Képernyőelrendezés-tervező segítségével grafikusan hozhatja létre a k�
 2. A **Nyugtaformátum** oldalon, válasszon egy űrlap elrendezést, majd kattintson **Tervező** opcióra.
 3. Kattintson a **Futtatás** gombra, hogy elindítsa a Kiskereskedelem tervező telepítését.
 4. Az Internet Explorer ablakának alján található értesítési sávon kattintson a **Megnyitás** gombra, hogy indítsa el az egy-kattintás tervező telepítését. (Más böngészőkben előfordulhat, hogy eltérő helyen jelenik meg az Értesítő sáv.) Folyamatjelző mutatja a telepítés folyamat haladását.
-5. A telepítés befejezése után adja meg Bejelentkezés oldalon a Dynamics 365 for Retail felhasználónevét és jelszavát, majd kattintson a **Bejelentkezés** gombra a tervező indításához.
+5. A telepítés befejezése után adja meg Bejelentkezés oldalon a Retail felhasználónevét és jelszavát, majd kattintson a **Bejelentkezés** gombra a tervező indításához.
 6. Miután a belépő adatai hitelesítésre kerültek és a tervező elindul, megkezdheti a nyugta formátum tervezését vagy a már meglevő módosítását.
 7. Az űrlap elemeinek létrehozásához válassza ki a **Fejléc**, a **Sorok** vagy a **Lábléc** szekciót, majd húzza a szekcióban található egyik elemet a munkaterületre. A legtöbb elem változókat tartalmaz, amelyekbe a program automatikusan beírja az adatbázis adatait. Más elemek – például a **Szöveg** elem – lehetővé teszik egyéni szöveg nyomtatását a nyugtára.
 

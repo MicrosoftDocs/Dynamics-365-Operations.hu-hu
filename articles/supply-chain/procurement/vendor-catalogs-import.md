@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017874"
 ---
 # <a name="import-vendor-catalogs"></a>Szállítói katalógusok importálása
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Szállítói katalógusok importálása
 
-A Microsoft Dynamics 365 for Finance and Operations alkalmazás segítségével a beszerzési szakemberek katalógusokat hozhatnak létre és karbantarthatják azokat, amelyeket a vállalati alkalmazottak használhatnak, ha cikkeket és szolgáltatásokat rendelnek belső használatra. Beszerzési katalógus létrehozásához lehetőség van a kívánt cikkeket vagy szolgáltatásokat hozzáadni, amelyeket szeretne elérhetővé tenni az alkalmazottaknak, vagy a termékkatalógus-adatok importálásával, vagy a termék katalógusadatok manuális hozzáadásával az alaptermékhez. 
+A Dynamics 365 Supply Chain Management alkalmazás segítségével a beszerzési szakemberek katalógusokat hozhatnak létre és karbantarthatják azokat, amelyeket a vállalati alkalmazottak használhatnak, ha cikkeket és szolgáltatásokat rendelnek belső használatra. Beszerzési katalógus létrehozásához lehetőség van a kívánt cikkeket vagy szolgáltatásokat hozzáadni, amelyeket szeretne elérhetővé tenni az alkalmazottaknak, vagy a termékkatalógus-adatok importálásával, vagy a termék katalógusadatok manuális hozzáadásával az alaptermékhez. 
 
 A Microsoft Dynamics 365 ügyfélből származó, a szállító által elküldött katalógus adatok feltölthetők.
 
@@ -52,7 +52,7 @@ Egy szállító katalógusadatainak importálásához végezze el a következő 
 
 6.  Töltse fel a CMR-fájlt.
 
-7.  Tekintse át, hagyja jóvá vagy utasítsa el a szállítói katalógusban szereplő termékeket. A termékek automatikusan vannak hozzárendelve a beszerzési kategóriákhoz a Dynamics 365 for Finance and Operations alkalmazásban. 
+7.  Tekintse át, hagyja jóvá vagy utasítsa el a szállítói katalógusban szereplő termékeket. A termékek automatikusan vannak hozzárendelve a beszerzési kategóriákhoz. 
     
 A jóváhagyott termékek felvehetők az alaptermékbe, és kiadhatók a kiválasztott jogi személyeknek. Csak jóváhagyott termékek adhatók hozzá a beszerzési katalógushoz.
 

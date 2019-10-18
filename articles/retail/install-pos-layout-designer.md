@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572080"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025446"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>A Retail pénztár (POS) képernyőelrendezés-tervező telepítése
 
@@ -36,11 +36,11 @@ Az MPOS vagy a Felhőalapú POS grafikus felületét a kasszaelrendezés vezérl
 
 ## <a name="install-the-one-click-designer"></a>Az egy-kattintás tervező telepítése
 
-1. A Microsoft Dynamics 365 for Retail rendszerben a bal felső menü segítségével navigáljon a **Kiskereskedelem** **és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztár** &gt; **Képernyő-elrendezések** pontra.
+1. A Retail rendszerben a bal felső menü segítségével navigáljon a **Kiskereskedelem** **és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztár** &gt; **Képernyő-elrendezések** pontra.
 2. Válasszon ki egy bármilyen alkalmazástípussal rendelkező elrendezést a **Modern POS for Windows** vagy a **Felhőalapú POS** pontban, és kattintson az **Elrendezéstervező** lehetőségre.
 3. Az Internet Explorer ablakának alján található értesítési sávon kattintson a **Megnyitás** gombra, hogy elindítsa az egy-kattintás tervező telepítését. (Más böngészőkben előfordulhat, hogy eltérő helyen jelenik meg az értesítési sáv.)
 4. A megjelenő **Alkalmazás futtatása - Biztonsági figyelmeztetés** üzenetpanelen kattintson a **Futtatás** lehetőségre a Kiskereskedelem tervező telepítéséhez. Folyamatjelző mutatja a telepítési folyamat előrehaladását.
-5. A telepítés befejezése után adja meg **Bejelentkezés** oldalon a Microsoft Dynamics 365 for Retail-felhasználónevét és jelszavát, majd kattintson a **Bejelentkezés** gombra a tervező indításához.
+5. A telepítés befejezése után adja meg **Bejelentkezés** oldalon a Retail-felhasználónevét és jelszavát, majd kattintson a **Bejelentkezés** gombra a tervező indításához.
 6. Miután a belépő adatai hitelesítésre kerültek és a tervező elindul, megkezdheti a saját elrendezés tervezését vagy a már meglevő módosítását.
 
     [![Elrendezés az egykattintásos tervezőben](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ Az MPOS vagy a Felhőalapú POS grafikus felületét a kasszaelrendezés vezérl
     **Megoldások:**
 
     - Internet Explorer böngészőben győződjön meg arról, az előugró ablakok nincsenek engedélyezve ezen a webhelyen. Kattintson a **Beállítások** &gt; **Lehetőségek** &gt; **Adatvédelem** &gt; **Előugró ablakok blokkolása – Keresés** lehetőségre, és szükség szerint módosítsa a beállítást.
-    - Az Internet Explorer-ben adja hozzá a Dynamics 365 for Retail URL-címét a megbízható webhelyekhez. Kattintson a **Beállítások** &gt; **Lehetőségek** &gt; **Biztonság** &gt; **Megbízható helyek** &gt; **Helyek** &gt; **Hozzáadás** lehetőségre.
+    - Az Internet Explorer-ben adja hozzá a Retail URL-címét a megbízható webhelyekhez. Kattintson a **Beállítások** &gt; **Lehetőségek** &gt; **Biztonság** &gt; **Megbízható helyek** &gt; **Helyek** &gt; **Hozzáadás** lehetőségre.
 
 - A program nem indul el, és jelzi, hogy lépjen kapcsolatba a szállítóval.
 
-    **Megoldás:** Az Internet Explorer-ben adja hozzá a Dynamics 365 for Retail URL-címét a megbízható webhelyekhez. Kattintson a **Beállítás** &gt; **Lehetőségek** &gt; **Biztonság** &gt; **Megbízható helyek** &gt; **Helyek** &gt; **Hozzáadás** lehetőségre.
+    **Megoldás:** Az Internet Explorer-ben adja hozzá a Retail URL-címét a megbízható webhelyekhez. Kattintson a **Beállítás** &gt; **Lehetőségek** &gt; **Biztonság** &gt; **Megbízható helyek** &gt; **Helyek** &gt; **Hozzáadás** lehetőségre.
 
 **Ismert probléma:** A tervező nem működik megfelelően a Google Chrome és a Mozilla Firefox böngészőben. Dolgozunk a probléma megoldásán.
 

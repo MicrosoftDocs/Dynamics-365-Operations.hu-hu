@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550070"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018433"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
 
@@ -43,7 +43,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 5. Adja meg a dátumot a „Záró dátum” mezőben.
 6. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 7. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.
-    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.      A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
+    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
 8. Kattintson az OK gombra.
 9. Válasszon ki egy lehetősége a Nézet mezőben.
 10. Válasszon ki egy lehetőséget a Szerint mezőben.
@@ -55,7 +55,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 3. Adja meg a dátumot a „Záró dátum” mezőben.
 4. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 5. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.
-    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.      A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
+    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
 6. Kattintson az OK gombra.
 7. Kattintson az OK gombra.
 

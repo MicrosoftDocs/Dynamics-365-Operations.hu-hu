@@ -1,6 +1,6 @@
 ---
 title: Értékesítési teljesítmény felmérése termék szerint
-description: A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával.
+description: A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Dynamics 365 Retail használatával.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546386"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024957"
 ---
 # <a name="assess-sales-performance-by-product"></a>Értékesítési teljesítmény felmérése termék szerint
 
 [!include [banner](includes/banner.md)]
 
-A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával.
+A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Dynamics 365 Retail használatával.
 
-A Dynamics 365 for Retail részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb termékek (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:
+A Retail részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb termékek (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:
 
 - Értékesítési összeg
 - Mennyiség

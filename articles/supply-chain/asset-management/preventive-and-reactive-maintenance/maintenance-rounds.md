@@ -3,7 +3,7 @@ title: Karbantartási körök
 description: Ez a témakör az Eszközkezelés karbantartási köreit ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875690"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922022"
 ---
 # <a name="maintenance-rounds"></a>Karbantartási körök
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 Az **Eszközkezelésben** különböző olyan eszközökhöz lehet karbantartási köröket létrehozni, amelyekhez rendszeres időközönként hasonló feladatot kell végrehajtani. Például olyan kenési vagy biztonsági ellenőrzési feladatok esetén, amelyeket több gépen kell végrehajtani adott időközönként. Első lépésként létre kell hozni egy karbantartási kört, többek között azokat az eszközöket, amelyekhez ugyanazt a karbantartási feladatot kell végrehajtani. Ezután ütemezheti a karbantartási köröket. Ha befejezte a karbantartási körök ütemezését, akkor az **Összes karbantartási ütemezés** és a **Nyitott karbantartási ütemezés** sorban láthatja a körhöz kapcsolódó feladatok rekordjait.
 
@@ -83,6 +81,8 @@ Az **Eszközkezelésben** különböző olyan eszközökhöz lehet karbantartás
 >[!NOTE]
 >A **Fejléc** gyorslap **Részletek** csoportjában lévő **Eszközök** és **Sorok** mezőjében látható a kiválasztott karbantartási körhöz kapcsolódó eszközök és sorok teljes száma.
 
+Az alábbi ábra három tárgyi eszközt tartalmazó karbantartási fordulóra mutat be példát.
+
 ![1. ábra](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ Ha beállította a karbantartási kört, akkor ütemezési feladatot futtathat a
 6. Kattintson az **OK** gombra.
 
 7. Most már látni fogja a karbantartási körök feladatait az **Eszközkezelés** > **Közös** > **Karbantartási ütemezés** > **Összes karbantartási ütemezés** vagy **Nyitott karbantartási ütemezés** sorban. Ha az ütemezett köröket munkarendelési csoporttal kapcsolja össze, akkor a karbantartási ütemezés sorai is láthatók a **Nyitott karbantartási ütemezési csoportok** részen. A kör alapján létrehozott karbantartási ütemezési sorok hivatkozástípusa „Karbantartási körök”.
+
+Az alábbi két illusztráció egy ütemezési feladatot mutat be a **Karbantartási körök ütemezése** párbeszédablakban, és az ütemezési feladat alapján az **Összes karbantartási ütemezésben** létrehozott karbantartási ütemezési sorokat.
 
 ![2. ábra](media/14-preventive-maintenance.png)
 

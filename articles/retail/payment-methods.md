@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559604"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025356"
 ---
 # <a name="payment-methods"></a>Kifizetési módok
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559604"
 
 Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a rendszer beállításakor. Ez a cikk a beállítható fizetéstípusokat mutatja be, valamint azok beállításának folyamatát.
 
-A kiskereskedők fogadhat különböző típusú fizetés ellenében a termékek és szolgáltatások, amelyek értékesítik. Bár a leggyakrabban használt fizetési eszköz a készpénz, a kiskereskedők is csekken, bankkártyán, utalványon, és egyéb eszközökön is elfogadhatnak kifizetést. Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a Dynamics 365 for Retail rendszer beállításakor. Az alábbi lista leírja az egyes fizetéstípusokat, amelyeket be lehet állítani a Dynamics 365 for Retail moduljában:
+A kiskereskedők fogadhat különböző típusú fizetés ellenében a termékek és szolgáltatások, amelyek értékesítik. Bár a leggyakrabban használt fizetési eszköz a készpénz, a kiskereskedők is csekken, bankkártyán, utalványon, és egyéb eszközökön is elfogadhatnak kifizetést. Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a Dynamics 365 Retail rendszer beállításakor. Az alábbi lista leírja az egyes fizetéstípusokat, amelyeket be lehet állítani:
 
 - **Készpénz** – a pénznem fizikai formában megjelenő eszköze, amely érme és bankjegy lehet. Ez a pénznem lehet a vállalati pénznem, vagy az üzlet helyi pénzneme.
 - **Csekk** – forgatható értékpapír, amely meghatározott összeg meghatározott pénznemben történő kifizetésére kötelezi a megadott bankot. Csekk általában határozatlan ideig vagy a kiadás napjától számított hat hónapig érvényes, hacsak nincs megadva egy másik érvényességi dátum. Ez az időszak változhat, a csekket kiállító banktól függően. A csekkeknek többféle típusa létezik, van például névre szóló, bemutatóra szóló és pénzfelvételi csekk is. Minden üzlethez beállíthat csekket fizetési módnak. A csekkek a vállalat szintjén vagy az üzlet szintjén meghatározott pénznemben fogadhatóak el. Előbb be kell állítania a csekket elfogadható fizetési módként, mielőtt elfogadhatná őket fizetésként az üzletben.

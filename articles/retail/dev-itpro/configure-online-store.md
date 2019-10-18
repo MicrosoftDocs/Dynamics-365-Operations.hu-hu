@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 186ab08e21b7dad7b736b1f5f065aefe0b80d621
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 142a7fa8a18b14347761d3f116c30f2fa5476115
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833175"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025745"
 ---
 # <a name="configure-online-stores"></a>Online áruházak beállítása
 
@@ -53,7 +53,7 @@ A következő táblázatban felsorolt témakörök segítenek konfigurálni a Re
 | Szállítási költségek kezelése.             | Állítson be és kezeljen az online áruházra szabott szállítási költségeket.                                                                     | [Az online áruházak szállítási költségeinek beállítása](https://technet.microsoft.com/library/jj728714.aspx) (TechNet-tartalom az AX 2012-höz)                                                                                                                           |
 | Szállítási módok kezelése.            | Kezelje az online áruházban kínált szállítási módokat.                                                                                        | [Szállítási módok beállítása](https://technet.microsoft.com/library/jj728719.aspx) (TechNet-tartalom az AX 2012-höz)                                                                                                                                            |
 
-## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Adatcsere beállítása a Microsoft Dynamics 365 for Retail és az online áruház között
+## <a name="set-up-data-exchange-between-microsoft-dynamics-365-retail-and-the-online-store"></a>Adatcsere beállítása a Microsoft Dynamics 365 Retail és az online áruház között
 
 | Feladat                                 | Részletek                                                                                                                               | Témakörök                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
 ---
 title: Kiskereskedelmi hierarchiák
-description: Ez a cikk bemutatja a kereskedelmi hierarchiákat a Microsoft Dynamics 365 for Retail alkalmazásban.
+description: Ez a cikk bemutatja a kereskedelmi hierarchiákat a Dynamics 365 Retail alkalmazásban.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb383c5bc5ad5d641db6f30e915ea43ba5980005
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025077"
 ---
 # <a name="retail-hierarchies"></a>Kiskereskedelmi hierarchiák
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk bemutatja a kereskedelmi hierarchiákat a Microsoft Dynamics 365 for Retail alkalmazásban.
+Ez a cikk bemutatja a kereskedelmi hierarchiákat a Dynamics 365 Retail alkalmazásban.
 
 A kiskereskedelmi csatornáin keresztül értékesített termékek rendszerezéséhez létrehozhatja a termékeket hierarchiáját. Kiskereskedelmi termék hierarchiák segítségével kategóriákba vagy termékek csoportosítása. Ezeket a termékeket, valamint a vevő hűségprogramok létrehozásához használhatja. Kiválaszthatja is termékattribútumok és tulajdonságok hozzárendelése, hozzárendelése egy árképzési szerkezet, a termékek felvétele a termék promóciók, és a termékeket jelentésekhez használja. Létrehozhat egy kategóriahierarchiát a szervezetben lévő összes termék és kategória képviseletére, majd ezt a kategóriahierarchiát több célra használhatja. Másik lehetőségként létrehozhat több kategóriahierarchiát különleges célokra, ilyen például a termékpromóció. Kiskereskedelmi termékhierarchia létrehozásakor hozzá kell rendelnie a kategóriahierarchia típusát a kategóriahierarchia céljának azonosításához. Például egyetlen termék hierarchiák értékcsökkenésével a **Kiskereskedelmi navigációs hierarchia** típus hivatkozott tallózásakor termékek kategóriák szerint online, akár in point of értékesítés (POS).
 

@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606895"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023636"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok
 
 [!include [banner](includes/banner.md)]
 
-Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább). A Microsoft Dynamics 365 for Finance and Operationsszolgáltatásban az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek. A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához. Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.
+Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább). Az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek. A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához. Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.
+
 
 Például egy tipikus televízió terméknek a következő attribútumai lehetnek.
 
@@ -53,7 +54,7 @@ Például egy tipikus televízió terméknek a következő attribútumai lehetne
 
 ## <a name="attributes-and-attribute-types"></a>Attribútumok és attribútumtípusok
 
-Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az adott attribútumba bevihető adatok típusát azonosítja. A Finance and Operations jelenleg a következő attribútumtípusokat támogatja:
+Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az adott attribútumba bevihető adatok típusát azonosítja. A következő attribútumtípusok támogatottak:
 
 - **Pénznem** – Ez a típus egy pénznemértékeket támogat. Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.
 - **DateTime** – Ez a típus a dátum és idő értékeket támogatja Lehet kötött, vagy nyitva is hagyható.
@@ -63,9 +64,9 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
 - **Boolean** – Ez a típus egy bináris értéket támogat (**igaz** vagy **hamis**).
 - **Hivatkozás** – Ez a típus más jellemzőkre hivatkozik.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Attribútumtípusok beállítása a Finance and Operations alkalmazásban
+### <a name="set-up-attribute-types"></a>Attribútumtípusok beállítása
 
-1. Jelentkezzen be a Finance and Operations háttérirodai ügyfelébe kiskereskedelmi termékkihelyezési vezetőként.
+1. Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.
 2. Ugorjon a következő útvonalra: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Kategóriák és attribútumok** &gt; **Attribútumtípusok**.
 3. Hozzon létre két **Szöveg** típusú attribútumtípust, állítsa a **Rögzített lista** lehetőséget az **Igen** beállításra, majd adja hozzá az értékek listáját:
 
@@ -74,7 +75,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
 
 ![Attribútumtípusok](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Attribútum beállítása a Finance and Operations alkalmazásban
+### <a name="set-up-an-attribute"></a>Attribútum beállítása
 
 1. Jelentkezzen be a háttérirodai ügyfélbe kiskereskedelmi termékkihelyezési vezetőként.
 2. Ugorjon a következő útvonalra: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Kategóriák és attribútumok** &gt; **Attribútumok**.
@@ -101,13 +102,13 @@ Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** 
 - Kis- és nagybetűk, illetve formázás figyelmen kívül hagyása
 - Teljes egyezés
 
-Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak. Bár a Finance and Operations nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK). Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben. Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább. Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.
+Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak. Bár a Retail nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK). Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben. Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább. Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.
 
 A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Attribútumok szűrési beállításai
 
-Az attribútumok szűrőbeállításaival határozható meg, hogyan jelennek meg a kiskereskedelmi pénztárban az attribútumok szűrői. Egy attribútum szűrőbeállításainak eléréséhez az **Attribútumok** lapon a Finance and Operations alkalmazásban válassza ki az attribútumot, majd a műveleti ablakban válassza a **Szűrőbeállítások** lehetőséget.
+Az attribútumok szűrőbeállításaival határozható meg, hogyan jelennek meg a kiskereskedelmi pénztárban az attribútumok szűrői. Egy attribútum szűrőbeállításainak eléréséhez az **Attribútumok** lapon válassza ki az attribútumot, majd a műveleti ablakban válassza a **Szűrőbeállítások** lehetőséget.
 
 A **Szűrőmegjelenítési beállítások** lap tartalmazza a következő mezőket:
 
@@ -233,7 +234,7 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
     - Csatornatermék-attribútumok
 
     > [!NOTE]
-    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden kiskereskedelmi termékre vonatkoznak.
 
 ![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
     - Csatornatermék-attribútumok
 
     > [!NOTE]
-    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden kiskereskedelmi termékre vonatkoznak.
