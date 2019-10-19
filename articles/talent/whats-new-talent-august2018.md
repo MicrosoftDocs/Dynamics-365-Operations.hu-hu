@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. augusztus)
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
@@ -18,72 +18,72 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 3327939137486038b9002029c7c9e8d65dfa2f64
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: db7c91ea6599bde7d4c589a021d2d3b262e57ec9
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742609"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010452"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a><span data-ttu-id="8840a-103">Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)</span><span class="sxs-lookup"><span data-stu-id="8840a-103">What's new or changed in Dynamics 365 for Talent Core HR (August 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-august-2018"></a><span data-ttu-id="97730-103">Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. augusztus)</span><span class="sxs-lookup"><span data-stu-id="97730-103">What's new or changed in Dynamics 365 Talent: Core HR (August 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="8840a-104">**Build 8.1.104**</span><span class="sxs-lookup"><span data-stu-id="8840a-104">**Build 8.1.104**</span></span>
+<span data-ttu-id="97730-104">**Build 8.1.104**</span><span class="sxs-lookup"><span data-stu-id="97730-104">**Build 8.1.104**</span></span>
 
-<span data-ttu-id="8840a-105">Ez a témakör a Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le.</span><span class="sxs-lookup"><span data-stu-id="8840a-105">This topic describes features that are either new or changed in Dynamics 365 for Talent Core HR.</span></span>
+<span data-ttu-id="97730-105">Ez a témakör a Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.</span><span class="sxs-lookup"><span data-stu-id="97730-105">This topic describes features that are either new or changed in Dynamics 365 Talent: Core HR.</span></span>
 
-## <a name="view-expiring-records-in-manager-self-service"></a><span data-ttu-id="8840a-106">Lejáró rekordok megtekintése a Vezetői önkiszolgáló szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="8840a-106">View expiring records in Manager self service</span></span>
+## <a name="view-expiring-records-in-manager-self-service"></a><span data-ttu-id="97730-106">Lejáró rekordok megtekintése a Vezetői önkiszolgáló szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="97730-106">View expiring records in Manager self service</span></span>
 
-<span data-ttu-id="8840a-107">Mostantól megtekintheti a lejáró rekordokat a Vezetői önkiszolgáló szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="8840a-107">You can now view expiring records in Manager self-service.</span></span> <span data-ttu-id="8840a-108">Az új lehetőségek a lehetővé teszik annak beállítását, hogy milyen információk lesznek elérhetők megtekintésre a vezetők számára.</span><span class="sxs-lookup"><span data-stu-id="8840a-108">New options are allow you to configure what information will be available for managers to view.</span></span> <span data-ttu-id="8840a-109">Ezek közé az adatok közé tartoznak a következők:</span><span class="sxs-lookup"><span data-stu-id="8840a-109">These include:</span></span>
+<span data-ttu-id="97730-107">Mostantól megtekintheti a lejáró rekordokat a Vezetői önkiszolgáló szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="97730-107">You can now view expiring records in Manager self-service.</span></span> <span data-ttu-id="97730-108">Az új lehetőségek a lehetővé teszik annak beállítását, hogy milyen információk lesznek elérhetők megtekintésre a vezetők számára.</span><span class="sxs-lookup"><span data-stu-id="97730-108">New options are allow you to configure what information will be available for managers to view.</span></span> <span data-ttu-id="97730-109">Ezek közé az adatok közé tartoznak a következők:</span><span class="sxs-lookup"><span data-stu-id="97730-109">These include:</span></span>
 
--   <span data-ttu-id="8840a-110">Diplomák</span><span class="sxs-lookup"><span data-stu-id="8840a-110">Certificates</span></span>
+-   <span data-ttu-id="97730-110">Diplomák</span><span class="sxs-lookup"><span data-stu-id="97730-110">Certificates</span></span>
 
--   <span data-ttu-id="8840a-111">Azonosítószámok</span><span class="sxs-lookup"><span data-stu-id="8840a-111">Identification numbers</span></span>
+-   <span data-ttu-id="97730-111">Azonosítószámok</span><span class="sxs-lookup"><span data-stu-id="97730-111">Identification numbers</span></span>
 
--   <span data-ttu-id="8840a-112">Próbaidőszakok</span><span class="sxs-lookup"><span data-stu-id="8840a-112">Probation periods</span></span>
+-   <span data-ttu-id="97730-112">Próbaidőszakok</span><span class="sxs-lookup"><span data-stu-id="97730-112">Probation periods</span></span>
 
--   <span data-ttu-id="8840a-113">Szűrések</span><span class="sxs-lookup"><span data-stu-id="8840a-113">Screenings</span></span>
+-   <span data-ttu-id="97730-113">Szűrések</span><span class="sxs-lookup"><span data-stu-id="97730-113">Screenings</span></span>
 
--   <span data-ttu-id="8840a-114">Tesztek</span><span class="sxs-lookup"><span data-stu-id="8840a-114">Tests</span></span>
+-   <span data-ttu-id="97730-114">Tesztek</span><span class="sxs-lookup"><span data-stu-id="97730-114">Tests</span></span>
 
-<span data-ttu-id="8840a-115">Ez a funkció arra is lehetőséget nyújt, hogy megadja a tartományt, amelyben lejáró rekordokat keres.</span><span class="sxs-lookup"><span data-stu-id="8840a-115">This feature also gives you the ability to specify the range of days in which to look for expiring records.</span></span>
+<span data-ttu-id="97730-115">Ez a funkció arra is lehetőséget nyújt, hogy megadja a tartományt, amelyben lejáró rekordokat keres.</span><span class="sxs-lookup"><span data-stu-id="97730-115">This feature also gives you the ability to specify the range of days in which to look for expiring records.</span></span>
 
-## <a name="configurable-transfer-actions"></a><span data-ttu-id="8840a-116">Konfigurálható átviteli műveletek</span><span class="sxs-lookup"><span data-stu-id="8840a-116">Configurable transfer actions</span></span>
+## <a name="configurable-transfer-actions"></a><span data-ttu-id="97730-116">Konfigurálható átviteli műveletek</span><span class="sxs-lookup"><span data-stu-id="97730-116">Configurable transfer actions</span></span>
 
-<span data-ttu-id="8840a-117">Beállítható szerepkörönként, hogy milyen beállítások legyenek elérhetők az átmozgatási kérelem bevitelekor.</span><span class="sxs-lookup"><span data-stu-id="8840a-117">You can configure by role the options that will be available during the entry of a transfer request.</span></span> <span data-ttu-id="8840a-118">Ez a funkció további rugalmasságot tesz lehetővé egy szervezet szerepkörei között.</span><span class="sxs-lookup"><span data-stu-id="8840a-118">This feature provides additional flexibility across the roles in an organization.</span></span>
+<span data-ttu-id="97730-117">Beállítható szerepkörönként, hogy milyen beállítások legyenek elérhetők az átmozgatási kérelem bevitelekor.</span><span class="sxs-lookup"><span data-stu-id="97730-117">You can configure by role the options that will be available during the entry of a transfer request.</span></span> <span data-ttu-id="97730-118">Ez a funkció további rugalmasságot tesz lehetővé egy szervezet szerepkörei között.</span><span class="sxs-lookup"><span data-stu-id="97730-118">This feature provides additional flexibility across the roles in an organization.</span></span>
 
-<span data-ttu-id="8840a-119">Ha például az alkalmazott átvitelét kérő vezetőknek lehet, hogy nincs hozzáférése ahhoz hogy kompenzációs összegeket javasoljanak vagy adjanak meg vagy kiválasszák a feladatlistákat, amelyek társítva lesznek az átviteli kérelemhez.</span><span class="sxs-lookup"><span data-stu-id="8840a-119">For example, managers requesting employee transfers may not have access to suggest or enter compensation amounts or select the task lists that will be associated with the transfer request.</span></span> <span data-ttu-id="8840a-120">Ebben az esetben a vezetők létrehozáshatnak és beküldhetnek étviteli kérelmeket de nem adhatnak meg kompenzációs vagy feladatlista hozzárendeléseket.</span><span class="sxs-lookup"><span data-stu-id="8840a-120">In this case, managers can create and submit transfer requests but are not allowed to enter compensation or task list assignments.</span></span> <span data-ttu-id="8840a-121">Ugyanebben a konfigurációban a HR hozzá tudja rendelni az új kompenzációs értékeket, valamint, valamit hozzá tud rendelni minden olyan további ellenőrzőlistát, amelyet ki kell tölteni az átvitel befejezése eredményeképpen.</span><span class="sxs-lookup"><span data-stu-id="8840a-121">In this same configuration, HR will be able to assign the new compensation values as well as assign any additional checklists to be completed as a result of the transfer completing.</span></span>
+<span data-ttu-id="97730-119">Ha például az alkalmazott átvitelét kérő vezetőknek lehet, hogy nincs hozzáférése ahhoz hogy kompenzációs összegeket javasoljanak vagy adjanak meg vagy kiválasszák a feladatlistákat, amelyek társítva lesznek az átviteli kérelemhez.</span><span class="sxs-lookup"><span data-stu-id="97730-119">For example, managers requesting employee transfers may not have access to suggest or enter compensation amounts or select the task lists that will be associated with the transfer request.</span></span> <span data-ttu-id="97730-120">Ebben az esetben a vezetők létrehozáshatnak és beküldhetnek étviteli kérelmeket de nem adhatnak meg kompenzációs vagy feladatlista hozzárendeléseket.</span><span class="sxs-lookup"><span data-stu-id="97730-120">In this case, managers can create and submit transfer requests but are not allowed to enter compensation or task list assignments.</span></span> <span data-ttu-id="97730-121">Ugyanebben a konfigurációban a HR hozzá tudja rendelni az új kompenzációs értékeket, valamint, valamit hozzá tud rendelni minden olyan további ellenőrzőlistát, amelyet ki kell tölteni az átvitel befejezése eredményeképpen.</span><span class="sxs-lookup"><span data-stu-id="97730-121">In this same configuration, HR will be able to assign the new compensation values as well as assign any additional checklists to be completed as a result of the transfer completing.</span></span>
 
-<span data-ttu-id="8840a-122">Alapértelmezés szerint az új beállítási lehetőségek nem módosítják a szolgáltatásokat ezen frissítés előtt.</span><span class="sxs-lookup"><span data-stu-id="8840a-122">By default, the new configuration options are set to not change the capabilities prior to this update.</span></span>
+<span data-ttu-id="97730-122">Alapértelmezés szerint az új beállítási lehetőségek nem módosítják a szolgáltatásokat ezen frissítés előtt.</span><span class="sxs-lookup"><span data-stu-id="97730-122">By default, the new configuration options are set to not change the capabilities prior to this update.</span></span>
 
-## <a name="leave-and-absence"></a><span data-ttu-id="8840a-123">Szabadság és távollét</span><span class="sxs-lookup"><span data-stu-id="8840a-123">Leave and absence</span></span>
+## <a name="leave-and-absence"></a><span data-ttu-id="97730-123">Szabadság és távollét</span><span class="sxs-lookup"><span data-stu-id="97730-123">Leave and absence</span></span>
 
-<span data-ttu-id="8840a-124">További dátummezők érhetők el a Szabadság és távollét szakaszban.</span><span class="sxs-lookup"><span data-stu-id="8840a-124">There are now additional Date fields available in Leave and Absence.</span></span>
+<span data-ttu-id="97730-124">További dátummezők érhetők el a Szabadság és távollét szakaszban.</span><span class="sxs-lookup"><span data-stu-id="97730-124">There are now additional Date fields available in Leave and Absence.</span></span>
 
-<span data-ttu-id="8840a-125">Ezzel a szolgáltatással beállíthatja a halmozódási időszak alapját a terv szintjén, hogy bizonyos alkalmazotti dátumokat használjon.</span><span class="sxs-lookup"><span data-stu-id="8840a-125">With this feature you can set the accrual period basis at the plan level to use specific employee dates.</span></span> <span data-ttu-id="8840a-126">Ez lehetővé teszi a terv kezdési dátumától eltérő dátumok használatát a távollét halmozódási folyamatánál.</span><span class="sxs-lookup"><span data-stu-id="8840a-126">This allows for dates other than the plan start date to be used during the leave accrual process.</span></span> <span data-ttu-id="8840a-127">Alkalmazottspecifikus dátumok vonatkozóan lehetőségek a következő értékeket tartalmazzák:</span><span class="sxs-lookup"><span data-stu-id="8840a-127">Options for employee specific dates include the following values:</span></span>
+<span data-ttu-id="97730-125">Ezzel a szolgáltatással beállíthatja a halmozódási időszak alapját a terv szintjén, hogy bizonyos alkalmazotti dátumokat használjon.</span><span class="sxs-lookup"><span data-stu-id="97730-125">With this feature you can set the accrual period basis at the plan level to use specific employee dates.</span></span> <span data-ttu-id="97730-126">Ez lehetővé teszi a terv kezdési dátumától eltérő dátumok használatát a távollét halmozódási folyamatánál.</span><span class="sxs-lookup"><span data-stu-id="97730-126">This allows for dates other than the plan start date to be used during the leave accrual process.</span></span> <span data-ttu-id="97730-127">Alkalmazottspecifikus dátumok vonatkozóan lehetőségek a következő értékeket tartalmazzák:</span><span class="sxs-lookup"><span data-stu-id="97730-127">Options for employee specific dates include the following values:</span></span>
 
--   <span data-ttu-id="8840a-128">Egyéni (jelen frissítés előtt is elérhető)</span><span class="sxs-lookup"><span data-stu-id="8840a-128">Custom (available prior to this update)</span></span>
+-   <span data-ttu-id="97730-128">Egyéni (jelen frissítés előtt is elérhető)</span><span class="sxs-lookup"><span data-stu-id="97730-128">Custom (available prior to this update)</span></span>
 
--   <span data-ttu-id="8840a-129">Évforduló dátuma</span><span class="sxs-lookup"><span data-stu-id="8840a-129">Anniversary date</span></span>
+-   <span data-ttu-id="97730-129">Évforduló dátuma</span><span class="sxs-lookup"><span data-stu-id="97730-129">Anniversary date</span></span>
 
--   <span data-ttu-id="8840a-130">Eredeti felvételi dátum</span><span class="sxs-lookup"><span data-stu-id="8840a-130">Original hire date</span></span>
+-   <span data-ttu-id="97730-130">Eredeti felvételi dátum</span><span class="sxs-lookup"><span data-stu-id="97730-130">Original hire date</span></span>
 
--   <span data-ttu-id="8840a-131">Szolgálati idő dátuma</span><span class="sxs-lookup"><span data-stu-id="8840a-131">Seniority date</span></span>
+-   <span data-ttu-id="97730-131">Szolgálati idő dátuma</span><span class="sxs-lookup"><span data-stu-id="97730-131">Seniority date</span></span>
 
--   <span data-ttu-id="8840a-132">A dolgozó helyesbített kezdési dátuma</span><span class="sxs-lookup"><span data-stu-id="8840a-132">Worker’s adjusted start date</span></span>
+-   <span data-ttu-id="97730-132">A dolgozó helyesbített kezdési dátuma</span><span class="sxs-lookup"><span data-stu-id="97730-132">Worker’s adjusted start date</span></span>
 
--   <span data-ttu-id="8840a-133">A dolgozó kezdési dátuma</span><span class="sxs-lookup"><span data-stu-id="8840a-133">Worker’s start date</span></span>
+-   <span data-ttu-id="97730-133">A dolgozó kezdési dátuma</span><span class="sxs-lookup"><span data-stu-id="97730-133">Worker’s start date</span></span>
 
-<span data-ttu-id="8840a-134">Ha úgy van konfigurálva, hogy az egyik alkalmazottspecifikus dátumot használja , a belépési folyamat a megadott dátumot használja a halmozódási időszakok kiszámításához.</span><span class="sxs-lookup"><span data-stu-id="8840a-134">When configured to use one of the employee specific dates, the enrollment process will use the specified date to calculate the accrual periods.</span></span> <span data-ttu-id="8840a-135">A halmozódási időszak alapja megjelenik az alkalmazott belépési konstrukciójában, így megtudhatja, mi van használatban a halmozódási folyamatban.</span><span class="sxs-lookup"><span data-stu-id="8840a-135">The accrual period basis is also displayed on the employee’s plan enrollment to help you understand what’s being used during the accrual process.</span></span>
+<span data-ttu-id="97730-134">Ha úgy van konfigurálva, hogy az egyik alkalmazottspecifikus dátumot használja , a belépési folyamat a megadott dátumot használja a halmozódási időszakok kiszámításához.</span><span class="sxs-lookup"><span data-stu-id="97730-134">When configured to use one of the employee specific dates, the enrollment process will use the specified date to calculate the accrual periods.</span></span> <span data-ttu-id="97730-135">A halmozódási időszak alapja megjelenik az alkalmazott belépési konstrukciójában, így megtudhatja, mi van használatban a halmozódási folyamatban.</span><span class="sxs-lookup"><span data-stu-id="97730-135">The accrual period basis is also displayed on the employee’s plan enrollment to help you understand what’s being used during the accrual process.</span></span>
 
-## <a name="microsoft-word-integration"></a><span data-ttu-id="8840a-136">Microsoft Word-integráció</span><span class="sxs-lookup"><span data-stu-id="8840a-136">Microsoft Word integration</span></span>
+## <a name="microsoft-word-integration"></a><span data-ttu-id="97730-136">Microsoft Word-integráció</span><span class="sxs-lookup"><span data-stu-id="97730-136">Microsoft Word integration</span></span>
 
-<span data-ttu-id="8840a-137">Dokumentumsablonok az egész Core HR-ben engedélyezve vannak.</span><span class="sxs-lookup"><span data-stu-id="8840a-137">Document templates have been enabled throughout Core HR.</span></span> <span data-ttu-id="8840a-138">Ezzel a funkcióval létrehozhat leveleket és jelentéseket az Ón által létrehozott Word-sablonok alapján.</span><span class="sxs-lookup"><span data-stu-id="8840a-138">This feature allows you to create letters and reports based on Word templates that you create.</span></span>
+<span data-ttu-id="97730-137">Dokumentumsablonok az egész Core HR-ben engedélyezve vannak.</span><span class="sxs-lookup"><span data-stu-id="97730-137">Document templates have been enabled throughout Core HR.</span></span> <span data-ttu-id="97730-138">Ezzel a funkcióval létrehozhat leveleket és jelentéseket az Ón által létrehozott Word-sablonok alapján.</span><span class="sxs-lookup"><span data-stu-id="97730-138">This feature allows you to create letters and reports based on Word templates that you create.</span></span>
 
-<span data-ttu-id="8840a-139">Ezzel a funkcióval kapcsolatos további információk az [Office integrációs oktatóanyagban](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json) érhetők el.</span><span class="sxs-lookup"><span data-stu-id="8840a-139">Additional information about this feature is available in the [Office integration tutorial](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).</span></span>
+<span data-ttu-id="97730-139">Ezzel a funkcióval kapcsolatos további információk az [Office integrációs oktatóanyagban](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json) érhetők el.</span><span class="sxs-lookup"><span data-stu-id="97730-139">Additional information about this feature is available in the [Office integration tutorial](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).</span></span>
 
 
-## <a name="other-fixes"></a><span data-ttu-id="8840a-140">Egyéb javítások</span><span class="sxs-lookup"><span data-stu-id="8840a-140">Other fixes</span></span>
+## <a name="other-fixes"></a><span data-ttu-id="97730-140">Egyéb javítások</span><span class="sxs-lookup"><span data-stu-id="97730-140">Other fixes</span></span>
 
-<span data-ttu-id="8840a-141">Ez a verzió számos hibajavítást is tartalmaz, új entitások hozzáadása, meglévő entitások javításai és lokalizált címkemódosítások</span><span class="sxs-lookup"><span data-stu-id="8840a-141">This release also includes a number of bug fixes, the addition of new entities, fixes to existing entities, and localized label changes.</span></span>
+<span data-ttu-id="97730-141">Ez a verzió számos hibajavítást is tartalmaz, új entitások hozzáadása, meglévő entitások javításai és lokalizált címkemódosítások</span><span class="sxs-lookup"><span data-stu-id="97730-141">This release also includes a number of bug fixes, the addition of new entities, fixes to existing entities, and localized label changes.</span></span>

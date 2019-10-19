@@ -1,6 +1,6 @@
 ---
-title: Felvételi sablon létrehozása a Dynamics 365 for Talent - Onboard használatával
-description: Ez a témakör bemutatja, hogyan használhatja a Dynamics 365 for Talent - Onboard alkalmazást arra, hogy sablont hozzon létre egy bevezető útmutatóhoz az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
+title: Felvételi sablon létrehozása a Dynamics 365 Talent – Onboard használatával
+description: Ez a témakör bemutatja, hogyan használhatja a Dynamics 365 Talent – Onboard alkalmazást arra, hogy sablont hozzon létre egy bevezető útmutatóhoz az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,49 +16,49 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731500"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009877"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a><span data-ttu-id="a9de2-104">Felvételi sablon létrehozása a Dynamics 365 for Talent: Onboard használatával</span><span class="sxs-lookup"><span data-stu-id="a9de2-104">Create an onboarding template by using Dynamics 365 for Talent: Onboard</span></span>
+# <a name="create-an-onboarding-template"></a><span data-ttu-id="92090-104">Felvételi sablon létrehozása</span><span class="sxs-lookup"><span data-stu-id="92090-104">Create an onboarding template</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a9de2-105">A Microsoft Dynamics 365 for Talent: Onboard számos olyan sablont kínál, amelyek segítségével a lehető leggyorsabban létrehozhatja felvételi útmutatóját.</span><span class="sxs-lookup"><span data-stu-id="a9de2-105">Microsoft Dynamics 365 for Talent: Onboard provides various templates that can help you create an onboarding guide as quickly as possible.</span></span> <span data-ttu-id="a9de2-106">Felhasználhat egyet vagy többet ezen sablonok közül, vagy létrehozhatja a saját sablonjait.</span><span class="sxs-lookup"><span data-stu-id="a9de2-106">You can use one or more of these templates, or you can create your own templates.</span></span> <span data-ttu-id="a9de2-107">Az Onboard mintaszöveget is kínál, amelyet felhasználhat a saját sablonjai létrehozásakor.</span><span class="sxs-lookup"><span data-stu-id="a9de2-107">Onboard provides sample text that you can use when you create your own templates.</span></span> <span data-ttu-id="a9de2-108">Emitatt a folyamat még akkor is könnyű, ha a nulláról kezdi az útmutató létrehozását.</span><span class="sxs-lookup"><span data-stu-id="a9de2-108">Therefore, the process is easy even if you start from scratch.</span></span>
+<span data-ttu-id="92090-105">A Microsoft Dynamics 365 Talent: Onboard – Onboard számos olyan sablont kínál, amelyek segítségével a lehető leggyorsabban létrehozhatja felvételi útmutatóját.</span><span class="sxs-lookup"><span data-stu-id="92090-105">Microsoft Dynamics 365 Talent: Onboard provides various templates that can help you create an onboarding guide as quickly as possible.</span></span> <span data-ttu-id="92090-106">Felhasználhat egyet vagy többet ezen sablonok közül, vagy létrehozhatja a saját sablonjait.</span><span class="sxs-lookup"><span data-stu-id="92090-106">You can use one or more of these templates, or you can create your own templates.</span></span> <span data-ttu-id="92090-107">Az Onboard mintaszöveget is kínál, amelyet felhasználhat a saját sablonjai létrehozásakor.</span><span class="sxs-lookup"><span data-stu-id="92090-107">Onboard provides sample text that you can use when you create your own templates.</span></span> <span data-ttu-id="92090-108">Emitatt a folyamat még akkor is könnyű, ha a nulláról kezdi az útmutató létrehozását.</span><span class="sxs-lookup"><span data-stu-id="92090-108">Therefore, the process is easy even if you start from scratch.</span></span>
 
-## <a name="create-an-onboarding-template-from-an-existing-template"></a><span data-ttu-id="a9de2-109">Felvételi sablon létrehozása meglévő sablonból</span><span class="sxs-lookup"><span data-stu-id="a9de2-109">Create an onboarding template from an existing template</span></span>
+## <a name="create-an-onboarding-template-from-an-existing-template"></a><span data-ttu-id="92090-109">Felvételi sablon létrehozása meglévő sablonból</span><span class="sxs-lookup"><span data-stu-id="92090-109">Create an onboarding template from an existing template</span></span>
 
-1. <span data-ttu-id="a9de2-110">A bal oldali menüben válassza a **Sablonok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="a9de2-110">On the left menu, select **Templates**.</span></span>
-2. <span data-ttu-id="a9de2-111">A **Népszerű sablonok a tárból** vagy a **Saját sablonok** alatt válasszon sablont.</span><span class="sxs-lookup"><span data-stu-id="a9de2-111">Under **Popular templates from the gallery** or **My templates**, select a template.</span></span> <span data-ttu-id="a9de2-112">További sablonokat úgy jeleníthet meg, hogy **A sablontárban továbbiak találhatók** lehetőségre kattint.</span><span class="sxs-lookup"><span data-stu-id="a9de2-112">To view more templates, select **More in template gallery**.</span></span>
-3. <span data-ttu-id="a9de2-113">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="a9de2-113">Follow one of these steps:</span></span>
+1. <span data-ttu-id="92090-110">A bal oldali menüben válassza a **Sablonok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="92090-110">On the left menu, select **Templates**.</span></span>
+2. <span data-ttu-id="92090-111">A **Népszerű sablonok a tárból** vagy a **Saját sablonok** alatt válasszon sablont.</span><span class="sxs-lookup"><span data-stu-id="92090-111">Under **Popular templates from the gallery** or **My templates**, select a template.</span></span> <span data-ttu-id="92090-112">További sablonokat úgy jeleníthet meg, hogy **A sablontárban továbbiak találhatók** lehetőségre kattint.</span><span class="sxs-lookup"><span data-stu-id="92090-112">To view more templates, select **More in template gallery**.</span></span>
+3. <span data-ttu-id="92090-113">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="92090-113">Follow one of these steps:</span></span>
 
-    - <span data-ttu-id="a9de2-114">Ha a sablon a galériából származik, válassza a **Mentés sablonként** parancsot, adjon meg egy új nevet a sablonnak, majd válassza a **Mentés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="a9de2-114">If the template is from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**.</span></span>
-    - <span data-ttu-id="a9de2-115">Ha a sablon a **Saját sablonok** közül származik, válassza a **Mentés sablonként** parancsot, adjon meg egy új nevet a sablonnak, majd válassza a **Mentés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="a9de2-115">If the template is from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.</span></span>
+    - <span data-ttu-id="92090-114">Ha a sablon a galériából származik, válassza a **Mentés sablonként** parancsot, adjon meg egy új nevet a sablonnak, majd válassza a **Mentés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="92090-114">If the template is from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**.</span></span>
+    - <span data-ttu-id="92090-115">Ha a sablon a **Saját sablonok** közül származik, válassza a **Mentés sablonként** parancsot, adjon meg egy új nevet a sablonnak, majd válassza a **Mentés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="92090-115">If the template is from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.</span></span>
 
-    <span data-ttu-id="a9de2-116">[![Sablon létrehozása meglévő sablonból](./media/onboard-save-template.png)](./media/onboard-save-template.png)</span><span class="sxs-lookup"><span data-stu-id="a9de2-116">[![Creating a template from an existing template](./media/onboard-save-template.png)](./media/onboard-save-template.png)</span></span>
+    <span data-ttu-id="92090-116">[![Sablon létrehozása meglévő sablonból](./media/onboard-save-template.png)](./media/onboard-save-template.png)</span><span class="sxs-lookup"><span data-stu-id="92090-116">[![Creating a template from an existing template](./media/onboard-save-template.png)](./media/onboard-save-template.png)</span></span>
 
-## <a name="create-a-new-onboarding-template"></a><span data-ttu-id="a9de2-117">Új felvételi sablon létrehozása</span><span class="sxs-lookup"><span data-stu-id="a9de2-117">Create a new onboarding template</span></span>
+## <a name="create-a-new-onboarding-template"></a><span data-ttu-id="92090-117">Új felvételi sablon létrehozása</span><span class="sxs-lookup"><span data-stu-id="92090-117">Create a new onboarding template</span></span>
 
-1. <span data-ttu-id="a9de2-118">A bal oldali menüben válassza a **Sablonok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="a9de2-118">On the left menu, select **Templates**.</span></span>
-2. <span data-ttu-id="a9de2-119">A **Saját sablonok** területen válassza a **Hozzáadás** (plusz jel \[**+**\]) csempét.</span><span class="sxs-lookup"><span data-stu-id="a9de2-119">Under **My templates**, select the **Add** (plus sign \[**+**\]) tile.</span></span>
+1. <span data-ttu-id="92090-118">A bal oldali menüben válassza a **Sablonok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="92090-118">On the left menu, select **Templates**.</span></span>
+2. <span data-ttu-id="92090-119">A **Saját sablonok** területen válassza a **Hozzáadás** (plusz jel \[**+**\]) csempét.</span><span class="sxs-lookup"><span data-stu-id="92090-119">Under **My templates**, select the **Add** (plus sign \[**+**\]) tile.</span></span>
 
-    <span data-ttu-id="a9de2-120">[![Új sablon létrehozása](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)</span><span class="sxs-lookup"><span data-stu-id="a9de2-120">[![Creating a new template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)</span></span>
+    <span data-ttu-id="92090-120">[![Új sablon létrehozása](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)</span><span class="sxs-lookup"><span data-stu-id="92090-120">[![Creating a new template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)</span></span>
 
-3. <span data-ttu-id="a9de2-121">Adja meg a sablon nevét az **Útmutatósablon létrehozása** párbeszédpanelen, majd kattintson a **Mentés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a9de2-121">In the **Create a guide template** dialog box, enter a name for the template, and then select **Save**.</span></span>
+3. <span data-ttu-id="92090-121">Adja meg a sablon nevét az **Útmutatósablon létrehozása** párbeszédpanelen, majd kattintson a **Mentés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="92090-121">In the **Create a guide template** dialog box, enter a name for the template, and then select **Save**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="a9de2-122">Következő lépések</span><span class="sxs-lookup"><span data-stu-id="a9de2-122">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="92090-122">Következő lépések</span><span class="sxs-lookup"><span data-stu-id="92090-122">Next steps</span></span>
 
-- [<span data-ttu-id="a9de2-123">Bevezetési útmutatók és sablonok szerkesztése</span><span class="sxs-lookup"><span data-stu-id="a9de2-123">Edit onboarding guides and templates</span></span>](./onboard-edit-guides-templates.md)
-- [<span data-ttu-id="a9de2-124">Osszon meg tartalmakat más közreműködőkkel</span><span class="sxs-lookup"><span data-stu-id="a9de2-124">Share content with other contributors</span></span>](./onboard-share-template.md)
-- [<span data-ttu-id="a9de2-125">A feladatok és az alkalmazottak és bevezetési állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="a9de2-125">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
-- [<span data-ttu-id="a9de2-126">Toborzócsoportok létrehozása az Onboard alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="a9de2-126">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
+- [<span data-ttu-id="92090-123">Bevezetési útmutatók és sablonok szerkesztése</span><span class="sxs-lookup"><span data-stu-id="92090-123">Edit onboarding guides and templates</span></span>](./onboard-edit-guides-templates.md)
+- [<span data-ttu-id="92090-124">Osszon meg tartalmakat más közreműködőkkel</span><span class="sxs-lookup"><span data-stu-id="92090-124">Share content with other contributors</span></span>](./onboard-share-template.md)
+- [<span data-ttu-id="92090-125">A feladatok és az alkalmazottak és bevezetési állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="92090-125">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
+- [<span data-ttu-id="92090-126">Toborzócsoportok létrehozása az Onboard alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="92090-126">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
 
-### <a name="see-also"></a><span data-ttu-id="a9de2-127">Lásd még</span><span class="sxs-lookup"><span data-stu-id="a9de2-127">See also</span></span>
+### <a name="see-also"></a><span data-ttu-id="92090-127">Lásd még</span><span class="sxs-lookup"><span data-stu-id="92090-127">See also</span></span>
 
-- [<span data-ttu-id="a9de2-128">Próbálja ki vagy vásárolja meg az Onboard alkalmazást</span><span class="sxs-lookup"><span data-stu-id="a9de2-128">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
-- [<span data-ttu-id="a9de2-129">Újdonságok</span><span class="sxs-lookup"><span data-stu-id="a9de2-129">What's new</span></span>](./whats-new.md)
-- [<span data-ttu-id="a9de2-130">Programverzióra vonatkozó megjegyzések</span><span class="sxs-lookup"><span data-stu-id="a9de2-130">Release notes</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
-- [<span data-ttu-id="a9de2-131">Támogatás kérése</span><span class="sxs-lookup"><span data-stu-id="a9de2-131">Get support</span></span>](./talent-support.md)
+- [<span data-ttu-id="92090-128">Próbálja ki vagy vásárolja meg az Onboard alkalmazást</span><span class="sxs-lookup"><span data-stu-id="92090-128">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
+- [<span data-ttu-id="92090-129">Újdonságok</span><span class="sxs-lookup"><span data-stu-id="92090-129">What's new</span></span>](./whats-new.md)
+- [<span data-ttu-id="92090-130">Programverzióra vonatkozó megjegyzések</span><span class="sxs-lookup"><span data-stu-id="92090-130">Release notes</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
+- [<span data-ttu-id="92090-131">Támogatás kérése</span><span class="sxs-lookup"><span data-stu-id="92090-131">Get support</span></span>](./talent-support.md)

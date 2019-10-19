@@ -1,0 +1,46 @@
+---
+title: Pénzügyi igazgatói áttekintés Power BI tartalom
+description: Ez a témakör a Pénzügyi igazgatói áttekintés Microsoft Power BI-tartalmat ismerteti.
+author: kweekley
+manager: AnnBe
+ms.date: 10/02/2010
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application user, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 513d645c5f419dd9f0b938b3354b00d7e221aa2d
+ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "2536893"
+---
+# <a name="cfo-overview-power-bi-content"></a><span data-ttu-id="82090-103">Pénzügyi igazgatói áttekintés Power BI tartalom</span><span class="sxs-lookup"><span data-stu-id="82090-103">CFO overview Power BI content</span></span>
+
+[!include [banner](../includes/banner.md)] 
+
+<span data-ttu-id="82090-104">Ez a témakör a **Pénzügyi igazgatói áttekintés** Microsoft Power BI-tartalmat ismerteti.</span><span class="sxs-lookup"><span data-stu-id="82090-104">This topic describes the **CFO overview** Microsoft Power BI content.</span></span> <span data-ttu-id="82090-105">Ez a Power BI tartalom a Microsoft Dynamics 365 for Finance and Operations 7.2-es verzióját használókra vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="82090-105">This Power BI content applies to those using Microsoft Dynamics 365 for Finance and Operations version 7.2.</span></span> <span data-ttu-id="82090-106">Ha a 7.3-as vagy újabb verziót használja, olvassa el [Pénzügyi információk](financial-insights.md) pontot.</span><span class="sxs-lookup"><span data-stu-id="82090-106">If you are using version 7.3 or later, please refer to [Financial Insights](financial-insights.md).</span></span>
+
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="82090-107">A Power BI tartalom elérése</span><span class="sxs-lookup"><span data-stu-id="82090-107">Accessing the Power BI content</span></span>
+
+<span data-ttu-id="82090-108">A **Pénzügyi igazgatói áttekintés** Power BI-tartalom jelentései a **Pénzügyi igazgatói áttekintés** munkaterületen jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="82090-108">Reports from the **CFO overview** Power BI content are shown in the **CFO overview** workspace.</span></span>
+
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="82090-109">Jelentések, amelyek a Power BI-tartalomban szerepelnek</span><span class="sxs-lookup"><span data-stu-id="82090-109">Reports that are included in the Power BI content</span></span>
+<span data-ttu-id="82090-110">A **Pénzügyi igazgatói áttekintés** Power BI-tartalom számos más Power BI-tartalom jelentéseinek összesítéséből, valamint a főkönyv egyes költségvetési és tényleges egyenlegekből áll.</span><span class="sxs-lookup"><span data-stu-id="82090-110">The **CFO overview** Power BI content is a composite of reports from various other Power BI content, together with some actual and budget balances from General ledger.</span></span> <span data-ttu-id="82090-111">Ezáltal ez a Power BI-tartalom áttekintést nyújt a szervezetről a pénzügyi igazgató számára.</span><span class="sxs-lookup"><span data-stu-id="82090-111">Therefore, this Power BI content gives the chief financial officer (CFO) an overview of the organization.</span></span>
+
+<span data-ttu-id="82090-112">A következő táblázat azt a Power BI-tartalmat jeleníti meg, amelyből a jelentéseket kimásolja a rendszer, illetve azokat, amelyek megjelennek a **Pénzügyi igazgatói áttekintés** munkaterületen.</span><span class="sxs-lookup"><span data-stu-id="82090-112">The following table shows the Power BI content that the reports are copied from and the reports that are provided in the **CFO overview** workspace.</span></span> <span data-ttu-id="82090-113">Hivatkozások találhatók a különböző Power BI-tartalmak dokumentációjához.</span><span class="sxs-lookup"><span data-stu-id="82090-113">Links are provided to the documentation for the various Power BI content.</span></span>
+
+| <span data-ttu-id="82090-114">A csomagban megtalálható Power BI-tartalmak</span><span class="sxs-lookup"><span data-stu-id="82090-114">Power BI content that is included</span></span> | <span data-ttu-id="82090-115">Jelentések</span><span class="sxs-lookup"><span data-stu-id="82090-115">Reports</span></span> |
+|-----------------------------------|---------|
+| [<span data-ttu-id="82090-116">Pénzügyi teljesítmény</span><span class="sxs-lookup"><span data-stu-id="82090-116">Financial performance</span></span>](financial-performance-power-bi-content-pack.md) | <ul><li><span data-ttu-id="82090-117">Bevétel</span><span class="sxs-lookup"><span data-stu-id="82090-117">Revenue</span></span></li><li><span data-ttu-id="82090-118">Kiadás</span><span class="sxs-lookup"><span data-stu-id="82090-118">Expenses</span></span></li><li><span data-ttu-id="82090-119">Nettó árbevétel</span><span class="sxs-lookup"><span data-stu-id="82090-119">Net income</span></span></li><li><span data-ttu-id="82090-120">Bruttó nyereség</span><span class="sxs-lookup"><span data-stu-id="82090-120">Gross margin</span></span></li><li><span data-ttu-id="82090-121">Likviditási ráta</span><span class="sxs-lookup"><span data-stu-id="82090-121">Current ratio</span></span></li><li><span data-ttu-id="82090-122">Kötelezettségek összesen</span><span class="sxs-lookup"><span data-stu-id="82090-122">Total accounts payable</span></span></li><li><span data-ttu-id="82090-123">Kinnlevőségek összesen</span><span class="sxs-lookup"><span data-stu-id="82090-123">Total accounts receivable</span></span></li><li><span data-ttu-id="82090-124">Költségek számlakategóriánként</span><span class="sxs-lookup"><span data-stu-id="82090-124">Expenses by account category</span></span></li><li><span data-ttu-id="82090-125">Költségek – Tényleges - költségvetés</span><span class="sxs-lookup"><span data-stu-id="82090-125">Expenses - Actual vs budget</span></span></li><li><span data-ttu-id="82090-126">Bevétel - Tényleges és költségvetés</span><span class="sxs-lookup"><span data-stu-id="82090-126">Revenue - Actual vs budget</span></span></li></ul> |
+| [<span data-ttu-id="82090-127">Készpénzáttekintés</span><span class="sxs-lookup"><span data-stu-id="82090-127">Cash overview</span></span>](../../../finance/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li><span data-ttu-id="82090-128">Pénzforgalmi előrejelzés</span><span class="sxs-lookup"><span data-stu-id="82090-128">Cash flow forecast</span></span></li><li><span data-ttu-id="82090-129">Bankszámlaegyenleg</span><span class="sxs-lookup"><span data-stu-id="82090-129">Bank account balance</span></span></li><li><span data-ttu-id="82090-130">Egyenleg pénznemenként</span><span class="sxs-lookup"><span data-stu-id="82090-130">Balance by currency</span></span></li></ul> |
+| [<span data-ttu-id="82090-131">Értékesítés és jövedelmezőség</span><span class="sxs-lookup"><span data-stu-id="82090-131">Sales and profitability</span></span>](sales-profitability-performance-content-pack.md) | <ul><li><span data-ttu-id="82090-132">Bevétel régiónként</span><span class="sxs-lookup"><span data-stu-id="82090-132">Revenue by region</span></span></li><li><span data-ttu-id="82090-133">10 vezető vevő bevétel alapján</span><span class="sxs-lookup"><span data-stu-id="82090-133">Top 10 customers by revenue</span></span></li><li><span data-ttu-id="82090-134">10 vezető termék bevétel alapján</span><span class="sxs-lookup"><span data-stu-id="82090-134">Top 10 products by revenue</span></span></li></ul> |
+| [<span data-ttu-id="82090-135">Követelések és beszedések kezelése</span><span class="sxs-lookup"><span data-stu-id="82090-135">Credit and collections management</span></span>](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li><span data-ttu-id="82090-136">Késedelmes vevő</span><span class="sxs-lookup"><span data-stu-id="82090-136">Customer past due</span></span></li><li><span data-ttu-id="82090-137">Hitelkeretet túllépő vevők</span><span class="sxs-lookup"><span data-stu-id="82090-137">Customers over credit limit</span></span></li><li><span data-ttu-id="82090-138">Korosított egyenlegek</span><span class="sxs-lookup"><span data-stu-id="82090-138">Aged balances</span></span></li></ul> |
+| [<span data-ttu-id="82090-139">Beszerzési és ráfordítási elemzés</span><span class="sxs-lookup"><span data-stu-id="82090-139">Purchase spend analysis</span></span>](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li><span data-ttu-id="82090-140">Beszerzések nap/hónap szerint</span><span class="sxs-lookup"><span data-stu-id="82090-140">Purchases by month/day</span></span></li><li><span data-ttu-id="82090-141">10 legfontosabb szállító a beszerzések alapján</span><span class="sxs-lookup"><span data-stu-id="82090-141">Top 10 vendors by purchases</span></span></li><li><span data-ttu-id="82090-142">10 legfontosabb termék a beszerzések alapján</span><span class="sxs-lookup"><span data-stu-id="82090-142">Top 10 products by purchases</span></span></li></ul> |
