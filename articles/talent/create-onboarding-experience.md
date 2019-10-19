@@ -1,6 +1,6 @@
 ---
 title: Első lépések az Onboard alkalmazásban
-description: Ez a témakör segítséget ad ez első lépésekben a Microsoft Dynamics 365 for Talent - Onboard megoldásban. Onboard segít abban, hogy az új munkavállalók lendületet kapjanak, azáltal, hogy egy olyan útmutatót biztosíthat nekik, ami átsegíti őket a beilleszkedés folyamatán.
+description: Ez a témakör segítséget ad ez első lépésekben a Microsoft Dynamics 365 Talent - Onboard megoldásban. Onboard segít abban, hogy az új munkavállalók lendületet kapjanak, azáltal, hogy egy olyan útmutatót biztosíthat nekik, ami átsegíti őket a beilleszkedés folyamatán.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731213"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008128"
 ---
 # <a name="get-started-with-onboard"></a>Első lépések az Onboard alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent: Onboard használatával segíthet az új alkalmazottaknak, hogy hatékonyabban teljesítsenek, és áttekintést kapjanak új szerepkörükről. A hatékony felkészítési folyamat segít az új munkatársaknak megismerni új szerepkörüket. Mindemellett lendületet ad nekik, hogy értékes kapcsolatokat hozzanak létre, ami segít gondoskodni sikereikről
+A Microsoft Dynamics 365 Talent: Onboard használatával segíthet az új alkalmazottaknak, hogy hatékonyabban teljesítsenek, és áttekintést kapjanak új szerepkörükről. A hatékony felkészítési folyamat segít az új munkatársaknak megismerni új szerepkörüket. Mindemellett lendületet ad nekik, hogy értékes kapcsolatokat hozzanak létre, ami segít gondoskodni sikereikről
 
 Az Onboard lehetővé teszi, hogy gyorsan létrehozzon egy felvételi útmutatót, amellyel üdvözölheti az új belépőket, és érdekessé teszi számukra a csatlakozást szervezetükhöz.
 

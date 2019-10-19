@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új vagy módosult elemei (2019. július 9.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új vagy módosult elemei (2019. július 9.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/09/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e5bb02a7128cb920a79a5f04ac910be205aeed41
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856377"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023953"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-9-2019"></a>A Dynamics 365 for Talent új vagy módosult elemei (2019. július 9.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 9.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ### <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
 #### <a name="job-approvals-appear-on-the-home-page"></a>A feladatok jóváhagyása megjelenik a kezdőképernyőn
@@ -42,15 +42,15 @@ A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek m
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
 A szakaszban ismertetett módosítások a 8.1.2374-ös buildre vonatkoznak.
 
-### <a name="platform-update-28"></a>28-as platformfrissítés
+### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 a Finance and Operations szolgáltatáshoz
 
-További információ a 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 for Finance and Operations platform update 28 verziójában (2019. július)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+További információ a Finance and Operations 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 28-es verziójában (2019. július)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service – entitástámogatás egyéni mezőkhöz 
 

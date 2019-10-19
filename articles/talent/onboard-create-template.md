@@ -1,6 +1,6 @@
 ---
-title: Felvételi sablon létrehozása a Dynamics 365 for Talent - Onboard használatával
-description: Ez a témakör bemutatja, hogyan használhatja a Dynamics 365 for Talent - Onboard alkalmazást arra, hogy sablont hozzon létre egy bevezető útmutatóhoz az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
+title: Felvételi sablon létrehozása a Dynamics 365 Talent – Onboard használatával
+description: Ez a témakör bemutatja, hogyan használhatja a Dynamics 365 Talent – Onboard alkalmazást arra, hogy sablont hozzon létre egy bevezető útmutatóhoz az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731500"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009877"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Felvételi sablon létrehozása a Dynamics 365 for Talent: Onboard használatával
+# <a name="create-an-onboarding-template"></a>Felvételi sablon létrehozása
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent: Onboard számos olyan sablont kínál, amelyek segítségével a lehető leggyorsabban létrehozhatja felvételi útmutatóját. Felhasználhat egyet vagy többet ezen sablonok közül, vagy létrehozhatja a saját sablonjait. Az Onboard mintaszöveget is kínál, amelyet felhasználhat a saját sablonjai létrehozásakor. Emitatt a folyamat még akkor is könnyű, ha a nulláról kezdi az útmutató létrehozását.
+A Microsoft Dynamics 365 Talent: Onboard – Onboard számos olyan sablont kínál, amelyek segítségével a lehető leggyorsabban létrehozhatja felvételi útmutatóját. Felhasználhat egyet vagy többet ezen sablonok közül, vagy létrehozhatja a saját sablonjait. Az Onboard mintaszöveget is kínál, amelyet felhasználhat a saját sablonjai létrehozásakor. Emitatt a folyamat még akkor is könnyű, ha a nulláról kezdi az útmutató létrehozását.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Felvételi sablon létrehozása meglévő sablonból
 

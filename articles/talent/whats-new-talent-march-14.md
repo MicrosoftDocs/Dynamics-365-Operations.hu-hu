@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 14.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 14.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/14/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5c3beef9ef4e73eaf76f861735bb154fa630703f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742493"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023907"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 14.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-14-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 14.)
 
 [!include [banner](includes/banner.md)]
 
@@ -46,8 +46,8 @@ Az ebben a verzióban végrehajtott módosítások engedélyezik a teljesítmén
 ### <a name="mass-assign-checklists-to-workers"></a>Ellenőrzőlisták tömeges hozzárendelése dolgozókhoz
 Ezzel a módosítással immár kiválaszthat több alkalmazottat, és egyszerre rendelhet hozzá ellenőrzőlistákat ezekhez az alkalmazottakhoz. 
 
-### <a name="platform-update-24"></a>24-as platformfrissítés
-A 24-es platformfrissítéssel kapcsolatos részleteket lásd a [jdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
+### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 a Finance and Operations szolgáltatáshoz
+A Finance and Operations 24-es platformfrissítésével kapcsolatos részleteket lásd a [Újdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
 
 - Engedélyezve van az értesítések a Talent megoldásban.
 - A frissített navigációs sáv mostantól igazodik az Office fejléchez.
@@ -67,7 +67,7 @@ A Common Data Service entitások immár helyesen szinkronizálnak, ha a Common D
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezek a vezetőkhöz és regionális alkalmazottak hoz tartozhatnak. Ez a módosítás lehetővé teszi a HR számára kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A fix és változó kompenzációs tervek, amelyeket hozzárendelhet biztonsági szerepkörökhöz, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz, például fizetés és bónuszrekordok. Csak a hozzáférést kapott szerepkörök dolgozhatnak fel kompenzációt azokhoz a munkavállalókhoz.
 
 ###  <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A 24-ös platformfrissítéssel a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket kézbesítenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
+A Finance and Operations 24-es platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Duplikált alkalmazottak ellenőrzése: Felhasználói felület módosításai
 Ez a módosítással az ismétlődések észleli a program, amikor névmezőket ad meg, és egy állapot jelenik meg a találatok számával. A hivatkozás kiválasztásával megnyithat egy új lapot, hogy megállapítsa, hogy használja-e az észlelt egyezést. Az adatbevitel megzavarása elkerülése érdekében az ismétlődéseket tartalmazó űrlap nem nyílik meg automatikusan.

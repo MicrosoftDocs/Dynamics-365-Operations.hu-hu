@@ -1,6 +1,6 @@
 ---
 title: A Talent rendszerkövetelményei és frissítési irányelvei
-description: Ez a témakör felsorolja a Dynamics 365 for Talent követelményeit. Ezenkívül ismerteti a frissítési irányelvet is.
+description: Ez a témakör felsorolja a Dynamics 365 Talent követelményeit. Ezenkívül ismerteti a frissítési irányelvet is.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741775"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024160"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>A Talent rendszerkövetelményei és frissítési irányelvei
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent, beleértve az Attract, Onboard, és Core HR alkalmazások követelményeit írja le. Ezenkívül kiemeli azokat az országokat és régiókat, ahol a Talent elérhető, valamint a Talent adatainak lokalizációjával és a nyelvekkel kapcsolatos információkat. Mindemellett ez a témakör a Talent frissítési irányelveit is tartalmazza.
+Ez a témakör a Microsoft Dynamics 365 Talent, beleértve az Attract, Onboard, és Core HR alkalmazások követelményeit írja le. Ezenkívül kiemeli azokat az országokat és régiókat, ahol a Talent elérhető, valamint a Talent adatainak lokalizációjával és a nyelvekkel kapcsolatos információkat. Mindemellett ez a témakör a Talent frissítési irányelveit is tartalmazza.
 
 ## <a name="supported-web-browsers"></a>Támogatott böngészők
 
-A Microsoft Dynamics 365 for Talent webes alkalmazás az alábbi böngészők bármelyikében működik, ha azok a megadott operációs rendszer alatt futnak: 
+A Microsoft Dynamics 365 Talent az alábbi böngészők bármelyikében működik, ha azok a megadott operációs rendszer alatt futnak: 
 
 *   Microsoft Edge (legfrissebb elérhető verziója) a Windows 10 rendszeren
 *   Internet Explorer 11, Windows 10, Windows 8.1 vagy Windows 7 rendszereken
@@ -46,11 +46,11 @@ A böngésző legfrissebb változatáért látogasson el a szoftver gyártóján
 > * A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak Microsoft Edge és Internet Explorer (a Microsoft Windows támogatott verzióin) ClickOnce alkalmazások támogatása. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
 > * A PDF-fájlok előnézetének megtekintéséhez olyan modern böngészők használatát javasoljuk, mint a Microsoft Edge (a legújabb nyilvánosan elérhető verzió) Windows 10 rendszeren, illetve a Google Chrome (a legújabb nyilvánosan elérhető verzió) Windows 10, Windows 8.1, Windows 8 vagy Windows 7 rendszeren vagy Google Nexus 10 táblagépeken.
 >   Hálózati követelmények
-> * Dynamics 365 for Talent szoftvert olyan hálózatokhoz tervezték, amelyek várakozási ideje 250-300 milliszekund (ms) vagy kevesebb. Ez a késleltetés a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Talent példányt. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: [www.azurespeed.com](https://www.azurespeed.com "Azure késleltetési teszt").
-> * A Dynamics 365 for Talent sávszélesség-követelményei a forgatókönyvtől függnek. A legtöbb jellemző forgatókönyv másodpercenként több mint 50 kilobájt sávszélességet igényel (KBps).
+> * Dynamics 365 Talent szoftvert olyan hálózatokhoz tervezték, amelyek várakozási ideje 250-300 milliszekund (ms) vagy kevesebb. Ez a késleltetés a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Talent szolgáltatást. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: [www.azurespeed.com](https://www.azurespeed.com "Azure késleltetési teszt").
+> * A Talent sávszélesség-követelményei a forgatókönyvtől függnek. A legtöbb jellemző forgatókönyv másodpercenként több mint 50 kilobájt sávszélességet igényel (KBps).
 > 
 > [!WARNING]
-> Ne úgy számítsa ki a sávszélesség követelményeit az ügyfél helyéről, hogy megszorozza a felhasználók számát a minimális sávszélességi követelményekkel. Adott hely egyidejű használatát nagyon nehéz kiszámítani. A sávszélesség miatt aggódó ügyfelek számára a Dynamics 365 for Talent próbaverziójának használata ajánlott.
+> Ne úgy számítsa ki a sávszélesség követelményeit az ügyfél helyéről, hogy megszorozza a felhasználók számát a minimális sávszélességi követelményekkel. Adott hely egyidejű használatát nagyon nehéz kiszámítani. A sávszélesség miatt aggódó ügyfelek számára a Talent próbaverziójának használata ajánlott.
 
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
 
@@ -68,6 +68,6 @@ Ha fejlesztőként érdekelt az ország-vagy régióspecifikus testreszabások l
 
 ## <a name="update-policy"></a>Frissítési irányelv
 
-A Microsoft Dynamics 365 for Talent felhőajánlatként van szolgáltatva. A Dynamics 365 for Talent frissítései folyamatosak, és a Microsoft automatikusan alkalmazza őket.
+A Talent felhőajánlatként van szolgáltatva. A Talent frissítései folyamatosak, és a Microsoft automatikusan alkalmazza őket.
 
-A frissítések rendszeres ütemben jelennek meg, és a rendszer minden környezetben alkalmazza őket. A Dynamics 365 for Talent rendszert támogatja a [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), amely egységes és kiszámítható irányelveket nyújt a termék elérhetőségével kapcsolatos támogatásról.
+A frissítések rendszeres ütemben jelennek meg, és a rendszer minden környezetben alkalmazza őket. A Talent szolgáltatást támogatja a [Microsoft támogatási életciklus-irányelve](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft támogatási életciklus-irányelve"), amely egységes és kiszámítható irányelveket nyújt a termék elérhetőségével kapcsolatos támogatásról.

@@ -1,6 +1,6 @@
 ---
-title: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations készletszint-adatainak közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+title: Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -19,37 +19,37 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b56eb545f87c31ef30d6a897f48539068583486
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843433"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251201"
 ---
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba 
+# <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba 
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations készletszint-adatainak közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
-A következő sablon és a mögöttes feladatok, amelyek a Microsoft Dynamics 365 for Finance and Operations aktuális készletszintjeinek közvetlenül a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+A következő sablonokat és alapul szolgáló feladatokat használják a tényleges készletszint szinkronizálásához a Supply Chain Management és a Field Service között:
 
 **Sablon az adatintegrációban**
-- Termékkészlet (a Field Service megoldásból a Fin and Ops megoldásba)
+- Termékkészlet (Supply Chain Management és Field Service között)
   
 **Feladat az adatintegrációs projektben**
 - Termékkészlet
 
 A következő szinkronizálási feladatok kötelezők, mielőtt a készletszintek szinkronizálása megtörténhetne:
-- Raktárak (a Fin and Ops megoldásból a Field Service megoldásba) 
-- Készletegységgel rendelkező Field Service termékek (a Fin and Ops alkalmazásból a Sales alkalmazásba) 
+- Raktárak (Supply Chain Management és Field Service között) 
+- Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba) 
 
 ## <a name="entity-set"></a>Entitás beállítása
 
-| Field Service                      | Finance and Operations                 |
+| Field Service                      | Ellátásilánc-kezelés                |
 |------------------------------------|----------------------------------------|
 | msdynce_externalproductinventories | CDS aktuális készlet raktár szerint     |
 
@@ -61,17 +61,17 @@ Készletszintadatok küldése a Finance and Operations alkalmazásból a Field S
 
 Ezt az információt a rendszer kiadott termékenként rögzíti minden egyes raktárhoz, és a változások nyomon követés alapján szinkronizálja a készletszint megváltozásakor.
 
-A Field Service megoldásban az integrációs megoldás készletnaplókat hoz létre a különbözethez, hogy a Field Service szintjei megfeleljenek a Finance and Operations szintjeinek.
+A Field Service megoldásban az integrációs megoldás készletnaplókat hoz létre a különbözethez, hogy a Field Service szintjei megfeleljenek a Supply Chain Management szintjeinek.
 
-A Finance and Operations a készletszintek alapjaként szolgál. Tehát, ezért fontos az integráció beállítása a munkarendelések, az átvitelek és a kiigazítások esetében a Field Service megoldásból a Finance and Operations megoldásba, ha a funkció használatban van a Field Service szolgáltatásban, a készletszintek szinkronizálásával együtt a Finance and Operations megoldásból.
+A Supply Chain Management a készletszintek alapjaként szolgál. Tehát, ezért fontos az integráció beállítása a munkarendelések, az átvitelek és a kiigazítások esetében a Field Service megoldásból a Supply Chain Management megoldásba, ha a funkció használatban van a Field Service szolgáltatásban, a készletszintek szinkronizálásával együtt a Supply Chain Management megoldásból.
 
-Az olyan termékeket és raktárakat, ahol a készletszintek alapja a Finance and Operations, a speciális lekérdezés és szűrés (Power Query) segítségével lehet vezérelni.
+Az olyan termékeket és raktárakat, ahol a készletszintek alapja a Supply Chain Management, a speciális lekérdezés és szűrés (Power Query) segítségével lehet vezérelni.
 
 > [!NOTE]
-> Megjegyzés: Lehetőség van több raktár létrehozására a Field Services megoldásban (ahol a **Külsőleg karbantartott = Nem**), majd a leképezésükre egy raktárba a Finance and Operations megoldásban, a speciális lekérdezési és szűrési funkcióval. Ez olyan helyzetekben használt, amikor azt szeretnénk, hogy a Field Service kezelje a részletes készletszintet, és csak frissítéseket küldjön a Finance and Operations megoldásba. Ebben az esetben a Field Service nem kap készletszintű frissítéseket a Finance and Operations megoldásból. További információért lásd: [Készletátvitelek és szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) és [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Megjegyzés: Lehetőség van több raktár létrehozására a Field Services megoldásban (ahol a **Külsőleg karbantartott = Nem**), majd a leképezésükre egy raktárba a Supply Chain Management megoldásban, a speciális lekérdezési és szűrési funkcióval. Ez olyan helyzetekben használt, amikor azt szeretnénk, hogy a Field Service kezelje a részletes készletszintet, és csak frissítéseket küldjön a Supply Chain Management megoldásba. Ebben az esetben a Field Service nem kap készletszintű frissítéseket a Supply Chain Management megoldásból. További információért lásd: [Készletátvitelek és szinkronizálása a Field Service alkalmazásból a Supply Chain Management alkalmazásba](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) és [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM megoldás
-A **Külső termékkészlet** entitás új entitás, amely csak az integráció háttérrendszereként használatos. Ez az entitás Finance and Operations készletszint-értékeit kapja meg az integrációban, majd ezeket az értékeket alakítja át manuális készletnaplókká, amelyek ezután módosítják a készlettermékeket a raktárban.
+A **Külső termékkészlet** entitás új entitás, amely csak az integráció háttérrendszereként használatos. Ez az entitás Supply Chain Management készletszint-értékeit kapja meg az integrációban, majd ezeket az értékeket alakítja át manuális készletnaplókká, amelyek ezután módosítják a készlettermékeket a raktárban.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -84,10 +84,10 @@ A projekt működéséhez gondoskodni kell arról, hogy az integrációs kulcs f
       - msdynce_warehouseid (Raktár azonosítója)
       
 ### <a name="data-integration-project"></a>Adatintegrációs projekt
-Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérléséhez, hogy a kívánt termékek küldjenek raktárszintadatokat a Finance and Operations alkalmazásból a Field Service alkalmazásba.
+Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérléséhez, hogy a kívánt termékek küldjenek raktárszintadatokat a Supply Chain Management alkalmazásból a Field Service alkalmazásba.
 
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
-### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Termékkészlet (a Fin and Op megoldásból a Field Service megoldásba): Termékkészlet
+### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Termékkészlet (Supply Chain Management alkalmazásból a Field Service alkalmazásba): Termékkészlet
 
 [![Sablonleképezés az adatintegrátorban](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

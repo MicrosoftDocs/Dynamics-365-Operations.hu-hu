@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. május 13.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. május 13.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/13/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 42feeb044d0a4cd25faf2d74863aa4e948c200fd
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856448"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008817"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. május 13.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-13-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. május 13.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
 
@@ -39,7 +39,7 @@ A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek m
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 

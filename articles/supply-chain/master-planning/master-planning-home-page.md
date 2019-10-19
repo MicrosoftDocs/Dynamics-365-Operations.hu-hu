@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543583"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250691"
 ---
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
@@ -74,7 +74,7 @@ Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) 
 A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.
 
 ### <a name="task-guides"></a>Feladat-útmutatók
-Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra.
+További súgó áll rendelkezésére feladat útmutatókon belül. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra.
 
 ### <a name="webinars"></a>Webináriumok
 [Azure gépi tanulás használata az igény-előrejelzéshez](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

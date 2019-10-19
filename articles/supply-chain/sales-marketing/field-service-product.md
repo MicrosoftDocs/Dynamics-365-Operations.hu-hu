@@ -1,6 +1,6 @@
 ---
-title: A Finance and Operations-termékek szinkronizálása a Field Service-termékekre
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+title: A Supply Chain Management-termékek közvetlen szinkronizálása a Field Service-termékekre
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management termékeinek Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742355"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249773"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>A Supply Chain Management-termékek közvetlen szinkronizálása a Field Service-termékekre
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Microsoft Dynamics 365 for Finance and Operations termékeinek Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management termékeinek közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-A használt **Field Service termékek (Fin and Ops – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Fin and Ops – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Fin and Ops – Sales) – Közvetlen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+A használt **Field Service termékek (Supply Chain Management – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Supply Chain Management – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Supply Chain Management – Sales) – Közvetlen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Ez a témakör csak a **Field Service termékek (Fin and Ops – Field Service)** és a **Termékek (Fin and Ops – Sales) – Közvetlen** sablono közötti különbségeket mutatja be.
+Ez a témakör csak a **Field Service termékek (Supply Chain Management – Field Service)** és a **Termékek (Supply Chain Management – Sales) – Közvetlen** sablono közötti különbségeket mutatja be.
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
-**A sablon neve az adatintegrációban:**
+**A sablon neve az adatintegrációban**
 
-- Field Service termékek (Fin and Ops – Field Service)
+- Field Service-termékek (Supply Chain Management és Field Service között)
 
-**A feladat neve az adatintegrációs projektben:**
+**A feladat neve az adatintegrációs projektben**
 
 - Termékek – Termékek
 
-A **Field Service termékek (Fin and Ops – Field Service)** sablon egy leképezést tartalmaz, amely nem található meg a **Termékek (Fin and Ops – Sales) – Közvetlen** sablonban. Ezt a leképezés biztosítja, hogy a szükséges Field Service-re jellemző mező, a **Szolgáltatás-terméktípus** megfelelően van beállítva.
+A **Field Service termékek (Supply Chain Management – Field Service)** sablon tartalmaz egy leképezést, amely be része a **Termékek (Supply Chain Management – Sales) – Közvetlen** sablonnak. Ezt a leképezés biztosítja, hogy a szükséges Field Service-re jellemző mező, a **Szolgáltatás-terméktípus** megfelelően van beállítva.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-A Finance and Operations alkalmazásban a **Field Service terméktípus** értéke az **Értékesíthető kiadott termékek** adatentitásban a következőképpen számítódik ki:
+A Supply Chain Management alkalmazásban a **Field Service terméktípus** értéke az **Értékesíthető kiadott termékek** adatentitásban a következőképpen számítódik ki:
 
 - **Készlet:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Igaz
 - **Készleten kívül:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Hamis
@@ -70,6 +70,6 @@ A Finance and Operations alkalmazásban a **Field Service terméktípus** érté
 
 Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>A Field Service szolgáltatásokban lévő termékek (Finance and Operations-- Field Service): Termékek - Termékek
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-termékek (Supply Chain Management és Field Service között): Termékek – Termékek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProduct.png)](./media/FSProduct.png)

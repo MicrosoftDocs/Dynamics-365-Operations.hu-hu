@@ -1,6 +1,6 @@
 ---
 title: Szállítói együttműködés a vevőkkel
-description: Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 for Finance and Operations rendszerben a beszerzési rendelésekkel kezelése és a bizományosi készlet figyelése során.
+description: Ez a témakör leírja, hogyan használhatja a szállítói együttműködést a beszerzési rendelések használatára és a bizományosi készlet felügyelésére.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567584"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250122"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 for Finance and Operations rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
+Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 Supply Chain Management rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
 
 - **Beszerzési rendelés visszaigazolása** – Figyelje meg a beszerzési rendeléseket (POk), és válaszoljon rájuk.
 - **Szállítói ajánlattétel** – tekintse meg az ajánlatkéréseket (RFQk), és válaszoljon rájuk ajánlatok megadásával.

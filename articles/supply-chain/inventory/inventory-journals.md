@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553438"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249540"
 ---
 # <a name="inventory-journals"></a>Készletnaplók
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553438"
 
 Ez a témakör leírja, hogyan kell alkalmazni a készletnaplót különböző típusú fizikai készlet tranzakciók közzétételéhez.
 
-A Microsoft Dynamics 365 for Finance and Operations szolgáltatásban a készletnaplókkal különböző típusú készlettranzakciók adhatók fel, például kiadások és bevételek feladása, készletmozgások, anyagjegyzékek (BOM) létrehozása és a fizikai készlet egyeztetése. Ezek a készletnaplók hasonló módon használhatók, de különböző típusúak.
+A Supply Chain Management rendszerben a készletnaplókkal különböző típusú készlettranzakciók adhatók fel, például kiadások és bevételek feladása, készletmozgások, anyagjegyzékek (BOM) létrehozása és a fizikai készlet egyeztetése. Ezek a készletnaplók hasonló módon használhatók, de különböző típusúak.
 
 ## <a name="types-of-inventory-journals"></a>Készletnaplók típusai
 Az alábbi készletnaplótípusok állnak rendelkezésre:
@@ -68,7 +68,7 @@ Ha egy anyagjegyzéket készként jelent, akkor létrehozhatja az anyagjegyzék-
 
 ### <a name="item-arrival"></a>Cikk érkezése
 
-A cikkérkezési napló segítségével regisztrálhatja a cikkek bevételezését (például beszerzési rendelésből). Egy cikkérkezési napló létrehozható az érkezési kezelés részeként **Érkeztetés áttekintése** oldalon, vagy manuálisan létrehozhat egy naplóbejegyzést a **Cikk érkeztetés** oldalon. Ha engedélyezi a cikknaplónévnek a kitárolási helyek ellenőrzését, akkor a Microsoft Dynamics 365 for Finance and Operations rendszer egy helyet keres a beérkezett cikkeknek és ha van hely, akkor célhelyet hoz létre a beérkező cikkeknek.
+A cikkérkezési napló segítségével regisztrálhatja a cikkek bevételezését (például beszerzési rendelésből). Egy cikkérkezési napló létrehozható az érkezési kezelés részeként **Érkeztetés áttekintése** oldalon, vagy manuálisan létrehozhat egy naplóbejegyzést a **Cikk érkeztetés** oldalon. Ha engedélyezi a cikknaplónévnek a kitárolási helyek ellenőrzését, akkor a Supply Chain Management rendszer egy helyet keres a beérkezett cikkeknek és ha van hely, akkor célhelyet hoz létre a beérkező cikkeknek.
 
 ### <a name="production-input"></a>Termelések beérkezése
 
@@ -103,7 +103,7 @@ Az adatentitások a következő típusú integrációs forgatókönyveket támog
 További tudnivalókért lásd: [Adatentitások](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Nem minden készletnaplók OData-kompatibilis, ezért nem használható az Excel adatcsatlakozó az adatok közzétételéhez, frissítése, valamint a Dynamics 365 for Finance and Operations rendszerbe való visszaimportálásához. 
+> Nem minden készletnaplók OData-kompatibilis, ezért nem használható az Excel adatcsatlakozó az adatok közzétételéhez, frissítése, valamint a Supply Chain Management rendszerbe való visszaimportálásához. 
 
 A naplóentitások közötti másik különbség az összetett entitások használhatósága, amelyek a fejléc és a sor adatait is tartalmazzák. Az összetett entitások jelenleg a következőkre használhatók:
 -   Készlethelyesbítési napló

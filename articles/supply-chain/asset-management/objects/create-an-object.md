@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783321"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250898"
 ---
 # <a name="create-an-asset"></a>Eszköz létrehozása
 
@@ -63,12 +63,12 @@ A **Szolgáltatási szint** és **Kiritkusság** mezők az eszközhöz létrehoz
 
 ## <a name="asset"></a>Eszköz
 
-A tárgyi eszköz **Erőforrását** is ki lehet választani. Az erőforrás-kiválasztása határozza meg, hogy a munkarendelés-ütemezéshez melyik naptárat használja a program. A tárgyi eszközök esetében gyakran használják az erőforrás-beállítást. A Dynamics 365 for Finance and Operations alkalmazásban az erőforrások és erőforráscsoportokat a **Szervezeti adminisztráció** > **Erőforrások** > **Erőforráscsoportok** vagy **Erőforrások** helyen állíthatja be.
+A tárgyi eszköz **Erőforrását** is ki lehet választani. Az erőforrás-kiválasztása határozza meg, hogy a munkarendelés-ütemezéshez melyik naptárat használja a program. A tárgyi eszközök esetében gyakran használják az erőforrás-beállítást. Az erőforrások és erőforráscsoportokat a **Szervezeti adminisztráció** > **Erőforrások** > **Erőforráscsoportok** vagy **Erőforrások** helyen állíthatja be.
 
 A **Tárgyi eszköz száma** mezőben kiválaszthat egy tárgyi eszközt, amely az eszközhöz kapcsolódik. Erre akkor van szükség, ha az eszköz egy beruházási projekthez kapcsolódik.
 
 - Ha az eszköz egy tárgyi eszközhöz kapcsolódik, akkor létrehozhat egy, a beruházási projekthez kapcsolódó munkarendelésekhez használatos munkarendelés típust. 
-- A tárgyi eszközökre vonatkozó információk a **Tárgyi eszközök** modulhoz kapcsolódnak. a Dynamics 365 for Finance and Operations programban. Ez azt jelenti, hogy a **Tárgyi eszközök** > **Tárgyi eszközök** > **Tárgyi eszközök** helyen áttekintést kaphat az tárgyi eszközhoz kapcsolódó Eszközkezelési projektekről, ha kiválasztja a listából az eszközt, és megtekinti a tartalmat a **Kapcsolódó információk** ablaktábla > **Társított projektek** szakaszban.
+- A tárgyi eszközökre vonatkozó információk a **Tárgyi eszközök** modulhoz kapcsolódnak. a Dynamics 365 Supply Chain Management programban. Ez azt jelenti, hogy a **Tárgyi eszközök** > **Tárgyi eszközök** > **Tárgyi eszközök** helyen áttekintést kaphat az tárgyi eszközhoz kapcsolódó Eszközkezelési projektekről, ha kiválasztja a listából az eszközt, és megtekinti a tartalmat a **Kapcsolódó információk** ablaktábla > **Társított projektek** szakaszban.
 
 
 ## <a name="details"></a>Részletek

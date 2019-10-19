@@ -1,6 +1,6 @@
 ---
-title: A Microsoft Dynamics 365 for Talent - Attract melyik verziója
-description: Ez a témakör a Microsoft Dynamics 365 for Talent - Attract különböző verzióiban rendelkezésre álló lehetőségekről nyújt tájékoztatást.
+title: A Microsoft Dynamics 365 Talent - Attract melyik verziója?
+description: Ez a témakör a Microsoft Dynamics 365 Talent - Attract különböző verzióiban rendelkezésre álló lehetőségekről nyújt tájékoztatást.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739710"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009946"
 ---
 # <a name="which-version-of-attract"></a>Az Attract melyik verziója?
 
 [!include[banner](../includes/banner.md)]
 
-Az Ön számára legmegfelelőbb Microsoft Dynamics 365 for Talent: Attract-verzió a szervezete méretétől és igényeitől függ. Az Attract alapverziója olyan funkciók csoportját biztosítja, amelyet kisebb csapatok vagy szervezetek számára terveztünk, ahol a felvételi vezető az elsődleges felhasználó. Az Attract alapverzióját egy vagy több licenccel is használhatja.
+Az Ön számára legmegfelelőbb Microsoft Dynamics 365 Talent: Attract verzió a szervezete méretétől és igényeitől függ. Az Attract alapverziója olyan funkciók csoportját biztosítja, amelyet kisebb csapatok vagy szervezetek számára terveztünk, ahol a felvételi vezető az elsődleges felhasználó. Az Attract alapverzióját egy vagy több licenccel is használhatja.
 
 Az Átfogó felvételi bővítménnyel kiegészített Attract közepes és nagy méretű csapatok vagy szervezetek számára megfelelő, ahol a toborzást végző személy vagy a tehetségszakértő az elsődleges felhasználó. Az Átfogó felvételi bővítmény használatához az szükséges, hogy a licenceket egy [Microsoft Dynamics 365-partnertől](https://dynamics.microsoft.com/partners/find-a-partner/) szerezze be.
 

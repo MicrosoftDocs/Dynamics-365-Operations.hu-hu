@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új és módosult elemei (2019. június 11.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új és módosult elemei (2019. június 11.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741618"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023930"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>A Dynamics 365 for Talent új és módosult elemei (2019. június 11.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>A Dynamics 365 Talent új és módosult elemei (2019. június 11.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Keresőmotor-optimalizálás az álláshirdetésekhez
 
-Ha bekapcsolja a **Keresőmotor-optimalizálást** a Dynamics 365 for Talent: Attract adminisztrátori központjában, az Attract felkéri a Google Indexing alkalmazásprogramozási felületét (API), hogy térképezze fel a weboldalt, amikor Ön új feladatot tesz közzé vagy aktivál, illetve meglévő feladatot frissít. Ilyen módon a feladat megjelenik a Google és más keresőmotorok keresési eredményei között.
+Ha bekapcsolja a **Keresőmotor-optimalizálást** a Dynamics 365 Talent: Attract felügyeleti központjában, az Attract felkéri a Google Indexing alkalmazásprogramozási felületét (API), hogy térképezze fel a weboldalt, amikor Ön új feladatot tesz közzé vagy aktivál, illetve meglévő feladatot frissít. Ilyen módon a feladat megjelenik a Google és más keresőmotorok keresési eredményei között.
 
 Hasonlóképpen, ha eltávolít egy feladatot, az Attract jelzi az Indexing API-nak, hogy az eltávolított feladat a későbbiekben ne jelenjen meg a keresési eredmények között.
 
@@ -50,15 +50,15 @@ A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek m
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
 A szakaszban ismertetett módosítások a 8.1.2337-ös buildre vonatkoznak.
 
-### <a name="platform-update-27"></a>27-as platformfrissítés
+### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 a Finance and Operations szolgáltatáshoz
 
-További információ a 27-es platformfrissítésről (Platform update 27): [Előzetes funkciók a Dynamics 365 for Finance and Operations platform update 27 verziójában (2019. június)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+További információ a Finance and Operations 27-es platformfrissítésről (Platform update 27): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 27-es verziójában (2019. június)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>A funkciókezelési munkaterület a Talentben
 

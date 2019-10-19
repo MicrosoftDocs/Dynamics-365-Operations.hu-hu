@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595611"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249387"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Állítson be külső katalógust a PunchOut e-beszerzés számára
 
@@ -37,12 +37,12 @@ A kommunikáció beállításához a szállítójának bizonyos információkat 
 
 ## <a name="setting-up-an-external-catalog"></a>Külső katalógus beállítása
 
-A külső katalógusnak lehetővé kell tennie, hogy a beszerzési igénylésbe belépő alkalmazottat átirányítsa egy külső webhelyre a termék kiválasztása érdekében. Az alkalmazott által a külső katalógusből kiválasztott termékeket a rendszer visszairányítja a Dynamics 365 for Finance and Operations rendszerébe naprakész árinformációkkal, és innen hozzáadhatók a beszerzési igényléshez. A szándék nem az, hogy az alkalmazottak egy külső webhelyről rendelhessenek. A külső katalógus beállításakor győződjön meg arról, hogy a külső katalógus által hozzáférhető webhely célja az információgyűjtés, nem pedig valódi megrendelés leadása.
+A külső katalógusnak lehetővé kell tennie, hogy a beszerzési igénylésbe belépő alkalmazottat átirányítsa egy külső webhelyre a termék kiválasztása érdekében. Az alkalmazott által a külső katalógusből kiválasztott termékeket a rendszer visszairányítja naprakész árinformációkkal, és innen hozzáadhatók a beszerzési igényléshez. A szándék nem az, hogy az alkalmazottak egy külső webhelyről rendelhessenek. A külső katalógus beállításakor győződjön meg arról, hogy a külső katalógus által hozzáférhető webhely célja az információgyűjtés, nem pedig valódi megrendelés leadása.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Külső szállítói katalógus beállításához a következő feladatokat kell elvégeznie:
 
 1. Beszerzési kategóriahierarchia beállítása. További információkért lásd: [Beszerzésikategória-hierarchiák irányelveinek beállítása](tasks/set-up-policies-procurement-category-hierarchies.md)
-2. Regisztrálja a szállítót a Finance and Operations rendszerben. Mielőtt beállíthatná a külső gyártó katalógusához szükséges konfigurációkat, be kell állítania a szállítót és a szállítói kapcsolattartót a Microsoft Dynamics 365 rendszerben. A külső katalógus szállítóját is hozzá kell adni a kiválasztott beszerzési kategóriához. A szállítók Microsoft Dynamics 365 rendszerben történő regisztrálásával kapcsolatos további tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md). A szállítónak a beszerzési kategóriához való hozzárendelésével kapcsolatos további tudnivalókat lásd: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](tasks/approve-vendors-specific-procurement-categories.md).
+2. Regisztrálja a szállítót a Supply Chain Management szolgáltatásban. Mielőtt beállíthatná a külső gyártó katalógusához szükséges konfigurációkat, be kell állítania a szállítót és a szállítói kapcsolattartót a Microsoft Dynamics 365 rendszerben. A külső katalógus szállítóját is hozzá kell adni a kiválasztott beszerzési kategóriához. A szállítók regisztrálásával kapcsolatos további tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md). A szállítónak a beszerzési kategóriához való hozzárendelésével kapcsolatos további tudnivalókat lásd: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](tasks/approve-vendors-specific-procurement-categories.md).
 3. Győződjön meg arról, hogy a mértékegységek és a szállító által használt pénznem be van beállítva. A mértékegység létrehozásával kapcsolatos további tudnivalókat lásd: [Mértékegységek kezelése](../pim/tasks/manage-unit-measure.md).
 4. Állítsa be a külső szállítói katalógust a szállító külső katalógusának webhelye által előírt követelmények használatával. A feladattal kapcsolatos további tudnivalókról lásd: [A külső szállítói katalógus konfigurálása](#configure-the-external-vendor-catalog).
 5. Tesztelje a szállító külső katalógusának konfigurációit, hogy biztosítsa a beállítások érvényességét, valamint hogy hozzáférhet a szállítói külső katalógushoz. Használja a **Beállítások ellenőrzése** műveletet az ön által beállított beállításkérési üzenet ellenőrzéséhez. Az üzenet következményeként a szállítók külső katalóguswebhelyének meg kell nyílnia egy böngészőablakban. Az ellenőrzés során nem rendelhet cikkeket és szolgáltatásokat a szállítótól. Cikkek és szolgáltatások rendeléséhez egy beszerzési igénylésből kell hozzáférnie a szállítói katalógushoz.
@@ -90,9 +90,9 @@ Megtörténhet, hogy a szállítónál követelmény áll fenn egy a beállítá
 A cXML-protokollal kapcsolatos további tudnivalókat lásd: [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Visszajelzési üzenet
-A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Finance and Operations rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet:
+A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Supply Chain Management rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet.
 
-| Szállítótól kapott üzenet | Másolva a Finance and Operations rendszer igénylési sorába|
+| Szállítótól kapott üzenet | Követelménysorba másolva|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Mennyiség|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Külső cikkazonosító|

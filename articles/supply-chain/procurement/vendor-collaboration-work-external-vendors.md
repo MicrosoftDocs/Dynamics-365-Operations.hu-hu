@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546710"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250199"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
 [!include [banner](../includes/banner.md)]
 
-A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 for Finance and Operations rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a témakör bemutatja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
+A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 Supply Chain Management rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a témakör bemutatja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
 
 Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.
 
 > [!NOTE]
-> Az ebben a szállítói együttműködésről szóló témakörben található információk csak a Finance and Operations jelenlegi verziójára érvényesek. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A **Szállítói portál** modullal kapcsolatos további tudnivalókat lásd: [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md).
+> Az ebben a szállítói együttműködésről szóló témakörben található információk csak a Supply Chain Management jelenlegi verziójára érvényesek. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A **Szállítói portál** modullal kapcsolatos további tudnivalókat lásd: [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md).
 
 Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Ha egynél több nyelven kell üzeneteket hozzáadni, hozzon létre külön üze
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Szállítói együttműködési lehetőségek beállítása egy adott szállítóhoz
 
-A rendszergazda konfigurálja a Finance and Operations szolgáltatásban a szállítói együttműködés általános beállításait, például a biztonsági szerepköröket, amelyek elérhetőek az összes Önnel együttműködő szállító számára. Vannak azonban olyan beállítások is, amelyek szállítói fiókonként eltérőek. A következő beállításokat kell konfigurálnia.
+A rendszergazda konfigurálja a szállítói együttműködés általános beállításait, például a biztonsági szerepköröket, amelyek elérhetőek az összes Önnel együttműködő szállító számára. Vannak azonban olyan beállítások is, amelyek szállítói fiókonként eltérőek. A következő beállításokat kell konfigurálnia.
 
 - Engedélyezze a szállítói együttműködést.
 - Adja meg, hogy a szállító láthatja-e az árakkal kapcsolatos adatokat.
@@ -71,7 +71,7 @@ Ahhoz, hogy megossza a beszerzési rendelések árinformációit a szállítói 
 
 ### <a name="sending-a-po-to-a-vendor"></a>Beszerzési rendelés küldése egy szállítónak
 
-A beszerzési rendeléseket a Finance and Operations rendszerben kell elkészíteni. Amikor a beszerzési rendelés állapota **Jóváhagyva**, a szállítónak a **Elküldés visszaigazolásra** művelet használatával elküldheti a rendelést a **Beszerzési rendelés** lapon. A beszerzési rendelés állapota ekkor **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megtekintheti azt a **Beszerzési rendelések ellenőrzésre** lapon a szállító együttműködési felületen. A szállító ezután elfogadhatja, elutasíthatja a beszerzési rendelést,vagy módosításokat javasolhat hozzá. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
+A beszerzési rendeléseket a Supply Chain Management szolgáltatásban hozzák létre. Amikor a beszerzési rendelés állapota **Jóváhagyva**, a szállítónak a **Elküldés visszaigazolásra** művelet használatával elküldheti a rendelést a **Beszerzési rendelés** lapon. A beszerzési rendelés állapota ekkor **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megtekintheti azt a **Beszerzési rendelések ellenőrzésre** lapon a szállító együttműködési felületen. A szállító ezután elfogadhatja, elutasíthatja a beszerzési rendelést,vagy módosításokat javasolhat hozzá. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>A beszerzési rendelés szállító általi visszaigazolása és elfogadása
 
@@ -92,13 +92,13 @@ Az alábbi táblázat bemutatja a tipikus információcserét attól függően, 
 </thead>
 <tbody>
 <tr class="even">
-<td>A szállító <strong>elfogadja</strong> a rendelést, és a Finance and Operations automatikusan úgy van konfigurálva, hogy automatikusan megerősítse azokat a beszerzési rendeléseket, amelyeket a szállító elfogad.</td>
+<td>A szállító <strong>elfogadja</strong> a rendelést, és a Supply Chain Management automatikusan úgy van konfigurálva, hogy automatikusan megerősítse azokat a beszerzési rendeléseket, amelyeket a szállító elfogad.</td>
 <td>A rendelés állapota <strong>Visszaigazolva</strong> értékre frissül. Ha valami megakadályozza, hogy a rendelést frissítsék, a szállító válasza továbbra is <strong>Elfogadva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés</strong> alatt állapotú marad. 
 
 A szállítónak elküldött és <strong>Külső ellenőrzés alatt</strong> állapotú beszerzési rendelés frissítése a sorok szállítási dátumainak visszaigazolása révén történik. Ez a frissítés egy új verziót indít el, amely automatikusan <strong>Megerősítve</strong> állapotra állítható. A beszerzési rendelés megerősítéskor megjelenik a szállítói együttműködési felületen.</td>
 </tr>
 <tr class="odd">
-<td>A szállító <strong>elfogadja</strong> a rendelést, de a Finance and Operations nincs úgy konfigurálva, hogy automatikusan megerősítse azokat a beszerzési rendeléseket, amelyeket a szállító elfogad.</td>
+<td>A szállító <strong>elfogadja</strong> a rendelést, de a Supply Chain Management nincs úgy konfigurálva, hogy automatikusan megerősítse azokat a beszerzési rendeléseket, amelyeket a szállító elfogad.</td>
 <td>A szállító válasza <strong>Elfogadva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad.
 
 A szállítónak elküldött és <strong>Külső ellenőrzés alatt</strong> állapotú beszerzési rendelés frissítése a sorok szállítási dátumainak visszaigazolása révén történik. Ez a frissítés egy új verziót indít el, amely automatikusan <strong>Külső ellenőrzés alatt</strong> állapotra állítható. Ezt követően manuálisan erősítheti meg a beszerzési rendelést.</td>
@@ -180,14 +180,14 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 
 | Művelet | Állapot és verzió |
 |--------|--------------------|
-| A beszerzési rendelés eredeti verziója a Finance and Operations rendszerben jön létre. | Az állapota **Jóváhagyva**. |
+| A beszerzési rendelés eredeti verziója a Supply Chain Management rendszerben jön létre. | Az állapota **Jóváhagyva**. |
 | A beszerzési rendelést a rendszer elküldi a szállítónak. | Egy verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul. |
 | A szállító egy **Elfogadva módosításokkal** választ küld. | Az állapot továbbra is **Külső ellenőrzés alatt**. |
 | Elvégezhet néhány módosítást, amelyeket a szállító kér. | Az állapot **Jóváhagyva** állapotra módosul. |
 | A beszerzési rendelés új verzióját küldi el a szállítónak. | Egy új verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul. |
 | A szállító elfogadja a beszerzési rendelés új verzióját. | Az állapot továbbra is **Külső ellenőrzés alatt** lesz kivéve, ha a szállító fiókjának beállítása automatikusan **Megerősítve** állapotra vált a beszerzési rendelés elfogadásakor. |
 
-A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a szállítói együttműködési felületen. Küldhetnek e-mailt, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezután a rendelést manuálisan is jóváhagyhatja a Finance and Operations rendszerben. Ebben az esetben figyelmeztetést kap, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben úgy, mint egy megnyitott rendelés, amelyre nem érkezett válasz. Ekkor a szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.
+A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a szállítói együttműködési felületen. Küldhetnek e-mailt, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezt követően manuálisan erősítheti meg a rendelést. Ebben az esetben figyelmeztetést kap, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben úgy, mint egy megnyitott rendelés, amelyre nem érkezett válasz. Ekkor a szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.
 
 > [!NOTE]
 > A Finance and Operations rendszerben mindig a beszerzési rendelés legutolsó verziója érhető el a további folyamatok számára, még akkor is, ha ez a verzió nincs még regisztrálva a szállítói együttműködési felületen.
@@ -200,7 +200,7 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 
 | Művelet | Állapot és verzió |
 |--------|--------------------|
-| A beszerzési rendelés eredeti verziója a Finance and Operations rendszerben jön létre. | Az állapota **Vázlat**. |
+| A beszerzési rendelés eredeti verziója a Supply Chain Management rendszerben jön létre. | Az állapota **Vázlat**. |
 | A beszerzési rendelést elküldik a jóváhagyási folyamatra. (A jóváhagyás folyamata egy belső folyamat, amelyben a szállító nem vesz részt.) | Az állapot **Vázlat** állapotról **Ellenőrzés alatt** állapotra, majd **Jóváhagyva** állapotra módosul, ha a beszerzési rendelés nem kerül elutasításra a jóváhagyási folyamat alatt. A jóváhagyott beszerzési rendelés verzióként van regisztrálva. | 
 | A beszerzési rendelést a rendszer elküldi a szállítónak. | Egy verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul. |
 | Megteszi a szállító által igényelt módosításokat, kézzel vagy a válaszon lévő **Beszerzési rendelés frissítésének feldolgozása** művelet segítségével a beszerzési rendelés frissítése érdekében. | Az állapot újra **Vázlat** lesz |
@@ -237,13 +237,13 @@ Ez a szakasz a vevők és szállítók közötti interakciókat írja le az ajá
 
 ## <a name="public-sector-extensions"></a>Állami szektor kiterjesztései
 
-Az állami szféra esetén a kibővített funkciók lehetővé teszik, hogy az ajánlatkérési eseteket elküldje a szállítóknak, illetve közzétegye őket. Amikor közzétesz egy ajánlatkérést, akkor az információt kérő minden személy megtekintheti a munkát, amely megfelel a közszféra legtöbb szabályozásának. Az összes elérhető munka a **Közzétett ajánlatkérések megnyitása** listaoldalon jelenik meg, a törölt, függőben lévő vagy odaítélt ajánlatkérések pedig a **Lezárt közzétett ajánlatkérések** listaoldalon láthatók. Ezeket a dokumentumokat a Finance and Operations programon kívül is megtektinheti a következő adatentitásokkal való integrációk révén:
+Az állami szféra esetén a kibővített funkciók lehetővé teszik, hogy az ajánlatkérési eseteket elküldje a szállítóknak, illetve közzétegye őket. Amikor közzétesz egy ajánlatkérést, akkor az információt kérő minden személy megtekintheti a munkát, amely megfelel a közszféra legtöbb szabályozásának. Az összes elérhető munka a **Közzétett ajánlatkérések megnyitása** listaoldalon jelenik meg, a törölt, függőben lévő vagy odaítélt ajánlatkérések pedig a **Lezárt közzétett ajánlatkérések** listaoldalon láthatók. Ezeket a dokumentumokat a Supply Chain Management programon kívül is megtektinheti a következő adatentitásokkal való integrációk révén:
 
 - Közzétett ajánlatkérések
 - Közzétett ajánlatkéréssorok
 - Közzétett ajánlatkérés-fejlécmellékletek
 
-Ezek az entitások lehetővé teszik azon személyeknek, akik nincsenek telepítve a Finance and Operations szolgálzatásban, de névtelen hozzáféréssel rendelkeznek a külső webhelyhez, hogy megtekintsék a rendelkezésre álló és a lezárt munkákat. Ezenkívül a **Küldés és közzététel** kibővített funkciói lehetővé teszi az ajánlatkérési folyamat paramétereit beállító felhasználónak, hogy e-mail-sablont határozzon meg. Ezt követően, amikor a beszerző létrehozza az ajánlatkérési esetet, akkor ki kell választania az e-mail-sablont, hogy elküldje a szükséges információkat a szállítóknak az ajánlatkérési esetnél. 
+Ezek az entitások lehetővé teszik azon személyeknek, akiknél nincs telepítve a Supply Chain Management szolgáltatás, de névtelen hozzáféréssel rendelkeznek a külső webhelyhez, hogy megtekintsék a rendelkezésre álló és a lezárt munkákat. Ezenkívül a **Küldés és közzététel** kibővített funkciói lehetővé teszi az ajánlatkérési folyamat paramétereit beállító felhasználónak, hogy e-mail-sablont határozzon meg. Ezt követően, amikor a beszerző létrehozza az ajánlatkérési esetet, akkor ki kell választania az e-mail-sablont, hogy elküldje a szükséges információkat a szállítóknak az ajánlatkérési esetnél. 
 
 A felhasználó, aki az ajánlatkérési folyamat paramétereit beállítja, több e-mail sablont is létrehozhat. Ezek az e-mail-sablonok statikus szöveget és a következő helyettesítő tokeneket is tartalmazhatják. A tokenek helyére kontextus szerinti értékek kerülnek e-mail létrehozása esetén.
 

@@ -1,6 +1,6 @@
 ---
-title: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Sales számláinak Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
+title: A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales ügyfelek a Supply Chain Management alkalmazásba szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 036389a1a52fdf15b73ab90c0a37108871a1a15e
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743348"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249888"
 ---
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Sales számláinak közvetlenül a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba történő szinkronizálására használatosak.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales ügyfeleinek köztvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
-A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Finance and Operations and Sales példányai között.  Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. A következő ábra bemutatja a Finance and Operations és a Sales közötti adatszinkronizálást.
+A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Supply Chain Management és a Sales példányai között.  Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákkal kapcsolatos adatok áramlását a Supply Chain Management és a Sales között. A következő ábra bemutatja a Supply Chain Management és a Sales közötti adatszinkronizálást.
 
 [![A potenciális ügyfelek készpénzre váltása adatfolyama](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,7 +45,7 @@ A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálá
 
 A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://preview.admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
 
-A következő sablon és alapul szolgáló feladat használt a fiókok szinkronizálásához a Sales és a Finance and Operations között:
+A következő sablonokat és alapul szolgáló feladatot használják a termékek szinkronizálásához a Sales és a Supply Chain Management között:
 
 - **Sablon neve az adatintegrációban:** Fiókok (Sales – Fin and Ops) – Közvetlen
 - **A feladat neve a projektben:** Fiókok – Vevők
@@ -54,13 +54,13 @@ Szinkronizálási feladat nem szükséges a Számla/ügyfél szinkronizálás el
 
 ## <a name="entity-set"></a>Entitás beállítása
 
-| Értékesítés    | Finance and Operations |
+| Értékesítés    | Ellátásilánc-kezelés |
 |----------|------------------------|
 | Számlák | Vevők V2           |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
-A számlákat a Sales modulban kezeli a rendszer, és a Finance and Operationsbe vevőként szinkronizálódnak. A **Külsőleg karbantartott** tulajdonságának beállítása ezeknél az ügyfeleknél **Igen** a Sales szolgáltatásból érkező vevők nyomon követésére. A számlázás során a adatok szinkronizálva vannak-e az értékesítési számlák szűréséhez.
+Az ügyfelek kezelése a Salesben történik, majd szinkronizálódnak a Supply Chain Management alkalmazásban ügyfélként. A **Külsőleg karbantartott** tulajdonságának beállítása ezeknél az ügyfeleknél **Igen** a Sales szolgáltatásból érkező vevők nyomon követésére. A számlázás során a adatok szinkronizálva vannak-e az értékesítési számlák szűréséhez.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Potenciális vevő értékesítési készpénzfizetési megoldáshoz
 
@@ -72,21 +72,21 @@ Az integrációs megoldás értékesítési kiegyenlítésekor beállítja a fri
 
 ## <a name="preconditions-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
-- A **CustomerGroupId** leképezést frissíteni kell a Finance and Operations egy érvényes értékére. Meghatározhat egy alapértelmezett értéket, vagy az érték beállítható egy Értékmegfeleltetés használatával.
+- A **CustomerGroupId** leképezést frissíteni kell a Supply Chain Management egy érvényes értékére. Meghatározhat egy alapértelmezett értéket, vagy az érték beállítható egy Értékmegfeleltetés használatával.
 
     Az alapértelmezett sablonérték **10**.
 
-- A következő hozzárendelésének eltávolítása hozzáadásával CD cél, segítséget nyújthat manuális, amelyek szükségesek a Finance and Operations számának csökkentésével lehetséges. Használhatja az alapértelmezett értékek vagy hozzárendelése, például **ország/régió** vagy **Város**.
+- A következő hozzárendelésének eltávolítása hozzáadásával CD cél, segítséget nyújthat manuális, amelyek szükségesek a Supply Chain Management számának csökkentésével lehetséges. Használhatja az alapértelmezett értékek vagy hozzárendelése, például **ország/régió** vagy **Város**.
 
-    - **SiteId** – hely a Pénzügy és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Alapértelmezett webhely készíthetők a terméket, vagy a vevő a rendelés fejlécében.
+    - **SiteId** – hely a Supply Chain Management árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Alapértelmezett webhely készíthetők a terméket, vagy a vevő a rendelés fejlécében.
 
         Az alapértelmezett sablonérték **1**.
 
-    - **WarehouseId** – hely a raktár és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Alapértelmezett raktár készíthető a termék vagy a vevő a rendelés fejlécében a Finance and Operations programban.
+    - **WarehouseId** – hely a raktár és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükségesek Supply Chain Management alkalmazásban. Alapértelmezett raktár készíthető a termék vagy a vevő a rendelés fejlécében a Supply Chain Management programban.
 
         Az alapértelmezett sablonérték **13**.
 
-    - **LanguageId** – nyelv a Pénzügy és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Alapértelmezés szerint a vevő a rendelés fejlécéből a nyelvet használja.
+    - **LanguageId** – Egy nyelv a Supply Chain Management árajánlatok és értékesítési rendelések létrehozásához szükséges. Alapértelmezés szerint a vevő a rendelés fejlécéből a nyelvet használja.
 
         Az alapértelmezett sablonérték **en-us**.
 
@@ -98,20 +98,20 @@ Az integrációs megoldás értékesítési kiegyenlítésekor beállítja a fri
 Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjelenítése. 
 
 > [!NOTE]
-> A leképezést mutatja, hogy melyik mezőadatok szinkronizálódnak a Sales – Finance and Operations irányban.
+> A leképezést mutatja, hogy melyik mezőadatok szinkronizálódnak a Sales – Supply Chain Management irányban.
 
 ![Sablonleképezés az adatintegrátorban](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 
-[A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
+[A potenciális vevők készpénzre váltása](prospect-to-cash.md)
 
-[A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre](accounts-template-mapping-direct.md)
+[A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre](accounts-template-mapping-direct.md)
 
-[A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](contacts-template-mapping-direct.md)
+[A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre](contacts-template-mapping-direct.md)
 
-[Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-order-template-mapping-direct-two-ways.md)
+[Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-order-template-mapping-direct-two-ways.md)
 
-[Értékesítésiszámla-fejlécek és -sorok közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
+[Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 

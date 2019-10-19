@@ -1,6 +1,6 @@
 ---
-title: Értékesítésiajánlat-fejlécek és -sorok közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba
-description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az ajánlatfejlécek és sorok közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
+title: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba
+description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a értékesítésiajánlat-fejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743371"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251247"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az ajánlatfejlécek és sorok közvetlen szinkronizálásához a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations között.
+Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a értékesítésiajánlat-fejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
 
 > [!NOTE]
 > A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
-A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Finance and Operations and Sales példányai között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. A következő ábra bemutatja a Finance and Operations és a Sales közötti adatszinkronizálást.
+A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Supply Chain Management és a Sales példányai között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Supply Chain Management és a Sales között. A következő ábra bemutatja a Supply Chain Management és a Sales közötti adatszinkronizálást.
 
 [![A potenciális ügyfelek készpénzre váltása adatfolyama](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Sablon és feladatok
 
-A következő sablont és alapul szolgáló feladatokat használják az értékesítési ajánlati fejlécek és sorok közvetlen szinkronizálásához a Sales és a Finance and Operations között:
+A következő sablont és alapul szolgáló feladatokat használják az értékesítési ajánlati fejlécek és sorok közvetlen szinkronizálásához a Sales és a Supply Chain Management között:
 
-- **Sablon neve az adatintegrációban:** Értékesítési ajánlatok (Sales – Fin and Ops) – Közvetlen
+- **Sablon neve az adatintegrációban:** Értékesítési ajánlatok (Sales – FSupply Chain Management) – Közvetlen
 - **A feladatok nevei az adatintegrációs projektben:**
 
     - QuoteHeader
@@ -53,9 +53,9 @@ A következő sablont és alapul szolgáló feladatokat használják az értéke
 
 A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesítési ajánlat fejlécének és sorainak szinkronizálása megtörténhetne:
 
-- Termékek (Fin and Ops – Sales) – Közvetlen
-- Számlák (Sales a Fin and Opshoz) – Közvetlen (ha van)
-- Kapcsolattartók vevőkkel (Sales a Fin and Opshoz) – közvetlen (ha van)
+- Termékek (Supply Chain Management – Sales) – közvetlen
+- Számlák (Sales – Supply Chain Management) – közvetlen (ha használatban van)
+- Kapcsolatok ügyfelekkel (Sales – Supply Chain Management) – közvetlen (ha használatban van)
 
 ## <a name="entity-set"></a>Entitás beállítása
 
@@ -66,7 +66,7 @@ A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesít
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
-Az értékesítési ajánlatok létrehozása a Sales-ben történik, majd szinkronizálódnak a Finance and Operations programban.
+Az értékesítési ajánlat létrehozása a Sales megoldásban történik, majd szinkronizálódnak a Supply Chain Management programban.
 
 A Sales értékesítési ajánlatai csak akkor szinkronizálódnak, ha teljesülnek az alábbi feltételek:
 
@@ -75,13 +75,13 @@ A Sales értékesítési ajánlatai csak akkor szinkronizálódnak, ha teljesül
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Potenciális vevő értékesítési készpénzfizetési megoldáshoz
 
-A **Csak külsőleg karbantartott termékei vannak** mező hozzáadódott az **Ajánlat** entitáshoz annak érdekében, hogy konzisztensen követni lehessen, hogy az értékesítési ajánlat teljes mértékben külsőleg karbantartott termékekből áll-e. Ha az értékesítési árfolyamok csak külsőleg fenntartott termékeket tartalmaznak, a termékeket a Finance and Operations kezeli. Ez a viselkedés garantálja, hogy nem próbálja szinkronizálni az értékesítési ajánlati sorokat olyan termékekkel, amelyek ismeretlenek a Finance and Operations számára.
+A **Csak külsőleg karbantartott termékei vannak** mező hozzáadódott az **Ajánlat** entitáshoz annak érdekében, hogy konzisztensen követni lehessen, hogy az értékesítési ajánlat teljes mértékben külsőleg karbantartott termékekből áll-e. Ha az értékesítési árfolyamok csak külsőleg fenntartott termékeket tartalmaznak, a termékeket a Supply Chain Management kezeli. Ez a viselkedés garantálja, hogy nem próbálja szinkronizálni az értékesítési ajánlati sorokat olyan termékekkel, amelyek ismeretlenek a Supply Chain Management számára.
 
 Az értékesítési ajánlat minden terméke frissül a **Csak külsőleg karbantartott termékei vannak** információval az árajánlat fejlécéből. Ezek az információk megtalálhatók az **Ajánlat csak külsőleg fenntartott termékekre vonatkozik** mezőben, a **QuoteDetails** entitásnál.
 
-Kedvezményt lehet hozzáadni az idevonatkozó termékhez, és szinkronizálva lesz a Finance and Operations szolgáltatással. A fejlécen az **Engedmény**, **Költségek** és **Adó** mezők a Finance and Operations szolgáltatásból szabályozhatók. Ezzel a beállítással jelenleg nem támogatott integrációs megfeleltetés. Az aktuális modellben az **Ár**, **Engedmény**, **Költség** és az **Adó** mezők lezárt fájlrendszer és kezeli a Finance and Operations felületén.
+Kedvezményt lehet hozzáadni az idevonatkozó termékhez, és szinkronizálva lesz a Supply Chain Management szolgáltatással. A fejlécen az **Engedmény**, **Költségek** és **Adó** mezők a Supply Chain Management szolgáltatásból szabályozhatók. Ezzel a beállítással jelenleg nem támogatott integrációs megfeleltetés. Az aktuális modellben az **Ár**, **Engedmény**, **Költség** és az **Adó** mezők lezárt fájlrendszer és kezeli a Supply Chain Management felületén.
 
-Az értékesítési a megoldás teszi a következő mezők írásvédett, mivel az értékek nem szinkronizálja a késedelmi a műveletekhez pedig:
+A Sales esetben a megoldás teszi a következő mezőket írásvédetté, mivel az értékek nem szinkronizálja a Supply Chain Management megoldáshoz:
 
 - Csak olvasható mezőket az értékesítésiajánlat-fejlécen:**Árengedmény%** Árengedmény%, **Árengedmény** és**Fuvardíj**
 - Csak olvasható mezők az ajánlat termékein: **Adó**
@@ -111,20 +111,20 @@ Az értékesítési a megoldás teszi a következő mezők írásvédett, mivel 
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Győződjön meg arról, hogy a **SalesUnitSymbol** szükséges értékmegfeleltetése meg van adva a Finance and Operations szolgáltatásban.
+- Győződjön meg arról, hogy a **SalesUnitSymbol** szükséges értékmegfeleltetése meg van adva a Supply Chain Management szolgáltatásban.
 - Győződjön meg róla, hogy a szükséges mértékegységek meghatározása a Sales szolgáltatásban történik.
 
     Olyan sablonérték, amely rendelkezik értékmegfeleltetéssel az **oumid.name** esetében a **SalesUnitSymbol** értékkel.
 
-- Nem kötelező: a következő leképezések hozzáadásával biztosíthatja, hogy az értékesítési árlisták beillesztése a Finance and Operations szolgáltatásba, ha az ügyfél vagy a termék nem tartalmaz alapértelmezett információkat:
+- Nem kötelező: a következő leképezések hozzáadásával biztosíthatja, hogy az értékesítési árlisták beillesztése a Supply Chain Management szolgáltatásba, ha az ügyfél vagy a termék nem tartalmaz alapértelmezett információkat:
 
-    - **SiteId** – hely a Pénzügy és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Nincs alapértelmezett sablonérték a **SiteId** elemnél.
-    - **WarehouseId** – hely a raktár és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Nincs alapértelmezett sablonérték a **WarehouseId** elemnél.
+    - **SiteId** – hely a Supply Chain Management árajánlatok és értékesítési rendelések sorainak létrehozásához szükséges. Nincs alapértelmezett sablonérték a **SiteId** elemnél.
+    - **WarehouseId** – hely a raktár és műveletek árajánlatok és értékesítési rendelések sorainak létrehozásához szükségesek Supply Chain Management alkalmazásban. Nincs alapértelmezett sablonérték a **WarehouseId** elemnél.
 
 ## <a name="template-mapping-in-data-integrator"></a>Sablonleképezés az adatintegrátorban
 
 > [!NOTE]
-> - A **engedmény**, **költségek**, és **adó** mezők egy összetett-beállítást a pénzügyi és műveletek szabályozhatók. Ezzel a beállítással jelenleg nem támogatott integrációs megfeleltetés. Az aktuális modellben a **ár**, **engedmény**, **költség**, és **adó** mezők lezárt fájlrendszer a Finance and Operations.
+> - Az **Engedmény**, **Költségek** és **Adó** mezőket összetett beállítás szabályozza a Supply Chain Management szolgáltatásban. Ezzel a beállítással jelenleg nem támogatott integrációs megfeleltetés. Az aktuális modellben a **ár**, **engedmény**, **költség**, és **adó** mezők lezárt fájlrendszer a Supply Chain Management.
 > - A **fizetési feltételek**, **feltételek áruszállítási**, **szállítási feltételek**, **szállítási mód**, és **szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
 Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjelenítése.

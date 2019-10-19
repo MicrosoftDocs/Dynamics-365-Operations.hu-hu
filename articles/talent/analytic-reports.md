@@ -1,6 +1,6 @@
 ---
-title: Elemzési jelentések használata a Microsoft Dynamics 365 for Talent - Attract megoldásban
-description: Ez a témakör azt mutatja be, hogy milyen elemzési jelentések állnak rendelkezésre a toborzási folyamathoz a Microsoft Dynamics 365 for Talent - Attract megoldásban
+title: Elemzési jelentések használata a Microsoft Dynamics 365 Talent - Attract megoldásban
+description: Ez a témakör azt mutatja be, hogy milyen elemzési jelentések állnak rendelkezésre a toborzási folyamathoz a Microsoft Dynamics 365 Talent - Attract megoldásban
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742888"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010010"
 ---
 # <a name="use-analytic-reports"></a>Elemzési jelentések használata
 
-Az Attract analitikus jelentései egy beépített (OOTB) megoldást biztosítanak a felvételi folyamat háttérinformációihoz. A rendelkezésre álló funkciók a következők:
+Az Microsoft Dynamics 365 Talent: Attract analitikus jelentései egy beépített (OOTB) megoldást biztosítanak a felvételi folyamat háttérinformációihoz. A rendelkezésre álló funkciók a következők:
 
 - **Álláselemzés** – Kattintson egy állás **Elemzés** lapjára, és megtekintheti az állás pályázójára vonatkozó mutatókat.
 - **Elemzési központ:** Kattintson a bal oldali navigációs menüben az **Elemzés** pontra az állások összesített mutatóiért.

@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent - Onboard alkalmazás beszerzése
-description: Ez a témakör bemutatja, hogyan szerezheti be a Microsoft Dynamics 365 for Talent - Onboard alkalmazás különálló verzióját, illetve azt a verziót, amelyik magába foglalja az Átfogó felvételi bővítményt is.
+title: Az Dynamics 365 Talent – Onboard alkalmazás letöltése
+description: Ez a témakör bemutatja, hogyan szerezheti be a Microsoft Dynamics 365 Talent – Onboard alkalmazás különálló verzióját, illetve azt a verziót, amelyik magába foglalja az Átfogó felvételi bővítményt is.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: e83bbd71089b145c6c99780ea9516793c5238b33
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 7bf2e421445e5ca92e995ef581bf61c7978746d2
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731501"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010775"
 ---
-# <a name="get-the-dynamics-365-for-talent-onboard-app"></a>A Dynamics 365 for Talent: Onboard alkalmazás letöltése
+# <a name="get-the-dynamics-365-talent-onboard-app"></a>A Dynamics 365 Talent: Onboard alkalmazás beszerzése
 
 [!include [banner](includes/banner.md)]
 
-Megtekintheti a demót, és ingyenesen kipróbálhatja a Microsoft Dynamics 365 for Talent: Onboard alkalmazász az [Onboard termékoldalán](https://dynamics.microsoft.com/talent/onboard/).
+Megtekintheti a demót, és ingyenesen kipróbálhatja a Microsoft Dynamics 365 Talent: Onboard alkalmazás az [Onboard termékoldalán](https://dynamics.microsoft.com/talent/onboard/).
 
 > [!NOTE]
 > Az ingyenes próba megkezdéséhez üzleti e-mail-fiók szükséges.
 
-Az Onboard-előfizetést megvásárolhatja különálló alkalmazásként vagy a Dynamics 365 for Talent részeként is. A Talent egy átfogó emberi erőforrás menedzselési(Human Capital Management – HCM) rendszer, amely tartalmazza a következőket: Dynamics 365 for Talent: Attract, Onboard és Core HR. Ha további információt szeretne az Onboard megvásárlásáról, keresse fel az [Onboard termékoldalát](https://dynamics.microsoft.com/talent/onboard/).
+Az Onboard-előfizetést megvásárolhatja különálló alkalmazásként vagy a Dynamics 365 Talent részeként is. A Talent egy átfogó emberi erőforrás menedzselési(Human Capital Management – HCM) rendszer, amely tartalmazza a következőket: Dynamics 365 Talent: Attract, Onboard és Core HR. Ha további információt szeretne az Onboard megvásárlásáról, keresse fel az [Onboard termékoldalát](https://dynamics.microsoft.com/talent/onboard/).
 
 A próbaverzió vagy a vásárlási folyamat során be kell állítania a Microsoft 365-e-mail címét és -jelszavát. Mindenképp jegyezze fel ezeket az értékeket.
 
 > [!WARNING]
 > A próbaverzióból származó adatokat nem lehet áttelepíteni a fizetett előfizetési környezetbe. <!--Reviewers: please verify.-->
 
-A Talent új funkcióival kapcsolatos információkért lásd az [Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban](./whats-new.md) című részt és a [Dynamics 365 és Power Platform kibocsátási megjegyzéseket](https://docs.microsoft.com/business-applications-release-notes/index). Ha szeretné megtekinteni az Onboard új funkcióit, lásd a [Talent előnézeti funkcióinak elérése](./access-preview-feature.md) című részt.
+A Talent új funkcióival kapcsolatos információkért lásd az [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md) című részt és a [Dynamics 365 és Power Platform kibocsátási megjegyzéseket](https://docs.microsoft.com/business-applications-release-notes/index). Ha szeretné megtekinteni az Onboard új funkcióit, lásd a [Talent előnézeti funkcióinak elérése](./access-preview-feature.md) című részt.
 
 Ha Ön informatikai szakértő, és további információt szeretne az Onboard alkalmazás két verziójának telepítéséről, lásd: [Létesítés az Onboard alkalmazás számára](./modular-app-tech-faq.md).
 

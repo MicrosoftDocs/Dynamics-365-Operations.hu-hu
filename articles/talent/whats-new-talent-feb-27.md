@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. február 27.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. február 27.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518168"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023999"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. február 27.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. február 27.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
@@ -77,9 +77,9 @@ Ebben a verzióban számos kisebb hibajavítás is található.
 
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezeket a rekordok a vezetőkhöz és regionális alkalmazottak hoz tartozhatnak. Ez a módosítás lehetővé teszi az Emberi erőforrások osztály (HR) számára a kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A biztonsági szerepkörök, amelyek hozzárendelhetők fix és változó kompenzációs tervekhez, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz (például fizetési adatok és a bónuszrekordok). Csak a kulcsfontosságú szerepkörök, amelyek rendelkeznek a meghatározott hozzáféréssel tudnak kompenzációt feldolgozni azokhoz az alkalmazottakhoz.
 
-### <a name="platform-update-24"></a>24-as platformfrissítés
+### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 a Finance and Operations szolgáltatáshoz
 
-További információért a Microsoft Dynamics 365 for Finance and Operations 24-es platformfrissítéséről (2019.március ), lásd: [Előzetes funkciók a Finance and Operations Platform Update 24 (2019. márciusi) verziójában](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+További információért a Microsoft Dynamics 365 Finance and Operations 24-es platformfrissítéséről (2019.március ) lásd: [Előzetes funkciók a Finance and Operations Platform Update 24 (2019. márciusi) verziójában](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Az alkalmazott fix kompenzációja elérhetők jövőbeli beosztás-hozzárendelésekhez
 
@@ -87,10 +87,10 @@ Jellemző, hogy az alkalmazottak, akik a szervezethez csatlakoznak jövőbeni ke
 
 ## <a name="known-issues"></a>Ismert problémák
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>A Core HR integrációs sablon változtatásai (Talent Common Data Service és Finance and Operations között)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>A Core HR integrációs sablon változtatásai (Talent Common Data Service és Finance között)
 A Core HR-hez tartozó sablon „speciális lekérdezési sablonná” lett frissítve. Ezért alapértelmezés szerint a speciális lekérdezési lesz elérhető az ezen sablon segítségével létrehozott projektekhez. Ezenkívül, bármely alapértelmezett leképezési funkció csak a speciális lekérdezési szerkesztőben lesz látható. (Az alapértelmezett leképezés funkciók mint „FN” jelennek meg a leképezésekben.)
 
-Leképezési hibák kapcsolatos további tudnivalókat lásd: [Újdonságok és változások a Dynamics 365 for Talent Core HR rendszerben (2018. December 14.)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Leképezési hibákkal kapcsolatos további tudnivalókat lásd: [Újdonságok és változások a Dynamics 365 Talent: Core HR rendszerben (2018. december 14.)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Az új sablon használatához hozzon létre egy új projektet, és válassza ki az új Talent integrációs sablont.
 

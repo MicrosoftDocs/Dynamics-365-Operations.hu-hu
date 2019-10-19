@@ -1,6 +1,6 @@
 ---
 title: Korszerű alkalmazotti belépés és navigálás
-description: A Dynamics 365 for Talent dolgozóira vonatkozó adatbevitel révén gyorsan be lehet vinni az adatokat minden egykori, aktív és jövőbeli dolgozó esetében. Frissítettük az egyszerűsített/összesített navigációs modellt, hogy gyorsan meg lehessen találni a keresett információkat, illetve végre lehessen hajtani a szükséges módosításokat.
+description: A Dynamics 365 Talent dolgozóira vonatkozó adatbevitel révén gyorsan be lehet vinni az adatokat minden egykori, aktív és jövőbeli dolgozó esetében. Frissítettük az egyszerűsített/összesített navigációs modellt, hogy gyorsan meg lehessen találni a keresett információkat, illetve végre lehessen hajtani a szükséges módosításokat.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918203"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009422"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Korszerű alkalmazotti belépés és navigálás
 
 [!include [banner](includes/banner.md)]
 
-A Dynamics 365 for Talent lehetővé teszi az alkalmazotti és foglalkoztatási adatok hatékony bevitelét. A múltbeli, aktív és jövőbeli alkalmazottak és alvállalkozók esetében gyorsan frissítheti a munkaelőzmények adatait.
+A Dynamics 365 Talent lehetővé teszi az alkalmazotti és foglalkoztatási adatok hatékony bevitelét. A múltbeli, aktív és jövőbeli alkalmazottak és alvállalkozók esetében gyorsan frissítheti a munkaelőzmények adatait.
 
 Továbbá engedélyezhet egy egyszerűsített navigációs élményt is, hogy gyorsan megtalálhassa a kapcsolódó adatokat, és elvégezhesse a szükséges módosításokat. Ez a funkció jelenleg a sandbox környezetekben érhető el. A funkció bekapcsolásához navigáljon a **Rendszer-adminisztráció > Hivatkozások > Beállítás > Rendszerparaméterek > előnézeti funkciók** ponthoz. Válassza a **Továbbfejlesztett dolgozói képernyő és navigáció** lehetőséget. Ez minden felhasználó számára engedélyezi a változtatásokat. Ezt a beállítást bármikor ki lehet kapcsolni.
 

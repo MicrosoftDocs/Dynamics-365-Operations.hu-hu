@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865969"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251293"
 ---
 # <a name="sales-agreements-overview"></a>Értékesítési szerződések áttekintése
 
@@ -99,14 +99,14 @@ Ha létrehozott (kiadott) egy értékesítési rendelést egy értékesítési s
 | Mennyiség                                                          | Ha megad egy mennyiséget amely meghaladja az értékesítési szerződés sorában meghatározott mennyiséget, ahol a **Maximum betartatása** jelölőnégyzet be van jelölve, akkor egy üzenetpanelen kéri a módosított mennyiség mentését. Kattintson az **Igen** gombra, hogy eltávolítsa a az értékesítési szerződéssel való kapcsolatot és újraszámítsa az árat. Kattintson a **Nem** gombra, hogy eltávolítsa a az értékesítési szerződéssel való kapcsolatot az ár újraszámítása nélkül.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Értékesítési szerződéssel rendelt cikk visszaküldése
-Amikor egy vevő visszaad egy értékesítési szerződéssel megrendelt terméket, a Microsoft Dynamics 365 for Finance and Operations megtalálja és automatikusan frissíti a kapcsolódó értékesítési szerződésben a mennyiségre vagy az összegre vonatkozó változásokat a kötelezettségvállalásban. Olyan visszáru rendelés létrehozásával, amely egy értékesítési szerződéshez kötött értékesítési rendelésen alapul Ön kialakít egy kapcsolatot az értékesítési szerződés kötelezettségvállalása az értékesítésirendelés-sor és a visszárurendelés-számla között.  
+Amikor egy vevő visszaküld egy értékesítési szerződéssel megrendelt terméket, a Supply Chain Management megtalálja és automatikusan frissíti a vonatkozó értékesítési szerződés kötelezettségvállalását, hogy tükrözze a változást a mennyiségben vagy összegben. Olyan visszáru rendelés létrehozásával, amely egy értékesítési szerződéshez kötött értékesítési rendelésen alapul Ön kialakít egy kapcsolatot az értékesítési szerződés kötelezettségvállalása az értékesítésirendelés-sor és a visszárurendelés-számla között.  
 
 Ha nem szeretné az értékesítési szerződés kötelezettségvállalásából levonni a visszaküldött cikkek mennyiségét, használhatja a **Kapcsolat eltávolítása** vezérlőt a **Visszáru rendelés** oldalon, hogy eltávolítsa a visszáru rendelés és az értékesítési szerződés kötelezettségvállalása közötti kapcsolatot. Ha később újra ki kell alakítania a kapcsolatot kattintson a **Kapcsolat létrehozása** gombra.  
 
 **Megjegyzés:** A visszáru rendelés csak egy értékesítési szerződéshez kapcsolható. Ha a vevő több terméket küld vissza, mint amennyi több értékesítési szerződésben rendelve lett, akkor létre kell hoznia egy új visszáru rendelést minden termékhez, és össze kell kapcsolnia a hozzá tartozó értékesítési szerződéssel.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Értékesítési szerződések automatikus keresése
-Bizonyos esetekben, ha értékesítési rendelések közvetetten jönnek létre, például mikor jóváírást vagy vállalatközi értékesítési rendeléseket készít eldöntheti, hogy a Microsoft Dynamics 365 for Finance and Operations automatikusan keressen-e alkalmazható értékesítési szerződéseket.
+Bizonyos esetekben, ha értékesítési rendelések közvetetten jönnek létre, például mikor jóváírást vagy vállalatközi értékesítési rendeléseket készít eldöntheti, hogy a rendszer automatikusan keressen-e alkalmazható értékesítési szerződéseket.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Értékesítési szerződések pénzügyi dimenziói
 Pénzügyi dimenziókat másolhat a dokumentum fejlécébe vagy az értékesítési szerződés egyedi soraiba. Bármikor módosíthatja egy szerződés fejlécének vagy sorainak dimenzióit. Ebben az esetben a dimenziók automatikusan átmásolódnak a kiadási rendelések kiadás fejlécébe vagy kiadás sorába.

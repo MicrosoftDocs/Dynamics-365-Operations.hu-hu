@@ -1,6 +1,6 @@
 ---
 title: Biztonság és szerepkörök kezelése az Attract alkalmazásban
-description: Ez a témakör az adatentitások biztonságával kapcsolatban nyújt tájékoztatást a Microsoft Dynamics 365 for Talent - Attract rendszerben.
+description: Ez a témakör a szerepkörök biztonságával kapcsolatban nyújt tájékoztatást a Microsoft Dynamics 365 Talent – Attract rendszerben.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3f804b5f79b813cf504c3deb4a95e678c6fcbf87
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ad94a7511afef0c68fb8f2a70402babb80b0f9ad
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739840"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024198"
 ---
 # <a name="set-user-permissions"></a>Felhasználói jogosultságok beállítása
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent Attract szerepköralapú biztonságot használ. Más szóval a hozzáférést nem egyéni felhasználókhoz rendeli, hanem biztonsági szerepkörökhöz, amelyekhez a felhasználók hozzá vannak rendelve. Biztonsági szerepkörhöz hozzárendelt felhasználó hozzáfér a szerepkörhöz társított jogosultságok csoportjához.
+A Microsoft Dynamics 365 Talent: Attract szerepköralapú biztonságot használ. Más szóval a hozzáférést nem egyéni felhasználókhoz rendeli, hanem biztonsági szerepkörökhöz, amelyekhez a felhasználók hozzá vannak rendelve. Biztonsági szerepkörhöz hozzárendelt felhasználó hozzáfér a szerepkörhöz társított jogosultságok csoportjához.
 
 Az Attract öt alapvető felhasználói szerepkört nyújt:
 
@@ -52,7 +52,7 @@ A következő szakaszok ismertetik az egyes szerepkörök részletes leírását
 
 ## <a name="administrator"></a>Rendszergazda
 
-A rendszergazda szerepkörhöz rendelt felhasználók elérhetik és módosíthatják és az összes adatot Attract programban. Rendszergazdák létrehozhatnak, olvashatnak, frissíthetnek, és törölhetnek adatokat. Hozzáférhetnek a Felügyeleti központhoz is ahol konfigurálhatják az Attract alkalmazást, és beállíthatnak felhasználói információkat. Azt ajánljuk, hogy legalább egy személy legyen a Rendszergazda szerepkörhöz rendelve. Alapértelmezés szerint a Microsoft PowerApps a környezeti rendszergazdája Attract-rendszergazdaként van beállítva. Mennyiben az Attract próbaverziójára regisztrált, a rendszergazda szerepkört automatikusan Önhöz van rendelve. Jelenleg a feladatok létrehozásához, a rendszergazdai szerepkörrel rendelkező felhasználóknak rendelkezniük kell Toborzó vagy Felvételi vezető szerepkörrel is.
+A rendszergazda szerepkörhöz rendelt felhasználók elérhetik és módosíthatják és az összes adatot Attract programban. Rendszergazdák létrehozhatnak, olvashatnak, frissíthetnek, és törölhetnek adatokat. Hozzáférhetnek a Felügyeleti központhoz is, ahol konfigurálhatják az Attract alkalmazást, és beállíthatnak felhasználói információkat. Azt ajánljuk, hogy legalább egy személy legyen a Rendszergazda szerepkörhöz rendelve. Alapértelmezés szerint a Microsoft PowerApps a környezeti rendszergazdája Attract-rendszergazdaként van beállítva. Mennyiben az Attract próbaverziójára regisztrált, a rendszergazda szerepkört automatikusan Önhöz van rendelve. Jelenleg a feladatok létrehozásához, a rendszergazdai szerepkörrel rendelkező felhasználóknak rendelkezniük kell Toborzó vagy Felvételi vezető szerepkörrel is.
 
 ## <a name="hiring-manager"></a>Felvételi vezető
 

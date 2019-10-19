@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 63b986f9f3a1505dba4c2f64f872b9472e1aca87
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46411052c7db25c3d1410c5280e8e856f0a40d3d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558619"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250143"
 ---
 # <a name="batch-balancing"></a>Kötegalapú kiigazítás
 
@@ -31,7 +31,7 @@ ms.locfileid: "1558619"
 
 Ez a témakör leírja a tételalapú kiigazítás folyamatának támogatási módját. 
 
-Nézzen meg egy [videót a tételalapú kiigazításról a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+További tájékoztatásért tekintse meg a [tételalapú kiigazítással kapcsolatos videót](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 A tételalapú kiigazítás folyamatban a termelési kötegben használt összetevők mennyiségét számoljuk ki a kiválasztott termékkötegekben levő hatóanyagok koncentrációjából.
 

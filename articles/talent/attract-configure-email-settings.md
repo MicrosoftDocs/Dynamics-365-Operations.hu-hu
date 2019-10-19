@@ -1,6 +1,6 @@
 ---
-title: E-mail beállítások megadása a Microsoft Dynamics 365 for Talent - Attract esetében
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Microsoft Dynamcis 365 által elküldött e-mailek beállításait a Talent - Attract esetében.
+title: E-mail beállítások megadása a Microsoft Dynamics 365 Talent - Attract esetében
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elküldött e-mailek beállításait a Microsoft Dynamcis 365 Talent - Attract esetében.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739495"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008662"
 ---
 # <a name="configure-email-settings"></a>E-mail beállítások megadása
 
 [!include[banner](../includes/banner.md)]
 
-A márkanév bizalmi kapcsolatot létesít, és segít felépíteni egy kapcsolatot a jelentkezők előtt, még mielőtt jelentkeznének a beosztásokra. A pozitív márkaértékelés vonzza a legjobb tehetséget, és növeli a meglévő alkalmazottak hűségét. Microsoft Dynamics 365 for Talent: az Attract lehetővé teszi az e-mailek konfigurálását, hogy azok tükrözzék a vállalat márkáját. Ennek megfelelően a pályázók számára a jelentkezési folyamat során egységes tapasztalatot lehet biztosítani.
+A márkanév bizalmi kapcsolatot létesít, és segít felépíteni egy kapcsolatot a jelentkezők előtt, még mielőtt jelentkeznének a beosztásokra. A pozitív márkaértékelés vonzza a legjobb tehetséget, és növeli a meglévő alkalmazottak hűségét. Microsoft Dynamics 365 Talent: Attract lehetővé teszi az e-mailek konfigurálását, hogy azok tükrözzék a vállalat márkáját. Ennek megfelelően a pályázók számára a jelentkezési folyamat során egységes tapasztalatot lehet biztosítani.
 
 Az Attract a következő műveletek végrehajtását teszi lehetővé:
 

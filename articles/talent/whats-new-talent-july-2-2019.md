@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új és módosult elemei (2019. június 25.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új és módosult elemei (2019. június 25.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
-ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
+ms.openlocfilehash: a5de33a3a4f22f2a5be672c492fc59a6429b49e1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "1791976"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010291"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>A Dynamics 365 for Talent új vagy módosult elemei (2019. július 2.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-02-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 02.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -52,8 +52,8 @@ A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek m
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Core HR alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Core HR apró hibáinak javításait is tartalmazza.

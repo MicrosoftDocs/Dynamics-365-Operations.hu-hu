@@ -1,6 +1,6 @@
 ---
-title: Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 for Talent - Attract programban.
-description: A Microsoft Dynamics 365 for Talent - Attract LinkedIn integrációját használhatja a jelöltek felkutatásához a LinkedIn Recruiter megoldáson keresztül.
+title: Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 Talent - Attract programban.
+description: A Microsoft Dynamics 365 Talent - Attract LinkedIn integrációját használhatja a jelöltek felkutatásához a LinkedIn Recruiter megoldáson keresztül.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,17 +19,17 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 14aba16fa81a8f25d0f88247319254407d428b2a
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739449"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008570"
 ---
 # <a name="source-candidates-with-linkedin-recruiter"></a>Jelöltek felkutatása a LinkedIn Recruiter segítségével
 [!include[banner](../includes/banner.md)]
 
-A LinkedIn a világ legnagyobb online szakmai hálózata, amely hozzáférést biztosít a világ legjobb tehetségéhez. Microsoft Dynamics 365 for Talent Attract segítségével felkutathat pályázókat közvetlenül a LinkedIn felületről. Ezért könnyebb, mint valaha, megtalálnia azokat a tehetségeket, akikkel betöltheti nyitott állásait. Miután a LinkedIn alkalmazással beállította a kapcsolatot az Attract megoldáson keresztül, megtekintheti a beosztásokhoz tartozó esetleges LinkedIn-jelöltek adatait, és egyetlen kattintással exportálhatja azokat az Attract megoldásba.
+A LinkedIn a világ legnagyobb online szakmai hálózata, amely hozzáférést biztosít a világ legjobb tehetségéhez. Microsoft Dynamics 365 Talent: Attract segítségével felkutathat pályázókat közvetlenül a LinkedIn felületről. Ezért könnyebb, mint valaha, megtalálnia azokat a tehetségeket, akikkel betöltheti nyitott állásait. Miután a LinkedIn alkalmazással beállította a kapcsolatot az Attract megoldáson keresztül, megtekintheti a beosztásokhoz tartozó esetleges LinkedIn-jelöltek adatait, és egyetlen kattintással exportálhatja azokat az Attract megoldásba.
 
 Ha úgy tűnik, hogy nem rendelkezik ezzel a képességgel, forduljon a rendszergazdához. Csak akkor veheti igénybe LinkedIn Recruiter megoldást az Attract alkalmazásból ha az adminisztrátor [beállította a LinkedIn integrációt](./attract-admin-linkedin.md). Ezután beállíthatja a kapcsolatot a LinkedIn Recruiter megoldással és megkezdheti a jelöltek megtalálását.
 

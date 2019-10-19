@@ -1,6 +1,6 @@
 ---
-title: Tevékenységek a Microsoft Dynamics 365 for Talent - Attract folyamataiban
-description: Ez a témakör a Microsoft Dynamics 365 for Talent - Attract felvételi folyamatában használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
+title: Tevékenységek a Microsoft Dynamics 365 Talent – Attract folyamataiban
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Attract felvételi folyamatában használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739715"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008685"
 ---
 # <a name="activities-in-hiring-processes"></a>Tevékenységek a toborzási folyamatban
 
 [!include[banner](../includes/banner.md)]
 
-A tevékenységek a felvételi folyamat részeként adhatók hozzá a Dynamics 365 for Talent: Attract esetében. A tevékenységeket folyamatsablonhoz lehet hozzáadni, vagy közvetlenül az állásnál adhatók hozzá a felvételi folyamathoz. Ha megadott egy állást, ki lesz választva egy folyamat, és a tevékenységek, amelyek szerepelnek a sablonban, az álláshoz adódnak. Az alapértelmezett sablont használja a rendszer, ha nincs sablon kiválasztva. A felvételi folyamat is módosítható az álláson a sablon alkalmazása után.
+A tevékenységek a felvételi folyamat részeként adhatók hozzá a Microsoft Dynamics 365 Talent: Attract esetében. A tevékenységeket folyamatsablonhoz lehet hozzáadni, vagy közvetlenül az állásnál adhatók hozzá a felvételi folyamathoz. Ha megadott egy állást, ki lesz választva egy folyamat, és a tevékenységek, amelyek szerepelnek a sablonban, az álláshoz adódnak. Az alapértelmezett sablont használja a rendszer, ha nincs sablon kiválasztva. A felvételi folyamat is módosítható az álláson a sablon alkalmazása után.
 
 > [!NOTE] 
 > A folyamatsablonok az Átfogó felvételi bővítmény részeként érhetők el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
@@ -49,7 +49,7 @@ A Pályázat tevékenység kötelező a felvételi folyamat sablonban. E-mail k�
 
 A tevékenység három összetevőből áll: pályázó elérhetőségének lekérése, ütemezés és visszajelzés. Használja az állássablon interjú tevékenységét, ha szeretné szerepeltetni a folyamatban a jelölt rendelkezésre állásának kérését, ütemezést és visszajelzést, ahelyett, hogy egyenként a felvételi folyamat részeként használná őket. További tudnivalókért lásd: [Interjú ütemezése és visszajelzés](interview-scheduling-feedback.md).
 
-## <a name="powerapps-activity"></a>PowerApps tevékenység
+## <a name="powerapps-activity"></a>PowerApps-tevékenység
 
 A PowerApps tevékenység lehetővé teszi Microsoft PowerApps alkalmazás beágyazását a felvételi folyamatba. Az alkalmazás összes jelentkező, csak a belső pályázók, csak a külső pályázók vagy egy pályázó számára sem lehet szükséges. Ha az alkalmazás kötelezőként van megjelölve, akkor el kell végezni a következő szakaszba való továbblépés előtt. Ahhoz, hogy befejezettnek lehessen tekinteni, a **JobApplicationStatus** mezőnek **Kész** állapotúnak kell lennie. A mező a JobApplicationActivity entitásban található, így a PowerApps alkalmazásnak frissítenie kell ezt a mezőt, mielőtt a fokozatot előre lehet léptetni. Ha az alkalmazás nem szükséges, a tevékenység (nem kötelező), és a fokozat lehet előbbre akkor is, ha az alkalmazás nem befejeződött.
 
@@ -76,7 +76,7 @@ A webes tartalom tevékenységgel online tartalom ágyazható be a felvételi fo
 
 ## <a name="microsoft-forms-activity"></a>Microsoft Forms tevékenység
 
-A Microsoft Forms tevékenység lehetővé teszi Microsoft Forms tevékenység beágyazását a felvételi folyamatba. A Microsoft Forms segítségével teszteket, felméréseket és lekérdezéseket hozhat létre. A felvételi folyamatba a Microsoft Forms tevékenység mentéséhez meg kell adnia az űrlap URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a PowerApps, a YouTube ás a webes tartalomhoz kapcsolódó tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, az űrlap csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
+A Microsoft Forms tevékenység lehetővé teszi Microsoft Forms tevékenység beágyazását a felvételi folyamatba. A Microsoft Forms segítségével teszteket, felméréseket és lekérdezéseket hozhat létre. A felvételi folyamatba a Microsoft Forms tevékenység mentéséhez meg kell adnia az űrlap URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a PowerApps, YouTube és webes tartalomhoz kapcsolódó tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, az űrlap csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
 
 A Microsoft Forms esetében a szerző módosíthatja a beállításokat, hogy a szervezeten kívüli felhasználók válaszolhassanak a felmérésre vagy a tesztre. Ebben az esetben a felhasználók névtelenül küldik a válaszok. Ha meg szeretné nézni, hogy ki töltötte ki a felmérést vagy a tesztet, előírhatja, hogy a válaszadók írják be a nevüket a felmérés vagy teszt részeként.
 

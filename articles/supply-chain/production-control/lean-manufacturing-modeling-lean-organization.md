@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560140"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250211"
 ---
 # <a name="modeling-a-lean-organization"></a>Lean szervezeti modellezése
 
@@ -39,7 +39,7 @@ A termelési rendeléseken alapuló termelési esetekben az anyagok egy adott te
 
 A szállítási átfutási idők és a munkaközpontokban a kötegtermelés miatt keletkező felesleges készletek csökkentése érdekében a lean manufacturing bevezeti a kanban feltöltést és a gyártásban és a raktárfeltöltésben található szupermarketeket. Ezek a funkciók általában megszakítják a részlegesen független kanban-ciklusok termelését. Egy félkész termékre vonatkozó kanban feltöltést nem indít el egy befejezett termékre vonatkozó rendelés. 
 
-A termelés és a Microsoft Dynamics 365 for Finance and Operations rendszerben javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenységalapú modell támogatja a forgatókönyvek széles skálájának beállítását. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
+A termelés és költség javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenységalapú modell támogatja a forgatókönyvek széles skálájának beállítását. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Félkész termékek (nem BOM-szintek)
 A Lean manufacturing egyesíti a raktározott termékek és a félkész termékek kanbanjait egyetlen keretrendszerben, és azonfelül egységes felhasználói tapasztalatot nyújt minden esethez. A kiegészítő architektúra miatt a további Anyagjegyzékszinteket már nem kell bevezetni a félkész termékekhez használatos kanban-ok engedélyezéséhez. A felépítése minimálisra csökkentheti a készlet tranzakcióit.
@@ -50,7 +50,7 @@ A kötegek méreteinek csökkentése az ideális állapotra a lean manufacturing
 ## <a name="value-streams-and-value-stream-mapping"></a>Érték-előállítási folyamatok és érték-előállítási folyamat feltérképezése
 A Lean manufacturing architektúrája Womack és Jones által megalkotott 5 Lean alapelven alapszik: Vevői érték, Érték-előállítási folyamat, Áramlás, lekérés és tökéletesség. A megvalósító lean manufacturing megoldásokra vonatkozó egy jóváhagyott módszere a gyártás fizikai világában az érték-előállítási folyamat feltérképezése (VSM). Ezt a módszert Rother és Shook a "Tanuljunk meg látni" című publikációjukban vezették be a Lean Manufacturing Intézetben. 
 
-A Finance and Operations szolgáltatásban a jövőbeli állapotú érték a termelési folyamat verziójaként lehet modellezni. Az érték-előállítási folyamat minden folyamata folyamattevékenységként kerül modellezésre. A mozgásokat vagy átviteleket transzfertevékenységekként lehet modellezni, ha a transzferállapotot regisztrálni kell vagy készletkitárolással, esetleg összevont szállítással ellátott integráció szükséges. 
+A jövőbeli állapotú érték a termelési folyamat verziójaként lehet modellezni. Az érték-előállítási folyamat minden folyamata folyamattevékenységként kerül modellezésre. A mozgásokat vagy átviteleket transzfertevékenységekként lehet modellezni, ha a transzferállapotot regisztrálni kell vagy készletkitárolással, esetleg összevont szállítással ellátott integráció szükséges. 
 
 Az érték-előállítási folyamatot egy üzemi egységként lehet modellezni. Emiatt az érték-előállítási folyamatot a pénzügyi dimenziókban is lehet használni.
 

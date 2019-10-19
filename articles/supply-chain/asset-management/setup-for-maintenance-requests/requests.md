@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d238bb31537a21f46c252fbee400fe61901e650
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790499"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250921"
 ---
 # <a name="maintenance-requests"></a>Karbantartási kérések
 
@@ -31,7 +31,7 @@ ms.locfileid: "1790499"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Lehetősége van beállítani különböző típusú, a vállalatnál használható kéréseket. Az egyik ilyen típus a karbantartási kérés. A karbantartási kérések az adott feladathoz szükséges munkarendelés igénylésére szolgálnak. Karbantartási kérést minden olyan felhasználó létrehozhat, aki hozzáfér az Eszközkezelés funkcióhoz a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban. Egy tervező vagy vezető ezután eldöntheti, hogy a karbantartási kérést át kell-e alakítani munkarendeléssé, vagy ki kell-e töltenie saját életciklusát.
+Lehetősége van beállítani különböző típusú, a vállalatnál használható kéréseket. Az egyik ilyen típus a karbantartási kérés. A karbantartási kérések az adott feladathoz szükséges munkarendelés igénylésére szolgálnak. Karbantartási kérést minden olyan felhasználó létrehozhat, aki hozzáfér az Eszközkezelés funkcióhoz. Egy tervező vagy vezető ezután eldöntheti, hogy a karbantartási kérést át kell-e alakítani munkarendeléssé, vagy ki kell-e töltenie saját életciklusát.
 
 ## <a name="view-maintenance-requests"></a>Karbantartási kérések megtekintése
 

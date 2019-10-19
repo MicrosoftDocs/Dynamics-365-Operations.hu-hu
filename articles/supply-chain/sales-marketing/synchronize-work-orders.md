@@ -1,6 +1,6 @@
 ---
-title: Projektszámmal rendelkező munkarendelések szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található projektszámaival történő szinkronizálására használatos.
+title: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Supply Chain Management alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Dynamics 365 Field Service munkarendeléseinek a Dynamics 365 Supply Chain Management szolgáltatásban található projektszámaival történő szinkronizálására használatos.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/12/2019
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 77358513ffdf791ab10d6efe1b84f598ffb5ec26
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3678fbca8244ae6dcd050f6a91ff3b35d90e1064
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843409"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251707"
 ---
-# <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Projektszámmal rendelkező munkarendelések szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+# <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Microsoft Dynamics 365 for Field Service munkarendeléseinek a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban található projektszámaival történő szinkronizálására használatos.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Dynamics 365 Field Service munkarendeléseinek a Dynamics 365 Supply Chain Management szolgáltatásban található projektszámaival történő szinkronizálására használatos.
 
-[![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-A használt **Mukerdnelések projektekkel (Fin and Ops – Field and Ops)** sablon a **Munkarendelések (Field Service – Fin and Ops)** sablonon alapul. További információért, lásd: [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
+A használt **Munkarendelések projektekkel (Field Service-ből a Supply Chain Management szolgáltatásba)** sablon a **Munkarendelések (Field Service-ből a Supply Chain Management szolgáltatásba)** sablonon alapul. További információért, lásd: [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 
 Ez a témakör csak a két sablonok eltéréseit írja le:
-- **Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba)**
-- **Munkarendelések (a Field Service alkalmazásból a Fin and Ops alkalmazásba)**
+- **Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba)**
+- **Munkarendelések (a Field Service alkalmazásból a Supply Chain Management alkalmazásba)**
 
-A fő különbség, hogy ez a sablon tartalmazza a munkarendeléshez hozzárendelt projektszámot a Field Service megoldásban, ami biztosítja, hogy a Finance and Operations megoldásban létrehozott értékesítési rendelés tartalmazza a projektszámot, és hogy megtörténhessen a számlázás a kapcsolódó projektben. Emellett a sablon használja a speciális lekérdezés és szűrést.
+A fő különbség, hogy ez a sablon tartalmazza a munkarendeléshez társított projektszám leképezését a Field Service megoldásban, ami biztosítja, hogy a Supply Chain Management megoldásban létrehozott értékesítési rendelés tartalmazza a projektszámot, és hogy megtörténhessen a számlázás a kapcsolódó projektben. Emellett a sablon használja a speciális lekérdezés és szűrést.
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
 **A sablon neve az adatintegrációban:**
 
-- Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba)
+- Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba)
 
 **A feladat neve az adatintegrációs projektben:**
 
@@ -56,24 +56,24 @@ A fő különbség, hogy ez a sablon tartalmazza a munkarendeléshez hozzárende
 - WorkOrderService
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM megoldás
-A **Külső projekt** mezőt hozzáadtuk a munkarendelés entitáshoz. Ez a mező egy keresés és vásárlás, felcímkézi a Munkarendelést egy projekttel, majd az értékesítési rendelés kapcsolódik egy projekthez a Finance and Operations megoldáson belül. Miután a **Rendszer állapota** Nyitott – folyamatban (690,970,000) állapotból magasabb állapba kerül, a **Külső projekt** mezőt a rendszer zárolja, és nem lehet felvenni, törölni vagy módosítani az értéket.
+A **Külső projekt** mezőt hozzáadtuk a munkarendelés entitáshoz. Ez a mező egy keresőmező, és a munkarendelés egy projekttel való felcímkézése által az értékesítési rendelés kapcsolódik egy projekthez a Supply Chain Management megoldáson belül. Amikor a **Rendszer állapota** Nyitott – folyamatban (690,970,000) állapotból magasabb állapba kerül, a **Külső projekt** mezőt a rendszer zárolja, és nem lehet felvenni, törölni vagy módosítani az értéket.
 
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
 Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>Munkarendelések projektszámmal (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderHeader
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>Munkarendelések projekttel(a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderHeaderProject
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderProduct
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Fin and Ops alkalmazásba): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderService
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP4.png)](./media/FSWOP4.png)

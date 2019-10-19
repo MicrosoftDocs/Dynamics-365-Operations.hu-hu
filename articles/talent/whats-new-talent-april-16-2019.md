@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 16.) szolgáltatásban
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent (2019. április 16.) szolgáltatásban
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518157"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024137"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 16.) szolgáltatásban
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 16.) szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -39,7 +39,7 @@ Immár nyomon követheti a jelentkezők, álláslehetőségek vagy a pályázato
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
@@ -47,11 +47,11 @@ A szakaszban ismertetett módosítások a 8.1.2239-ös buildre vonatkoznak. A fe
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Kompenzációs régió, kompenzációs szint, juttatási lehetőség és szakértelem típusa entitások frissülnek a Common Data Service megoldásban a vevői mező támogatásához
 
-Ebben a kiadásban ezek a Common Data Service entitások frissítve lettek, hogy lehetséges legyen egyéni mezők hozzáadása a Talent (Core HR) megoldásban.
+Ebben a kiadásban ezek a Common Data Service entitások frissítve lettek, hogy lehetséges legyen egyéni mezők hozzáadása a Talent: Core HR megoldásban.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Új Common Data Service entitás-támogatás: Kompenzációs átruházási szabályok, Kompenzáció-változó konstrukció, Változó kompenzáció
 
-Ebben a kiadásban a Kompenzációs átruházási szabályok, a Kompenzációs változó konstrukció és a változó kompenzáció entitások hozzá lettek adva a Common Data Service megoldáshoz. Ezek az entitások a Talent (Core HR) megoldással hozzáadott egyéni mezőket is támogatják.
+Ebben a kiadásban a Kompenzációs átruházási szabályok, a Kompenzációs változó konstrukció és a változó kompenzáció entitások hozzá lettek adva a Common Data Service megoldáshoz. Ezek az entitások a Talent: Core HR megoldással hozzáadott egyéni mezőket is támogatják.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI frissítési problémák (314342)
 
@@ -95,6 +95,6 @@ Ez a módosítással az ismétlődések észleli a program, amikor névmezőket 
 
 ### <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
 
-A 25-ös platformfrissítéssel a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
+A Finance and Operations 25-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
 
 

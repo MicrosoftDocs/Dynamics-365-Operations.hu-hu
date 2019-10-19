@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. augusztus)
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 3327939137486038b9002029c7c9e8d65dfa2f64
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: db7c91ea6599bde7d4c589a021d2d3b262e57ec9
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742609"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010452"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-august-2018"></a>Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. augusztus)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.104**
 
-Ez a témakör a Dynamics 365 for Talent Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le.
+Ez a témakör a Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Lejáró rekordok megtekintése a Vezetői önkiszolgáló szolgáltatáshoz
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bc5a38519efb6f4d242daca9aab5226c16e4ea0
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729875"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250737"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés létrehozása
 
@@ -47,7 +47,7 @@ Ha az előrejelzési stratégia **Korábbi igény átmásolása**-ként van mega
 
 Annak érdekében, hogy a termelési tervek ne keveredhessenek össze, bizonyos számú előrejelzési időszak befagyasztható. Ezt a számot a **Befagyasztási időkorlát** mezőben lehet megadni. A **Módosított igény-előrejelzés** oldalon a befagyasztott időszakokhoz tartozó cellák letiltásra kerülnek, jelezve, hogy ezek az értékek nem változtathatók. 
 
-A kiinduló igény-előrejelzés kezdő dátumának nem kell feltétlenül aktuális vagy jövőbeli dátumnak lennie. Egy másik kezdő dátum beállításához használja a **Kiinduló előrejelzés kezdő dátuma - Kezdő dátum** mezőt. Például júniusban a felhasználók létrehozhatnak következő évre vonatkozó előrejelzést. Mivel az igényelőzmények vége és a kiindulás kezdete közti előrejelzési időszakok hiányoznak, lehetséges, hogy az előrejelzés pontatlan lesz. A Microsoft Dynamics 365 for Finance and Operations Igény-előrejelzési szolgáltatás használatával négyféle módon is kitöltheti a hiányzó időszakok helyét. A kívánt módszert az **Igény-előrejelzési paraméterek** oldalon található MISSING\_VALUE\_SUBSTITUTION paraméter megadásával választhatja ki. 
+A kiinduló igény-előrejelzés kezdő dátumának nem kell feltétlenül aktuális vagy jövőbeli dátumnak lennie. Egy másik kezdő dátum beállításához használja a **Kiinduló előrejelzés kezdő dátuma - Kezdő dátum** mezőt. Például júniusban a felhasználók létrehozhatnak következő évre vonatkozó előrejelzést. Mivel az igényelőzmények vége és a kiindulás kezdete közti előrejelzési időszakok hiányoznak, lehetséges, hogy az előrejelzés pontatlan lesz. Az Igény-előrejelzési szolgáltatás használatával négyféle módon is kitöltheti a hiányzó időszakok helyét. A kívánt módszert az **Igény-előrejelzési paraméterek** oldalon található MISSING\_VALUE\_SUBSTITUTION paraméter megadásával választhatja ki. 
 
 > [!NOTE]
 > A hiányzó érték helyettesítése csak a múltbeli adatok kezdő és befejező dátuma közötti adathézagokhoz használható. A program nem tölti ki az adatokat az utolsó fizikai adatpont előtt vagy után, és csak a tényleges meglévő adatpontok között következtet. 
@@ -56,7 +56,7 @@ A **Kiinduló előrejelzés kezdő dátuma** - **Kezdő dátum** mezőt az előr
 
 A **Kiinduló előrejelzés kezdő dátuma** - **Kezdő dátum** mező múltbeli dátumra is beállítható. Azaz múltbeli igény-előrejelzés is generálható. Ez azért hasznos, mert lehetővé teszi a felhasználók számára, hogy úgy igazítsák az előrejelzési szolgáltatás paramétereit, hogy a generált múltbeli statisztikai előrejelzés megegyezzen a tényleges előzményigényekkel. Ezután a felhasználók ugyanezeket a paraméter-beállításokat felhasználva generálhatnak jövőre vonatkozó statisztikai kiinduló előrejelzést. 
 
-A korábbi igény-előrejelzési iterációk során végrehajtott manuális kiigazítások a **Manuális kiigazítások átvitele az igény-előrejelzésbe** jelölőnégyzet bejelölésével az új kiinduló előrejelzésben automatikusan alkalmazhatók. Ha a jelölőnégyzet nincs bejelölve, a manuális kiigazítások nem kerülnek be a kiinduló előrejelzésbe – azonban nem törlődnek. Előrejelzésen végrehajtott manuális kiigazítások csak előrejelzés importálásakor törölhetők a **Kiinduló igény-előrejelzésen végrehajtott manuális kiigazítások mentése** jelölőnégyzetben lévő jelölés eltüntetésével. A manuális kiigazítások engedélyezéskor kerülnek mentésre. Ezért ha egy felhasználó manuális kiigazításokat hajt végre az előrejelzésen, de azt nem engedélyezi a Finance and Operations rendszerben, a változtatások elvesznek. A manuális kiigazításokkal és azok működésével kapcsolatos további tudnivalókat lásd: [Kiigazított előrejelzés engedélyezése](authorize-adjusted-forecast.md). 
+A korábbi igény-előrejelzési iterációk során végrehajtott manuális kiigazítások a **Manuális kiigazítások átvitele az igény-előrejelzésbe** jelölőnégyzet bejelölésével az új kiinduló előrejelzésben automatikusan alkalmazhatók. Ha a jelölőnégyzet nincs bejelölve, a manuális kiigazítások nem kerülnek be a kiinduló előrejelzésbe – azonban nem törlődnek. Előrejelzésen végrehajtott manuális kiigazítások csak előrejelzés importálásakor törölhetők a **Kiinduló igény-előrejelzésen végrehajtott manuális kiigazítások mentése** jelölőnégyzetben lévő jelölés eltüntetésével. A manuális kiigazítások engedélyezéskor kerülnek mentésre. Ezért ha egy felhasználó manuális kiigazításokat hajt végre az előrejelzésen, de azt nem engedélyezi a Supply Chain Management rendszerben, a változtatások elvesznek. A manuális kiigazításokkal és azok működésével kapcsolatos további tudnivalókat lásd: [Kiigazított előrejelzés engedélyezése](authorize-adjusted-forecast.md). 
 
 Az igény-előrejelzés generálásához név és leírás adható a generált előrejelzések könnyebb beazonosíthatósága érdekében. Ezek az értékek láthatók az előrejelzés-létrehozási előzményekben, a **Statisztikai kiinduló előrejelzés létrehozási előzményei** oldalon. 
 

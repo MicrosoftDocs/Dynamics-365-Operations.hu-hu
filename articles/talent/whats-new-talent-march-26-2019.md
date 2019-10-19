@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 26.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 26.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741567"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023884"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. március 26.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 26.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -46,20 +46,20 @@ Mostantól közvetlenül is beágyazhat képeket tevékenységekbe. Nem csak az 
 
 [![Hozzárendelés](./media/embedimages.png)](./media/embedimages.png)
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 **Build 8.1.2210**
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Egyéni mező támogatása is elérhető bizonyos entitásokhoz a Common Data Service megoldásban 
 
-A következő Common Data Service entitások mostantól támogatják a Dynamics 365 for Talent alkalmazásban létrehozott ügyfélmezőket:
+A következő Common Data Service entitások mostantól támogatják a Talent alkalmazásban létrehozott ügyfélmezőket:
 
 - Dolgozó
 - Etnikum
 - Veteránállapot
 - Nyelvkód
-- Beosztás
+- Állás
 - Feladattípus
 - Beosztás
 - Beosztás
@@ -72,10 +72,10 @@ Ezzel a módosítással, a foglalkoztatási előzmények lap az alkalmazotti rek
 Ebben a kiadásban a fix kompenzációs konstrukciók nem jelennek meg, ha a felhasználók korlátozva vannak a felhasználó vállalati biztonság szerint. Az összes biztonsági beállítás figyelembe van véve, és fix konstrukció jelennek meg azokhoz a vállalatokhoz, amelyekhez a felhasználó elérési engedéllyel rendelkezik. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Nem lehet törölni a feladatrekordokat a Megnyitás Excelben lehetőséggel a Talentben
-Ebben a verzióban, eltávolíthat feladatrekordokat a **Megnyitása Excelben** lehetőség használatával a Dynamics 365 for Talent alkalmazásban.
+Ebben a verzióban, eltávolíthat feladatrekordokat a **Megnyitása Excelben** lehetőség használatával a Talent alkalmazásban.
 
 ### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
-A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen be annak meghatározásához, hogy kell-e az adatbázist frissíteni kell PowerApps felügyeleti központba. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
+A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen a PowerApps felügyeleti központba annak meghatározásához, hogy kell-e az adatbázist frissíteni. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="in-preview"></a>Előnézetben
 
@@ -93,7 +93,7 @@ Előfordulhat, hogy a szervezetek okkódok megadását kérik, bizonyos távoll�
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezek a vezetőkhöz és regionális alkalmazottak hoz tartozhatnak. Ez a módosítás lehetővé teszi a HR számára kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A fix és változó kompenzációs tervek, amelyeket hozzárendelhet biztonsági szerepkörökhöz, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz, például fizetés és bónuszrekordok. Csak a hozzáférést kapott szerepkörök dolgozhatnak fel kompenzációt ezekhez a munkavállalókhoz.
 
 ###  <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A 25-ös platformfrissítéssel a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket kézbesítenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt. 
+A Finance and Operations 25-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Duplikált alkalmazottak ellenőrzése: Felhasználói felület módosítása
 Ez a módosítással az ismétlődések észleli a program, amikor névmezőket ad meg, és egy állapot jelenik meg a talált ismétlődések számával. A hivatkozás kiválasztásával megnyithat egy új lapot, hogy megállapítsa, hogy használja-e az észlelt egyezést. Az adatbevitel megzavarása elkerülése érdekében az ismétlődéseket tartalmazó űrlap nem nyílik meg automatikusan.

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572696"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248873"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -39,7 +39,7 @@ Miután a beszerzési rendelés létre lett hozva, lehet, hogy át kell esnie eg
 ## <a name="approval-of-purchase-orders"></a>A beszerzési rendelések jóváhagyása
 Azok a beszerzési rendelések, amelyek nem használják a változáskezelést, azoknak az állapota létrehozás után **Jóváhagyva** lesz, míg a változáskezelést használó beszerzési rendelések létrehozás után **Vázlat** állapotúak. Az a beszerzési rendelés, amely az alaptervezés során egy tervezett rendelés megerősítéséből jön létre, azonnal **Jóváhagyva** állapotú lesz, a változáskezelési beállításoktól függetlenül. A beszerzési rendelés csak akkor hoz létre készlettranzakciót, ha eléri a **Jóváhagyva** állapotot. Ezért az a készlet nem lesz elérhető a foglalásoknál vagy jelöléseknél, amíg a rendelés nem lesz elfogadva.  
 
-Engedélyezheti a változáskezelést a beszerzési rendelésekhez a **Változáskezelés aktiválása** beállításával a **Beszerzési és forrásparaméterek** lapon. Ha a változáskezelés engedélyezve van, a beszerzési rendelésnek, elkészítés után, végig kell haladnia egy jóváhagyási munkafolyamaton. A Microsoft Dynamics 365 for Finance and Operations rendelkezik olyan munkafolyamat-szerkesztővel, ami segít felállítani egy munkafolyamatot a jóváhagyási folyamathoz. Ez a munkafolyamat tartalmazhat szabályokat az automatikus jóváhagyáshoz, szabályokat, amelyek meghatározzák, hogy ki lesz hozzárendelve egy bizonyos beszerzési rendeléshez, valamint olyan szabályokat, amik eszkalálják azokat a munkafolyamatokat, amik már régóta jóváhagyásra várnak. A változáskezelési folyamatot engedélyezheti az összes szállítóhoz, vagy csak bizonyos szállítókhoz. Beállíthatja úgy is a folyamatot, hogy az minden beszerzési rendelés esetében felülírható legyen.  
+Engedélyezheti a változáskezelést a beszerzési rendelésekhez a **Változáskezelés aktiválása** beállításával a **Beszerzési és forrásparaméterek** lapon. Ha a változáskezelés engedélyezve van, a beszerzési rendelésnek, elkészítés után, végig kell haladnia egy jóváhagyási munkafolyamaton. A Supply Chain Management rendelkezik olyan munkafolyamat-szerkesztővel, ami segít felállítani egy munkafolyamatot a jóváhagyási folyamathoz. Ez a munkafolyamat tartalmazhat szabályokat az automatikus jóváhagyáshoz, szabályokat, amelyek meghatározzák, hogy ki lesz hozzárendelve egy bizonyos beszerzési rendeléshez, valamint olyan szabályokat, amik eszkalálják azokat a munkafolyamatokat, amik már régóta jóváhagyásra várnak. A változáskezelési folyamatot engedélyezheti az összes szállítóhoz, vagy csak bizonyos szállítókhoz. Beállíthatja úgy is a folyamatot, hogy az minden beszerzési rendelés esetében felülírható legyen.  
 
 Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhagyási állapoton mennek keresztül, kezdve a **Vázlat** állapottól, a **Véglegesítve** állapotig. Miután egy rendelés jóvá lett hagyva, azoknak a felhasználóknak, akik módosítani szeretnék, a **Változtatás kérése** művelet kell használniuk.
 
@@ -55,7 +55,7 @@ Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhag
 ## <a name="confirming-purchase-orders"></a>Beszerzési rendelések megerősítése
 Azok a beszerzési rendelések, amik **Jóváhagyva** állapotúak, további lépéseken is áteshetnek, mielőtt meg lesznek erősítve. Például, ha egy beszerzési értesítést kell küldeni a szállítónak, hogy lekérdezze az árakat, kedvezményeket és a szállítási dátumokat. Ebben az esetben a beszerzési rendelést **Külső ellenőrzés alatt** állapotúra módosíthatja a **Beszerzési értesítő** művelet segítségével.  
 
-Azok a szállítók, akik a szállítói portált használják, áttekintheti a rendeléseket, majd jóváhagyhatják vagy elutasíthatják azokat. Ez alatt az áttekintési folyamat alatt a beszerzési rendelés **Külső ellenőrzés alatt** állapotú. A szállítói portál konfigurálható, így a szállítótól érkező visszaigazolás automatikusan megerősíti a rendelést a Finance and Operations rendszerben. Másik megoldásként megerősíthet egy beszerzési rendelést manuálisan is, miután megkapta a megerősítést a szállítótól. Ha a szállító elutasítja a beszerzési rendelést, az elutasítás az indoklással, valamint a változtatási javaslattal kerül kézbesítésre. Ebben az esetben a beszerzési rendelés állapota továbbra is **Külső ellenőrzés alatt** lesz.  
+Azok a szállítók, akik a szállítói portált használják, áttekintheti a rendeléseket, majd jóváhagyhatják vagy elutasíthatják azokat. Ez alatt az áttekintési folyamat alatt a beszerzési rendelés **Külső ellenőrzés alatt** állapotú. A szállítói portál konfigurálható, így a szállítótól érkező visszaigazolás automatikusan megerősíti a rendelést a Supply Chain Management rendszerben. Másik megoldásként megerősíthet egy beszerzési rendelést manuálisan is, miután megkapta a megerősítést a szállítótól. Ha a szállító elutasítja a beszerzési rendelést, az elutasítás az indoklással, valamint a változtatási javaslattal kerül kézbesítésre. Ebben az esetben a beszerzési rendelés állapota továbbra is **Külső ellenőrzés alatt** lesz.  
 
 A pro-forma megerősítés generálására is van lehetőség, olyan megrendeléshez, amihez még nem készült aktuális megerősítés. Ez a beállítás olyan jelentést hoz létre, amit megoszthat a szállítóval. Ez nem hoz létre napló adatokat.  
 

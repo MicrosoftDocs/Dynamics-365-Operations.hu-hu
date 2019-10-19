@@ -1,6 +1,6 @@
 ---
-title: A karrierwebhely beállítása a Microsoft Dynamics 365 for Talent - Attract megoldásban
-description: 'Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról a Microsoft Dynamics 365 for Talent - Attract: Attract megoldásban.'
+title: A karrierwebhely beállítása a Microsoft Dynamics 365 Talent - Attract megoldásban
+description: Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról a Microsoft Dynamics 365 Talent - Attract megoldásban.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739771"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026279"
 ---
 # <a name="set-up-your-career-site"></a>A karrierwebhely beállítása
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról a Microsoft Dynamics 365 for Talent: Attract-ban. A funkciók beállítását is ismerteti.
+Ez a témakör áttekintést a pályázó által használt karrierwebhely funkcióiról a Microsoft Dynamics 365 Talent: Attract: Attract megoldásban. A funkciók beállítását is ismerteti.
 
 Az Attract egy karrierwebhelyet biztosít minden egyes környezethez a bérlőben. Például ha egy szervezet fejlesztői környezettel és tesztkörnyezettel rendelkezik, egy karrierwebhely lesz telepítve a fejlesztői környezethez, és egy másik a tesztkörnyezethez. Valamennyi karrierwebhely teljesen elszigetelt, és saját hitelesítési módszere van. Az állások és a jelöltprofilok nincsenek a karrierwebhelyek között megosztva.
 

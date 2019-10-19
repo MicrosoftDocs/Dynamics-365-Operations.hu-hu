@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865280"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248842"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -48,16 +48,13 @@ Ajánlatkérési esetet tervezett rendelésekből, beszerzési igénylésből é
 
 Miután előkészítette az ajánlatkérési esetet és hozzáadta a szállítókat, válassza a **Küldés** (**Küldés és közzététel** az állami szektor esetében) lehetőséget az ajánlatkérési esetnél. Ajánlatkérési napló jön létre minden egyes olyan szállítóra vonatkozóan, amelyek számára elküldte az ajánlatkérést. A Küldés művelet nyomtatási beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail-címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.
 
-Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Microsoft Dynamics 365 for Finance and Operations rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
+Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
 
 Ha módosítania kell az ajánlatkérést, miután elküldte azt, újra elküldheti az ajánlatkérést a szállítóknak, ha elkészült a két módosítási művelettel: ezek a Létrehozás és a Véglegesítés.+
 
 Ha e-mailben kap ajánlatokat, az **Ajánlatkérés** oldalon kezelheti őket.
 
 Ha egy szállító által küldött válasz esetében második ismétlésre is szüksége van, válassza a **Vissza** lehetőséget az **Ajánlatkérés** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatási beállításoktól függően kinyomtat, archivál és elküld.
-
-> [!NOTE]
-> Az **Ajánlatkérés** oldal neve módosult. A Dynamics 365 for Finance and Operations korábbi változataiban ezen oldal neve **Ajánlatkérésekre adott válasz** volt.
 
 Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérés egy pontozási panelt is tartalmaz, amelyen megadhatja a pontokat. Az összesített pontszámok megjelennek az ajánlatkérésen, valamint ha összehasonlítja a válaszokat a **Válaszok összehasonlítása** oldalon. A **Válaszok összehasonlítása** oldalon összehasonlíthatja a többi válaszadatot is, például a sorárakat, a szállítási dátumot és a teljes árat.
 

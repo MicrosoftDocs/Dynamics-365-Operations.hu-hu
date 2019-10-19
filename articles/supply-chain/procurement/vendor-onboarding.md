@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548998"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250148"
 ---
 # <a name="onboard-vendors"></a>Szállítók felvétele
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Az új szállítók felvétele és szállítóként való regisztrálása a Microsoft Dynamics 365 for Finance and Operations rendszerben a szállítókat képviselő személyektől gyűjtött információk alapján történnek.
+Az új szállítók felvétele és szállítóként való regisztrálása a Microsoft Dynamics 365 Supply Chain Management rendszerben a szállítókat képviselő személyektől gyűjtött információk alapján történik.
 
 A folyamat az alábbi lépésekből áll, amik közben a különböző szerepek műveleteket hajtanak végre a rendszerben.
 
 1. **Adatkezelés OData** – Entitásimportálás - Az eredeti kérelem a potenciális szállító regisztrációs kérelme. A kérés általában olyan forrásból jön, amely engedélyezi a névtelen hozzáférést, mint például egy vevő által üzemeltetett webhely. A szállítók regisztrálhatnak az alapvető adatok megadása által, mint például a szállító neve, indoklása, szervezeti száma, és a kapcsolattartó személy neve és e-mail címe. A kérelmek importálása az adatkezelési felületen keresztül történik.
-2. **Potenciális szállító regisztrációs kérelmének listaoldala** - A potenciális szállító regisztrációs kérelmében megadott információk alapján egy beszerző eldönti, hogy fel kell-e venni a szállítót. A beszerző megtekinti a beérkező kérelmet a **Potenciális szállító regisztrációs kérelmek** listaoldalon a Finance and Operations rendszerben.
+2. **Potenciális szállító regisztrációs kérelmének listaoldala** - A potenciális szállító regisztrációs kérelmében megadott információk alapján egy beszerző eldönti, hogy fel kell-e venni a szállítót. A beszerző megtekinti a beérkező kérelmet a **Potenciális szállító regisztrációs kérelmei** listaoldalon.
 3. **Felhasználólétesítési munkafolyamat** – Ha a beszerző ellenőrizte az beérkező kérelemben található információkat és a felvételi folyamat folytatása mellett döntött, akkor a felhasználói kérelem munkafolyamat egy új felhasználót létesít, és küld egy meghívó e-mailt a kapcsolattartó személy hitelesített Microsoft Dynamics 365 felhasználóként való elfogadásának érdekében.
-4. **Szállító regisztrációs varázsló** – a szállító kapcsolattartója bejelentkezik a Finance and Operations rendszerbe az új felhasználói fiók használatával. Ő befejezi a szállító regisztrációs varázslót, és ezzel olyan információkat nyújt, mint a címek, az üzleti adatok, a beszerzési kategóriák és a kérdőívekre adott válaszok.
+4. **Szállító regisztrációs varázsló** – a szállító kapcsolattartója bejelentkezik az új felhasználói fiók használatával. Ő befejezi a szállító regisztrációs varázslót, és ezzel olyan információkat nyújt, mint a címek, az üzleti adatok, a beszerzési kategóriák és a kérdőívekre adott válaszok.
 5. **Jóváhagyási munkafolyamat** - Egy olyan szállítókérés jön létre, amely tartalmazza a regisztrációs információkat. A rendszer ezt a szállítókérést egy munkafolyamathoz küldi, és továbbítja felülvizsgálat és jóváhagyás céljából.
 6. **Szállítói alapadatok létrehozása és a felhasználói szerepkör módosítása** - Ha a szállítókérés jóváhagyásra kerül, akkor egy új szállítói rekord jön létre. A szállító kapcsolattartójának felhasználói fiókja vagy megkapja a szállítói együttműködési engedélyt, vagy inaktiválásra kerül.
 
@@ -45,14 +45,14 @@ Az alábbi táblázat bemutatja a folyamatban részt vevő szerepköröket és a
 |--------------------------|---|---|---|---|---|---|
 | System                   | Az új szállítóra való kérelem importálásra kerül. | | | | | A szállítókérés elfogadása után létrejön a szállítói rekord. |
 | Beszerző | | A felvételi művelet indítása. | | | Ellenőrizze, és fogadja-, vagy utasítsa el a szállítókérést. | |
-| Adminisztrátor            | | | Hozzon létre egy felhasználói fiókot a Finance and Operations, illetve a Microsoft Azure rendszerben. | | | |
+| Adminisztrátor            | | | Hozzon létre egy felhasználót a Supply Chain Management és a Microsoft Azure rendszerben. | | | |
 | A szállító kapcsolattartója    | | | E-mail küldése a kapcsolattartónak. | Szállítói információ regisztrálása. | | |
 
-Az új szállítók felvételi folyamatának gyors bemutatásáért nézze meg ezt a rövid YouTube-videót: [Új szállító beléptetése a Dynamics 365 for Finance and Operations rendszerben](https://www.youtube.com/watch?v=0KUc3AGaTKk}
+A Szállító felvételi folyamatának gyors bemutatásához nézze meg ezt a rövid videót a YouTube-on: [Új szállító felvétele a Finance and Operations rendszerben](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>A potenciális szállító regisztrálási kérelmének importálása
 
-A potenciális szállító regisztrációs kérelem egy entitás a Finance and Operations rendszerben. Beállíthatja a rendszert úgy, hogy az adatok importálása ezen az entitáson keresztül történjen. 
+A potenciális szállító regisztrációs kérelem egy entitás a Supply Chain Management rendszerben. Beállíthatja a rendszert úgy, hogy az adatok importálása ezen az entitáson keresztül történjen. 
 
 Az alábbi táblázat bemutatja az entitás által tartalmazott információkat, amelyek importálhatóak.
 
@@ -65,18 +65,18 @@ Az alábbi táblázat bemutatja az entitás által tartalmazott információkat,
 | Kapcsolattartó utóneve  | A szállító adatainak regisztrálására meghívandó személy utóneve. |
 | Kapcsolattartó második utóneve | A szállító adatainak regisztrálására meghívandó személy második utóneve. |
 | A kapcsolattartó vezetékneve   | A szállító adatainak regisztrálására meghívandó személy vezetékneve. |
-| Kapcsolattartó e-mail címe       | Az e-mail cím, amellyel a Finance and Operations új felhasználója létrejön, és amely regisztrálásra kerül a bérlő Azure Active Directory (Azure AD) fiókjában. |
+| Kapcsolattartó e-mail címe       | Az e-mail-cím, amellyel a Supply Chain Management új felhasználója létrejön, és amely regisztrálásra kerül a bérlő Azure Active Directory (Azure AD) fiókjában. |
 | Elküldés dátuma               | A kérelem külső rendszerben való létrehozásának dátuma. |
-| Jogi személy                 | A jogi személy, akinél a szállító benyújtotta a szállítói kérelmet. Ennek az értéknek olyan jogi személy-kódnak kell lennie, amit már regisztráltak a Finance and Operations rendszerben. Ha nem érkezik érték az importálási folyamat közben, akkor a beszerzési- és forrásparaméterekben található érték kerül használatra. |
+| Jogi személy                 | A jogi személy, akinél a szállító benyújtotta a szállítói kérelmet. Ennek az értéknek olyan jogi személy kódnak kell lennie, amit már regisztráltak a Supply Chain Management rendszerben. Ha nem érkezik érték az importálási folyamat közben, akkor a beszerzési- és forrásparaméterekben található érték kerül használatra. |
 | Szállítótípus                  | A szállító lehet szervezet vagy személy. A szállító típusa határozza meg, hogy a szállító végül milyen módon jön létre. |
 
 A potenciális szállító regisztrációs kérelmének importálása után az megjelenik a **Potenciális szállító regisztrációs kérelme** listaoldalon. Erről a listaoldalról egy beszerző meghívhatja a felhasználót. Egy felhasználói kérelem felhasználó létesítéséről elküldésre kerül egy munkafolyamathoz.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Potenciális szállító felhasználói kérelmének elküldése
 
-A potenciális szállító felhasználói kérelmének célja az eredeti kérést küldő személy létesítése, hogy ő bejelentkezhessen a Finance an Operations rendszerbe a potenciális szállító regisztrációs kérelmében megadott e-mail fiók használatával.
+A potenciális szállító felhasználói kérelmének célja az eredeti kérést küldő személy létesítése, hogy ő bejelentkezhessen a Supply Chain Management rendszerbe a potenciális szállító regisztrációs kérelmében megadott e-mail-fiók használatával.
 
-A potenciális szállító felhasználói kérelmét a felhasználói kérelem munkafolyamata dolgozza fel. Ez a munkafolyamat az Azure AD B2B együttműködésen keresztül kommunikál. Egy olyan felhasználót hoz létre a Finance and Operations rendszerben, amely rendelkezik a megfelelő biztonsági beállításokkal.
+A potenciális szállító felhasználói kérelmét a felhasználói kérelem munkafolyamata dolgozza fel. Ez a munkafolyamat az Azure AD B2B együttműködésen keresztül kommunikál. Egy olyan felhasználót hoz létre a Supply Chain Management rendszerben, amely rendelkezik a megfelelő biztonsági beállításokkal.
 
 A beállított új felhasználók a következő biztonsági szerepkörökkel rendelkeznek:
 
@@ -89,7 +89,7 @@ Az e-maillel, és általában a munkafolyamat konfigurációjával kapcsolatos i
 
 ## <a name="vendor-registration"></a>Szállító regisztrálása
 
-A Finance and Operations rendszerbe bejelentkező potenciális szállítói felhasználó a szállítói regisztrációs varázsló első oldalát láthatja, ahol ő megadhatja a szállító információit.
+A Supply Chain Management rendszerbe bejelentkező potenciális szállítói felhasználó a szállítói regisztrációs varázsló első oldalát láthatja, ahol ő megadhatja a szállító információit.
 
 A varázsló tükrözi a szállítói kérelem konfigurációját. Az ország vagy régió, ahol a szállító dolgozik meghatározza, hogy a varázsló milyen adatokat kérvényez, és milyen adatokat kötelező megadni.
 
@@ -119,7 +119,7 @@ A szállítókérések a **Szállítói együttműködés felhasználói kérelm
 
 A szállítókérés tartalmazza az információkat, amiket a potenciális szállítói felhasználó megadott a szállítói regisztrációs varázslóban.
 
-A kérelem segítségével áttekintheti a szállítói információkat, és eldöntheti, hogy a szállító regisztrált szállítóvá váljon-e a Finance and Operations rendszerben.
+A kérelem segítségével áttekintheti a szállítói információkat, és eldöntheti, hogy a szállító regisztrált szállítóvá váljon-e.
 
 A Szállítókérést egy munkafolyamathoz kell küldeni, illetve továbbítani kell a megfelelő ellenőrökhöz és jóváhagyókhoz. A munkafolyamatok beállításával kapcsolatban lásd: [Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Ha a szállítókérés jóváhagyásra kerül, akkor egy szállítói számla j
 
 Mielőtt jóváhagyja a szállítókérést az **Új szállító** oldalon, válasszon egy szállítói csoportot az **Általános** gyorslapon a **Szállítói csoport** opció választásával.
 
-Ha a potenciális szállítói felhasználónak a szállítót képviselő szállítói együttműködéssel kapcsolatos felhasználói hozzáféréssel kell rendelkeznie a Finance and Operations rendszerhez, akkor állítsa a szállítói együttműködéssel kapcsolatos hozzáférési engedélyt erre: **Igen**. Ha inaktiválni szeretné a potenciális szállító által regisztrálásra használt felhasználói fiókot, akkor állítsa az engedélyt erre: **Nem**.
+Ha a potenciális szállítói felhasználónak a szállítót képviselő szállítói együttműködéssel kapcsolatos felhasználói hozzáféréssel kell rendelkeznie a Supply Chain Management rendszerhez, akkor állítsa a szállítói együttműködéssel kapcsolatos hozzáférési engedélyt erre: **Igen**. Ha inaktiválni szeretné a potenciális szállító által regisztrálásra használt felhasználói fiókot, akkor állítsa az engedélyt erre: **Nem**.
 
 Ha a szállítói együttműködéssel kapcsolatos hozzáférési engedély erre van állítva: **Igen**, és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó szerepköreinek módosítására olyan módon, hogy a felhasználó rendelkezzen a **Szállító** típusban, a **Külső szerepkörök** szakaszban leírt szerepkörökkel. Ha az engedély erre van állítva: **Nem**, és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó inaktiválására. Ebben az esetben be kell állítani a felhasználót inaktiváló munkafolyamatot.
 

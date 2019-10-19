@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522197"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249963"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -35,7 +35,7 @@ Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcs
 <a name="overview"></a>Áttekintés
 --------
 
-Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Finance and Operations szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
 -   **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
 -   **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés**. Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
@@ -43,7 +43,7 @@ Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék v
 -   **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
 
 ## <a name="routes"></a>Útvonalak
-Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Finance and Operations programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Supply Chain Management programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
 
 ### <a name="simple-routes"></a>Egyszerű útvonalak
 
@@ -51,7 +51,7 @@ Az egyszerű útvonalak szekvenciálisak, és az útvonal csak egy kezdőponttal
 
 [![Egyszerű útvonal](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paramétereknél, akkor a Dynamics 365 for Finance and Operations automatikusan generálja a műveletszámokat (10, 20, 30 és így tovább) az útvonal meghatározásakor.
+Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paramétereknél, akkor a Supply Chain Management automatikusan generálja a műveletszámokat (10, 20, 30 és így tovább) az útvonal meghatározásakor.
 
 ### <a name="route-networks"></a>Útvonalhálózatok
 
@@ -85,7 +85,7 @@ Minden útvonal külön jóváhagyott vagy jóvá nem hagyott lehet. Vegye figye
 Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](../../fin-and-ops/organization-administration/electronic-signature-overview.md) segítségével.
 
 ## <a name="operations"></a>Operations
-A művelet a termelési folyamat egy lépése. A Finance and Operations programban minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
+A művelet a termelési folyamat egy lépése. Minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
 
 | Művelet  | Leírás        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ A műveleti kapcsolatok révén rendkívül rugalmasan határozhatja meg az útv
 
 ### <a name="modifying-product-specific-routes"></a>Termékspecifikus útvonalak módosítása
 
-Amikor megnyitja az **Útvonal** oldalt a **Megjelent termék részletei** oldalról, akkor megjelennek a kiválasztott kiadott termékhez kapcsolódó útvonalverziók. Ebben az összefüggésben a Finance and Operations az egyes műveleteknél azokat a műveleti tulajdonságokat jeleníti meg, amelyek legjobban megfelelnek az útvonalverziónak. Észreveheti, hogy a műveletek listája tartalmazza a műveleti kapcsolat **Cikk-kód** és **Útvonalkód** tulajdonságait. Ezáltal megállapíthatja, hogy melyik műveleti kapcsolat látható.  
+Amikor megnyitja az **Útvonal** oldalt a **Megjelent termék részletei** oldalról, akkor megjelennek a kiválasztott kiadott termékhez kapcsolódó útvonalverziók. Ebben az összefüggésben a Supply Chain Management az egyes műveleteknél azokat a műveleti tulajdonságokat jeleníti meg, amelyek legjobban megfelelnek az útvonalverziónak. Észreveheti, hogy a műveletek listája tartalmazza a műveleti kapcsolat **Cikk-kód** és **Útvonalkód** tulajdonságait. Ezáltal megállapíthatja, hogy melyik műveleti kapcsolat látható.  
 
 Az **Útvonal** lapon módosíthatja a művelet tulajdonságait, így például a futtatási időt vagy a költségkategóriákat. A változtatások tárolása az útvonalra jellemző műveleti kapcsolatnál, az aktuális útvonal-verzióban hivatkozott kiadott terméknél történik. Ha a megjelenő műveleti kapcsolat nem az útvonalra és a kiadott termékre jellemző, akkor a rendszer a módosítások tárolása előtt létrehoz egy másolatot a műveleti kapcsolatról. Ez a példány *az* útvonalhoz és a kiadott termékhez kapcsolódik. Emiatt a módosítások nem befolyásolnak más útvonalakat vagy kiadott termékeket. Annak ellenőrzéséhez, hogy melyik kapcsolatot módosítja az **Útvonal** oldalon, ellenőrizze a **Cikk-kód** és az **Útvonalkód** mezőket.  
 
@@ -149,9 +149,9 @@ Ha a vállalat szokásos műveleteket, és a működési paraméterek azonosak-a
 
 ### <a name="applying-operation-relations"></a>Műveleti kapcsolatok alkalmazása
 
-A Finance and Operations programnak bizonyos esetekben meg kell keresnie egy adott művelet tulajdonságait. Amikor például létrejön egy beszerzési rendelés, az egyes műveletek tulajdonságait át kell másolni a műveleti kapcsolatoktól a termelési útvonalhoz. Ezekben az esetekben a Finance and Operations a legmegfelelőbb kombinációtól a legkevésbé specifikus kombinációig keresi a releváns műveleti kapcsolatokat.  
+A Supply Chain Management programnak bizonyos esetekben meg kell keresnie egy adott művelet tulajdonságait. Amikor például létrejön egy beszerzési rendelés, az egyes műveletek tulajdonságait át kell másolni a műveleti kapcsolatoktól a termelési útvonalhoz. Ezekben az esetekben a Supply Chain Management a legmegfelelőbb kombinációtól a legkevésbé specifikus kombinációig keresi a releváns műveleti kapcsolatokat.  
 
-Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett termék, műveleti kapcsolat, amely a kiadott termék azonosítója megegyezik a Finance and Operations előnyben műveleti kapcsolat keresztül, hogy megfelel a cikk-csoport azonosítója. Ennek megfelelően az olyan műveleti kapcsolat, amelyik megegyezik a cikkcsoport-azonosítóval, előnyt élvez az alapértelmezett műveleti kapcsolattal szemben. A keresés a következő sorrendben történik:
+Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett termék, műveleti kapcsolat, amely a kiadott termék azonosítója megegyezik a Supply Chain Management előnyben műveleti kapcsolat keresztül, hogy megfelel a cikk-csoport azonosítója. Ennek megfelelően az olyan műveleti kapcsolat, amelyik megegyezik a cikkcsoport-azonosítóval, előnyt élvez az alapértelmezett műveleti kapcsolattal szemben. A keresés a következő sorrendben történik:
 
 1.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
 2.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
@@ -198,7 +198,7 @@ A termékmódosítási eset új vagy módosított anyagjegyzékek vagy anyagjegy
 
 ### <a name="making-routes-independent-of-resources"></a>Erőforrásoktól független útvonalak készítése
 
-Számos rendszerben meg kell határozni azt a művelet-erőforrást vagy erőforráscsoportot, amelynek el kell végeznie egy műveletet. A Finance and Operations programban azonban megadhatja a szükségletek egy olyan készletét, amelynek teljesülnie kell a műveletre való alkalmazhatóság érdekében. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
+Számos rendszerben meg kell határozni azt a művelet-erőforrást vagy erőforráscsoportot, amelynek el kell végeznie egy műveletet. A Supply Chain Management programban azonban megadhatja a szükségletek egy olyan készletét, amelynek teljesülnie kell a műveletre való alkalmazhatóság érdekében. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
 
 Például megadhatja a egy művelethez egy műveletek erőforrás, a **gép** típusú, amelynek a **Stamping** képességének 20 tonna. Az ütemezési motor majd megoldja ezeket a követelményeket, a konkrét műveletek erőforrás vagy erőforrás csoport ütemezése a művelet során. Most adhatja meg ezeket a követelményeket nem kötelező a művelet egy adott gép, mert akkor sokkal nagyobb rugalmasságot. Továbbá karbantartás akkor könnyebb, ha erőforrásokat helyez át, és az új erőforrások hozzáadása.  
 

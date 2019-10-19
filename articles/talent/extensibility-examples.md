@@ -1,13 +1,13 @@
 ---
-title: A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
-description: Ez a témakör néhány példa bővítési forgatókönyvet ír le a Microsoft Dynamics 365 for Talent alkalmazáshoz, amelyek a Microsoft PowerApps és Microsoft Flow megoldásokat használják.
+title: A Talent bővítése a PowerApps és a Microsoft Flow használatával – Példa-forgatókönyvek
+description: Ez a témakör néhány példa bővítési forgatókönyvet ír le a Microsoft Dynamics 365 Talent alkalmazáshoz, amelyek a Microsoft PowerApps és Microsoft Flow megoldásokat használják.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781442"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008059"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>A Talent bővítése a PowerApps és a Microsoft Flow segítségével – forgatókönyvek
+# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>A Talent bővítése a PowerApps és a Microsoft Flow használatával – Példa-forgatókönyvek
 
-Ez a témakör néhány példa bővítési forgatókönyvet ír le a Microsoft Dynamics 365 for Talent alkalmazáshoz, amelyek a Microsoft PowerApps és Microsoft Flow megoldásokat használják. Az egyes példákhoz társított megoldáscsomagot importálhatja a PowerApps környezetébe. Majd használhatja a csomagokat iránymutatásként vagy kiindulási pontként a szervezetre vonatkozó forgatókönyvek végrehajtásához.
+Ez a témakör néhány példa bővítési forgatókönyvet ír le a Microsoft Dynamics 365 Talent alkalmazáshoz, amelyek a Microsoft PowerApps és Microsoft Flow megoldásokat használják. Az egyes példákhoz társított megoldáscsomagot importálhatja a PowerApps környezetébe. Majd használhatja a csomagokat iránymutatásként vagy kiindulási pontként a szervezetre vonatkozó forgatókönyvek végrehajtásához.
 
 > [!IMPORTANT]
 > Ha a témakörben bemutatott sablonokat és alkalmazást „adott”állapotukban szeretné használni, ügyeljen arra, hogy tesztelje az összeset, és győződjön meg arról minden az Ön implementációjához tartozó forgatókönyvet.
@@ -57,7 +57,7 @@ A **Flow – Form Connects** sablon és az egyéni entitásstruktúra letöltés
 
 ## <a name="initiate-and-extract-parameters-passed-to-powerapps"></a>A Powerapps részére átadott paraméterek kezdeményezése és kibontása
 
-A **A Powerapps részére átadott paraméterek kezdeményezése és kibontása** sablon bármilyen PowerApps forgatókönyv kiindulópontjaként használható, amely az Attract alkalmazásra jellemző. Az Attract részére átadott összes alapértelmezett paramétert tartalmazza, mint **Álláspályázat**, **Jelentkező azonosítója**, és **JobID**.
+A **Powerapps részére átadott paraméterek kezdeményezése** és kibontása sablon bármilyen PowerApps forgatókönyv kiindulópontjaként használható, amely az Attract alkalmazásra jellemző. Az Attract részére átadott összes alapértelmezett paramétert tartalmazza, mint **Álláspályázat**, **Jelentkező azonosítója**, és **JobID**.
 
 Ezzel a sablonnal lekérhető a jelölt értékelési űrlapja, hogy a humánerőforrás-vezető megtekinthesse a pályázó által kitöltött értékelést.
 
@@ -79,7 +79,7 @@ A **Flow – E-mail-értesítés** sablon e-mail értesítési forgatókönyvekh
 
 Ez a sablon kiterjeszthető a változások nyomon követésére a toborzási folyamat során a pályázó fokozatra és értesítés küldéséhez, a felvételi csapat és jelölt számára.
 
-Általában a Common Data Service rendszerben tárolt entitásokhoz a folyamatok beállíthatók úgy, hogy értesítést küldjenek a Core HR, Attract vagy Dynamics 365 Talent: Onboard rendszerben történt eseményekről.
+Általában a Common Data Service rendszerben tárolt entitásokhoz a folyamatok beállíthatók úgy, hogy értesítést küldjenek a Core HR, Attract vagy Onboard rendszerben történt eseményekről.
 
 A **Flow – E-mail-értesítés** sablon letöltéséhez ugorjon a [Flow – E-mail-értesítések](https://go.microsoft.com/fwlink/?linkid=2082103) oldalra a Microsoft Letöltőközpontban
 
@@ -106,7 +106,7 @@ A Referral alkalmazás segítségével jelölteket adhat hozzá egy közös tehe
 
 Ez az alkalmazás beágyazható az Alkalmazotti önkiszolgáló rendszerbe (ESS), vagy használhatja azt hiperlinkként a Vállalati portálon vagy futtathatja különálló alkalmazásként is.
 
-A **Referral alkalmazás**letöltéséhez látogasson le a [Dynamics 365 for Talent bővíthetőségi megoldás Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) oldalra a Microsoft letöltőközpontban. Ezt az alkalmazást importálhatja, és testreszabhatja további funkciók hozzáadásához.
+A **Referral alkalmazás**letöltéséhez látogasson le a [Dynamics 365 Talent bővíthetőségi megoldás Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) oldalra a Microsoft letöltőközpontban. Ezt az alkalmazást importálhatja, és testreszabhatja további funkciók hozzáadásához.
 
 ## <a name="additional-resources"></a>További erőforrások
 

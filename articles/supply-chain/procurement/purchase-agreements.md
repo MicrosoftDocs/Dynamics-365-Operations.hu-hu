@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570388"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248930"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
@@ -78,7 +78,7 @@ Miután a beszerzési szerződést megerősítették, aktuális verziója beker�
 Amikor beszerzési rendelést hoz létre alkalmazhat hozzá egy beszerzési megállapodást. A megállapodás feltételeinek információja, úgy mint fizetési feltételek, szállítási feltételek és szállítási cím ezután a beszerzési rendelés fejlécébe másolódik. Ha a beszerzési rendelés tartalmaz egy vagy több sort olyan termékekhez, vagy kategóriákhoz, amelyek szerepelnek a megállapodásnak, akkor az árak és engedmények a beszerzési megállapodásból azokra a sorokra lesznek alkalmazva. Az összeg vagy mennyiség a rendelési soron hozzájárul a beszerzési megállapodás kötelezettségének teljesítéséhez. Ugyanaz a beszerzési rendelés tartalmazhat sorokat, amelyek nincsenek kapcsolatban egy beszerzési szerződéssel és sorokat, amelyek rendelkeznek kötelezettséggel egy beszerzési szerződéshez.  
 
 Csak egy beszerzési rendelés létrehozásakor jelölhető ki a beszerzési szerződés. A beszerzési rendelés létrejötte után ki nem jelölhet ki beszerzési szerződést.  
-Bizonyos esetekben, amikor a beszerzési rendelést közvetetten hozza létre beállíthatja, hogy a Finance and Operations automatikusan rákeressen-e az alkalmazható beszerzési szerződésekre. Ez a funkció például akkor hasznos, ha automatikusan erősít meg tervezett beszerzési rendeléseket, vagy értékesítési rendelésen alapuló beszerzési rendeléseket hoz létre.
+Bizonyos esetekben, amikor a beszerzési rendelést közvetetten hozza létre beállíthatja, hogy a Supply Chain Management automatikusan rákeressen-e az alkalmazható beszerzési szerződésekre. Ez a funkció például akkor hasznos, ha automatikusan erősít meg tervezett beszerzési rendeléseket, vagy értékesítési rendelésen alapuló beszerzési rendeléseket hoz létre.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Beszerzési szerződések és vállalatközi kereskedelem
 Vállalatközi kereskedelmi kapcsolat hozható létre például különböző jogi személyeknél található szállítói és vevői számlák között. Ha az egyik félhez beszerzési vagy értékesítési rendelés készül, vállalatközi rendelési lánc jön létre. A rendelési láncban a rendszer a megfelelő jogi személyben hozza létre a beszerzési rendelést és az értékesítési rendelést.  

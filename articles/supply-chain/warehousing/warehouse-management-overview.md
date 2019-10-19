@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c900ef715b62484c1fb6576b7f0c97cdea4e4284
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865136"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251062"
 ---
 # <a name="warehouse-management-overview"></a>Raktárkezelés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-A raktárkezelési modul a Dynamics 365 for Finance and Operations rendszerben lehetővé teszi a raktározási folyamatok kezelését a gyártási, elosztási és kiskereskedelmi vállalatokban. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált a Finance and Operationsben megtalálható más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
+A raktárkezelési modul lehetővé teszi a raktározási folyamatok kezelését a gyártási, elosztási és kiskereskedelmi vállalatokban. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
 
 ## <a name="get-started"></a>Első lépések
 A raktárkezelés használatának megkezdéséhez meg kell adnia a raktár általános beállításait a vállalat üzleti folyamatainak támogatásához.

@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új és módosult elemei (2019. június 4.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új és módosult elemei (2019. június 4.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856329"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008984"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>A Dynamics 365 for Talent új és módosult elemei (2019. június 4.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>A Dynamics 365 Talent új és módosult elemei (2019. június 4.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
 
@@ -43,7 +43,7 @@ A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek m
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
@@ -67,7 +67,7 @@ Az alkalmazotti szabadság nyomon követése és a szabadidő kiszámításának
 
 ### <a name="deleting-a-record-from-talent-doesnt-remove-the-record-from-common-data-service"></a>A Talent rekordjainak törlése nem távolítja el a rekordot a Common Data Service szolgáltatásból
 
-A Talent Core HR rendszerből eltávolított rekordokat a Common Data Service szolgáltatásból is eltávolítja a rendszer.
+A Talent: Core HR rendszerből eltávolított rekordokat a Common Data Service szolgáltatásból is eltávolítja a rendszer.
 
 ### <a name="variable-compensation-plan-valid-fromto-dates-arent-being-honored"></a>A változó kompenzációs terv érvényességének kezdő és záró dátuma nincs figyelembe véve
 

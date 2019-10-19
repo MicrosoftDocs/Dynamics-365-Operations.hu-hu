@@ -1,6 +1,6 @@
 ---
-title: A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 for Talent - Attract megoldáshoz
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a LinkedIn integrációját a Microsoft Dynamics 365 for Talent - Attract megoldáshoz, hogy egyszerűen feladhassa álláshirdetéseit a LinkedIn felületére az Attract megoldásból, és toborzói szinkronizálhassák toborzói adataikat a jelölt LinkedIn profiljával.
+title: A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 Talent – Attract megoldáshoz
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a LinkedIn integrációját a Microsoft Dynamics 365 Talent – Attract megoldáshoz, hogy egyszerűen feladhassa álláshirdetéseit a LinkedIn felületére az Attract megoldásból, és toborzói szinkronizálhassák toborzói adataikat a jelölt LinkedIn profiljával.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756222"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009969"
 ---
 # <a name="set-up-linkedin-integration"></a>A LinkedIn integrációjának beállítása
 
 [!include[banner](../includes/banner.md)]
 
-Segíthet a toborzóknak és a felvételi vezetőknek, hogy bevonzzák a legjobb tehetséget a LinkedIn és a Microsoft Dynamics 365 for Talent: Attract integrációjának konfigurálásával. Az Attract lehetővé teszi az állások közvetlen feladását a LinkedIn felületére, amely a legnagyobb szakmai online hálózat.
+Segíthet a toborzóknak és a felvételi vezetőknek, hogy bevonzzák a legjobb tehetséget a LinkedIn és a Microsoft Dynamics 365 Talent: Attract integrációjának konfigurálásával. Az Attract lehetővé teszi az állások közvetlen feladását a LinkedIn felületére, amely a legnagyobb szakmai online hálózat.
 
 A LinkedIn felületén keresztül feladott állások Limited Listingek, és a vállalat számára külön költség nélkül érhetők el. Ezek a hirdetések csak a LinkedIn szoftveres partnerein, péládul az Attract alkalmazáson keresztül érhetők el. Nem jelennek meg a vállalat LinkedIn lapján a **Karrier** panelen, mivel csak ott csak a fizetett hirdetések jelennek meg. Azonban megjelennek, ha a potenciális jelöltek az összes elérhető állást megtekintik. A Limited Listingek a LinkedIn álláskeresésekben is megjelennek.
 

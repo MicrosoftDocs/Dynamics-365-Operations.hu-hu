@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. május 6.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. május 6.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/06/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 6a4571abdb0e104af0a0657c75bf5a6b5764345a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741544"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023861"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. május 6.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. május 6.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -39,15 +39,15 @@ Ha kiválaszt egy ajánlaticsomag-sablont, akkor most a program felkéri, hogy v
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
 A szakaszban ismertetett módosítások a 8.1.2282-ös buildre vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az Microsoft Dynamics Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
-### <a name="platform-update-26"></a>26-as platformfrissítés
+### <a name="platform-update-26-for-finance-and-operations"></a>Platform update 26 a Finance and Operations szolgáltatáshoz
 
-26. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 for Finance and Operations 26. platformfrissítésében (2019. május)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+További információ a Finance and Operations 26-os platformfrissítésről (Platform update 26): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 26-os verziójában (2019. május)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service entitás-támogatás egyéni mezőkhöz
 
@@ -67,7 +67,7 @@ Ebben a verzióban most frissítheti a pénzügyi dimenziót a **Megnyitás Exce
 
 ### <a name="worker-address-created-in-common-data-service-isnt-synced-to-talent-317555"></a>A dolgozó részére a Common Data Service megoldásban létrehozott cím nincs szinkronizálva a Talent alkalmazással (317555).
 
-Ezzel a módosítással a Common Data Service megoldásban létrehozott címeket a Talent Core HR frissíti.
+Ezzel a módosítással a Common Data Service megoldásban létrehozott címeket a Talent: Core HR frissíti.
 
 
 ## <a name="in-preview"></a>Előnézetben

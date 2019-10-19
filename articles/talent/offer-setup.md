@@ -1,6 +1,6 @@
 ---
-title: Ajánlatkezelés beállítása
-description: Ez a témakör az ajánlatok beállítását írja le a Talent alkalmazásban.
+title: Az ajánlatkezelés beállítása
+description: Ez a témakör az ajánlatok beállítását írja le a Microsoft Dynamics 365 Talent alkalmazásban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518171"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010844"
 ---
-# <a name="set-up-offer-management"></a>Ajánlatkezelés beállítása 
+# <a name="set-up-offer-management"></a>Az ajánlatkezelés beállítása 
 
 [!include [banner](includes/banner.md)]
 
-Amikor egy jelölt átkerül a Dynamics 365 for Talent: Attract alkalmazásban az ajánlati fázisba, győződjön meg arról, hogy az ajánlatokat gyorsan létre lehet hozni a pályázó számára, szükség szerint jóváhagyni, és a jelentkezőnek küldeni. Mivel a legtöbb ajánlat szabványos, azok újra felhasználható sablonokból is létrehozhatók. Az Attract szolgáltatásban valamennyi ajánlat belekerül egy ajánlatcsomagba, amely egy vagy több ajánlati dokumentum gyűjteménye. 
+Amikor egy jelölt átkerül a Dynamics 365 Talent: Attract alkalmazásban az ajánlati fázisba, győződjön meg arról, hogy az ajánlatokat gyorsan létre lehet hozni a pályázó számára, szükség szerint jóváhagyni, és a jelentkezőnek küldeni. Mivel a legtöbb ajánlat szabványos, azok újra felhasználható sablonokból is létrehozhatók. Az Attract szolgáltatásban valamennyi ajánlat belekerül egy ajánlatcsomagba, amely egy vagy több ajánlati dokumentum gyűjteménye. 
 
 Ez a témakör felsorolja azokat a lépéseket, amelyeket az Attract rendszergazdának követnie kell különböző ajánlatcsomag-sablonok beállításához, amely az ajánlatkezelési lehetőségek része az Attract szolgáltatásban. A nem rendszergazdai szerepkörrel rendelkező felhasználóknak nincs hozzáférésük ezekhez a funkciókhoz.
 

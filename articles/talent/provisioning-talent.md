@@ -1,6 +1,6 @@
 ---
 title: Talent üzembe helyezése
-description: Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 for Talent számára.
+description: Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 Talent számára.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/15/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 781487997ceb95f4e3f528f47e8ed2aa5b25fd0e
-ms.sourcegitcommit: eb501d8712212a6ed33bec1e3e2c02f994e0a724
+ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "1869936"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026141"
 ---
 # <a name="provision-talent"></a>A Talent létesítése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 for Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
+Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
 Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létre kell hoznia egy új Talent projektet. Hacsak licencelési probléma meg nem akadályozza a Talent létesítését, a Támogatás vagy a Dynamics Service Engineering (DSE) képviselőinek segítségére nincsen szkség.
 
@@ -37,8 +37,8 @@ Az LCS a Talent kezelésére való használatához előbb egy LCS-projektet kell
 
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Talentre való előfizetéshez használt.
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
-3. Válassza a **Microsoft Dynamics 365 for Talent** terméknévként és termékverzióként.
-4. A **Dynamics 365 for Talent** frissítési módszertan kiválasztása.
+3. Válassza a **Microsoft Dynamics 365 Talent** terméknévként és termékverzióként.
+4. A **Dynamics 365 Talent** frissítési módszertan kiválasztása.
 5. Válassza a **Létrehozása** lehetőséget.
 
 A Talent használatának megkezdésével kapcsolatos tudnivalókhoz lásd az új projektben létrehozott **Talent** módszert. Miután elkészült a projekt létrehozása, hajtsa végre a következő eljárást a Talent környezetének létesítéséhez.
@@ -51,7 +51,7 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
     > [!NOTE]
     > A Talent példánytípus eltér a PowerApps-környezet PowerApps Felügyeleti központjában beállítható példánytípusától.
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
-4. A Talent alkalmazást mindig biztosítva van a Microsoft PowerApps környezetben annak érdekében, hogy biztosítsa a PowerApps integrációját és bővíthetőségét. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik PowerApps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a PowerApps adminisztrációs központjába. Kövesse a [PowerApps környezet létrehozása](https://docs.microsoft.com/powerapps/administrator/create-environment) részben leírt lépéseket.
+4. A Talent alkalmazást mindig biztosítva van a Microsoft PowerApps környezetben annak érdekében, hogy biztosítsa a PowerApps integrációját és bővíthetőségét. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik PowerApps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a PowerApps adminisztrációs központjába. Kövesse a [PowerApps környezet](https://docs.microsoft.com/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
 
     > [!NOTE]
     > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Talentet létesítő bérlő adminisztrátort hozzá kell rendelni a PowerApps P2 licenchez. Ha szervezete nem rendelkezik PowerApps P2 licenccel, kaphat egyet a CSP-től vagy a [PowerApps árképzési lapon](https://powerapps.microsoft.com/pricing/).
@@ -68,7 +68,7 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
     > Mivel csak két LCS környezet van engedélyezve a Talent előfizetés részeként, vegye fontolóra egy ingyenes, 60 napos [Talent próba környezet igénybevételét](https://dynamics.microsoft.com/talent/overview/). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók az Alapvető HR környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő minden adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
-## <a name="select-a-powerapps-environment"></a>Válasszon PowerApps környezetet
+## <a name="select-a-powerapps-environment"></a>PowerApps-környezet kiválasztása
 
 A Talent és PowerApps környezetek közötti integrációval integrálhatja és kiterjesztheti a Talent-adatok használatát a PowerApps-eszközökkel. A PowerApps környezetek céljának megértése nem csak a Talent kiterjesztésére szolgáló alkalmazások felépítésében segít, hanem a helyes környezet kiválasztásában is segít a Talent létesítésekor. Információ a PowerApps-környezetekről, beleértve a környezeti hatásköröket, a környezethez való hozzáférést, valamint a környezet létrehozását és kiválasztását: [PowerApps-környezetek bejelentése](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
@@ -76,11 +76,11 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
 
 1. Az LCS-ben válassza a **Környezetek kezelése** lehetőséget, vagy lépjen közvetlenül a PowerApps adminisztrációs központjába, ahol megtekintheti a meglévő környezeteket és új környezeteket hozhat létre.
 2. Egyetlen Talent-környezet van egyetlen PowerApps-környezethez rendelve.
-3. A PowerApps környezet „tartalmazza” a Talent alkalmazást a megfelelő PowerApps, Flow és Common Data Service alkalmazásokkal együtt. Ha a PowerApps környezetet törlik, törlődnek a benne lévő alkalmazások is. Talent környezet létesítésekor vagy „Próba” vagy „Termelési” változatok létesíthetők. Válassza ki a környezet típusát a környezet későbbi használata alapján. 
+3. A PowerApps-környezet „tartalmazza” a Talent alkalmazást a megfelelő PowerApps, Flow és Common Data Service alkalmazásokkal együtt. Ha a PowerApps környezetet törlik, törlődnek a benne lévő alkalmazások is. Talent környezet létesítésekor vagy **Próba** vagy **Termelési** környezetek létesíthetők. Válassza ki a környezet típusát a környezet későbbi használata alapján. 
 4. Az adatintegrációs és tesztelési stratégiákat figyelembe kell venni, például: védőfal, UAT vagy termelés. Javasoljuk, hogy vegye figyelembe a telepítés különböző következményeit, mert nem könnyű a későbbiekben megváltoztatni a PowerApps-környezethez leképzett Talent környezetet.
 5. A következő PowerApps környezetek a Talent esetében nem használhatók, és ki lesznek szűrve a kiválasztási listából a LCS portálon belül:
  
-    - **Alapértelmezett PowerApps környezetek** – Bár minden bérlő számára automatikusan megtörténik az alapértelmezett PowerApps környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a PowerApps környezethez, és a PowerApps vagy Flow integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
+    - **Alapértelmezett PowerApps környezetek** – Bár minden bérlő számára automatikusan megtörténik az alapértelmezett PowerApps-környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a PowerApps-környezethez, és a PowerApps vagy Flow integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
    
     - **Tesztkörnyezetek** Ezek a környezetk lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet és minden abban található Talent példányt.
    

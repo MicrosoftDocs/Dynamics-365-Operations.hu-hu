@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 00ea121385d74b3f8992d34fb485a8232325ea3f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e57a410c0c7a73d8ab9e14254fe107d5e5c10db
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835742"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251621"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Értékesítési rendelések mobil munkaterület
 
@@ -31,7 +31,7 @@ ms.locfileid: "1835742"
 
 Ez a témakör az **Értékesítési rendelések** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban. 
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
+A mobil munkaterületet a Finance and Operations mobilalkalmazásban való használatra tervezték.
 
 ## <a name="overview"></a>Áttekintés
 Az **Értékesítési rendelések** mobil munkaterület teszi lehetővé az egyes értékesítési rendeléssel kapcsolatos részletes információk megtekintését. Ezek az információk magában foglalják a rendelés állapotát, az ügyfél kapcsolattartási információit és a rendelésfelvevő elérhetőségi adatait. Az **Értékesítési rendelések** mobil munkaterület azonnali rálátást biztosít az értékesítési rendelésekre. Megtekintheti az összes értékesítési rendelést, az értékesítési rendeléseket ügyfelek szerint, vagy megtekintheti egy adott értékesítési rendelés információit. 
@@ -83,8 +83,8 @@ Ez a nézet értékesítési rendeléseket jelenít meg vevőnként.
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
-Amennyiben szervezete telepítette a Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie az **Értékesítési rendelés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Előfeltételek a Supply Chain Management használatakor 
+Amennyiben szervezete telepítette a Supply Chain Management rendszert, a rendszergazdának közzé kell tennie az **Értékesítési rendelés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Dynamics 365 for Operations1611-es verzió és platform update 3 vagy újabb használatakor
 Amennyiben szervezete telepítette a Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
@@ -120,7 +120,7 @@ Amennyiben szervezete telepítette a Dynamics 365 for Operations 1611-es verzió
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
-Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

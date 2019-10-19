@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773256"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008455"
 ---
 # <a name="create-a-job"></a>Feladat létrehozása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Microsoft Dynamics 365 for Talent: Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
+Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Microsoft Dynamics 365 Talent: Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 
 ## <a name="job-creation"></a>Állás létrehozása
 
@@ -74,7 +74,7 @@ A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további 
 
 ## <a name="postings"></a>Feladások
 
-Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Dynamics 365 for Talent karrierwebhelye) oldalon vagy a LinkedIn oldalán lehet feladni. Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd. Amikor egy állást csak belsőleg adnak fel, a jelölteknek AAD-fiókkal kell rendelkezniük az állás megtekintéséhez és a jelentkezéshez. Ha az állás nyilvános, akkor a jelöltek bármely hitelesítési opcióval megtekinthetik az állásokat és jelentkezhetnek rájuk. 
+Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Dynamics 365 Talent karrierwebhelye) oldalon vagy a LinkedIn oldalán lehet feladni. Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd. Amikor egy állást csak belsőleg adnak fel, a jelölteknek AAD-fiókkal kell rendelkezniük az állás megtekintéséhez és a jelentkezéshez. Ha az állás nyilvános, akkor a jelöltek bármely hitelesítési opcióval megtekinthetik az állásokat és jelentkezhetnek rájuk. 
 
 Álláshirdetések kapcsolatos további tudnivalókat lásd: [Attract karrierwebhely funkciói](career-site.md).
 

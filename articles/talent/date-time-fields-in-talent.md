@@ -1,6 +1,6 @@
 ---
-title: Munka a dátumokkal és időpontokkal a Microsoft Dynamics 365 for Talent alkalmazásban
-description: Annak megértése, mire számíthat, ha a Microsoft Dynamics 365 for Talent megoldásban dátum-és időmezőket használ. Megtudhatja, hogy mire számíthat, ha a Dynamics 365 for Talent egy űrlapján külső forrásból vagy a Common Data Service szolgáltatásból származó adatokkal dolgozik.
+title: Munka a dátumokkal és időpontokkal a Microsoft Dynamics 365 Talent alkalmazásban
+description: Annak megértése, mire számíthat, ha a Microsoft Dynamics 365 Talent megoldásban dátum-és időmezőket használ. Megtudhatja, hogy mire számíthat, ha a Talent egy űrlapján külső forrásból vagy a Common Data Service szolgáltatásból származó adatokkal dolgozik.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791212"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007967"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Dátuma és Idő mezők a Talent alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-**A dátum és Idő** mezők alapvető fontosságúak a Dynamics 365 for Talent megoldásban. Fontos, hogy megtanulja, hogyan dolgozzon a **Dátum és idő** adatokkal egy Dynamics 365 űrlapon, a Common Data Service szolgáltatásban és külső forrásokból.
+**A dátum és Idő** mezők alapvető fontosságúak a Dynamics 365 Talent megoldásban. Fontos, hogy megtanulja, hogyan dolgozzon a **Dátum és idő** adatokkal egy Dynamics 365 űrlapon, a Common Data Service szolgáltatásban és külső forrásokból.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>A Dátum és a Dátum és az idő mező adattípusai különbségeinek megértése
 

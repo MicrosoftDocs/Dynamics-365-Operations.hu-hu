@@ -1,6 +1,6 @@
 ---
-title: Álláshirdetések feladása külső karrieroldalak felületére az Attractból
-description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 for Talent - Attract alkalmazást használni állások közzétételére külső toborzóoldalakon
+title: Állások feladása külső karrierwebhelyekre az Attract szolgáltatásból
+description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 Talent – Attract alkalmazást használni állások közzétételére külső toborzóoldalakon
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739817"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008082"
 ---
 # <a name="post-jobs-to-broadbean"></a>Állások közzététele a Broadbean felületén
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a Boadbean felületén tegye közzé. Miután [létrehozta az állást](./creating-jobs-attract.md) az Attract megoldásban, csupán egy gombot kell kiválasztania ahhoz, hogy az állást az összes potenciális pályázóhoz eljuttassa a Broadbean oldalán.
+A Microsoft Dynamics 365 Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a Boadbean felületén tegye közzé. Miután [létrehozta az állást](./creating-jobs-attract.md) az Attract megoldásban, csupán egy gombot kell kiválasztania ahhoz, hogy az állást az összes potenciális pályázóhoz eljuttassa a Broadbean oldalán.
 
 Az állásoknak a Broadbeanen történő feladásához megfelelő Broadbean-licenc szükséges. A Broadbean különböző termékeket és csomagokat kínál. Ha további tájékoztatást szeretne a Broadbean licenceléséről és árképzéséről, [vegye fel a kapcsolatot a Broadbeannel](https://www.broadbean.com/contact-us/).
 

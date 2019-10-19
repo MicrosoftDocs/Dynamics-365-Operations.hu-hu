@@ -3,7 +3,7 @@ title: Termelési folyamat áttekintése
 description: Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546663"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250018"
 ---
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
@@ -36,12 +36,12 @@ A termékek legyártása, más néven a termelési életciklus specifikus lépé
 
 A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése**, **Készletkezelés**, **Főkönyv**, **Raktárkezelés**, **Projekt-könyvelés** és **Szervezeti adminisztráció**. Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.  
 
-A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Finance and Operations támogatja a tényleges költség (elsőként be, elsőként ki \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.  
+A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Supply Chain Management támogatja a tényleges költség (elsőként be, elsőként ki \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.  
 
 A kiválasztott költségmérési módszerek meghatározzák a jelentés anyagokkal és forrásfelhasználással kapcsolatos követelményeit a gyártási folyamat során. Általában a tényleges költség módszerekhez pontos jelentés szükséges a feladat szintjén, ugyanakkor az időszakos költségszámítási módszerek lehetővé teszik az elnagyoltabb anyag- és forrásfogyasztás jelentés elkészítését.
 
 ## <a name="mixed-mode-manufacturing"></a>Vegyes módú gyártás
-Különböző termékek és termelési topológiák esetén különböző rendelési típusokat kell alkalmazni. A Finance and Operations rendszerben különböző típusú rendeléstípusokat használhat vegyes módban. Más szavakkal minden rendeléstípus megjelenhet a késztermék legyártásának teljes folyamata során.
+Különböző termékek és termelési topológiák esetén különböző rendelési típusokat kell alkalmazni. A Supply Chain Management különböző típusú rendeléstípusokat használhat vegyes módban. Más szavakkal minden rendeléstípus megjelenhet a késztermék legyártásának teljes folyamata során.
 
 -   **Termelési rendelés** – Ez a klasszikus rendeléstípus, egy adott termék vagy termékvariáns legyártására adott mennyiségben előre meghatározott időpontra. A termelési rendelések anyagjegyzékeken (AJ) és útvonalakon alapulnak.
 -   **Kötegrendelés** – Ez a rendelési típus a feldolgozóiparhoz és a jól elkülöníthető folyamatokhoz használatos, ahol a termelési folyamat a receptúrán alapul, vagy ahol a társtermékek és melléktermékek végtermékek lehetnek, a fő termék helyett vagy annak hozzáadásával. A kötegelt rendelések **Receptúra** típusú anyagjegyzékeket és útvonalakat használnak.

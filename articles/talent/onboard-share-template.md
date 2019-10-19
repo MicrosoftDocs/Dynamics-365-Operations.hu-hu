@@ -1,6 +1,6 @@
 ---
-title: Osszon meg tartalmakat más közreműködőkkel a Dynamics 365 for Talent - Onboard szolgáltatással
-description: Ez a témakör bemutatja, hogyan kell megosztania a bevezető útmutatókat és sablonokat más hozzájárulókkal a Microsoft Dynamics 365 for Talent - Onboard alkalmazásban.
+title: Osszon meg tartalmakat más közreműködőkkel a Dynamics 365 Talent – Onboard szolgáltatásban
+description: Ez a témakör bemutatja, hogyan kell megosztania a bevezető útmutatókat és sablonokat más hozzájárulókkal a Microsoft Dynamics 365 Talent – Onboard alkalmazásban.
 author: andreabichsel
 manager: ''
 ms.date: 05/20/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8524f9ec502bed829522ab90c7c7976c2814a1b6
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d07879ff31127788ebfee5bc8b42442a26987651
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731493"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010752"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-for-talent-onboard"></a>Osszon meg tartalmakat más közreműködőkkel a Dynamics 365 for Talent: Onboard szolgáltatásban
+# <a name="share-content-with-other-contributors"></a>Osszon meg tartalmakat más közreműködőkkel
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent: Onboard segítségével megoszthatja a bevezető útmutatókat és sablonokat a többi hozzájárulóval, hogy azok áttekinthessék a dokumentumokat, illetve módosításokat hajthassanak végre.
+A Microsoft Dynamics 365 Talent: Onboard segítségével megoszthatja a bevezető útmutatókat és sablonokat a többi hozzájárulóval, hogy azok áttekinthessék a dokumentumokat, illetve módosításokat hajthassanak végre.
 
 ## <a name="share-an-onboarding-guide-with-other-contributors"></a>Osszon meg bevezető útmutatókat más közreműködőkkel
 

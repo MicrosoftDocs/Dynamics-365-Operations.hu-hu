@@ -1,6 +1,6 @@
 ---
-title: Az Attact bővíthetősége
-description: Ez a témakör leírja, hogyan bővítheti a Dynamics 365 for Talent - Attract alkalmazást a Microsoft Power platform segítségével.
+title: Bővíthetőség az Attract szolgáltatásban
+description: Ez a témakör leírja, hogyan bővítheti a Microsoft Dynamics 365 Talent – Attract alkalmazást a Microsoft Power platform segítségével.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795220"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026233"
 ---
 # <a name="extensibility-in-attract"></a>Bővíthetőség az Attract szolgáltatásban
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent a Common Data Service platformra épül, és a Microsoft Power Platform, valamint a Common Data Service lehetőségeivel többféleképpen lehet kiterjeszteni. Ennek megfelelően a rendszer konfigurálható és testreszabható a Microsoft PowerApps és a Microsoft Flow segítségével. A Microsoft Power BI használatával kiegészítő analitikát kaphat az emberekről. Ezenkívül új egyéni tevékenységek, például a PowerApps és a webes tartalom (iframe) tevékenységek, minden eddiginél alkalmazkodóbbá teszik a felvételi folyamatot. Ezen tevékenységek segítségével az üzleti igényekhez és folyamatokhoz szabhatja a felvételi folyamatot, és szavatolhatja, hogy a felvételi csoport és a pályázók számára egyaránt zökkenőmentes és személyre szabott legyen a használati élmény.
+A Microsoft Dynamics 365 Talent a Common Data Service felületre épül, és a Microsoft Power Platform, valamint a Common Data Service lehetőségeivel többféleképpen lehet kiterjeszteni. Ennek megfelelően a rendszer konfigurálható és testreszabható a Microsoft PowerApps és a Microsoft Flow segítségével. A Microsoft Power BI használatával kiegészítő analitikát kaphat az emberekről. Ezenkívül új egyéni tevékenységek, például a PowerApps és a webes tartalom (iframe) tevékenységek, minden eddiginél alkalmazkodóbbá teszik a felvételi folyamatot. Ezen tevékenységek segítségével az üzleti igényekhez és folyamatokhoz szabhatja a felvételi folyamatot, és szavatolhatja, hogy a felvételi csoport és a pályázók számára egyaránt zökkenőmentes és személyre szabott legyen a használati élmény.
 
 ## <a name="extending-option-sets-in-attract"></a>Beállításkészletek kiterjesztése az Attract alkalmazásban
 
@@ -54,9 +54,9 @@ Az alábbiakban az **Elutasítás oka** mező frissítésének lépéseit talál
 12. Válassza a **Mentés** lehetőséget.
 13. Válassza a **Közzététel** lehetőséget az oldal tetején.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Használja ki a Microsoft Power platform előnyeit 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Használja ki a Microsoft Power Platform előnyeit 
 
-Mivel az Attract összes adata Common Data Service megoldásban található, a Microsoft Power platform eszközeivel integrálhatja egyedi üzleti igényeinek az Attract rendszerébe.
+Mivel az Attract összes adata Common Data Service platformon található, a Microsoft Power Platform eszközeivel integrálhatja egyedi üzleti igényeinek az Attract rendszerébe.
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -76,7 +76,7 @@ Power BI segítségével létrehozhatók és megtekinthetők egyéni jelentések
 
 A munkakörfolyamat-sablon szintjén vagy amíg létrehoz egy új feladatot, hozzáadhat egyéni tevékenységeket, például a PowerApps alkalmazások és a webes tartalom (iframe) tevékenységeket. Ezek a tevékenységek lehetővé teszik a felvételi folyamat testreszabását, és üzleti logikát hozhatnak az Attract megoldásba, amely egyedi a szervezetre nézve.
 
-#### <a name="powerapps-activity"></a>PowerApps tevékenység 
+#### <a name="powerapps-activity"></a>PowerApps-tevékenység 
 
 A PowerApps tevékenység lehetővé teszi, hogy a munkakör vagy a munkakörfolyamat létrehozója egy PowerApps alkalmazás ágyazzon be a felvételi folyamatba. Az alkalmazás létrehozása és közzététele után a tevékenység-konfigurációkban megadhat az alkalmazásazonosítót. Egy PowerApps alkalmazás használatával adatolvasást és -írást hajthat végre a Common Data Service megoldásban. Akár még be is hivatkozhatja az alkalmazást a folyamatba. Például van egy alkalmazás, amelyet a toborzók egy űrlap kitöltéséhez használnak a telefonos interjúk lebonyolításakor. Ebben az esetben csatolhatja az alkalmazást egy folyamathoz, amely megvizsgálja, hogy a pályázó továbbléptethető-e a munkakör-jelentkezési folyamatban. Ezt a tevékenységtípust csak a felvételi csapattagok láthatják. A PowerApps tevékenység konfigurálásával kapcsolatos további tudnivalókért lásd: [Attract tevékenységek](./activities-attract.md).
 

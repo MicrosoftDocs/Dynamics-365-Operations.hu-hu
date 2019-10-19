@@ -1,6 +1,6 @@
 ---
-title: Üdvözöljük a Dynamics 365 for Talent - Onboard rendszerben
-description: Ez a témakör bemutatja Önnek a Microsoft Dynamics 365 for Talent - Onboard alkalmazást. Az Onboard a segítségére lesz a csodálatos bevezetési élmény előállításában az új alkalmazottak számára.
+title: Üdvözöljük a Dynamics 365 Talent – Onboard szolgáltatásban!
+description: Ez a témakör bemutatja Önnek a Microsoft Dynamics 365 Talent – Onboard alkalmazást. Az Onboard a segítségére lesz a csodálatos bevezetési élmény előállításában az új alkalmazottak számára.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/24/2019
@@ -18,13 +18,13 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-04-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e58b1b73c84c2ec5650d8af92a13f4ed51664f95
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d91fbb0454855de614427321fe49f858ef3c65fb
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731496"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010498"
 ---
-# <a name="welcome-to-dynamics-365-for-talent-onboard"></a>Üdvözöljük a Dynamics 365 for Talent: Onboard szolgáltatásban!
+# <a name="welcome-to-dynamics-365-talent-onboard"></a>Üdvözöljük a Dynamics 365 Talent: Onboard rendszerben
 
 [!include[banner](../includes/banner.md)]

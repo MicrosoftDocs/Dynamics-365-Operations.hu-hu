@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 885e2d743cd2b01588546327840508f6f7e95958
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6d174a8acac3863fb6d9f9431c6bc777cb717470
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518141"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008175"
 ---
 # <a name="talent-client-disconnects"></a>A Talent-kliens kapcsolata megszakad
 
@@ -47,7 +47,7 @@ A probléma gyakran előfordul, amikor a felhasználók az implementációs fáz
 
 **Böngészőtípusok:** Google Chrome, Internet Explorer, és Microsoft Edge
 
-A felhasználók kapcsolata a Dynamics 365 for Talent platformmal megszakad, amikor egyszerre két munkamenet van nyitva ugyanahhoz a felhasználóhoz és ugyanolyan típusú böngészőben. (Például A felhasználó Chrome-ban nézi mind az 1. környezetet, mind a 2. környezetet.) Nem számít, ha a felhasználó különböző böngészőablakokat vagy különböző lapokat nyit meg. Ha azonos felhasználói hitelesítő adatokkal van bejelentkezve a felhasználó az 1. és 2. környezetbe ugyanabban a pillanatban és ugyanolyan típusú böngészővel, a Talent az egyik munkamenet kapcsolatát megszakítja.
+A felhasználók kapcsolata a Microsoft Dynamics 365 Talent megoldással megszakad, amikor egyszerre két munkamenet van nyitva ugyanahhoz a felhasználóhoz és ugyanolyan típusú böngészőben. (Például A felhasználó Chrome-ban nézi mind az 1. környezetet, mind a 2. környezetet.) Nem számít, ha a felhasználó különböző böngészőablakokat vagy különböző lapokat nyit meg. Ha azonos felhasználói hitelesítő adatokkal van bejelentkezve a felhasználó az 1. és 2. környezetbe ugyanabban a pillanatban és ugyanolyan típusú böngészővel, a Talent az egyik munkamenet kapcsolatát megszakítja.
 
 **Megoldás**
 
