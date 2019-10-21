@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865376"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249494"
 ---
 # <a name="product-configuration-overview"></a>Termékkonfiguráció áttekintése
 
@@ -60,6 +60,9 @@ A termékkonfigurációs modell egy vagy több összetevő keresztül alösszete
 
 Minden egyes összetevő rendelkezik egy vagy több attribútum, amelyek azonosítják annak tulajdonságait. Ezek a következők milyen felhasználók fogja választani a konfigurálás során. Attribútumok közötti összetevők, mind a belüli összetevő kapcsolatok megszorítások vagy számítások keresztül szabályozhatja. Anyagjegyzéksorok alkalmazott feltételek keresztül az attribútumok áll a konfigurált termék fizikai részeket meghatározására használható. Attribútum ezenkívül az AJ-sor tulajdonságának leképezés mechanizmusa keresztül szabályozhatja. Hasonló funkciót tartalmaz, az útvonalműveletek vonatkozó belefoglalási és a tulajdonság beállításait.
 
+>[!NOTE]
+> Az attribútumtípusok létrehozásakor ne hozzon létre magas számú értéket az attribútumtípus tartományhoz. Ez lassulást okozhat termékkonfigurátorban. 
+
 ### <a name="expression-constraints"></a>Kifejezésmegszorítás
 
 A megszorításon alapuló termékkonfigurációs modell használatát, az azt jelenti, hogy korlátozások léteznek, amikor a felhasználó kiválasztja a különböző attribútumok értékeit. Ilyen korlátozások kifejezés megszorítások, a nyelvet OML (optimalizálási modellező) használatával is megvalósíthatók. Másik lehetőségként korlátozás táblamegszorítás formájában is megvalósíthatók.
@@ -70,7 +73,7 @@ A táblázatok megszorításai felhasználó által definiáltak vagy rendszer d
 
 A felhasználó által a felhasználó által definiált táblamegszorítás épül fel. A felhasználó választja ki, amely megadja annak a táblának az oszlopok Attribútumtípusok kombinációja, és ezután beírja az értékeket a tartományok, a kijelölt attribútum típusú alakítson ki a sorokat a táblamegszorításban.  
 
-Rendszer által definiált táblamegszorítás referenciaként használandó Microsoft Dynamics 365 for Finance and Operations tábla kiválasztása, és kiválasztja az ebből a táblából alakítson ki az oszlopokat a megszorításban szereplő mezők határozzák meg. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
+Rendszer által definiált táblamegszorítás referenciaként használandó tábla kiválasztása, és kiválasztja az ebből a táblából alakítson ki az oszlopokat a megszorításban szereplő mezők határozzák meg. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
 
 Táblamegszorítás egy termékkonfigurációs modell a Táblamegszorítás oszlopai hivatkozásoknak a táblamegszorítás definíciójának és a modellben a megfelelő attribútumokat tartalmazza.
 

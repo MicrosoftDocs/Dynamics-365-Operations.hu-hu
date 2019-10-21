@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ba628dbf63d3b124583e6b873530f1459b07562
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4360f9132d31c9d0038f51c68c1f6c3fcaaa2025
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547886"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250866"
 ---
 # <a name="physical-and-financial-updates"></a>Pénzügyi és fizikai frissítések
 
@@ -32,7 +32,7 @@ ms.locfileid: "1547886"
 
 Ez a témakör áttekintést ad a készlet mennyiségét növelő vagy csökkentő tranzakciók típusairól. 
 
-A készlettranzakciók fizikailag és pénzügyileg is frissíthetőek a Microsoft Dynamics 365 for Finance and Operations rendszerben. Egyes fizikai és pénzügyi tranzakciótípusok növelik a készlet mennyiségét, míg mások csökkentik.
+A készlettranzakciók fizikailag és pénzügyileg is frissíthetőek a Dynamics 365 Supply Chain Management rendszerben. Egyes fizikai és pénzügyi tranzakciótípusok növelik a készlet mennyiségét, míg mások csökkentik.
 
 ## <a name="physical-increases"></a>Fizikai növekedések
 Fizikai tranzakció feladásakor a tranzakciórekord állapota **Beérkezett**. A következő tranzakciók tekintendők fizikai mennyiségnövekedésnek:
@@ -51,10 +51,13 @@ Pénzügyi bevételezési tranzakció feladásakor a mennyiséget növelő tranz
 -   Pozitív mennyiségű készletnaplók, például mozgás-, eredmény- és leltárnaplók, anyagjegyzékek és átmozgatás
 
 ## <a name="transactions-that-increase-quantity"></a>Mennyiséget növelő tranzakciók
-A mozgóátlagon alapuló önköltségi ár mennyiséget növelő tranzakciók feladása. A Finance and Operations rendszer kiszámítja a cikkhez a mozgóátlagon alapuló önköltségi árat, amely a pénzügyileg követett egyes készletdimenziók tranzakcióinak költségén alapul. A mozgóátlagos önköltségi árakkal kapcsolatos további tudnivalókat lásd: [Mozgóátlagon alapuló önköltségi árak](running-average-cost-price.md).
+A mozgóátlagon alapuló önköltségi ár mennyiséget növelő tranzakciók feladása. A cikkhez kiszámított mozgóátlagon alapuló önköltségi ár a pénzügyileg követett egyes készletdimenziók tranzakcióinak költségén alapul. A mozgóátlagos önköltségi árakkal kapcsolatos további tudnivalókat lásd: [Mozgóátlagon alapuló önköltségi árak](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Mennyiséget csökkentő tranzakciók
-A Finance and Operations a számított mozgóátlagon alapuló önköltségi árat használja, a mennyiséget csökkentő tranzakció feladásakor, függetlenül attól, mely készletmodell van társítva a készlethez. A mennyiséget csökkentő tranzakció a feladás előtt korábban nem lehetett megjelölve egy másik tranzakcióhoz. Ha a fizikai tényleges készlet negatívvá válik, a Finance and Operations azt a készletköltséget használja, amely meg van határozva a cikkhez a **Cikk** oldalon. **Megjegyzés:** Ha engedélyezve van a többhelyes funkció, ez a költség ehelyett az a készletköltség lesz, amely a helyhez van meghatározva az **Alapértelmezett rendelésbeállítások** képernyőn.
+A számított mozgóátlagon alapuló önköltségi ár használt a mennyiséget csökkentő tranzakció feladásakor, függetlenül attól, mely készletmodell van társítva a készlethez. A mennyiséget csökkentő tranzakció a feladás előtt korábban nem lehetett megjelölve egy másik tranzakcióhoz. Ha a fizikai tényleges készlet negatívvá válik, a készletköltség használt, amely meg van határozva a cikkhez a **Cikk** oldalon. 
+
+> [!NOTE]
+> Ha engedélyezve van a többhelyes funkció, ez a költség ehelyett az a készletköltség lesz, amely a helyhez van meghatározva az **Alapértelmezett rendelésbeállítások** képernyőn.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Pénzügyi kiadások és a tényleges kiadások
 Fizikai kiadási tranzakció feladásakor a tranzakciórekord állapota **Levonva**. A következő tranzakciók tekintendők fizikai kiadásnak:
@@ -71,6 +74,3 @@ Pénzügyi tranzakció feladásakor a tranzakciórekord állapota **Eladva**. A 
 -   Negatív mennyiségű készletnaplók, például mozgás-, eredmény- és leltárnaplók, anyagjegyzékek és átmozgatás
 
 A mozgóátlagon alapuló önköltségi ár mennyiséget csökkentő tranzakciók feladása. Így a készletzárás folyamata a cikk készletmodellben kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki.
-
-
-

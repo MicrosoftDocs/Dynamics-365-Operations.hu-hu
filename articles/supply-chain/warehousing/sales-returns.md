@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559151"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249796"
 ---
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559151"
 
 Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
 
-A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet, hogy egy cikk hibás, vagy nem felel meg a vevő elvárásainak. A visszárufolyamat olyankor indul el, amikor a vevő egy cikk visszaküldését kéri. Miután megérezik egy vevői kérés, a Microsoft Dynamics 365 for Finance and Operations programban visszárurendelés jön létre.
+A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet, hogy egy cikk hibás, vagy nem felel meg a vevő elvárásainak. A visszárufolyamat olyankor indul el, amikor a vevő egy cikk visszaküldését kéri. Miután megérkezik egy vevői kérés, visszárurendelés jön létre.
 
 ## <a name="return-order-process"></a>Visszárurendelés folyamata
 A következő ábrán áttekinthető a visszárufolyamat.  
@@ -281,7 +281,7 @@ Ebben az esetben a két vállalat a szervezethez, az alábbi ábrán látható m
 
 ![Egyszerű vállalatközi visszáruk](./media/SalesReturn07.png)
 
-A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak egy szállítói visszárurendelést, illetve amikor az eladó cégnél létrehoznak egy vevői visszárurendelést. A Finance and Operations műveleteket hoz létre a megfelelő sorrendben a másik társaság, és meggyőződik arról, hogy a fej és sor-információt a szállítói visszáru rendelés tükrözi a beállításokat a vevő a visszáru rendelés. A létrehozott visszáru rendelést vagy kihagyhatjuk vagy beszámíthatjuk a hivatkozás (**Értékesítési rendelés keresése**) egy meglévő vevő számlát. A csomagjegyzékek és számlák két rendelések dolgozhatók fel külön-külön. Például nem kell létrehozni a szállítói visszáru rendelés csomagjegyzékét a Vevői visszáru rendelés csomagjegyzékének elkészítése előtt.
+A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak egy szállítói visszárurendelést, illetve amikor az eladó cégnél létrehoznak egy vevői visszárurendelést. Megfelelő rendelést hoz létre a megfelelő sorrendben a másik társasághoz, és meggyőződik arról, hogy a fej és sor-információt a szállítói visszáru rendelés tükrözi a beállításokat a vevő a visszáru rendelésben. A létrehozott visszáru rendelést vagy kihagyhatjuk vagy beszámíthatjuk a hivatkozás (**Értékesítési rendelés keresése**) egy meglévő vevő számlát. A csomagjegyzékek és számlák két rendelések dolgozhatók fel külön-külön. Például nem kell létrehozni a szállítói visszáru rendelés csomagjegyzékét a Vevői visszáru rendelés csomagjegyzékének elkészítése előtt.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Közvetlen kiszállítás visszárui három fél között
 

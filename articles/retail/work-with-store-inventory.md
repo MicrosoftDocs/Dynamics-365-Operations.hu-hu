@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606803"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024683"
 ---
 # <a name="store-inventory-management"></a>Üzleti árukészlet kezelése
 
 [!include [banner](includes/banner.md)]
 
-Készletek kezelésekor Dynamics 365 for Retail alkalmazásban és a POS alkalmazás használatakor, fontos megjegyezni, hogy POS korlátozott támogatást nyújt készletdimenziókhoz és az egyes készletcikk típusokhoz.
+Készletek kezelésekor Dynamics 365 Retail alkalmazásban és a POS alkalmazás használatakor, fontos megjegyezni, hogy POS korlátozott támogatást nyújt készletdimenziókhoz és az egyes készletcikk típusokhoz.
 
 A POS-megoldás nem támogatja a következő cikk-konfigurációkat:
 
@@ -56,7 +56,7 @@ A POS-megoldás a következő dimenziókhoz korlátozott támogatást nyújt. Ko
 
 ## <a name="purchase-orders"></a>Beszerzési rendelések
 
-A beszerzési rendeléseket a központi irodában készítik. Ha kiskereskedelmi raktár szerepel a beszerzési rendelés fejlécében, akkor a rendelés fogadása az áruháznál történhet a Modern POS (MPOS) vagy a felhőalapú POS segítségével a Microsoft Dynamics 365 for Retail szolgáltatásban a **Kitárolás/bevételezés** művelettel. Miután az üzletben bevételezett mennyiségek beírásra kerülnek a **Fogadás most** mezőbe a pénztárban a beszerzési rendelés dokumentumba, lehetséges azok helyi mentése vagy véglegesítése. Ezeknek az adatoknak a helyi mentése nem befolyásolja a készleten lévő készletet. A mentés csak akkor hajtható végre, ha a felhasználó nem áll készen bizonylat elküldésére a központba, és szüksége van egy megoldásra a korábban megadott **Most fogadva** adat tárolására. Ez a most fogadva adatokat menti helyben a felhasználó csatorna-adatbázisába. Miután a dokumentumot feldogozta a **Véglegesítés** lehetőséggel a **Fogadás most** adatokat a program elküldi a központnak és a beszerzési rendelés bizonylata fel lesz adva. 
+A beszerzési rendeléseket a központi irodában készítik. Ha kiskereskedelmi raktár szerepel a beszerzési rendelés fejlécében, akkor a rendelés fogadása az áruháznál történhet a Modern POS (MPOS) vagy a felhőalapú POS segítségével a **Kitárolás/bevételezés** művelettel. Miután az üzletben bevételezett mennyiségek beírásra kerülnek a **Fogadás most** mezőbe a pénztárban a beszerzési rendelés dokumentumba, lehetséges azok helyi mentése vagy véglegesítése. Ezeknek az adatoknak a helyi mentése nem befolyásolja a készleten lévő készletet. A mentés csak akkor hajtható végre, ha a felhasználó nem áll készen bizonylat elküldésére a központba, és szüksége van egy megoldásra a korábban megadott **Most fogadva** adat tárolására. Ez a most fogadva adatokat menti helyben a felhasználó csatorna-adatbázisába. Miután a dokumentumot feldogozta a **Véglegesítés** lehetőséggel a **Fogadás most** adatokat a program elküldi a központnak és a beszerzési rendelés bizonylata fel lesz adva. 
 
 ## <a name="transfer-orders"></a>Átmozgatási rendelések
 

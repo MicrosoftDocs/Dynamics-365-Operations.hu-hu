@@ -1,6 +1,6 @@
 ---
-title: Előzetes funkciók elérése a Microsoft Dynamics 365 for Talent alkalmazásban
-description: Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előzetes funkciókat a Microsoft Dynamics 365 for Talent alkalmazásban, és felsorolja azokat a funkciókat, amelyek jelenleg előnézetre engedélyezettek.
+title: Előzetes funkciók elérése a Microsoft Dynamics 365 Talent alkalmazásban
+description: Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előzetes funkciókat a Microsoft Dynamics 365 Talent alkalmazásban, és felsorolja azokat a funkciókat, amelyek jelenleg előnézetre engedélyezettek.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739587"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008702"
 ---
 # <a name="manage-preview-features"></a>Előzetes funkciók kezelése
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent emberierőforrás-menedzsment (HCM) lehetőségeit folyamatosan bővítjük, ennek részeként azt szeretnénk, hogy az ügyfelek a lehető leghamarabb használhassák az új funkciókat. A rendszergazdák láthatják és környezetükben használhatják az előnézeti szolgáltatásokat. Ezek a funkciók majdnem általános rendelkezésre állnak, és kiterjedt tesztelésen mentek keresztül. Az általánosan elérhető kibocsátás előtt egy utolsó visszajelzési és ellenőrzési kört végzünk az ügyfelekkel.
+A Microsoft Dynamics 365 Talent emberierőforrás-menedzsment (HCM) lehetőségeit folyamatosan bővítjük, ennek részeként azt szeretnénk, hogy az ügyfelek a lehető leghamarabb használhassák az új funkciókat. A rendszergazdák láthatják és környezetükben használhatják az előnézeti szolgáltatásokat. Ezek a funkciók majdnem általános rendelkezésre állnak, és kiterjedt tesztelésen mentek keresztül. Az általánosan elérhető kibocsátás előtt egy utolsó visszajelzési és ellenőrzési kört végzünk az ügyfelekkel.
 
-Ez a témakör leírja, hogy hogyan engedélyezheti az előzetes funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg rendelkezésre állnak. Ez a lista frissül, ahogy a funkciókat általánosan elérhetővé tesszük, és ahogy új szolgáltatások előzetes kiadása történik meg. Nincsenek értesítések új funkciók előzetes kiadásakor. A felhasználók egyszerűen csak látni fogják a szolgáltatásokat. A Talent új funkcióival kapcsolatos információkért lásd: [Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban](./whats-new.md) és [Dynamics 365 és Power Platform kibocsátási megjegyzések](https://docs.microsoft.com/business-applications-release-notes).
+Ez a témakör leírja, hogy hogyan engedélyezheti az előzetes funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg rendelkezésre állnak. Ez a lista frissül, ahogy a funkciókat általánosan elérhetővé tesszük, és ahogy új szolgáltatások előzetes kiadása történik meg. Nincsenek értesítések új funkciók előzetes kiadásakor. A felhasználók egyszerűen csak látni fogják a szolgáltatásokat. A Talent új funkcióival kapcsolatos információkért lásd: [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md) és [Dynamics 365 és Power Platform kibocsátási megjegyzések](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Előnézeti szolgáltatások engedélyezése vagy letiltása
 
@@ -42,7 +42,7 @@ Az előzetes funkciók eléréséhez előbb engedélyeznie kell azokat a környe
 
 ### <a name="attract"></a>Attract
 
-1. Jelentkezzen be a Microsoft Dynamics 365 for Talent: Attract szolgáltatásba.
+1. Jelentkezzen be a Microsoft Dynamics 365 Talent: Attract szolgáltatásba.
 2. A jobb felső sarokban a **Beállítás** menüben (fogaskerék szimbólum) válassza ki a **Felügyeleti központ** lehetőséget.
 3. A **Funkciókezelés** lapon válassza ki az **Előzetes funkciók** beállítás melletti lehetőséget úgy, hogy az kékre változzon és a **Be** feliratot mutassa.
 
@@ -69,7 +69,7 @@ Az előzetes funkciók eléréséhez előbb engedélyeznie kell azokat a környe
 
 ### <a name="onboard"></a>Felvétel
 
-Jelenleg nem állnak rendelkezésre előzetes funkciók a Microsoft Dynamics 365 for Talent: Onboard alkalmazáshoz.
+Jelenleg nem állnak rendelkezésre előzetes funkciók a Microsoft Dynamics 365 Talent: Onboard alkalmazáshoz.
 
 ## <a name="features-that-are-currently-in-preview"></a>Az előnézetben jelenleg szereplő funkciók.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783313"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024568"
 ---
 # <a name="asset-management-parameters"></a>Az Eszközkezelés paraméterei
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783313"
 
 Az Eszközkezelésben be kell állítani az eszközökkel, a munkarendelésekkel és a munkarendelések ütemezésével kapcsolatos általános paramétereket. Ez a cikk ezeknek a paramétereknek a beállítását ismerteti. Az űrlap megnyitásához válassza az **Eszközkezelés** > **Beállítás** > **Eszközkezelési paraméterek** lehetőséget.
 
-Az **Adatvarázsló létrehozása** gombbal automatikusan létrehozhatók a cég tesztelési vagy bemutató adatainak megadására szolgáló beállítási adatok a Dynamics 365 for Finance and Operations rendszerben. A varázsló beállításáról a „Tesztelési adatok beállítása az Eszközkezelésben” című ismertetőben talál további információt.
+Az **Adatvarázsló létrehozása** gombbal automatikusan létrehozhatók a cég tesztelési vagy bemutató adatainak megadására szolgáló beállítási adatok a Dynamics 365 Supply Chain Management rendszerben. A varázsló beállításáról a „Tesztelési adatok beállítása az Eszközkezelésben” című ismertetőben talál további információt.
 
 **Eszközök** hivatkozás
 
@@ -57,7 +57,7 @@ Az **Adatvarázsló létrehozása** gombbal automatikusan létrehozhatók a cég
 - Ha automatikusan át szeretné másolni a munkarendeléseken regisztrált hibákat az összekapcsolt karbantartási kérésekhez, válassza a **Hibák másolása** váltógomb „Igen” beállítását.  
 - A **Szint** mezőben határozhatja meg a munkavégzési helyszín azon szintjét, amelyet a rendszer automatikusan beszúr egy munkarendeléshez, ha minden összekapcsolt munkarendelési feladat ugyanarra a munkavégzési helyszínre utal. Ha nem az összes munkarendelési feladat van a meghatározott szint ugyanazon munkavégzési helyszínéhez kapcsolva, a **Munkavégzési helyszín** mező üresen marad a munkarendeléshez. Példa: ha az „1” számot írja be a mezőbe, az lesz a felső szint a munkavégzési helyszín struktúrájában. Ha a „0” számot írja be a mezőbe, akkor nem határozza meg konkrétan a munkavégzési helyszín szintjét, csak azt, hogy egy munkarendelés összes munkarendelési feladatát ugyanahhoz a munkavégzési helyszínhez kell kapcsolni, hogy az adott munkavégzési helyszínt hozzá lehessen adni a munkarendeléshez.  
 - A munkarendelésekhez tartozó felhasználás feladásakor használt naplókat az **Általános** gyorslap **Óra**, **Cikk** és **Költség** mezőjében lehet kiválasztani.  
-- A **Termék forrásnyelve** mezőben válassza ki, hogy melyik nyelvet szeretné használni az Eszközkezelés jelentéseiben lévő terméknevekhez. Kiválaszthatja a vállalati számlához beállított nyelvet, vagy a Dynamics 365 for Finance and Operations rendszerbe pillanatnyilag bejelentkezett felhasználóhoz beállított nyelvet.  
+- A **Termék forrásnyelve** mezőben válassza ki, hogy melyik nyelvet szeretné használni az Eszközkezelés jelentéseiben lévő terméknevekhez. Kiválaszthatja a vállalati számlához beállított nyelvet, vagy a pillanatnyilag bejelentkezett felhasználóhoz beállított nyelvet.  
 - Ha automatikusan frissíteni szeretné a feladattípus alapértelmezéseit, a karbantartási terveket és a karbantartási köröket, válassza a **Valós idejű frissítés** váltógomb „Igen” beállítását.
 > - Ha a „Nem” beállítást adja meg, a feladattípus alapértelmezései, a karbantartási feladatok és a karbantartási tervek nem frissülnek automatikusan az Eszközkezelésben.  
 > - Ha nagy mennyiségű adatot szinkronizál (például sok eszközt vagy munkavégzési helyszínt állított be a karbantartási tervekhez vagy a karbantartási körökhöz), vagy sok karbantartási tervvel vagy karbantartási körrel rendelkezik, válassza a váltógomb „Nem” értékét.  
@@ -75,7 +75,7 @@ Az **Adatvarázsló létrehozása** gombbal automatikusan létrehozhatók a cég
 - Az **Alapterv** a **Szervezeti adminisztráció** modul erőforrásaihoz kapcsolódik. Ha kiválaszt egy alaptervet ebben a mezőben, akkor megtekintheti a munkarendelésekhez társított kapacitásfoglalásokat a **Kapacitásfoglalások** (**Szervezeti adminisztráció** > **Erőforrások** > **Erőforrások** > kiválasztott erőforrás > **Erőforrás** lap > **Kapacitásfoglalások** gomb) részen. Ha üresen hagyja ezt a mezőt, akkor megtekintheti a munkarendelésekkel összekapcsolt kapacitásterhelést a **Kapacitásterhelés** (**Szervezeti adminisztráció** \> **Erőforrások** \> **Erőforrások** \> kiválasztott erőforrás \> **Erőforrás** lap \> **Kapacitásterhelés** gomb) részen.  
 
 >[!NOTE]
->A beállítás, hogy szeretne-e alaptervet használni az **Eszközkezelés** modulban vagy sem, illetve a kapacitásfoglalások és a kapacitásterhelés áttekintésére szolgáló összekapcsolt űrlap a Dynamics 365 for Finance and Operations normál tartozéka. Az **Alapterv** mezőben megadott beállítástól függően megtekintheti a kapacitásra vonatkozó adatokat a **Kapacitásfoglalások** vagy a **Kapacitásterhelés** részen a **Szervezeti adminisztráció** modulban. Nem hozható létre olyan beállítás, amelyben a kapacitásfoglalások mindkét nézetben megjelennek.  
+>A beállítás, hogy szeretne-e alaptervet használni az **Eszközkezelés** modulban vagy sem, illetve a kapacitásfoglalások és a kapacitásterhelés áttekintésére szolgáló összekapcsolt űrlap a normál telepítés része. Az **Alapterv** mezőben megadott beállítástól függően megtekintheti a kapacitásra vonatkozó adatokat a **Kapacitásfoglalások** vagy a **Kapacitásterhelés** részen a **Szervezeti adminisztráció** modulban. Nem hozható létre olyan beállítás, amelyben a kapacitásfoglalások mindkét nézetben megjelennek.  
 
 Az alábbi listában leírt összes mező a kiszámított értékelési pontszámokhoz kapcsolódik, amelyeket a rendszer a munkarendelések prioritásának a munkarendelések ütemezése során történő kiszámításához használ.
 

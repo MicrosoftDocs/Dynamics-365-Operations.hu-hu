@@ -1,6 +1,6 @@
 ---
-title: Támogatás kérése a Dynamics 365 for Retail alkalmazáshoz
-description: A cikk ismerteti, hogyan kaphat segítséget a Microsoft Dynamics 365 for Retail alkalmazáshoz.
+title: Támogatás kérése a Dynamics 365 Retail alkalmazáshoz
+description: A cikk ismerteti, hogyan kaphat segítséget a Microsoft Dynamics 365 Retail alkalmazáshoz.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577844"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025006"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Támogatás kérése a Dynamics 365 for Retail alkalmazáshoz
+# <a name="get-support-for-dynamics-365-retail"></a>Támogatás kérése a Dynamics 365 Retail alkalmazáshoz
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti, hogyan kaphat segítséget a Dynamics 365 for Retail alkalmazáshoz.
+A cikk ismerteti, hogyan kaphat segítséget a Dynamics 365 Retail alkalmazáshoz.
 
 ## <a name="contact-support"></a>Kapcsolatfelvétel a támogatási szolgálattal
 
@@ -48,7 +48,7 @@ Ha támogatást szeretne a Retail szolgáltatással kapcsolatban, használja a k
 <tbody>
 <tr>
 <td>Kérdezzen a közösségtől.</td>
-<td>Ugrás a <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> közösség lapra a Dynamics közösségtől való segítségkéréshez.</td>
+<td>Ugrás a <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> közösség lapra a Dynamics közösségtől való segítségkéréshez.</td>
 </tr>
 <tr>
 <td>Használja a Megoldáskereső eszközt.</td>
@@ -74,7 +74,7 @@ Ha támogatást szeretne a Retail szolgáltatással kapcsolatban, használja a k
 A CustomerSource webhellyel és annak elérésével, az elektronikus tanulással a kereséssel, a Tudásbázissal, fájlok letöltésével és lapokkal vagy rendszerhibákkal kapcsolatos technikai kérdésekkel lépjen a <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Webhellyel kapcsolatos támogatás</a> lehetőségre.</td>
 </tr>
 <tr>
-<td>Találja meg a válaszait a Retail és a Finance and Operations licencelésével kapcsolatos kérdéseire.</td>
+<td>Segítség a licencekkel kapcsolatos kérdésekkel kapcsolatban.</td>
 <td>Lépjen kapcsolatba a partnerével, a nagyvállalati viszonteladójával (LAR) vagy a Microsoft értékesítési munkatárssal.</td>
 </tr>
 <tr>

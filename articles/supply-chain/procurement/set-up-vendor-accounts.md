@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547675"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249392"
 ---
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
@@ -60,13 +60,13 @@ Tárolhatja egy szállító kapcsolattartási adatait. Ezek a kapcsolattartási 
 
 Kapcsolattartási adatok hozzáadásához a szállítóhoz kattintson a **Minden szállító** oldalon, a **Szállítók** lapon, a **Beállítás** csoportban, a **Kapcsolattartók** &gt; **Kapcsolattartók felvitele** lehetőségre.  
 
-Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetőségként kimásolhat részleteket egy másik, már a Microsoft Dynamics 365 for Finance and Operations rendszerben regisztrált személytől, és szükség szerint szerkesztheti az adatokat.  
+Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetőségként kimásolhat részleteket egy másik, már a Supply Chain Management szolgáltatásban regisztrált személytől, és szükség szerint szerkesztheti az adatokat.  
 
 **Megjegyzés:** kapcsolattartók hozzáadása a szállító nem ugyanaz, mint a szóban forgó szállító kapcsolattartási információk hozzáadása. Annak ellenére, hogy a szállító általános kapcsolattartói adatait adhatja meg, akkor is lehet több meghatározott személy, akik az adott vállalatnál kapcsolattartók, és akiknek mind megvannak a saját kapcsolattartási adataik.  
 
 Kapcsolattartás rögzítése nem törölhető, ha egy dokumentumra hivatkozik a kapcsolattartási adat. Ehelyett inaktiválhatja a kapcsolattartót.  
 
-A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Finance and Operations és Office 365 közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
+A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Supply Chain Management és Office 365 közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
 
 ## <a name="vendors-in-different-legal-entities"></a>Szállítók különböző jogi személyekként
 Ha a szállító csak egy jogi személyként van regisztrálva szervezetében, és más jogi személyeket kell regisztrálni ugyanahhoz a szállítóhoz, használhatja a **Szállító hozzáadása egy másik jogi személyhez** lapot, hogy konfigurálja a szállítót, hogy áll egy másik jogi személlyel üzletelhessen. Válasszon egy szállítói csoportot, egy pénznemet, és a szállító várakoztatási állapotát a kijelölt jogi személyhez.  

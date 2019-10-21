@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874762"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249609"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák
 
@@ -225,7 +225,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 26. A kiválasztott karbantartási feladattípus alapértelmezett sorában a mellékletek beállításához Válassza a **Dokumentumok csatolása** jelölőnégyzetet. A karbantartási feladattípus alapértelmezett sorához beállított mellékleteket a program automatikusan beilleszti azokba a Munkarendelés-sorokba, amelyek a karbantartási feladattípus alapértelmezett sorát használják.
 27. Válassza a az **Új** lehetőséget, majd válasszon egy dokumentumtípust.
 28. Dokumentum vagy a fájl feltöltése.
-29. Állítsa be a mezőket a **Mellékletek** oldalon. A mellékletbeállítások a szokásos dokumentum-beállítási funkciókat használják a Microsoft Dynamics 365 for Finance and Operations alkalmazásban
+29. Állítsa be a mezőket a **Mellékletek** oldalon. A mellékletbeállítások a szokásos dokumentum-beállítási funkciókat használják.
 30. A melléklet mentéséhez válassza a **Mentés** parancsot.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Miután létrehozta a szükséges karbantartási feladattípus alapértelmezése
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Karbantartási feladatoktípusok előrejelzéseinek automatikus frissítése
 
-Az Eszközkezelésben automatikusan frissítheti a karbantartási feladattípusok előrejelzéseinek módosításait a az óraköltség, a cikköltségekhez és más kiadásokhoz, amelyek frissítve lettek a Finance and Operations moduljaiban. Ilyen módon garantálhatja, hogy a karbantartási feladattípus-előrejelzések mindig a legfrissebb költségárakat használják.
+Az Eszközkezelésben automatikusan frissítheti a karbantartási feladattípusok előrejelzéseinek módosításait az óraköltség, a cikköltségekhez és más kiadásokhoz, amelyek frissítve lettek más modulokban. Ilyen módon garantálhatja, hogy a karbantartási feladattípus-előrejelzések mindig a legfrissebb költségárakat használják.
 
 1. Válassz az **Eszközkezelés** \> **Időszakos** \> **Előrejelzés** \> **Karbantartási feladattípus előrejelzésének frissítése** lehetőséget.
 2. A **Karbantartási feladattípus előrejelzés frissítése** párbeszédpanelen a **Belefoglalandó rekordok** gyorslapon igény szerint megadhat kijelöléseket specifikus karbantartási feladattípusokhoz Válassza ki a **Szűrőt** majd válassza a **Kiválasztás** a lehetőséget, ha ki szeretne valamit jelölni.

@@ -1,6 +1,6 @@
 ---
 title: Képernyő-elrendezések a pénztár (POS) számára
-description: Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
+description: Ez a témakör a Dynamics 365 Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607037"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025272"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Képernyő-elrendezések a pénztár (POS) számára
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
+Ez a témakör a Dynamics 365 Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 
 A Retail pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők.
 
@@ -50,7 +50,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 - **Leírás** - Megadhat egy felismerhető nevet, amely segít azonosítani a megfelelő profilt az adott helyzetnek megfelelően.
 - **Téma** - A világos vagy a sötét alkalmazástémák közül választhat. A téma hatással van a betűk és háttér színére az alkalmazás egészében.
 - **Kiemelés színe** - A kiemelőszínt a rendszer használja a pénztárban mindenütt bizonyos vizuális elemek megkülönböztetésére és kiemelésére: ilyenek a csempék, a parancsgombok és a hivatkozások. Ezek az elemek általában interaktívak.
-- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Microsoft Dynamics 365 for Retail 1611 verzióban nem érhető el.
+- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Retail 1611 verzióban nem érhető el.
 - **Dátum/idő megjelenítése** – Engedélyezés esetén az aktuális dátum és idő a pénztárfejlécben fog megjelenni.
 - **Bejelentkezési hátterek** - Megadhatja a bejelentkezési képernyő háttérképét. A háttérkép méretének a lehető legkisebbnek kell lennie, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
 - **Alkalmazásháttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. Bejelentkezési hátterek esetén a fájlméretet a lehető legkisebbnek kell tartani.

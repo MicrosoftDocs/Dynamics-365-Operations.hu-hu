@@ -1,6 +1,6 @@
 ---
 title: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
-description: Ebben a témakörben részletes leírást találhat a Microsoft Dynamics 365 for Retail kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkciójáról.
+description: Ebben a témakörben részletes leírást találhat a Dynamics 365 Retail kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkciójáról.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790421"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018414"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790421"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Ebben a témakörben részletes leírást találhat a Microsoft Dynamics 365 for Finance and Operations 8.1.3 verziójában bemutatott kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkcióról. A konzisztencia-ellenőrző azonosítja és elkülöníti az inkonzisztens tranzakciókat, mielőtt a kimutatásfeladási folyamat kezeli őket.
+Ebben a témakörben részletes leírást találhat a Retail tranzakció konzisztencia-ellenőrzésre használatos funkciójáról. A konzisztencia-ellenőrző azonosítja és elkülöníti az inkonzisztens tranzakciókat, mielőtt a kimutatásfeladási folyamat kezeli őket.
 
-Egy kimutatás feladása során a Microsoft Dynamics 365 for Retail szolgáltatásban a feladás sikertelen lehet, ha inkonzisztens adatok találhatók a kiskereskedelmi tranzakciók táblájában. Az adatokkal kapcsolatos problémákat a pénztár (POS) alkalmazás előre nem látható problémái okozhatják, vagy ha a tranzakciók importálása nem megfelelően történt egy külső fél pénztárrendszeréből. Az alábbiakban az inkonzisztenciák megjelenésére mutatunk be példákat: 
+Egy kimutatás feladása során a Retail szolgáltatásban a feladás sikertelen lehet, ha inkonzisztens adatok találhatók a kiskereskedelmi tranzakciók táblájában. Az adatokkal kapcsolatos problémákat a pénztár (POS) alkalmazás előre nem látható problémái okozhatják, vagy ha a tranzakciók importálása nem megfelelően történt egy külső fél pénztárrendszeréből. Az alábbiakban az inkonzisztenciák megjelenésére mutatunk be példákat: 
 
 - A fejléctáblában szereplő tranzakciós végösszeg nem egyezik meg a sorokban található tranzakciók összegével.
 - A fejléctábla sorainak száma nem egyezik meg a tranzakciós tábla sorainak számával.

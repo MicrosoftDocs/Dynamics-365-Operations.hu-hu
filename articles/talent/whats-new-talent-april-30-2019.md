@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 30.) szolgáltatásban
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent (2019. április 30.) szolgáltatásban
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 112146ac46193e37b33bf429dc5a359f8cfaca94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38158948dbcf8966edf49bcce5b1e5da7eddb8dc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505373"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026037"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-30-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 30.) szolgáltatásban
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 30.) szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
@@ -100,4 +100,4 @@ Az alkalmazotti szabadidő követésének képessége és a szabadidő kiszámí
 
 ### <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
 
-A 26-ös platformfrissítésben a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
+A Finance and Operations 26-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.

@@ -3,7 +3,7 @@ title: Igény-előrejelzési beállítások
 description: Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551952"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249567"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -42,9 +42,9 @@ Egy cikk és annak különböző dimenziói csak egy cikkfelosztási kulcs alá 
 Raktározási egység (SKU) cikkfelosztási kulcshoz való hozzáadásához kattintson az **Alaptervezés** &gt; **Beállítás** &gt; **Igény-előrejelzés** &gt; **Cikkfelosztási kulcsok** menüpontra. Egy felosztási kulcsot egy cikkhez a **Cikkek társítása** oldal használatával tud hozzárendelni.
 
 ## <a name="intercompany-planning-groups"></a>Vállalatközi tervezőcsoportok
-Az igény-előrejelzés több vállalatra kiterjedő előrejelzést hoz létre. A Microsoft Dynamics 365 for Finance and Operations rendszerben együtt tervező vállalatok egy vállalatközi tervezési csoportba vannak csoportosítva. Ahhoz, hogy vállalatonként meg tudja határozni, melyik cikkfelosztási kulcsot vegye figyelembe a rendszer igény-előrejelzés esetén, rendeljen hozzá egy cikkfelosztási kulcsot a vállalatközi tervezési csoport tagjához. Ehhez nyissa meg az **Alaptervezés** &gt; **Beállítás** &gt; **Vállalatközi tervezőcsoportok** menüpontot. 
+Az igény-előrejelzés több vállalatra kiterjedő előrejelzést hoz létre. A Dynamics 365 Supply Chain Management rendszerben együtt tervező vállalatok egy vállalatközi tervezési csoportba vannak csoportosítva. Ahhoz, hogy vállalatonként meg tudja határozni, melyik cikkfelosztási kulcsot vegye figyelembe a rendszer igény-előrejelzés esetén, rendeljen hozzá egy cikkfelosztási kulcsot a vállalatközi tervezési csoport tagjához. Ehhez nyissa meg az **Alaptervezés** &gt; **Beállítás** &gt; **Vállalatközi tervezőcsoportok** menüpontot. 
 
-Alapértelmezés szerint, ha nincsenek cikkfelosztási kulcsok hozzárendelve a vállalatközi tervezési csoport tagjaihoz, az igény-előrejelzés az összes cikk összes cikkfelosztási kulcsához készül, az összes Microsoft Dynamics 365 for Finance and Operationst használó vállalaton belül. További szűrési feltételek a vállalatokhoz és cikkfelosztási kulcsokhoz elérhetőek a **Statisztikai kiinduló előrejelzés létrehozása** oldalon. 
+Alapértelmezés szerint, ha nincsenek cikkfelosztási kulcsok hozzárendelve a vállalatközi tervezési csoport tagjaihoz, az igény-előrejelzés az összes cikk összes cikkfelosztási kulcsához készül, az összes vállalaton belül. További szűrési feltételek a vállalatokhoz és cikkfelosztási kulcsokhoz elérhetőek a **Statisztikai kiinduló előrejelzés létrehozása** oldalon. 
 
 Ellenőrizze az előrejelzett cikkek számát. A felesleges cikkek pluszköltséggel járhatnak a Microsoft Azure Machine Learning használata során.
 
@@ -55,7 +55,7 @@ Az igény-előrejelzés az előrejelzés során mennyiségeket használ. Emiatt 
 
 Az igény-előrejelzéssel függő és független előrejelzés is készíthető. Ha például csak az **Eladási rendelés** van bejelölve, és az összes cikk, ami az igény-előrejelzéshez szükséges el van adva, a rendszer független igényt számít. Azonban fontos alösszetevőket lehet a cikkfelosztási kulcshoz adni. Ezek szerepelnek az igény-előrejelzésben. Ebben az esetben ha a **Termelési sor** be van jelölve, függő előrejelzés kerül kiszámításra. 
 
-Kétféleképpen hozható létre kiinduló előrejelzés Microsoft Dynamics 365 for Finance and Operationsben. Használhat előrejelzési modellt az előzményadatok mellett, vagy másolja át az előzményadatokat az előrejelzésbe. Az **Előrejelzés-generálási stratégia** mezőben választhat a két módszer közül. Előrejelzési modellek használatához jelölje be az **Azure Machine Learning** mezőt. 
+Kétféleképpen hozható létre kiinduló előrejelzés. Használhat előrejelzési modellt az előzményadatok mellett, vagy másolja át az előzményadatokat az előrejelzésbe. Az **Előrejelzés-generálási stratégia** mezőben választhat a két módszer közül. Előrejelzési modellek használatához jelölje be az **Azure Machine Learning** mezőt. 
 
 Az **Előrejelzési dimenziók** menüpontra kattintva, ami az **Igény-előrejelzési paraméterek** lap bal oldalán található, kijelölheti az igény-előrejelzés létrehozásakor használandó előrejelzés dimenziókat. Az előrejelzési dimenzió az előrejelzés részletességi szintjét jelzi. Vállalat, a hely és a cikkfelosztási kulcs kötelező előrejelzési dimenziók, de létrehozhat előrejelzést a raktár, készletállapot, vevőcsoport, vevőkód, ország/terület, állam, és a cikk illetve minden cikk szerint is. 
 
@@ -63,7 +63,7 @@ Az igény-előrejelzéshez bármikor hozzáadhat új előrejelzési dimenziókat
 
 Nem minden cikk viselkedik ugyan úgy, igény-előrejelzés szempontjából. Lehet hasonló cikkeket egy cikkfelosztási kulcs alá rendelni, valamint olyan jellemzőket, mint a tranzakció típusa vagy az előrejelzés fajtája, cikkfelosztási kulcsonként is megadhatóak. Kattintson a **Cikkfelosztási kulcsok** menüre az **Igény-előrejelzési paraméterek** lap bal oldalán. 
 
-Az előrejelzés létrehozásához a Microsoft Dynamics 365 for Finance and Operations egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a Finance and Operations rendszerben a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studióba:
+Az előrejelzés létrehozásához a Supply Chain Management egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studióba:
 
 -   Az API programozási felület (Telephony Alkalmazásprogramozási Felület) beállítása
 -   URL webszolgáltatási végpont
@@ -72,10 +72,23 @@ Az előrejelzés létrehozásához a Microsoft Dynamics 365 for Finance and Oper
 
 **Megjegyzés:** az Azure tárolási számlanév és kulcs csak az egyéni tárolási fiók használata esetén szükséges. Ha a helyszíni verziót használja, rendelkeznie kell egy egyéni tárolási fiókkal az Azure-on, hogy a gépi tanulási szolgáltatás elérhesse az előzményadatokat. 
 
-Igény-előrejelzések létrehozásánál használhat saját szolgáltatást a Machine Learning Studio vagy a Microsoft Dynamics 365 for Finance and Operations igény-előrejelzési kísérletek segítségével. A Microsoft Dynamics 365 for Finance and Operations igény-előrejelzési kísérletek webes szolgáltatásként való telepítéséhez a Microsoft Dynamics 365 for Finance and Operationsön belül talál útmutatást. Az **Igény-előrejelzési paraméterek** lapon kattintson az **Azure Machine Learning** fülre.
+Igény-előrejelzések létrehozásánál használhat saját szolgáltatást a Machine Learning Studio vagy a Supply Chain Management igény-előrejelzési kísérletek segítségével. A Finance and Operations igény-előrejelzési kísérletek webes szolgáltatásként való telepítéséhez a Finance and Operationsön belül talál útmutatást. Az **Igény-előrejelzési paraméterek** lapon kattintson az **Azure Machine Learning** fülre.
 
-## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>A Microsoft Dynamics 365 for Finance and Operations igény-előrejelzési gépi tanulási szolgáltatásának beállításai
-A Microsoft Dynamics 365 for Finance and Operations igény-előrejelzési szolgáltatása beállítható paramétereinek megtekintéséhez lépjen az **Alaptervezés** &gt; **Beállítás** &gt; **Igény-előrejelzés** &gt; **Előrejelzési algoritmus paraméterei** menüpontra. Az **Előrejelzési algoritmus paraméterei** lapon láthatóak a paraméterek alapértelmezett értékei. Ezeket a paramétereket a felülírhatja az **Igény-előrejelzési paraméterek** oldalon. Használja az **Általános** lapot, hogy a paramétereket globálisan felülírja, vagy használja a **Cikkfelosztási kulcsok** lapot, hogy cikkfelosztási kulcsonként módosítsa a paramétereket. Ha a cikkfelosztási kulcsokhoz tartozó paraméterek változnak, azok csak az adott cikkfelosztási kulcshoz tartozó cikkeket érintik.
+## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>A igény-előrejelzés gépitanulás-szolgáltatás beállításai
+Az igény-előrejelzési szolgáltatás beállítható paramétereinek megtekintéséhez lépjen az **Alaptervezés** &gt; **Beállítás** &gt; **Igény-előrejelzés** &gt; **Előrejelzési algoritmus paraméterei** menüpontra. Az **Előrejelzési algoritmus paraméterei** lapon láthatóak a paraméterek alapértelmezett értékei. Ezeket a paramétereket a felülírhatja az **Igény-előrejelzési paraméterek** oldalon. Használja az **Általános** lapot, hogy a paramétereket globálisan felülírja, vagy használja a **Cikkfelosztási kulcsok** lapot, hogy cikkfelosztási kulcsonként módosítsa a paramétereket. Ha a cikkfelosztási kulcsokhoz tartozó paraméterek változnak, azok csak az adott cikkfelosztási kulcshoz tartozó cikkeket érintik.
+
+### <a name="forecast-algorithm-parameters"></a>Az előrejelzési algoritmus paraméterei
+
+A **Felosztási kulcsok** lapon beállíthatja az **Előrejelzési algoritmus paramétereit** az egyes cikkfelosztási kulcsokhoz. Az alábbi lehetőségek közül választhat.
+- **Megbízhatósági szint százaléka**: A megbízhatósági intervallum olyan értékek tartományból áll, amelyek az igény-előrejelzés jó becslését adják. A 95 %-os megbízhatósági szint azt jelenti, hogy 5 % a kockázata annak, hogy az igény-előrejelzés eredménye a megbízhatósági intervallum tartományán kívül esik.
+- **Szezonalitás kényszerítése** Megadja, hogy a modellt egy bizonyos típusú szezonalitási típusra szeretné-e kényszeríteni. Csak az ARIMA és ETS lehetőségekre vonatkozik. Lehetőségek: AUTÓ (alapértelmezett), NINCS, ADDITÍV, SZORZÓ.
+- **Előrejelzési modell**: Beállítások: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, MIND. A legjobb illeszkedésű modellez válassza a **MIND** lehetőséget.
+- **Maximális előre jelzett érték**: Az előrejelzésekhez használandó maximális értéket adja meg. Formátum: + 1E[n] vagy numerikus állandó.
+- **Minimális előre jelzett érték**: Az előrejelzésekhez használandó minimális értéket adja meg. Formátum: -1E[n] vagy numerikus állandó.
+- **Hiányzó érték-helyettesítés**: Meghatározza a múltbeli adatok hiányosságainak kitöltésének módját. Beállítások: numerikus érték, ÁTLAG, ELŐZŐ, INTERPOLÁLT LINEÁRIS, INTERPOLÁCIÓS POLINOM.
+- **Hiányzó érték-helyettesítésihatóköre**: Megadja, hogy az érték-helyettesítés csak az egyéni granularítású attribútumok adattartományára vagy a teljes adathalmazra vonatkozik-e. Beállítások: GRANULARITY_ATTRIBUTE (alapértelmezett), GLOBÁLIS.
+- **Szezonalitás tipp**: A szezonális adatokhoz az előrejelzési pontosság javítása érdekében adjon meg egy tippet az előrejelzési modellhez. Formátum: egész szám, amely az időszakok számát, jelenti, amikor egy minta ismétlése szükséges. Például a "6" értéket írja be a 6 havonta önmagukat ismétlő adatokhoz.
+- **Tesztkészlet mérete százalékban**: Az előrejelzés pontosságának számításához tesztkészletként használni kívánt előzményadatok százaléka. 
 
 <a name="additional-resources"></a>További erőforrások
 --------

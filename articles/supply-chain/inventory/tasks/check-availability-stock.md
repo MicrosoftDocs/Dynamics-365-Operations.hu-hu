@@ -3,7 +3,7 @@ title: A készlet elérhetőségének ellenőrzése
 description: Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuális, illetve ténylegesen rendelkezésre álló készletét.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5b78b2e4ec3179450d635857353846c9bcb23eed
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: e0c00b2a79ab588ff47c249f73570544d884b79e
+ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795172"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "1995247"
 ---
 # <a name="check-the-availability-of-stock"></a>A készlet elérhetőségének ellenőrzése
 
@@ -31,40 +31,32 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Ellenőrizze az adott cikk aktuális készletét
-1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Aktuális készlet.
-2. Válassza ki a Cikkszám sort.
-    * Az aktuális készlet cikkszám szerinti lekérdezéséhez válassza ki azt a sort, ahol a Táblázat beállítása Aktuális készlet, a Mező beállítása pedig cikkszám.  
-3. A Feltételek mezőben válassza ki a lekérdezni kívánt cikket.
-    * Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „M9201” értéket.  
-4. Kattintson az OK gombra.
-5. Kattintson a Dimenziókra.
-    * A Dimenziók lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét. A foglalással kapcsolatos adatok megtekintéséhez a speciális raktározási (WHS) folyamatokat használó cikkek kapcsán meg kell jelenítenie az összes készletdimenziót.  
-6. Kattintson az OK gombra.
-7. A Műveleti ablakban kattintson a Kapcsolódó információ elemre.
-    * Ha nem ez jelenik meg, úgy elképzelhetően rá kell kattintania az Ellipszis gomb (...) parancsra a további műveleti ablak opciók megjelenítéséhez.  
-8. Kattintson a Szállítmány-összesítés lehetőségre.
-    * A Szállítmány-áttekintés lap olyan konkrét cikkről szolgáltat információt, mint az aktuális mennyiség, az átfutási idő vagy a szállítói adatok.  
-9. Bontsa ki a Aktuális részt.
-10. Bontsa ki a Szállító szakaszt.
+1. Nyissa meg a következőt: **Navigációs panel > Készletkezelés > Lekérdezések és jelentések > Aktuális készlet**.
+2. Válassza ki a **Cikkszám** sort. Az aktuális készlet cikkszám szerinti lekérdezéséhez válassza ki azt a sort, ahol a Táblázat beállítása **Aktuális készlet**, a Mező beállítása pedig **Cikkszám**.
+3. A **Feltételek** mezőben válassza ki a lekérdezni kívánt cikket. Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „M9201” értéket.  
+4. Kattintson az **OK** gombra.
+5. A **Művelet panelen** kattintson a **Dimenziók** elemre. A **Dimenziók** lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét. A foglalással kapcsolatos adatok megtekintéséhez a speciális raktározási (WHS) folyamatokat használó cikkek kapcsán meg kell jelenítenie az összes készletdimenziót.
+6. Kattintson az **OK** gombra.
+7. A **Műveleti ablakban** kattintson a **Kapcsolódó információ** elemre. Ha nem jelenik meg ez a lehetőség, úgy elképzelhetően rá kell kattintania az Ellipszis gomb (...) parancsra a további műveleti ablak opciók megjelenítéséhez.
+8. Kattintson a **Szállítmány-összesítés** lehetőségre. A **Szállítmány-áttekintés** lap olyan konkrét cikkről szolgáltat információt, mint az aktuális mennyiség, az átfutási idő vagy a szállítói adatok.  
+9. Bontsa ki a **Aktuális** részt.
+10. Bontsa ki a **Szállító** szakaszt.
 11. Zárja be a lapot.
 12. Zárja be a lapot.
 
 ## <a name="check-physical-on-hand-inventory"></a>Ellenőrizze az adott cikk tényleges aktuális készletét
-1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Tényleges aktuális készlet.
-2. A cikkmezőbe írjon egy értéket.
-    * A cikklistát a Telephely és Raktár mezők segítségével tudja szűrni.  
+1. Nyissa meg a következőt: **Navigációs panel > Raktárkezelés > Lekérdezések és jelentések > Aktuális fizikai készlet**.
+2. A **Cikkszám** mezőbe írjon egy értéket. A cikklistát a Telephely és Raktár mezők segítségével tudja szűrni. 
 3. Frissítse a lapot..
-4. Kattintson a Dimenziók megjelenítése elemre.
-    * A Dimenziókat megjelenítő lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét.  
-5. Kattintson az OK gombra.
+4. A **Műveleti panel** modulon kattintson a **Dimenziók megjelenítése** elemre. A Dimenziókat megjelenítő lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét.
+5. Kattintson az **OK** gombra.
 6. Zárja be a lapot.
 
 ## <a name="check-on-hand-inventory-by-location"></a>Ellenőrizze az aktuális készletet hely szerint.
-1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Aktuális helyenként.
-2. Érték beírása a Raktár mezőbe.
-    * Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „51” értéket.  
+1. Nyissa meg a következőt: **Navigációs panel > Raktárkezelés > Lekérdezések és jelentések > Aktuális készlet hely szerint**.
+2. Érték beírása a **Raktár** mezőbe. Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „51” értéket.  
 3. Frissítse a lapot..
-4. Kattintson a Dimenziók megjelenítése elemre.
-5. Kattintson az OK gombra.
+4. Kattintson a **Dimenziók megjelenítése** elemre.
+5. Kattintson az **OK** gombra.
 6. Zárja be a lapot.
 

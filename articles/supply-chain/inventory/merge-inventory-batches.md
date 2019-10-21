@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572834"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250990"
 ---
 # <a name="merge-inventory-batches"></a>Készletkötegek egyesítése
 
@@ -89,7 +89,7 @@ Nem, csak azokat a kötegeket lehet egyesíteni, amelyek ugyanazon a webhelyen v
 Ne, csak a kötegek teljes mennyiségét egyesítheti. A kötegegyesítés funkcióit készletfunkcióként alkalmazzák, és nem pedig termelési funkcióként.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Mi történik, ha a kötegek különböző kötegattribútum-értékekkel rendelkeznek?
-Amikor kiválasztja a forráskötegeket az egyesített kötegekben történő kombináláshoz, a Finance and Operations ellenőrzi, hogy az összeg köteg rendelkezik-e jellemzőkkel vagy attribútumértékekkel. Amikor az attribútumértékek megegyeznek, javasolnak egy értéket az egyesített köteghez. Ez az érték módosítható. A nem azonos attribútum értékek az egyesített kötegre vonatkozó üres mezők, és azoknak az értékeit manuálisan lehet megadni. Ha az attribútum értékre vonatkozó kötegattribútum típusa egy egész vagy egy tört szám, és az érték nem azonos az összes forráskötegre vonatkozóan, akkor az értéket egy súlyozott átlagszámítás segítségével számítják ki. A kiszámított értéket felfelé vagy lefelé lesz kerekítve a legközelebbi növekményre. Ha az érték üres a forráskötegben, a köteg és a mennyisége nem szerepel a számításban. **Példa** A következő példa bemutatja az egyesített kötegre vonatkozó súlyozott átlag számítását. A forráskötegek közül kettő rendelkezik üres értékkel egy olyan kötegattribútum típussal, amely egész. A következő attribútum van a forráskötegekhez rendelve.
+Amikor kiválasztja a forráskötegeket az egyesített kötegekben történő kombináláshoz, a Supply Chain Management ellenőrzi, hogy az összeg köteg rendelkezik-e jellemzőkkel vagy attribútumértékekkel. Amikor az attribútumértékek megegyeznek, javasolnak egy értéket az egyesített köteghez. Ez az érték módosítható. A nem azonos attribútum értékek az egyesített kötegre vonatkozó üres mezők, és azoknak az értékeit manuálisan lehet megadni. Ha az attribútum értékre vonatkozó kötegattribútum típusa egy egész vagy egy tört szám, és az érték nem azonos az összes forráskötegre vonatkozóan, akkor az értéket egy súlyozott átlagszámítás segítségével számítják ki. A kiszámított értéket felfelé vagy lefelé lesz kerekítve a legközelebbi növekményre. Ha az érték üres a forráskötegben, a köteg és a mennyisége nem szerepel a számításban. **Példa** A következő példa bemutatja az egyesített kötegre vonatkozó súlyozott átlag számítását. A forráskötegek közül kettő rendelkezik üres értékkel egy olyan kötegattribútum típussal, amely egész. A következő attribútum van a forráskötegekhez rendelve.
 
 | Attribútum | Minimum | Növelés | Maximum |
 |-----------|---------|-----------|---------|

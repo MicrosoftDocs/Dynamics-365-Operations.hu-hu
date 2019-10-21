@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. december 6.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742586"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025956"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. december 6.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. december 6.)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742586"
 Ez a témakör a Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le.
 
 
-## <a name="platform-update-22"></a>22-es platformfrissítés
+## <a name="platform-update-22-for-finance-and-operations"></a>Platform update 22 a Finance and Operations szolgáltatáshoz
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Legfeljebb 1 millió sor exportálása az Excel programba
 
@@ -42,7 +42,7 @@ Az Excel programba történő exportálás funkció most már beállítható úg
 
 ### <a name="restyled-personalization-toolbar"></a>Újratervezett személyre szabási eszköztár
 
-A személyre szabási eszköztárat újraterveztük a 22-es platformfrissítéshez, hogy a felhasználók könnyebben szabhassák testre a Talent megoldást. Az alábbi módosítások történtek: 
+A személyre szabási eszköztárat újraterveztük a Finance and Operations 22-es platformfrissítéshez, hogy a felhasználók könnyebben szabhassák testre a Talent megoldást. Az alábbi módosítások történtek: 
 
 -  Minden egyes személyre szabása eszköz neve most már megjelenik az ikon mellett, ami lehetővé teszi, hogy a felhasználók gyorsan felismerjék az őket érdeklő eszközt.
 -  Most már az aktuális eszköz használatának leírása is megjelenik, amelyek segítségével a felhasználók könnyebben megérthetik, hogyan lehet végrehajtani a szükséges személyre szabást.  
@@ -50,19 +50,19 @@ A személyre szabási eszköztárat újraterveztük a 22-es platformfrissítésh
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimalizált „egyike a következőknek” szűrési élmény
 
-Az „egyike a következőknek” szűrési operátor rendelkezésre áll a legtöbb mezőben a szűrés panel és a rács fejléc legördülő listák használata esetén. Az operátor lehetővé teszi a mező szűrését több érték alapján. Az „egyike a következőknek” operátor új és továbbfejlesztett lehetőségei a 22-es platformfrissítéssel érhetők el. További információ: [Optimalizált „egyike a következőknek” szűrési élmény](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Az „egyike a következőknek” szűrési operátor rendelkezésre áll a legtöbb mezőben a szűrés panel és a rács fejléc legördülő listák használata esetén. Az operátor lehetővé teszi a mező szűrését több érték alapján. Az „egyike a következőknek” operátor új és továbbfejlesztett lehetőségei a Finance and Operations 22-es platformfrissítéssel érhetők el. További információ: [Optimalizált „egyike a következőknek” szűrési élmény](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Listák beillesztése az Excel programból a szűrőmezőkbe az „egyike a következőknek” operátorral.
 
 Egyes feladatok esetén a felhasználók Exceles értéklistával rendelkezhetnek, amelyet az adatok szűrésére szeretnének használni a Talent megoldásban. Például előfordulhat, hogy egy emberierőforrás-felhasználó azonosít egy, a rendszerben további kutatást igénylő alkalmazottcsoportot egy jelentésben, és hasznos lenne, ha a felhasználó közvetlenül az Excel programból másolhatná ki a listát a Talent szűrőmezőjébe.
 
-A 22-es platformfrissítéstől kezdve az „egyike a következőknek” operátor a szűrőpanelen és a szűrés rácsoszlopban felismeri az Excel programból kimásolt listákat, amelyek így közvetlenül a szűrőmezőkbe illeszthetők be. Ez magában foglalja az Excel különböző soraiból és oszlopaiból kimásolt értékek gyűjteményét. A funkcióval kapcsolatos további tudnivalókért lásd: [Listák beillesztése az Excel programból a szűrőmezőkbe az „egyike a következőknek” operátorral](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+A Finance and Operations 22-es platformfrissítéstől kezdve az „egyike a következőknek” operátor a szűrőpanelen és a szűrés rácsoszlopban felismeri az Excel programból kimásolt listákat, amelyek így közvetlenül a szűrőmezőkbe illeszthetők be. Ez magában foglalja az Excel különböző soraiból és oszlopaiból kimásolt értékek gyűjteményét. A funkcióval kapcsolatos további tudnivalókért lásd: [Listák beillesztése az Excel programból a szűrőmezőkbe az „egyike a következőknek” operátorral](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Előnézetben
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Egyesült királyságbeli bérlista-integráció konfigurálása a Talent és a Dayforce között
 
-Az Egyesült Királyságban előnézetben elérhető Microsoft Dynamics 365 for Talent és a Ceridian Dayforce közötti integráció. További tudnivalókért lásd a következő témakört: [Bérlista-integráció konfigurálása a Talent és a Dayforce között](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Az Egyesült Királyságban előnézetben elérhető Talent és a Ceridian Dayforce közötti integráció. További tudnivalókért lásd a következő témakört: [Bérlista-integráció konfigurálása a Talent és a Dayforce között](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Hamarosan
 
@@ -90,9 +90,9 @@ Módosításokat végeztünk a mellékletek kijavítására. Új melléklet hozz
 
 ## <a name="known-issues"></a>Ismert problémák
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>A Finance and Operations integráció hibáinek leképezése
+### <a name="mapping-errors-in-the-integration-with-finance"></a>A Finance-integráció hibáinak leképezése
 
-A következő problémákat azonosítottuk a Talent és a Finance and Operations integrációjának aktuális sablonjában. Hamarosan új sablont teszünk közzé, amely minden létrehozott új integrációs projektekre alkalmazva lesz. A meglévő integrációs projektek esetén a feladat-hozzárendelésekhez lehet frissíteni. A frissített leképezésekért tekintse át a következő táblázatot. 
+A következő problémákat azonosítottuk a Talent és a Finance integrációjának aktuális sablonjában. Hamarosan új sablont teszünk közzé, amely minden létrehozott új integrációs projektekre alkalmazva lesz. A meglévő integrációs projektek esetén a feladat-hozzárendelésekhez lehet frissíteni. A frissített leképezésekért tekintse át a következő táblázatot. 
 
 >[!NOTE]
 > A Munkabeosztások a szülő munka-hozzárendelésbe feadat nem integrálja az adatokat. Ezt a hibát jelenleg vizsgáljuk. Az aktuális leképezésben nincs megkerülő megoldás. 

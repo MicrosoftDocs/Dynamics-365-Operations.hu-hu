@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.md
+  href: index.yml
   items:
     - name: Első lépések
       items:
@@ -8,6 +8,14 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. október 1.
+              href: whats-new-talent-october-1-2019.md
+            - name: 2019. szeptember 17.
+              href: whats-new-talent-september-17-2019.md
+            - name: 2019. szeptember 10.
+              href: whats-new-talent-september-12-2019.md
+            - name: 2019. augusztus 27.
+              href: whats-new-talent-august-28-2019.md
             - name: 2019. augusztus 22.
               href: whats-new-talent-august-21-2019.md
             - name: 2019. augusztus 13.
@@ -24,16 +32,16 @@
               href: whats-new-talent-july-9-2019.md
             - name: 2019. július 2.
               href: whats-new-talent-july-2-2019.md
-            - name: 2019. június 25.
-              href: whats-new-talent-june-25-2019.md
-            - name: 2019. június 18.
-              href: whats-new-talent-june-18-2019.md
-            - name: 2019. június 11.
-              href: whats-new-talent-june-11-2019.md
-            - name: 2019. június 4.
-              href: whats-new-talent-june-4-2019.md
             - name: Újdonságok (2019-es archívum)
               items:
+                - name: 2019. június 25.
+                  href: whats-new-talent-june-25-2019.md
+                - name: 2019. június 18.
+                  href: whats-new-talent-june-18-2019.md
+                - name: 2019. június 11.
+                  href: whats-new-talent-june-11-2019.md
+                - name: 2019. június 4.
+                  href: whats-new-talent-june-4-2019.md
                 - name: 2019. május 28.
                   href: whats-new-talent-may-28-2019.md
                 - name: 2019. május 21.
@@ -427,15 +435,17 @@
           href: corehr-custom-fields.md
     - name: Talent – hibaelhárítás
       items:
+        - name: Teljesítmény optimalizálása automatikus tisztítási feladatokkal
+          href: talent-batch-history-cleanup.md
         - name: Az állások LinkedIn felületére való feladásával kapcsolatos hibák elhárítása
           href: attract-troubleshoot-linkedin.md
         - name: Az elemzési jelentések nincsenek frissítve
           href: analytic-reports-not-updated.md
         - name: Nem lehet környezetet létrehozni a PowerApps felügyeleti központjában
           href: create-envi-powerapps-admin-ctr.md
-        - name: Talent kliens kapcsolata megszakad
+        - name: Talent-kliens kapcsolata megszakad
           href: client-disconnects.md
-        - name: 'Szövegcsonkolás elkerülése a pozícióhierarchián, és exportálás Visio szolgáltatásba'
+        - name: Szövegcsonkolás elkerülése a pozícióhierarchián és exportálás Visio szolgáltatásba
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Kompenzációs folyamat futtatása
           href: run-compensation-process.md

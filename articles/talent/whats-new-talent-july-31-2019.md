@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új vagy módosult elemei (2019. július 31.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új vagy módosult elemei (2019. július 31.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 7/30/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1fffe1bd8739723294c027c174d5e959c1c6010a
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864579"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010245"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-30-2019"></a>A Dynamics 365 for Talent új vagy módosult elemei (2019. július 30.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 30.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 A szakaszban ismertetett módosítások a 8.1.2409-ös buildre vonatkoznak.
@@ -43,7 +43,7 @@ A szakaszban ismertetett módosítások a 8.1.2409-ös buildre vonatkoznak.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Kanada és Délkelet-Ázsia régióinak támogatása
 
-Örömmel jelentjük be, hogy a kanadai és a délkelet-ázsiai régiók 2019. augusztus 1-től elérhetők lesznek a Microsoft Dynamics 365 for Talent szolgáltatásban. Ezzel a módosítással környezeteket hozhat létre a kanadai és ázsiai régiókban, és az összes Talent-adat a megadott helyeken belül marad. Létrehozhat egy környezetet ezekben az új régiókban azáltal, hogy kiválasztja a helyet az Új környezet párbeszédpanelen, és a környezet segítségével beállítja a Talentet az LCS-ben a következő alapján: [A Talent létesítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Örömmel jelentjük be, hogy a kanadai és a délkelet-ázsiai régiók 2019. augusztus 1-től elérhetők lesznek a Talent szolgáltatásban. Ezzel a módosítással környezeteket hozhat létre a kanadai és ázsiai régiókban, és az összes Talent-adat a megadott helyeken belül marad. Létrehozhat egy környezetet ezekben az új régiókban azáltal, hogy kiválasztja a helyet az Új környezet párbeszédpanelen, és a környezet segítségével beállítja a Talentet az LCS-ben a következő alapján: [A Talent létesítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 A más régiókból származó projektek adatainak a kanadai és ázsiai régiókba irányuló áttelepítése nem támogatott. Csak az új projekteket lehet telepíteni ezeknél az új, támogatott régióknál.
 

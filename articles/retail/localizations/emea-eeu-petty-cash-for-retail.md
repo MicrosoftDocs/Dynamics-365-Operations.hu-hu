@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b91d8589fa4226a2c28e6935b32109e702afc1a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5722099f8f146b9c5cc1fd427ccc57e040d2ff8a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571535"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025425"
 ---
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Retail pénztárkezelés (Kelet-Európa)
 
@@ -50,7 +50,7 @@ A **Feladott kimutatások** oldalon, a műveleti ablak, a következőket teheti:
 
 A kiskereskedelmi pénzgazdálkodás használata előtt a következő műveletet kell beállítania:
 
-- Fizetéstípus beállítása minden olyan fizetési módhoz, amelyet a kiskereskedő elfogad a **Fizetéstípusok** képernyőn. Különféle fizetési módokat használhat a költségtranzakciók feladásához a Retail POS esetében. Kiskereskedelmi fizetés módjaival kapcsolatos további tudnivalókat lásd: [Fizetési módok](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Fizetéstípus beállítása minden olyan fizetési módhoz, amelyet a kiskereskedő elfogad a **Fizetéstípusok** képernyőn. Különféle fizetési módokat használhat a költségtranzakciók feladásához a Retail POS esetében. A fizetés módokkal kapcsolatos további tudnivalókat lásd: [Fizetési módok](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Kiskereskedelmi paraméterek beállítása a készpénzes folyamatokhoz.
 - Készpénzes fizetés fizetési mód beállítása a kiskereskedelmi üzletekben.
 

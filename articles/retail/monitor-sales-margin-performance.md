@@ -1,6 +1,6 @@
 ---
 title: Értékesítési és teljesítménykülönbözet figyelése
-description: A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja az értékesítést és teljesítménykülönbözetet.
+description: A Dynamics 365 Retail rendszerben valós időben tanulmányozhatja az értékesítést és teljesítménykülönbözetet.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46ecefdd15a3a208588aaf630571764047464cdb
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555650"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018064"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>Értékesítés és teljesítménykülönbözet megfigyelése
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja az értékesítést és teljesítménykülönbözetet.
+A Dynamics 365 Retail rendszerben valós időben tanulmányozhatja az értékesítést és teljesítménykülönbözetet.
 
-A Dynamics 365 for Retail részeként a felhasználók a szervezeti hierarchia különböző szintjein, valós időben figyelhetik az értékesítést és a teljesítménykülönbözetet az alábbi dimenzióknál:
+A Retail részeként a felhasználók a szervezeti hierarchia különböző szintjein, valós időben figyelhetik az értékesítést és a teljesítménykülönbözetet az alábbi dimenzióknál:
 
 - Termékek
 - Kategóriák

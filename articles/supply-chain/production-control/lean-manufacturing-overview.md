@@ -1,6 +1,6 @@
 ---
 title: Lean manufacturing (áttekintés)
-description: A cikk a Dynamics 365 for Finance and Operations lean manufacturing funkcióinak áttekintését és leírását nyújtja.
+description: A cikk a Dynamics 365 Supply Chain Management lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562392"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250072"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
 [!include [banner](../includes/banner.md)]
 
-A cikk a Microsoft Dynamics 365 for Finance and Operations lean manufacturing funkcióinak áttekintését és leírását nyújtja.
+A cikk a Dynamics 365 Supply Chain Management lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 
 A lean gyártás olyan eszközöket kínál, amelyeket használhat lean műveletek modellezéséhez. Ezek az eszközök támogatják és elősegítik az alábbi koncepciókat és üzleti tevékenységeket:
 -   Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai folyamatok létrehozásával mint termelési folyamatok.
 -   Valósítson meg egy lean pull rendszert kanbanok használatával, melyek jelzik a keresleti követelményeket.
 -   Kanbanfeladatok ellenőrzése és karbantartása.
 
-A lean manufacturing architektúra a Finance and Operations programban tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. Ezek a struktúrák teljes mértékben integráltak a Finance and Operations folyamataival. Használhatja a lean manufacturing legetőséget vegyes módú gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket.
+A lean manufacturing architektúra a tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. Ezek a struktúrák teljes mértékben integráltak a Supply Chain Management folyamataival. Használhatja a lean manufacturing legetőséget vegyes módú gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket.
 
 | **Fontos**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A Finance and Operations rendszert használhatja a lean manufacturing kanbanokkal történő végrehajtásának támogatásához. Ugyanakkor a lean irányelvek sikeres alkalmazása a használt belső üzleti folyamatokon és a tényleges termelési feltételeken és környezeten múlik. |
+| A Supply Chain Management rendszert használhatja a lean manufacturing kanbanokkal történő végrehajtásának támogatásához. Ugyanakkor a lean irányelvek sikeres alkalmazása a használt belső üzleti folyamatokon és a tényleges termelési feltételeken és környezeten múlik. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Termelési és logisztikai folyamatok modellezése termelési folyamatokként
 Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai folyamatok létrehozásával mint termelési folyamatok. Ez a tevékenységhez a következő feladatokból áll:
@@ -69,8 +69,8 @@ Az alábbi lista leírja a specializált kanbantáblákat:
 -   Kanbantábla az átviteli feladatokhoz – Ez a tábla az aktuális átviteli feladatokról nyújt áttekintést. Frissíthet és regisztrálhat kitárolási listákat, elindíthat és befejezhet transzferfeladatokat és végrehajthat egyéb feladatokat.
 -   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. Továbbá a tábla segíti a vonalkód beolvasását kanbanok jelentéséhez.
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanbanfeladatok és a Finance and Operations folyamatainak integrálása
-A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Finance and Operations rendszerben.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-feladatok és integráció a Supply Chain Management folyamataival
+A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Supply Chain Management rendszerben.
 -   Végrehajthat kitárolási tevékenységeket olyan alapanyag feltöltéséhez, amly a kanbanfeladatok követelményeinek teljesítéséhez használatos.
 -   Nyomtathat kanban kártyákat, körbejáró kártyákat és kitárolási listákat kanbanok támogatásához. Ezek a dokumentumok képviselik, jegyzik és nyomon követik a kanbanfeladatokat a raktárban és a termelési szinten.
 -   Használhat vonalkód beolvasást a kitárolási és átviteli tevékenységek regisztrálásához a készletben.

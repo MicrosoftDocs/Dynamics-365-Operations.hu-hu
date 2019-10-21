@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. augusztus 20.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. augusztus 20.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f437dbbb786456cd335d5fb85e271d224e0a1383
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918204"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024068"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-20-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. augusztus 20.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. augusztus 20.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -43,11 +43,11 @@ Az elutasítás oka és a megjegyzések mostantól a **Tevékenység** lapon jel
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
-A kiadás a Dynamics 365 for Talent: Core HR apró hibáinak javításait is tartalmazza. A szakaszban ismertetett módosítások a 8.1.2429-ös buildre vonatkoznak.
+A kiadás a Dynamics 365 Talent: Core HR apró hibáinak javításait is tartalmazza. A szakaszban ismertetett módosítások a 8.1.2429-ös buildre vonatkoznak.
 
 ### <a name="in-preview"></a>Előnézetben
 
@@ -69,6 +69,6 @@ Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvet
 
 ### <a name="coming-soon"></a>Hamarosan
 
-#### <a name="platform-update-29"></a>29-as platformfrissítés
+#### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 a Finance and Operations szolgáltatáshoz
 
-További információ a 29-es platformfrissítésről (Platform update 29): [Előzetes funkciók a Dynamics 365 for Finance and Operations platform update 29 verziójában (2019. október)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+További információ a Finance and Operations 29-es platformfrissítésről (Platform update 29): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 29-es verziójában (2019. október)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. január 31.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. január 31.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/31/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-29
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4504cebb7702c7163c94badeeb06d9af0e5467e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6dcdb37ba7a423e54a641c1d123f563a59648d46
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518144"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010314"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-january-31-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. január 31.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-january-31-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. január 31.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 **Build 8.1.2128**
 

@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553553"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025102"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Kiskereskedelmi értékesítési utalványok beállítása
 
@@ -37,10 +37,10 @@ Minden egyes utalványhoz egy kiskereskedelmi engedmény kapcsolódik. Az engedm
 
 Az utalványok lényegében a kiskereskedelmi engedményeken túl további ellenőrzést biztosítanak. Az utalvány biztosítja a szükséges utalványkódokat és a vonalkódokat a kódok dátumtartományával együtt. Az utalvány emellett választható felhasználási korlátokat és a vevő által igényelt tulajdonságokat is nyújt. Az engedmény a termékkészletet tartalmazza, amelyre az utalvány érvényes. Az engedmény árcsoportjai megadják azon vevő- csatorna- vagy katalóguskészletet, amely az utalvány érvényes.
 
-Utalvány létrehozásához külön hozza létre az engedményt és az utalványt. Ezután összekapcsolja őket az utalványlapon levő engedmény kiválasztásával a Microsoft Dynamics 365 for Retail rendszerben.
+Utalvány létrehozásához külön hozza létre az engedményt és az utalványt. Ezután összekapcsolja őket az utalványlapon levő engedmény kiválasztásával a Retail rendszerben.
 
 > [!NOTE]
-> Miután az utalványhoz egy engedményt kapcsolt, az engedményhez kapcsolódó több mező írásvédetté válik a Microsoft Dynamics 365 for Retail rendszerben, mivel ezek az utalvány beállításaitól függnek. Idetartoznak az állapotjelző és a szokásos dátumtartományok mezői.
+> Miután az utalványhoz egy engedményt kapcsolt, az engedményhez kapcsolódó több mező írásvédetté válik a Retail rendszerben, mivel ezek az utalvány beállításaitól függnek. Idetartoznak az állapotjelző és a szokásos dátumtartományok mezői.
 
 ### <a name="limited-use-coupons"></a>Korlátozottan használható utalványok
 
@@ -75,7 +75,7 @@ Utalvány beállítása előtt be kell állítania az utalvány vonalkódját é
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Utalványok részleges frissítéseinek hatása
 
-Az Utalvány funkció a Dynamics 365 for Retail alkalmazásban több különálló funkciót tartalmaz. A Microsoft Dynamics 365 for Retail Headquarters (HQ) és a csatorna részben frissíthető az összetevők között. Ezért fontos megértenie, hogyan befolyásolják a részleges frissítések az utalvány egészének funkcióit.
+Az Utalvány funkció több különálló funkciót tartalmaz. A Dynamics 365 Retail Headquarters (HQ) és a csatorna részben frissíthető az összetevők között. Ezért fontos megértenie, hogyan befolyásolják a részleges frissítések az utalvány egészének funkcióit.
 
 - **A HQ részben frissül, de a Retail-kiszolgáló és a pénztár nem.** Egy HQ-frissítés során az utalvány- és engedménycsoportok lapjai frissülnek, és a kiskereskedelmi ármotor is frissül. Ha a kettő közül csak egy összetevő frissül, a Retail alkalmazás egyes lapjai nem egyeznek meg az árszámítási adatokkal. Emiatt nem várt engedmények vagy a hibák fordulhatnk elő az engedményszámítások során.
 - **A HQ frissül, de a Retail-kiszolgáló és a pénztár nem (N-1).** Mivel nem minden kiskereskedelmi áruház frissíthető ugyanakkor, javasoljuk, hogy a kiskereskedelmi áruházak frissítése előtt a HQ-t frissítse. Az N-1 forgatókönyvben az utalványokhoz kapcsolódó új funkció nem érhető el a még nem frissített üzletek esetében. Például az utalványfunkció „kizárás” sorokat vezet be. Ha kizárandó sorokat használ egy engedményen, ezeket a rendszer nem alkalmazza őket arra a kiskereskedelmi áruházra, amelyen korábbi verzió fut.

@@ -1,6 +1,6 @@
 ---
 title: Szállítás kezelés áttekintése
-description: Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
+description: Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Finance and Operations szolgáltatásban.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561165"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2027061"
 ---
-# <a name="transportation-management-overview"></a>Szállítás kezelés áttekintése
+# <a name="transportation-management-overview"></a>Szállításkezelés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
+Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Finance and Operations szolgáltatásban.
 
-A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket a Microsoft Dynamics 365 for Finance and Operations rendszerben.
+A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket.
 
 <table>
 <colgroup>

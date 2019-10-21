@@ -1,6 +1,6 @@
 ---
 title: Raktári munka halasztott feldolgozása
-description: Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a raktári munkakelések késleltetett feldolgozását a Microsoft Dynamics 365 for Finance and Operations programban.
+description: Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a raktári munkakelések késleltetett feldolgozását a Dynamics 365 Supply Chain Management programban.
 author: josaw1
 manager: AnnBe
 ms.date: 06/17/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4905084f9bc28e55c307921280733c6acb80db86
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863586"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026922"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Raktári munka halasztott feldolgozása
 
@@ -29,7 +29,8 @@ ms.locfileid: "1863586"
 
 [!include [banner](../includes/pivate-preview-banner.md)]
 
-Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a késleltetett feldolgozást raktári munkákhoz a Microsoft Dynamics 365 for Finance and Operations programban.
+Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a késleltetett feldolgozást raktári munkákhoz a Dynamics 365 Supply Chain Management programban.
+
 
 A halasztott feldolgozási funkciók esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A halasztott feldolgozás akkor hasznos, ha több munkasort kell feldolgozni, és a dolgozó lehetővé tudja tenni a munka aszinkron feldolgozását. Akkor is hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a felhasználó termelékenységére.
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560301"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250576"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
@@ -45,7 +45,7 @@ A feloldási stratégia fogalma most a következő stratégiákból áll:
 
 A termékkonfigurációs modell [kényszerkielégítési problémaként (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) fogalmazható meg. A Microsoft Solver Foundation (MSF) kétféle feloldási stratégiát kínál a CSP-k megoldására, amelyek termékkonfigurációs modellekből használhatók. E feloldási stratégiák [heurisztikára](https://techterms.com/definition/heuristic) támaszkodnak, amelynek segítségével meghatározható a CSP a probléma megoldása során figyelembe vett változóinak sorrendje. A heurisztika jelentősen befolyásolhatja a teljesítményt probléma vagy problémaosztály megoldásánál.
 
-A Finance and Operations alkalmazásban a termékkonfigurációs modellek feloldási stratégiája határozza meg, hogy melyik feloldást kell használni heurisztikával. Az **Alapértelmezett**, **Előbb a minimumtartományok** és **Felülről lefelé** stratégiák az MSF-ből származó két megoldót használják, míg a  **Z3** stratégia a Z3 feloldót alkalmazza. 
+A termékkonfigurációs modellek feloldási stratégiája határozza meg, hogy melyik feloldást kell használni heurisztikával. Az **Alapértelmezett**, **Előbb a minimumtartományok** és **Felülről lefelé** stratégiák az MSF-ből származó két megoldót használják, míg a  **Z3** stratégia a Z3 feloldót alkalmazza. 
 
 Valós vevői végrehajtási tanulmányok kimutatták, hogy a termékkonfigurációs modell feloldási stratégiájának változása a válaszidőt percekről milliszekundumokra csökkentheti. Ezért érdemes különböző feloldási stratégiák kipróbálására törekedni a termékkonfigurációs modellhez illő leghatékonyabb stratégia megtalálásához.
 

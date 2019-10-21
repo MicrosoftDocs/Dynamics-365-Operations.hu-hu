@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 9.) szolgáltatásban
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent (2019. április 9.) szolgáltatásban
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 08f3f8150a120817618ee4d31197f3088c7483ab
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856424"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024091"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 9.) szolgáltatásban
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 9.) szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
@@ -91,4 +91,4 @@ Az alkalmazotti szabadidő követése és a szabadidő kiszámításának ismere
 Ez a módosítással az ismétlődések észleli a program, amikor névmezőket ad meg, és egy állapot jelenik meg a talált ismétlődések számával. A hivatkozás kiválasztásával megnyithat egy új lapot, hogy megállapítsa, hogy használja-e az észlelt egyezést. Az adatbevitel megzavarása elkerülése érdekében az ismétlődéseket tartalmazó űrlap nem nyílik meg automatikusan.
 
 ###  <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A 25-ös platformfrissítéssel a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt. 
+A Finance and Operations 25-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést. 

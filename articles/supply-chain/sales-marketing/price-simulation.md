@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554644"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251343"
 ---
 # <a name="price-simulation"></a>Árszimuláció
 
@@ -51,7 +51,7 @@ Hogy az engedmények és árak kiszámítása mindig pontosan menjen végbe, az 
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kedvezmények típusai a kereskedelmi megállapodásokban
 
-Kereskedelmi megállapodások a Microsoft Dynamics 365 for Finance and Operations rendszerben négy árengedménytípust kínálnak. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
+Kereskedelmi megállapodások a Supply Chain Management rendszerben négy árengedménytípust kínálnak. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
 
 -   **Értékesítési ár** – Cikkenkénti eladási árakat lehet meghatározni. Ajánlatkérési sorok létrehozásakor a program megkeresi a megfelelő eladási árat a cikkhez és továbbítja azt az árajánlat sorokhoz. Ebből következően egy ilyen típusú kereskedelmi megállapodás nincs hatással az árszimulációra. Az ajánlati sorban létrejövő ár a kereskedelmi megállapodáson alapul.
 -   **Sorengedmény** – A cikkhez különleges engedmények adhatók meg, a rendelt mennyiségtől függően. A sorösszegek általában a sorkedvezményekkel csökkennek az árszimuláció futtatása előtt. Ebből következően egy ilyen típusú kereskedelmi megállapodás hatással van az árszimulációra.

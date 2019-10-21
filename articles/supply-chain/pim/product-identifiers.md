@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546225"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250599"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók 
 
@@ -36,13 +36,13 @@ Amikor az üzemben vagy a raktárban dolgozik termékekkel a Microsoft Dynamics 
 
 ## <a name="unique-product-numberproduct-id"></a>Egyedi termékszámot/termékazonosító
 
-A Microsoft Dynamics 365 for Finance and Operations, rendszerben a termék elsődleges azonosít ja a termékszám (tehát az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
+A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonosít ja a termékszám (tehát az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
 
-Sok esetben a termékszámot eredetileg nem a Finance and Operations rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. A Finance and Operations ezután a számokat az összes műveletben használja.
+Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Management rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. Ezt követően a Supply Chain Management az összes műveletben a számokat fogja használni.
 
-A Finance and Operations implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
+A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
-A Common Data Service (CDS) használatakor a Finance and Operations termékszám egyben a CDS termékszáma is lesz. A termékváltozatok a CDS-be külön termékként szinkronizálódnak.
+A Common Data Service használata során a Supply Chain Management cikkszáma egyben a termék száma is a Common Data Service rendszerben. A termékváltozatok a Common Data Service-be külön termékként szinkronizálódnak.
 
 ## <a name="item-number-and-product-dimensions"></a>Cikkszám és termékdimenziók
 
@@ -56,19 +56,19 @@ Emellett képes lesz keresni és szűrni a termékszámra, a terméknévre és -
 
 ## <a name="product-name-and-description"></a>Terméknév és -leírás
 
-A termék neve és leírása a termék olvasható azonosítója, és bármilyen nyelven karban lehet tartani. A Finance and Operations kliens alapértelmezés szerint minden termékinformációt az alapértelmezett vállalati nyelven jelenít meg, nem a felhasználó nyelvén. Azonban a rendszer a lefordított termékneveket és leírásokat használja az ügyfelekkel és a gyártókkal való minden kommunikáció során. A fordítások a vevői és szállítói számlák nyelvkódján alapulnak.
+A termék neve és leírása a termék olvasható azonosítója, és bármilyen nyelven karban lehet tartani. A Supply Chain Management kliens alapértelmezés szerint minden termékinformációt az alapértelmezett vállalati nyelven jelenít meg, nem a felhasználó nyelvén. Azonban a rendszer a lefordított termékneveket és leírásokat használja az ügyfelekkel és a gyártókkal való minden kommunikáció során. A fordítások a vevői és szállítói számlák nyelvkódján alapulnak.
 
 Termékváltozatokhoz a termék nevét a termékek elnevezési rendszerének sablonja segítségével lehet létrehozni. Mivel nincs olyan követelmény, hogy a terméknevek egyediek legyenek, több olyan terméket is találhat, amelyek azonos névvel rendelkeznek.
 
 ## <a name="product-and-item-search-names"></a>Termék- és cikk-keresési nevek
 
-A Finance and Operations másodlagos keresési nevet kínál a termékekhez és a cikkekhez is (bevezetett termékek). A keresési névnek nem kell egyedinek lennie, és a termék vagy termékváltozat létrehozása után módosítani lehet. Azt ajánljuk, hogy a név keresését a termékek kategóriák szerinti keresésére használja. A keresési nevek gyors kereséseket tesznek lehetővé, különösen az értékesítési és beszerzési folyamatoknál.
+A Supply Chain Management másodlagos keresési nevet kínál a termékekhez és a cikkekhez is (bevezetett termékek). A keresési névnek nem kell egyedinek lennie, és a termék vagy termékváltozat létrehozása után módosítani lehet. Azt ajánljuk, hogy a név keresését a termékek kategóriák szerinti keresésére használja. A keresési nevek gyors kereséseket tesznek lehetővé, különösen az értékesítési és beszerzési folyamatoknál.
 
 A keresési név is tartalmazhat vevői vagy szállítói termékazonosítót, vagy valamilyen más külső termékazonosítót, ha ez a külső azonosító egy termék elsődleges keresési feltétele.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Külső termékazonosítók (vevői és szállítói azonosítók)
 
-Kiadott termékekhez karbantarthatja a cikkszámokat, a cikkek nevét és a cikkek leírását, amelyeket a vevő vagy szállító használ. A hivatkozások megjelennek a külső dokumentumokon, például az értékesítési rendeléseken, a beszerzési rendeléseken, a csomagjegyzékeken és számlákon. A Finance and Operations jelenlegi verziójában a külső hivatkozások nem szerepelnek az alapvető műveleti oldalakon. Az egyetlen kivétel a szállító cikkszáma. Ez a szám a **Termékinformációk** párbeszédpanelen jelenik meg, ha egy alapértelmezett szállító meg van adva a kiadott termékhez.
+Kiadott termékekhez karbantarthatja a cikkszámokat, a cikkek nevét és a cikkek leírását, amelyeket a vevő vagy szállító használ. A hivatkozások megjelennek a külső dokumentumokon, például az értékesítési rendeléseken, a beszerzési rendeléseken, a csomagjegyzékeken és számlákon. A Supply Chain Management jelenlegi verziójában a külső hivatkozások nem szerepelnek az alapvető műveleti oldalakon. Az egyetlen kivétel a szállító cikkszáma. Ez a szám a **Termékinformációk** párbeszédpanelen jelenik meg, ha egy alapértelmezett szállító meg van adva a kiadott termékhez.
 
 A külső termékazonosítók kiadott termék, kiadott termékváltozat, vevő vagy vevőcsoport, szállító vagy szállítócsoport szerint tarthatók karban.
 
@@ -77,7 +77,7 @@ A **Kiadott termékek** oldalon hajtsa végre az alábbi műveletek valamelyiké
 - Vevőknél az **Eladás** lapon a **Kapcsolódó információk** csoportban válassza **Külső cikkleírás** elemet.
 - Szállítóknál a **Beszerzés** lapon a **Kapcsolódó információk** csoportban válassza **Külső cikkleírás** elemet.
 
-A **Külső cikkleírások** lapon társítani lehet a vevő vagy szállító cikkszámát a kiadott termékhez. A társítást minden jogi személyhez el kell végezni. Az alábbi adatok rögzítésére van lehetőség: A Finance and Operations aktuális verziójában sajnos kissé félrevezetők a címkék. Ezek a címkék azonban jövőbeli verzióban megváltozhatnak.
+A **Külső cikkleírások** lapon társítani lehet a vevő vagy szállító cikkszámát a kiadott termékhez. A társítást minden jogi személyhez el kell végezni. Az alábbi adatok rögzítésére van lehetőség: A Supply Chain Management aktuális verziójában sajnos kissé félrevezetők a címkék. Ezek a címkék azonban jövőbeli verzióban megváltozhatnak.
 
 | Mező | Megfelelő vevőadatok | Megfelelő szállítói adatok |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ A vonalkódok karbantartásához a **Kiadott termékek** oldalon, a **Készletke
 
 Az e-kereskedelemben elengedhetetlen, hogy minden fél közös nyelvet beszéljen, és a termékekre közös azonosítókkal hivatkozzon. Emiatt egyes ágazatok a [GTIN](https://www.gs1.org/id-keys/gtin) rendszerre támaszkodnak: ez egy globális cikkszámrendszer, amelyet a GS1 gondoz.
 
-A Finance and Operations rendszerben azt ajánljuk, hogy a GTIN-t vonalkódként tartsa nyilván. Azonban a **Cikk – GTIN** oldalon is lehetőség van a karbantartására. Az oldal megnyitásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza a **GTIN-kódok** lehetőséget. Vegye figyelembe, hogy a GTIN nyilvántartása nem globális számként történik. Ehelyett megőrzése jogi személyenként történik.
+Azt ajánljuk, hogy a GTIN-t vonalkódként kezelje. Azonban a **Cikk – GTIN** oldalon is lehetőség van a karbantartására. Az oldal megnyitásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza a **GTIN-kódok** lehetőséget. Vegye figyelembe, hogy a GTIN nyilvántartása nem globális számként történik. Ehelyett megőrzése jogi személyenként történik.
 
-A Finance and Operations rendszerben a raktári műveletekben a csomagolási változatok meghatározása adott mértékegységek meghatározásával történik. Például egy cikk lehet darabokban, hatos kötegekben, 18-as tálcákban vagy teljes raklapon tárolva. Ezen csomagolási változatok mindegyikére adott mértékegység kerül meghatározásra. Mivel a GTIN jellemzően egy termék csomagolási egységéhez kapcsolódik, a **Cikk – GTIN** oldalon termékenként és mértékegységenként több GTIN kódot tarthat fenn. Ugyanakkor nem használhatja ugyanazt a GTIN kódot egynél több alkalommal adott jogi személy különböző cikkeihez vagy termékváltozataihoz.
+A Supply Chain Management rendszerben a raktári műveletekben a csomagolási változatok meghatározása adott mértékegységek meghatározásával történik. Például egy cikk lehet darabokban, hatos kötegekben, 18-as tálcákban vagy teljes raklapon tárolva. Ezen csomagolási változatok mindegyikére adott mértékegység kerül meghatározásra. Mivel a GTIN jellemzően egy termék csomagolási egységéhez kapcsolódik, a **Cikk – GTIN** oldalon termékenként és mértékegységenként több GTIN kódot tarthat fenn. Ugyanakkor nem használhatja ugyanazt a GTIN kódot egynél több alkalommal adott jogi személy különböző cikkeihez vagy termékváltozataihoz.
 
 A **GTIN-kódok** karbantartásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza **GTIN** lehetőséget.
 
 ## <a name="external-codes"></a>Külső kódok
 
-A Finance and Operations programban számos entitás számára adható meg külső kód. Például meghatározhat külső kódokat a termékek és kiadott termékek azonosításához. Ezek a külső kódok statisztikai kódok vagy adókódok társítására használhatók a kiadott termékekkel és kiadott termékváltozatokkal. A külső kódok meghatározása jogi személy és a kód típusa alapján történik. Jogi személy, kódtípus és táblahivatkozás szerint egyedinek kell lennie.
+Számos entitáshoz lehet külső kódokat definiálni. Például meghatározhat külső kódokat a termékek és kiadott termékek azonosításához. Ezek a külső kódok statisztikai kódok vagy adókódok társítására használhatók a kiadott termékekkel és kiadott termékváltozatokkal. A külső kódok meghatározása jogi személy és a kód típusa alapján történik. Jogi személy, kódtípus és táblahivatkozás szerint egyedinek kell lennie.
 
 Sajnos nincs olyan szabványos funkció, amely lehetővé teszi a termékek keresését külső kódok szerint.
 
@@ -136,13 +136,13 @@ Sajnos nincs olyan szabványos funkció, amely lehetővé teszi a termékek kere
 
 ### <a name="product-and-item-number-sequences"></a>Termék- és cikkszámsorozatok
 
-A Finance and Operations rendszerben két különböző számsorozat adható meg:
+Kétféle számsorozatot lehet megadni:
 
 - A **Termékszám** számsorozat a globális termékszámhoz
 - A **Cikkszám** számsorozata a cikkszámot jelenti, jogi személyenként
 
 > [!NOTE]
-> A cikkszámot külön azonosítóként csak akkor célszerű használni, ha áttelepít különböző jogi személyeket különböző forrásokból, amelyek különböző számozási rendszereket használtak. Mindig olyan termékazonosítót kell használnia, amely egyedi minden jogi személy között. Ennek megfelelően kell beállítani a **Kézi** lehetőséget **Igen** beállításra a **Cikkszám** számsorozat esetében. Ily módon a cikkszám követni fogja a termékszámot a létrehozás során. Ha a Finance and Operations nem az új termékszámok fő rendszere, állítsa a **Kézi** lehetőséget **Igen** értékre mind a **Cikkszám**, mind a **Termékszám** számsorozatoknál.
+> A cikkszámot külön azonosítóként csak akkor célszerű használni, ha áttelepít különböző jogi személyeket különböző forrásokból, amelyek különböző számozási rendszereket használtak. Mindig olyan termékazonosítót kell használnia, amely egyedi minden jogi személy között. Ennek megfelelően kell beállítani a **Kézi** lehetőséget **Igen** beállításra a **Cikkszám** számsorozat esetében. Ily módon a cikkszám követni fogja a termékszámot a létrehozás során. Ha a Supply Chain Management nem az új termékszámok fő rendszere, állítsa a **Kézi** lehetőséget **Igen** értékre mind a **Cikkszám**, mind a **Termékszám** számsorozatoknál.
 
 Ha a **Kiadott termék V2** entitást használja termékek létrehozásához, több beállítás van hatással arra, hogy hogyan történik a számsorozatok használata a termékszám és a cikkszám létrehozásához:
 

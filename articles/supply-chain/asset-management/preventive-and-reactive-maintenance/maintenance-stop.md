@@ -3,7 +3,7 @@ title: Karbantartás miatti üzemkimaradás
 description: Ez a cikk a karbantartás miatti üzemkimaradás Eszközkezelésben való használatát ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875684"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922183"
 ---
 # <a name="maintenance-downtime"></a>Karbantartás miatti üzemkimaradás
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Ha a karbantartás miatti üzemkimaradás regisztrációjához eszközöket vál
 
 ## <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
-Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradási tevékenységek** > **Minden karbantartás miatti üzemkimaradási tevékenység** elemre az összes karbantartás miatti üzemkimaradás listájának, illetve a tevékenységekhez kapcsolódó információk megtekintéséhez. A részletes nézet megnyitásához kattintson a **Karbantartás miatti üzemkimaradási tevékenységek** oszlopban lévő hivatkozásra.
+Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradási tevékenységek** > **Minden karbantartás miatti üzemkimaradási tevékenység** elemre az összes karbantartás miatti üzemkimaradás listájának, illetve a tevékenységekhez kapcsolódó információk megtekintéséhez. A részletes nézet megnyitásához kattintson a **Karbantartás miatti üzemkimaradási tevékenységek** oszlopban lévő hivatkozásra. A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** listaoldalt szemlélteti.
 
 ![1. ábra](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>karbantartás miatti üzemkimaradás regisztrációjának létrehozása
+## <a name="create-a-maintenance-downtime-activity"></a>Karbantartás miatti üzemkimaradás tevékenység létrehozása
 
 1. Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradási tevékenységek** > **Minden karbantartás miatti üzemkimaradási tevékenység** vagy **Aktív karbantartás miatti üzemkimaradási tevékenységek** elemre.
 
@@ -61,9 +60,11 @@ Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemki
 
 5. A **Karbantartás miatti üzemkimaradási tevékenységek eszközei** gyorslapon kattintson a **Sor hozzáadása**elemre, ha a tárgyi eszközt szeretne hozzáadni (egyesével) a karbantartás miatti üzemkimaradási tevékenységhez.
 
-6. Ha minden eszközt felvett, kattintson a **Mentés** gombra.
+6. Ha minden eszközt felvett, kattintson a **Mentés** gombra. A lenti ábra a kapcsolódó eszközökkel és karbantartási feladatokkal kapcsolatos karbantartási állásidőt mutatja be.
 
 7. A kiválasztott eszközökhöz kapcsolódó munkarendelési karbantartási feladatok és a nyitott karbantartási ütemezési sorok a **Munkarendelés eredményként kapott karbantartási feladatai** és a **Karbantartási ütemezés sorai** gyorslapon láthatók. Az **Általános** gyorslap > **Munkarendelések** csoport > **Karbantartás előrejelzett időpontjai** mezőben és az **Általános** gyorslap > **Karbantartási ütemezés** csoport > **Karbantartás előrejelzett időpontjai** mezőben látható a munkarendelés karbantartási feladataihoz és a karbantartási ütemezés soraihoz előrejelzett órák száma.
+
+A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** részletes nézetet szemlélteti.
 
 ![2. ábra](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemki
 
 9. A **Kapacitásterhelés kiszámítása** párbeszédpanelen szükség esetén módosítsa a kezdő és a záró időpontot, és adja meg, hogy szeretné-e szerepeltetni a számításban a munkarendeléseket és a karbantartási ütemezéseket. A **Szint** mezőben adhatja meg, hogy a kapacitásterhelési számítás milyen részletesen jelenítse meg a munkavégzési helyszíneket. Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínekhez, akkor a munkavégzési helyszín karbantartás miatti üzemkimaradási tevékenységénél megadott összes eszköze a legfelső szinten jelenik meg, így a sorban szereplő óraszámok hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely a kapacitásterhelés minden sorát megjeleníti az összes olyan munkavégzési helyszínnél, amelyhez a sor kapcsolódik.
 
-10. Kattintson az **OK** gombra az számítás indításához. A **Kapacitásterhelés** áttekintésében a teljes óraszám jelenik meg. A **Kapacitásterhelés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett órák felosztásáról.
+10. Kattintson az **OK** gombra az számítás indításához. A **Kapacitásterhelés** áttekintésében a teljes óraszám jelenik meg. A **Kapacitásterhelés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett órák felosztásáról. A lenti ábra a **Kapacitásterhelés** számításának eredményeit mutatja.
 
 ![3. ábra](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemki
 
 15. A **Cikkelőrejelzés kiszámítása** párbeszédpanelen szükség esetén módosítsa a kezdő és a záró időpontot, és adja meg, hogy szeretné-e szerepeltetni a számításban a munkarendeléseket és a karbantartási ütemezéseket. A **Szint** mezőben adhatja meg, hogy a kapacitásterhelési számítás milyen részletesen jelenítse meg a munkavégzési helyszíneket. Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínekhez, akkor a munkavégzési helyszín karbantartás miatti üzemkimaradási tevékenységénél megadott összes eszköze a legfelső szinten jelenik meg, így a sorban szereplő óraszámok hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely a kapacitásterhelés minden sorát megjeleníti az összes olyan munkavégzési helyszínnél, amelyhez a sor kapcsolódik.
 
-16. Kattintson az **OK** gombra az számítás indításához. A cikkelőrejelzések teljes száma a **Cikkelőrejelzés** áttekintésében jelenik meg. A **Cikkelőrejelzés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett cikkek felosztásáról.
+16. Kattintson az **OK** gombra az számítás indításához. A cikkelőrejelzések teljes száma a **Cikkelőrejelzés** áttekintésében jelenik meg. A **Cikkelőrejelzés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett cikkek felosztásáról.A lenti ábra a karbantartás **ütemezés költség** számításának eredményeit mutatja.
 
 ![4. ábra](media/22-preventive-maintenance.png)
 

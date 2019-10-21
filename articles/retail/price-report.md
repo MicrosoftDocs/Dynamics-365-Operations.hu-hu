@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564947"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025195"
 ---
 # <a name="retail-price-reports"></a>Kiskereskedelmi árjelentések
 
 [!include [banner](includes/banner.md)]
 
 
-Annak érdekében, hogy versenyképes árakat nyújtsanak az ügyfeleknek, a kiskereskedők gyakran módosítják termékeik árait. Üzletvezetők szeretnének könnyen hozzáférni a legutóbbi vagy közelgő árváltozásokhoz hogy azokhoz tervezni lehessen a szükséges erőforrások, amelyek szükségesek a polccímkék módosításához. A Dynamics 365 for Retail 10.0 kiadásában az üzletvezető megnyithatja az **Ár** jelentést a **Minden kiskereskedelmi egység \> Tárolás \> Árjelentés** helyen és áruházhoz társított termékek frissített árait megtekintheti. 
+Annak érdekében, hogy versenyképes árakat nyújtsanak az ügyfeleknek, a kiskereskedők gyakran módosítják termékeik árait. Üzletvezetők szeretnének könnyen hozzáférni a legutóbbi vagy közelgő árváltozásokhoz hogy azokhoz tervezni lehessen a szükséges erőforrások, amelyek szükségesek a polccímkék módosításához. A Retail 10.0 kiadásában az üzletvezető megnyithatja az **Ár** jelentést a **Minden kiskereskedelmi egység \> Tárolás \> Árjelentés** helyen és áruházhoz társított termékek frissített árait megtekintheti. 
 
 Az árjelentés engedélyezéséhez az **Árjelentés engedélyezése Kiskereskedelmi áruházhoz** paramétert be kell kapcsolni. Ezt a paramétert a **Kiskereskedelmi paraméterek \> Engedmények \> Vegyes** fülön található. Az **Árjelentés** lap egy különböző konfigurációkat tartalmaz párbeszédpanelt jelenít meg. A rendelkezésre álló onfigurációk az alábbiakban láthatók.
 

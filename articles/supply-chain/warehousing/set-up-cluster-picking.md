@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559000"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249750"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ Ez a témakör ismerteti, hogyan lehet engedélyezni, hogy azok tárolhat cikkek
 
 Miután munkarendelések ki vannak adva a raktárba, a dolgozó használható mobileszköz rendelje hozzá a rendelések a fürthöz. A fürt szervezi a dolgozó a kitárolási munka. A Munkarendelés hozzá van rendelve egy fürtből, amikor a dolgozó kell használni a fürt kitárolási a kitárolási munka a rendeléshez. A dolgozó egyéb kitárolási módokkal nem használható. A Munkarendelés van rendelve egy fürt tévedésből, ha a dolgozó kell a fürt felbontása és ezután hozza létre újból.
 
-Szükség esetén dolgozó lehet átadni a fürt egy másik dolgozó. Ekkor a fürt állapotát megfelelt. A dolgozó használja a mobileszköz annak jelzésére, hogy a kitárolási és betárolási csökkenés munka befejezése, ha a szállítmány vagy rakomány meg kell erősíteni őket a Dynamics 365 for Finance and Operations ügyfél.
+Szükség esetén dolgozó lehet átadni a fürt egy másik dolgozó. Ekkor a fürt állapotát megfelelt. Ha a dolgozó használja a mobileszköz annak jelzésére, hogy a kitárolási és betárolási munka befejeződött, akkor a kliensben meg kell erősíteni a szállítmányt vagy rakományt.
 
 ## <a name="set-up-cluster-picking"></a>Fürtkitárolás beállítása
 

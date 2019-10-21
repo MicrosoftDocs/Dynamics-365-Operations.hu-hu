@@ -3,7 +3,7 @@ title: Értékesítési jutalékok szabályainak beállítása
 description: Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16b0525c0fd133b2f41013e9b7daf47466e15ffe
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
+ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833930"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "1995213"
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
 
@@ -31,70 +31,68 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 
 
 ## <a name="set-up-commission-groups-and-commission-rates"></a>Jutalékcsoportok és jutalékarányok beállítása
-1. Ugrás a Értékesítés és marketing > Jutalékok > Vevői csoportok jutalék lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Érték beírása a Csoport mezőbe.
-4. Írjon be egy értéket a Név mezőbe.
-5. Kattintson a Mentés gombra.
+1. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Vevői csoportok jutalékhoz**.
+2. Válassza az **Új** lehetőséget.
+3. A **Csoport** mezőben adjon meg egy értéket.
+4. Írjon be egy értéket a **Név** mezőbe.
+5. Válassza a **Mentés** lehetőséget.
 6. Zárja be a lapot.
-7. Ugrás a Értékesítés és marketing > Jutalékok > Cikk csoportok lehetőségre.
-8. Kattintson az Új lehetőségre.
-9. Érték beírása a Csoport mezőbe.
-10. Írjon be egy értéket a Név mezőbe.
-11. Zárja be a lapot.
-12. Ugrás a Értékesítés és marketing> Jutalékok > Érékesítési csoportok lehetőségre.
-    * A Jutalék értékesítési csoportja a jutalékra jogosult üzletkötő beosztású alkalmazottakat határozza meg, ha a megfelelő értékesítési csoporthoz társított vevő bizonyos cikkeket vásárol.  
-    * Az USMF bemutató vállalat adatai között szerepel egy „Üzletkötők Egyesül Államok” értékesítési csoport.  
-13. A Művelet panelen kattintson az Általános elemre.
-14. Kattintson az üzletkötő nevére.
-    * Az üzletkötő lap megjeleníti azon vállalat értékesítési személyek listáját, akik egy adott jutalékcsoporttal társítva vannak. Ugyanahhoz a csoporthoz több értékesítő jutalékot rendelhet hozzá, és meghatározhatja a teljes jutalékdíj megfelelő részesedését százalékban kifejezve. Az összes alkalmazott közötti jutalékfelosztás nem haladhatja meg a 100 értéket.  
-15. A listában jelölje meg a kiválasztott sort.
-16. Kattintson a Szerkesztés lehetőségre.
-17. Állítsa a jutalékfelosztásokat „50”-re.
-18. Kattintson az Új lehetőségre.
-19. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-20. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.
-21. Kattintson a Kiválasztás lehetőségre.
-22. Állítsa a jutalékfelosztásokat „50”-re.
-23. Kattintson a Mentés gombra.
-24. Ugrás a Értékesítés és marketing > Jutalékok > Jutalékszámítás lehetőségre.
-    * A Jutalékszámítás oldalon meghatározhatja az alkalmazott által az értékesítési tranzakciókért kapott jutalékarányt, ha az tartalmazza a vevő és a termék előre beállított kombinációját. A jutalékarány beállításának részeként meg kell adnia a jutalékszámítás alapját, és hogy ez engedménnyel együtt, vagy engedmény nélkül legyen-e érvényes. Ha meg szeretné határozni, hogy mikor aktív a jutalékarány, megadhat érvényességi időtartamot.  
-25. Kattintson az Új lehetőségre.
-26. Válassza a „Csoport” lehetőséget a Cikk mezőben:
-27. A Cikk-viszony mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-28. A listában keresse meg és válassza ki a korábban létrehozott csoportot.
-29. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-30. A Vevőkód mezőben válassza ki a „Csoport” lehetőséget.
-31. A(z) Vevőkapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+7. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Cikkcsoportok**.
+8. Válassza az **Új** lehetőséget.
+9. A **Csoport** mezőben adjon meg egy értéket.
+10. Írjon be egy értéket a **Név** mezőbe.
+11. Válassza a **Mentés** lehetőséget.
+12. Zárja be a lapot.
+13. Ugrás a **Értékesítés és marketing> Jutalékok > Érékesítési csoportok** lehetőségre.
+    - A Jutalék értékesítési csoportja a jutalékra jogosult üzletkötő beosztású alkalmazottakat határozza meg, ha a megfelelő értékesítési csoporthoz társított vevő bizonyos cikkeket vásárol.  
+    - Az USMF bemutató vállalat adatai között szerepel egy „Üzletkötők Egyesül Államok” értékesítési csoport.  
+14. A **Műveleti ablaktáblán** válassza ki az **Általános** elemet.
+15. Kattintson az **Üzletkötő** elemre. Az üzletkötő lap megjeleníti azon vállalat értékesítési személyek listáját, akik egy adott jutalékcsoporttal társítva vannak. Ugyanahhoz a csoporthoz több értékesítő jutalékot rendelhet hozzá, és meghatározhatja a teljes jutalékdíj megfelelő részesedését százalékban kifejezve. Az összes alkalmazott közötti jutalékfelosztás nem haladhatja meg a 100 értéket. 
+16. A listában jelölje meg a kiválasztott sort.
+17. Válassza ki a **Szerkesztés** opciót.
+18. Állítsa a **Jutalékfelosztás** értékét „50”-re.
+19. Kattintson az **Új** elemre.
+20. A **Név** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+21. Rekordok kereséséhez használja a **Gyorsszűrőt**. Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.
+22. Kattintson a **Kiválasztás** lehetőségre.
+23. Állítsa a **Jutalékfelosztás** értékét „50”-re.
+24. Kattintson a **Mentés** gombra.
+25. Lépjen az **Értékesítés és marketing > Jutalékok > Jutalékszámítás** lehetőségre. A **Jutalékszámítás** oldalon meghatározhatja az alkalmazott által az értékesítési tranzakciókért kapott jutalékarányt, ha az tartalmazza a vevő és a termék előre beállított kombinációját. A jutalékarány beállításának részeként meg kell adnia a jutalékszámítás alapját, és hogy ez engedménnyel együtt, vagy engedmény nélkül legyen-e érvényes. Ha meg szeretné határozni, hogy mikor aktív a jutalékarány, megadhat érvényességi időtartamot.  
+26. Kattintson az **Új** elemre.
+27. Válassza ki a „Csoport” lehetőséget a **Cikk kódja** mezőben.
+28. A **Cikk-viszony** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+29. A listában keresse meg és válassza ki a korábban létrehozott csoportot.
+30. A **Vevőkód** mezőben válassza ki a „Csoport” lehetőséget.
+31. A **Vevőkapcsolat** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 32. A listában válassza ki a korábban beállított csoportot.
-33. Az Üzletkötők kapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+33. Az **Üzletkötők kapcsolata** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 34. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A „Sorkedvezmény előtt” beállítás megtartása.  
-    * A „Bevétel” beállítás megtartása a jutalékszámítás alapjául.    
+    - A „Sorkedvezmény előtt” beállítás megtartása.  
+    - A „Bevétel” beállítás megtartása a jutalékszámítás alapjául.    
 35. Adjon meg egy számot a Jutalék (százalék) mezőben.
-36. Kattintson a Mentés gombra.
+36. Kattintson a **Mentés** gombra.
 
 ## <a name="setting-up-commission-posting"></a>Jutalékfeladás beállítása
-1. Ugrás az Értékesítés és marketing > Jutalékok > Jutalékfeladás lehetőségre.
-    * A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a Főkönyv megfelelő számláira. Ezt a Jutalék feladása lapon lehet intézni. Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el. A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott. Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.  
+1. Lépjen a következőhöz: **Navigációs ablaktábla > Értékesítés és marketing > Jutalékok > Jutalékfeladás**. A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a **Főkönyv** megfelelő számláira. Ezt a **Jutalékfeladás** lapon lehet intézni. Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el. A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott. Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.  
 2. Zárja be a lapot.
 
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Jutalékcsoport vevőhöz és termékhez rendelése.
-1. Lépjen az Értékesítés és marketing > Vevők > Össze vevő menüpontba.
+1. Lépjen a **Navigációs panel > Modulok > Értékesítés és marketing > Ügyfelek > Összes ügyfél** menüpontba.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Kattintson a Szerkesztés lehetőségre.
-5. Bontsa ki az Értékesítési rendelés alapértelmezési szakaszt.
-6. A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+4. Kattintson a **Szerkesztés** lehetőségre.
+5. Bontsa ki az **Értékesítési rendelés alapértelmezései** szakaszt.
+6. A **Jutalékcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 7. A listában válassza ki a korábban létrehozott csoportot.
-8. Az Értékesítési csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+8. Az **Értékesítési csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 9. Keresse meg és jelölje ki a kívánt rekordot a listán.
-10. Kattintson a Mentés gombra.
-11. Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.
-12. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.
+10. Kattintson a **Mentés** gombra.
+11. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
+12. Rekordok kereséséhez használja a **Szűrőt**. Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.
 13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. Kattintson a Szerkesztés lehetőségre.
-15. Bontsa ki a Értékesítés szakaszt.
-16. A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+14. Kattintson a **Szerkesztés** lehetőségre.
+15. Bontsa ki a **Értékesítés** szakaszt.
+16. A **Jutalékcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 17. A listában válassza ki a korábban létrehozott értékesítési csoportot.
+18. Válassza a **Mentés** lehetőséget.
 

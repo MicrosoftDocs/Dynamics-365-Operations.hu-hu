@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518167"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008373"
 ---
 # <a name="formalize-business-processes"></a>Üzleti folyamatok formalizálása
 
@@ -43,7 +43,7 @@ Minden üzleti folyamathoz meghatározható egy folyamattulajdonos. A folyamat t
 A folyamat tulajdonosa nem hozhat létre új üzleti folyamatokat, illetve az üzleti folyamat sablonokat, és nem törölhet aktív üzleti folyamatokat, illetve üzleti folyamat sablonokat.
 
 ## <a name="tasks"></a>Feladatok
-Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Dynamics 365 for Talent[?] megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben az esetben egy beállítás van megadva a **Tevékenységkapcsolat** mezőben. Egyéb feladatok weboldalon lévő oldalak áttekintését vagy kitöltését foglalhatják magukban. Ebben az esetben az **URL-cím** van kiválasztva a **Tevékenységkapcsolat** mezőben, és ezután megadható az URL-cím. A belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
+Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Dynamics 365 Talent megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben az esetben egy beállítás van megadva a **Tevékenységkapcsolat** mezőben. Egyéb feladatok weboldalon lévő oldalak áttekintését vagy kitöltését foglalhatják magukban. Ebben az esetben az **URL-cím** van kiválasztva a **Tevékenységkapcsolat** mezőben, és ezután megadható az URL-cím. A belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
 
 Feladatok is hozzárendelhetők egy adott dolgozóhoz vagy pozícióhoz. Például a kompenzációkért és juttatásokért felelős vezető minden esetben a személy, aki a biztosítási díjak felülvizsgálatát végrehajtja. Ezért a feladat létrehozásakor válassza ki a **pozíciót** a **hozzárendelés-típus** mezőben, majd válassza a **Kompenzációkért és juttatásokért felelős vezetőt** a **Pozíciók** listáról. Az üzleti folyamat megkezdésekor a **Kompenzációkért és juttatásokért felelős vezető** pozícióban levő dolgozó kapja a feladat. Egy adott dolgozóhoz hozzárendelhető egy feladat, ehhez válassza ki a **dolgozót** a **hozzárendelés-típus** mezőben, majd válassza ki a megfelelő személyt.
 

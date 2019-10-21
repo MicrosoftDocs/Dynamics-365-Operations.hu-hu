@@ -1,6 +1,6 @@
 ---
 title: A kiskereskedelmi csatornák definiálása és karbantartása
-description: Ez a témakör a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Microsoft Dynamics 365 for Retail rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
+description: Ez a témakör a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Dynamics 365 Retail rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560349"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019370"
 ---
 # <a name="define-and-maintain-retail-channels"></a>A kiskereskedelmi csatornák definiálása és karbantartása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Microsoft Dynamics 365 for Retail rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
+Ez a témakör a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Dynamics 365 Retail rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
 
-A Dynamics 365 for Retail számos kiskereskedelmi csatornát támogat, például online áruházakat, hívásközpontokat, és fizikailag létező üzleteket. A tényleges, "tégla" üzletet kiskereskedelmi áruháznak neveznek. Az üzletek saját fizetési módokkal, árcsoportokkal, (POS) pénztárgépekkel, bevételi és kiadási számlákkal, valamint munkatársakkal rendelkezhetnek. Az üzlethez kapcsolódó összes elemet be kell állítania, létrehozás előtt. Miután létrehozta a kiskereskedelmi üzletet, rendelje hozzá az üzlet által kezelendő termékeket. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az üzlethez. Végül helyezze el az új üzletet a szervezeti hierarchiában.
+A Retail számos kiskereskedelmi csatornát támogat, például online áruházakat, hívásközpontokat és fizikailag létező üzleteket. A tényleges, "tégla" üzletet kiskereskedelmi áruháznak neveznek. Az üzletek saját fizetési módokkal, árcsoportokkal, (POS) pénztárgépekkel, bevételi és kiadási számlákkal, valamint munkatársakkal rendelkezhetnek. Az üzlethez kapcsolódó összes elemet be kell állítania, létrehozás előtt. Miután létrehozta a kiskereskedelmi üzletet, rendelje hozzá az üzlet által kezelendő termékeket. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az üzlethez. Végül helyezze el az új üzletet a szervezeti hierarchiában.
 
 ## <a name="setting-up-retail-stores"></a>Kiskereskedelmi áruházak beállításai
 
-Kiskereskedelmi üzlet Dynamics 365 for Retail rendszerben való beállítása előtt el kell végeznie néhány előfeltételnek számító feladatot. Ezután létrehozhatja a kiskereskedelmi üzletet, és megadhatja a részleteket.
+Kiskereskedelmi üzlet a Retail rendszerben való beállítása előtt el kell végeznie néhány előfeltételnek számító feladatot. Ezután létrehozhatja a kiskereskedelmi üzletet, és megadhatja a részleteket.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -55,7 +55,7 @@ Kiskereskedelmi üzlet beállítása előtt el kell végeznie az alábbi feladat
 11. Munkatársak beállításai.
 
     > [!NOTE]
-    > Megfelelő engedélyeket kell társítania a dolgozókhoz, hogy bejelentkezhessenek és feladatokat hajthassanak végre a Dynamics 365 for Retail használatával a retail POS rendszerben.
+    > Megfelelő engedélyeket kell társítania a dolgozókhoz, hogy bejelentkezhessenek és feladatokat hajthassanak végre a Retail POS használatával.
 
 12. Konfigurálja a kiskereskedelmi POS pénztárban az üzlethez hozzárendelendő profilokat. Ez a feladat számos egyéb feladatot foglal magában, mint például a pénztárgépek és jegyzékek, offline profilok és bevételezési formátumok megadása és azok paramétereinek beállítása.
 

@@ -1,6 +1,6 @@
 ---
 title: URl megnyitása a pénztárban
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
+description: Ez a témakör áttekintést nyújt a Dynamics 365 Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: AamirAllaq
 manager: AnnBe
 ms.date: 01/28/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 729caf9fad9097a3ecbf7d546c8f8a96f67aec92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 406dad1709dc837f7f87817241d7062f6b08d8fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845681"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025886"
 ---
 # <a name="open-url-in-pos"></a>URL megnyitása a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja, hogyan konfigurálható egy gomb a Retail pénztárban (POS) egy URL megnyitására. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. Ez a funkció a Dynamics 365 for Finance and Operations 8.1.3 vagy újabb kiadásában érhető el (build 8.1.227.10014). 
+Ez a témakör leírja, hogyan konfigurálható egy gomb a Retail pénztárban (POS) egy URL megnyitására. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. 
 
 Ez a funkció lehetővé teszi a pénztárban található gombok konfigurálását a gombrácstervező segítségével egy URL megnyitására. Jelenleg ez az alábbi konfigurációkban támogatott:
 

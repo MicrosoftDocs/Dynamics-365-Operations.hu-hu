@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536549"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251546"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -163,7 +163,7 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 </tr>
 <tr>
 <td>Mozgás sablon szerint</td>
-<td>Cikkek áthelyezése egyik helyről egy másikra félig automatikus módon. A dolgozó kiválasztja a forráshelyet, és a Finance and Operations a helyutasítás segítségével meghatározza a cikkek célhelyét.</td>
+<td>Cikkek áthelyezése egyik helyről egy másikra félig automatikus módon. A dolgozó kiválasztja a forráshelyet, és a rendszer a helyutasítás segítségével meghatározza a cikkek célhelyét.</td>
 </tr>
 <tr>
 <td>Raktári átmozgatás</td>
@@ -212,7 +212,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="even">
 <td>Rendszer által irányított</td>
-<td>Microsoft Dynamics 365 for Finance and Operations szabályozza a munka típusát a dolgozóhoz társítva, és a megrendelést, amelyen a dolgozó munkát végez. Amikor ezt a beállítást választja, kattintson <strong>Rendszer által irányított munka</strong> elemre a műveletpanelen a <strong>Rendszer által meghatározott rendezési sorrend</strong> oldal megnyitásához, amelyen beállíthatja rendezési feltételeket a munkához. A rendezési feltételek azt szabályozzák, hogy a dolgozó milyen sorrendben hajtja végre a munkát. Annyi feltételt adhat hozzá, amennyire szüksége van.</td>
+<td>A Supply Chain Management szabályozza a munka típusát a dolgozóhoz társítva, és a megrendelést, amelyen a dolgozó munkát végez. Amikor ezt a beállítást választja, kattintson <strong>Rendszer által irányított munka</strong> elemre a műveletpanelen a <strong>Rendszer által meghatározott rendezési sorrend</strong> oldal megnyitásához, amelyen beállíthatja rendezési feltételeket a munkához. A rendezési feltételek azt szabályozzák, hogy a dolgozó milyen sorrendben hajtja végre a munkát. Annyi feltételt adhat hozzá, amennyire szüksége van.</td>
 </tr>
 <tr class="odd">
 <td>Felhasználó által irányított</td>
@@ -224,7 +224,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="odd">
 <td>Rendszercsoportosítás</td>
-<td>A Microsoft Dynamics 365 for Finance and Operations csoportok egy megadott mező dolgozójának munkája alapján működnek. Például a kitárolási munka csoportosított, ha egy dolgozó beolvas egy szállítmányazonosítót, terhelésazonosítót vagy bármely értéket, amely minden munkaegységhez csatolható. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
+<td>A Supply Chain Management csoportok egy megadott mező dolgozójának munkája alapján működnek. Például a kitárolási munka csoportosított, ha egy dolgozó beolvas egy szállítmányazonosítót, terhelésazonosítót vagy bármely értéket, amely minden munkaegységhez csatolható. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
 <ul>
 <li><strong>Rendszercsoportosítás mezője</strong> – Válassza ki azt a mezőt, amelyet a dolgozó beolvas a munka csoportosításához.</li>
 <li><strong>Csoportosító rendszercímke</strong> – Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be a munka csoportosításához.</li>
@@ -245,7 +245,7 @@ Ez például akkor hasznos, ha például több raklap van előkészítve egy rak
 </tr>
 <tr class="even">
 <td>Ciklikus leltározás csoportosítása</td>
-<td>A dolgozó kiválaszt egy zónát, munkagyűjtőt vagy helyet, és a Microsoft Dynamics 365 for Finance and Operations hozzárendeli a munkát a kiválasztás alapján. Ha ezt a lehetőséget választja, akkor kattinthat a <strong>Ciklikus leltározás</strong> elemre a Műveleti ablakban további adatok megjelenítésének beállításához, és megadhatja, hogy a dolgozónak hányszor kell megismételnie a leltárt, ha eltérés van.</td>
+<td>A dolgozó kiválaszt egy zónát, munkagyűjtőt vagy helyet, és a Supply Chain Management hozzárendeli a munkát a kiválasztás alapján. Ha ezt a lehetőséget választja, akkor kattinthat a <strong>Ciklikus leltározás</strong> elemre a Műveleti ablakban további adatok megjelenítésének beállításához, és megadhatja, hogy a dolgozónak hányszor kell megismételnie a leltárt, ha eltérés van.</td>
 </tr>
  <tr class="odd">
 <td>Szállítási berakodás</td>
@@ -333,7 +333,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="odd">
 <td>Csoportos betárolás</td>
-<td>Jelölje be ezt a lehetőséget, ha csoportosítani szeretné a betárolási munkát. Ez akkor érhető el, ha a munka csoportosítva vagy a dolgozó, vagy a Microsoft Dynamics 365 for Finance and Operations szerint volt csoportosítva. Amikor a dolgozó befejezte az összes kitárolási munkát a csoportban, a betárolási munka létrejön ugyanabban a csoportban.</td>
+<td>Jelölje be ezt a lehetőséget, ha csoportosítani szeretné a betárolási munkát. Ez a lehetőség akkor érhető el, ha a munka vagy a dolgozó, vagy a Supply Chain Management szerint volt csoportosítva. Ha a dolgozó befejezett minden kitárolási munkát a csoportban, létre lesz hozva egy betárolási munka ugyanahhoz a csoporthoz.</td>
 </tr>
 <tr class="even">
 <td>Készlet-kiigazítás típusai </td>
@@ -366,11 +366,11 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="even">
 <td>Csoportosító rendszermező</td>
-<td>Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a Microsoft Dynamics 365 for Finance and Operations a dolgozó számára a kitárolási munkát csoportosítani. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Csoportosító rendszercímke</strong> mezőben is meg kell adnia egy szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be.</td>
+<td>Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a Supply Chain Management a dolgozók számára a kitárolási munkát csoportosítani. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Csoportosító rendszercímke</strong> mezőben is meg kell adnia egy szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be.</td>
 </tr>
 <tr class="odd">
 <td>Csoportosító rendszercímke</td>
-<td>Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be, ha a kitárolási munkát a Microsoft Dynamics 365 for Finance and Operations csoportosítja. Például ha a <strong>Szállítmányazonosító</strong> mezőt használja egy szállítmány kitárolási munkájának csoportosítására, megadhatja a <strong>Szállítási azonosító</strong> értékét a mezőben. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Rendszercsoportosítás mezője</strong> mezőben ki kell választania a mezőt is, amely szerint a csoportosítás történik.</td>
+<td>Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be, ha a kitárolási munkát a Supply Chain Management csoportosítja. Például ha a <strong>Szállítmányazonosító</strong> mezőt használja egy szállítmány kitárolási munkájának csoportosítására, megadhatja a <strong>Szállítási azonosító</strong> értékét a mezőben. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Rendszercsoportosítás mezője</strong> mezőben ki kell választania a mezőt is, amely szerint a csoportosítás történik.</td>
 </tr>
 <tr class="even">
 <td>Alapértelmezett adatok használata</td>
@@ -386,13 +386,13 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="odd">
 <td>Munkasablonkód</td>
-<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem jelöl be munkasablont, a Microsoft Dynamics 365 for Finance and Operations hozzárendel egy sablont a lekérdezési feltételek alapján. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
+<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem jelöl be munkasablont, a Supply Chain Management hozzárendel egy sablont a lekérdezési feltételek alapján. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>A termék, a hely vagy a mennyiség megerősítésének megkövetelése a dolgozóktól a cikkek kitárolásakor
-Beállíthatja a munkák visszaigazolását úgy, hogy azok megköveteljék a dolgozóktól egy mobileszköz használatát a hely vagy a mennyiség regisztrációjához a raktárban való munkavégzés közben. A Munkamegerősítés segíti annak biztosítását, hogy a dolgozó a megfelelő helyen legyen, és a megfelelő cikkmennyiséget kezelje. Engedélyezheti a Microsoft Dynamics 365 for Finance and Operations számára dolgozó regisztrációjának automatikus megerősítését is. Ha engedélyezi az automatikus megerősítést, nem tudja a hely vagy a mennyiség visszaigazolását is igényelni. A Munkamegerősítések a termékekre és a termékváltozatokra is vonatkoznak. Valamint lehetősége van a visszaigazolások regisztrálására vonalkód beolvasásával is. Termékek és a termékváltozatok megerősítéséhez meg kell adnia egy azonosítót a termékhez vagy a termékváltozathoz. Ez az azonosító lehet a termék azonosítója, a keresési termékazonosító, a külső azonosító, a GTIN vagy a vonalkód. Miután megadta az azonosítót vagy beolvasta a vonalkódot, a mobileszközön a termékváltozat dimenziói megjelennek. 
+Beállíthatja a munkák visszaigazolását úgy, hogy azok megköveteljék a dolgozóktól egy mobileszköz használatát a hely vagy a mennyiség regisztrációjához a raktárban való munkavégzés közben. A Munkamegerősítés segíti annak biztosítását, hogy a dolgozó a megfelelő helyen legyen, és a megfelelő cikkmennyiséget kezelje. Engedélyezheti a Supply Chain Management számára dolgozó regisztrációjának automatikus megerősítését is. Ha engedélyezi az automatikus megerősítést, nem tudja a hely vagy a mennyiség visszaigazolását is igényelni. A Munkamegerősítések a termékekre és a termékváltozatokra is vonatkoznak. Valamint lehetősége van a visszaigazolások regisztrálására vonalkód beolvasásával is. Termékek és a termékváltozatok megerősítéséhez meg kell adnia egy azonosítót a termékhez vagy a termékváltozathoz. Ez az azonosító lehet a termék azonosítója, a keresési termékazonosító, a külső azonosító, a GTIN vagy a vonalkód. Miután megadta az azonosítót vagy beolvasta a vonalkódot, a mobileszközön a termékváltozat dimenziói megjelennek. 
 
 A következő táblázat leírja a különféle munkatípusokat, amelyekkel használhatja a munka-visszaigazolásokat.
 

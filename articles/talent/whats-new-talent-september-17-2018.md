@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. szeptember 17.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Core HR új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518204"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026033"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. szeptember 17.)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ Ez a témakör a Core HR aktuális verziójában található új vagy módosíto
 
 Új elhatárolási típus lett hozzáadva a Távollétcsomagokhoz. Az elhatárolási ütemezés mostantól alapulhat a szolgáltatás hónapjain vagy a ledolgozott órákon. További tájékoztatásért lásd a [Szabadság elhatárolása a ledolgozott órák alapján](leave-accrue-hours-worked.md) című cikket.
 
-## <a name="platform-update-18"></a>18-es platformfrissítés
+## <a name="platform-update-18-for-finance-and-operations"></a>Platform update 18 a Finance and Operations szolgáltatáshoz
 
-A 18-as platformfrissítés a Talent kiadásának részévé vált. 
+A Finance and Operations 18-as platformfrissítése a Talent kiadásának részévé vált. 
 
 -   A kötelező és egyéb mezők személyre szabással elrejthetők. Lehetővé teszi a felhasználó számára, hogy egyszerűsített élményt hozzon létre, ahol az üzleti logika által alapértelmezett kötelező mezők nem jelennek meg. A rejtett kötelező mezők ideiglenesen szintén láthatók, amennyiben üresek egy mentés megkísérlése során.
 
--   A 18-as platformfrissítéstől kezdődően a Talent webes ügyfele a Microsoft Fluent Design elemeihez igazítja a vizuális elemeket.
+-   A Finance and Operations 18-as platformfrissítésétől kezdődően a Talent webes kliens a Microsoft Fluent Design elemeihez igazítja a vizuális elemeket.
 
     -   Amikor a mezők „olvasási módban” vannak, egyszerűen kiválaszthatja a szerkesztés beállítást a mezőkben az űrlap szerkesztésre való váltásához.
 

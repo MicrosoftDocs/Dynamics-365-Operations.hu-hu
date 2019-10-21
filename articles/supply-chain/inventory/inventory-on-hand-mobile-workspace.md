@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 68b285ba78a9bd654e7bfcfe8d4c6b0207346eab
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845594"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249517"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Aktuális készlet mobil munkaterület
 
@@ -31,7 +31,7 @@ ms.locfileid: "1845594"
 
 Ez a témakör az **Aktuális készlet** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol tájékozódhat a fenntartott és a rendelkezésre álló készletről.
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
+A mobil munkaterületet a Finance and Operations mobilalkalmazásban való használatra tervezték.
 
 ## <a name="overview"></a>Áttekintés
 Általában a cégek készleténél több szállításra és bevételezésre kerül sor mindennap. Ezek a mozgások folyamatosan módosítják az aktuális készlet állapotát. Az **Aktuális készlet** mobil munkaterület segítségével átláthatja a több vállalatot érintő aktuális készlet állapotát, így tetszés szerinti a mobileszközön a legfrissebb adatok alapján tájékozódhat a készletadatokról. Függetlenül attól, hogy a raktárban, beszerzésnél, értékesítésben, gyártásban vagy a vezetőségben dolgozik-e, vagy más szerepkörrel rendelkezik, az aktuális készletadatokat bárhol és bármikor elérheti. 
@@ -58,11 +58,11 @@ A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Aktuális készlet** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-finance-and-operations"></a>Előfeltételek a Finance and Operations használata esetén 
+Amennyiben szervezete telepítette a Supply Chain Management rendszert, a rendszergazdának közzé kell tennie az **Aktuális készlet** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations1611-es verzió és platform update 3 vagy újabb használatakor
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Előfeltételek a Platform update 3 vagy újabb használatakor 
+Amennyiben szervezete telepítette a 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
-Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

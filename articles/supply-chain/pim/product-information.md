@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563528"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249471"
 ---
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
@@ -57,17 +57,17 @@ A terméket elsősorban a termékszáma, a neve és a leírása határozza meg. 
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Termékadatok elosztása, exportálása és importálása
 
-A termékdefiníció a Microsoft Dynamics 365 for Finance and Operations rendszerben hozható létre. Importálható a termék életciklus-kezelési (PLM), a termékadatok kezelési (PDM) vagy a termékinformációk kezelési (PIM) rendszereiből. Ha a Finance and Operations több példánya fut párhuzamosan, általában egy példány szolgál a többi példány termékadatainak alapjául. Ezt a megközelítést támogatja nagy számú adatkészlet, amely lehetővé teszi a termékdefiníciós adatok exportálását és importálását egyik példányból a másikba.
+A termékdefiníció a Supply Chain Management rendszerben hozható létre. Importálható a termék életciklus-kezelési (PLM), a termékadatok kezelési (PDM) vagy a termékinformációk kezelési (PIM) rendszereiből. Ha a Supply Chain Management több példánya fut párhuzamosan, általában egy példány szolgál a többi példány termékadatainak alapjául. Ezt a megközelítést támogatja nagy számú adatkészlet, amely lehetővé teszi a termékdefiníciós adatok exportálását és importálását egyik példányból a másikba.
 
-A termékadatok sok példányban történő elosztásának támogatásához a Finance and Operations rendszer lehetővé teszi a Common Data Service használatát. A termékdefiníciók exportálhatók a Finance and Operations egy példányából a Common Data Service szolgáltatásba. A termékdefiníciók felhasználhatók más üzleti alkalmazások, például a Microsoft Dynamics 365 for Sales termékadatokkal történő ellátására.
+A termékadatok sok példányban történő elosztásának támogatásához a Supply Chain Management rendszer lehetővé teszi a Common Data Service használatát. A termékdefiníciók exportálhatók a Supply Chain Management egy példányából a Common Data Service szolgáltatásba. A termékdefiníciók felhasználhatók más üzleti alkalmazások, például a Dynamics 365 Sales termékadatokkal történő ellátására.
 
 Vegye figyelembe, hogy a dinamikus és aktív szervezeteknél a termékinformációs adatok naponta változnak. Ezért a pontos és aktuális termékadatok karbantartása önmagában kritikus üzleti folyamat.
 
 ## <a name="product-masters-and-product-variants"></a>Alaptermékek és termékváltozatok
 
-Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Microsoft Dynamics 365 for Finance and Operations rendszerben ezeket az általános termékeket *Alaptermékeknek* nevezik. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok*.
+Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Supply Chain Management rendszerben ezeket az általános termékeket *alaptermékeknek* nevezik. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok*.
 
-A Finance and Operations rendszerben az alaptermék egy termékdimenzió-csoporthoz és egy konfigurációs technológiához van társítva az üzleti szabályok meghatározása érdekében. A termékdimenziók (szín, méret, stílus és konfiguráció) olyan meghatározott attribútumkészletet jelentenek, amelyek az alkalmazás egészében használhatók a kapcsolódó termékek konkrét viselkedésének meghatározására és nyomon követésére. Ezek a dimenziók segítik a felhasználókat a termékek keresésében és azonosításában is.
+Az alaptermék egy termékdimenzió-csoporthoz és egy konfigurációs technológiához van társítva az üzleti szabályok meghatározása érdekében. A termékdimenziók (szín, méret, stílus és konfiguráció) olyan meghatározott attribútumkészletet jelentenek, amelyek az alkalmazás egészében használhatók a kapcsolódó termékek konkrét viselkedésének meghatározására és nyomon követésére. Ezek a dimenziók segítik a felhasználókat a termékek keresésében és azonosításában is.
 
 ## <a name="configuration-technologies"></a>Konfigurációs technológiák
 
@@ -77,7 +77,7 @@ Három konfigurációs technológia közül választhat:
 - A dimenzión alapuló konfigurációt általában a gyártási forgatókönyvek használják, és lehetővé teszi a Konfiguráció dimenzió használatát az anyagjegyzékek (AJ) meghatározásában. Egy adott konfigurációt kiválasztása után a rendszer azokaz az anyagjegyzéksorokat használja, amelyek az adott tervezési és termelési konfigurációra érvényesek. Ezt nevezik *Globális anyagjegyzéknek*, mert egy közös anyagjegyzéket használ egy termék minden konfigurációjához.
 - A megszorításon alapuló konfiguráció egy termékkonfigurációs modellt használ annak érdekében, hogy leírja az összes lehetséges attribútumot és azokat az összetevőket, amelyek egy adott modell minden lehetséges változatának leírásához szükségesek. Az attribútumok kombinációinak korlátozásai szabályos kifejezésekkel vagy táblázatos alapú korlátozásokkal írhatók le. A termékkonfigurációs modellek és a konfigurátorok egyre fontosabbá válnak a termékinformációk kezelésében, és minden iparágban használatosak.
 
-Ha a Finance and Operations rendszer végrehajtását tervezi, rendkívül fontos a megfelelő konfigurációs technológia kiválasztása az üzleti folyamat számára. Egy termék nem konvertálható egyik modellből a másikba a végrehajtást követően.
+Ha a Supply Chain Management rendszer végrehajtását tervezi, rendkívül fontos a megfelelő konfigurációs technológia kiválasztása az üzleti folyamat számára. Egy termék nem konvertálható egyik modellből a másikba a végrehajtást követően.
 
 ## <a name="product-variant-model-definition-workspace"></a>Termékváltozat modelldefiníciója munkaterület
 

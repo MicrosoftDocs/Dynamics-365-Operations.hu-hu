@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843865"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250256"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843865"
 
 Ez a témakör a **Szállítói együttműködés** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazásban való használatra tervezték.
+A mobil munkaterületet a Finance and Operations mobilalkalmazásban való használatra tervezték.
 
 ## <a name="overview"></a>Áttekintés 
-A **Szállítói együttműködési** mobil munkaterület folyamatosan tájékoztatja a szállítókat az új beszerzési rendelésekről, hogy láthassák és válaszolhassanak a beszerzési rendelésekre a Microsoft Dynamics 365 for Finance and Operations webes ügyfélnél. 
+A **Szállítói együttműködési** mobil munkaterület folyamatosan tájékoztatja a szállítókat az új beszerzési rendelésekről, hogy láthassák és válaszolhassanak a beszerzési rendelésekre a webes kliensnél. 
 
 >[!NOTE]
 > A mobil munkaterületet a szállító együttműködési webes felületének kiegészítéseként kell felhasználni, de nem helyettesíti azt. 
@@ -59,8 +59,8 @@ A **Szállítói együttműködés** mobil munkaterület lehetővé teszi egy sz
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziója szerint.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Szállítói együttműködés** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Előfeltételek a Supply Chain Management használatakor
+Amennyiben szervezete telepítette a Supply Chain Management rendszert, a rendszergazdának közzé kell tennie az **Szállítói együttműködés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations 1611-es verzió és Platform update 3 vagy újabb használatakor
 Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb Platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
@@ -104,7 +104,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 <li><a href="vendor-collaboration-work-external-vendors.md">A külső szállítókkal történő szállítói együttműködés használata</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Szállítói együttműködés felhasználóinak kezelése</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Szállítói együttműködés beállítása és karbantartása</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Finance and Operations rendszerben?</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Supply Chain Management rendszerben?</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
-Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

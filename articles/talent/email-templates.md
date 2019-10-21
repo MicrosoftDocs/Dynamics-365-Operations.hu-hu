@@ -1,6 +1,6 @@
 ---
 title: E-mail-sablonok
-description: Ez a témakör ismerteti a Microsoft Dynamics 365 for Talent - Attract e-mail-sablonjait, amelyeket létrehozhat és használhat.
+description: Ez a témakör ismerteti a Microsoft Dynamics 365 Talent - Attract e-mail-sablonjait, amelyeket létrehozhat és használhat.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729726"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008036"
 ---
-# <a name="email-templates"></a>E-mail sablonok
+# <a name="email-templates"></a>E-mail-sablonok
 [!include[banner](../includes/banner.md)]
 
-Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 for Talent: Attract and Offer használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Egyes e-mailek automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
+Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 Talent: Attract and Offer használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Egyes e-mailek automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
 
 > [!NOTE]
 > E-mail sablonok használatához a szervezetének rendelkeznie kell az Átfogó felvételi bővítménnyel.

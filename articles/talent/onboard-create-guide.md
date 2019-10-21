@@ -1,6 +1,6 @@
 ---
-title: Felvételi útmutató létrehozása és küldése a Dynamics 365 for Talent - Onboard használatával
-description: Ez a témakör bemutatja, hogyan használhatja a Microsoft Dynamics 365 for Talent - Onboard alkalmazást arra, hogy bevezető útmutatót hozzon létre az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
+title: Felvételi útmutató létrehozása és küldése a Dynamics 365 Talent – Onboard használatával
+description: Ez a témakör bemutatja, hogyan használhatja a Microsoft Dynamics 365 Talent – Onboard alkalmazást arra, hogy bevezető útmutatót hozzon létre az újonnan felvettek számára. Ez a feladat fontos első lépés a humánerőforrás-kezelési szolgáltatás (HCM) nyugdíjazásig történő felvétel stratégiájában.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731502"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009854"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Felvételi útmutató létrehozása és küldése a Dynamics 365 for Talent: Onboard használatával
+# <a name="create-and-send-an-onboarding-guide"></a>Felvételi útmutató létrehozása és küldése
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard lehetővé teszi, hogy a galériában elérhető vagy az Ön által létrehozott sablonokból felvételi útmutatókat hozzon létre.
+Microsoft Dynamics 365 Talent: Onboard lehetővé teszi, hogy a galériában elérhető vagy az Ön által létrehozott sablonokból felvételi útmutatókat hozzon létre.
 
 Miután létrehozta a felvételi útmutatót, elküldheti azt egy újonnan felvett munkatársnak. Azt is megteheti, hogy több újonnan felvett munkatársnak küldi el, akiket egy Microsoft Excel fájlban határoz meg, amit az Onboard alkalmazásból tölthet le.
 

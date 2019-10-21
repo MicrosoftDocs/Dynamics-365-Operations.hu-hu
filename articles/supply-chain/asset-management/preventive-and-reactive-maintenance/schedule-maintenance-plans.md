@@ -3,7 +3,7 @@ title: Karbantartási tervek ütemezése
 description: Ez a témakör az Eszközkezelés modul ütemezési karbantartási terveit ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875689"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922045"
 ---
 # <a name="schedule-maintenance-plans"></a>Karbantartási tervek ütemezése
 
@@ -49,11 +49,11 @@ A megelőző karbantartás ütemezése az eszközökön beállított karbantart�
 
 - Tudnivalók a munkavégzési helyszínekkel kapcsolatos karbantartási tervek ütemezéséről: ha frissíti a karbantartási tervek eszköztípusainak, eszközgyártóinak és eszközmodelljeinek a beállítását az **Összes munkavégzési helyszín** > **Karbantartási tervek** gyorslapján a karbantartási tervek ütemezését követően, a munkavégzési helyszínnel kapcsolatos meglévő karbantartási ütemezési bejegyzések automatikusan törölve lesznek. Ha olyan új naptárbejegyzéseket szeretne létrehozni, amelyek megfelelnek a frissített karbantartási terv beállításának a munkavégzési helyszínen, akkor az adott munkavégzési helyszínhez új karbantartásiterv-ütemezést kell futtatnia. A munkavégzési helyszínek eszköztípusainak, gyártóinak és modelljeinek beállításáról további információt itt talál: [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md).
 
->*Példa:* egy megadott munkavégzési helyszínhez szeretne létrehozni karbantartási tervet olyan módon, hogy a munkavégzési helyszín összes, mindenkori eszközbeállítása szerepeljen benne, amikor a karbantartási tervet ütemezi. Ebben az esetben hozzon létre egy karbantartási tervet, és válassza ki a megfelelő munkavégzési helyszínt, de NE adjon hozzá objektumot. Ennek eredményeképpen a karbantartási terv ütemezésekor létrejönnek a karbantartási ütemezési sorok minden olyan eszközhöz, amelyek az adott időpontban a munkavégzési helyszínhez kapcsolódnak.
+>*Példa:* egy megadott munkavégzési helyszínhez szeretne létrehozni karbantartási tervet olyan módon, hogy a munkavégzési helyszín összes, mindenkori eszközbeállítása szerepeljen benne, amikor a karbantartási tervet ütemezi. Ebben az esetben hozzon létre egy karbantartási tervet, és válassza ki a megfelelő munkavégzési helyszínt, de NE adjon eszközöket a karbantartási tervhez. Ennek eredményeképpen a karbantartási terv ütemezésekor létrejönnek a karbantartási ütemezési sorok minden olyan eszközhöz, amelyek az adott időpontban a munkavégzési helyszínhez kapcsolódnak.
 
 - Ha módosítja az eszköztípusokat, az eszközgyártókat és az eszközmodelleket  az **Eszköztípusok**menüpontban, ezek a módosítások csak a frissített eszköztípust használó új eszközöket érintik. Az eszköztípusok beállításairól további információt itt talál: [Eszköztípusok](../setup-for-objects/object-types.md).  
 
-5. Az **OK** gombra kattintva megkezdheti az eszközök karbantartási ütemezési bejegyzéseinek létrehozását. A létrehozott bejegyzések az **Összes karbantartási ütemezés** listaoldalon jelennek meg.
+5. Az **OK** gombra kattintva megkezdheti az eszközök karbantartási ütemezési bejegyzéseinek létrehozását. A létrehozott bejegyzések az **Összes karbantartási ütemezés** listaoldalon jelennek meg. A következő ábra egy példát mutat be a **Karbantartási tervek ütemezése** párbeszédablakra.
 
 ![1. ábra](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Az itt leírt példák azt mutatják, hogy az eszközön végrehajtott összes s
 ![3. ábra](media/11-preventive-maintenance.png)
 
 ![4. ábra](media/12-preventive-maintenance.png)
+

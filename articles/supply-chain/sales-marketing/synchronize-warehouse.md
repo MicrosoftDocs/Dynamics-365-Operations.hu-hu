@@ -1,6 +1,6 @@
 ---
-title: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations raktárainak a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+title: Raktárak szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
+description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management raktárainak a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835670"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251178"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Raktárak szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Microsoft Dynamics 365 for Finance and Operations raktárainak a Microsoft Dynamics 365 for Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management raktárainak a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Finance and Operations és a Field Service között](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
-A következő sablonok és a mögöttes tevékenységek használatosak a raktárak szinkronizálásához a Microsoft Dynamics 365 for Finance and Operations alkalmazásból a Microsoft Dynamics 365 for Field Service alkalmazásba.
+A következő sablonokat és alapul szolgáló feladatokat használják a raktárszinkronizálás futtatásához a Supply Chain Management és a Field Service között:
 
 **Sablon az adatintegrációban**
-- Raktárak (a Fin and Ops megoldásból a Field Service megoldásba)
+- Raktárak (Supply Chain Management és Field Service között)
 
 **Feladat az adatintegrációs projektben**
 - Raktár
 
 ## <a name="entity-set"></a>Entitás beállítása
-| Field Service    | Finance and Operations                 |
+| Field Service    | Ellátásilánc-kezelés                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Raktárak                             |
 
 ## <a name="entity-flow"></a>Entitás folyamata
-A Finance and Operations megoldásban létrehozott és kezelt raktárak a Common Data Service (CDS) adatintegrációs projekten keresztül szinkronizálhatók a Field Service megoldásba. A Field Service megoldásba szinkronizálni kívánt raktárak a speciális lekérdezés és szűrés segítségével vezérelhetők a projekten. A Finance and Operations megoldásból szinkronizáló raktárak a Field Service megoldásban vannak létrehoz úgy, hogy a **Külső karbantartású mező** **Igen** értékre van állítva, valamint a rekord csak olvashatóra van állítva.
+A Supply Chain Management megoldásban létrehozott és kezelt raktárak a Common Data Service (CDS) adatintegrációs projekten keresztül szinkronizálhatók a Field Service megoldásba. A Field Service megoldásba szinkronizálni kívánt raktárak a speciális lekérdezés és szűrés segítségével vezérelhetők a projekten. A Supply Chain Management megoldásból szinkronizálódó raktárak a Field Service megoldásban úgy jönnek létre, hogy a **Külsőleg karbantartva** mező **Igen** értékre van állítva, valamint a rekord csak olvasható.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM megoldás
-A Field Service és a Finance and Operations közötti integrálás támogatásához további funkciók szükségesek a Field Service CRM megoldásból. A megoldásban **Külső karbantartású** mező hozzá lett adva a **Raktár (msdyn_warehouses)** entitáshoz. Ennek a mezőnek a segítségével ellenőrizheti, hogy a raktár kezelése a Finance and Operations megoldásból történik, vagy csak a Field Service szolgáltatásban létezik. A beállítások a mezőben a következők lehetnek:
-- **Igen** – A raktár a Finance and Operations szolgáltatásból származik, és nem lesz szerkeszthető a Sales szolgáltatásban.
+A Field Service és a Finance and Operations közötti integrálás támogatásához további funkciók szükségesek a Field Service CRM megoldásból. A megoldásban **Külső karbantartású** mező hozzá lett adva a **Raktár (msdyn_warehouses)** entitáshoz. Ennek a mezőnek a segítségével ellenőrizheti, hogy a raktár kezelése a Supply Chain Management megoldásból történik, vagy csak a Field Service szolgáltatásban létezik. A beállítások a mezőben a következők lehetnek:
+- **Igen** – A raktár a Supply Chain Management szolgáltatásból származik, és nem lesz szerkeszthető a Sales szolgáltatásban.
 - **Nem** – A raktár megadása közvetlenül a Field Service megoldásban történt, és itt is tartják karban.
 
 A **Külső karbantartású** mező segítségével szabályozhatja a készletszintek, a kiigazítások, az átvitelek és a munkarendelések használatának szinkronizálását. Csak a **Külső karbantartású** = **Igen** beállítású raktárak használhatók közvetlen szinkronizáláshoz ugyanabba a raktárba a másik rendszerben. 
@@ -63,7 +63,7 @@ A **Külső karbantartású** mező segítségével szabályozhatja a készletsz
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 ### <a name="data-integration-project"></a>Adatintegrációs projekt
-A raktárak szinkronizálása előtt ellenőrizze, hogy frissítése a speciális lekérdezés és szűrést a projekten, hogy csak azokat a raktárakat foglalja magában, amelyeket át akar vinni a Field Service megoldásból Finance and Operations megoldásba. Vegye figyelembe, hogy szüksége lesz a raktárra a Field Service megoldásban az alkalmazásához a munkarendeléseken, a kiigazításokon és az átviteleken.  
+A raktárak szinkronizálása előtt mindenképpen frissítse a speciális lekérdezést és szűrést a projekten, hogy csak azokat a raktárakat foglalja magában, amelyeket át akar vinni a Supply Chain Management megoldásból a Field Service megoldásba. Vegye figyelembe, hogy szüksége lesz a raktárra a Field Service megoldásban az alkalmazásához a munkarendeléseken, a kiigazításokon és az átviteleken.  
 
 Ügyeljen arra, hogy az **integrációs kulcs** létezzen ehhez: **msdyn_warehouses**:
 1. Lépjen az Adatintegrációra.
@@ -76,6 +76,6 @@ A raktárak szinkronizálása előtt ellenőrizze, hogy frissítése a speciáli
 
 Az alábbi ábrán látható a sablonleképezés az Adatintegrálásban.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Raktárak (a Fin and Ops megoldásból a Field Service megoldásba): Raktár
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Raktárak (Supply Chain Management és Field Service között): Raktár
 
 [![Sablonleképezés az adatintegrátorban](./media/Warehouse1.png)](./media/Warehouse1.png)

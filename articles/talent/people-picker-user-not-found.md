@@ -1,6 +1,6 @@
 ---
 title: A felhasználó nem található az Attract vagy Onboard Személyválasztójában
-description: Ez a témakör bemutatja, mi a teendő, amikor a felhasználók a vállalati példányában nem jelenik meg az Személyválasztóban Dynamics 365 for Talent Attract vagy Onboard alkalmazásokban.
+description: Ez a témakör bemutatja, mi a teendő, amikor a felhasználók a vállalati példányában nem jelenik meg az Személyválasztóban Dynamics 365 Talent – Attract vagy Onboard alkalmazásokban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 2a3c83fcc3f48aa235ffb2db2dc492b34a306c4c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742749"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024190"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory-felhasználók nem találhatók a Személyválasztó szolgáltatásban
 
@@ -30,11 +30,11 @@ ms.locfileid: "1742749"
 
 ## <a name="issue"></a>Kibocsátás
 
-Egyes érvényes felhasználók a Microsoft Azure Active Directory (Azure AD) a bérlőnek nem jelennek meg a Személyválasztóban a név keresésekor a Dynamics 365 for Talent Attract vagy Onboard alkalmazásokban.
+Egyes érvényes felhasználók a Microsoft Azure Active Directory (Azure AD) a bérlőnek nem jelennek meg a Személyválasztóban a név keresésekor a Dynamics 365 Talent: Attract vagy Dynamics 365 Talent: Onboard alkalmazásokban.
 
 ## <a name="cause"></a>Ok
 
-Bizonyos felhasználótípusok jelenleg nem támogatottak a Attract és Onboard alkalmazásokban. Győződjön meg róla, hogy a felhasználó nem egy Azure AD Business to Business (B2B) vendégfelhasználó. A „Felhasználó típusa” információk az Azure Active Directory lapon találhatók az Azure portálon.
+Bizonyos felhasználótípusok jelenleg nem támogatottak az Attract és Onboard alkalmazásokban. Győződjön meg róla, hogy a felhasználó nem egy Azure AD Business to Business (B2B) vendégfelhasználó. A „Felhasználó típusa” információk az Azure Active Directory lapon találhatók az Azure portálon.
 
 Az Azure B2B-vel kapcsolatos további tudnivalókat lásd: [Mi a vendég felhasználói hozzáférés az Azure Active Directory B2B-ben](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 

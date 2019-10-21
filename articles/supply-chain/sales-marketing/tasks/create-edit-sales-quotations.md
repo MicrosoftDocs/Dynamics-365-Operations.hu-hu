@@ -3,7 +3,7 @@ title: Értékesítési ajánlatok létrehozása és szerkesztése
 description: Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési árajánlatokat.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f66ec29cc0afd6e1ba5a65b241e3aac42a3c59b5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e9db489383d9c6ef05bc25d190d380b3150d311
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835633"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1995004"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Értékesítési ajánlatok létrehozása és szerkesztése
 
@@ -31,49 +31,42 @@ Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési
 
 
 ## <a name="create-a-sales-quotation"></a>Értékesítési ajánlat létrehozása
-1. Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.
-2. Kattintson az Új lehetőségre.
-3. A Fiók típusa mezőben válassza ki a „Potenciális vevő” lehetőséget.
-4. A Potenciális vevő mezőben adjon meg vagy válasszon ki egy értéket.
-5. Bontsa ki az Általános szakaszt.
-    * Mivel azt választotta, hogy az Értékesítés és Marketing területről hoz létre árajánlatot, a típus automatikusan Értékesítési árajánlat lesz. Ha projekthez akar árajánlatot létrehozni, akkor a Projektvezetés és könyvelés modulból kell hozzáférnie.   
-6. Kattintson az OK gombra.
-    * A mezők és a műveletek az ajánlati sorok esetében nagyon hasonlítanak az értékesítésirendelés-sorokhoz tartozókhoz.   Az értékesítési rendelésekhez hasonlóan az árajánlatokat létre lehet hozni egy konkrét cikkhez, vagy ha a cikkszám nem ismert vagy nem létezik az árajánlat létrehozásásnak időpontjában, létre lehet hozni az értékesítési kategóriában.  
-7. A Cikk mezőben adjon meg vagy válasszon ki egy értéket.
-8. Írjon be egy értéket a Cikk mezőbe.
-9. Zárja be a lapot.
-10. Adjon meg egy számot a Mennyiség mezőben.
-    * Ha a sorban a kiválasztott elemhez tartoznak érvényes kereskedelmi megállapodások, akkor az alkalmazandó ár és engedmények automatikusan átmásolódnak az árajánlati sorba. Győződjön meg arról, hogy az Egységár mező tartalmaz értéket, és megadhat engedmény értékeket is, ha szeretne  
-11. Kattintson a Mentés gombra.
-12. A Művelet panelen kattintson az Értékesítési ajánlat elemre.
-13. Kattintson az Összegek lehetőségre.
-14. Kattintson az OK gombra.
-15. Kattintson az Értékesítésiajánlat-sor lehetőségre.
-16. Kattintson az Árak lehetőségre.
-    * Az Árszimuláció futtatása lapon kísérletezhet az érajánlat várt bevételének vagy jövedelmezőségének beállításával a kívánt egységár, kedvezményösszeg, kedvezményszázalék, teljes összeg, árrés vagy hozzájárulási arány alapján.   Ha elégedett a cél számokkal, alkalmazza a javaslatot az ajánlati sorra, és az árral kapcsolatos mezői ennek megfelelően frissülni fognak..  
-    * Annyi árszimulációt végezhet amennyit akar. Ha az Új gombra kattint az aktuálisár ajánlati sorból az árfeltételek átmásolódnak a lapra. Ezután módosíthatja, a célok árral kapcsolatos mezőinek értékeit. A mezők valamelyikén végzett változása elindítja az összes mező újraszámítását. Ahhoz, hogy a rendszer kiszámolja az értékesítési árrést és hozzájárulási arányt a termék egységköltségét ismerni kell. A Szimulált árak lapon részletesen megtekinthetők az eredeti árak, a javasolt módosítások és hatásaik az árajánlati összegekre.   Általános szabályként elmondható, hogy amikor egy új összeget beállító szimulációt alkalmaznak az árajánlati sorra, a rendszer újraszámolja, és egy új értéket ír be az Egységár mezőbe. Ha szimuláció alapja egy új árrés vagy egy új hozzájárulási arány, csak a Nettó összeg mező frissül, és az Egységár üres marad. Mindkét esetben törlődnek az engedmények, amelyek az árajánlati soron voltak a szimuláció előtt.  
-17. Zárja be a lapot.
-18. A Művelet panelen kattintson az Árajánlat elemre.
-19. Kattintson az Árajánlat küldése elemre.
-20. Válassza az Igen lehetőséget az Árajánlat nyomtatása mezőben.
-21. Kattintson az OK gombra.
-    * A jelentés létrehozása egy percig is eltarthat. Amíg ez meg nem történik ne zárja be a lapot.  
-22. Zárja be a lapot.
+1. Ugorjon az **Navigációs lap > Modulok > Értékesítés és marketing > Értékesítési ajánlatok > Minden ajánlat** pontra.
+2. Kattintson az **Új** elemre.
+3. A **Fiók típusa** mezőben válassza ki a „Potenciális vevő” lehetőséget.
+4. A **Potenciális vevő** mezőben adjon meg vagy válasszon ki egy értéket.
+5. Bontsa ki az **Általános** szakaszt. Mivel azt választotta, hogy az Értékesítés és Marketing területről hoz létre árajánlatot, a típus automatikusan „Értékesítési árajánlat” lesz. Ha projekthez akar árajánlatot létrehozni, akkor a **Projektvezetés és könyvelés** modulból kell hozzáférnie.
+6. Kattintson az **OK** gombra. A mezők és a műveletek az ajánlati sorok esetében nagyon hasonlítanak az értékesítésirendelés-sorokhoz tartozókhoz.   Az értékesítési rendelésekhez hasonlóan az árajánlatokat létre lehet hozni egy konkrét cikkhez, vagy ha a cikkszám nem ismert vagy nem létezik az árajánlat létrehozásásnak időpontjában, létre lehet hozni az értékesítési kategóriában.     
+7. A **Cikk** mezőben adjon meg vagy válasszon ki egy értéket.
+8. Adjon meg egy értéket a **Telephely** mezőben.
+9. Adjon meg egy számot a **Mennyiség** mezőben. Ha a sorban a kiválasztott elemhez tartoznak érvényes kereskedelmi megállapodások, akkor az alkalmazandó ár és engedmények automatikusan átmásolódnak az árajánlati sorba. Győződjön meg arról, hogy az Egységár mező tartalmaz értéket, és megadhat engedmény értékeket is, ha szeretne 
+10. Kattintson a **Mentés** gombra.
+11. A **Művelet panelen** kattintson az **Értékesítési ajánlat** elemre.
+12. Kattintson az **Összegre** lehetőségre.
+13. Kattintson az **OK** gombra.
+14. Jelölje ki az értékesítési ajánlat sorát.
+15. A **Művelet panelen** kattintson az **Árajánlat** elemre.
+16. Kattintson az **Árszimuláció** lehetőségre.
+    - Az **Árszimuláció futtatása** lapon kísérletezhet az érajánlat várt bevételének vagy jövedelmezőségének beállításával a kívánt egységár, kedvezményösszeg, kedvezményszázalék, teljes összeg, árrés vagy hozzájárulási arány alapján. Ha elégedett a cél számokkal, alkalmazza a javaslatot az ajánlati sorra, és az árral kapcsolatos mezői ennek megfelelően frissülni fognak..  
+    - Annyi árszimulációt végezhet, amennyit szeretne. Ha az **Új** gombra kattint az aktuálisár ajánlati sorból az árfeltételek átmásolódnak a lapra. Ezután módosíthatja, a célok árral kapcsolatos mezőinek értékeit. A mezők valamelyikén végzett változása elindítja az összes mező újraszámítását. Ahhoz, hogy a rendszer kiszámolja az értékesítési árrést és hozzájárulási arányt a termék egységköltségét ismerni kell. A Szimulált árak lapon részletesen megtekinthetők az eredeti árak, a javasolt módosítások és hatásaik az árajánlati összegekre. Általános szabályként elmondható, hogy amikor egy új összeget beállító szimulációt alkalmaznak az árajánlati sorra, a rendszer újraszámolja, és egy új értéket ír be az Egységár mezőbe. Ha szimuláció alapja egy új árrés vagy egy új hozzájárulási arány, csak a Nettó összeg mező frissül, és az Egységár üres marad. Mindkét esetben törlődnek az engedmények, amelyek az árajánlati soron voltak a szimuláció előtt.
+17. A **Művelet panelen** kattintson az **Árajánlat** elemre.
+18. Kattintson az **Árajánlat küldése** elemre.
+19. Válassza az „Igen” lehetőséget az **Árajánlat nyomtatása** mezőben.
+20. Kattintson az **OK** gombra. A jelentés létrehozása egy percig is eltarthat. Amíg ez meg nem történik ne zárja be a lapot.
 
 ## <a name="update-a-sales-quotation"></a>Értékesítési ajánlat frissítése
-1. A műveleti panelen kattintson a Követés elemre.
-2. Kattintson a Konvertálás vevővé elemre.
-3. Írjon be egy értéket a Vevői számla mezőbe.
-4. Kattintson az ellenőrzés lehetőségre.
-    * Ellenőrizze, hogy megjelenik-e egy üzenet, amely szerint a megadott számlaszám szabadon használható.  
-5. Kattintson az OK gombra.
-    * A rendszer most létrehozott egy új vevőszámlát, a potenciális vevőhöz az árajánlaton.  
-6. Zárja be a lapot.
-7. A műveleti panelen kattintson a Követés elemre.
-8. Kattintson a Megerősítés gombra.
-9. A Ok mezőben adjon meg vagy válasszon ki egy értéket.
-10. Kattintson az OK gombra.
-11. A Művelet panelen kattintson az Általános elemre.
-12. Kattintson az Értékesítési rendelések elemre.
-13. Zárja be a lapot.
+1. Ugorjon az **Navigációs lap > Modulok > Értékesítés és marketing > Értékesítési ajánlatok > Minden ajánlat** pontra.
+2. A **Műveleti panelen** kattintson a **Követés** elemre.
+3. Kattintson a **Konvertálás vevővé** elemre.
+4. Írjon be egy értéket a **Vevői számla** mezőbe.
+5. Kattintson az **Ellenőrzés** lehetőségre. Ellenőrizze, hogy megjelenik-e egy üzenet, amely szerint a megadott számlaszám szabadon használható.  
+6. Kattintson az **OK** gombra. A rendszer most létrehozott egy új vevőszámlát, a potenciális vevőhöz az árajánlaton.  
+7. Zárja be a lapot.
+8. A **Műveleti panelen** kattintson a **Követés** elemre.
+9. Kattintson a **Megerősítés** gombra.
+10. Az **Ok** mezőben adjon meg vagy válasszon ki egy értéket.
+11. Kattintson az **OK** gombra.
+12. A **Művelet panelen** kattintson az **Általános** elemre.
+13. Kattintson az **Értékesítési rendelések** gombra.
+14. Zárja be a lapot.
 

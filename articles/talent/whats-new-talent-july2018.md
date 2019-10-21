@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. július)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. július)
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Core HR új vagy módosított szolgáltatásait írja le.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856257"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010222"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. július)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>A Dynamics 365 Talent: Core HR új vagy módosult elemei (2018. július)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent Core HR új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.
 
-## <a name="powerapps-personalization"></a>PowerApps testreszabás
+## <a name="powerapps-personalization"></a>PowerApps személyre szabása
 
-A Microsoft Dynamics 365 for Talent támogatja az integrációt a Microsoft PowerApps szolgáltatással. PowerApps a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. Az Ön, a szervezete vagy a szélesebb ökoszisztéma által a PowerApps használatával fejlesztett alkalmazások beilleszthetők a Talent kliensbe, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy alkalmazást a Talent adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez.
+A Talent támogatja az integrációt a Microsoft PowerApps szolgáltatással. A PowerApps a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. Az Ön, a szervezete vagy a szélesebb ökoszisztéma által a PowerApps használatával fejlesztett alkalmazások beilleszthetők a Talent kliensbe, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy alkalmazást a Talent adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez.
 
-További tudnivalókért lásd: [PowerApps alkalmazások beágyazása](../fin-and-ops/get-started/embed-power-apps.md).
+További tudnivalókért lásd: [PowerApps alkalmazások beágyazása.](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian bérlista-integráció
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1c90788da7ad536fb9978db18160ccf6c158033
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783309"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024528"
 ---
 # <a name="asset-documents"></a>Eszközdokumentumok
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783309"
 
 Ez a témakör bemutatja az Eszközkezelés eszközdokumentumait.
 
-Az Eszközkezelés modulban beállíthat dokumentumokat, amelyek automatikusan kapcsolódnak a feladattípusokhoz, eszközgyártókhoz, eszköztípusokhoz vagy például eszközökhöz. Ez a funkció akkor hasznos, ha a frissített dokumentumverziókat adnak ki. Ebben az esetben a frissített dokumentumot csak el kell helyezni a Microsoft Dynamics 365 for Finance and Operations-dokumentumokhoz használt megszokott helyen, és csatolni a dokumentumot a létrehozott eszközdokumentum-rekordhoz. A frissített dokumentum elérhető az **Összes eszköz**, **Aktív eszközök**, **Saját aktív eszközök**, **Összes munkarendelés** és **Aktív munkarendelési feladatok** menüelemekből. A dokumentumok eszközdokumentum-rekordokhoz történő csatolásának folyamata a szokásos dokumentumkezelő rendszert használja a Finance and Operations modulban.
+Az Eszközkezelés modulban beállíthat dokumentumokat, amelyek automatikusan kapcsolódnak a feladattípusokhoz, eszközgyártókhoz, eszköztípusokhoz vagy például eszközökhöz. Ez a funkció akkor hasznos, ha a frissített dokumentumverziókat adnak ki. Ebben az esetben a frissített dokumentumot csak el kell helyezni a -dokumentumokhoz használt megszokott helyen, és csatolni a Finance and Operations dokumentumot a létrehozott eszközdokumentum-rekordhoz. A frissített dokumentum elérhető az **Összes eszköz**, **Aktív eszközök**, **Saját aktív eszközök**, **Összes munkarendelés** és **Aktív munkarendelési feladatok** menüelemekből. A dokumentumok eszközdokumentum-rekordokhoz történő csatolásának folyamata a szokásos dokumentumkezelő rendszert használja.
 
 **1. példa** : Egy feladattípushoz kapcsolódó dokumentum leírhatja a feladattípushoz tartozó eljárást.
 
@@ -48,5 +48,5 @@ Az Eszközkezelés modulban beállíthat dokumentumokat, amelyek automatikusan k
     > [!NOTE]
     > Amikor a rendszer olyan dokumentumokat keres, amelyek egy eszközhöz vagy egy munkarendeléshez kapcsolódnak, az Eszközkezelés minden eszközdokumentum-rekordon végigmegy lehetséges egyezést keresve. Mindig a leginkább meghatározott kombinációt ellenőrzi először. Más szóval az Eszközkezelés modul először a **Feladat követelménye** mezővel való egyezést ellenőrzi. Ha nem talál egyezést, akkor a **Feladattípus változata** mezővel való egyezést ellenőrzi. Ha nem talál egyezést, akkor a **Feladattípus** mezővel való egyezést ellenőrzi, és így tovább. Ahogy az az **Eszközdokumentumok** oldal elrendezésében is látható, ez a viselkedésmód azt jelenti, hogy a legspecifikusabb kombináció megkereséséhez az Eszközkezelés minden egyes rekordot jobbról balra ellenőriz egyezést keresve. Egy eszközhöz vagy egy munkarendeléshez több dokumentum is kapcsolódhat. A karbantartási kérés vagy a munkarendelés szolgáltatási szintjét igény szerint módosíthatja.
 
-4. **Mellékletek** kiválasztása. A Finance and Operations modulban megjelenik a megszokott **Dokumentumkezelés** oldal.
+4. **Mellékletek** kiválasztása. Megjelenik a szabványos **Dokumentumkezelés** lap.
 5. Állítsa be az eszközdokumentum-rekordhoz csatolandó dokumentumokat vagy jegyzeteket. Dokumentumok csatolása után a **Mellékletek** mező a rekordhoz kapcsolódó dokumentumok számát jeleníti meg.

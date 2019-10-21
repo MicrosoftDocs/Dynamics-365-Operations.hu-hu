@@ -1,6 +1,6 @@
 ---
 title: Készpénzkezelés fejlesztései
-description: Ez a témakör a Dynamics 365 for Retail készpénzkezeléssel kapcsolatos pénztári fejlesztéseit mutatja be.
+description: Ez a témakör a Dynamics 365 Retail készpénzkezeléssel kapcsolatos pénztári fejlesztéseit mutatja be.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630053"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019531"
 ---
 # <a name="cash-management-improvements"></a>Készpénzkezelés fejlesztései
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630053"
 
 A készpénzkezelés egy kulcsfontosságú funkció a kiskereskedők számára a fizikai üzletekben. A kiskereskedők azt szeretnék, hogy az üzletekben olyan rendszerek legyenek, amelyek segítik a készpénz teljes nyomon követhetőségét és elszámoltathatóságát, valamint a különböző pénztárgépek és pénztárosok közötti mozgást egy üzletben. Képesnek kell lenniük az esetleges különbségek egyeztetésére és a elszámoltathatóság megállapítására.
 
-A Microsoft Dynamics 365 for Retail rendelkezik készpénzgazdálkodási lehetőségekkel a Pénztár (POS) alkalmazásban. A 10.0.3 verziónál korábbi Retail-verziókban azonban a készpénzkezelési funkciók nem elég megbízhatóak ahhoz, hogy az üzletekben a készpénzmozgások teljes nyomon követhetőségét biztosítsák. Bár a kiskereskedők képesek a készpénz egyeztetésére egy üzletben, nem tudják pontosan meghatározni az elszámoltathatóságot készpénzeltérés esetén.
 
-A Microsoft Dynamics 365 for Retail 10.0.3 és újabb verzióiban a kiskereskedők számára elérhetővé válik a készpénzkezelés nyomon követhetősége. A nyomon követhetőség részeként a kiskereskedők megadhatnak a széfeket, a kétoldalas készpénz-tranzakciókat végezhetnek, valamint egyeztethetik a készpénzforgalmi tranzakciókat.
+A Microsoft Dynamics 365 Retail rendelkezik készpénzgazdálkodási lehetőségekkel a Pénztár (POS) alkalmazásban. A 10.0.3 verziónál korábbi Retail-verziókban azonban a készpénzkezelési funkciók nem elég megbízhatóak ahhoz, hogy az üzletekben a készpénzmozgások teljes nyomon követhetőségét biztosítsák. Bár a kiskereskedők képesek a készpénz egyeztetésére egy üzletben, nem tudják pontosan meghatározni az elszámoltathatóságot készpénzeltérés esetén.
+
+
+A Retail 10.0.3 és újabb verzióiban a kiskereskedők számára elérhetővé válik a készpénzkezelés nyomon követhetősége. A nyomon követhetőség részeként a kiskereskedők megadhatnak a széfeket, a kétoldalas készpénz-tranzakciókat végezhetnek, valamint egyeztethetik a készpénzforgalmi tranzakciókat.
 
 ## <a name="set-up-traceability-and-define-safes"></a>A nyomon követhetőség beállítása és a széfek megadása
 

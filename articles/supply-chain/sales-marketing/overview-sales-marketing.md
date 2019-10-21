@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865993"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248631"
 ---
 # <a name="sales-and-marketing-overview"></a>Értékesítés és marketing – áttekintés
 
@@ -41,7 +41,7 @@ Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kap
 
 ### <a name="campaigns"></a>Kampányok
 
-A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Microsoft Dynamics 365 for Finance and Operations rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
+A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Supply Chain Management rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
 
 ## <a name="sales"></a>Értékesítés
 Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok](./media/sales01.jpg)](./media/sales01.jpg)

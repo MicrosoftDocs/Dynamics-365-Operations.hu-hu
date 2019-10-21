@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742470"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248957"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
@@ -31,7 +31,7 @@ ms.locfileid: "1742470"
 
 Ez a témakör leírja, hogyan lehet kérni új szállítói együttműködési felhasználók létesítését, és hogyan lehet hozzáadni új szállítói együttműködési partnereket. 
 
-A Microsoft Dynamics 365 for Finance and Operations szállítói együttműködési felülete a beszerzési rendelésekkel, a számlákkal és a külső szállítóknak szánt bizományosi készlettel kapcsolatos információkat jelenít meg. Ha Ön külső szállítóként dolgozik a **szállítói adminisztráció (külső)** biztonsági szerepkörével vagy hasonló engedélyeivel, akkor létrehozhat új szállítói együttműködési kapcsolattartókat, és kérheti az új felhasználók létrehozását a rendszerben. Ezeket a feladatokat akkor is végrehajthatja, ha Ön beszerzési szakemberként dolgozik. Ebben a témakörben ez a szerep olyan beszerzési szakemberre utal, aki a Finance and Operations példányát birtokló vállalaton belül dolgozik. Ha Ön egy külső szállító, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Vevőkkel rendelkező szállítók](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+A Dynamics 365 Supply Chain Management szállítói együttműködési felülete a beszerzési rendelésekkel, a számlákkal és a külső szállítóknak szánt bizományosi készlettel kapcsolatos információkat jelenít meg. Ha Ön külső szállítóként dolgozik a **szállítói adminisztráció (külső)** biztonsági szerepkörével vagy hasonló engedélyeivel, akkor létrehozhat új szállítói együttműködési kapcsolattartókat, és kérheti az új felhasználók létrehozását a rendszerben. Ezeket a feladatokat akkor is végrehajthatja, ha Ön beszerzési szakemberként dolgozik. Ebben a témakörben ez a szerep olyan beszerzési szakemberre utal, aki a Supply Chain Management példányát birtokló vállalaton belül dolgozik. Ha Ön egy külső szállító, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Vevőkkel rendelkező szállítók](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Ha Ön egy beszerzési szakember, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Szállítói együttműködés külső szállítókkal](vendor-collaboration-work-external-vendors.md).
 
@@ -60,12 +60,12 @@ Amikor egy kérést benyújtanak, az hozzáadódik a **Szállítói együttműk�
 Mielőtt kérheti egy új felhasználó létrehozását a rendszerben, ezt a személyt be kell állítani kapcsolattartóként egy vagy több szállítói fiókhoz. Szállítói együttműködéshez kapcsolódó, új felhasználóra vonatkozó kérelem létrehozása:
 
 1. Az **Összes partner** lapon kattintson a **Szállítói felhasználó létrehozása** lehetőségre.
-2. Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja a felhasználó használni, hogy bejelentkezzen a Finance and Operations alkalmazásba. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő Azure Active Directory(AAD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy AAD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet a Finance and Operations felhasználójaként regisztrálni.
+2. Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja használni a felhasználó a Supply Chain Management rendszerbe való bejelentkezéshez. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő Azure Active Directory(AAD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy AAD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail-címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet felhasználóként regisztrálni.
 3. Állítsa a **Szállítói együttműködési hozzáférés engedélyezett** lehetőséget **Igenre** minden olyan jogi személy esetében, amelynél a felhasználónak hozzáférésre van szüksége.
 4. A **Felhasználói szerepkörök hozzárendelése** területen válassza ki a **Hozzárendelés** jelölőnégyzetet azoknál a biztonsági szerepköröknél, amelyekkel a felhasználónak rendelkeznie kell.
 5. Kattintson a **Küldés** hivatkozásra.
 
-Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó a Finance and Operations alkalmazásban, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Finance and Operations felhasználói fiókjával. További tudnivalókért lásd: [Mi az Azure AD B2B együttműködés?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Supply Chain Management felhasználói fiókjával. További tudnivalókért lásd: [Mi az Azure AD B2B együttműködés?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Egy felhasználó inaktiválása
 

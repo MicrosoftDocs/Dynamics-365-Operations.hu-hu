@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567999"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025029"
 ---
 # <a name="retail-statements"></a>Kiskereskedelmi kimutatások
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Retail programban a kimutatások feladásával számolhatók el azok a tranzakciók, amelyek a felhőalapú pénztárban (POS) vagy a Modern POS rendszerű pénztárban (MPOS) jönnek létre. A kimutatás feladási folyamatában az elosztási ütemezés lekérés a POS-tranzakciók a központ (HQ) ügyfél történő sorozatát használja. A megadott paraméterek az **kiskereskedelmi paraméterek** és **üzletek** lapok segítségével a egyedi kimutatásokba igénylése vannak tranzakciók kiválasztása.
+A Dynamics 365 Retail programban a kimutatások feladásával számolhatók el azok a tranzakciók, amelyek a felhőalapú pénztárban (POS) vagy a Modern POS rendszerű pénztárban (MPOS) jönnek létre. A kimutatás feladási folyamatában az elosztási ütemezés lekérés a POS-tranzakciók a központ (HQ) ügyfél történő sorozatát használja. A megadott paraméterek az **kiskereskedelmi paraméterek** és **üzletek** lapok segítségével a egyedi kimutatásokba igénylése vannak tranzakciók kiválasztása.
 
 A következő ábra bemutatja a kimutatás feladási folyamatot: Ebben a folyamatban a rögzített tranzakciók a pénztárnál továbbításra kerülnek a vevőnek a Kiskereskedelmi ütemezés segítségével. Miután a vevő megkapta a tranzakciókat, létrehozhatja, számíthatja, és feladhatja a tranzakció kimutatást az üzlet számára.
 
@@ -85,6 +85,6 @@ Ha ugyanannál az üzletnél a **Feladás munkanapként** jelölőnégyzet nincs
 A kimutatás feladásakor értékesítési rendelések és számlák jönnek létre a kiskereskedelmi értékesítés kimutatásban.
 
 - Készpénz és átviteli értékesítés berakodása egy értékesítési rendelésre történik, és számlázása az alapértelmezett vevőhöz történik, akit a rendszer az üzlethez társított.
-- Kiskereskedelmi értékesítés, amelyhez a tranzakcióba egy vevő felvettek a Microsoft Dynamics 365 for Retail POS külön értékesítési rendeléseket és számlákat hoz létre az egyes vevőkhöz.
+- Kiskereskedelmi értékesítés, amelyhez a tranzakcióba egy vevő felvettek a Retail POS külön értékesítési rendeléseket és számlákat hoz létre az egyes vevőkhöz.
 
 Kifizetési naplók automatikusan létrejönnek a fizetési kimutatásban, és a készlet úgy frissül, ahogy a POS üzlet.

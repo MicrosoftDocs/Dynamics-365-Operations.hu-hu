@@ -1,6 +1,6 @@
 ---
 title: Látszólagos cikkek
-description: Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben Microsoft Dynamics 365 for Finance and Operations rendszerben.
+description: Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben Dynamics 365 Supply Chain Management rendszerben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843889"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250009"
 ---
 # <a name="phantom-items"></a>Látszólagos cikkek
 
@@ -51,7 +51,7 @@ Ebben a szerkezetben láthatja, hogy nem értelmezhetők az F és G részek, és
 
 A Műszaki anyagjegyzék két műveletlapot is tartalmazott, ellentétben a Gyártási anyagjegyzékkel, amelynek csak egy műveletlapja van. A G részhez kapcsolt csomagolási műveletet szintén kiemelte a rendszer, és az most a H termék műveleti lapjának részévé vált. Az első művelet az elektromos egység összeszerelése. Ez a rendelés jónak tűnik, mert ezt az egységet használja a rendszer a következő műveletben, amely a gépösszeszerelés. Az utolsó művelet a csomagolási művelet, amely két csomagolóanyagot (C és D) használ fel.
 
-A Microsoft Dynamics 365 for Finance and Operations rendszerben az átmenet a műszaki anyagjegyzék és a gyártási anyagjegyzék közötti a Phantom anyagjegyzék sortípuson keresztül engedélyezhető. Amint arra a „látszólagos” kifejezés is utal, az F és G részek eltűntek a két anyagjegyzéktípus közötti átmenet során. Ebben a példában a Látszólagos sortípust alkalmazza a rendszer az F és G részekre a Műszaki anyagjegyzékben. Amikor létrejön egy termelési vagy kötegrendelés, a rendszer a Műszaki anyagjegyzéket bemásolja a termelési vagy kötegrendelésbe. Ezután, a rendelés becslésekor, végbemegy az átmenet a Műszaki anyagjegyzékből a Gyártási anyagjegyzékbe, ahogyan azt az előző ábrákon láthatta. A második ábra műveleti lapjáról a C és D csomagolóanyagok meg vannak adva a művelethez. 
+Az átmenet a műszaki anyagjegyzék és a gyártási anyagjegyzék közötti a Phantom anyagjegyzék sortípuson keresztül engedélyezhető. Amint arra a „látszólagos” kifejezés is utal, az F és G részek eltűntek a két anyagjegyzéktípus közötti átmenet során. Ebben a példában a Látszólagos sortípust alkalmazza a rendszer az F és G részekre a Műszaki anyagjegyzékben. Amikor létrejön egy termelési vagy kötegrendelés, a rendszer a Műszaki anyagjegyzéket bemásolja a termelési vagy kötegrendelésbe. Ezután, a rendelés becslésekor, végbemegy az átmenet a Műszaki anyagjegyzékből a Gyártási anyagjegyzékbe, ahogyan azt az előző ábrákon láthatta. A második ábra műveleti lapjáról a C és D csomagolóanyagok meg vannak adva a művelethez. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Többszintű látszólagos anyagjegyzék-struktúrák
 A Látszólagos sortípus többszintű anyagjegyzék-struktúráknál is használható, a következő ábrán látható módon. Ebben a példában (a) a G termék anyagjegyzéke, míg (b) az E és F rész, valamint a G termék útvonallapja. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572025"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248878"
 ---
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
@@ -38,7 +38,7 @@ A jóváhagyott beszerzési igénylés felhasználható a beszerzési rendelés 
 ## <a name="creating-purchase-requisitions"></a>Beszerzési igénylés létrehozása
 Létrehozhat egy beszerzési igénylést a **Beszerzési rendeléseim** oldalon, és kiválaszthatja a szükséges cikkeket és szolgáltatásokat. A termékeket kiválaszthatja a szervezete által létrehozott beszerzési katalógusból, vagy kiválaszthatja a beszerzési kategóriát és megadhatja a termék részleteit, ha a katalógusban nem szereplő termékeket igényelne.  
 
-Beszerzési igénylés csak a munkafolyamat konfigurálása után nyújtható be ellenőrzésre a Microsoft Dynamics 365 for Finance and Operations rendszerben. A munkafolyamatot a beszerzési igénylés ellenőrzési folyamaton való mozgatásához használja a kiinduló **Piszkozat** állapottól a végső **Jóváhagyott** állapotig.
+Beszerzési igénylés csak a munkafolyamat konfigurálása után nyújtható be ellenőrzésre. A munkafolyamatot a beszerzési igénylés ellenőrzési folyamaton való mozgatásához használja a kiinduló **Piszkozat** állapottól a végső **Jóváhagyott** állapotig.
 
 ### <a name="purchase-requisition-statuses"></a>A beszerzési igénylések állapotai
 
@@ -141,7 +141,7 @@ A beszerzési irányelveknél ellenőrizheti az elérhető beszerzési célt a s
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Fogyasztási célú igénylések
 
-A fogyasztási célú igénylés olyan termék vagy szolgáltatás iránti keresletet jelent, amelyet a szervezete belső folyamataiban fog felhasználni. Az ilyen típusú igénylés által létrehozott kereslet mindig teljesül egy beszerzési rendeléssel. Ha a Microsoft Dynamics 365 for Finance and Operations beállítása automatikan hoz létre beszerzési igénylést, azok csak a beszerzési igénylés jóváhagyása után valósulnak meg.
+A fogyasztási célú igénylés olyan termék vagy szolgáltatás iránti keresletet jelent, amelyet a szervezete belső folyamataiban fog felhasználni. Az ilyen típusú igénylés által létrehozott kereslet mindig teljesül egy beszerzési rendeléssel. Ha a Supply Chain Management beállítása automatikusan hoz létre beszerzési igénylést, azok csak a beszerzési igénylés jóváhagyása után valósulnak meg.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Feltöltési célú igénylések
 

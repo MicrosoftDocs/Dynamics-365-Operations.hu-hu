@@ -1,6 +1,6 @@
 ---
 title: A potenciális ügyfelek készpénzre váltása
-description: Ez a témakör a Potenciális vevő készpénzre váltása megoldásról a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Sales között megoldásról,nyújt áttekintést.
+description: Ez a témakör a Potenciális vevő készpénzre váltása megoldásról a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között megoldásról nyújt áttekintést.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
@@ -19,31 +19,31 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: e31994ea3cd73dcc749a02ce2cd0815be191a567
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742401"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251357"
 ---
-# <a name="prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása
+# <a name="prospect-to-cash"></a>A potenciális vevők készpénzre váltása
 
 [!include [banner](../includes/banner.md)]
 
-A Potenciális vevők készpénzre váltás megoldás közvetlen szinkronizálást nyújt a Dynamics 365 for Finance and Operations és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával. 
+A Potenciális vevők készpénzre váltás megoldás közvetlen szinkronizálást nyújt a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását. Miközben az adatok áramlanak, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Supply Chain Management készletkezelésének használatával. 
 
 A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót: [Potenciális ügyfél készpénzre váltása](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú közvetlen szinkronizálást biztosítja:
 
-- [Sales-fiókok fenntartása és azok szinkronizálása közvetlenül a Sales-től a Finance and Operations szolgáltatással](accounts-template-mapping-direct.md)
-- [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](products-template-mapping-direct.md)
-- [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Finance and Operations szolgáltatásba](contacts-template-mapping-direct.md)
-- [Értékesítési ajánlat közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
-- [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](sales-order-template-mapping-direct-two-ways.md)
-- [Értékesítési számla közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
+- [Sales-fiókok fenntartása és azok szinkronizálása közvetlenül a Sales-től a Supply Chain Management szolgáltatással](accounts-template-mapping-direct.md)
+- [Termékek fenntartása a Supply Chain Management szolgáltatásban, és a szinkronizálásuk közvetlenül a Salesbe](products-template-mapping-direct.md)
+- [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Supply Chain Management szolgáltatásba](contacts-template-mapping-direct.md)
+- [Értékesítési ajánlat szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
+- [Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között](sales-order-template-mapping-direct-two-ways.md)
+- [Értékesítési számla szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
-## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
+## <a name="system-requirements-for-supply-chain-management"></a>A Supply Chain Management rendszerkövetelményei
 A potenciális ügyfelek készpénzre váltásának integrációja a következő verziókban támogatott:
 
 ### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december)
@@ -55,9 +55,9 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 - Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) - 8-as platformfrissítéssel (7.2.11792.56024 alkalmazásbuild 7.0.4565.16212 platformbuilddel).
 - A következők gyorsjavítások szükségesek:
 
-  - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Sales rendszerből a Finance and Operations alkalmazásba. Ezenkívül számos más fejlesztést is biztosít.
-  - **[KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Ez a gyorsjavítás lehetővé teszi az értékesítésirendelés-sor szinkronizálását az adatintegrációs szolgáltatással a Finance and Operations rendszerből a Sales alkalmazásba.
-  - **[KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Finance and Operations rendszerből a Sales alkalmazásba.
+  - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Sales rendszerből a Supply Chain Management alkalmazásba. Ezenkívül számos más fejlesztést is biztosít.
+  - **[KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés sor szinkronizálását az adatintegrációs szolgáltatással a Supply Chain Management alkalmazásból a Sales rendszerbe.
+  - **[KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Supply Chain Management alkalmazásból a Sales rendszerbe.
 
     > [!NOTE]
     > Csak a KB4045570-et kell telepíteni, mivel a telepítés tartalmazza a többi gyorsjavítás változásait. 
@@ -68,8 +68,8 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 
 - A következők gyorsjavítások szükségesek:
 
-  - **[KB4051266](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4051266&bugId=3863566&qc=ee80faaa7bc6c77b368d5eaf456c9c08e0b9fba5903a7b6fd8c13756c3a4b757)** - lehetővé teszi az értékesítési rendelések szinkronizálását az adatintegrációs szolgáltatással a Finance and Operations rendszerből a Sales alkalmazásba. 
-  - **[KB4037542](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037542&bugId=3848253&qc=8323b93c15280172c5ab4159e0256e37104ced1729462c91ab2f7d00cb8d419c)** - lehetővé teszi az értékesítési rendelések fejlécénak és sorainak szinkronizálását az adatintegrációs szolgáltatással a Finance and Operations rendszerből a Sales alkalmazásba.
+  - **[KB4051266](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4051266&bugId=3863566&qc=ee80faaa7bc6c77b368d5eaf456c9c08e0b9fba5903a7b6fd8c13756c3a4b757)** - lehetővé teszi az értékesítési rendelések szinkronizálását az adatintegrációs szolgáltatással a Supply Chain Management rendszerből a Sales alkalmazásba. 
+  - **[KB4037542](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037542&bugId=3848253&qc=8323b93c15280172c5ab4159e0256e37104ced1729462c91ab2f7d00cb8d419c)** - lehetővé teszi az értékesítési rendelések fejlécének és sorának szinkronizálását az adatintegrációs szolgáltatással a Supply Chain Management rendszerből a Sales alkalmazásba.
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - A potenciális ügyfelek készpénzre váltása támogatása szükséges adatentitások révén.
     
     > [!NOTE]
@@ -80,5 +80,5 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 
 A Potenciális ügyfelek készpénzre váltása megoldás használatához telepítenie kell a következő összetevőket:
 
-- Dynamics 365 for Sales 1612 verzió (8.2.1.207) (DB 8.2.1.207) online vagy újabb verzió
-- A potenciális ügyfelek készpénzre váltása megoldás a Dynamics 365 for Sales 1.15.0.0 vagy későbbi verziójához. A megoldás letölthető az AppSource felületéről. [Töltse le a Dynamics 365, potenciális vevő készpénzfizetési](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Dynamics 365 Sales, verzió: 1612 (8.2.1.207) (DB 8.2.1.207) online vagy későbbi verzió.
+- A potenciális ügyfelek készpénzre váltása megoldás Dynamics 365 Sales szolgáltatáshoz, 1.15.0.0 vagy későbbi verzió. A megoldás letölthető az AppSource felületéről. [Töltse le a Dynamics 365, potenciális vevő készpénzfizetési](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

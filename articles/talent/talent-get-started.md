@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518209"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024248"
 ---
 # <a name="get-started-with-talent"></a>Első lépések a Talent alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 for Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
+A Microsoft Dynamics 365 Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 
 > [!NOTE] 
-> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 for Retail; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 for Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 Finance; Dynamics 365 Retail és Dynamics 365 Talent. Ugyanaz a funkció mindhárom termékben megjelenhet. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 Retail; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 Finance lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 ## <a name="personalizing-talent"></a>A Talent személyre szabása 
-Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 
+Az alábbi témakörök bemutatják, hogyan hozhatja létre a Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 
 
 -   [A felhasználói felület testreszabása](../fin-and-ops/get-started/personalize-user-experience.md) – Ez a témakör bemutatja a különböző módszereket, melyekkel testreszabható és igényekhez igazítható a Talent termék a preferenciáinak megfelelően.
 
@@ -51,7 +51,7 @@ A következő témakörök leírják a lekérdezések használatát, valamint a 
 
 -   [Speciális szűrési és lekérdezési szintaxis](../fin-and-ops/get-started/advanced-filtering-query-options.md) – A témakör ismerteti a szűrési és lekérdezési beállítások, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanel "egyezések" operátor használata esetén.
 
--   [Navigációs keresés](../fin-and-ops/get-started/navigation-search.md) – Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat. A Talent alkalmazás számos területe és lapja segít a különböző feladatok elvégzésében. A feladatokhoz szükséges lapok gyors megtalálásához használja a navigációs keresés funkciót. 
+-   [Navigációs keresés](../fin-and-ops/get-started/navigation-search.md) – Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat. A Talent számos területe és lapja segít a különböző feladatok elvégzésében. A feladatokhoz szükséges lapok gyors megtalálásához használja a navigációs keresés funkciót. 
 
 -   [Műveletkeresés](../fin-and-ops/get-started/action-search.md) – Ez a témakör a műveletkeresési funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket. A termék oldalain az utasítások elsősorban a műveletpaneleken láthatók, egyrészt az oldal tetején megjelenő normál műveletpanelen, és az oldal különböző szakaszaiban megjelenő eszköztárakon.
 
@@ -61,7 +61,7 @@ A következő témakörök leírják a lekérdezések használatát, valamint a 
 Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
-A [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent) blogon véleményeket, híreket és egyéb információkat talál a Kötelezettségekkel és egyéb megoldásokkal kapcsolatban. 
+A [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent) blogon véleményeket, híreket és egyéb információkat talál a Kötelezettségekkel és egyéb megoldásokkal kapcsolatban. 
 
 ### <a name="videos"></a>Videók
 Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.

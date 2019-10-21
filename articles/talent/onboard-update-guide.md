@@ -1,6 +1,6 @@
 ---
-title: Felvételi útmutatók frissítése a Dynamics 365 for Talent - Onboard szolgáltatásban
-description: Ez a témakör azt ismerteti, hogy miként frissíthetők a Microsoft Dynamics 365 for Talent - Onboard, felvételi útmutatói, illetve hogyan lehet a meglévő útmutatók módosításait leküldeni.
+title: Felvételi útmutatók frissítése a Dynamics 365 Talent – Onboard szolgáltatásban
+description: Ez a témakör azt ismerteti, hogy miként frissíthetők a Microsoft Dynamics 365 Talent – Onboard felvételi útmutatói, illetve hogyan lehet a meglévő útmutatók módosításait leküldeni.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731499"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010729"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Felvételi útmutatók frissítése a Dynamics 365 for Talent: Onboard szolgáltatásban
+# <a name="update-onboarding-guides"></a>Felvételi útmutatók frissítése
 
 [!include [banner](includes/banner.md)]
 
-Ha módosítania kell a felvételi útmutatókat a Microsoft Dynamics 365 for Talent: Onboard szolgáltatásban, frissítheti őket, és érvényesítheti a változtatásokat, még akkor is, ha már kiküldte az útmutatókat. A felvételi útmutató frissítéséhez két lehetőség közül választhat:
+Ha módosítania kell a felvételi útmutatókat a Microsoft Dynamics 365 Talent: Onboard szolgáltatásban, frissítheti őket, és érvényesítheti a változtatásokat, még akkor is, ha már kiküldte az útmutatókat. A felvételi útmutató frissítéséhez két lehetőség közül választhat:
 
 - Szerkessze közvetlenül a felvételi útmutatót, és mentse a változtatásokat.
 - Szerkessze a felvételi sablont, majd érvényesítse a változtatásokat az abból létrehozott összes felvételi útmutatóban.

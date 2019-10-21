@@ -1,6 +1,6 @@
 ---
 title: Online és offline pénztár (POS) műveletek
-description: Ez a témakör ismerteti a pénztár (POS) műveleteit Microsoft Dynamics 365 for Retail alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
+description: Ez a témakör ismerteti a pénztár (POS) műveleteit Dynamics 365 Retail alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625665"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025310"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
 [!include [banner](includes/banner.md)]
 
-A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. Műveletek konfigurálása és kezelése a Microsoft Dynamics 365 for Retail háttérirodában történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
+A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. Műveletek konfigurálása és kezelése a Dynamics 365 Retail háttérirodában történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
 
-A következő táblázatban a Retail Modern POS és a Cloud POS for Dynamics 365 for Retail rendszerekben rendelkezésre álló műveleteket találja. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
+A következő táblázatban a Retail Modern POS és a Cloud POS rendszerekben rendelkezésre álló műveleteket találja. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
 
-Bizonyos műveleteket jelenleg nem érhetők el a Retail Modern POS vagy Cloud POS for Dynamics 365 for Retail rendszerben. Ezek a műveletek közül bármelyik területspecifikus szükséges további bővítmények és a konfigurációs műveletek. Más tulajdonságok és a Microsoft Dynamics AX 2012 rendszerből származó funkciók, amelyek jelenleg nem támogatott.
+Bizonyos műveleteket jelenleg nem érhetők el a Retail Modern POS vagy a Cloud POS rendszerben. Ezek a műveletek közül bármelyik területspecifikus szükséges további bővítmények és a konfigurációs műveletek. Más tulajdonságok és a Microsoft Dynamics AX 2012 rendszerből származó funkciók, amelyek jelenleg nem támogatott.
 
 A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 
@@ -42,7 +42,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 - **Tranzakció-képernyő** – a művelet alapján a POS-tranzakciók képernyőn beállított POS-gombrács meghívhatók.
 
 > [!NOTE]
-> Az alább felsorolt műveletek a legújabb Dynamics 365 for Retail rendszerre vonatkoznak. Bizonyos műveletek megváltozhattak, vagy nem állnak rendelkezésre a termék korábbi verzióiban.
+> Az alább felsorolt műveletek a legújabb Retail rendszerre vonatkoznak. Bizonyos műveletek megváltozhattak, vagy nem állnak rendelkezésre a termék korábbi verzióiban.
 
 | Azonosító | Művelet | Leírás | Gombrács | Tranzakciós képernyő | Üdvözlőképernyő | Offline elérhető. | Területspecifikus |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

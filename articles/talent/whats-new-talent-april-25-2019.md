@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 23.) szolgáltatásban
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: Új vagy módosult elemek a Dynamics 365 Talent (2019. április 23.) szolgáltatásban
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/23/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 1a70be88e3ab65bb0bdd844347e8ba69e4ba61a5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624581"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024114"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent (2019. április 23.) szolgáltatásban
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 23.) szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 for Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 A szakaszban ismertetett módosítások a 8.1.2253-ös buildre vonatkoznak. A fejlécekben látható, zárójelben lévő számok a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
@@ -79,4 +79,4 @@ Ez a módosítással az ismétlődések észleli a program, amikor névmezőket 
 ## <a name="known-issues"></a>Ismert problémák
 
 ### <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A 26-ös platformfrissítéssel a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
+A Finance and Operations 26-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.

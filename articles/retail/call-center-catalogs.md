@@ -1,6 +1,6 @@
 ---
 title: Hívásközpont-katalógusok
-description: Ez a témakör a Microsoft Dynamics 365 for Retail-katalógusok hívásközpont-specifikus funkcióit ismerteti.
+description: Ez a témakör a Dynamics 365 Retail-katalógusok hívásközpont-specifikus funkcióit ismerteti.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562741"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023659"
 ---
 # <a name="call-center-catalogs"></a>Hívásközpont-katalógusok
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Retail-katalógusok hívásközpont-specifikus funkcióit ismerteti.
+Ez a témakör a Dynamics 365 Retail-katalógusok hívásközpont-specifikus funkcióit ismerteti.
 
-A Dynamics 365 for Retail katalógusfunkciói több célra is használhatók. Kezdetben a katalógusfunkciók a harmadik félhez tartozó elektronikus kereskedelmi integrációk támogatásához jöttek létre. A katalógusbeállítások lehetővé tették a vállalatok számára a termékek és attribútumok csoportosítását, amelyeket egy harmadik félhez tartozó elektronikus kereskedelmi megoldás segítségével közzé lehetett tenni külső felhasználás céljából.
+A Retail katalógusfunkciói több célra is használhatók. Kezdetben a katalógusfunkciók a harmadik félhez tartozó elektronikus kereskedelmi integrációk támogatásához jöttek létre. A katalógusbeállítások lehetővé tették a vállalatok számára a termékek és attribútumok csoportosítását, amelyeket egy harmadik félhez tartozó elektronikus kereskedelmi megoldás segítségével közzé lehetett tenni külső felhasználás céljából.
 
-Amikor a hívásközpont csatornatámogatás része lett a Dynamics 365 for Retail rendszernek a katalóguskoncepció tovább bővült: további lehetőségeket lehet hozzáadni a támogatási és vezérlési funkciókhoz, amelyek a hagyományos, "közvetlenül a fogyasztónak" marketingkatalógusokhoz kapcsolódnak. A "közvetlenül a fogyasztónak" típusú vállalatok gyakran készítenek nyomtatott katalógusokat, amelyeket aztán postán elküldenek a vevők egy vagy több szegmensének. Ezek a katalógusok általában meghatározott promóciókat és ajánlatokat tartalmaznak, amelyekkel a vevők csak akkor élhetnek, amennyiben megadnak egy katalógus-azonosító kódot a rendelés létrehozásakor.
+Amikor a hívásközpont csatornatámogatás része lett a Retail alkalmazásnak a katalóguskoncepció tovább bővült: további lehetőségeket lehet hozzáadni a támogatási és vezérlési funkciókhoz, amelyek a hagyományos, "közvetlenül a fogyasztónak" marketingkatalógusokhoz kapcsolódnak. A "közvetlenül a fogyasztónak" típusú vállalatok gyakran készítenek nyomtatott katalógusokat, amelyeket aztán postán elküldenek a vevők egy vagy több szegmensének. Ezek a katalógusok általában meghatározott promóciókat és ajánlatokat tartalmaznak, amelyekkel a vevők csak akkor élhetnek, amennyiben megadnak egy katalógus-azonosító kódot a rendelés létrehozásakor.
 
-A "közvetlenül a fogyasztónak" marketingvállalatok szorosan követik a vevők válaszait ezekre a katalógusokra, hogy meggyőződhessenek róla, hogy a katalógusok előállítási és postázási költségei megtérülnek. A válaszok nyomon követéséhez hagyományosan egy kód van a katalógus hátoldalára nyomtatva, és ezt a kódot kérik és alkalmazzák akkor, ha a katalógus címzettje telefonon ad le rendelést (illetve most már általában a kódot meg kell adnia a vevőnek, amikor online rendelést ad le). Habár az iparágban több szakkifejezést is használnak a katalóguskövető kód beazonosítására (beleértve a kulcskódot, promóciós kódot, katalóguskódot és forráskódot), mi a Dynamics 365 for Retail esetén **Forráskód-azonosítóként** hivatkozunk rá.
+A "közvetlenül a fogyasztónak" marketingvállalatok szorosan követik a vevők válaszait ezekre a katalógusokra, hogy meggyőződhessenek róla, hogy a katalógusok előállítási és postázási költségei megtérülnek. A válaszok nyomon követéséhez hagyományosan egy kód van a katalógus hátoldalára nyomtatva, és ezt a kódot kérik és alkalmazzák akkor, ha a katalógus címzettje telefonon ad le rendelést (illetve most már általában a kódot meg kell adnia a vevőnek, amikor online rendelést ad le). Habár az iparágban több szakkifejezést is használnak a katalóguskövető kód beazonosítására (beleértve a kulcskódot, promóciós kódot, katalóguskódot és forráskódot), mi a Retail esetén **Forráskód-azonosítóként** hivatkozunk rá.
 
 ## <a name="basic-catalog-setup"></a>Alap katalógusbeállítás
 
@@ -92,7 +92,7 @@ A katalógusban szereplő termékek konfigurálásakor használja a **Termékold
 
 ## <a name="catalog-requests"></a>Katalóguskérések
 
-Miután konfigurálta és közzétette a katalógusokat a Dynamics 365 for Retail rendszerben, használhatja a **Katalógus küldése** funkciót. Ez a funkció a **Vevőkeresés** és az **Ügyfélszolgálat** lapokon érhető el. Miután a **Vevőkeresés** pontban kiválasztotta a vevőrekordot, vagy a kiválasztott vevőkhöz tartozó számla megtekintésekor az **Ügyfélszolgálat** résznél, a felhasználó rákattinthat a **Katalógus küldése** lehetőségre, és ekkor megnyílik egy párbeszédpanel, amelyen a felhasználó választhat egy minden közzétett és aktív katalógust tartalmazó listáról. A felhasználó kiválaszthatja a katalógust és a mennyiséget, és az elküldendő forráskód-azonosítót. Ha rákattintanak a **Küldés** gombra, a rendszer eltárolja a kérelmet, amelyet ezután a **Katalóguskérelem** jelentést kinyomtatva lehet kezelni. A jelentés megtekintéséhez lépjen a **Kiskereskedelem** \> **Hívásközponti jelentések** \> **Katalóguskérelem-jelentés** ponthoz. Itt megtekintheti a listát az összes katalóguskérésről, illetve annak a vevőnek a nevét és címadatait, aki kérte a katalógust. Ezt a jelentést felhasználhatja belső célokra,vagy az adatokat továbbíthatja egy harmadik félnek, amely a katalógus vevőhöz való fizikai eljuttatásának külső folyamatait támogatja.
+Miután konfigurálta és közzétette a katalógusokat a Retail rendszerben, használhatja a **Katalógus küldése** funkciót. Ez a funkció a **Vevőkeresés** és az **Ügyfélszolgálat** lapokon érhető el. Miután a **Vevőkeresés** pontban kiválasztotta a vevőrekordot, vagy a kiválasztott vevőkhöz tartozó számla megtekintésekor az **Ügyfélszolgálat** résznél, a felhasználó rákattinthat a **Katalógus küldése** lehetőségre, és ekkor megnyílik egy párbeszédpanel, amelyen a felhasználó választhat egy minden közzétett és aktív katalógust tartalmazó listáról. A felhasználó kiválaszthatja a katalógust és a mennyiséget, és az elküldendő forráskód-azonosítót. Ha rákattintanak a **Küldés** gombra, a rendszer eltárolja a kérelmet, amelyet ezután a **Katalóguskérelem** jelentést kinyomtatva lehet kezelni. A jelentés megtekintéséhez lépjen a **Kiskereskedelem** \> **Hívásközponti jelentések** \> **Katalóguskérelem-jelentés** ponthoz. Itt megtekintheti a listát az összes katalóguskérésről, illetve annak a vevőnek a nevét és címadatait, aki kérte a katalógust. Ezt a jelentést felhasználhatja belső célokra,vagy az adatokat továbbíthatja egy harmadik félnek, amely a katalógus vevőhöz való fizikai eljuttatásának külső folyamatait támogatja.
 
 ## <a name="additional-features"></a>További szolgáltatások
 

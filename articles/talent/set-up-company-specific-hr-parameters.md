@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506103"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009445"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Vállalatfüggő személyzeti (HR) paraméterek beállítása
 
@@ -34,7 +34,7 @@ Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a váll
 Az Emberi erőforrások (HR) paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos. Az **Emberierőforrás-paraméterek** oldalon a beállítások 6 lapra vannak szétosztva.
 
 -   Általános
--   Toborzás - ez nem része a Dynamics 365 for Talent rendszernek
+-   Toborzás - ez nem része a Dynamics 365 Talent rendszernek
 -   Kompenzáció
 -   Számsorozatok
 -   Családi okokból történő és a betegszabadságról szóló amerikai törvény (FMLA)
@@ -49,7 +49,7 @@ A **Kompenzáció** lap meghatározza, hogy a felhasználóknak meg kell-e erős
 ### <a name="previously-released-functionality"></a>Korábban kiadott funkciók
 A **Számsorozat** lapon található beállítások határozzák meg a sorozatokat, amelyek a rendszer az azonosítók automatikus hozzárendelésekor használ az emberi erőforrások tételeihez (például pályázatok, távolléti regisztrációk, kompenzációs folyamatok eredményei, esetszámok, tanfolyamok és tanfolyami napirendek). A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (kattintson a **Szervezet felügyelete** &gt; **Számsorozatok** &gt; **Számsorozatok** lehetőségre).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>A Dynamics 365 for Talent használata esetén
+### <a name="if-youre-using-dynamics-365-talent"></a>A Dynamics 365 Talent használata esetén
 A **Számsorozat** lapon található beállítások határozzák meg a sorozatokat, amelyek a rendszer az azonosítók automatikus hozzárendelésekor használ az emberi erőforrások tételeihez (például pályázatok, távolléti regisztrációk, kompenzációs folyamatok eredményei, esetszámok, tanfolyamok és tanfolyami napirendek). A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (kattintson a **Rendszerfelügyelet** &gt; **Hivatkozások lap** &gt; **Számsorozatok** &gt; **Számsorozatok** lehetőségre). 
 
 Az **FMLA** lapon található beállítások határozzák meg, mennyi órát kell egy alkalmazottnak dolgoznia, hogy jogosult legyen az FMLA-juttatásokra, a jogosultsághoz szükséges munkaviszony hosszát, illetve a munkaviszony kezdő dátumát, amely munkaviszony hosszának meghatározásához szükséges. Szintén ezek a beállítások határozzák meg az FMLA-órák számát, amelyekre az alkalmazottak jogosultak, illetve az FMLA-távolléti naptárat, amellyel kiszámítható, hogy mennyi FMLA-órát használtak fel az alkalmazottak. Az **FMLA** lap csak Egyesült Államokban működő vállalatok számára érhető el. 

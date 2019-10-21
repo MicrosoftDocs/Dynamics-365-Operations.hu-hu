@@ -1,6 +1,6 @@
 ---
 title: A felosztott rendeléskezelés (DOM) költségkonfigurációja
-description: Ez a témakör a Microsoft Dynamics 365 for Retail felosztott rendeléskezelés (DOM) funkciójára vonatkozó költségkonfigurációt részletezi.
+description: Ez a témakör a Dynamics 365 Retail felosztott rendeléskezelés (DOM) funkciójára vonatkozó költségkonfigurációt részletezi.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019439"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>A felosztott rendeléskezelés (DOM) költségkonfigurációja
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606779"
 
 A szervezeteknek számos költségösszetevőt kell figyelembe venniük annak meghatározására, hogy melyik a rendelés teljesítésének szempontjából optimális helyszín. Ezen költségösszetevők közé tartozik például a szállítási költség, a kezelési költség és a csomagolási költség. Ezeknek a költségeknek a kombinációját ki kell számítani a teljesítési helyszín meghatározása céljából.
 
-A Microsoft Dynamics 365 for Retail szolgáltatásban a felosztott rendeléskezelés (DOM) első ismétlésekor sor került a megrendelések teljesítési helyszínekhez való hozzárendelésének optimalizálására, a rendszer csak a távolságot vette figyelembe. Ugyan a távolság korrelálható a költséggel, ez nem egyezik meg a költséggel. Például egy 24 órán belüli szállítási módszer többe kerül, mint a háromnapos szállítás vagy a hétnapos szállítás ugyanakkora távolságra.
+A Dynamics 365 Retail szolgáltatásban a felosztott rendeléskezelés (DOM) első ismétlésekor sor került a megrendelések teljesítési helyszínekhez való hozzárendelésének optimalizálására, a rendszer csak a távolságot vette figyelembe. Ugyan a távolság korrelálható a költséggel, ez nem egyezik meg a költséggel. Például egy 24 órán belüli szállítási módszer többe kerül, mint a háromnapos szállítás vagy a hétnapos szállítás ugyanakkora távolságra.
 
 A költségkonfiguráció funkció segítségével a kiskereskedők meghatározhatják és konfigurálhatják a további költségösszetevőket, amelyeket az rendelési sorok teljesítése céljából optimális helyszín meghatározása céljából ki kell számítani és figyelembe kell venni.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561266"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249425"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Beszerzési rendelés jóváhagyása mobil munkaterület
 
@@ -35,13 +35,13 @@ Ez a témakör a **Beszerzési rendelések** mobil munkaterülettel kapcsolatban
 ## <a name="overview"></a>Áttekintés 
 A jóváhagyást igénylő beszerzési rendelések egy jóváhagyási munkafolyamaton esnek át. A munkafolyamat tartalmazhat olyan lépéseket, amelyek egy vagy több ember által végrehajtandó műveleteket igényelnek. Például egy személynek végre kell hajtania egy feladatot, vagy jóvá kell hagynia a beszerzési rendelést. 
 
-A **Beszerzési rendelés jóváhagyása** mobil munkaterület lehetővé teszi, hogy könnyen megtekinthesse a beszerzési rendeléseket a mobileszközéről, és reagálhasson rájuk. A munkaterület lehetővé teszi ugyanazon munkafolyamati műveletek végrehajtását is, amelyeket a Microsoft Dynamics 365 for Finance and Operations webes ügyfelében használhat.
+A **Beszerzési rendelés jóváhagyása** mobil munkaterület lehetővé teszi, hogy könnyen megtekinthesse a beszerzési rendeléseket a mobileszközéről, és reagálhasson rájuk. A munkaterület lehetővé teszi ugyanazon munkafolyamati műveletek végrehajtását is, amelyeket a webes ügyfelében használhat.
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az előfeltételek eltérőek lehetnek attól függően, hogy a szervezete a Finance and Operations melyik verzióját használja.
+Az előfeltételek eltérőek lehetnek attól függően, hogy a szervezete a Supply Chain Management melyik verzióját használja.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Előfeltételek a Microsoft Dynamics 365 for Finance and Operations használatakor 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Beszerzési rendelés jóváhagyása** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Előfeltételek a Supply Chain Management használatakor 
+Amennyiben szervezete telepítette a Finance and Operations rendszert, a rendszergazdának közzé kell tennie a **Beszerzési rendelés jóváhagyása** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations 1611-es verzió és Platform update 3 vagy újabb használatakor
 Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb Platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
@@ -75,7 +75,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
-Töltse le és telepítse a Microsoft Dynamics 365 for Unified Operations Mobile alkalmazást:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 - [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 - [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

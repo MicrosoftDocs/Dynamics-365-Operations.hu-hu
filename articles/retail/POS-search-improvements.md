@@ -1,6 +1,6 @@
 ---
 title: Termék- és vevőkeresés a pénztárban (POS)
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
+description: Ez a témakör áttekintést nyújt a Dynamics 365 Retail termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023682"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -99,7 +99,10 @@ A hagyományos vevőkeresés időigényes lehet, mivel több mező között kere
 
 ![Vevőkeresési rövidítések](./media/SearchShortcutsPOS.png "Vevőkeresési rövidítések")
 
-Keresési keresési feltételek rövidítésekként történő beállításához a rendszergazda nyissa meg a **Kiskereskedelmi paraméterek** oldalt a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban, majd a **Pénztári keresési feltételek** fülön válassza ki a feltételeket, amelyeket szeretne rövidítésekként megjeleníteni.
+
+
+Keresési keresési feltételek rövidítésekként történő beállításához a rendszergazda nyissa meg a **Kiskereskedelmi paraméterek** oldalt a Microsoft Dynamics 365 Retail szolgáltatásban, majd a **Pénztári keresési feltételek** fülön válassza ki a feltételeket, amelyeket szeretne rövidítésekként megjeleníteni.
+
 
 ![Keresési rövidítések konfigurálása](./media/ConfigureShortcutsAX.png "Keresési rövidítések konfigurálása")
 
@@ -111,6 +114,6 @@ A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések j
 > [!NOTE]
 > Az egyéni tulajdonság, amelyet hozzáadnak a felsoroláshoz, nem befolyásolja a normál vevői keresési algoritmust. Más szóval a vevőkereső algoritmus nem keres az egyéni tulajdonságban. A felhasználók csak akkor használhatják az egyéni tulajdonságokat keresésre, ha az adott tulajdonság hozzá van adva rövidítésként, vagy ha az alapértelmezett keresési algoritmust felülbírálják.
 
-A Microsoft Dynamics 365 for Retail valamelyik jövőbeli kiadásában a kiskereskedők a pénztárban be tudják majd állítani a **Keresés az összes üzletben** értéket a vevők alapértelmezett keresési módjaként. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Új, **Alapértelmezett vevőkeresési mód** nevű beállítás érhető el a pénztár működési profiljában. A **Be** érték megadásával az alapértelmezett keresési módként a **Keresés az összes üzletben** lehetőséget állítja be. Minden vevőkeresési kísérlet valós idejű hívást indít a központba.
+A Retail valamelyik jövőbeli kiadásában a kiskereskedők a pénztárban be tudják majd állítani a **Keresés az összes üzletben** értéket a vevők alapértelmezett keresési módjaként. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Új, **Alapértelmezett vevőkeresési mód** nevű beállítás érhető el a pénztár működési profiljában. A **Be** érték megadásával az alapértelmezett keresési módként a **Keresés az összes üzletben** lehetőséget állítja be. Minden vevőkeresési kísérlet valós idejű hívást indít a központba.
 
 A teljesítménnyel kapcsolatos váratlan problémák megelőzése érdekében ezt a beállítást a **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** tesztelési jelző mögé rejtettük. Így a felhasználói felület **Alapértelmezett vevőkeresési mód** beállításának megjelenítéséhez a kiskereskedőnek támogatási jegyben kell kérnie a felhasználói tesztelést (UAT) és a termelési környezet használatát. Miután megkapjuk a jegyet, a mérnöki csapat segít a kiskereskedőnek, hogy nem termelési környezetben történő teszteléssel tudja felmérni a teljesítményt, és végre tudja hajtani a szükséges optimalizációt.

@@ -1,6 +1,6 @@
 ---
 title: Alvállalkozásba adás
-description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Microsoft Dynamics 365 for Finance and Operations alkalmazásban.
+description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Dynamics 365 Supply Chain Management alkalmazásban.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568390"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249912"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. A témakör első része az adatok beállításáról szól. A második rész végigvezeti Önt a forgatókönyv lépésein.
+Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozásba adásról a gyártásban a Microsoft Dynamics 365 Supply Chain Management alkalmazásban. A témakör első része az adatok beállításáról szól. A második rész végigvezeti Önt a forgatókönyv lépésein.
 
 ## <a name="target-audience"></a>Célközönség
 

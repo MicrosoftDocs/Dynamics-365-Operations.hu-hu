@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742633"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025053"
 ---
 # <a name="retail-peripherals"></a>Kiskereskedelmi perifériák
 
@@ -116,9 +116,9 @@ A fizetési eszközök támogatása a fizetési csatlakozón keresztül valósul
 
 ### <a name="opos"></a>OPOS
 
-Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Retail programmal, a Microsoft Dynamics 365 for Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
+Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Retail programmal, elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
 
-- **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k a Microsoft Dynamics 365 for Retail Pénztárkomponensének tesztelése szolgálnak. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
+- **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k a Retail Pénztárkomponensének tesztelése szolgálnak. Ezért a tesztek segítenek garantálni azt, hogy ha a Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
 - **Szolgáltatásobjektum** – A szolgáltatásobjektum biztosítja a kommunikációt a vezérlőobjektum (CCO) és az eszköz között. Általában az eszköz szolgáltatásobjektumát az eszköz gyártója biztosítja. Azonban egyes esetekben előfordulhat, hogy a szolgáltatásobjektumot le kell töltenie a gyártó webhelyéről. Rendelkezésre állhat például egy újabb szolgáltatásobjektum. A gyártó webhelyének címét lásd a hardverdokumentációban.
 
 [![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen
 Vezérlőobjektum és szolgáltatásobjektum Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a pénztár-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt.
 
 > [!NOTE]
-> Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. Microsoft Dynamics 365 for Retail rendszernek először támogatnia kell az első adott eszköztípust, vagy osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
+> Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. A Retail rendszernek először támogatnia kell az első adott eszköztípust, vagy osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
 
 ### <a name="windows"></a>Windows
 
@@ -136,7 +136,7 @@ A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva. Az OPOS által�
 - A nyomtatón keresztül csatlakoztatott („láncba kötött”) eszközök nem feltétlenül működnek megfelelően a Windows-illesztőprogramok használatakor. Például lehetséges, hogy nem nyílik ki a pénztárfiók, vagy az elismervénynyomtató nem a várt módon működik.
 - Az OPOS emellett változók szélesebb körét támogatja, amelyeket kifejezetten a kiskereskedelmi nyugtanyomtatókhoz terveztek: ilyen például a papírvágás vagy az elismervénynyomtatás.
 
-Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Microsoft Dynamics 365 for Retail programmal.
+Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Retail programmal.
 
 ### <a name="universal-windows-platform"></a>Univerzális Windows-platform
 
@@ -192,7 +192,7 @@ Két helyen lehet megadni a hálózati perifériákhoz tartozó IP-címeket. Ha 
 
 #### <a name="modern-pos-for-android"></a>Modern POS for Android
 
-A 8.1.3-as Dynamics 365 for Retail-verzióhoz használható Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Ez a hardverállomás támogatja a hálózati nyomtatókkal és a fizetési csatlakozókkal folytatott kommunikációt. További információ: [Hibrid alkalmazás Android rendszerhez](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+A 8.1.3-as Retail-verzióhoz használható Modern POS for Android alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Ez a hardverállomás támogatja a hálózati nyomtatókkal és a fizetési csatlakozókkal folytatott kommunikációt. További információ: [Hibrid alkalmazás Android rendszerhez](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS és Modern POS iOS rendszerhez
 
@@ -526,7 +526,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> A Microsoft Dynamics 365 for Retail 1611 verzióban, a hardverállomás-profil már nincs használatban. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
+> A Retail 1611 verzióban, a hardverállomás-profil már nincs használatban. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows IPC (beépített) hardverállomással
 

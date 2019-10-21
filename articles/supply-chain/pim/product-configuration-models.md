@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563597"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250622"
 ---
 # <a name="product-configuration-models-overview"></a>Termékkonfigurálási modellek áttekintése
 
@@ -118,7 +118,7 @@ Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Eg
 </tr>
 </tbody>
 </table>
-Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy mező közötti leképezést jelöl egy Finance and Operations táblában. Egy rendszer által meghatározott táblamegszorítás dinamikusan kapcsolja az attribútumtípust a mezőhöz. A kapcsolat lehetővé teszi, hogy egy termékkonfigurációs modell attribútuma a Finance and Operations tábla mezőjének adatát mutassa.</td>
+Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy mező közötti leképezést jelöl egy Finance and Operations táblában. Egy rendszer által meghatározott táblamegszorítás dinamikusan kapcsolja az attribútumtípust a mezőhöz. A kapcsolat lehetővé teszi, hogy egy termékkonfigurációs modell attribútuma a Supply Chain Management tábla mezőjének adatát mutassa.</td>
 </tr>
 <tr class="odd">
 <td>Számítások</td>

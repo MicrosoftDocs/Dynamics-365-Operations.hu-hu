@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549313"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250216"
 ---
 # <a name="activity-based-subcontracting"></a>Tevékenységi alapú alvállalkozásba adás
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549313"
 
 Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
 
-A Microsoft Dynamics 365 for Finance and Operations-ben az alvállalkozásba adásnak két megközelítése van: termelési rendelések és lean manufacturing. A lean manufacturing megközelítés esetén az alvállalkozói munka egy termelési folyamat egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Egy speciális, **Közvetlen kiszervezés** nevű költségcsoporttípus került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele az anyagjegyzékbe (AJ). Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába.
+A Microsoft Dynamics 365 Supply Chain Management-ben az alvállalkozásba adásnak két megközelítése van: termelési rendelések és lean manufacturing. A lean manufacturing megközelítés esetén az alvállalkozói munka egy termelési folyamat egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Egy speciális, **Közvetlen kiszervezés** nevű költségcsoporttípus került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele az anyagjegyzékbe (AJ). Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Alvállalkozókat magukban foglaló termelési folyamatok
 A termelési folyamatok alapelve nem módosul tevékenységek alvállalkozásba adásával. Az anyagok továbbra is helyek között mozognak, a folyamattevékenységek az anyagokat termékekké alakítják, a szállítási tevékenységek pedig anyagokat vagy termékeket helyeznek át egyik helyről a másikra. A helyek és munkacellák szállító által kezeltként történő modellezéséhez rendelje a szállítói számlát raktárhoz vagy erőforráscsoport erőforrásához.  
@@ -102,7 +102,7 @@ Az emberek a szállítást gyakran nem termelékeny és hozzáadott értéket ne
 
 A tevékenységalapú alvállalkozásba adás a lean manufacturingben lehetővé teszi azon fuvarozók és a szállítmányozási szállítók integrálását, amelyek anyagokat és termékeket mozgatnak a termelési folyamat helyei között. Az átviteli tevékenységek modellezésével fuvarozó vagy szállító rendehető hozzá. Az átviteli tevékenység/feladat szolgáltatási és beszerzési szerződésen alapul, és a tényleges átviteli feladatok alapján beszerzési rendelések és beérkezési tanácsadók hozhatók létre. Ez a szolgáltatás ugyanaz, mint az alvállalkozói folyamattevékenységek funkciója.  
 
-Ezért a Finance and Operations mostantól támogatja az olyan anyagjegyzék-kalkulációkat, amelyek a termelési folyamat költségszámításának részeként szállítási szolgáltatásokat, kapcsolódó beszerzési rendeléseket, integrált beérkezési nyilvántartást és integrált szállítási szolgáltatási költségeket biztosítanak.
+A Supply Chain Management mostantól támogatja az olyan anyagjegyzék-kalkulációkat, amelyek a termelési folyamat költségszámításának részeként szállítási szolgáltatásokat, kapcsolódó beszerzési rendeléseket, integrált beérkezési nyilvántartást és integrált szállítási szolgáltatási költségeket biztosítanak.
 
 
 

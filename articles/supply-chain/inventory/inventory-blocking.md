@@ -1,6 +1,6 @@
 ---
 title: Készletzárolás
-description: A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations-ben. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
+description: A témakör tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Supply Chain Management megoldásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb6291e2f012f148b247b747f84155b96cf09677
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fc8200380ac3aeb9e3b73f43212458660a15ade6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557476"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250806"
 ---
 # <a name="inventory-blocking"></a>Készletzárolás
 
 [!include [banner](../includes/banner.md)]
 
-A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations-ben. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
+A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Supply Chain Management megoldásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
 
 Készletcikkeket a következő módokon zárolhat:
 -   Manuálisan

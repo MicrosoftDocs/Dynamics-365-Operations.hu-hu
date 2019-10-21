@@ -1,0 +1,57 @@
+---
+title: Ügyfél GYIK
+description: Ez a cikk válaszokat ad a Finance and Operations-klienssel kapcsolatos gyakori kérdésekre.
+author: jasongre
+manager: AnnBe
+ms.date: 09/11/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.custom: 12334
+ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc6b1a56c2ad4b109d6658bcb66416102e091e54
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2180760"
+---
+# <a name="client-faq"></a>Ügyfél GYIK
+
+[!include [banner](../includes/banner.md)]
+
+Ez a cikk válaszokat ad a Finance and Operations-klienssel kapcsolatos gyakori kérdésekre.
+
+## <a name="why-arent-symbols-loaded"></a>Miért nem töltődnek be a szimbólumok?
+
+A böngésző biztonsági beállításai megakadályozhatják a szimbólumok megfelelő betöltődését. A probléma megoldásához kövesse az alábbi lépéseket:
+
+- Ha a probléma az Internet Explorer programban merül fel, kattintson a **Beállítások**, majd az **Internetbeállítások** lehetőségre. Az Internetbeállítások párbeszédablakban kattintson az **Adatvédelem** lapra, kattintson az **Egyéni szint** elemre, és ellenőrizze, hogy be van-e jelölve a **Betűtípus letöltése** beállítás.
+- Ellenkező esetben előfordulhat, hogy hozzá kell adnia az alkalmazásoldalt a megbízható helyek listájához.
+
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Hiányolom a menüszalagot a Dynamics AX 2012 rendszerből. Nyitva tarthatom folyamatosan a Műveleti ablaktáblát?
+
+Terveink szerint ez a funkció hamarosan elérhetővé válik. Ezt követően a felhasználók dönthetnek úgy, hogy a lapokat a Műveleti ablaktáblákon folyamatosan nyitva tartják. Ellenkező esetben a lapok mindig össze fognak csuklani, ha azokat nem használják, így biztosítva nagyobb felületet a lap számára.
+
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-right-click"></a>Miért jelennek meg időnként különböző ikonok, ha az egér jobb gombjával kattintok?
+
+Ha a jobb gombbal kattint egy szerkeszthető mezőre (vagy kijelölt szövegre), a böngésző helyi menüjének ikonjai jelennek meg. Ezen menü segítségével érheti el a **Kivágás**, a **Másolás** és a **Beillesztés** parancsokat. Ezeket a parancsokat nem tudjuk beágyazni a helyi menükbe, mert biztonsági okokból a böngészők nem teszik lehetővé számunkra, hogy a vágólapjához a programban hozzáférjünk.
+
+Ha a jobb gombbal kattint egy mező címkéjére, vagy egy csak olvasható vezérlőelem értékére, látni fogja a helyi menüt.
+
+Annak érdekében, hogy megkönnyítsük a billentyűzetről való hozzáférést, terveink között szerepel egy billentyűparancs létrehozása, amely megnyitja a helyi menüjét.
+
+## <a name="where-is-the-view-details-functionality"></a>Hol található a Részletek megtekintése funkció?
+
+A **Részletek megtekintése** beállítás több módon is elérhető:
+
+- Ha valamelyik vezérlő rendelkezik **Részletek megtekintése** lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
+- A **Részletek megtekintése** lehetőség megtalálható továbbá a helyi menüben is. További tájékoztatást talál a jobb kattintáskor megjelenített helyi menükről az előző fejezetben.

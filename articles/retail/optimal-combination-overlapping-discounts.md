@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00d7457b13e6633c9285a1fc43b8f6dd60dae9ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 555098a7d11cb0b4c0f90357ff260598e80108f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017920"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Átfedő kedvezmények optimális kombinációjának meghatározása
 
@@ -32,7 +32,7 @@ ms.locfileid: "1836532"
 
 Átfedő kedvezmények esetén meg kell határozni az egymást átfedő kedvezmények azon kombinációját, amely a legalacsonyabb tranzakciós végösszeget vagy a legnagyobb összes engedményt eredményezi. Ha az engedmény összege a vásárolt termékek ára szerint változik, például a kiskereskedelmben gyakori „1 vásárlása esetén 1 X százalék engedmény” (BOGO) esetén ez a folyamat kombinatorikai optimalizálási problémává válik.
 
-A cikk a Microsoft Dynamics AX 2012 R3 KB 3105973 (2015. november 2-án kiadott), vagy újabb és a Microsoft Dynamics 365 for Retail alkalmazásokra vonatkozik. Az átfedő kedvezmények megfelelő kombinációjának időben történő meghatározásához bevezettünk egy, az átfedő kedvezmények alkalmazására szolgáló módszer. Ezen új módszernek a **marginálisérték-rangsorolás** nevet adtuk. A marginálisérték-rangsorolást használjuk, valahányszor az egymást átfedő kedvezmények lehetséges kombinációinak kiértékeléséhez szükséges idő átlépi azt a küszöbértéket, amely a **Kiskereskedelmi paraméterek** oldalán konfigurálható. A marginálisérték-rangsorolási módszerben minden átfedő engedménynél kiszámítunk egy értéket az engedmény a megosztott termékekre jutó értéke alapján. Az átfedő kedvezményeket ezután a legmagasabb relatív értéktől a legalacsonyabb relatív értékig alkalmazzuk. Az új módszer részleteit a „Marginális érték” részben találja a cikk későbbi részében. A marginálisérték-rangsorolást nem használjuk, egy termék engedményének összegét a tranzakció másik terméke nem befolyásolja. Például ezt a módszer nem használjuk két egyszerű engedmény esetén, sem egy egyszerű és egy termékalapú mennyiségi engedmény esetén.
+A cikk a Microsoft Dynamics AX 2012 R3 KB 3105973 (2015. november 2-án kiadott), vagy újabb és a Dynamics 365 Retail alkalmazásokra vonatkozik. Az átfedő kedvezmények megfelelő kombinációjának időben történő meghatározásához bevezettünk egy, az átfedő kedvezmények alkalmazására szolgáló módszer. Ezen új módszernek a **marginálisérték-rangsorolás** nevet adtuk. A marginálisérték-rangsorolást használjuk, valahányszor az egymást átfedő kedvezmények lehetséges kombinációinak kiértékeléséhez szükséges idő átlépi azt a küszöbértéket, amely a **Kiskereskedelmi paraméterek** oldalán konfigurálható. A marginálisérték-rangsorolási módszerben minden átfedő engedménynél kiszámítunk egy értéket az engedmény a megosztott termékekre jutó értéke alapján. Az átfedő kedvezményeket ezután a legmagasabb relatív értéktől a legalacsonyabb relatív értékig alkalmazzuk. Az új módszer részleteit a „Marginális érték” részben találja a cikk későbbi részében. A marginálisérték-rangsorolást nem használjuk, egy termék engedményének összegét a tranzakció másik terméke nem befolyásolja. Például ezt a módszer nem használjuk két egyszerű engedmény esetén, sem egy egyszerű és egy termékalapú mennyiségi engedmény esetén.
 
 ## <a name="discount-examples"></a>Példák engedményre
 

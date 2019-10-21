@@ -1,5 +1,5 @@
 ---
-title: A raktárkezelés frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
+title: Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra
 description: Ez a témakör áttekintést nyújt a termékek és a raktárkezelés áttelepítési beállításairól.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554046"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251431"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>A raktárkezelés frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra 
 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintés nyújt a frissítéshez a Microsoft Dynamics AX 2012 R3, WMSII modulban futó változatáról a Microsoft Dynamics 365 for Finance and Operations rendszerre.
+Ez a témakör áttekintés nyújt a Microsoft Dynamics AX 2012 R3 szolgáltatásról a WMSII modul futtatása során a Supply Chain Management szolgáltatásra való frissítés folyamatáról.
 
-A Finance and Operations rendszer már nem támogatja a Microsoft Dynamics AX 2012 rendszerből származó örökölt **WMSII** modult. Ehelyett a **Raktárkezelés** modult használhatja. A WMSII modulban a pénzügyi készlethez ki lehet választani a hely és raklap-azonosító készletdimenziókat, azonban a raklap-azonosító készletdimenzió nem használható pénzügyi készletként, a Finance and Operations alkalmazásban.
+A Supply Chain Management rendszer már nem támogatja a Microsoft Dynamics AX 2012 rendszerből származó örökölt **WMSII** modult. Ehelyett a **Raktárkezelés** modult használhatja. A WMSII modulban a pénzügyi készlethez ki lehet választani a hely és raklap-azonosító készletdimenziókat, azonban a raklap-azonosító készletdimenzió nem használható pénzügyi készletként, a Supply Chain Management alkalmazásban.
 
 Frissítés közben az összes olyan termék, amely hozzá van rendelve egy tárolásidimenzió-csoporthoz, amely használja a raklap-azonosító készletdimenziót, a rendszer azonosítja, zároltként jelöli meg, és nem lesz feldolgozva a frissítéshez.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Frissítés a Finance and Operations rendszerre AX 2012 R3 WMSII használata esetén
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Frissítés a Supply Chain Management szolgáltatásra az AX 2012 R3 WMSII használata esetén
 A frissítés után a frissítéskor zárolt termékeket feloldhatja a **Tárolási dimenziócsoportok módosítása cikkekhez** folyamatban található áttelepítési lehetőségekkel, ami után a termékekhez tartozó tranzakciók feldolgozhatók.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Cikkek engedélyezése a Finance and Operations rendszerben
-Ez a változás azért szükséges, mert a Finance and Operations rendszerben a cikkek követése a raktárkezelési folyamatok része. E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Ha szeretné használni a raktárkezelési folyamatokat, a következőt kell konfigurálni:
+### <a name="enabling-items-in-supply-chain-management"></a>Cikkek engedélyezése a Supply Chain Management szolgáltatásban 
+Ez a változás azért szükséges, mert a Supply Chain Management rendszerben a cikkek követése a raktárkezelési folyamatok része. E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Ha szeretné használni a raktárkezelési folyamatokat, a következőt kell konfigurálni:
 -   A meglévő raktáraknak engedélyezni kell a raktárkezelési folyamatok használatát 
 -   A meglévő kiadott termékeket egy tárolási dimenziócsoporthoz kell társítani, amely raktárkezelési folyamatokat használ 
 

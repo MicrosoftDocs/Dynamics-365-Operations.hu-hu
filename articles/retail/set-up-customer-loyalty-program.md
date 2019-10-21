@@ -1,6 +1,6 @@
 ---
 title: Hűség áttekintése
-description: Ez a témakör leírja a hűséggel kapcsolatos képességeket a Microsoft Dynamics 365 for Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
+description: Ez a témakör leírja a hűséggel kapcsolatos képességeket a Dynamics 365 Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863772"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250967"
 ---
 # <a name="loyalty-overview"></a>Hűség áttekintése
 
 [!include [banner](includes/banner.md)]
 
-A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha kapcsolatba lépnek a kereskedő márkájával. A Microsoft Dynamics 365 for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók. Ez a témakör leírja a hűséggel kapcsolatos képességeket a Microsoft Dynamics 365 for Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
+A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha kapcsolatba lépnek a kereskedő márkájával. A Dynamics 365 Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók. Ez a témakör leírja a hűséggel kapcsolatos képességeket a Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
 
 A hűségprogram beállíthatja, hogy a következőket tartalmazza:
 
@@ -42,7 +42,7 @@ A hűségprogram beállíthatja, hogy a következőket tartalmazza:
 
 ## <a name="setting-up-loyalty-programs"></a>Hűségprogramok beállítása
 
-Néhány összetevőt be kell állítania ahhoz, hogy a Dynamics 365 for Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását.
+Néhány összetevőt be kell állítania ahhoz, hogy a Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását.
 
 ![Hűség beállítási folyamata](./media/loyaltyprocess.gif "A Hűség komponensei és azok kapcsolata egymással")
 
@@ -69,9 +69,9 @@ A következő táblázat leírja a folyamatok, amelyeket el kell végezni a hűs
 
 | Feldolgozás neve                         | Leírás | Lapnév |
 |--------------------------------------|-------------|-----------|
-| 1050 (hűségadatok)           | Futtassa ezt a folyamatot a hűségkonfigurációs adatok Dynamics 365 for Retail programból a kiskereskedelmi üzletbe történő küldésére. Tanácsos lehet ütemezni a művelet végrehajtásához gyakran úgy, hogy a hűséges adatátvitel összes áruházhoz. | Elosztási ütemezés |
+| 1050 (hűségadatok)           | Futtassa ezt a folyamatot a hűségkonfigurációs adatok Retail programból a kiskereskedelmi üzletbe történő küldésére. Tanácsos lehet ütemezni a művelet végrehajtásához gyakran úgy, hogy a hűséges adatátvitel összes áruházhoz. | Elosztási ütemezés |
 | Hűségprogramok feldolgozása              | Futtassa ezt a folyamatot a hűségtervek hozzájuk tartozó kiskereskedelmi adatokkal való társításához. Ezt a folyamatot kötegelt folyamatként való ütemezéssel lehet futtatni. Ha módosítja a hűséges konfigurációs adatok, például a hűségprogramok hűségprogramok és a hűségpontok futtatnia kell ezt a folyamatot. | Hűségprogramok feldolgozása |
-| Offline hűségtranzakciók feldolgozása | Futtassa ezt a folyamatot a hűségkártyák kapcsolat nélküli feldolgozott tranzakciókat is tartalmazó frissítéséhez. Ezt az eljárást csak akkor kell alkalmazni, ha az **Offline pontszerzés** jelölőnégyzet be van jelölve a **Megosztott kiskereskedelmi paraméterek** oldalon, így offline is lehet jutalompontokat szerezni. | Offline hűségtranzakciók feldolgozása |
+| Megszerzett hűségpontok feladása kötegekben | Futtassa ezt a folyamatot a hűségkártyák kapcsolat nélküli feldolgozott tranzakciókat is tartalmazó frissítéséhez. Ezt az eljárást csak akkor kell alkalmazni, ha az **Megszerzett pontok feladása kötegekben** jelölőnégyzet be van jelölve a **Megosztott kiskereskedelmi paraméterek** oldalon, így offline is lehet jutalompontokat szerezni. | Megszerzett hűségpontok feladása kötegekben |
 | Hűségkártyarétegek frissítése            | Futtassa ezt a folyamatot a vevő jogosultsági szintjének a hűségprogram szintszabályai ellenében történő értékeléséhez és a vevő szintállapotának frissítéséhez. Erre a folyamatra csak akkor van szükség, ha módosítja a hűségprogramok szintszabályait és a frissített szabályokat a már kibocsátott hűségkártyákra visszamenőlegesen kívánja alkalmazni. Ezt a folyamatot kötegelt folyamatként vagy egyes kártyákra futtatható. | Hűségkártyarétegek frissítése |
 
 ## <a name="loyalty-enhancements"></a>Hűség fejlesztései
@@ -89,7 +89,7 @@ A Retail új hűség funkcióval rendelkezik a 2018 októberi kiadás részekén
 
     ![Kizárt fiókok](./media/Excluded-affiliations.png "Fiókok kizárása hűségpontok szerzéséből")
     
-- A kiskereskedők generálhatnak hűségkártyaszámokat a csatornákban. A 2018 októberi frissítés előtt kiskereskedők fizikai hűségkártyákat használhattak vagy bizonyos egyedi vevőadatok, például telefonszám használatával hűségkártyákat generálhattak. Ahhoz, hogy a hűségkártyák generálása engedélyezve legyen kiskereskedelmi kapcsolja be a **Hűségkártyaszám létrehozása** lehetőséget az üzlethez társított funkcióprofilban. Online csatornák esetében a kiskereskedők használható a hűségkártyák kiadásához a vevőknek az IssueLoyaltyCard API-t használhatják. Kiskereskedők vagy megadhatnak hűségkártyaszámot az API-nak a hűségkártya létrehozásához vagy a rendszer a Dynamics 365 for Retail programban beállított hűségkártya-számsorozatot használja. Azonban ha nincs a számsorozat, és a kiskereskedő nem biztosít az API hívása közben a hűségkártyaszámot, egy hibaüzenet jelenik meg.
+- A kiskereskedők generálhatnak hűségkártyaszámokat a csatornákban. A 2018 októberi frissítés előtt kiskereskedők fizikai hűségkártyákat használhattak vagy bizonyos egyedi vevőadatok, például telefonszám használatával hűségkártyákat generálhattak. Ahhoz, hogy a hűségkártyák generálása engedélyezve legyen kiskereskedelmi kapcsolja be a **Hűségkártyaszám létrehozása** lehetőséget az üzlethez társított funkcióprofilban. Online csatornák esetében a kiskereskedők használható a hűségkártyák kiadásához a vevőknek az IssueLoyaltyCard API-t használhatják. Kiskereskedők vagy megadhatnak hűségkártyaszámot az API-nak a hűségkártya létrehozásához vagy a rendszer a Retail programban beállított hűségkártya-számsorozatot használja. Azonban ha nincs a számsorozat, és a kiskereskedő nem biztosít az API hívása közben a hűségkártyaszámot, egy hibaüzenet jelenik meg.
 
     ![Hűségkártya létrehozása](./media/Generate-loyalty-card.png "Hűségkártyaszám automatikus létrehozása")
 
@@ -137,7 +137,7 @@ A Retail új hűség funkcióval rendelkezik a 2018 októberi kiadás részekén
     - Annak meghatározása, hogy olyan tevékenység végrehajtása történt, amelynek jutalmazottnak kell lennie.
     - Jutalmazás a megfelelő pontokkal.
 
-    Az első lépés a Microsoft Dynamics 365 for Retail rendszeren kívül történik, például a márkával kapcsolatos tweet vagy a márka kedvelése a Facebookon. A tevékenységhez felismerését követően a kiskereskedők meghívhatják a fent említett Retail server API-t, és valós időben adhatnak hűségpontokat. Ilyen esetekben nincs szükség ellenőrzési lépésre, mivel tevékenység történt, és a megfelelő pontokat meg kell adni. Vannak azonban oylan esetek, ahol a kiskereskedő szeretne pontok odaítélése előtt a rekordokat áttekinteni. Például a kiskereskedő létrehozott egy workshopot az üzletben, amelyre az ügyfelek feliratkozhatnak az elektronikus kereskedelem webhelyen vagy bármilyen más eseményregisztrációs alkalmazásban. Azonban csak a részvevő vevőknek járnak hűségpontok. Az ilyen esetekhez a 10,0 verzióban bevezettünk egy **Kiskereskedelmi hűség egyéb tevékenységtípus sorok** entitást. Az adatentitás lehetővé teszi, hogy a kiskereskedő használja adatok importálására/exportálására szolgáló keretrendszert (DIXF) vagy az OData API-t, így rögzítheti a tevékenységet, amelyek után a vevők hűségpontokat kell kapjanak. Az adatentitás a tevékenységeket a **Hűségsorok egyéb tevékenységekhez** nevű naplóban tárolja, amely ellenőrzési és módosítási célokra használható. Az adatok ellenőrzését követően az informatikai felhasználó manuálisan feladhatja tevékenység sorokat vagy futtathatja a **Más tevékenységtípus hűségsorok feldolgozása** nevű feladatot, amely feladja az összes fel nem adott tevékenységsort és megadja a pontokat az ügyfeleknek a kereseti szabályok alapján. A fenti esetben az eseményregisztrációs alkalmazás meghívta OData API-t a vevői adatok küldéséhez a Dynamics 365 for Retail rendszerbe. Informatikai felhasználó azonban csak azon vevőkhöz tehet közzé tevékenységsorokat, akik részt vettek a workshopon, és törölheti a tevékenységsorokat más ügyfelektől. 
+    Az első lépés a Retail rendszeren kívül történik, például a márkával kapcsolatos tweet vagy a márka kedvelése a Facebook felületén. A tevékenységhez felismerését követően a kiskereskedők meghívhatják a fent említett Retail server API-t, és valós időben adhatnak hűségpontokat. Ilyen esetekben nincs szükség ellenőrzési lépésre, mivel tevékenység történt, és a megfelelő pontokat meg kell adni. Vannak azonban oylan esetek, ahol a kiskereskedő szeretne pontok odaítélése előtt a rekordokat áttekinteni. Például a kiskereskedő létrehozott egy workshopot az üzletben, amelyre az ügyfelek feliratkozhatnak az elektronikus kereskedelem webhelyen vagy bármilyen más eseményregisztrációs alkalmazásban. Azonban csak a részvevő vevőknek járnak hűségpontok. Az ilyen esetekhez a 10,0 verzióban bevezettünk egy **Kiskereskedelmi hűség egyéb tevékenységtípus sorok** entitást. Az adatentitás lehetővé teszi, hogy a kiskereskedő használja adatok importálására/exportálására szolgáló keretrendszert (DIXF) vagy az OData API-t, így rögzítheti a tevékenységet, amelyek után a vevők hűségpontokat kell kapjanak. Az adatentitás a tevékenységeket a **Hűségsorok egyéb tevékenységekhez** nevű naplóban tárolja, amely ellenőrzési és módosítási célokra használható. Az adatok ellenőrzését követően az informatikai felhasználó manuálisan feladhatja tevékenység sorokat vagy futtathatja a **Más tevékenységtípus hűségsorok feldolgozása** nevű feladatot, amely feladja az összes fel nem adott tevékenységsort és megadja a pontokat az ügyfeleknek a kereseti szabályok alapján. A fenti esetben az eseményregisztrációs alkalmazás meghívta OData API-t a vevői adatok küldéséhez a Dynamics 365 Retail rendszerbe. Informatikai felhasználó azonban csak azon vevőkhöz tehet közzé tevékenységsorokat, akik részt vettek a workshopon, és törölheti a tevékenységsorokat más ügyfelektől. 
 
     > [!NOTE]
     > Jelenleg a rendszer megköveteli a felhasználóktól, hogy állítsanak be egy számsorozatot az "egyéb tevékenységtípusokhoz", de ez nem lesz szükséges lépés a jövőbeli kiadásokban. Számsorozat beállításához kattintson a **Megosztott kiskereskedelmi paraméterek** \> **Számsorozatok** lehetőségre, és válasszon ki egy számsorozatot a **Hűséghez kapcsolódó egyéb tevékenységtípus azonosítója** elemhez.

@@ -3,7 +3,7 @@ title: Karbantartási ütemezés költsége
 description: Ez a cikk az Eszközkezelés karbantartási ütemezésének költségét ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875683"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922068"
 ---
 # <a name="maintenance-schedule-cost"></a>Karbantartási ütemezés költsége
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 Az Eszközkezelésben kiszámolható karbantartási ütemezés soraiban lévő költségvetési költség. Ez akkor lehet hasznos, ha áttekintést szeretne kapni a várható költségekről, például a következő évre tervezett megelőző karbantartási feladatokkal kapcsolatos költségekről. A számítások a karbantartási ütemezés „Karbantartási tervek”, „Karbantartási körök” és „Karbantartási kérések” típusú sorain.
 
@@ -48,10 +46,11 @@ Az Eszközkezelésben kiszámolható karbantartási ütemezés soraiban lévő k
 
 5. Kattintson az **OK** gombra az költségszámítás indításához.
 
-6. A **Karbantartási ütemezés költsége** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott műveleti ablaktáblacsoport gombjai kék színnel vannak kiemelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
+6. A **Karbantartási ütemezés költsége** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott műveleti ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
 7. Ha új költségszámítási számítást szeretne végezni, kattintson a **Költségszámítás** gombra.
 
+A lenti ábra a karbantartás ütemezés költség-számításának eredményeit mutatja.
 
 ![1. ábra](media/17-preventive-maintenance.png)
 

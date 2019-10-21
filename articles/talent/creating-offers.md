@@ -1,6 +1,6 @@
 ---
 title: Ajánlatok létrehozása, jóváhagyása és aláírása
-description: Ez a témakör az ajánlatok létrehozását, jóváhagyását és aláírását ismertheti a Dynamics 365 for Talent megoldást használó jelöltek számára.
+description: Ez a témakör az ajánlatok létrehozását, jóváhagyását és aláírását ismertheti a Dynamics 365 Talent megoldást használó jelöltek számára.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739633"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008105"
 ---
 # <a name="create-approve-and-sign-offers"></a>Ajánlatok létrehozása, jóváhagyása és aláírása
 
@@ -110,7 +110,7 @@ Számos művelet hajtható végre az ajánlat pályázónak való küldése elő
 Ha az Adobe Sign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy Adobe Sign licencet ebben a lépésben. 
 
 ### <a name="docusign"></a>DocuSign
-Ha a DocuSign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy DocuSign licencet ebben a lépésben. A bejelentkezést követően DocuSign profilhoz társított alapértelmezett fiók és engedélyek kapcsolódnak a Talent Attract alkalmazáshoz. 
+Ha a DocuSign van kiválasztva elsődleges elektronikus aláírásai módszerként az alkotóknak csatlakoztatni kell egy DocuSign licencet ebben a lépésben. A bejelentkezést követően DocuSign profilhoz társított alapértelmezett fiók és engedélyek kapcsolódnak a Talent: Attract alkalmazáshoz. 
 
 -  Megtekintheti és szerkesztheti az e-mail sablont, szükség szerint.
 

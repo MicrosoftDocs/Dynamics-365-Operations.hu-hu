@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577869"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018038"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -34,7 +34,7 @@ Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funk
 
 Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Retail csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP alkalmazásban.
 
-A Dynamics 365 for Retail 10.0 verzió előtti kiadásokban az [automatikus költség](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációi csak az elektronikus kereskedelmi és a hívásközponti csatornákban létrehozott rendelések számára hozzáférhetők. A 10.0 és a későbbi verziókban a pénztár által létrehozott rendelések is kihasználhatják az automatikus költségek konfigurációit. Ezzel a módszerrel a további vegyes költségek szisztematikusan hozzáadhatók az értékesítési tranzakciókhoz.
+A Retail 10.0 verzió előtti kiadásokban az [automatikus költség](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációi csak az elektronikus kereskedelmi és a hívásközponti csatornákban létrehozott rendelések számára hozzáférhetők. A 10.0 és a későbbi verziókban a pénztár által létrehozott rendelések is kihasználhatják az automatikus költségek konfigurációit. Ezzel a módszerrel a további vegyes költségek szisztematikusan hozzáadhatók az értékesítési tranzakciókhoz.
 
 A 10.0-s verzió előtti kiadások használata esetén a pénztárfelhasználót a rendszer felkéri arra, hogy manuálisan adja meg a szállítási díjat egy „összes szállítása” vagy „kiválasztottak szállítása” pénztártranzakció létrehozása során. Míg az alkalmazás vegyes költségekre vonatkozó lehetőségei a költségek rendelésben való leírásával kapcsolatban használhatók, ezek nem nyújtanak szisztematikus számítást – a számítás a felhasználó által beírt adatokon alapul a költségek értékek meghatározásakor. A költségeket csak egyszeri „szállítással” kapcsolatos költségkóddal lehet hozzáadni, és a létrehozás után nem lehet egyszerűen szerkeszteni és módosítani őket a pénztárban.
 

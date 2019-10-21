@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 1b55b91246b22951f4e1d148f59444423e1d8a3d
-ms.sourcegitcommit: e54607a2c80bec4db05045825914f50947f6e31e
+ms.openlocfilehash: 811d499a3eb8133e5ffd29bb4ae6a0c57708accd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023442"
 ---
 # <a name="create-and-update-store-hours"></a>Nyitvatartási idő létrehozása és frissítése
 
@@ -36,7 +36,7 @@ A különböző csatornákhoz több nyitvatartási idő is konfigurálható. Ily
 
 Ha egy vevőnek egy másik üzletben felvehető rendelése van, akkor a pénztáros kiválaszthatja azokat a dátumokat, amikor a rendelés felvehetővé válik abban az üzletben. Az üzletkeresésben megjelennek a dátumok és a nyitvatartási idők. A pénztáros kiválaszthat egy dátumot és helyet, valamint kinyomtathat egy átvételi bizonylatot is, amely tartalmazza az üzlet nyitvatartási idejét.
 
-Ez a funkció a Microsoft Dynamics 365 for Retail 8.1.2-es és későbbi verzióiban áll rendelkezésre.
+Ez a funkció a Microsoft Dynamics 365 Retail 8.1.2-es és későbbi verzióiban áll rendelkezésre.
 
 ## <a name="configure-store-hours"></a>Nyitvatartási idő konfigurálása
 

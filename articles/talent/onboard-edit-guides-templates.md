@@ -1,6 +1,6 @@
 ---
-title: Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 for Talent - Onboard szolgáltatásban
-description: Ez a témakör azt mutatja be, hogyan lehet tevékenységeket és egyéb információkat hozzáadni a Microsoft Dynamics 365 for Talent - Onboard felvételi útmutatóihoz és sablonjaihoz.
+title: Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 Talent – Onboard szolgáltatásban
+description: Ez a témakör azt mutatja be, hogyan lehet tevékenységeket és egyéb információkat hozzáadni a Microsoft Dynamics 365 Talent – Onboard felvételi útmutatóihoz és sablonjaihoz.
 author: andreabichsel
 manager: ''
 ms.date: 06/19/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68afc5d789d1f4af67cd2ec73eb0e073efad0761
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 7803c7cd2c58b8544d2c8dd711c295d6882f9fca
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864393"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010798"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-for-talent-onboard"></a>Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 for Talent: Onboard szolgáltatásban
+# <a name="edit-onboarding-guides-and-templates"></a>Bevezetési útmutatók és sablonok szerkesztése
 
 [!include [banner](includes/banner.md)]
 
-Miután létrehozta a felvételi útmutatót vagy sablont a Microsoft Dynamics 365 for Talent: Onboard szolgáltatásban, hozzá kell adnia egy bevezetést, a tevékenységeket, a kapcsolattartókat és az erőforrásokat. Az Onboard segítségével multimédiás tartalmakat adhat felvételi útmutatóihoz, például a következő lehetőségek közül választhat:
+Miután létrehozta a felvételi útmutatót vagy sablont a Microsoft Dynamics 365 Talent: Onboard szolgáltatásban, hozzá kell adnia egy bevezetést, a tevékenységeket, a kapcsolattartókat és az erőforrásokat. Az Onboard segítségével multimédiás tartalmakat adhat felvételi útmutatóihoz, például a következő lehetőségek közül választhat:
 
 - YouTube-videók
 - Microsoft Sway-bemutatók

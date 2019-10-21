@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572049"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025149"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Készlet ellenőrzése a pénztárnál (POS)
 
@@ -52,7 +52,7 @@ A **Keresés a készletben** lapon a numerikus billentyűzet használatával adh
 A helyek listája kétfajta entitást tartalmaz:
 
 - **Kiskereskedelmi áruházak** – A lista azokat az üzleteket tartalmazza, amelyeket az üzletcsoport lokátorcsoport használatával konfiguráltak az aktuális üzletre a Kiskereskedelmi központban.
-- **Elosztóközpontok** – Különféle elosztóközpontokat (például raktár) lehet a Microsoft Dynamics 365 for Retail alkalmazásban beállítani. A készlet-elérhetőségi adatokat azonban a lista csak a **Szabványos**, alapértelmezett típusú elosztóközpontokra mutatja.
+- **Elosztóközpontok** – Különféle elosztóközpontokat (például raktár) lehet a Retail alkalmazásban beállítani. A készlet-elérhetőségi adatokat azonban a lista csak a **Szabványos**, alapértelmezett típusú elosztóközpontokra mutatja.
 
     > [!NOTE]
     > A készlet-elérhetőségi adatok nem jelennek meg a pénztárban a **Tranzit**, **Karantén** és **Úton lévő áruk** típusú raktárak esetében.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec1edb861619bae2ae3c211720b55e170b83ec9
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ec51c1a500b5c9ff2c363cfb69cc1d404e939df9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916622"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250645"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Igény-előrejelzés manuális módosítása
 
@@ -41,5 +41,5 @@ Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az elj
 
 ## <a name="modify-the-forecast-in-excel"></a>Előrejelzés módosítása az Excel programban
 1. Kattintson a **Megnyitás** elemre a Microsoft Office-ban.
-2. Kattintson az **Igény-előrejelzés szerkesztése** elemre az Excel programban. Az Excel programban hozzáadhatja, törölheti és szerkesztheti az igény-előrejelzés sorait. Ha nem lehet megtekinteni az adatokat Excelben, be kell jelentkeznie a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás szolgáltatásba bekapcsolt „Szeretnék bejelentkezve maradni” lehetőséggel, és engedélyeznie kell az adatkommunikációs alkalmazást.  
+2. Kattintson az **Igény-előrejelzés szerkesztése** elemre az Excel programban. Az Excel programban hozzáadhatja, törölheti és szerkesztheti az igény-előrejelzés sorait. Ha nem lehet megtekinteni az adatokat Excelben, be kell jelentkeznie bekapcsolt „Szeretnék bejelentkezve maradni” lehetőséggel, és engedélyeznie kell az adatkommunikációs alkalmazást.  
 

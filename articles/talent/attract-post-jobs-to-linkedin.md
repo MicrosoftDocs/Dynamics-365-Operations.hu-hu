@@ -1,6 +1,6 @@
 ---
-title: Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 for Talent - Attract szolgáltatásból
-description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 for Talent - Attract alkalmazást használni állások közzétételére a LinkedIn felületén.
+title: Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent - Attract szolgáltatásból
+description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 Talent - Attract alkalmazást használni állások közzétételére a LinkedIn felületén.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756176"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008243"
 ---
 # <a name="post-jobs-to-linkedin"></a>Álláshirdetések feladása a LinkedIn felületén
 
 [!include [banner](../includes/banner.md)]
 
-A LinkedIn a legnagyobb online szakmai hálózat, amely hozzáférést biztosít a világ legjobb tehetségéhez. A Microsoft Dynamics 365 for Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a LinkedIn felületén tegye közzé.
+A LinkedIn a legnagyobb online szakmai hálózat, amely hozzáférést biztosít a világ legjobb tehetségéhez. A Microsoft Dynamics 365 Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a LinkedIn felületén tegye közzé.
 
 Az Attract lehetővé teszi Limited Listingek közzétételét a LinkedIn felületén külön költség nélkül. Ezek a hirdetések csak a LinkedIn szoftveres partnerein, péládul az Attract alkalmazáson keresztül érhetők el. Nem jelennek meg a vállalat LinkedIn lapján a **Karrier** panelen, mivel csak ott csak a fizetett hirdetések jelennek meg. Azonban megjelennek, ha a potenciális jelöltek az összes elérhető állást megtekintik. A Limited Listingek a LinkedIn álláskeresésekben is megjelennek.
 

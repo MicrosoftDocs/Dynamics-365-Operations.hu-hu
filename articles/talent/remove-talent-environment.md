@@ -1,6 +1,6 @@
 ---
 title: Talent-környezetek eltávolítása
-description: Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 for Talent számára.
+description: Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 Talent számára.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518183"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010615"
 ---
 # <a name="remove-talent-environments"></a>Talent-környezetek eltávolítása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 for Talent számára.
+Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 Talent számára.
 
 ## <a name="removing-a-test-drive-environment"></a>Tesztkörnyezet eltávolítása
 
 A Talent tesztverziók esetében 60 napos lejárati szabályt alkalmazunk. A tesztkörnyezetek tulajdonosai azonban korábban is be tudják fejezni a próbaidőszakot a következő lépések végrehajtásával. 
 
-1. Lépjen a [PowerApps adminisztrációs központjába](https://admin.businessplatform.microsoft.com/).
+1. A [PowerApps Adminisztrációs központ](https://admin.businessplatform.microsoft.com/) megnyitása
 2. Válassza a **Környezetek** lehetőséget.
 3. Válassza ki a tesztmeghajtó-környezetet, amelynek hasonló az elnevezési mintázata ehhez: TestDrive - alias@domain
 4. Válassza **Törlés** lehetőséget, és hagyja jóvá a döntést. 
@@ -45,14 +45,14 @@ A meglévő tesztkörnyezetet el fogjuk távolítani. Az eltávolítása után r
 
 Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. 
 
-Egy egyetlen Talent környezet „van” egyetlen PowerApps környezeten belül, két beállítást kell figyelembe venni. Az első lehetőség a teljes PowerApps környezet eltávolításával jár; a második lehetőség csak a Talent eltávolítását foglalja magában. Az első lehetőséget akkor érdemes használni, amikor a PowerApps környezetet kifejezetten a Talent létesítése céljából hozta létre, és csak most kezdi a végrehajtást, vagy nincs semmilyen megállapított integráció. A másik lehetőség csak akkor megfelelő, amikor jól beállított PowerApps környezete van multimédiás adatokkal, amelyeket a rendszer felhasznál a PowerApps és a folyamatok esetében.
+Mivel egyetlen Talent környezet „van” egyetlen PowerApps környezeten belül, két beállítást kell figyelembe venni. Az első lehetőség a teljes PowerApps környezet eltávolításával jár; a második lehetőség csak a Talent eltávolítását foglalja magában. Az első lehetőséget akkor érdemes használni, amikor a PowerApps környezetet kifejezetten a Talent létesítése céljából hozta létre, és csak most kezdi a végrehajtást, vagy nincs semmilyen megállapított integráció. A másik lehetőség csak akkor megfelelő, amikor jól beállított PowerApps környezete van multimédiás adatokkal, amelyeket a rendszer felhasznál a PowerApps és a folyamatok esetében.
 
 > [!Important]
 > A PowerApps környezet eltávolítása előtt győződjön meg róla, nincs használatban gazdag adatintegrációkhoz a Talenten kívül. Vegye figyelembe azt is, hogy az alapértelmezett PowerApps környezeteket nem lehet eltávolítani. 
 
 Ha el szeretné távolítani a teljes PowerApps környezetet, beleértve a Talent alkalmazást és a kapcsolódó alkalmazásokat és folyamatokat:
 
-1. Lépjen a [PowerApps adminisztrációs központjába](https://admin.businessplatform.microsoft.com/).
+1. A [PowerApps Adminisztrációs központ](https://admin.businessplatform.microsoft.com/) megnyitása
 2. Válassza a **Környezetek** lehetőséget.
 3. Jelölje ki az eltávolítani kívánt környezetet.
 4. Válassza **Törlés** lehetőséget, és hagyja jóvá a döntést. 

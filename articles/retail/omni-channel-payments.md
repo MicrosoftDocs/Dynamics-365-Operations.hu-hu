@@ -1,6 +1,6 @@
 ---
 title: Többcsatornás fizetések áttekintése
-description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Microsoft Dynamics 365 for Retail szolgáltatásban.
+description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Retail szolgáltatásban.
 author: rubendel
 manager: AnnBe
 ms.date: 05/12/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 78a4538d5b4854a4c87417acc156bcfb7c0da01d
-ms.sourcegitcommit: 45eeca48c6cb4f3f94d61392f4f99a52dc443a97
+ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606192"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017574"
 ---
 # <a name="omni-channel-payments-overview"></a>Többcsatornás fizetések áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Microsoft Dynamics 365 for Retail szolgáltatásban. Tartalmaz egy átfogó listát a támogatott esetekről, a funkciókkal, a beállítással és a hibakereséssel kapcsolatos információkat, illetve néhány tipikus probléma leírását.
+Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Retail szolgáltatásban. Tartalmaz egy átfogó listát a támogatott esetekről, a funkciókkal, a beállítással és a hibakereséssel kapcsolatos információkat, illetve néhány tipikus probléma leírását.
 
 ## <a name="key-terms"></a>Kulcsfogalmak
 

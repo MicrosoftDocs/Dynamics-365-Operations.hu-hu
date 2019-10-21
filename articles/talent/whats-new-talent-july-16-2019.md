@@ -1,6 +1,6 @@
 ---
-title: A Dynamics 365 for Talent új vagy módosult elemei (2019. július 16.)
-description: Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+title: A Dynamics 365 Talent új vagy módosult elemei (2019. július 16.)
+description: Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/16/2019
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ac0990a72224395cf109c7eb42cbb48ece2a0b4f
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: fd70b29089a4bf05c8fa9e3591fdb22383ea0cdc
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795196"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009716"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-16-2019"></a>A Dynamics 365 for Talent új vagy módosult elemei (2019. július 16.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-16-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 16.)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
+Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ### <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
 #### <a name="job-approvals-appear-on-the-home-page"></a>A feladatok jóváhagyása megjelenik a kezdőképernyőn
@@ -40,7 +40,7 @@ Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: At
 A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek meg. A jóváhagyók megtekinthetik a rájuk váró jóváhagyásokat az **Önhöz rendelt** részen, ahol látható a feladat azonosítója és neve, a többi jóváhagyó és a feladat hozzárendelésének dátuma. Azok a felhasználók, akik elküldenek jóváhagyásra egy feladatot, az **Ön által küldött kérések** szakaszban látják a feladatot, ahol megjelennek azok a jóváhagyók, akiknek még jóvá kell hagyniuk a feladatot.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 A szakaszban ismertetett módosítások a 8.1.2390-ös buildre vonatkoznak.

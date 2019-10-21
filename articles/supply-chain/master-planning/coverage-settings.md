@@ -3,7 +3,7 @@ title: Fedezeti beállítások
 description: Ez a témakör az alapütemezés által a cikkszükségletek számításához használt fedezeti beállításokkal kapcsolatban tartalmaz tájékoztatást.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538894"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998971"
 ---
 # <a name="coverage-settings"></a>Fedezeti beállítások
 
@@ -49,6 +49,19 @@ A fedezeti beállítások többféleképpen is megadhatók:
 - Dimenziócsoport fedezeti beállításainak meghatározása.
 
     Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. A **Kiadott termék részletei** oldalon, az **Általános** gyorslapon, az **Adminisztráció** szakaszban válassza a **Tárolásidimenzió-csoport** hivatkozást. A **Tárolásidimenzió-csoportok** oldalon válassza a **Fedezeti terv dimenziónként** jelölőnégyzetet a cikkfedezeti beállítások létrehozására egy dimenzióhoz a tárolásidimenzió-csoportban. Minden termékdimenzió, például a konfiguráció, szín, méret, stílus esetén ki kell választani a **Fedezeti terv dimenziónként** mezőt.
+
+
+## <a name="coverage-codes"></a>Fedezeti kódok
+
+Az Alaptervezés beállítható úgy, hogy különböző feltöltési módokat használjon. A feltöltési módok vagy a tételméretezés módszere a rendszer által a beszerzett vagy termelt cikkek kötegméretének meghatározására használt technika. 
+
+Minden feltöltési mód a következő fedezeti kódok egyikéhez van hozzárendelve:
+
+- **Manuális** – Az adagméretezési módszer, amelyen a rendszer nem javasol beszerzési, átviteli vagy termelési rendeléseket a cikkhez. A termékhez tartozó tervező lesz felelős a cikkek feltöltéséhez szükséges rendelések létrehozásához.
+- **Igény szerint** – Az az adagméretezési módszer, amelyben a rendszer a termékre vonatkozó szükséglet alapján tervezett beszerzési, átmozgatási vagy termelési rendelést hoz létre. Ez általában akkor használatos, ha drága cikkekkel dolgoznak, változó igényekkel.  
+- **Időszakonként** – Az az adag-méretezési módszer, amely az adott időszakra vonatkozó összes igényt egy rendelésbe egyesíti a cikkre vonatkozóan. A rendelést az időszak első napján kell megtervezni, és a mennyisége a meghatározott időszakban teljesíti a nettó szükségletet. Az időszak a cikk első igényével kezdődik, és a megadott időtartamra vonatkozik. A következő időszak a cikk következő igényével kezdődik.
+- **Min/max** – Az az adagméretezési módszer, amely a készlet feltöltését tartalmazza egy bizonyos szintig, amikor az előre jelzett aktuális készlet egy küszöbérték alatt van. A feltöltési mennyiség a maximális szint és az előre jelzett aktuális szint közötti különbség lesz.
+
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -1,6 +1,6 @@
 ---
 title: Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
-description: Ez a témakör azt mutatja be, hogy milyen fejlesztéseket vezettek be a kötegek kezelésével kapcsolatban a kötegelt nyomkövetésű cikkek esetén a kiskereskedelmi kimutatások feladási folyamata során.
+description: Ez a témakör azokat a fejlesztéseket mutatja be, amelyeket a kötegeknek a kötegelt nyomon követésű cikkek esetén, a kiskereskedelmi kimutatások feladási folyamata során történő kezelésével kapcsolatban vezettünk be.
 author: josaw1
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,20 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4456fc3d5bc4547fa8211642b11ca6df455fa187
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: 35823efa2844898d3eecbf91624b3e37d308b63c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617389"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025794"
 ---
-# <a name="improved-handling-of-batch-tracked-items"></a>Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
+# <a name="improved-handling-of-batch-tracked-items"></a>Kötegelt nyomon követésű cikkek továbbfejlesztett kezelése
 
-A Microsoft Dynamics 365 for Retail pénztár (POS) alkalmazásban a kötegelt nyomkövetésű cikkek kötegszámai nem rögzíthetők az értékesítés pillanatában. Bizonyos konfigurációk esetén azonban amikor az értékesítéseket a központban vevői rendeléseken vagy kimutatásfeladáson keresztül adják fel, a Microsoft Dynamics-rendszer arra számít, hogy a kötegelt nyomkövetésű cikkekhez léteznek érvényes kötegszámok, és ezeket használják majd a számlázási folyamat során.
+A Retail POS (Pénztár) alkalmazásban a kötegelt nyomon követésű cikkek kötegszámai nem rögzíthetők az értékesítés pillanatában. Bizonyos konfigurációk esetén azonban amikor az értékesítéseket a központban vevői rendeléseken vagy kimutatásfeladáson keresztül adják fel, a Microsoft Dynamics-rendszer arra számít, hogy a kötegelt nyomkövetésű cikkekhez léteznek érvényes kötegszámok, és ezeket használják majd a számlázási folyamat során.
 
 Ha a termékekhez léteznek érvényes kötegszámok, a rendszer ezeket használja a vevői rendelések számlázási folyamata és a kimutatásfeladásból származó értékesítési rendelés számlázási folyamata során. Ellenkező esetben a vevői rendelés számlázási folyamata nem képes a feladásra, és a pénztárfelhasználó számára hibaüzenet jelenik meg. A kimutatásfeladás pedig hibás állapotba kerül. Ez a hibás állapot akkor fordulhat elő, ha negatív készlet van bekapcsolva a termékekhez.
 
-A Microsoft Dynamics for Retail 10.0.4-es és újabb verzióiban végzett fejlesztések segítségével garantálható, hogy amikor a kötegelt nyomkövetésű cikkekhez negatív készlet van bekapcsolva, a vevői rendelés és az értékesítési rendelés kimutatásfeladáson keresztül történő számlázása nincs zárolva az adott cikkekhez, ha a készlet 0 (nulla) vagy ha nincs elérhető kötegszám. Az új funkció alapértelmezett kötegazonosítót használ az értékesítési sorokhoz, ha nem találhatók kötegszámok.
+A Retail 10.0.4-es és újabb verzióiban végzett fejlesztésekkel biztosítható, hogy amikor negatív készlet van bekapcsolva a kötegelt nyomon követésű cikkekhez, a vevői rendelés és az értékesítési rendelés kimutatásfeladáson keresztül történő számlázása ne legyen zárolva az adott cikkekhez, ha a készlet 0 (nulla) vagy ha nincs elérhető kötegszám. Az új funkció alapértelmezett kötegazonosítót használ az értékesítési sorokhoz, ha nem találhatók kötegszámok.
 
 A vevői rendelésekhez használt alapértelmezett kötegazonosító meghatározásához állítsa be az **Alapértelmezett kötegazonosító** mezőt a **Kiskereskedelmi paraméterek** lap **Vevői rendelések** fülének **Rendelés** gyorslapján.
 
