@@ -42,6 +42,8 @@
               items:
                 - name: Telepítési beállítások
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Felhőbeli telepítés
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Felhőbeli telepítések rendszerkövetelményei
@@ -54,22 +56,26 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Finance and Operations alkalmazás üzemeltetője a 21Vianet Kínában
+                - name: A Finance and Operations alkalmazás üzemeltetője Kínában a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Finance and Operations alkalmazás Franciaországban
+                - name: A Finance and Operations alkalmazások Franciaországban
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek kezdőlapja
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Előzetes funkciók a Finance and Operations alkalmazás 10.0.6-os (2019. novemberi) verziójában
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations alkalmazás 10.0.5-ös verziója (2019. október)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations 10.0.4-es verziója (2019. július)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A Supply Chain Management 10.0.7-es verziójának (2019. december) előzetes funkciói
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (2019. november)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Új vagy módosult elemek a korábbi verziókban
+                  items:
+                    - name: Új vagy módosult elemek a Finance and Operations kezdőlapján
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations alkalmazás 10.0.5-ös verziója (2019. október)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations 10.0.4-es verziója (2019. július)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Eltávolított vagy elavult funkciók
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az AX 2012 elhalasztott funkciói
@@ -1685,10 +1691,8 @@
                       href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
                     - name: Anyagfelhasználás regisztrálása mobileszköz segítségével
                       href: production-control/register-material-consumption-hand-held-device.md
-                    - name: Nyersanyag-fogyasztás kezelése ürítési elvek használatával
+                    - name: Nyersanyagfogyasztás kezelése ürítési elvek használatával
                       href: production-control/flushing-principles.md
-                    - name: Termelési rendelések áttárolása kiszállítási területekbe
-                      href: production-control/cross-docking-opportunities.md
                     - name: A termelés kimeneti helyének beállítása késztermékekhez
                       href: production-control/production-output-location.md
                     - name: Anyagjegyzékek jelentése befejezettként
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Raktári munka halasztott feldolgozása
                   href: warehousing/deferred-put.md
+            - name: Áttárolás
+              items:
+                - name: Termelési rendelések áttárolása kiszállítási területekbe
+                  href: production-control/cross-docking-opportunities.md
+                - name: Szállítmány automatikus kiadása áttároláshoz
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Részleges kiadás és a részleges szállítmány
               items:
                 - name: Szállítási rakomány részleges szállítása
@@ -2309,11 +2319,13 @@
                   href: warehousing/pack-materials-packing-material-fees.md
                 - name: A kézi csomagolás beállítása (csak 2016. február és május)
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Cikkek újbóli felosztására vonatkozó szabályok rövid kitárolásának beállítása
+                - name: Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-            - name: Készletszámlálás
+                - name: A kivétel kezelésére vonatkozó raktári munka visszavonása
+                  href: warehousing/cancel-warehouse-work.md
+            - name: Készletleltár
               items:
-                - name: Készletszámlálás okainak kódjai
+                - name: Készletleltár okkódjai
                   href: warehousing/reason-codes-for-counting-journals.md
                 - name: Készletzárolás
                   href: inventory/inventory-blocking.md
