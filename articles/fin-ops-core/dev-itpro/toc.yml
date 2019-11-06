@@ -1,18 +1,20 @@
-- name: A Finance and Operations fejlesztése és adminisztrációja
+- name: A Finance and Operations alkalmazások fejlesztése és felügyelete
   items:
-    - name: A Finance and Operations fejlesztése és adminisztrációja
+    - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
       items:
-        - name: A Finance and Operations fejlesztése és adminisztrációja
+        - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
           href: index.md
         - name: Új vagy módosult elemek
           items:
-            - name: A 30-as platformfrissítés (2019. október) előnézeti funkciói
+            - name: A Platform update 31 (2020. január) előzetes funkciói
+              href: get-started/whats-new-platform-update-31.md
+            - name: Platform update 30 (2019. november)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: 29-es platformfrissítés (2019. október)
+            - name: Platform update 29 (2019. október)
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: 28-as platformfrissítés (2019. július)
+            - name: Platform update 28 (2019. július)
               href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: 27-es platformfrissítés (2019. június)
+            - name: Platform update 27 (2019. június)
               href: ../fin-ops/get-started/whats-new-platform-update-27.md
             - name: Platform update 26 (2019. május)
               href: ../fin-ops/get-started/whats-new-platform-update-26.md
@@ -20,15 +22,15 @@
               href: ../fin-ops/get-started/whats-new-platform-25.md
             - name: Platform update 24 (2019. március)
               href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: 23-as platformfrissítés (2019. január)
+            - name: Platform update 23 (2019. január)
               href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: 22-es platformfrissítés (2018. december)
+            - name: Platform update 22 (2018. december)
               href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: 21-es platformfrissítés (2018. november)
+            - name: Platform update 21 (2018. november)
               href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: 20-as platformfrissítés (2018. szeptember)
+            - name: Platform update 20 (2018. szeptember)
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: 15-ös platformfrissítés (2018. március)
+            - name: Platform update 15 (2018. március)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
         - name: Üzleti események
           items:
@@ -62,6 +64,8 @@
                   href: business-events/how-to/FormsPro.md
                 - name: Üzleti események és az Azure Event Hubs
                   href: business-events/how-to/event-hub.md
+                - name: Üzleti események a pénzügyi időszak lezárásakor
+                  href: business-events/how-to/period-close.md
         - name: Folyamatos szállítás
           items:
             - name: Folyamatos szállítás kezdőlap
@@ -302,6 +306,26 @@
                   href: database/dbmovement-scenario-goldenconfig.md
                 - name: Romboló tesztelés
                   href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful API
+              items:
+                - name: Áttekintés
+                  href: database/api/dbmovement-api-overview.md
+                - name: Verziószámozás és támogatás
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Hitelesítés
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Szabályozás
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Referencia
+                  items:
+                    - name: API v1 hivatkozás
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Adatbázis biztonsági mentéseinek listája
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Adatbázis-frissítés létrehozása
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Műveleti tevékenység állapotának lekérése
+                      href: database/api/v1/reference-get-status.md
         - name: Bemutató adatok
           items:
             - name: Bemutató adatok – áttekintés
@@ -1213,7 +1237,7 @@
             - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Támogatás kérése a 21Vianet által Kínában működtetett Finance and Operations rendszerrel kapcsolatban
               href: lifecycle-services/21vianet-support.md
             - name: Igénylések benyújtása a Dynamics Service mérnöki csapatához

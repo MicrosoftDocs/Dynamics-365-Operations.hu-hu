@@ -1,5 +1,5 @@
 ---
-title: A bevételmegjelenítés beállítása
+title: A bevételelszámolás beállítása
 description: Ez a cikk a bevételmegjelenítés beállítási lehetőségeit és a beállítások hatását mutatja be.
 author: kweekley
 manager: aolson
@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ff513d2e2d2968e531e4515c45abdc470b384123
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184094"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570333"
 ---
-# <a name="revenue-recognition-setup"></a>A bevételmegjelenítés beállítása
+# <a name="revenue-recognition-setup"></a>A bevételelszámolás beállítása
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A programba új **Bevételmegjelenítés** modul került, amelyben minden szükséges beállításhoz tartozik menüelem. Ez a cikk a beállítási lehetőségeket és a beállítások hatását mutatja be.
 
-A **Bevételmegjelenítés** modulban a következő beállítások adhatók meg:
+> [!NOTE]
+> A „Bevétel elszámolása” funkció nem kapcsolható be a Funkciókezelés helyen. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
+
+A **Bevétel elszámolása** modulban a következő beállítások adhatók meg:
 
 - Bevételmegjelenítési naplók
 - A bevételmegjelenítés paraméterei
@@ -60,7 +62,7 @@ A naplót a **Naplónevek** oldalon (**Bevételmegjelenítés \> Beállítás \>
 
 ## <a name="parameters-for-revenue-recognition"></a>A bevételmegjelenítés paraméterei
 
-A bevételmegjelenítés beállításai a **Főkönyvi paraméterek** oldal (**Bevételmegjelenítés \> Beállítás \> Főkönyvi paraméterek**) **Bevételmegjelenítés** lapján állíthatók be. A következő beállítások állnak rendelkezésre:
+A bevételelszámolás beállításai a **Főkönyvi paraméterek** oldal (**Bevételmegjelenítés \> Beállítás \> Főkönyvi paraméterek**) **Bevételmegjelenítés** lapján állíthatók be. A következő beállítások állnak rendelkezésre:
 
 - **Bevételmegjelenítési napló neve** – Válassza ki a bevételmegjelenítéshez létrehozott naplót. Ha a bevétel megjelenítése a bevételi ütemezésből történik, vagy ha már számlázott értékesítési rendeléshez hajt végre újbóli felosztást, akkor a naplóra szükség van.
 - **Engedményfelosztási mód engedélyezése** – Ha az egyes kiadott termékek bevételi árában meghatározott méltányos piaci érték felosztásával szeretné meghatározni a bevételi árat, adja meg az **Igen** értéket a beállításhoz. Ez a felosztás a cikkek minden sorengedményének a felosztását tartalmazza. Ha a beállítás értéke **Nem**, akkor a rendszer az egyes kiadott termékek bevételi árában megadott medián árat használja. Ha a beállítás értéke **Nem**, de nem állít be medián árat a kiadott termékekhez, akkor nem kerül sor a bevételi ár felosztására.

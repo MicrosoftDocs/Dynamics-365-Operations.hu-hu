@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.yml
+  href: talent-welcome.md
   items:
     - name: Első lépések
       items:
@@ -8,6 +8,10 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. október 23.
+              href: whats-new-talent-october-23-2019.md
+            - name: 2019. október 8.
+              href: whats-new-talent-october-8-2019.md
             - name: 2019. október 1.
               href: whats-new-talent-october-1-2019.md
             - name: 2019. szeptember 17.
@@ -391,15 +395,17 @@
               href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Integráció
       items:
+        - name: A Dynamics 365 for Talent adatintegrációs útmutatója
+          href: data-integration.md
+        - name: Common Data Service-integráció konfigurálása
+          href: hr-common-data-service-integration.md
         - name: Integráció a Dynamics 365 for Finance and Operations rendszerrel
           href: talent-financeandoperations-integration.md
         - name: Bérlista-integráció konfigurálása a Talent és a Dayforce között
           href: configure-payroll-integration.md
-        - name: A Dynamics 365 for Talent adatintegrációs útmutatója
-          href: data-integration.md
         - name: Integrációval kapcsolatos GYIK
           href: talent-fo-integration.md
-        - name: Ismétlődő adatexportálás Azure Logic alkalmazások használatával
+        - name: Ismétlődő adatexportálás Azure Logic Apps használatával
           href: tutorial-integration-recurring-export.md
         - name: Office-integráció
           items:
