@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249494"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653648"
 ---
 # <a name="product-configuration-overview"></a>Termékkonfiguráció áttekintése
 
@@ -73,7 +73,7 @@ A táblázatok megszorításai felhasználó által definiáltak vagy rendszer d
 
 A felhasználó által a felhasználó által definiált táblamegszorítás épül fel. A felhasználó választja ki, amely megadja annak a táblának az oszlopok Attribútumtípusok kombinációja, és ezután beírja az értékeket a tartományok, a kijelölt attribútum típusú alakítson ki a sorokat a táblamegszorításban.  
 
-Rendszer által definiált táblamegszorítás referenciaként használandó tábla kiválasztása, és kiválasztja az ebből a táblából alakítson ki az oszlopokat a megszorításban szereplő mezők határozzák meg. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
+Rendszer által definiált táblamegszorítás referenciaként használandó tábla kiválasztása, és kiválasztja az ebből a táblából alakítson ki az oszlopokat a megszorításban szereplő mezők határozzák meg. A táblamegszorítás sorai a Supply Chain Management tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
 
 Táblamegszorítás egy termékkonfigurációs modell a Táblamegszorítás oszlopai hivatkozásoknak a táblamegszorítás definíciójának és a modellben a megfelelő attribútumokat tartalmazza.
 

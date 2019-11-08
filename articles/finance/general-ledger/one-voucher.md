@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186394"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553187"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -51,7 +51,7 @@ A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kif
 
 ## <a name="issues-with-one-voucher"></a>Problémák az Egy bizonylat funkcióval
 
-Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítás, a tranzakciók sztornírozása, egy analitikus napló egyeztetése a főkönyvvel, a pénzügyi beszámolók és egyebek egyeztetése során. (A kiegyenlítés során felmerülő problémákkal kapcsolatos további információkért tekintse át például az [Egyetlen bizonylat több vevői vagy szállítói rekorddal](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records) részt. A helyes munkavégzés és jelentéskészítés érdekében ezekhez a folyamatokhoz és jelentésekhez szükségesek a tranzakciók részletei. Bár egyes forgatókönyvek még mindig jól működhetnek a szervezete beállításaitól függően, gyakoriak a problémák, ha több tranzakció kerül egy bizonylatra.
+Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítás, a tranzakciók sztornírozása, egy analitikus napló egyeztetése a főkönyvvel, a pénzügyi beszámolók és egyebek egyeztetése során. (A kiegyenlítés során felmerülő problémákkal kapcsolatos további információkért tekintse át például az [Egyetlen bizonylat több vevői vagy szállítói rekorddal](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records) részt. A helyes munkavégzés és jelentéskészítés érdekében ezekhez a folyamatokhoz és jelentésekhez szükségesek a tranzakciók részletei. Bár egyes forgatókönyvek még mindig jól működhetnek a szervezete beállításaitól függően, gyakoriak a problémák, ha több tranzakció kerül egy bizonylatra.
 
 Például feladhatja az alábbi többsoros bizonylatot.
 

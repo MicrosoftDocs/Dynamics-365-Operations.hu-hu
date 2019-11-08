@@ -3,35 +3,35 @@ title: Eszköztípusok
 description: Ez a témakör bemutatja, hogyan lehet eszköztípusokat létrehozni az Eszközkezelés modulban. Leírja az eszköztípusokhoz kapcsolódó elemeket is.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288dac77f9d999012ec930ef2bca5c0921c2955f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a19b8c40dd7d48b2d78723c4411f1699819c4026
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783326"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626085"
 ---
 # <a name="asset-types"></a>Eszköztípusok
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Ez a témakör az eszköztípusok létrehozásának lépéseit mutatja be. Leírja az eszköztípusokhoz kapcsolódó elemeket is. Az eszköztípusokat az eszközök általános kategóriaként használják. Ilyenek például a CNC-gépek, mérőműszerek és teherautó-motorok. Az eszköztípusok a feladattípusok (karbantartási feladatok), az eszközök életciklus-állapotainak, az eszközmérések, az eszközattribútumok, az állapotértékelési sablonok és az eszközhöz választható eszközmodellek kezelésére szolgálnak. Az eszköz létrehozásakor meg kell adnia az eszköz típusát.
+
+Ez a témakör az eszköztípusok létrehozásának lépéseit mutatja be. Leírja az eszköztípusokhoz kapcsolódó elemeket is. Az eszköztípusokat az eszközök általános kategóriaként használják. Ilyenek például a CNC-gépek, mérőműszerek és teherautó-motorok. Az eszköztípusok a karbantartási feladattípusok (karbantartási feladatok), az eszközök életciklus-állapotainak, számláóknak, az eszközmérések, az eszközattribútumok, az állapotértékelési sablonok és az eszközhöz választható eszközmodellek kezelésére szolgálnak. Az eszköz létrehozásakor meg kell adnia az eszköz típusát.
 
 Minden eszköztípushoz az eszköztípus-beállítások különböző változatait lehet létrehozni. Például a **Teherautók** nevű eszköztípushoz létre lehet hozni különböző eszköztípus-változatokat a különböző eszközgyártókhoz és eszközmodellekhez. Az egyes eszköztípus-beállításokhoz hozzáadhatja a szükséges pótalkaltrészeket és karbantartási terveket.
 
@@ -39,35 +39,35 @@ Először be kell állítani a szükséges eszközök típusát. Ezután hozza l
 
 ## <a name="create-an-asset-type"></a>Eszköztípus létrehozása
 
-1. Válassza ki az **Eszközkezelés** \> **Beállítás** \> **Eszköztípusok** \> **Eszköztípusok** lehetőséget.
+1. Válassza ki az **Eszközkezelés** > **Beállítás** > **Eszköztípusok** > **Eszköztípusok** lehetőséget.
 2. Válassza az **Új** lehetőséget az eszköztípus létrehozásához.
 3. Az **Eszköztípus** mezőben adjon meg egy eszköztípus-azonosítót.
 4. A **Név** mezőben adjon meg egy nevet.
 5. Az **Eszköz életciklusmodellje** mezőben válasszon ki egy eszköz-életciklusmodellt. Ha további tájékoztatást szeretne az eszközök életciklus-állapotaival és életciklusmodelljeivel kapcsolatban, tekintse meg az [Eszközök életciklus-állapotai](object-stages.md) részt.
 6. Állítsa az **Összesen** beállítást **Igen** értékre, ha szeretné, hogy az adott eszköztípusokkal rendelkező eszközökhöz a rendszer összesített fő teljesítménymutató-értékeket (KPI) számítson ki.
 7. Válassza a **Mentés** lehetőséget.
-8. A **Feladattípusok** gyorslapon válassza ki azokat a feladattípusokat, amelyek az adott eszköztípushoz kapcsolódnak:
+8. A **Karbantartási feladat-típusok** gyorslapon válassza ki azokat a karbantartásifeladat-típusokat amelyek az adott eszköztípushoz kapcsolódnak:
 
-    - A feladattípus kiválasztásához válassza ki a **Fennmaradó feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl](media/29-setup-for-objects.png), és mozgassa a **Kiválasztott feladattípusok** szakaszba.
-    - Az összes rendelkezésre álló feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **Fennmaradó feladattípusok** mezőből átvisz a **Kválasztott feladattípusok** mezőbe.
-    - A feladattípus kiválasztásának visszavonásához válassza ki a **Kiválasztott feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl](media/31-setup-for-objects.png), és mozgassa a **Fennmaradó feladattípusok** szakaszba.
+    - A karbantartásifeladat-típus kiválasztásához válassza ki a **Karbantartási feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl](media/29-setup-for-objects.png), és mozgassa a **Kiválasztott Karbantartási feladattípusok** szakaszba.
+    - Az összes rendelkezésre álló karbantartási feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **A fennmaradó karbantartási feladattípusok** mezőből átvisz a **Kiválasztott karbantartási feladattípusok** mezőbe.
+    - A karbantartási feladattípusok kiválasztásának visszavonásához válassza ki a **Kiválasztott karbantartási feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl](media/31-setup-for-objects.png), és mozgassa a **Fennmaradó karbantartási feladattípusok** szakaszba.
 
-9. Ezután kiválaszthatja azokat az eszközmértékeket, amelyek az eszköztípushoz kapcsolódnak. Az **Eszközmértékek** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a feladattípusoknál leírt módszerekkel. Az eszközmértékek beállításával kapcsolatos további információkért tekintse meg a [Karbantartás alatt álló eszköz mérései](counters.md) részt.
-10. Ezután kiválaszthatja azokat az attribútumtípusokat, amelyek az eszköztípushoz kapcsolódnak. Az **Attribútumtípusok** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a feladattípusoknál leírt módszerekkel. Ezután az attribútumtípusok preferált sorrendjének létrehozásához válasszon ki egy attribútumtípust a **Kiválasztott attribútumtípusok** mezőből, majd a fel és a le nyílgombokkal helyezze át. Az attribútumtípusok sorrendje az ilyen eszköztípust használó eszközöknél jelenik meg. Az eszközattribútumokról bővebben lásd: [Karbantartási attribútumtípusok](../setup-for-functional-locations/specification-types.md).
+9. Ezután kiválaszthatja azokat az számlálókat, amelyek az eszköztípushoz kapcsolódnak. Az **számlálók** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusok leírt módszerekkel. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](counters.md).
+10. Ezután kiválaszthatja azokat az attribútumtípusokat, amelyek az eszköztípushoz kapcsolódnak. Az **Attribútumtípusok** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusoknál leírt módszerekkel. Ezután az attribútumtípusok preferált sorrendjének létrehozásához válasszon ki egy attribútumtípust a **Kiválasztott attribútumtípusok** mezőből, majd a fel és a le nyílgombokkal helyezze át. Az attribútumtípusok sorrendje az ilyen eszköztípust használó eszközöknél jelenik meg. Az eszközattribútumokról bővebben lásd: [Karbantartási attribútumtípusok](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > Amikor új attribútum-típusokat ad hozzá az **Attribútumtípusok** gyorslaphoz, a program automatikusan frissíti a meglévő eszközöket a megadott adatokkal.
 
-11. Ezután kiválaszthatja azokat az állapotértékelési sablonokat, amelyek az eszköztípushoz kapcsolódnak. Az **Állapotértékelések** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a feladattípusoknál leírt módszerekkel. Az állaportértékelési sablonokkal és regisztrációval kapcsolatos további tudnivalókat lásd: [Állapotértékelés](../setup-for-objects/condition-assessment.md).
+11. Ezután kiválaszthatja azokat az állapotértékelési sablonokat, amelyek az eszköztípushoz kapcsolódnak. Az **Állapotértékelések** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusoknál leírt módszerekkel. Az állaportértékelési sablonokkal és regisztrációval kapcsolatos további tudnivalókat lásd: [Állapotértékelés](../setup-for-objects/condition-assessment.md).
 12. Az **Eszközmodell** gyorslap a kiválasztott eszköztípuson beállított összes eszközgyártó és-modell kombinációját jeleníti meg. Ha a kombinációkat gyártó szerint szeretné megtekinteni, válassza az **Eszközmodell** lehetőséget az **Eszközmodell** oldal megnyitásához.
 
     Az **Eszközmodell** oldalon hozzáadhat eszközmodell-eszköztípus kapcsolatokat. Ezenkívül az **Eszköztípusok** oldalon az eszközgyártó-eszközmodell kapcsolatok közvetlenül is hozzáadhatók egy eszköz típusához. Végül az **Eszközmodell** oldalon (**Eszközkezelés** \> **Beállítás** \> **Eszközök** \> **Eszközmodell**) új eszközgyártó-eszközmodell-eszköztípus kapcsolatokat hozhat létre. Így három mód van az eszközgyártó-eszközmodell-eszköztípus kapcsolatok beállítására és szerkesztésére. Az összes elérhető kombináció különböző szempontokból látható, és a beállítással való munka során kiválaszthatja a kívánt belépési pontját.
 
 > [!NOTE]
-> - Ha meghatároz eszközmértéket egy eszköztípuson, akkor a kiválasztás automatikusan frissül az **Eszközmértékek** oldalon (**Eszközkezelés** \> **Beállítás** \> **Eszközök** \> **Eszköztípusok** \> **Eszközmértékek**).
-> - Az **Általános** gyorslap **részletek** szakaszának mezői a kiválasztott eszköztípushoz beállított feladattípusokat, eszközmértékeket, attribútumokat stb. jelenítik meg.
+> - Ha egy eszköztípuson számlálókat jelöl ki, a program automatikusan frissíti a beállításokat a **Számlálók** lapon(**Eszközkezelés** > **Beállítás** > **Eszközök** > **Eszköztípusok** > **Számlálók**).
+> - Az **Általános** gyorslap **részletek** szakaszának mezői a kiválasztott karbantartási feladattípushoz beállított feladattípusokat, számláókat, attribútumokat stb. jelenítik meg.
 
-A manuálisan létrehozott munkarendelések általában a hibaelhárító karbantartással kapcsolatosak, míg az automatikusan létrejövő munkarendelések a megelőző karbantartáshoz kapcsolódnak. A munkarendelések manuális létrehozásakor csak az **Eszköztípusok** oldal **Feladattípusok** gyorslapján kiválasztott feladattípusok használhatók. Az automatikusan létrehozott munkarendelések azonban a **Feladattípusok** oldalon létrehozott összes feladattípust használhatják (**Eszközkezelés** \> **Beállítás** \> **Feladatok** \> **Feladattípusok**).
+A manuálisan létrehozott munkarendelések általában a hibaelhárító karbantartással kapcsolatosak, míg az automatikusan létrejövő munkarendelések a megelőző karbantartáshoz kapcsolódnak. A munkarendelések manuális létrehozásakor csak az **Eszköztípusok** oldal **Karbantartási feladattípusok** gyorslapján kiválasztott feladattípusok használhatók. Az automatikusan létrehozott munkarendelések azonban a **Karbantartási feladattípusok** oldalon létrehozott összes karbantartási feladattípust használhatják (**Eszközkezelés** \> **Beállítás** \> **Feladatok** \> **Karbantartási feladattípusok**).
 
 ## <a name="create-asset-type-setup-lines"></a>Eszköztípus-beállítási sorok létrehozása
 

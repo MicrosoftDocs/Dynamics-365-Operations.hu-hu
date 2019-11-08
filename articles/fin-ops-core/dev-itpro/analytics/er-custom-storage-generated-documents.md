@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181473"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569084"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 
@@ -56,7 +56,7 @@ A jelenlegi topológiában [hozzon létre egy új ER formátumot](tasks/er-forma
 
 Annak megadásához, hogy az ER formátum által létrehozott dokumentumok hogyan továbbítódnak, konfigurálnia kell [ER célokat](electronic-reporting-destinations.md). A létrehozott dokumentumok fájlként tárolására konfigurált minden ER cél esetében meg kell adnia egy dokumentumtípust, a dokumentumkezelő keretrendszerben. A különféle dokumentumtípusok használhatók az ER formátumok által generált dokumentumok átirányításához.
 
-1. Adjon hozzá új [dokumentumtípust](../../fin-and-ops/organization-administration/configure-document-management.md) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
+1. Adjon hozzá új [dokumentumtípust](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
 2. A dokumentumtípus megkülönböztetéséhez egyéb dokumentumtípusoktól adja meg az adott kulcsszót nevében. Például a következő ábrán a név **(LOCAL) mappa**.
 3. Az **Osztály** mezőben adja meg a **Fájl csatolása** elemet.
 4. A **Csoport** mezőben adja meg a **Fájl** elemet.

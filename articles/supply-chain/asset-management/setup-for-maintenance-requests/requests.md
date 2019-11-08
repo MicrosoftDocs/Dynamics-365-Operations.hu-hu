@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 609146ebc5a31e5b28ca9ed6e04ed82b6bb1b03e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250921"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571116"
 ---
 # <a name="maintenance-requests"></a>Karbantartási kérések
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Lehetősége van beállítani különböző típusú, a vállalatnál használható kéréseket. Az egyik ilyen típus a karbantartási kérés. A karbantartási kérések az adott feladathoz szükséges munkarendelés igénylésére szolgálnak. Karbantartási kérést minden olyan felhasználó létrehozhat, aki hozzáfér az Eszközkezelés funkcióhoz. Egy tervező vagy vezető ezután eldöntheti, hogy a karbantartási kérést át kell-e alakítani munkarendeléssé, vagy ki kell-e töltenie saját életciklusát.
 
@@ -41,4 +41,4 @@ Lehetősége van beállítani különböző típusú, a vállalatnál használha
 
 A következő ábra az **Összes karbantartási kérés** listaoldalt szemlélteti.
 
-![1. ábra](media/01-setup-for-requests.png)
+![Összes karbantartási kérés listaoldal](media/01-setup-for-requests.png)

@@ -1,9 +1,9 @@
 ---
-title: Új vagy módosult elemek kezdőlapja
+title: Új vagy módosult elemek a Finance and Operations kezdőlapján
 description: Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Finance and Operations alkalmazások legújabb verzióinak új szolgáltatásait.
 author: josaw1
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c2dd8093102f92391cd782cda77afb17a3560010
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249297"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658713"
 ---
-# <a name="whats-new-or-changed-home-page"></a>Új vagy módosult elemek kezdőlapja
+# <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Új vagy módosult elemek a Finance and Operations kezdőlapján
 [!include [banner](../includes/banner.md)]
 
-Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Finance and Operations alkalmazások legújabb verzióinak új szolgáltatásait.
+2019 októberétől ez a lap már nincs karbantartva. Az ebben a témakörben található információ bemutatja, hogy hol találhatók a funkciók információi a 2019 októbere előtt kiadott Finance and Operations alkalmazásokhoz.
 
 A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra történő frissítés folyamata](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
@@ -49,13 +49,6 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>10.0.6</td>
-<td>10.0.234</td>
-<td>2019. november</td>
-<td><a href="whats-new-changed-10-0-6.md">Előzetes funkciók a Dynamics 365 for Finance and Operations 10.0.6-s verziójában (2019. november)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.5</td>
@@ -183,13 +176,6 @@ Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>30-as platformfrissítés</td>
-<td>7.0.5407</td>
-<td>2019. november</td>
-<td><a href="whats-new-platform-update-30.md">A Dynamics 365 for Finance and Operations 30-as platformfrissítés (2019. november) előzetes funkciói</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>29-as platformfrissítés</td>

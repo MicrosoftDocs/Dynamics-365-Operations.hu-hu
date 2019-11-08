@@ -3,7 +3,7 @@ title: Dynamics 365 Talent és Dynamics 365 Finance integráció – GYIK.
 description: Ez a témakör bemutatja, hogy milyen adatok szinkronizálódnak a Talent és a Finance integrációjában.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251014"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622768"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent és Dynamics 365 Finance integráció – GYIK.
 
@@ -35,6 +35,10 @@ Ez a témakör gyakori kérdésekre válaszol azzal kapcsolatban, hogy milyen ad
 A Core HR szolgáltatásban az adatok egy részhalmaza, amely szinkronizálva lesz. Összes entitás listáját lásd: [A Dynamics 365 Talent és a Dynamics 365 Finance](talent-financeandoperations-integration.md) közötti integráció.
 
 Az Attract és Onboard esetében minden adat natív a Common Data Service számára.
+
+## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Miért nem látok semmilyen adatot szinkronizálva a Common Data Service megoldásba?
+
+Alapértelmezés szerint az Common Data Service integráció ki van kapcsolva olyan új környezetekben, amelyekben nem szerepelnek a bemutató adatok. Alapértelmezés szerint a bemutatóadatokat tartalmazó új környezetekben be van kapcsolva, és az adatok szinkronizálása a környezet létesítése alkalmával kezdődik. Miután a környezet készen áll az adatok szinkronizálására, be lehet kapcsolni az integrációt. További információ: [A Common Data Service integráció konfigurálása](hr-common-data-service-integration.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Létrehozhatok egy új hozzárendelést a sablonok használata nélkül?
 

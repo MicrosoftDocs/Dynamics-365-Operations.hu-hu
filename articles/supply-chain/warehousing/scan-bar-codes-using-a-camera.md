@@ -1,6 +1,6 @@
 ---
-title: Vonalkódok beolvasása a Dynamics 365 Supply Chain Management – Raktározás alkalmazás kamerája segítségével
-description: Ez a témakör bemutatja, hogy miként állítható be a Dynamics 365 Supply Chain Management – Raktárkezelés alkalmazása arra, hogy vonalkódokat olvasson be egy mobileszköz kamerájának használatához.
+title: Vonalkódok beolvasása a Dynamics 365 for Finance and Operations – Raktározás alkalmazás kamerája segítségével
+description: Ez a témakör bemutatja, hogy miként állítható be a Dynamics 365 for Finance and Operations – Raktárkezelés alkalmazása arra, hogy vonalkódokat olvasson be egy mobileszköz kamerájának használatához.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251460"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578149"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Vonalkódok beolvasása a Dynamics 365 Supply Chain Management – Raktározás alkalmazás kamerája segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy miként állítható be a Dynamics 365 Supply Chain Management – Raktárkezelés alkalmazása arra, hogy vonalkódokat olvasson be egy mobileszköz kamerájának használatához. 
+Ez a témakör bemutatja, hogy miként állítható be a Dynamics 365 for Finance and Operations – Raktárkezelés alkalmazása arra, hogy vonalkódokat olvasson be egy mobileszköz kamerájának használatához. 
 
 ## <a name="prerequisites"></a>Előfeltételek
 A funkció használatához a Raktárkezelés alkalmazás 1.2.0.0-s verziójának kell telepítve lennie, és eszközén lennie kell kamerának. Ha megnyitja az alkalmazást a frissítést követően, akkor a rendszer felajánlja az engedélyezést az alkalmazás számára a kamera használatára. Ha az eszközön nincs kamera, akkor nem jelenik meg a felajánlás, és akkor nem tud kamerát használni a beolvasásra. 
@@ -49,7 +49,7 @@ A kamera lap minden olyan oldalnál elindul, ahol a beviteli mezőnél a prefer�
 
 | Feladatok és részletes adatok oldala | Kamera lap | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Kamerabeolvasás példafeladat részletek oldala](./media/camera-scanning-example-task-detail-page50.png)          | ![Kamerabeolvasás példafeladat kisebb oldala](./media/camera-scanning-example-camera-page50.png)          |
 
 Ha a kamera lapján a Kamera gombra kattint, akkor az kiszürkítve jelenik meg, amikor megpróbál azonosítani egy vonalkódot. Ha a vonalkód azonosítása nem történik meg 5 másodpercen belül, akkor a folyamat időkorlátja lejár, és a Kamera gomb ismét elérhető lesz. Ezután ismét megpróbálja beolvasni a vonalkódot.
 

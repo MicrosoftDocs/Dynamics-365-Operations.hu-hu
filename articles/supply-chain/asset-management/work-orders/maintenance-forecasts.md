@@ -3,7 +3,7 @@ title: Karbantartási előrejelzések
 description: Ez a cikk a karbantartási előrejelzések az Eszközkezelésben való használatát ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,111 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024499"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626293"
 ---
 # <a name="maintenance-forecasts"></a>Karbantartási előrejelzések
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-A munkarendelések létrehozásakor munkarendelési feladatokat hoz létre kapcsolódó eszközökkel és karbantartási feladattípusokkal. Karbantartási előrejelzéseket tartalmazó karbantartási feladattípus kiválasztásakor a program automatikusan átmásolja a munkarendelésbe az előrejelzéseket.
+A munkarendelések létrehozásakor munkarendelési feladatokat hoz létre, amelyek a kapcsolódó eszközökkel és karbantartási feladattípusokkal rendelkeznek. Karbantartási előrejelzéseket tartalmazó karbantartási feladattípus kiválasztásakor a program automatikusan átmásolja a munkarendelésbe az előrejelzéseket.
 
-Előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy törölni előrejelzési sorokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy az előrejelzés-sorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. 
+Előfordulhat, hogy előrejelzési sorokat szeretné egy munkarendeléshez hozzáadni, vagy egy munkarendelésből törölni azokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy az előrejelzési sorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotaival és kapcsolódó projektfázisaival kapcsolatos további információért lásd: [Előrejelzések, munkarendelések és projektek](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
 
-2. Válassza ki a munkarendelést a listában, majd kattintson az **Előrejelzés** elemre. A **Munkarendelés karbantartási előrejelzésébe**a munkarendelésen a kiválasztott karbantartási feladattípusból származó előrejelzési sorok jelennek meg.
-
-
-## <a name="add-hours-forecast-to-a-work-order"></a>Órák előrejelzésének hozzáadása egymunkarendeléshez
-
-1. Válassza ki azt a munkarendelés-feladatot, amelyhez előrejelzést szeretne hozzáadni.
-
-2. Az **Órák** gyorslapon kattintson a **Hozzáadás** lehetőségre egy új sor létrehozásához.
-
-3. Válasszon kategóriát a **Kategória** mezőben.
-
-4. Az előre jelzett órák számának beszúrása az **Órák** mezőbe.
-
-5. A **Sor tulajdonsága** mezőben válassza ki a sorban használt költségtípust.
+2. Válassza ki a munkarendelést a listában, majd a Művelet panel > **Munkarendelés** lapján a **Projekt** csoportban válassz az **Előrejelzés** pontot. A **Munkarendelés karbantartási előrejelzése** oldalon a munkarendelésen a kiválasztott karbantartási feladattípusból származó előrejelzési sorok jelennek meg.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Cikkek előrejelzésének hozzáadása egymunkarendeléshez
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Órák előrejelzésének hozzáadása egymunkarendeléshez
 
-A cikkek munkarendelés karbantartási előrejelzéshez történő hozzáadásának három módja van: Létrehozhat sorokat a cikkekhez (pótalkatrészek), amelyek nem szerepelnek a cserealkatrészek listáján az eszköz DBJ-n, kiválaszthat cserealkatrészeket a jóváhagyott cserealkatrész-listából, illetve kiválaszthat cikkeket az eszköz DBJ-ről.
+1. A **Munkarendelés karbantartási előrejelzése** lapon válassza ki azt a munkarendelési feladatot, amelyhez előrejelzést szeretne hozzáadni.
 
-1. Válassza ki azt a munkarendelés-feladatot, amelyhez előrejelzést szeretne hozzáadni.
+2. Az **Órák** gyorslapon válassza a **Hozzáadás** lehetőséget egy új sor létrehozásához.
 
-2. Válassza a **Cikkek** gyorslapot.
+3. Válasszon egy kategóriát a **Kategória** mezőben.
 
-3. A **Hozzáadás** gombra kattintva hozzon létre egy új sort egy olyan pótalkatrészhez, amely nem szerepel a pótalkatrészek vagy az eszköz DBJ listáján.
+4. Az előre jelzett órák számát írja be az **Órák** mezőbe.
 
-4. Válassza ki a cikket a **Cikkszám** mezőben.
-
-5. Írja be a mennyiséget az **Értékesítési mennyiség** mezőbe, majd válassza ki a mennyiségi egységet az **Egység** mezőben.
-
-6. Írja be az önköltségi árat és a pénznemet a megfelelő mezőkbe, majd válassza ki a **Sortulajdonság** értékét.
-
-7. Ha módosítani szeretné a cikkek soraiban megjelenített dimenziókat, kattintson a **Készlet** > **Dimenziók megjelenítése**elemre, válassza ki a dimenziókat, és válassza az „igen” beállítást a **Beállítás mentése** gombra kattintva.
-
-8. Ha a karbantartási előrejelzéshez jóváhagyott pótalkatrészt szeretne hozzáadni, kattintson a **Pótalkatrészek hozzáadása** elemre, válassza ki a pótalkatrészt, szerkessze a szükséges adatokat, ha szükséges, és kattintson az **OK** gombra.
-
-9. Ha szeretné hozzáadni a eszköz DBJ tételeit az előrejelzéshez, kattintson a **DBJ-cikkek hozzáadása** hivatkozásra, válassza ki a cikket, szerkessze akapcsolódó információt, ha szükséges, majd kattintson az **OK** gombra.
-
-10. Ha szeretne áttekintést kapni arról, hogy az Eszközkezelésben hol használják a kiválasztott sorban található cikk az eszközökkel, alapértelmezett karbantartási feladattípusokkal, pótalkatrészekkel és munkarendelésekkel kapcsolatban, válassza a **Cikket hol használják** elemet. 
+5. A **Sor tulajdonsága** mezőben válassza ki a sorhoz használandó költségtípust.
 
 
+## <a name="add-an-items-forecast-to-a-work-order"></a>A Cikkek előrejelzésének hozzáadása egymunkarendeléshez
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Költségek előrejelzésének hozzáadása egymunkarendeléshez
+Háromféle módja van cikkek munkarendelés karbantartási előrejelzésekhez történő hozzáadására. Létrehozhat sorokat a cikkekhez (pótalkatrészek), amelyek nem szerepelnek az eszköz anyagjegyzékén (DBJ), kiválaszthat cserealkatrészeket a jóváhagyott cserealkatrész-listából, illetve kiválaszthat cikkeket az eszköz DBJ-ről.
 
-1. Ez a témakör azt mutatja be, hogyan lehet költség-előrejelzést hozzáadni egy munkarendeléshez. A képernyő bal oldali részén válassza ki azt a munkarendelés-feladatot, amelyhez előrejelzést szeretne hozzáadni.
+- A **Munkarendelés karbantartási előrejelzése** lapon válassza ki azt a munkarendelési feladatot, amelyhez előrejelzést szeretne hozzáadni.
 
-2. Válassza a **Költség** gyorslapot.
+- A **Cikkek** gyorslapon a megfelelő módszer használatával vegyen fel cikkeket a karbantartási előrejelzésbe.
 
-3. Kattintson a **Hozzáadás** elemre új sor létrehozásához.
+Új sor létrehozásához egy olyan pótalkatrészhez, amely nem szerepel a pótalkatrészek vagy az eszköz DBJ listáján kövesse az alábbi lépéseket:
 
-4. Válasszon kategóriát a **Kategória** mezőben.
+1. Válassza a **Hozzáadás** lehetőséget.
+2. Válasszon egy cikket a **Cikkszám** mezőben.
+3. Az **Értékesítési Mennyiség** mezőben Írja be a mennyiséget.
+4. Az **Egység** mezőben válassza ki a mennyiséghez tartozó mértékegységet.
+5. Az **Önköltségi ár** és a **Pénznem** mezőkbe írja be a megfelelő értékeket.
+6. A **Sortulajdonság** mezőben válasszon ki egy sortulajdonságot.
+7. A cikkek soraiban megjelenített dimenziók módosításához, válassza a **Készlet** > **Dimenziók megjelenítése** elemre, válassza ki a dimenziókat, majd az a **Beállítás mentése** beállításnál az **Igen** lehetőséget.
 
-5. A **Mennyiség** mezőben adja meg a mennyiséget.
+Ha a pótalkatrészeket szeretne a jóváhagyott pótalkatrész listából hozzáadni, hajtsa végre az alábbi lépéseket:
 
-6. Szúrja be az önköltségi ár, az értékesítési pénznem és az eladási ár értékeit a megfelelő mezőkbe.
+1. Válassza a **Pótalkatrészek hozzáadása** lehetőséget.
+2. Válassza ki a pótalkatrészt, és igény szerint szerkessze a szükséges adatokat.
+3. Válassza ki az **OK** lehetőséget.
 
-7. A **Sor tulajdonsága** mezőben válassza ki a sorban használt költségtípust.
+Cikk az eszköz DBJ-ből történő hozzáadásához kövesse az alábbi lépéseket:
+
+1. Válassza a **DBJ-cikkek hozzáadása** lehetőséget.
+2. Válassza ki a cikket, és igény szerint szerkessze a szükséges adatokat.
+3. Válassza ki az **OK** lehetőséget.
+
+Ha szeretne áttekintést kapni arról, hogy hol használják a kiválasztott sorban található cikket az eszközökkel, alapértelmezett feladattípusokkal, pótalkatrészekkel és munkarendelésekkel kapcsolatban, válassza a **Cikket hol használják** elemet. Az áttekintéssel kapcsolatos további tudnivalókat lásd a [Cikk használati helye](../controlling-and-reporting/item-where-used.md)részben.
+
+
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Költségek előrejelzésének hozzáadása egy munkarendeléshez
+
+1. A **Munkarendelés karbantartási előrejelzése** lapon válassza ki azt a munkarendelési feladatot, amelyhez előrejelzést szeretne hozzáadni.
+
+2. A **Költség** gyorslapon válassza a **Hozzáadás** lehetőséget egy új sor létrehozásához.
+
+3. Válasszon egy kategóriát a **Kategória** mezőben.
+
+4. A **Mennyiség** mezőben Írja be a mennyiséget.
+
+5. A **Önköltségi ár**, **Értékesítési pénznem** és **Eladási ár** mezőkbe adja meg a megfelelő értékeket.
+
+6. A **Sor tulajdonsága** mezőben válassza ki a sorhoz használandó költségtípust.
 
 >[!NOTE]
->A **Karbantartási előrejelzés összesítése** gyorslapon egy áttekintés látható az egyes lapokon létrehozott sorok számáról a kiválasztott munkarendelési feladathoz és a munkarendeléshez. Ezenkívül a munkarendelés feladathoz és a munkarendeléshez tartozó előre jelzett munkaórák összege is látható.
+>A **Karbantartási előrejelzés összesítése** gyorslapon egy áttekintés látható az egyes gyorslapokon létrehozott sorok számáról a kiválasztott munkarendelési feladathoz és a munkarendeléshez. Ezenkívül a munkarendelés feladathoz és a munkarendeléshez tartozó előre jelzett munkaórák összege is megjelenik.
+
+Az alábbi ábra a **Munkarendelés beszerzés előrejelzés** egy példáját mutatja be.
 
 ![1. ábra](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Munkarendelés-előrejelzések automatikus frissítése
 
-Az Eszközkezelésben automatikusan frissítheti a munkarendelések előrejelzéseinek módosításait az óraköltség, a cikköltségekhez és más kiadásokhoz, amelyek frissítve lettek más modulokban. Erre azért van szükség, hogy a legutóbbi önköltségi árak legyenek mindig használva a munkarendelés-előrejelzésekben. Hasonló frissítések lehetségesek a [karbantartási feladattípus előrejelzésekhez](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) is.
+Ha az óraköltség, a cikköltségek és más kiadások frissítve lettek a Microsoft Dynamics 365 for Finance and Operations moduljaiban a munkarendelés előrejelzések automatikusan frissíthetők az Eszközkezelésben, hogy tükrözzék ezeket a módosításokat. Ez a képesség segít garantálni, hogy a legutóbbi önköltségi árak legyenek mindig használva a munkarendelés-előrejelzésekben. Hasonló frissítéseket végezhet a [karbantartási feladattípus előrejelzésekhez](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) is.
 
-1. Kattintson az **Eszközkezelés** > **Időszakos** > **Előrejelzés** > **Munkarendelés-előrejelzés frissítése** hivatkozásra.
+1. Válassza az **Eszközkezelés** > **Időszakos** > **Előrejelzés** > **Munkarendelés-előrejelzés frissítése** lehetőséget.
 
-2. Ha szükséges , adja meg a munkarendelésekre vagy munkarendelés-feladatokra vonatkozó beállításokat a **Munkarendelés frissítése-előrejelzés** legördülő párbeszédpanelen. Kattintson a **Szűrőt** elemre ezen kiválasztásokhoz.
+2. Ha szükséges , adja meg a munkarendelésekre vagy munkarendelés-feladatokra vonatkozó beállításokat a **Munkarendelés frissítése-előrejelzés** legördülő párbeszédpanelen a **Befoglalandó rekordok** lapon. Kattintson a **Szűrő** elemre a kapcsolódó kiválasztásokhoz.
 
-3. Ha szükséges, a **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
+3. A **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
 
-4. Az előrejelzés frissítése az **OK** gombra kattintva indítható el.
+4. Az előrejelzés frissítése az **OK** gombot választva indítható el.
 
+
+Az alábbi ábra a **Munkarendelés előrejelzés frissítése** párbeszédpanel egy példáját mutatja be.
 
 ![2. ábra](media/07-work-orders.png)
-

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181519"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564937"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Adatok importálásának konfigurálása a SharePoint-rendszerből
 
@@ -62,9 +62,9 @@ Játssza le az **Elektronikus jelentéskészítés – adatok importálása Micr
 > A szállítói tranzakciók importálásához szükséges formátum alapértelmezett modell-leképezésként van megadva. Következésképpen, ha futtatja az **1099-es kifizetésekhez modell** modell-leképezését, és a modell-leképezés **Célhoz** típusú, akkor a modell-leképezés ezt a formátumot futtatja a külső fájlokból történő adatimportáláshoz. Ezután az adatokat felhasználja az alkalmazástáblák frissítéséhez.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>A SharePoint-hozzáférés konfigurálása a fájlok tárolásához
-Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia kell a SharePoint Server-példányt, amelyet az aktuális vállalat használ. Ebben a példában a vállalat a USMF. További tudnivalókért lásd: [SharePoint-tárhely konfigurálása](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia kell a SharePoint Server-példányt, amelyet az aktuális vállalat használ. Ebben a példában a vállalat a USMF. További tudnivalókért lásd: [SharePoint-tárhely konfigurálása](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Hajtsa végre a [SharePoint-tárhely konfigurálása](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) lépéseit.
+1. Hajtsa végre a [SharePoint-tárhely konfigurálása](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) lépéseit.
 2. Nyissa meg a konfigurált SharePoint-webhelyet.
 3. Hozza létre a következő, a bejövő elektronikus jelentési fájlokat tárolására szolgáló mappákat:
 
@@ -80,7 +80,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
     - Fájlhibák mappa – Ebben a mappába kerülnek a sikertelenül importált fájlok.
 
 4. Lépjen a **Szervezeti adminisztráció > Dokumentumkezelés > Dokumentumtípusok** lehetőségre.
-5. Hozza létre a következő dokumentumtípusokat, amelyek az újonnan létrehozott SharePoint mappák eléréséhez lesznek használva. További tudnivalókért lásd: [Dokumentumtípusok konfigurálása](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Hozza létre a következő dokumentumtípusokat, amelyek az újonnan létrehozott SharePoint mappák eléréséhez lesznek használva. További tudnivalókért lásd: [Dokumentumtípusok konfigurálása](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Dokumentumtípus        | Csoport              | Tárolóhely      | SharePoint-mappa      |
 |--------------------|--------------------|---------------|------------------------|

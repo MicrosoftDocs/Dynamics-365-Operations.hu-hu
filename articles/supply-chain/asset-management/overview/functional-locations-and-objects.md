@@ -18,32 +18,32 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5271b673d758608cae8e43d72b7e75b259d5f142
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e3a42d36fd137aa780886276a4235f1b8f3a3680
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024614"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653347"
 ---
 # <a name="functional-locations-and-assets"></a>Munkavégzési helyszínek és eszközök
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ez a cikk az Eszközkezelés munkavégzési helyszíneit és eszközeit ismerteti. Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul.
 
 ## <a name="overview"></a>Áttekintés
 
-Az Eszközkezelés a Finance and Operations számos moduljával zökkenőmentesen együttműködik. A következő ábra a más modulokkal való kapcsolatot mutatja be.
+Az Eszközkezelés a Finance and Operations alkalmazások számos moduljával zökkenőmentesen együttműködik. A következő ábra a más modulokkal való kapcsolatot mutatja be.
 
-![1. ábra](media/01-overview-image.png)
+![Az Eszközkezelés egyéb modulokkal való kapcsolódását mutató ábra](media/01-overview-image.png)
 
 Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének kezelésére és szervizelésére szolgáló minden feladat. Felszerelés lehet minden gép, gyártóeszköz vagy jármű. Az Eszközkezelés több iparág megoldásait is támogatja.
 
 A következő képen az Eszközkezelés fő funkcióinak az áttekintése látható.
 
-![2. ábra](media/02-overview-image.png)
+![Az eszközkezelés fő funkcióit mutató ábra](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Munkavégzési helyszínek és eszközök
 
@@ -53,8 +53,8 @@ Az eszközök költsége az eszköz helyét követi. Más szóval, ha új munkav
 
 A munkavégzési helyszínek hierarchiájának kialakítása attól függ, hogy a cég milyen követelményeket támaszt a belső vagy az ügyfeleknek szolgáltatott berendezésekkel kapcsolatban. A következő képen egy földrajzi helyeken alapuló munkavégzési helyszínre látható példa.
 
-![3. ábra](media/03-overview-image.png)
+![A földrajzi helyek alapján munkavégzési helyszíneket mutató ábra](media/03-overview-image.png)
 
 A következő képen egy ügyfeleken alapuló munkavégzési helyszínre látható példa.
 
-![4. ábra](media/04-overview-image.png)
+![Az ügyfelek alapján munkavégzési helyszíneket mutató ábra](media/04-overview-image.png)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc8e4b942c3c5307d90bfd08a33a8b27c4352d2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249727"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658810"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -68,23 +68,23 @@ Ha új feladatrögzítést készít vagy a rögzítéseit Microsoft feladatrögz
 
 Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írja be a címjegyzetet a **Cím** mezőbe. 
 
-[![screen1](./media/screen1.png)](./media/screen1.png) 
+[![A szerkesztési ablaktábla címjegyzettel](./media/screen1.png)](./media/screen1.png) 
 
 Így néz ki a feladat-útmutató „buborékdiagramjában” található címjegyzet. 
 
-[![screen2](./media/screen2.png)](./media/screen2.png)
+[![A címjegyzet megjelenése a feladatok útmutatóban](./media/screen2.png)](./media/screen2.png)
 
 -   **Megjegyzések:** A megjegyzéshez tartozó jegyzet a Feladatrögzítő által automatikusan létrehozott lépés szövege után jelenik meg. A feladat útmutatóban csak akkor lesz látható, ha a felhasználó rákattint a **Részletesebben** hivatkozásra a felada útmutató buborékdiagramjában. E típus használatával mindent leírhat, amit a felhasználónak tudnia kell a lépés teljesítéséhez.
 
 Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írjon be jegyzetet a megjegyzésekhez a **Megjegyzések** mezőbe. 
 
-[![screen3](./media/screen3.png)](./media/screen3.png) 
+[![Szerkesztés ablaktábla megjegyzésekkel a Megjegyzések mezőben](./media/screen3.png)](./media/screen3.png) 
 
 Így néznek ki a feladat-útmutató „buborékdiagramjában” található jegyzetek.
 
-[![screen4](./media/screen4.png)](./media/screen4.png)
+[![A címmegjegyzések megjelenése a feladatok útmutatóban](./media/screen4.png)](./media/screen4.png)
 
--   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása.** A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
+-   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
 
 **Határozza meg, milyen hosszú legyen a felvétel**
 

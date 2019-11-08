@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024660"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653323"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ha egy munkarendelésen befejeződött egy karbantartási feladat, következő lépésként el kell végezni a felhasználási regisztrációkat és a naplók feladását. Regisztráció a következő felhasználási típusokon végezhető el: órák, cikkek és kiadások. A program a különböző felhasználási típusokat a **Munkarendelési naplók** lapon regisztrálja és adja fel. A program az **Eszközkezelés modulban** található naplóbeállítást használja a **Projektvezetés és könyvelés** modulban feltüntetett órák, cikkek és kiadások külön naplóinak a létrehozásához és feladásához.
 
-Előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy törölni előrejelzési sorokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy a naplósorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotáról és a kapcsolódó projektszakaszokról itt talál további információt: [A Projektvezetés és könyveléssel való integráció](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Bizonyos esetekben előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy törölni előrejelzési sorokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy a naplósorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotáról és a kapcsolódó projektszakaszokról itt talál további információt: [A Projektvezetés és könyveléssel való integráció](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >A munkarendelés életciklus-állapotára vonatkozó naplókhoz automatikus feladás is beállítható. További információt itt talál: [Munkarendelés életciklus-állapotai](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
 
-2. Válassza ki a munkarendelést, majd kattintson a **Naplók** elemre.
+2. Válassza ki a munkarendelést, és kattintson a **Naplók** elemre.
 
 3. A **Másolás előrejelzésből** lehetőségre kattintva átviheti azokat az előrejelzési sorokat, amelyek a munkarendeléshez kapcsolódnak. Kiválaszthatja az átvinni kívánt felhasználási típusokat.
 
@@ -50,10 +50,10 @@ Előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy tör�
 
 6. A **Naplók feladása** gombra kattintva feladhatja a naplósorokat.
 
-7. A felhasználási naplók feladását követően frissítheti a munkarendelés életciklus-állapotát, például „Befejezettre”, és ezzel jelezheti, hogy a munkarendelés befejeződött.
+7. A felhasználási naplók feladása után frissítheti a munkarendelés életciklus-állapotát. Például annak jelzésére, hogy a munkarendelést befejezték, az életciklus-állapotot a „Befejezett” lehetőségre frissítheti.
 
-- A **Munkarendelési naplók** lap tetején található **Megjelenítés** mezőben válassza ki a megjeleníteni kívánt naplósorokat a következők közül: Összes, Nincs feladva vagy Feladva. A feladott naplóknál ki van pipálva a **Feladva** jelölőnégyzet.  
-- Amikor a munkarendelési naplóban cikksorok jönnek létre, a program automatikusan átviszi a cikkhez tartozó termékdimenziókat és nyomon követési dimenziókat a napló sorába.  
+    - A **Munkarendelési naplók** lap tetején található **Megjelenítés** mezőben válassza ki a megjeleníteni kívánt naplósorokat a következők közül: **Összes**, **Nincs feladva** vagy **Feladva**. A feladott naplóknál ki van pipálva a **Feladva** jelölőnégyzet.  
+    - Amikor a munkarendelési naplóban cikksorok jönnek létre, a program automatikusan átviszi a cikkhez tartozó termékdimenziókat és nyomon követési dimenziókat a napló sorába.  
 
 Az alábbi képernyőkép azt szemlélteti, hogyan kell a **Munkarendelési naplók** elemben óra- és cikkregisztrációkat elvégezni egy munkarendelésnél.
 
@@ -76,7 +76,7 @@ Ha a munkarendelés több munkarendelési feladatot is tartalmaz, akkor a munka�
 
 6. Írja be a megosztandó munkaórák számát  az **Órák** mezőbe.
 
-![2. ábra](media/02-consumption.png)
+    ![2. ábra](media/02-consumption.png)
 
 7. Kattintson az **OK** gombra.
 
@@ -88,10 +88,10 @@ Ha a munkarendelés több munkarendelési feladatot is tartalmaz, akkor a munka�
 
 Felhasználási regisztrációk végrehajtásakor a rendszer egy megadott sorrendben hozzáadja a regisztrációkhoz a különböző regisztrációtípusokhoz kapcsolódó pénzügyi dimenziókat. 
 
-*Óra- és kiadásregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Következő lépésként a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. Végezetül az erőforrás (dolgozó) pénzügyi dimenzióit adja hozzá a program.
+- *Óra- és kiadásregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Következő lépésként a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. Végezetül az erőforrás (dolgozó) pénzügyi dimenzióit adja hozzá a program.
 
-*Cikkregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Majd a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. A következő lépés a hely pénzügyi dimenzióinak felvétele. Végezetül a cikk pénzügyi dimenzióit adja hozzá a program.
+- *Cikkregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Majd a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. A következő lépés a hely pénzügyi dimenzióinak felvétele. Végezetül a cikk pénzügyi dimenzióit adja hozzá a program.
 
 >[!NOTE]
->A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás a Finance and Operations megoldásban.
+>A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazásokkal.
 

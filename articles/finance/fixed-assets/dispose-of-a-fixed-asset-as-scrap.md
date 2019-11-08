@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: de105e061712540fc8e3d720a65c029f865b8948
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 42eaa3df5ab09278ed96506d17e1b42d4fc2a9e1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187291"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570264"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Tárgyi eszközök kivezetése selejtként
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat olyan tárgyi eszközök esetében, amelyek selejtként kerültek kivezetésre. Az eltávolítható tranzakciótípusok között szerepelnek egy eszköz beszerzési és felhalmozott értékcsökkenési tranzakciói, valamint egyéb tárgyieszköz-tranzakciói. Ezeknek a tranzakcióknak a felszámolása érinti a mérlegszámlákat, például a beszerzések helyesbítését, az értékcsökkenés kiigazítását, az átértékelést, a felértékelési és a leírási számlákat.
 

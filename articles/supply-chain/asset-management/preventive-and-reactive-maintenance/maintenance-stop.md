@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4a7c57452b2f639b1f1b76bc79959c620c58ace1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922183"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571300"
 ---
 # <a name="maintenance-downtime"></a>Karbantartás miatti üzemkimaradás
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A karbantartás miatti üzemkimaradás révén áttekintést kaphat az adott eszközökre vonatkozó, adott időszak során esedékes karbantartási feladatok végrehajtásához szükséges kapacitásról. Létrehozhat például a karbantartás miatti üzemkimaradás regisztrálására szolgáló megoldást a 29-A termelési csarnok 02 termelési helyének 10-es gyártósorához. A karbantartás miatti üzemkimaradás regisztrálásának kezdő és záró időpontja jelzi azt az időszakot, amikor a karbantartáshoz kapcsolódó eszközök nem állnak rendelkezésre a termeléshez.
 

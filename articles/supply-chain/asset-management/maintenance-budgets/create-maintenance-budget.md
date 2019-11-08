@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2c748fd230796643f1ed6279743da532e7cb320
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 99f76c684150f154404cbb241daacb7a8d05f7f9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874808"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571760"
 ---
 # <a name="create-maintenance-budgets"></a>Karbantartási költségvetések létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -53,7 +53,7 @@ A karbantartási költségvetések alapját az Eszközkezeléshez használt köl
     > [!NOTE]
     > A karbantartási költségvetés jóváhagyása után nem lehet újraszámolni vagy módosítani a kapcsolódó sorokat a **Karbantartás költségvetési sorok** lapon, hacsak nem törli a jóváhagyást. A karbantartási költségvetés jóváhagyásának visszavonásához jelölje ki a **Karbantartási költségvetések** lapon, majd válassza a **Jóváhagyás**parancsot. Ezután kattintson a **Költségvetési jóváhagyása** párbeszédpanelen az **OK**gombra.
 
-![1. ábra](media/01-maintenance-budgets.png)
+![Karbantartási költségvetések](media/01-maintenance-budgets.png)
 
 Új karbantartási költségvetés egy meglévő költségvetés másolásával is létrehozhat. A **Karbantartási költségvetések** lapon válassza ki a másolandó költségvetést, majd válassza a **Másolás**parancsot. Ez a megközelítés akkor lehet hasznos, ha például egy hónapra már létrehoztak egy költségvetést, és át szeretné másolni más hónapokra.
 

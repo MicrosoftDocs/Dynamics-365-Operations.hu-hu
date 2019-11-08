@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026716"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653418"
 ---
 # <a name="warehouse-configuration-overview"></a>Raktár konfigurálása – áttekintés
 
@@ -34,7 +34,7 @@ Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendez�
 **Megjegyzés:** Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
-A Finance and Operations rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
+A Supply Chain Management rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
 
 -   Magas és alacsony prioritású tárolók területeket hozhat létre a termékek optimális elhelyezéséhez.
 -   A különböző raktározási igényeknek megfelelően, mint például hőmérsékleti követelmények vagy a cikkek változó forgalmi arányai, feloszthatja a raktárat különböző zónákra.
@@ -42,7 +42,7 @@ A Finance and Operations rendszerben a Raktárkezelési rendszer rugalmas lehet�
 -   Csoportosíthatja a helyeket fizikai kapacitás megszorítás beállításai alapján.
 -   Szabályozhatja cikkek tárolását és kitárolását a lekérdezésben megadott szabályokon alapján.
 
-A Finance and Operations rendszer raktárkezelési használatához hozzon létre egy raktárat, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása** lehetőséget.
+A Supply Chain Management rendszer raktárkezelési használatához hozzon létre egy raktárat, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása** lehetőséget.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zónacsoportok, zónák, helytípusok és helyek
 
@@ -54,7 +54,7 @@ A raktárelrendezés engedélyezési folyamat során definiálni kell raktár z�
 -   **Helytípusok** – Raktározási helyek logikai vagy fizikai csoportosítása. Például létrehozhat egy hely összes előkészítő hely típusa. A **Raktárkezelési paraméterek** oldalon lévő kötelező beállítások vezetik az előkészítő hely típus definiálását, és a végleges kiszállítási hely típusát.
 -   **Helyek** – A hely megadásának legalacsonyabb szintje. A Helyek segítségével nyomon követheti az aktuális készlet tárolását és kitárolását egy raktárban.
 
-A raktárelrendezések definiálásához létrehozott entitás azokban a munkasablonokban beállított lekérdezésekben használt, amelyekkel a raktárakban lévő rendeléseket vezetheti. Ezért a zónák, helytípusok, és hasonlók meghatározásakor figyelembe kell venni, hogy a raktárak különböző területeit hogyan használják a különböző folyamatokhoz. Ezenkívül figyelembe kell venni egyéb tényezőket, mint például az adott terület fizikai jellemzőit. Például lehetnek olyan területek, ahol csak bizonyos típusú emelővillás targoncákat lehet használni. Vagy ha a vállalat ugyanabban a létesítményben termeli és be is fejezi a termékeket, lehetséges, hogy a Finance and Operations rendszerben egyetlen raktárt akar létrehozni, de ebben az esetben válassza szét a két műveletet két zónacsoportra. Adja meg az entitások jól felismerhető neveit, így könnyű lesz azonosítani azokat a sablonlekérdezések használatakor.
+A raktárelrendezések definiálásához létrehozott entitás azokban a munkasablonokban beállított lekérdezésekben használt, amelyekkel a raktárakban lévő rendeléseket vezetheti. Ezért a zónák, helytípusok, és hasonlók meghatározásakor figyelembe kell venni, hogy a raktárak különböző területeit hogyan használják a különböző folyamatokhoz. Ezenkívül figyelembe kell venni egyéb tényezőket, mint például az adott terület fizikai jellemzőit. Például lehetnek olyan területek, ahol csak bizonyos típusú emelővillás targoncákat lehet használni. Vagy ha a vállalat ugyanabban a létesítményben termeli és be is fejezi a termékeket, lehetséges, hogy a Supply Chain Management rendszerben egyetlen raktárt akar létrehozni, de ebben az esetben válassza szét a két műveletet két zónacsoportra. Adja meg az entitások jól felismerhető neveit, így könnyű lesz azonosítani azokat a sablonlekérdezések használatakor.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Helyi rakodási korlátok, helyprofilok és fix kiviteli helyek
 

@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249963"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653671"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -35,7 +35,7 @@ Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcs
 <a name="overview"></a>Áttekintés
 --------
 
-Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Finance and Operations szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Supply Chain Management szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
 -   **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
 -   **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés**. Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.

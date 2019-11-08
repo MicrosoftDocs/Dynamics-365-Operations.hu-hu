@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008243"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551495"
 ---
-# <a name="post-jobs-to-linkedin"></a>Álláshirdetések feladása a LinkedIn felületén
+# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent - Attract szolgáltatásból
 
 [!include [banner](../includes/banner.md)]
 

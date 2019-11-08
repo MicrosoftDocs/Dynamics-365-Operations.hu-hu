@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874624"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569777"
 ---
 # <a name="work-order-project-setup"></a>Munkarendelési projekt beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Az **Eszközkezelés** modulban minden munkarendelési feladathoz szükséges egy projektkapcsolat. A munkarendelési feladathoz társított projekt segítségével nyomon követheti a különböző projektek Eszközkezeléshez kapcsolódó költségeit, például belső karbantartási projektek, szolgáltatáskezelési projektek és befektetési projektek esetén. 
 
@@ -72,7 +72,7 @@ A beállítás lehetővé teszi a teljes integrációt a **Projektvezetés és k
 
     Alapértelmezés szerint a kezdési dátum az a dátum, amikor a munkarendelési projektet hozzáadja az oldalhoz. A rendszer az **Érvényesség kezdete** mezővel vezérli, amely alapértelmezés szerint rejtett. Az **Érvényesség kezdete** mező megjelenítéséhez válassza a **Megtekintés** \> **Összes** elemet. Ezt követően az **Érvényesség kezdete** mezőt a **Befejezési dátum** mezővel együtt használhatja a munkarendelési projekt korlátozott időtartamú érvényességének beállításához.
 
-    ![1. ábra](media/17-setup-for-work-orders.png)
+    ![Munkarendelési projekt beállítási oldala](media/17-setup-for-work-orders.png)
 
 6. A **Projektcsoport** lapon válassza a **Hozzáadás** lehetőséget.
 7. A **Munkarendelés típusa** mezőben válasszon ki egy munkarendelés-típust.
@@ -80,7 +80,7 @@ A beállítás lehetővé teszi a teljes integrációt a **Projektvezetés és k
 9. A **Projektcsoport** mezőben válassza ki azt a projektcsoportot, amelynek a Munkarendelés-típushoz kell kapcsolódnia. Például egy **Megelőző karbantartás** nevű munkarendelés-típust valószínűleg a **Megel. karb.** vagy **Belső** nevű projektcsoporthoz társítják. Alternatív megoldásként az olyan munkarendelésekhez használt **Befektetés** munkarendelés-típus, amelyek befektetésekhez és tárgyi eszközökhöz kapcsolódnak, társítható egy **Befektet** vagy **Befektetés** projektcsoporthoz.
 10. Válassza a **Mentés** lehetőséget.
 
-![2. ábra](media/18-setup-for-work-orders.png)
+![Munkarendelések projekt beállítási lapja, Munkarendelés hozzáadása](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Minden alkalommal, amikor munkarendelési sort hoz létre, az Eszközkezelés megkeresi azt a projektcsoportot, amely kapcsolódik a munkarendelési feladat projektjéhez. A Keresés az ebben a témakörben ismertetett beállításon alapul. Minden projektcsoport tartalmaz egy kapcsolódó projekttípust. Az **Idő- és anyageszámolás** vagy **Rögzített ár** projekttípussal rendelkező projektcsoportok csak olyan eszközök esetén érvényesek, amelyek kapcsolódnak a vevői számlához.

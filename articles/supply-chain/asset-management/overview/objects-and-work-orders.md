@@ -18,40 +18,40 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24d75000e2c4b604e1acee94e9581291e156fa5d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 8b56234eac247185c5cd4d8ab45a65d258013acd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017411"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571369"
 ---
 # <a name="assets-and-work-orders"></a>Eszközök és munkarendelések
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ez a témakör bemutatja az eszközöket és munkarendeléseket az Eszközkezelés modulban. Az eszközök és a munkarendelések az Eszközkezelés központi részei. Az *eszköz* olyan gép vagy gépalkatrész, amely folyamatos karbantartást és szervizt igényel. Az eszközöket hierarchikus szerkezetben lehet létrehozni, és a munkavégzési helyszínekhez kapcsolódhatnak. A karbantartási munkákat az eszközstruktúra minden szintjéhez lehet tervezni.
 
 Különböző adatok, például termékadatok és eszközspecifikációk, valamint a szükséges karbantartási tervek vannak beállítva az egyes eszközökhöz. A következő ábrán az eszközadatok áttekintése és az eszközök feladattípusokhoz való viszonya látható. Az öröklést és a függőségeket mutató példák vörös betűkkel jelzettek.
 
-![1. ábra](media/05-overview-image.png)
+![A feladattípusokkal kapcsolatos eszközadatokat megjelenítő ábra](media/05-overview-image.png)
 
 Minden munkrendeléshez tartozik egy munkarendelés-típus, például megelőző karbantartás, javító karbantartás vagy vizsgálat. A munkarendelés egy vagy több munkarendelési feladatot tartalmaz. Minden munkrendelési feladat meghatároz egy feladatot, amelyet el kell végezni egy eszközön és egy kapcsolódó feladattípuson. A kapcsolódó feladattípusok lehetnek például 10 000 km, 50 000 km, éves nagyjavítás és biztonsági ellenőrzés. Egy munkarendelés több eszközhöz is tartozhat.
 
 A következő ábrán egy munkarendelés legfontosabb adatainak áttekintése látható.
 
-![2. ábra](media/06-overview-image.png)
+![A munkarendelésen szereplő kulcsfontosságú adatokat megjelenítő ábra](media/06-overview-image.png)
 
 Egy munkarendelés kapcsolódhat másik munkarendeléshez, a feladattípusok pedig tartalmazhatnak követőfeladatokat, amelyek munkarendelést hoznak létre. Általában nincsenek függőségek a munkarendelések között. Így megváltoztathatók a munkarendelések életciklus-állapota, és egymástól függetlenül ütemezhetők.
 
 A munkarendeléseket többféle módon lehet létrehozni a javító, megelőző vagy reaktív karbantartással kapcsolatban. A munkarendelések manuálisan is létrehozhatók. A következő ábrán a munkarendelések automatikus vagy manuális létrehozására vonatkozó folyamat áttekintése látható.
 
-![3. ábra](media/07-overview-image.png)
+![Munkarendelések automatikus vagy manuális létrehozását megjelenítő ábra](media/07-overview-image.png)
 
 Több lépést is el kell végezni egy karbantartási feladat munkarendelésen való ütemezéséhez és futtatásához. A következő ábrán egy munkarendeléshez tartozó feldolgozás áttekintése látható.
 
-![4. ábra](media/08-overview-image.png)
+![A munkarendelés feldolgozásának áttekintését bemutató ábra](media/08-overview-image.png)
 
 > [!NOTE]
 > Általánosságban a Dynamics 365 Supply Chain Management szolgáltatással és az **Eszközkezelés** modullal történő munkavégzés során válassza az **Új** lehetőséget új rekord létrehozásához, a **Szerkesztés** lehetőséget a meglévő rekord frissítéséhez, és a **Mentés** lehetőséget az új vagy szerkesztett adatok elmentéséhez.

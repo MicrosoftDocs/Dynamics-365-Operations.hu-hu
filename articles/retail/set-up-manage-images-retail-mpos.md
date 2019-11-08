@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024844"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570656"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Képek beállítása és kezelése a Retail Modern POS (MPOS) esetében
 
@@ -83,9 +83,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
     [![Képek párbeszédpanel](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Ugyanezt az eljárást használhatja mind az öt támogatott entitás esetében: Dolgozó, Vevő, Katalógus, Kategória és Termékek. A „Katalógustermékek” (a katalógus szintjén beállított termékek) és a „Csatornatermékek” (a csatorna szintjén beállított termékek) a Termékek entitáshoz beállított médiasablont használják. A Termékek médiasablonhoz kiválaszthatja a termékenként megjelenítendő termékképek számát. Ezenfelül beállíthatja az alapértelmezett képet is egy adott termékhez. Ilyen módon elkerülheti az üres képek megjelenítését az MPOS-ben és meghatározhatja, hogy melyik kép legyen az alapértelmezett kép egy termék esetében. Az alábbi példában minden terméknek van öt képe, és az első kép van beállítva alapértelmezett képként. A termékváltozatokat a rendszer ugyanúgy kezeli, mint az alaptermékeket. A képfájl fájlnevének a termékszámon kell alapulnia. Néhány karaktert fel is old a rendszer, míg a fájlnév létrejön. Ezért célszerű ellenőrizni a fájlnevet a **Kép-URL-címek létrehozása az Excel számára** szakasz használatával.
->
-> [![Médiasablon párbeszédpanel meghatározása](./media/prods.png)](./media/prods.png)
+> Ugyanezt az eljárást használhatja mind az öt támogatott entitás esetében: Dolgozó, Vevő, Katalógus, Kategória és Termékek. A „Katalógustermékek” (a katalógus szintjén beállított termékek) és a „Csatornatermékek” (a csatorna szintjén beállított termékek) a Termékek entitáshoz beállított médiasablont használják. A Termékek médiasablonhoz kiválaszthatja a termékenként megjelenítendő termékképek számát. Ezenfelül beállíthatja az alapértelmezett képet is egy adott termékhez. Ilyen módon elkerülheti az üres képek megjelenítését az MPOS-ben és meghatározhatja, hogy melyik kép legyen az alapértelmezett kép egy termék esetében. Az alábbi példában minden terméknek van öt képe, és az első kép van beállítva alapértelmezett képként. A termékváltozatokat a rendszer ugyanúgy kezeli, mint az alaptermékeket. A képfájl fájlnevének a termékszámon kell alapulnia. Néhány karaktert fel is old a rendszer, míg a fájlnév létrejön. Ezért célszerű ellenőrizni a fájlnevet a **Kép-URL-címek létrehozása az Excel számára** szakasz használatával. Lásd a [Felülírás az Excel Szerkesztés funkciójának használatával](#overwrite-by-using-edit-in-excel) szakaszt a cikk későbbi részében.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Szinkronizálási feladatok egy médiasablon a csatorna oldalra való küldéséhez
 
@@ -110,8 +108,6 @@ Az előző szakaszból tudjuk, hogy egy adott entitás médiasablonja csak egy k
 
     > [!IMPORTANT]
     > Ha megváltozik a médiasablon, rá kell kattintania **Létrehozás** opcióra, mielőtt használhatja a Szerkesztés funkciót az Excelben.
-
-    [![Képek URL-címeinek létrehozása az Excel gyorslaphoz](./media/excel1.jpg)](./media/excel1.jpg)
 
     Megjelenik a kép-URL-címek előnézete, amely az utolsó elmentett médiasablon alapján jött létre.
 

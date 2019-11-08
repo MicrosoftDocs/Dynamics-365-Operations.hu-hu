@@ -3,7 +3,7 @@ title: 'Projekt számlázása:'
 description: Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178169"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658620"
 ---
 # <a name="project-invoicing"></a>Projekt számlázása:
 
@@ -55,6 +55,9 @@ A következő tranzakciókhoz tud létrehozni számlajavaslatot:
 -   A vevőktől korábbi projektszámlákon visszatartott összegek
 -   Jóváírások
 -   Egy vevő által a projekt megkezdése előtt kifizetett összegek
+
+> [!NOTE]
+> Az **Erőforrás szerinti rendezés engedélyezése a projektszámla-ajánlat** funkció lehetővé teszi a projekt könyvelője számára, hogy rendezze az erőforrásra a számlázási tranzakcióhoz rendelkezésre álló projekteket, amikor létrehoz egy új projekt-számlázási javaslatot. A rendelkezésre álló projekttranzakciók megjelenítésére szolgáló rács külön mezőt fog tartalmazni az Erőforrás-azonosítóhoz és az Erőforráshoz, amely lehetővé teszi a felhasználó számára az erőforrás neve szerinti szűrést és rendezést. Ez a funkció alapértelmezés szerint le van tiltva, és a **Munkaterületeken> Szolgáltatások kezelése** modulban engedélyezhető. A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
 
 A rendszerben díjtranzakciókat is létre tud hozni egy számlajavaslatban. Lehetőség van az eladási ár, az óra, a költség, a cikk és a díjtranzakciók módosítására is. A számlajavaslat feladásakor a frissített árak és a tranzakciók hozzáadódnak a projektjelentésekhez és a tranzakció előzményeihez. 
 

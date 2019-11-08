@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181335"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578218"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>A létrehozott ER-jelentések eredményeinek nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
 
@@ -71,10 +71,7 @@ A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási f
 5. Az **Azonosító megadása** mezőbe írja az **1** értéket.
 6. A **Alaptervfájlok létrehozása** beállítást állítsa **Igen** értékre.
 7. Válassza ki az **OK** lehetőséget.
-
-    ![Elektronikus jelentés paraméterei párbeszédpanel](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Képernyőkép – Elektronikus jelentés paraméterei párbeszédpanel")
-
-8. Válassza az **Alaptervek** lehetőséget.
+8. **Alaptervek** kiválasztása.
 
     ![Elektronikus jelentéskészítés alaptervformátumai oldal](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Képernyőkép – Elektronikus jelentéskészítés alaptervformátumai oldal")
 
@@ -140,9 +137,6 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 
 1. Válassza a **Konfigurációk** lap **Helyettesítések** gyorslapján az **Összetevők kiválasztása** elemet.
 2. A formátum-összetevők fastruktúrájában bontsa ki a **Kimenet** elemet, majd a **Kimenet\\Dokumentum** pontot, és jelölje be a **Kimenet\\Dokumentum\\ProcessingDateTime** jelölőnégyzetet.
-
-    ![Összetevők kiválasztása párbeszédpanel](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Képernyőkép – Összetevők kiválasztása párbeszédpanel")
-
 3. Válassza ki az **OK** lehetőséget.
 
 ![Elektronikus jelentéskészítés formátum-alaptervei oldal](media/GER-BaselineSample-AddBaseline4.PNG "Képernyőkép – Elektronikus jelentéskészítés formátum-alaptervei oldal")
@@ -162,19 +156,14 @@ Meghatározott ER-paraméterek beállításával figyelmen kívül hagyhatja a f
 1. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, válassza a **Felhasználói paraméterek** lehetőséget.
 2. Állítsa az **Alaptervvel kapcsolatos figyelmeztetések figyelmen kívül hagyása** beállítást **Igen** értékre, majd válassza az **OK** lehetőséget.
 
-![Felhasználói paraméterek párbeszédpanel](media/GER-BaselineSample-ERUserParameters1.png "Képernyőkép – Felhasználói paraméterek párbeszédpanel")
-
 ### <a name="review-the-generated-baseline-file"></a>A létrehozott alaptervfájl ellenőrzése
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
-2. Válassza az **Alaptervek** lehetőséget.
-3. Válassza a **Mellékletek** lehetőséget.
-
-    ![Mellékletek lap](media/GER-BaselineSample-AttachedBaselineFile.PNG "Képernyőkép – mellékletek lap")
-
+2. **Alaptervek** kiválasztása.
+3. **Mellékletek** kiválasztása.
     > [!NOTE]
     > A létrehozott fájl tartalmazza a feldolgozás dátumának és időpontját szövegét (**"#"**), amely a hozzáadott alaptervszabályban konfigurált kötésből származik, nem pedig a formátum kötéséből.
-
+    
 4. Zárja be a **Mellékletek** lapot.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>A tervezett ER formátum futtatása és a napló áttekintése az eredmények elemzéséhez

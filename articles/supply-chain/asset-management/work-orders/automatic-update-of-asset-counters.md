@@ -3,7 +3,7 @@ title: Eszközök számlálóinak automatikus frissítése
 description: Ez a témakör az Eszközkezelésben használt eszközszámlálók automatikus frissítését ismerteti.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,52 +16,57 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 97e6912cd37d6f82d8bf022141f04645a3364ee1
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875700"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626178"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Eszközök számlálóinak automatikus frissítése
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Az eszközök számlálóinak manuális regisztrálásával kapcsolatos tudnivalókat lásd: [Eszközszámlálók manuális frissítése](../work-orders/manual-update-of-asset-counters.md). Az eszközszámlálók beállításával kapcsolatos további információkat lásd: [Számlálók](../setup-for-objects/counters.md).
 
-Az előző részben le van írva az eszközök számlálóinak manuális regisztrálása. Az eszközök számlálóinak beállítását a [Számlálók](../setup-for-objects/counters.md) írják le.
+A számlálók értékei automatikusan is frissíthetők a termelési regisztrációk alapján, a termelési órák vagy termelési mennyiségek alapján (ez a gyártott mennyiség). Ez a frissítés az **Eszközök frissítése** lapon történik. Egy vagy több eszköz frissítéséhez egy paramétert, a **Kezdő dátumot**kell beállítani. Ez a paraméter a termelési regisztrációk (termelési órák vagy termelési mennyiségek) kezdődátumát határozza meg. Más szóval azt a dátumot határozza meg, amikortól a számlálók értékét frissíteni kell.
 
-A számlálók értékei automatikusan is frissíthetők a termelési regisztrációk alapján, a termelési órák vagy termelési mennyiségek alapján. Ez az **Eszköz számlálóinak frissítése** során történik. Egy vagy több eszköz frissítéséhez egy paramétert, a **Kezdő dátumot**kell beszúrni. Ez a paraméter határozza meg a termelési regisztrációk kezdő dátumát (az órákat vagy a termelt mennyiséget), vagyis azt a kezdő dátumot, amikor a számlálók értékét frissíteni kell.
+Minden olyan eszköz, amely egy erőforráshoz van rendelve *és* amelyekhez eszközszámláló van beállítva, amely a gyártott mennyiség vagy termelési óra alapján történő frissítésre van beállítva, az automatikus frissítés része lesz. Új számlálóértékek jönnek létre.
 
-Minden olyan eszköz, amely egy erőforráshoz van rendelve *és* amelyekhez eszközszámláló van beállítva, amely a gyártott mennyiség vagy termelési óra alapján történő frissítésre van beállítva, az automatikus frissítés része lesz, és létrejönnek az új számlálók értékei.
+A termelési mennyiségen alapuló számlálók esetében a számlálás mind a jó mennyiséget, mind a regisztrált hibás mennyiséget tartalmazza. Ha a termelési mennyiséghez használt egység eltér a számlálóban használt egységtől, akkor a program átváltja a mennyiséget a számláló egységének megfelelőre.
 
-A termelési mennyiségen alapuló számlálók, a megfelelő mennyiség és a regisztrált hibás mennyiség a számlálásban szerepel. Ha a termelt mennyiséghez használt egység eltér a számlálóban használt egységtől, akkor a program átváltja a mennyiséget a számláló egységével.
+A fent említettek szerint az automatikus számlálók a termelési regisztrációk alapján frissíthetők. Ennélfogva az eszköznek, amelynél automatikusan szeretné frissíteni a számlálókat, egy erőforráshoz (gép) kell tartoznia. Ha az erőforrásban a gyártott mennyiségek vagy a termelési órák regisztrálva vannak, akkor frissítheti a kapcsolódó eszköz számlálóit.
 
-A fent említettek szerint az automatikus számlálók a termelési regisztrációk alapján frissíthetők. Ennélfogva az eszköznek, amelynél automatikusan szeretné frissíteni a számlálókat, egy erőforráshoz (gép) kell tartoznia. A következő leírások áttekintést nyújtanak a termelési rendelések beállításáról és feldolgozásáról (a **Gyártásvezérlés** modulban), amelyek az eszköz számlálóinak automatikus frissítéséhez használatosak az **Eszközkezelés** modulban.
-
-Ha az erőforrásban a gyártott mennyiségek vagy a termelési órák regisztrálva vannak, akkor frissítheti a kapcsolódó eszköz számlálóit.
-
-1. Kattintson az **Eszközkezelés** > **Időszakos** > **Eszközök** > **Eszköz számlálóinak frissítése** lehetőségre.
+1. Válassza az **Eszközkezelés** > **Időszakos** > **Eszközök** > **Eszköz számlálóinak frissítése** lehetőséget.
 
 2. A **Kezdő dátum** mezőben válassza ki az automatikus frissítés kezdő dátumát.
 
 >[!NOTE]
 >Az ebben a mezőben szereplő dátum a „folyamatban lévő munka” dátuma innen: **Útvonal-tranzakciók** (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelés** > **Útvonal-tranzakciók** > **Tényleges dátum** mező).
 
-3. Ha ki szeretne választani adott eszközt, eszköztípust vagy erőforrást az automatikus frissítéshez, kattintson a **Belefoglalandó rekordok** gyorslap **Szűrő** elemére, és végezz el a megfelelő kiválasztásokat.
+3. A **Szerepeltetni kívánt rekordok** gyorslapon kiválaszthatja az automatikus frissítés konkrét eszközeit, eszköztípusait vagy erőforrásait. Válassza a **Szűrő** elemet, és végezze el a kapcsolódó kiválasztásokat.
 
-4. Ha szükséges, a **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
+4. A **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
+
+Az alábbi ábra az **Eszköszámlálók frissítése** párbeszédablak egy példáját mutatja be.
 
 ![1. ábra](media/12-work-orders.png)
 
-5. Kattintson az **OK** gombra. Amikor az automatikus eszközszámláló-frissítés megtörtént, az eszközhöz kapcsolódó számláló-regisztrációk láthatók itt: **Eszközökszámlálók** (**Eszközkezelés** > **Közös** > **Eszközök** > **Minden eszköz** > eszköz kiválasztása > **Számlálók** gomb).
+5. Válassza ki az **OK** lehetőséget. 
 
-Az **Eszköz számlálóinak összegei** részben áttekintést kaphat az összes eszközhöz tartozó összes számlálótípus legutóbbi regisztrálásairól. Kattintson az **Eszközkezelés** > **Lekérdezések** > **Eszközök** > **Eszköz összesített érték** elemre. A nézet nagyon hasonló az **Eszközszámlálók** elemhez, de nem lehet hozzáadni és szerkeszteni a regisztrációkat itt: **Eszköz összesített érték**. Csak áttekintésre szolgál.
+Az automatikus eszközszámláló-frissítést követően megtekintheti a az eszközhöz kapcsolódó számlálóregisztrációkat az **Eszköz számlálók** oldalon. Válassza ki az **Eszközkezelés** > **Közös** > **Eszközök** > **Minden eszköz** lehetőséget, válassza ki a kívánt eszközt, majd a művelet ablaktábla **Eszköz** lapjának **Megelőzés** csoportjában válassza a **Számlálók** elemet.
+
+Az **Eszköz összesített értéke** oldalon áttekintést kaphat az összes eszközhöz készített összes számlálótípus legutóbbi regisztrálásairól. Válassza az **Eszközkezelés** > **Lekérdezések** > **Eszközök** > **Eszköz összesített érték** elemet. Ez a lap hasonlít az **Eszközök számlálók** lapjára, de regisztrációkat nem lehet regisztrációkat hozzáadni és szerkeszteni. Csak áttekintésre szolgál.
+
+Az alábbi ábra az **Eszközök összesített értéke** oldal egy példáját mutatja be.
 
 ![2. ábra](media/13-work-orders.png)
 
+Vegye figyelembe az alábbiakat:
 
-- Továbbra is lehetőség van arra, hogy manuális számlálóregisztrációkat hozzon létre az automatikusan frissített számlálótípusokhoz. A további tudnivalókat lásd: „Eszközök számlálóinak manuális frissítése”.
-- Egy másik számlálóhoz kapcsolódó számlálókat is beállíthat, ami azt jelenti, hogy a számláló frissítésekor a program automatikusan frissíti a kapcsolódó számlálókat is. A kapcsolódó számlálók beállításáról itt talál további információt: [Számlálók](../setup-for-objects/counters.md).
+- Továbbra is lehetősége van arra, hogy manuális számlálóregisztrációkat hozzon létre az automatikusan frissített számlálótípusokhoz. A további tudnivalókat lásd: [Eszközök számlálóinak manuális frissítése](../work-orders/manual-update-of-asset-counters.md).
+
+- Lehetőség van egy másik számlálóhoz kapcsolódó számlálók beállítására is. Ebben az esetben a számláló frissítését követően a kapcsolódó számlálók frissítése is egyidőben megtörténik. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](../setup-for-objects/counters.md).
+

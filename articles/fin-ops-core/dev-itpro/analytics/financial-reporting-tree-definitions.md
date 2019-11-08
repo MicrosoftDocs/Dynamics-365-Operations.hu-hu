@@ -3,7 +3,7 @@ title: Jelentési fa definíciója a pénzügyi jelentésekben
 description: Ez a cikk a jelentési fa definíciójáról tartalmaz információt. A jelentési fa definíciója a jelentés azon összetevője vagy építőeleme, amely segít meghatározni szervezetének szerkezetét és hierarchiáját.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181818"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564167"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -50,7 +50,7 @@ A jelentési fa meghatározása az alábbi táblázatban leírt oszlopokat tarta
 
 | Jelentési fa oszlop | Leírás |
 |-----------------------|-------------|
-| Vállalat               | A jelentési egység vállalati neve. Az általában csak az összesítő szinteken hozzárendelt **@ANY** érték lehetővé teszi a jelentésfa valamennyi vállalathoz történő felhasználását. Minden gyermek ághoz hozzá van rendelve egy vállalat. |
+| Cég               | A jelentési egység vállalati neve. Az általában csak az összesítő szinteken hozzárendelt **\@ANY** érték lehetővé teszi a jelentésfa valamennyi vállalathoz történő felhasználását. Minden gyermek ághoz hozzá van rendelve egy vállalat. |
 | Egység neve             | A kód, amely azonosítja ezt a jelentési egységet a grafikus jelentési fán. Bizonyosodjon meg róla, hogy egy konzisztens kódolási rendszert hoz létre, amit a felhasználók könnyen megérthetnek. |
 | Egység leírása      | A jelentési egység címe megjelenik jelentés fejlécében vagy a láblécben, az **UnitDesc** kódként való megadásakor a jelentésdefiníció **Fejlécek és láblécek** lapján. A cím megjelenik a jelentés sorleírásában, ha beírja az **UnitDesc** kódot a sordefiníció **Leírás** cellájába. |
 | Dimenziók            | Egy jelentési egység, amely az adatokat közvetlenül pénzügyi adatokból vonja ki. A fiók és a kapcsolódó szegmensek logikai pozícióját és hosszát határozza meg. Ebben az oszlopban minden jelentési egység sornak rendelkeznie kell egy dimenzióval. Helyezhet dimenziót az összesítő egység sorába (például azokhoz a költségekhez, amelyek közvetlenül kapcsolódnak az egységhez) Ha beír egy dimenziót egy összesítő egység sorába, azokat a fiókokat, amelyeket fölérendelt egységek használnak, nem szabad használni alárendelt egységekben. Ellenkező esetben az összegek megduplázódhatnak. |

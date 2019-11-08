@@ -3,7 +3,7 @@ title: Munkarendelés-gyűjtők
 description: Ez a témakör bemutatja a munkarendelés-gyűjtők használatát az Eszközkezelés modulban.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875694"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626362"
 ---
 # <a name="work-order-pools"></a>Munkarendelés-gyűjtők
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+A munkarendelés-gyűjtőkkel csoportosíthatja a valamiben egyeztő munkarendeléseket. Íme néhány példa olyan dolgokra, amelyekhez létrehozhat munkarendelés-gyűjtőket:
+
+- Munkaszemélyzet, például A karbantartási személyzet vagy B karbantartási személyzet  
+
+- Szakmához kapcsolódó szakértelmek, például villanyszerelők vagy vízvezeték-szerelők  
+
+- Fizikai helyek  
+
+- Időbeosztások, például hetek vagy más időszakok  
+
+A szükséges módon egyetlen munkarendelést is beállíthat több munkarendelés-gyűjtőben.
 
 
-A munkarendelés-gyűjtőkkel csoportosíthatja a valamiben egyeztő munkarendeléseket. Létrehozhat például munkarendelés-gyűjtőket a következőhöz:
+## <a name="create-a-work-order-pool"></a>Egy munkarendelés-gyűjtő létrehozása
 
-- munkaszemélyzet, például A karbantartási személyzet, B karbantartási személyzet  
+Az **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** listaoldalon áttekintést kaphat saját munkarendelés-gyűjtőiről, és új gyűjtőket hozhat létre.
 
-- szakmához kapcsolódó szakértelmek, például villanyszerelők vagy vízvezeték-szerelők  
+1. Válassza az **Eszközkezelés** > **Általános** > **Munkarendelés-gyűjtők** > **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** elemet.
 
-- tényleges helyek  
+2. Válassza az **Új** lehetőséget.
 
-- időbeosztások, például hetek vagy más időszakok  
+3. A **Gyűjtő** mezőben adja meg a munkarendelés-gyűjtő azonosítóját.
 
+4. A **Név** mezőben adjon meg egy nevet.
 
-Szükség esetén egy munkarendelés számos munkarendelés-gyűjtőbe elhelyezhető.
+5. Válassza az **Igen** lehetőséget az **Aktív** beállításnál, amellyel jelezheti, hogy a munkarendelés-gyűjtő aktív.
 
+6. Állítsa **Igen** értékre a **Munkarendelés kapcsolatainak törlése** beállítást, ha szeretne automatikusan eltávolítani munkarendeléseket a munkarendelés-gyűjtőből.
 
-## <a name="create-work-order-pool"></a>Munkarendelés-gyűjtő létrehozása
+7. Az **Életciklus-állapot törlése** mezőben válassza a munkarendelés életciklus-állapotát. Például a munkarendelés befejezéséhez tartozó munkarendelési életciklus-állapotot beállíthatja, hogy automatikusan törölje a kapcsolatokat a munkarendelés-gyűjtőkből.
 
-Az **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** pontokban áttekintést kaphat saját munkarendelés-gyűjtőiről, és új gyűjtőket hozhat létre.
+    A munkarendelés-gyűjtőhöz azonnal hozzáadhat munkarendeléseket.
 
-1. Kattintson az **Eszközkezelés** > **Általános** > **Munkarendelés-gyűjtők** > **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** elemre.
+8. A **Munkarendelések** gyorslapon válassza a **Sor hozzáadása** parancsot.
 
-2. Kattintson az **Új** elemre.
+9. A **Munkarendelés** mezőben válasszon ki egy munkarendelést. A kapcsolódó mezők frissítése automatikusan történik.
 
-3. Szúrjon be egy munkarendelés-gyűjtőhöz tartozó azonosítót a **Gyűjtő** mezőbe és írjon be egy nevet a **Név** mezőbe.
+10. További munkarendelések hozzáadásához ismételje meg a 8–9. lépéseket.
 
-4. Válassza az „Igen” beállítást az **Aktív** választógombon, amellyel jelezheti, hogy a munkarendelés-gyűjtő aktív.
+11. Ha a hozzáadott munkarendeléseket meghatározott sorrendben kell végrehajtani, akkor a **Rendezési sorrend** mezőbe írja be az **1**, **2**, **3**, és így tovább értékeket a sorrend meghatározásához.
 
-5. Válassza az „Igen” beállítást a **Munkarendelés kapcsolatainak törlése** választógombon, ha szeretne automatikusan eltávolítani munkarendeléseket a munkarendelés-gyűjtőből.
+12. A munkarendelési gyűjtőben lévő összes munkarendelés listájának megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza a **Munkarendelések** elemet az **Összes munkarendelés** listaoldal megnyitásához.
 
-6. Az **Életciklus-állapot törlése** mezőben válassza a munkarendelés életciklus-állapotát. Például a munkarendelés befejezéséhez tartozó munkarendelési életciklus-állapotot beállíthatja, hogy automatikusan törölje a kapcsolatokat a munkarendelés-gyűjtőkből.
+13. A karbantartási ütemezés, nem ütemezett munkarendelések és az ütemezett munkarendelések kapacitásterhelésének kiszámításához és megjelenítéséhez kattintson a Művelet panel **Munkarendelés** lapján a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza ki a **Kapacitásterhelés** lehetőséget a **Kapacitásterhelés kiszámítása** párbeszédpanel megnyitásához.
 
-7. A munkarendelés-gyűjtőhöz azonnal hozzáadhat munkarendeléseket. A **Munkarendelések** gyorslapon kattintson a **Sor hozzáadása** parancsra.
+14. A karbantartási ütemezés, nem ütemezett munkarendelések és az ütemezett munkarendelések cikkelőrejelzéseinek (cserealkatrészek és más szükséges elemek) kiszámításához és megjelenítéséhez kattintson a Művelet panel **Munkarendelés** lapján a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza ki a **Cikkelőrejelzés** lehetőséget a **Cikkelőrejelzés kiszámítása** párbeszédpanel megnyitásához.
 
-8. A **Munkarendelés** mezőben válasszon ki egy munkarendelést. A kapcsolódó mezők frissítése automatikusan történik.
+15. A munkarendelési gyűjtőben lévő munkarendelésekhez kapcsolódó beszerzési igénylések megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Bezserzés** csoportra, válassza a **Munkarendelés beszerzési igénylései** elemre az **A Munkarendelés beszerzési rendelései** listaoldal megnyitásához.
 
-9. Ha több munkarendelést szeretne hozzáadni, ismételje meg a 7-8. lépést.
-
-10. A **Rendezési sorrend** mezőben jelezheti, hogy a munkarendeléseket meghatározott sorrendben kell-e végrehajtani. A kiválasztott munkarendelések megadott sorrendjét az 1, 2, 3 stb. számok megadásával határozhatja meg.
-
-11. **A munkarendelések** gombra kattintva megtekintheti a munkarendelés-gyűjtőben szereplő munkarendelések listáját.
-
-12. Kattintson a **Kapacitásterhelés** gombra a **Kapacitásterhelés** pont megnyitásához a karbantartási ütemezéshez, a nem ütemezett munkarendelésekhez és az ütemezett munkarendelésekhez kapcsolódó kapacitásterhelés kiszámításához és megtekintéséhez.
-
-13. A **Cikkelőrejelzés** gombra kattintva megnyílik a **Cikkelőrejelzés**, ahol cikkekkel (pótalkatrészekkel és egyéb szükséges cikkekkel) kapcsolatos előrejelzéseket számíthat ki és tekinthet meg a karbantartási ütemezéshez, nem ütemezett munkarendelésekhez és ütemezett munkarendelésekhez kapcsolódóan.
-
-14. Kattintson a **Munkarendelés beszerzési igénylése** gombbal a **Munkarendelés beszerzési igénylése** lista megnyitásához, ahol a munkarendelésgyűjtőben szereplő munkarendelésekhez kapcsolódó beszerzési igénylések listája látható.
-
-15. Kattintson a **Munkarendelés-beszerzés** gombra a **Munkarendelés-beszerzés** lista megnyitásához, ahol a munkarendelés-gyűjtőben szereplő munkarendelésekhez kapcsolódó beszerzési rendelések listája látható.
+16. A munkarendelési gyűjtőben lévő munkarendelésekhez kapcsolódó beszerzési rendelései megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Bezserzés** csoportra, válassza a **Munkarendelés beszerzési igénylései** elemre az **A Munkarendelés beszerzései** listaoldal megnyitásához.
 
 >[!NOTE]
->Ha egy munkarendelés-gyűjtő már nem releváns a munkatervezéshez, akkor a gyűjtő **Aktív** jelölőnégyzetét állítsa „Nem” értékre a **Munkarendelés-gyűjtő** listanézetében.
+>Ha egy munkarendelés-gyűjtő már nem releváns a munkatervezéshez, akkor a gyűjtő **Aktív** lehetőségét állítsa be **Nem** értékre a **Munkarendelés-gyűjtő** oldalának listanézetében.
 
-Jelölje be a **Munkarendelés-kapcsolatok törlése** jelölőnégyzetet, ha az összes munkarendelési sort törölni szeretné, például azért, hogy üres gyűjtőt hozzon létre, amelyet később más munkarendelésekhez használhat. Ne felejtse el törölni a **Munkarendelés-kapcsolatok törlése** jelölőnégyzetet, ha a munkarendelés-gyűjtőt szeretné használni a későbbiekben új munkarendelés-kapcsolatok létrehozásához.
+Az összes alkdolgozó rendelési sor törléséhez állítsa a **Munkarendelés- kapcsolatok törlése** beállítást **Igen** értékre. Ez a beállítás például akkor hasznos, ha egy üres gyűjtőt szeretne létrehozni, amelyet később más munkarendelésekhez használhat. Ha elkészült, ne felejtse a **Munkarendelés-kapcsolatok törlése** lehetőséget **Nem** értékre állítani, ha a munkarendelés-gyűjtőt szeretné használni a későbbiekben új munkarendelés-kapcsolatok létrehozásához.
 
+Az alábbi ábra a **Munkarendelés-gyűjtő létrehozása** listaoldal egy példáját mutatja be.
 
 ![1. ábra](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Munkarendelés hozzáadása egy munkarendelés-gyűjtőhöz
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Egy munkarendelés hozzáadása egy munkarendelés-gyűjtőhöz
 
-A fenti szakaszban leírt módon munkarendeléseket adhat hozzá a munkarendelés-gyűjtőhöz, amikor létrehozza a gyűjtőt. Munkarendeléseket az **Összes munkarendelés** listából is hozzáadhat egy munkarendelés-gyűjtőhöz.
+Az előző szakaszban leírt módon munkarendeléseket adhat hozzá a munkarendelés-gyűjtőhöz, amikor létrehozza azt a gyűjtőt. Az **Összes munkarendelések** vagy **Aktív munkarendelések** listaoldalon is hozzáadhat munkarendeléseket a munkarendelés-gyűjtőkhöz.
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Válassza ki a munkarendelést, majd a Művelet panel **Munkarendelés** lapján a **Karbantartás** csoportban válassz a **Munkarendelés-gyűjtő** pontot.
 
 2. Válassza ki a munkarendelést a listán, majd kattintson a **Munkarendelés-gyűjtő** elemre.
 
-3. Válassza a „Hozzáadás” lehetőséget a **Hozzáadás/eltávolítás** mezőben.
+3. A **Munkarendelés-gyűjtő karbantartása** párbeszédablakban a **Hozzáadás /eltávolítás** mezőben válassza a **Hozzáadás**elemet.
 
 4. Válassza a munkarendelés-gyűjtőt a **Gyűjtő** mezőben.
 
-5. Kattintson az **OK** gombra.
+5. Válassza ki az **OK** lehetőséget.
 
-6. Miután a munkarendelést a munkarendelés-gyűjtőhöz adta, ha szeretné a munkarendelést a gyűjtőben meghatározott sorrendbe tenni: Nyissa meg a munkarendelés-gyűjtő egyik listaoldalát, válassza ki a gyűjtőt, majd kattintson a **Szerkesztés** lehetőségre, és rendezze a gyűjtőben található munkarendelések rendezési sorrendjét a **Munkarendelés-gyűjtő** űrlap > **Munkarendelések** gyorslap > **Rendezési sorrend** mezőben.
+6. Ha azt szeretné a hozzáadott munkarendelést egy meghatározott sorrendbe helyezze a munkarendelés-gyűjtőben, az **Összes munkarendelés-gyűjtő** vagy az **Aktív munkarendelés-gyűjtők** listaoldalán válassza ki a gyűjtőt majd válassza a **Szerkesztés** parancsot. Ezt követően a **Munkarendelési gyűjtő** lap **Munkarendelések** gyorslapján a **Rendezési sorrend** mező segítségével módosíthatja a gyűjtőbe foglalt munkarendelések rendezési sorrendjét.
 
-Ha egy munkarendelési gyűjtőből szeretné eltávolítani a kiválasztott munkarendelést, válassza a 3. lépésben az „Eltávolítás” lehetőséget.
+A munkarendelési gyűjtőből egy kiválasztott munkarendelés eltávolításához, válassza a 3. lépésben az **Eltávolítás** lehetőséget.
 
