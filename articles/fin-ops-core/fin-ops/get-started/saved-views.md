@@ -3,7 +3,7 @@ title: Mentett nézetek
 description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190879"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658667"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -37,9 +37,11 @@ A hagyományos személyre szabással a felhasználók űrlaponként csak egyetle
 
 -    A bizonyos típusú lapokhoz létrehozott nézetekben szerepelhetnek a felhasználó által hozzáadott szűrők vagy sorba rendezések is, így a felhasználók gyorsan visszatérhetnek a gyakran szűrt adathalmazokhoz. További részleteket a [Mely lapok támogatják a nézeteket](saved-views.md#what-pages-support-views) című szakaszban talál. 
 
--    A nézetek közzétehetők a biztonsági szerepkörökben, ami azt jelenti, hogy az adott szerepkörrel rendelkező felhasználók hozzáférhetnek a nézethez, és használhatják is, a felhasználó testreszabási képességeitől függetlenül. Ez a közzétételi funkció lehetővé teszi a szervezetek számára, hogy az üzleti tevékenységekhez optimalizált vállalati standard nézeteket határozzanak meg. További információt a [Testreszabások kezelése szervezeti szinten nézetekkel](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) című szakaszban talál.
+-    A nézetek közzétehetők bizonyos biztonsági szerepkörökben és konkrét jogi személyekben számára. Emiatt a megadott jogi személynél meghatározott szerepkörrel rendelkező felhasználók hozzáférhetnek a nézethez, annak ellenére, hogy a felhasználó esetleg nem tudja személyre szabni azt. Ez a közzétételi funkció lehetővé teszi a szervezetek számára, hogy az üzleti tevékenységekhez optimalizált vállalati standard nézeteket határozzanak meg. További információért lásd a [Testreszabások kezelése szervezeti szinten nézetekkel](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) című szakaszban talál.
 
 -    A hagyományos testreszabással ellentétben a nézeteket a program nem menti automatikusan, amikor a felhasználó kifejezetten testreszabott beállításokat hajt végre, vagy listát szűr. A kifejezett mentés szükséges a rugalmasság biztosítása érdekében a nézetek létrehozása során, mielőtt és miután az adott nézethez társított módosításokat végrehajtják, és biztosítja, hogy a nézetek meghatározásai véletlenül nem módosulnak a nem hosszú távra szánt szűrések és testreszabások által.  
+
+-    A nézeteket csempeként, listaként vagy hivatkozásként lehet felvenni a munkaterületekre. Ennek megfelelően a szűrt adatkészletek megjeleníthetők egy munkaterületen, és a felhasználók hozzárendelhetnek testreszabási készleteket, amelyek a csempével vagy hivatkozással beállított adatokhoz kapcsolódnak.
 
 ## <a name="switching-between-views"></a>Váltás a nézetek között
 Miután a nézeteket engedélyezték egy környezethez, a nézeteket támogató összes lap tartalmazni fog egy összecsukott nézetválasztót a képernyő felső részén, amely megjeleníti az aktuális nézet nevét.  
@@ -52,9 +54,9 @@ A nézetválasztó két méretben elérhető:
  
 Ha rákattint a nézet nevére, megnyílik a nézetválasztó, és megjelenik az adott laphoz elérhető nézetek listája.
 
--    **Klasszikus nézet**: A klasszikus nézet a lap beépített nézetét jeleníti meg, ahol nem alkalmaztak kifejezett testreszabásokat.  
+-    **Standard nézet**: A **Standard** nézet (korábban **Klasszikus** nézet) a lap gyári nézete, ahol nem alkalmaztak explicit személyre szabott beállításokat.
 -    **Személyes nézetek**: A lakat nélküli nézetek az Ön személyes nézeteit jelenítik meg. Ezeket a nézeteket vagy Ön hozta létre, vagy a rendszergazda adta Önnek.  
--    **Zárolt nézetek**: Bizonyos nézetek (például a Klasszikus nézet, vagy az Ön szerepkörébe közzétett nézetek) neve mellett egy lakat szerepel a nézetválasztóban, amely azt jelenti, hogy Ön nem szerkesztheti ezeket a nézeteket. A rendszer azonban automatikusan menti az oldal használatát jelző implicit testreszabásokat, például a rácsoszlop szélességének módosítását, vagy egy gyorslap kibontását vagy összecsukását. Azonban létrehozhat egy személyes nézetet az egyik zárol nézet alapján a **Mentés másolatként** művelettel, ha rendelkezik testreszabási jogosultságokkal.
+-    **Zárolt nézetek**: Néhány nézeten (például a **Standard** nézet és a szerepkörbe feladott összes nézet) egy lakat szimbólum látható nézetválasztóban. Ez a jel azt jelzi, hogy a nézeteket nem lehet módosítani. Az oldalak használatát tükröző implicit testreszabásokat azonban automatikusan menti a program. Ezek az implicit egyéni beállítások a rács oszlopainak szélességét, illetve a gyorslapok kibontását vagy összecsukását tartalmazzák. Azonban létrehozhat egy személyes nézetet az egyik zárol nézet alapján a **Mentés másként** művelettel, ha rendelkezik testreszabási jogosultságokkal.
 -    **Új nézetek**: Az olyan közzétett nézetek, amelyeket még nem nyitottak meg, vonallal körberajzolva láthatók, egy csillaggal a nézet nevének bal oldalán.  
 
 Másik nézetre történő váltáshoz először nyissa meg a nézetválasztót, majd válassza ki a betölteni kívánt nézetet. 
@@ -69,7 +71,7 @@ Ha menteni szeretné azokat a módosításokat, hajtsa végre az alábbi lépés
 2.  A meglévő nézet módosítása:
      1. Válassza a **Mentés** lehetőséget. Ne felejtse el, hogy ez a művelet zárolt nézetekhez nem engedélyezett. 
 3.  Új nézet létrehozása:
-     1.    Válassza a **Másolat mentése** lehetőséget. 
+     1.    Válassza a **Mentés másként** lehetőséget. 
      2.    Írja be a nézet nevét és (ha van) a leírását.
      3.    Válassza a **Mentés** lehetőséget.
 
@@ -81,7 +83,7 @@ Ha szeretné egy lap alapértelmezett nézetét módosítani, kövesse az alább
 2.  Válassza ki a nézet nevét a nézetválasztó megnyitásához. 
 3.  Válassza a **Továbbiak** elemet, majd a **Rögzítés alapértelmezettként** lehetőséget.  
 
-A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Másolat mentése** művelettel), az új nézetet alapértelmezetté teheti, ha beállítja a **Rögzítés alapértelmezettként** beállítást a nézet mentése előtt.  
+A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Mentrés másként** művelettel), az új nézetet alapértelmezetté teheti, ha beállítja a **Rögzítés alapértelmezettként** beállítást a nézet mentése előtt.
 
 Ne feledje, hogy bizonyos esetekben az alapértelmezett nézethez társított lekérdezés nem hajtható végre, amikor először navigál egy oldalra. Ha például egy lapra egy csempén keresztül navigál, akkor a rendszer végrehajtja a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül. Ha egy olyan oldalra navigál, amelynek a Klasszikus nézete már rendelkezik egy megadott lekérdezéssel, akkor az eredeti lekérdezés kerül végrehajtásra, és nem az alapértelmezett nézet lekérdezése. Ha ez történik, akkor erre egy tájékoztató üzenet figyelmeztet, amikor a nézet betöltődik. A nézetek a lap betöltése utáni váltásának lehetővé kell tennie a nézet lekérdezése számára, hogy az elvártaknak megfelelően megvalósuljon.
 
@@ -97,24 +99,27 @@ Az adott lap elérhető nézeteinek listájához a következő műveletek állna
 Az ebben a párbeszédablakban elvégzett módosítások a **Mentés** gomb megnyomása után lépnek érvénybe.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Testreszabások kezelése nézetekkel a szervezet szintjén
-A testreszabások kezelésére vonatkozó szervezeti szintű fejlesztések megértéséhez először nézzük meg, hogy a nézetek előtt hogyan működött a testreszabás kezelése.  
+Ennek a szakasznak a segítségével megtudhatja, hogy a mentett nézetek hogyan javítják a személyre szabások kezelését a szervezeti szinten ezért a szakasz leírja, hogyan működött a testreszabások kezelése, mielőtt a nézetek elérhetők lettek volna.
 
 Nézetek nélkül a rendszergazdák a Testreszabás oldalon keresztül egyéni beállításokat alkalmazhatnak egy adott laphoz egy felhasználóra vagy felhasználói csoportra vonatkozóan.  Ha ezek a felhasználók testreszabási jogokkal rendelkeznek, a testreszabásokat a rendszer alkalmazza az adott lapra. Azonban nem léteztek olyan képességek, amelyek megakadályozták a felhasználókat abban, hogy további testreszabásokat végezzenek a lapon, így a szervezet nem tudta biztosítani, hogy a felhasználók egy konzisztens felhasználói felülettel rendelkeznek. Ha ezeknek a felhasználóknak nem volt testreszabási jogosultsága, akkor a rendszergazda által számukra biztosított testreszabások nem töltődnek be. Ezenkívül ha új felhasználókat vettek fel a szervezetbe, a rendszergazdáknak manuálisan kellett betölteniük a testreszabásokat a felhasználó számára. Nem volt automatikus mechanizmus annak meghatározására, hogy az adott felhasználó számára milyen testreszabásoknak kell elérhetőnek lenniük abban a szerepkörben.
 
-Az elmentett nézetek funkcióval a testreszabások szervezeti szintű kezelése jelentősen könnyebb, elsősorban a nézetek biztonsági szerepkörökbe történő közzétételének köszönhetően. A nézetek közzétételét követően az adott szerepkörrel rendelkező felhasználók hozzáférhetnek a nézethez, és használhatják is, a felhasználó testreszabási képességeitől függetlenül. Npha minden felhasználó rendelkezik a közzétett nézet egy változatával, amelyben az oldalhasználat módosításait (implicit testreszabásokat) a rendszer automatikusan alkalmazza, egyik felhasználó sem menthet el a közzétett nézet lekérdezésére vonatkozó testreszabást vagy frissítést (azaz a közzétett nézetek zároltak). Ezenkívül ha új felhasználókhoz olyan szerepkört rendelnek, amelybe a nézetet közzétették, akkor ők automatikusan megtekinthetik a szerepkörükhöz társított nézeteket a rendszergazda küözbenjárása nélkül is. Hasonlóképpen ha egy felhasználó szerepköre megváltozik a szervezeten belül, a korábbi szerepköréhez társított nézetekhez már nem férhet hozzá, szintén a rendszergazda közbenjárása nélkül. Egy közzétett nézeten végzett frissítéseket könnyedén megoszthatják a felhasználókkal, ha a nézetet újból közzéteszik a megfelelő biztonsági szerepkörökbe.
+Az elmentett nézetek funkció a testreszabások szervezeti szintű kezelésé jelentősen könnyebbé teszi, elsősorban a nézetek felhasználói csoportokba történő közzétételének köszönhetően. Miután közzétették a nézetet, minden olyan felhasználó hozzáférhet, aki rendelkezik a meghatározott biztonsági szerepkörökkel, és a megadott jogi személyekhez tartozik, annak ellenére, hogy a felhasználó esetleg nem tudja testreszabni azt. Noha minden felhasználó rendelkezik a közzétett nézet egy változatával, amelyben az oldalhasználat módosításait (implicit testreszabásokat) a rendszer automatikusan alkalmazza, egyik felhasználó sem menthet el a közzétett nézet lekérdezésére vonatkozó testreszabást vagy frissítést. (Más szóval a közzétett nézetek zároltak.) Ezenkívül ha a jogi személyekben olyan szerepe van az új felhasználóknak, hogy a nézeteit közzétették, a program automatikusan megjeleníti a saját szerepkörével és jogi személyével társított nézeteket. Nincs szükség további műveletre az adminisztrátorrészéről. Hasonlóképpen, ha a felhasználók egy szervezet szerepköreit módosítják, vagy különböző jogi személyekhez kapnak hozzáférést előfordulhat, hogy már nem férnek hozzá a korábban közzétett nézetekhez. Még egyszer, az adminisztrátornak nem kell további lépéseket tennie.
+
+Egy közzétett nézeten végzett frissítéseket könnyedén megoszthatják a felhasználókkal, ha a nézetet újból közzéteszik a megfelelő biztonsági szerepkörökbe és jogi személyekbe.
 
 A közzétételi funkció lehetővé teszi a szervezetek számára, hogy az üzleti tevékenységekhez optimalizált vállalati standard nézeteket határozzanak meg, amelyeket a megadott biztonsági szerepkörökkel rendelkező felhasználóknak céloznak.  
 
 ## <a name="publishing-views"></a>Nézetek közzététele
-A közzétételi folyamat során a nézeteket egy vagy több biztonsági szerepkörhöz lehet rendelni, ami azt jelenti, hogy az adott szerepkörrel rendelkező felhasználók hozzáférhetnek a nézethez, és használhatják, de a nézetet nem szerkeszthetik. Jelenleg csak a rendszergazdáknak van joga a **Közzététel** művelet használatához a nézetválasztó legördülő menüből. Egy későbbi frissítésben azonban lesz egy olyan új biztonsági szerepkör, amely más megbízható felhasználóknak is közzétételi jogokat ad.  
+A közzétételi folyamat során a nézeteket egy vagy több jogi személyhez egy vagy több biztonsági szerepkörhez rendelhetik hozzá. Ezért minden olyan felhasználó, aki hozzáfér egy jogi személyhez, és aki hozzá van rendelve egy ilyen szerepkörhöz, hozzáférhet a nézetekhez, de nem szerkesztheti őket. Jelenleg csak a rendszergazdák rendelkeznek hozzáféréssel a **Közzététel** művelethez a nézetválasztó legördülő menüben. A szervezet más megbízható felhasználói azonban hozzáférhetnek az új **Mentett nézetek adminisztrátora** szerepkörhöz.
 
 A nézet közzétételéhez kövesse az alábbi lépéseket: 
 1.  Hozzon létre és mentsen el a közzétenni kívánt nézet egy személyes példányát. 
 2.  A jelenleg betöltött nézetnél válassza ki a nézet nevét a nézetválasztó legördülő menü megnyitásához. 
 3.  Válassza a **Továbbiak** gombot, és válassza a **Közzététel** lehetőséget. Megnyílik a Közzététel párbeszédpanel.  
-4.  Adja meg a nézet nevét és (ha van) a leírását. Ez az a név, amelyet a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. Ne feledje, hogy egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája különbözik.  
-5.  Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetet megkapó felhasználókhoz.  
-6.  Válassza a **Közzététel** lehetőséget.
+4.  Adja meg a nézet nevét és (ha van) a leírását. A név, amelyet megad az, mely a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. A lap közzétett nézeteinek egyedinek kell lennie. Egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája vagy jogi személyek különböznek is.
+5.  Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz.
+6. Adja hozzá azokat a jogi személyeket, amelyeknek számára ez a nézet elérhető kell legyen. 
+7.  Válassza a **Közzététel** lehetőséget.
 
 Ne feledje, hogy bizonyos környezetekben előfordulhat, hogy egy ideig (legfeljebb egy óráig) eltarthat, mielőtt a felhasználók megtekinthetik a közzétett nézetet.
 
@@ -142,7 +147,7 @@ Míg minden felhasználó láthatja a **Saját nézetek** lapot a személyes né
 
 Az adott lap összes közzétett nézetének listájához a következő műveletek állnak rendelkezésre. 
 
--    **Közzététel**: a **Közzététel** művelettel újból közzéteheti a nézeteket a módosított közzétételi paraméterekkel (név, leírás, biztonsági szerepkörök).  
+-    **Közzététel**: a **Közzététel** művelettel újból közzéteheti a nézeteket a későbbi közzétételi paraméterekkel (név, leírás, biztonsági szerepkörök).
 -    **Eltávolítás**: A közzétett nézetek végleges törléséhez használja az **Eltávolítás** műveletet. Ez a művelet eltávolítja a nézetet rendszer minden felhasználójától.  
  
 Az ebben a párbeszédablakban elvégzett módosítások a **Mentés** gomb kiválasztása után lépnek érvénybe.
@@ -161,7 +166,9 @@ Ha a szolgáltatás villámnézetében szeretné engedélyezni a mentett nézete
 
 4.  **Engedélyezze a funkciót**: keresse meg a **Mentett nézetek** funkciót a funkciólistában, majd válassza ki az **Engedélyezés most** lehetőséget a részleteket tartalmazó ablaktáblán.
 
-Minden további felhasználói munkamenet engedélyezett mentett nézetekkel indul.  
+Minden további felhasználói munkamenet engedélyezett mentett nézetekkel indul.
+
+A mentett nézetek csak a Tier 1 (fejlesztői/teszt) és a Tier 2 (tesztkörnyezet) környezetben használhatók a további tesztelési és tervezési változtatások biztosítására. A Mentett nézetek előnézete a jövőbeli kiadásokban a termelési környezetekben lesz elérhető.
 
 Ne feledje, hogy ha a környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a fenti lépéseket elvégzi. Ennek az az oka, hogy a nézet funkció a testreszabási alrendszer tetejére épül.
 
@@ -172,7 +179,7 @@ A nézetek engedélyezésekor minden meglévő testreszabást, amely az adott fe
 A nézetek elérhetők a legtöbb oldalon, bár nem mindegyiken. Pontosabban a nézetek jelenleg elérhetők az összes teljes képernyős lapon, kivéve az irányítópultokon és munkaterületeken. A nem teljes képernyős lapok, például a párbeszédpanelek, legördülő párbeszédpanelek, keresések, valamint a továbbfejlesztett előnézetek jelenleg nem támogatják a nézeteket. A további oldaltípusok, például a munkaterületek és párbeszédablakok esetében a nézetek támogatása esetlegesen egy jövőbeli frissítésben lehetséges.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kinek van engedélye a nézetek közzétételére?
-Jelenleg csak a rendszergazdák rendelkeznek a nézetek közzétételi jogosultságával.  Egy későbbi frissítés tartalmazni fog egy új biztonsági szerepkört, amely további rugalmasságot biztosítana az ügyfelek számára a közzétételre jogosult személyekkel kapcsolatban.  
+Csak azok az adminisztrátorok és felhasználók férhetnek hozzá a nézetekhez, akiket a **Mentett nézetek adminisztrátora** szerepkörhöz hozzárendeltek. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Miért nem tudom elmenteni a szűrőket ezzel a nézettel? 
 Számos oka lehet annak, hogy egy szűrő miért nem menthető egy nézettel: 

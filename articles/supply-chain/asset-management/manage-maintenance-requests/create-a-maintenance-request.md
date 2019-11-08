@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024637"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571921"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A karbantartási kérések akkor használhatók, ha a karbantartás dolgozók vagy a termelési dolgozók felfedezik, hogy a felszerelés javítása szükséges, de a javítási feladat nem hajtható végre azonnal.
 
@@ -55,7 +55,7 @@ Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk**
 11. A **Megjegyzések** mezőbe írja be a szükséges további megjegyzéseket.
 12. Válassza ki az **OK** lehetőséget.
 
-![1. ábra](media/03-manage-maintenance-requests.png)
+![Karbantartási kérés létrehozása](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Karbantartási kérések utólagos feldolgozása
 
@@ -70,7 +70,7 @@ A részleteket nézetben különböző információkat lehet frissíteni. Íme n
 - Válassza ki a karbantartási feladat típusát, és ha ez az információ releváns, akkor egy kapcsolódó karbantartási feladat változatát és a szakmát.
 - A **Földrajzi szélesség** és **Földrajzi hosszúság** mezőkben adja meg a földrajzi koordinátákat. A karbantartási kéréshez hozzáadott koordinátákat a program automatikusan átviszi a kapcsolódó munkarendelésbe. 
 
-![2. ábra](media/04-manage-maintenance-requests.png)
+![Karbantartási kérések frissítése](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Ha a karbantartási kérés létrehozásakor kiválaszt egy eszközt, akkor egy hiba adható hozzá a tárgyi eszközhöz. A karbantartási kérés létrehozása után, igény esetén több hibát is megadhat. Hibák hozzáadásához válassza ki az **Eszköz hibája** lehetőséget az **Összes karbantartási kérés** oldalon.

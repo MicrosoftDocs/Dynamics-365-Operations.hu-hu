@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 956c866a6b39e2a81f085910e00d2bfe8683829c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178170"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658644"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
@@ -138,13 +138,19 @@ A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott vál
 
 Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája. A mobillap megtervezéséhez használja a **VendMobileInvoiceAssignedToMeListPage** lapját. Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz. Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.
 
-1.  Az URL-ben cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi **=VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  Az URL-ben cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Hozzám rendelt függőben levő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
 3.  Válassza ki a munkaterületet, és kattintson a **Szerkesztés** elemre
 4.  Kattintson az **Oldal hozzáadása** elemre az első mobiloldal létrehozásához.
 5.  Adjon meg egy nevet, például **Saját szállítói számlák**, és egy leírást, például **Véleményezésre hozzám rendelt szállítói számlák**.
 6.  Kattintson a **Kész** gombra.
-7.  A mobiltervezőben a **Mezők** fülön kattintson a **Mezők kijelölése** elemre. A listalapon látható oszlopoknak az alábbi ábrához kell hasonlítaniuk. [![Hozzám rendelt függőben lévő szállítói számlák oldalának oszlopai](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  A mobiltervezőben a **Mezők** fülön kattintson a **Mezők kijelölése** elemre. A listalapon látható oszlopoknak az alábbi ábrához kell hasonlítaniuk. 
+
+    [![Hozzám rendelt függőben lévő szállítói számlák oldalának oszlopai](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  A listaoldalról adja hozzá a szükséges oszlopokat, amelyeket a felhasználók látni fognak a mobiloldalon. A rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. A példánkban szereplő követelmények alapján a következő nyolc mező szükséges. Azonban egyes felhasználók úgy vélhetik, hogy nyolc mező mobileszközön túl sok információt jelent. Ezért csak a legfontosabb mezőket mutatjuk a mobillista-nézetben. A fennmaradó mezők a részletes nézetben jelennek meg, amelyet később fogunk megtervezni. Egyelőre a következő mezőket adjuk hozzá. Kattintson ezekben az oszlopokban a plusz jelre (**+**) a mobiloldalhoz való hozzáadáshoz.
     - Szállító neve
     - Számla összege
@@ -152,8 +158,10 @@ Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhaszn�
     - Számla száma
     - Számla dátuma
 
-    A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
-    [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
+    
+   [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  Most a következő oszlopokat is hozzá kell adnia, hogy később engedélyezni lehessen munkafolyamat-műveleteket.
     - Befejezett feladat megjelenítése
     - Delegált feladat megjelenítése
@@ -169,16 +177,26 @@ Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhaszn�
 
 ### <a name="vendor-invoice-details"></a>Szállítói számla részletei
 
-A számla részletei lap mobilra való megtervezéséhez használja a **VendMobileInvoiceHeaderDetails** oldalt. Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt. [![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+A számla részletei lap mobilra való megtervezéséhez használja a **VendMobileInvoiceHeaderDetails** oldalt. Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt. 
+
+[![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. Az URL-ben cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához
+
 2. Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
+
 3. Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
+
 4. Válassza ki a korábban létrehozott **Saját szállítói számlák** oldalt, majd kattintson a **Szerkesztés** elemre.
+
 5. A **Mezők** lapon kattintson a **Rács** oszlop fejlécére.
+
 6. Kattintson a **Tulajdonságok &gt; Oldal hozzáadása** elemre. **Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.
+
 7. Adja meg a lap címét, például: **Számla részletei**, és egy leírást, például: **Számlafejléc és sor részleteinek megtekintése**.
+
 8. Kattintson a **Mezők kijelölése** elemre. Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. 
+
 9. Adja hozzá a példánkban szereplő követelmények alapján a következő mezőket a fejlécből:
    - Szállító neve
    - Számla összege
@@ -197,9 +215,13 @@ A számla részletei lap mobilra való megtervezéséhez használja a **VendMobi
     - 1099-es összeg
 
 11. Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre. Az oldalnak az alábbi ábrához kell hasonlítania.
+    
     [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
+
 13. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
+
 14. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
 ### <a name="workflow-actions"></a>Munkafolyamat-műveletek
@@ -295,12 +317,19 @@ Munkafolyamat-műveletek hozzáadásához használja a **VendMobileInvoiceHeader
 ### <a name="vendor-invoice-attachments"></a>Szállítói számlamellékletek
 
 1. Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
+
 2. Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
+
 3. Válassza a korábban elkészített <strong>Számla részletei **oldalt, majd kattintson a Szerkesztés **</strong> elemre.
+
 4. Állítsa a **Dokumentumkezelés** lehetőséget **Igen** értékre, ahogy az lent látható. **Megjegyzés:** ha a mellékleteket nem muszáj megjeleníteni a mobileszközön, a beállítást az alapértelmezett **Nem** értéken hagyhatja.
+   
    ![Dokumentumkezelés](./media/docmanagement-216x300.png)
+
 5. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
+
 6. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
+
 7. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
 ### <a name="vendor-invoice-line-distributions"></a>Szállítói számlasorok felosztásai
@@ -311,12 +340,19 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 > A követelmények ismerete segít eldönteni, melyik adott oldalt használjuk, és pontosan hogyan optimalizáljuk a mobil felhasználói élményt a felület megtervezése során. A második forgatókönyv szerint másik oldalt fogunk használni a felosztások megjelenítésére, mivel ennek a forgatókönyvnek a követelményei eltérőek.
 
 1.  Az URL-ben cserélje ki a menüpont nevét, mint korábban. A megjelenő lapnak az alábbi ábrához kell hasonlítania.
+
 [![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
+
 3.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához. **Megjegyzés:** látni fogja, hogy két új oldal jön létre automatikusan. A rendszer ezeket az oldalakat azért hozza létre, mert az előző részben bekapcsolta a Dokumentumkezelést. Ezeket az új oldalakat figyelmen kívül hagyhatja.
+
 4.  Kattintson az **Oldal hozzáadása** elemre.
+
 5.  Adja meg az oldal címét, például **Könyvelés megtekintése**, és egy leírást, például a **Számla könyvelésének megtekintése**.
+
 6.  Kattintson a **Kész** gombra.
+
 7.  A **mezők** lapon kattintson a **Mezők kiválasztása** elemre, a felosztások lapon válassza a következő mezőket, és kattintson a **Kész** elemre:
     1.  Összeg
     2.  Pénznem
@@ -324,8 +360,11 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 
     > [!NOTE] 
     > A **Leírás** oszlopot nem választottuk ki a felosztások rácsból, mert ebben az esetben a követelmények megerősítik, hogy a kiterjesztett ár az egyetlen összeg, amelyhez felosztások lesznek elérhetők. Ezért a felhasználónak nem lesz másik mezőre szüksége ahhoz, hogy lássa, milyen típusú összegre vonatkozik a felosztás. A következő forgatókönyvben azonban **használni fogjuk** ezt az információt, mivel annak a forgatókönyvnek a követelményei azt mondják, hogy egyéb összegtípusokhoz (például áfához) is lesznek felosztások.
+
 8.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
+
 9.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
+
 10. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
 > [!NOTE] 
