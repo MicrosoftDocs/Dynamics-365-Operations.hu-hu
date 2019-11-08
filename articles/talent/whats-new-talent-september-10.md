@@ -18,85 +18,85 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 59cb0203422b7d81b5ca0077370fd9cbdb4a7f89
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 1340f17e57f49d6adb9dc0a7c769bafa655de56e
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010084"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551256"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-10-2018"></a><span data-ttu-id="cfbf2-103">Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. szeptember 10.)</span><span class="sxs-lookup"><span data-stu-id="cfbf2-103">What's new or changed in Dynamics 365 Talent: Core HR (September 10, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-10-2018"></a><span data-ttu-id="e023c-103">Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. szeptember 10.)</span><span class="sxs-lookup"><span data-stu-id="e023c-103">What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="cfbf2-104">**Build 8.1.138.0**</span><span class="sxs-lookup"><span data-stu-id="cfbf2-104">**Build 8.1.138.0**</span></span>
+<span data-ttu-id="e023c-104">**Build 8.1.138.0**</span><span class="sxs-lookup"><span data-stu-id="e023c-104">**Build 8.1.138.0**</span></span>
 
-<span data-ttu-id="cfbf2-105">Ez a témakör a Microsoft Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.</span></span>
+<span data-ttu-id="e023c-105">Ez a témakör a Microsoft Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.</span><span class="sxs-lookup"><span data-stu-id="e023c-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.</span></span>
 
-## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a><span data-ttu-id="cfbf2-106">Pontos idő megadása a szabadságkérelmekben (fél nap)</span><span class="sxs-lookup"><span data-stu-id="cfbf2-106">Allow specific time of day on time-off requests (half days)</span></span>
+## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a><span data-ttu-id="e023c-106">Pontos idő megadása a szabadságkérelmekben (fél nap)</span><span class="sxs-lookup"><span data-stu-id="e023c-106">Allow specific time of day on time-off requests (half days)</span></span>
 
-<span data-ttu-id="cfbf2-107">Ha a szabadság és a távollét beállítása úgy történik, hogy a szabadság megadása napokban történjen, akkor lehetőség van félnapos meghatározásra is.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-107">If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition.</span></span> <span data-ttu-id="cfbf2-108">Ezután, amikor a felhasználók szabadságkérelmet nyújtanak be, megadhatják, hogy a nap első felét vagy második felét kérik-e.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-108">Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.</span></span>
+<span data-ttu-id="e023c-107">Ha a szabadság és a távollét beállítása úgy történik, hogy a szabadság megadása napokban történjen, akkor lehetőség van félnapos meghatározásra is.</span><span class="sxs-lookup"><span data-stu-id="e023c-107">If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition.</span></span> <span data-ttu-id="e023c-108">Ezután, amikor a felhasználók szabadságkérelmet nyújtanak be, megadhatják, hogy a nap első felét vagy második felét kérik-e.</span><span class="sxs-lookup"><span data-stu-id="e023c-108">Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.</span></span>
 
-<span data-ttu-id="cfbf2-109">Ez a beállítás alapértelmezés szerint ki van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-109">By default, this option is turned off.</span></span> <span data-ttu-id="cfbf2-110">Azoknál az alkalmazottaknál, akik a nap első vagy második felét szeretné kivenni, be kell kapcsolnia ezt a lehetőséget az Emberi erőforrások paramétereinek **Szabadság és eltávolítás** területén.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-110">For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.</span></span>
+<span data-ttu-id="e023c-109">Ez a beállítás alapértelmezés szerint ki van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="e023c-109">By default, this option is turned off.</span></span> <span data-ttu-id="e023c-110">Azoknál az alkalmazottaknál, akik a nap első vagy második felét szeretné kivenni, be kell kapcsolnia ezt a lehetőséget az Emberi erőforrások paramétereinek **Szabadság és eltávolítás** területén.</span><span class="sxs-lookup"><span data-stu-id="e023c-110">For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.</span></span>
 
-<span data-ttu-id="cfbf2-111">A szolgáltatás biztonsági jogosultsága a Humánerőforrás-paraméterek karbantartása.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-111">The security privilege for this feature is Maintain Human Resources Parameters.</span></span>
+<span data-ttu-id="e023c-111">A szolgáltatás biztonsági jogosultsága a Humánerőforrás-paraméterek karbantartása.</span><span class="sxs-lookup"><span data-stu-id="e023c-111">The security privilege for this feature is Maintain Human Resources Parameters.</span></span>
 
-## <a name="validation-of-leave-and-absence-entries"></a><span data-ttu-id="cfbf2-112">A szabadság- és távollétbejegyzések ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="cfbf2-112">Validation of leave and absence entries</span></span>
+## <a name="validation-of-leave-and-absence-entries"></a><span data-ttu-id="e023c-112">A szabadság- és távollétbejegyzések ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="e023c-112">Validation of leave and absence entries</span></span>
 
-<span data-ttu-id="cfbf2-113">Attól függően, hogy a távollét beállítása milyen módon történik, az alkalmazottak figyelmeztető üzenetet kapnak, amennyiben a munkanapnál hosszabb időre vonatkozó szabadságkérelmet nyújtanak be.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-113">Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message.</span></span> <span data-ttu-id="cfbf2-114">Más szóval figyelmeztetést kapnak, ha egy adott napon többet szeretnének kivenni egy teljes napnál.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-114">In other words, they are warned if they try to take more than a full day off on any given date.</span></span>
+<span data-ttu-id="e023c-113">Attól függően, hogy a távollét beállítása milyen módon történik, az alkalmazottak figyelmeztető üzenetet kapnak, amennyiben a munkanapnál hosszabb időre vonatkozó szabadságkérelmet nyújtanak be.</span><span class="sxs-lookup"><span data-stu-id="e023c-113">Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message.</span></span> <span data-ttu-id="e023c-114">Más szóval figyelmeztetést kapnak, ha egy adott napon többet szeretnének kivenni egy teljes napnál.</span><span class="sxs-lookup"><span data-stu-id="e023c-114">In other words, they are warned if they try to take more than a full day off on any given date.</span></span>
 
-<span data-ttu-id="cfbf2-115">Ez az ellenőrzés mindig be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-115">This validation is always turned on.</span></span> <span data-ttu-id="cfbf2-116">Minden olyan alkalommal, amikor a munkavállalók meghaladják a meghatározott napi küszöbértéket, figyelmeztetést kapnak a szabadságkérelmükben.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-116">Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.</span></span>
+<span data-ttu-id="e023c-115">Ez az ellenőrzés mindig be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="e023c-115">This validation is always turned on.</span></span> <span data-ttu-id="e023c-116">Minden olyan alkalommal, amikor a munkavállalók meghaladják a meghatározott napi küszöbértéket, figyelmeztetést kapnak a szabadságkérelmükben.</span><span class="sxs-lookup"><span data-stu-id="e023c-116">Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.</span></span>
 
-## <a name="additional-fields-for-conditional-statements-in-workflows"></a><span data-ttu-id="cfbf2-117">További mezők a feltételes működési utasításokhoz a munkafolyamatokban</span><span class="sxs-lookup"><span data-stu-id="cfbf2-117">Additional fields for conditional statements in workflows</span></span>
+## <a name="additional-fields-for-conditional-statements-in-workflows"></a><span data-ttu-id="e023c-117">További mezők a feltételes működési utasításokhoz a munkafolyamatokban</span><span class="sxs-lookup"><span data-stu-id="e023c-117">Additional fields for conditional statements in workflows</span></span>
 
-<span data-ttu-id="cfbf2-118">A feltételes működési utasításokhoz és helyőrzőkhöz további mezőket adtunk a Core HR számos munkafolyamatánál.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-118">Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.</span></span>
+<span data-ttu-id="e023c-118">A feltételes működési utasításokhoz és helyőrzőkhöz további mezőket adtunk a Core HR számos munkafolyamatánál.</span><span class="sxs-lookup"><span data-stu-id="e023c-118">Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.</span></span>
 
-<span data-ttu-id="cfbf2-119">A következő mezőket adtuk hozzá a kompenzáció, elbocsátás és átmozgatás munkafolyamataihoz:</span><span class="sxs-lookup"><span data-stu-id="cfbf2-119">The following fields have been added to the compensation, termination, and transfer workflows:</span></span>
+<span data-ttu-id="e023c-119">A következő mezőket adtuk hozzá a kompenzáció, elbocsátás és átmozgatás munkafolyamataihoz:</span><span class="sxs-lookup"><span data-stu-id="e023c-119">The following fields have been added to the compensation, termination, and transfer workflows:</span></span>
 
-- <span data-ttu-id="cfbf2-120">EmploymentType</span><span class="sxs-lookup"><span data-stu-id="cfbf2-120">EmploymentType</span></span>
-- <span data-ttu-id="cfbf2-121">LegalEntity</span><span class="sxs-lookup"><span data-stu-id="cfbf2-121">LegalEntity</span></span>
-- <span data-ttu-id="cfbf2-122">AdjustedWorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="cfbf2-122">AdjustedWorkerStartDate</span></span>
-- <span data-ttu-id="cfbf2-123">EmployerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="cfbf2-123">EmployerNoticeAmount</span></span>
-- <span data-ttu-id="cfbf2-124">EmployerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="cfbf2-124">EmployerUnitOfNotice</span></span>
-- <span data-ttu-id="cfbf2-125">TransitionDate</span><span class="sxs-lookup"><span data-stu-id="cfbf2-125">TransitionDate</span></span>
-- <span data-ttu-id="cfbf2-126">WorkerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="cfbf2-126">WorkerNoticeAmount</span></span>
-- <span data-ttu-id="cfbf2-127">WorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="cfbf2-127">WorkerStartDate</span></span>
-- <span data-ttu-id="cfbf2-128">WorkerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="cfbf2-128">WorkerUnitOfNotice</span></span>
-- <span data-ttu-id="cfbf2-129">ProbationEndDate</span><span class="sxs-lookup"><span data-stu-id="cfbf2-129">ProbationEndDate</span></span>
-- <span data-ttu-id="cfbf2-130">Pozíció</span><span class="sxs-lookup"><span data-stu-id="cfbf2-130">Position</span></span>
-- <span data-ttu-id="cfbf2-131">Unió</span><span class="sxs-lookup"><span data-stu-id="cfbf2-131">Union</span></span>
-- <span data-ttu-id="cfbf2-132">Osztály</span><span class="sxs-lookup"><span data-stu-id="cfbf2-132">Department</span></span>
-- <span data-ttu-id="cfbf2-133">PositionType</span><span class="sxs-lookup"><span data-stu-id="cfbf2-133">PositionType</span></span>
-- <span data-ttu-id="cfbf2-134">CompLocation</span><span class="sxs-lookup"><span data-stu-id="cfbf2-134">CompLocation</span></span>
-- <span data-ttu-id="cfbf2-135">Beosztás</span><span class="sxs-lookup"><span data-stu-id="cfbf2-135">Title</span></span>
-- <span data-ttu-id="cfbf2-136">Beosztás</span><span class="sxs-lookup"><span data-stu-id="cfbf2-136">Job</span></span>
-- <span data-ttu-id="cfbf2-137">JobType</span><span class="sxs-lookup"><span data-stu-id="cfbf2-137">JobType</span></span>
-- <span data-ttu-id="cfbf2-138">JobFamily</span><span class="sxs-lookup"><span data-stu-id="cfbf2-138">JobFamily</span></span>
-- <span data-ttu-id="cfbf2-139">JobFunction</span><span class="sxs-lookup"><span data-stu-id="cfbf2-139">JobFunction</span></span>
+- <span data-ttu-id="e023c-120">EmploymentType</span><span class="sxs-lookup"><span data-stu-id="e023c-120">EmploymentType</span></span>
+- <span data-ttu-id="e023c-121">LegalEntity</span><span class="sxs-lookup"><span data-stu-id="e023c-121">LegalEntity</span></span>
+- <span data-ttu-id="e023c-122">AdjustedWorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="e023c-122">AdjustedWorkerStartDate</span></span>
+- <span data-ttu-id="e023c-123">EmployerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="e023c-123">EmployerNoticeAmount</span></span>
+- <span data-ttu-id="e023c-124">EmployerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="e023c-124">EmployerUnitOfNotice</span></span>
+- <span data-ttu-id="e023c-125">TransitionDate</span><span class="sxs-lookup"><span data-stu-id="e023c-125">TransitionDate</span></span>
+- <span data-ttu-id="e023c-126">WorkerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="e023c-126">WorkerNoticeAmount</span></span>
+- <span data-ttu-id="e023c-127">WorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="e023c-127">WorkerStartDate</span></span>
+- <span data-ttu-id="e023c-128">WorkerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="e023c-128">WorkerUnitOfNotice</span></span>
+- <span data-ttu-id="e023c-129">ProbationEndDate</span><span class="sxs-lookup"><span data-stu-id="e023c-129">ProbationEndDate</span></span>
+- <span data-ttu-id="e023c-130">Pozíció</span><span class="sxs-lookup"><span data-stu-id="e023c-130">Position</span></span>
+- <span data-ttu-id="e023c-131">Unió</span><span class="sxs-lookup"><span data-stu-id="e023c-131">Union</span></span>
+- <span data-ttu-id="e023c-132">Osztály</span><span class="sxs-lookup"><span data-stu-id="e023c-132">Department</span></span>
+- <span data-ttu-id="e023c-133">PositionType</span><span class="sxs-lookup"><span data-stu-id="e023c-133">PositionType</span></span>
+- <span data-ttu-id="e023c-134">CompLocation</span><span class="sxs-lookup"><span data-stu-id="e023c-134">CompLocation</span></span>
+- <span data-ttu-id="e023c-135">Beosztás</span><span class="sxs-lookup"><span data-stu-id="e023c-135">Title</span></span>
+- <span data-ttu-id="e023c-136">Beosztás</span><span class="sxs-lookup"><span data-stu-id="e023c-136">Job</span></span>
+- <span data-ttu-id="e023c-137">JobType</span><span class="sxs-lookup"><span data-stu-id="e023c-137">JobType</span></span>
+- <span data-ttu-id="e023c-138">JobFamily</span><span class="sxs-lookup"><span data-stu-id="e023c-138">JobFamily</span></span>
+- <span data-ttu-id="e023c-139">JobFunction</span><span class="sxs-lookup"><span data-stu-id="e023c-139">JobFunction</span></span>
 
-<span data-ttu-id="cfbf2-140">A következő mezőket adtuk hozzá a beosztás munkafolyamatához:</span><span class="sxs-lookup"><span data-stu-id="cfbf2-140">The following fields have been added to the position workflow:</span></span>
+<span data-ttu-id="e023c-140">A következő mezőket adtuk hozzá a beosztás munkafolyamatához:</span><span class="sxs-lookup"><span data-stu-id="e023c-140">The following fields have been added to the position workflow:</span></span>
 
-- <span data-ttu-id="cfbf2-141">Pozíció</span><span class="sxs-lookup"><span data-stu-id="cfbf2-141">Position</span></span>
-- <span data-ttu-id="cfbf2-142">Unió</span><span class="sxs-lookup"><span data-stu-id="cfbf2-142">Union</span></span>
-- <span data-ttu-id="cfbf2-143">Osztály</span><span class="sxs-lookup"><span data-stu-id="cfbf2-143">Department</span></span>
-- <span data-ttu-id="cfbf2-144">PositionType</span><span class="sxs-lookup"><span data-stu-id="cfbf2-144">PositionType</span></span>
-- <span data-ttu-id="cfbf2-145">CompLocation</span><span class="sxs-lookup"><span data-stu-id="cfbf2-145">CompLocation</span></span>
-- <span data-ttu-id="cfbf2-146">Beosztás</span><span class="sxs-lookup"><span data-stu-id="cfbf2-146">Title</span></span>
-- <span data-ttu-id="cfbf2-147">Beosztás</span><span class="sxs-lookup"><span data-stu-id="cfbf2-147">Job</span></span>
-- <span data-ttu-id="cfbf2-148">JobType</span><span class="sxs-lookup"><span data-stu-id="cfbf2-148">JobType</span></span>
-- <span data-ttu-id="cfbf2-149">JobFamily</span><span class="sxs-lookup"><span data-stu-id="cfbf2-149">JobFamily</span></span>
-- <span data-ttu-id="cfbf2-150">JobFunction</span><span class="sxs-lookup"><span data-stu-id="cfbf2-150">JobFunction</span></span>
+- <span data-ttu-id="e023c-141">Pozíció</span><span class="sxs-lookup"><span data-stu-id="e023c-141">Position</span></span>
+- <span data-ttu-id="e023c-142">Unió</span><span class="sxs-lookup"><span data-stu-id="e023c-142">Union</span></span>
+- <span data-ttu-id="e023c-143">Osztály</span><span class="sxs-lookup"><span data-stu-id="e023c-143">Department</span></span>
+- <span data-ttu-id="e023c-144">PositionType</span><span class="sxs-lookup"><span data-stu-id="e023c-144">PositionType</span></span>
+- <span data-ttu-id="e023c-145">CompLocation</span><span class="sxs-lookup"><span data-stu-id="e023c-145">CompLocation</span></span>
+- <span data-ttu-id="e023c-146">Beosztás</span><span class="sxs-lookup"><span data-stu-id="e023c-146">Title</span></span>
+- <span data-ttu-id="e023c-147">Beosztás</span><span class="sxs-lookup"><span data-stu-id="e023c-147">Job</span></span>
+- <span data-ttu-id="e023c-148">JobType</span><span class="sxs-lookup"><span data-stu-id="e023c-148">JobType</span></span>
+- <span data-ttu-id="e023c-149">JobFamily</span><span class="sxs-lookup"><span data-stu-id="e023c-149">JobFamily</span></span>
+- <span data-ttu-id="e023c-150">JobFunction</span><span class="sxs-lookup"><span data-stu-id="e023c-150">JobFunction</span></span>
 
-<span data-ttu-id="cfbf2-151">A feltételes működési utasítások és helyőrzők minden olyan felhasználó számára elérhetők, akik hozzáférnek a korábban említett munkafolyamatok konfigurálásához.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-151">Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.</span></span>
+<span data-ttu-id="e023c-151">A feltételes működési utasítások és helyőrzők minden olyan felhasználó számára elérhetők, akik hozzáférnek a korábban említett munkafolyamatok konfigurálásához.</span><span class="sxs-lookup"><span data-stu-id="e023c-151">Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.</span></span>
 
-## <a name="navigation-to-attract-from-personnel-management"></a><span data-ttu-id="cfbf2-152">Navigáció az Attract szolgáltatásba a személyzetkezelésből</span><span class="sxs-lookup"><span data-stu-id="cfbf2-152">Navigation to Attract from personnel management</span></span>
+## <a name="navigation-to-attract-from-personnel-management"></a><span data-ttu-id="e023c-152">Navigáció az Attract szolgáltatásba a személyzetkezelésből</span><span class="sxs-lookup"><span data-stu-id="e023c-152">Navigation to Attract from personnel management</span></span>
 
-<span data-ttu-id="cfbf2-153">Ha nincs beállítva az Attract a személyzetkezelésnél, a **Foglalkoztatható jelöltek** szakasza az Attract kezdő lépéseihez irányítja a felhasználókat ahelyett, hogy a „Nem találtunk megjelenítendő elemeket” üzenetet adná.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-153">In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."</span></span>
+<span data-ttu-id="e023c-153">Ha nincs beállítva az Attract a személyzetkezelésnél, a **Foglalkoztatható jelöltek** szakasza az Attract kezdő lépéseihez irányítja a felhasználókat ahelyett, hogy a „Nem találtunk megjelenítendő elemeket” üzenetet adná.</span><span class="sxs-lookup"><span data-stu-id="e023c-153">In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."</span></span>
 
-## <a name="other-changes"></a><span data-ttu-id="cfbf2-154">Egyéb változások</span><span class="sxs-lookup"><span data-stu-id="cfbf2-154">Other changes</span></span>
+## <a name="other-changes"></a><span data-ttu-id="e023c-154">Egyéb változások</span><span class="sxs-lookup"><span data-stu-id="e023c-154">Other changes</span></span>
 
-<span data-ttu-id="cfbf2-155">Ebben a verzióban számos további hibajavítás is található:</span><span class="sxs-lookup"><span data-stu-id="cfbf2-155">This release includes several additional bug fixes:</span></span>
+<span data-ttu-id="e023c-155">Ebben a verzióban számos további hibajavítás is található:</span><span class="sxs-lookup"><span data-stu-id="e023c-155">This release includes several additional bug fixes:</span></span>
 
-- <span data-ttu-id="cfbf2-156">Alvállalkozó megbízásakor a **Kompenzálás** lapnak nem szabad elérhetőnek lennie a kérelem/művelet lapján.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-156">When a contractor is hired, the **Compensation** tab should not be available on the request/action page.</span></span>
-- <span data-ttu-id="cfbf2-157">A kérelem megszüntetési folyamata alatt nem folytathatja a műveletet addig, amíg az összes kötelező mező adatot tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-157">During the request termination process, you can't continue until all required fields contain data.</span></span>
-- <span data-ttu-id="cfbf2-158">Kijavítottuk a rendelés- és dátummegjelenítési problémákat a Személyzetkezelés analitikájában.</span><span class="sxs-lookup"><span data-stu-id="cfbf2-158">Sort order and date display issues on the Personnel management analytics have been addressed.</span></span>
+- <span data-ttu-id="e023c-156">Alvállalkozó megbízásakor a **Kompenzálás** lapnak nem szabad elérhetőnek lennie a kérelem/művelet lapján.</span><span class="sxs-lookup"><span data-stu-id="e023c-156">When a contractor is hired, the **Compensation** tab should not be available on the request/action page.</span></span>
+- <span data-ttu-id="e023c-157">A kérelem megszüntetési folyamata alatt nem folytathatja a műveletet addig, amíg az összes kötelező mező adatot tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="e023c-157">During the request termination process, you can't continue until all required fields contain data.</span></span>
+- <span data-ttu-id="e023c-158">Kijavítottuk a rendelés- és dátummegjelenítési problémákat a Személyzetkezelés analitikájában.</span><span class="sxs-lookup"><span data-stu-id="e023c-158">Sort order and date display issues on the Personnel management analytics have been addressed.</span></span>

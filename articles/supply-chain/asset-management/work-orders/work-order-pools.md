@@ -3,7 +3,7 @@ title: Munkarendelés-gyűjtők
 description: Ez a témakör bemutatja a munkarendelés-gyűjtők használatát az Eszközkezelés modulban.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875694"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626362"
 ---
-# <a name="work-order-pools"></a><span data-ttu-id="2884f-103">Munkarendelés-gyűjtők</span><span class="sxs-lookup"><span data-stu-id="2884f-103">Work order pools</span></span>
-
+# <a name="work-order-pools"></a><span data-ttu-id="514be-103">Munkarendelés-gyűjtők</span><span class="sxs-lookup"><span data-stu-id="514be-103">Work order pools</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+<span data-ttu-id="514be-104">A munkarendelés-gyűjtőkkel csoportosíthatja a valamiben egyeztő munkarendeléseket.</span><span class="sxs-lookup"><span data-stu-id="514be-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="514be-105">Íme néhány példa olyan dolgokra, amelyekhez létrehozhat munkarendelés-gyűjtőket:</span><span class="sxs-lookup"><span data-stu-id="514be-105">Here are some examples of things that you can create  work order pools for:</span></span>
+
+- <span data-ttu-id="514be-106">Munkaszemélyzet, például A karbantartási személyzet vagy B karbantartási személyzet</span><span class="sxs-lookup"><span data-stu-id="514be-106">Work crews, for example, Maintenance Crew A or Maintenance Crew B</span></span>  
+
+- <span data-ttu-id="514be-107">Szakmához kapcsolódó szakértelmek, például villanyszerelők vagy vízvezeték-szerelők</span><span class="sxs-lookup"><span data-stu-id="514be-107">Professional skills, such as electricians or plumbers</span></span>  
+
+- <span data-ttu-id="514be-108">Fizikai helyek</span><span class="sxs-lookup"><span data-stu-id="514be-108">Physical locations</span></span>  
+
+- <span data-ttu-id="514be-109">Időbeosztások, például hetek vagy más időszakok</span><span class="sxs-lookup"><span data-stu-id="514be-109">Time schedules, such as weeks or other periods</span></span>  
+
+<span data-ttu-id="514be-110">A szükséges módon egyetlen munkarendelést is beállíthat több munkarendelés-gyűjtőben.</span><span class="sxs-lookup"><span data-stu-id="514be-110">As you require, you can put one work order in multiple work order pools.</span></span>
 
 
-<span data-ttu-id="2884f-104">A munkarendelés-gyűjtőkkel csoportosíthatja a valamiben egyeztő munkarendeléseket.</span><span class="sxs-lookup"><span data-stu-id="2884f-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="2884f-105">Létrehozhat például munkarendelés-gyűjtőket a következőhöz:</span><span class="sxs-lookup"><span data-stu-id="2884f-105">For example, you can create work order pools for</span></span>
+## <a name="create-a-work-order-pool"></a><span data-ttu-id="514be-111">Egy munkarendelés-gyűjtő létrehozása</span><span class="sxs-lookup"><span data-stu-id="514be-111">Create a work order pool</span></span>
 
-- <span data-ttu-id="2884f-106">munkaszemélyzet, például A karbantartási személyzet, B karbantartási személyzet</span><span class="sxs-lookup"><span data-stu-id="2884f-106">work crews, for example, Maintenance Crew A, Maintenance Crew B</span></span>  
+<span data-ttu-id="514be-112">Az **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** listaoldalon áttekintést kaphat saját munkarendelés-gyűjtőiről, és új gyűjtőket hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="514be-112">On the **All work order pools** or **Active work order pools** list page, you can get an overview of your work order pools and create new pools.</span></span>
 
-- <span data-ttu-id="2884f-107">szakmához kapcsolódó szakértelmek, például villanyszerelők vagy vízvezeték-szerelők</span><span class="sxs-lookup"><span data-stu-id="2884f-107">professional skills, for example, electricians or plumbers</span></span>  
+1. <span data-ttu-id="514be-113">Válassza az **Eszközkezelés** > **Általános** > **Munkarendelés-gyűjtők** > **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** elemet.</span><span class="sxs-lookup"><span data-stu-id="514be-113">Select **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
 
-- <span data-ttu-id="2884f-108">tényleges helyek</span><span class="sxs-lookup"><span data-stu-id="2884f-108">physical locations</span></span>  
+2. <span data-ttu-id="514be-114">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="514be-114">Select **New**.</span></span>
 
-- <span data-ttu-id="2884f-109">időbeosztások, például hetek vagy más időszakok</span><span class="sxs-lookup"><span data-stu-id="2884f-109">time schedules, for example, weeks or other periods</span></span>  
+3. <span data-ttu-id="514be-115">A **Gyűjtő** mezőben adja meg a munkarendelés-gyűjtő azonosítóját.</span><span class="sxs-lookup"><span data-stu-id="514be-115">In the **Pool** field, enter an ID for the work order pool.</span></span>
 
+4. <span data-ttu-id="514be-116">A **Név** mezőben adjon meg egy nevet.</span><span class="sxs-lookup"><span data-stu-id="514be-116">the **Name** field, enter a name.</span></span>
 
-<span data-ttu-id="2884f-110">Szükség esetén egy munkarendelés számos munkarendelés-gyűjtőbe elhelyezhető.</span><span class="sxs-lookup"><span data-stu-id="2884f-110">If required, one work order can be placed in many work order pools.</span></span>
+5. <span data-ttu-id="514be-117">Válassza az **Igen** lehetőséget az **Aktív** beállításnál, amellyel jelezheti, hogy a munkarendelés-gyűjtő aktív.</span><span class="sxs-lookup"><span data-stu-id="514be-117">Set the **Active** option to **Yes** to indicate that the work order pool is active.</span></span>
 
+6. <span data-ttu-id="514be-118">Állítsa **Igen** értékre a **Munkarendelés kapcsolatainak törlése** beállítást, ha szeretne automatikusan eltávolítani munkarendeléseket a munkarendelés-gyűjtőből.</span><span class="sxs-lookup"><span data-stu-id="514be-118">Set the **Delete work order relations** option to **Yes** if work orders should automatically be removed from the work order pool.</span></span>
 
-## <a name="create-work-order-pool"></a><span data-ttu-id="2884f-111">Munkarendelés-gyűjtő létrehozása</span><span class="sxs-lookup"><span data-stu-id="2884f-111">Create work order pool</span></span>
+7. <span data-ttu-id="514be-119">Az **Életciklus-állapot törlése** mezőben válassza a munkarendelés életciklus-állapotát.</span><span class="sxs-lookup"><span data-stu-id="514be-119">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="514be-120">Például a munkarendelés befejezéséhez tartozó munkarendelési életciklus-állapotot beállíthatja, hogy automatikusan törölje a kapcsolatokat a munkarendelés-gyűjtőkből.</span><span class="sxs-lookup"><span data-stu-id="514be-120">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
 
-<span data-ttu-id="2884f-112">Az **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** pontokban áttekintést kaphat saját munkarendelés-gyűjtőiről, és új gyűjtőket hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="2884f-112">In **All work order pools** or **Active work order pools**, you can get an overview of your work order pools and create new pools.</span></span>
+    <span data-ttu-id="514be-121">A munkarendelés-gyűjtőhöz azonnal hozzáadhat munkarendeléseket.</span><span class="sxs-lookup"><span data-stu-id="514be-121">You can start adding work orders to your work order pool right away.</span></span>
 
-1. <span data-ttu-id="2884f-113">Kattintson az **Eszközkezelés** > **Általános** > **Munkarendelés-gyűjtők** > **Összes munkarendelés-gyűjtő** vagy **Aktív munkarendelés-gyűjtők** elemre.</span><span class="sxs-lookup"><span data-stu-id="2884f-113">Click **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
+8. <span data-ttu-id="514be-122">A **Munkarendelések** gyorslapon válassza a **Sor hozzáadása** parancsot.</span><span class="sxs-lookup"><span data-stu-id="514be-122">On the **Work orders** FastTab, select **Add line**.</span></span>
 
-2. <span data-ttu-id="2884f-114">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="2884f-114">Click **New**.</span></span>
+9. <span data-ttu-id="514be-123">A **Munkarendelés** mezőben válasszon ki egy munkarendelést.</span><span class="sxs-lookup"><span data-stu-id="514be-123">In the **Work order** field, select a work order.</span></span> <span data-ttu-id="514be-124">A kapcsolódó mezők frissítése automatikusan történik.</span><span class="sxs-lookup"><span data-stu-id="514be-124">The related fields are automatically updated.</span></span>
 
-3. <span data-ttu-id="2884f-115">Szúrjon be egy munkarendelés-gyűjtőhöz tartozó azonosítót a **Gyűjtő** mezőbe és írjon be egy nevet a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2884f-115">Insert a work order pool ID in the **Pool** field and a name in the **Name** field.</span></span>
+10. <span data-ttu-id="514be-125">További munkarendelések hozzáadásához ismételje meg a 8–9. lépéseket.</span><span class="sxs-lookup"><span data-stu-id="514be-125">Repeat steps 8 through 9 to add more work orders.</span></span>
 
-4. <span data-ttu-id="2884f-116">Válassza az „Igen” beállítást az **Aktív** választógombon, amellyel jelezheti, hogy a munkarendelés-gyűjtő aktív.</span><span class="sxs-lookup"><span data-stu-id="2884f-116">Select "Yes" on the **Active** toggle button to indicate that the work order pool is active.</span></span>
+11. <span data-ttu-id="514be-126">Ha a hozzáadott munkarendeléseket meghatározott sorrendben kell végrehajtani, akkor a **Rendezési sorrend** mezőbe írja be az **1**, **2**, **3**, és így tovább értékeket a sorrend meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="514be-126">If the work orders that you added should be done in a specific order, in the **Sort order** field, you can enter the numbers **1**, **2**, **3**, and so on, to specify that order.</span></span>
 
-5. <span data-ttu-id="2884f-117">Válassza az „Igen” beállítást a **Munkarendelés kapcsolatainak törlése** választógombon, ha szeretne automatikusan eltávolítani munkarendeléseket a munkarendelés-gyűjtőből.</span><span class="sxs-lookup"><span data-stu-id="2884f-117">Select "Yes" on the **Delete work order relations** toggle button if you want work orders to be automatically removed from the work order pool.</span></span>
+12. <span data-ttu-id="514be-127">A munkarendelési gyűjtőben lévő összes munkarendelés listájának megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza a **Munkarendelések** elemet az **Összes munkarendelés** listaoldal megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="514be-127">To view a list of all the work orders that are included in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Work orders** to open the **All work orders** list page.</span></span>
 
-6. <span data-ttu-id="2884f-118">Az **Életciklus-állapot törlése** mezőben válassza a munkarendelés életciklus-állapotát.</span><span class="sxs-lookup"><span data-stu-id="2884f-118">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="2884f-119">Például a munkarendelés befejezéséhez tartozó munkarendelési életciklus-állapotot beállíthatja, hogy automatikusan törölje a kapcsolatokat a munkarendelés-gyűjtőkből.</span><span class="sxs-lookup"><span data-stu-id="2884f-119">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
+13. <span data-ttu-id="514be-128">A karbantartási ütemezés, nem ütemezett munkarendelések és az ütemezett munkarendelések kapacitásterhelésének kiszámításához és megjelenítéséhez kattintson a Művelet panel **Munkarendelés** lapján a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza ki a **Kapacitásterhelés** lehetőséget a **Kapacitásterhelés kiszámítása** párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="514be-128">To calculate and view capacity load for the maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Capacity load** to open the **Calculate capacity load** dialog.</span></span>
 
-7. <span data-ttu-id="2884f-120">A munkarendelés-gyűjtőhöz azonnal hozzáadhat munkarendeléseket.</span><span class="sxs-lookup"><span data-stu-id="2884f-120">You can start adding work orders to your work order pool right away.</span></span> <span data-ttu-id="2884f-121">A **Munkarendelések** gyorslapon kattintson a **Sor hozzáadása** parancsra.</span><span class="sxs-lookup"><span data-stu-id="2884f-121">On the **Work orders** FastTab, click **Add line**.</span></span>
+14. <span data-ttu-id="514be-129">A karbantartási ütemezés, nem ütemezett munkarendelések és az ütemezett munkarendelések cikkelőrejelzéseinek (cserealkatrészek és más szükséges elemek) kiszámításához és megjelenítéséhez kattintson a Művelet panel **Munkarendelés** lapján a **Munkarendelési gyűjtőhöz kapcsolódó** csoportra, válassza ki a **Cikkelőrejelzés** lehetőséget a **Cikkelőrejelzés kiszámítása** párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="514be-129">To calculate and view forecasts for items (spare parts and other required items) that are related to maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Item forecast** to open the **Calculate item forecast** dialog.</span></span>
 
-8. <span data-ttu-id="2884f-122">A **Munkarendelés** mezőben válasszon ki egy munkarendelést.</span><span class="sxs-lookup"><span data-stu-id="2884f-122">Select a work order in the **Work order** field.</span></span> <span data-ttu-id="2884f-123">A kapcsolódó mezők frissítése automatikusan történik.</span><span class="sxs-lookup"><span data-stu-id="2884f-123">The related fields are automatically updated.</span></span>
+15. <span data-ttu-id="514be-130">A munkarendelési gyűjtőben lévő munkarendelésekhez kapcsolódó beszerzési igénylések megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Bezserzés** csoportra, válassza a **Munkarendelés beszerzési igénylései** elemre az **A Munkarendelés beszerzési rendelései** listaoldal megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="514be-130">To view a list of purchase requisitions that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase requisition** to open the **Work order purchase requisition** list page.</span></span>
 
-9. <span data-ttu-id="2884f-124">Ha több munkarendelést szeretne hozzáadni, ismételje meg a 7-8. lépést.</span><span class="sxs-lookup"><span data-stu-id="2884f-124">Repeat steps 7-8 if you want to add more work orders.</span></span>
-
-10. <span data-ttu-id="2884f-125">A **Rendezési sorrend** mezőben jelezheti, hogy a munkarendeléseket meghatározott sorrendben kell-e végrehajtani.</span><span class="sxs-lookup"><span data-stu-id="2884f-125">In the **Sort order** field, you can indicate if the work orders should be carried out in a certain order.</span></span> <span data-ttu-id="2884f-126">A kiválasztott munkarendelések megadott sorrendjét az 1, 2, 3 stb. számok megadásával határozhatja meg.</span><span class="sxs-lookup"><span data-stu-id="2884f-126">Insert numbers 1, 2, 3, and so on to indicate a specific sequence for the selected work orders.</span></span>
-
-11. <span data-ttu-id="2884f-127">**A munkarendelések** gombra kattintva megtekintheti a munkarendelés-gyűjtőben szereplő munkarendelések listáját.</span><span class="sxs-lookup"><span data-stu-id="2884f-127">Click the **Work orders** button to see a list of all the work orders included in the work order pool.</span></span>
-
-12. <span data-ttu-id="2884f-128">Kattintson a **Kapacitásterhelés** gombra a **Kapacitásterhelés** pont megnyitásához a karbantartási ütemezéshez, a nem ütemezett munkarendelésekhez és az ütemezett munkarendelésekhez kapcsolódó kapacitásterhelés kiszámításához és megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="2884f-128">Click the **Capacity load** button to open **Capacity load** to calculate and view capacity load for maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-13. <span data-ttu-id="2884f-129">A **Cikkelőrejelzés** gombra kattintva megnyílik a **Cikkelőrejelzés**, ahol cikkekkel (pótalkatrészekkel és egyéb szükséges cikkekkel) kapcsolatos előrejelzéseket számíthat ki és tekinthet meg a karbantartási ütemezéshez, nem ütemezett munkarendelésekhez és ütemezett munkarendelésekhez kapcsolódóan.</span><span class="sxs-lookup"><span data-stu-id="2884f-129">Click the **Item forecast** button to open **Item forecast** to calculate and view forecasts for items (spare parts and other required items) related to maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-14. <span data-ttu-id="2884f-130">Kattintson a **Munkarendelés beszerzési igénylése** gombbal a **Munkarendelés beszerzési igénylése** lista megnyitásához, ahol a munkarendelésgyűjtőben szereplő munkarendelésekhez kapcsolódó beszerzési igénylések listája látható.</span><span class="sxs-lookup"><span data-stu-id="2884f-130">Click the **Work order purchase requisition** button to open the **Work order purchase requisition** list to see a list of purchase requisitions related to the work orders in the work order pool.</span></span>
-
-15. <span data-ttu-id="2884f-131">Kattintson a **Munkarendelés-beszerzés** gombra a **Munkarendelés-beszerzés** lista megnyitásához, ahol a munkarendelés-gyűjtőben szereplő munkarendelésekhez kapcsolódó beszerzési rendelések listája látható.</span><span class="sxs-lookup"><span data-stu-id="2884f-131">Click the **Work order purchase** button to open the **Work order purchase** list to see a list of purchase orders related to the work orders in the work order pool.</span></span>
+16. <span data-ttu-id="514be-131">A munkarendelési gyűjtőben lévő munkarendelésekhez kapcsolódó beszerzési rendelései megtekintéséhez kattintson a Művelet ablaktáblán a **Munkarendelési gyűjtő** lapon a **Bezserzés** csoportra, válassza a **Munkarendelés beszerzési igénylései** elemre az **A Munkarendelés beszerzései** listaoldal megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="514be-131">To view a list of purchase orders that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase** to open the **Work order purchase** list page.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="2884f-132">Ha egy munkarendelés-gyűjtő már nem releváns a munkatervezéshez, akkor a gyűjtő **Aktív** jelölőnégyzetét állítsa „Nem” értékre a **Munkarendelés-gyűjtő** listanézetében.</span><span class="sxs-lookup"><span data-stu-id="2884f-132">When a work order pool is no longer relevant for your work planning, set the **Active** check box for that pool to "No" in the **Work order pool** list view.</span></span>
+><span data-ttu-id="514be-132">Ha egy munkarendelés-gyűjtő már nem releváns a munkatervezéshez, akkor a gyűjtő **Aktív** lehetőségét állítsa be **Nem** értékre a **Munkarendelés-gyűjtő** oldalának listanézetében.</span><span class="sxs-lookup"><span data-stu-id="514be-132">When a work order pool is no longer relevant to your work planning, set the **Active** option for that pool to **No** in the list view of the **Work order pool** page.</span></span>
 
-<span data-ttu-id="2884f-133">Jelölje be a **Munkarendelés-kapcsolatok törlése** jelölőnégyzetet, ha az összes munkarendelési sort törölni szeretné, például azért, hogy üres gyűjtőt hozzon létre, amelyet később más munkarendelésekhez használhat.</span><span class="sxs-lookup"><span data-stu-id="2884f-133">Select the **Delete work order relations** check box if you want to delete all work order lines, for example to create an empty pool that you can later use for other work orders.</span></span> <span data-ttu-id="2884f-134">Ne felejtse el törölni a **Munkarendelés-kapcsolatok törlése** jelölőnégyzetet, ha a munkarendelés-gyűjtőt szeretné használni a későbbiekben új munkarendelés-kapcsolatok létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="2884f-134">Remember to clear the **Delete work order relations** check box if you want to use the work order pool to create new work order relations later.</span></span>
+<span data-ttu-id="514be-133">Az összes alkdolgozó rendelési sor törléséhez állítsa a **Munkarendelés- kapcsolatok törlése** beállítást **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="514be-133">To delete all worker order lines, set the **Delete work order relations** option to **Yes**.</span></span> <span data-ttu-id="514be-134">Ez a beállítás például akkor hasznos, ha egy üres gyűjtőt szeretne létrehozni, amelyet később más munkarendelésekhez használhat.</span><span class="sxs-lookup"><span data-stu-id="514be-134">This option is useful if, for example, you want to create an empty pool that you can use later for other work orders.</span></span> <span data-ttu-id="514be-135">Ha elkészült, ne felejtse a **Munkarendelés-kapcsolatok törlése** lehetőséget **Nem** értékre állítani, ha a munkarendelés-gyűjtőt szeretné használni a későbbiekben új munkarendelés-kapcsolatok létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="514be-135">When you're ready to use the work order pool to create new work order relations later, remember to set the **Delete work order relations** option to **No**.</span></span>
 
+<span data-ttu-id="514be-136">Az alábbi ábra a **Munkarendelés-gyűjtő létrehozása** listaoldal egy példáját mutatja be.</span><span class="sxs-lookup"><span data-stu-id="514be-136">The illustration below shows an example of the **Work order pool** list page.</span></span>
 
 ![1. ábra](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a><span data-ttu-id="2884f-136">Munkarendelés hozzáadása egy munkarendelés-gyűjtőhöz</span><span class="sxs-lookup"><span data-stu-id="2884f-136">Add work order to a work order pool</span></span>
+## <a name="add-a-work-order-to-a-work-order-pool"></a><span data-ttu-id="514be-138">Egy munkarendelés hozzáadása egy munkarendelés-gyűjtőhöz</span><span class="sxs-lookup"><span data-stu-id="514be-138">Add a work order to a work order pool</span></span>
 
-<span data-ttu-id="2884f-137">A fenti szakaszban leírt módon munkarendeléseket adhat hozzá a munkarendelés-gyűjtőhöz, amikor létrehozza a gyűjtőt.</span><span class="sxs-lookup"><span data-stu-id="2884f-137">As described in the section above, you can add work orders to a work order pool when you create the pool.</span></span> <span data-ttu-id="2884f-138">Munkarendeléseket az **Összes munkarendelés** listából is hozzáadhat egy munkarendelés-gyűjtőhöz.</span><span class="sxs-lookup"><span data-stu-id="2884f-138">You can also add a work order to a work order pool from one of the **All work orders** list.</span></span>
+<span data-ttu-id="514be-139">Az előző szakaszban leírt módon munkarendeléseket adhat hozzá a munkarendelés-gyűjtőhöz, amikor létrehozza azt a gyűjtőt.</span><span class="sxs-lookup"><span data-stu-id="514be-139">As described in the previous section, you can add work orders to a work order pool when you create that pool.</span></span> <span data-ttu-id="514be-140">Az **Összes munkarendelések** vagy **Aktív munkarendelések** listaoldalon is hozzáadhat munkarendeléseket a munkarendelés-gyűjtőkhöz.</span><span class="sxs-lookup"><span data-stu-id="514be-140">You can also add work orders to a work order pool on the **All work orders** or **Active work orders** list page.</span></span>
 
-1. <span data-ttu-id="2884f-139">Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.</span><span class="sxs-lookup"><span data-stu-id="2884f-139">Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="514be-141">Válassza ki a munkarendelést, majd a Művelet panel **Munkarendelés** lapján a **Karbantartás** csoportban válassz a **Munkarendelés-gyűjtő** pontot.</span><span class="sxs-lookup"><span data-stu-id="514be-141">Select the work order, and then, on the Action Pane, on the **Work order** tab, in the **Maintain** group, select **Work order pool**.</span></span>
 
-2. <span data-ttu-id="2884f-140">Válassza ki a munkarendelést a listán, majd kattintson a **Munkarendelés-gyűjtő** elemre.</span><span class="sxs-lookup"><span data-stu-id="2884f-140">Select the work order in the list, and click **Work order pool**.</span></span>
+2. <span data-ttu-id="514be-142">Válassza ki a munkarendelést a listán, majd kattintson a **Munkarendelés-gyűjtő** elemre.</span><span class="sxs-lookup"><span data-stu-id="514be-142">Select the work order in the list, and click **Work order pool**.</span></span>
 
-3. <span data-ttu-id="2884f-141">Válassza a „Hozzáadás” lehetőséget a **Hozzáadás/eltávolítás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="2884f-141">Select "Add" in the **Add/remove** field.</span></span>
+3. <span data-ttu-id="514be-143">A **Munkarendelés-gyűjtő karbantartása** párbeszédablakban a **Hozzáadás /eltávolítás** mezőben válassza a **Hozzáadás**elemet.</span><span class="sxs-lookup"><span data-stu-id="514be-143">In the **Maintain work order pool** dialog, in the **Add/remove** field, select **Add**.</span></span>
 
-4. <span data-ttu-id="2884f-142">Válassza a munkarendelés-gyűjtőt a **Gyűjtő** mezőben.</span><span class="sxs-lookup"><span data-stu-id="2884f-142">Select the work order pool in the **Pool** field.</span></span>
+4. <span data-ttu-id="514be-144">Válassza a munkarendelés-gyűjtőt a **Gyűjtő** mezőben.</span><span class="sxs-lookup"><span data-stu-id="514be-144">In the **Pool** field, select the work order pool.</span></span>
 
-5. <span data-ttu-id="2884f-143">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="2884f-143">Click **OK**.</span></span>
+5. <span data-ttu-id="514be-145">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="514be-145">Select **OK**.</span></span>
 
-6. <span data-ttu-id="2884f-144">Miután a munkarendelést a munkarendelés-gyűjtőhöz adta, ha szeretné a munkarendelést a gyűjtőben meghatározott sorrendbe tenni: Nyissa meg a munkarendelés-gyűjtő egyik listaoldalát, válassza ki a gyűjtőt, majd kattintson a **Szerkesztés** lehetőségre, és rendezze a gyűjtőben található munkarendelések rendezési sorrendjét a **Munkarendelés-gyűjtő** űrlap > **Munkarendelések** gyorslap > **Rendezési sorrend** mezőben.</span><span class="sxs-lookup"><span data-stu-id="2884f-144">After you have added a work order to a work order pool, if you want to place the work order in a specific sequence in the pool: Open one of the work order pools list pages, select the pool and click **Edit**, and adjust the sort order of the work orders included in pool in the **Work order pool** form > **Work orders** FastTab > **Sort order** field.</span></span>
+6. <span data-ttu-id="514be-146">Ha azt szeretné a hozzáadott munkarendelést egy meghatározott sorrendbe helyezze a munkarendelés-gyűjtőben, az **Összes munkarendelés-gyűjtő** vagy az **Aktív munkarendelés-gyűjtők** listaoldalán válassza ki a gyűjtőt majd válassza a **Szerkesztés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="514be-146">To put the work order that you added in a specific order in the work order pool, on the **All work order pools** or **Active work order pools** list page, select the pool, and then select **Edit**.</span></span> <span data-ttu-id="514be-147">Ezt követően a **Munkarendelési gyűjtő** lap **Munkarendelések** gyorslapján a **Rendezési sorrend** mező segítségével módosíthatja a gyűjtőbe foglalt munkarendelések rendezési sorrendjét.</span><span class="sxs-lookup"><span data-stu-id="514be-147">Then, on the **Work order pool** page, on the **Work orders** FastTab, use the **Sort order** field to adjust the sort order of the work orders that are included in pool.</span></span>
 
-<span data-ttu-id="2884f-145">Ha egy munkarendelési gyűjtőből szeretné eltávolítani a kiválasztott munkarendelést, válassza a 3. lépésben az „Eltávolítás” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2884f-145">If you want to remove the selected work order from a work order pool, select "Remove" in step 3.</span></span>
+<span data-ttu-id="514be-148">A munkarendelési gyűjtőből egy kiválasztott munkarendelés eltávolításához, válassza a 3. lépésben az **Eltávolítás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="514be-148">To remove a work order from a work order pool, repeat these steps, but select **Remove** in step 3.</span></span>
 

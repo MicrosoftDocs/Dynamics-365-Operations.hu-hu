@@ -18,118 +18,118 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 48c90a8b776cc16804de8e20ada7d8ca347fa5b9
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 78c062f9982ca7b18fa00d60928089d09a5d552d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874739"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570955"
 ---
-# <a name="fault-management"></a><span data-ttu-id="34596-103">Hibakezelés</span><span class="sxs-lookup"><span data-stu-id="34596-103">Fault management</span></span>
+# <a name="fault-management"></a><span data-ttu-id="89785-103">Hibakezelés</span><span class="sxs-lookup"><span data-stu-id="89785-103">Fault management</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-<span data-ttu-id="34596-104">Az Eszközkezelés modulban használhatja a hibatervezőt hibatünetek, a meghibásodási területeket és a hibatípusok beállításához az eszköztípusokhoz.</span><span class="sxs-lookup"><span data-stu-id="34596-104">In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types.</span></span> <span data-ttu-id="34596-105">Ily módon az eszközökön észlelt hibák kezelhetők lesznek.</span><span class="sxs-lookup"><span data-stu-id="34596-105">In this way, you can manage faults that are detected on assets.</span></span> <span data-ttu-id="34596-106">Ezenkívül a hibák oka és a hibák elhárításával kapcsolatos javaslatok a munkarendelésen regisztrálhatók.</span><span class="sxs-lookup"><span data-stu-id="34596-106">Additionally, fault causes and suggestions for fixing faults can be registered on a work order.</span></span>
+<span data-ttu-id="89785-104">Az Eszközkezelés modulban használhatja a hibatervezőt hibatünetek, a meghibásodási területeket és a hibatípusok beállításához az eszköztípusokhoz.</span><span class="sxs-lookup"><span data-stu-id="89785-104">In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types.</span></span> <span data-ttu-id="89785-105">Ily módon az eszközökön észlelt hibák kezelhetők lesznek.</span><span class="sxs-lookup"><span data-stu-id="89785-105">In this way, you can manage faults that are detected on assets.</span></span> <span data-ttu-id="89785-106">Ezenkívül a hibák oka és a hibák elhárításával kapcsolatos javaslatok a munkarendelésen regisztrálhatók.</span><span class="sxs-lookup"><span data-stu-id="89785-106">Additionally, fault causes and suggestions for fixing faults can be registered on a work order.</span></span>
 
-<span data-ttu-id="34596-107">A hibák regisztrálásának és kezelésének folyamata a következő lépésekből áll.</span><span class="sxs-lookup"><span data-stu-id="34596-107">The process for fault registration and management consists of these steps.</span></span>
+<span data-ttu-id="89785-107">A hibák regisztrálásának és kezelésének folyamata a következő lépésekből áll.</span><span class="sxs-lookup"><span data-stu-id="89785-107">The process for fault registration and management consists of these steps.</span></span>
 
-1. <span data-ttu-id="34596-108">A tárgyieszköz-típusokon esetleg előforduló hibatünetek, hibás területek és hibatípusok listájának létrehozása.</span><span class="sxs-lookup"><span data-stu-id="34596-108">Create a list of fault symptoms, fault areas, and fault types that might occur on your asset types.</span></span>
-2. <span data-ttu-id="34596-109">A hibatervező modulban állítsa be a tüneteket, a hibaterületeket és a hibatípusokat.</span><span class="sxs-lookup"><span data-stu-id="34596-109">In the fault designer, set up symptoms, fault areas, and fault types.</span></span>
+1. <span data-ttu-id="89785-108">A tárgyieszköz-típusokon esetleg előforduló hibatünetek, hibás területek és hibatípusok listájának létrehozása.</span><span class="sxs-lookup"><span data-stu-id="89785-108">Create a list of fault symptoms, fault areas, and fault types that might occur on your asset types.</span></span>
+2. <span data-ttu-id="89785-109">A hibatervező modulban állítsa be a tüneteket, a hibaterületeket és a hibatípusokat.</span><span class="sxs-lookup"><span data-stu-id="89785-109">In the fault designer, set up symptoms, fault areas, and fault types.</span></span>
 
-<span data-ttu-id="34596-110">A következőkben néhány példával seítünk megérteni a hibatünetek, hibaterületek és a hibatípusok közötti különbségét.</span><span class="sxs-lookup"><span data-stu-id="34596-110">Here are some examples to help you understand the difference between fault symptoms, fault areas, and fault types.</span></span>
+<span data-ttu-id="89785-110">A következőkben néhány példával seítünk megérteni a hibatünetek, hibaterületek és a hibatípusok közötti különbségét.</span><span class="sxs-lookup"><span data-stu-id="89785-110">Here are some examples to help you understand the difference between fault symptoms, fault areas, and fault types.</span></span>
 
-<span data-ttu-id="34596-111">**Hibatünetek:**</span><span class="sxs-lookup"><span data-stu-id="34596-111">**Fault symptoms:**</span></span>
+<span data-ttu-id="89785-111">**Hibatünetek:**</span><span class="sxs-lookup"><span data-stu-id="89785-111">**Fault symptoms:**</span></span>
 
-- <span data-ttu-id="34596-112">Feszültségingadozások</span><span class="sxs-lookup"><span data-stu-id="34596-112">Unbalanced voltages</span></span>
-- <span data-ttu-id="34596-113">Rövidzárlat</span><span class="sxs-lookup"><span data-stu-id="34596-113">Short circuit</span></span>
-- <span data-ttu-id="34596-114">Zaj</span><span class="sxs-lookup"><span data-stu-id="34596-114">Noise</span></span>
-- <span data-ttu-id="34596-115">Szivárgás</span><span class="sxs-lookup"><span data-stu-id="34596-115">Leak</span></span>
-- <span data-ttu-id="34596-116">Vibrációk</span><span class="sxs-lookup"><span data-stu-id="34596-116">Vibrations</span></span>
+- <span data-ttu-id="89785-112">Feszültségingadozások</span><span class="sxs-lookup"><span data-stu-id="89785-112">Unbalanced voltages</span></span>
+- <span data-ttu-id="89785-113">Rövidzárlat</span><span class="sxs-lookup"><span data-stu-id="89785-113">Short circuit</span></span>
+- <span data-ttu-id="89785-114">Zaj</span><span class="sxs-lookup"><span data-stu-id="89785-114">Noise</span></span>
+- <span data-ttu-id="89785-115">Szivárgás</span><span class="sxs-lookup"><span data-stu-id="89785-115">Leak</span></span>
+- <span data-ttu-id="89785-116">Vibrációk</span><span class="sxs-lookup"><span data-stu-id="89785-116">Vibrations</span></span>
 
-<span data-ttu-id="34596-117">**Hibaterületek:**</span><span class="sxs-lookup"><span data-stu-id="34596-117">**Fault areas:**</span></span>
+<span data-ttu-id="89785-117">**Hibaterületek:**</span><span class="sxs-lookup"><span data-stu-id="89785-117">**Fault areas:**</span></span>
 
-- <span data-ttu-id="34596-118">Elektromos</span><span class="sxs-lookup"><span data-stu-id="34596-118">Electrical</span></span>
-- <span data-ttu-id="34596-119">Mechanikai</span><span class="sxs-lookup"><span data-stu-id="34596-119">Mechanical</span></span>
-- <span data-ttu-id="34596-120">Hidraulikus</span><span class="sxs-lookup"><span data-stu-id="34596-120">Hydraulic</span></span>
-- <span data-ttu-id="34596-121">Pneumatikus</span><span class="sxs-lookup"><span data-stu-id="34596-121">Pneumatic</span></span>
+- <span data-ttu-id="89785-118">Elektromos</span><span class="sxs-lookup"><span data-stu-id="89785-118">Electrical</span></span>
+- <span data-ttu-id="89785-119">Mechanikai</span><span class="sxs-lookup"><span data-stu-id="89785-119">Mechanical</span></span>
+- <span data-ttu-id="89785-120">Hidraulikus</span><span class="sxs-lookup"><span data-stu-id="89785-120">Hydraulic</span></span>
+- <span data-ttu-id="89785-121">Pneumatikus</span><span class="sxs-lookup"><span data-stu-id="89785-121">Pneumatic</span></span>
 
-<span data-ttu-id="34596-122">**Hibatípusok:**</span><span class="sxs-lookup"><span data-stu-id="34596-122">**Fault types:**</span></span>
+<span data-ttu-id="89785-122">**Hibatípusok:**</span><span class="sxs-lookup"><span data-stu-id="89785-122">**Fault types:**</span></span>
 
-- <span data-ttu-id="34596-123">Hibás fő stator tekercselés</span><span class="sxs-lookup"><span data-stu-id="34596-123">Faulty main stator winding</span></span>
-- <span data-ttu-id="34596-124">Hibás dióda</span><span class="sxs-lookup"><span data-stu-id="34596-124">Faulty diode</span></span>
-- <span data-ttu-id="34596-125">Szennyezett tekercselések</span><span class="sxs-lookup"><span data-stu-id="34596-125">Dirty windings</span></span>
-- <span data-ttu-id="34596-126">Hibás generátor</span><span class="sxs-lookup"><span data-stu-id="34596-126">Defective generator</span></span>
-- <span data-ttu-id="34596-127">Hibás érzékelő</span><span class="sxs-lookup"><span data-stu-id="34596-127">Defective sensor</span></span>
+- <span data-ttu-id="89785-123">Hibás fő stator tekercselés</span><span class="sxs-lookup"><span data-stu-id="89785-123">Faulty main stator winding</span></span>
+- <span data-ttu-id="89785-124">Hibás dióda</span><span class="sxs-lookup"><span data-stu-id="89785-124">Faulty diode</span></span>
+- <span data-ttu-id="89785-125">Szennyezett tekercselések</span><span class="sxs-lookup"><span data-stu-id="89785-125">Dirty windings</span></span>
+- <span data-ttu-id="89785-126">Hibás generátor</span><span class="sxs-lookup"><span data-stu-id="89785-126">Defective generator</span></span>
+- <span data-ttu-id="89785-127">Hibás érzékelő</span><span class="sxs-lookup"><span data-stu-id="89785-127">Defective sensor</span></span>
 
-## <a name="create-fault-symptoms"></a><span data-ttu-id="34596-128">Hibatünetek létrehozása</span><span class="sxs-lookup"><span data-stu-id="34596-128">Create fault symptoms</span></span>
+## <a name="create-fault-symptoms"></a><span data-ttu-id="89785-128">Hibatünetek létrehozása</span><span class="sxs-lookup"><span data-stu-id="89785-128">Create fault symptoms</span></span>
 
-<span data-ttu-id="34596-129">Hajtsa végre a következő lépéseket a hibatervezőben használható tünetlista létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-129">Follow these steps to create a list of symptoms that can be used in the fault designer.</span></span>
+<span data-ttu-id="89785-129">Hajtsa végre a következő lépéseket a hibatervezőben használható tünetlista létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-129">Follow these steps to create a list of symptoms that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="34596-130">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatünetek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-130">Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.</span></span>
-2. <span data-ttu-id="34596-131">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-131">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="34596-132">A **Hibatünet** mezőbe írjon be egy nevet a hibatünethez.</span><span class="sxs-lookup"><span data-stu-id="34596-132">In the **Fault symptom** field, enter a name for the fault symptom.</span></span>
-4. <span data-ttu-id="34596-133">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="34596-133">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="34596-134">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-134">Select **Save**.</span></span>
+1. <span data-ttu-id="89785-130">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatünetek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-130">Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.</span></span>
+2. <span data-ttu-id="89785-131">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-131">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="89785-132">A **Hibatünet** mezőbe írjon be egy nevet a hibatünethez.</span><span class="sxs-lookup"><span data-stu-id="89785-132">In the **Fault symptom** field, enter a name for the fault symptom.</span></span>
+4. <span data-ttu-id="89785-133">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="89785-133">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="89785-134">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-134">Select **Save**.</span></span>
 
-## <a name="create-fault-areas"></a><span data-ttu-id="34596-135">Hibaterületek létrehozása</span><span class="sxs-lookup"><span data-stu-id="34596-135">Create fault areas</span></span>
+## <a name="create-fault-areas"></a><span data-ttu-id="89785-135">Hibaterületek létrehozása</span><span class="sxs-lookup"><span data-stu-id="89785-135">Create fault areas</span></span>
 
-<span data-ttu-id="34596-136">Hajtsa végre a következő lépéseket a hibatervezőben használható területek vagy helyek listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-136">Follow these steps to create a list of areas or locations that can be used in the fault designer.</span></span>
+<span data-ttu-id="89785-136">Hajtsa végre a következő lépéseket a hibatervezőben használható területek vagy helyek listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-136">Follow these steps to create a list of areas or locations that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="34596-137">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibaterületek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-137">Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.</span></span>
-2. <span data-ttu-id="34596-138">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-138">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="34596-139">A **Hibaterület** mezőbe írjon be egy nevet a hibaterülethez.</span><span class="sxs-lookup"><span data-stu-id="34596-139">In the **Fault area** field, enter a name for the fault area.</span></span>
-4. <span data-ttu-id="34596-140">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="34596-140">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="34596-141">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-141">Select **Save**.</span></span>
+1. <span data-ttu-id="89785-137">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibaterületek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-137">Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.</span></span>
+2. <span data-ttu-id="89785-138">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-138">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="89785-139">A **Hibaterület** mezőbe írjon be egy nevet a hibaterülethez.</span><span class="sxs-lookup"><span data-stu-id="89785-139">In the **Fault area** field, enter a name for the fault area.</span></span>
+4. <span data-ttu-id="89785-140">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="89785-140">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="89785-141">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-141">Select **Save**.</span></span>
 
-## <a name="create-fault-types"></a><span data-ttu-id="34596-142">Hibatípusok létrehozása</span><span class="sxs-lookup"><span data-stu-id="34596-142">Create fault types</span></span>
+## <a name="create-fault-types"></a><span data-ttu-id="89785-142">Hibatípusok létrehozása</span><span class="sxs-lookup"><span data-stu-id="89785-142">Create fault types</span></span>
 
-<span data-ttu-id="34596-143">Hajtsa végre a következő lépéseket a hibatervezőben használható hibatípusok listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-143">Follow these steps to create a list of fault types that can be used in the fault designer.</span></span>
+<span data-ttu-id="89785-143">Hajtsa végre a következő lépéseket a hibatervezőben használható hibatípusok listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-143">Follow these steps to create a list of fault types that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="34596-144">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatípusok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-144">Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.</span></span>
-2. <span data-ttu-id="34596-145">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-145">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="34596-146">A **Hibatípus** mezőben adja meg a hibatípus nevét.</span><span class="sxs-lookup"><span data-stu-id="34596-146">In the **Fault type** field, enter a name for the fault type.</span></span>
-4. <span data-ttu-id="34596-147">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="34596-147">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="34596-148">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-148">Select **Save**.</span></span>
+1. <span data-ttu-id="89785-144">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatípusok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-144">Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.</span></span>
+2. <span data-ttu-id="89785-145">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-145">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="89785-146">A **Hibatípus** mezőben adja meg a hibatípus nevét.</span><span class="sxs-lookup"><span data-stu-id="89785-146">In the **Fault type** field, enter a name for the fault type.</span></span>
+4. <span data-ttu-id="89785-147">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="89785-147">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="89785-148">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-148">Select **Save**.</span></span>
 
-## <a name="set-up-the-fault-designer"></a><span data-ttu-id="34596-149">A hibatervező beállítása</span><span class="sxs-lookup"><span data-stu-id="34596-149">Set up the fault designer</span></span>
+## <a name="set-up-the-fault-designer"></a><span data-ttu-id="89785-149">A hibatervező beállítása</span><span class="sxs-lookup"><span data-stu-id="89785-149">Set up the fault designer</span></span>
 
-<span data-ttu-id="34596-150">A hibatervezőben be lehet állítani a tárgyieszköz-típusokra vonatkozó hibaadatokat.</span><span class="sxs-lookup"><span data-stu-id="34596-150">In the fault designer, you set up fault data on asset types.</span></span>
+<span data-ttu-id="89785-150">A hibatervezőben be lehet állítani a tárgyieszköz-típusokra vonatkozó hibaadatokat.</span><span class="sxs-lookup"><span data-stu-id="89785-150">In the fault designer, you set up fault data on asset types.</span></span>
 
-1. <span data-ttu-id="34596-151">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatervező** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-151">Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.</span></span>
-2. <span data-ttu-id="34596-152">A bal oldali ablakban válassza ki, hogy melyik eszköztípushoz szeretné beállítani a hibarekordot.</span><span class="sxs-lookup"><span data-stu-id="34596-152">In the left pane, select the type of asset to set up a fault record for.</span></span>
-3. <span data-ttu-id="34596-153">A **Hibatünet** gyorslapon válassza ki a **Sorhozzáadása** elemet, majd a **Hibatünet** mezőben válassza ki a hiba tünetét.</span><span class="sxs-lookup"><span data-stu-id="34596-153">On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.</span></span>
-4. <span data-ttu-id="34596-154">A **Hibaterület** gyorslapon válassza ki a **Sorhozzáadása** elemet, majd a **Hibaterület** mezőben válassza ki a hiba területét.</span><span class="sxs-lookup"><span data-stu-id="34596-154">On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.</span></span>
-5. <span data-ttu-id="34596-155">A **Hibatípus** gyorslapon válassza ki a **Sor hozzáadása** elemet, majd a **Hiba típusa** mezőben válassza ki a hiba típusát.</span><span class="sxs-lookup"><span data-stu-id="34596-155">On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.</span></span>
-6. <span data-ttu-id="34596-156">Ha gyorsan létre kívánja hozni az összes meglévő hibatünet, -területet és -típus kombinációit a kiválasztott eszköztípushoz, válassza a **Hibakombinációk létrehozása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-156">To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**.</span></span> <span data-ttu-id="34596-157">Ez a funkció akkor hasznos, ha sok hibatünetet, -területet és -típust adott hozzá.</span><span class="sxs-lookup"><span data-stu-id="34596-157">This function is useful if you've added many fault symptoms, areas, and types.</span></span> <span data-ttu-id="34596-158">Könnyebb törölni azokat a sorokat azon kombinációkhoz, amelyek nem relevánsak az eszköztípushoz, mint az új sorokat manuálisan létrehozni.</span><span class="sxs-lookup"><span data-stu-id="34596-158">It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.</span></span>
+1. <span data-ttu-id="89785-151">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibatervező** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-151">Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.</span></span>
+2. <span data-ttu-id="89785-152">A bal oldali ablakban válassza ki, hogy melyik eszköztípushoz szeretné beállítani a hibarekordot.</span><span class="sxs-lookup"><span data-stu-id="89785-152">In the left pane, select the type of asset to set up a fault record for.</span></span>
+3. <span data-ttu-id="89785-153">A **Hibatünet** gyorslapon válassza ki a **Sorhozzáadása** elemet, majd a **Hibatünet** mezőben válassza ki a hiba tünetét.</span><span class="sxs-lookup"><span data-stu-id="89785-153">On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.</span></span>
+4. <span data-ttu-id="89785-154">A **Hibaterület** gyorslapon válassza ki a **Sorhozzáadása** elemet, majd a **Hibaterület** mezőben válassza ki a hiba területét.</span><span class="sxs-lookup"><span data-stu-id="89785-154">On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.</span></span>
+5. <span data-ttu-id="89785-155">A **Hibatípus** gyorslapon válassza ki a **Sor hozzáadása** elemet, majd a **Hiba típusa** mezőben válassza ki a hiba típusát.</span><span class="sxs-lookup"><span data-stu-id="89785-155">On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.</span></span>
+6. <span data-ttu-id="89785-156">Ha gyorsan létre kívánja hozni az összes meglévő hibatünet, -területet és -típus kombinációit a kiválasztott eszköztípushoz, válassza a **Hibakombinációk létrehozása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-156">To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**.</span></span> <span data-ttu-id="89785-157">Ez a funkció akkor hasznos, ha sok hibatünetet, -területet és -típust adott hozzá.</span><span class="sxs-lookup"><span data-stu-id="89785-157">This function is useful if you've added many fault symptoms, areas, and types.</span></span> <span data-ttu-id="89785-158">Könnyebb törölni azokat a sorokat azon kombinációkhoz, amelyek nem relevánsak az eszköztípushoz, mint az új sorokat manuálisan létrehozni.</span><span class="sxs-lookup"><span data-stu-id="89785-158">It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="34596-159">Ha azt szeretné, hogy a rendszer egy eszköztípusról a hibás tünetek, területek és típusok beállításait a kiválasztott eszköztípusra másolja, válassza a **Másolás eszköztípusból** parancsot.</span><span class="sxs-lookup"><span data-stu-id="34596-159">To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.</span></span>
+    > <span data-ttu-id="89785-159">Ha azt szeretné, hogy a rendszer egy eszköztípusról a hibás tünetek, területek és típusok beállításait a kiválasztott eszköztípusra másolja, válassza a **Másolás eszköztípusból** parancsot.</span><span class="sxs-lookup"><span data-stu-id="89785-159">To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.</span></span>
 
-7. <span data-ttu-id="34596-160">A változtatások mentéséhez válassza a **Mentés** elemet.</span><span class="sxs-lookup"><span data-stu-id="34596-160">Select **Save** to save your changes.</span></span>
+7. <span data-ttu-id="89785-160">A változtatások mentéséhez válassza a **Mentés** elemet.</span><span class="sxs-lookup"><span data-stu-id="89785-160">Select **Save** to save your changes.</span></span>
 
-![1. ábra](media/21-setup-for-work-orders.png)
+![Hibatervező oldal](media/21-setup-for-work-orders.png)
 
-## <a name="create-fault-causes"></a><span data-ttu-id="34596-162">Hibaokok létrehozása</span><span class="sxs-lookup"><span data-stu-id="34596-162">Create fault causes</span></span>
+## <a name="create-fault-causes"></a><span data-ttu-id="89785-162">Hibaokok létrehozása</span><span class="sxs-lookup"><span data-stu-id="89785-162">Create fault causes</span></span>
 
-<span data-ttu-id="34596-163">Hajtsa végre az alábbi lépéseket a munkarendeléshez vagy a karbantartási kérelemhez adható ismert hibaokok listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-163">Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.</span></span>
+<span data-ttu-id="89785-163">Hajtsa végre az alábbi lépéseket a munkarendeléshez vagy a karbantartási kérelemhez adható ismert hibaokok listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-163">Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.</span></span>
 
-1. <span data-ttu-id="34596-164">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibaokok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-164">Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.</span></span>
-2. <span data-ttu-id="34596-165">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-165">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="34596-166">A **Hibaok** mezőben adja meg a hibaok nevét.</span><span class="sxs-lookup"><span data-stu-id="34596-166">In the **Fault cause** field, enter a name for the fault cause.</span></span>
-4. <span data-ttu-id="34596-167">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="34596-167">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="34596-168">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-168">Select **Save**.</span></span>
+1. <span data-ttu-id="89785-164">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibaokok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-164">Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.</span></span>
+2. <span data-ttu-id="89785-165">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-165">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="89785-166">A **Hibaok** mezőben adja meg a hibaok nevét.</span><span class="sxs-lookup"><span data-stu-id="89785-166">In the **Fault cause** field, enter a name for the fault cause.</span></span>
+4. <span data-ttu-id="89785-167">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="89785-167">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="89785-168">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-168">Select **Save**.</span></span>
 
-## <a name="create-fault-remedies"></a><span data-ttu-id="34596-169">Hibajavítások létrehozása</span><span class="sxs-lookup"><span data-stu-id="34596-169">Create fault remedies</span></span>
+## <a name="create-fault-remedies"></a><span data-ttu-id="89785-169">Hibajavítások létrehozása</span><span class="sxs-lookup"><span data-stu-id="89785-169">Create fault remedies</span></span>
 
-<span data-ttu-id="34596-170">Hajtsa végre az alábbi lépéseket a munkarendeléshez vagy a karbantartási kérelemhez adható megoldások vagy javítások listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-170">Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.</span></span>
+<span data-ttu-id="89785-170">Hajtsa végre az alábbi lépéseket a munkarendeléshez vagy a karbantartási kérelemhez adható megoldások vagy javítások listájának létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-170">Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.</span></span>
 
-1. <span data-ttu-id="34596-171">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibajavítások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-171">Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.</span></span>
-2. <span data-ttu-id="34596-172">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="34596-172">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="34596-173">A **Hibajavítás** mezőbe írjon be egy nevet a hibajavításhoz.</span><span class="sxs-lookup"><span data-stu-id="34596-173">In the **Fault remedy** field, enter a name for the fault remedy.</span></span>
-4. <span data-ttu-id="34596-174">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="34596-174">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="34596-175">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34596-175">Select **Save**.</span></span>
+1. <span data-ttu-id="89785-171">Válassza az **Eszközkezelés** \> **Beállítás** \> **Hiba** \> **Hibajavítások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-171">Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.</span></span>
+2. <span data-ttu-id="89785-172">Válassza az **Új** lehetőséget egy rekord létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="89785-172">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="89785-173">A **Hibajavítás** mezőbe írjon be egy nevet a hibajavításhoz.</span><span class="sxs-lookup"><span data-stu-id="89785-173">In the **Fault remedy** field, enter a name for the fault remedy.</span></span>
+4. <span data-ttu-id="89785-174">Adjon meg egy leírást a **Leírás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="89785-174">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="89785-175">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="89785-175">Select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="34596-176">Igény esetén a hibák, területek, típusok, okok és javítások nevei módosíthatók.</span><span class="sxs-lookup"><span data-stu-id="34596-176">You can change the names of your fault symptoms, areas, types, causes, and remedies as you require.</span></span> <span data-ttu-id="34596-177">A névmódosítások automatikusan tükröződnek kapcsolódó hibaregisztrációkban.</span><span class="sxs-lookup"><span data-stu-id="34596-177">The name changes are automatically reflected in the related fault registrations.</span></span>
+> <span data-ttu-id="89785-176">Igény esetén a hibák, területek, típusok, okok és javítások nevei módosíthatók.</span><span class="sxs-lookup"><span data-stu-id="89785-176">You can change the names of your fault symptoms, areas, types, causes, and remedies as you require.</span></span> <span data-ttu-id="89785-177">A névmódosítások automatikusan tükröződnek kapcsolódó hibaregisztrációkban.</span><span class="sxs-lookup"><span data-stu-id="89785-177">The name changes are automatically reflected in the related fault registrations.</span></span>
