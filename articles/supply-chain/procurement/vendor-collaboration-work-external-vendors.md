@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250199"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653602"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
@@ -190,7 +190,7 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a szállítói együttműködési felületen. Küldhetnek e-mailt, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezt követően manuálisan erősítheti meg a rendelést. Ebben az esetben figyelmeztetést kap, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben úgy, mint egy megnyitott rendelés, amelyre nem érkezett válasz. Ekkor a szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.
 
 > [!NOTE]
-> A Finance and Operations rendszerben mindig a beszerzési rendelés legutolsó verziója érhető el a további folyamatok számára, még akkor is, ha ez a verzió nincs még regisztrálva a szállítói együttműködési felületen.
+> A Supply Chain Management rendszerben mindig a beszerzési rendelés legutolsó verziója érhető el a további folyamatok számára, még akkor is, ha ez a verzió nincs még regisztrálva a szállítói együttműködési felületen.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Verziók és állapotok, ha használja a változáskezelést
 

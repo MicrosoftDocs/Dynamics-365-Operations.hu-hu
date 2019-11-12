@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783310"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570978"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Karbantartási dolgozók és dolgozói csoportok
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ez a témakör a karbantartási dolgozókat és dolgozói csoportokat mutatja be az Eszközkezelésben. A Eszközkezelés modulban hozzákapcsolhatja a karbantartási dolgozókat a munkavégzési helyszínekhez. (A munkavégzési helyszínekkel kapcsolatos további tudnivalókat lásd a [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md) című témakörben.) Ez a funkció akkor lehet hasznos, ha például egy olyan gépen szeretné ütemezni a karbantartási feladatot, amely a 01. munkavégzési helyszínen található, és a munka végrehajtásához ugyanarról a helyről kívánja hozzárendelni a karbantartási dolgozókat.
 

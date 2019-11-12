@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847551"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571668"
 ---
 # <a name="inbound-and-outbound-assets"></a>Bejövő és kimenő eszközök
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ha a cég más helyekről vagy ügyfelektől kapott eszközök javítási vagy karbantartási feladataival (is) foglalkozik, akkor az Eszközök kezelése szolgáltatással nyomon követhetők mind a cég felé küldött eszközök, mind a visszakerülő kimenő eszközök.
 
@@ -45,7 +45,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 3. Válassza a **Karbantartási kérés állapotának frissítése** lehetőséget.
 4. Válassza a **Bejövő** (vagy a bejövő eszközökhöz létrehozott másik életciklus-állapotot), majd az **OK** lehetőséget.
 
-![1. ábra](media/07-manage-maintenance-requests.png)
+![Eszközök regisztrálása bejövőként](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Bejövő eszközök regisztrálása fogadottként
 
@@ -54,7 +54,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 3. Válassza ki a **Tárgyi eszközök fogadása** lehetőséget.
 4. A **Fogadott** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Bejövő eszközök** listaoldalról.
 
-![2. ábra](media/08-manage-maintenance-requests.png)
+![Bejövő eszközök regisztrálása fogadottként](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Eszközök regisztrálása kimenőként
 

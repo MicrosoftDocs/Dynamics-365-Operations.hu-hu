@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847528"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571622"
 ---
 # <a name="maintenance-request-reports"></a>Karbantartáskérési jelentések
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Az Eszközkezelés modulban két olyan jelentést lehet létrehozni, amelyek a karbantartási kérésekhez kapcsolódnak. Egy jelentés a részleteket tartalmazza, a másik jelentés pedig egy listát, amely a tervezéshez és a nyomon követéshez használható.
 
@@ -44,7 +44,7 @@ A **Karbantartási kérés részletei** jelentés a karbantartási kérésekkel 
 
 A következő ábra egy példát mutat be a **Karbantartási kérés részletei** jelentésre.
 
-![1. ábra](media/09-manage-maintenance-requests.png)
+![Karbantartási kérés részletei jelentés](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Karbantartási kérés listája jelentés létrehozása
 
@@ -57,4 +57,4 @@ A **Karbantartási kérések listája** jelentés megjeleníti az azonos kérés
 
 A következő ábra egy példát mutat be a **Karbantartási kérések listája** jelentésre az összes aktív karbantartási kérés esetében.
 
-![2. ábra](media/10-manage-maintenance-requests.png)
+![Karbantartási kérés lista jelentései](media/10-manage-maintenance-requests.png)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783325"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571070"
 ---
-# <a name="asset-criticalities"></a>Eszközkritikusságok
+# <a name="asset-criticality-types"></a>Eszközkritikusságok típusai
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ez a témakör bemutatja az eszközkritikussági típusokat az Eszközkezelés modulban. Az eszközkritikusság kapcsolódik az eszközökhöz, és átkerül a munkarendelésekre. A munkarendeléseken nem módosítható. Az eszközkritikusság segítségével kiszámíthatja a munkarendelés kritikusságát a munkarendelés ütemezése során. Más szavakkal élve, annak kiszámítására használják, hogy egy eszköz karbantartási feladata milyen mértékben befolyásolja a vállalat termelési ütemezését és termelékenységét. A munkarendelés ütemezéséhez szükséges értékelési pontszámok kiszámításával kapcsolatos beállításra vonatkozó további információkat az [Eszközkezelés paraméterei](../setup-for-objects/enterprise-asset-management-parameters.md) részben találhat.
 
@@ -43,7 +43,7 @@ A kritikusság beállításához először létre kell hozni a kritikusságtípu
 4. A **Név** mezőbe írja be a kritikussátípus nevét.
 5. A **Szorzó** mezőben adjon meg egy szorzót. A rendszer ezt a szorzót használja a munkarendelés-ütemezés számítása során, amellyel megállapítja a használandó kritikusságrekordot. (A rendszer mindig a legmagasabb szorzójú rekordot használja.) Ez a beállítás akkor releváns, ha – ahogy a következő ábrán látható – olyan kritikussági sorokat hoznak létre, amelyek kritikussági értéke megegyezik.
 
-    ![1. ábra](media/23-setup-for-objects.png)
+    ![Kritikussági típusok oldal](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Eszközkritikusságok beállítása
 

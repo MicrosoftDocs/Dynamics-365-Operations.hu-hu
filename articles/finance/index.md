@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175952"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570125"
 ---
 # <a name="financial-management-home-page"></a>Pénzgazdálkodás – kezdőlap
 
@@ -69,4 +69,8 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 ### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
 
 Az ország/régió előírásai befolyásolják az adóbeállítások és a pénzgazdálkodás egyéb területeit. Az ország-/régióspecifikus funkciókról többet tudhat meg a [Honosítási és szabályozási funkciók​](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) részben.
+
+### <a name="additional-content"></a>További tartalom
+
+Az ellátásilánc-kezelési funkciók a teljes beszerzésirányítási folyamat egy részéért felelősek, beleértve a kérelmezés, rendelés, bevételezés, számlázás és a beszerzett áruk és szolgáltatások kifizetési folyamata is. A beszerzések, készletek és gyártás kezeléséhez kapcsolódó lehetőségekkel kapcsolatos további információkért tekintse meg a [!Supply Chain Management főoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 

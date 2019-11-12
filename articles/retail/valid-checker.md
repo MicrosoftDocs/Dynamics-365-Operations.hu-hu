@@ -3,7 +3,7 @@ title: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 description: Ebben a témakörben részletes leírást találhat a Dynamics 365 Retail kiskereskedelmi tranzakció konzisztencia-ellenőrzésére használatos funkciójáról.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018414"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622597"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 
@@ -59,11 +59,14 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kiskereske
 - **Ajándékutalvány-cikk** – A Retail alkalmazás nem támogatja az ajándékutalvány-cikkek visszaküldését. Azonban az ajándékutalvány egyenlegét ki lehet fizetni készpénzben. Ha az ajándékutalványcikket visszárusorként dolgozzák fel készpénzes kifizetési sor helyett, akkor a kimutatás feladási folyamata sikertelen lesz. Az ajándékutalvány-cikkek ellenőrzési folyamata segítségével garantálható, hogy a kiskereskedelmi tranzakciós táblákban szereplő, ajándékutalvány-cikkek visszaküldésére vonatkozó sorok ajándékutalvány készpénzes kifizetési sorok legyenek.
 - **Negatív ár** – Ellenőrzi, hogy nincsenek negatív árt tartalmazó tranzakciós sorok.
 - **Cikk és változat** – Ellenőrzi, hogy a tranzakciós sorban szereplő cikkek és változatok léteznek a cikk és a változat törzsadatfájljában.
-- **Adó összege** – Ellenőrzi, hogy az adórekordok megegyeznek-e a sorokban szereplő adók összegével. 
+- **Adó összege** – Ellenőrzi, hogy az adórekordok megegyeznek-e a sorokban szereplő adók összegével.
+- **Sorozatszám** – Ellenőrzi, hogy azon cikkekhez tartozó tranzakciósorokban szerepeljen a sorozatszám, amelyek ellenőrzése sorozatszámmal történik.
+- **Előjel** – Ellenőrzi, hogy a mennyiség és a nettó összeg előjele megegyezik-e az összes tranzakciós sorban.
+- **Üzleti dátum** – Ellenőrzi, hogy a kiskereskedelmi tranzakciókhoz tartozó összes üzleti dátum pénzügyi időszaka nyitott-e.
 
 ## <a name="set-up-the-consistency-checker"></a>Konzisztencia-ellenőrző beállítása
 
-Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Kiskereskedelem \> Kiskereskedelem IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
+Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Kiskereskedelem \> Kiskereskedelmi IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
 
 ## <a name="results-of-validation-process"></a>Ellenőrzési folyamat eredményei
 

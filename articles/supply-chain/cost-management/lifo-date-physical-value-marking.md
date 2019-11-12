@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3913801eb35faec858ef4b8e1e5056b755054218
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: abf74841e994efc3a71ff8dde048ab9c3be934bc
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554736"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571208"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki. 
 

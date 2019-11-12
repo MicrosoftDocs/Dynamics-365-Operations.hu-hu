@@ -1,6 +1,6 @@
 ---
-title: A raktározási alkalmazás telepítése és konfigurálása áttekintése
-description: Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 Supply Chain Management - Warehousing alkalmazást.
+title: A Raktározási alkalmazás telepítése és konfigurálása áttekintése
+description: Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 for Finance and Operations – Warehousing alkalmazást.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251500"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548968"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>A raktározási alkalmazás telepítése és konfigurálása áttekintése
+# <a name="install-and-configure-the-warehousing-app-overview"></a>A Raktározási alkalmazás telepítése és konfigurálása áttekintése
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251500"
 > Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 Supply Chain Management - Warehousing alkalmazást.
+Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 for Finance and Operations – Warehousing alkalmazást.
 
 A Warehousing alkalmazás a Google Play Store-ban és a Windows Áruházban érhető el. A Dynamics 365 Supply Chain Management alkalmazás különálló összetevőként érhető el, ami azt jelenti, hogy raktári feladatokhoz eszközökre önállóan telepíthető. Az alkalmazás használatához minden eszközre le kell tölteni az alkalmazást, konfigurálni kell a Supply Chain Management környezethez való kapcsolódáshoz. Ez a témakör ismerteti az alkalmazás eszközökre telepítésének módját. Azt is bemutatja, hogyan konfigurálhatja az alkalmazást a Supply Chain Management környezethez való csatlakozáshoz.
 

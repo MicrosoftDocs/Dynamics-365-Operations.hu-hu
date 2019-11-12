@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918418"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652379"
 ---
 # <a name="asset-kpis"></a>Eszköz KPI-k
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Az Eszközkezelésben különböző teljesítménymutatókat (KPI-ket) lehet kiszámítani az eszközök és az eszköztípusok esetében. A teljesítménymutatók segítségével áttekintést kaphat az eszközökről, például az üzemidőről, az állásidő, a javítási idő és a meghibásodások közötti átlagos időtartam (MTBF) tekintetében.
 
@@ -85,7 +85,7 @@ A lenti táblázatban megtalálja a mezők leírását az **Eszköz KPI-k** olda
 
 Az alábbi ábra négy eszköz KPI-számításának képernyőképét jeleníti meg.
 
-![1. ábra](media/11-controlling-and-reporting.png)
+![A KPI-számítás négy eszközre vonatkozó képernyőképe](media/11-controlling-and-reporting.png)
 
 - Több eszköz is kiválasztható az **Összes eszköz** lehetőségnél, majd kattintson az **Eszköz KPI** gombra az **Általános** lapon. Ezután kattintson az **OK** gombra az **Eszköz KPI-k kiszámítása** párbeszédpanelen a kiválasztott eszközökhöz tartozó KPI-k számításához.  
 - A KPI-számítás eredményei nem kötelező jelleggel tartalmazhatják a [karbantartás miatti üzemkimaradás regisztrációkat](../work-orders/maintenance-downtime.md), a karbantartás miatti üzemkimaradás okkódok beállításának és használatának beállításától függően. 

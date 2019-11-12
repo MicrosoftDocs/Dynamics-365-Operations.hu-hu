@@ -3,7 +3,7 @@ title: Felosztott rendeléskezelés (DOM)
 description: Ez a témakör a Dynamics 365 Retail elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023419"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578484"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -94,6 +94,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         - **Részleges sorok teljesítése?** – Ha ezt a beállítást **Igen** értékre állítja, a DOM képes arra, hogy a rendelési sorok mennyiségnek csak egy részét teljesíti. A részleges teljesítés a rendelési sor felosztásával valósítható meg.
         - **Rendelés teljesítése csak egy helyről** – Ha ezt a beállítást **Igen** értékre állítja, a DOM gondoskodik arról, hogy egy rendelés minden sorát csak egyetlen helyről teljesítse.
 
+
         Az alábbi táblázat bemutatja, mi történik akkor, ha ezeknek a paramétereknek a kombinációja kerül meghatározásra.
 
         |      | Részleges rendelések teljesítése | Részleges sorok teljesítése | Rendelés teljesítése csak egy helyről | Leírás |
@@ -108,21 +109,24 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         | 8    | Igen                    | Nem                    | Nem                                   | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, de az egyes soroknál nem lehetséges a részleges teljesítés, és a különböző rendelési sorokat egynél több helyről is lehet teljesíteni. |
         | 9\*  | Nem                     | Nem alkalmazható        | Igen                                  | Mindegyik rendelési sort teljesíteni kell, valamint az összes rendelési sort egy helyről kell teljesíteni. |
 
-        \* Ha a **Részleges rendelések teljesítése** beállítás **Nem** értékre van állítva, a **Részleges sorok teljesítése** beállításokat mindig **Nem** értékűnek kell tekinteni, attól függetlenül, hogy valójában mire van állítva.
+        \* Ha a **Részleges rendelések teljesítése** beállítás **Nem** értékre van állítva, a **Részleges sorok teljesítése** beállításokat mindig **Nem** értékűnek kell tekinteni, attól függetlenül, hogy valójában mire vannak állítva.
 
-    - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy meghatározzanak egy helyet vagy helyek egy csoportját offline-ként a DOM számára, így a rendeléseket oda nem lehet teljesítésre hozzárendelni.
+> [!NOTE]
+> A Retail 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. Annak beállítása helyett, hogy a rendelést csak egy helyről, vagy a lehetséges összes helyről lehessen teljesíteni, mostantól a felhasználók megadhatják, hogy a teljesítést a megadott helycsoportból (legfeljebb 5 hely) lehet teljesíteni, vagy a lehetséges összes helyről. Ez több rugalmasságot biztosít a rendelésteljesítés helyeinek számát illetően.
+
+   - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
     - **Maximum elutasítások szabály** – Ezzel a szabállyal a szervezetek meghatározhatnak egy elutasítási küszöbértéket. Amikor a rendszer eléri a küszöbértéket, a DOM processzor kivételként megjelöli a rendelést vagy rendelési sort, és kizárja a további feldolgozásból.
 
         Miután a rendelési sorokat egy helyhez rendelte a rendszer, a hely elutasíthatja a hozzárendelt rendelési sort, mivel bizonyos okok miatt előfordulhat, hogy nem képes teljesíteni a rendelést. Az elutasított sorokat a rendszer kivételként jelöli meg, és visszakerülnek az állományba, hogy a következő futáskor ismét feldolgozásra kerüljenek. A következő futás során a DOM megpróbálja az elutasított sort egy másik helyhez rendelni. Az új helynek szintén lehetősége van a hozzárendelt rendelési sor elutasítására. A hozzárendelési és elutasítási ciklus akár többször is lejátszódhat. Amikor az elutasítások száma eléri a meghatározott küszöbértéket, a DOM állandó kivételként jelöli meg az adott rendelési sort, és többé nem tárolja ki a sort hozzárendelésre. A DOM csak akkor veszi figyelembe ismét hozzárendelésre a sort, ha egy felhasználó manuálisan módosítja a rendelési sor állapotát.
 
-    - **Maximum távolság szabály** – Ez a szabály lehetővé teszi, hogy a szervezet meghatározza a hely vagy helycsoport maximális távolságát a rendelés teljesítéséhez. Ha egymást fedő maximum távolsági szabályokat határoztak meg egy helyre vonatkozóan, akkor a DOM az adott helyhez megadott legalacsonyabb maximum távolságot alkalmazza majd.
+   - **Maximum távolság szabály** – Ez a szabály lehetővé teszi, hogy a szervezet meghatározza a hely vagy helycsoport maximális távolságát a rendelés teljesítéséhez. Ha egymást fedő maximum távolsági szabályokat határoztak meg egy helyre vonatkozóan, akkor a DOM az adott helyhez megadott legalacsonyabb maximum távolságot alkalmazza majd.
     - **Rendelések maximális számának szabálya** – Ezzel a szabállyal a szervezetek meghatározhatják a rendelések maximális számát, amelyet egy hely vagy helycsoport feldolgozhat egy naptári nap során. Ha adott helyhez vagy helycsoporthoz egy nap folyamán már hozzárendelték a rendelések maximális számát, akkor a DOM a nap további részében már nem rendel a helyhez több rendelést.
 
-    Az alábbiakban felsoroltunk néhány olyan közös attribútumot, amelyet a korábban felsorolt szabálytípusra meg lehet határozni:
+   Az alábbiakban felsoroltunk néhány olyan közös attribútumot, amelyet a korábban felsorolt szabálytípusra meg lehet határozni:
 
-    - **Kezdő dátum** és **Záró dátum** – Minden szabályt el lehet látni érvényességi dátummal, ha kitölti ezeket a mezőket.
-    - **Letiltott** – Csak azokat a szabályokat veszi figyelembe a DOM a futások során, amelyeknél ez a beállítás **Nem** értékkel rendelkezik.
-    - **Szigorú korlát** – Egy szabályt lehet szigorú vagy nem szigorú korlátként megadni. Minden DOM-futás két iteráción megy át. Az első iteráció során minden szabályt szigorú korlátként kezel a rendszer, függetlenül a mező beállításától. Azaz a rendszer minden szabályt alkalmaz. Ez alól az egyetlen kivétel a **Hely prioritása** szabály. A második iteráció során a nem szigorú korlátként megadott szabályokat a rendszer eltávolítja, és azok a rendelések vagy rendelési sorok is hozzárendelésre kerülnek, amelyeket az összes szabály alkalmazásakor nem sikerült helyhez hozzárendelni.
+   - **Kezdő dátum** és **Záró dátum** – Minden szabályt el lehet látni érvényességi dátummal, ha kitölti ezeket a mezőket.
+   - **Letiltott** – Csak azokat a szabályokat veszi figyelembe a DOM a futások során, amelyeknél ez a beállítás **Nem** értékkel rendelkezik.
+   - **Szigorú korlát** – Egy szabályt lehet szigorú vagy nem szigorú korlátként megadni. Minden DOM-futás két iteráción megy át. Az első iteráció során minden szabályt szigorú korlátként kezel a rendszer, függetlenül a mező beállításától. Azaz a rendszer minden szabályt alkalmaz. Ez alól az egyetlen kivétel a **Hely prioritása** szabály. A második iteráció során a nem szigorú korlátként megadott szabályokat a rendszer eltávolítja, és azok a rendelések vagy rendelési sorok is hozzárendelésre kerülnek, amelyeket az összes szabály alkalmazásakor nem sikerült helyhez hozzárendelni.
 
 10. A teljesítési profilokat a rendszer szabályok, jogi személyek, értékesítésirendelés-források és kiszállítási módok gyűjteményének csoportosítására használja. Minden DOM-futás egy meghatározott teljesítési profilhoz tartozik. Így a szervezetek meghatározhatnak és lefuttathatnak szabályok egy sorozatát jogi személyek egy csoportjára, olyan rendeléseken, amelyek specifikus értékesítésirendelés-forrásokkal vagy szállítási módokkal rendelkeznek. Ezért tehát amennyiben különböző szabálycsoportokat kell lefuttatni a különböző értékesítésirendelés-források vagy kiszállítási módok esetén, a teljesítési profilokat ennek megfelelően lehet megadni. A teljesítési profilok beállításához kövesse az alábbi lépéseket:  
 

@@ -3,7 +3,7 @@ title: Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a 
 description: A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alkalmazásokhoz vagy a Microsoft Dynamics Lifecycle Services (LCS) rendszerhez.
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af4cbbd0f594b07e791d6ab7a5ac4dc58b97e1de
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537050"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577496"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
 
@@ -91,5 +91,5 @@ A CustomerSource webhellyel és annak elérésével , az elektronikus tanulássa
 ## <a name="additional-resources"></a>További erőforrások
 - [Támogatás kérése a Dynamics 365 Retail alkalmazáshoz](../../../retail/retail-support.md)
 - [Támogatás kérése a Dynamics 365 Talent alkalmazáshoz](../../../talent/talent-support.md)
-- Ha további tájékoztatást szeretne a Microsoft Dynamicstámogatási ajánlatokról, lásd: [Microsoft Dynamics online támogatás ](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- A Microsoft Dynamics támogatási ajánlatokkal kapcsolatos további tudnivalókat lásd: [A Finance and Operations alkalmazások támogatásának kezelése](cloud-powered-support-lcs.md).
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790502"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571162"
 ---
-# <a name="maintenance-request-states"></a>Karbantartási kérés állapotai
+# <a name="maintenance-request-lifecycle-states"></a>Karbantartási kérések életciklus-állapotai
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 A karbantartási kérés életciklus-állapotai meghatározzák, hogy a kérés milyen fázisokon mehet keresztül. Ilyen fázis például a **Létrehozva**, **Aktív** és **Befejezve** állapot. A karbantartási kérés munkarendeléssé átalakításakor a karbantartási kérés életciklus-állapotát **Befejezve** vagy **Lezárt** állapotúra kell frissíteni, ha a karbantartási kérés már nem aktív. Az **Összes karbantartási kérés** listaoldalán megtekintheti az összes karbantartási kérést, függetlenül azok életciklus-állapotától.
@@ -51,7 +51,7 @@ A karbantartási kérés életciklus-állapotai meghatározzák, hogy a kérés 
 
 A következő ábra a **Karbantartási kérések életciklus-állapotai** oldalt szemlélteti.
 
-![1. ábra](media/02-setup-for-requests.png)
+![Karbantartási kérések életciklus-állapotai oldal](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > A karbantartási kérések életciklus-állapotait, az életciklus-állapot csoportjait és típusait ugyanúgy használják, mint a munkarendelés életciklus-állapotait, csoportjait és típusai. 
@@ -80,4 +80,4 @@ Miután létrehozta a karbantartási kérésekhez szükséges életciklus-állap
 
 A következő ábra a **Karbantartási kérések életciklusmodellek** oldalt szemlélteti.
 
-![2. ábra](media/06-setup-for-requests.png)
+![Karbantartási kérés életciklusmodelljei oldal](media/06-setup-for-requests.png)

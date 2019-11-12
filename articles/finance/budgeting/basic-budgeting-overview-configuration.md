@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188694"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667460"
 ---
 # <a name="budgeting-overview"></a>Költségvetés-készítés áttekintése 
 
@@ -69,6 +69,12 @@ Hozzon létre *költségvetési kódokat* amelyek azonosítják a költségveté
 A költségvetési kódok lehetővé teszik a jóváhagyott költségvetés könyvvizsgálati ellenőrzését a költségvetési cikluson keresztül. Ha egy munkafolyamat egy költségvetési kódhoz van társítva, akkor a munkafolyamat engedélyezett minden költségvetésitételjegyzék-bejegyzéshez, amelyet a költségvetés használ, és a munkafolyamat lépéseit el kell végezni mielőtt a költségvetésitételjegyzék-bejegyzés **Kész** állapotú lehet.  
 
 Továbbá tetszés szerint megadhat *költségvetés-átviteli szabályokat*. Költségvetés-átviteli szabályok használatához jelölje be a **Költségvetés-átvitelekre vonatkozó szabályok használata** elemet a **Költségvetési paraméterek** oldalon. Költségvetés-átviteli szabályok használatának idejét, ha egy felhasználó a dokumentum létrehozása a költségvetési kódot, amely segítségével a **Átvitel** írja be a költségvetési egyenlegek nem frissíthető, ha a költségvetés-átviteli szabályokat nem sikeres. Ha például meg lehetővé teheti a költségvetés-átvitel dokumentumok ahol a kiadási költségvetés át, a fő számlát, amelyre az értékesítés és Marketing részleg között, de megtilthatják, hogy a költségvetési átvitel alatt a szervezeti egységhez, vagy csak az adott típusú költségvetési számlabejegyzés adott munkafolyamat-jóváhagyás.
+
+A Microsoft Dynamics 365 Finance 10.0.7 verzióban (2020 január) bevezetett funkció a költségvetési tételjegyzék-bejegyzések számára hozzáadott képességgel és rugalmassággal bővült. Ha engedélyezni kívánja ezeket a fejlesztéseket , nyissa meg a **Funkció-kezelési** munkaterületet, és válassza ki a **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** és/vagy **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján**.
+
+A **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** esetén csak mennyiségi értékkel adhatók fel olyan költségvetési tételjegyzék-bejegyzések. Például feladhat egy 32 és egy nulla árat tartalmazó költségvetési bejegyzést, ami nulla összeggel jár. Ezt a mennyiséget egy pénzügyi jelentés keretein belül használhatja, hogy meghatározza a mennyiségre jutó árat. Ne feledje, hogy a funkció részeként nem lettek frissítve a lekérdezések és a jelentések. Ez a funkció csak nulla összeg feladását teszi lehetővé.
+
+A **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján** lehetővé teszi au alapértelmezett összegtípus számára, hogy a költségregiszter bejegyzésben a kiadástól eltérő összegtípus legyen. A költségvetési tételjegyzék-bejegyzés sora most alapértelmezetten költségként jelenik meg, amikor a fő számla típusa költség; alapértelmezetten bevételként jelenik meg, ha a fő számla típusa költség; és az alapértelmezett költség lesz az összes többi számlatípus esetében.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Munkaterületek és a lekérdezési lapok segítségével nyomon követheti a költségvetés-tényleges
 A költségvetés-kezelő tekintheti meg a költségvetés aktuális állapotát a **főkönyvi költségvetések és az előrejelzések** munkaterület. A **túllépő útiköltség költségvetési** és **a költségvetést bevétel** lapok biztosítja a gyors pénzügyi dimenziókombinációk Ha költségvetési tervek nem felelnek, vagy a program hamarosan eléri a küszöbértéket. A költségvetési küszöbértéket, és a Dimenziófókuszok kattintva a lapokon használt személyre szabható **konfigurálása a munkaterület**. Rákattinthat **egységvezetőket** ellenőrizhető, hogy az adott pénzügyi dimenziókombinációk ezen a lapon kiválasztott felelős dolgozók. Például ha látja, hogy a műveletek részleg a kiadási költségvetés lesz a költségvetési küszöbértéket meghaladó, egyszerűen található, és lépjen kapcsolatba a kiadás megvitatására üzemvezető részleg. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248700"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553091"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-sablonok biztonságimentés-tárhelye
 
@@ -33,7 +33,7 @@ Az [elektronikus jelentési keretrendszer (ER)](general-electronic-reporting.md)
 
 Minden konfigurált formátum közzétehető egy ER-megoldás részeként. Minden egyes ER megoldást exportálható a Finance and Operations egyik példányából, és importálható egy másik példányba.
 
-Az ER keretrendszer a [Dokumentumkezelési keretrendszer](../../fin-and-ops/organization-administration/configure-document-management.md) segítségével tárolja a szükséges sablonokat az aktuális Finance and Operations példányhoz. Az ER keretrendszer beállításaitól függően a Microsoft Azure Blob tároló vagy a Microsoft SharePoint mappa választható ki a sablonok fizikai elsődleges tárolóhelyéhez. (További tájékoztatás: [Az Er keretrendszer](electronic-reporting-er-configure-parameters.md) konfigurálása.) A DocuValue tábla minden egyes sablonhoz külön rekordot tárol. A **AccessInformation** mező mindegyik rekordban tárolja a konfigurált tárhelyen található sablonfájl elérési útját.
+Az ER keretrendszer a [Dokumentumkezelési keretrendszer](../../fin-ops/organization-administration/configure-document-management.md) segítségével tárolja a szükséges sablonokat az aktuális Finance and Operations példányhoz. Az ER keretrendszer beállításaitól függően a Microsoft Azure Blob tároló vagy a Microsoft SharePoint mappa választható ki a sablonok fizikai elsődleges tárolóhelyéhez. (További tájékoztatás: [Az Er keretrendszer](electronic-reporting-er-configure-parameters.md) konfigurálása.) A DocuValue tábla minden egyes sablonhoz külön rekordot tárol. A **AccessInformation** mező mindegyik rekordban tárolja a konfigurált tárhelyen található sablonfájl elérési útját.
 
 A Finance and Operations példányok kezelésekor úgy is dönthet, hogy áttelepíti az aktuális példányt egy másik helyre. Előfordulhat például, hogy egy új tesztkörnyezetbe szeretné áttelepíteni a termelési példányt. Ha úgy állította be az ER keretrendszert, hogy a Blob-tárolóban tárolja a sablonokat, akkor az új tesztkörnyezet DocuValue táblája a Blob tárhely példányára hivatkozik atermelési környezetben. Ez a példány azonban nem érhető el a tesztkörnyezetből, mivel az áttelepítési folyamat nem támogatja a Blob-tárolóban található összetevők áttelepítését. Ha tehát olyan ER formátumot próbál futtatni, amely sablon alapján üzleti dokumentumokat hoz létre, akkor kivétel történik, és a program értesíti a hiányzó sablonról. A program arra kéri, hogy használja az ER karbantartó eszközt, majd importálja újra az ER formátumkonfigurációt, amely a sablont tartalmazza. Mivel előfordulhat, hogy a több ER formátumkonfigurációja is van, ez a folyamat időigényes lehet.
 

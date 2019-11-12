@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188257"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578195"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
 
@@ -36,7 +36,7 @@ A banki kivonat importálási beállítások az elektronikus banki kivonat form�
 ## <a name="set-time-zone-preference"></a>Időzóna-preferencia beállítása
 A banki kivonatok importálási beállításainak konfigurálásakor fontos, hogy figyelembe vegye a banki kivonat fájljain belül a dátum-idő adatok időzónáját. Alapértelmezett módon feltételezhető, hogy a megadott dátum és időértékek már az Egyezményes világidőt (UTC) követik, így nem kell időzóna-átváltást alkalmazni az adatok importálásakor. 
 
-Lehetőség van az adatok importálásához használni kívánt időzóna meghatározására. Ez a beállítás az egyes **Forrásadat-formátum részletei** oldal **Időzóna-preferencia** mezőjében áll rendelkezésre (**Adatkezelés munkaterület > Adatforrások konfigurálása > Adatformátum kiválasztása > Regionális beállítások** gyorslap). Ez a megadott időzóna-beállítás minden olyan importálásra vonatkozik, amely a forrásadatok formátumát használja. Tetszőleges számú adatforrás-formátumot létre lehet hozni a különböző időzónák adatainak importálásához. Az időzónabeállításnak meg kell felelnie a helyi időzónának az importált fájl dátum-és időadataiban Az időzóna-beállításnak meg kell felelnie a helyi időzónának az importált fájl dátum-és időadataiban. 
+Lehetőség van az adatok importálásához használni kívánt időzóna meghatározására. Ez a beállítás az egyes **Forrásadat-formátum részletei** oldal **Időzóna-preferencia** mezőjében áll rendelkezésre (**Adatkezelés munkaterület > Adatforrások konfigurálása > Adatformátum kiválasztása > Regionális beállítások** gyorslap). Ez a megadott időzóna-beállítás minden olyan importálásra vonatkozik, amely a forrásadatok formátumát használja. Tetszőleges számú adatforrás-formátumot létre lehet hozni a különböző időzónák adatainak importálásához.  
 
 Előfordulhat, hogy ez az időzóna nem ugyanaz, mint a felhasználó vagy a vállalat időzónája, ezért ügyeljen arra, hogy az időzónát a dátum-és időadatok alapján kell egyértelműsíteni. Javasoljuk, hogy az időzóna-beállítások megadásakor vegye figyelembe a következő szempontokat. 
 

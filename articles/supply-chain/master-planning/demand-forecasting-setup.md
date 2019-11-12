@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249567"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653511"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -72,7 +72,7 @@ Az előrejelzés létrehozásához a Supply Chain Management egy gépi tanulási
 
 **Megjegyzés:** az Azure tárolási számlanév és kulcs csak az egyéni tárolási fiók használata esetén szükséges. Ha a helyszíni verziót használja, rendelkeznie kell egy egyéni tárolási fiókkal az Azure-on, hogy a gépi tanulási szolgáltatás elérhesse az előzményadatokat. 
 
-Igény-előrejelzések létrehozásánál használhat saját szolgáltatást a Machine Learning Studio vagy a Supply Chain Management igény-előrejelzési kísérletek segítségével. A Finance and Operations igény-előrejelzési kísérletek webes szolgáltatásként való telepítéséhez a Finance and Operationsön belül talál útmutatást. Az **Igény-előrejelzési paraméterek** lapon kattintson az **Azure Machine Learning** fülre.
+Igény-előrejelzések létrehozásánál használhat saját szolgáltatást a Machine Learning Studio vagy a Supply Chain Management igény-előrejelzési kísérletek segítségével. A Finance and Operations igény-előrejelzési kísérletek webes szolgáltatásként való telepítéséhez a Supply Chain Management alkalmazáson belül talál útmutatást. Az **Igény-előrejelzési paraméterek** lapon kattintson az **Azure Machine Learning** fülre.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>A igény-előrejelzés gépitanulás-szolgáltatás beállításai
 Az igény-előrejelzési szolgáltatás beállítható paramétereinek megtekintéséhez lépjen az **Alaptervezés** &gt; **Beállítás** &gt; **Igény-előrejelzés** &gt; **Előrejelzési algoritmus paraméterei** menüpontra. Az **Előrejelzési algoritmus paraméterei** lapon láthatóak a paraméterek alapértelmezett értékei. Ezeket a paramétereket a felülírhatja az **Igény-előrejelzési paraméterek** oldalon. Használja az **Általános** lapot, hogy a paramétereket globálisan felülírja, vagy használja a **Cikkfelosztási kulcsok** lapot, hogy cikkfelosztási kulcsonként módosítsa a paramétereket. Ha a cikkfelosztási kulcsokhoz tartozó paraméterek változnak, azok csak az adott cikkfelosztási kulcshoz tartozó cikkeket érintik.

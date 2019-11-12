@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 571f443b02268cbee8fe787f25419e046ba99aeb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d25bacc2ec1f8e13376b96e188b099a184f7f8c6
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182853"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569132"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Beszerzési és ráfordítási elemzés Power BI tartalom
 
@@ -62,7 +62,7 @@ Az alábbi szakaszok tartalmazzák a megjelenítések áttekintését.
 - Aktív szállítók száma
 
 **Példa**
-<img src="media/spend1.PNG" alt="Purchase by vendor">
+<img src="media/spend1.png" alt="Purchase by vendor">
 
 ### <a name="purchase-by-product-report-page"></a>Beszerzés a termékjelentés lapján
 
@@ -79,7 +79,7 @@ Az alábbi szakaszok tartalmazzák a megjelenítések áttekintését.
 **Példa**
 
 
-<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+<img src="media/purchaseByProduct.png" alt="Purchase by Product">
 
 ### <a name="purchase-by-period-report-page"></a>Beszerzés a az időszakjelentés lapján
 Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növekedés beszerzési kategória szerint adatokat mutatja.
@@ -95,7 +95,7 @@ Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növe
 - Egy éves időszak beszerzési növekedése %
 
 **Példa**
-<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+<img src="media/purchaseByPeriod.png" alt="Purchase by Period">
 
 ### <a name="purchase-by-vendor-location-report-page"></a>Beszerzés a szállítói helyjelentés lapján
 
@@ -105,7 +105,7 @@ Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növe
 - Beszerzési ország szerint
 
 **Példa**
-<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+<img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">
 
 ### <a name="purchase-spend-analysis-by-time-report-page"></a>Beszerzési kiadások elemzése idő szerint lapján
 
@@ -114,7 +114,7 @@ Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növe
 - Beszerzés, jelenlegi és az előző év (vonal- és oszlopdiagram)
 
 **Példa**
-<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+<img src="media/PurchByTIme.png" alt="Purchase by Time">
 
 ### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Beszerzési kiadások elemzése beszállító szerint lapján
 
@@ -124,7 +124,7 @@ Ez az oldal az erre az évre és az előző évre eső beszerzéseket, és növe
 - Top 10 szállító csökkent kiadásokkal egy éves időszakban
 
 **Példa** 
-<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+<img src="media/PurchSpendAnalysisByVendor.png" alt="Purchase spend by vendor">
 
 
 ## <a name="data-model-and-entities"></a>Adatmodell és entitások

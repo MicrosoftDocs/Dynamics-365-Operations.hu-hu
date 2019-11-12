@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19d529df6c8aab036de59502b4f14101e1a07707
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 430e475b52638dd80512ffd79d42aac6f5f340e1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790501"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571139"
 ---
 # <a name="maintenance-request-types"></a>Karbantartási kérések típusai
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A karbantartási kérések típusai a karbantartási kérések kategorizálására szolgálnak. A karbantartásikérés-típusok kapcsolódhatnak például megelőző karbantartáshoz és hibaelhárító karbantartáshoz. A karbantartási kérésnek olyan speciális típusa is lehet, amelyet eszközök javításának kezelésére használnak (raktárjavítás).
 
@@ -44,4 +44,4 @@ A karbantartási kérés típusa határozza meg a karbantartási kéréshez tart
 
 A következő ábra a **Karbantartási kérés típusai** oldalt szemlélteti.
 
-![1. ábra](media/07-setup-for-requests.png)
+![Karbantartási kérések típusai oldal](media/07-setup-for-requests.png)

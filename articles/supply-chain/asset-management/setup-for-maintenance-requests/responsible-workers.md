@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790500"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569915"
 ---
 # <a name="responsible-maintenance-workers"></a>Felelős karbantartási dolgozók
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A felelős karbantartási dolgozók eszköztípusokhoz, eszközökhöz, munkavégzési helyszínekhez, karbantartási feladat típusának kategóriáihoz, karbantartási feladatok típusaihoz, karbantartási feladat típusának változataihoz és ügyletekhez egyaránt kapcsolódhatnak. Feltüntethetők a munkarendeléseken és a karbantartási kérelmeken annak jelzésére, hogy kik azok az előnyben részesített karbantartási dolgozók, akiket a munkarendeléshez célszerű rendelni. (Ezek a karbantartási dolgozók azonban nem feltétlenül egyeznek meg azokkal, akiket a munkarendelés elvégzésére ütemeztek.) Ennek a funkciónak a használata nem kötelező. Használható például felelős dolgozók vagy dolgozói csoportok konkrét munkatípusokhoz vagy munkaterületekhez történő kiválasztásához.
 
@@ -53,4 +53,4 @@ A felelős karbantartási dolgozók beállítása előtt be kell állítania a k
 
 A következő ábra a **Felelős karbantartási dolgozók** oldalt szemlélteti.
 
-![1. ábra](media/08-setup-for-requests.png)
+![Felelős karbantartási dolgozók oldal](media/08-setup-for-requests.png)

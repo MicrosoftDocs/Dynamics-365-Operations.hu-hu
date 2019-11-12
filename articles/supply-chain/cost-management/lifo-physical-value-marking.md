@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565696"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569271"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO tényleges értékkel és jelöléssel
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 A LIFO (Last in, first out) egy olyan készletmodell, amelynél a legutóbb bevételezett (legújabb) cikkeket adják ki elsőként. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. 
 
@@ -56,7 +54,9 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 -   5b. Pénzügyi kiadás készletről, 1 mennyiséggel, 20,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   6. Készletzárást hajtanak végre. A LIFO módszer alapján a legutóbbi pénzügyileg frissített kiadás rendezése, a legutóbb pénzügyileg frissített bevételezéssel szemben történik. A kiadási tranzakción 10,00 USD értékű korrekció történik.
 
-Az új, mozgóátlagon alapuló önköltségi ár, a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. A következő illusztráció bemutatja, milyen hatása van a LIFO készletmodellnek erre a tranzakció sorozatra, ha a **Tényleges értékkel együtt** beállítás nincs beállítva. ![LIFO a tényleges értékkel nélkül](./media/lifowithoutincludephysicalvalue.gif) 
+Az új, mozgóátlagon alapuló önköltségi ár, a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. A következő illusztráció bemutatja, milyen hatása van a LIFO készletmodellnek erre a tranzakció sorozatra, ha a **Tényleges értékkel együtt** beállítás nincs beállítva. 
+
+![LIFO a tényleges értékkel nélkül](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -90,7 +90,9 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 A 6a jelű tranzakció a 4b jelű bevételezési tranzakcióra lesz helyesbítve. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mivel a bevételezés csak fizikailag történt meg, pénzügyileg azonban nem. Ehelyett csak egy 8,75 USD értékű korrekció lesz feladva a tényleges kiadási tranzakcióra. Az 5b jelű tranzakció a 3a jelű fizikai bevételezési tranzakcióra lesz módosítva. Mivel nem történt meg mindkét tranzakció pénzügyi frissítése, ezért a rendszer nem rendezi őket. Ehelyett, csak egy –3,75 USD értékű korrekció történik a kiadási tranzakción. Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO a tényleges értékkel együtt](./media/lifowithincludephysicalvalue.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. 
+
+![LIFO a tényleges értékkel együtt](./media/lifowithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -132,7 +134,9 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. 
 
-A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve. ![LIFO jelöléssel](./media/lifowithmarking.gif) 
+A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve. 
+
+![LIFO jelöléssel](./media/lifowithmarking.gif) 
 
 **Jelmagyarázat**
 
@@ -146,7 +150,4 @@ A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tr
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
-
-
-
 

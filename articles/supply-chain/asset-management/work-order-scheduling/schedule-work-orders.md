@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887228"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652149"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Ez a témakör azt mutatja be, hogyan lehet munkarendeléseket ütemezni az Eszközkezelés modulban. A munkarendeléshez szükséges óraszámot a munkarendelési feladaton szereplő előre jelzett munkaórák összege mínusz a feladott órák száma határozza meg. Ha több időre van szükség, a munkarendelésen szereplő előrejelzést ennek megfelelően módosítani kell. Az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** pontban a munkarendelés kiválasztásával és a **Munkarendelés** lap **Előrejelzés** elemére kattintva megtekintheti vagy szerkesztheti a munkarendelés előrejelzéseit. Munkarendelések létrehozása és becslése esetén a következő lépés a befejezéshez szükséges karbantartási dolgozók és eszközök hozzárendelése a munkarendeléshez.
+Ez a témakör azt mutatja be, hogyan lehet munkarendeléseket ütemezni az Eszközkezelés modulban. 
+
+A munkarendeléshez szükséges óraszámot az előre jelzett munkaórák összege mínusz a feladott órák száma határozza meg. Ha több időre van szükség, az előrejelzést ennek megfelelően módosítani kell. Az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** pontban a munkarendelés kiválasztásával és a **Munkarendelés** lap **Előrejelzés** elemére kattintva megtekintheti vagy szerkesztheti a munkarendelés előrejelzéseit. Munkarendelések létrehozása és becslése esetén a következő lépés a befejezéshez szükséges karbantartási dolgozók és eszközök hozzárendelése a munkarendeléshez.
 
 Csak azokat az életciklus-állapottal rendelkező munkarendeléseket lehet ütemezni, amelyeknél engedélyezett az ütemezés. Engedélyezze az ütemezést az **Eszközkezelés** > **Beállítás** > **Munkarendelések** > **Életciklus-állapotok** > **Általános** gyorslapon > az **Ütemezés engedélyezése** váltógombra kattintva.
 
@@ -43,8 +45,8 @@ Csak azokat az életciklus-állapottal rendelkező munkarendeléseket lehet üte
 
 4. Ha szükséges, a **Munkarendelések ütemezése** párbeszédpanelen hozzáadhatók a várt kezdő dátumhoz és szolgáltatási szinthez kapcsolódó beállítások. Ha az ütemezési folyamat figyelembe veszi a más feladatokra már ütemezett erőforrásokra vonatkozó kapacitási korlátozásokat, akkor győződjön meg róla, hogy az **Eszköz**, **Eszköz** és **Dolgozó** váltógomb „Igen” értékű.
 
->[!NOTE]
->Ha a **Tárgyi eszköz**, **Eszköz** és **Dolgozó** váltógombokat „Nem” értékűre állítja, akkor a program figyelmen kívül hagyja a létező foglalásokat. Az információs naplóban megjelenik az átfedésben lévő munkarendelés-ütemezések listája, az üzenetekre kattintva pedig megnyithatja az egyes munkarendeléseket, és szükség esetén újraütemezheti a munkát.
+    [!NOTE]
+    Ha a **Tárgyi eszköz**, **Eszköz** és **Dolgozó** váltógombokat „Nem” értékűre állítja, akkor a program figyelmen kívül hagyja a létező foglalásokat. Az információs naplóban megjelenik az átfedésben lévő munkarendelés-ütemezések listája, az üzenetekre kattintva pedig megnyithatja az egyes munkarendeléseket, és szükség esetén újraütemezheti a munkát.
 
 5. Az ütemezési folyamat részletes adatainak megtekintéséhez válassza az „Igen” beállítást a **Részletes** váltógombnál. Ez azt jelenti, hogy az információs naplóban megjelennek a munkarendelésekhez és a karbantartási dolgozókhoz tartozó számított pontszámokkal kapcsolatos részletes információk.
 
@@ -110,9 +112,11 @@ A munkarendeléseken dolgozó karbantartási munkatársak meghatározásával ka
 | A dolgozó kezdési dátuma               | Minden olyan dátum esetében, ahol az ütemezett kezdő dátum későbbi a várt kezdő dátumnál, a rendszer kivonja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!NOTE]
->Ha egy pontszám „0” értékre van állítva, akkor az a pontszám nem lesz kiszámítva. Ez akkor lehet hasznos, ha például nem kívánja szerepeltetni a felelős dolgozót az ütemezésben.
+>Ha egy pontszám „0” értékre van állítva, akkor az a pontszám nem lesz kiszámítva. Ez akkor lehet hasznos, ha például nem kívánja szerepeltetni egy felelős dolgozót az ütemezésben.
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>A munkarendelés-ütemezésben használt kompetenciák
 
-A szakértelmekkel és bizonyítványokkal kapcsolatos követelmények beállíthatók a karbantartási feladattípusokhoz (**Eszközök kezelése** > **Beállítás** > **Feladatok** > **Karbantartási feladattípusok**) és a karbantartási szakterületekhez (**Eszközök kezelése** > **Beállítás** > **Feladatok** > **Karbantartási feladattípus szakterülete**). A karbantartási feladattípusok és a karbantartási szakterületek a munkarendelési feladatokban választhatók ki. Ha egy karbantartási feladattípushoz vagy szakterülethez szakértelmek vagy bizonyítványok vannak kiválasztva, és ezt a karbantartási feladattípust vagy szakterületet használják egy munkarendelésben, akkor a program csak a megfelelő szakértelemmel és bizonyítvánnyal rendelkező karbantartási dolgozókat ütemezi a munkarendelésen végzendő munkához.
+A szakértelmekkel és bizonyítványokkal kapcsolatos követelmények beállíthatók a karbantartási feladattípusokhoz (**Eszközök kezelése** > **Beállítás** > **Feladatok** > **Karbantartási feladattípusok**) és a karbantartási szakterületekhez (**Eszközök kezelése** > **Beállítás** > **Feladatok** > **Karbantartási feladattípus szakterülete**). 
+
+A karbantartási feladattípusok és a karbantartási szakterületek a munkarendelési feladatokban választhatók ki. Ha egy karbantartási feladattípushoz vagy szakterülethez szakértelmek vagy bizonyítványok vannak kiválasztva, és ezt a karbantartási feladattípust vagy szakterületet használják egy munkarendelésben, akkor a program csak a megfelelő szakértelemmel és bizonyítvánnyal rendelkező karbantartási dolgozókat ütemezi a munkarendelésen végzendő munkához.
 

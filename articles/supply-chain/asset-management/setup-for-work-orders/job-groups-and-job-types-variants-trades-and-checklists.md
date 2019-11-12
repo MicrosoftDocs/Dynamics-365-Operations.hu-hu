@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249609"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571001"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Egy eszköztípus minden eszközhöz csatolva van. Az eszköztípusok határozzák meg, hogy a karbantartási feladattípusok (és így a karbantartási feladatok) milyen típusú eszközökkel végezhetők el. Munkarendelés létrehozásakor ki kell választania egy karbantartásifeladat-típust. Csak olyan karbantartásifeladat-típusok közül lehet választani, amely kapcsolódik az eszköztípus beállításához, amely az eszközhöz van használva.
 
@@ -59,7 +59,7 @@ Először beállítja a szükséges karbantartásifeladat-típusok kategóriáit
 
     A karbantartási feladattípus-kategóriák karbantartási feladattípusokhoz történő kapcsolása után **Feladattípusok** mező a karbantartási feladattípus kategóriához kapcsolódó karbantartási feladattípusok számát jeleníti meg.
 
-![1. ábra](media/01-setup-for-work-orders.png)
+![Karbantartási feladattípus kategóriaoldala](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Karbantartási feladattípus változat létrehozása
 
@@ -73,7 +73,7 @@ Először beállítja a szükséges karbantartásifeladat-típusok kategóriáit
 
     A **Részletek** gyorslapon a **Feladattípusok** mező mutatja, hogy a karbantartási feladattípus változathoz milyen típusú karbantartási feladattípusok vannak hozzáadva.
 
-![2. ábra](media/02-setup-for-work-orders.png)
+![Karbantartási feladattípus változatok oldala](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Karbantartási feladat szakterület létrehozása
 
@@ -94,7 +94,7 @@ Először beállítja a szükséges karbantartásifeladat-típusok kategóriáit
 
     A **Részletek** gyorslapon a **Tanúsítványok** mező mutatja, hogy a karbantartási feladattípus tanúsítványhoz milyen típusú karbantartási feladat szakértelmek vannak hozzáadva.
 
-![3. ábra](media/03-setup-for-work-orders.png)
+![Karbantartási feladat szakterület oldala](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Karbantartási-ellenőrzőlista változó létrehozása
 
@@ -115,7 +115,7 @@ Amikor karbantartási-ellenőrzőlista sorokat hoz létre az alapértelmezett ka
 6. Az **Érték** mezőben adja az érték leírását.
 7. Az **Eredmény** mezőben válassza ki a sorhoz tartozó eredményt.
 
-![4. ábra](media/04-setup-for-work-orders.png)
+![Karbantartási-ellenőrzőlista változók oldala](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Karbantartási-ellenőrzőlista sablonjának létrehozása
 
@@ -144,7 +144,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 
     A **Részletek** gyorslapon a **Csekkek** mező a sablonban található ellenőrzőlistasorok teljes számát jeleníti meg. Ez a szám tartalmazza a sablonban hivatkozott bármely meglévő sablon beágyazott sorait.
 
-![5. ábra](media/05-setup-for-work-orders.png)
+![Karbantartási-ellenőrzőlista sablonok oldala](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Karbantartásifeladat-típus létrehozása
 
@@ -167,7 +167,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 
 11. Az **Eszköztípusok** gyorslapon a karbantartási feladattípushoz hozzáadhatók eszköztípusok.
 
-![6. ábra](media/06-setup-for-work-orders.png)
+![Karbantartási feladat típusok oldala](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Karbantartási feladattípusok alapértelmezett sorai és a kapcsolódó előrejelzések, karbantartási ellenőrzőlisták, eszközök, leírások és mellékletek létrehozása
 
@@ -236,7 +236,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 31. Ha egy karbantartási feladattípust alapértelmezést szeretne másolni egy másik karbantartó feladattípus alapértelmezésre, válassza ki a karbantartási feladattípus alapértelmezés sorát, és másolja át egymásik beállításba, válassza a **Beállítás másolása** lehetőséget, majd jelölje ki a másolandó karbantartási feladattípust.
 32. Ha meg szeretné tekinteni azoknak az eszközöknek, karbantartási terveknek vagy fenntartási köröknek a listáját, amelyek jelenleg a karbantartási feladattípust alapértelmezés sort használják, válassza ki a sort, majd válassza a **Használó** lehetőséget.
 
-![7. ábra](media/07-setup-for-work-orders.png)
+![Karbantartási feladattípus alapértelmezések oldala](media/07-setup-for-work-orders.png)
 
 Amikor a rendszer kiválasztja a rendelkezésre álló karbantartási feladattípus alapértelmezést, amelyet a Munkarendelés sorában kell használni, akkor a kiválasztás az eszközön és a kapcsolódó eszköztípus beállításon alapul. Az eszközkezelés minden olyan karbantartási feladattípus alapértelmezésen végigmegy, amely ahhoz a karbantartási feladattípushoz kapcsolódik, amely kapcsolódik az eszköztípushoz, hogy megkeresse a lehetséges egyezést. Mindig a leginkább meghatározott kombinációt ellenőrzi először. Más szóval, a leginkább specifikus kombináció megtalálásához az eszközkezelés először ellenőrzi a **Szakma** mező esetleges egyezését. Ha nem talál egyezést, akkor a **Karbantartási feladat típusának változata** mezővel való egyezést ellenőrzi. Ha nem **talál egyezést, akkor ellenőrzi a karbantartási feladattípus** mező egyeztetését, és így tovább (**Szakma**, majd **Karbantartási feladattípus-változat**, majd **Eszköz**, majd **Eszköz**, majd **Modell**, majd **Gyártó**, majd **Eszköz típusa**). Ha nem talál egyezést, akkor az alapértelmezett rekord, amelyben csak a karbantartási feladattípus van kiválasztva, lesz használva.
 
@@ -257,7 +257,7 @@ Miután létrehozta a szükséges karbantartási feladattípus alapértelmezése
 4. Válasszon ki egy karbantartási feladattípus-kombinációt, hogy megtekinthesse a kapcsolódó beállításokat a karbantartási ellenőrzőlistákhoz, előrejelzésekhez és eszközökhöz. A **Karbantartási feladattípus alapértelmezései** gyorslap **Részletek** szakasza a kiválasztott karbantartó feladattípus-kombinációhoz kapcsolódó kapcsolódó karbantartási ellenőrzőlisták, előrejelzett órák, cikkek stb. számát jeleníti meg.
 5. A kiválasztott karbantartási feladattípus részleteinek megtekintéséhez válassza a **Karbantartási feladattípusok** elemet.
 
-![8. ábra](media/08-setup-for-work-orders.png)
+![Eszközkarbantartási feladattípusok oldala](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Karbantartási feladatoktípusok előrejelzéseinek automatikus frissítése
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84609106fc3daafbbfed6f947df4524160bd7450
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: cf23d4b01729e6c1ece633b009f033b9d74bc7fe
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783320"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571553"
 ---
 # <a name="introduction-to-assets"></a>Bevezetés az eszközökbe
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ez a témakör áttekintést ad az Eszközkezelésben használt eszközökről. Az *Eszköz* bármilyen típusú berendezés, például gép vagy gépalkatrész, amely karbantartást, szervizt vagy javítást igényel.
 

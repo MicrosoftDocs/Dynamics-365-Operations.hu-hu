@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874716"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569800"
 ---
 # <a name="work-order-lifecycle-states"></a>Munkarendelés életciklus-állapotai
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A Munkarendelés életciklusának állapotai határozzák meg, hogy a Munkarendelés milyen állapotokat vehet fel. Ilyenek például: **Létrehozva**, **Ütemezve**, **Folyamatban**, és **Befejezve**. A Munkarendelés életciklusával kapcsolatos állapotok manuálisan is frissíthetők egy munkarendelésen, vagy automatikusan módosíthatók (például a Munkarendelés ütemezése során).
 
@@ -38,7 +38,7 @@ A munkarendelésekhez szükséges munkarendelés életciklus-állapotait a megfe
 
 A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklus-állapota** oldal **Általános** gyorslapjának **Munkarendelés** és **Ütemezés** szakaszaiban (**Eszközkezelés** \> **Beállítás** \> **Munkarendelések** \> **Életciklus-állapotok**).
 
-![1. ábra](media/09-setup-for-work-orders.png)
+![Munkarendelés életciklus-állapota oldal](media/09-setup-for-work-orders.png)
 
 | Beállítás neve                   | Leírás |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklu
     - Ha a **karbantartás miatti üzemkimaradás** beállítása **igen** értékre van állítva annál az életciklus-állapotnál, amelyre a Munkarendelés frissítve van, akkor a karbantartás miatti üzemkimaradás ellenőrzése a munkarendeléshez kapcsolódó eszközön történik. Ha regisztrálták a karbantartás miatti üzemkimaradást, de nincs **Befejezve** regisztráció, akkor megjelenik egy üzenet, amikor a munkarendelést az adott életciklus-állapotra frissítik.
     - Ha a szokásos projektbeállításban nem szerepel az összes fázis, amelyre szükség van az Eszközkezelés beállításához, beállíthat felhasználó által meghatározott projektfázisokat a **Projektfázisok** lapon a **Projektvezetési és könyvelési paraméterek** oldalon. Az alábbi ábrán látható a **Projektvezetési és könyvelési paraméterek** oldal **Projektfázis** lapja.
 
-    ![2. ábra](media/10-setup-for-work-orders.png)
+    ![Állítsa be a projektfokozatokat a különböző projekttípusokhoz oldal](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Ha az életciklus-állapot inaktív, amelyre frissíti a munkarendelést, a munkarendeléshez kapcsolódó, még közzé nem tett naplók automatikusan törlődnek. Ez a viselkedés segít a nem használt adatok automatikus tisztításának biztosításában. (Az életciklus-állapot inaktív, ha az **aktív** beállítás **nem** értékre van állítva a **Munkarendelés életciklus-állapota** lap **Általános** gyorslapján.)
@@ -114,7 +114,7 @@ A típusok használatának oka az, hogy ha egy típust például egy munkarendel
 
 A következő ábra a Munkarendelés-típusok, az életciklusmodellek és az életciklus-állapotok közötti kapcsolatot mutatja.
 
-![3. ábra](media/11-setup-for-work-orders.png)
+![A Munkarendelés típusa lap és a Munkarendelés életciklusmodellek összehasonlítási oldal](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Munkarendelés életciklusmodelljei
 
@@ -138,4 +138,4 @@ Miután létrehozta a munkarendelésekhez szükséges munkarendelési életciklu
 8. A **Nem ütemezett életciklus-állapot** mezőben válassza ki azt az életciklus-állapotot, amelyet mindig ki kell jelölni egy munkarendeléshez, ha a Munkarendelés ütemezése törlődik.
 9. Mentse el a munkarendelés életciklusmodelljét.
 
-![4. ábra](media/15-setup-for-work-orders.png)
+![Munkarendelés életciklusmodelljei oldal](media/15-setup-for-work-orders.png)

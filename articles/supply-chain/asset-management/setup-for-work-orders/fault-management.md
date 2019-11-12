@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 48c90a8b776cc16804de8e20ada7d8ca347fa5b9
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 78c062f9982ca7b18fa00d60928089d09a5d552d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874739"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570955"
 ---
 # <a name="fault-management"></a>Hibakezelés
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Az Eszközkezelés modulban használhatja a hibatervezőt hibatünetek, a meghibásodási területeket és a hibatípusok beállításához az eszköztípusokhoz. Ily módon az eszközökön észlelt hibák kezelhetők lesznek. Ezenkívül a hibák oka és a hibák elhárításával kapcsolatos javaslatok a munkarendelésen regisztrálhatók.
 
@@ -109,7 +109,7 @@ A hibatervezőben be lehet állítani a tárgyieszköz-típusokra vonatkozó hib
 
 7. A változtatások mentéséhez válassza a **Mentés** elemet.
 
-![1. ábra](media/21-setup-for-work-orders.png)
+![Hibatervező oldal](media/21-setup-for-work-orders.png)
 
 ## <a name="create-fault-causes"></a>Hibaokok létrehozása
 

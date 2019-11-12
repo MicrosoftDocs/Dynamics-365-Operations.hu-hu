@@ -3,7 +3,7 @@ title: A minimum-maximum feltöltési folyamat beállítása
 description: Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924447"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559189"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>A minimum-maximum feltöltési folyamat beállítása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja. Amikor a készlet a minimális szint alá esik, a rendszer a hely feltöltéséhez hozza létre munkát. Az eljárás azt is bemutatja, hogy hogyan lehet a rögzített kitárolási helyek segítségével az újratelepítést engedélyezni, ha a készlet a minimális szint alá esik, és hogyan lehet a feltöltési folyamatot engedélyezni a rendszeres futtatáshoz egy kötegelt feladat használatával. Ezeket a feladatokat jellemzően egy raktári vezető végzi el. A megjegyzések példaértékeinek használatával futtathatja ezt az eljárást az USMF bemutató vállalatnál, vagy a saját adatait vagy futtathatja. Ha a saját adatait használja, győződjön meg arról, hogy egy olyan raktárral rendelkezik, amely engedélyezve van a Raktárkezelési folyamatok számára.
+Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja. Amikor a készlet a minimális szint alá esik, a rendszer a hely feltöltéséhez hozza létre munkát. Az eljárás azt is bemutatja, hogy hogyan lehet a rögzített kitárolási helyek segítségével az újratelepítést engedélyezni, ha a készlet a minimális szint alá esik, és hogyan lehet a feltöltési folyamatot engedélyezni a rendszeres futtatáshoz egy kötegelt feladat használatával. Ezeket a feladatokat jellemzően egy raktári vezető végzi el. Az alábbi példaértékek használatával futtathatja ezt az eljárást az USMF bemutató vállalatnál, vagy a saját adatait vagy futtathatja. Ha a saját adatait használja, győződjön meg arról, hogy egy olyan raktárral rendelkezik, amely engedélyezve van a Raktárkezelési folyamatok számára.
 
 
 ## <a name="create-a-fixed-picking-location"></a>A fix kitárolási helyek létrehozása

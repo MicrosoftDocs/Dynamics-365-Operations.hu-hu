@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult szolgáltatások a Finance and Operations meg
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70bb8404c5b0e2422948d0b89311c384e3686710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181082"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658690"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban
 
@@ -38,13 +38,42 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A Finance and Operations 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát. Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.
 
-> A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
+A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
 
+## <a name="finance-1007-with-platform-update-31"></a>A Finance 10.0.7, 31-es platform frissítéssel
+
+### <a name="chinese-voucher-types-without-account-groups-selection"></a>A számla-csoportok kiválasztása nélküli kínai bizonylattípusok
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A csoportfiók kiválasztásához tartozó funkció módosult. |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2020. december 1-túl a program nem támogatja a kínai bizonylattípus-beállításokat a Számalcsoportok kiválasztása nélkül. További részleteket az új funkció kialakításáról a 10.0.7 újdonságai részben találhat |
 
 ## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations, 10.0.6, 30-as platformfrissítéssel
 
-> [!IMPORTANT]
-> A Dynamics 365 for Finance and Operations 10.0.6 30-ös platformfrissítéssel a megcélzott felhasználók számára elérhető egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-and-ops/get-started/public-preview-releases.md) oldalon találhat.
+
+### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Windows kivezeti az SHA1-tanúsítványok használatát, lásd: [SHA1 tanúsítványok kényszerítése a Windowsban](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2020. április 1-től a fejlesztőknek az új API-t kell használniuk. |
+
+### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Windows kivezeti az SHA1-tanúsítványok használatát, lásd: [SHA1 tanúsítványok kényszerítése a Windowsban](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Platform |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2020. április 1-től a fejlesztőknek az új API-t kell használniuk. |
+
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
@@ -153,7 +182,7 @@ Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a 
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A funkciót a rendszer mindig engedélyezi a paraméter eltávolítása után. |
 | **Felváltotta másik szolgáltatás?**   | Szám A funkció, amely támogatja a projektalapú értékesítési rendelkéseket, amelyek több finanszírozási forrással rendelkeznek, mindig engedélyezve lesz.   |
-| **Érintett területek**         |A **Több finanszírozási forrással rendelkező projektekhez tartozó értékesítési rendelések engedélyezése** paraméter el lesz távolítva. Paraméter eltávolításakor a következő metódusok módosulnak: **ctrlSalesOrderTable** metódus a **ProjStatusType** osztályban, az **ellenőrzés** metódus a **ProjId** mezőre vonatkozóan, és a **futtatás** metódus a **SalescreateOrder** képernyőn. A kövektező metódusok elavulnak a paraméter eltávolításakor: **IsSalesOrderAllowedForMultipleFundingSources** a **ProjTable** táblafájlban, a **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** metódus a **ProjTable** táblafájlban, az **AllowSalesOrdersForMultipleFundingSources** adatmező a **ProjParameters** képernyőn és a **ProjParameterEntity** fájlokban, az **IsAssociatedToMultipleFundingSourcesContract** privát metódus a**ProjTable** táblafájlban. |
+| **Érintett területek**         |A **Több finanszírozási forrással rendelkező projektekhez tartozó értékesítési rendelések engedélyezése** paraméter el lesz távolítva. Paraméter eltávolításakor a következő metódusok módosulnak: **ctrlSalesOrderTable** metódus a **ProjStatusType** osztályban, az **ellenőrzés** metódus a **ProjId** mezőre vonatkozóan, és a **futtatás** metódus a **SalescreateOrder** képernyőn. A kövektező metódusok elavulnak a paraméter eltávolításakor: **IsSalesOrderAllowedForMultipleFundingSources** a **ProjTable** táblafájlban, a **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** metódus a **ProjTable** táblafájlban, az **AllowSalesOrdersForMultipleFundingSources** adatmező a **ProjParameters** képernyőn és a **ProjParameterEntity** fájlokban, az **IsAssociatedToMultipleFundingSourcesContract** privát metódus a **ProjTable** táblafájlban. |
 | **Telepítési beállítás**              | Összes  |
 | **Állapot**                         | Az elavulást a 2020. áprilisi kiadási hullámra tervezzük. |
 
@@ -308,7 +337,7 @@ Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásb
 ## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3, 12-es platformfrissítéstől eltávolított.
 
 ### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
-2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).  
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. A további tudnivalókat lásd: [Termékajánlások áttekintése](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -413,7 +442,7 @@ A felhasználók a kormányzati portálról tölthetik le.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlatok 
-2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](../../retail/personalized-product-recommendations.md).  
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. A további tudnivalókat lásd: [Termékajánlások áttekintése](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -445,7 +474,7 @@ A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy k�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció.       |
-| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](../../supply-chain/warehousing/install-configure-warehousing-app.md) című részben talál. |
+| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](../../../supply-chain/warehousing/install-configure-warehousing-app.md) című részben talál. |
 | **Érintett területek**         | Raktárkezelés, szállításkezelés     |
 | **Telepítési beállítás**              | A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.               |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.   |
@@ -937,7 +966,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel. |
-| **Felváltotta másik szolgáltatás?**   | Common Data Service                                      |
+| **Felváltotta másik szolgáltatás?**   | Common data service                                      |
 | **Érintett területek**         | Connector for Dynamics                         |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                           |
 
@@ -1215,7 +1244,7 @@ A Termékszerkesztő használatával korábban értékesítési rendelésekből,
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott. Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.  |
-| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](../../supply-chain/pim/build-product-configuration-model.md). |
+| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Érintett területek**         | Termékinformációk kezelése, Értékesítés és marketing  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.      |
 

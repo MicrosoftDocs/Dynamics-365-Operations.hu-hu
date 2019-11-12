@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874785"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571737"
 ---
 # <a name="update-maintenance-budgets"></a>Karbantartási költségvetések frissítése
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 A **Karbantartási költségvetés sorai** oldalon látható az összes költségvetési sor, amelyet a **Karbantartási költségvetések** oldalon kiválasztott költségvetéshez hoztak létre. (További információ a [Karbantartási költségvetések létrehozása](create-maintenance-budget.md) című témakörben olvasható.) A karbantartási költségvetés sorainak újraszámítása és helyesbítése a karbantartási költségvetés jóváhagyása előtt történik. A költségvetési időszak lejártát követően és a költségek az Eszközkezelés modulban való feladása után a költségvetési sorokat frissítheti a tényleges költségekkel.
 

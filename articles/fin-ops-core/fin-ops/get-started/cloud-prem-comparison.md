@@ -3,7 +3,7 @@ title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
 author: sericks007
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,115 +17,158 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 516bc1b5b27101a4b582c4d2d12756750cf353d2
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
+ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537880"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2573930"
 ---
-# <a name="comparison-of-cloud-and-on-premises-features"></a>Felhő és helyszíni szolgáltatások összehasonlítása
+# <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy mindegyik funkció elérhető-e ezekben a termékekben:
+Ez a témakör a felhőalapú és helyszíni szolgáltatások összehasonlítását mutatja be a következő alkalmazások számára:
 
-+ Finance and Operations (felhő)
-+ Finance + Operations (helyszíni)
+- [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
+- [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
+- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
+- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
 
-A következő táblázatokban a termékterületek listája található. A felhő és helyszíni támogatás a szolgáltatás egészére nézve van felsorolva. Ha bizonyos szolgáltatások eltérnek az általános területtől, ezek a szolgáltatások külön sorban jelennek meg a szolgáltatás oszlopban.
+A [fejlesztési és adminisztrációs szolgáltatásokkal](cloud-prem-comparison.md#development-and-administration-features) kapcsolatos információk is itt érhetők el.
 
-## <a name="finance-and-operations-applications"></a>Finance and Operations alkalmazások
+A következő táblázatokban az alkalmazási területek listája található. A felhő és helyszíni támogatás a szolgáltatás egészére nézve van felsorolva. Ha bizonyos szolgáltatások eltérnek az általános területtől, ezek a szolgáltatások külön sorban jelennek meg a szolgáltatás oszlopban.
 
-| Terület | Szolgáltatás | Felhőbeli | Helyszíni |
-|---|---|---|---|
-| Megfelelés és tanúsítványok | | Igen | Igen |
-| | SOC 1 1. típusú tanúsítvány | Igen | Szám |
-| Költségkönyvelés | | Igen | Igen |
-| | Költségkönyvelés tartalomcsomag Power BI szolgáltatáshoz | Igen | Szám |
-| | Költségkönyvelés munkaterülete mobil alkalmazáshoz | Igen | Szám |
-| Költségkezelés | | Igen | Igen |
-| | Költségkezelési tartalomcsomag Power BI-hez | Igen | Szám |
-| Adatok integrálása és kezelése | | Igen | Igen |
-| | Konfigurációs alapú kiterjesztés | Igen | Nincs |
-| | Adatok exportálása a saját adatraktárba | Igen | Igen |
-| | Növekményes frissítések exportálásának engedélyezése egy adatentitásba | Igen | Nincs |
-| | Adatintegrálások | Igen | Igen |
-| Dokumentumkezelés | | Igen| Igen |
-| Pénzgazdálkodás | | Igen | Igen |
-| Súgó | | Igen | Nincs |
-| Emberi erőforrások | | Igen | Igen |
-| Intelligencia | | Igen | Igen |
-| | Elektronikus jelentés (EJ) | Igen | Igen |
-| | ER: Integráció az LCS rendszerrel | Igen | Nem |
-| | ER: Integráció a SharePoint szolgáltatással | Igen | Nem |
-| | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással | Igen | Nem |
-| | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem | Igen |
-| | PowerBI.com integrálása | Igen | Nem |
-| | Analitikus munkaterületek | Igen | Nincs |
-| | Intelligens üzleti folyamat: ajánlások | Igen | Szám |
-| | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával | Igen | Szám |
-| | Az SQL Server Reporting Services (SSRS) támogatja a méretezést | Igen | Nincs |
-| | A telemetria-adatokat átviszik a felhőbe | Igen | Nincs |
-| Készletgazdálkodás | | Igen | Igen |
-| Lifecycle Services | | Igen | Igen |
-| | Konfigurálható üzleti folyamatok | Igen | Nincs |
-| Honosítások | | Igen | Igen |
-| Gyártás | | Igen | Igen |
-| Alaptervezés és előrejelzés | | Igen | Igen |
-| Mobilalkalmazás, munkaterületek és platform | | Igen | Igen |
-| Office-integráció | | Igen | Igen |
-| Szervezeti adminisztráció | | Igen | Igen |
-| Payroll | | Igen | Igen |
-| | Közvetlen átutalás | Igen | Nincs |
-| Beszerzés és forrás | | Igen | Igen |
-| | Kiadás külső katalógusba beszerzési igénylésből | Igen | Szám |
-| | Beszerzési és ráfordítási elemzés Power BI jelentések | Igen | Szám |
-| Termékinformációk kezelése | | Igen | Igen |
-| Alaptermékadatok | | Igen | Igen |
-| Termelés | | Igen | Igen |
-| | Termelési teljesítmény Power BI jelentések | Igen | Szám |
-| Projektvezetés és könyvelés | | Igen | Igen |
-| Értékesítés | | Igen | Igen |
-| | Értékesítési és jövedelmezőségi teljesítmény Power BI jelentések | Igen | Szám |
-| Biztonság | | Igen | Igen |
-| Szolgáltatáskezelés | | Igen | Igen |
-| Ellátásilánc-kezelés | | Igen | Igen |
-| Szállításkezelés | | Igen | Igen |
-| Szállítói együttműködés | | Igen | Nincs |
-| Raktárkezelés | | Igen | Igen |
-| | Raktári mobilalkalmazás | Igen | Igen |
-| | Raktárkezelés Power BI jelentések | Igen | Szám |
-| Webes ügyfél | | Igen | Igen |
-| | Feladatrögzítő – Feladatrögzítések mentése vagy betöltése a BPM-tárból | Igen | Nincs |
-| Támogatás | | Igen | Igen |
-| | A Súgó és támogatás menüvel hozzáférés a támogatáshoz | Igen | Nincs |
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-### <a name="development-and-administration"></a>Fejlesztés és felügyelet
+| **Terület**             | **Szolgáltatás**                | **Felhőbeli** | **Helyszíni** |
+|---------------------|-----------------------------|-----------|-----------------|
+| Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
+|                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Nem              |
+| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
+|                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
+|                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Nincs              |
+|                                      | Adatintegrálások                                                                         | Igen       | Igen             |
+| Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
+| Pénzgazdálkodás                 |                                                                                           | Igen       | Igen             |
+| Súgó                                 |                                                                                           | Igen       | Nincs              |
+| Emberi erőforrások                      |                                                                                           | Igen       | Igen             |
+| Intelligencia                         |                                                                                           | Igen       | Igen             |
+|                                      | Elektronikus jelentés (EJ)                                                                 | Igen       | Igen             |
+|                                      | ER: Integráció az LCS rendszerrel                                                                  | Igen       | Nem              |
+|                                      | ER: Integráció a SharePoint szolgáltatással                                                           | Igen       | Nem              |
+|                                      | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással                              | Igen       | Nem              |
+|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem        | Igen             |
+|                                      | PowerBI.com integrálása                                                              | Igen       | Nem              |
+|                                      | Integráció a PowerBI Desktop rendszerrel                                                          | Nem        | Igen             |
+|                                      | Elemzési munkaterületek                                                                     | Igen       | Nem              |
+|                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
+|                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
+|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nem              |
+|                                      | A telemetria-adatokat átviszik a felhőbe                                                   | Igen       | Nem              |
+| Lifecycle Services                   |                                                                                           | Igen       | Igen             |
+|                                      | Konfigurálható üzleti folyamatok                                                           | Igen       | Nem              |
+| Honosítások                        |                                                                                           | Igen       | Igen             |
+| Mobilalkalmazás, munkaterületek és platform |                                                                                           | Igen       | Igen             |
+| Office-integráció                   |                                                                                           | Igen       | Igen             |
+| Szervezeti adminisztráció          |                                                                                           | Igen       | Igen             |
+| Bérlista                              |                                                                                           | Igen       | Igen             |
+|                                      | Közvetlen átutalás                                                                            | Igen       | Nem              |
+| Projektvezetés és könyvelés    |                                                                                           | Igen       | Igen             |
+| Biztonság                             |                                                                                           | Igen       | Igen             |
+| Szolgáltatáskezelés                   |                                                                                           | Igen       | Igen             |
+| Webes ügyfél                           |                                                                                           | Igen       | Igen             |
+|                                      | Feladatrögzítő – Feladatrögzítések mentése vagy betöltése a BPM-tárból                         | Igen       | Nincs              |
+| Támogatás                              |                                                                                           | Igen       | Igen             |
+|                                      | A Súgó és támogatás menüvel hozzáférés a támogatáshoz                                             | Igen       | Nem              |
 
-| Terület | Szolgáltatás | Felhő | Helyszíni |
-|---|---|---|---|
-| Felépítés és tesztelés | | Igen | Igen |
-| Bővíthetőség | | Igen | Igen |
-| Megfigyelés és telemetria | | Igen | Igen |
-| Platform kompatibilitása | | Igen | Igen |
-| Karbantartás | | Igen | Igen |
-| | Szolgáltatási környezetek | Igen | Nincs |
-| Trace Parser és PerfTimer | | Igen | Nincs |
-| Frissítés | | Igen | Igen |
-| | Frissítés | Igen | Szám |
-| | Frissítés és a korábbi verziók támogatása | Igen | Nem |
-| Visual Studio fejlesztés | | Igen | Igen |
+## <a name="dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management 
 
-### <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
-Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../../retail/retail-onprem.md).
+| **Terület**                | **Szolgáltatás**             | **Felhőbeli** | **Helyszíni** |
+|-------------------------|-------------------|-----------|-----------------|
+| Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
+|                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Szám              |
+| Költségkönyvelés                      |                                                                                           | Igen       | Igen             |
+|                                      | Költségkönyvelés tartalomcsomag Power BI szolgáltatáshoz                                                 | Igen       | Szám              |
+|                                      | Költségkönyvelés munkaterülete mobil alkalmazáshoz                                                  | Igen       | Szám              |
+| Költségkezelés                      |                                                                                           | Igen       | Igen             |
+|                                      | Költségkezelési tartalomcsomag Power BI-hez                                                 | Igen       | Szám              |
+| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
+|                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
+|                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Nem              |
+|                                      | Adatintegrálások                                                                         | Igen       | Igen             |
+| Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
+| Súgó                                 |                                                                                           | Igen       | Nem              |
+| Intelligencia                         |                                                                                           | Igen       | Igen             |
+|                                      | Elektronikus jelentés (EJ)                                                                 | Igen       | Igen             |
+|                                      | ER: Integráció az LCS rendszerrel                                                                  | Igen       | Nem              |
+|                                      | ER: Integráció a SharePoint szolgáltatással                                                           | Igen       | Nem              |
+|                                      | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással                              | Igen       | Nem              |
+|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem        | Igen             |
+|                                      | PowerBI.com integrálása                                                              | Igen       | Nem              |
+|                                      | Integráció a PowerBI Desktop rendszerrel                                                          | Nem        | Igen             |
+|                                      | Elemzési munkaterületek                                                                     | Igen       | Nem              |
+|                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
+|                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
+|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nincs              |
+|                                      | A telemetria-adatokat átviszik a felhőbe                                                   | Igen       | Nincs              |
+| Készletgazdálkodás                 |                                                                                           | Igen       | Igen             |
+| Lifecycle Services                   |                                                                                           | Igen       | Igen             |
+|                                      | Konfigurálható üzleti folyamatok                                                           | Igen       | Nincs              |
+| Honosítások                        |                                                                                           | Igen       | Igen             |
+| Gyártás                        |                                                                                           | Igen       | Igen             |
+| Alaptervezés és előrejelzés      |                                                                                           | Igen       | Igen             |
+| Mobilalkalmazás, munkaterületek és platform |                                                                                           | Igen       | Igen             |
+| Office-integráció                   |                                                                                           | Igen       | Igen             |
+| Szervezeti adminisztráció          |                                                                                           | Igen       | Igen             |
+| Beszerzés és forrás             |                                                                                           | Igen       | Igen             |
+|                                      | Kiadás külső katalógusba beszerzési igénylésből                                   | Igen       | Szám              |
+|                                      | Beszerzési és ráfordítási elemzés Power BI jelentések                                                  | Igen       | Szám              |
+| Termékinformációk kezelése       |                                                                                           | Igen       | Igen             |
+| Alaptermékadatok                  |                                                                                           | Igen       | Igen             |
+| Termelés                           |                                                                                           | Igen       | Igen             |
+|                                      | Termelési teljesítmény Power BI jelentések                                                   | Igen       | Szám              |
+| Projektvezetés és könyvelés    |                                                                                           | Igen       | Igen             |
+| Értékesítés                                |                                                                                           | Igen       | Igen             |
+|                                      | Értékesítési és jövedelmezőségi teljesítmény Power BI jelentések                                      | Igen       | Szám              |
+| Biztonság                             |                                                                                           | Igen       | Igen             |
+| Szolgáltatáskezelés                   |                                                                                           | Igen       | Igen             |
+| Ellátásilánc-kezelés              |                                                                                           | Igen       | Igen             |
+| Szállításkezelés            |                                                                                           | Igen       | Igen             |
+| Szállítói együttműködés                 |                                                                                           | Igen       | Nincs              |
+| Raktárkezelés                 |                                                                                           | Igen       | Igen             |
+|                                      | Raktári mobilalkalmazás                                                                      | Igen       | Igen             |
+|                                      | Raktárkezelés Power BI jelentések                                                              | Igen       | Szám              |
+| Webes ügyfél                           |                                                                                           | Igen       | Igen             |
+|                                      | Feladatrögzítő – Feladatrögzítések mentése vagy betöltése a BPM-tárból                         | Igen       | Nincs              |
+| Támogatás                              |                                                                                           | Igen       | Igen             |
+|                                      | A Súgó és támogatás menüvel hozzáférés a támogatáshoz                                             | Igen       | Nem              |
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent
+## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-| Terület | Szolgáltatás | Felhőbeli | Helyszíni |
-|---|---|---|---|
-| Összes Talent terület | Összes Talent funkció | Igen | Nincs |
+Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
 
-## <a name="additional-resources"></a>További erőforrások
+## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 
-- [Az on-premises telepítéseknél nem elérhető funkciók](features-not-implemented-on-prem.md)
+| **Terület**         | **Szolgáltatás**         | **Felhőbeli** | **Helyszíni** |
+|------------------|---------------------|-----------|-----------------|
+| Összes Talent terület | Összes Talent funkció | Igen       | Nem              |
+
+## <a name="development-and-administration-features"></a>Fejlesztési és adminisztrációs funkciók
+
+| **Terület**                   | **Szolgáltatás**                               | **Felhőbeli** | **Helyszíni** |
+|----------------------------|-------------------------------------------|-----------|-----------------|
+| Felépítés és tesztelés             |                                           | Igen       | Igen             |
+| Bővíthetőség              |                                           | Igen       | Igen             |
+| Megfigyelés és telemetria   |                                           | Igen       | Igen             |
+| Platform kompatibilitása     |                                           | Igen       | Igen             |
+| Karbantartás                  |                                           | Igen       | Igen             |
+|                            | Szolgáltatási környezetek                    | Igen       | Nincs              |
+| Trace Parser és PerfTimer |                                           | Igen       | Nincs              |
+| Frissítés                    |                                           | Igen       | Igen             |
+|                            | Frissítés                                   | Igen       | Szám              |
+|                            | Frissítés és a korábbi verziók támogatása | Igen       | Nem              |
+| Visual Studio fejlesztés  |                                           | Igen       | Igen             |
+
