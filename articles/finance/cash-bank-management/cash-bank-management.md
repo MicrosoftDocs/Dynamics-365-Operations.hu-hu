@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175956"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772582"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelési kezdőlap
 
@@ -49,36 +49,36 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 ### <a name="bank-reconciliation"></a>Banki egyeztetés
 
 -   [Továbbfejlesztett banki egyeztetés – áttekintés](advanced-bank-reconciliation-overview.md)
--   [Továbbfejlesztett banki egyeztetés konfigurálása](configure-advanced-bank-reconciliation.md)
--   [Továbbfejlesztett banki egyeztetés importálásának beállítása](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Továbbfejlesztett banki egyeztetés beállítási folyamata](configure-advanced-bank-reconciliation.md)
+-   [Továbbfejlesztett banki egyeztetés importálási folyamata](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával](reconcile-bank-statements-advanced-bank-reconciliation.md)
--   [Banki egyeztetési szabályok beállítása](set-up-bank-reconciliation-matching-rules.md)
+-   [Banki egyeztetés egyeztetési szabályainak beállítása](set-up-bank-reconciliation-matching-rules.md)
 
 
-## <a name="accounts-payable-payments-and-settlements"></a>Kötelezettségek és kiegyenlítések
+## <a name="accounts-payable-payments-and-settlements"></a>Kötelezettségek kifizetései és kiegyenlítései
 -   [A Kötelezettségek modul központosított kifizetései](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Szállítói számlák létrehozása fizetési javaslat alapján](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Szállítói kifizetések létrehozása fizetési javaslat használatával](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Szállítói kifizetés sztornózása](../accounts-payable/reverse-vendor-payment.md)
 -   [Szállítói kifizetések részösszegre](../accounts-payable/vendor-payments-partial-amount.md)
--   [Előlegszámlák és előlegek áttekintése](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Eset: Részleges szállítói fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Eset: A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Eset: részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Eset: szállítói kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Eset: A szállítói kifizetésre vonatkozóan kiszámított engedménynél nagyobb engedmény alkalmazása](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Eset: készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Előlegszámlák és előlegek](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Részleges szállítói kifizetés és a teljes végső kifizetés kiegyenlítése az engedmény dátuma előtt](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Részleges szállítói kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Részleges szállítói kifizetés kiegyenlítése, amely több engedményes időszakkal rendelkezik](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [A szállítói kifizetésre vonatkozóan kiszámított engedménynél nagyobb engedmény alkalmazása](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményes időszakon kívül](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Kinnlevőség-kifizetések és kiegyenlítések
 -   [A Kinnlevőségek modul központosított kifizetései](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [Vevői kifizetések részösszegre](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Visszatérítés vevőknek](../accounts-receivable/reimburse-customers.md)
--   [Eset: Automatikus kiegyenlítés és rangsorolás](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Eset: Készpénzfizetési engedmény kezelése túlfizetések esetén](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Eset: Részleges vevői fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Eset: Az ügyfél az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Eset: részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Eset: részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Eset: Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automatikus kiegyenlítés és rangsorolás](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Készpénzfizetési engedmény kezelése túlfizetések esetén](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Részleges vevői kifizetés és a teljes végső kifizetés kiegyenlítése az engedmény dátuma előtt](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Részleges vevői kifizetés kiegyenlítése, amely több engedményes időszakkal rendelkezik](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Több, eltérő engedményes időszakokon átívelő számla kiegyenlítése egyetlen vevői kifizetéssel](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,7 +86,7 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658736"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772237"
 ---
 # <a name="accounts-payable-home-page"></a>Kötelezettségek kezdőlap
 
@@ -41,7 +41,7 @@ Megadhat szállítói számlákat kézzel, vagy egy adatentitáson keresztül el
 
 Lehetőség van szállítócsoportok, szállítók, feladási profilok, különböző fizetési lehetőségek, a szállítókra vonatkozó paraméterek, árak és engedmények, költségek, szállítások és célok, kötelezvények, valamint egyéb kötelezettségadatok beállítására. 
 
-[Kötelezettségek konfigurálása](accounts-payable-overview.md)
+[Kötelezettségek konfigurálása – áttekintés](accounts-payable-overview.md)
 
 [Könyvelési felosztások és analitikusnapló-bejegyzések szállítói számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,19 +51,19 @@ Lehetőség van szállítócsoportok, szállítók, feladási profilok, különb
 
 A Kötelezettségek modulban nyomon követheti a számlákat és a szállítóknak fizetendő költségeket.
 
-[Kötelezettségek számlaegyeztetése](accounts-payable-invoice-matching.md)
+[Kötelezettségek számlaegyeztetése – áttekintés](accounts-payable-invoice-matching.md)
 
 [Szállítói feladási profilok](vendor-posting-profiles.md)
 
-[A kötelezettségek számlaegyeztetésének hitelesítésbeállítása](tasks/set-up-accounts-payable-invoice-matching-validation.md)
+[A Kötelezettségek számlaegyeztetéséhez kapcsolódó hitelesítés beállítása](tasks/set-up-accounts-payable-invoice-matching-validation.md)
 
 [Háromirányú egyeztetési irányelvek](three-way-matching-policies.md)
 
 [Számlaegyeztetés és vállalatközi beszerzési rendelés](invoice-matching-intercompany-purchase-orders.md)
 
-[Számlaösszegek számlaegyeztetési eltéréseinek feloldása](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Számlaösszegek számlaegyeztetési eltéréseinek feloldása – áttekintés](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
-[Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára](default-offset-accounts-vendor-invoice-journals.md)
+[Alapértelmezett ellenszámlák szállítóiszámla-naplókhoz és számlajóváhagyási naplókhoz](default-offset-accounts-vendor-invoice-journals.md)
 
 [Mobil számlajóváhagyások](mobile-invoice-approvals.md)
 
@@ -91,13 +91,13 @@ A rendszerben definiált kifizetéstípusokat, például a csekket, az elektroni
 
 [A szállítói kifizetésre vonatkozóan kiszámított engedménynél nagyobb engedmény alkalmazása](take-discount-more-calculated-discount-vendor-payment.md)
 
-[Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményes időszakon kívül](take-cash-discount-outside-cash-discount-timeframe.md)
+[Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedmény időszakán kívül](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronikus jelentéskészítés szállítói csekkekhez](electronic-reporting-sample-vendor-checks.md)
+[Elektronikus jelentéskészítési minta szállítói csekkekhez](electronic-reporting-sample-vendor-checks.md)
 
 [Szállítói kifizetés sztornózása](reverse-vendor-payment.md)
 
-[Előlegszámlák és előlegek áttekintése](prepayments-invoices-vs-prepayments.md)
+[Előlegszámlák és előlegek](prepayments-invoices-vs-prepayments.md)
 
 [A Kötelezettségek modul központosított kifizetései](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ A következő témakörök a kiegyenlítésekről nyújtanak információkat. A 
 
 [Kiegyenlítés konfigurálása](../cash-bank-management/configure-settlement.md)
 
-[Részleges szállítói kifizetés rendezése az engedmény dátuma előtt](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Részleges szállítói kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Részleges szállítói kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Részleges szállítói kifizetés vagy végleges kifizetés rendezése az engedmény dátuma előtt](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Részleges szállítói kifizetés és a teljes végső kifizetés kiegyenlítése az engedmény dátuma előtt](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Egyetlen bizonylat több vevő- vagy szállítórekorddal](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ A következő témakörök a kiegyenlítésekről nyújtanak információkat. A 
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 

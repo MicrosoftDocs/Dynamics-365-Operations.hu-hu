@@ -16,19 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6e2eafc6785aaf9bc7421bc80c90fa4a7f98a2d4
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570310"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693020"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Értékesítési rendelések bevételelszámolása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> A „Bevétel elszámolása” funkció nem kapcsolható be a Funkciókezelés helyen. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
+> A Bevételelszámolás funkció nem kapcsolható be a Funkciókezelés segítségével. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
 Ez a témakör az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az adott értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el. Az értékesítési rendelés idő- és anyagelszámolású projekttel is létrehozható.
 

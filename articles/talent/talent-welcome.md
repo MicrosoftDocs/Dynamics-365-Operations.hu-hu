@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552950"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812764"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Üdvözöljük a Dynamics 365 Talent szolgáltatásban!
 
 [!include [banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
+A Microsoft Dynamics 365 Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
 
 A Talent rendszerrel a következő feladatok végezhetők el:
 
@@ -50,13 +50,13 @@ Fedezze fel a Dynamics 365 Talent szolgáltatás lehetőségeit a [Kezdeti lép�
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrások kezelési stratégiájának kialakítása
 ---------------------------------------------------------
 
-A Talent rendszerben dolgozva különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek azon alapvető elemek közé tartoznak, amelyeket konfigurálni szükséges. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek feladatokhoz vannak társítva.
+A Talent rendszerben dolgozva különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek azon alapvető elemek közé tartoznak, amelyeket konfigurálni szükséges. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek állásokhoz vannak társítva.
 
--   [Munkaerő szervezése részlegek, feladatok és beosztások szerint](departments-jobs-positions.md)
--   [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
--   [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
+-   [Munkaerő szervezése részlegek, állások és beosztások szerint](departments-jobs-positions.md)
+-   [Vállalatfüggő személyzeti (HR) paraméterek beállítása](set-up-company-specific-hr-parameters.md)
+-   [Több jogi személyre kiterjedő személyzeti (HR) paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
 -   [Személyzeti műveletekkel kapcsolatos GYIK](personnel-actions-faq.md)
--   [Szabadság és távollét áttekintése](leave-absence-overview.md)
+-   [Szabadság és távollét kezelése](leave-absence-overview.md)
 -   [A Dynamics 365 Talent használata: Szabadság és távollét (videó)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [A személyzet kezelése a Dynamics 365 Talent rendszerben (videó)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,12 +64,12 @@ A Talent rendszerben dolgozva különböző elemek – például, részlegek, fe
 
 A Talent tartalmazza az Attract alkalmazást, amellyel azonosíthatja a szervezet számára szükséges készségekkel rendelkező jelölteket, interjút készíthet velük, és felveheti őket. Amikor áttér a toborzásról a felvételre az Onboard alkalmazás segíti az új alkalmazottat, hogy gyorsan beilleszkedhessen a szervezetbe; pontos elvárásokat tűz ki, biztosítja a kezdéshez szükséges információkat, kapcsolatot biztosít a munkatársakhoz, és ellátja az új alkalmazottat mindennel, amire szüksége lehet a szerepkör sikeres betöltéséhez.  
 
-- [Attract – áttekintés](attract-overview.md)
-- [Onboard – áttekintés](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent – Attract funkciói és lehetőségei](attract-overview.md)
+- [Első lépések az Onboard alkalmazásban](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Alkalmazottak megtartása és motiválása
 
-Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve a vállalata által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
+Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve a szervezete által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
 
 -   [Kompenzációs konstrukciók](compensation-plans.md)
 -   [Kompenzációs folyamat](process-compensation.md)
@@ -82,17 +82,17 @@ Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, i
 Az alkalmazottak előmeneteli céljainak elérésének elősegítéséhez, valamint a kritikus üzleti igények teljesítéséhez célokat lehet beállítani, teljesítménybeszámolókat lehet létrehozni, és nyomon követhetők a visszajelzések. Segítségnyújtásként az alkalmazottaknak a szükséges készségek kifejlesztéséhez, mielőtt egy oktatót vagy dolgozót hozzátársítana egy képzéshez, megadhatja az oktatókat, a tanfolyamtípusokat, a tanfolyamokat, a tanfolyamleírásokat, a napirendeket, a szekciókat és a munkameneteket is. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
 
 -   [Teljesítménykezelés](performance-management-overview.md)
--   [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](skills.md)
--   [Képzés tanfolyamok segítségével](courses.md)
+-   [A munkaerő szakértelmeinek harmonizálása az üzleti igényekkel](skills.md)
+-   [Tanfolyamok beállítása](courses.md)
 -   [Az alkalmazottak fejlesztésének kezelése a Dynamics 365 Talent rendszerben (videó)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Juttatások létrehozása és karbantartása
 
 A munkatársak bérekkel, illetve jutalmakkal történő kifizetése mellett lehetősége van juttatási programok (pl. egészségbiztosítási, nyugdíjazási konstrukciók) létrehozására is. Egyéb juttatásokat is kezelhet, például kölcsönzési programokat, amelyek során a cég eszközöket (pl. számítógépeket vagy telefonokat) ad kölcsön az alkalmazottaknak.
 
--   [Juttatási program kezelése](manage-benefit-program.md)
--   [Juttatásra vonatkozó jogosultsági irányelvek](benefit-eligibility-policies.md)
--   [A dolgozóknak kölcsönzött cikkek kezelése](loan-items.md)
+-   [Juttatási program meghatározása és kezelése](manage-benefit-program.md)
+-   [Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek](benefit-eligibility-policies.md)
+-   [Dolgozóknak kölcsönzött cikkek kezelése](loan-items.md)
 -   [Az alkalmazottak juttatásainak kezelése a Dynamics 365 Talent rendszerben (videó)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Munkahely biztonságosságának és megfelelőségének fenntartása
@@ -108,5 +108,5 @@ Lehetősége van kérdőívek tervezésére és kezelésére a különböző cé
 
 -   [Kérdőívek](questionnaires.md)
 -   [Kérdőív tervezése](design-questionnaires.md)
--   [Kérdőív terjesztése és kitöltése](distribute-questionnaires.md)
--   [A kérdőív megtekintése és az eredmények kiértékelése](evaluate-questionnaire-results.md)
+-   [Kérdőívek terjesztése és ütemezése](distribute-questionnaires.md)
+-   [A kérdőívek eredményeinek megtekintése és kiértékelése](evaluate-questionnaire-results.md)

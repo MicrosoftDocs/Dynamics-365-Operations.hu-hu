@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174696"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770233"
 ---
 # <a name="public-sector-home-page"></a>Állami szektor – kezdőlap
 
@@ -43,14 +43,14 @@ Az Állami szektor funkció segítségével megfelelhet meg a közösséget szol
   További információért tekintse át az alábbi témaköröket:
 
 - [Az Állami szektor funkció tervezése](plan-public-sector-functionality.md)
-- [Kötelezettségek az Állami szektorban](accounts-payable-public-sector.md)
-- [Kinnlevőségek az Állami szektorban](accounts-receivable-public-sector.md)
-- [Költségvetés-készítés az Állami szektorban](budgeting-public-sector.md)
-- [Tárgyi eszközök az Állami szektorban](fixed-asset-public-sector.md)
-- [Francia jogszabály-követési funkciók](../localizations/emea-fra-public-sector-accounting.md)
-- [Főkönyv az Állami szektorban](general-ledger-public-sector.md)
+- [Kötelezettségek az állami szektorban – áttekintés](accounts-payable-public-sector.md)
+- [Kinnlevőségek az állami szektorban – áttekintés](accounts-receivable-public-sector.md)
+- [Költségvetés-készítés az állami szektorban – áttekintés](budgeting-public-sector.md)
+- [Tárgyi eszközök az állami szektorban](fixed-asset-public-sector.md)
+- [Könyvelés a franciaországi állami szektorban](../localizations/emea-fra-public-sector-accounting.md)
+- [Főkönyv az állami szektorban – áttekintés](general-ledger-public-sector.md)
 - [Beszerzés és forráskeresés az Állami szektorban](procurement-sourcing-public-sector.md)
-- [Biztonsági szerepkörök az Állami szektorban](security-roles-public-sector.md)
+- [Biztonsági szerepkörök az állami szektorban](security-roles-public-sector.md)
 
 \* Csak a Franciaországban található szervezetekre vonatkozik.
 

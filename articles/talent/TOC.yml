@@ -8,6 +8,14 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. november 19.
+              href: whats-new-talent-november-19-2019.md
+            - name: 2019. november 12.
+              href: whats-new-talent-november-12-2019.md
+            - name: 2019. november 5.
+              href: whats-new-talent-november-5-2019.md
+            - name: 2019. október 29.
+              href: whats-new-talent-oct-29-2019.md
             - name: 2019. október 23.
               href: whats-new-talent-october-23-2019.md
             - name: 2019. október 8.
@@ -26,18 +34,18 @@
               href: whats-new-talent-august-15-2019.md
             - name: 2019. augusztus 6.
               href: whats-new-talent-august-7-2019.md
-            - name: 2019. július 30.
-              href: whats-new-talent-july-31-2019.md
-            - name: 2019. július 23.
-              href: whats-new-talent-july-24-2019.md
-            - name: 2019. július 16.
-              href: whats-new-talent-july-16-2019.md
-            - name: 2019. július 9.
-              href: whats-new-talent-july-9-2019.md
-            - name: 2019. július 2.
-              href: whats-new-talent-july-2-2019.md
             - name: Újdonságok (2019-es archívum)
               items:
+                - name: 2019. július 30.
+                  href: whats-new-talent-july-31-2019.md
+                - name: 2019. július 23.
+                  href: whats-new-talent-july-24-2019.md
+                - name: 2019. július 16.
+                  href: whats-new-talent-july-16-2019.md
+                - name: 2019. július 9.
+                  href: whats-new-talent-july-9-2019.md
+                - name: 2019. július 2.
+                  href: whats-new-talent-july-2-2019.md
                 - name: 2019. június 25.
                   href: whats-new-talent-june-25-2019.md
                 - name: 2019. június 18.
@@ -116,13 +124,17 @@
                   href: whats-new-talent-august2018.md
                 - name: 2018. július
                   href: whats-new-talent-july2018.md
-        - name: Rendszerkövetelmények és frissítési irányelv
+        - name: Rendszerkövetelmények
           href: talent-versions-update-policy.md
+        - name: Talent-frissítések
+          href: talent-updates.md
         - name: A Talent létesítése
           href: provisioning-talent.md
+        - name: Core HR-példány másolása
+          href: hr-copy-instance.md
         - name: Talent-környezetek eltávolítása
           href: remove-talent-environment.md
-        - name: Létesítés az Onboard alkalmazás számára
+        - name: Az Onboard alkalmazás létesítése
           href: modular-app-tech-faq.md
         - name: PowerApps alkalmazások beágyazása
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -439,6 +451,18 @@
           href: extensibility-attract.md
         - name: A Core HR egyéni mezői
           href: corehr-custom-fields.md
+        - name: Entitás API referenciája
+          items:
+            - name: Hitelesítés
+              href: api-odata-authentication.md
+            - name: Entitások
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: MyLeaveRequests áttekintése
+                      href: api-myleaverequests-overview.md
+                    - name: Szabadságkérelem elküldése munkafolyamathoz
+                      href: api-myleaverequests-submit.md
     - name: Talent – hibaelhárítás
       items:
         - name: Teljesítmény optimalizálása automatikus tisztítási feladatokkal

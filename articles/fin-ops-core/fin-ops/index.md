@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17774053badb00cc464c34c7c90194a26839cc7d
-ms.sourcegitcommit: 807dec193cd163c9f5d949e744cfde40f2eb24b4
+ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2469002"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770919"
 ---
 # <a name="finance-and-operations-application-documentation"></a>A Finance and Operations-alkalmazás dokumentációja
 
@@ -68,9 +68,9 @@ Az alábbi tartalom jelentős része a kapcsolódó termékekre (Dynamics 365 Re
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrációk</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Üzleti események</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Adatentitások</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integráció a Microsoft Flow használatával</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integráció a Microsoft Power Automate használatával</a></p>
 
-<h3><a href="../../finance/index.md">Pénzgazdálkodás</a></h3>
+<h3><a href="../../finance/index.md">Pénzügyi gazdálkodás</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kötelezettségek</a></p>
 <p><a href="../../finance/accounts-receivable/accounts-receivable.md">Kinnlevőségek</a></p>
 <p><a href="../../finance/budgeting/budgeting-overview.md">Költségvetés-készítés</a></p>

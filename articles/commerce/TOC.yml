@@ -8,7 +8,7 @@
           items:
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: Regisztrálás az előfizetések előnézetére
+            - name: Regisztrálás az előzetes előfizetésekre
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/commerce/toc.json
             - name: Egyverziós szolgáltatásfrissítések
               items:
@@ -60,8 +60,16 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: A Finance and Operations alkalmazás üzemeltetője Kínában a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: A Finance and Operations alkalmazások Franciaországban
+                - name: Finance and Operations alkalmazások Franciaországban
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+            - name: Frissítés és N-1-támogatás
+              items:
+                - name: Frissítés és N-1 támogatás a Retail szolgáltatáshoz
+                  href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
+                  href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
+                  href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
             - name: Új vagy módosult elemek
               items:
                 - name: Előzetes funkciók a Retail 10.0.7-es verziójában
@@ -168,9 +176,53 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: A Lifecycle Services szolgáltatás bemutatása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
-            - name: Életciklus-kezelés bevezetése
+        - name: Architekturális áttekintés
+          items:
+            - name: Architektúra
               items:
-                - name: Életciklus-kezelés bevezetésének kezdőlapja
+                - name: Retail-összetevők
+                  href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Server-architektúra
+                  href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Válasszon üzleti topológiát
+                  href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja
+                  href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Modern POS architektúra
+                  href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail online üzlet közzétételi felépítése
+                  href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Channel Performance Power BI-tartalom
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                - name: Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa
+                  href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
+                - name: A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek
+                  href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
+            - name: Telepítés és gyorsjavítások
+              items:
+                - name: Retail Store Scale Unit
+                  href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail Store Scale Unit konfigurálása és telepítése
+                  href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Modern POS konfigurációja és telepítése
+                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail-számlák és eszközök kezelése a központból
+                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail POS eszköz aktiválása
+                  href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: A Cloud POS biztonságossá tétele megosztott környezetekben
+                  href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail Hardware Station konfigurálása és telepítése
+                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail önkiszolgáló központi telepítése
+                  href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail-összetevő-események a diagnosztikához és a hibaelhárításhoz
+                  href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+                - name: Telepíthető csomag alkalmazása
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+            - name: Végrehajtási életciklus kezelése
+              items:
+                - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
                 - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
@@ -203,15 +255,23 @@
                 - name: Kód és környezetek frissítése a Retail-projekteknél
                   href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
                 - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
-                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md
+                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
+        - name: Rendszerfelügyelet
+          items:
+            - name: A környezet konfigurációja
+              items:
+                - name: Hivatkozások hozzáadása a szervezet jogi feltételeihez és adatvédelmi nyilatkozatához
+                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
+                - name: A Bing Térképek kezelése
+                  href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
         - name: Csatorna beállítása és kezelése
           items:
-            - name: Alapszintű keresztcsatorna beállítása
+            - name: Alapvető keresztcsatorna beállítása
               items:
                 - name: Kiindulási adatok inicializálása új Retail-környezetben
                   href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
                 - name: Infókódok és infókódcsoportok
-                  href: ../retail/info-codes-retail.md
+                  href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json
             - name: Csatornakezelés tárolása
               items:
                 - name: Retail-csatornák beállítása
@@ -220,152 +280,242 @@
                   href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
                 - name: A Retail Hardware Station konfigurálása és telepítése
                   href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Modern Point of Sale (MPOS) és felhőalapú pénztár
+                  items:
+                    - name: Az MPOS és a felhőalapú pénztár (POS) közötti választás
+                      href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+                    - name: Online és offline pénztári műveletek
+                      href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Személyre szabott Retail MPOS eszköz aktiválása
+                      href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései
+                      href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Termék és vevő keresése a pénztárban
+                      href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+                    - name: Termékek és termékváltozatok keresése a rendelésbevitel során
+                      href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+                    - name: Készpénzkezelés fejlesztései
+                      href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
+                    - name: Készletkeresés a pénztárban
+                      href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
+                      href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+                    - name: Kapcsolat nélküli pénztár funkciói
+                      href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+                    - name: Műszak és pénztárgépfiók kezelése
+                      href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+                    - name: Készpénzkifizetési ajándékutalvány egyenlege
+                      href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+                    - name: Rendelések szállítása egy másik áruházból
+                      href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+                    - name: A Pénztár szállítási párbeszédablakának nem szállítói kiszállítási módjainak elrejtése
+                      href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Feladatrögzítő és Súgó az MPOS-hez és a Felhőalapú pénztárhoz
+                      href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                    - name: Hardverperifériák
+                      items:
+                        - name: Kiskereskedelmi perifériás eszközök
+                          href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Kiskereskedelmi perifériás eszközök szimulátora
+                          href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
+                        - name: Perifériák csatlakoztatása a pénztárhoz
+                          href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Képernyő-elrendezések
+                      items:
+                        - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
+                          href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                        - name: Pénztár képernyő-elrendezései
+                          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+                        - name: A Retail POS képernyőelrendezés-tervező telepítése
+                          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                        - name: Értesítési beállítások kiválasztása
+                          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                        - name: Pénztáralkalmazás és felhasználói nyelvi beállítások
+                          href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+                        - name: Képek beállítása és kezelése az MPOS esetében
+                          href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+                        - name: Ügyfélképek a pénztárban
+                          href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+                    - name: Vevői rendelések
+                      items:
+                        - name: Vevői rendelések az MPOS-ben
+                          href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Hibrid vevői rendelések
+                          href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+                    - name: Értékesítési társítások
+                      items:
+                        - name: Jutalékok követése a pénztárban értékesítési csoportok révén
+                          href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+                    - name: Eszköz aktiválása
+                      items:
+                        - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
+                          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a felhőalapú pénztárhoz
+                          href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
+                        - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
+                          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
+                    - name: Nyugták
+                      items:
+                        - name: Nyugtaformátumok beállítása és tervezése
+                          href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
+                        - name: E-mailes nyugták küldése MPOS pénztárból
+                          href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
             - name: Online csatorna kezelése
               items:
-                - name: Online áruházak beállítása
-                  href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
-                - name: Kezdőlap rövid bemutatása
-                  href: quick-tour-home-page.md
-                - name: A termék részleteit tartalmazó oldal rövid bemutatása
-                  href: quick-tour-pdp.md
-                - name: A kosár és a pénztár rövid bemutatása
-                  href: quick-tour-cart-checkout.md
-                - name: A számlavezetés rövid bemutatása
-                  href: quick-tour-account-management.md
-                - name: E-commerce webhely létrehozása
+                - name: Online áruház áttekintése
+                  href: online-store-overview.md
+                - name: E-kereskedelmi webhely létrehozása
                   items:
-                    - name: Online áruház áttekintése
-                      href: online-store-overview.md
-                    - name: E-commerce webhely létrehozása
-                      href: create-ecommerce-site.md
-                    - name: Új e-commerce webhely telepítése
-                      href: deploy-ecommerce-site.md
-                    - name: Online webhely társítása csatornával
-                      href: associate-site-online-store.md
                     - name: A tartománynév konfigurálása
                       href: configure-your-domain-name.md
+                    - name: Új e-kereskedelmi bérlő telepítése
+                      href: deploy-ecommerce-site.md
+                    - name: Online áruház csatornájának beállítása
+                      href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
+                    - name: E-kereskedelmi webhely létrehozása
+                      href: create-ecommerce-site.md
+                    - name: E-kereskedelmi webhely társítása online csatornával
+                      href: associate-site-online-store.md
+                    - name: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
+                      href: custom-pages-user-logins.md
                     - name: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
                       href: add-cdn-support.md
                     - name: Helyalapú áruházészlelés engedélyezése
                       href: enable-store-detection.md
-                    - name: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
-                      href: custom-pages-user-logins.md
-                - name: Szerkesztőeszközök
+                - name: Mintawebhely áttekintése
                   items:
-                    - name: Szerkesztési kezdőlap – áttekintés
+                    - name: Kezdőlap áttekintése
+                      href: quick-tour-home-page.md
+                    - name: Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
+                      href: category-search-page-overview.md
+                    - name: Termékadatok oldalainak áttekintése
+                      href: quick-tour-pdp.md
+                    - name: Kosár és pénztár oldalainak áttekintése
+                      href: quick-tour-cart-checkout.md
+                    - name: A fiókkezelési oldalak áttekintése
+                      href: quick-tour-account-management.md
+                - name: Webhelybeállítások kezelése
+                  items:
+                    - name: Szerkesztési oldal áttekintése
                       href: authoring-home-overview.md
-                - name: Saját webhely kezelése
-                  items:
                     - name: Felhasználók és szerepkörök kezelése
                       href: manage-ecommerce-users-roles.md
-                    - name: Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
-                      href: add-telemetry.md
                     - name: A webhely keresőmotor-optimalizálási (SEO) szempontjai
                       href: search-engine-optimization-considerations.md
                     - name: Tartalomra vonatkozó biztonsági házirend (CSP) kezelése
                       href: manage-csp.md
-                - name: A webhely tartalmának hozzáadása és kezelése
+                - name: Saját webhelytartalom kezelése
                   items:
                     - name: A tartalom hozzáadásának módjai
                       href: add-manage-content.md
-                    - name: Oldalelemek
+                    - name: Oldal modellszószedete
                       href: page-elements-overview.md
                     - name: Állapotok és életciklus-dokumentálás
                       href: document-states-overview.md
-                - name: A webhely testreszabása és az üzlet adatainak hozzáadása
-                  items:
-                    - name: Embléma hozzáadása
-                      href: add-logo.md
-                    - name: Webhely témájának kiválasztása
-                      href: select-site-theme.md
-                    - name: Kedvencek ikon hozzáadása
-                      href: add-favicon.md
-                    - name: Üdvözlő üzenet hozzáadása
-                      href: add-welcome-message.md
-                    - name: Szerzői jogi értesítés hozzáadása
-                      href: add-copyright-notice.md
-                    - name: Nyelvek hozzáadása
-                      href: add-languages-to-site.md
-                - name: Oldalak
-                  items:
-                    - name: Meglévő webhelyoldal módosítása
-                      href: modify-existing-page.md
-                    - name: Új webhelyoldal hozzáadása
-                      href: add-new-page.md
-                    - name: Oldalelrendezések kiválasztása
-                      href: select-page-layouts.md
-                    - name: SEO-metaadatok kezelése
-                      href: manage-seo-metadata.md
-                    - name: 'Oldal mentése, megtekintése és közzététele'
-                      href: save-preview-publish-page.md
-                    - name: A termékoldal bővítése
-                      href: enrich-product-page.md
-                    - name: Kategória céloldalának gazdagítása
-                      href: enrich-category-page.md
-                - name: Modulok
-                  items:
-                    - name: Modulok használata
-                      href: work-with-modules.md
-                - name: Töredékek
-                  items:
-                    - name: Töredékek használata
-                      href: work-with-fragments.md
-                - name: Sablonok és elrendezések
-                  items:
-                    - name: Sablonok és elrendezések áttekintése
-                      href: templates-layouts-overview.md
+                    - name: A webhely testreszabása és az üzlet adatainak hozzáadása
+                      items:
+                        - name: Embléma hozzáadása
+                          href: add-logo.md
+                        - name: Webhely témájának kiválasztása
+                          href: select-site-theme.md
+                        - name: Kedvencek ikon hozzáadása
+                          href: add-favicon.md
+                        - name: Üdvözlő üzenet hozzáadása
+                          href: add-welcome-message.md
+                        - name: Szerzői jogi értesítés hozzáadása
+                          href: add-copyright-notice.md
+                        - name: Nyelvek hozzáadása
+                          href: add-languages-to-site.md
+                        - name: Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
+                          href: add-telemetry.md
+                    - name: Modulok
+                      items:
+                        - name: Modulok használata
+                          href: work-with-modules.md
+                    - name: Töredékek
+                      items:
+                        - name: Töredékek használata
+                          href: work-with-fragments.md
                     - name: Sablonok
                       items:
+                        - name: Sablonok és elrendezések áttekintése
+                          href: templates-layouts-overview.md
                         - name: Sablonok használata
                           href: work-with-templates.md
-                    - name: Elrendezések
-                      items:
                         - name: Előre beállított elrendezések használata
                           href: work-with-layouts.md
-                - name: Webhely-navigáció
-                  items:
-                    - name: Webhely-navigáció testreszabása
-                      href: customize-site-navigation.md
-                    - name: Weblap URL-jének létrehozása
-                      href: create-page-URL.md
+                    - name: Oldalak
+                      items:
+                        - name: Meglévő webhelyoldal módosítása
+                          href: modify-existing-page.md
+                        - name: Új webhelyoldal hozzáadása
+                          href: add-new-page.md
+                        - name: Oldalelrendezések kiválasztása
+                          href: select-page-layouts.md
+                        - name: SEO-metaadatok kezelése
+                          href: manage-seo-metadata.md
+                        - name: 'Oldal mentése, megtekintése és közzététele'
+                          href: save-preview-publish-page.md
+                        - name: A termékoldal bővítése
+                          href: enrich-product-page.md
+                        - name: Kategória céloldalának bővítése
+                          href: enrich-category-page.md
+                    - name: Webhely-navigáció
+                      items:
+                        - name: Webhely-navigáció testreszabása
+                          href: customize-site-navigation.md
+                        - name: Weblap URL-címének létrehozása
+                          href: create-page-URL.md
                 - name: Kezdő csomag
                   items:
                     - name: Kezdő csomag áttekintése
                       href: starter-kit-overview.md
-                    - name: Számlavezetés oldal
-                      href: account-management.md
-                    - name: Figyelmeztetésmodul hozzáadása
-                      href: add-alert.md
-                    - name: Vásárlásmező hozzáadása
-                      href: add-buy-box.md
-                    - name: Forgótármodul hozzáadása
-                      href: add-carousel.md
-                    - name: Kosármodul hozzáadása
-                      href: add-cart-module.md
-                    - name: Fizetésmodul hozzáadása
-                      href: add-checkout-module.md
-                    - name: Tárolómodul hozzáadása
-                      href: add-container-module.md
-                    - name: Tartalomelhelyezési modul hozzáadása
-                      href: add-content-placement-modules.md
-                    - name: Tartalomgazdag blokkmodul hozzáadása
-                      href: add-content-rich-block.md
-                    - name: Funkciómodul hozzáadása
-                      href: add-feature-module.md
-                    - name: Láblécmodul létrehozása
-                      href: author-footer-module.md
-                    - name: Fejlécmodul létrehozása
-                      href: author-header-module.md
-                    - name: Hősmodul hozzáadása
-                      href: add-hero-module.md
-                    - name: Rendelés-visszaigazolási modul létrehozása
-                      href: order-confirmation-module.md
-                    - name: Termékgyűjtési modul áttekintése
-                      href: product-collection-module-overview.md
-                    - name: Termékgyűjtési modul hozzáadása
-                      href: add-product-collection-modules.md
-                    - name: Videólejátszó modul hozzáadása
-                      href: add-video-player.md
+                    - name: Tárolómodulok
+                      items:
+                        - name: Tárolómodul
+                          href: add-container-module.md
+                    - name: Marketing modulok
+                      items:
+                        - name: Figyelmeztetési modul
+                          href: add-alert.md
+                        - name: Forgótármodul
+                          href: add-carousel.md
+                        - name: Tartalomelhelyezési modul
+                          href: add-content-placement-modules.md
+                        - name: Tartalomgazdag blokkmodul
+                          href: add-content-rich-block.md
+                        - name: Funkciómodul
+                          href: add-feature-module.md
+                        - name: Hősmodul
+                          href: add-hero-module.md
+                        - name: Videólejátszó modul
+                          href: add-video-player.md
+                    - name: Fejléc- és láblécmodulok
+                      items:
+                        - name: Fejlécmodul
+                          href: author-header-module.md
+                        - name: Láblécmodul
+                          href: author-footer-module.md
+                    - name: Termékadatok oldal moduljai
+                      items:
+                        - name: Vásárlásmező-modul
+                          href: add-buy-box.md
+                    - name: Beszerzési modulok
+                      items:
+                        - name: Kosármodul
+                          href: add-cart-module.md
+                        - name: Fizetésmodul
+                          href: add-checkout-module.md
+                        - name: Rendelésmegerősítési modul
+                          href: order-confirmation-module.md
+                    - name: Fiókkezelési modulok
+                      items:
+                        - name: Fiókkezelési oldalak és modulok
+                          href: account-management.md
+                    - name: Termékgyűjtési modulok
+                      items:
+                        - name: Termékgyűjtési modulok
+                          href: product-collection-module-overview.md
                 - name: Keresés
                   items:
                     - name: Az alapértelmezett kategória-céloldal és keresési találatoldal
@@ -452,7 +602,9 @@
               items:
                 - name: Hűség áttekintése
                   href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
-            - name: Kifizetések
+                - name: Ügyfélkör áttekintése
+                  href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Fizetések
               items:
                 - name: Fizetési módok
                   href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
@@ -508,28 +660,8 @@
               items:
                 - name: Üzleti árukészlet kezelése
                   href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-                - name: Sorozatszámok regisztrálása az értékesítési folyamat során
+                - name: Szerializált cikkek használata
                   href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-                - name: Készletnaplók
-                  href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/commerce/toc.json
-                - name: Készletcímke számlálása
-                  href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/commerce/toc.json
-                - name: FIFO tényleges értékkel és jelöléssel
-                  href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: LIFO dátum tényleges értékkel és jelöléssel
-                  href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: LIFO tényleges értékkel és jelöléssel
-                  href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: Dátum szerinti súlyozott átlag
-                  href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/commerce/toc.json
-                - name: Súlyozott átlag tényleges értékkel és jelöléssel
-                  href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: Karanténutasítások
-                  href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/commerce/toc.json
-                - name: Mozgóátlagon alapuló önköltségi ár
-                  href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/commerce/toc.json
-                - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
-                  href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/commerce/toc.json
             - name: Kimutatások
               items:
                 - name: Kiskereskedelmi kimutatások
@@ -588,91 +720,11 @@
                   href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
                 - name: Több vevői rendelést és számlát érintő visszárucikkek
                   href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-        - name: Modern Point of Sale (MPOS) és felhőalapú pénztár
-          items:
-            - name: Az MPOS és a felhőalapú pénztár (POS) közötti választás
-              href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
-            - name: Online és offline pénztári műveletek
-              href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-            - name: Személyre szabott Retail MPOS eszköz aktiválása
-              href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
-            - name: Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései
-              href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-            - name: Termék és vevő keresése a pénztárban
-              href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
-            - name: Termékek és termékváltozatok keresése a rendelésbevitel során
-              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
-            - name: Készpénzkezelés fejlesztései
-              href: ../retail/cash-mgmt.md
-            - name: Készletkeresés a pénztárban
-              href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
-            - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
-              href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
-            - name: Kapcsolat nélküli pénztár funkciói
-              href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
-            - name: Műszak és pénztárgépfiók kezelése
-              href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
-            - name: Készpénzkifizetési ajándékutalvány egyenlege
-              href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
-            - name: Rendelések szállítása egy másik áruházból
-              href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
-            - name: A Pénztár szállítási párbeszédablakának nem szállítói kiszállítási módjainak elrejtése
-              href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
-            - name: Feladatrögzítő és Súgó az MPOS-hez és a Felhőalapú pénztárhoz
-              href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
-            - name: Hardverperifériák
-              items:
-                - name: Kiskereskedelmi perifériás eszközök
-                  href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Kiskereskedelmi perifériás eszközök szimulátora
-                  href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
-                - name: Perifériák csatlakoztatása a pénztárhoz
-                  href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
-            - name: Képernyő-elrendezések
-              items:
-                - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
-                  href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-                - name: Pénztár képernyő-elrendezései
-                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                - name: A Retail POS képernyőelrendezés-tervező telepítése
-                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-                - name: Értesítési beállítások kiválasztása
-                  href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
-                - name: Pénztáralkalmazás és felhasználói nyelvi beállítások
-                  href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
-                - name: Képek beállítása és kezelése az MPOS esetében
-                  href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
-                - name: Ügyfélképek a pénztárban
-                  href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
-            - name: Vevői rendelések
-              items:
-                - name: Vevői rendelések az MPOS-ben
-                  href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Hibrid vevői rendelések
-                  href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Értékesítési társítások
-              items:
-                - name: Jutalékok követése a pénztárban értékesítési csoportok révén
-                  href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
-            - name: Eszköz aktiválása
-              items:
-                - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
-                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a felhőalapú pénztárhoz
-                  href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-                - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
-                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-            - name: Nyugták
-              items:
-                - name: Nyugtaformátumok beállítása és tervezése
-                  href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-                - name: E-mailes nyugták küldése MPOS pénztárból
-                  href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
         - name: Értékelések és vélemények
           items:
             - name: Minősítések és értékelések áttekintése
               href: ratings-reviews-overview.md
-            - name: A minősítések és ellenőrzések használatának kiválasztása
+            - name: A minősítések és ellenőrzések használatának bekapcsolása
               href: opt-in-ratings-reviews.md
             - name: Minősítések és értékelések kezelése
               href: manage-reviews.md
@@ -761,7 +813,7 @@
             - name: Mexikó
               items:
                 - name: Globális CFDI e-számlák Mexikóban
-                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
             - name: Norvégia
               items:
                 - name: Pénztárgép funkciói
@@ -837,7 +889,7 @@
                 - name: Előnyök
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Készpénzáttekintés
-                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
                 - name: Pénzügyi igazgatói áttekintés
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Kompenzáció
@@ -853,7 +905,7 @@
                 - name: Költségkezelés
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Követelések és beszedések kezelése
-                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Alkalmazotti kompetenciák és fejlődés
                   href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Alkalmazotti fejlesztés
@@ -865,7 +917,7 @@
                 - name: Pénzügyi információk
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
                 - name: Tárgyi eszközök kezelése
-                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Tanulás
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Szervezeti képzés
@@ -883,7 +935,7 @@
                 - name: Értékesítési és jövedelmezőségi teljesítmény
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Szállítói kifizetések
-                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Raktári teljesítmény
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
                 - name: Munkaerő-mutatók
@@ -901,7 +953,7 @@
                     - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: A dokumentumirányítási ügynök frissítése
-                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél'
@@ -1063,7 +1115,7 @@
                         - name: Fájlok importálása XML-formátumban opcionális attribútumokkal
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                         - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                 - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
@@ -1085,7 +1137,7 @@
                         - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: Konfigurációk importálása RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                 - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
                   items:
                     - name: Keretrendszer konfigurálása
@@ -1163,7 +1215,7 @@
                 - name: Power BI integrációja az Entitástárral
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Problémák megoldása az Entitástár karbantartása után
-                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md?toc=/dynamics365/commerce/toc.json
                 - name: A munkaterületek Power BI-integrációjának konfigurálása
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Használja saját adatbázisát
@@ -1177,7 +1229,7 @@
                 - name: Elérhető mobil munkaterületek
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
                 - name: Eszközkezelés
-                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
+                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Vállalat címtára
                   href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Költségkontroll
@@ -1193,7 +1245,7 @@
                 - name: Project-mobilalkalmazások áttekintése
                   href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Projekt időbejegyzése
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Project Timesheet
                   href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/commerce/toc.json
                 - name: Beszerzési rendelés jóváhagyása
@@ -1360,11 +1412,14 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Dátum/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Bővíthetőség
+        - name: Fejlesztés
           items:
+            - name: Kereskedelmi fejlesztés és bővíthetőség
+              href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Online csatorna bővíthetősége
-              href: e-commerce-extensibility/overview.md
               items:
+                - name: Online csatorna bővíthetősége – áttekintés
+                  href: e-commerce-extensibility/overview.md
                 - name: Első lépések
                   items:
                     - name: Rendszerkövetelmények
@@ -1477,222 +1532,160 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK- és alapkönyvtár-frissítések
                       href: e-commerce-extensibility/sdk-updates.md
-            - name: Retail fejlesztés
+            - name: Retail szoftverfejlesztői készlet (SDK)
               items:
-                - name: Retail fejlesztés és adminisztráció áttekintése
-                  href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektúra
-                  items:
-                    - name: Retail-összetevők
-                      href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Server-architektúra
-                      href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Válasszon üzleti topológiát
-                      href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
-                    - name: Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja
-                      href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS architektúra
-                      href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail online üzlet közzétételi felépítése
-                      href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Channel Performance Power BI-tartalom
-                      href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa
-                      href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
-                    - name: A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek
-                      href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Telepítés és gyorsjavítások
-                  items:
-                    - name: Retail Store Scale Unit
-                      href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail Store Scale Unit konfigurálása és telepítése
-                      href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS konfigurációja és telepítése
-                      href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail-számlák és eszközök kezelése a központból
-                      href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail POS eszköz aktiválása
-                      href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Cloud POS biztonságossá tétele megosztott környezetekben
-                      href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail Hardware Station konfigurálása és telepítése
-                      href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail önkiszolgáló központi telepítése
-                      href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail-összetevő-események a diagnosztikához és a hibaelhárításhoz
-                      href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
-                    - name: Telepíthető csomag alkalmazása
-                      href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Frissítés és N-1-támogatás
-                  items:
-                    - name: Frissítés és N-1 támogatás a Retailhez
-                      href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
-                      href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
-                      href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
-                - name: Megvalósítási útmutatás
-                  items:
-                    - name: Eszközkezelés megvalósítási útmutatása
-                      href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
-                - name: A környezet konfigurációja
-                  items:
-                    - name: Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez
-                      href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Bing Térképek kezelése
-                      href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-kiterjesztés erőforrásainak és címkefájljainak honosítása
-                  href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
-                - name: Pénztár bővíthetősége
-                  items:
-                    - name: Retail POS-képernyő elrendezései
-                      href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                    - name: URL megnyitása a pénztárban
-                      href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
-                    - name: A pénztárelrendezés-tervező telepítése
-                      href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS offline módban
-                      href: ../retail/dev-itpro/retail-modern-pos-offline.md?toc=/dynamics365/commerce/toc.json
-                    - name: A pénztár kettős megjelenítési nézetének kiterjesztése
-                      href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail Modern POS és Cloud POS eseményindító bővíthetősége
-                      href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
-                      href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
-                    - name: Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel
-                      href: ../retail/dev-itpro/add-POS-operations.md
-                    - name: Retail POS API-k
-                      href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Pénztárkifizetés kiterjesztése
-                      href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Támogatás külső ajándékutalványokhoz
-                      href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
-                    - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
-                      href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
-                    - name: POS Hybrid alkalmazás telepítése Android és iOS rendszerre
-                      href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
-                    - name: A pénztár kérelemkezelőjének felülírása
-                      href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
-                    - name: Pénztárbővítmény csomaginformációjának megtekintése
-                      href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail Cloud pénztár tesztrögzítője és Regression Suite Automation Tool eszköze
-                      href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
+                  href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail és Finance and Operations buildrendszereinek egyesítése
+                  href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Kiskereskedelmi telepíthető csomagok létrehozása
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
+                - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
+                  href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
+            - name: Pénztár bővíthetősége
+              items:
+                - name: Retail POS-képernyő elrendezései
+                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+                - name: URL megnyitása a pénztárban
+                  href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
+                - name: A pénztárelrendezés-tervező telepítése
+                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                - name: A pénztár kettős megjelenítési nézetének kiterjesztése
+                  href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail Modern POS és Cloud POS eseményindító bővíthetősége
+                  href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
+                  href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
+                - name: Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel
+                  href: ../retail/dev-itpro/add-POS-operations.md
+                - name: Retail POS API-k
+                  href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
+                - name: Pénztárkifizetés kiterjesztése
+                  href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Támogatás külső ajándékutalványokhoz
+                  href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
+                - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
+                  href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
+                - name: POS Hybrid alkalmazás telepítése Android és iOS rendszerre
+                  href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
+                - name: A pénztár kérelemkezelőjének felülírása
+                  href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
+                - name: Pénztárbővítmény csomaginformációjának megtekintése
+                  href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
+                - name: A Retail Cloud POS tesztrögzítője és Regression Suite Automation Tool eszköze
+                  href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
+                  href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni értesítések megjelenítése a pénztárban
+                  href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
+                - name: MPOS aláírása a kódaláíró tanúsítvánnyal
+                  href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
+                - name: Pénztárnézetek kibővítése egyéni oszlopok és alkalmazássáv-gombok hozzáadásához
+                  href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz
+                  href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni oszlopok hozzáadása a pénztár tranzakciós rácsához
+                  href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
+                - name: Pénztár API-k meghívása vagy pénztárbővítményekből indított műveletek
+                  href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Modern POS eseményindítók és nyomtatás
+                  href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni vezérlők hozzáadása nem képernyőtervező-alapú pénztárnézetekhez
+                  href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail POS-minták futtatása
+                  href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Eszközkezelés megvalósítási útmutatása
+                  href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+            - name: Hardware Station bővíthetősége
+              items:
                 - name: Hardware Station és bővíthetősége
                   href: ../retail/dev-itpro/hardware-station-extensibility.md?toc=/dynamics365/commerce/toc.json
                 - name: A pénztár integrálása új hardvereszközzel
                   href: ../retail/dev-itpro/hardware-device-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Server bővíthetősége
-                  items:
-                    - name: Retail Server OData-vezérlőjének kiterjesztése
-                      href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
-                    - name: Webes API-vezérlő létrehozása a Retail Serverhez
-                      href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Server – ügyfél és fogyasztói API-k
-                      href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
-                    - name: Az alapértelmezett Retail Server metaadat-vezérlőjének kiterjesztése
-                      href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
-                    - name: A CRT szolgáltatás hívása offline módban
-                      href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
-                    - name: Új Retail Server-kiterjesztés létrehozása
-                      href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: A Commerce Runtime (CRT) bővíthetősége
-                  items:
-                    - name: A CRT architektúrája és konfigurálása
-                      href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: CRT-szolgáltatások
-                      href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: A CRT és a Retail Server bővíthetősége
-                      href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Ügyfélpreferencia-adatok hozzáadása csatorna-adatbázisokhoz
-                      href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail csatornák titkainak kezelése
-                      href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
-                      href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
-                    - name: A CRT bővíthetősége és az eseményindítók
-                      href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tranzakciók zárolása eseményindítók segítségével
-                      href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
-                    - name: Visszavételi irányelvek bevezetése eseményindítók segítségével
-                      href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
-                - name: Elektronikus kereskedelem bővíthetősége
-                  items:
-                    - name: Online áruházak beállítása
-                      href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
-                    - name: Hitelesítési szolgáltatók konfigurálása
-                      href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-                    - name: Elektronikus kereskedelmi platform
-                      href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
-                    - name: E-kereskedelmi platform SDK
-                      href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
-                - name: Fizetési összekötő bővíthetősége
-                  items:
-                    - name: Fizetési integráció létrehozása fizetési terminálhoz
-                      href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)
-                      href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                    - name: Fizetési csatlakozók telepítése
-                      href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez
-                      href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
-                    - name: Windows-telepítők létrehozása fizetési összekötőkhöz
-                      href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fizetési adatok használata
-                      href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
-                    - name: Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz
-                      href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail szoftverfejlesztői készlet (SDK)
-                  items:
-                    - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
-                      href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail és Finance and Operations buildrendszereinek egyesítése
-                      href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kiskereskedelmi telepíthető csomagok létrehozása
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
-                    - name: A Retail szoftverfejlesztői készlet (SDK) mintái
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Szállítólevelek kiterjesztési pontjai
-                      href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
-                    - name: A csatorna-adatbázis bővítményei
-                      href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
-                    - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel
-                      href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
-                      href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
-                    - name: Rendelési attribútumok meghatározása és beállítása
-                      href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: Vevőattribútumok
-                      href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'A Retail Typescript és a C# proxyk'
-                      href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail POS-minták futtatása
-                      href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Pénztárnézetek kibővítése egyéni oszlopok és alkalmazássáv-gombok hozzáadásához
-                      href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz
-                      href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni oszlopok hozzáadása a pénztár tranzakciós rácsához
-                      href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
-                    - name: Pénztár API-k meghívása vagy pénztárbővítményekből indított műveletek
-                      href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS eseményindítók és nyomtatás
-                      href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni vezérlők hozzáadása nem képernyő tervező alapú pénztárnézetekhez
-                      href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
-                      href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
-                    - name: Egyéni értesítések megjelenítése a pénztárban
-                      href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
-                    - name: MPOS aláírása a kódaláíró tanúsítvánnyal
-                      href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
-                - name: Commerce Runtime
-                  items:
-                    - name: Hűségidő kiterjesztése
-                      href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+            - name: Retail Server bővíthetősége
+              items:
+                - name: Retail Server OData-vezérlőjének kiterjesztése
+                  href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
+                - name: Webes API-vezérlő létrehozása a Retail Serverhez
+                  href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Server – ügyfél és fogyasztói API-k
+                  href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
+                - name: Az alapértelmezett Retail Server metaadat-vezérlőjének kiterjesztése
+                  href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
+                - name: A CRT szolgáltatás hívása offline módban
+                  href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
+                - name: Új Retail Server-kiterjesztés létrehozása
+                  href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: 'A Retail Typescript és a C# proxyk'
+                  href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
+            - name: A Commerce Runtime (CRT) bővíthetősége
+              items:
+                - name: A CRT architektúrája és konfigurálása
+                  href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: CRT-szolgáltatások
+                  href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
+                - name: A CRT és a Retail Server bővíthetősége
+                  href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Ügyfélpreferencia-adatok hozzáadása csatorna-adatbázisokhoz
+                  href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail csatornák titkainak kezelése
+                  href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
+                - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
+                  href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
+                - name: A CRT bővíthetősége és az eseményindítók
+                  href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
+                - name: Tranzakciók zárolása eseményindítók segítségével
+                  href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
+                - name: Visszáruval kapcsolatos irányelvek alkalmazása eseményindítók segítségével
+                  href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
+                - name: Hűségprogram bővítése
+                  href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+                - name: Szállítólevelek bővítési pontjai
+                  href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+                - name: A csatorna-adatbázis bővítményei
+                  href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+                - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel
+                  href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Rendelési attribútumok meghatározása és beállítása
+                  href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+                - name: Vevőattribútumok
+                  href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+                - name: CRT SDK minták
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Bővítési események naplózása az Application Insights szolgáltatásban
+                  href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
+            - name: Fizetési összekötő bővíthetősége
+              items:
+                - name: Fizetési integráció létrehozása fizetési terminálhoz
+                  href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)
+                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
+                - name: Fizetési csatlakozók telepítése
+                  href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez
+                  href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
+                - name: Windows-telepítők létrehozása fizetési összekötőkhöz
+                  href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                - name: Fizetési adatok használata
+                  href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
+                - name: Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz
+                  href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+            - name: Harmadik fél e-kereskedelem bővíthetősége
+              items:
+                - name: Online áruházak beállítása
+                  href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+                - name: Hitelesítési szolgáltatók konfigurálása
+                  href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
+                - name: E-kereskedelmi platform
+                  href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+                - name: E-kereskedelmi platform SDK
+                  href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
+            - name: Retail-bővítés erőforrásainak és címkefájljainak honosítása
+              href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
     - name: A Finance and Operations alkalmazás fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Retail

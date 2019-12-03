@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184071"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772651"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -42,17 +42,17 @@ Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-terve
 
 A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak, amelyben az alkalmazottak képzést kapnak a szervezeti célokról, és irányelveken keresztül valósítják meg ezeket a célokat (ilyen irányelv lehet például az „Online értekezletek esetleges használata utazás helyett”). Az alkalmazás olyan költségvetés-ellenőrzési keretrendszert is tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza a költségvetést túllépő feladásokat) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetést, de ők eldönthetik, hogy hogyan cselekszenek) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations rendszerben a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
 
--   [Alapvető költségvetés-tervezés: Áttekintés és konfiguráció](basic-budgeting-overview-configuration.md)
--   [Költségvetés-ellenőrzés: Áttekintés és konfiguráció](budget-control-overview-configuration.md)
--   [Költségvetés-tervezés: Áttekintés és konfiguráció](budget-planning-overview-configuration.md)
+-   [Költségvetés-készítés áttekintése](basic-budgeting-overview-configuration.md)
+-   [Költségvetés-ellenőrzés áttekintése](budget-control-overview-configuration.md)
+-   [Költségvetés-tervezés áttekintése](budget-planning-overview-configuration.md)
 -   [Beosztás előrejelzése](position-forecasting.md)
 -   [Költségvetés-tervezés igazoló dokumentumai](budget-planning-justification-docs.md)
--   [Microsoft Excel-sablonok a költségvetés-tervezéshez](budget-planning-excel-templates.md)
+-   [Költségvetés-tervezési sablonok az Excel programhoz](budget-planning-excel-templates.md)
 
-## <a name="budgeting-tools"></a>Költségvetés-tervezési eszközök
-[![Költségvetés-tervezési eszközök](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+## <a name="budgeting-tools"></a>Költségvetés-készítési eszközök
+[![Költségvetés-készítési eszközök](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
-A főkönyvi költségvetésbe beépítve további tervezési és költségvetés-tervezési eszközök érhetők el.
+A főkönyvi költségvetésbe beépítve további tervezési és költségvetés-készítési eszközök érhetők el.
 
 -   **Munkaerő-költségvetések** – A munkaerő költségvetésének megtervezése költségelőirányzat-összetevőt tartalmaz beosztások, kompenzációs csoportok stb. tervezéséhez.
 -   **Tárgyi eszközök költségvetései** – A tárgyi eszközök adatai alapján ki tudja számolni a tervezett értékcsökkenést és bejegyezhet egyéb, a tárgyi eszközhöz kapcsolódó tervezett tranzakciókat.

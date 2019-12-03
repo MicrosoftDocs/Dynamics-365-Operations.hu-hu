@@ -8,7 +8,7 @@
           items:
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/retail/toc.json
-            - name: Regisztrálás az előfizetések előnézetére
+            - name: Regisztrálás az előzetes előfizetésekre
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/retail/toc.json
             - name: Egyverziós szolgáltatásfrissítések
               items:
@@ -58,7 +58,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/retail/toc.json
                 - name: A Finance and Operations alkalmazás üzemeltetője Kínában a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/retail/toc.json
-                - name: A Finance and Operations alkalmazások Franciaországban
+                - name: Finance and Operations alkalmazások Franciaországban
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Új vagy módosult elemek
               items:
@@ -166,9 +166,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/retail/toc.json
                 - name: A Lifecycle Services szolgáltatás bemutatása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/retail/toc.json
-            - name: Életciklus-kezelés bevezetése
+            - name: Végrehajtási életciklus kezelése
               items:
-                - name: Életciklus-kezelés bevezetésének kezdőlapja
+                - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/retail/toc.json
                 - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/retail/toc.json
@@ -850,7 +850,9 @@
           items:
             - name: Hűség áttekintése
               href: set-up-customer-loyalty-program.md
-        - name: Kifizetések
+            - name: Ügyfélkör áttekintése
+              href: clienteling-overview.md
+        - name: Fizetések
           items:
             - name: Fizetési módok
               href: payment-methods.md
@@ -1242,7 +1244,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/retail/toc.json
             - name: Frissítés és N-1-támogatás
               items:
-                - name: Frissítés és N-1 támogatás a Retailhez
+                - name: Frissítés és N-1 támogatás a Retail szolgáltatáshoz
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -1254,11 +1256,11 @@
                   href: implementation-considerations-devices.md
             - name: A környezet konfigurációja
               items:
-                - name: Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez
+                - name: Hivatkozások hozzáadása a szervezet jogi feltételeihez és adatvédelmi nyilatkozatához
                   href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/retail/toc.json
                 - name: A Bing Térképek kezelése
                   href: dev-itpro/manage-bing-maps.md
-            - name: Retail-kiterjesztés erőforrásainak és címkefájljainak honosítása
+            - name: Retail-bővítés erőforrásainak és címkefájljainak honosítása
               href: dev-itpro/extension-resource-localization.md
             - name: Pénztár bővíthetősége
               items:
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: A pénztárelrendezés-tervező telepítése
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS offline módban
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: A pénztár kettős megjelenítési nézetének kiterjesztése
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: A Retail Modern POS és Cloud POS eseményindító bővíthetősége
@@ -1292,7 +1292,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Pénztárbővítmény csomaginformációjának megtekintése
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: A Retail Cloud pénztár tesztrögzítője és Regression Suite Automation Tool eszköze
+                - name: A Retail Cloud POS tesztrögzítője és Regression Suite Automation Tool eszköze
                   href: dev-itpro/pos-rsat.md
             - name: Hardware Station és bővíthetősége
               href: dev-itpro/hardware-station-extensibility.md
@@ -1330,9 +1330,11 @@
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tranzakciók zárolása eseményindítók segítségével
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Visszavételi irányelvek bevezetése eseményindítók segítségével
+                - name: Visszáruval kapcsolatos irányelvek alkalmazása eseményindítók segítségével
                   href: dev-itpro/trigger-example-return-policy.md
-            - name: Elektronikus kereskedelem bővíthetősége
+                - name: Bővítési események naplózása az Application Insights szolgáltatásban
+                  href: dev-itpro/commerce-application-insights.md
+            - name: E-kereskedelem bővíthetősége
               items:
                 - name: Online áruházak beállítása
                   href: dev-itpro/configure-online-store.md
@@ -1370,7 +1372,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) mintái
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                - name: Szállítólevelek kiterjesztési pontjai
+                - name: Szállítólevelek bővítési pontjai
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: A csatorna-adatbázis bővítményei
                   href: dev-itpro/channel-db-extensions.md
@@ -1406,7 +1408,7 @@
                   href: dev-itpro/pos-app-signing-certificate.md
             - name: Commerce Runtime
               items:
-                - name: Hűségidő kiterjesztése
+                - name: Hűségprogram bővítése
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
     - name: A Finance and Operations alkalmazás fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
