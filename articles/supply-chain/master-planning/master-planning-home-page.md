@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250691"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814261"
 ---
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
@@ -39,9 +39,9 @@ Az Alaptervezés az információk alapján kiszámítja a követelményeket és 
 
 A három fő tervezési folyamat a következő:
 
--  **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv*. További információkért lásd: [Alaptervezés](master-plans.md). 
+-  **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv*. További informáciért lásd: [Alaptervek áttekintése](master-plans.md). 
 
--  **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. További információkért lásd: [Előrejelzési tervezés](introduction-demand-forecasting.md). 
+-  **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. A további tudnivalókat lásd: [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md). 
 
 -  **Vállalatközi alaptervezés** – a vállalatközi alapterv kiszámítja a nettó követelményeket a jogi személyeket lefedve. Az igényeket és az ellátást köti össze a vállalatok között, és nem csak a rövid távú, megerősített igényt és ellátást, hanem a hosszú távú, tervezett (még meg nem erősítése) igényt és ellátást is. További tudnivalókért lásd: [Vállalatközi alaptervezés](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource-fiókot igényel). 
 
@@ -57,18 +57,18 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 
 ## <a name="quick-links"></a>Gyorshivatkozások
 
-- [Alaptervek](master-plans.md)  
+- [Alaptervek áttekintése](master-plans.md)  
 - [Korlátozott terv létrehozása](./tasks/constrained-plan.md)
 - [Társtermékek anyagfelhasználási tervének létrehozása](./tasks/create-material-plan-co-products.md)
-- [Az alaptervezés és a többhelyes funkció](master-plan-multisite-functionality.md)
+- [Az alaptervezés és a többhelyes funkció áttekintése](master-plan-multisite-functionality.md)
 - [Vállalatközi terv létrehozása](./tasks/create-intercompany-plan.md)
 - [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
-- [Csökkentési kulcsok](reduction-keys.md)
+- [Előrejelzés csökkentési kulcsok](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="roadmaps"></a>Ütemtervek
-Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
 A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.

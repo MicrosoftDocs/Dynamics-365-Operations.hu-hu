@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570240"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771822"
 ---
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
@@ -84,12 +84,12 @@ A fő számla beállítás számos lehetőséget nyújt az általános napló fe
 
 A könyvelési szerkezetek és a speciális szabályok szerkezetei rendkívül fontosak, mert ezekkel biztosítható, hogy a pénzügyi jelentés készítéséhez és teljesítéskövetéséhez szükséges adatok rögzítése megtörténik az általános napló vagy bármilyen dokumentum feldolgozása során. A könyvelési szerkezetek és a speciális szabályok szerkezetei segítségével személyre szabhatja az adatbeviteli élményt. Megszabhatja, hogy csak a helyzethez kapcsolódó pénzügyi dimenziók adatbevitele legyen lehetséges, és kötelezővé teheti azt a feltételt, mely alapján a pontos adat mindig rögzítésre kerül.
 
-További információ a következő témakörökben olvasható:
-- [Tervezés: számlatükör](plan-chart-of-accounts.md). 
+További információért tekintse át az alábbi témaköröket:
+- [Számlatükör tervezése](plan-chart-of-accounts.md) 
 - [Speciális szabályok létrehozása naplók részére](tasks/create-advanced-rules-journals.md)
 - [Naplóbejegyzés létrehozása sablon alapján](tasks/create-journal-entry-template.md)
 - [Naplók létrehozása és érvényesítése](tasks/create-validate-journals.md)
-- [Időszaki naplók közzététele](tasks/post-periodic-journals.md)
+- [Időszaki naplók feladása](tasks/post-periodic-journals.md)
 - [Főkönyvi felosztási napló feldolgozása](tasks/process-ledger-allocation-journal.md)
 
 ## <a name="simulate-posting"></a>Feladás szimulálása

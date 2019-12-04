@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8d94cf24040e5f653bc053f2df0a45e1afa23adc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6405b6a680f31c62e16f3bb707ec0a4ccdad3d23
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518200"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813914"
 ---
 # <a name="design-questionnaires"></a>Kérdőívek tervezése
 
@@ -110,7 +110,8 @@ A válaszcsoportok és a válaszok adják meg a fő információkat, melyekből 
 
 Ugyanaz a válaszcsoport ugyanannak a kérdőívnek több kérdésére, illetve egynél több kérdőívre is alkalmazható. 
 
-**Megjegyzés:** Amennyiben olyan válasz szövegét módosítja, amely már használatban van kitöltött kérdőíveken, az adatok nehezen kiértékelhetővé válhatnak és a kérdőív eredményei már nem biztos, hogy érvényesek lesznek. Amennyiben módosítani kell egy válaszcsoportot, fontolja meg az új válaszcsoport létrehozását, a meglévő megváltoztatása helyett. A kérdésekhez vagy válaszokhoz csatolt, illetve a már megválaszolt válaszcsoportok nem törölhetőek.
+> [!NOTE]
+> Amennyiben olyan válaszcsoportban lévő válasz szövegét módosítja, amelyet már használtak befejezett kérdőíveken, az adatok nehezen kiértékelhetővé válhatnak és a kérdőív eredményei már nem biztos, hogy érvényesek lesznek. Amennyiben módosítani kell egy válaszcsoportot, fontolja meg az új válaszcsoport létrehozását, a meglévő megváltoztatása helyett. A kérdésekhez vagy válaszokhoz csatolt, illetve a már megválaszolt válaszcsoportok nem törölhetőek.
 
 ### <a name="questions"></a>Kérdések
 
@@ -118,12 +119,16 @@ A kérdőíveknek kötelezően tartalmaznia kell kérdéseket. A kérdések nyí
 
 -   A nyitott kérdésekre adott válaszok nem szabályázottak, a válaszadók beírhatják a saját válaszaikat.
 -   Eldöntendő kérdések esetén előre felállított válaszlista szükséges és a kérdések úgy is meglehetnek alkotva, hogy a válaszadónak lehetősége legyen több választ is adni. A kérdéseket úgy kell megtervezni, hogy a kívánt információt kapjuk meg a válaszadótól. Emellett a kapott válasz köthető kell, hogy legyen egy zárt kérdéses válaszcsoporthoz is. 
-     -  **Megjegyzés:** Eldöntendő kérdések létrehozása előtt, készítenie kell válaszcsoportokat és válaszokat is.
+
+    > [!NOTE]
+    > Eldöntendő kérdések megadása előtt készítenie kell válaszcsoportokat és válaszokat is.
 
 A kérdések szervezhetőek feltételesen egymásra épülve, így a másodlagos kérdések az előző kérdésre adott választól függenek majd. A kérdéseket megírhatja előre is, hogy aztán később rendezze őket sorrendbe.
 
 ## <a name="setting-up-questionnaires"></a>Kérdőívtípusok beállítása
-**Megjegyzés:** Mielőtt felállítana egy kérdőívet, be kell állítania kérdéseket, válaszokat és előfeltételeket. 
+
+> [!NOTE]
+> Mielőtt beállít egy kérdőívet, be kell állítania kérdéseket, válaszokat és előfeltételeket. 
 
 Minden kérdőívnél, a következő információkat adhatja meg:
 
@@ -159,7 +164,8 @@ A következő feladatokat a **Kérdőívek** oldalon végezheti el:
 -   Kérdések törlése és hozzáadása.
 -   Az eredménycsoportok és a sorszám módosítása 
 
-**Figyelem:** Legyen óvatos a már megválaszolt kérdőívek megváltoztatásával. A változtatások csökkenthetik a statisztikák pontosságát, így nem megfelelő alapot nyújtva a kiértékeléshez. Fontolja meg az új kérdés létrehozását, már megválaszolt kérdés módosítása helyett.
+> [!CAUTION]
+> Legyen óvatos a már megválaszolt kérdőívek megváltoztatásával. A változtatások csökkenthetik a statisztikák pontosságát, így nem megfelelő alapot nyújtva a kiértékeléshez. Fontolja meg az új kérdés létrehozását, már megválaszolt kérdés módosítása helyett.
 
 A következő típusú kérdések nem törölhetőek a kérdőívből:
 
@@ -177,7 +183,8 @@ Az eredménycsoport célja a kérdőív pontjainak a kiszámítása és az eredm
 -   Statisztikát generálhat minden egyes eredménycsoportról, az eredmények elemzése céljából.
 -   Nyomtathat jelentést, amely megmutatja minden válaszcsoport eredményét, valamint opcionális pontokat/szövegeket, amelyek az egyes válaszcsoportokban elért pontokon alapszanak.
 
-**Megjegyzés:** Eredménycsoportok beállítása előtt a következő feladatokat kell elvégeznie:
+> [!NOTE]
+> Eredménycsoportok beállítása előtt el kell végeznie a következő feladatokat:
 
 -   Állítson be eldöntendő kérdéseket. Eldöntendő kérdések esetén a **Kérdések** oldalon a **Jelölőnégyzet**, **Választógomb** vagy a **Kombinált lista** opciót kell kiválasztani.
 -   Határozza meg az egyes válaszok pontjait a kérdésekhez rendelt válaszcsoportokban.
@@ -187,7 +194,8 @@ Ahhoz, hogy eredménycsoportokat használva kérdéseket csatoljon a kérdőívh
 
 Amennyiben kategóriánként szeretné kiértékelni a válaszadó pontjait, felállíthat több eredménycsoportot is. Kérdőív befejezése után, megtekintheti az egyes eredménycsoportokban elért pontszámokat. 
 
-**Tipp:** Amennyiben a kérdőívet pontok használatával kívánja kiértékelni, azonban nem akar különböző kategóriákat alkalmazni, az összes kérdést hozzá tudja adni egyetlen eredménycsoporthoz is. 
+> [!TIP]
+> Amennyiben a kérdőívet pontok használatával kívánja kiértékelni, de nem akar különböző kategóriákat alkalmazni, az összes kérdést hozzá tudja adni egyetlen eredménycsoporthoz is. 
 
 Az eredménycsoportokhoz csatolhat továbbá egy vagy több pontalapú üzenetet, melyeket a válaszadók a kérdőív kitöltése után kapnak meg. A megjelenített szöveg a válaszadó által elért pontszám függvényében változhat. A pontszám alapú üzenetek használatakor, ki kell jelölnie pontszám-tartományokat, valamint egy leírást minden egyes tartományhoz. Mikor a válaszadó elér egy bizonyos pontszámot, az ahhoz a pontszám-tartományhoz tartozó szöveg megjelenik az eredményjelentésben. 
 
@@ -213,13 +221,15 @@ Az alábbi táblázatban azok a pontalapú üzenetek láthatóak, melyek a „ve
 
 A kérdőív minden eredménycsoportjához állíthat be ponthatárokat és szövegeket. A válaszadók pontjaira reflektáló szövegek minden eredménycsoportnál megjelennek. 
 
-**Megjegyzés**: A ponthatárok és a szövegek változtathatóak. Amennyiben egy kérdőív már ki van töltve, a változtatások eltéréseket okozhatnak a régi és az új eredmény kimutatások között.
+> [!NOTE]
+> A ponthatárok és a szövegek változtathatóak. Amennyiben egy kérdőív már ki van töltve, a változtatások eltéréseket okozhatnak a régi és az új eredmény kimutatások között.
 
 ### <a name="conditional-question-hierarchies"></a>Feltételes kérdés hierarchiák
 
 A feltételes egymáson alapuló kérdések használata opcionális kérdőív készítésekor. 
 
-**Megjegyzés**: Feltételes egymáson alapuló kérdések beállítása előtt, válaszcsoportokhoz rendelt kérdéseket kell adni a kérdőívhez. 
+> [!NOTE]
+> Feltételes egymáson alapuló kérdések beállítása előtt válaszcsoportokhoz rendelt kérdéseket kell adni a kérdőívhez. 
 
 Amennyiben a kérdőívben egymásra alapuló kérdéseket szeretne létrehozni, a feltételes kérdések használatakor beállíthatja, hogy a sorozatban szereplő kérdések a válaszadó által adott válaszok alapján alakuljanak. Azáltal, hogy a kérdéssorozatot a kitöltő személy válaszaira alapozza, személyre szabott kérdőíveket hozhat létre.
 
@@ -232,9 +242,9 @@ Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a vá
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Kérdőívek használata](questionnaires.md)
+[Kérdőívek](questionnaires.md)
 
-[Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
+[Kérdőívek terjesztése és ütemezése](distribute-questionnaires.md)
 
-[Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
+[A kérdőívek eredményeinek megtekintése és kiértékelése](evaluate-questionnaire-results.md)
 

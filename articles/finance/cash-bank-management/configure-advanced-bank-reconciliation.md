@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178125"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772628"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Továbbfejlesztett banki egyeztetés beállításának folyamata
 
@@ -31,7 +31,7 @@ ms.locfileid: "2178125"
 
 A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.  
 
-Számos darabot a továbbfejlesztett banki egyeztetés funkció használata előtt be kell állítani. A Bankkivonat importálásának beállításával kapcsolatos további tudnivalókért lásd: [A banki kivonat importálási folyamatának beállítása](set-up-advanced-bank-reconciliation-import-process.md).  Az egyeztetési folyamatra vonatkozó követelmények alább vannak részletezve.
+Számos darabot a továbbfejlesztett banki egyeztetés funkció használata előtt be kell állítani. További információ a banki kivonat importálásának beállításáról: [Továbbfejlesztett banki egyeztetés importálási folyamata](set-up-advanced-bank-reconciliation-import-process.md).  Az egyeztetési folyamatra vonatkozó követelmények alább vannak részletezve.
 
 ## <a name="transaction-codes"></a>Tranzakciókódok
 A tranzakciókódok a banki egyeztetési szabályok részeként használhatók. Tranzakciókódok segítségével biztosítható, hogy csak az azonos típusú tranzakciók kerüljenek egyeztetésre a Finance és a bankszámlakivonat között. Ezen típusú egyeztetés végrehajtásához először meg kell határozni a banki tranzakciókhoz használt tranzakciótípusokat a Finance alkalmazásból, majd e típusokat hozzá kell rendelni a bank kivonatán szereplő tranzakciókódokhoz. A banki tranzakciók tranzakciótípusai a **Banki tranzakciótípusok** lapon vannak meghatározva. Itt adhatja meg a tranzakció típusával társított feladásokhoz használt fő számlát is. 

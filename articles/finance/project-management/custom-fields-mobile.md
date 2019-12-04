@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174887"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773645"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Egyéni mezők megvalósítása a Microsoft Dynamics 365 Project Timesheet mobilalkalmazás számára iOS és Android rendszeren
 
@@ -321,13 +321,9 @@ Alul látható egy képernyőkép a mobilalkalmazásból egy felhasználóról, 
 
 ![További részletek megtekintése parancs](media/show-more.png)
 
-
-
 Alul látható egy képernyőkép a mobilalkalmazásból az időnyilvántartás „Továbbiak” szakaszáról. Az időnyilvántartás fejléc szakaszába hozzáadtak egy „Időnyilvántartás kihasználtsági rátája (számított egyéni mező)” egyéni mezőt. Egy írásvédett "0,667" értékű érték van megadva az egyéni mezőben.
 
 ![Továbbiak szakasz](media/more-section.jpg)
-
-
 
 ### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a>A TSTimesheetTable táblájának bővítése, hogy egyéni mezőt tartalmazzon
 

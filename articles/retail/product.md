@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278380"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811117"
 ---
 # <a name="product-recommendations-on-pos"></a>Termékajánlatok a POS esetében
 
@@ -40,13 +40,13 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
 
 1. A **Termékadatok kezelése** oldalon:
 
-    - • Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákat lefedve, az ajánlások szolgáltatás további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
+    - Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákon keresztül, az ajánlások szolgáltatás további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
 
     [![Javaslatok a Termék részletei oldalon](./media/proddetails.png)](./media/proddetails.png)
 
 2. A **Tranzakció** oldalon:
 
-    - • Az ajánlási motor a kosárban lévő, gyakran együttesen vásárolt cikkek teljes listája alapján javasolja a cikkek elemeit.
+    - Az ajánlási motor a kosárban lévő, gyakran együttesen vásárolt cikkek teljes listája alapján javasolja a cikkek elemeit.
 
     > [!NOTE]
     > Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést a Dynamics 365 for Retail rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra.
@@ -69,10 +69,12 @@ A termékajánlások beállításához kövesse az alábbi lépéseket:
 
 - Keresse meg a **Kiskereskedelmi paraméterek** \> **Ajánlási lista** \> **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat \[9999\]** elemet. 
 - Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is.
-- További tájékoztatásért tekintse meg: [Javaslatok GYIK](../commerce/faq-recommendations.md).
+- További tájékoztatásért tekintse meg: [Termékjavaslatok GYIK](../commerce/faq-recommendations.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Ajánlások vezérlő hozzáadása egy POS-eszköz tranzakció lapján](add-recommendations-control-pos-screen.md)
+[Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](add-recommendations-control-pos-screen.md)
+
 [Termékajánlatok áttekintése](../commerce/product-recommendations.md)
+
 [Termékajánlatok engedélyezése](../commerce/enable-product-recommendations.md) 

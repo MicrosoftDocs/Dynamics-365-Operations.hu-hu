@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a649fdbc355b3382bc6c80be03f8b37a06d5226
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c31116ba234bd1fce445ac382fe8f8aea263a66
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178080"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769477"
 ---
 # <a name="derived-books"></a>Származtatott könyvek
 
@@ -44,7 +44,7 @@ A tranzakció feladása során a program a B könyvben és a C könyvben is lét
 > [!NOTE]                                                                                                                               
 > Azokat a könyveket, amelyek úgy vannak beállítva, hogy az elsődleges könyv feladási időközeitől eltérő időközönként adják fel a tranzakciókat, külön könyvként (nem származtatott könyvként) kell a tárgyi eszközhöz társítani.  
 
-További információért lásd: [Feladás származtatott könyvekkel](post-derived-value-models.md).
+További információ: [Feladás származtatott könyvekkel](post-derived-value-models.md).
 
 
 

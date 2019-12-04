@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181749"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771119"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a PowerBI.com megoldás elavult a következő dokumentációban ismertetettek szerint: [Rendelkezésre álló Power BI tartalomcsomagok az AppSource felületén](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Ez a PowerBI.com megoldás elavult, ahogy az az [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) részben dokumentálva van.
 
 Ez a témakör ismerteti a **Pénzügyi teljesítmény** PowerBI.com megoldást. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 

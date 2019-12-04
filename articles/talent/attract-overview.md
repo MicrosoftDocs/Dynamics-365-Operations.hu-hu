@@ -1,5 +1,5 @@
 ---
-title: A Microsoft Dynamics 365 Talent Attract funkciói és lehetőségei
+title: Az Attract funkciói és lehetőségei
 description: Ez a témakör leírja a Microsoft Dynamics 365 Talent - Attract funkcióit az új tehetségek felvételi folyamatához.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552071"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833069"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>A Microsoft Dynamics 365 Talent Attract funkciói és lehetőségei
+# <a name="attract-features-and-capabilities"></a>Az Attract funkciói és képességei
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Az Attract tartalmaz egy előre definiált felvételi folyamatot, amely négy al
 A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben kapnak egy hivatkozást a webes alkalmazás letöltéséhez. Az alkalmazás információkat ad a munkakör részleteivel kapcsolatban, és ez az eszköz szolgál a felvételi csapattal való kommunikációra. A pályázók az interjúkra vonatkozó elérhetőségüket is elküldhetik vele.
 
 ## <a name="analytic-reports"></a>Analitikus jelentések
-A felvételi csoportok megtekinthetnek kulcsfontosságú, felvételi folyamatra vonatkozó mutatókat egy állásra, vagy az összes állásra vonatkozó összesített mutatókat az [analitikus jelentésekben az Attract szolgáltatásban](analytic-reports.md). Ez a funkció jelenleg [előzetes verzióban](access-preview-feature.md) elérhető az [Átfogó felvételi bővítménynyel](attract-comprehensive-hiring.md) rendelkező ügyfelek számára.
+A felvételi csoportok megtekinthetnek kulcsfontosságú, felvételi folyamatra vonatkozó mutatókat egy állásra, vagy az összes állásra vonatkozó összesített mutatókat az [analitikus jelentésekben az Attract szolgáltatásban](analytic-reports.md). Ez a funkció jelenleg [előzetes verzióban](access-preview-feature.md) használható a [Melyik Microsoft Dynamics 365 Talent – Attract-verzió](attract-comprehensive-hiring.md) ügyfelei számára.

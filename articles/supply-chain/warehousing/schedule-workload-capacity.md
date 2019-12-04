@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559032"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814927"
 ---
 # <a name="schedule-workload-capacity"></a>Ütemezés terhelési kapacitása
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559032"
 
 A raktárak esetében lehetősége van terhelési kapacitás ütemezésére, és a jelenlegi és jövőbeli terhelés meghatározására az egyes raktárakat illetően. Akár az egész raktár terhelését, vagy a bejövő és kimenő terhelést külön-külön is meghatározhatja.
 
-A kiválasztott raktárak terhelésének meghatározása érdekében elérhetővé kell tenni a raktárak alapütemezésre vonatkozó adatait. További informáciért lásd: [Alaptervek](../master-planning/master-plans.md).
+A kiválasztott raktárak terhelésének meghatározása érdekében elérhetővé kell tenni a raktárak alapütemezésre vonatkozó adatait. További informáciért lásd: [Alaptervek áttekintése](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Egy adott raktár terhelésének ütemezése és megtekintése
 

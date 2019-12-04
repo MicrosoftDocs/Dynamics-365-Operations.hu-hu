@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187912"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770850"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimenziók létrehozása és dimenziótagok importálása
 
@@ -44,11 +44,10 @@ A következő ábra bemutatja a költségkönyvelésben használt dimenziókat.
 Miután a költségkönyvelésbe importálta az adatokat, különféle szempontok létrehozásához használhatja, hogy információkat nyújthasson a vezetőknek a szervezet minden szintjén. Az alábbi témakörök a dimenziók létrehozásával és a dimenziótagok importálásával kapcsolatban nyújtanak tájékoztatást. 
 
 -  [Költségösszetevő-dimenziók](cost-elements.md)
--  [Költségösszetevők létrehozása (feladat-útmutató)](./tasks/create-cost-elements.md)
+-  [Költségösszetevők létrehozása](./tasks/create-cost-elements.md)
 -  [Költségobjektum-dimenziók](cost-objects.md)
--  [Költségösszetevők létrehozása (feladat-útmutató)](./tasks/create-cost-objects.md)
 -  [Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez](map-cost-elements-dimension-members.md)
--  [Költségösszetevő-dimenzió feltérképezése (feladat-útmutató)](./tasks/map-cost-element-dimension.md)
+-  [Költségösszetevő-dimenzió feltérképezése](./tasks/map-cost-element-dimension.md)
 -  [Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok](statistical-measure-provider-template.md)
 
 

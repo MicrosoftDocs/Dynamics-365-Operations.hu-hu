@@ -3,7 +3,7 @@ title: Raktári munka halasztott feldolgozása
 description: Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a raktári munkakelések késleltetett feldolgozását a Dynamics 365 Supply Chain Management programban.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026922"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815788"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Raktári munka halasztott feldolgozása
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026922"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a késleltetett feldolgozást raktári munkákhoz a Dynamics 365 Supply Chain Management programban.
-
 
 A halasztott feldolgozási funkciók esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A halasztott feldolgozás akkor hasznos, ha több munkasort kell feldolgozni, és a dolgozó lehetővé tudja tenni a munka aszinkron feldolgozását. Akkor is hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a felhasználó termelékenységére.
 
@@ -50,6 +49,8 @@ A házirendek a **Munkafeldolgozási házirendek** lapon vannak konfigurálva. A
 | Munkafeldolgozási módszer          | A munkasor feldolgozásához használt módszer. Ha a metódus beállítása **Azonnali**, a működés hasonlít arra viselkedésre, amikor a sor feldolgozásához nem használnak munkafeldolgozási irányelvet. Ha a metódus **Halasztott**értékre van állítva, a rendszer a kötegkeretrendszert használó halasztott feldolgozást használja. |
 | Halasztott feldolgozási küszöbérték   | A **0** (nulla) érték azt jelzi, hogy nincs küszöbérték. Ebben az esetben a halasztott feldolgozás lesz használva, ha használható. Ha a meghatározott küszöbérték kiszámítása a küszöbérték alatt van, az azonnali módszer lesz használva. Máskülönben a rendszer a Halasztott metódust használja, ha az használható. Az értékesítéssel és átadással kapcsolatos munkák esetében a küszöbérték számítása a munka során a hozzárendelt forrás terhelésisorok száma szerint történik. Feltöltési munka esetén a küszöb kiszámítása a munka során feltöltött munkasorok számának használatával történik. Ha például az eladásokhoz **5** értéket ad meg a küszöbértékhez a kisebb munkák, amelyeknek kevesebb, mint öt kezdeti forrássora van, nem fogják használni a halasztott feldolgozást, de a nagyobb munkák igen. A küszöbérték csak akkor érvényes, ha a munka feldolgozási módszere **Halasztott**. |
 | Halasztott feldolgozási kötegcsoport |A feldolgozáshoz használt kötegcsoport. |
+
+A halasztott betárazási feldolgozás a következő munkarendelési típusokat támogatja: értékesítési rendelés, átmozgatási rendelés kiadása és feltöltés.
 
 ## <a name="assigning-the-work-creation-policy"></a>A munkalétrehozási irányelv hozzárendelése
 
@@ -99,7 +100,7 @@ Számos olyan forgatókönyv van, ahol a halasztott betárazási feldolgozás ne
 - Manuális munkabefejezést használnak.
 - A munkát automatikus befejezéssel végzik el.
 - Auditsablonok használata.
-- A munka konténereket használ.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>A halasztott feldolgozási feladatok figyelése egy Kimenő munkamegfigyelési munkaterületről
 

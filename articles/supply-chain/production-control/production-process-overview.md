@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c25b5f6a4aa6f2742ee5e41039f3f5511715e3b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250018"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814237"
 ---
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
@@ -82,9 +82,9 @@ Az alábbi lépések a gyártás életciklusában felléphetnek minden rendelés
 
 [Termelési visszajelzés](production-feedback.md)
 
-[Termékkonfigurációs modellek](../pim/product-configuration-models.md)
+[Termékkonfigurálási modellek áttekintése](../pim/product-configuration-models.md)
 
-[Lean manufacturing (lean gyártás)](lean-manufacturing-overview.md)
+[Lean manufacturing (áttekintés)](lean-manufacturing-overview.md)
 
 
 

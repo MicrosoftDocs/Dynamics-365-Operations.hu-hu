@@ -1,6 +1,6 @@
 ---
-title: Intelligens ajánlások
-description: Ez a témakör bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak.
+title: Intelligens ajánlások az Attract szolgáltatásban
+description: Ez a cikk bemutatja, hogyan használható a gépi tanulás ajánlások nyújtására a feladatokhoz és a feladatokra pályázóknak a Microsoft Dynamics 365 Talent - Attract szolgáltatásban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741752"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832791"
 ---
-# <a name="intelligent-recommendations"></a>Intelligens ajánlások
+# <a name="intelligent-recommendations-in-attract"></a>Intelligens ajánlások az Attract szolgáltatásban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A gépi tanulás segít a toborzóknak és a felvételi menedzsereknek a munkakör legjobb jelöltjeinek gyors azonosításában. A potenciális jelölteknek is segíthet olyan munkakör keresésében, amely leginkább illik a profiljukhoz és az érdeklődésükhöz. A funkciók használatával és a beérkező visszajelzésekkel az ajánlások javulni fognak.
 
 > [!NOTE] 
 > - Az intelligens ajánlási funkciók csak az [Átfogó felvételi bővítménnyel](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) érhetők el.
-> - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. A funkció használatához kérje meg a rendszergazdát az engedélyezésére a **Felügyeleti központ** pontban az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](./access-preview-feature.md). 
+> - A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. A funkció használatához kérje meg a rendszergazdát az engedélyezésére a **Felügyeleti központ** pontban az Attract megoldásban. Állítsa **Jelölt ajánlás**, **Állás ajánlás**, és **Potenciális jelöltek ajánlása** mezőket **Be** értékre. További tudnivalókért lásd: [Előzetes funkciókhoz való hozzáférés a Microsoft Dynamics 365 Talent szolgáltatásban](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Jelentkező ajánlásai

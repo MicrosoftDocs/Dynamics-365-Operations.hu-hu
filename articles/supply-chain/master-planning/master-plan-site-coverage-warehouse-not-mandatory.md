@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9475a7fbe40d7feb60c23e0d7164222469dffa75
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 43989f95764a60dc7f5662ef74c005c5fddaa275
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552322"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813731"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Alaptervezés helyfedezethez, a raktár nem kötelező
 
@@ -51,15 +51,15 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Az alaptervezés és a többhelyes funkció](master-plan-multisite-functionality.md)
+[Az alaptervezés és a többhelyes funkció áttekintése](master-plan-multisite-functionality.md)
 
-[Alaptervezés - helyfedezet, a raktár kötelező](master-plan-site-coverage-warehouse-mandatory.md)
+[Telephely és raktárfedezet alaptervezése, kötelező raktár](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Alaptervezés - hely és raktár fedezet, a raktár nem kötelező](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Alaptervezés telephely-lefedettséghez, kötelező raktár](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Alaptervezés - hely és raktár fedezet, a raktár kötelező](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Alaptervezés helyfedezethez, a raktár nem kötelező](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Alaptervezés - anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
+[Anyagjegyzék-verzió meghatározása](master-plan-bom-version-determined.md)
 
 
 

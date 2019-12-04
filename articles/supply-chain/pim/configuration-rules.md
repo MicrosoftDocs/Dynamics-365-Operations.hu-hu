@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13f37cb4e472e91862e963a4952adcf61e6adcea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2d81bb8e570b61d214ab3f6b7c40c1135977f9ee
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555931"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813638"
 ---
 # <a name="configuration-rules"></a>Konfigurációs szabályok
 
@@ -42,7 +42,7 @@ A létező konfigurációkra nem vonatkoznak a konfigurációs szabályok késő
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Dimenzión alapuló termékkonfiguráció](dimension-based-product-configuration.md)
+[Dimenzión alapuló termékkonfiguráció áttekintése](dimension-based-product-configuration.md)
 
 
 

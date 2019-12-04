@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 448fceccb507bec5b60b686043a303c1997a9ac0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 0b0be541416d2e4be78da223ec8e95c195d90bbc
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742671"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832636"
 ---
 # <a name="track-changes-in-recruiting-data"></a>A toborzási adatok változásainak nyomon követése
+
+[!include [banner](includes/banner.md)]
 
 Nyomon követheti a jelentkezők, álláslehetőségek vagy a pályázatok változásait a könyvvizsgálati feldolgozással. Ez a jelentésekhez és a megfelelési célból is használható.
 
@@ -31,7 +33,7 @@ A nyomon követett adatok az OData-csatlakozó használatával tekintheti meg a 
 ## <a name="track-changes"></a>Változások követése
 Ha be szeretné állítani a toborzási adatok nyomon követését, hajtsa végre az alábbi lépéseket:
 
-1. A [PowerApps](https://web.powerapps.com) megoldásban válassza ki a megfelelő környezetet.
+1. A [Power Apps](https://web.powerapps.com) megoldásban válassza ki a megfelelő környezetet.
 
 2. Válassza a **Beállítások** (fogaskerék ikon), válassz a **Speciális testreszabások** elemet, majd válassza ki az **Erőforrások elemet** a **Fejlesztői erőforrások** alatt. 
 

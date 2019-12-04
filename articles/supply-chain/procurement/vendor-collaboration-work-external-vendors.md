@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653602"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815295"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
@@ -218,7 +218,7 @@ Bizományosi készlet használatakor a szállító a szállítói együttműköd
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Ajánlatkérések kezelése szállítói együttműködési használata esetén
 
-Ez a szakasz a vevők és szállítók közötti interakciókat írja le az ajánlatkérési folyamat során. Azt is bemutatja, hogyan tájékoztatja a rendszer a szállítókat az információkról. Ha alapszintű áttekintést szeretne az ajánlatkérési folyamat támogatásáról, lásd a következő részt: [Ajánlatkérések](request-quotations.md).
+Ez a szakasz a vevők és szállítók közötti interakciókat írja le az ajánlatkérési folyamat során. Azt is bemutatja, hogyan tájékoztatja a rendszer a szállítókat az információkról. Ha alapszintű áttekintést szeretne az ajánlatkérési folyamat támogatásáról, lásd a következő részt: [Ajánlatkérések (RFQ-k) áttekintése](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternatívák, mellékletek, módosítások és visszáruk
 

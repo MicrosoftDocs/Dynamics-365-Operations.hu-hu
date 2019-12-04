@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 88b73c206218030ce49e54609582c38c05b1c7c2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559627"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813316"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -108,7 +108,7 @@ A valamely munkafolyamatban beállított kiadásellenőrök használatához be k
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Felhasználási igénylés létrehozása (Feladat-útmutató)](tasks/create-requisition-consumption.md)
+[Felhasználási igénylés létrehozása](tasks/create-requisition-consumption.md)
 
 [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

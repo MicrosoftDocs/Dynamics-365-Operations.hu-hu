@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547101"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813593"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Kalkulációk a termékkonfigurációs modellekhez - GYIK
 
@@ -37,7 +37,7 @@ A számítások aritmetikai vagy logikai műveletekhez is használhatóak. A ter
 ## <a name="what-is-a-calculation"></a>Mi a számítás?
 A számítás olyan elem, amelyet egy termékkonfigurációs modellben használhat. A számítások kiegészítik a megszorításokat a kívánt termék konfigurálásakor a tizedesértékek használatával az értékek számításához. Ezenkívül a számítások nagyobb elérhető operátorkészlettel rendelkeznek mint a megszorítások.  
 
-A megszorításhoz hasonlóan egy számítás adott összetevővel társítható a termékkonfigurációs modellben, és másik összetevő nem használhatja fel újra, vagy egy másik összetevővel nem osztható meg. Egy fontos különbség azonban a megszorításokhoz képest, hogy a számítások imperatív (egyirányú) jellegűek, míg a megszorítások deklaratívak (kétirányúak). További tudnivalók a megszorításokról: [Kifejezés megszorítások és táblamegszorítások](expression-constraints-table-constraints-product-configuration-models.md).  
+A megszorításhoz hasonlóan egy számítás adott összetevővel társítható a termékkonfigurációs modellben, és másik összetevő nem használhatja fel újra, vagy egy másik összetevővel nem osztható meg. Egy fontos különbség azonban a megszorításokhoz képest, hogy a számítások imperatív (egyirányú) jellegűek, míg a megszorítások deklaratívak (kétirányúak). További tudnivalók a megszorításokról: [A termékkonfigurációs modellek kifejezés- és táblamegszorításai](expression-constraints-table-constraints-product-configuration-models.md).  
 
 A számítás célattribútumból és számítási kifejezésből áll.
 
@@ -88,7 +88,7 @@ Szám A termék konfigurálásakor beállított értékek a használt értékek.
 Ha eltávolít egy bemeneti értéket a számításban, a célattribútum értéke is törlődik.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Miért jelenik meg hibaüzenet, amely szerint a modell ellentmondásos?
-Ez az üzenet jelenik meg, ha a számításban hiba vagy ellentmondás szerepel egy vagy több megszorításban. További tudnivalók a megszorítások ellentmondásairól: [Kifejezés megszorítások és táblamegszorítások](expression-constraints-table-constraints-product-configuration-models.md). Az alábbiakban néhány olyan helyzetet mutatunk be, amelynél hibák léphetnek fel a számításokban:
+Ez az üzenet jelenik meg, ha a számításban hiba vagy ellentmondás szerepel egy vagy több megszorításban. További tudnivalók a megszorításokban lévő ellentmondásokról: [A termékkonfigurációs modellek kifejezés- és táblamegszorításai](expression-constraints-table-constraints-product-configuration-models.md). Az alábbiakban néhány olyan helyzetet mutatunk be, amelynél hibák léphetnek fel a számításokban:
 
 -   Az érték nulla értékkel történő elosztásakor.
 -   Ellentmondás áll fenn az alábbi két elem között:

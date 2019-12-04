@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248980"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813523"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködés a szállítókkal a Szállítói portálon keresztül
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248980"
 
 Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
 
-Az ebben a témakörben olvasható információk csak a Dynamics AX 2016 februári és 2016 májusi verzióira vonatkoznak. Az új szállítói együttműködés funkcióval kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](vendor-collaboration-work-external-vendors.md).  
+Az ebben a témakörben olvasható információk csak a Dynamics AX 2016 februári és 2016 májusi verzióira vonatkoznak. Az új szállítói együttműködés funkcióval kapcsolatos további tudnivalók: [Szállítói együttműködés külső szállítókkal](vendor-collaboration-work-external-vendors.md).  
 
 A Szállítói portál olyan szállítók számára készült, akik nem rendelkeznek Microsoft Dynamics AX electronic data interchange (EDI) integrációval a beszerzés rendelés (PO) információjának cseréjéhez. A portál lehetővé teszi, hogy a megbízott beszerzők a szállítóknak küldjék a PO-t, és közvetlenül a Dynamics AX-től kapják a Megerősítve vagy Elutasítva válaszokat.  
 
@@ -98,9 +98,9 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Biztonsági funkciók konfigurálása a szállítói együttműködés felhasználói számára](configure-security-vendor-portal-users.md)
+[Felhasználói biztonság a szállítói portálon](configure-security-vendor-portal-users.md)
 
-[Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Szállítói együttműködés számlázási munkaterülete](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652356"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811263"
 ---
 # <a name="item-where-used"></a>Cikk használati helye
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652356"
 
 Egy adott cikkhez számítást készíthet, amely áttekintést nyújt arról, hogy hol volt használatban a cikk az Eszközkezelésben. Az eredmények megmutatják a kontextust, amelyben a cikk használva volt az élettartama során. A **Hol van az eszköz használva** lapot a fő Eszközkezelés menüből lehet megnyitni, és a következő oldalakról is elérhető:
 
-- [Eszköz DBJ](../objects/object-BOM.md)
+- [Eszköz DBJ-k](../objects/object-BOM.md)
 
-- [Pótalkatrészek az eszköztípus alapértelmezéseken](../setup-for-objects/object-types.md)
+- [Pótalkatrészek az eszköztípus alapértelmezéseken](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [A karbantartási feladattípus alapértelmezett előrejelzések cikkekelőrejelzései](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Munkarendelés karbantartási előrejelzése](../work-orders/maintenance-forecasts.md)
+- [Karbantartási előrejelzés](../work-orders/maintenance-forecasts.md)
 
-- [Munkarendelés beszerzési igénylése](../work-orders/procurement.md)
+- [Beszerzés](../work-orders/procurement.md)
 
 - [Munkarendelés beszerzése](../work-orders/procurement.md)
 

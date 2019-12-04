@@ -3,7 +3,7 @@ title: Fizetőeszköz-alapú kedvezmények
 description: Ez a témakör áttekintést nyújt azokról a funkciókról, amelyekkel a kiskereskedők meghatározott fizetőeszköz-típusokra vonatkozóan engedményeket konfigurálnak.
 author: bebeale
 manager: AnnBe
-ms.date: 10/25/19
+ms.date: 10/30/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 245ee647a3b86303df046fda5bba406c7a2485b5
-ms.sourcegitcommit: b0c176d5d24939307c6d0a6dbe7656007ca53710
+ms.openlocfilehash: ed17b43ac16ebcd310716271b84bbbd904a3253a
+ms.sourcegitcommit: dc31a0f0d9216aa05be76046ac7410702b20706f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2673565"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692223"
 ---
 # <a name="tender-based-discounts"></a>Fizetőeszköz-alapú kedvezmények
 
@@ -35,11 +35,12 @@ Elterjedt gyakorlat a kiskereskedők között a saját márkás hitelkártyák k
 
 A sajátmárkás hitelkártyát nem alkalmazó kiskereskedők emellett a vevők számára ajánlott egyéb fizetőeszköz-típusokkal , például készpénz, ajándékutalvány vagy hűségpontok használatával történő fizetésre is ösztönözni szeretnék a vevőket. Ily módon segít csökkenteni a hitelkártyadíjakhoz kapcsolódó költségeket. Ennélfogva a kiskereskedők kedvezményeket biztosíthatnak azoknak a vevőknek, akik ezeket az alternatív fizetőeszköz-típusokat használják.
 
-A Microsoft Dynamics 365 Retail alkalmazásban a kiskereskedők a minősített sorokra alkalmazott engedmény-százalékot állíthatnak be, ha a vevő a preferált fizetőeszköz-típussal fizet. A vevő eldöntheti, hogy részleges vagy teljes fizetést hajt-e végre, és a Retail határozza meg a megfelelő engedmény összegét. Ne feledje, hogy a kedvezmény mindig a jogosult cikkek nettó összegére vonatkozik.
+A Microsoft Dynamics 365 Retail alkalmazásban a kiskereskedők a minősített sorokra alkalmazott engedményszázalékot állíthatnak be, ha a vevő a preferált fizetőeszköz-típussal fizet. A vevő eldöntheti, hogy részleges vagy teljes fizetést hajt-e végre, és a Retail határozza meg a megfelelő engedmény összegét. Ne feledje, hogy a kedvezmény mindig a jogosult cikkek nettó összegére vonatkozik.
 
 A fizetőeszköz-alapú engedmények nem versengenek a cikkalapú engedményekkel, például az időszakos vagy a manuális engedményekkel. Ezek a cikkek mindig a cikkengedményekre vannak alkalmazva. Ennek megfelelően még akkor is, ha a termékre egy exkluzív időszakos kedvezményt alkalmaznak, a fizetőeszköz-alapú engedményt a program továbbra is a az exkluzív időszaki engedményen túl alkalmazza. Hasonlóképpen, ha küszöbértéket alapú kedvezményt alkalmaznak, és a fizetőeszköz-alapú kedvezmény csökkenti a végösszeget az értékhatár alá akkor a program a tranzakcióra alkalmazza az értékhatár alapú kedvezményt
 
 Bár a fizetőeszköz-alapú engedmények csökkentik a tranzakció részösszegét, a tranzakcióra alkalmazott automatikus díjakat nem érintik. Ha például a szállítási költség számított díja 5 dollár, mert a részösszeg több mint 100 dollár, és a fizetőeszköz-alapú kedvezmény úgy csökkenti az összeget, hogy az 100 dollárnál kisebb legyen, a szállítási költség továbbra is 5 dollár a rendeléshez.
+
 
 > [!NOTE]
 > A tender-alapú kedvezmények arányosan oszlanak el a jogosult értékesítési sorokra, és csökkentik az egyes sorok nettó összegét. Ha több fizetőeszköz-alapú engedmény van beállítva egy fizetőeszköz-típushoz (például készpénz), akkor csak a legkedvezőbb fizetőeszköz-alapú kedvezményt alkalmazza a program.
@@ -57,6 +58,7 @@ Kártyás fizetések esetén a kiskereskedők egy vagy több típusú hitelkárt
 
 Ha meg szeretné akadályozni ezt a helyzetet, amikor a vevő hitelkártyával fizet, akkor a pénztáros számára párbeszédpanel jelenik meg, amely felsorolja azokat a hitelkártyákat, amelyek a vevő számára további megtakarítást eredményeznek. A pénztáros ezután megkérdezi, hogy a vevő szeretné-e a preferált kártyák egyikét használni a további engedmények megszerzéséhez. Ha a pénztáros preferált kártyát alkalmaz, a program a fizetőeszköz-alapú kedvezményt alkalmazza a tranzakcióra, és a csökkentett összeg megjelenik a fizetési képernyőn. A rendszer az engedélyezést a csökkentett összeghez rendeli. Ha a vevő olyan kártyát helyez be, amely eltér a pénztáros által kiválasztott kártyától, akkor egy hibaüzenet jelenik meg, és érvénytelenítve van az engedélyezés.
 
+
 ## <a name="call-center-user-experience"></a>Hívásközpont felhasználói élmény
 
 Amikor a felhasználó a hívásközponti rendelése során kiválasztja a **Befejezést**, megjelenik a **Végösszeg** képernyő. Először a képernyőn szereplő összegek nem tartalmazzák a fizetőeszköz-alapú engedményeket, mivel a fizetési mód még nincs kiválasztva. Ha a felhasználó a **Fizetés hozzáadása** képernyőn kiválasztja azt a fizetési módot, amelyre a fizetőeszköz-alapú engedmény be van állítva, akkor a program automatikusan helyesbíti a kifizetési összeget, hogy az tükrözze a kedvezménes összeget. A POS rendszer vevőjéhez hasonlóan a hívásközponti ügyfél eldöntheti, hogy kifizeti-e a teljes összeget vagy csak egy részét. A kifizetett összeg alapján a program alkalmazza a fizetőeszköz-alapú engedményt az értékesítési rendelésre.
@@ -66,7 +68,7 @@ Amikor a felhasználó a hívásközponti rendelése során kiválasztja a **Bef
 
 ## <a name="exclude-items-from-discounts"></a>Cikkek kizárása a kedvezményekből
 
-A kereskedők gyakran úgy döntenek, hogy a kedvezményekből kizárnak néhány terméket, például az új cikkeket vagy a népszerű cikkeket. Előfordulhat azonban, hogy a fizetőeszköz alapú kedvezményeket mégis alkalmazni szeretné. Például egy kiskereskedő konfigurálja a Retail alkalmazást úgy, hogy nem engedélyezi a cikkalapú engedményeket vagy a manuális engedményeket. Ha azonban a vevő a preferált fizetőeszközzel fizet, akkor a Retail továbbra is alkalmazza a fizetőeszköz-alapú engedményt. A kiskereskedelem ily módon történő beállításához a kiskereskedőknek ki kell kapcsolniuk az **Minden engedmény megakadályozása** és a **Fizetőeszköz-alapú kedvezmények** megakadályozása és a **Kereskedelmi engedmények megakadályozása** vagy a **Manuális engedélyek megakadályozása** beállításokat. A lehetőségek a **Közzétett termékek** oldalon, a **Retail** lapon találhatók.
+A kereskedők gyakran úgy döntenek, hogy a kedvezményekből kizárnak néhány terméket, például az új cikkeket vagy a népszerű cikkeket. Előfordulhat azonban, hogy a fizetőeszköz alapú kedvezményeket mégis alkalmazni szeretné. Például egy kiskereskedő konfigurálja a Retail alkalmazást úgy, hogy nem engedélyezi a cikkalapú engedményeket vagy a manuális engedményeket. Ha azonban a vevő a preferált fizetőeszközzel fizet, akkor a Retail továbbra is alkalmazza a fizetőeszköz-alapú engedményt. A Retail ilyen módú beállítása érdekében a kiskereskedőknek a **Termékinformációk kezelése > Termékek > Kiadott termékek** pontra kell lépniük, kiválasztaniuk a cikket, majd a **Kiskereskedelem** gyorslapon be kell állítaniuk az **Összes engedmény megakadályozása** és **Fizetőeszköz-alapú engedmények megakadályozása** beállításokat **Nem** értékre, a **Kiskereskedelmi engedmények megakadályozása** és a **Manuális engedmények megakadályozása** beállításokat **Igen** értékre.
 
 > [!NOTE]
-> Ha be van kapcsolva az **Összes engedmény megakadályozása** beállítás, akkor a termékre nem vonatkoznak engedmények. A program még a fizetőeszköz-alapú engedményeket sem alkalmazza.
+> Ha az **Összes engedmény megakadályozása** konfiguráció **Igen** értékre van állítva, akkor a termékre nem alkalmazhatnak engedményeket. A program még a fizetőeszköz-alapú engedményeket sem alkalmazza.

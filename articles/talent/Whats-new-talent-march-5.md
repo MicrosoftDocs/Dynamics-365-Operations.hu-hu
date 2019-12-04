@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 561b6fad0facad86e9a7bc8f36218ab98fcec73c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026670"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773265"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 5.)
 
@@ -71,7 +71,7 @@ Ezzel a módosítással a meglévő beosztások módosításának kérelme sorá
 További kisebb hibajavítások ebben a verzióban.
 
 ### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
-A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen a PowerApps felügyeleti központba annak meghatározásához, hogy kell-e az adatbázist frissíteni. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
+A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen a Power Apps felügyeleti központba annak meghatározásához, hogy kell-e az adatbázist frissíteni. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="coming-soon"></a>Hamarosan
 

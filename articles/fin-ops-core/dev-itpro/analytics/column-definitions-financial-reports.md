@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572641"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771541"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -598,6 +598,6 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Sordefiníciók a pénzügyi jelentésben](row-definitions-financial-reporting.md)
+[Sordefiníciók a pénzügyi jelentéstervezőben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)

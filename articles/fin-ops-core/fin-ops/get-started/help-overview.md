@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537832"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811672"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -82,7 +82,7 @@ További tudnivalókért olvassa el a [közreműködői útmutatót](https://doc
 
 A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A Súgó ablakban megnyithatja (lejátszhatja) a Feladat-útmutatót. Amikor először kattint a Feladat-útmutatóra a Súgó ablakban, láthatja lépésenként a feladathoz tartozó utasításokat. A honosított Feladat-útmutatók elérhetőek.
 
-A Microsoft feladatútmutató-könyvtárakat szállított a Dynamics 365 for Finance and Operations 2017 decemberi kiadásához. A [Feladat-útmutatók elérése a Súgó ablakból](help-overview.md#accessing-task-guides-from-the-help-pane) szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat.
+A Microsoft feladatútmutató-könyvtárakat szállított a Dynamics 365 for Finance and Operations 2017 decemberi kiadásához. A [Súgórendszer](help-overview.md#accessing-task-guides-from-the-help-pane) szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat.
 
 ![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat út
 > [!IMPORTANT]
 > A feladat-útmutató lejátszásakor megadott adatok valósak. Ha gyártási területen van, az adatok a használt vállalathoz kerülnek bejegyzésre.
 
-A Feladatrögzítő segítségével létrehozhatja saját egyéni feladat-útmutatóit. További tudnivalókért lásd: [Dokumentáció vagy képzés létrehozása a feladatrögzítések segítségével](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+A Feladatrögzítő segítségével létrehozhatja saját egyéni feladat-útmutatóit. További tudnivalókért lásd: [Dokumentáció vagy képzés létrehozása a Feladatrögzítővel](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Termékbe épített Súgó
 
@@ -144,13 +144,12 @@ A Feladat-útmutatók a címükben az „Minden nyelv” fordulatot viselő kön
 
 Egyéni feladat-útmutatók létrehozásával létrehozhat egy súgót a felhasználóinak, vagy csatlakoztathatja saját webhelyét a Súgópanelhez. Részletekért lásd:
 
-- [Feladatrögzítés létrehozása dokumentációként vagy képzésként való felhasználás céljából](../../dev-itpro/user-interface/task-recorder.md).
+- [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md).
 - [Egyéni Súgó létrehozása (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Feladatrögzítő](../../dev-itpro/user-interface/task-recorder.md)
-- [Dokumentáció vagy képzés létrehozása feladatrögzítések segítségével.](../../dev-itpro/user-interface/task-recorder.md)
+- [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)
 
 A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlenül csillaggal (\*) jelölt webhelyeken a szolgáltatástervvel társított felhasználói fiókkal lehet belépni.
 

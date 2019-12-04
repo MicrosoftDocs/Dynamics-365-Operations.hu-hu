@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550857"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772387"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Közel valós idejű adatintegráció a Common Data Service szolgáltatással
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Az aktuális digitális környezetben a vállalkozási ökoszisztémákban a Microsoft Dynamics 365 alkalmazásokat csomagban szokták használni. Mivel a személyektől, az ügyfelektől, a műveletekből és az eszközök internetes hálózatából (IoT-eszközök) származó adatok egy forrásba kerülnek bele, lehetőség van digitális visszacsatolási körök kialakítására. Ehhez alapvetően fontos a Finance and Operations alkalmazások és más Dynamics 365 alkalmazásainak az integrációja. Bizonyos alkalmazások a Common Data Service mellett érhetők el. A Finance and Operations alkalmazások adatainak és a Common Data Service szolgáltatásnak az integrációja révén más alkalmazások koherensen és zökkenőmentesen kommunikálhatnak a Finance and Operations rendszerrel.
 
@@ -38,13 +36,16 @@ A Finance and Operations alkalmazások és a Common Data Service – kettős ír
 
 ![Az architektúra áttekintő ábrája](media/dual-write-overview.jpg)
 
-A következő értékajánlatok érhetők el az ügyfelek számára:
+A következő értékajánlatok érhetők el:
 
 + [Szervezeti hierarchia a Common Data Service rendszerben](dual-write-organization.md)
 + [Vállalati koncepció a Common Data Service rendszerben](dual-write-company.md)
 + [Vevő integrált alapadatai](dual-write-customer.md)
++ [Integrált főkönyv](dual-write-ledger.md)
++ [Egységes terméktapasztalat](dual-write-product.md)
 + [Szállító integrált alapadatai](dual-write-vendor.md)
-+ Egyesített alaptermék
++ [Integrált helyek és raktárak](dual-write-sites-and-warehouses.md)
++ [Integrált adózási alapadatok](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
 

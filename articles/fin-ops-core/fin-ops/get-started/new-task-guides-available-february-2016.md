@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190948"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811626"
 ---
 # <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
@@ -32,7 +32,7 @@ Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (február 2016) a Microsoft Dynamics AX APQC Egyesített könyvtárában
 
-Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics AX 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics AX APQC Egyesített könyvtárában (2016 Május) elérheti azokat. A súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
+Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics AX 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics AX APQC Egyesített könyvtárában (2016 Május) elérheti azokat. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 
@@ -641,8 +641,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)

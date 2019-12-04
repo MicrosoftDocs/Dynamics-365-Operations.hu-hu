@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181795"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771142"
 ---
 # <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
 
@@ -47,7 +47,7 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 | Összetevő        | Függvények | További információk |
 |------------------|-----------|------------------------|
 | Jelentéstervező  | A jelentések építőelemeit hozhatja létre ezzel, amelyekből később jelentést határozhat meg és hozhat létre. A jelentésvarázsló a kevésbé tapasztalt felhasználókat kalauzolja végig a tervezési folyamaton. A haladó felhasználók létrehozhatnak új jelentés-építőelemeket vagy kedvükre módosíthatják a meglévő építőelemeket. | |
-| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon. | [Pénzügyi jelentés létrehozása](generate-financial-report.md) |
+| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon. | [Pénzügyi jelentések létrehozása](generate-financial-report.md) |
 
 ## <a name="features"></a>Jellemzők
 <table>
@@ -96,4 +96,4 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 </table>
 
 ## <a name="additional-resources"></a>További erőforrások
-[Pénzügyi jelentés létrehozása](generate-financial-report.md)
+[Pénzügyi jelentések létrehozása](generate-financial-report.md)

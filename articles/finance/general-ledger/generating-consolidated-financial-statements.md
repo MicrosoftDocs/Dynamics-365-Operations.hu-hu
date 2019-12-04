@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178052"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770689"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
@@ -41,19 +41,19 @@ Pénzügyi jelentések segítségével való konszolidálás legegyszerűbb mód
 
 A következő ábrán látható, hogyan kell használni egy jelentési fa definícióját a pénzügyi jelentéskészítésben arra, hogy azonosítsa az összes konszolidálandó vállalatot.
 
-![Jelentési fa definíció](./media/reporting-tree-definition.png "Jelentési fa definíció")
+![Jelentési-fa definíció](./media/reporting-tree-definition.png "Jelentési-fa definíció")
 
 Ahogy a konszolidált jelentés a következő ábrán mutatja, ha a jelentési fát egy jelentésdefinícióval használja, a vállalatokat külön-külön lehet megtekinteni. A konszolidált összegek az összegzési szinten jelennek meg.
 
-![Összeg konszolidálása összegzés szint](./media/consolidate-amount-summary-level.png "Összeg konszolidálása összegzés szint")
+![Összeg konszolidálása összegzési szinten](./media/consolidate-amount-summary-level.png "Összeg konszolidálása összegzési szinten")
 
 Többszintű jelentési fastruktúrát szükség szerint akármennyi szinttel is létrehozhat. A következő ábrán egy többszintű jelentési fa definíció látható, amely világrégiónként görgetett összesítésekkel rendelkezik.
 
-![Többszintű jelentési fa definíció görgetett összesítésekkel régiónként](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Többszintű jelentési fa definíció görgetett összesítésekkel régiónként")
+![Többszintű jelentési fa struktúrájának meghatározása görgetett összesítésekkel régiónként](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Többszintű jelentési fa struktúrájának meghatározása görgetett összesítésekkel régiónként")
 
 A következő ábrán egy többszintű jelentési fa definíció látható, amely funkciónkénti görgetett összesítésekkel rendelkezik.
 
-![Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Többszintű jelentési fa definíció görgetett összesítésekkel funkciónként")
+![Többszintű jelentési fa struktúrájának meghatározása görgetett összesítésekkel funkciónként](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Többszintű jelentési fa struktúrájának meghatározása görgetett összesítésekkel funkciónként")
 
 ### <a name="viewing-companies-side-by-side"></a>Vállalatok megtekintése egymás mellett
 Számos vevő olyan jelentéseket részesít előnyben, ahol a vállalatok egymás mellett jelennek meg, és egy oszlop mutatja a konszolidált teljes összeget. Ez a formátum könnyen elérhető a jelentési fa létrehozása után. Az alábbiakban az átfogó lépések láthatók a vállalatok egymás mellett való megtekintéséhez a konszolidált pénzügyi kimutatásokon.
@@ -64,19 +64,19 @@ Számos vevő olyan jelentéseket részesít előnyben, ahol a vállalatok egym�
 
 A következő ábrán egy oszlopdefiníció látható egymás melletti formátumban.
 
-![Oszlopdefiníció egymás melletti formátumban](./media/column-definition-side-by-side-format.png "Oszlopdefiníció egymás melletti formátumban")
+![Oszlop meghatározása egymás melletti formátumban](./media/column-definition-side-by-side-format.png "Oszlop meghatározása egymás melletti formátumban")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Szervezeti struktúrákat használó konszolidációk, amelyek jogi személyekből lettek létrehozva
 A szervezeti hierarchiák, amelyek dimenziókat vagy jogi személyeket tartalmaznak, dinamikusan hoznak létre jelentési fa definíciókat a pénzügyi jelentéskészítésben. Konszolidációk leegyszerűsítésének egy egyszerű módja a szervezeti hierarchia hozzáadása a jelentéshez a pénzügyi jelentéskészítésben. A pénzügyi jelentéskészítés a jelentés dátuma alapján kiválasztja a szervezeti hierarchiát az esedékesség napján vagy az előtt, ahogy az a következő ábrán látszik.
 
-![Dinamikus jelentési fa definíció létrehozása](./media/dynamically-create-reporting-tree-definitions.png "Dinamikus jelentési fa definíció létrehozása")
+![ Jelentési fa definíciójának dinamikus létrehozása](./media/dynamically-create-reporting-tree-definitions.png "Jelentési fa definíciójának dinamikus létrehozása")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Eltávolításokkal járó konszolidációk
 Az eltávolítási tranzakciók a konszolidációs folyamat megszokott részei. Ebben a példában öt számlát távolítunk el a konszolidáció során: 142600, 211400, 401420, 401180 és 510820. Előfordulhat, hogy az egyes vállalatok vállalatközi számláinakk beállítása eltérő. Például egyes vállalatoknál az utolsó számjegy 9, ha a számla a vállalatközi tranzakciók során használatos. A módszertől függetlenül, amennyiben ismeri a vállalatközi számlákat, megjelenítheti az eltávolításokat a konszolidált pénzügyi kimutatásain.
 
 A következő ábrán egy konszolidált eredménykimutatás oszlopdefiníciója látható. Az egyes vállalatokra vonatkozóan meghatároztunk három vállalatközi nyereség- és veszteségszámlát a dimenziószűrő használatával. A D oszlop az eltávolítási számlákat tartalmazza, csak az USMF vállalatra vonatkozóan, és az E oszlop az eltávolításokat csak az DEMF vállalatra vonatkozóan. A D oszlop és az E oszlop úgy van beállítva, hogy **nem** kerülnek nyomtatásra a pénzügyi kimutatáson.
 
-![Oszlopdefiníció konszolidált eredménykimutatás](./media/column-definition-consolidated-income-statement.png "Oszlopdefiníció konszolidált eredménykimutatás")
+![Oszlopdefiníció – konszolidált eredménykimutatás](./media/column-definition-consolidated-income-statement.png "Oszlopdefiníció – konszolidált eredménykimutatás")
 
 A jelentés létrehozásakor az eltávolítási összegek az F, G és H oszlopokban kerülnek kiszámításra, az összegük pedig az I oszlopban látható. A J oszlop a konszolidált összegeket mutatja meg. Ezek a konszolidációs összegek nem tartalmazzák az USMF, USRT és DEMF vállalatokra vonatkozó eltávolításokat.
 
@@ -85,7 +85,7 @@ A jelentés létrehozásakor az eltávolítási összegek az F, G és H oszlopok
 
 A következő ábra a konszolidált jelentést ábrázolja.
 
-![Konszolidált jelentés eredménykimutatás](./media/consolidated-report-income-statement.png "Konszolidált jelentés eredménykimutatás")
+![Konszolidált jelentés – eredménykimutatás](./media/consolidated-report-income-statement.png "Konszolidált jelentés – eredménykimutatás")
 
 Akár számlákat, dimenziókat vagy mindkettőt használ, a Pénzügyi jelentéskészítés lehetővé teszi, hogy a dimenziószűrési képességek segítségével kiszűrje az eltávolítási bejegyzéseket.
 
@@ -111,7 +111,7 @@ A kisebbségi részesedésre vonatkozó másik lehetőség szerint minden sorban
 
 Ahogy a következő ábrán látható, a pénzügyi jelentésekben a kisebbségi részesedés kiszámítására a sordefinícióban egy **IF THEN ELSE** kijelentés és oszlopkorlátozás alkalmazható.
 
-![Tulajdonrész külön sorként való megjelenítése a konszolidált jelentésen](./media/Showing-ownership-separate-row-consolidated-report.png "Tulajdonrész külön sorként való megjelenítése a konszolidált jelentésen")
+![A tulajdonjog külön sorként történő megjelentése a konszolidált jelentésen](./media/Showing-ownership-separate-row-consolidated-report.png "A tulajdonjog külön sorként történő megjelentése a konszolidált jelentésen")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>Több számlatükör jogi személyek között
 Gyakran a különböző jogi személyek eltérő számlatükörrel rendelkeznek, de ettől függetlenül szeretnének konszolidált pénzügyi kimutatásokat létrehozni. Ez esetben a Pénzügyi jelentéskészítést lehet az adatok konszolidálására használni, így létrehozhatók konszolidált pénzügyi jelentések. Az alábbiakban találhatók a konszolidálás átfogó lépései, amikor eltérő számlatükör áll rendelkezésre a jogi személyek között.
@@ -149,16 +149,16 @@ Amikor oszlopdefiníciót hoz létre több, eltérő pénzügyi időszakkal rend
 
 Az alábbi példában az USMF vállalat van megadva a jelentésdefiníció **Vállalat neve** mezőjében. Ezért ennek a vállalatnak a pénzügyi naptárja lesz az alap pénzügyi naptár. Ebben a példában a 2018. június 30-án létrehozott jelentésben az USMF vállalat az ALAP időszakot használja, amely a jelentésdefinícióban 12. időszakként van meghatározva. Az INMF vállalat az ALAP-6 időszakot fogja használni, ami a 6. időszak. Mindkét oszlopban a 2018. júniusi adatok szerepelnek.
 
-![Jelentés alapidőszaka](./media/report-base-period.png "Jelentés alapidőszaka")
+![Jelentési alapidőszak](./media/report-base-period.png "Jelentési alapidőszak")
 
 A következő ábra a jelentésdefinícióban található beállításokat mutatja, amelyek segítségével kiválaszthatja,, hogy a konszolidációhoz az időszak számát vagy az időszak záró dátumát használja.
 
-![Beállítások jelentésdefiníció időszak száma](./media/options-report-definition-period-number.png "Beállítások jelentésdefiníció időszak száma")
+![Beállítások jelentésdefiníciós időszak száma](./media/options-report-definition-period-number.png "Beállítások jelentésdefiníciós időszak száma")
 
 ## <a name="business-unit-consolidations"></a>Üzleti egység konszolidációi
 Ez a témakör a jelentési fa defincíciók használatára és a hierarchiák Pénzügyi jelentéskészítésben való, konszolidációs célú szervezésére összpontosított. A jelentési fa segítségével üzleti egység konszolidációs jelentéseket is léterhozhat, például globális értékesítésről vagy üzemeltetésről szóló jelentéseket. Ezek a jelentések általában kötelezőek. Ezek létrehozásához minden konszolidálandó egységhez válasszon egy vállalatot és egy dimenziót. Például az alábbi példában az üzleti egység görgetett összesítése úgy volt elérhető, hogy minden egyes vállalatot megismételtek a **Vállalat** oszlopban (A oszlop) és azonosították a Részleg dimenzióértékeinek csoportját vállalatonként a **Dimenziók** oszlopban (D oszlop).
 
-![Üzleti egység konszolidációs jelentések](./media/business-unit-consolidation-reports.png "Üzleti egység konszolidációs jelentések")
+![Üzleti egység konszolidációs jelentései](./media/business-unit-consolidation-reports.png "Üzleti egység konszolidációs jelentései")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>Több jelentési pénznemet tartalmazó konszolidációk
 A pénzügyi jelentéskészítés megnövelt rugalmasságot nyújt, amikor aktuális, költségvetési, költségvetés-ellenőrzési és költségvetés-tervezési adatokat tekint meg több különböző pénznemben. A kulcsfontosságú beállítási adatok áthozásával nem kell a Pénzügyi jelentéskészítésben további beállításokat megtennie bármilyen riport, bármilyen pénznemben, bármely időpontban, bármely felhasználó általi megtekintése érdekében.
@@ -171,7 +171,7 @@ A fő számlán a **Pénzügyi jelentéskészítés árfolyamtípusa** és **Pé
 - A **Pénzügyi jelentéskészítés árfolyamtípusa** mezőben válassza ki azt az árfolyamtípust, amely a számlára vonatkozó pénznemeket és árfolyamokat is tartalmazza. Ezt a pénznemekről és árfolyamokról szóló táblát a Pénzügyi jelentéskészítés tényleges adataira alkalmazzák majd.
 - A **Pénznemátváltás típusa** mezőben válassza ki a számlához tartozó árfolyamok kiszámításához használt módszert. Ezt a pénznemmódszert alkalmazzák a tényleges és költségvetési adatokra a Pénzügyi jelentéskészítésben.
 
-![Pénzügyi jelentéskészítés fő számlák](./media/Financial-reporting-main-accounts.png "Pénzügyi jelentéskészítés fő számlák")
+![Pénzügyi beszámolók fő számlái](./media/Financial-reporting-main-accounts.png "Pénzügyi beszámolók fő számlái")
 
 A költségvetési, a költségvetés-ellenőrzési és a költségvetés-tervezési adatok esetén az árfolyamtípust a **Főkönyv** oldalon határozzák meg. Ezt a táblát használják az árfolyamok lehívására, és azt pénznemátváltási típust használják, amely a számlához van rendelve.
 
@@ -202,11 +202,11 @@ A pénznemátváltási kiigazítás (CTA - currency translation adjustment) azt 
 
 - Alkalmazza a **Kerekítési kiigazítás** oldalt a sordefinícióban, ahogy az a következő ábrán látható.
 
-    ![Pénznemátváltási kiigazítás kerekítési kiigazítás](./media/Currency-translation-adjustment-rounding-adjustments.png "Pénznemátváltási kiigazítás kerekítési kiigazítás")
+    ![Pénznemátváltási kiigazítás kerekítési kiigazításai](./media/Currency-translation-adjustment-rounding-adjustments.png "Pénznemátváltási kiigazítás kerekítési kiigazításai")
 
     Ha olyan sort határoz meg, amely megjeleníti a kerekítési kiigazítást (CTA), az összes eszköz sort, az összes kötelezettség és saját tőke sort és egy olyan küszöbértéket, amely Önnek megfelel, a Pénzügyi jelentéskészítés kiszámítja a különbséget és a kívánt sorba illeszti. Létrehoz egy **Kerekítési kiigazítás** sort, és a leásás esetén jeleníti meg, ahogy az a következő ábrán látható.
 
-    ![Kerekítési kiigazítás leásás](./media/rounding-adjustment-drill-down.png "Kerekítési kiigazítás leásás")
+    ![Kerekítési kiigazítás leásása](./media/rounding-adjustment-drill-down.png "Kerekítési kiigazítás leásása")
 
 - Az összes számla egy tartományba helyezése, eszközöktől költségekig. Ahogy a következő ábrán látható, a különbség értéke ugyanakkora összeg lesz, mint a kerekítési kiigazítás (CTA) értéke. Így ezt egy ellenőrző végösszegként is használhajta annak biztosítására, hogy a kerekítési kiigazítás oldal nem tartalmaz olyan számlaegyenlegeket, amelyeket kihagyott.
 
@@ -221,6 +221,6 @@ Annak érdekében, hogy a pénznemek használatakor helyesen átváltott összeg
 
 ## <a name="additional-resources"></a>További erőforrások
 
-További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás](./financial-consolidations-currency-translation.md).
+További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
 
-A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online konszolidáció](./consolidate-online.md).
+A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online pénzügyi konszolidációk](./consolidate-online.md).

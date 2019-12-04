@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc8200380ac3aeb9e3b73f43212458660a15ade6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250806"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814375"
 ---
 # <a name="inventory-blocking"></a>Készletzárolás
 
@@ -66,4 +66,4 @@ Megadhatja, hogy mely készletállapotok zároló állapotok, a **Készletzárol
 
 [Minőségkezelési folyamatok](quality-management-processes.md)
 
-[Áru minőségének ellenőrzése (feladat-útmutató)](tasks/inspect-quality-goods.md)
+[Áru minőségének ellenőrzése](tasks/inspect-quality-goods.md)

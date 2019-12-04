@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc1e1eb9d8ede1d07a873ca98a1c385cf0126c3f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5985042567a29f5a9cac38912cbf9c3c0eb9c8bd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557523"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814467"
 ---
 # <a name="nonconformance-management"></a>Szabálytalanságok kezelése
 
@@ -49,8 +49,8 @@ A szabálytalanságkezelés aktiválásához kövesse az alábbi lépéseket:
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Szabálytalanság létrehozása és feldolgozása (Feladat-útmutató)](tasks/create-process-non-conformance.md)
+[Szabálytalanság létrehozása és feldolgozása](tasks/create-process-non-conformance.md)
 
 [Minőségkezelési folyamatok](quality-management-processes.md)
 
-[A szabálytalanságkezelésre vonatkozó előfeltételek beállítása (Feladat-útmutató)](tasks/set-up-prerequisites-nonconformance-management.md)
+[A szabálytalanságkezelésre vonatkozó előfeltételek beállítása](tasks/set-up-prerequisites-nonconformance-management.md)

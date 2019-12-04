@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178218"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811507"
 ---
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
 
@@ -35,7 +35,7 @@ Néhány bonyolultabb mező mezőleírással is rendelkezik. Ezek a leírások a
 
 Nem minden lap rendelkezik mezőleírásokkal. Csak az összetettebb mezőkhöz kívánunk leírásokat nyújtani, azokhoz nem, amelyek használata nyilvánvaló. Ezért néhány oldalon egyáltalán nem található mezőleírás, egyes oldalakon csak néhány leírás jelenik meg, néhány összetettebb oldalon (ilyen például a legtöbb paraméteroldal) pedig sok leírás érhető el.
 
-Amennyiben ön hozzáfér a fejlesztői környezethez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mező testreszabása – súgó](../../dev-itpro/user-interface/customize-field-help.md) pontnál talál.
+Amennyiben ön hozzáfér a fejlesztői környezethez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mezőleírások testreszabása](../../dev-itpro/user-interface/customize-field-help.md) pontnál talál.
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Mezőleírások megtekintése a felhasználói felületen
 
@@ -107,4 +107,4 @@ A lapok különféle módon megvalósítható megkereséséről bővebben feljeb
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Mező testreszabása – súgó](../../dev-itpro/user-interface/customize-field-help.md)
+[Mezőleírások testreszabása](../../dev-itpro/user-interface/customize-field-help.md)

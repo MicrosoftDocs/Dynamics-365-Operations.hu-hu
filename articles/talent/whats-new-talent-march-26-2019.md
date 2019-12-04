@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023884"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812741"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 26.)
 
@@ -75,11 +75,11 @@ Ebben a kiadásban a fix kompenzációs konstrukciók nem jelennek meg, ha a fel
 Ebben a verzióban, eltávolíthat feladatrekordokat a **Megnyitása Excelben** lehetőség használatával a Talent alkalmazásban.
 
 ### <a name="upgrade-to-common-data-service"></a>Frissítés Common Data Service megoldásra
-A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen a PowerApps felügyeleti központba annak meghatározásához, hogy kell-e az adatbázist frissíteni. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
+A Common Data Service frissítés határideje gyorsan közeledik. Jelentkezzen a Power Apps felügyeleti központba annak meghatározásához, hogy kell-e az adatbázist frissíteni. Határidőkkel és frissítéséhez szükségesek további lépésekkel kapcsolatos tudnivalókat lásd: [Frissítés a Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) megoldásra.
 
 ## <a name="in-preview"></a>Előnézetben
 
-Előnézeti funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Talent – előnézeti funkciók elérése](./access-preview-feature.md).
+Előzetes funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Előzetes funkciók elérése a Microsoft Dynamics 365 Talent szolgáltatásban](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Okkódok megadásának engedélyezése a szabadságtípusoknál
 A szervezeteknek kiegészítő információkra lehet szüksége a szabadságkérelmekkel kapcsolatosan. Ezen információk megszerzése érdekében az alkalmazottaknak okkódot kell megadniuk szabadságkérelmükhöz. Ebben a verzióban, megadhat okkódokat egy adott távolléttípushoz, és engedélyezheti az alkalmazottak számára okkód választását szabadságkérelmükhöz.

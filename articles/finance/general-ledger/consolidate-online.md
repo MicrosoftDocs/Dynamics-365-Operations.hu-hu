@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551657"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770735"
 ---
 # <a name="online-financial-consolidations"></a>Online pénzügyi konszolidációk
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben. Ezen témakör elolvasása előtt olvassa el a [Pénzügyi konszolidáció és devizaátváltás](financial-consolidations-currency-translation.md) témakört.
+Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben. A témakör elolvasása előtt tekintse át a [Pénzügyi konszolidáció és pénznemátváltás áttekintése](financial-consolidations-currency-translation.md) cikket.
 
 A beállítás befejezése után adja meg a konszolidáció részleteit a **Konszolidálás [Online]** oldalon. Amikor végzett, kattintson az **OK** VAGY a **Köteg** lehetőségre a konszolidáció feldolgozásához.
 
@@ -69,7 +69,7 @@ A **Jogi személyek** lapon meghatározhatja, hogy mely vállalatoknak kell szer
 
 ![Jogi személyek lap](./media/legal-entities-cons.png "Jogi személyek lap")
 
-![Számlák automatikus tranzakciókhoz lap](./media/accounts-for-automatic-cons.png "Számlák automatikus tranzakciókhoz lap")
+![Számlák automatikus tranzakciókhoz oldal](./media/accounts-for-automatic-cons.png "Számlák automatikus tranzakciókhoz oldal")
 
 ## <a name="elimination"></a>Eltávolítás
 Az **Eltávolítás** lapon az eltávolítások feldolgozására három lehetőség van:
@@ -89,10 +89,10 @@ A **Devizaátváltás** lapon megadhatja a jogi személyt, a számlát és az á
 - **Tranzakció dátuma** – Az egyes tranzakciók dátuma használandó az árfolyam kiválasztásához. Ez a beállítás leggyakrabban a tárgyi eszközökhöz használatos, és korábbi árfolyamnak is gyakran nevezik. Az árfolyam előnézete nem látható, mivel a számlatartomány különböző tranzakcióinak sok árfolyama lesz.
 - **Felhasználó által definiált árfolyam** – Miután ezt a lehetőséget választja, megadhatja a használni kívánt átváltási árfolyamot. Ez a beállítás akkor átlagos árfolyamokhoz vagy rögzített árfolyammal szemben hasznos.
 
-![Pénznem átszámítása lap](./media/currency-translation-cons-online.png "Pénznem átszámítása lap")
+![Pénznemátváltás típusa lap](./media/currency-translation-cons-online.png "Pénznemátváltás típusa lap")
 
 ## <a name="additional-resources"></a>További erőforrások
 
-További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás](./financial-consolidations-currency-translation.md).
+További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
 
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).

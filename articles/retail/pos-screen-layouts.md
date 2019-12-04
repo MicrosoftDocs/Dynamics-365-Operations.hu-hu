@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025272"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811780"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Képernyő-elrendezések a pénztár (POS) számára
 
@@ -171,7 +171,7 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
 
     - **Művelet** – Az alkalmazható pénztárműveletek listájában válassza ki a műveletet, amely végrehajtódik a gombra való rákattintáskor a pénztárban.
 
-        A támogatott POS-műveletek listája: [POS-műveletek online és offline](pos-operations.md).
+        A támogatott pénztárműveletek listája: [Online és offline pénztár (POS) műveletek](pos-operations.md).
 
     - **Műveleti paraméterek** – Néhány POS-művelet használ további paramétereket, ha meghívják őket. A termék hozzáadása műveletnél például a felhasználók beállíthatják a terméket a hozzáadáshoz.
     - **Gombszöveg** – A mezőbe írja be a gombon a pénztárban megjelenő szöveget.
@@ -193,4 +193,4 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A Retail POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
+[A Retail pénztár (POS) képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)

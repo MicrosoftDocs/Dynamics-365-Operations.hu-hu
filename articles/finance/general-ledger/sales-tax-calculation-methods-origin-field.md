@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37bb02dfc9cfcb3e2c1dcda446be3945563d6594
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d326480cc03d80d1ce27f8762e300dca3b0d325e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570580"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770643"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>ÁFA-számítási módok kiválasztása az Kiindulás mezőben
 
@@ -125,9 +125,9 @@ Amennyiben a dokumentum / napló beállítása: Az összegek tartalmazzák az á
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Az áfaérték megállapítása a Számítás alapja és a Számítási módszer mezők alapján](marginal-base-field.md)
+[Áfaérték a Számítás alapja és a Számítási módszerek lapján](marginal-base-field.md)
 
-[Teljes összeg és Intervallumszámítás opciók áfakódokhoz](whole-amount-interval-options-sales-tax-codes.md)
+[Teljesösszeg- és intervallumszámítási opciók áfakódokhoz](whole-amount-interval-options-sales-tax-codes.md)
 
 
 

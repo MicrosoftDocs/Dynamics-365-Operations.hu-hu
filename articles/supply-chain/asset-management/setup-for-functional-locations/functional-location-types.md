@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571254"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812214"
 ---
 # <a name="functional-location-types"></a>Munkavégzési helyszínek típusai
 
@@ -56,7 +56,7 @@ Ezzel létrejött a munkavégzési helyszín kizárólag alapértelmezett munkav
 3. Adja meg a munkavégzési helyszín típusának azonosítóját a **Munkavégzési helyszínek típusai** mezőben és egy nevet a **Név** mezőben.
 4. Válasszon ki egy életciklusmodellt a **Munkavégzési helyszín életciklusmodellje** mezőben. A munkavégzési helyszínek életciklus-állapotairól és életciklusmodelljeiről a [Munkavégzési helyszín életciklus-állapotai](../setup-for-functional-locations/functional-location-stages.md) című témakörben talál további információt.
 5. A **Több eszköz** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy több eszközt tudjon telepíteni egy munkavégzési helyszínen a munkavégzési helyszín ezen típusával. Ha a „Nem” lehetőséget választja ki, csak *egy* eszközt tud telepíteni egy munkavégzési helyszínen a munkavégzési helyszín ezen típusával.
-6. Az **Eszközdimenzió frissítése** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy az ilyen típusú munkavégzési helyszíneken telepített eszközök automatikusan a munkavégzési helyszínnel összekapcsolt pénzügyi dimenziókat használják. Ez azt jelenti, hogy ha módosítja a pénzügyi dimenziókat a [Munkavégzési helyszín](../functional-locations/create-functional-locations.md) űrlapon, és a munkavégzési helyszín olyan típusú, amelynél „Igenre” állította a váltógombot, akkor a pénzügyi dimenziók automatikusan frissülnek az ehhez a munkavégzési helyszínhez telepített összes eszközön.
+6. Az **Eszközdimenzió frissítése** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy az ilyen típusú munkavégzési helyszíneken telepített eszközök automatikusan a munkavégzési helyszínnel összekapcsolt pénzügyi dimenziókat használják. Ez azt jelenti, hogy ha módosítja a pénzügyi dimenziókat a [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md) űrlapon, és a munkavégzési helyszín olyan típusú, amelynél „Igenre” állította a váltógombot, akkor a pénzügyi dimenziók automatikusan frissülnek az ehhez a munkavégzési helyszínhez telepített összes eszközön.
 7. Az **Eszköztípus** mezőt akkor használja, ha automatikusan létre szeretne hozni *egy* eszközt az éppen létrehozott munkavégzési helyszínével egyező azonosítójú és nevű munkavégzési helyszínhez. Ez például akkor lehet lényeges, ha statikus munkavégzési helyszínt hoz létre (például épületet vagy csővezetéket). Ilyen esetben válassza ki azt az eszköztípust, amelyet az automatikusan létrehozott eszközhöz szeretne használni. Ne feledje, ha ebben a mezőben ad meg értéket, a **Több eszköz** váltógombot „Nem” értékűre kell állítani.
 8. Az **Eszköztípusok** gyorslapon válassza ki azokat az eszköztípusokat, amelyeket össze szeretne kapcsolni a munkavégzési helyszín típusával. Válassza ki a **Sor hozzáadása** lehetőséget, majd az eszköztípusokat. Ha itt ad hozzá eszköztípusokat, csak az adott típusú eszközöket tudja majd telepíteni egy ilyen típusú munkavégzési helyszínen. Ha nem választ ki eszköztípust az **Eszköztípusok** gyorslapon, az összes típus telepíthető lesz.
 9. A **Karbantartási tervek** gyorslapon válassza ki azokat a karbantartási terveket, amelyeket automatikusan be szeretne állítani az ilyen típusú munkavégzési helyszíneken. Válassza ki a **Sor hozzáadása** lehetőséget, majd a karbantartási terveket. Ha itt ad hozzá karbantartási terveket, csak azokat a terveket tudja majd használni az ilyen típusú munkavégzési helyszínen.

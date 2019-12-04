@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191408"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811970"
 ---
 # <a name="optimization-advisor-overview"></a>Optimalizálási tanácsadó – áttekintés
 
@@ -38,7 +38,7 @@ A modul helytelen konfigurálása és beállítása hátrányosan befolyásolhat
 
 Az **Optimalizálási tanácsadó** munkaterület egy olyan eszköz, amely a kiemelt felhasználók, az üzleti elemzők, a funkcionális tanácsadók és az informatikai funkciók számára teszi lehetővé a problémák azonosítását a modulkonfigurációkban és az üzleti adatokban. Az optimalizálási tanácsadó javaslatot tesz a modulok konfigurációjának legjobb gyakorlatára, és azonosítja az elavult vagy helytelen üzleti adatokat.
 
-Az optimalizálási tanácsadó rendszeres időközönként lefuttatja az ajánlott eljárás szabályait. Rendelkezésre áll egy alapértelmezett szabálykészlet, a felhasználók azonban olyan szabályokat is létrehozhatnak, amelyek egyediek a saját testreszabásaikra, független szoftverszállítók (ISV) megoldásaira és üzleti adatokra. További információ a szabályok létrehozásáról: [Új szabályok létrehozása](./create-rules-optimization-advisor.md).
+Az optimalizálási tanácsadó rendszeres időközönként lefuttatja az ajánlott eljárás szabályait. Rendelkezésre áll egy alapértelmezett szabálykészlet, a felhasználók azonban olyan szabályokat is létrehozhatnak, amelyek egyediek a saját testreszabásaikra, független szoftverszállítók (ISV) megoldásaira és üzleti adatokra. További információ a szabályok létrehozásáról: [Szabályok létrehozása az Optimalizálási tanácsadóhoz](./create-rules-optimization-advisor.md).
 
 Egy szabály megsértésének észlelésekor optimalizálási lehetőséget jön létre és jelenik meg az **Optimalizálási tanácsadó** munkaterületen. A felhasználó közvetlenül az **Optimalizálási tanácsadó** munkaterületről végezheti el a megfelelő javító intézkedéseket.
 
@@ -92,6 +92,6 @@ Adott szabályok kiértékelésének inaktiválásához válassza a szabály ál
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új szabályok létrehozása](./create-rules-optimization-advisor.md)
+[Optimalizálási tanácsadó szabályainak létrehozása](./create-rules-optimization-advisor.md)
 
 [Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations (Videó)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

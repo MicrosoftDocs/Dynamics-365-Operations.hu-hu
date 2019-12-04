@@ -3,7 +3,7 @@ title: Tervezett rendelések karbantartása
 description: Ez a témakör a tervezett rendelések kezelésével kapcsolatban nyújt információkat. Leírja, hogyan frissítheti a tervezett rendelések állapotát, erősítheti meg őket, és hogy hogyan szűrheti a kijelölttel azonos állapotú tervezett rendeléseket.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993440"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813776"
 ---
 # <a name="maintain-planned-orders"></a>Tervezett rendelések karbantartása
 
@@ -39,7 +39,7 @@ Használhatja az **Állapot** mezőt, ami segít nyomon követni folyamatot. A k
 
 -   Amikor az alaptervezés tervezett rendeléseket készít, akkor a tervezett rendelések állapota **Feldolgozatlan**.
 -   Ha úgy dönt, hogy nem erősíti meg a tervezett rendelést, akkor hozzárendelheti a **Befejezett** állapotot.
--   Ha meg szeretné határozni a tervezett rendelést, akkor a **Jóváhagyott** állapotra módosítható. Az Alaptervezés figyelembe veszi a **Jóváhagyott** állapotú tervezett rendeléseket, így azokat nem módosítja vagy nem törli a program. 
+-   Ha meg szeretné határozni a tervezett rendelést, akkor a **Jóváhagyott** állapotra módosítható. Az Alaptervezés figyelembe veszi a **Jóváhagyott** állapotú tervezett rendeléseket, így azokat nem módosítja vagy nem törli a program későbbi alaptervezés futtatása során. 
 
 ## <a name="firming-planned-orders"></a>Tervezett rendelések megerősítése 
 A tervezett rendelések megerősítésével létrejönnek a tényleges rendelések. Ismertek *kiadott* vagy *nyitott rendelésként* is. Amikor egy tervezett rendelést megerősít, akkor az a megfelelő modul rendelések szakaszába kerül.
@@ -62,7 +62,7 @@ Ha egyszerre több rendelést szeretne megerősíteni, akkor a futtatás párhuz
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Alaptervek](master-plans.md)
+[Alaptervek áttekintése](master-plans.md)
 
 
 

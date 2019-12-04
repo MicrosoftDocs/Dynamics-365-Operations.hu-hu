@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008128"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813937"
 ---
 # <a name="get-started-with-onboard"></a>Első lépések az Onboard alkalmazásban
 
@@ -35,17 +35,17 @@ Az Onboard lehetővé teszi, hogy gyorsan létrehozzon egy felvételi útmutató
 
 Az Onboard alkalmazás beszerzéséről és használatáról az alábbi témakörökben tájékozódhat:
 
-- [Az Onboard alkalmazás letöltése](./onboard-get-app.md)
-- [Felvételi útmutató létrehozása](./onboard-create-guide.md)
-- [Felvételi sablon létrehozása](./onboard-create-template.md)
-- [Bevezetési útmutatók és sablonok szerkesztése](./onboard-edit-guides-templates.md)
-- [Osszon meg tartalmakat más közreműködőkkel](./onboard-share-template.md)
-- [A feladatok és az alkalmazottak és bevezetési állapotának megtekintése](./onboard-view-status.md)
-- [Toborzócsoportok létrehozása az Onboard alkalmazásban](./onboard-create-team.md)
+- [A Dynamics 365 Talent – Onboard alkalmazás beszerzése](./onboard-get-app.md)
+- [Felvételi útmutató létrehozása és küldése a Dynamics 365 Talent – Onboard használatával](./onboard-create-guide.md)
+- [Felvételi sablon létrehozása a Dynamics 365 Talent – Onboard használatával](./onboard-create-template.md)
+- [Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 Talent – Onboard szolgáltatásban](./onboard-edit-guides-templates.md)
+- [Tartalmak megosztása más közreműködőkkel a Dynamics 365 Talent – Onboard szolgáltatásban](./onboard-share-template.md)
+- [Az alkalmazottak és a feladatok bevezetési állapotának megtekintése](./onboard-view-status.md)
+- [Toborzócsapat létrehozása a Dynamics 365 Talent – Onboard használatával](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

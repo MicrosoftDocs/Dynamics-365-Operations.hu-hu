@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025771"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812339"
 ---
 # <a name="call-center-sales-functionality"></a>Hívásközpont értékesítési funkciói
 
@@ -44,17 +44,17 @@ Ez a lap a következőkhöz kapcsolódó dokumentációkhoz biztosít hivatkozá
 
 ## <a name="configure-the-call-center"></a>Hívásközpont konfigurálása
 
-[Rendelésfeldolgozási beállítások meghatározása](set-up-order-processing-options.md)
+[Hívásközponti csatornák beállítása](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>A megrendelés feldolgozásának konfigurálása
 
-[Csalással kapcsolatos figyelmeztetések beállítása](set-up-fraud-alerts.md)
+[Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata](set-up-fraud-alerts.md)
 
-[Megrendelés manuális várakoztatása](work-with-order-holds.md)
+[Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Fizetés feldolgozásának konfigurálása
 
-[Fizetési módszerek hívásközpontnál](work-with-payments.md)
+[Fizetési módok hívásközpontoknál](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Szállítási módok beállítása
 
@@ -64,8 +64,8 @@ Ez a lap a következőkhöz kapcsolódó dokumentációkhoz biztosít hivatkozá
 
 [Hívásközpont-katalógusok](call-center-catalogs.md)
 
-[RFM-profilelemzés beállítása](set-up-rfm-analysis.md)
+[Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Folytonossági programok konfigurálása
 
-[Folytonossági program beállítása egy hívásközpont számára](set-up-continuity-program.md)
+[Folytonossági programok beállítása hívásközpontok számára](set-up-continuity-program.md)

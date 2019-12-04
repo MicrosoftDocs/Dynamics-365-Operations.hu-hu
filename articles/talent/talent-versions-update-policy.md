@@ -1,9 +1,9 @@
 ---
-title: A Talent rendszerkövetelményei és frissítési irányelvei
-description: Ez a témakör felsorolja a Dynamics 365 Talent követelményeit. Ezenkívül ismerteti a frissítési irányelvet is.
+title: Talent rendszerkövetelményei
+description: Ez a témakör felsorolja a Dynamics 365 Talent követelményeit.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024160"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818479"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>A Talent rendszerkövetelményei és frissítési irányelvei
+# <a name="talent-system-requirements"></a>Talent rendszerkövetelményei
 
 [!include [banner](includes/banner.md)]
 
@@ -54,7 +54,7 @@ A böngésző legfrissebb változatáért látogasson el a szoftver gyártóján
 
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
 
-* A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office-integráció hibáinak elhárítása").
+* A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office-integráció – hibaelhárítás").
 * Az Exportálás Excel-be vagy az Exportálás a Word programba funkcióval létrehozott dokumentumok megtekintéséhez telepíteni kell a Microsoft Office 2007 vagy újabb verzióját.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regionális elérhetőség, nyelvek és lokalizáció
@@ -66,8 +66,3 @@ A Talent által támogatott országok, régiók és nyelvek listáját tartalmaz
 
 Ha fejlesztőként érdekelt az ország-vagy régióspecifikus testreszabások létrehozásában, illetve a Microsoft által jelenleg támogatott országhoz vagy régióhoz kapcsolódó megoldások létrehozásában, lásd: [Globalizáció](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Frissítési irányelv
-
-A Talent felhőajánlatként van szolgáltatva. A Talent frissítései folyamatosak, és a Microsoft automatikusan alkalmazza őket.
-
-A frissítések rendszeres ütemben jelennek meg, és a rendszer minden környezetben alkalmazza őket. A Talent szolgáltatást támogatja a [Microsoft támogatási életciklus-irányelve](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft támogatási életciklus-irányelve"), amely egységes és kiszámítható irányelveket nyújt a termék elérhetőségével kapcsolatos támogatásról.

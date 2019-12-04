@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dac72d7b5ca6a2817207c0bded1befee46406cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175445"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772845"
 ---
 # <a name="europe-overview"></a>Európa – áttekintés
 
@@ -28,23 +28,23 @@ ms.locfileid: "2175445"
 
 Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi személyek beállításában, akiknek elsődleges cím Európában található. 
 
-- [Előlegre jogosultak](emea-advance-holders.md)
- - [Előlegre jogosultak tranzakciói](emea-advance-holders-transactions.md)
- - [Előleg alkalmazotthoz (Kelet-Európa)](tasks/advance-payment-employee.md)
-- [Speciális számlázás](emea-advance-invoice.md)
-- [Banki egyeztetés](emea-bank-reconciliation.md)
+- [Előlegre jogosultak áttekintése](emea-advance-holders.md)
+ - [Előlegre jogosult tranzakciói](emea-advance-holders-transactions.md)
+ - [Előlegfizetés alkalmazottnak](tasks/advance-payment-employee.md)
+- [Előlegszámlák Kelet-Európa számára](emea-advance-invoice.md)
+- [Banki kivonat és fizetés egyeztetése](emea-bank-reconciliation.md)
 - [Helyesbítő számlázás](emea-corrective-invoice.md)
-- [Időszaki naplók létrehozása és feladása](emea-create-post-periodic-journals.md)
+- [Osztott időszakok az időszaki naplókban](emea-create-post-periodic-journals.md)
 - [Kifizetések létrehozása beszedési megbízási felhatalmazásokkal rendelkező vevő számára](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
-- [Számlaazonosítók módosítása az értékesítési rendeléseken](emea-edit-invoice-id-sales-orders.md)
-- [EU beérkezési igazolások](emea-entry-certificates.md)
-- [EU értékesítési lista jelentés](emea-eu-sales-list.md)
+- [Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken](emea-edit-invoice-id-sales-orders.md)
+- [EU-s beérkezési igazolás](emea-entry-certificates.md)
+- [EU értékesítési lista jelentése](emea-eu-sales-list.md)
 - [Árfolyam-korrekciók](emea-exchange-rate-adjustments.md)
 - [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md)
 - [Pénzügyi szolgáltatások (ESR) integrációja](emea-fiscal-service-integration.md)
 - [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Átadási bizonylat létrehozása belső készlet átviteléhez](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU értékesítési listajelentés készítése](tasks/eur-00011-eu-sales-list-report.md)
+- [EU értékesítési lista jelentés készítése](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-fájlok
   - [ISO20022 fájlok importálása](emea-ISO20022-file-formats.md)
   - [ISO20022 beszedési megbízási konfiguráció importálása](tasks/import-iso20022-direct-debit-configuration.md)
@@ -56,25 +56,25 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
   - [Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Szállítók és szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz](tasks/set-up-vendor-iso20022-credit-transfers.md)
   - [Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban](tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [Intrastat](emea-intrastat.md)
+- [Intrastat – áttekintés](emea-intrastat.md)
   - [Tranzakciók átvitele az Intrastatba](tasks/transfer-transactions-intrastat.md)
   - [Közösségen belüli tranzakcióhoz berakodási cím megadása](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [Európai Uniós Intrastat nyilatkozat létrehozása](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Készletnapló-jelentések](emea-set-up-report-inventory-journal-names.md)
-- [Számlakibocsátás határidői](emea-invoice-issue-deadline.md)
+- [Számlakibocsátás határideje](emea-invoice-issue-deadline.md)
 - [Számla feldolgozása](emea-invoice-processing.md)
 - [EU beérkezési igazolás kiállítása](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [OIOUBL-előírások](emea-oioubl-standards-electronic-invoicing.md)
+- [Támogatott szabványok elektronikus számlázáshoz](emea-oioubl-standards-electronic-invoicing.md)
 - [Eredeti számlahivatkozás (Kelet-Európa)](tasks/ee-00004-original-invoice-reference.md)
 - [Fél keresése adószám használatával](tasks/eur-00015-party-search-vat-id.md)
-- [Fizetésihivatkozás-generálási eszköz (Kelet-Európa)](tasks/ee-00015-payment-reference-generation-tool.md)
+- [Fizetésihivatkozás-generáló eszköz](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Fizetésiutalvány-jelentés](emea-eur-payment-slip-report-giro.md)
-- [Pénztár](emea-petty-cash.md)
+- [Pénztár Kelet Európához és Oroszországhoz](emea-petty-cash.md)
 - [Tárgyi eszköz előzetes beszerzésének feladása](emea-pre-acquisition-acquisition-fixed-asset.md)
 - [Irányítószámok](emea-import-create-postal-codes-manually.md)
 - [EU beérkezési igazolás fogadása](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Nyilvántartási azonosítók](emea-registration-ids.md)
-- [Fordított adók](emea-reverse-charge.md)
+- [Fordított adók – áfa](emea-reverse-charge.md)
 - [SEPA-átutalás áttekintése](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA beszedési megbízás – áttekintés](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Vevői és szállítói kompenzáció beállítása](emea-compensation-customer-vendor-transactions.md)
@@ -85,15 +85,15 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 - [Adóügyi irányelvek](emea-tax-directives.md)
 - [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](emea-amount-printing-forms.md)
 - Általános forgalmi adó (áfa)
-  - [név: Áfaazonosító beállítása](tasks/eur-00015-vat-id.md)
-  - [Szállítói adószám regisztrálása](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [Áfaárfolyamok](emea-vat-exchange-rate.md)
+  - [Áfaazonosító beállítása](tasks/eur-00015-vat-id.md)
+  - [Szállítói adószám rögzítése](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Áfa átváltási arány áttekintése](emea-vat-exchange-rate.md)
   - [Áfaegyeztetési jelentés](tasks/eur-00018-vat-reconciliation-report.md)
   - [Áfatételjegyzék-tranzakciók (Kelet-Európa)](emea-vat-register-transactions.md)
   - [Áfabevallás](emea-vat-reporting.md)
   - [Áfajelentés létrehozása és elküldése](tasks/create-submit-vat-report.md)
-  - [Kiegyenlítési tranzakciók megtekintése](emea-transactions-settlement-form.md)
-  - [Adópont dátuma (Áfajegyzék frissítési dátuma)](emea-tax-point-date.md)
+  - [A kelet-európai elszámolási tranzakciók megtekintése](emea-transactions-settlement-form.md)
+  - [Adópont dátuma (áfatételjegyzék dátuma)](emea-tax-point-date.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

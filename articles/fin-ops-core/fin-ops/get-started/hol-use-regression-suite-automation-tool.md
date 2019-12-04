@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9afa98156c58d10c19454430769a3d60343661dc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550957"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811649"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool-oktatóanyag használata
 
@@ -44,7 +44,7 @@ Ha további információra van szüksége a funkcióról, itt találhat: [Meglé
 
 ### <a name="derived-test-case"></a>Származtatott teszteset
 
-1. Nyissa meg a Regression Suite Automation Tool (RSAT) eszközt, és válassza ki a [A Regression Suite Automation Tool beállítása és telepítése](./hol-set-up-regression-suite-automation-tool.md) szakaszban létrehozott mindkét tesztesetet.
+1. Nyissa meg a Regression Suite Automation Tool (RSAT) eszközt, és válassza ki a [A Regression Suite Automation Tool beállítása és telepítése oktatóanyag](./hol-set-up-regression-suite-automation-tool.md) szakaszban létrehozott mindkét tesztesetet.
 2. Válassza az **Új \> Származtatott teszteset létrehozása** elemet.
 
     ![Származtatott teszteset létrehozása parancs az Új menüben](./media/use_rsa_tool_01.png)

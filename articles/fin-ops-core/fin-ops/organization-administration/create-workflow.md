@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190097"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811292"
 ---
 # <a name="create-workflows-overview"></a>Munkafolyamatok létrehozása – áttekintés
 
@@ -54,21 +54,21 @@ Az alábbi lépések segítségével állítsa be a munkafolyamat tulajdonságai
 
 1. Kattintson a vászonra, és győződjön meg arról, hogy nincs munkafolyamat-elem kiválasztva.
 2. Kattintson a **Tulajdonságok** lehetőségre a **Tulajdonságok** lap megnyitásához az adott munkafolyamatra vonatkozóan.
-3. Kövesse [A munkafolyamat elemeinek beállítása](configure-workflow-properties.md) pontban leírt eljárásokat.
+3. Kövesse a [Munkafolyamat-tulajdonságok konfigurálása](configure-workflow-properties.md) cikkben leírt eljárásokat.
 
 ## <a name="configure-the-elements-of-the-workflow"></a>A munkafolyamat elemeinek beállítása
 
 Konfigurálja a vászonra áthúzott elemeket. Ha további tudnivalókat szeretne az egyes munkafolyamat-elemek beállításáról, tekintse át az alábbi témaköröket:
 
-- [Manuális feladat konfigurálása](configure-manual-task-workflow.md)
-- [Automatizált feladat konfigurálása](configure-automated-task-workflow.md)
-- [Jóváhagyási folyamat konfigurálása](configure-approval-process-workflow.md)
-- [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md)
-- [Manuális döntés konfigurálása](configure-manual-decision-workflow.md)
-- [Feltételes döntés konfigurálása](configure-conditional-decision-workflow.md)
-- [Párhuzamos tevékenység konfigurálása](configure-parallel-activity-workflow.md)
-- [Párhuzamos ág beállítása](configure-parallel-branch-workflow.md)
-- [Sortétel munkafolyamatának beállítása](configure-line-item-workflow.md)
+- [Manuális feladatok konfigurálása munkafolyamatban](configure-manual-task-workflow.md)
+- [Automatizált feladatok konfigurálása munkafolyamatban](configure-automated-task-workflow.md)
+- [Jóváhagyási folyamatok konfigurálása munkafolyamatban](configure-approval-process-workflow.md)
+- [Jóváhagyási lépések konfigurálása munkafolyamatban](configure-approval-step-workflow.md)
+- [Manuális döntések konfigurálása munkafolyamatban](configure-manual-decision-workflow.md)
+- [Feltételes döntések konfigurálása munkafolyamatban](configure-conditional-decision-workflow.md)
+- [Párhuzamos ágak konfigurálása munkafolyamatban](configure-parallel-activity-workflow.md)
+- [Párhuzamos ág konfigurálása](configure-parallel-branch-workflow.md)
+- [Sortétel munkafolyamatainak konfigurálása](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Hibák vagy figyelmeztetések feloldása
 

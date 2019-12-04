@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250714"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815134"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>A kiinduló előrejelzés manuális kiigazítása
 
@@ -78,9 +78,9 @@ Az előrejelzés manuális kiigazításait az **Igény-előrejelzés részletei*
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Az előrejelzés pontosság megfigyelése](monitor-forecast-accuracy.md)
+[Előrejelzés pontosságának követése](monitor-forecast-accuracy.md)
 
-[Statisztikai kiinduló előrejelzés generálása](generate-statistical-baseline-forecast.md)
+[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
 
 
 

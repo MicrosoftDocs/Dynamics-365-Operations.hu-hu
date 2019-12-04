@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626062"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694406"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. október 8.)
 
@@ -57,15 +57,15 @@ Az alkalmazotti bejegyzés és a navigálás funkció az összes környezetben e
 
 További információ: [Egyszerűsített alkalmazotti adatbevitel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) a Dynamics 365: 2019 2019 release wave 2 tervben.
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Probléma Az Attaract és az Onboard inaktív dolgozókat hoz létre a Core HR-ben (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Az Attract és az Onboard inaktív dolgozókat hoz létre a Core HR-ben (380517)
 
 Ez a heti kiadás korrigálja azt a hibát, amikor az Attract és az Onboard inaktív dolgozókat hoznak létre e Core HR-ben.
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Probléma: A munkafolyamat nem hajtható végre, ha a vezető be van jelentkezve egy másik vállalatba egy alkalmazott munkaviszonyának megszüntetésekor (346852).
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>A munkafolyamat nem hajtható végre, ha a vezető be van jelentkezve egy másik vállalatba egy alkalmazott munkaviszonyának megszüntetésekor (346852).
 
 A munkafolyamat már fog meghiúsulni azon jogi személy alapján, amelybe a vezető be van jelentkezve.
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Hiba: Hiányzó információ itt: HcmOnboardingWorkerChecklistTaskEntity (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Hiányzó információ itt: HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 Ez a kiadás további információkat tartalmaz a **HcmOnboardingWorkerChecklistTaskEntity** entitáshoz. Íme néhány példa:
 
@@ -73,35 +73,35 @@ Ez a kiadás további információkat tartalmaz a **HcmOnboardingWorkerChecklist
 - **Alkalmazott neve**, ha a hozzárendelt típus **alkalmazott**
 - **Vezető neve**, ha a hozzárendelt típus **vezető**
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Hiba: Az entitások nem jelennek meg ábécé-sorrendben a Common Data Service adminisztrációjában (377414).
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Az entitások nem jelennek meg ábécé-sorrendben a Common Data Service adminisztrációjában (377414)
 
 Az entitások immár ábécé-sorrendben jelennek meg a **CDS adminisztráció** oldalon.
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Hiba: A foglalkoztatás típusának jövőbeli dátummal történő módosítása nem teszi lehetővé egy beosztás hozzárendelését (339958).
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>A foglalkoztatás típusának jövőbeli dátummal történő módosítása nem teszi lehetővé egy beosztás hozzárendelését (339958)
 
 Ez a módosítás a beosztások hozzárendelését lehetővé teszi a dolgozótípusok módosításakor (például az alkalmazottról alvállalkozóra).
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Hiba: A Common Data Service Szabadság tranzakcióentitásának frissítése egy új rekordot hoz létre a Talent alkalmazásban (352938).
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>A Common Data Service Szabadság tranzakcióentitásának frissítése egy új rekordot hoz létre a Talent alkalmazásban (352938)
 
 A szabadság tranzakciója most frissül, ha frissítés történik a Common Data Service szabadságtranzakciói esetében frissítés történik.
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Hiba: A visszajelzési cikkek mellékleteinek címe a visszajelzés leírását jeleníti meg (343765)
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>A visszajelzési cikkek mellékleteinek címe a visszajelzés leírását jeleníti meg (343765)
 
 A visszajelzés leírása már nem jelenik meg a melléklet címében.
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Issue: A kompenzációs munkafolyamat megjegyzések mezője helytelen tartalmat jelenít meg (339297)
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>A kompenzációs munkafolyamat megjegyzések mezője helytelen tartalmat jelenít meg (339297)
 
 Ez a módosítás a **%HcmActionState.HcmWorkerActionComment.Comments%** mező tartalmát jeleníti meg.
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>Hiba: a WorkCalendarEntity és a WorkCalendarDayEntity entitás nem jelenik meg az OData-n keresztül (376329).
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>A WorkCalendarEntity és a WorkCalendarDayEntity entitás nem jelenik meg az OData-n keresztül (376329)
 
 Ebben a verzióban **a** WorkCalendarEntity és a **WorkCalendarDayEntity** már elérhetők az Open Data Protocol (OData) segítségével.
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>Hiba: a HCMWorkerEntity lassú OData használatakor (375221).
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>A HCMWorkerEntity lassú OData használatakor (375221)
 
 A változtatások javítják a **HCMWorkerEntity** teljesítményét a Microsoft Excel munkafüzet-tervező használata esetén.
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Probléma: A vezető teljesítménye naplóbejegyzés hibát jelez egy teljesítménymutató törlése és egy új létrehozása után (336061).
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>A vezető teljesítménye naplóbejegyzés hibát jelez egy teljesítménymutató törlése és egy új létrehozása után (336061)
 
 Ez a kiadás javítja egy problémát, amelyek egy teljesítménynapló törlése után következik be, és a rendszer azonnal létrehoz egy újat. Ez a javítás megváltoztatja a vezetői önkiszolgáló szolgáltatás működését.
 

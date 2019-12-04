@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174190"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771517"
 ---
 # <a name="cost-management-power-bi-content"></a>Költségkezelés Power BI tartalom
 
@@ -37,7 +37,7 @@ A **Költségkezelés** Microsoft Power BI-tartalom készletkönyvelők, valamin
 > [!NOTE]
 > A témakörben leírt **Költségkezelés** Power BI-tartalom a Dynamics 365 Finance and Operations 8.0-s verzióra vonatkozik.
 > 
-> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. Az értékcsökkenéssel kapcsolatos további tudnivalókat lásd: [Elérhető Power BI tartalomcsomagok az AppSource felületén](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. További információ az ilyen elavulásról: [Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)és műveletek modulban.
 
 Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 

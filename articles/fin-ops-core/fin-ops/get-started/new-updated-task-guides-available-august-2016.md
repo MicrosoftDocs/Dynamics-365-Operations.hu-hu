@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c7675ca0ef2f2477d510c956e63d824a5e6b0980
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178223"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812532"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Új vagy frissített feladat-útmutatók (2016. augusztus)
 
@@ -32,7 +32,7 @@ Ez a témakör felsorolja a Microsoft (2016 augusztus – minden nyelv) APQC Egy
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 
-A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2. platformfrissítéséhez (2016. augusztus), a Dynamics AX 2016. májusi alkalmazásfrissítéshez, és a Microsoft Dynamics AX 2016. februári kiadáshoz szánt, Súgóval használatos feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
+A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2. platformfrissítéséhez (2016. augusztus), a Dynamics AX 2016. májusi alkalmazásfrissítéshez, és a Microsoft Dynamics AX 2016. februári kiadáshoz szánt, Súgóval használatos feladat-útmutatókat. Ha további tájékoztatást szeretne ezekről a kiadásokról, tekintse meg: [Új vagy módosult elemek a Finance and Operations kezdőoldalán](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
 
 ### <a name="data-access"></a>Adatelérés
 
@@ -95,8 +95,8 @@ A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a M
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
+[Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)

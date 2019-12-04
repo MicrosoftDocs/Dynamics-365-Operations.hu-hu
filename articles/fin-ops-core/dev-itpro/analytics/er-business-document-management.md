@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652617"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824520"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
-Az [elektronikus jelentési keretrendszer (ER)](general-electronic-reporting.md) a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
+Az [elektronikus jelentési (ER) áttekintése](general-electronic-reporting.md) a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
 
 **Az Üzleti dokumentumkezelés** az ER-keretrendszerre épül, és lehetővé teszi az üzleti felhasználók számára, hogy a szolgáltatások vagy a Microsoft Office 365 szolgáltatások vagy a megfelelő Microsoft Office asztali alkalmazások segítségével szerkesszék az üzleti dokumentumok sablonjait. Az üzleti dokumentumok szerkesztésével módosulhatnak az üzleti dokumentumok megjelenése, és a további adathelyőrzők a forráskód módosítása és az új telepítések nélkül is megadhatók. Az üzleti dokumentumok sablonjainak frissítéséhez nem szükséges az ER keretrendszer ismerete.
 
@@ -58,21 +59,17 @@ A következő, Excel-alapú sablonokat tartalmazó jelentések válnak elérhet�
 
 További jelentések lesznek majd elérhetők. A további jelentésekkel kapcsolatos különleges értesítések küldése külön történik. 
 
-Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban.
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Példa: Az Üzleti dokumentumkezelés engedélyezése, konfigurálása és használata
-
-Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
+Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban. Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
 
 ## <a name="configure-er-parameters"></a>ER-paraméterek konfigurálása
 
-Mivel az üzleti Dokumentumkezelés az ER-keretrendszerre épül, konfigurálnia kell az ER paramétereit az üzleti dokumentumkezelés használatának megkezdéséhez. Ehhez be kell állítania az ER-paramétereket az [ER-keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md) témakörben leírtak szerint. Új konfigurációs szolgáltatókat is meg kell adni a [A konfigurációs szolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) szakaszban leírtak szerint.
+Mivel az üzleti Dokumentumkezelés az ER-keretrendszerre épül, konfigurálnia kell az ER paramétereit az üzleti dokumentumkezelés használatának megkezdéséhez. Ehhez be kell állítania az ER-paramétereket az [Elektronikus jelentéskészítés (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md) témakörben leírtak szerint. Új konfigurációs szolgáltatókat is meg kell adni a [A konfigurációs szolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) szakaszban leírtak szerint.
 
 ![ER-munkaterület](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>ER-megoldások importálása
 
-Az üzleti dokumentumok sablonokat tartalmazó ER-konfigurációkat importálnia kell az aktuális példányba. A következő fájlok letöltésével és helyben történő tárolásával hajthatja végre ezt a műveletet.
+A minta ER konfigurációk a következő példában használatosak:. Importálnia kell a Dynamics 365 Finance aktuális példányába azokat az ER konfigurációkat, amelyek az üzletidokumentum-kezelés használatával szerkeszthető üzletidokumentum-sablonokat tartalmazzák. A következő fájlok letöltésével, majd helyben történő tárolásával hajthatja végre ezt a műveletet.
 
 **ER vevői számlázási mintamegoldása**
 
@@ -105,7 +102,13 @@ A következő eljárással importálhatja az egyes fájlokat. Importálja az ER 
 
 ![ER-konfigurációk oldal](./media/BDM-Overview-ERSolutions.png)
 
+
+Azt is megteheti, hogy a hivatalosan közzétett ER formátumkonfigurációkat importálja a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból. Ennek az eljárásnak a végrehajtásához például importálni lehet a **Szabadszöveges számla (Excel)** ER formátumának konfigurációját. A program automatikusan importálja a megfelelő ER adatmodellt és az ER modell-leképezési konfigurációkat.
+
+![LCS Közös eszközök tára tartalom oldala](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Az ER-konfigurációk importálásával kapcsolatos további tudnivalókat lásd: [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Az Üzletidokumentum-kezelés engedélyezése
 
@@ -118,9 +121,12 @@ A következő eljárással engedélyezheti az üzletidokumentum-kezelési funkci
 3. Válassza az **Engedélyezés most** lehetőséget a kiválasztott funkció bekapcsolásához.
 4. Az új funkció eléréséhez frissítse a lapot.
 
+>[!NOTE]
+> Emellett engedélyeznie kell az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára** az új üzleti dokumentumkezelő felület használata céljából.
+
 ![A Funkciókezelés munkaterület](./media/BDM-Overview-FMEnabling.png)
 
-Az új funkciók aktiválásával kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Az új funkciók aktiválásával kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Paraméterek konfigurálása
 
@@ -137,7 +143,7 @@ Ehhez a dokumentum típushoz ki kell választani a következő attribútum-ért�
 | Csoport               | Fájl                  |
 | Helyszín            | SharePoint            |
 
-A szükséges dokumentumkezelési paraméterek és dokumentumtípusok beállításával kapcsolatos tudnivalókat lásd: [Dokumentumkezelés konfigurálása.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+A szükséges dokumentumkezelési paraméterek és dokumentumtípusok beállításával kapcsolatos tudnivalókat lásd: [Dokumentumkezelés konfigurálása.](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Dokumentumkezelés dokumentumtípusának beállítása](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ A következő eljárással állíthatja be az üzletidokumentum-kezelési funkci
 1. A **Hozzáférési engedélyek konfigurátora** laphoz való hozzáféréssel rendelkező felhasználóként jelentkezzen be az alkalmazásba.
 2. Nyissa meg a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Üzleti dokumentumok kezelése** \> **Hozzáférési engedélyek kezelése** lapot.
 
-Figyeljen oda az értesítésre, miszerint hogy az Üzleti dokumentumkezelés modulhoz jelenleg nincs engedélyezve a hozzáférési engedélyek használata.
+    Figyeljen oda az értesítésre, miszerint hogy az Üzleti dokumentumkezelés modulhoz jelenleg nincs engedélyezve a hozzáférési engedélyek használata.
 
-![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap](./media/BDM-Overview-TemplatesAccess1.png)
 
-Ezzel a beállítással minden olyan felhasználó, aki bármely, olyan biztonsági szerepkörhöz van hozzárendelve, amely az **Üzleti dokumentumoksablonok kezelése** (AOT név **ERBDManageTemplates**) feladat elvégzéséhez be van állítva, meg tudja nyitni az üzleti dokumentum kezelése munkaterületet, és szerkesztheti az alkalmazásban rendelkezésre álló sablonokat.
+    Ezzel a beállítással minden olyan felhasználó, aki bármely, olyan biztonsági szerepkörhöz van hozzárendelve, amely az **Üzleti dokumentumoksablonok kezelése** (AOT név **ERBDManageTemplates**) feladat elvégzéséhez be van állítva, meg tudja nyitni az üzleti dokumentum kezelése munkaterületet, és szerkesztheti az alkalmazásban rendelkezésre álló sablonokat.
 
-A következő ábra bemutatja, hogy milyen lehetőségek érhetők el az Üzleti dokumentumkezelés munkaterületen a **Kinnlevőség-adminisztrátor** szerepkörhöz hozzárendelt felhasználók számára. Az aktuális hozzáférési jogosultságok beállításával a felhasználó szerkesztheti a különböző funkcionális területek üzleti dokumentumait, többek között a számlázást, a szabályozási jelentéseket és a kifizetéseket is.
+    A következő ábra bemutatja, hogy milyen lehetőségek érhetők el az Üzleti dokumentumkezelés munkaterületen a **Kinnlevőség-adminisztrátor** szerepkörhöz hozzárendelt felhasználók számára. Az aktuális hozzáférési jogosultságok beállításával a felhasználó szerkesztheti a különböző funkcionális területek üzleti dokumentumait, többek között a számlázást, a szabályozási jelentéseket és a kifizetéseket is.
 
-![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. A **Hozzáférési engedélyek konfigurátora** lapon válassza a **Hozzáférési engedélyek beállítása** lehetőséget.
 4. A **Sablonok szerkesztésére vonatkozó hozzáférési engedélyek beállításai** párbeszédpanelen kapcsolja be a **Konfigurált hozzáférési engedélyek alkalmazása** beállítást.
 5. Az **OK** gombra kattintva győződjön meg arról, hogy engedélyezve vannak az Üzleti-dokumentumkezelés hozzáférési engedélyei.
 
-![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap konfigurálása](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap konfigurálása](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Válassza a **Hozzáadás** lehetőséget egy új üzleti szerepkör megadásához, amelyhez konfigurálni kell az Üzleti dokumentumkezelés sablonjainak elérését.
 7. A **Biztonsági szerepkörök** párbeszédpanelen válassza ki a **Kinnlevőség-adminisztrátor** szerepkört, majd az **OK** gombbal nyugtázza a szerepkör beállítását.
@@ -201,11 +207,11 @@ A következő ábra bemutatja, hogy milyen lehetőségek érhetők el az Üzleti
 9. A **Címke típusa** mezőben válassza a **Működési terület** elemet, majd az **Azonosító** mezőben válassza a **Számlázás** elemet.
 10. Válassza a **Mentés** lehetőséget a megadott szerepkörhöz konfigurált hozzáférési engedélyek tárolásához.
 
-  Az aktuális beállítás azt jelenti, hogy minden olyan felhasználó számára, aki **a Kinnlevőségek-adminisztrátor** szerepkörhöz van rendelve, és az **Üzleti dokumentumoksablonok kezelése** (AOT-név **ERBDManageTemplates**), feladatot látja el azon elektronikus formátumú konfigurációs sablonok, amelyek a **Számlázás** értékkel rendelkeznek a **Működési terület** címkében, elérhetők szerkesztésre az Üzleti dokumentumkezelés munkaterületen.
+    Az aktuális beállítás azt jelenti, hogy minden olyan felhasználó számára, aki **a Kinnlevőségek-adminisztrátor** szerepkörhöz van rendelve, és az **Üzleti dokumentumoksablonok kezelése** (AOT-név **ERBDManageTemplates**), feladatot látja el azon elektronikus formátumú konfigurációs sablonok, amelyek a **Számlázás** értékkel rendelkeznek a **Működési terület** címkében, elérhetők szerkesztésre az Üzleti dokumentumkezelés munkaterületen.
 
 11. Váltson át a **Kapcsolódó információ** ablaktáblára az aktuális lap jobb oldaláról. A **Kapcsolódó információ** ablaktábla bemutatja, hogy hogyan lesznek alkalmazva a konfigurált hozzáférési engedélyek, többek között a **Kinnlevőség-adminisztrátor** szerepkörhöz rendelt felhasználók számára elérhető konfigurációs sablonokat.
 
-![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap konfigurálása](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Üzleti dokumentumkezelő hozzáférési engedélyeinek konfigurátora lap konfigurálása](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. A **Hozzáférési engedélyek konfigurációk szerint** lapon válassza az **Hozzáadás** lehetőséget.
 13. A **Konfiguráció kiválasztása** párbeszédpanelen jelölje be az **Intrastat-jelentés** elektronikus jelentés formátumkonfigurációját.
@@ -252,21 +258,31 @@ A **Sablon szerkesztése** beállítás elérhető a kiválasztott sablonhoz. Ez
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Más szolgáltatók tulajdonában lévő sablonok szerkesztésének kezdeményezése
 
-1. Az Üzletidokumentum-kezelés munkaterületen válassza ki az **Ügyfél FTI jelentés (GER)** sablont a listában.
-2. Válassza ki az **Részletek** fület.
+1. Az üzleti Dokumentumkezelés munkaterületen válassza ki az **új dokumentumot**.
 
-![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingTemplate3.png)
+![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM_overview_new_template1.png)
 
-Az **Új dokumentum** beállítás elérhető a kiválasztott sablonhoz. Ez a beállítás mindig elérhető olyan elektronikus formátumú sablon esetében, amely egy másik szolgáltatótól származik (A **Microsoft** ebben a példában). Amikor az **Új dokumentum** van kiválasztva, a szerkesztéshez egy új sablon lesz elérhető. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
+2. Jelölje ki vagy nyissa meg a sablonként használni kívánt dokumentumot.
+
+![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM_overview_new_template2.png)
+
+3. Kattintson a **dokumentum létrehozása** elemre
+4. Ha szükséges, módosítsa a szerkeszthető sablon címét a **Cím** mezőben. A program az ER formátumkonfiguráció elnevezésére használja a szöveget. Ne felejtse el, hogy a konfiguráció vázlatverziója (**Customer FTI report (GER) másolata**), amely tartalmazza a szerkesztett sablont, automatikusan meg lesz jelölve ezen ER-formátum futtatásához az aktuális felhasználóhoz. Ezzel egy időben a program az alap ER formátumból származó nem módosított eredeti sablon alapján futtatja ezt az ER formátumot bármely más felhasználó számára.
+5. A **Név** mezőben módosítsa az automatikusan létrehozandó szerkeszthető sablon első verziójának nevét.
+6. A **Megjegyzés** mezőben módosítsa a szerkeszthető sablon automatikusan létrehozott verziójának megjegyzését.
+7. A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra
+
+![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM_overview_new_template3.png)
+
+Az **Új dokumentum** beállítás mindig elérhető olyan ER formátumkonfiguráció sablonja esetében, amely egy másik szolgáltatótól származik (A Microsoft ebben a példában). Amikor az **új dokumentum** elemre kattint, az aktuális és más szolgáltatók által birtokolt összes sablon látható. Miután kiválasztja azt a sablont, amely szerkesztésre megnyílik. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
 
 ### <a name="start-editing-a-template"></a>Sablonnal szerkesztésének elkezdése
 
-1. A kiválasztott sablonból válassza ki az **Új dokumentum** lehetőséget.
-2. Ha szükséges, módosítsa a szerkeszthető sablon címét a **Cím** mezőben. A program az ER formátumkonfiguráció elnevezésére használja a szöveget. Ne felejtse el, hogy a konfiguráció vázlatverziója (**Customer FTI report (GER) másolata**), amely tartalmazza a szerkesztett sablont, automatikusan meg lesz jelölve ezen ER-formátum futtatásához az aktuális felhasználóhoz. Ezzel egy időben a program az alap ER formátumból származó nem módosított eredeti sablon alapján futtatja ezt az ER formátumot bármely más felhasználó számára.
-3. A **Név** mezőben módosítsa az automatikusan létrehozandó szerkeszthető sablon első verziójának nevét.
-4. A **Megjegyzés** mezőben módosítsa a szerkeszthető sablon automatikusan létrehozott verziójának megjegyzését.
+1. A kiválasztott sablonból válassza ki az **Dokumentum szerkesztése** lehetőséget.
+2. A **Név** mezőben módosítsa az automatikusan létrehozandó szerkeszthető sablon első verziójának nevét.
+3. A **Megjegyzés** mezőben módosítsa a szerkeszthető sablon automatikusan létrehozott verziójának megjegyzését.
 
-![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingTemplate4.png)
+    ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM_overview_new_template4.png)
 
 5. A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
@@ -285,15 +301,15 @@ A sablon módosítása az Office 365 funkcióinak segítségével. Például az 
 1. Jelölje be **Megnyitás az asztali alkalmazásban** ha módosítani szeretné a sablont az Office asztali alkalmazás funkciói segítségével (ebben a példában az Excel). A szerkeszthető sablont az állandó tárolóból az Üzletidokumentum-kezelés paraméterei között SharePoint mappaként megadott ideiglenes tárolóhelyre másolja a rendszer.
 2. Győződjön meg róla, hogy a sablont az ideiglenes fájltárhelyből az Office asztali Excel alkalmazásban szeretné megnyitni.
 
-![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingLayout3.png)
+    ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingLayout3.png)
 
 3. Módosítsa a sablont. Például módosíthatja a mezők betűtípusát a fejlécben, ha a színt **fekete** értékről **kék** értékre módosítja.
 
-![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout4.png)
+    ![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout4.png)
 
 4. Válassza az Excel asztali alkalmazás **Mentés** elemét, hogy a sablon változásai az ideiglenes tárolóban legyenek tárolva.
 
-![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout5.png)
+    ![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout5.png)
 
 5. Zárja be az Excel asztali alkalmazást.
 6. Válassza a **Tárolt másolat szinkronizálása** lehetőséget, ha szinkronizálni szeretné az ideiglenes sablon tárhelyét az állandó sablon tárhelyével.
@@ -307,7 +323,7 @@ A sablon módosítása az Office 365 funkcióinak segítségével. Például az 
 2. A **Formátum megjelenítése** lehetőség kiválasztásával megjelenítheti a formátum aktuális szerkezetét az alap ER formátumkonfigurációból, amelyet a szerkeszthető sablonnal kell egyeztetni. 
 3. A panel bezárásához válassz a **Formátum elrejtése** lehetőséget.
 
-![BDM BDM-sablonszerkesztő lapja](./media/BDM-Overview-EditingTemplate6.png)
+    ![BDM BDM-sablonszerkesztő lapja](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Zárja be a **BDM sablonszerkesztő** lapot.
 
@@ -323,7 +339,7 @@ A frissített sablon megjelenik a **Sablon** lapon. Figyelje meg, hogy a szerkes
 4. Válassza ki a **Modul – kintlévőségek** \> **Dokumentumok** \> **Szabadszöveges számla** \> **Eredeti dokumentum** szintet, hogy meghatározza a feldolgozandó számlák hatályát.
 5. A **Jelentés formátuma** mezőben válassza ki a **Customer FTI report (GER) másolata** ER formátumot a megadott dokumentumszinthez.
 
-![Nyomtatáskezelési beállítások oldal](./media/BDM-Overview-TestRun1.png)
+    ![Nyomtatáskezelési beállítások oldal](./media/BDM-Overview-TestRun1.png)
 
 6. Az **Escape** gombbal zárja be az aktuális lapot.
 7. Válassza a **Nyomtatás** lehetőséget,majd kattintson a **Kiválasztott** gombra.
@@ -340,9 +356,9 @@ A módosított sablon a szabadszöveges számlajelentés generálására szolgá
 3. Ha szükséges, a **Név** mezőben módosítsa a második verzió nevét, és alapozza azt a jelenleg aktív első verzióra.
 4. Ha szükséges, a **Megjegyzés** mezőben módosítsa a szerkeszthető sablon automatikusan létrehozott verziójának megjegyzését.
 
-![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-AddRevision.png)
+    ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-AddRevision.png)
 
-Létrehozta az állandó sablontárhelyen tárolt sablon új verzióját. Ezután tovább szerkesztheti a jelenleg aktívként kiválasztott második verzió sablonját.
+    Létrehozta az állandó sablontárhelyen tárolt sablon új verzióját. Ezután tovább szerkesztheti a jelenleg aktívként kiválasztott második verzió sablonját.
 
 5. Válassza ki az első verziót, majd válassza a **Beállítás aktívként** lehetőséget. Más verziót is beállíthat aktívnak ha bármikor vissza szeretne térni a sablonnak ahhoz a változatához.
 6. Válassza ki a második változatot, majd válassza a **Törlés** elemet.
@@ -370,7 +386,7 @@ Amikor az aktuális aktív szolgáltató tulajdonában lévő ER-formátumból s
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Kiválasztottam az **Újdokumentum** lehetőséget de a Finance and Operations **BDM sablonszerkesztő** lapja helyett az Office 365 weboldalára kerültem.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Kiválasztottam a **dokumentum szerkesztése** lehetőséget de a Finance and Operations **BDM sablonszerkesztő** lapja helyett az Office 365 weboldalára kerültem.
 Ez az Office 365 átirányítás egy ismert hibája. Ez akkor fordulhat elő, ha első alkalommal jelentkezik be az Office 365 rendszerbe. A hiba megkerüléséhez válassza a böngészőben a **Vissza** gombját a visszatéréshez.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Értem, hogyan szerkeszthetek a sablonokat Office 365 használatával az első alkalmazásmunkamenetben, és azt, hogyan kell használni a sablont a második alkalmazásmunkamenetben a sablon módosításával, hogy megtekintsem a módosítások hogyan hatnak a létrejövő üzleti dokumentumra. Megtehetem ezt az asztali Office alkalmazás segítségével?
@@ -386,12 +402,12 @@ Valószínűleg olyan Azure AD tartományból jelentkezett be az alkalmazás jel
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
+[Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
-[Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése](tasks/er-design-reports-openxml-2016-11.md)
+[ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)](tasks/er-design-reports-openxml-2016-11.md)
 
 [ER konfigurációk tervezése jelentések Word-formátumú előállításához](tasks/er-design-configuration-word-2016-11.md)
 
 [Beágyazott képek és alakzatok az ER-rel generált dokumentumokban](electronic-reporting-embed-images-shapes.md)
 
-[Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához](general-electronic-reporting-report-configuration-get-data-powerbi.md)

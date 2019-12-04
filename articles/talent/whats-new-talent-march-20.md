@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026004"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812695"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 20.)
 
@@ -43,7 +43,7 @@ Ez a szolgáltatás lehetővé a keresőmotor-adatbányászok számára, hogy el
 Ha a jelölt elfelejtette különleges hitelesítő adatait, amelyet akkor használtak, amikor jelentkeztek a munkára és megnyitották az elmentett vagy e-mailben küldött hivatkozást, így egy javaslatot látnak a szolgáltató nevével és felhasználónévvel (álcázva). Ennek segítéségével a megfelelő hitelesítő adatok használatával érhetik el pályázatukat.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Segítség a belső pályázóknak belső állások felfedezésében
-Egy hiba került javításra, ahol a külső jelentkezők láthatták a munkához tartozó toborzó neve vagy a felvételi vezető nevét. Mostantól csak belső pályázók tekintheti meg az álláshoz tartozó felvételi csapatot. Könnyebb lett a belső jelentkezők számára a belső állások megtekintése és a jelentkezés. Ha egy jelentkező megpróbálni elérni a hivatkozást egy csak belső állás megtekintéséhez vagy a jelentkezéshez akkor hitelesítenie kell magát az Azure Active Directory hitelesítő adataival. A belső pályázók felvehetik a kapcsolatot a felvételi csapattal, hogy kifejezzék érdeklődésüket, vagy tájékozódjanak az állással kapcsolatosan. Ez a lehetőséget az összes álláshoz, és csak belső jelöltek számára érhető el. További tudnivalókat lásd: [Attract karrierwebhely funkciói](./career-site.md).
+Egy hiba került javításra, ahol a külső jelentkezők láthatták a munkához tartozó toborzó neve vagy a felvételi vezető nevét. Mostantól csak belső pályázók tekintheti meg az álláshoz tartozó felvételi csapatot. Könnyebb lett a belső jelentkezők számára a belső állások megtekintése és a jelentkezés. Ha egy jelentkező megpróbálni elérni a hivatkozást egy csak belső állás megtekintéséhez vagy a jelentkezéshez akkor hitelesítenie kell magát az Azure Active Directory hitelesítő adataival. A belső pályázók felvehetik a kapcsolatot a felvételi csapattal, hogy kifejezzék érdeklődésüket, vagy tájékozódjanak az állással kapcsolatosan. Ez a lehetőséget az összes álláshoz, és csak belső jelöltek számára érhető el. A további tudnivalókat lásd [Karrierwebhely beállítása a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Ezüstérmesek kijelölése, hogy értékes jelentkezőket lehessen hozzárendelni jövőbeni beosztásokhoz.
 Felvételi vezetők és toborzók gyakran listát vezetnek azon pályázókról akik a beosztásra alkalmasak, de nem lehetett ajánlatot tenni nekik, mert a beosztás már be volt töltve. Az ilyen pályázók, más néven ezüstérmesek értékesek, hiszen segítségükkel csökkenthető a felvételhez szükséges idő, ha egy hasonló pozíció nyílik meg. Az Attract most lehetővé teszi, hogy a toborzók és felvételi vezetők számára, hogy ezüstérmeseket válasszanak ki a jelentkezők közül, ha a pályázó bejutott az Ajánlati szakaszba. Az ezüstérmes besorolás, megjelenik a pályázók listáján a munkához, illetve a tehetségállomány nézetben is, ha a jelentkező tagja a toborzó vagy a felvételi vezető állományainak. Ezenkívül a kijelölés megjelenik a feladatelőzményekben a jelölt tehetségbázis-profilja részeként. Ezt a funkció úgy tekintheti meg, hogy egy rendszergazda segítségével bekapcsoltatja a [Felügyeleti központ Funkció kezelése](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) részében.

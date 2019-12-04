@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e7a3d32ba9c9ac0f6497db78d125dc34b4cfbc61
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658713"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811433"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Új vagy módosult elemek a Finance and Operations kezdőlapján
 [!include [banner](../includes/banner.md)]
 
 2019 októberétől ez a lap már nincs karbantartva. Az ebben a témakörben található információ bemutatja, hogy hol találhatók a funkciók információi a 2019 októbere előtt kiadott Finance and Operations alkalmazásokhoz.
 
-A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra történő frissítés folyamata](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+A legújabb verzióra való frissítéshez lásd: [A Finance and Operations legújabb verzióra történő áttérés folyamata](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 [!include [release notes](../includes/release-notes.md)]
 

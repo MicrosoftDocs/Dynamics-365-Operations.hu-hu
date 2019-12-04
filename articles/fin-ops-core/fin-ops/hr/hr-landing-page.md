@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553163"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812436"
 ---
 # <a name="human-resources-overview"></a>Emberi erőforrások áttekintése
 
@@ -43,17 +43,17 @@ Az Emberi erőforrások modullal a következő feladatok végezhetők el:
 
 ## <a name="develop-a-human-resources-strategy"></a>Emberi erőforrásokra vonatkozó stratégia kialakítása
 
-Az Emberi erőforrások modulban különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek az Emberi erőforrások modul alapvető elemei. Az egyes alkalmazottak beosztásokhoz rendelhetők, amelyek feladatokhoz vannak társítva.
+Az Emberi erőforrások modulban különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek az Emberi erőforrások modul alapvető elemei. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek feladatokhoz vannak társítva.
 
 - [Munkaerő szervezése részlegek, feladatok és beosztások szerint](../../../talent/departments-jobs-positions.md)
-- [Vállalatfüggő HR-paraméterek beállítása](../../../talent/set-up-company-specific-hr-parameters.md)
-- [Több jogi személyre kiterjedő HR-paraméterek beállítása](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Vállalatfüggő személyzeti (HR) paraméterek beállítása](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Több jogi entitásra kiterjedő személyzeti (HR) paraméterek beállítása](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Alkalmazottak toborzása, felvétele és motiválása
 
 A toborzási projektek a nyitott pozíciókra vonatkozó hirdetések tartamát kezelik, továbbá segítséget nyújtanak az álláslehetőségekre való pályázatok feldolgozásában. Használatukkal nyomonkövethetők az álláshirdetésekre érkező válaszok egy adott toborzási projekttel vagy konkrét pályázóval kapcsolatban, valamint frissíthető a nyitott pozíciók állapota. A pályázók felvétele történhet egyesével vagy „tömeges felvételi projektek” használatával is; utóbbiak több dolgozó felvételét segítik elő, például szezonális üzleti igények kielégítése érdekében.
 
-- [A toborzási folyamat kezelése](manage-recruiting-process.md)
+- [Toborzási folyamatok kezelése](manage-recruiting-process.md)
 - [Tömeges felvételi projektek](mass-hire-projects.md) 
 
 A munkatársak felvétele után terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve vállalat által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
@@ -67,30 +67,30 @@ A munkatársak felvétele után terveket alakíthat ki a kompenzáció hatékony
 Az alkalmazottak előmeneteli céljainak elérésének elősegítéséhez, valamint a kritikus üzleti igények teljesítéséhez célokat lehet beállítani, teljesítménybeszámolókat lehet létrehozni, és nyomon követhetők a visszajelzések. Segítségnyújtásként az alkalmazottaknak a szükséges készségek kifejlesztéséhez, mielőtt egy oktatót vagy dolgozót hozzátársítana egy képzéshez, megadhatja az oktatókat, a tanfolyamtípusokat, a tanfolyamokat, a tanfolyamleírásokat, a napirendeket, a szekciókat és a munkameneteket is. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
 
 - [Teljesítménykezelés](../../../talent/performance-management-overview.md)
-- [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](../../../talent/skills.md)
-- [Képzés tanfolyamok révén](../../../talent/courses.md)
+- [A munkaerő szakértelme és az üzleti igények harmonizálása](../../../talent/skills.md)
+- [Tanfolyamok beállítása](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Juttatások létrehozása és karbantartása
 
 A munkatársak bérekkel, illetve jutalmakkal történő kifizetése mellett lehetősége van juttatási programok (pl. egészségbiztosítási, nyugdíjazási konstrukciók) létrehozására is. Egyéb juttatásokat is kezelhet, például kölcsönzési programokat, amelyek során a cég eszközöket (pl. számítógépeket vagy telefonokat) ad kölcsön az alkalmazottaknak.
 
-- [Juttatási program kezelése](../../../talent/manage-benefit-program.md)
-- [Juttatásra való jogosultsági irányelvek](../../../talent/benefit-eligibility-policies.md)
-- [A dolgozóknak kölcsönzött cikkek kezelése](../../../talent/loan-items.md)
+- [Juttatási program meghatározása és kezelése](../../../talent/manage-benefit-program.md)
+- [Juttatásra vonatkozó jogosultsági irányelvek](../../../talent/benefit-eligibility-policies.md)
+- [Dolgozóknak kölcsönzött cikkek kezelése](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Munkahely biztonságosságának és megfelelőségének fenntartása
 
 A Microsoft Dynamics AX rendszer segítséget nyújt egy olyan biztonságos munkakörnyezet fenntartásában, amely megfelel a releváns jogszabályoknak, többek között a fogyatékossággal élő amerikaiakra vonatkozó törvénynek (Americans with Disabilities Act), illetve a honosítási törvényeknek. Például beállíthatja az egyes feladatokra vonatkozó fizikai követelményeket, valamint nyomon követheti a szállásigényléseket; mindezek elősegítik a szervezet munkaerő-szakértelmének optimalizálását.
 
-- [I-9-es űrlap: foglalkoztatási ellenőrzés](localizations/noam-usa-form-i-9-verification.md)
+- [I-9-es űrlap ellenőrzése](localizations/noam-usa-form-i-9-verification.md)
 - [A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (ADA) betartása](localizations/noam-usa-comply-ada.md)
-- [Az FMLA szabadidő nyomon követése](localizations/noam-usa-track-time-for-fmla.md)
+- [Távollét nyomok követése a Családi okokból történő és a betegszabadságról szóló amerikai törvényhez (FMLA)](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Információgyűjtés kérdőívekkel
 
 Lehetősége van kérdőívek tervezésére és kezelésére a különböző célra történő adatgyűjtések elvégzéséhez. A Kérdőív funkció segítségével kérdőíveket tervezhet, illetve hozhat létre. A kérdőív elkészítését követően elküldheti azt kitöltésre nagy tömegeknek vagy meghatározott válaszadóknak. A válaszok beérkezése után áttekintheti és elemezheti az eredményeket.
 
 - [Kérdőívek](../../../talent/questionnaires.md)
-- [Kérdőív tervezése](../../../talent/design-questionnaires.md)
-- [Kérdőív terjesztése és kitöltése](../../../talent/distribute-questionnaires.md)
-- [A kérdőív megtekintése és az eredmények kiértékelése](../../../talent/evaluate-questionnaire-results.md)
+- [Kérdőívek tervezése](../../../talent/design-questionnaires.md)
+- [Kérdőívek terjesztése és ütemezése](../../../talent/distribute-questionnaires.md)
+- [A kérdőívek eredményeinek megtekintése és kiértékelése](../../../talent/evaluate-questionnaire-results.md)

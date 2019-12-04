@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f238afadfa064e972ef11a95fdad073f63ff20c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 4cf65826279f0741ce5abc89d8f15bfec98c83ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250668"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813684"
 ---
 # <a name="monitor-forecast-accuracy"></a>Előrejelzés pontosságának követése
 
@@ -44,7 +44,7 @@ A Supply Chain Management a következő típusú előrejelzési pontosságokat s
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Beállított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
+[Módosított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
 
 [Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor](remove-historical-outliers-calculating-demand-forecast.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653323"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812260"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653323"
 
 Ha egy munkarendelésen befejeződött egy karbantartási feladat, következő lépésként el kell végezni a felhasználási regisztrációkat és a naplók feladását. Regisztráció a következő felhasználási típusokon végezhető el: órák, cikkek és kiadások. A program a különböző felhasználási típusokat a **Munkarendelési naplók** lapon regisztrálja és adja fel. A program az **Eszközkezelés modulban** található naplóbeállítást használja a **Projektvezetés és könyvelés** modulban feltüntetett órák, cikkek és kiadások külön naplóinak a létrehozásához és feladásához.
 
-Bizonyos esetekben előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy törölni előrejelzési sorokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy a naplósorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotáról és a kapcsolódó projektszakaszokról itt talál további információt: [A Projektvezetés és könyveléssel való integráció](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Bizonyos esetekben előfordulhat, hogy egy munkarendelésben lehetősége van hozzáadni vagy törölni előrejelzési sorokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy a naplósorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotaival és kapcsolódó projektfázisaival kapcsolatos további információkat az [Előrejelzések, munkarendelések és projektek](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) részben olvashat.
 
 >[!NOTE]
 >A munkarendelés életciklus-állapotára vonatkozó naplókhoz automatikus feladás is beállítható. További információt itt talál: [Munkarendelés életciklus-állapotai](../setup-for-work-orders/work-order-lifecycle-states.md).

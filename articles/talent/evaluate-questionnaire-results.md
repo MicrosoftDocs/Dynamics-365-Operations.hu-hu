@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518214"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813983"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek megtekintése és az eredmények kiértékelése
 
@@ -57,7 +57,8 @@ A **Válaszok** oldalon megtekinthet részleteket a válaszokról, az elért pon
 -   **Válasz jelentés** – Ez a jelentés a válaszadó kérdésenkénti válaszait mutatja.
 -   **Helytelen válaszok** – Ez a jelentés a válaszadó által adott helytelen válaszokhoz kapcsolódó információkat mutatja.
 
-**Megjegyzés:** Az **Eredmények** jelentés csak akkor érhető el, ha válaszcsoportokat használt a kérdőívben, valamint ha kiválasztotta az **Eredményoldal** lehetőséget a **Kérdőívek** oldalon. A **Válasz** jelentés és a **Helytelen válaszok** jelentés csak akkor érhető el, ha kiválasztotta a **Válaszjelentés** lehetőséget a **Kérdőívek** oldalon.
+> [!NOTE]
+> Az **Eredmények** jelentés csak akkor érhető el, ha válaszcsoportokat használt a kérdőívben, valamint ha kiválasztotta az **Eredményeket bemutató oldal** lehetőséget a **Kérdőívek** oldalon. A **Válasz** jelentés és a **Helytelen válaszok** jelentés csak akkor érhető el, ha kiválasztotta a **Válaszjelentés** lehetőséget a **Kérdőívek** oldalon.
 
 ## <a name="questionnaire-statistics"></a>Kérdőív-statisztika
 Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének kiértékeléséhez, az Ön által megszabott számítások alapján. A számítások megadásához az alábbi feladatokat kell elvégeznie:
@@ -77,7 +78,7 @@ A program menti a megadott beállításokat, így ezek az eredmények ismételt 
 
 [Kérdőívek tervezése](design-questionnaires.md)
 
-[Kérdőívek használata](questionnaires.md)
+[Kérdőívek](questionnaires.md)
 
-[Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
+[Kérdőívek terjesztése és ütemezése](distribute-questionnaires.md)
 

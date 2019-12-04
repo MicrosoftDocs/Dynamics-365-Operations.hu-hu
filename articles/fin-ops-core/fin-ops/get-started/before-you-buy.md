@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191247"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812626"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -41,8 +41,8 @@ A következő megfontolásokat kell figyelembe venni, amikor telepítési opció
 
 - Szabályozói és megfelelési követelmények, amelyek nem szerepelnek a felhőtanúsítványokban
 - Kapcsolat nélküli üzleti folyamat a Microsoft Dynamics Lifecycle Services (LCS) eléréséhez szükséges időszakos internetkapcsolattal az alkalmazások életciklus-kezeléséhez
-- [Az on-premises telepítéseknél jelenleg nem elérhető funkciók](features-not-implemented-on-prem.md)
-- [Minimális infrastruktúra-követelmények](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [A helyszíni telepítésben nem implementált funkciók](features-not-implemented-on-prem.md)
+- [Helyszíni telepítések rendszerkövetelményei](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > A Microsoft Dynamics 365 for Finance and Operations helyszíni telepítése nem támogatott a nyilvános felhő infrastruktúrákon, többek között az Azure rendszerben.
@@ -78,7 +78,7 @@ A Microsoft felhőalapú szolgáltatója szorosan együttműködik Önnel, hogy 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Vásárlás Dynamics-partneren keresztül (on-premises telepítésnél)
 
-Egy partnerrel kell együttműködnie a Finance and Operations on-premises telepítésének megvásárlásához. További információért lásd: [Dynamics 365 for Finance and Operations (on premises) beszerzése](purchase-on-premises.md)
+Egy partnerrel kell együttműködnie a Finance and Operations on-premises telepítésének megvásárlásához. További információ: [A Finance + Operations (helyszíni) megvásárlása](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Válassza ki a támogatási lehetőséget
 
@@ -91,7 +91,7 @@ További információ:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>4\. lépés: A FastTrack megismerése és a telepítés megtervezése
 
-A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További tájékoztatás: [Microsoft FastTrack for Dynamics 365 – áttekintés](fasttrack-dynamics-365-overview.md)
+A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További információ: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 

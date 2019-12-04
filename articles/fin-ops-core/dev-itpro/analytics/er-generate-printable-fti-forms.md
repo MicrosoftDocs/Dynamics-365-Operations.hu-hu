@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181427"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771283"
 ---
 # <a name="generate-printable-fti-forms"></a>Nyomtatható FTI-űrlapok generálása
 
@@ -41,7 +41,7 @@ A nyomtatható FTI űrlapok generálása a Microsoft SQL Server Reporting Servic
 A nyomtatható FTI-űrlapokhoz tartozó testreszabott megoldás részeként létre kell hoznia egy ER konfigurációkészletet.
 
 ### <a name="configure-the-er-data-model"></a>Az ER-adatmodell konfigurálása
-Az alkalmazásnek tartalmaznia kell egy ER adatokmodell-konfigurációt, mely tartalmaz egy adatmodellt, amely leírja a vevő számlázási üzleti területét. Követelmény, hogy az adatmodell neve **CustomersInvoicing** legyen. Az ER adatmodellekkel tervezésével kapcsolatos további tudnivalókat lásd: [Tartomány-specifikus adatmodell létrehozása elektronikus jelentéshez (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
+Az alkalmazásnek tartalmaznia kell egy ER adatokmodell-konfigurációt, mely tartalmaz egy adatmodellt, amely leírja a vevő számlázási üzleti területét. Követelmény, hogy az adatmodell neve **CustomersInvoicing** legyen. Az ER adatmodellekkel tervezésével kapcsolatos további tudnivalókat lásd: [ER – Tartomány-specifikus adatmodell tervezése](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>Az ER modell-leképezés konfigurálása
 Az alkalmazásnak tartalmaznia kell az ER modell-leképezést a CustomersInvoicing adatmodellhez. A modell-leképezés lehet egy ER adatmodell-konfigurációjának vagy egy ER modell-leképezés konfiguráció. Azomban a modell-leképezés a gyökérszíntű leírójának neve **FreeTextInvoice** kell legyen.
@@ -62,7 +62,7 @@ A leképezésnek tartalmaznia kell a következő adatforrásokat:
 
 Az alkalmazás a ER keretrendszerrel történő integrációja részleteit megtalálhatók az **ERPrintMgmtReportFormatSubscriber** osztályban (ER alkalmazáscsomag integrációs modell), az alkalmazás a forráskódjában.
 
-Az ER modell-leképezések felépítésével kapcsolatos további tudnivalókat lásd: [Modell-leképezés definiálása és minta-adatforrások kiválasztása az elektronikus jelentéshez (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+Az ER modell-leképezések felépítésével kapcsolatos további tudnivalókat lásd: [ER modell-leképezések definiálása és adatforrások kiválasztása hozzájuk](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>ER-fromátum konfigurálása
 Az alkalmazáspéldányának rendelkeznie kell ER-formátumkonfigurációval, melyek az FTI-űrlapok generálásához lesznek használva. 
@@ -70,7 +70,7 @@ Az alkalmazáspéldányának rendelkeznie kell ER-formátumkonfigurációval, me
 > [!NOTE]
 > Erre a formátumkonfigurációt létre kell hozni a CustomersInvoicing adatmodellhez, és azt modell-leképezést kell használnia, melynek gyökérleírója **FreeTextInvoice**.
 
-Az ER-formátumok beállításával kapcsolatos további tudnivalókat lásd: [Formátumkonfiguráció létrehozása elektronikus jelentésekhez (ER)](tasks/er-format-configuration-2016-11.md). Az ER formátumok tervezésével kapcsolatos további információkért, hogy azok OpenXML-formátumú jelentéseket generáljanak lásd: [Konfiguráció tervezése jelentések létrehozásához OpenXML formátumban elektronikus jelentésekhez (ER)](tasks/er-design-reports-openxml-2016-11.md).
+Az ER-formátumok beállításával kapcsolatos további tudnivalókat lásd: [ER – Formátumkonfiguráció létrehozása (2016. november)](tasks/er-format-configuration-2016-11.md). Az ER formátumok tervezésével kapcsolatos további információkért, hogy azok OpenXML-formátumú jelentéseket generáljanak lásd: [ER – Konfiguráció tervezése jelentések létrehozásához OPENXML formátumban (2016. november)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>A nyomtatókezelés konfigurálása
 Az FTI-űrlapok létrehozásához ER keretrendszer használatával ugyanúgy rendelheti hozzá az ER-formátumokat, ahogy az SSRS-jelentések jelentéseket. Az ER-formátum társításához az összes Kinnlevőségek FTI-hez, válassza **Kinnlévőségek** \> **Beállítás** \> **Képernyők** \> **Képernyő beállítása** \> **Általános** \> **Nyomtatás kezelése** \> **Szabadszöveges számla** \> **Eredeti** lehetőséget. ER-formátum társításához egy adott vevőhöz vagy számlához kövesse az alábbi lépéseket.
@@ -94,7 +94,7 @@ FTI-űrlapok létrehozására választhat számlákat tartomány alapján vagy k
 
 ![Számlaelőnézet](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Ha ilyen módon nyomtat FTI-űrlapokat ER formátumok használatával, az alapértelmezett ER fájlcélok használatosak. A cél nem módosítható. Az ER-formátumokhoz tartozó ER-célok beállításával kapcsolatos további tudnivalókat lásd: [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md).
+Ha ilyen módon nyomtat FTI-űrlapokat ER formátumok használatával, az alapértelmezett ER fájlcélok használatosak. A cél nem módosítható. Az ER-formátumokhoz tartozó ER-célok beállításával kapcsolatos további tudnivalókat lásd: [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md).
 
 Generálhat FTI-űrlapokat akkor is, ha FTI-t tesz közzé a **Számla nyomtatása** bekapcsolásával, és a **Nyomtatáskezelés céljának használata** kikapcsolásával.
 
@@ -221,7 +221,7 @@ Az **Emailing.TxtToUse.Body** kifejezés a minta formátumban a helyőrzők alá
 - "%5" a vállalat kapcsolattartó személyének beosztására lesz cserélve.
 - "%6" a vállalat kapcsolattartó személyének e-mail-címére lesz cserélve.
 
-![E-mail](media/FTIbyGER-Email.PNG)
+![E-mail-cím](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>További erőforrások
-[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
+[Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572205"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815365"
 ---
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
@@ -41,9 +41,9 @@ A **Beszerzési rendelés előkészítése** és a **Beszerzési rendelés bevé
 
 A következő cikkek áttekintést adnak a beszerzési rendelés különböző szakaszairól:
 
--   [Beszerzési rendelés létrehozása](purchase-order-creation.md)
--   [Beszerzési rendelés jóváhagyása és visszaigazolása](purchase-order-approval-confirmation.md)
--   [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
+-   [Beszerzési rendelések létrehozása](purchase-order-creation.md)
+-   [Beszerzési rendelések jóváhagyása és megerősítése](purchase-order-approval-confirmation.md)
+-   [Termékbevételezés összevetése a beszerzési rendelésekkel](product-receipt-against-purchase-orders.md)
 -   [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Beszerzési rendelések típusai
@@ -82,11 +82,11 @@ A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rende
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Beszerzési rendelés létrehozása](purchase-order-creation.md)
+[Beszerzési rendelések létrehozása](purchase-order-creation.md)
 
-[Beszerzési rendelés jóváhagyása és visszaigazolása](purchase-order-approval-confirmation.md)
+[Beszerzési rendelések jóváhagyása és megerősítése](purchase-order-approval-confirmation.md)
 
-[Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
+[Termékbevételezés összevetése a beszerzési rendelésekkel](product-receipt-against-purchase-orders.md)
 
 [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
 

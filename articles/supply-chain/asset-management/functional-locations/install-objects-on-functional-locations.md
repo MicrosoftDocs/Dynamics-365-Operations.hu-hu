@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571806"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811825"
 ---
 # <a name="install-assets-on-functional-locations"></a>Eszközök telepítése munkavégzési helyszínekre
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571806"
 
  
 
-A munkavégzési helyszínek struktúrájának kialakítása után eszközöket kell telepíteni a releváns munkavégzési helyszínekre. Ez a cikk azt ismerteti, hogyan telepíthetők eszközök ezekre a munkavégzési helyszínekre az Eszközök kezelése szolgáltatásban. Az eszközök létrehozásáról az [Eszközök](../objects/introduction-to-objects.md) cikkben talál további információt.
+A munkavégzési helyszínek struktúrájának kialakítása után eszközöket kell telepíteni a releváns munkavégzési helyszínekre. Ez a cikk azt ismerteti, hogyan telepíthetők eszközök ezekre a munkavégzési helyszínekre az Eszközök kezelése szolgáltatásban. Az eszközök létrehozásáról a [Bevezetés: eszközök](../objects/introduction-to-objects.md) cikkben talál további információt.
 
 Ha hozott létre eszközstruktúrát, a teljes struktúrát telepíteni kell a munkavégzési helyszíneken. Ennek megfelelően egy munkavégzési helyszínen csak fölérendelt eszközök (fölérendelt eszközzel nem rendelkező felső szintű eszközök) telepíthetők. Minden összekapcsolt alárendelt eszköz (aleszköz) a munkavégzési helyszínen is települ. Amikor eszközöket telepít egy munkavégzési helyszínen, a munkavégzési helyszín pénzügyi dimenziói – a munkavégzési helyszín típusának beállításától függően – automatikusan átkerülhetnek az eszközre. A munkavégzési helyszínek típusainak beállításáról a [Munkavégzési helyszínek típusai](../setup-for-functional-locations/functional-location-types.md) című cikkben talál további információt.
 

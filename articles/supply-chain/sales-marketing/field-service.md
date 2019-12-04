@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249839"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815272"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>A Microsoft Dynamics 365 Field Service integráció áttekintése
 
@@ -41,9 +41,9 @@ A Field Service és a Supply Chain Management közötti integráció első fázi
 
 A Field Service és a Supply Chain Management közötti integráció első fázisa a következő elemek szinkronizálását teszi lehetővé:
 
-- [Termékek a Supply Chain Management szolgáltatásból termékekké a Field Service szolgáltatásban, amelyek terméktípus-információkat tartalmaznak](field-service-product.md)
-- [A Field Service szolgáltatásokban lévő munkarendelések és a Supply Chain Management értékesítési rendelései](field-service-work-order.md)
-- [Supply Chain Management-számlák Field Service szabadszöveges számlákká](field-service-invoice.md)
+- [A Supply Chain Management-termékek közvetlen szinkronizálása a Field Service-termékekre](field-service-product.md)
+- [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](field-service-work-order.md)
+- [Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká](field-service-invoice.md)
 
 A Field Service és a Supply Chain Management közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót: [Munkarendelések szinkronizálása a Microsoft Dynamics 365 integrációval](https://www.youtube.com/watch?v=46ylO7raZAo).
 

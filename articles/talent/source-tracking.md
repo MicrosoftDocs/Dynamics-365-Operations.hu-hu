@@ -1,5 +1,5 @@
 ---
-title: Jelöltek profiljai és pályázatai forrásainak nyomon követése
+title: Jelöltek forrásainak nyomon követése az Attract szolgáltatásban
 description: Ez a témakör a jelölt profilok jelentkezések forráskövetésével kapcsolatban tartalmaz tájékoztatást.
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551887"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832658"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Jelöltek profiljai és pályázatai forrásainak nyomon követése
+# <a name="track-candidate-sources-in-attract"></a>Jelöltek forrásainak nyomon követése az Attract szolgáltatásban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > A témakörben megjegyzett funkciók rendelkezésére állnak egy előzetes kiadás részeként. A tartalom és a funkciók megváltozhatnak. Ez a funkció használatához kérje meg a rendszergazdát az engedélyezésére az **Adminisztratív beállításokban** az Attract megoldásban. Egy későbbi verzió forráskövetési jelentéseket is kínál majd. További tudnivalókért lásd: [Talent – előnézeti funkciók elérése](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

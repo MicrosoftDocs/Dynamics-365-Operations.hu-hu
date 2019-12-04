@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fdfa78ba0ace5481305d2ab505ed5fc7538e29e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 337b6b0b7ec25851f5dc156effad9ff07256a44d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545030"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814209"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuális ütemezés lean manufacturing céljára
 
@@ -93,5 +93,5 @@ A Kanbanütemezési táblát a menüelem használatával a következő lapokon n
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Lean manufacturing – Kanbanfeladat ütemezése](lean-manufacturing-kanban-job-scheduling.md)
+[Kanbanfeladat ütemezése lean manufacturing céljára](lean-manufacturing-kanban-job-scheduling.md)
 

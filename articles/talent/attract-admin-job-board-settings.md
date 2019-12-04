@@ -1,5 +1,5 @@
 ---
-title: Broadbean integráció engedélyezése a Microsoft Dynamics 365 Talent - Attract megoldásban
+title: A Broadbean-integráció engedélyezése az Attract szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Talent - Attract megoldást konfigurálni állások közzétételére külső állásportálokon, például a Broadean portálon.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552140"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833208"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a>Broadbean integráció engedélyezése a Microsoft Dynamics 365 Talent - Attract megoldásban
+# <a name="enable-broadbean-integration-in-attract"></a>A Broadbean-integráció engedélyezése az Attract szolgáltatásban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A nyitott pozíciókat elehető legjobb alkalmas jelölt számára szeretné eljuttatni. A toborzási oldalak, például a Broadbean segítenek elérni ezt a célt. A Microsoft Dynamics 365 Talent: Attract lehetővé teszi, hogy állásokat tegyen közzé a Broadbean oldalon, és a Microsoft folyamatosan új ajánlatokat biztosít majd ezen a területen.
 

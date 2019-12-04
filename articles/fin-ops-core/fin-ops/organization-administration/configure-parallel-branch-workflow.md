@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2339c6f901a3ef39ad4f9586b2f391b966a3df98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190143"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811357"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Párhuzamos ágak konfigurálása munkafolyamatban
 
@@ -46,8 +46,8 @@ A következő lépések segítségével nevezheti el a párhuzamos ágat.
 Végezze el a következő lépéseket a párhuzamos ág elemeinek megtervezéséhez és konfigurálásához.
 
 1. Kattintson duplán a párhuzamos ágra.
-2. Húzzon munkafolyamat-elemeket a vászonra, majd állítsa be az elemeket, ugyanúgy, mint bármely más munkafolyamat létrehozásakor. További tudnivalókkal kapcsolatban lásd: [Munkafolyamat létrehozása](create-workflow.md).
+2. Húzzon munkafolyamat-elemeket a vászonra, majd állítsa be az elemeket, ugyanúgy, mint bármely más munkafolyamat létrehozásakor. További információ: [Munkafolyamatok létrehozása – áttekintés](create-workflow.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Munkafolyamat létrehozása](create-workflow.md)
+[Munkafolyamatok létrehozása – áttekintés](create-workflow.md)

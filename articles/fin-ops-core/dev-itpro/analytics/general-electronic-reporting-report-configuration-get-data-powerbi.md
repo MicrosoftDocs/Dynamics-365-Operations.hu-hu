@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181910"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770023"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
 
@@ -184,7 +184,7 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
     [![Frissített térkép](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Hozzáférés a Power BI jelentéshez a Finance modulban
-A Power BI integrációjának beállítása. További tudnivalókért lásd: [A Power BI konfigurálása a munkaterületekhez való integráláshoz](configure-power-bi-integration.md).
+A Power BI integrációjának beállítása. További tudnivalókért lásd: [A Power BI integráció konfigurálása a munkaterületekhez](configure-power-bi-integration.md).
 
 1. Az **Elektronikus jelentések** munkaterületlapon, amely támogatja a Power BI-integrációt (**Szervezet felügyelete** &gt; **Munkaterületek** &gt; **Elektronikus jelentési munkaterület**), kattintson a **Lehetőségek** &gt; **Jelentések katalógusának megnyitása** lehetőségre.
 2. Válassza ki az Ön által létrehozott, az **Importálás és exportálás részletei** Power BI-jelentést ahhoz, hogy a jelentést a kijelölt lapon teendőként jelenítse meg.
@@ -194,6 +194,6 @@ A Power BI integrációjának beállítása. További tudnivalókért lásd: [A 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
+[Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
-[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
+[Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)

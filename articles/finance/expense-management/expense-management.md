@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d62e3475b4336e86e203bbd347d110704eba07
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7066a021390e3403c4312a7cfe8488a989b9aaa3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178097"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771938"
 ---
 # <a name="expense-management-overview"></a>Költséggazdálkodás – áttekintés
 
@@ -37,7 +37,7 @@ A részleteket lásd: [Költségkezelés konfigurálása](plan-expense-managemen
 
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-A tervezett új funkciók megtekintéséhez lépjen a [Microsoft Dynamics 365 kibocsátási megjegyzések](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára.
+A tervezett új funkciók megtekintéséhez lépjen a [Microsoft Dynamics 365 kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára.
 
 #### <a name="expense-report-entry"></a>Költségjelentés bejegyzése
 

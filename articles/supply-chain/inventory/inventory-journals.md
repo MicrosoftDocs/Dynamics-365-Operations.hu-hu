@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c4a2696b015611f4430ad5dfa1c61c1c4f913a9
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c6774a41887e74bfdb1fa6a9221264b0c8454c70
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570794"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814352"
 ---
 # <a name="inventory-journals"></a>Készletnaplók
 
@@ -74,7 +74,7 @@ A termelési bemenet naplók úgy működnek, mint a cikkérkezési naplók, de 
 
 ### <a name="counting"></a>Számlálás
 
-Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva, és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. További információért a leltárcsoportok meghatározásával kapcsolatban, lásd [Leltárazási folyamatok meghatározása (Feladat-útmutató)](tasks/define-inventory-counting-processes.md).
+Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva, és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. További információért a leltárcsoportokkal kapcsolatban, lásd [Leltárazási folyamatok meghatározása](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Címkeleltár
 

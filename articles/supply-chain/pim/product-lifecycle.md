@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865328"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813546"
 ---
 # <a name="product-lifecycle-state-overview"></a>A termékéletciklus-állapot áttekintése
 
@@ -107,9 +107,9 @@ Használja a következő feltételeket a kiadott termékek vagy termékváltozat
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
--  [Hozzon létre egy új termék életciklus állapota (feladat útmutatója)](tasks/new-product-lifecycle-state.md)
--  [Hozzon létre alapértelmezett termékéletciklus-állapotot (feladat-útmutató)](tasks/default-product-lifecycle-state.md)
--  [Termékéletciklus-állapot hozzárendelése kiadott alaptermékhez (feladat-útmutató)](tasks/product-lifecycle-state-released-product-master.md)
--  [Termékéletciklus-állapot hozzárendelése kiadott termékhez (feladat-útmutató)](tasks/product-lifecycle-state-released-product.md)
--  [Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése (Feladat-útmutató)](tasks/obsolete-product-variants.md)
--  [Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből (A szolgáltatás tárgyai)](tasks/exclude-products-master-planning.md)
+-  [Új termékéletciklus-állapot létrehozása](tasks/new-product-lifecycle-state.md)
+-  [Alapértelmezett termékéletciklus-állapot létrehozása](tasks/default-product-lifecycle-state.md)
+-  [Termékéletciklus-állapot hozzárendelése kiadott alaptermékhez](tasks/product-lifecycle-state-released-product-master.md)
+-  [Termékéletciklus-állapot hozzárendelése kiadott termékhez](tasks/product-lifecycle-state-released-product.md)
+-  [Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése](tasks/obsolete-product-variants.md)
+-  [Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből](tasks/exclude-products-master-planning.md)

@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248930"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813362"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat. 
 
@@ -80,6 +81,9 @@ Amikor beszerzési rendelést hoz létre alkalmazhat hozzá egy beszerzési meg�
 Csak egy beszerzési rendelés létrehozásakor jelölhető ki a beszerzési szerződés. A beszerzési rendelés létrejötte után ki nem jelölhet ki beszerzési szerződést.  
 Bizonyos esetekben, amikor a beszerzési rendelést közvetetten hozza létre beállíthatja, hogy a Supply Chain Management automatikusan rákeressen-e az alkalmazható beszerzési szerződésekre. Ez a funkció például akkor hasznos, ha automatikusan erősít meg tervezett beszerzési rendeléseket, vagy értékesítési rendelésen alapuló beszerzési rendeléseket hoz létre.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Egyeztetési irányelv beszerzési szerződéseknél
+A beszerzési szerződés fejlécében definiálni lehet egy soregyeztetési szabályt. Ez a soregyeztetési irányelv figyelembe veszi a kötelezettségek paramétereinek soregyeztetési irányelvét, ha a **Kötelezettségek paraméterei** oldal **Egyeztetési irányelv felülbírálásának engedélyezése** mezőjének (az **Ár és mennyiség egyeztetése** gyorslapon) értéke **Vállalati irányelvnél magasabb**. A beszerzési szerződésre hivatkozó dokumentumok a beszerzési szerződés fejlécében megadott soregyeztetési irányelvet fogják használni, hacsak a kapcsolódó cikk, cikk és szállító vagy kategória beszerzési irányelvében máshogy nem határoztak.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Beszerzési szerződések és vállalatközi kereskedelem
 Vállalatközi kereskedelmi kapcsolat hozható létre például különböző jogi személyeknél található szállítói és vevői számlák között. Ha az egyik félhez beszerzési vagy értékesítési rendelés készül, vállalatközi rendelési lánc jön létre. A rendelési láncban a rendszer a megfelelő jogi személyben hozza létre a beszerzési rendelést és az értékesítési rendelést.  
 
@@ -93,9 +97,9 @@ Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy 
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Új beszerzési szerződés létrehozása (Feladat-útmutató)](tasks/create-purchase-agreement.md)
+[Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
 
-[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből (Feladat-útmutató)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

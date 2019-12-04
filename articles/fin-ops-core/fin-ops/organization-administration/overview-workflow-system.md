@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190005"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812363"
 ---
 # <a name="workflow-system-overview"></a>A munkafolyamat-rendszer áttekintése
 
@@ -57,18 +57,18 @@ A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 
 ## <a name="workflow-content"></a>Munkafolyamat-tartalom
 
-+ [Munkafolyamat felépítése](workflow-system-architecture.md)
++ [A munkafolyamat-rendszer felépítése](workflow-system-architecture.md)
 + [Munkafolyamat-elemek](workflow-elements.md)
-+ [Munkafolyamat-műveletek](workflow-actions.md)
-+ [Munkafolyamat létrehozása](create-workflow.md)
++ [Munkafolyamat-jóváhagyási folyamatok műveletei](workflow-actions.md)
++ [Munkafolyamatok létrehozása – áttekintés](create-workflow.md)
 + [Munkafolyamat-tulajdonságok konfigurálása](configure-workflow-properties.md)
-+ [Manuális feladat konfigurálása munkafolyamatban](configure-manual-task-workflow.md)
-+ [Automatikus feladat konfigurálása munkafolyamatban](configure-automated-task-workflow.md)
-+ [Jóváhagyási folyamat konfigurálása munkafolyamatban](configure-approval-process-workflow.md)
-+ [Jóváhagyási lépés konfigurálása munkafolyamatban](configure-approval-step-workflow.md)
-+ [Manuális döntés konfigurálása munkafolyamatban](configure-manual-decision-workflow.md)
-+ [Feltételes döntés konfigurálása munkafolyamatban](configure-conditional-decision-workflow.md)
-+ [Párhuzamos tevékenység beállítása munkafolyamatban](configure-parallel-activity-workflow.md)
-+ [Párhuzamos ágának konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md)
-+ [Sortétel munkafolyamatának konfigurálása](configure-line-item-workflow.md)
++ [Manuális feladatok konfigurálása munkafolyamatban](configure-manual-task-workflow.md)
++ [Automatizált feladatok konfigurálása munkafolyamatban](configure-automated-task-workflow.md)
++ [Jóváhagyási folyamatok konfigurálása munkafolyamatban](configure-approval-process-workflow.md)
++ [Jóváhagyási lépések konfigurálása munkafolyamatban](configure-approval-step-workflow.md)
++ [Manuális döntések konfigurálása munkafolyamatban](configure-manual-decision-workflow.md)
++ [Feltételes döntések konfigurálása munkafolyamatban](configure-conditional-decision-workflow.md)
++ [Párhuzamos tevékenységek beállítása munkafolyamatban](configure-parallel-activity-workflow.md)
++ [Párhuzamos ágak konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md)
++ [Sortétel munkafolyamatainak konfigurálása](configure-line-item-workflow.md)
 + [Munkafolyamat GYIK](workflow-FAQ.md)

@@ -1,5 +1,5 @@
 ---
-title: Jelöltek keresése tehetségállományok segítségével a Microsoft Dynamics 365 Talent - Attract megoldásban
+title: Jelöltek keresése tehetségállományokkal az Attract szolgáltatásban
 description: Ez a témakör bemutatja, hogyan lehet létrehozni és beállítani az Microsoft Dynamics 365 Talent - Attract tehetségállományait.
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551118"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833023"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Jelöltek keresése tehetségállományok segítségével a Microsoft Dynamics 365 Talent - Attract megoldásban
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Jelöltek keresése tehetségállományokkal az Attract szolgáltatásban
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 A felvételi vezetők és a toborzók az Attract szaktudásgyűjtők funkciójával rendezhetik a jelölteket. A szaktudásgyűjtők segítségével nyomon követhetők a pályázók, akik állásra jelentkeznek a vállalatnál, és tartható a kapcsolat velük.
 
@@ -116,7 +115,7 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A *
 
     A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft Office 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
 
-- A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További tudnivalókért lásd: [Forráskeresés LinkedIn Recruiter segítségével](./attract-linkedin-recruiter.md).
+- A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További információ: [Jelöltek felkutatása a LinkedIn Recruiter használatával a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Csak a jelentkezők frissíthetik tudásukat, oktatási előzményeiket és munkatapasztalatokat.

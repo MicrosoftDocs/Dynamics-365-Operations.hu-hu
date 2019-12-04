@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185267"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772535"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Bejövő dokumentumok elemzése JSON-formátumban
 
@@ -46,7 +46,7 @@ Mielőtt elvégzi a külső JSON-fájl feladat-útmutatójából származó adat
 - A JSON-tömbök csak egy objektum tulajdonságelemeinek beágyazott elemeit tartalmazhatják.
 - A JSON-tömbök csak JSON-objektumokat tartalmazhatnak. Nem tartalmazhatnak közvetlen karakterlánc/numerikus értékeket és beágyazott tömböket. Ezeknek a tömböknek az elemeit a program sorrendben elemzi, mivel azok a formátumban vannak meghatározva. Mindegyik JSON-objektumnál különböző beállításokat kell figyelembe venni.
 
-Ezenkívül be kell fejeznie a [Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítéshez](tasks/er-required-configurations-import-data.md) feladat-útmutatót, ha még nem tette meg. A feladat-útmutató befejezéséhez töltse le a következő fájlt.
+Ezenkívül be kell fejeznie a [ER Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához](tasks/er-required-configurations-import-data.md) feladat-útmutatót, ha még nem tette meg. A feladat-útmutató befejezéséhez töltse le a következő fájlt.
 
 | Beosztás                  | Fájlnév |
 |------------------------|-----------|

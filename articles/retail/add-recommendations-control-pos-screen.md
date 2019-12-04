@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e6f0b75c8d81a5ac6ec90020375aec39120d4406
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278129"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811216"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
 
 [!include [banner](includes/banner.md)]
 
 
-Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 Retail képernyő-elrendezés tervezőjének használatával. A termék ajánlásaival kapcsolatos további tudnivalókat lásd a [termék ajánlásainak áttekintése POS-dokumentációk.](product.md)
+Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 Retail képernyő-elrendezés tervezőjének használatával. A termék ajánlásaival kapcsolatos további tudnivalók: [Termékajánlások a POS-dokumentációban](product.md).
 
 
 A Microsoft Dynamics 365 Retail használata esetén megjeleníthet termékajánlásokat a pénztáreszközön. Termékajánlások megjelenítéséhez vezérlőt kell hozzáadni a tranzakciós képernyőhöz a képernyő-elrendezés tervezőjének segítségével. 
@@ -98,6 +98,6 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[termékajánlatok a POS esetében](product.md)
+[Termékajánlatok a pénztárnál](product.md)
 
-[termékajánlások áttekintése](../commerce/product-recommendations.md)
+[Termékajánlatok áttekintése](../commerce/product-recommendations.md)

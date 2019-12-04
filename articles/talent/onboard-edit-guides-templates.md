@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552002"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812879"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 Talent – Onboard szolgáltatásban
 
@@ -124,7 +124,7 @@ A módosítások érvényesítése:
 
     - A YouTube-videoklipek hozzáadásához húzza a **YouTube** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, és adja meg a YouTube-videoklip URL-címét.
     - A Sway-bemutató vagy -hírlevél hozzáadásához húzza a **Sway** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, és adja meg az Sway-bemutató vagy -hírlevél beágyazott URL-jét.
-    - Ha PowerApps-alkalmazást szeretne hozzáadni, húzza át a **PowerApps** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, majd válassza ki a PowerApps-alkalmazást, illetve írja be a PowerApps-alkalmazásazonosítót.
+    - Ha Microsoft Power Apps-alkalmazást szeretne hozzáadni, húzza át a **Power Apps** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, majd válassza ki a Power Apps-alkalmazást, illetve írja be a Power Apps-alkalmazásazonosítót.
     - A Microsoft Stream-videoklipek hozzáadásához húzza a **Microsoft Stream** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, és adja meg a Microsoft Stream-videoklip URL-címét.
     - Microsoft Forms-űrlap hozzáadásához húzza a **Microsoft Forms** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, adja meg a Microsoft Forms-űrlap URL-címét, majd adja meg a képernyőterület méretét.
     - Webes tartalmat tartalmazó iframe hozzáadásához húzza a **Webes tartalom (iframe)** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, adja meg a webes tartalom URL-címét, majd adja meg a képernyőterület méretét.
@@ -186,6 +186,6 @@ Ha szerkeszteni szeretne egy névjegyet, válassza a **Szerkesztés** gombot (a 
 ### <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

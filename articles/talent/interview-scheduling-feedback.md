@@ -1,5 +1,5 @@
 ---
-title: Interjú ütemezése és visszajelzés
+title: Interjúk ütemezése az Attract programban
 description: Ez a témakör az Attract interjúütemezési és visszajelzési tevékenységeit ismerteti.
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518169"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832745"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Interjú ütemezése és visszajelzés
+# <a name="schedule-interviews-in-attract"></a>Interjúk ütemezése az Attract programban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>Ütemezés tevékenység
+## <a name="scheduler-activity"></a>Ütemezési tevékenység
 
 Az ütemező tevékenység nem kötelező és két összetevőből áll: Jelölt rendelkezésre állásának kérése és Ütemezés. A pályázó elérhetősége összetevő lehetővé teszi a pályázó elérhetőségének lekérését e-mail segítségével. Az ütemezés összetevő lehetővé teszi a pályázóval és a felvételi csapattal interjúk ütemezését.
 

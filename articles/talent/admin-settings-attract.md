@@ -1,5 +1,5 @@
 ---
-title: Vállalat adatainak beállítása – Microsoft Dynamics 365 Talent - Attract
+title: A vállalat adatainak beállítása az Attract szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a vállalat adatait és arculatát a Microsoft Dynamics 365 Talent - Attract megoldásban.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551596"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833254"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Vállalat adatainak beállítása – Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>A vállalat adatainak beállítása az Attract szolgáltatásban
+
+[!include [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 Talent: Attract felügyeleti központja konfigurációs beállításokat, integrációs beállításokat és az Attract alkalmazás beállításait tartalmazza.
 
@@ -48,11 +49,11 @@ Ahogy elkészülnek az új funkciók, előfordulhat, hogy nyilvános előnézetk
 
 ## <a name="template-management"></a>Sablonkezelés
 
-A folyamat sablonja egy állás felvételi folyamatának összes tevékenységet tartalmazza. A szervezete engedélyezheti, hogy a szervezet összes csapattagja, vagy csak a rendszergazdák hozhassanak létre felvételifolyamat-sablonokat. Ahhoz, hogy a csoporttagok saját felvételifolyamat-sablonokat hozhassanak létre, kapcsolja be a sablonkezelés funkciót. Folyamatsablonokkal kapcsolatos további tudnivalókat lásd: [Folyamatsablonok az Attract alkalmazásban](./process-templates-attract.md).
+A folyamat sablonja egy állás felvételi folyamatának összes tevékenységet tartalmazza. A szervezete engedélyezheti, hogy a szervezet összes csapattagja, vagy csak a rendszergazdák hozhassanak létre felvételifolyamat-sablonokat. Ahhoz, hogy a csoporttagok saját felvételifolyamat-sablonokat hozhassanak létre, kapcsolja be a sablonkezelés funkciót. Folyamatsablonokkal kapcsolatos további tudnivalókat lásd: [Folyamatsablon létrehozása az Attract alkalmazásban](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>E-mail-sablon beállításai
 
-A szervezetek különböző helyzetekre e-mailsablonokat hozhatnak létre. Az e-mailsablonokba foglalandó fejlécképet kiválaszthatja. A kijelölt fejléc az összes e-mailsablonban meg fog jelenni. A sablon láblécében hivatkozást adhat hozzá, amely a szervezet adatvédelmi nyilatkozatára és kommunikációs használati feltételeire mutat. További tájékoztatás: [E-mailsablonok az Attract alkalmazásban](./email-templates.md).
+A szervezetek különböző helyzetekre e-mailsablonokat hozhatnak létre. Az e-mailsablonokba foglalandó fejlécképet kiválaszthatja. A kijelölt fejléc az összes e-mailsablonban meg fog jelenni. A sablon láblécében hivatkozást adhat hozzá, amely a szervezet adatvédelmi nyilatkozatára és kommunikációs használati feltételeire mutat. További tájékoztatás: [E-mail-sablonok](./email-templates.md).
 
 ## <a name="offer-process"></a>Ajánlati folyamat
 

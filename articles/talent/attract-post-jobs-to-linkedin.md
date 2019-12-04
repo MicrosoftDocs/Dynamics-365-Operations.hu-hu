@@ -1,5 +1,5 @@
 ---
-title: Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent - Attract szolgáltatásból
+title: Állások feladása a LinkedIn felületére az Attract szolgáltatásból
 description: Ez a témakör bemutatja, hogyan lehet a Dynamics 365 Talent - Attract alkalmazást használni állások közzétételére a LinkedIn felületén.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551495"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833001"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent - Attract szolgáltatásból
+# <a name="post-jobs-to-linkedin-from-attract"></a>Állások feladása a LinkedIn felületére az Attract szolgáltatásból
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A LinkedIn a legnagyobb online szakmai hálózat, amely hozzáférést biztosít a világ legjobb tehetségéhez. A Microsoft Dynamics 365 Talent: Attract segít a tehetségek bevonzásában azáltal, hogy lehetővé teszi, hogy állásait közvetlenül a LinkedIn felületén tegye közzé.
 
@@ -46,7 +46,7 @@ A következő táblázat bemutatja, hogy milyen műveletek hajthatók végre a L
 
 Az Attract felhasználói szerepköreivel kapcsolatos további tudnivalókért tekintse át a [Biztonság és szerepkörkezelés az Attract alkalmazásban](./security-attract.md) részt.
 
-Ha Ön adminisztrátor, és a LinkedIn integrációjának konfigurálásával kapcsolatban további tájékoztatást szeretne kapni lásd a [A LinkedIn integrációjának beállítása](./attract-admin-linkedin.md) című témakört.
+Ha Ön adminisztrátor, és a LinkedIn és az Attract integrációjának konfigurálásáról további információra van szüksége, tekintse meg [A LinkedIn integrációjának beállítása a Microsoft  Dynamics 365 Talent – Attract megoldáshoz](./attract-admin-linkedin.md) című cikket.
 
 A LinkedIn oldalra közzátett állássok az élő LinkedIn webhelyen jelennek meg. Nincs LinkedIn nem rendelkezik tesztelési környezettel állások közzétételéhez. Ezért ügyeljen arra, hogy ne tegyen közzé tesztállásokat.
 
@@ -67,15 +67,15 @@ Amikor az érdeklődő jelöltek a hirdetés mellett a nézet mellett a **Megtek
 
 Az Attract megoldáson keresztül feladott állások Limited Listingek. A LinkedIn szolgáltatás Limited Listing hirdetéseivel kapcsolatos további tudnivalókat lásd [Limited Listingek és Premium Job Slotok összehasonlítása Job Wrapping esetén](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Ha nem sikerül bejelentkeznie a LinkedIn rendszerbe, vagy állást közzétennie az Attract megoldásból a LinkedIn felületére, lásd [A LinkedIn álláshirdetések hibaelhárítása](./attract-troubleshoot-linkedin.md)
+Ha tud állásokat közzétenni a LinkedIn rendszerbe, tekintse meg a következő cikket: [A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Lásd még
 
-[LinkedIn GYIK](./attract-linkedin-faq.md)
+[Az Attact és a LinkedIn integrációjával kapcsolatos gyakori kérdések](./attract-linkedin-faq.md)
 
-[A LinkedIn integrációjának beállítása](./attract-admin-linkedin.md)
+[A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 Talent – Attract megoldáshoz](./attract-admin-linkedin.md)
 
-[Állások létrehozása](./creating-jobs-attract.md)
+[Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban](./creating-jobs-attract.md)
 
 [Jelöltek felkutatása a LinkedIn Recruiter segítségével](./attract-linkedin-recruiter.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Ajánlatok létrehozása, jóváhagyása és aláírása
-description: Ez a témakör az ajánlatok létrehozását, jóváhagyását és aláírását ismertheti a Dynamics 365 Talent megoldást használó jelöltek számára.
+title: Ajánlatok létrehozása, jóváhagyása és aláírása az Attract alkalmazásban
+description: Ez a témakör az ajánlatok Dynamics 365 Talent – Attract szolgáltatásban történő létrehozását, jóváhagyását és aláírását ismerteti.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: acc484ea57ce13d8a7c48a0ca7a2aa8723558dc9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dee545b6ca5d2791dea6609b4e1b25eba128f8b7
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551049"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832907"
 ---
-# <a name="create-approve-and-sign-offers"></a>Ajánlatok létrehozása, jóváhagyása és aláírása
+# <a name="create-approve-and-sign-offers-in-attract"></a>Ajánlatok létrehozása, jóváhagyása és aláírása az Attract alkalmazásban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Sok esetben egy ajánlati csomag előkészítésének a pályázó számára nagyon gyors folyamatnak kell lennie.
 Az Attract rendszergazda által beállított sablonok használata időt és ráfordítást takarít meg az ajánlatkészítőknek, amikor ajánlatot állítanak össze és küldenek el a pályázónak.

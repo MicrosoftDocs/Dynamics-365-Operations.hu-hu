@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 6ed1e4afcaeee03474d4c0ce20ac7864fb11ce78
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5538aef6599eeffee6d9b075f1b9630d55cf982a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551772"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812718"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-july-2018"></a>Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. július)
 
@@ -31,11 +31,11 @@ ms.locfileid: "2551772"
 
 Ez a témakör a Microsoft Dynamics 365 Talent: Core HR új vagy módosított szolgáltatásait írja le.
 
-## <a name="powerapps-personalization"></a>PowerApps személyre szabása
+## <a name="power-apps-personalization"></a>Power Apps személyre szabása
 
-A Talent támogatja az integrációt a Microsoft PowerApps szolgáltatással. A PowerApps a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. Az Ön, a szervezete vagy a szélesebb ökoszisztéma által a PowerApps használatával fejlesztett alkalmazások beilleszthetők a Talent kliensbe, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy alkalmazást a Talent adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez.
+A Talent támogatja az integrációt a Microsoft Power Apps szolgáltatással. A Power Apps a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. Az Ön, a szervezete vagy a szélesebb ökoszisztéma által a Power Apps használatával fejlesztett alkalmazások beilleszthetők a Talent kliensbe, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy alkalmazást a Talent adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez.
 
-További tudnivalókért lásd: [PowerApps alkalmazások beágyazása.](../fin-and-ops/get-started/embed-power-apps.md).
+További tudnivalókért lásd: [Power Apps alkalmazások beágyazása.](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian bérlista-integráció
 
@@ -46,7 +46,7 @@ Az Egyesült Államok, Kanada és Mexikó területén mostantól elérhető a Ta
 - Bérlistaadatok, mint kifizetési ciklus, fizetési időszakok és bevételkódok
 - Dolgozóadatok
 
-További tudnivalókért lásd: [Bérlistaintegráció konfigurálása](configure-payroll-integration.md).
+További információért lásd: [Bérlista-integráció konfigurálása a Talent és a Dayforce között](configure-payroll-integration.md).
 
 ## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a>A Dolgozói adórégiók az Egyesült Államokon túl is bővítve lettek
 

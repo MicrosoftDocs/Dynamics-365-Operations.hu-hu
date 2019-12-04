@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182715"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769878"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést a Finance and Operations alkalmazás metaadatainak használatával. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Az alábbi lépések végrehajtásához az RCS-ben először hajtsa végre a [Konfigurációszolgáltató létrehozása és aktívként történő megjelölése](er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit. Ha nem végezte el a témakör lépéseit [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](access-application-metadata-er-configuration.md), nyissa meg az [Elektronikus jelentéskészítési példák lapot](https://go.microsoft.com/fwlink/?linkid=862266) a következő ER-konfigurációk letöltéséhez és mentéséhez: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, majd hajtsa végre az eljárás lépéseit.
+A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést a Finance and Operations alkalmazás metaadatainak használatával. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Az alábbi lépések végrehajtásához először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) cikk lépéseit az RCS-ben. Ha nem végezte el a témakör lépéseit [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](access-application-metadata-er-configuration.md), nyissa meg az [Elektronikus jelentéskészítési példák lapot](https://go.microsoft.com/fwlink/?linkid=862266) a következő ER-konfigurációk letöltéséhez és mentéséhez: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, majd hajtsa végre az eljárás lépéseit.
 
 ## <a name="prerequisites"></a>Előfeltételek
 1. Ugorjon **Az összes munkaterület** > **Elektronikus jelentés** pontra. 
-2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltató létrehozása, és megjelölés aktívként](er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
+2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) cikk lépéseit. 
 
 ## <a name="get-required-er-configurations"></a>Szükséges elektronikus jelentéskészítés-konfigurációk lekérése
 1. Kattintson a **Jelentéskészítés konfigurációi** lehetőségre. 
-2. Ha már végrehajtotta a [(RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](access-application-metadata-er-configuration.md) eljárásban megadott lépéseket, akkor az aktuális RCS már rendelkezik az összes szükséges ER konfigurációval (külkereskedelmi metaadatok, modell-hozzárendelési konfigurációk) az aktuális ER-példányban. Az alfeladat többi műveletét kihagyhatja. 
+2. Ha már végrehajtotta az [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](access-application-metadata-er-configuration.md) eljárásban megadott lépéseket, akkor az aktuális RCS-példány már rendelkezik az összes szükséges ER konfigurációval (külkereskedelmi metaadatok, modell-hozzárendelési konfigurációk). Az alfeladat többi műveletét kihagyhatja. 
 3. Kattintson az **Átváltás** elemre. 
 4. Kattintson a **Betöltés XML-fájlból** lehetőségre. 
 5. A **Tallózás** használatával válassza ki a **Foreign trade metadata.xml** fájlt. 
@@ -72,8 +72,8 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 4. A fán válassza ki a **Foreign trade model\Foreign trade mapping** elemet. 
 5. Bontsa ki az **Előfeltételek** szakaszt. 
 
-> [!NOTE]
-> Ez a leképezés jelenleg a metaadat-konfigurációra vonatkozik. A konfiguráció alkalmazás metaadatait a program felkínálja, miközben a modell hozzárendelését tervezik. 
+    > [!NOTE]
+    > Ez a leképezés jelenleg a metaadat-konfigurációra vonatkozik. A konfiguráció alkalmazás metaadatait a program felkínálja, miközben a modell hozzárendelését tervezik. 
 
 6. Kattintson a **Tervező** pontra. 
 7. Kattintson a **Tervező** pontra. 
@@ -81,8 +81,8 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 9. Kattintson a **Gyökér hozzáadása** gombra. 
 10. A **Tábla** mezőben adjon meg vagy válasszon ki egy értéket. 
 
-> [!NOTE]
-> Ez a leképezés jelenleg a metaadat-konfigurációra vonatkozik. A konfiguráció alkalmazás metaadatait a program felkínálja, miközben a modell hozzárendelését tervezik. 
+    > [!NOTE]
+    > Ez a leképezés jelenleg a metaadat-konfigurációra vonatkozik. A konfiguráció alkalmazás metaadatait a program felkínálja, miközben a modell hozzárendelését tervezik. 
 
 11. Kattintson a **Mégse** gombra. 
 12. Zárja be a lapot. 
@@ -92,8 +92,8 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 1. Kattintson a **Szerkesztés** lehetőségre. 
 2. Válassza ki a **MyConnectedApp** alkalmazást. 
 
-> [!NOTE]
-> Ez a leképezés jelenleg a kiválasztott összekapcsolt alkalmazás metaadataira vonatkozik. Amikor ugyanaz a leképezés a metaadatok konfigurációját és a kapcsolódó alkalmazást egyszerre hivatkozza, a program a csatlakoztatott alkalmazás metaadatait fogja használni. 
+    > [!NOTE]
+    > Ez a leképezés jelenleg a kiválasztott összekapcsolt alkalmazás metaadataira vonatkozik. Amikor ugyanaz a leképezés a metaadatok konfigurációját és a kapcsolódó alkalmazást egyszerre hivatkozza, a program a csatlakoztatott alkalmazás metaadatait fogja használni. 
 
 3. Kattintson a **Tervező** pontra. 
 4. Kattintson a **Tervező** pontra. 
@@ -101,14 +101,14 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 6. Kattintson a **Gyökér hozzáadása** gombra. 
 7. A **Tábla** mezőben adjon meg vagy válasszon ki egy értéket. 
 
-> [!NOTE]
-> Már több, mint két alkalmazástábla szerepelt, mivel ez a leképezés a társított alkalmazás összes metaadatát felhasználja. 
+    > [!NOTE]
+    > Már több, mint két alkalmazástábla szerepelt, mivel ez a leképezés a társított alkalmazás összes metaadatát felhasználja. 
 
 8. Kattintson a **Mégse** gombra. 
 9. Kattintson az **Érvényesítés** gombra. 
 
-> [!NOTE]
-> Az adatmodell elemeit az adatforrások olyan cikkeihez társítottuk sikeresen, amelyek leírása az ehhez a leképezéshez hozzárendelt összekapcsolt alkalmazás metaadatainak részleteivel történik. 
+    > [!NOTE]
+    > Az adatmodell elemeit az adatforrások olyan cikkeihez társítottuk sikeresen, amelyek leírása az ehhez a leképezéshez hozzárendelt összekapcsolt alkalmazás metaadatainak részleteivel történik. 
 
 10. Zárja be a lapot. 
 11. Zárja be a lapot. 

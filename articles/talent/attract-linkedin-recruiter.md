@@ -1,5 +1,5 @@
 ---
-title: Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 Talent - Attract programban.
+title: Jelöltek felkutatása a LinkedIn Recruiter használatával az Attract szolgáltatásban
 description: A Microsoft Dynamics 365 Talent - Attract LinkedIn integrációját használhatja a jelöltek felkutatásához a LinkedIn Recruiter megoldáson keresztül.
 author: andreabichsel
 manager: AnnBe
@@ -19,15 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551564"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833046"
 ---
-# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 Talent - Attract programban.
-[!include[banner](../includes/banner.md)]
+# <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Jelöltek felkutatása a LinkedIn Recruiter használatával az Attract szolgáltatásban
+
+[!include [banner](includes/banner.md)]
 
 A LinkedIn a világ legnagyobb online szakmai hálózata, amely hozzáférést biztosít a világ legjobb tehetségéhez. Microsoft Dynamics 365 Talent: Attract segítségével felkutathat pályázókat közvetlenül a LinkedIn felületről. Ezért könnyebb, mint valaha, megtalálnia azokat a tehetségeket, akikkel betöltheti nyitott állásait. Miután a LinkedIn alkalmazással beállította a kapcsolatot az Attract megoldáson keresztül, megtekintheti a beosztásokhoz tartozó esetleges LinkedIn-jelöltek adatait, és egyetlen kattintással exportálhatja azokat az Attract megoldásba.
 
@@ -100,12 +101,12 @@ Ha a jelentkezők beleegyeznek abba, hogy a saját LinkedIn-profiljaikat a szerv
 
 ## <a name="see-also"></a>Lásd még
 
-[LinkedIn GYIK](./attract-linkedin-faq.md)
+[Az Attact és a LinkedIn integrációjával kapcsolatos gyakori kérdések](./attract-linkedin-faq.md)
 
-[A LinkedIn integrációjának beállítása](./attract-admin-linkedin.md)
+[A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 Talent – Attract megoldáshoz](./attract-admin-linkedin.md)
 
-[Állások létrehozása](./creating-jobs-attract.md)
+[Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban](./creating-jobs-attract.md)
 
-[Állások feladása a LinkedIn felületére az Attract szolgáltatásból](./attract-post-jobs-to-linkedin.md)
+[Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent – Attract szolgáltatásból](./attract-post-jobs-to-linkedin.md)
 
-[A LinkedIn integrációjának hibaelhárítása](./attract-troubleshoot-linkedin.md)
+[A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md)

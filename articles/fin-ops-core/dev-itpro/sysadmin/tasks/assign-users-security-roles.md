@@ -3,7 +3,7 @@ title: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 description: A Finance and Operations alkalmazások eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180967"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2807996"
 ---
 # <a name="assign-users-to-security-roles"></a>Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 
@@ -37,6 +37,9 @@ A közös képességeken túl más képességek használatához a felhasználók
 5. A **Tagsági szabály neve** listában kattintson a kijelölt sorban lévő hivatkozásra.
 6. Kattintson a **Lekérdezés szerkesztése** elemre. Igény szerint módosítsa a lekérdezést.  
 7. Kattintson az **OK** gombra.
+8. Kattintson az **Automatikus szerepkör-hozzárendelés futtatása** elemre.
+9. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Felhasználók > Felhasználók** részre (lehetőleg másik böngészőlapon).
+10. Tekintse át a különböző felhasználókhoz rendelt szerepköröket, és győződjön meg arról, hogy a szerepkör-hozzárendelési lekérdezés helyes volt. Szükség esetén módosítsa, majd futtassa újra.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>A felhasználók kizárása az Automatikus szerepkör-hozzárendelésből
 1. Zárja be a lapot.
