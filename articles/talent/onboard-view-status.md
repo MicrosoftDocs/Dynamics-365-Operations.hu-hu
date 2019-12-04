@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009831"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814720"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Az alkalmazottak és a feladatok bevezetési állapotának megtekintése
 
@@ -54,6 +54,6 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megtekintheti az előre
 ### <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

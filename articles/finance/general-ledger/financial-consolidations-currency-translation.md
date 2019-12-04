@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186601"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771845"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -75,7 +75,7 @@ Az előző szervezeti felépítés esetében rendelkeznie kell egy jogi személl
 
 A jogi személy létrehozásakor megadhatja, hogy a vállalat használatos lesz, mind a konszolidációs folyamathoz mind az eltávolítási folyamathoz, vagy csak egy folyamathoz. Az alábbi példában a vállalat mindkét folyamathoz használva lesz. Fontos megjegyezni, hogy a konszolidált vállalatban nem adhat fel napi naplókat de feladhatja azokat az eltávolítási vállalatban. Ezért érdemes lehet egy külön eltávolítási vállalatot létrehoznia.
 
-![Konszolidációhoz és eltávolításhoz is használt jogi személy](./media/sep-elimination-company.png "Konszolidációhoz és eltávolításhoz is használt jogi személy")
+![A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy](./media/sep-elimination-company.png "A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Fő számlák és konszolidációs számlacsoportok
 Ki kell választania a Számlatükör konszolidációkának módját. Fő számlák konszolidálása során három lehetősége van a konszolidálási folyamat során.
@@ -84,14 +84,14 @@ Az első lehetőség , hogy a fő számlákat a forrásvállalatoktól használj
 
 A mási lehetőség az alapértelmezett konszolidációs számla megadása a **Fő számlák** oldalon. A számlát ekkor hozzá lesz rendelve a konszolidációs számlához. Ez a beállítás akkor lehet hasznos, ha különböző számlatükrök vannak, illetve a központ által meghatározott számlatükröt kell hozzárendelni.
 
-![A Fő számlák lapon megadott alapértelmezett konszolidációs számla](./media/main-accounts.png "A Fő számlák lapon megadott alapértelmezett konszolidációs számla")
+![A fő számlák lapon megadott alapértelmezett konszolidációs számla](./media/main-accounts.png "A fő számlák lapon megadott alapértelmezett konszolidációs számla")
 
 A harmadik lehetőség a konszolidációsszámla-csoportok használata. Tetszés szerinti számú konszolidációsszámla-csoportot határozhat meg. Majd, a **További konszolidációs számlák** lapon csak leképezheti a fő számlát a számlatükörből, ahhoz a számlához, amelyre szüksége van a csoporthoz.
 
 ![Hozzárendelés a További konszolidációs számlák lapon](./media/additional-consolidation-accounts.png "Hozzárendelés a További konszolidációs számlák lapon")
 
 ## <a name="consolidating-online"></a>Online konszolidáció
-Az online konszolidáció részleteinek megadásával kapcsolatosan lásd: [Online konszolidáció](./consolidate-online.md).
+Az online konszolidáció részleteinek megadásával kapcsolatosan lásd: [Online pénzügyi konszolidációk](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Konszolidációs tranzakciók kezelése
 A konszolidáció eredményének megtekintésének többféle módja is van:
@@ -100,7 +100,7 @@ A konszolidáció eredményének megtekintésének többféle módja is van:
 - Ellenőrizze a **Főkönyvi kivonat** listaoldalt a konszolidációs vállalatban+.
 - Konszolidációs tranzakciók listájában a **Konszolidációk** oldalon megtekintheti a dátum szerint létrehozott egyenelegeket minden egyes forrásvállalathoz minden egyes időszakra.
 
-    ![Konszolidációs tranzakciók Konszolidációk lapon](./media/managing-consolidation-transactions.png "Konszolidációs tranzakciók Konszolidációk lapon")
+    ![Konszolidációs tranzakciók a Konszolidációk oldalon](./media/managing-consolidation-transactions.png "Konszolidációs tranzakciók a Konszolidációk oldalon")
 
 A Konszolidáció újrafuttatásához egyszerűen feldolgozhatja a konszolidációt. Azt is megteheti, hogy először kijelöli a **Tranzakciók eltávolítása** lehetőséget a **Konszolidációk** oldalon.
 
@@ -128,7 +128,7 @@ Válassza ki a forrásszámlákat. Helyettesítő karakterként használhat csil
 
 A forrásszámlák kiválasztása után a **Számla meghatározása** használatával határozza meg a célvállalat használt számláját. Válassza a **Forrás** lehetőséget, ha ugyanazt a fő számlát szeretné használni, mint ami a forrásszámlában van megadva. Ha a **Felhasználó által meghatározott** lehetőséget választja, akkor meg kell adnia egy célszámlát.
 
-![Főkönyvi eltávolítási szabálysor lap](./media/ledger-elimination-rule-line.png "Főkönyvi eltávolítási szabálysor lap")
+![Főkönyvi eltávolítási szabálysor oldala](./media/ledger-elimination-rule-line.png "Főkönyvi eltávolítási szabálysor oldala")
 
 A **Dimenzió meghatározása** mező úgy működik, mint a **Számla meghatározása** mező. Válassza a **Forrás** lehetőséget, így ugyanazokat a dimenziókat fogja használni a célvállalatnál és a forrásvállalatnál. Ha a **Felhasználó által meghatározott** lehetőséget választja, a **Cél dimenziói** menüpont kiválasztásával meg kell adnia a célvállalat dimenzióit. Majd válassza ki a forrásdimenziókat és a pénzügyi dimenziókat, valamint az eltávolítás forrásához használt értékeket.
 

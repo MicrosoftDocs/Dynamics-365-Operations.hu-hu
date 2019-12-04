@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181611"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771444"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
 
@@ -44,8 +44,8 @@ A konfiguráció-szolgáltatótól kapott formátumon alapuló egyéni verzió l
 A működési kiemelt felhasználók felhasználóelfogadási és integráció teszteket írhatnak anélkül, hogy forráskódot kellene írniuk.
 
 - A kiindulási ER-funkció segítségével lehet összehasonlítani a létrejövő dokumentumokat a fő példányokkal. További információkért lásd: [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md).
-- A Feladatrögzítővel rögzítheti a teszteseteket, és belefoglalhatja az alapterv értékelését. További tájékoztatás: [Feladatrögzítő](../user-interface/task-recorder.md).
-- A szükséges tesztesetekhez tartozó teszteset csoportosítása. További tudnivalókért lásd: [: Felhasználói elfogadási tesztkönyvtárak létrehozása a feladat-útmutatók és a BPM segítségével](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- A Feladatrögzítővel rögzítheti a teszteseteket, és belefoglalhatja az alapterv értékelését. További tájékoztatás: [Feladatrögzítő erőforrásai](../user-interface/task-recorder.md).
+- A szükséges tesztesetekhez tartozó teszteset csoportosítása. További tájékoztatás: [felhasználói elfogadási tesztek létrehozása és automatizálása](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Használja az Üzletifolyamat-modellezőt (BPM) az LCS-ben a könyvtárak létrehozásához a felhasználói elfogadási tesztekhez.
     - Hozzon létre BPM tesztkönyvtárakat egy tesztterv és tesztkészletek létrehozásához a Microsoft Azure DevOps Services (Azure DevOps) alkalmazásban.
@@ -59,7 +59,7 @@ A funkcionális kiemelt felhasználók futtathatják a felhasználói elfogadás
 
 Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesítenie kell a következő előfeltételeket:
 
-- A tesztautomatizálást támogató topológia alkalmazása. A **rendszeradminisztrátori** szerepkörhöz hozzáféréssel kell rendelkeznie az ehhez a topológiához tartozó példányhoz. Ennek a topológiának tartalmaznia kell az ebben a példában használt demóadatokat. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](../perf-test/continuous-build-test-automation.md).
+- A tesztautomatizálást támogató topológia alkalmazása. A **rendszeradminisztrátori** szerepkörhöz hozzáféréssel kell rendelkeznie az ehhez a topológiához tartozó példányhoz. Ennek a topológiának tartalmaznia kell az ebben a példában használt demóadatokat. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató környezet telepítése és használata](../perf-test/continuous-build-test-automation.md).
 - A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésévelés konfigurálásával, illetve a Finance and Operations alkalmazások és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
 
     ![RSAT-beállítások](media/GER-Configure.png "Az RSAT-beállítások párbeszédpaneljének képernyőképe")
@@ -81,7 +81,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
     - **Fizetési modell hozzárendelése 1611** ER modell leképezésének konfigurációja
     - **BACS (UK)** ER formátumkonfiguráció
 
-    ![Elektronikus jelentéskészítési konfigurációk](media/GER-Configurations.png "Az elektronikus jelentéskészítés Konfigurációk lapjának képernyőképe")
+    ![Elektronikus jelentéskészítési konfigurációk](media/GER-Configurations.png "Képernyőkép – az elektronikus jelentéskészítés Konfigurációk oldala")
 
 3. Válassza ki a **GBSI** bemutatóadat-vállalatot, amelynek ország/régió környezete van Nagy-Britanniában.
 4. Kötelezettségek paramétereinek konfigurálása:
@@ -93,7 +93,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
         1. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását**Igen** értékre.
         2. Az **Exportformátum konfigurációja** mezőben válassza a következőt: **BACS (UK)**.
 
-    ![Fizetési módok lap](media/GER-APParameters.png "Fizetési módok lap képernyőképe")
+    ![Fizetési módok oldala](media/GER-APParameters.png "A fizetési módok lapjának képernyőképe")
 
     > [!NOTE]
     > Ha rendelkezik a testreszabások támogatásához létrehozott ER-formátum származtatott változatával, akkor ezt a konfigurációt az **Elektronikus** fizetési mód alapján is kiválaszthatja.
@@ -103,7 +103,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
     1. Ugorjon a **Kötelezettségek \> Fizetési beállítás \> Fizetési napló** pontra.
     2. Győződjön meg róla, hogy nincs feladva a kifizetési napló.
 
-        ![Kifizetési napló lapja](media/GER-APJournal.png "A kifizetési napló lapjának képernyőképe")
+        ![Fizetési napló oldala](media/GER-APJournal.png "A fizetési napló lapjának képernyőképe")
 
     3. Válassza ki a **Sorokat**, és adja meg a következő adatokat tartalmazó sort.
 
@@ -116,7 +116,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
         | Ellenszámla      | GBSI MŰV.       |
         | Fizetési mód   | Elektronikus      |
 
-    ![Szállítói kifizetések lap](media/GER-APJournalLines.png "A szállítói kifizetések lap képernyőképe")
+    ![Szállítói kifizetések oldala](media/GER-APJournalLines.png "A szállítói kifizetések lapjának képernyőképe")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Az ER-keretrendszer előkészítése a szállítói kifizetések feldolgozásának tesztelésére
 
@@ -125,7 +125,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
 1. Lépjen a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Elektronikus jelentéskészítési paraméterek** menüpontba.
 2. A **Mellékletek** lap **Kiindulási** mezőjében válassza ki a **Fájlt**, amelyet a dokumentumkezelési (DM) keretrendszer használ a kiindulási funkcióhoz a DM-rel kapcsolatos dokumentumok megtartására DM-mellékletekként.
 
-    ![Elektronikus jelentéskészítési paraméterek lap](media/GER-ERParameters.png "Az elektronikus jelentéskészítés paraméterek lapjának képernyőképe")
+    ![Elektronikus jelentéskészítés paraméterei lap](media/GER-ERParameters.png "Az elektronikus jelentéskészítési paraméterek oldal képernyőképe")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>A szállítói kifizetésekhez kapcsolódó dokumentumok kiindulási másolatainak létrehozása
 
@@ -142,7 +142,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
     - **Fájl** - kifizetési fájl szöveges formátumban
     - **ERVendOutPaymControlReport** - ellenőrzési jelentés, XLSX formátumú
 
-    ![Extracted](media/GER-APJournalProcessed.png "Files képernyőkép a kibontott fájlnevekről a Windows Intézőben")
+    ![Kibontott fájlok](media/GER-APJournalProcessed.png "Képernyőkép a kibontott fájlnevekről a Windows Intézőben")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>Az ER kiindulási funkció bekapcsolása
 
@@ -180,7 +180,7 @@ A **Futtatás hibakeresési módban** paraméter bekapcsolásával a következő
     3. Tallózással válassza ki a helyileg mentett **ERVendOutPaymControlReport** ellenőrzésijelentés-fájlt XLSX formátumban.
     4. A **Leírás** mezőbe írja be **Kifizetési XLSX ellenőrzési jelentés**.
 
-    ![A szállítói kifizetési fájl és az ellenőrzési jelentés alaptervei](media/GER-BaselineAttachments.png "Konfigurációk lap képernyőképe, Kifizetési XLSX ellenőrzési jelentés kijelölve")
+    ![Alapterv a szállítói kifizetési fájlhoz és ellenőrzési jelentéshez:](media/GER-BaselineAttachments.png "Képernyőkép a konfigurációk lapról a kiválasztott kifizetési XLSX ellenőrzési jelentéssel")
 
 8. Zárja be a lapot.
 9. Az **Alaptervek** gyorslapon válassza az **Új** parancsot a kifizetési fájl kiindulásának konfigurálásához:
@@ -199,7 +199,7 @@ A **Futtatás hibakeresési módban** paraméter bekapcsolásával a következő
     4. A **Fájlnév-maszk** mezőbe írja be a **\*. XLSX** elemet, hogy ezt az alaptervet csak az olyan **ERVendOutPaymControlReport** formátum-összetevő kimeneteire alkalmazza, amelyek a **.xslx** fájlnévkiterjesztéssel rendelkeznek.
     5. Az **Alapterv** mezőben válassza a **Kifizetési XLSX ellenőrzési jelentést**, hogy ez az alaptervet használja a létrejövő kimenethez történő összehasonlításhoz.
 
-    ![Alaptervek gyorslap a Konfigurációk lapon](media/GER-BaselineRules.png "Alaptervek gyorslap a Konfigurációk lapon képernyőkép")
+    ![Alaptervek gyorslap a Konfigurációk oldalon](media/GER-BaselineRules.png "Képernyőkép – Alaptervek gyorslap a Konfigurációk oldalon")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Tesztek rögzítése a szállítói kifizetések feldolgozásának ellenőrzéséhez
 
@@ -229,15 +229,15 @@ A feladatrögzítés a következő műveleteket hajtja végre:
 
 1. A feldolgozott kifizetési sor állapotának **Nincs**értékre állítása.
 
-    ![Feladatrögzítés 3–4. lépése](media/GER-Recording1Review1.png "Feladatrögzítés 3–4. lépése képernyőképe")
+    ![3 – 4. lépés a feladatok rögzítésére](media/GER-Recording1Review1.png "A 3 – 4. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
 2. Kapcsolja be a **Futtatás hibakeresési módban** ER felhasználói paramétert.
 
-    ![Feladatrögzítés 9–10. lépése](media/GER-Recording1Review2.png "Feladatrögzítés 9–10. lépése képernyőképe")
+    ![9 – 10. lépés a feladatok rögzítésére](media/GER-Recording1Review2.png "A 9 – 10. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
 3. A feladott fájloknak és az alapterv összehasonlításának eredményeit tartalmazó ER hibakeresési napló karbantartása.
 
-    ![Feladatrögzítés 13–15. lépése](media/GER-Recording1Review3.png "Feladatrögzítés 13–15. lépése képernyőképe")
+    ![13 – 15. lépés a feladatok rögzítésére](media/GER-Recording1Review3.png "A 13 – 15. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Lépések rögzítése a szállítói kifizetések feldolgozásának teszteléséhez
 
@@ -256,21 +256,21 @@ A feladatrögzítés a következő műveleteket hajtja végre:
 1. Szállítói kifizetések feldolgozásának megkezdése.
 2. Válassza ki a megfelelő futásidejű paramétereket, és kapcsolja be az ellenőrzési jelentés létrehozását.
 
-    ![Feladatrögzítés 3–8. lépése](media/GER-Recording2Review1.png "Feladatrögzítés 3–8. lépése képernyőképe")
+    ![3 – 8. lépés a feladatok rögzítésére](media/GER-Recording2Review1.png "A 3 – 8. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
 3. A létrehozott kimenetek és a megfelelő alaptervek összehasonlításának eredményeinek rögzítéséhez hozzáférés az ER hibakeresési naplóhoz.
 
     Az ER hibakeresési naplóban az összehasonlítás eredményei megjelennek a **Létrehozott szöveg** mezőben. A **Formátum összetevője** és a **Formátum elérési útja, amely naplóbejegyzést generát** mezők arra a fájl-összetevőre utalnak, amelyhez a létrejövő kimenetet összehasonlították az alaptervvel.
 
-    ![Elektronikus jelentéskészítés futtatási naplói oldal bejegyzései](media/GER-ERDebugLog.png "Elektronikus jelentéskészítés futtatási naplói oldal bejegyzései képernyőképe")
+    ![Bejegyzések az Elektronikus jelentéskészítés futtatási naplói oldalon](media/GER-ERDebugLog.png "Az elektronikus jelentéskészítési futtatási naplók oldal bejegyzéseinek képernyőképe")
 
 4. Az aktuális kimenetnek az alaptervhez történő összehasonlítását a Feladatrögzítő **Érvényesítés** lehetőségének használatával, és az **Aktuális érték** kiválasztásával lehet rögzíteni.
 
-    ![Az érvényesítési beállítás használata az aktuális értékkel történő összehasonlításhoz](media/GER-TRRecordValidation.png "Az érvényesítési beállítás használata az aktuális értékkel történő összehasonlításhoz képernyőképe")
+    ![Az Ellenőrzés beállítás használata az aktuális értékkel való összehasonlításra](media/GER-TRRecordValidation.png "Képernyőkép: Az Ellenőrzés beállítás használata az aktuális értékkel való összehasonlításra")
 
     A következő ábra bemutatja, hogy a rögzített ellenőrzési lépések hogy néznek ki a feladatrögzítésben.
 
-    ![Feladatrögzítés 13. és 15. lépése](media/GER-Recording2Review2.png "Feladatrögzítés 13. és 15. lépése képernyőképe")
+    ![13. és 15. lépés a feladatok rögzítésére](media/GER-Recording2Review2.png "A 13. és 15. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>A rögzített tesztek hozzáadása ehhez: Azure DevOps
 
@@ -287,7 +287,7 @@ A feladatrögzítés a következő műveleteket hajtja végre:
     1. A teszteset neve legyen ez: **Szállítói kifizetések feldolgozásának tesztelése a BACS (UK) ER-formátum használatával**.
     2. Csatolja a korábban letöltött **Recording.xml** fájlt a **Process** mappából.
 
-    ![A kiválasztott vizsgálati terv új tesztesetei](media/GER-RSAT-DevOps-Tests-Passed.png "A kiválasztott vizsgálati terv új tesztesetei képernyőképe")
+    ![Új tesztesetek a kiválasztott teszttervhez](media/GER-RSAT-DevOps-Tests-Passed.png "Képernyőkép: Új tesztesetek a kiválasztott teszttervhez")
 
 > [!NOTE]
 > Ügyeljen a hozzáadott tesztek helyes végrehajtási sorrendjére.
@@ -299,14 +299,14 @@ A feladatrögzítés a következő műveleteket hajtja végre:
 1. Nyissa meg a helyi RSAT alkalmazást az aktuális topológiában.
 2. Válassza ki a **Terhelést** a jelenleg az Azure DevOps-ban található tesztek betöltéséhez az RSAT-be.
 
-    ![Tesztek betöltve az RSAT-be](media/GER-RSAT-RSAT-Tests-Loaded.png "Tesztek betöltve az RSAT-be képernyőképe")
+    ![A RSAT rendszerbe betöltött tesztek](media/GER-RSAT-RSAT-Tests-Loaded.png "A RSAT rendszerbe betöltött tesztek képernyőképe")
 
 ### <a name="create-automation-and-parameters-files"></a>Automatizálási és paraméterfájlok létrehozása
 
 1. Az RSAT-ben válassza ki a teszteket, amelyeket betöltött innen: Azure DevOps.
 2. Válassza az **Új** lehetőséget az RSAT automatizálási és paraméterfájlok létrehozásához.
 
-    ![RSAT automatizálási és paraméterfájlok létrehozva az RSAT-ben](media/GER-RSAT-RSAT-Tests-Initiated.png "RSAT automatizálási és paraméterfájlok létrehozva az RSAT-ben képernyőképe")
+    ![RSAT automatizálási és paraméterfájlok létrehozva az RSAT-ban](media/GER-RSAT-RSAT-Tests-Initiated.png "Képernyőkép: RSAT automatizálási és paraméterfájlok létrehozva az RSAT-ban")
 
 ### <a name="modify-the-parameters-files"></a>A paraméterfájlok módosítása
 
@@ -318,7 +318,7 @@ A feladatrögzítés a következő műveleteket hajtja végre:
 6. A megnyitott Excel-munkafüzetben, az **Általános** munkalapon módosítsa a vállalati kódot erre: **GBSI**.
 7. Az **ERFormatMappingRunLogTable** munkalapon figyelje meg, hogy az A:3 és a C:3 cellák tartalmazzák az ER hibakeresési naplójának azon mezőinek szövegét, amelyek a kimenetnek az alaptervhez történő összehasonlításának eredményeinek ellenőrzésére szolgálnak. A program ezeket a szövegeket használja a teszt végrehajtása során létrejövő ER hibakeresési napló rekordok értékelésére.
 
-    ![ERFormatMappingRunLogTable munkalap](media/GER-RSAT-RSAT-ExcelParameters.png "ERFormatMappingRunLogTable munkalap képernyőképe")
+    ![ERFormatMappingRunLogTable-munkalap](media/GER-RSAT-RSAT-ExcelParameters.png "A ERFormatMappingRunLogTable munkalap képernyőképe")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>A tesztek futtatása és az eredmények elemzése
 
@@ -333,11 +333,11 @@ Figyelje meg, hogy a teszteseteit a program webböngészővel automatikusan futt
 
 A teszt végrehajtásának eredményeit az RSAT tárolja. Figyelje meg, hogy mindkét teszt átment ereménnyel zárult.
 
-![Átment ereménnyel zárult tesztek az RSAT-ben](media/GER-RSAT-RSAT-Tests-Passed.png "Átment ereménnyel zárult tesztek az RSAT-ben képernyőképe")
+![A RSAT-ben átadott tesztek](media/GER-RSAT-RSAT-Tests-Passed.png "A RSAT-ben átadott tesztek képernyőképe")
 
 Figyelje meg, hogy a teszt végrehajtásának eredményeit az Azure DevOps is megkapja, így további elemzést végezhet.
 
-![A teszt végrehajtásának eredményei az Azure DevOps rendszerében](media/GER-RSAT-DevOps-Tests-Added.png "A teszt végrehajtásának eredményei az Azure DevOps rendszerében képernyőképe")
+![A teszt végrehajtásának eredményei az Azure DevOps szolgáltatásban](media/GER-RSAT-DevOps-Tests-Added.png "A tesztvégrehajtás eredményeinek képernyőképe az Azure DevOps-ban")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Olyan helyzet szimulálása, amikor a teszt eredménye sikertelen
 
@@ -360,24 +360,24 @@ Figyelje meg, hogy a teszteseteit a program webböngészővel automatikusan futt
 
 A teszt végrehajtásának eredményeit az RSAT tárolja. Figyelje meg, hogy a második teszt nem sikerült a második végrehajtás során.
 
-![Nem sikerült a teszt eredménye az RSAT-ben](media/GER-RSAT-RSAT-Tests-Failed.png "Nem sikerült a teszt eredménye az RSAT-ben képernyőképe")
+![Sikertelen teszteredmények az RSAT-ban](media/GER-RSAT-RSAT-Tests-Failed.png "A sikertelen teszteredményeinek képernyőképe az RSAT-ban")
 
 Figyelje meg, hogy a teszt végrehajtásának eredményeit az Azure DevOps is megkapja, így további elemzést végezhet.
 
-![Nem sikerült a teszt eredménye itt: Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Nem sikerült a teszt eredménye, képernyőkép, itt: Azure DevOps")
+![Sikertelen teszteredmények az Azure DevOps-ban](media/GER-RSAT-DevOps-Tests-Failed.png "A sikertelen teszteredményeinek képernyőképe az Azure DevOps-ban")
 
 Minden teszt állapotát elérheti. A végrehajtási naplót is megnyithatja, hogy elemezze az összes sikertelenség okát. A következő ábrán a végrehajtási napló azt mutatja, hogy a hiba a létrejövő kifizetési fájl és annak alapterve között fennálló tartalmi eltérés miatt történt.
 
-![Végrehajtási napló a hiba elemzéséhez itt: Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Végrehajtási napló a hiba elemzéséhez, képernyőkép, itt: Azure DevOps")
+![Végrehajtási napló a hibaelemzéshez az Azure DevOps-ban](media/GER-RSAT-DevOps-Tests-Failed-Log.png "A hiba elemzéséhez szükséges végrehajtási napló képernyőképe az Azure DevOps-ban")
 
 Éppen ezért, ahogy láttuk, minden ER-formátum működése automatikusan kiértékelhető az RSAT használatával tesztplatformként, és Feladatrögzítő alapú tesztek alkalmazásával, amelyek az ER kiindulási funkciót használják.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Feladatrögzítő](../user-interface/task-recorder.md)
+- [Feladatrögzítő erőforrásai](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Felhasználói elfogadási tesztkönyvtárak létrehozása a feladatrögzítések és a BPM segítségével](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](../perf-test/continuous-build-test-automation.md)
-- [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk az ER kiindulási értékekkel](er-trace-reports-compare-baseline.md)
-- [A formátum frissítése ezen ER-formátum új alapverziójának elfogadásával](tasks/er-upgrade-format.md)
-- [Az ER konfiguráció importálása a Lifecycle Services rendszerből](tasks/er-import-configuration-lifecycle-services.md)
+- [Felhasználói tesztelés létrehozása és automatizálása](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [A folyamatos build- és tesztautomatizálást támogató környezetek telepítése és használata](../perf-test/continuous-build-test-automation.md)
+- [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md)
+- [ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával](tasks/er-upgrade-format.md)
+- [ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból](tasks/er-import-configuration-lifecycle-services.md)

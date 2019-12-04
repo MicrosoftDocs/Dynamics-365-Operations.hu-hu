@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658810"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812649"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -84,7 +84,7 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 
 [![A címmegjegyzések megjelenése a feladatok útmutatóban](./media/screen4.png)](./media/screen4.png)
 
--   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
+-   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása**. A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
 
 **Határozza meg, milyen hosszú legyen a felvétel**
 
@@ -97,7 +97,7 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 **Döntse el, hol induljon a rögzítés a felhasználói felületen** Az oldal, amelyiken éppen van a feladatrögzítés indításakor, hatással van arra, hogy a feladatrögzítés melyik lapra vonatkozóan van megjelenítve. Például ha azt szeretné, hogy a feladatrögzítés a Súgó ablakban jelenjen meg, amikor a felhasználó a Főkönyvi paraméterek lapra kattint, a rögzítést a Főkönyvi paraméterek lapon kell kezdenie. **Felvétel mentése .axtr fájlként** Ha befejezte egy feladatrögzítés létrehozását vagy szerkesztését, több lehetősége is van, hogy hogyan szeretné letölteni vagy menteni a felvételt. Letöltheti a fájlt feladatrögzítő-csomagként (.axtr), nyers felvételfájlként (.xml), Word-dokumentumként vagy mentheti a fájlt egy LCS-tárba. Célszerű a feladatrögzítést mindig feladatrögzítő-csomagként menteni. Ez megkönnyíti a fájl karbantartását ha a későbbiekben jegyzetek vagy eljárások megváltoztatására lenne szükség. Ha Word-dokumentumként szeretné letölteni a fájlt, feladatrögzítő-csomagként is mentse azt.
 
 ## <a name="create-your-task-recording"></a>Hozza létre saját feladatrögzítését
-Részletes leírásért lásd [Feladatrögzítés létrehozása témakört](task-recorder.md).
+Részletes leírásért lásd :[Feladatrögzítő erőforrásai](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>A Microsoft feladatrögzítéseinek másolása és testreszabása
 Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzési anyagaihoz és súgódokumentációjához történő felhasználás érdekében. A Microsoft feladatrögzítéseinek letöltéséhez kövesse az alábbi lépéseket:
@@ -115,14 +115,14 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 11. Válassza ki, hogyan szeretné menteni a feladatrögzítést
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>A feladatrögzítések megjelenítése a Súgó ablakban
-A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, és ezáltal feladat-útmutatóként lejátszhatóak vagy szövegként megtekinthetőek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása.](../../fin-ops/get-started/help-connect.md)
+A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, és ezáltal feladat-útmutatóként lejátszhatóak vagy szövegként megtekinthetőek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../../fin-ops/get-started/help-connect.md).
 
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Súgó áttekintése](../../fin-ops/get-started/help-overview.md)
+[Súgórendszer](../../fin-ops/get-started/help-overview.md)
 
-[Súgó összekapcsolása](../../fin-ops/get-started/help-connect.md)
+[A Súgórendszer csatlakoztatása](../../fin-ops/get-started/help-connect.md)
 
 [Feladatrögzítő](task-recorder.md)
 

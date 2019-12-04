@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577900"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811165"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának beállítása
 
@@ -210,7 +210,7 @@ A hibakezelési beállításokat, amelyek elérhetők a pénzügyi integrációb
 
 Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárból új gombokat kell hozzáadni a pénztár elrendezéséhez.
 
-- A **Gombrácsok** oldalon hajtsa végre az [Egyéni műveleti gombok hozzáadása a pénztár elrendezéséhez a Kiskereskedelmi központban](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
+- A **Gombrácsok** oldalon hajtsa végre az [Pénztárműveletek hozzáadása pénztárelrendezésekhez a Gombrácstervezővel](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
 
     1. A frissítendő elrendezés kiválasztása. 
     2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi X nyomtatása** gombtulajdonságot
@@ -221,7 +221,7 @@ Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárbó
 
 Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezéséhez, egy új gombot kell hozzáadnia a pénztár elrendezéséhez.
 
-- A **Gombrácsok** oldalon hajtsa végre az [Egyéni műveleti gombok hozzáadása a pénztár elrendezéséhez a Kiskereskedelmi központban](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
+- A **Gombrácsok** oldalon hajtsa végre az [Pénztárműveletek hozzáadása pénztárelrendezésekhez a Gombrácstervezővel](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
 
     1. A frissítendő elrendezés kiválasztása.
     2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi regisztrációs folyamat befejezése** gombtulajdonságot.

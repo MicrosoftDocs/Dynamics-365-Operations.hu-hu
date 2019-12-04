@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db85db993c5368eaaa6ddfcc3dd02a2c2aa2be01
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 184a6bf9ad43280de135a326688dedd4a5f03a6f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188303"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772605"
 ---
 # <a name="letters-of-credit"></a>Akkreditívek
 
@@ -44,12 +44,12 @@ Az akkreditív tartalmaz egy leírást az áruról, az összes szükséges dokum
 
 Az akkreditívek visszavonható vagy visszavonhatatlan típusúak lehetnek. Az akkreditív jellege lehet átruházható, nem átruházható, vagy forgó. Az akkreditív általában visszavonhatatlan és visszaigazolt megállapodást, amely a kifizetés teljes és pontos szállítás dokumentáció benyújtása után egy adott kedvezményezett történik.
 
-További információ a következő témakörökben olvasható:
+További információért tekintse át az alábbi témaköröket:
 
 [Akkreditív importálása](tasks/import-letter-credit.md)
 
 [Akkreditív exportálása](tasks/export-letter-credit.md)
 
-[Banki hitel létrehozása akkreditívhez](tasks/create-bank-facility-agreement-letter-credit.md)
+[Banki hiteleszköz-megállapodás létrehozása akkreditívhez](tasks/create-bank-facility-agreement-letter-credit.md)
 
 

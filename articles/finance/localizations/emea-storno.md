@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d85df8c5e23267f9be6c75370cadad8da499c2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 2cefdbc03b19eebff8141d4f578047de002ace56
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250344"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773456"
 ---
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
@@ -32,7 +32,7 @@ A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyak
 A *sztornókönyvelés* az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével. Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat *piros sztornó* néven is ismert. A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.
 
 ## <a name="example"></a>Példa
-Egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be. Most a°könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról. További tudnivalók: [Számla a szállítótól](../accounts-payable/vendor-invoices-overview.md). Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
+Egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be. Most a°könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról. További információ: [Szállítói számlák áttekintése](../accounts-payable/vendor-invoices-overview.md). Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
 
 | **Dokumentumazonosító** | **Számla** | **Tartozik** | **Követel** | **Megjegyzés**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -168,5 +168,5 @@ Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszl
 ![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Sztornírozási dokumentumok létrehozása
-Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletekért lásd: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
+Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletek: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
 

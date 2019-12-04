@@ -1,5 +1,5 @@
 ---
-title: Állás létrehozása, jóváhagyása és közzététele az Attract alkalmazásban
+title: Feladat létrehozása az Attract szolgáltatásban
 description: Ez a témakör ismerteti az állásokkal kapcsolatos elemeket az Attract alkalmazásban. Azt is bemutatja, hogyan lehet létrehozni egy állást.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551072"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832931"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban
+# <a name="create-a-job-in-attract"></a>Feladat létrehozása az Attract szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Ha a beosztáskezelés be van kapcsolva az Adminisztrációs központban, a **Be
 > [!NOTE]
 > A beosztáskezelési az Átfogó felvételi bővítmény részeként érhető el.
 
-A felvételi folyamat ajánlat tevékenységének beállításaitól függően egy pozíciószám kétszer is használható az ajánlathoz. További információ: [Toborzási folyamat](./activities-attract.md).
+A felvételi folyamat ajánlat tevékenységének beállításaitól függően egy pozíciószám kétszer is használható az ajánlathoz. További információ: [Tevékenységek a toborzási folyamatban](./activities-attract.md).
 
 Az Attract alapértelmezett **Szakértelmek** készletét tartalmazza. A szakértelmek javaslatként jelennek meg beírás közben. Szakértelem újabb is hozzáadható, ha az új szakértelem szövegét beírja a mezőbe, és lenyomja az ENTER billentyűt.
 
@@ -67,7 +67,7 @@ A felvételi csapat frissíthető az állás aktiválása után.
 
 A felvételi folyamat alapértelmezett adatai a folyamatsablonon alapulnak, amelyet az állás létrehozásakor választott ki. Ha egy adott sablon ekkor nincs kiválasztva, az alapértelmezett sablon lesz használva. A felvételi folyamat meghatározásakor hozzáadhat és eltávolíthat különböző szakaszokat, kivéve a Potenciális jelölt, Jelentkezés és Ajánlat szakaszokat. Annak ellenére, hogy a Potenciális jelölt szakasz nem távolítható el, ki lehet kapcsolni. Minden egyes szakaszon belül hozzáadható, illetve eltávolítható egy vagy több előre definiált tevékenység.
 
-A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további tudnivalókat lásd: [Felvételi folyamat tevékenységei az Attract alkalmazásban](./activities-attract.md).
+A felvételi folyamathoz hozzáadható tevékenységekkel kapcsolatos további tudnivalók: [Tevékenységek a toborzási folyamatban](./activities-attract.md).
 
 > [!NOTE]
 > A felvételi folyamat nem frissíthető az állás aktiválása után.
@@ -76,7 +76,7 @@ A felvételi folyamathoz hozzáadhatók tevékenységekkel kapcsolatos további 
 
 Az állás az aktiválása után feladható. Csak a toborzók és a rendszergazdák adhatnak fel állásokat. Az állást a Talent Careers (a Dynamics 365 Talent karrierwebhelye) oldalon vagy a LinkedIn oldalán lehet feladni. Az Attract csoport folyamatosan dolgozik azon, hogy partneri megállapodásokat kössön az állásaggregátorokkal. Ezért ez a lista idővel bővül majd. Amikor egy állást csak belsőleg adnak fel, a jelölteknek AAD-fiókkal kell rendelkezniük az állás megtekintéséhez és a jelentkezéshez. Ha az állás nyilvános, akkor a jelöltek bármely hitelesítési opcióval megtekinthetik az állásokat és jelentkezhetnek rájuk. 
 
-Álláshirdetések kapcsolatos további tudnivalókat lásd: [Attract karrierwebhely funkciói](career-site.md).
+További információ az álláshirdetésekről: [Karrierwebhely beállítása a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](career-site.md).
 
 > [!NOTE]
 > Az állásfeladási funkciók csak az Attract alkalmazás Átfogó felvételi bővítményének része.
@@ -90,7 +90,7 @@ Az állást az aktiválása után lehet feladni, és a potenciális jelöltek é
 
 ## <a name="prospects-and-applicants"></a>Potenciális jelöltek és a pályázók
 
-A potenciális jelöltek hozzáadása egy álláshoz [Potenciális jelöltek tevékenységeinél](./activities-attract.md#prospect-activity) van beállítva a felvételi folyamatban. Ezt a lehetőséget az állás aktiválása előtt kell beállítani. Az álláshoz az aktiválása után potenciális jelöltek és pályázók adhatók hozzá.
+A potenciális jelöltek álláshoz való hozzáadása a [toborzási folyamat tevékenységei között](./activities-attract.md#prospect-activity) van beállítva a felvételi folyamatban. Ezt a lehetőséget az állás aktiválása előtt kell beállítani. Az álláshoz az aktiválása után potenciális jelöltek és pályázók adhatók hozzá.
 
 ## <a name="approvals"></a>Jóváhagyások
 

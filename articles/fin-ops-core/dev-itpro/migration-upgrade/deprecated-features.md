@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658690"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811993"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban
 
@@ -270,7 +270,7 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 | **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba lesz a jövőben. Jelenleg a 30-as platformfrissítés van megcélozva. |
 
 #### <a name="complete-list"></a>Teljes lista
-Az elavulás alatt álló API-k teljes listáját lásd: [Módszerek és metaadat-elemek elavulása](deprecation-deletion-apis.md).
+Az elavulás alatt álló API-k teljes listája: [Módszerek és metaadatelemek elavulása](deprecation-deletion-apis.md).
 
 ## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations, 8.1, 20-es platformfrissítéssel
 
@@ -348,7 +348,7 @@ Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásb
 | **Állapot**                         |Eltávolítva 2018. február 15-én. Ez befolyásolja a Dynamics 365 for Operations 1611-es és újabb verzióit futtató ügyfeleket.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése
-A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: [Elektronikus jelentéskészítési funkciók listájának kibővítése](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) már nem támogatott. Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.
+A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: [Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) már nem támogatott. Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy k�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Máshol már meglévő funkció.       |
-| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállítással és előfeltételekkel kapcsolatban további tudnivalókat a [Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](../../../supply-chain/warehousing/install-configure-warehousing-app.md) című részben talál. |
+| **Felváltotta másik szolgáltatás?**   | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. A beállításról és az előfeltételekről [A Raktárkezelés alkalmazás telepítésének és konfigurálásának áttekintése](../../../supply-chain/warehousing/install-configure-warehousing-app.md) című cikkben talál további információt. |
 | **Érintett területek**         | Raktárkezelés, szállításkezelés     |
 | **Telepítési beállítás**              | A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez.               |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2019 4. negyedéve.   |
@@ -1244,7 +1244,7 @@ A Termékszerkesztő használatával korábban értékesítési rendelésekből,
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Termékszerkesztő a végfelhasználók számára X++ kódot jelenített meg, a Dynamics AX jelenlegi verziójában nem támogatott. Az átfedő, nagy terjedelmű kódbázisok ismétlődő karbantartásainak elkerülése érdekében eltávolításra került.  |
-| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalókért lásd: [Termékkonfigurációs modell felépítése](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Felváltotta másik szolgáltatás?**   | Igen. A megszorításon alapuló konfiguráció a Dynamics AX 2012 verzióban jelent meg, és már akkor megtörtént annak a bejelentése, hogy a Termékszerkesztő a későbbi verziókban elavulttá válik. A megszorításon alapuló konfigurációs technológia van kiválasztva az alaptermékekhez a konfiguráció engedélyezéséhez. További tudnivalók: [Termékkonfiguráció áttekintése](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Érintett területek**         | Termékinformációk kezelése, Értékesítés és marketing  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.      |
 

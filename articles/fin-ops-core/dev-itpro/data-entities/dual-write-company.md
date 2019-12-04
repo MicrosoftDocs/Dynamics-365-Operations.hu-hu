@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184531"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772437"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Vállalat fogalma a Common Data Service szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 A Finance and Operations alkalmazásban a *vállalat* koncepciója egyszerre jogi fogalom és üzleti fogalom. Mindemellett adatok biztonsági és láthatósági határa is. A felhasználók mindig egyetlen vállalat kontextusában dolgoznak, és az adatok nagy részét vállalat szerint van kezelve.
 
@@ -60,12 +58,14 @@ Ahogy az előző ábrán is látható, ez a 1:1 leképezés az üzleti egység, 
 
 Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a rekordokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** mező szabályozza a cdm\_Vállalat rekordban. Ha egy cdm\_Vállalat rekordhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** mezőt. Az adminisztrátor megváltoztathatja ezt a mezőt egy másik értékre. Azonban az adminisztrátor nem törölheti ezt a mezőt, amíg az entitiás engedélyezve van kettős íráshoz.
 
+> [!div class="mx-imgBorder"]
 ![Alapértelmezett tulajdonosi csoport mező](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Cég adatcsíkozása és rendszerindítás
 
 A Common Data Service-integráció vállalati azonosító segítségével létre a vállalatok paritását az adatcsíkozáshoz. Amint az alábbi ábrán látható, minden vállalatspecifikus entitás ki lesz bővítve úgy, hogy egy több-az-egyhez (N:1) kapcsolata lesz a CDM\_Companí entitással.
 
+> [!div class="mx-imgBorder"]
 ![N:1 kapcsolat a vállalatspecifikus entitás és a cdm_Company entitás között](media/dual-write-bootstrapping.png)
 
 + A rekordok esetében a vállalat hozzáadása és mentése után az érték írásvédett lesz. Ezért a felhasználóknak meg kell győződniük arról, hogy a megfelelő vállalatot választják ki.

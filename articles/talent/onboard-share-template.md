@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551449"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812833"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Osszon meg tartalmakat más közreműködőkkel a Dynamics 365 Talent – Onboard szolgáltatásban
 
@@ -53,7 +53,7 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megoszthatja a bevezet�
 
 3. Ha a **Címzett** területen a címzetteknek képesnek kell lennie a sablon felülvizsgálatára, megadhatja az **Engedélyezi ezen személyek számára a szerkesztést?** pontnál a **Be** lehetőséget. Ha a címzetteket e-mailben kell értesíteni arról, hogy a sablont már megosztotta velük **, állítsa az e-mail küldése** értesítést a **címzettek**számára lehetőségre.
 
-    [!Hozzáférés és e-mail-beállítások megadása sablonhoz](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Sablonhoz tartozó hozzáférés és e-mail-beállítások megadása](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Adjon meg egy nevet vagy e-mail-címet, majd a legördülő listából válassza ki a kívánt címzettet.
 5. A **Hozzáférés kezelése** lapon áttekintheti, illetve módosíthatja, hogy mit tehetnek a címzettek a sablonnal. A címzett hozzáférésének módosításához a címzett neve melletti legördülő listában válassza ki a **Megtekintés engedélyezve**, **Szerkesztés engedélyezve** vagy az **Eltávolítás** pontot.
@@ -68,6 +68,6 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megoszthatja a bevezet�
 ### <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

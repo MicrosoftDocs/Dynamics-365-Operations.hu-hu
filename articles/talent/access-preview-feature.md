@@ -1,5 +1,5 @@
 ---
-title: Előzetes funkciók elérése a Microsoft Dynamics 365 Talent alkalmazásban
+title: Szolgáltatások kezelése
 description: Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előzetes funkciókat a Microsoft Dynamics 365 Talent alkalmazásban, és felsorolja azokat a funkciókat, amelyek jelenleg előnézetre engedélyezettek.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551600"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833300"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Előzetes funkciók elérése a Microsoft Dynamics 365 Talent alkalmazásban
+# <a name="manage-features"></a>Szolgáltatások kezelése
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 Talent emberierőforrás-menedzsment (HCM) lehetőségeit folyamatosan bővítjük, ennek részeként azt szeretnénk, hogy az ügyfelek a lehető leghamarabb használhassák az új funkciókat. A rendszergazdák láthatják és környezetükben használhatják az előnézeti szolgáltatásokat. Ezek a funkciók majdnem általános rendelkezésre állnak, és kiterjedt tesztelésen mentek keresztül. Az általánosan elérhető kibocsátás előtt egy utolsó visszajelzési és ellenőrzési kört végzünk az ügyfelekkel.
 
@@ -117,6 +117,6 @@ Semmiképpen ne adjon meg személyes adatokat (azaz az Önt bármilyen módon az
 ## <a name="see-also"></a>Lásd még
 
 - [Talent alkalmazások kipróbálása vagy megvásárlása](https://dynamics.microsoft.com/talent/overview/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése a Talent alkalmazáshoz](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

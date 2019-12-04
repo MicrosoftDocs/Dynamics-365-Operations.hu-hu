@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008373"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832815"
 ---
 # <a name="formalize-business-processes"></a>Üzleti folyamatok formalizálása
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Az üzleti folyamat funkcióval üzletifolyamat-sablont lehet létrehozni a szervezeten belül kötelezően végrehajtandó üzleti folyamatokhoz. Például a vállalata minden évben emberi erőforrások (HR) ellenőrzést hajt végre. Ebben az esetben létrehozhat egy sablont, amely nyomon követi a feladatokat, amelyekből az ellenőrzési folyamat áll. Ezzel a sablonnal garantálható, hogy az összes feladatot elvégzik minden alkalommal, amikor ellenőrzés történik. Ezenkívül ha a feladatokat egy adott sorrendben kell elvégezni, a sablon segítségével garantálható, hogy a megfelelő sorrendben végezzék őket.
 

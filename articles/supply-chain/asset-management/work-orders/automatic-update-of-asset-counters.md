@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626178"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811745"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Eszközök számlálóinak automatikus frissítése
 
@@ -43,16 +43,16 @@ A fent említettek szerint az automatikus számlálók a termelési regisztráci
 
 2. A **Kezdő dátum** mezőben válassza ki az automatikus frissítés kezdő dátumát.
 
->[!NOTE]
->Az ebben a mezőben szereplő dátum a „folyamatban lévő munka” dátuma innen: **Útvonal-tranzakciók** (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelés** > **Útvonal-tranzakciók** > **Tényleges dátum** mező).
+    >[!NOTE]
+    >Az ebben a mezőben szereplő dátum a „folyamatban lévő munka” dátuma innen: **Útvonal-tranzakciók** (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelés** > **Útvonal-tranzakciók** > **Tényleges dátum** mező).
 
 3. A **Szerepeltetni kívánt rekordok** gyorslapon kiválaszthatja az automatikus frissítés konkrét eszközeit, eszköztípusait vagy erőforrásait. Válassza a **Szűrő** elemet, és végezze el a kapcsolódó kiválasztásokat.
 
 4. A **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
 
-Az alábbi ábra az **Eszköszámlálók frissítése** párbeszédablak egy példáját mutatja be.
+    Az alábbi ábra az **Eszköszámlálók frissítése** párbeszédablak egy példáját mutatja be.
 
-![1. ábra](media/12-work-orders.png)
+    ![1. ábra](media/12-work-orders.png)
 
 5. Válassza ki az **OK** lehetőséget. 
 

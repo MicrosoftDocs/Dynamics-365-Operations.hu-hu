@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76bae24a975c922ea49ee2584e87cf43ccca61c7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178046"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770597"
 ---
 # <a name="posting-definitions"></a>Feladásdefiníciók
 
@@ -59,6 +59,6 @@ Az alábbi korlátozásokkal kell számolnia a feladásdefiníció-összekapcsol
 -   Egy feladásdefiníciót bármely tranzakciótípushoz hozzárendelhet, de a tranzakciótípus is ugyanabban a modulban kell legyen, mint a feladásdefiníció. Használja a **Tranzakció-feladásdefiníciók** lapot, ahol láthatja, melyik modulban szerepel egy adott tranzakciótípus.
 
 
-További információkért lásd: [A feladási típusok példái](example-posting-definitions.md). 
+További információkért lásd: [A feladásdefiníció példái](example-posting-definitions.md). 
 
 

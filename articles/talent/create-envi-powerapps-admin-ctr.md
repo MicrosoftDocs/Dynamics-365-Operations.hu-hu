@@ -1,6 +1,6 @@
 ---
-title: Nem lehet környezetet létrehozni a PowerApps felügyeleti központban
-description: Ez a témakör bemutatja, mi a teendő, ha a rendszergazda nem tud környezetet létrehozni a Microsoft PowerApps felügyeleti központban.
+title: Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában
+description: Ez a témakör bemutatja, mi a teendő, ha a rendszergazda nem tud környezetet létrehozni a Microsoft Power Apps felügyeleti központban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,32 +17,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96119ca869cbbb15ed8d8d5d0fe3b0f94b5f36cc
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5923c59ab5dde13fed0483972e76634031404fd8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742842"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773219"
 ---
-# <a name="cant-create-an-environment-in-the-powerapps-admin-center"></a>Nem lehet környezetet létrehozni a PowerApps felügyeleti központjában
+# <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában
 
 [!include [banner](includes/banner.md)]
 
-**Probléma**
+**Kibocsátás**
 
-- A bérlő/környezet-rendszergazda nem tud környezetet létrehozni a Microsoft PowerApps felügyeleti központban.
+- A bérlő/környezet-rendszergazda nem tud környezetet létrehozni a Microsoft Power Apps felügyeleti központban.
 - Az engedélyt, amely jogot biztosít a felhasználóknak, hogy végrehajtsák a környezet-létrehozás lépését, még nem rendelték közvetlenül a felhasználóhoz, aki az adott lépést végrehajtja.
 
 **Megoldás**
 
-Győződjön meg arról, hogy a helyi rendszergazdához hozzárendelt egy érvényes PowerApps P2-licencet közvetlenül a felhasználóhoz, aki végrehajtja a környezet-létrehozás lépését. A következő Microsoft Dynamics szolgáltatási tervek biztosítják ezt a jogot.
+Győződjön meg arról, hogy a bérlő adminisztrátor hozzárendelt érvényes Power Apps P2-licencet közvetlenül ahhoz a felhasználóhoz, aki végrehajtja a környezet létrehozási lépését. A következő Microsoft Dynamics szolgáltatási tervek biztosítják ezt a jogot.
 
-| Teljes termékraktározási egység (SKU)       | PowerApps P2 szolgáltatásterv  |
+| Teljes termékraktározási egység (SKU)       | Power Apps P2-szolgáltatási terv  |
 |------------------------------------------------|----------------------------|
-| Microsoft Dynamics 365 for Operations          | PowerApps for Dynamics 365 |
-| Microsoft Dynamics 365 csomag Enterprise Edition | PowerApps for Dynamics 365 |
+| Microsoft Dynamics 365 for Operations          | Power Apps for Dynamics 365 |
+| Microsoft Dynamics 365 csomag Enterprise Edition | Power Apps for Dynamics 365 |
 
-Felhívjuk figyelmét, hogy a különböző Microsoft Office raktározási egységek (SKU-k) szintén biztosítják a jogot, az egyedülálló PowerApps csomag 2 raktározási egységekkel együtt. Az a fontos, hogy ezek közül a raktározási egységek közül egy legyen jelen.
+Felhívjuk figyelmét, hogy a különböző Microsoft Office-raktározási egységek (SKU-k) szintén biztosítják a jogot az önálló Power Apps Plan 2 raktározási egységekkel. Az a fontos, hogy ezek közül a raktározási egységek közül egy legyen jelen.
 
 1. Ugorjon ide: [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Hozzon létre környezeteket a következő helyen található utasítások követésével: [A Talent létesítése](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).

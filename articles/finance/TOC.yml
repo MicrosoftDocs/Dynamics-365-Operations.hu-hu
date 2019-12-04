@@ -8,8 +8,10 @@
           items:
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Regisztrálás az előfizetések előnézetére
+            - name: Regisztrálás az előzetes előfizetésekre
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Vevő fizetési információi (előzetes verzió)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Egyverziós szolgáltatásfrissítések
               items:
                 - name: Egyverziós szolgáltatásfrissítések áttekintése
@@ -58,7 +60,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
                 - name: A Finance and Operations alkalmazás üzemeltetője Kínában a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: A Finance and Operations alkalmazások Franciaországban
+                - name: Finance and Operations alkalmazások Franciaországban
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Új vagy módosult elemek
               items:
@@ -162,9 +164,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
                 - name: A Lifecycle Services szolgáltatás bemutatása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/finance/toc.json
-            - name: Életciklus-kezelés bevezetése
+            - name: Végrehajtási életciklus kezelése
               items:
-                - name: Életciklus-kezelés bevezetésének kezdőlapja
+                - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
                 - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
@@ -1520,7 +1522,7 @@
                   href: localizations/tasks/ee-00015-payment-reference-generation-tool.md
                 - name: Fizetésiutalvány-jelentés
                   href: localizations/emea-eur-payment-slip-report-giro.md
-                - name: Pénztár
+                - name: Házipénztár
                   href: localizations/emea-petty-cash.md
                 - name: Tárgyi eszköz előzetes beszerzésének feladása
                   href: localizations/emea-pre-acquisition-acquisition-fixed-asset.md
@@ -2235,10 +2237,12 @@
                       href: localizations/rus-payment-order-settings-processing.md
                     - name: Árfolyam-kiigazítás
                       href: localizations/rus-exchange-adjustment.md
-                    - name: Devizaeladások/-vásárlások/ és -átutalások
+                    - name: 'Devizaeladások, -vásárlások és -átutalások'
                       href: localizations/rus-currency-sale-purchase.md
-                    - name: Pénztár
+                    - name: Házipénztár
                       href: localizations/emea-petty-cash.md
+                    - name: Készpénz – Helyi elsődleges képernyők és egységesített jelentések
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: Áfa
                   items:
                     - name: Kimeneti ÁFA helyi specifikus feladása
@@ -2251,10 +2255,12 @@
                       href: localizations/rus-tax-agent.md
                     - name: Áfabevallás
                       href: localizations/rus-VAT-declaration.md
-                    - name: 'Bevételi számlakönyvek, kiadási számlakönyvek és számlák és számviteli számlák naplói'
+                    - name: 'Bevételi számlakönyvek, kiadási számlakönyvek és számla jellegű pénzügyi dokumentumok naplói'
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Előlegkezelés
                       href: localizations/rus-prepayments-management.md
+                    - name: Bejövő ÁFA visszaállítása
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Tárgyi eszközök
                   items:
                     - name: Tárgyi eszközök kezelése
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Vegyes költségek felosztása a súly és térfogat arányában
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Harmadik féltől származó vegyes költségek
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Készlet
+                  items:
+                    - name: Szállítótól úton lévő áruk
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Vámáru-nyilatkozat számai
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Jelentéskészítés
                   items:
                     - name: Pénzügyi jelentéskészítés
@@ -2335,13 +2349,15 @@
                       href: localizations/rus-officials.md
                     - name: Vállalati részlegek
                       href: localizations/rus-company-divisions.md
+                    - name: Orosz címformátumok és Importálás a FIAS-ból
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Halasztások
                   items:
                     - name: Halasztások beállítása
                       href: localizations/rus-set-up-deferrals.md
                     - name: Halasztások létrehozása vagy generálása
                       href: localizations/rus-create-generate-deferrals.md
-                    - name: Halasztások fogadása
+                    - name: Halasztások bevételezése
                       href: localizations/rus-deferral-transactions.md
                     - name: Halasztások leírása
                       href: localizations/rus-write-off-deferral.md
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurációk importálása RCS-ből
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Oktatóanyagok
+                  items:
+                    - name: Több alkalmazási táblából származó adatok lekéréséhez használja a JOIN adatforrásokat az elektronikus jelentéskészítési (ER) modell-leképezésekben
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
                   items:
                     - name: Keretrendszer konfigurálása
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Üzletidokumentum-kezelés – áttekintés
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: ER-keretrendszer API
                   items:
                     - name: Elektronikus jelentéskészítési funkciók listájának kibővítése

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f50b950b8588f2b17611889e0cb0eeb6da359886
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251062"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813017"
 ---
 # <a name="warehouse-management-overview"></a>Raktárkezelés áttekintése
 
@@ -36,7 +36,7 @@ A raktárkezelés használatának megkezdéséhez meg kell adnia a raktár álta
 
 Bejövő és kimenő raktározási folyamat-munkafolyamatok összetevőit az üzleti igényeknek megfelelően kell konfigurálni. A legfontosabb összetevők, amelyeket konfigurálnia kell, a hullámsablonok, munkasablonok, munkagyűjtők és helyutasítások.
 
-- [Raktár konfigurálása](warehouse-configuration.md)
+- [Raktár konfigurálása – áttekintés](warehouse-configuration.md)
 - [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](control-warehouse-location-directives.md)
 - [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md)
 - [Helyutasítás beállítása beszerzési rendelés eltárolásához](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

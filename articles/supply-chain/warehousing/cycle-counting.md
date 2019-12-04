@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251523"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813063"
 ---
 # <a name="cycle-counting"></a>Ciklikus leltározás
 
@@ -136,7 +136,7 @@ A leltározási eltérés akkor fordul elő a következő esetekben, ha a **cikl
 A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt értéket a **Ciklikus leltározás ellenőrzése függőben** oldalon. A cikkmennyiség módosított száma jóváhagyható az **Aktuális készlet hely szerint** oldalon. Ha az eltérés nem hagyható jóvá, akkor a számolt érték elutasításra kerül.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Mobileszköz konfigurálása raktári munkához](configure-mobile-devices-warehouse.md)
+[Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md)
 
 
 

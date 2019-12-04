@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024068"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814490"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. augusztus 20.)
 
@@ -35,7 +35,7 @@ Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait ír
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Egyszerűsített jelentkezési élmény jelöltek számára 
 
-A jelentkezők számára egyszerűsített jelentkezési tapasztalatok érhetők el a nyilvános előnézetben. Ha engedélyezték, a jelöltek az önéletrajzuk felhasználásával jelentkezhetnek állásra, a **Jelentkezés LinkedInnel** (ha engedélyezve van), vagy a meglévő jelentkezési űrlap felhasználásával. Ezekkel a változásokkal a jelöltek gyorsan benyújthatják pályázatukat kevés manuális bevitelt igénylő mezővel. Ha további információt szeretne a funkció bekapcsolásáról, lásd: [Előnézeti szolgáltatások engedélyezése vagy letiltása](./access-preview-feature.md#enable-or-disable-preview-features).
+A jelentkezők számára egyszerűsített jelentkezési tapasztalatok érhetők el a nyilvános előnézetben. Ha engedélyezték, a jelöltek az önéletrajzuk felhasználásával jelentkezhetnek állásra, a **Jelentkezés LinkedInnel** (ha engedélyezve van), vagy a meglévő jelentkezési űrlap felhasználásával. Ezekkel a változásokkal a jelöltek gyorsan benyújthatják pályázatukat kevés manuális bevitelt igénylő mezővel. Az adott funkció engedélyezésével kapcsolatos további tudnivalók: [Microsoft Dynamics 365 Talent – az előzetes funkciók elérése](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Az elutasítási megjegyzések megtekintése a jelentkezési tevékenység részeként
 

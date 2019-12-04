@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06713d4f1ca1fe1c3feafe314da3a155fa7cd126
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c0059c152d2ac498a12095d636d0dc0bbf045995
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865304"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813477"
 ---
 # <a name="procurement-catalogs-overview"></a>Beszerzési katalógusok áttekintése
 
@@ -72,7 +72,7 @@ A frissítéseket automatikusan vagy manuálisan teszik közzé, attól függőe
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Beszerzési kategóriahierarchia beállítása (feladat-útmutató)](tasks/set-up-procurement-category-hierarchy.md)
+[Beszerzési kategóriák hierarchiájának beállítása](tasks/set-up-procurement-category-hierarchy.md)
 
 
 

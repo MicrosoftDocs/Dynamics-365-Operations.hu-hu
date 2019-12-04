@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627651"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811482"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -322,7 +322,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <tr>
 <td>A <strong>Súgóra</strong> kattintva hozzáférhet Folyamatsúgóhoz (feladat-útmutatók) és az elméleti témakörökhöz-</td>
 <td>Az AX 2012 Súgórendszer helyi webkiszolgálón tárolt HTML témaköröket mutat. Vevők és a partnerek létrehozhatják saját Súgójukat.</td>
-<td>A Súgórendszer a Dynamics AX jelenlegi verziójában a Microsoft Dynamics Lifecycle Services (LCS) BPM-ben tárolt feladat-útmutatókat jelenít meg. A Súgórendszer a Microsoft dokumentációs webhelyéről származó témaköröket is megjelenít. További tájékoztatás: <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Súgó – Első lépések</a> és <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Új feladat-útmutatók érhetők el (2016. február)</a>.</td>
+<td>A Súgórendszer a Dynamics AX jelenlegi verziójában a Microsoft Dynamics Lifecycle Services (LCS) BPM-ben tárolt feladat-útmutatókat jelenít meg. A Súgórendszer a Microsoft dokumentációs webhelyéről származó témaköröket is megjelenít. További információkat lásd: <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Súgórendszer</a> és <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Új feladat-útmutatók (2016. február)</a>.</td>
 <td>A feladat-útmutató irányított, interaktív tapasztalatot tartalmaz, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. Letöltheti és testreszabhatja a Microsoft által kínált feladat-útmutatókat. A témakör segítségével gyorsabb és rugalmasabb a termékdokumentáció létrehozása, leszállítása, és frissítése. Ezért segítségével garantálható, hogy a legfrissebb technikai információkhoz jut hozzá.</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy módosult elemek](whats-new-changed.md)
+[Új vagy módosult elemek a Finance and Operations kezdőlapján](whats-new-changed.md)
 
-[Új feladat-útmutatók érhetők el (2016. február)](new-task-guides-available-february-2016.md)
+[Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)

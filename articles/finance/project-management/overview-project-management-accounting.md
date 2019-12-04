@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185635"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770359"
 ---
 # <a name="project-management-and-accounting-overview"></a>A projektkezelés és a könyvelés áttekintése
 
@@ -72,7 +72,7 @@ Projektszerződésekkel kapcsolatos további információkért lásd: [Projektsz
 
 A WBS részletességének mértéke attól függ, hogy milyen mértékű pontosság szükséges a becslésekben, és hogy milyen szintű nyomon követés szükséges ezen becslések figyelembevételével. Azoknál a projekteknél, melyek fokozottan ütemterv- vagy költségérzékenyek, részletesebb WBS-re van szükség, valamint arra, hogy a munka előrehaladása és WBS-hez viszonyított tényleges költségei folyamatosan figyelemmel legyenek kísérve. 
 
-További információért lásd: [Munkalebontási szerkezetek](work-breakdown-structures.md)
+További információért lásd: [Munkalebontási struktúra áttekintése](work-breakdown-structures.md)
 
 ### <a name="create-project-forecasts-and-budgets"></a>Projekt-előrejelzések és költségvetési tervezetek létrehozása
 
@@ -134,7 +134,7 @@ Projekt végrehajtásakor csapattagok vagy azokkal a vezetőkkel rögzítése mu
 
 A WBS-t a projekt végrehajtandó munka leírása. A WBS-t feladatok hierarchiáját. Azt jelöli, hogy a feladatokra, de is a méret, költség, és vegye figyelembe, hogy a feladat nem csak a munka. 
 
-További információért lásd: [Munkalebontási szerkezetek](work-breakdown-structures.md)
+További információért lásd: [Munkalebontási struktúra áttekintése](work-breakdown-structures.md)
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Projektköltségvetések és előrejelzések kezelése
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c5d07cb9fbb32a2d9b8be11179dbba00ee73d28b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5fbe5ffa74953588a2357948319f5cf21f7ad36
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184577"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769761"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Raktári teljesítmény Power BI tartalom
 
@@ -78,7 +78,7 @@ A **Raktárteljesítmény** Power BI tartalom jelentést tartalmaz. Ez a jelent�
 | Szállítási teljesítmény        | Szállító hely / raktár              | Korai, időbeni vagy késedelmes hely vagy raktár szerint szállított százalékos értéke. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Adatmodell, illetve számítások ismertetése
-A **Raktári teljesítmény** Power BI tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
+A **Raktári teljesítmény** Power BI tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
 
 A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 

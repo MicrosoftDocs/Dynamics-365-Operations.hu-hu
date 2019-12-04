@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251085"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814973"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251085"
 
 Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 Supply Chain Management alkalmazásban. 
 
-**Megjegyzés:** ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. Warehousing egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata a Warehousing alkalmazásban. Az FWarehousing alkalmazáshoz való kapcsolódás konfigurálásának részleteihez lásd a [Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md) oktatóanyagot.
+> [!NOTE]
+> Ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. Warehousing egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata a Warehousing alkalmazásban. Az FWarehousing alkalmazáshoz való kapcsolódás konfigurálásának részletei [A Raktározási alkalmazás telepítése és konfigurálása áttekintése](install-configure-warehousing-app.md) című oktatóanyagban találhatók.
 
 ## <a name="configure-warehouse-app-field-names"></a>A raktári alkalmazáson belüli mezőnevek konfigurálása
 
@@ -142,4 +143,4 @@ A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[A Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](install-configure-warehousing-app.md)
+[A Raktározási alkalmazás telepítése és konfigurálása áttekintése](install-configure-warehousing-app.md)

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025407"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812307"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
@@ -36,7 +36,7 @@ Ez a témakör a Dynamics 365 Retail szolgáltatásban rendelkezésre álló pé
 - A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
 - Segít az értékesítési tranzakcióadatok megmásíthatatlanságát digitális aláírások segítségével.
 
-A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a kiskereskedelmi összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail SDK áttekintése](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a kiskereskedelmi összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail szoftverfejlesztői készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integrációs minta, a Retail POS egyéb pénzügyi eszközökkel vagy szolgáltatásokkal való integrálásához, vagy a más országokban vagy régiókban levő követelmények lefedéséhez vagy ki kell terjesztenie a létező pénzügyi integrációs mintát, vagy új mintát kell létrehoznia egy meglévő minta példaként való használatával.
 
@@ -65,7 +65,7 @@ A következő példa bemutatja a tipikus pénzügyi regisztrációs végrehajtá
 7. A pénztár elemzi a pénzügyi eszköz vagy szolgáltatás válaszát, és meghatározza, hogy sikeres volt-e a pénzügyi regisztráció.
 8. A CRT elmenti a választ a csatorna-adatbázisba.
 
-![Megoldásséma](media/emea-fiscal-integration-solution.png "Megoldásséma")
+![Megoldási séma](media/emea-fiscal-integration-solution.png "Megoldási séma")
 
 ## <a name="error-handling"></a>Hibakezelés
 
@@ -141,6 +141,6 @@ A Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhető
 
 A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
 
-- [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
-- [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
-- [Ellenőrzőegység integrációs minta Svédország esetén](./retail-sdk-control-unit-sample.md)
+- [Pénztárgép funkciói Franciaország esetén](emea-fra-cash-registers.md)
+- [Pénztárgép funkciói Norvégia esetén](emea-nor-cash-registers.md)
+- [A Retail POS integrációjára vonatkozó minta ellenőrzőegységekkel Svédországnál](./retail-sdk-control-unit-sample.md)

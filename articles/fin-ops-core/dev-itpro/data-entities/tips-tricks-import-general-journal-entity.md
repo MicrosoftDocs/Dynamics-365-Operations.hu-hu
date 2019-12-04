@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184347"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769610"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bevált eljárások a kuponok Általános napló entitás által történő importálásához
 
@@ -57,7 +57,7 @@ A következő szakaszok bemutatják ezeknek a beállításoknak a hatásait, val
 
 ### <a name="voucher-number"></a>Bizonylatszám
 
-- Amikor a **Halmazalapú feldolgozás** beállítást használja az Általános napló entitásnál, a bizonylatszámot meg kell adnia az importált fájlban. Az Általános napló minden tranzakciójához hozzá lesz rendelve az a bizonylatszám, ami az importált fájlban lett megadva, még akkor is, ha a számla nincs kiegyenlítve. Ha szeretne halmazalapú feldolgozást használni, ugyanakkor szeretné a bizonylatszámhoz meghatározott számsorozatot használni, akkor használja a 2016. február verzióhoz kiadott gyorsjavítást. A gyorsjavítás száma 3170316, valamint letölthető a Lifestyle Services (LCS) rendszerből. További információkért lásd: [Gyorsjavítások letöltése a Lifecycle Services rendszerből](../migration-upgrade/download-hotfix-lcs.md).
+- Amikor a **Halmazalapú feldolgozás** beállítást használja az Általános napló entitásnál, a bizonylatszámot meg kell adnia az importált fájlban. Az Általános napló minden tranzakciójához hozzá lesz rendelve az a bizonylatszám, ami az importált fájlban lett megadva, még akkor is, ha a számla nincs kiegyenlítve. Ha szeretne halmazalapú feldolgozást használni, ugyanakkor szeretné a bizonylatszámhoz meghatározott számsorozatot használni, akkor használja a 2016. február verzióhoz kiadott gyorsjavítást. A gyorsjavítás száma 3170316, valamint letölthető a Lifestyle Services (LCS) rendszerből. További információkért lásd: [Frissítések letöltése a Lifecycle Services (LCS) rendszerből](../migration-upgrade/download-hotfix-lcs.md).
 
     - A funkció engedélyezéséhez az importokhoz használt napló nevénél állítsa be a **Számkiosztás feladáskor** lehetőséget **Igen**-re.
     - A bizonylatszámot továbbra is meg kell határozni az importált fájlban. Ez a szám azonban átmeneti, és a bizonylatszám gyakran felülírja a napló feladásának alkalmával. Meg kell győződnie arról, hogy a napló sorai megfelelően vannak csoportosítva az ideiglenes bizonylatszám alapján. Például a feladás során három sor található, aminek az ideiglenes bizonylatszáma 1. Az említett sorok ideiglenes bizonylatszáma felül lesz írva a sorozatban a következő számra. Ha ez a 3 sor nem kiegyenlített tétel, a bizonylat nem lesz elküldve. Ezután, ha olyan sor lesz felfedezve, aminek az ideiglenes bizonylatszáma 2, akkor ez a szám felül lesz írva a soron következő számmal, és így tovább.

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251357"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814075"
 ---
 # <a name="prospect-to-cash"></a>A potenciális vevők készpénzre váltása
 
@@ -36,12 +36,12 @@ A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolat
 
 A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú közvetlen szinkronizálást biztosítja:
 
-- [Sales-fiókok fenntartása és azok szinkronizálása közvetlenül a Sales-től a Supply Chain Management szolgáltatással](accounts-template-mapping-direct.md)
-- [Termékek fenntartása a Supply Chain Management szolgáltatásban, és a szinkronizálásuk közvetlenül a Salesbe](products-template-mapping-direct.md)
-- [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Supply Chain Management szolgáltatásba](contacts-template-mapping-direct.md)
-- [Értékesítési ajánlat szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
+- [A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre](accounts-template-mapping-direct.md)
+- [A Supply Chain Management-termékek közvetlen szinkronizálása a Sales-termékekre](products-template-mapping-direct.md)
+- [A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre](contacts-template-mapping-direct.md)
+- [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
 - [Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között](sales-order-template-mapping-direct-two-ways.md)
-- [Értékesítési számla szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
+- [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>A Supply Chain Management rendszerkövetelményei
 A potenciális ügyfelek készpénzre váltásának integrációja a következő verziókban támogatott:

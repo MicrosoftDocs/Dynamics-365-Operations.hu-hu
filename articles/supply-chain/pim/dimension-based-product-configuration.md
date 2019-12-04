@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7e5555a242c10d2268182ed440e686a1dc46ad
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: ad8c2c82f9104a350d37534e4d70372da82f40a7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865352"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815042"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Dimenzión alapuló termékkonfiguráció áttekintése
 
@@ -79,12 +79,12 @@ A dimenzión alapuló konfiguráció technológiát legjobban olyan termékekné
 
 A következő nyolc feladatútmutató abban a sorrendben van felsorolva, amelyben teljesítenie kell őket. 
 
-1.  [Dimenzión alapuló alaptermék létrehozása (feladat-útmutató)](tasks/create-dimension-based-product-master.md)
-2.  [Dimenzión alapuló alaptermék kiadása (feladat-útmutató)](tasks/release-dimension-based-product-master.md)
-3.  [Kiadott alaptermék alapbeállításának kitöltése (feladat-útmutató)](tasks/complete-basic-setup-released-product-master.md)
-4.  [Konfigurációs csoportok definiálása (feladat-útmutató)](tasks/define-configuration-groups.md)
-5.  [A dimenzión alapuló alaptermékre vonatkozó darabjegyzék létrehozása (feladat-útmutató)](tasks/create-bill-materials-dimension-based-product-master.md)
-6.  [Konfigurációs utak definiálása (feladat-útmutató)](tasks/define-configuration-route.md)
-7.  [Konfigurációs szabályok létrehozása (feladat-útmutató)](tasks/create-configuration-rules.md)
-8.  [Dimenzión alapuló konfigurációk létrehozása (feladat-útmutató)](tasks/create-dimension-based-configurations.md)
+1.  [Dimenzión alapuló alaptermék létrehozása](tasks/create-dimension-based-product-master.md)
+2.  [Dimenzión alapuló alaptermék kibocsátása](tasks/release-dimension-based-product-master.md)
+3.  [Kiadott alaptermék alapbeállításának kitöltése](tasks/complete-basic-setup-released-product-master.md)
+4.  [Konfigurációs csoportok meghatározása](tasks/define-configuration-groups.md)
+5.  [A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása](tasks/create-bill-materials-dimension-based-product-master.md)
+6.  [Konfigurációs útvonalak meghatározása](tasks/define-configuration-route.md)
+7.  [Konfigurációs szabályok létrehozása](tasks/create-configuration-rules.md)
+8.  [Dimenzión alapuló konfigurációk létrehozása](tasks/create-dimension-based-configurations.md)
 

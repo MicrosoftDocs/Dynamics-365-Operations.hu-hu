@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248957"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813500"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248957"
 
 Ez a témakör leírja, hogyan lehet kérni új szállítói együttműködési felhasználók létesítését, és hogyan lehet hozzáadni új szállítói együttműködési partnereket. 
 
-A Dynamics 365 Supply Chain Management szállítói együttműködési felülete a beszerzési rendelésekkel, a számlákkal és a külső szállítóknak szánt bizományosi készlettel kapcsolatos információkat jelenít meg. Ha Ön külső szállítóként dolgozik a **szállítói adminisztráció (külső)** biztonsági szerepkörével vagy hasonló engedélyeivel, akkor létrehozhat új szállítói együttműködési kapcsolattartókat, és kérheti az új felhasználók létrehozását a rendszerben. Ezeket a feladatokat akkor is végrehajthatja, ha Ön beszerzési szakemberként dolgozik. Ebben a témakörben ez a szerep olyan beszerzési szakemberre utal, aki a Supply Chain Management példányát birtokló vállalaton belül dolgozik. Ha Ön egy külső szállító, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Vevőkkel rendelkező szállítók](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+A Dynamics 365 Supply Chain Management szállítói együttműködési felülete a beszerzési rendelésekkel, a számlákkal és a külső szállítóknak szánt bizományosi készlettel kapcsolatos információkat jelenít meg. Ha Ön külső szállítóként dolgozik a **szállítói adminisztráció (külső)** biztonsági szerepkörével vagy hasonló engedélyeivel, akkor létrehozhat új szállítói együttműködési kapcsolattartókat, és kérheti az új felhasználók létrehozását a rendszerben. Ezeket a feladatokat akkor is végrehajthatja, ha Ön beszerzési szakemberként dolgozik. Ebben a témakörben ez a szerep olyan beszerzési szakemberre utal, aki a Supply Chain Management példányát birtokló vállalaton belül dolgozik. Ha Ön egy külső szállító, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Ha Ön egy beszerzési szakember, a szállítói együttműködés használatáról további tudnivalókat itt talál: [Szállítói együttműködés külső szállítókkal](vendor-collaboration-work-external-vendors.md).
 

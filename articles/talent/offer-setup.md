@@ -1,5 +1,5 @@
 ---
-title: Az ajánlatkezelés beállítása
+title: Az ajánlatkezelés beállítása az Attract szolgáltatásban
 description: Ez a témakör az ajánlatok beállítását írja le a Microsoft Dynamics 365 Talent alkalmazásban.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010844"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832722"
 ---
-# <a name="set-up-offer-management"></a>Az ajánlatkezelés beállítása 
+# <a name="set-up-offer-management-in-attract"></a>Az ajánlatkezelés beállítása az Attract szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
@@ -206,4 +206,4 @@ Az ajánlatkészítési folyamatnak számos olyan része van, amelyet egy Attrac
     - ESign – Ez az alapértelmezett beállítás, amelyet az alkalmazás tartalmaz, a felhasználó neve és monogramja beírásával írhatja alá az ajánlatot.
 
 
-Az ajánlat-létrehozási folyamat kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.
+Az ajánlat-létrehozási folyamattal kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.

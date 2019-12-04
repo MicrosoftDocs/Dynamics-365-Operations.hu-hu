@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622768"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830186"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent és Dynamics 365 Finance integráció – GYIK.
 
@@ -48,7 +48,7 @@ Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mind
 
 Pénzügyi dimenziók jelenleg nem szerepelnek a Common Data Service szolgáltatásban, és ebből következően nem az alapértelmezett sablon részei. Ez az entitás tervezett, de jelenleg nincs a kiadási időterv.
 
-Azon adatok esetében, amelyek léteznek a Finance alkalmazásban, de a Talent rendszerben nem, a Talent **Hivatkozások beállítása** funkciójával kapcsolja össze. A Talent és a Finance közötti kapcsolatok beállításával kapcsolatos további tudnivalókat lásd: [Új vagy módosult elemek a Dynamics 365 Talent: Core HR szolgáltatásban (2018. október 31.)](whats-new-talent-october-31.md).
+Azon adatok esetében, amelyek léteznek a Finance alkalmazásban, de a Talent rendszerben nem, a Talent **Hivatkozások beállítása** funkciójával kapcsolja össze. A Talent és a Finance közötti kapcsolatok beállításával kapcsolatos további tudnivalókat lásd: [Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. október 31.)](whats-new-talent-october-31.md).
 
 ![Pénzügyi dimenziók leképezése](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ A „Speciális lekérdezés” használatával szűrheti és átformálhatja a 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Meghatározhatom, hogy mely mezők legyenek átküldve a Finance rendszerbe egy adott entitáshoz?
 
 Mezők hozzáadhatók vagy eltávolíthatók az integrációs feladatból. Nem minden meglévő a Common Data Service entitásban meglévő mező lesz kitöltve a Core HR-ből.
-A további adatok a PowerApps segítségével tölthetők ki.
+A további adatok a Power Apps segítségével tölthetők ki.
 
 ![Mezők hozzáadása vagy eltávolítása az integrációs feladatból](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Kövesse nyomon az időt az adatintegrátor végrehajtási előzményeiben és k
 
 1. Rögzítse a tevékenységindexet az Adatintegrátorból (ebben a példában a „9”).
 
-![A feladatindex rögzítése az Adatintegrátorból](media/CaptureTaskIndex.png)
+    ![A feladatindex rögzítése az Adatintegrátorból](media/CaptureTaskIndex.png)
 
 2. Kövesse nyomon a projekt végrehajtási idejét.
 
-![A projekt végrehajtási idejének nyomon követése](media/CaptureTimeOfExecution.png)
+    ![A projekt végrehajtási idejének nyomon követése](media/CaptureTimeOfExecution.png)
 
 3. A Finance alkalmazásban azonosítsa be a -1 indexet. Ebben a példában a „8” utótaggal rendelkező projekt és az index „0” projekt végrehajtási ideje felel meg a 2. lépés végrehajtási idejének.
 
-![Index azonosítása.](media/IdentifyIndex.png)
+    ![Index azonosítása.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>A Talent és a Finance integrációját követően nem látom a Talent adatait a Finance alkalmazásban. Mi a teendő?
 
-A Finance integrációja két lépésből áll. Először ellenőrizze, hogy a Talent adatai frissítve vannak. és elérhetők a Common Data Service megoldásban. Ez közel valós idejű szinkronizálási, és ellenőrizhető a PowerApps alkalmazásban az adatentitások közötti adatok megtekintésével.
+A Finance integrációja két lépésből áll. Először ellenőrizze, hogy a Talent adatai frissítve vannak. és elérhetők a Common Data Service megoldásban. Ez közel valós idejű szinkronizálási, és ellenőrizhető a Power Apps alkalmazásban az adatentitások közötti adatok megtekintésével.
 
 ![Adatok a Common Data Service megoldásban](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Frissítse a Finance adatentitásait az **Adatkezelés \> Keretrendszer paramét
 
   - [Hibakezelés és hibaelhárítás az Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a PowerApps, Microsoft Flow és Common Data Service szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a Power Apps, Microsoft Power Automate és Common Data Service szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Adatkezelés:
 

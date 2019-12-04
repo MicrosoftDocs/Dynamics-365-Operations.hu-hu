@@ -1,5 +1,5 @@
 ---
-title: A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 Talent – Attract megoldáshoz
+title: LinkedIn-integráció beállítása az Attract szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a LinkedIn integrációját a Microsoft Dynamics 365 Talent – Attract megoldáshoz, hogy egyszerűen feladhassa álláshirdetéseit a LinkedIn felületére az Attract megoldásból, és toborzói szinkronizálhassák toborzói adataikat a jelölt LinkedIn profiljával.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5cdce69396d6972d810e65e15b27c79119a0a9e6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552117"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833184"
 ---
-# <a name="set-up-integration-with-linkedin-for-microsoft-dynamics-365-talent---attract"></a>A LinkedIn integrációjának beállítása a Microsoft Dynamics 365 Talent – Attract megoldáshoz
+# <a name="set-up-linkedin-integration-with-attract"></a>LinkedIn-integráció beállítása az Attract szolgáltatásban
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Segíthet a toborzóknak és a felvételi vezetőknek, hogy bevonzzák a legjobb tehetséget a LinkedIn és a Microsoft Dynamics 365 Talent: Attract integrációjának konfigurálásával. Az Attract lehetővé teszi az állások közvetlen feladását a LinkedIn felületére, amely a legnagyobb szakmai online hálózat.
 
@@ -41,11 +41,11 @@ Az Attract kétirányú integrációt kínál a LinkedIn-hez, hogy segítsen jel
 Az felügyeleti központban konfigurálhatja a **LinkedIn-integráció** lapon mindkét elérhető beállítást. A Felügyeleti központ megnyitása: <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> A LinkedIn Recruiter integráció használatához az Attract megoldáshoz szükséges az [Átfogó felvételi bővítmény](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) és [LinkedIn Recruiter licencek](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). További információ: [Az Attract melyik verziója?](./attract-comprehensive-hiring.md).
+> A LinkedIn Recruiter integráció használatához az Attract megoldáshoz szükséges az [Átfogó felvételi bővítmény](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) és [LinkedIn Recruiter licencek](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
-Ha nem sikerül bejelentkeznie a LinkedIn rendszerbe, vagy állást közzétennie az Attract megoldásból a LinkedIn felületére, lásd [A LinkedIn integráció hibaelhárítása](./attract-troubleshoot-linkedin.md)
+Ha tud állásokat közzétenni a LinkedIn rendszerbe, tekintse meg a következő cikket: [A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md).
 
-A feladatoknak a LinkedIn szolgáltatásba más módón történő feladásával kapcsolatos továbbitudnivalókat lásd a [LinkedIn GYIK](./attract-linkedin-faq.md) oldalán.
+A feladatok LinkedIn szolgáltatásba más módón történő feladásával kapcsolatos további tudnivalók: [Az Attract és a LinkedIn integrációja – GYIK](./attract-linkedin-faq.md).
 
 ## <a name="configure-job-posting-to-linkedin"></a>LinkedIn álláshirdetés konfigurálása
 
@@ -98,7 +98,7 @@ Ha engedélyezni szeretné, hogy a toborzók állásokat adjanak fel a LinkedIn 
 
 Engedélyezheti, hogy a jelentkezők a LinkedIn profiljaik segítségével is pályázhassanak állásokra. A Jelentkezés LinkedIn-nel fukcióval kapcsolatos további tudnivalókat lásd [A LinkedIn funciói mindenütt. Jelentkezés a LinkedIn-nel](https://blog.linkedin.com/2011/07/24/apply-with-linkedin) blogbejegyzést.
 
-Ez a funkció jelenleg előnézetben van. A következő lépések végrehajtása előtt győződjön meg arról, hogy a Jelentkezés LinkedIn-nel funkció engedélyezve van. Előnézeti funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Talent – az előnézeti funkciók elérése](./access-preview-feature.md).
+Ez a funkció jelenleg előnézetben van. A következő lépések végrehajtása előtt győződjön meg arról, hogy a Jelentkezés LinkedIn-nel funkció engedélyezve van. Az előnézeti funkciók engedélyezésével kapcsolatos további tudnivalók: [Microsoft Dynamics 365 Talent – az előnézeti funkciók elérése](./access-preview-feature.md).
 
 1. A jobb felső sarokban a **Beállítás** menüben (fogaskerék szimbólum) válassza ki a **Felügyeleti központ** lehetőséget. Másik lehetőségként válassza az <https://attract.talent.dynamics.com/adminsettings> oldalt.
 2. Válassza ki az **LinkedIn integráció** lapot.
@@ -109,12 +109,12 @@ Ez a funkció jelenleg előnézetben van. A következő lépések végrehajtása
 
 ## <a name="see-also"></a>Lásd még
 
-[LinkedIn GYIK](./attract-linkedin-faq.md)
+[Az Attact és a LinkedIn integrációjával kapcsolatos gyakori kérdések](./attract-linkedin-faq.md)
 
-[Állások feladása külső webhelyekre az Attract szolgáltatásból](./posting-jobs-external.md)
+[Állások feladása külső karrierwebhelyekre az Attract szolgáltatásból](./posting-jobs-external.md)
 
-[Jelöltek felkutatása a LinkedIn Recruiter segítségével](./attract-linkedin-recruiter.md)
+[Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](./attract-linkedin-recruiter.md)
 
-[Állások létrehozása](./creating-jobs-attract.md)
+[Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban](./creating-jobs-attract.md)
 
-[A LinkedIn integrációjának hibaelhárítása](./attract-troubleshoot-linkedin.md)
+[A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md)

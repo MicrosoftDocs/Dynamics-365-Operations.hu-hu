@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce94f3bbb988640bc53ca2170c7ed54c6c01c18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a33ced073394f0f3aa1b0b2e177e4608ca5bcf6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178134"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772030"
 ---
 # <a name="budget-planning-overview"></a>A költségvetés-tervezés áttekintése
 
@@ -155,7 +155,8 @@ A mintasablon szerint előfordulhat, hogy oszlopokat szeretne létrehozni az ér
 
 Kijelölheti azt is, hogy szerkeszthető-e minden elrendezési elem (oszlop), és hogy elérhető-e minden munkalapsablonon, amelyet ehhez az elrendezéshez hoztak létre. A mintasablon szerint a becslési szakaszhoz használt elrendezésben az előrejelzés oszlopai szerkeszthetők, míg a PY értékesítések és a szerződések oszlopok írásvédettek.
 
-[!Note] Alapértelmezés szerint ez a 36 oszlopra lesz korlátozva, hacsak nem bővíti a költségvetéstervezést a [Költségvetési terv kiterjesztése](./extending-budget-planning-layout.md) helyen leírt lépésekkel.
+> [!NOTE] 
+> Alapértelmezés szerint ez 36 oszlopra korlátozott, ha nem bővíti a költségvetés-tervezést a [Költségvetési terv kiterjesztése](./extending-budget-planning-layout.md) helyen leírt lépésekkel.
 
 ### <a name="templates"></a>Sablonok
 

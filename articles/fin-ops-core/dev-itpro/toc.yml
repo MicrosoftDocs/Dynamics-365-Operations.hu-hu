@@ -2,6 +2,8 @@
   items:
     - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
       items:
+        - name: A Finance and Operations-alkalmazás dokumentációja
+          href: ../fin-ops/index.md
         - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
           href: index.md
         - name: Új vagy módosult elemek
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Szervezeti hierarchia a Common Data Service megoldásban
                           href: data-entities/dual-write-organization.md
-                        - name: Vállalat fogalma a Common Data Service szolgáltatásokban
-                          href: data-entities/dual-write-company.md
+                        - name: Vállalati integráció
+                          items:
+                            - name: Vállalat fogalma a Common Data Service szolgáltatásokban
+                              href: data-entities/dual-write-company.md
+                            - name: Rendszerindítás vállalati adatokkal
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integrált vevői alapadat
                           href: data-entities/dual-write-customer.md
+                        - name: Integrált főkönyv
+                          href: data-entities/dual-write-ledger.md
                         - name: Egységes terméktapasztalat
                           href: data-entities/dual-write-product.md
-                        - name: Integrált szállítói alapadat
-                          href: data-entities/dual-write-vendor.md
-                        - name: Integrált helyek és raktárak
+                        - name: Szállítói integráció
+                          items:
+                            - name: Integrált szállítói alapadat
+                              href: data-entities/dual-write-vendor.md
+                            - name: Váltás a szállítói arculatok között
+                              href: data-entities/dual-write-vendor-switch.md
+                        - name: Integrált telephelyek és raktárak
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integrált adózási alapadat
+                          href: data-entities/dual-write-tax.md
                         - name: Kezdeti szinkronizálás
                           href: data-entities/dual-write-initial.md
                         - name: Az adatintegrálás hibaelhárítása
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Hibaelhárítás helyszíni telepítéseknél
                   href: deployment/troubleshoot-on-prem.md
+                - name: Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Tanúsítványváltás
                   href: deployment/certificate-rotation-on-prem.md
             - name: Egyéni kód telepítése
@@ -438,7 +454,7 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Értékelési példányok beszerzése
               href: dev-tools/get-evaluation-copy.md
-            - name: Regisztrálás az előfizetések előnézetére
+            - name: Regisztrálás az előzetes előfizetésekre
               href: dev-tools/sign-up-preview-subscription.md
             - name: Fejlesztői környezetek telepítése és hozzáférés
               items:

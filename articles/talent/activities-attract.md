@@ -1,6 +1,6 @@
 ---
-title: Tevékenységek a toborzási folyamatban
-description: Ez a témakör a Microsoft Dynamics 365 Talent – Attract felvételi folyamatában használható különféle tevékenységekkel kapcsolatban tartalmaz tájékoztatást.
+title: Tevékenységek hozzáadása a felvételi folyamathoz
+description: Ez a témakör a Microsoft Dynamics 365 Talent – Attract felvételi folyamatához hozzáadható különféle tevékenységi típusokról tartalmaz tájékoztatást.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 09ac8f5431de0809b9a3a23e1175d5027153e96c
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ce8c0bd74a41b9857538b37d0875583d06e8c11d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552163"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833277"
 ---
-# <a name="activities-in-hiring-processes"></a>Tevékenységek a toborzási folyamatban
+# <a name="add-activities-to-a-hiring-process"></a>Tevékenységek hozzáadása a felvételi folyamathoz
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A tevékenységek a felvételi folyamat részeként adhatók hozzá a Microsoft Dynamics 365 Talent: Attract esetében. A tevékenységeket folyamatsablonhoz lehet hozzáadni, vagy közvetlenül az állásnál adhatók hozzá a felvételi folyamathoz. Ha megadott egy állást, ki lesz választva egy folyamat, és a tevékenységek, amelyek szerepelnek a sablonban, az álláshoz adódnak. Az alapértelmezett sablont használja a rendszer, ha nincs sablon kiválasztva. A felvételi folyamat is módosítható az álláson a sablon alkalmazása után.
 
 > [!NOTE] 
-> A folyamatsablonok az Átfogó felvételi bővítmény részeként érhetők el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> A folyamatsablonok az Átfogó felvételi bővítmény részeként érhetők el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 ## <a name="prospect-activity"></a>Potenciális tevékenység
 
@@ -49,45 +49,45 @@ A Pályázat tevékenység kötelező a felvételi folyamat sablonban. E-mail k�
 
 A tevékenység három összetevőből áll: pályázó elérhetőségének lekérése, ütemezés és visszajelzés. Használja az állássablon interjú tevékenységét, ha szeretné szerepeltetni a folyamatban a jelölt rendelkezésre állásának kérését, ütemezést és visszajelzést, ahelyett, hogy egyenként a felvételi folyamat részeként használná őket. További tudnivalókért lásd: [Interjú ütemezése és visszajelzés](interview-scheduling-feedback.md).
 
-## <a name="powerapps-activity"></a>PowerApps-tevékenység
+## <a name="power-apps-activity"></a>Power Apps-tevékenység
 
-A PowerApps tevékenység lehetővé teszi Microsoft PowerApps alkalmazás beágyazását a felvételi folyamatba. Az alkalmazás összes jelentkező, csak a belső pályázók, csak a külső pályázók vagy egy pályázó számára sem lehet szükséges. Ha az alkalmazás kötelezőként van megjelölve, akkor el kell végezni a következő szakaszba való továbblépés előtt. Ahhoz, hogy befejezettnek lehessen tekinteni, a **JobApplicationStatus** mezőnek **Kész** állapotúnak kell lennie. A mező a JobApplicationActivity entitásban található, így a PowerApps alkalmazásnak frissítenie kell ezt a mezőt, mielőtt a fokozatot előre lehet léptetni. Ha az alkalmazás nem szükséges, a tevékenység (nem kötelező), és a fokozat lehet előbbre akkor is, ha az alkalmazás nem befejeződött.
+A Power Apps tevékenység lehetővé teszi Microsoft Power Apps alkalmazás beágyazását a felvételi folyamatba. Az alkalmazás összes jelentkező, csak a belső pályázók, csak a külső pályázók vagy egy pályázó számára sem lehet szükséges. Ha az alkalmazás kötelezőként van megjelölve, akkor el kell végezni a következő szakaszba való továbblépés előtt. Ahhoz, hogy befejezettnek lehessen tekinteni, a **JobApplicationStatus** mezőnek **Kész** állapotúnak kell lennie. A mező a JobApplicationActivity entitásban található, így a Power Apps alkalmazásnak frissítenie kell ezt a mezőt, mielőtt a fokozatot előre lehet léptetni. Ha az alkalmazás nem szükséges, a tevékenység (nem kötelező), és a fokozat lehet előbbre akkor is, ha az alkalmazás nem befejeződött.
 
-A PowerApps tevékenység mentéséhez a felvételi folyamatba, meg kell adnia egy PowerApps-azonosítót. A PowerApps-azonosító megkereséséhez ugorjon ide: [PowerApps](https://web.powerapps.com), válassza az **Alkalmazások**, majd a **Részletek** lehetőséget.
+A Power Apps tevékenység mentéséhez a felvételi folyamatba, meg kell adnia egy Power Apps-azonosítót. A Power Apps-azonosító megkereséséhez ugorjon ide: [Power Apps](https://web.powerapps.com), válassza az **Alkalmazások**, majd a **Részletek** lehetőséget.
 
-Alapértelmezés szerint a PowerApps tevékenység a felvételi vezető, a toborzó és az ő delegáltjaik számára elérhető. Ha kiválasztja a **Résztvevők tevékenységhez való hozzáadásának engedélyezése** lehetőséget, a PowerApps tevékenység használó alkalmazásokhoz további résztvevők is hozzáadhatók a felvételi csapatból. Például egy szervezet létrehozott egy PowerApps alkalmazást, amely interjúkérdések tára a műszaki szerephez. A szervezet most felvesz egy új szoftverfejlesztőt, és hozzáadta a PowerApps tevékenységet a felvételi folyamathoz a szoftverfejlesztők szerepkörhöz. Ha a **Résztvevők tevékenységhez való hozzáadásának engedélyezése** beállítás be van jelölve, a szoftverfejlesztő szerepkörre pályázót megnyitó toborzó vagy felvételi vezető interjúkészítőket vehet fel a PowerApps tevékenységhez. Ezek a személyek ezt követően megtekinthetik az alkalmazást, amely az interjúkérdéseket tartalmazza.
+Alapértelmezés szerint a Power Apps tevékenység a felvételi vezető, a toborzó és az ő delegáltjaik számára elérhető. Ha kiválasztja a **Résztvevők tevékenységhez való hozzáadásának engedélyezése** lehetőséget, a Power Apps tevékenység használó alkalmazásokhoz további résztvevők is hozzáadhatók a felvételi csapatból. Például egy szervezet létrehozott egy Power Apps alkalmazást, amely interjúkérdések tára a műszaki szerephez. A szervezet most felvesz egy új szoftverfejlesztőt, és hozzáadta a Power Apps tevékenységet a felvételi folyamathoz a szoftverfejlesztők szerepkörhöz. Ha a **Résztvevők tevékenységhez való hozzáadásának engedélyezése** beállítás be van jelölve, a szoftverfejlesztő szerepkörre pályázót megnyitó toborzó vagy felvételi vezető interjúkészítőket vehet fel a Power Apps tevékenységhez. Ezek a személyek ezt követően megtekinthetik az alkalmazást, amely az interjúkérdéseket tartalmazza.
 
 > [!NOTE]
-> A PowerApps tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> A Power Apps tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 ## <a name="youtube-activity"></a>YouTube-tevékenység
 
-A YouTube tevékenység segítségével megoszthat a felvételi folyamat részeként YouTube videókat. A felvételi folyamatba a YouTube tevékenység mentéséhez meg kell adnia a YouTube videó URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a PowerApps tevékenységnél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, a videó csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
+A YouTube tevékenység segítségével megoszthat a felvételi folyamat részeként YouTube videókat. A felvételi folyamatba a YouTube tevékenység mentéséhez meg kell adnia a YouTube videó URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a Power Apps tevékenységnél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, a videó csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
 
 > [!NOTE]
-> A YouTube tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> A YouTube tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 ## <a name="web-content-activity"></a>Webes tartalom tevékenység
 
-A webes tartalom tevékenységgel online tartalom ágyazható be a felvételi folyamatba. A felvételi folyamatba a webes tartalom tevékenység mentéséhez meg kell adnia a webes tartalom URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a PowerApps és YouTube tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, a webes tartalom csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban. A megjelenő tartalom mérete kiválasztható.
+A webes tartalom tevékenységgel online tartalom ágyazható be a felvételi folyamatba. A felvételi folyamatba a webes tartalom tevékenység mentéséhez meg kell adnia a webes tartalom URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a Power Apps és YouTube tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, a webes tartalom csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban. A megjelenő tartalom mérete kiválasztható.
 
 > [!NOTE]
-> A webes tartalom tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> A webes tartalom tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 ## <a name="microsoft-forms-activity"></a>Microsoft Forms tevékenység
 
-A Microsoft Forms tevékenység lehetővé teszi Microsoft Forms tevékenység beágyazását a felvételi folyamatba. A Microsoft Forms segítségével teszteket, felméréseket és lekérdezéseket hozhat létre. A felvételi folyamatba a Microsoft Forms tevékenység mentéséhez meg kell adnia az űrlap URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a PowerApps, YouTube és webes tartalomhoz kapcsolódó tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, az űrlap csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
+A Microsoft Forms tevékenység lehetővé teszi Microsoft Forms tevékenység beágyazását a felvételi folyamatba. A Microsoft Forms segítségével teszteket, felméréseket és lekérdezéseket hozhat létre. A felvételi folyamatba a Microsoft Forms tevékenység mentéséhez meg kell adnia az űrlap URL-címét. Választhat, hogy a tartalmat a **Felvételi csapat**, **Csak belső jelöltek**, **Csak külső jelöltek** vagy **Minden jelölt** számára megjeleníti. Mint a Power Apps, YouTube és webes tartalomhoz kapcsolódó tevékenységeknél, engedélyezheti a felvételi csapatból származó résztvevők hozzáadását a tevékenységhez. Ha úgy dönt, megjeleníti a tartalmat a jelölteknek, az űrlap csak a jelölti élmény részeként jelenik meg, és nem a felvételi folyamatban.
 
 A Microsoft Forms esetében a szerző módosíthatja a beállításokat, hogy a szervezeten kívüli felhasználók válaszolhassanak a felmérésre vagy a tesztre. Ebben az esetben a felhasználók névtelenül küldik a válaszok. Ha meg szeretné nézni, hogy ki töltötte ki a felmérést vagy a tesztet, előírhatja, hogy a válaszadók írják be a nevüket a felmérés vagy teszt részeként.
 
 > [!NOTE]
-> A Microsoft Forms tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> A Microsoft Forms tevékenység csak az átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 ## <a name="offer-activity"></a>Ajánlattal kapcsolatos tevékenység
 
 A felvételi folyamat sablonjához szükséges az Ajánlattal kapcsolatos tevékenység. Az integrált ajánlatkezelési alkalmazás használatához állítsa a **Offer Management alkalmazás futtatása az ajánlatkészítésben** beállítást **Be** értékre. Ha ez a beállítás ki van kapcsolva, akkor a jelölt nem jelenik meg az Offer alkalmazásban, így a jelölt ajánlattal kapcsolatos tevékenységében végzett frissítéseket manuálisan kell nyomon követnie. Ha be szeretné állítani, hogy a felvételi vezető ajánlatot készíthet elő a jelölt számára az Offer alkalmazásban, állítsa az **A felvételi vezető létrehozhat ajánlatot** beállítást **Be** értékre. Ha ehhez az álláshoz több társított pozíció is tartozik, eldöntheti, hogy több ajánlatot készít-e elő ugyanannyi pozíciószámhoz. Ha csak egy ajánlat létrehozását szeretné engedélyezni pozíciónként és állásonként, állítsa az **A pozíciók álláson belüli ismételt használatának engedélyezése** beállítást **Ki** értékre.
 
 > [!NOTE]
-> Az integrált Offer Management alkalmazás csak az Átfogó felvételi bővítménnyel érhető el. További információért lásd: [Az Attract Átfogó felvételi bővítmény lehetőségei](./attract-comprehensive-hiring.md)
+> Az integrált Offer Management alkalmazás csak az Átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 

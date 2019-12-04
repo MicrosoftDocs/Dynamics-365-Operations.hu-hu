@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1a96fda4e7f7b6407c51ee4056088d05027462cf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251385"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813247"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>A Supply Chain Management-termékek közvetlen szinkronizálása a Sales-termékekre
 
@@ -43,7 +43,7 @@ A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálá
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
-A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
+A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [Power Apps Admin Centert](https://admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
 
 A következő sablonokat és alapul szolgáló feladatokat használják a termékek szinkronizálásához a Supply Chain Management és a Sales között:
 
@@ -116,7 +116,7 @@ Az alábbi ábrán sablon hozzárendelést például adatok integrátor megjelen
 
 [A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre](contacts-template-mapping-direct.md)
 
-[Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-order-template-mapping-direct-two-ways.md)
+[Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között](sales-order-template-mapping-direct-two-ways.md)
 
 [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 

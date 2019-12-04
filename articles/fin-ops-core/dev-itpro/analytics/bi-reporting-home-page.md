@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536847"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771564"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Üzleti intelligencia (BI) és jelentéskészítés – kezdőlap
 
@@ -48,7 +48,7 @@ További információk a következő témakörökben találhatók:
 - [Power BI Embedded-integráció](power-bi-embedded-integration.md)
 - [Analitika hozzáadása munkaterületekhez a Power BI Embedded használatával](add-analytics-tab-workspaces.md)
 - [Analitikai munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával](secure-analytical-workspaces.md)
-- [Power BI-tartalom a Finance and Operations rendszerhez](power-bi-home-page.md)
+- [Power BI-tartalom kezdőlapja](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Üzleti dokumentumok és nyomtatás
 A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók részleteinek rögzítésére és kommunikálására. A jelentéskészítési megoldásoknak ezért képeseknek kell lenniük az üzleti adatok fizikai reprodukálására a meglévő eszközöket például hálózati nyomtatókat használva. Az üzleti dokumentumok közé tartoznak például az értékesítési számlák, a vevői kivonatok és a csekkek.
@@ -57,36 +57,36 @@ A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók 
 
 További információk a következő témakörökben találhatók:
 
-- [A Document Reporting Services áttekintése](document-reporting-services.md)
-- [Nyomtatás a Finance and Operations-alkalmazásokban](print-documents.md)
-- [A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez](install-document-routing-agent.md)
+- [Dokumentumjelentési szolgáltatások](document-reporting-services.md)
+- [A dokumentumnyomtatás áttekintése](print-documents.md)
+- [A Dokumentumirányítási ügynök telepítése a hálózati nyomtatás engedélyezéséhez](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
-Az Elektronikus jelentéskészítés (ER) egy olyan eszköz, amellyel úgy konfigurálhatók az elektronikus dokumentumformátumok, hogy megfelkeljenek a különböző országok/régiók jogi követelményeinek. Az elektronikus jelentéskészítés alkalmazási területei közé tartozik a pénzügyi ellenőrzés, az adó bejelentése és az elektronikus számlázás.
+Az Elektronikus jelentéskészítés (ER) egy olyan eszköz, amellyel úgy konfigurálhatók az elektronikus dokumentumformátumok, hogy megfeleljenek a különböző országok/régiók jogi követelményeinek. Az elektronikus jelentéskészítés alkalmazási területei közé tartozik a pénzügyi ellenőrzés, az adó bejelentése és az elektronikus számlázás.
 
 [![Elektronikus jelentéskészítési példa](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 További információk a következő témakörökben találhatók:
 
-- [Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
-- [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Az Elektronikus jelentéskészítés konfigurációjának létrehozása](electronic-reporting-configuration.md)
+- [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+- [Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Elektronikus jelentéskészítési (ER) konfigurációk létrehozása](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
-Olyan, szabványos pénzügyi jelentések állnak rendelkezésre, amelyek az alapértelmezett főszámla-kategóriákat használják. A jelentéstervező segítségével hagyományos pénzügyi kimutatásokat – például eredménykimutatásokat és mérlegeket – hozhat létre vagy módosíthat. Az eredmények ezután megoszthatja szervezete többi tagjával is. A pénzügyi jelentéskészítési példák között találhatók a mérlegek, a pénzmozgások és a főkönyvi kivonat évek szerinti összegzése.
+Olyan szabványos pénzügyi jelentések állnak rendelkezésre, amelyek az alapértelmezett főszámla-kategóriákat használják. A jelentéstervező segítségével hagyományos pénzügyi kimutatásokat – például eredménykimutatásokat és mérlegeket – hozhat létre vagy módosíthat. Az eredmények ezután megoszthatja szervezete többi tagjával is. A pénzügyi jelentéskészítési példák között találhatók a mérlegek, a pénzmozgások és a főkönyvi kivonat évek szerinti összegzése.
 
 [![Pénzügyi jelentéskészítési példa](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 További információk a következő témakörökben találhatók:
 
-- [Pénzügyi jelentéskészítés a Finance and Operations alkalmazáshoz](financial-reporting-intro.md)
-- [Pénzügyi jelentés létrehozása](generate-financial-report.md)
+- [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+- [Pénzügyi jelentések létrehozása](generate-financial-report.md)
 - [A pénzügyi jelentés összetevői](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Technikai referenciajelentések
-A következő jelentések az objektumokra vonatkozóan tartalmaznak hivatkozási információkat:
+A következő jelentések az objektumokra vonatkozóan tartalmaznak referenciainformációkat:
 
-- [Adatentitás-jelentések](../data-entities/data-entities-report.md)
+- [Normál adatentitásokkal kapcsolatos információk](../data-entities/data-entities-report.md)
 - [Licenckódok és konfigurációskulcs-jelentések](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services-jelentések](SSRS-report.md)
+- [Az SQL Server Reporting Services (SSRS) elérhető jelentései](SSRS-report.md)
 - [Munkafolyamat-típusok jelentése](../../fin-ops/organization-administration/workflow-types-report.md)

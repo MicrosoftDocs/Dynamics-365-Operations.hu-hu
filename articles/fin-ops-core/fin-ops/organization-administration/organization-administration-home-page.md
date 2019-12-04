@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178186"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811325"
 ---
 # <a name="organization-administration-home-page"></a>Szervezeti adminisztráció kezdőlap
 
@@ -37,7 +37,7 @@ A itt felsorolt tartalom java része a **Szervezeti adminisztráció** modul szo
 A számsorozatokat az azonosítókat igénylő alapadatrekordok és tranzakciórekordok olvasható, egyedi azonosítóinak létrehozására használja a rendszer. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket *hivatkozásnak* nevezik. Egy hivatkozáshoz tartozó új rekordok létrehozása előtt be kell állítania egy számsorozatot, és a hivatkozáshoz társítani.
 
 - [Számsorozatok áttekintése](number-sequence-overview.md)
-- [Számsorozatok beállítása varázsló segítségével](tasks/set-up-number-sequences-wizard.md) (Feladat-útmutató)
+- [Számsorozatok beállítása varázsló használatával](tasks/set-up-number-sequences-wizard.md) (Feladat-útmutató)
 - [Számsorozatok beállítása egyedi alapon](tasks/set-up-number-sequences-individual-basis.md) (Feladat-útmutató)
 
 ## <a name="organizations"></a>Szervezetek
@@ -46,7 +46,7 @@ Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajt
 
 Szervezetek és szervezeti hierarchiák beállítása előtt, győződjön meg arról, hogy megtervezi, hogyan lehet modellezni vállalatát. A szervezeti modellnek jelentős hatása van a bevezetésre és az üzleti folyamatokra.
 
-- [Szervezetek és szervezeti hierarchiák](organizations-organizational-hierarchies.md)
+- [Szervezetek és szervezeti hierarchiák áttekintése](organizations-organizational-hierarchies.md)
 - [Szervezeti hierarchia megtervezése](plan-organizational-hierarchy.md)
 - [Szervezeti hierarchia létrehozása](tasks/create-organization-hierarchy.md) (Feladat-útmutató)
 - [Jogi személy létrehozása](tasks/create-legal-entity.md) (Feladat-útmutató)
@@ -58,8 +58,8 @@ A globális címjegyzék központi tárház olyan alapadatok számára, amelyeke
 
 Miután létrehozta a globális címjegyzéket, további címjegyzéket hozhat létre szükség szerint, például vállalatonként vagy az üzlet sorainként külön címjegyzéket hozhat létre a szervezetben.
 
-- [Globális címjegyzék](overview-global-address-book.md)
-- [A globális címjegyzék és további címjegyzékek beállításának megtervezése](plan-configuration-global-address-book-additional-address-books.md)
+- [Globális címjegyzék áttekintése](overview-global-address-book.md)
+- [Terv a globális címjegyzékhez és egyéb címjegyzékekhez](plan-configuration-global-address-book-additional-address-books.md)
 - [Globális címjegyzék konfigurálása](tasks/configure-global-address-book.md)
 - [Címjegyzékek GYIK](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Miután létrehozta a globális címjegyzéket, további címjegyzéket hozhat l
 
 A munkafolyamat rendszer, amelynek segítségével létrehozhat egyes munkafolyamatokat vagy üzleti eljárásokat. Munkafolyamat létrehozásakor megadja, hogyan halad vagy mozog egy dokumentum a rendszeren keresztül annak jelzésével, hogy kinek a feladata a feladat végrehajtása, a döntéshozatal, illetve a dokumentum jóváhagyása.
 
-- [Munkafolyamat – áttekintés](overview-workflow-system.md)
+- [A munkafolyamat-rendszer áttekintése](overview-workflow-system.md)
 - [Munkafolyamat-elemek](workflow-elements.md)
-- [Munkafolyamat-műveletek](workflow-actions.md)
-- [Munkafolyamat létrehozása](create-workflow.md)
+- [Munkafolyamat-jóváhagyási folyamatok műveletei](workflow-actions.md)
+- [Munkafolyamatok létrehozása – áttekintés](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Elektronikus aláírások
 
@@ -78,7 +78,7 @@ Az elektronikus aláírás igazolja annak a személynek a személyazonosságát,
 
 A kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan.
 
-- [Az elektronikus aláírás áttekintése](electronic-signature-overview.md)
+- [Az elektronikus aláírások áttekintése](electronic-signature-overview.md)
 - [Az elektronikus aláírások beállítása](tasks/set-up-electronic-signatures.md) (Feladat-útmutató)
 
 ## <a name="case-management"></a>Esetkezelés
@@ -86,13 +86,13 @@ A kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. 
 Az esetek tervezésével, nyomon követésével és elemzésével hatékony megoldásokat hozhat létre, amelyeket aztán használhat a hasonló problémákhoz. Például amikor az ügyfélszolgálati képviselők vagy az emberi erőforrások létrehozói eseteket hoznak létre, az adatokat a tudásbáziscikkekben találják meg arra vonatkozóan, hogyan tudnak egy eseten dolgozni, és azt hatékonyan megoldani.
 
 - [Esetkezelés – áttekintés](cases.md)
-- [Esetbiztonság, folyamatok és kategóriák konfigurálása](plan-case-management.md)
+- [Esetkategória-biztonság, esetfolyamatok és esetkategóriák tervezése](plan-case-management.md)
 
 ## <a name="record-templates"></a>Rekordsablonok
 
 A rekordsablonok segítenek a rekordok gyorsabb létrehozásában. Rekordsablon létrehozásával a gyakran használt mezőértékeket nem kell minden új rekordhoz kifejezett módon megadni.
 
-- [Rekordsablonok](record-templates.md)
+- [Rekordsablonok áttekintése](record-templates.md)
 - [Adatbevitel megkönnyítése érdekében rekordsablon létrehozása](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Feladat-útmutató)
 - [Rekordsablon használata egy új rekord létrehozásához](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Feladat-útmutató)
 

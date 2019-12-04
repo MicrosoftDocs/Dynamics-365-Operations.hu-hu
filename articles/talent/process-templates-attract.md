@@ -1,6 +1,6 @@
 ---
-title: Folyamatsablon létrehozása az Attract alkalmazásban
-description: Ez a témakör információt nyújt a folyamatsablonok létrehozásáról az Attract alkalmazásban.
+title: Felvételi folyamatsablon létrehozása az Attract alkalmazásban
+description: Ez a témakör információt nyújt a felvételi folyamatsablonok létrehozásáról az Attract alkalmazásban.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622718"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832558"
 ---
-# <a name="create-a-process-template-in-attract"></a>Folyamatsablon létrehozása az Attract alkalmazásban
+# <a name="create-a-hiring-process-template-in-attract"></a>Felvételi folyamatsablon létrehozása az Attract alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Rendszergazdák, toborzásért felelős személyek és a vezetők hozhatnak lét
 > [!NOTE]
 > A fokozatok nevei a jelöltek számára láthetók a **Pályázat állapota** oldalon. Vegye figyelembe ezt, amikor elnevezi a fokozatokat.
 
-Tevékenységekkel kapcsolatos további tudnivalókért tekintse meg a [Felvételi folyamat tevékenységei az Attract alkalmazásban](./activities-attract.md) részt.
+Tevékenységekkel kapcsolatos további tudnivalókért tekintse meg a [Felvételi folyamatok tevékenységei](./activities-attract.md) részt.
 
 Felvételi folyamatsablon létrehozásához kövesse az alábbi lépéseket:
 

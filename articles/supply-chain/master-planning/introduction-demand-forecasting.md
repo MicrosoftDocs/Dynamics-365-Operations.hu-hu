@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653533"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815157"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -76,13 +76,13 @@ Az Igény-előrejelzés egy olyan eszköz, amely a gyártóiparban tevékenyked�
 
 [Igény-előrejelzés beállítása](demand-forecasting-setup.md)
 
-[Statisztikai kiinduló előrejelzés generálása](generate-statistical-baseline-forecast.md)
+[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
 
 [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
 
-[Beállított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
+[Módosított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
 
-[Az előrejelzés pontosság megfigyelése](monitor-forecast-accuracy.md)
+[Előrejelzés pontosságának követése](monitor-forecast-accuracy.md)
 
 [Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor](remove-historical-outliers-calculating-demand-forecast.md)
 

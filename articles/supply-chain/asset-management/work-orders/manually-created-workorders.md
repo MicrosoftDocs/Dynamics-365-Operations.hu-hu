@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626247"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811744"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 
@@ -70,7 +70,7 @@ Vegye figyelembe az alábbiakat:
 
 - Az **Összes munkarendelés** listaoldal részletek nézetén több eszközt is hozzáadhat egy munkarendeléshez, ha hozzáadja a sorokat a **Munkarendelés karbantartási feladatai** gyorslapon. Egy eszköznél csak az eszközhöz kiválasztott eszköztípuson megadott karbantartásifeladat-típusok közül lehet választani.  
 
-- Ha a beállítás során módosítja az eszköz szolgáltatási szintjét vagy az eszköz kritikusságát, miután már használta az eszközt egy munkarendelésen, a munkarendelés szolgáltatási szintje vagy kritikussága nem frissül ennek megfelelően. A szolgáltatási szintekről és a kritikusságról az [Eszközök szolgáltatási szintje](../setup-for-objects/object-priorities.md) és az [Eszközök kritikusságai](../setup-for-objects/object-criticalities.md) témakörök tartalmaznak további információkat.
+- Ha a beállítás során módosítja az eszköz szolgáltatási szintjét vagy az eszköz kritikusságát, miután már használta az eszközt egy munkarendelésen, a munkarendelés szolgáltatási szintje vagy kritikussága nem frissül ennek megfelelően. A szolgáltatási szintekről és a kritikusságról az [Eszközök szolgáltatási szintje](../setup-for-objects/object-priorities.md) és az [Eszközök kritikusságtípusai](../setup-for-objects/object-criticalities.md) témakörök tartalmaznak további információkat.
 
 - A program minden alkalommal újraszámolja a munkarendelési feladaton szereplő kritikusságot, amikor a munkarendeléshez hozzáadnak vagy róla eltávolítanak egy munkarendelési feladatot.
 

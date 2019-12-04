@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653418"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814904"
 ---
 # <a name="warehouse-configuration-overview"></a>Raktár konfigurálása – áttekintés
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653418"
 
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
-**Megjegyzés:** Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
+> [!NOTE]
+> Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
 A Supply Chain Management rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
@@ -114,7 +115,7 @@ A különböző helyutasítássorokhoz tartozó tevékenységek meghatározása 
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Helyek konfigurálása WMS-aktivált raktárban (Feladat-útmutató)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

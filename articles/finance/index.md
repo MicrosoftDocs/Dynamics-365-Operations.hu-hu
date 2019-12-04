@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570125"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770574"
 ---
 # <a name="financial-management-home-page"></a>Pénzgazdálkodás – kezdőlap
 
@@ -44,8 +44,8 @@ További információkért válasszon ki egy szolgáltatásterületet.
         - [Költséggazdálkodás](expense-management/expense-management.md)
         - [Pénzügyi jelentéskészítés](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Tárgyi eszközök](fixed-assets/fixed-assets.md)
-        - [Főkönyv](general-ledger/general-ledger.md) 
-        - [Projektvezetés](project-management/overview-project-management-accounting.md)
+        - [Főkönyv és pénzügyi jelentéskészítés](general-ledger/general-ledger.md) 
+        - [Projektvezetés és könyvelés](project-management/overview-project-management-accounting.md)
         - [Állami szektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ További információkért válasszon ki egy szolgáltatásterületet.
 ### <a name="blogs"></a>Blogok
 
 - [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [Pénzügyek blog](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
 ### <a name="task-guides"></a>Feladat-útmutatók
@@ -72,5 +72,5 @@ Az ország/régió előírásai befolyásolják az adóbeállítások és a pén
 
 ### <a name="additional-content"></a>További tartalom
 
-Az ellátásilánc-kezelési funkciók a teljes beszerzésirányítási folyamat egy részéért felelősek, beleértve a kérelmezés, rendelés, bevételezés, számlázás és a beszerzett áruk és szolgáltatások kifizetési folyamata is. A beszerzések, készletek és gyártás kezeléséhez kapcsolódó lehetőségekkel kapcsolatos további információkért tekintse meg a [!Supply Chain Management főoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
+Az ellátásilánc-kezelési funkciók a teljes beszerzésirányítási folyamat egy részéért felelősek, beleértve a kérelmezés, rendelés, bevételezés, számlázás és a szervezet által beszerzett áruk és szolgáltatások kifizetési folyamata is. A beszerzések, készletek és gyártás kezeléséhez kapcsolódó lehetőségekre vonatkozó további információkért tekintse meg a [Supply Chain Management kezdőoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 

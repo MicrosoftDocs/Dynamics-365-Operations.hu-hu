@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551979"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812856"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Az Dynamics 365 Talent – Onboard alkalmazás letöltése
 
@@ -39,9 +39,9 @@ A próbaverzió vagy a vásárlási folyamat során be kell állítania a Micros
 > [!WARNING]
 > A próbaverzióból származó adatokat nem lehet áttelepíteni a fizetett előfizetési környezetbe. <!--Reviewers: please verify.-->
 
-A Talent új funkcióival kapcsolatos információkért lásd az [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md) című részt és a [Dynamics 365 és Power Platform kibocsátási megjegyzéseket](https://docs.microsoft.com/business-applications-release-notes/index). Ha szeretné megtekinteni az Onboard új funkcióit, lásd a [Talent előnézeti funkcióinak elérése](./access-preview-feature.md) című részt.
+A Talent új funkcióival kapcsolatos információkért lásd az [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md) című részt és a [Dynamics 365 és Power Platform kibocsátási megjegyzéseket](https://docs.microsoft.com/business-applications-release-notes/index). Ha szeretné megtekinteni az Onboard új funkcióit, lásd a [Microsoft Dynamics 365 Talent előzetes funkcióinak elérése](./access-preview-feature.md) című részt.
 
-Ha Ön informatikai szakértő, és további információt szeretne az Onboard alkalmazás két verziójának telepítéséről, lásd: [Létesítés az Onboard alkalmazás számára](./modular-app-tech-faq.md).
+Ha Ön informatikai szakértő, és további információt szeretne az Onboard alkalmazás két verziójának telepítéséről, lásd: [Létesítés a Dynamics 365 Talent – Onboard alkalmazás számára](./modular-app-tech-faq.md).
 
 ## <a name="get-started-with-onboard"></a>Első lépések az Onboard alkalmazásban
 
@@ -89,6 +89,6 @@ Ha elfogadta az alapértelmezett tartománynevet az Onboard regisztrációjakor,
 ### <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

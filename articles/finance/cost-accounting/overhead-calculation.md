@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178110"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770804"
 ---
 # <a name="overhead-calculation"></a>Járulékos költség számítása
 
@@ -1411,7 +1411,7 @@ A pénzügyi könyvelésnél egy 10 000,00 értékű költséget adnak fel az el
 </table>
 
 > [!NOTE]
-> Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. Részletesebb tájékoztatás: [Költségösszesítési irányelv](cost-rollup.md).
+> Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. A további tudnivalókat lásd: [Költségösszesítéssel kapcsolatos irányelv és járulékos költség számítása](cost-rollup.md).
 
 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189752"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772283"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Kötelezettségek számlaegyeztetése – áttekintés
 
@@ -189,7 +189,7 @@ A szállítói számlák gyakran a tényleges szállítmányoknak megfelelő ter
 -   Vigye be az eredeti bevételezési rendelésben fel nem tüntetett számlaösszegeket, hogy a számla adatai megegyezzenek a szállítótól kapott számláéival. Összehasonlíthatja a beszerzési rendelés költségeit a számlák költségeivel. Ha szükséges, költségeket adhat a számlákhoz és számlasorokhoz rendelheti azokat.
 -   Tekintse meg és hagyja jóvá a számlán szereplő nettó egységár és a beszerzési rendelésen szereplő nettó egységár közti eltéréseket. Az árkülönbözeti tűréshatár-százalékok beállíthatóak jogi személyekre, szállítókra vagy cikkekre vonatkozóan. Ha a szállítói számlasorban lévő ár kívül esik az árkülönbözeti tűréshatáron, a feladás jóváhagyásáig vagy a szállító helyesbítésének beérkezéséig mentheti a számlát.
 
-További tudnivalókért lásd: [Háromirányú egyeztetési irányelvek](three-way-matching-policies.md) és [A kötelezettségek modul beállítása a számlaegyeztetés ellenőrzéséhez](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
+További tudnivalók: [Háromirányú egyeztetési irányelvek](three-way-matching-policies.md) és [A kötelezettségek modul beállítása a számlaegyeztetés ellenőrzéséhez](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

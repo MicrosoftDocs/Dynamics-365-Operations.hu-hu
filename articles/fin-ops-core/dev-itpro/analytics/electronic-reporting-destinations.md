@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181266"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771469"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -122,7 +122,7 @@ Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kime
 
 ### <a name="power-bi-destination"></a>Power BI célja
 
-Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a példányból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Finance adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a példányból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További információ: [Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI szolgáltatásba való lehívásához](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Az alapértelmezett viselkedés (vagyis a konfiguráció párbeszédpanelének) felülbírálásához létrehozhat egy célhivatkozást és fájlcélt a fő eredménykomponens részére, majd kikapcsolhatja az összes célt.
@@ -163,4 +163,4 @@ Előfeltétel, hogy az Ön formátuma elérhető legyen az ER-konfigurációkná
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
+[Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)

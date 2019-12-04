@@ -1,5 +1,5 @@
 ---
-title: E-mail-sablonok
+title: E-mail-sablonok létrehozása az Attract rendszerben
 description: Ez a témakör ismerteti a Microsoft Dynamics 365 Talent - Attract e-mail-sablonjait, amelyeket létrehozhat és használhat.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 55c12010cfd055ee6977f50e566b70f76a2e1682
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008036"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832884"
 ---
-# <a name="email-templates"></a>E-mail-sablonok
-[!include[banner](../includes/banner.md)]
+# <a name="create-email-templates-in-attract"></a>E-mail-sablonok létrehozása az Attract rendszerben
+
+[!include [banner](includes/banner.md)]
 
 Az e-mail sablontár használatával a rendszergazdák egységes témát és márkázást hozhatnak létre minden e-mailhez, amelyeket a Microsoft Dynamics 365 Talent: Attract and Offer használatával küldenek. A rendszergazdák karbantarthatják az e-mail tartalom sablonok gyűjteményét, amelyeket a felhasználók használhatnak. A felvételi csoport a sablonok használatával a munkafolyamatban hatékonyabban küldhet e-maileket. Egyes e-mailek automatikus küldésre vannak beállítva, és a rendszergazda használhatja az e-mail sablontárat az e-mailek tartalmának testreszabására.
 

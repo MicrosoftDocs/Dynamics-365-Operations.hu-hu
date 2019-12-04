@@ -1,9 +1,9 @@
 ---
-title: Online boltok beállítása
-description: Ez a cikk az Kiskereskedelmi online áruházakkal és a Dynamics 365 Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
+title: Online áruház csatornájának beállítása
+description: Ez a cikk az Kiskereskedelmi online áruházi csatornákkal és a Dynamics 365 Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02402269a6976ff856e703cc8e94fbf0758ea771
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e7932879aac6ea4054f6c35de99f11c2662dd472
+ms.sourcegitcommit: 595a4ec63a32bd5d4321126bda7cf72a75a930a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017966"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "2688809"
 ---
-# <a name="set-up-online-stores"></a>Online áruházak beállítása
+# <a name="set-up-an-online-store-channel"></a>Online áruház csatornájának beállítása
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk az Kiskereskedelmi online áruházakkal és a Dynamics 365 Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
+Ez a cikk az Kiskereskedelmi online áruházi csatornákkal és a Dynamics 365 Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
 
 A Retail támogatja a többszörös kiskereskedelmi csatornák használatát. Ezek a kiskereskedelmi csatornák lehetnek online áruházak, hívásközpontok és kiskereskedelmi áruházak (más néven rendes, nem online üzletek). Az online áruházak online jelenlétet biztosítanak a kiskereskedőnek, így a vevők a kiskereskedelmi üzletek mellett a kiskereskedőtől online is vásárolhatnak termékeket a vevők. Ha a vevők az online áruházból vásárolnak, ezeket a termékeket ki lehet szállítani nekik, vagy felvehetik az egyik helyi üzletben. Online áruházat hoz létre a Retail kliensben. Az online üzlet közzétételre kerül egy harmadik fél online üzlete számára, amely integrálva van a Retail rendszerrel. A harmadik fél online áruház az online áruház felhasználói felületeként (UI) szolgál, és ügyfélkezelési rendszert (CMS) és felhasználói felületet (UI) biztosít. Számos ilyen típusú integráció érhető el. Az online áruházhoz definiált tulajdonságok irányítják az online áruház működését annak közzététele után. Beállíthat például egy navigációs kategóriahierarchiát a Retail rendszerben, majd hozzárendelheti az online áruházhoz. Amikor közzétesz egy online áruházat egy harmadik fél online áruház számára, a navigációskategória-hierarchia megjelenik az áruház online verziójában. Ekkor a vásárlók ezen navigációskategória-hierarchiában tallózva keresgélhetnek és vásárolhatnak az online áruházban. Egy online áruház létrehozásához be kell állítania azokat az összetevőket, amelyek lehetővé teszik a tranzakciók feldolgozását az üzlet számára. Például hozzá kell adnia szortimenteket, attribútumokat kell alkalmaznia, és be kell állítania a fizetési módokat és a szállítási módokat. Emellett meghatározhatók az árak, promóciók, engedmények, kereskedelmi megállapodások és az online áruház jellemző szállítási feltételei. Az online áruháznak a harmadik fél online áruházon való közzététele után kiskereskedelmi termékkatalógusokat hozhat létre, amelyeket közzétehet az online áruházban. A katalógusban szereplő termékek bekerülnek az online áruház terméklistájára. Ha egy vevő az online áruházban vásárol termékeket, akkor a rendszer frissíti a rendelkezésre álló készletet és szinkronizálja azt a klienssel. Emellett értékesítési rendeléseket hoz létre, és átküldi őket a kliensre a rendelés teljesítése és feldolgozása céljából.
 

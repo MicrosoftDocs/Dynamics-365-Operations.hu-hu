@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3677db634366ecfe6a26f2f5e01532ce5a087593
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249933"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815249"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
@@ -31,7 +31,7 @@ ms.locfileid: "2249933"
 Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba. Amikor kiadunk egy anyagjegyzék- vagy receptúrasort a raktárba, a rendszer először azt határozza meg, hogy az anyagok már rendelkezésre állnak-e a termelés bemeneti helyén az üzemben, ahol az anyagot felhasználják a termelési folyamat során.
 
 - Ha az anyag rendelkezésre áll a termelés bemeneti helyén, azonnal kitárolják a helyről, amint megérkezik a jelzés az anyagok raktárba való kiadására.
-- Ha az anyag nem áll rendelkezésre a termelés bemeneti helyén, az anyag kiadása azt jelzi, hogy anyagot át kell helyezni a helyekről a raktárban a termelés bemeneti helyére. Az anyagot áthelyezik nyersanyag-kitárolásra raktári munkával. Ennek megfelelően be kell állítani nyersanyag-kitárolási raktárkezelési folyamatokat. további információkat lásd: [Feltöltés](../warehousing/replenishment.md) és [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](../warehousing/control-warehouse-location-directives.md).
+- Ha az anyag nem áll rendelkezésre a termelés bemeneti helyén, az anyag kiadása azt jelzi, hogy anyagot át kell helyezni a helyekről a raktárban a termelés bemeneti helyére. Az anyagot áthelyezik nyersanyag-kitárolásra raktári munkával. Ennek megfelelően be kell állítani nyersanyag-kitárolási raktárkezelési folyamatokat. További információkat lásd: [Feltöltés áttekintése](../warehousing/replenishment.md) és [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](../warehousing/control-warehouse-location-directives.md).
 
 ## <a name="methods-for-releasing-bom-and-formula-lines"></a>Anyagjegyzék- és receptúrasorok kiadásának módszerei
 

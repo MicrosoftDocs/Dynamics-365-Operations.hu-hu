@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 578aa96de28758a4dfff9f8c5f7782705ddd5f70
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65c5702514a3bc9fe943959fd4ca032eb19bfe4c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556046"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814444"
 ---
 # <a name="set-up-consignment"></a>Bizomány beállítása
 
@@ -97,7 +97,7 @@ A **készlettulajdonos-változási**napló arra szolgál, hogy rögzítse, amiko
 [![készlet tulajdonosváltozási naplója](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a bizományosi folyamatokban.
-Ha az Ön szállítói a szállítói együttműködési felületet használják, ezt arra is felhasználhatják, hogy nyomon kövessék az Ön telephelyén lévő készlet felhasználását. A szállítóknak a szállítói együttműködésben való beállítására vonatkozó további tudnivalókat lásd: [- szállítói együttműködés felhasználóinak biztonsági konfigurációja](../procurement/configure-security-vendor-portal-users.md).
+Ha az Ön szállítói a szállítói együttműködési felületet használják, ezt arra is felhasználhatják, hogy nyomon kövessék az Ön telephelyén lévő készlet felhasználását. A szállítóknak a szállítói együttműködésben való beállítására vonatkozó további tudnivalókat lásd: [Szállítói portál felhasználói biztonsága](../procurement/configure-security-vendor-portal-users.md).
 
 
 

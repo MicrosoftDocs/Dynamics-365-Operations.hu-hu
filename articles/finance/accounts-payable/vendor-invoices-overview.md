@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570425"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772168"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
@@ -101,7 +101,7 @@ A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munk
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Szállítói számla irányelveinek beállítása](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Fő számlaadatok a kötelezettségekbe egy szállítói számla használatával](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Fő számlaadatok a Kintlevőségek rendszerben, szállítói számla használatával](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Fő számlaadatok a kötelezettségekbe jóváhagyási napló használatával](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Szállítói számla rögzítése a számlanaplóban](tasks/record-vendor-invoice-invoice-journal.md)

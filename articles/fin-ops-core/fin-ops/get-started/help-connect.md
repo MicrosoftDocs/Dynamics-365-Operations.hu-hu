@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537855"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812580"
 ---
 # <a name="connect-the-help-system"></a>A Súgórendszer csatlakoztatása
 
@@ -54,7 +54,7 @@ A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
 > [!IMPORTANT]
 > Amikor első alkalommal nyitja meg a **Súgó** lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a **Rendszerparaméterek** oldal eléréséhez.
 >
-> [![Kapcsolódás LCS-hez](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás LCS-hez")](./media/connect-to-lcs-crop.png)
+> [![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás az LCS szolgáltatáshoz")](./media/connect-to-lcs-crop.png)
 
 1. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
@@ -80,7 +80,7 @@ Használhatja a feladat-útmutatókat az egyéni súgó létrehozásáhot, vagy 
 
 Lehetősége van egyéni súgót létrehozni saját Finance, Supply Chain Management és Retail példányához; ehhez létre kell hoznia az egyedi megoldásokat magukban foglaló feladatrögzítéseket, majd azokat egy LCS Üzletifolyamat-tárba kell mentenie. A Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
-Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el a megoldás lesz a felhasználók számára érhető el. Ezenkívül az APQC Egyesített globális tárról is készíthet másolatot; megnyithatja a saját másolatot és az abban található feladatrögzítéseket, majd a módosítást követően elmentheti a rögzítéseket a változtatásokkal együtt. További tudnivalókért lásd: [Dokumentációként használandó feladatrögzítés vagy oktatás létrehozása](../../dev-itpro/user-interface/task-recorder.md).
+Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el a megoldás lesz a felhasználók számára érhető el. Ezenkívül az APQC Egyesített globális tárról is készíthet másolatot; megnyithatja a saját másolatot és az abban található feladatrögzítéseket, majd a módosítást követően elmentheti a rögzítéseket a változtatásokkal együtt. További tájékoztatás: [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Egyéni webhely csatlakoztatása
 
@@ -91,8 +91,8 @@ A Microsoft rendelkezésre bocsátott egy ismertetőt és mintakódot, amely le�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Súgó áttekintése](help-overview.md)
+[Súgórendszer](help-overview.md)
 
-[Feladatrögzítő áttekintése](../../dev-itpro/user-interface/task-recorder.md)
+[Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)
 
-[Feladatrögzítés létrehozása dokumentációként vagy képzésként való felhasználás céljából](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../../dev-itpro/user-interface/task-recorder-training-docs.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662665"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772896"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. október 23.)
 
@@ -47,7 +47,7 @@ A további tudnivalókat lásd [Újdonságok és módosítások a Finance and Op
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>A juttatások megnyitása előzetes funkció eltávolítása
 
-A Stratégiai befektetések a core HR-ben a működési kiválóság elősegítése érdekében bejelentése blogbejegyzés mellett 2019. október 18-án a Microsoft eltávolítja juttatások nyitása regisztrációra funkciót a nyilvános előzetesből. Helyette a jövőben új funkciók lesznek kiadva. A juttatások megnyitása regisztrációra funkciónak a termelési része, amely jelenleg a nyilvános előzetesben szerepel, nem lesz támogatott.
+A [Stratégiai befektetések a core HR-ben a működési kiválóság elősegítése érdekében](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) bejelentése blogbejegyzés mellett 2019. október 18-án a Microsoft eltávolítja juttatások nyitása regisztrációra funkciót a nyilvános előzetesből. Helyette a jövőben új funkciók lesznek kiadva. A juttatások megnyitása regisztrációra funkciónak a termelési része, amely jelenleg a nyilvános előzetesben szerepel, nem lesz támogatott.
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>Hiba történik a dolgozó országának/régiójának második alkalommal történő kijelölésekor (350294).
 
@@ -69,7 +69,7 @@ Az eheti kiadással, egy új értéklista hozzáadásával egy létező egyéni 
 
 Ebben a verzióban csak a kiválasztott alkalmazottak foglalkoztatási feltételei jelennek meg az Excel programban. Minden vállalat biztonsági funkció figyelembe van véve.
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>A Munkanaptár szünnap-entitása és a Munkanaptár entitás közötti társítás hiányzik a Common Data Service megoldásban – (324178).
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>A Munkanaptár szünnap-entitása és a Munkanaptár entitás közötti társítás hiányzik a Common Data Service megoldásban (324178).
 
 Ez a kapcsolat már hozzá van adva a kiadással. Ez a módosítás lehetővé teszi az alkalmazottak munkanapjainak megjelenítését PowerApps megoldásban. 
 

@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550107"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771260"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
 
@@ -43,7 +43,7 @@ A példában tegyük fel, hogy az RCS használatával olyan ER-megoldást szeret
 > Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket bármilyen vállalatban végrehajthatja.
 
 1. Ugorjon a **Szervezeti adminisztráció \> Munkaterületek \> Elektronikus jelentés** pontra.
-2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltató létrehozása, és megjelölés aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
+2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
 3. Kattintson a **Metaadat-konfigurációk** elemre.
 4. Válassza a **Konfiguráció létrehozása** lehetőséget.
 5. Írjon be egy nevet a legördülő párbeszédpanel **Név** mezőjébe. A példa esetében adja meg a **Külkereskedelmi metaadatok** szöveget.
@@ -54,14 +54,14 @@ A példában tegyük fel, hogy az RCS használatával olyan ER-megoldást szeret
     > [!NOTE]
     > Minden metaadatot kiválaszthat a teljes alkalmazáshoz, a kiválasztott modellekhez vagy a kiválasztott modulokhoz. Mindkét esetben a program automatikusan felveszi a következő metaadatokat: a rekordok, a felsorolások és a kiterjesztett adattípusok táblázatai (EDT). Ha további típusú metaadatokra van szüksége, akkor manuálisan kell őket felvennie.
 
-Hozzá kell adni bizonyos külkereskedelmi tranzakciókkal kapcsolatos metaadatokat, és manuálisan ki kell választani a metaadatelemeket.
+    Hozzá kell adni bizonyos külkereskedelmi tranzakciókkal kapcsolatos metaadatokat, és manuálisan ki kell választani a metaadatelemeket.
 
 9. Jelölje be az **Adatforrás hozzáadása \> Táblához tartozó rekordok** elemet.
 10. Az **Intrastat** értékére szűrjön a **Név** mezőben.
 11. Az **Intrastat** táblarekordjának kiválasztása.
 12. Válassza ki az **OK** lehetőséget.
 
-A rekordok Intrastat-táblázatára vonatkozó metaadat-információkat kell hozzáadnia.
+    A rekordok Intrastat-táblázatára vonatkozó metaadat-információkat kell hozzáadnia.
 
 13. A fastruktúrában válassza ki a **Táblarekordok: Intrastat \> \>Kapcsolatok\> IntrastatCommodity (Táblarekordok: EcoResCategory)** részt.
 14. Válassza a **Metaadatok hozzáadása** lehetőséget.
@@ -95,11 +95,11 @@ A következő eljárás bemutatja, hogy egy RCS felhasználó, aki rendelkezik a
 
 Mielőtt teljesítené ezt az eljárást, végre kell hajtania a következő eljárásokat:
 
-- [Konfigurációszolgáltató létrehozása, és megjelölés aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [RCS-ben felhasználandó alkalmazás-metaadatok előkészítése](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. Ugorjon az **Összes munkaterület \> Elektronikus jelentés** pontra.
-2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltató létrehozása, és megjelölés aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
+2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
 3. Importálja az alkalmazáshoz tartozó metaadatokat tartalmazó ER-metaadat konfigurációt, valamint a külkereskedelmi üzleti tartományhoz elektronikus dokumentumokat létrehozó konfigurációs konfigurációt. Létrehozta ezt az ER-metaadat konfigurációt, és exportálta XML-fájlként az [ RCS-ben felhasználandó alkalmazás-metaadatok előkészítése](#prepare-application-metadata-that-can-be-used-in-rcs) eljárásban a témakör korábbi részében.
 
     1. Kattintson a **Metaadat-konfigurációk** elemre.
@@ -201,7 +201,7 @@ A szükséges módon a meglévő metaadatok készletét az alkalmazásban kibőv
 
 A következő eljárás bemutatja, hogy egy RCS felhasználó, aki rendelkezik a **Rendszergazda** vagy az **Elektronikus jelentéskészítési fejlesztő** szerepkörrel, megtervezhet egy új ER-modellhozzárendelést az alkalmazás metaadatainak segítségével. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program.
 
-A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az [ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit. Ha még nem végezte el a témakör lépéseit [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](#access-application-metadata-by-using-an-er-configuration) korábban a témakörben, nyissa meg az [Elektronikus jelentéskészítési feladat-útmutatók a Dynamics 365 for Finance and Operations 8.1 alkalmazáshoz](https://go.microsoft.com/fwlink/?linkid=2082739) lapot a következő ER-konfigurációk letöltéséhez és előzetes helyi mentéséhez: **Foreign trade metadata.xml**, **Foreign trade model.xml** és **Foreign trade mapping.xml**.
+A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az [Konfigurációszolgáltatók létrehozása és aktívként történő megjelölésük](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit az RCS-ben. Ha még nem végezte el a témakör lépéseit [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](#access-application-metadata-by-using-an-er-configuration) korábban a témakörben, nyissa meg az [Elektronikus jelentéskészítési feladat-útmutatók a Dynamics 365 for Finance and Operations 8.1 alkalmazáshoz](https://go.microsoft.com/fwlink/?linkid=2082739) lapot a következő ER-konfigurációk letöltéséhez és előzetes helyi mentéséhez: **Foreign trade metadata.xml**, **Foreign trade model.xml** és **Foreign trade mapping.xml**.
 
 
 ### <a name="get-required-er-configurations"></a>Szükséges elektronikus jelentéskészítés-konfigurációk lekérése

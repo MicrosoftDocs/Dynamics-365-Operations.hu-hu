@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571599"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811849"
 ---
 # <a name="create-an-asset"></a>Eszköz létrehozása
 
@@ -36,15 +36,15 @@ Ez a témakör bemutatja, hogyan lehet eszközt létrehozni az Eszközkezelés m
 1. Kattintson az **Eszközök kezelése** > **Közös** > **eszközök** > **Minden eszköz** vagy **Aktív eszközök** lehetőségre.
 2. Kattintson az **Új** gombra.
 3. Az **Eszközök létrehozása** párbeszédpanelen írja be az **Eszközre** vonatkozó adatokat (az eszközazonosítót) és az eszköz nevét. Az eszközhöz válaszon egy dátumot a **Hatályos** mezőben Ettől a dátumtól kezdve telepítheti az eszközt a munkavégzési helyszínre, valamint áthelyezheti és lecserélheti az eszközt egy eszközszerkezetben.
-4. Az **Eszköztípus** mezőben válassza ki az eszköz eszköztípusát (kötelező mező). Ha szükséges, válassza az ki az **Eszköz gyártója** és **Eszközmodell** értékeket az eszközhöz. Ha csak egy termék van beállítva, akkor a termék automatikusan ki lesz választva az eszköz gyártójának az **Eszköz gyártója** mezőben. Az **Eszköz gyártója** és **Eszközmodell** mezőkben elérhető választási lehetőségek az [Eszköz gyártója és modellje](../setup-for-objects/product-and-model.md) mező beállításaitól függenek.
+4. Az **Eszköztípus** mezőben válassza ki az eszköz eszköztípusát (kötelező mező). Ha szükséges, válassza az ki az **Eszköz gyártója** és **Eszközmodell** értékeket az eszközhöz. Ha csak egy termék van beállítva, akkor a termék automatikusan ki lesz választva az eszköz gyártójának az **Eszköz gyártója** mezőben. Az **Eszköz gyártója** és **Eszközmodell** mezőben elérhető választási lehetőségek az [Eszköz gyártói és modelljei](../setup-for-objects/product-and-model.md) mező beállításaitól függenek.
 5. A **Fölérendelt tárgyieszköz** csoportban az **Eszköz** mező üres. Ha szükséges, kiválaszthat egy fölérendelt eszközt, majd a **Fölérendelt eszköz** csoport összes mezőjét automatikusan kitölti a program.
 >[!NOTE]  
->A fölérendelt eszköz kiválasztásakor kettő vagy három lap érhető el: a **Saját eszközök** lap azokat a munkavégzési helyszínhez kapcsolódó eszközöket tartalmazza, amelyeket Ön (a rendszerre bejelentkezett karbantartó munkavállaló) eloszthat. Ha a karbantartási dolgozóknál űrlapon nincs beállítva munkavégzési helyszín a [Karbantartási dolgozók](../setup-for-objects/workers-and-worker-groups.md) képernyőn, akkor a **Saját eszközök** lap nem lesz látható. Az **Aktív eszközök** lap az „Aktív” eszköz-életciklus állapotú eszközök listáját tartalmazza. Az **Eszköznézet** lap a munkavégzési helyszínek és a helyszínekre telepített eszközök fanézetét jeleníti meg.
+>A fölérendelt eszköz kiválasztásakor kettő vagy három lap érhető el: a **Saját eszközök** lap azokat a munkavégzési helyszínhez kapcsolódó eszközöket tartalmazza, amelyeket Ön (a rendszerre bejelentkezett karbantartó munkavállaló) eloszthat. Ha a karbantartási dolgozóknál nincs beállítva munkavégzési helyszín a [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md) képernyőn, akkor a **Saját eszközök** lap nem lesz látható. Az **Aktív eszközök** lap az „Aktív” eszköz-életciklus állapotú eszközök listáját tartalmazza. Az **Eszköznézet** lap a munkavégzési helyszínek és a helyszínekre telepített eszközök fanézetét jeleníti meg.
 
 6. A beállított alapértelmezett munkavégzési helyszínt a rendszer **Tárgyieszközcsoport** > **Munkavégzési helyszín** mezőjében lévő eszközre vonatkozóan javasolja. Szükség esetén válasszon másik munkavégzési helyszínt.
 
 >[!NOTE]
->Az eszköz létrehozását követően szükség esetén telepítheti azt egy másik munkavégzési helyszínre. Csak a felső szintű eszközök (aktuális szülőeszköz nélküli eszközök) telepíthetők a munkavégzési helyszínre. Ez azt jelenti, hogy a kijelölt munkavégzési helyszínre a felső színtű és a származtatott eszközöket is telepíti. További információért a tárgyi eszközök munkavégzési helyszínre történő telepítésért lásd: [Munkavégzési helyszínek](../functional-locations/introduction-to-functional-locations.md).
+>Az eszköz létrehozását követően szükség esetén telepítheti azt egy másik munkavégzési helyszínre. Csak a felső szintű eszközök (aktuális szülőeszköz nélküli eszközök) telepíthetők a munkavégzési helyszínre. Ez azt jelenti, hogy a kijelölt munkavégzési helyszínre a felső színtű és a származtatott eszközöket is telepíti. További információ a tárgyi eszközök munkavégzési helyszínre történő telepítéséről: [A munkavégzési helyszínek bemutatása](../functional-locations/introduction-to-functional-locations.md).
 
 7. Kattintson az **OK** gombra.
 8. Válassza ki az eszközt az **Összes eszköz** listából, majd kattintson a **Szerkesztés** gombra, hogy további információkat adjon hozzá az eszközhöz.
@@ -53,13 +53,13 @@ Ez a témakör bemutatja, hogyan lehet eszközt létrehozni az Eszközkezelés m
 
 Az a munkavégzési helyszín, ahová az eszköz kapcsolódik, a **Munkavégzési helyszín** mezőben látható. Ha az eszköz egy fölérendelt eszköz, akkor az eszközhöz kapcsolódó gyermekek száma a **Gyermekek** mezőben jelenik meg. Ha az eszköz egy meglévő eszköz aleszköze akkor a fölérendelt eszköz azonosítója a **Szülő** mezőben jelenik meg.
 
-Az **Eszközök gyártója** és **Eszköz modellje** eszközzel kapcsolatos információkat szerkesztheti azon eszközre vonatkozóan, amely használható a cserealkatrészek alternatív cserealkatrészek és feladattípus alapértelmezések kezeléséhez. További tájékoztatásért lásd: [Eszköz gyártója és modellje](../setup-for-objects/product-and-model.md). Szükség esetén a **Modellév** és **Sorozatszám** adatokat is megadhatja.
+Az **Eszközök gyártója** és **Eszköz modellje** eszközzel kapcsolatos információkat szerkesztheti azon eszközre vonatkozóan, amely használható a cserealkatrészek alternatív cserealkatrészek és feladattípus alapértelmezések kezeléséhez. További tájékoztatás: [Eszköz gyártói és modelljei](../setup-for-objects/product-and-model.md). Szükség esetén a **Modellév** és **Sorozatszám** adatokat is megadhatja.
 
 **Az aktuális életciklus-állapot** határozza meg, hogy az eszköz aktív vagy inaktív-e. Eszköz létrehozásakor az állapot mindig az eszközállapot-csoport első állapotára lesz állítva. Ha készen áll egy eszköz aktiválására, kattintson az **Eszköz állapotának frissítése** lehetőségre, és válassza ki azt az életciklus-állapotot, amelyet „eszközhöz aktívként” határozott meg, majd kattintson az **OK** gombra.
 
 **Megjegyzés:** Ha egy eszköz "inaktív" értékűre van állítva, akkor már nem lehet munkarendeléseket létrehozni az eszközhöz. Inaktív eszközhöz nem ütemezhet megelőző karbantartási feladatokat.
 
-A **Szolgáltatási szint** és **Kiritkusság** mezők az eszközhöz létrehozott munkarendelésekre vonatkoznak. A mezők a tárgyi eszköz aktuális beállításához számított **Szolgáltatási szint** és **Kritikusság** számértékeit jelenítik meg. Ezen értékek beállításával kapcsolatosan lásd: [Eszköz szolgáltatásszintjei](../setup-for-objects/object-priorities.md) és [Eszközkritikusságok](../setup-for-objects/object-criticalities.md).
+A **Szolgáltatási szint** és **Kiritkusság** mezők az eszközhöz létrehozott munkarendelésekre vonatkoznak. A mezők a tárgyi eszköz aktuális beállításához számított **Szolgáltatási szint** és **Kritikusság** számértékeit jelenítik meg. Ezeknek az értékeknek a beállítása: [Eszköz szolgáltatásszintjei](../setup-for-objects/object-priorities.md) és [Eszközkritikusságok típusai](../setup-for-objects/object-criticalities.md).
 
 ## <a name="asset"></a>Eszköz
 

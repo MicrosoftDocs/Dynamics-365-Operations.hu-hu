@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce8ebaf32b30c57b307f0d8799660ba6b42365a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0373448cba908c1ba3889c3e533c205e0410bab8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543514"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813616"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
 
@@ -45,9 +45,9 @@ A kiugró értékek kizárásával javíthatja az előrejelzés pontosságát. E
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Igény-előrejelzés – bevezetés](introduction-demand-forecasting.md)
+[Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
 
-[Az előrejelzés pontosság megfigyelése](monitor-forecast-accuracy.md)
+[Előrejelzés pontosságának követése](monitor-forecast-accuracy.md)
 
 
 

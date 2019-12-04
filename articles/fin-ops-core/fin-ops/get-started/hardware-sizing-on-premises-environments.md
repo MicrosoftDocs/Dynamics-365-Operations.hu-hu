@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 6e83a2607f4840139143fb473ef7d6daf4b8b7ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180668"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812557"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Hardverméretezési követelmények helyszíni környezetekben
 
 [!include [banner](../includes/banner.md)]
 
-Mielőtt elkezdi a hardver és infrastruktúra helyszíni környezetekben való méretezésének folyamatát, ismerkedjen meg ezzel: [Rendszerkövetelmények](system-requirements.md) és ezzel: [Beállítási és telepítési útmutató](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), hogy kellőképpen ismerje a mögöttes infrastruktúrát.
+Mielőtt elkezdi a hardver és infrastruktúra helyszíni környezetekben való méretezésének folyamatát, ismerkedjen meg ezzel: [Rendszerkövetelmények felhőbeli telepítések esetén](system-requirements.md) és ezzel: [Beállítási és telepítési útmutató](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), hogy kellőképpen ismerje a mögöttes infrastruktúrát.
 
 > [!NOTE]
 > Alaposan figyeljen oda a rendszerbeállítás ajánlott eljárásaira az optimális teljesítmény érdekében.

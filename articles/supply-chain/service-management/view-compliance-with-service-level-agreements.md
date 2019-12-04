@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6184653b1296ed22254f6811bb58135639d70ca9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8db522552165f51bd45a90cb38983d9bdf47ce21
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551766"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813086"
 ---
 # <a name="view-compliance-with-service-level-agreements"></a>A szolgáltatásiszint-szerződésnek való megfelelés ellenőrzése    
 
@@ -38,13 +38,13 @@ ms.locfileid: "1551766"
 
 
 > [!TIP]
-> <P>Ha a <STRONG>Megfelelés</STRONG> mezőben 100-nál nagyobb százalék található, akkor túllépték a szolgáltatásiszint-szerződésben foglalt időkeretet.</P>
+> Ha a <STRONG>Megfelelés</STRONG> mezőben 100-nál nagyobb százalék található, akkor túllépték a szolgáltatásiszint-szerződésben foglalt időkeretet.
 
 
 
 ## <a name="see-also"></a>Lásd még
 
-[Szolgáltatásiszint-szerződések](service-level-agreements.md)
+[Szolgáltatásiszint-szerződések áttekintése](service-level-agreements.md)
 
   
 

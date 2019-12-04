@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578218"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771166"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>A létrehozott ER-jelentések eredményeinek nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
 
@@ -60,7 +60,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 
 A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási formátuma** formátumhoz, de a alaptervszabályokat még nem adták hozzá az adott alaptervhez.
 
-![Elektronikus jelentéskészítés alaptervformátumai oldal](media/GER-BaselineSample-AddBaseline2.PNG "Képernyőkép – Elektronikus jelentéskészítés alaptervformátumai oldal")
+![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline2.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 ### <a name="make-a-new-baseline-rule"></a>Új alaptervszabály létrehozása
 
@@ -73,7 +73,7 @@ A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási f
 7. Válassza ki az **OK** lehetőséget.
 8. **Alaptervek** kiválasztása.
 
-    ![Elektronikus jelentéskészítés alaptervformátumai oldal](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Képernyőkép – Elektronikus jelentéskészítés alaptervformátumai oldal")
+    ![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
     A létrejövő kimenő fájl automatikusan a végrehajtott ER-formátum alaptervéhez van csatolva. A alaptervszabály automatikusan hozzáadódott ehhez az alaptervhez, és a csatolt fájlra mutató hivatkozást is tartalmaz.
 
@@ -113,14 +113,14 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 13. Válassza a **Mentés** parancsot, majd válassza a **Teszt** elemet.
 14. A konfigurált kifejezés újrateszteléséhez válassza újra a **Teszt** elemet.
 
-    ![Képlettervező lap](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Képernyőkép – Képlettervező lap")
+    ![Képletszerkesztő oldala](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Képernyőkép – Képlettervező oldala")
 
     > [!NOTE]
     > A **Teszteredmények** lap mutatja, hogy a konfigurált kifejezés más dátumot és időpontot ad vissza, amikor a lehívás történik.
 
 15. Zárja be a **Képlettervező** lapot, majd válassza a **Mentés** gombot.
 
-    ![Formátumtervező lap](media/GER-BaselineSample-FormatMappingDesign2.PNG "Képernyőkép – Formátumtervező lap")
+    ![Formátumtervező oldal](media/GER-BaselineSample-FormatMappingDesign2.PNG "Képernyőkép – Formátumtervező oldala")
 
 16. Zárja be a **Formátumtervező** lapot.
 
@@ -131,7 +131,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 3. Az alaptervek listájában válassza ki azt az alaptervet, amely az **ER-kiindulások tanulási formátuma** formátumra van beállítva.
 4. Az **Alaptervek** gyorslapon válassza a **Törlés** parancsot a korábban konfigurált alaptervszabály eltávolításához.
 
-![Elektronikus jelentéskészítés formátum-alaptervei oldal](media/GER-BaselineSample-AddBaseline3.PNG "Képernyőkép – Elektronikus jelentéskészítés formátum-alaptervei oldal")
+![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline3.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>A megtervezett ER-formátum kötéseihez tartozó helyettesítések meghatározása
 
@@ -139,7 +139,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 2. A formátum-összetevők fastruktúrájában bontsa ki a **Kimenet** elemet, majd a **Kimenet\\Dokumentum** pontot, és jelölje be a **Kimenet\\Dokumentum\\ProcessingDateTime** jelölőnégyzetet.
 3. Válassza ki az **OK** lehetőséget.
 
-![Elektronikus jelentéskészítés formátum-alaptervei oldal](media/GER-BaselineSample-AddBaseline4.PNG "Képernyőkép – Elektronikus jelentéskészítés formátum-alaptervei oldal")
+![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline4.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 A kiválasztott ER-formátum-összetevő hozzá van adva az összetevők listájához a **Helyettesítések** gyorslapon. Ha a program hibakeresési módban futtatja az ER alapformátumát, akkor az egyes összetevők formátumának kötését a program a **Kötés** oszlopban szereplő kötéssel helyettesíti. Ha módosítani szeretné a **Helyettesítések** gyorslapon felsorolt összetevő alapértelmezett kötését, válassza a **Szerkesztés** parancsot.
 
@@ -147,7 +147,7 @@ A kiválasztott ER-formátum-összetevő hozzá van adva az összetevők listáj
 
 Kövesse az aktuális témakör korábbi, „Példa: Kiindulási szabályok beállításának automatizálása” szakaszának lépéseit. Egy értesítés figyelmeztet arra, hogy a kimenő fájl az alapterv-beállítások alapján lett létrehozva, és a formátum kötésének kényszerű helyettesítése történt.
 
-![Értesítés a konfigurációk lapon](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Képernyőkép – Értesítés a konfigurációk lapon")
+![Konfigurációk oldal értesítése](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Képernyőkép – Értesítés a Konfigurációk oldalon")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>A formátumkötések helyettesítésével kapcsolatos figyelmeztetések figyelmen kívül hagyása
 
@@ -195,11 +195,11 @@ Az exportált alaptervi beállításokat másik környezetbe importálhatja. A k
 
 Ha egy helyileg tárolt XML-fájlból szeretne alaptervi beállításokat importálni, válassza az **Elektronikus jelentéskészítés formátumának alaptervei** lapot, válassza az **importálás** lehetőséget, majd válassza a **Tallózás** lehetőséget az XML-fájl kiválasztásához.
 
-![Alaptervi beállítások importálása párbeszédpanel](media/GER-BaselineSample-ImportBaseline1.PNG "Képernyőkép – Alaptervi beállítások importálása párbeszédpanel")
+![Kiindulási beállítások importálása párbeszédablak](media/GER-BaselineSample-ImportBaseline1.PNG "Képernyőkép – Kiindulási beállítások importálása párbeszédablak")
 
 Ha a Microsoft SharePoint Server felületén tárolt XML-fájlból szeretne alaptervi beállításokat importálni, az aktuális Dokumentumkezelési beállítások és a kiválasztott dokumentumtípus alapján, válassza az **Elektronikus jelentéskészítés formátumának alaptervei** oldalon az **Importálás forrásból** lehetőséget. Majd válassza ki a dokumentumtípust és az XML-fájlt. A SharePoint-mappához való hozzáféréshez szükséges dokumentumtípust be kell állítani előre.
 
-![Importálás forrásból párbeszédpanel](media/GER-BaselineSample-ImportBaseline2.PNG "Képernyőkép – Importálás forrásból párbeszédpanel")
+![Importálás a forrásból párbeszédpanel](media/GER-BaselineSample-ImportBaseline2.PNG "Képernyőkép – Importálás a forrásból párbeszédpanel")
 
 > [!NOTE]
 > A Feladatrögzítő segítségével rögzítheti a szükség dokumentumtípus kiválasztásának lépéseit és a fájlnevet az **Importálás forrásból** párbeszédpanelben. Ily módon a szükséges alaptervi beállításokat SharePoint Server felületén tárolhatja, és automatikusan importálhatja őket egy feladatrögzítés lejátszásával a Regression Suite Automation Tool használatával futtatott automatizált tesztek futtatásakor.
@@ -207,4 +207,4 @@ Ha a Microsoft SharePoint Server felületén tárolt XML-fájlból szeretne alap
 ## <a name="additional-resources"></a>További erőforrások
 
 - [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md)
-- [Feladatrögzítő](../user-interface/task-recorder.md)
+- [Feladatrögzítő erőforrásai](../user-interface/task-recorder.md)

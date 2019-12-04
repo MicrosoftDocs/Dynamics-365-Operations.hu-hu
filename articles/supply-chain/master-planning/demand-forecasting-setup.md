@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653511"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813799"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -70,7 +70,8 @@ Az előrejelzés létrehozásához a Supply Chain Management egy gépi tanulási
 -   Azure tárfiók neve
 -   Azure tárfiók kulcsa
 
-**Megjegyzés:** az Azure tárolási számlanév és kulcs csak az egyéni tárolási fiók használata esetén szükséges. Ha a helyszíni verziót használja, rendelkeznie kell egy egyéni tárolási fiókkal az Azure-on, hogy a gépi tanulási szolgáltatás elérhesse az előzményadatokat. 
+> [!NOTE]
+> Az Azure tárolási számlanév és kulcs csak egyéni tárolási fiók használata esetén szükséges. Ha a helyszíni verziót használja, rendelkeznie kell egy egyéni tárolási fiókkal az Azure-on, hogy a gépi tanulási szolgáltatás elérhesse az előzményadatokat. 
 
 Igény-előrejelzések létrehozásánál használhat saját szolgáltatást a Machine Learning Studio vagy a Supply Chain Management igény-előrejelzési kísérletek segítségével. A Finance and Operations igény-előrejelzési kísérletek webes szolgáltatásként való telepítéséhez a Supply Chain Management alkalmazáson belül talál útmutatást. Az **Igény-előrejelzési paraméterek** lapon kattintson az **Azure Machine Learning** fülre.
 
@@ -93,9 +94,9 @@ A **Felosztási kulcsok** lapon beállíthatja az **Előrejelzési algoritmus pa
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Igény-előrejelzés – bevezetés](introduction-demand-forecasting.md)
+[Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
 
-[Statisztikai kiinduló előrejelzés generálása](generate-statistical-baseline-forecast.md)
+[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
 
 [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
 

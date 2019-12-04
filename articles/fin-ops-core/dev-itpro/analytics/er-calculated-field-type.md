@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550084"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771329"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -55,7 +55,7 @@ A [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=8746
 | Minta ER-formátum konfigurációja        | Format to learn parameterized calls.version.1.1.xml  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Jelentkezzen be a RCS-példányba
-Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani az RCS-ben: [ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md):
+Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani az RCS-ben: [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
 1. Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés**elemet.
 2. Válassza a **Jelentéskészítési konfigurációk** elemet.
@@ -75,21 +75,21 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
 3. Válassza a **Tervező** lehetőséget.
 4. Válassza a **Tervező** lehetőséget.  
    
-Ez az ER-leképezés a következőkre képes:
+    Ez az ER-leképezés a következőkre képes:
 
-- Lekéri az adókódok listáját (**Adó** adatforrás) amelyek a **TaxTable** táblában találhatók.
-- Lekéri az adótranzakciók listáját (**Tranz** adatforrás) amelyek a **TaxTrans** táblában találhatók:
+    - Lekéri az adókódok listáját (**Adó** adatforrás) amelyek a **TaxTable** táblában találhatók.
+    - Lekéri az adótranzakciók listáját (**Tranz** adatforrás) amelyek a **TaxTrans** táblában találhatók:
     
-    - A beolvasott tranzakciók (**Gr** -adatforrás) listájának csoportosítása adózási kód szerint.
-    - Kiszámítja a csoportosított tranzakciókat az adózási kód szerinti aggregált értékek szerint:
+        - A beolvasott tranzakciók (**Gr** -adatforrás) listájának csoportosítása adózási kód szerint.
+        - Kiszámítja a csoportosított tranzakciókat az adózási kód szerinti aggregált értékek szerint:
 
-        - Adóalap-értékek összege.
-        - Adóértékek összege.
-        - Az alkalmazott adómérték minimális értéke.
+            - Adóalap-értékek összege.
+            - Adóértékek összege.
+            - Az alkalmazott adómérték minimális értéke.
 
-Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok modellt alkalmazza az ehhez a modellhez létrehozott, valamint a Finance and Operations megoldásban végrehajtott összes ER-formátum esetében. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
+    Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok modellt alkalmazza az ehhez a modellhez létrehozott, valamint a Finance and Operations megoldásban végrehajtott összes ER-formátum esetében. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
-  ![Modell-hozzárendelés tervező lapja au Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
+    ![Modell-hozzárendelés tervező lapja au Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 
 5.  Zárja be a **Modell-hozzárendelési tervező** lapot.
 6.  Zárja be a **Modell-hozzárendelés** lapot.
@@ -100,25 +100,25 @@ Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok mode
 2. Válasza ki a **Formátum paraméterezett hívások tanulásához elemet**.
 3. Válassza a **Tervező** lehetőséget. Ez az ER-formátum a következőkre képes:
 
-  - Adókimutatás létrehozása XML-formátumban.
-  - Az adóbevallásban a következő adómértékeket megjeleníti: normál, csökkentett és nincs.
-  - Minden adózási szinten több részletet mutat be, amelyek mindegyik szintjén különböző számú adat szerepel.
+    - Adókimutatás létrehozása XML-formátumban.
+    - Az adóbevallásban a következő adómértékeket megjeleníti: normál, csökkentett és nincs.
+    - Minden adózási szinten több részletet mutat be, amelyek mindegyik szintjén különböző számú adat szerepel.
 
-  ![Formátumtervező oldal](media/er-calculated-field-type-02.png)
+    ![Formátumtervező oldal](media/er-calculated-field-type-02.png)
 
 4. Válassza ki **Hozzárendelés** lehetőséget.
 5. Bontsa ki a **Modell**, **Adatok** és **Összegzés** elemeket. 
 
-   A **Model.Data.Summary.Level** számított mező tartalmazza azt a kifejezést, amely az adózási szint kódját adja vissza (**Normál**, **Csökkenetett**, **Nincs** vagy **Egyéb**). szöveges értékként, amely lekérhető a **Model.Data.summary** adatforrásból futásidőben.
+    A **Model.Data.Summary.Level** számított mező tartalmazza azt a kifejezést, amely az adózási szint kódját adja vissza (**Normál**, **Csökkenetett**, **Nincs** vagy **Egyéb**). szöveges értékként, amely lekérhető a **Model.Data.summary** adatforrásból futásidőben.
 
-  ![A Formátumtervező lap a paraméterezett hívások megtanulásához szükséges adatmodell részleteit jeleníti meg.](media/er-calculated-field-type-03.png)
+    ![A Formátumtervező lap a paraméterezett hívások megtanulásához szükséges adatmodell részleteit jeleníti meg.](media/er-calculated-field-type-03.png)
 
 6. Bontsa ki a **Model**.**Data2** elemet.
 7. Bontsa ki a **Model**.**Data2.Summary2** elemet.
    
-   A **Model**.**Data2.Summary2** adatforrás úgy van konfigurálva, hogy csoportba rendezze a **Model.Data.Summary** adatforrás tranzakcióadatait adózási szinten (ezt a **Model.Data.Summary.Level** számított mező adja vissza), és kiszámítsa az összesítéseket.
+    A **Model**.**Data2.Summary2** adatforrás úgy van konfigurálva, hogy csoportba rendezze a **Model.Data.Summary** adatforrás tranzakcióadatait adózási szinten (ezt a **Model.Data.Summary.Level** számított mező adja vissza), és kiszámítsa az összesítéseket.
 
-  ![A Formátumtervező lap a Model.Data2.Summary2 adatforrás részletes adatait jeleníti meg.](media/er-calculated-field-type-04.png)
+    ![A Formátumtervező lap a Model.Data2.Summary2 adatforrás részletes adatait jeleníti meg.](media/er-calculated-field-type-04.png)
 
 8. Tekintse át a **Model**.**Data2.Level1**, **Model**.**Data2.Level2** és **Model**.**Data2.Level3** számított mezőket. Ezeket a számított mezőket a **Model**.**Data2.Summary2** rekordlista szűrésére használja a rendszer, és csak az adott adózási szintet képviselő rekordokat adja vissza.
 9. Zárja be a **Formátumtervező** lapot.
@@ -309,7 +309,7 @@ Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia k
 A kezdeti és a továbbfejlesztett ER formátumot futtathatja, hogy meggyőzpdjön arról, hogy a konfigurált paraméterezett számított mezők megfelelően működnek.
 
 ### <a name="import-er-configurations"></a>ER-konfigurációk importálása
-Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az áttekintett konfigurációkat. Ha már elvégezte az [Elektronikus jelentéskészítési konfigurációkat importálása a Regulatory Configuration Service szolgáltatásból](rcs-download-configurations.md) lépéseit, használja a konfigurált ER-tárolót, a korábban tárgyalt konfigurációk importálásához környezetébe. Máskülönben kövesse az alábbi lépéseket:
+Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az áttekintett konfigurációkat. Ha már elvégezte az [Elektronikus jelentéskészítési (ER) konfigurációkat importálása a Regulatory Configuration Service (RCS) szolgáltatásból](rcs-download-configurations.md) lépéseit, használja a konfigurált ER-tárolót, a korábban tárgyalt konfigurációk importálásához környezetébe. Máskülönben kövesse az alábbi lépéseket:
 
 1. Válassza ki a **DEMF** vállalatot és az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** lehetőséget.
 2. Válassza a **Jelentéskészítési konfigurációk** elemet.
@@ -339,4 +339,4 @@ Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az átt
 8. A generált kimenetek tartalmának összehasonlítása.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
+[Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)

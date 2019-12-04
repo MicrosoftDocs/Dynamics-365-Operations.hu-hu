@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250438"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773622"
 ---
 # <a name="project-mobile-applications-overview"></a>Project-mobilalkalmazások áttekintése
 
@@ -45,4 +45,7 @@ A Saját időnyilvántartások (mobiltelefonra optimalizált) és Általam felü
 
 ## <a name="for-more-information"></a>További információ
 
-További részletekért tekintse át a [Microsoft Dynamics 365 Project Timesheet mobilalkalmazás](project-timesheet.md), [Projekt időbejegyzése]( project-time-entry-mobile-workspace.md), [Munkaidő-nyilvántartások mobileszközön](Mobile-timesheets.md) és [Egyéni mezők alkalmazása a Projekt-ifőnyilvántartás mobilalkalmazásban](custom-fields-mobile.md) részeket.
+- [Projekt-időnyilvántartás mobilalkalmazás](project-timesheet.md)
+- [Projekt időbejegyzése]( project-time-entry-mobile-workspace.md)
+- [Projekthez tartozó időnyilvántartások mobileszközön](Mobile-timesheets.md)
+- [Egyéni mezők megvalósítása a Microsoft Dynamics 365 Project Timesheet mobilalkalmazás számára iOS és Android rendszeren](custom-fields-mobile.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009376"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772988"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (Common Data Service 1.0)
 
@@ -34,9 +34,9 @@ A vevő nem látja a Microsoft Dynamics 365 Talent alkalmazást a Microsoft Dyna
 
 **Felbontás**
 
-A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköréhez a Microsoft PowerApps szolgáltatásban.
+A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköréhez a Microsoft Power Apps szolgáltatásban.
 
-1. A rendszergazdának, aki a PowerApps 2. csomag licenccel rendelkezik, meg kell nyitnia a [PowerApps felügyeleti központot](https://preview.admin.powerapps.com/).
+1. A rendszergazdának, aki a Power Apps 2. csomag licenccel rendelkezik, meg kell nyitnia a [Power Apps felügyeleti központot](https://preview.admin.powerapps.com/).
 2. Válassza a **Környezetek** lehetőséget, majd válassza ki a megfelelő környezetet a Talent számára.
 3. A **Biztonság** lapon a **Környezeti szerepkörök** lapon válassza a **Környezetkészítő** lehetőséget.
 

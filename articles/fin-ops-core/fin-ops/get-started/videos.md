@@ -3,7 +3,7 @@ title: Videók
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Finance and Operations alkalmazásokra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: josaw1
 manager: AnnBe
-ms.date: 10/20/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: fb14ffa500fcf84030eca075545716a79d7b2b27
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635103"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781850"
 ---
 # <a name="videos"></a>Videók 
 
@@ -82,7 +82,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 
 ### <a name="customize-the-app"></a>Az alkalmazás testreszabása
 - [Egyéni mezők hozzáadása](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
-- [A PowerApps beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+- [A Power Apps beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 ### <a name="expenses"></a>Kiadás
 - [Költséggel kapcsolatos gyakorlat](https://youtu.be/Ocy-MsTvEE0)
@@ -101,6 +101,9 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 ### <a name="organization-administration"></a>Szervezeti adminisztráció
 
 - [Dokumentumkezelés](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
+### <a name="revenue-recognition"></a>Bevétel elszámolása
+- [A bevételelszámolás használata](https://youtu.be/v3amIsiqvoo)
 
 ### <a name="tax-engine"></a>Adómotor
 

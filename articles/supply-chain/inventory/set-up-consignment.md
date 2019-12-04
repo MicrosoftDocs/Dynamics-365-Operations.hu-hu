@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549999"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813846"
 ---
 # <a name="set-up-consignment"></a>Szállítmány beállítása
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549999"
 
 Ez a témakör azt mutatja be, hogyan kell konfigurálni a bejövő bizományosi készlet műveleteit.
 
-A bizományosi árukészlet olyan készlet, amely a szállító tulajdonában van, de a tárolása az Ön telephelyén történik. Ha készen áll a felhasználására vagy a készlet használatára, átveszi a készlet tulajdonjogát. Ez a témakör a bizományosi folyamatok engedélyezéséhez szükséges beállításokat ismerteti. A bizományosi folyamatok beállításával kapcsolatos további tudnivalókért lásd: [Consignment](consignment.md).
+A bizományosi árukészlet olyan készlet, amely a szállító tulajdonában van, de a tárolása az Ön telephelyén történik. Ha készen áll a felhasználására vagy a készlet használatára, átveszi a készlet tulajdonjogát. Ez a témakör a bizományosi folyamatok engedélyezéséhez szükséges beállításokat ismerteti. A bizományosi folyamatok beállításával kapcsolatos további tudnivalókért lásd: [Bizományosi viszony beállítása](consignment.md).
 
 ## <a name="inventory-owners"></a>Készlettulajdonosok
 Fizikai bejövő bizományosi készlet rögzítéséhez meg kell határozni a szállító-tulajdonost. Ez a **készlettulajdonos** oldalon történik. Ha bejelöli a **szállítói számlát**, ezzel létrehozza a **Név** és **Tulajdonos** mezők alapértelmezett értékeit. Az a **tulajdonos** mezőben lévő érték látható a szállító számára, ezért érdemes úgy módosítani, hogy a szállítói számla nevei ne legyenek könnyen felismerhetők külső felhasználók számára. A **tulajdonos** mezőt lehet módosítani, de csak addig a pontig, amikor menti a **készlettulajdonos** rekordot. A **Név** mezőt a rendszer automatikusan beírja annak a félnek a neve alapján, akihez a szállítói számla hozzá van rendelve, és ez nem módosítható.
@@ -49,4 +49,4 @@ A **készlettulajdonos-változási**napló arra szolgál, hogy rögzítse, amiko
 [![készlet tulajdonosváltozási naplója](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a bizományosi folyamatokban.
-Ha az Ön szállítói a szállítói együttműködési felületet használják, ezt arra is felhasználhatják, hogy nyomon kövessék az Ön telephelyén lévő készlet felhasználását. A szállítóknak a szállítói együttműködésben való beállítására vonatkozó további tudnivalókat lásd: [- szállítói együttműködés felhasználóinak biztonsági konfigurációja](../procurement/configure-security-vendor-portal-users.md).
+Ha az Ön szállítói a szállítói együttműködési felületet használják, ezt arra is felhasználhatják, hogy nyomon kövessék az Ön telephelyén lévő készlet felhasználását. A szállítóknak a szállítói együttműködésben való beállítására vonatkozó további tudnivalókat lásd: [Szállítói portál felhasználói biztonsága](../procurement/configure-security-vendor-portal-users.md).

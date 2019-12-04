@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1fac239524d4873a782e6a3d177a573a382d0f6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 55853418eacd179b7bb50b7e4385300bdcb27abe
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552038"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812902"
 ---
 # <a name="create-an-onboarding-template-by-using-dynamics-365-talent---onboard"></a>Felvételi sablon létrehozása a Dynamics 365 Talent – Onboard használatával
 
@@ -59,6 +59,6 @@ A Microsoft Dynamics 365 Talent: Onboard – Onboard számos olyan sablont kín�
 ### <a name="see-also"></a>Lásd még
 
 - [Próbálja ki vagy vásárolja meg az Onboard alkalmazást](https://dynamics.microsoft.com/talent/onboard/)
-- [Újdonságok](./whats-new.md)
-- [Programverzióra vonatkozó megjegyzések](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Támogatás kérése](./talent-support.md)
+- [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
+- [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)

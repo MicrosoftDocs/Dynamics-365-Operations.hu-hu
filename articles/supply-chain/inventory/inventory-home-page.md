@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c286587add6cb38f5fe2728e29fe8b3ac528165
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250783"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814330"
 ---
 # <a name="inventory-management-overview"></a>Készletgazdálkodás áttekintése
 
@@ -48,10 +48,10 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
-Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
+Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="inventory-accounting"></a>Készletkönyvelés 
-További tudnivalókért lásd: [Készletkönyvelés a költséggazdálkodásban](../cost-management/inventory-close.md).
+További információ: [Készletzárás](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Ellátási lánchoz és gyártáshoz kapcsolódó blogok
 A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a készletkezelésről és az egyéb megoldásokról.

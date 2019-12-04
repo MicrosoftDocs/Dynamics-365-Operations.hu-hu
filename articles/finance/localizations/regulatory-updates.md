@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653204"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770384"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -82,11 +82,11 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      április 2019.          |   10.0.1      | Magyarország      |  Magyarország: Online számlázás v.1.1 2019  |
 |      április 2019.          |   10.0.1      | Japán      |  2019 – japán naptári korszak változása  |
 |      április 2019.          |   10.0.1      |    Oroszország     |A 2018-as földadóbevallás módosításai |
-|      április 2019.          |   10.0.1      |    Oroszország     |[A 2019-es ingatlanadó-bevallás módosításai](rus-assessed-tax-declaration.md)|
+|      április 2019.          |   10.0.1      |    Oroszország     |[Kiszabott adóbevallás](rus-assessed-tax-declaration.md)|
 |      április 2019.          |   10.0.1      |    Oroszország     |A 2019-es szállításiadó-bevallás módosításai  |
-|      április 2019.          |   10.0.1      |    Oroszország     |[Áfa bevallási formátummódosítások 2019-től](rus-VAT-declaration.md) |
+|      április 2019.          |   10.0.1      |    Oroszország     |[Áfabevallás](rus-VAT-declaration.md) |
 |      április 2019.          |   10.0.1      |    Oroszország     |Áfa bevallási formátummódosítások 2019-től (bevételi és kiadási számlakönyvek) |
-|      április 2019.          |   10.0.1      |    Egyesült Királyság     |[Áfakimutatás elküldési módosítások (Adó digitalizálása)](emea-gbr-mtd-vat-integration.md)    |    
+|      április 2019.          |   10.0.1      |    Egyesült Királyság     |[Finance and Operations előkészítése az MTD for VAT szolgáltatással történő integrációhoz](emea-gbr-mtd-vat-integration.md)    |    
 |      március 2019.          |   10.0.0      |    Ausztria   |   A Kammerumlage (A beszerzési illeték) 2019-es változásai    |
 |      március 2019.          |   10,0,0      |    Brazília    |     SPED EFD hozzájárulások - 004 és 005 elrendezés  |
 |      március 2019.          |   10,0,0      |    Malajzia     |Malajzia lecseréli GST-t SST forgalmi adóval        |

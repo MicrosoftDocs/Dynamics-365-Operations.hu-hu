@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019393"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811240"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Perifériák csatlakozás a pénztárhoz (POS)
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019393"
 Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
 
 > [!NOTE]
-> Adott telepítési útmutatásért lásd: [Kiskereskedelmi hardverállomás konfigurációja és telepítése](retail-hardware-station-configuration-installation.md) és [Retail Modern POS önkiszolgáló letöltés/telepítés, és Modern POS és Cloud POS eszköz aktiválása](retail-modern-pos-device-activation.md).
+> Specifikus telepítési utasítások: [A Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md) és [A Retail Modern POS (MPOS) konfigurálása, telepítése és aktiválása](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Kulcsösszetevők
 
@@ -139,7 +139,7 @@ Az funkcionalitás profil az üzlet szintjén van beállítva. Ez használatos a
 
 - **Infókódok** Gyorslap:
 
-    - Az infókódok pénztári kezelésének minden vonatkozása. A részleteket lásd: [Infókódok](info-codes-retail.md).
+    - Az infókódok pénztári kezelésének minden vonatkozása. Részletek: [Információs kódok és információs kódcsoportok](info-codes-retail.md).
 
 - **Nyugta számozása** Gyorslap:
 
