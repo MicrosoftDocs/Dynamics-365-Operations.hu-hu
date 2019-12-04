@@ -18,38 +18,37 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187912"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770850"
 ---
-# <a name="create-dimensions-and-import-dimension-members"></a><span data-ttu-id="92a2a-103">Dimenziók létrehozása és dimenziótagok importálása</span><span class="sxs-lookup"><span data-stu-id="92a2a-103">Create dimensions and import dimension members</span></span>
+# <a name="create-dimensions-and-import-dimension-members"></a><span data-ttu-id="13dc6-103">Dimenziók létrehozása és dimenziótagok importálása</span><span class="sxs-lookup"><span data-stu-id="13dc6-103">Create dimensions and import dimension members</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="92a2a-104">A költségkönyvelés független modul, amely adatokat igényel más modulokból.</span><span class="sxs-lookup"><span data-stu-id="92a2a-104">Cost accounting is an independent module that requires data from other modules.</span></span> <span data-ttu-id="92a2a-105">Az adatok a következők szerint csoportosíthatók:</span><span class="sxs-lookup"><span data-stu-id="92a2a-105">This data is categorized into the following:</span></span>
+<span data-ttu-id="13dc6-104">A költségkönyvelés független modul, amely adatokat igényel más modulokból.</span><span class="sxs-lookup"><span data-stu-id="13dc6-104">Cost accounting is an independent module that requires data from other modules.</span></span> <span data-ttu-id="13dc6-105">Az adatok a következők szerint csoportosíthatók:</span><span class="sxs-lookup"><span data-stu-id="13dc6-105">This data is categorized into the following:</span></span>
 
--  <span data-ttu-id="92a2a-106">Költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="92a2a-106">Cost elements</span></span>
--  <span data-ttu-id="92a2a-107">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="92a2a-107">Cost objects</span></span>
--  <span data-ttu-id="92a2a-108">Statisztikai dimenziók</span><span class="sxs-lookup"><span data-stu-id="92a2a-108">Statistical dimensions</span></span>
+-  <span data-ttu-id="13dc6-106">Költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="13dc6-106">Cost elements</span></span>
+-  <span data-ttu-id="13dc6-107">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="13dc6-107">Cost objects</span></span>
+-  <span data-ttu-id="13dc6-108">Statisztikai dimenziók</span><span class="sxs-lookup"><span data-stu-id="13dc6-108">Statistical dimensions</span></span>
 
-<span data-ttu-id="92a2a-109">Egy **költségösszetevő** a számlatükör valamely költségfüggő elemének felel meg.</span><span class="sxs-lookup"><span data-stu-id="92a2a-109">A **Cost element** corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="92a2a-110">A **költségobjektum** bármilyen típusú pénzügyi dimenziónak felel meg, például termékek, költséghelyek és projektek, amelyekre becslést kíván végezni, költségeket akar rendelni, vagy közvetlenül mérni szeretné őket.</span><span class="sxs-lookup"><span data-stu-id="92a2a-110">A **Cost object** corresponds to any type of financial dimension, such as products, cost centers, and projects that you want to estimate, allocate costs to, or measure directly.</span></span> <span data-ttu-id="92a2a-111">A **statisztikai dimenzió** és a tagjai a nem monetáris tételek regisztrálására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="92a2a-111">A **Statistical dimension** and its members are used to register non-monetary entries.</span></span> <span data-ttu-id="92a2a-112">A statisztikai dimenziótagok felosztási alapként használhatók a költségfelosztásben és a felosztásban</span><span class="sxs-lookup"><span data-stu-id="92a2a-112">Statistical dimension members can be used as an allocation base in cost distribution and allocation</span></span> 
+<span data-ttu-id="13dc6-109">Egy **költségösszetevő** a számlatükör valamely költségfüggő elemének felel meg.</span><span class="sxs-lookup"><span data-stu-id="13dc6-109">A **Cost element** corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="13dc6-110">A **költségobjektum** bármilyen típusú pénzügyi dimenziónak felel meg, például termékek, költséghelyek és projektek, amelyekre becslést kíván végezni, költségeket akar rendelni, vagy közvetlenül mérni szeretné őket.</span><span class="sxs-lookup"><span data-stu-id="13dc6-110">A **Cost object** corresponds to any type of financial dimension, such as products, cost centers, and projects that you want to estimate, allocate costs to, or measure directly.</span></span> <span data-ttu-id="13dc6-111">A **statisztikai dimenzió** és a tagjai a nem monetáris tételek regisztrálására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="13dc6-111">A **Statistical dimension** and its members are used to register non-monetary entries.</span></span> <span data-ttu-id="13dc6-112">A statisztikai dimenziótagok felosztási alapként használhatók a költségfelosztásben és a felosztásban</span><span class="sxs-lookup"><span data-stu-id="13dc6-112">Statistical dimension members can be used as an allocation base in cost distribution and allocation</span></span> 
 
-<span data-ttu-id="92a2a-113">A következő ábra bemutatja a költségkönyvelésben használt dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="92a2a-113">The following diagram illustrates the dimensions that are used in Cost accounting.</span></span>
+<span data-ttu-id="13dc6-113">A következő ábra bemutatja a költségkönyvelésben használt dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="13dc6-113">The following diagram illustrates the dimensions that are used in Cost accounting.</span></span>
 
-<span data-ttu-id="92a2a-114">[![Költségkönyvelés dimenziók](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="92a2a-114">[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span></span>
+<span data-ttu-id="13dc6-114">[![Költségkönyvelés dimenziók](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="13dc6-114">[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span></span>
 
-<span data-ttu-id="92a2a-115">Miután a költségkönyvelésbe importálta az adatokat, különféle szempontok létrehozásához használhatja, hogy információkat nyújthasson a vezetőknek a szervezet minden szintjén.</span><span class="sxs-lookup"><span data-stu-id="92a2a-115">After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization.</span></span> <span data-ttu-id="92a2a-116">Az alábbi témakörök a dimenziók létrehozásával és a dimenziótagok importálásával kapcsolatban nyújtanak tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="92a2a-116">The following topics provide information about creating dimensions and importing dimension members.</span></span> 
+<span data-ttu-id="13dc6-115">Miután a költségkönyvelésbe importálta az adatokat, különféle szempontok létrehozásához használhatja, hogy információkat nyújthasson a vezetőknek a szervezet minden szintjén.</span><span class="sxs-lookup"><span data-stu-id="13dc6-115">After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization.</span></span> <span data-ttu-id="13dc6-116">Az alábbi témakörök a dimenziók létrehozásával és a dimenziótagok importálásával kapcsolatban nyújtanak tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="13dc6-116">The following topics provide information about creating dimensions and importing dimension members.</span></span> 
 
--  [<span data-ttu-id="92a2a-117">Költségösszetevő-dimenziók</span><span class="sxs-lookup"><span data-stu-id="92a2a-117">Cost element dimensions</span></span>](cost-elements.md)
--  [<span data-ttu-id="92a2a-118">Költségösszetevők létrehozása (feladat-útmutató)</span><span class="sxs-lookup"><span data-stu-id="92a2a-118">Create cost elements (Task guide)</span></span>](./tasks/create-cost-elements.md)
--  [<span data-ttu-id="92a2a-119">Költségobjektum-dimenziók</span><span class="sxs-lookup"><span data-stu-id="92a2a-119">Cost object dimensions</span></span>](cost-objects.md)
--  [<span data-ttu-id="92a2a-120">Költségösszetevők létrehozása (feladat-útmutató)</span><span class="sxs-lookup"><span data-stu-id="92a2a-120">Create cost elements (Task guide)</span></span>](./tasks/create-cost-objects.md)
--  [<span data-ttu-id="92a2a-121">Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez</span><span class="sxs-lookup"><span data-stu-id="92a2a-121">Map cost element dimension members to a common set of dimension members</span></span>](map-cost-elements-dimension-members.md)
--  [<span data-ttu-id="92a2a-122">Költségösszetevő-dimenzió feltérképezése (feladat-útmutató)</span><span class="sxs-lookup"><span data-stu-id="92a2a-122">Map a cost element dimension (Task guide)</span></span>](./tasks/map-cost-element-dimension.md)
--  [<span data-ttu-id="92a2a-123">Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok</span><span class="sxs-lookup"><span data-stu-id="92a2a-123">Statistical dimension members and statistical measure provider templates</span></span>](statistical-measure-provider-template.md)
+-  [<span data-ttu-id="13dc6-117">Költségösszetevő-dimenziók</span><span class="sxs-lookup"><span data-stu-id="13dc6-117">Cost element dimensions</span></span>](cost-elements.md)
+-  [<span data-ttu-id="13dc6-118">Költségösszetevők létrehozása</span><span class="sxs-lookup"><span data-stu-id="13dc6-118">Create cost elements</span></span>](./tasks/create-cost-elements.md)
+-  [<span data-ttu-id="13dc6-119">Költségobjektum-dimenziók</span><span class="sxs-lookup"><span data-stu-id="13dc6-119">Cost object dimensions</span></span>](cost-objects.md)
+-  [<span data-ttu-id="13dc6-120">Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez</span><span class="sxs-lookup"><span data-stu-id="13dc6-120">Map cost element dimension members to a common set of dimension members</span></span>](map-cost-elements-dimension-members.md)
+-  [<span data-ttu-id="13dc6-121">Költségösszetevő-dimenzió feltérképezése</span><span class="sxs-lookup"><span data-stu-id="13dc6-121">Map a cost element dimension</span></span>](./tasks/map-cost-element-dimension.md)
+-  [<span data-ttu-id="13dc6-122">Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok</span><span class="sxs-lookup"><span data-stu-id="13dc6-122">Statistical dimension members and statistical measure provider templates</span></span>](statistical-measure-provider-template.md)
 
 
 

@@ -17,39 +17,39 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009376"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772988"
 ---
-# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a><span data-ttu-id="a12a1-103">A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (Common Data Service 1.0)</span><span class="sxs-lookup"><span data-stu-id="a12a1-103">Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</span></span>
+# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a><span data-ttu-id="8f1cd-103">A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (Common Data Service 1.0)</span><span class="sxs-lookup"><span data-stu-id="8f1cd-103">Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a12a1-104">**Kibocsátás**</span><span class="sxs-lookup"><span data-stu-id="a12a1-104">**Issue**</span></span>
+<span data-ttu-id="8f1cd-104">**Kibocsátás**</span><span class="sxs-lookup"><span data-stu-id="8f1cd-104">**Issue**</span></span>
 
-<span data-ttu-id="a12a1-105">A vevő nem látja a Microsoft Dynamics 365 Talent alkalmazást a Microsoft Dynamics 365 alkalmazások között.</span><span class="sxs-lookup"><span data-stu-id="a12a1-105">The customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.</span></span>
+<span data-ttu-id="8f1cd-105">A vevő nem látja a Microsoft Dynamics 365 Talent alkalmazást a Microsoft Dynamics 365 alkalmazások között.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-105">The customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.</span></span>
 
-<span data-ttu-id="a12a1-106">**Felbontás**</span><span class="sxs-lookup"><span data-stu-id="a12a1-106">**Resolution**</span></span>
+<span data-ttu-id="8f1cd-106">**Felbontás**</span><span class="sxs-lookup"><span data-stu-id="8f1cd-106">**Resolution**</span></span>
 
-<span data-ttu-id="a12a1-107">A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköréhez a Microsoft PowerApps szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="a12a1-107">The user must be added to the Environment Maker role for the environment in Microsoft PowerApps.</span></span>
+<span data-ttu-id="8f1cd-107">A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköréhez a Microsoft Power Apps szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-107">The user must be added to the Environment Maker role for the environment in Microsoft Power Apps.</span></span>
 
-1. <span data-ttu-id="a12a1-108">A rendszergazdának, aki a PowerApps 2. csomag licenccel rendelkezik, meg kell nyitnia a [PowerApps felügyeleti központot](https://preview.admin.powerapps.com/).</span><span class="sxs-lookup"><span data-stu-id="a12a1-108">The admin user who has a PowerApps Plan 2 license must open the [PowerApps Admin portal](https://preview.admin.powerapps.com/).</span></span>
-2. <span data-ttu-id="a12a1-109">Válassza a **Környezetek** lehetőséget, majd válassza ki a megfelelő környezetet a Talent számára.</span><span class="sxs-lookup"><span data-stu-id="a12a1-109">Select **Environments**, and select the correct environment for Talent.</span></span>
-3. <span data-ttu-id="a12a1-110">A **Biztonság** lapon a **Környezeti szerepkörök** lapon válassza a **Környezetkészítő** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="a12a1-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
+1. <span data-ttu-id="8f1cd-108">A rendszergazdának, aki a Power Apps 2. csomag licenccel rendelkezik, meg kell nyitnia a [Power Apps felügyeleti központot](https://preview.admin.powerapps.com/).</span><span class="sxs-lookup"><span data-stu-id="8f1cd-108">The admin user who has a Power Apps Plan 2 license must open the [Power Apps Admin portal](https://preview.admin.powerapps.com/).</span></span>
+2. <span data-ttu-id="8f1cd-109">Válassza a **Környezetek** lehetőséget, majd válassza ki a megfelelő környezetet a Talent számára.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-109">Select **Environments**, and select the correct environment for Talent.</span></span>
+3. <span data-ttu-id="8f1cd-110">A **Biztonság** lapon a **Környezeti szerepkörök** lapon válassza a **Környezetkészítő** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
 
     ![Környezeti szerepkörök lap](media/environment-roles.png)
 
-4. <span data-ttu-id="a12a1-112">A **Felhasználók** lapon adja hozzá a felhasználót vagy a szervezetet.</span><span class="sxs-lookup"><span data-stu-id="a12a1-112">On the **Users** tab, add the user or your organization.</span></span>
+4. <span data-ttu-id="8f1cd-112">A **Felhasználók** lapon adja hozzá a felhasználót vagy a szervezetet.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-112">On the **Users** tab, add the user or your organization.</span></span>
 
     ![Felhasználók lap](media/environment-maker.png)
 
-5. <span data-ttu-id="a12a1-114">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="a12a1-114">Select **Save**.</span></span>
-6. <span data-ttu-id="a12a1-115">A felhasználónak most be kell jelentkeznie a [Microsoft Dynamics 365](https://home.dynamics.com/) szolgáltatásba.</span><span class="sxs-lookup"><span data-stu-id="a12a1-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
-7. <span data-ttu-id="a12a1-116">Válassza a **Szinkronizálás** elemet a felhasználói alkalmazások frissítéséhez.</span><span class="sxs-lookup"><span data-stu-id="a12a1-116">Select **Sync** to update the user apps.</span></span>
+5. <span data-ttu-id="8f1cd-114">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-114">Select **Save**.</span></span>
+6. <span data-ttu-id="8f1cd-115">A felhasználónak most be kell jelentkeznie a [Microsoft Dynamics 365](https://home.dynamics.com/) szolgáltatásba.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
+7. <span data-ttu-id="8f1cd-116">Válassza a **Szinkronizálás** elemet a felhasználói alkalmazások frissítéséhez.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-116">Select **Sync** to update the user apps.</span></span>
 
     ![Szinkronizálás gomb](media/get-more.png)
 
-    <span data-ttu-id="a12a1-118">A szinkronizálás befejezése után a Talent megjelenik a kezdőlapon.</span><span class="sxs-lookup"><span data-stu-id="a12a1-118">After synchronization is completed, Talent will appear on the home page.</span></span>
+    <span data-ttu-id="8f1cd-118">A szinkronizálás befejezése után a Talent megjelenik a kezdőlapon.</span><span class="sxs-lookup"><span data-stu-id="8f1cd-118">After synchronization is completed, Talent will appear on the home page.</span></span>
