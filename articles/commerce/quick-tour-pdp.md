@@ -1,0 +1,85 @@
+---
+title: A termékrészletek oldalak áttekintése
+description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
+author: anupamar-ms
+manager: annbe
+ms.date: 10/31/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.search.region: Global
+ms.search.industry: ''
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 3b02d50adbfcda27d590bcb87fd9669d67d4a01c
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2697865"
+---
+# <a name="overview-of-product-details-pages"></a><span data-ttu-id="2a99e-103">A termékrészletek oldalak áttekintése</span><span class="sxs-lookup"><span data-stu-id="2a99e-103">Overview of product details pages</span></span>
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="2a99e-104">Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).</span><span class="sxs-lookup"><span data-stu-id="2a99e-104">This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="2a99e-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="2a99e-105">Overview</span></span>
+
+<span data-ttu-id="2a99e-106">A PDP részletes információt nyújt a termékről, és a vevők számára lehetővé teszi a termékopciók például a méret, a stílus és a szín kiválasztását.</span><span class="sxs-lookup"><span data-stu-id="2a99e-106">A PDP provides detailed information about a product, and lets customers select product options such as a size, style, and color.</span></span> <span data-ttu-id="2a99e-107">A PDP-nek meg kell jelenítenie az összes olyan termékre vonatkozó információt, amely a vevőnek a beszerzési döntés meghozatalához szükséges.</span><span class="sxs-lookup"><span data-stu-id="2a99e-107">A PDP should showcase all the product information that a customer requires to make a purchase decision.</span></span>
+
+<span data-ttu-id="2a99e-108">A következő ábrán a PDP egy példája látható.</span><span class="sxs-lookup"><span data-stu-id="2a99e-108">The following illustration shows an example of a PDP.</span></span>
+
+![Példa a termék részleteit tartalmazó oldalra](./media/pdp.PNG)
+
+## <a name="header-and-footer-modules"></a><span data-ttu-id="2a99e-110">Fejléc- és láblécmodulok</span><span class="sxs-lookup"><span data-stu-id="2a99e-110">Header and footer modules</span></span>
+
+<span data-ttu-id="2a99e-111">A PDP felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének.</span><span class="sxs-lookup"><span data-stu-id="2a99e-111">The top of a PDP has a header that shows all the product categories and other pages that the retailer wants customers to browse.</span></span> <span data-ttu-id="2a99e-112">A lap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témájú témákhoz, amelyek érdekesek lehetnek a vevők számára.</span><span class="sxs-lookup"><span data-stu-id="2a99e-112">The bottom of the page has a footer that contains quick links to various topics that might interest customers.</span></span>
+
+## <a name="buy-box-module"></a><span data-ttu-id="2a99e-113">Vásárlásmező modul</span><span class="sxs-lookup"><span data-stu-id="2a99e-113">Buy box module</span></span>
+
+<span data-ttu-id="2a99e-114">A PDP legfontosabb modulja a vásárlásmező modul.</span><span class="sxs-lookup"><span data-stu-id="2a99e-114">The most important module on a PDP is the buy box module.</span></span> <span data-ttu-id="2a99e-115">Ezért az a lap fő szakaszának első eleme.</span><span class="sxs-lookup"><span data-stu-id="2a99e-115">Therefore, it's the first item in the main section of the page.</span></span> <span data-ttu-id="2a99e-116">A vásárlásmező modul egy tárolómodul, és számos modult tárol, amelyek a termék legfontosabb adatait tartalmazzák.</span><span class="sxs-lookup"><span data-stu-id="2a99e-116">A buy box module is a container module and hosts several modules that contain the most important information about the product.</span></span> <span data-ttu-id="2a99e-117">Ezek közé tartozik a termék neve, a termék képei, a leírás, az ár és a termék minősítése.</span><span class="sxs-lookup"><span data-stu-id="2a99e-117">This information includes the product name, product images, the description, the price, and product ratings.</span></span>
+
+<span data-ttu-id="2a99e-118">A vásárlódoboz modul lehetővé teszi a vevő számára a termék opciók kiválasztását (például a méretet, a stílust és a színt), illetve azt, hogy a terméket hozzáadja a kosárhoz.</span><span class="sxs-lookup"><span data-stu-id="2a99e-118">The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart.</span></span> <span data-ttu-id="2a99e-119">Azt is lehetővé teszi, hogy a vevő online vásárolja meg a terméket, és vegye egy üzletben vegye át.</span><span class="sxs-lookup"><span data-stu-id="2a99e-119">It also lets the customer buy the product online and pick it up in a store.</span></span> <span data-ttu-id="2a99e-120">A vásárlás online és az átvétel üzletben modul a Bing Maps alkalmazásprogramozási felületek (API-k) integrációját használja hogy megkeresse a közeli üzleteket vagy üzleteket egy másiik helye, amit az ügyfél meghatároz.</span><span class="sxs-lookup"><span data-stu-id="2a99e-120">The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.</span></span>
+
+<span data-ttu-id="2a99e-121">A vásárlódoboz modulhoz termékazonosító szükséges.</span><span class="sxs-lookup"><span data-stu-id="2a99e-121">A buy box module requires a product ID.</span></span> <span data-ttu-id="2a99e-122">Ez az azonosító az oldal kontextusából van származtatva.</span><span class="sxs-lookup"><span data-stu-id="2a99e-122">This ID is derived from the page context.</span></span> <span data-ttu-id="2a99e-123">Ha egy vásárlómező modult egy olyan oldalhoz ad hozzá, amelyben a lap környezete nem tartalmaz termékazonosítót, akkor az az adatokat nem fogja helyesen megjeleníteni.</span><span class="sxs-lookup"><span data-stu-id="2a99e-123">If a buy box module is added to a page where the page context doesn't include a product ID, it won't render the information correctly.</span></span>
+
+## <a name="product-specifications-module"></a><span data-ttu-id="2a99e-124">Termékleírások modul</span><span class="sxs-lookup"><span data-stu-id="2a99e-124">Product specifications module</span></span>
+
+<span data-ttu-id="2a99e-125">A termékleírások modul a termékkel kapcsolatos további részletek megjelenítésére használható.</span><span class="sxs-lookup"><span data-stu-id="2a99e-125">The product specifications module can be used to showcase additional details about the product.</span></span> <span data-ttu-id="2a99e-126">Ezek a részletek a termékattribútumokból származnak Dynamics 365 Retail alkalmazásból.</span><span class="sxs-lookup"><span data-stu-id="2a99e-126">These details are taken from product attributes in Dynamics 365 Retail.</span></span> <span data-ttu-id="2a99e-127">A termékspecifikációk modulja minden olyan attribútumot megjelenít, amelyben a **látható** tulajdonság **igaz** értékre van állítva.</span><span class="sxs-lookup"><span data-stu-id="2a99e-127">The product specifications module shows every attribute where the **visible** property is set to **true**.</span></span> <span data-ttu-id="2a99e-128">A termékattribútumok beolvasásához szükséges a termékazonosító.</span><span class="sxs-lookup"><span data-stu-id="2a99e-128">It requires a product ID to retrieve the product attributes.</span></span>
+
+## <a name="recommendations-module"></a><span data-ttu-id="2a99e-129">Ajánlatok modul</span><span class="sxs-lookup"><span data-stu-id="2a99e-129">Recommendations module</span></span>
+
+<span data-ttu-id="2a99e-130">A PDP egyik fontos modulja az ajánlatok modul.</span><span class="sxs-lookup"><span data-stu-id="2a99e-130">The recommendations module is an important module on a PDP.</span></span> <span data-ttu-id="2a99e-131">Miközben a vevők böngészik a termékeket, további termék lehetőségeket kell megjeleníteni számukra, hogy megtalálják a megfelelő terméket, és megvásárolhassák azt.</span><span class="sxs-lookup"><span data-stu-id="2a99e-131">While customers browse for products, more product options should be presented to them, so that they can find the correct product and make a purchase.</span></span> <span data-ttu-id="2a99e-132">Ajánlások segítik a vevőket, hogy könnyen felfedezhessék a kapcsolódó tartalmakat, és folytathassák a vásárlást.</span><span class="sxs-lookup"><span data-stu-id="2a99e-132">Recommendations help customers easily discover related content and continue to shop.</span></span>
+
+<span data-ttu-id="2a99e-133">Különböző típusú ajánláslisták érhetők el:</span><span class="sxs-lookup"><span data-stu-id="2a99e-133">Different types of recommendation lists are available:</span></span>
+
+- <span data-ttu-id="2a99e-134">Az **Emberek ezt is szeretik** lista gépi tanuláson alapul.</span><span class="sxs-lookup"><span data-stu-id="2a99e-134">The **People also like** list is based on machine learning.</span></span> <span data-ttu-id="2a99e-135">A többi vevő tranzakciós előzményeit használja a javaslatok biztosítására.</span><span class="sxs-lookup"><span data-stu-id="2a99e-135">It uses the transaction history of other customers to provide recommendations.</span></span> <span data-ttu-id="2a99e-136">Ezt a listát a javaslatok szolgáltatás hozza létre, és a „Vásárlók akik megvásárolták a következőket is megvásárolták…” listákhoz hasonlít.</span><span class="sxs-lookup"><span data-stu-id="2a99e-136">This list is generated by the recommendations service and resembles "Customers who bought this also bought..." lists.</span></span> <span data-ttu-id="2a99e-137">A lista létrehozásához egy termékazonosító szükséges.</span><span class="sxs-lookup"><span data-stu-id="2a99e-137">A product ID is required to generate this list.</span></span>
+- <span data-ttu-id="2a99e-138">A Retail termékeihez konfigurálható egy **Kapcsolódó** lista.</span><span class="sxs-lookup"><span data-stu-id="2a99e-138">A **Related** list can be configured for a product in Retail.</span></span> <span data-ttu-id="2a99e-139">Például egy barna bőr utazás kézitáskához, több bőr kézitáska, iletve más utzaásokhoz készült tásaki is konfigurálható a kapcsolódó listához.</span><span class="sxs-lookup"><span data-stu-id="2a99e-139">For example, for a brown leather travel handbag, more handbags that are leather-based or designed for travel purposes can be configured for the related list.</span></span> <span data-ttu-id="2a99e-140">Más típusú kapcsolódó listák, például a **Tartozékok** és **Több ehhez hasonló** is konfigurálható a Retail alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="2a99e-140">Other types of related lists, such as **Accessories** and **More like this**, can also be configured in Retail.</span></span> <span data-ttu-id="2a99e-141">A lista létrehozásához egy termékazonosító szükséges.</span><span class="sxs-lookup"><span data-stu-id="2a99e-141">A product ID is required to generate this list.</span></span> <span data-ttu-id="2a99e-142">Ha tehát egy kezdőlaphoz adják hozzá, és a lap környezete nem tartalmaz termékazonosítót, akkor a lista üres lesz.</span><span class="sxs-lookup"><span data-stu-id="2a99e-142">Therefore, if it's added to a home page, where the page context doesn't include a product ID, the list will be empty.</span></span>
+- <span data-ttu-id="2a99e-143">Algoritmus alapján léterhozott ajánlási listák listák, például **Népszerű**, **Legnépszerűbb** és **Új** használhatók a PDP-ken.</span><span class="sxs-lookup"><span data-stu-id="2a99e-143">Algorithmically generated recommendation lists, such as **Trending**, **Best Selling**, and **New**, can be used on PDPs.</span></span> <span data-ttu-id="2a99e-144">Annak ellenére, hogy ezek a listák nem közvetlenül kapcsolódnak a PDP termékeihez, egy másik módot kínálnak arra, hogy a vevők könnyebben megtalálják azokat a termékeket, amelyek érdekesek lehetnek számukra.</span><span class="sxs-lookup"><span data-stu-id="2a99e-144">Although these lists might not be directly related to the product on the PDP, they are another way to help customers find products that might interest them.</span></span> <span data-ttu-id="2a99e-145">Az ilyen típusú listákhoz nem szükséges termékazonosító.</span><span class="sxs-lookup"><span data-stu-id="2a99e-145">These types of lists don't require a product ID.</span></span> <span data-ttu-id="2a99e-146">Ezek általános listák, amelyek a webhelyen tapasztalható különböző vásárlási szokások alapján jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="2a99e-146">They are generic lists that are generated based on shopping patterns across the site.</span></span>
+- <span data-ttu-id="2a99e-147">A Szerkesztői listák manuálisan válogatott listák.</span><span class="sxs-lookup"><span data-stu-id="2a99e-147">Editorial lists are manually curated lists.</span></span> <span data-ttu-id="2a99e-148">Előfordulhat például, hogy egy kiskereskedő úgy dönt, hogy manuálisan szeretné összeállítani a bemutatni kívánt termékek listáját.</span><span class="sxs-lookup"><span data-stu-id="2a99e-148">For example, a retailer might decide to manually curate lists of products that it wants to showcase.</span></span>
+
+## <a name="ratings-and-reviews-module"></a><span data-ttu-id="2a99e-149">Értékelések és vélemények modul</span><span class="sxs-lookup"><span data-stu-id="2a99e-149">Ratings and reviews module</span></span>
+
+<span data-ttu-id="2a99e-150">Az értékelések és vélemények modul a más vevők által adott értékelésekez és véleményeket jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="2a99e-150">The ratings and reviews module shows ratings and reviews that have been provided by other customers.</span></span> <span data-ttu-id="2a99e-151">Azt is lehetővé teszi, hogy a vevő értéklést írjon a termékről.</span><span class="sxs-lookup"><span data-stu-id="2a99e-151">It also lets a customer write his or her own review of the product.</span></span> <span data-ttu-id="2a99e-152">Ezenkívül tartalmaz egy hisztogramot, amely a termék minősítési tendenciáját jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="2a99e-152">Additionally, it includes a histogram that shows the ratings trend for the product.</span></span> <span data-ttu-id="2a99e-153">További részletekért lásd: [Minősítések és értékelések áttekintése](ratings-reviews-overview.md).</span><span class="sxs-lookup"><span data-stu-id="2a99e-153">For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).</span></span>
+
+## <a name="marketing-modules"></a><span data-ttu-id="2a99e-154">Marketing modulok</span><span class="sxs-lookup"><span data-stu-id="2a99e-154">Marketing modules</span></span>
+
+<span data-ttu-id="2a99e-155">Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bármilyen marketingmodul hozzáadható.</span><span class="sxs-lookup"><span data-stu-id="2a99e-155">If marketing content is unique to a specific product, any marketing module can be added to the PDP.</span></span> <span data-ttu-id="2a99e-156">A marketingmodulokat egy PDP-hez a lap „gazdaggá tétele” révén lehet hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="2a99e-156">You can add marketing modules to a PDP by "enriching" the page.</span></span> 
+
+## <a name="additional-resources"></a><span data-ttu-id="2a99e-157">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="2a99e-157">Additional resources</span></span>
+
+[<span data-ttu-id="2a99e-158">Kezdőlap áttekintése</span><span class="sxs-lookup"><span data-stu-id="2a99e-158">Overview of the home page</span></span>](quick-tour-home-page.md)
+
+[<span data-ttu-id="2a99e-159">Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése</span><span class="sxs-lookup"><span data-stu-id="2a99e-159">Overview of default category landing page and search results page</span></span>](category-search-page-overview.md)
+
+[<span data-ttu-id="2a99e-160">Kosár és pénztár oldalainak áttekintése</span><span class="sxs-lookup"><span data-stu-id="2a99e-160">Overview of cart and checkout pages</span></span>](quick-tour-cart-checkout.md)
+
+[<span data-ttu-id="2a99e-161">A fiókkezelési oldalak áttekintése</span><span class="sxs-lookup"><span data-stu-id="2a99e-161">Overview of account management pages</span></span>](quick-tour-account-management.md)
