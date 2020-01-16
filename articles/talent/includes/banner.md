@@ -1,1 +1,2 @@
-
+> [!IMPORTANT]
+> <span data-ttu-id="dd44b-101">Dynamics 365 Talent: Attract és Onboard alkalmazások megszűnnek.</span><span class="sxs-lookup"><span data-stu-id="dd44b-101">Dynamics 365 Talent: Attract and Onboard apps are being retired.</span></span> <span data-ttu-id="dd44b-102">Tudjon meg többet a [Hamarosan megszűnő Dynamics 365 Talent: Attract és Onboard alkalmazásokról](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).</span><span class="sxs-lookup"><span data-stu-id="dd44b-102">Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).</span></span>

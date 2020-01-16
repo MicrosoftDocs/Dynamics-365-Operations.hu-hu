@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Felhőbeli telepítés
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Felhőbeli telepítések rendszerkövetelményei
+                - name: Rendszerkövetelmények a Retail ügyfélösszetevőihez
                   href: get-started/system-requirements.md
                 - name: Helyszíni telepítés
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Előzetes funkciók a Retail 10.0.7-es verziójában
+                - name: Retail 10.0.7-es verzió
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail 10.0.6-os verzió
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail 10.0.5-ös verzió
-                  href: get-started/whats-new-10-0-5.md
                 - name: Új vagy módosult elemek a korábbi verziókban
                   items:
                     - name: Új vagy módosult elemek a Finance and Operations kezdőlapján
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations alkalmazás 10.0.5-ös verziója (2019. október)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations 10.0.4-es verziója (2019. július)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Eltávolított vagy elavult funkciók
@@ -788,11 +782,9 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Kiskereskedelmi hierarchiák
               href: retail-hierarchies.md
-            - name: Attribútumok és attribútumcsoportok
+            - name: Attribútumok és attribútumcsoportok kezelése
               href: attribute-attributegroups-lifecycle.md
-            - name: Attribútumok létrehozása és kezelése
-              href: create-manage-attributes.md
-            - name: Retail termékek beállítása
+            - name: Kiskereskedelmi termékek beállítása
               href: set-up-retail-products.md
             - name: Termék létrehozása
               href: ../supply-chain/pim/tasks/create-product.md?toc=/dynamics365/retail/toc.json
@@ -1146,13 +1138,15 @@
               items:
                 - name: Pénztárgép funkciói
                   href: localizations/emea-swe-cash-registers.md
-                - name: A Retail POS integrációja ellenőrzőegységekkel
+                - name: Ellenőrzőegység integrációs mintája Svédország esetén
+                  href: localizations/emea-swe-fi-sample.md
+                - name: A Retail POS integrációja ellenőrzőegységekkel (korábbi)
                   href: localizations/retail-sdk-control-unit-sample.md
-        - name: Retail feladatok
+        - name: Kiskereskedelmi feladatok
           items:
             - name: Csatornaspecifikus kereskedelmi megállapodások létrehozása
               href: tasks/base-price-trade-agreements.md
-            - name: Kereskedelmi megállapodások létrehozása kategória-árazási szabályokat segítségével
+            - name: Kereskedelmi megállapodások létrehozása kategóriaárazási szabályok segítségével
               href: tasks/category-pricing-rules-trade-agreements.md
             - name: Funkcióprofilok konfigurálása értékesítési képviselőknek
               href: tasks/configure-functionality-profile-sales-representative.md
