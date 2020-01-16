@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5b56f56f5307c292ced30ec94d178244268c5e68
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772651"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935442"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -57,7 +57,7 @@ A főkönyvi költségvetésbe beépítve további tervezési és költségveté
 -   **Munkaerő-költségvetések** – A munkaerő költségvetésének megtervezése költségelőirányzat-összetevőt tartalmaz beosztások, kompenzációs csoportok stb. tervezéséhez.
 -   **Tárgyi eszközök költségvetései** – A tárgyi eszközök adatai alapján ki tudja számolni a tervezett értékcsökkenést és bejegyezhet egyéb, a tárgyi eszközhöz kapcsolódó tervezett tranzakciókat.
 -   **Projekt-költségvetések** – A projektmodulban részletes projekt-előrejelzéseket hozhat létre. A projektek előrejelzései részleteket tartalmaznak a tervezett órákról, költségekről, díjakról és cikkekről.
--   **Igény-előrejelzés** – Az előzményi tranzakciós adatok alapján megbecsülheti a jövőbeli készletigényt és igény-előrejelzéseket hozhat létre.
+-   **Igény-előrejelzés** – A tranzakcióadatok előzményei alapján megbecsülheti a jövőbeli készletigényt és igény-előrejelzéseket hozhat létre.
 
 További információ arról, hogy hogyan hívhatók be tervezési adatok más modulokból a költségvetési tervekbe: [A költségvetés-tervezés integrációja egyéb modulokkal](budget-planning-integration-other-modules.md).
 

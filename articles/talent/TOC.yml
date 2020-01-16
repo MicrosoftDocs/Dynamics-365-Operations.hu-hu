@@ -8,6 +8,12 @@
         - name: Új vagy módosult elemek a Talent szolgáltatásban
           href: whats-new.md
           items:
+            - name: 2019. december 17.
+              href: whats-new-talent-december-17-2019.md
+            - name: 2019. december 12.
+              href: whats-new-talent-december-12-2019.md
+            - name: 2019. december 3.
+              href: whats-new-talent-december-3-2019.md
             - name: 2019. november 19.
               href: whats-new-talent-november-19-2019.md
             - name: 2019. november 12.
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 2019. szeptember 10.
               href: whats-new-talent-september-12-2019.md
-            - name: 2019. augusztus 27.
-              href: whats-new-talent-august-28-2019.md
-            - name: 2019. augusztus 22.
-              href: whats-new-talent-august-21-2019.md
-            - name: 2019. augusztus 13.
-              href: whats-new-talent-august-15-2019.md
-            - name: 2019. augusztus 6.
-              href: whats-new-talent-august-7-2019.md
             - name: Újdonságok (2019-es archívum)
               items:
+                - name: 2019. augusztus 27.
+                  href: whats-new-talent-august-28-2019.md
+                - name: 2019. augusztus 22.
+                  href: whats-new-talent-august-21-2019.md
+                - name: 2019. augusztus 13.
+                  href: whats-new-talent-august-15-2019.md
+                - name: 2019. augusztus 6.
+                  href: whats-new-talent-august-7-2019.md
                 - name: 2019. július 30.
                   href: whats-new-talent-july-31-2019.md
                 - name: 2019. július 23.
@@ -134,53 +140,51 @@
           href: hr-copy-instance.md
         - name: Talent-környezetek eltávolítása
           href: remove-talent-environment.md
-        - name: Az Onboard alkalmazás létesítése
+        - name: Szolgáltatások kezelése
+          href: access-preview-feature.md
+        - name: Az Onboard létesítése
           href: modular-app-tech-faq.md
-        - name: PowerApps alkalmazások beágyazása
+        - name: Power Apps alkalmazások beágyazása
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR és Common Data Service
+        - name: Core HR-entitások a Common Data Service szolgáltatásban
           href: CoreHREntities.md
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
     - name: Személyzet felvétele a szervezetéhez az Attract alkalmazással
       items:
-        - name: Az Attract melyik verziója?
+        - name: Az Attract-verzió kiválasztása
           href: attract-comprehensive-hiring.md
         - name: Az Attract funkciói és lehetőségei
           href: attract-overview.md
-        - name: Gyakori kérdések
-          items:
-            - name: Gyakran ismételt kérdések LinkedIn-integrációval kapcsolatosan
-              href: attract-linkedin-faq.md
         - name: Rendszerbeállítások megadása
           items:
             - name: Vállalat adatainak beállítása
               href: admin-settings-attract.md
-            - name: Felhasználói jogosultságok beállítása
+            - name: Felhasználói engedélyek beállítása
               href: security-attract.md
-            - name: Szolgáltatások kezelése
-              href: access-preview-feature.md
             - name: A karrierwebhely beállítása
               href: career-site.md
-            - name: Broadbean integráció engedélyezése
+            - name: Broadbean-integráció engedélyezése
               href: attract-admin-job-board-settings.md
-            - name: E-mail beállítások megadása
+            - name: E-mail-beállítások megadása
               href: attract-configure-email-settings.md
             - name: A LinkedIn integrációjának beállítása
               href: attract-admin-linkedin.md
-        - name: Toborzófolyamat létrehozása
+            - name: Gyakran ismételt kérdések LinkedIn-integrációval kapcsolatosan
+              href: attract-linkedin-faq.md
+        - name: Toborzási folyamat létrehozása
           items:
-            - name: Folyamatsablon létrehozása
+            - name: Toborzásifolyamat-sablon létrehozása
               href: process-templates-attract.md
-            - name: Tevékenységek a toborzási folyamatban
+            - name: Tevékenységek hozzáadása a toborzási folyamathoz
               href: activities-attract.md
-            - name: E-mail-sablonok
+            - name: E-mail-sablonok létrehozása
               href: email-templates.md
             - name: Elemzési jelentések használata
               href: analytic-reports.md
         - name: Állások létrehozása és feladása
           items:
-            - name: Feladat létrehozása
+            - name: Állás létrehozása
               href: creating-jobs-attract.md
             - name: Álláshirdetések feladása a LinkedIn felületén
               href: attract-post-jobs-to-linkedin.md
@@ -197,10 +201,10 @@
             - name: Jelöltforrások nyomon követése
               href: source-tracking.md
             - name: Intelligens ajánlások
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Interjúk beállítása
           items:
-            - name: Interjú ütemezése és visszajelzés
+            - name: Interjúk ütemezése
               href: interview-scheduling-feedback.md
         - name: Ajánlat készítése
           items:
@@ -433,7 +437,7 @@
       items:
         - name: Munkaterületekre beágyazott Power BI
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: A Talent bővítése a PowerApps és a Microsoft Flow segítségével – Példa-forgatókönyvek
+        - name: Talent bővítése a Power Apps és Power Automate szolgáltatásokkal
           href: extensibility-examples.md
         - name: Mobilalkalmazás
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Saját csapat mobil munkaterülete
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Mobil munkaterületek közzététele
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: A toborzási adatok változásainak nyomon követése
           href: process-auditing.md
         - name: Bővíthetőség az Attract szolgáltatásban
