@@ -17,49 +17,49 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a542d6987280451910b4ff3bcfb3a109a0e028c6
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: c5fb59a9798e2cddfb75b71235ee7754e54b0e28
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697612"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945770"
 ---
-# <a name="enable-location-based-store-detection"></a><span data-ttu-id="35ce4-103">Helyalapú áruházészlelés engedélyezése</span><span class="sxs-lookup"><span data-stu-id="35ce4-103">Enable location-based store detection</span></span>
+# <a name="enable-location-based-store-detection"></a><span data-ttu-id="ee42c-103">Helyalapú áruházészlelés engedélyezése</span><span class="sxs-lookup"><span data-stu-id="ee42c-103">Enable location-based store detection</span></span>
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="35ce4-104">Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a hely alapú üzletészlelést a Dynamics 365 Commerce-webhely számára.</span><span class="sxs-lookup"><span data-stu-id="35ce4-104">This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.</span></span>
+<span data-ttu-id="ee42c-104">Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a hely alapú üzletészlelést a Dynamics 365 Commerce-webhely számára.</span><span class="sxs-lookup"><span data-stu-id="ee42c-104">This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="35ce4-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="35ce4-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="ee42c-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="ee42c-105">Overview</span></span>
 
-<span data-ttu-id="35ce4-106">A Commerce szolgáltatás helyalapú áruházészlelés funkciója segítségével az ügyfeleknek a helyük alapján biztosíthat releváns webhelytartalmat.</span><span class="sxs-lookup"><span data-stu-id="35ce4-106">Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location.</span></span> <span data-ttu-id="35ce4-107">Ha a helyalapú áruházészlelés be van kapcsolva, a Commerce megjelenítési szolgáltatása a vevő webböngészőjének IP-címéből származó ország-/régiókódot használja, hogy a vevőt a legjobb földrajzi webhely-konfigurációhoz irányítsa.</span><span class="sxs-lookup"><span data-stu-id="35ce4-107">When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.</span></span>
+<span data-ttu-id="ee42c-106">A Commerce szolgáltatás helyalapú áruházészlelés funkciója segítségével az ügyfeleknek a helyük alapján biztosíthat releváns webhelytartalmat.</span><span class="sxs-lookup"><span data-stu-id="ee42c-106">Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location.</span></span> <span data-ttu-id="ee42c-107">Ha a helyalapú áruházészlelés be van kapcsolva, a Commerce megjelenítési szolgáltatása a vevő webböngészőjének IP-címéből származó ország-/régiókódot használja, hogy a vevőt a legjobb földrajzi webhely-konfigurációhoz irányítsa.</span><span class="sxs-lookup"><span data-stu-id="ee42c-107">When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="35ce4-108">Adatvédelmi nyilatkozat</span><span class="sxs-lookup"><span data-stu-id="35ce4-108">Privacy notice</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="ee42c-108">Adatvédelmi nyilatkozat</span><span class="sxs-lookup"><span data-stu-id="ee42c-108">Privacy notice</span></span>
 
-<span data-ttu-id="35ce4-109">Ha bekapcsolja a helyalapú áruházészlelés funkciót, akkor a program elküldi a vevő böngészőjének adatait a Microsoft helyszolgáltatásának.</span><span class="sxs-lookup"><span data-stu-id="35ce4-109">If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service.</span></span> <span data-ttu-id="35ce4-110">Ezt az információt arra használja a program, ha a vevőnek a saját helyéhez releváns tartalmat nyújtsa.</span><span class="sxs-lookup"><span data-stu-id="35ce4-110">This information is then used to provide the customer content that is relevant to his or her location.</span></span> <span data-ttu-id="35ce4-111">Mind a vevő böngészőjéből küldött információ, mind a vevőnek visszaküldött helyalapú információ az adatvédelmi és cookie-kkal kapcsolatos megfelelési irányelvek hatálya alá tartozik.</span><span class="sxs-lookup"><span data-stu-id="35ce4-111">Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.</span></span>
+<span data-ttu-id="ee42c-109">Ha bekapcsolja a helyalapú áruházészlelés funkciót, akkor a program elküldi a vevő böngészőjének adatait a Microsoft helyszolgáltatásának.</span><span class="sxs-lookup"><span data-stu-id="ee42c-109">If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service.</span></span> <span data-ttu-id="ee42c-110">Ezt az információt arra használja a program, ha a vevőnek a saját helyéhez releváns tartalmat nyújtsa.</span><span class="sxs-lookup"><span data-stu-id="ee42c-110">This information is then used to provide the customer content that is relevant to his or her location.</span></span> <span data-ttu-id="ee42c-111">Mind a vevő böngészőjéből küldött információ, mind a vevőnek visszaküldött helyalapú információ az adatvédelmi és cookie-kkal kapcsolatos megfelelési irányelvek hatálya alá tartozik.</span><span class="sxs-lookup"><span data-stu-id="ee42c-111">Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.</span></span>
 
-## <a name="turn-on-location-based-store-detection"></a><span data-ttu-id="35ce4-112">Helyalapú áruházészlelés bekapcsolása</span><span class="sxs-lookup"><span data-stu-id="35ce4-112">Turn on location-based store detection</span></span>
+## <a name="turn-on-location-based-store-detection"></a><span data-ttu-id="ee42c-112">Helyalapú áruházészlelés bekapcsolása</span><span class="sxs-lookup"><span data-stu-id="ee42c-112">Turn on location-based store detection</span></span>
 
-<span data-ttu-id="35ce4-113">Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgáltatásban, hajtsa végre az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="35ce4-113">To turn on location-based store detection in Commerce, follow these steps.</span></span>
+<span data-ttu-id="ee42c-113">Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgáltatásban, hajtsa végre az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="ee42c-113">To turn on location-based store detection in Commerce, follow these steps.</span></span>
 
-1. <span data-ttu-id="35ce4-114">A szerkesztési eszközben nyissa meg a webhelyét.</span><span class="sxs-lookup"><span data-stu-id="35ce4-114">In the authoring tool, go to your site.</span></span>
-1. <span data-ttu-id="35ce4-115">A bal oldali navigációs ablakban válassza ki a **Webhelykezelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="35ce4-115">In the navigation pane on the left, select **Site Management**.</span></span>
-1. <span data-ttu-id="35ce4-116">Válassza az **Webhelybeállítások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="35ce4-116">Select **Site Settings**.</span></span>
-1. <span data-ttu-id="35ce4-117">Állítsa a **Helyalapú áruházészlelés engedélyezése** beállítást **Be** értékre.</span><span class="sxs-lookup"><span data-stu-id="35ce4-117">Set the **Enable location based store detection** option to **On**.</span></span>
+1. <span data-ttu-id="ee42c-114">A szerkesztési eszközben nyissa meg a webhelyét.</span><span class="sxs-lookup"><span data-stu-id="ee42c-114">In the authoring tool, go to your site.</span></span>
+1. <span data-ttu-id="ee42c-115">A bal oldali navigációs ablakban válassza ki a **Webhelykezelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ee42c-115">In the navigation pane on the left, select **Site Management**.</span></span>
+1. <span data-ttu-id="ee42c-116">Válassza az **Webhelybeállítások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ee42c-116">Select **Site Settings**.</span></span>
+1. <span data-ttu-id="ee42c-117">Állítsa a **Helyalapú áruházészlelés engedélyezése** beállítást **Be** értékre.</span><span class="sxs-lookup"><span data-stu-id="ee42c-117">Set the **Enable location based store detection** option to **On**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="35ce4-118">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="35ce4-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ee42c-118">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="ee42c-118">Additional resources</span></span>
 
-[<span data-ttu-id="35ce4-119">Online áruház áttekintése</span><span class="sxs-lookup"><span data-stu-id="35ce4-119">Online store overview</span></span>](online-store-overview.md)
+[<span data-ttu-id="ee42c-119">A tartománynév konfigurálása</span><span class="sxs-lookup"><span data-stu-id="ee42c-119">Configure your domain name</span></span>](configure-your-domain-name.md)
 
-[<span data-ttu-id="35ce4-120">E-commerce webhely létrehozása</span><span class="sxs-lookup"><span data-stu-id="35ce4-120">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
+[<span data-ttu-id="ee42c-120">Új e-commerce webhely telepítése</span><span class="sxs-lookup"><span data-stu-id="ee42c-120">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
 
-[<span data-ttu-id="35ce4-121">Új e-commerce webhely telepítése</span><span class="sxs-lookup"><span data-stu-id="35ce4-121">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
+[<span data-ttu-id="ee42c-121">E-kereskedelmi webhely létrehozása</span><span class="sxs-lookup"><span data-stu-id="ee42c-121">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
 
-[<span data-ttu-id="35ce4-122">Online webhely társítása csatornával</span><span class="sxs-lookup"><span data-stu-id="35ce4-122">Associate an online site with a channel</span></span>](associate-site-online-store.md)
+[<span data-ttu-id="ee42c-122">Online webhely társítása csatornával</span><span class="sxs-lookup"><span data-stu-id="ee42c-122">Associate an online site with a channel</span></span>](associate-site-online-store.md)
 
-[<span data-ttu-id="35ce4-123">A tartománynév konfigurálása</span><span class="sxs-lookup"><span data-stu-id="35ce4-123">Configure your domain name</span></span>](configure-your-domain-name.md)
+[<span data-ttu-id="ee42c-123">Robots.txt fájlok kezelése</span><span class="sxs-lookup"><span data-stu-id="ee42c-123">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
 
-[<span data-ttu-id="35ce4-124">Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása</span><span class="sxs-lookup"><span data-stu-id="35ce4-124">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
+[<span data-ttu-id="ee42c-124">Felhasználói bejelentkezéshez használt egyéni lapok beállítása</span><span class="sxs-lookup"><span data-stu-id="ee42c-124">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
 
-[<span data-ttu-id="35ce4-125">Felhasználói bejelentkezéshez használt egyéni lapok beállítása</span><span class="sxs-lookup"><span data-stu-id="35ce4-125">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
+[<span data-ttu-id="ee42c-125">Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása</span><span class="sxs-lookup"><span data-stu-id="ee42c-125">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
