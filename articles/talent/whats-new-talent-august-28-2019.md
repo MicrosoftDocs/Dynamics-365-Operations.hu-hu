@@ -18,26 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a405ee96c36dd803fb46894ab58eca9dbfd81b5f
-ms.sourcegitcommit: 097492a9e4f53a5e1fd5385d8764798518326818
+ms.openlocfilehash: 1d7e5be0d9ba5e372e57f06fec77326561196626
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "1927986"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2899243"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-27-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. augusztus 27.)
-
-[!include [banner](includes/banner.md)]
 
 Ez a témakör a Dynamics 365 for Talent új vagy módosított szolgáltatásait írja le.
 
 ## <a name="changes-in-attract"></a>Változások az Attract-ben
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Attract alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-onboard"></a>Változások az Onboard alkalmazásban
 
-Ebben a verzióban kisebb hibajavítások találhatók a Dynamics 365 Talent: Onboard alkalmazáshoz.
+A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalmazza.
 
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 

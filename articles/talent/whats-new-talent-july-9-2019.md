@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023953"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897626"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 9.)
-
-[!include [banner](includes/banner.md)]
 
 Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -36,6 +34,7 @@ Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait ír
 A kiadás a Dynamics 365 Talent: Attract apró hibáinak javításait is tartalmazza.
 
 ### <a name="coming-soon-in-attract"></a>Hamarosan az Attract alkalmazásban
+
 #### <a name="job-approvals-appear-on-the-home-page"></a>A feladatok jóváhagyása megjelenik a kezdőképernyőn
 
 A jóváhagyások az irányítópult **Jóváhagyások** szakaszában jelennek meg. A jóváhagyók megtekinthetik a rájuk váró jóváhagyásokat az **Önhöz rendelt** részen, ahol látható a feladat azonosítója és neve, a többi jóváhagyó és a feladat hozzárendelésének dátuma. Azok a felhasználók, akik elküldenek jóváhagyásra egy feladatot, az **Ön által küldött kérések** szakaszban látják a feladatot, ahol megjelennek azok a jóváhagyók, akiknek még jóvá kell hagyniuk a feladatot.
@@ -50,7 +49,7 @@ A szakaszban ismertetett módosítások a 8.1.2374-ös buildre vonatkoznak.
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 a Finance and Operations szolgáltatáshoz
 
-További információ a Finance and Operations 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 28-es verziójában (2019. július)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+További információ a Finance and Operations 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 28-es verziójában (2019. július)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service – entitástámogatás egyéni mezőkhöz 
 

@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009422"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915201"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Korszerű alkalmazotti belépés és navigálás
 
-[!include [banner](includes/banner.md)]
-
 A Dynamics 365 Talent lehetővé teszi az alkalmazotti és foglalkoztatási adatok hatékony bevitelét. A múltbeli, aktív és jövőbeli alkalmazottak és alvállalkozók esetében gyorsan frissítheti a munkaelőzmények adatait.
 
-Továbbá engedélyezhet egy egyszerűsített navigációs élményt is, hogy gyorsan megtalálhassa a kapcsolódó adatokat, és elvégezhesse a szükséges módosításokat. Ez a funkció jelenleg a sandbox környezetekben érhető el. A funkció bekapcsolásához navigáljon a **Rendszer-adminisztráció > Hivatkozások > Beállítás > Rendszerparaméterek > előnézeti funkciók** ponthoz. Válassza a **Továbbfejlesztett dolgozói képernyő és navigáció** lehetőséget. Ez minden felhasználó számára engedélyezi a változtatásokat. Ezt a beállítást bármikor ki lehet kapcsolni.
+Továbbá engedélyezhet egy egyszerűsített navigációs élményt is, hogy gyorsan megtalálhassa a kapcsolódó adatokat, és elvégezhesse a szükséges módosításokat. Ez a funkció jelenleg minden környezetben elérhető. A szolgáltatás bekapcsolásához lépjen a **Rendszerfelügyelet > Funkciókezelés > Új > Korszerű alkalmazotti belépés > Engedélyezés** lehetőségre. Ez minden felhasználó számára engedélyezi a változtatásokat. Ezt a beállítást bármikor ki lehet kapcsolni.
 
 ## <a name="view-options"></a>Nézet beállításai
 

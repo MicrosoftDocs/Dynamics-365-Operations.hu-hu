@@ -3,7 +3,7 @@ title: A termékéletciklus-állapot áttekintése
 description: A termékéletciklus állapota egy kiadott termék vagy termékváltozat életciklus-állapotát dokumentálja.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813546"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934840"
 ---
 # <a name="product-lifecycle-state-overview"></a>A termékéletciklus-állapot áttekintése
 
@@ -74,11 +74,7 @@ Részletes információkért arról, hogyan lehet a termékéletciklus-állapoto
 
 ## <a name="default-migration-import-and-export"></a>Alapértelmezett áttelepítés, importálás és exportálás 
 
-Az adatentitások nem támogatják a termékéletciklus-állapotokat, és az életciklus-állapot nem állítható be változó állapotra a kiadott termék-adatentitásokon keresztül.
-
--  A korábbi verziókról való áttelepítés esetében az összes termék és a termékváltozat életciklus-állapota üres lesz.  
--  Kiadott termékek importálásakor egy adatentitáson keresztül, a rendszer az alapértelmezett életciklus-állapot fogja alkalmazni a létrehozáskor.  
--  Kiadott termékváltozatok importálásakor egy adatentitáson keresztül, a rendszer a kiadott alaptermék életciklus-állapotát fogja importálni.   
+Az adatentitások támogatják a termékéletciklus-állapotokat, és az életciklus-állapot visszaállítható változó állapotra a kiadott termék-adatentitásokon vagy a kiadott változat adatentitásán keresztül.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Elavult termékek és termékváltozatok keresése 
 

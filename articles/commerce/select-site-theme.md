@@ -3,7 +3,7 @@ title: Webhely témájának kiválasztása
 description: Ez a témakör azt mutatja be, hogyan lehet egy webhely témáját beállítani vagy módosítani a Microsoft Dynamics 365 Commerce megoldásban.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ee56f1b135c71194f5e7c4b2a8f47a82294ea81
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: bcee3a3f29df316dff04cf22acbda7f968778c93
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698119"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914748"
 ---
 # <a name="select-a-site-theme"></a>Webhely témájának kiválasztása
 
@@ -52,6 +52,8 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 ## <a name="additional-resources"></a>További erőforrások
 
 [Embléma hozzáadása](add-logo.md)
+
+[A CSS felülíró fájljainak használata](css-override-files.md)
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 

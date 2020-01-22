@@ -3,7 +3,7 @@ title: Többcsatornás termékajánlások demóadatok
 description: A dokumentum célja, hogy útmutatást adjon a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2226001"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872326"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Többcsatornás termékajánlások demóadatok
 
 A dokumentum célja, hogy útmutatást adjon a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
 
-A többcsatornás termékajánlások termékek szerkesztők által karbantartott vagy program által generált rendezett listájának készletét adják. Ezek a listák több esetben is használhatók, attól függően, hogy milyen üzleti szükséglet van. A termékajánlási listákkal kapcsolatos további tudnivalókat lásd: [Termékajánlások áttekintése.](product-recommendaitons-overview.md)
+A többcsatornás termékajánlások termékek szerkesztők által karbantartott vagy program által generált rendezett listájának készletét adják. Ezek a listák több esetben is használhatók, attól függően, hogy milyen üzleti szükséglet van. A termékajánlási listákkal kapcsolatos további tudnivalókat lásd: [Termékajánlások áttekintése.](../commerce/product-recommendations.md)
 
 A 2. és magasabb szintű Dynamics környezetekben a termékajánlások automatikusan, a vevői adatok alapján kerülnek kiszámításra.
 A termékajánlások demóadatainak használata nem tiltja le a környezetben már kiépített ajánlási megoldásokat, illetve a vonatkozó használati költségeket.
@@ -68,6 +68,6 @@ A kiterjesztés tartalmaz egy RecoMockDataset.csv nevű adatfájlt, amely lehet�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Termékajánlások áttekintése](product-recommendations-overview.md)
+[Termékajánlások áttekintése](../commerce/product-recommendations.md)
 
-[Környezet tervezése](environment-planning.md)
+[Környezet tervezése](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

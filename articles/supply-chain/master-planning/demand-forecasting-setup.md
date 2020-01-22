@@ -3,7 +3,7 @@ title: Igény-előrejelzési beállítások
 description: Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813799"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935491"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -63,7 +63,7 @@ Az igény-előrejelzéshez bármikor hozzáadhat új előrejelzési dimenziókat
 
 Nem minden cikk viselkedik ugyan úgy, igény-előrejelzés szempontjából. Lehet hasonló cikkeket egy cikkfelosztási kulcs alá rendelni, valamint olyan jellemzőket, mint a tranzakció típusa vagy az előrejelzés fajtája, cikkfelosztási kulcsonként is megadhatóak. Kattintson a **Cikkfelosztási kulcsok** menüre az **Igény-előrejelzési paraméterek** lap bal oldalán. 
 
-Az előrejelzés létrehozásához a Supply Chain Management egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studióba:
+Az előrejelzés létrehozásához a Supply Chain Management egy gépi tanulási webszolgáltatást használ. A szolgáltatáshoz való kapcsolódáshoz meg kell adnia a következő adatokat, ha bejelentkezik a Microsoft Azure Machine Learning Studio (klasszikus) termékbe:
 
 -   Az API programozási felület (Telephony Alkalmazásprogramozási Felület) beállítása
 -   URL webszolgáltatási végpont

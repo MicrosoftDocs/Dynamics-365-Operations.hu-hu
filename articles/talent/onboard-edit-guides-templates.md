@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812879"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897120"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Bevezetési útmutatók és sablonok szerkesztése a Dynamics 365 Talent – Onboard szolgáltatásban
+# <a name="edit-onboarding-guides-and-templates"></a>Bevezetési útmutatók és sablonok szerkesztése
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ A módosítások érvényesítése:
 1. A **Tevékenységek** lapon húzza a jobb oldali elemeket a szerkesztési területre.
 2. Az útmutató szakaszokba történő rendezéséhez húzza az **Új szakasz** elemet a szerkesztési területre, és adjon meg egy nevet és opcionálisan egy leírást a szakaszhoz.
 
-    ![[Új szakasz hozzáadása a felvételi útmutatóhoz vagy sablonhoz] (./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Új szakasz hozzáadása egy felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Ha az új alkalmazott számára elvégzendő tevékenységeket szeretne hozzáadni, húzza az **Új tevékenység** elemet a szerkesztési területre, és adja meg a tevékenység nevét és leírását.
 
-    ![[Új tevékenység hozzáadása a felvételi útmutatóhoz vagy sablonhoz] (./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Új tevékenység hozzáadása egy felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Multimédiás tartalom hozzáadása a felvételi útmutatóhoz:
 
@@ -129,7 +129,7 @@ A módosítások érvényesítése:
     - Microsoft Forms-űrlap hozzáadásához húzza a **Microsoft Forms** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, adja meg a Microsoft Forms-űrlap URL-címét, majd adja meg a képernyőterület méretét.
     - Webes tartalmat tartalmazó iframe hozzáadásához húzza a **Webes tartalom (iframe)** elemet a szerkesztési területre, adja meg a tevékenység nevét és leírását, adja meg a webes tartalom URL-címét, majd adja meg a képernyőterület méretét.
 
-    ![[Multimédiás tartalom hozzáadása a felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Multimédiás tartalom hozzáadása egy felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Nem kötelező: az egyes tevékenységektől jobbra található területen a tevékenységet hozzárendelheti egy adott személyhez vagy szerepkörhöz, hozzáadhatja a határidőt és a kapcsolattartót, és hozzárendelheti a kategória színét. Ha egy tevékenységet egy személyhez vagy egy szerepkörhöz rendel, akkor minden egyes személyhez létrejön egy-egy feladat. Ez a feladat az Onboard **Feladatok** menüjében jelenik meg.
 
@@ -148,7 +148,7 @@ Felvehet kapcsolattartókat, akik segíthetik az új alkalmazott sikerességét 
 1. A **Névjegyek** lapon válassza az **Új névjegy** elemet.
 2. A **Csapattag hozzáadása** párbeszédpanelen írja be a kapcsolattartó nevét vagy e-mail-címét, adja meg azt a rövid leírást, amely leírja, hogy a kapcsolattartó milyen módon segít az új alkalmazottnak, majd válassza a **Hozzáadás** elemet. 
 
-    ![[Névjegyek hozzáadása a felvételi útmutatóhoz vagy sablonhoz] (./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Kapcsolattartók hozzáadása egy felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Másik megoldásként a **Javaslatok** között kiválaszthat egy vagy több kapcsolattartót.
 
@@ -169,7 +169,7 @@ Hasznos fájlokat, térképeket és hivatkozásokat adhat a felvételi útmutat�
     - Hivatkozás hozzáadásához válassza a **Hivatkozás** lapot, adja meg a hivatkozás nevét és címét, majd válassza a **Hozzáadás** elemet.
     - Térkép hozzáadásához válassza a **Térkép** lapot, adja meg a térkép nevét és címét, majd válassza a **Hozzáadás** elemet. Az Onboard tartalmazni fogja a megadott cím térképét.
 
-    ![[Erőforrás hozzáadása a felvételi útmutatóhoz vagy sablonhoz] (./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Erőforrás hozzáadása egy felvételi útmutatóhoz vagy sablonhoz](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. A munka mentéséhez válassza a **Mentés** elemet.
 

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 3676a0a1fa77285d0203e8e49725cb1c1b742d39
-ms.sourcegitcommit: 029c1882bef558b6a45843548e94ab8369ed9870
+ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2651711"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2899032"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 30.)
-
-[!include [banner](includes/banner.md)]
 
 Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 

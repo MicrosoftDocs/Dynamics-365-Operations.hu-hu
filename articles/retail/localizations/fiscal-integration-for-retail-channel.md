@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812307"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915247"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>A kiskereskedelmi csatornák pénzügyi integrálásának áttekintése
 
@@ -138,9 +138,14 @@ A Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhető
 - [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan](emea-aut-fi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](emea-cze-fi-sample.md)
+- [Ellenőrzőegység integrációs minta Svédország esetén](./emea-swe-fi-sample.md)
 
 A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
 
-- [Pénztárgép funkciói Franciaország esetén](emea-fra-cash-registers.md)
-- [Pénztárgép funkciói Norvégia esetén](emea-nor-cash-registers.md)
-- [A Retail POS integrációjára vonatkozó minta ellenőrzőegységekkel Svédországnál](./retail-sdk-control-unit-sample.md)
+
+- [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
+- [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
+
+A Retail SDK csomagban elérhető alábbi örökölt pénzügyi integrációs funkciók nem használják a pénzügyi integrációs keretrendszert, és a későbbi frissítésekkel elavulttá válnak:
+
+- [Ellenőrzőegység integrációs mintája Svédország esetén (örökölt)](./retail-sdk-control-unit-sample.md)

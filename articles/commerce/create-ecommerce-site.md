@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697129"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945835"
 ---
 # <a name="create-an-e-commerce-site"></a>E-commerce webhely létrehozása
 
@@ -59,20 +59,16 @@ Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőr
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Online áruház áttekintése](online-store-overview.md)
+[A tartománynév konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+
+[Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
-
-[Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
-
-[Szerkesztési kezdőlap – áttekintés](authoring-home-overview.md)
-
-[Új webhelyoldal hozzáadása](add-new-page.md)

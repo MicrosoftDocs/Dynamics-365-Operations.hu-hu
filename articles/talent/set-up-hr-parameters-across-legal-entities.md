@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 9c205973097c82a4b131a3784392fa8d8cb5ecba
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5bd9684b8d5a5847ac212f2ff5214a6bcc3326fd
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812810"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897050"
 ---
 # <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>Több jogi entitásra kiterjedő személyzeti (HR) paraméterek beállítása
-
-[!include [banner](includes/banner.md)]
 
 A több vállalatra kiterjedő rekordokhoz, mint például a Pozíció rekordok, megosztott paramétereket kell megadnia. A cikk ismerteti a jogi személyek közötti emberi erőforrás-paraméterek beállítását.
 

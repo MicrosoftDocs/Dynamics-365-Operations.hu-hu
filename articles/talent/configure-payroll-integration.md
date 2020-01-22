@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 075b2bdfa08bb190f66b6d60074e1263feedcf70
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251039"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898533"
 ---
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talent és a Dayforce között
-
-[!include [banner](includes/banner.md)]
+# <a name="configure-payroll-integration-between-talent-and-dayforce"></a>Bérlista-integráció konfigurálása a Talent és a Dayforce között
 
 A Microsoft Dynamics 365 Talent és Ceridian Dayforce integrálásához több konfigurációs lépést szükséges elvégezni, melyek ebben a témakörben vannak ismertetve. Be kell állítania az integrációt a Talent a Dayforce alkalmazásokban is a fizetési időszak feldolgozása előtt.
 

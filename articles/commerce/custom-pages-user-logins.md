@@ -3,7 +3,7 @@ title: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697566"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945559"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 
@@ -136,11 +136,11 @@ A „Regisztráció és bejelentkezés” irányelvnek az egyéni lap informáci
 1. A korábban konfigurált **Regisztráció és bejelentkezés** irányelv navigációs ablakában válassza ki a **Lapelrendezések** elemet.
 1. Válassza ki az **Egyesített bejelentkezési vagy regisztrációs lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Írja be például a **www.\<my domain\>.com/sign-in?preloadscripts=true** kifejezést.
+1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
 1. Válassza ki a **Helyi fiók regisztrációs lapja** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Írja be például a **www.\<my domain\>.com/sign-in?preloadscripts=true** kifejezést.
+1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
 1. A **Felhasználói attribútumok** szakaszban hajtsa végre a következő lépéseket:
 
@@ -156,7 +156,7 @@ A „Profilszerkesztés” irányelvnek az egyéni lap információival való fr
 1. A korábban konfigurált **Profilszerkesztés** irányelv navigációs ablakában válassza ki a **Lapelrendezések** elemet.
 1. Válassza ki **Profilszerkesztés lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Írja be például a **www.\<my domain\>.com/sign-in?preloadscripts=true** kifejezést.
+1. Írja be a teljes profilszerkesztési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
 1. A **Felhasználói attribútumok** szakaszban hajtsa végre a következő lépéseket:
 
@@ -170,12 +170,14 @@ Az „Új jelszó létrehozása” irányelvnek az egyéni lap információival 
 1. A korábban konfigurált **Új jelszó létrehozása** irányelv navigációs ablakában válassza ki a **Lapelrendezések** elemet.
 1. Válassza ki az **Új jelszó létrehozása lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Írja be például a **www.\<my domain\>.com/sign-in?preloadscripts=true** kifejezést.
+1. Írja be a teljes jelszóvisszaállítási URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
 1. Válassza ki a **Fiókellenőrzés lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Írja be például a **www.\<my domain\>.com/sign-in?preloadscripts=true** kifejezést.
+1. Írja be a teljes jelszóvisszaállítás-érvényesítési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Címkék és leírások alapértelmezett szöveges karakterláncainak testreszabása
 
@@ -193,15 +195,15 @@ A global.json fájl frissítése és a módosítások közzététele után az ú
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Online áruház áttekintése](online-store-overview.md)
-
-[E-commerce webhely létrehozása](create-ecommerce-site.md)
+[A tartománynév konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
 
+[E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
+
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

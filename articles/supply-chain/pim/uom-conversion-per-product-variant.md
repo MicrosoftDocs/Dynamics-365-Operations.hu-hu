@@ -3,12 +3,12 @@ title: Mértékegység-átváltás termékváltozatonként
 description: Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249448"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935099"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mértékegység-átváltás termékváltozatonként
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon. Egy példát is tartalmaz a beállításra.
 
 Ez a funkció lehetővé teszi a vállalatoknak, hogy különböző egységátváltásokat határozzanak meg ugyanazon termék változataira. Ez a témakör a következő példát használja. Egy vállalat pólókat értékesít kicsi, közepes, nagy és extra nagy méretben. A pólót termékként határozzuk meg, a különböző méreteket pedig a termék változataiként definiáljuk. A pólókat dobozokba szortírozzák, egy dobozba öt póló kerül, kivéve az extra nagy méretet, mert itt csak négy pólóknak van hely egy dobozban. A vállalat nyomon szeretné követni a pólók különböző változatait a **Darab** egyégben, de a pólókat a **Doboz** egységben forgalmazza. A készletegység és az értékesítési egység közötti átváltás 1 doboz = 5 darab, kivéve a nagyméretű változatnál, ahol az átváltás 1 doboz = 4 darab.
-
-## <a name="setup"></a>Beállítás
-
-A paramétereket beállíthatja úgy, hogy a funkció az olyan termékek esetében legyen használatban, amelyek engedélyezve vannak **Minden folyamat** számára, vagy csak az olyan terméknél, amely a **Raktárkezelési folyamatok** számára engedélyezett, a következő beállítással: **Mértékegység-átváltások engedélyezése** beállítás a **Termékinformáció paraméterek** oldalon.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>A termék beállítása egységátváltáshoz változat szerint
 
 Termékváltozatokat csak az ilyen termékekhez lehet létrehozni **Termékaltípus**: **Alaptermék**. További információ: [Alaptermék létrehozása](tasks/create-product-master.md).
 
 A funkció nincs engedélyezve a Tényleges súly folyamatokhoz beállított termékekhez. 
-
-Az alaptermék létrehozása során a **Mértékegység-átváltások engedélyezése** beállítással a **Termékadatok** lapon lehet engedélyezni a mértékegység-átváltást.
 
 A kiadott termékváltozatokkal rendelkező alaptermék létrehozásakor be lehet állítani a változatok szerinti egységátváltásokat. Az egységátváltási lap megnyitására szolgáló menüelemet egy termék vagy termékváltozat kontextusában a következő lapokon találhatja meg.
 

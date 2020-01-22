@@ -3,7 +3,7 @@ title: Egységes termékélmény
 description: Ez a témakör a termékadatok integrációját ismerteti a Finance and Operations alkalmazások és a Common Data Service között.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769729"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914771"
 ---
 # <a name="unified-product-experience"></a>Egységes termékélmény
 
@@ -52,7 +52,7 @@ A termékinformációk tartalmazzák a termékhez és a termék meghatározásá
 
 Finance and Operations | Egyéb Dynamics 365 alkalmazások | Leírás
 -----------------------|--------------------------------|---
-Kiadott termékek V2 | msdyn\_sharedproductdetails | A **msdyn\_sharedproductdetails** entitás tartalmazza a termék meghatározására szolgáló mezőket a Finance and Operations megoldásól, illetve ez tartalmazza a termék pénzügyi és vezetési információit. A következő táblázat a leképezéseket mutatja be.
+Kiadott termékek V2 | msdyn\_sharedproductdetails | A **msdyn\_sharedproductdetails** entitás tartalmazza a termék meghatározására szolgáló mezőket a Finance and Operations megoldásól, illetve ez tartalmazza a termék pénzügyi és vezetési információit. 
 Common Data Service kiadott egyedi termékek | Termék | A **Termék** entitás a termék meghatározására szolgáló mezőket tartalmazza. Tartalmazza az egyedi termékeket (termék altípusú termékeket) és a termékváltozatokat. A következő táblázat a leképezéseket mutatja be.
 Termékszám alapján azonosított vonalkód | msdyn\_productbarcodes | A termék vonalkódja a termékek egyedileg történő azonosítására szolgál.
 Alapértelmezett rendelésbeállítások | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Egységek átváltása | msdyn_ unitofmeasureconversions
 Termékspecifikus mértékegység-átváltás | msdyn_productspecificunitofmeasureconversion
 Termékkategóriák | msdyn_productcategories | A termékkategóriák mindegyike, valamint a szerkezetükkel és a jellemzőikkel kapcsolatos információk a termékkategória entitásban találhatók. 
 Termékkategóriák hierarchiái | msdyn_productcategoryhierarhies | A termékhierarchiákat a termékek kategorizálására vagy csoportosítására használhatja. A kategóriahierarchiák a Common Data Service szolgáltatásban, a kategóriahierarchia entitás használatával érhetők el. 
-Termékkategória-hierarchiához tartozó szerepkörök | msdyn_productcategoryhierarchies | A termékhierarchiák a D365 Finance and Operations különböző szerepköreiben használhatók. Annak megadása, hogy melyik kategóriát használja az egyes szerepkörökben, amelyekben a termékkategória szerepkörentitáshoz használatos a következő hozzárendelésekkel. 
+Termékkategória-hierarchiához tartozó szerepkörök | msdyn_productcategoryhierarchies | A termékhierarchiák a D365 Finance and Operations különböző szerepköreiben használhatók. Annak megadása, hogy melyik kategóriát használja az egyes szerepkörökben, amelyekben a termékkategória szerepkörentitáshoz használatos. 
 Termékkategóriák hozzárendelései | msdyn_productcategoryassignments | Ha terméket szeretne hozzárendelni egy kategóriához, akkor a termékkategória hozzárendelési entitását használhatja.
 
 ## <a name="integration-of-products"></a>Termékek integrálása

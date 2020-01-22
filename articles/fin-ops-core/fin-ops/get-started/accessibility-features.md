@@ -3,7 +3,7 @@ title: Kisegítő lehetőségek funkciói
 description: Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cc63320a3ba055a0c18ab59447f34a86bc0dc87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180852"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872442"
 ---
 # <a name="accessibility-features"></a>Hozzáférhetőségi funkciók
 
@@ -40,7 +40,7 @@ A legtöbb felhasználó számára a mindennapi rendszerhasználatnak része a r
 
 A navigációs ablak menüből (a bal szélső ablak) elérhető lapok egyben a **Keresés** dobozban is elérhetők. Nyomja le az Alt + G billentyűkombinációt a fókusz áthelyezéséhez a **Keresés** mezőre, majd adja meg az oldal leírását vagy nevét.
 
-![A keresési mezőbe beírt „bankszámlák”](media/6d08b0be32808221023e2aa92d69fd70.png "A keresési mezőbe beírt „bankszámlák”")
+![„Bankszámlák” megadva a Keresés mezőben](media/6d08b0be32808221023e2aa92d69fd70.png "„bankszámlák” megadva a Keresés mezőben")
 
 További információ: [Navigációs keresés](navigation-search.md).
 
@@ -55,21 +55,21 @@ Az oldalon megadott minden művelet elérhető a billentyűzetről, a TAB-sorren
 
 Szeretné futtatni az **E-mail értesítési napló** műveletet, amely az **E-mail értesítés** csoportban jelenik meg az **Értékesítési rendelés** lapon a Művelet ablakban.
 
-![E-mail értesítési napló művelete a műveleti ablakban](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "E-mail értesítési napló művelete a műveleti ablakban")
+![E-mail-értesítési napló művelete a Művelet ablakban](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "„E-mail-értesítési napló” művelete a Művelet panelen")
 
 Az egyik lehetőség a billentyűzet használata. Nyomja le a Ctrl+F6 billentyűkombinációt a fókusz Művelet ablakra állításához, és nyomja le a TAB gombot többször a váltáshoz a lapok és a műveletek között, amíg az **E-mail értesítési napló** műveletre nem kerül a fókusz.
 
 Azonban a műveletet közvetlenebből is futtathatja. A lap tetszőleges pontján nyomja le a Ctrl+aposztróf (') kombinációt a műveletek keresőmezőjének megjelenítéséhez.
 
-![Keresőmező műveletekhez](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Keresőmező műveletekhez")
+![Műveletek keresőmezője](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Műveletek keresőmezője")
 
 A keresőmezőbe írja be a szöveget, amely leírja a műveletet. A művelet ekkor elérhetővé válik, és közvetlenül futtatható. Például az **e-mail**, az **értes** (részleges szó) vagy **napló** beírásával az E-mail értesítési naplóhoz „ugorhat”.
 
-![A keresési mezőbe beírt „e-mail”](media/image4.png "A keresési mezőbe beírt „e-mail”")
+![„E-mail” megadva a keresőmezőben](media/image4.png "„e-mail” megadva a keresőmezőben")
 
-![A keresési mezőbe beírt „notific”](media/image5.png "A keresési mezőbe beírt „notific”")
+![„Értes” megadva a keresőmezőben](media/image5.png "„értes” megadva a keresőmezőben")
 
-![A keresési mezőbe beírt „napló”](media/image6.png "A keresési mezőbe beírt „napló”")
+![„Napló” megadva a keresőmezőben](media/image6.png "„napló” megadva a keresőmezőben")
 
 Amikor elkészült, ismét megnyomhatja a Ctrl+aposztróf kombinációt, és a fókusz visszatér a mezőre, amellyel a műveletkeresés futtatása előtt dolgozott.
 
@@ -81,7 +81,7 @@ Nem minden mezőre van szükség a mindennapi rendszerhasználat során annak é
 
 Előfordulhat azonban, hogy egyes, feladatai végrehajtásához gyakran használt mezők nem szerepelnek az alapértelmezett TAB-sorrendben. Ebben az esetben, ha a Windows Narrátort használja, a Windows Narrátor billentyűzetműveletei segítségével érheti el ezeket a mezőket, és vizsgálhatja meg a tartalmukkal. Azt is megteheti, hogy bekapcsolja a **Továbbfejlesztett TAB-sorrend** beállítást a **Beállítások** lapon. A beállítás minden szerkeszthető és csak olvasható mezőt a TAB-sorrend részévé tesz. Ezt követően a lap személyre szabását használhatja egyéni sorrend létrehozásához, és kihagyhatja a mezőket, amelyeknek nem kell a TAB-sorrend részének lenniük. A személyre szabással kapcsolatos további tudnivalókat lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
-![„Továbbfejlesztett lapsorozat” beállítás](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "„Továbbfejlesztett lapsorozat” beállítás")
+![„Továbbfejlesztett TAB-sorrend” beállítás](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "„Továbbfejlesztett TAB-sorrend” beállítás")
 
 ## <a name="form-patterns"></a>Űrlapminták
 
@@ -92,6 +92,8 @@ Az űrlapmintákkal kapcsolatos további tudnivalókért lásd: [Stílusok és m
 ## <a name="responsive-layout"></a>Igényekre reagáló elrendezés
 
 A terméket úgy tervezték, hogy különböző eszközökön és képernyőméretek mellett is működjön, a legkisebb képernyőtől a legnagyobb, legnagyobb felbontású képernyőkig. Az igényekre reagáló elrendezési motornak köszönhetően a felhasználók akár a 200%-os nagyítást is választhatják (bizonyos esetekben több mint 200%-os nagyítás is lehetséges).
+
+Okostelefonokon és más kis képernyővel rendelkező eszközökön a vezérlőelemek és az űrlap elrendezése reszponzívan igazodik, hogy biztosítsa az alapadatok elsőbbségét. Ezek a rugalmas viselkedések magukban foglalhatják a csoportokban és lapokon lévő oszlopok számának csökkentését is egyetlen oszlopra, a rendszerhéj elemeinek elrejtésérét és a műveleti panel összecsukását.
 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Útmutatás a fejlesztők és a vevők számára a könnyű kezelhetőség koncepciójának beépítéséhez a testreszabásaikba
 

@@ -3,7 +3,7 @@ title: Kiskereskedelmi eladási ár kezelése
 description: Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Dynamics 365 Retail rendszerben.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025218"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934771"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -221,11 +221,11 @@ A kiskereskedelmi árak kiszámítására egyetlen árképzési motor használat
 
 A kiskereskedelmi árképzést úgy tervezték, hogy kiskereskedelmi entitásokkal működjön, nem kiskereskedelmi entitások helyett. Konkrétabban arra tervezték, hogy az árakat üzlet, nem pedig raktár szerint állítsa be.
 
-A kiskereskedelmi árképzés motor nem támogatja a következő árképzési funkciókat:
+A kiskereskedelmi árképzés motor **nem támogatja** a következő árképzési funkciókat:
 
-- Ár beállítása a telephely és a raktár dimenziók használatával
-- Attribútumalapú árképzés
-- Szállítói engedmény átadása
+- Az árak beállítása hely vagy hely és raktári tárolási dimenziók szerint nem támogatott. Ha a kereskedelmi megállapodásokban csak a Hely dimenziót adja meg, akkor a kiskereskedelmi árképzés figyelmen kívül hagyja a helyet, és a kereskedelmi megállapodást minden helyre alkalmazza. Ha a hely és raktár módot is megadja, akkor a viselkedés nem definiált/nem tesztelt, mert várható, hogy a kiskereskedők az áruház árcsoportjai segítségével szabályozzák az egyes üzletek/raktárak árait.
+- Az attribútumalapú árképzés nem támogatott.
+- A szállítói engedmény áthárítása nem támogatott.
 
 Emellett **csak** a kiskereskedelmi árképzés motor támogatja a következő árképzési funkciókat:
 

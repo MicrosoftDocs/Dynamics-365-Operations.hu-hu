@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697451"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945513"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Új e-kereskedelmi bérlő telepítése
 
@@ -88,16 +88,16 @@ A fejlesztői környezet eléréséhez nyissa meg az **e-kereskedelem** lapot a 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Online áruház áttekintése](online-store-overview.md)
+[A tartománynév konfigurálása](configure-your-domain-name.md)
 
-[E-commerce webhely létrehozása](create-ecommerce-site.md)
+[E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+
+[Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
-
-[Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)

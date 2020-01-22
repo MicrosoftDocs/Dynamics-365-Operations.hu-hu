@@ -1,6 +1,6 @@
 ---
-title: Váltás a szállítói kialakítások között
-description: ''
+title: Váltás a szállítói arculatok között
+description: Ez a cikk a szállítói adatok Finance and Operations alkalmazások és Common Data Service közötti integrációjának átváltási módjáról ad felvilágosítást.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772364"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902725"
 ---
-# <a name="switch-between-vendor-designs"></a>Váltás a szállítói kialakítások között
+# <a name="switch-between-vendor-designs"></a>Váltás a szállítói arculatok között
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772364"
 
 Ha a szállítói alapadatokhoz más Dynamics 365-alkalmazásokat szeretne használni, és el szeretné különíteni a szállítók adatait a vevőktől, akkor használhatja a szállítói alapkialakítást.  
 
-![Alapszintű szállítói folyamat](media/dual-write-switch-1.png)
+![Alapszintű szállítói folyamat](media/dual-write-vendor-data-flow.png)
  
 Ha a szállítói alapadatokhoz más Dynamics 365-alkalmazásokat szeretné használni, és továbbra is a **Számla** entitást szeretné használni a szállítók adatainak tárolásához; használhatja ezt a bővített szállítói kialakítást. Ebben a kialakításban a bővített szállítói adatokat, például a szállító várakoztatott állapotát vagy a szállítói profilt a **szállítók** entitásban tárolja a Common Data Service. 
 
-![Bővített szállítói folyamat](media/dual-write-switch-2.png)
+![Bővített szállítói folyamat](media/dual-write-vendor-detail.jpg)
  
 A bővített szállítói kialakítás használatához hajtsa végre az alábbi lépéseket: 
  
@@ -60,5 +60,5 @@ A bővített szállítói kialakítás használatához hajtsa végre az alábbi 
     4. A munkafolyamatokat igény szerint valós idejű vagy háttérben futó munkafolyamatként állíthatja be. 
         > [!div class="mx-imgBorder"]
         > ![Átalakítás háttérben futó munkafolyamattá](media/dual-write-switch-8.png)
-    5. Aktiválja a **Számla** és a **Szállító** entitáson létrehozott munkafolyamatokat, hogy a Customer Engagement **Számla** entitását használja majd a szállítói adatok tárolásához. 
+    5. Aktiválja a **Számla** és a **Szállító** entitáson létrehozott munkafolyamatokat, hogy a **Számla** entitását használja majd a szállítói adatok tárolásához. 
  

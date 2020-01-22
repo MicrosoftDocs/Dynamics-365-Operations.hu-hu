@@ -1,9 +1,9 @@
 ---
 title: Hardverméretezési követelmények helyszíni környezetekben
 description: Ez a témakör a hardverméretezési követelményekkel foglalkozik helyszíni környezetekben.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812557"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870264"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Hardverméretezési követelmények helyszíni környezetekben
 
@@ -137,7 +137,7 @@ Az általános elérhetőségű verzió esetén csak egy SSRS-csomópontot lehet
 
 ## <a name="environment-orchestrator"></a>Környezeti szervező
 
-A szervező szolgáltatás kezeli az ön telepítését és az ehhez kapcsolódó LCS-szel való kommunikációt. Ez a szolgáltatás az elsődleges Service Fabric szolgáltatásként van telepítve, és legalább három virtuális gépet igényel. Ez a szolgáltatás egy helyen található a Service Fabric szervezési szolgáltatásokkal. Ezt a fürt terhelési csúcspontja alapján kell méretezni. További információkért lásd: [Service Fabric fürt kapacitástervezési szempontok](/azure/service-fabric/service-fabric-cluster-capacity).
+A szervező szolgáltatás kezeli az ön telepítését és az ehhez kapcsolódó LCS-szel való kommunikációt. Ez a szolgáltatás az elsődleges Service Fabric szolgáltatásként van telepítve, és legalább három virtuális gépet igényel. Ez a szolgáltatás egy helyen található a Service Fabric szervezési szolgáltatásokkal. Ezt a fürt terhelési csúcspontja alapján kell méretezni. További információkért lásd: [Önálló Service Fabric fürttelepítés tervezése és előkészítése](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualizáció és túljegyzés
 

@@ -3,7 +3,7 @@ title: Videólejátszó modul
 description: Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32504351f712c83ba8f593c17d2e51c532374311
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1c78583f39dbacdc7b38e89c33e67ae23731bf8a
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785329"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885901"
 ---
 # <a name="video-player-module"></a>Videólejátszó modul
 
@@ -57,6 +57,8 @@ A háttérvideó-lejátszó modul támogatja a rövid tájékoztató videókat. 
 ## <a name="video-player-module"></a>Videólejátszó modul
 
 A videólejátszó modul egy e-kereskedelmi webhelyről származó videók bemutatására használható. Támogatja az összes lejátszási funkciót, például a lejátszást, szüneteltetést, teljes méretű módot és a feliratokat. A videólejátszó modul a Microsoft akadálymentesítési szabványoknak való megfelelés érdekében támogatja a feliratok testreszabását is. Testreszabhatja például a betűméretet és a háttérszínt.
+
+A videólejátszó modul támogatja a másodlagos hangsávot is. Videó feltöltése esetén másodlagos hangsávot is fel lehet tölteni. A videólejátszó modul lejátszhatja a másodlagos hangsávot, ha a felhasználó kiválasztja azt.
 
 ### <a name="examples-of-video-player-modules-in-e-commerce"></a>Példák az e-kereskedelem videólejátszó moduljaira
 

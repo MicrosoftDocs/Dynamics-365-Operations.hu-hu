@@ -3,12 +3,12 @@ title: Termékazonosítók
 description: Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250599"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934886"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók 
 
@@ -43,6 +43,9 @@ Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Manageme
 A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
 A Common Data Service használata során a Supply Chain Management cikkszáma egyben a termék száma is a Common Data Service rendszerben. A termékváltozatok a Common Data Service-be külön termékként szinkronizálódnak.
+
+> [!NOTE]
+> A termékszám nem kezdődhet „%” jellel.
 
 ## <a name="item-number-and-product-dimensions"></a>Cikkszám és termékdimenziók
 
