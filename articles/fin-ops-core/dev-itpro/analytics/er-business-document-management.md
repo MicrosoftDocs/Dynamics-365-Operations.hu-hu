@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824520"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933908"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
-Az [elektronikus jelentési (ER) áttekintése](general-electronic-reporting.md) a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
+Az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
 
 **Az Üzleti dokumentumkezelés** az ER-keretrendszerre épül, és lehetővé teszi az üzleti felhasználók számára, hogy a szolgáltatások vagy a Microsoft Office 365 szolgáltatások vagy a megfelelő Microsoft Office asztali alkalmazások segítségével szerkesszék az üzleti dokumentumok sablonjait. Az üzleti dokumentumok szerkesztésével módosulhatnak az üzleti dokumentumok megjelenése, és a további adathelyőrzők a forráskód módosítása és az új telepítések nélkül is megadhatók. Az üzleti dokumentumok sablonjainak frissítéséhez nem szükséges az ER keretrendszer ismerete.
 
@@ -59,7 +59,7 @@ A következő, Excel-alapú sablonokat tartalmazó jelentések válnak elérhet�
 
 További jelentések lesznek majd elérhetők. A további jelentésekkel kapcsolatos különleges értesítések küldése külön történik. 
 
-Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban. Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
+Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban. Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
 
 ## <a name="configure-er-parameters"></a>ER-paraméterek konfigurálása
 

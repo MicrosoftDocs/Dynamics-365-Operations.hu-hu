@@ -8,7 +8,9 @@
           href: index.md
         - name: Új vagy módosult elemek
           items:
-            - name: A Platform update 31 (2020. január) előzetes funkciói
+            - name: A Platform update 32 (2020. február) előzetes funkciói
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (2020. január)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (2019. november)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (2018. március)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Új vagy módosult elemek a korábbi verziókban
+              items:
+                - name: Új vagy módosult elemek a Finance and Operations kezdőlapján
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Üzleti események
           items:
             - name: Üzleti események áttekintése
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integráció helyszíni környezetekkel
                   href: analytics/entity-store-on-prem.md
-                - name: Fordított proxyk konfigurálása a helyszíni környezetekhez
+                - name: Proxyk konfigurálása a helyszíni környezetekhez
                   href: deployment/onprem-reverseproxy.md
                 - name: Frissítések alkalmazása helyszíni telepítéshez
                   href: deployment/apply-updates-on-premises.md
@@ -926,9 +932,11 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Ismert problémák
                   href: lifecycle-services/known-issues.md
+                - name: A Lifecycle Services (LCS) szolgáltatás eltávolított vagy elavult funkciói
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services használati útmutató
               href: lifecycle-services/lcs-user-guide.md
-            - name: Előfizetésbecslő
+            - name: Előfizetés-becslő
               href: lifecycle-services/subscription-estimator.md
             - name: A biztonsági beállítások megadása
               href: lifecycle-services/configure-lcs-security.md

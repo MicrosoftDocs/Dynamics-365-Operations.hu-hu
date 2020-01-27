@@ -3,7 +3,7 @@ title: Igény-előrejelzés áttekintése
 description: Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815157"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935514"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -32,7 +32,7 @@ ms.locfileid: "2815157"
 
 Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez.
 
-A kiinduló előrejelzés generálásához a rendszer elküldi az előzménytranzakciók összesítését az Azure rendszerbeli Microsoft Azure Machine Learning szolgáltatásnak. Mivel ez a szolgáltatás nincs megosztva a felhasználók között, egyszerűen, az iparágra jellemző szükségleteknek megfelelően testreszabható. A Supply Chain Management segítségével megjelenítheti és kiigazíthatja az előrejelzést, valamint megtekintheti az előrejelzés pontosságára vonatkozó fő teljesítménymutatókat (KPI-ket).
+A kiinduló előrejelzés generálásához a rendszer elküldi az előzménytranzakciók összesítését az Azure rendszerbeli Microsoft Azure gépi tanulás szolgáltatásnak. Mivel ez a szolgáltatás nincs megosztva a felhasználók között, egyszerűen, az iparágra jellemző szükségleteknek megfelelően testreszabható. A Supply Chain Management segítségével megjelenítheti és kiigazíthatja az előrejelzést, valamint megtekintheti az előrejelzés pontosságára vonatkozó fő teljesítménymutatókat (KPI-ket).
 
 ## <a name="key-features-of-demand-forecasting"></a>Az igény-előrejelzés fő funkciói
 Az igény-előrejelzés legfontosabb funkciói közül néhány:
@@ -51,7 +51,7 @@ Az igény-előrejelzés három fő téma szerint valósul meg:
 -   **Microsoft-technológiák újrafelhasználása** – A Microsoft 2015 februárjában indította el a Machine Learning platformot. Az immár a Microsoft Cortana Analytics Suite programcsomag részét képező Machine Learning prediktív elemzőkísérletek (például igénybecslési kísérletek) gyors és egyszerű elkészítését teszi lehetővé, R vagy Python programnyelven írt algoritmusok és egy egyszerű, ikonok áthúzásával kezelhető felület használatával.
     -   Az Igény-előrejelzési kísérleteket letöltheti, saját üzleti igényeinek megfelelően testreszabhatja, webszolgáltatásként közzéteheti az Azure rendszeren és felhasználhatja őket igény-előrejelzések létrehozására. A kísérletek egy termeléstervező mint vállalati szintű felhasználó Supply Chain Management előfizetésének megvásárlása után tölthetőek le.
     -   A jelenleg elérhető igény-előrejelzési kísérletek bármelyikét letöltheti a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról. Míg az Igény-előrejelzés kísérletek a Supply Chain Management rendszerrel való integrációja automatikus, a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) gyűjteményből letöltött kísérletek integrálását a vevőknek és partnereknek kell kezelniük. Emiatt a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról származó kísérletek – a Finance and Operations Igény-előrejelzési kísérleteivel ellentétben – nem használhatóak fel közvetlenül. A Finance and Operations API alkalmazásprogramozási felületének megfelelően módosítani kell a kísérletek kódját.
-    -   A Microsoft Azure Machine Learning Studio rendszerében saját kísérleteket hozhat létre, ezeket szolgáltatásként közzéteheti az Azure rendszeren, és használatukkal igény-előrejelzéseket generálhat.
+    -   A Microsoft Azure Machine Learning Studio (klasszikus) rendszerében saját kísérleteket hozhat létre, ezeket szolgáltatásként közzéteheti az Azure rendszeren, és használatukkal igény-előrejelzéseket generálhat.
     -   Amennyiben nincs szükség nagy teljesítményre vagy nagy mennyiségű adat feldolgozására, használhatja a Machine Learning ingyenes szintjét. Javasoljuk, hogy mindig erről a szintről induljon, különösen a megvalósítás és a tesztelés fázisában. Ha nagyobb teljesítményre és kiegészítő tárhelyre van szüksége, a Machine Learning standard szintjét használhatja. Ehhez a szinthez Azure előfizetés, valamint további költségek megfizetése szükséges. A Machine Learning használatának költségeiről a [Machine Learnin Studio árképzése](https://aka.ms/machine-learning-price-info) oldalon olvashat részletesen.
 -   **Előrejelzés redukálása bármely szétválasztási pontnál** – Az igény-előrejelzés ezen a funkción alapul, amely mind a függő, mind a független igények előrejelzését lehetővé teszi bármely szétválasztási pontnál.
 

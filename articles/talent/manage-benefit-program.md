@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: a9a26450be97f655df8bc5983e4718341d40a2d6
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 49901445f39a2e1c9541e5482d1b4c96550003a6
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009900"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898596"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
-
-[!include [banner](includes/banner.md)]
 
 Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
 

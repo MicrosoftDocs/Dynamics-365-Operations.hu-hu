@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b705304788f47e4a5d2a9f1b2bf42a065428ea0f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773057"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898133"
 ---
 # <a name="provision-talent"></a>A Talent létesítése
-
-[!include [banner](includes/banner.md)]
 
 Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 

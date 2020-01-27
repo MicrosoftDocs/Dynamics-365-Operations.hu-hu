@@ -3,7 +3,7 @@ title: Fiókkezelési lapok és modulok
 description: Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785380"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885809"
 ---
 # <a name="account-management-pages-and-modules"></a>Fiókkezelési lapok és modulok
 
@@ -58,7 +58,7 @@ A rendelés részletei lap részletes adatokat tartalmaz minden rendelésről, �
 
 ### <a name="user-profile-page"></a>Felhasználói profil lap
 
-A felhasználói profil lap a felhasználói fiók adatait jeleníti meg, például a felhasználó nevét és e-mail-címét. A felhasználói profil modult használja. Annak ellenére, hogy az e-mail-cím nem távolítható el, lehetőség van a szerkesztésére.
+A felhasználói profil lap a felhasználói fiók adatait jeleníti meg, például a felhasználó nevét és e-mail-címét. A felhasználói profil modult használja. Annak ellenére, hogy az e-mail-cím nem távolítható el, lehetőség van a szerkesztésére. A felhasználói profiloldal megjeleníti a felhasználói beállításokat is, amelyek lehetővé teszik, hogy a felhasználó fel- vagy leiratkozzon bizonyos szolgáltatásokról, mint a testreszabás vagy a javaslatok listája. 
 
 ### <a name="user-address-page"></a>Felhasználó címe lap
 

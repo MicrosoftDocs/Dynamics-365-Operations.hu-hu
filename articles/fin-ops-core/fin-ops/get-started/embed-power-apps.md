@@ -3,7 +3,7 @@ title: A Power Apps beágyazása
 description: Ez a témakör leírja, hogyan végezhető el a Power Apps beágyazása az ügyfélbe a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824493"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870241"
 ---
 # <a name="embed-microsoft-power-apps"></a>A Microsoft Power Apps beágyazása
 
@@ -55,7 +55,7 @@ Az alábbi utasítások azt mutatják be, hogyan történik a Power App beágyaz
 
     - A **Név** mező jelzi annak a gombnak vagy lapnak a megjelenő szövegét, amely tartalmazza a beágyazott Power Appot. Gyakran érdemes megismételni a Power App nevét ebben a mezőben.
     - **Alkalmazás azonosítója:** a beágyazni kívánt Power App GUID azonosítója. Az érték lekérdezéséhez keresése meg a Power App alkalmazást a [web.powerapps.com](https://web.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** területen.
-    - A **Power App adatbevitel** elemnél kiválaszthatja azt a mezőt, amely a Power App számára bemenetként továbbítandó adatokat tartalmazza. Arról, hogy a Power App hogyan elérheti el a Finance and Operations-alkalmazásokból továbbított adatokat, a cikk későbbi részén olvashat: [A Finance and Operations-alkalmazások adatait használó Power App felépítése](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps).
+    - A **Power App adatbevitel** elemnél kiválaszthatja azt a mezőt, amely a Power App számára bemenetként továbbítandó adatokat tartalmazza. Arról, hogy a Power App hogyan elérheti el a Finance and Operations-alkalmazásokból továbbított adatokat, a cikk későbbi részén olvashat: [A Finance and Operations-alkalmazások adatait használó Power App felépítése](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps).
     - Válassza azt az **Alkalmazásméretet**, amely megfelel a beágyazott Power App típusának. Válassza ki **Vékony** lehetőséget a mobileszközök számára épített Power Apps, és a **Széles lehetőséget** a táblagépekhez létrehozott Power Apps esetében. Ez biztosítja, hogy a beágyazott Power App számára elég terület kerüljön kiosztásra.
     - A **Jogi személyek** gyorslapon választható ki, hogy melyik jogi személyek számára legyen elérhető a Power App. Alapértelmezés szerint a Power App minden jogi személynél megjelenik.
 
@@ -101,7 +101,7 @@ Beágyazott Power App konfigurációjának módosításához kövesse az alábbi
 
 Egy Power App oldalba ágyazását követően szükség esetén kétféle módon távolíthatja el az alkalmazást:
 
-- Lépjen a **Power App szerkesztése** panelre, a jelen cikk fenti, [Beágyazott Power App szerkesztése](#editing-an-embedded-powerapp) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott Power App adatai láthatók, majd kattintson a **Törlés** gombra.
+- Lépjen a **Power App szerkesztése** panelre, a jelen cikk fenti, [Beágyazott Power App szerkesztése](#editing-an-embedded-power-app) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott Power App adatai láthatók, majd kattintson a **Törlés** gombra.
 - Mivel a beágyazott Power App mentése személyre szabási adatokként történik, az oldal személyre szabásának törlése az összes az oldalba beágyazott Power Apps alkalmazásokat szintén eltávolítja. Vegye figyelembe, hogy a lap személyre szabása végleges, és nem vonható vissza. Ha el szeretné távolítani egy lap személyes beállításait, válassza a **Lehetőségek** elemet, majd kattintson a **Képernyő személyre szabása** elemre. A **Kezelés** menüben válassza a **Törlés** gombot. A böngésző frissítése után az oldal összes korábbi személyre szabási beállítása eltávolításra kerül. A lapok személyre szabással való optimalizációjával kapcsolatos további tudnivalók: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Melléklet

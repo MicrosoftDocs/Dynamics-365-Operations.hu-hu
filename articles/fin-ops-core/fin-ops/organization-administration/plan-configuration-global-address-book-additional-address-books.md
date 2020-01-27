@@ -3,7 +3,7 @@ title: Terv a globális címjegyzékhez és további címjegyzékekhez
 description: Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a globális vagy bármely más címjegyzék beállítása és konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190028"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883411"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Terv a globális címjegyzékhez és egyéb címjegyzékekhez
 
@@ -35,7 +35,7 @@ Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat sorá
 
 A globális címjegyzék használata előtt meg kell határoznia az alapértelmezett értékeket. Ezeket az alapértelmezett értékeket a minden további címjegyzékhez felhasználják, amelyet létrehoz.
 
-**Döntések:**
+**Döntések**
 
 - Milyen sorrendben kell a neveknek megjelennie a **Személy** típusának partnerrekordjai számára? Például egy sorozatot egy vezetéknevet, utónevet, keresztnevet tartalmaz.
 - Törölni kell a felek rekordjait a címjegyzékből a szerepkör-rekord törlésekor? Például ha egy vevő rekord törlődik, törölni kell partnerrekordot is törölni kell?
@@ -58,11 +58,3 @@ Miután létrehozta a globális címjegyzéket, további címjegyzéket hozhat l
 **Döntés:**
 
 - Hány további címjegyzékek kíván létrehozni?
-
-### <a name="address-book-security"></a>Címjegyzék biztonság
-
-Bármikor létrehozhat címjegyzéket, és bármikor beállíthatja a címjegyzékek biztonsági paramétereit. Nem szükséges a címjegyzékhez tartozó biztonsági jogosultság beállítása, de ha nem állítja be, akkor a szervezet összes munkavállalója megtekintheti a címjegyzékben szereplő összes rekordot. Beállíthatja a biztonsági jogosultságota címjegyzéken keresztül a fél rekordjaihoz. Csapatokon alapulnak a biztonsági jogosultságok. Ez a megközelítés garantálja, hogy csak olyan munkavállaló láthatja a címjegyzékben szereplő fél rekordjait, aki hozzá van rendelve egycímjegyzékhez. Ki kell választania azt a csoportot, amely minden egyes címjegyzékhez rendelkezik hozzáféréssel. Minden címjegyzékhez beállíthatja azokat biztonsági jogosultságokat, amelyek engedélyezik vagy megtagadják a hozzáférést az egyes csoportokhoz. Amennyiben hozzáférést biztosít egy csapat számára egy címjegyzékhez, ezen csapat összes tagja láthatja a címjegyzékben szereplő rekordokat. Amennyiben nem biztosít hozzáférést egy csapat számára egy címjegyzékhez, ezen csapat tagji nem láthatják a címjegyzéket és annak tartalmát.
-
-**Döntés:**
-
-- Mely csoportoknak kell hozzáféréssel rendelkeznie minden egyes új címjegyzékhez, amelyet létrehoz?

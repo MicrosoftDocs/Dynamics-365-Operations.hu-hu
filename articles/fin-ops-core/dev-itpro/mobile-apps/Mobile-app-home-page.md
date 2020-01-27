@@ -3,7 +3,7 @@ title: Mobilalkalmazás kezdőoldala
 description: Ez a témakör bemutatja a Finance and Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 89b3762a4d64861bac682c3f519c26e95cd944b2
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: aaff4e3b3bfb079e183a12a5a85e452eed6df51d
+ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781873"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853932"
 ---
 # <a name="mobile-app-home-page"></a>Mobilalkalmazás kezdőoldala
 
@@ -149,3 +149,6 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 </tr>
 </tbody>
 </table>
+
+## <a name="troubleshooting"></a>Hibaelhárítás
+[Mobil platform erőforrásai](platform/mobile-platform-home-page.md#troubleshooting-the-app)

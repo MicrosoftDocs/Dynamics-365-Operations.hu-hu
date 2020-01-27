@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178055"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915177"
 ---
 # <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Ez a témakör azt ismerteti, hol érheti el a pénzügyi jelentéseket, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 
@@ -79,6 +81,18 @@ A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhet�
 | Pénzügyi jelentések megtekintése                | Pénzügyi teljesítmény ellenőrzése          | Nincs hozzárendelve                                                                   |
 
 Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a pénzügyi beszámolókat néhány percen belül. **Megjegyzés:** a sysadmin szerepkör hozzáadódik a pénzügyi beszámoló minden szerepköréhez.
+
+## <a name="report-deletions-and-expirations"></a>Jelentés törlése és lejárata
+A jelentést generáló felhasználók törölhetik saját jelentéseiket. A **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók törölhetik mások jelentéseit. 
+
+A 10.0.7 kiadástól kezdve bevezetésre került a lejárati dátumok fogalma. Az új kötelező funkció engedélyezve lesz a funkciókezelési munkaterületen. Ez a funkció a következő változásokat tartalmazza:
+* Az újonnan létrehozott jelentések automatikusan meg lesznek jelölve a létrehozásuktól számított 90 napos lejárati dátummal
+* A funkció telepítése előttről származó meglévő jelentések mindegyike 90 napos lejárati időszakot kap. A dátum egy rövid időre üresen jelenhet meg, amíg a pénzügyi jelentéskészítési szolgáltatás fut, a jelentés létrejön, és a szolgáltatás frissíti az üres lejárati dátummal rendelkező meglévő jelentéseket. 
+* Ehhez a funkcióhoz a **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók férhetnek hozzá. A **Pénzügyi jelentések lejáratának karbantartása** jogosultságot kapott, **Pénzügyi jelentések karbantartása** feladattal rendelkező felhasználók mindegyike szintén rendelkezik a lejárati idő módosításának képességével. Jelenleg két megőrzési lehetőség áll rendelkezésre - 
+  * 90 napos lejárat
+  * Annak beállítása, hogy a jelentés soha ne járjon le
+
+Egy például 90 napos lejárat kiválasztása az aktuális naptól számítva 90 napot biztosít, amely eltérő viselkedés, mint a jelentéskészítés során beállított, az eredeti létrehozási dátumtól számított 90 napos határidő. 
 
 ## <a name="default-reports"></a>Alapértelmezett jelentések
 A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés található. Minden jelentés az alapértelmezett főszámla kategóriákat használja. Használhatja ezeket a jelentéseket úgy, ahogy vannak, vagy kiindulópontként a pénzügyi beszámolók készítéséhez. A hagyományos pénzügyi kimutatások, például a Bevétel-kimutatás vagy a Mérlegkimutatás mellett az alapértelmezett jelentések között olyan jelentések is vannak, amelyek különböző pénzügyi kimutatásokat tartalmaznak, amelyeket létrehozhat. 

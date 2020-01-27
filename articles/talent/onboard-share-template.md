@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812833"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897143"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Osszon meg tartalmakat más közreműködőkkel a Dynamics 365 Talent – Onboard szolgáltatásban
+# <a name="share-content-with-other-contributors"></a>Osszon meg tartalmakat más közreműködőkkel
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megoszthatja a bevezet�
 
 3. Ha a **Megosztás vele:** területen a címzetteknek képesnek kell lennie az útmutató felülvizsgálatára, megadhatja az **Engedélyezi ezen személyek számára a szerkesztést?** pontnál a **Be** lehetőséget. Ha a címzetteket e-mailben kell értesíteni arról, hogy az útmutatót már megosztotta velük, állítsa az **E-mail-értesítés küldése a címzetteknek** beállítást **Be** értékre.
 
-    ![[Hozzáférés és e-mail-beállítások megadása felvételi útmutatónál](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Hozzáférési és e-mail-beállítások megadása a felvételi útmutatóhoz](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Adjon meg egy nevet vagy e-mail-címet, majd a legördülő listából válassza ki a kívánt címzettet.
 5. A **Hozzáférés kezelése** lapon áttekintheti, illetve módosíthatja, hogy mit tehetnek a címzettek az útmutatóval. A címzett hozzáférésének módosításához a címzett neve melletti legördülő listában válassza ki a **Megtekintés engedélyezve**, **Szerkesztés engedélyezve** vagy az **Eltávolítás** pontot.

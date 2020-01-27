@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813362"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902432"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
@@ -36,7 +36,14 @@ A beszerzési szerződések vonatkozhatnak egy meghatározott termékmennyiségr
 
 A **Beszerzési szerződések** lapon létrehozhat, alkalmazhat és nyomon követhet beszerzési szerződéseket, amelyek az Ön szervezete és beszállítói között léteznek. Például egy beszerzési szerződés létrehozása után azonnal rendelhet is belőle. Minden beszerzési szerződés érvényességi időtartammal rendelkezik, amelyet az azt létrehozó személy határoz meg. Egy beszerzés kézbesítési dátuma a beszerzési szerződés ezen érvényességi időszakába kell essen.  
 
-Miután létrehozott egy beszerzési szerződést, aktiválni kell mielőtt érvényessé válik. Beszerzési szerződés aktiválásához állítsa a **Szerződés megjelölése érvényesként** beállítást **Igen** pozícióba.
+Miután létrehozott egy beszerzési szerződést, aktiválni kell mielőtt érvényessé válik. Beszerzési szerződés aktiválásához állítsa a **Szerződés megjelölése érvényesként** beállítást **Igen** pozícióba. 
+
+Ha meg szeretné akadályozni a beszerzési szerződés felhasználását és megerősítését, akkor jelölje a megállapodást **Lezárt** állapotúként. A változtatás után az állapotot bármikor **Érvényes** értékre frissítheti.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Felelős dolgozók a beszerzési szerződéseken
+
+A beszerzési szerződés osztályozásában azonosíthatja az elsődleges és a másodlagos felelős dolgozót. Ezeket az értékeket az eredményül kapott beszerzési szerződés örökli. Nem kell a felelős dolgozókat hozzáadnia a beszerzési szerződéshez, és azokat közvetlenül, eseti alapon módosíthatja a beszerzési szerződésen. Nem adhat meg másodlagos felelős dolgozót elsődleges felelős dolgozó nélkül, de nem kell rendelkeznie másodlagos felelős dolgozóval. Nem adhatja meg ugyanazt a dolgozót, mint az elsődleges, mind a másodlagos felelős dolgozóként. 
+
 
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 A beszerzési szerződés minden sora egy-egy kötelezettségvállalás bizonyos vásárlásra. A kötelezettségvállalás kielégítésére több különböző beszerzési rendelés sorait is használhatja. A kötelezettségeknek négy típusa van:

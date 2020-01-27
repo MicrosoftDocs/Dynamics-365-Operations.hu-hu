@@ -3,7 +3,7 @@ title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573930"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935387"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
@@ -48,7 +48,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 | Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
 |                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
 |                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
-|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Nincs              |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen              |
 |                                      | Adatintegrálások                                                                         | Igen       | Igen             |
 | Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
 | Pénzgazdálkodás                 |                                                                                           | Igen       | Igen             |
@@ -148,7 +148,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 
 ## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

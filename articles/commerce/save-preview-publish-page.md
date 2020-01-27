@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8c1b82b1b8423c63d442ee581ed0cc8789ee63fd
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 3fff8299ecc6833890b14fa421501236830b2c61
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697888"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945674"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Oldal mentése, megtekintése és közzététele
 
@@ -98,5 +98,6 @@ Egy URL-cím közzétételéhez kövesse az alábbi lépéseket.
 
 [A termékoldal bővítése](enrich-product-page.md)
 
-[Kategória céloldalának gazdagítása](enrich-category-page.md)
+[Kategória céloldalának bővítése](enrich-category-page.md)
 
+[Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)

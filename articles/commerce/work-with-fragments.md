@@ -3,7 +3,7 @@ title: Töredékek használata
 description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d92b9077f8584bfa0710bbaacbc7caa3220baa4a
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698096"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914700"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
@@ -126,3 +126,5 @@ A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonb
 [Sablonok használata](work-with-templates.md)
 
 [Előre beállított elrendezések használata](work-with-layouts.md)
+
+[A közzétételi csoportokkal végzett munka](publish-groups.md)

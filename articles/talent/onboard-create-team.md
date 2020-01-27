@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814835"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897189"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Toborzócsapat létrehozása a Dynamics 365 Talent – Onboard használatával
+# <a name="create-a-hiring-team"></a>Toborzócsapat létrehozása
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +35,7 @@ A Microsoft Dynamics 365 Talent: Onboard alkalmazásban létrehozhat toborzócsa
 2. A **Csapatok** területen válassza a **Hozzáadás** (plusz jel \[**+**\]) csempét.
 3. Az **Új csapat** létrehozása párbeszédpanel **Csapat neve**mezőjében adjon meg egy nevet a toborzócsapatnak.
 
-    ![[Új csapat létrehozása az Onboard alkalmazásban](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[Új csapat létrehozása az Onboardban](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. A **Csapattagok kiválasztása** területen adja meg az egyes csapattagok nevét vagy e-mail címét.
 
@@ -55,7 +55,7 @@ A Microsoft Dynamics 365 Talent: Onboard alkalmazásban létrehozhat toborzócsa
 
 4. Jelölje be az összes olyan felvételi útmutatóhoz tartozó jelölőnégyzetet, amelyet hozzá kíván rendelni a csapathoz, majd válassza a **Hozzáadás** lehetőséget.
 
-    ![[Felvételi útmutatók kijelölése hozzáadáshoz egy csapathoz](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[A csapatba felvenni kívánt felvételi útmutatók kiválasztása](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Felvételi sablonok hozzárendelése egy toborzócsapathoz
 
@@ -63,11 +63,11 @@ A Microsoft Dynamics 365 Talent: Onboard alkalmazásban létrehozhat toborzócsa
 2. Válassza a csapat lehetőséget.
 3. A **Sablonok** lapon válassza a **Sablonok hozzáadása** lehetőséget.
 
-    ![[Sablonok hozzáadása egy csapathoz](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+    ![[Sablonok hozzáadása a csapathoz](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
 
 4. Jelölje be az összes olyan sablonhoz tartozó jelölőnégyzetet, amelyet hozzá kíván rendelni a csapathoz, majd válassza a **Hozzáadás** lehetőséget.
 
-    ![[Sablonok kijelölése hozzáadáshoz egy csapathoz](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[A csapatba felvenni kívánt sablonok kiválasztása](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Lásd még
 

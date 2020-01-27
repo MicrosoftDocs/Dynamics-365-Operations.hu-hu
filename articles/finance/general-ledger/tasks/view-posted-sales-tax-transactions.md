@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f72f12e8afdf190865a77fc6153c0c0a111e5a7
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175450"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888609"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Feladott áfatranzakciók megtekintése
 
@@ -29,13 +29,13 @@ ms.locfileid: "2175450"
 
 Ez a témakör a feladott áfatranzakciók néhány módját ismerteti. Attól függően, hogy mit szeretne megtekinteni, megjeleníthet feladott áfatranzakciókat különböző oldalakról. Ez a feladat az USMF bemutatócéget használja.
 
-# <a name="posted-sales-tax-page"></a>Feladott áfa oldal
+## <a name="posted-sales-tax-page"></a>Feladott áfa oldal
 
 1. A navigációs ablaktáblán lépjen a **Modulok > Adó > Lekérdezések és jelentések > Áfalekérdezések > Feladott áfa** lehetőségre.
 2. Válassza a **Szűrők megjelenítése** lehetőséget, ha szűkíteni szeretné a nézetet a megadott tranzakciókra.
 3. Zárja be a lapot.
 
-# <a name="sales-tax-settlement-periods-page"></a>Áfakiegyenlítési időszakok oldala
+## <a name="sales-tax-settlement-periods-page"></a>Áfakiegyenlítési időszakok oldala
 
 1. A Navigációs ablaktáblán lépjen a **Modulok > Adó > Közvetett adók > Áfa > Áfakiegyenlítési időszakok** elemre.
 2. Bontsa ki az **Időszak időtartamai** szakaszt.
@@ -43,7 +43,7 @@ Ez a témakör a feladott áfatranzakciók néhány módját ismerteti. Attól f
 4. Továbbá szűrheti a feladott áfatranzakciók listáját.
 5. Zárja be a lapot.
 
-# <a name="sales-tax-codes-page"></a>Áfakódok oldala
+## <a name="sales-tax-codes-page"></a>Áfakódok oldala
 
 1. A Navigációs ablaktáblán lépjen a **Modulok > Adó > Közvetett adók > Áfa > Áfakódok** elemre.
 2. A Művelet panelen kattintson az **Áfakód** elemre.

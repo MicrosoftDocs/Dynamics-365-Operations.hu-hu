@@ -3,7 +3,7 @@ title: Az ajánlatkezelés beállítása az Attract szolgáltatásban
 description: Ez a témakör az ajánlatok beállítását írja le a Microsoft Dynamics 365 Talent alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832722"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890555"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Az ajánlatkezelés beállítása az Attract szolgáltatásban
 
@@ -45,9 +45,11 @@ Az ajánlati adat az ajánlatcsomag-sablonban található legkisebb egység. Egy
 
     >[!NOTE]
     > Az **Ajánlati adatok** lapon vannak a **Jelölt adatai** és a **Projekt részletei** szakaszok. Az Attract néhány nem megszokott ajánlatiadat-helyőrzőt is kínál.
-    
+    > 
     > A lapon a különböző ajánlatiadat-helyőrzőket szakaszok rendezik logikai csoportokba. Ezek a szakaszok segíthetnek az ajánlati adatok és az adatok kitöltésének karbantartásában az ajánlat-létrehozási folyamat során.
-
+    > 
+    > Ha értéklistát szeretne létrehozni egy helyőrző számára, töltsön fel egy Excel-táblázatot, amelyben az egyik oszlop a helyőrzővel rendelkezik oszlopfejlécként, és tartalmazza a választási lehetőségek listáját az alatta lévő sorokban. Ha ugyanarra a helyőrzőre egy másik adatszabálykészlet is hivatkozik, akkor gondoskodjon arról, hogy közös értékhalmazzal rendelkezzenek.
+    
 1.  Új ajánlati adatok szakasz létrehozásához kattintson a **Szakasz hozzáadása** lehetőségre, és adjon meg egy egyedi nevet a szakasznak.
 
 1.  Ajánlati adatok helyőrzőinek bármely szakaszhoz való hozzáadásához kattintson az **Ajánlati adatok hozzáadása** lehetőségre, és adjon meg egy egyedi nevet a helyőrzőnek.

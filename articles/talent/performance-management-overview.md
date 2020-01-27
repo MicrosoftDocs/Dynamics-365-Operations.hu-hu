@@ -3,7 +3,7 @@ title: Teljesítménykezelés
 description: A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590505"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921150"
 ---
 # <a name="performance-management"></a>Teljesítménykezelés
-
-[!include [banner](includes/banner.md)]
 
 A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.  
 
@@ -91,6 +89,8 @@ Részletesebb értékelések esetén lekérheti az aktív és a befejezett célo
 Emellett a **Kompetenciák** szakasz segítségével megvitathatja, áttekintheti és értékelheti az alkalmazott kompetenciáit. Tetszőleges számú kompetenciát adhat meg, és kiválaszthatja, hogy értékelni kell-e a kompetenciát. 
 
 Új értékeléseket hozhat létre, amelyek az Ön által elkészített sablonokon alapulnak. Lehet például sablonja a „one-on-one” megbeszélésekhez, a fejlesztési tervekhez vagy az időszakos értékelésekhez is. Kiválaszthatja a sablont, amikor új értékelést hoz létre.
+
+Az ellenőrzések nyomtatásához nyomja meg az **Ellenőrzés nyomtatása** gombot. Ha nem látja a gombot az **Ellenőrzés** lapon, győződjön meg arról, hogy engedélyezte a szolgáltatást a **Funkciókezelés** munkaterületen. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>A teljesítményértékelésekbe foglalható összetevők
 Számos adattípust megadhat a teljesítményértékelésekben. Ide tartoznak az értékelés részletei, a mértékek, a tevékenységek, a minősítések, valamint a láttamozások és a mellékletek.

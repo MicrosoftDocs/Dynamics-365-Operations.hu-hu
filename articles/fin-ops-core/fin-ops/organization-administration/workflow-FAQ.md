@@ -3,7 +3,7 @@ title: Munkafolyamat GYIK
 description: Ez a témakör a munkafolyamat-rendszerrel kapcsolatos gyakori kérdéseket tartalmazza.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772697"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934909"
 ---
 # <a name="workflow-faq"></a>Munkafolyamat GYIK
 
@@ -37,7 +37,7 @@ Minden értesítés egy másik meunelemhez tartozik, de a hasonlóság megtéves
 A munkafolyamat-exportálási funkcióra jelenleg korlátozás vonatkozik, amely megakadályozza, hogy a munkafolyamatok nevei túllépjék a 48 karaktert. Ha egy 48 karakternél hosszabb nevet használ, a „Kiszolgáló nem tudta hitelesíteni a kérelmet” hibát kap és/vagy nem lehetséges a fájlok fájltípus nélküli exportálása. A következő blogbejegyzés további részleteket nyújt: [Munkafolyamat exportálása](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>A munkafolyamat elküldője is jóváhagyhatja a munkafolyamatot?
-Igen, ha így van beállítva, akkor a munkafolyamat elküldője is jóváhagyhatja a munkafolyamatot. Ennek a viselkedésnek a megelőzése érdekében adja meg a **Munkafolyamat-paraméterek > Általános > Jóváhagyó > Beküldő általi jóváhagyás tiltása** beállításhoz az **Igen** értéket.
+Igen, ha így van beállítva, akkor a munkafolyamat elküldője is jóváhagyhatja a munkafolyamatot. Ennek a viselkedésnek a megelőzése érdekében adja meg a **Rendszerfelügyelet > Munkafolyamat >Munkafolyamat-paraméterek > Általános > Jóváhagyó > Beküldő általi jóváhagyás tiltása** beállításhoz az **Igen** értéket.
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Hozzáadhatok olyan figyelmeztetéseket a munkafolyamatokhoz, amelyek értesítik a felhasználókat?
 Az alábbiakban az értesítésre szolgáló figyelmeztetések munkafolyamatokhoz való hozzáadásáról olvashat néhány alapvető részletet:
@@ -51,3 +51,6 @@ Az alábbiakban az értesítésre szolgáló figyelmeztetések munkafolyamatokho
     - [Üzleti események munkafolyamatai](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), amelyekkel a vevő a kívánt értesítést használható folyamatokat aktiválhatja.   
 
 Összefoglalva, ha a felhasználó nem a megfelelő értesítést kapja a Műveleti központból, amikor hozzárendelik a munkafolyamat egyik munkatételét, a [Munkafolyamat üzleti eseményeinek](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) Microsoft Power Automate szolgáltatással való használatával további vagy más értesítések válhatnak elérhetővé.
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>A munkafolyamat-szerkesztő problémákba ütközik az ADFS alatti indítás során 
+Ha az Active Directory összevonási szolgáltatások (AD FS) alatt egy frissített környezetben fut, előfordulhat, hogy a munkafolyamat-szerkesztő nem működik megfelelően. Ha igen, győződjön meg arról, hogy a „https://dynamicsaxworkfloweditor/” URL hozzá van adva a **Microsoft Dynamics 365 for Operations Helyszíni - Munkafolyamat - Natív alkalmazás** tulajdonsághoz az ADFS beállításaiban.

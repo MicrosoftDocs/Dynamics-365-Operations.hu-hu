@@ -3,7 +3,7 @@ title: Szűrők alkalmazása egy tervre
 description: Ez a témakör azt mutatja be, hogyan lehet szűrőket használni egy terven, amikor a Tervezés optimalizálása funkciót használja.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ff9c9f875368fcc4dd62b9c188d489e20a5c7960
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9d1431cc8db6fb28d1f1ec73ee07dd15e78f82e8
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773975"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945419"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 # <a name="apply-filters-to-a-plan"></a>Szűrők alkalmazása egy tervre
 
-A tervezés optimalizálása funkció használata esetén szűrőket alkalmazhat a tervre. A terv szűrője mindig az Alaptervezés futtatásakor lesz alkalmazva. A tervszűrő akkor hasznos, ha egy tervet egy adott cikkcsoportra szeretné korlátozni, és szeretne meggyőződni róla, hogy a létrejövő Alaptervezés részeként nem szerepelnek más cikkek.
+A tervezés optimalizálása funkció használata esetén szűrőket alkalmazhat a tervre. A **Tervszűrő** mindig az alaptervezés futtatásakor lesz alkalmazva. A **Tervszűrő** akkor hasznos, ha egy tervet egy adott cikkcsoportra szeretné korlátozni, és szeretne meggyőződni róla, hogy a létrejövő alaptervezés részeként nem szerepelnek más cikkek.
 
-Ha a tervszűrőt alkalmazta, és az alaptervezés futtatása során a futásidejű szűrő is alkalmazva van, akkor a tervezési futtatásban csak a két szűrő metszete szerepel.
+Ha a **tervszűrőt** alkalmazta, és az alaptervezés futtatása során a futásidejű szűrő is alkalmazva van, akkor a tervezési futtatásban csak a két szűrő metszete szerepel.
+
+A **tervszűrőt** a Tervezési optimalizálás során az **alaptervekből** is el lehet érni.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 

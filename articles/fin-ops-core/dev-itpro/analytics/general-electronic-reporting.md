@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771073"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933932"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -51,12 +51,12 @@ Az ER motor a következő képességekkel rendelkezik:
 
 Az ER két összetevő-típust támogat: **Adatmodell** és **Formátum**.
 
-#### <a name="data-model-components"></a>Adatmodell összetevők
+#### <a name="data-model-and-model-mapping-components"></a>Adatmodell és modell-hozzárendelési összetevők
 
 Az adatmodell-összetevő az adatszerkezet absztrakt ábrázolása. Egy adott üzleti területet leírására szolgál elegendő részletességgel ahhoz, hogy megfeleljen a terület jelentési követelményeinek. Egy adatmodell-összetevő a következő részekből áll:
 
-- Egy adatmodell, ami a területspecifikus üzleti entitások egy csoportja, és egy hierarchikusan felépített kapcsolatrendszer ezen entitások között.
-- Egy modell-leképezés, amely összekapcsolja az alkalmazás-adatforrásokat az adatmodell adott, egyes elemeivel a futási időben, valamint az adatfolyam, és az üzleti adatok feltöltésének szabályai az adatmodell-összetevőbe.
+- <a name="DataModelComponent"></a>Egy adatmodell, ami a területspecifikus üzleti entitások egy csoportja, és egy hierarchikusan felépített kapcsolatrendszer ezen entitások között.
+- <a name="ModelMappingComponent"></a>Egy modell-leképezés, amely összekapcsolja az alkalmazás-adatforrásokat az adatmodell adott, egyes elemeivel a futási időben, valamint az adatfolyam, és az üzleti adatok feltöltésének szabályai az adatmodell-összetevőbe.
 
 Egy adatmodell üzleti entitását egy tároló (rekord) képviseli. Az üzleti entitások tulajdonságai adatelemként (mezőként) jelennek meg. Minden adatelem egyedi névvel, címkével, leírással és értékkel rendelkezik. Az egyes adatelemek értékeit megszerkesztheti, hogy karakterláncként, egész számként, valós számként, dátumként, enumerációként, logikai értékként vagy egyéb változóként legyenek kiolvasva. Továbbá lehet másik rekord vagy rekordlista is.
 
@@ -81,7 +81,7 @@ A modell-hozzárendelés, amely támogatja a bejövő elektronikus dokumentumoka
 
 Minden üzleti tartományhoz készül egy adatmodell-összetevő, amelyet egységes adatforrásként kell használni a jelentésekhez, és amely elkülöníti a jelentéskészítést az adatforrások fizikai megvalósításától. Olyan módon képezi le a tartományspecifikus üzleti fogalmakat és funkciókat, amely hatékonyabbá teszi a jelentésformátum kezdeti tervét és további karbantartását.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Kimenő elektronikus dokumentumok komponensformázása
+#### <a name="FormatComponentOutbound"></a>Kimenő elektronikus dokumentumok komponensformázása
 
 A formátum összetevője a futásidőben létrejövő jelentési kimenet sémája. A rendszer az alábbi elemekből áll:
 
@@ -107,7 +107,7 @@ A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a form
 
 Egyetlen ER-formátumkonfiguráció futtatásához és egy kimenő elektronikus dokumentum létrehozásához meg kell adni a formátumkonfiguráció hozzárendelését.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Bejövő elektronikus dokumentumok komponensformázása
+#### <a name="FormatComponentInbound"></a>Bejövő elektronikus dokumentumok komponensformázása
 A formátum-összetevő a futásidőben importált bejövő dokumentum sémája. A rendszer az alábbi elemekből áll:
 
 - Egy formátumból, amely a bejövő, adatokat tartalmazó elektronikus dokumentum futásidőben importált struktúráját és tartalmát határozza meg Egy formátum-összetevőből, amely különböző formátumú bejövő dokumentumok elemzésére szolgál: ilyen például a szöveg és az XML.
@@ -144,7 +144,7 @@ Az ER formátum összetevőinek hozzáférése függ az ország/terület ISO kó
 
 Előfordulhat, hogy az adatformátum-összetevők különböző verziói más ország/terület ISO kód beállításaival rendelkeznek.
 
-#### <a name="configuration"></a>Konfiguráció
+#### <a name="Configuration"></a>Konfiguráció
 
 Az ER-konfiguráció egy adott ER-összetevő csomagolója. Az összetevő lehet adatmodell-összetevő vagy formátum-összetevő. A konfiguráció tartalmazhatja egy ER-összetevő különböző verzióit. Az egyes konfigurációk tulajdonosa egy konkrét konfigurációs szolgáltatóként van megjelölve. Egy konfiguráció összetevőjének **Vázlat** verziója akkor szerkeszthető, amikor a konfiguráció tulajdonosa aktív szolgáltatóként van beállítva az alkalmazás ER-beállításokban.
 
@@ -154,13 +154,13 @@ A létrehozott formátumbeállítás tartalmaz egy formátum-összetevőt. Ez er
 
 Az ER-konfiguráció megosztásra kerül az alkalmazás vállalatok számára.
 
-#### <a name="provider"></a>Szolgáltató
+#### <a name="Provider"></a>Szolgáltató
 
 Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. A Finance and Operations megoldás részeként kiadott elektromos dokumentumokra érvényes formátumkonfigurációk tulajdonosa a **Microsoft** konfigurációs szolgáltató.
 
 Új ER-szolgáltató regisztrálási módjának megismeréséhez játssza le a feladat-útmutatót: **ER Konfigurációszolgáltató létrehozása és megjelölése aktívként** (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
 
-#### <a name="repository"></a>Tárház
+#### <a name="Repository"></a>Tárház
 
 Egy ER tárház ER konfigurációkat tárol. A következő típusú ER tárházak támogatottak jelenleg: 
 

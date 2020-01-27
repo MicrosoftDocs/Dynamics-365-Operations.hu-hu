@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e1281171a656a73a35d4990fd8a34b35c1c6db8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdfc65d02d4468aee094a92e6760400c5e25af8f
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188280"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888655"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankszámla egyeztetése
 
@@ -64,7 +64,7 @@ Nem lehetséges a banki kivonat és a bankszámla egyeztetése, ha a kivonaton s
 
 8.  A még nem egyeztetett banki tranzakciók megtekintéséhez használja a **Nem egyeztetett banki tranzakciók** jelentést. A bankszámlához tartozó banki kivonat megtekintéséhez használja a **Banki kivonat** jelentést.
 
-# <a name="cancel-bank-statement-reconciliation"></a>Banki kivonat egyeztetésének megszakítása 
+## <a name="cancel-bank-statement-reconciliation"></a>Banki kivonat egyeztetésének megszakítása 
 
 A banki kivonat egyeztetésének megszakítása funkció segítségével megszakíthatja a banki kivonat egyeztetését. A szolgáltatás használatához engedélyezze a **Banki kivonat egyeztetésének megszakítása** funkciót a **Funkciókezelés** munkaterületen. Engedélyeznie kell a **Banki kivonat szerkesztésének engedélyezése** paramétert is. Ehhez lépjen a **Készpénz- és bankkezelés > Beállítás > Készpénz- és bankkezelés paraméterei > Banki egyeztetés** pontra.
  

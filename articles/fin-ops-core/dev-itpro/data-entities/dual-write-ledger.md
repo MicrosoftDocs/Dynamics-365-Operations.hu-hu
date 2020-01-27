@@ -1,6 +1,6 @@
 ---
 title: Integrált főkönyv
-description: Ez a témakör a főkönyvi adatok Finance and Operations és Customer Engagement közötti, a Common Data Service használatával történő integrációját ismerteti.
+description: Ez a témakör a főkönyvi adatok Finance and Operations és más Dynamics 365 alkalmazások közötti, a Common Data Service használatával történő integrációját ismerteti.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 43819e23b167663a51095546cab307e7d7c79a38
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4a0a8f2f52cf9a73efc3557b63793201a7a3f8b8
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771048"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853882"
 ---
-## <a name="integrated-ledger"></a>Integrált főkönyv
+# <a name="integrated-ledger"></a>Integrált főkönyv
 
 [!include [banner](../includes/banner.md)]
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 072564446b74318ffc8e8e6ad4fd16f4421e7854
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772387"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853906"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Közel valós idejű adatintegráció a Common Data Service szolgáltatással
 
@@ -59,7 +59,7 @@ A szinkron, kétirányú, majdnem valós idejű adatmozgáshoz a következő ver
 A Finance and Operations alkalmazások és a Common Data Service közötti integráció az alábbi lépésekkel állítható be.
     
 1. A kettős írású rendszer beállítása a kettős írás előnézetét bejelentő oldalon lévő [lépésenkénti útmutatóban](https://aka.ms/dualwrite-docs) található.
-2. A megoldás [a Finance and Operations, a Common Data Service és a Customer Engagement integrációja](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer-csoportból tölthető le és telepíthető. A csomag öt megoldást tartalmaz:
+2. Töltse le és telepítse a megoldást a [Fin Ops és CDS/CE integráció a kettős írás segítségével](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer-csoportból. A csomag öt megoldást tartalmaz:
 
     + Dynamics365Company
     + CurrencyExchangeRates

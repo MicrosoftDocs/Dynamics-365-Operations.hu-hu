@@ -3,7 +3,7 @@ title: Speciális szűrési és lekérdezési szintaxis
 description: A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanelen vagy az egyezések operátor vagy a rács oszlop fejléce szűrők használata esetén.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180829"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931288"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
@@ -114,6 +114,12 @@ A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek el
 <td>A vesszővel elválasztott értékekkel megegyező értékek</td>
 <td>Írja be az összes keresési feltételt vesszővel elválasztva.</td>
 <td><strong>A, D, F, G</strong> keresése esetén a program az &quot;A&quot;, &quot;D&quot;, &quot;F&quot; és &quot;G&quot; értékeket találja meg. <strong>10, 20, 30, 100</strong> keresése esetén a &quot;10, 20, 30, 100&quot; értékeket találja meg a program.</td>
+</tr>
+<tr>
+<td>"" (kettő dupla idézőjel)</td>
+<td>Üres érték egyeztetése</td>
+<td>Írjon be két egymást követő idézőjelet a mező üres értékeinek szűréséhez.</td>
+<td>A két egymást követő dupla idézőjel (<strong>""</strong>) olyan sorokat keres, amelyeknek nincs értéke az aktuális oszlopban.</td>
 </tr>
 <tr>
 <td>(<span class="code">SQL-utasítás</span>) (Zárójelben SQL utasítás)</td>

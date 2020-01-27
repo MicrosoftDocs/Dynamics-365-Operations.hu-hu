@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814628"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898248"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Felvételi útmutató létrehozása és küldése a Dynamics 365 Talent – Onboard használatával
+# <a name="create-and-send-an-onboarding-guide"></a>Felvételi útmutató létrehozása és küldése
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Miután létrehozta a felvételi útmutatót, elküldheti azt egy újonnan felve
 
 5. Az **Új sablon létrehozás ablakban** a **Kit vesz fel?** részben adja meg az új munkatárs nevét vagy e-mail-címét. Ha az újonnan felvett munkatárs még nincs a rendszerben, válassza a **Hozzáadás most** lehetőséget, majd adja meg az alkalmazott adatait.
 
-    ![[Információ megadása a felvételi útmutatóhoz](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[A felvételi útmutató információinak megadása](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. A **Mi a kezdés dátuma?** alatt válassza ki a kezdés dátumát.
 7. Ha a felvételi útmutatót automatikusan kell kiküldeni az új munkatársnak egy megadott napon, győződjön meg arról, hogy az **Automatikus küldési dátum ütemezése** beállítás be van kapcsolva, majd válassza ki az automatikus küldés dátumát. Ha azonnal el szeretné küldeni az útmutatót, kapcsolja ki a **Automatikus küldési dátum ütemezése** beállítást.
@@ -92,7 +92,7 @@ Nem feltétlenül kell sablonból létrehoznia egy útmutatót. Ha szeretné, l�
 1. A bal oldali menüben válassza ki az **Útmutatók**, majd válassza a **Hozzáadás** gombot (a pluszjelet \[**+**\]).
 2. Az **Új sablon létrehozás ablakban** a **Kit vesz fel?** részben adja meg az új munkatárs nevét vagy e-mail-címét. Ha az újonnan felvett munkatárs még nincs a rendszerben, válassza a **Hozzáadás most** lehetőséget, majd adja meg az alkalmazott adatait.
 
-    ![[Információ megadása a felvételi útmutatóhoz](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[A felvételi útmutató információinak megadása](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. A **Mi a kezdés dátuma?** alatt válassza ki a kezdés dátumát.
 4. Ha a felvételi útmutatót automatikusan kell kiküldeni az új munkatársnak egy megadott napon, győződjön meg arról, hogy az **Automatikus küldési dátum ütemezése** beállítás be van kapcsolva, majd válassza ki az automatikus küldés dátumát. Ha azonnal el szeretné küldeni az útmutatót, kapcsolja ki a **Automatikus küldési dátum ütemezése** beállítást.
@@ -105,7 +105,7 @@ A felvételi útmutató sablonként is menthető. Ily módon időt takaríthat m
 1. A bal oldali menüben válassza a **Guides** lehetőséget.
 2. Válassza ki a **Továbbiak** gombot (három pont \[**…**\]) azon útmutatóhoz, amelyből sablont szeretne létrehozni, majd válassza a **Mentés sablonként** parancsot.
 
-    ![[Egy felvétei útmutató mentése sablonként](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[A felvételi útmutató mentése sablonként](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. Írja be az új sablon nevét a **Mentés új sablonként** ablakba, majd válassza a **Mentés** parancsot.
 
