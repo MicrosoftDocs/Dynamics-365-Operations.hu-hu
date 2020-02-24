@@ -1,0 +1,8 @@
+## <a name="legal-entities-to-cdm_companies"></a><span data-ttu-id="df84c-101">A cdm_companies jogi személyei</span><span class="sxs-lookup"><span data-stu-id="df84c-101">Legal entities to cdm_companies</span></span>
+
+<span data-ttu-id="df84c-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="df84c-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="df84c-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="df84c-103">Finance and Operations field</span></span> | <span data-ttu-id="df84c-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="df84c-104">Map type</span></span> | <span data-ttu-id="df84c-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="df84c-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="df84c-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="df84c-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="df84c-107">NÉV</span><span class="sxs-lookup"><span data-stu-id="df84c-107">NAME</span></span> | = | <span data-ttu-id="df84c-108">cdm_name</span><span class="sxs-lookup"><span data-stu-id="df84c-108">cdm_name</span></span> | 
+<span data-ttu-id="df84c-109">JOGISZEMÉLYAZONOSÍTÓJA</span><span class="sxs-lookup"><span data-stu-id="df84c-109">LEGALENTITYID</span></span> | = | <span data-ttu-id="df84c-110">cdm_companycode</span><span class="sxs-lookup"><span data-stu-id="df84c-110">cdm_companycode</span></span> | 

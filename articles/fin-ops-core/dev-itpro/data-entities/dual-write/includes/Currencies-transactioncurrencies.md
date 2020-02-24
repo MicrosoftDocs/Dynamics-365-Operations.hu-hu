@@ -1,0 +1,12 @@
+## <a name="currencies-to-transactioncurrencies"></a><span data-ttu-id="510bb-101">Pénznemek a tranzakció-pénznemekhez</span><span class="sxs-lookup"><span data-stu-id="510bb-101">Currencies to transactioncurrencies</span></span>
+
+<span data-ttu-id="510bb-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="510bb-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="510bb-103">Forrásszűrő: ((PÉNZNEMKÓD ! = „999”))</span><span class="sxs-lookup"><span data-stu-id="510bb-103">Source filter: ((CURRENCYCODE != "999"))</span></span>
+
+<span data-ttu-id="510bb-104">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="510bb-104">Finance and Operations field</span></span> | <span data-ttu-id="510bb-105">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="510bb-105">Map type</span></span> | <span data-ttu-id="510bb-106">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="510bb-106">Other Dynamics 365 field</span></span> | <span data-ttu-id="510bb-107">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="510bb-107">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="510bb-108">PÉNZNEMKÓD</span><span class="sxs-lookup"><span data-stu-id="510bb-108">CURRENCYCODE</span></span> | = | <span data-ttu-id="510bb-109">isopénznemkód</span><span class="sxs-lookup"><span data-stu-id="510bb-109">isocurrencycode</span></span> | 
+<span data-ttu-id="510bb-110">NÉV</span><span class="sxs-lookup"><span data-stu-id="510bb-110">NAME</span></span> | = | <span data-ttu-id="510bb-111">pénznemneve</span><span class="sxs-lookup"><span data-stu-id="510bb-111">currencyname</span></span> | 
+<span data-ttu-id="510bb-112">SZIMBÓLUM</span><span class="sxs-lookup"><span data-stu-id="510bb-112">SYMBOL</span></span> | = | <span data-ttu-id="510bb-113">pénznemszimbólum</span><span class="sxs-lookup"><span data-stu-id="510bb-113">currencysymbol</span></span> | 
+<span data-ttu-id="510bb-114">egyik sem</span><span class="sxs-lookup"><span data-stu-id="510bb-114">none</span></span> | >> | <span data-ttu-id="510bb-115">árfolyam</span><span class="sxs-lookup"><span data-stu-id="510bb-115">exchangerate</span></span> | <span data-ttu-id="510bb-116">1</span><span class="sxs-lookup"><span data-stu-id="510bb-116">1</span></span>

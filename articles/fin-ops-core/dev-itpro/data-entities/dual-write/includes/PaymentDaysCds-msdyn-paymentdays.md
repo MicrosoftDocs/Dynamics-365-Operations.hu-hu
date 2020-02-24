@@ -1,0 +1,8 @@
+## <a name="payment-days-cds-to-msdyn_paymentdays"></a><span data-ttu-id="0cbf0-101">Az msdyn_paymentdays CDS fizetési napjai</span><span class="sxs-lookup"><span data-stu-id="0cbf0-101">Payment days CDS to msdyn_paymentdays</span></span>
+
+<span data-ttu-id="0cbf0-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="0cbf0-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="0cbf0-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="0cbf0-103">Finance and Operations field</span></span> | <span data-ttu-id="0cbf0-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="0cbf0-104">Map type</span></span> | <span data-ttu-id="0cbf0-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="0cbf0-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="0cbf0-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="0cbf0-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="0cbf0-107">NÉV</span><span class="sxs-lookup"><span data-stu-id="0cbf0-107">NAME</span></span> | = | <span data-ttu-id="0cbf0-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="0cbf0-108">msdyn_name</span></span> | 
+<span data-ttu-id="0cbf0-109">LEÍRÁS</span><span class="sxs-lookup"><span data-stu-id="0cbf0-109">DESCRIPTION</span></span> | = | <span data-ttu-id="0cbf0-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="0cbf0-110">msdyn_description</span></span> | 

@@ -1,0 +1,8 @@
+## <a name="all-products-to-msdyn_globalproducts"></a><span data-ttu-id="95d22-101">A msdyn_globalproducts összes terméke</span><span class="sxs-lookup"><span data-stu-id="95d22-101">All products to msdyn_globalproducts</span></span>
+
+<span data-ttu-id="95d22-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="95d22-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="95d22-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="95d22-103">Finance and Operations field</span></span> | <span data-ttu-id="95d22-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="95d22-104">Map type</span></span> | <span data-ttu-id="95d22-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="95d22-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="95d22-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="95d22-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="95d22-107">TERMÉKNÉV</span><span class="sxs-lookup"><span data-stu-id="95d22-107">PRODUCTNAME</span></span> | >> | <span data-ttu-id="95d22-108">msdyn_productname</span><span class="sxs-lookup"><span data-stu-id="95d22-108">msdyn_productname</span></span> | 
+<span data-ttu-id="95d22-109">TERMÉKSZÁM</span><span class="sxs-lookup"><span data-stu-id="95d22-109">PRODUCTNUMBER</span></span> | >> | <span data-ttu-id="95d22-110">msdyn_productnumber</span><span class="sxs-lookup"><span data-stu-id="95d22-110">msdyn_productnumber</span></span> | 

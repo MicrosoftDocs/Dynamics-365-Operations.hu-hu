@@ -1,0 +1,8 @@
+## <a name="sales-tax-exempt-code-entity-cds-to-msdyn_taxexemptcodes"></a><span data-ttu-id="94fa1-101">Az msdyn_taxexemptcodes forgalmiadó-mentesítési kód entitás CDS-e</span><span class="sxs-lookup"><span data-stu-id="94fa1-101">Sales tax exempt code entity CDS to msdyn_taxexemptcodes</span></span>
+
+<span data-ttu-id="94fa1-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="94fa1-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="94fa1-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="94fa1-103">Finance and Operations field</span></span> | <span data-ttu-id="94fa1-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="94fa1-104">Map type</span></span> | <span data-ttu-id="94fa1-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="94fa1-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="94fa1-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="94fa1-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="94fa1-107">NÉV</span><span class="sxs-lookup"><span data-stu-id="94fa1-107">NAME</span></span> | = | <span data-ttu-id="94fa1-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="94fa1-108">msdyn_name</span></span> | 
+<span data-ttu-id="94fa1-109">LEÍRÁS</span><span class="sxs-lookup"><span data-stu-id="94fa1-109">DESCRIPTION</span></span> | = | <span data-ttu-id="94fa1-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="94fa1-110">msdyn_description</span></span> | 

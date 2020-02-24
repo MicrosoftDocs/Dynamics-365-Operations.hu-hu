@@ -1,0 +1,8 @@
+## <a name="item-sales-tax-group-to-msdyn_taxitemgroups"></a><span data-ttu-id="5752a-101">Az msdyn_taxgroups tételértékesítési áfacsoportja</span><span class="sxs-lookup"><span data-stu-id="5752a-101">Item sales tax group to msdyn_taxitemgroups</span></span>
+
+<span data-ttu-id="5752a-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="5752a-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="5752a-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="5752a-103">Finance and Operations field</span></span> | <span data-ttu-id="5752a-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="5752a-104">Map type</span></span> | <span data-ttu-id="5752a-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="5752a-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="5752a-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="5752a-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="5752a-107">ADÓTÉTELCSOPORT</span><span class="sxs-lookup"><span data-stu-id="5752a-107">TAXITEMGROUP</span></span> | = | <span data-ttu-id="5752a-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="5752a-108">msdyn_name</span></span> | 
+<span data-ttu-id="5752a-109">NÉV</span><span class="sxs-lookup"><span data-stu-id="5752a-109">NAME</span></span> | = | <span data-ttu-id="5752a-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="5752a-110">msdyn_description</span></span> | 

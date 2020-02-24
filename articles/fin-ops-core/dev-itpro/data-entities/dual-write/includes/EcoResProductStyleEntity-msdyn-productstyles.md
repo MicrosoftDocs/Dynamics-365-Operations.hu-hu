@@ -1,0 +1,7 @@
+## <a name="styles-to-msdyn_productstyles"></a><span data-ttu-id="bfea5-101">Az msdyn_productstyles stílusai</span><span class="sxs-lookup"><span data-stu-id="bfea5-101">Styles to msdyn_productstyles</span></span>
+
+<span data-ttu-id="bfea5-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="bfea5-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="bfea5-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="bfea5-103">Finance and Operations field</span></span> | <span data-ttu-id="bfea5-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="bfea5-104">Map type</span></span> | <span data-ttu-id="bfea5-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="bfea5-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="bfea5-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="bfea5-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="bfea5-107">STÍLUSAZONOSÍTÓ</span><span class="sxs-lookup"><span data-stu-id="bfea5-107">STYLEID</span></span> | >> | <span data-ttu-id="bfea5-108">msdyn_productstyle</span><span class="sxs-lookup"><span data-stu-id="bfea5-108">msdyn_productstyle</span></span> | 

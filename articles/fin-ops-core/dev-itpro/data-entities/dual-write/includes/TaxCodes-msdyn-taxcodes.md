@@ -1,0 +1,7 @@
+## <a name="sales-tax-codes-to-msdyn_taxcodes"></a><span data-ttu-id="66ca7-101">Az msdyn_taxcodes forgalmiadó-kódjai</span><span class="sxs-lookup"><span data-stu-id="66ca7-101">Sales tax codes to msdyn_taxcodes</span></span>
+
+<span data-ttu-id="66ca7-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="66ca7-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="66ca7-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="66ca7-103">Finance and Operations field</span></span> | <span data-ttu-id="66ca7-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="66ca7-104">Map type</span></span> | <span data-ttu-id="66ca7-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="66ca7-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="66ca7-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="66ca7-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="66ca7-107">ADÓKÓD</span><span class="sxs-lookup"><span data-stu-id="66ca7-107">TAXCODE</span></span> | >> | <span data-ttu-id="66ca7-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="66ca7-108">msdyn_name</span></span> | 

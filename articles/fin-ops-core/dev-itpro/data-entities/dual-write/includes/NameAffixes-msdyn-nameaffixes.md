@@ -1,0 +1,9 @@
+## <a name="name-affixes-to-msdyn_nameaffixes"></a><span data-ttu-id="abec5-101">Az msdyn_nameaffixes névutói</span><span class="sxs-lookup"><span data-stu-id="abec5-101">Name affixes to msdyn_nameaffixes</span></span>
+
+<span data-ttu-id="abec5-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="abec5-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="abec5-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="abec5-103">Finance and Operations field</span></span> | <span data-ttu-id="abec5-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="abec5-104">Map type</span></span> | <span data-ttu-id="abec5-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="abec5-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="abec5-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="abec5-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="abec5-107">UTÓTAG</span><span class="sxs-lookup"><span data-stu-id="abec5-107">AFFIX</span></span> | = | <span data-ttu-id="abec5-108">msdyn_affix</span><span class="sxs-lookup"><span data-stu-id="abec5-108">msdyn_affix</span></span> | 
+<span data-ttu-id="abec5-109">TÍPUS</span><span class="sxs-lookup"><span data-stu-id="abec5-109">TYPE</span></span> | >< | <span data-ttu-id="abec5-110">msdyn_affixtype</span><span class="sxs-lookup"><span data-stu-id="abec5-110">msdyn_affixtype</span></span> | 
+<span data-ttu-id="abec5-111">LEÍRÁS</span><span class="sxs-lookup"><span data-stu-id="abec5-111">DESCRIPTION</span></span> | = | <span data-ttu-id="abec5-112">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="abec5-112">msdyn_description</span></span> | 

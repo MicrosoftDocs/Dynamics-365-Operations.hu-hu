@@ -1,0 +1,7 @@
+## <a name="colors-to-msdyn_productcolors"></a><span data-ttu-id="f0184-101">Msdyn_productcolors színei</span><span class="sxs-lookup"><span data-stu-id="f0184-101">Colors to msdyn_productcolors</span></span>
+
+<span data-ttu-id="f0184-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="f0184-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="f0184-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="f0184-103">Finance and Operations field</span></span> | <span data-ttu-id="f0184-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="f0184-104">Map type</span></span> | <span data-ttu-id="f0184-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="f0184-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="f0184-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="f0184-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="f0184-107">SZÍNAZANOSÍTÓ</span><span class="sxs-lookup"><span data-stu-id="f0184-107">COLORID</span></span> | >> | <span data-ttu-id="f0184-108">msdyn_productcolorname</span><span class="sxs-lookup"><span data-stu-id="f0184-108">msdyn_productcolorname</span></span> | 

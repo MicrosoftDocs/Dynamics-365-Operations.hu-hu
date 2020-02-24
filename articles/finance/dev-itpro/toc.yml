@@ -1,4 +1,4 @@
-- name: A Finance and Operations fejlesztése és adminisztrációja
+- name: Fejlesztés és adminisztráció a Finance and Operations számára
   href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Új vagy módosult elemek
   items:
@@ -6,9 +6,9 @@
       href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: 29-es platformfrissítés (2019. október)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 28-as platformfrissítés (2019. július)
+    - name: Platform update 28 (2019. július)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 27-es platformfrissítés (2019. június)
+    - name: Platform update 27 (2019. június)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Platform update 26 (2019. május)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -16,15 +16,15 @@
       href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Platform update 24 (2019. március)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 23-as platformfrissítés (2019. január)
+    - name: Platform update 23 (2019. január)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 22-es platformfrissítés (2018. december)
+    - name: Platform update 22 (2018. december)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 21-es platformfrissítés (2018. november)
+    - name: Platform update 21 (2018. november)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 20-as platformfrissítés (2018. szeptember)
+    - name: Platform update 20 (2018. szeptember)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: 15-ös platformfrissítés (2018. március)
+    - name: Platform update 15 (2018. március)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Üzleti események
   items:
@@ -92,7 +92,7 @@
           href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
           href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Finance and Operations csatlakoztató
+    - name: Finance and Operations Csatlakoztató
       href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Fejlesztés integrációhoz
       items:
@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Szervezeti hierarchia a Common Data Service megoldásban
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
-                - name: Vállalat fogalma a Common Data Service szolgáltatásokban
+                - name: Vállalat fogalma a Common Data Services szolgáltatásokban
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Integrált vevői alapadat
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -140,39 +140,39 @@
                   items:
                     - name: A potenciális vevők készpénzre váltása
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+                    - name: A Sales-számlák közvetlen szinkronizálása az ügyfelekre Finance and Operations
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
+                    - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
+                    - name: A Sales-kapcsolatok közvetlen szinkronizálása a kapcsolatokra vagy ügyfelekre Finance and Operations
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
+                    - name: Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: A Field Service szolgáltatással való integráció konfigurálása
                   items:
                     - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
                       href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+                    - name: A termékek szinkronizálása Finance and Operations a Field Service szolgáltatásokban lévő termékekkel
                       href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
+                    - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása az értékesítési rendeléseivel Finance and Operations
                       href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                    - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a szabadszöveges számláival Finance and Operations'
                       href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                    - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból az alkalmazásba Finance and Operations
                       href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                    - name: Készletszintű információk szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                       href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                    - name: Készletegységgel rendelkező termékek szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                       href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                    - name: Projektlista szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                       href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                    - name: Raktárak szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                       href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                    - name: Munkarendelések szinkronizálása projekttel az alkalmazásból a Field Service alkalmazásba Finance and Operations
                       href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Project Service Automation integráció konfigurálása
                   items:
@@ -332,7 +332,7 @@
           href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Azure ExpressRoute és Finance and Operations
           href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Finance and Operations-architektúra
+        - name: Finance and Operations architektúra
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Frissítések alkalmazása felhőalapú környezetekre
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -410,7 +410,7 @@
       href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Értékelési példányok beszerzése
       href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Regisztrálás az előfizetések előnézetére
+    - name: Regisztrálás az előzetes előfizetésekre
       href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Fejlesztői környezetek telepítése és hozzáférés
       items:
@@ -472,7 +472,7 @@
           href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Modellek és csomagok
           href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Finance and Operations projekttípus
+        - name: Finance and Operations projekt típusa
           href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Eszközökhöz tartozó bővítmények a Visual Studio szolgáltatáshoz
           href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Bizalmas adatokhoz való hozzáférés kezelése
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Személyes adatokra vonatkozó kérések megválaszolása a Talent használatával
+        - name: Személyes adatokra vonatkozó kérések megválaszolása az emberi erőforrás használatával
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Személyes adatokra vonatkozó kérések megválaszolása az AX 2012 rendszerben
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1206,23 +1206,23 @@
           href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Támogatás
   items:
-    - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
+    - name: Támogatás Finance and Operations és Lifecycle Services szolgáltatások támogatása
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: A Dynamics 365 támogatásának áttekintése
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
-    - name: Támogatás kérése a 21Vianet által Kínában működtetett Finance and Operations rendszerrel kapcsolatban
+    - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Premier támogatási jegy naplózása
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Igénylések benyújtása a Dynamics Service mérnöki csapatához
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Műszaki támogatás beállítása a Finance and Operations szolgáltatáshoz
+    - name: 'Technikai támogatás beállítása ehhez: Finance and Operations'
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Tervezett karbantartási időtartamra vonatkozó GYIK
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Felhőműveletek és szervizelés
       href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: A Finance and Operations támogatási tapasztalatainak kezelése
+    - name: Támogatási Finance and Operations tapasztalatok kezelése
       href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Rendszerfelügyelet
   items:
@@ -1298,7 +1298,7 @@
       href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Frissítés AX 2012-ről
       items:
-        - name: Frissítés AX 2012-ről a Finance and Operations alkalmazásra
+        - name: Frissítés AX 2012-ről Finance and Operations
           href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
           href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1340,7 +1340,7 @@
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Adatok áttelepítése AX 2009-ből
       items:
-        - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
+        - name: Adatok áttelepítése AX 2009-ből Finance and Operations
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: AX 2009 áttelepítése – Az adatáttelepítési eszköz telepítése
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json

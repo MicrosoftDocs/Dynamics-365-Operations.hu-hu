@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="c9d9f-101">Ez a cikk mind a(z) Dynamics 365 Human Resources, mind a **humán erőforrás** munkaterületére vonatkozik Dynamics 365 Finance.</span><span class="sxs-lookup"><span data-stu-id="c9d9f-101">This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance.</span></span>

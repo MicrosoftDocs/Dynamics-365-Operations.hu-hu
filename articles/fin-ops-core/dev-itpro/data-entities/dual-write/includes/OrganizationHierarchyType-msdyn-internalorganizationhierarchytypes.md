@@ -1,0 +1,7 @@
+## <a name="organization-hierarchy-type-to-msdyn_internalorganizationhierarchytypes"></a><span data-ttu-id="86e9b-101">Az msdyn_internalorganizationhierarchies szervezeti hierarchiatípusa</span><span class="sxs-lookup"><span data-stu-id="86e9b-101">Organization hierarchy type to msdyn_internalorganizationhierarchytypes</span></span>
+
+<span data-ttu-id="86e9b-102">Ez a sablon szinkronizálja az adatokat az Finance and Operations alkalmazások és a(z) Common Data Serviceközött.</span><span class="sxs-lookup"><span data-stu-id="86e9b-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="86e9b-103">Finance and Operations mező</span><span class="sxs-lookup"><span data-stu-id="86e9b-103">Finance and Operations field</span></span> | <span data-ttu-id="86e9b-104">Térkép típusa</span><span class="sxs-lookup"><span data-stu-id="86e9b-104">Map type</span></span> | <span data-ttu-id="86e9b-105">Egyéb Dynamics 365 mező</span><span class="sxs-lookup"><span data-stu-id="86e9b-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="86e9b-106">Alapértelmezett érték</span><span class="sxs-lookup"><span data-stu-id="86e9b-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="86e9b-107">NÉV</span><span class="sxs-lookup"><span data-stu-id="86e9b-107">NAME</span></span> | > | <span data-ttu-id="86e9b-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="86e9b-108">msdyn_name</span></span> | 
