@@ -1,6 +1,6 @@
 ---
-title: A Finance and Operations-alkalmazás dokumentációja
-description: A Finance and Operations-alkalmazások dokumentációja.
+title: Finance and Operations alkalmazásdokumentáció
+description: A Finance and Operations alkalmazásokra vonatkozó dokumentáció.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770919"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005540"
 ---
-# <a name="finance-and-operations-application-documentation"></a>A Finance and Operations-alkalmazás dokumentációja
+# <a name="finance-and-operations-application-documentation"></a>Finance and Operations alkalmazásdokumentáció
 
 [!include [banner](includes/banner.md)]
 
 Ismerje meg, hogyan használhatja a vállalkozásában a Finance and Operations-alkalmazásokat. A cikk erőforrásai a végfelhasználók, a fejlesztők és az informatikai szakemberek számára is hasznosak lehetnek. 
 
-Az alábbi tartalom jelentős része a kapcsolódó termékekre (Dynamics 365 Retail és Talent) is vonatkozik. 
+Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commerce és Dynamics 365 Human Resources is érvényes. 
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ Az alábbi tartalom jelentős része a kapcsolódó termékekre (Dynamics 365 Re
 <h3><a href="get-started/before-you-buy.md">Vásárlás előtti teendők</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Regisztrálás az előzetes verziót tartalmazó előfizetésre</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Telepítési beállítás kiválasztása</a></p>
- <p><a href="get-started/purchase-on-premises.md">A Finance and Operations (on-premises) megvásárlása</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Vásárlás Finance and Operations (helyszíni)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Végrehajtási életciklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -84,10 +84,10 @@ Az alábbi tartalom jelentős része a kapcsolódó termékekre (Dynamics 365 Re
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionális jogszabálykövetési funkciók</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Emberi erőforrások</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Juttatások</a></p>
-<p><a href="../../talent/performance-management-overview.md">Alkalmazottak fejlesztése és képzések</a></p>
-<p><a href="../../talent/questionnaires.md">Kérdőív</a></p>
-<p><a href="hr/manage-recruiting-process.md">Felvétel</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Előnyök</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Alkalmazottak fejlesztése és képzések</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Kérdőívek</a></p>
+<p><a href="hr/manage-recruiting-process.md">Toborzás</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Egyesült Államok bérlista</a></p>
 
 </td>
@@ -129,16 +129,17 @@ Az alábbi tartalom jelentős része a kapcsolódó termékekre (Dynamics 365 Re
 </td>
 <td>
 <h3>Kapcsolódó termékek</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Hívásközpont</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Csatorna beállítása és kezelése</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS és Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail fejlesztő és felügyelet</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce fejlesztő és felügyelet</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Juttatások</a></p>
-<p><a href="../../talent/performance-management-overview.md">Alkalmazottak fejlesztése és képzések</a></p>
-<p><a href="../../talent/questionnaires.md">Kérdőív</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Rendszergazda iránymutatása</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Fejlesztői iránymutatás</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Használati útmutató</a></p>
+
 
 </td>
 </tr>

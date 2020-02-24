@@ -1,7 +1,7 @@
-Adatbázisok környezetek között történő másolásához futtatnia kell a környezetlétesítő eszközt a másolt adatbázis teljes működőképessége előtt annak érdekében, hogy az összes Retail-összetevő naprakész legyen.
+Adatbázisok környezetek között történő másolásához futtatnia kell a környezetlétesítő eszközt a másolt adatbázis teljes működőképessége előtt annak érdekében, hogy az összes Commerce-összetevő naprakész legyen.
 
 > [!IMPORTANT]
-> Javasoljuk, hogy futtassa ezt az eljárást, függetlenül attól, hogy Retail-összetevőket használ-e vagy sem, mert a Retail funkció minden környezetben megtalálható. 
+> Javasoljuk, hogy futtassa ezt az eljárást, függetlenül attól, hogy Commerce-összetevőket használ-e vagy sem, mert a Commerce funkció minden környezetben megtalálható. 
 
 Folytatás előtt győződjön meg arról, hogy teljesülnek a következő előfeltételek:
 1. Ha a 2017. júliusi kiadást (más néven 7.2) 7.2.11792.56024 frissítésére van szükség, akkor az adatok frissítésének futtatása előtt alkalmazza a következő X++ gyorsjavításokat a célkörnyezetben. Ezek megakadályozhatják, hogy a frissítés során különböző hibák forduljanak elő:
