@@ -1,9 +1,9 @@
 ---
-title: Kereskedelem előzetes környezet létesítése
+title: Dynamics 365 Commerce előnézeti környezet létesítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce előzetes környezetet létesíteni.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934748"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024636"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Kereskedelem előzetes környezet létesítése
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce előnézeti környezet létesítése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce előzetes környezetet létesíteni.
+Ez a témakör bemutatja, hogyan lehet egy Dynamics 365 Commerce előzetes környezetet létesíteni.
 
-A kezdés előtt ajánljuk, hogy legalább fussa át a teljes témakört, hogy áttekintést kapjon arról, hogy mire tér ki a folyamat, illetve, hogy mit tartalmaz a témakör.
+A művelet elkezdése előtt ajánljuk, hogy a jelen témakörben keressen egy rövid áttekintést, hogy megtudja, mire van szüksége a folyamatnak.
 
 > [!NOTE]
-> Megjegyzés: Ha még nem kapott hozzáférést a Dynamics 365 Commerce előzeteséhez, a [Commerce webhelyről](https://aka.ms/Dynamics365CommerceWebsite) kérhet előzetes hozzáférést.
+> Ha még nem kapott hozzáférést a Dynamics 365 Commerce előzeteséhez, a [Dynamics 365 Commerce webhelyről](https://aka.ms/Dynamics365CommerceWebsite) kérhet előzetes hozzáférést.
 
 ## <a name="overview"></a>Áttekintés
 
-A Kereskedelem előzetes környezetének sikeres létrehozásához létre kell hoznia egy projektet, amely egy adott terméknévvel és típussal rendelkezik. A környezet és a Retail Cloud Scale Unit (RCSU) szintén rendelkezik bizonyos paraméterekkel, amelyeket az E-kereskedelem előzetesekor használnia kell. Az ebben a témakörben szereplő útmutatás leírja az összes szükséges lépést és a használandó paramétereket.
+A Kereskedelem előzetes környezetének sikeres létrehozásához létre kell hoznia egy projektet, amely egy adott terméknévvel és típussal rendelkezik. A környezet és a Commerce Scale Unit (CSU) szintén rendelkezik bizonyos paraméterekkel, amelyeket későbbiekben, az e-kereskedelem előzetesekor használnia kell. Az ebben a témakörben szereplő útmutatás leírja a létesítéshez szükséges összes lépést és a használandó paramétereket.
 
 A Kereskedelem előzetes környezetének sikeres létesítését követően meg kell tennie néhány létesítést követő lépést a felkészítéséhez. Bizonyos lépések nem kötelezők, az értékelni kívánt rendszer bizonyos szempontjaitól függően. A választható lépéseket a későbbiekben bármikor befejezheti.
 
@@ -52,69 +52,21 @@ Ha kérdései vannak a létesítés lépéseivel kapcsolatban, vagy bármilyen p
 A következő előfeltételeknek kell érvényben lenniük a Kereskedelem előnézet környezetének létesítése előtt:
 
 - Elérhetővé teszi a Microsoft Dynamics Lifecycle Services (LCS) portál elérését.
+- Ön meglévő Microsoft Dynamics 365 partner vagy vevő, és létre tud hozni egy Dynamics 365 Commerce projektet.
 - Ön felvételt nyert a Dynamics 365 Commerce előzetes programba.
-- Rendelkezik a szükséges jogosultságokkal projekt létrehozásához a **Lehetséges előértékesítések**vagy a **Áttelepítés, megoldások létrehozása és tanulás** funkciókhoz.
+- Rendelkezik a szükséges jogosultságokkal az **Áttelepítés, megoldások létrehozása és tanulás** projekt létrehozására.
 - Ön tagja a **Környezetkezelő** vagy **Projekttulajdonos** szerepkörnek abban a projektben, amelyben a környezet létesítése történik.
 - Rendszergazdai hozzáféréssel rendelkezik a Microsoft Azure-előfizetéshez, vagy felveheti a kapcsolatot egy előfizetési adminisztrátorral, aki elvégezheti a két lépést, amelyek az Ön nevében rendszergazdai jogosultságot igényelnek.
 - Rendelkezésére áll az Azure Active Directory (Azure AD) bérlői azonosító.
 - Létrehozott egy Azure AD biztonsági csoportot, amelyet az e-kereskedelmi rendszeradminisztrátori csoportként használhat, és a rendelkezésére áll annak azonosítója.
 - Létrehozott egy Azure AD biztonsági csoportot, amelyet minősítési vagy értékelési moderátori csoportként használhat, és a rendelkezésére áll annak azonosítója. (Ez a biztonsági csoport lehet ugyanaz, mint az e-kereskedelmi rendszeradminisztrátori csoport.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Az Azure AD bérlőazonosító megkeresése
-
-Az Azure AD bérlőazonosítója egy globálisan egyedi azonosító (GUID), amely hasonlít a ehhez a példához: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Az Azure AD bérlőazonosítójának megkeresése az Azure portál segítségével
-
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
-1. Győződjön meg arról, hogy a megfelelő könyvtár ki van választva.
-1. A bal oldali menüben válassza az **Azure Active Directory** lehetőséget.
-1. A **Kezelés** alatt válassza ki a **Tulajdonságok** lehetőséget. Az Azure AD bérlőazonosítója a **Címtár-azonosító** alatt jelenik meg.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Az Azure AD bérlőazonosítójának megkeresése az OpenID Connect metaadatok segítségével
-
-Hozzon létre egy OpenID URL-t a **\{YOUR\_DOMAIN\}** elemet felcserélve a saját tartományával, például: `microsoft.com`. Például a `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` a `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration` lesz.
-
-1. Keresse meg a tartományt tartalmazó OpenID URL-címet.
-
-    Az Azure AD bérlőazonosítóját több tulajdonságértékben is megtalálhatja.
-
-1. Keresse meg az **authorization\_endpoint** elemet, és bontsa ki a közvetlenül a `login.microsoftonline.com/` után látható GUID-t.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Az Azure AD biztonságicsoport-azonosítójának megkeresése
-
-Az Azure AD biztonságicsoport-azonosítója a következő példához hasonló GUID azonosító: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-Ez az eljárás feltételezi, hogy tagja annak a csoportnak, amelyhez azonosítót próbál találni.
-
-1. Nyissa meg a [Graph-vizsgálót](https://developer.microsoft.com/graph/graph-explorer#).
-1. Kattintson a **Bejelentkezés Microsoft-fiókkal** lehetőségre, és jelentkezzen be a hitelesítő adataival.
-1. A bal oldalon válassza a **több minta megjelenítése** lehetőséget.
-1. A jobb oldali panelen engedélyezze a **Csoportok** lehetőséget.
-1. Válassza ki a jobb oldali ablaktáblát.
-1. Válassza az **összes csoport, amelynek tagja vagyok** lehetőséget.
-1. A **Válasz előnézete** mezőben keresse meg a csoportot. A biztonságcsoport-azonosító az **id** tulajdonság alatt jelenik meg.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Commerce előzetes környezet kiépítése
 
 Ezek az eljárások ismertetik a Commerce előzetes környezet kiépítését. A sikeres befejezést követően a Commerce előzetes környezete készen áll a konfigurációra. Az itt ismertetett tevékenységek az LCS portálon történnek.
 
 > [!IMPORTANT]
-> Az előzetes hozzáférés LCS-fiókhoz és szervezethez kötődik, amelyet az előzetes alkalmazásban megadott. Ugyanazt a fiókot kell használnia a Commerce előzetes környezet létesítése érdekében. Ha a Commerce előzetes környezethez más LCS-fiókot vagy bérlőt kell használnia, ezeket az adatokat meg kell adnia a Microsoftnak. A kapcsolattartói adatokért tekintse meg a [Commerce előzetes környezet támogatása](#commerce-preview-environment-support) szakaszt a témakör későbbi részében.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Hozzáférés megadása az e-kereskedelmi alkalmazásokhoz
-
-> [!IMPORTANT]
-> A bejelentkező személynek Azure AD bérlői rendszergazdának kell lennie, aki rendelkezik az Azure AD bérlőazonosítóval. Ha ez a lépés nem sikerül, a fennmaradó létesítési lépések sikertelenek lesznek.
-
-Az Azure-előfizetés eléréséhez szükséges e-kereskedelmi alkalmazások engedélyezéséhez kövesse az alábbi lépéseket.
-
-1. A következő formátumban állítsa össze az URL-címet:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Másolja be az URL-t a böngészőbe vagy a szövegszerkesztő programba, és cserélje le a **\{AAD\_TENANT\_ID\}** részt az Azure AD bérlőazonosítóval. Majd nyissa meg az URL-címet.
-1. Az Azure AD bejelentkezési párbeszédablakban jelentkezzen be, és erősítse meg, hogy **Dynamics 365 Commerce (előzetes verzió)** hozzáférést szeretne adni az előfizetéséhez. A rendszer egy olyan oldalra fogja küldeni, amely jelzi, hogy a művelet sikeres volt-e.
+> Az előzetes hozzáférés LCS-fiókhoz és szervezethez kötődik, amelyet a Commerce előzetes alkalmazásban megadott. Ugyanazt a fiókot kell használnia a Commerce előzetes környezet létesítése érdekében. Ha a Commerce előzetes környezethez más LCS-fiókot vagy bérlőt kell használnia, ezeket az adatokat meg kell adnia a Microsoftnak. A kapcsolattartói adatokért tekintse meg a [Commerce előzetes környezet támogatása](#commerce-preview-environment-support) szakaszt a témakör későbbi részében.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Ellenőrizze, hogy az előzetes funkciók elérhetők-e és be vannak-e kapcsolva az LCS rendszerben
 
@@ -210,12 +162,12 @@ A kötkező ábrán az LCS **Eszköztár** oldalán végrehajtandó műveleteket
 Tegye a következőket a környezet telepítéséhez.
 
 > [!NOTE]
-> Előfordulhat, hogy nem kell a 6., 7. és/vagy 8. lépést végrehajtania, mert az egyetlen lehetőséggel rendekező oldalakat a rendszer átugorja. Amikor a **Környezeti paraméterek** nézetben van, erősítse meg, hogy a **Dynamics 365 Commerce (előzetes) – bemutató (10.0.6 a Platform update 30 frissítéssel)** szöveg közvetlenül a **Környezet neve** mező felett jelenik meg. Lásd a 8. lépés után megjelenő ábrát.
+> Előfordulhat, hogy nem kell a 6., 7. és/vagy 8. lépést végrehajtania, mert az egyetlen lehetőséggel rendekező oldalakat a rendszer átugorja. Amikor a **Környezeti paraméterek** nézetben van, erősítse meg, hogy a **Dynamics 365 Commerce – bemutató (10.0.* x* a Platform update *xx* frissítéssel)** szöveg közvetlenül a **Környezet neve** mező felett jelenik meg. További részletekért lásd a 8. lépés után megjelenő ábrát.
 
 1. Válassza a felső menü **Felhőalapú környezetek**pontját.
 1. Környezet hozzáadásához kattintson a **+ hozzáadás** gombra.
-1. Az **Alkalmazás verziója** mezőben válassza a **10.0.6** elemet.
-1. A **Platformverzió** mezőben válassza a **30-as platformfrissítés** lehetőséget.
+1. Válassza ki az **Alkalmazás verziószáma** mezőben a legfrissebb verziót. Ha a legfrissebb verziótól különböző verziót kell kijelölni, akkor ne válasszon **10.0.8** előtti verziót.
+1. A **Platform verziószáma** mezőben használja a kiválasztott alkalmazás verziójának automatikusan kiválasztott platform verzióját. 
 
     ![Válassza ki az alkalmazás- és a platformverziókat](./media/project1.png)
 
@@ -224,7 +176,7 @@ Tegye a következőket a környezet telepítéséhez.
 
     ![1. környezeti topológia kiválasztása](./media/project2.png)
 
-1. Válassza a **Dynamics 365 Commerce (előzetes) – demó** elemet környezeti topológiaként. Ha korábban egyetlen Azure-csatlakozót állított be, akkor ez lesz a környezethez használva. Ha több Azure-összekötőt konfigurált, kiválaszthatja a használandó összekötőt: **Egyesült Államok keleti része**, **Egyesült Államok keleti része 2**, **Egyesült Államok nyugati része** vagy **Egyesült Államok nyugati része 2**. (A legjobb végpontok közötti teljesítmény esetén ajánlott az **Egyesült Államok nyugati része 2**kiválasztása.)
+1. Válassza ki a **Dynamics 365 Commerce – bemutatót** környezeti topológiaként. Ha korábban egyetlen Azure-csatlakozót állított be, akkor ez lesz a környezethez használva. Ha több Azure-összekötőt konfigurált, kiválaszthatja a használandó összekötőt: **Egyesült Államok keleti része**, **Egyesült Államok keleti része 2**, **Egyesült Államok nyugati része** vagy **Egyesült Államok nyugati része 2**. (A legjobb végpontok közötti teljesítmény esetén ajánlott az **Egyesült Államok nyugati része 2**kiválasztása.)
 
     ![2. környezeti topológia kiválasztása](./media/project3.png)
 
@@ -241,39 +193,38 @@ Tegye a következőket a környezet telepítéséhez.
 
 1. A folytatás előtt győződjön meg arról, hogy a környezet állapota **Telepített**.
 
-### <a name="initialize-rcsu"></a>RCSU inicializálása
+### <a name="initialize-the-commerce-scale-unit-csu"></a>A Commerce Scale Unit (CSU) inicializálása
 
-Egy RCSU-cím inicializálásához kövesse az alábbi lépéseket.
+Egy CSU-cím inicializálásához kövesse az alábbi lépéseket.
 
 1. A **felhőalapú környezetek** nézetben válassza ki a saját környezetét a listából.
 1. Kattintson a jobb oldalon található környezeti nézet **Minden részlet** elemére. Megjelenik a környezeti részletek nézet.
 1. A **Környezeti funkciók**területen kattintson a**Kezelés** elemre.
-1. A **Retail** lapon válassza az **Inicializálás** parancsot. Megjelenik a RCSU inicializálási paraméterei nézet.
+1. A **Commerce** lapon válassza az **Inicializálás** parancsot. Megjelenik a CSU inicializálási paraméterei nézet.
 1. A **Régió** mezőben válassza az **Egyesült Államok keleti része**, **Egyesült Államok keleti része 2**, **Egyesült Államok nyugati része** vagy **Egyesült Államok nyugati része 2** lehetőséget.
-1. A **Verzió** mezőben válassza a **Verzió megadása** lehetőséget a listából, majd a megjelenő mezőben adja meg: **9.16.19262.5**. Ügyeljen arra, hogy pontosan adja meg az itt jelzett verziószámot. Ellenkező esetben később frissítenie kell a RCSU programot a megfelelő verzióra.
+1. A **Verzió** mezőben válassza a **Verzió megadása** lehetőséget a listából, majd a megjelenő mezőben adja meg: **9.18.20014.4**. Ügyeljen arra, hogy pontosan adja meg az itt jelzett verziószámot. Ellenkező esetben később frissítenie kell a RCSU programot a megfelelő verzióra.
 1. Kapcsolja be a **bővítmény alkalmazása** beállítást.
 1. A bővítmények listájából válassza a **Commerce előzetes demó alapbővítmény** lehetőséget.
 1. Válassza az **Inicializálás** elemet.
-1. A telepítési visszaigazolás oldalán győződjön meg róla, hogy az adatok helyesek, majd kattintson az **Igen** gombra. A program visszaküldi a **Kiskereskedelem kezelése** nézetbe. úgy, hogy a **Kiskereskedelem** lap van kiválasztva. A RCSU várólistára került a létesítéshez.
-1. A folytatás előtt győződjön meg arról, hogy az RCSU állapota **Sikeres**. Az inicializálás körülbelül két-öt órát vesz igénybe.
+1. A telepítési visszaigazolás oldalán győződjön meg róla, hogy az adatok helyesek, majd kattintson az **Igen** gombra. Újra megjelenik a **Commerce Management** nézet, amelyen a **Commerce** lap ki van választva. A CSU várólistára került a létesítéshez.
+1. A folytatás előtt győződjön meg arról, hogy az CSU állapota **Sikeres**. Az inicializálás körülbelül két-öt órát vesz igénybe.
 
 ### <a name="initialize-e-commerce"></a>Az elektronikus kereskedelem inicializálása
 
 Az e-kereskedelem inicializálásához kövesse az alábbi lépéseket.
 
-1. Az **e-kereskedelem (előzetes)** lapon tekintse át az előzetes jóváhagyását, majd válassza a **beállítás** lehetőséget.
+1. Az **e-kereskedelem** lapon tekintse át az előzetes jóváhagyását, majd válassza a **Beállítás** lehetőséget.
 1. Az **E-kereskedelmi bérlő neve** mezőben adjon meg egy nevet. Azonban fontos megjegyezni, hogy ez a név az e-kereskedelem példányra mutató néhány URL-címen látható lesz.
-1. A **Retail Cloud Scale Unit neve** mezőben válassza ki az RCSU-t a listából. (A listában csak egy opciónak kell lennie.)
+1. A **Commerce Cloud Scale Unit neve** mezőben válassza ki az CSU-t a listából. (A listában csak egy opciónak kell lennie.)
 
     Az **E-kereskedelmi földrajz** mező beállítása automatikus, az érték pedig nem módosítható.
 
 1. A folytatáshoz kattintson a **Tovább** gombra.
 1. A **Támogatott állomásnevek** mezőbe írjon be egy tetszőleges érvényes tartományt, például `www.fabrikam.com`.
-1.  Az **AAD biztonsági csoport rendszergazdának** mezőben adja meg a használni kívánt biztonsági csoport első néhány betűjét. A keresési eredmények megjelenítéséhez válassza a nagyítóosztály ikonját. Válasszon ki egy biztonsági csoportot a listából.
-2.  Az **AAD biztonsági csoport minősítési és értékelési moderátornak** mezőben adja meg a használni kívánt biztonsági csoport első néhány betűjét. A keresési eredmények megjelenítéséhez válassza a nagyítóosztály ikonját. Válasszon ki egy biztonsági csoportot a listából.
+1.  Az **AAD biztonsági csoport rendszergazdának** mezőben adja meg a használni kívánt biztonsági csoport első néhány betűjét. A keresési eredmények megjelenítéséhez válassza a nagyítóosztály ikonját. Válasszon ki egy megfelelő biztonsági csoportot a listából.
+2.  Az **AAD biztonsági csoport minősítési és értékelési moderátornak** mezőben adja meg a használni kívánt biztonsági csoport első néhány betűjét. A keresési eredmények megjelenítéséhez válassza a nagyítóosztály ikonját. Válasszon ki egy megfelelő biztonsági csoportot a listából.
 1. Az **Értékelések és vélemények szolgáltatás engedélyezése** értékét hagyja bekapcsolva.
-1. Ha már elvégezte a Microsoft Azure Active Directory (Azure AD) hozzájárulására vonatkozó lépést a „Hozzáférés biztosítása e-kereskedelmi alkalmazásoknak” szakaszban leírtak szerint, jelölje be a jelölőnégyzetet a hozzájárulás megerősítéséhez. Ha még nem fejezte be ezt a lépést, az inicializálás folytatása előtt meg kell tennie. Válassza a jelölőnégyzet melletti szövegben szereplő hivatkozást, amellyel megnyithatja a párbeszédablakot, és elvégezheti a lépést.
-1. Válassza az **Inicializálás** elemet. A program visszaküldi a **Kiskereskedelem kezelése** nézetbe, ahol az **E-kereskedelem (előzetes)** lap ki van választva. Az e-kereskedelem inicializálása elindult.
+1. Válassza az **Inicializálás** elemet. Újra megjelenik a **Commerce Management** nézet, amelyen a **e-kereskedelem** lap ki van választva. Az e-kereskedelem inicializálása elindult.
 1. A folytatás előtt várja meg, amíg az e-kereskedelem inicializálási állapota **Az inicializálás sikerült**állapotra nem vált.
 1. A jobb alsó sarokban található **Hivatkozások** részben jegyezze fel a következő hivatkozások URL-címeit:
 
@@ -292,13 +243,13 @@ A Kereskedelem előzetes környezetének létesítési és konfigurálási folya
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
 
-[Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
 
-[A Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
 
-[Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ A Kereskedelem előzetes környezetének létesítési és konfigurálási folya
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Súgóerőforrások: Dynamics 365 Retail](../retail/index.md)

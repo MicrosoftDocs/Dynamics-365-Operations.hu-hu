@@ -1,5 +1,5 @@
 ---
-title: Követelések és beszedések beállítása
+title: Beszedések beállítása
 description: Ez a cikk a beszedési funkciók beállítását ismerteti.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178143"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013163"
 ---
-# <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
+# <a name="set-up-collections"></a>Beszedések beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a beszedési funkciók beállítását ismerteti.
+Ez a cikk a beszedési funkciók beállítását ismerteti. A beszedési képesség használatakor végre kell hajtania néhány beállítási lépést. Van néhány választható funkció, többek között a vevőgyűjtők és a gyűjteménycsoportok. 
+
+- Korosítási időszak definíciói
+- Korosítási pillanatképek
+- Naplónevek
+- Okkód előírása a leírási tranzakciókhoz
+- Kintlevőségkezelők
+- Leírási számla
+- NSF (elégtelen fedezet) adatok
+- Outlook beállítások a **Beszedések** lapot használók számára
+- E-mail címek
+
+Ezeknek a pontoknak a részletesebb leírását a témakör többi része tartalmazza. 
 
 <a name="set-up-aging-period-definitions"></a>Korosítási időszakok definícióinak beállítása
 -------------------------------
@@ -46,12 +58,12 @@ A vevők csoportosítására vevőgyűjtőket hozhat létre. Használhatja a vev
 Ha a szervezetben többen foglalkoznak pénzbeszedéssel, beszedési csapatot hozhat létre. Kiválaszthatja a csapatot a **Kinnlevőségek paraméterei** lapon. Ha nem hoz létre egy kinnlevőségkezelő csapatot, akkor a csapat automatikusan létrejön, amikor beállítja a kinnlevőségkezelőket a **kinnlevőségkezelő** lapon.
 
 ## <a name="set-up-a-collections-case-category"></a>Beszedési esetkategória beállítása
-Ha eseteket fog használni a beszedési munka megszervezéséhez, akkor állítson be egy esetkategóriát, amely rendelkezik a **beszedések** kategóriatípussal. Ez a beállítás csak akkor szükséges, ha használni akarja az eset funkciót a **beszedések** lapon.
+Amennyiben eseteket használ a beszedési munka megszervezéséhez, akkor állítson be egy esetkategóriát, amely rendelkezik a **Beszedések** kategóriatípussal. Ez csak akkor szükséges, ha használni akarja az eset funkciót a **Beszedések** lapon.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Naplónevek beállítása (kiegyenlítés, leírás és elégtelen fedezet)
 Állítson be naplóneveket, amelyek akkor használatosak, amikor a tranzakciók feldolgozásra kerülnek a **beszedések** oldalon. Ez a feldolgozás magában foglalja egy tranzakció kiegyenlítését, leírását és az elégtelen fedezetű (NSF) fizetés feldolgozását.
 
-| Leírás | Naplótípus     |
+| Leírás | Napló típusa     |
 |-------------|------------------|
 | Kiegyenlítés  | Vevői kifizetés |
 | Veszteségleírás   | Napi            |
@@ -78,16 +90,19 @@ Frissítse a bankszámlákat, hogy a megfelelő naplóval rendelkezzenek, amikor
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Outlook beállítások felvétele a felhasználók számára a beszedések lapon
 Mielőtt a dolgozók műveleteket tudnak létrehozni, vagy e-mail üzeneteket küldeni a **Beszedések** lapon ellenőriznie kell, hogy a **Microsoft Outlook szinkronizáció** konfigurációs kulcs ki van jelölve és hogy az Outlook szinkronizáció be van állítva az adott dolgozóknak.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>E-mail beállítások és címek megadása a vevők beszedéskezelési kapcsolattartóihoz
-Állítson be e-mail címeket a vevő kapcsolattartóknak, ha e-mail üzeneteket akar küldeni ezeknek a kapcsolattartóknak a **beszedések** lapról. A beszedési kapcsolattartó használatos alapértelmezett kapcsolattartóként a **beszedések** lapon. Beállíthat egy kivonatküldési címet egy vevőhöz ha a kivonatoknak egy az elsődleges címtől eltérő címet kell használniuk. 
+## <a name="set-up-email-and-addresses"></a>E-mailek és címek beállítása
+A vevőket és az értékesítőket a beszedések kiadásával kapcsolatban e-mailben tájékoztathatja, amelyeket a **Beszedések** oldalról küldhet. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>E-mail beállítások és címek megadása a vevők beszedéskezelési kapcsolattartóihoz
+Állítson be e-mail-címeket a vevő kapcsolattartóknak, ha e-mail üzeneteket küld ezeknek a kapcsolattartóknak a **Beszedések** lapról. A beszedési kapcsolattartó használatos alapértelmezett kapcsolattartóként a **beszedések** lapon. Beállíthat egy kivonatküldési címet egy vevőhöz ha a kivonatoknak egy az elsődleges címtől eltérő címet kell használniuk. 
 
 A vevőhöz tartozó **követelések és beszedések** gyorslapon a **beszedési kapcsolattartó** mezőben jelölje ki azt a személyt a vevő szervezetében, aki az Ön kinnlevőségkezelőjével dolgozik. Ez a személy használatos alapértelmezett kapcsolattartóként a **beszedések** lapon és az e-mail üzenetek neki kerülnek elküldésre. 
 
 > [!NOTE] 
 > Ha egy beszedési kapcsolattartó nincs megadva a vevőhöz, akkor a vevő elsődleges kapcsolattartója kerül használatra. Ha egy elsődleges kapcsolattartó nincs megadva, akkor az e-mail üzenetek a **kapcsolattartók** lapon szereplő első címre lesznek kiküldve.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Üzletkötők e-mail beállításainak megadása
-Állítson be e-mail címeket az értékesítőknek, ha e-mail üzeneteket akar küldeni nekik a **beszedések** lapról. Állítson be e-mail címet az egyes értékesítési jutalékcsoportokhoz tartozó összes üzletkötőnek. Az értékesítési képviselő, akinél ki van jelölve a **kapcsolattartó** opció az alapértelmezett értékesítő, akinek az e-mail üzenetek ki lesznek küldve. 
+### <a name="set-up-email-settings-for-salespeople"></a>Üzletkötők e-mail beállításainak megadása
+Állítson be e-mail-címeket az értékesítőknek, ha e-mail üzeneteket küld nekik a **Beszedések** lapról. Állítson be e-mail címet az egyes értékesítési jutalékcsoportokhoz tartozó összes üzletkötőnek. Az értékesítési képviselő, akinél ki van jelölve a **kapcsolattartó** opció az alapértelmezett értékesítő, akinek az e-mail üzenetek ki lesznek küldve. 
 
 Ha az értékesítési képviselő nincs megadva, akkor a vevőszervezethez tartozó elsődleges értékesítő kerül használatra. Ha az elsődleges értékesítő nincs megadva, akkor az e-mail üzenetek a lapon szereplő első értékesítőhöz lesznek kiküldve.
 

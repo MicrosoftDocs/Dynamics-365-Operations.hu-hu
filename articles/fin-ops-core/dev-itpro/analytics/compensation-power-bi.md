@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d314875287b0d69909c91450cd67c628d708cd3a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1a094402f4ed81de2f9b10f3c40557bc103eb65
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174259"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005825"
 ---
 # <a name="compensation-power-bi-content"></a>Kompenzáció Power BI tartalom
 
@@ -32,8 +32,8 @@ Ez a témakör ismerteti a **Kompenzáció** Microsoft Power BI-tartalmat. Leír
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 A **Kompenzáció** Power BI-tartalom a **Kompenzációkezelés** munkaterületen jelenik meg, amennyiben a következő termékek valamelyikét használja:
 
-- Finance and Operations alkalmazások
-- Microsoft Dynamics 365 Talent
+- Finance and Operations-alkalmazásoknak
+- Microsoft Dynamics 365 Human Resources
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Jelentések, amelyek a Power BI-tartalomban szerepelnek
 A **Kompenzáció** Power BI-tartalomban szereplő jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.

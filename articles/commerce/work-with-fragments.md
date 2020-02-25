@@ -3,7 +3,7 @@ title: Töredékek használata
 description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914700"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026040"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
@@ -57,25 +57,34 @@ A következő ábra bemutatja, hogy hogyan használhatók a töredékek a megosz
 
 Létrehozhat új töredéket hozhat, illetve egy meglévő modul konfigurációját mentheti töredékként.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Meglévő modulkonfiguráció mentése töredékként
+
+Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani, hajtsa végre az alábbi lépéseket.
+
+1. Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.
+1. A bal oldali vázlat ablaktáblán válassza a három pont gombot (**…**) a modul neve mellett. 
+1. Válassza ki a **Megosztást töredékként** lehetőséget. 
+1. Megjelenik egy párbeszédpanel. Írja be a töredék nevét és a metaadatait.
+1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
+
+A következő kép azt ábrázolja, hogyan kell menteni a modulok konfigurációját töredékként.
+
+![A modulok konfigurációjának töredékként való mentésének képernyőfelvétele](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Új töredék létrehozása
 
 Új töredék létrehozásához kövesse az alábbi lépéseket.
 
 1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
 1. Válassza az **Új oldaltöredék** lehetőséget. Megjelenik egy párbeszédpanel, amelyen az összes elérhető modultípus látható. A korábban említetteknek megfelelően a töredékek bármilyen típusú modulból létrehozhatók.
-1. Válassza ki a töredékhez tartozó modultípust, majd kattintson az **OK** gombra .
+1. A modul típusának kiválasztása a töredékhez.
 
-    > [!TIP]
-    > Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
+A következő kép bemutatja, hogy hol hozzon létre új töredéket.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Meglévő modulkonfiguráció mentése töredékként
+![Új töredék létrehozási helyének képernyőfelvétele](./media/fragment-nav-menu.png)
 
-Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani, hajtsa végre az alábbi lépéseket.
-
-1. Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.
-1. A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt modul neve melletti három pont gombot (**…**), majd válassza a **Mentés töredékként** lehetőséget. Megjelenik egy párbeszédpanel.
-1. Írja be a töredék nevét és a metaadatait.
-1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
+> [!TIP]
+> Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Töredékek hozzáadása, eltávolítása vagy szerkesztése egy lapon
 
@@ -88,11 +97,15 @@ Töredék hozzáadásához a oldalhoz tegye a következőket:
 1. A bal oldali vázlat ablaktáblán válassza ki azt a tárolóhelyet vagy bővítőhelyet, amelyhez hozzá szeretné adni a származtatott modulokat.
 1. Jelölje be a három pontot ábrázoló gombot a tároló vagy a bővítőhely neve mellett, majd kattintson a **Töredék hozzáadása** lehetőségre. Megjelenik egy párbeszédpanel.
 
+    ![A meglévő töredékek bővítőhelyhez vagy konténerhez történő hozzáadásának képernyőfelvétele](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.
-
+    
 1. A párbeszédpanelen keressen meg. és válasszon ki egy töredéket, hogy hozzáadja. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
-1. Az **OK** gombra kattintva adja hozzá a kijelölt töredéket a kiválasztott tárolóhoz vagy helyhez a lapon.
+1. Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.
+
+    ![A töredékkiválasztó modális ablak képernyőfelvétele](./media/fragment-picker.png)
 
 > [!NOTE]
 > A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899032"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006287"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 30.)
 
@@ -41,7 +41,7 @@ A szakaszban ismertetett módosítások a 8.1.2409-ös buildre vonatkoznak.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Kanada és Délkelet-Ázsia régióinak támogatása
 
-Örömmel jelentjük be, hogy a kanadai és a délkelet-ázsiai régiók 2019. augusztus 1-től elérhetők lesznek a Talent szolgáltatásban. Ezzel a módosítással környezeteket hozhat létre a kanadai és ázsiai régiókban, és az összes Talent-adat a megadott helyeken belül marad. Létrehozhat egy környezetet ezekben az új régiókban azáltal, hogy kiválasztja a helyet az Új környezet párbeszédpanelen, és a környezet segítségével beállítja a Talentet az LCS-ben a következő alapján: [A Talent létesítése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Örömmel jelentjük be, hogy a kanadai és a délkelet-ázsiai régiók 2019. augusztus 1-től elérhetők lesznek a Talent szolgáltatásban. Ezzel a módosítással környezeteket hozhat létre a kanadai és ázsiai régiókban, és az összes Talent-adat a megadott helyeken belül marad. Létrehozhat egy környezetet ezekben az új régiókban azáltal, hogy kiválasztja a helyet az Új környezet párbeszédpanelen, és a környezet segítségével beállítja a Talentet az LCS-ben a következő alapján: [A Talent létesítése](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 A más régiókból származó projektek adatainak a kanadai és ázsiai régiókba irányuló áttelepítése nem támogatott. Csak az új projekteket lehet telepíteni ezeknél az új, támogatott régióknál.
 

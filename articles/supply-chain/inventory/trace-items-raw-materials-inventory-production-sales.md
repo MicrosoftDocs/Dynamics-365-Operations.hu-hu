@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562530"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004065"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
 
@@ -44,7 +44,7 @@ A Cikk-követés egy üzleti intelligencia (BI) eszköz, ami egy ellátási lán
 -   Vizsgálja meg, ha egy cikket vagy egy alapanyag volt a termelés során felhasznált másik cikk.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Mire tudom nyomon követhető, és vannak-e korlátozások?
-Nyomon követheti a korábbi készletbeszerzési tranzakciókat a cikkeket és a nyersanyagokat illetően, a cikkszám és a nyomon követési dimenzió alapján például egy sorozatszám, a kötegszám vagy a szállítói köteg száma alapján. Csak akkor követhet le cikket vagy nyersanyagot, ha ahhoz tartozik nyomon követési dimenzió. A cikkek nyomon követésének vannak korlátai, mivel a nyomon követés a készlettranzakciókon alapszik. Például vannak korlátozások amik a projektek, tárgyi eszközök és a kiskereskedelem tranzakcióihoz kapcsolódnak. Ezenkívül, míg a társtermékek megjelenítésre kerülnek a nyomon követési adatok között, addig a melléktermékek nem. A nyomon követés tartalmazza az összes egyik helyről a másikra történő raktári tranzakciót. Emiatt a felhasználók számára túl sok lehet a megtalálható információ. A nyomkövetés egyszerre csak egy jogi személy számára jelenik meg. Egy vállalatközi környezetben nincsenek több vállalatot érintő funkciók. Minden olyan vállalat esetében új nyomon követést kell alkalmaznia ahol egy cikket bevételeznek vagy kiadnak.
+Nyomon követheti a korábbi készletbeszerzési tranzakciókat a cikkeket és a nyersanyagokat illetően, a cikkszám és a nyomon követési dimenzió alapján például egy sorozatszám, a kötegszám vagy a szállítói köteg száma alapján. Csak akkor követhet le cikket vagy nyersanyagot, ha ahhoz tartozik nyomon követési dimenzió. A cikkek nyomon követésének vannak korlátai, mivel a nyomon követés a készlettranzakciókon alapszik. Például vannak korlátozások, amik a projektek, tárgyi eszközök és a kereskedelem tranzakcióihoz kapcsolódnak. Ezenkívül, míg a társtermékek megjelenítésre kerülnek a nyomon követési adatok között, addig a melléktermékek nem. A nyomon követés tartalmazza az összes egyik helyről a másikra történő raktári tranzakciót. Emiatt a felhasználók számára túl sok lehet a megtalálható információ. A nyomkövetés egyszerre csak egy jogi személy számára jelenik meg. Egy vállalatközi környezetben nincsenek több vállalatot érintő funkciók. Minden olyan vállalat esetében új nyomon követést kell alkalmaznia ahol egy cikket bevételeznek vagy kiadnak.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Milyen feltételek alapján lehet megadni a cikk-követés?
 A cikk-követéshez szükséges kritériumok a következők: cikk szám, nyomon követési dimenzió (például kötegszám vagy sorozatszám) és irány. A következő táblázat leírja a feltételeket, amelyek a cikk-követés használható.

@@ -19,22 +19,24 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ecda571a356c6968196d09cc19923105cf4544ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2d3f1bc2526eeacb4bd6338a0679eadd95a75989
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770139"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024956"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak. A termékajánlási listákkal kapcsolatos további tudnivalókat lásd: [Termékajánlások áttekintése](product-recommendations.md).
 
 ## <a name="recommendations-pre-check"></a>Javaslatok előzetes ellenőrzése
-Az engedélyezés előtt fekhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a F&O-ügyfelek számára támogatott, akik 10.0.6-os builddel rendelkeznek, és tárhelyüket BDL használatával áttelepítették. 
+
+Az engedélyezés előtt fekhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage (ADLS) felhasználói. 
+
+Az ADLS engedélyezésével kapcsolatos lépéseket lásd [ADLS engedélyezése a Dynamics 365 környezetben](enable-ADLS-environment.md).
 
 Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. Ha további tájékoztatást szeretne erről a beállítási folyamatról, kattintson [ide.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
 
@@ -43,28 +45,38 @@ Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve 
 
 A termékajánlások bekapcsolásához kövesse az alábbi lépéseket.
 
-1. Válassza a **Retail** &gt; **Termékjavaslatok** &gt; **Ajánlási paraméterek** elemet.
-1. A kiskereskedelmi megosztott paraméterek listáján válassza az **Ajánlati listák** elemet.
+1. Válassza a **Retail and Commerce &gt; Termékjavaslatok &gt; Ajánlási paraméterek** elemet.
+1. A megosztott paraméterek listáján válassza az **Ajánlati listák** elemet.
 1. Állítsa a **Javaslatok engedélyezése** beállítást **Igen** lehetőségre.
 
 ![termékjavaslatok engedélyezése](./media/enableproductrecommendations.png)
 
 > [!NOTE]
-> Ez az eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 for Commerce szolgáltatásban lehet megtekinteni.
+> Ez az eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 Commerce szolgáltatásban lehet megtekinteni.
 
 ## <a name="configure-recommendation-list-parameters"></a>A javaslati lista paramétereinek konfigurálása
+
 Alapértelmezés szerint az AI-ML-alapú termékjavaslati lista javasolt értékeket tartalmaz. Az alapértelmezett javasolt értékek módosíthatók, hogy megfeleljenek az Ön vállalatának. Az alapértelmezett paraméterek módosításával kapcsolatos további tudnivalókat az [AI-ML-alapú termékajánlás eredményeinek kezelése](modify-product-recommendation-results.md) témakörben talál.
 
 ## <a name="show-recommendations-on-pos-devices"></a>Javaslatok megjelenítése pénztáreszközökön
-Miután engedélyezte a javaslatokat a háttérirodában, hozzá kell adnia a javaslatok panelt a vezérlő pénztárképernyőhöz az elrendezés eszközzel. Ha további tájékoztatást szeretne erről a folyamatról, lépjen [ide.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)
 
+Miután engedélyezte a javaslatokat a Commerce háttérirodában, hozzá kell adnia a javaslatok panelt a vezérlő pénztárképernyőhöz az elrendezés eszközzel. A folyamattal kapcsolatos további tudnivalókat lásd: [Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](add-recommendations-control-pos-screen.md). 
+
+## <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
+
+Ha további tájékoztatást szeretne arról, hogyan lehet személyre szabott ajánlásokat kapni, lásd: [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
 [Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
 
-[Ajánlások panel hozzáadása a pénztáreszközökhöz](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)
+[Ajánlások panel hozzáadása a pénztáreszközökhöz](add-recommendations-control-pos-screen.md)
 
+[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
+
+[ADLS engedélyezése a Dynamics 365 környezetben](enable-ADLS-environment.md)
 

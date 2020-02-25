@@ -16,104 +16,104 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
-ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
+ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870241"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017728"
 ---
 # <a name="embed-microsoft-power-apps"></a>A Microsoft Power Apps beágyazása
 
 [!include [banner](../includes/banner.md)]
 
-A 14-es platformfrissítés támogatja a Microsoft Power Apps integrációt, amely egy fejlesztők és nem szakember felhasználók számára készült szolgáltatás, amellyel egyedi üzleti alkalmazások készíthetők mobilkészülékekre, táblagépekre és a webre, kód írása nélkül. Ön, a szervezete vagy a szélesebb ökoszisztéma által kifejlesztett Power Apps alkalmazások beilleszthetők a Finance and Operations alkalmazásokba, hogy kiterjesszék a termék funkcionalitását. Létrehozhat például egy Power App alkalmazást a Finance and Operations-alkalmazások adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez.
+A Finance and Operations támogatja a Microsoft Power Apps integrációt, amely egy fejlesztők és nem szakember felhasználók számára készült szolgáltatás, amellyel egyedi üzleti alkalmazások készíthetők mobilkészülékekre, táblagépekre és a webre, kód írása nélkül. Ön, a szervezete vagy a szélesebb ökoszisztéma által kifejlesztett Power Apps alkalmazások beilleszthetők a Finance and Operations alkalmazásokba, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy Power Apps alkalmazást egy Finance and Operations alkalmazás kiegészítésére egy másik rendszerből lekért információkkal.
 
 Ha többet szeretne megtudni a Power Apps beágyazásáról, nézze meg a rövid [A Power Apps beágyazása a rendszerben](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
 
-## <a name="adding-an-embedded-power-app-to-a-page"></a>Beágyazott Power App hozzáadása egy oldalhoz
+## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Beágyazott alkalmazás Power Apps megoldáshoz hozzáadása egy oldalhoz
 
 ### <a name="overview"></a>Áttekintés
 
-Mielőtt Power Appot ágyazna be az ügyfélbe, először meg kell találnia vagy létre kell hoznia a kívánt megjelenéssel és/vagy funkciókkal rendelkező Power Appot. Itt nem írjuk le a Power App-építés részletes folyamatát. A [Power Apps – bevezetés](https://docs.microsoft.com/powerapps/getting-started) témakör jó kiindulási pont el, ha még nem használta a Power Apps megoldást.
+Mielőtt Power Apps-ból alkalmazást ágyazna be a kliensbe, először meg kell találnia vagy létre kell hoznia egy alkalmazást a kívánt megjelenéssel és/vagy funkcionalitással. Itt nem írjuk le az alkalmazásépítés részletes folyamatát. A [Power Apps – bevezetés](https://docs.microsoft.com/powerapps/getting-started) témakör jó kiindulási pont el, ha még nem használta a Power Apps megoldást.
 
-Ha készen áll egy adott Power App beágyazására, két lehetőség közül választhat a Power App adott lapon való eléréséhez (annak megfelelően válasszon, hogy melyik illeszkedik jobban az igényeihez). Az első módszer a Power Apps gomb használata, amely hozzá lett adva a szokásos műveletpanelhez. Ily módon hozzáadott Power Apps alkalmazások a Power Apps menügombon belüli menüben jelennek meg. Kiválasztása esetén a menüpontok mindegyike olyan oldalsó ablaktáblát nyit meg, amelyen a beágyazott Power App található. Másik lehetőségként választhatja a Power App közvetlen megjelenítését egy oldalon új lap, gyorslap, panel vagy munkaterület-szakasz formájában.
+Ha készen áll egy adott alkalmazás beágyazására, kétféle lehetőség közül választhat a hozzáférésnél a alkalmazáshoz a lapon, annak megfelelően, hogy melyik illeszkedik jobban a forgatókönyvhöz. Az első módszer a Power Apps gomb használata, amely hozzá lett adva a szokásos műveletpanelhez. Ily módon hozzáadott alkalmazások a Power Apps menügombon belüli menüben jelennek meg. Kiválasztás esetén a menüpontok mindegyike oldalsó ablaktáblát nyit meg, amely a beágyazott alkalmazást tartalmazza. Másik lehetőségként választhatja az alkalmazás beágyazását közvetlenül egy oldalon új lap, gyorslap, lapát vagy munkaterület új szakasza formájában.
 
-A beágyazott Power App beállításakor az alkalmazásban kiválaszthat egyetlen olyan mezőt, amelyet el szeretne küldeni a Power App számára bevitelként. Ez lehetővé teszi, hogy a Power App az aktuálisan megtekintett adatok alapján legyen válaszképes.
+A beágyazott alkalmazás beállításakor az alkalmazásban kiválaszthat egyetlen olyan mezőt, amelyet el szeretne küldeni az alkalmazásba kontextusként. Ez lehetővé teszi, hogy az alkalmazás az aktuálisan megtekintett adatok alapján legyen válaszképes.
 
 ### <a name="details"></a>Részletek
 
-Az alábbi utasítások azt mutatják be, hogyan történik a Power App beágyazása a webes ügyfélbe.
+Az alábbi utasítások azt mutatják be, hogyan történik az alkalmazás Power Apps-ba beágyazása a webes ügyfélbe.
 
-1. Lépjen arra az oldalra, ahol be szeretné ágyazni a Power Appot. Ez az az oldal lesz, amely olyan adatokat tartalmaz, amelyeket át kell adni a Power App számára bemenetként.
-2. Nyissa meg a **Power App beszúrása** ablakot:
+1. Lépjen arra az oldalra, ahol be szeretné ágyazni az alkalmazást. Ez ugyanaz az oldal lesz, amely bármilyen olyan adatot tartalma, amelyet át kell adni az alkalmazás számára bemenetként.
+2. Nyissa meg az **Alkalmazás hozzáadása a Power Apps-ból** lapot:
 
-    - Kattintson a **Beállítások** elemre, majd válassza a **Képernyő személyre szabása** elemet. A **Beszúrás** menüben válassza a **Power App** lehetőséget. Végül válassza ki a területet, ahova a Power Appot hozzá kívánja adni. Ha a Power App alkalmazást a Power Apps menügomb alá szeretné beágyazni, válassza a műveletpanelt. Ha közvetlenül a lapra szeretné beágyazni a Power App alkalmazást, válassza ki a megfelelő lapot, gyorslapot, panelt vagy szakaszt (ha munkaterületen tartózkodik).
-    - Ha a Power App a Power Apps menügomb segítségével lesz érhető, a normál Műveletpanelen kattintson a **Power Apps** menügombra, majd válassza a **Power App beszúrása** lehetőséget.
+    - Kattintson a **Beállítások** elemre, majd válassza az **Oldal személyre szabása** elemet. A **Beszúrás** menü alatt válassza a **Power Apps** lehetőséget. Végül válassza ki a területet, ahova az alkalmazást hozzá kívánja adni. Ha az alkalmazást a Power Apps menügomb alá szeretné beágyazni, válassza a műveletpanelt. Ha szeretné közvetlenül a lapra beágyazni az alkalmazást, válassza ki a megfelelő lapot, gyorslapot, lapátot vagy szakaszt (ha munkaterületen tartózkodik).
+    - Ha az alkalmazás a Power Apps menügomb segítségével lesz érhető, a normál Műveletpanelen kattintson a **Power Apps** menügombra, majd válassza az **Alkalmazás hozzáadása** lehetőséget.
 
-3. Beágyazott Power App konfigurálása:
+3. Beágyazott alkalmazás konfigurálása:
 
-    - A **Név** mező jelzi annak a gombnak vagy lapnak a megjelenő szövegét, amely tartalmazza a beágyazott Power Appot. Gyakran érdemes megismételni a Power App nevét ebben a mezőben.
-    - **Alkalmazás azonosítója:** a beágyazni kívánt Power App GUID azonosítója. Az érték lekérdezéséhez keresése meg a Power App alkalmazást a [web.powerapps.com](https://web.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** területen.
-    - A **Power App adatbevitel** elemnél kiválaszthatja azt a mezőt, amely a Power App számára bemenetként továbbítandó adatokat tartalmazza. Arról, hogy a Power App hogyan elérheti el a Finance and Operations-alkalmazásokból továbbított adatokat, a cikk későbbi részén olvashat: [A Finance and Operations-alkalmazások adatait használó Power App felépítése](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps).
-    - Válassza azt az **Alkalmazásméretet**, amely megfelel a beágyazott Power App típusának. Válassza ki **Vékony** lehetőséget a mobileszközök számára épített Power Apps, és a **Széles lehetőséget** a táblagépekhez létrehozott Power Apps esetében. Ez biztosítja, hogy a beágyazott Power App számára elég terület kerüljön kiosztásra.
-    - A **Jogi személyek** gyorslapon választható ki, hogy melyik jogi személyek számára legyen elérhető a Power App. Alapértelmezés szerint a Power App minden jogi személynél megjelenik.
+    - A **Név** mező jelzi annak a gombnak vagy lapnak a megjelenő szövegét, amely tartalmazza a beágyazott alkalmazást. Gyakran érdemes megismételni az alkalmazás nevét ebben a mezőben.
+    - **Alkalmazás azonosítója:** a beágyazni kívánt alkalmazás GUID azonosítója. Az érték lekérdezéséhez keresése meg az alkalmazást a [web.powerapps.com](https://web.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** alatt.
+    - Az **Alkalmazás kontextusának bevitele** elemnél kiválaszthatja azt a mezőt, amely az alkalmazás számára bemenetként továbbítandó adatokat tartalmazza. Lásd a következő című részt a témakör későbbi részében: [A Finance and Operations alkalmazások adatait használó alkalmazás felépítése](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) arról, hogy az alkalmazás hogyan elérheti el a Finance and Operations alkalmazásból továbbított adatokat.
+    - Válassza azt az **Alkalmazásméretet**, amely megfelel a beágyazott alkalmazás típusának. Válassza ki **Vékony** lehetőséget a mobileszközök számára épített alkalmazások, és a **Széles** lehetőséget a táblagépekhez létrehozott alkalmazások esetében. Ez biztosítja, hogy a beágyazott alkalmazás számára elegendő mennyiségű hely kerül kiosztásra.
+    - A **Jogi személyek** gyorslap teszi lehetővé annak a kiválasztását, hogy melyik jogi személyekre nézve érhető el az alkalmazás. Alapértelmezés szerint a alkalmazás minden jogi személy számára hozzáférhető. Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció. 
 
-4. Miután megerősítette, hogy a konfiguráció helyes, kattintson a **Beszúrás** elemre a Power App oldalba való beágyazásához. A rendszer kéri a böngésző frissítését, hogy megjelenjen a beágyazott Power App.
+4. Miután megerősítette, hogy a konfiguráció helyes, kattintson a **Beszúrás** elemre a Power App oldalba való beágyazásához. A rendszer rákérdez a böngésző frissítésére ahhoz, hogy megjelenjen a beágyazott alkalmazás.
 
-## <a name="sharing-an-embedded-power-app"></a>A beágyazott Power App megosztása
+## <a name="sharing-an-embedded-app"></a>A beágyazott alkalmazás megosztása
 
-Miután beágyazott egy Power App alkalmazást egy oldalra, és meggyőződött, hogy megfelelően működik az oldalról átadott adatkontextusokkal, érdemes megosztani a beágyazott Power App alkalmazást a rendszer többi felhasználójával. Ez kétféleképpen érhető el a termék személyre szabási képességeinek használatával:
+Miután beágyazott egy alkalmazást egy oldalra, és meggyőződött, hogy megfelelően működik az oldalról átadott adatkontextusokkal, érdemes megosztani a rendszer többi felhasználójával. Ez kétféleképpen érhető el a termék személyre szabási képességeinek használatával:
 
 - Az ajánlott forgatókönyv a rendszergazdán keresztüli lebonyolítás, aki a személyre szabást közzéteheti az összes felhasználónak vagy a felhasználók egy részhalmazának.
-- Alternatívaként exportálhatja az oldal személyre szabásait, elküldheti őket egy vagy több felhasználónak, és e felhasználók mindegyike importálhatja a módosításokat. A személyre szabási eszköztáron található Kezelése opcióval bonyolítható a személyes beállítások exportálása és importálása.
+- Alternatívaként exportálhatja az oldal személyre szabásait, elküldheti őket egy vagy több felhasználónak, és e felhasználók mindegyike importálhatja a módosításokat. A személyre szabási eszköztáron található műveletekkel végezhető el a személyes beállítások exportálása és importálása.
 
 A termék személyre szabási funkcióival és a használatukkal kapcsolatos bővebb információért lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
-## <a name="building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások adatait használó Power App felépítése
+## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>A Finance and Operations alkalmazásokból küldött adatokat kihasználó alkalmazás létrehozása
 
-A Finance and Operations-alkalmazásokba beágyazott Power App felépítésének fontos része a Finance and Operations-alkalmazások beviteli adatainak felhasználása. A Power App alkalmazáson belül a bemeneti adatok a Param("EntityId") változó segítségével érhetők el.
+Fontos része az alkalmazás építésének a Power Apps-ból – amely be lesz ágyazva a Finance and Operations alkalmazásba – a bemeneti adatoknak az alkalmazásból történő felhasználása. A Power Apps fejlesztői élményből a Finance and Operations alkalmazás által átadott bemeneti adat a Param("EntityId") változó használatával érhető el.
 
-Például a Power App OnStart függvényében a Finance and Operations-alkalmazásokból származó bemeneti adatokat egy változóra állíthatja be:
+Például az alkalmazás OnStart függvényében a Finance and Operations alkalmazásokból származó bemeneti adatokat egy változóra állíthatja be:
 
 ```
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-embedded-power-app"></a>Beágyazott Power App megtekintése
+## <a name="viewing-an-app"></a>Egy alkamazás megtekintése
 
-Egy beágyazott Power App Finance and Operations-alkalmazásokban való megtekintéséhez, ugorjon a beágyazott Power App oldalára. Emlékezzünk vissza, hogy a Power Apps alkalmazások a Power Apps gombon keresztül érhetők el a normál műveletpanelen, vagy megjelenhetnek közvetlenül új lapként, gyorslapként, lapátként vagy munkaterület új részeként. Amikor egy felhasználó először próbál betölteni egy oldalon egy Power App alkalmazást, a rendszer megkéri a Power Apps rendszerbe való bejelentkezésre; így ellenőrizhető, hogy a felhasználó rendelkezik a megfelelő engedélyekkel a Power App futtatásához.
+Egy beágyazott alkalmazás megtekintéséhez egy lapon a Finance and Operations alkalmazásokban, ugorjon a beágyazott alkalmazás oldalára. Emlékezzünk vissza, hogy az alkalmazások a Power Apps gombon keresztül érhetők el a normál műveletpanelen, vagy megjelenhetnek közvetlenül új lapként, gyorslapként, lapátként vagy munkaterület új részeként. Amikor egy felhasználó először próbál betölteni egy oldalon egy alkalmazást, a rendszer megkéri a bejelentkezésre; így ellenőrizhető, hogy a felhasználó rendelkezik a megfelelő engedélyekkel az alkalmazás futtatásához.
 
-## <a name="editing-an-embedded-power-app"></a>Beágyazott Power App szerkesztése
+## <a name="editing-an-embedded-app"></a>Beágyazott alkalmazás szerkesztése
 
-Egy Power App oldalba ágyazását követően előfordulhat, hogy módosítania kell a Power App konfigurációját. Lehet, hogy például módosítani szeretné a beágyazott Power App társított címkéjét, vagy a Power App új verziója érhető el, és frissíteni kell az alkalmazásazonosítót, hogy a legújabb a Power Appre mutasson.
+Egy alkalmazás egy oldalba ágyazását követően előfordulhat, hogy módosítania kell az alkalmazás konfigurációját. Például, esetleg módosítani szeretné a beágyazott alkalmazáshoz társított címkét, vagy létrejött az alkalmazás új verziója, és frissítenie kell az alkalmazásazonosítót, hogy a legújabbra mutasson.
 
-Beágyazott Power App konfigurációjának módosításához kövesse az alábbi lépéseket:
+Beágyazott alkalmazás konfigurációjának módosításához kövesse az alábbi lépéseket:
 
-1. Lépjen a **Power App szerkesztése** panelre.
+1. Lépjen az **Alkalmazás szerkesztése** panelre.
 
-    - A beágyazott Power App a Power Apps menügombbal érhető el: kattintson a jobb gombbal a Power Apps menügombra, és válassza a **Személyre szabás** lehetőséget. Jelölje ki a **Power App kiválasztása** legördülő menüből a konfigurálni kívánt Power Appet.
-    - Ha a beágyazott Power App közvetlenül az oldalon jelenik meg, válassza a **Beállítások** lehetőséget, majd a **Képernyő személyre szabása** elemet. Használja a **Kiválasztás** eszközt, kattintson a beágyazott Power Appre.
+    - A beágyazott alkalmazás a Power Apps menügombbal érhető el: kattintson a jobb gombbal a Power Apps menügombra, és válassza a **Személyre szabás** lehetőséget. Jelölje ki az **Alkalmazás kiválasztása** legördülő menüből a konfigurálni kívánt alkalmazást.
+    - Ha a beágyazott alkalmazás közvetlenül az oldalon jelenik meg, válassza a **Beállítások** lehetőséget, majd az **Oldal személyre szabása** elemet. Használja a **Kiválasztás** eszközt, kattintson a beágyazott alkalmazásra.
 
-2. Végezze el a szükséges módosításokat a Power Apps konfiguráción, és kattintson a **Mentés** elemre.
+2. Végezze el a szükséges módosításokat az alkalmazáskonfiguráción, és kattintson a **Mentés** elemre.
 
-## <a name="removing-an-embedded-power-app"></a>Beágyazott Power App eltávolítása
+## <a name="removing-an-app"></a>Egy alkalmazás eltávolítása
 
-Egy Power App oldalba ágyazását követően szükség esetén kétféle módon távolíthatja el az alkalmazást:
+Egy alkalmazás oldalba ágyazását követően szükség esetén kétféle módon távolíthatja el azt:
 
-- Lépjen a **Power App szerkesztése** panelre, a jelen cikk fenti, [Beágyazott Power App szerkesztése](#editing-an-embedded-power-app) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott Power App adatai láthatók, majd kattintson a **Törlés** gombra.
-- Mivel a beágyazott Power App mentése személyre szabási adatokként történik, az oldal személyre szabásának törlése az összes az oldalba beágyazott Power Apps alkalmazásokat szintén eltávolítja. Vegye figyelembe, hogy a lap személyre szabása végleges, és nem vonható vissza. Ha el szeretné távolítani egy lap személyes beállításait, válassza a **Lehetőségek** elemet, majd kattintson a **Képernyő személyre szabása** elemre. A **Kezelés** menüben válassza a **Törlés** gombot. A böngésző frissítése után az oldal összes korábbi személyre szabási beállítása eltávolításra kerül. A lapok személyre szabással való optimalizációjával kapcsolatos további tudnivalók: [A felhasználói élmény testreszabása](personalize-user-experience.md).
+- Lépjen az **Alkalmazás szerkesztése** panelre, a jelen cikk fenti, [Beágyazott alkalmazás szerkesztése](#editing-an-embedded-power-app) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott alkalmazás adatai láthatók, majd kattintson a **Törlés** gombra.
+- Mivel a beágyazott alkalmazás mentése személyre szabási adatokként történik, az oldal személyre szabásának törlése az összes az oldalba beágyazott alkalmazásokat szintén eltávolítja. Vegye figyelembe, hogy a lap személyre szabása végleges, és nem vonható vissza. Ha el szeretné távolítani egy lap személyes beállításait, válassza a **Lehetőségek** elemet, majd kattintson az **Oldal személyre szabása** elemre, végül kattintson a **Törlés** gombra. A böngésző frissítése után az oldal összes korábbi személyre szabási beállítása eltávolításra kerül. A lapok személyre szabással való optimalizációjával kapcsolatos további tudnivalók: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Melléklet
 
-### <a name="developer-control-over-where-a-power-app-can-be-embedded"></a>A Power App beágyazási helyének fejlesztői ellenőrzése
+### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Fejlesztői ellenőrzés afölött, hogy hova ágyazható be egy alkalmazás
 
-Alapértelmezés szerint a felhasználók minden lapon beágyazhatnak Power Apps alkalmazásokat vagy a Power Apps menügombbal, vagy közvetlenül az oldalon lap, gyorslap, lapát vagy munkaterület új szakasza formájában. Szükség esetén azonban a fejlesztők beállíthatják ezt a funkciót úgy is, hogy csak a Power Apps alkalmazások egyes oldalakon történő beágyazását engedélyezze az alábbi módszerek végrehajtásával:
+Alapértelmezés szerint a felhasználók minden lapon beágyazhatnak alkalmazásokat vagy a Power Apps menügombbal, vagy közvetlenül az oldalon lap, gyorslap, lapát vagy munkaterület új szakasza formájában. Szükség esetén azonban a fejlesztők beállíthatják ezt a funkciót úgy is, hogy csak az alkalmazások egyes oldalakon történő beágyazását engedélyezze az alábbi módszerek végrehajtásával:
 
-- **isPowerAppPersonalizationEnabled** – Ha ez a módszer hamis értéket ad vissza az egy adott oldalra, a Power Apps menügomb nem lesz látható, a felhasználók nem tudnak beágyazni Power Apps alkalmazást sehova ezen az oldalon, lapként sem.
-- **isPowerAppTabPersonalizationEnabled** – Ha ez a módszer hamis értéket ad vissza az egy adott oldalra, a felhasználók nem tudnak Power Apps alkalmazásokat beágyazni közvetlenül az oldalon sem lapként, sem gyorslapként, sem panorámaszakaszként. A felhasználók továbbra is beágyazhatják a Power Apps alkalmazásokat a Power Apps menügombbal, ha az oldalon megengedett a beágyazás.
+- **isPowerAppPersonalizationEnabled** – Ha ez a módszer hamis értéket ad vissza az egy adott oldalra, a Power Apps menügomb nem lesz látható, a felhasználók nem tudnak beágyazni alkalmazásokat sehova ezen az oldalon, lapként sem.
+- **isPowerAppTabPersonalizationEnabled** – Ha ez a módszer hamis értéket ad vissza az egy adott oldalra, a felhasználók nem tudnak alkalmazásokat beágyazni közvetlenül az oldalon sem lapként, sem gyorslapként, sem panorámaszakaszként. A felhasználók továbbra is beágyazhatják az alkalmazásokat a Power Apps menügombbal, ha az oldalon megengedett a beágyazás.
 
-A következő példa bemutat egy új osztályt a két konfigurálandó metódussal, ahol a Power Apps beágyazható.
+A következő példa bemutat egy új osztályt a két konfigurálandó metódussal, ahol alkalmazások ágyazhatók be.
 
 ```
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]

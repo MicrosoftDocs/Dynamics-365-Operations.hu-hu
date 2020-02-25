@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 868b0781a84d345297ab40b1a423272e47d50ec5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 263fa2fc97e39b0521407d3fdc5a6d6e3f2ca034
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249158"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005756"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI tartalom
 
@@ -35,7 +35,7 @@ Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI tartalmat ismerteti. 
 A **Munkaerő-mutatók** Power BI tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
 - Microsoft Dynamics 365 Finance
-- Microsoft Dynamics 365 Talent
+- Microsoft Dynamics 365 Human Resources
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
 Az alábbi táblázat felsorolja az egyes jelentésekben megjelenő mutatókat.
@@ -61,7 +61,7 @@ Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramoka
 Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI tartalmat töltse le, amely a Microsoft Dynamics 365 ön által használt verziójára vonatkozik.
 
 > [!NOTE]
-> A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations alkalmazásokra érvényesek.
+> A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations-alkalmazásokra érvényesek.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.

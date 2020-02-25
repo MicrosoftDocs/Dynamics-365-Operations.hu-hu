@@ -1,5 +1,5 @@
 ---
-title: Szabadszöveges számlák létrehozása
+title: Szabadszöveges számla létrehozása
 description: Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni.
 author: mikefalkner
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4498f5c9ce0e3830ffe1857c0363ca962561fc59
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 909dd5bcaf1fa3b82adb44d265e312f9acc607d2
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178150"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000070"
 ---
-# <a name="create-free-text-invoices"></a>Szabadszöveges számlák létrehozása
+# <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
 [!include [banner](../includes/banner.md)]
 

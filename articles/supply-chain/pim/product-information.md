@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570748"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003996"
 ---
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570748"
 
 Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba. 
 
-A termékinformáció az ellátási lánc és a kiskereskedelmi alkalmazások gerince minden ágazatban. Olyan folyamatokra és technológiákra utal, amelyek középpontjában a termékekkel kapcsolatos információk központi kezelése áll (például az ellátási láncok között). Nagyon fontos, megosztott termékdefiníciókat, dokumentációkat, attribútumokat és azonosítókat használjanak. Az üzleti megoldások különböző moduljaiban termékkel kapcsolatos információkra és a konfigurálásra van szükség az egyes termékekhez, termékcsaládokhoz vagy termékkategóriákhoz kapcsolódó üzleti folyamatok kezeléséhez.
+A termékinformáció az ellátási lánc és a kereskedelmi alkalmazások gerince minden ágazatban. Olyan folyamatokra és technológiákra utal, amelyek középpontjában a termékekkel kapcsolatos információk központi kezelése áll (például az ellátási láncok között). Nagyon fontos, megosztott termékdefiníciókat, dokumentációkat, attribútumokat és azonosítókat használjanak. Az üzleti megoldások különböző moduljaiban termékkel kapcsolatos információkra és a konfigurálásra van szükség az egyes termékekhez, termékcsaládokhoz vagy termékkategóriákhoz kapcsolódó üzleti folyamatok kezeléséhez.
 
 ## <a name="product-definition"></a>Termékdefiníció
 

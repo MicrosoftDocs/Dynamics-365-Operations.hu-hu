@@ -3,7 +3,7 @@ title: A kezdőlap áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban nyújt áttekintést.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698280"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025971"
 ---
 # <a name="overview-of-the-home-page"></a>A kezdőlap áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban nyújt áttekintést.
@@ -45,19 +45,19 @@ A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít
 
 - **Főkép** – Általában a fő szakasz felső részén található első elem egy vagy több „főkép” képet jelenít meg, amelyek az üzlet új termékekeit és promócióit emelik ki. Ha több főkép van, akkor egy forgótár modulban vannak tárolva, így a felhasználók böngészhetik azokat.
 
-    A következő ábra egy olyan kezdőlap példáját mutatja be, amelynél a fő szakasz első eleme egy **Most érkezett**nevű főkép modul.
+    A következő ábra egy olyan kezdőlap példáját mutatja be, amelynél a fő szakasz első eleme egy „Most érkezett” nevű tartalomblokk modul főkép-elrendezése.
 
     ![Példa egy főkép modulra](./media/Hero.PNG)
 
-- A **Funkció** modul a termékek és a promóciók képek és szövegek kombinálásával történő forgalmazására szolgál. A Funkció modulok önállóan is használhatók, de a elhelyezhetők forgótár modulban is.
+- **Funkció** – a tartalomblokk modul funkcióelrendezése a termékek és a promóciók képek és szövegek kombinálásával történő forgalmazására szolgál. A funkcióelrendezések önállóan is használhatók, de elhelyezhetők forgótár modulban is.
 
-    A következő ábra a kezdőlapon található funkciómodulokra mutat be egy példát.
+    A következő ábra a kezdőlapon található tartalomblokk modul funkcióelrendezésére mutat be egy példát.
 
     ![Példák a funkciómodulokra](./media/Feature.PNG)
 
-- **Tartalomelhelyezés** – A tartalomelhelyezés modul a különböző termékek vagy termékkategóriák megjelenítésére szolgál a képek és a szöveg kombinációjának használatával a többoszlopos elrendezésben. A jelen témakörben korábban bemutatott kezdőlap illusztráción egy tartalmi elhelyezési modul van használva a **Vásárlás nőknek**, **Vásárlás férfiaknak** és **Kiegészítők vásárlása** elemekhez.
+- **Csempe** – a tartalomblokk modul csempeelrendezése a különböző termékek vagy termékkategóriák megjelenítésére szolgál a képek és a szöveg kombinációjának használatával a többoszlopos elrendezésben. A jelen témakörben korábban bemutatott kezdőlap illusztráción egy csempeelrendezés van használva a **Vásárlás nőknek**, **Vásárlás férfiaknak** és **Kiegészítők vásárlása** háromoszlopos leképezéshez.
 - **Videolejátszó** – A videolejátszó modul videotartalom megjelenítésére használható a kezdőlapon. A témakörben korábban bemutatott Kezdőlap illusztrációja egy videolejátszó modult is tartalmaz.
-- **Tartalomgazdag blokkmodul** – a tartalomgazdag blokkmodul a kezdőlapon egy egyoszlopos vagy többoszlopos elrendezésben megjeleníthető szöveges tartalom megjelenítésére használható.
+- **Szövegblokk** – a tartalomgazdag blokkmodul a kezdőlapon egy egyoszlopos vagy többoszlopos elrendezésben megjeleníthető szöveges tartalom megjelenítésére használható.
 - **Termékjavaslatok** – A termékjavaslatok modulok olyan listák megjelenítésére használhatók a kezdőlapon, mint az **Új**, **Népszerű** és **Legkelendőbb**. Ezek a listák a termékeket a vásárlási trendek alapján jelenítik meg, és a algoritmussal generálhaók vagy manuálisan is összeállíthatók. Segítségükkel a vevők gyorsan felfedezhetik a legnépszerűbb termékeket, majd folytathatják a vásárlást.
 
     A következő ábra a kezdőlapon található termékjavaslatok modulra mutat be egy példát.

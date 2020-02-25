@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914841"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002682"
 ---
 # <a name="templates-and-layouts-overview"></a>Sablonok és elrendezések áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 A sablonok a Microsoft Dynamics 365 Commerce oldal modelljének alapelemei. Ha a célja a webhelylétrehozási munkafolyamatok hatékonyságának és konzisztenciájának maximalizálása, fontos, hogy megtanulja, hogyan lehet a webhelyhez tartozó sablonok előnyeit kihasználni A sablon struktúrájával kapcsolatos korai döntések fontosak, és jelentősen befolyásolhatják a napi, szezonális és a webhely egészére vonatkozó márkafrissítések költségét és hatékonyságát. A jól strukturált sablonoknak egyéb előnyei is vannak. Például javítják a webhely egészére kiterjedő keresőmotor-optimalizálás (SEO) pontszámát, és minimalizálják a hibák számát.

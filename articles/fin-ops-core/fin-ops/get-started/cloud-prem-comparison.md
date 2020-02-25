@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935387"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005726"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
@@ -32,8 +32,8 @@ Ez a témakör a felhőalapú és helyszíni szolgáltatások összehasonlítás
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 A [fejlesztési és adminisztrációs szolgáltatásokkal](cloud-prem-comparison.md#development-and-administration-features) kapcsolatos információk is itt érhetők el.
 
@@ -45,8 +45,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |---------------------|-----------------------------|-----------|-----------------|
 | Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
 |                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Nem              |
-| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
-|                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
+| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             
 |                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
 |                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen              |
 |                                      | Adatintegrálások                                                                         | Igen       | Igen             |
@@ -146,15 +145,15 @@ A következő táblázatokban az alkalmazási területek listája található. A
 | Támogatás                              |                                                                                           | Igen       | Igen             |
 |                                      | A Súgó és támogatás menüvel hozzáférés a támogatáshoz                                             | Igen       | Nem              |
 
-## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../../retail/retail-onprem.md).
+Helyszíni telepítéseknél rendelkezésre álló lehetőségek listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Terület**         | **Szolgáltatás**         | **Felhőbeli** | **Helyszíni** |
 |------------------|---------------------|-----------|-----------------|
-| Összes Talent terület | Összes Talent funkció | Igen       | Nem              |
+| Összes Emberi erőforrások-terület | Összes Emberi erőforrások-funkció | Igen       | Nem              |
 
 ## <a name="development-and-administration-features"></a>Fejlesztési és adminisztrációs funkciók
 

@@ -3,7 +3,7 @@ title: Kezdő csomag áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce kezdőcsomagról nyújt áttekintést.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785260"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025902"
 ---
 # <a name="starter-kit-overview"></a>Kezdő csomag áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce kezdőcsomagról nyújt áttekintést.
@@ -43,7 +43,7 @@ A kezdőkészlet moduljaira témák is alkalmazhatók, így módosítható megje
 A következő típusú modulok érhetők el a kezdőkészletben:
 
 - **Konténer modul** – Egy konténer modul egy egyszerű modul, amely más modulok számára gazdaként szolgál. A benne található modulok elrendezését szabályozza.
-- **Marketing modulok** – A marketing modulokban megtalálhatók a főkép, a funkció, a tartalmi elhelyezés, a tartalomgazdag blokkmodul, a videolejátszó és a forgótár modulok. Ezen a modulok mindegyike a tartalom bemutatására használható. Ezeket a modulokat bármelyik lapra el lehet helyezni, és tartalomkezelő rendszer (CMS) adatai vezérlik őket.
+- **Marketing modulok** – A marketing modulokban megtalálhatók a blokk, a szövegblokk, a videólejátszó és a forgótár modulok. Ezen a modulok mindegyike a tartalom bemutatására használható. Ezeket a modulokat bármelyik lapra el lehet helyezni, és tartalomkezelő rendszer (CMS) adatai vezérlik őket.
 - **Fejléc és lábléc modulok** – A fejléc és lábléc modulok az oldal összes lapjának fej- és láblécében jelennek meg. Ezek a modulok a tulajdonságokon keresztül konfigurálhatók igény szerint.
 - **Keresési modulok** – A termékek a fejlécben található keresési modul segítségével fedezhetők fel. A keresési eredmények a találati lapon jelennek meg. A termékek a kategória oldalain is megtalálhatók, amelyek különálló lapok az egyes kategóriákhoz, amelyek támogatva vannak a csatornanavigációban. Ezenkívül a finomító modulok használhatók keresési eredmények és kategóriák oldalain található eredmények további szűrésére.
 - **A termék részletei lap moduljai** – A termék részletei oldalak számos modult használnak a termék adatainak megjelenítésére. A vásárlásmező modul segítségével a vevők megtekintik a termékeket, és behelyezhetik őket a kosárba. Más modulok – például a műszaki adatok modul – a termék részletes adatait jelenítik meg. A minősítések és a vélemények modul a vélemények megjelenítésére és adására használható.

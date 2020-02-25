@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896796"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006264"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. október 23.)
 
@@ -39,9 +39,9 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 
 A szakaszban ismertetett módosítások a 8.1.2569-ös buildre vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az Microsoft Dynamics Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
-### <a name="platform-update-30-for-finance-and-operations-apps"></a>Platform update 30 a Finance and Operations alkalmazásokhoz
+### <a name="platform-update-30-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások 30-as platformfrissítése
 
-A további tudnivalókat lásd [Újdonságok és módosítások a Finance and Operations 30-as platformfrissítéséhez (2019. november)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
+A további tudnivalókat lásd: [Újdonságok és módosítások a Finance and Operations-alkalmazások 30-as platformfrissítéséhez (2019. november)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>A juttatások megnyitása előzetes funkció eltávolítása
 
@@ -89,4 +89,4 @@ Lásd [Teljesítményértékelések nyomtatása](https://docs.microsoft.com/dyna
 
 Minden kiadásban új szolgáltatások és frissítések jelennek meg. A funkció-kezelési élmény olyan munkaterületet tartalmaz, amelyen megtekintheti az egyes kiadásokban elérhetővé tett szolgáltatások listáját. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt.
 
-További információ a szolgáltatások kezelésével kapcsolatos változásokról: [Funkciókezelés áttekintése](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+További információ a szolgáltatások kezelésével kapcsolatos változásokról: [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).

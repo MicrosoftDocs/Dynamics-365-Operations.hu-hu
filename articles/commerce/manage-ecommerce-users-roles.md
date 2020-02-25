@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23977ddc8ef67389d088ca52c1a1bc6a9b2f7fb4
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697681"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003533"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Az e-kereskedelem felhasználóinak és szerepköreinek kezelése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet engedélyezni a felhasználóknak a Microsoft Dynamics 365 Commerce webhely szerzői környezetéhez való hozzáférést.

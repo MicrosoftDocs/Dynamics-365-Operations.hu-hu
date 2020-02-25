@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697842"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002935"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>A kosár és a pénztár oldalak áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce kosár és pénztár oldalaihoz.
@@ -65,11 +65,11 @@ A pénztári lap fő törzse az a rész, ahol minden rendelési adatot gyűjtene
 
 ### <a name="shipping-address"></a>Szállítási cím
 
-Ha az árukat szállítani kell, a szállítási cím megadása kötelező. Minden egyes területhez be lehet állítani a szállítási címek formátumát a Dynamics 365 Retail alkalmazásban. Ha például a cikkek szállítása az Egyesült Államokba történik, a szállítási címnek tartalmaznia kell egy utcacímet, egy államot és egy irányítószámot. A szállítási cím mezőiben megtörténik néhány alapvető beviteli ellenőrzés, például az alfanumerikus karakterek, a maximális hossz és a számok ellenőrzése. Noha maga a cím érvényessége nincs ellenőrizve, ez az ellenőrzés a testreszabott külső szolgáltatások használatával elvégezhető.
+Ha az árukat szállítani kell, a szállítási cím megadása kötelező. Minden egyes területhez be lehet állítani a szállítási címek formátumát a Dynamics 365 Commerce alkalmazásban. Ha például a cikkek szállítása az Egyesült Államokba történik, a szállítási címnek tartalmaznia kell egy utcacímet, egy államot és egy irányítószámot. A szállítási cím mezőiben megtörténik néhány alapvető beviteli ellenőrzés, például az alfanumerikus karakterek, a maximális hossz és a számok ellenőrzése. Noha maga a cím érvényessége nincs ellenőrizve, ez az ellenőrzés a testreszabott külső szolgáltatások használatával elvégezhető.
 
 A szállítási cím a kosár minden olyan cikkére érvényes, amelyre a „szállítás” beállítás ki van kiválasztva. Ha az online kezdőcsomagban megadott pénztár folyamatot használja, akkor az egyes kosár cikkek nem szállíthatók különböző címekre. Ha szüksége van erre a lehetőségre, akkor a pénztár modulok testreszabásával lehet megvalósítani.
 
-A szállítási cím megadása után megjelennek a Dynamics 365 Commerce online áruházból elérhető szállítási módok. A szállítási módokat és az általuk támogatott címeket a Retail modulban konfigurálhatja.
+A szállítási cím megadása után megjelennek a Dynamics 365 Commerce online áruházból elérhető szállítási módok. A szállítási módokat és az általuk támogatott címeket a Commerce modulban konfigurálhatja.
 
 ### <a name="payment"></a>Fizetés
 

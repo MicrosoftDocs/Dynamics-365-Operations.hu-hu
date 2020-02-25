@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914910"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001829"
 ---
 # <a name="customize-site-navigation"></a>Webhely-navigáció testreszabása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet testreszabott online navigációs hierarchiát létrehozni a böngészésre szánt termékek rendszerezéséhez a Microsoft Dynamics 365 Commerce webhelyén.
@@ -35,11 +35,11 @@ Ez a témakör azt mutatja be, hogyan lehet testreszabott online navigációs hi
 
 Az online kirakatok általában lehetővé teszik a vevők számára, hogy a termékkategóriák között navigálva felfedezzék és böngésszék a termékeket. Ezt a lehetőséget általában a lapok felső részén található fülek, illetve a bal oldali navigációs sáv biztosítja. A Dynamics 365 Commerce alkalmazásban létrehozhatja és kezelheti a kategórianavigáció hierarchikus szerkezetét, valamint a különböző kategóriákba tartozó termékeket.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Kiskereskedelmi csatorna navigációs hierarchiájának létrehozása
+## <a name="create-a-channel-navigation-hierarchy"></a>Csatorna navigációs hierarchiájának létrehozása
 
-Kiskereskedelmi csatorna navigációs hierarchiájának létrehozásához kövesse az alábbi lépéseket.
+Csatorna navigációs hierarchiájának létrehozásához kövesse az alábbi lépéseket.
 
-1. Ugorjon a **Kiskereskedelem \> Termékek és kategóriák \> Kategória és termék kezelése** lehetőségre.
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Termékek és kategóriák \> Kategóriák és termékmenedzsment** lehetőségre.
 1. Válassza ki a **Kategóriahierarchiák**, majd az **Új** lehetőséget.
 1. Nevezze le a hierarchiát.
 
@@ -57,28 +57,28 @@ Alapértelmezés szerint a megadott kategóriák ábécésorrendben jelennek meg
 
 ## <a name="assign-a-category-hierarchy-type"></a>Típus hozzárendelése kategóriahierarchiához 
 
-1. Ugorjon a **Kiskereskedelem \> Termékek és kategóriák \> Kategória és termék kezelése** lehetőségre.
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Termékek és kategóriák \> Kategóriák és termékmenedzsment** lehetőségre.
 1. Válassza a **Kategóriahierarchiák** lehetőséget.
 1. A műveleti ablaktáblán a **Kategóriahierarchia** lapon a **Beállítás** csoportban válassza a **Hierarchiatípus társítása** lehetőséget.
 1. Válassza az **Új** lehetőséget.
-1. A **Kategóriahierarchia-típus** mezőben válassza a **Kiskereskedelmi csatornák navigációs hierarchiája** lehetőséget.
+1. A **Kategóriahierarchia-típus** mezőben válassza a **Csatornák navigációs hierarchiája** lehetőséget.
 1. A **Kategóriahierarchia** mezőben válassza ki a korábban létrehozott csatornanavigációs hierarchiát.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Új vagy frissített navigációs hierarchiák közzététele
 
 Ha a navigációs hierarchiáját elérhetővé szeretné tenni az online kirakatában, kövesse az alábbi lépéseket.
 
-1. Lépjen a **Kiskereskedelem \> Csatorna beállítása \> Csatornakategóriák és termékattribútumok** lehetőségre.
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Csatornakategóriák és termékattribútumok**.
 1. Válassza ki az online áruházát a bal oldali fában.
 1. Válassza a **Csatornafrissítések közzététele** lehetőséget.
-1. Lépjen a **Kiskereskedelem \> Kiskereskedelem IT \> Elosztási ütemezés** pontra.
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 1. Keresse meg és válassza ki a listáról a **1040-es feladat** elemet.
 1. Válassza a **Futtatás most** parancsot.
 1. Ismételje meg az 5. és 6. lépést az 1070-es és 1150-es feladatok esetében.
 
 ## <a name="show-categories-on-your-site"></a>Kategóriák megjelenítése a webhelyen
 
-Ha meg szeretné jeleníteni a kategóriahierarchiát az online kirakatában, akkor egy sablon vagy töredék megfelelő helyén egy navigációs menü modult kell hozzáadnia. A navigációs menü modul ezt követően megmutatja a navigációs hierarchiát, feltéve, hogy a kiskereskedelmi navigációs hierarchiát közzétette a csatornán, amelyhez a webhelye hozzá van kötve.
+Ha meg szeretné jeleníteni a kategóriahierarchiát az online kirakatában, akkor egy sablon vagy töredék megfelelő helyén egy navigációs menü modult kell hozzáadnia. A navigációs menü modul ezt követően megmutatja a navigációs hierarchiát, feltéve, hogy a navigációs hierarchiát közzétette a csatornán, amelyhez a webhelye hozzá van kötve.
 
 > [!NOTE]
 > Az áruház kezdőcsomagban található navigációs menü modul lehetővé teszi a felhasználók számára, hogy csak olyan kategóriákba navigáljanak, amelyeknél nincsenek alkategóriák. Ha a vevők olyan kategóriákhoz szeretnének navigálni, amelyek rendelkeznek alkategóriákkal, akkor testre kell szabnia a navigációs menü modulját.

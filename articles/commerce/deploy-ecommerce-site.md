@@ -3,7 +3,7 @@ title: Új e-kereskedelmi bérlő telepítése
 description: Ez a témakör azt mutatja be, hogyan lehet új e-kereskedelmi bérlőt telepíteni a Microsoft Dynamics Lifecycle Services (LCS) segítségével.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945513"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001783"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Új e-kereskedelmi bérlő telepítése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet új e-kereskedelmi webhelyet telepíteni a Microsoft Dynamics Lifecycle Services (LCS) segítségével.
 
 ## <a name="overview"></a>Áttekintés
-    
+
 A Microsoft Dynamics Lifecycle Services (LCS) egy felhőalapú együttműködési munkaterület, amelyet a partnerek és a vevők a projektjeik és a környezetek kezelésére, a Microsoft Dynamics termékekkel és szolgáltatásokkal kapcsolatos információk megtekintésére, valamint a terméktámogatási események létrehozására, nyomon követésére és böngészésére tudnak használni. Az e-kereskedelem kezelési szolgáltatásai integrálva vannak az LCS-be.
 
 További tájékoztatás az LCS-ről: [Lifecycle Services felhasználói útmutató](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Miután összegyűjtötte a szükséges adatokat, hajtsa végre az alábbi lép�
 1. A következő lapon töltse ki a szükséges adatokat, majd küldje el az űrlapot. A rendszer visszaküldi az **e-kereskedelem** lapra, amelyen látnia kell, hogy elindult az inicializálás.
 1. Az inicializálás állapotának megtekintéséhez válassza a **Frissítés** lehetőséget, vagy térjen vissza később az **e-kereskedelem** lapra.
     
-Az e-kereskedelem LCS-ből történő inicializálásakor a rendszer számos olyan összetevőt létesít, amelyek szükségesek az e-kereskedelemhez, és társítja őket a környezethez. A létesítés befejezése után az **e-kereskedelem** lap a **Kiskereskedelem kezelése** oldalon frissítésre kerül, hogy tükrözze a létesítést. A lap megjeleníti a legújabb testreszabási telepítéseket és az egyéb folyamatban lévő telepítések állapotát. Az e-kereskedelmi webhelyhez és az e-kereskedelmi webhelykezelő eszközhöz (szerkesztési eszköz) is tartalmaz hivatkozásokat.
+Az e-kereskedelem LCS-ből történő inicializálásakor a rendszer számos olyan összetevőt létesít, amelyek szükségesek az e-kereskedelemhez, és társítja őket a környezethez. A létesítés befejezése után az **e-Commerce** lap a **Kiskereskedelem kezelése** oldalon frissítésre kerül, hogy tükrözze a létesítést. A lap megjeleníti a legújabb testreszabási telepítéseket és az egyéb folyamatban lévő telepítések állapotát. Az e-kereskedelmi webhelyhez és az e-kereskedelmi webhelyszerkesztési eszközhöz is tartalmaz hivatkozásokat, amelyben a webhelyek készülnek.
 
-## <a name="access-the-authoring-environment"></a>Hozzáférés a szerkesztési környezethez
+## <a name="access-site-builder"></a>Webhelykészítő elérése
 
-A fejlesztői környezet eléréséhez nyissa meg az **e-kereskedelem** lapot a **Kiskereskedelem kezelése** oldalon. Itt talál az e-kereskedelmi webhelyre és a webhelykezelő eszközre mutató hivatkozásokat.
+A webhelykészítő eléréséhez nyissa meg az **e-Commerce** lapot a **Kiskereskedelem kezelése** oldalon az LCS-ben, és válassza ki az **e-kereskedelmi webhely felügyeleti eszköze** hivatkozását. A webhelykészítő nyitóoldala bérlő szintű nézetet jelenít meg. Erről az oldalról a következőket teheti:
+
+- Bérlő szintű beállítások módosítása.
+- Navigáljon bármelyik létrehozott webhelyhez, és kérjen engedélyt a megtekintésre. 
+- A hozzáférés-ellenőrzés olyan funkciókat tartalmaz, mint a moderálás és a jelentés.
+- Új webhely létrehozása. További információ a webhelyek létrehozásáról: [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>További erőforrások
 

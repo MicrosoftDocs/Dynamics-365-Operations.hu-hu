@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935465"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029362"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -59,7 +59,8 @@ A használat során az alkalmazás menti a felhasználói beállítások nagy r�
 
 Az implicit személyes beállítások olyan személyes beállítások, amelyeket olyan vezérlőkkel hajt végre, amelyek tárolják az elemek aktuális láthatósági állapotát.
 
-- **Rácsoszlopok:** – Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt oszlopszélességig. Az alkalmazás tárolja az oszlop beállított szélességét. Majd minden alkalommal, amikor megnyitja a rácsot tartalmazó lapot, átméretezi az oszlop szélességét.
+- **Rácsoszlopok szélessége:** – Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt oszlopszélességig. Az alkalmazás tárolja az oszlop beállított szélességét. Majd minden alkalommal, amikor megnyitja a rácsot tartalmazó lapot, átméretezi az oszlop szélességét.
+- **Rácsoszlopok összegei** – (Csak az új rács vezérlőelemnél érhető el) Eldöntheti, hogy megjeleníti-e a rács numerikus oszlopainak alján látható összesítést, valamint azt, hogy a rács ábléce látható-e. Az alkalmazás ezeket az adatokat tárolja, így a rendszer az oldal következő megnyitásakor emlékszik ezekre a beállításokra. További információk: [Rács funkciói](grid-capabilities.md). 
 - **Gyorslapok** – Néhány lapon kibontható szakaszok vannak, amelyeket *Gyorslapoknak* hívunk. Az alkalmazás tárolja a már kibontott vagy összecsukott gyorslapok adatait. Majd a következő alkalommal, amikor megnyitja a lapot, ugyanazon gyorslap ki lesz bontva és össze lesz csukva, a lappal folytatott utolsó kommunikációt alapján. Bizonyos esetekben a gyorslap összecsukása javíthatja a teljesítményt, mivel az alkalmazásnak nem kell betöltenie azoknak a gyorslapoknak az információit egészen addig, amíg a gyorslapokat nem bontjuk ki. Amint később a témakör elmagyarázza, a lapon módosítható a gyorslapok sorrendje.
 - **Adatterület** – Egyes lapokhoz tartozik egy **Kapcsolódó információk** ablaktábla jelenik meg, amely a lap aktuális tárgyához kapcsolódó írásvédett adatokat jelenít meg. Az **Kapcsolódó információk** minden szakaszát *Adatterületnek* hívjuk. Ki lehet bontani vagy össze lehet csukni a **Kapcsolódó információk** megjelenítését, illetve kibonthatók és összecsukhatók az egyes adatterületek. Az alkalmazás tárolja ezeket a beállításokat. Ha legközelebb megnyitja a lapot a **Kapcsolódó információk** panel és az egyes adatterületek állapota visszaáll, és ki lesz bontva vagy össze lesz csukva a lap utolsó kommunikációja alapján. Bizonyos esetekben az adatterület összecsukása javíthatja a teljesítményt, mivel az alkalmazásnak nem kell betöltenie azoknak a adatterületeknek az információit egészen addig, amíg azokat nem bontjuk ki.
 - **Műveleti ablaktábla** – A *Műveleti ablak* a legtöbb oldal tetején jelenik meg. A műveleti ablak gombjaival számos műveleteket hajthat végre az aktuális lapon. Ezek a gombok gyakran a lapokon vannak csoportosítva. A teljes műveletpanel lehet nyitottan „kitűzve”, ahogy alapértelmezés szerint összecsukva is. Majd a következő alkalommal, amikor megnyitja a Művelet panelt, ugyanazon gyorslap ki lesz nyitva vagy össze lesz csukva, a lappal folytatott utolsó interakció alapján. Ha megnyitotta a Műveleti ablaktáblát, akkor a program a legutóbb használt lapot jeleníti meg.
@@ -95,7 +96,7 @@ A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az ele
 
 Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módosításokat szeretne végrehajtani, amelyek nem érhetők el más mechanizmusokon keresztül (például elemeket szeretne újrarendezni), használhatja a **Testreszabás** eszköztárat. A **Testreszabás** eszköztár megnyitásához hajtsa végre a következő lépések valamelyikét:
 
-- Válassza ki a **Képernyő személyre szabása** lehetőséget egy elem tulajdonságablakában.
+- Válassza ki az **Oldal személyre szabása** lehetőséget egy elem tulajdonságablakában.
 - Bármely oldal Művelet panelén válassza az **Oldal személyre szabása** csoportot a **Testreszabás** csoportban a **Beállítások** lapon.
 - Válassza ki a navigációs sávon a **Beállítások** gombot (a fogaskerék szimbólum), majd válassza a **Személyre szabás** lehetőséget.
 
@@ -116,7 +117,8 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** gombot az eszközsoron, minden éppen kihagyott elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Interaktívan eltávolíthat vagy hozzáadhat mezőket a lapsorrendhez.
 - Használja a **Megjelenítés a fejlécben** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján megjelenjen. Ha kiválasztja a **Megjelenítés a fejlécben** gombot az eszközsoron , összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan felvehet mezőket az összesítő gyorslapra, és eltávolíthat mezőket onnan a mezők kijelölésével.
 - Használja a **Zárolás** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha kiválasztja a **Zárolás** gombot az eszközsoron, minden nem szerkeszthető elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
-- Használja a **PowerApp eszköz hozzáadása** gombot egy Microsoft PowerApps használatával létrehozott alkalmazás beágyazásához a lapra. A PowerApps alkalmazás a lapba való beágyazásával kapcsolatos részletes tudnivalókat lásd: [PowerApps alkalmazások beágyazása](embed-power-apps.md).
+- Használja az **Alkalmazás hozzáadása a Power Apps alkalmazásból** gombot, amely a Microsoft Power Apps használatával lett létrehozva az oldalon. A Power Apps-alkalmazásnak a lapba való beágyazásával kapcsolatos részletes tudnivalókat lásd: [Power Apps-alkalmazásokból származó alkalmazás beágyazása](embed-power-apps.md). Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció.  
+- Használja az **Alkalmazás hozzáadása** gombot egy Microsoft Power Apps rendszerben létrehozott vagy külső féltől származó alkalmazás beágyazásához az oldalon. Ez a lehetőség csak akkor érhető el, ha engedélyezve van a [Mentett nézetek](saved-views.md) funkció. 
 - Válassza a **Tisztítás** eszközt az oldal alapértelmezett, telepítési beállításainak visszaállításához. Az aktuális oldal minden testreszabása törölve lesz. Nincs visszavonás művelet. Ezért akkor használja ezt az eszközt, ha biztos benne, hogy az oldal alaphelyzetbe állítását szeretné.
 - Használja az **Importálás** eszközt hogy egy korábban ön vagy más által létrehozott testreszabási fájlból töltsön be testreszabási beállításokat. Ha egy lap testreszabásait importálja, megadhatja, hogy hozzá legyenek-e adva a lap meglévő testreszabásaihoz, vagy lecseréljék azokat. Nincs visszavonás művelet. Ezért a személyre szabások importálása után manuálisan kell törölnie vagy visszavonnia a nem kívánt módosításokat.
 - Használja az **Exportálás** eszközt a lap testreszabásainak mentéséhez egy fájlba. Majd a testreszabásokat megoszthatja más felhasználókkal. Ezeknek a felhasználóknak csak a lap személyes beállításokat tartalmazó fájlt kell importálni.
@@ -152,7 +154,7 @@ Az irányítópult legtöbbször az első oldal, amelyet az alkalmazás megnyit�
 Az irányítópult testreszabásához kattintson a jobb gombbal bármelyik csempe, és adja meg **Személyre szabás** elemet a csempe tulajdonság ablak megnyitásához.
 
 - Ha azt szeretné, vagy nevezze át vagy rejtse el a kijelölt csempét, végezhet módosítást közvetlenül a tulajdonságablakban.
-- Ha szeretné módosítani a munkaterület-csempék sorrendjét, válassza ki a **Képernyő személyre szabása** beállítást a Tulajdonságok ablakban a **Személyes beállítások** eszköztár megnyitásához. Az **Áthelyezés** eszköz segítségével tetszés szerint átrendezheti a csempéket.
+- Ha szeretné módosítani a munkaterület-csempék sorrendjét, válassza ki az **Oldal személyre szabása** beállítást a Tulajdonságok ablakban a **Személyes beállítások** eszköztár megnyitásához. Az **Áthelyezés** eszköz segítségével tetszés szerint átrendezheti a csempéket.
 - Egy új munkaterület csempe hozzáadásához, a Tulajdonságok ablakban, jelölje be a **Hozzáadás munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. Hozzáadhat listákat, csempéket és hivatkozásokat a munkaterülethez a témakörben itt leírtak szerint: [Listák, csempék és hivatkozások hozzáadása munkaterületekhez](#adding-a-tile-list-or-link-to-a-workspace).
 
 ## <a name="administration-of-personalizations"></a>Testreszabások adminisztrálása

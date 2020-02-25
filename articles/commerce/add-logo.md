@@ -3,7 +3,7 @@ title: Embléma hozzáadása
 description: Ez a témakör azt mutatja be, hogyan adhat hozzá logót a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23bac9aae6beb59912bbc9e1f2c6958c007550b0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914621"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025699"
 ---
 # <a name="add-a-logo"></a>Embléma hozzáadása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan adhat hozzá logót a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
@@ -43,7 +43,7 @@ Hozzáadhat egy logót közvetlenül egy sablonhoz, elrendezéshez vagy oldalhoz
 
 Mielőtt hozzáadná a logót a webhely összes oldalához, végre kell hajtania ezeket a feladatokat.
 
-1. Töltse fel a logóját a digitáliseszköz-kezelőbe, amelyet az **Eszközök** oldalról érhet el.
+1. Töltse fel az emblémát a médiatárba.
 1. Fejléctöredék létrehozása A töredékek létrehozásával és használatával kapcsolatos további tudnivalókért tanulmányozza a [Töredékek használata](work-with-fragments.md) című témakört.
 1. Adja meg a fejléctöredéket abban a sablonban, amelyet webhelyének oldalai használnak az elrendezéshez és a modulbeállításokhoz. A sablonokkal kapcsolatos további információkért lásd: [Sablonok használata](work-with-templates.md).
 
@@ -51,13 +51,11 @@ Mielőtt hozzáadná a logót a webhely összes oldalához, végre kell hajtania
 
 A logó hozzáadásához a webhelye fejléctöredékéhez, kövesse az alábbi lépéseket.
 
-1. A bal oldali navigációs panelen jelölje ki a **Töredékek** lehetőséget, majd válassza ki a létrehozott fejléctöredéket.
-2. Válassza a **Kivétel** lehetőséget.
-3. Bontsa ki a **Fejléc** helyet és a **Logó** helyet.
-4. Válassza ki a **Logó** helyhez tartozó három pont gombot (**...**), majd válassza a **Modul hozzáadása** elemet.
-5. Válassza ki a logó modult.
-6. A jobb oldali tulajdonságok panelen konfigurálja a logó modult, hogy az Ön logóját jelenítse meg.
-7. Mentse a fejléctöredéket, adja be és tegye közzé.
+1. A bal oldali navigációs ablakban válassza ki az **Oldaltöredékek** lehetőséget.
+1. Válassza ki a létrehozott fejléctöredéket, majd válassza a **Szerkesztés** parancsot.
+1. Nyissa meg a fejléc modult.
+1. A fejléc modul tulajdonságpanelján adjon meg egy képet és egy hivatkozást az emblémát. 
+1. Mentse az oldaltöredéket, fejezze be a szerkesztését, majd tegye közzé.
 
 A frissített fejléctöredék közzététele után a webhely összes olyan oldala, amely a fejléctöredéket tartalmazó sablont használja, megjeleníti a logót.
 

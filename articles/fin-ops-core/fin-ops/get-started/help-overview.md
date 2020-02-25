@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811672"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005703"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811672"
 Ez a témakör a Súgórendszer részeinek áttekintését tartalmazza. A súgórendszer közös a következő termékek esetében:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 A Súgó ablak használható bármelyik termékben a súgó eléréséhez. 
 
@@ -73,7 +73,7 @@ A dokumentációban közreműködhet, és módosításokat hajthat végre. Első
 
 A [Hozzájárulás a Microsoft Dynamics 365 dokumentációhoz](https://youtu.be/m5djioozRbg) videó (lásd fentebb) része a Microsoft Dynamics 365 csatornának a YouTube oldalán.
 
-További tudnivalókért olvassa el a [közreműködői útmutatót](https://docs.microsoft.com/en-us/contribute).
+További tudnivalókért olvassa el a [közreműködői útmutatót](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű tartalomhoz fogadunk el közreműködést.
@@ -106,12 +106,12 @@ Ha szeretné megtekinteni a Súgó tartalmát, akkor kattintson a **Súgó** (**
 A Súgó ablakból hozzáférhet a kliensre vonatkozó cikkekhez. Amikor először nyitja meg a Súgó ablakot, a **Súgó** lapra való kattintáskor az aktuális oldalhoz kapcsolódó cikkek jelennek meg. Amennyiben nem találhatók cikkek, kulcsszavak beírásával módosíthatja a keresést. Amikor rákattint egy cikkre a Súgó ablakban, akkor egy új lap nyílik meg a böngészőben, és megjeleníti a cikket.
 
 > [!IMPORTANT]
-> Ez a szakasz nem vonatkozik a Dynamics 365 Talent alkalmazásra. A Talent súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Emellett a Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
+> Ez a szakasz nem vonatkozik a Dynamics 365 Human Resources alkalmazásra. A Human Resources súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Ezenfelül a Human Resources rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Feladat-útmutatók elérése a Súgó ablakból
 
-Mielőtt Feladat-útmutatókat nyit meg a Súgó ablakban, a Rendszergazdának a Finance, Supply Chain Managment és Retail rendszerben a **Rendszer paraméterei** lapon be kell állítania néhány paramétert.
+Mielőtt Feladat-útmutatókat nyit meg a Súgó ablakban, a Rendszergazdának a Finance, a Supply Chain Managment és a Commerce rendszerben a **Rendszer paraméterei** lapon be kell állítania néhány paramétert.
 
 > [!NOTE]
 > - A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó számlába, amiben az alkalmazás is telepítve van.

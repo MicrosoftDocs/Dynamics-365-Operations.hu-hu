@@ -1,6 +1,6 @@
 ---
 title: Online csatornajelentések készítése
-description: Ez a témakör azt mutatja be, hogyan lehet jelentéseket létrehozni egy online csatornához a Microsoft Dynamics 365 Retail alkalmazásban.
+description: Ez a témakör azt mutatja be, hogyan lehet jelentéseket létrehozni egy online csatornához a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698050"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003004"
 ---
 # <a name="generate-online-channel-reports"></a>Online csatornajelentések készítése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet jelentéseket létrehozni egy online csatornához a Microsoft Dynamics 365 Retail alkalmazásban.
+Ez a témakör azt mutatja be, hogyan lehet jelentéseket létrehozni egy online csatornához a Microsoft Dynamics 365 Commerce alkalmazásban.
 
 ## <a name="overview"></a>Áttekintés
 
-A Retail alkalmazásban számos jelentés létrehozható és megtekinthető, hogy megtudja, hogyan teljesít online csatornája.
+A Commerce alkalmazásban számos jelentés létrehozható és tekinthető meg, hogy megtudja, hogyan teljesít online csatornája.
 
 ## <a name="channel-summary-report"></a>Csatorna-összefoglaló jelentés
 
@@ -46,7 +46,7 @@ A **Csatorna-összefoglaló** jelentés a következő tranzakciók összesítés
 
 A **Csatorna-összesítő** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatornaösszesítő-jelentés** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatornaösszesítő-jelentés** elemet.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -58,7 +58,7 @@ A **Csatorna értékesítése év szerint** jelentés egy adott üzlet értékes
 
 A **Csatorna értékesítése év szerint** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatorna értékesítése év szerint** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatorna értékesítése év szerint – jelentés** elemet.
 1. Adjon meg egy évet a **Kezdő naptári év** mezőben.
 1. Adjon meg egy évet a **Befejező naptári év** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -70,7 +70,7 @@ A **Csatorna értékesítése óra szerint** jelentés megjeleníti az óránké
 
 A **Csatorna értékesítése óra szerint** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatorna értékesítése óra szerint** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Csatorna értékesítése óra szerint – jelentés** elemet.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -82,7 +82,7 @@ A **Legfőbb vevők** jelentés megjeleníti a kiválasztott csatorna vagy üzem
 
 A **Legfőbb vevők** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Legfőbb vevők jelentés** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Legfőbb vevők – jelentés** elemet.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -94,7 +94,7 @@ A **Legnagyobb engedmények** jelentés megjeleníti a kiválasztott csatorna va
 
 A **Legnagyobb engedmények** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Legnagyobb engedmények jelentés** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Legnagyobb engedmények jelentése** elemet.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -106,7 +106,7 @@ A **Vezető termékek** jelentés megjeleníti a kiválasztott csatorna vagy üz
 
 A **Vezető termékek** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Retail \> Lekérdezések és jelentések \> Értékesítési jelentések \> Vezető termékek jelentés** elemet.
+1. Nyissa meg a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Vezető termékek jelentése** elemet.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -118,7 +118,7 @@ A **Kategória értékesítései** jelentés egy kiválasztott időszakra vonatk
 
 A **Kategória értékesítései** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Ugorjon a **Kiskereskedelem \> Lekérdezések és jelentések \> Értékesítési jelentések \> Értékesítési kategória-jelentés** lehetőségre.
+1. Lépjen a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Értékesítési kategória-jelentés** elemre.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az online csatornát a **Csatorna** mezőben.
@@ -126,11 +126,11 @@ A **Kategória értékesítései** jelentés létrehozásához hajtsa végre az 
 
 ## <a name="organization-sales-report"></a>Szervezeti értékesítés – jelentés
 
-A **Szervezeti értékesítés** jelentés a szervezeti egység szerint jeleníti meg a kiskereskedelmi üzletek teljesítményét. Ez a jelentés tartalmazza az értékesítési mennyiséget és az összeget üzletenként, valamint az egyes üzletek haszonkulcsát. A szervezeti egység az alapértelmezett jelentési hierarchián alapul.
+A **Szervezeti értékesítés** jelentés a szervezeti egység szerint jeleníti meg az üzletek teljesítményét. Ez a jelentés tartalmazza az értékesítési mennyiséget és az összeget üzletenként, valamint az egyes üzletek haszonkulcsát. A szervezeti egység az alapértelmezett jelentési hierarchián alapul.
 
 Egy **Szervezeti értékesítés** jelentés létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. Ugorjon a **Kiskereskedelem \> Lekérdezések és jelentések \> Értékesítési jelentések \> Szervezeti értékesítési jelentés** lehetőségre.
+1. Ugorjon a **Retail és Commerce \> Lekérdezések és jelentések \> Értékesítési jelentések \> Szervezeti kategória-jelentés** elemre.
 1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
 1. Adjon meg egy dátumot a **Záró dátum** mezőben.
 1. Válassza ki az **OK** lehetőséget.

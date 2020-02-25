@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934886"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004019"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók 
 
@@ -88,7 +88,7 @@ A **Külső cikkleírások** lapon társítani lehet a vevő vagy szállító ci
 | Leírás | A vevő által a cikkhez társított név | A szállító által a cikkhez társított név |
 | Külső cikkszöveg | A vevő cikkleírása | A cikk szállítói leírása |
 
-Ha sok vevő vagy szállító használja ugyanazokatat a cikkszámokat (például beszerzési társulás vagy egy kiskereskedelmi csoport esetében), létrehozhat olyan vevői vagy szállítói csoportokat, amelyek egyszerűsítik a külső termékinformációk karbantartását.
+Ha sok vevő vagy szállító használja ugyanazokatat a cikkszámokat (például beszerzési társulás vagy egy kereskedelmi csoport esetében), létrehozhat olyan vevői vagy szállítói csoportokat, amelyek egyszerűsítik a külső termékinformációk karbantartását.
 
 - Vevőcsoportokhoz lépjen az **Értékesítés** &gt; **Beállítás** &gt; **Cikkek** &gt; **Külső cikkleírás** elemre a csoportok és a kapcsolódó cikkszámok létrehozásához és karbantartásához. Vevők társításához egy csoporthoz, kattintson a **Kinnlevőségek** &gt; **Vevők** &gt; **Minden vevő** elemre, majd az **Értékesítési rendelés alapértelmezései** gyorslapon adjon meg egy értéket a **Cikk - vevőcsoport** mezőben.
 - Szállítócsoportokhoz lépjen a **Beszerzés és forrás** &gt; **Beállítás** &gt; **Külső cikkleírási csoport** elemre a csoportok és a kapcsolódó cikkszámok létrehozásához és karbantartásához. Szállító társításához egy csoporthoz, kattintson a **Kötelezettségek** &gt; **Szállítók** &gt; **Minden szállító** elemre, majd az **Beszerzési rendelés alapértelmezései** gyorslapon adjon meg egy értéket a **Cikk - szállítócsoport** mezőben.

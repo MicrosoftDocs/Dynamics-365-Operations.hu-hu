@@ -3,7 +3,7 @@ title: Szerzői jogi értesítés hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet az e-kereskedelmi webhelyhez szerzői jogi nyilatkozatot hozzáadni.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914571"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025482"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet az e-kereskedelmi webhelyhez szerzői jogi nyilatkozatot hozzáadni.
@@ -48,8 +48,8 @@ A következő lépésekkel lehet hozzáadni egy szerzői jogi nyilatkozatot az �
 1. A navigációs panelen válassza ki az válassza ki a **Lábléc** melletti három pontot (**…**) majd válassza a **Modul hozzáadása** elemet.
 1. A párbeszédpanelen válassza ki a **Lábléc-kategória** elemet, majd kattintson az **OK** gombra.
 1. A navigációs panelen válassza ki az válassza ki a **Lábléc-kategória** melletti három pontot, majd válassza a **Modul hozzáadása** elemet.
-1. A párbeszédablakban válassza ki a **Tartalomgazdag blokk elem** lehetőséget, majd kattintson az **OK** gombra.
-1. A navigációs ablakban válassza ki a **Tartalomgazdag blokkelem** lehetőséget.
+1. A párbeszédpanelen válassza ki a **Szövegblokk** elemet, majd kattintson az **OK** gombra.
+1. A navigációs ablakban válassza ki a **Szövegblokk** elemet.
 1. A jobb oldali Tulajdonságok ablaktáblában, a **Bekezdés** mezőbe vegye fel a szerzői joggal kapcsolatos üzenetet. Írja be például a következőt: **(C) Fabrikam 2019**.
 1. Válassza a **Mentés** parancsot, majd a **Beadás** elemet végül a **Közzététel** lehetőséget.
 1. Nyissa meg a **Sablonok** elemet, válasszon ki egy sablont, majd válassza a **Kivétel** parancsot.

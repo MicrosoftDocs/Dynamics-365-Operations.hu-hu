@@ -1,5 +1,5 @@
 ---
-title: Commerce előzetes verziós környezet GYIK
+title: Dynamics 365 Commerce előzetes verziós környezet GYIK
 description: Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce előzetes verziós környezettel kapcsolatos gyakori kérdésekre.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906093"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024752"
 ---
-# <a name="commerce-preview-environment-faq"></a>Commerce előzetes verziós környezet GYIK
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce előzetes verziós környezet GYIK
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce előzetes verziós környezettel kapcsolatos gyakori kérdésekre.
@@ -83,10 +82,10 @@ Ha problémákat tapasztal, amikor megpróbál hozzáférni a Yammer-csoporthoz,
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
 
-[Commerce előzetes verziós környezet kiépítése](provisioning-guide.md)
+[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
 
-[Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
 
-[A Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)

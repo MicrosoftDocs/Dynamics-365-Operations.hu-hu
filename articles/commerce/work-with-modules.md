@@ -3,7 +3,7 @@ title: Modulok használata
 description: Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914794"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025879"
 ---
 # <a name="work-with-modules"></a>Modulok használata
 
 Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Áttekintés
@@ -99,12 +99,10 @@ A következő eljárások leírják a tartalom- és tárolómodulok konfigurál�
 
 Egy tartalommodulnak egy lapon történő konfigurálásához kövesse az alábbi lépéseket.
 
-1. A bal oldali vázlat ablaktáblán válasszon ki egy tartalommodul típust (például **Funkció**, **Hős** vagy **Szalagcím**).
-1. A jobb oldali tulajdonságok ablaktáblán bontsa ki a beágyazott vezérlőket a fejlécek kiválasztásával, és adja meg a szükséges vezérlő értékeket.
-1. Ha a tulajdonságok ablaktáblán van egy **Adatkonfiguráció** szakasz, jelölje ki azt a kibontáshoz. Máskülönben folytassa az 5. lépéssel.
-1. Ha van egy **Adatforrás hozzáadása** gomb, válassza ki azt majd válassza ki a hozzáadni kívánt tartalomelemeket.
-1. Adja meg a szükséges vagy a kívánt modulvezérlőket.
-1. Válassza a **Mentés** lehetőséget.
+1. A bal oldali vázlat ablaktáblán bontsa ki a fastruktúrát, és válasszon ki egy bármilyen tartalommodult (például **Funkció**, **Hős** vagy **Szalagcím**).
+1. A jobb oldali Tulajdonságok ablaktáblában keresse meg a modul tartalmi és beállítási vezérlőit.
+1. Adja meg a kívánt modul-vezérlőelemek tulajdonságait.
+1. A parancssávon válassza a **Mentés** elemet. Ennek hatására az előnézeti vászon is frissül.
 
 ### <a name="configure-a-container-module"></a>Tárolómodul konfigurálása
 
@@ -112,7 +110,7 @@ Egy tárolómodulnak egy lapon történő konfigurálásához kövesse az alább
 
 1. Válasszon ki egy konténermodult az oldalon (például körhinta vagy folyékony tárolómodult).
 1. A jobb oldali tulajdonságok ablaktáblán bontsa ki a beágyazott vezérlőket a fejlécek kiválasztásával, és adja meg a szükséges vezérlő értékeket.
-1. A bal oldali vázlat ablaktáblán válassza az eltávolítani tároló vagy a tároló bármelyik helye neve melletti három pont gombot, majd válassza ki a **Modul hozzáadása** lehetőséget. Ezután adja hozzá a származtatott modulokat a kiválasztott tárolóhoz. A további tudnivalókat lásd: [Modul hozzáadása](#add-a-module) eljárást a témakör korábbi részében.
+1. A bal oldali vázlat ablaktáblán válassza az eltávolítani tároló vagy a tároló bármelyik helye neve melletti három pont gombot, majd válassza ki a **Modul hozzáadása** lehetőséget. Ezután adja hozzá a származtatott modulokat a kiválasztott tárolóhoz. A további tudnivalókat lásd: [Modulok használata](#add-a-module) rész a témakör korábbi részében.
 1. Ha több származtatott modul van egy szülő tárolóban, akkor a szülő tárolóban módosítható a megjelenítési sorrendjük. Jelölje ki az egyik modulhoz tartozó három pont gombot, majd a fel és a le nyílbillentyűket.
 
 ## <a name="additional-resources"></a>További erőforrások
@@ -126,8 +124,6 @@ Egy tárolómodulnak egy lapon történő konfigurálásához kövesse az alább
 [Töredékek használata](work-with-fragments.md)
 
 [Tárolómodul hozzáadása egy oldalhoz](add-container-module.md)
-
-[Tartalomelhelyezési modul hozzáadása oldalhoz](add-content-placement-modules.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
 

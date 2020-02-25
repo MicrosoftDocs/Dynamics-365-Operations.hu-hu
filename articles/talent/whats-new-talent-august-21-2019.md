@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94c782bf4fc28f2d2f34a101c3c96467ce0766f7
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9ab26ba80ea53b4138c3aaa60f93815af64987d7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897810"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005963"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. augusztus 20.)
 
@@ -67,6 +67,6 @@ Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvet
 
 ### <a name="coming-soon"></a>Hamarosan
 
-#### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 a Finance and Operations szolgáltatáshoz
+#### <a name="platform-update-29-for-finance-and-operations"></a>A Finance and Operations 29-es platformfrissítése
 
-További információ a Finance and Operations 29-es platformfrissítésről (Platform update 29): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 29-es verziójában (2019. október)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+További információ a Finance and Operations 29-es platformfrissítéséről (Platform update 29): [Előzetes funkciók a Dynamics 365 Finance and Operations  platform 29-es frissítésében (2019. október)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: ca463d821292a2ad53462a3575f2d5712b9e53cc
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935514"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004042"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -50,7 +50,7 @@ Az igény-előrejelzés három fő téma szerint valósul meg:
 -   **Modularitás** – Az igény-előrejelzés moduláris és egyszerűen konfigurálható. A **Kereskedelem** &gt; **Készlet előrejelzése** &gt; **Igény-előrejelzés** pontban megtalálható konfigurációs kulcs megváltoztatásával a funkció be- és kikapcsolható.
 -   **Microsoft-technológiák újrafelhasználása** – A Microsoft 2015 februárjában indította el a Machine Learning platformot. Az immár a Microsoft Cortana Analytics Suite programcsomag részét képező Machine Learning prediktív elemzőkísérletek (például igénybecslési kísérletek) gyors és egyszerű elkészítését teszi lehetővé, R vagy Python programnyelven írt algoritmusok és egy egyszerű, ikonok áthúzásával kezelhető felület használatával.
     -   Az Igény-előrejelzési kísérleteket letöltheti, saját üzleti igényeinek megfelelően testreszabhatja, webszolgáltatásként közzéteheti az Azure rendszeren és felhasználhatja őket igény-előrejelzések létrehozására. A kísérletek egy termeléstervező mint vállalati szintű felhasználó Supply Chain Management előfizetésének megvásárlása után tölthetőek le.
-    -   A jelenleg elérhető igény-előrejelzési kísérletek bármelyikét letöltheti a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról. Míg az Igény-előrejelzés kísérletek a Supply Chain Management rendszerrel való integrációja automatikus, a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) gyűjteményből letöltött kísérletek integrálását a vevőknek és partnereknek kell kezelniük. Emiatt a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról származó kísérletek – a Finance and Operations Igény-előrejelzési kísérleteivel ellentétben – nem használhatóak fel közvetlenül. A Finance and Operations API alkalmazásprogramozási felületének megfelelően módosítani kell a kísérletek kódját.
+    -   A jelenleg elérhető igény-előrejelzési kísérletek bármelyikét letöltheti a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról. Míg az Igény-előrejelzés kísérletek a Supply Chain Management rendszerrel való integrációja automatikus, a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) gyűjteményből letöltött kísérletek integrálását a vevőknek és partnereknek kell kezelniük. Emiatt a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról származó kísérletek – a Finance and Operations Igény-előrejelzési kísérletekkel ellentétben – nem használhatóak fel közvetlenül. A Finance and Operations alkalmazásprogramozási felületének (API) megfelelően módosítania kell a kísérletek kódját.
     -   A Microsoft Azure Machine Learning Studio (klasszikus) rendszerében saját kísérleteket hozhat létre, ezeket szolgáltatásként közzéteheti az Azure rendszeren, és használatukkal igény-előrejelzéseket generálhat.
     -   Amennyiben nincs szükség nagy teljesítményre vagy nagy mennyiségű adat feldolgozására, használhatja a Machine Learning ingyenes szintjét. Javasoljuk, hogy mindig erről a szintről induljon, különösen a megvalósítás és a tesztelés fázisában. Ha nagyobb teljesítményre és kiegészítő tárhelyre van szüksége, a Machine Learning standard szintjét használhatja. Ehhez a szinthez Azure előfizetés, valamint további költségek megfizetése szükséges. A Machine Learning használatának költségeiről a [Machine Learnin Studio árképzése](https://aka.ms/machine-learning-price-info) oldalon olvashat részletesen.
 -   **Előrejelzés redukálása bármely szétválasztási pontnál** – Az igény-előrejelzés ezen a funkción alapul, amely mind a függő, mind a független igények előrejelzését lehetővé teszi bármely szétválasztási pontnál.
@@ -69,7 +69,7 @@ Az előrejelzések, az előzményadatok, valamint a megelőző iterációkban az
 A Supply Chain Management segítségével megjelenítheti és módosíthatja a kiinduló előrejelzéseket. Az előrejelzések tervezéshez való használata előtt engedélyezni kell a manuális kiigazításokat.
 
 ## <a name="limitations"></a>Korlátozások
-Az Igény-előrejelzés egy olyan eszköz, amely a gyártóiparban tevékenykedő vevők számára megkönnyíti az előrejelzési folyamatok létrehozását. Biztosítja az igény-előrejelzési megoldások alapvető funkcióit, és úgy lett tervezve, hogy egyszerűen kibővíthető legyen. Egyes iparágak (például kiskereskedelem, nagykereskedelem, raktározás, szállítás vagy más professzionális szolgáltatás) esetén az igény-előrejelzés nem feltétlenül a legmegfelelőbb választás.
+Az Igény-előrejelzés egy olyan eszköz, amely a gyártóiparban tevékenykedő vevők számára megkönnyíti az előrejelzési folyamatok létrehozását. Biztosítja az igény-előrejelzési megoldások alapvető funkcióit, és úgy lett tervezve, hogy egyszerűen kibővíthető legyen. Egyes iparágak (például kereskedelem, nagykereskedelem, raktározás, szállítás vagy más professzionális szolgáltatás) esetén az igény-előrejelzés nem feltétlenül a legmegfelelőbb választás.
 
 <a name="additional-resources"></a>További erőforrások
 --------

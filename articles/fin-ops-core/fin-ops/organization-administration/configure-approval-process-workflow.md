@@ -3,7 +3,7 @@ title: Jóváhagyási folyamatok konfigurálása munkafolyamatban
 description: A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811381"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983764"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Jóváhagyási folyamatok konfigurálása munkafolyamatban
 
@@ -138,11 +138,12 @@ Beállíthatja, hogy a rendszer automatikusan intézkedjen arról a dokumentumr�
 
 ## <a name="specify-a-final-approver"></a> A végső jóváhagyó megadása
 
-Végleges jóváhagyót adhat meg olyan esetekben, amikor a jóváhagyó az a személy, aki a dokumentumot jóváhagyásra elküldte. Kövesse az alábbi lépéseket a végső jóváhagyó megadásához.
+A végső jóváhagyó kijelölhető olyan esetekre, amikor a jóváhagyó az a személy, aki a dokumentumot jóváhagyásra elküldte, és a „feladó általi jóváhagyás tiltása” van használatban. Kövesse az alábbi lépéseket a végső jóváhagyó megadásához.
 
-1. A bal oldali panelen kattintson az **Speciális beállítások** gombra.
-2. Jelölje be a **Végső jóváhagyó használata** jelölőnégyzetet.
-3. Válassza ki a listából, hogy ki legyen a végső jóváhagyó.
+1. A munkafolyamat-szerkesztőben kattintson a jobb gombbal a jóváhagyási elemre, és válassza a **Tulajdonságok** lapon a **Tulajdonságok** űrlap megnyitásához.
+2. A bal oldali panelen kattintson az **Speciális beállítások** gombra.
+3. Jelölje be a **Végső jóváhagyó használata** jelölőnégyzetet.
+4. Válassza ki a listából, hogy ki legyen a végső jóváhagyó.
 
 ## <a name="set-a-time-limit"></a>Időkorlát beállítása
 

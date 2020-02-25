@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770047"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024979"
 ---
 # <a name="product-recommendations-overview"></a>Termékajánlatok áttekintése
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 Commerce a termékjavaslatok megjelenítésére használható az e-kereskedelmi webhelyeken és a pénztári (POS) eszközön. A termékjavaslatok olyan cikkek, amelyeket a vevő számára érdekesek lehetnek. Az ajánlások az online és a fizikai áruházakban a más vevők beszerzési trendjein alapulnak.
@@ -45,6 +44,7 @@ Az alábbi POS-esetekben érhetők el a termékajánlások.
 - **Az e-Commerce-ben egy üzlet böngészési vagy érkezőoldalán**: Ha a vevők vagy az üzlet munkatársai meglátogatják a bolt egy oldalát, akkor az ajánlási rendszer az **Új**, **Legkelendőbb**és **Legnépszerűbb** listákban javasolhat termékeket.
 - **A Termékrészletek oldalon:** Ha a vevők vagy az üzlet munkatársai felkeresnek egy **Termékrészletek** lapot, akkor az ajánlási motor további, valószínűleg megvásárolni kívánt cikkeket javasol. Ezek a cikkek a **Másoknak ez is tetszett** listán jelennek meg.
 - **A tranzakció oldalon vagy a pénztár oldalon:** Az ajánlási motor a kosárban található cikkek teljes listája alapján javasolja a cikkeket. Ezek a cikkek megjelennek a **Gyakran együtt vásárolt** listán.
+- **Személyre szabott ajánlások:**: a kereskedők a bejelentkezett vevők számára személyre szabott **kitárolásokat** adhatnak meg a listán, emellett olyan új funkciókat, amelyek lehetővé teszik a meglévő lista-forgatókönyvek személyre szabását a vevő alapján. A további tudnivalókat lásd a funkció dokumentációban: [személyre szabott ajánlatok engedélyezése.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Ajánlási szolgáltatás
 
@@ -56,6 +56,10 @@ A termékjavaslatoka következő módon használják a Javaslatok gép tanulási
 ## <a name="additional-resources"></a>További erőforrások
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
+
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
 
 [Válogatott termékek ajánlati listájának létrehozása](create-editorial-recommendation-lists.md)
 

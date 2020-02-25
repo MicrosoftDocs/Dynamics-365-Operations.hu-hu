@@ -3,7 +3,7 @@ title: Oldal modell szószedete
 description: Ez a témakör a Microsoft Dynamics 365 Commerce webhelyének oldalain használt különböző elemeket ismerteti.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0285af2f73a25db3199b3cb089bc0b253a3b3f00
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: da41440581ad952540c7dcf3caa5e23582198a36
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914864"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025994"
 ---
 # <a name="page-model-glossary"></a>Oldal modellszószedete
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce webhelyének oldalain használt különböző elemeket ismerteti.
@@ -41,10 +41,10 @@ A következő táblázat bemutatja, hogy milyen kifejezéseket érdemes ismernie
 | Modultulajdonság | <p>**Definíció:** A Modultulajdonságok a modul által meghatározott specifikus beállítások. Az e-Commerce szerkesztőeszközeiben szerkeszthetők. A modul tulajdonságai használatosak például egy szalagcím modul fejlécének és hátterének beállításához.</p><p>**Hol vannak konfigurálva** A modul tulajdonságai a tulajdonság ablaktáblán választhatók ki és szerkeszthetők a sablonok, elrendezések, lapok, töredékek és a alkalmazás-beállítások szerkesztői környezetében (Szerkesztő).</p> |
 | [Sablon](templates-layouts-overview.md) | <p>**Definíció:** A sablonok határozzák meg, hogy mely modul-kombinációkat és beállításokat kell használni az oldalkategóriákhoz (például marketinges lapok, kategória lapok és a termék oldalak).</p><p>**Hol lehet kiválasztani** A sablonok az oldal vagy az elrendezés létrehozása munkafolyamatok során is kiválaszthatók.</p><p>**Hol lehet szerkeszteni** A sablonok szerkesztése a sablonszerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
 | [Elrendezés](templates-layouts-overview.md) | <p>**Definíció:** Az elrendezések határozzák meg a modulok végső kijelölését és elrendezését a szülő sablon beállításkészletéből. Egy elrendezés konfigurálható egyetlen oldalhoz (*egyéni elrendezés*), vagy több oldallal is megoszthatók (*előre beállított elrendezés*).</p><p>**Hol lehet kiválasztani:** Az elrendezések az új lapok létrehozása során is kiválaszthatók, illetve, amikor egy meglévő laphoz egy másik elrendezés szükséges.</p><p>**Hol lehet szerkeszteni** Az elrendezések szerkesztése az elrendezésszerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
-| Lappéldány | <p>**Definíció:** A lappéldányok határozzák meg, hogy az egyes oldalakon milyen végleges, oldalspecifikus lokalizált tartalom van. Ez a tartalom a modultulajdonságok értékeiből származik.</p><p>**Hol lehet kiválasztani:** A lapok az URL-címek hozzárendelése során választhatók ki.</p><p>**Hol lehet szerkeszteni** Az oldalak szerkesztése az oldalszerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
+| [Lappéldány](modify-existing-page.md) | <p>**Definíció:** A lappéldányok határozzák meg, hogy az egyes oldalakon milyen végleges, oldalspecifikus lokalizált tartalom van. Ez a tartalom a modultulajdonságok értékeiből származik.</p><p>**Hol lehet kiválasztani:** A lapok az URL-címek hozzárendelése során választhatók ki.</p><p>**Hol lehet szerkeszteni** Az oldalak szerkesztése az oldalszerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
 | [Téma](select-site-theme.md) | <p>**Definíció:** A témák definiálják az egymásra épülő stíluslapokat (CSS), és meghatározzák a lapon megjelenített modulok megjelenését és hangulatát.</p><p>**Hol lehet kiválasztani:** Miután a webhelyre feltöltött egy témát a Microsoft Dynamics Lifecycle Services (LCS) használatával, az a lap tároló moduljának új tulajdonságaként választható ki.</p><p>**Hol lehet szerkeszteni:** A témák jelenleg az SDK segítségével hozhatók létre és szerkeszthetők. Az LCS használatával lehet azokat feltölteni a weboldalára.</p> |
 | [Töredék](work-with-fragments.md) | <p>**Definíció:** A töredékek olyan teljes mértékben konfigurált modulok, amelyek honosított tartalmakat tartalmaznak, és központilag frissíthetők több oldalon. Például egy fejléc modulból létrehozott töredék használható minden sablonban és a webhely összes lapján, és központilag frissíthető egy helyen.</p><p>**Hol lehet kiválasztani** A töredékek mindenhol kiválaszthatók, ahol a modulok választhatók ki. Ezek a modulok helyettesítésére használhatók a hatékonyság növelése érdekében, az újrahasználható és központilag szerkeszthetők.</p><p>**Hol lehet szerkeszteni** Az töredékek szerkesztése az töredékszerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
-| URL-cím | <p>**Definíció:** Az URL-címek (URL-ek) weboldalakra vagy más URL-címekre mutató címek.</p><p>**Hol lehet kiválasztani:** Az URL-címek ott válaszhatók ki, ahol oldalak közötti hivatkozásokra van szükség.</p><p>**Hol lehet szerkeszteni** Az URL-címek szerkesztése az URL-cím-szerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
+| [URL-cím](create-page-URL.md) | <p>**Definíció:** Az URL-címek (URL-ek) weboldalakra vagy más URL-címekre mutató címek.</p><p>**Hol lehet kiválasztani:** Az URL-címek ott válaszhatók ki, ahol oldalak közötti hivatkozásokra van szükség.</p><p>**Hol lehet szerkeszteni** Az URL-címek szerkesztése az URL-cím-szerkesztőben történik. Nem szükséges kód egy elem létrehozásához vagy módosításához.</p> |
 | Eszköz | <p>**Definíció:** Az eszközök olyan bináris fájlok, amelyek kiterjesztése: .jpg, .docx, .pdf vagy .mpg.</p><p>**Hol lehet kiválasztani** Az eszközöket modultulajdonságként lehet kiválasztani azokhoz a modulokhoz, amelyekhez szükségesek.</p><p>**Hol lehet szerkeszteni:** Az eszközök feltöltése és a kapcsolódó metaadatok szerkesztése az eszközkezelőben lehetséges.</p> |
 
 ## <a name="additional-resources"></a>További erőforrások
