@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df158e80bd1c11832376678a631a9e0e162534ad
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b09efeb6b5d8bd2ea452dbf7a9ddaeec2ab75c92
+ms.sourcegitcommit: 0455a024185f79ecb82df61e6d994bd71dee5c10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915717"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "2974292"
 ---
 # <a name="FORMAT">FORMAT ER-függvény</a>
 
@@ -96,7 +96,7 @@ Ha ugyanazt a jelentést 2015. december 17-én a **Litware Retail** vevőre vona
 >[!NOTE]
 > A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 >
-> - **A Microsoft Dynamics 365 Finance alkalmazás erőforrásaiból származó címkék esetében:** **@X**, ahol **X** a címkeazonosító az alkalmazásobjektum-fában (AOT)
+> - **A Microsoft Dynamics 365 Finance alkalmazás erőforrásaiból származó címkék esetében:** **\@X**, ahol **X** a címkeazonosító az alkalmazásobjektum-fában (AOT)
 > - **Az ER-konfigurációkban található címkékhez:** **@"GER_LABEL:X"**, ahol **X** az ER-konfigurációban található címkeazonosító
 
 ## <a name="additional-resources"></a>További erőforrások

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914818"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002520"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -51,7 +51,7 @@ A **Képlettervező** lapot a következő műveletek bármelyikének végrehajt�
 - A vezérlő-ellenőrzések feldolgozására vonatkozó feltételek meghatározása.
 - A vezérlő-ellenőrzések feldolgozására vonatkozó üzenetszöveg meghatározása.
 
-## <a name="Binding">Adatok kötése</a>
+## <a name="Binding"></a>Adatok kötése
 
 Az ER Képletszerkesztő segítségével meghatározhatja azokat a kifejezéseket, amelyek átalakítják az adatforrásból származó adatokat, hogy az adatokat az adattárolóban futásidőben adhassa meg a következő módokon:
 
@@ -69,7 +69,7 @@ Az alábbi ábra bemutatja, hogyan használható az ilyen típusú kifejezés. E
 
 Futásidőben a tervezett `ROUND (Intrastat.AmountMST, 2)` képlet az **AmountMST** mező értékét két tizedesjegy pontossággal kerekíti az Intrastat tábla minden egyes rekordjánál. Ezután a kerekített értéket beviszi az **Adóbevallás** adatmodell **Transaction.InvoicedAmount** összetevőjébe.
 
-## <a name="Transformation">Adatformázás</a>
+## <a name="Transformation"></a>Adatformázás
 
 Az ER Képletszerkesztő segítségével meghatározhatja azokat a formátumokat, amelyek átalakítják az adatforrásból származó adatokat, úgy hogy adatokat küldhet egy elektronikusan létrejövő dokumentum részeként. Előfordulhat, hogy olyan formátummal kell dolgoznia, amelyet amelyet olyan tipikus szabályként kell alkalmazni, amelyet egy formátumban újra kell használni. Ebben az esetben a formátumot bevezetheti egyszer a formátum konfigurációjában névvel ellátott, formázási kifejezést tartalmazó átalakításként. Ez az elnevezett átalakítás hozzákapcsolható számos formátum-összetevőhöz, amelynek kimenetét formázni kell a létrehozott formázási kifejezésnek megfelelően.
 
@@ -87,7 +87,7 @@ Ha olyan formázással rendelkezik, amelyet egyénileg kell alkalmazni, akkor a 
 
 [![Formázás alkalmazása egyes összetevőkre](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Folyamatáramlat irányítás</a>
+## <a name="Validation"></a>Folyamatáramlat irányítás
 
 A ER képlettervező segítségével meg lehet határozni azokat a kifejezéseket, amelyek irányítják az elektronikus dokumentumok létrehozásának folyamatábráját. A következő feladatokat végezheti el:
 
@@ -112,7 +112,7 @@ Az ER képletszerkesztő segítségével generálhat egy fájlnevet a létrejöv
 
 [![Folyamatáramlat irányítás](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Dokumentumtartalmak szabályzása</a>
+## <a name="Enabled"></a>Dokumentumtartalmak vezérlése
 
 Az elektronikus képlettervező segítségével olyan kifejezéseket állíthat be, amelyek vezérlik, hogy milyen adatokat kell elhelyezni az elektronikus dokumentumokban futásidőben. A kifejezések az adatok feldolgozásától és a konfigurált logikától függően engedélyezhetik vagy letilthatják a formátum egyes elemeinek kimenetét. Ezeket a kifejezéseket egyetlen formátumú elemként is megadhatja az **Engedélyezve** mezőben a **Műveleti tervező** oldal **Hozzárendelés** lapján. A kifejezéseket megadhatja logikai feltételként, amely egy *Logikai* értéket ad eredményül:
 
@@ -139,7 +139,7 @@ Az alábbi ábra ilyen típusú kifejezéseket mutat be. (Az **ISO20022-jóváí
 > 
 > Ennek a beállításnak a alapján az összes adósi kifizetésre generált üzenet **Ustrd** XML-elem tartalmazni fogja a fizetési megjegyzések szövegét, vagy ha az ilyen szöveg üres, akkor a kifizetés kiegyenlítéséhez használt számlaszámok vesszővel tagolt listáját.
 
-## <a name="TestFormula">Konfigurált képletek érvényesítése</a>
+## <a name="TestFormula"></a>Konfigurált képletek érvényesítése
 
 A **Képlettervező** lapon kattintson a **Teszt** elemre a konfigurált képlet működésének ellenőrzéséhez.
 

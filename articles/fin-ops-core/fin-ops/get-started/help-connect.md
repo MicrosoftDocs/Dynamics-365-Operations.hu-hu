@@ -1,6 +1,6 @@
 ---
 title: A Súgórendszer csatlakoztatása
-description: Ez a témakör bemutatja a Súgó rendszer komponenseit a Finance and Operations alkalmazásokban, áttekinti azok kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
+description: Ez a témakör bemutatja a Súgó rendszer komponenseit a Finance and Operations alkalmazásban, áttekinti azok kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
 author: margoc
 manager: AnnBe
 ms.date: 10/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812580"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006172"
 ---
 # <a name="connect-the-help-system"></a>A Súgórendszer csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Finance and Operations alkalmazásos – például Dynamics 365 Finance, Supply Chain Management, Retail és Talent – súgórendszerének összetevőit ismerteti. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
+Ez a témakör a Finance and Operations alkalmazások – például Dynamics 365 Finance, Supply Chain Management, Commerce és Human Resources – súgórendszerének összetevőit ismerteti. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
 
@@ -43,7 +43,7 @@ A következő ábrán a súgórendszer részei láthatók. A termék súgója a 
 ## <a name="connecting-the-help-system"></a>Csatlakozás a Súgó rendszerhez
 
 > [!NOTE]
-> A **Feladat-útmutatók** lap jelenleg nem érhető el a Microsoft Dynamics 365 Talent és Retail alkalmazásban. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárási Súgó a docs.microsoft.com webhelyről is elérhető, mind a Retail, mind a Talent számára.
+> A **Feladat-útmutatók** lap jelenleg nem érhető el a Microsoft Dynamics 365 Human Resources és Commerce alkalmazásban. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Human Resources Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárási Súgó a docs.microsoft.com webhelyről is elérhető, mind a Human Resources, mind a Commerce számára.
 
 A **Rendszerparaméterek** oldalon a rendszergazdák csatlakoztathatják a Súgó rendszer különböző darabjait az adott megvalósításhoz.
 
@@ -60,11 +60,11 @@ A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 3. Adja meg a BPM könyvtárak megjelenítési sorrendjét. Ez meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
 
-Miután végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations alkalmazások aktuális oldalához kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
+Miután végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations-alkalmazások aktuális oldalához kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
 
 ### <a name="showing-translated-task-guides"></a>Lefordított feladat-útmutatók megjelenítése
 
-A honosított feladat-útmutatók először a 2016. májusi APQC Egyesített könyvtárban, valamint az Első lépések könyvtárban lettek szállítva. Ha szeretné a honosított feladat-útmutató súgót látni a Finance and Operations alkalmazásokban, győződjön meg arról, hogy csatlakozva van a májusi könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a feladat-útmutató nyelvét.
+A honosított feladat-útmutatók először a 2016. májusi APQC Egyesített könyvtárban, valamint az Első lépések könyvtárban lettek szállítva. Ha szeretné a honosított feladat-útmutató súgót látni a Finance and Operations-alkalmazásokban, győződjön meg róla, hogy csatlakozva van a Május könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a feladat-útmutató nyelvét.
 
 > [!NOTE]
 > Megjegyzés: Annak ellenére, hogy sok feladat-útmutató le van már fordítva, az ügyfél jelenleg nem jelzi a lefordított feladat-útmutatók neveit. Valamint csak a 2016. februárban megjelent feladat-útmutatók fordításai elérhetőek a májusi könyvtárban jelenleg. További fordításokat tartalmazó frissített könyvtárat fogunk megjelentetni hamarosan.
@@ -78,7 +78,7 @@ Használhatja a feladat-útmutatókat az egyéni súgó létrehozásáhot, vagy 
 
 ### <a name="create-custom-help-with-task-guides"></a>Egyéni súgó létrehozása feladat-útmutatókkal
 
-Lehetősége van egyéni súgót létrehozni saját Finance, Supply Chain Management és Retail példányához; ehhez létre kell hoznia az egyedi megoldásokat magukban foglaló feladatrögzítéseket, majd azokat egy LCS Üzletifolyamat-tárba kell mentenie. A Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat.
+Lehetősége van egyéni súgót létrehozni saját Finance, Supply Chain Management és Commerce példányához; ehhez létre kell hoznia az egyedi megoldásokat magukban foglaló feladatrögzítéseket, majd azokat egy LCS Üzletifolyamat-tárba kell mentenie. A Human Resources rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
 Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el a megoldás lesz a felhasználók számára érhető el. Ezenkívül az APQC Egyesített globális tárról is készíthet másolatot; megnyithatja a saját másolatot és az abban található feladatrögzítéseket, majd a módosítást követően elmentheti a rögzítéseket a változtatásokkal együtt. További tájékoztatás: [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -86,7 +86,7 @@ Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el 
 
 A Microsoft rendelkezésre bocsátott egy ismertetőt és mintakódot, amely leírja, hogy hogyan lehet egy egyéni súgówebhelyet létrehozni, és a Súgópanelhez csatlakoztatni. További tájékoztatás:
 
-- [Egyéni súgó létrehozása a Finance and Operations szolgáltatásokhoz (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Egyéni Súgó létrehozása a Finance and Operations-alkalmazásokhoz (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Egyéni súgó GitHub-tárház](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>További erőforrások

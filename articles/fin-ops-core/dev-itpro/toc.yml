@@ -1,45 +1,57 @@
-- name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+- name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
   items:
-    - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
       items:
-        - name: A Finance and Operations-alkalmazás dokumentációja
+        - name: Finance and Operations alkalmazásdokumentáció
           href: ../fin-ops/index.md
-        - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+        - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
           href: index.md
         - name: Új vagy módosult elemek
           items:
-            - name: A Platform update 32 (2020. február) előzetes funkciói
-              href: get-started/whats-new-platform-update-32.md
-            - name: Platform update 31 (2020. január)
-              href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (2019. november)
-              href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: Platform update 29 (2019. október)
-              href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: Platform update 28 (2019. július)
-              href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: Platform update 27 (2019. június)
-              href: ../fin-ops/get-started/whats-new-platform-update-27.md
-            - name: Platform update 26 (2019. május)
-              href: ../fin-ops/get-started/whats-new-platform-update-26.md
-            - name: Platform update 25 (2019. április)
-              href: ../fin-ops/get-started/whats-new-platform-25.md
-            - name: Platform update 24 (2019. március)
-              href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: Platform update 23 (2019. január)
-              href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (2018. december)
-              href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: Platform update 21 (2018. november)
-              href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: Platform update 20 (2018. szeptember)
-              href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (2018. március)
-              href: ../fin-ops/get-started/whats-new-platform-update-15.md
-            - name: Új vagy módosult elemek a korábbi verziókban
+            - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Új vagy módosult elemek a Platform frissítésekben
               items:
-                - name: Új vagy módosult elemek a Finance and Operations kezdőlapján
-                  href: ../fin-ops/get-started/whats-new-changed.md
+                - name: Új vagy módosult elemek a Platform frissítések kezdőlapján
+                  href: get-started/whats-new-home-page.md
+                - name: Platform update 33 (2020. április)
+                  href: get-started/whats-new-platform-update-33.md
+                - name: Platform update 32 (2020. február)
+                  href: get-started/whats-new-platform-update-32.md
+                - name: Platform update 31 (2020. január)
+                  href: get-started/whats-new-platform-update-31.md
+                - name: Platform update 30 (2019. november)
+                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
+                - name: Platform update 29 (2019. október)
+                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
+                - name: Platform update 28 (2019. július)
+                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
+                - name: Platform update 27 (2019. június)
+                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
+                - name: Platform update 26 (2019. május)
+                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
+                - name: Platform update 25 (2019. április)
+                  href: ../fin-ops/get-started/whats-new-platform-25.md
+                - name: Platform update 24 (2019. március)
+                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
+                - name: Platform update 23 (2019. január)
+                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
+                - name: Platform update 22 (2018. december)
+                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
+                - name: Platform update 21 (2018. november)
+                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
+                - name: Platform update 20 (2018. szeptember)
+                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
+                - name: Platform update 15 (2018. március)
+                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Eltávolított vagy elavult funkciók
+              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: A helyszíni telepítésben nem implementált funkciók
+              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Üzleti események
           items:
             - name: Üzleti események áttekintése
@@ -108,7 +120,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations csatlakoztató
+            - name: Finance and Operations Csatlakoztató
               href: data-entities/fin-ops-connector.md
             - name: Fejlesztés integrációhoz
               items:
@@ -133,74 +145,74 @@
                     - name: 'Szinkronizált, kétirányú integráció'
                       items:
                         - name: Közel valós idejű adatintegráció
-                          href: data-entities/dual-write-overview.md
+                          href: data-entities/dual-write/dual-write-overview.md
                         - name: Szervezeti hierarchia a Common Data Service megoldásban
-                          href: data-entities/dual-write-organization.md
+                          href: data-entities/dual-write/organization-mapping.md
                         - name: Vállalati integráció
                           items:
-                            - name: Vállalat fogalma a Common Data Service szolgáltatásokban
-                              href: data-entities/dual-write-company.md
+                            - name: Vállalat fogalma a Common Data Services szolgáltatásokban
+                              href: data-entities/dual-write/company-data.md
                             - name: Rendszerindítás vállalati adatokkal
-                              href: data-entities/dual-write-bootstrap.md
+                              href: data-entities/dual-write/bootstrap-company-data.md
                         - name: Integrált vevői alapadat
-                          href: data-entities/dual-write-customer.md
+                          href: data-entities/dual-write/customer-mapping.md
                         - name: Integrált főkönyv
-                          href: data-entities/dual-write-ledger.md
+                          href: data-entities/dual-write/ledger-mapping.md
                         - name: Egységes terméktapasztalat
-                          href: data-entities/dual-write-product.md
+                          href: data-entities/dual-write/product-mapping.md
                         - name: Szállítói integráció
                           items:
                             - name: Integrált szállítói alapadat
-                              href: data-entities/dual-write-vendor.md
+                              href: data-entities/dual-write/vendor-mapping.md
                             - name: Váltás a szállítói arculatok között
-                              href: data-entities/dual-write-vendor-switch.md
+                              href: data-entities/dual-write/vendor-switch.md
                         - name: Integrált telephelyek és raktárak
-                          href: data-entities/dual-write-sites-and-warehouses.md
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
                         - name: Integrált adózási alapadat
-                          href: data-entities/dual-write-tax.md
+                          href: data-entities/dual-write/tax-mapping.md
                         - name: Kezdeti szinkronizálás
-                          href: data-entities/dual-write-initial.md
+                          href: data-entities/dual-write/initial-sync.md
                         - name: Az adatintegrálás hibaelhárítása
-                          href: data-entities/dual-write-troubleshooting.md
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                     - name: 'Aszinkron, kétirányú integráció'
                       items:
                         - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
                           items:
                             - name: A potenciális vevők készpénzre váltása
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+                            - name: A Sales-számlák közvetlen szinkronizálása az ügyfelekre Finance and Operations
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
+                            - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
+                            - name: A Sales-kapcsolatok közvetlen szinkronizálása a kapcsolatokra vagy ügyfelekre Finance and Operations
                               href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
                             - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
                               href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                             - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
                               href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
+                            - name: Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
                               href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                         - name: A Field Service szolgáltatással való integráció konfigurálása
                           items:
                             - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
                               href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+                            - name: A termékek szinkronizálása Finance and Operations a Field Service szolgáltatásokban lévő termékekkel
                               href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
+                            - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása az értékesítési rendeléseivel Finance and Operations
                               href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                            - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a szabadszöveges számláival Finance and Operations'
                               href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                            - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból az alkalmazásba Finance and Operations
                               href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                            - name: Készletszintű információk szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                               href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                            - name: Készletegységgel rendelkező termékek szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                               href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                            - name: Projektlista szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                               href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                            - name: Raktárak szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
                               href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                            - name: Munkarendelések szinkronizálása projekttel az alkalmazásból a Field Service alkalmazásba Finance and Operations
                               href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                         - name: Project Service Automation integráció konfigurálása
                           items:
@@ -380,7 +392,7 @@
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute és Finance and Operations
                   href: deployment/expressroute.md
-                - name: Finance and Operations-architektúra
+                - name: Finance and Operations architektúra
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: deployment/apply-deployable-package-system.md
@@ -522,7 +534,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modellek és csomagok
                   href: dev-tools/models.md
-                - name: Finance and Operations projekttípus
+                - name: Finance and Operations projekt típusa
                   href: dev-tools/projects.md
                 - name: Eszközökhöz tartozó bővítmények a Visual Studio szolgáltatáshoz
                   href: dev-tools/developer-tools-add-ins.md
@@ -912,7 +924,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Bizalmas adatokhoz való hozzáférés kezelése
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Személyes adatokra vonatkozó kérések megválaszolása a Talent használatával
+                - name: Személyes adatokra vonatkozó kérések megválaszolása az emberi erőforrás használatával
                   href: gdpr/respond-dsr-request-talent.md
                 - name: Személyes adatokra vonatkozó kérések megválaszolása az AX 2012 rendszerben
                   href: gdpr/gdpr-ax2012.md
@@ -1258,21 +1270,21 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Támogatás
           items:
-            - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
+            - name: Támogatás Finance and Operations és Lifecycle Services szolgáltatások támogatása
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Támogatás kérése a 21Vianet által Kínában működtetett Finance and Operations rendszerrel kapcsolatban
+            - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
               href: lifecycle-services/21vianet-support.md
             - name: Igénylések benyújtása a Dynamics Service mérnöki csapatához
               href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: Műszaki támogatás beállítása a Finance and Operations szolgáltatáshoz
+            - name: 'Technikai támogatás beállítása ehhez: Finance and Operations'
               href: lifecycle-services/support-experience.md
             - name: Tervezett karbantartási időtartamra vonatkozó GYIK
               href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Felhőműveletek és szervizelés
               href: lifecycle-services/cloud-operations-servicing.md
-            - name: A Finance and Operations támogatási tapasztalatainak kezelése
+            - name: Támogatási Finance and Operations tapasztalatok kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Rendszerfelügyelet
           items:
@@ -1348,7 +1360,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Frissítés AX 2012-ről
               items:
-                - name: Frissítés AX 2012-ről a Finance and Operations alkalmazásra
+                - name: Frissítés AX 2012-ről Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1390,7 +1402,7 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Adatok áttelepítése AX 2009-ből
               items:
-                - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
+                - name: Adatok áttelepítése AX 2009-ből Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009 áttelepítése – Az adatáttelepítési eszköz telepítése
                   href: migration-upgrade/install-dmt.md
@@ -1672,5 +1684,7 @@
       href: ../../supply-chain/index.md
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../../retail/index.md
+      href: ../../commerce/index.md

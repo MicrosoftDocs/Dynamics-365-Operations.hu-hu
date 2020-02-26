@@ -1,5 +1,5 @@
 ---
-title: Commerce előzetes verziós környezet áttekintése
+title: Dynamics 365 Commerce előzetes verziós környezet áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce előzetes verziós alkalmazásról.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 901583afde4739be5313fa129ff0e52f11326881
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906070"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024683"
 ---
-# <a name="commerce-preview-environment-overview"></a>Commerce előzetes verziós környezet áttekintése
+# <a name="dynamics-365-commerce-preview-environment-overview"></a>Dynamics 365 Commerce előzetes verziós környezet áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce előzetes verziós alkalmazásról.
@@ -52,10 +52,10 @@ A Commerce előzetes verziós környezet létesítéséhez lásd: [Commerce elő
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Commerce előzetes verziós környezet kiépítése](provisioning-guide.md)
+[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
 
-[Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
 
-[A Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
 
-[Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)

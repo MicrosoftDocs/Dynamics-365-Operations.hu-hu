@@ -1,5 +1,5 @@
 ---
-title: A Commerce előzetes verziós környezet választható funkcióinak konfigurálása
+title: A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezethez.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906116"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024729"
 ---
-# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>A Commerce előzetes verziós környezet választható funkcióinak konfigurálása
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezethez.
@@ -173,13 +173,13 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
 
-[Commerce előzetes verziós környezet kiépítése](provisioning-guide.md)
+[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
 
-[Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
 
-[Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -188,5 +188,3 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Súgóerőforrások: Dynamics 365 Retail](../retail/index.md)

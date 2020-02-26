@@ -1,6 +1,6 @@
 ---
 title: Áfa-hozzárendelés és felülbírálások
-description: Ez az eljárás bemutatja, hogyan lehet áfacsoportokat társítani kiskereskedelmi csatornákhoz.
+description: Ez az eljárás bemutatja, hogyan lehet áfacsoportokat társítani kereskedelmi csatornákhoz.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,38 +16,38 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fbaa467c22656aa8d1e39d26a8233250e2bb66f8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 40723d35c1914f6cec6aa361a6c38100d1667cb6
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026601"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003627"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Áfa-hozzárendelés és felülbírálások
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet áfacsoportokat társítani kiskereskedelmi csatornákhoz. Emellett az új áfafelülírás létrehozásának és annak meglévő áfafelülírás csoporthoz rendelésének folyamatán is végig vezet. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
+Ez az eljárás bemutatja, hogyan lehet áfacsoportokat társítani kereskedelmi csatornákhoz. Emellett az új áfafelülírás létrehozásának és annak meglévő áfafelülírás csoporthoz rendelésének folyamatán is végig vezet. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
 
-1. Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Csatornák > Kiskereskedelmi áruházak > Minden kiskereskedelmi üzlet.
-2. A listában kattintson a „Houston”-hoz tartozó Kiskereskedelmi csatorna azonosítóra.
+1. Ugorjon a következő oldalra: Retail és Commerce > Csatornák > Üzletek > Minden kiskereskedelmi üzlet.
+2. A listában kattintson a „Houston”-hoz tartozó csatornaazonosítóra.
 3. Kattintson a Szerkesztés lehetőségre.
     * Az „Áfa csoport” mező tartalmazza az aktuális céghez kapcsolódó áfa csoportok listáját. Az aktuálisan hozzárendelt csoport egy általános „Texas” áfacsoport. Vannak áfacsoportok „Washington”-hoz és „Washington, King County”-hoz is. Az áfacsoportok több közigazgatási terület adóit is tartalmazhatják.  
     * Az „Áfa felülírás” mező az, ahol az áfa-felülírási csoport csatornához rendelhető. Az áfa-felülírási csoportok használhatók olyan áfafelülírások csoportosítására, amik több üzletre vonatkoznak. Ahelyett hogy egyesével, manuálisan rendelné össze az áfafelülírásokat, létrehozhat egy csoportot, amit közvetlenül a csatornákhoz rendelhet, így időt takaríthat meg.  
 4. Kattintson a Mentés gombra.
 5. Zárja be a lapot.
-6. Menjen a Kiskereskedelmi és kereskedelem > Csatorna-beállítás > Forgalmi adók > Áfafelülírások lehetőségre.
+6. Menjen a Retail and Commerce > Csatorna beállítása > Áfák > Áfafelülírások lehetőségre.
 7. Kattintson az Új lehetőségre.
 8. Az Áfafelülírás mezőbe írja be az ön felülírásának nevét.
 9. a Leírása mezőbe adja meg a felülírás leírását.
 10. Állítsa az állapotot „Engedélyezett”-re.
 11. Bontsa ki vagy zárja be Felülírás részt.
 12. A Típus mezőben válasszon ki egy lehetőséget.
-    * A cikkek áfa csoportjai használhatóak konkrét cikkek áfáinak felülírásához, amennyiben azok a csoportba tartoznak. Például, az élelmiszerek tipikusan eltérő áfával rendelkeznek a fizikai árukhoz képest, így valószínűleg érdemes saját áfacsoportba sorolni őket.     Az áfacsoportok adók csoportjai, amely az adott csatornára használhatóak. Ha például a csatorna értékesít kiskereskedelemben és vállalkozástól-vállalkozásnak is, akkor különböző cikkáfacsoportok használhatóak. Minden alkalmazható adót az áfacsoporthoz kell rendelni.  
-    * Most kiválaszthatja a „Kezdő” és „Végző” adókat vagy kiválaszthatja a „Adócsoportból” és „Adócsoportig”, hogy létrehozza az ön adófelülírását.    A "Kezdő" mező mutatja a felülírandó adót vagy adócsoportot. A Cikk áfacsoport szerinti felülírás eltérő lehetőségeket biztosít, az áfacsoporttal történő felülíráshoz képest.    A Áfafelülírások beállíthatók egész tranzakciók áfa felülírására, vagy a tranzakció megadott soraira.  
+    * A cikkek áfa csoportjai használhatóak konkrét cikkek áfáinak felülírásához, amennyiben azok a csoportba tartoznak. Például, az élelmiszerek tipikusan eltérő áfával rendelkeznek a fizikai árukhoz képest, így valószínűleg érdemes saját áfacsoportba sorolni őket. Az áfacsoportok adók csoportjai, amely az adott csatornára használhatóak. Ha például a csatorna értékesít kiskereskedelemben és vállalkozástól-vállalkozásnak is, akkor különböző cikkáfacsoportok használhatóak. Minden alkalmazható adót az áfacsoporthoz kell rendelni.  
+    * Most kiválaszthatja a „Kezdő” és „Végző” adókat vagy kiválaszthatja a „Adócsoportból” és „Adócsoportig”, hogy létrehozza az ön adófelülírását. A "Kezdő" mező mutatja a felülírandó adót vagy adócsoportot. A Cikk áfacsoport szerinti felülírás eltérő lehetőségeket biztosít, az áfacsoporttal történő felülíráshoz képest. A Áfafelülírások beállíthatók egész tranzakciók áfa felülírására, vagy a tranzakció megadott soraira.  
 13. Kattintson a Mentés gombra.
 14. Zárja be a lapot.
-15. Menjen a Kiskereskedelmi és kereskedelem > Csatorna-beállítás > Forgalmi adók > Áfafelülírás csoportok lehetőségre.
+15. Menjen a Retail és Commerce > Csatorna beállítása > Áfák > Áfafelülírás csoportok lehetőségre.
     * Ebben a lépésben az újonnan létrehozott áfafelülírást fogja hozzárendelni a Houston csatornához rendelt áfa-felülírási csoporthoz.  
 16. Kattintson a Szerkesztés lehetőségre.
 17. Bontsa ki vagy csukja össze a Beállítás szakaszt.

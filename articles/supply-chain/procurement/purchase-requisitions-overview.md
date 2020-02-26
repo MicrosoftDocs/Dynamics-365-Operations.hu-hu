@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815342"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003653"
 ---
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
@@ -81,7 +81,7 @@ Egy beszerzési igénylés általános állapotát a beszerzési igénylési sor
 <li><strong>Vizsgált</strong> – A beszerzési igénylés sorok ellenőrzésre küldve. Ha egy beszerzési igénylés sorához tartozó munkafolyamat befejeződött, a sor állapota <strong>Vizsgált</strong> marad, amíg a hátralévő beszerzési igénylés sorainak ellenőrzése lefut.</li>
 <li><strong>Elutasított</strong> – A beszerzési igénylési sor el lett utasítva. A visszautasított beszerzési igénylési sorok módosíthatók és újraküldhetők.</li>
 </ul>
-Ha újraküldi a visszautasított beszerzési igénylés sorát, az ellenőrzési folyamat minden ellenőrzés alatt lévő beszerzési igénylés sornál újrakezdődik. <strong>Megjegyzés:</strong> Visszahívhat beszerzési igénylést amelyet már feladott. Ha visszahívja a beszerzési igénylést, az összes beszerzési igénylés is visszahívásra kerül. Visszahívott beszerzési igénylés sorok törölhetők.</td>
+Ha újraküldi a visszautasított beszerzési igénylés sorát, az ellenőrzési folyamat minden ellenőrzés alatt lévő beszerzési igénylés sornál újrakezdődik. </br><strong>Megjegyzés:</strong> Visszahívhat beszerzési igénylést amelyet már feladott. Ha visszahívja a beszerzési igénylést, az összes beszerzési igénylés is visszahívásra kerül. Visszahívott beszerzési igénylés sorok törölhetők.</td>
 </tr>
 <tr class="odd">
 <td>Elutasítva</td>
@@ -109,7 +109,7 @@ Ha újraküldi a visszautasított beszerzési igénylés sorát, az ellenőrzés
 <tr class="odd">
 <td>Érvénytelenítve</td>
 <td>Érvénytelenítve</td>
-<td>A kiválasztott beszerzési igénylés és a beszerzési igénylés összes sora visszavonva. <strong>Megjegyzés:</strong> Ha már nincs szüksége egy cikkre, amelyik a beszerzési igénylés sorában szerepel, akkor mondja le a beszerzési igénylés sort, ha már elfogadták. Csak a visszahívott vagy jóváhagyott beszerzési igénylés sorok. Ha bármelyik beszerzési igénylés ellenőrzés alatt áll, akkor a beszerzési igénylés <strong>Vizsgált</strong> állapotú. Ebben az esetben visszahívhatja a beszerzési igénylést, és törölheti a megfelelő beszerzési igénylési sort.</td>
+<td>A kiválasztott beszerzési igénylés és a beszerzési igénylés összes sora visszavonva.</br> <strong>Megjegyzés:</strong> Ha már nincs szüksége egy cikkre, amelyik a beszerzési igénylés sorában szerepel, akkor mondja le a beszerzési igénylés sort, ha már elfogadták. Csak a visszahívott vagy jóváhagyott beszerzési igénylés sorok. Ha bármelyik beszerzési igénylés ellenőrzés alatt áll, akkor a beszerzési igénylés <strong>Vizsgált</strong> állapotú. Ebben az esetben visszahívhatja a beszerzési igénylést, és törölheti a megfelelő beszerzési igénylési sort.</td>
 </tr>
 <tr class="even">
 <td>Lezárva</td>
@@ -156,7 +156,8 @@ Bizonyos esetekben el kell indítania az ajánlatkérési (RFQ) folyamatot, hogy
 
 A beszerzési igénylések visszatarthatók a **Visszatartott** jelölőnégyzet kiválasztásával a **Beszerzési igénylés részletei** lapon. A beszerzési igénylés feldolgozása csak azt követően folytatódhat, hogy eltávolítja a visszatartást a négyzet bejelölésének törlésével.  
 
-**Megjegyzés:** Az e-beszerzésben, a beszerzési igényléshez az ajánlatkérés lehetővé teszi a szállítóknak alternatív sorok megadását. Ebben az esetben a beszerzési igénylésben a jóváhagyott alternatívák jelennek meg.
+> [!NOTE]
+> Az e-beszerzésben, a beszerzési igényléshez az ajánlatkérés lehetővé teszi a szállítóknak alternatív sorok megadását. Ebben az esetben a beszerzési igénylésben a jóváhagyott alternatívák jelennek meg.
 
 ## <a name="demand-consolidation"></a>Igényösszesítés
 Ha több beszerzési igénylési sort konszolidál több beszerzési igénylésből, a tárgyalási erejét növelheti a szállítókkal szemben a jobb árképzés, valamint az alacsonyabb szállítási, kezelési és járulékos költségek érdekében.  
@@ -172,7 +173,8 @@ Az összevonási lehetőség az olyan beszerzési igénylési sorok készlete, a
 
 Miután az igénylési sorokat hozzáadta az összevonási lehetőséghez és elvégezte a szükséges módosításokat, létrehozhat egy beszerzési rendelést a konszolidált beszerzési igénylési sorokhoz.  
 
-**Megjegyzés:** A beszerzési igénylési soron végrehajtott módosítások a **Beszerzési igénylés összevonása** oldalon jelennek meg a létrehozott beszerzési rendelésen. Ugyanakkor a beszerzési igénylésben szereplő sor változatlan marad, így megmaradnak az előzmények.  
+> [!NOTE]
+> A beszerzési igénylési soron végrehajtott módosítások a **Beszerzési igénylés összevonása** oldalon jelennek meg a létrehozott beszerzési rendelésen. Ugyanakkor a beszerzési igénylésben szereplő sor változatlan marad, így megmaradnak az előzmények.  
 
 Olyan beszerzési igénylés létrehozásakor, beszerzési rendelésnél, amelyek nem jogosultak az igényösszesítésre vagy nem választotta azokat ki az összevonási lehetőséghez, kézzel kell feldolgozni a beszerzési rendelés létrehozásához.
 

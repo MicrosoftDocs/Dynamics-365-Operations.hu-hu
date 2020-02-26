@@ -1,6 +1,6 @@
 ---
-title: Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
-description: A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alkalmazásokhoz vagy a Microsoft Dynamics Lifecycle Services (LCS) rendszerhez.
+title: Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz
+description: Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.
 author: kfend
 manager: AnnBe
 ms.date: 10/14/2019
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812135"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005516"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz
 
 [!include [banner](../includes/banner.md)]
 
-A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alkalmazásokhoz vagy a Microsoft Dynamics Lifecycle Services (LCS) rendszerhez. 
+Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban. 
 
 ## <a name="contact-support"></a>Kapcsolatfelvétel a támogatási szolgálattal
 
 A cikkben található információk segítségével lépjen kapcsolatba a Microsofttal, amennyiben műszaki kérdései vannak, vagy ha segítségre van szüksége a Microsoft Dynamics Lifecycle Services (LCS) elérésében.
 
-### <a name="finance-and-operations-apps-support"></a>Finance and Operations alkalmazások támogatás
+### <a name="finance-and-operations-apps-support"></a>Finance and Operations-alkalmazások támogatása
 
 Ha támogatást szeretne, használja a következő táblázatban lévő forrásokat. Ezeket az erőforrásokat annak sorrendjében soroljuk fel, amilyen sorrendben javasoljuk használatukat a hibaelhárítás során.
 
@@ -72,12 +72,12 @@ Megjegyzés: A Microsoft Premier Ügyfelek és Partnerek premier támogatás jeg
 <td>Ha a támogatáskérés Microsoftnak történő elküldésekor nehézségei támadnak, amikor a <strong>Támogatás</strong> csempét használja az LCS-ben, lásd a <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Lépjen kapcsolatba a Microsoft Business Solutions támogatással</span></a> részt a Microsoft Dynamics Regionális Műveleti központtal történő kapcsolatfelvételhez. A támogatási csapat a következő típusú technikai problémák megoldásában segíthet:
 <ul>
 <li>Olyan hibák, amelyek az LCS használatakor, illetve az LCS elérésekor fordulnak elő.</li>
-<li>A Finance and Operations alkalmazások használata során előforduló hibák.</li>
+<li>A Finance and Operations-alkalmazások használata során előforduló hibák.</li>
 </ul>
 A CustomerSource webhellyel és annak elérésével , az elektronikus tanulással a kereséssel, a Tudásbázissal, fájlok letöltésével és lapokkal vagy rendszerhibákkal kapcsolatos technikai kérdésekkel lépjen a <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Webhellyel kapcsolatos támogatás</span></a> lehetőségre.</td>
 </tr>
 <tr class="odd">
-<td>Találja meg a válaszait a Finance and Operations alkalmazások licencelésével kapcsolatos kérdéseire.</td>
+<td>Segítség a Finance and Operations-alkalmazások licenceivel kapcsolatos kérdésekkel kapcsolatban.</td>
 <td>Lépjen kapcsolatba a partnerével, a nagyvállalati viszonteladójával (LAR) vagy a Microsoft értékesítési munkatárssal.</td>
 </tr>
 <tr class="even">
@@ -90,6 +90,6 @@ A CustomerSource webhellyel és annak elérésével , az elektronikus tanulássa
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Támogatás kérése a Dynamics 365 Retail alkalmazáshoz](../../../retail/retail-support.md)
-- [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](../../../talent/talent-support.md)
-- A Microsoft Dynamics támogatási ajánlatokkal kapcsolatos további tudnivalókat lásd: [A Finance and Operations alkalmazások támogatásának kezelése](cloud-powered-support-lcs.md).
+- [Támogatás kérése a Microsoft Dynamics 365 Human Resources alkalmazáshoz](../../../human-resources/hr-admin-troubleshooting-support.md)
+- A Microsoft Dynamics-támogatási ajánlatokkal kapcsolatos további tudnivalókat lásd: [A Finance and Operations-alkalmazások támogatásának kezelése](cloud-powered-support-lcs.md).
 

@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818479"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006055"
 ---
 # <a name="talent-system-requirements"></a>Talent rendszerkövetelményei
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Talent, beleértve az Attract, Onboard, és Core HR alkalmazások követelményeit írja le. Ezenkívül kiemeli azokat az országokat és régiókat, ahol a Talent elérhető, valamint a Talent adatainak lokalizációjával és a nyelvekkel kapcsolatos információkat. Mindemellett ez a témakör a Talent frissítési irányelveit is tartalmazza.
+Ez a témakör a Microsoft Dynamics 365 Talent követelményeit írja le, beleértve az Attract és Onboard követelményeit is. Ezenkívül kiemeli azokat az országokat és régiókat, ahol a Talent elérhető, valamint a Talent adatainak lokalizációjával és a nyelvekkel kapcsolatos információkat. Mindemellett ez a témakör a Talent frissítési irányelveit is tartalmazza.
 
 ## <a name="supported-web-browsers"></a>Támogatott böngészők
 

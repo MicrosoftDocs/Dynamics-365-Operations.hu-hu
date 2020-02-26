@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835581"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025828"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Alkalmazandó árak és engedmények keresése
 
@@ -49,7 +49,7 @@ Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni e
 10. Zárja be a lapot.
 
 ## <a name="find-the-applicable-discount"></a>A vonatkozó engedmény keresése
-    * Ellenőrizze, hogy a Vevői számla mező az US-001 vevőszámot tartalmazza-e.   
+Ellenőrizze, hogy a Vevői számla mező az US-001 vevőszámot tartalmazza-e.   
 1. A Cikkszám mezőbe írja be az „T0012” értéket.
     * Győződjön meg arról, hogy a Mennyiség mező értéke 1.  
     * A T0012 termékre vonatkozó következő árképzési adatok egy vagy több kereskedelmi megállapodásból származnak: az egységár 1000 CAD, és a sorengedmény százalékos értéke 5.  

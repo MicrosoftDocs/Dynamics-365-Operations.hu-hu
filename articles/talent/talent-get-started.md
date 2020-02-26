@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024248"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006517"
 ---
 # <a name="get-started-with-talent"></a>Első lépések a Talent alkalmazásban
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024248"
 A Microsoft Dynamics 365 Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 
 > [!NOTE] 
-> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 Finance; Dynamics 365 Retail és Dynamics 365 Talent. Ugyanaz a funkció mindhárom termékben megjelenhet. Ennek következtében az elsődlegesen a Retail szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 Retail; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 Finance lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> Az alábbi három termék közeli rokonságban áll egymással: Dynamics 365 Finance; Dynamics 365 Commerce és Dynamics 365 Talent. Ugyanaz a funkció mindhárom termékben megjelenhet. Ennek következtében az elsődlegesen a Commerce szolgáltatáshoz kapcsolódó témakörökben a feltüntetett terméknév Dynamics 365 Commerce; az elsődlegesen a Talenthez kapcsolódó témakörökben a terméknév Dynamics 365 Talent; az elsődlegesen emberi erőforráshoz kapcsolódó témakörökben pedig a feltüntetett terméknév Dynamics 365 Finance lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 ## <a name="personalizing-talent"></a>A Talent személyre szabása 
 Az alábbi témakörök bemutatják, hogyan hozhatja létre a Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 

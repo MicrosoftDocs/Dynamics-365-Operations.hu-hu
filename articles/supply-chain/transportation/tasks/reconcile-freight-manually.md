@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843241"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026314"
 ---
 # <a name="reconcile-freight-manually"></a>Fuvarlevél egyeztetése manuálisan
 
@@ -37,7 +37,7 @@ Ez az eljárás bemutatja, hogyan lehet manuálisan elvégezni a fuvaregyezteté
 3. A listában jelölje ki a rakományt, amelynek a rakományazonosítója 00006.
 
 ## <a name="create-a-carrier-invoice"></a>Szállítói számla létrehozása
-    * Ha manuálisan végzi a fuvaregyeztetést, és nem kapja meg automatikusan a szállítói számlákat, a fuvarlevél alapján számlát hozhat létre.  
+Ha manuálisan végzi a fuvaregyeztetést, és nem kapja meg automatikusan a szállítói számlákat, a fuvarlevél alapján számlát hozhat létre.  
 1. Kattintson a Kapcsolódó információ lehetőségre.
 2. Kattintson a Fuvarlevél részletei lehetőségre.
 3. Kattintson a Fuvarlevélszámla generálása lehetőségre.
@@ -45,7 +45,7 @@ Ez az eljárás bemutatja, hogyan lehet manuálisan elvégezni a fuvaregyezteté
 5. Kattintson az OK gombra.
 
 ## <a name="reconcile-the-invoice"></a>Számla egyeztetése
-    * Ha a fuvarlevél és a szállítói számla egyeztetését végzi, ez soronként történik.  
+Ha a fuvarlevél és a szállítói számla egyeztetését végzi, ez soronként történik.  
 1. Kattintson a Fuvarlevelek és számlák egyeztetése lehetőségre.
 2. Bontsa ki a Számla részletei szakaszt.
 3. Bontsa ki a Nem egyeztetett fuvarlevél-adatok szakaszt.

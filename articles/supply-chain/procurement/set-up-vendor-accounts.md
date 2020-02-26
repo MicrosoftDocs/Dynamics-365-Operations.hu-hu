@@ -3,7 +3,7 @@ title: Szállítókódok beállítása
 description: Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249392"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012445"
 ---
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
@@ -88,7 +88,7 @@ A szállítót különböző tranzakciótípusokhoz lehet varakozásra helyezni.
 -   **Számla** – nem adható fel számla a szállító részére.
 -   **Minden** – a szállító minden tranzakciótípus esetén várakozásra van helyezve. Ezek a tranzakció típusok a következők lehetnek: beszerzési igénylések, számlák és kifizetések.
 -   **Fizetés** – nem hozható létre fizetés a szállító számára.
--   **Igénylés**– csak beszerzési igénylés hozható létre. Nem lehet más tranzakciót létrehozni.
+-   **Igénylés** – a szállítóhoz nem hozhatók létre beszerzési igénylések, és a már korábban létrehozott igénylési sorok nem alakíthatók át beszerzési rendeléssé. A program a szállítóhoz tartozó igénylési sorokat érvényteleníti, ha a házirend automatikus beszerzési rendelések létrehozásához van beállítva.
 -   **Soha** – a szállító soha nem lesz várakoztatott inaktivitás miatt.
 
 Ha a szállítót várakoztatja, akkor megadhatja az okot és a várakoztatott állapot végét jelölő dátumot is. Ha nem ad meg egy záró dátumot, a szállító várakoztatott állapota határozatlan ideig tart.

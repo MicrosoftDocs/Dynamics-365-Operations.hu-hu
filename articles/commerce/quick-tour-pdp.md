@@ -3,7 +3,7 @@ title: A termékrészletek oldalak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b02d50adbfcda27d590bcb87fd9669d67d4a01c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: dbf8f4c1ea479a508f4a0294020b7201b32fe228
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697865"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025925"
 ---
 # <a name="overview-of-product-details-pages"></a>A termékrészletek oldalak áttekintése
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
@@ -43,9 +43,9 @@ A következő ábrán a PDP egy példája látható.
 
 A PDP felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A lap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témájú témákhoz, amelyek érdekesek lehetnek a vevők számára.
 
-## <a name="buy-box-module"></a>Vásárlásmező modul
+## <a name="buy-box-module"></a>Vásárlásmező-modul
 
-A PDP legfontosabb modulja a vásárlásmező modul. Ezért az a lap fő szakaszának első eleme. A vásárlásmező modul egy tárolómodul, és számos modult tárol, amelyek a termék legfontosabb adatait tartalmazzák. Ezek közé tartozik a termék neve, a termék képei, a leírás, az ár és a termék minősítése.
+A PDP legfontosabb modulja a vásárlásmező modul, amely a lap fő szakaszának első elemeként jelenik meg. A Vásárlásmező modul fontos termék adatait jeleníti meg, mint például a termék neve, a termék leírása, a termék ára, a termék képei és a termék minősítései.
 
 A vásárlódoboz modul lehetővé teszi a vevő számára a termék opciók kiválasztását (például a méretet, a stílust és a színt), illetve azt, hogy a terméket hozzáadja a kosárhoz. Azt is lehetővé teszi, hogy a vevő online vásárolja meg a terméket, és vegye egy üzletben vegye át. A vásárlás online és az átvétel üzletben modul a Bing Maps alkalmazásprogramozási felületek (API-k) integrációját használja hogy megkeresse a közeli üzleteket vagy üzleteket egy másiik helye, amit az ügyfél meghatároz.
 
@@ -53,7 +53,7 @@ A vásárlódoboz modulhoz termékazonosító szükséges. Ez az azonosító az 
 
 ## <a name="product-specifications-module"></a>Termékleírások modul
 
-A termékleírások modul a termékkel kapcsolatos további részletek megjelenítésére használható. Ezek a részletek a termékattribútumokból származnak Dynamics 365 Retail alkalmazásból. A termékspecifikációk modulja minden olyan attribútumot megjelenít, amelyben a **látható** tulajdonság **igaz** értékre van állítva. A termékattribútumok beolvasásához szükséges a termékazonosító.
+A termékleírások modul a termékkel kapcsolatos további részletek megjelenítésére használható. Ezek a részletek a termékattribútumokból származnak a Commerce alkalmazásból. A termékspecifikációk modulja minden olyan attribútumot megjelenít, amelyben a **látható** tulajdonság **igaz** értékre van állítva. A termékattribútumok beolvasásához szükséges a termékazonosító.
 
 ## <a name="recommendations-module"></a>Ajánlatok modul
 
@@ -62,17 +62,23 @@ A PDP egyik fontos modulja az ajánlatok modul. Miközben a vevők böngészik a
 Különböző típusú ajánláslisták érhetők el:
 
 - Az **Emberek ezt is szeretik** lista gépi tanuláson alapul. A többi vevő tranzakciós előzményeit használja a javaslatok biztosítására. Ezt a listát a javaslatok szolgáltatás hozza létre, és a „Vásárlók akik megvásárolták a következőket is megvásárolták…” listákhoz hasonlít. A lista létrehozásához egy termékazonosító szükséges.
-- A Retail termékeihez konfigurálható egy **Kapcsolódó** lista. Például egy barna bőr utazás kézitáskához, több bőr kézitáska, iletve más utzaásokhoz készült tásaki is konfigurálható a kapcsolódó listához. Más típusú kapcsolódó listák, például a **Tartozékok** és **Több ehhez hasonló** is konfigurálható a Retail alkalmazásban. A lista létrehozásához egy termékazonosító szükséges. Ha tehát egy kezdőlaphoz adják hozzá, és a lap környezete nem tartalmaz termékazonosítót, akkor a lista üres lesz.
+- A Commerce termékeihez konfigurálható egy **Kapcsolódó** lista. Például egy barna bőr utazás kézitáskához, több bőr kézitáska, iletve más utzaásokhoz készült tásaki is konfigurálható a kapcsolódó listához. Más típusú kapcsolódó listák, például a **Tartozékok** és **Több ehhez hasonló** is konfigurálható a Commerce alkalmazásban. A lista létrehozásához egy termékazonosító szükséges. Ha tehát egy kezdőlaphoz adják hozzá, és a lap környezete nem tartalmaz termékazonosítót, akkor a lista üres lesz.
 - Algoritmus alapján léterhozott ajánlási listák listák, például **Népszerű**, **Legnépszerűbb** és **Új** használhatók a PDP-ken. Annak ellenére, hogy ezek a listák nem közvetlenül kapcsolódnak a PDP termékeihez, egy másik módot kínálnak arra, hogy a vevők könnyebben megtalálják azokat a termékeket, amelyek érdekesek lehetnek számukra. Az ilyen típusú listákhoz nem szükséges termékazonosító. Ezek általános listák, amelyek a webhelyen tapasztalható különböző vásárlási szokások alapján jönnek létre.
 - A Szerkesztői listák manuálisan válogatott listák. Előfordulhat például, hogy egy kiskereskedő úgy dönt, hogy manuálisan szeretné összeállítani a bemutatni kívánt termékek listáját.
 
-## <a name="ratings-and-reviews-module"></a>Értékelések és vélemények modul
+## <a name="ratings-and-reviews-modules"></a>Értékelések és vélemények modulok
 
-Az értékelések és vélemények modul a más vevők által adott értékelésekez és véleményeket jeleníti meg. Azt is lehetővé teszi, hogy a vevő értéklést írjon a termékről. Ezenkívül tartalmaz egy hisztogramot, amely a termék minősítési tendenciáját jeleníti meg. További részletekért lásd: [Minősítések és értékelések áttekintése](ratings-reviews-overview.md).
+Három modul használható a vélemények megjelenítésére és hozzáadására:
+
+- **Értékelések** – ez a modul a más vevők által adott értékeléseket és véleményeket listázza. A vevők rendezni és szűrni tudják a véleményeket. Ez a modul a vevők kedvelt vagy nem kedvelt értékelését, valamint a problémák jelentését is lehetővé teszi.
+- **Értékelés írása** – ezzel a modullal a vevők saját értékelést írhatnak a termékhez.
+- **Minősítési hisztogram**  – ez a modul tartalmaz egy olyan hisztogramot, amely egy termék minősítési tendenciáját jeleníti meg.
+
+További részletekért lásd: [Minősítések és értékelések áttekintése](ratings-reviews-overview.md).
 
 ## <a name="marketing-modules"></a>Marketing modulok
 
-Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bármilyen marketingmodul hozzáadható. A marketingmodulokat egy PDP-hez a lap „gazdaggá tétele” révén lehet hozzáadni. 
+Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bármilyen marketingmodul hozzáadható. A marketingmodulokat egy PDP-hez a lap „gazdaggá tétele” révén lehet hozzáadni. A további tudnivalókat lásd [A termékoldal bővítése](enrich-product-page.md) lapon.
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -83,3 +89,5 @@ Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bárm
 [Kosár és pénztár oldalainak áttekintése](quick-tour-cart-checkout.md)
 
 [A fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
+
+[A termékoldal bővítése lap](enrich-product-page.md)

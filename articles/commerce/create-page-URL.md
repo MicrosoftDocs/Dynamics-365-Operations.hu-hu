@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab7325dd4060392ed43e59c1ad48069d294d81c0
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 588cbedb077fab0663d3d62fc4a8b8ed915635b3
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697548"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001921"
 ---
 # <a name="create-a-page-url"></a>Weblap URL-jének létrehozása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör egy lap URL-címének a webhelyén történő létrehozásával kapcsolatos alapfogalmakat és eljárásokat ismerteti.

@@ -3,7 +3,7 @@ title: Minősítések és értékelések kezelése
 description: Ez a témakör azt mutatja be, hogyan lehet kezelni a minősítéseket és értékeléseket a Microsoft Dynamics 365 Commerce minősítések és értékelések moderálása eszközével.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698026"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027242"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet kezelni a minősítéseket és értékeléseket a Microsoft Dynamics 365 Commerce minősítések és értékelések moderálása eszközével.
@@ -39,6 +38,16 @@ A Dynamics 365 Commerce a Microsoft Azure kognitív szolgáltatását használja
 - Értékelések moderálása válaszadással vagy eltávolításukkal.
 - Vevői értékelések törlése a vevő kérésére.
 - Minősítések és értékelése tömeges importálása egy Microsoft Power BI sablonba hogy elemezhetők legyenek a minősítések és a vélemények trendjei.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>A minősítések és értékelések moderációs funkcióinak elérése
+
+Az e-Commerce webhelykezelő eszköz minősítések és ellenőrzések moderálási szolgáltatásainak eléréséhez hajtsa végre az alábbi lépéseket.
+
+1. Jelentkezzen be a [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com) szolgáltatásba.
+1. Nyissa meg azt a projektet, amely tartalmazza a projektet, ahol az e-kereskedelmet inicializálni kívánja.
+1. A **Környezetek** szakaszban válassza ki a környezetet.
+1. A **Környezeti funkciók** területen kattintson a**Kiskereskedelem kezelése** elemre.
+1. Az **e-Commerce** lap **Hivatkozások** területén válassza az **e-Commerce webhelykezelő eszköz** elemet.
 
 ## <a name="read-a-review"></a>Értékelés elolvasása 
 

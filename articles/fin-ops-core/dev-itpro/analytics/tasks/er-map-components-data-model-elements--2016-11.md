@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184738"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026240"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER – A létrehozott formátum összetevőinek leképezése az adatmodellelemekre (2016. november)
 
@@ -98,7 +98,7 @@ Az alábbi eljárás azt mutatja, hogy egy Rendszergazda vagy Elektronikus jelen
 2. Zárja be a lapot.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>A formátumkonfiguráció aktuális verziójának állapotmódosítása
-    * A következő lépésekben módosítsa a formátumkonfiguráció állapotát vázlatról teljesítettre, hogy elérhetővé tegye a fizetési dokumentumok létrehozásához.  
+A következő lépésekben módosítsa a formátumkonfiguráció állapotát vázlatról teljesítettre, hogy elérhetővé tegye a fizetési dokumentumok létrehozásához.  
 1. Kattintson az Állapot módosítása elemre.
 2. Kattintson a Befejezés gombra.
 3. A Leírás mezőben adjon meg egy értéket.
@@ -108,7 +108,7 @@ Az alábbi eljárás azt mutatja, hogy egy Rendszergazda vagy Elektronikus jelen
     * Fontos, hogy a konfiguráció teljesített 1.1-es verzióként lesz mentve: ez a formátum 1-es verziója, amely az adatmodell 1-es verzióján alapul.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Formátum teljesített verziójának érvénybe lépési dátumának meghatározása
-    * Minden egyes formátumverzió konfigurálható egy bizonyos dátumtól kezdve használatra. Ha egynél több fájlformátum-verzió aktív egy meghatározott időpontban, a legújabb formátum (verziószáma alapján) lesz jelölve használatra. A munkamenet dátumértéke a megfelelő verzió kiválasztásához használatos.  
+Minden egyes formátumverzió konfigurálható egy bizonyos dátumtól kezdve használatra. Ha egynél több fájlformátum-verzió aktív egy meghatározott időpontban, a legújabb formátum (verziószáma alapján) lesz jelölve használatra. A munkamenet dátumértéke a megfelelő verzió kiválasztásához használatos.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Korlátozott hozzáférés a létrehozott formátumhoz a vállalatoktól
 1. Bontsa ki az ISO Ország/régió kódok szakaszt.

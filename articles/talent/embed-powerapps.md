@@ -1,5 +1,5 @@
 ---
-title: Power Apps alkalmazások beágyazása a Dynamics 365 – Core HR alkalmazásban
+title: Power Apps alkalmazások beágyazása a Dynamics 365 Human Resources megoldásba
 description: Ez a témakör ismerteti annak a problémának a megoldását, amikor a Microsoft Power Apps menüelem eltűnik a Rendszerfelügyeleti modulból.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b1dd1756be349d85af8e6d7159623a2a95e75526
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 8275a8a7c68fa13d6b9880c4c411deaa2dcbb998
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898712"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017873"
 ---
-# <a name="embed-power-apps-apps-in-dynamics-365---core-hr"></a>Power Apps alkalmazások beágyazása a Dynamics 365 – Core HR alkalmazásban
+# <a name="embed-power-apps-apps-in-dynamics-365-human-resources"></a>Power Apps alkalmazások beágyazása a Dynamics 365 Human Resources megoldásba
 
 **Kibocsátás**
 
@@ -38,31 +38,31 @@ A felhasználói felület (UI) elrendezése megváltozott, a Microsoft Power App
 
 A Power Apps beágyazási módja megváltozott. A Power Apps alkalmazást most a testreszabási modellen keresztül lehet hozzáadni. A Power Apps a Microsoft Dynamics 365 Talent majdnem minden lapjához hozzáadható.
 
-További információ a Power Apps Talent szolgáltatásban történő beágyazásáról: [A Microsoft Power Apps beágyazása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+További információ a Power Apps Talent szolgáltatásban történő beágyazásáról: [A Power Apps beágyazása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Minden Power Apps-vevőnek, aki beágyazott alkalmazásokat a módosítás előtt, már frissülnie kellett az új modellre.
 
-A **Power Apps** gomb a Talent szolgáltatás majdnem minden oldalán megtalálható a jobb felső sarokban. Ezzel a gombbal lehetséges a Power Apps beszúrása.
+A **Power Apps** gomb a Talent szolgáltatás majdnem minden oldalán megtalálható a jobb felső sarokban. A gomb segítségével beszúrhat alkalmazásokat.
 
 Íme, egy példa.
 
 1. Lépjen a **Személyzetkezelés \> Hivatkozások \> Dolgozók \> Alkalmazottak** menüpontra.
-2. Válassza ki a **Power Apps** gombot, majd válassza a **PowerApp beszúrása** lehetőséget.
+2. Válassza ki a **Power Apps** gombot, majd válassza az **Alkalmazás hozzáadása innen: Power Apps** elemet.
 
     ![Power Apps gomb](media/png.png)
 
-3. Töltse ki a mezőket a **PowerApp beszúrása** párbeszédpanelen.
+3. Töltse ki a mezőket az **Alkalmazás hozzáadása innen: Power Apps** párbeszédpanelből.
 
-    ![PowerApp beszúrása párbeszédablak](media/insert-powerapp.png)
+    ![Alkalmazás hozzáadása a Power Apps párbeszédpanelről](media/insert-powerapp.png)
 
 A következő lépéseket is követheti.
 
-1. Az oldal Művelet panelén a **Beállítások** lap **Személyre szabás** csoportjában válassza a **Képernyő személyre szabása** elemet.
+1. Az oldal Művelet panelén a **Beállítások** lap **Személyre szabás** csoportjában válassza az **Oldal személyre szabása** elemet.
 
     ![Csoport személyre szabása a Beállítások lapon](media/options.png)
 
     Megjelenik a személyre szabási eszköztár.
 
-2. Az eszköztáron válassza a **Beszúrás \> PowerApp** lehetőséget.
+2. Az eszköztáron válassza az **Alkalmazás hozzáadása innen: Power Apps** elemet.
 
-    ![A Power Apps alkalmazás beszúrása a személyre szabási eszköztár segítségével](media/powerapp-bar.png)
+    ![Alkalmazás hozzáadása innen: Power Apps, a személyre szabási eszköztár segítségével](media/powerapp-bar.png)

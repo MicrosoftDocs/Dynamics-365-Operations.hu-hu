@@ -3,7 +3,7 @@ title: Raktári munka ellenőrzése munkasablonok és helyutasítások használa
 description: A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026934"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028028"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
 
@@ -152,7 +152,7 @@ Jelölje be ezt a jelölőnégyzetet kötegstratégiák használatához az olyan
 ### <a name="strategy"></a>Stratégia
 
 -   **Konszolidálás** – Ez a beállítás szerepel adott helyen lévő cikkek konszolidálására, amikor hasonló cikkek rendelkezésre állnak. Ez csak a betárolási típusú munkák helyutasításainál használható. A betárolás közös beállítása az első műveletsoron fog konszolidálódni, majd a második próbálkozás konszolidáció nélkül történik. A konszolidálás hatékonyabbá teszi a későbbi kitárolást.
--   **Csomagolási mennyiség egyeztetése** – Ez a beállítás segítségével győződjön meg róla, hogy egy kitárolási hely van-e a megadott csomagolási mennyiség. Ez csak a kitárolási típusú munkák helyutasításainál használható. 
+-   **Csomagolási mennyiség egyeztetése** – ez a stratégia olyan helyet talál, amely pontosan a szükséges mennyiséget tartalmazó azonosítótáblát tartalmazza. Nem használható olyan helyekkel, amelyek nem azonosítótáblával szabályozottak. Ez a stratégia csak a kitárolási típusú munkák helyutasításánál használható.
 -   **FEFO-köteg lefoglalása** – Stratégia a megadott készlet helyének a köteg lejárati dátuma alapján történő meghatározásására és köteglefoglalási célra történő felosztására szolgáló funkció. Ez a beállítás csak a köteg engedélyezett cikkek használhatja. Ez csak a kitárolási típusú munkák helyutasításánál használható. 
 -   **Felkerekítés a teljes azonosítótáblára** – Ez a beállítás a azonosítótábla (at) mennyiséget ki kell választani a cikkekhez hozzárendelt egyeztetendő készletmennyiség Felkerekítés szolgál. Ezt a stratégiát csak a kitárolási típus helyutasításának feltöltésére használhatja. 
 -   **Üres hely, amely nem rendelkezik bejövő munkával** – Ezt a stratégiát az üres helyek keresésére használja. A hely üresnek minősül, ha nincs fizikailag megjelenő készlete vagy bejövő munkája. Ezt a stratégiát csak a helyutasítási típusnál használhatja. 

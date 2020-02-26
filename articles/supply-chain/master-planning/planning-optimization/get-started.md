@@ -3,7 +3,7 @@ title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773971"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971464"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés 
 
 1. Jelentkezzen be a LCS-ba, majd nyissa meg a kívánt környezetet.
 1. Lépjen a **Teljes részletek** elemre.
-1. Válassza a **karbantartás** lehetőséget, vagy görgessen a **környezeti bővítmények** gyorslapra.
+1. Görgessen le a **Környezeti bővítmények** gyorslapra.
 1. Válassza az **Új bővítmény telepítése** lehetőséget.
 1. Válassza a **Tervezés optimalizálása** lehetőséget.
 1. Kövesse a telepítési útmutatót, és fogadja el a feltételeit és kikötéseit.
 1. Válassza a **Telepítés** parancsot.
+1. A **Környezeti bővítmények** gyorslapon látnia kell, hogy a Tervezési optimalizálás telepítése folyamatban van.
+1. Néhány perc múlva a **Telepítés** felirat erre módosul: **Telepítve** (előfordulhat, hogy frissíteni kell az oldalt). A telepítés befejezésekor készen áll a Tervezési optimalizálás funkció aktiválására a Dynamics 365 Supply Chain Management alkalmazásban.
 
 ### <a name="planning-optimization-integration"></a>A tervezésoptimalizálás integrációja
 
-Annak konfigurálásához, hogy a Tervezésoptimalizálás bővítményt használja-e a rendszer az alaptervezéshez, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezésoptimalizálás integrációja** \> **Integrációs paraméterek** pontot.
+Annak konfigurálásához, hogy a Tervezési optimalizálás bővítményt használja-e a rendszer az alaptervezéshez, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezési optimalizálás paraméterei** lehetőséget.
 
 #### <a name="connection-status"></a>Kapcsolat állapota
 

@@ -1,9 +1,9 @@
 ---
-title: E-commerce webhely létrehozása
-description: Ez a témakör bemutatja azokat a feladatokat, amelyek az új e-kereskedelmi webhely létrehozásához társulnak a Dynamics 365 Commerce alkalmazásban.
+title: E-kereskedelmi webhely létrehozása
+description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-Commerce webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945835"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002013"
 ---
-# <a name="create-an-e-commerce-site"></a>E-commerce webhely létrehozása
+# <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja azokat a feladatokat, amelyek az új e-kereskedelmi webhely létrehozásához társulnak a Dynamics 365 Commerce alkalmazásban.
+Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-Commerce webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 
-## <a name="overview"></a>Áttekintés
+Az e-kereskedelmi webhelye fejlesztésének megkezdéséhez először létre kell hoznia egy új webhelyet a webhelyépítőben. 
 
-Az e-kereskedelmi webhelye fejlesztésének megkezdéséhez először létre kell hoznia egy új webhelyet a webhely-létrehozási környezetben. Új webhely létrehozása előtt legalább egy online áruházat létre kell hoznia a Dynamics 365 Retail alkalmazásban. 
+
+Az e-kereskedelmi webhelye fejlesztésének megkezdéséhez először létre kell hoznia egy új webhelyet a webhely-létrehozási környezetben. Új webhely létrehozása előtt legalább egy online áruházat létre kell hoznia a Commerce alkalmazásban. 
+
 
 ## <a name="set-up-your-site"></a>A webhely beállítása
 
 A webhelyének beállításához tegye a következőket.
 
-1. A Microsoft Lifecycle Services (LCS) alkalmazásban válassza ki a webhely-létrehozási környezet hivatkozását. 
+1. A webhelyépítő környezet megnyitása. A Microsoft Lifecycle Services (LCS) alkalmazásban találja meg a webhelyépítőt a környezeti funkciók oldalon a Commerce alkalmazáshoz.
 1. A webhely-létrehozási környezet kezdőlapján válassza az **Új webhely** elemet.
 1. Az **Új webhely** párbeszédpanelen adja meg a következő adatokat.
 

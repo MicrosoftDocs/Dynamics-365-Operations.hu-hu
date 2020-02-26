@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914615"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001415"
 ---
 # <a name="add-languages-to-your-site"></a>Nyelvek hozzáadása a webhelyhez
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet további nyelvi támogatást adni a Microsoft Dynamics 365 Commerce webhelyhez.
 
 ## <a name="overview"></a>Áttekintés
 
-A webhely lokalizálható bármilyen, a Dynamics 365 Commerce által támogatott nyelvre. (A támogatott nyelvek listája a témakörben később jelenik meg.) Ha nyelvet szeretne hozzáadni a webhelyhez, először hozzá kell adnia a webhelyhez kötött online áruházhoz.
+A webhely lokalizálható bármilyen, a Commerce által támogatott nyelvre. (A támogatott nyelvek listája a témakörben később jelenik meg.) Ha nyelvet szeretne hozzáadni a webhelyhez, először hozzá kell adnia a webhelyhez kötött online áruházhoz.
 
 ## <a name="add-a-language-to-an-online-store"></a>Nyelv hozzáadása az online áruházhoz
 
 Nyelv hozzáadásához az online áruházhoz, tegye a következőket.
 
-1. Nyissa meg a webhelye Dynamics 365 Retail-környezetét.
-1. Nyissa meg a **Kiskereskedelem \> Csatornák \> Online áruházak** menüpontot a környezetéhez konfigurált online áruházak listájának eléréséhez. Alternatív megoldásként megadhatja az **online áruházak** keresési kifejezést.
+1. Nyissa meg a webhelye Dynamics 365 Commerce-környezetét.
+1. Nyissa meg a **Kiskereskedelem és kereskedelem \> Csatornák \> Online áruházak** menüpontot a környezetéhez konfigurált online áruházak listájának eléréséhez. Alternatív megoldásként megadhatja az **online áruházak** keresési kifejezést.
 1. Válassza ki az online áruházat, amelyhez a nyelvet hozzá kívánja adni.
 1. A **Nyelvek** gyorslapon válassza a **Hozzáadás** elemet.
 1. A **Nyelv** mezőben válassza ki a hozzáadni kívánt nyelvet.

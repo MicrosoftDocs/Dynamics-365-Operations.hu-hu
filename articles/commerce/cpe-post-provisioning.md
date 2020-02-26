@@ -1,5 +1,5 @@
 ---
-title: Commerce előzetes verziós környezet konfigurálása
+title: Egy Dynamics 365 Commerce előzetes verziós környezet konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezetet a létesítést követően.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f19d03f3f2f5a9f6f7ba08b682277e4e3b764d10
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906139"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024706"
 ---
-# <a name="configure-a-commerce-preview-environment"></a>Commerce előzetes verziós környezet konfigurálása
+# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Egy Dynamics 365 Commerce előzetes verziós környezet konfigurálása
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezetet a létesítést követően.
@@ -142,13 +142,13 @@ A Commerce előzetes környezete nem kötelező funkcióinak konfigurálásához
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
 
-[Commerce előzetes verziós környezet kiépítése](provisioning-guide.md)
+[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
 
-[A Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
 
-[Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -157,5 +157,3 @@ A Commerce előzetes környezete nem kötelező funkcióinak konfigurálásához
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Súgóerőforrások: Dynamics 365 Retail](../retail/index.md)

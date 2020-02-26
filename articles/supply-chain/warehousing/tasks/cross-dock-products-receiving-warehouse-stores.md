@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563389"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004088"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Termékek áttárolása a fogadó raktárból az üzletekbe
 
@@ -31,7 +31,7 @@ Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fe
 
 1. Ugrás az összes beszerzési rendelésre.
 2. Válasszon ki a listából egy beszerzési rendelést, majd a rendelés megnyitásához kattintson a hivatkozásra.
-3. A Művelet panelen kattintson a Kiskereskedelem elemre.
+3. A műveleti ablaktáblán kattintson a Kiskereskedelem és Kereskedelem elemre.
 4. Kattintson az Áttárolás gombra.
 5. Kattintson a Szerkesztés lehetőségre.
     * A kategória segítségével szűrhetőek a Sorok szakaszban lévő cikkek.  

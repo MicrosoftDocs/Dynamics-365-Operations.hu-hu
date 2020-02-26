@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec7a2c5a2b2b7ef22fd3dcf7f7d3859e8e07ea5e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568650"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003950"
 ---
 # <a name="configure-linked-products"></a>Összekapcsolt termékek konfigurálása
 
@@ -30,7 +30,7 @@ Ez az eljárás végigveszi a csatolt termékek konfigurálásának lépéseit. 
 
 1. Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A Művelet panelen kattintson a Kiskereskedelem elemre.
+3. A műveleti ablaktáblán kattintson a Kiskereskedelem és Kereskedelem elemre.
 4. Kattintson a Csatolt termékek lehetőségre.
 5. Kattintson a Szerkesztés lehetőségre.
 6. A Csatolt termék száma mezőben kattintson a legördülő gombra a keresőlista megnyitásához.

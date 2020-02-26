@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635126"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031067"
 ---
 # <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítási varázsló
 
@@ -32,9 +32,9 @@ ms.locfileid: "2635126"
 
 Ez a témakör útmutatót tartalmaz az **Alaptervezés-beállítási varázsló** funkcióhoz. Bemutatja a paraméterjavaslatok kiszámításának módját, valamint példákat is tartalmaz, amelyek bemutatják, hogy a különböző vállalatok hogyan állíthatják be az alaptervezést az üzleti igényeik alapján.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-A (fenti videón látható) [Mestertervezés beállítási varázslója a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/c-e6n-8rZb4) szerepel a YouTube felületén megtalálható [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW).
+A (fenti videón látható) [Alaptervezés beállítási varázslója a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/c-e6n-8rZb4) szerepel a YouTube felületén megtalálható [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW).
 
 
 ## <a name="specific-requirements-of-your-company"></a>A vállalat egyedi igényei
@@ -184,7 +184,7 @@ A varázslóban a Contoso Manufacturer vállalathoz a következő értékeket ad
 A Contoso Retailer egy divatipari forgalmazócég. Az Alaptervezés alapján számítja ki a beszerzési rendeléseket elküldési időpontját, az előre jelzett értékesítések alapján. Íme néhány jellemzője:
 
 - A Contoso Retailer igény-előrejelzést használ az értékesítések előrejelzéséhez. A beszerzési rendelések az előrejelzésnek megfelelően lesznek megtervezve.
-- A kiskereskedelmi áruházak igényléseket használnak a feltöltésre.
+- Az áruházak igényléseket használnak a feltöltésre.
 - A fő raktárból az egyes üzletekhez vezető átfutási idő minden cikknél körülbelül két hét.
 
 A varázslóban a Contoso Retailer vállalathoz a következő értékeket adták meg:
@@ -208,4 +208,4 @@ A varázslóban a Contoso Retailer vállalathoz a következő értékeket adták
     - **Kérdés:** „Szeretné-e felvenni a jóváhagyott igénylések iránti igényt a kiskereskedelmi üzletek feltöltése érdekében?”
     - **Válasz:** „Igen, az alaptervben meghatározottak szerint.” **1 napot** kell beírni.
 
-    A Contoso a kiskereskedelmi üzletei jóváhagyott igénylései segítségével hoz létre tervezett beszerzési rendeléseket az üzletek feltöltése érdekében. Mivel az Alaptervezés minden nap fut, az előző nap igénylései szerepelni fognak a tervezésben.
+    A Contoso az üzletei jóváhagyott igénylései segítségével hoz létre tervezett beszerzési rendeléseket az üzletek feltöltése érdekében. Mivel az Alaptervezés minden nap fut, az előző nap igénylései szerepelni fognak a tervezésben.
