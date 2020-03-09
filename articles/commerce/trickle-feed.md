@@ -1,6 +1,6 @@
 ---
-title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi üzlet tranzakcióihoz
-description: Ez a témakör bemutatja a kiskereskedelmi áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
+description: Ez a témakör bemutatja az áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: josaw1
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,18 +18,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f691017ad06d3416e4ba0e86d7a0bc207aba5bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004274"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057157"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi üzlet tranzakcióihoz (Nyilvános előzetes verzió)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz (Nyilvános előzetes verzió)
 
 [!include [banner](includes/banner.md)]
-
-
 
 A Dynamics 365 Retail 10.0.4-es és korábbi verzióiban a kimutatások feladása nap végi műveletnek tekinthető, ahol az összes tranzakciót a nap végén számolják el a könyvekben. A nagy méretű tranzakciókat ezután korlátozott idő alatt kell feldolgozni, amely bizonyos esetekben terhelési és zárolási, valamint kimutatásfeladási hibákat okozhat. A kiskereskedők emellett nap közben nem tudják elszámolni bevételeiket és kifizetéseiket a könyvelésben.
 
@@ -58,4 +56,4 @@ A rendelések folyamatos, apránkénti létrehozásának nyilvános előzetes ve
 > [!NOTE]
 > Az új funkcióban már nincsenek jelen a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt kiszámítása** és a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt feladása** menüpontok.
 
-Másik lehetőségként manuálisan is létre lehet hozni a tranzakciós és pénzügyi kimutatások típusait. Nyissa meg a **Kiskereskedelem és kereskedelem > Csatornák > Üzletek** pontot, és kattintson a **Kimutatások** lehetőségre. Kattintson az **Új** elemre, majd válassza ki a létrehozni kívánt kimutatás típusát. A **Kimutatások** mezőiben és az oldal **Kimutatáscsoport** részében található műveletek között a kiválasztott kimutatástípus szempontjából releváns adatok és műveletek jelennek meg.
+Másik lehetőségként manuálisan is létre lehet hozni a tranzakciós és pénzügyi kimutatások típusait. Nyissa meg a **Kiskereskedelem és kereskedelem > Csatornák > Áruházak** pontot, és kattintson a **Kimutatások** lehetőségre. Kattintson az **Új** elemre, majd válassza ki a létrehozni kívánt kimutatás típusát. A **Kimutatások** mezőiben és az oldal **Kimutatáscsoport** részében található műveletek között a kiválasztott kimutatástípus szempontjából releváns adatok és műveletek jelennek meg.
