@@ -80,7 +80,7 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: Az AX 2012 elhalasztott funkciói
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: A helyszíni telepítésben nem implementált funkciók
+                - name: A helyszíni telepítésben nem megvalósított funkciók
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
@@ -150,7 +150,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: Mentett nézetek
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
-                - name: Egyéni mezők létrehozása és felhasználása
+                - name: Rácsfunkciók
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
+                - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: PowerApps alkalmazások beágyazása
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
@@ -936,10 +938,12 @@
                   href: general-ledger/tasks/set-up-sales-tax-authorities.md
                 - name: Áfakódok beállítása
                   href: general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Adócsoportok és cikkáfacsoportok beállítása
+                - name: Áfacsoportok és cikkáfacsoportok beállítása
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: Áfabevallás kódjainak beállítása
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Kettős pénznemtámogatás áfa esetén
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: Áfameghatározás a főkönyvi tranzakciós jelentés szerint
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Áfafizetési időszakok beállítása
@@ -1098,10 +1102,12 @@
                   href: public-sector/derived-financial-hierarchies-public-sector.md
                 - name: Származtatott pénzügyi hierarchia beállítása az állami szektorban
                   href: public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-                - name: Készpénzes számlákhoz tartozó kamatok elosztásának beállítása
+                - name: Készpénzes számlákhoz tartozó kamatelosztás beállítása
                   href: public-sector/interest-distribution.md
-            - name: Beszerzés és forráskeresés az Állami szektorban
+            - name: Beszerzés és forráskeresés az állami szektorban
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: Egy sor szállítási idejének kiszámítása az átfutási idő alapján
+              href: public-sector/po-delivery-date.md
             - name: Biztonsági szerepkörök az állami szektorban
               href: public-sector/security-roles-public-sector.md
             - name: Alapok az állami szektorban
@@ -1294,10 +1300,12 @@
                   href: localizations/latam-bra-sped-reinf.md
                 - name: SPED pénzügyi rendezés 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
-                - name: SPED fiscal 2020 – Kiegészítő információk az ICMS-ST és SPED pénzügyi rendezéshez 014
+                - name: SPED fiscal 2020 – Kiegészítő információk az ICMS-ST és SPED pénzügy 014-es elrendezéséhez
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
-                - name: SPED pénzügy - Elrendezés 014
+                - name: SPED pénzügy – 014-es elrendezés
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: SPED EFD-hozzájárulások beállítása
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: Jogi személyek paraméterei
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Jogi személy paramétereinek beállítása
@@ -2805,13 +2813,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
             - name: Jelentésdokumentumok készítése és nyomtatása
               items:
-                - name: A Dokumentumjelentési szolgáltatások áttekintése
+                - name: Jelentésdokumentum-készítési szolgáltatások áttekintése
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: Támogatott betűtípusok
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: SSRS beállítása helyszíni telepítésekhez
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Nyomtatás
                   items:
-                    - name: A dokumentumnyomtatás áttekintése
+                    - name: Dokumentumnyomtatás áttekintése
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
                     - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Szervezeti hierarchia a Common Data Service megoldásban
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Vállalat fogalma a Common Data Services szolgáltatásokban
+                - name: Vállalat fogalma a Common Data Services szolgáltatásban
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Integrált vevői alapadat
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -456,8 +456,6 @@
           items:
             - name: Modellek és adatmodellelemek létrehozásának áttekintése
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Bővítmények elnevezési irányelvei
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: A modelltestreszabási és elavulási funkciók kikapcsolása
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Testreszabás-elemzési jelentés
@@ -876,7 +874,7 @@
           href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: LCS ügyfelek számára
           href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: LCS a partnerek számára
+        - name: LCS partnerek számára
           href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Újdonságok
           href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json

@@ -5,11 +5,15 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. február 18.
+          href: hr-whats-new-2020-02-18.md
+        - name: 2020. február 12.
+          href: hr-whats-new-2020-02-12.md
         - name: 2020. február 7.
           href: hr-whats-new-2020-02-07.md
         - name: 2020. február 3.
           href: hr-whats-new-2020-02-03.md
-    - name: Rendszergazda iránymutatása
+    - name: Rendszergazdai útmutató
       items:
         - name: Áttekintés
           href: hr-admin-overview.md
@@ -79,7 +83,7 @@
               href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
             - name: Mentett nézetek
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
-            - name: Egyéni mezők létrehozása és felhasználása
+            - name: Egyéni mezők létrehozása és használata
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
             - name: PowerApps alkalmazások beágyazása
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
