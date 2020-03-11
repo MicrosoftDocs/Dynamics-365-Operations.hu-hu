@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002312"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057856"
 ---
 # <a name="warehouse-set-up"></a>Raktár beállítása
 
@@ -59,7 +59,7 @@ Raktár beállításához kövesse az alábbi lépéseket.
 
 1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Csatornák beállítása \> Raktárak** részhez.
 1. A műveleti ablaktáblán kattintson az **Új** elemre.
-1. A **Raktár** mezőben adjon meg egy értéket.  Ha ez egy 1:1 hozzárendelés egy kiskereskedelmi üzlethez, vegye fontolóra az üzlet nevének vagy egy területi elosztó központ nevének használatát.
+1. A **Raktár** mezőben adjon meg egy értéket.  Ha ez egy 1:1 hozzárendelés egy üzlethez, vegye fontolóra az üzlet nevének vagy egy területi elosztó központ nevének használatát.
 1. A **Név** mezőben adjon meg egy értéket.
 1. A **webhely** legördülő listában válassza ki a korábban létrehozott raktári webhelyet.
 1. A **Típus** mezőben válassza ki az **Alapértelmezett** lehetőséget.

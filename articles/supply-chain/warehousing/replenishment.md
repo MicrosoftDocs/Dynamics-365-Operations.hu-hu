@@ -3,7 +3,7 @@ title: Feltöltés áttekintése
 description: A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251468"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076357"
 ---
 # <a name="replenishment-overview"></a>Feltöltés áttekintése
 
@@ -49,6 +49,8 @@ A helyutasítások segítségével meghatározhatja, mely helyeket kell feltölt
 Sablon létrehozása mellett meg kell adnia bizonyos feltöltési beállításokat a hullámsablonon. A hullámsablon feltöltési hullámlépést kell tartalmazzon, ami csak akkor fut le, ha a cikkfelosztás nem sikeres. A feltöltési hullámlépés egy hullámlépéskód alapján határozza meg, melyik feltöltési sablont kell használni. Győződjön meg róla, hogy a feltöltés hullámlépése mellett **Feltöltés** van megadva a **Módszerek** szakaszban a hullámsablonon. 
 
 A **Feltöltési sablon** oldal tartalmaz egy **Hullámigény engedélyezése a nem lefoglalt mennyiségek használatához** jelölőnégyzetet. Be kell jelölnie a jelölőnégyzetet, ha engedélyezni kívánja az igényfeltöltéseket a kiválasztott feltöltési sablonokból generált munkákból történő foglalatlan mennyiségek kivonásához. Ezt a jelölőnégyzetet jelölje be minden egyes meglévő feltöltési sablon esetén annak az engedélyezéséhez, hogy az igényfeltöltési sablonok használhassák ezt a logikát. Ha igényfeltöltés jelenik meg a raktárban, az levonja az igényt a foglalatlan mennyiségekkel rendelkező, meglévő feltöltési munkából, ha a munka a **Foglalatlan mennyiség használatához szükséges hullámigények engedélyezése** jelölőnégyzeten bejelölt feltöltési sablonból származik.
+
+A **Feltöltési egység** a minimálisan feltöltendő egység. Ennek olyan egész számnak kell lennie, amely az egység többszöröse. A munka létrehozása során a lehető legmagasabbra fog felkerekíteni.
 
 Az igényfeltöltés értékesítési rendelések, átmozgatási rendelések, termelési rendelések és kanbanok esetén támogatott. 
 

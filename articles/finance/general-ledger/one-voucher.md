@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810699"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058017"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -156,7 +156,7 @@ A szervezetek gyakran szeretnék az adatokat összegzett formában feladni a fő
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Több feladatlan kifizetés kiegyenlítése ugyanazon a számlán
 
-Ez a forgatókönyv általában a kiskereskedelmi szervezetekre jellemző, ahol a felhasználók többféle fizetési módot használhatnak a vásárlások kifizetésére. Ilyen esetben a szervezetnek több feladatlan kifizetést kell rögzítenie és rendeznie a vevői számla alapján.
+Ez a forgatókönyv általában a szervezetekre jellemző, ahol a felhasználók többféle fizetési módot használhatnak a vásárlások kifizetésére. Ilyen esetben a szervezetnek több feladatlan kifizetést kell rögzítenie és rendeznie a vevői számla alapján.
 
 A Microsoft Dynamics 365 for Operations 1611-es verziójához (2016. november) hozzáadott új funkció lehetővé teszi, hogy több fel nem adott kifizetést egyetlen számlával szemben rendezzen. Több vevői kifizetést már nem kell egyetlen bizonylaton megadni.
 

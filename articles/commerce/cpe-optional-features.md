@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024729"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057740"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
 
@@ -63,8 +63,8 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 
 ### <a name="update-the-media-base-url"></a>A média alap URL-cím frissítése
 
-1. Jelentkezzen be a Dynamics 365 Retail alkalmazásba.
-1. A bal oldali menü használatával nyissa meg a **Modulok \> Kereskedelem \> Csatorna beállítása \> Csatornaprofilok** lehetőséget.
+1. Jelentkezzen be a Dynamics 365 Commerce alkalmazásba.
+1. A bal oldali menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Csatornaprofilok** lehetőséget.
 1. Válassza ki a **Szerkesztés** opciót.
 1. A **Profil tulajdonságai** alatt cserélje le a **Médiakiszolgáló alap URL-címe** tulajdonságot a korábban létrehozott média alap URL-címre.
 1. Válassza ki a másik csatornát a bal oldali listából az **Alapértelmezett** csatorna alatt.
@@ -77,7 +77,7 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 > [!NOTE]
 > Az itt megadott SMTP-kiszolgálónak vagy e-mail szolgáltatásnak elérhetőnek kell lennie a környezethez használt Azure-előfizetésből.
 
-1. Jelentkezzen be a Retail alkalmazásba.
+1. Bejelentkezés a Commerce alkalmazásba.
 1. A bal oldali menü használatával nyissa meg a **Modulok \> Rendszerfelügyelet \> Beállítás \> E-mail \> E-mail-paraméterek** elemet.
 1. Az **SMTP-beállítások** lapon a **Kimenő levelek kiszolgálója** mezőjébe írja be az SMTP-kiszolgáló vagy e-mail-szolgáltatás FQDN-nevét vagy IP-címét.
 1. Írja be az **SMTP portszáma** mezőbe a port számát. (Ha nem a Secure Sockets Layer \[SSL\] protokollt használja, az alapértelmezett portszám **25**.)
@@ -92,7 +92,7 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 
 Az e-mail-sablont minden olyan tranzakciós eseményhez, amelyre e-maileket szeretne küldeni, frissíteni kell egy érvényes feladói e-mail-címmel.
 
-1. Jelentkezzen be a Retail alkalmazásba.
+1. Bejelentkezés a Commerce alkalmazásba.
 1. A bal oldali menü használatával nyissa meg a **Modulok \> Szervezet felügyelete \> Beállítás \> Szervezeti e-mail-sablonok** elemet.
 1. Válassza ki a **Lista megjelenítése** lehetőséget.
 1. A lista minden sablonja esetén hajtsa végre az alábbi lépéseket:
@@ -115,7 +115,7 @@ Célszerű lehet testreszabni az e-mail sablonokat, hogy azok különböző kép
     - Kitárolás rendelési sablon
 
 1. A sablonokat a szöveg- vagy HTML-szerkesztő segítségével szabhatja testre. A [támogatott tokenek](#supported-tokens-in-the-email-template) listája a jelen témakör későbbi részében található.
-1. Jelentkezzen be a Retail alkalmazásba.
+1. Bejelentkezés a Commerce alkalmazásba.
 1. A bal oldali menü használatával nyissa meg a **Modulok \> Szervezet felügyelete \> Beállítás \> Szervezeti e-mail-sablonok** elemet.
 1. A bal oldali lista kibontásával megjelenítheti az összes sablont.
 1. Minden testreszabni kívánt sablonhoz hajtsa végre az alábbi lépéseket:

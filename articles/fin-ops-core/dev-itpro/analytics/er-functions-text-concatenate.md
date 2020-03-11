@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d3ff87a59632d58a7c34ef96f856b38f005651
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 04c7b32e2a9578f8864570a552817ec3ce28fa43
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915763"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041167"
 ---
 # <a name="CONCATENATE">CONCATENATE ER-függvény</a>
 
@@ -33,7 +33,7 @@ A `CONCATENATE` függvény az összes megadott karakterláncot *Karakterlánc* �
 
 ## <a name="syntax"></a>Szintaxis
 
-```
+```vb
 CONCATENATE (text 1[, text 2, …, text N])
 ```
 

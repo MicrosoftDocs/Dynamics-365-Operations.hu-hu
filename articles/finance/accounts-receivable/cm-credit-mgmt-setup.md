@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015252"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071660"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
@@ -38,8 +38,8 @@ Négy gyorslap van , ahol megváltoztathatja a Hitelkezelést szabályozó param
 - Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Igen**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) módosítva lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
 - A **Visszavont rendelések okai** mezőben válassza ki azt a felszabadítási okot, amelyet alapértelmezésként fog használni, amikor az értékesítési rendelést, amely a hitelkeretkezelésen esett át érvényteleníti.
 - A **Ügyfelek hitelcsoportjainak hitelkorlátjának ellenőrzése** beállítást állítsa **Igen** értékre, ha ellenőrizni szeretné egy ügyfélhitelcsoport hitelkorlátját, ha az értékesítési rendelés egy ügyfélhitelcsoporthoz tartozik. A rendszer ellenőrzi a csoport hitelkeretét, majd ha szükséges, a program ellenőrzi a vevő hitelkeretét.
-- Állítsa be a **Hitelkorlát ellenőrzése, aha a fizetési feltételek magasabbak lettek** beállítás **Igen** értékre, hogy a fizetési feltételek rangsorolása ellenőrizve legyen annak meghatározásához, hogy a fizetési feltételek az értékesítési rendelésen eltérnek-e az értékesítési rendelés fizetési feltételitől. Ha az új fizetési feltételek magasabb rangúak, mint az eredeti fizetési feltételek, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
-- Állítsa be a **Hitelkorlát ellenőrzése, ha a kiegyenlítési engedmény magasabb lett** beállítás **Igen** értékre, hogy a kiegyenlítési kedvezmények rangsorolása ellenőrizve legyen annak meghatározásához, hogy a készpénzfizetési engedmény az értékesítési rendelésen eltér-e az értékesítési rendelés készpénzfizetési engedményétől. Ha az új készpénzfizetési engedmény magasabb rangú, mint az eredeti készpénzfizetési engedmény, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
+- Állítsa be a **Hitelkorlát ellenőrzése, aha a fizetési feltételek magasabbak lettek** beállítás **Igen** értékre, hogy a fizetési feltételek rangsorolása ellenőrizve legyen annak meghatározásához, hogy a fizetési feltételek az értékesítési rendelésen eltérnek az ügyfél alapértelmezett fizetési feltételeitől. Ha az új fizetési feltételek magasabb rangúak, mint az eredeti fizetési feltételek, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
+- Állítsa be a **Hitelkorlát ellenőrzése, ha a kiegyenlítési engedmény magasabb lett** beállítás **Igen** értékre, hogy a kiegyenlítési kedvezmények rangsorolása ellenőrizve legyen annak meghatározásához, hogy a készpénzfizetési engedmény az értékesítési rendelésen eltér-e az ügyfél alapértelmezett készpénzfizetési engedményétől. Ha az új készpénzfizetési engedmény magasabb rangú, mint az eredeti készpénzfizetési engedmény, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
 - A **Módosított rendelések felszabadításának** oka mezőben válassza ki azt a felszabadítási okot, amelyet alapértelmezésként fog használni, amikor a módosított rendeléseket a program automatikusan felszabadítja a hitelkezelési várakoztatásból.
 - Állítsa be a **A hitelkeret elévült zárolási szabályának figyelmen kívül hagyása , ha a lejárati dátum üres** beállítást **Igen** értékre a **Hitelkorlát lejárt** szabály viselkedésének szabályozásához. A rendelés blokkolásához, ha a lejárati dátum üres állítsa a beállítást **Nem** értékre.
 - A Raktárkezelés modulban a rakományok az értékesítési rendelés bevitele alkalmával hozhatók létre. A **Zárolt sorok eltávolítása** beállítást állítsa **Nem** értékre, ha az értékesítésirendelés-sorokat a rakományon szeretné hagyni, ha az értékesítési rendelés hitelkezelésre kerül. A rakomány nem dolgozható fel, amíg az értékesítési rendelés várakoztatva van. A beállítást állítsa **Igen** értékre, ha az értékesítésirendelés-sorokat a rakományról el szeretné távolítani, ha az értékesítési rendelés hitelkezelésre kerül. A rakományt ezután fel lehet dolgozni.

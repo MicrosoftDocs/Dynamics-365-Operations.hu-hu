@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251155"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057779"
 ---
 # <a name="trade-allowance-management"></a>Promóciós engedmények kezelése
 
 [!include [banner](../includes/banner.md)]
 
-A kereskedelmi kedvezmények kezelése megkönnyíti a vállalatok számára az értékesítési promóciós programok kezelését, amelyek kiskereskedelmi „teljesítményalapú fizetés” jellegű anyagi jutalmakat kínál a fogyasztók számára annak érdekében, hogy a mennyiségi és viselkedési célokat elérje. A funkció lehetőségeit olyan vállalatok számára tervezték, amelyek átfogó promóció-a-profit-érdekében folyamatokra összpontosítanak, a promóciós alap költségvetés-tervezéséről és felosztásától kezdve, a kedvezményszerződések létrehozásán, valamint a jogcím kialakításán és feldolgozásán, a fizetések feldolgozásán keresztül egészen a promóció hatékonysági elemzésének elkészítéséig.
+A kereskedelmi kedvezmények kezelése megkönnyíti a vállalatok számára az értékesítési promóciós programok kezelését, amelyek „teljesítményalapú fizetés” jellegű anyagi jutalmakat kínálnak a fogyasztók számára annak érdekében, hogy a mennyiségi és viselkedési célokat elérje. A funkció lehetőségeit olyan vállalatok számára tervezték, amelyek átfogó promóció-a-profit-érdekében folyamatokra összpontosítanak, a promóciós alap költségvetés-tervezéséről és felosztásától kezdve, a kedvezményszerződések létrehozásán, valamint a jogcím kialakításán és feldolgozásán, a fizetések feldolgozásán keresztül egészen a promóció hatékonysági elemzésének elkészítéséig.
 
 
 Ez a cikk széleskörű áttekintést biztosít a Kereskedelmi kedvezmények kezelése funkcióba, és segít megismerni egy értékesítési promóciós program kezelésének tipikus feladatsorozatát. Várhatóan ezt a funkciót sokféle típusú, üzemeltetési és döntéshozatali felelősségi körrel rendelkező felhasználó használja majd céljaik elérése érdekében:
@@ -61,7 +61,7 @@ Egy kereskedelmi kedvezményszerződés olyan ösztönzési program, ahol teljes
 
 A kereskedelmi kedvezményszerződésekre allokált pénzalapokat a **Pénzalapok** oldalon rögzítik. A **Pénzalapok** oldal megnyitásához válassza a **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Pénzalapok** \> **Pénzalapok** lehetőséget.
 
-![Pénzalapok oldal](./media/trade-allowance-management-funds-page.png "Pénzalapok oldal")
+![Pénzalapok lap](./media/trade-allowance-management-funds-page.png "Pénzalapok lap")
 
 A **Pénzalapok** oldalon megtekintheti a promóciós pénzalapok részleteit.
 
@@ -77,7 +77,7 @@ Miután a pénzalap meghatározása megtörtént, a promóciótervezés követke
 
 A kereskedelmi kedvezményszerződések a **Kereskedelmi kedvezményszerződések** oldalon kerülnek rögzítésre. A **Kereskedelmi kedvezményszerződések** oldalt az **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Kereskedelmi kedvezményszerződések** útvonalon tudja megnyitni.
 
-![Kereskedelmi kedvezményszerződések oldal](./media/trade-allowance-management-agreements-page.png "Kereskedelmi kedvezményszerződések oldal")
+![Promóciósengedmény-megállapodások oldal](./media/trade-allowance-management-agreements-page.png "Promóciósengedmény-megállapodások oldal")
 
 #### <a name="header"></a>Fejléc
 
@@ -105,7 +105,7 @@ Az **Árusítási események** lap megmutatja az adott szerződés által fedeze
 
 Az árusítási esemény kiválasztása után válassza az **Összegek** lapot az esemény részleteinek megtekintéséhez.
 
-![Kereskedelmi kedvezményszerződés sorok](./media/trade-allowance-management-agreements-lines.png "Kereskedelmi kedvezményszerződés sorok")
+![Promóciós engedményekre vonatkozó megállapodási sorok](./media/trade-allowance-management-agreements-lines.png "Promóciós engedményekre vonatkozó megállapodási sorok")
 
 A **Kereskedelmi kedvezmény** sorok szakaszban megadhatja a mennyiségi vagy összegtartományt, amelyet a vevőnek el kell érnie definíció alapján a jutalmak megszerzéséhez.
 

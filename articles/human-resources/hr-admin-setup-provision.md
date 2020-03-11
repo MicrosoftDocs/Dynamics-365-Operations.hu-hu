@@ -3,7 +3,7 @@ title: Human Resources környezet létesítése
 description: ''
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3a7987a9b385fb6ba0294dc46b0d66be8228f06
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026267"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071614"
 ---
 # <a name="provision-human-resources"></a>Human Resources környezet létesítése
 
@@ -62,9 +62,6 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Human Resources tesztverzióiban használt. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
 
 4. A Human Resources szolgáltatást mindig Microsoft Power Apps környezetbe kell létesíteni annak érdekében, hogy biztosítsa a Power Apps integrációját és bővíthetőségét. Olvassa el a témakör „Power Apps környezet kiválasztása” című cikkét a folytatás előtt. Ha még nem rendelkezik Power Apps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a Power Apps adminisztrációs központjába. Kövesse a [Power Apps környezet](https://docs.microsoft.com/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
-
-    > [!NOTE]
-    > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Human Resources létesítését végző adminisztrátort hozzá kell rendelni a Power Apps P2 licenchez. Ha szervezete nem rendelkezik Power Apps P2 licenccel, kaphat egyet a CSP-től vagy a [Power Apps árképzési lapon](https://powerapps.microsoft.com/pricing/).
 
 5. Válassza ki azt a környezetet, amelybe létesíteni szeretné a Human Resources szolgáltatást.
 

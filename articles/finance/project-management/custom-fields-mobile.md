@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773645"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080772"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Egyéni mezők megvalósítása a Microsoft Dynamics 365 Project Timesheet mobilalkalmazás számára iOS és Android rendszeren
 
@@ -183,7 +183,7 @@ A következő példa egy karakterláncmezőt mutat be az időbejegyzéseken. Enn
 
 Vegye figyelembe a **TSTimesheetCustomField::newFromMetatdata()** metódus használatával a következő egyéni mezőtulajdonságok inicializálásának egyszerűsítése lehetséges: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** és **numberOfDecimals**. Ezeket a paramétereket kézzel is be lehet állítani, ahogy szeretné.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 A **buildCustomFieldListForEntry** metódus a mobilalkalmazásban a mentett időnyilvántartás soraiban szereplő értékek megadására szolgál. A TSTimesheetTrans-rekordot paraméterként veszi figyelembe. A rekord mezői felhasználhatók az alkalmazás egyéni mezőjéne értékének kitöltésére.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Ha azt szeretné, hogy a szokásos használat során mentse az egyéni mezőt az
 > [!NOTE]
 > A következő példában a rendszer elmenti a **firstOption** vagy **secondOption** értéket, amelyet a felhasználó nyers karakterlánc-értékként választ az adatbázisra. Ha az adatbázis mező **Felsorolás** típusú mező, akkor ezek az értékek manuálisan is megfeleltethetők egy felsorolási értékre, majd az adatbázistábla felsorolási mezőjébe menthetők.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Ez a kód az alkalmazásban a mező megjelenítési beállításait vezérli. P�
 
 A következő példa egy számított értéket mutat be az alkalmazás fejléc szakaszában.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 A **buildCustomFieldListForHeader** metódus a mobilalkalmazásban az időnyilvántartás fejlécadatainak kitöltésére szolgál. A TSTimesheetTable-rekordot paraméterként veszi figyelembe. A rekord mezői felhasználhatók az alkalmazás egyéni mezőjéne értékének kitöltésére. A következő példa nem olvas le értéket az adatbázisból. Helyette az X++ logikát használja egy számított érték előállítására, amelyet azután az alkalmazás megjelenít.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

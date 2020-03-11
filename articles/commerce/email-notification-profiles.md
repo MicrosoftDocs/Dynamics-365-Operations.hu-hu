@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003142"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057614"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-mail-értesítési profil beállítása
 
@@ -41,7 +41,7 @@ Az e-mail konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail 
 
 E-mail értesítési profil létrehozásához hajtsa végre az alábbi lépéseket.
 
-1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítás \> Kiskereskedelmi e-mail értesítési profil** részhez.
+1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítás \> Kereskedelmi e-mail értesítési profil** részhez.
 1. A műveleti panelen kattintson az **Új** elemre.
 1. Az **E-mail értesítési profilja** mezőbe írjon be egy nevet a profil meghatározásához.
 1. Adjon meg egy releváns leírást a **Leírás** mezőben.
@@ -71,16 +71,16 @@ A következő képen látható néhány példa az e-mail-sablon beállításaira
 
 E-mail-esemény létrehozásához kövesse az alábbi lépéseket.
 
-1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítás \> Kiskereskedelmi e-mail értesítési profil** részhez.
+1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítás \> Kereskedelmi e-mail értesítési profil** részhez.
 1. Keresse meg és jelölje ki a kívánt rekordot a listán. 
 1. Válassza ki az e-mail sablont az **E-mail azonosítója** legördülő listából.
 1. Válassza ki a megfelelő **E-mail-értesítés típusa** kiválasztást a legördülő listából.
 1. Jelölje be az **Aktív** jelölőnégyzetet.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
-A következő képen látható néhány példa az e-mail-értesítés beállításaira.
+A következő képen látható néhány példa az eseményértesítés beállításaira.
 
-![Kiskereskedelmi esemény értesítési beállításai](media/email-notification-profile.png)
+![Esemény értesítési beállításai](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

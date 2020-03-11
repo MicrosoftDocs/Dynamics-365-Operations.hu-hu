@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009319"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087300"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Szabadság- és távolléti terv létrehozása
 
@@ -61,8 +61,8 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
 
       | Könyvelési időszak alapja | Leírás |
       | --- | --- |
-      | Terv kezdő dátuma | A könyvelési időszak kezdő dátuma az a dátum, amikor a terv elérhető. |
-      | Alkalmazotthoz kapcsolódó dátum | A könyvelési időszak kezdő dátuma az alkalmazott eseményétől függ:</br><ul><li>Egyéni (mindegyik beléptetéshez meg kell adnia a könyvelési dátum alapját)</li><li>Évforduló dátuma</li><li>Eredeti felvételi dátum</li><li>Szolgálati idő dátuma</li><li>A dolgozó módosított kezdési dátuma</li><li>A dolgozó kezdési dátuma</li></ul> |
+      | **Terv kezdő dátuma** | A könyvelési időszak kezdő dátuma az a dátum, amikor a terv elérhető. |
+      | **Alkalmazotthoz kapcsolódó dátum** | A könyvelési időszak kezdő dátuma az alkalmazott eseményétől függ:</br><ul><li>Egyéni (mindegyik beléptetéshez meg kell adnia a könyvelési dátum alapját)</li><li>Évforduló dátuma</li><li>Eredeti felvételi dátum</li><li>Szolgálati idő dátuma</li><li>A dolgozó módosított kezdési dátuma</li><li>A dolgozó kezdési dátuma</li></ul> |
 
    3. Válasszon egy beállítást a **Könyvelés megadott dátuma** legördülő listából:
 

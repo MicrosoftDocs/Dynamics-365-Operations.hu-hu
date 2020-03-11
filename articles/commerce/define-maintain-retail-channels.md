@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022736"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057914"
 ---
 # <a name="define-and-maintain-retail-channels"></a>A kiskereskedelmi csatornák definiálása és karbantartása
 
@@ -47,9 +47,9 @@ A Commerce számos kiskereskedelmi csatornát támogat, például online áruhá
 3. Adjon meg számsorozatokat az üzletekhez, üzleti kivonatokhoz és a kivonati bizonylatokhoz.
 4. Paraméterek konfigurálása a Commerce számára.
 5. Az üzlet által elfogadott fizetési módok beállítása.
-6. Beállíthat fizetési szolgáltatásokat is a kiskereskedelmi (POS) pénztárgépek által kezelendő hitelkártya tranzakciók feldolgozásához.
+6. Beállíthat fizetési szolgáltatásokat is a (POS) pénztárgépek által kezelendő hitelkártya tranzakciók feldolgozásához.
 7. Áfacsoportok beállítása.
-8. Kereskedelmi termékek beállítása. A feladat részeként állítson be termékhierarchiát, termékváltozatot és termék szortimentet.
+8. Termékek beállítása. A feladat részeként állítson be termékhierarchiát, termékváltozatot és termék szortimentet.
 9. Termékárcsoportok beállítása.
 10. Termékárazás beállítása. A feladat további részeként állítson be árkorrekciókat, engedményeket és kedvezmények időszakokat.
 11. Munkatársak beállításai.
@@ -87,5 +87,5 @@ Miután megadta az üzlet részletes adatait, hajtsa végre ezeket a feladatokat
 A Commerce szervezeti hierarchiákat használ a csatornák strukturált kialakításához. A szervezeti hierarchiák az üzleti rendszer-struktúrát alkotó szervezetek között kapcsolatokat jelölik. Amikor egy üzletet konfigurál, azt egy szervezeti hierarchiához is hozzáadhatja. Az üzletek ezt követően megoszthatják a szortimentekhez, a feltöltéshez és jelentéshez használt adatokat.
 
 > [!NOTE]
-> A Retail értékesítési funkciójának használatához engedélyezni kell a **Több célhely** konfigurációs kulcsát. Ez a konfigurációs kulcs megtalálható a **Kereskedelem konfiguráció** kulcsai között a **Rendszerfelügyelet**\> **Beállítás** \> **Licenckonfiguráció** alatt. Ez a Retail funkciók miatt szükséges, amelyek az értékesítésirendelés-sor szintjén konfigurált kézbesítési cím alapján különböző érvényesítéseket hajtanak végre.
+> A Commerce értékesítési funkciójának használatához engedélyezni kell a **Több célhely** konfigurációs kulcsát. Ez a konfigurációs kulcs megtalálható a **Kereskedelem konfiguráció** kulcsai között a **Rendszerfelügyelet**\> **Beállítás** \> **Licenckonfiguráció** alatt. Ez az értékesítésirendelés-sor szintjén konfigurált kézbesítési cím alapján végrehajtott különböző érvényesítések miatt szükséges.
 

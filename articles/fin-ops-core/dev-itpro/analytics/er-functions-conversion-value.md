@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 160dd81baa43702b2deea1e3eea20080fca122ca
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c90772ca1e93500ac45cc52ba92d4169c4d29bad
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917626"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042619"
 ---
 # <a name="VALUE">VALUE ER-függvény</a>
 
@@ -33,7 +33,7 @@ A `VALUE` függvény egy *Valós* értéket ad eredményül, amelyet a rendszer 
 
 ## <a name="syntax"></a>Szintaxis
 
-```
+```vb
 VALUE (text)
 ```
 

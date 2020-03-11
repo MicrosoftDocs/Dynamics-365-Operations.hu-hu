@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017728"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042942"
 ---
 # <a name="embed-microsoft-power-apps"></a>A Microsoft Power Apps beágyazása
 
@@ -55,7 +55,7 @@ Az alábbi utasítások azt mutatják be, hogyan történik az alkalmazás Power
 
     - A **Név** mező jelzi annak a gombnak vagy lapnak a megjelenő szövegét, amely tartalmazza a beágyazott alkalmazást. Gyakran érdemes megismételni az alkalmazás nevét ebben a mezőben.
     - **Alkalmazás azonosítója:** a beágyazni kívánt alkalmazás GUID azonosítója. Az érték lekérdezéséhez keresése meg az alkalmazást a [web.powerapps.com](https://web.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** alatt.
-    - Az **Alkalmazás kontextusának bevitele** elemnél kiválaszthatja azt a mezőt, amely az alkalmazás számára bemenetként továbbítandó adatokat tartalmazza. Lásd a következő című részt a témakör későbbi részében: [A Finance and Operations alkalmazások adatait használó alkalmazás felépítése](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) arról, hogy az alkalmazás hogyan elérheti el a Finance and Operations alkalmazásból továbbított adatokat.
+    - Az **Alkalmazás kontextusának bevitele** elemnél kiválaszthatja azt a mezőt, amely az alkalmazás számára bemenetként továbbítandó adatokat tartalmazza. Lásd a következő című részt a témakör későbbi részében: [A Finance and Operations alkalmazásokból küldött adatokat használó alkalmazás felépítése](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) arról, hogy az alkalmazás hogyan elérheti el a Finance and Operations alkalmazásból továbbított adatokat.
     - Válassza azt az **Alkalmazásméretet**, amely megfelel a beágyazott alkalmazás típusának. Válassza ki **Vékony** lehetőséget a mobileszközök számára épített alkalmazások, és a **Széles** lehetőséget a táblagépekhez létrehozott alkalmazások esetében. Ez biztosítja, hogy a beágyazott alkalmazás számára elegendő mennyiségű hely kerül kiosztásra.
     - A **Jogi személyek** gyorslap teszi lehetővé annak a kiválasztását, hogy melyik jogi személyekre nézve érhető el az alkalmazás. Alapértelmezés szerint a alkalmazás minden jogi személy számára hozzáférhető. Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció. 
 
@@ -76,7 +76,7 @@ Fontos része az alkalmazás építésének a Power Apps-ból – amely be lesz 
 
 Például az alkalmazás OnStart függvényében a Finance and Operations alkalmazásokból származó bemeneti adatokat egy változóra állíthatja be:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Beágyazott alkalmazás konfigurációjának módosításához kövesse az aláb
 
 Egy alkalmazás oldalba ágyazását követően szükség esetén kétféle módon távolíthatja el azt:
 
-- Lépjen az **Alkalmazás szerkesztése** panelre, a jelen cikk fenti, [Beágyazott alkalmazás szerkesztése](#editing-an-embedded-power-app) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott alkalmazás adatai láthatók, majd kattintson a **Törlés** gombra.
+- Lépjen az **Alkalmazás szerkesztése** panelre, a jelen cikk fenti, [Beágyazott alkalmazás szerkesztése](#editing-an-embedded-app) részében olvasható módon. Győződjön meg róla, hogy az ablaktáblában az eltávolítani kívánt beágyazott alkalmazás adatai láthatók, majd kattintson a **Törlés** gombra.
 - Mivel a beágyazott alkalmazás mentése személyre szabási adatokként történik, az oldal személyre szabásának törlése az összes az oldalba beágyazott alkalmazásokat szintén eltávolítja. Vegye figyelembe, hogy a lap személyre szabása végleges, és nem vonható vissza. Ha el szeretné távolítani egy lap személyes beállításait, válassza a **Lehetőségek** elemet, majd kattintson az **Oldal személyre szabása** elemre, végül kattintson a **Törlés** gombra. A böngésző frissítése után az oldal összes korábbi személyre szabási beállítása eltávolításra kerül. A lapok személyre szabással való optimalizációjával kapcsolatos további tudnivalók: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Melléklet
@@ -115,7 +115,7 @@ Alapértelmezés szerint a felhasználók minden lapon beágyazhatnak alkalmazá
 
 A következő példa bemutat egy új osztályt a két konfigurálandó metódussal, ahol alkalmazások ágyazhatók be.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

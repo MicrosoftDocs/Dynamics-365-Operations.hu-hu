@@ -3,7 +3,7 @@ title: Figyelmeztetési szabályok létrehozása
 description: Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180714"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075924"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -32,6 +32,10 @@ ms.locfileid: "2180714"
 Mielőtt figyelmeztetési szabályokat állítana be, döntse el, mikor vagy milyen helyzetben szeretne figyelmeztetést kapni. Ha tudja, mely eseményről szeretne értesítést kapni, keresse meg azt az oldalt, amelyen az eseményt előidéző adat megtalálható. Az esemény lehet egy elérkező dátum vagy egy bizonyos módosítás. Ezért meg kell találni a lapot, ahol a dátum meg van adva, vagy ahol megjelenik a módosuló mező vagy a létrehozott új rekord. Amint birtokában van ennek az adatnak, létrehozhatja az értesítési szabályt.
 
 Egy figyelmeztetési szabály létrehozása esetén meg kell adni a feltételeket, amelyek teljesülése esetén figyelmeztetés jelenik meg. A feltételek tulajdonképpen nem mások, mint meghatározott körülmények között mindig bekövetkező események. Ha egy esemény bekövetkezik, a rendszer a megadott feltételek szerint megkezdi az ellenőrzést.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>A figyelmeztetési kötegelt feladatok futásának biztosítása
+
+Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalmazó kötegelt feladatok futtatása szükséges a figyelmeztetési feltételek feldolgozásához, valamint az értesítések küldéséhez. A kötegelt feladatok futtatásához nyissa meg a **Rendszeradminisztráció** > **Ismétlődő feladatok** > **Figyelmeztetések** pontot, és adjon hozzá egy új kötegelt feladatot a **Módosításon alapuló figyelmeztetésekhez** és/vagy a **Határidős figyelmeztetésekhez**. Ha hosszú és gyakran futtatott kötegelt feladatra van szükség, válassza az **Ismétlődést**, és állítsa **Nincs befejezési dátum** értékre, az **Ismétlődési minta** értéke legyen **Percek**, a **Szám** pedig **1**.
 
 ## <a name="events"></a>Események
 
@@ -70,16 +74,21 @@ A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály létreho
 
 ## <a name="user-id"></a>Felhasználói azonosító
 
-A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály** létrehozása párbeszédpanelnek megadhatja, hogy melyik felhasználó kapja meg a figyelmeztető üzeneteket. A felhasználói azonosító alapértelmezés szerint be van jelölve. Ez a beállítás a szervezeti rendszergazdákra korlátozódik.
+A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály** létrehozása párbeszédpanelnek megadhatja, hogy melyik felhasználó kapja meg a figyelmeztető üzeneteket. A felhasználói azonosító alapértelmezés szerint be van jelölve. A figyelmeztetést kapó felhasználó módosításának lehetősége korlátozott a szervezeti rendszergazdákra.
+
+## <a name="alerts-as-business-events"></a>Figyelmeztetések üzleti eseményekként
+
+A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet küldeni. Figyelmeztetés létrehozásakor állítsa az **Egész szervezet** beállítást **Nem** értékre, és a **Küldés külsőleg** beállítást **Igen** értékre. Az üzleti eseményt kiváltó figyelmeztetés után elindíthat egy Power Automate-ba beépített folyamatot a **Üzleti esemény bekövetkezésekor** eseményindítóval a Finance and Operations-összekötőn, vagy kifejezetten elküldheti az eseményt egy üzletiesemény-végpontra az **Üzletiesemény-katalóguson** keresztül.
 
 ## <a name="create-an-alert-rule"></a>Figyelmeztetési szabály létrehozása
 
+0. A figyelmeztetési kötegelt feladatok futásának biztosítása (lásd fent).
 1. Nyissa meg a figyelni szándékozott adatot tartalmazó oldalt.
 2. A műveleti ablakban a **Beállítások** lapon a **Megosztás** csoportban válassza az **Figyelmeztetési szabály létrehozása** lehetőséget.
 3. A **Figyelmeztetési szabály létrehozása** párbeszédablak **Mező** mezőjében válassza ki a megfigyelni kívánt mezőt.
 4. Az **Esemény** mezőben jelölje ki az esemény típusát.
-5. A **Figyelmeztetés időszaka** gyorslapon válasszon egy beállítást.
+5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem**.
 6. Ha azt szeretné, hogy egy figyelmeztetési szabály egy megadott dátumon érvényét veszítse, válasszon ki egy befejezési dátumot a **Figyelmeztetés vége** gyorslapon.
-7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz.
+7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, akkor a **Külső küldést** az **igen** értékre állítja.
 8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. Ez az az üzenet, amely megjelenik egy figyelmeztetés kezdeményezése esetén.
 9. Kattintson az **OK** gombra a beállítások mentéséhez és a figyelmeztetési szabály létrehozásához.

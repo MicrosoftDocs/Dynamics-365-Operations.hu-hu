@@ -3,7 +3,7 @@ title: Csatornák beállításának előfeltételei
 description: Ez a témakör áttekintést nyújt a csatornabeállítási előfeltételekről a Microsoft Dynamics 365 Commerce szolgáltatásban.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002289"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081315"
 ---
 # <a name="channel-setup-prerequisites"></a>Csatornák beállításának előfeltételei
 
@@ -40,16 +40,16 @@ A Dynamics 365 Commerce csatorna létrehozása előtt számos előfeltétel-fela
 
 ## <a name="initialization"></a>Inicializálás
 
-- [Kiindulási adatok inicializálása](../retail/enable-configure-retail-functionality.md)
+- [Kiindulási adatok inicializálása](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Minden csatornatípushoz szükséges globális előfeltételek
 
 - [A jogi személy struktúrájának meghatározása és konfigurálása](channels-legal-entities.md) 
 - [Szervezeti hierarchia konfigurálása](channels-org-hierarchies.md)
 - [Raktár beállítása](channels-setup-warehouse.md)
-- [Áfa konfigurálása](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Áfa konfigurálása](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [E-mail-értesítési profil beállítása](email-notification-profiles.md)
-- [Számsorozatok beállítása](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Számsorozatok beállítása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Alapértelmezett ügyfél és címjegyzék beállítása](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,19 +57,17 @@ A Dynamics 365 Commerce csatorna létrehozása előtt számos előfeltétel-fela
 
 ## <a name="retail-channel-prerequisites"></a>Kiskereskedelmi csatornák előfeltételei
 
-- [Infókódok és infókódcsoportok](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Infókódok és infókódcsoportok](info-codes-retail.md)
 - [Kiskereskedelmi funkcióprofil beállítása](retail-functionality-profile.md)
 - [Alkalmazotti címjegyzék beállítása](new-address-book.md)
-- [Képernyő-elrendezés beállítása](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Hardverállomás beállítása](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Képernyő-elrendezés beállítása](pos-screen-layouts.md)
+- [Hardverállomás beállítása](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Hívásközpont-csatorna előfeltételei
 
 - Hívásközponti paraméterek
-- Hívásközponti visszatérítési módok
-- Bérlettípusok
-- Fizetési szolgáltatások
-- Rendelésvárakoztatási kódok
+- [Hívásközpont-megrendelés és visszatérítés fizetési módszerei](work-with-payments.md)
+- [Hívásközpont szállítási módjai és költségei](configure-call-center-delivery.md)
 
 ## <a name="online-channel-prerequisites"></a>Online csatorna előfeltételei
 
