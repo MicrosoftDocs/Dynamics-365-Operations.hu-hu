@@ -16,55 +16,62 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026134"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042827"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="6b345-103">ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész – Adatmodell előkészítése)</span><span class="sxs-lookup"><span data-stu-id="6b345-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="7dc90-103">ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész – Adatmodell előkészítése)</span><span class="sxs-lookup"><span data-stu-id="7dc90-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6b345-104">A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.</span><span class="sxs-lookup"><span data-stu-id="6b345-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="6b345-105">Ezeket a lépéseket bármely vállalatban végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="6b345-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="7dc90-104">A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.</span><span class="sxs-lookup"><span data-stu-id="7dc90-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="7dc90-105">Ezeket a lépéseket bármely vállalatban végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="7dc90-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="6b345-106">Hajtsa végre az alábbi lépéseket: Először hajtsa végre a „Konfiguráció szolgáltatói létrehozása és aktívként történő megjelölése” eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="6b345-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
+<span data-ttu-id="7dc90-106">Hajtsa végre az alábbi lépéseket: Először hajtsa végre a „Konfiguráció szolgáltatói létrehozása és aktívként történő megjelölése” eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="7dc90-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
 
-<span data-ttu-id="6b345-107">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="6b345-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="7dc90-107">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="7dc90-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="6b345-108">Hozzáférés a Microsoft által biztosított konfigurációk listájához</span><span class="sxs-lookup"><span data-stu-id="6b345-108">Get access to the list of configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="6b345-109">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="6b345-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="6b345-110">Győződjön meg róla, hogy a Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="6b345-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="6b345-111">szolgáltató elérhető és aktívként megjelölt legyen.</span><span class="sxs-lookup"><span data-stu-id="6b345-111">provider is available and marked as active.</span></span>  
-2. <span data-ttu-id="6b345-112">Válassza ki a Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="6b345-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="6b345-113">szolgáltatót.</span><span class="sxs-lookup"><span data-stu-id="6b345-113">provider.</span></span>
-3. <span data-ttu-id="6b345-114">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="6b345-114">Click Repositories.</span></span>
-    * <span data-ttu-id="6b345-115">Ha már létezik egy „Üzemi erőforrások” típusú tár, hagyja ki az aktuális altevékenység többi lépését.</span><span class="sxs-lookup"><span data-stu-id="6b345-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
-4. <span data-ttu-id="6b345-116">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="6b345-116">Click Add to open the drop dialog.</span></span>
-5. <span data-ttu-id="6b345-117">A Konfiguráció tárházának típusa mezőbe írja be az „Üzemi erőforrások” szöveget.</span><span class="sxs-lookup"><span data-stu-id="6b345-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
-6. <span data-ttu-id="6b345-118">Kattintson a Tárház létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6b345-118">Click Create repository.</span></span>
-7. <span data-ttu-id="6b345-119">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="6b345-119">Click OK.</span></span>
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="7dc90-108">Hozzáférés a Microsoft által biztosított konfigurációk listájához</span><span class="sxs-lookup"><span data-stu-id="7dc90-108">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="7dc90-109">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
 
-## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="6b345-120">A Microsoft által biztosított vevői számlamodell konfigurációk beszerzése</span><span class="sxs-lookup"><span data-stu-id="6b345-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="6b345-121">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="6b345-121">Click Show filters.</span></span>
-2. <span data-ttu-id="6b345-122">Alkalmazza az alábbi szűrőket: Adja meg az „Üzemi erőforrások” szűrőértéket a „Név” mezőben a „kezdete” szűrőoperátor használatával; Adja meg az "" szűrőértéket a „Leírás” mezőben a „kezdete” szűrőoperátor használatával</span><span class="sxs-lookup"><span data-stu-id="6b345-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
-3. <span data-ttu-id="6b345-123">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="6b345-123">Click Show filters.</span></span>
-4. <span data-ttu-id="6b345-124">Kattintson a Megnyitás gombra.</span><span class="sxs-lookup"><span data-stu-id="6b345-124">Click Open.</span></span>
-5. <span data-ttu-id="6b345-125">A fastruktúrában válassza ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6b345-125">In the tree, select 'Customer invoice model'.</span></span>
-    * <span data-ttu-id="6b345-126">Válassza ki a „Vevői számlamodell modellkonfigurációt” az importáláshoz.</span><span class="sxs-lookup"><span data-stu-id="6b345-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
-6. <span data-ttu-id="6b345-127">Kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="6b345-127">Click Import.</span></span>
-    * <span data-ttu-id="6b345-128">Kattintson az Importálás gombra a kijelölt konfiguráció 1-es verziójának esetében.</span><span class="sxs-lookup"><span data-stu-id="6b345-128">Click Import for version 1 of the selected configuration.</span></span>  
-7. <span data-ttu-id="6b345-129">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="6b345-129">Click Yes.</span></span>
-8. <span data-ttu-id="6b345-130">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="6b345-130">Close the page.</span></span>
-9. <span data-ttu-id="6b345-131">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="6b345-131">Close the page.</span></span>
-10. <span data-ttu-id="6b345-132">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6b345-132">Click Reporting configurations.</span></span>
-11. <span data-ttu-id="6b345-133">A fastruktúrában válassza ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6b345-133">In the tree, select 'Customer invoice model'.</span></span>
+    <span data-ttu-id="7dc90-110">Győződjön meg róla, hogy a Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="7dc90-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="7dc90-111">szolgáltató elérhető és aktívként megjelölt legyen.</span><span class="sxs-lookup"><span data-stu-id="7dc90-111">provider is available and marked as active.</span></span>  
 
-## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="6b345-134">Hozza létre a származtatott modellt a Dokumentumkezelés fájlok elérésének támogatásához.</span><span class="sxs-lookup"><span data-stu-id="6b345-134">Create the derived model to support access to the Document Management files.</span></span>
-<span data-ttu-id="6b345-135">A vevői számlamodellhez saját konfigurációt fog létrehozni, a Microsoft által biztosított konfiguráció alapján.</span><span class="sxs-lookup"><span data-stu-id="6b345-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="6b345-136">A konfiguráció használatával fogja megvalósítani a hozzáférést a dokumentumkezelési fájlokhoz, illetve elérhetővé tenni őket az elektronikus dokumentumok számára, amelyeket a modell alapján hoz létre.</span><span class="sxs-lookup"><span data-stu-id="6b345-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
-1. <span data-ttu-id="6b345-137">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="6b345-137">Click Create configuration to open the drop dialog.</span></span>
-2. <span data-ttu-id="6b345-138">Az Új mezőbe írja be a következőt: „Származtatás innen: Vevői számlamodell, Microsoft”.</span><span class="sxs-lookup"><span data-stu-id="6b345-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
-3. <span data-ttu-id="6b345-139">A Név mezőbe írja be a „Vevői számlamodell (egyéni)” szöveget.</span><span class="sxs-lookup"><span data-stu-id="6b345-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
-    * <span data-ttu-id="6b345-140">Vevői számlamodell (egyéni)</span><span class="sxs-lookup"><span data-stu-id="6b345-140">Customer invoice model (custom)</span></span>  
-4. <span data-ttu-id="6b345-141">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6b345-141">Click Create configuration.</span></span>
+2. <span data-ttu-id="7dc90-112">Válassza ki a Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="7dc90-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="7dc90-113">szolgáltatót.</span><span class="sxs-lookup"><span data-stu-id="7dc90-113">provider.</span></span>
+3. <span data-ttu-id="7dc90-114">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-114">Click Repositories.</span></span>
+
+    <span data-ttu-id="7dc90-115">Ha már létezik egy „Üzemi erőforrások” típusú tár, hagyja ki az aktuális altevékenység többi lépését.</span><span class="sxs-lookup"><span data-stu-id="7dc90-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
+
+4. <span data-ttu-id="7dc90-116">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="7dc90-116">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="7dc90-117">A Konfiguráció tárházának típusa mezőbe írja be az „Üzemi erőforrások” szöveget.</span><span class="sxs-lookup"><span data-stu-id="7dc90-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="7dc90-118">Kattintson a Tárház létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7dc90-118">Click Create repository.</span></span>
+7. <span data-ttu-id="7dc90-119">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-119">Click OK.</span></span>
+
+## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="7dc90-120">A Microsoft által biztosított vevői számlamodell konfigurációk beszerzése</span><span class="sxs-lookup"><span data-stu-id="7dc90-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="7dc90-121">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-121">Click Show filters.</span></span>
+2. <span data-ttu-id="7dc90-122">Alkalmazza az alábbi szűrőket: Adja meg az „Üzemi erőforrások” szűrőértéket a „Név” mezőben a „kezdete” szűrőoperátor használatával; Adja meg az "" szűrőértéket a „Leírás” mezőben a „kezdete” szűrőoperátor használatával</span><span class="sxs-lookup"><span data-stu-id="7dc90-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
+3. <span data-ttu-id="7dc90-123">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-123">Click Show filters.</span></span>
+4. <span data-ttu-id="7dc90-124">Kattintson a Megnyitás gombra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-124">Click Open.</span></span>
+5. <span data-ttu-id="7dc90-125">A fastruktúrában válassza ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="7dc90-125">In the tree, select 'Customer invoice model'.</span></span>
+
+    <span data-ttu-id="7dc90-126">Válassza ki a „Vevői számlamodell modellkonfigurációt” az importáláshoz.</span><span class="sxs-lookup"><span data-stu-id="7dc90-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
+
+6. <span data-ttu-id="7dc90-127">Kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-127">Click Import.</span></span>
+
+    <span data-ttu-id="7dc90-128">Kattintson az Importálás gombra a kijelölt konfiguráció 1-es verziójának esetében.</span><span class="sxs-lookup"><span data-stu-id="7dc90-128">Click Import for version 1 of the selected configuration.</span></span>  
+
+7. <span data-ttu-id="7dc90-129">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="7dc90-129">Click Yes.</span></span>
+8. <span data-ttu-id="7dc90-130">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="7dc90-130">Close the page.</span></span>
+9. <span data-ttu-id="7dc90-131">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="7dc90-131">Close the page.</span></span>
+10. <span data-ttu-id="7dc90-132">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7dc90-132">Click Reporting configurations.</span></span>
+11. <span data-ttu-id="7dc90-133">A fastruktúrában válassza ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="7dc90-133">In the tree, select 'Customer invoice model'.</span></span>
+
+## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="7dc90-134">Hozza létre a származtatott modellt a Dokumentumkezelés fájlok elérésének támogatásához.</span><span class="sxs-lookup"><span data-stu-id="7dc90-134">Create the derived model to support access to the Document Management files.</span></span>
+<span data-ttu-id="7dc90-135">A vevői számlamodellhez saját konfigurációt fog létrehozni, a Microsoft által biztosított konfiguráció alapján.</span><span class="sxs-lookup"><span data-stu-id="7dc90-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="7dc90-136">A konfiguráció használatával fogja megvalósítani a hozzáférést a dokumentumkezelési fájlokhoz, illetve elérhetővé tenni őket az elektronikus dokumentumok számára, amelyeket a modell alapján hoz létre.</span><span class="sxs-lookup"><span data-stu-id="7dc90-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
+1. <span data-ttu-id="7dc90-137">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="7dc90-137">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="7dc90-138">Az Új mezőbe írja be a következőt: „Származtatás innen: Vevői számlamodell, Microsoft”.</span><span class="sxs-lookup"><span data-stu-id="7dc90-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
+3. <span data-ttu-id="7dc90-139">A Név mezőbe írja be a „Vevői számlamodell (egyéni)” szöveget.</span><span class="sxs-lookup"><span data-stu-id="7dc90-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="7dc90-140">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7dc90-140">Click Create configuration.</span></span>
 
