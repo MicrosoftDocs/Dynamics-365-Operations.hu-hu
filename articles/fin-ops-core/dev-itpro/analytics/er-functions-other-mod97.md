@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23e63f6b7999399fd5365c616613cbc603774d53
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: ce2192c7bc849996e08573d71d8ed43956c8fb89
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916936"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070529"
 ---
-# <span data-ttu-id="1e841-103"><a name="MOD_97">MOD_97 ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="1e841-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
+# <span data-ttu-id="a5d6d-103"><a name="MOD_97">MOD_97 ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="a5d6d-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1e841-104">A `MOD_97` függvény olyan *Karakterlánc* értéket ad vissza, amely a hitelezői hivatkozást MOD97-kifejezésként jelöli, a megadott számlaszám számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="1e841-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="a5d6d-104">A `MOD_97` függvény olyan *Karakterlánc* értéket ad vissza, amely a hitelezői hivatkozást MOD97-kifejezésként jelöli, a megadott számlaszám számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="a5d6d-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1e841-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="1e841-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a5d6d-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="a5d6d-105">Syntax</span></span>
 
-```
+```vb
 MOD_97 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="1e841-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="1e841-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="a5d6d-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="a5d6d-106">Arguments</span></span>
 
-<span data-ttu-id="1e841-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="1e841-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="a5d6d-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="a5d6d-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="1e841-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="1e841-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="a5d6d-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="a5d6d-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="1e841-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="1e841-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="a5d6d-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="a5d6d-109">Return values</span></span>
 
-<span data-ttu-id="1e841-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="1e841-110">*String*</span></span>
+<span data-ttu-id="a5d6d-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="a5d6d-110">*String*</span></span>
 
-<span data-ttu-id="1e841-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="1e841-111">The resulting text value.</span></span>
+<span data-ttu-id="a5d6d-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="a5d6d-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1e841-112">Példa</span><span class="sxs-lookup"><span data-stu-id="1e841-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a5d6d-112">Példa</span><span class="sxs-lookup"><span data-stu-id="a5d6d-112">Example</span></span>
 
-<span data-ttu-id="1e841-113">A `MOD_97 ("VEND-200002")` a **"20000285"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="1e841-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
+<span data-ttu-id="a5d6d-113">A `MOD_97 ("VEND-200002")` a **"20000285"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="a5d6d-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="1e841-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="1e841-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a5d6d-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="a5d6d-114">Additional resources</span></span>
 
-[<span data-ttu-id="1e841-115">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="1e841-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="a5d6d-115">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="a5d6d-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
