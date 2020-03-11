@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022797"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057209"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
 
@@ -54,6 +54,7 @@ Végül a **Csalási megjegyzés típusa** mező bejelölésével megadhatja azt
 A rendszer kétfajta csalási kritériumot különböztet meg annak megállapításához, hogy egy rendelést várakoztasson-e csalás ellenőrzéséhez:
 
 - **Statikus csalási adatok** meghatározott értékeket használ, például olyan telefonszámot, amely szerepel a zárolt számok listáján vagy olyan e-mail címet, amelyet megjelöltek, mert korábban azt csalási műveletekhez használták. A statikus csalási adatok beállításához lépjen ide: **Retail és Commerce**\>**Csatorna beállításai**\>**Hívásközpont beállítása**\>**Csalás**\>**Statikus csalási adatok**. A **Statikus csalási adatok** lapon manuálisan, illetve adatok importálásával adhat meg csalási feltételeket. A csalási információkhoz pontszámok vannak hozzárendelve. Ha a csalásellenőrzési funkció be van kapcsolva, minden bevitt értékesítési rendelés összehasonlításra kerül a statikus adatokkal. Ha az adatok megtalálhatók a vevő számlázási címében vagy a rendelési fejléchez kapcsolódó szállítási címben, vagy ha az adatok megtalálhatók abban a szállítási címben, amely az adott értékesítési rendelés bármelyik sorához kapcsolódik, akkor mindegyik egyedi találat összeadódik, és azt a rendszer összehasonlítja a **Minimális pontszám** értékével, és meghatározza, hogy a rendelést kell-e várakoztatni.
+
 - A **Csalási szabályok** a felhasználó által definiált változókból állnak, és az ezekhez a változókhoz meghatározott feltételekből. Szabályok létrehozásához lépjen ide: **Retail és Commerce**\>**Csatorna beállítása**\>**Hívásközpont beállítása**\>**Csalás**\>**Szabályok**. A csalási szabályok segítségével a vállalat egy összetettebb szabályt állíthat be, amelyek tartalmazhatnak **ÉS** vagy **VAGY** lehetőségeket több feltétel kiértékeléséhez. Például egy felhasználó csalásellenőrzési várakoztatást akar kérni minden megrendelésre olyan vevők esetében, akik egy adott vevői csoporthoz tartoznak, és akik egy adott terméket rendeltek. Ebben az esetben a vevők és a termékek ellenőrzésére szolgáló feltételek meghatározása a **Szabályok** oldalon történik és az "ÉS" feltétel kerül alkalmazásra. A rendelés akkor kerül várakoztatott állapotba, ha mindkét feltétel teljesül, és ha a szabályhoz rendelt pontszám, valamint minden egyéb szabály alapján elért pontszám miatt a rendelés összesített csalási pontszáma meghaladja a **Minimális pontszám** értékét, amely a **Hívásközpont paraméterei** oldalon van meghatározva.
 
 > [!NOTE]

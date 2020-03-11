@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916660"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042711"
 ---
 # <a name="electronic-reporting-formula-language"></a>Elektronikus jelentéskészítés képletének nyelve
 
@@ -154,7 +154,7 @@ Az ER segítségével bővítheti az ER kifejezésekben használt függvények l
 
 Olyan összetett kifejezéseket is létrehozhat, amelyek különböző kategóriákhoz tartozó függvényeket használnak, feltéve, hogy az adattípusok megegyeznek. A függvények együttes használatakor az egyik függvény kimenetének adattípusát adja meg a másik függvény által igényelt bemeneti adattípusnak. Ha például el szeretne kerülni egy lehetséges „lista üres” hibaüzenetet egy mező ER-formátumú elemhez kötésében, a következő példa szerint egyesítsen függvényeket a [Lista](er-functions-category-list.md) kategóriából a [Logikai](er-functions-category-logical.md) kategória egyik függvényével. Itt a képlet a [IF](er-functions-logical-if.md) függvényt használja arra, hogy ellenőrizze, hogy az **IntrastatTotals** lista üres-e, mielőtt a listából a szükséges összesítés értékét adja eredményül. Ha az **IntrastatTotals** lista üres, a képlet eredménye **0** (nulla).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Gyakran előfordul, hogy ugyanaz az adatátalakítási eredmény többféle módon, különböző kategóriákhoz tartozó függvények használatával vagy ugyanabból a kategóriából különböző függvényekkel is elérhető. Például a korábbi kifejezés konfigurálható a [COUNT](er-functions-list-count.md) függvénnyel a [Lista](er-functions-category-list.md) kategóriából.
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

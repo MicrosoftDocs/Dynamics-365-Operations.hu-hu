@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015255"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057670"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Hitelkeret felfüggesztése értékesítési rendelésekhez
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ A várakozásra kényszerített értékesítési rendeléseket nem lehet feldolg
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>A hitelvárakoztatási listához kényszerített hitelvárakoztatással hozzáadott rendelések felszabadítása
 A kényszerrel várakoztatás okkal rendelkező értékesítési rendeléseket nem lehet automatikusan felszabadítani. Ha az értékesítési rendelés visszatartásra lett kényszerítve, és az értékesítési rendeléseket automatikusan felszabadító folyamatot használt, az értékesítési rendelés **Készen áll a felszabadításra** értéket mutat, és továbbra is a várakoztatási listán marad. A rendelés felszabadításához a **Felszabadítás** menüt kell használnia.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Szabadszöveges számlák, kiskereskedelmi rendelések és projekt számlák támogatása a Hitelkezelésben 
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Szabadszöveges számlák, rendelések és projekt számlák támogatása a Hitelkezelésben 
 A Hitelkezelés jelenleg csak értékesítési rendelésekhez használható. A szabadszöveges számlák, pénztári értékesítési rendelések és a hívásközponti rendelések ideiglenes hitelkereteket és biztosításokat/garanciákat használnak, amiket hozzáadhat a hitelkorlát módosításához. Nem fogják használni a zárolási szabályokat, és a hitelkerettel kapcsolatos probléma esetén nem kerülnek be a visszatartási listára.
 
 Nincs támogatás a projekt-számlákhoz a hitelkezelésben.

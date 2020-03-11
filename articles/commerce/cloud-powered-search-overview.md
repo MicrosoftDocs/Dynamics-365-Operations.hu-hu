@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002243"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057833"
 ---
 # <a name="cloud-powered-search-overview"></a>Felhőalapú keresés – áttekintés
 
@@ -33,7 +33,7 @@ Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dyna
 
 ## <a name="overview"></a>Áttekintés
 
-A termék felderíthetővé tételével biztosíthatja, hogy a vevők gyorsan és egyszerűen megtalálják a termékeket a kategóriák böngészésével, kereséssel és szűréssel. A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kiskereskedelmi csatornán.
+A termék felderíthetővé tételével biztosíthatja, hogy a vevők gyorsan és egyszerűen megtalálják a termékeket a kategóriák böngészésével, kereséssel és szűréssel. A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán.
 
 A vevők megszokták a webes keresőmotorok, a kifinomult e-kereskedelmi webhelyek, a közösségi alkalmazások, a keresőkifejezések gépelésekor megjelenő automatikus javaslatok, a jellemzőalapú navigáció és a kiemelés szinte azonnali reakcióidejét. Ha a vevők nem találnak meg elég gyorsan egy terméket egy e-kereskedelmi áruházban, akkor habozás nélkül váltani fognak egy másik e-kereskedelmi áruházra.
 

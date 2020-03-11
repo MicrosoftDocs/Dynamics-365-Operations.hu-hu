@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 600e3279536857dbb804ef420572fad42fe72311
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0c44d172e8ed9cdb9c26501b3f4eb9fef4f8cf0b
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189522"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059401"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
@@ -81,63 +81,66 @@ Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedv
 Az ellenőrzött fizetési fájlok adatentitások használatával jönnek létre. Mielőtt készíthetne egy fizetési ellenőrző fájlt, be kell állítania egy átalakítási bemeneti formátumot, amely ahhoz lesz használatos, hogy a csekk információit olyan formátumra fordítsa, amely képes kommunikálni a bankkal. Az **Ellenőrzött fizetési formátum** lapon létrehozhat egy fájlformátum-azonosítót és egy leírást. Az átalakítási bemeneti formátumnak XML típusúnak kell lennie. Az adott formátum az Ön által használt átalakító fájltól függ. Vegyük például a bővíthető stíluslap-nyelv transzformációt (XSLT) fájlt, amelyhez meg van adva, hogy az **XML-elem** formátumot használja. Használja az **Az átalakításhoz használt fájl feltöltése** műveletet hogy megadja az átalakítási fájl helyét azon formátumhoz, amelyet a bankja igényel.
 
 ## <a name="example-xslt-file-for-positive-pay-file"></a>Példa: XSLT-fájl az ellenőrzött fizetési fájlhoz.
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
-      <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
-      <xsl:template match="/">
+
+```xml
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
+  <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
+  <xsl:template match="/">
+    <xsl:value-of select="'
+'" />
+    <Document>
+      <xsl:value-of select="'
+'" />
+      <!--Header Begin-->
+      <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
+      <xsl:value-of select="'
+'" />
+      <!--Header End-->
+      <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
+        <!--Cheque Detail begin-->
+        <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:choose>
+          <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
+            <xsl:value-of select='string("Yes")'/>
+          </xsl:when>
+          <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
+            <xsl:value-of select='string("No")'/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select='string(" ")'/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='string("Payment")'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='TRANSDATE/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='CHEQUENUM/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='AMOUNTCUR/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='string("BOA-#1812")'/>
+        <xsl:value-of select="','" />
+        <xsl:choose>
+          <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
+            <xsl:value-of select='VENDGROUP/text()'/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select='CUSTGROUP/text()'/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='TRANSDATE/text()'/>
         <xsl:value-of select="'
-    '" />
-        <Document>
-          <xsl:value-of select="'
-    '" />
-          <!--Header Begin-->
-          <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
-          <xsl:value-of select="'
-    '" />
-          <!--Header End-->
-          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
-            <!--Cheque Detail begin-->
-            <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
-                <xsl:value-of select='string("Yes")'/>
-              </xsl:when>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
-                <xsl:value-of select='string("No")'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='string(" ")'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("Payment")'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='CHEQUENUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='AMOUNTCUR/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("BOA-#1812")'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
-                <xsl:value-of select='VENDGROUP/text()'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='CUSTGROUP/text()'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="'
-    '" />
-          </xsl:for-each>
-        </Document>
-      </xsl:template>
-    </xsl:stylesheet>
+'" />
+      </xsl:for-each>
+    </Document>
+  </xsl:template>
+</xsl:stylesheet>
+```
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Az ellenőrzött fizetési formátum hozzárendelése egy bankszámlához
 Minden egyes bankszámlához, amelyhez szeretne létrehozni ellenőrzött fizetési információt, hozzá kell rendelnie az előző szakaszban megadott ellenőrzött fizetési formátumot. A **Bankszámlák** oldalon válassza ki azt az ellenőrzött fizetési formátumot, amely megfelel a bankszámlájának. Az **Ellenőrzött fizetés kezdő dátuma** mezőbe írja be az ellenőrzött fizetési fájlok létrehozásának kezdő dátumát. Fontos, hogy megadjon egy dátumot ebben a mezőben. Ellenkező esetben az első fizetési ellenőrző fájl, amit létrehoz tartalmazni fogja az összes csekket, amit valaha létrehoztak ehhez a bankszámlához.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5fe1caf7e1854fd59a957ec75f3e4760d5b01837
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 02382872b685103810dd7e84cb91eb409df62f66
+ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009245"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036311"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Dolgozóknak kölcsönzött cikkek kezelése
 
@@ -51,7 +51,7 @@ Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaa
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[Emberi erőforrások](index.yml)
+[Emberi erőforrások](index.md)
 
 
 

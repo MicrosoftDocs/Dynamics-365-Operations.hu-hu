@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003234"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042780"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Termékajánlatok beszerzése bemutatóadatok használatával
 A dokumentum útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
@@ -57,10 +57,10 @@ Szerkesztheti az alapértelmezett demóadatokat bármilyen termék- és kategór
 A kiterjesztés tartalmaz egy „RecoMockDataset.csv” nevű adatfájlt, amely lehetővé teszi, hogy a vevő vezérelje azt az adathalmazt, amely a szimulált ajánlások eredményeinek alkalmazására használt. A fájlnév a kiterjesztéskonfigurációt használva vezérelhető a **ext.Recommendations.DemoFilePath** DemoFilePath beállítás használatával. Ez lehetővé teszi a Önnek, hogy több adatkészlettel rendelkezzen, amelyek között a konfiguráció használatával könnyen lehet váltani.
 
 
-```
-  <settings>
+```xml
+<settings>
     <add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
-  </settings>
+</settings>
 ```
 
 ## <a name="additional-resources"></a>További erőforrások
