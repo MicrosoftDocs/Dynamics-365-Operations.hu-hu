@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c0baf96315dd9fe6bc1984d337fd1c50ae47016a
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: cd6ec1013de757214db99ada02170bb6e2af96c0
+ms.sourcegitcommit: f52ddcad105aac4ad2caef709751ff80caf363c0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031043"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036929"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
@@ -46,7 +46,7 @@ Ezekben az esetekben a kihívás az, hogy csak egyetlen készletfoglalási hiera
 
 ### <a name="business-scenario"></a>Üzleti eset
 
-Ebben a helyzetben a vállalat egy készletstratégiát alkalmaz, amelyben a késztermékeket a kötegszámokkal követi nyomon. Ez a vállalat is a WHS terhelést használja. Mivel ez a terhelés jól felszerelt logikával rendelkezik a raktári kitárolási és fuvarozási műveletek tervezéséhz és lefuttatásához kötegelésre engedélyezett elemek esetén, a kész cikkek többsége a „kötegalatti\[hely\]” készletfoglalási hierarchiához van társítva. Ennek a működési beállításnak az az előnye, hogy a döntéseket (amelyek valójában foglalási döntések) arról, hogy mely kötegeket kell kiválasztania, és hová kell tenni őket a raktárban, elhalasztják, amíg el nem kezdődnek a raktári kitárolási műveletek. Nem akkor jönnek létre, amikor az ügyfél rendel.
+Ebben a helyzetben a vállalat egy készletstratégiát alkalmaz, amelyben a késztermékeket a kötegszámokkal követi nyomon. Ez a vállalat is a WMS terhelést használja. Mivel ez a terhelés jól felszerelt logikával rendelkezik a raktári kitárolási és fuvarozási műveletek tervezéséhz és lefuttatásához kötegelésre engedélyezett elemek esetén, a kész cikkek többsége a „kötegalatti\[hely\]” készletfoglalási hierarchiához van társítva. Ennek a működési beállításnak az az előnye, hogy a döntéseket (amelyek valójában foglalási döntések) arról, hogy mely kötegeket kell kiválasztania, és hová kell tenni őket a raktárban, elhalasztják, amíg el nem kezdődnek a raktári kitárolási műveletek. Nem akkor jönnek létre, amikor az ügyfél rendel.
 
 Bár a „kötegalatti\[hely\]” foglalási hierarchia jól szolgálja a vállalat üzleti céljait, a vállalatok ügyfeleinek többsége termékek újrarendelésekor ugyanazt a köteget kéri, amelyet már egyszer megvásárolt. A vállalatnak ezért rugalmasságra van szüksége a kötegelt foglalási szabályok kezelésében, hogy az ugyanazon tétel vevői igényének függvényében a következők történjenek:
 

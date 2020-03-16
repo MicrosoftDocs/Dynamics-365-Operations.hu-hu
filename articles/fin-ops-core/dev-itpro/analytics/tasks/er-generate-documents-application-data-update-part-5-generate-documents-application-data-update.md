@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026063"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042850"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Alkalmazásadatokkal rendelkező dokumentumok létrehozása
 
@@ -40,10 +40,14 @@ Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője sz
 ## <a name="set-up-foreign-trade-parameters"></a>Külkereskedelmi paraméterek beállítása
 1. Ugorjon az Adó > Beállítás > Külkereskedelmi > Külkereskedelmi paraméterek pontra.
 2. Kattintson a Számsorozatok lapra.
-    * Az Intrastat jelentési folyamat részleteinek archiválása során azonosítani kell a létrehozott archívumokat. Ehhez egy speciális számsorozatot kell beállítani.  
+
+    Az Intrastat jelentési folyamat részleteinek archiválása során azonosítani kell a létrehozott archívumokat. Ehhez egy speciális számsorozatot kell beállítani.  
+
 3. Válassza ki az „Intrastat-archívum azonosítója” hivatkozást.
 4. Adjon meg egy értéket a Számsorozat kódja mezőben.
-    * A Számsorrend kódja mezőben adja meg vagy válassza ki a „Fore_2” értéket.  
+
+    A Számsorrend kódja mezőben adja meg vagy válassza ki a „Fore_2” értéket.  
+
 5. ResolveChanges a számsorozat kódja.
 6. Kattintson a Mentés gombra.
 7. Zárja be a lapot.
@@ -52,20 +56,25 @@ Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője sz
 1. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
 2. A fastruktúrában bontsa ki az „Instrastat (model)” elemet.
 3. A fastruktúrában jelölje ki a következőt: „Intrastat (model)\Intrastat (format)”.
-4. Kattintson a Futtatás elemre.
+4. Kattintson a Futtatásra.
 5. Az Enter fájlnévmezőbe írja be a következőt: intrastat2.xml.
-    * intrastat2.xml  
 6. Kattintson az OK gombra.
 
 ## <a name="review-er-format-executions-results"></a>ER-formátum végrehajtási eredményeinek áttekintése
 Tekintse át a létrehozott XML-fájlt.  
 1. Zárja be a lapot.
 2. Ugorjon az Adó > Nyilatkozatok > Külkereskedelem > Intrastat pontra.
-    * Nyissa meg azon Intrastat-tranzakciókat tartalmazó képernyőt, amelyek szerepelnek a létrehozott elektronikus dokumentumban.  
+
+    Nyissa meg azon Intrastat-tranzakciókat tartalmazó képernyőt, amelyek szerepelnek a létrehozott elektronikus dokumentumban.  
+
 3. Kattintson az Intrastat archívum elemre.
-    * Mivel a végrehajtott ER-formátum most az alkalmazásadatok módosításának beállításait tartalmazza, a rendszer archiválta a kitöltött Intrastat-jelentés részleteit. Ezen a képernyőn megtekintheti a létrehozott archívum fejlécrekordját.  
+
+    Mivel a végrehajtott ER-formátum most az alkalmazásadatok módosításának beállításait tartalmazza, a rendszer archiválta a kitöltött Intrastat-jelentés részleteit. Ezen a képernyőn megtekintheti a létrehozott archívum fejlécrekordját.  
+
 4. Kattintson a Részletek gombra.
-    * Ezen a képernyőn megtekintheti a létrehozott archívum részleteit.  
+
+    Ezen a képernyőn megtekintheti a létrehozott archívum részleteit.  
+
 5. Zárja be a lapot.
 6. Zárja be a lapot.
 7. Zárja be a lapot.

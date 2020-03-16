@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771541"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070760"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -120,11 +120,11 @@ A következő táblázat az oszlopkorlátozás kódokat írja le.
 | Kiig.                     | Az oszlop összegeinek korlátozása periódushelyesbítési összegekre, ha vannak ilyen összegek elérhetőek. |
 | XAD                     | Az összegek korlátozása az oszlopban úgy, hogy a periódushelyesbítések ne jelenjenek meg. |
 | Tervezett átadás                      | Az összegek korlátozása az oszlopban úgy, hogy csak a feladott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek. |
-| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<p><strong>Megjegyzés:</strong> Nem minden adatszolgáltató támogatja a fel nem adott tranzakciók használatát. További információért tekintse át az <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>Microsoft Dynamics ERP rendszer adatintegrálási útmutatóját</a>.</p> |
+| UPT                     | Az összegek korlátozása az oszlopban úgy, hogy csak a fel nem adott tranzakciók jelenjenek meg, ha vannak ilyen tranzakciók elérhetőek.<p><strong>Megjegyzés:</strong> Nem minden adatszolgáltató támogatja a fel nem adott tranzakciók használatát. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Oszlop korlátozása egy jelentési egységre
 
-1. A Report Designer alkalmazásban nyissa meg a módosítani kívánt oszlopdefiníciót.
+1. Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
 2. Kattintson duplán a korlátozandó oszlop **Jelentési egység** cellájára.
 3. A **Jelentési egység kiválasztása** párbeszédpanelben, a **Jelentésfa** listában válasszon ki egy fát.
 4. Bontsa ki vagy csukja össze az egységek listáját, válasszon ki egy jelentésegységet, és kattintson az **OK** gombra.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026110"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042919"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevőkhöz
 
@@ -47,7 +47,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 5. Kattintson az Új lehetőségre.
 6. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 7. Válassza a Microsoft Dynamics 365 for Operations (1611) lehetőséget.
-8. A Verzió mezőbe írja be a következő értéket: '[7.1.1541.3036,8).
+8. A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
     * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Finance and Operations alkalmazásban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.   
 9. Kattintson a Mentés gombra.
@@ -60,7 +60,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 16. Kattintson az Új lehetőségre.
 17. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 18. Válassza ki a Microsoft Dynamics AX 7.0 RTW verziót.
-19. A Verzió mezőbe írja be a következő értéket: '[7.0.1265.3015,7.1).
+19. A Verzió mezőbe írja be a következő értéket: [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
     * A függőségeket a rendszer akkor értékeli ki, amikor a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition programban kell elvégezni, amelynek verziója kötelezően 7.0.1265.3015 vagy újabb verzió, de nem haladhatja meg a 1-as alverziót.   
 20. Kattintson a Mentés gombra.
@@ -140,4 +140,3 @@ A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LC
 26. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
     * Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte. A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel az alkalmazásra vonatkozik. A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.   
     * Ha bejelentkezik a Finance and Operations programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.  
-

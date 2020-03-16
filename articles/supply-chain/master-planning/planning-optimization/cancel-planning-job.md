@@ -3,7 +3,7 @@ title: Tervezési feladat érvénytelenítése
 description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni egy olyan aktív tervezési feladatot, amely a Tervezés optimalizálása funkciót használja.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773976"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076346"
 ---
+# <a name="cancel-a-planning-job"></a>Tervezési feladat visszavonása
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>Tervezési feladat érvénytelenítése
+A Microsoft Dynamics 365 Supply Chain Management rendszerben érvényteleníthetők az olyan aktív tervezési feladatok, amelyek a Tervezés optimalizálása funkciót használják. Ha a párbeszédpanelen a **Mégse** lehetőséget választja, amikor a tervezésoptimalizálási feladat közvetlenül a felhasználói felületről indul el, (nem a háttérben), akkor ez nem törli a tervezési optimalizációs feladatot. Még ha figyelmeztetés jelenik meg, mint a "művelet visszavonva", akkor is a következő lépések végrehajtásával kell megszüntetni egy tervezési feladatot a tervezési optimalizációval.
 
-A Microsoft Dynamics 365 Supply Chain Management rendszerben érvényteleníthetők az olyan aktív tervezési feladatok, amelyek a Tervezés optimalizálása funkciót használják.
 
-Aktív tervezési feladat érvénytelenítéséhez hajtsa végre az alábbi lépéseket.
+Aktív tervezési feladat érvénytelenítéséhez hajtsa végre az alábbi lépéseket. 
 
 > [!NOTE]
 > Csak egy aktív feladat érvényteleníthető.
@@ -49,11 +50,11 @@ A feladat állapota mindaddig **Megszakítás** lesz, amíg a Tervezés optimali
 > [!NOTE]
 > Az állapot változásainak megjelenítéséhez a **Frissítés** gombra kattintva frissíteni kell az oldalt.
 
-## <a name="related-resources"></a>Kapcsolódó erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
-[Tervezés optimalizálása – áttekintés](planning-optimization-overview.md)
+[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
 
-[Első lépések a tervezési optimalizálással](get-started.md)
+[Tervezési optimalizálás indítása](get-started.md)
 
 [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e1087821b357c578993cdd5742399c5ec0ecc95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001806"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057962"
 ---
 # <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
 
@@ -33,7 +33,7 @@ Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce me
 
 ## <a name="overview"></a>Áttekintés
 
-Kiskereskedelmi vagy online csatorna létrehozásakor meg kell adni egy alapértelmezett vevőt. Az alapértelmezett vevő egyszerűen létrehozható a vevőcsoport és a vevői címjegyzék létrehozása után.
+Csatorna létrehozásakor meg kell adni egy alapértelmezett vevőt. Az alapértelmezett vevő egyszerűen létrehozható a vevőcsoport és a vevői címjegyzék létrehozása után.
 
 ## <a name="create-a-customer-group"></a>Vevőcsoport létrehozása
 

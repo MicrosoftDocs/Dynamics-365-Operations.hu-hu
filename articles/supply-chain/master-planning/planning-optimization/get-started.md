@@ -3,7 +3,7 @@ title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
-ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
+ms.openlocfilehash: 3e64699005387adcc92e2e7c9fefad68a9de85c0
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "2971464"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076132"
 ---
+# <a name="get-started-with-planning-optimization"></a>Első lépések a tervezési optimalizálással
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="get-started-with-planning-optimization"></a>Első lépések a tervezési optimalizálással
 
 A tervezés optimalizálása funkció jelenleg nem támogatja az összes olyan funkciót, amely a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba épített tervezési motorban rendelkezésre áll. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. Alapértelmezés szerint a Tervezés optimalizálása funkció nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban. Ennek megfelelően lehetősége van arra, hogy az értékelést a bekapcsolás előtt végezze el.
 
@@ -44,6 +44,9 @@ Ha az alaptervezést az aktuális licenccel futtatja, akkor nem kell megvásáro
 ### <a name="install-the-add-in"></a>Telepítse a bővítményt
 
 A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés optimalizálása bővítményt a következőhöz: Dynamics 365 Supply Chain Management. A bővítményt a LCS-projektből érheti el, és a Supply Chain Management felhasználói felületéről (UI) be lehet kapcsolni a tervezés optimalizálása funkcióját.
+
+> [!NOTE]
+> A tervezésoptimalizálás követelménye egy LCS-kompatibilis magas rendelkezésre állású környezet (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával.
 
 1. Jelentkezzen be a LCS-ba, majd nyissa meg a kívánt környezetet.
 1. Lépjen a **Teljes részletek** elemre.

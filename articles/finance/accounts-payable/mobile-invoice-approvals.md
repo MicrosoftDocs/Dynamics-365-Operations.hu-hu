@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658644"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059428"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
@@ -54,8 +54,8 @@ Minden szervezet eltérő módon szervezi és határozza meg a szállítói szá
     -   Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek, megosztások stb.) van egy-egy számlasornál? Ismételten alkalmazza a 80-20-as szabályt.
     -   A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében? Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?
 
-> [!NOTE]
-> Ez a témakör nem magyarázza el, hogyan szerkeszthetők a könyvelési felosztások, mert ez a funkció jelenleg a mobilváltozatokban nem támogatott.
+    > [!NOTE]
+    > Ez a témakör nem magyarázza el, hogyan szerkeszthetők a könyvelési felosztások, mert ez a funkció jelenleg a mobilváltozatokban nem támogatott.
 
 -   A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?
 
@@ -158,9 +158,9 @@ Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhaszn�
     - Számla száma
     - Számla dátuma
 
-  A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
+    A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
     
-   [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Most a következő oszlopokat is hozzá kell adnia, hogy később engedélyezni lehessen munkafolyamat-műveleteket.
     - Befejezett feladat megjelenítése
@@ -247,9 +247,10 @@ Munkafolyamat-műveletek hozzáadásához használja a **VendMobileInvoiceHeader
     - Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat. Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.
     - Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.
 
-> [!NOTE]
-> Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+    > [!NOTE]
+    > Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Munkafolyamat-műveletek hozzáadásához használja a **VendMobileInvoiceHeader
                  },
            };
         }
+    ```
 
 2.  Töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával
 3.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
@@ -341,7 +343,7 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 
 1.  Az URL-ben cserélje ki a menüpont nevét, mint korábban. A megjelenő lapnak az alábbi ábrához kell hasonlítania.
 
-[![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
 
@@ -367,16 +369,18 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 
 10. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
-> [!NOTE] 
-> A **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem. Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra. Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Navigálás hozzáadása a "Könyvelés megtekintése" oldalra
+
+A **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem. Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra. Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.
 
 1.  Nyissa meg a korábban létrehozott .js fájlt, és adja hozzá a következő kódban kiemelt sorokat. Ezt a kódot két dolgot tesz:
     1.  Ez segít garantálni, hogy a felhasználók közvetlenül a munkaterületről nem léphetnek a **Könyvelés megtekintése** oldalra.
     2.  Ez létrehoz egy navigációs vezérlőt a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra.
 
-> [!NOTE] 
-> Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+    > [!NOTE] 
+    > Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
                  },
            };
         }
-
+    ```
+    
 2.  Az előző kód felülírásához töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával
 3.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 4.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.

@@ -45,10 +45,14 @@
                 - name: Platform update 15 (2018. március)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Eltávolított vagy elavult funkciók
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Eltávolított vagy elavult Platform-funkciók
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Az AX 2012 elhalasztott funkciói
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: A helyszíni telepítésben nem implementált funkciók
+            - name: A helyszíni telepítésben nem megvalósított funkciók
               href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -144,13 +148,15 @@
                       href: data-entities/data-integration-cds.md
                     - name: 'Szinkronizált, kétirányú integráció'
                       items:
-                        - name: Közel valós idejű adatintegráció
+                        - name: Kettős írás kezdőlapja
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Kettős írás – áttekintés
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Szervezeti hierarchia a Common Data Service megoldásban
                           href: data-entities/dual-write/organization-mapping.md
                         - name: Vállalati integráció
                           items:
-                            - name: Vállalat fogalma a Common Data Services szolgáltatásokban
+                            - name: Vállalat fogalma a Common Data Services szolgáltatásban
                               href: data-entities/dual-write/company-data.md
                             - name: Rendszerindítás vállalati adatokkal
                               href: data-entities/dual-write/bootstrap-company-data.md
@@ -938,9 +944,9 @@
                   href: lifecycle-services/lcs.md
                 - name: LCS ügyfelek számára
                   href: lifecycle-services/lcs-works-lcs.md
-                - name: LCS a partnerek számára
+                - name: LCS partnerek számára
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Újdonságok
+                - name: Új vagy módosult elemek a Lifecycle Services szolgáltatásban
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Ismert problémák
                   href: lifecycle-services/known-issues.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md

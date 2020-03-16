@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ff9d722640c86333cb1f9174c640adc2e76e9a5f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022846"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057556"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>A Commerce-csatornák pénzügyi integrálásának áttekintése
 
@@ -36,7 +36,7 @@ Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló p
 - A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
 - Segít az értékesítési tranzakcióadatok megmásíthatatlanságát digitális aláírások segítségével.
 
-A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető kiskereskedelmi eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a Commerce-összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail szoftverfejlesztői készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a Commerce-összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail szoftverfejlesztői készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integrációs minta, a Retail POS egyéb pénzügyi eszközökkel vagy szolgáltatásokkal való integrálásához, vagy a más országokban vagy régiókban levő követelmények lefedéséhez vagy ki kell terjesztenie a létező pénzügyi integrációs mintát, vagy új mintát kell létrehoznia egy meglévő minta példaként való használatával.
 

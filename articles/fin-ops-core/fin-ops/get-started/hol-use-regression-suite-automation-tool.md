@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025804"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070820"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool-oktatóanyag használata
 
@@ -217,15 +217,15 @@ A következő ábra bemutatja az adott eset üzleti folyamatait RSAT-ban.
 
 ## <a name="advanced-scripting"></a>Speciális parancsfájlkezelés
 
-### <a name="command-line"></a>Parancssor
+### <a name="cli"></a>CLI
 
-Az RSAT-ot a **Parancssor** ablakból is be lehet hívni.
+Az RSAT-ot a **Parancssor** vagy a **PowerShell** ablakból is be lehet hívni.
 
 > [!NOTE]
 > Győződjön meg róla, hogy a **TestRoot** környezeti változó az RSAT telepítési útvonalára van állítva. (Microsoft Windows rendszerben nyissa meg a **Vezérlőpult** elemet, válassza a **Rendszer és biztonság \> Rendszer \> Speciális rendszerbeállítások** menüpontot, majd válassza a **Környezet változók** lehetőséget.)
 
-1. Nyissa meg a **Parancssor** ablakot rendszergazdaként.
-2. Futtassa az eszközt a telepítési könyvtárból.
+1. Nyissa meg a **Parancssor** vagy **PowerShell** ablakot rendszergazdaként.
+2. Keresse meg a RSAT telepítési könyvtárat.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ Az RSAT-ot a **Parancssor** ablakból is be lehet hívni.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+A rendelkezésre álló parancsokkal és a paraméterekkel kapcsolatos súgó megjelenítése.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Nem kötelező paraméterek
+
+**``command``**
+
+
+A ``[command]`` az alább megadott parancsok egyike.
+
+
+#### <a name="about"></a>névjegy
+Az aktuális verziót jeleníti meg.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Törli az adatokat a képernyőről.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>letöltés
+Letölti a megadott tesztesethez tartozott mellékleteket a kimeneti környvtárba. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``test_case_id``** A teszteset azonosítóját jeleníti meg.  
+**``output_dir``** A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="examples"></a>Példák
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>szerkesztés
+Lehetővé teszi a paraméterek fájl megnyitását Excel programban, és annak szerkesztését.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``excel_file``** Egy meglévő Excel-fájl teljes elérési útját kell tartalmaznia.
+
+##### <a name="examples"></a>Példák
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>létrehozás
+Létrehozza a tesztvégrehajtási és paraméterfájlokat a megadott tesztesethez a kimeneti könyvtárban.
+A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``test_case_id``** A teszteset azonosítóját jeleníti meg.  
+**``output_dir``** A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="examples"></a>Példák
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Új tesztesetet hoz létre, amely a megadott tesztesetből származik. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``parent_test_case_id``** A fölérendelt teszteset azonosítóját jeleníti meg.  
+**``test_plan_id``** A tesztkonstrukció azonosítóját jeleníti meg.  
+**``test_suite_id``** A tesztcsomag azonosítóját jeleníti meg.
+
+##### <a name="examples"></a>Példák
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Csak a tesztvégrehajtási fájlt hozza létre a megadott tesztesethez a kimeneti könyvtárban. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``test_case_id``** A teszteset azonosítóját jeleníti meg.  
+**``output_dir``** A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="examples"></a>Példák
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Létrehozza az összes tesztesetet a megadott csomaghoz a kimeneti könyvtárban.
+A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az oszlopból bármelyik értéket használhatja **test_suite_name** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``test_suite_name``** A tesztcsomag nevét jeleníti meg.  
+**``output_dir``** A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="examples"></a>Példák
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>súgó
+Azonos a következővel: [?](####?) parancs
+
+
+#### <a name="list"></a>listában
+Felsorolja az összes elérhető teszt esetet.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Felsorolja az összes elérhető tesztkonstrukciót.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Felsorolja a megadott tesztcsomag teszteseteit. A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az első oszlopból bármelyik értéket használhatja **suite_name** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``suite_name``** A kívánt csomag neve.
+
+##### <a name="examples"></a>Példák
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Felsorolja az összes elérhető tesztcsomagot.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>visszajátszás
+Visszajátszik egy tesztesetet Excel-fájl segítségével.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``excel_file``** Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell. 
+
+##### <a name="examples"></a>Példák
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Egyszerre több tesztesetet játszik le.
+A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``test_case_id1``** A meglévő teszteset azonosítója.  
+**``test_case_id2``** A meglévő teszteset azonosítója.  
+**``test_case_idN``** A meglévő teszteset azonosítója.  
+
+##### <a name="examples"></a>Példák
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Több tesztesetet játszik le egyszerre, Excel-fájlok használatával.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``excel_file1``** Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.  
+**``excel_file2``** Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.  
+**``excel_fileN``** Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.  
+
+##### <a name="examples"></a>Példák
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+A megadott tesztcsomagból minden tesztesetet lejátszik. A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az első oszlopból bármelyik értéket használhatja **suite_name** paraméterként.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``suite_name``** A kívánt csomag neve.
+
+##### <a name="examples"></a>Példák
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>kilépés
+Bezárja az alkalmazást.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>feltöltés
+A megadott tesztcsomaghoz vagy tesztesetekhez tartozó összes fájlt feltölti.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Kötelező paraméterek
+**``suite_name``** A megadott tesztcsomaghoz tartozó összes fájlt feltölti.
+**``testcase_id``** A megadott teszteset(ek)hez tartozó összes fájlt feltölti.
+
+##### <a name="examples"></a>Példák
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Csak a megadott tesztesetekhez tartozó rögzítési fájlt tölti fel.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Kötelező paraméterek
+**``testcase_id``** Csak a megadott tesztesetekhez tartozó rögzítési fájlt tölti fel.
+
+##### <a name="examples"></a>Példák
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>használat
+Kétféle módszert mutat be az alkalmazás meghívására: az egyik alapértelmezett beállítási fájlt használ, a másik egy beállítási fájlt ad meg.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-példák
 

@@ -1,6 +1,6 @@
 ---
-title: Kiskereskedelmi hierarchiák
-description: Ez a cikk bemutatja a kereskedelmi hierarchiákat a Dynamics 365 Commerce alkalmazásban.
+title: Commerce-hierarchiák
+description: Ez a cikk bemutatja a hierarchiákat a Dynamics 365 Commerce alkalmazásban.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cf8db2c828f99dfd4c220966e31894dcd6eda572
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1b9fc647ccaa3caeec0d0e3a8594fd6a2a8be0f
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022812"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070736"
 ---
-# <a name="retail-hierarchies"></a>Kiskereskedelmi hierarchiák
+# <a name="commerce-hierarchies"></a>Commerce-hierarchiák
 
 [!include [banner](includes/banner.md)]
 

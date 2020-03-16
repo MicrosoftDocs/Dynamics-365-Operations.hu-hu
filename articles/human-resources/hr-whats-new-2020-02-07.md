@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029957"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076270"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 7.)
 
@@ -68,5 +68,11 @@ Az új Common Data Service megoldás hamarosan a következő változtatásokkal 
 | Új változó kompenzációs beállítási entitások | **Változó kompenzációs konstrukció típusa**</br>**Változó kompenzációs konstrukció**</br>**Kilépési szabályok**</br>**Változó kompenzációs konstrukció szintje** |
 | Új **Dolgozói naptár – foglalkoztatás** entitás | **Munkanaptár-entitás** hozzáadva |
 | Új **Bérlista szerinti beosztás részletei** entitás | **Bérlista szerinti beosztás** részletei |
-| Új **Beosztás** entitás | **Beosztás** hozzáadása A rendszer figyelembe veszi az új **Beosztás** entitást a Human Resources és a Common Data Service szinkronizálásának folyamatában, de kezdetben nem lesz hivatkozás a **Feladat pozíciója** vagy a **Feladat** entitásból. |
+| Új **Beosztás** entitás | **Beosztás** hozzáadása Az új **Cím** entitást a Human Resources és a Common Data Service közötti szinkronizálási folyamatában fog szerepelni. Kezdetben nem lesz hivatkozva a **Beosztás** vagy a **Feladat** entitásból. |
 
+## <a name="see-also"></a>Lásd még
+
+[Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)</br>
+[Szolgáltatások kezelése](hr-admin-manage-features.md)

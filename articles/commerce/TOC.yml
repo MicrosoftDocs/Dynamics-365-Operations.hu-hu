@@ -96,7 +96,7 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                 - name: Az AX 2012 elhalasztott funkciói
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: A helyszíni telepítésben nem implementált funkciók
+                - name: A helyszíni telepítésben nem megvalósított funkciók
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
@@ -166,7 +166,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Mentett nézetek
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
-                - name: Egyéni mezők létrehozása és felhasználása
+                - name: Rácsfunkciók
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: PowerApps alkalmazások beágyazása
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
@@ -186,13 +188,13 @@
                   href: retail-components.md
                 - name: Commerce Scale Unit architektúra
                   href: dev-itpro/retail-server-architecture.md
-                - name: Válasszon üzleti topológiát
+                - name: Válasszon áruházi topológiát
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange és a kereskedelmi csatorna kommunikációja
                   href: dev-itpro/define-retail-channel-communications-cdx.md
                 - name: Modern pénztár-architektúra
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Online üzlet közzétételi architektúrája
+                - name: Online áruház közzétételi architektúrája
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-tartalom
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -418,7 +420,7 @@
                       href: reset_receipt_number_sequence.md
                 - name: Funkcióprofilok létrehozása értékesítési képviselőknek
                   href: tasks/configure-functionality-profile-sales-representative.md
-                - name: Pénzügyi dimenziók létrehozása Retail csatornákhoz és a dimenziók értékeinek konfigurálása az üzletekben
+                - name: Pénzügyi dimenziók létrehozása Retail csatornákhoz és a dimenziók értékeinek konfigurálása az áruházakban
                   href: tasks/create-financial-dimensions-retail-channels.md
             - name: Online csatorna beállítása
               items:
@@ -438,8 +440,6 @@
                   href: configure-call-center-delivery.md
                 - name: Csalással kapcsolatos figyelmeztetések beállítása és használata
                   href: set-up-fraud-alerts.md
-                - name: Folytonossági programok beállítása hívásközpontok számára
-                  href: set-up-continuity-program.md
             - name: További csatorna konfigurálása
               items:
                 - name: Csatorna hozzáadása szervezeti hierarchiához
@@ -450,7 +450,13 @@
                       href: omni-auto-charges.md
                     - name: Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
                       href: pro-rate-charges-matching-lines.md
-                - name: Kiskereskedelmi üzlet kezelése
+                - name: Folytonossági programok kezelése
+                  items:
+                    - name: Folytonossági programok beállítása hívásközpontok számára
+                      href: set-up-continuity-program.md
+                    - name: Folytonossági ütemezések meghatározása
+                      href: tasks/define-continuity-schedules.md
+                - name: Kiskereskedelmi áruház kezelése
                   items:
                     - name: Nyitvatartási idő létrehozása és módosítása
                       href: dev-itpro/store-hours.md
@@ -460,9 +466,7 @@
                   items:
                     - name: Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
                       href: work-with-order-holds.md
-                    - name: Folytonossági ütemezések meghatározása
-                      href: tasks/define-continuity-schedules.md
-                - name: Kifizetések
+                - name: Fizetések
                   items:
                     - name: Fizetési módok
                       href: payment-methods.md
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Online fizetési eszközök mentése az Adyen összekötővel
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Számlafizetési forgatókönyvek beállítása
                       href: payinvoice.md
                     - name: Ismétlődő kifizetések megakadályozása
@@ -490,13 +496,13 @@
           items:
             - name: 'Kategóriák, termékek és szortimentek'
               items:
-                - name: Termékek adatainak áttekintése
+                - name: Termékadatok áttekintése
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail termékek beállítása
+                - name: Kiskereskedelmi termékek beállítása
                   href: set-up-retail-products.md
-                - name: Retail termékek hierarchiája
+                - name: Termékhierarchia
                   items:
-                    - name: Retail hierarchiák
+                    - name: Commerce-hierarchiák
                       href: retail-hierarchies.md
                     - name: Új termékhierarchia létrehozása
                       href: create-product-hierarchy.md
@@ -616,17 +622,23 @@
               items:
                 - name: Készlet
                   items:
-                    - name: Üzleti árukészlet kezelése
+                    - name: Áruházi árukészlet kezelése
                       href: work-with-store-inventory.md
                     - name: Szerializált cikkek használata
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-                    - name: Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával
+                    - name: Termékek elosztása az elosztási központból az áruházba a központi elosztás használatával
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Bejövő készletműveletek a pénztárban
+                      href: pos-inbound-inventory-operation.md
+                    - name: Kimenő készletműveletek a pénztárban
+                      href: pos-outbound-inventory-operation.md
+                    - name: Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
+                      href: calculated-inventory-retail-channels.md
                 - name: Beszerzési rendelések
                   items:
-                    - name: Beszerzési rendelések áttekintése
+                    - name: Beszerzési rendelések – áttekintés
                       href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
                     - name: Beszerzési rendelések létrehozása
                       href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
@@ -652,9 +664,9 @@
                   href: cost.md
             - name: Rendelés teljesítése és feldolgozása
               items:
-                - name: Rendelésteljesítés az üzletben
+                - name: Rendelésteljesítés az áruházban
                   href: order-fulfillment-overview.md
-                - name: Rendelésteljesítés beállítása az üzletek esetében
+                - name: Rendelésteljesítés beállítása az áruházak esetében
                   href: order-fulfillment-pos-setup.md
                 - name: Rendelési értesítések megjelenítése a pénztárban
                   href: notifications-pos.md
@@ -664,7 +676,7 @@
               items:
                 - name: Csatolt visszatérítések
                   href: dev-itpro/linked-refunds.md
-                - name: Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele
+                - name: Egy áruház szortimentjében nem szereplő termékek eladása és visszavétele
                   href: sell-return-outside-assortments.md
                 - name: Csere konfigurálása és feldolgozása visszárurendelésen
                   href: orderexchanges.md
@@ -700,15 +712,15 @@
               href: valid-checker.md
             - name: Kiskereskedelmi tranzakciók konzisztencia-ellenőrzési szabályainak letiltása
               href: disable-consistency-check-rule.md
-            - name: Kiskereskedelmi üzleti tranzakciók szerkesztése és naplózása
+            - name: Kiskereskedelmi áruházi tranzakciók szerkesztése és naplózása
               href: edit-audit-retail-transactions.md
-            - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
+            - name: 'Kiskereskedelmi áruház kimutatásainak létrehozása, kiszámítása és feladása'
               href: tasks/create-calculate-post-statement-retail-store.md
             - name: Kimutatásfeladás funkcióinak továbbfejlesztései
               href: statement-posting-eod.md
-            - name: 'A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi üzlet tranzakcióihoz'
+            - name: 'A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz'
               href: trickle-feed.md
-            - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
+            - name: 'Kiskereskedelmi áruház kimutatásainak létrehozása, kiszámítása és feladása'
               href: tasks/create-calculate-post-statement-retail-store.md
             - name: Kimutatásfeladás funkcióinak továbbfejlesztései
               href: statement-posting-eod.md
@@ -722,11 +734,23 @@
               href: tasks/run-job-calculate-statements.md
             - name: Kimutatások feladásához használt feladat konfigurálása és futtatása
               href: tasks/run-job-post-statements.md
-            - name: A Retail kimutatásokat befolyásoló áruház-beállítások konfigurálása
+            - name: A kiskereskedelmi kimutatásokat befolyásoló áruház-beállítások konfigurálása
               href: tasks/store-configurations-retail-statements.md
             - name: Online értékesítések és kifizetések feladása
               href: tasks/posting-online-sales-payments.md
-        - name: Az e-Commerce webhely kezelése
+        - name: Dolgozó feladatainak kezelése
+          items:
+            - name: Feladatkezelés – áttekintés
+              href: task-mgmt-overview.md
+            - name: Feladatkezelés konfigurálása
+              href: task-mgmt-configure.md
+            - name: Feladatlisták létrehozása és feladatok hozzáadása
+              href: task-mgmt-create-lists.md
+            - name: Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
+              href: task-mgmt-assign-lists.md
+            - name: Feladatkezelés a pénztárban
+              href: task-mgmt-pos.md
+        - name: Az e-kereskedelmi webhely kezelése
           items:
             - name: Online áruház áttekintése
               href: online-store-overview.md
@@ -782,7 +806,7 @@
                   href: document-states-overview.md
                 - name: A közzétételi csoportokkal végzett munka
                   href: publish-groups.md
-                - name: A webhely testreszabása és az üzlet adatainak hozzáadása
+                - name: A webhely testreszabása és az áruház adatainak hozzáadása
                   items:
                     - name: Embléma hozzáadása
                       href: add-logo.md
@@ -880,6 +904,8 @@
                   items:
                     - name: Vásárlásmező-modul
                       href: add-buy-box.md
+                    - name: Értékelések és vélemények modulok
+                      href: ratings-reviews-modules.md
                 - name: Beszerzési modulok
                   items:
                     - name: Kosármodul
@@ -924,7 +950,7 @@
               href: sales-performance-products.md
             - name: Vevők és termékek nyereségességének felmérése
               href: assess-customer-product-profitability.md
-            - name: Az üzletteljesítmény elemzése
+            - name: Az áruházi teljesítmény elemzése
               href: store-performance-information.md
             - name: 'Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása'
               href: set-up-rfm-analysis.md
@@ -1054,13 +1080,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
             - name: Jelentésdokumentumok készítése és nyomtatása
               items:
-                - name: A Dokumentumjelentési szolgáltatások áttekintése
+                - name: Jelentésdokumentum-készítési szolgáltatások áttekintése
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Támogatott betűtípusok
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: SSRS beállítása helyszíni telepítésekhez
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Nyomtatás
                   items:
-                    - name: A dokumentumnyomtatás áttekintése
+                    - name: Dokumentumnyomtatás áttekintése
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
@@ -1834,11 +1862,9 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Előnézeti és hibakeresési modulok
                       href: e-commerce-extensibility/test-module.md
-                    - name: Hibakereső modulok
-                      href: e-commerce-extensibility/debug-modules.md
-                    - name: Modulok tesztelése vezérlőkkel
+                    - name: Modulok tesztelése álelemekkel
                       href: e-commerce-extensibility/test-module-mock.md
-                    - name: Modulok tesztelése oldalvezérlőkkel
+                    - name: Modulok tesztelése áloldalakkal
                       href: e-commerce-extensibility/test-page-mock.md
                     - name: Tárolómodulok
                       href: e-commerce-extensibility/container-modules.md
@@ -1974,8 +2000,10 @@
                   href: dev-itpro/pos-control-non-screen.md
                 - name: Pénztárminták futtatása
                   href: dev-itpro/pos-run-samples.md
-                - name: Eszközkezelés megvalósítási útmutatása
+                - name: Eszközkezelés megvalósítási útmutatója
                   href: implementation-considerations-devices.md
+                - name: Pénztár kosárnézet eseményei és kezelései
+                  href: dev-itpro/cart-view-handlers.md
             - name: Hardware Station bővíthetősége
               items:
                 - name: Hardware Station és bővíthetősége
@@ -2028,10 +2056,12 @@
                   href: dev-itpro/order-attributes.md
                 - name: Vevőattribútumok
                   href: dev-itpro/customer-attributes.md
-                - name: CRT SDK minták
+                - name: CRT SDK-minták
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Bővítési események naplózása az Application Insights szolgáltatásban
                   href: dev-itpro/commerce-application-insights.md
+                - name: Aszinkron Commerce (CRT) API-k létrehozása az üzleti logikában
+                  href: dev-itpro/async-commerce-extension.md
             - name: Fizetési összekötő bővíthetősége
               items:
                 - name: Fizetési integráció létrehozása fizetési terminálhoz
@@ -2046,9 +2076,11 @@
                   href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Fizetési adatok használata
                   href: payment-connector-data-fields.md
-                - name: Ismétlődő fizetési védelem engedélyezése a fizetési összekötőkhöz
+                - name: Kettős fizetési védelem engedélyezése a fizetési összekötőkhöz
                   href: dev-itpro/duplicate-payment-protection.md
-            - name: Harmadik fél e-kereskedelem bővíthetősége
+                - name: Fizetéscsomagolás létrehozása a Service Fabric telepítések alkalmazáskeresőjéhez
+                  href: dev-itpro/payment-connector-package.md
+            - name: Harmadik fél e-kereskedelmi bővíthetősége
               items:
                 - name: Online áruházak beállítása
                   href: dev-itpro/configure-online-store.md
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

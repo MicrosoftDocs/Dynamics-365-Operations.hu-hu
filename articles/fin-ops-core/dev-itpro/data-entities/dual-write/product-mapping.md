@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019817"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081151"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -75,7 +75,7 @@ Egység | uoms
 Egységek átváltása | msdyn_ unitofmeasureconversions
 Termékspecifikus mértékegység-átváltás | msdyn_productspecificunitofmeasureconversion
 Termékkategóriák | msdyn_productcategories | A termékkategóriák mindegyike, valamint a szerkezetükkel és a jellemzőikkel kapcsolatos információk a termékkategória entitásban találhatók. 
-Termékkategóriák hierarchiái | msdyn_productcategoryhierarhies | A termékhierarchiákat a termékek kategorizálására vagy csoportosítására használhatja. A kategóriahierarchiák a Common Data Service szolgáltatásban, a kategóriahierarchia entitás használatával érhetők el. 
+Termékkategóriák hierarchiái | msdyn_productcategoryhierarhies | A termékhierarchiákat a termékek kategorizálására vagy csoportosítására használhatja. A kategóriahierarchiák a Common Data Service szolgáltatásban, a Termékkategória-hierarchia entitás használatával érhetők el. 
 Termékkategória-hierarchiához tartozó szerepkörök | msdyn_productcategoryhierarchies | A termékhierarchiák a D365 Finance and Operations különböző szerepköreiben használhatók. Annak megadása, hogy melyik kategóriát használja az egyes szerepkörökben, amelyekben a termékkategória szerepkörentitáshoz használatos. 
 Termékkategóriák hozzárendelései | msdyn_productcategoryassignments | Ha terméket szeretne hozzárendelni egy kategóriához, akkor a termékkategória hozzárendelési entitását használhatja.
 
@@ -109,7 +109,7 @@ Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szink
 
 Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására szolgálnak. A négy termékdimenzió (szín, méret, stílus és konfiguráció) a termék változatának meghatározásához hozzá van hozzárendelve a Common Data Service szolgáltatáshoz is. A következő ábra a Szín cikkdimenzió adatmodelljét mutatja be. Ugyanez a modell a méretekre, stílusokra és a konfigurációkra is érvényes. 
 
-![Adatmodell termékekhez](media/dual-write-product-2.PNG)
+![Adatmodell termékekhez](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és 
 
 A mértékegységek és a kapcsolódó átváltások a diagramon látható adatmodellben érhetők el a Common Data Service szolgáltatásban.
 
-![Adatmodell termékekhez](media/dual-write-product-3.PNG)
+![Adatmodell termékekhez](media/dual-write-product-three.png)
 
 A mértékegység fogalma integrálva van a Finance and Operations-alkalmazások és más Dynamics 365 alkalmazások között. A Finance and Operations-alkalmazás minden egységosztálya esetében létrejön egy olyan egységcsoport a Dynamics 365-alkalmazásban, amely az egységosztályhoz tartozó egységeket tartalmazza. Minden egységcsoporthoz egy alapértelmezett alapegység is létrejön. 
 
@@ -205,13 +205,13 @@ Ha egyedileg szeretné azonosítani a termékeket a Dynamics 365 for Finance and
 
 Egy másik Dynamics 365-alkalmazás felhasználója esetén a termék a felhasználói felületen lévő **msdyn_productnumber** értékkel azonosítható (a mező címkéje a **Termékszám**). A termék képernyőjén mind a vállalat, mind a msydn_productnumber látható. A (productnumber) mező, a termék egyedi kulcsa viszont nem jelenik meg. 
 
-Ügyeljen rá, hogy ha a Common Data Service szolgáltatásra épít alkalmazást, külön ügyelnie kell arra, hogy a (productnumber), vagyis az egyedi termékazonosító legyen az integrációs kulcs, ne pedig a msdyn_productnumber, mivel az utóbbi érték nem egyedi. 
+Ha alkalmazásokat épít a Common Data Service szolgáltatásban, akkor ügyeljen arra, hogy a **productnumber** elemet (az egyedi termékazonosító) használja integrációs kulcsként. Ne használja az **msdyn_productnumber** elemet, mert az nem egyedi. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>A termékek kezdeti szinkronizálása, és az adatok áttelepítése a Common Data Service szolgáltatásból a Finance and Operations szolgáltatásba
 
 ### <a name="initial-synchronization-of-products"></a>Termékek kezdeti szinkronizálása 
 
-Ha a kettős írás engedélyezett, a Dynamics 365 Finance and Operations rendszerből származó termékeket a rendszer szinkronizálja a Common Data Service szolgáltatással és a többi Dynamics 365-alkalmazással. Ügyeljen rá, hogy a Common Data Service szolgáltatásban és a többi Dynamics 365-alkalmazásban a kettős írás előtt létrehozott termékek nem frissülnek, és a rendszer nem egyezteti őket a Finance and Operations termékadataival.
+Ha a kettős írás engedélyezett, a Finance and Operations alkalmazásokat rendszer szinkronizálja a Common Data Service szolgáltatással és a többi modellvezérelt alkalmazással a Dynamics 365 rendszerben. A Common Data Service szolgáltatásban és a többi Dynamics 365-alkalmazásban a kettős írás előtt kiadott alkalmazások nem frissülnek, és a rendszer nem egyezteti őket a Finance and Operations alkalmazások termékadataival.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>A Finance and Operations és más Dynamics 365-alkalmazások termékadatainak egyeztetése
 

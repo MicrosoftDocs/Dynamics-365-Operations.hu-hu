@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024706"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057717"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Egy Dynamics 365 Commerce előzetes verziós környezet konfigurálása
 
@@ -35,7 +35,7 @@ Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 
 
 A jelen témakörben ismertetett eljárásokat csak a Commerce előnézet környezet létesítését követően hajtsa végre. A Commerce előzetes környezetének létesítésével kapcsolatos információkért lásd: [Commerce előzetes verziós környezet kiépítése](provisioning-guide.md).
 
-Miután a Commerce előzetes környezet teljes körűen kiépítésre került, további létrehozás utáni konfigurálási lépéseket el kell végezni, mielőtt megkezdheti a környezet értékelését. Ezen lépések elvégzéséhez a Microsoft Dynamics Lifecycle Services (LCS), Dynamics 365 Commerce és Dynamics 365 Retail alkalmazásokat kell használnia.
+Miután a Commerce előzetes környezet teljes körűen kiépítésre került, további létrehozás utáni konfigurálási lépéseket el kell végezni, mielőtt megkezdheti a környezet értékelését. Ezen lépések elvégzéséhez a Microsoft Dynamics Lifecycle Services (LCS) és Dynamics 365 Commerce alkalmazásokat kell használnia.
 
 ## <a name="before-you-start"></a>A program használatának megkezdése előtt
 
@@ -53,7 +53,7 @@ Miután a Commerce előzetes környezet teljes körűen kiépítésre került, t
 
 Ha a munkavállalót az LCS-ben lévő identitásához szeretné társítani, kövesse az alábbi lépéseket.
 
-1. A bal oldalon található menü használatával nyissa meg a **Modulok \> Kiskereskedelem \> Alkalmazottak \> Dolgozók** lehetőséget.
+1. A bal oldalon található menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Alkalmazottak \> Dolgozók** lehetőséget.
 1. Keresse meg és jelölje ki a következő rekordot a listán: **000713 - Andrew Collette**.
 1. A Műveleti ablaktáblán kattintson a **Kiskereskedelem** elemre.
 1. Válassza a **Létező identitás társítása** lehetőséget.
@@ -91,12 +91,12 @@ Az előzetes webhely beállításának megkezdéséhez a Commerce alkalmazásban
 1. Hagyja az **Útvonal** mező értékét változatlanul.
 1. Válassza ki az **OK** lehetőséget. Megjelenik a webhelyen lévő oldalak listája.
 
-## <a name="enable-jobs-in-retail"></a>Feladatok engedélyezése a Kiskereskedelemben
+## <a name="enable-jobs"></a>Munkák engedélyezése
 
-A feladatok engedélyezéséhez a Kiskereskedelemben kövesse az alábbi lépéseket.
+A feladatok engedélyezéséhez a Kereskedelemben kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be a környezetbe (HQ).
-1. A bal oldali menü használatával nyissa meg a **Kiskereskedelem \> Lekérdezések és jelentések \> Kötegelt feladatok** lehetőséget.
+1. A bal oldali menü használatával nyissa meg a **Kiskereskedelem és kereskedelem \> Lekérdezések és jelentések \> Kötegelt feladatok** lehetőséget.
 
     Az eljárás további lépéseit az alábbi feladatok mindegyikére el kell végezni:
 
@@ -112,11 +112,11 @@ A feladatok engedélyezéséhez a Kiskereskedelemben kövesse az alábbi lépés
     1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
     1. Válassza a **Várakozás** parancsot, majd válassza az **OK** elemet.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Teljes adatszinkronizálás futtatása a Kiskereskedelemben
+### <a name="run-full-data-synchronization"></a>Teljes adatszinkronizálás futtatása
 
-Ha teljes adatszinkronizálást szeretne futtatni a Kiskereskedelemben, kövesse az alábbi lépéseket.
+Ha teljes adatszinkronizálást szeretne futtatni a Kereskedelemben, kövesse az alábbi lépéseket.
 
-1. A bal oldali menü használatával nyissa meg a **Modulok \> Kereskedelem \> Központ beállítása \> Kiskereskedelmi ütemezés \> Csatornaadatbázis** lehetőséget.
+1. A bal oldali menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítása \> Kiskereskedelmi ütemezés \> Csatornaadatbázis** lehetőséget.
 1. A bal oldali listában az **Alapértelmezett** csatorna van kiválasztva. Válassza ki a másik elérhető csatornát. A csatorna neve **scXXXXXXXXX**.
 1. A műveleti ablakban válassza ki a **Teljes adatszinkronizálás** elemet.
 1. Adja meg **9999** értéket az elosztási ütemezéshez.

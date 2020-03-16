@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022827"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057487"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -43,23 +43,23 @@ A témakör a következő fogalmakat használja.
 
 ## <a name="price-groups"></a>Árcsoportok
 
-Az árcsoportok a Commerce ár- és engedménykezelésének középpontjában állnak. Az árcsoportok használatával árakat és engedményeket lehet hozzárendelni a kereskedelmi entitásokhoz (csatornákhoz, fiókokhoz, katalógusokhoz és hűségprogramokhoz). Mivel árcsoportokat használunk az összes árképzéshez és engedményhez, nagyon fontos, hogy megtervezze, hogyan használja őket, még a használat megkezdése előtt.
+Az árcsoportok a Commerce ár- és engedménykezelésének középpontjában állnak. Az árcsoportok használatával árakat és engedményeket lehet hozzárendelni az entitásokhoz (csatornákhoz, fiókokhoz, katalógusokhoz és hűségprogramokhoz). Mivel árcsoportokat használunk az összes árképzéshez és engedményhez, nagyon fontos, hogy megtervezze, hogyan használja őket, még a használat megkezdése előtt.
 
-Önmagában az árcsoport csak név, leírás és opcionálisan árképzési prioritás. A legfontosabb tudnivaló az árcsoportokkal kapcsolatban az, hogy a több a többhöz kapcsolatok kezelésére szolgálnak, amelyekkel az engedmények és az árak rendelkeznek a kiskereskedelmi entitásokkal.
+Önmagában az árcsoport csak név, leírás és opcionálisan árképzési prioritás. A legfontosabb tudnivaló az árcsoportokkal kapcsolatban az, hogy a több a többhöz kapcsolatok kezelésére szolgálnak, amelyekkel az engedmények és az árak rendelkeznek a kereskedelmi entitásokkal.
 
-A következő ábrán az árcsoportok használata látható. Az ábrán láthatja, hogy az „Árcsoport” szó szerint az árképzés és az engedmények kezelésének középpontjában van. A kiskereskedelmi entitások, amelyek segítségével kezelheti a különbözeti árakat és engedményeket a bal oldalon láthatók, és a tényleges ár- és engedményrekordok vannak a jobb oldalon.
+A következő ábrán az árcsoportok használata látható. Az ábrán láthatja, hogy az „Árcsoport” szó szerint az árképzés és az engedmények kezelésének középpontjában van. A kereskedelmi entitások, amelyek segítségével kezelheti a különbözeti árakat és engedményeket a bal oldalon láthatók, és a tényleges ár- és engedményrekordok vannak a jobb oldalon.
 
 ![Árcsoportok](./media/PriceGroups.png "Árcsoportok")
 
-Árcsoportok létrehozása esetén ne használjon egyetlen árcsoportot többféle kiskereskedelmi entitástípushoz. Ellenkező esetben nehéz meghatározni, hogy miért meghatározott ár vagy engedmény van alkalmazva adott tranzakcióhoz.
+Árcsoportok létrehozása esetén ne használjon egyetlen árcsoportot többféle kereskedelmi entitástípushoz. Ellenkező esetben nehéz meghatározni, hogy miért meghatározott ár vagy engedmény van alkalmazva adott tranzakcióhoz.
 
 Ahogy piros szaggatott vonal az ábrán bemutatja, a Commerce támogatja a Microsoft Dynamics 365 árcsoport alapszolgáltatását, amely közvetlenül a vevőhöz van állítva. Azonban ebben az esetben csak eladási árra vonatkozó kereskedelmi megállapodásokat fog kapni. Ha vevőspecifikus árak kíván alkalmazni, azt ajánljuk, hogy ne állítson be árcsoportokat közvetlenül a vevőhöz. Ehelyett fiókokat kell használnia.
 
-A következő szakaszok további tájékoztatást tartalmaznak a kiskereskedelmi entitásokról, amelyeket különböző árak beállításához használhat az árcsoportok használatakor. Az árak és engedmények konfigurációja az összes entitáshoz két lépésből áll. Ezeket a lépéseket tetszőleges sorrendben teheti meg. Azonban a logikai sorrend először az árcsoportok beállítása az entitásokon, mivel ez a lépés valószínűleg a telepítés során végrehajtott, egyszer végrehajtandó beállítást. Ezután, az árak és engedmények létrehozásakor, az árak és engedmények esetében egyenként állíthatók be az árcsoportok.
+A következő szakaszok további tájékoztatást tartalmaznak a kereskedelmi entitásokról, amelyeket különböző árak beállításához használhat az árcsoportok használatakor. Az árak és engedmények konfigurációja az összes entitáshoz két lépésből áll. Ezeket a lépéseket tetszőleges sorrendben teheti meg. Azonban a logikai sorrend először az árcsoportok beállítása az entitásokon, mivel ez a lépés valószínűleg a telepítés során végrehajtott, egyszer végrehajtandó beállítást. Ezután, az árak és engedmények létrehozásakor, az árak és engedmények esetében egyenként állíthatók be az árcsoportok.
 
 ### <a name="channels"></a>Csatornák
 
-A kiskereskedelemben nagyon jellemző, hogy különböző árakat alkalmaznak a különböző csatornákon. A két elsődleges, a csatornaspecifikus árakat befolyásoló tényező a költségek és a helyi piaci feltételek.
+A kereskedelemben nagyon jellemző, hogy különböző árakat alkalmaznak a különböző csatornákon. A két elsődleges, a csatornaspecifikus árakat befolyásoló tényező a költségek és a helyi piaci feltételek.
 
 - **Költségek** – Minél messzebb van egy csatorna a termék forrásától, annál költségesebb termék készleten tartása. Például a friss termékeknek van egy korlátozott eltarthatósági ideje és meghatározott termelési követelményei (például termesztési időszak). Télen a friss saláta várható költségek magasabb az északi klímájú helyeken, mint a déli klímájúakon. Ha nagy földrajzi területen állítjuk be a csatornák árait, valószínűleg érdemes különböző árakat beállítani a különböző csatornákon.
 - **Helyi piaci feltételek** – Egy üzletet, amelynek közvetlen versenytársa van az utca másik oldalán, sokkal árérzékenyebb lesz, mint a közeli közvetlen versenytárssal nem rendelkező üzletek.
@@ -84,7 +84,7 @@ Egyes kiskereskedők fizikai vagy virtuális katalógus segítségével hirdetik
 
 ### <a name="best-practices-for-price-groups"></a>Az árcsoportokkal kapcsolatos ajánlott eljárások
 
-Több kiskereskedelmi entitástípushoz ne használjon egy árcsoportot. Ehelyett használjon egy árcsoportkészletet a csatornákhoz, egy másik árcsoportkészletet a fiókokhoz vagy hűségprogramokhoz, és így tovább. Elő- vagy utótagot használhat az árcsoport nevében, hogy a segítségükkel vizuálisan csoportosítása a használt különböző típusú árcsoportokat.
+Több kereskedelmi entitástípushoz ne használjon egy árcsoportot. Ehelyett használjon egy árcsoportkészletet a csatornákhoz, egy másik árcsoportkészletet a fiókokhoz vagy hűségprogramokhoz, és így tovább. Elő- vagy utótagot használhat az árcsoport nevében, hogy a segítségükkel vizuálisan csoportosítása a használt különböző típusú árcsoportokat.
 
 Ne beállítása be az árcsoportokat közvetlenül a vevőhöz. Fiókot használja helyette. Ily módon minden típusú árat és engedményt hozzárendelheti a vevőkhöz, nem csak az eladási árra vonatkozó kereskedelmi megállapodásokat.
 
@@ -98,7 +98,7 @@ Az ár és az engedmény két különböző árképzési prioritásból származ
 
 Az árképzési prioritás szolgáltatás bevezetése azokat az eseteket szolgálja ki, ahol a kiskereskedő magasabb árakat kíván alkalmazni az üzletek meghatározott körében. Például a kiskereskedő regionális árakat ad meg az Amerikai Egyesült Államok keleti partjára, de magasabb árakat akar beállítani bizonyos árukra a New York-i üzletekben, mivel egyes termékek költsége magasabb a városban, illetve mert a helyi piac elviseli a magasabb árat.
 
-A témakör „Legkedvezőbb ár” részében ismertetetteknek megfelelően a kiskereskedelmi árképzési motor általában a két ár közül a kisebbet választja. Ez általában megakadályozza a kiskereskedőt a két ár közül a nagyobb használatában azokban az üzletekben, amelynek keleti parti és a New York-i árcsoportjai is vannak. A probléma megoldásához, mielőtt az árképzési prioritás szolgáltatást bevezettük, a kiskereskedőnek az összes termék árát kétszer kellett meghatároznia, és nem rendelhette hozzá mindkét árcsoportot. Másik megoldásként a kiskereskedőnek extra árcsoportokat kellett létrehoznia, hogy elkülönítse a magasabb árú termékeket a szokásos, alacsonyabb árú terméktől.
+A témakör „Legkedvezőbb ár” részében ismertetetteknek megfelelően az árképzési motor általában a két ár közül a kisebbet választja. Ez általában megakadályozza a kiskereskedőt a két ár közül a nagyobb használatában azokban az üzletekben, amelynek keleti parti és a New York-i árcsoportjai is vannak. A probléma megoldásához, mielőtt az árképzési prioritás szolgáltatást bevezettük, a kiskereskedőnek az összes termék árát kétszer kellett meghatároznia, és nem rendelhette hozzá mindkét árcsoportot. Másik megoldásként a kiskereskedőnek extra árcsoportokat kellett létrehoznia, hogy elkülönítse a magasabb árú termékeket a szokásos, alacsonyabb árú terméktől.
 
 Azonban az árképzési prioritás funkcióval a kiskereskedő árképzési prioritást hozhat létre az üzletárakra, amely nagyobb, mint a regionális árak árképzési prioritása. Azt is megteheti a kiskereskedő, hogy létrehoz egy árképzési prioritást csak az üzlet áraira, és a regionális árakat hagyja az alapértelmezett árképzési prioritás, amely a 0 (nulla). Mindkét beállítás segít garantálni, hogy üzlet árak mindig a regionális árak előtt legyenek használva.
 
@@ -142,7 +142,7 @@ A legegyszerűbb hely egy termék árának beállítására közvetlenül a term
 
 Ha egy termék ára mindenkinek ugyanaz, az alapár a leghatékonyabb a termék árának kezelésére. Az alapárat akkor is beállíthatja a terméken, ha az árak a kereskedelmi megállapodások segítségével vannak meghatározva. Ezután, ha nem használ egy **Minden** kereskedelmi megállapodást, akkor lesz egy tartalék ár, amelyik akkor használatos, ha nincs érvényes kereskedelmi megállapodás.
 
-Ha a kiskereskedelmi csatorna pénzneme eltér a vállalati pénznemétől, az alapárat a csatornára nézve pénznemátváltás határozza meg arra az árra, amelyik be van állítva a termékhez.
+Ha a csatorna pénzneme eltér a vállalati pénznemétől, az alapárat a csatornára nézve pénznemátváltás határozza meg arra az árra, amelyik be van állítva a termékhez.
 
 Bár az áregység nem gyakori forgatókönyv, az árképzés motor támogatja. Ha az áregység nem **0** (nulla) értékre van állítva, az egységár egyenlő ár ÷ áregység. Például, a termék ára 10,00 USD, az áregység pedig 50, 1 mennyiség ára 0,20 USD (= 10,00 ÷ 50).
 
@@ -150,9 +150,9 @@ Bár az áregység nem gyakori forgatókönyv, az árképzés motor támogatja. 
 
 A kereskedelmi megállapodási napló használata esetén minden termékhez értékesítési kereskedelmi megállapodásokat hozhat létre. A Microsoft Dynamics 365 megoldásban három vevői hatókör van az eladási árra vonatkozó kereskedelmi megállapodásokhoz: **Tábla**, **Csoport** és **Minden**. A vevőhatókör határozza meg a vevőket, akikre az adott kereskedelmi megállapodás eladási ár vonatkozik.
 
-A **Tábla** eladási árra vonatkozó kereskedelmi megállapodás egyetlen vevőre vonatkozik, és közvetlenül a kereskedelmi megállapodásban állítják be. Ez a forgatókönyv nem tipikus kiskereskedelmi cég és ügyfél (B2C) közötti helyzet. Azonban ha előfordul, az árképzési motor a **Tábla** kereskedelmi megállapodásokat használja árak meghatározásakor.
+A **Tábla** eladási árra vonatkozó kereskedelmi megállapodás egyetlen vevőre vonatkozik, és közvetlenül a kereskedelmi megállapodásban állítják be. Ez a forgatókönyv nem tipikus cég és ügyfél (B2C) közötti helyzet. Azonban ha előfordul, az árképzési motor a **Tábla** kereskedelmi megállapodásokat használja árak meghatározásakor.
 
-A **Csoport** eladási árra vonatkozó kereskedelmi megállapodás a kiskereskedelmi funkcióval leggyakrabban használt típus. A Commerce keretein kívül a **Csoport** eladási árra vonatkozó kereskedelmi megállapodások egyszerű vevőcsoportra vonatkoznak. Azonban a Commerce alkalmazásban a vevőcsoport fogalma ki lett bővítve úgy, hogy általánosabb árcsoport lett. Árcsoport a következőkhöz kapcsolható: csatorna, fiók, hűségprogram vagy katalógus. Az árcsoportokkal kapcsolatos részletes tudnivalókat lásd az „Árcsoportok” című részben korábban ebben a témakörben.
+A **Csoport** eladási árra vonatkozó kereskedelmi megállapodás a leggyakrabban használt típus. A Commerce keretein kívül a **Csoport** eladási árra vonatkozó kereskedelmi megállapodások egyszerű vevőcsoportra vonatkoznak. Azonban a Commerce alkalmazásban a vevőcsoport fogalma ki lett bővítve úgy, hogy általánosabb árcsoport lett. Árcsoport a következőkhöz kapcsolható: csatorna, fiók, hűségprogram vagy katalógus. Az árcsoportokkal kapcsolatos részletes tudnivalókat lásd az „Árcsoportok” című részben korábban ebben a témakörben.
 
 > [!NOTE]
 > A kereskedelmi megállapodás ár mindig az alapár előtt használatos.
@@ -211,7 +211,7 @@ A Microsoft SQL Server Express alkalmazást gyakran használják a csatorna-adat
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Adót tartalmazó és adó nélküli árak
 
-A Dynamics 365 alkalmazásban eladási árak beállításakor nem adja meg, hogy beállított ár értéke tartalmazza, vagy nem tartalmazza az adót. Az érték egyszerűen csak az ár. Azonban az **Ár tartalmazza az áfát** beállítása a kiskereskedelmi csatornákon lehetővé teszi a csatornák konfigurálását úgy, hogy azok befoglalják vagy kizárják az áfát az árból. Ez a beállítás a csatornára van beállítva, és még egy vállalaton belül is módosulhat.
+A Dynamics 365 alkalmazásban eladási árak beállításakor nem adja meg, hogy beállított ár értéke tartalmazza, vagy nem tartalmazza az adót. Az érték egyszerűen csak az ár. Azonban az **Ár tartalmazza az áfát** beállítása a csatornákon lehetővé teszi a csatornák konfigurálását úgy, hogy azok befoglalják vagy kizárják az áfát az árból. Ez a beállítás a csatornára van beállítva, és még egy vállalaton belül is módosulhat.
 
 Ha befoglalt és kizárt áfával egyaránt dolgozik, nagyon fontos az árak megfelelő beállítása, mert teljes összeg, amelyet a vevő fizet, változni fog, ha az **Ár tartalmazza az áfát** beállítása a csatornán módosul.
 
@@ -219,15 +219,15 @@ Ha befoglalt és kizárt áfával egyaránt dolgozik, nagyon fontos az árak meg
 
 Az árak kiszámítására egyetlen árképzési motor használatos az összes csatornán: hívásközpont, kiskereskedelmi üzlet és online áruházak. Ez segít abban, hogy megvalósíthatók legyenek az egyesített kereskedelmi esetek.
 
-A kiskereskedelmi árképzést úgy tervezték, hogy kiskereskedelmi entitásokkal működjön, nem kiskereskedelmi entitások helyett. Konkrétabban arra tervezték, hogy az árakat üzlet, nem pedig raktár szerint állítsa be.
+Az árképzést úgy tervezték, hogy kiskereskedelmi entitásokkal működjön, nem kiskereskedelmi entitások helyett. Konkrétabban arra tervezték, hogy az árakat üzlet, nem pedig raktár szerint állítsa be.
 
-A kiskereskedelmi árképzés motor **nem támogatja** a következő árképzési funkciókat:
+Az árképzési motor **nem támogatja** a következő árképzési funkciókat:
 
-- Az árak beállítása hely vagy hely és raktári tárolási dimenziók szerint nem támogatott. Ha a kereskedelmi megállapodásokban csak a Hely dimenziót adja meg, akkor a kiskereskedelmi árképzés figyelmen kívül hagyja a helyet, és a kereskedelmi megállapodást minden helyre alkalmazza. Ha a hely és raktár módot is megadja, akkor a viselkedés nem definiált/nem tesztelt, mert várható, hogy a kiskereskedők az áruház árcsoportjai segítségével szabályozzák az egyes üzletek/raktárak árait.
+- Az árak beállítása hely vagy hely és raktári tárolási dimenziók szerint nem támogatott. Ha a kereskedelmi megállapodásokban csak a Hely dimenziót adja meg, akkor az árképzési motor figyelmen kívül hagyja a helyet, és a kereskedelmi megállapodást minden helyre alkalmazza. Ha a hely és raktár módot is megadja, akkor a viselkedés nem definiált/nem tesztelt, mert várható, hogy a kiskereskedők az áruház árcsoportjai segítségével szabályozzák az egyes üzletek/raktárak árait.
 - Az attribútumalapú árképzés nem támogatott.
 - A szállítói engedmény áthárítása nem támogatott.
 
-Emellett **csak** a kiskereskedelmi árképzés motor támogatja a következő árképzési funkciókat:
+Emellett **csak** az árképzés motor támogatja a következő árképzési funkciókat:
 
 - Az ár a termékdimenziókon alapul, a következő sorrendben: a leginkább specifikus változatártól a legkevésbé specifikus változatárig, majd az alaptermékárig. A két termékdimenzió (például szín és méret) használatával beállított ár a csak egy termékdimenzió használatával beállított ár (például a méret) előtt használatos.
 - Ugyanaz az árcsoport használható az árképzés és az engedmények kezelésére.

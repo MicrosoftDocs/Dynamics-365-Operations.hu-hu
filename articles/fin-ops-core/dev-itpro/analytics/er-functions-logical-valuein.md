@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb9a387c8b68d0da4dd485116089f1cf4c5ab72c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915970"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041699"
 ---
 # <a name="VALUEIN">VALUEIN ER-függvény</a>
 
@@ -33,7 +33,7 @@ A `VALUEIN` függvény azt határozza meg, hogy a megadott bemenet megegyezik-e 
 
 ## <a name="syntax"></a>Szintaxis
 
-```
+```vb
 VALUEIN (input, list, list item expression)
 ```
 
@@ -61,7 +61,7 @@ Az eredményül kapott *Logikai* érték.
 
 Általában a `VALUEIN` függvény **VAGY** feltételek egy csoportjára fordul le.
 
-```
+```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
 ```
 
@@ -94,7 +94,7 @@ A következő adatforrás megadása a modell-hozzárendelésben:
 
 Amikor adatforrás van meghívva, amely a `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` kifejezésben van beállítva, a következő SQL-utasítás generálódik, hogy az Intrastat-tábla szűrt rekordjait adja vissza:
 
-```
+```vb
 select … from Intrastat
 exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
@@ -111,7 +111,7 @@ A következő adatforrás megadása a modell-hozzárendelésben:
 
 Amikor adatforrás van meghívva, amely a `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` kifejezésként van beállítva, a végső SQL-utasítás tartalmazza a következő feltételt.
 
-```
+```vb
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 

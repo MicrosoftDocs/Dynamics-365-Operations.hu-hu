@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026134"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042827"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész – Adatmodell előkészítése)
 
@@ -36,10 +36,14 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Hozzáférés a Microsoft által biztosított konfigurációk listájához
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Győződjön meg róla, hogy a Litware, Inc. szolgáltató elérhető és aktívként megjelölt legyen.  
+
+    Győződjön meg róla, hogy a Litware, Inc. szolgáltató elérhető és aktívként megjelölt legyen.  
+
 2. Válassza ki a Litware, Inc. szolgáltatót.
 3. Kattintson a Tárházak gombra.
-    * Ha már létezik egy „Üzemi erőforrások” típusú tár, hagyja ki az aktuális altevékenység többi lépését.  
+
+    Ha már létezik egy „Üzemi erőforrások” típusú tár, hagyja ki az aktuális altevékenység többi lépését.  
+
 4. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
 5. A Konfiguráció tárházának típusa mezőbe írja be az „Üzemi erőforrások” szöveget.
 6. Kattintson a Tárház létrehozása lehetőségre.
@@ -51,9 +55,13 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 3. Kattintson a Szűrők megjelenítése pontra.
 4. Kattintson a Megnyitás gombra.
 5. A fastruktúrában válassza ki a „Vevői számlamodell” lehetőséget.
-    * Válassza ki a „Vevői számlamodell modellkonfigurációt” az importáláshoz.  
+
+    Válassza ki a „Vevői számlamodell modellkonfigurációt” az importáláshoz.  
+
 6. Kattintson az Importálás gombra.
-    * Kattintson az Importálás gombra a kijelölt konfiguráció 1-es verziójának esetében.  
+
+    Kattintson az Importálás gombra a kijelölt konfiguráció 1-es verziójának esetében.  
+
 7. Kattintson az Igen gombra.
 8. Zárja be a lapot.
 9. Zárja be a lapot.
@@ -65,6 +73,5 @@ A vevői számlamodellhez saját konfigurációt fog létrehozni, a Microsoft á
 1. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
 2. Az Új mezőbe írja be a következőt: „Származtatás innen: Vevői számlamodell, Microsoft”.
 3. A Név mezőbe írja be a „Vevői számlamodell (egyéni)” szöveget.
-    * Vevői számlamodell (egyéni)  
 4. Kattintson a Konfiguráció létrehozása lehetőségre.
 

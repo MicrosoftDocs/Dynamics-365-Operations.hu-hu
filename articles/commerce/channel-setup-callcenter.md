@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ec42ab920868f541eeac54556f4f24cb1efaa3a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002450"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057879"
 ---
 # <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 
@@ -33,7 +33,7 @@ Ez a témakör azt mutatja be, hogyan lehet egy új hívásközpont csatornát l
 
 ## <a name="overview"></a>Áttekintés
 
-A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta kiskereskedelmi csatorna, amelyet az alkalmazásban lehet megadni. Ha meghatároz egy csatornát a hívásközpont entitások számára, azzal a rendszer képes lesz specifikus adatok és megrendelések feldolgozásához tartozó alapértelmezéseket értékesítési rendelésekhez kötni. A vállalat több hívásközponti csatornát is meghatározhat a Commerce rendszerben. 
+A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta csatorna, amelyet az alkalmazásban lehet megadni. Ha meghatároz egy csatornát a hívásközpont entitások számára, azzal a rendszer képes lesz specifikus adatok és megrendelések feldolgozásához tartozó alapértelmezéseket értékesítési rendelésekhez kötni. A vállalat több hívásközponti csatornát is meghatározhat a Commerce rendszerben. 
 
 Új hívásközpont-csatorna létrehozása előtt győződjön meg arról, hogy végrehajtotta a [Csatornbeállítás előfeltételeit](channels-prerequisites.md).
 

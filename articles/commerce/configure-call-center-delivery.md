@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022741"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057810"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Szállítási módok és költségek beállítása a hívásközponthoz
 
@@ -66,7 +66,7 @@ A költségek úgy is beállíthatók, hogy egy adott szállítási módra, egy 
 
 A **Sorok** szakaszban szükség esetén megadhat egy vagy több költséget pénznemenként. A költségeket hozzá kell kapcsolni egy költségkódhoz, amely meghatározza a költségre vonatkozó pénzügyi feladási szabályokat. A **Kategória** mező segítségével határozható meg, hogyan történik a költségek számítása. Például ha a vevőknek 9,95 USD fix díjat kell felszámítani, hogy a megrendelésük kiszállítása egy adott szállítási móddal történjen, használja a **Rögzített** kategóriát. Ha a vállalat úgy dönt, hogy a rendelés végösszegének bizonyos százalékát terheli a vevőkre a szállítási költségek fedezéséhez, használja a **Százalék** kategóriát. A vevőknek felszámított tényleges költség a **Költségek értéke** mezőben szerepel.
 
-A kiskereskedelmi vállalatok gyakran állítanak be többszintű költségeket. Ebben az esetben a vevők a rendelés értéke alapján fizetnek a kiszállításért. Többszintű költségek beállításához adja meg az értékeket az **Összeg alsó határa** és az **Összeg felső határa** mezőkben, illetve definiálja magát a költséget a **Költségek értéke** mezőben. Például olyan rendeléseknél, amelyeknek az értéke kisebb, mint 50 USD, a kiskereskedő 5,95 USD költséget számít fel a szárazföldi szállításért. Olyan rendeléseknél, amely értéke egyenlő vagy nagyobb, mint 50 USD, de kevesebb, mint 100 USD, a kiskereskedő 7,95 USD költséget számít fel. Végül azokat a rendeléseket, amelyek értéke egyenlő vagy nagyobb, mint 100 USD, a kiskereskedő ingyenesen kiszállítja. Az alábbi ábra az említett költségek konfigurációját mutatja be.
+A vállalatok gyakran állítanak be többszintű költségeket. Ebben az esetben a vevők a rendelés értéke alapján fizetnek a kiszállításért. Többszintű költségek beállításához adja meg az értékeket az **Összeg alsó határa** és az **Összeg felső határa** mezőkben, illetve definiálja magát a költséget a **Költségek értéke** mezőben. Például olyan rendeléseknél, amelyeknek az értéke kisebb, mint 50 USD, a kiskereskedő 5,95 USD költséget számít fel a szárazföldi szállításért. Olyan rendeléseknél, amely értéke egyenlő vagy nagyobb, mint 50 USD, de kevesebb, mint 100 USD, a kiskereskedő 7,95 USD költséget számít fel. Végül azokat a rendeléseket, amelyek értéke egyenlő vagy nagyobb, mint 100 USD, a kiskereskedő ingyenesen kiszállítja. Az alábbi ábra az említett költségek konfigurációját mutatja be.
 
 ![Példa rögzített többszintű költségekre](media/fixedtieredcharges.png)
 
