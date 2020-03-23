@@ -8,10 +8,8 @@
           items:
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Regisztrálás az előzetes előfizetésekre
+            - name: Regisztrálás az előfizetések előnézetére
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Vevő fizetési információi (előzetes verzió)
-              href: accounts-receivable/payment-insights-overview.md
             - name: Egyverziós szolgáltatásfrissítések
               items:
                 - name: Egyverziós szolgáltatásfrissítések áttekintése
@@ -26,6 +24,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+                - name: Frissítések alkalmazása helyszíni telepítésekhez
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Szolgáltatásfrissítések konfigurálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Szolgáltatásfrissítések szüneteltetése
@@ -70,20 +70,24 @@
                   items:
                     - name: Új vagy módosult elemek a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.10-es verzió (2020. május)
+                      href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9-es verzió (2020. április)
                       href: get-started/whats-new-changed-10-0-9.md
                     - name: Finance 10.0.8-as verzió (2020. február)
                       href: get-started/whats-new-changed-10-0-8.md
-                    - name: Finance 10.0.7-es verzió (2020. január)
-                      href: get-started/whats-new-changed-10-0-7.md
-                - name: Eltávolított vagy elavult funkciók
+            - name: Eltávolított vagy elavult funkciók
+              items:
+                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-                - name: Az AX 2012 elhalasztott funkciói
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: A helyszíni telepítésben nem megvalósított funkciók
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: A helyszíni telepítésekben nem megvalósított funkciók
+              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentum-erőforrások
               items:
                 - name: Súgórendszer
@@ -312,6 +316,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Vevői kifizetések díjainak kialakítása
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Vevő fizetési információi (előzetes verzió)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Vevői feladási profilok
               href: accounts-receivable/customer-posting-profiles.md
             - name: Vevők másolása megosztott számsorozatok használatával
@@ -1794,6 +1800,8 @@
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: HSN-kódok és szolgáltatáskönyvelési kódok meghatározása
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                        - name: Adókulcstípus létrehozása
+                          href: localizations/apac-ind-GST-create-tax-rate-type.md
                         - name: Fő számlák létrehozása a GST feladási típushoz
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: Adókiegyenlítési időszak létrehozása
@@ -1916,23 +1924,24 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: GSTR-jelentés adatainak létrehozása adóbevallásokhoz
                       href: localizations/apac-ind-GST-tax-returns.md
-                    - name: Adófizetés-lekérdezés
+                    - name: Adóügyi lekérdezés
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Adómotor
                   items:
                     - name: Adómotor áttekintése
                       href: general-ledger/tax-engine.md
-                      items:
-                        - name: Adózási összetevők létrehozása
-                          href: localizations/tax-engine-create-tax-component.md
-                        - name: Importálás konfigurálása
-                          href: general-ledger/tax-engine-import-configuration.md
-                        - name: Adómotor alkalmazhatósága
-                          href: general-ledger/tax-engine-applicability.md
-                        - name: Adómotor integrációja
-                          href: general-ledger/tax-engine-integration.md
-                        - name: Adómotor kiterjesztése
-                          href: general-ledger/extend-tax-engine-configurations.md
+                    - name: Konfigurálás importálása
+                      href: general-ledger/tax-engine-import-configuration.md
+                    - name: Továbbfejlesztett képletszerkesztő
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                    - name: Adómotor alkalmazhatósága
+                      href: general-ledger/tax-engine-applicability.md
+                    - name: Adózási összetevők létrehozása
+                      href: localizations/tax-engine-create-tax-component.md
+                    - name: Adómotor integrációja
+                      href: general-ledger/tax-engine-integration.md
+                    - name: Adómotor kiterjesztése
+                      href: general-ledger/extend-tax-engine-configurations.md
                 - name: Adóküszöbértékekre vonatkozó GYIK
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: Készletmozgatások
@@ -2353,54 +2362,60 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Előlegkezelés
                       href: localizations/rus-prepayments-management.md
-                    - name: Bejövő ÁFA visszaállítása
+                    - name: Bejövő áfa visszaállítása
                       href: localizations/rus-incoming-VAT-restoring.md
                 - name: Tárgyi eszközök
                   items:
-                    - name: Tárgyi eszközök kezelése
-                      href: localizations/rus-fixed-assets.md
                     - name: Tárgyi eszközök áttekintése
-                      hfre: localizations/rus-fixed-assets-overview.md
+                      href: localizations/rus-fixed-assets-overview.md
                     - name: Tárgyi eszközök beállítása
-                      href: localizations/rus-set-up-fixed-assets.md
-                    - name: Tárgyi eszközök beszerzése és üzembe helyezése
-                      href: localizations/rus-fixed-asset-acquisition.md
-                    - name: Tárgyieszköz-beszerzések regisztrálása
-                      href: localizations/rus-register-acquisition.md
-                    - name: Tárgyieszköz-beszerzések költségvetésnaplóinak létrehozása és feladása
-                      href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                    - name: Tárgyieszköz-bérlet és bérleti tranzakcióból származó visszáru létrehozása
-                      href: localizations/rus-fixed-asset-leasing.md
-                    - name: Tárgyieszköz-számbavétel
-                      href: localizations/rus-fixed-assets-counting.md
-                    - name: Tárgyi eszközök devizaátértékelése
-                      href: localizations/rus-fixed-asset-currency-revaluation.md
-                    - name: Tárgyi eszközök karbantartása
-                      href: localizations/rus-maintain-fixed-assets.md
-                    - name: Tárgyi eszközök költségének és értékcsökkenésének újraértékelése
-                      href: localizations/rus-fixed-assets-revaluation.md
-                    - name: Részleges tárgyieszköz-szétszerelés (felszámolás)
-                      href: localizations/rus-fixed-assets-disassembly.md
-                    - name: 'Eszközök eladása, kivezetése és leírása'
-                      href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-                    - name: Rögzített tárgyieszköz-helyek és -számozás beállítása
-                      href: localizations/rus-fixed-assets-locations-numbering.md
-                    - name: Értékcsökkenés beállítása
-                      href: localizations/rus-depreciation-setup.md
-                    - name: Értékcsökkenés módjai
-                      href: localizations/rus-depreciation-methods.md
-                    - name: További értékcsökkenések
-                      href: localizations/rus-bonus-depreciation.md
-                    - name: Értékcsökkenés számítása
-                      href: localizations/rus-depreciation-calculation.md
-                    - name: Tárgyi eszközök átvitele
-                      href: localizations/rus-fixed-asset-transfer.md
-                    - name: Egységes nyomtatási űrlapok a tárgyi eszközökhöz
-                      href: localizations/printing-forms-fixed-assets.md
-                    - name: Munkaruházat/különleges felszerelés könyvelése (Oroszország)
-                      href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: Érték nélküli tárgyi eszközök (Oroszország)
-                      href: localizations/rus-not-valuable-assets.md
+                      items:
+                        - name: Tárgyi eszközök beállítása
+                          href: localizations/rus-set-up-fixed-assets.md
+                        - name: Értékcsökkenés beállítása
+                          href: localizations/rus-depreciation-setup.md
+                        - name: Értékcsökkenés módjai
+                          href: localizations/rus-depreciation-methods.md
+                        - name: Rendkívüli értékcsökkenések
+                          href: localizations/rus-bonus-depreciation.md
+                        - name: Rögzített tárgyieszköz-helyek és -számozás beállítása
+                          href: localizations/rus-fixed-assets-locations-numbering.md
+                    - name: A tárgyi eszközök használata
+                      items:
+                        - name: Tárgyi eszközök létrehozása
+                          href: localizations/rus-fixed-assets.md
+                        - name: Tárgyieszköz-beszerzések regisztrálása
+                          href: localizations/rus-register-acquisition.md
+                        - name: Tárgyi eszközök beszerzése és üzembe helyezése
+                          href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Értékcsökkenés számítása
+                          href: localizations/rus-depreciation-calculation.md
+                        - name: Részleges tárgyieszköz-szétszerelés (felszámolás)
+                          href: localizations/rus-fixed-assets-disassembly.md
+                        - name: 'Eszközök eladása, kivezetése és leírása'
+                          href: localizations/rus-sell-dispose-write-off-fixed-assets.md
+                        - name: Tárgyieszköz-bérlet és bérleti tranzakcióból származó visszáru létrehozása
+                          href: localizations/rus-fixed-asset-leasing.md
+                        - name: Tárgyi eszközök karbantartása
+                          href: localizations/rus-maintain-fixed-assets.md
+                        - name: Tárgyieszköz-számbavétel
+                          href: localizations/rus-fixed-assets-counting.md
+                        - name: Tárgyi eszközök devizaátértékelése
+                          href: localizations/rus-fixed-asset-currency-revaluation.md
+                        - name: Tárgyi eszközök költségének és értékcsökkenésének újraértékelése
+                          href: localizations/rus-fixed-assets-revaluation.md
+                        - name: Tárgyieszköz-beszerzések költségvetésnaplóinak létrehozása és feladása
+                          href: localizations/rus-post-budget-fixed-asset-acquisition.md
+                        - name: Tárgyi eszközök átvitele
+                          href: localizations/rus-fixed-asset-transfer.md
+                    - name: Nem értékes tárgyi eszközök és munkaruházat
+                      items:
+                        - name: Nem értékes tárgyi eszközök (Oroszország)
+                          href: localizations/rus-not-valuable-assets.md
+                        - name: Munkaruházat/különleges felszerelés könyvelése (Oroszország)
+                          href: localizations/rus-working-clothes-instruments-accounting.md
+                        - name: Egységes nyomtatási űrlapok a tárgyi eszközökhöz
+                          href: localizations/printing-forms-fixed-assets.md
                 - name: Kötelezettségek és kinnlevőségek
                   items:
                     - name: Jóváírás-helyesbítések (Oroszország)
@@ -2423,10 +2438,18 @@
                           href: localizations/rus-agreements.md
                         - name: Megállapodások beállítása és létrehozása
                           href: localizations/rus-set-up-and-create-agreements.md
-                        - name: Megállapodásokkal kapcsolatos tranzakciók regisztrálása
+                        - name: Szerződésekkel kapcsolatos tranzakciók regisztrálása
                           href: localizations/rus-register-transactions-with-reference-to-agreements.md
-                        - name: Megállapodásokkal kapcsolatos lekérdezések és jelentések
+                        - name: Szerződésekkel kapcsolatos lekérdezések és jelentések
                           href: localizations/rus-inquiries-reports-agreements.md
+                    - name: Közvetítő útján lebonyolított tranzakciók
+                      items:
+                        - name: Közvetítő útján lebonyolított tranzakciók áttekintése
+                          href: localizations/rus-transactions-through-intermediary.md
+                        - name: Beszerzések jutalékkal
+                          href: localizations/rus-purchases-on-commission.md
+                        - name: Értékesítés jutalékkal
+                          href: localizations/rus-sales-on-commission.md
                 - name: Készlet
                   items:
                     - name: Szállítótól úton lévő áruk
@@ -2533,6 +2556,8 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: Fizetési formátumok importálása
                   href: localizations/emea-swe-payment-formats-import.md
+                - name: Áfafizetéssel kapcsolatos jelentés Svédország esetén
+                  href: localizations/emea-swe-sales-tax-payment-report-sweden.md
             - name: Svájc
               items:
                 - name: Svájc – áttekintés
@@ -2561,20 +2586,24 @@
                   href: localizations/united-kingdom.md
                 - name: Építőipari séma
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Jóváírás létrehozása a kiegyenlítési engedményen
-                  href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó beszerzési rendelés létrehozása
-                  href: localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó értékesítési rendelés létrehozása
-                  href: localizations/tasks/gb-00002-sales-order.md
-                - name: A fordított áfafizetésnél alkalmazott cikkáfacsoportok beállítása
-                  href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Fordított áfacikkcsoportok, -szabályok és -paraméterek beállítása'
-                  href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
-                  href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Fordított fizetés
+                  items:
+                    - name: Jóváírás létrehozása a kiegyenlítési engedményen
+                      href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+                    - name: Fordított áfa hatálya alá tartozó cikkeket tartalmazó beszerzési rendelés létrehozása
+                      href: localizations/tasks/purchase-order-reverse-charge-vat.md
+                    - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó értékesítési rendelés létrehozása
+                      href: localizations/tasks/gb-00002-sales-order.md
+                    - name: A fordított áfafizetésnél alkalmazott cikkáfacsoportok beállítása
+                      href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+                    - name: 'Fordított áfacikkcsoportok, -szabályok és -paraméterek beállítása'
+                      href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+                    - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
+                      href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
                 - name: Adó digitalizálása az áfára vonatkozóan
                   href: localizations/emea-gbr-mtd-vat-integration.md
+                - name: Kifizetési gyakorlatok statisztikai adataival kapcsolatos jelentés
+                  href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Amerikai Egyesült Államok
               items:
                 - name: Egyesült Államok – áttekintés
@@ -3141,6 +3170,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md
                 - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                 - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben

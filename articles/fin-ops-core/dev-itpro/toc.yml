@@ -14,6 +14,8 @@
               items:
                 - name: Új vagy módosult elemek a Platform frissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platform update 34 (2020. május)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (2020. április)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (2020. február)
@@ -52,7 +54,7 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Az AX 2012 elhalasztott funkciói
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: A helyszíni telepítésben nem megvalósított funkciók
+            - name: A helyszíni telepítésekben nem megvalósított funkciók
               href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -146,47 +148,73 @@
                   items:
                     - name: Adatintegráció a Common Data Service használatával – áttekintés
                       href: data-entities/data-integration-cds.md
-                    - name: 'Szinkronizált, kétirányú integráció'
+                    - name: Kettős írás integrációja
                       items:
                         - name: Kettős írás kezdőlapja
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Kettős írás – áttekintés
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Szervezeti hierarchia a Common Data Service megoldásban
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: Vállalati integráció
+                        - name: Kettős írás beállítása
                           items:
-                            - name: Vállalat fogalma a Common Data Services szolgáltatásban
-                              href: data-entities/dual-write/company-data.md
-                            - name: Rendszerindítás vállalati adatokkal
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: Integrált vevői alapadat
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: Integrált főkönyv
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Egységes terméktapasztalat
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Szállítói integráció
+                            - name: A Kettős írás rendszerkövetelményei
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: A kettős írás beállításának támogatott esetei
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: Koncepciómegfeleltetések alkalmazások között
                           items:
-                            - name: Integrált szállítói alapadat
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: Váltás a szállítói arculatok között
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: Integrált telephelyek és raktárak
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: Integrált adózási alapadat
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: Kezdeti szinkronizálás
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: Az adatintegrálás hibaelhárítása
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: 'Aszinkron, kétirányú integráció'
+                            - name: Szervezeti hierarchia a Common Data Service megoldásban
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Vállalati integráció
+                              items:
+                                - name: Vállalat fogalma a Common Data Services szolgáltatásban
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Rendszerindítás vállalati adatokkal
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Integrált vevői alapadat
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Termékintegráció
+                              items:
+                                - name: Egységesített terméktapasztalat
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrált telephelyek és raktárak
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Pénzügyi és adóügyi adatok
+                              items:
+                                - name: A pénzügyi és adóügyi hivatkozási adatokhoz való hozzáférés
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrált főkönyv
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrált adózási alapadat
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Szállítói integráció
+                              items:
+                                - name: Integrált szállítói alapadat
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Váltás a szállítói arculatok között
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Potenciális ügyfelek készpénzre váltása a kettős írás szolgáltatásban
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Házon belüli eszközök szervizelése
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrált dolgozó, feladat és beosztás'
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: A kettős írás támogatása
+                          items:
+                            - name: A Field Service- és Project Service Automation-megoldások támogatása
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Kezdeti szinkronizálás
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Az adatintegrálás hibaelhárítása
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integráció a Power Platform Data Integrator szolgáltatással
                       items:
-                        - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
+                        - name: Potenciális vevő készpénzre váltási eset konfigurálása
                           items:
                             - name: A potenciális vevők készpénzre váltása
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: A Sales-számlák közvetlen szinkronizálása az ügyfelekre Finance and Operations
+                            - name: A Sales-partnerek közvetlen szinkronizálása a Finance and Operations-ügyfelekhez
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                             - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
@@ -332,11 +360,13 @@
                   href: database/import-database.md
                 - name: Adatbázis időponthoz kötött visszaállítása
                   href: database/database-point-in-time-restore.md
+                - name: Termelési adatbázis időhöz kötött visszaállítása tesztkörnyezetté
+                  href: database/database-pitr-prod-sandbox.md
             - name: Oktatóanyagok
               items:
                 - name: Oktatási célú frissítés
                   href: database/dbmovement-scenario-general-refresh.md
-                - name: Keressen hibákat a termelési adatbázis egyik példányában
+                - name: Hibakeresés a termelési adatbázis másolatában
                   href: database/dbmovement-scenario-debugdiag.md
                 - name: A szabványos felhasználói tesztelési (UAT) adatbázis egy példányának exportálása
                   href: database/dbmovement-scenario-exportuat.md
@@ -430,6 +460,8 @@
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
                       href: deployment/deploy-retail-onprem.md
+                    - name: Ugyanazon AD FS-példány újrahasznosítása több környezet esetén
+                      href: deployment/onprem-reuseadfs.md
                 - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integráció helyszíni környezetekkel
@@ -970,24 +1002,34 @@
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Módszertanok létrehozása és frissítése
               href: lifecycle-services/create-methodology.md
-            - name: Üzletifolyamat-modellező
-              href: lifecycle-services/bpm-overview.md
-            - name: Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: 'Üzletifolyamat-modellező könyvtárak létrehozása, szerkesztése és böngészése'
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: Feladatok végrehajtása az üzletifolyamat-modellezőben
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: Tevékenységi diagramok felhasználása a BPM-könyvtárakban
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: BPM-könyvtárak és az Azure DevOps szinkronizálása
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: Felhasználói elfogadási tesztkönyvtárak létrehozása a feladat-útmutatók és a BPM segítségével
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Az üzletifolyamat-modellező folyamatábrái
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: Egyéni üzleti folyamatok feltöltése az üzletifolyamat-modellezőbe
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Üzletifolyamat-modellező (BPM)
+              items:
+                - name: Üzletifolyamat-modellező (BPM) – áttekintés
+                  href: lifecycle-services/bpm-overview.md
+                - name: Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Üzletifolyamat-modellezői könyvtárak létrehozása, szerkesztése és böngészése'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Feladatok végrehajtása az üzletifolyamat-modellezőben
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Tevékenységi diagramok felhasználása a BPM-könyvtárakban
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: BPM-könyvtárak és az Azure DevOps szinkronizálása
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Felhasználói elfogadási tesztkönyvtárak létrehozása a feladat-útmutatók és a BPM segítségével
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Az üzletifolyamat-modellező folyamatábrái
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Egyéni üzleti folyamatok feltöltése az üzletifolyamat-modellezőbe
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Szolgáltatáskérések
+              items:
+                - name: Felhőműveletek és szervizelés
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Szolgáltatáskérések küldése a Dynamics szolgáltatásmérnöki csapatához
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Tervezett karbantartási időtartamra vonatkozó GYIK
+                  href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Megfigyelés és diagnosztika
               href: lifecycle-services/monitoring-diagnostics.md
             - name: Környezeti szolgáltatások újraindítása
@@ -1282,15 +1324,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
               href: lifecycle-services/21vianet-support.md
-            - name: Igénylések benyújtása a Dynamics Service mérnöki csapatához
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: 'Technikai támogatás beállítása ehhez: Finance and Operations'
+            - name: Technikai támogatás beállítása a Finance and Operations szolgáltatáshoz
               href: lifecycle-services/support-experience.md
-            - name: Tervezett karbantartási időtartamra vonatkozó GYIK
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Felhőműveletek és szervizelés
-              href: lifecycle-services/cloud-operations-servicing.md
-            - name: Támogatási Finance and Operations tapasztalatok kezelése
+            - name: A Finance and Operations támogatásával kapcsolatos tapasztalatok kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Rendszerfelügyelet
           items:
