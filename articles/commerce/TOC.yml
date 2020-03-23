@@ -22,6 +22,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Frissítések alkalmazása helyszíni telepítésekhez
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Szolgáltatásfrissítések konfigurálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Szolgáltatásfrissítések szüneteltetése
@@ -84,19 +86,19 @@
                   items:
                     - name: Új vagy módosult elemek a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.10-es verzió (2020. május)
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9-es verzió (2020. április)
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce 10.0.8-as verzió (2020. február)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Retail 10.0.7-es verzió (2020. január)
-                      href: get-started/whats-new-10-0-7.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                 - name: Az AX 2012 elhalasztott funkciói
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: A helyszíni telepítésben nem megvalósított funkciók
+                - name: A helyszíni telepítésekben nem megvalósított funkciók
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
@@ -214,7 +216,7 @@
                   href: set-up-activation-accounts-validate-devices-hq.md
                 - name: Pénztáreszköz aktiválása
                   href: dev-itpro/retail-device-activation.md
-                - name: A Cloud pénztár biztonságossá tétele megosztott környezetekben
+                - name: A felhőalapú pénztár biztonságossá tétele megosztott környezetekben
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: A Retail Hardware Station konfigurálása és telepítése
                   href: retail-hardware-station-configuration-installation.md
@@ -332,10 +334,12 @@
                   items:
                     - name: Az MPOS és a felhőalapú pénztár közötti választás
                       href: MPOS-or-CPOS.md
-                    - name: Online és offline pénztár műveletek
+                    - name: Online és offline pénztárműveletek
                       href: pos-operations.md
-                    - name: Személyre szabott Modern pénztár eszköz aktiválása
+                    - name: Testreszabott Modern POS eszköz aktiválása
                       href: dev-itpro/retail-POS-activation-changes.md
+                    - name: Azure Active Directory-hitelesítés engedélyezése a pénztári bejelentkezéshez
+                      href: aad-pos-logon.md
                     - name: Az MPOS és felhőalapú pénztár bemutató adatképernyő-elrendezései
                       href: demo-data.md
                     - name: Termék és vevő keresése a pénztárban
@@ -368,6 +372,8 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Perifériák csatlakoztatása a pénztárhoz
                           href: define-maintain-channel-clients-registers-hw-stations.md
+                        - name: Pénztárperifériák és szolgáltatások állapot-ellenőrzése
+                          href: pos-healthcheck.md
                     - name: Képernyő-elrendezések
                       items:
                         - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
@@ -518,7 +524,7 @@
                       href: create-variant-group.md
                 - name: Új termék létrehozása
                   items:
-                    - name: Új termékáttekintés létrehozása
+                    - name: Új termék létrehozása a Commerce szolgáltatásban
                       href: create-new-product.md
                     - name: Termékkategóriák és termékek kezelése
                       href: category-management-product-creation.md
@@ -570,11 +576,13 @@
                   href: retail-shipping-discount.md
                 - name: Kuponok beállítása
                   href: retail-coupons.md
+                - name: Engedmények megjelenítése a pénztárban
+                  href: discounts-pos.md
                 - name: Árra vonatkozó jelentések
                   href: price-report.md
-                - name: Csatornaspecifikus kereskedelmi megállapodások létrehozása
+                - name: Csatornaspecifikus kereskedelmi szerződések létrehozása
                   href: tasks/base-price-trade-agreements.md
-                - name: Kereskedelmi megállapodások létrehozása kategóriaárazási szabályok segítségével
+                - name: Kereskedelmi szerződések létrehozása kategóriaárazási szabályok segítségével
                   href: tasks/category-pricing-rules-trade-agreements.md
             - name: Javaslatok
               items:
@@ -582,8 +590,6 @@
                   href: product-recommendations.md
                 - name: ADLS engedélyezése Dynamics 365 Commerce környezetben
                   href: enable-ADLS-environment.md
-                - name: Termékajánlat listáinak hozzáadása az e-Commerce platform oldalaihoz
-                  href: add-reco-list-to-page.md
                 - name: Termékajánlatok engedélyezése
                   href: enable-product-recommendations.md
                 - name: Személyre szabott ajánlatok
@@ -592,21 +598,23 @@
                       href: personalized-recommendations.md
                     - name: Személyre szabott termékajánlatok kikapcsolása
                       href: personalization-gdpr.md
-                - name: Válogatott termékek ajánlati listájának létrehozása
-                  href: create-editorial-recommendation-lists.md
-                - name: AI-ML-alapú termékajánlás eredményeinek kezelése
+                - name: Ajánlatlisták hozzáadása egy e-Commerce-webhelyhez
+                  href: add-reco-list-to-page.md
+                - name: Pénztári gyakorlatok
+                  items:
+                    - name: Termékajánlatok hozzáadása a pénztárnál
+                      href: product.md
+                    - name: Ajánlatok hozzáadása a tranzakció képernyőjéhez
+                      href: add-recommendations-control-pos-screen.md
+                - name: AI-ML-alapú termékajánlás eredményeinek kiigazítása
                   href: modify-product-recommendation-results.md
-                - name: Termékajánlatok beszerzése bemutatóadatok használatával
+                - name: Válogatott termékajánlatok manuális létrehozása
+                  href: create-editorial-recommendation-lists.md
+                - name: Ajánlatok létrehozása bemutatóadatok használatával
                   href: product-recommendations-demo-data.md
                 - name: Termékajánlatok GYIK-je
                   href: faq-recommendations.md
-                - name: Pénztári tapasztalatok
-                  items:
-                    - name: Termékajánlatok a pénztárnál
-                      href: product.md
-                    - name: Ajánlatok vezérlőjének hozzáadása a pénztáreszközök tranzakciós képernyőjéhez
-                      href: add-recommendations-control-pos-screen.md
-            - name: Értékelések és vélemények
+            - name: Minősítések és értékelések
               items:
                 - name: Minősítések és értékelések áttekintése
                   href: ratings-reviews-overview.md
@@ -650,12 +658,14 @@
                       href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                     - name: Termékcsomagok létrehozása beszerzési rendelésekhez
                       href: tasks/create-product-packages-purchase-orders.md
-        - name: Saját rendelések kezelése
+        - name: Rendelések kezelése
           items:
             - name: Értékesítési rendelések
               items:
                 - name: Hívásközponti rendelés létrehozása
                   href: tasks/create-call-center-orders.md
+                - name: Szállítási mód módosítása a pénztárban
+                  href: POS-change-delivery-mode.md
             - name: Felosztott rendeléskezelés
               items:
                 - name: DOM áttekintése
@@ -768,8 +778,14 @@
                   href: associate-site-online-store.md
                 - name: Robots.txt fájlok kezelése
                   href: manage-robots-txt-files.md
-                - name: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
+                - name: URL-átirányítások tömeges feltöltése
+                  href: upload-bulk-redirects.md
+                - name: B2C-bérlő beállítása a Commerce alkalmazásban
+                  href: set-up-B2C-tenant.md
+                - name: Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
                   href: custom-pages-user-logins.md
+                - name: Több B2C-bérlő konfigurálása Commerce-környezetben
+                  href: configure-multi-B2C-tenants.md
                 - name: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
                   href: add-cdn-support.md
                 - name: Helyalapú áruházészlelés engedélyezése
@@ -862,8 +878,22 @@
                   items:
                     - name: Webhely-navigáció testreszabása
                       href: customize-site-navigation.md
-                    - name: WEboldal URL-címének létrehozása
+                    - name: Weboldal URL-címének létrehozása
                       href: create-page-URL.md
+            - name: Digitális eszközök kezelése
+              items:
+                - name: Digitális eszközkezelés – áttekintés
+                  href: dam-overview.md
+                - name: Képek feltöltése
+                  href: dam-upload-images.md
+                - name: Videó feltöltése
+                  href: dam-upload-video.md
+                - name: Fájlok feltöltése képek és videók kivételével
+                  href: dam-upload-files.md
+                - name: Képek körülvágása
+                  href: dam-crop-images.md
+                - name: Képfókuszpontok testreszabása
+                  href: dam-custom-focal-point.md
             - name: Webhely megfelelőségének biztosítása
               items:
                 - name: Megfelelőség áttekintése
@@ -1828,6 +1858,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Fejlesztői környezetfájl (.env) konfigurálása
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Azure DevOps-kódmegosztás beállítása és buildfolyamat létrehozása
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Platform áttekintése
                   items:
                     - name: Architekturális áttekintés
@@ -1906,12 +1938,16 @@
                   items:
                     - name: Láncadat-műveletek
                       href: e-commerce-extensibility/chain-data-actions.md
-                    - name: Kötegadat-műveletek
+                    - name: Kötegelt adatműveletek
                       href: e-commerce-extensibility/batch-data-actions.md
                     - name: Észlelhető adatműveletek
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Állapot megosztása modulok között
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Adatművelet-felülbírálások
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Adatművelet-horgok
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Témák fejlesztése
                   items:
                     - name: Témahasználat áttekintése
@@ -1958,7 +1994,7 @@
                   href: install-pos-layout-designer.md
                 - name: A pénztár kettős megjelenítési nézetének kiterjesztése
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: A Modern POS és a Cloud POS-eseményindító bővíthetősége
+                - name: A Modern POS és a felhőalapú pénztár eseményindítójának bővíthetősége
                   href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
                   href: dev-itpro/pos-custom-control.md
@@ -1978,7 +2014,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Pénztárbővítmény csomaginformációjának megtekintése
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: A Cloud POS tesztrögzítője és Regression Suite Automation Tool eszköze
+                - name: A felhőalapú pénztár tesztrögzítője és Regression Suite Automation Tool eszköze
                   href: dev-itpro/pos-rsat.md
                 - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
                   href: dev-itpro/custom-field-pos-totals.md
@@ -2062,6 +2098,8 @@
                   href: dev-itpro/commerce-application-insights.md
                 - name: Aszinkron Commerce (CRT) API-k létrehozása az üzleti logikában
                   href: dev-itpro/async-commerce-extension.md
+                - name: Előre bővített oszlopok a csatorna-adatbázisban
+                  href: dev-itpro/extended-columns.md
             - name: Fizetési összekötő bővíthetősége
               items:
                 - name: Fizetési integráció létrehozása fizetési terminálhoz
