@@ -1,9 +1,9 @@
 ---
-title: Termékajánlatok a POS esetében
+title: Termékajánlatok hozzáadása a pénztárnál
 description: Ez a témakör leírja a termék ajánlásainak használatát a pénztári eszközön (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057441"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127813"
 ---
-# <a name="product-recommendations-on-pos"></a>Termékajánlatok a pénztárnál
+# <a name="add-product-recommendations-on-pos"></a>Termékajánlatok hozzáadása a pénztárnál
 
 [!include [banner](includes/banner.md)]
 
@@ -71,8 +71,24 @@ A termékajánlások beállításához kövesse az alábbi lépéseket:
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](add-recommendations-control-pos-screen.md)
+[Termékajánlatok áttekintése](product-recommendations.md)
 
-[Termékajánlatok áttekintése](../commerce/product-recommendations.md)
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
-[Termékajánlatok engedélyezése](../commerce/enable-product-recommendations.md) 
+[Termékajánlatok engedélyezése](enable-product-recommendations.md)
+
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
+
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

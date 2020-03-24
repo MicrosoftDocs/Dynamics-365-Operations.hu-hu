@@ -3,7 +3,7 @@ title: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001622"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096725"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -140,9 +140,11 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[A tartománynevének konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+
+[Online áruház csatornájának beállítása](online-stores.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
@@ -150,6 +152,12 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
+[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+
+[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
+
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)

@@ -1,6 +1,6 @@
 ---
 title: Fizetési gyakoriságok beállítása
-description: ''
+description: A Microsoft Dynamics 365 Human Resources a fizetési gyakoriságok alapján kiszámítja az éves juttatásfizetést, meghatározza a juttatási díj összegét, amelyet az alkalmazott fizet minden fizetési időszakban, és meghatározza a szállítóknak végrehajtott fizetések gyakoriságát.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5fe0a16c4abbb9241fcdac88fd56e92bf04788c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b786485ab53dcdb3b7e5ff02562f674a7f8e6eae
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009337"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092591"
 ---
 # <a name="set-up-payment-frequencies"></a>Fizetési gyakoriságok beállítása
 

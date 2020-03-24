@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769947"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117425"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Fájlok importálása XML-formátumban opcionális attribútumokkal
+
+[!include [banner](../includes/banner.md)]
 
 Olyan elektronikus jelentési (ER) formátumokat tervezhet, amelyekkel elemezhetők az XML-formátumú bejövő elektronikus dokumentumok. Az XML-elemek bizonyos attribútumai választhatóként adhatók meg a tervezett ER-formátumban. Ezzel a megoldással megfelelően kezelhetők az ilyen XML-attribútumokkal rendelkező és nem rendelkező bejövő fájlok. Az ezekből a fájljokból származó tartalmakat felhasználhatja az alkalmazásadatok frissítésére.
 
@@ -52,17 +54,17 @@ A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus je
 7. Kattintson a **Hozzáadás** parancsra.
 8. Az **Új** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
 9. A **Név** mezőbe írja be a következőt: „Lista”.
-10. A **Cikktípus** mezőben válassza ki a **Rekordlista** lehetőséget.
-11. Kattintson a **Hozzáadás** parancsra.
-12. Az **Új** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-13. A **Név** mezőbe írja be a következőt: „Kód”.
-14. A **Cikktípus** mezőben válassza ki a **Karakterlánc** lehetőséget.
-15. Kattintson a **Hozzáadás** parancsra.
-16. Kattintson a **Mentés** gombra.
-17. Zárja be a lapot.
-18. Kattintson az **Állapot módosítása** elemre.
-19. Kattintson a **Befejezés** gombra.
-20. Kattintson az **OK** gombra.
+10.    A **Cikktípus** mezőben válassza ki a **Rekordlista** lehetőséget.
+11.    Kattintson a **Hozzáadás** parancsra.
+12.    Az **Új** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
+13.    A **Név** mezőbe írja be a következőt: „Kód”.
+14.    A **Cikktípus** mezőben válassza ki a **Karakterlánc** lehetőséget.
+15.    Kattintson a **Hozzáadás** parancsra.
+16.    Kattintson a **Mentés** gombra.
+17.    Zárja be a lapot.
+18.    Kattintson az **Állapot módosítása** elemre.
+19.    Kattintson a **Befejezés** gombra.
+20.    Kattintson az **OK** gombra.
 
 ## <a name="create-a-format-for-data-import"></a>Adatimportálási formátum létrehozása
 1. A **Konfiguráció létrehozása** gombra kattintva megnyithatja a legördülő párbeszédablakot.
@@ -81,32 +83,32 @@ A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus je
 7. A fában válassza ki az **XML\Element** csomópontot.
 8. A **Név** mezőbe írja be a következőt: „Dokumentum”.
 9. A **Multiplicitás** mezőben válassza ki az **Egy a többhöz** értéket.
-10. Kattintson az **OK** gombra.
-11. A fastruktúrában válassza ki a **root\document** csomópontot.
-12. A **Hozzáadás** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-13. A fastruktúrában válassza ki az **XML\Attribute** elemet.
-14. A **Név** mezőbe írja be az „azonosító” kifejezést.
-15. Kattintson az **OK** gombra.
-16. Kattintson a **Mentés** gombra.
+10.    Kattintson az **OK** gombra.
+11.    A fastruktúrában válassza ki a **root\document** csomópontot.
+12.    A **Hozzáadás** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
+13.    A fastruktúrában válassza ki az **XML\Attribute** elemet.
+14.    A **Név** mezőbe írja be az „azonosító” kifejezést.
+15.    Kattintson az **OK** gombra.
+16.    Kattintson a **Mentés** gombra.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Az elemzett adatok adatmodellbe való mentéséhez használandó formátum-hozzárendelés kialakítása
-1.  Kattintson a **Formátum hozzárendelése modellhez** elemre.
-2.  Kattintson az **Új** elemre.
-3.  A **Definíció** mezőben adjon meg vagy válasszon ki egy értéket.
-4.  A **Név** mezőbe írja be a következőt: „Hozzárendelés”.
-5.  Kattintson a **Mentés** gombra.
-6.  Kattintson a **Tervező** pontra.
-7.  A fastruktúrában bontsa ki a **format** csomópontot.
-8.  A fastruktúrában bontsa ki a **format\root: XML Element(root)** csomópontot.
-9.  A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
-10. Kattintson a **Kötés** gombra.
-11. A fastruktúrában bontsa ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
-12. A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (document)\id**.
-13. A fastruktúrában bontsa ki a **List = format.root.document** részt.
-14. A fastruktúrában válassza ki a **List = format.root.document\Code** pontot.
-15. Kattintson a **Kötés** gombra.
-16. Kattintson a **Mentés** gombra.
-17. Zárja be a lapot.
+1.    Kattintson a **Formátum hozzárendelése modellhez** elemre.
+2.    Kattintson az **Új** elemre.
+3.    A **Definíció** mezőben adjon meg vagy válasszon ki egy értéket.
+4.    A **Név** mezőbe írja be a következőt: „Hozzárendelés”.
+5.    Kattintson a **Mentés** gombra.
+6.    Kattintson a **Tervező** pontra.
+7.    A fastruktúrában bontsa ki a **format** csomópontot.
+8.    A fastruktúrában bontsa ki a **format\root: XML Element(root)** csomópontot.
+9.    A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
+10.    Kattintson a **Kötés** gombra.
+11.    A fastruktúrában bontsa ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (dokumentum)**.
+12.    A fastruktúrában válassza ki a **format\root: XML Element(root)\document: XML Element 1..* elemet (document)\id**.
+13.    A fastruktúrában bontsa ki a **List = format.root.document** részt.
+14.    A fastruktúrában válassza ki a **List = format.root.document\Code** pontot.
+15.    Kattintson a **Kötés** gombra.
+16.    Kattintson a **Mentés** gombra.
+17.    Zárja be a lapot.
 
 ## <a name="run-format-mapping"></a>Formátum-hozzárendelés futtatása
 1. Kattintson a **Futtatás** parancsra.

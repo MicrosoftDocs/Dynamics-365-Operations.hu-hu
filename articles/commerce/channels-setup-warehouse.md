@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057856"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113759"
 ---
 # <a name="warehouse-set-up"></a>Raktár beállítása
 
@@ -33,7 +33,7 @@ Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárakat új csato
 
 ## <a name="overview"></a>Áttekintés
 
-Minden egyes Commerce-csatornához hozzá kell rendelni egy konfigurált raktárat. A következő eljárások a Commerce csatorna raktárának beállításához szükséges minimális konfigurációját nyújtják. A raktár beállításaival kapcsolatos további tudnivalókat lásd a [Raktárkezelés – áttekintés](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview) című témakörben.
+Minden egyes Commerce-csatornához hozzá kell rendelni egy konfigurált raktárat. A következő eljárások a Commerce csatorna raktárának beállításához szükséges minimális konfigurációját nyújtják. A raktár beállításaival kapcsolatos további tudnivalókat lásd a [Raktárkezelés – áttekintés](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json) című témakörben.
 
 ## <a name="configure-a-warehouse-site"></a>Raktár webhelyének konfigurálása
 
@@ -131,7 +131,7 @@ A következő kép a konfigurált raktár adatait jeleníti meg.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Raktárkezelés áttekintése](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Raktárkezelés áttekintése](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Csatornák áttekintése](channels-overview.md)
 

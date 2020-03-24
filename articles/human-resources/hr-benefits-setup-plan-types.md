@@ -1,6 +1,6 @@
 ---
-title: Konstrukciótípusok létrehozása
-description: ''
+title: Költségvetési terv típusai
+description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c12eecb38bd943a9c604f878644da289783d3f74
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 8d9bb490326c6dbfafa0f186cd05185ac01bad30
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009286"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092365"
 ---
-# <a name="create-plan-types"></a>Konstrukciótípusok létrehozása
+# <a name="create-plan-types"></a>Költségvetési terv típusai
 
 [!include [banner](includes/preview-feature.md)]
 

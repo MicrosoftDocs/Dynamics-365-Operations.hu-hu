@@ -3,7 +3,7 @@ title: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe2a716d370c350c0c7e034835ff755f1ec9c6a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001944"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096797"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 
@@ -195,15 +195,23 @@ A global.json fájl frissítése és a módosítások közzététele után az ú
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[A tartománynevének konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+
+[Online áruház csatornájának beállítása](online-stores.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+
+[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+
+[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

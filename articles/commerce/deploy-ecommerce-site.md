@@ -3,7 +3,7 @@ title: Új e-kereskedelmi bérlő telepítése
 description: Ez a témakör azt mutatja be, hogyan lehet új e-kereskedelmi bérlőt telepíteni a Microsoft Dynamics Lifecycle Services (LCS) segítségével.
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001783"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096678"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Új e-kereskedelmi bérlő telepítése
 
@@ -93,15 +93,23 @@ A webhelykészítő eléréséhez nyissa meg az **e-Commerce** lapot a **Kiskere
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[A tartománynevének konfigurálása](configure-your-domain-name.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
+
+[Online áruház csatornájának beállítása](online-stores.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
+[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+
+[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
+
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

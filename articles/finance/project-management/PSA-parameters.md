@@ -3,7 +3,7 @@ title: Project Service Automation – integrálási paraméterek
 description: Ez a témakör bemutatja, hogyan kell konfigurálni azt, hogyan legyenek megadva az alapértelmezett adatok a Microsoft Dynamics 365 for Project Service Automation és a Microsoft Dynamics 365 Finance integrálása során.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174888"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096251"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Project Service Automation integráció paraméterei
 
 [!include[banner](../includes/banner.md)]
 
 A **Project Service Automation integrációs paraméterei** lapon beállíthatja, hogyan legyenek megadva az alapértelmezett adatok a Dynamics 365 Project Service Automation és Dynamics 365 Finance integrációja során. A következő mezőket be kell állítani a projektekhez, hogy sikeresen szinkronizálni lehessen a Project Service Automation alkalmazásból a Finance alkalmazásba.
+
+A **Project Service Automation integrációs paraméterei** lap megnyitásához válassz a **Projektmenedzsment és könyvelés** \> **Beállítások** \> **Dynamics 365 for Project Service Automation integrációs paraméterek** elemet. 
 
 > [!NOTE]
 > - Ha a 8.0-ás verzióját használja a projektfeladat integrációja, költségtranzakció-kategóriák, munkaóra-becslés, költségbecslések és a funkciók zárolása funkciókat használhatja.

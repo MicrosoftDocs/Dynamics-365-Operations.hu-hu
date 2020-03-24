@@ -3,7 +3,7 @@ title: Talent üzembe helyezése
 description: Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 Talent számára.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025509"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124704"
 ---
 # <a name="provision-talent"></a>A Talent létesítése
 
@@ -34,17 +34,23 @@ Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microso
 Az LCS a Talent kezelésére való használatához előbb egy LCS-projektet kell létrehozni.
 
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Talentre való előfizetéshez használt.
+
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
+
 3. Válassza a **Microsoft Dynamics 365 Talent** terméknévként és termékverzióként.
+
 4. A **Dynamics 365 Talent** frissítési módszertan kiválasztása.
-5. Válassza a **Létrehozása** lehetőséget.
+
+5. Válassza a **Létrehozása** lehetőséget. 
 
 A Talent használatának megkezdésével kapcsolatos tudnivalókhoz lásd az új projektben létrehozott **Talent** módszert. Miután elkészült a projekt létrehozása, hajtsa végre a következő eljárást a Talent környezetének létesítéséhez.
 
 ## <a name="provision-a-talent-project"></a>Talent-projekt létesítése
+
 LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
 1. Az LCS-projektben válassza a **Talent alkalmazás kezelése** csempét.
+
 2. Azt jelzi, hogy ez a Talent Védőfal- vagy termelési példánya. A korai előzetes funkciók elérhetők lehetnek a Védőfalpéldányokban, a korai visszajelzések és tesztelés érdekében. 
 
     > [!NOTE]
@@ -52,13 +58,13 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
     > [!NOTE]
     > A Talent példánytípus eltér a Microsoft Power Apps-környezet Power Apps Felügyeleti központjában beállítható példánytípusától.
+
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
+
 4. A Talent alkalmazást mindig biztosítva van a Microsoft Power Apps környezetben annak érdekében, hogy biztosítsa a Power Apps integrációját és bővíthetőségét. Olvassa el a témakör „Power Apps-környezet kiválasztása” című fejezetét a folytatás előtt. Ha még nem rendelkezik Power Apps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a Power Apps adminisztrációs központjába. Kövesse a [Power Apps környezet](https://docs.microsoft.com/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
 
-    > [!NOTE]
-    > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Talentet létesítő bérlő adminisztrátort hozzá kell rendelni a Power Apps P2 licenchez. Ha szervezete nem rendelkezik Power Apps P2 licenccel, kaphat egyet a CSP-től vagy a [Power Apps árképzési lapon](https://powerapps.microsoft.com/pricing/).
-
 5. Válassza ki azt a környezetet, amelybe telepíteni szeretné a Talent szolgáltatást.
+
 6. Válassza az **Igen** lehetőséget a feltételek elfogadásához és a telepítés megkezdéséhez.
 
     Az új környezet megjelenik a bal oldali navigációs panelen látható környezetek listájában. Azonban a környezet nem indítható el mindaddig, amíg a telepítés állapota nem frissül **Telepítve** értékre. Ez a folyamat jellemzően csak pár percig tart. Ha a jogosultságkezelés folyamata sikertelen, kérje az Ügyfélszolgálat segítségét.
@@ -77,9 +83,13 @@ A Talent és Power Apps környezetek közötti integrációval integrálhatja é
 Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely Power Apps környezetbe kell telepíteni a Talent alkalmazást: 
 
 1. Az LCS-ben válassza a **Környezetek kezelése** lehetőséget, vagy lépjen közvetlenül a Power Apps adminisztrációs központjába, ahol megtekintheti a meglévő környezeteket és új környezeteket hozhat létre.
+
 2. Egyetlen Talent-környezet van egyetlen Power Apps-környezethez rendelve.
+
 3. A Power Apps-környezet tartalmazza a Talent alkalmazást a megfelelő Power Apps, Power Automate és Common Data Service alkalmazásokkal együtt. Ha a Power Apps környezetet törlik, törlődnek a benne lévő alkalmazások is. Talent környezet létesítésekor vagy **Próba** vagy **Termelési** környezetek létesíthetők. Válassza ki a környezet típusát a környezet későbbi használata alapján. 
+
 4. Az adatintegrációs és tesztelési stratégiákat figyelembe kell venni, például: védőfal, UAT vagy termelés. Javasoljuk, hogy vegye figyelembe a telepítés különböző következményeit, mert nem könnyű a későbbiekben megváltoztatni a Power Apps-környezethez leképzett Talent környezetet.
+
 5. A következő Power Apps környezetek a Talent esetében nem használhatók, és ki lesznek szűrve a kiválasztási listából a LCS portálon belül:
  
     - **Alapértelmezett Power Apps környezetek** – Bár minden bérlő számára automatikusan megtörténik az alapértelmezett Power Apps-környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a Power Apps-környezethez, és a Power Apps vagy Power Automate-integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
@@ -91,4 +101,5 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely Power Ap
 6. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
  
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
+
 Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak azonban kifejezett módon engedélyezni kell a hozzáférést. Ha hozzáférést szeretne adni, fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. A Talent-et telepítő globális rendszergazdának el kell elindítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást és engedélyezze a hozzáférést más bérlő felhasználók számára is.  Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni. További tudnivalókért lásd: [Új felhasználók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

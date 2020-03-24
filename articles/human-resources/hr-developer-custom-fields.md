@@ -1,9 +1,9 @@
 ---
 title: Egyéni mezők
-description: ''
+description: Egyéni mezőket adhat az oldalakhoz a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,27 +18,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6de1bcc6df5f8e4ab1ebbccb4b9a56f6f019c37f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7348fb9d3457da23fc4e250a1fd3f6cac82bdb5e
+ms.sourcegitcommit: 8493593e1405cde8cde23a3d9eb90385136088e1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009273"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115999"
 ---
 # <a name="custom-fields"></a>Egyéni mezők
 
-Egyéni mezőket adhat az oldalakhoz a Dynamics 365 Human Resources alkalmazásban. További információkért az egyéni mezők létrehozásáról egy oldalon lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+Egyéni mezőket adhat az oldalakhoz a Dynamics 365 Human Resources alkalmazásban. További információkért az egyéni mezők létrehozásáról lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-A következő Common Data Service-entitások támogatják az Emberi erőforrások alkalmazásban létrehozott egyéni mezőket:
-
-- Dolgozó
-- Etnikum
-- Veteránállapot
-- Nyelvkód
-- Állás
-- Feladattípus
-- Beosztás
-- Beosztás
-- Beosztás típusa
+A legtöbb Common Data Service entitás támogat egyéni mezőket. A Common Data Service entitások teljes listájának megtekintéséhez lásd: [Common Data Service entitások](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
 Győződjön meg arról, hogy minden létrehozott egyéni mezőt engedélyez, így azokat használni lehet a Common Data Service programban. A további információk: [Egyéni mezők közzététele adatentitásokon](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+
+## <a name="see-also"></a>Lásd még
+
+[Common Data Service entitások](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Egyéni mezők létrehozása és használata](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Egyéni mezők közzététele adatentitásoknak](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)

@@ -3,7 +3,7 @@ title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
+ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090589"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3099730"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -55,8 +55,9 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Kliens internetkapcsolata](../user-interface/client-disconnected.md)
 - [Frissítések alkalmazása helyszíni telepítésekhez](apply-updates-on-premises.md)
 - [Helyszíni környezetek ismételt telepítése](redeploy-on-prem.md)
+- [Ugyanazon AD FS-példány újrahasznosítása több környezet esetén](onprem-reuseadfs.md)
 
-## <a name="commerce"></a>Commerce
+## <a name="commerce"></a>Kereskedelem
 - [A helyszíni telepítéseknél rendelkezésre álló kereskedelmi lehetőségek](../../../retail/retail-onprem.md)
 - [A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései](deploy-retail-onprem.md)
 - [Az Modern POS (MPOS) konfigurálása, telepítése és aktiválása](../../../retail/retail-modern-pos-device-activation.md)

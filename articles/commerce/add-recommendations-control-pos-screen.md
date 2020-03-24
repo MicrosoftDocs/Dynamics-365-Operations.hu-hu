@@ -1,9 +1,9 @@
 ---
-title: Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
+title: Ajánlatok hozzáadása a tranzakciós képernyőhöz
 description: Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 Commerce képernyő-elrendezés tervezőjének használatával.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022733"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127675"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez
+# <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakciós képernyőhöz
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Termékajánlatok a pénztárnál](product.md)
+[Termékajánlatok áttekintése](product-recommendations.md)
 
-[Termékajánlatok áttekintése](../commerce/product-recommendations.md)
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
+[Termékajánlatok engedélyezése](enable-product-recommendations.md)
+
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
+
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Termékajánlások hozzáadása a pénztárnál](product.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

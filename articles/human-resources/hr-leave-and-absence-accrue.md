@@ -1,6 +1,6 @@
 ---
-title: Szabadság- és távolléti tervek elhatárolása
-description: ''
+title: Szabadság- és távolléti tervek halmozódása
+description: Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources alkalmazásban több alkalmazott vagy egy egyén esetében.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28b7d843d9dd652e45c24af09d0414530c06c4ac
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba60fc2e5b17ec32aa6ad7eb104e8ae55ddee3bb
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009263"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092338"
 ---
-# <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek elhatárolása
+# <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
 Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources alkalmazásban több alkalmazott vagy egy egyén esetében.
 

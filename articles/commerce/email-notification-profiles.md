@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 9e5d90eaf1815bbe54b0bea40d92a0a993a23b75
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057614"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113805"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-mail-értesítési profil beállítása
 
@@ -35,7 +35,7 @@ Ez a témakör azt mutatja be, hogyan lehet egy e-mailes értesítést létrehoz
 
 A csatornák létrehozása előtt be kell állítani egy profilt, amely gondoskodik arról, hogy az e-mailek értesítései különböző eseményekhez, például a rendelések létrehozásához, a rendelés szállítási állapotához és a fizetési hibákhoz lehessenek elküldve.
 
-Az e-mail konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail konfigurálása és küldése](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+Az e-mail konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="create-an-email-notification-profile"></a>E-mail-értesítési profil létrehozása
 
@@ -84,7 +84,7 @@ A következő képen látható néhány példa az eseményértesítés beállít
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[E-mail konfigurálása és küldése](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
+[E-mail konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
 
 [Csatornák áttekintése](channels-overview.md)
 

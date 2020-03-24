@@ -3,7 +3,7 @@ title: Speciális szűrési és lekérdezési szintaxis
 description: A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanelen vagy az egyezések operátor vagy a rács oszlop fejléce szűrők használata esetén.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931288"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112191"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
@@ -122,13 +122,14 @@ A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek el
 <td>A két egymást követő dupla idézőjel (<strong>""</strong>) olyan sorokat keres, amelyeknek nincs értéke az aktuális oszlopban.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL-utasítás</span>) (Zárójelben SQL utasítás)</td>
+<td>(<span class="code">Finance and Operations lekérdezés</span>) (Finance and Operations zárójelek közti lekérdezés)</td>
 <td>A megadott lekérdezésnek megfelelő.</td>
-<td>Írjon be zárójelek között egy SQL-lekérdezést.</td>
-<td><strong><span class="code">(adatforrás.Mezőnév != &quot;A&quot;)</span></strong></td>
+<td>Írjon be egy lekérdezést a zárójelek közötti SQL-utasításként a Finance and Operations lekérdezési nyelvével.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       példaként egy szűrő feltételének szintaxisára a gyökérszintű adatforrás mezőjéből, valamint egy másik adatforrásmezőből (az összes vevő laphoz)</td>
 </tr>
 <tr>
-<td>C</td>
+<td>K</td>
 <td>Mai dátum</td>
 <td><strong>T</strong> típus.</td>
 <td><strong>T</strong> megegyezik a mai dátummal.</td>

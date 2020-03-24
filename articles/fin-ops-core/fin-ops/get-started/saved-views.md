@@ -3,7 +3,7 @@ title: Mentett nézetek
 description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017704"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100308"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -71,7 +71,7 @@ Ha menteni szeretné azokat a módosításokat, hajtsa végre az alábbi lépés
 2.  A meglévő nézet módosítása:
      1. Válassza a **Mentés** lehetőséget. Ne felejtse el, hogy ez a művelet zárolt nézetekhez nem engedélyezett. 
 3.  Új nézet létrehozása:
-     1.    Válassza a **Mentés másként...** lehetőséget. 
+     1.    Válassza a **Mentés másként** lehetőséget. 
      2.    Írja be a nézet nevét és (ha van) a leírását.
      3.    Válassza a **Mentés** lehetőséget.
 
@@ -83,9 +83,9 @@ Ha szeretné egy lap alapértelmezett nézetét módosítani, kövesse az alább
 2.  Válassza ki a nézet nevét a nézetválasztó megnyitásához. 
 3.  Válassza a **Továbbiak** elemet, majd a **Rögzítés alapértelmezettként** lehetőséget.  
 
-A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Mentrés másként...** művelettel), az új nézetet alapértelmezetté teheti, ha beállítja a **Rögzítés alapértelmezettként** beállítást a nézet mentése előtt.
+A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Mentrés másként** művelettel), az új nézetet alapértelmezetté teheti, ha beállítja a **Rögzítés alapértelmezettként** beállítást a nézet mentése előtt.
 
-Ne feledje, hogy bizonyos esetekben az alapértelmezett nézethez társított lekérdezés nem hajtható végre, amikor először navigál egy oldalra. Ha például egy lapra egy csempén keresztül navigál, akkor a rendszer végrehajtja a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül. Ha egy olyan oldalra navigál, amelynek a Klasszikus nézete már rendelkezik egy megadott lekérdezéssel, akkor az eredeti lekérdezés kerül végrehajtásra, és nem az alapértelmezett nézet lekérdezése. Ha ez történik, akkor erre egy tájékoztató üzenet figyelmeztet, amikor a nézet betöltődik. A nézetek a lap betöltése utáni váltásának lehetővé kell tennie a nézet lekérdezése számára, hogy az elvártaknak megfelelően megvalósuljon.
+Ne feledje, hogy bizonyos esetekben az alapértelmezett nézethez társított lekérdezés nem hajtható végre, amikor először navigál egy oldalra. Ha például egy lapra egy csempén keresztül navigál, akkor a rendszer végrehajtja a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül. Ha egy olyan oldalra navigál, amelynek a Standard nézete már rendelkezik egy megadott lekérdezéssel, akkor az eredeti lekérdezés kerül végrehajtásra, és nem az alapértelmezett nézet lekérdezése. Ha ez történik, akkor erre egy tájékoztató üzenet figyelmeztet, amikor a nézet betöltődik. A nézetek a lap betöltése utáni váltásának lehetővé kell tennie a nézet lekérdezése számára, hogy az elvártaknak megfelelően megvalósuljon. A 10.0.10-es verzió 34-es platformfrissítésétől a tájékoztató üzenet beágyazott művelettel rendelkezik, amely lehetővé teszi az alapértelmezett nézet lekérdezésének közvetlen betöltését.
 
 ## <a name="managing-personal-views"></a>Személyes nézetek kezelése 
 A **Saját nézetek kezelése** párbeszédpanel a alapvető karbantartási funkciókat biztosít a személyes nézetekre vonatkozóan, valamint a nézetválasztóban a nézetek sorrendjére vonatkozóan. A lap megnyitásához kattintson a nézet nevére a nézetválasztó legördülő menü megnyitásához, válassza a **Továbbiak**, majd a **Saját nézetek kezelése** lehetőséget.  

@@ -3,7 +3,7 @@ title: E-kereskedelmi webhely létrehozása
 description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-Commerce webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002013"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096774"
 ---
 # <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
@@ -61,15 +61,23 @@ Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőr
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[A tartománynevének konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+
+[Online áruház csatornájának beállítása](online-stores.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
+[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+
+[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
+
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

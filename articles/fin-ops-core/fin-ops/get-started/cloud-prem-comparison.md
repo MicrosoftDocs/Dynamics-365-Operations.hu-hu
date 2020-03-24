@@ -3,7 +3,7 @@ title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
 author: sericks007
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: a918d9fa1ad7ed5adcbb1d056bb8cc3306507aec
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081970"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100282"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
@@ -97,7 +97,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 | Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
 |                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
 |                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
-|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Nem              |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen              |
 |                                      | Adatintegrálások                                                                         | Igen       | Igen             |
 | Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
 | Súgó                                 |                                                                                           | Igen       | Nem              |

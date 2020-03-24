@@ -3,7 +3,7 @@ title: Leiratkozás a személyre szabott ajánlatokról
 description: Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a személyre szabott ajánlatok fogadásáról való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8e7b800218f68167901d86d61ae483680a04cfab
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: a6d2388e863135c2b6d51af915b606a56f0603a8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025252"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127744"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Leiratkozás a személyre szabott ajánlatokról
 
@@ -85,12 +85,22 @@ A következő példa azt mutatja be, hogyan hajthatja végre egy kiskereskedő e
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
 
-[Ajánlások panel hozzáadása a pénztáreszközökhöz](add-recommendations-control-pos-screen.md)
+[Termékajánlások hozzáadása a pénztárnál](product.md)
 
-[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 66d5b10e1471b98274d4049df18a2e53873f789a
-ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
+ms.openlocfilehash: c04e2b2c0e5d7f28ea688578b3e1d7a1e1d9f6d3
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "2947480"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117448"
 ---
 # <a name="cancel-a-master-planning-job"></a>Alaptervezési feladat visszavonása
+
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management alkalmazásban több lehetőség van az alaptervezés feladat visszavonására. Előfordulhat például, hogy vissza szeretne vonni egy alaptervezési feladatot, ha azt tévedésből indította el, vagy a vártnál tovább tart, és meg szeretné szakítani. A tervezési feladatok megszakításához a legjobb módszer a **Befejezetlen tervezési folyamatok** lap. A **Kötegelt feladatok** és a **Kötegelt feladatok – speciális** lapok alternatív lehetőségei csak akkor használhatók, ha az alaptervezési feladat a **Befejezetlen tervezési folyamatok** lapról néhány percen belül nem fejeződött be.
 
@@ -37,7 +39,7 @@ A Microsoft Dynamics 365 Supply Chain Management alkalmazásban több lehetősé
 3. Kattintson a **Mégse** gombra.
 
 ## <a name="additional-cancel-options"></a>További visszavonási lehetőségek
-Ezek csak akkor használhatók, ha az alaptervezési feladat a **Befejezetlen tervezési folyamatok** lapról nem fejeződött be pár percen belül.
+Ezek csak akkor használhatók, ha az alaptervezési feladat megszakítása a **Befejezetlen tervezési folyamatok** lapról nem fejeződött be pár percen belül.
 
 ### <a name="delete-master-planning-job-from-the-batch-jobs-page"></a>Az alaptervezési feladat törlése a **Kötegelt feladatok** oldalról
 1. Ugorjon a **Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok** pontra.
