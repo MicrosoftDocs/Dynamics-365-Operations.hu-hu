@@ -3,7 +3,7 @@ title: Termékajánlatok áttekintése
 description: Ez a témakör a rendezési termékjavaslatok ismertetését tartalmazza. A termékjavaslatoknak köszönhetően a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és még olyanokat is, amelyek eredetileg nem szándékoznak megvásárolni.
 author: Moonma
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: abeeb3c35c21f6d7a6ec24a84522033f9a5367f3
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024979"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127859"
 ---
 # <a name="product-recommendations-overview"></a>Termékajánlatok áttekintése
 
@@ -32,37 +32,59 @@ ms.locfileid: "3024979"
 
 A Microsoft Dynamics 365 Commerce a termékjavaslatok megjelenítésére használható az e-kereskedelmi webhelyeken és a pénztári (POS) eszközön. A termékjavaslatok olyan cikkek, amelyeket a vevő számára érdekesek lehetnek. Az ajánlások az online és a fizikai áruházakban a más vevők beszerzési trendjein alapulnak.
 
-A termékjavaslatok révén a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és mindeközben jó élményben van részük. A kereszt- és felülértékesítések arra is használhatók, hogy a vásárlók olyan termékeket is találjanak, amelyeket eredetileg nem is szándékoztak megvásárolni. Amikor a termékek felfedezésével kapcsolatos segítséghez használják a javaslatokat, több konverziós lehetőséget is kialakíthatnak, és ezek elősegítik az értékesítési bevételek növelését, valamint javíthatják a vevői elégedettséget és a visszatartást.
+A termékjavaslatok révén a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és mindeközben jó élményben van részük. A kereszt- és felülértékesítések arra is használhatók, hogy a vásárlók olyan termékeket is találjanak, amelyeket eredetileg nem is szándékoztak megvásárolni. Amikor a termékek felfedezésével kapcsolatos támogatáshoz használják a javaslatokat, több konverziós lehetőséget is kialakíthatnak, és ezek elősegítik az értékesítési bevételek növelését, valamint javíthatják a vevői elégedettséget és a visszatartást.
 
-A Commerce alkalmazásban a termékjavaslatokat a Microsoft Recommendations gép tanulási technológiái támogatják.
+Az e-kereskedelemben a termékjavaslatokat a Microsoft Recommendations gép tanulási technológiái támogatják.
 
+## <a name="recommendation-service"></a>Ajánlási szolgáltatás
 
-## <a name="scenarios"></a>Esetek
+A termékajánlások szolgáltatás mesterséges intelligencia és a gépi tanulás (AI-ML) technológiák felhasználását használja a következő módon:
+
+- Az ajánlási szolgáltatásnak megfelelő formátumú adatokat a rendszer kivonja az adatokat a Commerce működési adatbázisából, és elküldi őket az Azure Data Lake Storage (ADLS) tárhelyre vagy az entitástárba.
+- Az ajánlási szolgáltatás a tárolt adatokat az ajánlási modellek tanításához használja a **Másoknak ez is tetszett**, **Gyakran együtt vásárolt**, **Új**, **Legkelendőbb** és **Legnépszerűbbek** listákhoz.
+
+## <a name="scenarios"></a>Forgatókönyvek
 
 Az alábbi POS-esetekben érhetők el a termékajánlások.
 
 - **Az e-Commerce-ben egy üzlet böngészési vagy érkezőoldalán**: Ha a vevők vagy az üzlet munkatársai meglátogatják a bolt egy oldalát, akkor az ajánlási rendszer az **Új**, **Legkelendőbb**és **Legnépszerűbb** listákban javasolhat termékeket.
 - **A Termékrészletek oldalon:** Ha a vevők vagy az üzlet munkatársai felkeresnek egy **Termékrészletek** lapot, akkor az ajánlási motor további, valószínűleg megvásárolni kívánt cikkeket javasol. Ezek a cikkek a **Másoknak ez is tetszett** listán jelennek meg.
 - **A tranzakció oldalon vagy a pénztár oldalon:** Az ajánlási motor a kosárban található cikkek teljes listája alapján javasolja a cikkeket. Ezek a cikkek megjelennek a **Gyakran együtt vásárolt** listán.
-- **Személyre szabott ajánlások:**: a kereskedők a bejelentkezett vevők számára személyre szabott **kitárolásokat** adhatnak meg a listán, emellett olyan új funkciókat, amelyek lehetővé teszik a meglévő lista-forgatókönyvek személyre szabását a vevő alapján. A további tudnivalókat lásd a funkció dokumentációban: [személyre szabott ajánlatok engedélyezése.](personalized-recommendations.md)
+- **Személyre szabott ajánlások:**: a kereskedők a bejelentkezett vevők számára személyre szabott **kitárolásokat** adhatnak meg a listán, emellett olyan új funkciókat, amelyek lehetővé teszik a meglévő lista-forgatókönyvek személyre szabását a vevő alapján. További információ: [Személyre szabott ajánlatok engedélyezése.](personalized-recommendations.md).
 
-## <a name="recommendation-service"></a>Ajánlási szolgáltatás
+### <a name="types-of-product-recommendations"></a>Termékajánlatok típusai
 
-A termékjavaslatoka következő módon használják a Javaslatok gép tanulási technológiákat:
+A következő táblázat leírja, hogy milyen automatizált termék-javaslatok érhetők el a kiskereskedők számára a Dynamics 365 Commerce megoldás implementálásához a [termékkollekciók modulban](product-collection-module-overview.md). A kereskedők megjeleníthetik a bejelentkezett felhasználó testreszabott eredményeit, ha a webhely szerzője ezt a lehetőséget választja.
 
-- Az ajánlási szolgáltatásnak megfelelő formátumú adatokat a rendszer kivonja az adatokat a Commerce működési adatbázisából, és elküldi őket az entitástárba.
-- Az ajánlási szolgáltatás az adatokat az ajánlási modellek tanításához használja a **Másoknak ez is tetszett**. **Gyakran együtt vásárolt**, **Új**, **Legkelendőbb** és **Legnépszerűbbek** listákhoz.
+| Termékgyűjtési modul  | Típus | Leírás |
+|----------------------------|------|-------------|
+| Új                        | Algoritmikus | A modul a csatornákhoz és katalógusokhoz nemrég hozzárendelt legújabb termékek listáját jeleníti meg. |
+| Legnépszerűbb               | Algoritmikus | Ez a modul a termék listáját jeleníti meg, amelyek az eladások száma alapján van rendezve. |
+| Felkapott                   | Algoritmikus | Ez a modul egy adott időszakra vonatkozóan megjeleníti a legjobban teljesítő termékek listáját a legmagasabb eladások alapján rangsorolva.  |
+| Gyakran együtt vásárolt | MI-ML | Ez a modul a leggyakrabban együtt vásárolt termékek listáját ajánlja, a fogyasztók aktuális kosártartalmával együtt. |
+| Szintén kedvelt           | MI-ML | Ez a modul termékeket ajánlja fel egy adott megtekintett termékre a fogyasztói beszerzési minták alapján. |
+| Önnek ajánljuk              | MI-ML | Ez a modul a termékek személyre szabott listáját ajánlja a bejelentkezett felhasználó beszerzési szokásai alapján. A vendégfelhasználó számára ez a lista összecsukott állapotban lesz. |
 
 ## <a name="additional-resources"></a>További erőforrások
+
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Válogatott termékek ajánlati listájának létrehozása](create-editorial-recommendation-lists.md)
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
 
-[AI-ML-alapú termékajánlás eredményeinek kezelése](modify-product-recommendation-results.md)
+[Termékajánlások hozzáadása a pénztárnál](product.md)
 
-[Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

@@ -1,6 +1,6 @@
 ---
-title: Hitelkeret felfüggesztése értékesítési rendelésekhez
-description: ''
+title: Értékesítési rendelések hitelvisszatartása
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a szabályokat, amelyekkel egy értékesítési rendeléshez hitelfelfüggesztést lehet beállítani.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057670"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124254"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Hitelkeret felfüggesztése értékesítési rendelésekhez
+# <a name="credit-holds-for-sales-orders"></a>Értékesítési rendelések hitelvisszatartása
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Ez a témakör azt mutatja be, hogyan lehet beállítani a szabályokat, amelyekkel egy értékesítési rendeléshez hitelfelfüggesztést lehet beállítani. A hitelkezelés zárolási szabályai egy adott vevőre vagy egy vevői csoportra vonatkozhatnak.  A zárolási szabályok a következő esetekre vonatkozó válaszokat határoznak meg:
+Ez a témakör azt mutatja be, hogyan lehet beállítani a szabályokat, amelyekkel egy értékesítési rendeléshez hitelfelfüggesztést lehet beállítani. A hitelkezelés zárolási szabályai egy adott vevőre vagy egy vevői csoportra vonatkozhatnak. A zárolási szabályok a következő esetekre vonatkozó válaszokat határoznak meg:
 
 1. Késedelem napjainak száma
 2. Számlák állapota
@@ -87,9 +85,9 @@ Nyissa meg a **Hitelkeret lejárt** lapot, ha a zárolási szabály olyan vevők
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. A **Kockázati csoport** kiválasztásával tovább korlátozhatja a hitelkezelés céljából várakoztatott vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít. 
-  - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
-  - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
-6. Adja meg **Hitelkeret túllépve ennyi napja** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelés céljából várakoztatva lesz. A késésben lévő napok száma olyan további türelmi napokat jelent, amelyek hozzá lesznek adva hitelkeret lejárta utáni napokhoz.
+   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
+5. Adja meg **Hitelkeret túllépve ennyi napja** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelés céljából várakoztatva lesz. A késésben lévő napok száma olyan további türelmi napokat jelent, amelyek hozzá lesznek adva hitelkeret lejárta utáni napokhoz.
 
 ### <a name="overdue-amount"></a>Késedelmes összeg
 
@@ -104,11 +102,10 @@ Nyissa meg a **Lejárt összeg** lapot, ha a zárolást szabály a lejárt össz
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, ha tovább szeretné korlátozni a hitelkezelés céljából várakoztatásra kerülő vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít. 
-  - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
-  - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
+   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg a **Késedelmes összeg** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül ellenőrzéshez. 
-6. Válassza ki az **Érték típusát** amely meghatározza, hogy milyen típusú értékkel lesz használva, illetve annak tesztelését, hogy mennyi lett felhasználva a hitelkorlátból. A zárolási szabályoknak százalékértéket kell megadni, de a kizáráshoz megadható rögzített összeg vagy százalékos érték.
-s hold. A Küszöb a hitelkeretre vonatkozik.
+6. Válassza ki az **Érték típusát** amely meghatározza, hogy milyen típusú értékkel lesz használva, illetve annak tesztelését, hogy mennyi lett felhasználva a hitelkorlátból. A zárolási szabályoknak százalékértéket kell megadni, de a kizáráshoz megadható rögzített összeg vagy százalékos érték. A Küszöb a hitelkeretre vonatkozik.
 7. Adjon meg egy **Hitelkeret-küszöbértéket** a kiválasztott szabályhoz, mielőtt a vevő a hitelkeretkezelés céljából várakoztatásra kerül. Ez lehet egy összeg vagy egy százalék az érték típusa helyen kiválasztott értéktípus alapján.
 8. A szabály ellenőrzi, hogy a **Hátralékos érték** túl van-e lépve és azt, hogy a **Hitelkorlát küszöbérték** túl van-e lépve. 
 
@@ -125,9 +122,9 @@ Válassza ki az **Értékesítési rendelés** lehetőséget, ha a zárolási sz
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, ha tovább szeretné korlátozni a hitelkezelés céljából várakoztatásra kerülő vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít.  
-  - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
-  - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
-6. Adja meg az **Értékesítési rendelés összege** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül. 
+   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
+5. Adja meg az **Értékesítési rendelés összege** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül. 
 
 Az értékesítési rendelés szabálya egy további beállítást tartalmaz, amely felülbírálja az összes többi szabályt. Ha olyan kizárást szeretne létrehozni, amely az értékesítési rendelést az egyéb szabályok figyelembe vétele nélkül fogja felszabadítani , jelölje be az **Értékesítési rendelés felszabadítása** jelölőnégyzetet a kizárási sorban.
 
@@ -216,8 +213,8 @@ Amikor felkutatta a várakoztatás okát, és megoldotta azokat, a további feld
 2) Válasszon egy **Felszabadítási okot** a rendeléshez, amelyet felszabadításra jelölt ki.  
 3) Adja meg a **Felülvizsgálat dátuma** értéket az egyes rendelésekhez, amelyet felszabadításra jelölt ki.  
 4) Válassza ki **Felszabadítás** menüt egy rendelés felszabadításához. Ez a menü csak akkor érhető el, ha tranzakciókat választott ki. A felhasználónak két opció jelenik meg:
- - Válassza a **Feladással** lehetőséget a visszatartás eltávolításához, ekkor a dokumentum feladása ugyanazzal a feladási eljárással történik, amelyet a rendszer a visszatartáskor használt fel. Ha például az értékesítési rendelés megerősítése várakoztatásra került, akkor az értékesítési rendelés megerősítése a felszabadítás után lesz elvégezve. Az értékesítési rendelés feladási képernyő jelenik meg, amely lehetővé teszi, hogy a felhasználó feladja a visszaigazolást.
- - Válassza a **Feladás nélkül** lehetőséget, ha további feldolgozás nélkül szeretné eltávolítani a visszatartást. Az értékesítési rendelést manuálisan lehet feladni.
+   - Válassza a **Feladással** lehetőséget a visszatartás eltávolításához, ekkor a dokumentum feladása ugyanazzal a feladási eljárással történik, amelyet a rendszer a visszatartáskor használt fel. Ha például az értékesítési rendelés megerősítése várakoztatásra került, akkor az értékesítési rendelés megerősítése a felszabadítás után lesz elvégezve. Az értékesítési rendelés feladási képernyő jelenik meg, amely lehetővé teszi, hogy a felhasználó feladja a visszaigazolást.
+   - Válassza a **Feladás nélkül** lehetőséget, ha további feldolgozás nélkül szeretné eltávolítani a visszatartást. Az értékesítési rendelést manuálisan lehet feladni.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Rendelések elutasítása a visszatartási listán
 Egy értékesítési rendelés elutasításához használhatja a műveleti panel **Elutasítás** menüjét

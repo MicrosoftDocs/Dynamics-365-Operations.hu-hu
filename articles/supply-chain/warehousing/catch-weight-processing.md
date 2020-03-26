@@ -3,7 +3,7 @@ title: A tényleges súllyal rendelkező termék feldolgozása a raktárkezelés
 description: A témakör azt ismerteti, hogy a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzést végezni a raktárban.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004111"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095797"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004111"
 
 ## <a name="feature-exposure"></a>Funkció kitettsége
 
-Hogy a tényleges súllyal rendelkező termékek feldolgozásához használja a raktárkezelési funkciókat, a funkció bekapcsolásához a licenc konfigurációs kulcsot kell használnia. (Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre. Ezután a **Konfigurációs kulcsok** fülön bontsa ki a **Kereskedelem \> Raktár- és szállításkezelés** elemet, és jelölje be a jelölőnégyzetet a **Tényleges súly raktár esetén** lehetőséget).
+Hogy a tényleges súllyal rendelkező termékek feldolgozásához használja a raktárkezelési funkciókat, a funkció bekapcsolásához a licenc konfigurációs kulcsot kell használnia. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre. Ezután a **Konfigurációs kulcsok** fülön bontsa ki a **Kereskedelem \> Raktár- és szállításkezelés** elemet, és jelölje be a jelölőnégyzetet a **Tényleges súly raktár esetén** lehetőséget.
 
 > [!NOTE]
-> Mind a **Raktár-és szállításkezelés** licenc konfigurációs kulcsot, mind a **Folyamatelosztás \> tényleges súly** licenc konfigurációs kulcsokat is be kell kapcsolni. A tényleges súlyra vonatkozó konfigurációs kulcsok beállításához be kell kapcsolnia a funkciót a **Funkciókezelés** munkaterületen. A fő funkció, amelyet be kell kapcsolni a **Termék tényleges súly szerinti feldolgozása raktárkezeléssel**. Egy másik kapcsolódó, de nem kötelező funkció, amelyet be lehet kapcsolni a **Tényleges súllyal rendelkező termékek készletállapotának változása** funkció. Ezzel a funkcióval támogatást adhat hozzá az olyan termékek készletállapotának módosításai esetén, amelyek esetén engedélyezett a tényleges súly.
+> Mind a **Raktár-és szállításkezelés** licenc konfigurációs kulcsot, mind a **Folyamatelosztás \> tényleges súly** licenc konfigurációs kulcsokat is be kell kapcsolni. A tényleges súlyra vonatkozó konfigurációs kulcsok beállításához be kell kapcsolnia a funkciót a **Funkciókezelés** munkaterületen. A fő funkció, amelyet be kell kapcsolni a **Termék tényleges súly szerinti feldolgozása raktárkezeléssel**. Két kapcsolódó, de nem kötelező funkció, amelyet esetleg bekapcsolhat: **Tényleges súllyal rendelkező termékek készletállapotának változása** és **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik**.
 
 Miután a licenc konfigurációs kulcs be van kapcsolva, a kiadott termék létrehozásakor kiválaszthatja a **Tényleges súlyt**. A kiadott termékhez tárolási dimenziócsoportot társíthat, amelyhez a **Raktárkezelési folyamatok használata** paraméter ki van választva.
 
@@ -107,6 +107,7 @@ Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **
 **Ténylegessúly-címke követése használata esetén** a címkét mindig létre kell hozni minden ténylegessúly-egységhez ami beérkezik, és minden címkét mindig súllyal kell társítani.
 
 Például **Doboz** a tényleges súly egysége, és kap egy raklapot nyolc dobozzal. Ebben az esetben nyolc egyedi tényleges súly címkét létre kell hozni, és a súlyt minden címkéhez társítva kell lennie. A bejövő tényleges súly címkétől függően vagy összes nyolc doboz tömege rögzíthető, és az átlagos tömeg minden dobozra leosztható, vagy egyedi tömegek rögzíthetők az egyes dobozokra.
+A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a Raktározás alkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
 
 **Ha a tényleges súly címke nyomon követését nem alkalmazzák**, a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
 

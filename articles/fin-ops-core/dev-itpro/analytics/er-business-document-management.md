@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957367"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117337"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
+
+[!include [banner](../includes/banner.md)]
 
 Az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
 
@@ -147,7 +149,7 @@ A szükséges dokumentumkezelési paraméterek és dokumentumtípusok beállít�
 
 ![Dokumentumkezelés dokumentumtípusának beállítása](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Paraméterek beállítása</a>
+### <a name=""></a><a name="SetupBdmParameters">Paraméterek beállítása</a>
 
 Az alapvető üzletidokumentum-paraméterek lapon beállíthatja az alapvető az **Üzleti dokumentumok paraméterei** oldalon állíthatók be. Csak meghatározott felhasználók férhetnek hozzá a laphoz. Ezek közé a következők tartoznak:
 
@@ -158,7 +160,7 @@ A következő eljárással beállíthatja az összes jogi személy alapvető par
 
 1. Az **Üzleti dokumentum paraméterei** lapjához való hozzáféréssel rendelkező felhasználóként jelentkezzen be.
 2. Nyissa meg a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Üzleti dokumentumok kezelése** \> **Üzleti dokumentumok paraméterei** lapot.
-3.  Az **Üzleti dokumentum paraméterei** lap **Mellékletek** lapjának **SharePoint bizonylattípus** mezőjében határozza meg, hogy milyen dokumentumtípusban szeretné ideiglenesen tárolni az Office-formátumú sablonokat, amikor azok szerkesztése történik asztali Office alkalmazásokkal. 
+3.    Az **Üzleti dokumentum paraméterei** lap **Mellékletek** lapjának **SharePoint bizonylattípus** mezőjében határozza meg, hogy milyen dokumentumtípusban szeretné ideiglenesen tárolni az Office-formátumú sablonokat, amikor azok szerkesztése történik asztali Office alkalmazásokkal. 
 
 > [!NOTE]
 > Csak azok a dokumentumtípusok érhetők el ehhez a paraméterhez, amelyek egy SharePoint-hely használatával vannak konfigurálva.
@@ -288,13 +290,13 @@ A **BDM sablonszerkesztő** lap megnyílik. A kiválasztott sablon elérhetővé
 
 ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Sablon szerkesztése az Office 365 megoldásban</a>
+### <a name=""></a><a name="EditInOffice365">Sablon szerkesztése az Office 365 megoldásban</a>
 
 Módosíthatja a sablont az Office 365 használatával. Például az Office Online webhelyen a sablon fejlécében lévő mező betűtípusát **Normál** értékről **Félkövérre** kell módosítani. Ezeket a módosításokat a rendszer automatikusan menti a szerkeszthető sablonban, amely az elsődleges sablon tárhelyén (alapértelmezés szerint az Azure blob tároló), amely konfigurálva van az ER keretrendszerben. Ez be van állítva az ER keretrendszerhez.
 
 ![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Sablon szerkesztése az Office asztali alkalmazásban</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Sablon szerkesztése az Office asztali alkalmazásban</a>
 
 > [!NOTE]
 > Ez a funkció csak akkor érhető el, ha a **SharePoint dokumentumtípus** paraméter megfelelően van konfigurálva. További információ: [Paraméterek konfigurálása](#SetupBdmParameters).
@@ -398,7 +400,7 @@ Igen, megteheti. Az első alkalmazásmunkamenetben válassza a **Megnyitás az a
 3. Válassza ki **BDM-sablonszerkesztő** lapján az első alkalmazásmunkamenetnél a **Tárolt másolat szinkronizálása** lehetőséget.
 4. Hajtsa végre ezt a sablon ER-formátumot a második alkalmazásmunkamentben.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Az „Érték nem lehet nulla” üzenetet kapom. Paraméter neve: "externalId", ha a **Megnyitás asztali alkalmazásban**lehetőséget választom. Hogyan lehet ezt megoldani? 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Az „Érték nem lehet nulla” üzenetet kapom. Paraméter neve: „externalId”, ha a **Megnyitás asztali alkalmazásban**lehetőséget választom. Hogyan lehet ezt megoldani? 
 Valószínűleg olyan Azure AD tartományból jelentkezett be az alkalmazás jelen példányába, amely eltér a az alkalmazás ezen példányának telepítéséhez használt Azure AD tartománytól. Mivel a SharePoint szolgáltatás, amely sablonokat tárol az Office asztali alkalmazásokkal történő szerkesztésre, a program ugyanazon tartományhoz tartozik, mint az alkalmazás nincs jogosultságunk a SharePoint szolgáltatás eléréséhez. A probléma megoldásához a megfelelő Azure AD tartománnyal rendelkező felhasználó hitelesítő adataival jelentkezzen be az aktuális példányba.
 
 ## <a name="additional-resources"></a>További erőforrások

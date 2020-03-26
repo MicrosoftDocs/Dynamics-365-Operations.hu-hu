@@ -1,9 +1,9 @@
 ---
-title: Termékajánlatok beszerzése bemutatóadatok használatával
+title: Ajánlások létrehozása bemutató adatokkal
 description: A dokumentum útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042780"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127836"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Termékajánlatok beszerzése bemutatóadatok használatával
+# <a name="create-recommendations-with-demo-data"></a>Ajánlások létrehozása bemutató adatokkal
+
+[!include [banner](includes/banner.md)]
+
 A dokumentum útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
 
 A többcsatornás termékajánlások termékek szerkesztők által karbantartott vagy program által generált listájának készletét adják. Ezek a listák több esetben is használhatók, attól függően, hogy milyen üzleti szükséglet van. A termékajánlási listákkal kapcsolatos további tudnivalókat lásd: [Termékajánlások áttekintése](product-recommendations.md).
@@ -67,4 +70,22 @@ A kiterjesztés tartalmaz egy „RecoMockDataset.csv” nevű adatfájlt, amely 
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
-[Környezet tervezése](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
+[Termékajánlatok engedélyezése](enable-product-recommendations.md)
+
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
+
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Termékajánlások hozzáadása a pénztárnál](product.md)
+
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

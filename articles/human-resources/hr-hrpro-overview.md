@@ -1,6 +1,6 @@
 ---
 title: Áttekintés
-description: ''
+description: A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az Emberi erőforrások beállításáról, az alkalmazottak kompenzációjának és juttatásának beállításáról, valamint a munkaerő kezeléséről.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009270"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091724"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -32,9 +32,9 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 ## <a name="set-up-human-resources"></a>Az Emberi erőforrások modul beállítása
 
 [A Human Resources paramétereinek konfigurálása](hr-setup-parameters.md)</br>
-[Megosztott emberierőforrás-paraméterek konfigurálása](hr-setup-shared-parameters.md)</br>
-[Emberi erőforrással kapcsolatos munkafolyamatok beállítása](hr-setup-workflows.md)</br>
-[Dátuma és Idő mezők ismertetése](hr-setup-date-time-fields.md)</br>
+[Megosztott emberierőforrás-paraméterek karbantartása](hr-setup-shared-parameters.md)</br>
+[Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása](hr-setup-workflows.md)</br>
+[Dátum és Idő mezők ismertetése](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Szervezeti beállítások konfigurálása
 
@@ -93,22 +93,22 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 ## <a name="manage-leave-and-absence"></a>Szabadság és távollét kezelése
 
 [Áttekintés](hr-leave-and-absence-overview.md)</br>
-[Szabadság- és távollétparaméterek konfigurálása](hr-leave-and-absence-parameters.md)</br>
+[Szabadság és távollét paramétereinek konfigurálása](hr-leave-and-absence-parameters.md)</br>
 [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)</br>
-[Szabadságkérelem munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)</br>
+[Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)</br>
 [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)</br>
 [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)</br>
 [Alkalmazottak hozzárendelése a szabadságtervhez](hr-leave-and-absence-enroll.md)</br>
-[Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)</br>
+[Elhatárolt szabadság- és távolléti tervek](hr-leave-and-absence-accrue.md)</br>
 [A szabadság és távollét elemzésének megtekintése](hr-leave-and-absence-analytics.md)</br>
 [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)</br>
-[Szabadság kérése](hr-employee-self-service-request-time-off.md)</br>
-[Csapat-és vállalati naptárak megtekintése](hr-employee-self-service-calendar.md)</br>
+[Szabadság kérelmezése](hr-employee-self-service-request-time-off.md)</br>
+[Csoportos és vállalati naptárak megtekintése](hr-employee-self-service-calendar.md)</br>
 
 ## <a name="develop-employees"></a>Alkalmazottak fejlesztése
 
 [Teljesítménykezelés – áttekintés](hr-develop-performance-management-overview.md)</br>
-[Munkaerőkészségek összehangolása](hr-develop-skills.md)</br>
+[Munkaerő-készségek összehangolása](hr-develop-skills.md)</br>
 [Hozzáadás a teljesítménynaplóhoz](hr-develop-add-performance-journal.md)</br>
 [Cél létrehozása](hr-develop-create-goal.md)</br>
 [Teljesítménykimutatás létrehozása](hr-develop-create-performance-review.md)</br>
@@ -120,7 +120,7 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 [Kérdőívek tervezése](hr-learning-design-questionnaires.md)</br>
 [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md)</br>
 [Kérdőívek terjesztése ütemezés segítségével](hr-learning-distribute-questionnaires-scheduling.md)</br>
-[Kérdőív eredményének megtekintése](hr-learning-evaluate-questionnaire-results.md)</br>
+[Kérdőív eredményeinek megtekintése](hr-learning-evaluate-questionnaire-results.md)</br>
 [Kérdőív eredményeinek elemzése](hr-learning-analyze-questionnaire-results.md)</br>
 [Kifejtős kérdés létrehozása](hr-learning-create-open-ended-question.md)</br>
 [Eldöntendő kérdés létrehozása](hr-learning-create-closed-ended-question.md)</br>

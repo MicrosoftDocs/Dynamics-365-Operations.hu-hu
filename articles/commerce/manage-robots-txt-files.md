@@ -3,7 +3,7 @@ title: Robots.txt fájlok kezelése
 description: Ez a témakör a robots. txt fájl kezelésének módját ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brishoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0ce49f2968030ca4656a01c7646819c01635e12
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d248dae36e6e038749ee17a5a6ccb32f1dde0aed
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003487"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096843"
 ---
 # <a name="manage-robotstxt-files"></a>Robots.txt fájlok kezelése
 
@@ -88,15 +88,23 @@ A robots.txt fájl törléséhez a Commerce alkalmazásban, kövesse az alábbi 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[A tartománynevének konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+
+[Online áruház csatornájának beállítása](online-stores.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
 [Online webhely társítása csatornával](associate-site-online-store.md)
 
+[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+
+[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
+
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

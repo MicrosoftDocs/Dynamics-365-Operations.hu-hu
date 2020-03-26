@@ -1,6 +1,6 @@
 ---
-title: Foglalkoztatási kategóriák létrehozása
-description: ''
+title: Alkalmazási kategóriák létrehozása
+description: A Dynamics 365 Human Resources rendszerben megfelelő foglalkoztatási kategóriákat állíthat be a dolgozóihoz.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59f03eadb97a00435bc8b7c02de6854439e2b179
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bad9ea41e0b1367fc660dfbc59595dce81174adc
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009340"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092683"
 ---
-# <a name="create-employment-categories"></a>Foglalkoztatási kategóriák létrehozása
+# <a name="create-employment-categories"></a>Alkalmazási kategóriák létrehozása
 
 [!include [banner](includes/preview-feature.md)]
 

@@ -3,7 +3,7 @@ title: Termékajánlatok GYIK-je
 description: Ez a témakör a termékajánlások vagy azok eredményeivel kapcsolatos problémák elhárításához használható folyamatokkal és eszközökkel kapcsolatban tartalmaz tájékoztatást.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003027"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127790"
 ---
 # <a name="product-recommendations-faq"></a>Termékajánlatok GYIK-je
 
@@ -75,12 +75,28 @@ A termékajánlási lapoknak az e-kereskedelmi webhelyhez történő hozzáadás
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Hogyan engedélyezhetők ajánlások a POS-en?
 
-A termékajánlások engedélyezése után hozzá kell adnia az ajánlások panelt a POS vezérlése képernyőhöz. Lásd [a funkció dokumentációját](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen), amelyben további tájékoztatás található arról, hogy hogyan lehet hozzáadni az ajánlások panelt a POS-eszköz elrendezéséhez.
+A termékajánlások engedélyezése után hozzá kell adnia az ajánlások panelt a POS vezérlése képernyőhöz. További információért lásd: [Ajánlatok vezérlőjének hozzáadása a pénztáreszközök tranzakciós képernyőjéhez](add-recommendations-control-pos-screen.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 
-[AI-ML-alapú termékajánlás eredményeinek kezelése](modify-product-recommendation-results.md)
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
+
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Termékajánlások hozzáadása a pénztárnál](product.md)
+
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)

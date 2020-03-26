@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890327"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133896"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 
@@ -66,6 +67,16 @@ Hozzáadhat sorokat, amelyek nem voltak a szállítói számla beszerzési rende
 
 A szervezet használhat meghatározott munkafolyamatokat a szállítói számlák ellenőrzési eljárásához. A munkafolyamat előírhatja a számlafejléc, a számlasor vagy mindkettő ellenőrzését. A munkafolyamat vezérlőelemei a fejlécre vagy a sorra vonatkoznak, attól függően, hogy hol van a fókusz, amikor a vezérlőelemet választja. A **Feladás** gomb helyett a **Küldés** gomb jelenik meg, amelyet használhat szállítói számla feladásához az ellenőrzési folyamat során.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>A számla beküldésének megakadályozása a munkafolyamatba 
+
+A következőkben többféle módot ismerhet meg, amelyekkel megakadályozhatja, hogy egy számla beküldésre kerüljön a munkafolyamatba.
+
+- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személy figyelmeztetést kap, hogy a végösszegek nem egyeznek meg, így a számlának a munkafolyamatba való újraküldése előtt korrigálni tudja az egyenlegeket. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
+
+- **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán hozzárendeletlen költségek találhatók, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja a számlát. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a szállítói számlán hozzárendeletlen költéségek találhatók** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
+
+- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán duplikált sorszám található, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja azt. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek paraméter, amelynek címkéje **Használt számlaszám ellenőrzése** beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Szállítói számlák egyeztetése a termékbevételezésekkel
 
 Megadhatja és mentheti a szállítói számlák adatait, és a számlasorokat egyeztetheti a termékbevételezési sorokkal. Részleges mennyiségeket is egyeztethet a soroknál.
@@ -77,6 +88,16 @@ A számla feladásakor a **Számlahátralék** mennyisége minden cikkre vonatko
 Ez a lehetőség azt feltételezi, hogy legalább egy termékbevételezést feladtak a beszerzési rendeléshez. A szállítói számla ezeken a termékbevételezéseken alapul, és azok mennyiségeit tükrözi. A számla pénzügyi adatai a számla feladásakor megadott információkon alapulnak.
 
 További informáiók: [A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Automatizált feladat konfigurálása a szállítói számla munkafolyamathoz a szállítói számla kötegelt feladattal történő feladásához
+
+A szállítói számla munkafolyamatához hozzáadhat egy automatizált feladási feladatot, hogy a számlák feldolgozása egy kötegben történjen. A számlák kötegek feladásával a munkafolyamat folytatódhat anélkül, hogy várnia kellene a feladás befejezésére, ami javítja a munkafolyamatnak elküldött összes feladat általános teljesítményét.
+
+Ha kötegelten szeretné feladni a szállítói számlát , akkor a **Funkciókezelés** oldalon kapcsolja be a **Szállítói számlák kötegelt feladása** paramétert. A szállítói számlák munkafolyamatait a **Kötelezettségek > Beállítások > Kötelezettségek munkafolyamatai** helyen konfigurálhatja.
+
+A munkafolyamat-szerkesztőben látható **Szállítói számlák feladása kötegben** feladat attól függetlenül, hogy a **Szállítói számla kötegelt feladása** funkcióparaméter engedélyezve van-e. Ha nincs engedélyezve a funkcióparaméter, akkor egy olyan számla, amely tartalmazza a **Szállítóói számla feladása kötegelt feladattal** opciót nem lesz feldolgozva munkafolyamatban, amíg a paraméter engedélyezve nem lesz. A **Szállítói számla kötegelt feladattal történő feladása** nem használható ugyanabban a munkafolyamatban, mint a **szállítói számlák feladása** automatizált feladat. Ezenkívül a **Szállítói számla feladása kötegelt feladattal** a munkafolyamat-konfiguráció utolsó eleme kell legyen.
+
+Megadhatja, hogy hány számla kerüljön egy kötegbe, valamint a köteg újraütemezése előtt kivárandó órák száma, a **Kötelezettségek > Beállítások > Kötelezettségek paraméterei > Számla > Számla munkafolyamata** helyen. 
 
 ## <a name="working-with-multiple-invoices"></a>Több számla használata
 

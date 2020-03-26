@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178136"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106859"
 ---
 # <a name="process-collection-letters"></a>Fizetési felszólítások feldolgozása
 
@@ -70,7 +70,11 @@ Ez a cikk a fizetési felszólítások létrehozását, nyomtatását és felad�
     1. Válasszon ki egy lehetőséget a **Nyomtatott** mezőben.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>A fizetési felszólítások ellenőrzése a vevő szintjén
-Fizetési felszólításokat a vevők szintjén is beállíthatja, hogy a fizetésifelszólítás-kód az egyes tranzakciókhoz nyomon legyen követve de a fizetési felszólítás feldolgozása a vevőhöz tárolt egyetlen fizetésifelszólítás-szinten alapuljon. Az egyetlen fizetési felszólítás aí vevőhöz tartozó összes lejárt tranzakció fogja tartalmazni. Mivel a türelmi napok mostantól nyomon követhetők a vevői szinten, a következő fizetési felszólítás nem lesz elküldve mindaddig, amíg a sorozatban következő fizetési felszólításhoz kapcsolódó türelmi időszak le nem jár, annak ellenére, a tranzakciók késedelmessé váltak az utolsó fizetési felszólítás elküldése után. Ez a lehetőség csökkenti a vevőnként elküldött a fizetési felszólítások számát. 
+Ha a fizetési felszólítások a tranzakció szintjén vannak beállítva, akkor a tranzakció korosítása alapján több levelet lehet létrehozni a vevő számára. Ha a tranzakciók különböző levélsorozatokban jelennek meg, akkor a vevőhöz kapcsolódó lejárt tranzakciók mindegyik csoportjához külön fizetési felszólítás jön létre. Így előfordulhat, hogy egy adott vevő például egy fizetési felszólítást kap a 60 nap késéssel rendelkező tranzakciók esetében, és egy másik fizetési felszólítást a 90 napja lejárt tranzakcióhoz. 
+
+A fizetési felszólítások egy fizetésifelszólítás-kódhoz is hozzá vannak rendelve. A felszólítólevél-kód egy egyéni tranzakcióhoz van társítva, és annak meghatározására szolgál, hogy mikor kell létrehozni a következő fizetési felszólítást minden egyes tranzakcióhoz. Ha például egy tranzakció meghaladja a 30 napot, akkor a fizetési felszólítás kódja azt határozza meg, hogy a következő fizetési felszólítást a program akkor küldje, amikor a tranzakció 60 napja esedékes, ha eddig nem fizetik ki. 
+
+A fizetési felszólításokat a vevő szintjén is be lehet állítani. Ebben az esetben fizetésifelszólítás-kód az egyes tranzakciókhoz nyomon lesz követve de a fizetési felszólítás feldolgozása a vevőhöz tárolt egyetlen fizetésifelszólítás-szinten alapuljon. Az egyetlen fizetési felszólítás aí vevőhöz tartozó összes lejárt tranzakció fogja tartalmazni. Mivel a türelmi napok mostantól nyomon követhetők a vevői szinten, a következő fizetési felszólítás nem lesz elküldve mindaddig, amíg a sorozatban következő fizetési felszólításhoz kapcsolódó türelmi időszak le nem jár, annak ellenére, a tranzakciók késedelmessé váltak az utolsó fizetési felszólítás elküldése után. Ez a lehetőség segít csökkenteni a vevőnként elküldendő a fizetési felszólítások számát.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>A fizetési felszólítások ellenőrzésének beállítása a vevő szintjén
 1.  Ugorjon a **navigációs ablaktábla > Modulok > Követelések és beszedések > Beállítás > Kinnlevőségek paraméterei** helyre, és kattintson a **Beszedések** lapfülre. 

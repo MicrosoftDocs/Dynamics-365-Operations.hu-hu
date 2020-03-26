@@ -1,9 +1,9 @@
 ---
-title: AI-ML-alapú termékajánlás eredményeinek kezelése
+title: AI-ML-alapú termékajánlás eredményeinek kiigazítása
 description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025002"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127928"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>AI-ML-alapú termékajánlás eredményeinek kezelése
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-alapú termékajánlás eredményeinek kiigazítása
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet testreszabni a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára. 
+Ez a témakör azt mutatja be, hogyan lehet kiigazítani a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára. 
 
 A termékjavaslatok engedélyezése után az alapértelmezett beállítások lépnek érvénybe ezek a paraméterek számos szükséglethez használhatók lehetnek. A legjobb az, ha hagynak egy kis időt arra, hogy az eredmények megfelelnek-e a termékek értékesítési irányának. Javasoljuk, hogy néhány napig értékelje ki az eredményeket, mielőtt igény szerint módosítaná a paramétereket az újratesztelés előtt. 
 
@@ -102,10 +102,22 @@ A következő lépések végrehajtásával manuálisan adhat hozzá vagy távol�
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Termékajánlások hozzáadása a pénztárnál](product.md)
+
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)

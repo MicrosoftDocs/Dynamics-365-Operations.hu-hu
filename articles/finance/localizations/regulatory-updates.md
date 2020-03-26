@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 Finance tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 2aea83f99c7e5b017ae0cf9d755882739e22ccb7
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000001"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112755"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -42,39 +42,34 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 
 |Ország|Kiadás tervezett dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------|
+|      Brazília         |   2020. március – 2020. január      | 10.0.9, 10.0.8      |   DRCST SC – 416. sz. SEF-rendelet    |
+|      Brazília         |   2020. március – 2020. január     | 10.0.9, 10.0.8      |   SPED hozzájárulás - 2020 januári intézkedés    |
 |      Brazília         |   március 2020.       | 10.0.9      |   Sped fiscal – változások a D100 rekord COD_MUN_ORI mezőjében    |
-|      Brazília         |   2020. március – 2019. december       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – 254/19. sz. SEF-rendelet    |
-|      Brazília         |   2020. január – 2019. december       | 10.0.8, 10.0.7HF      |   Kiegészítő információk a ICMS-ST-ben    |
-|      Brazília        |   2020. március – 2019. december       | 10.0.9, 10.0.8HF, 10.0.7HF      |   SPED pénzügyi rendezés 014 |
-|      Brazília         |   december 2019.       | 10.0.7      |   Az NF-e: NT 2019.001 1.20-s verziójához készült technikai megjegyzések új verziója    |
-|      Brazília         |   december 2019.       | 10.0.7      |   DRCST nyilatkozat SC    |
-|      Brazília          |   2020. március – 2020. január       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – 343DR. sz. SEF-rendelet   |
+|      Brazília         |   2020. március – 2020. január       | 10.0.9, 10.0.8      |   DRCST SC – 254/19. sz. SEF-rendelet    |
+|      Brazília         |   Január 2020.       | 10.0.8      |   Kiegészítő információk a ICMS-ST-ben    |
+|      Brazília        |   2020. március – 2020. január       | 10.0.9, 10.0.8HF      |   SPED pénzügyi rendezés 014 |
+|      Brazília          |   2020. március – 2020. január       | 10.0.9, 10.0.8HF      |   DRCST SC – 343DR. sz. SEF-rendelet   |
 |      Franciaország          |   március 2020.       | 10.0.9      |   Francia lokalizáció: ISO 20022 formátum nemzetközi fizetéshez és kincstári átutaláshoz   |
+|      Magyarország          |   március 2020.       | 10.0.9, 10.0.8      |   Online számlázási rendszer v. 2.0 a Finance and Operations alkalmazásban    |
 |      India          |   március 2020.       | 10.0.9      |   Új GSTR (ANX-1 & ANX-2) visszirányú offline eszköz   |
 |      Olaszország          |   Január 2020.       | 10.0.8      |   A D.L. változásai az ÁFA kezelésében 2018. október 23. / 119: Éves adóügyi kommunikáció |
-|      Olaszország         |   december 2019.       | 10.0.7      |   A D.L. változásai az ÁFA kezelésében 119 / 2019. okt. 23: negyedéves áfakommunikáció („Lipe 2018”)    |
-|      Olaszország         |   2020. március – 2019. december     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – A vevőadatok kezelése a pénztárban |
-|      Olaszország         |   2020. március – 2019. december      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
-|      Olaszország         |   december 2019.     | 10.0.7      |   A D.L. változásai az ÁFA kezelésében 2018. okt. 23./119: Számlák kommunikációja  |
-|      Japán          |   2020. március – 2019. december     | 10.0.9, 10.0.8HF, 10.0.7HF     |   A Japán Bankárok Szövetsége a JBA fix hosszúságú kifizetési formátumokat ISO20022-ra cseréli |
-|      Japán          |   2020. január – 2019. december     | 10.0.8, 10.0.7HF       |   Fogyasztási adó kulcsának változása és csökkentett adókulcs bevezetése (Fogyasztásiadó-jelentés) |
-|      Japán         |   december 2019.      | 10.0.7       |   Fogyasztási adó kulcsának változása és csökkentett adókulcs bevezetése (számlaelrendezések) |
-|      Mexikó          |   2020. január – 2019. december    | 10.0.8, 10.0.7HF        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
-|     Mexikó          |   december 2019.       | 10.0.7      |   2.7.2.9 szabályfrissítés – a CFDI dokumentumot kiállító létesítmény irányítószámának használata |
-|      Mexikó           |   2020. január – 2019. december      | 10.0.8, 10.0.7HF     |   Kódellenőrzés a termékek és szolgáltatások katalógusában |
-|      Norvégia          |   2020. március – 2019. december   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD frissítése a 1.1 verzióra a Dynamics 365 for Finance and Operations-höz |
-|      Lengyelország          |   március 2020.    | 10.0.9     |   Bemeneti áfa jegyzéke és SAF-áfajegyzék: az EV-dokumentumok szerinti egyéni Ügynökséget a harmadik rész nevének és az adómentességi számnak kell helyettesítenie |
+|      Olaszország         |   március 2020.     | 10.0.9, 10.0.8HF      |   Retail – A vevőadatok kezelése a pénztárban |
+|      Olaszország         |   március 2020.      | 10.0.9, 10.0.8HF      |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
+|      Japán          |   március 2020.     | 10.0.9, 10.0.8HF     |   A Japán Bankárok Szövetsége a JBA fix hosszúságú kifizetési formátumokat ISO20022-ra cseréli |
+|      Japán          |   Január 2020.      | 10.0.8       |   Fogyasztási adó kulcsának változása és csökkentett adókulcs bevezetése (Fogyasztásiadó-jelentés) |
+|      Mexikó          |   Január 2020.     | 10.0.8        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
+|      Mexikó           |   Január 2020.       | 10.0.8     |   Kódellenőrzés a termékek és szolgáltatások katalógusában |
+|      Norvégia          |   március 2020.   | 10.0.9, 10.0.8HF     |   SAF-T XSD frissítése a 1.1 verzióra a Dynamics 365 for Finance and Operations-höz |
+|      Lengyelország          |   március 2020.    | 10.0.9     |   Bemeneti áfa jegyzéke és SAF-áfajegyzék: az EV-dokumentumok szerinti egyéni Ügynökséget a harmadik fél nevének és az adómentességi számnak kell helyettesítenie |
 |      Lengyelország          |   2020. március – 2020. január   | 10.0.9, 10.0.8HF     |   Retail – A vevőadatok kezelése a pénztárban |
 |      Lengyelország          |   2020. március – 2020. január     | 10.0.9, 10.0.8HF     |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
-|      Lengyelország          |   2020. március – 2019. december     | 10.0.9, 10.0.8, 10.0.7     |   SAF-számlák (JPK_FA) v.3 2019. dec. 2-től |
-|      Lengyelország          |   2020. március – 2019. január     | 10.0.9, 10.0.8     |   A JPK_VDEK felváltja a JPK_VAT (SAF VAT) értéket |
-|      Lengyelország          |   december 2019.     | 10.0.7     |   Kötelező felosztott fizetés |
+|      Lengyelország          |   2020. március – 2020. január     | 10.0.9, 10.0.8     |   SAF-számlák (JPK_FA) v.3 2019. dec. 2-től |
+|      Lengyelország          |   2020. március – 2020. január     | 10.0.9, 10.0.8     |   A JPK_VDEK felváltja a JPK_VAT (SAF VAT) értéket |
 |      Oroszország          |   március 2020.     | 10.0.9     |   Az ingatlanadó bevallásának formátuma 2019-ben megváltozott |
 |      Oroszország          |   március 2020.     | 10.0.9     |   Nyereségadó-bevallás formátumának frissítései |
-|      Szingapúr           |   2020. január – 2019. december     | 10.0.8, 10.0.7HF      |   GST visszáru-jelentések |
+|      Szingapúr           |   Január 2020.     | 10.0.8      |   GST visszáru-jelentések |
 |      Svájc           |   március 2020.     | 10.0.9      |   Svájci kifizetési bizonylat ISR-je új formátumot kap (QR-kód) |
 |      Egyesült Királyság          |   Január 2020.       | 10.0.8      |   Adó digitalizálása (MTD) – A rendszergazda hozzájárulása az információk D365 alkalmazáson kívüli továbbítására a HMRC-vel való integráció segítségével |
-|      Egyesült Királyság          |   december 2019.     | 10.0.7     |   Digitális adózás – Áfa-visszaküldési jelentés létrehozása az ugyanazon v.10 rendszeradatbázisban lévő áfacsoportként. |
 
 
 

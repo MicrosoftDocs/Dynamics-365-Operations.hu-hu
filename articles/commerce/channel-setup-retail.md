@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8ac01f36912fa5e8a09bb4f324ef272cec737aa1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002381"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113828"
 ---
 # <a name="set-up-a-retail-channel"></a>Kiskereskedelmi csatorna beállítása
 
@@ -66,7 +66,7 @@ A következő kép egy példát mutat a kiskereskedelmi csatornára.
 
 Számos egyéb választható beállítás érhető el, amely a kiskereskedelmi üzlet szükségletei alapján beállítható a **Kimutatás/zárás** és a **vegyes** szakaszok között.
 
-Ezenkívül lásd [A pénztár (POS) képernyő-elrendezései](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) című részt további információért az alapértelmezett képernyő-elrendezés beállításáról a **Képernyő-elrendezés** szakaszban és a [Kiskereskedelmi hardverállomás konfigurálása és telepítése](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) című részt telepítési információért a **Hardverállomások** résszel kapcsolatban.
+Ezenkívül lásd [A pénztár (POS) képernyő-elrendezései](pos-screen-layouts.md) című részt további információért az alapértelmezett képernyő-elrendezés beállításáról a **Képernyő-elrendezés** szakaszban és a [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md) című részt telepítési információért a **Hardverállomások** résszel kapcsolatban.
 
 A következő kép egy példát mutat a kiskereskedelmi csatorna beállítási konfigurációjáról.
 

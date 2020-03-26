@@ -3,7 +3,7 @@ title: Termékajánlatok engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d3f1bc2526eeacb4bd6338a0679eadd95a75989
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 879fccb063ca0b74e0f022a9edf6a15f7d1311ae
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024956"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127882"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -38,7 +38,7 @@ Az engedélyezés előtt fekhívjuk figyelmét, hogy a termékjavaslatok csak az
 
 Az ADLS engedélyezésével kapcsolatos lépéseket lásd [ADLS engedélyezése a Dynamics 365 környezetben](enable-ADLS-environment.md).
 
-Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. Ha további tájékoztatást szeretne erről a beállítási folyamatról, kattintson [ide.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
+Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. Ha további tájékoztatást szeretne erről a beállítási folyamatról, kattintson [ide.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
 
 
 ## <a name="turn-on-recommendations"></a>Termékjavaslatok bekapcsolása
@@ -70,13 +70,23 @@ Ha további tájékoztatást szeretne arról, hogyan lehet személyre szabott aj
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
+[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Ajánlások panel hozzáadása a pénztáreszközökhöz](add-recommendations-control-pos-screen.md)
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
 
-[Termékgyűjtési modul áttekintése](product-collection-module-overview.md)
+[Termékajánlások hozzáadása a pénztárnál](product.md)
 
-[ADLS engedélyezése a Dynamics 365 környezetben](enable-ADLS-environment.md)
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)
 

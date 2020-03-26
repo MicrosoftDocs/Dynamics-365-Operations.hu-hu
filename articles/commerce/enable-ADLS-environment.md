@@ -3,7 +3,7 @@ title: ADLS engedélyezése a Dynamics 365 Commerce környezetben
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage (ADLS) megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 068eb522bd44e02dd31d3337a051691a956637fc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025251"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127767"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS engedélyezése a Dynamics 365 Commerce környezetben
 
@@ -95,8 +95,22 @@ Ha nem fejeződött be, akkor kövesse a [termékajánlások és a környezet sz
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 
-[Termékjavaslat-listák hozzáadása az oldalakhoz](add-reco-list-to-page.md)
+[Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
+
+[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
+
+[Termékajánlások hozzáadása a pénztárnál](product.md)
+
+[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+
+[AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
+
+[Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
+
+[Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+[Termékajánlatok GYIK-je](faq-recommendations.md)
 
 

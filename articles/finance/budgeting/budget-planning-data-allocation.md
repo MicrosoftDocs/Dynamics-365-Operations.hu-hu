@@ -3,7 +3,7 @@ title: Költségvetés-tervezés – adatok megadása
 description: A témakör ismerteti a Microsoft Dynamics 365 Finance-ben elérhető különféle felosztási módszereket és bemutatja azok használatát.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772076"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106882"
 ---
 # <a name="budget-planning-data-allocation"></a>Költségvetés-tervezés – adatok megadása
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti a Microsoft Dynamics 365 Finance alkalmazásban elérhető különféle felosztási módszereket és bemutatja azok használatát.  
+A témakör ismerteti a Microsoft Dynamics 365 Finance-ben elérhető különféle felosztási módszereket és bemutatja azok használatát.  
 
 A költségvetési tervben számos módon eloszthatja az adatokat a tervezett összegek pontos megjelenítése érdekében.
 
 ## <a name="allocation-methods"></a>Felosztási mód
 Háromféle felosztási móddal (időszakok közötti felosztás, felosztás dimenziókra és főkönyvi felosztási szabályok használata) hozhat létre sorokat a költségvetésben; ezek az azonos költségvetési tervben lévő sorokra épülnek. Más költségvetési tervekben a költségvetésiterv-sorokat három másik módon (összesítés, felosztás és másolás a költségvetési tervből) hozhatja létre. Mind a hat felosztási mód esetén Ön határozza meg a felosztási célváltozatot. A célváltozat megegyezhet a forrásváltozattal, de el is térhet attól. Ezenkívül megadhatja, hogy az új sorokat a rendszer hozzárendelje a költségvetési tervhez, vagy cserélje az aktuális sorokat.
+
+> [!NOTE] 
+> Az aggregációhoz olyan egyedi tervváltozatot kell használni, amely eltér a fölérendelt tervben korábban elvégzett felosztáshoz vagy más módosításokhoz használt tervváltozattól.  
 
 [![Időszakok közötti felosztás módja](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Időszakok közötti felosztás** – A költségvetési terv sorait a forrásként szolgáló költségvetési tervváltozatból időszaki felosztási kategória segítségével oszthatja fel a célváltozat pénzügyi időszakai között. A forrásösszeget a rendszer több sorhoz is hozzárendeli a célváltozatban az időszaki felosztókategóriában meghatározott százalék és dátumon szerint.         

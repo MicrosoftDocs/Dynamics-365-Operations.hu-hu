@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015244"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124543"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -45,7 +45,7 @@ A **Halasztott végrehajtás** beállítás csak olyan szekvenciaelemekhez haszn
 
 A **Halasztott végrehajtás** beállítás nem alkalmazható olyan sorszámok esetében, amelyek a maximális hosszt korlátozó megtisztított szekvenciákként lettek beállítva.
 
-## <a name="Example"></a>Példa: Szekvenciaelem végrehajtásának elhalasztása egy ER-formátumban
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Példa: Szekvenciaelem végrehajtásának elhalasztása egy ER-formátumban
 
 A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) rendelkező felhasználó hogyan konfigurálhat egy olyan, szekvenciaelemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
 

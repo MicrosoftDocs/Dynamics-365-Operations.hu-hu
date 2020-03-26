@@ -1,9 +1,9 @@
 ---
-title: Egyéni mezők létrehozása és felhasználása
-description: Ez a témakör bemutatja, hogyan lehet egyéni mezők létrehozásával az alkalmazást saját cégük igényeire szabni.
+title: Egyéni mezők létrehozása és használata
+description: Ez a témakör bemutatja, hogyan hozhat létre egyéni mezőket a felhasználói felületen, hogy az alkalmazást saját cégük igényeire szabhassa.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812505"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112336"
 ---
-# <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és felhasználása
+# <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és használata
 
 [!include [banner](../includes/banner.md)]
 
-Bár a mezők sokasága áll rendelkezésre az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Ezen igények kielégítésére lehetővé vált, hogy olyan egyedi mezőket hozhasson létre, amelyek segítségével az alkalmazás testreszabható a cég igényeire, ha rendelkezik a szolgáltatás használatára való jogosultsággal.
+Bár a mezők sokasága áll rendelkezésre az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Noha a programozók felhasználhatják ezeket a mezőket bővítményként a fejlesztőeszközökben, az egyéni mezők funkció lehetővé teszi a mezők közvetlen hozzáadását a felhasználói felületről, így a webböngészővel testreszabhatja az alkalmazást, hogy illeszkedjen a vállalkozáshoz.
 
-Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el.
+Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el. Csak a különleges jogosultságú felhasználók férhetnek hozzá ehhez a funkcióhoz.
 
 Ez a videó megmutatja, milyen egyszerű egy Egyéni mező hozzáadása az oldalhoz: [Egyéni mező hozzáadása](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Teljesítmény- és a műszaki okok miatt jelenleg csak a következő feltétele
 - A tábla nem bővíthet másik táblát.
 - A tábla nem lehet rendszertáblaként megjelölve.
 - A tábla nem lehet ideiglenes tábla.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Hivatkozhatok a fejlesztői eszközökből egyéni mezőkre?  
+
+Az egyéni mezők csak a felhasználói felületen kezelhetők, és kód nem hivatkozhat rájuk. 

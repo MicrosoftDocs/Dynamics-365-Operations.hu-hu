@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015245"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120878"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>A XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -47,7 +47,7 @@ A **Halasztott végrehajtási** beállítás csak olyan XML-elemekhez használha
 
 A **Halasztott végrehajtás** beállítás nem támogatott olyan XML-elemekhez, amelyek a **Közös\\Fájl** formátumban találhatók, amikor a **Fájl felosztása** beállítás **Igen** értékre van állítva. További információ az XML-fájlok felosztásáról: [Generált XML-fájlok felosztása méret és tartalommennyiség alapján](er-split-files.md).
 
-## <a name="Example"></a>Példa: XML-elem végrehajtásának elhalasztása egy ER-formátumban
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Példa: XML-elem végrehajtásának elhalasztása egy ER-formátumban
 
 A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) rendelkező felhasználó hogyan konfigurálhat egy olyan, XML-elemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
 

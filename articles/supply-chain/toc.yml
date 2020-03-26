@@ -24,6 +24,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Frissítések alkalmazása helyszíni telepítésekhez
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Szolgáltatásfrissítések konfigurálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Szolgáltatásfrissítések szüneteltetése
@@ -72,13 +74,15 @@
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management 10.0.8-as verziója (2020. február)
                       href: get-started/whats-new-scm-10-0-8.md
-                    - name: Supply Chain Management 10.0.7-es verziója (2020. január)
-                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Eltávolított vagy elavult funkciók
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az AX 2012 elhalasztott funkciói
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A helyszíni telepítésben nem megvalósított funkciók
+                - name: A helyszíni telepítésekben nem megvalósított funkciók
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
