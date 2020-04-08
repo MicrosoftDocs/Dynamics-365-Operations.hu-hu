@@ -162,24 +162,52 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                               href: data-entities/dual-write/lcs-setup.md
-                        - name: Koncepciómegfeleltetések alkalmazások között
-                          items:
-                            - name: Szervezeti hierarchia a Common Data Service megoldásban
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Vállalati integráció
+                            - name: Kezdeti szinkronizálás
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
                               items:
-                                - name: Vállalat fogalma a Common Data Services szolgáltatásban
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Rendszerindítás vállalati adatokkal
-                                  href: data-entities/dual-write/bootstrap-company-data.md
+                                - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Rendszerkövetelmények és előfeltételek
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: A kettős írás varázsló használata a környezeteinek összekapcsolásához
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Entitásleképezés engedélyezése a kettős íráshoz
+                                  href: data-entities/dual-write/enable-entity-map.md
+                        - name: A kettős írás kezelése
+                          items:
+                            - name: Entitás- és mezőleképezések testreszabása
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Hibakezelő és riasztási értesítések
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Alkalmazáséletciklus-kezelés
+                              href: data-entities/dual-write/app-lifecycle-management.md
+                        - name: Alkalmazások közötti koncepciómegfeleltetések
+                          items:
                             - name: Integrált vevői alapadat
                               href: data-entities/dual-write/customer-mapping.md
+                            - name: Szállítói integráció
+                              items:
+                                - name: Integrált szállítói alapadat
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Váltás a szállítói arculatok között
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Vevői hűségkártyák és hűségpontok
+                              href: data-entities/dual-write/loyalty-mapping.md
                             - name: Termékintegráció
                               items:
                                 - name: Egységesített terméktapasztalat
                                   href: data-entities/dual-write/product-mapping.md
                                 - name: Integrált telephelyek és raktárak
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Vállalati integráció
+                              items:
+                                - name: Vállalati koncepció a(z) Common Data Services szolgáltatásban
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Rendszerindítás vállalati adatokkal
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Szervezeti hierarchia a(z) Common Data Service megoldásban
+                              href: data-entities/dual-write/organization-mapping.md
                             - name: Pénzügyi és adóügyi adatok
                               items:
                                 - name: A pénzügyi és adóügyi hivatkozási adatokhoz való hozzáférés
@@ -188,13 +216,9 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integrált adózási alapadat
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Szállítói integráció
-                              items:
-                                - name: Integrált szállítói alapadat
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Váltás a szállítói arculatok között
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Potenciális ügyfelek készpénzre váltása a kettős írás szolgáltatásban
+                            - name: Igény szerinti szinkronizálás a(z) Dynamics 365 Supply Chain Management árképzés motorral
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Házon belüli eszközök szervizelése
                               href: data-entities/dual-write/in-house-assets.md
@@ -204,17 +228,31 @@
                           items:
                             - name: A Field Service- és Project Service Automation-megoldások támogatása
                               href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Kezdeti szinkronizálás
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Az adatintegrálás hibaelhárítása
-                              href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Integráció a Power Platform Data Integrator szolgáltatással
+                            - name: Hibaelhárítás
+                              items:
+                                - name: 'Ellenőrizze, hogy a kettős írás be van-e állítva a(z) Finance and Operations alkalmazásokban és a(z) Common Data Service'
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Problémák elhárítása a kezdeti beállításkor
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Problémák elhárítása a kezdeti szinkronizációkor
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Élő szinkronizálási problémák elhárítása
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Általános hibaelhárítás
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integráció a Power Platform alkalmazással
                       items:
-                        - name: Potenciális vevő készpénzre váltási eset konfigurálása
+                        - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
                           items:
-                            - name: A potenciális vevők készpénzre váltása
+                            - name: Potenciális vevők készpénzre váltása
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: A Sales-partnerek közvetlen szinkronizálása a Finance and Operations-ügyfelekhez
+                            - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                             - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
@@ -392,6 +430,8 @@
                       href: database/api/v1/reference-list-backups.md
                     - name: Adatbázis-frissítés létrehozása
                       href: database/api/v1/reference-create-refresh.md
+                    - name: Adatbázis-exportálás létrehozása
+                      href: database/api/v1/reference-create-export.md
                     - name: Műveleti tevékenység állapotának lekérése
                       href: database/api/v1/reference-get-status.md
         - name: Bemutató adatok
@@ -1032,6 +1072,8 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Megfigyelés és diagnosztika
               href: lifecycle-services/monitoring-diagnostics.md
+            - name: Hatáselemzési jelentés
+              href: lifecycle-services/impact-analysis-report.md
             - name: Környezeti szolgáltatások újraindítása
               href: lifecycle-services/restart-environment-services.md
             - name: Termelési kimaradás jelentése
@@ -1396,6 +1438,10 @@
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: Termelési kimaradás jelentése
               href: lifecycle-services/report-production-outage.md
+            - name: Adatbázis-naplózás konfigurálása és kezelése
+              href: sysadmin/configure-manage-database-log.md
+            - name: OData metaadat-gyorsítótárának létrehozása az AOS indításakor
+              href: sysadmin/odata-warmup.md
         - name: Frissítések és gyorsjavítások
           items:
             - name: Frissítések és gyorsjavítások erőforrásai
