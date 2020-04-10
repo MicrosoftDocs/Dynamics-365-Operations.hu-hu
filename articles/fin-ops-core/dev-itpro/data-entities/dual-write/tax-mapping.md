@@ -19,35 +19,35 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 0d32a5f7859f0200da823a73d94b9a6b2a9c8e7d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: a4da37d45698290b40f6c72148f1500bef72127a
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019816"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173085"
 ---
-# <a name="integrated-tax"></a><span data-ttu-id="be5f0-103">Integrált adó</span><span class="sxs-lookup"><span data-stu-id="be5f0-103">Integrated tax</span></span>
+# <a name="integrated-tax"></a><span data-ttu-id="d7ef0-103">Integrált adó</span><span class="sxs-lookup"><span data-stu-id="d7ef0-103">Integrated tax</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-<span data-ttu-id="be5f0-104">Az adóadatok beállítása határozza meg mind a közvetett adók (áfa, GST), mind az adóelőleg beállításait.</span><span class="sxs-lookup"><span data-stu-id="be5f0-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="be5f0-105">Leírja az adószámítási szabályt, az adókulcsot, az adókönyvelés és az elszámolás részleteit, illetve további fogalmakat.</span><span class="sxs-lookup"><span data-stu-id="be5f0-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="be5f0-106">Sablonok</span><span class="sxs-lookup"><span data-stu-id="be5f0-106">Templates</span></span>
+<span data-ttu-id="d7ef0-104">Az adóadatok beállítása határozza meg mind a közvetett adók (áfa, GST), mind az adóelőleg beállításait.</span><span class="sxs-lookup"><span data-stu-id="d7ef0-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="d7ef0-105">Leírja az adószámítási szabályt, az adókulcsot, az adókönyvelés és az elszámolás részleteit, illetve további fogalmakat.</span><span class="sxs-lookup"><span data-stu-id="d7ef0-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-<span data-ttu-id="be5f0-107">Az adóadatok tartalmazzák azokat az entitásleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.</span><span class="sxs-lookup"><span data-stu-id="be5f0-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
+## <a name="templates"></a><span data-ttu-id="d7ef0-106">Sablonok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-106">Templates</span></span>
 
-<span data-ttu-id="be5f0-108">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="be5f0-108">Finance and Operations</span></span>   | <span data-ttu-id="be5f0-109">Egyéb Dynamics 365 alkalmazások</span><span class="sxs-lookup"><span data-stu-id="be5f0-109">Other Dynamics 365 apps</span></span>
+<span data-ttu-id="d7ef0-107">Az adóadatok tartalmazzák azokat az entitásleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.</span><span class="sxs-lookup"><span data-stu-id="d7ef0-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
+
+| <span data-ttu-id="d7ef0-108">Finance and Operations-alkalmazásoknak</span><span class="sxs-lookup"><span data-stu-id="d7ef0-108">Finance and Operations apps</span></span> | <span data-ttu-id="d7ef0-109">Modellvezérelt alkalmazások a Dynamics 365-ben</span><span class="sxs-lookup"><span data-stu-id="d7ef0-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="d7ef0-110">Leírás</span><span class="sxs-lookup"><span data-stu-id="d7ef0-110">Description</span></span> |
 -------------------------|---------------------------------
-<span data-ttu-id="be5f0-110">Adókódok</span><span class="sxs-lookup"><span data-stu-id="be5f0-110">Tax codes</span></span>                  | <span data-ttu-id="be5f0-111">msdyn\_taxcodes.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-111">msdyn\_taxcodes.md</span></span>
-<span data-ttu-id="be5f0-112">Adócsoportok</span><span class="sxs-lookup"><span data-stu-id="be5f0-112">Tax groups</span></span>               | <span data-ttu-id="be5f0-113">msdyn\_taxgroups.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-113">msdyn\_taxgroups.md</span></span>
-<span data-ttu-id="be5f0-114">Adócikkcsoportok</span><span class="sxs-lookup"><span data-stu-id="be5f0-114">Tax item groups</span></span>          | <span data-ttu-id="be5f0-115">msdyn\_taxitemgroups.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-115">msdyn\_taxitemgroups.md</span></span>
-<span data-ttu-id="be5f0-116">Adómentességek</span><span class="sxs-lookup"><span data-stu-id="be5f0-116">Tax Exemptions</span></span>           | <span data-ttu-id="be5f0-117">msdyn\_taxexemptcodes.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-117">msdyn\_taxexemptcodes.md</span></span>
-<span data-ttu-id="be5f0-118">Adóhatóságok</span><span class="sxs-lookup"><span data-stu-id="be5f0-118">Tax Authorities</span></span>          | <span data-ttu-id="be5f0-119">msdyn\_taxauthorities.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-119">msdyn\_taxauthorities.md</span></span>
-<span data-ttu-id="be5f0-120">Adóelőlegkódok</span><span class="sxs-lookup"><span data-stu-id="be5f0-120">Withholding tax codes</span></span>      | <span data-ttu-id="be5f0-121">msdyn\_withholdingtaxcodes.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-121">msdyn\_withholdingtaxcodes.md</span></span>
-<span data-ttu-id="be5f0-122">Adóelőleg-csoportok</span><span class="sxs-lookup"><span data-stu-id="be5f0-122">Withholding tax groups</span></span>   | <span data-ttu-id="be5f0-123">msdyn\_withholdingtaxgroups.md</span><span class="sxs-lookup"><span data-stu-id="be5f0-123">msdyn\_withholdingtaxgroups.md</span></span>
-<span data-ttu-id="be5f0-124">Adó főkönyviszámla-csoportja</span><span class="sxs-lookup"><span data-stu-id="be5f0-124">Tax Ledger Account Group</span></span> | <span data-ttu-id="be5f0-125">msdyn\_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="be5f0-125">msdyn\_taxpostinggroups</span></span>  
+<span data-ttu-id="d7ef0-111">Adókódok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-111">Tax codes</span></span>                   | <span data-ttu-id="d7ef0-112">msdyn\_taxcodes.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-112">msdyn\_taxcodes.md</span></span> | 
+<span data-ttu-id="d7ef0-113">Adócsoportok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-113">Tax groups</span></span>                 | <span data-ttu-id="d7ef0-114">msdyn\_taxgroups.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-114">msdyn\_taxgroups.md</span></span> | 
+<span data-ttu-id="d7ef0-115">Adócikkcsoportok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-115">Tax item groups</span></span>             | <span data-ttu-id="d7ef0-116">msdyn\_taxitemgroups.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-116">msdyn\_taxitemgroups.md</span></span> | 
+<span data-ttu-id="d7ef0-117">Adómentességek</span><span class="sxs-lookup"><span data-stu-id="d7ef0-117">Tax Exemptions</span></span>             | <span data-ttu-id="d7ef0-118">msdyn\_taxexemptcodes.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-118">msdyn\_taxexemptcodes.md</span></span> | 
+<span data-ttu-id="d7ef0-119">Adóhatóságok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-119">Tax Authorities</span></span>             | <span data-ttu-id="d7ef0-120">msdyn\_taxauthorities.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-120">msdyn\_taxauthorities.md</span></span> | 
+<span data-ttu-id="d7ef0-121">Adóelőlegkódok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-121">Withholding tax codes</span></span>       | <span data-ttu-id="d7ef0-122">msdyn\_withholdingtaxcodes.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-122">msdyn\_withholdingtaxcodes.md</span></span> | 
+<span data-ttu-id="d7ef0-123">Adóelőleg-csoportok</span><span class="sxs-lookup"><span data-stu-id="d7ef0-123">Withholding tax groups</span></span>     | <span data-ttu-id="d7ef0-124">msdyn\_withholdingtaxgroups.md</span><span class="sxs-lookup"><span data-stu-id="d7ef0-124">msdyn\_withholdingtaxgroups.md</span></span> | 
+<span data-ttu-id="d7ef0-125">Adó főkönyviszámla-csoportja</span><span class="sxs-lookup"><span data-stu-id="d7ef0-125">Tax Ledger Account Group</span></span> | <span data-ttu-id="d7ef0-126">msdyn\_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="d7ef0-126">msdyn\_taxpostinggroups</span></span>     | 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 

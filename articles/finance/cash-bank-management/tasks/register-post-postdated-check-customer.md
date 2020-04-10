@@ -15,38 +15,38 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141741"
 ---
-# <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="731c4-103">Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása</span><span class="sxs-lookup"><span data-stu-id="731c4-103">Register and post a postdated check for a customer</span></span>
+# <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="cf51a-103">Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása</span><span class="sxs-lookup"><span data-stu-id="cf51a-103">Register and post a postdated check for a customer</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="731c4-104">A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti.</span><span class="sxs-lookup"><span data-stu-id="731c4-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="731c4-105">A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="731c4-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="731c4-106">A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat: • a Készpénz- és bankkezelés lapon állítson be a jövőben esedékes csekket • Állítsa be a fizetési módot a jövőben esedékes csekkekhez Ezen eljárás szerepköre: Pénztáros.</span><span class="sxs-lookup"><span data-stu-id="731c4-106">Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="731c4-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="731c4-107">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="cf51a-104">A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti.</span><span class="sxs-lookup"><span data-stu-id="cf51a-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="cf51a-105">A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="cf51a-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="cf51a-106">A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat: \* a Készpénz- és bankkezelés lapon állítson be a jövőben esedékes csekkeket \* Állítsa be a fizetési módot a jövőben esedékes csekkekhez Ezen eljárás szerepköre: Pénztáros.</span><span class="sxs-lookup"><span data-stu-id="cf51a-106">Complete the following tasks before you register and post a postdated check received from a customer:   \* Set up postdated check in the Cash and bank management page \* Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="cf51a-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="cf51a-107">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="731c4-108">Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.</span><span class="sxs-lookup"><span data-stu-id="731c4-108">Go to Accounts receivable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="731c4-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="731c4-109">Click New.</span></span>
-3. <span data-ttu-id="731c4-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="731c4-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="731c4-111">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="731c4-111">Click Lines.</span></span>
-5. <span data-ttu-id="731c4-112">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="731c4-112">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="731c4-113">A Számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="731c4-113">In the Account field, specify the desired values.</span></span>
-7. <span data-ttu-id="731c4-114">A Hitelkeret mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="731c4-114">In the Credit field, enter a number.</span></span>
-    * <span data-ttu-id="731c4-115">Adja meg a jövőben esedékes csekken látható összeget.</span><span class="sxs-lookup"><span data-stu-id="731c4-115">Enter the amount specified in the postdated check.</span></span>  
-8. <span data-ttu-id="731c4-116">Kattintson a Fizetések fülre.</span><span class="sxs-lookup"><span data-stu-id="731c4-116">Click the Payment tab.</span></span>
-9. <span data-ttu-id="731c4-117">Írjon be egy értéket a Fizetési mód mezőbe.</span><span class="sxs-lookup"><span data-stu-id="731c4-117">In the Method of payment field, type a value.</span></span>
-    * <span data-ttu-id="731c4-118">Válassza ki a jövőben esedékes csekk fizetési módját.</span><span class="sxs-lookup"><span data-stu-id="731c4-118">Select the method of payment for the postdated check.</span></span>  
-10. <span data-ttu-id="731c4-119">Kattintson a Jövőben esedékes csekkek fülre.</span><span class="sxs-lookup"><span data-stu-id="731c4-119">Click the Postdated checks tab.</span></span>
-11. <span data-ttu-id="731c4-120">Az érvényesség mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="731c4-120">In the Maturity date field, enter a date.</span></span>
-    * <span data-ttu-id="731c4-121">Adja meg a dátumot, amikor a jövőben esedékes csekk kifizetése esedékes.</span><span class="sxs-lookup"><span data-stu-id="731c4-121">Enter the date when the postdated check is due for payment.</span></span>  
-12. <span data-ttu-id="731c4-122">A Kiadási bankfiók mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="731c4-122">In the Issuing bank branch field, type a value.</span></span>
-    * <span data-ttu-id="731c4-123">Adja meg a jövőben esedékes csekk banki adatait.</span><span class="sxs-lookup"><span data-stu-id="731c4-123">Enter the bank details of the postdated check.</span></span>  
-13. <span data-ttu-id="731c4-124">A csekk száma mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="731c4-124">In the check number field, type a value.</span></span>
-14. <span data-ttu-id="731c4-125">A Kiadási bank neve mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="731c4-125">In the Issuing bank name field, type a value.</span></span>
-    * <span data-ttu-id="731c4-126">Adja meg a jövőben esedékes csekk banki adatait.</span><span class="sxs-lookup"><span data-stu-id="731c4-126">Enter the bank details of the postdated check.</span></span>  
-15. <span data-ttu-id="731c4-127">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="731c4-127">Click Post.</span></span>
-16. <span data-ttu-id="731c4-128">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="731c4-128">Close the page.</span></span>
+1. <span data-ttu-id="cf51a-108">Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.</span><span class="sxs-lookup"><span data-stu-id="cf51a-108">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="cf51a-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="cf51a-109">Click New.</span></span>
+3. <span data-ttu-id="cf51a-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="cf51a-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="cf51a-111">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="cf51a-111">Click Lines.</span></span>
+5. <span data-ttu-id="cf51a-112">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="cf51a-112">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="cf51a-113">A Számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="cf51a-113">In the Account field, specify the desired values.</span></span>
+7. <span data-ttu-id="cf51a-114">A Hitelkeret mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="cf51a-114">In the Credit field, enter a number.</span></span>
+    * <span data-ttu-id="cf51a-115">Adja meg a jövőben esedékes csekken látható összeget.</span><span class="sxs-lookup"><span data-stu-id="cf51a-115">Enter the amount specified in the postdated check.</span></span>  
+8. <span data-ttu-id="cf51a-116">Kattintson a Fizetések fülre.</span><span class="sxs-lookup"><span data-stu-id="cf51a-116">Click the Payment tab.</span></span>
+9. <span data-ttu-id="cf51a-117">Írjon be egy értéket a Fizetési mód mezőbe.</span><span class="sxs-lookup"><span data-stu-id="cf51a-117">In the Method of payment field, type a value.</span></span>
+    * <span data-ttu-id="cf51a-118">Válassza ki a jövőben esedékes csekk fizetési módját.</span><span class="sxs-lookup"><span data-stu-id="cf51a-118">Select the method of payment for the postdated check.</span></span>  
+10. <span data-ttu-id="cf51a-119">Kattintson a Jövőben esedékes csekkek fülre.</span><span class="sxs-lookup"><span data-stu-id="cf51a-119">Click the Postdated checks tab.</span></span>
+11. <span data-ttu-id="cf51a-120">Az érvényesség mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="cf51a-120">In the Maturity date field, enter a date.</span></span>
+    * <span data-ttu-id="cf51a-121">Adja meg a dátumot, amikor a jövőben esedékes csekk kifizetése esedékes.</span><span class="sxs-lookup"><span data-stu-id="cf51a-121">Enter the date when the postdated check is due for payment.</span></span>  
+12. <span data-ttu-id="cf51a-122">A Kiadási bankfiók mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="cf51a-122">In the Issuing bank branch field, type a value.</span></span>
+    * <span data-ttu-id="cf51a-123">Adja meg a jövőben esedékes csekk banki adatait.</span><span class="sxs-lookup"><span data-stu-id="cf51a-123">Enter the bank details of the postdated check.</span></span>  
+13. <span data-ttu-id="cf51a-124">A csekk száma mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="cf51a-124">In the check number field, type a value.</span></span>
+14. <span data-ttu-id="cf51a-125">A Kiadási bank neve mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="cf51a-125">In the Issuing bank name field, type a value.</span></span>
+    * <span data-ttu-id="cf51a-126">Adja meg a jövőben esedékes csekk banki adatait.</span><span class="sxs-lookup"><span data-stu-id="cf51a-126">Enter the bank details of the postdated check.</span></span>  
+15. <span data-ttu-id="cf51a-127">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="cf51a-127">Click Post.</span></span>
+16. <span data-ttu-id="cf51a-128">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="cf51a-128">Close the page.</span></span>
 

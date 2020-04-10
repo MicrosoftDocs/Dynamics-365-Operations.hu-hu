@@ -16,41 +16,41 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ed8c60b188b7c7090546e8367455e0f58ce9359b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844489"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147687"
 ---
-# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="ed5ab-103">Eladási ár kiválasztási feltételeinek létrehozása</span><span class="sxs-lookup"><span data-stu-id="ed5ab-103">Create sales price selection criteria</span></span>
+# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="f3f7a-103">Eladási ár kiválasztási feltételeinek létrehozása</span><span class="sxs-lookup"><span data-stu-id="f3f7a-103">Create sales price selection criteria</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ed5ab-104">Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási feltételeket az attribútumalapú eladásiár-modellekhez.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="ed5ab-105">Az eljáráshoz előfeltétel, hogy legyen legalább egy elérhető eladásiár-modell.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="ed5ab-106">Ebben a példában a hangszóró megoldás eladásiár-modelljének ármodelljét használjuk a USMF bemutatócég esetében.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="ed5ab-107">Ezt az eljárást általában a termékmenedzser használja.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-107">Typically, a product manager uses this procedure.</span></span>
+<span data-ttu-id="f3f7a-104">Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási feltételeket az attribútumalapú eladásiár-modellekhez.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="f3f7a-105">Az eljáráshoz előfeltétel, hogy legyen legalább egy elérhető eladásiár-modell.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="f3f7a-106">Ebben a példában a hangszóró megoldás eladásiár-modelljének ármodelljét használjuk a USMF bemutatócég esetében.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="f3f7a-107">Ezt az eljárást általában a termékmenedzser használja.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-107">Typically, a product manager uses this procedure.</span></span>
 
 
-## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="ed5ab-108">Új feltétel hozzáadása a meglévő eladásiár-modellhez</span><span class="sxs-lookup"><span data-stu-id="ed5ab-108">Add a new criterion for an existing sales price model</span></span>
-1. <span data-ttu-id="ed5ab-109">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-109">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="ed5ab-110">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-110">Click Product configuration models.</span></span>
-3. <span data-ttu-id="ed5ab-111">A listában jelölje ki a hangszóró megoldás termékmodelljének a sorát, de ne kattintson a modell nevének hivatkozására.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-111">In the list, select the row for the Speaker solution product model, but don’t click the link for the model name.</span></span>
-4. <span data-ttu-id="ed5ab-112">A Művelet panelen kattintson a Modell elemre.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-112">On the Action Pane, click Model.</span></span>
-5. <span data-ttu-id="ed5ab-113">Kattintson az Ármodellfeltételek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-113">Click Price model criteria.</span></span>
-6. <span data-ttu-id="ed5ab-114">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-114">Click New.</span></span>
-7. <span data-ttu-id="ed5ab-115">A Név mezőbe írja be a „10. vásárlócsoport” szöveget.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-115">In the Name field, type ‘Customer group 10’.</span></span>
-    * <span data-ttu-id="ed5ab-116">Az ármodellfeltétel nevének a használata segít azonosítani az alapul szolgáló kiválasztási feltételeket.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
-8. <span data-ttu-id="ed5ab-117">Az Ármodell mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-117">In the Price model field, enter or select a value.</span></span>
-9. <span data-ttu-id="ed5ab-118">A Rendeléstípus mezőben válassza ki az Értékesítési rendelés elemet.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-118">In the Order type field, select Sales order.</span></span>
-    * <span data-ttu-id="ed5ab-119">A rendelés típusa határozza meg, hogy az adatbázis mely mezői állnak rendelkezésre a kiválasztási lekérdezéshez.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-119">The order type determines the database fields that will be available for the selection query.</span></span>  
-10. <span data-ttu-id="ed5ab-120">Adja meg a dátumot az Érvényesség kezdete mezőben.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-120">In the Valid from field, enter a date.</span></span>
-11. <span data-ttu-id="ed5ab-121">Az Érvényesség vége mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-121">In the Expire by field, enter a date.</span></span>
-12. <span data-ttu-id="ed5ab-122">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-122">Click Save.</span></span>
+## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="f3f7a-108">Új feltétel hozzáadása a meglévő eladásiár-modellhez</span><span class="sxs-lookup"><span data-stu-id="f3f7a-108">Add a new criterion for an existing sales price model</span></span>
+1. <span data-ttu-id="f3f7a-109">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="f3f7a-110">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-110">Click Product configuration models.</span></span>
+3. <span data-ttu-id="f3f7a-111">A listában jelölje ki a hangszóró megoldás termékmodelljének a sorát, de ne kattintson a modell nevének hivatkozására.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-111">In the list, select the row for the Speaker solution product model, but don't click the link for the model name.</span></span>
+4. <span data-ttu-id="f3f7a-112">A Művelet panelen kattintson a Modell elemre.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-112">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="f3f7a-113">Kattintson az Ármodellfeltételek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-113">Click Price model criteria.</span></span>
+6. <span data-ttu-id="f3f7a-114">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-114">Click New.</span></span>
+7. <span data-ttu-id="f3f7a-115">A Név mezőbe írja be a „10. vásárlócsoport” szöveget.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-115">In the Name field, type 'Customer group 10'.</span></span>
+    * <span data-ttu-id="f3f7a-116">Az ármodellfeltétel nevének a használata segít azonosítani az alapul szolgáló kiválasztási feltételeket.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
+8. <span data-ttu-id="f3f7a-117">Az Ármodell mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-117">In the Price model field, enter or select a value.</span></span>
+9. <span data-ttu-id="f3f7a-118">A Rendeléstípus mezőben válassza ki az Értékesítési rendelés elemet.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-118">In the Order type field, select Sales order.</span></span>
+    * <span data-ttu-id="f3f7a-119">A rendelés típusa határozza meg, hogy az adatbázis mely mezői állnak rendelkezésre a kiválasztási lekérdezéshez.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-119">The order type determines the database fields that will be available for the selection query.</span></span>  
+10. <span data-ttu-id="f3f7a-120">Adja meg a dátumot az Érvényesség kezdete mezőben.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-120">In the Valid from field, enter a date.</span></span>
+11. <span data-ttu-id="f3f7a-121">Az Érvényesség vége mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-121">In the Expire by field, enter a date.</span></span>
+12. <span data-ttu-id="f3f7a-122">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-122">Click Save.</span></span>
 
-## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="ed5ab-123">A lekérdezés létrehozása a kiválasztási feltételekhez</span><span class="sxs-lookup"><span data-stu-id="ed5ab-123">Create the query for the selection criteria</span></span>
-1. <span data-ttu-id="ed5ab-124">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-124">Click Edit.</span></span>
-2. <span data-ttu-id="ed5ab-125">Válasszon ki vevőket a Tábla mezőben.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-125">In the Table field, select Customers.</span></span> 
-3. <span data-ttu-id="ed5ab-126">A Mező mezőben válassza ki a Vevőcsoportot.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-126">In the Field field, select Customer group.</span></span>
-    * <span data-ttu-id="ed5ab-127">Ebben a példában egy bizonyos vevőcsoportot fogunk használni kiválasztási feltételnek.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
-4. <span data-ttu-id="ed5ab-128">A Feltétel mezőben válassza ki a 10. vevőcsoportot.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-128">In the Criteria field, select Customer group 10.</span></span> 
-5. <span data-ttu-id="ed5ab-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="ed5ab-129">Click OK.</span></span>
+## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="f3f7a-123">A lekérdezés létrehozása a kiválasztási feltételekhez</span><span class="sxs-lookup"><span data-stu-id="f3f7a-123">Create the query for the selection criteria</span></span>
+1. <span data-ttu-id="f3f7a-124">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-124">Click Edit.</span></span>
+2. <span data-ttu-id="f3f7a-125">Válasszon ki vevőket a Tábla mezőben.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-125">In the Table field, select Customers.</span></span> 
+3. <span data-ttu-id="f3f7a-126">A Mező mezőben válassza ki a Vevőcsoportot.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-126">In the Field field, select Customer group.</span></span>
+    * <span data-ttu-id="f3f7a-127">Ebben a példában egy bizonyos vevőcsoportot fogunk használni kiválasztási feltételnek.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
+4. <span data-ttu-id="f3f7a-128">A Feltétel mezőben válassza ki a 10. vevőcsoportot.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-128">In the Criteria field, select Customer group 10.</span></span> 
+5. <span data-ttu-id="f3f7a-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f3f7a-129">Click OK.</span></span>
 
