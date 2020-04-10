@@ -3,7 +3,7 @@ title: Termékajánlatok hozzáadása a pénztárnál
 description: Ez a témakör leírja a termék ajánlásainak használatát a pénztári eszközön (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/20
+ms.date: 03/19/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 2ad50a83b85de49b0016549f0baec2328f1608f5
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127813"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154203"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Termékajánlatok hozzáadása a pénztárnál
 
@@ -81,9 +81,7 @@ A termékajánlások beállításához kövesse az alábbi lépéseket:
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
-
-[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+[Ajánlatok hozzáadása a tranzakció képernyőjéhez](add-recommendations-control-pos-screen.md)
 
 [AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
 

@@ -3,7 +3,7 @@ title: Integráció konfigurálása a Finance alkalmazással
 description: Ez a cikk leírja a Dynamics 365 Human Resources és a Dynamics 365 Finance rendszerekben rendelkezésre álló funkciókat az integrációhoz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,73 +18,75 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e7070f627654c9eb889f3e0ee27e37681db0502
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1558d050627c8dc64727884901ed0d0716df0c50
+ms.sourcegitcommit: f481dfd6bf93bb3e03a7bd9a765e2cfd14305d02
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009251"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169277"
 ---
-# <a name="configure-integration-with-finance"></a>Integráció konfigurálása a Finance alkalmazással
+# <a name="configure-integration-with-finance"></a>A Finance szolgáltatással való integráció konfigurálása
 
-Ez a cikk leírja a Dynamics 365 Human Resources és a Dynamics 365 Finance rendszerekben rendelkezésre álló funkciókat az integrációhoz. Az [Adatintegrátor](https://docs.microsoft.com/powerapps/administrator/data-integrator) számára elérhető, a Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatainak áramlását. Az adatok a Human Resources alkalmazásból áramlanak a Finance alkalmazásba. A sablon nem teszi lehetővé, hogy az adatok a Finance alkalmazásból a Human Resources alkalmazásba áramoljanak vissza. 
+A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
 
-![A Human Resources to Finance integrációs folyamata](./media/TalentFinOpsFlow.png)
+![A Human Resources to Finance integrációs folyamata](./media/hr-admin-integration-finance-flow.png)
 
-A Human Resources to Finance megoldás a következő adatszinkronizálási típusokat tartalmazza. 
+A Human Resources to Finance megoldás a következő adatszinkronizálási típusokat tartalmazza:
 
-- Feladatok karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba.
-- Beosztások és beosztás-hozzárendelések karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba.
-- Foglalkoztatások karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba.
-- A dolgozók és a dolgozók címeinek karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba.
+- Feladatok karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba
+- Beosztások és beosztás-hozzárendelések karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba
+- Foglalkoztatások karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba
+- A dolgozók és a dolgozók címeinek karbantartása a Human Resources alkalmazásban, illetve azok szinkronizálása a Human Resources alkalmazásból a Finance alkalmazásba
 
 ## <a name="system-requirements-for-human-resources"></a>A Human Resources rendszerkövetelményei
+
 A Human Resources és a Finance következő verziói szükségesek az integrációs megoldáshoz: 
-- A Dynamics 365 Human Resources a Common Data Service rendszeren.
-- A Dynamics 365 Finance 7.2 vagy újabb verziója.
+
+- Dynamics 365 Human Resources, helye: Common Data Service
+- A Dynamics 365 Finance 7.2 vagy újabb verziója
 
 ## <a name="template-and-tasks"></a>Sablon és feladatok
 
-A következő lépéseket követve hozzáférhetővé válik a sablon.
+A Human Resources – Finance sablon elérése.
+
 1. A [Power Apps Admin Center](https://admin.powerapps.com/)megnyitása. 
-1. Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához. Minden olyan jogi személyhez létre kell hozni egy új projektet, amelyet integrálni kíván a Finance alkalmazásba.
 
-A következő sablon segítségével szinkronizálhatja a Human Resources-rekordokat a Finance alkalmazásba.
+2. Válassza ki a **Projektek** lehetőséget, majd válassza az **Új projekt** lehetőséget jobb felső sarokban. Minden olyan jogi személyhez hozzon létre egy új projektet, amelyet integrálni kíván a Finance alkalmazásba.
 
-- **A sablon neve az adatintegrációban:** Human Resources (Human Resources Common Data Service adatok a Finance alkalmazásba)
+3. Válassza ki a **Human Resources (Human Resources – Common Data Service – Finance)** a rekordok szinkronizálásához a Human Resources irányából a Finance irányába.
 
-  > [!NOTE]
-  > A feladat neve tartalmazza az egyes alkalmazásokban használt entitásokat. A forrás (Human Resources) a bal oldalon van, a cél (Finance and Operations) pedig a jobb oldalon.
+A sablon a következő mögöttes tevékenységek használatával szinkronizál a Human Resources-rekordokat a Finance alkalmazásba.
 
-A következő mögöttes tevékenységek segítségével lehet szinkronizálni a Human Resources-rekordokat a Finance alkalmazásból.
-- A beosztás funkciójától a kompenzációs beosztási funkciókig
-- Részlegek az üzemi egységhez
-- Feladattípusok a kompenzációs feladattípushoz
-- Feladatok a feladatokhoz
-- Feladatok a Feladat részleteihez
-- Beosztási típusok a Beosztási típushoz
-- Feladatbeosztások az Alapbeosztásokhoz
-- Feladatbeosztások a Beosztásrészletekhez
-- Feladatbeosztások a Beosztásidőtartamokhoz
-- Feladatbeosztások a Beosztási hierarchiákhoz
-- Dolgozók a Dolgozóhoz
-- Foglalkoztatások a Foglalkoztatáshoz
-- Foglalkoztatások a Foglalkoztatás részleteihez
-- Dolgozó beosztáshoz való hozzárendelése a Dolgozó beosztáshoz való hozzárendeléseihez
-- Dolgozói címek a Dolgozó postai címéhez V2
+- **A beosztás funkciójától a kompenzációs beosztási funkciókig**
+- **Részlegek az üzemi egységhez**
+- **Feladattípusok a kompenzációs feladattípushoz**
+- **Feladatok a feladatokhoz**
+- **Feladatok a Feladat részleteihez**
+- **Beosztási típusok a Beosztási típushoz**
+- **Feladatbeosztások az Alapbeosztásokhoz**
+- **Feladatbeosztások a Beosztásrészletekhez**
+- **Feladatbeosztások a Beosztásidőtartamokhoz**
+- **Feladatbeosztások a Beosztási hierarchiákhoz**
+- **Dolgozók a Dolgozóhoz**
+- **Foglalkoztatások a Foglalkoztatáshoz**
+- **Foglalkoztatások a Foglalkoztatás részleteihez**
+- **Dolgozó beosztáshoz való hozzárendelése a Dolgozó beosztáshoz való hozzárendeléseihez**
+- **Dolgozói címek a Dolgozó postai címéhez V2**
 
 ## <a name="template-mappings"></a>Sablonmegfeleltetések
 
+A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az egyes alkalmazásokban használt entitásokat. A forrás (Human Resources) a bal oldalon van, a cél (Finance) pedig a jobb oldalon.
+
 ### <a name="job-functions-to-compensation-job-function"></a>A beosztás funkciójától a kompenzációs beosztási funkciókig
 
-| Common Data Service-entitás (forrás)                 | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás) | Finance-entitás (cél) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   funkció neve)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | LEÍRÁS   (LEÍRÁS)                 |
 
 ### <a name="departments-to-operating-unit"></a>Részlegek az üzemi egységhez
 
-| Common Data Service-entitás (forrás)                           | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NÉV (NÉV)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -93,7 +95,7 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="job-types-to-compensation-job-type"></a>Feladattípusok a kompenzációs feladattípushoz
 
-| Common Data Service-entitás (forrás)                   | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)   | Finance-entitás (cél) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | LEÍRÁS   (LEÍRÁS)                 |
@@ -101,7 +103,7 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="jobs-to-jobs"></a>Feladatok a feladatokhoz
 
-| Common Data Service-entitás (forrás)                                           | Finance and Operations-entitás (cél)           |
+| Common Data Service-entitás (forrás)                           | Finance-entitás (cél)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -111,7 +113,7 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="jobs-to-job-detail"></a>Feladatok a Feladat részleteihez
 
-| Common Data Service-entitás (forrás)                                             | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid. cdm_name   (Feladattípus (feladattípus neve))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -122,7 +124,7 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="position-types-to-position-type"></a>Beosztási típusok a Beosztási típushoz
 
-| Common Data Service-entitás (forrás)                       | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)       | Finance-entitás (cél) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | LEÍRÁS   (LEÍRÁS)                 |
@@ -130,13 +132,13 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="job-positions-to-base-position"></a>Feladatbeosztások az Alapbeosztásokhoz
 
-| Common Data Service-entitás (forrás)                           | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Feladatbeosztások a Beosztásrészletekhez
 
-| Common Data Service-entitás (forrás)                                                      | Finance and Operations-entitás (cél)       |
+| Common Data Service-entitás (forrás)              | Finance-entitás (cél)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Feladatbeosztás száma)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Feladat neve)                                        | JOBID (JOBID)                                    |
@@ -150,15 +152,15 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="job-positions-to-position-durations"></a>Feladatbeosztások a Beosztásidőtartamokhoz
 
-| Common Data Service-entitás (forrás)                             | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)             | Finance-entitás (cél) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma)   | POSITIONID (POSITIONID)                      |
 | Számított   aktiválás (számított aktiválás) | VALIDFROM (VALIDFROM)                        |
 | Számított   megszüntetés (számított megszüntetés) | VALIDTO (VALIDTO)                         |
 
-### <a name="job-positions-to-position-hiearchies"></a>Feladatbeosztások a Beosztási hierarchiákhoz
+### <a name="job-positions-to-position-hierarchies"></a>Feladatbeosztások a Beosztási hierarchiákhoz
 
-| Common Data Service-entitás (forrás)                                                                           | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)        | Finance-entitás (cél) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -167,8 +169,8 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)                                                       | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)     |
 
 
-### <a name="workers-to-worker"></a>Dolgozók a dolgozókhoz
-| Common Data Service-entitás (forrás)                           | Finance and Operations-entitás (cél)       |
+### <a name="workers-to-worker"></a>Dolgozók a Dolgozóhoz
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | SZÜLETÉSI DÁTUM   (SZÜLETÉSI DÁTUM)                           |
 | cdm_gender   (cdm_gender)                     | NEM (NEM)                                   |
@@ -185,9 +187,9 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 | cdm_type (cdm_type)                           | DOLGOZÓ TÍPUSA (DOLGOZÓ TÍPUSA)                         |
 | cdm_state   (cdm_state)                       | MUNKA ÁLLAPOTA   (MUNKA ÁLLAPOTA)                       |
 
-### <a name="employments-to-employment"></a>Foglalkoztatás a foglalkoztatáshoz
+### <a name="employments-to-employment"></a>Foglalkoztatások a Foglalkoztatáshoz
 
-| Common Data Service-entitás (forrás)                                             | Finance and Operations-entitás (cél) |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | FOGLALKOZTATÁS KEZDŐ DÁTUMA   (FOGLALKOZTATÁS KEZDŐ DÁTUMA) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA   (FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA)     |
@@ -197,7 +199,7 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="employments-to-employment-detail"></a>Foglalkoztatások a Foglalkoztatás részleteihez
 
-| Common Data Service-entitás (forrás)                                             | Finance and Operations-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | FOGLALKOZTATÁS KEZDŐ DÁTUMA   (FOGLALKOZTATÁS KEZDŐ DÁTUMA)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA   (FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA)       |
@@ -215,16 +217,16 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Dolgozó beosztáshoz való hozzárendelése a Dolgozó beosztáshoz való hozzárendeléseihez
 
-| Common Data Service-entitás (forrás)                                             | Finance and Operations-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | SZEMÉLYZETI SZÁM   (SZEMÉLYZETI SZÁM)           |
 | cdm_jobpositionnumber   (Feladatbeosztás száma)                   | BEOSZTÁSAZONOSÍTÓ(BEOSZTÁSAZONOSÍTÓ)                        |
 | cdm_validfrom   (Érvényesség kezdete)                                    | ÉRVÉNYESSÉG KEZDETE   (ÉRVÉNYESSÉG KEZDETE)                       |
-| cdm_validto (Érvényesség   vége)                                        | ÉRVÉNYESSÉG VÉGE (ÉRVÉNYESSÉG VÉGE)                             |
+| cdm_validto (Érvényesség vége)                                        | ÉRVÉNYESSÉG VÉGE (ÉRVÉNYESSÉG VÉGE)                             |
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Dolgozói címek a Dolgozó postai címéhez V2
 
-| Common Data Service-entitás (forrás)                                             | Finance and Operations-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | SZEMÉLYZETI SZÁM   (SZEMÉLYZETI SZÁM)           |
 | cdm_addresstype   (cdm_addresstype)                             | CÍM-HELYSZEREPKÖRÖK   (CÍM-HELYSZEREPKÖRÖK) |
@@ -239,9 +241,10 @@ A következő mögöttes tevékenységek segítségével lehet szinkronizálni a
 | cdm_addresstype   (cdm_addresstype)                             | CÍMLEÍRÁS(CÍMLEÍRÁS)        |
 
 ## <a name="integration-considerations"></a>Az integrációval kapcsolatos szempontok
-A Human Resources-adatok Finance modulba történő integrációja során az integráció megkísérli a rekordok egyeztetését az azonosító alapján. Egyezés esetén a program a Human Resources alkalmazás értékeivel felülírja a Finance-adatokat. Probléma merülhet fel azonban, ha logikusan ezek különböző rekordok, és a program ugyanazt az azonosítót vagy a Human Resources alkalmazásban vagy a Finance alkalmazásban, a megfelelő számsorozat alapján generálta.
 
-Azok a területek, ahol ez előfordulhat, az a Dolgozó, amely a Személyzeti szám használatával hozza létre az egyezést, illetve a Beosztások. A feladatok nem használnak számsorozatokat. Ennek eredményeképpen, ha ugyanaz a feladatazonosító a Human Resources alkalmazásban és a Finance modulban is szerepel, a Human Resources-adatok felülírják a Dynamics 365 Finance rendszer adatait. 
+A Human Resources és a Finance közötti integráció megkísérli a rekordok egyeztetését az azonosító alapján. Ha a rekordok egyeznek az Adatintegrátor a Human Resources alkalmazás értékeivel felülírja a Finance-adatokat. Probléma merülhet fel azonban, ha logikusan ezek különböző rekordok, és a program ugyanazt az azonosítót vagy a Human Resources alkalmazásban vagy a Finance alkalmazásban, a megfelelő számsorozat alapján generálta.
+
+Probléma merülhet fel olyan **Dolgozó** esetén, amely a **Személyzeti szám** használatával hozza létre az egyezést, illetve a **Beosztásokat**. A feladatok nem használnak számsorozatokat. Ennek eredményeképpen, ha ugyanaz a feladatazonosító a Human Resources alkalmazásban és a Finance modulban is szerepel, a Human Resources-adatok felülírják a Dynamics 365 Finance rendszer adatait. 
 
 Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
 
@@ -250,5 +253,3 @@ A dolgozó címében használt helyazonosító nem része számsorozatnak. A dol
 Az alábbi ábrán látható egy példa az Adatintegrátorban való sablonleképezésre. 
 
 ![Sablonleképezés](./media/IntegrationMapping.png)
-
-

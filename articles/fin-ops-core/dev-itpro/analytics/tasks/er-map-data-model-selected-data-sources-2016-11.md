@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44f6ac3263f115e76d054e68c99d58dc11e6f1a0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf19d69c498da32594e17e16fb83ed25e6747982
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182232"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142990"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER - adatmodell leképezése a kiválasztott adatforrásokra
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörű felhasználó miként képezhet le egy Elektronikus jelentés (ER) adatmodellt a kiválasztott adatforrásokra. Ez a modell leképezést lesz később az adatforrás egy formátumkonfigurációban, amely elektronikus fizetési dokumentumok kezelésére lesz használva. Ebben a példában a mintavállalat, a Litware, a Inc. adatmodelljét képezi le az adatforrásokhoz. A lépések végrehajtásához először hajtsa végre az „Adatforrások kijelölése modell-leképezéshez” műveletsorban ismertetett lépéseket.
 

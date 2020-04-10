@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcf22a3e9564f991b0cb5ebbd6a2282e3e749990
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 19cea683058f7fb757ac3a99541959ba06df1963
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178109"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144210"
 ---
 # <a name="vendor-payment-overview"></a>Szállítói fizetési áttekintés
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a feladatútmutató végigvezeti a szállítói kifizetések létrehozásához használt különböző módszereken, többek között a fizetési javaslat használatán, vagy egy egyszeri fizetés manuális rögzítésén. Ez az eljárás az USMF bemutatócéget használja.
 

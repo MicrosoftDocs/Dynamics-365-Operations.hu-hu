@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba5e66b8c4b9ee991b2889eecf4dcec174b31ef2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c45741dfef8be659dfe3ac632748cb5e19e977c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185773"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141554"
 ---
 # <a name="create-and-submit-vat-report"></a>Áfajelentés létrehozása és elküldése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás végigvezeti az áfajelentés létrehozásán és elküldésén a német hatóságok számára. Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva. Ez a funkció csak német állandó címmel rendelkező jogi személyek számára érhető el.
 

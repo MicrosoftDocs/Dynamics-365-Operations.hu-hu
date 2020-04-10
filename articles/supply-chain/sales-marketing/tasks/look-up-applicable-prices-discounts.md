@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 1ded87dcd553c0aa9c19ca273460f9adf0a4b542
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148630"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Alkalmazandó árak és engedmények keresése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni egy termékhez, amely jelenleg érvényes egy meghatározott vevőre, értékesítési rendelés létrehozása nélkül. Az eljárás végigvezet egy adott példán, és a szükséges értékek kiválasztásához követnie kell a példában az USMF bemutatóvállalat használatát.
 

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3084882dd4b51f067793b3a7999ce89cda1257d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0912b620fc70f8ed33e336da9ecefacd1f4e376e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184600"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143177"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A folyamat révén új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet. Ebben a folyamatban egy konfigurációt hoz létre a Litware, Inc. példavállalatra vonatkozóan. 
 
@@ -79,7 +79,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 34. A fán jelölje be a „TransactionsGroups\aggregated\SumOfAmountMST” lehetőséget.
 35. A fán jelölje be az „Összegek\Teljes számlaérték(TotalInvoiceValue) = IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded')” lehetőséget.
 36. Kattintson a Kötés gombra.
-    * Ezen beállítás alapján ez az adatforrás kiszámítja az AmountMST mező minden egyes tranzakciócsoportjának összértékét. Ez az aggregált számítás a TransactionsGroups.aggregated.TotalAmount cikként érhető el.  
+    * Ezen beállítás alapján ez az adatforrás kiszámítja az „AmountMST” mező minden egyes tranzakciócsoportjának összértékét. Ez az aggregált számítás a TransactionsGroups.aggregated.TotalAmount cikként érhető el.  
 37. A fában bontsa ki a TransactionsGroups elemet.
 38. A fastruktúrában válassza ki a TransactionsGroups lehetőséget.
 39. Kattintson a Szerkesztés lehetőségre.
@@ -92,7 +92,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 46. A Módszer mezőben válassza a „Max” lehetőséget.
 47. A Név mezőbe írja be a MaxOfAmountMST szöveget.
 48. Kattintson a Mentés gombra.
-    * Jelenleg a GROUPBY adatforrások végrehajtását bizonyos korlátozásokkal át lehet számítani az SQL-adatbázis szintjére. Az átszámítást a Rekordlista típus adatforrásai számára kifejezésként megjelenő adatforrásokra végezheti a SZŰRŐ funkció használatával. Ez akkor is megtehető, ha az egyetlen aggregáció a csoportosítási rekordok egyetlen mezőjére van konfigurálva.  
+    * Jelenleg a GROUPBY adatforrások végrehajtását bizonyos korlátozásokkal át lehet számítani az SQL-adatbázis szintjére. Az átszámítást a „Rekordlista” típus adatforrásai számára kifejezésként megjelenő adatforrásokra végezheti a SZŰRŐ funkció használatával. Ez akkor is megtehető, ha az egyetlen aggregáció a csoportosítási rekordok egyetlen mezőjére van konfigurálva.  
     * Vegye figyelembe, hogy annak ellenére, hogy az AmountMST mezőben egynél több aggregáció lett beállítva, a Végrehajtás helye mező továbbra is jelzi, hogy a csoportosítást futásidőben történik az SQL-adatbázisban. Ennek oka, hogy csak egy aggregáció kötődik az adatmodellcikkhez, és futásidőben használják az adatforrás adatainak lekérésére.  
 49. Zárja be a lapot.
 50. Kattintson az OK gombra.

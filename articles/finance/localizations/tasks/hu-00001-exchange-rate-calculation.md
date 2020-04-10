@@ -16,16 +16,16 @@ ms.search.region: Hungary
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6424df969fcabb0b27e2bbb0e807e6c9809ff333
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ec199ea1fdf85de9781baca533339c00215c720f
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174637"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138990"
 ---
 # <a name="hu-00001-exchange-rate-calculation"></a>HU-00001 Árfolyamszámítás
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán. 
 
@@ -49,6 +49,6 @@ Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, és a 
 13. Adjon meg egy dátumot a Kezdő dátum mezőben.
     * Válasszon ki egy tranzakciódátumot egy időszak meghatározásához. A rendszer azokat a főkönyvi tranzakciókat veszi figyelembe az átlagos árfolyam számításánál, amelyek tranzakciódátumai az ezen mezőbe beírt dátumra esnek vagy azt követik, valamint a naplósor tranzakciódátumánál korábbiak. Ha ezt a mezőt üresen hagyja, a rendszer a számítás során figyelembe veszi mindazokat a főkönyvi tranzakciókat, amelyek tranzakciódátuma a naplósor tranzakciódátuma elé esik.  
 14. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
-    * Majd a Belefoglalandó rekordok fül használatával állítson be kiválasztási feltételeket az átváltási árfolyam számításában szerepeltetni kívánt sorokhoz. Ha nem állít be kiválasztási feltételeket a Szűrő űrlapon, a kiválasztott számítási módszer kerül felhasználásra az aktuális naplóban lévő minden sorhoz.  
+    * Majd a „Belefoglalandó rekordok fül” használatával állítson be kiválasztási feltételeket az átváltási árfolyam számításában szerepeltetni kívánt sorokhoz. Ha nem állít be kiválasztási feltételeket a Szűrő űrlapon, a kiválasztott számítási módszer kerül felhasználásra az aktuális naplóban lévő minden sorhoz.  
 15. Kattintson az OK gombra.
 

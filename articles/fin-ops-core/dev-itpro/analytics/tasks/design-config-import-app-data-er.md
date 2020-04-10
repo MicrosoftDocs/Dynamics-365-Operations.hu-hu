@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26a3dee8b73ae710def7e526ceefa7194171d716
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a261acee47c6d52e3a1390d0e55cb3f9d197efec
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182669"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142245"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>ER-konfigurációk tervezése bejövő dokumentumok elemzésére
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás egy bejövő elektronikus dokumentumot elemző elektronikus jelentési (ER) konfigurációk megtervezését mutatja be. Ebben az eljárásban egy módosított Excel-sablont importálunk az ER-formátum konfigurációkba, amelyeket a Litware, Inc. mintavállalathoz hoztak létre, és ezután elvégezzük az elektronikus dokumentumok elemzését. A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 
-Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt hozzákezdene, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez” témakörben tárgyalt fájlokat (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents)). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt hozzákezdene, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez” témakörben tárgyalt fájlokat (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.  
@@ -47,7 +47,7 @@ Importálja azt az ER modellkonfigurációt, amely tartalmazza a beérkező fáj
 5. Kattintson a Tervező pontra.
     * Tekintse át az importált adatmodell struktúráját. Vegye figyelembe, hogy az enumType felsorolás meghatározása a következő szolgáltatási választípusok felismerésére szolgál: visszaigazolás a tranzakció benyújtására vonatkozóan, az utolsó benyújtott tranzakcióval kapcsolatos adatok beolvasása, valamint a nem támogatott választípusok felismerése.   
 6. A fastruktúrában bontsa ki ezt: Válasz.
-    * Vegye figyelembe, hogy a Válasz gyökérelem meghatározása arra szolgál, hogy milyen adatokat kell kiemelni egy támogatott szolgáltatási válaszból az alkalmazásadatok megfelelő frissítése érdekében.   
+    * Vegye figyelembe, hogy a „Válasz” gyökérelem meghatározása arra szolgál, hogy milyen adatokat kell kiemelni egy támogatott szolgáltatási válaszból az alkalmazásadatok megfelelő frissítése érdekében.   
 7. Zárja be a lapot.
     * Azt az ER-formátumkonfigurációt kell importálni, amely megadja a bejövő dokumentumok elemzési módját az adatok ER adatmodellben történő tárolásához.   
 8. Kattintson az Átváltás lehetőségre.
@@ -60,9 +60,9 @@ Importálja azt az ER modellkonfigurációt, amely tartalmazza a beérkező fáj
 14. Kattintson a Csomópont kibontása/összecsukása lehetőségre.
     * Ne feledje, hogy az ESET formátumelem lesz a gyökérszint, és három beágyazott FÁJL elemet tartalmaz, ami azt jelenti, hogy ez a formátum elemzi a különböző formátumú bejövő fájlokat.  
 15. A fán jelölje be a „Válaszok\Tranzakció befejezése\TraC” lehetőséget.
-    * Ne feledje, hogy az elküldött tranzakcióra vonatkozó válasz a TraC gyökérelemtől indul.   
+    * Ne feledje, hogy az elküldött tranzakcióra vonatkozó válasz a „TraC” gyökérelemtől indul.   
 16. A fán jelölje be a „Válaszok\Legutóbbi tranzakciós kérelem\Tra” lehetőséget.
-    * Ne feledje, hogy a legutóbb elküldött tranzakcióra vonatkozó válasz a Tra gyökérelemtől indul.   
+    * Ne feledje, hogy a legutóbb elküldött tranzakcióra vonatkozó válasz a „Tra” gyökérelemtől indul.   
 17. A fán válassza a „Válaszok\Váratlan válasz\Szöveg” lehetőséget.
     * A rendszer egy harmadik, beágyazott SZÖVEG elemmel ellátott FÁJL elemet adott hozzá, hogy felismerje a fent említettől eltérő típusú válaszokat.   
 18. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
@@ -81,12 +81,12 @@ Importálja azt az ER modellkonfigurációt, amely tartalmazza a beérkező fáj
 ## <a name="run-model-mapping-of-er-format-configured-for-parsing-incoming-files"></a>Bejövő fájlok elemzéséhez beállított ER-formátum modell leképezésének futtatása
 A létrehozott modell-leképezést tesztelési célokból kell futtatni, hogy megtudhassa, hogyan elemzi a beérkező szolgáltatási válaszokat a konfigurált ER formátum. Ez a lépés különbüző XML-fájlokat használ a különböző típusú webszolgáltatási válaszok szimuláláshoz.   
 1. Nyissa meg a Response1.xml fájlt egy XML-olvasóval, például a webböngészővel. Vegye figyelembe, hogy a fájl tartalmazza a befejezett tranzakcióra vonatkozó visszaigazolást (a „TraC” a gyökérelem).   
-2. Kattintson a Futtatás elemre.
+2. Kattintson a Futtatásra.
     * Kattintson a Tallózás gombra, és válassza ki a Response1.xml fájlt.  
 3. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Látható, hogy a rendszer a választípust helyesen ismerte fel és elemezte (az ERModelEnumDataSourceHandler#EFSTA model#enumType#C jelentése, hogy a tranzakció befejeződött).   
     * Nyissa meg egy XML-olvasóval a Response2.xml fájlt. Vegye figyelembe, hogy a fájl tartalmazza a legutóbb elküldött tranzakcióra vonatkozó információkat (a „Tra” a gyökérelem).   
-4. Kattintson a Futtatás elemre.
+4. Kattintson a Futtatásra.
     * Kattintson a Tallózás gombra, és válassza ki a Response2.xml fájlt.  
 5. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Látható, hogy a rendszer a választípust helyesen ismerte fel és elemezte (az ERModelEnumDataSourceHandler#EFSTA model#enumType#R jelentése, hogy a rendszer újraindul).   
@@ -96,14 +96,14 @@ A létrehozott modell-leképezést tesztelési célokból kell futtatni, hogy me
 7. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Látható, hogy a rendszer a választípust helyesen ismerte fel és nem támogatta (ERModelEnumDataSourceHandler#EFSTA model#enumType#U). A megfelelő üzenet az információs naplóba került (az ER-ellenőrzési beállításnak megfelelően), és az adatmodell legnagyobb része nincs kitöltve.   
     * Nyissa meg egy XML-olvasóval a Response4.xml fájlt. Ne feledje, hogy a fájl felépítése szinte teljesen megegyezik a sikeresen elemzett Response1.xml fájllal, kivéve a „TraC” gyökérelem beágyazott elemeinek sorozatát.   
-8. Kattintson a Futtatás elemre.
+8. Kattintson a Futtatásra.
     * Kattintson a Tallózás gombra, és válassza ki a Response4.xml fájlt.  
 9. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Látható, hogy a rendszer a választípust helyesen ismerte fel és nem támogatta (ERModelEnumDataSourceHandler#EFSTA model#enumType#U)). A megfelelő üzenet az információs naplóba került, és az adatmodell legnagyobb része nincs kitöltve. Ennek oka az, hogy az ER-formátum aktuális beállítása a bejövő fájl gyökéreleme beágyazott elemeinek bizonyos sorozatát feltételezi.   
 10. Zárja be a lapot.
 11. A fán jelölje be a „Válaszok\Tranzakció befejezése\TraC” lehetőséget.
 12. A Beágyazott elemek elemzési sorrendje mezőben válassza a Bármelyik lehetőséget.
-    * A Beágyazott elemek elemzési sorrendje mezőben válassza a Bármelyik lehetőséget, engedélyezve a beágyazott elemek tetszőleges sorozatát a gyökérszintű XML elemhez.  
+    * A „Beágyazott elemek elemzési sorrendje” mezőben válassza a Bármelyik lehetőséget, engedélyezve a beágyazott elemek tetszőleges sorozatát a gyökérszintű XML elemhez.  
 13. Kattintson a Mentés gombra.
 14. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
 15. Kattintson a Futtatás elemre.

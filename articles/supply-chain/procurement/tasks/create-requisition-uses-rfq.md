@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149625"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Olyan igénylés létrehozása, amely ajánlatkérést használ
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni. A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést. Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.
 
@@ -56,7 +56,7 @@ A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy 
 2. Válassza az **Előzmények megtekintése** elemet.
 3. Frissítse a lapot..
 4. Bontsa ki a **Nyomkövetési részletek** szakaszt.
-5. Válassza ki a „Sor munkafolyamata aktiválva” értékkel kezdődő sort a fa struktúrában.
+5. Válassza ki a „Sor munkafolyamata aktiválva ekkor:” értékkel kezdődő sort a fa struktúrában.
 6. Válassza a **Munkafolyamat részleteinek megtekintése** elemet.
 7. Bontsa ki a **Munkatételek** szakaszt.
 8. Válassza ki az **Ismételt hozzárendelés** lehetőséget.

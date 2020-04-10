@@ -1,9 +1,9 @@
 ---
-title: Hibaelhárítási útmutató – adatintegráció
-description: Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti adatintegrációk során felmerülő hibák elhárítását tekinti át.
+title: Általános hibaelhárítás
+description: Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019821"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172691"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a>Hibaelhárítási útmutató – adatintegráció
+# <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Engedélyezze a Beépülő modul nyomkövetési naplóját a Common Data Service szolgáltatásban, és vizsgálja meg át a kettős írású beépülő modul hibáinak részleteit
 
-Ha a kettős írású szinkronizálás során problémát vagy hibát észlel, hajtsa végre a következő lépéseket a nyomkövetési napló hibáinak ellenőrzése érdekében.
+Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 
-1. A hibák ellenőrzése előtt engedélyeznie kell a beépülő modul nyomonkövetési naplókat. További információért tekints meg az [Oktatás: beépülő modul írása vagy regisztrálás](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) „Nyomonkövetési naplók megtekintése” szakaszát.
+> [!IMPORTANT]
+> Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-    Most megtekintheti a hibákat.
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Amikor a Package Deployer eszközzel próbálja meg telepíteni a kettős írású csomagot, nem jelennek meg a rendelkezésre álló megoldások
 
-2. Jelentkezzen be a Microsoft Dynamics 365 Sales alkalmazásba.
-3. Válassza ki a **Beállítások** gombot (a fogaskerék szimbólumát), majd válassza ki a **Speciális beállítások** lehetőséget.
-4. A **Beállítások** menüben válassza a **Testreszabás \> Beépülő modul nyomkövetési naplója** lehetőséget.
-5. A hiba részleteinek megjelenítéséhez kattintson a típusnévre: **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+A Package Deployer eszköz egyes verziói nem kompatibilisek a kettős írású megoldáscsomaggal. A csomag sikeres telepítéséhez győződjön meg arról, hogy a Package Deployer eszköz [9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) vagy újabb verzióját használja.
 
-## <a name="inspect-dual-write-synchronization-errors"></a>Kettős írás szinkronizálási hibák ellenőrzése
+A Package Deployer eszköz telepítését követően telepítse a megoldást tartalmazó csomagot a következő lépések végrehajtásával.
 
-Kövesse az alábbi lépéseket a hibák tesztelés során történő ellenőrzésére.
+1. Töltse le a legújabb megoldáscsomag-fájlt a Yammer.com oldalról. A csomag zip-fájljának letöltése után kattintson rá jobb gombbal, és válassza a **Tulajdonságok** elemet. Válassza ki a **Zárolás feloldása** jelölőnégyzetet, majd válassza az **Alkalmazás** lehetőséget. Ha nem látja a **Zárolás feloldása** jelölőnégyzetet, akkor a zip-fájl zárolása már fel van oldva, és kihagyhatja ezt a lépést.
+
+    ![Tulajdonságok párbeszédpanel](media/unblock_option.png)
+
+2. Csomagolja ki a csomag zip-fájlját, és másolja az összes fájlt a **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** mappába.
+
+    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma](media/extract_package.png)
+
+3. Illessze be az összes másolt fájlt a Package Deployer eszköz **Eszközök** mappájába. 
+4. Futtassa a **PackageDeployer.exe** fájlt a Common Data Service-környezet kiválasztásához és a megoldások telepítéséhez.
+
+    ![Az Eszközök mappa tartalma](media/paste_copied_files.png)
+
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Common Data Service szolgáltatásban a hiba részleteinek megtekintéséhez
+
+**A nyomkövetési napló bekapcsolásához és a hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
+
+Ha be szeretné kapcsolni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
+
+1. Jelentkezzen be az Finance and Operations alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Rendszer** területen válassza a **Felügyelet** elemet.
+2. A **Felügyelet** oldalon válassza az **Rendszerbeállítások** lehetőséget.
+3. A **Testreszabás** lap **Beépülő modul és egyéni munkafolyamat tevékenységének nyomon követése** mezőjében válassza az **Összes** lehetőséget, ha engedélyezni szeretné a beépülő modul nyomkövetési naplóját. Ha csak a kivételek bekövetkezésekor szeretné naplózni a nyomkövetési naplókat, akkor válassza ehelyett a **Kivétel** elemet.
+
+
+Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
+
+1. Jelentkezzen be az Finance and Operations alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
+2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** mező értéke **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+3. A teljes napló megjelenítéséhez kattintson duplán egy elemre, majd a **Végrehajtás** gyorslapján tekintse át az **Üzenetblokk** szövegét.
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése az Finance and Operations alkalmazások élő szinkronizálási problémáinak elhárításához
+
+**A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
+
+A Common Data Service alkalmazásból származó kettős írású hibák megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
+
+1. A Finance and Operations-alkalmazások minden projektkonfigurációjában van egy **IsDebugMode** tulajdonság a **DualWriteProjectConfiguration** entitásban. Nyissaa meg a **DualWriteProjectConfiguration** entitást az Excel-bővítmény használatával.
+
+    > [!TIP]
+    > Az entitás megnyitásának egyszerű módja a **Tervező** mód bekapcsolása az Excel-bővítményben, majd adja hozzá a **DualWriteProjectConfigurationEntity** entitást a munkalaphoz. További információért lásd: [Entitásadatok megnyitása az Excel programban, és frissítésük az Excel-bővítmény használatával](../../office-integration/use-excel-add-in.md).
+
+2. Állítsa a projekt **IsDebugMode** tulajdonságát **Igen** értékre.
+3. Futtassa a hibákat létrehozó esetet.
+4. A részletes naplók a DualWriteErrorLog táblában érhetők el. Az adatoknak a tábla böngészőjében való kereséséhez használja a következő URL-címet (helyettesítse az **XXX** részt a megfelelő elemmel):
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák keresése a Finance and Operations alkalmazás virtuális gépén
+
+**A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
 1. Jelentkezzen be a Microsoft Dynamics LifeCycle Services (LCS) szolgáltatásba.
-2. Nyissa meg az LCS-projektet a kettős írási teszt elvégzéséhez.
-3. Válassza a **Felhőbeli környezetek** lehetőséget.
-4. Hozzon létre távoli asztali kapcsolatot az alkalmazás virtuális gépével (VM) az LCS modulban megjelenített helyi fiók használatával.
-5. Nyissa meg az eseménynaplót. 
-6. Lépjen az **Alkalmazás- és szolgáltatásnaplók \> Microsoft \> Dynamics \> AX-DualWriteSync \> Működő** részre. Megjelennek a hibák és a részletek.
+2. Nyissa meg azt az LCS-projektet, amelyhez kettős írású tesztelést szeretne végezni.
+3. Válassza a **Felhőbeli környezetek** csempét.
+4. A távoli asztal használatával jelentkezzen be a Finance and Operations-alkalmazás virtuális gépébe (VM). Az LCS képernyőn látható helyi fiókot használja.
+5. Nyissa meg az eseménynaplót.
+6. Válassza az **Alkalmazás- és szolgáltatásnaplók \> Microsoft \> Dynamics \> AX-DualWriteSync \> Működő** részt.
+7. A legutóbbi hibák listájának áttekintése.
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a>Kapcsoljon le egy Common Data Service környezetet az alkalmazásból és kapcsoljon egy másik környezetet
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>A Common Data Service-környezet leválasztása és másik csatolása a Finance and Operations-alkalmazásból
 
-A linkek frissítéséhez hajtsa végre a következő lépéseket.
+**A környezet leválasztásához szükséges hitelesítő adatok:** Azure AD bérlői rendszergazda
 
-1. Nyissa meg az alkalmazáskörnyezet.
-2. Nyissa meg az Adatkezelést.
-3. Válassza a **CDS for Apps hivatkozása** lehetőséget
-4. Válassza ki az összes futó leképezést, majd válassza a **Leállítás**parancsot.
-5. Válassza ki az összes leképezést, majd válassza a **Törlés** elemet.
+1. Bejelentkezés a Finance and Operations alkalmazásba.
+2. Nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza a **Kettős írás** csempét.
+3. Válassza ki az összes futó leképezést, és kattintson a **Leállítás** elemre.
+4. Válassza a **Környezet leválasztása** elemet.
+5. A művelet jóváhagyásához válassza az **Igen** lehetőséget.
 
-    > [!NOTE]
-    > A **Törlés** beállítás nem elérhető, ha a **CustomerV3-Account** sablont választja ki. Szükség esetén törölje a sablon kiválasztását. A **CustomerV3-Account** egy régebben létesített sablon, amely együttműködik a Potenciális ügyfelek készpénzre váltása sablonnal. Mivel globálisan kiadott sablon, minden sablon alatt megjelenik.
-
-6. Válassza a **Környezet leválasztása** elemet.
-7. A művelet jóváhagyásához válassza az **Igen** lehetőséget.
-8. Az új környezet összekapcsolásához kövesse a [telepítési útmutató](https://aka.ms/dualwrite-docs) lépéseit.
+Ezután új környezet csatolható.

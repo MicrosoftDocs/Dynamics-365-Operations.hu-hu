@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124405"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154180"
 ---
 # <a name="peripherals"></a>Perifériák
 
@@ -158,7 +158,7 @@ Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési term
 
 ### <a name="dedicated"></a>Kijelölt
 
-A korszerű POS-ügyfelek esetében a Windows és az Android **Dedikált** vagy beépített hardverállomásokat tartalmaz. Ezek az ügyfelek közvetlenül tudnak kommunikálni a perifériákkal az alkalmazásokba épített üzleti logikát használva. Az Android alkalmazás csak hálózati eszközöket támogat. Ha további tájékoztatást szeretne a perifériás támogatással kapcsolatban az Android esetében, látogassa meg a [POS Hybrid alkalmazás beállítása Android vagy iOS rendszerre](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp) cikket.
+A korszerű POS-ügyfelek esetében a Windows és az Android **Dedikált** vagy beépített hardverállomásokat tartalmaz. Ezek az ügyfelek közvetlenül tudnak kommunikálni a perifériákkal az alkalmazásokba épített üzleti logikát használva. Az Android alkalmazás csak hálózati eszközöket támogat. Ha további tájékoztatást szeretne a perifériás támogatással kapcsolatban az Android esetében, látogassa meg a [POS Hybrid alkalmazás beállítása Android vagy iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) cikket.
 
 A dedikált hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows vagy Android alkalmazást fogja használni. Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja. A korszerű POS-t ne fiókos módban indítsa el, és a **Hardveres állomások kezelése** művelet használatával kapcsolja be a hardveres állomás képességeit; a dedikált hardvereszköz alapértelmezés szerint aktív lesz. Ezután jelentkezzen ki a Modern POS rendszerből, majd jelentkezzen be újra, nyisson meg egy műszakot, és a hardverprofilban konfigurált perifériák használhatók lesznek. 
 
@@ -199,7 +199,7 @@ További információ: [A (MPOS) konfigurálása, telepítése és aktiválása]
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS for Android és iOS telepítése és beállítása
 
-További információk: [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+További információk: [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-eszköz telepítése és beállítása
 
@@ -494,7 +494,7 @@ Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS for Android IPC (beépített) hardverállomással
 
-**Újdonság a 10.0.8 verzióban** – Az Epson hálózati nyomtatókat és a DK porton keresztül csatlakoztatott pénzeszközöket jelenleg a modern POS for Android alkalmazás támogatja. A részleteket lásd a [POS Hybrid alkalmazás telepítése Android és iOS rendszerre](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp) cikkben.
+**Újdonság a 10.0.8 verzióban** – Az Epson hálózati nyomtatókat és a DK porton keresztül csatlakoztatott pénzeszközöket jelenleg a modern POS for Android alkalmazás támogatja. A részleteket lásd a [POS Hybrid alkalmazás telepítése Android és iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) cikkben.
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely vállalt, megosztott IIS hardverállomással rendelkezik
 

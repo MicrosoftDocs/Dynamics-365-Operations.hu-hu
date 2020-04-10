@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e9151adbadffa54633cb10a37522c065e86dd5c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: bb201dac1cbfa59f1a46ef42da3822040f74e620
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141476"
 ---
 # <a name="create-and-associate-a-device"></a>Eszköz létrehozása és hozzárendelése
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez az eljárás végigveszi, hogyan hozhat létre egy új eszközt, és hogyan társíthatja azt egy jegyzékhez. A leírásban feltételezzük, hogy a jegyzéket már elkészítette.  Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat. Ez az eljárás rendszergazdák, Informatikai szakértők vagy kereskedelmi informatikusok, illetve az üzletvezető szerepköröket betöltők számára készült.
 

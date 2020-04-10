@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249227"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142685"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával. A hívóosztályok argumentumértékeit dinamikusan lehet futásidőben definiálni: például az elemző dokumentumban lévő információk alapján az információk helyességének biztosítása érdekében. Ebben az útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 
@@ -41,10 +41,10 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
     * Válassza ki a Microsoft lapot.  
 2. Kattintson a Tárházak gombra.
 3. Kattintson a Szűrők megjelenítése pontra.
-4. Adjon hozzá egy Típusnév szűrőmezőt. Írja be az „erőforrások” szűrőértéket a Név mezőbe a „tartalmazza” szűrési operátor használatával, majd kattintson az Alkalmazás lehetőségre.
+4. Adjon hozzá egy „Típusnév” szűrőmezőt. Írja be az „erőforrások” szűrőértéket a Név mezőbe a „tartalmazza” szűrési operátor használatával, majd kattintson az Alkalmazás lehetőségre.
 5. Kattintson a Megnyitás gombra.
 6. A fastruktúrában válassza ki a „Fizetési modell” lehetőséget.
-    * Ha a Verziók gyorslapon az Importálás gomb még nincs engedélyezve, az azt jelenti, hogy már importálta a Fizetési modell ER-konfiguráció 1. verzióját. Az alfeladat többi műveletét kihagyhatja.   
+    * Ha a Verziók gyorslapon az Importálás gomb még nincs engedélyezve, az azt jelenti, hogy már importálta a „Fizetési modell” ER-konfiguráció 1. verzióját. Az alfeladat többi műveletét kihagyhatja.   
 7. Kattintson az Importálás gombra.
 8. Kattintson az Igen gombra.
 9. Zárja be a lapot.
@@ -69,14 +69,14 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 4. A Név mezőbe írja be a következőt: „Gyökér”.
     * Gyökér  
 5. A Különleges karakterek mezőben válassza ki az „Új sor – Windows (CR LF)” lehetőséget.
-    * A Különleges karakterek mezőben ki van választva az „Új sor – Windows (CR LF)” lehetőség. Ezen beállítás alapján az elemzési fájl minden sora külön nyilvántartásnak minősül.  
+    * A „Különleges karakterek” mezőben ki van választva az „Új sor – Windows (CR LF)” lehetőség. Ezen beállítás alapján az elemzési fájl minden sora külön nyilvántartásnak minősül.  
 6. Kattintson az OK gombra.
 7. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
 8. A fastruktúrában válassza ki ezt: „Szöveg\Sorozat”.
 9. A Név mezőbe írja be a Sorok szöveget.
     * Sorok  
 10. A Multiplicitás mezőben válassza ki ezt: 'Egy a többhöz'.
-    * A Multiplicitás mezőben kiválasztotta az „Egy a többhöz” lehetőséget. Ezen beállítás alapján valószínű, hogy legalább egy sor fog szerepelni az elemzési fájlban.  
+    * A „Multiplicitás” mezőben kiválasztotta az „Egy a többhöz” lehetőséget. Ezen beállítás alapján valószínű, hogy legalább egy sor fog szerepelni az elemzési fájlban.  
 11. Kattintson az OK gombra.
 12. A fastruktúrában válassza ki a Gyökér\Sorok csomópontot.
 13. Kattintson a Számsorozat hozzáadása lehetőségre.
@@ -142,7 +142,7 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
     * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
 39. Kattintson a Mentés gombra.
 40. Zárja be a lapot.
-    * Az érvényességi feltétel úgy van konfigurálva, hogy minden érvénytelen IBAN-kód esetén HAMIS választ adjon az ISO7064 alkalmazásosztály „verifyMOD1271_36” meglévő módszerét előhívva. Vegye figyelembe, hogy az IBAN-kód értéke dinamikusan van megadva futásidőben az elemző TXT-fájl tartalmán alapuló hívásmódszer argumentumaként.   
+    * Az érvényességi feltétel úgy van konfigurálva, hogy minden érvénytelen IBAN-kód esetén HAMIS választ adjon az „ISO7064” alkalmazásosztály „verifyMOD1271_36” meglévő módszerét előhívva. Vegye figyelembe, hogy az IBAN-kód értéke dinamikusan van megadva futásidőben az elemző TXT-fájl tartalmán alapuló hívásmódszer argumentumaként.   
 41. Kattintson az Üzenet szerkesztése lehetőségre.
 42. A Receptúra mezőbe írja be a következőt: CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN).
     * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2948282d8b40f7d34ffbae072a195cf954ab6e2
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 6ca44b4793f61d1067b9e0740b9a447d3a2363c2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738904"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147388"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Felhasználási igénylés létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakor az igénylés létrehozásának folyamatát írja le. Megmutatja, hogy milyen különböző módokon tudja keresni a termékeket a beszerzési katalógusban, illetve hogyan tud hozzáadni egy olyan terméket, amely nem szerepel a katalógusban. Az eljárás megkezdése előtt rendelkeznie kell egy beszerzési irányelvvel, amelyet az igénylés alapértelmezett típusaként kell beállítania. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Az eljárás csak olyan felhasználói profil által hajtható végre, amely dolgozóként van beállítva. Ezt a feladatot általában egy alkalmazott végzi el. Az **Alkalmazott** által alkalmazott biztonsági szerepkör teszi lehetővé a feladatok elvégzését, vagy ha USMF-et használ, jelentkezzen be ezen a néven: **Alíz**.
 

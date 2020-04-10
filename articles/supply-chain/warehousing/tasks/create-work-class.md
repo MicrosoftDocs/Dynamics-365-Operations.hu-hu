@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5def9be0966d65728ffb0897229c0d749e7e13a0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6afbd9f54ef9046da10d0abc24ed545b5735a069
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146100"
 ---
 # <a name="create-a-work-class"></a>Munkaosztály létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt. A munkaosztályokkal irányítható és/vagy korlátozható azon munkarendeléssorok típusa, amelyeket egy raktári dolgozó feldolgozhat egy mobileszközön. A sorokat, amelyeket egy dolgozó feldolgozhat, a mobileszköz-menü elemeinek munkaosztályai, amelyekhez a raktári dolgozó hozzáférésre jogosult, és a munkasorokban megadott munkaosztályok határozzák meg. Munkaosztályok használhatók a betárolási hely ellenőrzéséhez is munkarendelési sorhoz. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Ezt az eljárást a raktári vezető használja.
 

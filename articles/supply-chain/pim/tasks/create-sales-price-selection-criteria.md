@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ed8c60b188b7c7090546e8367455e0f58ce9359b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844489"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147687"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Eladási ár kiválasztási feltételeinek létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási feltételeket az attribútumalapú eladásiár-modellekhez. Az eljáráshoz előfeltétel, hogy legyen legalább egy elérhető eladásiár-modell. Ebben a példában a hangszóró megoldás eladásiár-modelljének ármodelljét használjuk a USMF bemutatócég esetében. Ezt az eljárást általában a termékmenedzser használja.
 
@@ -36,7 +36,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási felt
 3. A listában jelölje ki a hangszóró megoldás termékmodelljének a sorát, de ne kattintson a modell nevének hivatkozására.
 4. A Művelet panelen kattintson a Modell elemre.
 5. Kattintson az Ármodellfeltételek lehetőségre.
-6. Kattintson az Új lehetőségre.
+6. Kattintson az Új elemre.
 7. A Név mezőbe írja be a „10. vásárlócsoport” szöveget.
     * Az ármodellfeltétel nevének a használata segít azonosítani az alapul szolgáló kiválasztási feltételeket.  
 8. Az Ármodell mezőben adjon meg vagy válasszon ki egy értéket.

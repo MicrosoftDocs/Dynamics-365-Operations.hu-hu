@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db27255c74c55b10680594ad23424253e4c3f79e
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 8f9cb895f733442e95cd7008c63942463bbd2cba
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867053"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148513"
 ---
 # <a name="register-sales-commissions"></a>Értékesítési jutalékok regisztrálása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör az értékesítési jutalékok számításának és regisztrálásának módját mutatja be. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Mielőtt elindítaná az útmutatót, az „Értékesítési jutalékok szabályainak beállítása” című segédlet futtatásával győződjön meg, hogy rendelkezik az összes szükséges jutalékszámítási beállítással.
 

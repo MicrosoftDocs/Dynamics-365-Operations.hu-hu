@@ -3,7 +3,7 @@ title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés (ER) rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030773"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150815"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -114,7 +114,7 @@ Miután befejezte ezt a beállítást, elérhetővé válik a **Piszkozat futtat
 
 [![Piszkozat futtatása opció](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Rendeltetési hely meghibásodásának kezelése
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Rendeltetési hely meghibásodásának kezelése
 
 A program általában egy adott üzleti folyamat hatókörén belül futtatja az ER-formátumot. Előfordulhat azonban, hogy egy ER-formátum végrehajtása során létrejövő kimenő dokumentumok szállítását esetenként az üzleti folyamat részének kell tekinteni. Ebben az esetben, ha a létrejövő kimenő dokumentumnak egy konfigurált rendeltetési helyre történő szállítása sikertelen, akkor az üzleti folyamat végrehajtását meg kell szakítani. A megfelelő ER-cél konfigurálásához jelölje be a **Feldolgozás leállítása meghibásodáskor** beállítást.
 
@@ -124,7 +124,7 @@ Beállíthatja például a szállítói kifizetések feldolgozását úgy, hogy 
 
 Ha nem jelöli be a **Feldolgozás leállítása meghibásodáskor** jelölőnégyzetet a **CoveringLetter** összetevőnél a célhelyen, fizetést akkor is sikeres feldolgozásúként jelöli meg a rendszer, ha a kísérőlevélet nem kézbesítik sikeresen e-mailben. A kifizetés állapota **Nem** állapotról **Elküldve** állapotra módosul, még akkor is, ha a kísérőlevél nem küldhető el, mert például hiányzik vagy helytelen a címzett vagy a feladó e-mail-címe.
 
-## <a name="OutputConversionToPDF"></a>Kimenet átalakítása PDF-formátumba
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Kimenet átalakítása PDF-formátumba
 
 A PDF-átalakítási beállítással a kimenetet Microsoft Office formátumból (Excel/Word) konvertálhatja PDF-formátumba.
 
@@ -148,7 +148,7 @@ A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolh
 >
 > A létrehozott PDF-fájl legfeljebb 300 oldalas lehet.
 >
-> A THS-időszakban csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban.
+> Jelenleg csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban.
 >
 > Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet átalakításához, amely nem tartalmaz beágyazott betűtípusokat.
 
@@ -157,6 +157,19 @@ A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolh
 Ha be kívánja kapcsolni a PDF-konverziót egy célhelyre, jelölje be a **Konvertálás PDF formátumba** jelölőnégyzetet.
 
 [![A PDF-konverzió bekapcsolása fájl célhelyére](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Lap tájolásának kiválasztása PDF-konverzióhoz</a>
+
+Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF formátumra szeretné átalakítani, akkor megadhatja a PDF-fájl tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
+
+[![Lap tájolásának kiválasztása PDF-konverzióhoz](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen telepítenie kell a Microsoft Dynamics 365 Finance 10.0.10 (2020, május) vagy újabb verzióját.
+>
+> A kiválasztott laptájolás minden olyan ER-konfigurációra vonatkozik, amely Excel-formátumban jön létre, majd PDF formátumra lesz konvertálva.
+>
+> Ha egy konvertált PDF-fájl egy ER-konfigurációból jön létre Word formátumban, akkor a program a Word-dokumentumból veszi át a PDF-fájl laptájolását.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 

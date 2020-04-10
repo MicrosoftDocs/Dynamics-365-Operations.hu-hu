@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141741"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre.   A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat: • a Készpénz- és bankkezelés lapon állítson be a jövőben esedékes csekket • Állítsa be a fizetési módot a jövőben esedékes csekkekhez Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget használja.
+A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre.   A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat: * a Készpénz- és bankkezelés lapon állítson be a jövőben esedékes csekkeket * Állítsa be a fizetési módot a jövőben esedékes csekkekhez Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget használja.
 
 1. Ugorjon a Kinnlevőségek > Fizetési beállítás > Fizetési napló pontra.
 2. Kattintson az Új lehetőségre.

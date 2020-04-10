@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3fcb7b1b12dbf0e49e15aa594b0048a9b9216260
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e612e3cd0343d386da4755f13eca6bf1443816d5
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844865"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150154"
 ---
 # <a name="create-dimension-based-configurations"></a>Dimenzión alapuló konfigurációk létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja a dimenzión alapuló termékek konfigurációjának meghatározásának módját. Ez az utolsó eljárás a sorozatban, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti. Ezen eljárás végrehajtása az előző hét rögzítésben létrehozott adattól függ. Ez az eljárás az USMF bemutatócéget használja.
 

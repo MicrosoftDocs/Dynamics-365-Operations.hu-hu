@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: d9036b5cbad10af725aaaf5d1d9498687c3a1d58
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146422"
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést. Ez az eljárás bemutatja, hogy hozhat létre vevő és cikk típusú jutalékcsoportokat, és hogyan csatolhatja a kiválasztott vevőt és a terméket a megfelelő csoporthoz. Ezek a csoportok a jutalékszámítás beállításánál használatosak, vevő, cikk, és üzletkötő kombinációk létrehozásához, amelyeket értékesítési rendelésekhez kell kötni, hogy feljogosítsa az értékesítőket üzletkötésre. Vevő és cikk jutalékcsoportok létrehozása nem kötelező, mivel a jutalékszámítás egy vevőre és/vagy cikkre is elvégezhető. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
 

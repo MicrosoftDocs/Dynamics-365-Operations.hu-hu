@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a911fea9e7d1009160a021e53533c0ce49efbfe
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178194"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143696"
 ---
 # <a name="manage-email-templates"></a>E-mail-sablonok kezelése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Átvihet információkat szervezete adatbázisából az új dokumentum könyvjelzőihez, és felhasználhatja azokat a pályázókkal és jelöltekkel történő hatékony kommunikációt segítő sablonokban. Ehhez létrehoz egy sablont, amely szabványos szöveget és néhány könyvjelzőt tartalmaz, ahová a rendszeradatokat be lehet szúrni. Például beszúrhatja a pályázó címét és kapcsolattartási adatait egy Microsoft Word-dokumentumba, amelyet a pályázóval folytatott kommunikáció során használhat. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28a82ea8747fcbbceb835291ad5cd3d87091a736
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a087fa63bfdf4c2340f0fe9a8bdbd9195a7b90b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190695"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144064"
 ---
 # <a name="approve-application-inbox-records"></a>Pályázati postafiókrekordok jóváhagyása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell ellenőrizni az Alkalmazotti önkiszolgáló rendszer lapjain keresztül érkező pályázatokat. A pályázatok ellenőrzése mellett elfogadhatja a pályázatokat a kiválasztott fiókrekordokban. A pályázatok bejövő fiókrekordjai a céghez benyújtott alkalmazotti pályázatokat jelölik. A rekord elfogadása után pályázói rekord jön létre a pályázatot benyújtó személy számára. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc368351641f3e2432dfdbbaf8eed8694595bd4e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 98eeae9f50238aae172e4a217d40be39ee46a0b8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184370"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142961"
 ---
 # <a name="configure-financial-cross-company-data-sharing"></a>Vállalatközi pénzügyi adatmegosztás konfigurálása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet konfigurálni, engedélyezni, érvényesíteni, és feloldani az ütközéseket a vállalatok közötti adatmegosztás során. Az USMF vállalatot és a pénzügyi adatmegosztási sablont használja.
 

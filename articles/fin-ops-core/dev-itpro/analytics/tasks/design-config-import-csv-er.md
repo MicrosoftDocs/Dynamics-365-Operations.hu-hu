@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185152"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142247"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>ER-konfigurációk tervezése adatok külső, CSV-fájlokból történő importálásához (ER)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat. Ebben az eljárásban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” 
 
@@ -66,28 +66,28 @@ Emellett le kell töltenie és helyben mentenie kell a következő fájlokat: (h
 3. Kapcsolja be a Részletek megjelenítése lehetőséget.
     * A tervezett formátum a külső fájl várt struktúráját jelöli CSV formátumban.  
 4. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence”.
-    * A SOROZAT típusú Gyökérelem esetében a Különleges karakterek mezőben az Új sor – Windows (CR LF) lehetőség van kiválasztva. Ezen beállítás alapján az elemzési fájl minden sorát külön nyilvántartásnak kell tekinteni.   
+    * A SOROZAT típusú Gyökérelem esetében a „Különleges karakterek” mezőben az „Új sor – Windows (CR LF)” lehetőség van kiválasztva. Ezen beállítás alapján az elemzési fájl minden sorát külön nyilvántartásnak kell tekinteni.   
 5. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* ”.
-    * A SOROZAT típusú Gyökér\Sor elem esetében a Multiplicitás mezőben ki van választva az Egy a többhöz lehetőség. Ezen beállítás alapján legalább egy sor fog szerepelni az elemzési fájlban.   
+    * A SOROZAT típusú Gyökér\Sor elem esetében a „Multiplicitás” mezőben ki van választva az „Egy a többhöz” lehetőség. Ezen beállítás alapján legalább egy sor fog szerepelni az elemzési fájlban.   
 6. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case ”.
     * Vegye figyelembe, hogy az ESET típusú Gyökér\Sor\Típus elemet a rendszer a Gyökér\Sor sorozat beágyazott elemeként adta hozzá. Mivel ez az ESET elem három beágyazott sorozatelemet tartalmaz, ez a beállítás azt feltételezi, hogy az elemzési fájlban három különböző típusú sor lesz.   
 7. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Header: Sequence 1..1 ”.
     * A SOROZAT típus Gyökér\Sor\TípusokCímsor eleme a beágyazott KARAKTERLÁNC elemet tartalmazza, amelynek az értékét rögzített karakterláncértékként határozta meg. Ez a sorozat az elemzési fájl fejlécét fogja elemezni.   
 8. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)”.
-    * A SOROZAT típus Gyökér\Sor\Típusok\Rekord eleme úgy van beállítva, hogy a tranzakciósorokat elemezze. Megjegyzés: az Egyéni elválasztó karakter beállítása a vessző. Ez azt jelenti, hogy a vessző fog mezőelválasztóként működni az ilyen típusú sorhoz az elemzési fájlban.   
-    * Vegye figyelembe, hogy különböző adattípusok beágyazott elemeit külön mezőkként adta hozzá a Gyökér\Sor\Típusok\Rekord elemhez a tranzakciósorok elemzése érdekében. Vegye figyelembe, hogy az Árajánlat-kérelem beállítása Nincs. Ez azt jelenti, hogy az elemzési fájlban minden ilyen típusú mezőt úgy kell tekinteni, mint amelyek nem rendelkeznek zárt karakterekkel.   
+    * A SOROZAT típus Gyökér\Sor\Típusok\Rekord eleme úgy van beállítva, hogy a tranzakciósorokat elemezze. Megjegyzés: az „Egyéni elválasztó” karakter beállítása a vessző. Ez azt jelenti, hogy a vessző fog mezőelválasztóként működni az ilyen típusú sorhoz az elemzési fájlban.   
+    * Vegye figyelembe, hogy különböző adattípusok beágyazott elemeit külön mezőkként adta hozzá a Gyökér\Sor\Típusok\Rekord elemhez a tranzakciósorok elemzése érdekében. Vegye figyelembe, hogy az „Árajánlat-kérelem” beállítása Nincs. Ez azt jelenti, hogy az elemzési fájlban minden ilyen típusú mezőt úgy kell tekinteni, mint amelyek nem rendelkeznek zárt karakterekkel.   
 9. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\TransactionDate: DateTime”.
-    * Például a DÁTUMIDŐ típus Gyökér\Sor\Típusok\Rekord\Tranzakció dátuma elem úgy van beállítva, hogy a tranzakció dátumának és időpontjának értékét az elemzési fájlból H/n/éééé formátumban kérje le.   
+    * Például a DÁTUMIDŐ típus Gyökér\Sor\Típusok\Rekord\Tranzakció dátuma elem úgy van beállítva, hogy a tranzakció dátumának és időpontjának értékét az elemzési fájlból „H/n/éééé” formátumban kérje le.   
 10. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\CountryCode: String 0..1 ”.
-    * Megjegyzés: a KARAKTERLÁNC típus Gyökér\Sor\Típusok\Rekord\Országkód elem úgy van beállítva, hogy a Multiplicitás mezőben a Nulla egy beállítás érvényes rá. Ez a beállítás az elemzési fájl Országkód mezőjének értékét opcionálisnak tekinti.   
+    * Megjegyzés: a KARAKTERLÁNC típus Gyökér\Sor\Típusok\Rekord\Országkód elem úgy van beállítva, hogy a „Multiplicitás” mezőben a „Nulla egy” beállítás érvényes rá. Ez a beállítás az elemzési fájl Országkód mezőjének értékét opcionálisnak tekinti.   
 11. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\Remark: Sequence 1..1 (,)”.
-    * Megjegyzés: a SOROZAT típusú Gyökér\Sor\Típusok\Rekord\Megjegyzés elem úgy van beállítva, hogy az Árajánlat-kérelem mezőben az Összes lehetőség van beállítva, az Idézőjel mezőben pedig a kettős idézőjel. Ez azt jelenti, hogy az elemzési fájl minden ilyen típusú sorához tartozó mezőt (amelyeket a KARAKTERLÁNC típus Szöveg beágyazott elemei írnak le) úgy tekint a rendszer, mintha kettős idézőjelben jelenne meg.  
+    * Megjegyzés: a SOROZAT típusú Gyökér\Sor\Típusok\Rekord\Megjegyzés elem úgy van beállítva, hogy az „Árajánlat-kérelem” mezőben az „Összes” lehetőség van beállítva, az „Idézőjel” mezőben pedig a kettős idézőjel. Ez azt jelenti, hogy az elemzési fájl minden ilyen típusú sorához tartozó mezőt (amelyeket a KARAKTERLÁNC típus Szöveg beágyazott elemei írnak le) úgy tekint a rendszer, mintha kettős idézőjelben jelenne meg.  
 12. A fastruktúrában válassza ki ezt: „Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Unparsed: Sequence 1..1 ”.
     * A SOROZAT típus Gyökér\Sor\Típusok\Nem elemzett elem úgy van beállítva, hogy olyan struktúra alapján elemezze a tranzakciósorokat, amely nem felel meg a szülő ESET elemben leírtnak.   
 
 ## <a name="review-the-setting-of-the-format-mapping-to-the-data-model"></a>Az adatmodellhez tartozó formátumleképezés beállításának ellenőrzése
 1. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
-    * A Hozzárendelés modellhez CSV-formátumból modell-leképezés leírja a bejövő CSV-fájl adatátvitelének áramlását az adatmodellbe.   
+    * A „Hozzárendelés modellhez CSV-formátumból” modell-leképezés leírja a bejövő CSV-fájl adatátvitelének áramlását az adatmodellbe.   
 2. Kattintson a Tervező pontra.
 3. A fastruktúrában bontsa ki ezt: „format”.
     * Megjegyzendő, hogy a tervezett formátum itt adatforrás-összetevőként jelenik meg.  
@@ -102,7 +102,7 @@ Emellett le kell töltenie és helyben mentenie kell a következő fájlokat: (h
     * Megjegyzés: a kötelező és választható formátumelemek, pl. a TransactionDate vagy a CountryCode megjelenítése eltér az előre meghatározott „formátum” adatforrás-összetevőben.   
 12. A fában bontsa ki a „Transactions = '$both” csomópontot.
     * Vegye figyelembe, hogy az importált fájl szerkezetét meghatározó formátum elemei az adatmodell elemeihez vannak kötve. A kötések alapján az importált CSV-fájl tartalma futásidőben lesz tárolva a meglévő adatmodellben. Figyeljen oda a CountryRegion elem kötésére. A beérkező fájl összes olyan tranzakcióeleme esetében, amely nem rendelkezik meghatározott országkódértékkel, a rendszer az alapértelmezett „USA” országkóddal tölti fel az adatmodellt.   
-13. Kapcsolja be a Részletek megjelenítése lehetőséget.
+13. Kapcsolja be a „Részletek megjelenítése” lehetőséget.
 14. Kattintson az Ellenőrzések fülre.
 15. Kattintson a Keresés gombra.
 16. A Keresés mezőbe írja be a következőt: „vend”.

@@ -3,7 +3,7 @@ title: Vásárlásmező modul
 description: Ez a témakör a vásárlásmező moduljaival foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025459"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154063"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
@@ -58,7 +58,7 @@ A témák segítségével eltávolíthatja vagy megváltoztathatja a vásárlás
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>A vásárlásmező modulban használható modulok
 
 - **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. Egy vagy több képet is támogathat. Támogatja a miniatűr képeket is. A miniatűr képek vízszintes (a kép alatti sorként) vagy függőleges (a kép melletti oszlopként) elrendezésben is megadhatók. A médiatár modul a vásárlásmező modul **Média** helyén adható hozzá. Jelenleg csak képeket támogat. 
-- **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. Az áruházválasztó modul integrálva van a Bing Maps földrajzi kódolási alkalmazásprogramozási felületével (API), hogy a vevő által megadott helyszínt egy földrajzi szélességgé és hosszúsággá alakíthassa. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Retail megosztott paraméterei oldalhoz a Dynamics 365 Retail szolgáltatásban. Ez a modul két tulajdonságot támogat, **Keresési sugár** és **Szolgáltatási feltételek hivatkozását**. A **Keresési sugár** tulajdonság az üzletek keresési sugarát határozza meg (mérföldben). Ha nincs megadva érték, akkor a program az alapértelmezett keresési sugarat (50 mérföld) használja. Ha Bing-térképeket vagy külső szolgáltatásokat használnak, a **szolgáltatási feltételek hivatkozása** tulajdonsággal lehet hivatkozást biztosítani a szolgáltatási feltételekhez. A Bing Maps szolgáltatáshoz a szolgáltatási feltételek hivatkozása szükséges. 
+- **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. A modullal kapcsolatos további tudnivalókat lásd: [Üzletkiválasztó modul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Vásárlásmező modul beállításai
 
@@ -93,13 +93,15 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 
 [Kezdő csomag áttekintése](starter-kit-overview.md)
 
+[Üzletkiválasztó modul](store-selector.md)
+
 [Tárolómodul](add-container-module.md)
 
 [Kosármodul](add-cart-module.md)
 
 [Fizetésmodul](add-checkout-module.md)
 
-[Rendelésmegerősítés modul](order-confirmation-module.md)
+[Rendelésmegerősítési modul](order-confirmation-module.md)
 
 [Fejlécmodul](author-header-module.md)
 

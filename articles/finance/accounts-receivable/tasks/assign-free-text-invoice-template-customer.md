@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c64a00a839522ea14fc5fcdaca08ab17748f894
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 19742c53406cd1c616e8be1172b93157437132e8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000024"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140329"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Szabadszöveges számlasablon hozzárendelése egy ügyfélhez
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A feladat bemutatja, hogyan kell szabadszöveges számlasablont vevőhöz hozzárendelni. Ez a feladat az USMF bemutató vállalatot veszi alapul, és az a felhasználó használja, aki felelős a kintlévőségek számláinak kezeléséért és feldolgozásáért.
 

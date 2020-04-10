@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124093"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161592"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Kettős pénznemtámogatás áfa esetén
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ A Dynamics 365 Finance kettős pénznem funkcióját a 8.1-es verzióban vezett�
 
 A korábbi verziókban a tranzakciók a következő sorrendben lettek átváltva a jelentési pénznemre: 
 
-A tranzakció végösszege a tranzakció pénznemében lett kiszámítva, > A tranzakció összege a könyvelési pénznemre lett átváltva > A könyvelési pénznem összegét a jelentési pénznemre alakították át
+- A tranzakció végösszege a tranzakció pénznemében lett kiszámítva, > A tranzakció összege a könyvelési pénznemre lett átváltva > A könyvelési pénznem összegét a jelentési pénznemre alakították át
 
 A kettős pénznem funkció engedélyezése után a tranzakciók a következő sorrendben lettek átváltva a jelentési pénznembe:
 
@@ -48,8 +48,6 @@ A kettős pénznemek támogatásának következményeként két új funkció ér
 - Adóelszámolás automatikus egyenlege a jelentési pénznemben (kiadás 10.0.11-es verzióban)
 
 Az áfa kettős pénznemre vonatkozó támogatása biztosítja, hogy az adókat helyesen számítsák ki az adó pénznemében, és hogy az áfaelszámolási egyenleg kiszámítása mind a könyvelési pénznemben, mind a jelentési pénznemben pontos. 
-
-Az új funkciók jelenleg a privát előzetessel rendlekező ügyfelek számára vannak engedélyezve. A funkciók engedélyezése érdekében küldjön egy szolgáltatáskérést a Microsoftnak a megfelelő csatornákon keresztül.
 
 ## <a name="sales-tax-conversion"></a>Áfa-konverzió
 

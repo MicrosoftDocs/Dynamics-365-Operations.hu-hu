@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b4ad9fb7a3d768acb0af73dcbe3d87b323de727
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 52bc276a4a88971a7214fa09087cb1323b91aaf5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042804"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143273"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját. Ez az eljárás bemutatja, hogy hogyan lehet létrehozni a formátum egyéni verzióját a konfigurációs szolgáltatóból (CP) a formátum alapján. Azt is bemutatja, hogyan lehet alkalmazni ezen verzió új, alap verzióját.
 
-A lépések végrehajtásához először el kell végezni a „Hozzon létre egy konfigurációs szolgáltatót és állítsa be aktívként aktív” és „A létrehozott formátum segítségével hozza létre a kifizetések elektronikus dokumentumát” eljárásokat. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
+A lépések végrehajtásához először el kell végezni a „Hozzon létre egy konfigurációs szolgáltatót és állítsa be aktívként” és „A létrehozott formátum segítségével hozza létre a kifizetések elektronikus dokumentumát” eljárásokat. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 
 ## <a name="select-format-configuration-for-customization"></a>Válassza ki a formátumkonfigurációt a testreszabáshoz
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
@@ -242,5 +242,5 @@ Ehhez a Proseware, Inc. rendszernek meg kell változtatnia az egyéni konfigurá
     Vegye figyelembe, hogy a rendszer a létrehozott konfigurációt teljesített 1.2.2-es verzióként menti: az alap BACS (UK fiktív egyéni) formátum 2-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló alap BACS (UK fiktív) formátum 2-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Finance and Operations szakaszban. Válassza ki a létrehozott BACS (UK fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
+Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Finance and Operations szakaszban. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
 
