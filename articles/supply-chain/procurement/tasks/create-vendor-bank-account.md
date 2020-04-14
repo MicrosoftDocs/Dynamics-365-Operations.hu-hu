@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8dd3664d86ffdb8bf731a6ff1e0ed60b50eed61
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: be06343aba974ff23a7f328d2175f00768a76465
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916829"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149573"
 ---
 # <a name="create-a-vendor-bank-account"></a>Szállítói bankszámla létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásának módját. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 
@@ -37,7 +37,7 @@ Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásána
 6. A **Bankszámla** mezőben adjon meg egy értéket. Ez az azonosító a szállítói rekordban szereplő bankszámla azonosítására szolgál.  
 7. Írjon be egy értéket a **Név** mezőbe.
 8. A **Bankcsoportok** mezőben adjon meg vagy válasszon ki egy értéket.
-9. Válasszon ki egy beállítást az **Útvonalszám típusa** mezőben. Ez a nemzetközi fizetésekhez használt útvonaltervezés típusa.  
+9. Válasszon ki egy beállítást az **Útvonalszám típusa** mezőben. Ez a nemzetközi fizetésekhez használt útvonalszám típusa.  
 10. A **Bankszámlaszám** mezőben adjon meg egy értéket.
 11. A **SWIFT kód** mezőbe írjon be egy értéket.
 12. Az **IBAN** mezőben adjon meg egy értéket.

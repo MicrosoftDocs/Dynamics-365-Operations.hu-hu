@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2a2b56d387cfe90cbfac0bca3c11e699573c1d05
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: 502b2e08c6c1f4190031d171f037a05d591e5cd8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097476"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164768"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. (2020. április ) szolgáltatásban
 
@@ -41,30 +41,32 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 
 - [Speciális rakomány-összeállítás hullám közben](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
 - [Szállítmány automatikus kiadása áttároláshoz](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock) – További tájékoztatás: [Szállítmányok automatikus kiadása áttárolásra](../warehousing/auto-release-shipment-for-cross-docking.md).
+- [A beszerzési rendelés szállítási dátumának számítása az átfutási idők és a munkanapok alapján (állami szektor)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
+- [Tényleges súly szerinti termék feldolgozása a raktárkezelésben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management) – további tájékoztatás: [A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben](../warehousing/catch-weight-processing.md) és a [Tényleges súly szerinti termékekkel kapcsolatos fejlesztések](https://www.microsoft.com/videoplayer/embed/RE4jzx8) videó.
 - [Cikkárak tárhelyének összehasonlítása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage) – további tájékoztatás: [Cikkárak összehasonlítása tárolási jelentés](../cost-management/compare-item-price.md).
 - [Szállítmányok bővítésének konszolidálása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
-- [Áttárolás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
+- [Áttárolás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking) – további információ: [Tervezett áttárolás](https://www.microsoft.com/videoplayer/embed/RE4f7LF) videó.
 - További ténylegessúly-integráció [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)-További tájékoztatás: [A tényleges súly szerinti termékfeldolgozás a raktárkezeléssel](../warehousing/catch-weight-processing.md) és a [Tényleges súly szerinti termékekkel kapcsolatos fejlesztések](https://www.microsoft.com/videoplayer/embed/RE4jzx8) videó.
 - [Rugalmas raktár-szintű dimenziófoglalás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) -további tájékoztatás: [Rugalmas raktár-szintű dimenziófoglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+- [Javított feladatkártya- eszköz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – további információ: [Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról](../production-control/tasks/report-progress-mobile-job-device.md) és [Készként történő jelentés egy azonosítótáblás szabályozású helyen a Feladatkártya eszközről](../production-control/report-finished-job-device.md)
 - [Bejövő minőségellenőrzés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [Készletkorosítási jelentés tárolása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [Készletérték-jelentés tárolója](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
 - [Alaptervezési folyamatjelző Gantt-diagram](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) – további tájékoztatás: [Alaptervezés futtatásának monitorozása](../master-planning/tasks/monitor-master-planning-run.md), valamint [MRP teljesítménnyel és használhatósággal kapcsolatos fejlesztések](https://www.microsoft.com/videoplayer/embed/RE4myrJ) videó.
+- [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Kimenő rendezés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
 - [Csomagolás és tárolási dimenziók](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 - [Tervezett rendelések párhuzamos megerősítése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders) – a további tudnivalókat lásd: [Párhuzamos megerősítés](../master-planning/maintain-planned-orders.md#parallelize-firming) valamint az [MRP-teljesítmény és használhatóság javítása](https://www.microsoft.com/videoplayer/embed/RE4myrJ) videó.
 - [Tervezés optimalizálása a terjesztéshez](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution) – további tájékoztatás: [Tervezési optimalizálás áttekintése](../master-planning/planning-optimization/planning-optimization-overview.md).
 - [Beszerzési szerződés továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) – további tájékoztatás: [Beszerzési szerződések.](../procurement/purchase-agreements.md).
-- [Betárolási fürtök](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters)
+- [Betárolási fürtök](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) – a további tudnivalókat lásd: [Betárolási fürtök](https://www.microsoft.com/videoplayer/embed/RE4f5aB) videó.
 - [Falhoz helyez / Tárolásba helyez](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)
 - [Bevételezési sorrend](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
+- [Kis csomagok szállítása (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Szállítói ajánlatok – szállítói kérdések és összegzett válaszok](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 - [Raktári időközökre bontás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Hullámcímke nyomtatási javítások](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Hullámlépés kódja](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
-
-<!-- - [Self-billing invoice control for procurement](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-procurement)
-- [Self-billing invoice control for sales](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-sales) -->
 
 ## <a name="additional-resources"></a>További erőforrások
 

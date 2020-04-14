@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143782413359d87f3d4c46940f9a699fbf0e8f90
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6d292d028ebc87892760524dbd7709e8f181fc5d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769809"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141810"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurációk tervezése jelentések készítéséshez Office formátumban, beágyazott képekkel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Ez az eljárás bemutatja, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk beágyazott képeket tartalmazó Microsoft Excel vagy Word-dokumentumok létrehozására. Ebben az eljárásban a szükséges ER konfigurációkat a Litware, Inc. mintavállalathoz hozza létre. Ezek a lépések az USMF adatkészlet segítségével tölthetők be. Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. Mielőtt elkezdené, töltse le és mentse el a [Képek és alakzatok beágyazása az ER használatával generált dokumentumokba](../electronic-reporting-embed-images-shapes.md) súgótémában felsorolt fájlokat. A fájlok: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png és Cheque template Word.docx.
 
@@ -55,7 +55,7 @@ A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER –
  1. Kattintson a Konfigurációk lehetőségre a Művelet Panelen.  
  2. Kattintson a Felhasználói paraméterek lehetőségre.  
  3. Válassza az Igen lehetőséget a Beállítások futtatása mezőben.  
-  Kapcsolja be a Vázlat futtatása jelzőt a kijelölt formátum piszkozatverziójának elindításához a befejezett verzió helyett.  
+  Kapcsolja be a „Vázlat futtatása” jelzőt a kijelölt formátum piszkozatverziójának elindításához a befejezett verzió helyett.  
  4. Kattintson az OK gombra.  
 
 ## <a name="configure-cash--bank-management-parameters"></a>Készpénz- és bankkezelési paraméterek konfigurálása  

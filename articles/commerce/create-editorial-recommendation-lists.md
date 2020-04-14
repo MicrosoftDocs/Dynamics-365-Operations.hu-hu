@@ -3,7 +3,7 @@ title: Válogatott ajánlások manuális létrehozása
 description: Ez a témakör azt mutatja be, hogyan tudnak a kereskedők manuálisan terméklistákat létrehozni a Microsoft Dynamics 365 Commerce-ügyfelek számára.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: b00c83355850f6249068749096b011f805b37e3c
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127721"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154318"
 ---
 # <a name="manually-create-curated-recommendations"></a>Válogatott ajánlások manuális létrehozása
 
@@ -64,11 +64,9 @@ Válogatott termékajánlási lista létrehozásához kövesse az alábbi lépé
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Ajánlat listáinak hozzáadása egy e-Commerce webhelyhez](add-reco-list-to-page.md)
-
 [Termékajánlások hozzáadása a pénztárnál](product.md)
 
-[Ajánlatok hozzáadása a tranzakciós képernyőhöz](add-recommendations-control-pos-screen.md)
+[Ajánlatok hozzáadása a tranzakció képernyőjéhez](add-recommendations-control-pos-screen.md)
 
 [AI-ML ajánlások eredményeinek helyesbítése](modify-product-recommendation-results.md)
 

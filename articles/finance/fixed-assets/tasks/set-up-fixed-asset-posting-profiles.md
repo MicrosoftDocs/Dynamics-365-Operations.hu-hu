@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 494af854d408f0b0c02d753ff3d24eb3d6216fd9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178068"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138161"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok beállítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.  Ez a Könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.  A feladat-útmutatóban megadott példák egy alap feladási profilra vonatkoznak, a feladási profilokat azonban az Ön konkrét számlatükrének és pénzügyi-jelentéskészítési elvárásainak megfelelően kell létrehoznia.
 

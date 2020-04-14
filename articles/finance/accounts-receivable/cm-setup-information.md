@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124139"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151297"
 ---
 # <a name="credit-management-setup"></a>Hitelkezelés beállítása 
 
@@ -40,13 +40,17 @@ A **Hitel -és a beszedések \> Beállítások \> Hitelkezelési munkafolyamatok
 
 Ha a rendelésben szereplő fizetési feltételek nem egyeznek meg a vevő alapértelmezett fizetési feltételeivel, akkor egy értékesítési rendelést várakoztathat. Előfordulhat azonban, hogy a fizetési feltételek eltérők, de elég hasonlóak, így nem szeretné várakoztatni a rendelést. A fizetési feltételeket úgy is rangsorolhatja, hogy egy részük azonos helyezésű legyen, míg mások magasabb vagy alacsonyabb helyezést kapjanak.
 
-Ha a fizetési feltételek rangsora aktív, akkor az értékesítési rendelések akkor kerülnek várakoztatásra, ha a rendelésen szereplő fizetési feltételek magasabb rangúak a vevő alapértelmezett fizetési feltételeinél.
+Ha a fizetési feltételek rangsora aktív, és a rendelésen szereplő fizetési feltételek magasabb rangúak a vevő alapértelmezett fizetési feltételeinél, az értékesítési rendelések várakoztatott állapotba kerülnek.
+
+A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \>Fizetési feltételek rangsorolása** lapon állíthatja be.  
 
 ### <a name="ranking-settlement-discounts"></a>Kiegyenlítési kedvezmények rangsorolása
 
 Ha a rendelésben készpénzfizetési engedmény nem egyez meg a vevő alapértelmezett készpénzfizetési engedményével, akkor egy értékesítési rendelést várakoztathat. Előfordulhat azonban, hogy a készpénzfizetési engedmény eltér, de elég hasonló, így nem szeretné várakoztatni a rendelést. A készpénzfizetési engedményeket úgy is rangsorolhatja, hogy egy részük azonos helyezésű legyen, míg mások magasabb vagy alacsonyabb helyezést kapjanak.
 
-Ha a készpénzfizetési engedmények rangsora aktív, akkor az értékesítési rendelések akkor kerülnek várakoztatásra, ha a rendelésen szereplő készpénzfizetési engedmény magasabb rangú a vevő alapértelmezett készpénzfizetési engedményénél.
+Ha a készpénzfizetési engedmények rangsora aktív, és ha a rendelésen szereplő készpénzfizetési engedmény magasabb rangú a vevő alapértelmezett készpénzfizetési engedményénél, az értékesítési rendelés várakoztatott állapotba kerül.
+
+A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \>Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.  
 
 ## <a name="reasons"></a>Okok
 
@@ -56,7 +60,7 @@ A Hitelkezelésben számos típusú okot használunk:
 - A felszabadítási okok olyan rendeléshez vannak hozzárendelve, amelyet felszabadítottak a várakoztatásból.
 - Az állapotokok azt jelzik, hogy miért rendeltek egy számlaállapotot egy vevőhöz.
 
-Az okokat a **Hitelkezelési okok** lapon adhatja meg (**Hitelkezelés \> Beállítások \> Hitelkezelés \> Hitelkezelési okok**).
+Az okokat a **Hitelkezelési okok** lapon adhatja meg (**Követelések és beszedések \> Beállítások \> Hitelkezelés beállításai \> Hitelkezelési okok**).
 
 1. Az **Ok típusa** mezőben válassza ki a kívánt okot: **Várakoztatás**, **Felszabadítás**vagy **Állapot**.
 2. Írja be az ok nevét az **OK** mezőbe.
@@ -66,7 +70,7 @@ Az okokat a **Hitelkezelési okok** lapon adhatja meg (**Hitelkezelés \> Beáll
 
 A hitelkezelési csoportok olyan vevők és vevőcsoportok azonosítására használhatók, amelyek azonos hitelkezelési tulajdonságokkal rendelkeznek. A hitelkezelési csoportok segítségével például meghatározhatja a vevőkre vonatkozó zárolási és kizárási hitelkezelési szabályokat.
 
-Hitelkezelési csoportokat a **Hitelkezelési csoportok** oldalon hozhat létre (**Hitelkezelés \> Beállítások > Csoportok beállítása \> Hitelkezelési csoportok**).
+Hitelkezelési csoportokat a **Hitelkezelési csoportok** oldalon hozhat létre (**Követelések és beszedések \> Beállítások > Hitelkezelés beállítása \> Hitelkezelési csoportok**).
 
 1. Új sor létrehozásához válassza az **Új** elemet.
 2. Adja meg a csoport azonosítóját. Az azonosító legfeljebb 10 karakterből állhat.
@@ -78,7 +82,7 @@ A hitelkezelési csoport egy ügyfélhez van hozzárendelve a **Hitel és beszed
 
 A számla állapotának létrehozásával meghatározhatja a vevői számla hitelminősítését. A számlázásra és a szállítás várakoztatására vonatkozó folyamatok állapota és hatása is meghatározható. A számlaállapotok a vevők zárolási szabályainak meghatározására is használhatók.
 
-A számlaállapotokat a **Számlaállapotok** oldalon (**Hitelkezelés \> Beállítások > Csoportok beállítása \> Számlaállapotok**) lehet létrehozni.
+A számlaállapotokat a **Számlaállapotok** oldalon (**Követelések és beszedések \> Hitelkezelés > Csoportok beállítása \> Számlaállapotok**) lehet létrehozni.
 
 1. Adjon hozzá egy számlaállapotot, és adjon meg egy leírást, amely a vevő hitelminősítését jelzi. A **Normál** értékkel jelezheti például, hogy a vevő hitelképessége jó, és a nyitott rendelésekre pedig normál hitelezési folyamat vonatkozik.
 2. A **Számlázás** és **Szállítás várakoztatva** mezőkben válassza ki azt a várakoztatási típust, amelyet azon vevőknél kell végrehajtani, akik ezzel a számlaállapottal rendelkeznek. A hitelkeret-szabályok alkalmazása esetén az összes feldolgozást várakoztathatja, várakoztathatja csak a számla feldolgozását, vagy azt is megteheti, hogy semmilyen feldolgozást nem várakoztat.
@@ -87,7 +91,7 @@ A számlaállapotokat a **Számlaállapotok** oldalon (**Hitelkezelés \> Beáll
 
 A pontozási csoportok beállításával meghatározhatja a kockázati tényezőket, valamint a rájuk vonatkozó mérési feltételeket. Amikor egy vevőre vonatkozó információt egy pontozási csoportra alkalmaznak, minden kockázati tényezőhöz egy pontszám számítása történik, és ez a vevőnek a kockázati csoportokba történő betárolására szolgál. A kockázati csoport felhasználható a hitelképesség azonosítására és az automatikus hitelkeretek kiszámítására is.
 
-A pontozási csoportokat a **Pontozási csoportok** lapon hozhatja létre (**Hitelkezelés \> Beállítások \> Kockázatbeállítás \> Pontozási csoportok**).
+A pontozási csoportokat a **Pontozási csoportok** lapon hozhatja létre (**Követelések és beszedések \> Beállítások \> Hitelkezelés beállítása \> Kockázat \> Pontozási csoportok**).
 
 1. Hozzon létre egy pontozási csoportot, és adjon neki egy nevet.
 2. Adjon meg további leírást a pontozási csoporthoz.
@@ -108,11 +112,11 @@ A pontozási csoportokat a **Pontozási csoportok** lapon hozhatja létre (**Hit
     1. Az **Érték** mezőbe írja be azt a felhasználó által definiált értéket, amelyet a vevő adatai alapján kell megadni.
     2. A **Pontszám** mezőbe írja be azt a pontszámot, amelyet akkor kell hozzárendelni, amikor a megadott érték a „kezdő”/„záró” tartományban van.
 
-## <a name="risk-assessments"></a>Kockázatelemzések
+## <a name="risk-classification"></a>Kockázat osztályozása
 
 A kockázati pontszám alapján meghatározhatók a vevőkhöz hozzárendelhető kockázatértékelések. A kockázat pontszámát úgy számítja ki a rendszer, hogy összeveti a vevői adatokat a pontozási csoporttal. A pontszámok összegezve vannak, és a program összehasonlítja a kockázati csoport beállításának értékeit, hogy azonosítsa azt a kockázati csoportot, amelyhez a vevő tartozik. Ezt követően a kockázati csoport pontszáma lesz felhasználva az ügyélhez tartozó zárolási és a kizárási szabályokat.
 
-A **Kockázatértékelések** lapon lehet beállítani a kockázati csoportokat (**Hitelkezelés \> Beállítások \> Kockázatbeállítás \> Kockázatelemzések**).
+A **Kockázatértékelések** lapon lehet beállítani a kockázati csoportokat (**Követelések és beszedések \> Beállítás \> Hitelkezelés beállítása \> Kockázat \> Kockázat osztályozása**).
 
 1. Adjon meg egy kockázaticsoport-azonosítót.
 2. Adjon meg egy leírást a pontozási csoport további magyarázatához.
@@ -121,7 +125,7 @@ A **Kockázatértékelések** lapon lehet beállítani a kockázati csoportokat 
 
 ## <a name="guaranteeinsurance-types"></a>Garancia/biztonság típusa
 
-A garancia/biztosítás típusait lapon **Garancia/biztonság típusai** lapon lehet beállítani (**Hitelkezelés \> Beállítások \> Garancia/biztosítás beállítása \> Garancia/biztosítás típusai**).
+A garancia/biztosítás típusait lapon **Garancia/biztonság típusai** lapon lehet beállítani (**Követelések és beszedések \> Beállítás \> Hitelkezelés beállítása \> Biztosítás és garanciák \> Garancia/biztosítás típusai**).
 
 1. Adja meg a kezes vagy biztosítási ügynök nevének azonosítására szolgáló garancia vagy biztosítási típusát.
 2. A kezes vagy biztosítási ügynök leírásának megadása.
@@ -130,14 +134,14 @@ A garancia/biztosítás típusait lapon **Garancia/biztonság típusai** lapon l
 
 A fedezeti típusok a biztosítási kötvények további osztályozására használhatók. Nem használhatók garanciákkal.
 
-A **Fedezeti típusok** oldalon hozzáadhat fedezeti típusokat (**Hitelkezelés \> Beállítások \> Garancia/biztosítás beállítása \> Fedezeti típusok**).
+A **Fedezeti típusok** oldalon hozzáadhat fedezeti típusokat (**Követelések és beszedések \> Beállítás \> Hitelkezelés beállítása \> Biztosítás és garanciák \> Fedezeti típusok**).
 
 1. A fedezet típusának megadásával határozza meg, hogy milyen típusú fedezetet kell biztosításként vagy garanciaként adni.
 2. Adjon meg egy leírást a fedezettípus leírásához.
 
 ## <a name="automatic-credit-limits"></a>Automatikus hitelkeretek
 
-A hitelkeret automatikus kritériumait az **Automatikus hitelkeretek** lapon hozhatja létre (**Hitelkezelés \> Beállítások \> Kockázatbeállítás \> Automatikus hitelkorlátok**).
+Az automatikus hitelkeretek feltételeit az **Automatikus hitelkeretek** oldalon hozhat létre (**Követelések és beszedések \> Beállítások \> Hitelkezelés beállítása \> Kockázat \> Automatikus hitelkeretek**).
 
 1. Válasszon egy kockázati csoportot, amelyhez az automatikus hitelkeretet társítani kell.
 2. Válassza ki az automatikus hitelkorlát pénznemét. Ugyanannak a kockázati csoportnak a több automatikus hitelkeretet is létre lehet hozni különböző pénznemekben.

@@ -3,7 +3,7 @@ title: Termékazonosítók
 description: Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095617"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172025"
 ---
-# <a name="product-identifiers"></a>Termékazonosítók 
+# <a name="product-identifiers"></a>Termékazonosítók
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Amikor az üzemben vagy a raktárban dolgozik termékekkel a Microsoft Dynamics 
 
 ## <a name="unique-product-numberproduct-id"></a>Egyedi termékszámot/termékazonosító
 
-A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonosít ja a termékszám (tehát az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
+A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonosít ja a termékszám (tehát az egyedi termékazonosító). Ezt a számot automatikusan létre lehet hozni egy számsorozat alapján, vagy manuálisan is társítható egy termékhez. Termékváltozatokhoz a számokat a termékek elnevezési rendszerének sablonja segítségével lehet meghatározni.
 
 Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Management rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. Ezt követően a Supply Chain Management az összes műveletben a számokat fogja használni.
 
@@ -53,6 +53,9 @@ Ezenkívül egy termékváltozat nem azonosítható egyedileg cikkszámmal. Mind
 Sok oldal még mindig a cikkszámot és a termékdimenziókat tartalmazza elsődleges azonosítóként. A termékszámok azonban használhatók kereséshez. Az **Értékesítés és marketing** &gt; **Beállítás** &gt; **Keresés** &gt; **Keresési paraméterek** pontban módosíthatja a keresést úgy, hogy elsődleges keresési stratégiaként termékszámokat használjon a cikkszámok helyett. Ha a **Kikeresés engedélyezése termékek kereséséhez** lehetőséget **Igen** értékre állítja, a kikeresés nemcsak az alapterméket, hanem a termékváltozatokat is meg fogja jeleníteni. További információk: [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
 
 Emellett képes lesz keresni és szűrni a termékszámra, a terméknévre és -leírásra, valamint a termékváltozat termékdimenziós azonosítóira. Amikor kiválaszt egy változatot, kiválasztódik a kapcsolódó cikkszám, és az összes cikkdimenzió-azonosító. Emiatt könnyebben lehet megkeresni és kiválasztani a megfelelő változatot. Ez a beállítás különösen ajánlott, ha a termékek elsődleges azonosítójaként a termékváltozatokat és az egyedi termékszámokat használja. Kivétel a divatáru iparág lehet, ahol az üzleti folyamatok gyakran kötelezővé teszik az alap kiválasztását egy változat kiválasztása előtt. Gondosan értékelni kell ezt a lehetőséget, mielőtt megvalósítaná számozási rendszerét.
+
+> [!NOTE]
+> A termék cikkszáma nem módosítható, ha egy vagy több tranzakció már létezik a termékhez.
 
 ## <a name="product-name-and-description"></a>Terméknév és -leírás
 
@@ -123,7 +126,7 @@ Sajnos nincs olyan szabványos funkció, amely lehetővé teszi a termékek kere
 | Termékek V2 | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | Az entitás beállításaitól és a termékszám számsorozatától függően a termékszám automatikusan létrehozható az importálás során. |
 | Termékváltozatok | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | A terméknómenklatúra sablonjától függően a termékszám automatikusan létrehozható az importálás során. Azonban bármilyen egyedi termékszám importálható, és a termékszámnak nem kell a termékek elnevezési rendszerének sablonjának szerkezetét követnie. |
 | Termékfordítások | Terméknév, termékleírás | Terméknév, termékleírás | Ez az entitás felülír minden nyelvet. Ne feledje, hogy ha egy jogi személy elsődleges nyelvének nevét vagy leírását felülírják, maga a termék neve és leírása is megváltozik. |
-| Kiadott termékek V2 | Cikkszám, termékszáma, cikk keresési neve| Cikkszám, termékszám, cikk keresési neve, termék keresési neve, termék neve | Ez az entitás kihívást jelenthet, amikor új kiadott termékek létrehozása során számsorozatokat használnak. Mind a **Cikkszám** számsorozat, mind a **Termékszám** számsorozat hatással vannak. Azonban a **Cikkszám** számsor jogi személyenként érvényes,a **Termékszám** számsor pedig globális. Emiatt nem ajánlott, hogy a **Cikkszám** számsorozatot használja újonnan kiadott termékek telepítésekor. Természetesen ha az entitás meglévő termék kiadásához van használva, a termékszámot meg kell adni az entitásban. További információkhoz lásd a jelen témakör lásd „Termék- és cikkszámsorozatok” részét. |
+| Kiadott termék létrehozása V2 | Cikkszám, termékszáma, cikk keresési neve| Cikkszám, termékszám, cikk keresési neve, termék keresési neve, termék neve | Ez az entitás kihívást jelenthet, amikor új kiadott termékek létrehozása során számsorozatokat használnak. Mind a **Cikkszám** számsorozat, mind a **Termékszám** számsorozat hatással vannak. Azonban a **Cikkszám** számsor jogi személyenként érvényes,a **Termékszám** számsor pedig globális. Emiatt nem ajánlott, hogy a **Cikkszám** számsorozatot használja újonnan kiadott termékek telepítésekor. Természetesen ha az entitás meglévő termék kiadásához van használva, a termékszámot meg kell adni az entitásban. További információkhoz lásd a jelen témakör lásd „Termék- és cikkszámsorozatok” részét. |
 | Kiadott termékváltozatok | Cikkszám, termékdimenziók, termékszám | Termékszám, termék keresési neve, termék neve, termékleírás, termékdimenziók | A **Termékváltozatok** entitáshoz hasonlóan ez az entitás használható új termékek létrehozására, amelyek vagy követik a termékek elnevezési rendszerének sablonját, vagy saját termékszámokat használnak a változathoz. |
 | Vevőkhöz tartozó külső cikkleírás | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | A vevők egy csoportja (például egy vevőszövetség) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó vevőcsoportok** entitás segítségével. |
 | Szállítókhoz tartozó külső cikkleírás | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | A szállítói egy csoportja (például egy szállítói szövetség vagy iparági szervezet) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó szállítócsoportok** entitás segítségével. |
@@ -144,7 +147,7 @@ Kétféle számsorozatot lehet megadni:
 > [!NOTE]
 > A cikkszámot külön azonosítóként csak akkor célszerű használni, ha áttelepít különböző jogi személyeket különböző forrásokból, amelyek különböző számozási rendszereket használtak. Mindig olyan termékazonosítót kell használnia, amely egyedi minden jogi személy között. Ennek megfelelően kell beállítani a **Kézi** lehetőséget **Igen** beállításra a **Cikkszám** számsorozat esetében. Ily módon a cikkszám követni fogja a termékszámot a létrehozás során. Ha a Supply Chain Management nem az új termékszámok fő rendszere, állítsa a **Kézi** lehetőséget **Igen** értékre mind a **Cikkszám**, mind a **Termékszám** számsorozatoknál.
 
-Ha a **Kiadott termék V2** entitást használja termékek létrehozásához, több beállítás van hatással arra, hogy hogyan történik a számsorozatok használata a termékszám és a cikkszám létrehozásához:
+Ha a **Kiadott termék létrehozása V2** entitást használja termékek létrehozásához, több beállítás van hatással arra, hogy hogyan történik a számsorozatok használata a termékszám és a cikkszám létrehozásához:
 
 - A **Termékszám** számsorozat beállítása
 - A **Cikkszám** számsorozat beállítása
@@ -155,9 +158,9 @@ Az alábbi táblázat az importálás és a kézi létrehozás eredményeinek á
 
 | Termékszám számsorozat | Cikkszám számsorozata | Cikkszám leképezése | Termékszám leképezése | Entitásimportálás eredménye | Manuális létrehozás eredménye | Összefoglalás |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Kézi = Nem | Kézi = Nem | Nincs megfeleltetés. | Nincs megfeleltetés. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | Ezek a beállítások akkor használhatók, ha a termékekhez és a cikkekhez egy másik számra van szüksége. Azonban nem ajánlott, hogy különböző számokat használjon a cikkekhez és a termékekhez. |
-| Kézi = Nem | Kézi = Igen | Automatikus létrehozás | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Cikkszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Ezek a beállítások nem ajánlottak. Az importálás és a kézi létrehozás másképp működik. |
-| Kézi = Nem | Kézi = Igen | Nincs megfeleltetés. | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Ezen beállítások használata akkor javasolt, ha a termékeknek konzisztens automatikus számozásuknak kellene lennie, függetlenül attól, hogy import- vagy kézi létrehozása használatos. |
+| Kézi = Nem | Kézi = Nem | Nincs megfeleltetés. | Nincs megfeleltetés. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | Ezzel a konfigurációval a termékszámok követik a termékszám sorozatát, a cikkszámok pedig a cikkszám sorozatát. Ez a konfiguráció azonban nem fog működni, ha egynél több elem (sor) lesz importálva. |
+| Kézi = Nem | Kézi = Igen | Automatikus létrehozás | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Cikkszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot követik. Ez az ajánlott módszer az ömlesztett termékek importálására a Kiadott termékek V2 adatentitással. |
+| Kézi = Nem | Kézi = Igen | Nincs megfeleltetés. | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot használják. Ez a konfiguráció azonban nem fog működni, ha egynél több elem (sor) lesz importálva. |
 | Kézi = Igen | Nem alkalmazható | Nem alkalmazható | Automatikus létrehozás | A következő hibaüzenetet kapja: „Number sequence can't be detected.” (Számsorozatot nem lehet észlelni.) | A **Cikkszám** számsorozat alapján | Ez a beállítás nem támogatott az importáláshoz. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Termékentitás-azonosító (az összes termék azonosítójának exportálása)

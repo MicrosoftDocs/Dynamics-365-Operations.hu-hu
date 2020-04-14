@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5b94578e077834ce73c921dca18ad6e38c37659
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b6475671002379d84519df05a0198a17ac000677
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178138"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143742"
 ---
 # <a name="establish-customer-payment-fees"></a>Vevői kifizetések díjainak kialakítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Fizetési díj létrehozása vevői kifizetésekhez.
 
@@ -43,7 +43,7 @@ Ez a feladat az USMF bemutatócéget használja.
 10. A **Csoportosítások** mezőben válassza ki a Tábla, Csoport vagy Összes lehetőséget, hogy meghatározza, mely bankszámlák értékeljék ezt a díjat. Ha az Összes lehetőséget választja, minden bankszámla értékeli ezt a díjat.  Ha a Tábla lehetőséget választja, csak a kiválasztott bankszámla értékeli ezt a díjat. Ha a Csoport lehetőséget választja, csak a kiválasztott csoportban lévő bankszámlák értékelik ezt a díjat.  
 11. A **Banki kapcsolat** mezőben válasszon ki egy banki csoportot vagy egy bankszámlát. Ha a Tábla lehetőséget választja, a keresés megjeleníti a bankszámlákat. Ha a Csoport lehetőséget választja, a keresés megjeleníti a bankcsoportokat.  
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. A **Fizetési mód** mezőben válassza ki azt a fizetési módot, amelyhez ezt a díját társítja Például előfordulhat, hogy egy díjat akkor értékel a vevők számára, ha csekként küldenek fizetést elektronikus kifizetés helyett.  
+13. A **Fizetési mód** mezőben válassza ki azt a fizetési módot, amelyhez ezt a díját társítja. Például előfordulhat, hogy egy díjat akkor értékel a vevők számára, ha csekként küldenek fizetést elektronikus kifizetés helyett.  
 14. Keresse meg és jelölje ki a kívánt rekordot a listán.
 15. Ha szükséges, írjon be egy Fizetési pénznemet a **Kifizetés pénznem** mezőbe. A kifizetés pénzneme további feltétel a díj értékelésére.  Például a bank további díjat számíthat fel az USD pénznemben megkapott kifizetésekre, mert az általános tranzakciók EUR pénznemben történnek.  
 16. Adja meg, hogy a díj százalék, összeg vagy intervallum legyen.

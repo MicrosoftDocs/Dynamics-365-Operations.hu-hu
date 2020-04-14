@@ -19,48 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019813"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173039"
 ---
 # <a name="switch-between-vendor-designs"></a>Váltás a szállítói arculatok között
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ## <a name="vendor-data-flow"></a>Szállítói adatok áramlása 
 
-Ha a szállítói alapadatokhoz más Dynamics 365-alkalmazásokat szeretne használni, és el szeretné különíteni a szállítók adatait a vevőktől, akkor használhatja a szállítói alapkialakítást.  
+Ha úgy dönt, hogy a **Fiók** entitást használja a **Szervezeti** típus és a **Kapcsolattartó** entitás **Személy** típusú szállítóinak tárolásához, akkor a következő munkafolyamatokat konfigurálja. Máskülönben nem szükséges ez a konfiguráció.
 
-![Alapszintű szállítói folyamat](media/dual-write-vendor-data-flow.png)
- 
-Ha a szállítói alapadatokhoz más Dynamics 365-alkalmazásokat szeretné használni, és továbbra is a **Számla** entitást szeretné használni a szállítók adatainak tárolásához; használhatja ezt a bővített szállítói kialakítást. Ebben a kialakításban a bővített szállítói adatokat, például a szállító várakoztatott állapotát vagy a szállítói profilt a **szállítók** entitásban tárolja a Common Data Service. 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>A kibővített szállítói kialakítás használata a Szervezet típusú szállítókhoz
 
-![Bővített szállítói folyamat](media/dual-write-vendor-detail.jpg)
- 
-A bővített szállítói kialakítás használatához hajtsa végre az alábbi lépéseket: 
- 
-1. A **SupplyChainCommon** megoldáscsomag a következő képen látható munkafolyamat-feldolgozási sablonokat tartalmazza.
-    > [!div class="mx-imgBorder"]
-    > ![Munkafolyamat-feldolgozási sablonok](media/dual-write-switch-3.png)
-2. A munkafolyamat-feldolgozási sablonokkal hozzon létre új munkafolyamat-feldolgozásokat: 
-    1. Hozzon létre új munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Szállítók létrehozása a számlaentitásban** munkafolyamat-feldolgozási sablonban, és kattintson az **OK** gombra. Ez a munkafolyamat kezeli a szállító létrehozásának menetét a **Számla** entitáshoz.
-        > [!div class="mx-imgBorder"]
-        > ![Szállítók létrehozása a számlaentitásban](media/dual-write-switch-4.png)
-    2. Hozzon létre új munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Számlák entitás frissítése** munkafolyamat-feldolgozási sablonban, és kattintson az **OK** gombra. Ez a munkafolyamat kezeli a szállító frissítésének menetét a **Számla** entitáshoz. 
-        > [!div class="mx-imgBorder"]
-        > ![A Számlák entitás frissítése](media/dual-write-switch-5.png)
-    3. Hozzon létre új munkafolyamat-feldolgozásokat a **Számlák** entitáson létrehozott sablonokból. 
-        > [!div class="mx-imgBorder"]
-        > ![Szállítók létrehozása a szállítóentitásban](media/dual-write-switch-6.png)
-        > [!div class="mx-imgBorder"]
-        > ![Szállítók entitásának frissítése](media/dual-write-switch-7.png)
-    4. A munkafolyamatokat igény szerint valós idejű vagy háttérben futó munkafolyamatként állíthatja be. 
-        > [!div class="mx-imgBorder"]
-        > ![Átalakítás háttérben futó munkafolyamattá](media/dual-write-switch-8.png)
-    5. Aktiválja a **Számla** és a **Szállító** entitáson létrehozott munkafolyamatokat, hogy a **Számla** entitását használja majd a szállítói adatok tárolásához. 
- 
+A **Dynamics365FinanceExtended** megoldáscsomag a következő munkafolyamat-feldolgozási sablonokat tartalmazza. Minden sablonhoz létrehoz egy munkafolyamatot.
+
++ Szállítók létrehozása a Fiókok entitásban
++ Szállítók létrehozása a Szállítók entitásban
++ Szállítók frissítése a Fiókok entitásban
++ Szállítók frissítése a Szállítók entitásban
+
+A munkafolyamat-feldolgozási sablonokkal új munkafolyamat-feldolgozások létrehozásához kövesse az alábbi lépéseket:
+
+1. Hozzon létre munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Szállítók létrehozása a fiókentitásban** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra. Majd kattintson az **OK** lehetőségre. Ez a munkafolyamat kezeli a szállító létrehozásának menetét a **Számla** entitáshoz.
+
+    ![Szállítók létrehozása a Fiókok entitás munkafolyamatban](media/create_process.png)
+
+2. Hozzon létre munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Szállítók frissítése a fiókentitásban** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra. Majd kattintson az **OK** lehetőségre. Ez a munkafolyamat kezeli a szállító frissítésének menetét a **Számla** entitáshoz.
+3. Hozzon létre munkafolyamat-feldolgozást a **Fiók** entitáshoz a **Szállítók létrehozása a Szállítók entitásban** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra.
+4. Hozzon létre munkafolyamat-feldolgozást a **Fiók** entitáshoz a **Szállítók frissítése a Szállítók entitásban** munkafolyamat-feldolgozási sablonban.
+5. A munkafolyamatokat igény szerint valós idejű vagy háttérben futó munkafolyamatként állíthatja be. Ha egy munkafolyamatot háttér-munkafolyamatként szeretne beállítani, válassza az **Átalakítás háttérben futó munkafolyamattá** lehetőséget.
+
+    ![Átalakítás háttérben futó munkafolyamattá gomb](media/background_workflow.png)
+
+6. Aktiválja a **Fiók** és a **Szállító** entitáson létrehozott munkafolyamatokat, hogy a **Fiók** entitást használja a **Szervezet** típusú szállítókhoz.
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a>A kibővített szállítói kialakítás használata a Személy típusú szállítókhoz
+
+A **Dynamics365FinanceExtended** megoldáscsomag a következő munkafolyamat-feldolgozási sablonokat tartalmazza. Minden sablonhoz létrehoz egy munkafolyamatot.
+
++ Személy típusú szállítók létrehozása a Szállítók entitásban
++ Személy típusú szállítók létrehozása a Kontaktok entitásban
++ Személy típusú szállítók frissítése a Kontaktok entitásban
++ Személy típusú szállítók frissítése a Szállítók entitásban
+
+A munkafolyamat-feldolgozási sablonokkal új munkafolyamat-feldolgozások létrehozásához kövesse az alábbi lépéseket:
+
+1. Hozzon létre munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Személy típusú szállítók létrehozása a Kontaktok entitásban** munkafolyamat-feldolgozási sablonban. Majd kattintson az **OK** lehetőségre. Ez a munkafolyamat kezeli a szállító létrehozásának menetét a **Kapcsolattartó** entitáshoz.
+2. Hozzon létre munkafolyamat-feldolgozást a **Szállító** entitáshoz a **Személy típusú szállítók frissítése a Kapcsolattartók entitásban** munkafolyamat-feldolgozási sablonban. Majd kattintson az **OK** lehetőségre. Ez a munkafolyamat kezeli a szállító frissítésének menetét a **Névjegy** entitáshoz.
+3. Hozzon létre munkafolyamat-feldolgozást a **Névjegy** entitáshoz a **Személy típusú Szállítók létrehozása a Szállítók entitásban** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra.
+4. Hozzon létre munkafolyamat-feldolgozást a **Névjegy** entitáshoz a **Személy típusú Szállítók frissítése a Szállítók entitásban** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra.
+5. A munkafolyamatokat igény szerint valós idejű vagy háttérben futó munkafolyamatként állíthatja be. Ha egy munkafolyamatot háttér-munkafolyamatként szeretne beállítani, válassza az **Átalakítás háttérben futó munkafolyamattá** lehetőséget.
+6. Aktiválja a **Névjegy** és a **Szállító** entitáson létrehozott munkafolyamatokat, hogy a **Névjegy** entitást használja a **Személy** típusú szállítókhoz.

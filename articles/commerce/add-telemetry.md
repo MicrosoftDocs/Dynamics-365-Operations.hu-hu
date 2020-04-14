@@ -3,7 +3,7 @@ title: Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásá
 description: Ez a témakör azt mutatja be, hogyan lehet ügyféloldali parancsfájlt hozzáadni a webhely lapjaihoz, hogy támogassa az ügyfél-oldali telemetria gyűjtését.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001277"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154086"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,25 +37,72 @@ A webanalitika fontos eszköz, ha meg szeretné tudni, hogyan lépnek interakci�
 > [!NOTE]
 > Az ebben a témakörben található utasítások a Microsoft Dynamics 365 Commerce által natív módon nem kínált egyéni ügyféloldali funkciókra is vonatkoznak.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Újra felhasználható töredék létrehozása a parancsfájl kódjához
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Újra felhasználható oldaltöredék létrehozása a parancsfájl kódjához
 
-Miután létrehozott egy töredéket a parancsfájl kódjához, az újra felhasználható a webhelye összes lapján.
+Az oldaltöredékek lehetővé teszik a belső és a külső parancsfájlkódok használatát a webhely összes lapján, függetlenül attól, hogy milyen sablont használnak.
 
-1. Lépjen a **Töredékek \> Új oldaltöredék** elemhez.
-2. Válassza ki a **Külső parancsfájl** elemet, adja meg a töredék nevét, majd kattintson az **OK** gombra.
-3. A töredékhierarchiában válassza ki az **imént létrehozott töredék** alárendelt parancsfájl-betöltő modulját.
-4. A jobb oldali tulajdonságpanelen adja meg az ügyféloldali parancsfájlt, és állítsa be szükség szerint a többi konfigurációs beállítást.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Újra felhasználható oldaltöredék létrehozása a szövegközi parancsfájl kódjához
 
-## <a name="add-the-fragment-to-templates"></a>A töredék hozzáadása sablonokhoz
+A webhelykészítőben a szövegközi parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
+
+1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédablakban válassza a **Szövegközi parancsfájl** lehetőséget.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
+1. Válassza ki az **alapértelmezett szövegközi parancsfájl** modult a létrehozott lapok között.
+1. A jobb oldali ablaktáblában a **Szövegközi parancsfájl** területen adja meg a kliensoldali parancsfájlt. Ezt követően konfigurálja a szükséges egyéb beállításokat.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. Válassza a **Közzététel** lehetőséget.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Újra felhasználható oldaltöredék létrehozása a külső parancsfájl kódjához
+
+A webhelykészítőben a külső parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
+
+1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédablakban válassza a **Külső parancsfájl** lehetőséget.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
+1. Válassza ki az **alapértelmezett külső parancsfájl** modult a létrehozott lapok között.
+1. A jobb oldali ablaktáblában a **Parancsfájl forrása** területen adja meg a külső parancsfájlhoz tartozó külső vagy kapcsolódó URL-címet. Ezt követően konfigurálja a szükséges egyéb beállításokat.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. Válassza a **Közzététel** lehetőséget.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Parancsfájlkódot tartalmazó oldaltöredék hozzáadása sablonhoz
+
+A webhelykészítőben egy sablonhoz egy parancsfájlkódot tartalmazó oldaltöredék hozzáadásához kövesse az alábbi lépéseket.
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
-2. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
-3. Válassza ki a **HTML-fejléc** helyhez tartozó három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
-4. Válassza ki a parancsfájl kódjához létrehozott töredéket.
-5. Mentse a sablont és adja be.
+1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Oldaltöredék hozzáadása** elemet.
+1. Válassza ki a parancsfájl kódjához létrehozott töredéket.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. Válassza a **Közzététel** lehetőséget.
 
-> [!NOTE]
-> Miután befejezte a munkát, közzé kell tennie a töredéket és az alapsablont. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Külső parancsfájl vagy szövegközi parancsfájl hozzáadása sablonhoz közvetlenül
+
+Ha azt szeretné, hogy egy szövegközi vagy külső parancsfájlt közvetlenül egyetlen sablon által vezérelt oldalak csoportjába szúrjunk be, akkor előbb nem kell létrehoznia az oldaltöredéket.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Szövegközi parancsfájl hozzáadása sablonhoz közvetlenül
+
+Ha egy szövegközi parancsfájlt közvetlenül egy sablonhoz szeretne hozzáadni a webhelykészítőben, hajtsa végre az alábbi lépéseket.
+
+1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
+1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédablakban válassza a **Szövegközi parancsfájl** lehetőséget.
+1. A jobb oldali ablaktáblában a **Szövegközi parancsfájl** területen adja meg a kliensoldali parancsfájlt. Ezt követően konfigurálja a szükséges egyéb beállításokat.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. Válassza a **Közzététel** lehetőséget.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Külső parancsfájl hozzáadása sablonhoz közvetlenül
+
+Ha egy külső parancsfájlt közvetlenül egy sablonhoz szeretne hozzáadni a webhelykészítőben, hajtsa végre az alábbi lépéseket.
+
+1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
+1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédablakban válassza a **Külső parancsfájl** lehetőséget.
+1. A jobb oldali ablaktáblában a **Parancsfájl forrása** területen adja meg a külső parancsfájlhoz tartozó külső vagy kapcsolódó URL-címet. Ezt követően konfigurálja a szükséges egyéb beállításokat.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. Válassza a **Közzététel** lehetőséget.
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -73,4 +119,3 @@ Miután létrehozott egy töredéket a parancsfájl kódjához, az újra felhasz
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
-

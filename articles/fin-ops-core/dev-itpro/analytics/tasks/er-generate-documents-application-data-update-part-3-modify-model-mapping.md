@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5df6128228b9ff620c606c550c5eb7a6039b915
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a4546de2c5c1773aadce0ec084ee7058ff2ae153
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141879"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modellek és leképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (2. rész: Dokumentumok létrehozása)” eljárást. 
 
@@ -101,7 +101,7 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 10. Kattintson a Gyökér hozzáadása gombra.
 11. A Név mezőbe írja be ezt: 'model'.
     * modell  
-12. A Definíció mezőben adja meg vagy válassza ki az 'Alkalmazásadatok frissítéséhez' értékét.
+12. A Definíció mezőben adja meg vagy válassza ki az „Alkalmazásadatok frissítéséhez” értékét.
     * Alkalmazásadatok módosításához  
 13. Kattintson az OK gombra.
 14. A fában bontsa ki a „model” elemet.
@@ -129,11 +129,11 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
     * Archiválás  
 32. A Tábla neve mezőbe írja be ezt: 'IntrastatArchiveGeneral'.
     * IntrastatArchiveGeneral  
-    * Tartsa meg a 'Beszúrás' rekordműveletet, hogy minden egyes Intrastat-jelentési folyamat részletes archiválásakor rekordokat tudjon hozzáadni.  
+    * Tartsa meg a „Beszúrás” rekordműveletet, hogy minden egyes Intrastat-jelentési folyamat részletes archiválásakor rekordokat tudjon hozzáadni.  
 33. Válassza az Igen lehetőséget a Rekordinformációs napló mezőben.
     * Válassza az Igen lehetőséget az alkalmazásadatok frissítésével kapcsolatos problémákra vonatkozó információk lekéréséhez.  
 34. A Rekordművelet ellenőrzésének kihagyása mezőben válassza az Igen beállítást.
-    * Válassza az Igen lehetőséget az üres 'Intrastat archívum azonosítója' mezőre vonatkozó ellenőrzési hibák figyelmen kívül hagyásához. Ez a rekordok hozzáadását követően történik meg, a táblához a Külkereskedelmi paraméterek űrlapon beállított számsorozat-beállítások alapján.  
+    * Válassza az Igen lehetőséget az üres „Intrastat archívum azonosítója” mezőre vonatkozó ellenőrzési hibák figyelmen kívül hagyásához. Ez a rekordok hozzáadását követően történik meg, a táblához a Külkereskedelmi paraméterek űrlapon beállított számsorozat-beállítások alapján.  
 35. Kattintson az OK gombra.
     * A hozzáadott adatforrás (a szűrt modell a kijelölt gyökérelem alapján) elemeit kösse össze a hozzáadott cél elemeivel.  
 36. A fastruktúrában bontsa ki ezt: „Archive”.

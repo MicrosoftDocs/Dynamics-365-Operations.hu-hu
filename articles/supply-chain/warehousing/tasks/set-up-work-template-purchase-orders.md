@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 227a6865df826caf8ce154f9c44ebe082acd76a5
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 473bb133159bb6cdcbbd30ab2c8452eb69f8cfaf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916738"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148195"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Munkasablon beállítása beszerzési rendelésekhez
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör a bevételezett cikkek betárolásakor alkalmazandó egyszerű munkasablon beállítását ismerteti. A munkasablonok határozzák meg a raktári dolgozó számára mobilkészüléken biztosított utasításkészletet, amikor cikkeket helyez át a bevételezési területről. Használhatja ezt az eljárást a USMF bemutatócégnél említett adatokkal. Mielőtt belekezdene ebbe az útmutatóba, hozzon létre egy munkagyűjtő-azonosítót. Ebben a példában egy a Bejövőben meghívott munkagyűjtő-azonosítót használunk. Ezt az eljárást a raktári vezető használja.
 

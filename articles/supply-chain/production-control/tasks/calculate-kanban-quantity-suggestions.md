@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 540dd32c5da5859ef5e69f55d6806eada90bc840
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b6769eb1c971b4641aee7cae9dd710a856b3c8fb
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558194"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149366"
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Kanbanmennyiség-javaslatok kiszámítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a folyamat a kanbanméret és -mennyiség egy adott kanbanszabályhoz történő optimalizálására irányul a kanbanmennyiség-számítás használatával. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás az érték-előállítási folyamat vezetője számára készült. Előfeltétele az Új kanban mennyiségszámítási irányelv hozzáadása a kanbanszabályhoz eljárás elvégzése.
 

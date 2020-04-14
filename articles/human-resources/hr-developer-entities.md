@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087346"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166498"
 ---
 # <a name="common-data-service-entities"></a>Common Data Service-entitások
 
@@ -87,14 +87,19 @@ A Human Resources rendszerhez a következő erőforrások állnak rendelkezésé
 | Beosztás | cdm_jobposition |
 | Beosztás típusa | cdm_positiontype |
 | Beosztáshoz rendelt dolgozó | cdm_positionworkerassignmentmap |
-| Feladattípus | cdm_jobtype |
+| Beosztásdimenzió | cdm_jobpositiondimension|
+| Állás típusa | cdm_jobtype |
 | Nyelv | cdm_language |
+| Megszólítás | cdm_title |
+
+> [!NOTE]
+> A **Beosztás típusa**, **Beosztáshoz rendelt dolgozó** és **Foglalkoztatás** pénzügyi dimenziói egyirányú integrációt biztosítanak a Common Data Service felé. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Common Data Service szolgáltatásból Human Resources alkalmazásba. 
 
 ## <a name="leave-and-absence-entities"></a>Szabadság- és távollétentitások
 
 | Név | Entitás |
 | --- | --- |
-| Szabadság banki tranzakciója | cdm_leavebanktransaction |
+| Szabadsági banki tranzakció | cdm_leavebanktransaction |
 | Szabadság regisztrációja | cdm_leaveenrollment |
 | Szabadságterv | cdm_leaveplan |
 | Szabadságkérelem | cdm_leaverequest |

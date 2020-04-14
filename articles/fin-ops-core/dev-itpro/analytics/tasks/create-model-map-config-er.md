@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bcfc258e7fe364779fd77cc79413e8d5e871e214
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c6ba23af5f7eb517cc58994e54e918b2a305da17
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182692"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142164"
 ---
 # <a name="create-electronic-reporting-er-model-mapping-configurations"></a>Elektronikus jelentés (ER) modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A folyamat segítségével új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet. Ebben a folyamatban egy konfigurációt hoz létre a Litware, Inc. minta vállalatra vonatkozóan. 
 
@@ -37,7 +37,7 @@ Ezek a lépések bármely adathalmazzal végrehajthatók. Hajtsa végre az aláb
 2. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 3. Kattintson a Szűrők megjelenítése pontra.
 4. Írja be az „Intrastat” szűrőértéket a Név mezőbe az „ezzel kezdődik” szűrési operátor használatával.
-    * Alkalmazza ezt a szűrőt az Intrastat adatmodell-konfiguráció keresésekor. Megtörténhet, hogy a modell már létezik a konfigurációs fán. Ha igen, ugorjon a következő alfeladatra.   
+    * Alkalmazza ezt a szűrőt az „Intrastat” adatmodell-konfiguráció keresésekor. Megtörténhet, hogy a modell már létezik a konfigurációs fán. Ha igen, ugorjon a következő alfeladatra.   
 
 ## <a name="get-the-intrastat-model-configuration-provided-by-microsoft"></a>A Microsoft által biztosított Intrastat modellkonfiguráció beszerzése
 1. Zárja be a lapot.

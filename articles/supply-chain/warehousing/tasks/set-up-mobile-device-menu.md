@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1c922d16b46e26031e5f80886e4e4e8f08bcdaf
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 71353e961c54f4d56b6ecdb1075c8c74edfe220f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916867"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145939"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek beállítására. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
 

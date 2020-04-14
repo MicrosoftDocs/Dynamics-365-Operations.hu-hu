@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e6f9f8f970f336a0cce6bcac78e32a1b7fe0a252
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2ffc64fd39a390af3ca7110178ef0999527106dc
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141381"
 ---
 # <a name="create-pos-permission-groups"></a>POS-engedélycsoportok létrehozása
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja be. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ez a feladat Kereskedelmi üzemeltetési vezető szerepkörhöz tartozik.
 
@@ -45,6 +45,6 @@ Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja
 13. A következőkben hozzárendelünk egy POS-engedélycsoportot egy Feladathoz. Keresse meg és jelölje ki a kívánt rekordot a listán.
 14. Válassza ki a **Szerkesztés** opciót.
 15. Bontsa ki a **Munkaköri besorolás** szakaszt.
-16. A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket. Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a POS-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók POS-engedélyeit a Pozíció szintjén felülbírálták.  
+16. A POS-engedélycsoport mezőben adjon meg, vagy válasszon ki egy értéket. Minden, ehhez a Feladathoz rendelt Pozícióban lévő Dolgozó ennek a pénztár-engedélycsoportnak a beállításait fogja használni, kivéve, ha a dolgozók pénztár-engedélyeit a Pozíció szintjén felülbírálták.  
 17. Válassza a **Mentés** lehetőséget. A módosítások mentése után futtatnia kell a Személyzetelosztási ütemezést, hogy leküldje a változtatásokat a csatornákba.  
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cdfcf62615faa76a6bd1f00bd947ef04e23613df
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 68aa220896e3d6f598f32cad201cde1aa89f1670
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178071"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138207"
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Értékcsökkenési profilok beállítása és létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Értékcsökkenési profilok határozzák meg az adott eszköz értékcsökkenésének típusát és gyakoriságát.   Ez a felvétel a USMF bemutató vállalatot, illetve a könyvelői szerepkört használja.
 

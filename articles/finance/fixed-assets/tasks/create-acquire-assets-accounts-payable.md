@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 025639e6e5bdc6b95e9c496f11f29ed8ec8d388c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178072"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142869"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Eszközök létrehozása és beszerzése a Követelések modulból
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A feladat-útmutató végigvezeti a tárgyi eszköz létrehozásán és a beszerzésén a beszerzési folyamaton keresztül.  A Könyvelő és Kötelezettségek ügyintézőket és a bemutató USMF vállalatot használja.
 

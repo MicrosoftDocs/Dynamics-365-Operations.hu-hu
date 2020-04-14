@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092246"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138359"
 ---
 # <a name="provision-human-resources"></a>Emberi erőforrások létesítése
 
@@ -56,7 +56,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
 2. Azt jelzi, hogy ez a Human Resources tesztkörnyezete-e vagy a termelési példánya. A korai előzetes funkciók elérhetők lehetnek a Védőfalpéldányokban, a korai visszajelzések és tesztelés érdekében.
    
     > [!NOTE]
-    > A Talent példány típusát a beállítás után nem lehet módosítani. Folytatás előtt győződjön meg arról, hogy a helyes példánytípus van kiválasztva.</br></br>
+    > A Human Resources példány típusát a beállítás után nem lehet módosítani. Folytatás előtt győződjön meg arról, hogy a helyes példánytípus van kiválasztva.</br></br>
     > A Human Resources példánytípus eltér a Microsoft Power Apps környezet Power Apps Felügyeleti központjában beállítható példánytípusától.
     
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Human Resources tesztverzióiban használt. Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Megjegyzés: az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
@@ -74,7 +74,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
     > [!NOTE]
     > Ha még nem hagyta jóvá a végső követelményeket, a Human Resources tesztpéldányát telepítheti a projektben. Ezután ezt a példányt használhatja a megoldás tesztelésére mindaddig, amíg alá nem ír. Ha az új környezet teszteléshez használja, ismételje meg ezt az eljárást, hogy létrehozzon egy éles környezetet.
 
-    > Mivel csak két LCS környezet van engedélyezve a Human Resources-előfizetés részeként, vegye fontolóra egy ingyenes, 60 napos [Human Resources próbakörnyezet igénybevételét](https://dynamics.microsoft.com/talent/overview/). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő minden adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
+    > Érdemes lehet kihasználni a 60 napos ingyenes [Human Resources próbakörnyezetet](https://dynamics.microsoft.com/talent/overview/). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő minden adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 ## <a name="select-a-power-apps-environment"></a>Power Apps-környezet kiválasztása
 
@@ -97,7 +97,10 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
     - **Tesztkörnyezetek** – Ezek a környezetek lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet és az abban található összes Human Resources példányt.
    
     - **Nem támogatott régiók** – Jelenleg a Human Resources csak a következő régiókban támogatott: Egyesült Államok, Európa, Egyesült Királyság és Ausztrália, Kanada és Ázsia.
-  
+
+    > [!NOTE]
+    > A Human Resources környezetet ugyanabban a régióban kell létesíteni, amelyben a Power Apps környezet létesítése történt. A Human Resources környezet egy másik régióba történő áttelepítése nem támogatott.
+
 6. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
  
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez

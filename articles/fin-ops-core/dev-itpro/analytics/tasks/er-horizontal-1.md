@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550532"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142363"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (1. rész – Formátum kialakítása)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre. Ezeket a lépéseket bármely vállalatban végrehajthatja.
 
@@ -33,9 +33,9 @@ A lépések végrehajtásához először hajtsa végre ezt a három feladat-útm
 
 „ER Konfigurációszolgáltató létrehozása és megjelölése aktívként”
 
-„ER Pénzügyi dimenziók használata adatforrásként (1. rész: Adatmodell kialakítása)”
+„ER Pénzügyi dimenziók használata adatforrásként (1. rész – Adatmodell kialakítása)”
 
-„ER Pénzügyi dimenziók használata adatforrásként (2. rész: Modell hozzárendelése)”
+„ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)”
 
 Ki kell töltenie és mentenie kell a sablon helyi másolatát az itt található mintajelentéssel [Pénzügyi dimenziók webszolgáltatásának mintajelentése](https://go.microsoft.com/fwlink/?linkid=862266).
 
@@ -62,7 +62,7 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 4. Kattintson az Importálás a Microsoft Excel programból lehetőségre.
 5. Kattintson a Mellékletek lehetőségre.
     * Importálja a jelentés sablonját. Használja az ehhez letöltött Excel-fájlt.  
-6. Kattintson az Új lehetőségre.
+6. Kattintson az Új elemre.
 7. Kattintson a Fájlra.
 8. Zárja be a lapot.
 9. A Sablon mezőben adjon meg vagy válasszon ki egy értéket.

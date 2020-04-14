@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 523f6414ec212aef48eece487f4199ea2cf4b87e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5dfd5655ecdfa74d75490b0915c4cea609baebe3
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836150"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146503"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Termelési folyamat és verzió érvényesítése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre új termelési folyamatot és első verziót lean manufacturing esetén. Előfeltételek: Ehhez az eljáráshoz meg kell adni a Lean manufacturingre vonatkozó termelési paramétereket és a mértékegységeket. Meg kell adnia egy Érték-előállítási folyamatot és egy Termelési csoportot is. További információt a termelési folyamatokról és a lean manufacturing tevékenységeiről a Lean manufacturing témájáról szóló tanulmányokban talál. Ez az eljárás az USMF jogi személyre utal a bemutatóadatokban. Ugyanakkor, ha az adott jogi személy lean manufacturingre van konfigurálva, akkor más jogi személy is használható.
 

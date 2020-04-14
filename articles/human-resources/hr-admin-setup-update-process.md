@@ -3,7 +3,7 @@ title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092201"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154505"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
@@ -37,52 +37,39 @@ A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human R
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
-- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó heti frissítések. A kiadott szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is. A platformfrissítéseinek kiadásainak ütemezésével kapcsolatos tájékoztatást lásd: [3. táblázat: Platformkiadások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). A heti frissítések általában szerdánként jelennek meg. A heti frissítésekkel kapcsolatos további tudnivalókat lásd: [Újdonságok és változások: Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A kiadott szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is. A platformfrissítéseinek kiadásainak ütemezésével kapcsolatos tájékoztatást lásd: [3. táblázat: Platformkiadások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). A kétheti frissítések egy szakaszos, globális bevezetés keretében jelennek meg a régiókban. A kétheti frissítésekkel kapcsolatos további tudnivalókat lásd: [Újdonságok és változások: Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Ha nincs eltérő értesítés, az összes támogatott adatközpont hetente frissül. A heti frissítések általában szerdán kezdődnek, és vasárnap fejeződnek be. A heti frissítések között az Egyesült Államok, Ausztrália, Európa, az Egyesült Királyság, Ázsia és Kanada régiói szerepelnek. 
+    Ha nincs eltérő értesítés, az összes támogatott adatközpont kéthetente frissül. A kéthetes frissítések között az Egyesült Államok, Ausztrália, Európa, az Egyesült Királyság, Ázsia és Kanada régiói szerepelnek. 
 
-- A **Common Data Service megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Common Data Service meglévő entitásainak módosításait. Ezek a frissítések ugyanazon régiókba irányulnak, mint a heti frissítések, és kb. hat hetet vesz igénybe, hogy az összes adatközpontban megtörténjen a replikálásuk. A megoldások frissítései követhetik a heti szolgáltatásfrissítéseket, de nem feltétlenül.
-
-A következő táblázat egy ütemezést mutat be:
-
-| Hét | Módosítás típusa |
-| --- | --- |
-| 1 | Szolgáltatásfrissítés (minden régió) |
-| 2 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (1. hét régiói) |
-| 3 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (2. hét régiói) |
-| 4 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (3. hét régiói) |
-| 5 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (4. hét régiói) |
-| 6 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (5. hét régiói) |
-| 7 | Szolgáltatásfrissítés (minden régió) + megoldásfrissítés (6. hét régiói) |
-| 8 | Szolgáltatásfrissítés (minden régió) |
+- A **Common Data Service megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Common Data Service meglévő entitásainak módosításait. Ezek a frissítések ugyanazon régiókba irányulnak, mint a kétheti frissítések, és kb. hat hetet vesz igénybe, hogy az összes adatközpontban megtörténjen a replikálásuk. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
 
 > [!NOTE]
 > A megoldásfrissítések az összes adatközpontban elérhetők a kiadásuk után. Ha nem szeretné megvárni a frissítések automatikus replikálását, manuálisan is alkalmazhatja azokat bármilyen környezetben, bármelyik adatközpontban.
 
 Szükség esetén a Human Resources szolgáltatás a következő típusú javításokat is biztosítja:
 
-- **Javítás (gyorsjavítás)**: Olyan hibajavítások, amelyek a heti szolgáltatásfrissítési kiadásokkal vagy azoktól külön jelennek meg.
+- **Javítás (gyorsjavítás)**: Olyan hibajavítások, amelyek a kétheti szolgáltatásfrissítési kiadásokkal vagy azoktól külön jelennek meg
 
-- **Vészhelyzeti javítás**: Proaktív és reaktív gyorsjavítások, amelyek különállóak, csak a konfiguráció vagy csak a kód módosításait tartalmazzál az élő webhelyek hibáinak megoldásához, és a heti szolgáltatásfrissítésektől függetlenül is megjelenhetnek.
+- **Vészhelyzeti javítás**: Proaktív és reaktív gyorsjavítások, amelyek különállóak, csak a konfiguráció vagy csak a kód módosításait tartalmazzál az élő webhelyek hibáinak megoldásához, és a kétheti szolgáltatásfrissítésektől függetlenül is megjelenhetnek
 
 A kiadások felülvizsgálata, tesztelése és ellenőrzése belső környezetben történik. A buildek jóváhagyása után következik a termelési környezetben történő felhasználásuk.
 
-## <a name="exceptions-in-2019"></a>Kivételek 2019-ben
+## <a name="release-cadence-exceptions-in-2020"></a>Kiadási ütemezést érintő kivételek 2020-ban
 
 A következő dátumok kivételt jelentenek a normál kiadási ütemezés alól:
 
 | Dátum | Leírás |
 | --- | --- |
-| November 25-i hét | Nincs frissítés |
-| December 16-i hét | Csak kisebb frissítések |
-| December 23-i hét | Nincs frissítés |
-| December 30-i hét | Nincs frissítés |
+| November 23-i hét | Nincs frissítés |
+| December 14-i hét | Csak kisebb frissítések |
+| December 21-i hét | Nincs frissítés |
+| December 28-i hét | Nincs frissítés |
 
 ## <a name="communications"></a>Tájékoztatás
 
 A következő helyeken tudhatja meg, hogy milyen munkák vannak folyamatban a Human Resources szolgáltatással kapcsolatban, és mit adtunk már ki:
 
-- [Dynamics 365 Human Resources ütemterv](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resources ütemterv](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Dynamics 365 programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ Az előzetes funkciók tesztelésekor vagy az új képességek kipróbálásakor
 
 ## <a name="see-also"></a>Lásd még
 
-- [Dynamics 365 és Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans)
-- [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](hr-admin-whats-new.md)
-- [A szoftver életciklusára vonatkozó irányelv](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Dynamics 365 és Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A szoftver életciklusára vonatkozó irányelv](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

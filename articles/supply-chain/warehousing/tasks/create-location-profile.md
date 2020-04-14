@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 764d1dc1d7fb54e0fa14a681d6d3cdb1d829aa57
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146123"
 ---
 # <a name="create-a-location-profile"></a>Helyprofil létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365 Supply Chain Management megoldásban. A raktárban minden helyhez társítani kell egy helyprofilt, amely leírja a hely tulajdonságait, például azt, hogy a hely engedélyezi-e a vegyes cikkeket. Ebben az eljárásban olyan helyprofilt hozunk létre, amely nem igényel azonosítótáblás szabályozást. Engedélyezzük a vegyes cikkeket és a kevert készlet állapotokat, és engedélyezzük a ciklus leltározást. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365 Supply Chain Management megoldásban. A raktárban minden helyhez társítani kell egy helyprofilt, amely leírja a hely tulajdonságait, például azt, hogy a hely engedélyezi-e a vegyes cikkeket. Ebben az eljárásban olyan helyprofilt hozunk létre, amely nem igényel azonosítótáblás szabályozást. Engedélyezzük a vegyes cikkeket és a kevert készletállapotokat, és engedélyezzük a ciklus leltározást. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Raktár > Helyprofilok** lehetőségre.

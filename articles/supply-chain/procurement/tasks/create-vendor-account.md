@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149596"
 ---
 # <a name="create-a-vendor-account"></a>Szállítói számla létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre egy szállítói számlát, és adjon hozzá címet és kapcsolattartási adatokat. Az eljárás nem mutatja be, hogyan töltheti ki az összes mezőt a beszerzési és pénzügyi célokra. Az említett mezőkről további információkért olvassa el a mezőleírásokat. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. Szállítói számlákat általában egy beszerzési vagy kinnlevőségi szakember hozza létre.
 

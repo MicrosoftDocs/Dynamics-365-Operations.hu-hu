@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62075c01ad7e2a4c393e9658fa67f8b536654aec
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a2f99029195a8b783f0d12990d4e8bab0bb348d7
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057164"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140948"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez az eljárás végigvezeti egy új kereskedelmi csatorna létrehozásának, és a csatornaattribútumok megadásának lépésein. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ezt az eljárást a kereskedelem IT-szerepkör használja.
 

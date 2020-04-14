@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042919"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142243"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevőkhöz
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.
 
@@ -38,7 +38,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 ## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevők közül
 1. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
 2. A fán válassza a következőt: „Sample data model\Sample mapping”.
-    * Most a Mintaleképezés modell-leképezési konfiguráció vázlatverzióját választottuk ki. Meg kell határoznia a többi szoftverösszetevővel való függőségi viszonyát. Ez a lépés a konfiguráció verziójának ER-tárházból történő letöltésének, valamint a jelen verzió további használatának előfeltétele.   
+    * Most a Mintaleképezés „modell-leképezési” konfiguráció vázlatverzióját választottuk ki. Meg kell határoznia a többi szoftverösszetevővel való függőségi viszonyát. Ez a lépés a konfiguráció verziójának ER-tárházból történő letöltésének, valamint a jelen verzió további használatának előfeltétele.   
 3. Bontsa ki az Előfeltételek szakaszt.
     * Vegye figyelembe, hogy az Implementációk előfeltételcsoport automatikusan hozzá van adva ebben a szakaszban. Ez a csoport tartalmazza az adatmodell-konfigurációra hivatkozó előfeltétel-ellenőrzési összetevőt, és az Implementáció jelzője be van kapcsolva. Ez a jelző mutatja, hogy a Mintaleképezés leképezési konfiguráció a Minta adatmodell adatmodell végrehajtásának minősül. Ez az összetevő hatására arra kényszeríti az ER-t, hogy mindig letöltse egy ER-tárházból a Mintaleképezés leképezési konfigurációt, amikor letölti a Minta adatmodell modellkonfigurációt.   
 4. Kattintson a Szerkesztés lehetőségre.

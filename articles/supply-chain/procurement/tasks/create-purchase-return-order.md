@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d586f4cc92e7533cabb8810ce5a42a37e6ba9ff1
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: 743cb2677696727ac2730fec2c11954d150f4cfa
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995190"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147365"
 ---
 # <a name="create-a-purchase-return-order"></a>Beszerzési visszárurendelés létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést a Jóváírás művelettel, hogy átmásolja a sorokat a szállítói számla dokumentumából egy új Beszerzési rendelésbe. Azt is bemutatja, hogyan lehet a rendelést megerősíteni és visszaküldeni árukat a szállítónak. Az eljárásban mutatott példa használható az USMF demo adatok cégben. Ezt a feladatot általában a beszerzési ügynök végzi el.
 
@@ -51,7 +51,7 @@ Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést 
 14. Jelölje ki az első sort (az M0005 elemmel), olyan mezőre kattintva, ami ebben a sorban szerepel.
 15. Törölje az első sorhoz tartozó jelölőnégyzetet. Csak az Ön által kiválasztott sorok lesznek átmásolva a rendelésébe.
 16. Zárja be a **Számlák** szakaszt.
-17. Bontsa ki a **Másolandó kijelölt sorok és fejléc** szakaszt. Ez a nézet jeleníti meg az összes rendelésbe másolásra kijelölt dokumentum és sor összegzését.  
+17. Bontsa ki a **Másolandó kijelölt sorok és fejléc** szakaszt. Ez a nézet jeleníti meg az összes rendelésben másolásra kijelölt dokumentum és sor összegzését.  
 18. Zárja be a **Másolandó kijelölt sorok és fejléc szakaszt**.
 19. Kattintson az **OK** gombra. A kiválasztott sor most át lett másolva a beszerzési visszárurendeléséhez. A **Mennyiség** mező -10-et mutat.   
 20. Kattintson a **Beszerzésirendelés-sor** szakasz **Készlet** elemére.

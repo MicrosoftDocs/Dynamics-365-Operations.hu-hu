@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc7d50805ec771d042732f36a42c2d9fb3c16cdf
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b265a94c6d8f9e2534e1509e4f33c6f8a05eded0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140940"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Pénztár (POS) vizuális profilok létrehozása
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez az eljárás végigveszi egy új pénztár (POS) vizuális profilja létrehozásának lépéseit. A vizuális profilok olyan alapvető információkat tartalmaznak, amelyek meghatározzák a POS-pénztárok megjelenését. Több vizuális profil is létrehozható, majd az adott pénztárgépekhez hozzárendelhető a megfelelő profil. Ez az eljárás az USRT bemutatócéget használja.
 

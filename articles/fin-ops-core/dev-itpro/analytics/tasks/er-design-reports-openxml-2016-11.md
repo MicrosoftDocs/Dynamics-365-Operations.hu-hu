@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769855"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142132"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az elektronikus dokumentumok létrehozására vonatkozó sablont az OPENXML formátumban. Ezt a konfigurációt a szállítói kifizetések feldolgozására használják.
 
 Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 
-Hajtsa végre az alábbi lépéseket: Először hajtsa végre a „Konfiguráció szolgáltatói létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266) dokumentumból érhető el.
+Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266) dokumentumból érhető el.
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>A Fizetési adatmodell-konfiguráció feltöltése
@@ -55,7 +55,7 @@ Hajtsa végre az alábbi lépéseket: Először hajtsa végre a „Konfiguráci�
 3. A **Konfiguráció létrehozása** kiválasztásával megnyithatja a legördülő párbeszédablakot.
 4. Az **Új** mezőben adja meg a `Format based on data model PaymentModel` értéket. Hozzon létre egy PaymentModel adatmodellen alapuló formátumot.
 5. A **Név** mezőbe írja be a `Sample worksheet report` kifejezést. Minta munkalap jelentés  
-6. A **Leírás** mezőbe írja be a `Sample worksheet report for vendors’ payments` értéket. Minta munkalap jelentés a szállítók kifizetéseihez.  
+6. A **Leírás** mezőbe írja be a `Sample worksheet report for vendors' payments` értéket. Minta munkalap jelentés a szállítók kifizetéseihez.  
 7. Az **Adatmodell mezőben** adjon meg vagy válasszon ki egy értéket. Válassza ki a **CustomerCreditTransferInitiation** definíciót.  
 8. Válassza a **Konfiguráció létrehozása** lehetőséget.
 

@@ -3,7 +3,7 @@ title: Hitelkezelési pereméterek beállítása
 description: Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124185"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154528"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére. A Hitelkezelés szolgáltatásai használatának megkezdéséhez be kell állítani a paramétereket **Hitelkezelési paraméterek** oldalon (**Hitelkezelés \> Beállítások \> Hitelkezelési paraméterek**).
+Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére. A Hitelkezelés szolgáltatásai használatának megkezdéséhez be kell állítani a paramétereket **Követelések és beszedések paraméterei** oldalon (**Követelések és beszedések \> Beállítások \> Követelések és beszedések paraméterei**).
 
 ## <a name="credit-parameters"></a>Hitelparaméterek
 
-Négy gyorslap van , ahol megváltoztathatja a Hitelkezelést szabályozó paramétereket: **Hitelvárakoztatások**, **Hitelkezelési ellenőrzőpont**, **Hitelkezelési statisztikák** és **Hitelkorlátok**. A következő szakaszok az egyes gyorslapokon elérhető beállításokat írják le.
+Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezelést szabályozó paramétereket: **Hitelvárakoztatások**, **Hitelkezelési ellenőrzőpont**, **Hitelkezelési statisztikák** és **Hitelkorlátok**. A következő szakaszok az egyes gyorslapokon elérhető beállításokat írják le.
 
 ### <a name="credit-holds"></a>Hitelfelfüggesztések
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22aa4823fbf43b29a8fd9661645e8563c07e437d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a837721db5281b0626f37b7a793349b91afa6f85
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844657"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147756"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez. Az eljárás emellett bemutatja, hogyan készíthető konfigurációelnevezési rendszer termékkonfigurációs modell összetevőjéhez. Ez az eljárás az USMF bemutatócéget használja. Az új termékszám-elnevezési rendszer a D0004 alaptermékhez van rendelve. Ezt a feladatot általában egy terméktervező végzi.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0abbce32e2fabe860077502875b92f93ea0ea95c
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 488fb1bea2d2ae06c92c20afdd98735928eee3b8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867077"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147296"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Ismételt beszerzési rendelés létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan lehet egy ismételt beszerzési rendelést (PO) létrehozni azáltal, hogy a sorokat egy korábbi beszerzési rendelési dokumentumból egy új, vagy egy már létező beszerzési rendelésbe másol. Kétféleképpen lehetséges az ismételt rendelések létrehozása. Vagy a Művelet Panel dokumentum szintjén elérhető műveleteket vagy a sorrészletek műveleteit használhatja. A dokumentumszintű műveletek leginkább egy új beszerzési rendelés létrehozására szolgálnak a sorok és egy másik rendelés fejléc információinak hozzáadásával, viszont a soradatok művelete a sorok egy már meglévő rendeléshez történő hozzáadására szolgál. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ezt a feladatot általában a beszerzési ügynök végzi el.
 
@@ -41,7 +41,7 @@ Ez a témakör bemutatja, hogy hogyan lehet egy ismételt beszerzési rendelést
 
     - A **Mennyiségi tényező** akkor hasznos, ha egy olyan mennyiséget kell használnia, amely eltér azon soron található mennyiségtől, amelyből éppen a másolást végzi. Például, ha kétszer annyi mennyiséget szeretne rendelni, mint amennyi azon a soron szerepel, amelyből a másolást végzi, írjon be „2” értéket ebbe a mezőbe, majd ezt követően a rendszer hozzáadja azokat a sorokat, ahol kétszeres az eredeti mennyiség.  
     - Az **Előjel megfordítása** mező szintén támogatja a megrendelt mennyiséget a hozzáadott megrendelési sorokra vonatkozó mennyiség előjelének módosításával. Ez akkor lehet hasznos, ha sztorníroznia kell a tranzakciót azon sorok létrehozásával, amelyek megsemmisítik a tranzakciót. Ez a beállítás automatikusan ki van jelölve a lap **Jóváírás létrehozása műveletből** történő megnyitásakor.  
-    - A **Másolási díjak** beállítás lehetővé teszi Önnek a költségek új rendelésbe történő másolását azon dokumentumból, amelyből éppen a rendelési sorokat másolja.  
+    - A **Költségek másolása** beállítás lehetővé teszi Önnek a költségek új rendelésbe történő másolását azon dokumentumból, amelyből éppen a rendelési sorokat másolja.  
     - Az **Árak újraszámítása** beállítás az aktuális árakat és engedményeket használja, ahelyett hogy ezeket az információkat azon dokumentumból másolná, ahonnan a többi információ másolását végzi.  
     - A **Pontos másolás** beállítás pontos másolatot készít azon értékekről, amelyek a rendelési dokumentum fejlécén, illetve sorain található mezőkben szerepelnek. Ez a lehetőség nincs bejelölve, ha a rendszer az alapértelmezett értékeket a szállítóhoz és a termékekhez kapcsolódó mezők többségére vonatkozóan használja, csakúgy, mint akkor, ha manuálisan hozta létre az új megrendelést. Például, ha felülírta a szállítóra vonatkozó alapértelmezett Számlafogadót azon rendelés, amelyből éppen a másolást végzi, akkor ugyanazt a Számlafogadót fogja másolni a rendszer az Ön megrendeléséhez. Ha nem jelölte ki a **Pontos másolás** beállítást, akkor a szállítóra vonatkozó, alapértelmezett Számlafogadót fogja használni helyette a rendszer a rendelésén.  
     - A **Beszerzési sorok törlése** beállítás törli az összes olyan beszerzési rendelési sort, amely már létezik azon beszerzési rendelésen, amelybe a másolást végzi, az új sorok alkalmazása előtt. Körültekintően kell használni ezt a lehetőséget, mert minden további figyelmeztetés nélkül törli az összes meglévő sort.  

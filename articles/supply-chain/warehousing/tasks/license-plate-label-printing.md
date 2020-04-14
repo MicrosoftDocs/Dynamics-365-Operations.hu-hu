@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed4fa28039c9320998f6524c9c9edb0a0301b7b0
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 545f1c15888bcd0b46e1028f58cbe3a274846c92
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146031"
 ---
 # <a name="enable-license-plate-label-printing"></a>Azonosítótábla-címke nyomtatásának engedélyezése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomtatásának engedélyezését, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során. Ezt a folyamatot lefuttathatja az USMF bemutatócégen. Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra. A feladat megkezdése előtt be kell állítania egy címkenyomtatót. Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra. A Műveleti ablakban kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra. Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.
 

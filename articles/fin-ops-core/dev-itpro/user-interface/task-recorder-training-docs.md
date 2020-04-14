@@ -3,7 +3,7 @@ title: Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségé
 description: Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006195"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164558"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -40,8 +40,6 @@ Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-ú
 A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek*hívják. A Feladatrögzítő sokféleképpen használható:
 
 -   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Súgó nyújtotta élmény szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A „buborékdiagram” arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
--   **A Feladatrögzítő lépésről lépésre megjeleníthető a Súgó ablakban.** A Súgó ablakot használhatja Feladatrögzítő keresésére és megjelenítésére. A **?** gombra való kattintással nyitható meg a Súgó ablaktábla. a felső navigációs sávon, vagy használja  **Ctrl+Shift+?** billentyűkódot. A Feladatrögzítő lépéseit a Súgó ablakban olvashatja, vagy dönthet a felvétel lejátszása feladat-útmutatóként mellett, így az végigvezeti Önt a felhasználói felületen.
--   **Feladatrögzítések BPM-be menthetők.** A feladatrögzítést hierarchiasorhoz is mentheti, a Lifecycle Services (LCS) szolgáltatásban lévő BPM könyvtárba. Felsorolt lépések és az üzleti folyamatok ábrája a rögzítésből kerül létrehozásra. A BPM-tárba mentett feladatrögzítések Súgóként jeleníthetők meg.
 -   **Feladatrögzítők Word dokumentumként menthetők.** Ez lehetővé teszi nyomtatható képzési útmutatók egyszerű létrehozását.
 
 Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő](task-recorder.md).
@@ -114,8 +112,7 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 10. Miután a felvétel végig lejátszásra került, kattintson **Leállítás** elemre a képernyő tetején található Feladatrögzítő sávon.
 11. Válassza ki, hogyan szeretné menteni a feladatrögzítést
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>A feladatrögzítések megjelenítése a Súgó ablakban
-A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, és ezáltal feladat-útmutatóként lejátszhatóak vagy szövegként megtekinthetőek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../../fin-ops/get-started/help-connect.md).
+
 
 <a name="additional-resources"></a>További erőforrások
 --------

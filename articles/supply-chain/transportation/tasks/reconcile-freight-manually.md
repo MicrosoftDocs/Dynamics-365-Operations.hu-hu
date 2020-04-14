@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 386c035fb84b1f88cf53837a1e875eb2aa8ba910
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026314"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146307"
 ---
 # <a name="reconcile-freight-manually"></a>Fuvarlevél egyeztetése manuálisan
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 Ez az eljárás bemutatja, hogyan lehet manuálisan elvégezni a fuvaregyeztetést. Ezt általában egy szállítási koordinátor végzi. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 

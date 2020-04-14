@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 635a1c50390bca59cd1c9ba0cf0421c510b2998c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bc6f90e7adb3facdfa1facb50fecb0de4ccb04d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178106"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141580"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Vevő által kiállított, jövőben esedékes csekk kiegyenlítése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A jövőben esedékes csekkeket akkor egyenlítheti ki, miután a bank elszámolta azokat. A pénzügyi tranzakció a jövőben esedékes csekkhez tartozó áthidaló számlát is elszámolja. 
 

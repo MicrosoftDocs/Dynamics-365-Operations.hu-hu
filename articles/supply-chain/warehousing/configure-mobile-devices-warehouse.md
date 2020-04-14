@@ -3,7 +3,7 @@ title: Mobileszközök beállítása raktári munkához
 description: Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813040"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161828"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -95,11 +95,11 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 </tr>
 <tr>
 <td>Azonosítótábla bevételezése</td>
-<td>A bejövő rakomány fogadása az azonosítótábla azonosítója segítségével.</td>
+<td>Fogadja a bejövő előzetes kiszállítási értesítést (ASN) az azonosító tábla azonosítója segítségével.</td>
 </tr>
 <tr>
 <td>Azonosítótábla bevételezése és eltárolása</td>
-<td>Fogadja és tárolja be a bejövő rakományt az azonosító tábla azonosítója segítségével.</td>
+<td>Fogadja és a betárolja a bejövő előzetes kiszállítási értesítést (ASN) az azonosító tábla azonosítója segítségével.</td>
 </tr>
 <tr>
 <td>Rakomány – cikk bevételezése</td>
@@ -119,7 +119,7 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 <td>Regisztrálja a cikk mennyiségének bevételezését az RMA szám rögzítésével, és tárolja be a cikkeket. Ugyanaz a dolgozó hajtja végre mindkét műveletet.</td>
 </tr>
 <tr>
-<td rowspan="4">Átmozgatási rendelés</td>
+<td rowspan="6">Átmozgatási rendelés</td>
 <td>Átmozgatási rendelés – cikk bevételezése</td>
 <td>Regisztrálja a cikk mennyiségének bevételezését, és hozzon létre egy betárolási munkát egy másik dolgozónak.
 
@@ -138,6 +138,14 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 <tr>
 <td>Átmozgatásirendelés-sor bevételezése és betárolása</td>
 <td>Regisztrálja a cikkmennyiség bevételezését, és tárolja el a cikkeket. Ugyanaz a dolgozó hajtja végre mindkét műveletet.</td>
+</tr>
+<tr>
+<td>Azonosítótábla bevételezése</td>
+<td>Fogadja a bejövő előzetes kiszállítási értesítést (ASN) az azonosító tábla azonosítója segítségével.</td>
+</tr>
+<tr>
+<td>Azonosítótábla bevételezése és eltárolása</td>
+<td>Fogadja és a betárolja a bejövő előzetes kiszállítási értesítést (ASN) az azonosító tábla azonosítója segítségével.</td>
 </tr>
 <tr>
 <td rowspan="4">Termelés</td>

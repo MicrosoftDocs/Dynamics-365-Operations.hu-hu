@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097475"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164535"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.8 verziójában (2020. február)
 
@@ -32,13 +32,14 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.8 új vagy 
 
 - **Előzetes kiadás:** 2019. december
 - **Általános elérhetőség (saját frissítés):** 2020. január
-- **Automatikus frissítés:** 2020. február 
+- **Automatikus frissítés:** 2020. február
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
 Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezeknek a szolgáltatásoknak egy része egy korábbi növekményes kiadást is tartalmaz, de nem lett bejelentve a korábban *Újdonságok* témakörben, tehát itt hozzáadjuk őket. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 - [További helyzóna](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Tárgyieszköz-kezelés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)– További tájékoztatás: [Tárgyieszközkezelés – áttekintés](../asset-management/index.md).
 - [Munka visszavonása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) – további tájékoztatás: [A kivétel kezelésére vonatkozó raktári munka visszavonása](../warehousing/cancel-warehouse-work.md).
 - [Munkagyűjtő módosítása a munkán](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Fürtpozíció tele](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

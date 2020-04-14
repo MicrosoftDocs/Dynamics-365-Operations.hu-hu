@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7777ba38e4bf41b17fae698200017b933fc9e876
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188165"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141672"
 ---
 # <a name="customer-payment-overview"></a>Vevői kifizetések áttekintése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál használt különböző módszereken. Ez a feladat az USMF bemutatócéget használja.
 
@@ -45,7 +45,7 @@ Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál haszn�
 14. A **Művelet panelen** kattintson a Sorok elemre. Sorok megnyitásakor megjelennek a **Vevői kifizetések lapon rögzítése** lapon és a naplóba mentett kifizetések. Ezen a lapon új vevői kifizetéseket is megadhat, vagy szerkesztheti a meglévő vevői kifizetéseket is feladás előtt.
 15. Az **Új** gombra kattintva hozzon létre egy másik kifizetést. 
 16. Válassza ki az ügyfelet, akitől a kifizetést kapta. Ha nem ismeri a vevőt, de ismeri a kifizetéssel kifizetett számlát, a Számla mező segítségével manuálisan adja meg vagy válassza ki a számlát. A vevő az alapértelmezett lesz a számla kiválasztása után.  
-17. Kattintson a **Tranzakciók kiegyenlítése** gombra a kifizetett számlák megjelöléséhez. Ekkor nem kell semmilyen számlát kiegyenlíteni. Ha ez egy előleg, vagy ha nem tudja, hogy milyen számla lett kifizetve, megadhatja és feladhatja a kifizetést. A kifizetés egy későbbi időpontban is kiegyenlíthető egy számlára.  
+17. Kattintson a **Tranzakciók kiegyenlítése** gombra a kifizetett számlák megjelöléséhez. Nem kell semmilyen számlát kiegyenlíteni. Ha ez egy előleg, vagy ha nem tudja, hogy milyen számla lett kifizetve, megadhatja és feladhatja a kifizetést. A kifizetés egy későbbi időpontban is kiegyenlíthető egy számlára.  
 18. Jelölje be a kifizetés révén kifizetett számlákat. 
 19. Az **Összeg** mezőben írja be a számlára kiegyenlítendő kifizetés összegét.
 20. Kattintson az **OK** gombra.

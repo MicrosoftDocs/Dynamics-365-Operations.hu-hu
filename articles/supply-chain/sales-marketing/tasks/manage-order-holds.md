@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 16e11be633cdffbc8ee3e206eb42e7e1a2f72b9c
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994910"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146445"
 ---
 # <a name="manage-order-holds"></a>Rendelések várakoztatásának kezelése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet a vevői értékesítési rendeléseket várakoztatásra tenni, hogyan dolgozhat a várakoztatott rendelések kifizetésével, és hogyan tudja a rendelésvárakoztatásokat eltávolítani. Egy megrendelés különféle okokból kerülhet várakoztatásra. Például előfordulhat, hogy egy megrendelés mindaddig várakoztatva van, amíg a vevő címe, vagy a fizetési mód ellenőrzésre nem kerül, vagy amíg a vezető ellenőrzi a vevő hitelkeretét. Amíg a rendelés várakoztatáson van, a raktár nem tudja feldolgozni szállításra. 
 

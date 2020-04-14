@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f97c4cd6cdb117ebdd67a155478bb6f8d1703541
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 76dc32f2254ffd2a2e33eef594d6e602092bcb6f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178179"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140498"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Számsorozatok beállítása a varázsló segítségével
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer. Az azonosítókat igénylő alapadatokat és tranzakciós bejegyzéseket hivatkozásnak nevezik. Egy hivatkozáshoz tartozó új rekordok létrehozása előtt be kell állítania egy számsorozatot, és a hivatkozáshoz társítani. Ez a témakör bemutatja, hogyan tudja egyszerre beállítani az összes szükséges számsorozatot egy varázsló segítségével. Ez az eljárás az USMF bemutatócéget használja.
 

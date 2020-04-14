@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994934"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148584"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Vevői visszatérítések létrehozása és feldolgozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítéseket az igénylés létrehozásától addig a pontig, hogy könyvelésekként felveszi őket a Kinnlevőségek közé. Végigvezeti egy adott példán annak megmagyarázása érdekében, hogy a különféle feltételek a visszatérítés-sorokban milyen hatással vannak a vevő részére jóváírandó végleges összegekre. Az USMF bemutatócég adatait kell használnia, és a következő feladatokat kell elvégeznie, mielőtt elindítja az útmutatót: (1) A Kinnlevőségek paraméterei lapon bontsa ki az Árak lapot, majd az Ár részletei fület is, és ellenőrizze, hogy az Igen lehetőség be van-e jelölve az Áradatok engedélyezése mellett. (2) A Visszatérítési megállapodások lapon válassza ki ezt a vevői visszatérítési megállapodást: USMF-000001. Ha a munkafolyamat jóváhagyási állapota mezőben nem a Jóváhagyott szerepel, annak jóváhagyásához kattintson a műveleti ablak Érvényesítés gombjára.
 

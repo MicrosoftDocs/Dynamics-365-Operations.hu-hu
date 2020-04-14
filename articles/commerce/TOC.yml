@@ -454,6 +454,8 @@
                   items:
                     - name: Speciális automatikus költségek konfigurálása és használata
                       href: omni-auto-charges.md
+                    - name: Automatikus költségek csatorna szerinti engedélyezése és konfigurálása
+                      href: auto-charges-by-channel.md
                     - name: Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
                       href: pro-rate-charges-matching-lines.md
                 - name: Folytonossági programok kezelése
@@ -525,7 +527,7 @@
                 - name: Új termék létrehozása
                   items:
                     - name: Új termék létrehozása a Commerce szolgáltatásban
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Termékkategóriák és termékek kezelése
                       href: category-management-product-creation.md
                 - name: Termékattribútumok
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Személyre szabott termékajánlatok kikapcsolása
                       href: personalization-gdpr.md
-                - name: Ajánlatlisták hozzáadása egy e-Commerce-webhelyhez
-                  href: add-reco-list-to-page.md
                 - name: Pénztári gyakorlatok
                   items:
                     - name: Termékajánlatok hozzáadása a pénztárnál
@@ -944,9 +944,11 @@
                       href: add-checkout-module.md
                     - name: Rendelésmegerősítési modul
                       href: order-confirmation-module.md
-                - name: Fiókkezelési modulok
+                    - name: Üzletkiválasztó modul
+                      href: store-selector.md
+                - name: Számlakezelési modulok
                   items:
-                    - name: Fiókkezelési oldalak és modulok
+                    - name: Számlakezelési oldalak és modulok
                       href: account-management.md
                 - name: Termékgyűjtési modulok
                   items:
@@ -2115,7 +2117,7 @@
                 - name: Fizetési adatok használata
                   href: payment-connector-data-fields.md
                 - name: Kettős fizetési védelem engedélyezése a fizetési összekötőkhöz
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Fizetéscsomagolás létrehozása a Service Fabric telepítések alkalmazáskeresőjéhez
                   href: dev-itpro/payment-connector-package.md
             - name: Harmadik fél e-kereskedelmi bővíthetősége

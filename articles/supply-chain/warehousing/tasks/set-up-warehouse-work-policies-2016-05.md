@@ -1,6 +1,6 @@
 ---
 title: A raktári munka irányelveinek beállítása (Alkalmazás, 2016. május)
-description: A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát.
+description: A raktárkezelési folyamatok nem mindig tartalmaznak raktári munkát.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ad33a2f070a33e4e658870561406c4604f4dce
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ca54cceb83425c43b5d124cd6d11be0cdef4d63a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145916"
 ---
 # <a name="set-up-warehouse-work-policies-application-may-2016"></a>A raktári munka irányelveinek beállítása (Alkalmazás, 2016. május)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát. A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken. A rendszer az USMF bemutatócéget használta a rögzítés létrehozására. Ez a feladat-útmutató 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
+A raktárkezelési folyamatok nem mindig tartalmaznak raktári munkát. A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken. A rendszer az USMF bemutatócéget használta a rögzítés létrehozására. Ez a feladat-útmutató 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
 
 1. Ugorjon a Raktárkezelés > Beállítás > Munka > Munkairányelvek pontra.
 2. Kattintson az Új lehetőségre.

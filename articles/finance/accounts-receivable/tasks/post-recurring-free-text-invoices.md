@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 294e7ac5b1d548982ad402214934afe0cfce475d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f3b31dbf296a06ea6253a8ae71bfea6193a1e03e
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188786"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138023"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Ismétlődő szabadszöveges számlák generálása és feladása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek ugyanarról az összegről. Ez a felvétel az USMF bemutatócéget használja. A rögzítést az a személy használja, aki felelős a kintlévőségek számláinak kezeléséért és feldolgozásáért.
 

@@ -1,5 +1,5 @@
 ---
-title: Munkafolyamatok beállítása költségekhez
+title: Munkafolyamatok beállítása a Költséggazdálkodáshoz
 description: Beállíthat egy munkafolyamatot, amelynek a használatával áttekintheti és jóváhagyhatja az utazások és a költségek dokumentumait.
 author: ShylaThompson
 manager: AnnBe
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86cadf7277fbb7e08dad4b5dc2a46e1c6ce5a888
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdd4d69cb86da12e4a265f89c021c238d00cad08
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178092"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3153994"
 ---
-# <a name="set-up-workflows-for-expense"></a>Munkafolyamatok beállítása költségekhez
+# <a name="set-up-workflows-for-expense-management"></a>Munkafolyamatok beállítása a Költséggazdálkodáshoz
 
 [!include [banner](../includes/banner.md)]
 
- Beállíthat egy munkafolyamatot, amelynek a használatával áttekintheti és jóváhagyhatja az utazások és a költségek dokumentumait. A dokumentumok, amelyekhez munkafolyamatokat lehet adni, többek között magukban foglalják a költségjelentéseket, az utazási igényléseket és a készpénzelőleg-igényléseket.
+Beállíthat egy munkafolyamatot, amelynek a használatával áttekintheti és jóváhagyhatja az utazások és a költségek dokumentumait. A dokumentumok, amelyekhez munkafolyamatokat lehet adni, többek között magukban foglalják a költségjelentéseket, az utazási igényléseket és a készpénzelőleg-igényléseket.
 
 A munkafolyamat egy üzleti folyamatot jelent. Meghatározza, hogy hogyan halad végig egy dokumentum a rendszeren keresztül, és megmutatja, kinek kell elvégznie a feladatot és jóváhagynia a dokumentumot. A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 

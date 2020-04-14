@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92481749fa15d8a9c273edf6a79ee9fcfdc722e7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b02496ebb06e0c2eb644fc7ef3280ca4eca05923
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550671"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142024"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>ER Pénzügyi dimenziók használata adatforrásként (1. rész – Adatmodell kialakítása)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként. Ezeket a lépéseket bármely vállalatban végrehajthatja.
 
@@ -34,7 +34,7 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 
 ## <a name="create-a-new-data-model"></a>Új adatmodell létrehozása
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Győződjön meg róla, hogy a Litware, Inc. szolgáltató elérhető és aktívként megjelölt legyen.  
+    * Győződjön meg róla, hogy a „Litware, Inc.” szolgáltató elérhető és aktívként megjelölt legyen.  
 2. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 3. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
 4. A Név mezőben írja be a „Pénzügyi dimenziók mintamodell” szöveget.

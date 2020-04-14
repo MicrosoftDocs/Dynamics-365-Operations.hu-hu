@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ba64093dfe9ca28108456641ad17b5eda23d7f49
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916672"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148212"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Egy cikk vagy egy alapanyag nyomon követése
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az eljárás bemutatja, hogy a cikk-követéssel, hogyan lehet azonosítani, hogy hol használtak vagy használnak egy adott cikket vagy nyersanyagot. Ezzel az eljárással azonosíthat egy cikket, visszakövetheti a forráshoz, majd onnan előre követheti a termelésen és a késztermék értékesítésén keresztül. A folyamat segítségével kivizsgálhatók az érintett ügyfelek és értékesítési rendelések, illetve még több minden más is. Ez az eljárás az USP2 bemutatócéget használja.
 
