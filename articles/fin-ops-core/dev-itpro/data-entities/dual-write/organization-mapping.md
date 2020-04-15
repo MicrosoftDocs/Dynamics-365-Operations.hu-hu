@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fbf7cc33d12fb54d2ff02acc46ba2e284b2a2b3f
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019818"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173154"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Szervezeti hierarchia a Common Data Service szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Mivel a Dynamics 365 Finance egy pénzügyi rendszer a *szervezet* egy alapvető koncepciója, és a rendszerbeállítás a szervezeti hierarchia konfigurációjával kezdődik. A vállalati pénzügyei nyomon követhetők a szervezet szintjén, illetve a szervezeti hierarchia bármely szintjén.
 
@@ -50,7 +50,7 @@ A szervezeti hierarchiához tartozó entitásleképezések a Finance and Operati
 
 A termékinformációk tartalmazzák a termékhez és a termék meghatározásához kapcsolódó összes információt, például a termékdimenziókat, illetve a nyomon követési és tárolási dimenziókat. A következő táblázat bemutatja a termékek és a kapcsolódó információk szinkronizálására létrehozott entitás-leképezések gyűjteményét.
 
-Finance and Operations | Egyéb Dynamics 365 alkalmazások | Leírás
+Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Leírás
 -----------------------|--------------------------------|---
 Szervezeti hierarchiához kapcsolódó célok | msdyn_internalorganizationhierarchypurposes | Ez a sablon a Szervezeti hierarchia célja entitás egyirányú szinkronizálását teszi lehetővé.
 Szervezeti hierarchia típusa | msdyn_internalorganizationhierarchytypes | Ez a sablon a Szervezeti hierarchia típusa entitás egyirányú szinkronizálását teszi lehetővé.

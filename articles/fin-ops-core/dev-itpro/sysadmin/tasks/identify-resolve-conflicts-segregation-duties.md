@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c89d27eb8b587e8936258aae3ec1fee4574ccfb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70fe3bb707f2f204cda92ec979fe9fe1a3b96bac
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180921"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143604"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonosítását és feloldását ismerteti. Beállíthat szabályokat a más felhasználók által elvégzendő feladatok elválasztásához. Ezt a fogalmat a feladatkörök szétválasztásának nevezzük. Ha a biztonsági szerepkör definíciója vagy a felhasználói szerepkör-hozzárendelés megszegi a szabályokat, a rendszer naplózza az ütközést. Az ütközéseket a rendszergazdának kell feloldania. Kövesse az alábbi lépéseket az ütközések azonosítása és megoldása érdekében. Ez az eljárás az USMF bemutatócéget használja.
 
 
 ## <a name="verify-whether-user-role-assignments-comply-with-new-rules-for-segregation-of-duties"></a>Ellenőrizze, hogy a felhasználói szerepkör-hozzárendelések megfelelnek-e a feladatkörök szétválasztására vonatkozó új szabályoknak.
 1. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Felhasználók szerepkörökhöz rendelésének megfelelőségi ellenőrzése** részre.
-2. Válassza ki az **OK** lehetőséget. Egy értesítés megjeleníti az ellenőrzés eredményeit. Ha ütközés van, a **Felhasználók** lapon módosítsa a szerepkörök hozzárendelését. A rendszer a **Feladatköri ütközések szétválasztása** lapon is naplózza az ütközéseket. Az ellenőrzés kötegelt feladatként való futtatásához válassza a **Kötegelt feldolgozás** lehetőséget, és adja meg a többi kötegparamétert. A kötegelt feladat lefutása után a **Feladatköri ütközések szétválasztása** tekintheti át az ütközéseket.  
+2. Válassza ki az **OK** lehetőséget. Egy értesítés megjeleníti az ellenőrzés eredményeit. Ha ütközés van, a **Felhasználók** lapon módosítsa a felhasználói szerepkörök hozzárendelését. A rendszer a **Feladatköri ütközések szétválasztása** lapon is naplózza az ütközéseket. Az ellenőrzés kötegelt feladatként való futtatásához válassza a **Kötegelt feldolgozás** lehetőséget, és adja meg a többi kötegparamétert. A kötegelt feladat lefutása után a **Feladatköri ütközések szétválasztása** tekintheti át az ütközéseket.  
 
 ## <a name="view-and-resolve-conflicting-user-role-assignments"></a>Az ütköző felhasználói szerepkör-hozzárendelések megtekintése
 1. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatköri ütközések szétválasztása** részre. Válasszon ki egy ütközést, és kattintson a következő gombok egyikére: **Hozzárendelés megtagadása – A felhasználó további biztonsági szerepkörökhöz való hozzárendelésének megtagadása**. Ha megtagad egy automatikus szerepkör-hozzárendelést, a felhasználót a rendszer kizárja a szerepkörből. A kizárt felhasználó nem rendelkezik majd a szerepkörhöz társított hozzáféréssel, és a felhasználót nem lehet hozzárendelni a szerepkörhöz mindaddig, amíg a rendszergazda törli a kizárást. Hozzárendelés engedélyezése – **Felülbírálja** az ütközést, és engedélyezi a felhasználó mindkét biztonsági szerepkörhöz való hozzárendelését. Ha felülbírál egy ütközést, a **Felülbírálás oka** mezőt is ki kell töltenie.  

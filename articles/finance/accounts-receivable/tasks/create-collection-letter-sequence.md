@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a317fba4f30ab9fefe6b12637d53fda141d354bf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f76f6539e8f318b75c8ec8f53020eb7052ec45
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188878"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137922"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Fizetésifelszólítás-sorozat létrehozása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Használja ezt az útmutatót a fizetésifelszólítás-sorozat létrehozásához. Ez a feladat az USMF bemutatócéget használja.
 
@@ -42,7 +42,7 @@ Használja ezt az útmutatót a fizetésifelszólítás-sorozat létrehozásáho
 11. Adja meg a fizetési felszólítás feladásakor felszámolt díjat.
 12. A **Cikkáfacsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához. Válasszon a cikkhez áfacsoportot, ha a díj áfaköteles.  
 13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. A **Minimum lejárt egyenlege** mezőbe írja be azt a minimális lejárt egyenleget, amely a fizetési felszólítás elküldése előtt szükséges.
+14. A **Minimális késedelmes egyenleg** mezőbe írja be azt a minimális késedelmes egyenleget, amely a fizetési felszólítás elküldése előtt szükséges.
 15. A **Napok** mezőben Adja meg a türelmi napok számát. Ez az esedékességi határidő utáni napok száma, amíg fizetési felszólítás hozható létre. A számításhoz használt határidő a fizetési felszólítás fizetésifelszólítás-sorozatban lévő helyzetétől függ:
     - A türelmi időszak az első fizetési felszólításhoz a számla esedékességéhez igazodik.
     - A 2. fizetési felszólítás türelmi időszaka az előző fizetési felszólítás feladásától és nyomtatásától függ, ami a Fizetési felszólítás kódjának frissítése mezőtől függ, a Kintlévőségek paraméterei oldalon.  
