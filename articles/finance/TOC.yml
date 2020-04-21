@@ -24,7 +24,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: Frissítések alkalmazása helyszíni telepítésekhez
+                - name: Frissítések alkalmazása helyszíni telepítéseknél
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Szolgáltatásfrissítések konfigurálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
@@ -70,11 +70,11 @@
                   items:
                     - name: Új vagy módosult elemek a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.10-es verzió (2020. május)
+                    - name: Finance 10.0.10 (2020. május)
                       href: get-started/whats-new-changed-10-0-10.md
-                    - name: Finance 10.0.9-es verzió (2020. április)
+                    - name: Finance 10.0.9 (2020. április)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8-as verzió (2020. február)
+                    - name: Finance 10.0.8 (2020. február)
                       href: get-started/whats-new-changed-10-0-8.md
             - name: Eltávolított vagy elavult funkciók
               items:
@@ -958,6 +958,8 @@
                   href: general-ledger/tasks/set-up-withholding-tax.md
                 - name: Feladott áfatranzakciók megtekintése
                   href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                - name: Áfafizetés kód szerint jelentés nyomtatása
+                  href: general-ledger/print-sales-tax-payment-by-code-report.md
             - name: Könyvvizsgálati munkaterület
               items:
                 - name: Könyvvizsgálati irányelvszabályok
@@ -1952,6 +1954,8 @@
                       href: general-ledger/tax-engine-integration.md
                     - name: Adómotor kiterjesztése
                       href: general-ledger/extend-tax-engine-configurations.md
+                    - name: GTE hibaelhárítása
+                      href: localizations/tax-engine-trouble-shooting.md
                 - name: Adóküszöbértékekre vonatkozó GYIK
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: Készletmozgatások
@@ -2266,6 +2270,8 @@
               items:
                 - name: Hollandia – áttekintés
                   href: localizations/netherlands.md
+                - name: Áfabevallás
+                  href: localizations/emea-nl-VAT-declaration.md
                 - name: Elektronikus adóbevallások (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
@@ -2582,6 +2588,8 @@
                   href: localizations/switzerland.md
                 - name: Vevői kifizetések importálása ESR-ben
                   href: localizations/emea-che-esr-customer-payments-import.md
+                - name: Svájci QR-számlák
+                  href: localizations/emea-che-swiss-qr-bills.md
             - name: Thaiföld
               items:
                 - name: Thaiföld – áttekintés
@@ -2724,7 +2732,7 @@
                   href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
                 - name: Kompenzációs folyamat meghatározása és eredmények kiszámítása
                   href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-                - name: Kompenzációtervek feldolgozása
+                - name: Kompenzációs konstrukciók feldolgozása
                   href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
             - name: Juttatások kezelése
               items:
@@ -2788,25 +2796,33 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
                 - name: Dokumentumtípusok beállítása az I-9-es űrlaphoz
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (ADA) betartása
+                - name: A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (Americans with Disabilities Act – ADA) betartása
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
                 - name: Dolgozói szállások kezelése
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-        - name: Intelligencia
+        - name: Jelentéskészítés és Power BI-integrációk
           items:
-            - name: Intelligencia kezdőlapja
+            - name: Jelentéskészítés és elemzések a Power BI szolgáltatással
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Adathozzáférés és jelentéskészítés
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Személyre szabás a PowerBI.com segítségével
+              items:
+                - name: A PowerBI.com integrációján keresztül elérhető funkciók
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: PowerBI.com tartalmának rögzítése
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Elemzési munkaterületek kiválasztása PowerBI.com felületéről
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Power BI-tartalom
               items:
                 - name: Power BI-tartalom kezdőlapja
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Tényleges – költségvetés szerinti
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Előnyök
+                - name: Juttatások
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Készpénzáttekintés Power BI tartalom
+                - name: Készpénzáttekintés – Power BI tartalom
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: Pénzügyi igazgatói áttekintés
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/finance/toc.json
@@ -2816,12 +2832,10 @@
                   href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Költségkönyvelési elemzés
                   items:
-                    - name: Költségkönyvelés elemzése Power BI-tartalom
+                    - name: Költségkönyvelés elemzése – Power BI-tartalom
                       href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
-                    - name: Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez
+                    - name: Biztonság beállítása a költségkönyvelés elemzéséhez – Power BI-tartalom
                       href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Költségkezelés
-                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Követelések és beszedések kezelése
                   href: accounts-receivable/credit-collections-power-bi.md
                 - name: Alkalmazotti kompetenciák és fejlődés
@@ -2842,22 +2856,24 @@
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Gyakorlatkezelés
                   href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Termelési teljesítmény
-                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Beszerzési és ráfordítási elemzés
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Toborzás
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 'Kiskereskedelmi csatorna teljesítménye '
-                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/finance/toc.json
                 - name: Értékesítési és jövedelmezőségi teljesítmény
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Szállítói kifizetések
                   href: accounts-payable/Vendor-payments-workspace.md
-                - name: Raktári teljesítmény
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/finance/toc.json
                 - name: Munkaerő-mutatók
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+            - name: Elemzési munkaterületek
+              items:
+                - name: Elemzési munkaterületek (Power BI Embedded használatával)
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
+                - name: Power BI Embedded-integráció
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Beágyazott jelentések testreszabása az elemzési munkaterületeken
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Jelentésdokumentumok készítése és nyomtatása
               items:
                 - name: Jelentésdokumentum-készítési szolgáltatások áttekintése
@@ -2866,6 +2882,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: SSRS beállítása helyszíni telepítésekhez
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
+                - name: Alapértelmezett jelentéskészítési gyakorlatok IaaS-környezetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
                 - name: Nyomtatás
                   items:
                     - name: Dokumentumnyomtatás áttekintése
@@ -2873,21 +2891,45 @@
                     - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
                     - name: A dokumentumirányítási ügynök frissítése
-                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
                     - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
                     - name: 'Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
                     - name: A Dokumentumirányítási ügynök futtatása Windows-szolgáltatásként
                       href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/finance/toc.json
-                - name: Segítség az időtúllépés megakadályozására hosszú ideig futó jelentések esetén
-                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
                 - name: Az SQL Server Reporting Services elérhető jelentései
                   href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/finance/toc.json
-                - name: Jelentési megoldások létrehozása
-                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
                 - name: Jelentésterv-sablonok telepítése
                   href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json
+            - name: Hozzáértő felhasználók kezelésére használatos eszközök
+              items:
+                - name: Power BI integrációja az Entitástárral
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
+                - name: Problémák megoldása az Entitástár karbantartása után
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: PowerBI.com-integráció konfigurálása
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Saját adatbázis használata
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
+                - name: PDF-dokumentumok előnézetének megtekintése PDF-megjelenítő használatával
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
+            - name: Létrehozási és kiterjesztési megoldások fejlesztői eszközei
+              items:
+                - name: 'Elemzések, összesítő mértékek és KPI-k modellezése'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/finance/toc.json
+                - name: Adatösszesítés modellezése
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
+                - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
+                - name: Elemzési jelentések létrehozása Power BI Desktop használatával
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
+                - name: Elemzési munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
+                - name: Jelentési megoldások létrehozása
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
                 - name: Az alkalmazáscsomag jelentéseinek testreszabása kiterjesztésekkel
                   href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/finance/toc.json
                 - name: Az alkalmazáscsomag jelentési adathalmazainak kibontása
@@ -2896,28 +2938,28 @@
                   href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/finance/toc.json
                 - name: Egyedi tervezésű üzleti dokumentumok létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/finance/toc.json
-                - name: PDF-dokumentumok előnézete beágyazott megjelenítővel
-                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
-            - name: Elektronikus jelentéskészítés
+                - name: Segítség az időtúllépés megakadályozására hosszú ideig futó jelentések esetén
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
+        - name: Elektronikus jelentéskészítés
+          items:
+            - name: Elektronikus jelentéskészítés áttekintése
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Konfigurációk
               items:
-                - name: Elektronikus jelentéskészítés áttekintése
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációk
+                - name: Konfigurációk létrehozása
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+                - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
                   items:
-                    - name: Konfigurációk létrehozása
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-                    - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
+                    - name: Tartományspecifikus adatmodell kialakítása
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Alkalmazásspecifikus metaadatok előkészítése
                       items:
-                        - name: Tartományspecifikus adatmodell kialakítása
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
-                        - name: Alkalmazásspecifikus metaadatok előkészítése
-                          items:
-                            - name: (ER) RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                            - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                            - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
+                        - name: (ER) RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
+                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Modell-leképezések meghatározása és adatforrások kiválasztása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
                         - name: Adatmodell leképezése kiválasztott adatforrásokra
@@ -2934,500 +2976,466 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: A formátum frissítése a formátum új alapverziójának elfogadásával
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-                - name: Képletszerkesztők az Elektronikus jelentéskészítésben
+            - name: Képletszerkesztők az Elektronikus jelentéskészítésben
+              items:
+                - name: Képletszerkesztő
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                - name: Továbbfejlesztett képletszerkesztő
+                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+            - name: Képletnyelv és függvények
+              items:
+                - name: Képlet nyelve
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Funkciók
                   items:
-                    - name: Képletszerkesztő
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
-                    - name: Továbbfejlesztett képletszerkesztő
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                - name: Képletnyelv és függvények
-                  items:
-                    - name: Képlet nyelve
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
-                    - name: Funkciók
+                    - name: Dátum és idő
                       items:
-                        - name: Dátum és idő
-                          items:
-                            - name: Dátum- és időfüggvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
-                            - name: AddDays
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
-                            - name: DateFormat
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
-                            - name: DateTimeFormat
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/finance/toc.json
-                            - name: DateTimeValue
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: DateToDateTime
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: DateValue
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: DayOfYear
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/finance/toc.json
-                            - name: Days
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/finance/toc.json
-                            - name: Now
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/finance/toc.json
-                            - name: NullDate
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/finance/toc.json
-                            - name: NullDateTime
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: SessionNow
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
-                            - name: SessionToday
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
+                        - name: Dátum- és időfüggvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
+                        - name: AddDays
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: DateFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
+                        - name: DateTimeFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/finance/toc.json
+                        - name: DateTimeValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
+                        - name: DateToDateTime
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
+                        - name: DateValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
+                        - name: DayOfYear
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/finance/toc.json
+                        - name: Days
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/finance/toc.json
+                        - name: Now
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/finance/toc.json
+                        - name: NullDate
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/finance/toc.json
+                        - name: NullDateTime
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/finance/toc.json
+                        - name: SessionNow
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
+                        - name: SessionToday
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
+                    - name: List
+                      items:
+                        - name: Listafüggvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
+                        - name: AllItems
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/finance/toc.json
+                        - name: AllItemsQuery
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/finance/toc.json
+                        - name: Count
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
+                        - name: EmptyList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
+                        - name: Felsorolás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
+                        - name: Szűrés
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
+                        - name: Első
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
+                        - name: FirstOrNull
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
+                        - name: Index
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
+                        - name: IsEmpty
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
-                          items:
-                            - name: Listafüggvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
-                            - name: AllItems
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/finance/toc.json
-                            - name: AllItemsQuery
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/finance/toc.json
-                            - name: Count
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
-                            - name: EmptyList
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                            - name: Enumerate
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                            - name: Filter
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
-                            - name: First
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
-                            - name: FirstOrNull
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
-                            - name: Index
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
-                            - name: IsEmpty
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                            - name: List
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-                            - name: ListOfFields
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-                            - name: ListOfFirstItem
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
-                            - name: OrderBy
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                            - name: Reverse
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
-                            - name: Split
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-                            - name: SplitList
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/finance/toc.json
-                            - name: SplitListByLimit
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/finance/toc.json
-                            - name: StringJoin
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-                            - name: Where
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/finance/toc.json
-                        - name: Logikai
-                          items:
-                            - name: Logikai függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/finance/toc.json
-                            - name: And
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
-                            - name: Case
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
-                            - name: If
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
-                            - name: Not
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
-                            - name: Or
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
-                            - name: ValueIn
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
-                        - name: Matematikai
-                          items:
-                            - name: Matematikai függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/finance/toc.json
-                            - name: Abs
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/finance/toc.json
-                            - name: Teljesítmény
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/finance/toc.json
-                            - name: Kerekítés
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/finance/toc.json
-                            - name: Lefelé kerekítés
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/finance/toc.json
-                            - name: Felfelé kerekítés
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/finance/toc.json
-                        - name: Rekordok
-                          items:
-                            - name: Rekordfüggvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
-                            - name: ÜresRekord
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
-                            - name: NullContainer
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
-                        - name: Szöveg
-                          items:
-                            - name: Szöveges függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
-                            - name: Char
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                            - name: Összekapcsolás
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
-                            - name: Formátum
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
-                            - name: GetEnumValueByName
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
-                            - name: GuidValue
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: JsonValue
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: Left
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/finance/toc.json
-                            - name: Len
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/finance/toc.json
-                            - name: Lower
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
-                            - name: Mid
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
-                            - name: NumberFormat
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-                            - name: NumeralsToText
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/finance/toc.json
-                            - name: PadLeft
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/finance/toc.json
-                            - name: QrCode
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-                            - name: Replace
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/finance/toc.json
-                            - name: Right
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/finance/toc.json
-                            - name: Text
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-                            - name: Translate
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/finance/toc.json
-                            - name: Trim
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/finance/toc.json
-                            - name: Upper
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/finance/toc.json
-                        - name: Adatgyűjtemény
-                          items:
-                            - name: Adatgyűjtési függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/finance/toc.json
-                            - name: CollectedList
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/finance/toc.json
-                            - name: CountIF
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/finance/toc.json
-                            - name: CountIFs
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/finance/toc.json
-                            - name: FormatElementName
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/finance/toc.json
-                            - name: SumIF
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/finance/toc.json
-                            - name: SumIFs
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/finance/toc.json
-                        - name: Egyéb
-                          items:
-                            - name: Egyéb (üzleti területre jellemző) függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/finance/toc.json
-                            - name: CH_Bank_Mod_10
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
-                            - name: CN_GBT_AdditionalDimensionID
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/finance/toc.json
-                            - name: ConvertCurrency
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/finance/toc.json
-                            - name: CurCredRef
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
-                            - name: FA_Balance
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
-                            - name: FA_Sum
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
-                            - name: GetCurrentCompany
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/finance/toc.json
-                            - name: ISOCredRef
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/finance/toc.json
-                            - name: IsValidCharacterISO7064
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/finance/toc.json
-                            - name: Mod_97
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/finance/toc.json
-                            - name: NumSeqValue
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: RoundAmount
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/finance/toc.json
-                            - name: TableName2ID
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/finance/toc.json
-                        - name: Típuskonverzió
-                          items:
-                            - name: Típuskonverziós függvények
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Típus: Int64Value'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Típus: IntValue'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Típus: NumberValue'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Típus: Value'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dátum és idő: DateTimeValue'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dátum- és idő: DateToDateTime'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dátum és idő: DateValue'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Lista: List'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Lista: ListOfFields'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Lista: Split'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Lista: StringJoin'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Szöveg: Char'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Szöveg: GuidValue'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Szöveg: NumberFormat'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Szöveg: QrCode'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Szöveg: Text'
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-                - name: ER modell-leképezés kezelése külön ER-konfigurációkban
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListJoin
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
+                        - name: ListOfFields
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
+                        - name: ListOfFirstItem
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
+                        - name: OrderBy
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
+                        - name: Sztornírozás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
+                        - name: Felosztás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
+                        - name: SplitList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/finance/toc.json
+                        - name: SplitListByLimit
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/finance/toc.json
+                        - name: StringJoin
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
+                        - name: Where
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/finance/toc.json
+                    - name: Logikai
+                      items:
+                        - name: Logikai függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/finance/toc.json
+                        - name: And
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
+                        - name: Case
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: If
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
+                        - name: Not
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
+                        - name: Or
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: ValueIn
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                    - name: Matematikai
+                      items:
+                        - name: Matematikai függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/finance/toc.json
+                        - name: Abs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/finance/toc.json
+                        - name: Teljesítmény
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/finance/toc.json
+                        - name: Kerekítés
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/finance/toc.json
+                        - name: Lefelé kerekítés
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/finance/toc.json
+                        - name: Felfelé kerekítés
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/finance/toc.json
+                    - name: Rekordok
+                      items:
+                        - name: Rekordfüggvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
+                        - name: ÜresRekord
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
+                        - name: NullContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
+                    - name: Szöveg
+                      items:
+                        - name: Szöveges függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
+                        - name: Char
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
+                        - name: Összekapcsolás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
+                        - name: GetEnumValueByName
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                        - name: GuidValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
+                        - name: JsonValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/finance/toc.json
+                        - name: Left
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/finance/toc.json
+                        - name: Len
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/finance/toc.json
+                        - name: Lower
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
+                        - name: Mid
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NumberFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
+                        - name: NumeralsToText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/finance/toc.json
+                        - name: PadLeft
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/finance/toc.json
+                        - name: QrCode
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
+                        - name: Replace
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/finance/toc.json
+                        - name: Right
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/finance/toc.json
+                        - name: Text
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
+                        - name: Translate
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/finance/toc.json
+                        - name: Trim
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/finance/toc.json
+                        - name: Upper
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/finance/toc.json
+                    - name: Adatgyűjtemény
+                      items:
+                        - name: Adatgyűjtési függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/finance/toc.json
+                        - name: CollectedList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/finance/toc.json
+                        - name: CountIF
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/finance/toc.json
+                        - name: CountIFs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/finance/toc.json
+                        - name: FormatElementName
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/finance/toc.json
+                        - name: SumIF
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/finance/toc.json
+                        - name: SumIFs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/finance/toc.json
+                    - name: Egyéb
+                      items:
+                        - name: Egyéb (üzleti területre jellemző) függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/finance/toc.json
+                        - name: CH_Bank_Mod_10
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
+                        - name: CN_GBT_AdditionalDimensionID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/finance/toc.json
+                        - name: ConvertCurrency
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/finance/toc.json
+                        - name: CurCredRef
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
+                        - name: FA_Balance
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
+                        - name: FA_Sum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
+                        - name: GetCurrentCompany
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/finance/toc.json
+                        - name: ISOCredRef
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/finance/toc.json
+                        - name: IsValidCharacterISO7064
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/finance/toc.json
+                        - name: Mod_97
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/finance/toc.json
+                        - name: NumSeqValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/finance/toc.json
+                        - name: RoundAmount
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/finance/toc.json
+                        - name: TableName2ID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/finance/toc.json
+                    - name: Típuskonverzió
+                      items:
+                        - name: Típuskonverziós függvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Típus: Int64Value'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Típus: IntValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Típus: NumberValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Típus: Value'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Dátum és idő: DateTimeValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Dátum- és idő: DateToDateTime'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Dátum és idő: DateValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Lista: List'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Lista: ListOfFields'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Lista: Split'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Lista: StringJoin'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Szöveg: Char'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Szöveg: GuidValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Szöveg: NumberFormat'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Szöveg: QrCode'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Szöveg: Text'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
+            - name: ER modell-leképezés kezelése külön ER-konfigurációkban
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+            - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+            - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
+              href: ../finance/localizations/enhanced-filtering-global-repo.md
+            - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
+              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+            - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
+              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+            - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
+              items:
+                - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
+            - name: Képek és alakzatok beágyazása
+              items:
+                - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                - name: Példa képek és alakzatok beágyazására
+                  items:
+                    - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
+              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+            - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
+            - name: ER-megoldás tervezése pénzügyi dimenziók használatára
+              items:
+                - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+            - name: Leltározás és összegzés a létrehozott kimenetből származó adatok használatával történő végrehajtására alkalmas ER-formátumok tervezése
+              items:
+                - name: Formátumok létrehozása leltározás és összegzés végrehajtásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                - name: Számítások használata a számlálás és összegzés kimenetének generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok futtatása leltározás és összegzés végrehajtásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+            - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
+              items:
+                - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+            - name: Dokumentumkezelési fájlok használata formátumkimenetekben
+              items:
+                - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához ER-kimenetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER-kimenetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok létrehozása dokumentumkezelési fájlok használatára ER-kimenetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+            - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
+              items:
+                - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
+                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk tervezése dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/finance/toc.json
+                - name: Modellek és feltérképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/finance/toc.json
+                - name: Alkalmazásadatokkal rendelkező dokumentumok létrehozása
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/finance/toc.json
+            - name: Adatok importálása bejövő fájlokból ER-megoldások használatával
+              items:
+                - name: Bejövő dokumentumok elemzése különböző formátumokban
+                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/finance/toc.json
+                - name: Manuálisan kiválasztott fájlokból történő adatimportálás konfigurálása
+                  items:
+                    - name: Konfigurációk létrehozása adatok külső XML-fájlból történő importálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
+                - name: SharePoint felületén tárolt fájlokból származó adatok kötegelt módban történő importálásának konfigurálása
+                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
+                - name: Fájlok importálása XML-formátumban
+                  items:
+                    - name: Fájlok importálása XML-formátumban opcionális attribútumokkal
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
+                    - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+            - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
+              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
+            - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+            - name: Konfigurációs életciklus
+              items:
+                - name: Konfigurációk életciklusának kezelése
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
+                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk importálása
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
-                  href: ../finance/localizations/enhanced-filtering-global-repo.md
-                - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
-                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
-                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
-                - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                - name: ER-konfigurációk letöltése az RCS-tárházból
                   items:
-                    - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
-                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-                - name: Képek és alakzatok beágyazása
-                  items:
-                    - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                    - name: Példa képek és alakzatok beágyazására
-                      items:
-                        - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                        - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
-                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
-                - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: ER-megoldás tervezése pénzügyi dimenziók használatára
-                  items:
-                    - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                    - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                    - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                    - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-                - name: Leltározás és összegzés a létrehozott kimenetből származó adatok használatával történő végrehajtására alkalmas ER-formátumok tervezése
-                  items:
-                    - name: Formátumok létrehozása leltározás és összegzés végrehajtásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                    - name: Számítások használata a számlálás és összegzés kimenetének generálásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok futtatása leltározás és összegzés végrehajtásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
-                - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
-                  items:
-                    - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-                - name: Dokumentumkezelési fájlok használata formátumkimenetekben
-                  items:
-                    - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához ER-kimenetekben
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                    - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER-kimenetekben
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok létrehozása dokumentumkezelési fájlok használatára ER-kimenetekben
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
-                  items:
-                    - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
-                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk tervezése dokumentumoknak alkalmazásadatokkal történő létrehozásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/finance/toc.json
-                    - name: Modellek és feltérképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/finance/toc.json
-                    - name: Formátumok módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/finance/toc.json
-                    - name: Alkalmazásadatokkal rendelkező dokumentumok létrehozása
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/finance/toc.json
-                - name: Adatok importálása bejövő fájlokból ER-megoldások használatával
-                  items:
-                    - name: Bejövő dokumentumok elemzése különböző formátumokban
-                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/finance/toc.json
-                    - name: Manuálisan kiválasztott fájlokból történő adatimportálás konfigurálása
-                      items:
-                        - name: Konfigurációk létrehozása adatok külső XML-fájlból történő importálásához
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
-                    - name: SharePoint felületén tárolt fájlokból származó adatok kötegelt módban történő importálásának konfigurálása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
-                    - name: Fájlok importálása XML-formátumban
-                      items:
-                        - name: Fájlok importálása XML-formátumban opcionális attribútumokkal
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
-                        - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-                - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
-                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-                - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
-                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációs életciklus
-                  items:
-                    - name: Konfigurációk életciklusának kezelése
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
-                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk importálása
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: ER-konfigurációk letöltése az RCS-tárházból
-                      items:
-                        - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációk importálása RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-                - name: Oktatóanyagok
-                  items:
-                    - name: A JOIN használata az adatforrások esetében a több alkalmazástáblából származó adatok megszerzéséhez
-                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
-                    - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
-                    - name: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
-                    - name: Az ER-formátum paramétereinek beállítása jogi személyenként
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
-                    - name: Az ER formátumú elemek végrehajtásának elhalasztása
-                      items:
-                        - name: Egy szekvenciaelem végrehajtásának elhalasztása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                        - name: Egy XML-elem végrehajtásának elhalasztása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
-                - name: 'Elektronikus jelentéskészítési megoldások használata a következőben: Finance and Operations'
-                  items:
-                    - name: Keretrendszer konfigurálása
-                      items:
-                        - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
-                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
-                        - name: Elektronikus jelentéskészítési sablonok mentése és helyreállítása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Célok
-                      items:
-                        - name: Célok áttekintése
-                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
-                        - name: Céltípusok
-                          items:
-                            - name: Archív cél
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
-                            - name: E-mail célja
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
-                            - name: Fájl célja
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
-                            - name: Power BI cél
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
-                            - name: Nyomtatási cél
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
-                            - name: Képernyő célja
-                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
-                        - name: Célok konfigurálása
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Egy ER-formátumra mutató hivatkozás beállítása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: Létrehozott jelentések automatikus ellenőrzése
-                      items:
-                        - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
-                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                        - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
-                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                        - name: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                    - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
-                      items:
-                        - name: Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához
-                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
-                        - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                    - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                    - name: Üzleti dokumentumok kezelése
-                      items:
-                        - name: Üzletidokumentum-kezelés – áttekintés
-                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                        - name: Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban
-                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-                        - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
-                - name: ER-keretrendszer API
-                  items:
-                    - name: Elektronikus jelentéskészítési funkciók listájának kibővítése
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus jelentési keretrendszer API módosításai az Application update 7.3 számára
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-                    - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
-            - name: Beágyazott analitikai megoldások
+                    - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurációk importálása RCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+            - name: Oktatóanyagok
               items:
-                - name: Munkaterületekre beágyazott Power BI
-                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Power BI Embedded-integráció
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Beágyazott jelentések testreszabása az elemzési munkaterületeken
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json
-            - name: Személyre szabás a PowerBI.com segítségével
+                - name: A JOIN használata az adatforrások esetében a több alkalmazástáblából származó adatok megszerzéséhez
+                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+                - name: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                - name: Az ER formátumú elemek végrehajtásának elhalasztása
+                  items:
+                    - name: Egy szekvenciaelem végrehajtásának elhalasztása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                    - name: Egy XML-elem végrehajtásának elhalasztása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+            - name: 'Elektronikus jelentéskészítési megoldások használata a következőben: Finance and Operations'
               items:
-                - name: A Power BI-integráción keresztül elérhető funkciók és szolgáltatások
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Power BI-jelentések rögzítése munkaterületekhez
-                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Elemzési munkaterületek kiválasztása PowerBI.com felületről
-                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
-            - name: Létrehozási és kiterjesztési megoldások eszközei
+                - name: Keretrendszer konfigurálása
+                  items:
+                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronikus jelentéskészítési sablonok mentése és helyreállítása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: Célok
+                  items:
+                    - name: Célok áttekintése
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Céltípusok
+                      items:
+                        - name: Archív cél
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                        - name: E-mail célja
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                        - name: Fájl célja
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                        - name: Power BI cél
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                        - name: Nyomtatási cél
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                        - name: Képernyő célja
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                    - name: Célok konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: Egy ER-formátumra mutató hivatkozás beállítása
+                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
+                - name: Létrehozott jelentések automatikus ellenőrzése
+                  items:
+                    - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
+                    - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
+                - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
+                  items:
+                    - name: Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
+                    - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
+                - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
+                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: Üzleti dokumentumok kezelése
+                  items:
+                    - name: Üzletidokumentum-kezelés – áttekintés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
+                    - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+            - name: Elektronikus jelentéskészítési keretrendszer API
               items:
-                - name: 'Elemzések, összesítő mértékek és KPI-k modellezése'
-                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/finance/toc.json
-                - name: Elemzési jelentések létrehozása Power BI Desktop használatával
-                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Adatösszesítés modellezése
-                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
-                - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
-                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
-                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Analitikai munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával
-                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
-            - name: Hozzáértő felhasználók kezelésére használatos eszközök
-              items:
-                - name: Power BI integrációja az Entitástárral
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
-                - name: Problémák megoldása az Entitástár karbantartása után
-                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: A munkaterületek Power BI-integrációjának konfigurálása
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Használja saját adatbázisát
-                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
+                - name: Beépített funkciók listájának kibővítése
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
+                - name: API módosítások az Application update 10.0.11-es verziójához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+                - name: API módosítások az Application update 7.3-as verziójához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
         - name: Mobilalkalmazás
           items:
             - name: Mobilalkalmazás kezdőoldala
