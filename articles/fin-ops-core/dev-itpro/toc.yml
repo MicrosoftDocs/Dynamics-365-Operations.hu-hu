@@ -12,9 +12,11 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Új vagy módosult elemek a Platform frissítésekben
               items:
-                - name: Új vagy módosult elemek a Platform frissítések kezdőlapján
+                - name: Új vagy módosult elemek a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (2020. május)
+                - name: Platformfrissítés a 10.0.11-es verzióhoz (2020. július)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Platformfrissítés a 10.0.10-es verzióhoz (2020. május)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (2020. április)
                   href: get-started/whats-new-platform-update-33.md
@@ -322,15 +324,13 @@
                       href: data-entities/copy-configuration.md
                     - name: Konfigurációs adatcsomagok
                       href: data-entities/configuration-data-packages.md
-                    - name: Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)
+                    - name: Konfigurációs adatcsomagok (csak 2017. júliusi kiadás esetén)
                       href: data-entities/configuration-data-packages.md
-                    - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurációs adatsablonok
                   href: data-entities/configuration-data-templates.md
                 - name: Entitás változásainak nyomon követése
                   href: data-entities/entity-change-track.md
-                - name: Normál adatentitásokkal kapcsolatos információk
+                - name: Normál adatentitásokkal kapcsolatos információk keresése
                   href: data-entities/data-entities-report.md
                 - name: Adatsablonok több munkalappal
                   href: data-entities/excel-template-multiple.md
@@ -374,7 +374,7 @@
                   href: data-entities/third-party-service-test.md
                 - name: 'Csak olvasható entitások létrehozása, amelyek elérhetővé teszik a pénzügyi dimenziókat'
                   href: financial/read-only-entity-financial.md
-            - name: Használja saját adatbázisát
+            - name: Saját adatbázis használata
               href: analytics/export-entities-to-your-own-database.md
             - name: Automatizált entitástár-frissítés
               href: analytics/automated-entity-store-refresh.md
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Adatkezelési hibaleírások
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Azure Data Lake – áttekintés
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations alkalmazások az Azure Data Lake szolgáltatásban
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
+              href: data-entities/entity-store-data-lake.md
         - name: Adatbázis-áthelyezési műveletek
           items:
             - name: Áttekintés
@@ -482,38 +490,46 @@
               items:
                 - name: Helyszíni telepítés kezdőlapja
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Helyszíni telepítés áttekintése
-                  href: deployment/on-premises-overview.md
-                - name: Helyszíni telepítések tervezése és előkészítése
-                  href: deployment/plan-onprem-deployment.md
-                - name: Hardver méretezésére vonatkozó követelmények
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Helyszíni projektek beállítása
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Helyszíni telepítések előkészítése
+                  items:
+                    - name: Helyszíni telepítés áttekintése
+                      href: deployment/on-premises-overview.md
+                    - name: Helyszíni telepítések tervezése és előkészítése
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Hardver méretezésére vonatkozó követelmények
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Helyszíni környezetek beállítása és telepítése
                   items:
-                    - name: Helyszíni környezetek beállítása és telepítése kezdőlap
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Helyszíni környezetek telepítése (Platform update 12-es és újabb verziókon)
+                    - name: Helyszíni projektek beállítása az LCS rendszerben
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Helyszíni környezetek beállítása és telepítése
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Helyszíni környezetek telepítése (Platform update 8-on és 11-en)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
                       href: deployment/deploy-retail-onprem.md
+                    - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Környezet karbantartása
+                  items:
+                    - name: Frissítések alkalmazása helyszíni telepítéshez
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Tanúsítványváltás
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Kliens internetkapcsolata
+                      href: user-interface/client-disconnected.md
+                    - name: Proxyk konfigurálása a helyszíni környezetekhez
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Helyszíni diagnosztika
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-integráció helyszíni környezetekkel
+                      href: analytics/entity-store-on-prem.md
+                    - name: Környezetek újrakonfigurálása
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Helyszíni telepítések újratelepítése
+                      href: deployment/redeploy-on-prem.md
+                    - name: AOS-csomópont eltávolítása és újratelepítése
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Ugyanazon AD FS-példány újrahasznosítása több környezet esetén
                       href: deployment/onprem-reuseadfs.md
-                - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-integráció helyszíni környezetekkel
-                  href: analytics/entity-store-on-prem.md
-                - name: Proxyk konfigurálása a helyszíni környezetekhez
-                  href: deployment/onprem-reverseproxy.md
-                - name: Frissítések alkalmazása helyszíni telepítéshez
-                  href: deployment/apply-updates-on-premises.md
-                - name: Helyszíni diagnosztikák
-                  href: deployment/on-premises-diagnostics.md
-                - name: Helyszíni telepítések újratelepítése
-                  href: deployment/redeploy-on-prem.md
                 - name: Helyi ügynök
                   items:
                     - name: AD FS Office 365 kompatibilitása
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: A helyi ügynök frissítése
                       href: lifecycle-services/update-local-agent.md
-                - name: Környezetek újrakonfigurálása
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Kliens internetkapcsolata
-                  href: user-interface/client-disconnected.md
-                - name: Hibaelhárítás helyszíni telepítéseknél
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Tanúsítványváltás
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Hibaelhárítás
+                  items:
+                    - name: Hibaelhárítás helyszíni telepítéseknél
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához
+                      href: deployment/onprem-tsg-implementations.md
             - name: Egyéni kód telepítése
               items:
                 - name: Telepíthető csomagok létrehozása a modellekhez
@@ -928,9 +940,11 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Kompatibilitástörő változások
                       href: extensibility/breaking-changes.md
+                    - name: Kompatibilitás-ellenőrző eszköz
+                      href: extensibility/compatibility-checker-tool.md
             - name: Teljesítmény
               items:
-                - name: Nyomon követés a Trace parser használatával
+                - name: Nyomon követés a Trace Parser használatával
                   href: perf-test/trace-trace-tutorial.md
                 - name: Egyfelhasználós tesztelés a Feladatrögzítő és a Teljesítmény SDK segítségével
                   href: perf-test/single-user-test-perf-sdk.md
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: OData metaadat-gyorsítótárának létrehozása az AOS indításakor
               href: sysadmin/odata-warmup.md
+            - name: Azure Key Vault-kliens beállítása
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: Frissítések és gyorsjavítások
           items:
             - name: Frissítések és gyorsjavítások erőforrásai
@@ -1538,11 +1554,11 @@
                   href: migration-upgrade/compile-considerations.md
             - name: Frissítés egy legutóbbi frissítésre (helyszíni)
               items:
-                - name: Frissítések alkalmazása helyszíni telepítésekhez
+                - name: Frissítések alkalmazása helyszíni telepítéseknél
                   href: deployment/apply-updates-on-premises.md
                 - name: Helyszíni telepítés újratelepítése
                   href: deployment/redeploy-on-prem.md
-                - name: 'Helyszíni 7.x verzió 8.1 verzióra való, helyben történő frissítése'
+                - name: Helyben történő frissítési folyamat helyszíni környezetekben
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Gyorsjavítások
               items:
