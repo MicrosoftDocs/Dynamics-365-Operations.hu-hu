@@ -2,7 +2,7 @@
 title: Az aktuális készlet költségértékeinek korrekciója
 description: Az Aktuális készlet korrekciója lapon beállíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAdjInventOnHand
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
@@ -19,28 +19,28 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2417a278e58f4309873ab4d33b0d1f1686081951
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1fc97db0f0b637e27ece904fe24e91a92044bc17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556115"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208800"
 ---
-# <a name="adjust-on-hand-inventory-cost-values"></a><span data-ttu-id="0eada-103">Az aktuális készlet költségértékeinek korrekciója</span><span class="sxs-lookup"><span data-stu-id="0eada-103">Adjust on-hand inventory cost values</span></span>
+# <a name="adjust-on-hand-inventory-cost-values"></a><span data-ttu-id="59bcd-103">Az aktuális készlet költségértékeinek korrekciója</span><span class="sxs-lookup"><span data-stu-id="59bcd-103">Adjust on-hand inventory cost values</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0eada-104">Az Aktuális készlet korrekciója lapon beállíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.</span><span class="sxs-lookup"><span data-stu-id="0eada-104">Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.</span></span>
+<span data-ttu-id="59bcd-104">Az Aktuális készlet korrekciója lapon beállíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.</span><span class="sxs-lookup"><span data-stu-id="59bcd-104">Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.</span></span>
 
-<span data-ttu-id="0eada-105">Az **Aktuális készlet korrekciója** oldalon módosíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.</span><span class="sxs-lookup"><span data-stu-id="0eada-105">You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run.</span></span> <span data-ttu-id="0eada-106">**Megjegyzés**: az **Aktuális készlet korrekciója** oldalon a **Zárás és helyesbítés lapon** válasszon ki egy befejezett készletzárási folyamatrekordot, majd kattintson a **Korrekció** &gt; **Aktuális** elemre.</span><span class="sxs-lookup"><span data-stu-id="0eada-106">**Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**.</span></span> <span data-ttu-id="0eada-107">**Példa:** Februárban a következő tranzakciók voltak:</span><span class="sxs-lookup"><span data-stu-id="0eada-107">**Example:** You have the following transactions in February:</span></span>
+<span data-ttu-id="59bcd-105">Az **Aktuális készlet korrekciója** oldalon módosíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.</span><span class="sxs-lookup"><span data-stu-id="59bcd-105">You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run.</span></span> <span data-ttu-id="59bcd-106">**Megjegyzés**: az **Aktuális készlet korrekciója** oldalon a **Zárás és helyesbítés lapon** válasszon ki egy befejezett készletzárási folyamatrekordot, majd kattintson a **Korrekció** &gt; **Aktuális** elemre.</span><span class="sxs-lookup"><span data-stu-id="59bcd-106">**Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**.</span></span> <span data-ttu-id="59bcd-107">**Példa:** Februárban a következő tranzakciók voltak:</span><span class="sxs-lookup"><span data-stu-id="59bcd-107">**Example:** You have the following transactions in February:</span></span>
 
--   <span data-ttu-id="0eada-108">Február 1.: pénzügyi bevételezés készletre, 2 mennyiséggel, 10,00 USD áron</span><span class="sxs-lookup"><span data-stu-id="0eada-108">February 1: An inventory financial receipt for a quantity of 2 at a cost of USD 10.00</span></span>
--   <span data-ttu-id="0eada-109">Február 5.: pénzügyi bevételezés készletre, 1 mennyiséggel, 13,00 USD áron</span><span class="sxs-lookup"><span data-stu-id="0eada-109">February 5: An inventory financial receipt for a quantity of 1 at a cost of USD 13.00</span></span>
--   <span data-ttu-id="0eada-110">Február 19.: pénzügyi kiadás készletről, 1 mennyiséggel, 11, 00 USD mozgóátlagon alapuló önköltségi áron</span><span class="sxs-lookup"><span data-stu-id="0eada-110">February 19: An inventory financial issue for a quantity of 1 at a running average cost of USD 11.00</span></span>
+-   <span data-ttu-id="59bcd-108">Február 1.: pénzügyi bevételezés készletre, 2 mennyiséggel, 10,00 USD áron</span><span class="sxs-lookup"><span data-stu-id="59bcd-108">February 1: An inventory financial receipt for a quantity of 2 at a cost of USD 10.00</span></span>
+-   <span data-ttu-id="59bcd-109">Február 5.: pénzügyi bevételezés készletre, 1 mennyiséggel, 13,00 USD áron</span><span class="sxs-lookup"><span data-stu-id="59bcd-109">February 5: An inventory financial receipt for a quantity of 1 at a cost of USD 13.00</span></span>
+-   <span data-ttu-id="59bcd-110">Február 19.: pénzügyi kiadás készletről, 1 mennyiséggel, 11, 00 USD mozgóátlagon alapuló önköltségi áron</span><span class="sxs-lookup"><span data-stu-id="59bcd-110">February 19: An inventory financial issue for a quantity of 1 at a running average cost of USD 11.00</span></span>
 
-<span data-ttu-id="0eada-111">Ez a cikk az elsőként be, elsőként ki FIFO készletmodellhez van beállítva, február 28-án történik a készletzárás.</span><span class="sxs-lookup"><span data-stu-id="0eada-111">This item was set up with the first in, first out (FIFO) inventory model, and inventory close was performed as of February 28.</span></span> <span data-ttu-id="0eada-112">A 11,00 USD értékű pénzügyi kiadási tranzakció a február 1-jei pénzügyi bevételezéssel szemben lesz kiegyenlítve, 1,00 USD lesz a korrekció.</span><span class="sxs-lookup"><span data-stu-id="0eada-112">The financial issue transaction of USD 11.00 will be settled against the financial receipt that is dated February 1, and an adjustment of USD 1.00 will be made.</span></span> <span data-ttu-id="0eada-113">A következő készletbevételezések ekkor nyitott készletmennyiségeket tartalmaznak:</span><span class="sxs-lookup"><span data-stu-id="0eada-113">The following inventory receipts will then contain open inventory quantities:</span></span>
+<span data-ttu-id="59bcd-111">Ez a cikk az elsőként be, elsőként ki FIFO készletmodellhez van beállítva, február 28-án történik a készletzárás.</span><span class="sxs-lookup"><span data-stu-id="59bcd-111">This item was set up with the first in, first out (FIFO) inventory model, and inventory close was performed as of February 28.</span></span> <span data-ttu-id="59bcd-112">A 11,00 USD értékű pénzügyi kiadási tranzakció a február 1-jei pénzügyi bevételezéssel szemben lesz kiegyenlítve, 1,00 USD lesz a korrekció.</span><span class="sxs-lookup"><span data-stu-id="59bcd-112">The financial issue transaction of USD 11.00 will be settled against the financial receipt that is dated February 1, and an adjustment of USD 1.00 will be made.</span></span> <span data-ttu-id="59bcd-113">A következő készletbevételezések ekkor nyitott készletmennyiségeket tartalmaznak:</span><span class="sxs-lookup"><span data-stu-id="59bcd-113">The following inventory receipts will then contain open inventory quantities:</span></span>
 
--   <span data-ttu-id="0eada-114">Febuár 1: mennyiség: 1, a költség 10,00 USD.</span><span class="sxs-lookup"><span data-stu-id="0eada-114">February 1: A quantity of 1 at a cost of USD 10.00</span></span>
--   <span data-ttu-id="0eada-115">Febuár 5: mennyiség: 1, a költség 13,00 USD.</span><span class="sxs-lookup"><span data-stu-id="0eada-115">February 5: A quantity of 1 at a cost of USD 13.00</span></span>
+-   <span data-ttu-id="59bcd-114">Febuár 1: mennyiség: 1, a költség 10,00 USD.</span><span class="sxs-lookup"><span data-stu-id="59bcd-114">February 1: A quantity of 1 at a cost of USD 10.00</span></span>
+-   <span data-ttu-id="59bcd-115">Febuár 5: mennyiség: 1, a költség 13,00 USD.</span><span class="sxs-lookup"><span data-stu-id="59bcd-115">February 5: A quantity of 1 at a cost of USD 13.00</span></span>
 
-<span data-ttu-id="0eada-116">Ahhoz, hogy ennek a két cikknek az árát 15,00 USD értékre lehessen beállítani, az aktuális készlet módosítására használható funkcióval korrigálni kell a nyitott aktuális készletmennyiségeket a legutolsó készletzárási időszaknak megfelelően.</span><span class="sxs-lookup"><span data-stu-id="0eada-116">To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period.</span></span> <span data-ttu-id="0eada-117">**Megjegyzés:** Az aktuális készletet korrigáló tranzakció feladási dátuma a legutóbbi készletzárás dátuma lesz.</span><span class="sxs-lookup"><span data-stu-id="0eada-117">**Note:** The posting date of the on-hand adjustment transaction will be the date of the last inventory close.</span></span> <span data-ttu-id="0eada-118">Ez a dátum nem módosítható.</span><span class="sxs-lookup"><span data-stu-id="0eada-118">This date can't be modified.</span></span>
+<span data-ttu-id="59bcd-116">Ahhoz, hogy ennek a két cikknek az árát 15,00 USD értékre lehessen beállítani, az aktuális készlet módosítására használható funkcióval korrigálni kell a nyitott aktuális készletmennyiségeket a legutolsó készletzárási időszaknak megfelelően.</span><span class="sxs-lookup"><span data-stu-id="59bcd-116">To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period.</span></span> <span data-ttu-id="59bcd-117">**Megjegyzés:** Az aktuális készletet korrigáló tranzakció feladási dátuma a legutóbbi készletzárás dátuma lesz.</span><span class="sxs-lookup"><span data-stu-id="59bcd-117">**Note:** The posting date of the on-hand adjustment transaction will be the date of the last inventory close.</span></span> <span data-ttu-id="59bcd-118">Ez a dátum nem módosítható.</span><span class="sxs-lookup"><span data-stu-id="59bcd-118">This date can't be modified.</span></span>
