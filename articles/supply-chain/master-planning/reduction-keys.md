@@ -2,15 +2,15 @@
 title: Előrejelzés csökkentési kulcsok
 description: Ez a témakör az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 07/09/2019
+manager: tfehr
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814283"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225105"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -34,7 +34,7 @@ Ez a témakör az előrejelzési követelmények csökkentése érdekében haszn
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Előrejelzési követelmények csökkentésére használható módszerek
 
-Ha előrejelzés vesz fel egy alaptervbe, kiválaszthatja az előrejelzési követelmények csökkentésének módját, ha tényleges igény is szerepel a tervben.
+Ha előrejelzés vesz fel egy alaptervbe, kiválaszthatja az előrejelzési követelmények csökkentésének módját, ha tényleges igény is szerepel a tervben. Ne feledje, hogy az alaptervezés kizárja a múltbeli előrejelzési követelményeket, ami azt jelenti, hogy az összes előrejelzési követelmény a mai dátum előtt szerepel ki lesz zárva.
 
 Alapterv beépítéséhez az alaptervbe, és az előrejelzési követelmények csökkentése érdekében használt módszer kiválasztásához válassza az **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** lehetőséget. Az **Előrejelzési modell** mezőben válasszon egy előrejelzési modellt. A **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben válasszon egy metodológiát. Ehhez a következő lehetőségek állnak rendelkezésre:
 

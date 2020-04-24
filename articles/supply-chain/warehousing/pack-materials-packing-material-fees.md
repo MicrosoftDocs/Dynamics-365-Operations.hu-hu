@@ -2,7 +2,7 @@
 title: Csomagolóanyagok és díjak
 description: Ez a témakör az újrahasznosító vállalatoknak adott időközönként kifizetett csomagolóanyag-díjakról nyújt tájékoztatást.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2351cce9dc6e1a554800817f75591c4a4e24d43
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076247"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215700"
 ---
 # <a name="packing-materials-and-fees"></a>Csomagolóanyagok és díjak
 
@@ -39,7 +39,7 @@ Megadhat egy vagy több csomagolási egységet egy egyetlen cikkhez, egy cikkcso
 > [!NOTE]
 > Még akkor is, ha a vállalat nem fizeti ki a csomagolási díjakat, használhatja a funkciót a csomagolási anyagok súlyával kapcsolatos statisztikák kiszámításához.
 
-## <a name="allocations"></a>Csomagolóanyag-felosztás beállítása
+## <a name="set-up-packing-material-allocation"></a><a name="allocations"></a>Csomagolóanyag-felosztás beállítása
 
 A csomagolóanyag súlyának, a csomagolóanyagok díjainak vagy mindkettőnek a kiszámítása előtt be kell kapcsolni a számítást, és meg kell határozni, hogy mely anyagok és díjak tartozzanak a cikkekhez.
 
