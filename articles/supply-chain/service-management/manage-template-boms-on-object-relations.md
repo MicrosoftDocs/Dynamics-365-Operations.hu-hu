@@ -2,7 +2,7 @@
 title: Anyagjegyzéksablonok kezelése tárgykapcsolatokon
 description: Anyagjegyzéksablonok kezelése tárgykapcsolatokon.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,71 +18,71 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f74e37039bde9e73b8ebea3eeb3ed4983b72704
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d597a698d0a2c953761c5985fdb6c3f2f1e1c383
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557453"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202284"
 ---
-# <a name="manage-template-boms-on-object-relations"></a><span data-ttu-id="85c4d-103">Anyagjegyzéksablonok kezelése tárgykapcsolatokon</span><span class="sxs-lookup"><span data-stu-id="85c4d-103">Manage template BOMs on object relations</span></span> 
+# <a name="manage-template-boms-on-object-relations"></a><span data-ttu-id="7f5df-103">Anyagjegyzéksablonok kezelése tárgykapcsolatokon</span><span class="sxs-lookup"><span data-stu-id="7f5df-103">Manage template BOMs on object relations</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="attach-a-template-bom-to-a-service-object"></a><span data-ttu-id="85c4d-104">Sablonanyagjegyzék kapcsolása szolgáltatási tárgyhoz</span><span class="sxs-lookup"><span data-stu-id="85c4d-104">Attach a template BOM to a service object</span></span>
+## <a name="attach-a-template-bom-to-a-service-object"></a><span data-ttu-id="7f5df-104">Sablonanyagjegyzék kapcsolása szolgáltatási tárgyhoz</span><span class="sxs-lookup"><span data-stu-id="7f5df-104">Attach a template BOM to a service object</span></span>
 
-1.  <span data-ttu-id="85c4d-105">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="7f5df-105">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="85c4d-106">Kattintson duplán arra a szolgáltatási szerződésre, amelynél egy sablonanyagjegyzéket egy tárgykapcsolathoz szeretne csatolni.</span><span class="sxs-lookup"><span data-stu-id="85c4d-106">Double-click the service agreement in which you want to attach a template BOM to an object relation.</span></span>
+2.  <span data-ttu-id="7f5df-106">Kattintson duplán arra a szolgáltatási szerződésre, amelynél egy sablonanyagjegyzéket egy tárgykapcsolathoz szeretne csatolni.</span><span class="sxs-lookup"><span data-stu-id="7f5df-106">Double-click the service agreement in which you want to attach a template BOM to an object relation.</span></span>
 
-3.  <span data-ttu-id="85c4d-107">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-107">Click **Setup** \> **Service objects**.</span></span>
+3.  <span data-ttu-id="7f5df-107">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-107">Click **Setup** \> **Service objects**.</span></span>
 
-4.  <span data-ttu-id="85c4d-108">A **Szolgáltatási tárgyak** képernyőn válassza ki a sablonanyagjegyzékhez csatolandó tárgyat, majd kattintson a **Funkciók** \> **Sablon AJ csatolása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-108">In the **Service objects** form, select the object to attach a template BOM to, and then click **Functions** \> **Attach template BOM**.</span></span>
+4.  <span data-ttu-id="7f5df-108">A **Szolgáltatási tárgyak** képernyőn válassza ki a sablonanyagjegyzékhez csatolandó tárgyat, majd kattintson a **Funkciók** \> **Sablon AJ csatolása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-108">In the **Service objects** form, select the object to attach a template BOM to, and then click **Functions** \> **Attach template BOM**.</span></span>
 
-5.  <span data-ttu-id="85c4d-109">A **Sablon AJ kiválasztása** párbeszédpanelen válasszon egy sablonanyagjegyzéket, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="85c4d-109">In the **Select template BOM** dialog box, select a template BOM, and then click **OK**.</span></span>
+5.  <span data-ttu-id="7f5df-109">A **Sablon AJ kiválasztása** párbeszédpanelen válasszon egy sablonanyagjegyzéket, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="7f5df-109">In the **Select template BOM** dialog box, select a template BOM, and then click **OK**.</span></span>
 
-6.  <span data-ttu-id="85c4d-110">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="85c4d-110">Close the forms to save your changes.</span></span>
+6.  <span data-ttu-id="7f5df-110">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="7f5df-110">Close the forms to save your changes.</span></span>
 
-## <a name="delete-a-service-bom-from-a-service-object"></a><span data-ttu-id="85c4d-111">Szolgáltatási anyagjegyzék törlése egy szolgáltatási tárgytól</span><span class="sxs-lookup"><span data-stu-id="85c4d-111">Delete a service BOM from a service object</span></span>
+## <a name="delete-a-service-bom-from-a-service-object"></a><span data-ttu-id="7f5df-111">Szolgáltatási anyagjegyzék törlése egy szolgáltatási tárgytól</span><span class="sxs-lookup"><span data-stu-id="7f5df-111">Delete a service BOM from a service object</span></span>
 
-1.  <span data-ttu-id="85c4d-112">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="7f5df-112">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="85c4d-113">Kattintson duplán arra a szolgáltatási szerződésre, amelynél törölni szeretne egy sablonanyagjegyzéket egy tárgykapcsolatról.</span><span class="sxs-lookup"><span data-stu-id="85c4d-113">Double-click the service agreement in which you want to delete a service BOM from an object relation.</span></span>
+2.  <span data-ttu-id="7f5df-113">Kattintson duplán arra a szolgáltatási szerződésre, amelynél törölni szeretne egy sablonanyagjegyzéket egy tárgykapcsolatról.</span><span class="sxs-lookup"><span data-stu-id="7f5df-113">Double-click the service agreement in which you want to delete a service BOM from an object relation.</span></span>
 
-3.  <span data-ttu-id="85c4d-114">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-114">Click **Setup** \> **Service objects**.</span></span>
+3.  <span data-ttu-id="7f5df-114">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-114">Click **Setup** \> **Service objects**.</span></span>
 
-4.  <span data-ttu-id="85c4d-115">A **Szolgáltatás tárgyai** képernyőn válassza ki azt a tárgyat, amelyhez a törölni kívánt sablonanyagjegyzék tartozik, majd kattintson a **Funkciók** \> **Szolgáltatási AJ törlése** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-115">In the **Service objects** form, select the object that has the service BOM to delete, and then click **Functions** \> **Delete service BOM**.</span></span>
+4.  <span data-ttu-id="7f5df-115">A **Szolgáltatás tárgyai** képernyőn válassza ki azt a tárgyat, amelyhez a törölni kívánt sablonanyagjegyzék tartozik, majd kattintson a **Funkciók** \> **Szolgáltatási AJ törlése** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-115">In the **Service objects** form, select the object that has the service BOM to delete, and then click **Functions** \> **Delete service BOM**.</span></span>
 
-5.  <span data-ttu-id="85c4d-116">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="85c4d-116">Close the forms to save your changes.</span></span>
+5.  <span data-ttu-id="7f5df-116">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="7f5df-116">Close the forms to save your changes.</span></span>
 
-## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a><span data-ttu-id="85c4d-117">A szolgáltatási anyagjegyzék előzményeinek áthelyezése egy szolgáltatási szerződésből a másikba</span><span class="sxs-lookup"><span data-stu-id="85c4d-117">Move the service BOM history from one service agreement to another</span></span>
+## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a><span data-ttu-id="7f5df-117">A szolgáltatási anyagjegyzék előzményeinek áthelyezése egy szolgáltatási szerződésből a másikba</span><span class="sxs-lookup"><span data-stu-id="7f5df-117">Move the service BOM history from one service agreement to another</span></span>
 
-1.  <span data-ttu-id="85c4d-118">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="7f5df-118">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="85c4d-119">Kattintson duplán arra a szolgáltatási szerződésre, amelyből át szeretne helyezni egy szolgáltatási anyagjegyzéket.</span><span class="sxs-lookup"><span data-stu-id="85c4d-119">Double-click the service agreement to move a service BOM from.</span></span>
+2.  <span data-ttu-id="7f5df-119">Kattintson duplán arra a szolgáltatási szerződésre, amelyből át szeretne helyezni egy szolgáltatási anyagjegyzéket.</span><span class="sxs-lookup"><span data-stu-id="7f5df-119">Double-click the service agreement to move a service BOM from.</span></span>
 
-3.  <span data-ttu-id="85c4d-120">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-120">Click **Setup** \> **Service objects**.</span></span>
+3.  <span data-ttu-id="7f5df-120">Kattintson a **Beállítás** \> **Szolgáltatási tárgyak** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-120">Click **Setup** \> **Service objects**.</span></span>
 
-4.  <span data-ttu-id="85c4d-121">A **Szolgáltatás tárgyai** képernyőn válassza ki azt a tárgyat, amelyhez az áthelyezni kívánt sablonanyagjegyzék tartozik, majd kattintson a **Funkciók** \> **Szolgáltatási AJ áthelyezése** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-121">In the **Service objects** form, select the object that has the service BOM to move, and then click **Functions** \> **Move service BOM**.</span></span>
+4.  <span data-ttu-id="7f5df-121">A **Szolgáltatás tárgyai** képernyőn válassza ki azt a tárgyat, amelyhez az áthelyezni kívánt sablonanyagjegyzék tartozik, majd kattintson a **Funkciók** \> **Szolgáltatási AJ áthelyezése** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-121">In the **Service objects** form, select the object that has the service BOM to move, and then click **Functions** \> **Move service BOM**.</span></span>
 
-5.  <span data-ttu-id="85c4d-122">A **Szolgáltatásiobjektum-kapcsolat kiválasztása** képernyőn válassza ki azt a szolgáltatásiobjektum-kapcsolatot, amelyhez az áthelyezni kívánt sablonanyagjegyzék tartozik, majd kattintson az **OK** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-122">In the **Select service object relation** form, select the service object relation to move the service BOM to, and then click **OK**.</span></span>
+5.  <span data-ttu-id="7f5df-122">A **Szolgáltatásiobjektum-kapcsolat kiválasztása** képernyőn válassza ki azt a szolgáltatásiobjektum-kapcsolatot, amelyhez az áthelyezni kívánt sablonanyagjegyzék tartozik, majd kattintson az **OK** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-122">In the **Select service object relation** form, select the service object relation to move the service BOM to, and then click **OK**.</span></span>
 
-6.  <span data-ttu-id="85c4d-123">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="85c4d-123">Close the forms to save your changes.</span></span>
+6.  <span data-ttu-id="7f5df-123">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="7f5df-123">Close the forms to save your changes.</span></span>
 
-## <a name="modify-the-information-displayed-for-a-bom-line"></a><span data-ttu-id="85c4d-124">Az anyagjegyzéksornál megjelenő adatok módosítása</span><span class="sxs-lookup"><span data-stu-id="85c4d-124">Modify the information displayed for a BOM line</span></span>
+## <a name="modify-the-information-displayed-for-a-bom-line"></a><span data-ttu-id="7f5df-124">Az anyagjegyzéksornál megjelenő adatok módosítása</span><span class="sxs-lookup"><span data-stu-id="7f5df-124">Modify the information displayed for a BOM line</span></span>
 
-1.  <span data-ttu-id="85c4d-125">Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-125">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="7f5df-125">Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-125">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="85c4d-126">Válasszon egy sablonanyagjegyzéket, majd kattintson a **Tervező** elemre.</span><span class="sxs-lookup"><span data-stu-id="85c4d-126">Select a template BOM, and then click **Designer**.</span></span>
+2.  <span data-ttu-id="7f5df-126">Válasszon egy sablonanyagjegyzéket, majd kattintson a **Tervező** elemre.</span><span class="sxs-lookup"><span data-stu-id="7f5df-126">Select a template BOM, and then click **Designer**.</span></span>
 
-3.  <span data-ttu-id="85c4d-127">Az **Anyagjegyzék** terület **Beállítás** lapján jelölje be a jelölőnégyzeteket azokkal az adatokkal összhangban, amelyeket a szolgáltatási anyagjegyzékeknél és sablonanyagjegyzékeknél az anyagjegyzéksorokban meg szeretne jeleníteni.</span><span class="sxs-lookup"><span data-stu-id="85c4d-127">Click the **Setup** tab. In the **BOM** area, select the check boxes for the information to display on the BOM lines of your service BOMs and template BOMs.</span></span>
+3.  <span data-ttu-id="7f5df-127">Az **Anyagjegyzék** terület **Beállítás** lapján jelölje be a jelölőnégyzeteket azokkal az adatokkal összhangban, amelyeket a szolgáltatási anyagjegyzékeknél és sablonanyagjegyzékeknél az anyagjegyzéksorokban meg szeretne jeleníteni.</span><span class="sxs-lookup"><span data-stu-id="7f5df-127">Click the **Setup** tab. In the **BOM** area, select the check boxes for the information to display on the BOM lines of your service BOMs and template BOMs.</span></span>
 
-4.  <span data-ttu-id="85c4d-128">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="85c4d-128">Close the forms to save your changes.</span></span>
+4.  <span data-ttu-id="7f5df-128">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="7f5df-128">Close the forms to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="85c4d-129">Lásd még</span><span class="sxs-lookup"><span data-stu-id="85c4d-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7f5df-129">Lásd még</span><span class="sxs-lookup"><span data-stu-id="7f5df-129">See also</span></span>
 
-[<span data-ttu-id="85c4d-130">Szolgáltatási anyagjegyzék törlése</span><span class="sxs-lookup"><span data-stu-id="85c4d-130">Delete a service BOM</span></span>](delete-service-bom.md)
+[<span data-ttu-id="7f5df-130">Szolgáltatási anyagjegyzék törlése</span><span class="sxs-lookup"><span data-stu-id="7f5df-130">Delete a service BOM</span></span>](delete-service-bom.md)
 
   
 

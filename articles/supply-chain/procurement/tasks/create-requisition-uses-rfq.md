@@ -2,7 +2,7 @@
 title: Olyan igénylés létrehozása, amely ajánlatkérést használ
 description: Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,92 +10,92 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLineRelatedDocuments, EcoResCategorySingleLookup, PurchReqWorkflowDropDialog, WorkflowSubmitDialog, WorkflowStatus, WorkflowWorkItemActionDialog, WorkflowUserListLookup, PurchReqCopyRFQ, SysDataAreaSelectLookup, PurchRFQCaseTable, PurchRFQEditLines, PurchRFQReplyTable, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 205cba2325e76dae9572301e44e0e89cbcfd106e
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149625"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204700"
 ---
-# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="44f64-103">Olyan igénylés létrehozása, amely ajánlatkérést használ</span><span class="sxs-lookup"><span data-stu-id="44f64-103">Create a requisition that uses an RFQ</span></span>
+# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="8be81-103">Olyan igénylés létrehozása, amely ajánlatkérést használ</span><span class="sxs-lookup"><span data-stu-id="8be81-103">Create a requisition that uses an RFQ</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="44f64-104">Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="44f64-104">This topic explains how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="44f64-105">A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést.</span><span class="sxs-lookup"><span data-stu-id="44f64-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="44f64-106">Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.</span><span class="sxs-lookup"><span data-stu-id="44f64-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
+<span data-ttu-id="8be81-104">Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="8be81-104">This topic explains how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="8be81-105">A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést.</span><span class="sxs-lookup"><span data-stu-id="8be81-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="8be81-106">Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.</span><span class="sxs-lookup"><span data-stu-id="8be81-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
 
 
-## <a name="create-a-requisition"></a><span data-ttu-id="44f64-107">Igénylés létrehozása</span><span class="sxs-lookup"><span data-stu-id="44f64-107">Create a requisition</span></span>
-1. <span data-ttu-id="44f64-108">A navigációs panelen ugorjon a **Modulok >Beszerzés és forrás > Beszerzési igénylések > Beszerzési igénylések általam létrehozva pontra**.</span><span class="sxs-lookup"><span data-stu-id="44f64-108">In the navigation pane, go to **Modules > Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me**.</span></span>
-2. <span data-ttu-id="44f64-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-109">Select **New**.</span></span>
-3. <span data-ttu-id="44f64-110">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="44f64-110">In the **Name** field, type a value.</span></span>
-4. <span data-ttu-id="44f64-111">Adja meg a dátumot az **Igényelt dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-111">In the **Requested date** field, enter a date.</span></span>
-5. <span data-ttu-id="44f64-112">Adja meg a dátumot a **Könyvelés dátuma** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-112">In the **Accounting date** field, enter a date.</span></span>
-6. <span data-ttu-id="44f64-113">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-113">Select **OK**.</span></span>
-7. <span data-ttu-id="44f64-114">Az **Ok** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="44f64-114">In the **Reason** field, enter or select a value.</span></span>
-8. <span data-ttu-id="44f64-115">Válassza a **Sor hozzáadása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-115">Select **Add line**.</span></span>
-9. <span data-ttu-id="44f64-116">Válasszon ki egy kategóriát a **Beszerzési kategória** mezőben a fa struktúrában, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="44f64-116">In the **Procurement category** field, select a category in the tree, and then select **OK**.</span></span>
-10. <span data-ttu-id="44f64-117">Írjon be egy értéket a **Terméknév** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="44f64-117">In the **Product name** field, type a value.</span></span>
-11. <span data-ttu-id="44f64-118">Adjon meg egy számot a **Mennyiség** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-118">In the **Quantity** field, enter a number.</span></span>
-12. <span data-ttu-id="44f64-119">Az **Egység** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="44f64-119">In the **Unit** field, enter or select a value.</span></span>
-13. <span data-ttu-id="44f64-120">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-120">Select **Save**.</span></span>
-14. <span data-ttu-id="44f64-121">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="44f64-121">Select **Workflow** to open the drop dialog.</span></span>
-15. <span data-ttu-id="44f64-122">Válassza a **Beküldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-122">Select **Submit**.</span></span>
-16. <span data-ttu-id="44f64-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="44f64-123">Close the page.</span></span>
-17. <span data-ttu-id="44f64-124">Válassza a **Beküldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-124">Select **Submit**.</span></span>
+## <a name="create-a-requisition"></a><span data-ttu-id="8be81-107">Igénylés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8be81-107">Create a requisition</span></span>
+1. <span data-ttu-id="8be81-108">A navigációs panelen ugorjon a **Modulok >Beszerzés és forrás > Beszerzési igénylések > Beszerzési igénylések általam létrehozva pontra**.</span><span class="sxs-lookup"><span data-stu-id="8be81-108">In the navigation pane, go to **Modules > Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me**.</span></span>
+2. <span data-ttu-id="8be81-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-109">Select **New**.</span></span>
+3. <span data-ttu-id="8be81-110">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8be81-110">In the **Name** field, type a value.</span></span>
+4. <span data-ttu-id="8be81-111">Adja meg a dátumot az **Igényelt dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-111">In the **Requested date** field, enter a date.</span></span>
+5. <span data-ttu-id="8be81-112">Adja meg a dátumot a **Könyvelés dátuma** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-112">In the **Accounting date** field, enter a date.</span></span>
+6. <span data-ttu-id="8be81-113">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-113">Select **OK**.</span></span>
+7. <span data-ttu-id="8be81-114">Az **Ok** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8be81-114">In the **Reason** field, enter or select a value.</span></span>
+8. <span data-ttu-id="8be81-115">Válassza a **Sor hozzáadása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-115">Select **Add line**.</span></span>
+9. <span data-ttu-id="8be81-116">Válasszon ki egy kategóriát a **Beszerzési kategória** mezőben a fa struktúrában, és kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="8be81-116">In the **Procurement category** field, select a category in the tree, and then select **OK**.</span></span>
+10. <span data-ttu-id="8be81-117">Írjon be egy értéket a **Terméknév** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8be81-117">In the **Product name** field, type a value.</span></span>
+11. <span data-ttu-id="8be81-118">Adjon meg egy számot a **Mennyiség** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-118">In the **Quantity** field, enter a number.</span></span>
+12. <span data-ttu-id="8be81-119">Az **Egység** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8be81-119">In the **Unit** field, enter or select a value.</span></span>
+13. <span data-ttu-id="8be81-120">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-120">Select **Save**.</span></span>
+14. <span data-ttu-id="8be81-121">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="8be81-121">Select **Workflow** to open the drop dialog.</span></span>
+15. <span data-ttu-id="8be81-122">Válassza a **Beküldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-122">Select **Submit**.</span></span>
+16. <span data-ttu-id="8be81-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="8be81-123">Close the page.</span></span>
+17. <span data-ttu-id="8be81-124">Válassza a **Beküldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-124">Select **Submit**.</span></span>
 
-## <a name="reassign-a-workflow-task"></a><span data-ttu-id="44f64-125">Munkafolyamat-feladat ismételt hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="44f64-125">Reassign a workflow task</span></span>
-<span data-ttu-id="44f64-126">A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy ajánlatot kapjon a szállítótól a termékre.</span><span class="sxs-lookup"><span data-stu-id="44f64-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="44f64-127">Az USMF bemutató adatokban az igénylési munkafolyamat egy olyan szabály szerint van beállítva, hogy ha a szállító nincs bejelölve, vagy az egységár értéke 0 soronként, akkor a rendszer a feladatot hozzárendeli egy adott dolgozóhoz, azért, hogy az létrehozzon egy Ajánlatkérést.</span><span class="sxs-lookup"><span data-stu-id="44f64-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="44f64-128">Az útmutató folytatásához a feladatot ismét hozzá kell rendelni egy másik felhasználóhoz (saját magához).</span><span class="sxs-lookup"><span data-stu-id="44f64-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="44f64-129">Csak úgy teheti meg ezt, ha Rendszergazdaként jelentkezik be.</span><span class="sxs-lookup"><span data-stu-id="44f64-129">You can only do this if you are logged in as an Admin.</span></span>  
+## <a name="reassign-a-workflow-task"></a><span data-ttu-id="8be81-125">Munkafolyamat-feladat ismételt hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="8be81-125">Reassign a workflow task</span></span>
+<span data-ttu-id="8be81-126">A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy ajánlatot kapjon a szállítótól a termékre.</span><span class="sxs-lookup"><span data-stu-id="8be81-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="8be81-127">Az USMF bemutató adatokban az igénylési munkafolyamat egy olyan szabály szerint van beállítva, hogy ha a szállító nincs bejelölve, vagy az egységár értéke 0 soronként, akkor a rendszer a feladatot hozzárendeli egy adott dolgozóhoz, azért, hogy az létrehozzon egy Ajánlatkérést.</span><span class="sxs-lookup"><span data-stu-id="8be81-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="8be81-128">Az útmutató folytatásához a feladatot ismét hozzá kell rendelni egy másik felhasználóhoz (saját magához).</span><span class="sxs-lookup"><span data-stu-id="8be81-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="8be81-129">Csak úgy teheti meg ezt, ha Rendszergazdaként jelentkezik be.</span><span class="sxs-lookup"><span data-stu-id="8be81-129">You can only do this if you are logged in as an Admin.</span></span>  
 
-1. <span data-ttu-id="44f64-130">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="44f64-130">Select **Workflow** to open the drop dialog.</span></span>
-2. <span data-ttu-id="44f64-131">Válassza az **Előzmények megtekintése** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-131">Select **View history**.</span></span>
-3. <span data-ttu-id="44f64-132">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="44f64-132">Refresh the page.</span></span>
-4. <span data-ttu-id="44f64-133">Bontsa ki a **Nyomkövetési részletek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="44f64-133">Expand the **Tracking details** section.</span></span>
-5. <span data-ttu-id="44f64-134">Válassza ki a „Sor munkafolyamata aktiválva ekkor:” értékkel kezdődő sort a fa struktúrában.</span><span class="sxs-lookup"><span data-stu-id="44f64-134">In the tree, select the line that starts with "Line workflow activated on".</span></span>
-6. <span data-ttu-id="44f64-135">Válassza a **Munkafolyamat részleteinek megtekintése** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-135">Select **View workflow details**.</span></span>
-7. <span data-ttu-id="44f64-136">Bontsa ki a **Munkatételek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="44f64-136">Expand the **Work items** section.</span></span>
-8. <span data-ttu-id="44f64-137">Válassza ki az **Ismételt hozzárendelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-137">Select **Reassign**.</span></span>
-9. <span data-ttu-id="44f64-138">Válassza ki a **Rendszergazdát** a **Felhasználó** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-138">In the **User** field, select **Admin**.</span></span>
-10. <span data-ttu-id="44f64-139">Válassza ki az **Ismételt hozzárendelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-139">Select **Reassign**.</span></span>
-11. <span data-ttu-id="44f64-140">Zárja be a két lapot.</span><span class="sxs-lookup"><span data-stu-id="44f64-140">Close the two pages.</span></span>
+1. <span data-ttu-id="8be81-130">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="8be81-130">Select **Workflow** to open the drop dialog.</span></span>
+2. <span data-ttu-id="8be81-131">Válassza az **Előzmények megtekintése** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-131">Select **View history**.</span></span>
+3. <span data-ttu-id="8be81-132">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="8be81-132">Refresh the page.</span></span>
+4. <span data-ttu-id="8be81-133">Bontsa ki a **Nyomkövetési részletek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="8be81-133">Expand the **Tracking details** section.</span></span>
+5. <span data-ttu-id="8be81-134">Válassza ki a „Sor munkafolyamata aktiválva ekkor:” értékkel kezdődő sort a fa struktúrában.</span><span class="sxs-lookup"><span data-stu-id="8be81-134">In the tree, select the line that starts with "Line workflow activated on".</span></span>
+6. <span data-ttu-id="8be81-135">Válassza a **Munkafolyamat részleteinek megtekintése** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-135">Select **View workflow details**.</span></span>
+7. <span data-ttu-id="8be81-136">Bontsa ki a **Munkatételek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="8be81-136">Expand the **Work items** section.</span></span>
+8. <span data-ttu-id="8be81-137">Válassza ki az **Ismételt hozzárendelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-137">Select **Reassign**.</span></span>
+9. <span data-ttu-id="8be81-138">Válassza ki a **Rendszergazdát** a **Felhasználó** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-138">In the **User** field, select **Admin**.</span></span>
+10. <span data-ttu-id="8be81-139">Válassza ki az **Ismételt hozzárendelés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-139">Select **Reassign**.</span></span>
+11. <span data-ttu-id="8be81-140">Zárja be a két lapot.</span><span class="sxs-lookup"><span data-stu-id="8be81-140">Close the two pages.</span></span>
 
-## <a name="create-an-rfq"></a><span data-ttu-id="44f64-141">Ajánlatkérés létrehozása</span><span class="sxs-lookup"><span data-stu-id="44f64-141">Create an RFQ</span></span>
+## <a name="create-an-rfq"></a><span data-ttu-id="8be81-141">Ajánlatkérés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8be81-141">Create an RFQ</span></span>
 
-1. <span data-ttu-id="44f64-142">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="44f64-142">Refresh the page.</span></span>
-2. <span data-ttu-id="44f64-143">Válassza az **Ajánlatkérés** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-143">Select **Request for quotation**.</span></span>
-3. <span data-ttu-id="44f64-144">Válassza ki az **USMF** lehetőséget a **Vevő jogi személy** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-144">In the **Buying legal entity** field, select **USMF**.</span></span> <span data-ttu-id="44f64-145">Ugyanazt a jogi személyt kell kiválasztania, mint aki az igénylés sorában szerepel.</span><span class="sxs-lookup"><span data-stu-id="44f64-145">You must select the same legal entity that's on the requisition line.</span></span>  
-4. <span data-ttu-id="44f64-146">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="44f64-146">In the list, mark the selected row.</span></span> <span data-ttu-id="44f64-147">Ha a beszerzési igénylésben több sorral rendelkezett, válassza ki az összes olyan sort, amelyet hozzá kíván adni az ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="44f64-147">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
-5. <span data-ttu-id="44f64-148">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-148">Select **OK**.</span></span>
-6. <span data-ttu-id="44f64-149">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="44f64-149">Refresh the page.</span></span>
-7. <span data-ttu-id="44f64-150">Nyissa meg az Adatterület lehetőséget, majd bontsa ki a **Kapcsolódó dokumentumok** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="44f64-150">Ensure that the FactBox is open, then expand the **Related documents** section.</span></span>
-8. <span data-ttu-id="44f64-151">Kattintson az Ajánlatkérés mezőben szereplő hivatkozásra az újonnan létrehozott **Ajánlatkérés** megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="44f64-151">Select the link in the **Request for quotation** field to open the RFQ that was just created.</span></span>
-9. <span data-ttu-id="44f64-152">Válassza ki a **Fejléc** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-152">Select **Header**.</span></span>
-10. <span data-ttu-id="44f64-153">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-153">Select **Add**.</span></span>
-11. <span data-ttu-id="44f64-154">A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="44f64-154">In the **Vendor account** field, enter or select a value.</span></span>
-12. <span data-ttu-id="44f64-155">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-155">Select **Add**.</span></span>
-13. <span data-ttu-id="44f64-156">A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="44f64-156">In the **Vendor account** field, enter or select a value.</span></span>
-14. <span data-ttu-id="44f64-157">Válassza a **Küldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-157">Select **Send**.</span></span>
-15. <span data-ttu-id="44f64-158">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-158">Select **OK**.</span></span>
-16. <span data-ttu-id="44f64-159">Válassza a **Válasz megadása** parancsot.</span><span class="sxs-lookup"><span data-stu-id="44f64-159">Select **Enter reply**.</span></span>
-17. <span data-ttu-id="44f64-160">A Műveleti ablaktáblán kattintson a **Válasz** elemre.</span><span class="sxs-lookup"><span data-stu-id="44f64-160">On the Action Pane, select **Reply**.</span></span>
-18. <span data-ttu-id="44f64-161">Válassza az **Adatok másolása a válaszba** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-161">Select **Copy data to reply**.</span></span> <span data-ttu-id="44f64-162">Ez olyan adatokat másol a válaszhoz az ajánlatkérésből, mint például a mennyiség vagy a dátumok.</span><span class="sxs-lookup"><span data-stu-id="44f64-162">This copies data, such as the quantity and dates, from the RFQ to the reply.</span></span>  
-19. <span data-ttu-id="44f64-163">Adjon meg egy számot az **Egységár** mezőben.</span><span class="sxs-lookup"><span data-stu-id="44f64-163">In the **Unit price** field, enter a number.</span></span> <span data-ttu-id="44f64-164">Ez a szállítótól kapott ár.</span><span class="sxs-lookup"><span data-stu-id="44f64-164">This is the price that you've received from the vendor.</span></span> <span data-ttu-id="44f64-165">További információkat is meg kell adnia a szállítóról.</span><span class="sxs-lookup"><span data-stu-id="44f64-165">You might also want to enter additional information from the vendor.</span></span>  
-20. <span data-ttu-id="44f64-166">Válassza az **Elfogadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-166">Select **Accept**.</span></span>
-21. <span data-ttu-id="44f64-167">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="44f64-167">Select **OK**.</span></span>
+1. <span data-ttu-id="8be81-142">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="8be81-142">Refresh the page.</span></span>
+2. <span data-ttu-id="8be81-143">Válassza az **Ajánlatkérés** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-143">Select **Request for quotation**.</span></span>
+3. <span data-ttu-id="8be81-144">Válassza ki az **USMF** lehetőséget a **Vevő jogi személy** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-144">In the **Buying legal entity** field, select **USMF**.</span></span> <span data-ttu-id="8be81-145">Ugyanazt a jogi személyt kell kiválasztania, mint aki az igénylés sorában szerepel.</span><span class="sxs-lookup"><span data-stu-id="8be81-145">You must select the same legal entity that's on the requisition line.</span></span>  
+4. <span data-ttu-id="8be81-146">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8be81-146">In the list, mark the selected row.</span></span> <span data-ttu-id="8be81-147">Ha a beszerzési igénylésben több sorral rendelkezett, válassza ki az összes olyan sort, amelyet hozzá kíván adni az ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="8be81-147">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
+5. <span data-ttu-id="8be81-148">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-148">Select **OK**.</span></span>
+6. <span data-ttu-id="8be81-149">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="8be81-149">Refresh the page.</span></span>
+7. <span data-ttu-id="8be81-150">Nyissa meg az Adatterület lehetőséget, majd bontsa ki a **Kapcsolódó dokumentumok** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="8be81-150">Ensure that the FactBox is open, then expand the **Related documents** section.</span></span>
+8. <span data-ttu-id="8be81-151">Kattintson az Ajánlatkérés mezőben szereplő hivatkozásra az újonnan létrehozott **Ajánlatkérés** megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="8be81-151">Select the link in the **Request for quotation** field to open the RFQ that was just created.</span></span>
+9. <span data-ttu-id="8be81-152">Válassza ki a **Fejléc** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-152">Select **Header**.</span></span>
+10. <span data-ttu-id="8be81-153">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-153">Select **Add**.</span></span>
+11. <span data-ttu-id="8be81-154">A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8be81-154">In the **Vendor account** field, enter or select a value.</span></span>
+12. <span data-ttu-id="8be81-155">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-155">Select **Add**.</span></span>
+13. <span data-ttu-id="8be81-156">A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8be81-156">In the **Vendor account** field, enter or select a value.</span></span>
+14. <span data-ttu-id="8be81-157">Válassza a **Küldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-157">Select **Send**.</span></span>
+15. <span data-ttu-id="8be81-158">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-158">Select **OK**.</span></span>
+16. <span data-ttu-id="8be81-159">Válassza a **Válasz megadása** parancsot.</span><span class="sxs-lookup"><span data-stu-id="8be81-159">Select **Enter reply**.</span></span>
+17. <span data-ttu-id="8be81-160">A Műveleti ablaktáblán kattintson a **Válasz** elemre.</span><span class="sxs-lookup"><span data-stu-id="8be81-160">On the Action Pane, select **Reply**.</span></span>
+18. <span data-ttu-id="8be81-161">Válassza az **Adatok másolása a válaszba** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-161">Select **Copy data to reply**.</span></span> <span data-ttu-id="8be81-162">Ez olyan adatokat másol a válaszhoz az ajánlatkérésből, mint például a mennyiség vagy a dátumok.</span><span class="sxs-lookup"><span data-stu-id="8be81-162">This copies data, such as the quantity and dates, from the RFQ to the reply.</span></span>  
+19. <span data-ttu-id="8be81-163">Adjon meg egy számot az **Egységár** mezőben.</span><span class="sxs-lookup"><span data-stu-id="8be81-163">In the **Unit price** field, enter a number.</span></span> <span data-ttu-id="8be81-164">Ez a szállítótól kapott ár.</span><span class="sxs-lookup"><span data-stu-id="8be81-164">This is the price that you've received from the vendor.</span></span> <span data-ttu-id="8be81-165">További információkat is meg kell adnia a szállítóról.</span><span class="sxs-lookup"><span data-stu-id="8be81-165">You might also want to enter additional information from the vendor.</span></span>  
+20. <span data-ttu-id="8be81-166">Válassza az **Elfogadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-166">Select **Accept**.</span></span>
+21. <span data-ttu-id="8be81-167">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8be81-167">Select **OK**.</span></span>
 
-## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="44f64-168">Győződjön meg arról, hogy átkerült az ár és a szállító az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="44f64-168">Verify that vendor and price have been transferred to the requisition</span></span>
-1. <span data-ttu-id="44f64-169">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="44f64-169">Close the page.</span></span>
-2. <span data-ttu-id="44f64-170">**Sorok** kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="44f64-170">Select **Lines**.</span></span>
-3. <span data-ttu-id="44f64-171">Válassza ki a **Kapcsolódó információ** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-171">Select **Related information**.</span></span>
-4. <span data-ttu-id="44f64-172">Válassza a **Beszerzési igénylés** elemet.</span><span class="sxs-lookup"><span data-stu-id="44f64-172">Select **Purchase requisition**.</span></span>
-5. <span data-ttu-id="44f64-173">Válassza ki azt a sort, amelyet a rendszer átvitt az Ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="44f64-173">Select the line that was transferred to the RFQ.</span></span> <span data-ttu-id="44f64-174">Győződjön meg arról, hogy átmásolták az árat és a szállítót az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="44f64-174">Verify that the price and vendor have been copied to the requisition.</span></span>  
-6. <span data-ttu-id="44f64-175">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="44f64-175">Select **Workflow** to open the drop dialog.</span></span>
-7. <span data-ttu-id="44f64-176">Válassza a Kész lehetőséget</span><span class="sxs-lookup"><span data-stu-id="44f64-176">Select Complete.</span></span>
-8. <span data-ttu-id="44f64-177">Válassza az oldalt.</span><span class="sxs-lookup"><span data-stu-id="44f64-177">Select the page.</span></span>
-9. <span data-ttu-id="44f64-178">Válassza a Kész lehetőséget</span><span class="sxs-lookup"><span data-stu-id="44f64-178">Select Complete.</span></span>
+## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="8be81-168">Győződjön meg arról, hogy átkerült az ár és a szállító az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="8be81-168">Verify that vendor and price have been transferred to the requisition</span></span>
+1. <span data-ttu-id="8be81-169">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="8be81-169">Close the page.</span></span>
+2. <span data-ttu-id="8be81-170">**Sorok** kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="8be81-170">Select **Lines**.</span></span>
+3. <span data-ttu-id="8be81-171">Válassza ki a **Kapcsolódó információ** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-171">Select **Related information**.</span></span>
+4. <span data-ttu-id="8be81-172">Válassza a **Beszerzési igénylés** elemet.</span><span class="sxs-lookup"><span data-stu-id="8be81-172">Select **Purchase requisition**.</span></span>
+5. <span data-ttu-id="8be81-173">Válassza ki azt a sort, amelyet a rendszer átvitt az Ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="8be81-173">Select the line that was transferred to the RFQ.</span></span> <span data-ttu-id="8be81-174">Győződjön meg arról, hogy átmásolták az árat és a szállítót az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="8be81-174">Verify that the price and vendor have been copied to the requisition.</span></span>  
+6. <span data-ttu-id="8be81-175">A **Munkafolyamat** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="8be81-175">Select **Workflow** to open the drop dialog.</span></span>
+7. <span data-ttu-id="8be81-176">Válassza a Kész lehetőséget</span><span class="sxs-lookup"><span data-stu-id="8be81-176">Select Complete.</span></span>
+8. <span data-ttu-id="8be81-177">Válassza az oldalt.</span><span class="sxs-lookup"><span data-stu-id="8be81-177">Select the page.</span></span>
+9. <span data-ttu-id="8be81-178">Válassza a Kész lehetőséget</span><span class="sxs-lookup"><span data-stu-id="8be81-178">Select Complete.</span></span>
 

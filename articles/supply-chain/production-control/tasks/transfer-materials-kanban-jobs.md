@@ -2,7 +2,7 @@
 title: Anyagok átvitele kanbanfeladattal
 description: Ez az eljárás egy anyagszállításra használt visszavonási kanbanfeladattal foglalkozik.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,59 +10,59 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bcab5d27d1e5bb2f86910fe083168e7b97c52e2f
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 96cb77b7b37fe6519a812735d9a41749da078cf2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148802"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210364"
 ---
-# <a name="transfer-materials-with-kanban-jobs"></a><span data-ttu-id="2ba3e-103">Anyagok átvitele kanbanfeladattal</span><span class="sxs-lookup"><span data-stu-id="2ba3e-103">Transfer materials with kanban jobs</span></span>
+# <a name="transfer-materials-with-kanban-jobs"></a><span data-ttu-id="039c8-103">Anyagok átvitele kanbanfeladattal</span><span class="sxs-lookup"><span data-stu-id="039c8-103">Transfer materials with kanban jobs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2ba3e-104">Ez az eljárás egy anyagszállításra használt visszavonási kanbanfeladattal foglalkozik.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-104">This procedure focuses on executing a withdrawal kanban job to transfer materials.</span></span> <span data-ttu-id="2ba3e-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="2ba3e-106">Ezt az eljárást a raktári dolgozó használja.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-106">This procedure is intended for the warehouse worker.</span></span>
+<span data-ttu-id="039c8-104">Ez az eljárás egy anyagszállításra használt visszavonási kanbanfeladattal foglalkozik.</span><span class="sxs-lookup"><span data-stu-id="039c8-104">This procedure focuses on executing a withdrawal kanban job to transfer materials.</span></span> <span data-ttu-id="039c8-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="039c8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="039c8-106">Ezt az eljárást a raktári dolgozó használja.</span><span class="sxs-lookup"><span data-stu-id="039c8-106">This procedure is intended for the warehouse worker.</span></span>
 
 
-## <a name="display-transfer-jobs"></a><span data-ttu-id="2ba3e-107">Átviteli feladatok megjelenítése</span><span class="sxs-lookup"><span data-stu-id="2ba3e-107">Display transfer jobs</span></span>
-1. <span data-ttu-id="2ba3e-108">Ugorjon a Gyártásvezérlés > Kanban > Kanbantábla oldalra a szállítási feladatokért.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-108">Go to Production control > Kanban > Kanban board for transfer jobs.</span></span>
-2. <span data-ttu-id="2ba3e-109">Nyissa meg vagy zárja be a Szűrők szekciót.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-109">Expand or collapse the Filters section.</span></span>
-    * <span data-ttu-id="2ba3e-110">A Szűrők részben megadhatja, hogy mely munkákat szeretné látni a Termelési folyamat, Tevékenység neve Raktárból és helyből, valamint a Raktárba és helyre szűrők használatával.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-110">In the Filters section, you can specify what jobs you want to see by filtering on Production flow, Activity name, From warehouse and location, and To warehouse and location.</span></span>  
-3. <span data-ttu-id="2ba3e-111">A Raktárból mezőbe írja be a „11” értéket.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-111">In the From warehouse field, type '11'.</span></span>
-4. <span data-ttu-id="2ba3e-112">A Helyszínre mezőbe írja be a „12” értéket.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-112">In the To location field, type '12'.</span></span>
+## <a name="display-transfer-jobs"></a><span data-ttu-id="039c8-107">Átviteli feladatok megjelenítése</span><span class="sxs-lookup"><span data-stu-id="039c8-107">Display transfer jobs</span></span>
+1. <span data-ttu-id="039c8-108">Ugorjon a Gyártásvezérlés > Kanban > Kanbantábla oldalra a szállítási feladatokért.</span><span class="sxs-lookup"><span data-stu-id="039c8-108">Go to Production control > Kanban > Kanban board for transfer jobs.</span></span>
+2. <span data-ttu-id="039c8-109">Nyissa meg vagy zárja be a Szűrők szekciót.</span><span class="sxs-lookup"><span data-stu-id="039c8-109">Expand or collapse the Filters section.</span></span>
+    * <span data-ttu-id="039c8-110">A Szűrők részben megadhatja, hogy mely munkákat szeretné látni a Termelési folyamat, Tevékenység neve Raktárból és helyből, valamint a Raktárba és helyre szűrők használatával.</span><span class="sxs-lookup"><span data-stu-id="039c8-110">In the Filters section, you can specify what jobs you want to see by filtering on Production flow, Activity name, From warehouse and location, and To warehouse and location.</span></span>  
+3. <span data-ttu-id="039c8-111">A Raktárból mezőbe írja be a „11” értéket.</span><span class="sxs-lookup"><span data-stu-id="039c8-111">In the From warehouse field, type '11'.</span></span>
+4. <span data-ttu-id="039c8-112">A Helyszínre mezőbe írja be a „12” értéket.</span><span class="sxs-lookup"><span data-stu-id="039c8-112">In the To location field, type '12'.</span></span>
 
-## <a name="start-a-transfer-job"></a><span data-ttu-id="2ba3e-113">Áthelyezési feladat indítása</span><span class="sxs-lookup"><span data-stu-id="2ba3e-113">Start a transfer job</span></span>
-1. <span data-ttu-id="2ba3e-114">A listában törölje a sorok esetleges kijelölését.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-114">In the list, deselect the selected row - if any.</span></span>
-2. <span data-ttu-id="2ba3e-115">Jelölje ki az 4. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-115">In the list, select row 4.</span></span>
-    * <span data-ttu-id="2ba3e-116">Válassza ki az első, Nem tervezett állapotú feladatot.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-116">Select the first job with status Not planned.</span></span> <span data-ttu-id="2ba3e-117">Győződjön meg róla, hogy csak ez a feladat van kiválasztva.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-117">Make sure this is the only job selected.</span></span>  
-3. <span data-ttu-id="2ba3e-118">Kattintson a Start elemre.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-118">Click Start.</span></span>
-    * <span data-ttu-id="2ba3e-119">Ne feledje, hogy egy ikon jelzi a feladat megkezdését.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-119">Notice that an icon indicates that the job is started.</span></span>  
+## <a name="start-a-transfer-job"></a><span data-ttu-id="039c8-113">Áthelyezési feladat indítása</span><span class="sxs-lookup"><span data-stu-id="039c8-113">Start a transfer job</span></span>
+1. <span data-ttu-id="039c8-114">A listában törölje a sorok esetleges kijelölését.</span><span class="sxs-lookup"><span data-stu-id="039c8-114">In the list, deselect the selected row - if any.</span></span>
+2. <span data-ttu-id="039c8-115">Jelölje ki az 4. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="039c8-115">In the list, select row 4.</span></span>
+    * <span data-ttu-id="039c8-116">Válassza ki az első, Nem tervezett állapotú feladatot.</span><span class="sxs-lookup"><span data-stu-id="039c8-116">Select the first job with status Not planned.</span></span> <span data-ttu-id="039c8-117">Győződjön meg róla, hogy csak ez a feladat van kiválasztva.</span><span class="sxs-lookup"><span data-stu-id="039c8-117">Make sure this is the only job selected.</span></span>  
+3. <span data-ttu-id="039c8-118">Kattintson a Start elemre.</span><span class="sxs-lookup"><span data-stu-id="039c8-118">Click Start.</span></span>
+    * <span data-ttu-id="039c8-119">Ne feledje, hogy egy ikon jelzi a feladat megkezdését.</span><span class="sxs-lookup"><span data-stu-id="039c8-119">Notice that an icon indicates that the job is started.</span></span>  
 
-## <a name="select-a-second-transfer-job-and-change-quantity"></a><span data-ttu-id="2ba3e-120">Egy második áthelyezési feladat kiválasztása és a mennyiség módosítása</span><span class="sxs-lookup"><span data-stu-id="2ba3e-120">Select a second transfer job and change quantity</span></span>
-1. <span data-ttu-id="2ba3e-121">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-121">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="2ba3e-122">Több feladatot is kiválaszthat, de egyelőre válassza ki az 5. sort.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-122">You can have multiple jobs selected, but for now select row 5.</span></span>  
-2. <span data-ttu-id="2ba3e-123">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-123">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="2ba3e-124">Győződjön meg róla, hogy csak az előző lépés feladata van kiválasztva.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-124">Make sure the job in the previous step is the only one selected.</span></span> <span data-ttu-id="2ba3e-125">Törölje a többi feladat kiválasztását.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-125">Deselect all other jobs.</span></span>  
-3. <span data-ttu-id="2ba3e-126">Ne feledje a Feladatmennyiség mezőben megadott értéket, később még szüksége lesz rá</span><span class="sxs-lookup"><span data-stu-id="2ba3e-126">Note the value in the Job quantity field to reference later</span></span>
-4. <span data-ttu-id="2ba3e-127">Állítsa a Feladatmennyiséget a „30” értékre.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-127">Set Job quantity to '30'.</span></span>
-    * <span data-ttu-id="2ba3e-128">Figyelje meg a figyelmeztetést!</span><span class="sxs-lookup"><span data-stu-id="2ba3e-128">Notice the warning!</span></span> <span data-ttu-id="2ba3e-129">30 átvitele nem engedélyezett.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-129">You are not allowed to transfer 30.</span></span> <span data-ttu-id="2ba3e-130">A kanbanszabály beállítása szerint csak az eredeti mennyiséget lehet átvinni.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-130">According to the setup of the kanban rule, you can only transfer the original quantity.</span></span>  
-5. <span data-ttu-id="2ba3e-131">Használja a Feladatmennyiség mezőben korábban megjegyzett értéket.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-131">Use the value noted previously in the Job quantity field</span></span>
-    * <span data-ttu-id="2ba3e-132">Állítsa a Feladatmennyiséget az előző értékre.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-132">Set the Job quantity to the previous value.</span></span>  
+## <a name="select-a-second-transfer-job-and-change-quantity"></a><span data-ttu-id="039c8-120">Egy második áthelyezési feladat kiválasztása és a mennyiség módosítása</span><span class="sxs-lookup"><span data-stu-id="039c8-120">Select a second transfer job and change quantity</span></span>
+1. <span data-ttu-id="039c8-121">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="039c8-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="039c8-122">Több feladatot is kiválaszthat, de egyelőre válassza ki az 5. sort.</span><span class="sxs-lookup"><span data-stu-id="039c8-122">You can have multiple jobs selected, but for now select row 5.</span></span>  
+2. <span data-ttu-id="039c8-123">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="039c8-123">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="039c8-124">Győződjön meg róla, hogy csak az előző lépés feladata van kiválasztva.</span><span class="sxs-lookup"><span data-stu-id="039c8-124">Make sure the job in the previous step is the only one selected.</span></span> <span data-ttu-id="039c8-125">Törölje a többi feladat kiválasztását.</span><span class="sxs-lookup"><span data-stu-id="039c8-125">Deselect all other jobs.</span></span>  
+3. <span data-ttu-id="039c8-126">Ne feledje a Feladatmennyiség mezőben megadott értéket, később még szüksége lesz rá</span><span class="sxs-lookup"><span data-stu-id="039c8-126">Note the value in the Job quantity field to reference later</span></span>
+4. <span data-ttu-id="039c8-127">Állítsa a Feladatmennyiséget a „30” értékre.</span><span class="sxs-lookup"><span data-stu-id="039c8-127">Set Job quantity to '30'.</span></span>
+    * <span data-ttu-id="039c8-128">Figyelje meg a figyelmeztetést!</span><span class="sxs-lookup"><span data-stu-id="039c8-128">Notice the warning!</span></span> <span data-ttu-id="039c8-129">30 átvitele nem engedélyezett.</span><span class="sxs-lookup"><span data-stu-id="039c8-129">You are not allowed to transfer 30.</span></span> <span data-ttu-id="039c8-130">A kanbanszabály beállítása szerint csak az eredeti mennyiséget lehet átvinni.</span><span class="sxs-lookup"><span data-stu-id="039c8-130">According to the setup of the kanban rule, you can only transfer the original quantity.</span></span>  
+5. <span data-ttu-id="039c8-131">Használja a Feladatmennyiség mezőben korábban megjegyzett értéket.</span><span class="sxs-lookup"><span data-stu-id="039c8-131">Use the value noted previously in the Job quantity field</span></span>
+    * <span data-ttu-id="039c8-132">Állítsa a Feladatmennyiséget az előző értékre.</span><span class="sxs-lookup"><span data-stu-id="039c8-132">Set the Job quantity to the previous value.</span></span>  
 
-## <a name="start-the-second-transfer-job"></a><span data-ttu-id="2ba3e-133">Második áthelyezési feladat elindítása</span><span class="sxs-lookup"><span data-stu-id="2ba3e-133">Start the second transfer job</span></span>
-1. <span data-ttu-id="2ba3e-134">Kattintson a Start elemre.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-134">Click Start.</span></span>
-    * <span data-ttu-id="2ba3e-135">Ez megkezdi az 5. sorban található feladat átvitelét.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-135">This will start the transfer of the job in row 5.</span></span>  
+## <a name="start-the-second-transfer-job"></a><span data-ttu-id="039c8-133">Második áthelyezési feladat elindítása</span><span class="sxs-lookup"><span data-stu-id="039c8-133">Start the second transfer job</span></span>
+1. <span data-ttu-id="039c8-134">Kattintson a Start elemre.</span><span class="sxs-lookup"><span data-stu-id="039c8-134">Click Start.</span></span>
+    * <span data-ttu-id="039c8-135">Ez megkezdi az 5. sorban található feladat átvitelét.</span><span class="sxs-lookup"><span data-stu-id="039c8-135">This will start the transfer of the job in row 5.</span></span>  
 
-## <a name="complete-both-transfer-jobs"></a><span data-ttu-id="2ba3e-136">Mindkét áthelyezési feladat befejezése</span><span class="sxs-lookup"><span data-stu-id="2ba3e-136">Complete both transfer jobs</span></span>
-1. <span data-ttu-id="2ba3e-137">Jelölje ki az 4. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-137">In the list, select row 4.</span></span>
-    * <span data-ttu-id="2ba3e-138">Most két átviteli feladat van kiválasztva a 4. és az 5. sorban.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-138">Now two transfer jobs are selected on row 4 and row 5.</span></span>  
-2. <span data-ttu-id="2ba3e-139">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-139">Click Complete.</span></span>
-    * <span data-ttu-id="2ba3e-140">Ez mindkét feladat átvitelét befejezi.</span><span class="sxs-lookup"><span data-stu-id="2ba3e-140">This will complete the transfer of both jobs.</span></span>  
+## <a name="complete-both-transfer-jobs"></a><span data-ttu-id="039c8-136">Mindkét áthelyezési feladat befejezése</span><span class="sxs-lookup"><span data-stu-id="039c8-136">Complete both transfer jobs</span></span>
+1. <span data-ttu-id="039c8-137">Jelölje ki az 4. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="039c8-137">In the list, select row 4.</span></span>
+    * <span data-ttu-id="039c8-138">Most két átviteli feladat van kiválasztva a 4. és az 5. sorban.</span><span class="sxs-lookup"><span data-stu-id="039c8-138">Now two transfer jobs are selected on row 4 and row 5.</span></span>  
+2. <span data-ttu-id="039c8-139">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="039c8-139">Click Complete.</span></span>
+    * <span data-ttu-id="039c8-140">Ez mindkét feladat átvitelét befejezi.</span><span class="sxs-lookup"><span data-stu-id="039c8-140">This will complete the transfer of both jobs.</span></span>  
 
