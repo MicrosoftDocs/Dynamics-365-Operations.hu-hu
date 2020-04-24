@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127977"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175108"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -47,6 +47,18 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Érintett területek**         | Pályázat |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2021. július 1-től már nem tervezzük az SSRS-jelentések támogatását **Kimeneti áfajegyék, Bemeneti áfajegyzék, EU összesítő áfajegyzék – Funkcióhivatkozás PL-00014**. A (JPK_VDEK) alapértelmezett ellenőrzési fájljához tartozó Excel formátumú példa lesz bevezetve. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.11 kiadásában
+
+### <a name="norwegian-standard-main-accounts"></a>Norvég standard főszámlák
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Újratervezés  |
+| **Felváltotta másik szolgáltatás?**   | Igen (ER-formátumú alkalmazás-specifikus paraméterekkel felülírva) |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2021. április 1-től már nem tervezzük támogatni a szabványos fő számlákhoz kapcsolódó funkciókat: hivatkozási mező, kapcsolódó tábla, adatentitás. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.7 kiadásában
 

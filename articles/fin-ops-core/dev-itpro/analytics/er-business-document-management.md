@@ -3,7 +3,7 @@ title: Üzletidokumentum-kezelés – áttekintés
 description: Ez a témakör azt mutatja be, hogyan lehet használni az ER-keretrendszer üzletidokumentum-kezelő funkcióját.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117337"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258557"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
@@ -248,9 +248,18 @@ A következő eljárással szerkesztheti a szabadszöveges számlasablonokat az 
 1. Az Üzleti dokumentum kezelése munkaterületre való hozzáféréssel rendelkező felhasználóként jelentkezzen be.
 2. Nyissa meg az Üzletidokumentum-kezelés munkaterületet.
 
+Amikor az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára** funkció ki van kapcsolva a **Funkciókezelés** munkaterületen, az **Üzleti dokumentumkezelés** munkaterületének fő rácsa a következő sablonokat jeleníti meg:
+
+- Olyan sablonok, amelyek az Ön ER konfigurációs szolgáltatójának tulajdonában vannak (azaz az **elektronikus jelentési** munkaterületen aktívként megjelölt szolgáltató). Miután kiválasztotta a sablonok egyikét, a **Sablon szerkesztése** lehetőséggel elindíthatja vagy folytathatja annak szerkesztését.
+- Más ER konfigurációszolgáltatók tulajdonában lévő sablonok szerkesztése. Miután kiválasztotta a sablonok egyikét, kiválaszthatja az **Új dokumentum** lehetőséget , és másolatot készíthet, amely az Ön ER konfigurációszolgáltatója tulajdonába kerül, majd megkezdheti a másolat szerkesztését.
+
 ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingTemplate1.png)
 
 A **Sablon** lap bemutatja a kiválasztott sablon tartalmát. Válassza a **Részletek** lapot a kiválasztott sablon részleteinek áttekintéséhez, valamint annak az elektronikusjelentés-formátumkonfigurációnak a megtekintéséhez, amelyben ez a sablon található. Figyelje meg, hogy minden sablon **Közzétett**állapotú, és a **Verzió** oszlopban nem tartalmaz részleteket. Ez azt jelenti, hogy ezek a sablonok jelenleg nincsenek szerkesztve.
+
+Ha az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára*** funkció be van kapcsolva a **Funkciókezelés** munkaterületen, akkor az **Üzleti dokumentumkezelés** munkaterületének fő rácsa azokat a sablonokat jeleníti meg, amelyek az Ön ER konfigurációs szolgáltatója (azaz az **Elektronikus jelentés** munkaterületen aktívként megjelölt szolgáltató) tulajdonában vannak. Miután kiválasztotta a sablonok egyikét, a **Sablon szerkesztése** lehetőséggel elindíthatja vagy folytathatja annak szerkesztését.
+
+Ha más ER konfigurációs szolgáltatók által birtokolt sablonokat szeretne dolgozni, válassza az **Új dokumentum** lehetőséget, egy másolat létrehozásához, amely az Ön ER szolgáltatója tulajdonába kerül. Ezután szerkesztheti a másolatot. További információ: [Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>A konfigurációs szolgáltató tulajdonában lévő sablonok szerkesztésének kezdeményezése
 

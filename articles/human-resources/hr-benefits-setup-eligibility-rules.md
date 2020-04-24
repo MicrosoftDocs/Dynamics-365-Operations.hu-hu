@@ -3,7 +3,7 @@ title: Jogosultsági szabályok és beállítások konfigurálása
 description: A Microsoft Dynamics 365 Human Resources szolgáltatás juttatáskezelésében megadhatja a jogosultsági szabályokat és beállításokat.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229901"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása
-
-[!include [banner](includes/preview-feature.md)]
 
 Miután konfigurálta a szükséges paramétereket a Microsoft Dynamics 365 Human Resources juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
 
@@ -57,6 +55,7 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
    | **Foglalkoztatási kategória** | Az alkalmazott foglalkoztatási kategóriája, ha a **Foglalkoztatási kategória használata** beállítás **Igen** értékűre van állítva. |
    | **Új dolgozóra vonatkozó szabály alkalmazása** | Megadja, hogy az új dolgozók új dolgozói időszakát kell-e használni a juttatások jogosultsági szabályának részeként. |
    | **Regisztrációs időszak** | Az az időszak, amikor az új dolgozói belépés engedélyezve van. Ha ezt a paraméterekben is beállítja, akkor a paraméterek beállítása felülbírálja ezt a beállítást. |
+   | **Korábbi foglalkoztatási állapot használata** | Megadja, hogy az alkalmazott korábbi foglalkoztatási státuszát kell-e használni a juttatás jogosultsági szabályának részeként. Megadhat például egy jogosultsági szabályt, amely felold egy fedezeti várakozási időszakot minden olyan alkalmazott számára, aki az **Elbocsátott** állapotról egy **Alkalmazott** állapotba került az előző munkaviszonyától számított 90 napon belül. |
 
 4. A **További feltételek** területen válassza ki a következő beállításokat, és adja meg a szükséges adatokat:
 

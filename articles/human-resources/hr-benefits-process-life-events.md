@@ -3,7 +3,7 @@ title: Életesemények feldolgozása
 description: A Microsoft Dynamics 365 Human Resources alkalmazotti életciklusa során minden alkalmazott találkozhat különböző életeseményekkel kapcsolatos változásokkal.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009290"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229929"
 ---
 # <a name="process-life-events"></a>Életesemények feldolgozása
-
-[!include [banner](includes/preview-feature.md)]
 
 A Microsoft Dynamics 365 Human Resources alkalmazotti életciklusa során minden alkalmazott találkozhat különböző életeseményekkel kapcsolatos változásokkal. Például a házasság, a foglalkoztatás változása vagy a függő fél/kedvezményezett változása. Az életesemények használatához engedélyeznie kell az életeseményeket a juttatás paraméterei űrlapon, be kell állítania az életesemény típusát, és be kell állítania a terv típusára vonatkozó beállításokat.
 
@@ -43,10 +41,10 @@ Ha például ma február elseje van, és február 14-én Joe Smith dolgozónak i
 
    | Mező | Leírás |
    | --- | --- |
-   | Regisztrációs időszak | Az életesemények feldolgozására szolgáló beléptetési időszak. |
-   | Jogi személy | Jogi személy, amelynek életeseményre vonatkozó feldolgozásra van szüksége. |
-   | Életesemény dátuma | A rendszer feldolgozza az összes mai napig esedékes eseményt a belépési időszakban. |
-   | Dolgozó | Az a dolgozó, akivel kapcsolatban fel kell dolgozni az életeseményt. Ha ezt a mezőt üresen hagyja, a program minden dolgozónál feldolgozza az életeseményeket. |
+   | **Regisztrációs időszak** | Az életesemények feldolgozására szolgáló beléptetési időszak. |
+   | **Jogi személy** | Jogi személy, amelynek életeseményre vonatkozó feldolgozásra van szüksége. |
+   | **Életesemény dátuma** | A rendszer feldolgozza az összes mai napig esedékes eseményt a belépési időszakban. |
+   | **Dolgozó** | Az a dolgozó, akivel kapcsolatban fel kell dolgozni az életeseményt. Ha ezt a mezőt üresen hagyja, a program minden dolgozónál feldolgozza az életeseményeket. |
 
 3. Ha a háttérben szeretné futtatni a folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
 

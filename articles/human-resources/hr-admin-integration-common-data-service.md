@@ -1,9 +1,9 @@
 ---
 title: Common Data Service-integráció konfigurálása
-description: A Common Data Service és a Microsoft Dynamics 365 Human Resources egy példánya között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
+description: A Common Data Service és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009252"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198422"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service-integráció konfigurálása
 
-A Common Data Service és a Microsoft Dynamics 365 Human Resources egy példánya között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
+A Common Data Service és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
 
 Ha kikapcsolja az integrációt, a felhasználók módosíthatják az emberi erőforrásokat vagy a Common Data Service megoldást, de ezek a módosítások nem szinkronizálhatók a két környezet között.
 
-Alapértelmezés szerint a Human Resources és a Common Data Service megoldás közötti integráció kikapcsolt vagy bekapcsolt állapotban van a környezetekben lévő bemutatóadatok jelenlététől függően:
-
-- **Kikapcsolva** olyan új környezetek számára, amelyek nem tartalmaznak bemutatóadatokat
-- **Bekapcsolva** olyan új környezetek számára, amelyek tartalmaznak bemutatóadatokat
-
-A bemutatóadatokat tartalmazó új környezetek a létesítéskor megkezdik az adatok szinkronizálását.
+Az adatintegráció Human Resources és a Common Data Service között alapértelmezetten ki van kapcsolva.
 
 Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integrációt:
 
 - Az adatokat az adatkezelési keretrendszeren keresztül tölti ki, és az adatokat többször kell importálni, hogy a megfelelő állapotba kerüljenek.
 
-- Probléma adódott az adatokkal a Human Resources vagy a Common Data Service programok valamelyikében. Ha kikapcsolta az integrációt, akkor úgy törölhet egy rekordot az egyik környezetből, hogy az a másikban megmarad. Amikor újra bekapcsolja az integrációt, az a rekord, amelynek környezetében nem történt törlés, újra visszaszinkronizálódik abba a környezetbe, ahonnan törölte azt. A szinkronizálás azután kezdődik, hogy a **Common Data Service-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja.
+- Probléma adódott az adatokkal a Human Resources vagy a Common Data Service programok valamelyikében. Ha kikapcsolta az integrációt, akkor úgy törölhet egy rekordot az egyik környezetből, hogy az a másikban megmarad. Amikor újra bekapcsolja az integrációt, az a rekord, amelynek környezetében nem történt törlés, szinkronizálva lesz abba a környezetbe, ahonnan törölte azt. A szinkronizálás azután kezdődik, hogy a **Common Data Service-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja.
 
 > [!WARNING]
 > Az adatintegráció kikapcsolásakor ügyeljen arra, hogy ne szerkessze mindkét környezetben ugyanazt a rekordot. Az integráció visszakapcsolásakor az utoljára szerkesztett rekordot szinkronizálja a rendszer. Ezért ha nem ugyanazokat a változtatásokat hajtotta végre a rekordon mindkét környezetben, adatvesztés léphet fel.
@@ -103,9 +98,17 @@ Ha szeretné, hogy a nyomon követés törlése után teljes szinkronizálás fu
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Entitás szinkronizálása a Human Resources és a Common Data Service között
 
-Akkor használja ezt az eljárást, ha a Common Data Service rendszerben végrehajtott módosítások túl sokára jelennek meg a Human Resources alkalmazásban, vagy ha a nyomon követés törlése után újra frissíteni kell a nyomonkövetési táblát.
+Ez a művelet akkor használható, ha:
 
-- Ha teljes szinkronizálást szeretne futtatni egy entitáson a Human Resources és a Common Data Service között, válassza ki az entitást a **CDS-entitás neve**  mezőben, majd válassza a **Szinkronizálás most** parancsot.
+- A Common Data Service változásai túl lassan jelennek meg a Human Resources alkalmazásban.
+
+- A nyomon követés törlése után frissítenie kell a nyomon követési táblát.
+
+Teljes szinkronizálás futtatása egy entitáshoz a Human Resources és Common Data Service között:
+
+1. A **CDS-entitás neve** mezőben válassza ki az entitást.
+
+2. Válassza a **Szinkronizálás most** lehetőséget.
 
 [![Teljes szinkronizálás futtatása](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

@@ -1,9 +1,9 @@
 ---
 title: Fedezeti lehetőségek létrehozása
-description: A Microsoft Dynamics 365 Human Resources fedezeti beállításai olyan fedezeti szintek, amelyek a résztvevők megválasztását jellemzik a juttatási tervben vagy programban, például az egészségügyi terv esetében a „csak alkalmazottak„ terv, vagy az életbiztosítási terv esetében a „kétszeri fizetés”.
+description: A Microsoft Dynamics 365 Human Resources fedezeti lehetőségei fedezeti szintek a résztvevőknek egy juttatási csomagban vagy programban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092706"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230177"
 ---
 # <a name="create-coverage-options"></a>Fedezeti lehetőségek létrehozása
 
-[!include [banner](includes/preview-feature.md)]
+A Microsoft Dynamics 365 Human Resources fedezeti lehetőségei fedezeti szintek a résztvevőknek egy juttatási csomagban vagy programban. A fedezeti beállítások például tartalmazhatják a **Csak munkavállaló** értéket egy egészségügyi csomaghoz vagy a **2x fizetés** értéket egy biztosítási csomaghoz. A definiálást követően, a juttatások fedezeti beállításai újra felhasználhatók. Egy beállítást egy vagy több tervhez is társítani lehet.
 
-A Microsoft Dynamics 365 Human Resources fedezeti beállításai olyan fedezeti szintek, amelyek a résztvevők megválasztását jellemzik a juttatási tervben vagy programban, például az egészségügyi terv esetében a „csak alkalmazottak„ terv, vagy az életbiztosítási terv esetében a „kétszeri fizetés”. Ha már egyszer megadták, a juttatások fedezeti beállításai újra felhasználhatók, valamint a beállítások újra társíthatók egy vagy több tervhez.
-
-A fedezeti beállítások megadása után csatolja a fedezeti beállításokat egy juttatásiterv-típushoz. A program ezt követően egy juttatási tervhez vagy programhoz rendeli hozzá a tervtípust. A tervtípushoz társított fedezeti beállítások minden olyan terv számára elérhetők lesznek, amelyeket az adott tervtípussal hoztak létre. 
+A fedezeti beállítások megadása után csatolja a fedezeti beállításokat egy juttatásiterv-típushoz. A program ezt követően egy juttatási tervhez vagy programhoz rendeli hozzá a tervtípust. A tervtípushoz társított fedezeti beállítások minden olyan terv számára elérhetők, amelyeket az adott tervtípussal hoztak létre. 
 
 1. A **Juttatások kezelése** munkaterületen, amely a **Beállítás** menüpont alatt található, válassza a **Fedezeti beállítások** elemet.
 

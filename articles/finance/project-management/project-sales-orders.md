@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: AX 10.0.2
-ms.openlocfilehash: 2f27e3e0a2d6aadc4c5224b55f8a416cbe4e83aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: d19ee9de70cd14c78a997b7a87c10b53ab3917b0
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551202"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249093"
 ---
 # <a name="project-sales-orders-for-time-and-material-projects"></a>Projekt alapú értékesítési rendelések idő és anyag projektekhez.
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Ez a témakör bemutatja hogyan hozhat létre értékesítési rendelést egy projekthez. Értékesítési rendelések csak **idő- és anyag** típusú projektekhez használhatók.
 

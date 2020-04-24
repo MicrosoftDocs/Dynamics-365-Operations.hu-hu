@@ -2,7 +2,7 @@
 title: Karbantartási kérések életciklus-állapotai
 description: Ez a témakör azt ismerteti, hogy miként állíthatja be a karbantartási kérés életciklus-állapotait az Eszközkezelés modulban.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571162"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209007"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Karbantartási kérések életciklus-állapotai
 

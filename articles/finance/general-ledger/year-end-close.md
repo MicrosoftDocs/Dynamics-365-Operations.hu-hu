@@ -3,7 +3,7 @@ title: Év végi zárás
 description: Ez a témakör Főkönyv év végi zárási eljárására vonatkozó folyamat beállítását és futtatását mutatja be.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175448"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259771"
 ---
 # <a name="year-end-close"></a>Év végi zárás
 
@@ -74,7 +74,7 @@ A **Mérlegdimenziók átvitele** beállítással határozható meg, hogy a mér
 Az év végi zárás folyamata nem felel meg a számlastruktúráknak. Ez azért van, mert a számlastruktúrák módosulhatnak egy pénzügyi év során, és az adott módosítások miatt nem mindig azonosítható a releváns számlastruktúra.  A nyitó tranzakciók létrehozásakor az egyenlegek előrekerülnek a pénzügyi dimenziókkal, ahogyan azok meg vannak határozva az év végi zárás sablonjában. A kezdő egyenlegek bejegyzései olyan pénzügyi dimenziókat is tartalmazhatnak, amelyek már nincsenek a jelenlegi számlastruktúrában, illetve azokat a szegmenskombinációkat, amelyek már nem érvényesek a jelenlegi számlastruktúrában. Ha szervezete ki szeretne zárni egy pénzügyi dimenziót a fenntartott bevételek nyitóegyenlegénél, állítsa a pénzügyi dimenziót **Egyetlen lezárása** értékre, és hagyja üresen a dimenzióértéket.
 
 ## <a name="run-the-year-end-close-process"></a>Év végi zárás folyamatának lefuttatása
-Az év végi zárás sablonjainak létrehozását követően az év végi zárás folyamata a **Pénzügyi év futtatása** lehetőség Művelet panelen történő kiválasztásával indítható el. Válassza ki az összes jogi személyt vagy azon részhalmazukat, amelyeken futtatni kívánja az év végi zárást. Amikor egy pénzügyi évre vonatkozóan először futtatja le az év végi zárást, valószínűleg ki fogja választani az összes jogi személyt annak érdekében, hogy kezdő egyenlegeket hozzon létre az összes jogi személyhez. Ha ismét lefuttatja az év végi zárást, akkor úgy is dönthet, hogy a folyamatot csak azoknál a jogi személyeknél futtatja le, amelyeknél a korrekciós bejegyzéseket beküldték. 
+Az év végi zárás sablonjainak létrehozását követően az év végi zárás folyamata a **Pénzügyi zárás futtatása** lehetőség Művelet panelen történő kiválasztásával indítható el. Válassza ki az összes jogi személyt vagy azon részhalmazukat, amelyeken futtatni kívánja az év végi zárást. Amikor egy pénzügyi évre vonatkozóan először futtatja le az év végi zárást, valószínűleg ki fogja választani az összes jogi személyt annak érdekében, hogy kezdő egyenlegeket hozzon létre az összes jogi személyhez. Ha ismét lefuttatja az év végi zárást, akkor úgy is dönthet, hogy a folyamatot csak azoknál a jogi személyeknél futtatja le, amelyeknél a korrekciós bejegyzéseket beküldték. 
 
 Válassza ki azt a pénzügyi évet, amelynél le szeretné futtatni az év végi zárást. Ha egynél több zárási időszak létezik a pénzügyi év utolsó időszakára, akkor az **Időszak neve** mező elérhetővé válik, és Ön kiválaszthatja, hogy melyik zárási időszak küldje be a Záró tranzakciót, amennyiben a beállítások szerint létre kell hozni azt. 
 

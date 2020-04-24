@@ -3,7 +3,7 @@ title: A lista kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott listafüggvényekről.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9461d0afd75f421cf03ddefed5dac379f1369ec7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917764"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201043"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>A lista kategóriába tartozó ER-függvények listája
 
@@ -46,6 +46,7 @@ Az elektronikus jelentés (ER) listafüggvényeivel kezelhetők a *Rekordlista* 
 | [Index](er-functions-list-index.md)                       | Ez a függvény egy *Tároló (rekord)* értéket ad vissza, amely a megadott numerikus index használatával került kiválasztásra a megadott listában. Ha az index kívül esik a listán megadott rekordok tartományán, akkor a függvény kivételt dob. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Ez a függvény **IGAZ** *Logikai* értéket ad eredményül, ha a megadott lista nem tartalmaz rekordokat. Ellenkező esetben **HAMIS** *logikai* eredményt ad. |
 | [Lista](er-functions-list-list.md)                         | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a megadott argumentumokból létrehozott új listából áll.|
+| [ListJoin](er-functions-list-listjoin.md)                 | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a megadott argumentumokból létrehozott új listát jeleníti meg.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a *Felsorolás* vagy a *Tároló (rekord)* típus megadott argumentumának szerkezete alapján jön létre. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Ez a függvény egy *Rekordlista* értéket ad vissza, amely csak a megadott lista első rekordjából áll.|
 | [OrderBy](er-functions-list-orderby.md)                   | Ez a függvény a megadott listát *Rekordlista* értékként adja vissza, miután a megadott argumentumok szerint rendezésre került. Ezek az argumentumok kifejezésként adhatók meg. |

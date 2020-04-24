@@ -3,7 +3,7 @@ title: Állapotok és életciklus-dokumentálás
 description: Ez a témakör a Microsoft Dynamics 365 Commerce oldalelemeinek különböző dokumentumállapotait mutatja be.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4f1c462f734b2d58843308f0f877fe18a4d9af7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261513"
 ---
 # <a name="document-states-and-lifecycle"></a>Állapotok és életciklus-dokumentálás
 
@@ -37,13 +37,13 @@ Az [Oldalelemek](page-elements-overview.md) témakör a tartalomkezelő rendszer
 
 A következő táblázat bemutatja a Commerce oldalelemeinek lehetséges dokumentumállapotait.
 
-| Dokumentum állapota | Leírás |
-|---|---|
-| Lefoglalva | Ha Ön kivesz egy CMS-elemet, akkor azt más hitelesített rendszerfelhasználók nem szerkeszthetik. Az elemen Ön által végzett módosításokat csak Ön láthatja. |
-| Bejelentkezve | Ha egy CMS-elemet beadnak, akkor az összes többi hitelesített rendszerfelhasználó láthatja az összes módosítást, valamint ezek a felhasználók ki is vehetik ezeket az elemeket, és szerkeszthetik őket. Az egyes beadások az elemek előzményeiben létrehoznak egy dokumentumverzió-rekordot. |
-| Közzétéve | Egy CMS-elem közzétételekor a rendszer feltolja az Ön éles webhelyére, és így az interneten a nem hitelesített külső felhasználók számára is felfedezhetővé válik. A cikkeket csak akkor lehet közzétenni, ha beadták őket. |
-| Mentve | A kivett CMS-elemek módosításait a program a CMS-be mentheti, mielőtt a elemet beadták vagy közzétették. Ezek a mentett változtatások nem láthatók a többi hitelesített rendszerfelhasználó számára mindaddig, amíg be nem adták az elemet. Ezek addig nem láthatók a külső felhasználók számára, amíg nem teszik közzé. |
-| Elvetett kivétel | Amikor egy kivett CMS-elemet ekvetnek, az összes mentett módosítás törlődik, és az elemet a rendszer visszaállítja arra a verzióra, amelyet legutóbb adtak be. |
+| Dokumentum állapota      | Webhelykészítő művelet        | Leírás                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Felelősnél         | Válassza ki a **Szerkesztés** opciót.           | Ön kivette a vonatkozó dokumentumot. Amikor egy dokumentum ebben az állapotban van, nem módosíthatja a többi hitelesített rendszerfelhasználó, és a dokumentumban elvégzett módosítások csak az Ön számára láthatók. |
+| Mentve               | Válassza a **Mentés** lehetőséget.           | A kivett dokumentum módosításait az adatbázisba menti a program, de a dokumentum még nincs beküldve vagy közzétéve. A mentett változtatások nem láthatók a többi hitelesített rendszerfelhasználó számára mindaddig a szerző ki nem választja a **Szerkesztés befejezése** lehetőséget. Ezek addig nem láthatók a külső felhasználók számára, amíg nem teszik közzé. |
+| Elvetett kivétel | Válassza a **Módosítások elvetése** parancsot.  | A kivett dokumentum minden módosítását elveti, és a rendszer visszaállítja az utolsó beküldött verzióra. |
+| Bejelentkezve          | Válassza a **Szerkesztés befejezése** lehetőséget. | A szerkesztett dokumentum be van küldve. Minden változtatás látható a többi hitelesített rendszerfelhasználó számára is, és ezek a felhasználók is módosíthatják a dokumentumot. Az egyes beadások az elemek előzményeiben létrehoznak egy dokumentumverzió-rekordot. |
+| Közzétéve           | Válassza a **Közzététel** lehetőséget.        | A program közzéteszi a dokumentumot, és a változtatások át lesznek küldve az élő webhelyre, és külső felhasználók számára is láthatóvá válnak. A cikkek csak akkor tehetők közzé, ha először be lettek küldve **Szerkesztés befejezése** lehetőség kiválasztásával. |
 
 ## <a name="additional-resources"></a>További erőforrások
 

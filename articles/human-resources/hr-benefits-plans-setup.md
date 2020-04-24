@@ -3,7 +3,7 @@ title: Juttatási konstrukció létrehozása
 description: Juttatási konstrukciókat állíthat be a Dynamics 365 Human Resources rendszerben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009294"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230108"
 ---
 # <a name="create-a-benefits-plan"></a>Juttatási konstrukció létrehozása
-
-[!include [banner](includes/preview-feature.md)]
 
 Ez a cikk bemutatja. hogyan lehet juttatási konstrukciókat beállítani a Dynamics 365 Human Resources alkalmazásban.
 
@@ -39,16 +37,16 @@ Ez a cikk bemutatja. hogyan lehet juttatási konstrukciókat beállítani a Dyna
 
    | Mező | Leírás |
    | --- | --- |
-   | Konstrukció | A konstrukció egyedi azonosítója. |
-   | Leírás | A konstrukció leírása. |
-   | Konstrukció típusa | Amikor új konstrukciót hoz létre, meg kell adnia a konstrukció típusát. A konstrukciótípus a meghatározott típusú juttatások magas szintű csoportosítása. A konstrukciótípusok azt határozzák meg, hogy az alkalmazottak beléphetnek-e több adott típusú konstrukcióba, hogy a kapcsolattartók kedvezményezettek vagy függők felek-e, valamint meghatározzák a fedezeti beállításokat. Létrehozhat új egyéni konstrukciókat, amelyek megfelelnek a juttatási ajánlatainak. A konstrukciótervek fő típusai a következők: <ul><li>401K</li><li>ADD</li><li>Fogászati</li><li>Fitnesz</li><li>FSA</li><li>Élet</li><li>LTD</li><li>Orvosi</li><li>PTO</li><li>STD</li><li>Látás</li></ul> |
-   | Konstrukció típuskódja | A konstrukció típusának kódja. |
-   | Program | Azt a programot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
-   | Csomag | Azt a csomagot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
-   | Fő | Megadja, hogy a konstrukció az alapkonstrukció-e azon a csomagon belül, amelyhez hozzárendelték. |
-   | Állapot | A juttatási konstrukció aktuális állapotát jelzi. Az alapértelmezett érték az Aktív. Ha az állapotot Inaktív értékűre állítja, a konstrukció nem lesz választható a belépés során. |
-   | Érvényesség kezdő dátuma és időpontja | Az a dátum és időpont, amikor a konstrukció érvényessége kezdődik. Az alapértelmezett érték az aktuális rendszerdátum. |
-   | Érvényesség záró dátuma és időpontja | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik (az állapot értéke Inaktív). Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
+   | **Konstrukció** | A konstrukció egyedi azonosítója. |
+   | **Leírás** | A konstrukció leírása. |
+   | **Konstrukció típusa** | Amikor új konstrukciót hoz létre, meg kell adnia a konstrukció típusát. A konstrukciótípus a meghatározott típusú juttatások magas szintű csoportosítása. A konstrukciótípusok azt határozzák meg, hogy az alkalmazottak beléphetnek-e több adott típusú konstrukcióba, hogy a kapcsolattartók kedvezményezettek vagy függők felek-e, valamint meghatározzák a fedezeti beállításokat. Létrehozhat új egyéni konstrukciókat, amelyek megfelelnek a juttatási ajánlatainak. A konstrukciótervek fő típusai a következők: <ul><li>401K</li><li>ADD</li><li>Fogászati</li><li>Fitnesz</li><li>FSA</li><li>Élet</li><li>LTD</li><li>Orvosi</li><li>PTO</li><li>STD</li><li>Látás</li></ul> |
+   | **Konstrukció típuskódja** | A konstrukció típusának kódja. |
+   | **Program** | Azt a programot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
+   | **Csomag** | Azt a csomagot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
+   | **Fő** | Megadja, hogy a konstrukció az alapkonstrukció-e azon a csomagon belül, amelyhez hozzárendelték. |
+   | **Állapot** | A juttatási konstrukció aktuális állapotát jelzi. Az alapértelmezett érték az Aktív. Ha az állapotot Inaktív értékűre állítja, a konstrukció nem lesz választható a belépés során. |
+   | **Érvényesség kezdő dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége kezdődik. Az alapértelmezett érték az aktuális rendszerdátum. |
+   | **Érvényesség záró dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik (az állapot értéke Inaktív). Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
 
 4. A **Konfiguráció** lapon adja meg a megfelelő értékeket a következő mezőkben a létrehozandó konstrukció típusától függően:
 
@@ -77,42 +75,42 @@ Ez a cikk bemutatja. hogyan lehet juttatási konstrukciókat beállítani a Dyna
 
    | Mező | Leírás |
    | --- | --- |
-   | Regisztráció engedélyezése/folytatása | Megadja, hogy az alkalmazottak beléphetnek-e a konstrukcióba, ha megfelelnek a jogosultsági követelményeknek.</br></br>A Nem érték megadása esetén a konstrukció nem lesz elérhető az alkalmazottak számára, amikor feldolgozza a jogosultságot. |
-   | Automatikus regisztráció előző év alapján | Megadja, hogy a rendszer automatikusan regisztrálja-e a jogosult alkalmazottakat a konstrukcióba, ha az előző évben regisztrálva voltak. |
-   | Automatikus regisztráció alapértelmezés szerint | Megadja, hogy kell-e választani alapértelemzés szerint konstrukciót a belépéshez. A konstrukció nem kötelező, ezért az alkalmazott módosíthatja az alapértelmezett választást. |
-   | Lezárva új regisztrációk elől | Megadja, hogy a konstrukciót azokra a jogosult alkalmazottakra kell-e korlátozni, akik az előző évben léptek be a konstrukcióra. |
-   | Kötelező konstrukció | Megadja, hogy a rendszer automatikusan belépteti-e az alkalmazottakat a konstrukcióba. Az alkalmazottak nem módosíthatják a belépésre vonatkozó beállítást. |
-   | Érvényességi dátum | Az a dátum, amikor a konstrukció létre lett hozva a vállalatban. |
-   | Szállítói számla (juttatás szállítója) | Az a szállító, amelynek a vállalat prémiumot fizet a konstrukcióért. |
-   | Név (juttatás szállítója) | A szállító neve. |
-   | Szállítói hivatkozás (juttatás szállítója) | A konstrukcióhoz tartozó szállító hivatkozása. Például a vállalat csoportkonstrukciójának száma. |
-   | Másodlagos hivatkozás (juttatás szállítója) | A konstrukcióhoz tartozó szállító másodlagos hivatkozása. Például a vállalat számlaszáma. |
-   | Pénznem (juttatás szállítója) | A szállítónak fizetett prémiumokhoz használt pénznem. |
-   | Költségszámla (juttatás szállítója) | A konstrukcióhoz tartozó prémiumokhoz használt főkönyvi számla. |
-   | Szállítói számla (juttatás adminisztrátora) | Az a szállító, amelynek a vállalat fizet a konstrukció adminisztrálásáért. Ha a konstrukció önkiszolgáló adminisztrálású, hagyja üresen ezt a mezőt. |
-   | Név (juttatás adminisztrátora) | A juttatás adminisztrátori szállítójának neve. |
-   | Szállítói hivatkozás (juttatás adminisztrátora) | A konstrukcióhoz tartozó adminisztrátori szállító hivatkozása. |
-   | Másodlagos hivatkozás (juttatás adminisztrátora) | A konstrukcióhoz tartozó adminisztrátori szállító másodlagos hivatkozása. |
-   | Pénznem (juttatás adminisztrátora) | A juttatási adminisztrátornak fizetett összegekhez használt pénznem. |
-   | Költségszámla (juttatás adminisztrátora) | A konstrukció adminisztrációjához kapcsolódó költségek költségszámlájaként használt főkönyvi számla. |
+   | **Regisztráció engedélyezése/folytatása** | Megadja, hogy az alkalmazottak beléphetnek-e a konstrukcióba, ha megfelelnek a jogosultsági követelményeknek.</br></br>A Nem érték megadása esetén a konstrukció nem lesz elérhető az alkalmazottak számára, amikor feldolgozza a jogosultságot. |
+   | **Automatikus regisztráció előző év alapján** | Megadja, hogy a rendszer automatikusan regisztrálja-e a jogosult alkalmazottakat a konstrukcióba, ha az előző évben regisztrálva voltak. |
+   | **Automatikus regisztráció alapértelmezés szerint** | Megadja, hogy kell-e választani alapértelemzés szerint konstrukciót a belépéshez. A konstrukció nem kötelező, ezért az alkalmazott módosíthatja az alapértelmezett választást. |
+   | **Lezárva új regisztrációk elől** | Megadja, hogy a konstrukciót azokra a jogosult alkalmazottakra kell-e korlátozni, akik az előző évben léptek be a konstrukcióra. |
+   | **Kötelező konstrukció** | Megadja, hogy a rendszer automatikusan belépteti-e az alkalmazottakat a konstrukcióba. Az alkalmazottak nem módosíthatják a belépésre vonatkozó beállítást. |
+   | **Érvényességi dátum** | Az a dátum, amikor a konstrukció létre lett hozva a vállalatban. |
+   | **Szállítói számla** (juttatás szállítója) | Az a szállító, amelynek a vállalat prémiumot fizet a konstrukcióért. |
+   | **Név** (juttatás szállítója) | A szállító neve. |
+   | **Szállítói hivatkozás** (juttatás szállítója) | A konstrukcióhoz tartozó szállító hivatkozása. Például a vállalat csoportkonstrukciójának száma. |
+   | **Másodlagos hivatkozás** (juttatás szállítója) | A konstrukcióhoz tartozó szállító másodlagos hivatkozása. Például a vállalat számlaszáma. |
+   | **Pénznem** (juttatás szállítója) | A szállítónak fizetett prémiumokhoz használt pénznem. |
+   | **Költségszámla** (juttatás szállítója) | A konstrukcióhoz tartozó prémiumokhoz használt főkönyvi számla. |
+   | **Szállítói számla** (juttatás adminisztrátora) | Az a szállító, amelynek a vállalat fizet a konstrukció adminisztrálásáért. Ha a konstrukció önkiszolgáló adminisztrálású, hagyja üresen ezt a mezőt. |
+   | **Név** (juttatás adminisztrátora) | A juttatás adminisztrátori szállítójának neve. |
+   | **Szállítói hivatkozás** (juttatás adminisztrátora) | A konstrukcióhoz tartozó adminisztrátori szállító hivatkozása. |
+   | **Másodlagos hivatkozás** (juttatás adminisztrátora) | A konstrukcióhoz tartozó adminisztrátori szállító másodlagos hivatkozása. |
+   | **Pénznem** (juttatás adminisztrátora) | A juttatási adminisztrátornak fizetett összegekhez használt pénznem. |
+   | **Költségszámla** (juttatás adminisztrátora) | A konstrukció adminisztrációjához kapcsolódó költségek költségszámlájaként használt főkönyvi számla. |
 
 6. A **Szűrők** lapon lehetőség van a szükség szerinti szűrésre. A szűrés a következő mezők szerint végezhető el:
 
-   - Üzleti egység
-   - Részleg 
-   - Jogi személy
-   - Helyszín
-   - Beosztás
+   - **Üzleti egység**
+   - **Részleg**
+   - **Jogi személy**
+   - **Helyszín**
+   - **Beosztás**
 
 7. A **Jogosultsági szabályok** lapon adja meg a megfelelő értékeket a következő mezőkben:
 
    | Mező | Leírás |
    | --- | --- |
-   | Sor száma | Jogosultsági szabály sorának száma. |
-   | Jogosultsági szabály | A juttatási konstrukcióra alkalmazandó jogosultsági szabály. Ez a jogosultsági szabály lesz alkalmazva a megfelelő művelettípusra, és lesz társítva a megadott fedezeti várakozási időszakhoz és a levonásokhoz. |
-   | Művelettípus | A jogosultsági szabályra alkalmazandó művelet: juttatásokok regisztrálása vagy juttatások lejárata. |
-   | Fedezet várakozási időszaka | A Várakozási időszakok képernyőről származó érték. A fedezet várakozási időszaka határozza meg azon napok vagy hónapok számát, ameddig az alkalmazott várja a juttatás fedezetét vagy a juttatás lejáratát a jogosultsági szabályban és a művelettípusban található feltételek alapján. |
-   | Levonás várakozási időszaka | A Várakozási időszakok képernyőről származó érték. A levonás várakozási időszaka határozza meg azon napok vagy hónapok számát, ameddig az alkalmazott várja a juttatás levonását a fizetéséből a jogosultsági szabályban és a művelettípusban található feltételek alapján. |
+   | **Sor száma** | Jogosultsági szabály sorának száma. |
+   | **Jogosultsági szabály** | A juttatási konstrukcióra alkalmazandó jogosultsági szabály. Ez a jogosultsági szabály lesz alkalmazva a megfelelő művelettípusra, és lesz társítva a megadott fedezeti várakozási időszakhoz és a levonásokhoz. |
+   | **Művelettípus** | A jogosultsági szabályra alkalmazandó művelet: juttatásokok regisztrálása vagy juttatások lejárata. |
+   | **Fedezet várakozási időszaka** | A Várakozási időszakok képernyőről származó érték. A fedezet várakozási időszaka határozza meg azon napok vagy hónapok számát, ameddig az alkalmazott várja a juttatás fedezetét vagy a juttatás lejáratát a jogosultsági szabályban és a művelettípusban található feltételek alapján. |
+   | **Levonás várakozási időszaka** | A Várakozási időszakok képernyőről származó érték. A levonás várakozási időszaka határozza meg azon napok vagy hónapok számát, ameddig az alkalmazott várja a juttatás levonását a fizetéséből a jogosultsági szabályban és a művelettípusban található feltételek alapján. |
 
 8. Válassza a **Mentés** lehetőséget.
 

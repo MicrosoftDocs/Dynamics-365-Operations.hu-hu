@@ -3,7 +3,7 @@ title: Szolgáltatások kezelése
 description: Útmutató a Dynamics 365 Human Resources rendszerében található új szolgáltatások be- és kikapcsolásához.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 84ff11e8237ce0669f7f6ac70c5b4411c5d4b466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230200"
 ---
 # <a name="manage-features"></a>Szolgáltatások kezelése
 
@@ -50,9 +50,14 @@ Az előzetes funkciók eléréséhez előbb engedélyeznie kell azokat a környe
 
 3. Az előnézeti funkció engedélyezéséhez válassza ki a listából, majd válassza az **Engedélyezés** lehetőséget. Az előnézeti funkció letiltásához válassza ki a listából, majd válassza a **Letiltás** lehetőséget.
 
-## <a name="preview-feature-benefits-management"></a>Előnézeti funkció: Juttatások kezelése
+## <a name="enable-or-disable-benefits-management"></a>Juttatáskezelés engedélyezése vagy letiltása
 
-A juttatások kezelése rugalmas megoldást nyújt, amely a juttatások széles választékát támogatja, valamint egyszerű használhatóságot biztosít az alkalmazottak számára, amelyek bemutatják az ajánlatait. A juttatások kezeléskonfigurációjával és a használatával kapcsolatos további tudnivalókat lásd [Juttatáskezelés – áttekintés](hr-benefits-management-overview.md).
+Ha engedélyezni szeretné a juttatások kezelését, használja ugyanezt az eljárást az [Előzetes funkció engedélyezése vagy letiltása](hr-admin-manage-features.md?enable-or-disable-preview-features) részben.
+
+> [!IMPORTANT]
+> Miután engedélyezte a Juttatások kezelését egy **Termelési** környezetben, azt nem lehet letiltani. A **Teszt** környezetekben azonban letilthatja a juttatások kezelését.
+
+A juttatások kezeléskonfigurációjával és a használatával kapcsolatos további tudnivalókat lásd [Juttatáskezelés – áttekintés](hr-benefits-management-overview.md).
 
 A juttatások kezelése helyettesíti a funkciót a **Juttatások** munkaterületen. Ha engedélyezi a Juttatások kezelése előnézeti funkciót, akkor a következő képernyők már nem érhetők el a **Juttatások** munkaterületen:
 
@@ -65,62 +70,23 @@ A juttatások kezelése helyettesíti a funkciót a **Juttatások** munkaterüle
 - **Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek**
 - **Jogosultsági események**
 
-A képernyők adatait csak olvasható módban lehet megtekinteni. Ha szerkeszteni szeretné az adatokat, először le kell tiltania a Juttatások kezelése előnézeti funkcióját.
+A képernyők adatait csak olvasható módban lehet megtekinteni. Ha szerkeszteni szeretné az adatokat, először le kell tiltania a Juttatások kezelését (csak a **Teszt** környezetekre érvényes).
 
-### <a name="benefits-management-known-issues"></a>Juttatáskezelés – ismert problémák
+## <a name="enable-or-disable-leave-and-absence"></a>Szabadság és távollét engedélyezése vagy letiltása
 
-#### <a name="life-events"></a>Életesemények
+Ha engedélyezni szeretné a Szabadág és távollét funkciót használja ugyanazt az eljárást az [Előzetes funkció engedélyezése vagy letiltása](hr-admin-manage-features.md?enable-or-disable-preview-features) részben.
 
-Az életesemények feldolgozásakor a felhasználó hibaüzenetet kap:
+> [!IMPORTANT]
+> A **Több szabadságtípust** nem lehet letiltani a Szabadság és távollét modulban, miután engedélyezte azt. Ez a **Teszt** és a **Termelési** környezetekre egyaránt vonatkozik.
 
-A fedezet kezdő dátumának a *Tervidőszak kezdete* és a *Tervidőszak vége* között kell lennie. 
+Szabadság és távollét előzetes funkcióival kapcsolatos további tudnivalókat a [Szabadság és távollét előzetes funkciói](hr-leave-and-absence-overview.md?leave-and-absence-preview-features) részben találja.
 
-Az életesemény feldolgozása a várakozásnak megfelelően folytatódik.
-
-#### <a name="eligibility-processing"></a>Jogosultság feldolgozása
-
-Ha jogosultságokat futtat olyan juttatásokra, amelyek 1–5-szörös fizetést, a fizetés százalékát és a fix összeg fedezeti összegét használják, akkor a juttatási részletek dátumát az alkalmazott kezdési dátumára kell állítani az **Alkalmazási előzményekben**, a ledolgozott munkaórákkal, a fizetési gyakorisággal és az évi juttatások fizetési összegével együtt. Ha a dolgozóhoz fix kompenzáció van megadva, adja meg a ledolgozott órákkal együtt a fizetési gyakoriságot, és a program kiszámítja az éves fizetés összegét. Ha az alkalmazott bérezéses, akkor a ledolgozott órákat nem kell megadni. Javasoljuk, hogy új dolgozók létrehozásakor először adja meg a fix kompenzációt. A juttatás részleteire vonatkozó rekord frissítéséhez lépjen a következőre: **Dolgozó > Dolgozói előzmények > Foglalkoztatás részletei**. A dátum módosítása a dolgozók kezdő dátumára.
-
-#### <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
-
-Az alkalmazottak ki tudnak választani egy olyan tervet, amelyre nem jogosultak, de amelyet meg tudnak tekinteni. Például: egy dolgozónak nincsenek függő felei, de kiválaszthat egy egészségügyi konstrukciót családi fedezet lehetőséggel.
-
-A program nem számítja ki az alkalmazotti összeget az életbiztosítás fedezeti összegének frissítésekor. Például ha egy alkalmazottnak életbiztosítási csomagot ajánl fel, akkor egészen 50 000 dollár fedezeti összegig választhatnak 0,36 dollár/1000 dollár fedezeti költségen.  Amikor az alkalmazott frissíti a fedezet összegét, az alkalmazotthoz kapcsolódó költség nulla marad.
-
-Olyan juttatási terv esetében, amely csak az adott tervtípus egyetlen beállítását teszi lehetővé, a felhasználó hibaüzenetet kap arra vonatkozóan, hogy a terv kiválasztása után megpróbálták-e lemondani a tervet. Például egy felhasználó kiválaszt egy egyészségügyi konstrukciót, és kosárba teszi. A felhasználó ezután kiválasztja a **Lemondás** lehetőséget, ezzel lemondva a másik egészségügyi konstrukciót. A felhasználó hibaüzenetet kap.
-
-## <a name="preview-features-in-leave-and-absence"></a>Előnézeti funkciók a Szabadság és távollét pontban
-
-A Szabadság és távollét pontban található előnézeti funkciók a következők:
-
-- **Szabadság és távollét – naptár** – a szabadság és távollétre vonatkozó paraméterek az **Emberi erőforrások – paraméterek** pontból egy új képernyőre kerülnek: **Szabadság és távollét – paraméterek**. Az új képernyő tartalmaz egy új **Naptár** lapot. Ez az előnézet csak a paraméterek egy részhalmazát engedélyezi. Az új képernyőt a **Hivatkozások** lapról érheti el, amely a **Szabadság és távollét** munkaterületen található. A naptárak a következőket tartalmazzák:
-  - **Vállalati naptár** – megjeleníti minden alkalmazott távolléti kérelmét. Az **Emberi erőforrás** szerepkörrel rendelkező személyek hozzáférhetnek ehhez a naptárhoz a **Hivatkozások** lapon, amely a **Szabadság és távollét** munkaterületen található.
-  - **Vezetői csoport naptára** – megjeleníti az összes közvetlen jelentést a távolléti kérelmekkel kapcsolatban. A vezetők a naptárt a **Saját csapat** lapon érhetik el az alkalmazotti önkiszolgáló rendszeren, a **Szabadság és távollét** munkaterületen. 
-
-- **Szabadság és távollét – ünnepnapokat tartalmazó naptárak** – a szabadságtípusok tartalmaznak egy új, **Ünnepnap** lehetőséget is, amely a munkaidő-naptárral együtt használatos. Az ünnepnapok és a leállások által meghatározott napok **Ünnepnap** típusúként vannak meghatározva a munkanapok létrehozásakor. Az elhatárolások feldolgozásakor megtörténik a naptárhoz hozzárendelt alkalmazottak korrekciója a munkanapra eső ünnepnapok esetén.
-
-- **Szabadságelhatárolás ellenőrzése** – az új képernyő lehetővé teszi annak ellenőrzését az összes, illetve egyes alkalmazottak számára, hogy mikor dolgozták fel vagy törölték az elhatárolást. Ezt az új képernyőt a **Hivatkozások** lapról érheti el, amely a **Szabadság és távollét** munkaterületen található.
-
-- **Szabadságelhatárolás törlése** – most már törölhet bizonyos szabadsági tervekre vonatkozó elhatárolási rekordokat. Ezt az új beállítást a **Hivatkozások** lapról érheti el, amely a **Szabadság és távollét** munkaterületen található. Az egyes alkalmazottak esetében ez a beállítás a **Szabadság és távollét** csoportosításban jelenik meg az alkalmazott profilján. 
-
-- **A szabadságelhatárolás kerekítése** – a **Szabadság típusa** pont új beállításai meghatározzák a kerekítés típusát, valamint a kerekítés tizedesjegy-pontosságát az elhatárolási folyamat során. Az elhatárolások feldolgozása során a kerekítés és a pontosság az elhatárolási rekordokban is alkalmazandó. 
-
-- **Több szabadságtípus konfigurálása egyetlen szabadságtervhez** – a szabadság típusú elhatárolási ütemezés új oszlopa lehetővé teszi a szabadságon és a távolléti tervben a különböző elhatárolási ütemezések megadását. Az előző **Szabadságtípus** mezőt eltávolították. Az alkalmazotti belépés során a szabadságtípusra vonatkozó egyenlegek ezentúl egy táblázatban jelennek meg, nem a képernyő felső részén.
-
-  > [!IMPORTANT]
-  > Ez a funkció nem kapcsolható ki, miután engedélyezte.
-
-- **Az alkalmazott teljes munkaidő foglalkoztatással való egyenértékűség (FTE) alkalmazása az elhatároláshoz** – a szabadság elszámolási ütemezésének új oszlopa lehetővé teszi a FTE használatát az elhatároláshoz. Az elhatárolások feldolgozásakor az alkalmazás az alkalmazott elsődleges beosztását, valamint az arányosított elhatárolt összeg megállapításához meghatározott FTE-t használja.
-
-  > [!NOTE]
-  > Ez a funkció csak akkor érhető el, ha engedélyezi a **Több szabadságtípus konfigurálása egy szabadsági terven belül** opciót. 
-
-## <a name="feedback"></a>Visszajelzés
+## <a name="send-us-feedback"></a>Visszajelzés küldése
 
 Szívesen vesszük visszajelzését bármely előnézeti funkcióval kapcsolatos tapasztalatairól. Javasoljuk, hogy a rendszeresen küldje el a visszajelzését a következő webhelyeken, amikor ezeket a funkciókat használja vagy bármilyen más funkciót használ:
 
 - [Közösségi](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – Ez a webhely remek fórum, ahol a felhasználók megbeszélhetik az eseteket, kérdéseket tehetnek fel és segítséget kaphatnak a közösségtől.
-- Tájékoztasson bennünket, hogy mely funkciókat szeretné látni a termékben, illetve milyen változásokat végezzünk a meglévő funkciókon. Ossza meg ötleteit a termékkel kapcsolatban: [Ötletek a Human Resources alkalmazással kapcsolatban](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+- Tájékoztasson bennünket, hogy mely funkciókat szeretné látni a termékben, illetve milyen változásokat végezzünk a meglévő funkciókon. Ossza meg ötleteit a termékkel kapcsolatban: [Ötletek a Human Resources alkalmazással kapcsolatban](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources).
     
 Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani képes adatokat) a visszajelzésében vagy a termékértékelés benyújtásakor. Előfordulhat, hogy az összegyűjtött információkat tovább elemzik, és azokat nem használjuk fel kérdések megválaszolására az alkalmazandó adatvédelmi törvényekkel összhangban. A programokhoz kapcsolódóan külön gyűjtött személyes adatokra a [Microsoft adatvédelmi nyilatkozat](https://privacy.microsoft.com/privacystatement) vonatkozik.
 

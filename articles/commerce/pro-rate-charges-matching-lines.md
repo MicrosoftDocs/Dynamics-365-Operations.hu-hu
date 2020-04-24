@@ -3,7 +3,7 @@ title: Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 description: Ez a témakör további képességeket mutat be a Commerce csatorna rendeléseihez kapcsolódó automatikus költéségek kiszámításához és alkalmazásához a haladó automatikus költségek funkcióval..
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022825"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175131"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 
@@ -37,7 +37,7 @@ Ez a funkció csak akkor érhető el, ha a [speciális automatikus költségek](
 
 Ez az új funkció nagyobb rugalmasságot nyújt szervezeteknek úgy, hogy a fejlécszintű automatikus díjak kiszámítás megtörténik, és alkalmazva lesznek az értékesítési tranzakciókra.
 
-Az alkalmazás 10.0.1-esnél korábbi verzióiban, a fejlécszintű automatikus díjak, amelyekhez egy konkrét szállításimód-kapcsolat tartozik csak akkor lesznek kiszámítva, ha van egyezés a szállítási móddal, amely meg van határozva az értékesítési rendelés fejlécében.
+Az alkalmazás 10.0.1 verziónál korábbi verzióiban, a fejlécszintű automatikus díjak, amelyekhez egy konkrét szállításimód-kapcsolat tartozik csak akkor lesznek kiszámítva, ha van egyezés a szállítási móddal, amely meg van határozva az értékesítési rendelés fejlécében.
 
 Például fejlécszintű automatikus díjak vannak meghatározva a **99**-es szállítási módhoz és a **11**-es szállítási módhoz. Egy értékesítési rendelés jön létre, és a **99**-es szállítási mód van megadva a rendelés fejlécében. Azonban egyes értékesítési sorok úgy vannak beállítva, hogy azok a **11**-es szállítási mód használatával lesznek szállítva. Ebben az esetben csak azon fejlécszintű díjak, amelyek a **99**-es szállítási módhoz vannak kapcsolva lesznek figyelembe véve és alkalmazva az értékesítési rendelésre vonatkozóan.
 
@@ -45,7 +45,7 @@ A Commerce rendszerben a fejlécszintű díjak egy további funkcióval is rende
 
 Egyes szervezetek szeretnék kihasználni a többszintű díjkalkuláció előnyeit, amelyek elérhetők a fejlécszintű díjakkal. Azonban több szállítási módot tartalmazó esetekben, arról is gondoskodni szeretnének, hogy a számított költségek az illeszkedő szállítási módon alapulnak, amely meg van határozva az egyes értékesítési sorokon.
 
-Immár fejlécszintű automatikus díjakat is beállíthat, hogy az összes a szállítási mód figyelembe legyen véve a díjak számításakor. Ez a funkció összetettebb számítási logikát igényel a fejlécszintű díjak számításához. A logikai egy csoportba rendezi az összes azonos szállítási móddalan leszállított cikkekm, majd ezt a csoport tekinti a számítási csoportnak, a cikkekhez a fejlécszintű automatikus díjak számításakor. Ugyanazzal szállítási móddal rendelkező cikkekhez az automatikus díjak a cikkek összesített eladásai értéke alapján lesznek számítva. Így meghatározásra kerül a megfelelő automatikus díj szintje.
+Immár fejlécszintű automatikus díjakat is beállíthat, hogy az összes a szállítási mód figyelembe legyen véve a díjak számításakor. Ez a funkció összetettebb számítási logikát igényel a fejlécszintű díjak számításához. A logikai egy csoportba rendezi az összes azonos szállítási móddalan leszállított cikkek, majd ezt a csoport tekinti a számítási csoportnak, a cikkekhez a fejlécszintű automatikus díjak számításakor. Ugyanazzal szállítási móddal rendelkező cikkekhez az automatikus díjak a cikkek összesített eladásai értéke alapján lesznek számítva. Így meghatározásra kerül a megfelelő automatikus díj szintje.
 
 Miután a megfelelő fejlécszintű díjak le lettek kérve az értékesítési sorokhoz, amelyek ugyanazon a szállítási mód használatával lettek leszállítva, a költségek az értékesítési sorok szintjéig lesznek arányosítva. Mivel ezeket a díjakat a sor szintjén és nem a fejléc szintjén tartja számon s rendszer, egy konkrétabb hivatkozás a jön létre a cikk és a költségérték között, amely ki lett hozzá számítva. Ez a viselkedés akkor lehet hasznos, ahol szervezet a díj csak egy részét szeretné visszatéríteni a teljes díj helyett, ha csak a cikkek egy részét küldik vissza.
 
@@ -169,3 +169,9 @@ Ezért az ebben a példában a 81334 cikkhez $5,62 szállítási díj lesz hozz�
 ![Arányosított díjak a 81334-es cikk értékesítési sorához](media/proratedlinecharge.png)
 
 Ezen számítási mód használatakor részleges visszáru esetén, ha a költségkód visszatéríthető, a díjnak csak a sorhoz hozzárendelt része lesz visszatérítve a cikk visszaküldése esetén.
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Többcsatornás speciális automatikus költségek](omni-auto-charges.md)
+
+[Automatikus költségek csatorna szerinti engedélyezése és konfigurálása](auto-charges-by-channel.md)
