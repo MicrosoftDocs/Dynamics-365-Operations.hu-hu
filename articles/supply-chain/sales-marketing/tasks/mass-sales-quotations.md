@@ -2,7 +2,7 @@
 title: Értékesítési ajánlatok tömeges létrehozása
 description: Ez az eljárás bemutatja, hogyan lehet hatékonyan árajánlatokat létrehozni termékek és szolgáltatásokat ajánlva, amelyek több vevőnek lesznek elküldve.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,94 +10,94 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 77f7a2df813eb0bf211b72646c1e99306fdf3f88
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: a1a9c7235f37ccdedc87ce70d3846443f645c0fe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148607"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211882"
 ---
-# <a name="mass-create-sales-quotations"></a><span data-ttu-id="72794-103">Értékesítési ajánlatok tömeges létrehozása</span><span class="sxs-lookup"><span data-stu-id="72794-103">Mass create sales quotations</span></span>
+# <a name="mass-create-sales-quotations"></a><span data-ttu-id="981e6-103">Értékesítési ajánlatok tömeges létrehozása</span><span class="sxs-lookup"><span data-stu-id="981e6-103">Mass create sales quotations</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="72794-104">Ez az eljárás bemutatja, hogyan lehet hatékonyan árajánlatokat létrehozni termékek és szolgáltatásokat ajánlva, amelyek több vevőnek lesznek elküldve.</span><span class="sxs-lookup"><span data-stu-id="72794-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="72794-105">Ez a tömeges árajánlatlétrehozás árajánlatsablonokon alapul.</span><span class="sxs-lookup"><span data-stu-id="72794-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="72794-106">Ezt a folyamatot saját adatokkal, vagy az USMF bemutatócég adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="72794-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
+<span data-ttu-id="981e6-104">Ez az eljárás bemutatja, hogyan lehet hatékonyan árajánlatokat létrehozni termékek és szolgáltatásokat ajánlva, amelyek több vevőnek lesznek elküldve.</span><span class="sxs-lookup"><span data-stu-id="981e6-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="981e6-105">Ez a tömeges árajánlatlétrehozás árajánlatsablonokon alapul.</span><span class="sxs-lookup"><span data-stu-id="981e6-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="981e6-106">Ezt a folyamatot saját adatokkal, vagy az USMF bemutatócég adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="981e6-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
 
 
-## <a name="create-a-quotation-template"></a><span data-ttu-id="72794-107">Árajánlatsablon létrehozása</span><span class="sxs-lookup"><span data-stu-id="72794-107">Create a quotation template</span></span>
-1. <span data-ttu-id="72794-108">Lépjen az Értékesítés és marketing > Beállítás > Árajánlatok > sabloncsoportok menüpontba.</span><span class="sxs-lookup"><span data-stu-id="72794-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
-2. <span data-ttu-id="72794-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="72794-109">Click New.</span></span>
-3. <span data-ttu-id="72794-110">A Csoportazonosító mezőben adjon meg egy tetszés szerinti azonosítót.</span><span class="sxs-lookup"><span data-stu-id="72794-110">In the Group ID field, type an ID of your choice.</span></span>
-4. <span data-ttu-id="72794-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="72794-112">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-112">Click Save.</span></span>
-6. <span data-ttu-id="72794-113">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-113">Close the page.</span></span>
-7. <span data-ttu-id="72794-114">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="72794-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-8. <span data-ttu-id="72794-115">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="72794-115">Click New.</span></span>
-9. <span data-ttu-id="72794-116">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72794-116">In the Account type field, select 'Customer'.</span></span>
-10. <span data-ttu-id="72794-117">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-117">In the Customer account field, enter or select a value.</span></span>
-11. <span data-ttu-id="72794-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-118">Click OK.</span></span>
-    * <span data-ttu-id="72794-119">Ahhoz, hogy egy árajánlatból sablon legyen, el kell végezni bizonyos lépéseket az árajánlat fejlécében.</span><span class="sxs-lookup"><span data-stu-id="72794-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="72794-120">Ezt az árajánlati sorok hozzáadása előtt kell elvégezni.</span><span class="sxs-lookup"><span data-stu-id="72794-120">This must be done before you add lines to the quotation.</span></span>   
-12. <span data-ttu-id="72794-121">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="72794-121">On the Action Pane, click Options.</span></span>
-13. <span data-ttu-id="72794-122">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="72794-122">Click Change view.</span></span>
-14. <span data-ttu-id="72794-123">Kattintson a Fejlécnézet gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-123">Click Header view.</span></span>
-15. <span data-ttu-id="72794-124">Bontsa ki a Beállítások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="72794-124">Expand the Setup section.</span></span>
-16. <span data-ttu-id="72794-125">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-125">In the Group ID field, enter or select a value.</span></span>
-17. <span data-ttu-id="72794-126">Írjon be egy értéket a Sablonnév mezőbe.</span><span class="sxs-lookup"><span data-stu-id="72794-126">In the Template name field, type a value.</span></span>
-18. <span data-ttu-id="72794-127">Válassza ki az Igen lehetőséget az Aktív mezőben.</span><span class="sxs-lookup"><span data-stu-id="72794-127">Select Yes in the Active field.</span></span>
-    * <span data-ttu-id="72794-128">Csak aktív sablonok használható, amikor egy sablont alkalmaz egy új értékesítési árajánlatra.</span><span class="sxs-lookup"><span data-stu-id="72794-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
-19. <span data-ttu-id="72794-129">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="72794-129">On the Action Pane, click Options.</span></span>
-20. <span data-ttu-id="72794-130">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="72794-130">Click Change view.</span></span>
-21. <span data-ttu-id="72794-131">Kattintson a Sor nézetre.</span><span class="sxs-lookup"><span data-stu-id="72794-131">Click Line view.</span></span>
-22. <span data-ttu-id="72794-132">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-132">In the Item field, enter or select a value.</span></span>
-23. <span data-ttu-id="72794-133">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="72794-133">In the Item field, type a value.</span></span>
-24. <span data-ttu-id="72794-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-134">Close the page.</span></span>
-25. <span data-ttu-id="72794-135">Adjon meg egy számot az Engedményszázalék mezőben.</span><span class="sxs-lookup"><span data-stu-id="72794-135">In the Discount percent field, enter a number.</span></span>
-26. <span data-ttu-id="72794-136">Kattintson az Új sor hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="72794-136">Click Add line.</span></span>
-27. <span data-ttu-id="72794-137">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-137">In the Item field, enter or select a value.</span></span>
-28. <span data-ttu-id="72794-138">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="72794-138">In the Item field, type a value.</span></span>
-29. <span data-ttu-id="72794-139">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-139">Close the page.</span></span>
-30. <span data-ttu-id="72794-140">Az Egységár mezőben adjon meg egy új árat, vagy módosítsa az aktuálisat.</span><span class="sxs-lookup"><span data-stu-id="72794-140">In the Unit price field, enter a new price or change the current one.</span></span>
-31. <span data-ttu-id="72794-141">Kattintson az Új sor hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="72794-141">Click Add line.</span></span>
-32. <span data-ttu-id="72794-142">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-142">In the Item field, enter or select a value.</span></span>
-33. <span data-ttu-id="72794-143">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="72794-143">In the Item field, type a value.</span></span>
-34. <span data-ttu-id="72794-144">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-144">Close the page.</span></span>
-35. <span data-ttu-id="72794-145">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="72794-145">In the Quantity field, enter a number.</span></span>
-36. <span data-ttu-id="72794-146">Adjon meg egy számot az Engedmény mezőben.</span><span class="sxs-lookup"><span data-stu-id="72794-146">In the Discount field, enter a number.</span></span>
-37. <span data-ttu-id="72794-147">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-147">Click Save.</span></span>
+## <a name="create-a-quotation-template"></a><span data-ttu-id="981e6-107">Árajánlatsablon létrehozása</span><span class="sxs-lookup"><span data-stu-id="981e6-107">Create a quotation template</span></span>
+1. <span data-ttu-id="981e6-108">Lépjen az Értékesítés és marketing > Beállítás > Árajánlatok > sabloncsoportok menüpontba.</span><span class="sxs-lookup"><span data-stu-id="981e6-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
+2. <span data-ttu-id="981e6-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="981e6-109">Click New.</span></span>
+3. <span data-ttu-id="981e6-110">A Csoportazonosító mezőben adjon meg egy tetszés szerinti azonosítót.</span><span class="sxs-lookup"><span data-stu-id="981e6-110">In the Group ID field, type an ID of your choice.</span></span>
+4. <span data-ttu-id="981e6-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="981e6-112">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-112">Click Save.</span></span>
+6. <span data-ttu-id="981e6-113">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-113">Close the page.</span></span>
+7. <span data-ttu-id="981e6-114">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="981e6-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+8. <span data-ttu-id="981e6-115">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="981e6-115">Click New.</span></span>
+9. <span data-ttu-id="981e6-116">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="981e6-116">In the Account type field, select 'Customer'.</span></span>
+10. <span data-ttu-id="981e6-117">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-117">In the Customer account field, enter or select a value.</span></span>
+11. <span data-ttu-id="981e6-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-118">Click OK.</span></span>
+    * <span data-ttu-id="981e6-119">Ahhoz, hogy egy árajánlatból sablon legyen, el kell végezni bizonyos lépéseket az árajánlat fejlécében.</span><span class="sxs-lookup"><span data-stu-id="981e6-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="981e6-120">Ezt az árajánlati sorok hozzáadása előtt kell elvégezni.</span><span class="sxs-lookup"><span data-stu-id="981e6-120">This must be done before you add lines to the quotation.</span></span>   
+12. <span data-ttu-id="981e6-121">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="981e6-121">On the Action Pane, click Options.</span></span>
+13. <span data-ttu-id="981e6-122">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="981e6-122">Click Change view.</span></span>
+14. <span data-ttu-id="981e6-123">Kattintson a Fejlécnézet gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-123">Click Header view.</span></span>
+15. <span data-ttu-id="981e6-124">Bontsa ki a Beállítások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="981e6-124">Expand the Setup section.</span></span>
+16. <span data-ttu-id="981e6-125">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-125">In the Group ID field, enter or select a value.</span></span>
+17. <span data-ttu-id="981e6-126">Írjon be egy értéket a Sablonnév mezőbe.</span><span class="sxs-lookup"><span data-stu-id="981e6-126">In the Template name field, type a value.</span></span>
+18. <span data-ttu-id="981e6-127">Válassza ki az Igen lehetőséget az Aktív mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e6-127">Select Yes in the Active field.</span></span>
+    * <span data-ttu-id="981e6-128">Csak aktív sablonok használható, amikor egy sablont alkalmaz egy új értékesítési árajánlatra.</span><span class="sxs-lookup"><span data-stu-id="981e6-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
+19. <span data-ttu-id="981e6-129">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="981e6-129">On the Action Pane, click Options.</span></span>
+20. <span data-ttu-id="981e6-130">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="981e6-130">Click Change view.</span></span>
+21. <span data-ttu-id="981e6-131">Kattintson a Sor nézetre.</span><span class="sxs-lookup"><span data-stu-id="981e6-131">Click Line view.</span></span>
+22. <span data-ttu-id="981e6-132">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-132">In the Item field, enter or select a value.</span></span>
+23. <span data-ttu-id="981e6-133">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="981e6-133">In the Item field, type a value.</span></span>
+24. <span data-ttu-id="981e6-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-134">Close the page.</span></span>
+25. <span data-ttu-id="981e6-135">Adjon meg egy számot az Engedményszázalék mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e6-135">In the Discount percent field, enter a number.</span></span>
+26. <span data-ttu-id="981e6-136">Kattintson az Új sor hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="981e6-136">Click Add line.</span></span>
+27. <span data-ttu-id="981e6-137">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-137">In the Item field, enter or select a value.</span></span>
+28. <span data-ttu-id="981e6-138">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="981e6-138">In the Item field, type a value.</span></span>
+29. <span data-ttu-id="981e6-139">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-139">Close the page.</span></span>
+30. <span data-ttu-id="981e6-140">Az Egységár mezőben adjon meg egy új árat, vagy módosítsa az aktuálisat.</span><span class="sxs-lookup"><span data-stu-id="981e6-140">In the Unit price field, enter a new price or change the current one.</span></span>
+31. <span data-ttu-id="981e6-141">Kattintson az Új sor hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="981e6-141">Click Add line.</span></span>
+32. <span data-ttu-id="981e6-142">A Cikk mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-142">In the Item field, enter or select a value.</span></span>
+33. <span data-ttu-id="981e6-143">Írjon be egy értéket a Cikk mezőbe.</span><span class="sxs-lookup"><span data-stu-id="981e6-143">In the Item field, type a value.</span></span>
+34. <span data-ttu-id="981e6-144">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-144">Close the page.</span></span>
+35. <span data-ttu-id="981e6-145">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e6-145">In the Quantity field, enter a number.</span></span>
+36. <span data-ttu-id="981e6-146">Adjon meg egy számot az Engedmény mezőben.</span><span class="sxs-lookup"><span data-stu-id="981e6-146">In the Discount field, enter a number.</span></span>
+37. <span data-ttu-id="981e6-147">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-147">Click Save.</span></span>
 
-## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="72794-148">Sablon alkalmazása egyetlen árajánlat létrehozásához</span><span class="sxs-lookup"><span data-stu-id="72794-148">Apply the template to create a single quotation</span></span>
-1. <span data-ttu-id="72794-149">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="72794-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-    * <span data-ttu-id="72794-150">Vegye figyelembe, hogy az imént létrehozott ajánlat sablonként van megjelölve.</span><span class="sxs-lookup"><span data-stu-id="72794-150">Note that the quotation you have just created is marked as template.</span></span>  
-2. <span data-ttu-id="72794-151">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="72794-151">Click New.</span></span>
-3. <span data-ttu-id="72794-152">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72794-152">In the Account type field, select 'Customer'.</span></span>
-4. <span data-ttu-id="72794-153">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-153">In the Customer account field, enter or select a value.</span></span>
-5. <span data-ttu-id="72794-154">Bontsa ki a Sablon szakaszt.</span><span class="sxs-lookup"><span data-stu-id="72794-154">Expand the Template section.</span></span>
-6. <span data-ttu-id="72794-155">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-155">In the Group ID field, enter or select a value.</span></span>
-7. <span data-ttu-id="72794-156">A Sablonnév mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-156">In the Template name field, enter or select a value.</span></span>
-8. <span data-ttu-id="72794-157">A Számítási mód mezőben válassza ki a „Sablonértékek alapján” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72794-157">In the Calculation method field, select 'Based on template values'.</span></span>
-9. <span data-ttu-id="72794-158">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-158">Click OK.</span></span>
-    * <span data-ttu-id="72794-159">Az új ajánlat létrehozása megtörtént, a sablon adatai és feltételei alapján.</span><span class="sxs-lookup"><span data-stu-id="72794-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
-10. <span data-ttu-id="72794-160">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-160">Close the page.</span></span>
-11. <span data-ttu-id="72794-161">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="72794-161">Close the page.</span></span>
+## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="981e6-148">Sablon alkalmazása egyetlen árajánlat létrehozásához</span><span class="sxs-lookup"><span data-stu-id="981e6-148">Apply the template to create a single quotation</span></span>
+1. <span data-ttu-id="981e6-149">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="981e6-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="981e6-150">Vegye figyelembe, hogy az imént létrehozott ajánlat sablonként van megjelölve.</span><span class="sxs-lookup"><span data-stu-id="981e6-150">Note that the quotation you have just created is marked as template.</span></span>  
+2. <span data-ttu-id="981e6-151">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="981e6-151">Click New.</span></span>
+3. <span data-ttu-id="981e6-152">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="981e6-152">In the Account type field, select 'Customer'.</span></span>
+4. <span data-ttu-id="981e6-153">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-153">In the Customer account field, enter or select a value.</span></span>
+5. <span data-ttu-id="981e6-154">Bontsa ki a Sablon szakaszt.</span><span class="sxs-lookup"><span data-stu-id="981e6-154">Expand the Template section.</span></span>
+6. <span data-ttu-id="981e6-155">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-155">In the Group ID field, enter or select a value.</span></span>
+7. <span data-ttu-id="981e6-156">A Sablonnév mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-156">In the Template name field, enter or select a value.</span></span>
+8. <span data-ttu-id="981e6-157">A Számítási mód mezőben válassza ki a „Sablonértékek alapján” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="981e6-157">In the Calculation method field, select 'Based on template values'.</span></span>
+9. <span data-ttu-id="981e6-158">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-158">Click OK.</span></span>
+    * <span data-ttu-id="981e6-159">Az új ajánlat létrehozása megtörtént, a sablon adatai és feltételei alapján.</span><span class="sxs-lookup"><span data-stu-id="981e6-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
+10. <span data-ttu-id="981e6-160">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-160">Close the page.</span></span>
+11. <span data-ttu-id="981e6-161">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="981e6-161">Close the page.</span></span>
 
-## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="72794-162">Sablon alkalmazása tömeges árajánlatlétrehozáshoz</span><span class="sxs-lookup"><span data-stu-id="72794-162">Apply the template to mass create quotations</span></span>
-1. <span data-ttu-id="72794-163">Lépjen az Értékesítés és marketing > Értékesítési ajánlatok > Árajánlatfrissítés > Ajánlatok tömeges létrehozása menüpontba.</span><span class="sxs-lookup"><span data-stu-id="72794-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
-2. <span data-ttu-id="72794-164">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72794-164">In the Account type field, select 'Customer'.</span></span>
-3. <span data-ttu-id="72794-165">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-165">In the Group ID field, enter or select a value.</span></span>
-4. <span data-ttu-id="72794-166">A Sablonnév mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="72794-166">In the Template name field, enter or select a value.</span></span>
-5. <span data-ttu-id="72794-167">A Számítási mód mezőben válassza ki a „Sablonértékek alapján” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="72794-167">In the Calculation method field, select 'Based on template values'.</span></span>
-6. <span data-ttu-id="72794-168">Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="72794-168">Expand the Records to include section.</span></span>
-7. <span data-ttu-id="72794-169">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="72794-169">Click Filter.</span></span>
-8. <span data-ttu-id="72794-170">A Feltétel mezőben állítsa a szűrőt úgy, hogy lefedje a vevők azon tartományát, amelyet bele akar foglalni ebbe a tömeges árajánlatlétrehozásba.</span><span class="sxs-lookup"><span data-stu-id="72794-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="72794-171">A következő formátumot használja: "Customer1... CustomerN.</span><span class="sxs-lookup"><span data-stu-id="72794-171">Use the following format "Customer1..CustomerN.</span></span>
-    * <span data-ttu-id="72794-172">Például beállítja a szűrést erre: US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="72794-172">For example, you could set the filter to: US-001..US-004</span></span>  
-9. <span data-ttu-id="72794-173">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-173">Click OK.</span></span>
-10. <span data-ttu-id="72794-174">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="72794-174">Click OK.</span></span>
-11. <span data-ttu-id="72794-175">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="72794-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-    * <span data-ttu-id="72794-176">Győződjön meg róla, hogy az a kiválasztott sablonon alapján a tömeges frissítési rutinban megadott minden vevőhöz lett árajánlat létrehozva.</span><span class="sxs-lookup"><span data-stu-id="72794-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
+## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="981e6-162">Sablon alkalmazása tömeges árajánlatlétrehozáshoz</span><span class="sxs-lookup"><span data-stu-id="981e6-162">Apply the template to mass create quotations</span></span>
+1. <span data-ttu-id="981e6-163">Lépjen az Értékesítés és marketing > Értékesítési ajánlatok > Árajánlatfrissítés > Ajánlatok tömeges létrehozása menüpontba.</span><span class="sxs-lookup"><span data-stu-id="981e6-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
+2. <span data-ttu-id="981e6-164">A Számla típusa mezőben válassza a Vevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="981e6-164">In the Account type field, select 'Customer'.</span></span>
+3. <span data-ttu-id="981e6-165">A Csoportazonosító mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-165">In the Group ID field, enter or select a value.</span></span>
+4. <span data-ttu-id="981e6-166">A Sablonnév mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="981e6-166">In the Template name field, enter or select a value.</span></span>
+5. <span data-ttu-id="981e6-167">A Számítási mód mezőben válassza ki a „Sablonértékek alapján” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="981e6-167">In the Calculation method field, select 'Based on template values'.</span></span>
+6. <span data-ttu-id="981e6-168">Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="981e6-168">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="981e6-169">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="981e6-169">Click Filter.</span></span>
+8. <span data-ttu-id="981e6-170">A Feltétel mezőben állítsa a szűrőt úgy, hogy lefedje a vevők azon tartományát, amelyet bele akar foglalni ebbe a tömeges árajánlatlétrehozásba.</span><span class="sxs-lookup"><span data-stu-id="981e6-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="981e6-171">A következő formátumot használja: "Customer1... CustomerN.</span><span class="sxs-lookup"><span data-stu-id="981e6-171">Use the following format "Customer1..CustomerN.</span></span>
+    * <span data-ttu-id="981e6-172">Például beállítja a szűrést erre: US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="981e6-172">For example, you could set the filter to: US-001..US-004</span></span>  
+9. <span data-ttu-id="981e6-173">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-173">Click OK.</span></span>
+10. <span data-ttu-id="981e6-174">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="981e6-174">Click OK.</span></span>
+11. <span data-ttu-id="981e6-175">Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.</span><span class="sxs-lookup"><span data-stu-id="981e6-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="981e6-176">Győződjön meg róla, hogy az a kiválasztott sablonon alapján a tömeges frissítési rutinban megadott minden vevőhöz lett árajánlat létrehozva.</span><span class="sxs-lookup"><span data-stu-id="981e6-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
 

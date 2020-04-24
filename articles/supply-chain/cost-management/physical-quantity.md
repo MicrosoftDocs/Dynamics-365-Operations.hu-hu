@@ -2,7 +2,7 @@
 title: Készletobjektum-értékek
 description: Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
@@ -19,33 +19,33 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92c7889b11208c4d2b48eb279a104a7c226f904
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff3a21e87b9cb0bb371b0772c948cb62a4cb36b1
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547859"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214619"
 ---
-# <a name="inventory-object-values"></a><span data-ttu-id="757f8-103">Készletobjektum-értékek</span><span class="sxs-lookup"><span data-stu-id="757f8-103">Inventory object values</span></span>
+# <a name="inventory-object-values"></a><span data-ttu-id="440b2-103">Készletobjektum-értékek</span><span class="sxs-lookup"><span data-stu-id="440b2-103">Inventory object values</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="757f8-104">Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról.</span><span class="sxs-lookup"><span data-stu-id="757f8-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
+<span data-ttu-id="440b2-104">Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról.</span><span class="sxs-lookup"><span data-stu-id="440b2-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
 
-<span data-ttu-id="757f8-105">Egy új funkció, aminek a neve **Fizikai mennyiség**, lehetővé teszi, hogy lássa egy megadott készletobjektum értékét.</span><span class="sxs-lookup"><span data-stu-id="757f8-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
+<span data-ttu-id="440b2-105">Egy új funkció, aminek a neve **Fizikai mennyiség**, lehetővé teszi, hogy lássa egy megadott készletobjektum értékét.</span><span class="sxs-lookup"><span data-stu-id="440b2-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
 
-<span data-ttu-id="757f8-106">Egy költségobjektum annak az entitás szintnek felel meg, ahol a készletkönyvelést végzik.</span><span class="sxs-lookup"><span data-stu-id="757f8-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="757f8-107">A költségobjektummal kapcsolatos további tudnivalókat lásd: [Költségobjektum](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="757f8-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
+<span data-ttu-id="440b2-106">Egy költségobjektum annak az entitás szintnek felel meg, ahol a készletkönyvelést végzik.</span><span class="sxs-lookup"><span data-stu-id="440b2-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="440b2-107">A költségobjektummal kapcsolatos további tudnivalókat lásd: [Költségobjektum](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="440b2-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
 
-<span data-ttu-id="757f8-108">Egy adott készletobjektum értékeinek megtekintéséhez kattintson a **Fizikai mennyiség** lehetőségre a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="757f8-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="757f8-109">Egy készletobjektum értéke az alábbi módon lesz kiszámolva:</span><span class="sxs-lookup"><span data-stu-id="757f8-109">Here is how the value of an inventory object is calculated:</span></span> 
+<span data-ttu-id="440b2-108">Egy adott készletobjektum értékeinek megtekintéséhez kattintson a **Fizikai mennyiség** lehetőségre a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="440b2-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="440b2-109">Egy készletobjektum értéke az alábbi módon lesz kiszámolva:</span><span class="sxs-lookup"><span data-stu-id="440b2-109">Here is how the value of an inventory object is calculated:</span></span> 
 
-<span data-ttu-id="757f8-110">Készletobjektum.Értéke = Költségobjektum.Átlagos egységenkénti költsége × Készletobjektum.Mennyisége.</span><span class="sxs-lookup"><span data-stu-id="757f8-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
+<span data-ttu-id="440b2-110">Készletobjektum.Értéke = Költségobjektum.Átlagos egységenkénti költsége × Készletobjektum.Mennyisége.</span><span class="sxs-lookup"><span data-stu-id="440b2-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
 
-<span data-ttu-id="757f8-111">Az alábbi példában látható, hogy a készletobjektum értéke és a költségobjektum hogyan számolható ki.</span><span class="sxs-lookup"><span data-stu-id="757f8-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="757f8-112">Két termékbevételezési esemény van az A cikken rögzítve:</span><span class="sxs-lookup"><span data-stu-id="757f8-112">Two product receipt events are registered on item A:</span></span>
+<span data-ttu-id="440b2-111">Az alábbi példában látható, hogy a készletobjektum értéke és a költségobjektum hogyan számolható ki.</span><span class="sxs-lookup"><span data-stu-id="440b2-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="440b2-112">Két termékbevételezési esemény van az A cikken rögzítve:</span><span class="sxs-lookup"><span data-stu-id="440b2-112">Two product receipt events are registered on item A:</span></span>
 
--   <span data-ttu-id="757f8-113">Termékbevételezés 1: Mennyiség = 100 darab. Összeg = 1 000,00 $ Hely = 1 Raktár = 11, Köteg száma</span><span class="sxs-lookup"><span data-stu-id="757f8-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="757f8-114">= B1</span><span class="sxs-lookup"><span data-stu-id="757f8-114">= B1</span></span>
--   <span data-ttu-id="757f8-115">Termékbevételezés 2: Mennyiség = 50 darab. Összeg = 800,00 $ Hely = 1 Raktár = 11, Köteg száma</span><span class="sxs-lookup"><span data-stu-id="757f8-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="757f8-116">= B2</span><span class="sxs-lookup"><span data-stu-id="757f8-116">= B2</span></span>
+-   <span data-ttu-id="440b2-113">Termékbevételezés 1: Mennyiség = 100 darab. Összeg = 1 000,00 $ Hely = 1 Raktár = 11, Köteg száma</span><span class="sxs-lookup"><span data-stu-id="440b2-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="440b2-114">= B1</span><span class="sxs-lookup"><span data-stu-id="440b2-114">= B1</span></span>
+-   <span data-ttu-id="440b2-115">Termékbevételezés 2: Mennyiség = 50 darab. Összeg = 800,00 $ Hely = 1 Raktár = 11, Köteg száma</span><span class="sxs-lookup"><span data-stu-id="440b2-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="440b2-116">= B2</span><span class="sxs-lookup"><span data-stu-id="440b2-116">= B2</span></span>
 
-<span data-ttu-id="757f8-117">Az alábbi táblázat a költségobjektum-számítás eredményét mutatja.</span><span class="sxs-lookup"><span data-stu-id="757f8-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="757f8-118">Az eredményeket megtekintheti a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="757f8-118">You can view the result on the **Cost object** page.</span></span>
+<span data-ttu-id="440b2-117">Az alábbi táblázat a költségobjektum-számítás eredményét mutatja.</span><span class="sxs-lookup"><span data-stu-id="440b2-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="440b2-118">Az eredményeket megtekintheti a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="440b2-118">You can view the result on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -59,29 +59,29 @@ ms.locfileid: "1547859"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="757f8-119">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="757f8-119">Object type</span></span></th>
-<th><span data-ttu-id="757f8-120">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="757f8-120">Item number</span></span></th>
-<th><span data-ttu-id="757f8-121">Hely</span><span class="sxs-lookup"><span data-stu-id="757f8-121">Site</span></span></th>
-<th><span data-ttu-id="757f8-122">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="757f8-122">Quantity</span></span></th>
-<th><span data-ttu-id="757f8-123">Készletegység</span><span class="sxs-lookup"><span data-stu-id="757f8-123">Inventory unit</span></span></th>
-<th><span data-ttu-id="757f8-124">Érték</span><span class="sxs-lookup"><span data-stu-id="757f8-124">Value</span></span></th>
-<th><span data-ttu-id="757f8-125">Átlagos egységenkénti költség</span><span class="sxs-lookup"><span data-stu-id="757f8-125">Average unit cost</span></span></th>
+<th><span data-ttu-id="440b2-119">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="440b2-119">Object type</span></span></th>
+<th><span data-ttu-id="440b2-120">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="440b2-120">Item number</span></span></th>
+<th><span data-ttu-id="440b2-121">Hely</span><span class="sxs-lookup"><span data-stu-id="440b2-121">Site</span></span></th>
+<th><span data-ttu-id="440b2-122">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="440b2-122">Quantity</span></span></th>
+<th><span data-ttu-id="440b2-123">Készletegység</span><span class="sxs-lookup"><span data-stu-id="440b2-123">Inventory unit</span></span></th>
+<th><span data-ttu-id="440b2-124">Érték</span><span class="sxs-lookup"><span data-stu-id="440b2-124">Value</span></span></th>
+<th><span data-ttu-id="440b2-125">Átlagos egységenkénti költség</span><span class="sxs-lookup"><span data-stu-id="440b2-125">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="757f8-126">Költségobjektum</span><span class="sxs-lookup"><span data-stu-id="757f8-126">Cost object</span></span></td>
-<td><span data-ttu-id="757f8-127">N</span><span class="sxs-lookup"><span data-stu-id="757f8-127">A</span></span></td>
-<td><span data-ttu-id="757f8-128">1</span><span class="sxs-lookup"><span data-stu-id="757f8-128">1</span></span></td>
-<td><span data-ttu-id="757f8-129">150</span><span class="sxs-lookup"><span data-stu-id="757f8-129">150</span></span></td>
-<td><span data-ttu-id="757f8-130">Darab</span><span class="sxs-lookup"><span data-stu-id="757f8-130">Pcs.</span></span></td>
-<td><p><span data-ttu-id="757f8-131">1800.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-131">$1800.00</span></span></p></td>
-<td><p><span data-ttu-id="757f8-132">12.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-132">$12.00</span></span></p></td>
+<td><span data-ttu-id="440b2-126">Költségobjektum</span><span class="sxs-lookup"><span data-stu-id="440b2-126">Cost object</span></span></td>
+<td><span data-ttu-id="440b2-127">N</span><span class="sxs-lookup"><span data-stu-id="440b2-127">A</span></span></td>
+<td><span data-ttu-id="440b2-128">1</span><span class="sxs-lookup"><span data-stu-id="440b2-128">1</span></span></td>
+<td><span data-ttu-id="440b2-129">150</span><span class="sxs-lookup"><span data-stu-id="440b2-129">150</span></span></td>
+<td><span data-ttu-id="440b2-130">Darab</span><span class="sxs-lookup"><span data-stu-id="440b2-130">Pcs.</span></span></td>
+<td><p><span data-ttu-id="440b2-131">1800.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-131">$1800.00</span></span></p></td>
+<td><p><span data-ttu-id="440b2-132">12.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-132">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="757f8-133">Az alábbi táblázat a készletobjektum-számítás eredményét mutatja.</span><span class="sxs-lookup"><span data-stu-id="757f8-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="757f8-134">Az eredményeket megtekintheti a **Fizikai mennyiség** lehetőségnél, a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="757f8-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
+<span data-ttu-id="440b2-133">Az alábbi táblázat a készletobjektum-számítás eredményét mutatja.</span><span class="sxs-lookup"><span data-stu-id="440b2-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="440b2-134">Az eredményeket megtekintheti a **Fizikai mennyiség** lehetőségnél, a **Költségobjektum** oldalon.</span><span class="sxs-lookup"><span data-stu-id="440b2-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -97,53 +97,53 @@ ms.locfileid: "1547859"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="757f8-135">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="757f8-135">Object type</span></span></th>
-<th><span data-ttu-id="757f8-136">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="757f8-136">Item number</span></span></th>
-<th><span data-ttu-id="757f8-137">Hely</span><span class="sxs-lookup"><span data-stu-id="757f8-137">Site</span></span></th>
-<th><span data-ttu-id="757f8-138">Raktár</span><span class="sxs-lookup"><span data-stu-id="757f8-138">Warehouse</span></span></th>
-<th><span data-ttu-id="757f8-139">Kötegsz.</span><span class="sxs-lookup"><span data-stu-id="757f8-139">Batch No.</span></span></th>
-<th><span data-ttu-id="757f8-140">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="757f8-140">Quantity</span></span></th>
-<th><span data-ttu-id="757f8-141">Készletegység</span><span class="sxs-lookup"><span data-stu-id="757f8-141">Inventory unit</span></span></th>
-<th><span data-ttu-id="757f8-142">Érték</span><span class="sxs-lookup"><span data-stu-id="757f8-142">Value</span></span></th>
-<th><span data-ttu-id="757f8-143">Átlagos egységenkénti költség</span><span class="sxs-lookup"><span data-stu-id="757f8-143">Average unit cost</span></span></th>
+<th><span data-ttu-id="440b2-135">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="440b2-135">Object type</span></span></th>
+<th><span data-ttu-id="440b2-136">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="440b2-136">Item number</span></span></th>
+<th><span data-ttu-id="440b2-137">Hely</span><span class="sxs-lookup"><span data-stu-id="440b2-137">Site</span></span></th>
+<th><span data-ttu-id="440b2-138">Raktár</span><span class="sxs-lookup"><span data-stu-id="440b2-138">Warehouse</span></span></th>
+<th><span data-ttu-id="440b2-139">Kötegsz.</span><span class="sxs-lookup"><span data-stu-id="440b2-139">Batch No.</span></span></th>
+<th><span data-ttu-id="440b2-140">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="440b2-140">Quantity</span></span></th>
+<th><span data-ttu-id="440b2-141">Készletegység</span><span class="sxs-lookup"><span data-stu-id="440b2-141">Inventory unit</span></span></th>
+<th><span data-ttu-id="440b2-142">Érték</span><span class="sxs-lookup"><span data-stu-id="440b2-142">Value</span></span></th>
+<th><span data-ttu-id="440b2-143">Átlagos egységenkénti költség</span><span class="sxs-lookup"><span data-stu-id="440b2-143">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="757f8-144">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="757f8-144">Inventory object</span></span></td>
-<td><span data-ttu-id="757f8-145">N</span><span class="sxs-lookup"><span data-stu-id="757f8-145">A</span></span></td>
-<td><span data-ttu-id="757f8-146">1</span><span class="sxs-lookup"><span data-stu-id="757f8-146">1</span></span></td>
-<td><span data-ttu-id="757f8-147">11</span><span class="sxs-lookup"><span data-stu-id="757f8-147">11</span></span></td>
-<td><span data-ttu-id="757f8-148">B1</span><span class="sxs-lookup"><span data-stu-id="757f8-148">B1</span></span></td>
-<td><span data-ttu-id="757f8-149">100</span><span class="sxs-lookup"><span data-stu-id="757f8-149">100</span></span></td>
-<td><span data-ttu-id="757f8-150">Darab</span><span class="sxs-lookup"><span data-stu-id="757f8-150">Pcs.</span></span></td>
-<td><p><span data-ttu-id="757f8-151">1200.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-151">$1200.00</span></span></p></td>
-<td><p><span data-ttu-id="757f8-152">12.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-152">$12.00</span></span></p></td>
+<td><span data-ttu-id="440b2-144">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="440b2-144">Inventory object</span></span></td>
+<td><span data-ttu-id="440b2-145">N</span><span class="sxs-lookup"><span data-stu-id="440b2-145">A</span></span></td>
+<td><span data-ttu-id="440b2-146">1</span><span class="sxs-lookup"><span data-stu-id="440b2-146">1</span></span></td>
+<td><span data-ttu-id="440b2-147">11</span><span class="sxs-lookup"><span data-stu-id="440b2-147">11</span></span></td>
+<td><span data-ttu-id="440b2-148">B1</span><span class="sxs-lookup"><span data-stu-id="440b2-148">B1</span></span></td>
+<td><span data-ttu-id="440b2-149">100</span><span class="sxs-lookup"><span data-stu-id="440b2-149">100</span></span></td>
+<td><span data-ttu-id="440b2-150">Darab</span><span class="sxs-lookup"><span data-stu-id="440b2-150">Pcs.</span></span></td>
+<td><p><span data-ttu-id="440b2-151">1200.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-151">$1200.00</span></span></p></td>
+<td><p><span data-ttu-id="440b2-152">12.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-152">$12.00</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="757f8-153">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="757f8-153">Inventory object</span></span></td>
-<td><span data-ttu-id="757f8-154">A</span><span class="sxs-lookup"><span data-stu-id="757f8-154">A</span></span></td>
-<td><span data-ttu-id="757f8-155">1</span><span class="sxs-lookup"><span data-stu-id="757f8-155">1</span></span></td>
-<td><span data-ttu-id="757f8-156">11</span><span class="sxs-lookup"><span data-stu-id="757f8-156">11</span></span></td>
-<td><span data-ttu-id="757f8-157">B2</span><span class="sxs-lookup"><span data-stu-id="757f8-157">B2</span></span></td>
-<td><span data-ttu-id="757f8-158">50</span><span class="sxs-lookup"><span data-stu-id="757f8-158">50</span></span></td>
-<td><span data-ttu-id="757f8-159">Darab</span><span class="sxs-lookup"><span data-stu-id="757f8-159">Pcs.</span></span></td>
-<td><p><span data-ttu-id="757f8-160">600.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-160">$600.00</span></span></p></td>
-<td><p><span data-ttu-id="757f8-161">12.00 $</span><span class="sxs-lookup"><span data-stu-id="757f8-161">$12.00</span></span></p></td>
+<td><span data-ttu-id="440b2-153">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="440b2-153">Inventory object</span></span></td>
+<td><span data-ttu-id="440b2-154">A</span><span class="sxs-lookup"><span data-stu-id="440b2-154">A</span></span></td>
+<td><span data-ttu-id="440b2-155">1</span><span class="sxs-lookup"><span data-stu-id="440b2-155">1</span></span></td>
+<td><span data-ttu-id="440b2-156">11</span><span class="sxs-lookup"><span data-stu-id="440b2-156">11</span></span></td>
+<td><span data-ttu-id="440b2-157">B2</span><span class="sxs-lookup"><span data-stu-id="440b2-157">B2</span></span></td>
+<td><span data-ttu-id="440b2-158">50</span><span class="sxs-lookup"><span data-stu-id="440b2-158">50</span></span></td>
+<td><span data-ttu-id="440b2-159">Darab</span><span class="sxs-lookup"><span data-stu-id="440b2-159">Pcs.</span></span></td>
+<td><p><span data-ttu-id="440b2-160">600.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-160">$600.00</span></span></p></td>
+<td><p><span data-ttu-id="440b2-161">12.00 $</span><span class="sxs-lookup"><span data-stu-id="440b2-161">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="757f8-162">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="757f8-162">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="440b2-162">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="440b2-162">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="757f8-163">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="757f8-163">Cost objects</span></span>](cost-object.md)
+[<span data-ttu-id="440b2-163">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="440b2-163">Cost objects</span></span>](cost-object.md)
 
-[<span data-ttu-id="757f8-164">Költségbejegyzések</span><span class="sxs-lookup"><span data-stu-id="757f8-164">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="440b2-164">Költségbejegyzések</span><span class="sxs-lookup"><span data-stu-id="440b2-164">Cost entries</span></span>](cost-entries.md)
 
-[<span data-ttu-id="757f8-165">Új és módosult elemek</span><span class="sxs-lookup"><span data-stu-id="757f8-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
+[<span data-ttu-id="440b2-165">Új és módosult elemek</span><span class="sxs-lookup"><span data-stu-id="440b2-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 

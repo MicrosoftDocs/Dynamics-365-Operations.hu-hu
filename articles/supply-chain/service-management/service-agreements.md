@@ -2,7 +2,7 @@
 title: Szolgáltatási szerződések kialakítása és megkötése – áttekintés
 description: A szolgáltatási szerződések segítségével meghatározhatja, hogy milyen erőforrásokat használ egy átlagos szervizlátogatás során, és ezeket hogyan számlázza a vevőnek.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,64 +18,64 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae7c3b6e1df9751d886f6eeff778e8045bd7df85
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 41081525fb9ff7bfa3adb87ba038d899f58e436a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865945"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3216160"
 ---
-# <a name="develop-and-establish-service-agreements-overview"></a><span data-ttu-id="d36ed-103">Szolgáltatási szerződések kialakítása és megkötése – áttekintés</span><span class="sxs-lookup"><span data-stu-id="d36ed-103">Develop and establish service agreements overview</span></span>
+# <a name="develop-and-establish-service-agreements-overview"></a><span data-ttu-id="f977c-103">Szolgáltatási szerződések kialakítása és megkötése – áttekintés</span><span class="sxs-lookup"><span data-stu-id="f977c-103">Develop and establish service agreements overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d36ed-104">A szolgáltatási szerződések segítségével meghatározhatja, hogy milyen erőforrásokat használ egy átlagos szervizlátogatás során, és ezeket hogyan számlázza a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="d36ed-104">Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.</span></span>
+<span data-ttu-id="f977c-104">A szolgáltatási szerződések segítségével meghatározhatja, hogy milyen erőforrásokat használ egy átlagos szervizlátogatás során, és ezeket hogyan számlázza a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="f977c-104">Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.</span></span>
 
-<span data-ttu-id="d36ed-105">Minden szolgáltatási szerződés projektekhez van csatolva, amelyeken keresztül feladhatók és kiszámlázhatók a tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="d36ed-105">Every service agreement is attached to a project through which transactions are posted and invoiced.</span></span> <span data-ttu-id="d36ed-106">A szervizrendelési tranzakciók ugyanakkor közvetlenül a projekten keresztül is kiszámlázhatók, anélkül, hogy a szervizrendelést szolgáltatási szerződéshez kellene csatolniuk.</span><span class="sxs-lookup"><span data-stu-id="d36ed-106">However, you can also invoice service order transactions directly through the project without first having to connect the service order to a service agreement.</span></span> <span data-ttu-id="d36ed-107">Ha a szervizrendelés csak egyszeri szervizlátogatás miatt jött létre, akkor érdemes ezt az utat választani, mivel a szerviztranzakció feldolgozása így kevesebb erőforrást emészt fel, mint a részletes szolgáltatási szerződési adatok hosszabb ideig tartó nyilvántartása az ügyfélről.</span><span class="sxs-lookup"><span data-stu-id="d36ed-107">You might decide to do this if the service order is for a one-time-only service visit and the need for processing the service transactions quickly outweighs the need for maintaining detailed service-agreement information about the customer over a period of time.</span></span>
+<span data-ttu-id="f977c-105">Minden szolgáltatási szerződés projektekhez van csatolva, amelyeken keresztül feladhatók és kiszámlázhatók a tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="f977c-105">Every service agreement is attached to a project through which transactions are posted and invoiced.</span></span> <span data-ttu-id="f977c-106">A szervizrendelési tranzakciók ugyanakkor közvetlenül a projekten keresztül is kiszámlázhatók, anélkül, hogy a szervizrendelést szolgáltatási szerződéshez kellene csatolniuk.</span><span class="sxs-lookup"><span data-stu-id="f977c-106">However, you can also invoice service order transactions directly through the project without first having to connect the service order to a service agreement.</span></span> <span data-ttu-id="f977c-107">Ha a szervizrendelés csak egyszeri szervizlátogatás miatt jött létre, akkor érdemes ezt az utat választani, mivel a szerviztranzakció feldolgozása így kevesebb erőforrást emészt fel, mint a részletes szolgáltatási szerződési adatok hosszabb ideig tartó nyilvántartása az ügyfélről.</span><span class="sxs-lookup"><span data-stu-id="f977c-107">You might decide to do this if the service order is for a one-time-only service visit and the need for processing the service transactions quickly outweighs the need for maintaining detailed service-agreement information about the customer over a period of time.</span></span>
 
-## <a name="service-agreement"></a><span data-ttu-id="d36ed-108">Szolgáltatási szerződés</span><span class="sxs-lookup"><span data-stu-id="d36ed-108">Service agreement</span></span>
+## <a name="service-agreement"></a><span data-ttu-id="f977c-108">Szolgáltatási szerződés</span><span class="sxs-lookup"><span data-stu-id="f977c-108">Service agreement</span></span>
 
-<span data-ttu-id="d36ed-109">Minden szolgáltatási szerződésben meg kell adnia egy projektet, a szolgáltatási szerződés azonosítóját és szerződéscsoportját.</span><span class="sxs-lookup"><span data-stu-id="d36ed-109">In each service agreement, you must specify a project, a service-agreement ID, and a service-agreement group.</span></span> <span data-ttu-id="d36ed-110">A szolgáltatási szerződések csoportjai a szolgáltatási szerződések rendezésére és csoportosítására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="d36ed-110">The service-agreement group can be used to sort and organize service agreements.</span></span>
+<span data-ttu-id="f977c-109">Minden szolgáltatási szerződésben meg kell adnia egy projektet, a szolgáltatási szerződés azonosítóját és szerződéscsoportját.</span><span class="sxs-lookup"><span data-stu-id="f977c-109">In each service agreement, you must specify a project, a service-agreement ID, and a service-agreement group.</span></span> <span data-ttu-id="f977c-110">A szolgáltatási szerződések csoportjai a szolgáltatási szerződések rendezésére és csoportosítására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="f977c-110">The service-agreement group can be used to sort and organize service agreements.</span></span>
 
-<span data-ttu-id="d36ed-111">A szolgáltatási szerződés fejlécének egyes beállításai a csatolt szerződéssorokra vonatkoznak:</span><span class="sxs-lookup"><span data-stu-id="d36ed-111">A service agreement header contains settings that apply to all attached agreement lines:</span></span>
+<span data-ttu-id="f977c-111">A szolgáltatási szerződés fejlécének egyes beállításai a csatolt szerződéssorokra vonatkoznak:</span><span class="sxs-lookup"><span data-stu-id="f977c-111">A service agreement header contains settings that apply to all attached agreement lines:</span></span>
 
--  <span data-ttu-id="d36ed-112">A szolgáltatási szerződés felfüggesztési állapota.</span><span class="sxs-lookup"><span data-stu-id="d36ed-112">Whether the service agreement is suspended.</span></span> <span data-ttu-id="d36ed-113">Ha a szolgáltatási szerződés fel van függesztve, akkor nem lehet belőle szervizrendeléseket generálni.</span><span class="sxs-lookup"><span data-stu-id="d36ed-113">If the service agreement is suspended, you cannot generate service orders from the service agreement.</span></span>
--  <span data-ttu-id="d36ed-114">A szolgáltatási szerződés időtartama.</span><span class="sxs-lookup"><span data-stu-id="d36ed-114">The duration of the service agreement.</span></span>
--  <span data-ttu-id="d36ed-115">A szervizrendeléssorok hogyan állnak össze szervizrendelésekké.</span><span class="sxs-lookup"><span data-stu-id="d36ed-115">How service-order lines are to be combined into service orders.</span></span>
--  <span data-ttu-id="d36ed-116">A szolgáltatási szerződés sablon-e.</span><span class="sxs-lookup"><span data-stu-id="d36ed-116">Whether the service agreement is a template.</span></span>
+-  <span data-ttu-id="f977c-112">A szolgáltatási szerződés felfüggesztési állapota.</span><span class="sxs-lookup"><span data-stu-id="f977c-112">Whether the service agreement is suspended.</span></span> <span data-ttu-id="f977c-113">Ha a szolgáltatási szerződés fel van függesztve, akkor nem lehet belőle szervizrendeléseket generálni.</span><span class="sxs-lookup"><span data-stu-id="f977c-113">If the service agreement is suspended, you cannot generate service orders from the service agreement.</span></span>
+-  <span data-ttu-id="f977c-114">A szolgáltatási szerződés időtartama.</span><span class="sxs-lookup"><span data-stu-id="f977c-114">The duration of the service agreement.</span></span>
+-  <span data-ttu-id="f977c-115">A szervizrendeléssorok hogyan állnak össze szervizrendelésekké.</span><span class="sxs-lookup"><span data-stu-id="f977c-115">How service-order lines are to be combined into service orders.</span></span>
+-  <span data-ttu-id="f977c-116">A szolgáltatási szerződés sablon-e.</span><span class="sxs-lookup"><span data-stu-id="f977c-116">Whether the service agreement is a template.</span></span>
 
-<span data-ttu-id="d36ed-117">A szolgáltatási szerződés fejlécében beállíthatja azokat a szolgáltatási tárgyakat és szervizfeladatokat is, amelyek a szerződében használhatók. Adja meg azokat a szervizfeladatokat és -tárgyakat, amelyeket a szerződés különböző soraihoz kell majd csatolni.</span><span class="sxs-lookup"><span data-stu-id="d36ed-117">In the service-agreement header, you also set up all the service objects and service tasks that can be used with the service agreement by entering the specific service tasks or service objects that are to be attached to the various lines of the agreement.</span></span>
+<span data-ttu-id="f977c-117">A szolgáltatási szerződés fejlécében beállíthatja azokat a szolgáltatási tárgyakat és szervizfeladatokat is, amelyek a szerződében használhatók. Adja meg azokat a szervizfeladatokat és -tárgyakat, amelyeket a szerződés különböző soraihoz kell majd csatolni.</span><span class="sxs-lookup"><span data-stu-id="f977c-117">In the service-agreement header, you also set up all the service objects and service tasks that can be used with the service agreement by entering the specific service tasks or service objects that are to be attached to the various lines of the agreement.</span></span>
 
-<span data-ttu-id="d36ed-118">A szolgáltatási szerződés fejlécéből szerződéssorokat illetve szolgáltatássablon-sorokat másolhat az aktuális szolgáltatási szerződésbe.</span><span class="sxs-lookup"><span data-stu-id="d36ed-118">From the service-agreement header, you can also copy service-agreement lines or service-template lines into the current service agreement.</span></span>
+<span data-ttu-id="f977c-118">A szolgáltatási szerződés fejlécéből szerződéssorokat illetve szolgáltatássablon-sorokat másolhat az aktuális szolgáltatási szerződésbe.</span><span class="sxs-lookup"><span data-stu-id="f977c-118">From the service-agreement header, you can also copy service-agreement lines or service-template lines into the current service agreement.</span></span>
 
-<span data-ttu-id="d36ed-119">A programban felfüggesztheti a szolgáltatási szerződéseket, és leállíthatja az egyes szolgáltatásiszerződés-sorokat.</span><span class="sxs-lookup"><span data-stu-id="d36ed-119">You can suspend service agreements and stop individual service agreement lines.</span></span>
+<span data-ttu-id="f977c-119">A programban felfüggesztheti a szolgáltatási szerződéseket, és leállíthatja az egyes szolgáltatásiszerződés-sorokat.</span><span class="sxs-lookup"><span data-stu-id="f977c-119">You can suspend service agreements and stop individual service agreement lines.</span></span>
 
-<span data-ttu-id="d36ed-120">Ha valamelyik szolgáltatásiszerződés-sornál bejelöli a **Felfüggesztve** jelölőnégyzetet, akkor a következők nem lehetségesek:</span><span class="sxs-lookup"><span data-stu-id="d36ed-120">If you select the **Suspended** check box on a service agreement, you cannot:</span></span>
+<span data-ttu-id="f977c-120">Ha valamelyik szolgáltatásiszerződés-sornál bejelöli a **Felfüggesztve** jelölőnégyzetet, akkor a következők nem lehetségesek:</span><span class="sxs-lookup"><span data-stu-id="f977c-120">If you select the **Suspended** check box on a service agreement, you cannot:</span></span>
 
--    <span data-ttu-id="d36ed-121">Szervizrendelések automatikus és kézi létrehozása a szolgáltatási szerződésből.</span><span class="sxs-lookup"><span data-stu-id="d36ed-121">Create service orders automatically or manually from the service agreement.</span></span>
+-    <span data-ttu-id="f977c-121">Szervizrendelések automatikus és kézi létrehozása a szolgáltatási szerződésből.</span><span class="sxs-lookup"><span data-stu-id="f977c-121">Create service orders automatically or manually from the service agreement.</span></span>
 
-<span data-ttu-id="d36ed-122">Ha valamelyik szolgáltatásiszerződés-sornál bejelöli a **Leállítva** jelölőnégyzetet, akkor a következők nem lehetségesek:</span><span class="sxs-lookup"><span data-stu-id="d36ed-122">If you select the **Stopped** check box on a service agreement line, you cannot:</span></span>
+<span data-ttu-id="f977c-122">Ha valamelyik szolgáltatásiszerződés-sornál bejelöli a **Leállítva** jelölőnégyzetet, akkor a következők nem lehetségesek:</span><span class="sxs-lookup"><span data-stu-id="f977c-122">If you select the **Stopped** check box on a service agreement line, you cannot:</span></span>
 
--    <span data-ttu-id="d36ed-123">Szervizrendelések automatikus és kézi létrehozása a szolgáltatásiszerződés-sorból.</span><span class="sxs-lookup"><span data-stu-id="d36ed-123">Create service orders automatically or manually from the service agreement line.</span></span>
--    <span data-ttu-id="d36ed-124">A szolgáltatásiszerződés-sor másolása egy másik szolgáltatási szerződésbe vagy szervizrendelésbe.</span><span class="sxs-lookup"><span data-stu-id="d36ed-124">Copy the service agreement line into another service agreement or service order.</span></span>
+-    <span data-ttu-id="f977c-123">Szervizrendelések automatikus és kézi létrehozása a szolgáltatásiszerződés-sorból.</span><span class="sxs-lookup"><span data-stu-id="f977c-123">Create service orders automatically or manually from the service agreement line.</span></span>
+-    <span data-ttu-id="f977c-124">A szolgáltatásiszerződés-sor másolása egy másik szolgáltatási szerződésbe vagy szervizrendelésbe.</span><span class="sxs-lookup"><span data-stu-id="f977c-124">Copy the service agreement line into another service agreement or service order.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="d36ed-125">Ha egy szolgáltatási szerződés fel van függesztve, akkor a program minden hozzá tartozó sort leállít, függetlenül attól, hogy a sor milyen állapotban van.</span><span class="sxs-lookup"><span data-stu-id="d36ed-125">If a service agreement is suspended, all the attached lines are stopped, regardless of their individual status.</span></span>
+> <span data-ttu-id="f977c-125">Ha egy szolgáltatási szerződés fel van függesztve, akkor a program minden hozzá tartozó sort leállít, függetlenül attól, hogy a sor milyen állapotban van.</span><span class="sxs-lookup"><span data-stu-id="f977c-125">If a service agreement is suspended, all the attached lines are stopped, regardless of their individual status.</span></span>
 
-## <a name="service-agreement-lines"></a><span data-ttu-id="d36ed-126">Szolgáltatási szerződések sorai</span><span class="sxs-lookup"><span data-stu-id="d36ed-126">Service-agreement lines</span></span>
+## <a name="service-agreement-lines"></a><span data-ttu-id="f977c-126">Szolgáltatási szerződések sorai</span><span class="sxs-lookup"><span data-stu-id="f977c-126">Service-agreement lines</span></span>
 
-<span data-ttu-id="d36ed-127">A szolgáltatási szerződések minden egyes sora részletesen leírja a javasolt szervizmunka tartalmát.</span><span class="sxs-lookup"><span data-stu-id="d36ed-127">Each service-agreement line describes in detail the content of the proposed service work.</span></span> <span data-ttu-id="d36ed-128">A sorok a következő beállításokat tartalmazzák:</span><span class="sxs-lookup"><span data-stu-id="d36ed-128">The lines contain the following settings:</span></span>
+<span data-ttu-id="f977c-127">A szolgáltatási szerződések minden egyes sora részletesen leírja a javasolt szervizmunka tartalmát.</span><span class="sxs-lookup"><span data-stu-id="f977c-127">Each service-agreement line describes in detail the content of the proposed service work.</span></span> <span data-ttu-id="f977c-128">A sorok a következő beállításokat tartalmazzák:</span><span class="sxs-lookup"><span data-stu-id="f977c-128">The lines contain the following settings:</span></span>
 
--  <span data-ttu-id="d36ed-129">A tranzakció típusa és a tranzakciótípus leírása.</span><span class="sxs-lookup"><span data-stu-id="d36ed-129">The transaction type and the description of the transaction type.</span></span>
--  <span data-ttu-id="d36ed-130">A szervizt végrehajtó alkalmazott nevét.</span><span class="sxs-lookup"><span data-stu-id="d36ed-130">The employee who performs the service work.</span></span>
--  <span data-ttu-id="d36ed-131">A tárgyat, amelyen a szolgáltatási szerződés szerint a szervizt végre kell hajtani.</span><span class="sxs-lookup"><span data-stu-id="d36ed-131">The objects on which service must be performed for the service agreement.</span></span>
--  <span data-ttu-id="d36ed-132">A gyakoriságot, amellyel a munkát végre kell hajtani, és a társított cikk-, költség- és díjtranzakciókat regisztrálni.</span><span class="sxs-lookup"><span data-stu-id="d36ed-132">The frequency with which work is performed and associated item, expense, and fee transactions are registered.</span></span>
--  <span data-ttu-id="d36ed-133">Az időablakot, amelyen belül a szervizrendelés-sorok egy szervizrendelésbe csoportosíthatók.</span><span class="sxs-lookup"><span data-stu-id="d36ed-133">The time window within which service-order lines can be grouped into a service order.</span></span>
--  <span data-ttu-id="d36ed-134">Szerződéssorok csoportosítására használt szervizfeladatok, amelyek általános szinten összefoglalják a szerviztechnikusok és a vevők számára, hogy milyen szervizfeladatot kell elvégezni.</span><span class="sxs-lookup"><span data-stu-id="d36ed-134">The service tasks that are used to group sets of agreement lines together into work tasks and to summarize for service technicians and customers what service task is to be provided.</span></span>
--  <span data-ttu-id="d36ed-135">A sor le van-e állítva.</span><span class="sxs-lookup"><span data-stu-id="d36ed-135">Whether a line is stopped.</span></span> <span data-ttu-id="d36ed-136">Ha egy sor le van állítva, akkor ahhoz nem hozható létre szervizrendelés.</span><span class="sxs-lookup"><span data-stu-id="d36ed-136">If a line is stopped, you cannot create service orders for that individual line.</span></span>
--  <span data-ttu-id="d36ed-137">Projektbeállítások, például a kategória és a sortulajdonság.</span><span class="sxs-lookup"><span data-stu-id="d36ed-137">Project settings, such as the category and the line property.</span></span>
+-  <span data-ttu-id="f977c-129">A tranzakció típusa és a tranzakciótípus leírása.</span><span class="sxs-lookup"><span data-stu-id="f977c-129">The transaction type and the description of the transaction type.</span></span>
+-  <span data-ttu-id="f977c-130">A szervizt végrehajtó alkalmazott nevét.</span><span class="sxs-lookup"><span data-stu-id="f977c-130">The employee who performs the service work.</span></span>
+-  <span data-ttu-id="f977c-131">A tárgyat, amelyen a szolgáltatási szerződés szerint a szervizt végre kell hajtani.</span><span class="sxs-lookup"><span data-stu-id="f977c-131">The objects on which service must be performed for the service agreement.</span></span>
+-  <span data-ttu-id="f977c-132">A gyakoriságot, amellyel a munkát végre kell hajtani, és a társított cikk-, költség- és díjtranzakciókat regisztrálni.</span><span class="sxs-lookup"><span data-stu-id="f977c-132">The frequency with which work is performed and associated item, expense, and fee transactions are registered.</span></span>
+-  <span data-ttu-id="f977c-133">Az időablakot, amelyen belül a szervizrendelés-sorok egy szervizrendelésbe csoportosíthatók.</span><span class="sxs-lookup"><span data-stu-id="f977c-133">The time window within which service-order lines can be grouped into a service order.</span></span>
+-  <span data-ttu-id="f977c-134">Szerződéssorok csoportosítására használt szervizfeladatok, amelyek általános szinten összefoglalják a szerviztechnikusok és a vevők számára, hogy milyen szervizfeladatot kell elvégezni.</span><span class="sxs-lookup"><span data-stu-id="f977c-134">The service tasks that are used to group sets of agreement lines together into work tasks and to summarize for service technicians and customers what service task is to be provided.</span></span>
+-  <span data-ttu-id="f977c-135">A sor le van-e állítva.</span><span class="sxs-lookup"><span data-stu-id="f977c-135">Whether a line is stopped.</span></span> <span data-ttu-id="f977c-136">Ha egy sor le van állítva, akkor ahhoz nem hozható létre szervizrendelés.</span><span class="sxs-lookup"><span data-stu-id="f977c-136">If a line is stopped, you cannot create service orders for that individual line.</span></span>
+-  <span data-ttu-id="f977c-137">Projektbeállítások, például a kategória és a sortulajdonság.</span><span class="sxs-lookup"><span data-stu-id="f977c-137">Project settings, such as the category and the line property.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d36ed-138">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="d36ed-138">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f977c-138">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="f977c-138">Related topics</span></span>
 
-[<span data-ttu-id="d36ed-139">Szolgáltatási szerződések létrehozása</span><span class="sxs-lookup"><span data-stu-id="d36ed-139">Create service agreements</span></span>](create-service-agreements.md)
+[<span data-ttu-id="f977c-139">Szolgáltatási szerződések létrehozása</span><span class="sxs-lookup"><span data-stu-id="f977c-139">Create service agreements</span></span>](create-service-agreements.md)
