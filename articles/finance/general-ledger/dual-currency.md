@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 580f0c885373006cb9cd955a61c41704a2ac9a94
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186693"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249011"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations 8.1 verziójában (2018. október) megjelent funkció lehetővé teszi, hogy a jelentési pénznem célja módosítható legyen, és második könyvelési pénznemként legyen használva. Ezt a funkciót *kettős pénznemnek* nevezik. A kettős pénznem módosításai konfigurációs kulccsal vagy paraméterrel nem kapcsolhatók ki. Mivel a jelentési pénznem szolgál második könyvelési pénznemként, a jelentési pénznemben kiszámítási módja a feladási logikában megváltozott.
 

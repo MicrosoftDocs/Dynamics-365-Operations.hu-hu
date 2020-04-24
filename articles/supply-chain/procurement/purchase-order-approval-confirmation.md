@@ -1,30 +1,30 @@
 ---
 title: Beszerzési rendelések jóváhagyása és megerősítése
 description: Ez a témakör ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813431"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207994"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -69,9 +69,10 @@ Bizonyos esetekben lehet, hogy meg kell változtatni egy beszerzési rendelést,
 
 Ha a beszerzési rendelés a változás-kezelési folyamat segítségével lett létrehozva, a rendelés visszahívásával eszközölhet változtatásokat, valamint ha a rendelés már jóvá lett hagyva, akkor a **Változtatás kérése** művelettel teheti ezt meg. Ebben az esetben a megrendelés visszakerül **Vázlat** állapotba, és ezután módosíthatja a rendelést. Miután befejezte a módosításokat, benyújthatja a beszerzési rendelést újbóli jóváhagyásra. A **Beszerzési rendelések ismételt jóváhagyási szabálya** irányelv segítségével a **Beszerzési irányelvek** oldalon beállíthatja azokat a változtatásokat, ami miatt újbóli jóváhagyásra van szükség
 
-Miután a megrendelt mennyiség egy része már ki lett szállítva, nem változtathatja meg a rendelés mennyiségét. Azonban módosíthatja a **Fennmaradó szállítása** sorban szereplő mennyiséget. Ezután a **Véglegesítés** művelet segítségével érvénytelenítheti a sorokat és megakadályozhatja a további feldolgozást. 
+Miután a megrendelt mennyiség egy része már ki lett szállítva, nem változtathatja meg a rendelés mennyiségét, amikor a beszerzési rendelés **Vázlat** állapotban van. Ugyanakkor módosíthatja a **Fennmaradó szállítása** mennyiséget annak a beszerzési rendelésnek a sorában, amely **Vázlat** állapotban van.
 
-Miután egy rendelés meg lett erősítve, nem törölheti azt. Azonban érvénytelenítheti a teljes vagy a fennmaradó mennyiséget, feltéve, hogy a mennyiség még nem lett átvéve vagy számlázva.
+Miután egy rendelés meg lett erősítve, nem törölheti azt. Azonban érvénytelenítheti a teljes vagy a fennmaradó mennyiséget, feltéve, hogy a mennyiség még nem lett átvéve vagy számlázva. Ezután a **Véglegesítés** művelet segítségével megakadályozhatja a további feldolgozást. 
+
 
 ## <a name="canceling-purchase-orders"></a>Beszerzési rendelések érvénytelenítése
 

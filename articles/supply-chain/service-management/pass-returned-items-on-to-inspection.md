@@ -2,7 +2,7 @@
 title: A visszaadott cikkek továbbadása vizsgálatra
 description: Visszáru cikkek rögzítésekor a cikkeket vizsgálatra kell küldeni, mielőtt visszajuttatná azokat a készletbe, vagy valamilyen más intézkedést hozna.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70aafb752b2c847d5d48236fd5d201a73e088c24
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cbb43bc4f696935bba9fca6435eb73fc9a2e5149
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556783"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202100"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>A visszaadott cikkek továbbadása vizsgálatra 
 

@@ -1,9 +1,9 @@
 ---
-title: Képernyő-elrendezések a pénztár (POS) számára
+title: Pénztár felhasználói felület vizuális konfigurációja
 description: Ez a témakör a Dynamics 365 Commerce pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022830"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261467"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Képernyő-elrendezések a pénztár (POS) számára
+# <a name="pos-user-interface-visual-configurations"></a>Pénztár felhasználói felület vizuális konfigurációja
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Ez a témakör a Dynamics 365 Commerce pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
-
-A pénztár felhasználói felülete (UI) vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők.
+A Microsoft Dynamics 365 Commerce pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők. Ez a témakör a konfigurációs lehetőségekkel kapcsolatos további információkat tartalmaz.
 
 A következő ábra a POS felhasználói felület konfigurálható részeit leképező különböző entitások közötti összefüggéseket mutatja.
 
@@ -40,7 +39,7 @@ A következő ábra a POS felhasználói felület konfigurálható részeit lek�
 
 ## <a name="visual-profile"></a>Vizuális profil
 
-A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás-specifikus és a felhasználók számára közös vizuális elemek megadására szolgálnak. Bármelyik felhasználónak, aki bejelentkezik a nyilvántartásba, azonos lesz a téma, a színek és a képek.
+A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás-specifikus és a felhasználók számára közös vizuális elemek megadására szolgálnak. Bármelyik felhasználónak, aki bejelentkezik a nyilvántartásba, azonos lesz a téma az elrendezés a színek és a képek.
 
 ![Világos téma a POS üdvözlő képernyőn](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 
 - **Profil száma** - A profilszám a vizuális profil egyedi azonosítója.
 - **Leírás** - Megadhat egy felismerhető nevet, amely segít azonosítani a megfelelő profilt az adott helyzetnek megfelelően.
-- **Téma** - A világos vagy a sötét alkalmazástémák közül választhat. A téma hatással van a betűk és háttér színére az alkalmazás egészében.
+- **Téma** – A **Világos** vagy a **Sötét** alkalmazástémák közül választhat. A téma hatással van a betűk és háttér színére az alkalmazás egészében.
 - **Kiemelés színe** - A kiemelőszínt a rendszer használja a pénztárban mindenütt bizonyos vizuális elemek megkülönböztetésére és kiemelésére: ilyenek a csempék, a parancsgombok és a hivatkozások. Ezek az elemek általában interaktívak.
-- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét. Ez a funkció csak a Retail 1611 verzióban nem érhető el.
-- **Dátum/idő megjelenítése** – Engedélyezés esetén az aktuális dátum és idő a pénztárfejlécben fog megjelenni.
-- **Bejelentkezési hátterek** - Megadhatja a bejelentkezési képernyő háttérképét. A háttérkép méretének a lehető legkisebbnek kell lennie, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
-- **Alkalmazásháttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. Bejelentkezési hátterek esetén a fájlméretet a lehető legkisebbnek kell tartani.
+- **Fejléc színe** – Beállíthatja a kiskereskedő védjegy követelményeinek megfelelően az oldal fejlécének színét.
+- **Betűtípusséma** – A **Standard** és a **Nagyméretű** betűtípussémák közül választhat. A Betűtípusséma hatással van a betűméretre az alkalmazás egészében. Alapértelmezetten a **Standard** lehetőség van kiválasztva.
+- **Az alkalmazássáv címkéinek megjelenítése mindig** – Ha ez a beállítás be van kapcsolva, a címke szövege mindig látható az alkalmazássáv gombjai alatt.
+- **Elrendezés** – A **Középre igazított** és a **Jobbra igazított** elrendezések közül lehet kiválasztani. Az elrendezés hatással van a bejelentkezési képernyőn a bejelentkezési mező igazítására. Alapértelmezetten a **Középre zárt** lehetőség van kiválasztva.
+- **Dátum/idő megjelenítése** – Ha ez a beállítás be van kapcsolva, akkor az aktuális dátum és idő látható a pénztár fejlécében és a bejelentkezési képernyőn.
+- **Billentyűzet** – Az **Operációs rendszer alapértelmezett billentyűzete** és a **Számbillentyűzet megjelenítése** közül választhat hogy a bejelentkezési képernyőn milyen alapértelmezett billentyűzetet kell használni a bevitelhez. A számbillentyűzet egy virtuális billentyűzet, amely elsősorban az érintés alapú eszközöknél használatos. Az alapértelmezett beállítás az **Operációs rendszer alapértelmezett billentyűzete**.
+- **Logókép** – A bejelentkezési képernyőn megjelenítendő logó képét is megadhatja. Azt ajánljuk, hogy használjon átlátszó hátterű képet. A fájlméret a lehető legkisebb legyen, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
+- **Bejelentkezési háttér** - Megadhatja a bejelentkezési képernyő háttérképét. A háttérképek fájlméretét a lehető legkisebbnek kell tartani.
+- **Háttér** - Az egyszínű háttér helyett valamilyen beállítható képet is mutathat a háttérben az alkalmazás egészében. A bejelentkezési képernyő háttérképei esetében a fájlméretnek a lehető legkisebb méretben kell lennie.
+
+> [!NOTE]
+> A **Jobbra zárt** elrendezés és a dátum/idő megjelenítése nem érvényes a bejelentkezési képernyőre a kompakt nézetben.
 
 ## <a name="screen-layouts"></a>Képernyő-elrendezések
 
-A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalom és a felhasználóifelület-vezérlők elhelyezését a pénztár üdvözlőképernyőjén és **Tranzakciók** képernyőjén.
+A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalom és a felhasználóifelület-vezérlők elhelyezését a pénztár **Üdvözlőképernyőjén** és **Tranzakciók** képernyőjén.
 
 ![Pénztár képernyő-elrendezés megtekintése](../commerce/media/POS-Screen-Layout-View.png)
 

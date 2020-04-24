@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897925"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197267"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 16.) szolgáltatásban
 
@@ -46,10 +46,6 @@ A szakaszban ismertetett módosítások a 8.1.2239-ös buildre vonatkoznak. A fe
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Kompenzációs régió, kompenzációs szint, juttatási lehetőség és szakértelem típusa entitások frissülnek a Common Data Service megoldásban a vevői mező támogatásához
 
 Ebben a kiadásban ezek a Common Data Service entitások frissítve lettek, hogy lehetséges legyen egyéni mezők hozzáadása a Talent: Core HR megoldásban.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Új Common Data Service entitás-támogatás: Kompenzációs átruházási szabályok, Kompenzáció-változó konstrukció, Változó kompenzáció
-
-Ebben a kiadásban a Kompenzációs átruházási szabályok, a Kompenzációs változó konstrukció és a változó kompenzáció entitások hozzá lettek adva a Common Data Service megoldáshoz. Ezek az entitások a Talent: Core HR megoldással hozzáadott egyéni mezőket is támogatják.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI frissítési problémák (314342)
 
@@ -93,6 +89,6 @@ Ez a módosítással az ismétlődések észleli a program, amikor névmezőket 
 
 ### <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
 
-A Finance and Operations 25-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
+A Finance and Operations 25-ös platformfrissítésével a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
 
 
