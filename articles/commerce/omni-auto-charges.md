@@ -3,7 +3,7 @@ title: Többcsatornás speciális automatikus költségek
 description: Ez a témakör a Commerce csatorna rendeléseihez kapcsolódó kiegészítő rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022843"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175154"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0-s verziójában.
+Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0 verziójában.
 
 Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP alkalmazásban.
 
@@ -63,7 +63,7 @@ Az új műveletek alább láthatók.
 - **142 – Költségek kezelése** – Használja ezt a műveletet arra, hogy engedélyezze a pénztár felhasználóknak a vegyes költségek megjelenítését és szerkesztését a pénztártranzakcióknál, amelyeket vagy kézzel vagy rendszer által kerültek hozzáadásra automatikus költségek számításain keresztül.
 - **141 – Fejlécköltségek hozzáadása** – Használja ezt a műveletet arra, hogy lehetőséget adjon a felhasználónak a fejléc szintű vegyes költségek manuális hozzáadására a pénztár értékesítési tranzakcióhoz (és válassza ki a használandó költségkódot).
 - **140 – Sorköltségek hozzáadása** – Használja ezt a műveletet arra, hogy lehetőséget adjon a felhasználónak a sorszintű vegyes költségek manuális hozzáadására a pénztár értékesítési tranzakció sorához (és válassza ki a használandó költségkódot).
-- **143 – Költségek újraszámolása** – A művelet segítségével az értékesítési tranzakcióhoz a költségek teljes ismételt számítását végrehajthatja. Bármely korábbi felhasználó által felülbírált automatikus költségek újra lesznek számítva a bevásárlókocsi aktuális konfigurációja alapján.
+- **143 – Költségek újraszámolása** – A művelet segítségével az értékesítési tranzakcióhoz a költségek teljes újraszámítását végrehajthatja. Bármely korábbi felhasználó által felülbírált automatikus költségek újra lesznek számítva a bevásárlókocsi aktuális konfigurációja alapján.
 
 Mint minden pénztárműveletnál, a biztonsági konfigurációk beállíthatók úgy, hogy vezetői jóváhagyást igényeljenek a művelet végrehajtásához.
 
@@ -77,7 +77,7 @@ Ebben a szakaszban használati eseteket mutatunk be, amellyel jobban megértheti
 
 #### <a name="use-case-scenario"></a>Használati eset forgatókönyve
 
-A kiskereskedő szeretne automatikusan költségeket hozzáadni a szállításhoz a bármely Commerce-csatornában létrehozott tranzakciók esetén, ahol a termékeket el kell szállítani a vevőhöz. A kiskereskedő kínál 2 szállítási módot: földi és légi. Ha a vevő a Földi szállítást választja és a rendelés értéke kisebb, mint 100 USD, a kiskereskedő 10 USD fuvardíjat akar a vevőre terhelni. Ha a rendelés értéke több mint 100 USD, és a vevő a földi szállítás mellet dönt, a vevőnek nem számolnak fel további szállítási díjakat. Ha a vevő légi módot választ az összes megrendeléshez, összértékétől függetlenül, 20 USD szállítási díjat kell felszámítani.
+A kiskereskedő szeretne automatikusan költségeket hozzáadni a szállításhoz a bármely Commerce-csatornában létrehozott tranzakciók esetén, ahol a termékeket el kell szállítani a vevőhöz. A kiskereskedő kínál két szállítási módot: földi és légi. Ha a vevő a Földi szállítást választja és a rendelés értéke kisebb, mint 100 USD, a kiskereskedő 10 USD fuvardíjat akar a vevőre terhelni. Ha a rendelés értéke több mint 100 USD, és a vevő a földi szállítás mellet dönt, a vevőnek nem számolnak fel további szállítási díjakat. Ha a vevő légi módot választ az összes megrendeléshez, összértékétől függetlenül, 20 USD szállítási díjat kell felszámítani.
 
 #### <a name="setup-and-configuration"></a>Beállítás és konfigurálás
 
@@ -157,7 +157,7 @@ Ez a folyamat alkalmazható a hívásközpontban a meglévő **Költségek** fun
 
 #### <a name="use-case-scenario"></a>Használati eset forgatókönyve
 
-A vevő kérte, hogy az értékelési rendelésen 2 cikk az 5-ből kapjon ajándékcsomagolást. A kiskereskedő ezt a nem kötelező szolgáltatást cikkenként 2 USD díjért nyújtja. A rendelés átvevőjének hozzá kell adnia ezeket a díjat az ajándékcsomagolást kapó cikkekhez.
+A vevő kérte, hogy az értékelési rendelésen két cikk az ötből kapjon ajándékcsomagolást. A kiskereskedő ezt a nem kötelező szolgáltatást cikkenként 2 USD díjért nyújtja. A rendelés átvevőjének hozzá kell adnia ezeket a díjat az ajándékcsomagolást kapó cikkekhez.
 
 #### <a name="setup-and-configuration"></a>Beállítás és konfigurálás
 
@@ -215,3 +215,10 @@ Előfordulhat, hogy egyes szervezetek szívesebben várnak, amíg a felhasznál�
 ### <a name="charges-override-reports"></a>Költség-felülbírálási jelentések
 
 Ha felhasználó manuálisan felülírja a számított költségeket vagy manuálisan ad hozzá költséget a tranzakcióhoz, ez az adatot lesz elérhető ellenőrzésre a **Költség-felülbírálás előzményei** jelentésben. A jelentés itt érhető el: **Retail és Commerce \> Lekérdezések és jelentések \> Költség-felülbírálás előzményei**. Fontos megjegyezni, hogy a jelentéshez szükséges adatokat importálása a csatorna-adatbázisból történik a központba „P” elosztási munkaütemezésen keresztül. Emiatt a POS-ban végrehajtott felülbírálások adatait nem lesznek azonnal elérhetők a jelentésben mindaddig, amíg a feladat fel nincs töltve az üzlet tranzakciós adatokaiba a központban.
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Automatikus költségek csatorna szerinti engedélyezése és konfigurálása](auto-charges-by-channel.md)
+
+[Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
+

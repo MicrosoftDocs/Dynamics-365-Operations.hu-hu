@@ -3,7 +3,7 @@ title: Csapatnaptár létrehozása
 description: A csapatnaptárak megtekintése és létrehozása a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22350e0a9da593d52278090dde298923d490cb8c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 71637a659b26ea6912da993f1e899e33f7082512
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009271"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226207"
 ---
-# <a name="view-team-and-company-calendars"></a>Csapat-és vállalati naptárak megtekintése
+# <a name="view-team-and-company-calendars"></a>Csoportos és vállalati naptárak megtekintése
 
 [!include [banner](includes/preview-feature.md)]
 
-Megtekintheti a csapat-és vállalati naptárakat a Dynamics 365 Human Resources alkalmazásban.
+Megtekintheti a csapat-és vállalati naptárakat a Dynamics 365 Human Resources alkalmazásban. A csapatnaptárak csak a sorhierarchiában meghatározott közvetlen jelentéseket jelenítik meg.
 
-## <a name="view-your-team-calendar"></a>Saját csapatnaptár megtekintése
-
-A vezetők megtekinthetik a csapat naptárait. A csapatnaptárak csak a sorhierarchiában meghatározott közvetlen jelentéseket jelenítik meg.
+## <a name="view-your-team-calendar-as-an-employee"></a>A csoportja naptárának megtekintése alkalmazottként
 
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Saját csapat** lehetőséget.
 
 2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Csapatnaptár megtekintése** lehetőséget.
+
+## <a name="view-your-team-calendar-as-a-manager"></a>A csoportja naptárának megtekintése vezetőként
+
+1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Saját csapat** lehetőséget.
+
+2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Csapatnaptár megtekintése** lehetőséget.
+
+A vezetők a csoport naptárát a **Saját csapathoz tartozó szabadságkérelmek**, **Jóváhagyott szabadságkérelmek** és a **Táűvolléti kérelmek** helyekről tekinthetik meg. 
 
 ## <a name="view-a-company-calendar"></a>Vállalati naptár megtekintése
 
@@ -47,5 +53,7 @@ Az Emberi erőforrás szerepkörrel rendelkező személyek megtekinthetik a vál
 
 2. Válassza a **Szabadság- és távolléti naptár** lehetőséget.
 
-A naptár beállításaival kapcsolatos további tudnivalókat lásd: [Naptárparaméterek konfigurálása](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
+A humánerőforrás-szerepkörök a vállalat naptárát a **Szabadság- és távolléti kérelmek**, **Jóváhagyott szabadság** és **Szabadságkérelmek** helyekről is elérhetik. 
+
+A naptár beállításaival kapcsolatos további tudnivalókat lásd: [Naptárparaméterek konfigurálása](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a korábbi kiadásokban
 description: Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy melyek eltávolítása tervezett a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124566"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225128"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -263,11 +263,11 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak. A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba*, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül. Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban. A probléma megoldásához:<br><br>1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.<br><br>2. Fordítsa újra.<br><br>3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett. |
-| **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva.  |
-| **Érintett területek**         | Visual Studio fejlesztőeszközök. |
-| **Telepítési beállítás**              | Mind. |
-| **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba lesz a jövőben. Jelenleg a 30-as platformfrissítés van megcélozva. |
+| **Elavulás/eltávolítás oka** | Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak. Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban. A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba*, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül. A probléma megoldásához:<br><br>1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.<br><br>2. Fordítsa újra.<br><br>3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett. |
+| **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba lesz a jövőben. Ez a módosítás az Finance and Operations alkalmazások 10.0.11 verzió platform-frissítéseiben van megcélozva. |
 
 #### <a name="complete-list"></a>Teljes lista
 Az elavulás alatt álló API-k teljes listája: [Módszerek és metaadatelemek elavulása](deprecation-deletion-apis.md).

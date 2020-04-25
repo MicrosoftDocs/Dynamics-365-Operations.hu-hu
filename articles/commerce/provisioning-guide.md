@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce előnézeti környezet létesítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce előzetes környezetet létesíteni.
 author: psimolin
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024636"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254748"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce előnézeti környezet létesítése
 
@@ -235,9 +235,7 @@ Az e-kereskedelem inicializálásához kövesse az alábbi lépéseket.
 
 Ha problémák merülnek fel a létesítés lépéseinek végrehajtása közben, akkor kérjen segítséget [a Microsoft Dynamics 365 Commerce előzetes Yammer-csoportjában](https://aka.ms/Dynamics365CommercePreviewYammer).
 
-Ha problémákat tapasztal, amikor megpróbál hozzáférni a Yammer-csoporthoz, akkor lépjen kapcsolatba a Microsofttal e-mailben a <Dynamics365Commerce@microsoft.com> címen. Ez az e-mail-cím nincs aktív felügyelet alatt. Ezért késedelemre számíthat a válaszadásban.
-
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A Kereskedelem előzetes környezetének létesítési és konfigurálási folyamatának folytatásához lásd: [Kereskedelem előzetes környezetének konfigurálása](cpe-post-provisioning.md).
 

@@ -3,7 +3,7 @@ title: TRANSLATE ER-függvény
 description: A témakör tájékoztatást nyújt a TRANSLATE Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fe19c5f66c33e336f76f3a72d3bbda0c7e8d86
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 415444bda097c00522155d1b37988a79da836902
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040917"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201112"
 ---
-# <a name="TRANSLATE">TRANSLATE ER-függvény</a>
+# <a name=""></a><a name="TRANSLATE">TRANSLATE ER-függvény</a>
 
 [!include [banner](../includes/banner.md)]
 
-A `TRANSLATE` függvény *Karakterlánc* értékként adja vissza a megadott szöveges karakterláncot, miután annak egészét vagy egy részét lecserélték egy másik karakterlánccal.
+A `TRANSLATE` függvény olyan *Karakterlánc* értéket ad vissza, amely a megadott szöveg karakterrel történő helyettesítésének eredményét tartalmazza egy másik megadott halmaz karaktereivel.
 
 ## <a name="syntax"></a>Szintaxis
 
@@ -51,16 +51,30 @@ A lecserélendő szöveg.
 
 A csereként használandó szöveg.
 
-## <a name="return-values"></a>Visszaadott értékek
+## <a name="return-values"></a>Visszatérési értékek
 
 *Karakterlánc*
 
 Az eredményül kapott szövegérték.
 
-## <a name="example"></a>Példa
+## <a name="usage-notes"></a>Használati megjegyzések
 
-A `TRANSLATE ("abcdef", "cd", "GH")` lecseréli a **"cd"** mintát a **"GH"** karakterláncra, és az **"abGHef"** értéket adja vissza.
+A `TRANSLATE` függvény egyszerre csak egy karaktert cserél. A függvény cseréli a `text` argumentum első karakterét az `pattern` argumentum első karakterével, majd a második karakterrel, és a ugyanezt a folyamatot követi a befejezésig. Amikor egy karakter a `text` és a `pattern` az argumentumok között megegyezik, a program az `replacement` argumentumban szereplő karakternek karakterével helyettesíti, amely ugyanabban a pozícióban van, mint a `pattern` argumentum karaktere. Ha egy karakter többször jelenik meg az `pattern` argumentumban, akkor a `replacement` argumentum leképezése megfelel a karakter első előfordulásakor használtnak.
+
+## <a name="example-1"></a>1. példa
+
+A `TRANSLATE ("abcdef", "cd", "GH")` cseréli a **„c”** karakterét a meghatározott **„abcdef”** szövegnek a **„G”** karkaterére a `replacement` szövegnek a következők miatt:
+-   A **„c ”** karakter az első pozícióban található a `pattern` szövegben.
+-   A `replacement` szöveg első pozíciójában a **„G”** karakter szerepel.
+
+## <a name="example-2"></a>2. példa
+
+A `TRANSLATE ("abcdef", "ccd", "GH")` az **„abGdef”** értéket adja vissza.
+
+## <a name="example-3"></a>3. példa
+
+A `TRANSLATE ("abccba", "abc", "123")` a **"123321"** értéket adja vissza.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Szöveg függvények](er-functions-category-text.md)
+[Szöveges függvények](er-functions-category-text.md)

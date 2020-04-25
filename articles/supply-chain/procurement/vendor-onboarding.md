@@ -2,7 +2,7 @@
 title: Szállítók felvétele
 description: Ez a témakör az új szállítók felvételének folyamatát mutatja be. Ismerteti, hogy a különböző szerepköröknek milyen műveleteket kell elvégezniük a folyamat közben.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250148"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203411"
 ---
 # <a name="onboard-vendors"></a>Szállítók felvétele
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ Az alábbi táblázat bemutatja a folyamatban részt vevő szerepköröket és a
 | Adminisztrátor            | | | Hozzon létre egy felhasználót a Supply Chain Management és a Microsoft Azure rendszerben. | | | |
 | A szállító kapcsolattartója    | | | E-mail küldése a kapcsolattartónak. | Szállítói információ regisztrálása. | | |
 
-A Szállító felvételi folyamatának gyors bemutatásához nézze meg ezt a rövid videót a YouTube-on: [Új szállító felvétele a Finance and Operations rendszerben](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Az új szállítók felvételi folyamatának gyors bemutatásáért nézze meg ezt a rövid YouTube-videót: [Új szállító beléptetése a Finance and Operations rendszerben](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>A potenciális szállító regisztrálási kérelmének importálása
 

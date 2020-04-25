@@ -3,7 +3,7 @@ title: A szöveges kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott szövegfüggvényekről.
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916614"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201089"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>A szöveges kategóriába tartozó ER-függvények listája
 
@@ -52,7 +52,7 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | [Csere](er-functions-text-replace.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott szöveges karakterláncot, miután annak egészét vagy egy részét lecserélték egy másik karakterlánccal. |
 | [Jobbra](er-functions-text-right.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc vége után. |
 | [Szöveg](er-functions-text-text.md) | A függvény a megadott számot egy *Karakterlánc* értékként adja vissza, miután az aktuális alkalmazás példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. |
-| [Fordítás](er-functions-text-translate.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott szöveges karakterláncot, miután annak egészét vagy egy részét lecserélték egy másik karakterlánccal. |
+| [Fordítás](er-functions-text-translate.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely a megadott szöveg karakterrel történő helyettesítésének eredményét tartalmazza egy másik megadott halmaz karaktereivel. |
 | [Trim](er-functions-text-trim.md) | Ez a funkció a megadott karakterláncot *Karakterlánc* értékként adja vissza, miután a kezdő és záró szóközöket levágta, és a szavak közötti több szóközt eltávolította. |
 | [Upper](er-functions-text-upper.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott karakterláncot, miután a program nagybetűssé alakította. |
 

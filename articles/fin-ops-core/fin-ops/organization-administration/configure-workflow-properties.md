@@ -3,7 +3,7 @@ title: Munkafolyamat-tulajdonságok konfigurálása
 description: Ez a témakör bemutatja, hogyan kell konfigurálni a munkafolyamat különböző tulajdonságait.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190120"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199436"
 ---
 # <a name="configure-workflow-properties"></a>Munkafolyamat-tulajdonságok konfigurálása
 
@@ -75,9 +75,11 @@ Utasításokat adhat meg azon felhasználók számára, akik a dokumentumokat fe
     5. A szöveg testreszabásához, illesszen be helyőrzőket. A helyőrző megadásával kapcsolatos további tudnivalókért lásd a 3. lépést.
     6. Kattintson a **Bezárás** gombra.
 
-## <a name="specify-when-this-workflow-is-used"></a>A munkafolyamat használati idejének meghatározása.
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Adja meg, hogy mikor használja ezt a munkafolyamatot aktiválási feltételeken keresztül
 
-Több, ugyanazon a típuson alapuló munkafolyamatot is megadhat. Például, ha létrehoz egy beszerzési igénylési munkafolyamatot minden működési országhoz/régióhoz, például a beszerzési igénylés munkafolyamatának a Beszerzési igénylések Dánia vagy Beszerzési igénylések Spanyolország nevet adhatja. Ha több olyan munkafolyamata van, amelyeknek alapja ugyanaz a típus, meg kell adnia, hogy mikor szeretné a munkafolyamtot használni. Az előző példához adja meg a következő feltételeket:
+Több, ugyanazon a munkafolyamat-típuson alapuló munkafolyamatot is megadhat. Ha több olyan munkafolyamata van, amelyeknek alapja ugyanaz a típus, az aktiválási feltételekkel meg kell adnia, hogy mikor szeretné a munkafolyamatot használni. Ha az aktiválási feltételek nem teljesülnek, akkor a rendszer az alapértelmezett munkafolyamatot használja. Hasonlóképpen, ha egy munkafolyamat-típushoz csak egy munkafolyamat-konfiguráció van definiálva, akkor a munkafolyamat-konfiguráció az aktiválási feltételektől függetlenül használva lesz.
+
+Például, ha létrehoz egy beszerzési igénylési munkafolyamatot minden működési országhoz/régióhoz, például a beszerzési igénylés Beszerzési igénylések Dánia vagy Beszerzési igénylések Spanyolország munkafolyamatot a következő feltételekkel:
 
 - A Beszerzési igénylés Dánia akkor használandó, amikor: ország/terület = DK.
 - A Beszerzési igénylés Spanyolország akkor használandó, amikor: az ország/terület = ES.

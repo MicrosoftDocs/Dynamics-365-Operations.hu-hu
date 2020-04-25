@@ -3,7 +3,7 @@ title: Termékajánlatok engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154413"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259794"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -34,12 +34,32 @@ Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozn
 
 ## <a name="recommendations-pre-check"></a>Javaslatok előzetes ellenőrzése
 
-Az engedélyezés előtt fekhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage (ADLS) felhasználói. 
+Az engedélyezés előtt felhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage (ADLS) felhasználói. 
 
-Az ADLS engedélyezésével kapcsolatos lépéseket lásd [ADLS engedélyezése a Dynamics 365 környezetben](enable-ADLS-environment.md).
+Az ajánlások engedélyezése előtt engedélyeznie kell a következő konfigurációkat a háttérirodában:
 
-Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. Ha további tájékoztatást szeretne erről a beállítási folyamatról, kattintson [ide.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+1. Győződjön meg róla, hogy a ADLS-t megvásárolták és sikeresen hitelesítették a környezetben. További információ: [Győződjön meg róla, hogy a ADLS-t megvásárolták és sikeresen hitelesítették a környezetben](enable-ADLS-environment.md).
+2. Győződjön meg róla, hogy az entitástár frissítés automatizált. A további tudnivalókat lásd: [Győződjön meg róla, hogy az entitástár frissítés automatizált](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Győződjön meg róla, hogy az Azure AD identitáskonfiguráció tartalmaz egy Ajánlási bejegyzést. A művelet végrehajtásával kapcsolatos további információk az alábbiakban láthatók.
 
+Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. A beállítással kapcsolatos további tudnivalókat lásd: [Intézkedések használata](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+
+## <a name="azure-ad-identity-configuration"></a>Azure AD identitáskonfiguráció
+
+Ezt a lépést kötelező megadni az összes olyan vevőnek, aki infrastruktúra szolgáltatásként (IaaS) konfigurációt futtat. A Service Fabric (SF) modulban futó vevők esetében ennek a lépésnek automatikusnak kell lennie, és javasoljuk, hogy ellenőrizze, hogy ez a beállítás a várakozásoknak megfelelően van-e konfigurálva.
+
+### <a name="setup"></a>Beállítás
+
+1. Keresse meg az **Azure Active Directory alkalmazások** lapot a háttér-irodában.
+2. Ellenőrizze, hogy létezik-e bejegyzés a következőhöz: „RecommendationSystemApplication-1”.
+
+Ha a bejegyzés nem létezik, adjon hozzá egy új bejegyzést a következő adatokkal:
+
+- **Ügyfélazonosító** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Név** – RecommendationSystemApplication-1
+- **Felhasználói azonosító** – RetailServiceAccount
+
+Mentés és a képernyő bezárása. 
 
 ## <a name="turn-on-recommendations"></a>Termékjavaslatok bekapcsolása
 
@@ -49,7 +69,7 @@ A termékajánlások bekapcsolásához kövesse az alábbi lépéseket.
 1. A megosztott paraméterek listáján válassza az **Ajánlati listák** elemet.
 1. Állítsa a **Javaslatok engedélyezése** beállítást **Igen** lehetőségre.
 
-![termékjavaslatok engedélyezése](./media/enableproductrecommendations.png)
+![Termékjavaslatok bekapcsolása](./media/enablepersonalization.png)
 
 > [!NOTE]
 > Ez az eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 Commerce szolgáltatásban lehet megtekinteni.
@@ -64,7 +84,9 @@ Miután engedélyezte a javaslatokat a Commerce háttérirodában, hozzá kell a
 
 ## <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
 
-Ha további tájékoztatást szeretne arról, hogyan lehet személyre szabott ajánlásokat kapni, lásd: [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md).
+A Dynamics 365 Commerce programban a kiskereskedők a személyre szabott termékajánlatokat (más néven személyre szabásokat) tehetnek elérhetővé. Ily módon a személyre szabott ajánlások belefoglalhatók az online felhasználói élménybe és a pénztárba. Ha be van kapcsolva a személyre szabási funkció, akkor a rendszer társíthatja a felhasználó beszerzési és termékinformációit az egyéni ajánlások előállításához.
+
+Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lásd: [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

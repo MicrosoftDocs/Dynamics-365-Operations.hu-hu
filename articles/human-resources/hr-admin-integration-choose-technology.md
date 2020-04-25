@@ -1,9 +1,9 @@
 ---
-title: Adatintegrációs technológia választása
-description: Ez a cikk útmutatást nyújt a Human Resources által kezelt adatokkal való integráció különféle lehetőségeiről, és leírja a különböző integrációs technológiák jellemzőit, hogy az integrátorok megalapozott döntéseket hozhassanak az igényeiknek legjobban megfelelő technológiákkal kapcsolatban.
+title: Válasszon ki egy adatintegrációs technológiát
+description: Ez a cikk a Human Resources által kezelt adatokkal való integrációval kapcsolatban tartalmaz tájékoztatást. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,25 +18,27 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f2de5dd41c00e6546b4a4feadaf5774430d572bb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 6bb754ca80af0a0793b5ee162a378ebbe92524c5
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029888"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197290"
 ---
-# <a name="choose-a-data-integration-technology"></a>Adatintegrációs technológia választása
+# <a name="choose-a-data-integration-technology"></a>Válasszon ki egy adatintegrációs technológiát
 
-A Dynamics 365 Human Resources olyan üzleti adatokat kezel, amelyek számos üzleti folyamat során hasznosak. Ez a cikk útmutatást nyújt a Human Resources által kezelt adatokkal való integráció különféle lehetőségeiről, és leírja a különböző integrációs technológiák jellemzőit, hogy az integrátorok megalapozott döntéseket hozhassanak az igényeiknek legjobban megfelelő technológiákkal kapcsolatban.
+Ez a cikk a Dynamics 365 Human Resources által kezelt adatokkal való integrációval kapcsolatban tartalmaz tájékoztatást. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
 
-## <a name="data-integration-vision"></a>Az adatintegráció áttekintése
+## <a name="data-integration-background"></a>Az adatintegráció háttere
 
-A Microsoft az üzleti adatokat olyan kulcsfontosságú eszköznek tekinti, amely egyedivé teszi a vállalatát. Vállalatának adatai rendkívül értékesek. A vállalat egyik része által összegyűjtött és kezelt adatok a vállalat egy másik része által összegyűjtött adatokhoz kapcsolódnak, és ezek a kapcsolatok felhasználhatók az üzleti folyamatok és az üzleti intelligencia szervezeten belüli tökéletesítésére. Egyszerű, biztonságos és stabil hozzáférés biztosítása az üzleti adatokhoz, függetlenül attól, hogy melyik rendszer az adatok „tulajdonosa” – ez a kulcsfontosságú elv abban a szemléletben, amelyet a Human Resources rendszerben megvalósított adatintegrációhoz alkalmazunk.
+Az üzleti adatok olyan kulcsfontosságú eszközök, amely egyedivé teszik a vállalatát. Vállalatának adatai rendkívül értékesek. Az üzleti folyamatok és az üzleti intelligencia szervezeten belüli fejlesztése érdekében a vállalaton belül összegyűjtött adatok közötti kapcsolatokat is használhatja. Igyekszünk egyszerű, biztonságos és stabil hozzáférést biztosítani üzleti adataihoz, függetlenül attól, hogy melyik rendszerből származnak.
 
 Korábban nehézkes volt az adatok integrálása több rendszer között.
 A Microsoft lépéseket tesz annak érdekében, hogy könnyebb legyen az adatok integrálása, és komoly haladást ért el a [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) segítségével.
 
-Még tovább lépve a Human Resources segítségével a Common Data Service válik a Human Resources szolgáltatás preferált nyilvános felületévé. Arra számítunk, hogy idővel a Human Resources által kezelt összes fontos adat megjelenik a Common Data Service szolgáltatásban. A Common Data Service szolgáltatást olyan technológiaként tudjuk ajánlani, amely megfelelő választás a legtöbb integrációs alkalmazáshoz. Tisztában vagyunk azzal, hogy a Common Data Service szolgáltatásban nincs még jelen az alkalmazása számára szükséges összes adat, és hogy a projektjeinek időbeosztásai más technológiákat is igényelhetnek, ezért azt kérjük, hogy tudassa velünk, ha a Common Data Service nem felel meg az integrációs igényeinek.
+A Human Resources segítségével a Common Data Service válik a Human Resources szolgáltatás preferált nyilvános felületévé. Arra számítunk, hogy idővel a Human Resources által kezelt összes fontos adat megjelenik a Common Data Service szolgáltatásban. A Common Data Service szolgáltatást olyan technológiaként tudjuk ajánlani, amely megfelelő választás a legtöbb integrációs alkalmazáshoz.
+
+Előfordulhat, hogy a Common Data Service még nem tartalmazza az alkalmazás által igényelt összes adatot. Azzal is tisztában vagyunk, hogy a projekt időbeosztása alternatív technológiát igényelhet. Mindenképpen tudassa velünk , ha a Common Data Service nem felel meg az integrációs szükségleteknek.
 
 ## <a name="integration-technologies"></a>Integrációs technológiák
 
@@ -44,24 +46,26 @@ A következő szakaszok leírják a Human Resources szolgáltatással használha
 
 ### <a name="common-data-service-entities"></a>Common Data Service-entitások
 
-A Common Data Service a Human Resources elsődleges nyilvános adatillesztő-felülete. A Common Data Service egy kiérlelt platformra épül, amely a Dynamics 365 „XRM” platformból jött létre, amelyre a [Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement) megoldásai épülnek.
+A Common Data Service a Human Resources elsődleges nyilvános adatillesztő-felülete. A program a Dynamics 365 XRM-platformból nőtt ki, amelyet a [Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement) megoldások használnak.
 
-A Common Data Service platformot biztosít az adatentitások, valamint az ezekhez az entitásokhoz hozzáférő API számára. A szervezetében telepített Human Resources szolgáltatás egy Common Data Service-példányhoz csatlakozik, és a Human Resources adatait kezelő entitások telepítve lesznek az adott Common Data Service-példányban, így az entitások és az adatok elérhetővé válnak minden olyan alkalmazás számára, amely csatlakozik a Common Data Service-példányhoz. Attól függően, hogy a Human Resources melyik alkalmazásait használja, a Human Resources közvetlenül hajtja végre az adatműveleteket a Common Data Service-entitásokon (például az Attract és az Onboard esetében), vagy szinkronizálja az adatok a Common Data Service-entitásokkal a megfelelő irányban.
+Common Data Service egy platformot és API-t biztosít az adatentitásokhoz. A Human Resources telepítésekor az egy Common Data Service példányhoz kapcsolódik. A Human Resources entitásai abba a Common Data Service példányba települnek. Az entitások és adataik minden olyan alkalmazás számára elérhetők, amely csatlakozni képes a Common Data Service példányhoz. A Human Resources szinkronizálja az adatokat a Common Data Service entitások között.
 
-Miután a Common Data Service már tartalmazza azokat az adatentitásokat, amelyek az adatokat szolgáltatják az integrációs alkalmazásai számára, teljes mértékben kihasználhatja a [Common Data Service és a támogatott API-k ](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer) által nyújtott lehetőségeket. A támogatott API-k között szerepel a [Dynamics 365 webes API-ja](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), amely egy OData-megvalósítást biztosít a Common Data Service-adatok eléréséhez.
+Amikor az integrációs alkalmazások által igényelt adatentitások a Common Data Service szolgáltatásban vannak, teljes mértékben használhatja [Common Data Service szolgáltatást és a támogatott API-kat](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer). A támogatott API-k között szerepel a [Dynamics 365 webes API-ja](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), amely egy OData-megvalósítást biztosít a Common Data Service-adatok eléréséhez.
 
-A Common Data Service-entitások és a társított API-k jelentik a legjobb megoldást a Human Resources-adatok eléréséhez a webalkalmazásokból, a webszolgáltatásokból és API-kból, valamint az OData-adatfolyamokhoz csatlakozó egyéb alkalmazásokból.
+A Common Data Service-entitások és a társított API-jaik jelentik a legjobb megoldást a Human Resources-adatok eléréséhez a webalkalmazásokból, a webszolgáltatásokból és API-kból, valamint az OData-adatfolyamokhoz csatlakozó egyéb alkalmazásokból.
 
 > [!NOTE]
-> Ha úgy dönt, hogy a Common Data Service szolgáltatást választja a viszonylag újnak számító Human Resources adatillesztó-felületének, előfordulhat, hogy az integrációhoz szükséges Human Resources-adatentitások még nem érhetők el a Common Data Service<sup>1</sup> szolgáltatásban. Ha az integrációhoz szükséges Human Resources-entitások még nem állnak rendelkezésre, akkor várnia kell, amíg az adatentitások elérhetővé válnak, vagy az alábbiakban ismertetett egyéb integrációs technológiák valamelyikét kell használnia.
-> 
+> Ha úgy dönt, hogy a Common Data Service szolgáltatást választja a viszonylag újnak számító Human Resources adatillesztó-felületének, előfordulhat, hogy az integrációhoz szükséges Human Resources-adatentitások még nem érhetők el a Common Data Service szolgáltatásban.
+</br>
+> A Common Data Service szolgáltatásban elérhető Human Resource-entitások listáját lásd: [A Human Resources és a Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities).
+> </br>
+> Ha az integrációhoz szükséges Human Resources-entitások még nem állnak rendelkezésre, akkor várnia kell, amíg az adatentitások elérhetővé válnak, vagy az alábbiakban ismertetett egyéb integrációs technológiák valamelyikét kell használnia.
+> </br>
 > Alapértelmezés szerint a Common Data Service-integráció ki van kapcsolva az olyan új környezetekben, amelyekben nem szerepelnek a bemutató adatok. Az integráció be van kapcsolva a bemutató adatokat tartalmazó új környezetekben, és az adatok szinkronizálása a környezet létesítése alkalmával kezdődik. Miután a környezet készen áll az adatok szinkronizálására, bekapcsolhatja az integrációt.
-
-<sup>1</sup>A Common Data Service szolgáltatásban elérhető Human Resource-entitások listáját lásd: [A Human Resources és a Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities) Az Attract és az Onboard esetében az összes entitás elérhető a Common Data Service szolgáltatásban.
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-entitások
 
-A Human Resources elsődlegesen a Finance and Operations alkalmazásai által is használt platformra épül, és [adatkezelési keretrendszert (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), más néven adatimportálási keretrendszert (DIXF) biztosít, valamint adatentitás-készleteket, amelyek az adatoknak a Human Resources szolgáltatásba történő importálásához és exportálásához használhatók. Noha a Common Data Service-entitások alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
+A Human Resources nagyrészt a Finance and Operations alkalmazásokkal azonos platformra épül, és egy [Adatkezelési keretrendszert (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json) biztosít. A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Common Data Service-entitások alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
 
 - A Common Data Service-entitások még nem érhetők el.
 
@@ -69,7 +73,7 @@ A Human Resources elsődlegesen a Finance and Operations alkalmazásai által is
 
 A DMF-entitások nyújtják jelenleg a legteljesebb adatlefedettséget a Human Resources adatai számára.
 
-A DMF nem megfelelő a valós idejű integrációk számára (például amikor azonnali felhasználói visszajelzés szükséges a felhasználói felületen), mivel a csomagműveletek ütemezett kötegelt feladatok, és a kötegelt szolgáltatás gyakran minimum 1–2 perces késéssel tudja elkezdeni a feladat végrehajtását, és ehhez adódik még az importálási vagy exportálási művelet végrehajtásához szükséges idő is.
+A DMF nem megfelelő a valós idejű integrációhoz, például ha azonnali felhasználói visszajelzésre van szükség egy felhasználói felületen. A csomagműveletek az ütemezett kötegelt feladatok, és gyakran minimum 1-2 perc késéssel is jár, mielőtt a kötegelt szolgáltatás felveszi a feladatot a végrehajtáshoz, valamint az importálási és exportálási művelet befejezéséhez szükséges idő is ott van.
 
 A DMF akkor lehet a legjobb megoldás, ha nagy áteresztőképességre van szükség (például rekordok ezreinek éjszakára ütemezett importálása vagy exportálása esetén).
 
@@ -90,9 +94,9 @@ A DMF csomag REST API-ja teljes mértékben támogatott a Human Resources szolg�
 
 ### <a name="azure-sql-db-byod"></a>Azure SQL DB (BYOD)
 
-A DMF emellett egy hatékony funkciót is biztosít (a [saját adatbázis használatát](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) – BYOD), amely lehetővé teszi, hogy a Human Resources szolgáltatás az Ön Microsoft Azure SQL-adatbázisába exportálja az adatait. Ez rendkívüli rugalmasságot biztosít, mivel amikor az adatok jelen vannak a saját SQL-adatbázisában, igénybe vehet olyan alkalmazásokat vagy középrétegű megoldásokat, amelyek csatlakozni tudnak az SQL-adattárakhoz.
+A DMF emellett egy hatékony funkciót is biztosít (a [saját adatbázis használatát](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) – BYOD), amely lehetővé teszi, hogy a Human Resources szolgáltatás az Ön Microsoft Azure SQL-adatbázisába exportálja az adatait. Ez a funkció óriási rugalmasságot biztosít. Amikor az adatok jelen vannak a saját SQL-adatbázisában, igénybe vehet olyan alkalmazásokat vagy középrétegű megoldásokat, amelyek csatlakozni tudnak az SQL-adattárakhoz.
 
-A BYOD általában csak olvasást végző megoldásnak tekintendő. Az Azure SQL-adatbázisban tárolt minden adatot kezelhet és tárolhat (például az adategyesítésekhez), azonban az Azure SQL-adatbázisban tárolt adatok nem lesznek visszaszinkronizálva a Human Resources adataival.
+A BYOD elsősorban csak olvasható megoldás. Az Azure SQL-adatbázisban tárolt minden adatot kezelhet és tárolhat (például az adategyesítésekhez), azonban az Azure SQL-adatbázisban tárolt adatok nem lesznek visszaszinkronizálva a Human Resources adataival.
 
 A BYOD a jelentésekhez, az adatintegrációkhoz, az adategyesítésekhez, valamint az [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/) folyamatainak adatforrásaihoz alkalmas.
 
@@ -101,7 +105,7 @@ A BYOD a jelentésekhez, az adatintegrációkhoz, az adategyesítésekhez, valam
 
 ### <a name="odata-enabled-entities"></a>OData-kompatibilis entitások
 
-A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. A [Finance and Operations OData szolgáltatásához](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata) biztosított dokumentáció általánosságban a Human Resources szolgáltatásra is érvényes, de az OData által is használt saját entitások létrehozásával kapcsolatos dokumentáció nem érhető el.
+A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. A [Finance and Operations OData szolgáltatáshoz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata) biztosított dokumentáció érvényes a Human Resources alkalmazásra, kivéve a saját OData által használt entitások létrehozásához.
 
 Bár a Common Data Service és a Common Data Service által (a [Dynamics 365 Web API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) használatával) biztosított OData-megvalósítás a preferált a Human Resources adatszolgáltatással szemben, a Human Resources adatszolgáltatás jelenleg teljesebb entitáslefedettséget kínál a Human Resources-adatok számára.
 
@@ -113,18 +117,17 @@ Az Excel-bővítmény megfelelő az üzleti tartomány szakértői számára is 
 
 ### <a name="data-integrator"></a>Data Integrator
 
-A Common Data Service rendszergazdai felülete tartalmaz egy [adatintegrátor szolgáltatást](https://docs.microsoft.com/powerapps/administrator/data-integrator), amely a Common Data Service adatintegrációihoz használható. A Data Integrator használatával integrációs projektek definiálhatók (ez gyakran olyan előre definiált sablonok alapján történik, amelyeket az alkalmazás fejlesztői alakítottak ki a különböző integrációknak megfelelőn). Az integrációs projektek ütemezhetők ismétlődő automatikus futtatásra, vagy manuálisan is futtathatók.
+Az [Adatintegrátor szolgáltatás](https://docs.microsoft.com/powerapps/administrator/data-integrator) segítségével integrálhatja az adatokat a Common Data Service szolgáltatásba. A Data Integrator használatával integrációs projektek definiálhatók (ez gyakran olyan előre definiált sablonok alapján történik, amelyeket az alkalmazás fejlesztői alakítottak ki a különböző integrációknak megfelelőn). Integrációs projekteket ütemezhet ismétlődő automatikus futtatásra, vagy manuálisan is futtathatók.
 
-A Data Integrator projektjei megfelelőek a Common Data Service kötegelt integrációi számára, és jó választást jelentenek a Dynamics 365 termékcsaládba tartozó alkalmazások közötti integrációhoz. A Microsoft például biztosít egy használatra kész Data Integrator-sablont, amelynek segítségével a Human Resources-adatok integrálhatók a Dynamics 365 Finance szolgáltatásba. További tudnivalók: [Integráció a Dynamics 365 Human Resources és a Dynamics 365 Finance között](hr-admin-integration-finance.md).
+A Data Integrator projektek megfelelőek a Common Data Service kötegelt integrációkhoz. Remek választást jelentenek a Dynamics 365 termékcsaládba tartozó alkalmazások közötti integrációhoz. A Microsoft például biztosít egy használatra kész Data Integrator-sablont, amelynek segítségével a Human Resources-adatok integrálhatók a Dynamics 365 Finance szolgáltatásba. További tájékoztatás az integrációs sablonról: [Integráció a Dynamics 365 Human Resources és a Dynamics 365 Finance között](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 
-A Data Integrator támogatást biztosít a [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) számára is (a [speciális lekérdezési funkcióján](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) keresztül).
-A Power Query hatékony, rugalmas adatszűrést és-átalakítást tesz lehetővé, beleértve az M képletnyelvet, és nem lesz szokatlan azok számára, akik már szereztek tapasztalatokat a Power BI-jelentések fejlesztésében.
+A Data Integrator támogatást biztosít a [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) számára is (a [speciális lekérdezési funkcióján](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) keresztül). A Power Query erőteljes, rugalmas adatszűrést és-átalakítást tesz lehetővé, többek között a kibővített M Formula nyelvet. A Power Query valószínűleg ismerős, ha már fejlesztett Power BI-jelentéseket.
 
 ## <a name="deciding-on-an-integration-technology"></a>Az integrációs technológiára vonatkozó döntés
 
-Mivel számos különböző integrációs technológia érhető el, a használandó integrációs megközelítés kiválasztására vonatkozó döntés sokszor komoly gondolkodásra adhat okot. Az idő haladtával, és különösen a Common Data Service adatlefedettségének kiérlelődésével a döntés is könnyebb lesz, mivel a Common Data Service lesz a legtöbb esetben az elsődleges adatfelület. Amíg ez meg nem valósul, vélekedhet úgy, hogy a Common Data Service még nem felel meg az igényeinek. A következő táblázat összefoglalja a különböző integrációs technológiai lehetőségek néhány kulcsfontosságú jellemzőjét.
+Mivel számos különböző integrációs technológia érhető el, a használandó integrációs megközelítés kiválasztására vonatkozó döntés sokszor komoly gondolkodásra adhat okot. A Common Data Service adatlefedettségének kiérlelődésével a döntés is könnyebb lesz, mivel a Common Data Service lesz a legtöbb esetben az elsődleges adatfelület. Amíg ez meg nem valósul, vélekedhet úgy, hogy a Common Data Service még nem felel meg az igényeinek. A következő táblázat összefoglalja az integrációs technológiai lehetőségek néhány kulcsfontosságú jellemzőjét.
 
 | Technológia/eszköz/API    | Ismétlődő integrációk                   | Szinkron/aszinkron                    | Programozott hozzáférés API-val        | Megfelelő adatkötetek                                   | Adatlefedettség                       |
 |------------------------|------------------------------------------|---------------------------------------------|-------------------------------------------|------------------------------------------------------------|-------------------------------------|
@@ -136,11 +139,6 @@ Mivel számos különböző integrációs technológia érhető el, a használan
 | Excel-bővítmény           | Nem                                       | Szinkronizálás                                        | Nem                                        | Közepes (rekordok tízezrei)                      | Támogatja az összes OData-kompatibilis entitást |
 | Data Integrator        | Igen, a Data Integratorban ütemezve        | Aszinkron, kötegelt                                | Nem                                        | A használati esettől függően változik                                       | Az összes Common Data Service-entitást támogatja           |
 
-<sup>2</sup>A Microsoft nagymértékben növeli az adatlefedettséget a Common Data Service-entitások számára, és azt javasolja, hogy a lefedettség kiépítése után a Common Data Service legyen az elsődleges adatfelület. A Common Data Service adatlefedettsége jelenleg alacsony a DMF- és az OData-kompatibilis entitásokéhoz képest.
+<sup>2</sup>A Microsoft nagymértékben növeli a növekvő adatlefedettséget a Common Data Service entitások számára. A Common Data Service használatát ajánljuk, amikor a lefedettség elérhető. A Common Data Service adatlefedettsége jelenleg alacsony a DMF- és az OData-kompatibilis entitásokéhoz képest.
 
 <sup>3</sup>Az SQL-adatbázis programkóddal érhető el.
-
-## <a name="summary"></a>Összegzés
-
-Az üzleti adatok értékes eszköznek számítanak, de az értékük számottevően csökkenhet, ha nehézséget jelent az adatok felhasználása a meghatározott célokra (például jelentéskészítéshez, adategyesítésekhez vagy egyéni alkalmazásokhoz). A Dynamics 365 Human Resources számos technológiát kínál, amelyek lehetővé teszik az adatokkal való munkát a Human Resources alkalmazás felhasználói felületén (UI) kívül is az adatokhoz való hozzáférés integrációjának biztosításával. Ez a témakör ismertette az elérhető integrációs technológiákat és azok néhány kulcsfontosságú jellemzőjét. Ez a tájékoztatás segítséget nyújt az integrációs projektekhez használandó megoldások kiválasztásával kapcsolatos döntések meghozásához.
-

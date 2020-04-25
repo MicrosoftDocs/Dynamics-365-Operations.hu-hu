@@ -3,7 +3,7 @@ title: Szabadság- és távolléttípusok konfigurálása
 description: Beállíthatja, hogy az alkalmazottak milyen típusú szabadságot vehetnek igénybe a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1748ec2a888a50af9b9260720dfd439adc4686f9
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009318"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198050"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
 
@@ -58,17 +58,21 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 9. Válassza a **Mentés** lehetőséget.
 
-## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
-
-Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## <a name="configure-leave-type-rules"></a>A szabadságtípus-szabályok konfigurálása
 
 1. Adja meg a szabadságtípus kerekítési beállításait. Választási lehetőségek: **Nincs**, **Fel**, **Le** és **Legközelebbi**. A szabadságtípus kerekítési pontosságát is megadhatja.
 
 2. Adja meg a szabadságtípus **Munkaszünet-korrekció** beállítását. Ha bejelöli ezt a lehetőséget, akkor a Human Resources szolgáltatás a munkanapra eső napok száma alapján határozza meg, hogyan kell elszámolni a szabadságtípus távolléti idejét. Ha például karácsony napja hétfőre esik, akkor a Human Resources szolgáltatás levon egy napot a szabadságtípusból a könyvelés feldolgozásakor.
 
    A szabadnapokat a munkaidőnaptárban állíthatja be. További információ: [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
+   
+## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
+
+Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Válassza ki a szabadságtípust, amelyhez az átviteli egyenlegek át lesznek irányítva. Az átvitelhez új szabadságtípust is létre lehet hozni. 
 
 ## <a name="see-also"></a>Lásd még
 

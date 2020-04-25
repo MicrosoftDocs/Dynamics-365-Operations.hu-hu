@@ -1,7 +1,7 @@
 ---
 title: A Regression Suite Automation Tool-oktatóanyag használata
 description: Ez a témakör bemutatja, hogy hogyan használható a Regression Suite Automation Tool (RSAT). Leírja a különböző funkciókat, és speciális parancsfájlkezelést használó példákat tartalmaz.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070820"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248736"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool-oktatóanyag használata
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070820"
 > [!NOTE]
 > Az internetböngésző eszközeivel letöltheti és mentheti ezt a lapot PDF-formátumban. 
 
-Ez az oktatóanyag végigvezet a Regression Suite Automation Tool (RSAT) néhány speciális funkcióján, tartalmaz bemutatófeladatot, és leírja a stratégiát és a fontos tanulási pontokat is.
+Ez az oktatóanyag végigvezet a Regression Suite Automation Tool (RSAT) néhány speciális funkcióján, tartalmaz bemutatófeladatot, és leírja a stratégiát és a fontos tanulási pontokat is. 
 
-## <a name="features-of-rsattask-recorder"></a>Az RSAT/Feladatrögzítő funkciói
+## <a name="notable-features-of-rsat-and-task-recorder"></a>A RSAT és a Feladatrögzítő fontos jellemzői
 
 ### <a name="validate-a-field-value"></a>Egy mezőérték ellenőrzése
 
-Ha további információra van szüksége a funkcióról, itt találhat: [Ellenőrzés funkciót tartalmazó új feladatrögzítés létrehozása](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### <a name="saved-variable"></a>Mentett változó
-
-Ha további információra van szüksége a funkcióról, itt találhat: [Meglévő feladatrögzítés módosítása mentett változó létrehozásához](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Származtatott teszteset
-
-1. Nyissa meg a Regression Suite Automation Tool (RSAT) eszközt, és válassza ki a [A Regression Suite Automation Tool beállítása és telepítése oktatóanyag](./hol-set-up-regression-suite-automation-tool.md) szakaszban létrehozott mindkét tesztesetet.
-2. Válassza az **Új \> Származtatott teszteset létrehozása** elemet.
-
-    ![Származtatott teszteset létrehozása parancs az Új menüben](./media/use_rsa_tool_01.png)
-
-3. Egy üzenet jelenik meg, amely jelzi, hogy az aktuális tesztcsomag mindegyik kiválasztott tesztesetéhez származtatott tesztesetet hoz létre, és minden egyes származtatott tesztesetnek saját másolata lesz az Excel-paraméterfájlból. Válassza ki az **OK** lehetőséget.
-
-    > [!NOTE]
-    > Származtatott teszteset futtatásakor a program a fölérendelt feladatrögzítést, valamint az Excel-paraméterfájlból származó saját másolatát használja. Ily módon ugyanazon tesztet különböző paraméterekkel futtathatja, anélkül, hogy egynél több feladatrögzítést kellene karbantartania. Egy származtatott tesztesetnek nem kell ugyanahhoz a tesztcsomaghoz tartoznia, mint a fölérendelt tesztesetnek.
-
-    ![Üzenetpanel](./media/use_rsa_tool_02.png)
-
-    Két további származtatott teszteset jön létre, és a **Származtatott?** jelölőnégyzet be van jelölve.
-
-    ![Származtatott tesztesetek létrehozva](./media/use_rsa_tool_03.png)
-
-    A származtatott teszteset automatikusan létrejön az Azure DevOps rendszerben. Ez az **Új termék létrehozása** teszteset alárendelt eleme, és speciális kulcsszóval van felcímkézve: **RSAT:DerivedTestSteps**. Ezeket a teszteseteket a program automatikusan hozzáadja az Azure DevOps tesztelési tervbe.
-
-    ![RSAT:DerivedTestSteps kulcsszó](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Ha valamilyen oknál fogva a létrejövő származtatott tesztesetek nem megfelelő sorrendben vannak, akkor lépjen az Azure DevOps felületére, és rendezze át a teszteseteket a tesztcsomagban, hogy az RSAT megfelelő sorrendben futtassa őket.
-
-4. Válassza ki csak a származtatott teszteseteket, majd a **Szerkesztés** parancsot a kapcsolódó Excel-paraméterfájlok megnyitásához.
-5. Szerkessze ezeket az Excel-paraméterfájlokat ugyanúgy, mint a fölérendelt fájlokat. Más szóval győződjön meg arról, hogy a termékazonosító be van állítva úgy, hogy automatikusan létrejön. Győződjön meg arról is, hogy a mentett változót a megfelelő mezőkbe másolja át a program.
-6. Az Excel-paraméterfájlok **Általános** lapján frissítse a **Vállalat** mező értékét az **USSI** értékre, hogy a származtatott teszteseteket egy másik jogi személyre futtassa, mint a fölérendelt tesztesetet. Ha a teszteseteket egy megadott felhasználóra (vagy egy megadott felhasználóhoz társított szerepkörre) futtatja, akkor frissítheti a **Tesztfelhasználó** mező értékét.
-7. Válassza a **Futtatás** parancsot, és ellenőrizze, hogy a termék a USMF jogi személyben és a USSI jogi személyben egyaránt létrejött-e.
-
-### <a name="validate-notifications"></a>Értesítések ellenőrzése
-
-Ez a funkció annak ellenőrzésére használható, hogy történt-e művelet. Például egy termelési rendelés létrehozása, becslése, majd elindítása történt, megjelenik a „Termelés – Indítás” üzenetet, amellyel értesíti, hogy a termelési rendelés elindult.
-
-![Termelés – Indítás értesítés](./media/use_rsa_tool_05.png)
-
-Ezt az üzenetet a RSAT programon keresztül ellenőrizni lehet, ha megadja az üzenet szövegét a megfelelő rögzítéshez tartozó Excel paraméterfájl **MessageValidation** lapján.
-
-![Üzenet ellenőrzése lap](./media/use_rsa_tool_06.png)
-
-Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a program összehasonlítja az üzenettel. Ha az üzenetek nem egyeznek, a teszteset nem fog sikerülni.
-
-> [!NOTE]
-> Az Excel-paraméterfájl **MessageValidation** lapján egynél több üzenetet is megadhat. Az üzenetek a tájékoztató üzenetek helyett hiba- vagy figyelmeztető üzenetek is lehetnek.
-
-### <a name="validate-values-by-using-operators"></a>Értékek ellenőrzése operátorok segítségével
-
-Az RSAT korábbi verzióiban csak akkor lehet ellenőrizni az értékeket, ha egy ellenőrzési érték egy várt értékkel egyenlő volt. Az új funkció segítségével ellenőrizhető, hogy egy változó nem egyenlő, kisebb, vagy nagyobb mint a megadott érték.
-
-- A funkció használatához nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    Az Excel-paraméterfájlban megjelenik egy új **Operátor** mező.
-
-    > [!NOTE]
-    > Ha egy korábbi RSAT-verziót használt, új Excel-paraméterfájlokat kell létrehoznia.
-
-    ![Operátor mező](./media/use_rsa_tool_07.png)
+A RSAT ellenőrzési lépéseket tesz lehetővé a tesztesetéhez a várt értékek érvényesítéséhez. Ha további tájékoztatást szeretne erről a funkcióról, olvassa el a [Várható értékek érvényesítése](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md) című cikket.
 
 A következő példa bemutatja, hogyan használható ez a funkció annak ellenőrzésére, hogy az aktuális készlet nagyobb mint 0 (nulla).
 
@@ -115,7 +49,7 @@ A következő példa bemutatja, hogyan használható ez a funkció annak ellenő
     5. A listában jelölje meg a kiválasztott sort.
     6. Ellenőrizze, hogy az **Összes rendelkezésre álló** mező értéke **411,0000000000000000**.
 
-2. Mentse a feladatrögzítést az LCS-ben a BPM-tárba, majd szinkronizálja az Azure DevOps rendszerbe.
+2. Mentse a feladatrögzítést, és csatolja a tesztesetéhez az Azure Devops-ban.
 3. Adja hozzá a tesztesetet a tesztelési tervhez, és töltse be a tesztesetet a RSAT-be.
 4. Nyissa meg az Excel-paraméterfájlt. Az **InventOnhandItem** lapon látható az **InventOnhandItem ellenőrzése** szakasz, amelyben szerepel egy **Operátor** mező.
 
@@ -130,28 +64,32 @@ A következő példa bemutatja, hogyan használható ez a funkció annak ellenő
 
 Ha most a megadott cikk **Összes rendelkezésre álló** mezője értéke meghaladja a 0 (nulla) értéket, akkor a tesztek sikeresek lesznek, függetlenül a tényleges aktuális készlet értékétől.
 
-### <a name="generator-logs"></a>Generátornaplók
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Mentett változók és a tesztesetek láncolása
 
-Ez a funkció létrehoz egy mappát, amely a futtatott tesztesetek naplóit tartalmazza.
+A RSAT egyik alapvető funkciója a tesztesetek láncolása, tehát az a képesség, amellyel egy teszt változókat adhat át más teszteknek. A további tudnivalókat lásd a [Változók másolása tesztesetekre](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md) című cikkben.
 
-- A funkció használatához nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+### <a name="derived-test-case"></a>Származtatott teszteset
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+A RSAT használatával több feladatrögzítést is felhasználhat több tesztesettel így a feladatok különböző adatkonfigurációkkal futtathatók. További tájékoztatás a [Származtatott tesztesetek](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) cikkben található.
 
-A tesztek futtatása után a fájlok a **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\generatorLogs** helyen találhatók.
+### <a name="validate-notifications-and-messages"></a>Értesítések és üzenetek érvényesítése
 
-![GeneratorLogs mappa](./media/use_rsa_tool_10.png)
+Ez a funkció annak ellenőrzésére használható, hogy történt-e művelet. Például egy termelési rendelés létrehozása, becslése, majd elindítása történt, megjelenik a „Termelés – Indítás” üzenetet, amellyel értesíti, hogy a termelési rendelés elindult.
+
+![Termelés – Indítás értesítés](./media/use_rsa_tool_05.png)
+
+Ezt az üzenetet a RSAT programon keresztül ellenőrizni lehet, ha megadja az üzenet szövegét a megfelelő rögzítéshez tartozó Excel paraméterfájl **MessageValidation** lapján.
+
+![Üzenet ellenőrzése lap](./media/use_rsa_tool_06.png)
+
+Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a program összehasonlítja az üzenettel. Ha az üzenetek nem egyeznek, a teszteset nem fog sikerülni.
 
 > [!NOTE]
-> Ha már léteznek tesztesetek, mielőtt a .config fájlban megváltoztatta a értéket, akkor a naplók nem jönnek létre azokhoz a tesztesetekhez addig, amíg nem hoz létre új teszt-végrehajtási fájlokat.
-> 
-> ![Csak tesztvégrehajtási fájlok létrehozása parancs az Új menüben](./media/use_rsa_tool_11.png)
+> Az Excel-paraméterfájl **MessageValidation** lapján egynél több üzenetet is megadhat. Az üzenetek a tájékoztató üzenetek helyett hiba- vagy figyelmeztető üzenetek is lehetnek.
 
 ### <a name="snapshot"></a>Pillanatkép
 
-Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről.
+Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről. Ez a ellenőrzés vagy hibakeresés céljából hasznos.
 
 - A funkció használatához nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elem értékét **hamis** értékről **igaz** értékre.
 
@@ -159,17 +97,11 @@ Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajt
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-A **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** helyen a program külön mappát hoz létre mindegyik futó tesztesethez.
-
-![Pillanatkép mappa a tesztesethez](./media/use_rsa_tool_12.png)
-
-Ezekben a mappákban megtalálhatja azokat a lépések pillanatképeit, amelyeket a tesztesetek futtatásakor végrehajtott.
-
-![Pillanatfelvétel-fájlok](./media/use_rsa_tool_13.png)
+Amikor futtatja a tesztesetet, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappában munkakönyvtárban. Ha egy korábbi RSAT-verziót használ a képek a **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a mappába lesznek mentve, és minden futtatott tesztesethez egy külön mappa jön létre.
 
 ## <a name="assignment"></a>Hozzárendelés
 
-### <a name="scenario"></a>Eset
+### <a name="scenario"></a>Forgatókönyv
 
 1. A termék tervezője létrehoz egy új kiadott terméket.
 2. A termelési vezető kezdeményez egy termelési rendelést, hogy a készlet szintje két darabra növekedjen.
@@ -183,7 +115,7 @@ A következő ábra bemutatja az adott eset folyamatát.
 
 ![A bemutató eset folyamata](./media/use_rsa_tool_14.png)
 
-A következő ábra bemutatja az adott eset üzleti folyamatait RSAT-ban.
+A következő ábra bemutatja az üzleti folyamatok hierarchiáját ehhez a forgatókönyvhöz az LCS Üzletifolyamat-modellező moduljában.
 
 ![A bemutató eset üzleti folyamatai](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló 
 
 
 #### <a name="help"></a>súgó
-Azonos a következővel: [?](####?) parancs
+Azonos a következővel: [?](#section) parancs
 
 
 #### <a name="list"></a>listában
@@ -512,6 +444,8 @@ Kétféle módszert mutat be az alkalmazás meghívására: az egyik alapértelm
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-példák
 
+[!IMPORTANT] A lenti forgatókönyvek a következők JELEN ÁLLAPOTUKBAN érhetők el, és a Microsoft nem támogatja ezeket.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Teszteset futtatása egy hurokban
 
 Van egy tesztparancsfájl, amely új vevőt hoz létre. A parancsfájlkezeléssel ezt a tesztesetet egy hurokban futtathatja, ha minden egyes iteráció futtatása előtt a következő adatokat véletlenszerűvé teszi:
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

@@ -3,7 +3,7 @@ title: ADLS engedélyezése a Dynamics 365 Commerce környezetben
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage (ADLS) megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154436"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259748"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS engedélyezése a Dynamics 365 Commerce környezetben
 
@@ -48,7 +48,8 @@ Az ADLS-sel kapcsolatos további tudnivalókért lásd: [ADLS hivatalos dokument
   
 ## <a name="configuration-steps"></a>Konfigurációs lépések
 
-Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek az ADLS-nek egy környezetben történő engedélyezéséhez.
+Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek ahhoz, hogy a ADLS engedélyezve legyen egy környezetben, mivel a termékajánlásokhoz kapcsolódik.
+A ADLS engedélyezéséhez szükséges lépésekről a további tudnivalókat lásd: [Entitástár elérhetővé tétele Data Lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>ADLS engedélyezése a környezetben
 
@@ -91,6 +92,8 @@ Ha nem fejeződött be, akkor kövesse a [termékajánlások és a környezet sz
 
 ## <a name="additional-resources"></a>További erőforrások
 
+[Entitástár elérhetővé tétele data lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Termékajánlatok áttekintése](product-recommendations.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
@@ -110,5 +113,3 @@ Ha nem fejeződött be, akkor kövesse a [termékajánlások és a környezet sz
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
-
-

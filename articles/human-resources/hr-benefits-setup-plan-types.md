@@ -3,7 +3,7 @@ title: Költségvetési terv típusai
 description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d9bb490326c6dbfafa0f186cd05185ac01bad30
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 06a36f9f3fef54e7e06d616c9179374db4ce7115
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092365"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229694"
 ---
 # <a name="create-plan-types"></a>Költségvetési terv típusai
-
-[!include [banner](includes/preview-feature.md)]
 
 A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az Alapélettartam konstrukciótípushoz az Élettartam konstrukciótípus-kód szükséges, mivel ez egyfajta életbiztosítási konstrukció, amelyeknek meg kell felelniük az Élettartam konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik konstrukciótípus lehet a Kiegészítő élettartam, szintén az Élettartam konstrukciótípus-kóddal.
 
@@ -45,23 +43,23 @@ A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti be
 
    | Mező | Leírás |
    | --- | --- |
-   | Konstrukció típusa | A konstrukciótípust azonosító egyedi név. |
-   | Leírás | A konstrukciótípus leírása. |
-   | Konstrukciótípus kódja | Válasszon egy konstrukciótípus-kódot az értékek legördülő listájából. A konstrukciótípus-kód listája megjeleníti az aktuális verzióban támogatott összes konstrukciótípust. |
-   | Párhuzamos regisztráció | Megadja, hogy az alkalmazott több ugyanolyan konstrukciótípusú juttatási konstrukciót is regisztrálhat-e, vagy csak egy juttatási konstrukciót konstrukciótípusonként. |
-   | Névjegy típusa | Megadja a személyes kapcsolattartó szerepét. Az érték üres, Függő fél és Kedvezményezett lehet. A Kapcsolattartó típusát üresen hagyhatja, ha a konstrukciótípus nem igényel függő felet vagy kedvezményezettet a fedezeti beállítás alapján. |
+   | **Konstrukció típusa** | A konstrukciótípust azonosító egyedi név. |
+   | **Leírás** | A konstrukciótípus leírása. |
+   | **Konstrukció típuskódja** | Válasszon egy konstrukciótípus-kódot az értékek legördülő listájából. A konstrukciótípus-kód listája megjeleníti az aktuális verzióban támogatott összes konstrukciótípust. |
+   | **Párhuzamos regisztráció** | Megadja, hogy az alkalmazott több ugyanolyan konstrukciótípusú juttatási konstrukciót is regisztrálhat-e, vagy csak egy juttatási konstrukciót konstrukciótípusonként. |
+   | **Névjegy típusa** | Megadja a személyes kapcsolattartó szerepét. Az érték üres, Függő fél és Kedvezményezett lehet. A **Kapcsolattartó típusa** elemet üresen hagyhatja, ha a konstrukciótípus nem igényel függő felet vagy kedvezményezettet a fedezeti beállítás alapján. |
 
 4. Az élettartam-esemény beállításainak konfigurálásához válassza ki a **Műveletek** elemet, majd az **Élettartam-esemény beállításai** lehetőséget. Adjon meg értékeket a következő mezőkben:
 
    | Mező | Leírás |
    | --- | --- |
-   | Konstrukció típusa | A konstrukciótípus, amely számára az élettartam-esemény beállításait konfigurálni kell. |
-   | Élettartam-esemény típusának azonosítója | A élettartam-esemény típusának azonosítója. |
-   | Megszakítás engedélyezése | Megadja, hogy az alkalmazott érvénytelenítheti-e a juttatási konstrukciót az élettartam-esemény során. |
-   |Fedezeti beállítás módosítása | Megadja, hogy az alkalmazott módosíthatja-e a fedezeti beállításokat az élettartam-esemény során. |
-   | Váltás új konstrukcióra | Megadja, hogy az alkalmazott módosíthatja-e a konstrukciókat az élettartam-esemény során. |
-   | Konstrukció automatikus megszakítása |Megadja, hogy a konstrukció automatikusan érvénytelenítendő-e a élettartam-eseménye során. |
-   | Jogosultsági ellenőrzés automatikus újranyitása | Megadja, hogy a rendszer automatikusan nyissa-e újra a juttatási regisztrációra való jogosultsági ellenőrzése az életesemény során. |
-   | Jelentéskészítési időtartam | Megadja az életeseménnyel kapcsolatos jelentéskészítés időtartamát napokban. **Megjegyzés**: Ha nem ad meg összeget, akkor a rendszer nulla értékre állítja a jelentési ablakot, és nem dolgozza fel az élettartam-eseményt. |
+   | **Konstrukció típusa** | A konstrukciótípus, amely számára az élettartam-esemény beállításait konfigurálni kell. |
+   | **Életesemény-típus azonosítója** | A élettartam-esemény típusának azonosítója. |
+   | **Megszakítás engedélyezése** | Megadja, hogy az alkalmazott érvénytelenítheti-e a juttatási konstrukciót az élettartam-esemény során. |
+   | **Fedezeti beállítás módosítása** | Megadja, hogy az alkalmazott módosíthatja-e a fedezeti beállításokat az élettartam-esemény során. |
+   | **Váltás új konstrukcióra** | Megadja, hogy az alkalmazott módosíthatja-e a konstrukciókat az élettartam-esemény során. |
+   | **Konstrukció automatikus megszakítása** | Megadja, hogy a konstrukció automatikusan érvénytelenítendő-e a élettartam-eseménye során. |
+   | **Jogosultsági ellenőrzés automatikus újranyitása** | Megadja, hogy a rendszer automatikusan nyissa-e újra a juttatási regisztrációra való jogosultsági ellenőrzése az életesemény során. |
+   | **Jelentéskészítési időtartam** | Megadja az életeseménnyel kapcsolatos jelentéskészítés időtartamát napokban. **Megjegyzés**: Ha nem ad meg összeget, akkor a rendszer nulla értékre állítja a jelentési ablakot, és nem dolgozza fel az élettartam-eseményt. |
 
 5. Válassza a **Mentés** lehetőséget. 

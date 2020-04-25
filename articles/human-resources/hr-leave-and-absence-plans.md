@@ -3,7 +3,7 @@ title: Szabadság- és távolléti terv létrehozása
 description: A Dynamics 365 Human Resources szolgáltatásban szabadságterveket hozhat létre a különböző típusú szabadságokhoz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087300"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197359"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Szabadság- és távolléti terv létrehozása
 
@@ -42,6 +42,11 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
 1. A **Szabadság- és távolléti tervek** oldalon válassza az **Új terv létrehozása** elemet.
 
 2. A **Részletek**mezőbe írja be a tervre vonatkozó **Név**, **Kezdő dátum**, **Leírás** és **Szabadságtípus** értéket.
+
+Ha a **Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez** funkció engedélyezve van a szabadságtervek az **Elhatárolási ütemezés** helyen vannak konfigurálva a **Részletek** alatt. A könyvelés ütemezési táblázatában szereplő mindegyik rekordnál megadhatja a szabadság típusát.
+
+ > [!IMPORTANT]
+   > Miután engedélyezte, ez a funkció nem kapcsolható ki.
 
 3. Definiálja a könyveléseket a **Könyvelések** lapon. A könyvelés határozza meg, hogy az alkalmazott mikor és milyen gyakran kap szabadságot. Ebben a lépésben definiálhatja azokat az irányelveket, amelyek meghatározzák a könyvelés elvégzését, valamint a juttatások arányosítását.
 
@@ -95,8 +100,8 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
    Létrehozhat szinteket a szabadság különböző szintek alapján történő megadásához.
 
    Az órabéres alkalmazottak esetében a ledolgozott órák alapján adhat szabadságot a szervezetnél ledolgozott idő helyett. A ledolgozott munkaórák jellemzően a munkaidő-nyilvántartási rendszerben tárolódnak. A munkaidő-nyilvántartási rendszerből importálhatja a ledolgozott normál órákat és túlórákat, és ezek alapján határozhatja meg az alkalmazottak jutalmát.
-
-   1. Válasszon egy beállítást a **Könyvelés típusa** legördülő listából:
+   
+    1. Válasszon egy beállítást a **Könyvelés típusa** legördülő listából:
 
       - **Munkaviszony hossza hónapokban** – A könyvelés ütemezésének alapja a munkaviszony hónapban mért ideje.
 
@@ -117,6 +122,13 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
       - **Maximális áthozat** – A könyvelési folyamat kiigazítja azokat az egyenlegeket, amelyek meghaladják a maximális átviteli egyenleget a kezdő dátum évfordulóján.
 
       - **Megítélés mennyisége** – A kezdeti órák vagy napok száma, amelyet az alkalmazottaknak megítélnek, amikor először belépnek a szabadságtervbe. Összeg a könyvelésinem lesz elhatárolva minden könyvelési időszakhoz.
+      
+Ha a **Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez** engedélyezve van, válasszon egy lehetőséget a **Szabadság típusa** alatt. 
+
+   > [!IMPORTANT]
+   > Miután engedélyezte, ez a funkció nem kapcsolható ki.
+
+Ha **Teljes munkaidő egyenérték használata** funkció engedélyezve van, akkor a Human Resources szolgáltatás a beosztáshoz meghatározott teljes munkaidő egyenértéket (FTE) használja az alkalmazottak könyvelésének arányosítására. Ha például az FTE 0,5, és a könyvelési összeg 10, akkor az alkalmazottnak 5 könyvelhető. Ez a funkció csak akkor használható, ha engedélyezi a több szabadságtípust.  
 
 5. Válassza a **Mentés** lehetőséget.
 
@@ -357,19 +369,6 @@ Előrejelzett egyenleg (30) = Könyvelési érték (10 × 1) + Aktuális egyenle
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 2018/1/6        | 2018/1/6   | 1.00           | 2018/1/9        | 3.00    |
 | Jay Norman          | 0,00              | 2018/15/6       | 2018/15/6  | 1.00           | 2018/1/9        | 2.00    |
-
-## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
-
-Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Előzetes funkció: Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez**. A könyvelés ütemezési táblázatában szereplő mindegyik rekordnál megadhatja a szabadság típusát.
-
-   > [!IMPORTANT]
-   > Miután engedélyezte, ez a funkció nem kapcsolható ki.
-
-2. **Előzetes funkció: Teljes munkaidő egyenérték használata**. Ha engedélyezi ezt az előzetes funkciót, akkor a Human Resources szolgáltatás a beosztáshoz meghatározott teljes munkaidő egyenértéket (FTE) használja az alkalmazottak könyvelésének arányosítására. Ha például az FTE 0,5, és a könyvelési összeg 10, akkor az alkalmazottnak 5 könyvelhető. Ez a funkció csak akkor használható, ha engedélyezi a több szabadságtípust.
 
 ## <a name="see-also"></a>Lásd még
 

@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029362"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260506"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -80,7 +80,7 @@ Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők
 
 Ezenkívül a legtöbb alaptípusok explicit személyre szabása akkor érhetők el, kattintson a jobb gombbal egy elemre, és válassza a **Személyre szabást**. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem tulajdonság ablaka.
 
-![Egy elem tulajdonságainak testreszabása](./media/personalization-element-properties.png)
+![Egy elem tulajdonságainak testreszabása](./media/cli-element-property-window.png)
 
 A tulajdonságablak segítségével egy elem testreszabása a következőképpen történik:
 
@@ -89,6 +89,7 @@ A tulajdonságablak segítségével egy elem testreszabása a következőképpen
 - Tartalmazza a gyorslap összefoglaló szakasz információit (ha az elem egy gyorslapon van).
 - A mező kihagyása, így nem kap fókuszt, amikor átvált a lapon.
 - az adatk szerkesztésének megakadályozása a mezőben (bármely rekord).
+- Az adatbevitelhez szükséges mező kijelölése. Ha ebben a mezőben nincs megadva érték, akkor egy piros szegéllyel és egy csillaggal jelenik meg, ami jelzi ezt az állapotot. Ez a lehetőség csak akkor érhető el 10.0.11 verzióban, ha a [Mentett nézetek](saved-views.md), illetve a **Mezők kijelölése kötelezőnek testreszabással** funkciók engedélyezve vannak.
 
 A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az elemtől függően. Például egy csempe a tulajdonságablak előfordulhat, hogy lehetővé teszik a támogatják ezt a csempét az irányítópultra, és a tulajdonságablak egy irányítópult előfordulhat, hogy lehetővé teszik, hogy irányítópult az új munkaterület létrehozása.
 
@@ -116,6 +117,7 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 - Használja az **Áthelyezés** eszközt, ha egy elemet ki szeretne jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. Ne feledje, hogy a szülőcsoporton kívülre nem helyezhető át elem. Az eszköz használatához válassza ki az eszköztárban az **Áthelyezés** gombot, majd helyezze át a kívánt elemet. Amikor kiválaszt egy elemet, az alkalmazás meghatározza, ha azokat a helyeket, ahová az elemet át lehet helyezni. Ezek a helyek *lerakási zónákként* ismertek. Az aktuális csoporton belül az elem húzásakor minden lerakási zóna mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** gombot az eszközsoron, minden éppen kihagyott elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Interaktívan eltávolíthat vagy hozzáadhat mezőket a lapsorrendhez.
 - Használja a **Megjelenítés a fejlécben** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján megjelenjen. Ha kiválasztja a **Megjelenítés a fejlécben** gombot az eszközsoron , összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan felvehet mezőket az összesítő gyorslapra, és eltávolíthat mezőket onnan a mezők kijelölésével.
+- A **Szükséges** eszköz használatával lehet az adatbevitelhez kötelező elemet kijelölni. Ha bejelöli a **Kötelező** gombot az eszközsoron, minden kötelezőnek testreszabott elem, és egy árnyékolt tárolóban jelenik meg. Ezután újra nem kötelezővé tehetők. Ez a lehetőség csak akkor érhető el későbbi verzióban, ha a [Mentett nézetek](saved-views.md), illetve a **Mezők kijelölése kötelezőnek testreszabással** funkciók engedélyezve vannak.
 - Használja a **Zárolás** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha kiválasztja a **Zárolás** gombot az eszközsoron, minden nem szerkeszthető elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
 - Használja az **Alkalmazás hozzáadása a Power Apps alkalmazásból** gombot, amely a Microsoft Power Apps használatával lett létrehozva az oldalon. A Power Apps-alkalmazásnak a lapba való beágyazásával kapcsolatos részletes tudnivalókat lásd: [Power Apps-alkalmazásokból származó alkalmazás beágyazása](embed-power-apps.md). Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció.  
 - Használja az **Alkalmazás hozzáadása** gombot egy Microsoft Power Apps rendszerben létrehozott vagy külső féltől származó alkalmazás beágyazásához az oldalon. Ez a lehetőség csak akkor érhető el, ha engedélyezve van a [Mentett nézetek](saved-views.md) funkció. 

@@ -2,7 +2,7 @@
 title: Mozgóátlagon alapuló önköltségi ár
 description: A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 79003
 ms.assetid: adc3f245-dc9d-4327-88fb-6a579194a5fe
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7957b2a9cb24dcc61e3113bfd3cc3b1fa1e6d0a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 73cdede298375bf61899babb41b1444afe3f20ff
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569248"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214412"
 ---
 # <a name="running-average-cost-price"></a>Mozgóátlagon alapuló önköltségi ár
 

@@ -3,7 +3,7 @@ title: Szabadság- és távolléti tervek halmozódása
 description: Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources alkalmazásban több alkalmazott vagy egy egyén esetében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba60fc2e5b17ec32aa6ad7eb104e8ae55ddee3bb
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092338"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197313"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -35,7 +35,7 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadság- és távolléti tervek elhatárolása** lehetőséget.
 
-3. A **Szabadság- és távolléti tervek elhatárolása** párbeszédpanelen az **Elhatárolás kezdete** részben válassza ki a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
+3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
 4. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
 
@@ -53,7 +53,7 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 2. Válassza a **Szabadság- és távolléti tervek elhatárolása** lehetőséget.
 
-3. A **Szabadság- és távolléti tervek elhatárolása** párbeszédpanelen az **Elhatárolás kezdete** részben válassza ki a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
+3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
 4. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
 
@@ -65,15 +65,43 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
    4. Válassza ki az **OK** lehetőséget. Az elhatárolási folyamat a megadott paraméterekkel fog futni.
 
-## <a name="preview-features-for-leave-and-absence"></a>Előnézeti funkciók a Szabadság és távollét pontban
+## <a name="delete-leave-and-absence-accruals-for-multiple-employees"></a>Több alkalmazott szabadság- és távollét-elhatárolásának törlése
 
-[!include [banner](includes/preview-feature-leave-absence.md)]
+Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordokat. Az elhatárolásnak aznapi vagy jövőbeli dátummal kell rendelkeznie.
 
-A következő előzetes verziós funkciókat engedélyezheti a Szabadság és távollét esetében:
+1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
 
-- **Szabadság- és távolléti tervek elhatárolásának törlése**. Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordokat. Az elhatárolásnak aznapi vagy jövőbeli dátummal kell rendelkeznie.
+2. A **Szabadság kezelése** alatt válassza a **Szabadság- és távolléti tervek elhatárolásának törlése** lehetőséget.
 
-- **Szabadságelhatárolás auditálása**. Minden alkalommal megjelenik, amikor valaki egy elhatárolást futtat vagy töröl egy vagy az összes alkalmazott esetében, és megjeleníti a dátumot és a művelet végrehajtóját is.
+3. A **Szabadság- és távolléti tervek elhatárolásának törlése** párbeszédpanelen válassza ki a **Szabadságterv** lehetőséget. 
+
+4. Ha szükséges, válassza az **Egyenleg-helyesbítések törlése** lehetőséget.
+
+5. Adja meg vagy válassza ki a **Szabadság elhatárolási dátumát**. Ennek a dátumnak ma vagy a jövőben kell lennie. 
+
+6. Válassza ki az **OK** lehetőséget. Az elhatárolási folyamat a megadott paraméterekkel töröl elhatárolásokat. 
+
+## <a name="delete-leave-and-absence-accruals-for-a-single-employee"></a>Egy alkalmazott szabadság- és távollét-elhatárolásának törlése
+
+1. Az alkalmazott rekordján válassza a **Szabadság** elemet.
+
+2. Válassz a **Szabadság- és távolléti tervek elhatárolásának törlése** lehetőséget.
+
+3. A **Szabadság- és távolléti tervek elhatárolásának törlése** párbeszédpanelen válassza ki a **Szabadságterv** lehetőséget. 
+
+4. Ha szükséges, válassza az **Egyenleg-helyesbítések törlése** lehetőséget.
+
+5. Adja meg vagy válassza ki a **Szabadság elhatárolási dátumát**. Ennek a dátumnak ma vagy a jövőben kell lennie. 
+
+6. Válassza ki az **OK** lehetőséget. Az elhatárolási folyamat a megadott paraméterekkel töröl elhatárolásokat. 
+
+## <a name="review-leave-accrual-and-deletion-processes"></a>A szabadságelhatárolási és -törlési folyamatok áttekintése
+
+**Szabadságelhatárolás auditálása** megjelenít minden egyes alkalmat, amikor elhatárolást futtatott vagy törölt egy vagy az összes munkavállalóhoz. Az dátum és a műveletet végrehajtó személy is meg lesz jelenítve.
+
+1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
+
+2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
 
 ## <a name="see-also"></a>Lásd még
 

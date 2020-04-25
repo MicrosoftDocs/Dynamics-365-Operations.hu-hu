@@ -3,7 +3,7 @@ title: Vevői hitelcsoportok
 description: Ez a témakör a vevői hitelcsoportokkal kapcsolatban tartalmaz információkat.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7121b78f3318bae9f82b2f0f951bc7bfe6c4358
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 90d75493b928bfa4edafeef7730bc272c9146192
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261257"
 ---
 # <a name="customer-credit-groups"></a>Vevői hitelcsoportok
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Meghatározhatja a vevők olyan csoportjait, akiknél ugyanaz a hitelkeret. A program a vevői számlafiókjában megadott egyéni hitelkeretet is figyelembe veszi.
+Meghatározhatja a vevők olyan csoportjait, akiknek megosztott hitelkerete van. A program a vevői számlafiókjában megadott egyéni hitelkeretet is figyelembe veszi.
 
 A vevői hitelcsoport tagjait különböző jogi személyek közül lehet kiválasztani. Amikor egy vevőt ad hozzá a vevők listájához a vevői hitelcsoportban, akkor az egyes vevők hitelkeretének lejárati dátuma a csoporthoz rendelt lejárati dátumra módosul.
 

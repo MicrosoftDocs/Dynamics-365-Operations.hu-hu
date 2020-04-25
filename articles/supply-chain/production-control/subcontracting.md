@@ -2,25 +2,25 @@
 title: Alvállalkozásba adás
 description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Dynamics 365 Supply Chain Management alkalmazásban.
 author: christophernread
-manager: AnnBe
+manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249912"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211054"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 

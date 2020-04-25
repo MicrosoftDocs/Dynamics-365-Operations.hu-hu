@@ -1,6 +1,6 @@
 ---
-title: Üzleti intelligencia (BI) és jelentéskészítés kezdőlap
-description: Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak az elérhető üzletiintelligencia-eszközökről és jelentéskészítési eszközökről.
+title: Jelentéskészítés elemzések a Power BI kezdőlapjával
+description: Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak az elérhető üzletiintelligencia- és jelentéskészítési eszközökről.
 author: sericks007
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771564"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258580"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Üzleti intelligencia (BI) és jelentéskészítés – kezdőlap
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Jelentéskészítés elemzések a Power BI kezdőlapjával
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,8 +32,8 @@ Ebből a témakörből olyan erőforrásokat érhet el, amelyek további inform�
 
 ## <a name="get-started"></a>Első lépések
 - [Adathozzáférés és jelentéskészítés](information-access-reporting.md)
-- [Technikai előadás: Jelentéskészítési lehetőségek](https://www.youtube.com/watch?v=NzZONjKs5xA) (videó)
-- [Finance and Operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Technikai előadás: Jelentéskészítési beállítások](https://www.youtube.com/watch?v=NzZONjKs5xA) (videó)
+- [Finance and Operations: Power BI elemzési és jelentéskészítési szolgáltatások blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Elemzési munkaterületek
 A munkaterületek olyan multimédiás infografikákat és vizuális elemeket használhatnak, amelyeket támogat a Microsoft Power BI. Ezen infografikák és vizuális elemek között megtalálhatók különféle, harmadik féltől származó vezérlők is. A munkaterületek így rendkívül látványos, interaktív élményt biztosíthatnak a felhasználók számára.

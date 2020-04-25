@@ -2,7 +2,7 @@
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. (2020. április ) szolgáltatásban
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.9 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 502b2e08c6c1f4190031d171f037a05d591e5cd8
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 24132e5c43948232bb8ae3c08577d7505b5df3e4
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164768"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261211"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. (2020. április ) szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.9 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.383 a buildszáma, és a következő módon érhető el:
 
@@ -47,6 +46,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Szállítmányok bővítésének konszolidálása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Áttárolás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking) – további információ: [Tervezett áttárolás](https://www.microsoft.com/videoplayer/embed/RE4f7LF) videó.
 - További ténylegessúly-integráció [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)-További tájékoztatás: [A tényleges súly szerinti termékfeldolgozás a raktárkezeléssel](../warehousing/catch-weight-processing.md) és a [Tényleges súly szerinti termékekkel kapcsolatos fejlesztések](https://www.microsoft.com/videoplayer/embed/RE4jzx8) videó.
+- [Tárgyi eszközök integrálása a Tárgyieszközkezelés-életciklussal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)
 - [Rugalmas raktár-szintű dimenziófoglalás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) -további tájékoztatás: [Rugalmas raktár-szintű dimenziófoglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 - [Javított feladatkártya- eszköz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – további információ: [Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról](../production-control/tasks/report-progress-mobile-job-device.md) és [Készként történő jelentés egy azonosítótáblás szabályozású helyen a Feladatkártya eszközről](../production-control/report-finished-job-device.md)
 - [Bejövő minőségellenőrzés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
@@ -64,6 +64,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Bevételezési sorrend](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Kis csomagok szállítása (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Szállítói ajánlatok – szállítói kérdések és összegzett válaszok](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
+- [A munkarendelések vizuális ütemezése az Eszközkezelés modulban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)
 - [Raktári időközökre bontás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Hullámcímke nyomtatási javítások](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Hullámlépés kódja](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)

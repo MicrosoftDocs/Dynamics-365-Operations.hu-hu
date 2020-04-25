@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025854"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259632"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
@@ -84,7 +84,7 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 8. Válasszon egy feladatot, kattintson rá a jobb gombbal, majd válassza az **Új lap oldal** menüpontot.
 9. Nevezze át a lap következhet, mint például **Elemzés**.
 10. Az űrlap-tervezőben, jelölje be a **analitika (lapon)**.
-11. A **Felirat**  tulajdonságot **Elemzés** értékre kell állítani.
+11. Állítsa be a **Képaláírás** tulajdonságot **Elemzés** értékre , és állítsa be az **Automatikus nyilatkozat** tulajdonságot **Igen** értékre.
 12. Kattintson a jobb gombbal a vezérlőelem, és adja meg **Új** \> **Csoport** új űrlapvezérlő csoport hozzáadása.
 13. Nevezze át a lap következhet, mint például **powerBIReportGroup**.
 14. Az űrlap-tervezőben, jelölje be a **PanoramaBody (lap)**, és húzza a vezérlő a **munkaterület** lapon.

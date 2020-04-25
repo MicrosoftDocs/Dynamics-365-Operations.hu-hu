@@ -2,7 +2,7 @@
 title: Minőségkezelés áttekintése
 description: Ez a témakör leírja, hogyan alkalmazza a minőségkezelés funkciót a Dynamics 365 Supply Chain Management szolgáltatásban, hogy ezzel segítse a termékminőség fejlesztését az ön ellátási láncán belül.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814398"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224909"
 ---
 # <a name="quality-management-overview"></a>Minőségkezelés áttekintése
 
@@ -302,122 +302,6 @@ Ha a beszerzés modulban az **Eseménytípus** mezőt a **Termék nyugtája** é
 
 - Ha a **Frissített mennyiség** beállítás **Igen** értékre van állítva , akkor a program minőségi rendelést hoz létre a beszerzési rendeléshez tartozó összes bevételezéshez, a bevételezett mennyiség és a cikkmintavétel beállításai alapján. Minden alkalommal, amikor egy mennyiséget a beszerzési rendeléssel szemben megkapnak, új minőségi rendelések jönnek létre az újonnan megkapott mennyiség alapján.
 - Ha a **Frissített mennyiség** beállítás **Igen** értékre van állítva , akkor a program minőségi rendelést hoz létre a beszerzési rendeléshez tartozó első bevételezéshez, a bevételezett mennyiség és a cikkmintavétel beállításai alapján. Ezenkívül a program egy vagy több minőségi rendelést hoz létre a fennmaradó mennyiség alapján, a nyomon követési dimenziók függvényében. Nem jönnek létre minőségi rendelések a beszerzési rendelés későbbi bevételezéseihez.
-
-<table>
-<tbody>
-<tr>
-<th>Minőség megadása</th>
-<th>Frissített mennyiségenként</th>
-<th>Nyomon követési dimenziónként</th>
-<th>Eredmény</th>
-</tr>
-<tr>
-<td>Százalék: 10%</td>
-<td>Igen</td>
-<td>
-<p>Kötegszám: Nincs</p>
-<p>Sorozatszám: Nincs</p>
-</td>
-<td>
-<p>Rendelt mennyiség: 100</p>
-<ol>
-<li>Készként jelentés 30-hoz
-<ul>
-<li>1. minőségi rendelés 3-hoz (A 30 10%-a)</li>
-</ul>
-</li>
-<li>Készként jelentés 70-hoz
-<ul>
-<li>2. minőségi rendelés 7-hez (a fennmaradó rendelési mennyiség 10%-a, amely ebben az esetben 70).</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Rögzített mennyiség: 1</td>
-<td>Nem</td>
-<td>
-<p>Kötegszám: Nincs</p>
-<p>Sorozatszám: Nincs</p>
-</td>
-<td>Rendelt mennyiség: 100
-<ol>
-<li>Készként jelentés 30-hoz
-<ul>
-<li>Az 1. minőségi rendelés 1-hez jön létre (az első jelentett kész mennyiséghez, amelynek rögzített értéke 1).</li>
-<li>Nem jön létre több minőségi rendelés a hátralévő mennyiséggel szemben.</li>
-</ul>
-</li>
-<li>Készként jelentés 10-hoz
-<ul>
-<li>Nem jönnek létre minőségi rendelések.</li>
-</ul>
-</li>
-<li>Készként jelentés 60-hoz
-<ul>
-<li>Nem jönnek létre minőségi rendelések.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Rögzített mennyiség: 1</td>
-<td>Igen</td>
-<td>
-<p>Kötegszám: Igen</p>
-<p>Sorozatszám: Igen</p>
-</td>
-<td>
-<p>Rendelt mennyiség: 10</p>
-<ol>
-<li>Készként jelentés 3-hoz
-<ul>
-<li>1. minőségi rendelés 1-hez, #b1 köteg, #s1 sorozat</li>
-<li>2. minőségi rendelés 1-hez, #b2 köteg, #s2 sorozat</li>
-<li>3. minőségi rendelés 1-hez, #b3 köteg, #s3 sorozat</li>
-</ul>
-</li>
-<li>Készként jelentés 2-hoz
-<ul>
-<li>4. minőségi rendelés 1-hez, #b4 köteg, #s4 sorozat</li>
-<li>5. minőségi rendelés 1-hez, #b5 köteg, #s5 sorozat</li>
-</ul>
-</li>
-</ol>
-<p><strong>Megjegyzés:</strong> A köteg újra felhasználható.</p>
-</td>
-</tr>
-<tr>
-<td>Rögzített mennyiség: 2</td>
-<td>Nem</td>
-<td>
-<p>Kötegszám: Igen</p>
-<p>Sorozatszám: Igen</p>
-</td>
-<td>
-<p>Rendelt mennyiség: 10</p>
-<ol>
-<li>Készként jelentés 4-hoz
-<ul>
-<li>1. minőségi rendelés 1-hez, #b1 köteg, #s1 sorozat.</li>
-<li>2. minőségi rendelés 1-hez, #b2 köteg, #s2 sorozat.</li>
-<li>3. minőségi rendelés 1-hez, #b3 köteg, #s3 sorozat.</li>
-<li>4. minőségi rendelés 1-hez, #b4 köteg, #s4 sorozat.</li>
-<li>Nem jön létre több minőségi rendelés a hátralévő mennyiséggel szemben.</li>
-</ul>
-</li>
-<li>Készként jelentés 6-hoz
-<ul>
-<li>Nem jönnek létre minőségi rendelések.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### <a name="production"></a>Termelés
 

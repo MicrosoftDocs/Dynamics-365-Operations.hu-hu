@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: db662eb407fbcf3587f3fcb03347a3f14e83b879
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189867"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140503"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Egyedi számsorozatok beállítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez a témakör az egyedi számsorozatok beállítását ismerteti. A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer. Az azonosítókat igénylő alapadatokat és tranzakciós bejegyzéseket hivatkozásnak nevezik. Egy hivatkozáshoz tartozó új rekordok létrehozása előtt be kell állítania egy számsorozatot, és a hivatkozáshoz társítani. Beállíthatja egyszerre az összes igényelt számsorozatot a **Számsorozatok beállítása** varázsló használatával, vagy a **Számsorozat** lap használatával létrehozhatja, illetve módosíthatja az egyes számsorozatokat.
 

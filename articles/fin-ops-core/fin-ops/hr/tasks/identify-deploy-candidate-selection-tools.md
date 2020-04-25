@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 51200a67a51097c438370866cb9d0ccbebe8392c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190373"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143949"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betöltésére, különösen, ha az a pozíció különleges képességeket igényel.  Azonban lehet, hogy a megfelelő képzettségű pályázók már az ön szervezeténél dolgoznak. Rákereshet egy adott szakértelemre a meglévő alkalmazottak és az új pályázók között. Ez lehetővé teszi, hogy a toborzó gyorsan megszűrhesse és összegyűjthesse a pályázókat, akik most vagy a múltban pályáztak egy nyitott pozícióra, vagy hogy a meglévő alkalmazottak közül találjon valakit. A feladatrögzítés segítségével megtudhatja, hogy a Szakértelem feltérképezése funkció hogyan segíti önt a megfelelő személy megtalálásában egy nyitott pozícióra. Ez az eljárás az USMF bemutatócéget használja.
 

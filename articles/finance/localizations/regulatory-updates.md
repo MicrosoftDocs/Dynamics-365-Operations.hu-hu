@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 Finance tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161805"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262626"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -51,8 +51,11 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      Brazília         |   Január 2020.       | 10.0.8      |   Kiegészítő információk a ICMS-ST-ben    |
 |      Brazília         |   2020. március – 2020. január       | 10.0.9, 10.0.8HF      |   SPED pénzügyi rendezés 014 |
 |      Brazília         |   2020. március – 2020. január       | 10.0.9, 10.0.8HF      |   DRCST SC – 343DR. sz. SEF-rendelet   |
+|      Brazília         |   2020. május – 2020. március      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
+|      Brazília         |   2020. május – 2020. április      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Technikai megjegyzés: NT 2019.001 v 1.40   |
 |      Franciaország         |   április 2020.       | 10.0.10      |   Az önfoglalkoztatók (DAS2) törvényi díjakkal kapcsolatos nyilatkozata az adóhatóságok felé    |
 |      Franciaország         |   március 2020.       | 10.0.9      |   Francia lokalizáció: ISO 20022 formátum nemzetközi fizetéshez és kincstári átutaláshoz    |
+|      Magyarország         |   2020. május – 2020. március       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online számlázási rendszer v. 2.0 a Finance and Operations alkalmazásban    |
 |      India         |   március 2020.      | 10.0.9      |   Új GSTR (ANX-1 & ANX-2) visszirányú offline eszköz    |
 |      Olaszország         |   Január 2020.      | 10.0.8      |   A D.L. változásai az ÁFA kezelésében 2018. október 23. / 119: Éves adóügyi kommunikáció    |
 |      Olaszország         |   március 2020.      | 10.0.9, 10.0.8HF      |   Retail – A vevőadatok kezelése a pénztárban |
@@ -68,6 +71,9 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      Lengyelország          |   2020. március – 2020. január     | 10.0.9, 10.0.8HF     |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
 |      Lengyelország          |   2020. március – 2020. január     | 10.0.9, 10.0.8     |   SAF-számlák (JPK_FA) v.3 2019. dec. 2-től |
 |      Lengyelország          |   2020. április – 2020. január     | 10.0.10, 10.0.9, 10.0.8     |   A JPK_VDEK felváltja a JPK_VAT (SAF VAT) értéket |
+|      Lengyelország          |   május 2020.     | 10.0.11     |   Az AP/AR realizált árfolyam-különbözeti összeg felosztása a számla nettó értékének és az áfa összegének árfolyam-különbözetével  |
+|      Lengyelország          |   május 2020.     | 10.0.11     |   SAF könyvelés könyvek – Feladási rétegek szűrési fejlesztései |
+|      Lengyelország          |   május 2020.     | 10.0.11     |   JPK_VDEK kiegészítő csomag I |
 |      Oroszország          |   március 2020.     | 10.0.9     |   Az ingatlanadó bevallásának formátuma 2019-ben megváltozott |
 |      Oroszország          |   március 2020.     | 10.0.9     |   Nyereségadó-bevallás formátumának frissítései |
 |      Szingapúr           |   Január 2020.     | 10.0.8      |   GST visszáru-jelentések |

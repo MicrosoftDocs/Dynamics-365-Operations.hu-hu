@@ -3,7 +3,7 @@ title: Fejlécmodul
 description: Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: efadd19681bbb21ea5b2b469e55bc6f4b0535046
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3025661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261444"
 ---
 # <a name="header-module"></a>Fejlécmodul
 
@@ -51,6 +51,7 @@ A következő modulban használható a fejlécmodulban:
 
 - **Navigációs menü** – A navigációs menü a csatorna navigációs hierarchiáját és más statikus navigációs hivatkozásokat jelenít meg. A csatorna navigációs hierarchiája a Dynamics 365 Commerce alkalmazásban állítható be. A navigációs menü egy **navigációs forrás** tulajdonsággal rendelkezik, amellyel megadhatók a Retail Server navigációs menüelemei és a statikus menüelemek forrásként. Ha a statikus menüelemek forrásként vannak megadva, akkor a webhely más lapjaihoz kapcsolódó relatív hivatkozásokat is meg lehet adni. A konfigurált elemek ezután fejlécnavigációként jelennek meg. 
 - **Keresősáv** – A keresőmodul lehetővé teszi a felhasználók számára, hogy keresési kifejezéseket írjanak be, amelyekkel termékeket kereshetnek. Az alapértelmezett keresési lap URL-jét és a keresési lekérdezések paramétereit a **Webhelybeállítások \> Bővítmények** részben kell megadni. A keresési modulnak van olyan tulajdonsága, amely lehetővé teszi a keresési gomb vagy címke elrejtését szükség esetén. A keresési modul olyan automatikus javaslati beállításokat is támogat, mint a termék, a kulcsszó és a kategória keresési eredményei.
+- **Kosár ikon** - A kosár ikon modul a kosárikont jeleníti meg, amely a kosárban lévő cikkek számát mutatja bármely időpontban. A további tudnivalókat lásd a [kosár ikon modul](cart-icon-module.md) részben.
 
 ## <a name="create-a-header-module-for-a-page"></a>Fejlécmodul létrehozása egy oldalhoz
 
@@ -65,7 +66,10 @@ Fejlécmodul létrehozásához kövesse az alábbi lépéseket.
 1. A navigációs menü modul tulajdonságlapján konfigurálja a navigációs menü modul tulajdonságait.
 1. A fejlécmodul **Keresés** helyén adjon hozzá egy keresési modult. 
 1. A keresési modul tulajdonságlapján konfigurálja a keresési modul tulajdonságait. 
+1. A fejlécmodul **Kosárikon** helyére adjon hozzá egy kosár ikon modult. 
+1. A kosárikon modul tulajdonságlapján konfigurálja a keresési modul tulajdonságait. Ha azt szeretné, hogy a kosár ikon megjelenítsen egy minikosarat, amikor az egérmutatót föl viszik válassza az **Igaz** értéket a **Minikosár megjelenítése** alatt.
 1. Mentse az oldaltöredéket, fejezze be a szerkesztését, majd tegye közzé. 
+
 
 Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alábbi lépéseket a webhelyhez létrehozott összes oldalsablon esetében.
 
@@ -81,6 +85,8 @@ Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alá
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Kosármodul](add-cart-module.md)
+
+[Kosárikon modul](cart-icon-module.md)
 
 [Fizetésmodul](add-checkout-module.md)
 

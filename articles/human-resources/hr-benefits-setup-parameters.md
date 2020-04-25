@@ -3,7 +3,7 @@ title: A juttatáskezelés paramétereinek beállítása
 description: A Juttatáskezelés paramétereinek konfigurálása a Microsoft Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009287"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229763"
 ---
-# <a name="set-benefits-management-parameters"></a>A juttatáskezelés paramétereinek beállítása
-
-[!include [banner](includes/preview-feature.md)]
+# <a name="set-benefits-management-parameters"></a>Juttatáskezelés paramétereinek beállítása
 
 Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resources alkalmazásban, konfigurálnia kell a Juttatáskezelés paramétereit. Ezek a paraméterek az alapértelmezett értékeket, okkódokat és egyéb beállításokat határozzák meg.
 
@@ -47,7 +45,6 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
    | **Díjváltozás okkódja** | Az alkalmazotti juttatási konstrukciónak az árfolyam-módosítási frissítési folyamat során történő érvénytelenítése és újbóli megnyitása alkalmával használandó okkód. Azt jelzi, hogy az árfolyam-módosítási frissítési folyamat mely rekordokat módosította. |
    | **Új dolgozó jogosult** | Megadja, hogy az új dolgozók jogosultak-e. |
    | **Új dolgozó regisztrációs időszaka** | Az az időszak, amikor az új dolgozói regisztráció engedélyezve van.</br></br>**Megjegyzés**: Ez a beállítás felülbírál minden új dolgozói regisztrációs időszakot, amelyet a konstrukció jogosultsági szabályai között beállított. | 
-   | **Éves fizetésbővítmény** | Megadja, hogy az **Évi juttatásfizetés** összege automatikusan kiszámításra kerüljön-e a **Dolgozói juttatás részletei** részben. Az alapja az alkalmazott **Fix kompenzációs díjalapja**, az **Átlagos munkaórák** és a **Fizetés gyakorisága**.</br></br>**Átlagos munkaórák** x **Fix fizetési díjalap** x **Fizetés gyakorisága** (a fizetési időszakok száma) = **Évi juttatásfizetés** </br></br>Ha az **Átlagos munkaórák**, a **Fix fizetési díjalap** vagy a **Fizetés gyakorisága** mező értéke megváltozik, a rendszer automatikusan újraszámítja az alkalmazott **Évi juttatásfizetés** összegét a módosított értékek alapján. A rendszer létrehoz egy **Érvényességi dátum** rekordot, amely a módosítás bekövetkezésének pontos dátumát és időpontját azonosítja. Szükség esetén az **Évi juttatásfizetés** összegét manuálisan is szerkesztheti. |
    | **Életesemények engedélyezve** | Élettartam-események engedélyezése. |
    | **Korábbi juttatási űrlapok elrejtése** | Lehetővé teszi a korábbi juttatási űrlapok elrejtését. |
 

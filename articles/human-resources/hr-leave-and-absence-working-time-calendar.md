@@ -3,7 +3,7 @@ title: Munkaidőnaptár létrehozása
 description: A Dynamics 365 Human Resources alkalmazásban munkaidőnaptárt, szabadnapokat és munkaidőket definiálhat.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 641f66c75875cfba51af3753223a070d7cb7dc50
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: dc209b62836011b18362f78b63cdd3fcda884dc3
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009317"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198027"
 ---
 # <a name="create-a-working-time-calendar"></a>Munkaidőnaptár létrehozása
 
@@ -68,10 +68,6 @@ A munkaidőnaptárban külön is hozzáadhatja és módosíthatja a nem munkaid�
 1. A **Szervezet felügyelete** oldalon válassza a **Nem munkaidő** elemet.
 
 2. Válassza az **Új** lehetőséget, és adja meg a nem munkaidőnek számító idő nevét és időtartományát.
-
-## <a name="leave-and-absence-preview-feature"></a>Szabadság és távollét előzetes funkciója
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 Ha engedélyezte a szabadsággal és a távolléttel kapcsolatos munkaszünet-korrekciók előzetes funkcióját, akkor a Human Resources a szabadnapok és a leállások dátuma alapján határozza meg, hogy hány napot kell módosítani a naptárba bejegyzett alkalmazottaknál.
 

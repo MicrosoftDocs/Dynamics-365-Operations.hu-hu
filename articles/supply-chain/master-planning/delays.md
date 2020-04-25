@@ -2,15 +2,15 @@
 title: Késések
 description: Ez a témakör az alaptervezésben szereplő késleltetett dátumokról szolgál információval. A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522289"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203848"
 ---
 # <a name="delays"></a>Késések
 
@@ -44,6 +44,12 @@ Az **Alaptervezés paraméterei** lapon beállíthatja a késések számításá
 
 > [!NOTE]
 > A korábbi változatokban a késések kiszámítását *határidős üzeneteknek* nevezték, a késleltetett dátum neve *határidős dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Korlátozott késések a termelési beállításokban több anyagjegyzék-szinttel
+Ha több anyagjegyzék-szintet tartalmazó termelési beállításnál késéseket dolgozik, fontos megjegyezni, hogy csak a késést okozó cikk fölött közvetlenül található cikkek (az anyagjegyzék szerkezetben) lesznek frissítve a késéssel az alaptervezés futtatásakor. Az anyagjegyzék-szerkezet többi cikkér nem lesz alkalmazva a késleltetés az első alaptervezés-futtatásig, amikor a felső szintű tervezett rendelés jóvá van hagyva vagy meg van erősítve. 
+
+Ha ezt az ismert korlátozást szeretné megkerülni akkor az anyagjegyzék-szerkezet felső részén található termelési rendelések jóváhagyása (vagy megerősítése) a következő Alaptervezés futtatása előtt elvégezhető. Ily módon a késleltetett jóváhagyott tervezett termelési rendelés késése meg lesz tartva, és a rendszer ennek megfelelően frissíti az összes mögöttes összetevőt.
+A műveletüzenetek a későbbi dátumra áthelyezhető tervezett rendelések azonosítására is használhatók, az anyagjegyzék-szerkezet egyéb késései miatt.
 
 ## <a name="desired-date"></a>Kívánt dátum
 

@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: d394f5ca84efc5beb943d349e45a3d2c9639d83c
-ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
+ms.openlocfilehash: 0072ca507301fdb880f0595a06377ff01366ca20
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260529"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -36,7 +36,29 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
-## <a name="platform-update-32"></a>32-as platformfrissítés
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.11 verziójához
+
+### <a name="field-groups-containing-invalid-field-references"></a>Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Finance and Operations alkalmazások 10.0.11 verzióihoz tartozó platformfrissítések fordítási *hibaként* kategorizálják ezt a problémát.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
+| **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | **Elavult:** A fordítói figyelmeztetés immár fordítói hiba a Finance and Operations alkalmazások 10.0.11 verziójának platformfrissítéseiben. |
+
+### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A független szoftvergyártói (ISV) licencek létrehozási folyamata módosult. További tájékoztatás: [Független szoftvergyártói (ISV) licencek](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
+| **Felváltotta másik szolgáltatás?**   | Igen. Licencek létrehozása a Windows PowerShell használatával. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | <strong>Elavult:</strong> Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek. Ez az algoritmus a MakeCert segédprogrammal létrehozott tanúsítványokra épített, és ez a segédprogram elavult.<p><strong>Elavult:</strong> Az SHA1 használata biztonsági vagy kivonatolási célokra. Az SHA1 2021 elejétől nem működik majd. Ezért a továbbiakban nem használható.<p><strong>Eltávolítva</strong> : A Transport Layer Security (TLS) 1.0 és TLS 1.1 támogatása a bejövő vagy kimenő kérésekhez. |
+
+## <a name="platform-update-32"></a>Platform update 32
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>A munkafolyamat-kérelem módosítási párbeszédpanele már nem tartalmaz felhasználói kiválasztást lehetővé tévő legördülő listát
 |   |  |

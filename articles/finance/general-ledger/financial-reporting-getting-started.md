@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915177"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249060"
 ---
 # <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Ez a témakör azt ismerteti, hol érheti el a pénzügyi jelentéseket, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 

@@ -5,6 +5,12 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. április 13.
+          href: hr-whats-new-2020-04-13.md
+        - name: 2020. április 3.
+          href: hr-whats-new-2020-04-03.md
+        - name: 2020. március 24.
+          href: hr-whats-new-2020-03-24.md
         - name: 2020. március 19.
           href: hr-whats-new-2020-03-19.md
         - name: 2020. március 10.
@@ -397,11 +403,11 @@
               href: hr-compensation-enroll-employees-variable.md
             - name: Kompenzációs folyamat meghatározása és eredmények kiszámítása
               href: hr-compensation-define-process.md
-            - name: Kompenzációtervek feldolgozása
+            - name: Kompenzációs konstrukciók feldolgozása
               href: hr-compensation-process.md
         - name: Juttatások kezelése
           items:
-            - name: 'Előzetes verziós funkció: Juttatáskezelés'
+            - name: Juttatáskezelés
               items:
                 - name: Juttatáskezelés áttekintése
                   href: hr-benefits-management-overview.md
@@ -439,21 +445,17 @@
                       href: hr-benefits-setup-employment-categories.md
                     - name: Alkalmazási típusok beállítása
                       href: hr-benefits-setup-employment-types.md
-                    - name: Alkalmazotti önkiszolgálás konfigurálása
+                    - name: Alkalmazotti önkiszolgáló rendszer konfigurálása
                       href: hr-benefits-setup-employee-self-service.md
-                - name: Juttatási tervek létrehozása
+                - name: Juttatási konstrukciók létrehozása
                   items:
-                    - name: Juttatási tervek beállítása
+                    - name: Juttatási konstrukciók beállítása
                       href: hr-benefits-plans-setup.md
-                    - name: Dolgozói juttatási tervek létrehozása
-                      href: hr-benefits-plans-worker.md
-                    - name: Rugalmas hitelprogramok beállítása
+                    - name: Rugalmas jóváírási programok beállítása
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: A jövőbeli életesemények konfigurálása
-                      href: hr-benefits-plans-future-life-events.md
-                - name: Juttatási tervek feldolgozása
+                - name: Juttatási konstrukciók feldolgozása
                   items:
-                    - name: Beiktatási jogosultság feldolgozása
+                    - name: Felvételi jogosultság feldolgozása
                       href: hr-benefits-process-enrollment-eligibility.md
                     - name: Életesemények feldolgozása
                       href: hr-benefits-process-life-events.md
@@ -497,9 +499,11 @@
               href: hr-leave-and-absence-plans.md
             - name: Alkalmazottak hozzárendelése a szabadságtervhez
               href: hr-leave-and-absence-enroll.md
-            - name: Elhatárolt szabadság- és távolléti tervek
+            - name: Szabadság- és távolléti tervek elhatárolása
               href: hr-leave-and-absence-accrue.md
-            - name: A szabadság és távollét elemzésének megtekintése
+            - name: Szabadság felfüggesztése
+              href: hr-leave-and-absence-suspend-leave.md
+            - name: A szabadság és távollét elemzéseinek megtekintése
               href: hr-leave-and-absence-analytics.md
             - name: Szabadság- és távollétkérelmek kezelése
               href: hr-employee-self-service-manage-requests.md
