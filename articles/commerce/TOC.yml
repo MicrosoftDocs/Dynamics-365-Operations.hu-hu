@@ -44,6 +44,8 @@
                   href: provisioning-guide.md
                 - name: Dynamics 365 Commerce előzetes verziós környezet konfigurálása
                   href: cpe-post-provisioning.md
+                - name: BOPIS konfigurálása Dynamics 365 Commerce-környezetben
+                  href: cpe-bopis.md
                 - name: Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
                   href: cpe-optional-features.md
                 - name: Dynamics 365 Commerce előzetes verziós környezet GYIK
@@ -86,6 +88,8 @@
                   items:
                     - name: Új vagy módosult elemek a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.11 (2020. július)
+                      href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (2020. május)
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (2020. április)
@@ -202,10 +206,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa
                   href: dev-itpro/PA-DSS-Certification.md
-                - name: A helyszíni telepítéseknél rendelkezésre álló kereskedelmi lehetőségek
+                - name: A helyszíni telepítéseknél rendelkezésre álló Commerce-lehetőségek
                   href: retail-onprem.md
             - name: Telepítés és gyorsjavítások
               items:
+                - name: Önkiszolgáló telepítők szinkronizálása a Dynamics 365 Commerce szolgáltatásban
+                  href: dev-itpro/Synchronize-installers.md
                 - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
                 - name: A Commerce Scale Unit konfigurálása és telepítése
@@ -216,16 +222,18 @@
                   href: set-up-activation-accounts-validate-devices-hq.md
                 - name: Pénztáreszköz aktiválása
                   href: dev-itpro/retail-device-activation.md
-                - name: A felhőalapú pénztár biztonságossá tétele megosztott környezetekben
+                - name: A Cloud POS biztonságossá tétele megosztott környezetekben
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: A Retail Hardware Station konfigurálása és telepítése
                   href: retail-hardware-station-configuration-installation.md
                 - name: Önkiszolgáló összetevők központi telepítése
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Retail-összetevő-események a diagnosztikához és a hibaelhárításhoz
+                - name: Retail-összetevővel kapcsolatos események a diagnosztikához és a hibaelhárításhoz
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Telepíthető csomag alkalmazása
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Kiindulási adatok inicializálása új Commerce-környezetben
+                  href: enable-configure-retail-functionality.md
             - name: Végrehajtási életciklus kezelése
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
@@ -330,9 +338,9 @@
                   href: channel-setup-retail.md
                 - name: Kiskereskedelmi dolgozók konfigurálása
                   href: tasks/worker.md
-                - name: Modern Point of Sale (MPOS) és felhőalapú pénztár
+                - name: Modern Point of Sale (MPOS) és Cloud POS
                   items:
-                    - name: Az MPOS és a felhőalapú pénztár közötti választás
+                    - name: Az MPOS és a Cloud POS közötti választás
                       href: MPOS-or-CPOS.md
                     - name: Online és offline pénztárműveletek
                       href: pos-operations.md
@@ -340,7 +348,7 @@
                       href: dev-itpro/retail-POS-activation-changes.md
                     - name: Azure Active Directory-hitelesítés engedélyezése a pénztári bejelentkezéshez
                       href: aad-pos-logon.md
-                    - name: Az MPOS és felhőalapú pénztár bemutató adatképernyő-elrendezései
+                    - name: Az MPOS és Cloud POS bemutató adatképernyő-elrendezései
                       href: demo-data.md
                     - name: Termék és vevő keresése a pénztárban
                       href: POS-search-improvements.md
@@ -362,7 +370,7 @@
                       href: charge-send.md
                     - name: A Pénztár szállítási párbeszédablakának nem szállítói kiszállítási módjainak elrejtése
                       href: hide-non-carrier-modes.md
-                    - name: Feladatrögzítő és Súgó az MPOS-hez és a Felhőalapú pénztárhoz
+                    - name: Feladatrögzítő és Súgó az MPOS-hez és a Cloud POS-hoz
                       href: task-recorder-retail-pos.md
                     - name: Hardverperifériák
                       items:
@@ -378,7 +386,7 @@
                       items:
                         - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
                           href: demo-data.md
-                        - name: Pénztár képernyő-elrendezései
+                        - name: A pénztár felhasználói felületének vizuális konfigurációja
                           href: pos-screen-layouts.md
                         - name: A pénztárelrendezés-tervező telepítése
                           href: install-pos-layout-designer.md
@@ -404,7 +412,7 @@
                       items:
                         - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
                           href: retail-modern-pos-device-activation.md
-                        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a felhőalapú pénztárhoz
+                        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hoz
                           href: extended-logon.md
                         - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
                           href: set-up-activation-accounts-validate-devices-hq.md
@@ -906,9 +914,11 @@
                   href: cookie-compliance.md
                 - name: Adatvédelmi irányelv oldalának hozzáadása
                   href: add-privacy-page.md
-            - name: Kezdő csomag
+                - name: Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése
+                  href: replace-IDs-tracked-changes.md
+            - name: Kezdőcsomag
               items:
-                - name: Kezdő csomag áttekintése
+                - name: Kezdőcsomag áttekintése
                   href: starter-kit-overview.md
                 - name: Tárolómodulok
                   items:
@@ -936,18 +946,22 @@
                   items:
                     - name: Vásárlásmező-modul
                       href: add-buy-box.md
-                    - name: Értékelések és vélemények modulok
+                    - name: Minősítések és értékelések modulok
                       href: ratings-reviews-modules.md
                 - name: Beszerzési modulok
                   items:
                     - name: Kosármodul
                       href: add-cart-module.md
+                    - name: Kosárikon modul
+                      href: cart-icon-module.md
                     - name: Fizetésmodul
                       href: add-checkout-module.md
                     - name: Rendelésmegerősítési modul
                       href: order-confirmation-module.md
-                    - name: Üzletkiválasztó modul
+                    - name: Áruházválasztó modul
                       href: store-selector.md
+                    - name: Ajándékutalvány modul
+                      href: add-giftcard.md
                 - name: Számlakezelési modulok
                   items:
                     - name: Számlakezelési oldalak és modulok
@@ -1940,13 +1954,15 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Témabeállítások konfigurálása
                       href: e-commerce-extensibility/configure-theme-settings.md
-                - name: Parancsfájl beszúrása
+                    - name: Téma kiterjesztése
+                      href: e-commerce-extensibility/extend-theme.md
+                - name: Parancsfájl betöltése
                   items:
                     - name: Parancsfájl-betöltő
                       href: e-commerce-extensibility/script-injector.md
                 - name: Telemetria és analitika
                   items:
-                    - name: Telemetrianaplózó
+                    - name: Telemetria-naplózó
                       href: e-commerce-extensibility/telemetry-logger.md
                 - name: Telepítés és karbantartás
                   items:
@@ -1962,6 +1978,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: A Retail szoftverfejlesztői készlet (SDK) áttelepítése a Visual Studio 2015 szolgáltatásból a Visual Studio 2017 szolgáltatásba
+                  href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Telepíthető csomagok létrehozása
@@ -1978,7 +1996,7 @@
                   href: install-pos-layout-designer.md
                 - name: A pénztár kettős megjelenítési nézetének kiterjesztése
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: A Modern POS és a felhőalapú pénztár eseményindítójának bővíthetősége
+                - name: A Modern POS és a Cloud POS eseményindítójának bővíthetősége
                   href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
                   href: dev-itpro/pos-custom-control.md
@@ -1998,7 +2016,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Pénztárbővítmény csomaginformációjának megtekintése
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: A felhőalapú pénztár tesztrögzítője és Regression Suite Automation Tool eszköze
+                - name: A Cloud POS tesztrögzítője és Regression Suite Automation Tool eszköze
                   href: dev-itpro/pos-rsat.md
                 - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
                   href: dev-itpro/custom-field-pos-totals.md
