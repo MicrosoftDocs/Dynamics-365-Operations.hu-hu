@@ -70,12 +70,12 @@
                   items:
                     - name: Új vagy módosult elemek a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.11 (2020. július)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (2020. május)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9 (2020. április)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8 (2020. február)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Munka és kiadások elszámolóárainak konfigurálása
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Saját fizetés beérkezésekor fizetendő szállítói fizetések beállítása és használata
+              href: project-management/setup-manage-vendor-payments.md
             - name: Projektköltség-könyvelési beszerzési bizonylatok
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektszámlázás
               href: accounts-payable/project-invoicing.md
             - name: Projektszerződések
               href: project-management/project-contracts.md
+            - name: Speciális szerződések létrehozása a folyamat alapján történő számlázáshoz
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projekt-előrejelzések és -költségvetések
               href: project-management/project-forecasts-budgets.md
             - name: Projekt költségvetéseinek átvitele a pénzügyi év végén
@@ -1014,6 +1018,8 @@
                   href: project-management/mobile-timesheets.md
                 - name: Egyéni mezők alkalmazása a Project Timesheet mobilalkalmazás esetében
                   href: project-management/custom-fields-mobile.md
+            - name: Projekttámogatások
+              href: project-management/project-grants.md
         - name: Állami szektor
           items:
             - name: Állami szektor – kezdőlap
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Váltók elutasításának importálása
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Adóplafon
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japán
               items:
                 - name: Japán – áttekintés
