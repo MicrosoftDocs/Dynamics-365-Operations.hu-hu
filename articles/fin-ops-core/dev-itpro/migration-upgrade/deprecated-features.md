@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a korábbi kiadásokban
 description: Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy melyek eltávolítása tervezett a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225128"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284014"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -230,7 +230,7 @@ Támogatja a projektalapú értékesítési rendelések létrehozását, ahol a 
 | **Felváltotta másik szolgáltatás?**   | Szám |
 | **Érintett területek**         | Termékinformációk kezelése |
 | **Telepítési beállítás**              | Összes  |
-| **Állapot**                         | Eltávolítva a Finance and Operations 10.0.0-es verzió és Platform update 24 után. (Ha és csak akkor ha javítani szeretné a kiadott termék elsődleges kulcsának egy korábbi átnevezése által okozott adatsérülést, forduljon a Microsoft támogatási szolgálatához a korlátozás ideiglenes eltávolításának kérése céljából.) |
+| **Állapot**                         | Eltávolítva a Finance and Operations 10.0.0-es verzió és Platform update 24 után.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 és 23-as platformfrissítés
@@ -267,7 +267,7 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 | **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba lesz a jövőben. Ez a módosítás az Finance and Operations alkalmazások 10.0.11 verzió platform-frissítéseiben van megcélozva. |
+| **Állapot**                         | Elavult: A figyelmeztetés fordításidejű hiba a Finance and Operations alkalmazások 10.0.11 verziójának platformfrissítéseiben. |
 
 #### <a name="complete-list"></a>Teljes lista
 Az elavulás alatt álló API-k teljes listája: [Módszerek és metaadatelemek elavulása](deprecation-deletion-apis.md).

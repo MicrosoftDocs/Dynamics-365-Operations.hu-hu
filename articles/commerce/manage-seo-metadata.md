@@ -3,7 +3,7 @@ title: SEO-metaadatok kezelése
 description: Ez a témakör azt mutatja be, hogyan lehet kezelni a keresőmotor-optimalizálási (SEO) metaadatokat a Microsoft Dynamics 365 Commerce megoldásban.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003464"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270050"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metaadatok kezelése
 
@@ -72,13 +72,10 @@ Az oldal metaadatainak módosításához kövesse az alábbi lépéseket.
 1. A **Webhelyek** alatt válassza a **Gyár** (vagy a webhelye neve) lehetőséget.
 1. A bal oldali navigációs ablakban válassza ki a **Oldalak** lehetőséget.
 1. Válassza ki a kezdőlapot a megnyitáshoz a lapszerkesztőben.
-1. A Műveleti ablaktáblán válassza ki a **Kivétel** lehetőséget.
+1. Válassza a parancssáv **Szerkesztés** elemét.
 1. A jobb oldali tulajdonságok ablaktáblán bontsa ki az **Alapértelmezett metacímkék** lehetőséget.
-1. Új metacímke hozzáadásához kattintson a **Hozzáadás**gombra, majd írja be a címkét a mezőbe.
-
-    Ha törölni szeretne egy létező metacímkét, válassza a mellette, jobbra található kuka szimbólumot.
-
-1. Válassza a **Mentés** parancsot, majd válassza a **Beadás** elemet.
+1. Új metacímke hozzáadásához kattintson a **Hozzáadás**gombra, majd írja be a címkét a mezőbe. Ha törölni szeretne egy létező metacímkét, válassza a mellette, jobbra található kuka szimbólumot.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. A **Megjegyzések** mezőbe írja be a **Frissített metacímkék** szöveget, majd kattintson az **OK** gombra.
 1. A oldal előnézetének megjelenítéséhez válassza az **Előnézet** lehetőséget. Ha befejezte, zárja be az előnézeti lapot, és térjen vissza a szerkesztési eszközhöz.
 1. Válassza a **Közzététel** lehetőséget.

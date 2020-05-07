@@ -3,7 +3,7 @@ title: Egyéni válaszlapok összeállítása a 4xx/5xx állapotkódhibákhoz
 description: Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce szerkesztési eszközeivel egyéni válaszoldalakat létrehozni a 4xx és 5xx állapotkódú hibákhoz.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4477a0a43971b5322c6acd6971cba2e79e2dc8c6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001128"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269544"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Egyéni válaszlapok összeállítása a 4xx/5xx állapotkódhibákhoz
 
@@ -46,19 +46,21 @@ Ha egy kérés nem sikerült, a kiszolgáló HTTP-állapotkódos hibajelzéseket
 
 Állapotkód hibaválaszoldal sablonjának összeállításához hajtsa végre az alábbi lépéseket.
 
-1. Lépjen a **Sablonok \> Új sablon** lehetőségre.
-1. Nevezze el az új sablont.
+1. Ugorjon a **Sablonok** részre.
+1. Válassza az **Új** lehetőséget egy oldalsablon létrehozásához.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg az új sablon nevét, majd válassza az **OK** gombot.
 1. Állítsa össze a sablont a struktúra alapján, amelyet az állapotkód hibaválaszoldalának kíván adni.
-1. Adja be a sablont és tegye közzé.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
 
 ### <a name="build-the-status-code-error-response-page"></a>Az állapotkód hibaválaszoldal összeállítása
 
 Állapotkód hibaválaszoldal összeállításához hajtsa végre az alábbi lépéseket.
 
-1. Lépjen a **Lapok \> Új lap** lehetőségre.
-1. Nevezze el az állapotkód hibaválaszoldalt, de **ne** állítsa be az **URL** mezőt.
+1. Lépjen az **Oldalak** pontra.
+1. Válassza az **Új** lehetőséget egy oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédpanelen válasszon ki egy sablont, majd az **Oldal neve** területen írja be az állapotkód-válasz lap nevét. Hagyja üresen az **Oldal URL-címe** mezőt.
 1. Állítsa össze a lapot.
-1. Adja be a lapot, és tegye közzé.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 > [!NOTE]
 > A 4xx és a 5xx állapotkódú hibákhoz külön állapotkód hibaválaszoldalakat lehet létrehozni. Másik lehetőségként ugyanaz az általános állapotkód hibaválaszoldal használható mindkét hibakategória esetén.

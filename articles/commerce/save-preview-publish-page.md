@@ -3,7 +3,7 @@ title: Oldal mentése, megtekintése és közzététele
 description: Ez a témakör azt mutatja be, hogyan lehet egy lapot menteni, megtekinteni előnézetét vagy közzétenni azt a Microsoft Dynamics 365 Commerce webhelyén.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002813"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269981"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Oldal mentése, megtekintése és közzététele
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Ez a témakör azt mutatja be, hogyan lehet egy lapot menteni, megtekinteni elő
 
 ## <a name="save-a-page"></a>Egy lap mentése
 
-Lap mentéséhez ki kell vennie azt, és meg kell nyitnia azt a lapszerkesztőben. A módosítást követően azonnal mentenie kell azt, hogy garantálni lehessen azt, hogy a módosítások tárolva legyenek.
+Lap mentéséhez ki kell vennie azt, és meg kell nyitnia azt a lapszerkesztőben. Egy oldal kivételéhet válassza a **Szerkesztés** parancsot a parancssávon. Miután befejezte egy oldal szerkesztését, azonnal mentse azt, hogy garantálni lehessen azt, hogy a módosítások tárolva legyenek.
 
 A lapok mentésekor a módosítások csak az Ön számára láthatók. A mentési művelet elsősorban a módosítások tárolására szolgál, amíg a lap még nincs készen a beadásra. Amikor befejezte a lap módosítását, ajánlott beadni azt, hogy a módosítások mások számára is láthatóvá váljanak. Ezen a ponton a lapot más olyan felhasználók is kivehetik, akik módosítania szeretnék azt.
 
@@ -50,7 +49,7 @@ Ha befejezte a lap módosítását, megtekintheti előnézetét, tehát azt, hog
 
 ## <a name="publish-a-page"></a>Oldal közzététele
 
-Amikor elkészült a lap, a következő lépés a közzététel, hogy a külső felhasználók megtekinthessék a tartalmat. A lap közzététele előtt be kell küldenie azt.
+Amikor elkészült a lap, a következő lépés a közzététel, hogy a külső felhasználók megtekinthessék a tartalmat. A lap közzététele előtt be kell küldenie azt a parancssáv **Szerkesztés befejezése** elemének kiválasztásához.
 
 A lapokat akár a lapvizsgálóból és a lapszerkesztőből is közzéteheti vagy megszüntetheti a közzétételt. A lapvizsgáló megjeleníti a lapok listáját, és kötegelt művelteket is lehetővé tesz. A lapszerkesztőben csak azokat a lapokat lehet közzétenni vagy a közzétételt megszüntetni, amelyek meg vannak nyitva.
 
@@ -70,9 +69,9 @@ Kezdőlap mentéséhez, előnézetéhez és közzétételéhez hajtsa végre az 
 1. A **Webhelyek** alatt válassza a **Fabrikam** (vagy a webhelye neve) lehetőséget.
 1. A bal oldali navigációs ablakban válassza ki a **Oldalak** lehetőséget.
 1. Keresse meg és válassza ki a kezdőlapot a megnyitáshoz a lapszerkesztőben.
-1. Válassza a **Kivétel** lehetőséget.
+1. Válassza ki a **Szerkesztés** opciót.
 1. Igény szerint módosítsa a lapot.
-1. Válassza a **Mentés** parancsot, majd válassza a **Beadás** elemet.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. A **Megjegyzések** mezőbe írja be a végrehajtott változtatásokkal kapcsolatos megjegyzését, majd kattintson az **OK** gombra.
 1. A oldal előnézetének megjelenítéséhez válassza az **Előnézet** lehetőséget. Ha befejezte, zárja be az előnézeti lapot, és térjen vissza a szerkesztési eszközhöz.
 1. Válassza a **Közzététel** lehetőséget.

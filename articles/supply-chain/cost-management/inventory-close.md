@@ -3,7 +3,7 @@ title: Készlet zárása
 description: A kiadási tranzakció bevételezési tranzakciókkal való kiegyenlítésének részeként lehetősége van frissíteni a főkönyvet, hogy az tükrözze a végrehajtott módosításokat.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201640"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283990"
 ---
 # <a name="inventory-close"></a>Készlet zárása
 
@@ -59,11 +59,10 @@ Számos, a **Zárás és kiigazítás** oldalon elvégezhető művelet a főkön
 
 Ezen feladatok miatt frissített főkönyvek az eredeti készlettranzakcióhoz vannak csatolva. Ha például egy értékesítési rendelés az eredeti értékesítési rendeléshez alkalmazott beszerzési rendeléssel és az eredeti értékesítési rendeléssel van kiegyenlítve. Ez a viselkedés akkor is zajlik, ha a cikkhez rendelt cikkcsoportra vonatkozó főkönyv megváltozott az értékesítési rendelés feladása óta. Miután a készletzárás létrehoz egy kiegyenlítési összeget, a kiegyenlítési összeg akkor is az eredeti főkönyvi számlákra kerül bejegyzésre, és nem pedig a cikkhez rendelt új főkönyvi számlákra. A főkönyv akkor is frissíthető, ha sztorníroz egy készletzárást. 
 
-**Megjegyzések:**
-
--   A készletzárás nem szükséges, ha elszámolóár alapú értékelési módszert alkalmaz.
--   A zárási folyamat futtatása előtt megtekintheti azoknak az elemeknek a listáját, amelyeket nem lehet kiegyenlíteni a frissítés során.
--   A számítástechnikai erőforrások egyenletesebb terhelése érdekében ajánlott a készletzárás csúcsidőn kívüli végrehajtása.
+> [!NOTE] 
+> - A készlet zárása kötelező lépés az összes készletmodell esetében a hónap végi zárási eljárásban. Ez magában foglalja a normál és a mozgóátlag szerinti költségszámítást is. A pénzügyi időszakot nem lehet lezárni addig, amíg az időszak záró dátumával nem történt meg a készlet zárása.
+> - A zárási folyamat futtatása előtt megtekintheti azoknak az elemeknek a listáját, amelyeket nem lehet kiegyenlíteni a frissítés során.
+> - A számítástechnikai erőforrások egyenletesebb terhelése érdekében ajánlott a készletzárás csúcsidőn kívüli végrehajtása.
 
 ## <a name="the-inventory-close-log"></a> A készletzárási napló
 A készletzárási folyamat befejeződése után az üzenetközpontban egy üzenet tájékoztatást nyújt arról, hogy önköltségi egységár esetleg téves, mert egy tranzakciót nem sikerült teljesen kiegyenlíteni. 
@@ -85,7 +84,6 @@ Néhány körülmény között előfordulhat, hogy nem tud semmit sem tenni a fi
 ## <a name="reversing-a-completed-inventory-close"></a>Befejezett készletzárás sztornírozása
 Bizonyos esetekben szükség lehet egy befejezett készletzárás sztornírozására annak érdekében, hogy a kiegyenlítéseket a módosítások előtti állapotába állítsa vissza. Befejezett készletzárás sztornírozása esetén a készletet újra megnyitja a rendszer, hogy lehetővé tegye a készletzárás által lefedett időszakhoz kapcsolódó feladásokat. Kapcsolódó módosításokat a főkönyvben is végrehajthatja. Miután befejezte a szükséges módosításokat, ismét futtathatja a készletzárást az érintett periódusra. 
 
-**Megjegyzés:** Csak a legutóbb lezárt készletidőszakot lehet újra megnyitni. A korábbi készlet zárásának sztornírozása érdekében, először sztorníroznia kell minden egyes készletzárást a legutolsó zárással kezdődően.
-
-
+> [!NOTE] 
+> Csak a legutóbb lezárt készletidőszakot lehet újra megnyitni. A korábbi készlet zárásának sztornírozása érdekében, először sztorníroznia kell minden egyes készletzárást a legutolsó zárással kezdődően.
 

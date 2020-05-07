@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207833"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281509"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -85,6 +85,9 @@ Ebben a példában, a beszerzési igénylés sorainak munkafolyamata a következ
 3.  Az adott sor kérelmezőjének felettese ellenőrzi és jóváhagyja a beszerzési igénylési sorokat. A jóváhagyás eljuthat a kérelmező feletteséhez, ha például a beszerzési igénylési sorban szereplő összeg meghaladja a kérelmező beszerzési igénylési sorokra fordítható kiadási keretét. A vezető jóváhagyhatja vagy elutasíthatja egy vagy több sorát a beszerzési igénylésnek.
 4.  A Marketing részleg vezetője ellenőrzi a beszerzési igénylés sorait mind a poszterekre, mind pedig a pólókra. Az értékesítési részleg vezetője a beszerzési igénylésnek csak a poszterekre vonatkozó sorát ellenőrzi, mivel ez az egyetlen költség, amely az értékesítési részleg költséghelyét terheli majd.
 5.  A pólókra vonatkozó beszerzési igénylési sort csak abban az esetben ellenőrzi és hagyja jóvá a csoportvezető, ha ahhoz csoportvezetői jóváhagyás szükséges, például annak okán, hogy a beszerzési igénylési sor összege meghaladja a részlegvezető jóváhagyási határértékét. A csoportvezetőnek nem kell jóváhagynia a poszterekre vonatkozó beszerzési igénylési sort.
+
+> [!NOTE]
+> A rendszerpénznemet akkor kell beállítani, ha a beszerzési igénylés fejléc-munkafolyamatához az aláírási korlátokhoz kapcsolódó jóváhagyás szükséges.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Beszerzési igénylési munkafolyamat konfigurációja
 Egy beszerzési igénylés ellenőrzésre való eljuttatásához, konfigurálnia kell a beszerzési igénylési munkafolyamatokat. Az Ön által definiált munkafolyamat folyamata szabályozza a cikkeket kérő felhasználó (a kérelmező) és az ellenőrző és jóváhagyó között a munkafolyamatban létrejövő interakciót. A beszerzési igénylési útvonal a munkafolyamat-konfigurációban megadott feltételektől függ. Ezeket a feltételek határozzák meg például, hogy mikor kerül sor a beszerzési igénylés útvonalának meghatározására, illetve mi a címzett felhasználó szerepköre, és melyek a felhasználók által elérhető műveletek.  

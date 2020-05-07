@@ -3,7 +3,7 @@ title: Tartalomblokk modul
 description: Ez a témakör a tartalomblokkmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f91de93ce5ed4813f9f2adbe7678229189b5af2f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: daf9193a7fdc3b57defbb3250ae902f6eb6ee6c4
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025758"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269682"
 ---
 # <a name="content-block-module"></a>Tartalomblokk modul
 
@@ -79,10 +79,10 @@ A következő kép egy funkció elrendezésű tartalomblokkmodul példáját jel
 
 A főképmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a **Sablonok** lehetőséget, és hozzon létre egy **tartalomblokksablon** nevű sablont.
+1. Nyissa meg a **Sablonok** lehetőséget, és hozzon létre egy **Tartalomblokk-sablon** nevű sablont.
 1. Az alapértelmezett lap **Fő** helyén adjon hozzá egy főképmodult.
-1. Adja be a sablont és tegye közzé.
-1. A most létrehozott főképsablon használatával hozzon létre egy **tartalomblokk oldala** nevű lapot.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. A most létrehozott főképsablon használatával hozzon létre egy **Tartalomblokk oldala** nevű lapot.
 1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen a **Modulok kiválasztása** alatt válassza ki a főképmodult, majd kattintson az **OK** gombra.
 1. A bal oldali fastruktúrán válassza ki a tartalomblokkmodult.
@@ -93,8 +93,8 @@ A főképmodul új oldalra való felvételéhez és a kötelező tulajdonságok 
 1. Válassza a **Hivatkozás hozzáadása** lehetőséget.
 1. A **Hivatkozás** párbeszédpanelen adja meg a hivatkozás szövegét, a hivatkozás URL-címét és a hivatkozáshoz tartozó ARIA címkét, majd kattintson az **OK** gombra.
 1. Válassza ki a **Főkép** elrendezést.
-1. Mentse a lapot, és tekintse meg a módosítások előnézetét.
-1. Adja be a lapot, és tegye közzé.
+1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
+1. Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -3,7 +3,7 @@ title: Kategória céloldalának gazdagítása
 description: Ez a témakör a kategória oldalainak bővítésével foglalkozik Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003050"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269843"
 ---
 # <a name="enrich-a-category-landing-page"></a>Kategória céloldalának gazdagítása
 
@@ -39,18 +39,16 @@ Az alapértelmezett kategórialap használata helyett előfordulhat, hogy olyan 
 
 ![Bővített kategória-céloldal](./media/CategoryLandingPages.png)
 
-A szerkesztési eszközben a **Termék** lap a webhelyhez társított csatorna kategóriáinak listáját tartalmazza. Ha a **Bővített** állapot van kiválasztva egy kategórialap számára, akkor a kategórialap bővített. Ellenkező esetben az alapértelmezett kategórialap és tartalom kerül felhasználásra a kategóriához. A kategória nevére kattintva megtekintheti a kategória bővített és nem bővített kategórialapjait.
+A Commerce webhelykészítőben a **Termékrk** lap a webhelyhez társított csatorna kategóriáinak listáját tartalmazza. Ha a **Bővített** állapot van kiválasztva egy kategórialap számára, akkor a kategórialap bővített. Ellenkező esetben az alapértelmezett kategórialap és tartalom kerül felhasználásra a kategóriához. A kategória nevére kattintva megtekintheti a kategória bővített és nem bővített kategórialapjait.
 
 A kategórialap bővítéséhez tegye a következőket.
 
-1. A **Termékek** lapon válassza ki annak a kategóriának a nevét, amelynek bővíteni szeretné a kategória lapját. A kiválasztott kategória alapértelmezett kategórialapja a lapszerkesztőben nyílik meg.
+1. A **Termékek** lapon válassza ki annak a kategóriának a nevét, amelyhez bővíteni szeretné a kategória lapját. A kiválasztott kategória alapértelmezett kategórialapja a lapszerkesztőben nyílik meg.
 2. Válassza a **Kategórialap bővítése** lehetőséget.
 3. Válassza ki a bővített kategórialap sablonját. Ha csak kisebb változtatásokat hajt végre, akkor választhatja az alapértelmezett kategórialapot. Azt is megteheti, hogy kijelöl egy adott kategórialap-sablont. Amikor kiválasztja a sablont, megnyílik a lap szerkesztője, és a kiválasztott sablon kerül felhasználásra a kiválasztott kategória új kategórialapjának létrehozásához. A lap ki van véve az Ön részére, és most elvégezheti a változtatásokat.
 
 > [!NOTE]
-> A kategória-meghatározási adatokat használó modulok a kiválasztott kategória adatait használják.
->
-> A kiválasztott sablon beállításai határozzák meg, hogy milyen változtatásokat lehet végezni.
+> A kategória-meghatározási adatokat használó modulok a kiválasztott kategória adatait használják. A kiválasztott sablon beállításai határozzák meg, hogy milyen változtatásokat lehet végezni.
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -3,7 +3,7 @@ title: Adatvédelmi irányelv oldalának hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy adatvédelmi irányelv oldalt hozzáadni a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001323"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274211"
 ---
 # <a name="add-a-privacy-policy-page"></a>Adatvédelmi irányelv oldalának hozzáadása
 
@@ -54,36 +54,33 @@ Kezdésként a szerkesztőeszközökben keresse meg azt a webhelyet, amelyhez fe
 
 Sablon létrehozásához kövesse az alábbi lépéseket.
 
-1. Lépjen a **Sablonok \> Új sablon** lehetőségre.
-1. Adja meg a sablon nevét, majd kattintson az **OK** gombra.
-1. A sablonban adja hozzá a szükséges modulokat a megfelelő oldalhelyekhez. Útmutatásért vigye az egérmutatót a piros felkiáltójelek fölé.
-
-    A **HTML-fejléc** tárolóhelyen például szükség lehet az **Alapértelmezett külső parancsfájl** modulra.
-
+1. Lépjen a **Sablonok** pontra, majd oldalsablon készítéséhez válassza az **Új** elemet.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **promóciós szalagcím sablon** elemet, majd válassza az **OK** gombot.
+1. A sablonban adja hozzá a szükséges modulokat a megfelelő oldalhelyekhez. Útmutatásért vigye az egérmutatót a piros felkiáltójelek fölé. (A **HTML-fejléc** tárolóhelyen például szükség lehet az **Alapértelmezett külső parancsfájl** modulra.)
 1. Adja hozzá a **Törzs** tárolóhelyen az **Alapértelmezett lap** modult.
 1. Az **Alapértelmezett lap** modul **Fő** helyén adjon hozzá egy **Tartalomgazdag blokk** modult.
 1. A **Tartalomgazdag blokk** modulban adja hozzá a **Tartalomgazdag blokkelem** modult.
-1. Adja be a sablont és tegye közzé.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ### <a name="build-a-privacy-policy-page"></a>Adatvédelmi irányelv oldalának összeállítása
 
 Az adatvédelmi irányelvek oldalának létrehozásához kövesse az alábbi lépéseket.
 
-1. Lépjen a **Lapok \> Új lap** lehetőségre.
-1. Jelölje ki az adatvédelmi irányelv oldalának sablonját.
-1. Adja meg az oldal nevét és az URL-t, majd kattintson az **OK** gombra. 
+1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget az oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédablakban válassza ki az adatvédelmi irányelv oldalának sablonját.
+1. Adja meg az oldal nevét és az oldal URL-t, majd kattintson az **OK** gombra. 
 1. Az új lap **Fő** helyén adjon hozzá egy **Tartalomgazdag blokk** modult.
 1. A **Tartalomgazdag blokk** modulban adja hozzá a **Tartalomgazdag blokkelem** modult.
 1. A **Tartalomgazdag blokk** modul tulajdonságpanelén válassza az **Adatforrás hozzáadása** parancsot, majd válassza a **Rich Text tartalom** menüpontot.
 1. A rich text szerkesztőben adja meg az adatvédelmi irányelvek oldal tartalmát. Szükség esetén bontsa ki a rich text szerkesztőt teljes képernyős módra.
 1. Miután befejezte a tartalom bevitelével, az **Előnézet** lehetőséget kiválasztva tekintheti meg az oldal előnézetét a webböngészőben.
 1. Végezze el az oldal és a modul tulajdonságainak minden hátralévő kiegészítését.
-1. Adja be az adatvédelmi irányelv oldalt, és tegye közzé.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 Az adatvédelmi irányelvek oldal URL-címének közzétételéhez kövesse az alábbi lépéseket.
 
 1. Lépjen az **URL-címek** részhez, és válassza ki az adatvédelmi irányelv oldal URL-címét.
-1. Tegye közzé a kijelölt URL-címet.
+1. A kiválasztott URL-cím közzétételéhez válassza a **közzététel** lehetőséget.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Az adatvédelmi irányelv oldalra mutató hivatkozás létrehozása láblécben
 
@@ -91,15 +88,14 @@ Az adatvédelmi irányelvek oldalra mutató hivatkozást hozzáadhatja egy töre
 
 A hivatkozás hozzáadásához egy lábléctöredékhez tegye a következőket.
 
-1. Lépjen az **Oldaltöredékek \> Új oldaltöredék** elemhez.
-1. Válassza ki a **Lábléc** modult, majd írjon be egy nevet a **Laptöredék neve** mezőbe.
+1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget az oldaltöredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **lábléc** modult.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
 1. A **Lábléc-kategória** bővítőhelyen adja hozzá a **Láblécelem** modult.
 1. A jobb oldali tulajdonságok panelen válassza a **Hivatkozás szövege** lehetőséget.
 1. A **Hivatkozás szövege** párbeszédpanelen adja meg az adatvédelmi irányelv oldal hivatkozásszövegét és hivatkozási célját, majd kattintson az **OK** gombra.
-
-    Az adatvédelmi irányelv URL-címének lekéréséhez lépjen az **Oldalak** részre, nyissa meg az adatvédelmi irányelv oldalát, és másolja az URL-címet a tulajdonságok ablaktáblából.
-
-1. Mentse a töredéket, adja be és tegye közzé.
+1. Az adatvédelmi irányelv URL-címének lekéréséhez lépjen az **Oldalak** részre, nyissa meg az adatvédelmi irányelv oldalát, és másolja az URL-címet a tulajdonságok ablaktáblából.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Megtekintheti a töredék előnézetét, és tesztelheti az adatvédelmi irányelvek oldalra mutató hivatkozást.
 
 A töredék már hivatkozható más webhelyoldalak sablonjaiban. Ha erre a töredékre egy sablon **Lábléc** moduljában hivatkoznak, akkor a hivatkozás minden olyan oldalon megjelenik, amely az adott sablon használatával készült.
@@ -111,3 +107,5 @@ A töredék már hivatkozható más webhelyoldalak sablonjaiban. Ha erre a töre
 [Kisegítő funkciók és lehetőségek](accessibility.md)
 
 [Cookie-k megfelelősége](cookie-compliance.md)
+
+[Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)

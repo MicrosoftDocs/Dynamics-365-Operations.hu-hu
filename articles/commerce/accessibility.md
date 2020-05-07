@@ -3,7 +3,7 @@ title: Kisegítő funkciók és lehetőségek
 description: Ez a témakör a Microsoft Dynamics 365 Commerce különböző verzióiban rendelkezésre álló kisegítő lehetőségekről és segédprogramokról nyújt tájékoztatást.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001760"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274188"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Kisegítő funkciók és lehetőségek
 
@@ -49,7 +49,7 @@ A Dynamics 365 Commerce digitáliseszköz-kezelő rendszer számos kisegítő sz
 
 | Videófunkció               | Leírás |
 |-----------------------------|-------------|
-| Kódolt feliratok (CC)      | A csökkent hallóképességű felhasználók számára segítséget nyújthat a videó hang- és hangleíró elemeihez megjeleníthető szöveg. |
+| Kódolt feliratok (CC)      | A siket vagy csökkent hallóképességű felhasználók számára segítséget nyújthat a videó hang- és hangleíró elemeihez megjeleníthető szöveg |
 | Feliratok                   | Feliratfájlok, amelyek az adott környezet elemeinek vagy a képernyőn megjelenő párbeszéd szövegét mutatják |
 | Hangátiratok           | A kimondott szavak szöveges átirata, amely a videóeszköz hangjából kerül előállításra |
 | Hangos leírás           | Egy nem elsődleges hangcsatorna, amely a képernyőn megjelenő tartalmat vagy környezetet írja le |
@@ -57,7 +57,7 @@ A Dynamics 365 Commerce digitáliseszköz-kezelő rendszer számos kisegítő sz
 
 ### <a name="configure-video-accessibility-elements"></a>A videó kisegítő lehetőségeinek konfigurálása
 
-A Dynamics 365 Commerce alkalmazásban, a webhelye **Eszközök** részében feltölthet videóeszközöket, amelyek külön fájlokkal rendelkeznek a feliratozáshoz, a hagyományos hanghoz és a leíró hanghoz. A kódolt feliratok automatikusan is generálhatók a videóeszköz feltöltésekor.
+A Commerce alkalmazásban, a webhelye **Médiatár** részében feltölthet videóeszközöket, amelyek külön fájlokkal rendelkeznek a feliratozáshoz, a hagyományos hanghoz és a leíró hanghoz. A kódolt feliratok automatikusan is generálhatók a videóeszköz feltöltésekor.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>A kódolt feliratok létrehozása vagy feltöltése videóeszköz feltöltése során
 
@@ -72,7 +72,7 @@ Ha a videó feltöltésekor manuálisan szeretné feltölteni a kódolt felirat 
 Ha a videóhoz hagyományos hangot vagy leíró hangfájlokat szeretne feltölteni, használja az **Eszközfeltöltés** párbeszédpanel fájlválasztóját.
 
 > [!NOTE]
-> A kódolt felirat, a hagyományos hang és a leíró hangeszközök a videóeszköz feltöltése után is hozzáadhatók. Lépjen az **Eszközök** menüpontba, válassza ki a videóeszközt, és vegye ki. Ezután a videóeszköz tulajdonságok panelén töltse fel a további eszközöket.
+> A kódolt felirat, a hagyományos hang és a leíró hangeszközök a videóeszköz feltöltése után is hozzáadhatók. Lépjen az **Médiatár** menüpontba, válassza ki a videóeszközt, és a kivételhez válassza a **Szerkesztés** parancsot. Ezután a videóeszköz tulajdonságok panelén töltse fel a további eszközöket.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>CC és hangátirat fájlok szerkesztése
 
@@ -80,10 +80,10 @@ A CC és a hangátirat fájlokat közvetlenül a szerkesztőeszközből lehet sz
 
 A CC és a hangátirat fájljainak szerkesztéséhez hajtsa végre az alábbi lépéseket.
 
-1. Lépjen az **Eszközök** területre, válassza ki a videóeszközt, majd válassza a **CC/átirat szerkesztése** lehetőséget. Megjelenik a kódolt felirat és az átirata tartalomszerkesztője.
-1. Válassza a **Kivétel** lehetőséget.
+1. Nyissa meg a **Médiatár** elemet, és válassza ki a videoeszköz fájlnevét. Megjelenik a kódolt felirat és az átirata tartalomszerkesztője.
+1. Válassza ki a **Szerkesztés** opciót.
 1. Szerkessze a kódolt felirat vagy az átirat szövegét.
-1. Ha végzett, válassza a **Mentés** lehetőséget, majd válassza **Beadás** lehetőséget.
+1. Ha végzett, válassza a **Mentés** lehetőséget, majd válassza **Szerkesztés befejezése** lehetőséget.
 1. Ha készen áll a közzétételre, válassza a **Közzététel** lehetőséget.
 
 #### <a name="set-the-minimum-age-attribute"></a>A minimális életkor attribútum beállítása
@@ -92,8 +92,8 @@ A **Minimális életkor** metaadat-attribútumot a videóeszközökhöz lehet t�
 
 A videóeszköz **Minimális életkor** attribútumának beállításához kövesse az alábbi lépéseket.
 
-1. Nyissa meg az **Eszközök** elemet, és jelölje ki a videóeszközt.
-1. Válassza a **Kivétel** lehetőséget.
+1. Nyissa meg az **Médiatár** elemet, és jelölje ki a videóeszközt.
+1. Válassza ki a **Szerkesztés** opciót.
 1. A videóeszköz tulajdonságpanelén állítsa be a **Minimális életkor** attribútumot.
 
 > [!NOTE]
@@ -112,3 +112,5 @@ A videóeszköz **Minimális életkor** attribútumának beállításához köve
 [Cookie-k megfelelősége](cookie-compliance.md)
 
 [Adatvédelmi irányelv oldalának hozzáadása](add-privacy-page.md)
+
+[Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172668"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275441"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
@@ -39,7 +39,7 @@ Ez a cikk a Finance and Operations és a Common Data Service alkalmazások köz�
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Egy Finance and Operations alkalmazás nem kapcsolható a Common Data Service szolgáltatáshoz
 
-**A kettás írás beállításához szükséges hitelesítő adatok:** Azure AD bérlői rendszergazda
+**Szükséges szerepkör a Kettős írás beállításához:** Rendszergazda a Finance and Operations alkalmazásokban és Common Data Service alkalmazásban.
 
 A **Hivatkozás beállítása a Common Data Service szolgáltatáshoz** oldal hibáit általában hiányos beállítás vagy jogosultsági problémák okozzák. Győződjön meg arról, hogy a teljes állapot-ellenőrzés megfelelt-e a **Hivatkozás beállítása a Common Data Service szolgáltatáshoz** oldalon, az alábbi ábrán látható módon. A kettős írás nem kapcsolható össze, hacsak a teljes állapot-ellenőrzés meg nem felelt.
 

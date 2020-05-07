@@ -1,9 +1,9 @@
 ---
 title: Bevált eljárások a kuponok Általános napló entitás által történő importálásához
 description: Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 13ea54a6fc4ccdfbcc917b533fe9896d57bcb347
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769610"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281486"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bevált eljárások a kuponok Általános napló entitás által történő importálásához
 
@@ -30,7 +30,7 @@ ms.locfileid: "2769610"
 
 Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
 
-Az Általános napló entitás használatával lehetőség van arra, hogy azokat a bizonylatokat importálja, melyeknél a számla vagy az ellenszámla típusa **Főkönyv, Vevő, Szállító vagy Bank**. A bizonylatot egy sorként lehet bevinni, a **Számla** és az **Ellenszámla** mezők együttes használatával, illetve többsoros bizonylatként, ahol csak a **Számla** mező van használatban (és az **Ellenszámla** mező üresen marad mindegyik sornál). Az Általános naplóentitás nem támogat minden számlatípust. Ehelyett más entitások léteznek olyan esetekre, amikor különböző kombinációjú számlatípusokra van szükség. Például projekttranzakció importálásához használja a projektköltség naplóentitást. Minden entitást úgy terveztek, hogy támogassa a konkrét forgatókönyveket, ami azt jelenti, hogy később további mezők állhatnak rendelkezésre az entitásokban ezeknél forgatókönyveknél, , de nem a másik forgatókönyvben lévő entitások esetén.
+Az Általános napló entitás használatával lehetőség van arra, hogy azokat a bizonylatokat importálja, melyeknél a számla vagy az ellenszámla típusa **Főkönyv**, **Vevő**, **Szállító** vagy **Bank**. A bizonylatot egy sorként lehet bevinni, a **Számla** és az **Ellenszámla** mezők együttes használatával, illetve többsoros bizonylatként, ahol csak a **Számla** mező van használatban (és az **Ellenszámla** mező üresen marad mindegyik sornál). Az Általános naplóentitás nem támogat minden számlatípust. Ehelyett más entitások léteznek olyan esetekre, amikor különböző kombinációjú számlatípusokra van szükség. Például projekttranzakció importálásához használja a projektköltség naplóentitást. Az egyes entitások meghatározott forgatókönyvek támogatáshoz vannak kialakítva. Ez azt jelenti, hogy a fenti forgatókönyvekhez további mezők is elérhetők. Előfordulhat azonban, hogy a további mezők nem érhetők el a különböző esetekhez tartozó entitásokhoz.
 
 ## <a name="setup"></a>Beállítás
 Mielőtt elkezdené az importálást az Általános napló entitás segítségével, ellenőrizze az alábbi beállításokat:
@@ -44,7 +44,7 @@ Az Adatkezelés két beállítása dönti el, hogy hogyan lesz alkalmazva az ala
 - **Halmazalapú feldolgozás** (az adatentitásnál)
 - **Automatikusan generált** (a mező leképezésénél)
 
-A következő szakaszok bemutatják ezeknek a beállításoknak a hatásait, valamint meg is magyarázza, hogy hogyan lesznek generálva a naplók kötegszámai, valamint a bizonylatszámok.
+A következő szakaszok ezeknek a beállításoknak a hatását írják le. Azt is elmagyarázzák, hogyan generálja a rendszer a naplók és a bizonylatszámok kötegszámait.
 
 ### <a name="journal-batch-number"></a>Napló kötegszáma
 
@@ -57,10 +57,10 @@ A következő szakaszok bemutatják ezeknek a beállításoknak a hatásait, val
 
 ### <a name="voucher-number"></a>Bizonylatszám
 
-- Amikor a **Halmazalapú feldolgozás** beállítást használja az Általános napló entitásnál, a bizonylatszámot meg kell adnia az importált fájlban. Az Általános napló minden tranzakciójához hozzá lesz rendelve az a bizonylatszám, ami az importált fájlban lett megadva, még akkor is, ha a számla nincs kiegyenlítve. Ha szeretne halmazalapú feldolgozást használni, ugyanakkor szeretné a bizonylatszámhoz meghatározott számsorozatot használni, akkor használja a 2016. február verzióhoz kiadott gyorsjavítást. A gyorsjavítás száma 3170316, valamint letölthető a Lifestyle Services (LCS) rendszerből. További információkért lásd: [Frissítések letöltése a Lifecycle Services (LCS) rendszerből](../migration-upgrade/download-hotfix-lcs.md).
+- Amikor a **Halmazalapú feldolgozás** beállítást használja az Általános napló entitásnál, a bizonylatszámot meg kell adnia az importált fájlban. Az Általános napló minden tranzakciójához hozzá lesz rendelve az a bizonylatszám, ami az importált fájlban lett megadva, még akkor is, ha a számla nincs kiegyenlítve. Ha szeretne halmazalapú feldolgozást használni, ugyanakkor szeretné a bizonylatszámhoz meghatározott számsorozatot használni, vegye figyelembe a következőket.
 
     - A funkció engedélyezéséhez az importokhoz használt napló nevénél állítsa be a **Számkiosztás feladáskor** lehetőséget **Igen**-re.
-    - A bizonylatszámot továbbra is meg kell határozni az importált fájlban. Ez a szám azonban átmeneti, és a bizonylatszám gyakran felülírja a napló feladásának alkalmával. Meg kell győződnie arról, hogy a napló sorai megfelelően vannak csoportosítva az ideiglenes bizonylatszám alapján. Például a feladás során három sor található, aminek az ideiglenes bizonylatszáma 1. Az említett sorok ideiglenes bizonylatszáma felül lesz írva a sorozatban a következő számra. Ha ez a 3 sor nem kiegyenlített tétel, a bizonylat nem lesz elküldve. Ezután, ha olyan sor lesz felfedezve, aminek az ideiglenes bizonylatszáma 2, akkor ez a szám felül lesz írva a soron következő számmal, és így tovább.
+    - A bizonylatszámot továbbra is meg kell határozni az importált fájlban. Ez a szám azonban átmeneti, és a bizonylatszám felülírja a napló feladásának alkalmával. Győződjön meg arról, hogy a napló sorai megfelelően vannak csoportosítva az ideiglenes bizonylatszám alapján. Például a feladás során három sor található, aminek az ideiglenes bizonylatszáma 1. Az említett sorok ideiglenes bizonylatszáma felül lesz írva a sorozatban a következő számra. Ha ez a három sor nem kiegyenlített tétel, a bizonylat nem lesz feladva. Ezután, ha olyan sor lesz felfedezve, aminek az ideiglenes bizonylatszáma 2, akkor ez a szám felül lesz írva a soron következő számmal a sorozatban, és így tovább.
 
 - Amikor nem a **Halmazalapú feldolgozás** beállítást használja, akkor nem kell megadnia bizonylatszámot az importált fájlnál. A bizonylatszámok importálás során lesznek létrehozva, a napló nevének beállítása alapján (**Csak egy bizonylat**, **Egyenleggel kapcsolatos**, és így tovább). Például, ha a napló nevének meghatározása **Egyenleggel kapcsolatos**, akkor az első sor egy új bizonylatszámot kap. A rendszer ezután megvizsgálja a sort, hogy a tartozás egyenlő-e a jóváírásokkal. Ha létezik ellenszámla a sorhoz, a következő importált sor úgy bizonylatszámot kap. Ha nem létezik ellenszámla, a rendszer megvizsgálja minden újonnan importált sornál, hogy a tartozás egyenlő-e a jóváírásokkal.
 - Ha a **Bizonylatszám** mező értéke **Automatikusan generált**, az importálás nem fog sikerülni. Az **Automatikusan generált** beállítás a **Bizonylatszám** mezőhöz nem támogatott.

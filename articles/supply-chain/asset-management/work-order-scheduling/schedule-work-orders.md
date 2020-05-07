@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275602"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
@@ -102,14 +102,14 @@ Ha a szolgáltatási szint pontszáma „100”-ra nő „5” helyett, akkor az
 
 A munkarendeléseken dolgozó karbantartási munkatársak meghatározásával kapcsolatos besorolási pontszámok számokként vannak beállítva, amelyeket a rendszer hozzáad az egyes karbantartási dolgozók számításaihoz a munkarendelés-ütemezés során. A legmagasabb pontszámmal rendelkező karbantartási dolgozó lesz kiválasztva a munkarendeléshez. A karbantartási dolgozók pontszámainak rövid leírása:
 
-| Karbantartási dolgozó pontszáma       | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Felelős dolgozó | Ha a karbantartási dolgozó felelős dolgozóként van kiválasztva a munkarendeléshez, akkor a program hozzáadja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Felelős karbantartási dolgozói csoport | Ha a karbantartási dolgozó tagja a felelős dolgozók csoportjának, akkor a program hozzáadja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Preferált karbantartási dolgozó         | Ha a dolgozó preferált karbantartási dolgozóként van kiválasztva az eszközhöz, akkor a program hozzáadja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Preferált karbantartási dolgozói csoport   | Ha a dolgozó a preferált karbantartási dolgozók csoportjának tagja az eszköznél, akkor a program hozzáadja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Helyszín                 | Amennyiben a cég munkavégzési helyszíneket használ, a karbantartási dolgozók teljes pontszámot kapnak, ha az eszközhöz tartozó munkavégzési helyszínen vannak. Ha az eszköz munkavégzési helyszíne rendelkezik fölérendelt helyszínnel, akkor a kérdéses munkavégzési helyszínen lévő dolgozók a pontszám felét kapják meg. Ha az a helyszín is rendelkezik fölérendelt helyszínnel, a kérdéses helyszínen lévő dolgozók a pontszám harmadát kapják meg. Ha az a hely is rendelkezik fölérendelt helyszínnel, a kérdéses helyszínen lévő dolgozók a pontszám negyedét kapják meg – és így tovább. Ha a cég helyeket használ az eszközökhöz (amit nem javaslunk), a rendszer a helyet, a területet és a zónát használja a hely pontszámainak kiszámításához. Ha a dolgozó az eszközzel összekapcsolt helyen, területen és zónában van, teljes pontszámot kap. Ha a dolgozó helye csak a hellyel és a területtel egyezik, a karbantartási dolgozó a teljes pontszám 2/3-át kapja meg értékelési pontszámként. Ha a karbantartási dolgozó helye csak a hellyel egyezik, a karbantartási dolgozó a teljes pontszám 1/3-át kapja meg értékelési pontszámként. |
-| A dolgozó kezdési dátuma               | Minden olyan dátum esetében, ahol az ütemezett kezdő dátum későbbi a várt kezdő dátumnál, a rendszer kivonja a pontszámot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Karbantartási dolgozó pontszáma| Leírás |
+|---|---|
+| Felelős dolgozó | Ha a karbantartási dolgozó felelős dolgozóként van kiválasztva a munkarendeléshez, akkor a program hozzáadja a pontszámot. |
+| Felelős karbantartási dolgozói csoport | Ha a karbantartási dolgozó tagja a felelős dolgozók csoportjának, akkor a program hozzáadja a pontszámot. |
+| Preferált karbantartási dolgozó         | Ha a dolgozó preferált karbantartási dolgozóként van kiválasztva az eszközhöz, akkor a program hozzáadja a pontszámot. |
+| Preferált karbantartási dolgozói csoport   | Ha a dolgozó a preferált karbantartási dolgozók csoportjának tagja az eszköznél, akkor a program hozzáadja a pontszámot.  |
+| Helyszín  | Amennyiben a cég munkavégzési helyszíneket használ, a karbantartási dolgozók teljes pontszámot kapnak, ha az eszközhöz tartozó munkavégzési helyszínen vannak. Ha az eszköz munkavégzési helyszíne rendelkezik fölérendelt helyszínnel, akkor a kérdéses munkavégzési helyszínen lévő dolgozók a pontszám felét kapják meg. Ha az a helyszín is rendelkezik fölérendelt helyszínnel, a kérdéses helyszínen lévő dolgozók a pontszám harmadát kapják meg. Ha az a hely is rendelkezik fölérendelt helyszínnel, a kérdéses helyszínen lévő dolgozók a pontszám negyedét kapják meg – és így tovább. Ha a cég helyeket használ az eszközökhöz (amit nem javaslunk), a rendszer a helyet, a területet és a zónát használja a hely pontszámainak kiszámításához. Ha a dolgozó az eszközzel összekapcsolt helyen, területen és zónában van, teljes pontszámot kap. Ha a dolgozó helye csak a hellyel és a területtel egyezik, a karbantartási dolgozó a teljes pontszám 2/3-át kapja meg értékelési pontszámként. Ha a karbantartási dolgozó helye csak a hellyel egyezik, a karbantartási dolgozó a teljes pontszám 1/3-át kapja meg értékelési pontszámként. |
+| A dolgozó kezdési dátuma  | Minden olyan dátum esetében, ahol az ütemezett kezdő dátum későbbi a várt kezdő dátumnál, a rendszer kivonja a pontszámot.  |
 
 >[!NOTE]
 >Ha egy pontszám „0” értékre van állítva, akkor az a pontszám nem lesz kiszámítva. Ez akkor lehet hasznos, ha például nem kívánja szerepeltetni egy felelős dolgozót az ütemezésben.
@@ -120,3 +120,21 @@ A szakértelmekkel és bizonyítványokkal kapcsolatos követelmények beállít
 
 A karbantartási feladattípusok és a karbantartási szakterületek a munkarendelési feladatokban választhatók ki. Ha egy karbantartási feladattípushoz vagy szakterülethez szakértelmek vagy bizonyítványok vannak kiválasztva, és ezt a karbantartási feladattípust vagy szakterületet használják egy munkarendelésben, akkor a program csak a megfelelő szakértelemmel és bizonyítvánnyal rendelkező karbantartási dolgozókat ütemezi a munkarendelésen végzendő munkához.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Munka az ütemezett munkarendelésekkel Gantt-diagram használatával
+
+Az **Ütemezett munkarendelésekkel Gantt-diagramja** egy grafikus felületet biztosít, amelyen megtekintheti és újraütemezheti a munkarendeléseket.
+
+A Gantt-diagram megtekintése és használata:
+
+1. Ugorjon az **Eszközkezelés> Munkarendelések> Ütemezett munkarendelések Gantt-diagramja** lehetőségre.
+
+1. A **Beállítások** szakasz legördülő listái és mezői segítségével beállíthatja, hogy a Gantt-diagramon melyik munkavégzési helyszínt, időtartam és időskálát jelenítse meg a program.
+
+1. Válassza az **Alkalmazás** lehetőséget.
+
+    - A Gantt-diagram frissül, és a beállításoknak megfelelő ütemezett munkarendeléseket jeleníti meg. Minden munkarendelést egy kék téglalap jelöl.
+    - A megjelenített munkarendelés újraütemezéséhez válassza ki azt, majd húzza át a megfelelő új dátumra és időpontra.
+
+1. Ha módosításokat hajtott végre, a műveleti ablaktáblán válassza a **Mentés** parancsot a mentéshez.

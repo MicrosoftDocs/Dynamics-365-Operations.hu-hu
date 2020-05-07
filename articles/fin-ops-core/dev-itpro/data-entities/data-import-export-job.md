@@ -3,7 +3,7 @@ title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124612"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278898"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -151,6 +151,18 @@ A végrehajtás részletei megmutatják a feladat által feldolgozott minden egy
 Letöltheti az előkészítési adatokat fájlban az exportálási feladatokhoz, vagy letöltheti csomagként az importálási és exportálási feladatokhoz.
 
 A végrehajtás részleteknél a végrehajtási napló is megnyitható.
+
+## <a name="parallel-imports"></a>Párhuzamos importálások
+Az adatok importálásának gyorsítása érdekében engedélyezheti egy fájl importálásának párhuzamos feldolgozását, ha az entitás támogatja a párhuzamos importálást. Egy entitás párhuzamos importálásának konfigurálásához a következő lépéseket kell követnie.
+
+1. Ugrás a **Rendszerfelügyelet \> Munkaterületek \> Adatkezelés** elemre.
+2. Az **Importálás és exportálás** szakaszban válassza ki a **keretrendszer paraméterei** lapot az **Adatimportálási és-exportálási keretrendszer paraméterei** oldal megnyitásához.
+3. Az **entitás beállításai** lap **entitás-végrehajtási paraméterek konfigurálása** elemét választva nyissa meg az **entitásimportálás végrehajtási paraméterei** oldalt.
+4. A következő mezők beállításával konfigurálhatja az entitások párhuzamos importálását:
+
+    - Az **Entitás** mezőben válassza ki az entitást.
+    - Az **Importálási küszöbérték rekordszáma** mezőben adja meg az importálás rekordjainak küszöbszámát. Ez határozza meg a szál által feldolgozandó rekordok számát. Ha egy fájl 10 000 rekorddal rendelkezik, akkor ha a rekordok száma 2500 és a feladat száma 4, akkor minden szál 2500 rekordot dolgoz fel.
+    - Az **importálási feladat száma** mezőbe írja be az importálási feladatok darabszámát. Ez nem haladhatja meg a kötegelt feldolgozásra engedélyezett maximális kötegszálak számát a **Rendszerfelügyelet \> Kiszolgáló konfigurációja** pontban.
 
 ## <a name="clean-up-the-staging-tables"></a>Az előkészítési táblák megtisztítása
 A 29-es platformfrissítéstől kezdődően ez a funkció elavult. Ezt lecseréli az alább ismertetett, munkaelőzmények tisztítási funkció új verziója.

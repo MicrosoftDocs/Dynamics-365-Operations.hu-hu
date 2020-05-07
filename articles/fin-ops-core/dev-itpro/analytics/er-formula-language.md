@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042711"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284356"
 ---
 # <a name="electronic-reporting-formula-language"></a>Elektronikus jelentéskészítés képletének nyelve
 
 [!include [banner](../includes/banner.md)]
 
-Az elektronikus jelentés (ER) hatékony adatátalakítási élményt nyújt. Az ER képlettervezőnél a szükséges adatmanipulációk kifejezésére használt nyelv hasonlít a Microsoft Excel képletek nyelvére.
+Az elektronikus jelentés (ER) hatékony adatátalakítási élményt nyújt. Az [ER képlettervezőnél](general-electronic-reporting-formula-designer.md) a szükséges adatmanipulációk kifejezésére használt nyelv hasonlít a Microsoft Excel képletek nyelvére.
 
 ## <a name="basic-syntax"></a>Alap szintaxis
 
@@ -41,13 +41,13 @@ ER kifejezések bármennyi vagy az összes elemet tartalmazhatja a következő e
 - [Útvonalak](#Paths)
 - [Funkciók](#Functions)
 
-## <a name="Constants">Állandók</a>
+## <a name=""></a><a name="Constants">Állandók</a>
 
 Amikor a kifejezéseket tervezi, használhat szöveges és a numerikus állandókat (nem számított értékeket). Például a `VALUE ("100") + 20` kifejezés **20** numerikus konstanst és **„100”** szövegkonstanst használ és megjeleníti a **120** numerikus értéket.
 
 Az ER képletszerkesztő támogatja a feloldó szakaszokat. Így meghatározhat olyan kifejezés-karakterláncot, amelyet eltérően kell kezelni. A `"Leo Tolstoy ""War and Peace"" Volume 1"` kifejezés például a következő karaktersorozatot adja eredményül: **Leo Tolsztoj „Háború és béke” 1. kötet**.
 
-## <a name="Operators">Operátorok</a>
+## <a name=""></a><a name="Operators">Operátorok</a>
 
 Az alábbi táblázat bemutatja az aritmetikai operátorokat, amelyek segítségével elvégezheti a matematikai alapműveleteket, mint például összeadás, kivonás, szorzás és osztás.
 
@@ -91,7 +91,7 @@ Fontos a sorrend, amelyben az összetett kifejezés egy része kiértékelésre 
 
 Ha egy kifejezés olyan több egymást követő operátort tartalmaz, amelyek ugyanolyan elsőbbséget élveznek, akkor ezen műveletek kiértékelése balról jobbra történik. Például az `1 + 6 / 2 \* 3 > 5` kifejezés **igaz** választ jelenít meg. Ajánlatos a zárójelek használata a kifejezésekben található műveletek kívánt sorrendjének explicit módon történő jelzéséhez, illetve a kifejezések könnyebb olvasása és kezelése érdekében.
 
-## <a name="References">Hivatkozások</a>
+## <a name=""></a><a name="References">Hivatkozások</a>
 
 Egy kifejezés tervezése során elérhető jelenlegi ER komponens összes adatforrását elnevezett hivatkozásként lehet használni. A jelenlegi ER-komponens modell-hozzárendelés vagy formátum lehet. Például az aktuális ER modell-leképezés tartalmazza a **ReportingDate** adatforrást, amely megjeleníti a *DateTime* adattípus értékét. Annak érdekében, hogy a létrejövő dokumentumban megfelelően formázott értéket kapjon, a következőképpen hivatkozhat a kifejezésben szereplő adatforrásokra: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
@@ -112,7 +112,7 @@ Az ilyen típusú metódusok paramétereinek átadott értékek átadásának m�
 - Csak állandók adhatók át ilyen típusú metódusoknak. Az állandók értékeit a tervezés során kell meghatározni.
 - Az ilyen típusú paraméterekhez csak egyszerű (alap) adattípusok támogatottak. Az egyszerű adattípusok: *Egész*, *Valós*, *Logikai* és *Karakterlánc*.
 
-## <a name="Paths">Útvonalak</a>
+## <a name=""></a><a name="Paths">Útvonalak</a>
 
 Amikor a kifejezés egy adatforrásra hivatkozik, az útvonal meghatározása segítségével kiválaszthatja az adatforrás egy megadott egyszerű elemének kiválasztásához. A pont karaktert (.) a strukturált adatforrás egyes elemeinek elkülönítésére használják. Például az aktuális ER modell-leképezés tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámításához a következő kifejezést tervezhetjük: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. A kifejezésben szereplő `InvoiceTransactions.AmountDebit` szerkezet a *Rekordlista* **InvoiceTransactions** adatforrásának **AmountDebit** mezőjének elérésére szolgáló útvonal.
 
@@ -130,7 +130,7 @@ Az abszolút elérési út maradék része is megjelenik az [ER képletszerkeszt
 
 ![A teljes elérési út hátralévő része az ER képlettervező lapon](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Funkciók</a>
+## <a name=""></a><a name="Functions">Funkciók</a>
 
 A beépített ER függvények ER kifejezésekben használhatók. A kifejezéskörnyezet (aktuális ER modell-leképezés vagy ER formátum) minden adatforrása használható függvénymeghívási paraméterként a függvénymeghívási argumentumok listájával összhangban. Az állandók szintén használhatók függvények meghívásának paraméterként. Például az aktuális ER modell-leképezés tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámításához, megtervezheti azokat a következő kifejezéseket, amelyek az ER kerekítési funkciót használják: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 

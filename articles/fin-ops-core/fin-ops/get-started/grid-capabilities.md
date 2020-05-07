@@ -3,7 +3,7 @@ title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260460"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284404"
 ---
 # <a name="grid-capabilities"></a>Rács funkciói
 
@@ -86,6 +86,23 @@ Ha egy másik oszlophoz jelöli ki a **Csoportosítás az oszlop szerint** lehet
 
 Ha vissza szeretné vonni a csoportosítást egy rácsban, kattintson a jobb gombbal a csoportosítási oszlopra, és válassza a **Szétválasztás** lehetőséget.  
 
+## <a name="typing-ahead-of-the-system"></a>A rendszer előtt történő gépelés
+Számos üzleti helyzetben rendkívül fontos az adatok gyors beviteli képessége a rendszerbe. Az új rács vezérlő bevezetése előtt a felhasználók csak az aktuális sorban módosíthatják az adatokat. Mielőtt új sort tudnak létrehozni vagy másik sorra váltson át, kénytelenek voltak megvárni, hogy a rendszer sikeresen érvényesítse a változtatásokat. Annak az időtartamnak a csökkentése érdekében, amit a felhasználók az ilyen ellenőrzések befejezésére várnak, valamint a felhasználói hatékonyság javítása érdekében az új rács ezeket az ellenőrzéseket helyesbíti, hogy azok aszinkronban legyenek. Ennek megfelelően a felhasználó más sorokba is átléphet a változtatásokhoz, amíg az előző sor érvényesítése függőben van. 
+
+Ennek az új viselkedésnek a támogatásához egy új oszlop jelenik meg a sor állapotához, amikor a rács szerkesztési módban van. Ez az oszlop a következő állapotok egyikét jelzi:
+
+- **Üres** – A hiányzó állapot képe azt jelzi, hogy a sort a rendszer sikeresen mentette.
+- **Feldolgozás függőben** – Ez az állapot azt jelzi, hogy a sorban szereplő változtatásokat a kiszolgáló még nem mentette, de a feldolgozás alatt álló változtatások várólistáján szerepelnek. A rácson kívüli művelet előtt meg kell várnia minden függő módosítás feldolgozását. Ezenkívül a sorokban található szöveg dőlt betűvel jelenik meg a sorok nem mentett állapotának jelzésére. 
+- **Ellenőrzési figyelmeztetés** – Ez az állapot azt jelzi, hogy a rendszer néhány ellenőrzési hiba miatt nem tudja menteni a sorban szereplő változtatásokat. A régi rácsban a program azonnal visszakényszerítette a sort a kérdés azonnali kijavításához. Az új rácsban azonban értesítést kap, hogy a rendszer ellenőrzési hibát észlelt, de eldöntheti, hogy ki szeretné-e javítani a sorban szereplő problémákat. Ha készen áll a hiba elhárítására, a fókuszt manuálisan is áthelyezheti a sorra. Másik megoldásként kiválaszthatja a **Probléma kijavítása** műveletet. Ez a művelet azonnal visszahelyezi a fókuszt a hibát tartalmazó sorra, és lehetővé teszi a szerkesztést a rácson belül vagy azon kívül. Ne felejtse el, hogy amíg az ellenőrzési figyelmeztetést megoldják, az ezt követő függőben levő sorok feldolgozása le van állítva. 
+- **Szüneteltetve** – Ez az állapot azt jelzi, hogy a kiszolgáló a feldolgozását szünetelteti, mert a sor ellenőrzése olyan előugró párbeszédpanelt jelenít meg, amelyen felhasználói bevitel szükséges. Mivel a felhasználó más sorban is megadhat adatokat, az előugró párbeszédpanel nem jelenik meg azonnal a felhasználó számára. Helyette akkor jelenik meg, amikor a felhasználó a feldolgozás folytatása mellett dönt. Ezt az állapotot olyan értesítés kíséri, amely tájékoztatja a felhasználót a helyzetről. Az értesítés tartalmaz egy **Feldolgozás folytatása** műveletet, amely elindítja a felugró párbeszédpanelt.  
+    
+Amikor a felhasználók az előtt a hely előtt visznek be adatokat, ahol a kiszolgáló feldolgoz, alacsonyabb szintű adatbeviteli élményt tapasztalhatnak, például a keresések hiánya, a vezérlői szintű ellenőrzés és az alapértlemezett értékek bevitele. Ha meg szeretne találni egy értéket a legördülő listáról, akkor arra kell várnia, hogy a kiszolgáló az aktuális sorhoz felzárkózzon. Amikor a kiszolgáló dolgozza fel a sort, akkor az vezérlői szint ellenőrzése és az alapértelmezett értékek bevitele is megtörténik.   
+
+### <a name="pasting-from-excel"></a>Beillesztés az Excel programból
+A felhasználók mindig képesek voltak a Finance and Operations alkalmazások rácsaiból az Excel programba adatokat exportálni az **Exportálás az Excel programba** mechanizmussal. Az adatok rendszert megelőzően való megadásának képessége lehetővé teszi az új rács számára, hogy támogassa a táblák másolását Excelből, és közvetlenül a Finance and Operations alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
+
+- Ha a másolt tábla oszlopainak száma meghaladja a rácsban maradó oszlopok számát, a beillesztés helyétől kezdve, a felhasználó értesítést kap arról, hogy a további oszlopok figyelmen kívül lettek hagyva. 
+- Ha a másolt tábla sorainak száma meghaladja a rács sorainak számát, a beillesztés helyétől kezdve a meglévő cellák felülíródnak, és a másolt táblából származó további sorok a rács alján új sorokként jelennek meg. 
 
 ## <a name="evaluating-math-expressions"></a>Matematikai kifejezések kiértékelése
 A hatékonyság javításaként a felhasználók matematikai képleteket írhatnak be a rács numerikus celláiba. A számítást nem kell a rendszeren kívüli alkalmazásban végezniük. Ha például a **=15\*4** értéket adja meg, majd a **Tab** billentyű lenyomásával kilép a mezőből, akkor a rendszer kiértékeli a kifejezést, majd a mezőbe a **60** értéket menti.
@@ -110,3 +127,64 @@ Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen 
 4.  **Engedélyezze a funkciót**: keresse meg az **Új rácsvezérlő** funkciót a funkciólistában, majd válassza ki az **Engedélyezés most** lehetőséget a részleteket tartalmazó ablaktáblán. Ne feledje, hogy a böngésző frissítése szükséges. 
 
 Minden további felhasználói munkamenet engedélyezett új rácsvezérlővel indul.
+
+## <a name="known-issues"></a>Ismert problémák
+Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, miközben a funkció egy előzetes állapotban van.  
+
+### <a name="open-issues"></a>Nyitott problémák
+
+- A több oszloposként megjelenített kártyák listája most egyetlen hasábként jelenik meg.
+- A csoportosított listák nem csoportként vagy külön oszlopként jelennek meg.
+- Képek esetében nem jelennek meg az eszközleírások.
+- A rácsvonalak megjelenítése nem minden mezőtípus esetében használható.
+- Időszakosan nem lehet a rácson kívülre kattintani, miután több sort választott ki.
+- Az **Ellenőrzés** és **Másolás** Feladatrögzítő beállítások nem elérhetők a dátum/szám vezérlőkhöz.
+
+### <a name="fixed-as-part-of-10012"></a>10.0.12 részeként javítva
+
+> [!Note]
+> A program a következő adatokat jeleníti meg, hogy ennek megfelelően tervezzen. A 10.0.12-es verzió célzott kiadásaival kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-ops/get-started/public-preview-releases.md) oldalon találhat.
+
+- [429126. probléma] A rácson kívüli vezérlőelemek nem frissülnek a legutóbbi rekord törlése után.
+- [430575. probléma] A táblához tartozó vezérlőelemek nem frissítik a megjelenített cikkek tartalmát.
+- [KB 4558570] A cikkek a rekord törlése után is megjelennek a lapon.
+- [KB 4558584] A negatív számok nem megfelelően jelennek meg.
+- [KB 4558575] A mezők nem frissülnek sor módosítása után / Rácsfeldolgozás elakad a sor törlése után.
+- [436980. probléma] Az **ExtendedStyle** listapanellel társított formázás nincs alkalmazva.
+- [KB 4558573] Az ellenőrzési hibák nem javíthatók, ha a szükséges változtatás a rácson kívül esik.
+    
+### <a name="quality-update-for-10011"></a>Minőségi frissítés a 10.0.11-es verzióhoz
+
+- [KB 4558381] A negatív számok nem megfelelően jelennek meg, / A felhasználók néha elakadnak az ellenőrzési problémák előfordulásakor.
+
+### <a name="fixed-as-part-of-10011"></a>10.0.11 részeként javítva
+
+- [KB 4558374] Nem hozhatók létre olyan rekordok, amelyeknél szükséges a polimorf választó párbeszédpanel.
+- [KB 4558382] Váratlan ügyfélhibák történnek.
+- [KB 4558375] A súgó szövege nem jelenik meg az új rács oszlopaiban.
+- [KB 4558376] A listapanelek rácsa nem a megfelelő magasságban jelenik meg az Internet Explorerben.
+- [KB 4558377] A kombinált mezőoszlopok, amelyek szélessége **SizeToAvailable**, nem jelennek meg bizonyos oldalak.
+- [KB 4549711] A fizetési javaslat sorait nem lehet helyesen eltávolítani, miután az új rácsvezérlő engedélyezve van.
+- [KB 4558378] A részletező időnként nem megfelelő rekordot nyit meg.
+- [KB 4558379] Hiba történik, amikor keresések nyílnak olyan helyen, ahol **ReplaceOnLookup**=**No**.
+- [KB 4558380] A rácsban rendelkezésre álló hely nem töltődik be közvetlenül a lap egy részének becsukása után.
+- [432458. probléma] Az üres vagy ismétlődő sorok néhány alárendelt gyűjtemény elején láthatók.
+- [KB 4558587] A helyettesítési mezőkhöz kombinált mezőket tartalmazó referenciacsoportok nem jelenítenek meg értékeket.
+
+### <a name="fixed-as-part-of-10010"></a>10.0.10 részeként javítva
+
+- [414301. probléma] Az előző sorok néhány adata eltűnik az új sorok létrehozásakor.
+- [KB 4550367] Az időértékek formátuma nem megfelelő.
+- [KB 4549734] Az aktív sorokat a rendszer nem kezeli megjelölve, ha a jelölési oszlop el van rejtve.
+- [417044. hiba] A lista stílusú rácsokhoz nincs üres rácsüzenet.
+- [KB 4558367] A szöveg kiválasztása nem következetes a sorok módosításakor.
+- [KB 4558372] Az új rács feldolgozási módban megakad, ha a beillesztett tartalom oszlopainak száma meghaladja a rács maradék oszlopainak számát.
+- [KB 4558368] A billentyűzeten keresztüli többszörös kiválasztás engedélyezve van egyetlen kiválasztás esetében is.
+- [KB 4539058] Bizonyos rácsok (általában a gyorslapokon) néha nem jelennek meg (de a kicsinyítéskor megjelennek).
+- [KB 4558369] Az állapotjelző képek eltűnnek a hierarchikus rácsban.
+- [KB 4558370] Új sor nem görgethető nézetbe.
+- [KB 4549796] Az értékek nem szerkeszthetők a rácsban, amikor a nézet módban van.
+
+### <a name="quality-update-for-1009platform-update-33"></a>Minőségi frissítés a 10.0.9./Platform update 33-hoz
+
+- [KB 4550367] Az időértékek formátuma nem megfelelő.

@@ -3,7 +3,7 @@ title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249060"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262649"
 ---
 # <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
 
@@ -83,13 +83,15 @@ Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasz
 ## <a name="report-deletions-and-expirations"></a>Jelentés törlése és lejárata
 A jelentést generáló felhasználók törölhetik saját jelentéseiket. A **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók törölhetik mások jelentéseit. 
 
-A 10.0.7 kiadástól kezdve bevezetésre került a lejárati dátumok fogalma. Az új kötelező funkció engedélyezve lesz a funkciókezelési munkaterületen. Ez a funkció a következő változásokat tartalmazza:
+A 10.0.8-as verzióban bevezettük a lejárati dátumok koncepcióját. Egy új kötelező funkciót engedélyezük az **Összes** oldalon a funkciókezelési munkaterületen. A **Pénzügyi jelentés megőrzésével kapcsolatos irányelvek** funkcióban a következő módosítások történtek:
 * Az újonnan létrehozott jelentések automatikusan meg lesznek jelölve a létrehozásuktól számított 90 napos lejárati dátummal
 * A funkció telepítése előttről származó meglévő jelentések mindegyike 90 napos lejárati időszakot kap. A dátum egy rövid időre üresen jelenhet meg, amíg a pénzügyi jelentéskészítési szolgáltatás fut, a jelentés létrejön, és a szolgáltatás frissíti az üres lejárati dátummal rendelkező meglévő jelentéseket. 
-* Ehhez a funkcióhoz a **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók férhetnek hozzá. A **Pénzügyi jelentések lejáratának karbantartása** jogosultságot kapott, **Pénzügyi jelentések karbantartása** feladattal rendelkező felhasználók mindegyike szintén rendelkezik a lejárati idő módosításának képességével. Jelenleg két megőrzési lehetőség áll rendelkezésre - 
-  * 90 napos lejárat
-  * Annak beállítása, hogy a jelentés soha ne járjon le
-
+* Ehhez a funkcióhoz a **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók férhetnek hozzá. A **Pénzügyi jelentések lejáratának karbantartása** jogosultságot kapott, **Pénzügyi jelentések karbantartása** feladattal rendelkező felhasználók mindegyike szintén rendelkezik a lejárati idő módosításának képességével. Jelenleg két megőrzési lehetőség áll rendelkezésre. 
+  * 90 napos lejárat.
+  * Annak beállítása, hogy a jelentés soha ne járjon le.
+  
+A további lehetőségeket jövőbeli funkciók esetén figyelembe vesszük majd. A 90 nap lejárata lesz az alapértelmezett érték, és a megfelelő engedélyekkel rendelkező felhasználók felülírhatják az alapértelmezett beállítást a **Pénzügyi jelentések** listaoldalán.    
+  
 Egy például 90 napos lejárat kiválasztása az aktuális naptól számítva 90 napot biztosít, amely eltérő viselkedés, mint a jelentéskészítés során beállított, az eredeti létrehozási dátumtól számított 90 napos határidő. 
 
 ## <a name="default-reports"></a>Alapértelmezett jelentések
