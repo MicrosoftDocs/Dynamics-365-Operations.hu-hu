@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 34c10e38400a72a670a93f2a72d0aa7a4aed561a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172760"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275533"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások **kettős írás** modullal kapcsolatos problémái.
 
@@ -41,17 +39,14 @@ Ez a cikk a Finance and Operations és a Common Data Service alkalmazások köz�
 
 Ha nem tudja megnyitni a **Kettős írás** lapot a **Kettős írás** csempe kiválasztásával az **Adatkezelés** munkaterületen, az adatintegrációs szolgáltatás valószínűleg üzemen kívül van. Hozzon létre egy támogató jegyet az adatintegrációs szolgáltatás újraindításának kérelmezéséhez.
 
-## <a name="error-when-you-try-to-create-a-new-entity-mapping"></a>Hiba történt, amikor új entitásleképezést próbál létrehozni
+## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Hiba történt, amikor új entitásleképezést próbál létrehozni
 
-**A hiba javításához szükséges hitelesítő adatok:** Azure AD bérlői rendszergazda
+**A hiba javításához szükséges hitelesítő adatok:** ugyanaz a felhasználó, aki a kettős írást telepítette.
 
-Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új entitást próbál konfigurálni a kettős íráshoz:
+Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új entitást próbál konfigurálni a kettős íráshoz. A kettős írási kapcsolatot beállító felhasználó hozhatja csak létre a leképezést.
 
 *A válasz állapotkódja sikertelenséget jelez: 401 (Nem engedélyezett)*
 
-Ez a hiba azért fordul elő, mert új entitásleképezést csak Azure AD bérlői rendszergazda adhat hozzá.
-
-A hiba javításához jelentkezzen be a Finance and Operations alkalmazásba Azure AD rendszergazda bérlőként. El kell látogatnia a web.PowerApps.com oldalra is, és újra érvényesíteni a kapcsolatot.
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Hiba a kettős írás felhasználói felületének megnyitásakor
 
@@ -63,13 +58,13 @@ A hiba elhárításához jelentkezzen be egy InPrivate-ablakon a Microsoft Edge-
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-entity-mapping"></a>Hiba, amikor a környezetet összekapcsolja kettős íráshoz, vagy új entitásleképezést ad hozzá
 
-**A hiba javításához szükséges hitelesítő adatok:** Azure AD bérlői rendszergazda
+**Szükséges szerepkör a hiba javításához:** Rendszergazda a Finance and Operations alkalmazásokban és Common Data Service alkalmazásban.
 
 A következő hiba merülhet fel összekapcsoláskor vagy leképezések létrehozásakor:
 
 *A válasz állapotkódja sikertelenséget jelez: 403 (tokenexchange).<br> Munkamenet-azonosító: \<az Ön munkamenet-azonosítója\><br> Gyökérszintű tevékenységazonosító: \<az Ön gyökérszintű tevékenységazonosítója\>*
 
-Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. A környezetek csatolásához és az új entitás-hozzárendelések hozzáadásához egy Azure AD bérlői rendszergazdai fiókot kell használnia. A telepítés után azonban nem rendszergazdai fiókkal lehet ellenőrizni az állapotot, és szerkesztheti a leképezéseket.
+Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. Ez a hiba akkor is előfordulhat, ha a Common Data Service-környezet alaphelyzetbe állítása a kettős írás csatolásának felbontása nélkül történt. Minden olyan felhasználó, aki rendszergazdai szerepkörrel rendelkezik a Finance and Operations alkalmazásokban és a Common Data Service szolgáltatásban is, összekapcsolhatja a környezeteket. Csak a kettős írás kapcsolatot beállító felhasználó adhat hozzá új entitásleképezéseket. A telepítés után bármely rendszergazdai szerepkörrel rendelkező felhasználó nyomon követheti az állapotot, és szerkesztheti a leképezéseket.
 
 ## <a name="error-when-you-stop-the-entity-mapping"></a>Hiba az entitásleképezés leállításakor
 
@@ -80,3 +75,14 @@ A következő hibaüzenetek jelenhetnek meg az entitásleképezések leállítá
 Ez a hiba akkor fordul elő, ha a csatolt Common Data Service-környezet nem érhető el.
 
 A hiba elhárításához hozzon létre egy jegyet az adatintegrációs csoporthoz. A hálózati nyomkövetést csatolja annak érdekében, hogy az adatintegrációs csoport megjelölje a leképezéseket a háttérben **nem futóként**.
+
+## <a name="error-while-trying-to-start-an-entity-mapping"></a>Hiba történt egy entitásleképezés indításának kísérlete közben
+
+A következőhöz hasonlító hibaüzenet jelenhet meg, amikor a leképezés állapotát **Futás** értékre akarja állítani:
+
+*A kezdeti adatszinkronizálás nem hajtható végre. Hiba: kettős írási hiba – a beépülő modul regiszrtálása nem sikerült: Nem sikerült a kettős írási keresési metaadat létrehozása. Hiba objektumreferenciája nincs beállítva egy objektum példányára.*
+
+A hiba javítása a hiba okának függvénye:
+
++ Ha a leképezés függő leképezésekkel rendelkezik, akkor győződjön meg róla, hogy engedélyezi az entitásleképezés függő leképezését.
++ A leképezésből valószínűleg hiányzik a forrás- vagy célmezők. Ha hiányzik egy mező a Finance and Operations alkalmazásban, akkor kövesse a következő szakasz lépéseit: [Hiányzó entitásmezők problémája leképezésekben](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Ha hiányzik egy mező a Common Data Service szolgáltatásból, kattintson az **Entitások frissítése** gombra a leképezésen, így a mezőket a rendzser automatikusan visszatölti a leképezésbe.

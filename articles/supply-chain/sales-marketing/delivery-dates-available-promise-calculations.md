@@ -1,9 +1,9 @@
 ---
 title: Rendelési ígéretek
-description: A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
+description: A témakör a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210054"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270027"
 ---
 # <a name="order-promising"></a>Rendelési ígéretek
 
 [!include [banner](../includes/banner.md)]
 
-A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
+A témakör a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 
 Rendelés ígéret számítja ki a lehető legkorábbi szállítási és kézhezvételi dátumok, és a szállítási dátum vezérlő módot és szállítási napok szállítási alapul. Négy szállítási dátum ellenőrzési módszer közül választhat:
 
@@ -47,11 +47,13 @@ A rendszer a következő képlettel számítja ki az ígérethez rendelkezésre 
 
 Ígérethez rendelkezésre áll = Az előző időszakban ígérethez rendelkezésre álló készlet + Az aktuális időszak bevételezései - Az aktuális időszak kiadásai – Az összes jövőbeni időszak bevételezéseinek összegének időszakáig, minden egyes jövőbeni időszak nettó kiadási mennyisége, a jövőbeni időszakot beleértve és azzal bezárólag nagyobb, mint a kiadások összege a jövőbeni időszakkal bezárólag.  
 
+Figyelje meg, hogy az ATP-számítás nem tartalmazza a lejárati dátum körüli és az ATP időkorláton túli adatokat, amelyekre a rendszernek szüksége van az ígérhető mennyiség esetén.
+
 Ha nincs több figyelembe vehető kiadás vagy bevételezés, akkor az ígérethez rendelkezésre álló mennyiség a további dátumokon ugyanaz lesz, mint az ígérethez rendelkezésre álló utolsó számított mennyiség.  
 
 Ha az ígérethez rendelkezésre álló mennyiség ellenőrzésekor egy cikknek nincs minden dimenziója megadva, a hiányzó dimenziók később is megadhatók a bevételezésekben és kiadásokban. Ebben az esetben az ígérethez rendelkezésre álló mennyiség számításakor a bevételezéseket és kiadásokat összesíteni kell a meglévő dimenziókban, hogy a mennyiség számításában résztvevő bevételezési és kiadási sorok száma csökkenjen.  
 
-A megjelenített ígérethez rendelkezésre állási mennyiség mindig 0 (nulla) vagy nagyobb. Ha az ígérethez rendelkezésre állási mennyiség számítás eredménye negatív (pl. ha az előzetesen ígért mennyiség túllépi az elérhető mennyiséget), akkor a program automatikusan **0** értékre állítja.
+A megjelenített ígérethez rendelkezésre állási mennyiség mindig 0 (nulla) vagy nagyobb. Ha az ígérethez rendelkezésre állási mennyiség számítás eredménye negatív (pl. ha az előzetesen ígért mennyiség túllépi az elérhető mennyiséget), akkor a program a mennyiséget automatikusan 0 értékre állítja.
 
 ### <a name="example"></a>Példa
 

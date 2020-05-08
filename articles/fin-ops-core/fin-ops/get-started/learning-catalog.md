@@ -3,20 +3,20 @@ title: Képzési katalógus – Finance and Operations
 description: Minden képzési beállítás megkeresése a Finance and Operations szolgáltatáshoz.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077993"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3279001"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Képzési katalógus – Finance and Operations
 
@@ -33,6 +33,10 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
     Ön dönt arról, hogy új technológiákba fektessen be a vállalat? 
 
     [Üzleti és technikai döntéshozók tanulási katalógus](learning-catalog-bdm.md#)
+
+    [Első lépések](learning-catalog-bdm.md#get-started)
+
+    [Vizsga](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
 
     [Pénzügyi gazdálkodás](learning-catalog-business-user.md#financial-management)
 
+    [Vizsga](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Megvalósítási projektvezetők
+    ### <a name="implementation-project-managers"></a>Megvalósítási projektvezetők
 
     Ön felelős a vállalati megvalósítás zökkenőmentes lebonyolításáért?
 
@@ -73,6 +79,9 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
     [Gyártás](learning-catalog-project-manager.md#manufacturing)
 
     [Ellátásilánc-kezelés](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Vizsgák](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
 
     [Alapplatform ismerete](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Alapvető fejlesztés](learning-catalog-administrator.md#core-development)
+
     [Frissítés és áttelepítés](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Karbantartás](learning-catalog-administrator.md#servicing)
 
     [Tesztelés folyamatban](learning-catalog-administrator.md#testing)
+
+    [Vizsga](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
 
     [Ellátásilánc-kezelés](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Vizsgák](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
     Az Ön felelőssége segítséget nyújtani ügyfeleinek a megfelelő megoldás megvásárlásában? 
 
     [Microsoft partner értékesítési és marketing tanulás katalógus](learning-catalog-partner-sales.md)
+
+    [Első lépések](learning-catalog-partner-sales.md#get-started)
+
+    [Vizsga](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

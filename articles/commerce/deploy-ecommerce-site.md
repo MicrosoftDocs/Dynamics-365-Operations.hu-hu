@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 3febd3ca36f4d517033e910c4087ad3a6ffff35a
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096678"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269935"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Új e-kereskedelmi bérlő telepítése
 
@@ -66,8 +66,8 @@ Ezenkívül a következő opcionális információkat gyűjtheti:
     - Jelszó visszaállítására vonatkozó irányelv azonosítója.
     - Profilszerkesztési irányelv azonosítója.
 
-[!NOTE]
-Ez az információ később is hozzáadható szolgáltatási kérelem alapján.
+> [!NOTE]
+> Ez az információ később is hozzáadható szolgáltatási kérelem alapján.
 
 Miután összegyűjtötte a szükséges adatokat, hajtsa végre az alábbi lépéseket az e-kereskedelem inicializálásához.
 

@@ -3,7 +3,7 @@ title: A termékoldal bővítése
 description: Ez a témakör azt mutatja be, hogyan lehet egy bővíteni egy terméklapot a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003073"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269820"
 ---
 # <a name="enrich-a-product-page"></a>A termékoldal bővítése
 
@@ -53,7 +53,7 @@ A termék oldalának bővítéséhez kövesse az alábbi lépéseket.
 1. Válassza a **Funkció** parancsot, majd válassza az **OK** elemet.
 1. A jobb oldali tulajdonságok panel **Rich Text** mezőbe írja be a termék frissített leírását.
 1. A **Fejléc** mezőbe írja be a fejléc szövegét, majd kattintson az **OK** gombra.
-1. Válassza a **Mentés** parancsot, majd válassza a **Beadás** elemet.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. A **Megjegyzések** mezőbe írja be a **Termék bővítve** szöveget, majd kattintson az **OK** gombra.
 1. A bővített terméklap előnézetéhez válassza az **Előnézet** lehetőséget. Ha befejezte, zárja be az előnézeti lapot, és térjen vissza a szerkesztési eszközhöz.
 1. Válassza a **Közzététel** lehetőséget.

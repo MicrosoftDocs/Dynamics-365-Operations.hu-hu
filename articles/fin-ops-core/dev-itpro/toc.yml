@@ -22,32 +22,6 @@
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (2020. február)
                   href: get-started/whats-new-platform-update-32.md
-                - name: Platform update 31 (2020. január)
-                  href: get-started/whats-new-platform-update-31.md
-                - name: Platform update 30 (2019. november)
-                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
-                - name: Platform update 29 (2019. október)
-                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
-                - name: Platform update 28 (2019. július)
-                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
-                - name: Platform update 27 (2019. június)
-                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
-                - name: Platform update 26 (2019. május)
-                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
-                - name: Platform update 25 (2019. április)
-                  href: ../fin-ops/get-started/whats-new-platform-25.md
-                - name: Platform update 24 (2019. március)
-                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
-                - name: Platform update 23 (2019. január)
-                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
-                - name: Platform update 22 (2018. december)
-                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
-                - name: Platform update 21 (2018. november)
-                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
-                - name: Platform update 20 (2018. szeptember)
-                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
-                - name: Platform update 15 (2018. március)
-                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult Platform-funkciók
@@ -102,9 +76,11 @@
               href: dev-tools/continuous-delivery-faq.md
             - name: Tesztcsomagok kizárása az előállított buildből
               href: dev-tools/exclude-test-packages.md
-            - name: Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel
+            - name: Harmadik féltől származó modellek és futásidejű csomagok kezelése forrásvezérléssel
               href: dev-tools/manage-runtime-packages.md
-            - name: Verziómodellek frissítése az automatizált buildben
+            - name: Univerzális telepíthető csomagok
+              href: dev-tools/aio-deployable-packages.md
+            - name: Modellverziók frissítése az automatizált buildben
               href: dev-tools/version-models-build.md
         - name: Adatintegrálás
           items:
@@ -526,7 +502,7 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Helyszíni telepítések újratelepítése
                       href: deployment/redeploy-on-prem.md
-                    - name: AOS-csomópont eltávolítása és újratelepítése
+                    - name: 'AOS-csomópont eltávolítása és újratelepítése, vagy hozzáadása'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Ugyanazon AD FS-példány újrahasznosítása több környezet esetén
                       href: deployment/onprem-reuseadfs.md

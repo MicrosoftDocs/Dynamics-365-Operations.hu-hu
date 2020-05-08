@@ -3,7 +3,7 @@ title: Szerzői jogi értesítés hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet az e-kereskedelmi webhelyhez szerzői jogi nyilatkozatot hozzáadni.
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025482"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269590"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ A következő lépésekkel lehet hozzáadni egy szerzői jogi nyilatkozatot az �
 1. A párbeszédpanelen válassza ki a **Szövegblokk** elemet, majd kattintson az **OK** gombra.
 1. A navigációs ablakban válassza ki a **Szövegblokk** elemet.
 1. A jobb oldali Tulajdonságok ablaktáblában, a **Bekezdés** mezőbe vegye fel a szerzői joggal kapcsolatos üzenetet. Írja be például a következőt: **(C) Fabrikam 2019**.
-1. Válassza a **Mentés** parancsot, majd a **Beadás** elemet végül a **Közzététel** lehetőséget.
-1. Nyissa meg a **Sablonok** elemet, válasszon ki egy sablont, majd válassza a **Kivétel** parancsot.
+1. Válassza a **Mentés** parancsot, majd a **Szerkesztés befejezése** elemet végül a **Közzététel** lehetőséget.
+1. Nyissa meg a **Sablonokat** elemet, válasszon ki egy sablont, majd válassza a **Szerkesztés** parancsot.
 1. Az **Oldalstruktúra** alatt bontsa ki a **Szövegtörzs** elemet, majd az **Alapértelmezett oldal** lehetőséget.
 1. Válassza ki a **Lábléchely** hely melletti három pont gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. Válassza ki a korábban létrehozott töredéket, majd válassza a **Kiválasztás** parancsot.
-1. Adja be a sablont és tegye közzé.
+1. Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 A szerzői jogi nyilatkozatot tartalmazó lábléc automatikusan megjelenik a kijelölt sablont használó oldalak alján.
 

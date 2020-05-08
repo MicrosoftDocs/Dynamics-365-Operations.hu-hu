@@ -19,22 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 4adb2c8d57ad8f67346b8d34212b7a4b0bd052ab
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 9ae14703941b97308bca5845eeac3eb9b181ae75
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173131"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275487"
 ---
 # <a name="entity-dependency-chain-synchronization-order"></a>Entitásfüggőségi lánc (szinkronizálási sorrend)
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-A következő következő táblákban az entitások abban a sorrendben vannak felsorolva, amelyben engedélyeznie kell őket. Ha engedélyezi a kezdeti szinkronizáláshoz tartozó megfeleltetést, akkor a kettős írás atutomatikusan észlel más megfeleltetéseket, amelyeket engedélyezni szükséges. A Finance and Operations alkalmazások **Kettős írás** oldala segítségével kijelölhet entitásokat a kezdeti szinkronizálás során, vagy visszavonhatja ezek kijelölését.
-
-A Kettős írás legújabb verziójában akár csak néhány entitást is engedélyezhet, és a rendszer kezeli Ön helyett a függőségeket.
+Ez a témakör azt a szinkronizálási sorrendet határozza meg, amelyet követni kell a kezdeti adatok létrehozásához, ha nem használja a **kezdeti szinkronizálási** funkció által biztosított entitásfüggőségeket. Ha nem használja a **kezdeti szinkronizálást**, akkor egyenként kell futtatnia az egyes entitások leképezését.
 
 ## <a name="dynamics-365-supply-chain-management-entities"></a>Dynamics 365 Supply Chain Management entitások
 

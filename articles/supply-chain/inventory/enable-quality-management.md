@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224909"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268816"
 ---
 # <a name="quality-management-overview"></a>Minőségkezelés áttekintése
 
@@ -43,7 +43,11 @@ A minőségkezelés rugalmas és sokféle módon megvalósítható, így meg tud
 
 -   Indítson automatikusan minőségellenőrzési folyamatot előre meghatározott feltételek teljesülésekor (adott szállítótól történő beszerzési rendelés raktári regisztrációja alapján).
 -   Vizsgálat alatt zárolja a készletet a jóvá nem hagyott készlet használatának megakadályozása érdekében (a beszerzési rendelési mennyiségek teljes zárolása).
--   Az aktuális tényleges készlet vizsgálandó mennyiségének meghatározásához használja a minőségi társítás részét képező cikkmintavételt. A mintavétel történhet adott mennyiség vagy százalékos érték alapján.
+-   Az aktuális tényleges készlet vizsgálandó mennyiségének meghatározásához használja a minőségi társítás részét képező cikkmintavételt. A mintavétel történhet rögzített mennyiség, százalékos érték vagy teljes azonosítótábla alapján.
+
+> [!NOTE]
+> A _Minőségkezelés a raktári folyamatokhoz_ funkció kiterjeszti a minőségkezelés képességeit. Ha használja ezt a funkciót, akkor tekintse meg a [Minőségkezelés a raktári folyamatokhoz](quality-management-for-warehouses-processes.md) részt példákért, hogy hogyan működik a minőségirányítás a program engedélyezése esetén.
+
 -   A részleges bevételezésekhez minőségi rendeléseket kell létrehozni. Ha olyan minőségi rendelést szeretne létrehozni, amely egy rendelésen fizikailag bevételezett mennyiségen alapul, akkor be kell jelölnie a **Frissített mennyiségenként** jelölőnégyzetet a **Cikkmintavétel** űrlapon.
 -   Hozzon létre minimum, maximum és cél tesztértékeket magukban foglaló teszttípusokat, és végezzen előre definiált ellenőrzési eredményeket adó minőségi-mennyiségi teszteket.
 -   Adja meg az elfogadható minőségi szint értékét a minőségi mérések tűréshatárainak szabályozása érdekében.
@@ -428,6 +432,9 @@ Ha a gyártásban az **Eseménytípus** mezőt a **Befejezettnek jelentés** ér
 </tbody>
 </table>
 
+> [!NOTE]
+> A *Minőségkezelés a raktári folyamatokhoz* funkció hozzáadja a minőségi rendelés feldolgozásához szükséges képességeket, ha az **Eseménytípus** beállítása *Készként jelentés*, és a **Végrehajtás** beállítása *Után*, és az **Eseménytípus** típusú beszerzések beállítása *Regisztráció*. Részletekért lásd: [Raktári folyamatok minőségkezelése](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>A Minőségkezelés oldalai
 <table>
 <colgroup>
@@ -495,3 +502,5 @@ Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan v
 [Minőségkezelési folyamatok](quality-management-processes.md)
 
 [Szabálytalanság kezelése](enable-nonconformance-management.md)
+
+[Raktári folyamatok minőségkezelése](quality-management-for-warehouses-processes.md)

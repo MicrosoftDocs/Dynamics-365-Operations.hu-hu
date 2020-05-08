@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172691"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275650"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -70,14 +70,12 @@ Ha be szeretné kapcsolni a nyomkövetési naplót, hajtsa végre az alábbi lé
 Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
 
 1. Jelentkezzen be az Finance and Operations alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
-2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** mező értéke **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** mező értéke **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. A teljes napló megjelenítéséhez kattintson duplán egy elemre, majd a **Végrehajtás** gyorslapján tekintse át az **Üzenetblokk** szövegét.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése az Finance and Operations alkalmazások élő szinkronizálási problémáinak elhárításához
 
-**A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
-
-A Common Data Service alkalmazásból származó kettős írású hibák megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
+**A hibák megtekintéséhez szükséges szerepkör:** a rendszeradminisztrátor A kettős írás hibák, amelyek származhatnak a Common Data Service szolgáltatásból, megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
 
 1. A Finance and Operations-alkalmazások minden projektkonfigurációjában van egy **IsDebugMode** tulajdonság a **DualWriteProjectConfiguration** entitásban. Nyissaa meg a **DualWriteProjectConfiguration** entitást az Excel-bővítmény használatával.
 
@@ -104,7 +102,7 @@ A Common Data Service alkalmazásból származó kettős írású hibák megjele
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>A Common Data Service-környezet leválasztása és másik csatolása a Finance and Operations-alkalmazásból
 
-**A környezet leválasztásához szükséges hitelesítő adatok:** Azure AD bérlői rendszergazda
+**A környezet szétválasztásához szükséges szerepkör:** Rendszergazda vagy a Finance and Operations alkalmazásban vagy a Common Data Service szolgáltatásban.
 
 1. Bejelentkezés a Finance and Operations alkalmazásba.
 2. Nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza a **Kettős írás** csempét.
@@ -113,3 +111,13 @@ A Common Data Service alkalmazásból származó kettős írású hibák megjele
 5. A művelet jóváhagyásához válassza az **Igen** lehetőséget.
 
 Ezután új környezet csatolható.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Nem lehet megtekinteni az értékesítésirendelés-sor adatai képernyőt 
+
+Amikor értékesítési rendelést hoz létre a Dynamics 365 Sales modulban, akkor ha a **+ Termékek hozzáadása** gombra kattint, előfordulhat, hogy a rendszer átirányítja a Dynamics 365 Projektműveletek rendelési sor űrlapjára. Az értékesítésirendelés-sor **adatainak** űrlapját nem lehet arról az űrlapról megtekinteni. Az **adatok** beállítása nem jelenik meg a legördülő listában az **új rendelési sor** alatt. Ennek az az oka, hogy a Projektműveletek már telepítve van a környezetben.
+
+Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alábbi lépéseket:
+1. Lépjen a **Rendeléssor** entitásra.
+2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt. 
+3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra. 
+4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.

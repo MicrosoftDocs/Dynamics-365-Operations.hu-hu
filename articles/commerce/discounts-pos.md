@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116556"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265582"
 ---
 # <a name="show-discounts-in-pos"></a>Engedmények megjelenítése a pénztárban
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 A promóciók fontos szerepet játszanak a vásárlási döntéseket meghozó vevők motivációjában. Például az ünnepek a kereskedők számára a legnagyobb számú értékesítést hozhatják, mivel az egész kiskereskedelmi piac csábító promóciókkal és kedvezményekkel van elárasztva. Ha az üzlet munkatársai ismerik a rendelkezésre álló promóciókat, és megértik azokat, akkor ezeket a promóciókat egyszerűen ki tudják használni a keresztértékesítéshez és felülértékesítéshez. Ez a témakör azt mutatja be, hogy a Microsoft Dynamics 365 Commerce hogyan segíti az értékesítési munkatársak számára megismerni a promóciókkal kapcsolatos tudnivalókat, valamint azt, hogy hogyan használhatók fel a keresztértékesítéshez és a felülértékesítéshez.
 

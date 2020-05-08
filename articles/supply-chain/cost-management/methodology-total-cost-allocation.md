@@ -3,7 +3,7 @@ title: Teljes költségfelosztási módszer
 description: Ez a témakör bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/15/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e621b76742a5a115ba2d77e03b47cd1aead8664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 758015c566e39df7306e1b34b8d3b42f1f1eba79
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214665"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262673"
 ---
 # <a name="total-cost-allocation-method"></a>Teljes költségfelosztási módszer
 
 [!include [banner](../includes/banner.md)]
-
-Ez a témakör bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
 
 Az összköltség felosztás (TCA) a kötegrendelés fő receptúrás cikkének az ára és a receptúrához meghatározott társtermékek árösszegei közötti költség kiszámításának a módszere. Ez a módszer dinamikus. A költséget a társtermékek és a receptúrás cikk számára befejezettnek jelentett mennyiségek súlyozott átlagaként számítja ki. TCA használata esetén nem szükséges minden kötegrendelés esetében áttekintenie a költségfelosztásokat. Amennyiben nem alkalmaz TCA-t, a receptúra számítás egy meglevő funkciót alkalmaz.
 

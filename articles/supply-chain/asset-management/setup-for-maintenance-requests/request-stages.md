@@ -3,7 +3,7 @@ title: Karbantartási kérések életciklus-állapotai
 description: Ez a témakör azt ismerteti, hogy miként állíthatja be a karbantartási kérés életciklus-állapotait az Eszközkezelés modulban.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209007"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275626"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Karbantartási kérések életciklus-állapotai
 
@@ -44,10 +44,10 @@ A karbantartási kérés életciklus-állapotai meghatározzák, hogy a kérés 
     A **Részletek** gyorslapon az **Életciklusmodellek** mezőben látható az adott életciklus-állapotot használó karbantartási kérés életciklusmodelljeinek a száma.
 
 5. Az **Általános** gyorslapon állítsa az **Aktív** beállítást **Igen** értékre, ha a karbantartási kérésnek mindaddig aktívnak kell lennie, amíg ebben az életciklus-állapotban van.
-6. Állítsa a **Tényleges befejezés beállítása** lehetőséget **Igen**értékre, ha az ebben az életciklus-állapotban lévő karbantartási kérésben automatikusan meg kell adni egy tényleges befejezési dátumot és időpontot.
+6. Állítsa a **Tényleges befejezés beállítása** lehetőséget **Igen** értékre, ha az ebben az életciklus-állapotban lévő karbantartási kérésben automatikusan meg kell adni egy tényleges befejezési dátumot és időpontot.
 7. Állítsa a **Munkarendelés létrehozása** beállítást **Igen** értékre, ha az ebben az életciklus-állapotban lévő karbantartási kérésből munkarendelés hozható létre.
 8. Állítsa a **Törlés** lehetőséget **Igen** értékre, ha a karbantartási kérés törölhető, amíg ebben az életciklus-állapotban van.
-9. A **Frissítés** gyorslapon az **Eszköz** szakaszban található **Bejövő** és **Kimenő** lehetőségek akkor relevánsak, ha Ön raktárjavítást használ. Állítsa a megfelelő opciót **Igen** értékre, ha a karbantartási kérésben kiválasztott eszközök eszközéletciklus-állapotát automatikusan **Bejövő** vagy **Kimenő** állapotra kell frissíteni, amennyiben a karbantartási kérés életciklus-állapota **Bejövő** vagy **Kimenő** értékre van állítva.
+9. A **Frissítés** gyorslapon az **Eszköz** szakaszának **Bejövő** és **Kimenő** beállításai akkor fontosak, ha a raktárjavítást használ. A megfelelő beállítást akkor kell **Igen** értékre beállítani, ha a karbantartási kérelemben kiválasztott eszközök életciklus-állapotát automatikusan **Bejövő** vagy **Kimenő** állapotúra kell módosítani, amikor a karbantartási kérelem életciklus-állapota **Bejövő** vagy **Kimenő** értékre van állítva.
 
 A következő ábra a **Karbantartási kérések életciklus-állapotai** oldalt szemlélteti.
 

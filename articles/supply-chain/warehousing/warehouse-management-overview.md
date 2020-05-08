@@ -3,7 +3,7 @@ title: Raktárkezelés áttekintése
 description: Raktárkezelési funkció használata a raktározási folyamatok figyelésére és automatizálására.
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17e4429dbf3f7e5d6c737c365f0351d5c588fcd2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: bed896245b777ca195f7d03a9fdb697cad360ee7
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204585"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275394"
 ---
 # <a name="warehouse-management-overview"></a>Raktárkezelés áttekintése
 
@@ -30,7 +30,7 @@ ms.locfileid: "3204585"
 A raktárkezelési modul lehetővé teszi a raktározási folyamatok kezelését a gyártási, elosztási és kiskereskedelmi vállalatokban. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
 
 ## <a name="get-started"></a>Első lépések
-A raktárkezelés használatának megkezdéséhez meg kell adnia a raktár általános beállításait a vállalat üzleti folyamatainak támogatásához.
+A raktárkezelés használatának megkezdéséhez meg kell adnia a raktár általános beállításait a vállalata üzleti folyamatainak támogatásához.
 
 - Lépjen a **Raktárkezelési paraméterek** oldalra a **Raktárkezelés** > **Beállítás** pontban a raktár általános paramétereinek beállításához.
 

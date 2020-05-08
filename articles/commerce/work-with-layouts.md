@@ -3,7 +3,7 @@ title: Előre beállított elrendezések használata
 description: Ez a témakör az előre beállított elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002636"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269889"
 ---
 # <a name="work-with-preset-layouts"></a>Előre beállított elrendezések használata
 
@@ -44,7 +44,7 @@ Kétféleképpen hozható létre kegyéni elrendezés. Egy meglévő egyéni elr
 Egy előre beállított elrendezés létrehozása meglévő egyéni elrendezésből kövesse az alábbi lépéseket.
 
 1. Nyisson meg egy olyan meglévő lapot, amely jelenleg nem használ előre beállított elrendezést, és rendelkezik egy modulstruktúrával, amelyet újra fel szeretne használni a webhely egyéb oldalain.
-1. Válassza a **Kivétel** lehetőséget.
+1. A lap kivételéhez válassza a **Szerkesztés** parancsot.
 1. Válassza a **Mentés új elrendezésként** parancsot. Megjelenik a **Mentés új elrendezésként** párbeszédpanel.
 1. Írja be az előre beállított elrendezés nevét és a leírását. A megadott értékek más szerkesztőknek is megjelennek meg, amikor új lapokat hoznak létre az elrendezéséből, vagy átváltanak arra. Ennek megfelelően a szerzők számára hasznos értékeket adjon meg.
 1. Válassza ki az **OK** lehetőséget.
@@ -91,14 +91,14 @@ Ha meg szeretné adni vagy módosítani szeretné a témát az összes olyan sz�
 Egy előre beállított elrendezés mentéséhez és beadásához kövesse az alábbi lépéseket.
 
 1. Az elrendezésszerkesztő felső részén válassza a **Mentés** parancsot. A mentett módosítások nem érintik az alsóbb szintű lapokat mindaddig, amíg nincsenek beadva.
-1. Válassza a **Beadás** lehetőséget. A módosítások most már felderíthetők az alsóbb szintű munkafolyamatok számára.
+1. Válassza a **Szerkesztés befejezése** lehetőséget. A módosítások most már felderíthetők az alsóbb szintű munkafolyamatok számára.
 
 A módosítások előnézetéhez nyisson meg egy az előre beállított elrendezést használó meglévő lapot, vagy hozzon létre egy új lapot az elrendezésből.
 
 Miután megtekintette az előre beállított elrendezés módosításainak előnézetét, kövesse az alábbi lépések egyikét, és tegye közzé az elrendezést az élő webhelyen:
 
 * Nyissa meg az **Elrendezések** elemet, válasszon ki egy elrendezést, majd válassza a **Közzététel** parancsot.
-* Az elrendezésszerkesztőben válassza a **Közzététel**elemet.
+* Az elrendezésszerkesztő megnyitásához válassza ki az elrendezés nevét, majd válassza a **Közzététel** lehetőséget.
 * Egy nem közzétett elrendezésre hivatkozó lap közzététele. A program automatikusan közzéteszi az elrendezést.
 
 > [!WARNING]

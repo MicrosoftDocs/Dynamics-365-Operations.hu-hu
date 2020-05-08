@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209904"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274165"
 ---
 # <a name="create-an-asset"></a>Eszköz létrehozása
 
@@ -38,13 +38,13 @@ Ez a témakör bemutatja, hogyan lehet eszközt létrehozni az Eszközkezelés m
 3. Az **Eszközök létrehozása** párbeszédpanelen írja be az **Eszközre** vonatkozó adatokat (az eszközazonosítót) és az eszköz nevét. Az eszközhöz válaszon egy dátumot a **Hatályos** mezőben Ettől a dátumtól kezdve telepítheti az eszközt a munkavégzési helyszínre, valamint áthelyezheti és lecserélheti az eszközt egy eszközszerkezetben.
 4. Az **Eszköztípus** mezőben válassza ki az eszköz eszköztípusát (kötelező mező). Ha szükséges, válassza az ki az **Eszköz gyártója** és **Eszközmodell** értékeket az eszközhöz. Ha csak egy termék van beállítva, akkor a termék automatikusan ki lesz választva az eszköz gyártójának az **Eszköz gyártója** mezőben. Az **Eszköz gyártója** és **Eszközmodell** mezőben elérhető választási lehetőségek az [Eszköz gyártói és modelljei](../setup-for-objects/product-and-model.md) mező beállításaitól függenek.
 5. A **Fölérendelt tárgyieszköz** csoportban az **Eszköz** mező üres. Ha szükséges, kiválaszthat egy fölérendelt eszközt, majd a **Fölérendelt eszköz** csoport összes mezőjét automatikusan kitölti a program.
->[!NOTE]  
->A fölérendelt eszköz kiválasztásakor kettő vagy három lap érhető el: a **Saját eszközök** lap azokat a munkavégzési helyszínhez kapcsolódó eszközöket tartalmazza, amelyeket Ön (a rendszerre bejelentkezett karbantartó munkavállaló) eloszthat. Ha a karbantartási dolgozóknál nincs beállítva munkavégzési helyszín a [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md) képernyőn, akkor a **Saját eszközök** lap nem lesz látható. Az **Aktív eszközök** lap az „Aktív” eszköz-életciklus állapotú eszközök listáját tartalmazza. Az **Eszköznézet** lap a munkavégzési helyszínek és a helyszínekre telepített eszközök fanézetét jeleníti meg.
+    >[!NOTE]  
+    >A fölérendelt eszköz kiválasztásakor kettő vagy három lap érhető el: a **Saját eszközök** lap azokat a munkavégzési helyszínhez kapcsolódó eszközöket tartalmazza, amelyeket Ön (a rendszerre bejelentkezett karbantartó munkavállaló) eloszthat. Ha a karbantartási dolgozóknál nincs beállítva munkavégzési helyszín a [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md) képernyőn, akkor a **Saját eszközök** lap nem lesz látható. Az **Aktív eszközök** lap az „Aktív” eszköz-életciklus állapotú eszközök listáját tartalmazza. Az **Eszköznézet** lap a munkavégzési helyszínek és a helyszínekre telepített eszközök fanézetét jeleníti meg.
 
 6. A beállított alapértelmezett munkavégzési helyszínt a rendszer **Tárgyieszközcsoport** > **Munkavégzési helyszín** mezőjében lévő eszközre vonatkozóan javasolja. Szükség esetén válasszon másik munkavégzési helyszínt.
 
->[!NOTE]
->Az eszköz létrehozását követően szükség esetén telepítheti azt egy másik munkavégzési helyszínre. Csak a felső szintű eszközök (aktuális szülőeszköz nélküli eszközök) telepíthetők a munkavégzési helyszínre. Ez azt jelenti, hogy a kijelölt munkavégzési helyszínre a felső színtű és a származtatott eszközöket is telepíti. További információ a tárgyi eszközök munkavégzési helyszínre történő telepítéséről: [A munkavégzési helyszínek bemutatása](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Az eszköz létrehozását követően szükség esetén telepítheti azt egy másik munkavégzési helyszínre. Csak a felső szintű eszközök (aktuális szülőeszköz nélküli eszközök) telepíthetők a munkavégzési helyszínre. Ez azt jelenti, hogy a kijelölt munkavégzési helyszínre a felső színtű és a származtatott eszközöket is telepíti. További információ a tárgyi eszközök munkavégzési helyszínre történő telepítéséről: [A munkavégzési helyszínek bemutatása](../functional-locations/introduction-to-functional-locations.md).
 
 7. Kattintson az **OK** gombra.
 8. Válassza ki az eszközt az **Összes eszköz** listából, majd kattintson a **Szerkesztés** gombra, hogy további információkat adjon hozzá az eszközhöz.

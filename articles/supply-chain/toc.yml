@@ -70,12 +70,12 @@
                   items:
                     - name: A Supply Chain Management kezdőlapjának új vagy módosult elemei
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.11 (2020. július)
+                      href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (2020. május)
                       href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management 10.0.9 (2020. április)
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: Supply Chain Management 10.0.8 (2020. február)
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -345,10 +345,12 @@
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: Munkarendelések és tárgyi eszközök
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
-            - name: A Projektvezetés és könyveléssel való integráció
+            - name: A Projektvezetés és könyvelés modullal való integráció
               items:
                 - name: 'Előrejelzések, munkarendelések és projektek'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Eszközkezelés integrálása tárgyi eszközökkel
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Megelőző és reaktív karbantartás
               items:
                 - name: Megelőző karbantartás áttekintése
@@ -565,6 +567,8 @@
                   href: cost-management/lifo-physical-value-marking.md
                 - name: Mozgóátlag
                   href: cost-management/moving-average.md
+                - name: 'Mozgóátlag, tartalék költségsorrend'
+                  href: cost-management/moving-average-fallback.md
                 - name: Fizikai és pénzügyi frissítések
                   href: cost-management/physical-financial-updates.md
                 - name: Mozgóátlagon alapuló önköltségi ár
@@ -579,7 +583,9 @@
                   href: cost-management/inventory-close.md
                 - name: Az aktuális készlet költségértékeinek korrekciója
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Készletkorosítási jelentés
+                - name: Készletérték-tárolási jelentés
+                  href: cost-management/inventory-value-report-storage.md
+                - name: Készletkorosítási jelentés tárolása
                   href: cost-management/inventory-aging-report-storage.md
             - name: Gyártási könyvelés
               items:
@@ -1223,9 +1229,11 @@
                   href: inventory/enable-quality-management.md
                 - name: Minőségkezelési folyamatok
                   href: inventory/quality-management-processes.md
+                - name: Raktári folyamatok minőségkezelése
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Szabálytalanság kezelése
                   href: inventory/enable-nonconformance-management.md
-                - name: Menedzsment feltételeinek beállítása
+                - name: Kezelés feltételeinek beállítása
                   href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
                 - name: Szabálytalanság létrehozása és feldolgozása
                   href: inventory/tasks/create-process-non-conformance.md
@@ -2549,6 +2557,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                 - name: Nyitott munkalista rendszercsoportosítása
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Vonalkódok beolvasása a Dynamics 365 for Finance and Operations kamerája segítségével
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Mobil vonalkód-támogatás
@@ -2649,10 +2659,12 @@
               items:
                 - name: A telepítés és konfigurálás áttekintése
                   href: warehousing/install-configure-warehousing-app.md
-                - name: Mezőnevek konfigurálása a raktározási alkalmazásban
+                - name: Mezőnevek konfigurálása raktározási alkalmazásban
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Mobileszközök beállítása raktári munkához
                   href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Azonosítótábla-bevételezés a Raktározás mobilalkalmazás használatával
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
@@ -2669,10 +2681,12 @@
                   href: warehousing/process-guide-framework.md
             - name: Frissítés és áttelepítés
               items:
-                - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations
+                - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations szolgáltatásra
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: A regisztráció és a betárolás bevételezési jegyei
               items:
+                - name: Beszerzési rendelések bejövő rakományának kezelése a raktárban
+                  href: warehousing/inbound-load-handling.md
                 - name: 'Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
@@ -2682,6 +2696,7 @@
                 - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Munkasablon beállítása beszerzési rendelésekhez
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Supply Chain Management fejlesztése
           items:
             - name: Gantt-vezérlő – fejlesztési útmutató

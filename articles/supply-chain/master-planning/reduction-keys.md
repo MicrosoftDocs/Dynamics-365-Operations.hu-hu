@@ -3,7 +3,7 @@ title: Előrejelzés csökkentési kulcsok
 description: Ez a témakör az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 6191b4809c3785d92395bec1b7d51bfc978f9245
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225105"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262696"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -222,7 +222,7 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Előrejelzés csökkentése tranzakciókkal
 
-Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Felszabadított termékek** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
+Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -3,7 +3,7 @@ title: Forgalmi adókifizetések és kerekítési szabályok
 description: Ez a cikk bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771752"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275674"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Forgalmi adókifizetések és kerekítési szabályok
 
@@ -43,26 +43,26 @@ Az időszak teljes áfája -98,765.43 követel egyenleget mutat. A jogi személy
 
 A jogi személy olyan kerekítési módszert szeretne alkalmazni, amely az egyenleget a legközelebbi 1,00 egész összegre kerekíti. Az áfa könyveléséért felelős felhasználó tehát a következőket teszi:
 
-1.  Rákattint az Adó &gt; Közvetett adók &gt; Áfa &gt; Adóhatóságok pontra.
-2.  Az Általános gyorslapon Kerekítési képernyő mezőjében kiválasztja a Normál lehetőséget.
-3.  A Lekerekítés mezőben ezt adja meg: 1,00.
-4.  Amikor az áfa kifizetése esedékes az adóhatóság felé, megnyitja az Adók kiegyenlítése és feladása lapot. (Rákattint az Adó &gt; Bevallások &gt; Áfa &gt; Áfa kiegyenlítése és feladása pontra.)
-5.  Az áfakiegyenlítési számlán az adókötelezettség, amely 98.765,43, 98.765-re lesz kerekítve.
+1. Kattintson az **Adó** > **Közvetett adók** > **Áfa** > **Adóhatóságok** pontra.
+2. Az **Általános** gyorslapon a **Kerekítési képernyő** mezőjében válassza a **Normál** lehetőséget.
+3. A **Lekerekítés** mezőben ezt adja meg: 1,00.
+4. Amikor az áfa kifizetése esedékes az adóhatóság felé, nyissa meg az **Adó** > **Nyilatkozatok** > **Áfa** > **Áfa kiegyenlítése és feladása** lehetőséget. Az áfakiegyenlítési számlán látható az adókötelezettség, amely **98 765,43** és **98 765**-re lesz kerekítve.
 
-Az alábbi táblázat bemutatja, hogyan kerekítjük a 98.765,43 összeget az egyes kerekítési módok használatával az Adóhatóságok lapon, a Kerekítési képernyő mezőjében.
+Az alábbi táblázat bemutatja, hogyan kerekítjük a 98 765,43 összeget az egyes kerekítési módok használatával az **Adóhatóságok lapon**, a **Kerekítési képernyő** mezőjében.
 
-| Kerekítési képernyőopció                | Lekerekítési érték = 0,01 | Lekerekítési érték = 0,10 | Lekerekítési érték = 1,00 | Lekerekítési érték = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normál                              | 98.765,43              | 98.765,40              | 98.765,00              | 98.800,00                |
-| Lefelé                            | 98.765,43              | 98.765,40              | 98,765.00              | 98.700,00                |
-| Felkerekítés                         | 98.765,43              | 98.765,50              | 98.766,00              | 98.800,00                |
-| Saját előny, egy követel egyenleghez | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Saját előny, egy tartozik egyenleghez  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Ha a kerekítési érték 0,00, akkor:
+>
+> - Normál kerekítés esetén a kerekítési mód ugyanaz, mint a **Lekerekítés = 0,01** esetében.
+> - A **Kerekítési képernyő beállításai**, **Lefelé**, **Felkerekítés** és **Saját előny** esetében a viselkedés ugyanaz, mint a **Lekerekítés = 1,00** esetében.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Nincs kerekítés, mivel a kerekítés 0,00
-
-ekerekítés(1,0151, 0,00) = 1,0151 kerekítés(1,0149, 0,00) = 1,0149
+| Kerekítési képernyőopció                | Lekerekítési érték = 0,01 | Lekerekítési érték = 0,10 | Lekerekítési érték = 1,00 | Lekerekítési érték = 100,00 | Lekerekítési érték = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normál                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Lefelé                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Felkerekítés                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Saját előny, egy követel egyenleghez | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Saját előny, egy tartozik egyenleghez  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normál kerekítés és kerekítési pontosság 0,01
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172808"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270288"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -67,7 +67,15 @@ Az értékesítési ajánlat létrehozása a Sales vagy Supply Chain Management 
 + Az **Árengedmény %** **Árengedmény** és **Szállítási mennyiség** mezők az értékesítési ajánlat fejlécében csak olvashatók.
 + A **Szállítási feltételek**, **Kiszállítási feltételek**, **Szállítási módszer**, és **Szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
-## <a name="sales-orders"></a>Értékesítési rendelések
+Ha a Field Service megoldást is használja, mindenképpen engedélyezze újra az **ajánlati sor gyorslétrehozása** paraméterét. A paraméter ismételt engedélyezése lehetővé teszi az Árajánlati sorok létrehozásának folytatását a gyorslétrehozás funkció segítségével.
+1. Keresse meg a Dynamics 365 Sales alkalmazást.
+2. A felső navigációs sávon válassza ki a beállítások ikont.
+3. Válassza a **Speciális beállítások** elemet.
+4. Válassza ki a **Rendszer testreszabása** beállítást.
+5. Válassza ki az **Ajánlati sor** menüelemét.
+6. Nyissa meg az **Adatszolgáltatások** szakaszt, és jelölje be a **Gyors létrehozás engedélyezése** jelölőnégyzetet.
+
+## <a name="sales-orders"></a>Értékesítési rendelés
 
 Az értékesítési rendelések létrehozása a Sales vagy Supply Chain Management programban történik. Ha a Sales alkalmazásban értékesítési rendelést hoz létre, akkor a rendszer valós időben szinkronizálja a Supply Chain Management alkalmazásba. Hasonlóan, ha a Supply Chain Management alkalmazásban értékesítési rendelést hoz létre, akkor a rendszer valós időben szinkronizálja a Sales alkalmazásba. Vegye figyelembe az alábbiakat:
 

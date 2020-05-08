@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: ef4465144155130087b078f9f96911df38b62c41
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173177"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270336"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Igény szerinti szinkronizálás a(z) Dynamics 365 Supply Chain Management árképzés motorral
 
@@ -50,6 +50,12 @@ A Microsoft Dynamics 365 Supply Chain Management tartalmaz egy árképzési moto
     + Szállítási összeg
     + Adó összesen
     + Teljes összeg
+    
+5. Annak biztosítására, hogy a rendszer a kereskedelmi és értékesítési szerződéseket figyelembe vegye az ár kiszámításához:
+    1. Navigáljon a Supply Chain Management környezetébe.
+    2. Lépjen a **Kinnlevőségek \> Beállítások \> Kinnlevőségek paraméterei** pontra.
+    3. Válassza ki az **Árak** lapot az oldalsó navigációs sávon.
+    4. A **Kereskedelmi szerződés értékelése** gyorslapon törölje a **Manuális bejegyzés** beállítás jelölését.
 
 ## <a name="how-it-works"></a>Hogyan működik?
 

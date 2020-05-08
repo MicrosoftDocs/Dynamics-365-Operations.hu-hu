@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172877"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275464"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
 
@@ -85,9 +85,8 @@ Ha a hiba továbbra sincs kijavítva, hajtsa végre az alábbi lépéseket.
 > Ezekkel a lépésekkel egy entitás törlési folyamatát hajthatja végre, majd hozzáadhatja újra. A problémák elkerüléséhez ügyeljen arra, hogy a lépéseket pontosan kövesse.
 
 1. A Finance and Operations alkalmazásban nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza az **Adatentitások** csempét.
-2. Keresse meg azt az entitást, amelynek hiányzik a mezője. Jegyezze fel a cél entitást, az előkészítési táblát, az entitás nevét és a többi oszlop értékét.
-3. Ha bármelyik feldolgozási csoport ettől az entitástól függ, akkor az entitás törlése előtt hajtsa végre a megfelelő műveleteket a feldolgozási csoportoknak.
-4. Törölje azt az entitást, amelynek hiányzik a mezője.
-5. Válassza az **Új** lehetőséget, majd adja hozzá újra az entitást. Adja meg a 2. lépésben jegyzetként elkészített értékeket.
-6. Nyissa meg az **Entitásleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
-7. Az entitásleképezések mezőinek automatikus kitöltéséhez válassza az **Entitáslista frissítése** elemet.
+2. Keresse meg azt az entitást, amelynek hiányzik az attribútuma. Kattintson a **Cél-hozzárendelés módosítása** elemre az eszköztárban.
+3. Az **Előkészítés hozzárendelése a célhoz** panelen kattintson a **Leképezés létrehozása** elemre.
+4. Nyissa meg az **Entitásleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
+5. Ha az attribútum nincs automatikusan kitöltve a leképezésen, vegye fel kézzel az **Attribútum hozzáadása** gombra kattintva, majd kattintson a **Mentés** gombra. 
+6. Válassza ki a leképezést, és kattintson a **Futtatás** lehetőségre.

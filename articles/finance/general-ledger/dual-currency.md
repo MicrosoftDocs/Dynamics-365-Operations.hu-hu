@@ -3,7 +3,7 @@ title: Kettős pénznem
 description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 Finance esetében.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249011"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270312"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
@@ -174,10 +174,10 @@ Ezenkívül jelentős módosítást végeztünk az értékcsökkenés folyamaton
 
         | Tárgyi eszköz | Könyv      | Tranzakció típusa | Tranzakció dátuma | Pénznem | Összeg a tranzakció pénznemében. | Összeg  | Árfolyam | Jelentési pénznem összeg |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Beszerzés      | 2016/3/6         | DKK      | 1 000 000                      | 500,000 | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Beszerzés      | 2016/3/6         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Értékcsökkenés     | 2016/3/6         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Számos vevő követte nyomon munkafüzetekben az eszköz-tranzakciók részletei. Ezeket az adatok magukban foglalják az átváltási árfolyamokat és az összegeket. Ha ezek az adatok egy munkafüzetben vannak, hozzon létre egy egyéni árfolyamtípust, és frissítse az átváltási árfolyamokkal a munkafüzetből. A rendszerárfolyam típusát fel lehet használni a beszerzési dátumon alapértelmezett árfolyam megadására, és a jelentési pénznemben számított összeg kiszámításához. Ha nincs kiválasztva árfolyamtípus, a varázsló a főkönyvben definiált árfolyamtípust használja.
     - A könyvelési pénznem és a jelentési pénznem összege módosítható. Ha az árfolyam megváltozik, a program az új árfolyam használatával újraszámítja a jelentési pénznem összegét.
