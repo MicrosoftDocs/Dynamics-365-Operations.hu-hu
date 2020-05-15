@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. május 1.
+          href: hr-whats-new-2020-05-01.md
         - name: 2020. április 13.
           href: hr-whats-new-2020-04-13.md
         - name: 2020. április 3.
@@ -497,12 +499,14 @@
               href: hr-leave-and-absence-types.md
             - name: Szabadság- és távolléti terv létrehozása
               href: hr-leave-and-absence-plans.md
-            - name: Alkalmazottak hozzárendelése a szabadságtervhez
+            - name: Dolgozók hozzárendelése a szabadságtervhez
               href: hr-leave-and-absence-enroll.md
             - name: Szabadság- és távolléti tervek elhatárolása
               href: hr-leave-and-absence-accrue.md
             - name: Szabadság felfüggesztése
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Alkalmazotti szabadság kezelése
+              href: hr-leave-and-absence-manage-employee-leave.md
             - name: A szabadság és távollét elemzéseinek megtekintése
               href: hr-leave-and-absence-analytics.md
             - name: Szabadság- és távollétkérelmek kezelése

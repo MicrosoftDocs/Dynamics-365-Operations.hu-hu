@@ -990,6 +990,8 @@
               href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projekt-előrejelzések és -költségvetések
               href: project-management/project-forecasts-budgets.md
+            - name: Előrejelzési modellek létrehozása projektköltségvetésekhez
+              href: project-management/create-forecast-models-project-budgets.md
             - name: Projekt költségvetéseinek átvitele a pénzügyi év végén
               href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Projekt értékesítési rendelései
@@ -1742,8 +1744,8 @@
               items:
                 - name: Magyarország – áttekintés
                   href: localizations/hungary.md
-                - name: Árfolyamszámítás
-                  href: localizations/tasks/hu-00001-exchange-rate-calculation.md
+                - name: Átlagos és napi árfolyamszámítás
+                  href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: Értékcsökkenés módjai tárgyi eszköznél
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
                 - name: Kis értékű tárgyi eszközök
@@ -2284,11 +2286,13 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
+                - name: 'Könyvvizsgálati fájl (XML Auditfile Financieel, XAF)'
+                  hred: localizations/emea-nl-audit-file.md
             - name: Norvégia
               items:
                 - name: Norvégia – áttekintés
                   href: localizations/norway.md
-                - name: Vevői és szállítói kifizetési formátumok hozzárendelése
+                - name: Vevői és szállítói kifizetési formátumok
                   href: localizations/tasks/no-00003-customer-vendor-payment-formats.md
                 - name: Vevői kifizetés fizetési azonosító alapján
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
@@ -2930,11 +2934,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Elemzési jelentések létrehozása Power BI Desktop használatával
+                - name: Elemzési jelentések létrehozása a Power BI Desktop használatával
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Elemzési munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával
+                - name: Elemzési munkaterületek és jelentések biztosításának támogatása Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
                 - name: Jelentési megoldások létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
@@ -2974,11 +2978,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
                         - name: Formátumkonfiguráció létrehozása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/finance/toc.json
-                        - name: A létrehozott formátum elemeinek leképezése az adatmodellelemekhez
+                        - name: A létrehozott formátum összetevőinek leképezése adatmodellelemekhez
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Az előkészített ER-megoldás tesztelése a célalkalmazásban
                       items:
-                        - name: (ER) Konfigurációk importálása RCS-ből
+                        - name: Konfigurációk importálása RCS-ből
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: Elektronikus dokumentumok létrehozása kifizetésekhez formátumkonfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3026,7 +3030,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                    - name: List
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                    - name: Lista
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3240,12 +3246,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
-              href: ../finance/localizations/enhanced-filtering-global-repo.md
-            - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-            - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
             - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
               items:
                 - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
@@ -3270,44 +3270,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
             - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: ER-megoldás tervezése pénzügyi dimenziók használatára
-              items:
-                - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-            - name: Leltározás és összegzés a létrehozott kimenetből származó adatok használatával történő végrehajtására alkalmas ER-formátumok tervezése
-              items:
-                - name: Formátumok létrehozása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                - name: Számítások használata a számlálás és összegzés kimenetének generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                - name: Formátumok futtatása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
             - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
               items:
                 - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                 - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-            - name: Dokumentumkezelési fájlok használata formátumkimenetekben
-              items:
-                - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                - name: Formátumok létrehozása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                - name: Formátumok futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
@@ -3340,8 +3308,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurációs életciklus
               items:
                 - name: Konfigurációk életciklusának kezelése
@@ -3361,31 +3327,79 @@
                     - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurációk importálása RCS-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: Oktatóanyagok
               items:
-                - name: A JOIN használata az adatforrások esetében a több alkalmazástáblából származó adatok megszerzéséhez
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
-                - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
-                - name: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
-                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
-                - name: Az ER formátumú elemek végrehajtásának elhalasztása
+                - name: Az adatforrások használatának megismerése
                   items:
-                    - name: Egy szekvenciaelem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Egy XML-elem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
-            - name: 'Elektronikus jelentéskészítési megoldások használata a következőben: Finance and Operations'
+                    - name: Több tábla adatainak lekérése az ÖSSZEKAPCSOLÁS paranccsal
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Tartalom hozzáadása feldolgozatlan XML használatával
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                    - name: A KISZÁMÍTOTT MEZŐ típusú adatforrásokhoz tartozó paraméteres hívások támogatása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: Vállalatközi ER-adatforrások
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: PÉNZÜGYI DIMENZIÓADATOK típusú adatforrások használata
+                      items:
+                        - name: Tervezési adatmodellek
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Modellek leképezése pénzügyi dimenziók használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Jelentések tervezése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Jelentések futtatása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: A létrehozott kimenet adatforrásként való használata leltározás és összegzés végrehajtásához
+                      items:
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Leltározás és összegzés kimenetének generálása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátumok futtatása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                    - name: DOKUMENTUMOK kapcsolatainak használata a Dokumentumkezelés fájljaihoz való hozzáféréshez
+                      items:
+                        - name: Adatmodellek előkészítése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Adatmodellek kiterjesztése Dokumentumkezelési fájlok használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátumok futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                        - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                        - name: Adatforrásokban történő hibakeresés
+                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                  items:
+                    - name: Szekvenciaelem végrehajtásának elhalasztása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                    - name: XML-elem végrehajtásának elhalasztása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                - name: Adatkötések relatív elérési útja
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
+            - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
+                    - name: Az Elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus jelentéskészítési sablonok mentése és helyreállítása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
+                      items:
+                        - name: ER-sablonok biztonságimentés-tárhelye
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                        - name: ER-áttelepítéshez tartozó adattisztítás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Célok

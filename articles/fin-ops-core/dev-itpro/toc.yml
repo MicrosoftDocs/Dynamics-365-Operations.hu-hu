@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (2020. április)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (2020. február)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult Platform-funkciók
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Kezdeti szinkronizálás
-                              href: data-entities/dual-write/initial-sync.md
                             - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
                               items:
                                 - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Verziókövetés, metaadatok keresése és navigáció'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Buildautomatizálás az Azure használatával
+              items:
+                - name: Buildautomatizálás Microsoft által szolgáltatott ügynökökkel és Azure Pipelines használatával
+                  href: dev-tools/hosted-build-automation.md
+                - name: Licencfájl hozzáadása a telepíthető csomaghoz az Azure Pipelines szolgáltatásban
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Telepíthető csomagok létrehozása az Azure Pipelines szolgáltatásban
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: X++ modell-verziószámozás az Azure Pipelines szolgáltatásban
+                  href: dev-tools/pipeline-model-version.md
             - name: Flottakezelés – mintaalkalmazás
               items:
                 - name: Végponttól végpontig érvényes eset a Flottakezelés mintaalkalmazáshoz
@@ -1394,8 +1400,10 @@
                   href: sysadmin/tasks/set-up-segregation-duties.md
                 - name: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-                - name: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
+                - name: Felhasználók hozzárendelése biztonsági szerepkörökhöz
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Biztonsági diagnosztika feladatrögzítésekhez
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Kötegelt feldolgozás
               items:
                 - name: Kötegelt feldolgozás áttekintése
