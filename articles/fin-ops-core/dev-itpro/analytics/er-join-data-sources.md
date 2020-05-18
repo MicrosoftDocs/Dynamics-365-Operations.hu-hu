@@ -3,7 +3,7 @@ title: Több alkalmazási táblából származó adatok beolvasásához használ
 description: Ez a témakör bemutatja, hogyan használhatók JOIN típusú adatforrások elektronikus jelentésekhez (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667954"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332322"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az elektronikus jelentéskészítési (ER) modell-leképezésekben.
 
@@ -140,7 +140,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
 7.  Zárja be a lapot.
 
-### <a name="review"></a>Az ER modell-leképezés áttekintése (2. rész)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a>Az ER modell-leképezés áttekintése (2. rész)
 
 Az ER modell-leképezési összetevő beállításainak áttekintése. Az összetevő úgy van beállítva, hogy az **Egyesítés** típusú adatforrások egyikénke használatával hozzáférjen a konfigurációk verzióival kapcsolatos adatokhoz, illetve a konfigurációk és a konfigurációs szolgáltatók adataihoz.
 
@@ -185,7 +185,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 9.  Zárja be a lapot.
 10. Válassza a **Mégse** lehetőséget.
 
-### <a name="executeERformat"></a> ER formátum végrehajtása
+### <a name="execute-er-format"></a><a name="executeERformat"></a> ER formátum végrehajtása
 
 1.  Érje el a Finance-t vagy RCS-t egy második munkamenetben a böngészőjében ugyanazon hitelesítő adatoka és vállalatot használva, mint az első munkamenetben.
 2.  Nyissa meg a következőt: **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk**.
@@ -240,7 +240,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     ![ER felhasználói párbeszédpanel](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Az ER formátum végrehajtási nyomkövetésének elemzése
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Az ER formátum végrehajtási nyomkövetésének elemzése
 
 1.  A Finance vagy RCS első munkamenetében válassza a **Tervező**elemet.
 2.  Válassza a **Teljesítménykövetés** elemet.
@@ -256,6 +256,33 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
     - Az alkalmazás-adatbázis hívása egyszer történik a konfigurációs verziók számának kiszámításához a **Részletek** adatforrásban megadott egyesítések segítségével.
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Korlátozások
+
+Amint a témakör példájában látható, az **EGYESSÍTÉS** adatforrás több olyan adatforrásból is elvégezhető, amely leírja azon rekordok egyedi adathalmazait, amelyeket végül egyesíteni kell. Ezeket az adatforrásokat a beépített ER [SZŰRŐ](er-functions-list-filter.md) funkcióval lehet konfigurálni. Amikor az adatforrás úgy van beállítva, hogy az az **EGYESÍTÉS** adatforráson túl legyen meghívva, az adatválasztás feltételei részeként használhat vállalattartományokat. Az **EGYESÍTÉS** adatforrás kezdeti implementációja nem támogatja az ilyen típusú adatforrásokat. Ha például egy [SZŰRŐ](er-functions-list-filter.md)alapú adatforrást hív meg egy **EGYESÍTÉS** adatforrás végrehajtásának hatókörén belül, akkor kivétel történik, ha a meghívott adatforrás az adatválasztási feltételének részeként tartalmaz vállalati tartományokat.
+
+A Microsoft Dynamics 365 Finance 10.0.12 verzió (2020. augusztus) esetében a vállalati tartományokat is használhat az adatválasztás feltételének [SZŰRŐ](er-functions-list-filter.md) alapú adatforrásokban, amely egy **EGYESÍTÉS** adatforrás végrehajtásának hatókörében lettek meghívva. Az alkalmazás [lekérdezés](../dev-ref/xpp-library-objects.md#query-object-model) szerkesztőjének korlátai miatt a vállalati tartományok csak az **EGYESÍTÉS** adatforrás első adatforrásához használhatók.
+
+### <a name="example"></a>Példa
+
+Például egyetlen meghívást kell kezdeményezni az alkalmazás-adatbázishoz, hogy lekérje a több vállalatot érintő külkereskedelmi tranzakciók listáját, valamint az ezekben a tranzakciókban hivatkozott készletadatok lekéréséhez.
+
+Ebben az esetben a következő műtermékeket konfigurálja az ER modell-leképezésekben:
+
+- **Intrastat** gyökéradatforrás, amely az **Intrastat** táblát jelöli.
+- **Cikke** gyökéradatforrás, amely az **InventTable** táblát jelöli.
+- **Vállalatok** gyökéradatforrás, amely a vállalatok listáját adja vissza ( ebben a példában a **DEMF** és a **GBSI**), ahol a tranzakciókat el kell érni. A vállalati kód a **Companies.Code** mezőből érhető el.
+- **X1** gyökéradatforrás, amelyben a `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))` kifejezés szerepel. Az adatválasztás feltételének részeként ez a kifejezés a vállalati tartományok definícióját tartalmazza `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2** adatforrás beágyazott elemként az **X1** adatforrás számára. A `FILTER (Items, Items.ItemId = X1.ItemId)` kifejezést tartalmazza.
+
+Végezetül konfigurálhat egy **EGYESÍTÉS** adatforrást, ahol az **X1** az első adatforrás, az **X2** pedig a második adatforrás. Az adatforrásnak az adatbázis szintjén történő futtatásának kényszerítéséhez beállíthatja, hogy a **Lekérdezés** a **Végrehajtás** beállításként közvetlen SQL-hívásként fusson.
+
+Amikor a konfigurált adatforrás a végrehajtása történik, amikor az ER-végrehajtás [nyomon követett](trace-execution-er-troubleshoot-perf.md), a következő utasítás jelenik meg az ER modell-leképezés-tervezőben az ER teljesítményének nyomon követése részeként.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Hiba történik, ha olyan **EGYESÍTÉS** adatforrást futtat, amely úgy van beállítva, hogy olyan adatkiválasztási feltételeket tartalmazzon, amelyek vállalat-tartományokat tartalmaznak a végrehajtott **EGYESÍTÉS** adatforrás további adatforrásaihoz.
 
 ## <a name="additional-resources"></a>További erőforrások
 

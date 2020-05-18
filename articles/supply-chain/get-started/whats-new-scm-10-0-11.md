@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 479a7edd456a1f4d121ceef292d2559c400c31a2
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266323"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346353"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>A Dynamics 365 Supply Chain Management 10.0.11 új vagy módosult elemei (2020. július)
 
@@ -40,7 +40,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.11 előzete
 Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 - [Aktuális készlet jelentésének tárolása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktárkezelő mobilalkalmazásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - További információ: [Azonosítótáblák fogadása a Raktárkezelő mobilalkalmazásban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktárkezelő mobilalkalmazásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - További információ: [Azonosítótáblák fogadása a raktárkezelő mobilalkalmazásban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Sorok foglalásának fejlesztései a kötegszám foglalása képernyőhöz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – további tájékoztatás: [Ugyanazon köteg foglalása egy értékesítési rendeléshez](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Rakomány-mennyiségek túlbevételezése](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – további tájékoztatás: [A beszerzési rendelések bejövő rakományának raktári kezelése](../warehousing/inbound-load-handling.md).

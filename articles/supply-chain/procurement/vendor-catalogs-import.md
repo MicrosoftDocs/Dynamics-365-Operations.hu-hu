@@ -18,14 +18,15 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
+ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207373"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3338308"
 ---
 # <a name="import-vendor-catalogs"></a>Szállítói katalógusok importálása
+
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Szállítói katalógusok importálása
@@ -35,35 +36,36 @@ A Dynamics 365 Supply Chain Management alkalmazás segítségével a beszerzési
 A Microsoft Dynamics 365 ügyfélből származó, a szállító által elküldött katalógus adatok feltölthetők.
 
 A termékadatoknak, amelyeket egy szállító ad át egy katalógus-karbantartási kérelem (CRM) fájl formájában, XML-formátumban kell lenniük. A CRM-fájlnak tartalmaznia kell a részletes adatait a terméknek, amely a szállító szállít a vállalatának.
-''''
+
 ## <a name="import-vendor-catalog-data"></a>Szállítói katalógusok adatainak importálása
-'' Egy szállító katalógusadatainak importálásához végezze el a következő feladatokat:
 
-1.  Projekt beállítása az adatok kezelése munkaterületen, ahol hozzárendelési szabályainak adta meg. Válassza ki az **Adatkezelés**, majd az **Szerepek beállítása adatprojektekhez** elemet. 
-    ''
-2.  Állítsa be a beszerzési kategóriák hierarchiáját, és rendelje a szállítókat beszerzési kategóriákhoz. Árucikk-kódok használatakor az árucikk-kódokat adja a beszerzési kategóriákhoz. Beszerzési kategóriahierarchia beállításával kapcsolatos további tudnivalókat lásd: [Beszerzési kategóriák hierarchiájának beállítása](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-    ''
-3.  Konfigurálja a szállítót katalógus importálásához. Válasszon ki egy szállítót, és válassza a **Beszerzés** > **Beállítás** > **Szállító konfigurálása katalógus importálásához** elemet.
-''''
-4.  Hajtsa végre: munkafolyamat konfigurálása katalógus importálásához. Hozzon létre egy CMR-fájlsablon és ossza meg a szállítóval.
+Egy szállító katalógusadatainak importálásához végezze el a következő feladatokat:
 
-5.  Válassza a **Beszerzés és forrás** \> **Közös** \> **Katalógusok** \> **Szállítói katalógusok** elemet szállítói katalógus létrehozásához. A katalógus karbantartási kérelem (CRM) fájlok, amelyeket a szállítótól kapott, ebben a katalógusban vannak csoportosítva. 
+1. Projekt beállítása az adatok kezelése munkaterületen, ahol hozzárendelési szabályainak adta meg. Válassza ki az **Adatkezelés**, majd az **Szerepek beállítása adatprojektekhez** elemet.
 
-6.  Töltse fel a CMR-fájlt.
+2. Állítsa be a beszerzési kategóriák hierarchiáját, és rendelje a szállítókat beszerzési kategóriákhoz. Árucikk-kódok használatakor az árucikk-kódokat adja a beszerzési kategóriákhoz. Beszerzési kategóriahierarchia beállításával kapcsolatos további tudnivalókat lásd: [Beszerzési kategóriák hierarchiájának beállítása](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
-7.  Tekintse át, hagyja jóvá vagy utasítsa el a szállítói katalógusban szereplő termékeket. A termékek automatikusan vannak hozzárendelve a beszerzési kategóriákhoz. 
-    
+3. Konfigurálja a szállítót katalógus importálásához. Válasszon ki egy szállítót, és válassza a **Beszerzés** > **Beállítás** > **Szállító konfigurálása katalógus importálásához** elemet.
+
+4. Hajtsa végre: munkafolyamat konfigurálása katalógus importálásához. Hozzon létre egy CMR-fájlsablon és ossza meg a szállítóval.
+
+5. Válassza a **Beszerzés és forrás** \> **Közös** \> **Katalógusok** \> **Szállítói katalógusok** elemet szállítói katalógus létrehozásához. A katalógus karbantartási kérelem (CRM) fájlok, amelyeket a szállítótól kapott, ebben a katalógusban vannak csoportosítva. 
+
+6. Töltse fel a CMR-fájlt.
+
+7. Tekintse át, hagyja jóvá vagy utasítsa el a szállítói katalógusban szereplő termékeket. A termékek automatikusan vannak hozzárendelve a beszerzési kategóriákhoz. 
+
 A jóváhagyott termékek felvehetők az alaptermékbe, és kiadhatók a kiválasztott jogi személyeknek. Csak jóváhagyott termékek adhatók hozzá a beszerzési katalógushoz.
 
 ## <a name="generate-a-catalog-import-file-template"></a>Katalógusimportálási fájlsablon létrehozása
 
 A katalógusimportálási fájlsablon egy XSD-fájl, amely egy szállító termékeihez tartozó CMR-fájl létrehozásához használható. A CMR-fájlt új katalógus létrehozására, illetve meglévő katalógus cseréjére vagy módosítására is használhatja.
 
-1.  Válassza a **Beszerzés és forrás** \> **Katalógusok** \> **Szállítói katalógusok** elemet, és kattintson duplán a használni kívánt katalógusra.
+1. Válassza a **Beszerzés és forrás** \> **Katalógusok** \> **Szállítói katalógusok** elemet, és kattintson duplán a használni kívánt katalógusra.
 
-2.  Töltse le az aktuális katalógus importálási sablonját (XSD-fájl). Itt: **Katalógus módosítása** oldal, **Műveleti ablak**, **Katalógusok** lap, **Kapcsolódó információk** csoport, kattintson a **Katalógussablon előállítása** elemre, és válassza ki a **Beszerzési kategória** elemet.
+2. Töltse le az aktuális katalógus importálási sablonját (XSD-fájl). Itt: **Katalógus módosítása** oldal, **Műveleti ablak**, **Katalógusok** lap, **Kapcsolódó információk** csoport, kattintson a **Katalógussablon előállítása** elemre, és válassza ki a **Beszerzési kategória** elemet.
 
-    -   A **Beszerzési kategória** lehetőséggel olyan katalógussablon generálható, amely tartalmazza azokat a beszerzési kategóriákat, amelyekben a szállító jogosult termékeket kínálni.
+    - A **Beszerzési kategória** lehetőséggel olyan katalógussablon generálható, amely tartalmazza azokat a beszerzési kategóriákat, amelyekben a szállító jogosult termékeket kínálni.
 
 3. A **Mentés másként** párbeszédpanelen válassza ki azt a helyet, ahol a katalógusfájl-sablont tárolni szeretné, és mentse a fájlt.
 

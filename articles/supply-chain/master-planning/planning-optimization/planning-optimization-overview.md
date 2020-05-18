@@ -19,17 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: f88ee8067fdd816ba6890ee28bafe8fa4d3b3ac5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208731"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323393"
 ---
 # <a name="planning-optimization-overview"></a>Tervezés optimalizálása – áttekintés
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management Tervezésoptimalizálási bővítménye lehetővé teszi, hogy az alaptervezési számítás a Dynamics 365 Supply Chain Management szolgáltatáson és a kapcsolódó SQL-adatbázison kívül történjen. A tervezésoptimalizálás funkcióhoz társított előnyök között szerepel a továbbfejlesztett teljesítmény és az SQL-adatbázisra tett minimális hatás az Alaptervezés futtatásakor. A gyors tervezési futtatások a nyitvatartási idő alatt is megtehetők, így a tervezők azonnal reagálni tudnak a igényre vagy a paraméterek változásaira.
 

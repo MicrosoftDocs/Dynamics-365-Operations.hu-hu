@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 6ace25bc64bcd5afce7e3f23479b0d93535b1a9b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 40d1090d18857c6978ce42a34d6d67241f9df18f
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201502"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346329"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.8 verziójában (2020. február)
 
@@ -51,7 +51,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Igény feltöltési munkafolyamatának elválasztása a kitárolási munka létrehozása lépéstől](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
 - [Munka felosztása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
 - [Rendszer által irányított fürtkitárolásr](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) – további tájékoztatás: [Rendszer által irányított fürtkitárolás](../warehousing/system-directed-cluster-pick.md).
-- [Raktári alkalmazás feladatellenőrzése az RSAT-tel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
+- [Raktárkezelő alkalmazás feladatellenőrzése az RSAT-tel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Raktári kiadási szabály](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Hullám állapotának megjelenítése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
 - [Hullámsablon csoportosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)

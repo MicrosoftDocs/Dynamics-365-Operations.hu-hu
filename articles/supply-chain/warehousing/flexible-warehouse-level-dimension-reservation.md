@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205667"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346468"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
@@ -233,7 +233,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a Warehouse Mobile App (WMA) alkalmazásban a kitárolási munka megkezdésekor.</li>
+<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka megkezdésekor.</li>
 <li>Válassza a <strong>Javaslás</strong> lehetőséget.</li>
 <li>Erősítse meg, hogy a kötegelt mennyiség elérhetősége alapján új helyet javasolt.</li>
 </ol>
@@ -247,10 +247,10 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 </tr>
 <tr>
-<td>Nem</td>
+<td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a WMA alkalmazásban a kitárolási munka megkezdésekor.</li>
+<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka megkezdésekor.</li>
 <li>Adja meg a helyet manuálisan.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Teljes</strong> menüpontot a WMA alkalmazásban a kitárolási munka feldolgozásakor.</li>
+<li>Válassza ki a <strong>Teljes</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka feldolgozásakor.</li>
 <li>A <strong>Mennyiség kitárolása</strong> mezőbe írja be a szükséges kitárolás egy részleges mennyiségét, hogy jelezze a teljes mennyiséget.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Kezdje meg a mozgatást a WMA alkalmazáson.</li>
+<li>Kezdje meg a mozgatást a raktárkezelő alkalmazáson.</li>
 <li>Adja meg Innen és Ide helyeket.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőbe írja be a következőt: <strong>Nincs újrafelosztás</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőbe írja be a következőt: <strong>Nincs újrafelosztás</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 <li>Válassza ki a helyet vagy a rendszámtábla a listából.</li>
@@ -545,10 +545,10 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 </tr>
 <tr>
 <td>A <strong>Rövid kitárolás</strong> típusra munkakivétel ven beállítva, amelynek értelmében <strong>Cikk újbóli felosztása</strong> = <strong>Manuális</strong>, <strong>Készlethelyesbítés</strong> = <strong>Igen</strong>, és <strong>Foglalások eltávolítása</strong> = <strong>Nem</strong>. Ezenkívül a <strong>Cikk újbóli manuális felosztásának engedélyezése</strong> beállítás a dolgozó esetén engedélyezve van.</td>
-<td>Nem</td>
+<td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 </ol>
@@ -558,10 +558,10 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 </tr>
 <tr>
 <td>A <strong>Rövid kitárolás</strong> típusra munkakivétel ven beállítva, amelynek értelmében <strong>Cikk újbóli felosztása</strong> = <strong>Manuális</strong>, <strong>Készlethelyesbítés</strong> = <strong>Igen</strong>, és <strong>Foglalások eltávolítása</strong> = <strong>Igen</strong>. Ezenkívül a <strong>Cikk újbóli manuális felosztásának engedélyezése</strong> beállítás a dolgozó esetén engedélyezve van.</td>
-<td>Nem</td>
+<td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 <li>Válassza ki a helyet vagy a rendszámtábla a listából.</li>
@@ -585,7 +585,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a WMA alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást automatikus újrafelosztással</strong> lehetőséget.</li>
 </ol>

@@ -1,6 +1,6 @@
 ---
-title: Azonosítótábla fogadása a Raktárkezelő mobilalkalmazáson keresztül
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
+title: Azonosítótábla-bevételezés a raktározás alkalmazás használatával
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261338"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346376"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Azonosítótábla fogadása a Raktárkezelő mobilalkalmazáson keresztül
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Azonosítótábla-bevételezés a raktározás alkalmazás használatával
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
+Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
 
 Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, amikor a raktárkezelési folyamatokat egy átmozgatási rendelés szállítására használják. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>A bevételezési összesítő lap megjelenítése vagy kihagyása
 
-Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes Raktári alkalmazásfolyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
+Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes raktárkezelés alkalmazásfolyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen ez a funkció a következő módon van listázva:
 

@@ -3,7 +3,7 @@ title: Kedvencek ikon hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001537"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295080"
 ---
 # <a name="add-a-favicon"></a>Kedvencek ikon hozzáadása
-
 
 [!include [banner](includes/banner.md)]
 
@@ -41,23 +40,48 @@ Bár több, különböző méretű és fájltípusú kedvencek ikont is webhelx�
 
 Kedvencek ikon a webhely eszközgyűjteményébe való feltöltéséhez kövesse az alábbi lépéseket.
 
-1. Ugorjon az **Eszközök \> Feltöltés \> Eszközök feltöltése** pontra.
-1. Keresse meg és válassza ki a kedvencek ikont a helyi fájlrendszerben.
-1. Adja meg a címet, majd kattintson az **OK** gombra. 
-1. A jobb oldali Tulajdonságok ablaktáblán másolja a kedvencek ikon nyilvános URL-jét.
+1. A bal oldali navigációs ablakban válassza ki a **Médiatár** lehetőséget.
+1. A parancssávon válassza a **Feltöltés \> Médiaelemek feltöltése**.
+1. A Fájlkezelő ablakában tallózzon a feltölteni kívánt kedvencek ikon képfájljához jelölje ki, majd válassza a **Megnyitás** lehetőséget.
+1. A **médiaelem feltöltése** párbeszédpanelen írja be a szükséges címet és a helyettesítő szöveget.
+1. Ha azonnal közzétenné a képet a feltöltés után, jelölje be a **Médiatartalom közzététele a feltöltés után** jelölőnégyzetet.
 
-> [!NOTE]
-> Ha nem jelöli be az **Eszközök közzététele a feltöltés után** beállítás jelölőnégyzetét, akkor vissza kell térnie az **eszközök** oldalra, és manuálisan kell közzétennie a kedvencek ikont később.
+    > [!NOTE]
+    > Ha nem jelöli be az **Médiaelemek közzététele a feltöltés után** jelölőnégyzetét, akkor vissza kell térnie az **Médiaelemek** oldalra, és manuálisan kell közzé tennie a kedvencek ikont később.
 
-## <a name="create-the-html-for-the-favicon"></a>A HTML létrehozása a kedvencek ikon számára
+1. Válassza ki az **OK** lehetőséget.
+1. A jobb oldali Tulajdonságok ablaktáblán másolja a kedvencek ikon nyilvános URL-jét. Ezt az URL-címet fogja később használni.
 
-A kedvencek ikon HTML-kódjának létrehozásához használja a következő HTML-kódrészletet. A **href** attribútum esetében cserélje le a **„Nyilvános\_URL\_a\_kedvencek\_ikonhoz”** értékét a korábban kimásolt nyilvános URL-címre.
+## <a name="create-the-html-for-your-favicon"></a>A HTML létrehozása a kedvencek ikonja számára
+
+A kedvencek ikon HTML-kódjának létrehozásához használja a következő HTML-karakterláncot. A **href** attribútum esetében cserélje le a **Nyilvános\_URL\_a\_kedvencek\_ikonhoz** értékét a korábban kimásolt nyilvános URL-címre.
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a>Adja hozzá a kedvencek ikon HTML-kódját az oldalak \<fejléc\> eleméhez
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Hozzon létre egy oldaltöredékét, amely metataget tartalmaz a kedvenc ikonjához
 
-Egy kedvencek ikon a webhelyhez történő hozzáadásához használja ugyanazt az eljárást, amellyel bármilyen típusú HTML-kódot vagy parancsfájlt hozzáadhat a webhelyoldalak **\<fejléc\>** eleméhez.
+Az oldaltöredék létrehozásához, amely metacímkét tartalmaz a kedvenc ikonjához kövesse az alábbi lépéseket.
+
+1. Lépjen az **Oldaltöredékek** pontra, és válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki **Metacímkék** annak a modulnak, amelyen az oldaltöredék alapul.
+1. Írja be az oldaltöredék nevét, majd kattintson az **OK** gombra.
+1. A töredék hierarchiafájában válassza ki az **Alapértelmezett metacímkék** gyermekét.
+1. A jobb oldali panelen a **Metacímkék** területen válassza a **Hozzáadás** lehetőséget, majd adja meg a kedvencek ikonhoz korábban létrehozott HTML-karakterláncot. 
+1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet az oldaltöredék közzétételhez.
+
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>A metacímke oldaltöredékének hozzáadása az oldalak HTML-fejléc szakaszához
+
+A metacímke oldaltöredékének hozzáadásához az oldalak HTML **fejléc** szakaszához kövesse az alábbi lépéseket.
+
+1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a kedvencek ikont, majd válassza a **Szerkesztés** lehetőséget.
+1. A sablonhierarchia-fában válassza ki a **HTML-fejléc** tárolójának jobb oldalán található három pont (**…**) gombot, majd válassza az **Oldal töredék hozzáadása** lehetőséget.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a metacímke oldaltöredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a sablon közzétételhez.
+
+> [!NOTE]
+> Ha a webhely egynél több sablont használ, akkor mindegyikhez hozzá kell adnia a metacímkék oldaltöredékét.
+
+Ha megtekinti azon lapok előnézetét, amelyek azon a sablonon alapulnak, amelyhez hozzáadta a metacímkék oldaltöredékét, immár látható a kedvencek ikon a böngészőlapon.
 
 ## <a name="additional-resources"></a>További erőforrások
 

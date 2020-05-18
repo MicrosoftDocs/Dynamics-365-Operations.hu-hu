@@ -3,7 +3,7 @@ title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270210"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295269"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -87,7 +87,7 @@ A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 
 ### <a name="reply-urls"></a>Válasz URL-címek
 
-A válasz URL-címek fontosak, mivel megengedik a visszajövő tartományok engedélyezését, amikor a webhelye meghívja az Azure AD B2C-t a felhasználó hitelesítéséhez. Ez lehetővé teszi a hitelesített felhasználó visszaküldését abba a tartományba, ahonnan bejelentkeznek (a webhelye tartományába). 
+A válasz URL-címek fontosak, mivel egy engedélyezési listát biztosítanak a visszajövő tartományokhoz, amikor a webhelye meghívja az Azure AD B2C-t a felhasználó hitelesítéséhez. Ez engedélyezi a hitelesített felhasználó visszaküldését abba a tartományba, ahonnan bejelentkeznek (a webhelye tartományába). 
 
 A **Válasz URL** mezőben az **Azure AD B2c – Alkalmazások \> Új alkalmazás** képernyőjén a válasz URL-cím mezőben külön sorokat kell megadni a webhely-tartományához (ha a környezet létesítése megtörtént) és a Commerce által generált URL-címhez. Ezeknek az URL-címnek mindig érvényes URL-formátumot kell használniuk, és csak alap URL-címek lehetnek (nem lehetnek záró perjelek vagy elérési utak). Ezt követően az ``/_msdyn365/authresp`` karakterláncot a következő példáknak megfelelően kell hozzáfűzni az alap URL-címekhez.
 
@@ -121,7 +121,7 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 
     | **Attribútum összegyűjtése** | **Igény visszaküldése** |
     | ---------------------- | ----------------- |
-    |                        | E-mail-címek   |
+    | E-mail cím          | E-mail-címek   |
     | Utónév             | Utónév        |
     |                        | Identitásszolgáltató |
     | Vezetéknév                | Vezetéknév           |
@@ -246,10 +246,6 @@ Az új Azure AD B2C információval rendelkező központ frissítéséhez hajtsa
     1. A **Típus** mezőbe írja be a **Nyilvános** kifejezést.
     1. A **Felhasználó típusa** mezőbe írja be az **Ügyfél** kifejezést.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-1. A Commerce keresőmezőjében keressen rá a **Számsorozatok** lehetőségre (Szervezeti felügyelet > Számsorozatok).
-1. A művelet ablaktáblán válassza a **Szerkesztés** elemet a **Karbantartás** területen.
-1. Az **Általános** gyorslapon válassza a **Nem** lehetőséget a **Manuális** beállításhoz.
-1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget. 
 1. A Commerce keresőmezőjében keressen rá az **Elosztási ütemezés** elemre
 1. Az **Elosztási ütemezések** lap bal oldali navigációs menüjében válassza a **1110 globális konfiguráció** feladatot.
 1. A műveleti ablaktáblán kattintson a **Futtatás most** elemre.
@@ -304,13 +300,14 @@ Az AAD B2C bérlői alkalmazás adatainak a Commerce rendszerbe történő hozz�
 1. A megjelenő képernyőn adja meg a következő szükséges elemeket a B2C bérlő és az alkalmazás értékeit használva. A nem kötelező mezők (a csillag nélküliek) üresen maradhatnak.
 
     - **Alkalmazás neve**: A B2C alkalmazás neve (például „Fabrikam B2C”).
-    - **Bérlő neve**: A B2C bérlője neve, például „Fabrikam”.
+    - **Bérlő neve**: A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
     - **Felejtse el a jelszót házirend azonosító**: A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
     - **Regisztrációs bejelentkezési házirendazonosító**: A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
     - **Ügyfél GUID**: A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
     - **Profilirányelv azonosítója**: A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
 
 1. Válassza ki az **OK** lehetőséget. Ekkor megjelenik a B2C alkalmazásának neve a listán.
+1. A változtatások mentéséhez válassza a **Mentés** elemet.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>A B2C alkalmazás társítása a webhelyéhez és a csatornához
 

@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 5bfa8a1f025c2884f31b9fcb817e008a007ac010
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209743"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323531"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>Automatikus megerősítés a tervezési optimalizációval
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerősítheti (azaz kiadhatja) a tervezett rendeléseket. A tervezett rendelések a megerősítéskor tényleges beszerzési rendelésekké, átmozgatási rendelésekké vagy termelési rendelésekké alakulnak át. A tervezés optimalizálása használata során a program a tervezett rendeléseket az Alaptervezés futtatása során megerősíti, amikor a rendelés dátuma (azaz a kezdő dátum) a megerősítés időkorlátján belül van.

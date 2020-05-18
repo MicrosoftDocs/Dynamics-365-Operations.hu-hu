@@ -3,7 +3,7 @@ title: SUMIF ER-függvény
 description: A témakör tájékoztatást nyújt a SUMIF Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042481"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290200"
 ---
-# <a name="SUMIF">SUMIF ER-függvény</a>
+# <a name=""></a><a name="SUMIF">SUMIF ER-függvény</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ A `condition value` argumentumban a **„\*”** helyettesítő karakter haszná
 ## <a name="example"></a>Példa
 
 Ha többet szeretne megtudni e függvény használatáról, tekintse meg az [ER kimeneti adatformátum használata számlálás és összegzés céljából](tasks/er-format-counting-summing-1.md) című feladat-útmutatót (ez az **Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése** üzleti folyamat része).
+
+A funkció használatával kapcsolatos további példákat és tudnivalókat lásd: [A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-sequence-element.md#Example) és [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md#Example).
 
 ## <a name="additional-resources"></a>További erőforrások
 
