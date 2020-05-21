@@ -3,7 +3,7 @@ title: A tervezésoptimalizálása illeszkedési elemzése
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni az aktuális beállításokat és adatokat a Tervezésoptimalizálás funkció szolgáltatásaival szemben.
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
-ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
+ms.openlocfilehash: 9bf19604d246988e05b91c8a41b1f57b523d2192
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277798"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346653"
 ---
 # <a name="planning-optimization-fit-analysis"></a>A tervezésoptimalizálása illeszkedési elemzése
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Ha szeretné megtekinteni, hogy az aktuális beállítások és adatok kompatibilisek-e a tervezésoptimalizálás funkcióval, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezésoptimalizálás illeszkedési elemzése** lehetőséget, majd az **Elemzés futtatása** parancsot. Ha az elemzés bármilyen következetlenséget talál, akkor ugyanazon a lapon szerepelnek. (Az elemzés néhány percet is igénybe vehet.)
@@ -73,6 +72,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Vállalatok közötti | Tervezett alsóbb rétegbeli igényt tartalmazó alaptervek: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálása engedélyezése esetén az alaptervezésbe nem szerepel az alacsonyabb szintű tervezett igény, a beállítástól függetlenül. Ne feledje, hogy a kiadott/megerősített rendelések továbbra is a szokásos vállalatközi funkciókkal együtt működnek, és a legtöbb esetet lefedik. |
 | Kanban | Tervezett rendelési típusú kanbannal rendelkező cikklefedettségi rekordok: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálása során a program figyelmen kívül hagyja a kanban beállítású cikkfedezeti beállítást. A kanban tervezett rendelési típusa figyelmeztetést hoz létre az Alaptervezés során, és a rendszer a kapcsolódó igény fedezésére tervezett beszerzési rendeléseket hoz létre. |
 | Kanban | Kanban alapértelmezett rendelési típussal rendelkező cikkek: _\#_ | Jelenleg a tervezés optimalizálása során a program figyelmen kívül hagyja a kanban beállítású alapértelmezett megrendeléstípust. A kanban alapértelmezett rendelési típus figyelmeztetést hoz létre az Alaptervezés során, és a rendszer a kapcsolódó igény fedezésére tervezett beszerzési rendeléseket hoz létre. |
+| Termékéletciklus állapota   | A termékéletciklus állapotai nem aktívak a tervezéshez: _\#_ | Ez a funkció függőben van. Jelenleg a termék életciklusállapota figyelmen kívül van hagyva bekapcsolat Tervezési optimalizálás esetén. A tervszintű termékszűrő módosításával elkerülhető olyan termékek belefoglalása, amelyeknél a termék életciklus-állapota le van tiltva a tervezéshez. |
 | Termelés | Darabjegyzéksorok kerekítéssel vagy többszörös beállítással: _\#_ | Ez a funkció függőben van. Jelenleg a kerekítés és a többszörös beállítás figyelmen kívül marad a darabjegyzéksorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. |
 | Termelés | Darabjegyzék-/képletsorok képletmértékkel: _\#_ | Ez a funkció függőben van. Jelenleg a képletmérték figyelmen kívül marad a darabjegyzék- és képletsorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. |
 | Termelés | Darabjegyzék-/képletsorok cikkhelyettesítéssel (tervcsoportok): _\#_ | Ez a funkció függőben van. Jelenleg a cikkhelyettesítés (tervcsoportok) figyelmen kívül marad a darabjegyzék- és képletsorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. |
@@ -99,7 +99,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Értékesítési ajánlatok | Olyan alaptervek, amelyeknél engedélyezve vannak az értékesítési ajánlatok: _\#_ | Ez a funkció függőben van. A tervezés optimalizálás engedélyezése során a program figyelmen kívül hagyja az árajánlatokat. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. |
 | Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: _\#_ | Ez a funkció függőben van. Jelenleg az eltarthatósági idő figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. |
 
-## <a name="related-resources"></a>Kapcsolódó erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
 [Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
 

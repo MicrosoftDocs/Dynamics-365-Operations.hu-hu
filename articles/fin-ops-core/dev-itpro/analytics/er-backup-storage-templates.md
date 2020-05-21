@@ -3,7 +3,7 @@ title: ER-sablonok biztonságimentés-tárhelye
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) biztonságimentés-tárhelyét a sablonok helyreállításához.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
+ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771421"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321666"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-sablonok biztonságimentés-tárhelye
 
@@ -42,6 +42,8 @@ A sablonok biztonsági mentése funkcióval elérheti, hogy mindig rendelkezésr
 > [!NOTE]
 > Ez a funkció csak akkor használható, ha Blob-tárhely van kiválasztva a fizikai tárolási helyként az ER-sablonokhoz.
 
+## <a name="automated-recovery-and-notification"></a>Automatikus helyreállítás és értesítés
+
 Ennek a funkciónak az esetében a program automatikusan menti az aktuális környezet ER formátumkonfigurációjának minden sablonját a sablonok biztonsági mentési tárhelyére (a ERDocuDatabaseStorage-adatbázistábla), amikor a következő események történnek:
 
 - Egy új, a sablont tartalmazó ER formátumkonfigurációt importál.
@@ -59,7 +61,7 @@ Ha a kimenő dokumentumok létrehozásához, beszállítói fizetések feldolgoz
 
 A **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméter beállításához végezze el az alábbi lépéseket:
 
-1. A Finance and Operations alkalmazásban nyissa meg a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációs oldal** menüt.
+1. A Finance and Operations alkalmazásban Nyissa meg a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk** oldalt.
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. A **Felhasználó paraméterei** párbeszédpanelen állítsa be a szükséges értéket a **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméterhez.
 
@@ -84,9 +86,13 @@ Alapértelmezésként a folyamat automatikusan létrehozza az ER formátumúkonf
 
 Ha a **Sablonok biztonsági másolatai elkészítésének leállítása** elem **Igen** értékre van beállítva, és nem szeretné megtartani azokat a biztonsági másolatokat, amelyek korábban a sablonokról készültek válassza a **Biztonsági mentés tárhelyének karbantartása** lehetőséget az **Elektronikus jelentéskészítés paraméterei** oldalon.
 
-Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentést kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
+Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentés táhelyének kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
 
 ![Elektronikus jelentéskészítés paraméterei lap](./media/GER-BackupTemplates-5.png)
+
+## <a name="manual-recovery"></a>Manuális helyreállítás
+
+Ugrás a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Hibás sablonok helyreállítása** lehetőséget az ER-sablonok biztonsági mentési helyről az elsődleges tárolóhelyre történő visszaállítási folyamatának manuális kezdeményezéséhez. A folyamat elkezdése előtt a **Hibás sablonok visszaállítása** lapon megadhatja, hogy a program interaktívan hajtja-e végre, vagy ehhez a kötegelt feldolgozást ütemez ehhez a program.
 
 ## <a name="supported-deployments"></a>Támogatott telepítések
 

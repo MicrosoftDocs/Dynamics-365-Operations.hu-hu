@@ -3,7 +3,7 @@ title: Engedmények megjelenítése a pénztárban
 description: Ez a témakör azt mutatja be, hogy a Microsoft Dynamics 365 Commerce hogyan segíti az értékesítési munkatársak számára megismerni a promóciókkal kapcsolatos tudnivalókat, valamint azt, hogy hogyan használhatók fel a keresztértékesítéshez és a felülértékesítéshez.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265582"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334708"
 ---
 # <a name="show-discounts-in-pos"></a>Engedmények megjelenítése a pénztárban
 
@@ -54,9 +54,9 @@ A **Minden engedmény** oldalon az értékesítő kulcsszavak szerint is kereshe
 
 A többsoros engedmények, például mennyiségi kedvezmények, kombinációs engedmények és küszöbérték-kedvezmények kiváló módszerek arra, hogy ösztönözzék a vevőket, hogy több terméket vegyenek vásároljanak a nagyobb engedményekhez. Éppen ezért növelik a vevők kosarát és a kiskereskedelmi bevételek mértékét is. Ezek az engedmények közzétehetők e-commerce weboldalakon, a közösségi médiában és a bolt szalaghirdetésein.
 
-Ha azonban ezek a nyilvános módszerek használva is vannak előfordulhat, hogy a vevők nem használják ki a lehetőséget, hogy igénybe vegyék a promóciókat. Annak érdekében, hogy az értékesítők egyszerűen megtanulhassák a kiválasztott sorra vagy akár a teljes kosárra vonatkozó promóciókat, a kiskereskedők az „Összes engedmény megtekintése” műveletre vonatkozó gombot a pénztár bármelyik gombrács mezőjébe felvehetik. Azt ajánljuk, hogy a gombot **Tranzakciós** lap gombrácsához adják hozzá. Ily módon egy értékesítési munkatárs kiválaszthat egy tranzakciósort, majd a gombra kattintva megjelenítheti a kiválasztott sorhoz rendelkezésre álló összes engedményt. Az értékesítési munkatárs másik lapot is kiválaszthat, amelyen láthatók a teljes tranzakcióra vonatkozó kedvezmények.
+Ha azonban ezek a nyilvános módszerek használva is vannak előfordulhat, hogy a vevők nem használják ki a lehetőséget, hogy igénybe vegyék a promóciókat. Annak érdekében, hogy az értékesítők egyszerűen megtanulhassák a kiválasztott sorra vagy akár a teljes kosárra vonatkozó promóciókat, a kiskereskedők az „Elérhető engedmények megtekintése” műveletre vonatkozó gombot a **Tranzakció** oldal gombrács mezőjébe felvehetik. Ily módon egy értékesítési munkatárs kiválaszthat egy tranzakciósort, majd a gombra kattintva megjelenítheti a kiválasztott sorhoz rendelkezésre álló összes engedményt. Az értékesítési munkatárs másik lapot is kiválaszthat, amelyen láthatók a teljes tranzakcióra vonatkozó kedvezmények.
 
-A korábban említett **Összes engedmény** lap csak olyan engedményeket mutat be, amelyek nem ütköznek az alkalmazott kedvezményekkel. Ez a viselkedés segít abban, hogy ha egy értékesítési munkatárs értesíti a vevőt a kedvezményről, és a vevő a szükséges lépést hajtja végre (például a vevő még egy cikket vásárol, hogy 10% kedvezményt kapjon), akkor az engedmény alkalmazva legyen a tranzakcióra. Ahogy azt korábban említettük kuponalapú kedvezmények csak akkor jelennek meg, ha az **Alkalmazás kuponkód nélkül** beállítás be van kapcsolva.
+Az **Összes engedmény** lap csak olyan engedményeket mutat be, amelyek nem ütköznek az alkalmazott kedvezményekkel. Ez a viselkedés segít abban, hogy ha egy értékesítési munkatárs értesíti a vevőt a kedvezményről, és a vevő a szükséges lépést hajtja végre (például a vevő még egy cikket vásárol, hogy 10% kedvezményt kapjon), akkor az engedmény alkalmazva legyen a tranzakcióra. A kuponalapú kedvezmények csak akkor jelennek meg, ha az **Alkalmazás kuponkód nélkül** beállítás be van kapcsolva.
 
 Olyan egyszerű esetben, amikor az összes engedménynek ugyanaz a prioritása, és az engedmény párhuzamosságmódja **Kombinált** és az engedmény párhuzamosságága vezérlőjének beállítása **Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között** a **Minden kedvezmény** oldal megjeleníti a termékhez elérhető összes kedvezményt, mivel az összes kedvezmény kombinálva van, és nem ütköznek egymással.
 

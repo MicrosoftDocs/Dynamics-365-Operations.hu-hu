@@ -3,7 +3,7 @@ title: Áttekintés
 description: A Dynamics 365 Human Resources alkalmazásban a Szabadság és távollét munkaterület rugalmas keretrendszert biztosít az új szabadságtervek és a kérések kezelésére szolgáló munkafolyamatok létrehozásához, valamint intuitív önkiszolgáló oldalt biztosít az alkalmazottak számára a szabadságok kéréséhez.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226230"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325765"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -78,8 +78,16 @@ Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen az alkalmazottak el
 
 ## <a name="leave-and-absence-preview-features"></a>Szabadság és távollét előzetes funkciói
 
-A **Tesztkörnyezet** segítségével kipróbálhatja a szabadságok és távollétek új előzetes funkcióit. Az előzetes funkciók bekapcsolásával kapcsolatos információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben. Az előzetes funkciók a következők:
+A **Tesztkörnyezet** segítségével kipróbálhatja a szabadságok és távollétek új előzetes funkcióit. Az előzetes funkciók bekapcsolásával kapcsolatos információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben. 
 
-- **Szabadság felfüggesztése** – Egy alkalmazottra vonatkozóan felfüggesztheti a szabadságokat és a távollétet. A szabadság felfüggesztése kiválasztott távolléti típusoknál leállítja az elhatárolást. Ha a felfüggesztés a könyvelés feldolgozását követően következik be, akkor a szabadság felfüggesztése az alkalmazott szabadságának egyenlegéhez egy arányosan korrigált kiigazítást hoz létre. 
+[!include [banner](includes/preview-feature.md)]
+
+Az előzetes funkciók a következők:
+
+- **Szabadság felfüggesztése** – Egy alkalmazottra vonatkozóan felfüggesztheti a szabadságokat és a távollétet. A szabadság felfüggesztése kiválasztott távolléti típusoknál leállítja az elhatárolást. Ha a felfüggesztés a könyvelés feldolgozását követően következik be, akkor a szabadság felfüggesztése az alkalmazott szabadságának egyenlegéhez egy arányosan korrigált kiigazítást hoz létre. Az alkalmazottak szabadságának felfüggesztése során okkódok is megadhatók. A felhasználói élmény frissítve lett a felfüggesztés jelzéséhez. 
 
 - **Átviteli szabályok** – Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahová az átviteli korrekciók át lesznek helyezve. Ha például egy alkalmazott 10 napot visz át, akkor a 10 napnál más szabadság-típust is kiválaszthat. 
+
+- **Okkódok és megjegyzések hozzáfűzése a módosításokhoz** – Az alkalmazotti szabadság egyenlegének módosításakor egy okkódot és megjegyzést is megadhat. 
+
+- **Átállás a szabadság és távollét paramétereire** – Mostantól csak a szabadság és a távollét paraméterei használhatók a humán erőforrások paramétereinek használata helyett. 

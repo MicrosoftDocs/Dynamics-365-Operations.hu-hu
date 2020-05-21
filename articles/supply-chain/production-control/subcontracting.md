@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211054"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346422"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
@@ -211,7 +211,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 
     ![A Munka lap kétféle munkát jelenít meg a nyersanyag kitárolásához.](./media/subcontract22_work-page.png)
 
-26. Indítsa el a raktár alkalmazást a 10-es művelet raktári munkájának feldolgozásához.
+26. Indítsa el a raktárkezelő alkalmazást a 10-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -229,7 +229,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 
     Vegye figyelembe, hogy a termelési rendelés állapota ekkor **Elindítva**. A 10-es művelet anyagait a kitárolási lista naplójának automatikus feladása használja el. A 10-es művelet időfelhasználásának elszámolása egy útvonalkártya-napló automatikus feladásával történik.
 
-32. Indítsa el a raktár alkalmazást a 20-as művelet raktári munkájának feldolgozásához.
+32. Indítsa el a raktárkezelő alkalmazást a 20-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 

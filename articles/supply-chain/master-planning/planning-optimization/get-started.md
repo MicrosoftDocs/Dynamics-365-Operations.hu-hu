@@ -3,7 +3,7 @@ title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213515"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339878"
 ---
 # <a name="get-started-with-planning-optimization"></a>Első lépések a tervezési optimalizálással
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 A tervezés optimalizálása funkció jelenleg nem támogatja az összes olyan funkciót, amely a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba épített tervezési motorban rendelkezésre áll. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. Alapértelmezés szerint a Tervezés optimalizálása funkció nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban. Ennek megfelelően lehetősége van arra, hogy az értékelést a bekapcsolás előtt végezze el.
@@ -36,6 +35,11 @@ A tervezés optimalizálása funkció jelenleg nem támogatja az összes olyan f
 Végül a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management tervezési motorját.
 
 A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a tervezésoptimalizálás illeszkedési elemzésének eredményeit. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
+
+### <a name="availability"></a>Elérhetőség
+A Tervezési optimalizálása jelenleg a következő Azure földrajzi területeken érhető el: Egyesült Államok, Kanada, Európa, Egyesült Királyság és Ausztrália. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott.
+
+Ne feledje, hogy a Tervezés optimalizálása nem támogatott a Dynamics 365 Supply Chain Management helyszíni telepítései esetében.
 
 ### <a name="licensing"></a>Licenckezelés
 
@@ -46,7 +50,7 @@ Ha az alaptervezést az aktuális licenccel futtatja, akkor nem kell megvásáro
 A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés optimalizálása bővítményt a következőhöz: Dynamics 365 Supply Chain Management. A bővítményt a LCS-projektből érheti el, és a Supply Chain Management felhasználói felületéről (UI) be lehet kapcsolni a tervezés optimalizálása funkcióját.
 
 > [!NOTE]
-> A tervezésoptimalizálás követelménye egy LCS-kompatibilis magas rendelkezésre állású környezet (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával.
+> A tervezésoptimalizálás követelménye egy 2. szintű vagy magasabb LCS-kompatibilis magas rendelkezésre állású környezet (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
 
 1. Jelentkezzen be a LCS-ba, majd nyissa meg a kívánt környezetet.
 1. Lépjen a **Teljes részletek** elemre.
@@ -88,11 +92,11 @@ A **Tervezés optimalizálása használata** beállítás határozza meg, hogy m
 
 Ha a Tervezésoptimalizálás előzetes verziója be van kapcsolva, akkor az alaptervezést a rendszer a Tervezésoptimalizálás bővítménnyel végzi. Ebben az esetben az Alaptervezés eredményeit és funkcióit érinti a program.
 
-## <a name="related-resources"></a>Kapcsolódó erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
 [Az előzetes verzió feltételei és kikötései](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[Tervezés optimalizálása – áttekintés](planning-optimization-overview.md)
+[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
 
 [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
 

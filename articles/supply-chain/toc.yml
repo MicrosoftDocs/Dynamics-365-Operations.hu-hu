@@ -417,7 +417,7 @@
                   href: asset-management/controlling-and-reporting/work-hour-control.md
                 - name: Hibás eszköz költségkontrollja
                   href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
-                - name: Eszköz hibájának elemzése
+                - name: Eszköz hibaelemzése
                   href: asset-management/controlling-and-reporting/asset-fault-analysis.md
                 - name: Eszköz KPI-k
                   href: asset-management/controlling-and-reporting/asset-kpis.md
@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Karbantartás állapota
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Eszközkezelés integrálása a Dynamics 365 Guides szolgáltatással
+              href: asset-management/asset-management-guides-integration.md
             - name: Eszközkezelési mobil munkaterület
               href: asset-management/asset-management-mobile-workspace.md
         - name: Adatkezelés
@@ -703,11 +705,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elemzési jelentések létrehozása Power BI Desktop használatával
+                - name: Elemzési jelentések létrehozása a Power BI Desktop használatával
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elemzési munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával
+                - name: Elemzési munkaterületek és jelentések biztosításának támogatása Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Jelentési megoldások létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
@@ -747,7 +749,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Formátumkonfiguráció létrehozása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: A létrehozott formátum elemeinek leképezése az adatmodellelemekhez
+                        - name: A létrehozott formátum összetevőinek leképezése adatmodellelemekhez
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Az előkészített ER-megoldás tesztelése a célalkalmazásban
                       items:
@@ -1143,19 +1145,19 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az ER-formátum paramétereinek beállítása jogi személyenként
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER formátumú elemek végrehajtásának elhalasztása
+                - name: Az ER-formátumelemek végrehajtásának elhalasztása
                   items:
-                    - name: Egy szekvenciaelem végrehajtásának elhalasztása
+                    - name: Szekvenciaelem végrehajtásának elhalasztása
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Egy XML-elem végrehajtásának elhalasztása
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 'Elektronikus jelentéskészítési megoldások használata a következőben: Finance and Operations'
+            - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
                     - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Elektronikus jelentéskészítési sablonok mentése és helyreállítása
+                    - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
                       href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Tervezési optimalizálás áttekintése
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: A negatív aktuális készletet a rendszer nulla aktuális készletként kezeli
+                - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Tervezési optimalizálás kezdő lépései
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: A minimum-maximum feltöltési folyamat beállítása
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Munkasablon beállítása beszerzési rendelésekhez
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: A raktározási alkalmazás telepítése és konfigurálása
               items:
                 - name: A telepítés és konfigurálás áttekintése
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Mobileszközök beállítása raktári munkához
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Azonosítótábla-bevételezés a Raktározás mobilalkalmazás használatával
+                - name: Azonosítótábla-bevételezés a Raktározás alkalmazás használatával
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
                   href: warehousing/tasks/set-up-mobile-device-menu.md

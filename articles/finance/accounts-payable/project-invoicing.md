@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658620"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331372"
 ---
 # <a name="project-invoicing"></a>Projekt számlázása:
 
@@ -112,6 +112,9 @@ Ha megrendel egy cikket egy szállítótól és a cikket egy projekthez rendeli,
 
 -   A cikk számlázása a projekt vevője felé: Állítsa a cikkre vonatkozó sortulajdonságot számlázandó értékre a beszerzési megrendelésben, majd állítsa ki a számlát a vevő felé a helyes projektszámlázási módszer alkalmazásával.
 -   Ne a projekt vevőjének számlázza le a cikket: azaz ne jelölje be a **Számlázható** sortulajdonságot a cikkre vonatkozó beszerzési rendeléssoron. Ezután le tudja számlázni a beszerzési rendelést, és nincs további teendője ezzel kapcsolatosan.
+
+> [!NOTE] 
+> A feloldott visszatartási sorok alapértelmezés szerint nem számlázhatók. Ez azt jelenti, hogy a feloldott visszatartásokhoz nem engedélyezett Számlajavaslat létrehozása.
 
 ## <a name="credit-notes"></a>Jóváírások
 Ha egy vevőszámlán negatív összeg szerepel, akkor a program jóváírásként kezeli a számlát. A dokumentum nyomtatásakor az a „Jóváírás” címet viseli. 

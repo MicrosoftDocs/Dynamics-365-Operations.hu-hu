@@ -3,7 +3,7 @@ title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés (ER) rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150815"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323692"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -52,7 +52,36 @@ Létezik egy [Nyomtatás](er-destination-type-print.md) céltípus is. A haszná
 
 ## <a name="overview"></a>Áttekintés
 
-A célokat csak a jelenlegi Finance példányba [importált](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) ER konfigurációkhoz, és csak az **Elektronikus jelentéskonfigurációk** oldalon elérhető formátumokban állíthatja be. Az elektronikus jelentéstételi célkezelés funkció itt érhető el: **Szervezeti adminisztráció** \> **Elektronikus jelentés** \> **Elektronikus jelentéskészítés célja**. Az **Elektronikus jelentéskészítés célja** lapon felül lehet bírálni a konfiguráció alapértelmezett működését. Az importált konfigurációk az **Új** gombra kattintva, majd a **Hivatkozás** mezőben a létrehozandó célbeállításokhoz használni kívánt konfiguráció kiválasztásával jeleníthetők meg, korábban nem láthatók.
+A célokat csak a jelenlegi Finance példányba [importált](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) ER konfigurációkhoz, és csak az **Elektronikus jelentéskonfigurációk** oldalon elérhető formátumokban állíthatja be. Az elektronikus jelentéstételi célkezelés funkció itt érhető el: **Szervezeti adminisztráció** \> **Elektronikus jelentés** \> **Elektronikus jelentéskészítés célja**.
+
+### <a name="default-behavior"></a>Alapértelmezett viselkedés
+
+Az ER formátumkonfiguráció alapértelmezett viselkedése attól függ, hogy milyen végrehajtási típust ad meg, amikor egy ER-formátum elindul.
+
+Ha az **Intrastat-jelentés** párbeszédpanel **Futtatás a háttérben** gyorslapján a **Kötegelt feldolgozás** beállítást **Nem** értékre állítja egy ER-formátum azonnal lefut interaktív módban. Amikor a végrehajtás sikeresen befejeződött egy generált kimenő dokumentum elérhetővé válik letöltésre.
+
+Ha az **Igen** értékre állítja be a **Kötegelt feldolgozás** beállítást, akkor a program [kötegelt](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) módban futtatja az ER-formátumot. A program létrehozta a megfelelő kötegelt feladatot, amely az **ER-paraméterek** **Futtatás hattérben** lapján létrehozott paraméterek alapján jön létre.
+
+> [!NOTE]
+> Egyfeladatleírás le sz kezdeményezve hogy tájékoztassa Önt egy ER-formátumleképezés futtatásáról. A végrehajtott ER-komponens nevét is tartalmazza.
+
+[![ER-formátum futtatása](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+A feladattal kapcsolatos információk több helyen is megtalálhatók:
+
+- Nyissa meg az **Általános** \> **Lekérdezések** \> **Kötegelt feladatok** \> **Saját kötegelt feladatok** az ütemezett feladat állapotának ellenőrzéséhez.
+- Nyissa meg a **Szervezeti felügyelet** \> **Elektronikus jelentéskészítés** \> **Elektronikus jelentéskészítési feladatok**, hogy ellenőrizze az ütemezett feladat állapotát és a teljesített feladat végrehajtási eredményeit. Amikor a feladat végrehajtása sikeresen befejeződött, válassza a **Fájlok megjelenítése** lehetőséget az **Elektronikus jelentéskészítési feladatok** lapon a létrejövő kimenő dokumentum lekéréséhez.
+
+    > [!NOTE]
+    > Ez a dokumentum az aktuális feladatrekordhoz tartozó mellékletként tárolódik, és a [Dokumentumkezelési](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) keretrendszer vezérli. Az ilyen típusú műtárgyak tárolásához használt [dokumentumtípus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) beállítása az [ER paraméterek](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) között történik.
+
+- Az **Elektronikus jelentéskészítési feladatok** lapon jelölje be a **Fájlok megjelenítése** a feladatok végrehajtása során létrejövő hibák és figyelmeztetések listájának megtekintéséhez.
+
+    [![ER feladatok listájának áttekintése](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Konfigurált viselkedés használata
+
+Az **Elektronikus jelentéskészítés célja** lapon felül lehet bírálni a konfiguráció alapértelmezett működését. Az importált konfigurációk az **Új** gombra kattintva, majd a **Hivatkozás** mezőben a létrehozandó célbeállításokhoz használni kívánt konfiguráció kiválasztásával jeleníthetők meg, korábban nem láthatók.
 
 [![Konfiguráció kiválasztása a Hivatkozás mezőben](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolh
 >
 > A létrehozott PDF-fájl legfeljebb 300 oldalas lehet.
 >
-> Jelenleg csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban.
+> A Microsoft Dynamics 365 Finance 10.0.9 (2020. április) verziójában csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban. A Dynamics 365 Finance 10.0.10 verzió (2020. május) kiadásával [megadhatja a lap tájolását](#SelectPdfPageOrientation) az Excel-kimenetből előállított PDF-dokumentumban, miközben beállít egy ER-célhelyet.
 >
 > Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet átalakításához, amely nem tartalmaz beágyazott betűtípusokat.
 
