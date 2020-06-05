@@ -1,5 +1,5 @@
 ---
-title: A Supply Chain Management súgóerőforrásai
+title: Supply Chain Management kezdőlapja
 description: Ez az oldal a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
 author: josaw1
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201525"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386387"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>A Supply Chain Management súgóerőforrásai
+# <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
 [!include [banner](includes/banner.md)]
 
@@ -38,10 +38,11 @@ A kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások a <a
 
 További információkért válasszon ki egy szolgáltatásterületet.
 
-- [Eszközök kezelése](asset-management/index.md)
+- [Eszközkezelés](asset-management/index.md)
 - [Költségkönyvelés](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Költségkezelés](cost-management/cost-management-home-page.md)  
 - [Készletkezelés](inventory/inventory-home-page.md)
+- [IoT-intelligencia](iot/iot-intelligence-home-page.md)
 - [Alaptervezés](master-planning/master-planning-home-page.md)
 - [Beszerzés és forrás](procurement/procurement-sourcing-overview.md)
 - [Termékinformációk kezelése](pim/product-information.md)

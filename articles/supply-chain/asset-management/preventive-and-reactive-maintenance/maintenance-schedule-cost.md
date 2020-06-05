@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8feea75bb223bdbd013b11cdf3a63d504afb04f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 91c5b2e70ee083bf2741e245f1ca840ab939ad3f
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208202"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382975"
 ---
 # <a name="maintenance-schedule-cost"></a>Karbantartási ütemezés költsége
 
@@ -46,7 +46,7 @@ Az Eszközkezelésben kiszámolható karbantartási ütemezés soraiban lévő k
 
 5. Kattintson az **OK** gombra az költségszámítás indításához.
 
-6. A **Karbantartási ütemezés költsége** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott műveleti ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
+6. A **Karbantartási ütemezés költsége** lap > **Csoportosítás alapja...** Művelet panel csoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott Művelet panel csoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
 7. Ha új költségszámítási számítást szeretne végezni, kattintson a **Költségszámítás** gombra.
 

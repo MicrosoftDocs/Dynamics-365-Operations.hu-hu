@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204286"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367407"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Fürt beállítása
+
+[!include[banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan lehet engedélyezni, hogy azok tárolhat cikkek több munka rendeléshez egy helyről egy időben a mobileszközök munka fürtök, a kitárolási csoport használandó dolgozók. Ezt nevezik *fürtkitárolás*.
 
@@ -36,35 +36,35 @@ Miután munkarendelések ki vannak adva a raktárba, a dolgozó használható mo
 
 Szükség esetén dolgozó lehet átadni a fürt egy másik dolgozó. Ekkor a fürt állapotát megfelelt. Ha a dolgozó használja a mobileszköz annak jelzésére, hogy a kitárolási és betárolási munka befejeződött, akkor a kliensben meg kell erősíteni a szállítmányt vagy rakományt.
 
-## <a name="set-up-cluster-picking"></a>Fürtkitárolás beállítása
+## <a name="enable-cluster-picking"></a>Fürtkitárolás engedélyezése
 
 Ahhoz, hogy a fürtkitárolás, be kell állítania a következőket:
 
--   **Fürtprofilok** – Adja meg, hogy automatikus legyen-e a fürtazonosítók előállítása, adja meg a használandó beosztások számát, azt, hogy mikor kell eltörni a fürtöket, és hogyan kell sorrendbe állítani és ellenőrizni a kitárolási munkát.
+- **Fürtprofilok** – Adja meg, hogy automatikus legyen-e a fürtazonosítók előállítása, adja meg a használandó beosztások számát, azt, hogy mikor kell eltörni a fürtöket, és hogyan kell sorrendbe állítani és ellenőrizni a kitárolási munkát.
 
--   **Munkasablonok** – A kitárolási munka fürthöz kitároláshoz létrehozásával meghatározása.
+- **Munkasablonok** – A kitárolási munka fürthöz kitároláshoz létrehozásával meghatározása.
 
--   **Helyirányelvek** – Adja meg, honnan kell kitárolni a cikkeket, és hová kell rakni őket.
+- **Helyirányelvek** – Adja meg, honnan kell kitárolni a cikkeket, és hová kell rakni őket.
 
--   **Mobileszköz menüelemei** – A folyamatban lévő munkát, hogy fürtkitárolás által használandó mobileszköz menü elemeinek beállítása. Hozzá kell adnia majd menüelem mobileszköz menü, hogy a mobileszközök jelenik meg.
+- **Mobileszköz menüelemei** – A folyamatban lévő munkát, hogy fürtkitárolás által használandó mobileszköz menü elemeinek beállítása. Hozzá kell adnia majd menüelem mobileszköz menü, hogy a mobileszközök jelenik meg.
 
--   **Raktárkezelési paraméterek** – Adja meg a fürtök azonosítóinak létrehozásához használandó számsorozat.
+- **Raktárkezelési paraméterek** – Adja meg a fürtök azonosítóinak létrehozásához használandó számsorozat.
 
 ## <a name="set-up-a-cluster-profile"></a>Nyugtaprofil beállítása
 
 Az okkód beállításához kövesse az alábbi lépéseket:
 
-1.  Kattintson a **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Fürtprofilok** elemre.
+1. Kattintson a **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Fürtprofilok** elemre.
 
-2.  Új mérő létrehozásához kattintson az **Új** elemre.
+1. Új mérő létrehozásához kattintson az **Új** elemre.
 
-3.  Kattintson a **Fürt létrehozása** elemre, és a **Fürtrendezés** alatt kattintson az **Új** elemre a fürt rendezési kritériumának beállításához. A rendezési kritérium sorrendjét, amelyben a dolgozó a kitárolási munka hajt végre. Tetszőleges számú intervallumot lehet létrehozni.
+1. Kattintson a **Fürt létrehozása** elemre, és a **Fürtrendezés** alatt kattintson az **Új** elemre a fürt rendezési kritériumának beállításához. A rendezési kritérium sorrendjét, amelyben a dolgozó a kitárolási munka hajt végre. Tetszőleges számú intervallumot lehet létrehozni.
 
-4.  A **Sorszám** mezőben adjon meg egy számot, amely meghatározza a rendezési feltételek feldolgozási sorrendjét.
+1. A **Sorszám** mezőben adjon meg egy számot, amely meghatározza a rendezési feltételek feldolgozási sorrendjét.
 
-5.  Az a **mezőnév** mezőben, válassza ki a mezőt, amely meghatározza a rendezést. Ha például bejelöli a **WMSLocationId** mezőben, a munka hely szerint lesznek rendezve.
+1. Az a **mezőnév** mezőben, válassza ki a mezőt, amely meghatározza a rendezést. Ha például bejelöli a **WMSLocationId** mezőben, a munka hely szerint lesznek rendezve.
 
-6.  A **Rendezés** mezőben az alábbi beállítások közül választhat:
+1. A **Rendezés** mezőben az alábbi beállítások közül választhat:
 
 | **Lehetőség**     | **Leírás**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontoss�
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Cikkellenőrzés beállítása a fürtkiválasztásnál
 
-1.  A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** \> **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Mobileszköz menüpontjai**.
+1. A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** \> **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Mobileszköz menüpontjai**.
 
-2.  A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**. A **Termékmegerősítés** beállítás lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.
+1. A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**. A **Termékmegerősítés** beállítás lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.

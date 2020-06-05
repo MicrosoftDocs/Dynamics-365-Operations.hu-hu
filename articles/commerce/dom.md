@@ -3,7 +3,7 @@ title: Felosztott rendeléskezelés (DOM)
 description: Ez a témakör a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004320"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396032"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -37,7 +37,7 @@ A DOM optimalizálja a rendelések teljesítését még a rendszerek és folyama
 
 A következő ábra bemutatja egy értékesítési rendelés teljes életútját a DOM rendszerben.
 
-![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
+![![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>DOM beállítása
 
@@ -83,8 +83,17 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     2. Válassza az **Új** lehetőséget, és adja meg az új csoport nevét és leírását.
     3. Válassza a **Mentés** lehetőséget.
     4. Ha egyetlen helyet szeretne a csoporthoz hozzáadni, válassza a **Sor hozzáadása** elemet. Továbbá a **Sorok hozzáadása** elemmel egyszerre több helyet is hozzáadhat.
+    
+    > [!NOTE]
+    > A 10.0.12-es és újabb Commerce verzióban a **„Szállítás” vagy „Felvétel” helyszíneinek meghatározásához** engedélyezni kell a **Funkciókezelés** munkaterületen a Teljesítési csoportot.
+    >
+    > Ez a funkció új konfigurációkat ad hozzá a **Teljesítési csoport** oldalához, ezáltal meghatározhatja, hogy a raktár használható-e szállításhoz, vagy ha a raktár/üzlet kombináció használható-e a szállításhoz, felvételhez vagy mindkettőhöz. 
+    >
+    > Ha engedélyezi a funkciót, akkor a hely kiválasztásához elérhető lehetőségek frissítve lesznek a pénztárban, ha létrehoz egy felvételi vagy szállítási rendelést.
+    >
+    > A funkció engedélyezése azt is eredményezi, hogy a pénztár oldalait frissítik, amikor az „összes szállítása” vagy a „szállítás kiválasztva” műveleteket választja ki.
 
-9. A szabályok definiálásához ugorjon a **Kiskereskedelem és kereskedelem \> Felosztott rendeléskezelés \> Beállítás \> Szabályok kezelése** lehetőségre. Jelenleg a következő DOM-szabályok támogatottak:
+9. A szabályok definiálásához ugorjon a **Retail and Commerce \> Felosztott rendeléskezelés \> Beállítás \> Szabályok kezelése** lehetőségre. Jelenleg a következő DOM-szabályok támogatottak:
 
     - **Minimumkészlet szabálya** – Ez a szabálytípus lehetővé teszi a szervezetnek, hogy elkülönítsék egy termék bizonyos mennyiségét rendelésteljesítéstől eltérő célra. Például előfordulhat, hogy a szervezet nem szeretné, hogy a DOM a teljes készletet figyelembe vegye a rendelésteljesítéshez, ami az üzletben található. Ehelyett szeretnék a készlet egy részét a besétáló vásárlók számára fenntartani. Ilyen típusú szabály használatakor meghatározhatja az adott termékkategóriára, egy egyéni termékre vagy termékváltozatra vonatkozó minimum fenntartandó készlet mennyiségét helyekre vagy helyek csoportjára lebontva.
     - **Teljesítés helye prioritási szabály** – Ezzel a szabálytípussal a szervezetek meghatározhatják a helyek hierarchiáját, amelynek megfelelő prioritást vesz a DOM-motor figyelembe, amikor a meghatározott termék teljesítési helyét igyekszik beazonosítani. A prioritások érvényes tartománya 1 és 10 közötti, ahol 1 a legmagasabb, 10 pedig a legalacsonyabb prioritást jelzi. A magasabb prioritással rendelkező helyeket a rendszer előbb veszi figyelembe, mint az alacsonyabb prioritással rendelkezőket. Ha a szabályt szigorú korlátként határozza meg, a rendeléseket csak a meghatározott prioritással rendelkező helyekre közvetíti a rendszer.
@@ -134,7 +143,17 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     2. Válassza az **Új** lehetőséget.
     3. Adjon meg értékeket a **Profil** és a **Leírás** mezőkben.
     4. Állítsa be az **Eredmények automatikus alkalmazása** lehetőséget. Ha ezt a beállítást **Igen** értékre állítja, akkor a profilhoz tartozó DOM-futás eredményeit a rendszer automatikusan alkalmazza az értékesítési rendelés soraira. Ha **Nem** értékre állítja, akkor az eredményeket csak a teljesítési tervben tudja megtekinteni. Ezeket a rendszer nem alkalmazza az értékesítési rendelés soraira.
-    5. Ha szeretné, hogy a DOM-profil minden olyan rendeléshez lefusson, amelyek az összes értékesítésirendelés-forrással rendelkeznek, még azokra is, amelyeknél az értékesítési rendelés forrása nem meghatározott, állítsa a **Üres értékesítési forrással rendelkező rendelések feldolgozása** beállítást **Igen** értékre. Ha profilt csak néhány típusú értékesítésirendelés-forrás esetén szeretné futtatni, akkor azokat a később leírt módon a **Értékesítési források** oldalon teheti meg.
+    5. Ha szeretné, hogy a Felosztott rendeléskezelés-profil minden olyan rendeléshez lefusson, amelyek az összes értékesítési rendelésforrással rendelkeznek, ideértve azokat is, amelyeknél az értékesítési rendelés forrása nem meghatározott, állítsa a **Üres értékesítési forrással rendelkező rendelések feldolgozása** beállítást **Igen** értékre. Ha profilt csak néhány típusú értékesítésirendelés-forrás esetén szeretné futtatni, akkor azokat a később leírt módon a **Értékesítési források** oldalon teheti meg.
+
+    > [!NOTE]
+    > A 10.0.12-es és újabb Commerce verzióban a **Teljesítési csoport Teljesítési profilhoz való hozzárendelését** engedélyeznie kell a **Funkciókezelés** munkaterületen. 
+    >
+    > Ez a funkció egy olyan új konfigurációt ad a **Teljesítési profil** oldalhoz, amely egyetlen teljesítési csoporthoz kapcsolható. 
+    >
+    > Ha kiválasztja a teljesítési csoportot, akkor az adott teljesítési profil Felosztott rendeléskezelés szabályai fognak hatékonyan futni a megfelelési csoportban lévő „szállítási” raktárakkal szemben. 
+    > 
+    > Ennek a funkciónak a hatékony használatához győződjön meg arról, hogy létezik egy olyan teljesítési csoport, amely tartalmazza az összes szállítási raktárat, majd társítsa a teljesítési csoportot a teljesítési profilhoz.
+    
     6. A **Jogi személyek** gyorslapon válassza a **Hozzáadás** lehetőséget, majd válasszon ki egy jogi személyt.
     7. A **Szabályok** gyorslapon válassza a **Hozzáadás** elemet, majd válassza ki a szabályt, amelyet a profilhoz szeretne kapcsolni.
     8. Ismételje az előző két lépést mindaddig, amíg az összes szükséges szabályt nem társította a profilhoz.
@@ -179,7 +198,7 @@ A feldolgozás időpontjában a DOM az alábbiak szerint veszi majd figyelembe a
 
 Miután a DOM alkalmazta a szabályokat, a készletkorlátokat és az optimalizációt, kiválasztja a vevő szállítási címéhez legközelebbi helyet.
 
-![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")
+![![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>DOM-futások eredményei
 

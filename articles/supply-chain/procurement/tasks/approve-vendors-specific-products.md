@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207784"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383274"
 ---
 # <a name="approve-vendors-for-specific-products"></a>A meghatározott termékek szállítójának jóváhagyása
 
@@ -57,7 +57,7 @@ Ez az eljárás bemutatja, hogy hogyan hagyhatja jóvá a szállítókat az adot
 26. Zárja be a lapot.
 27. A Navigációs ablaktáblán válasssza a **Modulok > Beszerzés és forrás > Szállítók > Összes beszállító** menübe. A folyamatot kezdheti a szállítótól, majd ugorjon az engedélyezett termékek listájára a szállítói számlára vonatkozóan.  
 28. Keresse meg és jelölje ki a kívánt rekordot a listán.
-29. A **Művelet panelen kattintson a Beszerzés** elemre.
+29. A Művelet panelen kattintson a **Beszerzés** elemre.
 30. Kattintson az **Engedélyezett szállítók listája szállító szerint** lehetőségre.
 31. Zárja be a lapot.
 32. Zárja be a lapot.

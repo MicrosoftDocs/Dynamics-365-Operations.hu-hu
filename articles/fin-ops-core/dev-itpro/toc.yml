@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Csomagalkalmazási problémák elhárítása
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Egyéni súgó telepítése
+              items:
+                - name: Egyéni súgó áttekintése
+                  href: help/custom-help-overview.md
+                - name: Tartalom előkészítése a Súgó ablakban való használatra
+                  href: help/preparing-content.md
+                - name: Egyéni súgó telepítése az Azure-ba
+                  href: help/walkthrough-help-azure.md
+                - name: Egyéni súgó csatlakoztatása a Súgó ablakhoz
+                  href: help/connect-help-pane.md
+                - name: Egyéni súgó eszközkészlet
+                  items:
+                    - name: Áttekintés
+                      href: help/custom-help-toolkit.md
+                    - name: A HTML From Repo Generator eszköz
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: A Convert HTML To JSON eszköz
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: A HTML Locale Changer eszköz
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: A Dynamics AX egyéni súgó konvertálása Dynamics 365-ben való használatra
+                      href: help/migrate-dynamicsax2012.md
+                - name: Nyelvi és területi leírók a terméken és a súgóban
+                  href: help/language-locale.md
+                - name: 'Bővítse, szabja testre és működjön együtt a súgóval'
+                  href: help/contributor-guide.md
         - name: Fejlesztés és testreszabás
           items:
             - name: Fejlesztés és testreszabás kezdőoldala
@@ -835,7 +861,7 @@
                     - name: 'Bővíthetőség módosításai, 8.0.1-as verzió'
                       href: extensibility/extensibility-changes-801.md
                     - name: Bővíthetőség módosításai a 8.0-as verzióban
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Bővíthetőség módosításai a 7.3-as verzióban
                       href: extensibility/extensibility-changes-73.md
                     - name: 'Bővíthetőség módosításai, 2017. július'

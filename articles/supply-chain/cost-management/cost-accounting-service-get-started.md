@@ -1,5 +1,5 @@
 ---
-title: Első lépések a költségkönyvelési szolgáltatásban
+title: Első lépések a költségkönyvelési szolgáltatásban (privát előnézet)
 description: Ez a témakör bemutatja a költségkönyvelési szolgáltatás licencelési adatait és telepítési útmutatását.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276924"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372736"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Első lépések a költségkönyvelési szolgáltatásban
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Első lépések a költségkönyvelési szolgáltatásban (privát előnézet)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ A Költségkönyvelés szolgáltatás egy bővítmény. Ahhoz, hogy hozzáférhe
 
 A Költségkönyvelés szolgáltatás jelenleg nem támogatja a Dynamics 365 Supply Chain Management szolgáltatásba beépített összes költségkönyvelési funkciót. Ezért fontos, hogy meggyőződjön, hogy a jelenleg elérhető funkciókészlet kielégíti-e a követelményeket.
 
-## <a name="licensing"></a>Licenckezelés
-
-A Költségkönyvelés szolgáltatás egy licencben szerepel az Supply Chain Management szolgáltatásban elérhető készletkönyvelési standard funkciókkal. Nem kell további licencet vásárolnia a Költségkönyvelés szolgáltatás használatához.
-
-## <a name="install-the-add-in"></a>Telepítse a bővítményt
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Hogyan érjük el a költségkönyvelési szolgáltatást (privát előnézet)
 
 > [!IMPORTANT]
 > A költségkönyvelési szolgáltatás használatához rendelkeznie kell LCS-kompatibilis magas elérhetőségű környezettel (nem OneBox.környezettel), és a Dynamics 365 Supply Chain Management 10.0.11-es vagy újabb verzióját kell futtatnia.
 
+A költségkönyvelési szolgáltatás privát előnézetére történő feliratkozáshoz küldje el a LCS környezeti azonosítót e-mailben a [Költségkönyvelési szolgáltatáshoz (privát előnézet)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Ha felvételt nyert a programba, elküldjük Önnek a költségszámítási szolgáltatás bétakulcsát tartalmazó nyomon követési e-mail üzenetet. Ha megkapta a bétakulcsot, folytathatja [a bővítmény telepítését](#install).
+
+## <a name="licensing"></a>Licenckezelés
+
+A Költségkönyvelés szolgáltatás egy licencben szerepel az Supply Chain Management szolgáltatásban elérhető készletkönyvelési standard funkciókkal. Nem kell további licencet vásárolnia a Költségkönyvelés szolgáltatás használatához.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Telepítse a bővítményt
+
 A Költségkönyvelés szolgáltatás használatához a következő eljárás szerint telepítse a Supply Chain Management költségszámítási szolgáltatásának beépülő modulját.
+
+1. [Regisztráljon](#sign-up) a költségkönyvelési szolgáltatásba (privát előnézet).
 
 1. Bejelentkezés az LCS alkalmazásba.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e13a9a594e8c4041a586734df53321d57b43586
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204793"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383169"
 ---
 # <a name="create-purchasing-policies"></a>Beszerzési irányelvek létrehozása
 
@@ -32,7 +32,7 @@ Ez az témakör bemutatja, hogy hogyan lehet olyan beszerzési irányelveket lé
 
 ## <a name="set-up-policy-parameters"></a>Irányelv-paraméterek beállítása
 1. A navigációs ablaktáblán ugorjon a **Modulok > Beszerzés és forrás> Beállítás > Irányelvek > Beszerzési irányelvek**.
-2. A Műveleti ablaktáblán válassza a **Paraméterek** elemet.
+2. A Műveleti panelen válassza a **Paraméterek** elemet.
 - Az irányelvszabályok a szervezet különböző szintjeire vonatkoznak. A szervezeti egységek a szervezeti hierarchiától függően jelennek meg, és a hierarchia azon szintjein, amelyek hozzá vannak rendelve a beszerzés belső ellenőrzésének céljaihoz. Például előfordulhat, hogy a szervezet rendelkezik jogi személyekkel, költséghelyekkel, és részlegekkel, azonban lehet, hogy ezek közül csak néhány rendelkezik a beszerzés belső ellenőrzés hierarchiájának céljával. Alapértelmezés szerint a Vállalat típus szervezete érhető el.  
 3. Kattintson az **Irányelvszabály-típus paraméterei** fülre.
 4. Válassza ki a **Beszerzés irányelv > Beszerzési igénylés-ellenőrzési szabály** lehetőséget a fa struktúrában.

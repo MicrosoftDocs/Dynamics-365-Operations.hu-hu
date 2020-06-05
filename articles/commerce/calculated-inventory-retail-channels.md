@@ -3,7 +3,7 @@ title: Kiskereskedelmi csatornák készletelérhetőségének számítása
 description: Ez a témakör azt mutatja be, hogy milyen lehetőségek érhetők el az üzlet és az online csatornák aktuális készletének megjelenítéséhez.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113920"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379236"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének számítása
 
@@ -50,12 +50,7 @@ Mindkét API az adatokat a Commerce kiszolgálóról kéri le, és becslést ny�
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Az e-kereskedelmi számított készlet elérhetőségének megismerése
 
-A korábban említett két API használata előtt módosítani kell egy paramétert a Kereskedelmi központban annak érdekében, hogy a Kereskedelmi központ által a **Termék rendelkezésre állása** feladattal kiszámított készletérték-pillanatfelvétel a megfelelő táblákba írja be az adatokat.
-
-A paraméter beállításához hajtsa végre az alábbi lépéseket.
-
-1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra.
-1. A **Készlet** lap **Termékelérhetőségi feladat** szakaszban válasza az **Optimalizált folyamat használata Termékelérhetőségi feladatnál** lehetőséget. Ez a beállítás biztosítja, hogy a csatorna elérhető készletének számításához az optimális funkciócsomagot használja a rendszer a Commerce kiszolgálón keresztül.
+A korábban említett két API használata előtt engedélyeznie kell az **Optimalizált termékelérhetőségi számítás funkciót** a **Funkciókezelés** munkaterületen a KEreskedelmi központban.
 
 Mielőtt az API-k kiszámolhatnák egy cikk készletelérhetőségének legjobb becslését, először fel kell dolgozni a Kereskedelmi központ készletelérhetőségre vonatkozó időszakos pillanatképét, és elküldeni az e-kereskedelem Commerce Scale Unit modulja által használt csatorna-adatbázishoz. A pillanatkép a Kereskedelmi központ azon adatait jeleníti meg, amelyek a termék vagy a termék változatának és a raktárnak egy meghatározott kombinációját jelentik. Itt szerepelhetnek készletmódosítások vagy -mozgatások, amelyeket készletbevételezések, szállítmányok vagy más olyan folyamatok okoztak, amelyeket a Kereskedelmi központban hajtottak végre, és az e-kereskedelmi csatorna csak a szinkronizálási folyamat révén tud róla.
 
@@ -85,20 +80,15 @@ Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, meg
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>A pénztár csatornaoldali számított készlet elérhetőségének megismerése
 
-A csatornaoldali számítási logika használatához és a valós idejű szolgáltatáshívások kikapcsolásához a készletkeresések esetén a pénztár alkalmazásból, először két paramétert kell módosítania. Ezt követően szinkronizálni kell a csatornán végzett módosításokat az elosztási ütemezési folyamaton keresztül.
+AA pénztáralkalmazás csatornaoldali számítási logikájának használatához és a készletkeresések valós idejű szolgáltatáshívásainak kikapcsolásához először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás funkciót** a **Funkciókezelés** munkaterületen a Kereskedelmi központban. A funkció engedélyezésén kívül módosítania kell a **funkció profilját**.
 
-Az első paraméter beállításához hajtsa végre az alábbi lépéseket.
-
-1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra.
-1. A **Készlet** lap **Termékelérhetőségi feladat** szakaszban válasza az **Optimalizált folyamat használata Termékelérhetőségi feladatnál** lehetőséget. Ez a beállítás biztosítja, hogy a csatorna elérhető készletének számításához az optimális funkciócsomagot használja a rendszer a Commerce kiszolgálón keresztül.
-
-A második paraméter beállításához hajtsa végre az alábbi lépéseket.
+A **Funkcióprofil** módosításához az alábbi lépéseket hajtsa végre:
 
 1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
 1. Válasszon funkcióprofilt.
 1. A **Funkciók** gyorslap **Készletelérhetőségi számítás** szakaszában módpsítsa a **Készletelérhetőségi számítás módja** mező értékét **Valós idejű szolgáltatásról** **Csatornára**. Alapértelmezés szerint az összes funkcióprofil valós idejű szolgáltatási hívásokat használ. Ennek megfelelően módosítania kell ennek a mezőnek az értékét, ha csatornaoldali számítási logikát szeretne használni. A módosítás hatással van minden olyan kiskereskedelmi üzletre, amely a kiválasztott funkcióprofilhoz van társítva.
 
-A kiszolgálók frissítéséhez hajtsa végre az alábbi lépéseket.
+Ezután a következő lépések végrehajtásával szinkronizálni kell a csatornán végzett módosításokat az elosztási ütemezési folyamaton keresztül:
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 1. Futtassa a **1070** (**csatornakonfiguráció**) feladatot.

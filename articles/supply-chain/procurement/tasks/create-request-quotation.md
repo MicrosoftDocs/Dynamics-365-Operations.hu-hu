@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2c13ed20ec86108bcb9edc0d20d53ff98732b9d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 68624a0288f9eaaf8f74b361bb308b8ca3c03b29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204746"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383170"
 ---
 # <a name="create-a-request-for-quotation"></a>Ajánlatkérés létrehozása
 
@@ -67,7 +67,7 @@ Miután megadta az ajánlatkérés alapvető információit, adja meg, hogy mily
 7. A **Szállítószámla** mezőben adjon meg vagy válasszon ki egy értéket. Ha kijelölt egy szállítót, akkor az állapota „Létrehozva”. Ez azt jelenti, hogy mentette a szállítói információkat az ajánlatkérésben, de nem küldte el az ajánlatkérést a szállítónak. A szállító ajánlatkérésbe való felvételét nem befolyásolja a szállító állapota.  
 
 ## <a name="send-the-rfq-to-vendors"></a>RFQ küldése a szállítóknak
-1. A **Művelet panelen** kattintson a **Küldés** elemre. Az ajánlatkérés elküldése lapon ellenőrizze, hogy azok a szállítók szerepelnek-e a listában, akiktől meg szeretné kapni az ajánlatkérést.  
+1. A **Műveleti panelen** kattintson a **Küldés** elemre. Az ajánlatkérés elküldése lapon ellenőrizze, hogy azok a szállítók szerepelnek-e a listában, akiktől meg szeretné kapni az ajánlatkérést.  
 2. Kattintson a **Nyomtatás** parancsra. Ez a párbeszédpanel lehetővé teszi az Ajánlatkérés nyomtatását. Ha egy válaszlap nyomtatását választja, akkor annak tartalmát a Beszerzés és forrás paramétereiben határozza meg a rendszer. A válaszlapok nyomtatási módjának kiválasztásához, a nyomtatási párbeszédpanel megnyitása után kattintson a Speciális nyomtatási beállítások elemre. Az ajánlatkérést minden egyes szállítóra vonatkozóan kinyomtatják, ami Létrehozva vagy Elküldve állapotú sorokat tartalmaz. A törölt sorok és a regisztrált válaszokkal rendelkező sorok nem kerülnek kinyomtatásra.   
 3. Kattintson a **Mégse** gombra.
 4. Kattintson az **OK** gombra.

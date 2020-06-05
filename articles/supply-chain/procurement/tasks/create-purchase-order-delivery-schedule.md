@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e16c9adf592282a941b1112e197ea1ce9bdd34f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207715"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383251"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
 
@@ -31,7 +31,7 @@ Ez a témakör bemutatja, hogy hogyan lehet létrehozni egy szállítási üteme
 
 ## <a name="create-a-delivery-schedule"></a>Szállítási ütemezés létrehozása
 1. Navigációs ablaktáblán ugorjon a **Modulok > Beszerzés és forrás > Beszerzési rendelések > Összes beszerzési rendelés** elemre.
-2. A műveleti ablaktáblán válassza ki az **Új** elemet.
+2. A Műveleti ablaktáblán kattintson az **Új** elemre.
 3. Adja meg az `US-101` értéket a **Szállítói számla** mezőben.
 4. Válassza ki az **OK** lehetőséget.
 5. Adja meg az `M0001` értéket a **Cikkszám** mezőben.

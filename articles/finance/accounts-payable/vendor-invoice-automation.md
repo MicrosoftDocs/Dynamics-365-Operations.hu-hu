@@ -3,7 +3,7 @@ title: Szállítói számla automatizálása
 description: Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178156"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396009"
 ---
 # <a name="vendor-invoice-automation"></a>Szállítói számla automatizálása
 
@@ -61,7 +61,7 @@ Az adatcsomag kötelezően elküldendő munkaegység, hogy a számlafejlécek, a
 
 A szállítói számla dokumentummelléklet a funkció részeként bevezetett új adatentitás. A Szállítói számla fejlécének entitását úgy módosította a rendszer, hogy az támogassa a mellékleteket. A Szállítói számla sorentitást nem módosították ehhez a funkcióhoz.
 
-Ez a témakör nem nyújt részletes meghatározást az adatcsomagról. Nem mutatja be az adatcsomagok létrehozását sem. Ezt az információt itt találja: [Adatentitások és -csomagok keretrendszere](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Az adatcsomagok adatkezelési munkaterületen történő létrehozásával kapcsolatos további tudnivalók: [Adatcsomagok feldolgozása és felhasználása a Dynamics 365 Finance and Operations alkalmazások megoldásban](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 A számlákat és mellékleteket tartalmazó tesztadatok gyors létrehozásához kövesse az alábbi lépéseket.
 

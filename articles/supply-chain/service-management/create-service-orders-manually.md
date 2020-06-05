@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80461694a28a0842155cbd8ca224c37bd85dde7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 45261931d8083e179f0d3a8285b12fdaa2494adc
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202698"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383366"
 ---
 # <a name="create-service-orders-manually"></a>Szervizrendelések létrehozása manuálisan    
 
@@ -58,7 +58,7 @@ Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelés
 
 1.  Kattintson a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**.
 
-2.  A **Projektek** képernyőn, a **Műveleti ablakban**, kattintson a **Kezelés** lapra \> kattintson **Szolgáltatás** \>**Szervizrendelések** lehetőségre.
+2.  A **Projektek** képernyőn, a **Műveleti panelen**, kattintson a **Kezelés** lapra \> kattintson **Szolgáltatás** \> **Szervizrendelések** lehetőségre.
 
 3.  Az előbbi eljárás segítségével hozza létre manuálisan a szervizrendelést a **Szervizrendelések** képernyőn. A **Projekt azonosító** mezőben látható a projektreferencia.
 

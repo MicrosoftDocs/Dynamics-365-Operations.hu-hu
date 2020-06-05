@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: e98a30a03856f5532d420e516cb35d66acffb278
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275602"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383484"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
@@ -137,4 +137,4 @@ A Gantt-diagram megtekintése és használata:
     - A Gantt-diagram frissül, és a beállításoknak megfelelő ütemezett munkarendeléseket jeleníti meg. Minden munkarendelést egy kék téglalap jelöl.
     - A megjelenített munkarendelés újraütemezéséhez válassza ki azt, majd húzza át a megfelelő új dátumra és időpontra.
 
-1. Ha módosításokat hajtott végre, a műveleti ablaktáblán válassza a **Mentés** parancsot a mentéshez.
+1. Ha módosításokat hajtott végre, a Művelet panelen válassza a **Mentés** parancsot a mentéshez.

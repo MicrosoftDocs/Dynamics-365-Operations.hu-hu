@@ -1,9 +1,9 @@
 ---
 title: Költségszabályok meghatározása
 description: Fel lehet állítani a dolgozók által követendő költségirányelveket (szabályokat) a költségjelentések és utazásigénylések benyújtására vonatkozóan a Microsoft Dynamics 365 Finance rendszerben.
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187452"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389715"
 ---
 # <a name="define-expense-policies"></a>Költségszabályok meghatározása
 
@@ -48,6 +48,7 @@ Háromféle irányelvet állíthat be:
 Az alábbiakban néhány olyan javaslatot talál, amely segítséget nyújt a költségek kezelésével kapcsolatos új szabályok létrehozásában. 
 * A szabályok egy dátumtól érvényesek, és nem lépnek érvénybe, ha a házirendet a költség bekövetkezésének dátuma utáni dátummal hozzák létre. Ha például a mai napon új irányelvet hoz létre maximálisan 50 dolláros étkezési költség érvényesítéséhez, akkor a tegnap bevitt költségeket a program nem veti össze ezzel a szabállyal.
 * A részletezhető költségkategóriák házirendjének létrehozásakor vegye fontolóra egy költség típusú sor feltétel hozzáadását. Előfordulhat, hogy egyes házirendek, például a nyugta megkövetelése nem értelmezhetők a részletezett sorokban, és csak a fejléc sorára, vagy a nem részletezett sorra alkalmazhatók. 
+* Alapértelmezés szerint a program a költségkezelési irányelveket a forrásentitás szerint értékeli. Vállalatközi esetekben beállíthatja, hogy a rendszer a célentitás (kölcsönfelvevő entitás) szerint értékelje az irányelvet. Ha a célentitás szerint szeretné futtatni az irányelveket, kapcsolja be a "Költségirányelvek értékelése a kölcsönfelvevő jogi személy szerint" funkciót a **Funkciókezelés** munkaterületen.
 
 ## <a name="when-to-evaluate-policies"></a>Mikor kell értékelni a házirendeket
 

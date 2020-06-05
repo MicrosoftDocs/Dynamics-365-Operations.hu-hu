@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c123ffbeb33cbc3ba01b4b2758208ed0c445f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204217"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383499"
 ---
 # <a name="check-the-availability-of-stock"></a>A készlet elérhetőségének ellenőrzése
 
@@ -35,9 +35,9 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 2. Válassza ki a **Cikkszám** sort. Az aktuális készlet cikkszám szerinti lekérdezéséhez válassza ki azt a sort, ahol a Táblázat beállítása **Aktuális készlet**, a Mező beállítása pedig **Cikkszám**.
 3. A **Feltételek** mezőben válassza ki a lekérdezni kívánt cikket. Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „M9201” értéket.  
 4. Kattintson az **OK** gombra.
-5. A **Művelet panelen** kattintson a **Dimenziók** elemre. A **Dimenziók** lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét. A foglalással kapcsolatos adatok megtekintéséhez a speciális raktározási (WHS) folyamatokat használó cikkek kapcsán meg kell jelenítenie az összes készletdimenziót.
+5. A **Művelet panelen** kattintson a **Dimenziók** elemre. A **Dimenziók** lapon tudja beállítani az aktuális készletre vonatkozó információk részletességét. A foglalással kapcsolatos adatok megtekintéséhez a speciális raktározási (WMS) folyamatokat használó cikkek kapcsán meg kell jelenítenie az összes készletdimenziót.
 6. Kattintson az **OK** gombra.
-7. A **Műveleti ablakban** kattintson a **Kapcsolódó információ** elemre. Ha nem jelenik meg ez a lehetőség, úgy elképzelhetően rá kell kattintania az Ellipszis gomb (...) parancsra a további műveleti ablak opciók megjelenítéséhez.
+7. A **Műveleti ablakban** kattintson a **Kapcsolódó információ** elemre. Ha nem jelenik meg ez a lehetőség, úgy elképzelhetően rá kell kattintania az Ellipszis gomb (...) parancsra a további műveleti ablaktábla opciók megjelenítéséhez.
 8. Kattintson a **Szállítmány-összesítés** lehetőségre. A **Szállítmány-áttekintés** lap olyan konkrét cikkről szolgáltat információt, mint az aktuális mennyiség, az átfutási idő vagy a szállítói adatok.  
 9. Bontsa ki a **Aktuális** részt.
 10. Bontsa ki a **Szállító** szakaszt.

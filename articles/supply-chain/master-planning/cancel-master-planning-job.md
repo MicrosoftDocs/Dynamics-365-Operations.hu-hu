@@ -3,7 +3,7 @@ title: Alaptervezési feladat visszavonása
 description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni egy olyan aktív tervezési feladatot, amely a beépített tervezési funkciót használja.
 author: ChristianRytt
 manager: tfehr
-ms.date: 01/10/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 08dd612d9fb01ba2db6d4fcc7db9507a41a4b29f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e38b1bb84414dde603dbf5bcda0e8253a12e40b
+ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203917"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3374796"
 ---
 # <a name="cancel-a-master-planning-job"></a>Alaptervezési feladat visszavonása
 
@@ -51,4 +51,5 @@ Ezek csak akkor használhatók, ha az alaptervezési feladat megszakítása a **
 2. Ha a feladatazonosító nem jelenik meg a listában, kattintson a **Váltás a speciális nézetre** lehetőségre, különben folytassa a következő lépéssel.
 3. Nyissa meg a kötegelt feladatot. Kattintson a befejezendő feladatokkal rendelkező kötegelt feladat **Feladatazonosító** elemére.
 4. A **Kötegelt feladatok** területen válassza ki a befejezendő feladatokat.
-5. A **Kötegelt feladatok** gyorslapon kattintson a **Megszakítás** parancsra.
+5. Kattintson az **Állapot módosítása**, majd a **Visszavonás** elemre, majd az **OK** gombra.
+6. A **Kötegelt feladatok** gyorslapon kattintson a **Megszakítás** parancsra.

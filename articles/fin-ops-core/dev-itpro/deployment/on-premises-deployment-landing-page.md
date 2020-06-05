@@ -3,7 +3,7 @@ title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
-ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
+ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3099730"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367058"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -41,7 +41,6 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 ## <a name="onboard"></a>Felvétel
 - [Helyszíni projektek beállítása a Lifecycle Services (LCS) szolgáltatásban](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Helyszíni környezetek telepítése és üzemeltetése (Platform update 12-es és újabb verziókon)](setup-deploy-on-premises-pu12.md)
-- [Helyszíni környezetek beállítása és telepítése (8-as és 11-es platformfrissítések)](setup-deploy-on-premises-pu8-pu11.md)
 - [Hálózati nyomtatók helyszíni környezetben történő telepítése](../analytics/install-network-printer-onprem.md)
 - [Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez](../analytics/configure-ssrs-on-premises.md)
 - [Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez](develop-deploy-custom-models-on-premises.md)

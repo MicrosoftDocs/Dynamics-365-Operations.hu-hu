@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b99cac46ea33b018a3f67dd4bf0164b8a7f0e6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d2997a39311e371443de3bc11ace17ab36be20e8
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216873"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383573"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>A minimum-maximum feltöltési folyamat beállítása
 
@@ -58,7 +58,7 @@ Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyam
 15. A listában jelölje meg a kiválasztott sort.
 16. Írjon be egy értéket a **Név** mezőbe.
 17. Kattintson a **Mentés** gombra.
-18. Kattintson a **Műveleti ablaktábla** **Lekérdezés szerkesztése** elemére. Ezt a lekérdezést beállíthatja azon korlátozások hozzáadására, ahonnan ki lehet választani a készletet a feltöltési folyamat során. Például ez lehet az a készlet is, amelyet csak a raktárház raktárából lehet használni.
+18. Kattintson a **Műveleti panel** **Lekérdezés szerkesztése** elemére. Ezt a lekérdezést beállíthatja azon korlátozások hozzáadására, ahonnan ki lehet választani a készletet a feltöltési folyamat során. Például ez lehet az a készlet is, amelyet csak a raktárház raktárából lehet használni.
 19. Kattintson az **OK** gombra.
 20. Zárja be a lapot.
 
