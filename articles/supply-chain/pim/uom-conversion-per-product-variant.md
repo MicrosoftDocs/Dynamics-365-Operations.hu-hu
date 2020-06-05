@@ -1,9 +1,9 @@
 ---
 title: Mértékegység-átváltás termékváltozatonként
-description: Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon.
+description: Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon. Egy példát is tartalmaz a beállításra.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204493"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382797"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mértékegység-átváltás termékváltozatonként
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon. Egy példát is tartalmaz a beállításra.
+Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a különféle termékváltozatokon.
 
-Ez a funkció lehetővé teszi a vállalatoknak, hogy különböző egységátváltásokat határozzanak meg ugyanazon termék változataira. Ez a témakör a következő példát használja. Egy vállalat pólókat értékesít kicsi, közepes, nagy és extra nagy méretben. A pólót termékként határozzuk meg, a különböző méreteket pedig a termék változataiként definiáljuk. A pólókat dobozokba szortírozzák, egy dobozba öt póló kerül, kivéve az extra nagy méretet, mert itt csak négy pólóknak van hely egy dobozban. A vállalat nyomon szeretné követni a pólók különböző változatait a **Darab** egyégben, de a pólókat a **Doboz** egységben forgalmazza. A készletegység és az értékesítési egység közötti átváltás 1 doboz = 5 darab, kivéve a nagyméretű változatnál, ahol az átváltás 1 doboz = 4 darab.
+A karbantartani kívánt több egyéni termék létrehozása helyett használhatja a termékváltozatokat egyetlen termék változatainak létrehozásához. Egy termékváltozat lehet például egy adott méretű és színű póló.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>A termék beállítása egységátváltáshoz változat szerint
+Korábban a mértékegységek átváltásait csak az alaptermékben lehetett beállítani. Ezért minden termékváltozat ugyanazzal az egységátváltási szabályokkal rendelkezett. Ha azonban a *Mértékegység-átváltások termékváltozatok esetén* funkció be van kapcsolva, ha a pólókat dobozban értékesítik, és a csomagolható pólók száma a pólók méretétől függ, akkor most beállíthatja a különböző pólóméretek és a csomagoláshoz használt dobozok között mértékegység-átváltásokat.
 
-Termékváltozatokat csak az ilyen termékekhez lehet létrehozni **Termékaltípus**: **Alaptermék**. További információ: [Alaptermék létrehozása](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
 
-A funkció nincs engedélyezve a Tényleges súly folyamatokhoz beállított termékekhez. 
+Ha nem látja ezt a funkciót a rendszerben, nyissa meg a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) részt, és kapcsolja be a *Mértékegység-átváltások termékváltozatok esetén* funkciót.
 
-A kiadott termékváltozatokkal rendelkező alaptermék létrehozásakor be lehet állítani a változatok szerinti egységátváltásokat. Az egységátváltási lap megnyitására szolgáló menüelemet egy termék vagy termékváltozat kontextusában a következő lapokon találhatja meg.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>A termék beállítása egységátváltáshoz változat szerint
 
--   **Termékadatok** lap
--   **Kiadott termékek részletei** lap
--   **Kiadott termékváltozatok** lap
+Termékváltozatokat csak olyan termékekhez lehet létrehozni, amelyek alaptermékek. További információ: [Alaptermék létrehozása](tasks/create-product-master.md). A *Mértékegység-átváltások termékváltozatok esetén* funkció nem érhető el a tényleges súlyú folyamatokhoz beállított termékek esetében.
 
-Amikor megnyitja a **Mértékegység-átváltás** lapot egy alaptermék vagy egy kiadott termékváltozat kontextusában, választhat, hogy a mértékegység-átváltást a termék vagy a termékváltozat vonatkozásában szeretné-e beállítani. A választást a **Termékváltozat** vagy a **Termék** kiválasztásával teheti meg a **Átváltás létrehozása a következőhöz:** mezőben.
+A következő lépésekkel konfigurálhat egy alapterméket, amely támogatja a változatonkénti mértékegység-átalakítást.
 
-### <a name="product-variant"></a>Termékváltozat
+1. Ugorjon a **Termékinformációk kezelése \> Termékek \> Alaptermékek** lehetőségre.
+1. Hozzon létre vagy nyisson meg egy alapterméket, hogy a **Termék részletei** oldalra jusson.
+1. Állítsa a **Mértékegység-átváltások engedélyezése** beállítást *Igen* értékre.
+1. A Művelet panel **Termék** lapján, a **Beállítás** csoportban válassza a **Mértékegység-átváltások** lehetőséget.
+1. Megnyílik a **Mértékegység-átváltások** oldal. A következő lapok közül választhat:
 
-Ha a **Termékváltozat** lehetőséget választja, akkor a **Termékváltozat** mezőben jelölje be, hogy melyik változathoz szeretné beállítani az egységátváltást.
+    - **Osztályon belüli átváltások** – Akkor válassza ezt a lapot, ha az ugyanahhoz az osztályhoz tartozó mértékegységek között szeretné végrehajtani az átalakítást.
+    - **Osztályok közötti átváltások** – Akkor válassza ezt a lapot, ha a különböző osztályokhoz tartozó mértékegységek között szeretné végrehajtani az átalakítást.
 
-### <a name="product"></a>Termék
+1. Új mértékegység-átváltás hozzáadásához kattintson az **Új** parancsra.
+1. Állítsa a **Átváltás létrehozása a következőhöz:** mezőt a következő értékek egyikére:
 
-Ha bejelöli a **Termék** lehetőséget, akkor beállíthatja a mértékegység-átváltást az alaptermékhez. A mértékegység-átváltás érvényes lesz minden nem definiált mértékegység-átváltással rendelkező termékváltozat esetében.
+    - **Termék** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást az alaptermékhez. Ez a mértékegység-átváltás tartalékként fog szerepelni az összes olyan termékváltozathoz, amelynél nincs beállítva mértékegység-átváltás.
+    - **Termékváltozat** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást egy adott termékváltozathoz. Válassza ki a változatot a **Termékváltozat** mező segítségével.
 
-### <a name="example"></a>Példa
+    ![Új mértékegység-átváltás hozzáadása](media/uom-new-conversion.png "Új mértékegység-átváltás hozzáadása")
 
-A **Póló** alapterméknek négy kiadott termékváltozata van: kicsi, közepes, nagy és extra nagy. A pólókat dobozokba szortírozzák, egy dobozba öt póló kerül, kivéve az extra nagy méretet, mert itt csak négy pólóknak van hely egy dobozban.
+1. A mértékegység-átváltás beállításához használja az egyéb megadott mezőket.
+1. Az új mértékegység-átalakítás mentéséhez kattintson az **OK** gombra.
 
-Először nyissa meg a **Mértékegység-átváltás** lapot a **Póló** Termékkiadás részletei lapjáról.
+> [!TIP]
+> A termék vagy a termékváltozat **Mértékegység-átalakítás** oldalát a következő oldalak bármelyikéről megnyithatja:
+> 
+> - Termék részletei
+> - Megjelent termékek részletei
+> - Kiadott termékváltozatok
 
-A **Mértékegység-átváltás** lapon állítsa be a mértékegység-átváltást a kiadási extra nagy termékváltozatnál.
+## <a name="example-scenario"></a>Példaforgatókönyv
 
-| **Mező**             | **Beállítás**             |
-|-----------------------|-------------------------|
-| Átváltás létrehozása a következőhöz: | Termékváltozat         |
-| Termékváltozat       | Póló : : Extra nagy : : |
-| Kezdő egység             | Dobozok                   |
-| Szorzó                | 4                       |
-| Záró egység               | darab                  |
+Ebben a forgatókönyvben egy vállalat pólókat értékesít kicsi, közepes, nagy és extra nagy méretben. A pólót termékként határozzuk meg, a különböző méreteket pedig a termék változataiként definiáljuk. A pólók csomagolása dobozokban történik. A kis, közepes és nagy méreteknél a dobozban öt póló lehet. Az extra nagy méretnél azonban csak négy póló számára van hely a dobozban.
 
-A kicsi, közepes és nagy kiadott termékváltozatok esetében azonos a mértékegység-átváltás a doboz és a darab egységek között, ami azt jelenti, hogy az alapterméken meg lehet adni a mértékegység-átváltást ezekhez a termékváltozatokhoz.
+A vállalat nyomon szeretné követni a pólók különböző változatait *Darab* mértékegyégben, de a pólókat *Doboz* mértékegységben forgalmazza. Kis, közepes és nagy méretek esetében a készletegység és az értékesítési egység közötti átváltási arány 1 doboz = 5 darab. Az extra nagy méretnél az átváltási arány 1 doboz = 4 darab.
 
-| **Mező**             | **Beállítás** |
-|-----------------------|-------------|
-| Átváltás létrehozása a következőhöz: | Termék     |
-| Termék               | Póló     |
-| Kezdő egység             | Dobozok       |
-| Szorzó                | 5           |
-| Záró egység               | darab      |
+1. Először nyissa meg a **Mértékegység-átváltás** lapot a **Póló** termék **Termékkiadás részletei** lapjáról.
+1. A **Mértékegység-átváltás** lapon állítsa be a következő mértékegység-átváltást az **Extra nagy** kiadási termékváltozatnál.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>A mértékegység-átváltások frissítése az Excel programmal
+    | Mező                 | Beállítás                 |
+    |-----------------------|-------------------------|
+    | Átváltás létrehozása a következőhöz: | Termékváltozat         |
+    | Termékváltozat       | Póló : : Extra nagy : : |
+    | Kezdő egység             | Dobozok                   |
+    | Szorzó                | 4                       |
+    | Záró egység               | darab                  |
 
-Ha egy termék sok, különböző mértékegység-átváltású termékváltozattal rendelkezik, célszerű exportálni a mértékegység-átváltásokat a **Mértékegység-átváltás** oldalról egy Excel-táblázatba, frissíteni az átváltásokat, és aztán ismét közzétenni őket a Supply Chain Management alkalmazásban.
+1. Mivel a **Kicsi**, **Közepes** és **Nagy** termékváltozatok esetében azonos a mértékegység-átváltás a *Doboz* és a *Darab* egységek között, az alapterméken meg lehet adni a mértékegység-átváltást ezekhez a termékváltozatokhoz.
 
-Az exportálás az Excel programba, majd az ismételt közzététel a módosítás után a Supply Chain Management alkalmazásban itt engedélyezhető: **Megnyitás a Microsoft Office-ban** menüelem a műveletpanelen a **Mértékegység-átváltás** lapon.
+    | Mező                 | Beállítás |
+    |-----------------------|---------|
+    | Átváltás létrehozása a következőhöz: | Termék |
+    | Termék               | Póló |
+    | Kezdő egység             | Dobozok   |
+    | Szorzó                | 5       |
+    | Záró egység               | darab  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>A mértékegység-átváltások frissítése az Excel programmal
+
+Ha egy terméknek számos olyan változata van, amelyek eltérő mértékegység-átváltással rendelkeznek, akkor célszerű exportálni egy Microsoft Excel munkafüzetbe az egység konverzióit, frissíteni őket, majd újra közzéteheti őket a Dynamics 365 Supply Chain Management alkalmazásban.
+
+Az egységek átváltásának Excel programba történő exportálásához válassza a **Mértékegység-átváltások** oldal Művelet paneljén a **Megnyitás Microsoft Office alkalmazásban** lehetőséget.
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Mértékegység kezelése](tasks/manage-unit-measure.md)

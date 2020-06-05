@@ -1,9 +1,9 @@
 ---
-title: A Raktározási alkalmazás telepítése és konfigurálása áttekintése
-description: Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 for Finance and Operations – Warehousing alkalmazást.
+title: A raktározási alkalmazás telepítése és csatlakoztatása
+description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktározási alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 author: MarkusFogelberg
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,132 +19,258 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 52882ef7542bfedebdae4a08de8404cddd01ed55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205598"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367082"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>A Raktározási alkalmazás telepítése és konfigurálása áttekintése
+# <a name="install-and-connect-the-warehousing-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> 
-> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktárkészlet-nyilvántartását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
+A raktározási alkalmazás a Google Play Store-ban és a Microsoft Store-ban érhető el. Önálló összetevőként áll rendelkezésre. Ezért minden eszközre le kell töltenie, majd be kell állítania, hogy csatlakozzon a Microsoft Dynamics 365 Supply Chain Management-környezetéhez.
 
-Ez a témakör leírja, hogyan telepítheti és konfigurálhatja a Dynamics 365 for Finance and Operations – Warehousing alkalmazást.
+Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktározási alkalmazást mindegyik mobileszközre, és konfigurálni a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 
-A Warehousing alkalmazás a Google Play Store-ban és a Windows Áruházban érhető el. A Dynamics 365 Supply Chain Management alkalmazás különálló összetevőként érhető el, ami azt jelenti, hogy raktári feladatokhoz eszközökre önállóan telepíthető. Az alkalmazás használatához minden eszközre le kell tölteni az alkalmazást, konfigurálni kell a Supply Chain Management környezethez való kapcsolódáshoz. Ez a témakör ismerteti az alkalmazás eszközökre telepítésének módját. Azt is bemutatja, hogyan konfigurálhatja az alkalmazást a Supply Chain Management környezethez való csatlakozáshoz.
+## <a name="system-requirements"></a>Rendszerkövetelmények
 
-## <a name="prerequisites"></a>Előfeltételek
-Az alkalmazás Android és Windows operációs rendszereken érhető el. Az alkalmazás használatához rendelkeznie kell az eszközökre telepített alábbi támogatott operációs rendszerek egyikével. Az alábbi támogatott verziók közül is rendelkeznie kell az egyikkel. A következő táblázatban található információk segítségével értékelje, hogy a hardver- és szoftverkörnyezetbe készen áll-e a telepítés támogatására.
+A raktározási alkalmazás Windows és Android operációs rendszereken érhető el. Az alkalmazás legújabb verziójának használatához rendelkeznie kell a mobileszközökre telepített alábbi támogatott operációs rendszerek egyikével:
 
-| Platform                    | Verzió                                                                                                                                                                     |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0, 9.0                                                                                                                                                     |
-| Windows (UWP)               | Windows 10 (összes verzió)                                                                                                                                                   |
-| Finance and Operations | Microsoft Dynamics 365 for Operations, 1611-es verzió <br>– vagy – <br>Microsoft Dynamics AX 7.0/7.0.1 verzió és Microsoft Dynamics AX platform update 2 a KB 3210014 gyorsjavítással |
-
-## <a name="get-the-app"></a>Az alkalmazás beszerzése
--   Windows (UWP)
-     - [Finance and Operations – Warehousing a Windows Áruházban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android
-    - [Finance and Operations – Warehousing a Google Play áruházban](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+- Windows 10 (Univerzális Windows-platform \[UWP\]) őszi készítői frissítés, 1709 (10.0.16299-es build) vagy újabb
+- Android 4.4 vagy újabb
 
 > [!NOTE]
-> A Zebra App Galleryt már megszüntették, ami azt jelenti, hogy a Warehousing alkalmazás nem lesz letölthető erről a helyről.
+> Ha támogatnia kell a Windows legújabb verzióját nem futtató régebbi Windows-eszközöket, akkor is továbbra is letöltheti a Microsoft Store-ból a raktározási alkalmazás 1.6.3.0-ás verzióját. Ez a verzió fut a Windows 10 (UWP) novemberi frissítés, 1511 (10.0.10586-os build) vagy később verzióján. Ne feledje azonban, hogy a raktározási alkalmazás ezen verziója nem támogatja a kapcsolati beállítások tömeges telepítését. Ezért minden olyan eszköz esetében, amely az alkalmazásnak ezt a verzióját futtatja, [kézzel kell konfigurálnia a kapcsolatot](#config-manually).
 
-## <a name="create-a-web-service-application-in-azure-active-directory"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
-Ahhoz, hogy az alkalmazás együttműködhessen a kívánt Supply Chain Management kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directory felületén a Supply Chain Management bérlő számára. Biztonsági okokból az összes használt eszköz számára ajánlott létrehozni egy-egy webszolgáltatási alkalmazást. Hozzon létre a szolgáltatási webalkalmazást az Azure Active Directory (Azure AD) felületén, tegye a következőket:
+## <a name="get-the-warehousing-app"></a>A raktározási alkalmazás beszerzése
 
-1.  Lépjen egy böngészőben a <https://portal.azure.com> címre.
-2.  Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
-3.  Az Azure portálon a bal oldali navigációs panelen kattintson az **Azure Active Directory** lehetőségre.
+Az alkalmazás letöltéséhez használja a következő hivatkozások egyikét:
 
-    [![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+- **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing a Microsoft Store-ban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+- **Android:** [Warehousing - Dynamics 365 a Google Play Store-ban](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-4.  Győződjön meg róla, hogy az Active Directory-példány az, amelyet a Supply Chain Management használ.
-5.  A listában kattintson az **Alkalmazásregisztrációk** elemre. 
+Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. A raktározási alkalmazás 1.7.0.0-ás és újabb verzióiban azonban automatizálhatja az alkalmazások telepítését és/vagy konfigurációját. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 
-6.  Kattintson a felső panelen az **Új regisztrálás** elemre. Az **Alkalmazás regisztrálása varázsló** elindul.
-7.  Írjon be egy nevet az alkalmazás számára, válassza a **Számlák csak ebben a szervezeti könyvtárban** lehetőséget. Kattintson a **Regisztráció** lehetőségre.  
+Ahhoz, hogy a raktározási alkalmazás együttműködhessen a kívánt Supply Chain Management kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directory (Azure AD) felületén a Supply Chain Management bérlő számára. A következő eljárás bemutatja a feladat végrehajtásának egyik módját. A részletes tudnivalókkal és alternatívákkal kapcsolatban lásd az eljárás utáni hivatkozásokat.
 
-    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+1. Lépjen egy böngészőben a [https://portal.azure.com](https://portal.azure.com/) címre.
+1. Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
+1. Az Azure portálon a bal oldali navigációs panelen válassza az **Azure Active Directory** lehetőséget.
 
-8.  Megnyílik az új alkalmazás regisztrációja. 
+    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
 
-    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+1. Győződjön meg róla, hogy az Azure AD Supply Chain Management által használt példányával dolgozik.
+1. A **Kezelés** listában válassza az **Alkalmazásregisztrációk** elemet.
 
-9.  Ne felejtse el a **alkalmazásazonosítót**, később szükség lesz rá. Az **Alkalmazásazonosítóra** később **Ügyfél-azonosító** néven utalunk.
-10. Kattintson a **Tanúsítványok és titkok** hivatkozásra a **Kezelés** ablaktáblán. Kattintson az **Új ügyféltitok** hivatkozásra. 
+    ![Alkalmazásregisztrációk](media/app-connect-azure-register.png "Alkalmazásregisztrációk")
 
-    [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+1. Az eszköztáron válassza az **Új regisztráció** parancsot az **Alkalmazás regisztrálása** varázsló megnyitásához.
+1. Írjon be egy nevet az alkalmazás számára, válassza a **Számlák csak ebben a szervezeti könyvtárban** lehetőséget, majd válassza a **Regisztráció** lehetőséget.
 
-11. Hozzon létre egy kulcsot egy kulcsleírás és egy időtartam beírásával a **Jelszavak** részben. Kattintson a **Hozzáadás** elemre, és másolja le a kulcsot. A kulcs neve a továbbiakban: **Titkos ügyfélkód**. 
+    ![Alkalmazás regisztrálása varázsló](media/app-connect-azure-register-wizard.png "Alkalmazás regisztrálása varázsló")
 
-    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+1. Megnyílik az új alkalmazás regisztrációja. Jegyezze fel az **Alkalmazás (ügyfél) azonosító** értékét, mert később szüksége lesz rá. Erre az azonosítóra a témakör későbbi részében *ügyfélazonosítóként* hivatkozunk.
+
+    ![Alkalmazás (ügyfél) azonosítója](media/app-connect-azure-app-id.png "Alkalmazás (ügyfél) azonosítója")
+
+1. Válassza a **Tanúsítvány és titkok** lehetőséget a **Kezelés** listában. Ezt követően válassza ki a következő gombok egyikét, attól függően, hogy hogyan szeretné konfigurálni az alkalmazást hitelesítésre. (További információkért tekintse meg a [Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával](#authenticate) fejezetet a témakör későbbi részében.)
+
+    - **Tanúsítvány feltöltése** – A titkos kódként használt tanúsítvány feltöltése. Ezt a megközelítést ajánljuk, mert a biztonságosabb, és nagyobb mértékben automatizálható is. Ha Windows-eszközökön futtatja a raktározási alkalmazást, jegyezze fel a tanúsítvány feltöltése után megjelenő **Ujjlenyomat** értéket. Erre az értékre akkor lesz szükségem amikor Windows-eszközökön konfigurálja a tanúsítványt.
+    - **Új titkos ügyfélkód** – Hozzon létre egy kulcsot a kulcs leírásának és időtartamának megadásával a **Jelszavak** részben, majd válassza a **Hozzáadás** elemet. Készítsen másolatot a kulcsról, és tárolja biztonságosan.
+
+    ![Tanúsítvány és titkos kódok](media/app-connect-azure-authentication.png "Tanúsítvány és titkos kódok")
+
+Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos további tudnivalókat lásd a következő forrásokban:
+
+- A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- A webszolgáltatási alkalmazások Azure AD rendszerben való manuális létrehozásával kapcsolatos további tudnivalókat lásd a következő témakörökben:
+
+    - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+    - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Felhasználói fiók létrehozása és konfigurálása a Supply Chain Management megoldásban
-Annak érdekében, hogy a Supply Chain Management képes legyen az Azure AD alkalmazás használatára, kövesse az alábbi konfigurációs lépéseket:
 
-1.  Hozzon létre egy olyan felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak.
-    1.  Ugrás a **Rendszerfelügyelet** &gt; **Közös** &gt; **Felhasználók** elemre.
-    2.  Hozzon létre egy új felhasználót.
-    3.  Rendelje hozzá a Warehouse-mobileszköz felhasználóját, amint azt a következő képernyőképen látható. 
-    
-        [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+A következő lépésekkel engedélyezheti az Supply Chain Management számára az Azure AD alkalmazása használatát.
 
-2.  Társítsa az Azure Active Directory alkalmazást a raktározási alkalmazás felhasználójával.
-    1.  A Supply Chain Management szolgáltatásban lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Azure Active Directory alkalmazások** elemre.
-    2.  Hozzon létre egy új sort.
-    3.  Adja meg az (az utolsó szakaszban kapott) **Ügyfél-azonosítót**, adjon neki nevet, és válassza ki a korábban létrehozott felhasználót. Azt javasoljuk, hogy az összes eszközt lássa el címkével, hogy egyszerűen eltávolíthassa hozzáférésüket a Supply Chain Managementhez erről az oldalról abban az esetben, ha az eszközök elvesznek. 
-    
-        [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+1. Hozzon létre egy olyan felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak:
 
-## <a name="configure-the-application"></a>Az alkalmazás konfigurálása
-Konfigurálnia kell az alkalmazást az eszközön, hogy csatlakozni tudjon a Supply Chain Management kiszolgálóhoz Azure AD alkalmazáson keresztül. Ehhez a következő lépéseket kell végrehajtani.
+    1. A Supply Chain Management szolgáltatásban lépjen a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
+    1. Hozzon létre egy felhasználót.
+    1. Rendelje hozzá a raktározási mobileszköz felhasználóját.
 
-1.  Az alkalmazásban lépjen a **Kapcsolat beállításai** elemre.
-2.  Törölje a **Bemutató mód** mezőt. <br>
+    ![Rendelje hozzá a raktározási mobileszköz felhasználóját](media/app-connect-app-users.png "Rendelje hozzá a raktározási mobileszköz felhasználóját")
 
-    [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+1. Társítsa az Azure AD alkalmazást a raktározási alkalmazás felhasználójával:
 
-3.  Adja meg a következő adatokat: 
-    + **Azure Active Directory ügyfél-azonosító** - Az ügyfél-azonosító beszerzése a 9. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
-    + **Azure Active Directory titkos ügyfélkód** - A titkos ügyfélkód beszerzése a 11. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
-    + **Azure Active Directory-erőforrás** - Az Azure AD könyvtár-erőforrás a Supply Chain Management gyökér-URL-jét jeleníti meg. 
-    
+    1. Ugrás a **Rendszerfelügyelet \> Beállítás \> Azure Active Directory alkalmazások** elemre.
+    1. Hozzon létre egy sort.
+    1. Írja be az előző szakaszban feljegyzett ügyfél-azonosítót, adja meg a nevet, és válassza ki az imént létrehozott felhasználót. Javasoljuk, hogy az összes eszközt címkézze fel. Ezt követően, ha elvesznek, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést ezen az oldalon.
+
+    ![Azure Active Directory alkalmazások](media/app-connect-aad-apps.png "Azure Active Directory alkalmazások")
+
+## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával
+
+Az Azure AD használatával történő hitelesítéssel biztonságos módon csatlakoztathat egy mobileszközt a Supply Chain Management alkalmazsáshoz. A hitelesítést elvégezheti titkos ügyfélkód vagy tanúsítványok használatával. Ha a csatlakozási beállításokat importálja, javasoljuk, hogy a titkos ügyfélkód helyett helyett használjon tanúsítványt. Mivel a titkos ügyfélkódot mindig biztonságosan kell tárolni, nem importálhatja azt egy kapcsolatbeállítási fájlból vagy egy QR-kódból, a témakörben később ismertetett módon.
+
+A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a raktározási alkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
+
+A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a raktározási alkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
+
+Annak érdekében, hogy az alkalmazások könnyebben karbantarthatók és telepíthetők legyenek számos mobileszközön, a csatlakozási beállításokat importálhatja az egyes eszközökbe történő kézi beírás helyett. Ez a szakasz bemutatja, hogyan lehet létrehozni és importálni a beállításokat.
+
+### <a name="create-a-connection-settings-file-or-qr-code"></a>Kapcsolatbeállítási fájl vagy QR-kód létrehozása
+
+A csatlakozási beállításokat egy fájlból vagy egy QR-kódból is importálhatja. Mindkét módszernél létre kell hoznia egy olyan beállításfájlt, amely JSON (JavaScript Object Notation) formátumot és szintaxist használ. A fájlnak tartalmaznia kell egy olyan kapcsolatlistát, amely tartalmazza a hozzáadandó egyéni kapcsolatokat. A következő táblázat összegzi azokat a paramétereket, amelyeket meg kell adnia a kapcsolatbeállítási fájlhoz.
+
+| Paraméter | Leírás |
+| --- | --- |
+| ConnectionName | Adja meg a csatlakozási beállítás nevét. A maximális hossz 20 karakter. Mivel ez az érték egy csatlakozási beállítás egyedi azonosítója, győződjön meg arról, hogy egyedi a listán. Ha már létezik ilyen nevű kapcsolat az eszközön, akkor az importált fájl beállításai felülbírálják. |
+| ActiveDirectoryClientAppId | Adja meg az ügyfélazonosítót, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban. |
+| ActiveDirectoryResource | Adja meg a Supply Chain Management gyökér-URL-címét. |
+| ActiveDirectoryTenant | Adja meg az Azure AD Supply Chain Management-kiszolgálón használt bérlőt. Ez az érték a `https://login.windows.net/<your-Azure-AD-tenant-ID>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| Cég | Adja meg a Supply Chain Managementben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell. |
+| ConnectionType | (választható) Adja meg, hogy a kapcsolatbeállításnak tanúsítvány vagy titkos ügyfélkód használatával kell-e kapcsolódnia egy környezethez. Az érvényes értékek: *"certificate"* és *"clientsecret"*. Az alapértelmezett érték a *"certificate"*.<p>**Megjegyzés:** A titkos ügyfélkódok nem importálhatók.</p> |
+| IsEditable | (választható) Adja meg, hogy az alkalmazás felhasználója szerkesztheti-e a kapcsolatbeállítást. Az érvényes értékek az *"igaz"* és a *"hamis"*. Az alapértelmezett érték az *"igaz"*. |
+| IsDefault | (választható) Adja meg, hogy a kapcsolat az alapértelmezett kapcsolat-e. Az alapértelmezett kapcsolatként beállított kapcsolatot a program automatikusan előre kiválasztja az alkalmazás megnyitásakor. Csak egy kapcsolat állítható be alapértelmezett kapcsolatként. Az érvényes értékek az *"igaz"* és a *"hamis"*. Az alapértelmezett érték a *"hamis"*. |
+| CertificateThumbprint | (választható) Windows-eszközök esetében meg lehet adni a kapcsolathoz tartozó tanúsítvány ujjlenyomatát. Az Android-eszközök esetében az alkalmazás felhasználójának ki kell választania a tanúsítványt, amikor első alkalommal használja a kapcsolatot. |
+
+A következő példa egy érvényes kapcsolatbeállítási fájlt mutat be, amely két kapcsolatot tartalmaz. Látható, hogy a kapcsolatlista (a fájlban *"ConnectionList"* névvel) egy olyan objektum, amelynek tömbje minden kapcsolatot objektumként tárol. Minden objektumot kapcsos zárójelbe ({}) kell tenni, vesszővel kell elválasztani, és a tömböt szögletes zárójelbe (\[\]) kell foglalni.
+
+```json
+{
+    "ConnectionList": [
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection1",
+            "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": false,
+            "IsDefaultConnection": true,
+            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
+            "ConnectionType": "certificate"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection2",
+            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "clientsecret"
+        }
+    ]
+}
+```
+
+Az adatokat JSON-fájlként mentheti, vagy generálhat egy olyan QR-kódot, amelynek ugyanaz a tartalma. Ha az információt fájlként menti, azt ajánljuk, hogy az alapértelmezett *connections.json* nevet használja, különösen akkor, ha az alapértelmezett helyen fogja tárolni mindegyik mobileszköz esetében.
+
+### <a name="save-the-connection-settings-file-on-each-device"></a>A kapcsolatbeállítási fájl mentése mindegyik eszközre
+
+Általában egy eszközkezelő eszközzel vagy parancsfájllal terjesztheti a kapcsolati beállítások fájljait mindegyik éppen kezelt eszközre. Ha az alapértelmezett nevet és helyet használja a kapcsolatbeállításokat tartalmazó fájl mentésekor az egyes eszközökön, akkor a program automatikusan importálja azt, még az alkalmazás telepítése utáni első futtatásakor is. Ha egyéni nevet vagy helyet ad meg a fájlnak, az alkalmazás felhasználójának meg kell adnia az értékeket az első futtatásakor. Az alkalmazás azonban továbbra is a megadott nevet és helyet fogja használni.
+
+Az alkalmazás minden elindításakor újraimportálja a kapcsolatbeállításokat a korábbi helyről, és meghatározza, hogy vannak-e módosítások. Az alkalmazás csak azokat a kapcsolatokat fogja frissíteni, amelyeknek ugyanaz a neve, mint a kapcsolatbeállítási fájljához tartozó kapcsolatoknak. A felhasználó által létrehozott, más neveket használó kapcsolatok nem frissülnek.
+
+Kapcsolatot nem lehet eltávolítani a kapcsolatbeállítások fájljával.
+
+A fentiek szerint az alapértelmezett fájlnév a *connections.json*. A fájl alapértelmezett helye attól függ, hogy Windows-eszközt vagy Android-eszközt használ:
+
+- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.Dynamics365forOperations-Warehousing_8wekyb3d8bbwe\LocalState`
+- **Android:** `Android\data\com.Microsoft.Dynamics365forOperationsWarehousing\files`
+
+Általában az útvonalak automatikusan létrejönnek az alkalmazás első futtatása után. Ezeket a beállításokat azonban manuálisan is létrehozhatja, ha a telepítés előtt át kell vinnie az eszközre a kapcsolatbeállításokat tartalmazó fájlt.
+
+> [!NOTE]
+> Ha eltávolítja az alkalmazást, akkor az alapértelmezett elérési út és annak tartalma törlődik.
+
+### <a name="import-the-connection-settings"></a>A kapcsolat beállításainak importálása
+
+Kövesse az alábbi lépéseket a csatlakozási beállítások egy fájlból vagy egy QR-kódból történő importálásához.
+
+1. Nyissa meg a mobileszközén a raktározási alkalmazást.
+1. Lépjen a **Kapcsolat beállításai** elemre.
+1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
+
+    ![Bemutató mód használata beállítás](media/app-connect-app-demo-mode.png "Bemutató mód használata beállítás")
+
+1. Válassza ki a **Fájl kiválasztása** vagy **QR-kód beolvasása** lehetőséget, attól függően, hogy hogyan szeretné importálni a beállításokat:
+
+    - Ha egy fájlból importálja a kapcsolatbeállításokat, előfordulhat, hogy az alkalmazás már megtalálta a fájlt, ha a mentéskor az alapértelmezett név és az alapértelmezett hely került felhasználásra. Ellenkező esetben jelölje be a **Fájl kiválasztása** lehetőséget, tallózással keresse meg a fájlt a helyi eszközön, majd válassza ki azt. Ha kiválaszt egy egyéni helyet, akkor az alkalmazás tárolja és automatikusan felhasználja a következő alkalommal.
+    - Ha QR-kód beolvasásával importálja a kapcsolatbeállításokat, válassza a **QR-kód beolvasása** parancsot. A program engedélyt kér az eszköz kamerájának használatára. Miután megadta az engedélyt, a kamera elindul, így használható a szkenneléshez. Az eszköz kamerájának minőségétől és a QR-kód bonyolultságától függően előfordulhat, hogy nehéz megfelelően beolvasni. Ebben az esetben próbálja meg csökkenteni a QR-kód bonyolultságát úgy, hogy csak egy kapcsolatot generál QR-kódonként. (Jelenleg csak az eszköz kamerája használható a QR-kód beolvasására.)
+
+    ![A kapcsolat beállításainak importálása](media/app-connect-app-select-file.png "A kapcsolat beállításainak importálása")
+
+1. Amikor a kapcsolatok beállításai sikeresen betöltődnek, válassza a **Vissza** (balra nyíl) gombot az oldal felső sarkában.
+
+    ![Kapcsolatbeállítások betöltve](media/app-connect-app-settings-loaded.png "Kapcsolatbeállítások betöltve")
+
+1. Ha Android-eszközt használ, és tanúsítványt használ a hitelesítéshez, az eszköz rákérdez a tanúsítvány kiválasztására.
+
+    ![Tanúsítvány választására szolgáló kérés egy Android-eszközön](media/app-connect-app-choose-cert.png "Tanúsítvány választására szolgáló kérés egy Android-eszközön")
+
+1. Az alkalmazás összekapcsolja a Supply Chain Management-szerverrel, és a bejelentkezési oldalt jeleníti meg.
+
+    ![Bejelentkezési oldal](media/app-connect-sign-in.png "Bejelentkezési oldal")
+
+## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Az alkalmazás manuális konfigurálása
+
+Manuálisan konfigurálhatja az alkalmazást az eszközön, hogy csatlakozni tudjon a Supply Chain Management-kiszolgálóhoz Azure AD alkalmazáson keresztül.
+
+1. Nyissa meg a mobileszközén a raktározási alkalmazást.
+1. Lépjen a **Kapcsolat beállításai** elemre.
+1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
+
+    ![Bemutató mód kikapcsolva](media/app-connect-app-select-file.png "Bemutató mód kikapcsolva")
+
+1. A **Kapcsolat kiválasztása** mezőben bontsa ki a kapcsolati adatok manuális megadásához szükséges beállításokat.
+
+    ![Manuális kapcsolati mezők](media/app-connect-manual-connect.png "Manuális kapcsolati mezők")
+
+1. Adja meg a következő adatokat:
+
+    - **Titkos ügyfélkód használata** – Adja meg ezt a beállítást _Igen_ értékkel titkos ügyfélkóddal történő hitelesítéshez a Supply Chain Management alkalmazásban. Állítsa _Nem_ értékre, ha tanúsítványt kíván használni a hitelesítéshez. (További tájékoztatás: [Webszolgáltatás-alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service).)
+    - **Kapcsolat neve** – Adjon nevet az új kapcsolatnak. Ez a név fog megjelenni a **Kapcsolat kiválasztása** mezőben, amikor legközelebb megnyitja a kapcsolatbeállításokat. A megadott névnek egyedinek kell lennie. (Más szóval különböznie kell az eszközön tárolt összes egyéb kapcsolatnévtől, ha más kapcsolatneveket is tárol ott.).
+    - **Active directory ügyfélazonosító** – Adja meg az ügyfélazonosítót, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban.
+    - **Active Directory titkos ügyfélkódja** – Ez a mező csak akkor érhető el, ha a **Titkos ügyfélkód használata** beállítás értéke _Igen_. Adja meg a titkos ügyfélkódot, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban.
+    - **Active Directory tanúsítvány ujjlenyomata** – Ez a mező csak Windows-eszközökön érhető el, ha a **Titkos ügyfélkód használata** beállítás értéke _Nem_. Adja meg a tanúsítvány ujjlenyomatát, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban.
+    - **Active Directory-erőforrás** – Adja meg a Supply Chain Management gyökér URL-jét.
+
         > [!NOTE]
-        > Ne zárja perjellel (/) ezt a mezőt. 
+        > Ne fejezze be ezt az értéket perjellel (/).
 
-    + **Azure Active Directory-bérlő** – a Supply Chain Management kiszolgálón használt Azure AD könyvtárbérlő: `https://login.windows.net/your-AD-tenant-ID`. Például: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    
+    - **Active Directory-bérlő** – Adja meg a Supply Chain Management-kiszolgálón használt Azure AD bérlőt. Ez az érték a `https://login.windows.net/<your-Azure-AD-tenant-ID>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+
         > [!NOTE]
-        > Ne zárja perjellel (/) ezt a mezőt. 
-    
-    + **Vállalat** - Adja meg a Supply Chain Managementben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell. <br>
-    
-    [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+        > Ne fejezze be ezt az értéket perjellel (/).
 
-4.  Válassza a **Vissza** gombot az alkalmazás bal felső sarkában. Az alkalmazás ekkor csatlakozik a Supply Chain Management kiszolgálóhoz, és megjelenik a raktári dolgozó bejelentkezési képernyője.
+    - **Vállalat** – Adja meg a Supply Chain Managementben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell.
 
-    [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
-
-További információkért a Raktárkezelés alkalmazás beállításával kapcsolatban arra, hogy a mobileszköz kameráját vonalkódok leolvasására használja, lásd: [Vonalkódok beolvasása kamera használatával a Dynamics 365 for Finance and Operations – Raktárkezelés alkalmazásban](scan-bar-codes-using-a-camera.md).
+1. Kattintson bármely lap jobb felső sarkában látható **Mentés** gombra.
+1. Ha Android-eszközt használ, és tanúsítványt használ a hitelesítéshez, az eszköz rákérdez a tanúsítvány kiválasztására.
+1. Az alkalmazás összekapcsolja a Supply Chain Management-szerverrel, és a bejelentkezési oldalt jeleníti meg.
 
 ## <a name="remove-access-for-a-device"></a>Eszköz hozzáférésének eltávolítása
+
 Abban az esetben, ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az eszköz a Supply Chain Managementhez való hozzáférését. Az alábbi lépések leírják a hozzáférés-eltávolítás javasolt eljárását.
 
-1.  Ugrás a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Azure Active Directory alkalmazások** elemre.
-2.  Törölje a sort, amely megfelel az eszköznek, amelynek a hozzáférését el szeretné távolítani. Ne felejtse el az eltávolított eszközhöz használt **ügyfél-azonosítót**, mert később szüksége lesz rá.
-3.  Jelentkezzen be az Azure portálon: <https://portal.azure.com>.
-4.  Kattintson az **Active Directory** ikonra a bal oldali menüben, és ellenőrizze, hogy a megfelelő könyvtárban van-e.
-5.  A listában kattintson az **Alkalmazásregisztrációk** elemre, majd kattintson a konfigurálni kívánt alkalmazásra. Megjelenik a **Beállítások** oldal a konfigurációs adatokkal.
-6.  Győződjön meg arról, hogy az alkalmazás **Ügyfél-azonosítója** ugyanaz, mint a 2. lépésben volt.
-7.  Kattintson a felső panel **Törlés** gombjára.
-8.  A megerősítő üzeneten kattintson az **Igen** gombra.
+1. Ugrás a **Rendszerfelügyelet \> Beállítás \> Azure Active Directory alkalmazások** elemre.
+1. Törölje a sort, amely megfelel az eszköznek, amelynek a hozzáférését el szeretné távolítani. Jegyezze fel az eltávolított eszköz ügyfél-azonosítóját, mivel később szüksége lesz rá.
+
+    Ha csak egy ügyfél-azonosítót regisztrált, és több eszköz ugyanazt az ügyfél-azonosítót használja, akkor az új kapcsolati beállításokat el kell küldenie ezekre az eszközökre. Ellenkező esetben elveszítik a hozzáférést.
+
+1. Jelentkezzen be az Azure portálon: [https://portal.azure.com](https://portal.azure.com/).
+1. A bal oldali navigációs ablaktáblán válassza az **Active Directory** lehetőséget, és győződjön meg arról, hogy a megfelelő könyvtárban van.
+1. A **Felügyelet** listában kattintson az **Alkalmazásregisztrációk** elemre, majd kattintson a konfigurálni kívánt alkalmazásra. Megjelenik a **Beállítások** oldal a konfigurációs adatokkal.
+1. Győződjön meg róla, hogy az alkalmazás ügyfél-azonosítója megegyezik azzal az ügyfél-azonosítóval, amelyet a 2. lépésben feljegyzett.
+1. Válassza az eszköztár **Törlés** elemét.
+1. A megerősítő üzenetben válassza az **Igen** gombot.

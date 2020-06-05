@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8946baa4597ad4b696bcb6bcc49d4202163a41a9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214859"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383527"
 ---
 # <a name="maintenance-downtime"></a>Karbantartás miatti üzemkimaradás
 
@@ -75,7 +75,7 @@ A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** részl
 
 9. A **Kapacitásterhelés kiszámítása** párbeszédpanelen szükség esetén módosítsa a kezdő és a záró időpontot, és adja meg, hogy szeretné-e szerepeltetni a számításban a munkarendeléseket és a karbantartási ütemezéseket. A **Szint** mezőben adhatja meg, hogy a kapacitásterhelési számítás milyen részletesen jelenítse meg a munkavégzési helyszíneket. Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínekhez, akkor a munkavégzési helyszín karbantartás miatti üzemkimaradási tevékenységénél megadott összes eszköze a legfelső szinten jelenik meg, így a sorban szereplő óraszámok hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely a kapacitásterhelés minden sorát megjeleníti az összes olyan munkavégzési helyszínnél, amelyhez a sor kapcsolódik.
 
-10. Kattintson az **OK** gombra az számítás indításához. A **Kapacitásterhelés** áttekintésében a teljes óraszám jelenik meg. A **Kapacitásterhelés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett órák felosztásáról. A lenti ábra a **Kapacitásterhelés** számításának eredményeit mutatja.
+10. Kattintson az **OK** gombra az számítás indításához. A **Kapacitásterhelés** áttekintésében a teljes óraszám jelenik meg. A **Kapacitásterhelés** lap > **Csoportosítás alapja...** Műveleti panel csoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett órák felosztásáról. A lenti ábra a **Kapacitásterhelés** számításának eredményeit mutatja.
 
 ![3. ábra](media/21-preventive-maintenance.png)
 
@@ -92,7 +92,7 @@ A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** részl
 
 15. A **Cikkelőrejelzés kiszámítása** párbeszédpanelen szükség esetén módosítsa a kezdő és a záró időpontot, és adja meg, hogy szeretné-e szerepeltetni a számításban a munkarendeléseket és a karbantartási ütemezéseket. A **Szint** mezőben adhatja meg, hogy a kapacitásterhelési számítás milyen részletesen jelenítse meg a munkavégzési helyszíneket. Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínekhez, akkor a munkavégzési helyszín karbantartás miatti üzemkimaradási tevékenységénél megadott összes eszköze a legfelső szinten jelenik meg, így a sorban szereplő óraszámok hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely a kapacitásterhelés minden sorát megjeleníti az összes olyan munkavégzési helyszínnél, amelyhez a sor kapcsolódik.
 
-16. Kattintson az **OK** gombra az számítás indításához. A cikkelőrejelzések teljes száma a **Cikkelőrejelzés** áttekintésében jelenik meg. A **Cikkelőrejelzés** lap > **Csoportosítás alapja...** műveleti ablaktáblacsoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett cikkek felosztásáról.A lenti ábra a karbantartás **ütemezés költség** számításának eredményeit mutatja.
+16. Kattintson az **OK** gombra az számítás indításához. A cikkelőrejelzések teljes száma a **Cikkelőrejelzés** áttekintésében jelenik meg. A **Cikkelőrejelzés** lap > **Csoportosítás alapja...** Műveleti panel csoportokban kattintson a megfelelő gombra, ha részletesebb áttekintést szeretne kapni az előrejelzett cikkek felosztásáról.A lenti ábra a karbantartás **ütemezés költség** számításának eredményeit mutatja.
 
 ![4. ábra](media/22-preventive-maintenance.png)
 

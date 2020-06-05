@@ -2,13 +2,13 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Dynamics 365 Supply Chain Management kezdőlapja
           href: index.md
         - name: Első lépések
           items:
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Regisztrálás az előzetes előfizetésekre
+            - name: Regisztrálás az előfizetések előnézetére
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Egyverziós szolgáltatásfrissítések
               items:
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Súgórendszer csatlakoztatása
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Egyéni súgóoldal csatlakoztatása
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Egyéni súgó áttekintése
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mezőleírások megtekintése és exportálása
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Feladatrögzítő
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT-intelligencia
+          items:
+            - name: IoT-intelligencia kezdőlapja
+              href: iot/iot-intelligence-home-page.md
+            - name: Állítsa be az Azure erőforrások modult
+              href: iot/iot-azure-setup.md
+            - name: Az IoT-központhoz tartozó üzenetséma-formátumok
+              href: iot/iot-schema-format.md
+            - name: Telepítse a bővítményt az LCS-ben
+              href: iot/iot-lcs-setup.md
+            - name: Mutatók beállítása
+              href: iot/iot-metrics-setup.md
+            - name: Eset beállítása
+              href: iot/iot-scenario-setup.md
+            - name: Figyelemmel kísérés és kezelés
+              href: iot/iot-management.md
         - name: Alaptervezés
           items:
             - name: Alaptervezés kezdőlapja
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Tervezési feladat visszavonása
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Tervezési optimalizálás hibaelhárítása
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Alaptervek
               items:
                 - name: Alaptervek áttekintése
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: A raktározási alkalmazás telepítése és konfigurálása
               items:
-                - name: A telepítés és konfigurálás áttekintése
+                - name: A raktározási alkalmazás telepítése és csatlakoztatása
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Mezőnevek konfigurálása raktározási alkalmazásban
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Munkasablon beállítása beszerzési rendelésekhez
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Szállítmánykonszolidációs irányelvek
+              items:
+                - name: Szállítmánykonszolidációs irányelvek
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Szállítmánykonszolidációs irányelvek konfigurálása
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: '1. eset – Szállítmányok konszolidálása, amikor kiadják őket a raktárba az értékesítési rendelések automatikus kiadásával'
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: '2. eset – Szállítmányok konszolidálása, amikor a szállítmány-konszolidációs irányelvet felülírják a Raktárba kiadás oldalról'
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: 3. eset – Szállítmányok konszolidálása a rakománytervezés munkaterületről a Raktárba kiadás használatával
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: 4. eset – Szállítmányok konszolidálása a szállítmány konszolidációs munkaterület használatával
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: 5. eset – Szállítmányok kézi konszolidálása a szállítmányok konszolidációs oldal használatával
+                  href: warehousing/consolidate-shipments-manual-form.md
         - name: Supply Chain Management fejlesztése
           items:
             - name: Gantt-vezérlő – fejlesztési útmutató

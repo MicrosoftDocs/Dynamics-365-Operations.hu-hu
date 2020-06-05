@@ -3,7 +3,7 @@ title: Költség-visszaigazolások feldolgozása
 description: Ez a témakör a nyugták optikai karakterfelismerésre (OCR) alapuló feldolgozásával kapcsolatban tartalmaz tájékoztatást. Ez a funkció azt a célt szolgálja, hogy javítsa a felhasználói élményt, amikor költségjelentéseket hoz létre a Microsoft Dynamics 365 Finance szolgáltatásban.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248963"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378231"
 ---
 # <a name="expense-receipt-processing"></a>Költség a bevételezés feldolgozásakor
 
@@ -36,24 +36,24 @@ A kiadások bevitelét a nyugták optikai karakterfelismerés (OCR) segítségé
 
 ## <a name="usage-examples"></a>Felhasználási példák
 
-- **Hitelkártya-adatokat tartalmazó nyugták automatikus csatolása költségjelentés létrehozásakor.**
+A költségjelentés létrehozásakor a hitelkártya-adatokat tartalmazó nyugták automatikus csatolásához tegye a következőt:
 
-    1. Nyissa meg a **Költséggazdálkodás** munkaterületet.
-    2. A **Nyugták** lapon ellenőrizze, hogy vannak-e nem csatolt nyugták. A nyugtákat a **Nyugták** lapon is fel lehet tölteni.
-    3. A **Költségek** lapon ellenőrizze, hogy vannak-e nem csatolt költségek. A költség felügyelője általában a hitelkártya kiadójától importálja ezeket a költségeket.
-    4. Jelölje ki az **Új költégjelentés** lehetőséget. Vegye észre, hogy a költségek és a most már a nyugták is a költségjelentés létrehozásakor is megadhatók. Ha a költséget és a nyugtákat is hozzáadja, akkor a program automatikusan egyezteti a kiadásokat a bevételekhez.
+  1. Nyissa meg a **Költséggazdálkodás** munkaterületet.
+  2. A **Nyugták** lapon ellenőrizze, hogy vannak-e nem csatolt nyugták. A nyugtákat a **Nyugták** lapon is fel lehet tölteni.
+  3. A **Költségek** lapon ellenőrizze, hogy vannak-e nem csatolt költségek. A költség felügyelője általában a hitelkártya kiadójától importálja ezeket a költségeket.
+  4. Jelölje ki az **Új költégjelentés** lehetőséget. Vegye észre, hogy a költségek és a most már a nyugták is a költségjelentés létrehozásakor is megadhatók. Ha a költséget és a nyugtákat is hozzáadja, akkor a program automatikusan egyezteti a kiadásokat a bevételekhez.
 
-- **Költség létrehozása vagy költség egyeztetése nyugta alapján.**
+Költség létrehozásához vagy a nyugta alapján történő költség egyeztetéséhez tegye a következőt:
 
-    1. Egy költségjelentés **Nyugták** lapján a **Nyugták hozzáadása** lehetőség kiválasztásával csatoljon nyugtát.
-    2. A nyugta feltöltött képe alatt vegye észre a **Létrehozás** és az **Egyeztetés** beállításokat.
+  1. Egy költségjelentés **Nyugták** lapján a **Nyugták hozzáadása** lehetőség kiválasztásával csatoljon nyugtát.
+  2. A nyugta feltöltött képe alatt vegye észre a **Létrehozás** és az **Egyeztetés** beállításokat.
 
-        - Válassza a **Létrehozás** lehetőséget, ha manuálisan megadott kiadási tranzakciót szeretne létrehozni, és töltse ki a nyugtából megszerzett értékeket.
-        - Ha az **Egyeztetés** lehetőséget választja, a rendszer megpróbál egy meglévő költséget egyeztetni a nyugta értékéhez.
+      - Válassza a **Létrehozás** lehetőséget, ha manuálisan megadott kiadási tranzakciót szeretne létrehozni, és töltse ki a nyugtából megszerzett értékeket.
+      - Ha az **Egyeztetés** lehetőséget választja, a rendszer megpróbál egy meglévő költséget egyeztetni a nyugta értékéhez.
 
 ## <a name="installation"></a>Telepítés
 
-Ez a funkció együtt dolgozik a **Költségjelentések újragondolva** szolgáltatással, amely egyszerűsíti a költségek élményét.
+Ez a funkció együtt dolgozik a **Költségjelentések újragondolva** szolgáltatással, amely egyszerűsíti a költségek élményét. Ez a funkció csak a Szint 2+ környezetekhez érhető el, ami a Sandbox és a Production.
 
 Ha ezeket a speciális képességetek szeretné használni, telepítse a Microsoft Dynamics 365 Finance Expense Management Service beépülő modulját, és kapcsolja be a saját példányának funkcióit. A bővítményt a projektje Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásából éri el.
 

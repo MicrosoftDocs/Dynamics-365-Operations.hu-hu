@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8491fd7c5af015989d409391e3ac143d88b6ad92
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 29930fdb65f96e281e0f0f01db41ec1475ad81c2
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207163"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383067"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
@@ -49,7 +49,7 @@ Ha törölni akar egy partnert, erre csak azoknál van lehetősége, amelyeket �
 A szállítói együttműködési felhasználókra vonatkozó kéréseket beszerzési szakemberek vagy külső szállítói rendszergazdák nyújthatnak be.
 
 -   Ha Ön egy külső szállító, az **Összes partner** oldalon keresztül nyújthatja be a kéréseit a **Szállítói együttműködés** modulban.
--   Ha Ön egy beszerzési szakember, a kéréseit a **Partnerek megtekintése** lapon keresztül nyújthatja be. Ehhez a szállítói rekordban, a műveletpanel **Beállítás** részében válassza a **Partnerek** &gt; > **Partnerek megtekintése** lehetőséget.
+-   Ha Ön egy beszerzési szakember, a kéréseit a **Partnerek megtekintése** lapon keresztül nyújthatja be. Ehhez a szállítói rekordban, a Művelet panel **Beállítás** részében válassza a **Partnerek** &gt; > **Partnerek megtekintése** lehetőséget.
 
 Kérést nyújthat be a következőkre: felhasználó létrehozása a rendszerben, felhasználó inaktiválása, illetve biztonsági szerepkörök módosítása. Ha Ön egy külső szállítói adminisztrátor, kapcsolattartói jogosultsággal kell rendelkeznie azoknál a szállítói fiókoknál, amelyekre vonatkozóan felhasználói kérést akar benyújtani, és rendelkeznie kell hozzáféréssel a szállítói együttműködési felülethez ezen szállítói fiókok esetében.  
 

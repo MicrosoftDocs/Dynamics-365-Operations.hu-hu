@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaab2093eb2531b63f27717d828f7064a8f9ed1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e45c80718c73ad785643c2a5fc0e712b291104d5
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207508"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383113"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Beszerzési kategóriák hierarchiájának beállítása
 
@@ -31,8 +31,8 @@ Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kate
 
 ## <a name="add-a-new-procurement-category"></a>Új beszerzési kategória hozzáadása
 1. Menjen a **Navigációs ablaktábla > Modulok > Beszerzés és forrás > Bizomány > Beszerzési kategóriák** menübe.
-2. A Műveleti ablaktáblában kattintson a **Kategóriahierarchia szerkesztése** elemre. Az aktuális beszerzési kategóriák hierarchiája az oldal bal oldalán jelenik meg. Ezzel módosítja a hierarchiát.  
-3. A Műveleti ablaktáblában kattintson a **Új kategória-csomópont** elemre. A rendszer alapértelmezés szerint kiválasztja a felső csomópontot. Ha ezzel az eljárással a feladatot útmutatóként futtatja, kattintson a zárolás feloldása gombra, és válasszon másik szülő-csomópontot, amelybe az új csomópontot szeretné beilleszteni. Ezt követően zárolja újra a feladatútmutatót, és kattintson az Új kategória-csomópontra.  
+2. A Művelet panelen kattintson a **Kategóriahierarchia szerkesztése** elemre. Az aktuális beszerzési kategóriák hierarchiája az oldal bal oldalán jelenik meg. Ezzel módosítja a hierarchiát.  
+3. A Művelet panelen kattintson az **Új kategória-csomópont** elemre. A rendszer alapértelmezés szerint kiválasztja a felső csomópontot. Ha ezzel az eljárással a feladatot útmutatóként futtatja, kattintson a zárolás feloldása gombra, és válasszon másik szülő-csomópontot, amelybe az új csomópontot szeretné beilleszteni. Ezt követően zárolja újra a feladatútmutatót, és kattintson az Új kategória-csomópontra.  
 4. Írjon be egy értéket a **Név** mezőbe.
 5. Írjon egy értéket a **Leírás** mezőbe.
 6. Írjon be egy értéket a **Barátságos név** mezőbe. A baráti név nem kötelező. A kategória keresésekben a kategórianévvel együtt fog megjelenni.  

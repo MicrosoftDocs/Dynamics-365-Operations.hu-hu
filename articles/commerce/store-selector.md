@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8efc2345ded52bfaee2d400815795906f326f4fd
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 460d05ca29d5b8da70a971a649d9edd786f7260d
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3157340"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378208"
 ---
 # <a name="store-selector-module"></a>Üzletkiválasztó modul
 
@@ -79,3 +79,5 @@ Egy üzletválasztó modulnak szüksége van egy termék környezetére, így cs
 [A kosár és a pénztár rövid bemutatása](quick-tour-cart-checkout.md)
 
 [Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+[A szervezethez tartozó Bing Térképek kezelése](dev-itpro/manage-bing-maps.md)

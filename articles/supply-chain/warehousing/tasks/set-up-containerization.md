@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b5ad1bdd91a2fb9109f29400f082e9a8af009ba
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216942"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383297"
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
 
@@ -60,7 +60,7 @@ Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmány
 
 ## <a name="set-up-a-container-group"></a>Tárolócsoport beállítása
 1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Tárolók > Tárolócsoportok** lehetőségre.
-2. A műveleti ablaktáblán válassza ki az **Új** elemet. A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
+2. A Műveleti ablaktáblán kattintson az **Új** elemre. A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
 3. Adja meg a korábban létrehozott értéket a **Tárolócsoport azonosítója** mezőben.
 4. Írjon egy értéket a **Leírás mezőbe**.
 5. Ismételje meg a 2–4. lépést a korábban létrehozott mindhárom típusú tároló esetében.

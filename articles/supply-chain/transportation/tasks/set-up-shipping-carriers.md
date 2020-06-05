@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6a29dce877a53d125c5a151da6cfbb13d46b29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0d157470527a986ea1c9fe0a9a02e2ba6ee8819e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201594"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382998"
 ---
 # <a name="set-up-shipping-carriers"></a>A szállítmányozók beállítása
 
@@ -32,7 +32,7 @@ Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és m
 
 ## <a name="create-a-new-shipping-carrier"></a>Új szállítmányozó létrehozása
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Szállításkezelés > Beállítás > Szállítmányozók > Szállítmányozók** lehetőségre.
-2. A műveleti ablaktáblán válassza ki az **Új** elemet.
+2. A Művelet panelen válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket a **Szállítmányozók** mezőben.
 4. Írjon be egy értéket a **Név** mezőbe.
 5. A **Mód** mezőben válasszon ki egy opciót a legördülő menüben.

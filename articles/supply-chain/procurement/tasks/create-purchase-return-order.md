@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204829"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383205"
 ---
 # <a name="create-a-purchase-return-order"></a>Beszerzési visszárurendelés létrehozása
 
@@ -34,7 +34,7 @@ Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést 
 2. Kattintson az **Új** elemre.
 3. Írja be az „IS-102” értéket a **Szállítói számla** mezőbe.
 4. Kattintson az **OK** gombra.
-5. A **Művelet panelen** kattintson a **Beszerzés** elemre.
+5. A **Műveleti panelen** kattintson a **Beszerzés** elemre.
 6. Kattintson a **Jóváírás** elemre. Ez az az oldal, ahonnan elvégezheti a másolást a meglévő szállítói számlákból az Ön visszárurendeléséhez. Ez ugyanaz az oldal, amit az egyéb másolások során használt. De mivel a Jóváírás tevékenységből nyitottuk meg, az oldal a szállítói számlákat ellentételező visszárurendelés létrehozásának támogatására van beállítva.  
 7. Bontsa ki a **Paraméterek** szakaszt.
     - Az **Előjel megfordítása** beállítás automatikusan be van jelölve, és nem lehet módosítani. Ez biztosítja, hogy a mennyiségek előjele megváltozik és a felvett rendelési sorok ellentételezni fogják a szállítói számlát.  

@@ -3,7 +3,7 @@ title: Kimenő készletművelet a pénztárban
 description: Ez a témakör a pénztár (POS) kimenő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123922"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384129"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletművelet a pénztárban
 
@@ -117,6 +117,18 @@ A **Teljes rendelési lista** nézetben manuálisan kiválaszthat a listából e
 ### <a name="over-delivery-shipping-validations"></a>Túlszállítással kapcsolatos szállítási ellenőrzések
 
 Az ellenőrzések a bizonylatsor bevételezési folyamata során történnek meg. Ezek a túlszállításra vonatkozó ellenőrzéseket is tartalmazzák. Ha egy felhasználó több készletet próbál meg bevételezni, mint amennyit megrendelt egy beszerzési rendelésen, de a túlszállítás nincs beállítva, vagy a bevételezett mennyiség meghaladja a beszerzési rendelés sorához beállított túlszállítási tűréshatárt, akkor a felhasználó hibaüzenetet kap, és a felesleges mennyiséget nem lehet fogadni.
+
+### <a name="underdelivery-close-lines"></a>Alulszállítási lezárási sorok
+
+A Commerce 10.0.12-es verziójában egy olyan funkció került hozzáadásra, amellyel a pénztárfelhasználók lezárhatják vagy törölhetik a fennmaradó mennyiségeket a kimenő rendelési szállítás során, ha a kimenő raktár megállapítja, hogy a kért teljes mennyiséget nem lehet szállítani. A mennyiségeket később is le lehet zárni vagy törölni. A funkció használatához a vállalatot be kell állítani, hogy engedélyezze az átmozgatási rendelések alulteljesítését. Ezenkívül az átmozgatási rendelési sorhoz meg kell adni egy alulteljesítési százalékot is.
+
+Ha azt szeretné, hogy a vállalat engedélyezze az átmozgatási rendelések alulszállítását, a Commerce-központ alkalmazásban nyissa meg a **Készletkezelés \> Beállítás \> Készlet- és raktárkezelési paraméterek** pontot. A **Készlet- és raktárkezelési paraméterek** oldalon az **Átmozgatási rendelések** lapon kapcsolja be az **Alulszállítás elfogadása** paramétert. Ezt követően futtassa az **1070**-es felosztási ütemezési feladatot, és szinkronizálja a paraméter-módosításokat az üzlet csatornájára.
+
+Az átmozgatási rendelés soraihoz tartozó alulszállítási százalékok a Commerce-központ termékekkonfigurációjának részeként előre is megadhatók. Alternatív megoldásként a Commerce-központ alkalmazáson keresztül egy adott átmozgatási rendelés sorában megadhatók vagy felülírhatók.
+
+Miután egy szervezet befejezte az átmozgatási rendelés alulszállításának konfigurálását, a felhasználók egy új **Fenmmaradó mennyiség lezárása** lehetőséget látnak a **Részletek** panelen,amikor kiválasztják a kimenő átmozgatási rendelési sort a pénztár **Kimenő művelet** műveletével. Ezután, amikor a felhasználók befejezik a szállítmányt a **Teljesítés befejezése** művelettel, egy kérést küldhetnek a Commerce-köpont számára egy még ki nem szállított mennyiség visszavonására. Ha egy felhasználó úgy dönt, hogy lezárja a fennmaradó mennyiséget, akkor a Commerce ellenőrzi, hogy a visszavonni kívánt mennyiség az átmozgatási rendelés sorában megadott alulszállítás százalékos tűréshatárán belül van-e. Ha túllépi az alulszállítási tűréshatárt, a felhasználó hibaüzenetet kap, és addig nem tudja lezárni a fennmaradó mennyiséget, amíg a korábban szállított és a "most szállított" mennyiség el nem éri vagy meg nem haladja az alulszállítási tűréshatárt.
+
+Miután a szállítmányt szinkronizálta a Commerce-központ rendszerbe, a program a POS rendszerbeli átmozgatási rendelés **Most szállított** sorában megadott mennyiségeket a Commerce-központ egy szállított állapotára frissíti. A korábban "még szállítandónak" minősülő nem szállított mennyiségek (azaz a későbbiekben szállításra kerülő mennyiségek) visszavont mennyiségnek minősülnek. Az átmozgatási rendelési sorhoz tartozó "még szállítandó" mennyiség **0** (nulla) értékre kerül beállításra, és a rendszer a sort teljes egészében kiszállítottnak tekinti.
 
 ### <a name="shipping-location-controlled-items"></a>Helyvezérlet cikkek szállítása
 

@@ -1,57 +1,57 @@
 ---
 title: Súgórendszer
-description: Ez a témakör a súgórendszerről nyújt áttekintést.
-author: margoc
+description: Ez a témakör a Finance and Operations alkalmazások súgórendszeréről nyújt áttekintést.
+author: edupont04
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124658"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367338"
 ---
 # <a name="help-system"></a>Súgórendszer
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Súgórendszer részeinek áttekintését tartalmazza. A súgórendszer közös a következő termékek esetében:
+A következő alkalmazások felhasználói hozzáférhetnek a környezetfüggő súgóhoz és más, ugyanazon a súgórendszeren alapuló tartalomhoz:
 
-- Dynamics 365 Finance 
-- Dynamics 365 Commerce
-- Dynamics 365 Supply Chain Management
+- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Finance
 - Dynamics 365 Human Resources
+- Dynamics 365 Supply Chain Management
 
-A Súgó ablak használható bármelyik termékben a súgó eléréséhez. 
+Minden ilyen alkalmazásban hozzáférhet a termékspecifikus súgóhoz a **Súgó** panelről.
 
-![Súgó ablak](./media/help-pane-ops-task-guides.png)
+![Súgó ablak](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
 
-A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) a termékdokumentáció elsődleges forrása a fent felsorolt alkalmazásokhoz. A webhely a következő funkciókat ajánlja:
+A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) a termékdokumentáció alapértelmezett forrása az imént felsorolt alkalmazásokhoz. Ez a webhely a következő funkciókat ajánlja:
 
-- **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Ezért segítségével biztosítható, hogy a legfrissebb technikai információkhoz jusson hozzá.
-- **Szakértők által írt tartalmak** – A WEBHELY szélesebb körű termékdokumentációkat kínál, amelyeket a közösség tagjai a Microsofton kívül és belül is bővíthetnek.
+- **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a Microsoftnak a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Így egyszerűen hozzáférhet a legfrissebb technikai információkhoz jut hozzá.
+- **Szakértők által írt tartalmak** – A webhely tartalma nyitott a Microsofton belül és kívül egyaránt a közösség tagjainak hozzájárulására.
 
-Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: site:docs.microsoft.com dynamics 365 „keresőkifejezés”
+A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehet találni. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: **site:docs.microsoft.com dynamics 365 „keresőkifejezés”**
 
-### <a name="use-an-rss-feed"></a>RSS-hírcsatorna használata
+### <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
 
-Az összes frissítést bemutató RSS-hírcsatornára való előfizetéshez használja az alábbi hivatkozást egy az RSS-hírcsatornákat támogató böngészőből, például az Internet Explorer alkalmazásból vagy egy RSS-hírcsatorna-kezelőből:
+Ha fel szeretne iratkozni egy RSS (Really Simple Syndication) hírcsatornára a docs.microsoft.com tartalmára vonatkozó összes frissítésről, használja a következő hivatkozást:
 
 [RSS-hírcsatorna](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -59,34 +59,37 @@ Az összes frissítést bemutató RSS-hírcsatornára való előfizetéshez hasz
 
 Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megjegyzést az oldal alján.
 
-1. Kattintson a **Visszajelzés** lehetőségre, hogy a lap alján található megjegyzésekhez jusson, majd kattintson a **Termékvisszajelzés** vagy **Bejelentkezés dokumentációval kapcsolatos visszajelzéshez**.
+1. Válassza a **Visszajelzés** lehetőséget, hogy eljusson a lap alján lévő megjegyzésekhez. Ezt követően válassza ki **Termékvisszajelzés** vagy a **Bejelentkezés dokumentációval kapcsolatos visszajelzéshez** lehetőséget.
 
-2. Írja be megjegyzését, majd kattintson a **Visszajelzés beküldése** gombra.
+2. Írja be megjegyzését, majd válassza a **Visszajelzés beküldése** lehetőséget.
 
     ![Megjegyzés elküldése](./media/feedback.png)
 
+> [!NOTE]
+> Ha dokumentációs visszajelzést szeretne küldeni, akkor GitHub-fiókkal kell bejelentkeznie. További információ: [GitHub-profil beállítása és kezelése](https://help.github.com/github/setting-up-and-managing-your-github-profile).
+
 ### <a name="contribute-to-the-documentation"></a>Közreműködés a dokumentációban
 
-A dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörön. A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
+A dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésként kattintson a **Szerkesztés** gombra (ceruza szimbólum) egy témakörön. A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 A [Hozzájárulás a Microsoft Dynamics 365 dokumentációhoz](https://youtu.be/m5djioozRbg) videó (lásd fentebb) része a Microsoft Dynamics 365 csatornának a YouTube oldalán.
 
-További tudnivalókért olvassa el a [közreműködői útmutatót](https://docs.microsoft.com/contribute).
+A további tudnivalókat lásd a [Docs közreműködői útmutatóban](https://docs.microsoft.com/contribute), amelyet a docs.microsoft.com webhelyét összeállító csoport publikál.
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű tartalomhoz fogadunk el közreműködést.
 
 ## <a name="task-guides"></a>Feladat-útmutatók
 
-A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A Súgó ablakban megnyithatja (lejátszhatja) a Feladat-útmutatót. Amikor először kattint a Feladat-útmutatóra a Súgó ablakban, láthatja lépésenként a feladathoz tartozó utasításokat. A honosított Feladat-útmutatók elérhetőek.
+A feladatrögzítés egy kontorollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A **Súgó** ablakban megnyithatja (lejátszatja) a feladat útmutatót. Amikor először kattint a feladat-útmutatóra a **Súgó** ablakban láthatja lépésenként a feladathoz tartozó utasításokat. A honosított feladat-útmutatók elérhetőek.
 
-A Microsoft feladatútmutató-könyvtárakat szállított a Dynamics 365 for Finance and Operations 2017 decemberi kiadásához. A [Súgórendszer](help-overview.md#accessing-task-guides-from-the-help-pane) szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat.
+A Microsoft feladat-útmutatók könyvtárát adta ki a termék verzióihoz a Dynamics 365 for Finance and Operations 2017. decemberi kiadásával. A témakör [Feladat-útmutatók elérése a Súgó ablakból](#accessing-task-guides-from-the-help-pane) szakasza azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat.
 
 ![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
-Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat útmutató indítása** lehetőségre a Súgó ablak alján. Egy fekete mutató nyílik meg, és jelzi a kötelezően végrehajtandó műveleteket. Kövesse a felhasználói felületen megjelenő utasításokat, és adja meg az adatokat az utasításoknak megfelelően.
+Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat útmutató indítása** lehetőségre a **Súgó** ablak alján. Egy fekete mutató megmutatja, hová kell menni először. Kövesse a felhasználói felületen (UI) megjelenő utasításokat, és adja meg az adatokat az utasításoknak megfelelően.
 
 ![Feladat-útmutató lépésre vonatkozó utasítása](./media/task-guide-step-1-ops.png)
 
@@ -97,69 +100,68 @@ A Feladatrögzítő segítségével létrehozhatja saját egyéni feladat-útmut
 
 ## <a name="in-product-help"></a>Termékbe épített Súgó
 
-Ha szeretné megtekinteni a Súgó tartalmát, akkor kattintson a **Súgó** (**?**) ikonra, és válassza a Súgó lehetőséget, vagy nyomja meg a Ctrl+Shift+? billentyűkombinációt. Mindkét esetben a Súgó ablak nyílik meg. A Súgó ablakból elérhet cikkeket és feladat-útmutatókat.
+Egyes mezők mezőleírással rendelkeznek, amely segítséget jelenthet a felhasználóknak abban az esetben, ha bizonytalanok például a mezőben található adatokkal kapcsolatban. Ezenkívül a termék **Súgó** ablaktáblája környezetfüggő hozzáférést biztosít a felhasználóknak az elinduláshoz, a zárolás feloldásához és a további tudnivalókhoz.
 
-![Súgó ablak](./media/help-pane-wiki.png)
+A súgótartalom eléréséhez válassza a **Súgó** gombot (**?**), majd válassza a **Súgó** lehetőséget. Vagy pedig nyomja meg a **Ctrl+Shift+?** billentyűkombinációt. Mindkét esetben a **Súgó** ablak jelenik meg. A **Súgó** ablaktáblában hozzáférhet a jelenleg a termék területére vonatkozó koncepcionális témaköröket és feladat-útmutatókat.
+
+![Súgó ablak](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Súgótémakörök elérése a Súgó ablakból
 
-A Súgó ablakból hozzáférhet a kliensre vonatkozó cikkekhez. Amikor először nyitja meg a Súgó ablakot, a **Súgó** lapra való kattintáskor az aktuális oldalhoz kapcsolódó cikkek jelennek meg. Amennyiben nem találhatók cikkek, kulcsszavak beírásával módosíthatja a keresést. Amikor rákattint egy cikkre a Súgó ablakban, akkor egy új lap nyílik meg a böngészőben, és megjeleníti a cikket.
+A **Súgó** ablakból hozzáférhet a kliensre vonatkozó témakörökhöz. Amikor először nyitja meg a **Súgó** ablakot, a **Súgó** lapon az aktuális oldalhoz kapcsolódó témakörök jelennek meg. Amennyiben nem találhatók témakörök, kulcsszavak beírásával módosíthatja a keresést. Amikor kiválaszt egy témát a **Súgó** ablaktáblán, a böngészőprogram egy új lapján nyílik meg.
 
 > [!IMPORTANT]
 > Ez a szakasz nem vonatkozik a Dynamics 365 Human Resources alkalmazásra. A Human Resources súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Ezenfelül a Human Resources rendszerben nem hozhat létre egyéni feladat-útmutatókat.
 
+### <a name="accessing-task-guides-from-the-help-pane"></a>Feladat útmutatók elérése a Súgó ablakból
 
-### <a name="accessing-task-guides-from-the-help-pane"></a>Feladat-útmutatók elérése a Súgó ablakból
+Mielőtt feladat-útmutatókat nyit meg a **Súgó** ablakban, a rendszergazdának a Finance, a Supply Chain Management vagy a Commerce **Rendszerparaméterek** lapján be kell állítania néhány paramétert. A további tudnivalókat lásd: [Feladat-útmutatók hozzáadása](help-connect.md#adding-task-guides).
 
-Mielőtt Feladat-útmutatókat nyit meg a Súgó ablakban, a Rendszergazdának a Finance, a Supply Chain Managment és a Commerce rendszerben a **Rendszer paraméterei** lapon be kell állítania néhány paramétert.
+<!-- > [!NOTE]
+> - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
+> - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-> [!NOTE]
-> - A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó számlába, amiben az alkalmazás is telepítve van.
-> - Helyi virtuális merevlemezen (VHD) futó alkalmazáspéldánnyal nem lehet csatlakozni az LCS könyvtárhoz.
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
-![Rendszerparaméterek űrlap – súgó beállításai](./media/system-parameters_ops-1024x437.png)
+On the **System parameters** page, follow these steps:
 
-A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
+1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-1. **Fontos:** Amikor első alkalommal nyitja meg a Súgó lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a paraméter-űrlap eléréséhez.
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
-    ![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png)
+2. Select the Lifecycle Services project to connect to.
+3. Select BPM libraries (within the selected project) to retrieve task recordings from.
+4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
-2. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
-3. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
-4. Adja meg a BPM könyvtárak megjelenítési sorrendjét. Ez meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a Súgó ablakban.
-
-Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a Súgó ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek az aktuális oldalhoz kapcsolódó Feladat-útmutatók. Amennyiben nem találhatók Feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést. Miután rákattint egy Feladat-útmutatóra a Súgó ablakában, a Súgó ablak lépésekre lebontva megjeleníti az utasításokat, továbbá lehetősége van a feladat-útmutató lejátszására is.
+Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és válassza a **Feladat-útmutatók** lapot. Ekkor megjelennek az aktuális oldalhoz kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést. Miután kiválaszt egy feladat-útmutatót a **Súgó** ablakában, a **Súgó** ablak lépésekre lebontva megjeleníti az utasításokat, továbbá lehetősége van a feladat-útmutató lejátszására is.
 
 ![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Hol vannak a Microsoft tárakhoz tartozó lefordított feladat-útmutatók?
 
-A Feladat-útmutatók a címükben az „Minden nyelv” fordulatot viselő könyvtárakban érhetők el. Ha szeretné a honosított Feladat-útmutató súgót látni, győződjön meg arról, hogy csatlakozva van a megfelelő könyvtárhoz. Minden felhasználó esetében a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások határozzák meg a Feladat-útmutató nyelvét.
+A Feladat-útmutatók a címükben az „Minden nyelv” fordulatot viselő könyvtárakban érhetők el. Ha szeretné a honosított feladat-útmutató súgót látni, győződjön meg arról, hogy csatlakozva van a megfelelő könyvtárhoz. Minden felhasználó a **Beállítások** &gt; **Beállítások** menüben található nyelvi beállítások alatt módosíthatja a feladat-útmutató megjelenítési nyelvét.
 
-- Ha egy Feladat-útmutató le van fordítva, akkor a megnyitásakor kiválasztott nyelven fog megjelenni a Feladat-útmutató teljes szövege.
-- Ha egy Feladat-útmutató még nincs lefordítva, akkor a megnyitásakor a kiválasztott nyelven csak néhány szöveg (a vezérlők szövegei) fog megjelenni.
+- Ha egy feladat-útmutató le van fordítva, akkor a kiválasztott nyelven fog megjelenni a feladat-útmutató teljes szövege.
+- Ha egy feladat-útmutató még nincs lefordítva, akkor a megnyitásakor a kiválasztott nyelven csak a vezérlők szövegei fognak megjelenni.
 
 ## <a name="creating-custom-help"></a>Egyéni súgó létrehozása
 
-Egyéni feladat-útmutatók létrehozásával létrehozhat egy súgót a felhasználóinak, vagy csatlakoztathatja saját webhelyét a Súgópanelhez. Részletekért lásd:
+Egyéni feladat-útmutatók létrehozásával létrehozhat egy súgót a felhasználóinak, vagy csatlakoztathatja saját webhelyét a **Súgó** panelhez. További információért tekintse át az alábbi témaköröket:
 
-- [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md).
-- [Egyéni Súgó létrehozása (ismertető)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)
+- [Egyéni Súgó – áttekintés](../../dev-itpro/help/custom-help-overview.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)
-
 A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlenül csillaggal (\*) jelölt webhelyeken a szolgáltatástervvel társított felhasználói fiókkal lehet belépni.
 
-| Telephely                                                                                           | Leírás |
-|------------------------------------------------------------------------------------------------|-------------|
-| [Docs.microsoft.com](/dynamics365/)                                                            | Állomások vagy hivatkozások az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | A Microsoft ingyenes e-tanulás webhelye. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Ez a webhely az implementáció minden fázisában hasznos. |
-| [Támogatási blog](https://aka.ms/AXSupportBlog)                                                    | Tippeket és trükköket tartalmaz, amelyeket a támogató csapata adott fel. |
-| [Docs.microsoft.com/korábbi verziók](https://docs.microsoft.com/previous-versions/dynamics/) | A korábbi kiadások tartama. |
-| [Dynamics közösség](https://community.dynamics.com/)                                          | Blogokat, fórumokat és videókat tárol. |
-| [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Értékelések és eladási információk érhetők el. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Néhány oktatóanyagot tárol, letölthető jelentéseket és tanulmányokat, és ez az elsődleges támogatási webhely a szolgáltatási terv jogosultak számára. Szükség lehet egy szolgáltatástervre egyes erőforrások eléréséhez a webhelyen. |
+| Hely | Leírás |
+|------|-------------|
+| [Docs.microsoft.com](/dynamics365/) | Ezen a webhelyen található vagy kerül hivatkozásra az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Ez a webhely a Microsoft ingyenes e-learning webhelye. |
+| [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ez a webhely felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Az implementáció minden fázisában hasznos. |
+| [Támogatási blog](https://aka.ms/AXSupportBlog) | Ez a webhely tippeket és trükköket tartalmaz, amelyeket a Támogatás csapata adott fel. |
+| [Docs.microsoft.com/korábbi verziók](/previous-versions/dynamics/) | Ezen a webhelyen található a korábbi kiadások tartama. |
+| [Dynamics közösség](https://community.dynamics.com/) | A webhelyen blogok, fórumok és videók találhatók. |
+| [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | A webhelyen értékelések és eladási információk érhetők el. |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | A webhely néhány oktatóanyagot tárol, letölthető jelentéseket és tanulmányokat, és ez az elsődleges támogatási webhely a szolgáltatási terv jogosultak számára. Szükség lehet egy szolgáltatási előfizetésre az egyes erőforrások eléréséhez a webhelyen. |

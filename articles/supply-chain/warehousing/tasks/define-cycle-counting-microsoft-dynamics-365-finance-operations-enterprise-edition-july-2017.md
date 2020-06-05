@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d10904414b8c35960e421caeb7cae838edd312dd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217057"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383021"
 ---
 # <a name="define-cycle-counting"></a>Ciklikus leltározás meghatározása  
 
@@ -49,7 +49,7 @@ A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális k
 10. A **Munkaosztály-azonosító** mezőbe írjon be egy értéket.
 11. Kattintson az **Új** elemre.
 12. A **Munkaosztály-azonosító** mezőbe írjon be egy értéket.
-13. A **Művelet panelen** kattintson a **Mentés** elemre.
+13. A **Műveleti panelen** kattintson a **Mentés** elemre.
 14. Zárja be a lapot.
 15. A **Navigációs ablaktáblán** ugorjon a **Modulok > Raktárkezelés > Beállítás > Mobileszköz > Mobileszköz menüpontja** elemre.
 16. Keresse meg és jelölje ki a kívánt rekordot a listán.
