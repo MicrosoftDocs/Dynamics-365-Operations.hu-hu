@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205782"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367292"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="e7463-103">Termék-visszaigazolás fürt kitárolásához</span><span class="sxs-lookup"><span data-stu-id="e7463-103">Product confirmation for cluster picking</span></span>
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="88ad3-103">Termék-visszaigazolás fürt kitárolásához</span><span class="sxs-lookup"><span data-stu-id="88ad3-103">Product confirmation for cluster picking</span></span>
-<span data-ttu-id="88ad3-104">A fürtkiválasztás lehetővé teszi, hogy egyszerre több megrendelést vegyen fel.</span><span class="sxs-lookup"><span data-stu-id="88ad3-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="88ad3-105">Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontosságú a fürtökhöz hozzáadott cikkek ellenőrzéséhez.</span><span class="sxs-lookup"><span data-stu-id="88ad3-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="88ad3-106">A fürtkiválasztás folyamán ellenőrizheti a fürtkiválasztás cikkeit.</span><span class="sxs-lookup"><span data-stu-id="88ad3-106">You can verify items in cluster picking during the cluster picking process.</span></span>
+<span data-ttu-id="e7463-104">A fürtkiválasztás lehetővé teszi, hogy egyszerre több megrendelést vegyen fel.</span><span class="sxs-lookup"><span data-stu-id="e7463-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="e7463-105">Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontosságú a fürtökhöz hozzáadott cikkek ellenőrzéséhez.</span><span class="sxs-lookup"><span data-stu-id="e7463-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="e7463-106">A fürtkiválasztás folyamán ellenőrizheti a fürtkiválasztás cikkeit.</span><span class="sxs-lookup"><span data-stu-id="e7463-106">You can verify items in cluster picking during the cluster picking process.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="88ad3-107">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="88ad3-107">Where it applies</span></span>
-<span data-ttu-id="88ad3-108">A fürtkiválasztáshoz tartozó cikkek ellenőrzése ugyanúgy működik, mint a nem fürtkiválasztási folyamatok elemeinek ellenőrzése.</span><span class="sxs-lookup"><span data-stu-id="88ad3-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="88ad3-109">A beállítás a termékvonalkód-beállításon alapul.</span><span class="sxs-lookup"><span data-stu-id="88ad3-109">The setup is based on the product bar code setup.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="e7463-107">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="e7463-107">Where it applies</span></span>
 
-## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="88ad3-110">Cikkellenőrzés beállítása a fürtkiválasztásnál</span><span class="sxs-lookup"><span data-stu-id="88ad3-110">Set up item verification with cluster picking</span></span>
-1.  <span data-ttu-id="88ad3-111">A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** > **Raktárkezelés** > **Beállítás** > **Mobileszköz** > **Mobileszköz menüpontjai**.</span><span class="sxs-lookup"><span data-stu-id="88ad3-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
-2.  <span data-ttu-id="88ad3-112">A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**.</span><span class="sxs-lookup"><span data-stu-id="88ad3-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
+<span data-ttu-id="e7463-108">A fürtkiválasztáshoz tartozó cikkek ellenőrzése ugyanúgy működik, mint a nem fürtkiválasztási folyamatok elemeinek ellenőrzése.</span><span class="sxs-lookup"><span data-stu-id="e7463-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="e7463-109">A beállítás a termékvonalkód-beállításon alapul.</span><span class="sxs-lookup"><span data-stu-id="e7463-109">The setup is based on the product bar code setup.</span></span>
 
-|        <span data-ttu-id="88ad3-113">Lehetőség</span><span class="sxs-lookup"><span data-stu-id="88ad3-113">Option</span></span>        |                                    <span data-ttu-id="88ad3-114">Leírás</span><span class="sxs-lookup"><span data-stu-id="88ad3-114">Description</span></span>                                    |
+## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="e7463-110">Cikkellenőrzés beállítása a fürtkiválasztásnál</span><span class="sxs-lookup"><span data-stu-id="e7463-110">Set up item verification with cluster picking</span></span>
+
+1. <span data-ttu-id="e7463-111">A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** > **Raktárkezelés** > **Beállítás** > **Mobileszköz** > **Mobileszköz menüpontjai**.</span><span class="sxs-lookup"><span data-stu-id="e7463-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
+1. <span data-ttu-id="e7463-112">A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**.</span><span class="sxs-lookup"><span data-stu-id="e7463-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
+
+|        <span data-ttu-id="e7463-113">Lehetőség</span><span class="sxs-lookup"><span data-stu-id="e7463-113">Option</span></span>        |                                    <span data-ttu-id="e7463-114">Leírás</span><span class="sxs-lookup"><span data-stu-id="e7463-114">Description</span></span>                                    |
 |----------------------|-----------------------------------------------------------------------------------|
-| <span data-ttu-id="88ad3-115">Termék visszaigazolása</span><span class="sxs-lookup"><span data-stu-id="88ad3-115">Product confirmation</span></span> | <span data-ttu-id="88ad3-116">Lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.</span><span class="sxs-lookup"><span data-stu-id="88ad3-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |
-
+| <span data-ttu-id="e7463-115">Termék visszaigazolása</span><span class="sxs-lookup"><span data-stu-id="e7463-115">Product confirmation</span></span> | <span data-ttu-id="e7463-116">Lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.</span><span class="sxs-lookup"><span data-stu-id="e7463-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |

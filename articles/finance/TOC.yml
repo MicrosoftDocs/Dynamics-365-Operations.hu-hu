@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: A Súgórendszer csatlakoztatása
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Egyéni súgóoldal csatlakoztatása
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: Egyéni súgó áttekintése
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Mezőleírások megtekintése és exportálása
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Feladatrögzítő
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronikus áfabevallás (ELSTER) továbbítása
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Áfabevallási nyilatkozat Németország számára
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Naplólista (jelentés)
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Elektronikus adóbevallások beállítása
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Könyvvizsgálati fájl (XML Auditfile Financieel, XAF)'
+                - name: 'Könyvvizsgálati fájl - XML Auditfile Financieel, XAF'
                   hred: localizations/emea-nl-audit-file.md
             - name: Norvégia
               items:
@@ -2398,6 +2400,8 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Bejövő áfa visszaállítása
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Számla jellegű pénzügyi dokumentumok feldolgozása export-kereskedelemhez
+                      href: localizations/rus-export-trade.md
                 - name: Tárgyi eszközök
                   items:
                     - name: Tárgyi eszközök áttekintése
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Készletjelentések
                       href: localizations/rus-inventory-reports.md
+                    - name: Készletprofil áttekintése
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Készletprofil beállítása
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Készletprofil használata dokumentumokban és lekérdezésekben
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Jelentéskészítés
                   items:
                     - name: Pénzügyi jelentéskészítés
@@ -3248,34 +3258,40 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
               items:
-                - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
+                - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
+                  items:
+                    - name: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
+                      items:
+                        - name: 'Tervezzen formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Futtasson formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Képek és alakzatok beágyazása
-              items:
-                - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Példa képek és alakzatok beágyazására
+                - name: Képek és alakzatok beágyazása
                   items:
-                    - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Példa képek és alakzatok beágyazására
+                      items:
+                        - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
-              items:
-                - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurációs életciklus
               items:
                 - name: Konfigurációk életciklusának kezelése
@@ -3327,7 +3341,11 @@
                     - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurációk importálása RCS-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: 'Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba'
+                  href: localizations/rcs-global-repo-upload.md
+                - name: Ossza meg az ER-konfigurációkat külső szervezetekkel RCS-ben
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Oktatóanyagok
               items:
                 - name: Az adatforrások használatának megismerése

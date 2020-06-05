@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. május 14.
+          href: hr-whats-new-2020-05-14.md
         - name: 2020. május 1.
           href: hr-whats-new-2020-05-01.md
         - name: 2020. április 13.
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: A Lifecycle Services szolgáltatás bemutatása
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources alkalmazás a Teamsben
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentum-erőforrások
           items:
             - name: Súgórendszer
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: A Súgórendszer csatlakoztatása
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Egyéni súgóoldal csatlakoztatása
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Egyéni súgó áttekintése
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Mezőleírások megtekintése és exportálása
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Feladatrögzítő
@@ -511,10 +515,12 @@
               href: hr-leave-and-absence-analytics.md
             - name: Szabadság- és távollétkérelmek kezelése
               href: hr-employee-self-service-manage-requests.md
-            - name: Szabadság kérelmezése
+            - name: Távollét kérelmezése
               href: hr-employee-self-service-request-time-off.md
             - name: Csoportos és vállalati naptárak megtekintése
               href: hr-employee-self-service-calendar.md
+        - name: Szabadságkérelmek kezelése a Teamsben
+          href: hr-teams-leave-app.md
         - name: Alkalmazottak fejlesztése
           items:
             - name: Teljesítménykezelés – áttekintés

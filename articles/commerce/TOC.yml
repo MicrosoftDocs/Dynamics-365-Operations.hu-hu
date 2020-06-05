@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Dynamics 365 Commerce kezdőlapja
           href: index.md
         - name: Első lépések
           items:
@@ -79,7 +79,7 @@
                 - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Új vagy módosult elemek
               items:
                 - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: A Súgórendszer csatlakoztatása
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Egyéni súgóoldal csatlakoztatása
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni súgó áttekintése
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Mezőleírások megtekintése és exportálása
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Feladatrögzítő
@@ -499,7 +499,9 @@
                     - name: Adyen fizetési összekötő
                       href: dev-itpro/adyen-connector.md
                     - name: Online fizetési eszközök mentése az Adyen összekötővel
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Erős vevőhitelesítés (SCA) az Adyen összekötővel
+                      href: adyen_redirect.md
                     - name: Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Számlafizetési forgatókönyvek beállítása
@@ -510,6 +512,8 @@
                       href: omni-channel-payments.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
+                - name: A szervezetéhez tartozó Bing Térképek kezelése
+                  href: dev-itpro/manage-bing-maps.md
         - name: A termékek és szolgáltatások árusítása
           items:
             - name: 'Kategóriák, termékek és szortimentek'
@@ -822,8 +826,10 @@
                   href: manage-ecommerce-users-roles.md
                 - name: A webhely keresőmotor-optimalizálási (SEO) szempontjai
                   href: search-engine-optimization-considerations.md
-                - name: Tartalomra vonatkozó biztonsági házirend (CSP) kezelése
+                - name: Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése
                   href: manage-csp.md
+                - name: Webes esemény jellegű tevékenység gyűjtésének kikapcsolása
+                  href: web-activity-opt-out.md
             - name: Saját webhelytartalom kezelése
               items:
                 - name: A tartalom hozzáadásának módjai
@@ -1714,6 +1720,8 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: E-mail-sablonok létrehozása tranzakciós eseményekhez
+              href: email-templates-transactions.md
             - name: E-mail-élmények kialakítása
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Office-integráció – hibaelhárítás
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Előre bővített oszlopok a csatorna-adatbázisban
                   href: dev-itpro/extended-columns.md
+                - name: Commerce Data Exchange kibővítése - Valós idejű szolgáltatás
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Fizetési összekötő bővíthetősége
               items:
                 - name: Fizetési integráció létrehozása fizetési terminálhoz
